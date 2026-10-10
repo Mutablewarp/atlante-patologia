@@ -1,28 +1,52 @@
 ---
 import BaseLayout from '../../../layouts/BaseLayout.astro';
+import MeDashboard from '../../../islands/MeDashboard.tsx';
 import { langPaths, type Lang } from '../../../i18n/index.ts';
 import { tMe } from '../../../i18n/pages.ts';
-import { tCommon } from '../../../i18n/common.ts';
+import { tS } from '../../../i18n/study.ts';
 import { langPath } from '../../../lib/url.ts';
+import '../../../styles/study.css';
 
 export const getStaticPaths = langPaths;
 
 const lang = Astro.params.lang as Lang;
-const t = (k: Parameters<typeof tMe>[1]) => tMe(lang, k);
+const t = (k: Parameters<typeof tS>[1]) => tS(lang, k);
+const links = [
+  ['bookmarks', 'me/bookmarks/'],
+  ['notes', 'me/notes/'],
+  ['errors', 'me/errors/'],
+  ['data', 'me/data/'],
+] as const;
 ---
 
-<BaseLayout lang={lang} title={t('title')} description={t('metaDescription')} tab="me">
+<BaseLayout lang={lang} title={tMe(lang, 'title')} description={tMe(lang, 'metaDescription')} tab="me" searchable={false}>
   <header class="page-head">
-    <h1>{t('title')}</h1>
-    <p class="lede">{t('intro')}</p>
+    <h1>{tMe(lang, 'title')}</h1>
+    <p class="lede">{tMe(lang, 'intro')}</p>
   </header>
-  <section class="empty-state" aria-labelledby="me-empty">
-    <h2 id="me-empty" style="margin-top:0">{t('emptyTitle')}</h2>
-    <p style="margin:0">{t('emptyBody')}</p>
+  <ap-export-reminder></ap-export-reminder>
+  <noscript><p class="notice">{t('noJs')}</p></noscript>
+  <ap-resume></ap-resume>
+  <p class="small muted">{t('meIntro')}</p>
+  <MeDashboard client:load lang={lang} />
+
+  <section aria-labelledby="me-collections">
+    <h2 id="me-collections">{t('personal')}</h2>
+    <ul class="grid">
+      {
+        links.map(([k, path]) => (
+          <li>
+            <a class="card link-card" href={langPath(lang, path)}>
+              <strong>{t(k)} →</strong>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
   </section>
-  <section aria-labelledby="me-data" style="max-width:var(--measure)">
-    <h2 id="me-data">{t('dataTitle')}</h2>
-    <p>{t('dataBody')}</p>
-    <p><a href={langPath(lang, 'about/privacy/')}>{tCommon(lang, 'footerPrivacy')} →</a></p>
+
+  <section aria-labelledby="me-recent">
+    <h2 id="me-recent">{t('recent')}</h2>
+    <ap-recent></ap-recent>
   </section>
 </BaseLayout>

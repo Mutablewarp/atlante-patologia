@@ -7,6 +7,8 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Breadcrumb from '../../../components/nav/Breadcrumb.astro';
 import EntityHeader from '../../../components/entity/EntityHeader.astro';
 import RelatedPanel from '../../../components/entity/RelatedPanel.astro';
+import EntityActions from '../../../components/entity/EntityActions.astro';
+import SelfExplain from '../../../components/entity/SelfExplain.astro';
 import { LANGS, fmt, type Lang } from '../../../i18n/index.ts';
 import { tEntity, tAtlas } from '../../../i18n/pages.ts';
 import { SECTIONS, QUICK_CHECK, PRINT_SECTIONS } from '../../../i18n/sections.ts';
@@ -57,6 +59,7 @@ const toc = [...SECTIONS, QUICK_CHECK];
   <article class="entity" data-entity={id}>
     {entity.status === 'draft' && <p class="notice notice-caution draft-banner" role="note">{t('draftBanner')}</p>}
     <EntityHeader lang={lang} entity={entity} data={data} />
+    <EntityActions lang={lang} entity={entity} />
 
     <div class="entity-layout">
       <nav class="section-toc" aria-label={t('onThisPage')}>
@@ -129,6 +132,8 @@ const toc = [...SECTIONS, QUICK_CHECK];
             </ol>
           </div>
         </section>
+
+        <SelfExplain lang={lang} prompts={entity.selfExplain} />
 
         <RelatedPanel lang={lang} groups={data.relations.get(id) ?? []} data={data} />
 
