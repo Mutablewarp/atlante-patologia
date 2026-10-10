@@ -19,7 +19,9 @@
     "prepare": "simple-git-hooks",
     "no-verbatim": "node scripts/no-verbatim.mjs",
     "test:dist": "vitest run --project dist",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "lighthouse": "node scripts/lighthouse-assert.mjs",
+    "licenses": "node scripts/license-scan.mjs"
   },
   "simple-git-hooks": {
     "pre-commit": "node scripts/guard.mjs --staged"
@@ -39,6 +41,8 @@
     "@astrojs/check": "0.9.10",
     "@axe-core/playwright": "4.13.0",
     "@playwright/test": "1.64.0",
+    "license-checker-rseidelsohn": "5.0.1",
+    "lighthouse": "13.5.0",
     "pagefind": "1.5.2",
     "sharp": "0.35.5",
     "simple-git-hooks": "2.14.0",
