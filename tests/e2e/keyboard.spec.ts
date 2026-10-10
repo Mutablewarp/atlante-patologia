@@ -1,0 +1,97 @@
+/**
+ * Keyboard-only use (NAVIGATION_SPEC §7): the skip link comes first and works,
+ * the tab order follows the document, focus is always visible and never fully
+ * hidden behind the sticky top bar or the bottom/side navigation (WCAG 2.4.11).
+ */
+import { expect, test, type Page } from '@playwright/test';
+
+// macOS WebKit only moves focus to links with Option+Tab (system default).
+const tabKey = (browserName: string) => (browserName === 'webkit' && process.platform === 'darwin' ? 'Alt+Tab' : 'Tab');
+
+const PAGES = ['it/', 'en/atlas/', 'it/about/reading-list/', 'en/search/?q=atlas'];
+const MAX_STOPS = 80;
+
+// Smooth scrolling would still be moving when focus is measured.
+test.use({ reducedMotion: 'reduce' });
+
+type Stop = { tag: string; skip: boolean; label: string; visible: boolean; obscured: boolean; after: boolean; inViewport: boolean };
+
+/** Describe the focused element; `after` = it follows the previous stop in DOM order. */
+async function focusState(page: Page): Promise<Stop | null> {
+  return page.evaluate(async () => {
+    // Measure after the browser has applied :focus styles and scrolled.
+    await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+    const el = document.activeElement as HTMLElement | null;
+    if (!el || el === document.body) return null;
+    const w = window as unknown as { __prev?: Element };
+    const prev = w.__prev;
+    w.__prev = el;
+    const after = !prev || !!(prev.compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING);
+    const cs = getComputedStyle(el);
+    const visible =
+      (cs.outlineStyle !== 'none' && parseFloat(cs.outlineWidth) >= 2) || (cs.boxShadow !== 'none' && cs.boxShadow !== '');
+    const r = el.getBoundingClientRect();
+    // Sticky/fixed bars that can cover content: a sample point is hidden when the
+    // element painted on top there belongs to one of them (z-index aware).
+    const overlays = [...document.querySelectorAll<HTMLElement>('.topbar, .primary-nav')].filter(
+      (o) => !o.contains(el) && /fixed|sticky/.test(getComputedStyle(o).position),
+    );
+    const pts: [number, number][] = [];
+    for (const fx of [0.1, 0.5, 0.9]) for (const fy of [0.1, 0.5, 0.9]) pts.push([r.left + r.width * fx, r.top + r.height * fy]);
+    const covered = ([x, y]: [number, number]) => {
+      if (x < 0 || y < 0 || x >= innerWidth || y >= innerHeight) return true;
+      const hit = document.elementFromPoint(x, y);
+      return !!hit && !el.contains(hit) && overlays.some((o) => o.contains(hit));
+    };
+    return {
+      tag: el.tagName.toLowerCase(),
+      skip: el.classList.contains('skip-link'),
+      label: (el.getAttribute('aria-label') ?? el.textContent ?? '').trim().slice(0, 40),
+      visible,
+      obscured: pts.every(covered),
+      after,
+      inViewport: r.bottom > 0 && r.top < innerHeight && r.right > 0 && r.left < innerWidth,
+    };
+  });
+}
+
+test('the skip link is the first stop and moves focus to the main content @smoke', async ({ page, browserName }) => {
+  await page.goto('it/atlas/');
+  await page.keyboard.press(tabKey(browserName));
+  const skip = page.locator('.skip-link');
+  await expect(skip).toBeFocused();
+  await expect(skip).toBeInViewport();
+  await page.keyboard.press('Enter');
+  await expect(page).toHaveURL(/#main$/);
+  await expect(page.locator('#main')).toBeFocused();
+});
+
+test('no positive tabindex anywhere', async ({ page }) => {
+  for (const path of PAGES) {
+    await page.goto(path);
+    expect(await page.locator('[tabindex]:not([tabindex="0"]):not([tabindex="-1"])').count(), path).toBe(0);
+  }
+});
+
+for (const path of PAGES) {
+  test(`tab order, visible focus and unobscured focus on ${path}${path === 'it/' ? ' @smoke' : ''}`, async ({ page, browserName }) => {
+    await page.goto(path);
+    const problems: string[] = [];
+    const seen = new Set<string>();
+    for (let i = 0; i < MAX_STOPS; i++) {
+      await page.keyboard.press(tabKey(browserName));
+      const s = await focusState(page);
+      if (!s) break; // focus left the document: we went all the way round
+      const id = `${s.tag}:${s.label}:${i}`;
+      if (seen.has(id)) break;
+      seen.add(id);
+      if (i > 0 && s.skip) break; // wrapped back to the top
+      if (!s.after) problems.push(`tab order goes backwards at <${s.tag}> "${s.label}"`);
+      if (!s.visible) problems.push(`no visible focus indicator: <${s.tag}> "${s.label}"`);
+      if (s.obscured) problems.push(`focus hidden behind sticky bars (stop ${i}): <${s.tag}> "${s.label}"`);
+      if (!s.inViewport && !s.obscured) problems.push(`focused element off screen: <${s.tag}> "${s.label}"`);
+    }
+    expect(seen.size, 'keyboard reaches several controls').toBeGreaterThan(5);
+    expect(problems).toEqual([]);
+  });
+}

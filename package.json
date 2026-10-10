@@ -18,7 +18,8 @@
     "contrast": "node scripts/contrast-check.mjs",
     "prepare": "simple-git-hooks",
     "no-verbatim": "node scripts/no-verbatim.mjs",
-    "test:dist": "vitest run --project dist"
+    "test:dist": "vitest run --project dist",
+    "test:e2e": "playwright test"
   },
   "simple-git-hooks": {
     "pre-commit": "node scripts/guard.mjs --staged"
