@@ -2,9 +2,12 @@
 // No-verbatim guard (COMPLIANCE_PLAN §1a): fails if any content file shares a 12-word run
 // with a local reference, or if > 1% of its 8-word n-grams appear in a reference.
 // Usage: node scripts/no-verbatim.mjs [paths...]   (default: src/content docs/ledger)
+//        node scripts/no-verbatim.mjs --staged     (pre-commit: staged files under those dirs;
+//                                                   exits 0 silently when .work/ does not exist)
 // Reference text comes from gitignored .work/*.txt (extracted locally); absent in CI → skip.
 import { readFileSync, readdirSync, statSync, existsSync } from 'node:fs';
 import { join, extname } from 'node:path';
+import { execFileSync } from 'node:child_process';
 
 const WORK = process.env.NO_VERBATIM_WORK ?? '.work';
 const RUN = 12;
@@ -35,6 +38,16 @@ function walk(p, acc = []) {
   return acc;
 }
 
+let args = process.argv.slice(2);
+if (args[0] === '--staged') {
+  if (!existsSync(WORK)) process.exit(0); // no local references (CI, fresh clones, worktrees)
+  // shortcut: checks the working-tree copy of each staged file, not the staged blob; fine unless partial staging is used.
+  args = execFileSync('git', ['diff', '--cached', '--name-only', '--diff-filter=ACMR', '-z'], { encoding: 'utf8' })
+    .split('\0')
+    .filter((f) => /^(src\/content|docs\/ledger)\//.test(f));
+  if (!args.length) process.exit(0);
+}
+
 const refFiles = existsSync(WORK) ? readdirSync(WORK).filter((f) => f.endsWith('.txt')).map((f) => join(WORK, f)) : [];
 if (!refFiles.length) {
   console.log('no-verbatim: SKIPPED — no local reference text in .work/ (expected in CI). Run locally before publishing.');
@@ -49,7 +62,7 @@ for (const f of refFiles) {
   for (const g of grams(w, RUN)) ref12.add(g);
 }
 
-const targets = (process.argv.slice(2).length ? process.argv.slice(2) : ['src/content', 'docs/ledger']).flatMap((p) => walk(p));
+const targets = (args.length ? args : ['src/content', 'docs/ledger']).flatMap((p) => walk(p));
 let failed = 0;
 for (const file of targets) {
   const w = words(readFileSync(file, 'utf8'));
