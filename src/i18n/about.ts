@@ -9,6 +9,13 @@ export const ABOUT_PAGES = {
       en: 'Method, claim checking, use of artificial intelligence, review status and limits.',
     },
   },
+  evidence: {
+    title: { it: 'Perché questo metodo di studio', en: 'Why this study method' },
+    description: {
+      it: 'Cosa suggeriscono gli studi su ripasso a intervalli, quiz e spiegazioni, con i loro limiti.',
+      en: 'What research suggests about spaced review, quizzes and self-explanation, with its limits.',
+    },
+  },
   disclaimer: {
     title: { it: 'Avvertenza medica', en: 'Medical disclaimer' },
     description: {
