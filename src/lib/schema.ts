@@ -31,6 +31,8 @@ export const RelationType = z.enum(RELATION_TYPES);
 export type RelationTypeId = z.infer<typeof RelationType>;
 
 const SourceRef = z.object({ source: Id, chapter: z.string().optional(), pages: z.string().optional() });
+/** Only names listed in the repo-root REVIEWERS file are accepted (content gate, docs/CONTENT_GATES.md). */
+const ReviewedBy = z.object({ name: z.string().min(1), date: z.coerce.date() });
 
 // ── §1a Entity meta ──────────────────────────────────────────────────────────
 export const entitySchema = z
@@ -72,7 +74,7 @@ export const entitySchema = z
       )
       .default([]),
     reviewStatus: ReviewStatus,
-    reviewedBy: z.object({ name: z.string().min(1), date: z.coerce.date() }).optional(),
+    reviewedBy: ReviewedBy.optional(),
     editionDependent: z.boolean(),
     editionNote: L.optional(),
     sources: z.array(SourceRef).min(1),
@@ -113,6 +115,7 @@ export const patternSchema = z
     }),
     images: z.array(z.object({ id: Id, entity: Id })).default([]),
     reviewStatus: ReviewStatus,
+    reviewedBy: ReviewedBy.optional(),
     editionDependent: z.boolean(),
     sources: z.array(SourceRef).min(1),
     lastUpdated: z.coerce.date(),
@@ -144,6 +147,7 @@ export const questionSchema = z
     backLink: z.object({ entity: Id, section: z.string() }),
     claims: z.array(z.string()).default([]),
     reviewStatus: ReviewStatus,
+    reviewedBy: ReviewedBy.optional(),
     lastUpdated: z.coerce.date(),
     status: Status,
   })
@@ -254,3 +258,31 @@ export const sourceSchema = z.object({
   existsVerified: z.object({ via: z.enum(['crossref', 'pubmed', 'publisher']), date: z.coerce.date() }),
 });
 export type Source = z.infer<typeof sourceSchema>;
+
+// ── §8 Claim ledger — docs/ledger/<entity-or-pattern-id>.yaml ────────────────
+export const CLAIM_STATUSES = ['verified', 'contradicted', 'not-found-in-reference', 'beyond-reference', 'sources-differ'] as const;
+/** Statuses that are only acceptable with an independent, existence-verified second source. */
+export const NEEDS_SECOND_SOURCE: ReadonlySet<string> = new Set(['not-found-in-reference', 'beyond-reference', 'sources-differ']);
+export const ledgerSchema = z.object({
+  /** entity or pattern id; must equal the file name. */
+  entity: Id,
+  claims: z.array(
+    z
+      .object({
+        claimId: z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/),
+        section: z.string().min(1),
+        statement: z.string().min(1), // our own wording, never quoted reference text
+        sourceRef: SourceRef,
+        status: z.enum(CLAIM_STATUSES),
+        secondSource: z.object({ source: Id, locator: z.string().min(1) }).optional(),
+        verifiedBy: z.enum(['agent', 'human']),
+        verifier: z.string().min(1),
+        date: z.coerce.date(),
+      })
+      .superRefine((c, ctx) => {
+        if (NEEDS_SECOND_SOURCE.has(c.status) && !c.secondSource)
+          ctx.addIssue({ code: 'custom', path: ['secondSource'], message: `secondSource is required for status ${c.status}` });
+      }),
+  ),
+});
+export type Ledger = z.infer<typeof ledgerSchema>;
