@@ -1,0 +1,67 @@
+---
+/** All terms of one lens, as a tree when terms have parents, with card counts. */
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../../../components/nav/Breadcrumb.astro';
+import { LANGS, fmt, type Lang } from '../../../../i18n/index.ts';
+import { tCommon } from '../../../../i18n/common.ts';
+import { tAtlas } from '../../../../i18n/pages.ts';
+import { LENSES, type LensId } from '../../../../lib/schema.ts';
+import { langPath } from '../../../../lib/url.ts';
+import { siteData } from '../../../../lib/content.ts';
+
+export function getStaticPaths() {
+  return LANGS.flatMap((lang) => LENSES.map((lens) => ({ params: { lang, lens } })));
+}
+
+const lang = Astro.params.lang as Lang;
+const lens = Astro.params.lens as LensId;
+const t = (k: Parameters<typeof tAtlas>[1]) => tAtlas(lang, k);
+const { taxonomy, membership } = await siteData();
+const tax = taxonomy.get(lens);
+const counts = membership.get(lens)!;
+const terms = [...(tax?.terms ?? [])].sort((a, b) => a.order - b.order);
+// Tree order: each root followed by its children.
+const ordered = terms
+  .filter((x) => !x.parent)
+  .flatMap((p) => [p, ...terms.filter((c) => c.parent === p.id)]);
+const anyEntities = counts.size > 0;
+const label = tax?.label[lang] ?? lens;
+const countText = (n: number) => (n === 1 ? t('termCountOne') : fmt(t('termCount'), { n }));
+---
+
+<BaseLayout lang={lang} title={label} description={`${t('title')}: ${label}`} tab="atlas">
+  <Breadcrumb lang={lang} items={[{ label: t('title'), href: langPath(lang, 'atlas/') }, { label }]} />
+  <header class="page-head">
+    <p class="kicker">{t('lenses')}</p>
+    <h1>{label}</h1>
+  </header>
+
+  {
+    !anyEntities && (
+      <div class="empty-state" style="margin-bottom:var(--space-5)">
+        <p style="margin:0">
+          {t('emptyLens')} <a href={langPath(lang, 'about/roadmap/')}>{tCommon(lang, 'roadmap')}</a>
+        </p>
+      </div>
+    )
+  }
+
+  <h2>{t('termsInLens')}</h2>
+  <ul class="term-list">
+    {
+      ordered.map((term) => {
+        const n = counts.get(term.id)?.length ?? 0;
+        return (
+          <li class={term.parent ? 'child' : undefined}>
+            {n > 0 ? (
+              <a href={langPath(lang, `atlas/${lens}/${term.id}/`)}>{term.label[lang]}</a>
+            ) : (
+              <span>{term.label[lang]}</span>
+            )}
+            <span class="small muted">{countText(n)}</span>
+          </li>
+        );
+      })
+    }
+  </ul>
+</BaseLayout>

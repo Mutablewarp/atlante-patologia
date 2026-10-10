@@ -1,0 +1,28 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { langPaths, type Lang } from '../../../i18n/index.ts';
+import { tMe } from '../../../i18n/pages.ts';
+import { tCommon } from '../../../i18n/common.ts';
+import { langPath } from '../../../lib/url.ts';
+
+export const getStaticPaths = langPaths;
+
+const lang = Astro.params.lang as Lang;
+const t = (k: Parameters<typeof tMe>[1]) => tMe(lang, k);
+---
+
+<BaseLayout lang={lang} title={t('title')} description={t('metaDescription')} tab="me">
+  <header class="page-head">
+    <h1>{t('title')}</h1>
+    <p class="lede">{t('intro')}</p>
+  </header>
+  <section class="empty-state" aria-labelledby="me-empty">
+    <h2 id="me-empty" style="margin-top:0">{t('emptyTitle')}</h2>
+    <p style="margin:0">{t('emptyBody')}</p>
+  </section>
+  <section aria-labelledby="me-data" style="max-width:var(--measure)">
+    <h2 id="me-data">{t('dataTitle')}</h2>
+    <p>{t('dataBody')}</p>
+    <p><a href={langPath(lang, 'about/privacy/')}>{tCommon(lang, 'footerPrivacy')} →</a></p>
+  </section>
+</BaseLayout>

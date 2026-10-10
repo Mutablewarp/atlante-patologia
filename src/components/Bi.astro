@@ -1,0 +1,15 @@
+---
+/**
+ * Bilingual prose block: renders the slot for the current language.
+ *   <Bi lang={lang}><Fragment slot="it">…</Fragment><Fragment slot="en">…</Fragment></Bi>
+ * Both slots are required, so no prose exists in only one language.
+ */
+import type { Lang } from '../i18n/index.ts';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+---
+
+{lang === 'it' ? <slot name="it" /> : <slot name="en" />}

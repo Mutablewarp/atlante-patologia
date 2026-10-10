@@ -1,0 +1,179 @@
+---
+/**
+ * Canonical entity page (NAVIGATION_SPEC §4, CONTENT_SCHEMA §1).
+ * Generated only for visible entities (published, or drafts with PREVIEW_DRAFTS=1).
+ */
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../../components/nav/Breadcrumb.astro';
+import EntityHeader from '../../../components/entity/EntityHeader.astro';
+import RelatedPanel from '../../../components/entity/RelatedPanel.astro';
+import { LANGS, fmt, type Lang } from '../../../i18n/index.ts';
+import { tEntity, tAtlas } from '../../../i18n/pages.ts';
+import { SECTIONS, QUICK_CHECK, PRINT_SECTIONS } from '../../../i18n/sections.ts';
+import { langPath } from '../../../lib/url.ts';
+import { siteData, entityBody, sources as getSources } from '../../../lib/content.ts';
+import { splitSections } from '../../../lib/sections.ts';
+import { primaryTerm, prevNext } from '../../../lib/lenses.ts';
+import '../../../styles/entity.css';
+
+export async function getStaticPaths() {
+  const { entities } = await siteData();
+  return entities.flatMap((e) => LANGS.map((lang) => ({ params: { lang, id: e.id } })));
+}
+
+const lang = Astro.params.lang as Lang;
+const id = Astro.params.id!;
+const t = (k: Parameters<typeof tEntity>[1]) => tEntity(lang, k);
+const data = await siteData();
+const entity = data.entityById.get(id)!;
+const body = await entityBody(id, lang);
+const split = splitSections(body?.rendered?.html ?? '');
+if (split.unknown.length) throw new Error(`${id}/${lang}.md: non-canonical H2 titles: ${split.unknown.join(' | ')}`);
+
+const primary = primaryTerm(entity);
+const systemTax = data.taxonomy.get('system');
+const termLabel = primary ? systemTax?.terms.find((x) => x.id === primary.term)?.label[lang] ?? primary.term : undefined;
+const order = primary ? (data.membership.get('system')?.get(primary.term) ?? []) : [];
+const { prev, next } = prevNext(order, id);
+const nameOf = (eid: string) => data.entityById.get(eid)?.names[lang] ?? eid;
+const allSources = await getSources();
+const cited = entity.sources.map((s) => ({ ...s, src: allSources.find((x) => x.id === s.source) }));
+
+const crumbs = [
+  { label: tAtlas(lang, 'title'), href: langPath(lang, 'atlas/') },
+  ...(primary && systemTax
+    ? [
+        { label: systemTax.label[lang], href: langPath(lang, 'atlas/system/') },
+        { label: termLabel!, href: langPath(lang, `atlas/system/${primary.term}/`) },
+      ]
+    : []),
+  { label: entity.names[lang] },
+];
+const toc = [...SECTIONS, QUICK_CHECK];
+---
+
+<BaseLayout lang={lang} title={entity.names[lang]} description={entity.summary[lang]} tab="atlas">
+  <Breadcrumb lang={lang} items={crumbs} />
+  <article class="entity" data-entity={id}>
+    {entity.status === 'draft' && <p class="notice notice-caution draft-banner" role="note">{t('draftBanner')}</p>}
+    <EntityHeader lang={lang} entity={entity} data={data} />
+
+    <div class="entity-layout">
+      <nav class="section-toc" aria-label={t('onThisPage')}>
+        <p class="toc-title" aria-hidden="true">{t('onThisPage')}</p>
+        <ol>
+          {
+            toc.map((s) => (
+              <li data-quick={String(s.quick)}>
+                <a href={`#${s.id}`}>{s.short[lang]}</a>
+              </li>
+            ))
+          }
+        </ol>
+      </nav>
+
+      <div class="entity-body">
+        <section class="objectives card" aria-labelledby="objectives-title">
+          <h2 id="objectives-title" class="kicker">{t('objectives')}</h2>
+          <ul>{entity.learningObjectives.map((o) => <li>{o[lang]}</li>)}</ul>
+        </section>
+
+        {
+          entity.editionDependent && entity.editionNote && (
+            <aside class="notice edition-note" aria-label={t('editionDependent')}>
+              <strong>{t('editionDependent')}:</strong> {entity.editionNote[lang]}
+            </aside>
+          )
+        }
+
+        {
+          SECTIONS.map((s) => (
+            <section
+              class="entity-section"
+              id={s.id}
+              data-quick={String(s.quick)}
+              data-print={(PRINT_SECTIONS as readonly string[]).includes(s.id) ? '' : undefined}
+              aria-labelledby={`${s.id}-title`}
+            >
+              <h2 id={`${s.id}-title`} class="section-title">
+                <button type="button" class="section-toggle" aria-expanded="true" aria-controls={`${s.id}-body`} data-section-toggle>
+                  <span>{s.title[lang]}</span>
+                  <span class="chevron js-only" aria-hidden="true" />
+                </button>
+              </h2>
+              <div class="section-body prose" id={`${s.id}-body`} set:html={split.sections.get(s.id) ?? ''} />
+            </section>
+          ))
+        }
+
+        <section class="entity-section" id={QUICK_CHECK.id} data-quick="true" aria-labelledby="quick-check-title">
+          <h2 id="quick-check-title" class="section-title">
+            <button type="button" class="section-toggle" aria-expanded="true" aria-controls="quick-check-body" data-section-toggle>
+              <span>{QUICK_CHECK.title[lang]}</span>
+              <span class="chevron js-only" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <div class="section-body" id="quick-check-body">
+            <ol class="quick-check">
+              {
+                entity.quickCheck.map((q) => (
+                  <li>
+                    <p class="qc-q">{q.q[lang]}</p>
+                    <details>
+                      <summary>{t('showAnswer')}</summary>
+                      <p>{q.a[lang]}</p>
+                    </details>
+                  </li>
+                ))
+              }
+            </ol>
+          </div>
+        </section>
+
+        <RelatedPanel lang={lang} groups={data.relations.get(id) ?? []} data={data} />
+
+        <section class="sources" aria-labelledby="sources-title">
+          <h2 id="sources-title">{t('sources')}</h2>
+          <ul>
+            {
+              cited.map((c) => (
+                <li>
+                  {c.src ? <cite>{c.src.title}</cite> : c.source}
+                  {c.src?.edition && `, ed. ${c.src.edition}`}
+                  {c.chapter && ` · ${lang === 'it' ? 'cap.' : 'ch.'} ${c.chapter}`}
+                  {c.pages && ` · pp. ${c.pages}`}
+                </li>
+              ))
+            }
+          </ul>
+          <p class="small">
+            <a href={langPath(lang, 'about/report/')}>{t('reportThis')}</a>
+          </p>
+        </section>
+
+        {
+          (prev || next) && termLabel && (
+            <nav class="prev-next" aria-label={termLabel}>
+              {prev && (
+                <a rel="prev" href={langPath(lang, `e/${prev}/`)}>
+                  <span class="small muted">{fmt(t('prevIn'), { term: termLabel })}</span>
+                  <span>← {nameOf(prev)}</span>
+                </a>
+              )}
+              {next && (
+                <a rel="next" href={langPath(lang, `e/${next}/`)}>
+                  <span class="small muted">{fmt(t('nextIn'), { term: termLabel })}</span>
+                  <span>{nameOf(next)} →</span>
+                </a>
+              )}
+            </nav>
+          )
+        }
+      </div>
+    </div>
+  </article>
+</BaseLayout>
+
+<script>
+  import '../../../scripts/entity.ts';
+</script>

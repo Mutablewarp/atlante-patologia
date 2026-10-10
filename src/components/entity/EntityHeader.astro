@@ -1,0 +1,80 @@
+---
+/** Entity header: all names, summary, lens chips, badges, reading toolbar. */
+import type { Lang } from '../../i18n/index.ts';
+import { formatDate, fmt, otherLang } from '../../i18n/index.ts';
+import { tEntity } from '../../i18n/pages.ts';
+import { LENSES } from '../../lib/schema.ts';
+import { langPath } from '../../lib/url.ts';
+import type { SiteData } from '../../lib/content.ts';
+
+interface Props {
+  lang: Lang;
+  entity: SiteData['entities'][number];
+  data: SiteData;
+}
+const { lang, entity, data } = Astro.props;
+const t = (k: Parameters<typeof tEntity>[1]) => tEntity(lang, k);
+const n = entity.names;
+const other = otherLang(lang);
+const mod = data.modules.find((m) => m.id === entity.module);
+const chips = LENSES.flatMap((lens) =>
+  entity.lenses[lens].map((term) => ({
+    lens,
+    term,
+    label: data.taxonomy.get(lens)?.terms.find((x) => x.id === term)?.label[lang] ?? term,
+    lensLabel: data.taxonomy.get(lens)?.label[lang] ?? lens,
+  })),
+);
+const synonyms = [...n.synonyms[lang], ...n.synonyms[other]];
+---
+
+<header class="entity-head">
+  {mod && <p class="kicker">{mod.id.toUpperCase()} · {mod.label[lang]}</p>}
+  <h1>{n[lang]}</h1>
+  <dl class="entity-names">
+    <div><dt class="visually-hidden">{other.toUpperCase()}</dt><dd lang={other}>{n[other]}</dd></div>
+    {n.latin && <div><dt>{t('latin')}</dt><dd lang="la"><i>{n.latin}</i></dd></div>}
+    {n.eponyms.length > 0 && <div><dt>{t('eponyms')}</dt><dd>{n.eponyms.join(', ')}</dd></div>}
+    {synonyms.length > 0 && <div><dt>{t('synonyms')}</dt><dd>{synonyms.join(', ')}</dd></div>}
+    {n.abbreviations.length > 0 && <div><dt>{t('abbreviations')}</dt><dd>{n.abbreviations.join(', ')}</dd></div>}
+  </dl>
+  <p class="lede">{entity.summary[lang]}</p>
+
+  <ul class="lens-chips" aria-label={t('lensTags')}>
+    {
+      chips.map((c) => (
+        <li>
+          <a class="chip" href={langPath(lang, `atlas/${c.lens}/${c.term}/`)}>
+            <span class="visually-hidden">{c.lensLabel}: </span>
+            {c.label}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+
+  <ul class="badges">
+    <li>
+      {
+        entity.reviewStatus === 'expert-reviewed' ? (
+          <span class="badge badge-published">✓ {t('reviewExpert')}{entity.reviewedBy && ` · ${entity.reviewedBy.name}`}</span>
+        ) : (
+          <span class="badge badge-eosin">⚠︎ {t('reviewUnreviewed')}</span>
+        )
+      }
+    </li>
+    <li><span class="badge">{fmt(t('updated'), { date: formatDate(lang, entity.lastUpdated) })}</span></li>
+    {entity.editionDependent && <li><span class="badge">◷ {t('editionDependent')}</span></li>}
+  </ul>
+
+  <div class="entity-toolbar js-only">
+    <div class="segmented" role="group" aria-label={t('mode')}>
+      <button type="button" data-mode-btn="quick" aria-pressed="false">{t('quick')}</button>
+      <button type="button" data-mode-btn="full" aria-pressed="true">{t('full')}</button>
+    </div>
+    <button type="button" class="btn btn-small" data-expand-all data-label-expand={t('expandAll')} data-label-collapse={t('collapseAll')}>
+      {t('collapseAll')}
+    </button>
+    <button type="button" class="btn btn-small" data-print>{t('print')}</button>
+  </div>
+</header>

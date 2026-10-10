@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Bi from '../../../components/Bi.astro';
+import { langPaths, type Lang } from '../../../i18n/index.ts';
+import { ABOUT_PAGES, ABOUT_INDEX, type AboutSlug } from '../../../i18n/about.ts';
+import { langPath } from '../../../lib/url.ts';
+
+export const getStaticPaths = langPaths;
+const lang = Astro.params.lang as Lang;
+const slugs = Object.keys(ABOUT_PAGES) as AboutSlug[];
+---
+
+<BaseLayout lang={lang} title={ABOUT_INDEX.title[lang]} description={ABOUT_INDEX.description[lang]}>
+  <header class="page-head">
+    <h1>{ABOUT_INDEX.title[lang]}</h1>
+    <div class="lede">
+      <Bi lang={lang}>
+        <Fragment slot="it">
+          <p>
+            L’Atlante di Patologia è un progetto libero e gratuito per chi studia anatomia patologica. Non ha account,
+            pubblicità né tracciamento; il suo codice e i suoi testi sono aperti.
+          </p>
+        </Fragment>
+        <Fragment slot="en">
+          <p>
+            Atlante di Patologia is a free and open project for students of pathology. It has no accounts, no ads and no
+            tracking, and its code and texts are openly licensed.
+          </p>
+        </Fragment>
+      </Bi>
+    </div>
+  </header>
+  <ul class="grid">
+    {
+      slugs.map((slug) => (
+        <li>
+          <a class="card link-card" href={langPath(lang, `about/${slug}/`)}>
+            <h2 style="margin-top:0;font-size:var(--step-1);color:var(--hema)">{ABOUT_PAGES[slug].title[lang]} →</h2>
+            <p class="small muted" style="margin:0">{ABOUT_PAGES[slug].description[lang]}</p>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</BaseLayout>

@@ -1,0 +1,47 @@
+---
+/** Related entities grouped by relation type; symmetric relations are mirrored (lib/relations.ts). */
+import type { Lang } from '../../i18n/index.ts';
+import { tEntity } from '../../i18n/pages.ts';
+import { langPath } from '../../lib/url.ts';
+import type { RelationGroup } from '../../lib/relations.ts';
+import type { SiteData } from '../../lib/content.ts';
+
+interface Props {
+  lang: Lang;
+  groups: RelationGroup[];
+  data: SiteData;
+}
+const { lang, groups, data } = Astro.props;
+const label = (id: string) => data.entityById.get(id)?.names[lang] ?? id.replace(/-/g, ' ');
+---
+
+{
+  groups.length > 0 && (
+    <section class="related" aria-labelledby="related-title">
+      <h2 id="related-title">{tEntity(lang, 'related')}</h2>
+      <div class="related-groups">
+        {groups.map((g) => (
+          <div class="related-group">
+            <h3>
+              {g.label[lang]} <span class="muted">({g.items.length})</span>
+            </h3>
+            <ul>
+              {g.items.map((item) => (
+                <li>
+                  {data.entityById.has(item.target) ? (
+                    <a href={langPath(lang, `e/${item.target}/`)}>{label(item.target)}</a>
+                  ) : (
+                    <span>
+                      {label(item.target)} <span class="badge badge-planned">{tEntity(lang, 'notPublished')}</span>
+                    </span>
+                  )}
+                  {item.note && <span class="small muted"> — {item.note[lang]}</span>}
+                </li>
+              ))}
+            </ul>
+          </div>
+        ))}
+      </div>
+    </section>
+  )
+}

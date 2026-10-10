@@ -1,0 +1,41 @@
+---
+/**
+ * Original inline SVG icons for the five destinations (no icon CDN).
+ * Renders an outline and a filled variant; CSS shows the filled one for the
+ * current tab, so "current" is never signalled by colour alone.
+ */
+import type { Tab } from '../../i18n/nav.ts';
+
+interface Props {
+  name: Tab;
+}
+const { name } = Astro.props;
+
+const paths: Record<Tab, string> = {
+  home: 'M4 10.6 12 4l8 6.6V19.5a1 1 0 0 1-1 1h-4.6v-5.8H9.6v5.8H5a1 1 0 0 1-1-1z',
+  atlas: 'M3.2 5.6c2.9-1.2 5.9-1 8.8.9 2.9-1.9 5.9-2.1 8.8-.9v13.6c-2.9-1.1-5.9-.9-8.8 1-2.9-1.9-5.9-2.1-8.8-1z',
+  study: 'M5 8.5a1.8 1.8 0 0 1 1.8-1.8h8.4A1.8 1.8 0 0 1 17 8.5v10.7a1.8 1.8 0 0 1-1.8 1.8H6.8A1.8 1.8 0 0 1 5 19.2z',
+  search: 'M10.8 4.2a6.6 6.6 0 1 1 0 13.2 6.6 6.6 0 0 1 0-13.2z',
+  me: 'M12 3.8a3.9 3.9 0 1 1 0 7.8 3.9 3.9 0 0 1 0-7.8zM4.6 20.2c.6-3.9 3.6-6.3 7.4-6.3s6.8 2.4 7.4 6.3z',
+};
+/** Extra strokes drawn on top of both variants. */
+const extras: Record<Tab, string> = {
+  home: '',
+  atlas: 'M12 6.5v13.7',
+  study: 'M8.6 3.4h8.8a2.4 2.4 0 0 1 2.4 2.4v10',
+  search: 'M15.6 15.6 20.4 20.4',
+  me: '',
+};
+const d = paths[name];
+const extra = extras[name];
+---
+
+<svg class="outline" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+  <path d={d}></path>
+  {extra && <path d={extra}></path>}
+</svg>
+<svg class="filled" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+  <path d={d} fill="currentColor" fill-opacity={name === 'search' ? 0.3 : 1}></path>
+  {extra && <path d={extra} stroke-width="2.3"></path>}
+  {name === 'atlas' && <path d="M12 6.5v13.7" style="stroke: var(--hema-soft)" stroke-width="1.6"></path>}
+</svg>

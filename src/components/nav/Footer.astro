@@ -1,0 +1,40 @@
+---
+/** Footer on every page: medical disclaimer, report link, about links, licences. */
+import type { Lang } from '../../i18n/index.ts';
+import { tCommon, ISSUES_URL } from '../../i18n/common.ts';
+import { langPath } from '../../lib/url.ts';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = (k: Parameters<typeof tCommon>[1]) => tCommon(lang, k);
+const links = [
+  ['about/', t('footerAbout')],
+  ['about/method/', t('footerMethod')],
+  ['about/disclaimer/', t('footerDisclaimer')],
+  ['about/privacy/', t('footerPrivacy')],
+  ['about/accessibility/', t('footerAccessibility')],
+  ['about/licenses/', t('footerLicenses')],
+  ['about/credits/', t('footerCredits')],
+] as const;
+---
+
+<footer class="site-footer" data-nav="global">
+  <div class="footer-inner">
+    <p class="footer-disclaimer">
+      <strong>{t('disclaimerShort')}</strong>{' '}
+      <a href={ISSUES_URL} rel="noopener">{t('reportError')} <span class="visually-hidden">{t('newTab')}</span></a>
+    </p>
+    <ul class="footer-links">
+      {
+        links.map(([path, label]) => (
+          <li>
+            <a href={langPath(lang, path)}>{label}</a>
+          </li>
+        ))
+      }
+    </ul>
+    <p class="muted" style="margin:0">{t('footerLicenseLine')}</p>
+  </div>
+</footer>

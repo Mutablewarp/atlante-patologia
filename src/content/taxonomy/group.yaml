@@ -1,0 +1,60 @@
+lens: group
+label:
+  it: "Gruppo di malattie"
+  en: "Disease group"
+terms:
+  - id: degenerative
+    order: 10
+    label:
+      it: "Degenerative e ischemiche"
+      en: "Degenerative and ischemic"
+  - id: inflammatory
+    order: 20
+    label:
+      it: "Infiammatorie"
+      en: "Inflammatory"
+  - id: infectious
+    order: 30
+    label:
+      it: "Infettive"
+      en: "Infectious"
+  - id: immune
+    order: 40
+    label:
+      it: "Immunitarie"
+      en: "Immune"
+  - id: neoplastic
+    order: 50
+    label:
+      it: "Neoplastiche"
+      en: "Neoplastic"
+  - id: genetic
+    order: 60
+    label:
+      it: "Genetiche"
+      en: "Genetic"
+  - id: developmental
+    order: 70
+    label:
+      it: "Dello sviluppo"
+      en: "Developmental"
+  - id: vascular
+    order: 80
+    label:
+      it: "Vascolari"
+      en: "Vascular"
+  - id: metabolic
+    order: 90
+    label:
+      it: "Metaboliche"
+      en: "Metabolic"
+  - id: toxic-environmental
+    order: 100
+    label:
+      it: "Tossiche e ambientali"
+      en: "Toxic and environmental"
+  - id: nutritional
+    order: 110
+    label:
+      it: "Nutrizionali"
+      en: "Nutritional"

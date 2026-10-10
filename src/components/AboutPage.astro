@@ -1,0 +1,26 @@
+---
+/** Wrapper for /{lang}/about/<slug>/ pages: layout, breadcrumb, title, prose column. */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Breadcrumb from './nav/Breadcrumb.astro';
+import type { Lang } from '../i18n/index.ts';
+import { ABOUT_PAGES, ABOUT_INDEX, type AboutSlug } from '../i18n/about.ts';
+import { langPath } from '../lib/url.ts';
+
+interface Props {
+  lang: Lang;
+  slug: AboutSlug;
+}
+const { lang, slug } = Astro.props;
+const page = ABOUT_PAGES[slug];
+---
+
+<BaseLayout lang={lang} title={page.title[lang]} description={page.description[lang]}>
+  <Breadcrumb lang={lang} items={[{ label: ABOUT_INDEX.title[lang], href: langPath(lang, 'about/') }, { label: page.title[lang] }]} />
+  <header class="page-head">
+    <h1>{page.title[lang]}</h1>
+    <p class="lede">{page.description[lang]}</p>
+  </header>
+  <div class="prose">
+    <slot />
+  </div>
+</BaseLayout>

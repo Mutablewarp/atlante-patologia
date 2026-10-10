@@ -1,0 +1,70 @@
+---
+import AboutPage from '../../../components/AboutPage.astro';
+import Bi from '../../../components/Bi.astro';
+import { langPaths, type Lang } from '../../../i18n/index.ts';
+import { sources } from '../../../lib/content.ts';
+
+export const getStaticPaths = langPaths;
+const lang = Astro.params.lang as Lang;
+const all = await sources();
+const books = all.filter((s) => s.kind !== 'article');
+const articles = all.filter((s) => s.kind === 'article').sort((a, b) => b.year - a.year);
+---
+
+<AboutPage lang={lang} slug="reading-list">
+  <h2>{lang === 'it' ? 'Testo di riferimento' : 'Reference textbook'}</h2>
+  <Bi lang={lang}>
+    <p slot="it">
+      Le affermazioni dell’atlante sono verificate su questo manuale. Non ne riproduciamo testi, tabelle o figure: se vuoi
+      approfondire, consultalo in biblioteca o acquistane una copia.
+    </p>
+    <p slot="en">
+      The atlas’s claims are checked against this textbook. We do not reproduce its text, tables or figures: to go deeper,
+      borrow it from a library or buy a copy.
+    </p>
+  </Bi>
+  <ul>
+    {
+      books.map((b) => (
+        <li>
+          {b.authors && `${b.authors}. `}
+          <cite>{b.title}</cite>
+          {b.edition && `, ${lang === 'it' ? `${b.edition}ª ed.` : `${b.edition}th ed.`}`}
+          {b.publisher && ` ${b.publisher},`} {b.year}.
+        </li>
+      ))
+    }
+  </ul>
+
+  <h2>{lang === 'it' ? 'Studi sul metodo di studio' : 'Research on how to study'}</h2>
+  <Bi lang={lang}>
+    <p slot="it">
+      Gli strumenti di studio (ripasso a intervalli, quiz, mappe concettuali, microscopia virtuale) si ispirano a questi
+      lavori. Ogni DOI è stato verificato su Crossref.
+    </p>
+    <p slot="en">
+      The study tools (spaced review, quizzes, concept maps, virtual microscopy) draw on these papers. Every DOI was checked
+      on Crossref.
+    </p>
+  </Bi>
+  <ul class="refs">
+    {
+      articles.map((a) => (
+        <li>
+          {a.authors}. <cite>{a.title}</cite>. {a.journal}; {a.year}.{' '}
+          {a.doi && (
+            <a href={`https://doi.org/${a.doi}`} rel="noopener">
+              doi:{a.doi}
+            </a>
+          )}
+        </li>
+      ))
+    }
+  </ul>
+</AboutPage>
+
+<style>
+  .refs li {
+    margin-bottom: var(--space-3);
+  }
+</style>

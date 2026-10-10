@@ -1,0 +1,93 @@
+---
+/**
+ * Shell for every localized page: head (lang, canonical, hreflang, theme
+ * before paint), skip link, top bar, primary navigation, first-launch notice,
+ * <main> (the only part Pagefind indexes) and the footer with the disclaimer.
+ */
+import '../styles/fonts.css';
+import '../styles/tokens.css';
+import '../styles/base.css';
+import '../styles/layout.css';
+import '../styles/print.css';
+import { LANGS, type Lang } from '../i18n/index.ts';
+import { tCommon, SITE_NAME } from '../i18n/common.ts';
+import type { Tab } from '../i18n/nav.ts';
+import { alternate, url } from '../lib/url.ts';
+import TopBar from '../components/nav/TopBar.astro';
+import PrimaryNav from '../components/nav/PrimaryNav.astro';
+import Footer from '../components/nav/Footer.astro';
+import DisclaimerNotice from '../components/nav/DisclaimerNotice.astro';
+
+interface Props {
+  lang: Lang;
+  title: string;
+  description: string;
+  tab?: Tab;
+  /** Index <main> in Pagefind (false for 404 and utility pages). */
+  searchable?: boolean;
+  /** Emit hreflang alternates (the page exists in both languages). */
+  alternates?: boolean;
+  noindex?: boolean;
+}
+const { lang, title, description, tab, searchable = true, alternates = true, noindex = false } = Astro.props;
+const path = Astro.url.pathname;
+const site = Astro.site!;
+const abs = (p: string) => new URL(p, site).href;
+const fullTitle = title === SITE_NAME ? SITE_NAME : `${title} · ${SITE_NAME}`;
+---
+
+<!doctype html>
+<html lang={lang} dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{fullTitle}</title>
+    <meta name="description" content={description} />
+    {noindex && <meta name="robots" content="noindex" />}
+    <link rel="canonical" href={abs(path)} />
+    {alternates && LANGS.map((l) => <link rel="alternate" hreflang={l} href={abs(alternate(l, path))} />)}
+    {alternates && <link rel="alternate" hreflang="x-default" href={abs(url())} />}
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f1e7" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0e1120" />
+    <meta name="color-scheme" content="light dark" />
+    <link rel="icon" href={url('favicon.svg')} type="image/svg+xml" />
+    <link rel="manifest" href={url('manifest.webmanifest')} />
+    <link rel="sitemap" href={url('sitemap-index.xml')} />
+    <meta property="og:title" content={fullTitle} />
+    <meta property="og:description" content={description} />
+    <meta property="og:locale" content={lang === 'it' ? 'it_IT' : 'en_GB'} />
+    <script is:inline>
+      // Before paint: preferences that change layout or colours (no flash).
+      (function () {
+        var d = document.documentElement;
+        d.classList.add('js');
+        try {
+          var s = localStorage;
+          var t = s.getItem('ap-theme');
+          if (t === 'light' || t === 'dark') d.dataset.theme = t;
+          if (s.getItem('ap-disclaimer') === '1') d.dataset.disclaimerAck = '';
+          if (s.getItem('ap-sidebar') === 'collapsed') d.dataset.sidebar = 'collapsed';
+          if (s.getItem('ap-mode') === 'quick') d.dataset.mode = 'quick';
+        } catch (e) {}
+      })();
+    </script>
+    <slot name="head" />
+  </head>
+  <body data-tab={tab}>
+    <a class="skip-link" href="#main">{tCommon(lang, 'skipToContent')}</a>
+    <div class="app">
+      <TopBar lang={lang} langSwitchToHome={!alternates} />
+      <PrimaryNav lang={lang} current={tab} />
+      <main id="main" tabindex="-1">
+        <DisclaimerNotice lang={lang} />
+        <div class="page" data-pagefind-body={searchable ? '' : undefined}>
+          <slot />
+        </div>
+      </main>
+      <Footer lang={lang} />
+    </div>
+    <script>
+      import '../scripts/shell.ts';
+    </script>
+  </body>
+</html>

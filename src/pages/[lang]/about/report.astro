@@ -1,0 +1,50 @@
+---
+import AboutPage from '../../../components/AboutPage.astro';
+import Bi from '../../../components/Bi.astro';
+import { langPaths, type Lang } from '../../../i18n/index.ts';
+import { ISSUES_URL } from '../../../i18n/common.ts';
+
+export const getStaticPaths = langPaths;
+const lang = Astro.params.lang as Lang;
+const NEW_ISSUE = `${ISSUES_URL}/new`;
+---
+
+<AboutPage lang={lang} slug="report">
+  <p><a class="btn btn-primary" href={NEW_ISSUE} rel="noopener">{lang === 'it' ? 'Apri una segnalazione su GitHub' : 'Open an issue on GitHub'}</a></p>
+  <Bi lang={lang}>
+    <Fragment slot="it">
+      <h2>Errori nei contenuti</h2>
+      <p>Indica il link della scheda e la sezione (per esempio “Morfologia microscopica”), che cosa è sbagliato e, se puoi, una fonte. Ogni segnalazione credibile viene verificata e, se serve, la scheda torna in revisione.</p>
+      <h2>Accessibilità e traduzioni</h2>
+      <p>Descrivi il problema, il dispositivo e il browser o la tecnologia assistiva che usi.</p>
+      <h2>Diritti d’autore e richieste di rimozione</h2>
+      <p>
+        Se pensi che un’immagine o un testo violi i tuoi diritti, apri una segnalazione indicando il materiale e il motivo.
+        Le richieste credibili portano alla rimozione del materiale contestato in attesa di verifica.
+      </p>
+      <h2>Prima di scrivere</h2>
+      <p>
+        Le issue di GitHub sono pubbliche e richiedono un account GitHub. Non inserire dati personali o informazioni
+        sanitarie. Per una domanda clinica rivolgiti a un medico: qui non possiamo dare consulenze.
+      </p>
+      <p>Elenco delle segnalazioni aperte: <a href={ISSUES_URL} rel="noopener">{ISSUES_URL.replace('https://', '')}</a></p>
+    </Fragment>
+    <Fragment slot="en">
+      <h2>Content errors</h2>
+      <p>Give the card’s link and the section (for example “Microscopic morphology”), what is wrong and, if you can, a source. Every credible report is checked and, if needed, the card goes back into review.</p>
+      <h2>Accessibility and translations</h2>
+      <p>Describe the problem, your device and the browser or assistive technology you use.</p>
+      <h2>Copyright and takedown requests</h2>
+      <p>
+        If you believe an image or text infringes your rights, open an issue naming the material and the reason. Credible
+        requests lead to the disputed material being removed while it is reviewed.
+      </p>
+      <h2>Before you write</h2>
+      <p>
+        GitHub issues are public and need a GitHub account. Do not include personal or health information. For a clinical
+        question, see a doctor: we cannot give medical advice here.
+      </p>
+      <p>List of open reports: <a href={ISSUES_URL} rel="noopener">{ISSUES_URL.replace('https://', '')}</a></p>
+    </Fragment>
+  </Bi>
+</AboutPage>

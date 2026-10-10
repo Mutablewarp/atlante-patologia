@@ -1,0 +1,114 @@
+---
+import AboutPage from '../../../components/AboutPage.astro';
+import Bi from '../../../components/Bi.astro';
+import { langPaths, type Lang } from '../../../i18n/index.ts';
+import { langPath } from '../../../lib/url.ts';
+
+export const getStaticPaths = langPaths;
+const lang = Astro.params.lang as Lang;
+---
+
+<AboutPage lang={lang} slug="method">
+  <Bi lang={lang}>
+    <Fragment slot="it">
+      <h2>In breve</h2>
+      <p>
+        Le schede sono scritte con l’assistenza di un’intelligenza artificiale, seguendo il programma di un corso di
+        anatomia patologica. Ogni affermazione di fatto viene controllata su un testo di riferimento prima della
+        pubblicazione. Una scheda viene pubblicata solo quando supera tutti i controlli automatici.
+      </p>
+      <h2>Come viene scritta una scheda</h2>
+      <ol>
+        <li>Ogni malattia ha una scheda con 13 sezioni fisse, sempre nello stesso ordine, più una verifica rapida.</li>
+        <li>
+          Il testo è originale: il libro di riferimento serve a controllare i fatti e la struttura, mai come testo da
+          copiare o parafrasare da vicino. Un controllo automatico confronta i testi con il riferimento e blocca le frasi
+          troppo simili.
+        </li>
+        <li>
+          La versione inglese è scritta per prima; quella italiana è tradotta dal nostro inglese e poi rivista per
+          suonare naturale.
+        </li>
+        <li>
+          Ogni frase che afferma un fatto porta un marcatore invisibile collegato a un registro delle verifiche: fonte,
+          pagina e esito del controllo.
+        </li>
+        <li>
+          Un secondo agente, che non vede il ragionamento del primo, confronta ogni affermazione con il riferimento. Le
+          affermazioni contraddette bloccano la pubblicazione; quelle non presenti nel riferimento richiedono una
+          seconda fonte verificata.
+        </li>
+      </ol>
+      <h2>Uso dell’intelligenza artificiale</h2>
+      <p>
+        Testi, domande e schemi sono prodotti con l’assistenza di modelli di intelligenza artificiale e controllati con il
+        processo descritto sopra. L’IA può sbagliare, anche in modo convincente: per questo ogni scheda mostra il suo
+        stato di revisione.
+      </p>
+      <h2>Che cosa significa lo stato di revisione</h2>
+      <dl>
+        <dt><strong>Generato con IA, non ancora revisionato</strong></dt>
+        <dd>
+          La scheda ha superato i controlli automatici e la verifica delle affermazioni, ma nessun esperto umano l’ha
+          ancora letta per intero.
+        </dd>
+        <dt><strong>Revisionato da un esperto</strong></dt>
+        <dd>
+          Una persona competente, indicata per nome, ha letto e approvato la scheda. Solo un revisore umano può assegnare
+          questo stato.
+        </dd>
+      </dl>
+      <h2>Limiti</h2>
+      <ul>
+        <li>Il riferimento principale è un manuale del 2020: alcune classificazioni possono essere cambiate da allora. Le parti che dipendono dall’edizione sono segnalate.</li>
+        <li>La terminologia italiana non è ancora stata verificata su un testo italiano.</li>
+        <li>L’atlante non sostituisce le lezioni, i testi adottati dal corso o il parere di un docente.</li>
+      </ul>
+      <p>Hai trovato un errore? <a href={langPath(lang, 'about/report/')}>Segnalalo</a>.</p>
+    </Fragment>
+    <Fragment slot="en">
+      <h2>In short</h2>
+      <p>
+        Cards are written with the help of artificial intelligence, following the syllabus of a pathology course. Every
+        factual claim is checked against a reference textbook before publication. A card goes online only when it passes
+        every automated check.
+      </p>
+      <h2>How a card is written</h2>
+      <ol>
+        <li>Every disease has one card with 13 fixed sections, always in the same order, plus a quick check.</li>
+        <li>
+          The text is original: the reference book is used to check facts and structure, never as text to copy or closely
+          paraphrase. An automated check compares our text with the reference and blocks sentences that are too similar.
+        </li>
+        <li>The English version is written first; the Italian one is translated from our English and then edited to read naturally.</li>
+        <li>
+          Every sentence that states a fact carries an invisible marker linked to a verification ledger: source, page and
+          result of the check.
+        </li>
+        <li>
+          A second agent, which does not see the first one’s reasoning, checks each claim against the reference.
+          Contradicted claims block publication; claims not found in the reference need a second, verified source.
+        </li>
+      </ol>
+      <h2>Use of artificial intelligence</h2>
+      <p>
+        Texts, questions and diagrams are produced with the help of AI models and checked with the process above. AI can
+        be wrong, sometimes convincingly so: that is why every card shows its review status.
+      </p>
+      <h2>What the review status means</h2>
+      <dl>
+        <dt><strong>AI-generated, not yet reviewed</strong></dt>
+        <dd>The card passed the automated checks and the claim verification, but no human expert has read all of it yet.</dd>
+        <dt><strong>Expert-reviewed</strong></dt>
+        <dd>A qualified person, named on the card, has read and approved it. Only a human reviewer can set this status.</dd>
+      </dl>
+      <h2>Limits</h2>
+      <ul>
+        <li>The main reference is a 2020 textbook: some classifications may have changed since. Edition-dependent parts are flagged.</li>
+        <li>Italian terminology has not yet been checked against an Italian textbook.</li>
+        <li>The atlas does not replace lectures, the textbooks adopted by your course, or a teacher’s advice.</li>
+      </ul>
+      <p>Found a mistake? <a href={langPath(lang, 'about/report/')}>Report it</a>.</p>
+    </Fragment>
+  </Bi>
+</AboutPage>

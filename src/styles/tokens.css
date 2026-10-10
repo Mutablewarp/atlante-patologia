@@ -1,0 +1,87 @@
+/*
+ * Design tokens — "editorial anatomical atlas".
+ * Warm paper and deep ink; accents from the H&E stain used with restraint:
+ * hematoxylin (blue-violet) for links and actions, eosin (pink) for highlights
+ * and focus. Dark theme "darkfield": deep blue-black with eosin accents.
+ *
+ * Every colour is written once as light-dark(LIGHT, DARK). The theme is chosen
+ * by `color-scheme`: system preference by default, forced by [data-theme].
+ * scripts/contrast-check.mjs parses these lines — keep one token per line,
+ * hex values only.
+ */
+:root {
+  color-scheme: light dark;
+
+  /* Surfaces */
+  --paper: light-dark(#f6f1e7, #0e1120);
+  --surface: light-dark(#fffcf6, #151a2d);
+  --surface-2: light-dark(#ede5d6, #1d2339);
+  --rule: light-dark(#ddd3c1, #2a3150);
+
+  /* Text */
+  --ink: light-dark(#1c1923, #ece8f3);
+  --ink-muted: light-dark(#575061, #aaa5bf);
+
+  /* UI boundaries (>= 3:1 against paper and surface) */
+  --border-strong: light-dark(#857a6d, #737a9c);
+
+  /* Hematoxylin: links, primary actions, current navigation */
+  --hema: light-dark(#3a2e8c, #aea7ff);
+  --hema-soft: light-dark(#e5e0f6, #272b4d);
+  --hema-ink: light-dark(#2a2070, #d4d0ff);
+  --on-hema: light-dark(#ffffff, #0e1120);
+
+  /* Eosin: highlights, indicator bars, focus */
+  --eosin: light-dark(#ad2c5b, #ff8db4);
+  --eosin-soft: light-dark(#f8e2ea, #3b1e31);
+  --eosin-ink: light-dark(#8a1f47, #ffc2d6);
+
+  /* Status: draft / caution */
+  --caution-bg: light-dark(#fbecc6, #3a2e10);
+  --caution-ink: light-dark(#5a3c00, #f6d98a);
+
+  /* Focus ring */
+  --focus: light-dark(#ad2c5b, #ff8db4);
+
+  /* Type */
+  --font-display: 'Fraunces Variable', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+  --font-body: 'Atkinson Hyperlegible Next Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --step--1: clamp(0.84rem, 0.82rem + 0.1vw, 0.9rem);
+  --step-0: clamp(1rem, 0.97rem + 0.15vw, 1.0625rem);
+  --step-1: clamp(1.18rem, 1.1rem + 0.35vw, 1.35rem);
+  --step-2: clamp(1.42rem, 1.27rem + 0.7vw, 1.8rem);
+  --step-3: clamp(1.75rem, 1.45rem + 1.4vw, 2.6rem);
+  --step-4: clamp(2.1rem, 1.6rem + 2.4vw, 3.6rem);
+  --measure: 68ch;
+
+  /* Space & shape */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4.5rem;
+  --radius-s: 6px;
+  --radius-m: 12px;
+  --radius-l: 20px;
+  --shadow: 0 1px 0 light-dark(#00000008, #00000040), 0 6px 24px -12px light-dark(#3a2e8c33, #00000080);
+
+  /* Sticky bars — reused by scroll-padding so focus is never hidden (SC 2.4.11) */
+  --topbar-h: 3.5rem;
+  --tabbar-h: 4.25rem;
+  --rail-w: 5.5rem;
+  --sidebar-w: 15.5rem;
+  --chips-h: 3rem;
+  --gutter: clamp(1rem, 0.6rem + 2vw, 2.5rem);
+
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+}
+:root[data-theme='dark'] {
+  color-scheme: dark;
+}

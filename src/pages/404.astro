@@ -1,0 +1,70 @@
+---
+/** Helpful bilingual 404 (served by GitHub Pages for any unknown path). */
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { LANGS } from '../i18n/index.ts';
+import { tCommon } from '../i18n/common.ts';
+import { tNav } from '../i18n/nav.ts';
+import { tAtlas } from '../i18n/pages.ts';
+import { langPath } from '../lib/url.ts';
+---
+
+<BaseLayout lang="it" title={tCommon('it', 'notFoundTitle')} description={tCommon('it', 'notFoundBody')} searchable={false} alternates={false} noindex>
+  <h1>Pagina non trovata <span class="muted" lang="en">· Page not found</span></h1>
+  <div class="nf-grid">
+    {
+      LANGS.map((l) => (
+        <section lang={l} aria-labelledby={`nf-${l}`} class="card">
+          <h2 id={`nf-${l}`} style="margin-top:0">{tCommon(l, 'notFoundTitle')}</h2>
+          <p>{tCommon(l, 'notFoundBody')}</p>
+          <form role="search" action={langPath(l, 'search/')} method="get" class="nf-search">
+            <label for={`nf-q-${l}`}>{tNav(l, 'searchLabel')}</label>
+            <div>
+              <input id={`nf-q-${l}`} name="q" type="search" data-nf-query />
+              <button class="btn btn-primary" type="submit">{tNav(l, 'searchSubmit')}</button>
+            </div>
+          </form>
+          <ul>
+            <li><a href={langPath(l)}>{tNav(l, 'home')}</a></li>
+            <li><a href={langPath(l, 'atlas/')}>{tAtlas(l, 'title')}</a></li>
+          </ul>
+        </section>
+      ))
+    }
+  </div>
+</BaseLayout>
+
+<script>
+  // Suggest a query from the failed path: last path segment, dashes as spaces.
+  const seg = location.pathname.split('/').filter(Boolean).pop() ?? '';
+  const guess = decodeURIComponent(seg).replace(/[-_]+/g, ' ').replace(/\.html?$/, '');
+  if (guess && !/^(it|en|atlante-patologia)$/.test(guess))
+    document.querySelectorAll<HTMLInputElement>('[data-nf-query]').forEach((i) => (i.value = guess));
+</script>
+
+<style>
+  .nf-grid {
+    display: grid;
+    gap: var(--space-4);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
+    margin-top: var(--space-5);
+  }
+  .nf-search label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: var(--space-1);
+  }
+  .nf-search div {
+    display: flex;
+    gap: var(--space-2);
+    margin-bottom: var(--space-4);
+  }
+  .nf-search input {
+    flex: 1;
+    min-width: 0;
+    min-height: 2.75rem;
+    padding: 0 var(--space-3);
+    border-radius: var(--radius-s);
+    border: 1.5px solid var(--border-strong);
+    background: var(--surface);
+  }
+</style>

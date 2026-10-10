@@ -1,0 +1,29 @@
+---
+/** Cycles system → light → dark. Choice stored in localStorage, applied before paint. */
+import type { Lang } from '../../i18n/index.ts';
+import { tCommon } from '../../i18n/common.ts';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const labels = {
+  system: tCommon(lang, 'themeSystem'),
+  light: tCommon(lang, 'themeLight'),
+  dark: tCommon(lang, 'themeDark'),
+};
+---
+
+<button
+  type="button"
+  class="icon-btn js-only"
+  data-theme-toggle
+  data-labels={JSON.stringify(labels)}
+  data-template={tCommon(lang, 'themeButton')}
+  aria-label={tCommon(lang, 'themeButton').replace('{mode}', labels.system)}
+>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+    <circle cx="12" cy="12" r="8"></circle>
+    <path d="M12 4a8 8 0 0 1 0 16z" fill="currentColor"></path>
+  </svg>
+</button>

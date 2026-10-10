@@ -1,0 +1,68 @@
+---
+import AboutPage from '../../../components/AboutPage.astro';
+import Bi from '../../../components/Bi.astro';
+import { langPaths, type Lang } from '../../../i18n/index.ts';
+import { REPO_URL } from '../../../i18n/common.ts';
+import { langPath } from '../../../lib/url.ts';
+
+export const getStaticPaths = langPaths;
+const lang = Astro.params.lang as Lang;
+const BY_SA = 'https://creativecommons.org/licenses/by-sa/4.0/legalcode';
+const BY_SA_DEED = lang === 'it' ? 'https://creativecommons.org/licenses/by-sa/4.0/deed.it' : 'https://creativecommons.org/licenses/by-sa/4.0/deed.en';
+---
+
+<AboutPage lang={lang} slug="licenses">
+  <Bi lang={lang}>
+    <Fragment slot="it">
+      <h2>Codice: MIT</h2>
+      <p>
+        Il codice del sito è distribuito con <a href={`${REPO_URL}/blob/main/LICENSE`} rel="noopener">licenza MIT</a>:
+        puoi usarlo, modificarlo e ridistribuirlo, anche per scopi commerciali, mantenendo l’avviso di copyright.
+      </p>
+      <h2>Contenuti: CC BY-SA 4.0</h2>
+      <p>
+        I testi, le domande e gli schemi originali dell’atlante sono distribuiti con licenza{' '}
+        <a href={BY_SA_DEED} rel="noopener">Creative Commons Attribuzione – Condividi allo stesso modo 4.0</a>{' '}
+        (<a href={BY_SA} rel="noopener">testo legale</a>). Puoi copiarli e adattarli se:
+      </p>
+      <ul>
+        <li>citi “Atlante di Patologia” con un link al sito e indichi se hai fatto modifiche;</li>
+        <li>distribuisci i materiali derivati con la stessa licenza.</li>
+      </ul>
+      <h2>Immagini di terzi</h2>
+      <p>
+        Le immagini non create da noi mantengono la propria licenza (pubblico dominio, CC0, CC BY o CC BY-SA), indicata
+        sotto ogni immagine e nella pagina <a href={langPath(lang, 'about/credits/')}>Crediti</a>.
+      </p>
+      <h2>Marchi e testi di riferimento</h2>
+      <p>
+        I titoli dei manuali citati appartengono ai rispettivi editori. Nessun contenuto di quei manuali è riprodotto
+        nell’atlante.
+      </p>
+    </Fragment>
+    <Fragment slot="en">
+      <h2>Code: MIT</h2>
+      <p>
+        The site’s code is released under the <a href={`${REPO_URL}/blob/main/LICENSE`} rel="noopener">MIT licence</a>: you may
+        use, change and redistribute it, commercially too, as long as you keep the copyright notice.
+      </p>
+      <h2>Content: CC BY-SA 4.0</h2>
+      <p>
+        The atlas’s original texts, questions and diagrams are released under the{' '}
+        <a href={BY_SA_DEED} rel="noopener">Creative Commons Attribution-ShareAlike 4.0</a> licence{' '}
+        (<a href={BY_SA} rel="noopener">legal code</a>). You may copy and adapt them if you:
+      </p>
+      <ul>
+        <li>credit “Atlante di Patologia” with a link to the site and say whether you made changes;</li>
+        <li>share derived material under the same licence.</li>
+      </ul>
+      <h2>Third-party images</h2>
+      <p>
+        Images we did not create keep their own licence (public domain, CC0, CC BY or CC BY-SA), shown under each image and
+        on the <a href={langPath(lang, 'about/credits/')}>Credits</a> page.
+      </p>
+      <h2>Trademarks and reference texts</h2>
+      <p>The titles of the textbooks we cite belong to their publishers. No content from those books is reproduced in the atlas.</p>
+    </Fragment>
+  </Bi>
+</AboutPage>

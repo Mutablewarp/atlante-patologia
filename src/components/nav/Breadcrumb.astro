@@ -1,0 +1,26 @@
+---
+import type { Lang } from '../../i18n/index.ts';
+import { tCommon } from '../../i18n/common.ts';
+
+interface Props {
+  lang: Lang;
+  items: { label: string; href?: string }[];
+}
+const { lang, items } = Astro.props;
+---
+
+<nav class="breadcrumb" aria-label={tCommon(lang, 'breadcrumb')}>
+  <ol>
+    {
+      items.map((item, i) => (
+        <li>
+          {item.href && i < items.length - 1 ? (
+            <a href={item.href}>{item.label}</a>
+          ) : (
+            <span aria-current={i === items.length - 1 ? 'page' : undefined}>{item.label}</span>
+          )}
+        </li>
+      ))
+    }
+  </ol>
+</nav>

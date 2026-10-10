@@ -1,0 +1,61 @@
+---
+/** A–Z of entities (all names, both languages) — glossary terms join later. */
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../../components/nav/Breadcrumb.astro';
+import { langPaths, type Lang } from '../../../i18n/index.ts';
+import { tCommon } from '../../../i18n/common.ts';
+import { tAtlas } from '../../../i18n/pages.ts';
+import { langPath } from '../../../lib/url.ts';
+import { siteData } from '../../../lib/content.ts';
+
+export const getStaticPaths = langPaths;
+
+const lang = Astro.params.lang as Lang;
+const t = (k: Parameters<typeof tAtlas>[1]) => tAtlas(lang, k);
+const { entities } = await siteData();
+const collator = new Intl.Collator(lang, { sensitivity: 'base' });
+const rows = entities
+  .flatMap((e) =>
+    [e.names[lang], e.names[lang === 'it' ? 'en' : 'it'], ...e.names.synonyms[lang], ...e.names.eponyms].map((name, i) => ({
+      name,
+      id: e.id,
+      primary: i === 0 ? undefined : e.names[lang],
+    })),
+  )
+  .sort((a, b) => collator.compare(a.name, b.name));
+const letterOf = (s: string) => s.normalize('NFD').charAt(0).toUpperCase();
+const letters = [...new Set(rows.map((r) => letterOf(r.name)))];
+---
+
+<BaseLayout lang={lang} title={t('azTitle')} description={t('azBody')} tab="atlas">
+  <Breadcrumb lang={lang} items={[{ label: t('title'), href: langPath(lang, 'atlas/') }, { label: t('az') }]} />
+  <header class="page-head">
+    <h1>{t('azTitle')}</h1>
+    <p class="lede">{t('azBody')}</p>
+  </header>
+  {
+    rows.length === 0 ? (
+      <div class="empty-state">
+        <p style="margin:0">
+          {t('emptyAz')} <a href={langPath(lang, 'about/roadmap/')}>{tCommon(lang, 'roadmap')}</a>
+        </p>
+      </div>
+    ) : (
+      letters.map((letter) => (
+        <section aria-labelledby={`letter-${letter}`}>
+          <h2 id={`letter-${letter}`}>{letter}</h2>
+          <ul class="term-list">
+            {rows
+              .filter((r) => letterOf(r.name) === letter)
+              .map((r) => (
+                <li id={r.primary ? undefined : `term-${r.id}`}>
+                  <a href={langPath(lang, `e/${r.id}/`)}>{r.name}</a>
+                  {r.primary && <span class="small muted">→ {r.primary}</span>}
+                </li>
+              ))}
+          </ul>
+        </section>
+      ))
+    )
+  }
+</BaseLayout>

@@ -1,0 +1,127 @@
+---
+/**
+ * Language entry (D027). With JS: saved choice → navigator.languages → 'it',
+ * then location.replace. Without JS: two large links and a bilingual intro.
+ */
+import '../styles/fonts.css';
+import '../styles/tokens.css';
+import '../styles/base.css';
+import '../styles/layout.css';
+import { LANGS } from '../i18n/index.ts';
+import { SITE_NAME } from '../i18n/common.ts';
+import { langPath, url } from '../lib/url.ts';
+import BrandMark from '../components/nav/BrandMark.astro';
+
+const targets = { it: langPath('it'), en: langPath('en') };
+const abs = (p: string) => new URL(p, Astro.site!).href;
+---
+
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <title>{SITE_NAME}</title>
+    <meta name="description" content="Atlante di anatomia patologica libero e bilingue per studenti di medicina. A free, bilingual pathology atlas for medical students." />
+    <link rel="canonical" href={abs(url())} />
+    {LANGS.map((l) => <link rel="alternate" hreflang={l} href={abs(langPath(l))} />)}
+    <link rel="alternate" hreflang="x-default" href={abs(url())} />
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f1e7" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0e1120" />
+    <link rel="icon" href={url('favicon.svg')} type="image/svg+xml" />
+    <link rel="manifest" href={url('manifest.webmanifest')} />
+    <script is:inline define:vars={{ targets }}>
+      (function () {
+        var lang = null;
+        try {
+          var t = localStorage.getItem('ap-theme');
+          if (t === 'light' || t === 'dark') document.documentElement.dataset.theme = t;
+          lang = localStorage.getItem('ap-lang');
+        } catch (e) {}
+        if (lang !== 'it' && lang !== 'en') {
+          var prefs = navigator.languages || [navigator.language || ''];
+          lang = 'it';
+          for (var i = 0; i < prefs.length; i++) {
+            var p = String(prefs[i]).slice(0, 2).toLowerCase();
+            if (p === 'it' || p === 'en') {
+              lang = p;
+              break;
+            }
+          }
+        }
+        location.replace(targets[lang] + location.hash);
+      })();
+    </script>
+    <style>
+      .entry {
+        min-height: 100dvh;
+        display: grid;
+        place-items: center;
+        padding: var(--space-6) var(--gutter);
+      }
+      .entry-inner {
+        max-width: 44rem;
+        text-align: center;
+      }
+      .entry .mark {
+        width: 4.5rem;
+        height: 4.5rem;
+        margin: 0 auto var(--space-4);
+      }
+      .entry h1 em {
+        font-weight: 400;
+        color: var(--eosin);
+      }
+      .choices {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+        gap: var(--space-4);
+        margin: var(--space-6) 0 var(--space-5);
+      }
+      .choice {
+        display: grid;
+        gap: var(--space-1);
+        padding: var(--space-5);
+        border-radius: var(--radius-l);
+        background: var(--surface);
+        border: 1.5px solid var(--border-strong);
+        text-decoration: none;
+        color: var(--ink);
+      }
+      .choice:hover {
+        border-color: var(--hema);
+      }
+      .choice strong {
+        font-family: var(--font-display);
+        font-size: var(--step-2);
+        color: var(--hema);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="entry" id="main">
+      <div class="entry-inner">
+        <div class="mark"><BrandMark /></div>
+        <h1>Atlante <em>di Patologia</em></h1>
+        <p class="lede" style="margin-inline:auto">
+          Atlante di anatomia patologica libero e bilingue per chi studia medicina.{' '}
+          <span lang="en">A free, bilingual pathology atlas for medical students.</span>
+        </p>
+        <div class="choices">
+          <a class="choice" href={targets.it} hreflang="it" lang="it">
+            <strong>Italiano</strong>
+            <span>Entra nell’atlante</span>
+          </a>
+          <a class="choice" href={targets.en} hreflang="en" lang="en">
+            <strong>English</strong>
+            <span>Enter the atlas</span>
+          </a>
+        </div>
+        <p class="small muted">
+          Solo a scopo didattico, non per diagnosi o terapia.{' '}
+          <span lang="en">For education only, not for diagnosis or treatment.</span>
+        </p>
+      </div>
+    </main>
+  </body>
+</html>

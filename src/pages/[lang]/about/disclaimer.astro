@@ -1,0 +1,39 @@
+---
+import AboutPage from '../../../components/AboutPage.astro';
+import Bi from '../../../components/Bi.astro';
+import { langPaths, type Lang } from '../../../i18n/index.ts';
+import { langPath } from '../../../lib/url.ts';
+
+export const getStaticPaths = langPaths;
+const lang = Astro.params.lang as Lang;
+---
+
+<AboutPage lang={lang} slug="disclaimer">
+  <Bi lang={lang}>
+    <Fragment slot="it">
+      <p><strong>L’Atlante di Patologia è uno strumento di studio. Non è un dispositivo medico e non fornisce consulenza medica.</strong></p>
+      <ul>
+        <li>Usalo solo per imparare. Non usarlo per fare diagnosi, scegliere terapie o prendere decisioni su pazienti, né su te stesso.</li>
+        <li>I contenuti sono prodotti in parte con l’assistenza dell’intelligenza artificiale. Nonostante le verifiche, possono contenere errori, omissioni o informazioni non aggiornate.</li>
+        <li>Le classificazioni e le linee guida cambiano. Per la pratica clinica fanno fede le fonti ufficiali aggiornate e il giudizio di professionisti qualificati.</li>
+        <li>Se hai un problema di salute, rivolgiti a un medico. In caso di emergenza chiama il numero di emergenza (in Italia e nell’Unione europea: 112).</li>
+      </ul>
+      <p>
+        L’atlante è fornito “così com’è”, senza garanzie di completezza o esattezza. Gli autori non rispondono di danni
+        derivanti dal suo uso.
+      </p>
+      <p>Se trovi un errore, <a href={langPath(lang, 'about/report/')}>segnalalo</a>: lo correggiamo il prima possibile.</p>
+    </Fragment>
+    <Fragment slot="en">
+      <p><strong>Atlante di Patologia is a study tool. It is not a medical device and it does not give medical advice.</strong></p>
+      <ul>
+        <li>Use it only to learn. Do not use it to diagnose, to choose treatments, or to make decisions about patients or yourself.</li>
+        <li>Parts of the content are produced with the help of artificial intelligence. Despite our checks, it may contain errors, omissions or outdated information.</li>
+        <li>Classifications and guidelines change. In clinical practice, current official sources and the judgement of qualified professionals prevail.</li>
+        <li>If you have a health problem, see a doctor. In an emergency call your local emergency number (112 in the European Union).</li>
+      </ul>
+      <p>The atlas is provided “as is”, with no warranty of completeness or accuracy. The authors are not liable for damage arising from its use.</p>
+      <p>If you find a mistake, <a href={langPath(lang, 'about/report/')}>report it</a> and we will fix it as soon as we can.</p>
+    </Fragment>
+  </Bi>
+</AboutPage>

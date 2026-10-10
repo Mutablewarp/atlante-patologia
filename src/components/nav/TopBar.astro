@@ -1,0 +1,46 @@
+---
+/** Sticky top bar: brand (phone/tablet), global search (desktop), language, theme. */
+import type { Lang } from '../../i18n/index.ts';
+import { tNav } from '../../i18n/nav.ts';
+import { SITE_NAME } from '../../i18n/common.ts';
+import { langPath } from '../../lib/url.ts';
+import BrandMark from './BrandMark.astro';
+import LangSwitch from './LangSwitch.astro';
+import ThemeToggle from './ThemeToggle.astro';
+
+interface Props {
+  lang: Lang;
+  langSwitchToHome?: boolean;
+}
+const { lang, langSwitchToHome = false } = Astro.props;
+const [first, ...rest] = SITE_NAME.split(' ');
+---
+
+<header class="topbar" data-nav="global">
+  <a class="brand" href={langPath(lang)}>
+    <BrandMark />
+    <span>{first} <span class="brand-sub">{rest.join(' ')}</span></span>
+  </a>
+  <form class="topbar-search" role="search" action={langPath(lang, 'search/')} method="get">
+    <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+      <circle cx="10.8" cy="10.8" r="6.6"></circle>
+      <path d="M15.6 15.6 20.4 20.4"></path>
+    </svg>
+    <label class="visually-hidden" for="global-search">{tNav(lang, 'searchLabel')}</label>
+    <input
+      id="global-search"
+      name="q"
+      type="search"
+      autocomplete="off"
+      placeholder={tNav(lang, 'searchPlaceholder')}
+      aria-describedby="global-search-hint"
+      data-global-search
+    />
+    <kbd aria-hidden="true" data-shortcut-hint>Ctrl K</kbd>
+    <span id="global-search-hint" class="visually-hidden">{tNav(lang, 'shortcutHint')}</span>
+  </form>
+  <div class="topbar-tools">
+    <LangSwitch lang={lang} toHome={langSwitchToHome} />
+    <ThemeToggle lang={lang} />
+  </div>
+</header>

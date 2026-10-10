@@ -1,0 +1,64 @@
+/* Print: clean black-on-white pages. Entity pages print a one-page summary
+   (high-yield, differential, traps) — see .entity-section[data-print]. */
+@media print {
+  :root {
+    color-scheme: light;
+  }
+  body {
+    background: #fff;
+    color: #000;
+    font-size: 10.5pt;
+  }
+  .topbar,
+  .primary-nav,
+  .skip-link,
+  .first-notice,
+  .entity-toolbar,
+  .section-toc,
+  .related,
+  .prev-next,
+  .breadcrumb,
+  .no-print {
+    display: none !important;
+  }
+  .app {
+    display: block;
+  }
+  main {
+    padding: 0;
+  }
+  a {
+    color: #000;
+  }
+  .site-footer {
+    background: none;
+    border-top: 1px solid #000;
+    padding: 6pt 0 0;
+  }
+  .site-footer .footer-links {
+    display: none;
+  }
+  .card,
+  .notice {
+    box-shadow: none;
+    border: 1px solid #999;
+    background: none;
+  }
+  h1 {
+    font-size: 20pt;
+  }
+  h2 {
+    font-size: 13pt;
+    break-after: avoid;
+  }
+  /* Entity summary: only the sections marked for print, always expanded */
+  .entity-section:not([data-print]) {
+    display: none !important;
+  }
+  .section-body[hidden] {
+    display: block !important;
+  }
+  .section-toggle .chevron {
+    display: none;
+  }
+}

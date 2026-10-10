@@ -1,0 +1,72 @@
+---
+import AboutPage from '../../../components/AboutPage.astro';
+import Bi from '../../../components/Bi.astro';
+import { langPaths, type Lang } from '../../../i18n/index.ts';
+import { ISSUES_URL } from '../../../i18n/common.ts';
+
+export const getStaticPaths = langPaths;
+const lang = Astro.params.lang as Lang;
+---
+
+<AboutPage lang={lang} slug="accessibility">
+  <Bi lang={lang}>
+    <Fragment slot="it">
+      <h2>Obiettivo</h2>
+      <p>
+        L’atlante punta alla conformità alle <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.2 di livello
+        AA. Non dichiariamo ancora la conformità: i test sono in corso di costruzione insieme al sito.
+      </p>
+      <h2>Che cosa facciamo già</h2>
+      <ul>
+        <li>Contrasto dei colori controllato automaticamente a ogni build, nel tema chiaro e scuro.</li>
+        <li>Navigazione completa da tastiera, collegamento “Vai al contenuto”, indicatore di focus ben visibile.</li>
+        <li>La pagina corrente nella navigazione è indicata anche con forma e testo, non solo con il colore.</li>
+        <li>Obiettivi di tocco di almeno 44 × 44 pixel nella navigazione principale.</li>
+        <li>Testo ridimensionabile fino al 200%, rispetto della preferenza “riduci movimento”, tema chiaro e scuro.</li>
+        <li>Carattere Atkinson Hyperlegible Next, progettato per la leggibilità.</li>
+      </ul>
+      <h2>In arrivo</h2>
+      <ul>
+        <li>Test automatici con axe su ogni modello di pagina, a cinque larghezze di schermo e in entrambi i temi.</li>
+        <li>Test di navigazione da tastiera e di focus non coperto dalle barre fisse.</li>
+        <li>Una lista di controllo manuale con lettori di schermo (VoiceOver, TalkBack, NVDA).</li>
+      </ul>
+      <h2>Limiti noti</h2>
+      <ul>
+        <li>La ricerca, il cambio di tema e le sezioni richiudibili richiedono JavaScript; senza JavaScript i contenuti restano tutti leggibili.</li>
+        <li>Le immagini didattiche, quando arriveranno, avranno testo alternativo e didascalia; le annotazioni avranno un equivalente testuale.</li>
+      </ul>
+      <h2>Segnala un problema</h2>
+      <p>Se qualcosa non funziona con la tua tecnologia assistiva, <a href={ISSUES_URL} rel="noopener">apri una segnalazione su GitHub</a>.</p>
+    </Fragment>
+    <Fragment slot="en">
+      <h2>Target</h2>
+      <p>
+        The atlas aims to conform to <abbr title="Web Content Accessibility Guidelines">WCAG</abbr> 2.2 level AA. We do not
+        claim conformance yet: the tests are being built together with the site.
+      </p>
+      <h2>What we already do</h2>
+      <ul>
+        <li>Colour contrast checked automatically on every build, in the light and the dark theme.</li>
+        <li>Full keyboard navigation, a “Skip to content” link and a clearly visible focus indicator.</li>
+        <li>The current page in the navigation is shown by shape and text too, not by colour alone.</li>
+        <li>Touch targets of at least 44 × 44 pixels in the main navigation.</li>
+        <li>Text resizes to 200%, the “reduce motion” preference is respected, light and dark themes.</li>
+        <li>The Atkinson Hyperlegible Next typeface, designed for legibility.</li>
+      </ul>
+      <h2>Coming next</h2>
+      <ul>
+        <li>Automated axe tests on every page template, at five screen widths and in both themes.</li>
+        <li>Keyboard tests, including focus never hidden behind sticky bars.</li>
+        <li>A manual screen-reader checklist (VoiceOver, TalkBack, NVDA).</li>
+      </ul>
+      <h2>Known limits</h2>
+      <ul>
+        <li>Search, the theme switch and collapsible sections need JavaScript; without it, all content remains readable.</li>
+        <li>Teaching images, when they arrive, will have alt text and captions; annotations will have a text equivalent.</li>
+      </ul>
+      <h2>Report a problem</h2>
+      <p>If something does not work with your assistive technology, <a href={ISSUES_URL} rel="noopener">open an issue on GitHub</a>.</p>
+    </Fragment>
+  </Bi>
+</AboutPage>

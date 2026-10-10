@@ -1,0 +1,60 @@
+---
+import AboutPage from '../../../components/AboutPage.astro';
+import Bi from '../../../components/Bi.astro';
+import { langPaths, fmt, type Lang } from '../../../i18n/index.ts';
+import { tCommon } from '../../../i18n/common.ts';
+import { tHome } from '../../../i18n/pages.ts';
+import { siteData } from '../../../lib/content.ts';
+
+export const getStaticPaths = langPaths;
+const lang = Astro.params.lang as Lang;
+const { modules } = await siteData();
+const published = modules.filter((m) => m.status === 'published').length;
+const sections = (['I', 'II', 'III'] as const).map((s) => ({
+  label: tCommon(lang, `section${s}`),
+  modules: modules.filter((m) => m.section === s),
+}));
+---
+
+<AboutPage lang={lang} slug="roadmap">
+  <p><strong>{fmt(tHome(lang, 'progressSummary'), { published, total: modules.length })}</strong></p>
+  <Bi lang={lang}>
+    <p slot="it">
+      L’ordine segue il programma: prima la patologia generale, che serve da base, poi le condizioni sistemiche e gli
+      apparati. Un capitolo diventa “pubblicato” solo quando tutte le sue schede superano le verifiche.
+    </p>
+    <p slot="en">
+      The order follows the syllabus: general pathology first, as the foundation, then systemic conditions and organ
+      systems. A chapter becomes “published” only when all its cards pass verification.
+    </p>
+  </Bi>
+  {
+    sections.map((s) => (
+      <section>
+        <h2>{s.label}</h2>
+        <table>
+          <thead>
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">{lang === 'it' ? 'Capitolo' : 'Chapter'}</th>
+              <th scope="col">{lang === 'it' ? 'Stato' : 'Status'}</th>
+            </tr>
+          </thead>
+          <tbody>
+            {s.modules.map((m) => (
+              <tr id={m.id}>
+                <td>
+                  <span class="module-id">{m.id.toUpperCase()}</span>
+                </td>
+                <td>{m.label[lang]}</td>
+                <td>
+                  <span class={`badge ${m.status === 'published' ? 'badge-published' : 'badge-planned'}`}>{tCommon(lang, m.status)}</span>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
+    ))
+  }
+</AboutPage>

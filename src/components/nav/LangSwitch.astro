@@ -1,0 +1,32 @@
+---
+/** IT | EN switch: same page, other language prefix. Saves the explicit choice. */
+import { LANGS, type Lang } from '../../i18n/index.ts';
+import { tCommon } from '../../i18n/common.ts';
+import { alternate, langPath } from '../../lib/url.ts';
+
+interface Props {
+  lang: Lang;
+  /** The page has no counterpart in the other language (404): link to its home. */
+  toHome?: boolean;
+}
+const { lang, toHome = false } = Astro.props;
+const path = Astro.url.pathname;
+const target = (l: Lang) => (toHome ? langPath(l) : alternate(l, path));
+---
+
+<div class="lang-switch" role="group" aria-label={tCommon(lang, 'language')}>
+  {
+    LANGS.map((l) =>
+      l === lang ? (
+        <span aria-current="true" lang={l}>
+          {l.toUpperCase()}
+        </span>
+      ) : (
+        <a href={target(l)} hreflang={l} lang={l} data-set-lang={l}>
+          {l.toUpperCase()}
+          <span class="visually-hidden">{` — ${tCommon(lang, 'switchToOther')}`}</span>
+        </a>
+      ),
+    )
+  }
+</div>

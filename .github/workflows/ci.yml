@@ -1,0 +1,57 @@
+name: CI
+
+on:
+  push:
+    branches: ['**']
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - name: Containment guard (reference/, .work/, private/, large documents)
+        run: npm run guard
+      - name: Type check
+        run: npm run check
+      - name: Unit tests
+        run: npm test
+      - name: Build (Astro + Pagefind)
+        run: npm run build
+      - name: Contrast check (WCAG 2.2 AA tokens)
+        run: node scripts/contrast-check.mjs
+      - name: Fixture must not be published
+        run: test ! -e dist/it/e/fixture-demo && test ! -e dist/en/e/fixture-demo
+
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    needs: test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v7
+      # Runs `npm run build` (package.json), so the Pagefind index is included,
+      # then uploads dist/ with actions/upload-pages-artifact.
+      - uses: withastro/action@v6
+        with:
+          node-version: 24
+      - id: deployment
+        uses: actions/deploy-pages@v5

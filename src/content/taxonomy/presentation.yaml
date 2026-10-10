@@ -1,0 +1,50 @@
+lens: presentation
+label:
+  it: "Presentazione clinica"
+  en: "Clinical presentation"
+terms:
+  - id: mass-lesion
+    order: 10
+    label:
+      it: "Lesione occupante spazio"
+      en: "Mass lesion"
+  - id: fever
+    order: 20
+    label:
+      it: "Febbre"
+      en: "Fever"
+  - id: jaundice
+    order: 30
+    label:
+      it: "Ittero"
+      en: "Jaundice"
+  - id: dyspnea
+    order: 40
+    label:
+      it: "Dispnea"
+      en: "Dyspnea"
+  - id: chest-pain
+    order: 50
+    label:
+      it: "Dolore toracico"
+      en: "Chest pain"
+  - id: hematuria
+    order: 60
+    label:
+      it: "Ematuria"
+      en: "Hematuria"
+  - id: edema
+    order: 70
+    label:
+      it: "Edema"
+      en: "Edema"
+  - id: anemia
+    order: 80
+    label:
+      it: "Anemia"
+      en: "Anemia"
+  - id: lymphadenopathy
+    order: 90
+    label:
+      it: "Linfoadenopatia"
+      en: "Lymphadenopathy"

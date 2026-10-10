@@ -1,0 +1,107 @@
+lens: process
+label:
+  it: "Processo / meccanismo"
+  en: "Process / mechanism"
+terms:
+  - id: cell-injury
+    order: 10
+    label:
+      it: "Danno cellulare"
+      en: "Cell injury"
+  - id: reversible-injury
+    order: 20
+    label:
+      it: "Danno cellulare reversibile"
+      en: "Reversible cell injury"
+    parent: cell-injury
+  - id: oxidative-injury
+    order: 30
+    label:
+      it: "Danno ossidativo"
+      en: "Oxidative injury"
+    parent: cell-injury
+  - id: cellular-adaptation
+    order: 40
+    label:
+      it: "Adattamento cellulare"
+      en: "Cellular adaptation"
+  - id: cell-death
+    order: 50
+    label:
+      it: "Morte cellulare"
+      en: "Cell death"
+  - id: necrosis
+    order: 60
+    label:
+      it: "Necrosi"
+      en: "Necrosis"
+    parent: cell-death
+  - id: apoptosis
+    order: 70
+    label:
+      it: "Apoptosi"
+      en: "Apoptosis"
+    parent: cell-death
+  - id: regulated-cell-death
+    order: 80
+    label:
+      it: "Altre forme di morte cellulare regolata"
+      en: "Other regulated cell death"
+    parent: cell-death
+  - id: intracellular-accumulation
+    order: 90
+    label:
+      it: "Accumuli intracellulari"
+      en: "Intracellular accumulations"
+  - id: extracellular-accumulation
+    order: 100
+    label:
+      it: "Accumuli extracellulari"
+      en: "Extracellular accumulations"
+  - id: pathologic-calcification
+    order: 110
+    label:
+      it: "Calcificazione patologica"
+      en: "Pathologic calcification"
+    parent: extracellular-accumulation
+  - id: acute-inflammation
+    order: 120
+    label:
+      it: "Infiammazione acuta"
+      en: "Acute inflammation"
+  - id: chronic-inflammation
+    order: 130
+    label:
+      it: "Infiammazione cronica"
+      en: "Chronic inflammation"
+  - id: granulomatous-inflammation
+    order: 140
+    label:
+      it: "Infiammazione granulomatosa"
+      en: "Granulomatous inflammation"
+    parent: chronic-inflammation
+  - id: repair-fibrosis
+    order: 150
+    label:
+      it: "Riparazione e fibrosi"
+      en: "Repair and fibrosis"
+  - id: hypersensitivity
+    order: 160
+    label:
+      it: "Ipersensibilità"
+      en: "Hypersensitivity"
+  - id: immunodeficiency
+    order: 170
+    label:
+      it: "Immunodeficienza"
+      en: "Immunodeficiency"
+  - id: thrombosis-embolism
+    order: 180
+    label:
+      it: "Trombosi ed embolia"
+      en: "Thrombosis and embolism"
+  - id: neoplasia
+    order: 190
+    label:
+      it: "Neoplasia"
+      en: "Neoplasia"

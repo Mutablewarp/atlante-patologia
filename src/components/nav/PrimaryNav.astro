@@ -1,0 +1,59 @@
+---
+/**
+ * The five destinations. One <nav>, laid out by CSS as bottom tab bar (<600px),
+ * navigation rail (600–1023px) or collapsible sidebar (>=1024px).
+ * data-tab / data-root feed the per-tab back stack in src/scripts/shell.ts.
+ */
+import type { Lang } from '../../i18n/index.ts';
+import { TABS, TAB_ROOT, tNav, type Tab } from '../../i18n/nav.ts';
+import { SITE_NAME } from '../../i18n/common.ts';
+import { langPath } from '../../lib/url.ts';
+import NavIcon from './NavIcon.astro';
+import BrandMark from './BrandMark.astro';
+
+interface Props {
+  lang: Lang;
+  current?: Tab;
+}
+const { lang, current } = Astro.props;
+---
+
+<nav class="primary-nav" aria-label={tNav(lang, 'primaryNav')} data-nav="global">
+  <a class="brand nav-brand" href={langPath(lang)}>
+    <BrandMark />
+    <span class="brand-text">{SITE_NAME.split(' ')[0]} <span class="brand-sub">{SITE_NAME.split(' ').slice(1).join(' ')}</span></span>
+  </a>
+  <ul class="nav-list">
+    {
+      TABS.map((tab) => (
+        <li>
+          <a
+            class="nav-item"
+            href={langPath(lang, TAB_ROOT[tab])}
+            data-tab={tab}
+            data-root={langPath(lang, TAB_ROOT[tab])}
+            aria-current={tab === current ? 'page' : undefined}
+          >
+            <span class="nav-icon">
+              <NavIcon name={tab} />
+            </span>
+            <span class="nav-label">{tNav(lang, tab)}</span>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+  <button
+    type="button"
+    class="icon-btn nav-collapse js-only"
+    data-sidebar-toggle
+    aria-pressed="false"
+    aria-label={tNav(lang, 'collapse')}
+    data-label-collapse={tNav(lang, 'collapse')}
+    data-label-expand={tNav(lang, 'expand')}
+  >
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M14.5 6.5 9 12l5.5 5.5M5 4v16"></path>
+    </svg>
+  </button>
+</nav>

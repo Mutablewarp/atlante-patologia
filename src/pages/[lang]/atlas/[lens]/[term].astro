@@ -1,0 +1,95 @@
+---
+/** Entities for one lens term, in syllabus order. Generated only for terms with >= 1 visible entity. */
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../../../components/nav/Breadcrumb.astro';
+import { LANGS, type Lang } from '../../../../i18n/index.ts';
+import { tAtlas } from '../../../../i18n/pages.ts';
+import { LENSES, type LensId } from '../../../../lib/schema.ts';
+import { langPath } from '../../../../lib/url.ts';
+import { siteData } from '../../../../lib/content.ts';
+import { prevNext } from '../../../../lib/lenses.ts';
+
+export async function getStaticPaths() {
+  const { membership } = await siteData();
+  return LANGS.flatMap((lang) =>
+    LENSES.flatMap((lens) => [...membership.get(lens)!.keys()].map((term) => ({ params: { lang, lens, term } }))),
+  );
+}
+
+const lang = Astro.params.lang as Lang;
+const lens = Astro.params.lens as LensId;
+const termId = Astro.params.term!;
+const t = (k: Parameters<typeof tAtlas>[1]) => tAtlas(lang, k);
+const { taxonomy, membership, entityById } = await siteData();
+const tax = taxonomy.get(lens);
+const term = tax?.terms.find((x) => x.id === termId);
+const termLabel = term?.label[lang] ?? termId;
+const lensLabel = tax?.label[lang] ?? lens;
+const ids = membership.get(lens)!.get(termId) ?? [];
+// Prev/next among terms of this lens that have pages, in taxonomy order.
+const termOrder = [...(tax?.terms ?? [])]
+  .sort((a, b) => a.order - b.order)
+  .map((x) => x.id)
+  .filter((x) => membership.get(lens)!.has(x));
+const { prev, next } = prevNext(termOrder, termId);
+const labelOf = (id?: string) => tax?.terms.find((x) => x.id === id)?.label[lang] ?? id;
+---
+
+<BaseLayout lang={lang} title={`${termLabel} · ${lensLabel}`} description={`${lensLabel}: ${termLabel}`} tab="atlas">
+  <Breadcrumb
+    lang={lang}
+    items={[
+      { label: t('title'), href: langPath(lang, 'atlas/') },
+      { label: lensLabel, href: langPath(lang, `atlas/${lens}/`) },
+      { label: termLabel },
+    ]}
+  />
+  <header class="page-head">
+    <p class="kicker">{lensLabel}</p>
+    <h1>{termLabel}</h1>
+  </header>
+  <h2>{t('entitiesForTerm')}</h2>
+  <ul class="grid">
+    {
+      ids.map((id) => {
+        const e = entityById.get(id)!;
+        return (
+          <li>
+            <a class="card link-card" href={langPath(lang, `e/${id}/?via=${lens}:${termId}`)}>
+              <h3>{e.names[lang]}</h3>
+              <p class="small muted">{e.summary[lang]}</p>
+            </a>
+          </li>
+        );
+      })
+    }
+  </ul>
+  {
+    (prev || next) && (
+      <nav class="prev-next" aria-label={lensLabel}>
+        {prev && (
+          <a rel="prev" href={langPath(lang, `atlas/${lens}/${prev}/`)}>
+            ← {t('prevTerm')}: {labelOf(prev)}
+          </a>
+        )}
+        {next && (
+          <a rel="next" href={langPath(lang, `atlas/${lens}/${next}/`)}>
+            {t('nextTerm')}: {labelOf(next)} →
+          </a>
+        )}
+      </nav>
+    )
+  }
+</BaseLayout>
+
+<style>
+  .prev-next {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--space-4);
+    margin-top: var(--space-6);
+  }
+  .prev-next a[rel='next'] {
+    margin-left: auto;
+  }
+</style>

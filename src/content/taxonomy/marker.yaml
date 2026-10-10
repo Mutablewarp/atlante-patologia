@@ -1,0 +1,25 @@
+lens: marker
+label:
+  it: "Marcatore"
+  en: "Marker"
+terms:
+  - id: ihc
+    order: 10
+    label:
+      it: "Immunoistochimica"
+      en: "Immunohistochemistry"
+  - id: molecular
+    order: 20
+    label:
+      it: "Marcatori molecolari"
+      en: "Molecular markers"
+  - id: laboratory
+    order: 30
+    label:
+      it: "Esami di laboratorio"
+      en: "Laboratory tests"
+  - id: special-stains
+    order: 40
+    label:
+      it: "Colorazioni speciali"
+      en: "Special stains"

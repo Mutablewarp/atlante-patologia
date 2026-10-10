@@ -1,0 +1,86 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { langPaths, type Lang } from '../../../i18n/index.ts';
+import { tCommon } from '../../../i18n/common.ts';
+import { tAtlas } from '../../../i18n/pages.ts';
+import { LENSES } from '../../../lib/schema.ts';
+import { langPath } from '../../../lib/url.ts';
+import { siteData } from '../../../lib/content.ts';
+
+export const getStaticPaths = langPaths;
+
+const lang = Astro.params.lang as Lang;
+const t = (k: Parameters<typeof tAtlas>[1]) => tAtlas(lang, k);
+const { taxonomy, membership, modules } = await siteData();
+const lenses = LENSES.map((lens) => {
+  const tax = taxonomy.get(lens);
+  const counts = membership.get(lens)!;
+  const used = [...counts.values()].reduce((n, ids) => n + ids.length, 0);
+  return { lens, label: tax?.label[lang] ?? lens, terms: tax?.terms ?? [], used };
+});
+const sections = (['I', 'II', 'III'] as const).map((s) => ({
+  id: s,
+  label: tCommon(lang, `section${s}`),
+  modules: modules.filter((m) => m.section === s),
+}));
+---
+
+<BaseLayout lang={lang} title={t('title')} description={t('metaDescription')} tab="atlas">
+  <header class="page-head">
+    <h1>{t('title')}</h1>
+    <p class="lede">{t('intro')}</p>
+  </header>
+
+  <section aria-labelledby="lenses-title">
+    <h2 id="lenses-title">{t('lenses')}</h2>
+    <ul class="grid lens-grid">
+      {
+        lenses.map((l) => (
+          <li>
+            <a class="card link-card" href={langPath(lang, `atlas/${l.lens}/`)}>
+              <h3>{l.label} →</h3>
+              <p class="small muted">
+                {l.terms
+                  .slice(0, 6)
+                  .map((x) => x.label[lang])
+                  .join(' · ')}
+                {l.terms.length > 6 && ' …'}
+              </p>
+            </a>
+          </li>
+        ))
+      }
+      <li>
+        <a class="card link-card" href={langPath(lang, 'atlas/az/')}>
+          <h3>{t('azTitle')} →</h3>
+          <p class="small muted">{t('azBody')}</p>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="modules-title">
+    <h2 id="modules-title">{t('modules')}</h2>
+    <p class="muted" style="max-width:var(--measure)">{t('modulesIntro')}</p>
+    {
+      sections.map((s) => (
+        <>
+          <h3>{s.label}</h3>
+          <ul class="module-list">
+            {s.modules.map((m) => (
+              <li>
+                <a href={m.status === 'published' ? langPath(lang, `atlas/system/`) : langPath(lang, `about/roadmap/#${m.id}`)}>
+                  <span class="module-id">{m.id.toUpperCase()}</span>
+                  <span>{m.label[lang]}</span>
+                  <span class={`badge ${m.status === 'published' ? 'badge-published' : 'badge-planned'}`}>
+                    {tCommon(lang, m.status)}
+                  </span>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </>
+      ))
+    }
+  </section>
+</BaseLayout>

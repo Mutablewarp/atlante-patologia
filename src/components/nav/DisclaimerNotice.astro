@@ -1,0 +1,24 @@
+---
+/**
+ * First-launch disclaimer: a prominent labelled region at the top of <main>.
+ * Hidden before paint once dismissed (html[data-disclaimer-ack]); dismissal
+ * stored in localStorage and focus moved to the page heading (shell.ts).
+ */
+import type { Lang } from '../../i18n/index.ts';
+import { tCommon } from '../../i18n/common.ts';
+import { langPath } from '../../lib/url.ts';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+---
+
+<section class="first-notice notice" role="region" aria-labelledby="first-notice-title" data-first-notice>
+  <p id="first-notice-title" class="notice-title"><strong>{tCommon(lang, 'noticeTitle')}</strong></p>
+  <p>{tCommon(lang, 'noticeBody')}</p>
+  <div class="notice-actions">
+    <button type="button" class="btn btn-primary js-only" data-dismiss-notice>{tCommon(lang, 'noticeDismiss')}</button>
+    <a href={langPath(lang, 'about/disclaimer/')}>{tCommon(lang, 'noticeMore')}</a>
+  </div>
+</section>

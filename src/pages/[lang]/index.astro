@@ -1,0 +1,122 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { langPaths, fmt, type Lang } from '../../i18n/index.ts';
+import { tCommon, SITE_NAME } from '../../i18n/common.ts';
+import { tHome } from '../../i18n/pages.ts';
+import { langPath } from '../../lib/url.ts';
+import { siteData } from '../../lib/content.ts';
+
+export const getStaticPaths = langPaths;
+
+const lang = Astro.params.lang as Lang;
+const t = (k: Parameters<typeof tHome>[1]) => tHome(lang, k);
+const { modules } = await siteData();
+const published = modules.filter((m) => m.status === 'published').length;
+const pct = Math.round((published / modules.length) * 100);
+const sections = (['I', 'II', 'III'] as const).map((s) => ({
+  id: s,
+  label: tCommon(lang, `section${s}`),
+  total: modules.filter((m) => m.section === s).length,
+  published: modules.filter((m) => m.section === s && m.status === 'published').length,
+}));
+---
+
+<BaseLayout lang={lang} title={SITE_NAME} description={t('metaDescription')} tab="home">
+  <header class="hero">
+    <p class="kicker">{lang === 'it' ? 'Anatomia patologica · Pathology' : 'Pathology · Anatomia patologica'}</p>
+    <h1>Atlante <em>di Patologia</em></h1>
+    <p class="lede">{tCommon(lang, 'tagline')}</p>
+  </header>
+
+  <section class="status card" aria-labelledby="status-title">
+    <h2 id="status-title" class="kicker">{t('status')}</h2>
+    <p>{t('statusBody')}</p>
+  </section>
+
+  <section aria-labelledby="start-title">
+    <h2 id="start-title">{t('startHere')}</h2>
+    <ul class="grid">
+      <li>
+        <a class="card link-card" href={langPath(lang, 'atlas/')}>
+          <h3>{t('atlasCardTitle')} →</h3>
+          <p class="muted">{t('atlasCardBody')}</p>
+        </a>
+      </li>
+      <li>
+        <a class="card link-card" href={langPath(lang, 'study/')}>
+          <h3>{t('studyCardTitle')} →</h3>
+          <p class="muted">{t('studyCardBody')}</p>
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="progress-title">
+    <h2 id="progress-title">{t('progress')}</h2>
+    <p>{fmt(t('progressSummary'), { published, total: modules.length })}</p>
+    <div class="progress" role="img" aria-label={fmt(t('progressSummary'), { published, total: modules.length })}>
+      <span style={`width:${Math.max(pct, 1)}%`}></span>
+    </div>
+    <dl class="section-progress">
+      {
+        sections.map((s) => (
+          <div>
+            <dt>{s.label}</dt>
+            <dd>
+              {s.published} / {s.total} · <span class="badge badge-planned">{tCommon(lang, 'planned')}: {s.total - s.published}</span>
+            </dd>
+          </div>
+        ))
+      }
+    </dl>
+    <p><a href={langPath(lang, 'about/roadmap/')}>{t('seeRoadmap')}</a></p>
+  </section>
+
+  <aside class="notice" aria-label={tCommon(lang, 'footerDisclaimer')}>
+    <p style="margin:0">
+      {tCommon(lang, 'disclaimerShort')}{' '}
+      <a href={langPath(lang, 'about/disclaimer/')}>{tCommon(lang, 'noticeMore')}</a>
+    </p>
+  </aside>
+</BaseLayout>
+
+<style>
+  .hero {
+    padding: var(--space-6) 0 var(--space-6);
+    margin-bottom: var(--space-5);
+    border-bottom: 1px solid var(--rule);
+    background:
+      radial-gradient(circle at 92% 30%, var(--eosin-soft) 0 5.5rem, transparent 5.6rem),
+      radial-gradient(circle at 86% 62%, var(--hema-soft) 0 2.2rem, transparent 2.3rem);
+  }
+  .hero h1 {
+    max-width: 14ch;
+  }
+  .hero h1 em {
+    font-weight: 400;
+    color: var(--eosin);
+  }
+  .status {
+    max-width: var(--measure);
+    border-left: 4px solid var(--hema);
+  }
+  .status p {
+    margin: 0;
+  }
+  .section-progress {
+    display: grid;
+    gap: var(--space-2);
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+    margin-top: var(--space-4);
+  }
+  .section-progress dt {
+    font-weight: 700;
+  }
+  .section-progress dd {
+    margin: 0;
+  }
+  aside.notice {
+    margin-top: var(--space-6);
+    max-width: var(--measure);
+  }
+</style>

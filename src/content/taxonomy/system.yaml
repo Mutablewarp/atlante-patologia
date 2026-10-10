@@ -1,0 +1,105 @@
+lens: system
+label:
+  it: "Apparato / organo"
+  en: "Organ system"
+terms:
+  - id: general
+    order: 10
+    label:
+      it: "Patologia generale"
+      en: "General pathology"
+  - id: systemic
+    order: 20
+    label:
+      it: "Condizioni sistemiche"
+      en: "Systemic conditions"
+  - id: vessels
+    order: 30
+    label:
+      it: "Vasi sanguigni"
+      en: "Blood vessels"
+  - id: heart
+    order: 40
+    label:
+      it: "Cuore"
+      en: "Heart"
+  - id: respiratory
+    order: 50
+    label:
+      it: "Apparato respiratorio"
+      en: "Respiratory system"
+  - id: gastrointestinal
+    order: 60
+    label:
+      it: "Tratto gastroenterico"
+      en: "Gastrointestinal tract"
+  - id: liver-biliary
+    order: 70
+    label:
+      it: "Fegato e vie biliari"
+      en: "Liver and biliary system"
+  - id: pancreas
+    order: 80
+    label:
+      it: "Pancreas"
+      en: "Pancreas"
+  - id: kidney
+    order: 90
+    label:
+      it: "Rene"
+      en: "Kidney"
+  - id: urinary-male-genital
+    order: 100
+    label:
+      it: "Basse vie urinarie e apparato genitale maschile"
+      en: "Lower urinary tract and male genital system"
+  - id: female-genital
+    order: 110
+    label:
+      it: "Apparato genitale femminile e peritoneo"
+      en: "Female genital system and peritoneum"
+  - id: breast
+    order: 120
+    label:
+      it: "Mammella"
+      en: "Breast"
+  - id: hematolymphoid
+    order: 130
+    label:
+      it: "Sistema emolinfopoietico"
+      en: "Hematolymphoid system"
+  - id: endocrine
+    order: 140
+    label:
+      it: "Sistema endocrino"
+      en: "Endocrine system"
+  - id: skin
+    order: 150
+    label:
+      it: "Cute"
+      en: "Skin"
+  - id: head-neck
+    order: 160
+    label:
+      it: "Testa e collo"
+      en: "Head and neck"
+  - id: bone-soft-tissue
+    order: 170
+    label:
+      it: "Ossa, articolazioni e tessuti molli"
+      en: "Bones, joints and soft tissue"
+  - id: muscle-nerve
+    order: 180
+    label:
+      it: "Muscolo scheletrico e nervo periferico"
+      en: "Skeletal muscle and peripheral nerve"
+  - id: cns
+    order: 190
+    label:
+      it: "Sistema nervoso centrale"
+      en: "Central nervous system"
+  - id: eye
+    order: 200
+    label:
+      it: "Occhio"
+      en: "Eye"

@@ -1,0 +1,59 @@
+# FIXTURE — NOT CONTENT. Exercises the entity template only (PREVIEW_DRAFTS=1).
+# status: draft keeps it out of every production build. Contains no medical claims.
+id: fixture-demo
+module: g01
+tier: core
+kind: concept
+names:
+  it: "Voce di prova (segnaposto)"
+  en: "Demo entry (placeholder)"
+  latin: "Exemplum fictum"
+  eponyms: ["Segnaposto-Placeholder"]
+  synonyms:
+    it: ["Scheda dimostrativa"]
+    en: ["Template demo card"]
+  abbreviations: ["DEMO"]
+summary:
+  it: "Scheda finta per provare il modello di pagina. Non contiene informazioni mediche."
+  en: "Fake card used to test the page template. It contains no medical information."
+lenses:
+  system: [general]
+  process: [cell-injury]
+  pattern: []
+  presentation: []
+  marker: []
+  group: [degenerative]
+learningObjectives:
+  - it: "Verificare che il modello mostri gli obiettivi di apprendimento (testo segnaposto)."
+    en: "Check that the template shows learning objectives (placeholder text)."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: placeholder-target-a
+  - type: causes
+    target: placeholder-target-b
+    note:
+      it: "Relazione finta, solo per il test del pannello."
+      en: "Fake relation, only to test the panel."
+quickCheck:
+  - id: demo-q1
+    q: { it: "Domanda segnaposto 1?", en: "Placeholder question 1?" }
+    a: { it: "Risposta segnaposto 1.", en: "Placeholder answer 1." }
+    kind: short
+  - id: demo-q2
+    q: { it: "Domanda segnaposto 2?", en: "Placeholder question 2?" }
+    a: { it: "Risposta segnaposto 2.", en: "Placeholder answer 2." }
+    kind: short
+  - id: demo-q3
+    q: { it: "Domanda segnaposto 3?", en: "Placeholder question 3?" }
+    a: { it: "Risposta segnaposto 3.", en: "Placeholder answer 3." }
+    kind: free
+reviewStatus: ai-generated-unreviewed
+editionDependent: true
+editionNote:
+  it: "Nota di edizione segnaposto."
+  en: "Placeholder edition note."
+sources:
+  - source: rubin-8e
+lastUpdated: 2026-10-10
+status: draft

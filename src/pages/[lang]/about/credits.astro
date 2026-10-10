@@ -1,0 +1,63 @@
+---
+import AboutPage from '../../../components/AboutPage.astro';
+import Bi from '../../../components/Bi.astro';
+import { langPaths, type Lang } from '../../../i18n/index.ts';
+import { images } from '../../../lib/content.ts';
+
+export const getStaticPaths = langPaths;
+const lang = Astro.params.lang as Lang;
+const imgs = (await images()).sort((a, b) => a.id.localeCompare(b.id));
+const OFL = 'https://openfontlicense.org';
+---
+
+<AboutPage lang={lang} slug="credits">
+  <h2>{lang === 'it' ? 'Immagini' : 'Images'}</h2>
+  {
+    imgs.length === 0 ? (
+      <Bi lang={lang}>
+        <p slot="it" class="empty-state">
+          Non ci sono ancora immagini pubblicate. Ogni immagine avrà qui autore, fonte, licenza ed eventuali modifiche.
+        </p>
+        <p slot="en" class="empty-state">
+          No images are published yet. Each image will be listed here with its author, source, licence and any changes we
+          made.
+        </p>
+      </Bi>
+    ) : (
+      <ul>
+        {imgs.map((img) => (
+          <li id={`img-${img.id}`}>
+            {img.attributionText} — <a href={img.sourceUrl} rel="noopener">{lang === 'it' ? 'fonte' : 'source'}</a>,{' '}
+            <a href={img.licenseUrl} rel="noopener">{img.license}</a>
+            {img.modifications !== 'none' && ` · ${lang === 'it' ? 'modifiche' : 'changes'}: ${img.modifications}`}
+          </li>
+        ))}
+      </ul>
+    )
+  }
+
+  <h2>{lang === 'it' ? 'Caratteri tipografici' : 'Typefaces'}</h2>
+  <ul>
+    <li>
+      <strong>Fraunces</strong> — © 2020 The Fraunces Project Authors (Undercase Type).{' '}
+      <a href={OFL} rel="noopener">SIL Open Font License 1.1</a>.
+    </li>
+    <li>
+      <strong>Atkinson Hyperlegible Next</strong> — © 2020–2024 The Atkinson Hyperlegible Next Project Authors.{' '}
+      <a href={OFL} rel="noopener">SIL Open Font License 1.1</a>.
+    </li>
+  </ul>
+  <Bi lang={lang}>
+    <p slot="it">I caratteri sono inclusi nel sito tramite i pacchetti Fontsource, senza richieste a servizi esterni.</p>
+    <p slot="en">The fonts are bundled with the site through the Fontsource packages, with no requests to external services.</p>
+  </Bi>
+
+  <h2>{lang === 'it' ? 'Software' : 'Software'}</h2>
+  <Bi lang={lang}>
+    <p slot="it">
+      Il sito è costruito con Astro, Preact e Pagefind; il ripasso a intervalli userà ts-fsrs. Tutti sono software libero con
+      licenze permissive.
+    </p>
+    <p slot="en">The site is built with Astro, Preact and Pagefind; spaced review will use ts-fsrs. All are free software under permissive licences.</p>
+  </Bi>
+</AboutPage>

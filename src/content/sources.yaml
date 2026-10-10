@@ -1,0 +1,82 @@
+# Machine registry of sources (feeds the Reading list page).
+# Articles: existence checked against the Crossref API on 2026-10-10 (docs/VERIFIED_FACTS.md §L).
+- id: rubin-8e
+  title: "Rubin's Pathology: Mechanisms of Human Disease"
+  authors: "Strayer DS, Saffitz JE, Rubin E (eds.)"
+  edition: 8
+  year: 2020
+  publisher: "Wolters Kluwer"
+  kind: textbook
+  existsVerified: { via: publisher, date: 2026-10-10 }
+
+- id: dunlosky-2013
+  title: "Improving Students' Learning With Effective Learning Techniques"
+  authors: "Dunlosky J, Rawson KA, Marsh EJ, Nathan MJ, Willingham DT"
+  journal: "Psychological Science in the Public Interest 14(1):4-58"
+  year: 2013
+  kind: article
+  doi: "10.1177/1529100612453266"
+  existsVerified: { via: crossref, date: 2026-10-10 }
+
+- id: maye-2026
+  title: "The Effectiveness of Spaced Repetition in Medical Education: A Systematic Review and Meta-Analysis"
+  authors: "Maye J, Hurley F"
+  journal: "The Clinical Teacher 23(2):e70353"
+  year: 2026
+  kind: article
+  doi: "10.1111/tct.70353"
+  existsVerified: { via: crossref, date: 2026-10-10 }
+
+- id: frappa-2026
+  title: "Anki Use and Academic Performance in Medical Education: A Systematic Review of Evidence and Learning Theory"
+  authors: "Frappa N, Chernov, Dillon, Alben"
+  journal: "Medical Science Educator 36(2):1015-1025"
+  year: 2026
+  kind: article
+  doi: "10.1007/s40670-026-02643-5"
+  existsVerified: { via: crossref, date: 2026-10-10 }
+
+- id: green-2018
+  title: "Test-enhanced learning in health professions education: A systematic review: BEME Guide No. 48"
+  authors: "Green M, Moeller J, Spak J"
+  journal: "Medical Teacher 40(4):337-350"
+  year: 2018
+  kind: article
+  doi: "10.1080/0142159X.2018.1430354"
+  existsVerified: { via: crossref, date: 2026-10-10 }
+
+- id: larsen-2008
+  title: "Test-enhanced learning in medical education"
+  authors: "Larsen D, Butler A, Roediger III H"
+  journal: "Medical Education 42(10):959-966"
+  year: 2008
+  kind: article
+  doi: "10.1111/j.1365-2923.2008.03124.x"
+  existsVerified: { via: crossref, date: 2026-10-10 }
+
+- id: aljamal-2025
+  title: "Efficacy of mind maps and concept maps in enhancing academic performance among undergraduate medical students in the preclinical stage: a systematic review"
+  authors: "Aljamal H, et al."
+  journal: "Advances in Health Sciences Education 31(2):705-725 (online 2025)"
+  year: 2025
+  kind: article
+  doi: "10.1007/s10459-025-10437-4"
+  existsVerified: { via: crossref, date: 2026-10-10 }
+
+- id: thompson-2023
+  title: "The Effectiveness of Spaced Learning, Interleaving, and Retrieval Practice in Radiology Education: A Systematic Review"
+  authors: "Thompson C, Hughes M"
+  journal: "Journal of the American College of Radiology 20(11):1092-1101"
+  year: 2023
+  kind: article
+  doi: "10.1016/j.jacr.2023.08.028"
+  existsVerified: { via: crossref, date: 2026-10-10 }
+
+- id: kuo-2019
+  title: "Optical Versus Virtual Microscope for Medical Education: A Systematic Review"
+  authors: "Kuo K, Leo J"
+  journal: "Anatomical Sciences Education 12(6):678-685"
+  year: 2019
+  kind: article
+  doi: "10.1002/ase.1844"
+  existsVerified: { via: crossref, date: 2026-10-10 }

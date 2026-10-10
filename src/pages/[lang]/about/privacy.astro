@@ -1,0 +1,88 @@
+---
+import AboutPage from '../../../components/AboutPage.astro';
+import Bi from '../../../components/Bi.astro';
+import { langPaths, type Lang } from '../../../i18n/index.ts';
+
+export const getStaticPaths = langPaths;
+const lang = Astro.params.lang as Lang;
+const GH_PAGES = 'https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages';
+const GH_PRIVACY = 'https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement';
+---
+
+<AboutPage lang={lang} slug="privacy">
+  <Bi lang={lang}>
+    <Fragment slot="it">
+      <h2>Che cosa non facciamo</h2>
+      <ul>
+        <li>Nessun account e nessuna registrazione.</li>
+        <li>Nessun cookie.</li>
+        <li>Nessuno strumento di analisi del traffico, nessuna pubblicità.</li>
+        <li>Nessuna richiesta a servizi di terze parti: caratteri, script e immagini sono serviti dallo stesso sito.</li>
+      </ul>
+      <h2>Che cosa resta nel tuo browser</h2>
+      <p>
+        Alcune preferenze sono salvate solo sul tuo dispositivo, nella memoria locale del browser: lingua scelta, tema
+        chiaro o scuro, modalità di lettura, barra laterale ridotta, avviso iniziale già letto, e l’ultima pagina aperta in
+        ogni sezione (solo per la sessione in corso). Quando arriveranno gli strumenti di studio, anche ripassi, segnalibri
+        e note resteranno solo qui. Nessuno di questi dati viene inviato a noi o ad altri.
+      </p>
+      <p>
+        Puoi cancellare tutto in qualsiasi momento dalle impostazioni del browser (“cancella dati dei siti”). Attenzione:
+        la cancellazione è definitiva, perché non esiste una copia sui nostri server.
+      </p>
+      <h2>Safari e iPhone: i dati possono sparire</h2>
+      <p>
+        Safari può cancellare i dati salvati da un sito se non lo usi per sette giorni. Se studi su iPhone o iPad,
+        aggiungi l’atlante alla schermata Home: in quel caso Safari conta i giorni in cui usi l’app aggiunta, non quelli in
+        cui usi il browser. Quando sarà disponibile, usa anche l’esportazione dei dati per tenerne una copia.
+      </p>
+      <h2>Che cosa registra chi ospita il sito</h2>
+      <p>
+        Il sito è ospitato da GitHub Pages. Secondo la documentazione di GitHub, gli indirizzi IP dei visitatori vengono
+        registrati e conservati per motivi di sicurezza. Noi non abbiamo accesso a questi registri. Dettagli:{' '}
+        <a href={GH_PAGES} rel="noopener">documentazione di GitHub Pages</a> e{' '}
+        <a href={GH_PRIVACY} rel="noopener">informativa sulla privacy di GitHub</a>{' '}(in inglese).
+      </p>
+      <h2>Segnalazioni</h2>
+      <p>
+        Le segnalazioni passano dalle issue di GitHub, che richiedono un account GitHub e sono pubbliche: non inserire dati
+        personali o sanitari.
+      </p>
+    </Fragment>
+    <Fragment slot="en">
+      <h2>What we do not do</h2>
+      <ul>
+        <li>No accounts and no sign-up.</li>
+        <li>No cookies.</li>
+        <li>No analytics, no advertising.</li>
+        <li>No requests to third-party services: fonts, scripts and images are served from this site.</li>
+      </ul>
+      <h2>What stays in your browser</h2>
+      <p>
+        A few preferences are saved only on your device, in the browser’s local storage: chosen language, light or dark
+        theme, reading mode, collapsed sidebar, whether you have read the first notice, and the last page you opened in
+        each section (for the current session only). When the study tools arrive, reviews, bookmarks and notes will also
+        stay only here. None of this data is sent to us or to anyone else.
+      </p>
+      <p>
+        You can delete everything at any time in your browser settings (“clear site data”). Note that deletion is final,
+        because there is no copy on any server.
+      </p>
+      <h2>Safari and iPhone: data can disappear</h2>
+      <p>
+        Safari may delete the data a site has saved if you do not use that site for seven days. If you study on an iPhone
+        or iPad, add the atlas to your Home Screen: Safari then counts the days you use the added app, not the browser.
+        Once it is available, also use the data export to keep a copy.
+      </p>
+      <h2>What the host records</h2>
+      <p>
+        The site is hosted on GitHub Pages. According to GitHub’s documentation, visitor IP addresses are logged and stored
+        for security purposes. We have no access to those logs. Details:{' '}
+        <a href={GH_PAGES} rel="noopener">GitHub Pages documentation</a> and the{' '}
+        <a href={GH_PRIVACY} rel="noopener">GitHub privacy statement</a>.
+      </p>
+      <h2>Reports</h2>
+      <p>Reports go through GitHub issues, which need a GitHub account and are public: do not include personal or health data.</p>
+    </Fragment>
+  </Bi>
+</AboutPage>

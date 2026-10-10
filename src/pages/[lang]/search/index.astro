@@ -1,0 +1,88 @@
+---
+/**
+ * Full search (Pagefind, self-hosted from dist/pagefind/). Pagefind picks the
+ * index of the page's <html lang>, so each language searches its own pages.
+ */
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { langPaths, type Lang } from '../../../i18n/index.ts';
+import { tSearch } from '../../../i18n/pages.ts';
+import { tNav } from '../../../i18n/nav.ts';
+import { tAtlas } from '../../../i18n/pages.ts';
+import { langPath, url } from '../../../lib/url.ts';
+
+export const getStaticPaths = langPaths;
+
+const lang = Astro.params.lang as Lang;
+const t = (k: Parameters<typeof tSearch>[1]) => tSearch(lang, k);
+const strings = {
+  results: t('results'),
+  noResults: t('noResults'),
+  loading: t('loading'),
+  unavailable: t('unavailable'),
+};
+---
+
+<BaseLayout lang={lang} title={t('title')} description={t('metaDescription')} tab="search" searchable={false}>
+  <header class="page-head">
+    <h1>{t('title')}</h1>
+    <p class="lede">{t('intro')}</p>
+  </header>
+
+  <form class="search-form" role="search" action={langPath(lang, 'search/')} method="get" data-search-form>
+    <label for="page-search" class="visually-hidden">{tNav(lang, 'searchLabel')}</label>
+    <input id="page-search" name="q" type="search" autocomplete="off" placeholder={tNav(lang, 'searchPlaceholder')} data-page-search />
+    <button class="btn btn-primary" type="submit">{tNav(lang, 'searchSubmit')}</button>
+  </form>
+
+  <noscript>
+    <p class="notice">{t('noJs')} <a href={langPath(lang, 'atlas/')}>{tAtlas(lang, 'title')}</a></p>
+  </noscript>
+
+  <p class="search-status" role="status" aria-live="polite" data-search-status></p>
+  <ol class="search-results" data-search-results></ol>
+
+  <div hidden data-search-config data-bundle={url('pagefind/pagefind.js')} data-base={url()} data-strings={JSON.stringify(strings)}></div>
+</BaseLayout>
+
+<script>
+  import '../../../scripts/search.ts';
+</script>
+
+<style>
+  .search-form {
+    display: flex;
+    gap: var(--space-2);
+    max-width: 40rem;
+    margin-bottom: var(--space-4);
+  }
+  .search-form input {
+    flex: 1;
+    min-width: 0;
+    min-height: 2.75rem;
+    padding: 0 var(--space-4);
+    border-radius: 999px;
+    border: 1.5px solid var(--border-strong);
+    background: var(--surface);
+  }
+  .search-results {
+    list-style: none;
+    padding: 0;
+    max-width: var(--measure);
+  }
+  .search-results :global(li) {
+    padding: var(--space-3) 0;
+    border-bottom: 1px solid var(--rule);
+  }
+  .search-results :global(a) {
+    font-family: var(--font-display);
+    font-size: var(--step-1);
+  }
+  .search-results :global(p) {
+    margin: var(--space-1) 0 0;
+    color: var(--ink-muted);
+  }
+  .search-results :global(mark) {
+    background: var(--eosin-soft);
+    color: var(--eosin-ink);
+  }
+</style>
