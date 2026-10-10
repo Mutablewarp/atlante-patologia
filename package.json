@@ -10,14 +10,16 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && pagefind --site dist",
+    "build": "astro build && pagefind --site dist && node scripts/sw-manifest.mjs",
     "preview": "astro preview",
     "check": "astro check",
     "test": "vitest run",
     "guard": "node scripts/guard.mjs --tree",
     "contrast": "node scripts/contrast-check.mjs",
     "prepare": "simple-git-hooks",
-    "no-verbatim": "node scripts/no-verbatim.mjs"
+    "no-verbatim": "node scripts/no-verbatim.mjs",
+    "icons": "node scripts/icons.mjs",
+    "test:e2e": "playwright test"
   },
   "simple-git-hooks": {
     "pre-commit": "node scripts/guard.mjs --staged"

@@ -18,7 +18,8 @@ export default defineConfig({
     preact(),
     sitemap({
       i18n: { defaultLocale: 'it', locales: { it: 'it-IT', en: 'en-GB' } },
-      filter: (page) => !page.endsWith('/404/'),
+      // 404 and the offline fallback (served by the service worker) are not landing pages.
+      filter: (page) => !page.endsWith('/404/') && !/\/(it|en)\/offline\/$/.test(page),
     }),
   ],
   devToolbar: { enabled: false },
