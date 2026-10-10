@@ -1,8 +1,8 @@
 # Atlante di Patologia
 
-**IT** — Atlante di anatomia patologica libero, bilingue (italiano/inglese) e consultabile offline, con un sistema di studio (ripasso a intervalli, quiz, allenamento sulle immagini) per studenti di medicina. Nessun account, nessun cookie, nessun tracciamento: i dati di studio restano nel browser.
+**IT** — Atlante di anatomia patologica libero e bilingue (italiano/inglese), con un sistema di studio (ripasso a intervalli, quiz, allenamento sulle immagini) per studenti di medicina. Nessun account, nessun cookie, nessun tracciamento: i dati di studio restano nel browser.
 
-**EN** — A free, bilingual (Italian/English), offline-capable pathology atlas and study system (spaced review, quizzes, image training) for medical students. No accounts, no cookies, no tracking: study data stays in the browser.
+**EN** — A free, bilingual (Italian/English) pathology atlas and study system (spaced review, quizzes, image training) for medical students. No accounts, no cookies, no tracking: study data stays in the browser.
 
 Sito / Site: <https://mutablewarp.github.io/atlante-patologia/>
 
@@ -21,9 +21,15 @@ npm run build      # astro build + Pagefind index → dist/
 npm run preview    # serve dist/
 npm run check      # astro check (TypeScript)
 npm test           # Vitest unit tests
+npm run test:dist  # validators on dist/ (navigation graph, links, budgets) — after build
+npm run test:e2e   # Playwright (first: npx playwright install) — after build
+npm run lighthouse # Lighthouse mobile ≥ 90 on sample pages — after build
+npm run licenses   # dependency license ledger → docs/licenses/
 npm run guard      # containment guard over tracked files
-node scripts/contrast-check.mjs   # WCAG contrast of design tokens
+npm run contrast   # WCAG contrast of design tokens
 ```
+
+How to contribute content, translations and reviews: [CONTRIBUTING.md](CONTRIBUTING.md). Hosting limits and the mirror plan: [docs/OPERATIONS.md](docs/OPERATIONS.md).
 
 Preview draft content (never published): `PREVIEW_DRAFTS=1 npm run dev`.
 
@@ -31,7 +37,7 @@ Install the pre-commit containment hook once: `npx simple-git-hooks`.
 
 ## Deploy
 
-GitHub Actions (`.github/workflows/ci.yml`): every push and PR runs guard, type check, tests, build and contrast check; pushes to `main` then deploy to GitHub Pages with `withastro/action` + `actions/deploy-pages`. In the repository settings, set **Pages → Source: GitHub Actions**.
+GitHub Actions (`.github/workflows/ci.yml`): every push and PR runs guard, type check, unit tests, license scan, build, contrast check, dist validators, Playwright (Chromium, Firefox, WebKit) and Lighthouse; pushes to `main` then deploy to GitHub Pages with `withastro/action` + `actions/deploy-pages`. In the repository settings, set **Pages → Source: GitHub Actions**.
 
 ## Struttura / Layout
 

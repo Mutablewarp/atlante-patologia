@@ -1,0 +1,34 @@
+name: Traduzione / Translation
+description: Un testo poco chiaro, una traduzione sbagliata o un termine non standard. / Unclear wording, a wrong translation or a non-standard term.
+title: '[Traduzione / Translation] '
+labels: [translation]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Pagina / Page
+      placeholder: https://mutablewarp.github.io/atlante-patologia/...
+    validations:
+      required: true
+  - type: dropdown
+    id: lang
+    attributes:
+      label: Lingua del testo / Language of the text
+      options:
+        - Italiano
+        - English
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: Testo attuale / Current text
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposta / Suggested text
+      description: Per un termine medico, indica se puoi la fonte (testo italiano, glossario, linea guida). / For a medical term, give a source if you can (Italian textbook, glossary, guideline).
+    validations:
+      required: true

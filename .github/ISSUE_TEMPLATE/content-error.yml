@@ -1,0 +1,51 @@
+name: Errore nei contenuti / Content error
+description: Un'affermazione sbagliata, imprecisa o non aggiornata in una scheda. / A wrong, imprecise or outdated statement on a card.
+title: '[Contenuto / Content] '
+labels: [content-error]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Grazie! Le issue sono pubbliche: non inserire dati personali o sanitari.
+        Thank you! Issues are public: do not include personal or health information.
+  - type: input
+    id: url
+    attributes:
+      label: Link alla scheda / Card link
+      placeholder: https://mutablewarp.github.io/atlante-patologia/it/e/...
+    validations:
+      required: true
+  - type: dropdown
+    id: lang
+    attributes:
+      label: Lingua / Language
+      options:
+        - Italiano
+        - English
+        - Entrambe / Both
+    validations:
+      required: true
+  - type: input
+    id: section
+    attributes:
+      label: Sezione / Section
+      description: Per esempio "Morfologia microscopica". / For example "Microscopic morphology".
+  - type: textarea
+    id: problem
+    attributes:
+      label: Che cosa è sbagliato? / What is wrong?
+      description: Riporta la frase e spiega il problema. / Quote the sentence and explain the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Fonte / Source
+      description: Libro (edizione, pagina), linea guida o articolo (DOI/PMID), se possibile. / Textbook (edition, page), guideline or paper (DOI/PMID), if you can.
+  - type: checkboxes
+    id: confirm
+    attributes:
+      label: Conferma / Confirm
+      options:
+        - label: Non ho incluso dati personali o sanitari. / I have not included personal or health information.
+          required: true
