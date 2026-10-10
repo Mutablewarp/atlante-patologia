@@ -1,0 +1,150 @@
+---
+/**
+ * /{lang}/me/offline/: offline packs per chapter (Cache Storage, opt-in),
+ * storage meter, persistence status, Safari/iOS storage rules and optional
+ * "Add to Home Screen" guidance. Behaviour: src/scripts/offline-packs.ts.
+ */
+import BaseLayout from '../../../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../../../components/nav/Breadcrumb.astro';
+import { fmt, langPaths, type Lang } from '../../../../i18n/index.ts';
+import { tOffline } from '../../../../i18n/offline.ts';
+import { tMe, tAtlas } from '../../../../i18n/pages.ts';
+import { langPath } from '../../../../lib/url.ts';
+import { siteData } from '../../../../lib/content.ts';
+
+export const getStaticPaths = langPaths;
+const lang = Astro.params.lang as Lang;
+const t = (k: Parameters<typeof tOffline>[1]) => tOffline(lang, k);
+
+const { modules, entities } = await siteData();
+const packs = modules
+  .map((m) => ({ id: m.id, label: m.label[lang], count: entities.filter((e) => e.module === m.id).length }))
+  .filter((m) => m.count > 0);
+const strings = Object.fromEntries(
+  (
+    [
+      'download', 'downloadLabel', 'remove', 'removeLabel', 'update', 'updateLabel', 'stateNone', 'stateInstalled',
+      'stateOutdated', 'stateWorking', 'stateError', 'storageUsage', 'storageUnknown', 'persistYes', 'persistNo',
+      'persistUnknown', 'noSupport',
+    ] as const
+  ).map((k) => [k, t(k)]),
+);
+---
+
+<BaseLayout lang={lang} title={t('title')} description={t('metaDescription')} tab="me" searchable={false}>
+  <Breadcrumb lang={lang} items={[{ label: tMe(lang, 'title'), href: langPath(lang, 'me/') }, { label: t('title') }]} />
+  <header class="page-head">
+    <h1>{t('title')}</h1>
+    <p class="lede">{t('intro')}</p>
+  </header>
+
+  <div class="offline" data-offline-packs data-lang={lang} data-strings={JSON.stringify(strings)}>
+    <noscript><p class="notice notice-caution">{t('noJs')}</p></noscript>
+    <p class="notice notice-caution" data-no-support hidden>{t('noSupport')}</p>
+
+    <section aria-labelledby="packs-title">
+      <h2 id="packs-title">{t('packsTitle')}</h2>
+      {packs.length === 0 && <p class="empty-state">{t('noPacks')}</p>}
+      {
+        packs.length > 0 && (
+          <ul class="pack-list">
+            {packs.map((p) => (
+              <li class="pack card" data-pack={p.id} data-label={p.label}>
+                <div class="pack-text">
+                  <h3 class="pack-title">{p.label}</h3>
+                  <p class="small muted pack-meta">
+                    {p.count === 1 ? tAtlas(lang, 'termCountOne') : fmt(tAtlas(lang, 'termCount'), { n: p.count })}
+                    <span data-size />
+                  </p>
+                  <p class="small pack-state" role="status" data-state>
+                    {t('stateNone')}
+                  </p>
+                </div>
+                <div class="pack-actions js-only">
+                  <button type="button" class="btn btn-small btn-primary" data-install aria-label={fmt(t('downloadLabel'), { module: p.label })}>
+                    {t('download')}
+                  </button>
+                  <button type="button" class="btn btn-small" data-remove hidden aria-label={fmt(t('removeLabel'), { module: p.label })}>
+                    {t('remove')}
+                  </button>
+                </div>
+              </li>
+            ))}
+          </ul>
+        )
+      }
+    </section>
+
+    <section aria-labelledby="storage-title" class="js-only">
+      <h2 id="storage-title">{t('storageTitle')}</h2>
+      <p data-storage-text>{t('storageUnknown')}</p>
+      <meter data-storage-meter min="0" max="1" value="0" hidden aria-labelledby="storage-title"></meter>
+      <h2 id="persist-title">{t('persistTitle')}</h2>
+      <p data-persist-text>{t('persistUnknown')}</p>
+    </section>
+  </div>
+
+  <section aria-labelledby="ios-title" class="prose">
+    <h2 id="ios-title">{t('iosTitle')}</h2>
+    <p>{t('iosRule')}</p>
+    <p>{t('iosHome')}</p>
+    <p>{t('iosExport')}</p>
+  </section>
+
+  <section aria-labelledby="install-title" class="prose">
+    <h2 id="install-title">{t('installTitle')}</h2>
+    <p data-standalone hidden>{t('installStandalone')}</p>
+    <div data-install-help>
+      <p>{t('installIntro')}</p>
+      <ul>
+        <li>{t('installIos')}</li>
+        <li>{t('installAndroid')}</li>
+      </ul>
+    </div>
+  </section>
+</BaseLayout>
+
+<script>
+  import '../../../../scripts/offline-packs.ts';
+</script>
+
+<style>
+  [hidden] {
+    display: none !important;
+  }
+  .offline,
+  .prose {
+    max-width: var(--measure);
+  }
+  .pack-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--space-6);
+    display: grid;
+    gap: var(--space-3);
+  }
+  .pack {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-3) var(--space-5);
+    padding: var(--space-4) var(--space-5);
+  }
+  .pack-title {
+    margin: 0;
+    font-size: var(--step-1);
+  }
+  .pack-meta,
+  .pack-state {
+    margin: var(--space-1) 0 0;
+  }
+  .pack-actions {
+    display: flex;
+    gap: var(--space-2);
+  }
+  meter {
+    width: 100%;
+    height: 1rem;
+  }
+</style>

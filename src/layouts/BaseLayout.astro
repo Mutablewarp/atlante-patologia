@@ -17,6 +17,7 @@ import TopBar from '../components/nav/TopBar.astro';
 import PrimaryNav from '../components/nav/PrimaryNav.astro';
 import Footer from '../components/nav/Footer.astro';
 import DisclaimerNotice from '../components/nav/DisclaimerNotice.astro';
+import UpdateNotice from '../components/offline/UpdateNotice.astro';
 
 interface Props {
   lang: Lang;
@@ -51,6 +52,7 @@ const fullTitle = title === SITE_NAME ? SITE_NAME : `${title} · ${SITE_NAME}`;
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0e1120" />
     <meta name="color-scheme" content="light dark" />
     <link rel="icon" href={url('favicon.svg')} type="image/svg+xml" />
+    <link rel="apple-touch-icon" href={url('icons/apple-touch-icon.png')} />
     <link rel="manifest" href={url('manifest.webmanifest')} />
     <link rel="sitemap" href={url('sitemap-index.xml')} />
     <meta property="og:title" content={fullTitle} />
@@ -86,6 +88,7 @@ const fullTitle = title === SITE_NAME ? SITE_NAME : `${title} · ${SITE_NAME}`;
       </main>
       <Footer lang={lang} />
     </div>
+    <UpdateNotice lang={lang} />
     <script>
       import '../scripts/shell.ts';
     </script>

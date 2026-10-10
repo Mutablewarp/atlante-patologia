@@ -3,6 +3,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import { langPaths, type Lang } from '../../../i18n/index.ts';
 import { tMe } from '../../../i18n/pages.ts';
 import { tCommon } from '../../../i18n/common.ts';
+import { tOffline } from '../../../i18n/offline.ts';
 import { langPath } from '../../../lib/url.ts';
 
 export const getStaticPaths = langPaths;
@@ -19,6 +20,12 @@ const t = (k: Parameters<typeof tMe>[1]) => tMe(lang, k);
   <section class="empty-state" aria-labelledby="me-empty">
     <h2 id="me-empty" style="margin-top:0">{t('emptyTitle')}</h2>
     <p style="margin:0">{t('emptyBody')}</p>
+  </section>
+  <section aria-labelledby="me-offline" style="max-width:var(--measure);margin-bottom:var(--space-6)">
+    <a class="card link-card" href={langPath(lang, 'me/offline/')}>
+      <h2 id="me-offline" style="margin-top:0;font-size:var(--step-1);color:var(--hema)">{tOffline(lang, 'meLinkTitle')} →</h2>
+      <p class="small muted" style="margin:0">{tOffline(lang, 'meLinkBody')}</p>
+    </a>
   </section>
   <section aria-labelledby="me-data" style="max-width:var(--measure)">
     <h2 id="me-data">{t('dataTitle')}</h2>
