@@ -13,11 +13,12 @@
     "build": "astro build && pagefind --site dist",
     "preview": "astro preview",
     "check": "astro check",
-    "test": "vitest run",
+    "test": "vitest run --project unit",
     "guard": "node scripts/guard.mjs --tree",
     "contrast": "node scripts/contrast-check.mjs",
     "prepare": "simple-git-hooks",
-    "no-verbatim": "node scripts/no-verbatim.mjs"
+    "no-verbatim": "node scripts/no-verbatim.mjs",
+    "test:dist": "vitest run --project dist"
   },
   "simple-git-hooks": {
     "pre-commit": "node scripts/guard.mjs --staged"

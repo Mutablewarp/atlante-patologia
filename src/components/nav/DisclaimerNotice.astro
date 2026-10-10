@@ -14,7 +14,7 @@ interface Props {
 const { lang } = Astro.props;
 ---
 
-<section class="first-notice notice" role="region" aria-labelledby="first-notice-title" data-first-notice>
+<section class="first-notice notice" role="region" aria-labelledby="first-notice-title" data-first-notice data-nav="global">
   <p id="first-notice-title" class="notice-title"><strong>{tCommon(lang, 'noticeTitle')}</strong></p>
   <p>{tCommon(lang, 'noticeBody')}</p>
   <div class="notice-actions">
