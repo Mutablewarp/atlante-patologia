@@ -1,0 +1,83 @@
+---
+/** One learning path: ordered steps (entities or pattern pages) with progress. */
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../../components/nav/Breadcrumb.astro';
+import PathProgress from '../../../components/horizontal/PathProgress.astro';
+import { LANGS, fmt, type Lang } from '../../../i18n/index.ts';
+import { tAtlas } from '../../../i18n/pages.ts';
+import { tHz } from '../../../i18n/horizontal.ts';
+import { langPath } from '../../../lib/url.ts';
+import { siteData, paths, patterns } from '../../../lib/content.ts';
+import { anyEntityName } from '../../../lib/horizontal.ts';
+import '../../../styles/horizontal.css';
+
+export async function getStaticPaths() {
+  return (await paths()).flatMap((p) => LANGS.map((lang) => ({ params: { lang, id: p.id }, props: { path: p } })));
+}
+
+const lang = Astro.params.lang as Lang;
+const { path } = Astro.props as { path: Awaited<ReturnType<typeof paths>>[number] };
+const t = (k: Parameters<typeof tHz>[1]) => tHz(lang, k);
+const { entityById } = await siteData();
+const pats = new Map((await patterns()).map((p) => [p.id, p]));
+const steps = await Promise.all(
+  path.steps.map(async (s) => {
+    if ('entity' in s) {
+      const e = entityById.get(s.entity);
+      return {
+        kind: 'entity' as const,
+        id: s.entity,
+        name: e?.names[lang] ?? (await anyEntityName(s.entity, lang)),
+        summary: e?.summary[lang],
+        href: e ? langPath(lang, `e/${s.entity}/`) : undefined,
+      };
+    }
+    const p = pats.get(s.pattern);
+    return {
+      kind: 'pattern' as const,
+      id: s.pattern,
+      name: p?.names[lang] ?? s.pattern.replace(/-/g, ' '),
+      summary: p?.summary[lang],
+      href: p ? langPath(lang, `pattern/${s.pattern}/`) : undefined,
+    };
+  }),
+);
+const kindLabel = path.kind === 'vertical' ? t('pathKindVertical') : t('pathKindHorizontal');
+---
+
+<BaseLayout lang={lang} title={path.title[lang]} description={path.description[lang]} tab="atlas">
+  <Breadcrumb
+    lang={lang}
+    items={[
+      { label: tAtlas(lang, 'title'), href: langPath(lang, 'atlas/') },
+      { label: t('pathsTitle'), href: langPath(lang, 'paths/') },
+      { label: path.title[lang] },
+    ]}
+  />
+  <header class="page-head">
+    <p class="kicker">{kindLabel} · {fmt(t('pathSteps'), { n: steps.length })}</p>
+    <h1>{path.title[lang]}</h1>
+    <p class="lede">{path.description[lang]}</p>
+  </header>
+
+  <section aria-labelledby="path-progress-title">
+    <h2 id="path-progress-title">{t('pathProgress')}</h2>
+    <PathProgress lang={lang} entities={steps.filter((s) => s.kind === 'entity').map((s) => s.id)} />
+  </section>
+
+  <section aria-labelledby="path-steps-title">
+    <h2 id="path-steps-title">{t('pathStepsTitle')}</h2>
+    <ol class="path-steps">
+      {
+        steps.map((s) => (
+          <li data-step={s.kind === 'entity' ? s.id : undefined}>
+            {s.href ? <a href={s.href}>{s.name}</a> : <span>{s.name}</span>}
+            {s.kind === 'pattern' && <span class="badge">{t('pathStepPattern')}</span>}
+            {!s.href && <span class="badge badge-planned">{t('planned')}</span>}
+            {s.summary && <p class="small muted">{s.summary}</p>}
+          </li>
+        ))
+      }
+    </ol>
+  </section>
+</BaseLayout>

@@ -1,0 +1,166 @@
+---
+/**
+ * Concept map (NAVIGATION_SPEC §5): a static SVG graph laid out at build time
+ * (lib/graph.ts, no runtime library) plus an equivalent nested list with the
+ * same nodes and edges. List is the default on narrow screens and with
+ * prefers-reduced-motion; without JS both views are shown.
+ */
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../../components/nav/Breadcrumb.astro';
+import { langPaths, type Lang } from '../../../i18n/index.ts';
+import { tAtlas } from '../../../i18n/pages.ts';
+import { tHz } from '../../../i18n/horizontal.ts';
+import { RELATION_TYPES, type RelationTypeId } from '../../../lib/schema.ts';
+import { RELATION_LABELS, SYMMETRIC } from '../../../lib/relations.ts';
+import { forceLayout } from '../../../lib/graph.ts';
+import { langPath } from '../../../lib/url.ts';
+import { siteData } from '../../../lib/content.ts';
+import '../../../styles/entity.css'; // .segmented toggle
+import '../../../styles/horizontal.css';
+
+export const getStaticPaths = langPaths;
+
+const lang = Astro.params.lang as Lang;
+const t = (k: Parameters<typeof tHz>[1]) => tHz(lang, k);
+const { entities, entityById, relations } = await siteData();
+
+// Edges between visible entities; symmetric pairs declared on both sides count once.
+const seen = new Set<string>();
+const edges: { from: string; to: string; type: RelationTypeId }[] = [];
+for (const e of entities)
+  for (const r of e.relations) {
+    if (!entityById.has(r.target) || r.target === e.id) continue;
+    const key = SYMMETRIC.has(r.type) ? [r.type, ...[e.id, r.target].sort()].join('|') : `${r.type}|${e.id}|${r.target}`;
+    if (seen.has(key)) continue;
+    seen.add(key);
+    edges.push({ from: e.id, to: r.target, type: r.type });
+  }
+const W = 1000;
+const H = 700;
+const pos = forceLayout(
+  entities.map((e) => e.id),
+  edges,
+  { w: W, h: H },
+);
+const R = 9;
+/** Line end points shortened by the node radius, so arrowheads stay visible. */
+const ends = (a: { x: number; y: number }, b: { x: number; y: number }) => {
+  const d = Math.max(Math.hypot(b.x - a.x, b.y - a.y), 1);
+  const ux = (b.x - a.x) / d;
+  const uy = (b.y - a.y) / d;
+  return { x1: a.x + ux * R, y1: a.y + uy * R, x2: b.x - ux * (R + 3), y2: b.y - uy * (R + 3) };
+};
+const usedTypes = RELATION_TYPES.filter((type) => edges.some((e) => e.type === type));
+const name = (id: string) => entityById.get(id)!.names[lang];
+---
+
+<BaseLayout lang={lang} title={t('mapTitle')} description={t('mapBody')} tab="atlas">
+  <Breadcrumb lang={lang} items={[{ label: tAtlas(lang, 'title'), href: langPath(lang, 'atlas/') }, { label: t('mapTitle') }]} />
+  <header class="page-head">
+    <h1>{t('mapTitle')}</h1>
+    <p class="lede">{t('mapIntro')}</p>
+  </header>
+
+  {
+    entities.length === 0 ? (
+      <p class="empty-state">{t('emptyTool')}</p>
+    ) : (
+      <div class="map" data-map>
+        <div class="segmented js-only" role="group" aria-label={t('mapView')}>
+          <button type="button" data-view-btn="graph" aria-pressed="false">{t('mapGraph')}</button>
+          <button type="button" data-view-btn="list" aria-pressed="false">{t('mapList')}</button>
+        </div>
+
+        <figure class="map-graph" data-view="graph">
+          <svg viewBox={`0 0 ${W} ${H}`} role="group" aria-label={t('mapGraphLabel')}>
+            <defs>
+              <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+                <path d="M0 0 10 5 0 10z" fill="currentColor" />
+              </marker>
+            </defs>
+            <g aria-hidden="true">
+              {edges.map((e) => (
+                <line
+                  class={`edge edge-${e.type}`}
+                  {...ends(pos.get(e.from)!, pos.get(e.to)!)}
+                  marker-end={SYMMETRIC.has(e.type) ? undefined : 'url(#arrow)'}
+                />
+              ))}
+            </g>
+            {entities.map((e) => {
+              const p = pos.get(e.id)!;
+              return (
+                <a href={langPath(lang, `e/${e.id}/`)} class="node">
+                  <circle cx={p.x} cy={p.y} r={R} class={`node-${e.tier}`} />
+                  <text x={p.x} y={p.y - R - 6} text-anchor="middle">
+                    {name(e.id)}
+                  </text>
+                </a>
+              );
+            })}
+          </svg>
+          {usedTypes.length > 0 && (
+            <figcaption>
+              <h2 class="small-heading">{t('mapLegend')}</h2>
+              <ul class="map-legend">
+                {usedTypes.map((type) => (
+                  <li>
+                    <svg viewBox="0 0 40 10" width="40" height="10" aria-hidden="true">
+                      <line class={`edge edge-${type}`} x1="2" y1="5" x2="34" y2="5" marker-end={SYMMETRIC.has(type) ? undefined : 'url(#arrow)'} />
+                    </svg>
+                    {RELATION_LABELS[type].forward[lang]}
+                  </li>
+                ))}
+              </ul>
+            </figcaption>
+          )}
+        </figure>
+
+        <div class="map-list" data-view="list">
+          <ul>
+            {entities.map((e) => {
+              const groups = (relations.get(e.id) ?? [])
+                .map((g) => ({ ...g, items: g.items.filter((i) => entityById.has(i.target)) }))
+                .filter((g) => g.items.length > 0);
+              return (
+                <li>
+                  <a href={langPath(lang, `e/${e.id}/`)}>{name(e.id)}</a>
+                  {groups.length === 0 ? (
+                    <span class="small muted"> — {t('mapNoRelations')}</span>
+                  ) : (
+                    <ul>
+                      {groups.map((g) => (
+                        <li>
+                          {g.label[lang]}:{' '}
+                          {g.items.map((i, n) => (
+                            <>
+                              {n > 0 && ', '}
+                              <a href={langPath(lang, `e/${i.target}/`)}>{name(i.target)}</a>
+                            </>
+                          ))}
+                        </li>
+                      ))}
+                    </ul>
+                  )}
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      </div>
+    )
+  }
+</BaseLayout>
+
+<script>
+  const map = document.querySelector<HTMLElement>('[data-map]');
+  if (map) {
+    const btns = [...map.querySelectorAll<HTMLButtonElement>('[data-view-btn]')];
+    const show = (view: string) => {
+      map.querySelectorAll<HTMLElement>('[data-view]').forEach((el) => (el.hidden = el.dataset.view !== view));
+      btns.forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.viewBtn === view)));
+    };
+    btns.forEach((b) => b.addEventListener('click', () => show(b.dataset.viewBtn!)));
+    show(matchMedia('(max-width: 599px), (prefers-reduced-motion: reduce)').matches ? 'list' : 'graph');
+  }
+</script>

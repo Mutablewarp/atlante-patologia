@@ -1,28 +1,40 @@
 ---
-/** A–Z of entities (all names, both languages) — glossary terms join later. */
+/** A–Z of entities and glossary terms (all names, both languages); `#term-<id>` anchors. */
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Breadcrumb from '../../../components/nav/Breadcrumb.astro';
 import { langPaths, type Lang } from '../../../i18n/index.ts';
 import { tCommon } from '../../../i18n/common.ts';
 import { tAtlas } from '../../../i18n/pages.ts';
 import { langPath } from '../../../lib/url.ts';
-import { siteData } from '../../../lib/content.ts';
+import { siteData, glossary } from '../../../lib/content.ts';
+import { glossaryAnchor } from '../../../lib/horizontal.ts';
+import { tHz } from '../../../i18n/horizontal.ts';
+import '../../../styles/horizontal.css';
 
 export const getStaticPaths = langPaths;
 
 const lang = Astro.params.lang as Lang;
 const t = (k: Parameters<typeof tAtlas>[1]) => tAtlas(lang, k);
-const { entities } = await siteData();
+const { entities, entityById } = await siteData();
+const other = lang === 'it' ? 'en' : 'it';
 const collator = new Intl.Collator(lang, { sensitivity: 'base' });
-const rows = entities
-  .flatMap((e) =>
-    [e.names[lang], e.names[lang === 'it' ? 'en' : 'it'], ...e.names.synonyms[lang], ...e.names.eponyms].map((name, i) => ({
-      name,
-      id: e.id,
-      primary: i === 0 ? undefined : e.names[lang],
-    })),
-  )
-  .sort((a, b) => collator.compare(a.name, b.name));
+type Row = { name: string; href: string; anchor?: string; primary?: string; definition?: string };
+const entityRows: Row[] = entities.flatMap((e) =>
+  [e.names[lang], e.names[other], ...e.names.synonyms[lang], ...e.names.eponyms].map((name, i) => ({
+    name,
+    href: langPath(lang, `e/${e.id}/`),
+    anchor: i === 0 ? `term-${e.id}` : undefined,
+    primary: i === 0 ? undefined : e.names[lang],
+  })),
+);
+const glossaryRows: Row[] = (await glossary()).flatMap((g) => {
+  const anchor = glossaryAnchor(g.id, entityById);
+  return [
+    { name: g.term[lang], href: `#${anchor}`, anchor, definition: g.definition[lang] },
+    ...[g.term[other], ...g.aliases[lang]].map((name) => ({ name, href: `#${anchor}`, primary: g.term[lang] })),
+  ];
+});
+const rows = [...entityRows, ...glossaryRows].sort((a, b) => collator.compare(a.name, b.name));
 const letterOf = (s: string) => s.normalize('NFD').charAt(0).toUpperCase();
 const letters = [...new Set(rows.map((r) => letterOf(r.name)))];
 ---
@@ -48,8 +60,15 @@ const letters = [...new Set(rows.map((r) => letterOf(r.name)))];
             {rows
               .filter((r) => letterOf(r.name) === letter)
               .map((r) => (
-                <li id={r.primary ? undefined : `term-${r.id}`}>
-                  <a href={langPath(lang, `e/${r.id}/`)}>{r.name}</a>
+                <li id={r.anchor}>
+                  {r.definition ? (
+                    <span class="az-gloss">
+                      <dfn>{r.name}</dfn> <span class="badge">{tHz(lang, 'glossary')}</span>
+                      <span class="small muted">{r.definition}</span>
+                    </span>
+                  ) : (
+                    <a href={r.href}>{r.name}</a>
+                  )}
                   {r.primary && <span class="small muted">→ {r.primary}</span>}
                 </li>
               ))}

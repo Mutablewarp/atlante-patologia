@@ -1,0 +1,19 @@
+---
+/**
+ * Progress of a learning path. <ap-path-progress> is defined by the study
+ * layer; until it upgrades (or without JS) the fallback text stays visible.
+ */
+import type { Lang } from '../../i18n/index.ts';
+import { tHz } from '../../i18n/horizontal.ts';
+
+interface Props {
+  lang: Lang;
+  /** Entity ids of the path, in order. */
+  entities: string[];
+}
+const { lang, entities } = Astro.props;
+---
+
+<ap-path-progress entities={entities.join(' ')} class="path-progress">
+  <span class="small muted">{tHz(lang, 'pathProgressNoJs')}</span>
+</ap-path-progress>

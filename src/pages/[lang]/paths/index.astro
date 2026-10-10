@@ -1,0 +1,55 @@
+---
+/** Learning paths, vertical and horizontal (NAVIGATION_SPEC §5). */
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../../components/nav/Breadcrumb.astro';
+import PathProgress from '../../../components/horizontal/PathProgress.astro';
+import { langPaths, fmt, type Lang } from '../../../i18n/index.ts';
+import { tAtlas } from '../../../i18n/pages.ts';
+import { tHz } from '../../../i18n/horizontal.ts';
+import { langPath } from '../../../lib/url.ts';
+import { paths } from '../../../lib/content.ts';
+import '../../../styles/horizontal.css';
+
+export const getStaticPaths = langPaths;
+
+const lang = Astro.params.lang as Lang;
+const t = (k: Parameters<typeof tHz>[1]) => tHz(lang, k);
+const all = await paths();
+const groups = [
+  { kind: 'vertical', title: t('pathVertical') },
+  { kind: 'horizontal', title: t('pathHorizontal') },
+].map((g) => ({ ...g, items: all.filter((p) => p.kind === g.kind) }));
+const entityIds = (p: (typeof all)[number]) => p.steps.flatMap((s) => ('entity' in s ? [s.entity] : []));
+---
+
+<BaseLayout lang={lang} title={t('pathsTitle')} description={t('pathsBody')} tab="atlas">
+  <Breadcrumb lang={lang} items={[{ label: tAtlas(lang, 'title'), href: langPath(lang, 'atlas/') }, { label: t('pathsTitle') }]} />
+  <header class="page-head">
+    <h1>{t('pathsTitle')}</h1>
+    <p class="lede">{t('pathsIntro')}</p>
+  </header>
+  {all.length === 0 && <p class="empty-state">{t('emptyTool')}</p>}
+  {
+    groups
+      .filter((g) => g.items.length > 0)
+      .map((g) => (
+        <section aria-labelledby={`paths-${g.kind}`}>
+          <h2 id={`paths-${g.kind}`}>{g.title}</h2>
+          <ul class="grid">
+            {g.items.map((p) => (
+              <li>
+                <div class="card path-card">
+                  <h3>
+                    <a href={langPath(lang, `paths/${p.id}/`)}>{p.title[lang]}</a>
+                  </h3>
+                  <p class="small muted">{p.description[lang]}</p>
+                  <p class="small">{fmt(t('pathSteps'), { n: p.steps.length })}</p>
+                  <PathProgress lang={lang} entities={entityIds(p)} />
+                </div>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+  }
+</BaseLayout>

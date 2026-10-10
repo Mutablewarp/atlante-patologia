@@ -1,0 +1,480 @@
+/* Horizontal learning layer: tables, glossary popovers, image viewer, recall, module tree, tools. */
+
+/* ── Scrollable comparison tables (pattern matrix, compare) ─────────── */
+.table-scroll {
+  overflow-x: auto;
+  max-width: 100%;
+  margin-bottom: var(--space-5);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-m);
+  background: var(--surface);
+}
+.table-scroll:focus-visible {
+  outline-offset: 2px;
+}
+.matrix {
+  width: max-content;
+  min-width: 100%;
+  margin: 0;
+}
+.matrix caption {
+  caption-side: top;
+  text-align: left;
+  padding: var(--space-3);
+  font-weight: 700;
+  color: var(--ink-muted);
+}
+.matrix > * > tr > * {
+  min-width: 11rem;
+  max-width: 22rem;
+}
+.matrix > thead th {
+  background: var(--surface-2);
+}
+/* Sticky first column: the row label stays visible while scrolling sideways */
+.matrix > * > tr > :first-child {
+  position: sticky;
+  left: 0;
+  z-index: 1;
+  min-width: 9rem;
+  background: var(--surface);
+  box-shadow: 1px 0 0 var(--rule);
+}
+.matrix > thead > tr > :first-child {
+  background: var(--surface-2);
+}
+@media (max-width: 599px) {
+  .matrix > * > tr > * {
+    min-width: 9rem;
+  }
+  .matrix > * > tr > :first-child {
+    min-width: 6.5rem;
+    max-width: 8rem;
+  }
+}
+.matrix-thumb {
+  display: inline-flex;
+  align-items: center;
+  min-height: 1.5rem;
+  margin-right: var(--space-2);
+}
+.compare-table td :is(p, ul, ol):last-child {
+  margin-bottom: 0;
+}
+.compare-table td table {
+  display: block;
+  overflow-x: auto;
+  font-size: inherit;
+}
+
+/* ── Cross-links and glossary popovers ──────────────────────────────── */
+.xref-planned .badge {
+  margin-left: 0.2em;
+}
+.gloss-term {
+  display: inline;
+  min-height: 1.5rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-decoration: underline dotted var(--hema) 0.12em;
+  text-underline-offset: 0.2em;
+  cursor: help;
+}
+.gloss-term:hover {
+  color: var(--hema);
+}
+.gloss-pop {
+  position: fixed;
+  inset: auto;
+  max-width: min(22rem, calc(100vw - 1rem));
+  margin: 0;
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-s);
+  background: var(--surface);
+  color: var(--ink);
+  box-shadow: var(--shadow);
+  font-size: var(--step--1);
+  line-height: 1.5;
+}
+/* Without positioning JS (or before it runs) the popover sits mid-screen. */
+.gloss-pop:popover-open:not([style]) {
+  inset: 0;
+  margin: auto;
+  height: fit-content;
+}
+.gloss-pop a {
+  display: inline-block;
+  margin-top: var(--space-1);
+}
+
+/* ── Image viewer ───────────────────────────────────────────────────── */
+.viewer-figure {
+  margin: var(--space-5) 0;
+  max-width: 46rem;
+}
+.viewer-stage {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-s);
+  background: var(--surface-2);
+  touch-action: pan-x pan-y;
+}
+.viewer-stage[data-zoomed='true'] {
+  touch-action: none;
+  cursor: grab;
+}
+.viewer-canvas {
+  position: relative;
+  transform-origin: 0 0;
+}
+.viewer-canvas img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.viewer-shapes {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: var(--eosin);
+  stroke-width: 0.4%;
+  pointer-events: none;
+}
+.viewer-label {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 0.1em 0.45em;
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
+  color: var(--ink);
+  font-size: var(--step--1);
+  font-weight: 700;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.viewer-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: var(--space-2) 0;
+}
+.viewer-legend {
+  margin: var(--space-2) 0;
+  padding-left: var(--space-5);
+}
+.viewer-figure figcaption p {
+  margin: 0 0 var(--space-1);
+}
+
+/* ── Entity page: recall first, scroll-spy, module tree ─────────────── */
+.recall {
+  display: none;
+  margin: 0 0 var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  border-left: 4px solid var(--hema);
+  border-radius: var(--radius-s);
+  background: var(--hema-soft);
+  max-width: var(--measure);
+}
+.recall p {
+  margin-bottom: var(--space-2);
+}
+[data-recall='on'] .entity-section:not([data-revealed]) .recall {
+  display: block;
+}
+[data-recall='on'] .entity-section:not([data-revealed]) .section-body {
+  display: none;
+}
+.section-toc a[aria-current] {
+  font-weight: 700;
+  color: var(--hema-ink);
+  border-color: var(--hema);
+}
+@media (min-width: 1024px) {
+  .section-toc a[aria-current]::before {
+    content: '';
+    position: absolute;
+    left: calc(-1 * var(--space-4) - 2px);
+    width: 2px;
+    height: 1.4rem;
+    background: var(--eosin);
+  }
+  .section-toc li {
+    position: relative;
+  }
+}
+
+.module-tree {
+  display: none;
+}
+@media (min-width: 1024px) {
+  .module-tree {
+    display: block;
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    margin: var(--space-4) 0 var(--space-3);
+    padding: var(--space-3) var(--space-1) 0;
+    border-top: 1px solid var(--rule);
+    font-size: var(--step--1);
+  }
+  :root[data-sidebar='collapsed'] .module-tree {
+    display: none;
+  }
+  .module-tree-title {
+    margin: 0 0 var(--space-2);
+    font-weight: 700;
+    color: var(--ink-muted);
+  }
+  .module-tree ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .module-tree ul ul {
+    padding-left: var(--space-3);
+  }
+  .module-tree summary {
+    min-height: 1.75rem;
+    cursor: pointer;
+  }
+  .module-tree a {
+    display: block;
+    padding: 0.2rem var(--space-2);
+    border-radius: var(--radius-s);
+    color: var(--ink);
+    text-decoration: none;
+  }
+  .module-tree a:hover {
+    background: var(--surface-2);
+  }
+  .module-tree a[aria-current] {
+    background: var(--hema-soft);
+    color: var(--hema-ink);
+    font-weight: 700;
+  }
+  .module-tree .here {
+    display: block;
+    font-size: 0.8em;
+    font-weight: 600;
+    color: var(--eosin-ink);
+  }
+}
+
+/* ── Tool pages ─────────────────────────────────────────────────────── */
+.tool-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2) var(--space-3);
+  margin-bottom: var(--space-3);
+}
+.field {
+  min-height: 2.75rem;
+  max-width: 100%;
+  padding: 0 var(--space-3);
+  border: 1.5px solid var(--border-strong);
+  border-radius: var(--radius-s);
+  background: var(--surface);
+}
+.chosen {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  list-style: none;
+  padding: 0;
+}
+.chosen li {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding-left: var(--space-3);
+  border: 1px solid var(--rule);
+  border-radius: 999px;
+  background: var(--surface);
+}
+
+.diff {
+  display: grid;
+  gap: var(--space-5);
+}
+@media (min-width: 900px) {
+  .diff {
+    grid-template-columns: minmax(16rem, 22rem) minmax(0, 1fr);
+    align-items: start;
+  }
+}
+.diff-form h2,
+.diff-results h2 {
+  margin-top: 0;
+}
+.facet {
+  margin: 0 0 var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-m);
+  background: var(--surface);
+}
+.facet legend {
+  padding: 0 var(--space-2);
+  font-weight: 700;
+}
+.facet ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.facet label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 2rem;
+  cursor: pointer;
+}
+.facet input {
+  width: 1.15rem;
+  height: 1.15rem;
+  accent-color: var(--hema);
+}
+.diff-count {
+  font-weight: 700;
+}
+.diff-list {
+  padding-left: var(--space-5);
+}
+.diff-list > li {
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--rule);
+}
+.diff-name {
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+}
+.diff-list p {
+  margin: var(--space-1) 0;
+}
+
+.map .segmented {
+  margin-bottom: var(--space-4);
+}
+.map-graph {
+  margin: 0 0 var(--space-5);
+}
+.map-graph > svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--rule);
+  border-radius: var(--radius-m);
+  background: var(--surface);
+  color: var(--ink-muted);
+}
+.map-graph .node circle {
+  stroke: var(--surface);
+  stroke-width: 2;
+}
+.map-graph .node-core {
+  fill: var(--hema);
+}
+.map-graph .node-extended {
+  fill: var(--eosin);
+}
+.map-graph .node text {
+  fill: var(--ink);
+  font-size: 15px;
+  font-weight: 600;
+  paint-order: stroke;
+  stroke: var(--surface);
+  stroke-width: 4px;
+}
+.map-graph .node:focus-visible circle,
+.map-graph .node:hover circle {
+  r: 13;
+  stroke: var(--focus);
+  stroke-width: 3;
+}
+.edge {
+  stroke: var(--ink-muted);
+  stroke-width: 2;
+}
+.edge-differentialOf {
+  stroke: var(--eosin);
+  stroke-dasharray: 8 5;
+}
+.edge-sameLesionOtherOrgan {
+  stroke: var(--hema);
+}
+.edge-sameMarker {
+  stroke-dasharray: 2 4;
+}
+.edge-sharesMechanism {
+  stroke: var(--hema);
+  stroke-dasharray: 10 4 2 4;
+}
+.edge-causes,
+.edge-complicationOf {
+  stroke: var(--ink);
+}
+.edge-mimics {
+  stroke: var(--eosin);
+}
+.edge-prerequisiteOf {
+  stroke-dasharray: 4 3;
+}
+.small-heading {
+  margin: var(--space-3) 0 var(--space-2);
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+}
+.map-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-4);
+  list-style: none;
+  padding: 0;
+  font-size: var(--step--1);
+}
+.map-legend li {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--ink);
+}
+.map-legend svg {
+  color: var(--ink-muted);
+}
+.map-list ul ul {
+  margin: var(--space-1) 0 var(--space-3);
+  font-size: var(--step--1);
+}
+
+.path-card h3 {
+  margin-top: 0;
+}
+.path-steps > li {
+  padding: var(--space-2) 0;
+}
+.path-steps p {
+  margin: var(--space-1) 0 0;
+}
+.path-progress {
+  display: block;
+  margin: var(--space-2) 0;
+}
+
+.az-gloss {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-1) var(--space-2);
+}
+.az-gloss dfn {
+  font-style: normal;
+  font-weight: 700;
+}

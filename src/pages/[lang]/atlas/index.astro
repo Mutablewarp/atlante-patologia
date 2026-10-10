@@ -5,7 +5,8 @@ import { tCommon } from '../../../i18n/common.ts';
 import { tAtlas } from '../../../i18n/pages.ts';
 import { LENSES } from '../../../lib/schema.ts';
 import { langPath } from '../../../lib/url.ts';
-import { siteData } from '../../../lib/content.ts';
+import { siteData, patterns } from '../../../lib/content.ts';
+import { tHz } from '../../../i18n/horizontal.ts';
 
 export const getStaticPaths = langPaths;
 
@@ -18,6 +19,12 @@ const lenses = LENSES.map((lens) => {
   const used = [...counts.values()].reduce((n, ids) => n + ids.length, 0);
   return { lens, label: tax?.label[lang] ?? lens, terms: tax?.terms ?? [], used };
 });
+const pats = await patterns();
+const tools = (['compare', 'diff', 'map', 'paths'] as const).map((k) => ({
+  href: langPath(lang, { compare: 'compare/', diff: 'differential/', map: 'map/', paths: 'paths/' }[k]),
+  title: tHz(lang, `${k}Title`),
+  body: tHz(lang, `${k}Body`),
+}));
 const sections = (['I', 'II', 'III'] as const).map((s) => ({
   id: s,
   label: tCommon(lang, `section${s}`),
@@ -57,6 +64,38 @@ const sections = (['I', 'II', 'III'] as const).map((s) => ({
         </a>
       </li>
     </ul>
+  </section>
+
+  <section aria-labelledby="tools-title">
+    <h2 id="tools-title">{tHz(lang, 'toolsTitle')}</h2>
+    <ul class="grid lens-grid">
+      {
+        tools.map((x) => (
+          <li>
+            <a class="card link-card" href={x.href}>
+              <h3>{x.title} →</h3>
+              <p class="small muted">{x.body}</p>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+    {
+      pats.length > 0 && (
+        <>
+          <h3>{tHz(lang, 'patternsTitle')}</h3>
+          <p class="muted">{tHz(lang, 'patternsBody')}</p>
+          <ul class="term-list">
+            {pats.map((p) => (
+              <li>
+                <a href={langPath(lang, `pattern/${p.id}/`)}>{p.names[lang]}</a>
+                <span class="small muted">{p.summary[lang]}</span>
+              </li>
+            ))}
+          </ul>
+        </>
+      )
+    }
   </section>
 
   <section aria-labelledby="modules-title">

@@ -1,0 +1,127 @@
+---
+/**
+ * Teaching image with caption, alt and credit line from the image YAML
+ * (CONTENT_SCHEMA §5). <ap-image-viewer> (scripts/image-viewer.ts) adds
+ * zoom/pan/pinch, keyboard zoom, label toggle and progressive reveal.
+ * Without JS: the image, every label and the legend are visible.
+ */
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import type { Lang } from '../../i18n/index.ts';
+import { tHz } from '../../i18n/horizontal.ts';
+import type { imageSchema } from '../../lib/schema.ts';
+import type { z } from 'astro/zod';
+import { readFile } from 'node:fs/promises';
+import { PREVIEW_DRAFTS } from '../../lib/content.ts';
+
+interface Props {
+  lang: Lang;
+  image: z.infer<typeof imageSchema> | undefined;
+  /** Shown when the image YAML is missing. */
+  id: string;
+}
+const { lang, image, id } = Astro.props;
+const t = (k: Parameters<typeof tHz>[1]) => tHz(lang, k);
+// `_`-prefixed files are fixtures: kept out of the bundle so they never reach a production build.
+const files = import.meta.glob<{ default: ImageMetadata }>(['../../assets/images/**/*.{png,jpg,jpeg,webp,avif,gif}', '!**/_*']);
+const loader = image ? files[`../../assets/images/${image.file}`] : undefined;
+const meta = loader ? (await loader()).default : undefined;
+// shortcut: fixture PNGs are inlined as data: URIs (PREVIEW_DRAFTS only), not optimized by astro:assets.
+const fixture =
+  !meta && image?.file.startsWith('_') && PREVIEW_DRAFTS
+    ? await readFile(`${process.cwd()}/src/assets/images/${image.file}`)
+    : undefined;
+const W = meta?.width ?? fixture?.readUInt32BE(16) ?? 1;
+const H = meta?.height ?? fixture?.readUInt32BE(20) ?? 1;
+const notes = [...(image?.annotations ?? [])].sort((a, b) => a.revealOrder - b.revealOrder);
+/** Label anchor point in %, from normalized shape coordinates. */
+const anchor = (s: (typeof notes)[number]['shape']) => {
+  const c = s.coords;
+  if (s.type === 'circle') return { x: c[0]! * 100, y: c[1]! * 100 };
+  if (s.type === 'rect') return { x: (c[0]! + c[2]! / 2) * 100, y: (c[1]! + c[3]! / 2) * 100 };
+  const xs = c.filter((_, i) => i % 2 === 0);
+  const ys = c.filter((_, i) => i % 2 === 1);
+  return { x: (xs.reduce((a, b) => a + b, 0) / xs.length) * 100, y: (ys.reduce((a, b) => a + b, 0) / ys.length) * 100 };
+};
+const helpId = `viewer-help-${id}`;
+---
+
+{
+  image && (meta || fixture) ? (
+    <figure class="viewer-figure" id={`fig-${id}`}>
+      <ap-image-viewer data-total={notes.length}>
+        <div class="viewer-stage" tabindex="0" role="group" aria-label={image.alt[lang]} aria-describedby={helpId}>
+          <div class="viewer-canvas">
+            {meta ? (
+              <Image src={meta} alt={image.alt[lang]} widths={[480, 800, Math.min(1600, W)]} sizes="(min-width: 1024px) 46rem, 100vw" />
+            ) : (
+              <img src={`data:image/png;base64,${fixture!.toString('base64')}`} alt={image.alt[lang]} width={W} height={H} />
+            )}
+            {notes.length > 0 && (
+              <svg class="viewer-shapes" viewBox={`0 0 ${W} ${H}`} aria-hidden="true">
+                {notes.map((n) => {
+                  const c = n.shape.coords;
+                  return n.shape.type === 'circle' ? (
+                    <circle data-order={n.revealOrder} cx={c[0]! * W} cy={c[1]! * H} r={c[2]! * W} />
+                  ) : n.shape.type === 'rect' ? (
+                    <rect data-order={n.revealOrder} x={c[0]! * W} y={c[1]! * H} width={c[2]! * W} height={c[3]! * H} />
+                  ) : (
+                    <polygon
+                      data-order={n.revealOrder}
+                      points={c.map((v, i) => (i % 2 === 0 ? v * W : v * H)).join(' ')}
+                    />
+                  );
+                })}
+              </svg>
+            )}
+            {notes.map((n) => {
+              const p = anchor(n.shape);
+              return (
+                <span class="viewer-label" data-order={n.revealOrder} style={`left:${p.x}%;top:${p.y}%`} aria-hidden="true">
+                  {n.label[lang]}
+                </span>
+              );
+            })}
+          </div>
+        </div>
+        <p id={helpId} class="visually-hidden">{t('viewerHelp')}</p>
+        <div class="viewer-tools js-only" role="toolbar" aria-label={t('viewerHelp')}>
+          <button type="button" class="btn btn-small" data-zoom="out" aria-label={t('zoomOut')}>−</button>
+          <button type="button" class="btn btn-small" data-zoom="in" aria-label={t('zoomIn')}>+</button>
+          <button type="button" class="btn btn-small" data-zoom="reset">{t('zoomReset')}</button>
+          {notes.length > 0 && (
+            <>
+              <button type="button" class="btn btn-small" data-label-toggle aria-pressed="true">{t('labels')}</button>
+              <button type="button" class="btn btn-small" data-reveal>{t('revealNext')}</button>
+            </>
+          )}
+        </div>
+        {notes.length > 0 && (
+          <ol class="viewer-legend small" aria-label={t('labelList')}>
+            {notes.map((n) => (
+              <li data-order={n.revealOrder}>{n.label[lang]}</li>
+            ))}
+          </ol>
+        )}
+        <p class="visually-hidden" role="status" data-viewer-status />
+      </ap-image-viewer>
+      <figcaption>
+        <p>{image.caption[lang]}</p>
+        {(image.stain || image.magnification) && (
+          <p class="small muted">
+            {image.stain && `${t('stain')}: ${image.stain}`}
+            {image.stain && image.magnification && ' · '}
+            {image.magnification && `${t('magnification')}: ${image.magnification}`}
+          </p>
+        )}
+        <p class="small muted credit">
+          {t('credit')}: {image.attributionText} ·{' '}
+          <a href={image.licenseUrl}>{image.license}</a>
+          {image.modifications !== 'none' && ` · ${image.modifications}`}
+        </p>
+      </figcaption>
+    </figure>
+  ) : (
+    <p class="empty-state small" id={`fig-${id}`}>{t('imageMissing')}</p>
+  )
+}
