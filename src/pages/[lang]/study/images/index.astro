@@ -1,0 +1,49 @@
+---
+/**
+ * Image training. Pairs and look-alikes are computed here at build from
+ * meta.images (pairWith) and differentialOf relations between entities with images.
+ */
+import StudyPage from '../../../../components/study/StudyPage.astro';
+import ImageTraining, { type Pair, type LookAlike, type Img } from '../../../../islands/ImageTraining.tsx';
+import { langPaths, type Lang } from '../../../../i18n/index.ts';
+import { tS } from '../../../../i18n/study.ts';
+import { tNav } from '../../../../i18n/nav.ts';
+import { langPath } from '../../../../lib/url.ts';
+import { siteData, images } from '../../../../lib/content.ts';
+import { imageSrc, questions } from '../../../../lib/study.ts';
+
+export const getStaticPaths = langPaths;
+const lang = Astro.params.lang as Lang;
+const { entities, entityById } = await siteData();
+const meta = new Map((await images()).map((i) => [i.id, i]));
+async function img(id: string): Promise<Img | undefined> {
+  const m = meta.get(id);
+  const src = m && (await imageSrc(m.file));
+  return m && src ? { ...src, alt: m.alt[lang] } : undefined;
+}
+
+const pairs: Pair[] = [];
+const firstImage = new Map<string, Img>();
+for (const e of entities) {
+  for (const ref of e.images) {
+    const i = await img(ref.id);
+    if (i && !firstImage.has(e.id)) firstImage.set(e.id, i);
+    if (ref.role !== 'gross' || !ref.pairWith) continue;
+    const micro = await img(ref.pairWith);
+    if (i && micro) pairs.push({ entity: e.id, name: e.names[lang], gross: i, micro });
+  }
+}
+const lookalikes: LookAlike[] = [];
+for (const e of entities)
+  for (const r of e.relations) {
+    const other = entityById.get(r.target);
+    if (r.type !== 'differentialOf' || !other || !firstImage.has(e.id) || !firstImage.has(other.id)) continue;
+    for (const [x, y] of [[e, other], [other, e]] as const)
+      lookalikes.push({ entity: x.id, name: x.names[lang], image: firstImage.get(x.id)!, other: { entity: y.id, name: y.names[lang] } });
+  }
+const hasSpot = (await questions()).some((q) => q.kind === 'image-spot' && meta.has(q.image ?? ''));
+---
+
+<StudyPage lang={lang} tab="study" title={tS(lang, 'imagesTitle')} intro={tS(lang, 'imagesIntro')} parent={{ label: tNav(lang, 'study'), href: langPath(lang, 'study/') }}>
+  <ImageTraining client:load lang={lang} pairs={pairs} lookalikes={lookalikes} hasSpot={hasSpot} />
+</StudyPage>

@@ -1,0 +1,431 @@
+/* Study engine and personal layer. Uses the design tokens only. Correct/wrong
+   states always carry a ✓/✗ and text, never colour alone. */
+
+.btn:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.btn-primary kbd {
+  background: transparent;
+  color: inherit;
+  border-color: currentColor;
+}
+
+/* ── Tool shell ─────────────────────────────────────────────────────── */
+.study-tool {
+  display: grid;
+  gap: var(--space-5);
+  max-width: 48rem;
+}
+.tool-controls,
+.tool-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  align-items: end;
+}
+.tool-form {
+  flex-direction: column;
+  align-items: stretch;
+}
+.tool-controls label,
+.tool-form > label {
+  display: grid;
+  gap: var(--space-1);
+  font-weight: 600;
+}
+.tool-controls select,
+.tool-controls input,
+.tool-form select,
+.tool-form input:not([type='radio'], [type='checkbox']) {
+  min-height: 2.75rem;
+  padding: 0 var(--space-3);
+  border: 1.5px solid var(--border-strong);
+  border-radius: var(--radius-s);
+  background: var(--surface);
+  color: var(--ink);
+  font: inherit;
+  max-width: 100%;
+}
+.tool-form fieldset,
+.options {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: var(--space-2);
+}
+.tool-form legend,
+.options legend {
+  font-weight: 700;
+  margin-bottom: var(--space-2);
+}
+.radio,
+.checkbox {
+  display: flex;
+  gap: var(--space-3);
+  align-items: flex-start;
+  min-height: 2.75rem;
+  padding: var(--space-2) 0;
+  cursor: pointer;
+  font-weight: 400;
+}
+.radio input,
+.checkbox input {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-top: 0.15rem;
+  flex: none;
+  accent-color: var(--hema);
+}
+
+/* ── Flashcards ─────────────────────────────────────────────────────── */
+.flashcard {
+  display: grid;
+  gap: var(--space-4);
+}
+.flashcard h2 {
+  margin: 0;
+}
+.card-text {
+  font-size: var(--step-1);
+  line-height: 1.5;
+}
+.cloze-gap {
+  display: inline-block;
+  min-width: 4ch;
+  padding: 0 var(--space-2);
+  border-bottom: 2px solid var(--hema);
+  color: var(--hema);
+  font-weight: 700;
+}
+.card-text mark {
+  background: var(--hema-soft);
+  color: var(--hema-ink);
+  padding: 0 0.15em;
+  border-radius: 3px;
+}
+.answer {
+  border-top: 1px solid var(--rule);
+  padding-top: var(--space-4);
+}
+.answer:focus {
+  outline: none;
+}
+.rating {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr));
+  gap: var(--space-2);
+}
+.rating .btn {
+  flex-direction: column;
+  gap: 0;
+  min-height: 3.5rem;
+  border-radius: var(--radius-m);
+}
+.rate-again {
+  border-color: var(--eosin);
+}
+.rate-good,
+.rate-easy {
+  border-color: var(--hema);
+}
+
+/* Image occlusion */
+.occlusion {
+  margin: 0;
+}
+.occ-wrap {
+  position: relative;
+  display: inline-block;
+  max-width: 100%;
+}
+.occ-wrap img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--radius-s);
+}
+.occ-wrap svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+.occ-target {
+  fill: color-mix(in srgb, var(--eosin) 35%, transparent);
+  stroke: var(--eosin);
+  stroke-width: 3px;
+  vector-effect: non-scaling-stroke;
+}
+.occ-other {
+  fill: none;
+  stroke: var(--paper);
+  stroke-width: 1.5px;
+  stroke-dasharray: 4 3;
+  vector-effect: non-scaling-stroke;
+}
+
+/* ── Quiz and drills ────────────────────────────────────────────────── */
+.quiz-bar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-3);
+}
+.timer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  align-items: center;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+}
+.stem {
+  font-size: var(--step-1);
+  max-width: var(--measure);
+}
+.option {
+  border: 1.5px solid var(--rule);
+  border-radius: var(--radius-m);
+  padding: 0 var(--space-3);
+  background: var(--surface);
+}
+.option .why {
+  margin: 0 0 var(--space-3);
+}
+.is-correct {
+  border-color: var(--hema);
+  background: var(--hema-soft);
+  color: var(--hema-ink);
+}
+.is-wrong {
+  border-color: var(--eosin);
+  background: var(--eosin-soft);
+  color: var(--eosin-ink);
+}
+.verdict {
+  font-weight: 700;
+  background: none;
+}
+.verdict.is-correct,
+.verdict.is-wrong {
+  background: none;
+}
+.free-answer {
+  display: grid;
+  gap: var(--space-1);
+  margin: var(--space-3) 0;
+  font-weight: 600;
+}
+.free-answer textarea,
+.note-box textarea {
+  width: 100%;
+  font: inherit;
+  padding: var(--space-2);
+  border: 1.5px solid var(--border-strong);
+  border-radius: var(--radius-s);
+  background: var(--surface);
+  color: var(--ink);
+}
+.self-grade,
+.choice-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  align-items: center;
+}
+.results-list {
+  display: grid;
+  gap: var(--space-5);
+  padding-left: var(--space-5);
+}
+.image-choices {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 10rem), 1fr));
+  gap: var(--space-3);
+  padding: 0;
+  list-style: none;
+}
+.image-choice {
+  display: grid;
+  gap: var(--space-1);
+  width: 100%;
+  padding: var(--space-2);
+  border: 1.5px solid var(--border-strong);
+  border-radius: var(--radius-m);
+  background: var(--surface);
+  color: var(--ink);
+  cursor: pointer;
+}
+.image-choice img {
+  width: 100%;
+  height: auto;
+}
+.drill {
+  display: grid;
+  gap: var(--space-4);
+}
+.study-tool .segmented {
+  display: inline-flex;
+  flex-wrap: wrap;
+  border: 1.5px solid var(--border-strong);
+  border-radius: var(--radius-m);
+  overflow: hidden;
+  width: fit-content;
+  max-width: 100%;
+}
+.study-tool .segmented button {
+  min-height: 2.75rem;
+  padding: 0 var(--space-4);
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.study-tool .segmented button[aria-pressed='true'] {
+  background: var(--hema);
+  color: var(--on-hema);
+}
+
+/* ── Planner ────────────────────────────────────────────────────────── */
+.plan {
+  display: grid;
+  gap: var(--space-3);
+  padding: 0;
+  list-style: none;
+}
+.plan-title {
+  margin: 0 0 var(--space-2);
+  font-size: var(--step-0);
+}
+.plan-week ul {
+  margin: 0;
+}
+.plan-week .badge {
+  margin-left: var(--space-2);
+}
+.is-revision {
+  border-left: 4px solid var(--eosin);
+}
+
+/* ── Me ─────────────────────────────────────────────────────────────── */
+.me-dashboard {
+  display: grid;
+  gap: var(--space-5);
+}
+.stat h2 {
+  margin: 0;
+}
+.stat-value {
+  margin: var(--space-2) 0 0;
+  font-family: var(--font-display);
+  font-size: var(--step-3);
+  line-height: 1;
+}
+.table-scroll {
+  overflow-x: auto;
+}
+.personal-list {
+  display: grid;
+  gap: var(--space-3);
+  padding: 0;
+  list-style: none;
+  max-width: 48rem;
+}
+.personal-head {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  align-items: center;
+  margin-top: 0;
+  font-weight: 700;
+}
+.note-text {
+  white-space: pre-wrap;
+}
+.hub-status {
+  display: grid;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+.hub-due {
+  margin: 0;
+  font-weight: 700;
+}
+.mode-card h2 {
+  margin-top: 0;
+  font-size: var(--step-1);
+  color: var(--hema);
+}
+.resume-link {
+  display: grid;
+  gap: var(--space-1);
+  max-width: 32rem;
+  margin-bottom: var(--space-4);
+}
+.recent-list {
+  columns: 16rem;
+}
+.export-reminder {
+  margin-bottom: var(--space-5);
+}
+.reminder-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-bottom: 0;
+}
+ap-path-progress {
+  display: grid;
+  gap: var(--space-1);
+}
+ap-path-progress progress {
+  width: 100%;
+  accent-color: var(--hema);
+}
+
+/* ── Entity page ────────────────────────────────────────────────────── */
+.entity-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  align-items: flex-start;
+  margin: var(--space-3) 0;
+}
+/* Hidden (space kept) until the learner's data is loaded; stays hidden without IndexedDB. */
+.entity-actions:not([data-ready]) {
+  visibility: hidden;
+}
+.entity-actions [aria-pressed='true'] {
+  background: var(--hema-soft);
+  border-color: var(--hema);
+  color: var(--hema-ink);
+}
+.note-box summary {
+  list-style: none;
+  width: fit-content;
+}
+.note-box summary::-webkit-details-marker {
+  display: none;
+}
+.note-box[open] {
+  flex-basis: 100%;
+  display: grid;
+  gap: var(--space-2);
+  max-width: var(--measure);
+}
+.note-box[open] .btn {
+  width: fit-content;
+}
+.self-explain summary {
+  cursor: pointer;
+  font-weight: 700;
+  min-height: 2.75rem;
+  display: flex;
+  align-items: center;
+}

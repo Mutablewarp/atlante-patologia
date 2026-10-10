@@ -1,0 +1,15 @@
+---
+import StudyPage from '../../../../components/study/StudyPage.astro';
+import Review from '../../../../islands/Review.tsx';
+import { langPaths, type Lang } from '../../../../i18n/index.ts';
+import { tS } from '../../../../i18n/study.ts';
+import { tNav } from '../../../../i18n/nav.ts';
+import { langPath } from '../../../../lib/url.ts';
+
+export const getStaticPaths = langPaths;
+const lang = Astro.params.lang as Lang;
+---
+
+<StudyPage lang={lang} tab="study" title={tS(lang, 'reviewTitle')} intro={tS(lang, 'reviewIntro')} parent={{ label: tNav(lang, 'study'), href: langPath(lang, 'study/') }}>
+  <Review client:load lang={lang} />
+</StudyPage>

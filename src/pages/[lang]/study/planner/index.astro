@@ -1,0 +1,15 @@
+---
+import StudyPage from '../../../../components/study/StudyPage.astro';
+import Planner from '../../../../islands/Planner.tsx';
+import { langPaths, type Lang } from '../../../../i18n/index.ts';
+import { tS } from '../../../../i18n/study.ts';
+import { tNav } from '../../../../i18n/nav.ts';
+import { langPath } from '../../../../lib/url.ts';
+
+export const getStaticPaths = langPaths;
+const lang = Astro.params.lang as Lang;
+---
+
+<StudyPage lang={lang} tab="study" title={tS(lang, 'plannerTitle')} intro={tS(lang, 'plannerIntro')} parent={{ label: tNav(lang, 'study'), href: langPath(lang, 'study/') }}>
+  <Planner client:load lang={lang} />
+</StudyPage>

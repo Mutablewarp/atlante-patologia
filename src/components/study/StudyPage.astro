@@ -1,0 +1,30 @@
+---
+/** Shell for study and Me tool pages: layout, breadcrumb, heading, no-JS note, draft note. */
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Breadcrumb from '../nav/Breadcrumb.astro';
+import type { Lang } from '../../i18n/index.ts';
+import type { Tab } from '../../i18n/nav.ts';
+import { tS } from '../../i18n/study.ts';
+import { PREVIEW_DRAFTS } from '../../lib/content.ts';
+import '../../styles/study.css';
+
+interface Props {
+  lang: Lang;
+  tab: Tab;
+  title: string;
+  intro: string;
+  parent: { label: string; href: string };
+}
+const { lang, tab, title, intro, parent } = Astro.props;
+---
+
+<BaseLayout lang={lang} title={title} description={intro} tab={tab} searchable={false}>
+  <Breadcrumb lang={lang} items={[parent, { label: title }]} />
+  <header class="page-head">
+    <h1>{title}</h1>
+    <p class="lede">{intro}</p>
+  </header>
+  {PREVIEW_DRAFTS && <p class="notice notice-caution">{tS(lang, 'draftNote')}</p>}
+  <noscript><p class="notice">{tS(lang, 'noJs')}</p></noscript>
+  <slot />
+</BaseLayout>
