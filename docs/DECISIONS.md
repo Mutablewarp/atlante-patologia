@@ -70,4 +70,16 @@ Format: ID — decision — reason — status. "Deviation" marks a departure fro
 | D035 | Pagefind is used through its JS API (`pagefind/pagefind.js`) with our own small search UI instead of the bundled UI | Full control of i18n strings, base path (`baseUrl`) and accessibility (labelled form, live status region) | accepted |
 | D036 | Lens term pages are generated only for terms with ≥ 1 visible entity; lens index pages always exist and show counts with an honest empty state | No empty pages, no dead links | accepted |
 | D037 | Empty collection directories (patterns, questions, images, glossary, paths) are not created; Astro logs a warning and the build passes | Avoids placeholder files; agents create the folder with the first entry | accepted |
-| D038 | `[[id]]` cross-links inside Markdown bodies are **not yet resolved** | Needs a processor-independent resolver (planned with the content validators) | open |
+| D038 | `[[id]]` cross-links inside Markdown bodies are resolved on the **rendered HTML** (`src/lib/crosslinks.ts`, like D030): `[[id]]` links a visible entity, otherwise shows the name + a "planned" badge; `[[g:id]]` becomes a glossary button with a native popover | Processor-independent and unit-tested; unknown ids never break the build (content validators own that check) | resolved (horizontal layer) |
+
+## Horizontal learning layer (agent, 2026-10-10)
+
+| ID | Decision | Reason | Status |
+|---|---|---|---|
+| H01 | Client tools read `/{lang}/data/index.json` (entities, patterns, glossary, lens labels, pages); Compare also reads `/{lang}/data/quick.json` (quick-section HTML) | One small static index per language; the heavier quick text loads only on Compare | accepted |
+| H02 | Concept map is laid out **at build time** (deterministic force layout in `src/lib/graph.ts`) and shipped as static SVG with links | Zero runtime dependency, zero motion, works without JS; the list view is the default on narrow screens and with reduced motion | accepted |
+| H03 | Glossary popovers use the native Popover API (`popovertarget`): tap, Enter/Space and Escape work without JS; `scripts/glossary.ts` only adds hover and positioning | Baseline already required by D031 (Safari ≥ 17, Chrome ≥ 114, Firefox ≥ 125) | accepted |
+| H04 | Glossary, path and image files whose name starts with `_` are fixtures, visible only with `PREVIEW_DRAFTS=1` (these collections have no `status`); `_`-prefixed image files are excluded from the asset glob and inlined only in preview | Keeps fixtures out of production `dist/` | accepted |
+| H05 | "Try to recall first" is an optional, remembered reading mode (toolbar toggle): each section shows a generic localized prompt and the section is revealed on demand | Avoids hiding content from readers who did not ask for retrieval practice | accepted |
+| H06 | `?via=lens:term` context is server-rendered as `<template>`s (breadcrumb + prev/next per lens term of the entity) and swapped in by a tiny script; canonical unchanged | No client-side data fetch; strings stay in the i18n modules | accepted |
+| H07 | `<ap-path-progress entities="a b c">` receives **space-separated** entity ids (patterns excluded); fallback text stays visible until the element upgrades | Token-list convention of HTML attributes | accepted — align with the study layer |
