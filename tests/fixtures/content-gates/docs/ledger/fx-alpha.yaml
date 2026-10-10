@@ -1,0 +1,19 @@
+# SYNTHETIC TEST FIXTURE for tests/content/fixtures.test.ts. Placeholder text, no medical claims.
+entity: fx-alpha
+claims:
+  - claimId: fx-alpha-c001
+    section: definition
+    statement: "Placeholder statement."
+    sourceRef: { source: fx-book, chapter: "1", pages: "1" }
+    status: verified
+    verifiedBy: agent
+    verifier: fixture
+    date: 2026-10-10
+  - claimId: fx-alpha-c002
+    section: definition
+    statement: "Placeholder statement."
+    sourceRef: { source: fx-book, chapter: "1", pages: "1" }
+    status: verified
+    verifiedBy: agent
+    verifier: fixture
+    date: 2026-10-10

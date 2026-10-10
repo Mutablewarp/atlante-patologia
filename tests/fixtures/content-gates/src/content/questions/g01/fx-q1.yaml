@@ -1,0 +1,18 @@
+# SYNTHETIC TEST FIXTURE for tests/content/fixtures.test.ts. Placeholder text, no medical claims.
+id: fx-q1
+module: g01
+entities: [fx-alpha]
+kind: image-spot
+difficulty: 1
+stem: { it: "Domanda segnaposto?", en: "Placeholder question?" }
+image: fx-img
+options:
+  - { id: a, text: { it: "A", en: "A" }, correct: true, why: { it: "Perché sì.", en: "Because." } }
+  - { id: b, text: { it: "B", en: "B" }, correct: false, why: { it: "No.", en: "No." } }
+  - { id: c, text: { it: "C", en: "C" }, correct: false, why: { it: "No.", en: "No." } }
+  - { id: d, text: { it: "D", en: "D" }, correct: false, why: { it: "No.", en: "No." } }
+backLink: { entity: fx-alpha, section: micro }
+claims: [fx-alpha-c001]
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-10-10
+status: published

@@ -1,0 +1,11 @@
+# SYNTHETIC TEST FIXTURE for tests/content/fixtures.test.ts. Placeholder text, no medical claims.
+- id: fx-book
+  title: "Placeholder Book"
+  year: 2020
+  kind: textbook
+  existsVerified: { via: publisher, date: 2026-10-10 }
+- id: fx-article
+  title: "Placeholder Article"
+  year: 2021
+  kind: article
+  existsVerified: { via: crossref, date: 2026-10-10 }

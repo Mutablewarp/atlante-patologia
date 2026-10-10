@@ -1,0 +1,15 @@
+# SYNTHETIC TEST FIXTURE for tests/content/fixtures.test.ts. Placeholder text, no medical claims.
+id: fx-img
+file: fx/fx-img.svg
+kind: diagram
+sourceUrl: "https://example.org/fx-img"
+author: "Fixture Author"
+license: CC-BY-4.0
+licenseUrl: "https://creativecommons.org/licenses/by/4.0/"
+retrievedAt: 2026-10-10
+modifications: none
+attributionText: "Fixture Author, CC BY 4.0"
+patientIdentifiable: false
+verifiedBy: { who: agent, name: "fixture", date: 2026-10-10 }
+caption: { it: "Didascalia.", en: "Caption." }
+alt: { it: "Quadrato grigio.", en: "Grey square." }

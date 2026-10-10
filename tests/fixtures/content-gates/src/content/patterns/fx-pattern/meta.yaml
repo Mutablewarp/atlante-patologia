@@ -1,0 +1,21 @@
+# SYNTHETIC TEST FIXTURE for tests/content/fixtures.test.ts. Placeholder text, no medical claims.
+id: fx-pattern
+names: { it: "Schema di prova", en: "Test pattern" }
+summary: { it: "Schema segnaposto.", en: "Placeholder pattern." }
+process: fx-process
+matrix:
+  columns:
+    - { it: "Voce", en: "Entry" }
+    - { it: "Aspetto", en: "Look" }
+  rows:
+    - entity: fx-alpha
+      cells:
+        - { it: "segnaposto", en: "placeholder" }
+images:
+  - { id: fx-img, entity: fx-alpha }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - { source: fx-book }
+lastUpdated: 2026-10-10
+status: published

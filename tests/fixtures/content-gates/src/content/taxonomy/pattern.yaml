@@ -1,0 +1,7 @@
+# SYNTHETIC TEST FIXTURE for tests/content/fixtures.test.ts. Placeholder text, no medical claims.
+lens: pattern
+label: { it: "Lente pattern", en: "Lens pattern" }
+terms:
+  - id: fx-pattern
+    label: { it: "Termine pattern", en: "Term pattern" }
+    order: 1

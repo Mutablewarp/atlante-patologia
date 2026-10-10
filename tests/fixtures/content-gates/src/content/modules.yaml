@@ -1,0 +1,9 @@
+# SYNTHETIC TEST FIXTURE for tests/content/fixtures.test.ts. Placeholder text, no medical claims.
+- id: g01
+  section: I
+  label: { it: "Modulo di prova", en: "Test module" }
+  order: 1
+  status: published
+  planned:
+    - id: fx-planned
+      names: { it: "Voce pianificata", en: "Planned entry" }

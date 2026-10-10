@@ -1,0 +1,31 @@
+# SYNTHETIC TEST FIXTURE for tests/content/fixtures.test.ts. Placeholder text, no medical claims.
+id: fx-alpha
+module: g01
+tier: core
+kind: concept
+names:
+  it: "Voce alfa"
+  en: "Alpha entry"
+  synonyms: { it: [], en: [] }
+summary: { it: "Scheda di prova.", en: "Test card." }
+lenses:
+  system: [fx-system]
+  process: [fx-process]
+  group: [fx-group]
+learningObjectives:
+  - { it: "Obiettivo segnaposto.", en: "Placeholder objective." }
+relations:
+  - { type: causes, target: fx-planned }
+quickCheck:
+  - { id: q1, q: { it: "D1?", en: "Q1?" }, a: { it: "R1.", en: "A1." }, kind: short }
+  - { id: q2, q: { it: "D2?", en: "Q2?" }, a: { it: "R2.", en: "A2." }, kind: short }
+  - { id: q3, q: { it: "D3?", en: "Q3?" }, a: { it: "R3.", en: "A3." }, kind: free }
+images:
+  - { id: fx-img, role: diagram }
+reviewStatus: expert-reviewed
+reviewedBy: { name: "Test Reviewer", date: 2026-10-10 }
+editionDependent: false
+sources:
+  - { source: fx-book, chapter: "1" }
+lastUpdated: 2026-10-10
+status: published
