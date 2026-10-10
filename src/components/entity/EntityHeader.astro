@@ -6,6 +6,7 @@ import { tEntity } from '../../i18n/pages.ts';
 import { LENSES } from '../../lib/schema.ts';
 import { langPath } from '../../lib/url.ts';
 import type { SiteData } from '../../lib/content.ts';
+import { tHz } from '../../i18n/horizontal.ts';
 
 interface Props {
   lang: Lang;
@@ -75,6 +76,8 @@ const synonyms = [...n.synonyms[lang], ...n.synonyms[other]];
     <button type="button" class="btn btn-small" data-expand-all data-label-expand={t('expandAll')} data-label-collapse={t('collapseAll')}>
       {t('collapseAll')}
     </button>
+    <button type="button" class="btn btn-small" data-recall-toggle aria-pressed="false">{tHz(lang, 'recallToggle')}</button>
+    <a class="btn btn-small" href={langPath(lang, `compare/?ids=${entity.id}`)}>{tHz(lang, 'compareWith')}</a>
     <button type="button" class="btn btn-small" data-print>{t('print')}</button>
   </div>
 </header>

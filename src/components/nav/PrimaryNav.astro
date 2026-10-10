@@ -3,6 +3,7 @@
  * The five destinations. One <nav>, laid out by CSS as bottom tab bar (<600px),
  * navigation rail (600–1023px) or collapsible sidebar (>=1024px).
  * data-tab / data-root feed the per-tab back stack in src/scripts/shell.ts.
+ * The default slot holds contextual sidebar content (desktop only), e.g. the module tree.
  */
 import type { Lang } from '../../i18n/index.ts';
 import { TABS, TAB_ROOT, tNav, type Tab } from '../../i18n/nav.ts';
@@ -43,6 +44,7 @@ const { lang, current } = Astro.props;
       ))
     }
   </ul>
+  <slot />
   <button
     type="button"
     class="icon-btn nav-collapse js-only"

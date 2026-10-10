@@ -7,6 +7,11 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Breadcrumb from '../../../components/nav/Breadcrumb.astro';
 import EntityHeader from '../../../components/entity/EntityHeader.astro';
 import RelatedPanel from '../../../components/entity/RelatedPanel.astro';
+import ImageViewer from '../../../components/horizontal/ImageViewer.astro';
+import ModuleTree from '../../../components/horizontal/ModuleTree.astro';
+import { tHz } from '../../../i18n/horizontal.ts';
+import { LENSES } from '../../../lib/schema.ts';
+import { withCrossLinks, imageById, patternsForEntity, SECTION_FOR_ROLE } from '../../../lib/horizontal.ts';
 import { LANGS, fmt, type Lang } from '../../../i18n/index.ts';
 import { tEntity, tAtlas } from '../../../i18n/pages.ts';
 import { SECTIONS, QUICK_CHECK, PRINT_SECTIONS } from '../../../i18n/sections.ts';
@@ -15,6 +20,7 @@ import { siteData, entityBody, sources as getSources } from '../../../lib/conten
 import { splitSections } from '../../../lib/sections.ts';
 import { primaryTerm, prevNext } from '../../../lib/lenses.ts';
 import '../../../styles/entity.css';
+import '../../../styles/horizontal.css';
 
 export async function getStaticPaths() {
   const { entities } = await siteData();
@@ -27,7 +33,7 @@ const t = (k: Parameters<typeof tEntity>[1]) => tEntity(lang, k);
 const data = await siteData();
 const entity = data.entityById.get(id)!;
 const body = await entityBody(id, lang);
-const split = splitSections(body?.rendered?.html ?? '');
+const split = splitSections(await withCrossLinks(body?.rendered?.html ?? '', lang));
 if (split.unknown.length) throw new Error(`${id}/${lang}.md: non-canonical H2 titles: ${split.unknown.join(' | ')}`);
 
 const primary = primaryTerm(entity);
@@ -50,10 +56,45 @@ const crumbs = [
   { label: entity.names[lang] },
 ];
 const toc = [...SECTIONS, QUICK_CHECK];
+const imgs = await imageById();
+const imagesIn = (section: string) => entity.images.filter((i) => SECTION_FOR_ROLE[i.role] === section);
+const entityPatterns = await patternsForEntity(id);
+
+// Lens context (?via=lens:term): breadcrumb + prev/next for every lens term of this entity, swapped in by lens-context.ts.
+const contexts = LENSES.flatMap((lens) =>
+  entity.lenses[lens].map((term) => {
+    const tax = data.taxonomy.get(lens);
+    const ids = data.membership.get(lens)?.get(term) ?? [];
+    return {
+      via: `${lens}:${term}`,
+      lens,
+      term,
+      lensLabel: tax?.label[lang] ?? lens,
+      termLabel: tax?.terms.find((x) => x.id === term)?.label[lang] ?? term,
+      ...prevNext(ids, id),
+    };
+  }),
+);
 ---
 
 <BaseLayout lang={lang} title={entity.names[lang]} description={entity.summary[lang]} tab="atlas">
-  <Breadcrumb lang={lang} items={crumbs} />
+  <Fragment slot="sidebar"><ModuleTree lang={lang} data={data} current={id} /></Fragment>
+  <div data-lens-crumb><Breadcrumb lang={lang} items={crumbs} /></div>
+  {
+    contexts.map((c) => (
+      <template data-via-crumb={c.via} data-pagefind-ignore>
+        <Breadcrumb
+          lang={lang}
+          items={[
+            { label: tAtlas(lang, 'title'), href: langPath(lang, 'atlas/') },
+            { label: c.lensLabel, href: langPath(lang, `atlas/${c.lens}/`) },
+            { label: c.termLabel, href: langPath(lang, `atlas/${c.lens}/${c.term}/`) },
+            { label: entity.names[lang] },
+          ]}
+        />
+      </template>
+    ))
+  }
   <article class="entity" data-entity={id}>
     {entity.status === 'draft' && <p class="notice notice-caution draft-banner" role="note">{t('draftBanner')}</p>}
     <EntityHeader lang={lang} entity={entity} data={data} />
@@ -101,7 +142,14 @@ const toc = [...SECTIONS, QUICK_CHECK];
                   <span class="chevron js-only" aria-hidden="true" />
                 </button>
               </h2>
-              <div class="section-body prose" id={`${s.id}-body`} set:html={split.sections.get(s.id) ?? ''} />
+              <div class="recall js-only" data-recall>
+                <p>{fmt(tHz(lang, 'recallPrompt'), { section: s.title[lang] })}</p>
+                <button type="button" class="btn btn-small" data-recall-reveal>{tHz(lang, 'recallReveal')}</button>
+              </div>
+              <div class="section-body prose" id={`${s.id}-body`}>
+                <Fragment set:html={split.sections.get(s.id) ?? ''} />
+                {imagesIn(s.id).map((i) => <ImageViewer lang={lang} image={imgs.get(i.id)} id={i.id} />)}
+              </div>
             </section>
           ))
         }
@@ -131,6 +179,21 @@ const toc = [...SECTIONS, QUICK_CHECK];
         </section>
 
         <RelatedPanel lang={lang} groups={data.relations.get(id) ?? []} data={data} />
+        {
+          entityPatterns.length > 0 && (
+            <section class="related" aria-labelledby="entity-patterns-title">
+              <h2 id="entity-patterns-title">{tHz(lang, 'patternsOnEntity')}</h2>
+              <ul>
+                {entityPatterns.map((p) => (
+                  <li>
+                    <a href={langPath(lang, `pattern/${p.id}/`)}>{p.names[lang]}</a>
+                    <span class="small muted"> — {p.summary[lang]}</span>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )
+        }
 
         <section class="sources" aria-labelledby="sources-title">
           <h2 id="sources-title">{t('sources')}</h2>
@@ -151,6 +214,7 @@ const toc = [...SECTIONS, QUICK_CHECK];
           </p>
         </section>
 
+        <div data-lens-nav>
         {
           (prev || next) && termLabel && (
             <nav class="prev-next" aria-label={termLabel}>
@@ -169,6 +233,29 @@ const toc = [...SECTIONS, QUICK_CHECK];
             </nav>
           )
         }
+        </div>
+        {
+          contexts.map((c) => (
+            <template data-via-nav={c.via} data-pagefind-ignore>
+              {(c.prev || c.next) && (
+                <nav class="prev-next" aria-label={c.termLabel}>
+                  {c.prev && (
+                    <a rel="prev" href={langPath(lang, `e/${c.prev}/?via=${c.via}`)}>
+                      <span class="small muted">{fmt(t('prevIn'), { term: c.termLabel })}</span>
+                      <span>← {nameOf(c.prev)}</span>
+                    </a>
+                  )}
+                  {c.next && (
+                    <a rel="next" href={langPath(lang, `e/${c.next}/?via=${c.via}`)}>
+                      <span class="small muted">{fmt(t('nextIn'), { term: c.termLabel })}</span>
+                      <span>{nameOf(c.next)} →</span>
+                    </a>
+                  )}
+                </nav>
+              )}
+            </template>
+          ))
+        }
       </div>
     </div>
   </article>
@@ -176,4 +263,7 @@ const toc = [...SECTIONS, QUICK_CHECK];
 
 <script>
   import '../../../scripts/entity.ts';
+  import '../../../scripts/lens-context.ts';
+  import '../../../scripts/glossary.ts';
+  import '../../../scripts/image-viewer.ts';
 </script>
