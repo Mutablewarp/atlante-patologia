@@ -1,0 +1,29 @@
+# FIXTURE — placeholder drawing, no medical content. status: draft keeps it out of production builds.
+id: fixture-micro-b
+file: fixture-micro-b.svg
+kind: micro
+sourceUrl: https://github.com/Mutablewarp/atlante-patologia
+author: Atlante di Patologia contributors
+license: original
+licenseUrl: https://github.com/Mutablewarp/atlante-patologia/blob/main/LICENSE-CONTENT.md
+retrievedAt: 2026-10-10
+modifications: none
+attributionText: "Placeholder drawing — Atlante di Patologia contributors"
+patientIdentifiable: false
+verifiedBy: { who: agent, name: study-engine, date: 2026-10-10 }
+caption:
+  it: "Immagine segnaposto micro B, nessun contenuto medico."
+  en: "Placeholder micro image B, no medical content."
+alt:
+  it: "Disegno segnaposto: forme geometriche (micro B)."
+  en: "Placeholder drawing: geometric shapes (micro B)."
+annotations:
+  - id: zone-1
+    label: { it: "Zona segnaposto 1", en: "Placeholder zone 1" }
+    revealOrder: 1
+    shape: { type: rect, coords: [0.05, 0.05, 0.3, 0.3] }
+  - id: zone-2
+    label: { it: "Zona segnaposto 2", en: "Placeholder zone 2" }
+    revealOrder: 2
+    shape: { type: circle, coords: [0.7, 0.7, 0.12] }
+status: draft

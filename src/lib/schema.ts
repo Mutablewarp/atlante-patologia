@@ -191,6 +191,8 @@ export const imageSchema = z
         }),
       )
       .default([]),
+    /** Fixture images use `draft` so they never reach a production build (credits, study pages). */
+    status: Status.default('published'),
   })
   .superRefine((img, ctx) => {
     if (img.license.startsWith('CC-BY-SA') && !img.ownerApproved)

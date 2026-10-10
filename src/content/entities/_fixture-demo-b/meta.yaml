@@ -1,0 +1,57 @@
+# FIXTURE — NOT CONTENT. Second placeholder entity for study flows (look-alikes,
+# chain distractors, mixed quizzes). status: draft (PREVIEW_DRAFTS=1 only). No medical claims.
+id: fixture-demo-b
+module: g01
+tier: core
+kind: concept
+names:
+  it: "Seconda voce di prova (segnaposto)"
+  en: "Second demo entry (placeholder)"
+  synonyms:
+    it: []
+    en: []
+summary:
+  it: "Seconda scheda finta per provare gli strumenti di studio. Non contiene informazioni mediche."
+  en: "Second fake card used to test the study tools. It contains no medical information."
+lenses:
+  system: [general]
+  process: [cell-injury]
+  pattern: []
+  presentation: []
+  marker: []
+  group: [degenerative]
+learningObjectives:
+  - it: "Obiettivo segnaposto della seconda scheda."
+    en: "Placeholder objective of the second card."
+quickCheck:
+  - id: demo-b-q1
+    q: { it: "Domanda segnaposto B1?", en: "Placeholder question B1?" }
+    a: { it: "Risposta segnaposto B1.", en: "Placeholder answer B1." }
+    kind: short
+  - id: demo-b-q2
+    q: { it: "Domanda segnaposto B2?", en: "Placeholder question B2?" }
+    a: { it: "Risposta segnaposto B2.", en: "Placeholder answer B2." }
+    kind: short
+  - id: demo-b-q3
+    q: { it: "Domanda segnaposto B3?", en: "Placeholder question B3?" }
+    a: { it: "Risposta segnaposto B3.", en: "Placeholder answer B3." }
+    kind: free
+chain:
+  - pathology: { it: "Lesione segnaposto B", en: "Placeholder lesion B" }
+    sign: { it: "Segno segnaposto B", en: "Placeholder sign B" }
+    lab: { it: "Esame segnaposto B", en: "Placeholder test B" }
+  - pathology: { it: "Lesione segnaposto C", en: "Placeholder lesion C" }
+    sign: { it: "Segno segnaposto C", en: "Placeholder sign C" }
+    lab: { it: "Esame segnaposto C", en: "Placeholder test C" }
+images:
+  - id: fixture-gross-b
+    role: gross
+    pairWith: fixture-micro-b
+  - id: fixture-micro-b
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+lastUpdated: 2026-10-10
+status: draft

@@ -62,5 +62,5 @@ export async function sources() {
 }
 
 export async function images() {
-  return (await getCollection('images')).map((i) => i.data);
+  return (await getCollection('images', (i) => visible(i.data.status))).map((i) => i.data);
 }
