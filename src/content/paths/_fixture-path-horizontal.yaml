@@ -1,0 +1,9 @@
+# FIXTURE — NOT CONTENT (shown only with PREVIEW_DRAFTS=1).
+id: fixture-path-horizontal
+kind: horizontal
+title: { it: "Percorso orizzontale di prova", en: "Demo horizontal path" }
+description: { it: "Percorso segnaposto: un processo in più organi.", en: "Placeholder path: one process across organs." }
+steps:
+  - pattern: fixture-pattern
+  - entity: fixture-demo-b
+  - entity: fixture-demo-c

@@ -1,0 +1,8 @@
+# FIXTURE — NOT CONTENT (shown only with PREVIEW_DRAFTS=1). No medical claims.
+id: fixture-term
+term: { it: "Termine di prova", en: "Demo term" }
+definition:
+  it: "Definizione segnaposto per provare il popover del glossario."
+  en: "Placeholder definition to test the glossary popover."
+aliases: { it: ["Termine segnaposto"], en: ["Placeholder term"] }
+see: [fixture-demo]

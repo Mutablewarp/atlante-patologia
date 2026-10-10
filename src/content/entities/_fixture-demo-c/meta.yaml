@@ -1,0 +1,38 @@
+# FIXTURE — NOT CONTENT. Exercises horizontal tools (PREVIEW_DRAFTS=1). No medical claims.
+id: fixture-demo-c
+module: o17
+tier: extended
+kind: disease
+names:
+  it: "Voce di prova C (segnaposto)"
+  en: "Demo entry C (placeholder)"
+  eponyms: []
+  synonyms: { it: [], en: [] }
+  abbreviations: ["DEMO-C"]
+summary:
+  it: "Terza scheda finta, in un altro apparato. Nessuna informazione medica."
+  en: "Third fake card, in another organ system. No medical information."
+lenses:
+  system: [heart]
+  process: [necrosis]
+  pattern: [necrosis-coagulative, granuloma]
+  presentation: [chest-pain]
+  marker: [laboratory]
+  group: [vascular]
+learningObjectives:
+  - { it: "Obiettivo segnaposto C.", en: "Placeholder objective C." }
+relations:
+  - type: sameLesionOtherOrgan
+    target: fixture-demo-b
+  - type: complicationOf
+    target: fixture-demo
+quickCheck:
+  - { id: demo-c-q1, q: { it: "Domanda C1?", en: "Question C1?" }, a: { it: "Risposta C1.", en: "Answer C1." }, kind: short }
+  - { id: demo-c-q2, q: { it: "Domanda C2?", en: "Question C2?" }, a: { it: "Risposta C2.", en: "Answer C2." }, kind: short }
+  - { id: demo-c-q3, q: { it: "Domanda C3?", en: "Question C3?" }, a: { it: "Risposta C3.", en: "Answer C3." }, kind: free }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+lastUpdated: 2026-10-10
+status: draft

@@ -6,7 +6,7 @@ lang: it
 
 ## Definizione ed epidemiologia
 
-Testo segnaposto 1. Lorem ipsum dolor sit amet.
+Testo segnaposto 1. Vedi [[fixture-demo-b]] e [[g:fixture-term]].
 
 Testo segnaposto 1b.
 

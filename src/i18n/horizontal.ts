@@ -1,0 +1,177 @@
+import { defineStrings } from './index.ts';
+
+/** Horizontal learning layer: patterns, compare, differential, map, paths, palette, viewer, cross-links. */
+export const tHz = defineStrings({
+  // Shared
+  planned: { it: 'pianificato', en: 'planned' },
+  glossary: { it: 'Glossario', en: 'Glossary' },
+  seeAz: { it: 'Vedi nell’indice A–Z', en: 'See in the A–Z index' },
+  noJs: {
+    it: 'Questo strumento richiede JavaScript. Puoi comunque sfogliare l’atlante per lenti.',
+    en: 'This tool needs JavaScript. You can still browse the atlas by lens.',
+  },
+  loading: { it: 'Caricamento…', en: 'Loading…' },
+  loadError: { it: 'Impossibile caricare i dati. Ricarica la pagina.', en: 'Could not load the data. Reload the page.' },
+  scrollTable: { it: 'Tabella scorrevole: {name}', en: 'Scrollable table: {name}' },
+  draftBanner: {
+    it: 'BOZZA DI PROVA — testo segnaposto, visibile solo in anteprima locale.',
+    en: 'TEST DRAFT — placeholder text, visible only in local preview.',
+  },
+
+  // Tools block on the Atlas page
+  toolsTitle: { it: 'Collegare gli argomenti', en: 'Connect the topics' },
+  patternsTitle: { it: 'Quadri trasversali', en: 'Pattern pages' },
+  patternsBody: {
+    it: 'Una lesione confrontata in organi diversi, in una tabella.',
+    en: 'One lesion compared across organs, in a table.',
+  },
+  compareTitle: { it: 'Confronta', en: 'Compare' },
+  compareBody: { it: 'Da 2 a 4 schede fianco a fianco, sezione per sezione.', en: '2 to 4 cards side by side, section by section.' },
+  diffTitle: { it: 'Diagnosi differenziale guidata', en: 'Differential builder' },
+  diffBody: {
+    it: 'Scegli i reperti: le schede compatibili si ordinano per numero di corrispondenze.',
+    en: 'Pick findings: matching cards are ranked by how many they share.',
+  },
+  mapTitle: { it: 'Mappa concettuale', en: 'Concept map' },
+  mapBody: {
+    it: 'Le schede e le loro relazioni, come grafo o come elenco.',
+    en: 'Cards and their relations, as a graph or as a list.',
+  },
+  pathsTitle: { it: 'Percorsi di studio', en: 'Learning paths' },
+  pathsBody: {
+    it: 'Sequenze di schede: dalle basi a un apparato, o un processo attraverso gli organi.',
+    en: 'Sequences of cards: from foundations to an organ system, or one process across organs.',
+  },
+  emptyTool: {
+    it: 'Si riempie con il primo capitolo pubblicato.',
+    en: 'Fills up with the first published chapter.',
+  },
+
+  // Pattern page
+  patternKicker: { it: 'Quadro trasversale', en: 'Pattern page' },
+  matrixTitle: { it: 'Confronto', en: 'Comparison' },
+  matrixImages: { it: 'Immagini', en: 'Images' },
+  imagesTitle: { it: 'Immagini per scheda', en: 'Images by card' },
+  patternCards: { it: 'Schede di questo quadro', en: 'Cards in this pattern' },
+  patternProcess: { it: 'Processo', en: 'Process' },
+  patternsOnEntity: { it: 'Quadri trasversali', en: 'Pattern pages' },
+
+  // Compare
+  compareIntro: {
+    it: 'Scegli da 2 a 4 schede. Ogni riga è una sezione in versione rapida.',
+    en: 'Pick 2 to 4 cards. Each row is one section, in its quick version.',
+  },
+  comparePick: { it: 'Aggiungi una scheda', en: 'Add a card' },
+  compareAdd: { it: 'Aggiungi', en: 'Add' },
+  compareRemove: { it: 'Rimuovi {name}', en: 'Remove {name}' },
+  compareChosen: { it: 'Schede scelte', en: 'Chosen cards' },
+  compareNeedTwo: { it: 'Scegli almeno 2 schede (massimo 4).', en: 'Choose at least 2 cards (at most 4).' },
+  compareMax: { it: 'Puoi confrontare al massimo 4 schede.', en: 'You can compare at most 4 cards.' },
+  compareCaption: { it: 'Confronto: {names}', en: 'Comparison: {names}' },
+  compareSection: { it: 'Sezione', en: 'Section' },
+  compareSummary: { it: 'Sintesi', en: 'Summary' },
+  compareUpdated: { it: 'Tabella aggiornata: {n} schede.', en: 'Table updated: {n} cards.' },
+  compareWith: { it: 'Confronta con…', en: 'Compare with…' },
+
+  // Differential builder
+  diffIntro: {
+    it: 'Spunta i reperti che hai. Le schede compatibili si ordinano per numero di reperti in comune; a parità, prima quelle fondamentali, poi l’ordine del programma.',
+    en: 'Tick the findings you have. Matching cards are ranked by how many findings they share; ties go to core cards first, then syllabus order.',
+  },
+  diffFindings: { it: 'Reperti', en: 'Findings' },
+  diffResults: { it: 'Candidati', en: 'Candidates' },
+  diffCount: { it: '{n} candidati', en: '{n} candidates' },
+  diffCountOne: { it: '1 candidato', en: '1 candidate' },
+  diffNone: { it: 'Nessuna scheda corrisponde ai reperti scelti.', en: 'No card matches the findings you picked.' },
+  diffPick: { it: 'Scegli almeno un reperto.', en: 'Pick at least one finding.' },
+  diffMatched: { it: 'Corrisponde', en: 'Matches' },
+  diffUnmatched: { it: 'Non corrisponde', en: 'Does not match' },
+  diffTable: { it: 'Tabella delle differenziali', en: 'Differential table' },
+  diffClear: { it: 'Azzera i reperti', en: 'Clear findings' },
+  diffScore: { it: '{n} su {total}', en: '{n} of {total}' },
+
+  // Concept map
+  mapIntro: {
+    it: 'Ogni nodo è una scheda, ogni linea una relazione. La vista elenco contiene esattamente gli stessi nodi e le stesse relazioni.',
+    en: 'Each node is a card and each line a relation. The list view holds exactly the same nodes and relations.',
+  },
+  mapView: { it: 'Vista', en: 'View' },
+  mapGraph: { it: 'Grafo', en: 'Graph' },
+  mapList: { it: 'Elenco', en: 'List' },
+  mapLegend: { it: 'Tipi di relazione', en: 'Relation types' },
+  mapGraphLabel: {
+    it: 'Grafo delle schede e delle relazioni. La vista elenco ha lo stesso contenuto in forma testuale.',
+    en: 'Graph of cards and relations. The list view has the same content as text.',
+  },
+  mapNoRelations: { it: 'Nessuna relazione', en: 'No relations' },
+
+  // Paths
+  pathsIntro: {
+    it: 'Un percorso verticale va dalle basi a un apparato; uno orizzontale segue un processo attraverso organi diversi. I progressi restano solo in questo browser.',
+    en: 'A vertical path goes from foundations to an organ system; a horizontal one follows a process across organs. Progress stays only in this browser.',
+  },
+  pathVertical: { it: 'Percorsi verticali', en: 'Vertical paths' },
+  pathHorizontal: { it: 'Percorsi orizzontali', en: 'Horizontal paths' },
+  pathKindVertical: { it: 'Verticale', en: 'Vertical' },
+  pathKindHorizontal: { it: 'Orizzontale', en: 'Horizontal' },
+  pathSteps: { it: '{n} tappe', en: '{n} steps' },
+  pathStepsTitle: { it: 'Tappe', en: 'Steps' },
+  pathProgress: { it: 'Avanzamento', en: 'Progress' },
+  pathProgressNoJs: {
+    it: 'I progressi si salvano solo in questo browser: qui compare quante tappe hai completato.',
+    en: 'Progress is saved only in this browser: the number of completed steps shows here.',
+  },
+  pathStepPattern: { it: 'quadro trasversale', en: 'pattern page' },
+
+  // Entity page
+  recallToggle: { it: 'Prima ricorda', en: 'Recall first' },
+  recallPrompt: {
+    it: 'Prova prima a ricordare: che cosa sai di “{section}”? Dillo ad alta voce o scrivilo, poi controlla.',
+    en: 'Try to recall first: what do you know about “{section}”? Say it out loud or jot it down, then check.',
+  },
+  recallReveal: { it: 'Mostra la sezione', en: 'Show the section' },
+  youAreHere: { it: 'sei qui', en: 'you are here' },
+  moduleTree: { it: 'Indice dei capitoli', en: 'Chapter contents' },
+
+  // Image viewer
+  viewerHelp: {
+    it: 'Visualizzatore di immagini: + e − ingrandiscono, le frecce spostano, 0 ripristina.',
+    en: 'Image viewer: + and − zoom, arrow keys move, 0 resets.',
+  },
+  zoomIn: { it: 'Ingrandisci', en: 'Zoom in' },
+  zoomOut: { it: 'Riduci', en: 'Zoom out' },
+  zoomReset: { it: 'Ripristina la vista', en: 'Reset view' },
+  labels: { it: 'Etichette', en: 'Labels' },
+  revealNext: { it: 'Mostra l’etichetta successiva', en: 'Reveal next label' },
+  hideLabels: { it: 'Nascondi le etichette', en: 'Hide labels' },
+  labelList: { it: 'Etichette dell’immagine', en: 'Image labels' },
+  credit: { it: 'Crediti', en: 'Credit' },
+  stain: { it: 'Colorazione', en: 'Stain' },
+  magnification: { it: 'Ingrandimento', en: 'Magnification' },
+  img_gross: { it: 'Macroscopia', en: 'Gross' },
+  img_micro: { it: 'Microscopia', en: 'Micro' },
+  img_diagram: { it: 'Schema', en: 'Diagram' },
+  img_imaging: { it: 'Imaging', en: 'Imaging' },
+  img_clinical: { it: 'Foto clinica', en: 'Clinical photo' },
+  imageMissing: { it: 'Immagine non ancora disponibile.', en: 'Image not available yet.' },
+
+  // Command palette
+  paletteOpen: { it: 'Ricerca rapida', en: 'Quick search' },
+  paletteLabel: { it: 'Cerca schede, quadri, glossario e pagine', en: 'Search cards, patterns, glossary and pages' },
+  palettePlaceholder: { it: 'Cerca schede, quadri, glossario, pagine…', en: 'Search cards, patterns, glossary, pages…' },
+  paletteHint: {
+    it: '↑ ↓ per spostarti, Invio per aprire, Esc per chiudere',
+    en: '↑ ↓ to move, Enter to open, Esc to close',
+  },
+  paletteEntity: { it: 'Scheda', en: 'Card' },
+  palettePattern: { it: 'Quadro', en: 'Pattern' },
+  paletteGlossary: { it: 'Glossario', en: 'Glossary' },
+  palettePage: { it: 'Pagina', en: 'Page' },
+  paletteFulltext: { it: 'Testo completo', en: 'Full text' },
+  paletteResults: { it: '{n} risultati', en: '{n} results' },
+  paletteNone: { it: 'Nessun risultato', en: 'No results' },
+  paletteAll: { it: 'Tutti i risultati per “{q}”', en: 'All results for “{q}”' },
+  paletteClose: { it: 'Chiudi', en: 'Close' },
+});
+
+export type HzKey = Parameters<typeof tHz>[1];

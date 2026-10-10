@@ -1,0 +1,24 @@
+# FIXTURE — NOT CONTENT (shown only with PREVIEW_DRAFTS=1). Generated test pattern, no patient data.
+id: fixture-grid
+file: _fixture-grid.png
+kind: micro
+sourceUrl: https://github.com/Mutablewarp/atlante-patologia
+author: Atlante di Patologia (generated test pattern)
+license: original
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+retrievedAt: 2026-10-10
+modifications: none
+attributionText: "Test pattern generated for the template (placeholder, not a medical image)."
+patientIdentifiable: false
+verifiedBy: { who: agent, name: horizontal-agent, date: 2026-10-10 }
+stain: "—"
+caption:
+  it: "Immagine di prova: griglia colorata segnaposto."
+  en: "Test image: placeholder colour grid."
+alt:
+  it: "Griglia di quadrati colorati con tre cerchi, usata come segnaposto."
+  en: "Grid of coloured squares with three circles, used as a placeholder."
+annotations:
+  - { id: a1, label: { it: "Etichetta 1", en: "Label 1" }, revealOrder: 1, shape: { type: circle, coords: [0.25, 0.3, 0.1] } }
+  - { id: a2, label: { it: "Etichetta 2", en: "Label 2" }, revealOrder: 2, shape: { type: rect, coords: [0.55, 0.15, 0.3, 0.25] } }
+  - { id: a3, label: { it: "Etichetta 3", en: "Label 3" }, revealOrder: 3, shape: { type: polygon, coords: [0.5, 0.65, 0.8, 0.85, 0.3, 0.9] } }

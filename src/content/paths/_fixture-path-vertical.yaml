@@ -1,0 +1,10 @@
+# FIXTURE — NOT CONTENT (shown only with PREVIEW_DRAFTS=1).
+id: fixture-path-vertical
+kind: vertical
+title: { it: "Percorso verticale di prova", en: "Demo vertical path" }
+description: { it: "Percorso segnaposto dalle basi a un apparato.", en: "Placeholder path from foundations to an organ system." }
+steps:
+  - entity: fixture-demo
+  - entity: fixture-demo-b
+  - entity: fixture-demo-c
+  - entity: placeholder-target-a

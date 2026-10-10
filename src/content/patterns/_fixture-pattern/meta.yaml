@@ -1,0 +1,43 @@
+# FIXTURE — NOT CONTENT. Exercises the Pattern Page template (PREVIEW_DRAFTS=1). No medical claims.
+id: fixture-pattern
+names:
+  it: "Quadro di prova (segnaposto)"
+  en: "Demo pattern (placeholder)"
+summary:
+  it: "Quadro finto per provare la tabella di confronto. Nessuna informazione medica."
+  en: "Fake pattern to test the comparison table. No medical information."
+process: necrosis
+matrix:
+  columns:
+    - { it: "Scheda", en: "Card" }
+    - { it: "Organo (segnaposto)", en: "Organ (placeholder)" }
+    - { it: "Colonna A (segnaposto)", en: "Column A (placeholder)" }
+    - { it: "Colonna B (segnaposto)", en: "Column B (placeholder)" }
+    - { it: "Colonna C (segnaposto)", en: "Column C (placeholder)" }
+  rows:
+    - entity: fixture-demo-b
+      cells:
+        - { it: "Organo B", en: "Organ B" }
+        - { it: "Testo segnaposto lungo per provare lo scorrimento orizzontale della tabella.", en: "Long placeholder text to test horizontal scrolling of the table." }
+        - { it: "Segnaposto", en: "Placeholder" }
+        - { it: "Segnaposto", en: "Placeholder" }
+    - entity: fixture-demo-c
+      cells:
+        - { it: "Organo C", en: "Organ C" }
+        - { it: "Segnaposto", en: "Placeholder" }
+        - { it: "Segnaposto", en: "Placeholder" }
+        - { it: "Segnaposto", en: "Placeholder" }
+    - entity: placeholder-target-a
+      cells:
+        - { it: "Organo pianificato", en: "Planned organ" }
+        - { it: "Segnaposto", en: "Placeholder" }
+        - { it: "Segnaposto", en: "Placeholder" }
+        - { it: "Segnaposto", en: "Placeholder" }
+images:
+  - { id: fixture-grid, entity: fixture-demo-b }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+lastUpdated: 2026-10-10
+status: draft
