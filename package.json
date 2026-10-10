@@ -16,7 +16,8 @@
     "test": "vitest run",
     "guard": "node scripts/guard.mjs --tree",
     "contrast": "node scripts/contrast-check.mjs",
-    "prepare": "simple-git-hooks"
+    "prepare": "simple-git-hooks",
+    "no-verbatim": "node scripts/no-verbatim.mjs"
   },
   "simple-git-hooks": {
     "pre-commit": "node scripts/guard.mjs --staged"
