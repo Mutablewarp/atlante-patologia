@@ -17,8 +17,10 @@ export default defineConfig({
   integrations: [
     preact(),
     sitemap({
-      i18n: { defaultLocale: 'it', locales: { it: 'it-IT', en: 'en-GB' } },
-      filter: (page) => !page.endsWith('/404/'),
+      // Same codes as the <link rel="alternate" hreflang> tags in BaseLayout.
+      i18n: { defaultLocale: 'it', locales: { it: 'it', en: 'en' } },
+      // The root `/` is only a language picker (D027), not an Italian page.
+      filter: (page) => !page.endsWith('/404/') && new URL(page).pathname !== '/atlante-patologia/',
     }),
   ],
   devToolbar: { enabled: false },

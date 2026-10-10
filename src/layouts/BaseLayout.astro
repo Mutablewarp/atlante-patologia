@@ -44,7 +44,8 @@ const fullTitle = title === SITE_NAME ? SITE_NAME : `${title} · ${SITE_NAME}`;
     <title>{fullTitle}</title>
     <meta name="description" content={description} />
     {noindex && <meta name="robots" content="noindex" />}
-    <link rel="canonical" href={abs(path)} />
+    {/* A noindex page (404) has no canonical URL: /404/ itself does not exist. */}
+    {!noindex && <link rel="canonical" href={abs(path)} />}
     {alternates && LANGS.map((l) => <link rel="alternate" hreflang={l} href={abs(alternate(l, path))} />)}
     {alternates && <link rel="alternate" hreflang="x-default" href={abs(url())} />}
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f1e7" />

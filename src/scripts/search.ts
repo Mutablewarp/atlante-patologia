@@ -61,7 +61,7 @@ async function run(q: string) {
     }),
   );
   status.textContent = items.length
-    ? fill(strings.results, { n: search.results.length, q: query })
+    ? fill(search.results.length === 1 ? strings.resultsOne : strings.results, { n: search.results.length, q: query })
     : fill(strings.noResults, { q: query });
 }
 
