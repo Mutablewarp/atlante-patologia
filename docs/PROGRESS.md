@@ -24,7 +24,7 @@ Not done in Phase 0 (by design):
 | Quality layer (`feat/quality-e2e`, merged `87b84fc`) | `npm run test:dist`, `npx playwright test`, `npm run lighthouse`, CI workflow | dist validators (navigation graph, links, budgets), Playwright 3 engines × 5 widths, Lighthouse mobile ≥ 90, license ledger |
 | Content gates (`feat/content-gates`, merged `6985202`) | `npm run test:content`; `tests/content/fixtures.test.ts` mutates a valid synthetic tree once per failure case | schema, parity, ledger, numbers, references, review, images gates on the real tree; `REVIEWERS` file |
 
-## PHASE 2 — Learning layer and first module — integrated on `main` (2026-11-03), not pushed
+## PHASE 2 — Learning layer and first module — on `main`, deployed 2026-11-03
 
 Merged in this order with `git merge --no-ff`: `feat/content-gates`, `feat/quality-e2e`, `feat/horizontal-tools` (`db476ef`), `feat/study-engine` (`87c8eac`), `feat/pwa-offline` (`e06dfd7`), `content/g01` (`0922e08`), then integration fixes up to `cb8394f`.
 
@@ -60,10 +60,18 @@ Integration fixes (each its own commit or recorded in the merge commit):
 - Offline copy now says "the home page" (what the shell actually precaches) instead of "the main pages"; README updated.
 - Docs: COMPLIANCE_PLAN states self-hosted OFL fonts (D015); CONTENT_SCHEMA and D038 agree that `[[id]]` links are resolved at build.
 
+Deploy (2026-11-03). The first CI run on `main` (`b04bca7`) failed in two jobs, so nothing was deployed. Three fixes followed, each confirmed by CI on Linux:
+
+- Firefox keyboard test: Firefox keeps `document.activeElement` on the last link when focus leaves the page, so the tab walk counted "Crediti" as a backwards stop 59 times. The walk now ends there in Firefox only; in other engines focus that does not move is reported as a keyboard trap (`1d49a89`, `34af550`).
+- Layout shift: on the slower Linux runner the wider fallback font re-wrapped the disclaimer buttons when the web font swapped in (CLS 0.188, Lighthouse performance 89 on `/en/atlas/`). D049: `font-display: optional` and preload for the two latin upright files, `swap` kept for italic and latin-ext (`00a78c4`, `7cdb0ed`). Result: CLS 0 on eight pages with a Linux-like fallback, Lighthouse 99.
+- Service worker: Linux WebKit reported the first worker as `controller` before its `installed` event, so a first visit showed the update notice and reloaded itself. The update check now uses whether the page was controlled when it loaded; a new offline e2e test covers it (`5080c19`).
+
+CI run 41693234505 on `5080c19`: test, e2e (Chromium, Firefox, WebKit), Lighthouse and deploy succeeded. Live smoke test (Playwright, Chromium and WebKit, 390 px wide): home, search, entity page with AI badge and disclaimer, pattern table, quiz answer with feedback, review, service worker control and offline fallback all worked, with 0 console errors and 0 HTTP errors.
+
 Open (not done in this pass):
 
-- Nothing is pushed or deployed; the live site still shows Phase 1.
 - Every g01 card is `ai-generated-unreviewed`; [REVIEW_QUEUE.md](REVIEW_QUEUE.md) lists the open expert decisions.
-- Firefox E2E not run locally (browser download needs approval); CI runs the Firefox smoke subset.
+- Firefox runs only in CI (smoke subset); it is not installed locally (the browser download needs the owner's approval).
+- Keyboard test gaps found in review, not fixed: the `en/atlas/` walk stops at `MAX_STOPS` (80) before the footer; the `seen` check never fires (its id includes the stop index); an off-screen element is reported as "hidden behind sticky bars", never as "off screen".
 - No screen-reader pass and no real iOS/Android device test of offline packs.
 - Gates do not check that a commit author is in `REVIEWERS` (CONTENT_SCHEMA §1a); `no-verbatim --staged` reads the working-tree copy, not the staged blob.
