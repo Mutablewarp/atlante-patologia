@@ -1,6 +1,6 @@
 ---
 lang: it
-translatedFrom: 7af84c03577e7ddb0863d6bb482e4c962a9bc26bc7a58009218353e6dc7835da
+translatedFrom: 73ebbaba381cbdece07b9fcf567fed2e89ba16aba63dd2fc9f402987b5fc7042
 ---
 
 ## Definizione ed epidemiologia
@@ -60,13 +60,13 @@ Quando la membrana plasmatica dei miociti morti si rompe, il loro contenuto pass
 
 | Tempo | A occhio nudo | Al microscopio |
 |---|---|---|
-| Prime 12 ore | Ancora nessuna lesione visibile<!--c:coagulative-necrosis-c017--> | — |
-| Circa 24 ore | Pallore della superficie di taglio<!--c:coagulative-necrosis-c063--> | Miociti intensamente eosinofili, alterazioni nucleari in corso<!--c:coagulative-necrosis-c036--> |
+| Prime 12 ore<!--c:coagulative-necrosis-c017--> | Ancora nessuna lesione visibile<!--c:coagulative-necrosis-c017--> | — |
+| Circa 24 ore<!--c:coagulative-necrosis-c063--> | Pallore della superficie di taglio<!--c:coagulative-necrosis-c063--> | Miociti intensamente eosinofili, alterazioni nucleari in corso<!--c:coagulative-necrosis-c036--> |
 | 2°–3° giorno | — | I neutrofili, che entrano solo dal margine perfuso, raggiungono il massimo<!--c:coagulative-necrosis-c037--> |
 | 3°–5° giorno | Centro necrotico giallo dentro un orlo rosso iperemico<!--c:coagulative-necrosis-c064--> | — |
 | 5°–7° giorno | — | I macrofagi rimuovono il muscolo morto; i miofibroblasti depongono collagene dal margine verso il centro<!--c:coagulative-necrosis-c038--> |
-| 2–3 settimane | Area infossata, molle, gelatinosa<!--c:coagulative-necrosis-c018--> | — |
-| Dopo 4 settimane (guarigione) | Cicatrice compatta, retratta, bianco-grigiastra<!--c:coagulative-necrosis-c065--> | Tessuto fibroso denso, sempre meno cellulato man mano che matura<!--c:coagulative-necrosis-c039--> |
+| 2–3 settimane<!--c:coagulative-necrosis-c018--> | Area infossata, molle, gelatinosa<!--c:coagulative-necrosis-c018--> | — |
+| Dopo 4 settimane (guarigione)<!--c:coagulative-necrosis-c039--> | Cicatrice compatta, retratta, bianco-grigiastra<!--c:coagulative-necrosis-c065--> | Tessuto fibroso denso, sempre meno cellulato man mano che matura<!--c:coagulative-necrosis-c039--> |
 
 Altri esiti:
 

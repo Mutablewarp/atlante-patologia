@@ -59,13 +59,13 @@ When the plasma membrane of dead myocytes breaks down, their contents reach the 
 
 | Time | Naked eye | Microscope |
 |---|---|---|
-| First 12 hours | No visible lesion yet<!--c:coagulative-necrosis-c017--> | — |
-| About 24 hours | Pallor on the cut surface<!--c:coagulative-necrosis-c063--> | Myocytes strongly eosinophilic, nuclear changes under way<!--c:coagulative-necrosis-c036--> |
+| First 12 hours<!--c:coagulative-necrosis-c017--> | No visible lesion yet<!--c:coagulative-necrosis-c017--> | — |
+| About 24 hours<!--c:coagulative-necrosis-c063--> | Pallor on the cut surface<!--c:coagulative-necrosis-c063--> | Myocytes strongly eosinophilic, nuclear changes under way<!--c:coagulative-necrosis-c036--> |
 | Days 2–3 | — | Neutrophils, entering only from the perfused border, reach their peak<!--c:coagulative-necrosis-c037--> |
 | Days 3–5 | Yellow necrotic center inside a red hyperemic rim<!--c:coagulative-necrosis-c064--> | — |
 | Days 5–7 | — | Macrophages clear dead muscle; myofibroblasts lay down collagen from the edge inward<!--c:coagulative-necrosis-c038--> |
-| Weeks 2–3 | Sunken, soft, gelatinous area<!--c:coagulative-necrosis-c018--> | — |
-| After 4 weeks (healed) | Firm, shrunken, gray-white scar<!--c:coagulative-necrosis-c065--> | Dense fibrous tissue that grows less cellular as it matures<!--c:coagulative-necrosis-c039--> |
+| Weeks 2–3<!--c:coagulative-necrosis-c018--> | Sunken, soft, gelatinous area<!--c:coagulative-necrosis-c018--> | — |
+| After 4 weeks (healed)<!--c:coagulative-necrosis-c039--> | Firm, shrunken, gray-white scar<!--c:coagulative-necrosis-c065--> | Dense fibrous tissue that grows less cellular as it matures<!--c:coagulative-necrosis-c039--> |
 
 Other outcomes:
 
