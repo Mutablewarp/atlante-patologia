@@ -13,12 +13,16 @@
     "build": "astro build && pagefind --site dist",
     "preview": "astro preview",
     "check": "astro check",
-    "test": "vitest run",
-    "test:content": "vitest run tests/content",
+    "test": "vitest run --project unit",
+    "test:content": "vitest run --project unit tests/content",
     "guard": "node scripts/guard.mjs --tree",
     "contrast": "node scripts/contrast-check.mjs",
     "prepare": "simple-git-hooks",
-    "no-verbatim": "node scripts/no-verbatim.mjs"
+    "no-verbatim": "node scripts/no-verbatim.mjs",
+    "test:dist": "vitest run --project dist",
+    "test:e2e": "playwright test",
+    "lighthouse": "node scripts/lighthouse-assert.mjs",
+    "licenses": "node scripts/license-scan.mjs"
   },
   "simple-git-hooks": {
     "pre-commit": "node scripts/guard.mjs --staged && node scripts/no-verbatim.mjs --staged"
@@ -38,6 +42,8 @@
     "@astrojs/check": "0.9.10",
     "@axe-core/playwright": "4.13.0",
     "@playwright/test": "1.64.0",
+    "license-checker-rseidelsohn": "5.0.1",
+    "lighthouse": "13.5.0",
     "pagefind": "1.5.2",
     "sharp": "0.35.5",
     "simple-git-hooks": "2.14.0",

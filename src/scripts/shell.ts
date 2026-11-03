@@ -69,9 +69,28 @@ document.querySelector('[data-dismiss-notice]')?.addEventListener('click', () =>
 });
 
 // ── Language: remember an explicit choice (used by the root entry page) ─
-document.querySelectorAll<HTMLAnchorElement>('[data-set-lang]').forEach((a) =>
-  a.addEventListener('click', () => store.set('ap-lang', a.dataset.setLang ?? '')),
-);
+// and carry ?query and #hash over (search query, section anchor). The search
+// page rewrites ?q with replaceState, so the href is refreshed on every use.
+const langLinks = document.querySelectorAll<HTMLAnchorElement>('[data-set-lang]');
+function keepState() {
+  langLinks.forEach((a) => {
+    if (a.dataset.keepState === undefined) return;
+    const target = new URL(a.href);
+    target.search = location.search;
+    target.hash = location.hash;
+    a.href = target.href;
+  });
+}
+keepState();
+addEventListener('hashchange', keepState);
+langLinks.forEach((a) => {
+  a.addEventListener('click', () => {
+    keepState();
+    store.set('ap-lang', a.dataset.setLang ?? '');
+  });
+  a.addEventListener('auxclick', keepState);
+  a.addEventListener('focus', keepState);
+});
 
 // ── Per-tab back stack (D020): last URL per tab in sessionStorage ───────
 const lang = root.lang;

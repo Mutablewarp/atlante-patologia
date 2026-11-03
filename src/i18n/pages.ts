@@ -14,7 +14,7 @@ export const tHome = defineStrings({
   startHere: { it: 'Da dove cominciare', en: 'Start here' },
   atlasCardTitle: { it: 'Sfoglia l’atlante', en: 'Browse the atlas' },
   atlasCardBody: {
-    it: 'Ogni malattia si raggiunge da sei “lenti”: organo, processo, quadro morfologico, presentazione clinica, marcatore e gruppo.',
+    it: 'Ogni malattia è raggiungibile attraverso sei “lenti”: organo, processo, quadro morfologico, presentazione clinica, marcatore e gruppo.',
     en: 'Every disease can be reached through six “lenses”: organ, process, morphologic pattern, clinical presentation, marker and group.',
   },
   studyCardTitle: { it: 'Studia con metodo', en: 'Study with a method' },
@@ -34,7 +34,7 @@ export const tAtlas = defineStrings({
     en: 'Browse the atlas by organ, process, morphologic pattern, presentation, marker or disease group.',
   },
   intro: {
-    it: 'Scegli una lente per entrare nell’atlante. Le stesse schede si ritrovano da più lenti: così si collegano gli argomenti tra loro.',
+    it: 'Scegli una lente per entrare nell’atlante. La stessa scheda compare sotto più lenti: è così che gli argomenti si collegano tra loro.',
     en: 'Pick a lens to enter the atlas. The same cards appear under several lenses, which is how topics connect to each other.',
   },
   lenses: { it: 'Lenti', en: 'Lenses' },
@@ -53,11 +53,11 @@ export const tAtlas = defineStrings({
   termCountOne: { it: '1 scheda', en: '1 card' },
   termsInLens: { it: 'Voci di questa lente', en: 'Terms in this lens' },
   emptyLens: {
-    it: 'Nessuna scheda è ancora pubblicata in questa lente. Le voci compaiono come link appena il primo capitolo esce.',
+    it: 'In questa lente non ci sono ancora schede pubblicate. Le voci diventeranno link appena uscirà il primo capitolo.',
     en: 'No card is published under this lens yet. Terms become links as soon as the first chapter is out.',
   },
   emptyAz: {
-    it: 'L’indice si riempie con il primo capitolo pubblicato.',
+    it: 'L’indice si popolerà con la pubblicazione del primo capitolo.',
     en: 'The index fills up with the first published chapter.',
   },
   entitiesForTerm: { it: 'Schede', en: 'Cards' },
@@ -72,7 +72,7 @@ export const tStudy = defineStrings({
     en: 'The atlas study tools: spaced review, quizzes, image training and planning.',
   },
   intro: {
-    it: 'Gli strumenti di studio si attivano con il primo capitolo pubblicato. Ecco cosa arriverà e come funzionerà.',
+    it: 'Gli strumenti di studio si attiveranno con la pubblicazione del primo capitolo. Ecco che cosa arriverà e come funzionerà.',
     en: 'The study tools switch on with the first published chapter. Here is what is coming and how it will work.',
   },
   availableWhen: { it: 'Disponibile con il primo capitolo', en: 'Available with the first chapter' },
@@ -98,7 +98,7 @@ export const tStudy = defineStrings({
   },
   plannerTitle: { it: 'Pianificatore', en: 'Planner' },
   plannerBody: {
-    it: 'Data dell’esame e ore settimanali: ricevi un calendario di studio e ripasso.',
+    it: 'Indica la data dell’esame e le ore settimanali: ricevi un calendario di studio e di ripasso.',
     en: 'Exam date and weekly hours in, a study and review schedule out.',
   },
   lastWeekTitle: { it: 'Ripasso dell’ultima settimana', en: 'Last-week revision' },
@@ -122,6 +122,7 @@ export const tSearch = defineStrings({
     it: 'La ricerca richiede JavaScript. Puoi comunque sfogliare l’atlante per lenti.',
     en: 'Search needs JavaScript. You can still browse the atlas by lens.',
   },
+  resultsOne: { it: '1 risultato per “{q}”', en: '1 result for “{q}”' },
   results: { it: '{n} risultati per “{q}”', en: '{n} results for “{q}”' },
   noResults: { it: 'Nessun risultato per “{q}”.', en: 'No results for “{q}”.' },
   loading: { it: 'Ricerca in corso…', en: 'Searching…' },

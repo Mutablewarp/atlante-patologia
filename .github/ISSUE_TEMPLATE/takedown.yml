@@ -1,0 +1,41 @@
+name: Diritti d'autore / rimozione — Copyright / takedown
+description: Un'immagine o un testo che viola i tuoi diritti. / An image or text that infringes your rights.
+title: '[Rimozione / Takedown] '
+labels: [takedown]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Le richieste credibili portano alla rimozione del materiale contestato in attesa di verifica. Questa issue è pubblica: non inserire dati di contatto privati.
+        Credible requests lead to the disputed material being removed while it is reviewed. This issue is public: do not include private contact details.
+  - type: input
+    id: url
+    attributes:
+      label: Pagina / Page
+      placeholder: https://mutablewarp.github.io/atlante-patologia/...
+    validations:
+      required: true
+  - type: textarea
+    id: material
+    attributes:
+      label: Materiale contestato / Disputed material
+      description: Quale immagine (didascalia o nome del file) o quale testo. / Which image (caption or file name) or which text.
+    validations:
+      required: true
+  - type: textarea
+    id: rights
+    attributes:
+      label: Su che cosa si basa la richiesta? / What is the request based on?
+      description: Per esempio, sei l'autore o il titolare dei diritti; link all'originale. / For example, you are the author or rights holder; link to the original.
+    validations:
+      required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: Chi scrive / You are
+      options:
+        - Titolare dei diritti / Rights holder
+        - Per conto del titolare / On behalf of the rights holder
+        - Altro / Other
+    validations:
+      required: true

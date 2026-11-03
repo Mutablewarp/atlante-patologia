@@ -40,7 +40,7 @@ export const ABOUT_PAGES = {
   'reading-list': {
     title: { it: 'Letture consigliate', en: 'Reading list' },
     description: {
-      it: 'Il testo di riferimento e gli studi sul metodo di studio citati dal progetto.',
+      it: 'Il testo di riferimento e le ricerche sulle tecniche di apprendimento citate dal progetto.',
       en: 'The reference textbook and the studies on learning methods cited by the project.',
     },
   },

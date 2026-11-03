@@ -15,6 +15,7 @@ export const getStaticPaths = langPaths;
 const lang = Astro.params.lang as Lang;
 const t = (k: Parameters<typeof tSearch>[1]) => tSearch(lang, k);
 const strings = {
+  resultsOne: t('resultsOne'),
   results: t('results'),
   noResults: t('noResults'),
   loading: t('loading'),

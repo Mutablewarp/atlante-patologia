@@ -1,5 +1,8 @@
 ---
-/** IT | EN switch: same page, other language prefix. Saves the explicit choice. */
+/**
+ * IT | EN switch: same page, other language prefix. Saves the explicit choice.
+ * shell.ts appends the current ?query and #hash to links marked data-keep-state.
+ */
 import { LANGS, type Lang } from '../../i18n/index.ts';
 import { tCommon } from '../../i18n/common.ts';
 import { alternate, langPath } from '../../lib/url.ts';
@@ -22,9 +25,9 @@ const target = (l: Lang) => (toHome ? langPath(l) : alternate(l, path));
           {l.toUpperCase()}
         </span>
       ) : (
-        <a href={target(l)} hreflang={l} lang={l} data-set-lang={l}>
+        <a href={target(l)} hreflang={l} lang={l} data-set-lang={l} data-keep-state={toHome ? undefined : ''}>
           {l.toUpperCase()}
-          <span class="visually-hidden">{` — ${tCommon(lang, 'switchToOther')}`}</span>
+          <span class="visually-hidden">{` — ${tCommon(lang, toHome ? 'switchToOtherHome' : 'switchToOther')}`}</span>
         </a>
       ),
     )

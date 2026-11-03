@@ -12,6 +12,8 @@ export const tCommon = defineStrings({
   skipToContent: { it: 'Vai al contenuto', en: 'Skip to content' },
   language: { it: 'Lingua', en: 'Language' },
   switchToOther: { it: 'Read this page in English', en: 'Leggi questa pagina in italiano' },
+  // Spoken in the target language (the link carries lang="en"/"it").
+  switchToOtherHome: { it: 'Go to the English home page', en: 'Vai alla home page in italiano' },
   theme: { it: 'Tema', en: 'Theme' },
   themeSystem: { it: 'Automatico', en: 'Automatic' },
   themeLight: { it: 'Chiaro', en: 'Light' },
@@ -44,7 +46,7 @@ export const tCommon = defineStrings({
   },
   noticeTitle: { it: 'Prima di iniziare', en: 'Before you start' },
   noticeBody: {
-    it: 'Questo atlante serve a studiare. Non è uno strumento clinico: non usarlo per diagnosi o per decidere terapie. I contenuti sono in parte generati con assistenza di IA, sono verificati con un processo documentato ma possono contenere errori.',
+    it: 'Questo atlante serve a studiare. Non è uno strumento clinico: non usarlo per fare diagnosi o per decidere terapie. Parte dei contenuti è prodotta con l’assistenza dell’IA e controllata con un processo documentato, ma può contenere errori.',
     en: 'This atlas is for studying. It is not a clinical tool: do not use it for diagnosis or to decide treatment. Parts of the content are produced with AI assistance and checked with a documented process, but it may contain errors.',
   },
   noticeMore: { it: 'Leggi l’avvertenza completa', en: 'Read the full disclaimer' },

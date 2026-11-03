@@ -1,0 +1,38 @@
+name: Accessibilità / Accessibility
+description: Qualcosa è difficile o impossibile da usare. / Something is hard or impossible to use.
+title: '[Accessibilità / Accessibility] '
+labels: [accessibility]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Pagina / Page
+      placeholder: https://mutablewarp.github.io/atlante-patologia/...
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema / Problem
+      description: Che cosa volevi fare e che cosa è successo. / What you tried to do and what happened.
+    validations:
+      required: true
+  - type: input
+    id: setup
+    attributes:
+      label: Dispositivo, browser, tecnologia assistiva / Device, browser, assistive technology
+      placeholder: iPhone 15, Safari, VoiceOver · Windows 11, Firefox, NVDA
+    validations:
+      required: true
+  - type: dropdown
+    id: input
+    attributes:
+      label: Modalità di uso / How you use the site
+      multiple: true
+      options:
+        - Tastiera / Keyboard
+        - Lettore di schermo / Screen reader
+        - Ingrandimento / Zoom or magnifier
+        - Touch
+        - Mouse
+        - Altro / Other

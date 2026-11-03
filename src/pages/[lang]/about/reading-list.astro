@@ -8,6 +8,8 @@ export const getStaticPaths = langPaths;
 const lang = Astro.params.lang as Lang;
 const all = await sources();
 const books = all.filter((s) => s.kind !== 'article');
+// "Aljamal H, et al." already ends with a period: never print "et al..".
+const endStop = (s: string) => (s.endsWith('.') ? s : `${s}.`);
 const articles = all.filter((s) => s.kind === 'article').sort((a, b) => b.year - a.year);
 ---
 
@@ -27,7 +29,7 @@ const articles = all.filter((s) => s.kind === 'article').sort((a, b) => b.year -
     {
       books.map((b) => (
         <li>
-          {b.authors && `${b.authors}. `}
+          {b.authors && `${endStop(b.authors)} `}
           <cite>{b.title}</cite>
           {b.edition && `, ${lang === 'it' ? `${b.edition}ª ed.` : `${b.edition}th ed.`}`}
           {b.publisher && ` ${b.publisher},`} {b.year}.
@@ -36,7 +38,7 @@ const articles = all.filter((s) => s.kind === 'article').sort((a, b) => b.year -
     }
   </ul>
 
-  <h2>{lang === 'it' ? 'Studi sul metodo di studio' : 'Research on how to study'}</h2>
+  <h2>{lang === 'it' ? 'Ricerche sulle tecniche di apprendimento' : 'Research on how to study'}</h2>
   <Bi lang={lang}>
     <p slot="it">
       Gli strumenti di studio (ripasso a intervalli, quiz, mappe concettuali, microscopia virtuale) si ispirano a questi
@@ -51,7 +53,7 @@ const articles = all.filter((s) => s.kind === 'article').sort((a, b) => b.year -
     {
       articles.map((a) => (
         <li>
-          {a.authors}. <cite>{a.title}</cite>. {a.journal}; {a.year}.{' '}
+          {a.authors && endStop(a.authors)} <cite>{a.title}</cite>. {a.journal}; {a.year}.{' '}
           {a.doi && (
             <a href={`https://doi.org/${a.doi}`} rel="noopener">
               doi:{a.doi}

@@ -9,9 +9,15 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
+# Runner pinned: ubuntu-latest moves to 26.04 on 2026-10-19.
 jobs:
   test:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v7
       - uses: actions/setup-node@v7
@@ -25,17 +31,97 @@ jobs:
         run: npm run check
       - name: Unit tests
         run: npm test
+      - name: Dependency licenses (allowlist + documented exceptions)
+        run: npm run licenses
       - name: Build (Astro + Pagefind)
         run: npm run build
       - name: Contrast check (WCAG 2.2 AA tokens)
-        run: node scripts/contrast-check.mjs
+        run: npm run contrast
       - name: Fixture must not be published
         run: test ! -e dist/it/e/fixture-demo && test ! -e dist/en/e/fixture-demo
+      - name: Dist validators (navigation graph, links, anchors, size budget, external assets)
+        run: npm run test:dist
+      - uses: actions/upload-artifact@v7
+        with:
+          name: dist
+          path: dist/
+          retention-days: 3
+          if-no-files-found: error
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: reports-dist
+          path: |
+            reports/
+            docs/licenses/dependencies.json
+          retention-days: 14
+          if-no-files-found: ignore
+
+  # Full viewport matrix on Chromium; Firefox and WebKit run the @smoke
+  # subset at 375 and 1280 px (see playwright.config.ts). Engines run in parallel.
+  e2e:
+    needs: test
+    runs-on: ubuntu-24.04
+    timeout-minutes: 15
+    strategy:
+      fail-fast: false
+      matrix:
+        engine: [chromium, firefox, webkit]
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - uses: actions/download-artifact@v8
+        with:
+          name: dist
+          path: dist
+      - name: Install ${{ matrix.engine }}
+        run: npx playwright install --with-deps ${{ matrix.engine }}
+      - name: Playwright (${{ matrix.engine }})
+        run: npx playwright test
+        env:
+          E2E_ENGINES: ${{ matrix.engine }}
+      - uses: actions/upload-artifact@v7
+        if: failure()
+        with:
+          name: playwright-report-${{ matrix.engine }}
+          path: playwright-report/
+          retention-days: 7
+
+  lighthouse:
+    needs: test
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      - run: npm ci
+      - uses: actions/download-artifact@v8
+        with:
+          name: dist
+          path: dist
+      - name: Install Chromium
+        run: npx playwright install --with-deps chromium
+      - name: Lighthouse mobile ≥ 90 (/it/, /en/atlas/, /it/about/)
+        run: npm run lighthouse
+      - uses: actions/upload-artifact@v7
+        if: always()
+        with:
+          name: reports-lighthouse
+          path: reports/lighthouse.json
+          retention-days: 14
+          if-no-files-found: ignore
 
   deploy:
     if: github.ref == 'refs/heads/main'
-    needs: test
-    runs-on: ubuntu-latest
+    needs: [test, e2e, lighthouse]
+    runs-on: ubuntu-24.04
     permissions:
       contents: read
       pages: write
