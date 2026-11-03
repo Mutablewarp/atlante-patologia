@@ -9,6 +9,17 @@ async function swReady(page: Page) {
   });
 }
 
+test('a first visit shows no update notice and does not reload when the worker takes control', async ({ page }) => {
+  let documents = 0;
+  page.on('request', (r) => r.resourceType() === 'document' && r.frame() === page.mainFrame() && documents++);
+  await page.goto('it/');
+  await swReady(page);
+  // Give late 'statechange' / 'controllerchange' handlers time to run.
+  await page.waitForTimeout(1000);
+  await expect(page.locator('[data-update-notice]')).toBeHidden();
+  expect(documents).toBe(1);
+});
+
 test('after the first visit, the home pages and the offline fallback load offline', async ({ page, context }) => {
   await page.goto('it/');
   await swReady(page);

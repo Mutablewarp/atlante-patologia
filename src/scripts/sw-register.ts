@@ -16,13 +16,16 @@ function offerUpdate(worker: ServiceWorker) {
 }
 
 async function register() {
+  // Only an update (a page already controlled when it loaded) needs the notice; the first
+  // install is silent. Decided at load: WebKit can report the first worker as `controller`
+  // before its 'installed' state event, which made a first visit show the notice and reload.
+  const controlledAtLoad = !!navigator.serviceWorker.controller;
   const reg = await navigator.serviceWorker.register(`${BASE}sw.js`, { scope: BASE });
-  // Only an update (a page already controlled) needs the notice; the first install is silent.
-  if (reg.waiting && navigator.serviceWorker.controller) offerUpdate(reg.waiting);
+  if (reg.waiting && controlledAtLoad) offerUpdate(reg.waiting);
   reg.addEventListener('updatefound', () => {
     const worker = reg.installing;
     worker?.addEventListener('statechange', () => {
-      if (worker.state === 'installed' && navigator.serviceWorker.controller) offerUpdate(worker);
+      if (worker.state === 'installed' && controlledAtLoad) offerUpdate(worker);
     });
   });
   let reloading = false;
