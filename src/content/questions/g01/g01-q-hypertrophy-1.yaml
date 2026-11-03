@@ -1,0 +1,47 @@
+id: g01-q-hypertrophy-1
+module: g01
+entities: [hypertrophy]
+kind: mcq
+difficulty: 2
+tags: [cellular-adaptation, hypertrophy]
+stem:
+  it: "Un uomo di 66 anni con ipertensione arteriosa mai trattata riferisce dispnea da sforzo. All'ecocardiogramma la parete libera del ventricolo sinistro e il setto sono ispessiti in modo uniforme, la cavità non è dilatata e la frazione di eiezione è conservata. Morirà anni dopo per altre cause; all'autopsia il cuore pesa 520 g e al microscopio i cardiomiociti sono più larghi, con nuclei grandi, ipercromatici e rettangolari, immersi in fibrosi interstiziale. Quale affermazione descrive meglio il processo e la sua principale conseguenza funzionale?"
+  en: "A 66-year-old man with long-standing untreated hypertension reports breathlessness on exertion. Echocardiography shows a uniformly thickened left ventricular free wall and septum, a cavity that is not dilated and a preserved ejection fraction. He dies years later of other causes; at autopsy the heart weighs 520 g, and microscopy shows wider cardiac myocytes with large, dark, rectangular nuclei set in interstitial fibrosis. Which statement best describes the process and its main functional consequence?"
+options:
+  - id: a
+    text:
+      it: "Ipertrofia concentrica da sovraccarico di pressione: i miociti aumentano di volume, e la fibrosi irrigidisce la parete causando disfunzione diastolica."
+      en: "Concentric hypertrophy from pressure overload: the myocytes enlarge, and fibrosis stiffens the wall, causing diastolic dysfunction."
+    correct: true
+    why:
+      it: "Corretta. L'ipertensione impone un sovraccarico di pressione: il ventricolo risponde ispessendo parete e setto senza dilatare la cavità (ipertrofia concentrica). I nuclei 'a vagone merci' (boxcar) e la fibrosi interstiziale sono tipici dell'ipertrofia patologica; la fibrosi rende il ventricolo rigido, e la disfunzione diastolica è il disturbo funzionale più frequente nella cardiopatia ipertensiva."
+      en: "Correct. Hypertension imposes a pressure overload: the ventricle responds by thickening the wall and septum without dilating the cavity (concentric hypertrophy). Boxcar nuclei and interstitial fibrosis are typical of pathologic hypertrophy; fibrosis makes the ventricle stiff, and diastolic dysfunction is the most common functional disorder in hypertensive heart disease."
+  - id: b
+    text:
+      it: "Iperplasia dei cardiomiociti: il cuore cresce perché i miociti si dividono, e la contrattilità aumenta in proporzione."
+      en: "Myocyte hyperplasia: the heart grows because its myocytes divide, and contractility rises in proportion."
+    correct: false
+    why:
+      it: "Errata. Cuore e muscolo scheletrico aumentano di massa soprattutto ingrandendo le cellule, non moltiplicandole; il ricambio di miociti nel cuore adulto è basso. I miociti più larghi descritti indicano ipertrofia."
+      en: "Incorrect. The heart and skeletal muscle gain mass mainly by enlarging their cells, not by adding cells; cardiac myocyte renewal in adults is low. The wider myocytes described point to hypertrophy."
+  - id: c
+    text:
+      it: "Ipertrofia eccentrica: rimodellamento scompensato con cavità dilatata e miociti più lunghi, con riduzione soprattutto della funzione sistolica."
+      en: "Eccentric hypertrophy: decompensated remodeling with a dilated cavity and longer myocytes, mainly reducing systolic function."
+    correct: false
+    why:
+      it: "Errata. Nell'ipertrofia eccentrica la cavità è dilatata, mentre qui non lo è e la frazione di eiezione è conservata. L'ipertrofia eccentrica è la tappa successiva, quando il sovraccarico di pressione non trattato porta allo scompenso."
+      en: "Incorrect. In eccentric hypertrophy the cavity is dilated, whereas here it is not and the ejection fraction is preserved. Eccentric hypertrophy is the later stage, when untreated pressure overload leads to failure."
+  - id: d
+    text:
+      it: "Ipertrofia fisiologica simile al 'cuore d'atleta': parete e cavità crescono in proporzione e il cuore è più efficiente."
+      en: "Physiologic hypertrophy like an athlete's heart: wall and cavity grow in proportion and the heart becomes more efficient."
+    correct: false
+    why:
+      it: "Errata. Il peso da solo non distingue i due quadri: un cuore malato può pesare quanto quello di un atleta. Qui però la cavità non cresce insieme alla parete e c'è fibrosi interstiziale, segno di ipertrofia patologica e non dell'adattamento efficiente dell'atleta."
+      en: "Incorrect. Weight alone does not separate the two: a diseased heart can weigh as much as an athlete's. Here, however, the cavity does not grow with the wall and there is interstitial fibrosis, a sign of pathologic hypertrophy rather than the athlete's efficient adaptation."
+backLink: { entity: hypertrophy, section: clinical }
+claims: [hypertrophy-c004, hypertrophy-c010, hypertrophy-c030, hypertrophy-c032, hypertrophy-c033, hypertrophy-c035, hypertrophy-c036, hypertrophy-c038, hypertrophy-c043, hypertrophy-c049, hypertrophy-c066, hypertrophy-c070]
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

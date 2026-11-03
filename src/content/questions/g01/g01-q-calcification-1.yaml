@@ -1,0 +1,55 @@
+id: g01-q-calcification-1
+module: g01
+entities: [metastatic-calcification, dystrophic-calcification]
+kind: mcq
+difficulty: 2
+tags: [pathologic-calcification, metastatic-calcification]
+stem:
+  it: "Un uomo di 58 anni in emodialisi da anni per malattia renale terminale ha un fosfato sierico persistentemente elevato e una calcemia ai limiti inferiori della norma. All'autopsia si trovano depositi intensamente basofili, che diventano neri con la colorazione di von Kossa, nei setti alveolari di entrambi i polmoni, nelle membrane basali dei tubuli renali e nella parete di piccole arterie; il tessuto attorno ai depositi non mostra necrosi pregressa. Quale interpretazione è corretta?"
+  en: "A 58-year-old man who has been on hemodialysis for years for end-stage kidney disease has a persistently high serum phosphate and a serum calcium at the lower limit of normal. At autopsy, intensely basophilic deposits that turn black with the von Kossa stain are found in the alveolar septa of both lungs, in renal tubular basement membranes and in the walls of small arteries; the tissue around the deposits shows no prior necrosis. Which interpretation is correct?"
+options:
+  - id: a
+    text:
+      it: "Calcificazione metastatica: la ritenzione di fosfato aumenta il prodotto calcio-fosforo e il minerale precipita in tessuti prima normali, preferendo le sedi localmente alcaline."
+      en: "Metastatic calcification: phosphate retention raises the calcium–phosphorus product, and mineral precipitates in previously normal tissues, favoring locally alkaline sites."
+    correct: true
+    why:
+      it: "Corretta. Nella malattia renale cronica la caduta del filtrato trattiene fosfato, e l'iperfosfatemia da sola basta a far salire il prodotto calcio-fosforo. Il minerale si deposita in tessuti sani, tipicamente setti alveolari, tubuli renali e vasi, soprattutto dove gradienti di pH creano un ambiente alcalino."
+      en: "Correct. In chronic kidney disease the falling filtration rate retains phosphate, and hyperphosphatemia alone is enough to raise the calcium–phosphorus product. Mineral settles in healthy tissues, typically alveolar septa, renal tubules and vessels, especially where pH gradients create an alkaline environment."
+  - id: b
+    text:
+      it: "Calcificazione distrofica: gli acidi grassi liberati dalle membrane di cellule morenti hanno fatto da nucleo per la precipitazione del calcio."
+      en: "Dystrophic calcification: fatty acids released from the membranes of dying cells served as the nucleus for calcium precipitation."
+    correct: false
+    why:
+      it: "Errata. È il meccanismo della forma distrofica, che richiede un danno tissutale preesistente. Qui i depositi stanno in tessuti senza necrosi, in più organi, con un disordine sistemico del fosfato: tutti segni della forma metastatica."
+      en: "Incorrect. That is the mechanism of the dystrophic form, which needs prior tissue damage. Here the deposits lie in tissue without necrosis, in several organs, with a systemic phosphate disorder: all signs of the metastatic form."
+  - id: c
+    text:
+      it: "Non può trattarsi di calcificazione metastatica, perché questa richiede ipercalcemia."
+      en: "It cannot be metastatic calcification, because that requires hypercalcemia."
+    correct: false
+    why:
+      it: "Errata. Il fattore determinante è il prodotto calcio-fosforo, che sale con l'ipercalcemia ma anche con la sola iperfosfatemia. Nella malattia renale cronica la calcificazione avanza mentre la calcemia tende a scendere."
+      en: "Incorrect. The deciding factor is the calcium–phosphorus product, which rises with hypercalcemia but also with hyperphosphatemia alone. In chronic kidney disease calcification advances while serum calcium tends to fall."
+  - id: d
+    text:
+      it: "Depositi calcificati di cellule tumorali disseminate."
+      en: "Calcified deposits of disseminated tumor cells."
+    correct: false
+    why:
+      it: "Errata. Qui «metastatica» non indica la diffusione di un tumore, ma il calcio spostato in tessuti normali lontani da un disordine sistemico. Nulla nel quadro suggerisce una neoplasia."
+      en: "Incorrect. Here “metastatic” does not mean tumor spread but calcium shifted into distant normal tissues by a systemic disorder. Nothing in the picture suggests a tumor."
+  - id: e
+    text:
+      it: "Ossificazione eterotopica, cioè formazione di osso vero nei tessuti molli."
+      en: "Heterotopic ossification, that is, formation of true bone in soft tissue."
+    correct: false
+    why:
+      it: "Errata. L'ossificazione eterotopica produce osso con struttura trabecolare e non dipende da un disordine metabolico. Qui i depositi sono amorfi, basofili e neri alla von Kossa, in un quadro di iperfosfatemia."
+      en: "Incorrect. Heterotopic ossification produces bone with a trabecular structure and is not driven by a metabolic disorder. Here the deposits are amorphous, basophilic and black with von Kossa, in a setting of hyperphosphatemia."
+backLink: { entity: metastatic-calcification, section: pathogenesis }
+claims: [metastatic-calcification-c004, metastatic-calcification-c009, metastatic-calcification-c010, metastatic-calcification-c011, metastatic-calcification-c012, metastatic-calcification-c017, metastatic-calcification-c034, metastatic-calcification-c039, metastatic-calcification-c040, metastatic-calcification-c052, dystrophic-calcification-c017, dystrophic-calcification-c027, dystrophic-calcification-c049, dystrophic-calcification-c057]
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

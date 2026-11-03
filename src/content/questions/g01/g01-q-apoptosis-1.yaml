@@ -1,0 +1,67 @@
+id: g01-q-apoptosis-1
+module: g01
+entities: [apoptosis]
+kind: mcq
+difficulty: 2
+tags: [apoptosis]
+stem:
+  it: "Una donna di 61 anni presenta da due anni linfonodi cervicali e inguinali indolenti, che aumentano lentamente di volume. La biopsia mostra un linfonodo sovvertito da follicoli fitti di piccoli linfociti B; la citogenetica rivela una traslocazione che pone il gene BCL2 sotto il controllo del promotore della catena pesante delle immunoglobuline. Quale tappa della morte cellulare blocca soprattutto l'eccesso di Bcl-2, permettendo l'accumulo dei linfociti B neoplastici?"
+  en: "A 61-year-old woman has had painless cervical and inguinal lymph nodes that have grown slowly over two years. Biopsy shows a node effaced by crowded follicles of small B lymphocytes; cytogenetics reveals a translocation that places the BCL2 gene under the control of the immunoglobulin heavy-chain promoter. Which step of cell death does the excess Bcl-2 mainly block, allowing the neoplastic B cells to accumulate?"
+options:
+  - id: a
+    text:
+      it: "L'assemblaggio del complesso DISC sul recettore Fas e l'attivazione della procaspasi-8."
+      en: "Assembly of the DISC on the Fas receptor and activation of procaspase-8."
+    correct: false
+    why:
+      it: "Il DISC e la caspasi-8 appartengono alla via estrinseca, che parte dai recettori di morte sulla superficie cellulare. Bcl-2 agisce più a valle, sulla membrana mitocondriale esterna, e non impedisce la formazione del DISC."
+      en: "The DISC and caspase-8 belong to the extrinsic pathway, which starts at death receptors on the cell surface. Bcl-2 acts further downstream, at the outer mitochondrial membrane, and does not prevent DISC formation."
+  - id: b
+    text:
+      it: "La liberazione di Bax e Bak, che formerebbero canali nella membrana mitocondriale esterna: il citocromo c non esce e l'apoptosoma non si forma."
+      en: "The release of Bax and Bak, which would form channels in the outer mitochondrial membrane: cytochrome c does not escape and the apoptosome is not assembled."
+    correct: true
+    why:
+      it: "Corretto. Bcl-2 lega Bax e Bak e li mantiene inattivi; in eccesso, resiste anche alle proteine BH3-only attivate dallo stress. Senza canali di Bax/Bak il citocromo c resta nel mitocondrio, Apaf-1 non attiva la caspasi-9 e la via intrinseca si arresta: i linfociti B sopravvivono e si accumulano."
+      en: "Correct. Bcl-2 binds Bax and Bak and keeps them inactive; in excess, it also withstands the BH3-only proteins switched on by stress. Without Bax/Bak channels, cytochrome c stays in the mitochondrion, Apaf-1 cannot activate caspase-9 and the intrinsic pathway stalls: the B cells survive and accumulate."
+  - id: c
+    text:
+      it: "L'accumulo di p53 nel nucleo dopo un danno al DNA."
+      en: "Accumulation of p53 in the nucleus after DNA damage."
+    correct: false
+    why:
+      it: "Bcl-2 non impedisce a p53 di accumularsi. p53 agisce a monte: aumenta la trascrizione di Bax, PUMA e NOXA e riduce quella di Bcl-2. L'eccesso di Bcl-2 neutralizza a valle proprio questi segnali proapoptotici."
+      en: "Bcl-2 does not stop p53 from accumulating. p53 acts upstream: it raises transcription of Bax, PUMA and NOXA and lowers that of Bcl-2. Excess Bcl-2 neutralizes these pro-apoptotic signals further downstream."
+  - id: d
+    text:
+      it: "L'esposizione della fosfatidilserina sul foglietto esterno della membrana, per cui i linfociti B morenti non vengono fagocitati."
+      en: "Exposure of phosphatidylserine on the outer leaflet of the membrane, so that dying B cells are not engulfed."
+    correct: false
+    why:
+      it: "La fosfatidilserina esterna è un segnale «mangiami» che compare in una cellula già avviata all'apoptosi. Un difetto di fagocitosi lascerebbe cellule morte non rimosse, non linfociti B vitali che proliferano; Bcl-2 agisce prima, impedendo che la cellula si impegni nella morte."
+      en: "External phosphatidylserine is an \"eat me\" signal that appears on a cell already committed to apoptosis. Defective engulfment would leave dead cells uncleared, not viable B cells that keep accumulating; Bcl-2 acts earlier, by preventing commitment to death."
+  - id: e
+    text:
+      it: "L'attivazione della caspasi-1 nell'inflammasoma."
+      en: "Activation of caspase-1 in the inflammasome."
+    correct: false
+    why:
+      it: "La caspasi-1 dell'inflammasoma porta alla piroptosi, una morte litica e infiammatoria scatenata soprattutto da patogeni intracellulari. Non è il bersaglio di Bcl-2 e non spiega la sopravvivenza dei linfociti B nel linfoma follicolare."
+      en: "Inflammasome caspase-1 leads to pyroptosis, a lytic, inflammatory death mainly triggered by intracellular pathogens. It is not the target of Bcl-2 and does not explain the survival of B cells in follicular lymphoma."
+backLink: { entity: apoptosis, section: pathogenesis }
+claims:
+  - apoptosis-c018
+  - apoptosis-c019
+  - apoptosis-c022
+  - apoptosis-c023
+  - apoptosis-c024
+  - apoptosis-c025
+  - apoptosis-c031
+  - apoptosis-c034
+  - apoptosis-c046
+  - apoptosis-c062
+  - pyroptosis-c002
+  - pyroptosis-c003
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

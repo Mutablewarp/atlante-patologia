@@ -1,0 +1,55 @@
+id: g01-q-integrative-2
+module: g01
+entities: [apoptosis, coagulative-necrosis, necroptosis, pyroptosis, hydropic-swelling]
+kind: mcq
+difficulty: 2
+tags: [integrative, apoptosis, coagulative-necrosis, necroptosis, pyroptosis]
+stem:
+  it: "Una donna di 38 anni con epatite virale acuta presenta ittero e transaminasi molto elevate. Nella biopsia epatica si vedono singoli epatociti sparsi, isolati tra epatociti di aspetto normale: sono rimpiccioliti, con citoplasma intensamente eosinofilo, e alcuni contengono frammenti nucleari densi mentre altri sono privi di nucleo. Attorno a questi corpi non si raccolgono neutrofili. Quale meccanismo spiega meglio perché queste cellule muoiono senza scatenare una reazione infiammatoria acuta locale?"
+  en: "A 38-year-old woman with acute viral hepatitis has jaundice and markedly raised transaminases. Her liver biopsy shows scattered single hepatocytes, isolated among normal-looking hepatocytes: they are shrunken, with intensely eosinophilic cytoplasm, and some contain dense nuclear fragments while others have no nucleus. No neutrophils gather around these bodies. Which mechanism best explains why these cells die without triggering a local acute inflammatory reaction?"
+options:
+  - id: a
+    text:
+      it: "Sono focolai di necrosi coagulativa: i profili cellulari conservati trattengono gli enzimi lisosomiali all'interno della cellula."
+      en: "They are foci of coagulative necrosis: the preserved cell outlines keep lysosomal enzymes inside the cell."
+    correct: false
+    why:
+      it: "Errata. La necrosi coagulativa colpisce aree geografiche di cellule contigue, e le cellule necrotiche liberano enzimi e mediatori che richiamano infiammazione. Qui le cellule morte sono isolate tra cellule vitali."
+      en: "Incorrect. Coagulative necrosis affects geographic areas of contiguous cells, and necrotic cells release enzymes and mediators that draw inflammation. Here the dead cells are isolated among viable ones."
+  - id: b
+    text:
+      it: "Le caspasi smontano la cellula entro una membrana plasmatica integra; la fosfatidilserina esposta sulla superficie fa sì che i frammenti vengano fagocitati prima che il loro contenuto fuoriesca."
+      en: "Caspases dismantle the cell within an intact plasma membrane; phosphatidylserine exposed on the surface ensures the fragments are engulfed before their contents leak out."
+    correct: true
+    why:
+      it: "Corretta. È apoptosi: le cellule infettate da virus tendono a morire così, limitando la diffusione del virus. Il nucleo si condensa e si frammenta, la cellula si divide in corpi apoptotici rivestiti di membrana, e segnali «mangiami» come la fosfatidilserina guidano macrofagi e cellule vicine a rimuoverli prima che la membrana ceda, per cui non segue infiammazione."
+      en: "Correct. This is apoptosis: virus-infected cells tend to die this way, which limits viral spread. The nucleus condenses and fragments, the cell splits into membrane-bound apoptotic bodies, and eat-me signals such as phosphatidylserine lead macrophages and neighboring cells to clear them before the membrane fails, so no inflammation follows."
+  - id: c
+    text:
+      it: "Il necrosoma RIP1-RIP3 attiva MLKL, una forma di morte programmata che per definizione non è infiammatoria."
+      en: "The RIP1-RIP3 necrosome activates MLKL, a form of programmed death that by definition is not inflammatory."
+    correct: false
+    why:
+      it: "Errata. La necroptosi è programmata ma indipendente dalle caspasi e litica: la cellula si rigonfia, la membrana si frammenta e i DAMP liberati provocano infiammazione."
+      en: "Incorrect. Necroptosis is programmed but caspase-independent and lytic: the cell swells, its membrane fragments and the released DAMPs provoke inflammation."
+  - id: d
+    text:
+      it: "La caspasi-1 attivata dall'inflammasoma apre pori di gasdermina D, attraverso i quali la cellula si svuota senza liberare segnali di pericolo."
+      en: "Caspase-1 activated by the inflammasome opens gasdermin D pores, through which the cell empties without releasing danger signals."
+    correct: false
+    why:
+      it: "Errata. Questa è piroptosi, che è l'opposto di una morte silenziosa: la cellula si rigonfia e scoppia, rilascia DAMP e IL-1β attivata e richiama altre cellule immunitarie."
+      en: "Incorrect. This is pyroptosis, which is the opposite of a silent death: the cell swells and bursts, releasing DAMPs and activated IL-1β and recruiting more immune cells."
+  - id: e
+    text:
+      it: "Le cellule sono solo danneggiate in modo reversibile e si riprenderanno quando il virus sarà eliminato."
+      en: "The cells are only reversibly injured and will recover once the virus is cleared."
+    correct: false
+    why:
+      it: "Errata. Il danno reversibile acuto (rigonfiamento idropico) rende la cellula più grande e chiara con nucleo integro e centrale. Cellule rimpicciolite con nucleo frammentato o assente sono morte."
+      en: "Incorrect. Acute reversible injury (hydropic swelling) makes the cell larger and paler with an intact, central nucleus. Shrunken cells with a fragmented or absent nucleus are dead."
+backLink: { entity: apoptosis, section: pathogenesis }
+claims: [apoptosis-c001, apoptosis-c011, apoptosis-c034, apoptosis-c036, apoptosis-c038, apoptosis-c039, apoptosis-c040, apoptosis-c041, apoptosis-c065, apoptosis-c073, apoptosis-c074, coagulative-necrosis-c002, coagulative-necrosis-c013, coagulative-necrosis-c046, coagulative-necrosis-c047, necroptosis-c024, necroptosis-c025, necroptosis-c043, pyroptosis-c016, pyroptosis-c021, pyroptosis-c043, pyroptosis-c046, hydropic-swelling-c053]
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

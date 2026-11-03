@@ -1,0 +1,72 @@
+id: g01-q-apoptosis-2
+module: g01
+entities: [apoptosis]
+kind: mcq
+difficulty: 1
+tags: [apoptosis]
+stem:
+  it: "Un uomo di 34 anni muore di febbre gialla fulminante dopo un viaggio in un'area tropicale. All'autopsia il fegato mostra, sparsi tra epatociti vitali, singoli epatociti rimpiccioliti, con citoplasma intensamente eosinofilo, staccati dalle cellule vicine; in alcuni il nucleo è addensato o frammentato. Quale affermazione spiega meglio questo quadro?"
+  en: "A 34-year-old man dies of fulminant yellow fever after a trip to a tropical area. At autopsy the liver shows, scattered among viable hepatocytes, single shrunken hepatocytes with intensely eosinophilic cytoplasm, detached from their neighbors; in some the nucleus is condensed or fragmented. Which statement best explains this picture?"
+options:
+  - id: a
+    text:
+      it: "Necrosi coagulativa: la rottura della membrana libera il contenuto cellulare, ma le proteine denaturate conservano il profilo della cellula."
+      en: "Coagulative necrosis: membrane rupture releases the cell contents, but denatured proteins preserve the cell outline."
+    correct: false
+    why:
+      it: "La necrosi coagulativa colpisce un'area intera di cellule, che si rigonfiano e si rompono richiamando un'infiammazione acuta. Qui le cellule sono isolate e rimpicciolite, non rigonfie."
+      en: "Coagulative necrosis affects a whole area of cells, which swell and rupture and attract acute inflammation. Here the cells are isolated and shrunken, not swollen."
+  - id: b
+    text:
+      it: "Necroptosi: il necrosoma RIP1–RIP3 attiva MLKL, che danneggia la membrana plasmatica."
+      en: "Necroptosis: the RIP1–RIP3 necrosome activates MLKL, which damages the plasma membrane."
+    correct: false
+    why:
+      it: "La necroptosi è programmata ma ha l'aspetto della necrosi: la cellula si rigonfia, la membrana si frammenta e segue un'infiammazione. Non produce cellule singole rimpicciolite ed eosinofile come queste."
+      en: "Necroptosis is programmed but looks like necrosis: the cell swells, its membrane breaks up and inflammation follows. It does not produce single shrunken, eosinophilic cells like these."
+  - id: c
+    text:
+      it: "Apoptosi: le cellule morenti conservano i segnali «non mangiarmi», quindi i fagociti le ignorano e si degradano lentamente senza infiammazione."
+      en: "Apoptosis: dying cells keep their \"don't eat me\" signals, so phagocytes ignore them and they break down slowly without inflammation."
+    correct: false
+    why:
+      it: "Il tipo di morte è giusto, il meccanismo no: durante l'apoptosi i segnali «non mangiarmi» delle cellule vitali vengono persi. Se le cellule morte non fossero rimosse, finirebbero per perdere l'integrità di membrana e liberare sostanze nocive."
+      en: "The type of death is right, the mechanism is not: during apoptosis the \"don't eat me\" signals of viable cells are lost. If dead cells were not removed, they would eventually lose membrane integrity and release harmful contents."
+  - id: d
+    text:
+      it: "Apoptosi: i corpi apoptotici, delimitati da membrana, espongono fosfatidilserina («mangiami») e vengono fagocitati prima che la membrana perda la sua integrità."
+      en: "Apoptosis: membrane-bound apoptotic bodies expose phosphatidylserine (\"eat me\") and are engulfed before the membrane loses its integrity."
+    correct: true
+    why:
+      it: "Corretto. Sono corpi di Councilman: epatociti apoptotici, rimpiccioliti ed eosinofili, con picnosi e carioressi a membrana integra. La fosfatidilserina esposta all'esterno richiama macrofagi e cellule vicine, che li inglobano prima che il contenuto fuoriesca: per questo l'apoptosi di per sé non suscita infiammazione."
+      en: "Correct. These are Councilman bodies: apoptotic hepatocytes, shrunken and eosinophilic, with pyknosis and karyorrhexis inside an intact membrane. Phosphatidylserine exposed on the surface draws in macrophages and neighboring cells, which engulf them before their contents leak: that is why apoptosis by itself provokes no inflammation."
+  - id: e
+    text:
+      it: "Piroptosi: la caspasi-1 apre pori nella membrana e la cellula si rigonfia e scoppia liberando IL-1β."
+      en: "Pyroptosis: caspase-1 opens pores in the membrane, and the cell swells and bursts, releasing IL-1β."
+    correct: false
+    why:
+      it: "La piroptosi è una morte litica: la cellula si rigonfia e si rompe, e le citochine liberate richiamano infiammazione. È l'opposto delle cellule rimpicciolite e integre descritte."
+      en: "Pyroptosis is a lytic death: the cell swells and ruptures, and the released cytokines attract inflammation. That is the opposite of the shrunken, intact cells described."
+backLink: { entity: apoptosis, section: micro }
+claims:
+  - apoptosis-c034
+  - apoptosis-c035
+  - apoptosis-c036
+  - apoptosis-c037
+  - apoptosis-c038
+  - apoptosis-c039
+  - apoptosis-c042
+  - apoptosis-c054
+  - apoptosis-c065
+  - apoptosis-c073
+  - apoptosis-c074
+  - necroptosis-c024
+  - necroptosis-c025
+  - pyroptosis-c016
+  - pyroptosis-c021
+  - pyroptosis-c025
+  - pyroptosis-c027
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

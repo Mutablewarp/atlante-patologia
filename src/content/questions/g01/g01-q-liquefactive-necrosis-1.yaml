@@ -1,0 +1,69 @@
+id: g01-q-liquefactive-necrosis-1
+module: g01
+entities: [liquefactive-necrosis, coagulative-necrosis]
+kind: mcq
+difficulty: 3
+tags: [necrosis, necrosis-liquefactive, necrosis-coagulative]
+stem:
+  en: "A 74-year-old woman with atrial fibrillation suddenly develops right-sided weakness and aphasia and dies 5 days later. At autopsy the territory of the left middle cerebral artery is swollen and soft, with areas turning pulpy. Histology shows dead neurons with macrophages taking over from neutrophils; no organisms are seen and cultures of the tissue are sterile. Which statement best explains the softening of the infarct?"
+  it: "Una donna di 74 anni con fibrillazione atriale presenta improvvisamente deficit di forza a destra e afasia, e muore 5 giorni dopo. All'autopsia il territorio dell'arteria cerebrale media sinistra è tumefatto e molle, con aree che diventano poltacee. L'istologia mostra neuroni necrotici e macrofagi che stanno sostituendo i neutrofili; non si vedono microrganismi e le colture del tessuto sono sterili. Quale affermazione spiega meglio il rammollimento dell'infarto?"
+options:
+  - id: a
+    text:
+      en: "A superimposed bacterial infection whose neutrophil hydrolases have digested the tissue"
+      it: "Una sovrainfezione batterica in cui le idrolasi dei neutrofili hanno digerito il tessuto"
+    correct: false
+    why:
+      en: "Neutrophil hydrolases liquefy tissue in an abscess, but here cultures are sterile and brain infarcts liquefy without needing acute inflammation; liquefaction in the brain is not evidence of infection."
+      it: "Le idrolasi dei neutrofili colliquano il tessuto in un ascesso, ma qui le colture sono sterili e gli infarti cerebrali vanno incontro a colliquazione senza bisogno di infiammazione acuta: la colliquazione nel cervello non dimostra un'infezione."
+  - id: b
+    text:
+      en: "The necrosis was liquefactive from the first hour, without any coagulative phase"
+      it: "La necrosi è stata colliquativa fin dalla prima ora, senza alcuna fase coagulativa"
+    correct: false
+    why:
+      en: "A brain infarct is coagulative at first (red, shrunken neurons in the first day) and liquefies only over the following days."
+      it: "L'infarto cerebrale è inizialmente coagulativo (neuroni rossi e retratti nel primo giorno) e va incontro a colliquazione solo nei giorni successivi."
+  - id: c
+    text:
+      en: "Saponification of myelin lipids by calcium, as in fat necrosis"
+      it: "La saponificazione dei lipidi della mielina da parte del calcio, come nella steatonecrosi"
+    correct: false
+    why:
+      en: "Fat necrosis is confined to adipose tissue: lipase frees fatty acids from stored triglyceride, and these bind calcium as soaps. It is not the mechanism of brain softening."
+      it: "La steatonecrosi è limitata al tessuto adiposo: la lipasi libera acidi grassi dai trigliceridi di deposito, che legano il calcio formando saponi. Non è il meccanismo del rammollimento cerebrale."
+  - id: d
+    text:
+      en: "After an initial coagulative phase, brain tissue dissolves by a mechanism independent of acute inflammation, probably through its own abundant lysosomal hydrolases"
+      it: "Dopo una fase coagulativa iniziale, il tessuto cerebrale si dissolve con un meccanismo indipendente dall'infiammazione acuta, probabilmente per opera delle sue abbondanti idrolasi lisosomiali"
+    correct: true
+    why:
+      en: "Correct. Brain infarcts start coagulative and then liquefy; acute inflammation does not explain it, and the brain's own lysosomal or CNS-specific enzymes are the suspected cause. Over weeks to months the area becomes a fluid-filled cyst."
+      it: "Corretto. L'infarto cerebrale inizia come necrosi coagulativa e poi colliqua; l'infiammazione acuta non lo spiega e si sospettano gli enzimi lisosomiali propri del tessuto nervoso. Nell'arco di settimane o mesi l'area diventa una cavità cistica piena di liquido."
+  - id: e
+    text:
+      en: "Coagulative necrosis identical to that of a renal infarct, whose cell outlines will persist until a fibrous scar forms"
+      it: "Una necrosi coagulativa identica a quella dell'infarto renale, i cui profili cellulari persisteranno fino alla formazione di una cicatrice fibrosa"
+    correct: false
+    why:
+      en: "Ischemic necrosis is coagulative in most organs, but the brain is the exception: its infarcts liquefy and end as a cyst rather than a scar."
+      it: "La necrosi ischemica è coagulativa nella maggior parte degli organi, ma il cervello fa eccezione: i suoi infarti colliquano ed esitano in una cisti, non in una cicatrice."
+backLink: { entity: liquefactive-necrosis, section: pathogenesis }
+claims:
+  - liquefactive-necrosis-c012
+  - liquefactive-necrosis-c016
+  - liquefactive-necrosis-c017
+  - liquefactive-necrosis-c022
+  - liquefactive-necrosis-c028
+  - liquefactive-necrosis-c030
+  - liquefactive-necrosis-c053
+  - liquefactive-necrosis-c058
+  - liquefactive-necrosis-c059
+  - coagulative-necrosis-c003
+  - coagulative-necrosis-c054
+  - fat-necrosis-c001
+  - fat-necrosis-c012
+  - fat-necrosis-c013
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

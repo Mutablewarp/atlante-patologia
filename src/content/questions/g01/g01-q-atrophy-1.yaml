@@ -1,0 +1,47 @@
+id: g01-q-atrophy-1
+module: g01
+entities: [atrophy]
+kind: mcq
+difficulty: 2
+tags: [cellular-adaptation, atrophy]
+stem:
+  it: "Un ragazzo di 24 anni ha portato per 8 settimane un gesso femoro-podalico per una frattura di tibia. Alla rimozione il polpaccio è nettamente più sottile del controlaterale e la forza è ridotta; la sensibilità e i riflessi sono normali. Quale affermazione spiega meglio il quadro e la sua evoluzione attesa?"
+  en: "A 24-year-old man has worn a long-leg cast for 8 weeks after a tibial fracture. When it is removed, his calf is clearly thinner than the other one and his strength is reduced; sensation and reflexes are normal. Which statement best explains the finding and its expected course?"
+options:
+  - id: a
+    text:
+      it: "Le fibre muscolari si sono rimpicciolite perché la degradazione proteica, soprattutto tramite il sistema ubiquitina–proteasoma, ha superato la sintesi; con la ripresa dell'uso il muscolo recupera."
+      en: "The muscle fibers have shrunk because protein breakdown, largely through the ubiquitin–proteasome system, has outpaced synthesis; the muscle recovers once it is used again."
+    correct: true
+    why:
+      it: "Corretta. È un'atrofia da disuso: le cellule restano vitali ma più piccole, perché il bilancio tra sintesi e degradazione pende verso quest'ultima (proteine ubiquitinate e distrutte dal proteasoma, con il contributo dell'autofagia). Trattandosi di riduzione di volume e non di perdita di cellule, il processo è reversibile."
+      en: "Correct. This is disuse atrophy: the cells stay viable but smaller because the balance between synthesis and breakdown tips toward breakdown (proteins tagged with ubiquitin and destroyed by the proteasome, with help from autophagy). Because the cells shrink rather than disappear, the change is reversible."
+  - id: b
+    text:
+      it: "Molte fibre sono andate perdute per morte cellulare, per cui la massa muscolare non potrà essere recuperata."
+      en: "Many fibers have been lost through cell death, so the muscle mass cannot be regained."
+    correct: false
+    why:
+      it: "Errata. L'atrofia irreversibile è quella da perdita di cellule, come nel cervello della malattia di Alzheimer. Nel disuso le fibre si rimpiccioliscono ma sopravvivono, e tornano alle dimensioni normali quando l'arto viene di nuovo usato."
+      en: "Incorrect. Irreversible atrophy is the kind caused by cell loss, as in the brain in Alzheimer disease. In disuse the fibers shrink but survive, and they regain their normal size when the limb is used again."
+  - id: c
+    text:
+      it: "L'immobilizzazione ha attivato la via IGF-1–Akt–mTORC1, che ha spostato il metabolismo delle fibre verso il catabolismo."
+      en: "Immobilization has switched on the IGF-1–Akt–mTORC1 pathway, which has shifted fiber metabolism toward breakdown."
+    correct: false
+    why:
+      it: "Errata. La via IGF-1–Akt–mTORC1 favorisce la sintesi proteica e, nell'adulto, soprattutto frena l'atrofia (Akt tiene a bada FOXO). La sua attivazione si associa all'ipertrofia, non all'atrofia."
+      en: "Incorrect. The IGF-1–Akt–mTORC1 pathway favors protein synthesis and, in adults, mainly holds atrophy back (Akt keeps FOXO in check). Its activation goes with hypertrophy, not atrophy."
+  - id: d
+    text:
+      it: "È un consumo passivo dei componenti cellulari, senza sintesi né degradazione regolate."
+      en: "It is passive wear of cell components, with no regulated synthesis or breakdown."
+    correct: false
+    why:
+      it: "Errata. Come l'ipertrofia, l'atrofia è un processo attivo: la cellula costruisce selettivamente alcuni componenti e ne elimina altri. Considerarla un semplice deperimento passivo è una trappola d'esame classica."
+      en: "Incorrect. Like hypertrophy, atrophy is an active process: the cell selectively builds some components and removes others. Treating it as simple passive wasting is a classic exam trap."
+backLink: { entity: atrophy, section: pathogenesis }
+claims: [atrophy-c010, atrophy-c019, atrophy-c020, atrophy-c022, atrophy-c023, atrophy-c025, atrophy-c027, atrophy-c046, atrophy-c047, atrophy-c060, atrophy-c062, hypertrophy-c018]
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

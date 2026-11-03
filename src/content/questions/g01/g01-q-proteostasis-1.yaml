@@ -1,0 +1,55 @@
+id: g01-q-proteostasis-1
+module: g01
+entities: [protein-quality-control]
+kind: mcq
+difficulty: 1
+tags: [proteostasis]
+stem:
+  it: "Un bambino di 6 anni ha infezioni respiratorie ricorrenti, feci grasse e un test del sudore con cloro elevato. L'analisi genetica mostra omozigosi per la mutazione ΔF508 del gene CFTR. Quale destino segue, nella cellula epiteliale, la proteina CFTR mutata?"
+  en: "A 6-year-old boy has recurrent chest infections, fatty stools and a raised sweat chloride. Genetic testing shows he is homozygous for the ΔF508 mutation in CFTR. What happens to the mutant CFTR protein inside his epithelial cells?"
+options:
+  - id: a
+    text:
+      it: "Si accumula nel citoplasma sotto forma di globuli PAS-positivi resistenti alla diastasi."
+      en: "It builds up in the cytoplasm as PAS-positive, diastase-resistant globules."
+    correct: false
+    why:
+      it: "Questo è il quadro del deficit di α1-antitripsina, in cui la proteina mal ripiegata resta nell'epatocita. La CFTR mutata, invece, viene degradata: la fibrosi cistica è una malattia da perdita di funzione, non da accumulo."
+      en: "That is the picture of α1-antitrypsin deficiency, where the misfolded protein is retained in hepatocytes. Mutant CFTR is degraded instead: cystic fibrosis is a loss-of-function disease, not a storage disease."
+  - id: b
+    text:
+      it: "Raggiunge la membrana apicale in quantità normale, ma il canale non riesce ad aprirsi."
+      en: "It reaches the apical membrane in normal amounts, but the channel cannot open."
+    correct: false
+    why:
+      it: "Esistono mutazioni di CFTR che arrivano in membrana ma funzionano male, ma la ΔF508 non è tra queste: la proteina non supera il controllo di qualità e viene degradata prima di arrivare in superficie."
+      en: "Some CFTR mutations do reach the membrane and then malfunction, but ΔF508 is not one of them: the protein fails quality control and is degraded before it reaches the surface."
+  - id: c
+    text:
+      it: "Si ripiega male nel reticolo endoplasmatico, viene marcata con ubiquitina e distrutta dal proteasoma, per cui raggiunge la membrana apicale in quantità minima."
+      en: "It misfolds in the endoplasmic reticulum, is tagged with ubiquitin and destroyed by the proteasome, so very little reaches the apical membrane."
+    correct: true
+    why:
+      it: "Corretto. Le proteine di membrana che non si ripiegano nel reticolo endoplasmatico vengono riportate nel citosol, ubiquitinate e degradate dal proteasoma (ERAD). La CFTR ΔF508 viene così eliminata prima di arrivare in superficie: manca il canale del cloro, non c'è accumulo."
+      en: "Correct. Membrane proteins that fail to fold in the endoplasmic reticulum are sent back to the cytosol, ubiquitinated and degraded by the proteasome (ERAD). ΔF508 CFTR is removed before it reaches the surface: the chloride channel is missing, and nothing is stored."
+  - id: d
+    text:
+      it: "Viene secreta e si deposita nello spazio extracellulare come amiloide."
+      en: "It is secreted and deposited in the extracellular space as amyloid."
+    correct: false
+    why:
+      it: "L'amiloide nasce da proteine mal ripiegate a foglietto β depositate fuori dalla cellula. La CFTR ΔF508 non lascia il reticolo endoplasmatico: viene distrutta all'interno della cellula dal proteasoma."
+      en: "Amyloid forms from misfolded β-sheet proteins deposited outside cells. ΔF508 CFTR never leaves the endoplasmic reticulum: it is destroyed inside the cell by the proteasome."
+backLink: { entity: protein-quality-control, section: clinical }
+claims:
+  - protein-quality-control-c018
+  - protein-quality-control-c035
+  - protein-quality-control-c036
+  - protein-quality-control-c040
+  - protein-quality-control-c041
+  - protein-quality-control-c047
+  - protein-quality-control-c061
+  - protein-quality-control-c066
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

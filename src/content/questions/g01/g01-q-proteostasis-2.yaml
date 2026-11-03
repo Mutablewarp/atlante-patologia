@@ -1,0 +1,63 @@
+id: g01-q-proteostasis-2
+module: g01
+entities: [protein-quality-control]
+kind: mcq
+difficulty: 2
+tags: [proteostasis]
+stem:
+  it: "Un uomo di 29 anni sviluppa tremore a riposo, rigidità e bradicinesia; il fratello ha avuto lo stesso disturbo a 31 anni. L'analisi genetica rivela mutazioni con perdita di funzione nel gene della parkina. Quale tappa del controllo di qualità delle proteine svolge normalmente la proteina mutata?"
+  en: "A 29-year-old man develops resting tremor, rigidity and bradykinesia; his brother had the same disorder at 31. Genetic testing shows loss-of-function mutations in the gene encoding parkin. Which step of protein quality control does the mutated protein normally perform?"
+options:
+  - id: a
+    text:
+      it: "Attiva l'ubiquitina e la cede all'enzima successivo della cascata."
+      en: "It activates ubiquitin and hands it on to the next enzyme in the cascade."
+    correct: false
+    why:
+      it: "È il compito dell'enzima E1, il primo anello della cascata. L'E1 non sceglie il bersaglio: la parkina agisce più a valle, come ligasi E3."
+      en: "That is the job of the E1 enzyme, the first link in the cascade. E1 does not choose the target: parkin acts further downstream, as an E3 ligase."
+  - id: b
+    text:
+      it: "Riconosce proteine bersaglio specifiche e vi trasferisce l'ubiquitina, decidendo quali proteine verranno eliminate."
+      en: "It recognizes specific target proteins and transfers ubiquitin onto them, deciding which proteins will be removed."
+    correct: true
+    why:
+      it: "Corretto. La parkina è una ligasi E3; sono le ligasi E3 a dare specificità all'ubiquitinazione. La sua perdita è una causa di alcune forme ereditarie di malattia di Parkinson. La parkina è richiamata anche sui mitocondri danneggiati, che vengono poi eliminati per mitofagia."
+      en: "Correct. Parkin is an E3 ubiquitin ligase, and E3 ligases are what give ubiquitination its specificity. Loss of parkin causes some hereditary forms of Parkinson disease. Parkin is also recruited to damaged mitochondria, which are then removed by mitophagy."
+  - id: c
+    text:
+      it: "Rimuove le catene di ubiquitina dai substrati, rendendo reversibile la marcatura."
+      en: "It removes ubiquitin chains from substrates, making the tag reversible."
+    correct: false
+    why:
+      it: "È la funzione delle deubiquitinasi (DUB), che rifiniscono o tolgono la marcatura. La parkina fa l'opposto: aggiunge ubiquitina al bersaglio."
+      en: "That is what deubiquitinating enzymes (DUBs) do: they trim or remove the tag. Parkin does the opposite: it adds ubiquitin to its target."
+  - id: d
+    text:
+      it: "Riconosce la catena di ubiquitina e, consumando ATP, apre l'accesso al nucleo catalitico 20S."
+      en: "It recognizes the ubiquitin chain and uses ATP to open the gate to the 20S catalytic core."
+    correct: false
+    why:
+      it: "Questo è il ruolo delle particelle regolatrici 19S del proteasoma 26S, che agiscono dopo che il substrato è già stato marcato. La parkina interviene prima, nella marcatura stessa."
+      en: "That is the role of the 19S regulatory particles of the 26S proteasome, which act after the substrate has already been tagged. Parkin works earlier, in the tagging itself."
+  - id: e
+    text:
+      it: "Attende le catene nascenti al ribosoma e le aiuta a ripiegarsi correttamente."
+      en: "It waits for nascent chains at the ribosome and helps them fold correctly."
+    correct: false
+    why:
+      it: "È il compito dei chaperoni, in particolare di HSP70 con l'aiuto di HSP40. La parkina non ripiega le proteine, ma le marca con l'ubiquitina."
+      en: "That is the task of chaperones, especially HSP70 helped by HSP40. Parkin does not fold proteins; it tags them with ubiquitin."
+backLink: { entity: protein-quality-control, section: pathogenesis }
+claims:
+  - protein-quality-control-c011
+  - protein-quality-control-c012
+  - protein-quality-control-c015
+  - protein-quality-control-c017
+  - protein-quality-control-c023
+  - protein-quality-control-c037
+  - autophagy-c015
+  - autophagy-c027
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

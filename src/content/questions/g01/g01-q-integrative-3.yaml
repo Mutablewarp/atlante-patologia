@@ -1,0 +1,55 @@
+id: g01-q-integrative-3
+module: g01
+entities: [dystrophic-calcification, caseous-necrosis, metastatic-calcification, liquefactive-necrosis]
+kind: mcq
+difficulty: 1
+tags: [integrative, dystrophic-calcification, caseous-necrosis, metastatic-calcification]
+stem:
+  it: "Una donna di 72 anni, emigrata da un Paese in cui la tubercolosi è endemica, esegue una radiografia del torace prima di un intervento di cataratta. Non ha sintomi respiratori. Si osservano un piccolo nodulo subpleurico denso, nettamente delimitato e calcificato nel polmone destro e un linfonodo ilare omolaterale anch'esso calcificato. Calcemia, fosfatemia e paratormone sono normali. Quale affermazione spiega meglio queste calcificazioni?"
+  en: "A 72-year-old woman who emigrated from a country where tuberculosis is endemic has a chest radiograph before cataract surgery. She has no respiratory symptoms. It shows a small, dense, sharply outlined, calcified subpleural nodule in the right lung and a calcified ipsilateral hilar lymph node. Serum calcium, phosphate and parathyroid hormone are normal. Which statement best explains these calcifications?"
+options:
+  - id: a
+    text:
+      it: "Calcificazione metastatica: un prodotto calcio-fosforo elevato fa precipitare sali di calcio nel tessuto polmonare."
+      en: "Metastatic calcification: a raised calcium-phosphorus product makes calcium salts precipitate in lung tissue."
+    correct: false
+    why:
+      it: "Errata. La calcificazione metastatica richiede un disturbo sistemico del metabolismo del calcio o del fosfato (ipercalcemia e/o iperfosfatemia) e colpisce tessuti prima normali; qui gli esami sono normali e i depositi sono confinati a due focolai."
+      en: "Incorrect. Metastatic calcification needs a systemic disorder of calcium or phosphate (hypercalcemia and/or hyperphosphatemia) and affects previously normal tissues; here the tests are normal and the deposits are confined to two foci."
+  - id: b
+    text:
+      it: "Calcificazione distrofica di focolai di necrosi caseosa guariti di una tubercolosi primaria: il calcio precipita nel tessuto necrotico pur con un metabolismo del calcio normale."
+      en: "Dystrophic calcification of healed foci of caseous necrosis from primary tuberculosis: calcium precipitates in necrotic tissue even though calcium metabolism is normal."
+    correct: true
+    why:
+      it: "Corretta. Il focolaio di Ghon e il linfonodo regionale guariscono con fibrosi e calcificazione. Gli acidi grassi derivati dalle membrane delle cellule morte legano il calcio e fanno da nucleo per la precipitazione; la calcemia resta normale. Spesso queste calcificazioni non hanno conseguenze funzionali."
+      en: "Correct. The Ghon focus and the regional node heal by fibrosis and calcification. Fatty acids derived from the membranes of dead cells bind calcium and seed its precipitation; serum calcium stays normal. Such calcifications often have no functional consequence."
+  - id: c
+    text:
+      it: "Deposizione di calcio nei setti alveolari normali, favorita dall'alcalinità locale."
+      en: "Calcium deposition in normal alveolar septa, favored by local alkalinity."
+    correct: false
+    why:
+      it: "Errata. La predilezione per sedi a pH locale alcalino, come i setti alveolari, è tipica della calcificazione metastatica, che richiede un disturbo sistemico assente in questa paziente. Qui il calcio si deposita in focolai di tessuto necrotico."
+      en: "Incorrect. A preference for sites with local alkalinity, such as alveolar septa, is typical of metastatic calcification, which needs a systemic disorder this patient lacks. Here the calcium lies in foci of necrotic tissue."
+  - id: d
+    text:
+      it: "Segno di tubercolosi attiva in progressione, perché la calcificazione compare solo nei focolai in cui i micobatteri si stanno moltiplicando."
+      en: "A sign of active, progressing tuberculosis, because calcification appears only in foci where mycobacteria are multiplying."
+    correct: false
+    why:
+      it: "Errata. La calcificazione indica guarigione: i focolai caseosi o guariscono con fibrosi e calcificazione oppure erodono un bronco e cavitano. Una paziente asintomatica con lesioni calcificate ben delimitate ha un complesso primario guarito."
+      en: "Incorrect. Calcification marks healing: caseous foci either heal with fibrosis and calcification or erode into a bronchus and cavitate. An asymptomatic patient with well-outlined calcified lesions has a healed primary complex."
+  - id: e
+    text:
+      it: "I neutrofili hanno digerito il materiale caseoso trasformandolo in pus, che poi si è mineralizzato."
+      en: "Neutrophils digested the caseous material into pus, which then mineralized."
+    correct: false
+    why:
+      it: "Errata. Nella necrosi caseosa i detriti non vengono digeriti dai neutrofili come nella necrosi colliquativa: persistono come materiale granulare eosinofilo amorfo finché non calcificano o si svuotano in un bronco."
+      en: "Incorrect. In caseous necrosis the debris is not digested by neutrophils as in liquefactive necrosis: it persists as amorphous granular eosinophilic material until it calcifies or drains into a bronchus."
+backLink: { entity: dystrophic-calcification, section: definition }
+claims: [dystrophic-calcification-c002, dystrophic-calcification-c005, dystrophic-calcification-c017, dystrophic-calcification-c034, dystrophic-calcification-c040, dystrophic-calcification-c050, dystrophic-calcification-c056, dystrophic-calcification-c057, caseous-necrosis-c017, caseous-necrosis-c026, caseous-necrosis-c039, caseous-necrosis-c054, caseous-necrosis-c058, caseous-necrosis-c065, metastatic-calcification-c001, metastatic-calcification-c004, metastatic-calcification-c011, liquefactive-necrosis-c052]
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

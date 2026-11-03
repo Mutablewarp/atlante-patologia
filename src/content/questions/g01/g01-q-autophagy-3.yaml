@@ -1,0 +1,65 @@
+id: g01-q-autophagy-3
+module: g01
+entities: [autophagy, protein-quality-control]
+kind: mcq
+difficulty: 3
+tags: [autophagy, proteostasis]
+stem:
+  it: "All'autopsia di un paziente con una malattia neurodegenerativa progressiva, molti neuroni contengono grandi aggregati citoplasmatici di una proteina mal ripiegata, marcata con catene di poliubiquitina. In una cellula che funziona ancora bene, per quale via aggregati di questo tipo vengono normalmente smaltiti?"
+  en: "At autopsy of a patient with a progressive neurodegenerative disease, many neurons contain large cytoplasmic aggregates of a misfolded protein tagged with polyubiquitin chains. In a cell that is still working well, by which route are aggregates like these normally cleared?"
+options:
+  - id: a
+    text:
+      it: "Le particelle 19S staccano l'ubiquitina e introducono l'intero aggregato nel nucleo catalitico del proteasoma 26S."
+      en: "The 19S particles strip off the ubiquitin and feed the whole aggregate into the catalytic core of the 26S proteasome."
+    correct: false
+    why:
+      it: "Le particelle 19S fanno davvero questo per le singole proteine ubiquitinate, ma un aggregato è troppo grande per entrare nel proteasoma: per questo viene dirottato verso l'autofagia."
+      en: "The 19S particles do this for single ubiquitinated proteins, but an aggregate is too large to enter the proteasome; that is why it is diverted to autophagy."
+  - id: b
+    text:
+      it: "Hsc70 scorta l'aggregato fino al recettore LAMP-2A, che lo trasporta attraverso la membrana lisosomiale senza vescicole."
+      en: "Hsc70 escorts the aggregate to the LAMP-2A receptor, which moves it across the lysosomal membrane without a vesicle."
+    correct: false
+    why:
+      it: "Questa è l'autofagia mediata da chaperoni, che trasferisce singole proteine attraverso la membrana lisosomiale. Gli aggregati seguono una via diversa: vengono racchiusi in un autofagosoma tramite p62."
+      en: "This is chaperone-mediated autophagy, which moves single proteins across the lysosomal membrane. Aggregates take a different route: they are enclosed in an autophagosome through p62."
+  - id: c
+    text:
+      it: "La proteina adattatrice p62 lega l'aggregato ubiquitinato e lo ancora a un fagoforo; l'autofagosoma che ne deriva si fonde con un lisosoma."
+      en: "The adaptor protein p62 binds the ubiquitinated aggregate and tethers it to a phagophore; the resulting autophagosome fuses with a lysosome."
+    correct: true
+    why:
+      it: "Corretto. Gli aggregati sono troppo grandi per il proteasoma, per cui le catene di ubiquitina vengono riconosciute da p62, che consegna l'aggregato all'autofagosoma; la degradazione avviene nel lisosoma. Se questa via si inceppa, gli aggregati si accumulano più in fretta di quanto vengano rimossi."
+      en: "Correct. Aggregates are too large for the proteasome, so their ubiquitin chains are recognized by p62, which delivers the aggregate to an autophagosome; breakdown happens in the lysosome. When this route falters, aggregates build up faster than they are removed."
+  - id: d
+    text:
+      it: "I proteasomi 20S lo degradano direttamente, senza bisogno di ubiquitina, come fanno con le proteine lievemente ossidate."
+      en: "20S proteasomes degrade it directly, with no need for ubiquitin, as they do with mildly oxidized proteins."
+    correct: false
+    why:
+      it: "I proteasomi 20S degradano senza ubiquitina soltanto proteine singole lievemente danneggiate. Un aggregato insolubile, già marcato con ubiquitina, non può entrare nel proteasoma."
+      en: "20S proteasomes degrade only single, mildly damaged proteins without ubiquitin. An insoluble aggregate, already tagged with ubiquitin, cannot enter the proteasome."
+  - id: e
+    text:
+      it: "Le deubiquitinasi rimuovono l'ubiquitina e ciò basta perché la proteina ritorni spontaneamente alla sua forma nativa."
+      en: "Deubiquitinating enzymes remove the ubiquitin, and that alone lets the protein refold spontaneously into its native shape."
+    correct: false
+    why:
+      it: "Le deubiquitinasi rendono reversibile la marcatura, ma non ripiegano le proteine. Togliere l'ubiquitina non dissolve l'aggregato, che resta da smaltire per via autofagica."
+      en: "Deubiquitinating enzymes make the tag reversible, but they do not refold proteins. Removing the ubiquitin does not dissolve the aggregate, which still has to be cleared by autophagy."
+backLink: { entity: autophagy, section: pathogenesis }
+claims:
+  - autophagy-c013
+  - autophagy-c025
+  - autophagy-c028
+  - autophagy-c040
+  - autophagy-c058
+  - autophagy-c065
+  - protein-quality-control-c015
+  - protein-quality-control-c017
+  - protein-quality-control-c032
+  - protein-quality-control-c065
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

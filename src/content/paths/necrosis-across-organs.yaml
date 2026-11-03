@@ -1,0 +1,17 @@
+id: necrosis-across-organs
+kind: horizontal
+title:
+  it: "La necrosi nei diversi organi"
+  en: "Necrosis across organs"
+description:
+  it: "Un processo, sei quadri morfologici. Si parte dal confronto tra i tipi di necrosi e poi si segue ciascuno negli organi in cui compare: cuore e rene, encefalo, polmone e linfonodi, pancreas e mammella, pareti vasali, arti e intestino."
+  en: "One process, six morphologic patterns. Start from the side-by-side comparison of necrosis types, then follow each into the organs where it appears: heart and kidney, brain, lung and lymph nodes, pancreas and breast, vessel walls, limbs and bowel."
+steps:
+  # Pattern Page p01 "Types of necrosis" (src/content/patterns/p01-necrosis)
+  - pattern: p01-necrosis
+  - entity: coagulative-necrosis
+  - entity: liquefactive-necrosis
+  - entity: caseous-necrosis
+  - entity: fat-necrosis
+  - entity: fibrinoid-necrosis
+  - entity: gangrene

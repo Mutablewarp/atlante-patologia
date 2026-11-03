@@ -1,0 +1,63 @@
+id: g01-q-proteostasis-3
+module: g01
+entities: [protein-quality-control]
+kind: mcq
+difficulty: 3
+tags: [proteostasis]
+stem:
+  it: "Un uomo di 66 anni con dolori ossei e anemia ha una componente monoclonale IgG; la biopsia osteomidollare mostra lamine di plasmacellule. Inizia una terapia con un inibitore del proteasoma, che uccide le cellule neoplastiche molto più delle altre cellule dell'organismo. Quale meccanismo spiega meglio questa vulnerabilità selettiva?"
+  en: "A 66-year-old man with bone pain and anemia has a monoclonal IgG spike; his bone marrow biopsy shows sheets of plasma cells. He starts a proteasome inhibitor, which kills the tumor cells far more than other cells in the body. Which mechanism best explains this selective vulnerability?"
+options:
+  - id: a
+    text:
+      it: "Il farmaco accelera la degradazione di IκB, liberando NF-κB che attiva geni pro-apoptotici."
+      en: "The drug speeds up the degradation of IκB, freeing NF-κB to switch on pro-apoptotic genes."
+    correct: false
+    why:
+      it: "La direzione è sbagliata due volte. IκB viene degradato dal proteasoma, quindi l'inibizione lo stabilizza e NF-κB resta legato e inattivo. Inoltre NF-κB attiva geni di sopravvivenza, non di morte."
+      en: "The direction is wrong twice over. IκB is degraded by the proteasome, so inhibition stabilizes it and NF-κB stays bound and inactive. Moreover, NF-κB switches on survival genes, not death genes."
+  - id: b
+    text:
+      it: "Il farmaco blocca l'enzima E1, per cui l'immunoglobulina monoclonale circolante nel plasma non può più essere ubiquitinata."
+      en: "The drug blocks the E1 enzyme, so the circulating monoclonal immunoglobulin in plasma can no longer be ubiquitinated."
+    correct: false
+    why:
+      it: "Un inibitore del proteasoma agisce sul proteasoma, non sulla cascata di ubiquitinazione, e il sistema ubiquitina-proteasoma opera dentro la cellula, non sulle proteine già secrete nel plasma."
+      en: "A proteasome inhibitor acts on the proteasome, not on the ubiquitination cascade, and the ubiquitin–proteasome system works inside cells, not on proteins already secreted into plasma."
+  - id: c
+    text:
+      it: "Le plasmacellule sono prive di autofagia, per cui il proteasoma è la loro unica via di degradazione."
+      en: "Plasma cells lack autophagy, so the proteasome is their only degradation route."
+    correct: false
+    why:
+      it: "L'autofagia è attiva a livello basale in tutte le cellule ed è indispensabile per l'omeostasi; le due vie possono in parte compensarsi. La vulnerabilità del mieloma deriva dal carico di proteine di secrezione, non dall'assenza di autofagia."
+      en: "Autophagy runs at a basal level in all cells and is required for homeostasis, and the two routes can partly compensate for each other. Myeloma's vulnerability comes from its secretory protein load, not from a lack of autophagy."
+  - id: d
+    text:
+      it: "Il farmaco agisce solo sugli immunoproteasomi, presenti esclusivamente nelle plasmacellule."
+      en: "The drug acts only on immunoproteasomes, which are found only in plasma cells."
+    correct: false
+    why:
+      it: "Gli immunoproteasomi non sono esclusivi delle plasmacellule: molte cellule li assemblano in risposta a segnali infiammatori come IFNγ e TNFα. La selettività non dipende dal tipo di proteasoma."
+      en: "Immunoproteasomes are not unique to plasma cells: many cells assemble them in response to inflammatory signals such as IFNγ and TNFα. The selectivity does not depend on the type of proteasome."
+  - id: e
+    text:
+      it: "Le cellule producono enormi quantità di immunoglobulina da secernere; con il proteasoma bloccato, le proteine mal ripiegate che normalmente verrebbero eliminate si accumulano e sopraffanno la cellula."
+      en: "The cells make huge amounts of secretory immunoglobulin; with the proteasome blocked, the misfolded proteins it would normally remove pile up and overwhelm the cell."
+    correct: true
+    why:
+      it: "Corretto. Il proteasoma elimina, tramite l'ERAD, le proteine di secrezione che non riescono a ripiegarsi. Una cellula che secerne moltissima proteina dipende più delle altre da questa via: se viene inibita, la cellula soccombe ai propri prodotti. Per questo gli inibitori del proteasoma si usano nel mieloma plasmacellulare."
+      en: "Correct. Through ERAD, the proteasome clears secretory proteins that fail to fold. A cell that secretes large amounts of protein depends on this route more than other cells do; once it is blocked, the cell is overwhelmed by its own products. That is why proteasome inhibitors are used in plasma cell myeloma."
+backLink: { entity: protein-quality-control, section: prognosis }
+claims:
+  - protein-quality-control-c018
+  - protein-quality-control-c019
+  - protein-quality-control-c020
+  - protein-quality-control-c048
+  - protein-quality-control-c049
+  - protein-quality-control-c062
+  - autophagy-c002
+  - autophagy-c029
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

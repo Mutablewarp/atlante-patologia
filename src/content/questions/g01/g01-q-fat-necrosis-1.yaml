@@ -1,0 +1,58 @@
+id: g01-q-fat-necrosis-1
+module: g01
+entities: [fat-necrosis]
+kind: mcq
+difficulty: 2
+tags: [necrosis, necrosis-fat]
+stem:
+  en: "A 47-year-old man who drinks heavily presents with severe epigastric pain radiating to the back and repeated vomiting; serum lipase is markedly raised. On the second day he reports tingling around the mouth, and his hand goes into spasm when a blood-pressure cuff is inflated on the arm. His serum calcium is low. Which process in the abdomen best explains this new finding?"
+  it: "Un uomo di 47 anni, forte bevitore, si presenta con un intenso dolore epigastrico irradiato al dorso e vomito ripetuto; la lipasi sierica è molto aumentata. Il secondo giorno riferisce formicolio periorale e la mano va in spasmo quando si gonfia il bracciale dello sfigmomanometro sul braccio. La calcemia è bassa. Quale processo addominale spiega meglio questo nuovo reperto?"
+options:
+  - id: a
+    text:
+      en: "Lipase frees fatty acids from peripancreatic fat, and these bind calcium as insoluble soaps (saponification)"
+      it: "La lipasi libera acidi grassi dal tessuto adiposo peripancreatico, che legano il calcio formando saponi insolubili (saponificazione)"
+    correct: true
+    why:
+      en: "Correct. Leaked enzymes open adipocytes, lipase splits the released triglyceride into fatty acids, and these precipitate with calcium as soaps (chalky white foci). Soap formation consumes calcium, so hypocalcemia, with neuromuscular irritability when marked, can follow."
+      it: "Corretto. Gli enzimi fuoriusciti aprono gli adipociti, la lipasi scinde i trigliceridi liberati in acidi grassi, che precipitano con il calcio formando saponi (foci bianco-gessosi). La formazione dei saponi consuma calcio, per cui può comparire ipocalcemia, con ipereccitabilità neuromuscolare quando è marcata."
+  - id: b
+    text:
+      en: "An underlying hypercalcemia, which is a recognized cause of acute pancreatitis"
+      it: "Un'ipercalcemia di base, che è una causa riconosciuta di pancreatite acuta"
+    correct: false
+    why:
+      en: "Hypercalcemia can cause pancreatitis, but this patient's calcium is low; the fall in blood calcium is a consequence of fat necrosis, not its cause."
+      it: "L'ipercalcemia può causare pancreatite, ma in questo paziente la calcemia è bassa: il calo del calcio è una conseguenza della steatonecrosi, non la sua causa."
+  - id: c
+    text:
+      en: "Neutrophil enzymes liquefying the pancreas into an abscess"
+      it: "Gli enzimi dei neutrofili che colliquano il pancreas formando un ascesso"
+    correct: false
+    why:
+      en: "Liquefactive necrosis dissolves tissue into fluid; it forms no soaps and does not explain a fall in calcium."
+      it: "La necrosi colliquativa trasforma il tessuto in liquido; non forma saponi e non spiega il calo della calcemia."
+  - id: d
+    text:
+      en: "Accumulation of triglyceride inside hepatocytes (alcoholic fatty change)"
+      it: "L'accumulo di trigliceridi negli epatociti (steatosi alcolica)"
+    correct: false
+    why:
+      en: "Fatty change is lipid stored inside living parenchymal cells; there is no necrosis of adipose tissue and no soap formation, so it does not lower blood calcium."
+      it: "La steatosi è lipide accumulato in cellule parenchimali vive; non c'è necrosi del tessuto adiposo né formazione di saponi, quindi non abbassa la calcemia."
+backLink: { entity: fat-necrosis, section: clinical }
+claims:
+  - fat-necrosis-c003
+  - fat-necrosis-c011
+  - fat-necrosis-c012
+  - fat-necrosis-c013
+  - fat-necrosis-c015
+  - fat-necrosis-c028
+  - fat-necrosis-c038
+  - fat-necrosis-c043
+  - fat-necrosis-c048
+  - fat-necrosis-c050
+  - fat-necrosis-c053
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

@@ -1,0 +1,55 @@
+id: g01-q-metaplasia-1
+module: g01
+entities: [metaplasia]
+kind: mcq
+difficulty: 1
+tags: [cellular-adaptation, metaplasia]
+stem:
+  it: "Un uomo di 48 anni fuma un pacchetto di sigarette al giorno da 30 anni. Una biopsia bronchiale, eseguita per tosse cronica, mostra che in un'ampia area l'epitelio cilindrico ciliato è sostituito da epitelio squamoso pluristratificato; le cellule maturano regolarmente dalla base alla superficie e non presentano atipie nucleari. Quale affermazione su questa alterazione è corretta?"
+  en: "A 48-year-old man has smoked a pack of cigarettes a day for 30 years. A bronchial biopsy taken for chronic cough shows that, over a wide area, the ciliated columnar lining has been replaced by stratified squamous epithelium; the cells mature normally from base to surface and show no nuclear atypia. Which statement about this change is correct?"
+options:
+  - id: a
+    text:
+      it: "È un adattamento: l'epitelio squamoso resiste meglio al fumo, ma si perdono la produzione di muco e la clearance ciliare; di solito regredisce se il paziente smette di fumare."
+      en: "It is an adaptation: squamous epithelium withstands smoke better, but mucus production and ciliary clearance are lost; it usually regresses if the patient stops smoking."
+    correct: true
+    why:
+      it: "Corretta. È una metaplasia squamosa: un tipo cellulare maturo viene sostituito da un altro più resistente all'insulto cronico. Il prezzo è la perdita di funzione (meno muco, niente trasporto ciliare), e una volta rimosso lo stimolo l'epitelio bronchiale torna cilindrico."
+      en: "Correct. This is squamous metaplasia: one mature cell type is replaced by another that better tolerates the chronic insult. The price is lost function (less mucus, no ciliary transport), and once the stimulus is removed the bronchial lining returns to columnar."
+  - id: b
+    text:
+      it: "È una displasia, cioè una lesione precancerosa con alterata maturazione."
+      en: "It is dysplasia, a precancerous lesion with disordered maturation."
+    correct: false
+    why:
+      it: "Errata. La displasia richiede atipie nucleari (nuclei grandi, ipercromatici, irregolari), mitosi lontane dallo strato basale e perdita della maturazione ordinata. Qui le cellule maturano normalmente e non sono atipiche: sono cellule normali di un altro tipo."
+      en: "Incorrect. Dysplasia requires nuclear atypia (large, dark, irregular nuclei), mitoses away from the basal layer and loss of orderly maturation. Here the cells mature normally and are not atypical: they are normal cells of a different type."
+  - id: c
+    text:
+      it: "È un'iperplasia delle cellule cilindriche ciliate preesistenti."
+      en: "It is hyperplasia of the existing ciliated columnar cells."
+    correct: false
+    why:
+      it: "Errata. L'iperplasia aumenta il numero di cellule dello stesso tipo, senza cambiare linea differenziativa. Qui il tipo cellulare è cambiato da cilindrico ciliato a squamoso."
+      en: "Incorrect. Hyperplasia increases the number of cells of the same type without changing lineage. Here the cell type has changed from ciliated columnar to squamous."
+  - id: d
+    text:
+      it: "È un cambiamento permanente, che persiste anche dopo la cessazione del fumo."
+      en: "It is a permanent change that persists even after the patient stops smoking."
+    correct: false
+    why:
+      it: "Errata. La metaplasia è di solito reversibile: dopo la cessazione del fumo l'epitelio bronchiale, col tempo, torna cilindrico."
+      en: "Incorrect. Metaplasia is usually reversible: after smoking stops, the bronchial lining eventually returns to columnar."
+  - id: e
+    text:
+      it: "Poiché le cellule metaplastiche sono mature, quest'area non comporta alcun aumento del rischio di cancro."
+      en: "Because metaplastic cells are mature, this area carries no added cancer risk."
+    correct: false
+    why:
+      it: "Errata. La metaplasia non è innocua: nell'epitelio metaplastico la proliferazione continua permette alle mutazioni di accumularsi, la displasia può insorgere nel bronco del fumatore e i carcinomi del polmone nascono spesso in aree metaplastiche."
+      en: "Incorrect. Metaplasia is not harmless: ongoing proliferation in metaplastic epithelium lets mutations accumulate, dysplasia can arise in the smoker's bronchus, and lung carcinomas often arise in metaplastic areas."
+backLink: { entity: metaplasia, section: pathogenesis }
+claims: [metaplasia-c001, metaplasia-c006, metaplasia-c017, metaplasia-c018, metaplasia-c019, metaplasia-c020, metaplasia-c021, metaplasia-c039, metaplasia-c040, metaplasia-c047, metaplasia-c048, metaplasia-c057, metaplasia-c058]
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

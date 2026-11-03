@@ -1,0 +1,55 @@
+id: g01-q-integrative-1
+module: g01
+entities: [hypoxic-ischemic-injury, hydropic-swelling, fatty-change, coagulative-necrosis]
+kind: mcq
+difficulty: 2
+tags: [integrative, hypoxic-ischemic-injury, hydropic-swelling, fatty-change, coagulative-necrosis]
+stem:
+  it: "Un uomo di 63 anni è in shock cardiogeno prolungato. Una biopsia epatica prelevata durante un intervento d'urgenza viene esaminata al microscopio elettronico. Molti epatociti mostrano cisterne del reticolo endoplasmatico dilatate con ribosomi staccati dalle membrane, mitocondri rigonfi con matrice chiara, piccole estroflessioni (bleb) della membrana plasmatica e alcune goccioline lipidiche nel citoplasma. Quale reperto aggiuntivo dimostrerebbe nel modo più affidabile che un determinato epatocita è già morto, e non solo danneggiato in modo reversibile?"
+  en: "A 63-year-old man is in prolonged cardiogenic shock. A liver biopsy taken during emergency surgery is examined by electron microscopy. Many hepatocytes show dilated endoplasmic reticulum cisternae with ribosomes detached from the membranes, swollen mitochondria with a pale matrix, small blebs of the plasma membrane and a few cytoplasmic lipid droplets. Which additional finding would most reliably show that a given hepatocyte has already died, rather than being reversibly injured?"
+options:
+  - id: a
+    text:
+      it: "Estroflessioni (bleb) della membrana plasmatica che si staccano dalla superficie cellulare."
+      en: "Plasma membrane blebs that pinch off from the cell surface."
+    correct: false
+    why:
+      it: "Errata. Le bleb possono staccarsi dalla superficie senza che la cellula perda vitalità: fanno parte del danno reversibile."
+      en: "Incorrect. Blebs can pinch off from the cell surface without loss of viability; they belong to reversible injury."
+  - id: b
+    text:
+      it: "Segregazione delle componenti fibrillare e granulare del nucleolo."
+      en: "Segregation of the fibrillar and granular components of the nucleolus."
+    correct: false
+    why:
+      it: "Errata. La segregazione nucleolare è il modo in cui il danno reversibile si manifesta nel nucleo; non indica che la cellula sia morta."
+      en: "Incorrect. Nucleolar segregation is how reversible injury shows itself in the nucleus; it does not mean the cell is dead."
+  - id: c
+    text:
+      it: "Depositi di calcio nei mitocondri rigonfi, interruzioni della membrana plasmatica e un nucleo piccolo e ipercromatico (picnotico)."
+      en: "Calcium deposits in the swollen mitochondria, breaks in the plasma membrane and a small, densely stained (pyknotic) nucleus."
+    correct: true
+    why:
+      it: "Corretta. Le cellule morte mostrano le alterazioni reversibili in forma esasperata, più mitocondri calcificati, discontinuità della membrana plasmatica e le alterazioni nucleari della necrosi (picnosi, carioressi, cariolisi). Quando la membrana cede e il calcio entra in massa, la cellula ha superato il punto di non ritorno, anche se non esiste un istante netto che separi le due fasi."
+      en: "Correct. Dead cells show the reversible changes in exaggerated form, plus calcified mitochondria, discontinuities of the plasma membrane and the nuclear changes of necrosis (pyknosis, karyorrhexis, karyolysis). Once the membrane fails and calcium floods in, the cell is past the point of no return, even though no sharp instant separates the two stages."
+  - id: d
+    text:
+      it: "Goccioline lipidiche che confluiscono in un unico grande vacuolo e spingono il nucleo alla periferia della cellula."
+      en: "Lipid droplets that merge into one large vacuole and push the nucleus to the edge of the cell."
+    correct: false
+    why:
+      it: "Errata. È la steatosi macrovescicolare. L'accumulo di grasso è reversibile e di per sé non si è dimostrato dannoso per la funzione cellulare, quindi non dice se la cellula sia viva o morta."
+      en: "Incorrect. This is macrovesicular fatty change. Stored fat is reversible and has not been shown to impair cell function by itself, so it says nothing about whether the cell is alive."
+  - id: e
+    text:
+      it: "Ulteriore dilatazione del reticolo endoplasmatico, con citoplasma ingrandito e chiaro e nucleo in posizione centrale."
+      en: "Further dilation of the endoplasmic reticulum, with an enlarged, pale cytoplasm and a centrally placed nucleus."
+    correct: false
+    why:
+      it: "Errata. È il rigonfiamento idropico, espressione morfologica del danno acuto reversibile: l'acqua segue il Na+ trattenuto nella cellula e il nucleo resta al suo posto."
+      en: "Incorrect. This is hydropic swelling, the morphologic expression of acute reversible injury: water follows Na+ retained in the cell, and the nucleus stays in place."
+backLink: { entity: hypoxic-ischemic-injury, section: micro }
+claims: [hypoxic-ischemic-injury-c026, hypoxic-ischemic-injury-c028, hypoxic-ischemic-injury-c032, hypoxic-ischemic-injury-c033, hypoxic-ischemic-injury-c034, hypoxic-ischemic-injury-c035, hypoxic-ischemic-injury-c037, hypoxic-ischemic-injury-c038, hypoxic-ischemic-injury-c063, hypoxic-ischemic-injury-c065, hydropic-swelling-c002, hydropic-swelling-c024, hydropic-swelling-c025, hydropic-swelling-c034, hydropic-swelling-c041, hydropic-swelling-c053, fatty-change-c027, fatty-change-c044, coagulative-necrosis-c023, coagulative-necrosis-c027]
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

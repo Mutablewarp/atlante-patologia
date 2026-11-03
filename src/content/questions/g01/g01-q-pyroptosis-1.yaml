@@ -1,0 +1,71 @@
+id: g01-q-pyroptosis-1
+module: g01
+entities: [pyroptosis]
+kind: mcq
+difficulty: 2
+tags: [pyroptosis]
+stem:
+  it: "Un bambino presenta fin dalle prime settimane di vita un'infiammazione cutanea persistente e, in seguito, un'artrite. L'analisi genetica dimostra una mutazione della criopirina (NLRP3) che la mantiene costantemente attiva. Quale evento molecolare collega meglio la mutazione all'infiammazione?"
+  en: "Since the first weeks of life, a child has had persistent skin inflammation and, later, arthritis. Genetic testing shows a mutation in cryopyrin (NLRP3) that keeps it permanently active. Which molecular event best links the mutation to the inflammation?"
+options:
+  - id: a
+    text:
+      it: "La caspasi-8 viene attivata di continuo nel complesso DISC e provoca l'apoptosi dei cheratinociti."
+      en: "Caspase-8 is continuously activated in the DISC and causes apoptosis of keratinocytes."
+    correct: false
+    why:
+      it: "NLRP3 non è un recettore di morte e non forma il DISC. Inoltre l'apoptosi è una morte silenziosa, che di per sé non provoca infiammazione."
+      en: "NLRP3 is not a death receptor and does not form the DISC. Apoptosis is also a quiet death that does not by itself cause inflammation."
+  - id: b
+    text:
+      it: "L'inflammasoma NLRP3, con l'adattatore ASC, converte di continuo la procaspasi-1 in caspasi-1, che matura IL-1β e IL-18 e può uccidere la cellula per piroptosi."
+      en: "The NLRP3 inflammasome, with the adaptor ASC, continuously converts procaspase-1 into caspase-1, which matures IL-1β and IL-18 and can kill the cell by pyroptosis."
+    correct: true
+    why:
+      it: "Corretto. La criopirina è il sensore dell'inflammasoma NLRP3. Se resta accesa, la caspasi-1 attivata in modo incontrollato produce un eccesso di IL-1, che infiamma cute e articolazioni (malattia infiammatoria multisistemica a esordio neonatale, NOMID); la stessa caspasi apre pori nella membrana e porta alla lisi piroptotica."
+      en: "Correct. Cryopyrin is the sensor of the NLRP3 inflammasome. When it stays switched on, uncontrolled caspase-1 activity produces excess IL-1, which inflames skin and joints (neonatal-onset multisystem inflammatory disease, NOMID); the same caspase opens pores in the membrane and leads to pyroptotic lysis."
+  - id: c
+    text:
+      it: "RIP1 e RIP3 formano il necrosoma, che attiva MLKL."
+      en: "RIP1 and RIP3 form the necrosome, which activates MLKL."
+    correct: false
+    why:
+      it: "Il necrosoma è la piattaforma della necroptosi e parte dai recettori di morte, non da NLRP3. L'inflammasoma e il necrosoma sono complessi distinti."
+      en: "The necrosome is the platform of necroptosis and starts from death receptors, not from NLRP3. The inflammasome and the necrosome are distinct complexes."
+  - id: d
+    text:
+      it: "La caspasi-1 agisce come una caspasi esecutrice, analoga alla caspasi-3, e provoca un'apoptosi senza infiammazione."
+      en: "Caspase-1 acts as an executioner caspase, like caspase-3, and causes apoptosis without inflammation."
+    correct: false
+    why:
+      it: "Classica trappola: la caspasi-1 è una cisteina-proteasi come le caspasi apoptotiche, ma è proinfiammatoria e la sua attivazione non porta all'apoptosi. Porta alla piroptosi, una morte litica che richiama infiammazione."
+      en: "Classic trap: caspase-1 is a cysteine protease like the apoptotic caspases, but it is pro-inflammatory and its activation does not bring about apoptosis. It leads to pyroptosis, a lytic death that attracts inflammation."
+  - id: e
+    text:
+      it: "Bax e Bak formano canali nella membrana mitocondriale esterna e il citocromo c attiva la caspasi-9."
+      en: "Bax and Bak form channels in the outer mitochondrial membrane, and cytochrome c activates caspase-9."
+    correct: false
+    why:
+      it: "È la via intrinseca dell'apoptosi, controllata dalla famiglia BCL-2. Non dipende da NLRP3 e non spiega l'eccesso di IL-1."
+      en: "This is the intrinsic pathway of apoptosis, controlled by the BCL-2 family. It does not depend on NLRP3 and does not explain the excess of IL-1."
+backLink: { entity: pyroptosis, section: pathogenesis }
+claims:
+  - pyroptosis-c002
+  - pyroptosis-c010
+  - pyroptosis-c012
+  - pyroptosis-c013
+  - pyroptosis-c014
+  - pyroptosis-c016
+  - pyroptosis-c021
+  - pyroptosis-c027
+  - pyroptosis-c031
+  - pyroptosis-c045
+  - pyroptosis-c035
+  - apoptosis-c018
+  - apoptosis-c019
+  - apoptosis-c024
+  - apoptosis-c025
+  - apoptosis-c036
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published
