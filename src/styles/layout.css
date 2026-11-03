@@ -407,6 +407,9 @@ main:focus {
   gap: var(--space-3);
   border-bottom: 1px dotted var(--rule);
 }
+.term-list li > a {
+  min-width: 1.5rem; /* WCAG 2.2 target size: short labels such as "Ub" */
+}
 .term-list .child {
   padding-left: var(--space-4);
 }

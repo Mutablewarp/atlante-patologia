@@ -48,7 +48,8 @@ test('entity actions feed review, bookmarks, resume and the Me pages', async ({ 
 test('review: reveal with Space, rate with keys, progress is saved', async ({ page }) => {
   const foreign = guardRequests(page);
   await page.goto('en/study/review/');
-  await expect(page.getByText(/0 due · 14 new/)).toBeVisible();
+  // The count depends on the published content plus the draft fixtures.
+  await expect(page.getByText(/0 due · [1-9]\d* new/)).toBeVisible();
   await noAxeViolations(page);
   await page.keyboard.press('Space');
   await expect(page.getByRole('group', { name: 'How easy was it to recall?' })).toBeVisible();
@@ -69,9 +70,10 @@ test('quiz: immediate feedback explains every option and links back', async ({ p
     await first.getByRole('button', { name: 'Show model answer' }).click();
     await first.getByRole('button', { name: 'Got it' }).click();
   } else {
+    const options = await first.getByRole('radio').count();
     await first.getByRole('radio').first().check();
     await page.getByRole('button', { name: 'Check' }).click();
-    await expect(first.locator('.why')).toHaveCount(4);
+    await expect(first.locator('.why')).toHaveCount(options); // one explanation per option
   }
   await expect(first.getByRole('link', { name: /Review it in the card/ })).toBeVisible();
   await noAxeViolations(page);
