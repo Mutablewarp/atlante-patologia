@@ -1,14 +1,14 @@
 # Atlante di Patologia
 
-**IT** — Atlante di anatomia patologica libero e bilingue (italiano/inglese), con un sistema di studio (ripasso a intervalli, quiz, allenamento sulle immagini) per studenti di medicina. Nessun account, nessun cookie, nessun tracciamento: i dati di studio restano nel browser.
+**IT** — Atlante di anatomia patologica libero e bilingue (italiano/inglese), con un sistema di studio (ripasso a intervalli, quiz, allenamento sulle immagini) per studenti di medicina. Nessun account, nessun cookie, nessun tracciamento: i dati di studio restano nel browser. Dopo la prima visita la home si apre anche senza connessione; i capitoli pubblicati si possono scaricare per studiarli offline (Me → Uso offline).
 
-**EN** — A free, bilingual (Italian/English) pathology atlas and study system (spaced review, quizzes, image training) for medical students. No accounts, no cookies, no tracking: study data stays in the browser.
+**EN** — A free, bilingual (Italian/English) pathology atlas and study system (spaced review, quizzes, image training) for medical students. No accounts, no cookies, no tracking: study data stays in the browser. After the first visit the home page opens without a connection; published chapters can be downloaded to study offline (Me → Offline use).
 
 Sito / Site: <https://mutablewarp.github.io/atlante-patologia/>
 
 ## Stato / Status
 
-**Fase 1 / Phase 1.** La struttura del sito è online; il primo capitolo (g01, danno, adattamento e morte cellulare) è in scrittura e verifica. / The site structure is live; the first chapter (g01, cell injury, adaptation and death) is being written and verified. See `docs/` for the spec and the roadmap page on the site.
+**Fase 2 / Phase 2.** Il primo capitolo (g01, danno, adattamento e morte cellulare) è pubblicato come bozza generata con IA e non ancora revisionata da esperti, con strumenti di studio e uso offline. / The first chapter (g01, cell injury, adaptation and death) is published as AI-generated content not yet reviewed by experts, with study tools and offline use. Status and evidence: [docs/PROGRESS.md](docs/PROGRESS.md); open review items: [docs/REVIEW_QUEUE.md](docs/REVIEW_QUEUE.md).
 
 ## Sviluppo locale / Run locally
 
@@ -17,12 +17,15 @@ Requires Node.js 24 (see `.nvmrc`; Astro 7 needs ≥ 22.12).
 ```sh
 npm ci
 npm run dev        # http://localhost:4321/atlante-patologia/
-npm run build      # astro build + Pagefind index → dist/
+npm run build      # astro build + Pagefind index + service-worker manifest → dist/
 npm run preview    # serve dist/
 npm run check      # astro check (TypeScript)
-npm test           # Vitest unit tests
+npm test           # Vitest unit tests + content gates (npm run test:content for the gates only)
+npm run validate:entity -- <id>   # content gates for one entity card
 npm run test:dist  # validators on dist/ (navigation graph, links, budgets) — after build
 npm run test:e2e   # Playwright (first: npx playwright install) — after build
+npm run test:e2e:study    # study tools on a draft-fixture build (.e2e-study-dist/)
+npm run test:e2e:offline  # service worker + offline packs, Chromium and WebKit (.e2e-dist/)
 npm run lighthouse # Lighthouse mobile ≥ 90 on sample pages — after build
 npm run licenses   # dependency license ledger → docs/licenses/
 npm run guard      # containment guard over tracked files

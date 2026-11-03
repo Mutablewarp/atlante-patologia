@@ -9,8 +9,8 @@ export const tOffline = defineStrings({
     en: 'Page shown when there is no connection and the requested page is not saved on this device.',
   },
   fallbackBody: {
-    it: 'La rete non risponde e questa pagina non è salvata sul dispositivo. Le pagine principali e i capitoli che hai scaricato restano disponibili anche senza connessione.',
-    en: 'The network is not responding and this page is not saved on this device. The main pages and the chapters you downloaded still work without a connection.',
+    it: 'La rete non risponde e questa pagina non è salvata sul dispositivo. La home e i capitoli che hai scaricato restano disponibili anche senza connessione.',
+    en: 'The network is not responding and this page is not saved on this device. The home page and the chapters you downloaded still work without a connection.',
   },
   retry: { it: 'Riprova', en: 'Try again' },
   goHome: { it: 'Vai alla home', en: 'Go to the home page' },
@@ -23,8 +23,8 @@ export const tOffline = defineStrings({
     en: 'Download chapters to study without a connection, check the space they use and learn how it works on iPhone and Android.',
   },
   intro: {
-    it: 'Dopo la prima visita, le pagine principali dell’atlante si aprono anche senza connessione. I capitoli si scaricano uno alla volta, solo se lo scegli tu.',
-    en: 'After your first visit, the main pages of the atlas open without a connection too. Chapters are downloaded one at a time, only if you choose to.',
+    it: 'Dopo la prima visita, la home e questa pagina si aprono anche senza connessione. I capitoli si scaricano uno alla volta, solo se lo scegli tu.',
+    en: 'After your first visit, the home page and this page open without a connection too. Chapters are downloaded one at a time, only if you choose to.',
   },
   noJs: {
     it: 'Per scaricare i capitoli serve JavaScript attivo nel browser.',
