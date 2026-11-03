@@ -18,6 +18,9 @@ import PrimaryNav from '../components/nav/PrimaryNav.astro';
 import Footer from '../components/nav/Footer.astro';
 import DisclaimerNotice from '../components/nav/DisclaimerNotice.astro';
 import UpdateNotice from '../components/offline/UpdateNotice.astro';
+// Same hashed files fonts.css references; preloaded so font-display: optional finds them in time (D049).
+import bodyFont from '@fontsource-variable/atkinson-hyperlegible-next/files/atkinson-hyperlegible-next-latin-wght-normal.woff2?url';
+import displayFont from '@fontsource-variable/fraunces/files/fraunces-latin-opsz-normal.woff2?url';
 
 interface Props {
   lang: Lang;
@@ -43,6 +46,8 @@ const fullTitle = title === SITE_NAME ? SITE_NAME : `${title} · ${SITE_NAME}`;
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <title>{fullTitle}</title>
+    <link rel="preload" href={bodyFont} as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href={displayFont} as="font" type="font/woff2" crossorigin />
     <meta name="description" content={description} />
     {noindex && <meta name="robots" content="noindex" />}
     {/* A noindex page (404) has no canonical URL: /404/ itself does not exist. */}
