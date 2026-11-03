@@ -50,7 +50,8 @@ Placeholder text B-9.
 
 ## High-yield summary
 
-- Placeholder text **B 11** [[g:fixture-term-b]].
+- Placeholder text B **Lorem ipsum dolor sit amet** Placeholder text B [[g:fixture-term-b]].
+- Placeholder text B **Lorem ipsum dolor sit amet**.
 
 ## Common misconceptions and exam traps
 

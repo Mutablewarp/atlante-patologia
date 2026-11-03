@@ -23,7 +23,7 @@ import {
 import { SECTIONS, QUICK_CHECK } from '../../src/i18n/sections.ts';
 import { contradictoryPairs } from '../../src/lib/relations.ts';
 import { claimMarkers, h2Titles, splitFrontmatter, unmarkedNumericSentences } from './markdown.ts';
-import type { Doc, Tree, Unit } from './tree.ts';
+import { isFixtureDoc, type Doc, type Tree, type Unit } from './tree.ts';
 
 export type Gate = 'schema' | 'parity' | 'ledger' | 'numbers' | 'references' | 'review' | 'images';
 export type Problem = { gate: Gate; file: string; message: string };
@@ -218,7 +218,7 @@ export function referencesGate(parsed: Parsed): Problem[] {
       need(entityIds.has(img.entity), f, `image ${img.id} → unknown entity "${img.entity}"`);
     }
   }
-  for (const { doc, data: q } of parsed.questions) {
+  for (const { doc, data: q } of parsed.questions.filter((x) => !isFixtureDoc(x.doc))) {
     for (const id of q.entities) need(entityIds.has(id), doc.path, `unknown entity "${id}"`);
     need(entityIds.has(q.backLink.entity), doc.path, `backLink → unknown entity "${q.backLink.entity}"`);
     need(sectionIds.has(q.backLink.section), doc.path, `backLink → unknown section "${q.backLink.section}"`);
@@ -267,7 +267,7 @@ export function reviewGate(tree: Tree, parsed: Parsed): Problem[] {
 /** Gate 6: image files exist (licence and patientIdentifiable rules are schema-level, reported as gate "images"). */
 export function imagesGate(tree: Tree, parsed: Parsed): Problem[] {
   return parsed.images
-    .filter(({ data }) => !tree.assets.has(data.file))
+    .filter(({ doc, data }) => !tree.assets.has(data.file) && !(isFixtureDoc(doc) && tree.fixtureAssets.has(data.file)))
     .map(({ doc, data }) => ({ gate: 'images' as const, file: doc.path, message: `file "${data.file}" not found under src/assets/images` }));
 }
 

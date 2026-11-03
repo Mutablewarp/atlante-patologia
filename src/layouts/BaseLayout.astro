@@ -89,6 +89,8 @@ const fullTitle = title === SITE_NAME ? SITE_NAME : `${title} · ${SITE_NAME}`;
     </div>
     <script>
       import '../scripts/shell.ts';
+      // Personal-layer elements (<ap-recent>, <ap-resume>, <ap-path-progress>…) load their code only where used.
+      if (document.querySelector('ap-recent, ap-resume, ap-path-progress, ap-due-count, ap-export-reminder')) void import('../scripts/personal.ts');
     </script>
   </body>
 </html>

@@ -1,0 +1,31 @@
+# FIXTURE — placeholder question, no medical claims. status: draft (PREVIEW_DRAFTS=1 only).
+id: fixture-q-mcq-2
+module: g01
+entities: [fixture-demo-b]
+kind: mcq
+difficulty: 1
+stem:
+  it: "Domanda segnaposto (fixture-q-mcq-2): quale opzione è quella giusta di prova?"
+  en: "Placeholder question (fixture-q-mcq-2): which option is the test answer?"
+
+options:
+  - id: a
+    text: { it: "Opzione giusta di prova", en: "Correct test option" }
+    correct: true
+    why: { it: "Spiegazione segnaposto: questa è l'opzione giusta.", en: "Placeholder explanation: this is the right option." }
+  - id: b
+    text: { it: "Opzione sbagliata 1", en: "Wrong option 1" }
+    correct: false
+    why: { it: "Spiegazione segnaposto per l'opzione 1.", en: "Placeholder explanation for option 1." }
+  - id: c
+    text: { it: "Opzione sbagliata 2", en: "Wrong option 2" }
+    correct: false
+    why: { it: "Spiegazione segnaposto per l'opzione 2.", en: "Placeholder explanation for option 2." }
+  - id: d
+    text: { it: "Opzione sbagliata 3", en: "Wrong option 3" }
+    correct: false
+    why: { it: "Spiegazione segnaposto per l'opzione 3.", en: "Placeholder explanation for option 3." }
+backLink: { entity: fixture-demo-b, section: high-yield }
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-10-10
+status: draft

@@ -1,0 +1,21 @@
+# FIXTURE — placeholder drawing, no medical content. status: draft keeps it out of production builds.
+id: fixture-gross-a
+file: fixture-gross-a.svg
+kind: gross
+sourceUrl: https://github.com/Mutablewarp/atlante-patologia
+author: Atlante di Patologia contributors
+license: original
+licenseUrl: https://github.com/Mutablewarp/atlante-patologia/blob/main/LICENSE-CONTENT.md
+retrievedAt: 2026-10-10
+modifications: none
+attributionText: "Placeholder drawing — Atlante di Patologia contributors"
+patientIdentifiable: false
+verifiedBy: { who: agent, name: study-engine, date: 2026-10-10 }
+caption:
+  it: "Immagine segnaposto gross A, nessun contenuto medico."
+  en: "Placeholder gross image A, no medical content."
+alt:
+  it: "Disegno segnaposto: forme geometriche (gross A)."
+  en: "Placeholder drawing: geometric shapes (gross A)."
+
+status: draft

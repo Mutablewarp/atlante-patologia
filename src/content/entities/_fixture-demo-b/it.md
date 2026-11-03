@@ -50,7 +50,8 @@ Testo segnaposto B-9.
 
 ## Punti chiave
 
-- Testo segnaposto **B 11** [[g:fixture-term-b]].
+- Testo segnaposto B **Lorem ipsum dolor sit amet** Testo segnaposto B [[g:fixture-term-b]].
+- Testo segnaposto B **Lorem ipsum dolor sit amet**.
 
 ## Errori comuni e trappole d'esame
 

@@ -26,10 +26,14 @@ export type Tree = {
   reviewers: string[] | null;
   /** paths relative to src/assets/images */
   assets: Set<string>;
+  /** paths relative to src/assets/fixtures (draft fixture drawings, D040) */
+  fixtureAssets: Set<string>;
 };
 
 const readText = (p: string) => (existsSync(p) ? readFileSync(p, 'utf8') : undefined);
 const dirs = (p: string) => (existsSync(p) ? readdirSync(p).filter((f) => statSync(join(p, f)).isDirectory()) : []);
+/** Question and image files whose name starts with `_` are template fixtures (H04), like `_` entity folders. */
+export const isFixtureDoc = (d: Doc) => /(^|\/)_[^/]*$/.test(d.path);
 const yamlFiles = (p: string) => (existsSync(p) ? readdirSync(p).filter((f) => /\.ya?ml$/.test(f)) : []);
 
 function files(p: string, acc: string[] = []): string[] {
@@ -61,6 +65,7 @@ export function loadTree(root: string): Tree {
   const ledgerDir = join(root, 'docs/ledger');
   const reviewers = readText(join(root, 'REVIEWERS'));
   const assetDir = join(root, 'src/assets/images');
+  const fixtureAssetDir = join(root, 'src/assets/fixtures');
 
   return {
     root,
@@ -82,5 +87,6 @@ export function loadTree(root: string): Tree {
             .map((l) => l.trim())
             .filter((l) => l && !l.startsWith('#')),
     assets: new Set(files(assetDir).map((f) => relative(assetDir, f).split('\\').join('/'))),
+    fixtureAssets: new Set(files(fixtureAssetDir).map((f) => relative(fixtureAssetDir, f).split('\\').join('/'))),
   };
 }

@@ -64,7 +64,7 @@ export async function sources() {
 }
 
 export async function images() {
-  return (await getCollection('images', notFixture)).map((i) => i.data);
+  return (await getCollection('images', (i) => notFixture(i) && visible(i.data.status))).map((i) => i.data);
 }
 
 export async function patterns() {

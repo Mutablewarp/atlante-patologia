@@ -1,0 +1,17 @@
+---
+import StudyPage from '../../../../components/study/StudyPage.astro';
+import DataManager from '../../../../islands/DataManager.tsx';
+import { langPaths, type Lang } from '../../../../i18n/index.ts';
+import { tS } from '../../../../i18n/study.ts';
+import { tNav } from '../../../../i18n/nav.ts';
+import { tCommon } from '../../../../i18n/common.ts';
+import { langPath } from '../../../../lib/url.ts';
+
+export const getStaticPaths = langPaths;
+const lang = Astro.params.lang as Lang;
+---
+
+<StudyPage lang={lang} tab="me" title={tS(lang, 'data')} intro={tS(lang, 'dataIntro')} parent={{ label: tNav(lang, 'me'), href: langPath(lang, 'me/') }}>
+  <DataManager client:load lang={lang} />
+  <p><a href={langPath(lang, 'about/privacy/')}>{tCommon(lang, 'footerPrivacy')} →</a></p>
+</StudyPage>

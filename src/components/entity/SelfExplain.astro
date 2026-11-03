@@ -1,0 +1,26 @@
+---
+/** Collapsed self-explanation prompts from meta.selfExplain ("Spiega perché" / "Explain why"). */
+import type { Lang } from '../../i18n/index.ts';
+import { tS } from '../../i18n/study.ts';
+import type { L } from '../../i18n/index.ts';
+
+interface Props {
+  lang: Lang;
+  prompts: L[];
+}
+const { lang, prompts } = Astro.props;
+---
+
+{
+  prompts.length > 0 && (
+    <details class="self-explain card">
+      <summary>{tS(lang, 'explainWhy')}</summary>
+      <p class="small muted">{tS(lang, 'explainHelp')}</p>
+      <ol>
+        {prompts.map((p) => (
+          <li>{p[lang]}</li>
+        ))}
+      </ol>
+    </details>
+  )
+}

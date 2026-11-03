@@ -29,6 +29,8 @@ learningObjectives:
 prerequisites: []
 relations:
   - type: differentialOf
+    target: fixture-demo-b
+  - type: differentialOf
     target: placeholder-target-a
   - type: causes
     target: placeholder-target-b
@@ -48,6 +50,19 @@ quickCheck:
     q: { it: "Domanda segnaposto 3?", en: "Placeholder question 3?" }
     a: { it: "Risposta segnaposto 3.", en: "Placeholder answer 3." }
     kind: free
+selfExplain:
+  - it: "Domanda segnaposto di autospiegazione: perché A porta a B?"
+    en: "Placeholder self-explanation prompt: why does A lead to B?"
+chain:
+  - pathology: { it: "Lesione segnaposto A", en: "Placeholder lesion A" }
+    sign: { it: "Segno segnaposto A", en: "Placeholder sign A" }
+    lab: { it: "Esame segnaposto A", en: "Placeholder test A" }
+images:
+  - id: fixture-gross-a
+    role: gross
+    pairWith: fixture-micro-a
+  - id: fixture-micro-a
+    role: micro
 reviewStatus: ai-generated-unreviewed
 editionDependent: true
 editionNote:

@@ -1,0 +1,164 @@
+---
+/**
+ * Evidence behind the study tools (docs/EVIDENCE.md). Cites only the eight
+ * Crossref-verified articles (docs/VERIFIED_FACTS.md §L). Never promises results.
+ */
+import AboutPage from '../../../components/AboutPage.astro';
+import Bi from '../../../components/Bi.astro';
+import { langPaths, type Lang } from '../../../i18n/index.ts';
+import { langPath } from '../../../lib/url.ts';
+import { sources } from '../../../lib/content.ts';
+
+export const getStaticPaths = langPaths;
+const lang = Astro.params.lang as Lang;
+const IDS = ['dunlosky-2013', 'larsen-2008', 'green-2018', 'maye-2026', 'frappa-2026', 'thompson-2023', 'aljamal-2025', 'kuo-2019'];
+const all = await sources();
+const refs = IDS.map((id) => all.find((s) => s.id === id)).filter((s) => s !== undefined);
+const R = (id: string, label: string) => ({ href: `#ref-${id}`, label });
+const c = {
+  dunlosky: R('dunlosky-2013', 'Dunlosky et al., 2013'),
+  larsen: R('larsen-2008', 'Larsen et al., 2008'),
+  green: R('green-2018', 'Green et al., 2018'),
+  maye: R('maye-2026', 'Maye & Hurley, 2026'),
+  frappa: R('frappa-2026', 'Frappa et al., 2026'),
+  thompson: R('thompson-2023', 'Thompson & Hughes, 2023'),
+  aljamal: R('aljamal-2025', 'Aljamal et al., 2025'),
+  kuo: R('kuo-2019', 'Kuo & Leo, 2019'),
+};
+---
+
+<AboutPage lang={lang} slug="evidence">
+  <Bi lang={lang}>
+    <Fragment slot="it">
+      <h2>In breve</h2>
+      <p>
+        Gli strumenti di studio dell’atlante si basano su tecniche che la ricerca indica come utili: richiamare
+        attivamente le informazioni, distribuire il ripasso nel tempo, alternare gli argomenti e spiegarsi il perché delle
+        cose. Gli studi suggeriscono benefici, ma non garantiscono risultati: nessuno strumento può promettere un voto.
+      </p>
+      <h2>Ripasso a intervalli</h2>
+      <p>
+        Le flashcard vengono riproposte con l’algoritmo FSRS, che stima quando stai per dimenticare una scheda. Una rassegna
+        ampia delle tecniche di studio ha giudicato il ripasso distribuito nel tempo tra le più utili
+        (<a href={c.dunlosky.href}>{c.dunlosky.label}</a>). Due revisioni sistematiche recenti hanno esaminato il ripasso
+        a intervalli e l’uso di Anki nella formazione medica (<a href={c.maye.href}>{c.maye.label}</a>;{' '}
+        <a href={c.frappa.href}>{c.frappa.label}</a>): le prove suggeriscono un legame con migliori risultati, ma molti studi
+        sono osservazionali e chi sceglie di usare le flashcard può essere diverso da chi non lo fa.
+      </p>
+      <h2>Quiz e richiamo attivo</h2>
+      <p>
+        Rispondere a domande, anche sbagliando, aiuta a ricordare più che rileggere: è l’effetto del “test come
+        apprendimento”, descritto nella formazione medica (<a href={c.larsen.href}>{c.larsen.label}</a>) e riesaminato in
+        una revisione sistematica sulle professioni sanitarie (<a href={c.green.href}>{c.green.label}</a>). Per questo ogni
+        quiz spiega tutte le opzioni e rimanda alla sezione della scheda: il feedback conta quanto la domanda.
+      </p>
+      <h2>Argomenti alternati e immagini</h2>
+      <p>
+        La modalità “mista” alterna domande su argomenti diversi. In una revisione sulla formazione in radiologia,
+        apprendimento distribuito, alternanza e richiamo attivo sono stati studiati anche su materiale per immagini
+        (<a href={c.thompson.href}>{c.thompson.label}</a>). Il confronto tra microscopio ottico e virtuale nella
+        didattica è oggetto di una revisione sistematica (<a href={c.kuo.href}>{c.kuo.label}</a>).
+      </p>
+      <h2>Spiegarsi il perché, mappe e collegamenti</h2>
+      <p>
+        I blocchi “Spiega perché” chiedono di spiegare un meccanismo con parole tue: la rassegna di Dunlosky e colleghi
+        giudica l’autospiegazione di utilità moderata (<a href={c.dunlosky.href}>{c.dunlosky.label}</a>). Le mappe
+        concettuali, usate per collegare gli argomenti, sono state esaminate in una revisione su studenti di medicina
+        (<a href={c.aljamal.href}>{c.aljamal.label}</a>).
+      </p>
+      <h2>Cosa non promettiamo</h2>
+      <ul>
+        <li>Gli studi riguardano altri materiali, altri corsi e altri studenti: i risultati potrebbero non ripetersi qui.</li>
+        <li>
+          Evidenziare il testo, secondo la stessa rassegna, è poco efficace da solo: le evidenziazioni servono a ritrovare
+          i passaggi, non sostituiscono il ripasso.
+        </li>
+        <li>
+          I numeri del tuo profilo (padronanza, copertura) sono stime calcolate dal tuo uso, non previsioni del voto
+          d’esame.
+        </li>
+        <li>L’algoritmo FSRS usa parametri predefiniti, non adattati a te.</li>
+      </ul>
+      <p>
+        Vedi anche <a href={langPath(lang, 'about/method/')}>come nascono i contenuti</a> e le{' '}
+        <a href={langPath(lang, 'about/reading-list/')}>letture consigliate</a>.
+      </p>
+    </Fragment>
+    <Fragment slot="en">
+      <h2>In short</h2>
+      <p>
+        The atlas’s study tools rest on techniques that research points to as useful: actively recalling information,
+        spacing review over time, mixing topics and explaining to yourself why things happen. The studies suggest benefits,
+        but they guarantee nothing: no tool can promise a grade.
+      </p>
+      <h2>Spaced review</h2>
+      <p>
+        Flashcards come back on a schedule set by the FSRS algorithm, which estimates when you are about to forget a card. A
+        broad review of study techniques rated distributed practice among the most useful (<a href={c.dunlosky.href}
+          >{c.dunlosky.label}</a
+        >). Two recent systematic reviews examined spaced repetition and Anki use in medical education (<a href={c.maye.href}
+          >{c.maye.label}</a
+        >; <a href={c.frappa.href}>{c.frappa.label}</a>): the evidence suggests a link with better results, but many studies
+        are observational, and students who choose flashcards may differ from those who do not.
+      </p>
+      <h2>Quizzes and active recall</h2>
+      <p>
+        Answering questions, even wrongly, helps memory more than re-reading: this is test-enhanced learning, described in
+        medical education (<a href={c.larsen.href}>{c.larsen.label}</a>) and reviewed systematically across the health
+        professions (<a href={c.green.href}>{c.green.label}</a>). That is why every quiz explains every option and links back
+        to the card section: the feedback matters as much as the question.
+      </p>
+      <h2>Mixed topics and images</h2>
+      <p>
+        The “mixed” mode interleaves questions from different topics. A review of radiology education looked at spaced
+        learning, interleaving and retrieval practice with image-based material (<a href={c.thompson.href}
+          >{c.thompson.label}</a
+        >). Optical and virtual microscopes for teaching have been compared in a systematic review (<a
+          href={c.kuo.href}>{c.kuo.label}</a
+        >).
+      </p>
+      <h2>Explaining why, maps and connections</h2>
+      <p>
+        The “Explain why” blocks ask you to explain a mechanism in your own words: Dunlosky and colleagues rate
+        self-explanation as moderately useful (<a href={c.dunlosky.href}>{c.dunlosky.label}</a>). Concept maps, used to
+        connect topics, were examined in a review of medical students (<a href={c.aljamal.href}>{c.aljamal.label}</a>).
+      </p>
+      <h2>What we do not promise</h2>
+      <ul>
+        <li>The studies involve other materials, courses and students: their results may not carry over here.</li>
+        <li>
+          According to the same review, highlighting on its own does little: highlights help you find passages again, they
+          do not replace review.
+        </li>
+        <li>The numbers on your profile (mastery, coverage) are estimates from your own use, not predictions of your exam grade.</li>
+        <li>FSRS runs with default parameters, not tuned to you.</li>
+      </ul>
+      <p>
+        See also <a href={langPath(lang, 'about/method/')}>how the content is made</a> and the{' '}
+        <a href={langPath(lang, 'about/reading-list/')}>reading list</a>.
+      </p>
+    </Fragment>
+  </Bi>
+
+  <h2>{lang === 'it' ? 'Bibliografia' : 'References'}</h2>
+  <ol class="refs">
+    {
+      refs.map((a) => (
+        <li id={`ref-${a.id}`}>
+          {a.authors}. <cite>{a.title}</cite>. {a.journal}; {a.year}.{' '}
+          {a.doi && (
+            <a href={`https://doi.org/${a.doi}`} rel="noopener">
+              doi:{a.doi}
+            </a>
+          )}
+        </li>
+      ))
+    }
+  </ol>
+</AboutPage>
+
+<style>
+  .refs li {
+    margin-bottom: var(--space-3);
+  }
+</style>

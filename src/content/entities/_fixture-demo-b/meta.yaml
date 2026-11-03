@@ -1,4 +1,5 @@
-# FIXTURE — NOT CONTENT. Exercises horizontal tools (PREVIEW_DRAFTS=1). No medical claims.
+# FIXTURE — NOT CONTENT. Exercises horizontal tools and study flows (look-alikes,
+# chain distractors, mixed quizzes). status: draft (PREVIEW_DRAFTS=1 only). No medical claims.
 id: fixture-demo-b
 module: g01
 tier: core
@@ -30,8 +31,17 @@ quickCheck:
   - { id: demo-b-q1, q: { it: "Domanda B1?", en: "Question B1?" }, a: { it: "Risposta B1.", en: "Answer B1." }, kind: short }
   - { id: demo-b-q2, q: { it: "Domanda B2?", en: "Question B2?" }, a: { it: "Risposta B2.", en: "Answer B2." }, kind: short }
   - { id: demo-b-q3, q: { it: "Domanda B3?", en: "Question B3?" }, a: { it: "Risposta B3.", en: "Answer B3." }, kind: free }
+chain:
+  - pathology: { it: "Lesione segnaposto B", en: "Placeholder lesion B" }
+    sign: { it: "Segno segnaposto B", en: "Placeholder sign B" }
+    lab: { it: "Esame segnaposto B", en: "Placeholder test B" }
+  - pathology: { it: "Lesione segnaposto C", en: "Placeholder lesion C" }
+    sign: { it: "Segno segnaposto C", en: "Placeholder sign C" }
+    lab: { it: "Esame segnaposto C", en: "Placeholder test C" }
 images:
   - { id: fixture-grid, role: micro }
+  - { id: fixture-gross-b, role: gross, pairWith: fixture-micro-b }
+  - { id: fixture-micro-b, role: micro }
 reviewStatus: ai-generated-unreviewed
 editionDependent: false
 sources:

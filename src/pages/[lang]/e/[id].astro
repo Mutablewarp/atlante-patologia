@@ -12,6 +12,8 @@ import ModuleTree from '../../../components/horizontal/ModuleTree.astro';
 import { tHz } from '../../../i18n/horizontal.ts';
 import { LENSES } from '../../../lib/schema.ts';
 import { withCrossLinks, imageById, patternsForEntity, SECTION_FOR_ROLE } from '../../../lib/horizontal.ts';
+import EntityActions from '../../../components/entity/EntityActions.astro';
+import SelfExplain from '../../../components/entity/SelfExplain.astro';
 import { LANGS, fmt, type Lang } from '../../../i18n/index.ts';
 import { tEntity, tAtlas } from '../../../i18n/pages.ts';
 import { SECTIONS, QUICK_CHECK, PRINT_SECTIONS } from '../../../i18n/sections.ts';
@@ -98,6 +100,7 @@ const contexts = LENSES.flatMap((lens) =>
   <article class="entity" data-entity={id}>
     {entity.status === 'draft' && <p class="notice notice-caution draft-banner" role="note">{t('draftBanner')}</p>}
     <EntityHeader lang={lang} entity={entity} data={data} />
+    <EntityActions lang={lang} entity={entity} />
 
     <div class="entity-layout">
       <nav class="section-toc" aria-label={t('onThisPage')}>
@@ -177,6 +180,8 @@ const contexts = LENSES.flatMap((lens) =>
             </ol>
           </div>
         </section>
+
+        <SelfExplain lang={lang} prompts={entity.selfExplain} />
 
         <RelatedPanel lang={lang} groups={data.relations.get(id) ?? []} data={data} />
         {

@@ -83,3 +83,18 @@ Format: ID — decision — reason — status. "Deviation" marks a departure fro
 | H05 | "Try to recall first" is an optional, remembered reading mode (toolbar toggle): each section shows a generic localized prompt and the section is revealed on demand | Avoids hiding content from readers who did not ask for retrieval practice | accepted |
 | H06 | `?via=lens:term` context is server-rendered as `<template>`s (breadcrumb + prev/next per lens term of the entity) and swapped in by a tiny script; canonical unchanged | No client-side data fetch; strings stay in the i18n modules | accepted |
 | H07 | `<ap-path-progress entities="a b c">` receives **space-separated** entity ids (patterns excluded); fallback text stays visible until the element upgrades | Token-list convention of HTML attributes | accepted — align with the study layer |
+
+## Study engine (feat/study-engine, 2026-10-10)
+
+| ID | Decision | Reason | Status |
+|---|---|---|---|
+| D039 | Image schema gains `status: draft \| published` (default `published`); `images()` returns only visible ones | Fixture drawings must never reach production credits or study pages | accepted |
+| D040 | Draft fixture drawings live in `src/assets/fixtures/` and are inlined as data URIs at build (PREVIEW_DRAFTS only) | Anything under `src/assets/images/` imported via `import.meta.glob` is emitted to `dist/_astro` even when unused | accepted |
+| D041 | Cloze ids hash the English bullet with the blanked term marked (`A {{term}} B`); qa ids hash `q.en + "\n" + a.en`; occlusion ids hash `image id + annotation id + label.en` | One card per blanked term needs distinct ids; all derived from English source only, so ids are shared across languages | accepted |
+| D042 | High-yield bullets must have the same number of bullets and bold terms in `en.md` and `it.md`; a mismatch fails the build | Cloze cards are aligned by position; parity is a build gate | accepted |
+| D043 | IndexedDB stores dates as epoch ms; removals are tombstones (`deleted: true`) | Export/import is plain JSON; newest-wins merge must not resurrect removed bookmarks/notes | accepted |
+| D044 | Export file = `{ app, schemaVersion, exportedAt, checksum: sha256(JSON.stringify(stores)), stores }`; import rejects unknown app, newer schema, checksum mismatch, records without `id`/`updated` | Integrity check at the trust boundary; merge by id, newest `updated` wins | accepted |
+| D045 | Personal custom elements (`<ap-recent>`, `<ap-resume>`, `<ap-path-progress entities="…">`, `<ap-due-count>`, `<ap-export-reminder>`) are loaded by BaseLayout with a dynamic import only when present | Any page can use them; pages without them pay nothing | accepted |
+| D046 | New cards enter the queue in this order: explicitly added ("Add to review"), then syllabus order; default 15 new/day (learner setting) | No hidden deck management; due cards always first | accepted |
+| D047 | Planner estimate: 45 min per entity × (1 + weakness), 25 % of each study week reserved for review, last 7 days revision only; shortfalls are shown, not hidden | Transparent rough model; tune with real usage | accepted |
+| D048 | Study-engine e2e builds into `.e2e-study-dist/` (`npx playwright test -c tests/e2e/study.config.ts`) and skips itself when the fixtures are absent | `astro preview` without `--ignore-lock` daemonizes in non-TTY shells; production dist/ stays fixture-free | accepted |

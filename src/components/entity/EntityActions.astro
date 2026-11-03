@@ -1,0 +1,64 @@
+---
+/**
+ * Study actions in the entity header (NAVIGATION_SPEC §4): add to review, quiz,
+ * bookmark, note, error log, save highlight. Works only with JS (personal data
+ * lives in IndexedDB), so the whole bar is `js-only`.
+ */
+import type { Lang } from '../../i18n/index.ts';
+import { tS } from '../../i18n/study.ts';
+import { langPath } from '../../lib/url.ts';
+import { allCards, questions } from '../../lib/study.ts';
+import type { SiteData } from '../../lib/content.ts';
+import '../../styles/study.css';
+
+interface Props {
+  lang: Lang;
+  entity: SiteData['entities'][number];
+}
+const { lang, entity } = Astro.props;
+const t = (k: Parameters<typeof tS>[1]) => tS(lang, k);
+const cardIds = ((await allCards()).get(entity.module)?.[lang] ?? []).filter((c) => c.entity === entity.id).map((c) => c.id);
+const hasQuiz = (await questions()).some((q) => q.entities.includes(entity.id));
+---
+
+<div
+  class="entity-actions js-only"
+  role="group"
+  aria-label={t('actions')}
+  data-entity-actions
+  data-id={entity.id}
+  data-module={entity.module}
+  data-name-it={entity.names.it}
+  data-name-en={entity.names.en}
+  data-cards={JSON.stringify(cardIds)}
+  data-label-added={t('addedToReview')}
+  data-live-added={t('addedToReviewLive')}
+  data-live-highlight={t('highlightSaved')}
+  data-live-saved={t('saved')}
+>
+  {
+    cardIds.length > 0 && (
+      <button type="button" class="btn btn-small" data-act="review" aria-pressed="false">
+        {t('addToReview')}
+      </button>
+    )
+  }
+  {hasQuiz && <a class="btn btn-small" href={langPath(lang, `study/quiz/?mode=topic&entity=${entity.id}`)}>{t('quizMe')}</a>}
+  <button type="button" class="btn btn-small" data-act="bookmark" aria-pressed="false">☆ {t('bookmark')}</button>
+  <button type="button" class="btn btn-small" data-act="error" aria-pressed="false">{t('errorLog')}</button>
+  <button type="button" class="btn btn-small" data-act="highlight" disabled title={t('highlightHelp')} aria-describedby={`hl-help-${entity.id}`}>
+    {t('highlight')}
+  </button>
+  <span class="visually-hidden" id={`hl-help-${entity.id}`}>{t('highlightHelp')}</span>
+  <details class="note-box">
+    <summary class="btn btn-small">{t('note')}</summary>
+    <label for={`note-${entity.id}`}>{t('noteLabel')}</label>
+    <textarea id={`note-${entity.id}`} rows="4" data-note></textarea>
+    <button type="button" class="btn btn-small btn-primary" data-act="note">{t('save')}</button>
+  </details>
+  <p class="visually-hidden" aria-live="polite" data-live></p>
+</div>
+
+<script>
+  import '../../scripts/entity-actions.ts';
+</script>
