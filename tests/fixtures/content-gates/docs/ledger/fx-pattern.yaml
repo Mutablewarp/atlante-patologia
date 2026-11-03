@@ -1,0 +1,11 @@
+# SYNTHETIC TEST FIXTURE for tests/content/fixtures.test.ts. Placeholder text, no medical claims.
+entity: fx-pattern
+claims:
+  - claimId: fx-pattern-c001
+    section: overview
+    statement: "Placeholder statement."
+    sourceRef: { source: fx-book, chapter: "1", pages: "1" }
+    status: verified
+    verifiedBy: agent
+    verifier: fixture
+    date: 2026-10-10

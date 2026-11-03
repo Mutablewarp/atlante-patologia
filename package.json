@@ -14,13 +14,14 @@
     "preview": "astro preview",
     "check": "astro check",
     "test": "vitest run",
+    "test:content": "vitest run tests/content",
     "guard": "node scripts/guard.mjs --tree",
     "contrast": "node scripts/contrast-check.mjs",
     "prepare": "simple-git-hooks",
     "no-verbatim": "node scripts/no-verbatim.mjs"
   },
   "simple-git-hooks": {
-    "pre-commit": "node scripts/guard.mjs --staged"
+    "pre-commit": "node scripts/guard.mjs --staged && node scripts/no-verbatim.mjs --staged"
   },
   "dependencies": {
     "@astrojs/preact": "6.0.6",

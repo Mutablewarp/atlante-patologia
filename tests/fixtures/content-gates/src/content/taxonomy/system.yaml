@@ -1,0 +1,7 @@
+# SYNTHETIC TEST FIXTURE for tests/content/fixtures.test.ts. Placeholder text, no medical claims.
+lens: system
+label: { it: "Lente system", en: "Lens system" }
+terms:
+  - id: fx-system
+    label: { it: "Termine system", en: "Term system" }
+    order: 1

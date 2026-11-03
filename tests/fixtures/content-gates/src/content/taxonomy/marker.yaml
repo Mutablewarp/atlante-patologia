@@ -1,0 +1,7 @@
+# SYNTHETIC TEST FIXTURE for tests/content/fixtures.test.ts. Placeholder text, no medical claims.
+lens: marker
+label: { it: "Lente marker", en: "Lens marker" }
+terms:
+  - id: fx-marker
+    label: { it: "Termine marker", en: "Term marker" }
+    order: 1

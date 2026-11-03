@@ -1,0 +1,8 @@
+# REVIEWERS — humans allowed to mark content `expert-reviewed`.
+#
+# Only a person listed here may appear in `reviewedBy.name` of an entity, pattern
+# or question with `reviewStatus: expert-reviewed`. The content gate
+# (tests/content, docs/CONTENT_GATES.md §5) fails otherwise.
+# Agents never add names here and never set `expert-reviewed`.
+# Format: one full name per line, exactly as written in `reviewedBy.name`.
+# Lines starting with # are comments. The list is intentionally empty.

@@ -1,0 +1,7 @@
+# SYNTHETIC TEST FIXTURE for tests/content/fixtures.test.ts. Placeholder text, no medical claims.
+lens: process
+label: { it: "Lente process", en: "Lens process" }
+terms:
+  - id: fx-process
+    label: { it: "Termine process", en: "Term process" }
+    order: 1
