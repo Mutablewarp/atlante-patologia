@@ -84,6 +84,13 @@ jobs:
         run: npx playwright test
         env:
           E2E_ENGINES: ${{ matrix.engine }}
+      # Study tools and the service worker need a draft-fixture build (own configs).
+      - name: Study e2e (fixture build)
+        if: matrix.engine == 'chromium'
+        run: npm run test:e2e:study
+      - name: Offline e2e (fixture build, ${{ matrix.engine }})
+        if: matrix.engine != 'firefox'
+        run: npm run test:e2e:offline -- --project ${{ matrix.engine }}
       - uses: actions/upload-artifact@v7
         if: failure()
         with:
