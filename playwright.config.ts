@@ -14,8 +14,10 @@ export default defineConfig({
     { name: 'chromium', use: { ...devices['Desktop Chrome'] } },
     { name: 'webkit', use: { ...devices['Desktop Safari'] } },
   ],
+  // --ignore-lock: Astro 7 backgrounds `preview` when it detects an AI agent;
+  // Playwright must own a foreground process or it reports "exited early".
   webServer: {
-    command: `PREVIEW_DRAFTS=1 astro build --outDir ${DIR} && pagefind --site ${DIR} && node scripts/sw-manifest.mjs ${DIR} && astro preview --outDir ${DIR} --port ${PORT}`,
+    command: `PREVIEW_DRAFTS=1 astro build --outDir ${DIR} && pagefind --site ${DIR} && node scripts/sw-manifest.mjs ${DIR} && astro preview --outDir ${DIR} --port ${PORT} --ignore-lock`,
     url: `http://localhost:${PORT}/atlante-patologia/precache.json`,
     reuseExistingServer: !process.env.CI,
     timeout: 180_000,
