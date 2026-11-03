@@ -10,6 +10,8 @@ import { buildRelationIndex } from './relations.ts';
 export const PREVIEW_DRAFTS = process.env.PREVIEW_DRAFTS === '1';
 
 const visible = (status: 'draft' | 'published') => status === 'published' || PREVIEW_DRAFTS;
+/** Collections without `status` (glossary, paths, images): `_`-prefixed files are fixtures. */
+const notFixture = (e: { filePath?: string }) => PREVIEW_DRAFTS || !/(^|\/)_/.test(e.filePath?.split('/content/')[1] ?? '');
 
 export type EntityEntry = CollectionEntry<'entities'>;
 export type ModuleEntry = CollectionEntry<'modules'>;
@@ -62,5 +64,22 @@ export async function sources() {
 }
 
 export async function images() {
-  return (await getCollection('images')).map((i) => i.data);
+  return (await getCollection('images', notFixture)).map((i) => i.data);
+}
+
+export async function patterns() {
+  return (await getCollection('patterns', (p) => visible(p.data.status))).map((p) => p.data);
+}
+
+export async function patternBody(id: string, lang: 'it' | 'en') {
+  const bodies = await getCollection('patternBodies');
+  return bodies.find((b) => b.id === `${id}/${lang}`);
+}
+
+export async function glossary() {
+  return (await getCollection('glossary', notFixture)).map((g) => g.data);
+}
+
+export async function paths() {
+  return (await getCollection('paths', notFixture)).map((p) => p.data);
 }

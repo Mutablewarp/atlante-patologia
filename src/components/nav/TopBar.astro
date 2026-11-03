@@ -3,7 +3,8 @@
 import type { Lang } from '../../i18n/index.ts';
 import { tNav } from '../../i18n/nav.ts';
 import { SITE_NAME } from '../../i18n/common.ts';
-import { langPath } from '../../lib/url.ts';
+import { langPath, url } from '../../lib/url.ts';
+import { tHz } from '../../i18n/horizontal.ts';
 import BrandMark from './BrandMark.astro';
 import LangSwitch from './LangSwitch.astro';
 import ThemeToggle from './ThemeToggle.astro';
@@ -14,6 +15,29 @@ interface Props {
 }
 const { lang, langSwitchToHome = false } = Astro.props;
 const [first, ...rest] = SITE_NAME.split(' ');
+const h = (k: Parameters<typeof tHz>[1]) => tHz(lang, k);
+const palette = {
+  index: langPath(lang, 'data/index.json'),
+  search: langPath(lang, 'search/'),
+  bundle: url('pagefind/pagefind.js'),
+  base: url(),
+  strings: {
+    title: h('paletteOpen'),
+    label: h('paletteLabel'),
+    placeholder: h('palettePlaceholder'),
+    hint: h('paletteHint'),
+    entity: h('paletteEntity'),
+    pattern: h('palettePattern'),
+    glossary: h('paletteGlossary'),
+    page: h('palettePage'),
+    fulltext: h('paletteFulltext'),
+    results: h('paletteResults'),
+    none: h('paletteNone'),
+    all: h('paletteAll'),
+    close: h('paletteClose'),
+    loading: h('loading'),
+  },
+};
 ---
 
 <header class="topbar" data-nav="global">
@@ -40,7 +64,31 @@ const [first, ...rest] = SITE_NAME.split(' ');
     <span id="global-search-hint" class="visually-hidden">{tNav(lang, 'shortcutHint')}</span>
   </form>
   <div class="topbar-tools">
+    <button
+      type="button"
+      class="icon-btn js-only"
+      data-palette-open
+      data-palette={JSON.stringify(palette)}
+      aria-haspopup="dialog"
+      aria-keyshortcuts="Control+K Meta+K"
+      aria-label={h('paletteOpen')}
+      title={h('paletteOpen')}
+    >
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+        <circle cx="10.8" cy="10.8" r="6.6"></circle>
+        <path d="M15.6 15.6 20.4 20.4"></path>
+      </svg>
+    </button>
     <LangSwitch lang={lang} toHome={langSwitchToHome} />
     <ThemeToggle lang={lang} />
   </div>
 </header>
+
+<style>
+  /* Phones reach search from the bottom tab bar; keep the brand readable. */
+  @media (max-width: 599px) {
+    [data-palette-open] {
+      display: none;
+    }
+  }
+</style>

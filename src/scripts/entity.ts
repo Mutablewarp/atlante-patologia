@@ -49,11 +49,66 @@ function openHash() {
   if (section.dataset.quick === 'false' && root.dataset.mode === 'quick') applyMode('full');
   const btn = section.querySelector<HTMLButtonElement>('[data-section-toggle]');
   if (btn) setOpen(btn, true);
+  section.dataset.revealed = '';
   syncExpandBtn();
 }
 window.addEventListener('hashchange', openHash);
 openHash();
 
 document.querySelector('[data-print]')?.addEventListener('click', () => window.print());
+
+// "Try to recall first" (optional, remembered): section bodies stay hidden behind a prompt until revealed.
+const recallBtn = document.querySelector<HTMLButtonElement>('[data-recall-toggle]');
+function applyRecall(on: boolean) {
+  if (on) root.dataset.recall = 'on';
+  else delete root.dataset.recall;
+  document.querySelectorAll<HTMLElement>('.entity-section[data-revealed]').forEach((s) => delete s.dataset.revealed);
+  recallBtn?.setAttribute('aria-pressed', String(on));
+  try {
+    localStorage.setItem('ap-recall', on ? 'on' : 'off');
+  } catch {
+    /* preference won't persist */
+  }
+}
+recallBtn?.addEventListener('click', () => applyRecall(root.dataset.recall !== 'on'));
+let recallSaved: string | null = null;
+try {
+  recallSaved = localStorage.getItem('ap-recall');
+} catch {
+  /* storage unavailable */
+}
+applyRecall(recallSaved === 'on');
+document.querySelectorAll<HTMLButtonElement>('[data-recall-reveal]').forEach((b) =>
+  b.addEventListener('click', () => {
+    const section = b.closest<HTMLElement>('.entity-section');
+    if (!section) return;
+    section.dataset.revealed = '';
+    const body = section.querySelector<HTMLElement>('.section-body');
+    if (body) {
+      body.tabIndex = -1;
+      body.focus();
+    }
+  }),
+);
+openHash();
+
+// Scroll-spy: mark the TOC entry of the section being read.
+const tocLinks = new Map(
+  [...document.querySelectorAll<HTMLAnchorElement>('.section-toc a[href^="#"]')].map((a) => [a.hash.slice(1), a]),
+);
+const spySections = [...document.querySelectorAll<HTMLElement>('.entity-section')];
+let spyQueued = false;
+function spy() {
+  spyQueued = false;
+  // The section being read: the last one whose top has passed 30% of the viewport.
+  const line = window.innerHeight * 0.3;
+  const current = spySections.filter((s) => s.offsetParent !== null && s.getBoundingClientRect().top <= line).at(-1);
+  tocLinks.forEach((a, id) => (current?.id === id ? a.setAttribute('aria-current', 'true') : a.removeAttribute('aria-current')));
+}
+window.addEventListener('scroll', () => {
+  if (!spyQueued) requestAnimationFrame(spy);
+  spyQueued = true;
+}, { passive: true });
+spy();
 
 export {};

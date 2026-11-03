@@ -78,7 +78,7 @@ const fullTitle = title === SITE_NAME ? SITE_NAME : `${title} · ${SITE_NAME}`;
     <a class="skip-link" href="#main">{tCommon(lang, 'skipToContent')}</a>
     <div class="app">
       <TopBar lang={lang} langSwitchToHome={!alternates} />
-      <PrimaryNav lang={lang} current={tab} />
+      <PrimaryNav lang={lang} current={tab}><slot name="sidebar" /></PrimaryNav>
       <main id="main" tabindex="-1">
         <DisclaimerNotice lang={lang} />
         <div class="page" data-pagefind-body={searchable ? '' : undefined}>

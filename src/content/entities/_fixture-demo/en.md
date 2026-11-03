@@ -6,7 +6,7 @@ lang: en
 
 ## Definition and epidemiology
 
-Placeholder text 1. Lorem ipsum dolor sit amet.
+Placeholder text 1. See [[fixture-demo-b]] and [[g:fixture-term]].
 
 Placeholder text 1b.
 

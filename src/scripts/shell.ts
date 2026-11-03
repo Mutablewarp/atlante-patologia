@@ -111,12 +111,22 @@ document.querySelectorAll<HTMLAnchorElement>('.nav-item[data-tab]').forEach((a) 
   }),
 );
 
-// ── Ctrl/⌘ K: focus the search field (the command palette comes later) ──
+// ── Ctrl/⌘ K: command palette (lazy-loaded); falls back to the search field ──
 const isMac = /Mac|iPhone|iPad/.test(navigator.platform || navigator.userAgent);
 document.querySelectorAll('[data-shortcut-hint]').forEach((k) => (k.textContent = isMac ? '⌘ K' : 'Ctrl K'));
+const paletteBtn = document.querySelector<HTMLButtonElement>('[data-palette-open]');
+const openPalette = () =>
+  import('./palette.ts')
+    .then((m) => m.openPalette(paletteBtn!))
+    .catch(() => (location.href = (JSON.parse(paletteBtn!.dataset.palette!) as { search: string }).search));
+paletteBtn?.addEventListener('click', () => void openPalette());
 document.addEventListener('keydown', (ev) => {
   if (ev.key.toLowerCase() !== 'k' || !(ev.metaKey || ev.ctrlKey)) return;
   ev.preventDefault();
+  if (paletteBtn) {
+    void openPalette();
+    return;
+  }
   const field = document.querySelector<HTMLInputElement>('[data-page-search]') ?? document.querySelector<HTMLInputElement>('[data-global-search]');
   if (field && field.offsetParent !== null) field.focus();
   else location.href = (document.querySelector<HTMLAnchorElement>('.nav-item[data-tab="search"]')?.dataset.root) ?? '';

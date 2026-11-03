@@ -1,0 +1,45 @@
+---
+/** Sidebar module tree (desktop) with "you are here" on the current entity (NAVIGATION_SPEC §4, §6). */
+import type { Lang } from '../../i18n/index.ts';
+import { tHz } from '../../i18n/horizontal.ts';
+import { langPath } from '../../lib/url.ts';
+import type { SiteData } from '../../lib/content.ts';
+
+interface Props {
+  lang: Lang;
+  data: SiteData;
+  current: string;
+}
+const { lang, data, current } = Astro.props;
+const currentModule = data.entityById.get(current)?.module;
+const mods = data.modules
+  .map((m) => ({ ...m, items: data.entities.filter((e) => e.module === m.id) }))
+  .filter((m) => m.items.length > 0);
+---
+
+<div class="module-tree">
+  <p class="module-tree-title" id="module-tree-title">{tHz(lang, 'moduleTree')}</p>
+  <ul aria-labelledby="module-tree-title">
+    {
+      mods.map((m) => (
+        <li>
+          <details open={m.id === currentModule}>
+            <summary>
+              <span class="module-id">{m.id.toUpperCase()}</span> {m.label[lang]}
+            </summary>
+            <ul>
+              {m.items.map((e) => (
+                <li>
+                  <a href={langPath(lang, `e/${e.id}/`)} aria-current={e.id === current ? 'location' : undefined}>
+                    {e.names[lang]}
+                    {e.id === current && <span class="here">{tHz(lang, 'youAreHere')}</span>}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </details>
+        </li>
+      ))
+    }
+  </ul>
+</div>

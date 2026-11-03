@@ -1,0 +1,97 @@
+---
+/**
+ * Differential builder (NAVIGATION_SPEC §5): findings from four facets,
+ * candidates ranked client-side by lib/differential.ts.
+ */
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../../components/nav/Breadcrumb.astro';
+import { langPaths, type Lang } from '../../../i18n/index.ts';
+import { tAtlas } from '../../../i18n/pages.ts';
+import { tHz } from '../../../i18n/horizontal.ts';
+import { langPath } from '../../../lib/url.ts';
+import { siteData } from '../../../lib/content.ts';
+import { DIFF_FACETS } from '../../../lib/differential.ts';
+import '../../../styles/horizontal.css';
+
+export const getStaticPaths = langPaths;
+
+const lang = Astro.params.lang as Lang;
+const t = (k: Parameters<typeof tHz>[1]) => tHz(lang, k);
+const { entities, taxonomy, membership } = await siteData();
+const facets = DIFF_FACETS.map((lens) => {
+  const tax = taxonomy.get(lens);
+  const used = membership.get(lens)!;
+  return {
+    lens,
+    label: tax?.label[lang] ?? lens,
+    terms: [...(tax?.terms ?? [])].sort((a, b) => a.order - b.order).filter((x) => used.has(x.id)),
+  };
+}).filter((f) => f.terms.length > 0);
+const labels = Object.fromEntries(facets.flatMap((f) => f.terms.map((x) => [`${f.lens}:${x.id}`, x.label[lang]])));
+const config = {
+  entities: entities.map((e, order) => ({
+    id: e.id,
+    name: e.names[lang],
+    url: langPath(lang, `e/${e.id}/`),
+    tier: e.tier,
+    order,
+    findings: DIFF_FACETS.flatMap((lens) => e.lenses[lens].map((term) => `${lens}:${term}`)),
+  })),
+  labels,
+  strings: {
+    count: t('diffCount'),
+    one: t('diffCountOne'),
+    none: t('diffNone'),
+    pick: t('diffPick'),
+    matched: t('diffMatched'),
+    unmatched: t('diffUnmatched'),
+    table: t('diffTable'),
+    score: t('diffScore'),
+  },
+};
+---
+
+<BaseLayout lang={lang} title={t('diffTitle')} description={t('diffBody')} tab="atlas" searchable={false}>
+  <Breadcrumb lang={lang} items={[{ label: tAtlas(lang, 'title'), href: langPath(lang, 'atlas/') }, { label: t('diffTitle') }]} />
+  <header class="page-head">
+    <h1>{t('diffTitle')}</h1>
+    <p class="lede">{t('diffIntro')}</p>
+  </header>
+  <noscript><p class="notice">{t('noJs')} <a href={langPath(lang, 'atlas/')}>{tAtlas(lang, 'title')}</a></p></noscript>
+
+  {
+    facets.length === 0 ? (
+      <p class="empty-state">{t('emptyTool')}</p>
+    ) : (
+      <div class="diff js-only" data-diff={JSON.stringify(config)}>
+        <form class="diff-form" aria-labelledby="diff-findings-title" data-diff-form>
+          <h2 id="diff-findings-title">{t('diffFindings')}</h2>
+          {facets.map((f) => (
+            <fieldset class="facet">
+              <legend>{f.label}</legend>
+              <ul>
+                {f.terms.map((x) => (
+                  <li>
+                    <label>
+                      <input type="checkbox" name="f" value={`${f.lens}:${x.id}`} /> {x.label[lang]}
+                    </label>
+                  </li>
+                ))}
+              </ul>
+            </fieldset>
+          ))}
+          <button type="reset" class="btn btn-small">{t('diffClear')}</button>
+        </form>
+        <section class="diff-results" aria-labelledby="diff-results-title">
+          <h2 id="diff-results-title">{t('diffResults')}</h2>
+          <p role="status" aria-live="polite" class="diff-count" data-diff-status>{t('diffPick')}</p>
+          <ol class="diff-list" data-diff-list />
+        </section>
+      </div>
+    )
+  }
+</BaseLayout>
+
+<script>
+  import '../../../scripts/differential.ts';
+</script>

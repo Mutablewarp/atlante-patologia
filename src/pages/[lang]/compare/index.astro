@@ -1,0 +1,75 @@
+---
+/** Compare 2–4 entities side by side (NAVIGATION_SPEC §5). Table built client-side from data/*.json. */
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../../components/nav/Breadcrumb.astro';
+import { langPaths, type Lang } from '../../../i18n/index.ts';
+import { tAtlas } from '../../../i18n/pages.ts';
+import { tHz } from '../../../i18n/horizontal.ts';
+import { SECTIONS } from '../../../i18n/sections.ts';
+import { langPath } from '../../../lib/url.ts';
+import { siteData } from '../../../lib/content.ts';
+import '../../../styles/horizontal.css';
+
+export const getStaticPaths = langPaths;
+
+const lang = Astro.params.lang as Lang;
+const t = (k: Parameters<typeof tHz>[1]) => tHz(lang, k);
+const { entities } = await siteData();
+const collator = new Intl.Collator(lang);
+const options = [...entities].sort((a, b) => collator.compare(a.names[lang], b.names[lang]));
+const config = {
+  index: langPath(lang, 'data/index.json'),
+  quick: langPath(lang, 'data/quick.json'),
+  entityBase: langPath(lang, 'e/'),
+  sections: [
+    { id: 'summary', title: t('compareSummary') },
+    ...SECTIONS.filter((s) => s.quick).map((s) => ({ id: s.id, title: s.title[lang] })),
+  ],
+  strings: {
+    caption: t('compareCaption'),
+    section: t('compareSection'),
+    remove: t('compareRemove'),
+    needTwo: t('compareNeedTwo'),
+    max: t('compareMax'),
+    updated: t('compareUpdated'),
+    loading: t('loading'),
+    error: t('loadError'),
+  },
+};
+---
+
+<BaseLayout lang={lang} title={t('compareTitle')} description={t('compareBody')} tab="atlas" searchable={false}>
+  <Breadcrumb lang={lang} items={[{ label: tAtlas(lang, 'title'), href: langPath(lang, 'atlas/') }, { label: t('compareTitle') }]} />
+  <header class="page-head">
+    <h1>{t('compareTitle')}</h1>
+    <p class="lede">{t('compareIntro')}</p>
+  </header>
+
+  <noscript><p class="notice">{t('noJs')} <a href={langPath(lang, 'atlas/')}>{tAtlas(lang, 'title')}</a></p></noscript>
+
+  {
+    entities.length < 2 ? (
+      <p class="empty-state">{t('emptyTool')}</p>
+    ) : (
+      <div class="compare js-only" data-compare={JSON.stringify(config)}>
+        <form class="tool-row" data-compare-form>
+          <label for="compare-pick">{t('comparePick')}</label>
+          <select id="compare-pick" class="field">
+            {options.map((e) => (
+              <option value={e.id}>{e.names[lang]}</option>
+            ))}
+          </select>
+          <button type="submit" class="btn btn-small">{t('compareAdd')}</button>
+        </form>
+        <h2 class="visually-hidden" id="chosen-title">{t('compareChosen')}</h2>
+        <ul class="chosen" aria-labelledby="chosen-title" data-chosen />
+        <p role="status" aria-live="polite" class="small muted" data-compare-status />
+        <div data-compare-table />
+      </div>
+    )
+  }
+</BaseLayout>
+
+<script>
+  import '../../../scripts/compare.ts';
+</script>

@@ -1,0 +1,40 @@
+# FIXTURE — NOT CONTENT. Exercises horizontal tools (PREVIEW_DRAFTS=1). No medical claims.
+id: fixture-demo-b
+module: g01
+tier: core
+kind: concept
+names:
+  it: "Voce di prova B (segnaposto)"
+  en: "Demo entry B (placeholder)"
+  eponyms: []
+  synonyms: { it: ["Scheda B"], en: ["Card B"] }
+  abbreviations: []
+summary:
+  it: "Seconda scheda finta per provare confronti e mappe. Nessuna informazione medica."
+  en: "Second fake card to test comparisons and maps. No medical information."
+lenses:
+  system: [general]
+  process: [cell-injury, necrosis]
+  pattern: [necrosis-coagulative]
+  presentation: [mass-lesion]
+  marker: [ihc]
+  group: [degenerative]
+learningObjectives:
+  - { it: "Obiettivo segnaposto B.", en: "Placeholder objective B." }
+relations:
+  - type: sharesMechanism
+    target: fixture-demo
+  - type: mimics
+    target: fixture-demo-c
+quickCheck:
+  - { id: demo-b-q1, q: { it: "Domanda B1?", en: "Question B1?" }, a: { it: "Risposta B1.", en: "Answer B1." }, kind: short }
+  - { id: demo-b-q2, q: { it: "Domanda B2?", en: "Question B2?" }, a: { it: "Risposta B2.", en: "Answer B2." }, kind: short }
+  - { id: demo-b-q3, q: { it: "Domanda B3?", en: "Question B3?" }, a: { it: "Risposta B3.", en: "Answer B3." }, kind: free }
+images:
+  - { id: fixture-grid, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+lastUpdated: 2026-10-10
+status: draft

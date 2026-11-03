@@ -6,8 +6,9 @@ import { LANGS, type Lang } from '../../../../i18n/index.ts';
 import { tAtlas } from '../../../../i18n/pages.ts';
 import { LENSES, type LensId } from '../../../../lib/schema.ts';
 import { langPath } from '../../../../lib/url.ts';
-import { siteData } from '../../../../lib/content.ts';
+import { siteData, patterns } from '../../../../lib/content.ts';
 import { prevNext } from '../../../../lib/lenses.ts';
+import { tHz } from '../../../../i18n/horizontal.ts';
 
 export async function getStaticPaths() {
   const { membership } = await siteData();
@@ -33,6 +34,8 @@ const termOrder = [...(tax?.terms ?? [])]
   .filter((x) => membership.get(lens)!.has(x));
 const { prev, next } = prevNext(termOrder, termId);
 const labelOf = (id?: string) => tax?.terms.find((x) => x.id === id)?.label[lang] ?? id;
+// Pattern Pages are filed under one process term (CONTENT_SCHEMA §3).
+const termPatterns = lens === 'process' ? (await patterns()).filter((p) => p.process === termId) : [];
 ---
 
 <BaseLayout lang={lang} title={`${termLabel} · ${lensLabel}`} description={`${lensLabel}: ${termLabel}`} tab="atlas">
@@ -64,6 +67,23 @@ const labelOf = (id?: string) => tax?.terms.find((x) => x.id === id)?.label[lang
       })
     }
   </ul>
+  {
+    termPatterns.length > 0 && (
+      <>
+        <h2>{tHz(lang, 'patternsTitle')}</h2>
+        <ul class="grid">
+          {termPatterns.map((p) => (
+            <li>
+              <a class="card link-card" href={langPath(lang, `pattern/${p.id}/`)}>
+                <h3>{p.names[lang]}</h3>
+                <p class="small muted">{p.summary[lang]}</p>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </>
+    )
+  }
   {
     (prev || next) && (
       <nav class="prev-next" aria-label={lensLabel}>
