@@ -47,6 +47,14 @@ describe('content gates: synthetic fixture', () => {
       expect(fail('parity', (t) => void (alpha(t).it = alpha(t).it!.replace('## Patogenesi', '## Pathogenesis')))).toEqual([
         expect.stringMatching(/it\.md: .*#3: expected "Patogenesi", got "Pathogenesis"/),
       ]));
+    it('fails when the differential has no table or high-yield is not a bold bullet list', () => {
+      expect(fail('parity', (t) => void (alpha(t).en = alpha(t).en!.replace('| [[fx-planned]] | none |', 'none').replace(/\| Entry.*\n\| ---.*\n/, '')))).toEqual([
+        expect.stringMatching(/en\.md: differential diagnosis needs a Markdown table/),
+      ]);
+      expect(fail('parity', (t) => void (alpha(t).it = alpha(t).it!.replace('- Termine **segnaposto**.', '- Termine segnaposto.')))).toEqual([
+        expect.stringMatching(/it\.md: high-yield summary needs \*\*bold\*\*/),
+      ]);
+    });
     it('fails when claim marker sets differ', () =>
       expect(fail('parity', (t) => void (alpha(t).it = alpha(t).it!.replace('<!--c:fx-alpha-c002-->', '')))).toEqual([
         expect.stringMatching(/it\.md: claim markers missing.*fx-alpha-c002/),
@@ -106,6 +114,9 @@ describe('content gates: synthetic fixture', () => {
       ]);
       expect(unmarkedNumericSentences('- lasts 2 weeks\n\n| a | 4 mm |\n| --- | --- |\n\n## 5 mm heading\n\n<!-- 7 mm in a comment -->')).toEqual(['lasts 2 weeks', '4 mm']);
       expect(unmarkedNumericSentences('Measures 5 mm. <!--c:x-c1-->\nNext 7 anni.<!--c:x-c2-->')).toEqual([]);
+      // genus abbreviations do not split a sentence away from its marker
+      expect(unmarkedNumericSentences('*C. perfringens* causes most cases (80% to 90%), with *C. novyi* in others.<!--c:x-c1-->')).toEqual([]);
+      expect(unmarkedNumericSentences('*C. perfringens* causes 80% of cases. *C. novyi* the rest.<!--c:x-c1-->')).toEqual(['*C. perfringens* causes 80% of cases.']);
     });
   });
 
@@ -132,6 +143,11 @@ describe('content gates: synthetic fixture', () => {
       expect(prerequisiteCycles([{ id: 'a', prerequisites: ['b'] }, { id: 'b', prerequisites: ['c'] }, { id: 'c', prerequisites: ['a'] }])).toEqual([['a', 'b', 'c', 'a']]);
       expect(prerequisiteCycles([{ id: 'a', prerequisites: ['b'] }, { id: 'b', prerequisites: [] }])).toEqual([]);
     });
+    it('fails on unknown [[id]] and [[g:id]] cross-links (planned ids are fine)', () =>
+      expect(fail('references', (t) => void (alpha(t).en += '\nSee [[ghost]] and [[g:nope|term]].\n'))).toEqual([
+        expect.stringMatching(/en\.md: \[\[ghost\]\] → unknown entity/),
+        expect.stringMatching(/en\.md: \[\[g:nope\]\] → unknown glossary entry/),
+      ]));
     it('fails on an unknown lens term', () =>
       expect(fail('references', (t) => void (meta(alpha(t)).lenses.marker = ['nope']))).toEqual([expect.stringMatching(/unknown marker lens term "nope"/)]));
     it('fails on an unknown source', () =>

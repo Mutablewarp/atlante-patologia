@@ -8,6 +8,7 @@ import type { z } from 'astro/zod';
 import {
   entityBodySchema,
   entitySchema,
+  glossarySchema,
   imageSchema,
   ledgerSchema,
   moduleSchema,
@@ -22,7 +23,7 @@ import {
 } from '../../src/lib/schema.ts';
 import { SECTIONS, QUICK_CHECK } from '../../src/i18n/sections.ts';
 import { contradictoryPairs } from '../../src/lib/relations.ts';
-import { claimMarkers, h2Titles, splitFrontmatter, unmarkedNumericSentences } from './markdown.ts';
+import { claimMarkers, crossLinks, h2Titles, sectionTexts, splitFrontmatter, unmarkedNumericSentences } from './markdown.ts';
 import { isFixtureDoc, type Doc, type Tree, type Unit } from './tree.ts';
 
 export type Gate = 'schema' | 'parity' | 'ledger' | 'numbers' | 'references' | 'review' | 'images';
@@ -39,6 +40,8 @@ export type Parsed = {
   patterns: { unit: Unit; data: Pattern }[];
   questions: { doc: Doc; data: Question }[];
   images: { doc: Doc; data: Image }[];
+  /** ids of non-fixture glossary entries */
+  glossary: Set<string>;
   taxonomy: Map<string, Set<string>>;
   planned: Set<string>;
   sources: Set<string>;
@@ -86,6 +89,7 @@ export function parseTree(tree: Tree): Parsed {
     patterns: units(tree.patterns, patternSchema),
     questions: docs(tree.questions, questionSchema, 'schema'),
     images: docs(tree.images, imageSchema, 'images'),
+    glossary: new Set(docs(tree.glossary, glossarySchema, 'schema').filter(({ doc }) => !isFixtureDoc(doc)).map(({ data }) => data.id)),
     taxonomy,
     planned: new Set(modules.flatMap((m) => m.planned.map((p) => p.id))),
     sources: new Set(sources.map((s) => s.id)),
@@ -112,7 +116,13 @@ export function parityGate(tree: Tree): { problems: Problem[]; stale: StaleTrans
         const got = h2Titles(docs[lang].body);
         const i = Array.from({ length: Math.max(want.length, got.length) }, (_, k) => k).find((k) => got[k] !== want[k]);
         if (i !== undefined)
-          p(`${lang}.md`, `H2 sections must be the 13 canonical titles in order; #${i + 1}: expected "${want[i] ?? '(none)'}", got "${got[i] ?? '(none)'}"`);
+          p(`${lang}.md`, `H2 sections must be the 13 canonical titles in order; #${i + 1}: expected "${want[i] ?? '(none)'}", got "${got[i] ?? '(none)'}"`);        const text = sectionTexts(docs[lang].body);
+        const title = (id: string) => SECTIONS.find((x) => x.id === id)!.title[lang];
+        const lines = (id: string) => (text.get(title(id)) ?? '').replace(/<!--[\s\S]*?-->/g, '').split('\n').filter((l) => l.trim());
+        if (!lines('differential').some((l) => /^\s*\|.*\|\s*$/.test(l))) p(`${lang}.md`, 'differential diagnosis needs a Markdown table');
+        const hy = lines('high-yield');
+        if (!hy.length || !hy.every((l) => /^\s*[-*]\s/.test(l))) p(`${lang}.md`, 'high-yield summary must be a bullet list only');
+        else if (!hy.some((l) => /\*\*[^*]+\*\*/.test(l))) p(`${lang}.md`, 'high-yield summary needs **bold** key terms');
       }
     }
     if (!canonical && h2Titles(docs.en.body).length !== h2Titles(docs.it.body).length) p('it.md', 'H2 section count differs from en.md');
@@ -203,6 +213,12 @@ export function referencesGate(parsed: Parsed): Problem[] {
       if (img.pairWith) need(imageIds.has(img.pairWith), f, `unknown pairWith image "${img.pairWith}"`);
     }
   }
+  // [[id]] must name an entity or a planned id; [[g:id]] a (non-fixture) glossary entry (D038).
+  for (const { unit } of [...entities, ...parsed.patterns.filter((x) => !x.unit.fixture)])
+    for (const lang of ['en', 'it'] as const)
+      for (const l of crossLinks(unit[lang] ?? ''))
+        if (l.glossary) need(parsed.glossary.has(l.id), `${unit.dir}/${lang}.md`, `[[g:${l.id}]] → unknown glossary entry`);
+        else need(known.has(l.id), `${unit.dir}/${lang}.md`, `[[${l.id}]] → unknown entity (not an entity nor planned in modules.yaml)`);
   for (const msg of contradictoryPairs(entities.map((e) => e.data)))
     problems.push({ gate: 'references', file: 'src/content/entities', message: `contradictory relations: ${msg}` });
   for (const cycle of prerequisiteCycles(entities.map((e) => e.data)))

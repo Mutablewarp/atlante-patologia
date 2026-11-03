@@ -17,6 +17,7 @@ export type Tree = {
   patterns: Unit[];
   questions: Doc[];
   images: Doc[];
+  glossary: Doc[];
   taxonomy: Doc[];
   modules: Doc;
   sources: Doc;
@@ -75,6 +76,7 @@ export function loadTree(root: string): Tree {
       yamlFiles(join(content, 'questions', m)).map((f) => doc(join(content, 'questions', m, f))),
     ),
     images: yamlFiles(join(content, 'images')).map((f) => doc(join(content, 'images', f))),
+    glossary: yamlFiles(join(content, 'glossary')).map((f) => doc(join(content, 'glossary', f))),
     taxonomy: yamlFiles(join(content, 'taxonomy')).map((f) => doc(join(content, 'taxonomy', f))),
     modules: doc(join(content, 'modules.yaml')),
     sources: doc(join(content, 'sources.yaml')),

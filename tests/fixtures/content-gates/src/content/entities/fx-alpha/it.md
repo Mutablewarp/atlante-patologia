@@ -1,6 +1,6 @@
 ---
 lang: it
-translatedFrom: 00733eb012c782e8349ab49ce2d57284d4f4b0f2cc3b63a2ac10b82091a813ea
+translatedFrom: 083281101678e4c419ef26ec5b94906fba48a4019cd3317251eabcb1f0b406b9
 ---
 
 ## Definizione ed epidemiologia
@@ -47,7 +47,7 @@ Segnaposto.
 
 ## Punti chiave
 
-Segnaposto.
+- Termine **segnaposto**.
 
 ## Errori comuni e trappole d'esame
 

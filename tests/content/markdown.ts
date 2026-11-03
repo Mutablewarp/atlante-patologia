@@ -15,6 +15,19 @@ export function h2Titles(body: string): string[] {
   return [...body.replace(FENCE, '').matchAll(/^##[ \t]+(.+?)[ \t#]*$/gm)].map((m) => m[1]!.trim());
 }
 
+/** Section text keyed by H2 title (text between that H2 and the next one; fenced code ignored). */
+export function sectionTexts(body: string): Map<string, string> {
+  const parts = body.replace(FENCE, '').split(/^##[ \t]+(.+?)[ \t#]*$/m);
+  const out = new Map<string, string>();
+  for (let i = 1; i < parts.length; i += 2) out.set(parts[i]!.trim(), parts[i + 1] ?? '');
+  return out;
+}
+
+/** `[[id]]` / `[[g:id]]` cross-links (D038), same syntax as src/lib/crosslinks.ts. */
+export function crossLinks(body: string): { glossary: boolean; id: string }[] {
+  return [...body.matchAll(/\[\[(g:)?([a-z0-9]+(?:-[a-z0-9]+)*)(?:\|[^\]]+)?\]\]/g)].map((m) => ({ glossary: !!m[1], id: m[2]! }));
+}
+
 /** Claim ids from `<!--c:ID-->` markers. */
 export function claimMarkers(body: string): Set<string> {
   return new Set([...body.matchAll(MARKER)].map((m) => m[1]!));
@@ -47,7 +60,8 @@ export function unmarkedNumericSentences(body: string): string[] {
   const out: string[] = [];
   for (const piece of pieces) {
     const glued = piece.replace(/\s+/g, ' ').replace(new RegExp(`\\s+${OPEN}`, 'g'), OPEN).trim();
-    for (const s of glued.split(new RegExp(`(?<=[.!?…]|${CLOSE})\\s+`))) {
+    // A single capital + "." (genus abbreviation such as *C. novyi*) does not end a sentence.
+    for (const s of glued.split(new RegExp(`(?<=${CLOSE}|(?<!(?:^|[\\s*_(])\\p{Lu})[.!?…])\\s+`, 'u'))) {
       if (!NUMERIC.test(s.replace(new RegExp(`${OPEN}[^${CLOSE}]*${CLOSE}`, 'g'), ''))) continue;
       if (!new RegExp(`${CLOSE}[\\s.!?;:,)»"'*_]*$`).test(s)) out.push(s);
     }

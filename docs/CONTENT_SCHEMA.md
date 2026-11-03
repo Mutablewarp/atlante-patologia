@@ -98,7 +98,7 @@ Authoring conventions inside the markdown:
 - **Numbers** (%, rates, survival, lab ranges) must have a claim marker whose ledger row has a source. Otherwise write "approximately" and the validator flags the line for REVIEW_QUEUE.
 - **Sources differ:** `<aside class="sources-differ">…</aside>`, plus a REVIEW_QUEUE entry.
 - **Edition-dependent passages:** `<aside class="edition">…</aside>`.
-- **Differential section:** a markdown table with columns: entity | discriminating features | key test. Linked entities use `[[id]]`, which is resolved at build. Unpublished targets render as plain text with a "planned" label.
+- **Differential section:** a markdown table with columns: entity | discriminating features | key test. Linked entities use `[[id]]` (or `[[id|label]]`); glossary terms use `[[g:id]]`. Links are resolved at build on the rendered HTML (`src/lib/crosslinks.ts`, D038). Unpublished targets render as plain text with a "planned" label. The references gate fails on an id that is neither an entity nor planned.
 - **High-yield section:** a bullet list. **Bold** terms in it become cloze deletions (see §7).
 - **Mnemonics:** must be original. The no-verbatim guard also checks this section.
 

@@ -46,7 +46,7 @@ Placeholder.
 
 ## High-yield summary
 
-Placeholder.
+- **Placeholder** term.
 
 ## Common misconceptions and exam traps
 
