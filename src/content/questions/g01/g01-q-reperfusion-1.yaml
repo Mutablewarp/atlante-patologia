@@ -1,0 +1,55 @@
+id: g01-q-reperfusion-1
+module: g01
+entities: [ischemia-reperfusion-injury, hypoxic-ischemic-injury]
+kind: mcq
+difficulty: 3
+tags: [hypoxic-ischemic-injury, ischemia-reperfusion-injury]
+stem:
+  it: "Un uomo di 61 anni con infarto miocardico anteriore acuto viene sottoposto a un intervento coronarico che riapre l'arteria occlusa circa 4 ore dopo l'inizio dei sintomi. Muore il giorno successivo per un'aritmia. All'autopsia l'infarto è emorragico e, all'esame istologico, in tutto l'infarto e non solo ai margini i miociti necrotici sono attraversati da spesse bande trasversali eosinofile, irregolari, di sarcomeri ipercontratti, con sarcolemma interrotto. Quale meccanismo ha prodotto più direttamente queste bande?"
+  en: "A 61-year-old man with an acute anterior myocardial infarction undergoes a coronary intervention that reopens the occluded artery about 4 hours after symptom onset. He dies of an arrhythmia the next day. At autopsy the infarct is hemorrhagic, and throughout the infarct, not only at its margins, necrotic myocytes are crossed by thick, irregular, transverse eosinophilic bands of hypercontracted sarcomeres, with a broken sarcolemma. Which mechanism most directly produced these bands?"
+options:
+  - id: a
+    text:
+      it: "La deplezione persistente di ATP in un territorio la cui arteria è rimasta occlusa."
+      en: "Persistent ATP depletion in a territory whose artery stayed occluded."
+    correct: false
+    why:
+      it: "Errata. L'arteria è stata riaperta. Un infarto da occlusione persistente è pallido, visibile a occhio nudo solo dopo circa 12 ore, e le eventuali bande di contrazione restano limitate ai margini; qui l'infarto è emorragico e le bande sono diffuse."
+      en: "Incorrect. The artery was reopened. An infarct from persistent occlusion is pale, visible to the naked eye only after about 12 hours, and any contraction bands stay at its margins; here the infarct is hemorrhagic and the bands are widespread."
+  - id: b
+    text:
+      it: "L'ingresso massivo di Ca2+, attraverso un sarcolemma danneggiato dalle specie reattive dell'ossigeno, in miociti ancora capaci di contrarsi, aggravato dall'inversione dello scambiatore Na+/Ca2+ quando il pH si normalizza."
+      en: "Massive Ca2+ entry, through sarcolemma damaged by reactive oxygen species, into myocytes still able to contract, worsened as the Na+/Ca2+ exchanger reverses when pH normalizes."
+    correct: true
+    why:
+      it: "Corretta. La necrosi a bande di contrazione è la lesione tipica dell'infarto riperfuso. Con il ritorno dell'ossigeno le specie reattive dell'ossigeno aumentano bruscamente e ledono il sarcolemma; il Ca2+ extracellulare entra senza freni e fa ipercontrarre i miociti che possono ancora contrarsi. La correzione improvvisa del pH inverte lo scambiatore Na+/Ca2+ e peggiora il sovraccarico di calcio iniziato durante l'ischemia."
+      en: "Correct. Contraction band necrosis is the typical lesion of a reperfused infarct. As oxygen returns, reactive oxygen species surge and damage the sarcolemma; extracellular Ca2+ enters unchecked and hypercontracts the myocytes that can still contract. Abrupt correction of pH reverses the Na+/Ca2+ exchanger and worsens the calcium overload that began during ischemia."
+  - id: c
+    text:
+      it: "Un sodio intracellulare basso che spegne lo scambiatore Na+/Ca2+, intrappolando il calcio nel reticolo sarcoplasmatico."
+      en: "Low intracellular sodium that switches off the Na+/Ca2+ exchanger, trapping calcium in the sarcoplasmic reticulum."
+    correct: false
+    why:
+      it: "Errata. Nell'ischemia il Na+ intracellulare aumenta (pompa Na+/K+ senza ATP, scambiatore Na+/H+ attivato dall'acidosi), e alla riperfusione lo scambiatore Na+/Ca2+ si inverte aumentando il Ca2+ nel citosol, non riducendolo."
+      en: "Incorrect. In ischemia intracellular Na+ rises (Na+/K+ pump without ATP, Na+/H+ exchanger activated by acidosis), and at reperfusion the Na+/Ca2+ exchanger reverses, raising cytosolic Ca2+ rather than lowering it."
+  - id: d
+    text:
+      it: "La digestione proteolitica dei miociti da parte di neutrofili confinati al bordo dell'infarto."
+      en: "Proteolytic digestion of myocytes by neutrophils confined to the border of the infarct."
+    correct: false
+    why:
+      it: "Errata. Nell'infarto riperfuso i neutrofili non restano al bordo ma permeano tutto l'infarto, arrivando e scomparendo più in fretta. I loro enzimi aggiungono danno, ma le bande sono sarcomeri ipercontratti dal calcio, non il prodotto di una digestione."
+      en: "Incorrect. In a reperfused infarct neutrophils do not stay at the border but permeate the whole infarct, arriving and leaving faster. Their enzymes add damage, but the bands are sarcomeres hypercontracted by calcium, not a product of digestion."
+  - id: e
+    text:
+      it: "Il rilascio di citocromo c da un poro di transizione di permeabilità mitocondriale aperto, che avvia l'apoptosi di singoli miociti."
+      en: "Release of cytochrome c through an open mitochondrial permeability transition pore, triggering apoptosis of single myocytes."
+    correct: false
+    why:
+      it: "Errata. Il citocromo c che fuoriesce dai mitocondri può avviare l'apoptosi, ma l'apoptosi colpisce cellule isolate, con condensazione nucleare entro una membrana integra e senza infiammazione. Non spiega bande diffuse di ipercontrazione in miociti con sarcolemma rotto."
+      en: "Incorrect. Cytochrome c leaking from mitochondria can trigger apoptosis, but apoptosis affects isolated cells, with nuclear condensation inside an intact membrane and no inflammation. It does not explain widespread hypercontraction bands in myocytes with a broken sarcolemma."
+backLink: { entity: ischemia-reperfusion-injury, section: micro }
+claims: [ischemia-reperfusion-injury-c010, ischemia-reperfusion-injury-c013, ischemia-reperfusion-injury-c017, ischemia-reperfusion-injury-c021, ischemia-reperfusion-injury-c022,ischemia-reperfusion-injury-c029, ischemia-reperfusion-injury-c030, ischemia-reperfusion-injury-c031, ischemia-reperfusion-injury-c032, ischemia-reperfusion-injury-c034, ischemia-reperfusion-injury-c042, hypoxic-ischemic-injury-c040, hypoxic-ischemic-injury-c055]
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

@@ -1,0 +1,69 @@
+id: metastatic-calcification-micro-2
+file: metastatic-calcification-micro-2.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Calcinosis_of_Chronic_Renal_Failure_(2282168742).jpg
+author: Ed Uthman
+license: CC-BY-2.0
+licenseUrl: https://creativecommons.org/licenses/by/2.0/
+retrievedAt: 2026-10-10
+modifications: >-
+  Downscaled the 1702 × 1208 px original to 1600 × 1136 px and re-encoded as JPEG (quality 85), which also strips the
+  camera EXIF metadata; no crop, no colour change.
+attributionText: >-
+  Ed Uthman, "Calcinosis of Chronic Renal Failure" (Flickr), via Wikimedia Commons, CC BY 2.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: medium power
+caption:
+  it: >-
+    Stessa lesione a ingrandimento intermedio, EE: qui si vede come reagisce il tessuto al calcio depositato. Al centro
+    e in alto a destra due grandi depositi viola scuro, granulosi, di sali di calcio (i colori della foto virano al
+    magenta). Ora segui il loro margine: attorno a ciascun deposito c'è un orletto di cellule con citoplasma chiaro o
+    schiumoso e nucleo rotondo, cioè istiociti (macrofagi) che tentano di fagocitare il materiale; nella stessa lesione
+    alcuni si fondono in cellule giganti multinucleate. Più all'esterno, a sinistra, lo stroma è fibroso, rosa, con
+    fibroblasti fusati. È una reazione da corpo estraneo: il calcio precipitato si comporta come materiale estraneo
+    insolubile, viene circondato da macrofagi e poi incapsulato da fibrosi. Il messaggio d'esame: il deposito di
+    calcio può essere lo stesso nella calcificazione metastatica e in quella distrofica; a distinguerle sono il
+    contesto (tessuto sano, ipercalcemia o iperfosfatemia, insufficienza renale) e gli esami di laboratorio, non
+    l'aspetto del singolo deposito.
+  en: >-
+    The same lesion at medium power, H&E: this field shows how tissue reacts to the deposited calcium. In the centre
+    and at the upper right lie two large, dark purple, granular deposits of calcium salts (the colours of the
+    photograph are shifted towards magenta). Now follow their edge: each deposit is rimmed by cells with pale or foamy
+    cytoplasm and round nuclei, that is, histiocytes (macrophages) trying to engulf the material; elsewhere in the
+    same lesion some of them fuse into multinucleated giant cells. Further out, on the left, the stroma is fibrous and
+    pink, with spindle-shaped fibroblasts. This is a foreign-body reaction: the precipitated calcium behaves as an
+    insoluble foreign material, is surrounded by macrophages and then walled off by fibrosis. Exam message: a calcium
+    deposit can look the same in metastatic and dystrophic calcification; what separates them is the context (healthy
+    tissue, hypercalcaemia or hyperphosphataemia, renal failure) and the laboratory tests, not the look of a single
+    deposit.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina a ingrandimento intermedio: una grande massa granulosa viola-magenta scuro al
+    centro e in basso e una seconda in alto a destra, circondate da una fascia di cellule rotonde con citoplasma chiaro;
+    a sinistra tessuto fibroso rosa con cellule allungate.
+  en: >-
+    Medium-power H&E micrograph: a large, dark purple-magenta granular mass in the centre and lower part and a second
+    one at the upper right, surrounded by a band of round cells with pale cytoplasm; on the left, pink fibrous tissue
+    with elongated cells.
+annotations:
+  - id: calcium-deposit
+    label: { it: Deposito granuloso di sali di calcio, en: Granular deposit of calcium salts }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.41, 0.37, 0.57, 0.37, 0.59, 0.50, 0.60, 0.70, 0.65, 0.80, 0.68, 0.99, 0.24, 0.99, 0.29, 0.80, 0.34, 0.62, 0.37, 0.50]
+  - id: histiocyte-rim
+    label: { it: Orletto di istiociti attorno al deposito, en: Rim of histiocytes around the deposit }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.60, 0.42, 0.66, 0.42, 0.72, 0.60, 0.74, 0.80, 0.68, 0.82, 0.62, 0.66, 0.61, 0.52]
+  - id: fibrous-stroma
+    label: { it: Stroma fibroso con fibroblasti fusati, en: Fibrous stroma with spindle fibroblasts }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.02, 0.15, 0.18, 0.15, 0.18, 0.55, 0.02, 0.55]

@@ -1,0 +1,55 @@
+id: dystrophic-calcification-micro-2
+file: dystrophic-calcification-micro-2.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Histopathology_of_dystrophic_microcalcifications_in_ductal_carcinoma_in_situ.jpg
+author: Mikael Häggström, M.D.
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-10-10
+modifications: "Downscaled from 2048 × 1532 px to 1600 × 1197 px and re-encoded as JPEG (EXIF metadata removed); no crop, no colour change."
+attributionText: "Mikael Häggström, M.D., via Wikimedia Commons, CC0 1.0 (public domain dedication)"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: high power
+caption:
+  it: >-
+    Microcalcificazione distrofica in un carcinoma duttale in situ (DCIS) della mammella, EE a forte ingrandimento. La
+    massa frastagliata a sinistra, viola scuro quasi nera, è fosfato di calcio: densa, frammentata in schegge angolose e
+    vitree, con un centro più chiaro e cristallino. Il calcio è molto basofilo, perciò si colora più intensamente di
+    qualsiasi nucleo del campo. Osserva la messa a fuoco: il deposito è nitido, mentre le cellule tumorali attorno (in
+    basso a destra, nuclei affollati intorno a spazi rotondi) appaiono sfocate. Il deposito, duro, sporge dal piano della
+    sezione: è un indizio utile per distinguere il calcio vero da un gruppo scuro di cellule ammassate. Perché è
+    distrofica? Il calcio precipita su cellule morte, detriti o secrezioni all'interno del dotto, cioè in un tessuto già
+    alterato, con calcemia normale. Collegamento clinico: sono proprio queste microcalcificazioni che la mammografia
+    rileva, e spesso sono loro a portare alla biopsia che diagnostica il DCIS.
+  en: >-
+    Dystrophic microcalcification in ductal carcinoma in situ (DCIS) of the breast, H&E at high power. The jagged, dark
+    purple to almost black mass on the left is calcium phosphate: dense, broken into angular, glassy shards, with a
+    paler, crystalline centre. Calcium is strongly basophilic, so it stains deeper than any nucleus in the field. Look at
+    the focus: the deposit is sharp, while the tumour cells around it (lower right, crowded nuclei around round spaces)
+    look blurred. The hard deposit stands out of the plane of the section, a useful clue to tell true calcium from a
+    dark cluster of crowded cells. Why dystrophic? The calcium precipitates on dead cells, debris or secretions inside
+    the duct, that is, in tissue that is already abnormal, while blood calcium is normal. Clinical link: these
+    microcalcifications are exactly what mammography detects, and they often lead to the biopsy that diagnoses DCIS.
+alt:
+  it: >-
+    Micrografia ad alto ingrandimento in ematossilina-eosina: a sinistra una grande massa viola scuro, quasi nera,
+    frammentata in schegge angolose con un centro più chiaro; attorno, tessuto mammario sfocato con cellule dai nuclei
+    affollati e spazi bianchi rotondi in basso a destra e stroma rosa in alto a destra.
+  en: >-
+    High-power H&E micrograph: on the left a large dark purple, almost black mass broken into angular shards with a
+    paler centre; around it, out-of-focus breast tissue with crowded nuclei and round white spaces at the lower right
+    and pink stroma at the upper right.
+annotations:
+  - id: microcalcification
+    label: { it: Microcalcificazione (fosfato di calcio), en: Microcalcification (calcium phosphate) }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.11, 0.30, 0.19, 0.21, 0.30, 0.24, 0.42, 0.25, 0.60, 0.30, 0.67, 0.42, 0.64, 0.57, 0.52, 0.64, 0.47, 0.80, 0.38, 0.88, 0.22, 0.82, 0.12, 0.62]
+  - id: dcis-cells
+    label: { it: Cellule del DCIS fuori fuoco, en: Out-of-focus DCIS cells }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.68, 0.66, 0.98, 0.50, 0.98, 0.97, 0.58, 0.97] }

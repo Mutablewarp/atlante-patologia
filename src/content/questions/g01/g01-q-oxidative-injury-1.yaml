@@ -1,0 +1,55 @@
+id: g01-q-oxidative-injury-1
+module: g01
+entities: [oxidative-injury, hypoxic-ischemic-injury, fatty-change]
+kind: mcq
+difficulty: 2
+tags: [oxidative-injury, cell-injury]
+stem:
+  it: "Una ragazza di 19 anni viene portata in ospedale due giorni dopo aver ingerito volontariamente un gran numero di compresse di paracetamolo. È normotesa. Le transaminasi sono molto aumentate e la biopsia epatica mostra, attorno alle vene centrolobulari, epatociti con necrosi coagulativa o rigonfiamento idropico, alcune piccole gocce lipidiche e un infiltrato infiammatorio scarso. Quale meccanismo spiega meglio il danno?"
+  en: "A 19-year-old woman is brought to hospital two days after deliberately swallowing a large number of acetaminophen (paracetamol) tablets. She is normotensive. Transaminases are markedly raised, and a liver biopsy shows, around the central veins, hepatocytes with coagulative necrosis or hydropic swelling, a few small lipid droplets and a scant inflammatory infiltrate. Which mechanism best explains the injury?"
+options:
+  - id: a
+    text:
+      it: "L'ipoperfusione della zona centrolobulare, con deplezione di ATP e cedimento delle pompe ioniche."
+      en: "Hypoperfusion of the centrilobular zone, with ATP depletion and failure of ion pumps."
+    correct: false
+    why:
+      it: "Errata. Nel danno ischemico l'evento primario è la perdita di ATP con cedimento delle pompe, e le specie reattive dell'ossigeno contribuiscono solo in seguito. La paziente è normotesa e non ha uno stato di bassa portata: il danno nasce dal farmaco, non da un difetto di flusso."
+      en: "Incorrect. In ischemic injury the primary event is loss of ATP with pump failure, and reactive oxygen species only add to it. The patient is normotensive with no low-flow state: the injury comes from the drug, not from a flow deficit."
+  - id: b
+    text:
+      it: "Un deficit della NADPH ossidasi che impedisce ai fagociti di produrre superossido."
+      en: "A deficiency of NADPH oxidase that prevents phagocytes from producing superoxide."
+    correct: false
+    why:
+      it: "Errata. Il deficit ereditario di NADPH ossidasi è la malattia granulomatosa cronica: i fagociti producono troppo poco superossido e H2O2 e il paziente ha infezioni ricorrenti. È l'opposto di un eccesso di ossidanti nell'epatocita."
+      en: "Incorrect. Inherited NADPH oxidase deficiency is chronic granulomatous disease: phagocytes make too little superoxide and H2O2, and the patient has recurrent infections. It is the opposite of an oxidant excess in the hepatocyte."
+  - id: c
+    text:
+      it: "L'effetto tossico delle gocce lipidiche accumulate sulla funzione dell'epatocita."
+      en: "A toxic effect of the stored lipid droplets on hepatocyte function."
+    correct: false
+    why:
+      it: "Errata. L'accumulo di grasso è reversibile e non è stato dimostrato che il grasso in sé comprometta la funzione cellulare. Le piccole gocce sono un reperto di accompagnamento, non la causa della necrosi."
+      en: "Incorrect. Fat storage is reversible, and fat itself has not been shown to impair cell function. The small droplets are an accompanying finding, not the cause of the necrosis."
+  - id: d
+    text:
+      it: "Un sovraccarico di ferro che alimenta la reazione di Fenton negli epatociti."
+      en: "Iron overload fueling the Fenton reaction in hepatocytes."
+    correct: false
+    why:
+      it: "Errata. La reazione di Fenton genera radicale ossidrile da H2O2 e Fe2+ libero, e il ferro in eccesso danneggia davvero gli epatociti nell'emocromatosi ereditaria. Ma lì il danno si sviluppa negli anni fino alla cirrosi; qui non c'è sovraccarico di ferro e la lesione è acuta, dopo un sovradosaggio."
+      en: "Incorrect. The Fenton reaction makes hydroxyl radical from H2O2 and free Fe2+, and excess iron does injure hepatocytes in hereditary hemochromatosis. But there the damage develops over years toward cirrhosis; here there is no iron overload and the lesion is acute, after an overdose."
+  - id: e
+    text:
+      it: "Un metabolita tossico del farmaco consuma il glutatione dell'epatocita, che non riesce più a neutralizzare i perossidi."
+      en: "A toxic metabolite of the drug uses up hepatocyte glutathione, so the cell can no longer neutralize peroxides."
+    correct: true
+    why:
+      it: "Corretta. Il glutatione ridotto è l'antiossidante endogeno più abbondante e, tramite la glutatione perossidasi, riduce H2O2 ad acqua. Esaurito dal metabolita, lascia i perossidi senza difesa: ne derivano necrosi coagulativa e rigonfiamento idropico centrolobulari con poca infiammazione. Il paracetamolo è la prima causa di insufficienza epatica acuta negli Stati Uniti."
+      en: "Correct. Reduced glutathione is the most abundant endogenous antioxidant and, through glutathione peroxidase, reduces H2O2 to water. Once the metabolite exhausts it, peroxides go unchecked: the result is centrilobular coagulative necrosis and hydropic swelling with little inflammation. Acetaminophen is the leading cause of acute liver failure in the United States."
+backLink: { entity: oxidative-injury, section: clinical }
+claims: [oxidative-injury-c018, oxidative-injury-c030, oxidative-injury-c032, oxidative-injury-c041, oxidative-injury-c045, oxidative-injury-c046, oxidative-injury-c047, oxidative-injury-c054, fatty-change-c044, pigment-accumulation-c019, pigment-accumulation-c044]
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

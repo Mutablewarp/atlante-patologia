@@ -1,0 +1,54 @@
+id: hydropic-swelling-micro-1
+file: hydropic-swelling-micro-1.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Histopathology_of_a_ballooning_hepatocyte_(original).jpg
+author: Mikael Häggström, M.D.
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-10-10
+modifications: "Downscaled from the 1920 px Wikimedia rendition to 1600 px wide; no crop, no colour change."
+attributionText: "Mikael Häggström, M.D., via Wikimedia Commons, CC0 1.0 (public domain dedication)"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: high power
+caption:
+  it: >-
+    Epatocita con degenerazione balloniforme (ballooning) in una steatoepatite, EE a forte ingrandimento: un esempio
+    vistoso di rigonfiamento cellulare. Per orientarti parti dal sinusoide con i globuli rossi a sinistra, poi passa al
+    grande epatocita alla sua destra. Reperti chiave: la cellula è ingrandita e arrotondata, e il citoplasma è chiaro,
+    rarefatto e sfilacciato, con aspetto a ragnatela, invece che rosa e uniforme. Il nucleo resta al centro, con
+    cromatina fine e conservata: non ci sono picnosi, carioressi né cariolisi. Attenzione: i vacuoli rotondi, vuoti e a
+    margini netti che si vedono accanto possono essere gocce lipidiche (steatosi), un'alterazione diversa; il
+    rigonfiamento si giudica dal citoplasma pallido e sfilacciato e dalle dimensioni della cellula.
+  en: >-
+    Ballooning hepatocyte in steatohepatitis, H&E at high power: a striking example of cell swelling. Orient yourself on
+    the sinusoid with red blood cells at the left, then move to the large hepatocyte on its right. Key findings: the cell
+    is enlarged and rounded, and its cytoplasm is pale, rarefied and wispy, like a cobweb, instead of evenly pink. The
+    nucleus stays central with fine, preserved chromatin: there is no pyknosis, karyorrhexis or karyolysis. Pitfall: the
+    round, empty, sharp-edged holes nearby may be lipid droplets (steatosis), a different change; swelling is judged on
+    the pale, wispy cytoplasm and on the size of the cell.
+alt:
+  it: >-
+    Micrografia di fegato in ematossilina-eosina a forte ingrandimento: a sinistra un sinusoide verticale con globuli
+    rossi; alla sua destra un grande epatocita arrotondato con citoplasma rosa-violaceo chiaro e sfilacciato, alcuni
+    spazi rotondi vuoti e un nucleo violaceo al centro.
+  en: >-
+    High-power H&E micrograph of liver: at the left a vertical sinusoid with red blood cells; to its right a large,
+    rounded hepatocyte with pale, wispy pink-violet cytoplasm, a few round empty spaces and a central violet nucleus.
+annotations:
+  - id: sinusoid
+    label: { it: Sinusoide con globuli rossi, en: Sinusoid with red blood cells }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.20, 0.28, 0.30, 0.28, 0.31, 0.86, 0.25, 0.86] }
+  - id: reticulated-cytoplasm
+    label: { it: Citoplasma chiaro e reticolato, en: Pale, reticulated cytoplasm }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.68, 0.66, 0.77, 0.66, 0.77, 0.78, 0.68, 0.78] }
+  - id: preserved-nucleus
+    label: { it: Nucleo conservato, en: Preserved nucleus }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.42, 0.53, 0.50, 0.525, 0.545, 0.57, 0.55, 0.635, 0.51, 0.68, 0.44, 0.685, 0.41, 0.64, 0.405, 0.58]

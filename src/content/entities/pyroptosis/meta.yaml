@@ -1,0 +1,134 @@
+id: pyroptosis
+module: g01
+tier: extended
+kind: process
+names:
+  it: "Piroptosi"
+  en: "Pyroptosis"
+  eponyms: []
+  synonyms:
+    it: ["Morte cellulare dipendente dalla caspasi-1", "Morte cellulare mediata dall'inflammasoma"]
+    en: ["Caspase-1-dependent cell death", "Inflammasome-mediated cell death"]
+  abbreviations: []
+summary:
+  it: "Morte cellulare programmata litica e pro-infiammatoria: l'inflammasoma attiva la caspasi-1, che fa maturare IL-1β e IL-18 e taglia la gasdermina D, i cui pori fanno rigonfiare e scoppiare la cellula; è soprattutto una difesa contro i patogeni intracellulari."
+  en: "Lytic, pro-inflammatory programmed cell death: the inflammasome activates caspase-1, which matures IL-1β and IL-18 and cleaves gasdermin D, whose pores make the cell swell and burst; mainly a defense against intracellular pathogens."
+lenses:
+  system: [general]
+  process: [cell-death, regulated-cell-death, acute-inflammation]
+  pattern: [cellular-swelling, nuclear-changes]
+  presentation: [fever]
+  marker: [molecular]
+  group: [infectious, inflammatory, immune]
+learningObjectives:
+  - it: "Definire la piroptosi e distinguerla da apoptosi, necroptosi e necrosi per meccanismo, morfologia e conseguenze infiammatorie."
+    en: "Define pyroptosis and distinguish it from apoptosis, necroptosis and necrosis by mechanism, morphology and inflammatory outcome."
+  - it: "Descrivere la composizione dell'inflammasoma (NLR, ASC, procaspasi-1) e gli stimoli, infettivi e sterili, che lo attivano."
+    en: "Describe the make-up of the inflammasome (NLR, ASC, procaspase-1) and the infectious and sterile stimuli that activate it."
+  - it: "Spiegare come la caspasi-1 fa maturare IL-1β e IL-18 e come il taglio della gasdermina D porta alla formazione dei pori di membrana."
+    en: "Explain how caspase-1 matures IL-1β and IL-18 and how cleavage of gasdermin D creates membrane pores."
+  - it: "Collegare la piroptosi alla difesa dalle infezioni, alla perdita dei linfociti T CD4+ nell'HIV e alle sindromi autoinfiammatorie."
+    en: "Relate pyroptosis to infection defense, CD4+ T-cell loss in HIV and autoinflammatory syndromes."
+prerequisites: [apoptosis]
+relations:
+  - type: sharesMechanism
+    target: necroptosis
+    note:
+      it: "Entrambe sono morti programmate litiche, con rottura della membrana e rilascio di DAMP; la necroptosi però è indipendente dalle caspasi (RIP3/MLKL), mentre la piroptosi dipende dalla caspasi-1."
+      en: "Both are lytic programmed deaths with membrane rupture and DAMP release; necroptosis is caspase-independent (RIP3/MLKL), pyroptosis depends on caspase-1."
+  - type: differentialOf
+    target: apoptosis
+    note:
+      it: "Entrambe usano caspasi, ma l'apoptosi mantiene integra la membrana e non provoca infiammazione."
+      en: "Both use caspases, but apoptosis keeps the membrane intact and causes no inflammation."
+  - type: differentialOf
+    target: other-regulated-cell-death
+    note:
+      it: "Anche la NETosi è una morte cellulare di difesa antimicrobica, ma colpisce i neutrofili e libera reti di cromatina."
+      en: "NETosis is also an antimicrobial defensive death, but it affects neutrophils and releases chromatin nets."
+quickCheck:
+  - id: pyroptosis-q1
+    q:
+      it: "Quale caspasi è centrale nella piroptosi e quale complesso la attiva?"
+      en: "Which caspase is central to pyroptosis, and which complex activates it?"
+    a:
+      it: "La caspasi-1, attivata a partire dalla procaspasi-1 all'interno dell'inflammasoma (es. NLRP3 con l'adattatore ASC)."
+      en: "Caspase-1, activated from procaspase-1 inside the inflammasome (e.g. NLRP3 with the adaptor ASC)."
+    kind: short
+  - id: pyroptosis-q2
+    q:
+      it: "Quale proteina forma i pori di membrana nella piroptosi e come viene attivata?"
+      en: "Which protein forms the membrane pores in pyroptosis, and how is it activated?"
+    a:
+      it: "La gasdermina D: le caspasi infiammatorie la tagliano e il frammento N-terminale, liberato dall'autoinibizione, si inserisce nella membrana plasmatica formando pori."
+      en: "Gasdermin D: inflammatory caspases cleave it, and the N-terminal fragment, freed from autoinhibition, inserts into the plasma membrane and forms pores."
+    kind: short
+  - id: pyroptosis-q3
+    q:
+      it: "Quali due citochine fa maturare la caspasi-1?"
+      en: "Which two cytokines does caspase-1 mature?"
+    a:
+      it: "IL-1β e IL-18."
+      en: "IL-1β and IL-18."
+    kind: short
+  - id: pyroptosis-q4
+    q:
+      it: "Perché la piroptosi è infiammatoria mentre l'apoptosi non lo è?"
+      en: "Why is pyroptosis inflammatory while apoptosis is not?"
+    a:
+      it: "Nella piroptosi la membrana si rompe e la cellula libera DAMP e citochine attive (IL-1β, IL-18) che richiamano altre cellule immunitarie; nell'apoptosi la membrana resta integra e i frammenti cellulari vengono rimossi senza infiammazione."
+      en: "In pyroptosis the membrane ruptures and the cell releases DAMPs and active cytokines (IL-1β, IL-18) that recruit more immune cells; in apoptosis the membrane stays intact and the fragments are cleared without inflammation."
+    kind: free
+selfExplain:
+  - it: "Perché all'ospite può convenire che una cellula infettata da un batterio intracellulare muoia per piroptosi anziché per apoptosi?"
+    en: "Why might it benefit the host for a cell infected by an intracellular bacterium to die by pyroptosis rather than by apoptosis?"
+  - it: "In che modo i pori di gasdermina D spiegano sia il rigonfiamento della cellula sia la liberazione di IL-1β?"
+    en: "How do gasdermin D pores account both for cell swelling and for the release of IL-1β?"
+  - it: "Perché una mutazione che rende l'NLRP3 sempre attivo causa febbre e infiammazione anche senza infezione?"
+    en: "Why does a mutation that keeps NLRP3 permanently active cause fever and inflammation even without infection?"
+chain:
+  - pathology:
+      it: "Piroptosi dei linfociti T CD4+ nell'infezione da HIV"
+      en: "Pyroptosis of CD4+ T cells in HIV infection"
+    sign:
+      it: "Immunodeficienza progressiva e infiammazione cronica"
+      en: "Progressive immunodeficiency and chronic inflammation"
+    lab:
+      it: "Calo della conta dei linfociti T CD4+"
+      en: "Falling CD4+ T-cell count"
+  - pathology:
+      it: "NOMID: una mutazione blocca la criopirina (NLRP3) in stato attivo, con eccesso di IL-1"
+      en: "NOMID: a mutation locks cryopyrin (NLRP3) in the active state, causing excess IL-1"
+    sign:
+      it: "Infiammazione cutanea e artrite a esordio neonatale"
+      en: "Neonatal-onset skin inflammation and arthritis"
+    lab:
+      it: "Indici di flogosi elevati"
+      en: "Raised systemic inflammatory markers"
+images:
+  - id: pyroptosis-micro-1
+    role: micro
+  - id: pyroptosis-micro-2
+    role: micro
+  - id: pyroptosis-diagram-1
+    role: diagram
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "1"
+    pages: "45, 47, 54-58"
+  - source: rubin-8e
+    chapter: "2"
+    pages: "87"
+  - source: rubin-8e
+    chapter: "4"
+    pages: "134"
+  - source: rubin-8e
+    chapter: "11"
+    pages: "507"
+  - source: shi-2015
+  - source: ding-2016
+  - source: evavold-2018
+lastUpdated: 2026-11-03
+status: published

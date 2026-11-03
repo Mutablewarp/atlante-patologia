@@ -1,0 +1,65 @@
+id: g01-q-autophagy-1
+module: g01
+entities: [autophagy]
+kind: mcq
+difficulty: 2
+tags: [autophagy]
+stem:
+  it: "Durante un digiuno prolungato, le fibre muscolari scheletriche di un volontario sano mostrano rapidamente un forte aumento di autofagosomi, che digeriscono porzioni di citoplasma per ricavarne nutrienti. Quale sequenza di eventi molecolari avvia questa risposta?"
+  en: "During a prolonged fast, the skeletal muscle fibers of a healthy volunteer quickly show a sharp rise in autophagosomes, which digest portions of cytoplasm to supply nutrients. Which sequence of molecular events starts this response?"
+options:
+  - id: a
+    text:
+      it: "L'insulina, tramite PI3K di classe I e Akt, attiva mTORC1, che a sua volta fosforila e attiva ULK1."
+      en: "Insulin, through class I PI3K and Akt, activates mTORC1, which in turn phosphorylates and activates ULK1."
+    correct: false
+    why:
+      it: "È lo stato di sazietà, e la direzione è opposta: mTORC1 lega e inibisce ULK1 e quindi blocca l'autofagia. Nel digiuno il segnale insulinico cala."
+      en: "This describes the fed state, and the direction is reversed: mTORC1 binds and inhibits ULK1, so it blocks autophagy. During fasting, insulin signaling falls."
+  - id: b
+    text:
+      it: "Viene attivata la trascrizione dei geni dell'autofagia, e gli autofagosomi si formano solo dopo la sintesi delle nuove proteine."
+      en: "Transcription of autophagy genes is switched on, and autophagosomes form only once the new proteins have been made."
+    correct: false
+    why:
+      it: "Le proteine dell'autofagia sono già presenti nella cellula e vengono attivate da modificazioni post-traduzionali (fosforilazione, ubiquitinazione), non da nuova trascrizione: per questo la risposta è così rapida."
+      en: "Autophagy proteins are already present in the cell and are switched on by post-translational changes (phosphorylation, ubiquitination), not new transcription; that is why the response is so fast."
+  - id: c
+    text:
+      it: "Bcl-2 lega più saldamente la Beclina-1 e così la attiva."
+      en: "Bcl-2 binds Beclin-1 more tightly and thereby activates it."
+    correct: false
+    why:
+      it: "Il legame con Bcl-2 tiene la Beclina-1 inattiva. Nel digiuno JNK1 fosforila Bcl-2 e Bim, che rilasciano la Beclina-1 e permettono l'autofagia."
+      en: "Binding to Bcl-2 keeps Beclin-1 inactive. In starvation, JNK1 phosphorylates Bcl-2 and Bim so that they release Beclin-1 and autophagy can proceed."
+  - id: d
+    text:
+      it: "L'aumento del rapporto AMP/ATP attiva AMPK, che inibisce mTORC1 tramite il complesso della sclerosi tuberosa e fosforila ULK1; ULK1 attiva la Beclina-1."
+      en: "A rising AMP/ATP ratio activates AMPK, which inhibits mTORC1 through the tuberous sclerosis complex and phosphorylates ULK1; ULK1 then activates Beclin-1."
+    correct: true
+    why:
+      it: "Corretto. Nel digiuno AMPK toglie il freno di mTORC1 su ULK1 e attiva anche direttamente ULK1; il complesso Beclina-1/PI3K di classe III avvia la formazione dell'autofagosoma."
+      en: "Correct. In starvation, AMPK lifts the mTORC1 brake on ULK1 and also activates ULK1 directly; the Beclin-1/class III PI3K complex then starts autophagosome formation."
+  - id: e
+    text:
+      it: "Le caspasi tagliano la Beclina-1, liberandone un frammento attivo che avvia l'autofagia."
+      en: "Caspases cleave Beclin-1, releasing an active fragment that starts autophagy."
+    correct: false
+    why:
+      it: "Il taglio da parte delle caspasi inattiva la Beclina-1 e sposta la cellula verso l'apoptosi, non verso l'autofagia."
+      en: "Caspase cleavage inactivates Beclin-1 and tilts the cell toward apoptosis, not autophagy."
+backLink: { entity: autophagy, section: pathogenesis }
+claims:
+  - autophagy-c005
+  - autophagy-c016
+  - autophagy-c017
+  - autophagy-c018
+  - autophagy-c019
+  - autophagy-c020
+  - autophagy-c021
+  - autophagy-c030
+  - autophagy-c031
+  - autophagy-c032
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

@@ -1,0 +1,141 @@
+id: dysplasia
+module: g01
+tier: core
+kind: process
+names:
+  it: "Displasia"
+  en: "Dysplasia"
+  eponyms: []
+  synonyms:
+    it: ["Displasia epiteliale", "Neoplasia intraepiteliale","Displasia di basso grado / di alto grado", "Displasia lieve, moderata, grave"]
+    en: ["Epithelial dysplasia", "Intraepithelial neoplasia","Low-grade / high-grade dysplasia", "Mild, moderate, severe dysplasia"]
+  abbreviations: ["CIN", "LSIL", "HSIL"]
+summary:
+  it: "Crescita e maturazione disordinate di un epitelio, con atipie citologiche e architetturali: lesione precancerosa che può regredire se lo stimolo cessa."
+  en: "Disordered growth and maturation of an epithelium, with cytologic and architectural atypia: a precancerous lesion that can regress once the stimulus stops."
+lenses:
+  system: [general, female-genital, gastrointestinal, respiratory, skin]
+  process: [cellular-adaptation, neoplasia]
+  pattern: [dysplasia, metaplasia]
+  presentation: [incidental-finding]
+  marker: []
+  group: [neoplastic, adaptive]
+learningObjectives:
+  - it: "Definire la displasia come alterazione della crescita e della maturazione epiteliale e collocarla tra metaplasia e carcinoma."
+    en: "Define dysplasia as a disturbance of epithelial growth and maturation and place it between metaplasia and carcinoma."
+  - it: "Riconoscere le atipie citologiche (pleomorfismo, nuclei grandi e ipercromatici, aumento del rapporto nucleo/citoplasma) e architetturali (perdita di polarità e di maturazione, mitosi sopra lo strato basale)."
+    en: "Recognize the cytologic atypia (pleomorphism, large hyperchromatic nuclei, raised nuclear-to-cytoplasmic ratio) and architectural atypia (loss of polarity and maturation, mitoses above the basal layer)."
+  - it: "Spiegare il concetto di grading (basso/alto grado; lieve, moderata, grave; LSIL/HSIL e CIN 1–3) e il suo significato prognostico."
+    en: "Explain the grading concept (low/high grade; mild, moderate, severe; LSIL/HSIL and CIN 1–3) and its prognostic meaning."
+  - it: "Descrivere l'accumulo sequenziale di mutazioni e la selezione clonale che portano dalla displasia al cancro, e spiegare perché la displasia può ancora regredire."
+    en: "Describe the sequential accumulation of mutations and clonal selection that lead from dysplasia to cancer, and why dysplasia can still regress."
+  - it: "Distinguere la displasia dal carcinoma in situ (atipie estese a tutto lo spessore dell'epitelio, senza maturazione superficiale) e riconoscere che la membrana basale separa entrambi dal carcinoma invasivo."
+    en: "Distinguish dysplasia from carcinoma in situ (atypical cells across the full epithelial thickness, with no surface maturation) and recognize that the basement membrane separates both from invasive carcinoma."
+prerequisites: []
+relations:
+  - type: prerequisiteOf
+    target: carcinoma-in-situ
+    note:
+      it: "La displasia grave e il carcinoma in situ sono gli ultimi gradini intraepiteliali prima dell'invasione."
+      en: "Severe dysplasia and carcinoma in situ are the last intraepithelial steps before invasion."
+  - type: prerequisiteOf
+    target: cervical-squamous-intraepithelial-lesion
+    note:
+      it: "Le lesioni intraepiteliali squamose della cervice sono il modello classico della displasia suddivisa in gradi."
+      en: "Cervical squamous intraepithelial lesions are the classic model of graded dysplasia."
+  - type: complicationOf
+    target: barrett-esophagus
+    note:
+      it: "La displasia può insorgere nell'epitelio ghiandolare metaplastico dell'esofago di Barrett."
+      en: "Dysplasia can arise in the metaplastic glandular epithelium of Barrett esophagus."
+quickCheck:
+  - id: dysplasia-q1
+    q:
+      it: "Elencate quattro caratteristiche microscopiche della displasia in un epitelio squamoso."
+      en: "List four microscopic features of dysplasia in a squamous epithelium."
+    a:
+      it: "Variabilità di forma e dimensioni delle cellule, nuclei ingranditi, irregolari e ipercromatici con aumento del rapporto nucleo/citoplasma, mitosi lontane dallo strato basale, perdita della maturazione ordinata dalla base alla superficie."
+      en: "Variation in cell size and shape, enlarged irregular hyperchromatic nuclei with a raised nuclear-to-cytoplasmic ratio, mitoses far from the basal layer, and loss of orderly maturation from base to surface."
+    kind: short
+  - id: dysplasia-q2
+    q:
+      it: "Quale reperto distingue il carcinoma in situ dal carcinoma invasivo?"
+      en: "Which finding separates carcinoma in situ from invasive carcinoma?"
+    a:
+      it: "Il superamento della membrana basale: finché le cellule restano al di sopra di essa la lesione è in situ e non può metastatizzare."
+      en: "Breach of the basement membrane: as long as the cells stay above it the lesion is in situ and cannot metastasize."
+    kind: short
+  - id: dysplasia-q3
+    q:
+      it: "A quali gradi di CIN corrispondono la LSIL e la HSIL della cervice?"
+      en: "Which CIN grades correspond to cervical LSIL and HSIL?"
+    a:
+      it: "La LSIL corrisponde alla CIN 1 (displasia lieve); la HSIL comprende la CIN 2 (displasia moderata) e la CIN 3 (displasia grave e carcinoma in situ)."
+      en: "LSIL corresponds to CIN 1 (mild dysplasia); HSIL covers CIN 2 (moderate dysplasia) and CIN 3 (severe dysplasia and carcinoma in situ)."
+    kind: short
+  - id: dysplasia-q4
+    q:
+      it: "Perché la displasia può regredire, mentre un carcinoma non lo fa spontaneamente?"
+      en: "Why can dysplasia regress, whereas a carcinoma does not do so spontaneously?"
+    a:
+      it: "Perché le cellule displastiche non sono ancora del tutto autonome: rispondono in parte ai normali meccanismi di controllo, quindi, se si elimina lo stimolo (fumo, HPV), il tessuto può tornare normale."
+      en: "Because dysplastic cells are not yet fully autonomous: they still partly obey normal controls, so removing the stimulus (smoking, HPV) can let the tissue return to normal."
+    kind: free
+selfExplain:
+  - it: "Perché ogni mitosi in più in un epitelio sottoposto a danno cronico aumenta la probabilità di displasia? Collegate replicazione del DNA, mutazioni e selezione clonale."
+    en: "Why does every extra mitosis in a chronically injured epithelium raise the chance of dysplasia? Link DNA replication, mutation and clonal selection."
+  - it: "Perché la displasia di alto grado nella colite ulcerosa porta a proporre la colectomia, mentre una LSIL della cervice viene spesso solo seguita nel tempo?"
+    en: "Why does high-grade dysplasia in ulcerative colitis prompt colectomy, whereas a cervical LSIL is often only followed over time?"
+  - it: "Perché un'infiammazione intensa può rendere impossibile la diagnosi certa di displasia?"
+    en: "Why can intense inflammation make a firm diagnosis of dysplasia impossible?"
+chain:
+  - pathology:
+      it: "Infezione cervicale da HPV con lesione intraepiteliale squamosa"
+      en: "Cervical HPV infection with a squamous intraepithelial lesion"
+    sign:
+      it: "Di solito asintomatica; individuata con lo screening"
+      en: "Usually asymptomatic; found at screening"
+    lab:
+      it: "Pap test con cellule atipiche sfaldate dalla superficie; biopsia che documenta una CIN e ne definisce il grado"
+      en: "Pap smear with shed atypical surface cells; biopsy showing graded CIN"
+  - pathology:
+      it: "Colite ulcerosa di lunga durata con displasia della mucosa"
+      en: "Long-standing ulcerative colitis with mucosal dysplasia"
+    sign:
+      it: "Nessun segno specifico oltre a quelli della colite"
+      en: "No specific signs beyond those of the colitis"
+    lab:
+      it: "Colonscopia di sorveglianza con biopsie sistematiche: displasia di basso o di alto grado"
+      en: "Surveillance colonoscopy with systematic biopsies: low- or high-grade dysplasia"
+images:
+  - id: dysplasia-micro-1
+    role: micro
+  - id: dysplasia-micro-2
+    role: micro
+  - id: dysplasia-micro-3
+    role: micro
+  - id: g01-adaptation-spectrum
+    role: diagram
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "1"
+    pages: "25-29"
+  - source: rubin-8e
+    chapter: "5"
+    pages: "173"
+  - source: rubin-8e
+    chapter: "6"
+    pages: "305"
+  - source: rubin-8e
+    chapter: "19"
+    pages: "771, 818, 823, 833"
+  - source: rubin-8e
+    chapter: "22"
+    pages: "921"
+  - source: rubin-8e
+    chapter: "24"
+    pages: "1030-1031"
+lastUpdated: 2026-11-03
+status: published

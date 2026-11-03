@@ -1,0 +1,394 @@
+entity: necroptosis
+claims:
+  - claimId: necroptosis-c001
+    section: definition
+    statement: "Necroptosis is one form of regulated necrosis: a signaled, self-inflicted cell death whose appearance matches necrosis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42, 54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c002
+    section: definition
+    statement: "Necroptosis shares some signaling mechanisms with apoptosis while resembling necrosis morphologically."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c003
+    section: definition
+    statement: "Necroptosis proceeds through caspase-independent pathways."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "45, 54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c004
+    section: definition
+    statement: "Apoptosis, autophagy and necroptosis are presented as the major programmed cell death pathways, with the killing role of autophagy left open."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "46, 54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c005
+    section: definition
+    statement: "Physiologic necroptosis takes part in development, especially at the bone growth plate, and occurs normally in adult tissues such as deep intestinal crypts."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c006
+    section: etiology
+    statement: "Necroptosis most often starts when a TNF-superfamily receptor such as TNFR1 is engaged by ligands such as TNF-alpha or Fas ligand."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c007
+    section: etiology
+    statement: "T-cell receptors, interferon receptors and Toll-like receptors can also initiate necroptosis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c008
+    section: etiology
+    statement: "Virus-infected cells, whose viruses often express caspase inhibitors, can start a caspase-independent suicide program."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "45, 54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c009
+    section: etiology
+    statement: "Necroptosis acts as a backup death route when the apoptotic program cannot run, which is relevant to tumor cells that have disabled apoptosis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c010
+    section: etiology
+    statement: "Signals from platelets, including TGF-beta, induce endothelial necroptosis and so help tumor cells migrate across the endothelium."
+    sourceRef: { source: rubin-8e, chapter: "5", pages: "199" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c011
+    section: pathogenesis
+    statement: "Engagement of TNFR1 recruits the adaptor TRADD."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c012
+    section: pathogenesis
+    statement: "TRADD binds RIP1 and RIP3, which form a filament-like complex called the necrosome."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c013
+    section: pathogenesis
+    statement: "RIP3 becomes phosphorylated and leads to necroptosis through several branching paths."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "55" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c014
+    section: pathogenesis
+    statement: "The necrosome activates MLKL, which inserts into plasma and organelle membranes and compromises their integrity."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c015
+    section: pathogenesis
+    statement: "RIP3 increases cytosolic calcium partly via CaMKII, activating calpain and other degradative enzymes."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c016
+    section: pathogenesis
+    statement: "These enzymes disrupt lysosomal membranes, releasing hydrolases into the cytosol that degrade macromolecules."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54-55" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c017
+    section: pathogenesis
+    statement: "Calpain damages mitochondria, impairing ATP generation and releasing iron."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c018
+    section: pathogenesis
+    statement: "Released iron increases ROS via Fenton and Haber-Weiss reactions, damaging proteins, lipids and DNA."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54-55" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c019
+    section: pathogenesis
+    statement: "Mitochondria release AIF, which enters the nucleus and activates DNA degradation, leading to pyknosis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54-55" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c020
+    section: pathogenesis
+    statement: "A bioenergetic crisis with necrotic features follows, and the cell releases DAMPs that provoke inflammation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54-55" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c021
+    section: pathogenesis
+    statement: "Caspase-8, the initiator of extrinsic apoptosis, prevents necrosome formation by cleaving RIP1."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "47, 54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c022
+    section: pathogenesis
+    statement: "The choice between apoptosis and necroptosis depends on multiple fine control mechanisms."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c023
+    section: pathogenesis
+    statement: "TNF receptor activation by TNF-alpha can also stimulate NF-kappaB, which drives production of antiapoptotic proteins, so the same receptor can signal survival."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "47, 52-53" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c024
+    section: micro
+    statement: "Necroptotic cells are morphologically indistinguishable from necrotic cells: cell swelling, plasma membrane fragmentation and nuclear pyknosis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c025
+    section: micro
+    statement: "The necrotic-type cell death is followed by an inflammatory response."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c026
+    section: micro
+    statement: "Apoptotic cells instead show surface blebs and nuclear fragments, and no inflammatory infiltrate follows."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c027
+    section: clinical
+    statement: "Caspase-independent suicide of virus-infected cells is an effective defense against unrestrained pathogen spread."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c028
+    section: clinical
+    statement: "Necroptosis occurs in inflammatory diseases including Crohn disease and pancreatitis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "45, 54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c029
+    section: clinical
+    statement: "Necroptosis occurs in the inflammatory phase after myocardial infarction."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "45, 54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c030
+    section: clinical
+    statement: "Tumor cells that have lost apoptosis can still be eliminated through caspase-independent necroptosis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c031
+    section: prognosis
+    statement: "Necroptotic cells release DAMPs that provoke inflammation; necrotic cell death in general elicits inflammation that may harm viable neighboring cells."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42, 54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c032
+    section: differential
+    statement: "Apoptosis relies on caspases; membranes bleb, the cell fragments into apoptotic bodies, and there is no inflammation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "46-47, 54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c033
+    section: differential
+    statement: "Classical necrosis is unprogrammed death from external injury, typically ischemia/reperfusion, with the same morphology as necroptosis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42, 54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c034
+    section: differential
+    statement: "Pyroptosis is inflammatory cell death driven by caspase-1 produced by the inflammasome after intracellular NOD-like receptors bind pathogen molecules."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "56" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c035
+    section: differential
+    statement: "Autophagy is mainly a survival response to stress based on lysosomal self-digestion; an independent killing role is not established."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c036
+    section: high-yield
+    statement: "Necroptosis is programmed necrosis: signaled death with necrotic morphology followed by inflammation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c037
+    section: high-yield
+    statement: "Triggers include TNFR1 and other TNF-superfamily receptors (TNF-alpha, Fas ligand), T-cell, interferon and Toll-like receptors; in viral infection, viral caspase inhibitors unmask necroptosis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "45, 54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c038
+    section: high-yield
+    statement: "In TNFR1 signaling, TRADD recruits RIP1 and RIP3 to form the necrosome, which activates MLKL to damage membranes."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c039
+    section: high-yield
+    statement: "Downstream effects are calcium/CaMKII-driven calpain activation, lysosome rupture, iron-driven ROS, AIF-mediated DNA degradation and bioenergetic crisis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54-55" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c040
+    section: high-yield
+    statement: "Caspase-8 cleaves RIP1 and blocks necroptosis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c041
+    section: high-yield
+    statement: "Necroptosis is implicated in Crohn disease, pancreatitis, post-infarction inflammation, viral infection and cancer."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "45, 54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c042
+    section: high-yield
+    statement: "Physiologic necroptosis occurs at the bone growth plate and in deep intestinal crypts."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c043
+    section: traps
+    statement: "Necroptosis is programmed but caspase-independent and inflammatory, unlike apoptosis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "45, 54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c044
+    section: traps
+    statement: "Necroptosis and accidental necrosis look the same morphologically; they differ in mechanism."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42, 54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c045
+    section: traps
+    statement: "Pyroptosis is related to necroptosis but depends on caspase-1 in the inflammasome."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "45, 56" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c046
+    section: traps
+    statement: "Necroptosis also occurs physiologically at the growth plate and in intestinal crypts."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c047
+    section: traps
+    statement: "Caspase-8 inhibits necroptosis, so cells with blocked caspases (e.g., from viral inhibitors) can still die by necroptosis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "45, 47, 54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c048
+    section: mnemonics
+    statement: "Original mnemonic: RIP1 and RIP3 build the necrosome and MLKL damages the membrane."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: necroptosis-c049
+    section: mnemonics
+    statement: "Original mnemonic: caspase-8 cleaves RIP1 favoring apoptosis; when caspases are inhibited, necroptosis proceeds."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "45, 54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03

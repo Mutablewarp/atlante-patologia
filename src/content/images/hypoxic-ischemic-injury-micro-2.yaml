@@ -1,0 +1,53 @@
+id: hypoxic-ischemic-injury-micro-2
+file: hypoxic-ischemic-injury-micro-2.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Histopathology_of_myocardial_infarction_with_loss_of_nuclei.jpg
+author: Mikael Häggström, M.D.
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-10-10
+modifications: "none (Wikimedia original file, 949 px wide)"
+attributionText: "Mikael Häggström, M.D., via Wikimedia Commons, CC0 1.0 (public domain dedication)"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: high power
+caption:
+  it: >-
+    Miocardio atriale sinistro all'autopsia, circa quattro giorni dopo un infarto, EE a forte ingrandimento: un
+    dettaglio di danno ischemico irreversibile. Segui le fibre muscolari, disposte in diagonale: hanno ancora il loro
+    contorno, ma il citoplasma è rosso intenso e granuloso e la striatura non si riconosce più. Cerca poi i nuclei: nella
+    fibra al centro resta solo un'ombra lilla, pallida e senza cromatina; è la cariolisi, l'ultima tappa della
+    dissoluzione del nucleo dopo picnosi e carioressi. Per confronto guarda in alto il nucleo blu scuro e ben definito di
+    una cellula interstiziale ancora integra. I piccoli elementi rossi e rotondi negli spazi tra le fibre sono globuli
+    rossi. Profilo cellulare conservato senza nucleo = necrosi coagulativa.
+  en: >-
+    Left atrial myocardium at autopsy, about four days after an infarct, H&E at high power: a close-up of irreversible
+    ischemic injury. Follow the muscle fibres running diagonally: they still keep their outline, but the cytoplasm is
+    deep red and granular and the cross-striations can no longer be seen. Then look for nuclei: in the central fibre
+    only a pale lilac ghost without chromatin is left; this is karyolysis, the last step of nuclear breakdown after
+    pyknosis and karyorrhexis. For comparison, note at the top the sharp, dark blue nucleus of an interstitial cell that
+    is still intact. The small round red bodies in the spaces between fibres are red blood cells. Preserved cell outline
+    without a nucleus = coagulative necrosis.
+alt:
+  it: >-
+    Micrografia ad alto ingrandimento in ematossilina-eosina: fibre muscolari rosso-rosa disposte in diagonale, separate
+    da sottili spazi chiari che contengono piccoli globuli rossi rotondi. Al centro un'ombra nucleare allungata, lilla e
+    sbiadita; in alto un piccolo nucleo blu scuro.
+  en: >-
+    High-power H&E micrograph: red-pink muscle fibres running diagonally, separated by thin clear spaces that hold small
+    round red blood cells. In the centre an elongated, faded lilac nuclear ghost; at the top a small dark blue nucleus.
+annotations:
+  - id: nuclear-ghost
+    label: { it: Ombra nucleare (cariolisi), en: Nuclear ghost (karyolysis) }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.47, 0.46, 0.52, 0.43, 0.58, 0.45, 0.59, 0.49, 0.55, 0.52, 0.48, 0.51] }
+  - id: intact-nucleus
+    label: { it: Nucleo integro di una cellula interstiziale, en: Intact nucleus of an interstitial cell }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.46, 0.04, 0.55, 0.04, 0.55, 0.10, 0.46, 0.10] }
+  - id: red-blood-cells
+    label: { it: Globuli rossi tra le fibre, en: Red blood cells between fibres }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.44, 0.21, 0.70, 0.19, 0.70, 0.28, 0.44, 0.29] }

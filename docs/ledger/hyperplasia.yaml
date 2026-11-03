@@ -1,0 +1,546 @@
+entity: hyperplasia
+claims:
+  - claimId: hyperplasia-c001
+    section: definition
+    statement: "Hyperplasia means more cells in an organ or tissue, produced by division of one or more cell populations, making it hypercellular."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "25" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c002
+    section: definition
+    statement: "Hyperplasia is a response to persistent stress, usually adaptive though nonadaptive forms exist, and may coexist with hypertrophy."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "25, 27" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c003
+    section: definition
+    statement: "Heart and skeletal muscle adapt mainly by cell enlargement; in the kidney both cell number and size may increase."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c004
+    section: definition
+    statement: "Hyperplasia-inducing stimuli and mechanisms differ among tissues; the same stress may or may not cause hyperplasia elsewhere, or may act differently."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "25" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c005
+    section: definition
+    statement: "About 75% of men over 80 have some prostatic hyperplasia; it is rare under 40."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1007" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c006
+    section: etiology
+    statement: "Causes of hypercellularity include endocrine stimulation, increased functional demand and chronic injury."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "25" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c007
+    section: etiology
+    statement: "Hormone-driven proliferation may be physiologic, developmental, pathologic or pharmacologic."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "25, 27" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c008
+    section: etiology
+    statement: "Estrogen rise at puberty or early cycle makes uterine epithelial and stromal cells proliferate; exogenous estrogen in postmenopausal women does likewise."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "27" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c009
+    section: etiology
+    statement: "Gynecomastia occurs in men with estrogen excess, e.g., estrogen therapy for prostate cancer or impaired estrogen clearance by a diseased liver."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "27" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c010
+    section: etiology
+    statement: "Tumors may secrete excess or ectopic hormone; erythropoietin from renal tumors stimulates erythroid marrow hyperplasia."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "27" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c011
+    section: etiology
+    statement: "Causes of nonatypical endometrial hyperplasia: lack of ovulation, PCOS, tumors making estrogen, estrogen therapy, obesity."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1042" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c012
+    section: etiology
+    statement: "Androgens (DHT) promote prostatic growth underlying BPH."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1007" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c013
+    section: etiology
+    statement: "High-altitude hypoxia causes compensatory erythroid hyperplasia and secondary polycythemia."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "27" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c014
+    section: etiology
+    statement: "Bacterial infections can stimulate myeloid hyperplasia with increased neutrophil production."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "27" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c015
+    section: etiology
+    statement: "Immune responses cause lymphoid hyperplasia, e.g., enlarged tonsils and nodes in streptococcal pharyngitis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "27" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c016
+    section: etiology
+    statement: "Altered calcium metabolism in chronic renal failure can cause parathyroid hyperplasia."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "27" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c017
+    section: etiology
+    statement: "Mature hepatocytes regenerate the liver after partial hepatectomy."
+    sourceRef: { source: rubin-8e, chapter: "3", pages: "121" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c018
+    section: etiology
+    statement: "A callus is epidermal hyperplasia protecting skin from repeated rubbing."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "27" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c019
+    section: etiology
+    statement: "Chronic bladder irritation may cause chronic inflammation and epithelial hyperplasia."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "27" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c020
+    section: etiology
+    statement: "Psoriasis is epidermal proliferation that is nonadaptive, serving no protective purpose."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "27" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c021
+    section: pathogenesis
+    statement: "Proliferating cells may already be cycling or derive from resting progenitors."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "25" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c022
+    section: pathogenesis
+    statement: "Neurons and cardiac myocytes do not divide, but committed progenitors in brain and heart can proliferate after cell loss or injury."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "25" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c023
+    section: pathogenesis
+    statement: "At altitude red cell number rises to compensate for reduced oxygen per cell; hematocrit normalizes back at sea level."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "27" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c024
+    section: pathogenesis
+    statement: "Parathyroid hyperplasia in renal failure attempts to maintain blood calcium."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "27" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c025
+    section: pathogenesis
+    statement: "DHT, made by 5-alpha-reductase, acts via nuclear receptors on prostatic epithelium and stroma to drive their growth."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1007" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c026
+    section: pathogenesis
+    statement: "BPH is not seen before puberty or in castrated men."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1007" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c027
+    section: pathogenesis
+    statement: "Nonatypical endometrial hyperplasia is functionally normal endometrium responding to excess estrogen, with changes depending on estrogen dose and duration."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1041" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c028
+    section: pathogenesis
+    statement: "Hyperplasia may reflect adaptive or nonadaptive mechanisms and may involve altered control of proliferation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "27" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c029
+    section: pathogenesis
+    statement: "Every mitosis has a finite mutation risk that may lead to autonomous proliferation (neoplasia)."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "27" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c030
+    section: pathogenesis
+    statement: "EIN (atypical endometrial hyperplasia) is a clone of mutated endometrial gland cells."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1041" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c031
+    section: gross
+    statement: "Lymphoid hyperplasia enlarges tonsils and lymph nodes in pharyngitis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "27" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c032
+    section: gross
+    statement: "BPH begins in the periurethral transition zone; enlarging nodules compress the urethra and the peripheral prostate."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1007" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c033
+    section: gross
+    statement: "BPH nodules have fibrous pseudocapsules; larger nodules may show hemorrhage, infarction or small stones."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1007" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c034
+    section: micro
+    statement: "In marrow hyperplasia, hematopoietic cells expand at the expense of marrow fat."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "28" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c035
+    section: micro
+    statement: "In psoriasis the epidermis thickens because its squamous cells (keratinocytes) increase in number."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "28" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c036
+    section: micro
+    statement: "In BPH, acinar/ductal epithelium, smooth muscle and stromal fibroblasts proliferate in variable proportions."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1007" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c037
+    section: micro
+    statement: "BPH glands have a double cell layer (tall columnar over basal) and often contain corpora amylacea."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1007" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c038
+    section: micro
+    statement: "Nonatypical endometrial hyperplasia shows locally variable gland crowding, cystic glands, a raised gland-to-stroma ratio and no focal cytologic change."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1041-1042" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c039
+    section: micro
+    statement: "EIN: geographic cluster of crowded, cytologically altered glands offset from background endometrium."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1041-1042" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c040
+    section: ancillary
+    statement: "EIN glands may show loss of PTEN immunostaining."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1042" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c041
+    section: clinical
+    statement: "BPH symptoms result from bladder outlet obstruction: decreased urinary stream vigor and increasing frequency."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1007-1008" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c042
+    section: clinical
+    statement: "A tumor may first come to attention through the hormone it secretes in excess or ectopically."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "27" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c043
+    section: clinical
+    statement: "With abrupt estrogen withdrawal, a hyperplastic endometrium breaks down at once and bleeding is heavy."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1042" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c044
+    section: diagnosis
+    statement: "On rectal examination the BPH prostate is enlarged, firm and nodular."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1008" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c045
+    section: diagnosis
+    statement: "Short-term endometrial cancer risk is low if extensive sampling shows no EIN; refractory nonatypical hyperplasia is assessed by repeat biopsy."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1042" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c046
+    section: prognosis
+    statement: "Compensatory erythroid hyperplasia at altitude recedes once the stimulus ends; red cell mass falls back to normal after descent."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "27" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c047
+    section: prognosis
+    statement: "Severe prolonged BPH obstruction can cause hydroureter, hydronephrosis and renal failure."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1008" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c048
+    section: prognosis
+    statement: "5-alpha-reductase inhibitors reduce prostate size; alpha1-blockers relax prostatic and bladder-neck smooth muscle to improve flow."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1007-1008" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c049
+    section: prognosis
+    statement: "Prolonged estrogen stimulation gives a 2- to 10-fold endometrial cancer risk; carcinoma develops in 1-3% of nonatypical hyperplasia and in 37% of EIN, almost always endometrioid."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1041-1042" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c050
+    section: prognosis
+    statement: "Large doses of progestins can give temporary relief or remission of nonatypical endometrial hyperplasia."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1042" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c051
+    section: differential
+    statement: "Hypertrophy increases cell size; heart and skeletal muscle adapt mainly this way."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c052
+    section: differential
+    statement: "Metaplasia replaces one differentiated cell type by another, e.g., squamous metaplasia of a smoker's bronchus."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "27-28" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c053
+    section: differential
+    statement: "Dysplasia shows variable cell size/shape, enlarged irregular hyperchromatic nuclei, suprabasal mitoses and disordered maturation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c054
+    section: differential
+    statement: "EIN is a clonal cluster of crowded, cytologically altered glands distinct from background."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1041-1042" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c055
+    section: differential
+    statement: "In atrophy the organ shrinks through reversible cell shrinkage and/or irreversible cell loss, e.g., brain atrophy in Alzheimer disease."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c056
+    section: high-yield
+    statement: "Hyperplasia is increased cell number by division, producing hypercellularity."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "25" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c057
+    section: high-yield
+    statement: "Hyperplasia causes: hormonal stimulation, increased functional demand, chronic injury."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "25" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c058
+    section: high-yield
+    statement: "Hormonal hyperplasia examples: estrogen-stimulated endometrium, gynecomastia, erythroid hyperplasia from tumor erythropoietin."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "27" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c059
+    section: high-yield
+    statement: "Demand-driven examples: erythroid hyperplasia at altitude, myeloid hyperplasia in bacterial infection, parathyroid hyperplasia in renal failure."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "27" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c060
+    section: high-yield
+    statement: "Hyperplasia often coexists with hypertrophy; heart and skeletal muscle grow mainly by hypertrophy."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19, 25" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c061
+    section: high-yield
+    statement: "Hyperplasia is not neoplasia, but each mitosis carries mutation risk that may lead to autonomous proliferation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "27" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c062
+    section: traps
+    statement: "Hyperplasia is not always adaptive; psoriatic epidermal proliferation has no protective purpose."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "27" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c063
+    section: traps
+    statement: "Atypical endometrial hyperplasia (EIN) is a clonal neoplastic proliferation, unlike nonatypical hyperplasia."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1041" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c064
+    section: traps
+    statement: "Prepubertal castration prevents BPH; exogenous testosterone does not induce hyperplasia."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1007" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c065
+    section: traps
+    statement: "Committed progenitor cells in brain and heart can proliferate after injury, so postmitotic tissues are not wholly irreplaceable."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "25" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c066
+    section: traps
+    statement: "Hypertrophy may occur simultaneously with hyperplasia."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "25" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c067
+    section: mnemonics
+    statement: "Original mnemonic restating the three causes: hormonal stimulation, increased functional demand, chronic injury."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "25" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hyperplasia-c068
+    section: mnemonics
+    statement: "Original mnemonic: hyperplasia increases cell number, hypertrophy increases cell size."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19, 25" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03

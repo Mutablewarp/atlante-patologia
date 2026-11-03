@@ -1,0 +1,63 @@
+id: atrophy-gross-1
+file: atrophy-gross-1.jpg
+kind: gross
+sourceUrl: https://commons.wikimedia.org/wiki/File:Healthy_Brain_and_Severe_AD_Brain_(24239522109).jpg
+author: National Institute on Aging, U.S. National Institutes of Health (NIH Image Gallery)
+license: PD
+licenseUrl: https://commons.wikimedia.org/wiki/Template:PD-USGov-HHS-NIH
+retrievedAt: 2026-10-10
+modifications: "Cropped away the top 118 px that held the English title text (\"Healthy Brain\" / \"Severe AD\"); converted from CMYK to sRGB and re-encoded as JPEG (592 × 465 px). No resize, no other change."
+attributionText: "National Institute on Aging, National Institutes of Health (NIH Image Gallery), public domain, via Wikimedia Commons"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+caption:
+  it: >-
+    Mezze sezioni coronali di un encefalo sano (a sinistra) e di un encefalo con malattia di Alzheimer grave (a
+    destra), accostate per il confronto (composizione ritoccata diffusa dal National Institute on Aging statunitense).
+    È il quadro macroscopico classico dell'atrofia di un intero organo per perdita di cellule. Confronta le due metà
+    dall'esterno verso l'interno: nell'encefalo malato i giri sono sottili e i solchi beanti, il nastro corticale è
+    assottigliato e la sostanza bianca è ridotta. Poi guarda le cavità: il ventricolo laterale e il suo corno
+    temporale sono dilatati e occupano lo spazio lasciato dal tessuto perso (idrocefalo ex vacuo), mentre l'ippocampo,
+    nella parte mediale del lobo temporale, è rimpicciolito. Nelle malattie neurodegenerative l'encefalo si riduce
+    soprattutto perché i neuroni muoiono e non vengono sostituiti, non solo perché le singole cellule si rimpiccioliscono;
+    con il normale invecchiamento si osserva una riduzione più lieve e diffusa. Attenzione: i ventricoli dilatati da
+    soli non bastano a dire atrofia; anche l'idrocefalo ostruttivo li dilata, ma lì i giri sono appiattiti e i solchi
+    compressi anziché allargati.
+  en: >-
+    Coronal half-slices of a healthy brain (left) and of a brain with severe Alzheimer disease (right), placed side by
+    side for comparison (retouched composite released by the US National Institute on Aging). This is the classic gross
+    picture of atrophy of a whole organ through cell loss. Compare the two halves from the outside in: in the diseased
+    brain the gyri are thin and the sulci gape, the cortical ribbon is thinned and the white matter is reduced. Then
+    look at the cavities: the lateral ventricle and its temporal horn are enlarged and fill the space left by the lost
+    tissue (hydrocephalus ex vacuo), while the hippocampus, in the medial temporal lobe, has shrunk. In
+    neurodegenerative disease the brain becomes smaller mainly because neurons die and are not replaced, not only
+    because single cells shrink; normal ageing brings a milder, diffuse shrinkage. Pitfall: enlarged ventricles alone
+    do not prove atrophy; obstructive hydrocephalus also enlarges them, but there the gyri are flattened and the sulci
+    compressed rather than widened.
+alt:
+  it: >-
+    Due mezze sezioni coronali di encefalo accostate su fondo bianco: a sinistra un emisfero rosato con giri pieni,
+    solchi stretti e ventricolo a fessura; a destra un emisfero più piccolo e pallido, con giri sottili separati da
+    solchi larghi e cavità ventricolari scure e dilatate al centro e in basso.
+  en: >-
+    Two coronal half-slices of brain side by side on a white background: on the left a pinkish hemisphere with plump
+    gyri, narrow sulci and a slit-like ventricle; on the right a smaller, paler hemisphere with thin gyri separated by
+    wide sulci and dark, enlarged ventricular cavities in the centre and lower part.
+annotations:
+  - id: healthy-hemisphere
+    label: { it: "Emisfero sano: giri pieni, solchi stretti", en: "Healthy hemisphere: plump gyri, narrow sulci" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.03, 0.05, 0.54, 0.05, 0.54, 0.97, 0.03, 0.97] }
+  - id: thin-gyri-wide-sulci
+    label: { it: Giri sottili e solchi allargati, en: Thin gyri and widened sulci }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.74, 0.12, 0.92, 0.20, 0.97, 0.50, 0.82, 0.55, 0.76, 0.35] }
+  - id: enlarged-lateral-ventricle
+    label: { it: Ventricolo laterale dilatato (idrocefalo ex vacuo), en: Enlarged lateral ventricle (hydrocephalus ex vacuo) }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.56, 0.40, 0.70, 0.37, 0.71, 0.45, 0.58, 0.52] }
+  - id: temporal-horn-hippocampus
+    label: { it: Corno temporale dilatato e ippocampo rimpicciolito, en: Enlarged temporal horn and shrunken hippocampus }
+    revealOrder: 4
+    shape: { type: polygon, coords: [0.66, 0.68, 0.83, 0.70, 0.83, 0.79, 0.67, 0.78] }

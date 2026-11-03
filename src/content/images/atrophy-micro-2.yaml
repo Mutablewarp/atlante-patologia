@@ -1,0 +1,73 @@
+# License check (2026-10-10): Commons file page metadata gives CC BY 2.0, artist Ed Uthman. The file was transferred
+# from the creator's own Flickr account (photo 3884912676) and the license was confirmed by the Flickr review bot
+# (2013-12-11). The first-person file description (a pathologist reporting his own Pap practice) supports authorship.
+id: atrophy-micro-2
+file: atrophy-micro-2.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Atrophic_Atypia_of_Exocervix_(3884912676).jpg
+author: Ed Uthman
+license: CC-BY-2.0
+licenseUrl: https://creativecommons.org/licenses/by/2.0/
+retrievedAt: 2026-10-10
+modifications: >-
+  Cropped away the top 250 px of empty background above the epithelial surface (original 1760 × 1095 px);
+  downscaled the remaining 1760 × 845 px to 1600 × 768 px and re-encoded as JPEG (quality 82), which also strips the
+  camera EXIF metadata. No colour change.
+attributionText: >-
+  Ed Uthman, "Atrophic Atypia of Exocervix" (Flickr), via Wikimedia Commons, CC BY 2.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: intermediate power
+caption:
+  it: >-
+    Atrofia dell'epitelio squamoso dell'esocervice da carenza di estrogeni (tipica dopo la menopausa o nel
+    post-partum), EE a medio ingrandimento. Parti dallo spessore: l'epitelio è un nastro sottile di poche file di
+    cellule, appoggiato su uno stroma lasso con capillari congesti, pieni di globuli rossi. Poi cerca la maturazione,
+    che qui manca: nell'esocervice normale le cellule, salendo verso la superficie, si ingrandiscono, si riempiono di
+    citoplasma chiaro ricco di glicogeno e diventano cellule superficiali ampie e appiattite. In questo campo quasi
+    tutto lo spessore è fatto di piccole cellule di tipo basale e parabasale, con poco citoplasma e rapporto
+    nucleo/citoplasma alto; solo le ultime file in superficie si appiattiscono appena. È un'atrofia fisiologica da
+    perdita dello stimolo ormonale, lo stesso meccanismo che assottiglia l'endometrio dopo la menopausa: le cellule
+    sono più piccole e gli strati meno numerosi, ma i nuclei restano uniformi, ben distanziati e con cromatina fine.
+    Attenzione: il rapporto nucleo/citoplasma alto può simulare una lesione intraepiteliale squamosa di alto grado
+    (HSIL), soprattutto al Pap test. Un breve trattamento con estrogeni locali fa maturare di nuovo l'epitelio
+    atrofico, mentre una vera displasia non cambia: è la prova pratica che l'atrofia da perdita di uno stimolo
+    trofico regredisce quando lo stimolo ritorna.
+  en: >-
+    Atrophy of the squamous epithelium of the ectocervix (exocervix) caused by lack of estrogen (typical after
+    menopause or post partum), H&E at intermediate power. Start with thickness: the epithelium is a thin band only a
+    few cells deep, resting on loose stroma with congested capillaries packed with red cells. Then look for
+    maturation, which is missing: in the normal ectocervix the cells grow larger toward the surface, fill with pale,
+    glycogen-rich cytoplasm and become broad, flattened superficial cells. Here almost the whole thickness is made of
+    small basal- and parabasal-type cells with scant cytoplasm and a high nuclear-to-cytoplasmic ratio; only the top
+    rows flatten slightly. This is physiologic atrophy from loss of a hormonal stimulus, the same mechanism that thins
+    the endometrium after menopause: the cells are smaller and the layers fewer, but the nuclei stay uniform, evenly
+    spaced and finely granular. Pitfall: the high nuclear-to-cytoplasmic ratio can mimic a high-grade squamous
+    intraepithelial lesion (HSIL), especially on a Pap smear. A short course of local estrogen makes the atrophic
+    epithelium mature again, whereas true dysplasia does not change: a practical demonstration that atrophy caused by
+    loss of a trophic signal reverses when the signal returns.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina, allungata in orizzontale: in alto una stretta banda chiara vuota; sotto, un
+    sottile nastro orizzontale di epitelio violaceo fatto di piccole cellule fitte con nuclei ovali uniformi; più in
+    basso uno stroma rosa, lasso nella parte superiore e attraversato da alcuni vasi pieni di globuli rossi rosso
+    vivo, più compatto e fibroso verso il fondo.
+  en: >-
+    Wide H&E micrograph: a narrow, empty pale band at the top; below it, a thin horizontal ribbon of purple epithelium
+    made of small, crowded cells with uniform oval nuclei; further down, pink stroma that is loose in its upper part,
+    crossed by several vessels filled with bright red blood cells, and denser and fibrous toward the bottom.
+annotations:
+  - id: thin-epithelium
+    label: { it: "Epitelio sottile, di poche file di cellule, senza maturazione in superficie", en: "Thin epithelium, a few cells deep, with no surface maturation" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.0, 0.12, 0.30, 0.11, 0.62, 0.12, 1.0, 0.16, 1.0, 0.31, 0.84, 0.30, 0.72, 0.29, 0.62, 0.31, 0.30, 0.33, 0.0, 0.34] }
+  - id: parabasal-cells
+    label: { it: "Cellule basali e parabasali: citoplasma scarso, nuclei ovali uniformi", en: "Basal and parabasal cells: scant cytoplasm, uniform oval nuclei" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.40, 0.17, 0.56, 0.17, 0.56, 0.30, 0.40, 0.30] }
+  - id: congested-capillaries
+    label: { it: Capillari congesti nello stroma lasso, en: Congested capillaries in loose stroma }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.73, 0.40, 0.80, 0.40, 0.99, 0.50, 0.99, 0.64, 0.92, 0.60, 0.73, 0.50] }

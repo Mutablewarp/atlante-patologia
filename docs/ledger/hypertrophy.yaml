@@ -1,0 +1,586 @@
+entity: hypertrophy
+claims:
+  - claimId: hypertrophy-c001
+    section: definition
+    statement: "Hypertrophy means larger cells and consequently a larger organ."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c002
+    section: definition
+    statement: "Hypertrophy is the opposite of atrophy and usually brings increased functional capacity."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c003
+    section: definition
+    statement: "Cells enlarge in response to higher functional demand or stronger trophic signaling."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c004
+    section: definition
+    statement: "Heart and skeletal muscle increase mass mainly through larger cells; in the kidney both cell size and number may increase."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c005
+    section: definition
+    statement: "Hypertrophy may develop at the same time as hyperplasia."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "25" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c006
+    section: etiology
+    statement: "Skeletal muscle of athletes is the classic example of demand-driven hypertrophy."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "21" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c007
+    section: etiology
+    statement: "At puberty, androgens and growth hormone (via IGF-1) increase muscle and bone mass, especially in boys."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "23" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c008
+    section: etiology
+    statement: "Hormone-responsive organs such as thyroid and breast may hypertrophy when their hormones increase."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "21-22" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c009
+    section: etiology
+    statement: "Highly trained athletes develop physiologic cardiac hypertrophy; the athlete's heart is highly efficient."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "637" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c010
+    section: etiology
+    statement: "Chronic hypertension and valvular stenosis cause pressure overload that leads to pathologic cardiac hypertrophy."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "638" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c011
+    section: etiology
+    statement: "Valvular insufficiency causes volume overload that leads to pathologic cardiac hypertrophy."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "638" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c012
+    section: etiology
+    statement: "Myocardial injury and primary myocyte disease (cardiomyopathies) also cause pathologic hypertrophy."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "638" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c013
+    section: pathogenesis
+    statement: "Hypertrophy involves a net rise in protein synthesis and a net fall in protein degradation, opposite to atrophy."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c014
+    section: pathogenesis
+    statement: "Protein production rises at every step, from gene transcription to translation, with ribosomes increasing in number and efficiency."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c015
+    section: pathogenesis
+    statement: "Hypertrophy is selective: cells degrade proteins not needed for the new demand while making more of the useful ones."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "23" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c016
+    section: pathogenesis
+    statement: "Contributors include physical load, growth factors, neuroendocrine (beta-adrenergic) stimulation, calcium fluxes, small mediators, and angiogenesis to supply oxygen and nutrients."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "23" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c017
+    section: pathogenesis
+    statement: "The trigger of resistance-induced hypertrophy is unclear; membrane phospholipid products and G protein-coupled receptors are proposed."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c018
+    section: pathogenesis
+    statement: "IGF-1 receptor binding activates IRS-1, PI3K and Akt, leading to mTORC1 activation and protein synthesis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "23-24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c019
+    section: pathogenesis
+    statement: "In adults IGF-1 and Akt mainly facilitate hypertrophy and inhibit atrophy (Akt inhibits FOXO); Akt may amplify resistance-induced mTORC1 activity."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c020
+    section: pathogenesis
+    statement: "FOXO increases E3 ubiquitin ligase production and inhibits TORC1; blocking FOXO relieves TORC1 inhibition."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "23-24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c021
+    section: pathogenesis
+    statement: "Myostatin (TGF-beta family) signals through Smads that inhibit Akt; Cbl-b polyubiquitinates IRS-1 and so inhibits hypertrophy."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "23-24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c022
+    section: pathogenesis
+    statement: "Akt and PI3K inhibit cell death; hypertrophy may involve ECM remodeling and recruitment of satellite cells that form myocytes or add nuclei."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c023
+    section: pathogenesis
+    statement: "Endurance training with light loads acts on type I fibers via AMPK and p38 MAPK, raising PGC-1alpha, NRFs and TFAM and mitochondrial biogenesis, without increasing muscle mass."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "21-22" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c024
+    section: pathogenesis
+    statement: "Mitochondria damaged by increased oxidative activity are removed by mitophagy."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "21" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c025
+    section: pathogenesis
+    statement: "High-load training makes type II fibers hypertrophy and shifts metabolism toward anaerobic glycolysis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "21" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c026
+    section: pathogenesis
+    statement: "Mechanically stressed cardiac myocytes release angiotensin II, endothelin-1, norepinephrine and growth factors (IGF-1, TGF-beta) acting by autocrine and paracrine mechanisms."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "638" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c027
+    section: pathogenesis
+    statement: "IGF-1/PI3K/Akt signaling underlies exercise-induced physiologic cardiac hypertrophy and promotes myocyte survival and angiogenesis."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "639" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c028
+    section: pathogenesis
+    statement: "Angiotensin II and endothelin-1 act through Gq-coupled receptors on MAPK (JNK, p38) and CaMK pathways, promoting maladaptive hypertrophy and apoptosis."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "638-640" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c029
+    section: pathogenesis
+    statement: "Persistent beta-adrenergic stimulation produces hypertrophy and desensitizes beta-adrenergic receptors."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "638" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c030
+    section: pathogenesis
+    statement: "Supposedly postmitotic tissues have a low rate of cell replacement; where progenitor activity exceeds cell loss, as in skeletal muscle, the organ can enlarge."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "25" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c031
+    section: gross
+    statement: "Hypertrophy increases organ mass."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c032
+    section: gross
+    statement: "In physiologic cardiac hypertrophy wall and chamber grow proportionately."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "637-638" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c033
+    section: gross
+    statement: "In concentric hypertrophy LV free wall and septum thicken uniformly without chamber enlargement; the right ventricle is normal."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c034
+    section: gross
+    statement: "In hypertensive heart disease heart weight exceeds 375 g in men and 350 g in women."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c035
+    section: gross
+    statement: "Decompensated pathologic hypertrophy dilates the chamber (eccentric hypertrophy)."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "638" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c036
+    section: micro
+    statement: "Hypertrophic myocytes are thicker with enlarged, hyperchromatic, rectangular boxcar nuclei."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c037
+    section: micro
+    statement: "Myocytes increase in length and width in physiologic hypertrophy, in width only in concentric hypertrophy, and lengthen in eccentric hypertrophy."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "638" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c038
+    section: micro
+    statement: "Interstitial fibrosis is an obligatory feature of pathologic hypertrophy."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "640" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c039
+    section: ancillary
+    statement: "Acute pressure overload induces c-jun, c-fos and Hsp70 expression in myocytes."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "640" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c040
+    section: ancillary
+    statement: "In pathologic hypertrophy ventricles re-express fetal genes including ANF and BNP."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "640" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c041
+    section: ancillary
+    statement: "Fetal contractile isoforms return: atria of hypertrophied hearts shift from fast to slow myosin (the only type in normal ventricles) and ventricles re-express fetal actin and tropomyosin; slow myosin lowers contractility but conserves energy."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "640" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c042
+    section: clinical
+    statement: "Myocardial hypertrophy lets the heart handle increased workload and normalizes wall stress."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c043
+    section: clinical
+    statement: "Diastolic dysfunction is the most common abnormality caused by hypertension and can alone cause heart failure; fibrosis stiffens the LV."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c044
+    section: clinical
+    statement: "Greater workload, diastolic dysfunction and coronary atherosclerosis together raise the risk of ischemia, infarction and heart failure."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c045
+    section: clinical
+    statement: "Approaches leading to muscle hypertrophy can slow or prevent cachexia and sarcopenia."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "22" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c046
+    section: diagnosis
+    statement: "Blood BNP is a useful biomarker of heart failure severity."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "640" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c047
+    section: diagnosis
+    statement: "Hypertensive heart disease requires that no cause other than hypertension explains the enlarged heart."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c048
+    section: prognosis
+    statement: "There is an upper limit to useful hypertrophy, possibly set by the diffusion distance for oxygen to the center of the myofiber."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c049
+    section: prognosis
+    statement: "Untreated hypertensive heart disease progresses to eccentric hypertrophy with heart failure."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "638, 663" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c050
+    section: prognosis
+    statement: "Increased myocyte apoptosis may contribute to the transition from compensated hypertrophy to failure."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "640" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c051
+    section: prognosis
+    statement: "Myocardial fibrosis remodels conduction and promotes atrial fibrillation and ventricular tachycardia."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "640" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c052
+    section: prognosis
+    statement: "Heart failure is the major cause of death in untreated hypertension."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c053
+    section: prognosis
+    statement: "ACE inhibitors, ARBs and mineralocorticoid antagonists may mitigate pathologic hypertrophy; beta-blockers reduce mortality in advanced heart failure."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "638-639" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c054
+    section: differential
+    statement: "Hyperplasia is increased cell number; it may coexist with hypertrophy."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19, 25" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c055
+    section: differential
+    statement: "Atrophy is the converse: decreased cell size with degradation exceeding synthesis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19, 24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c056
+    section: differential
+    statement: "Endurance training increases type I fiber mitochondria without muscle hypertrophy."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "21-22" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c057
+    section: differential
+    statement: "Hypertensive heart disease shows concentric LVH with no other cause than hypertension, with fibrosis and boxcar nuclei; the athlete's heart is efficient."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "637, 663" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c058
+    section: high-yield
+    statement: "Hypertrophy is increased cell size causing increased organ size."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c059
+    section: high-yield
+    statement: "Heart and skeletal muscle enlarge mainly by increased cell size."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c060
+    section: high-yield
+    statement: "Protein synthesis exceeds degradation, with selective removal of unneeded proteins."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "23-24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c061
+    section: high-yield
+    statement: "IGF-1/PI3K/Akt/mTORC1 promotes growth; FOXO, myostatin and Cbl-b oppose it."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "23-24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c062
+    section: high-yield
+    statement: "Endurance adds mitochondria in type I fibers without mass gain; resistance enlarges type II fibers."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "21-22" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c063
+    section: high-yield
+    statement: "Pressure overload causes concentric LVH; decompensation leads to eccentric hypertrophy and failure."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "638" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c064
+    section: high-yield
+    statement: "Pathologic cardiac hypertrophy shows boxcar nuclei, interstitial fibrosis and fetal gene re-expression (ANF, BNP)."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "640, 663" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c065
+    section: high-yield
+    statement: "Useful hypertrophy is limited by oxygen diffusion distance."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c066
+    section: traps
+    statement: "A diseased heart may match an athlete's heart in weight while having damaged structure and poor function."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "637" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c067
+    section: traps
+    statement: "Endurance training increases mitochondria rather than fiber size."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "21-22" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c068
+    section: traps
+    statement: "Surplus calories enlarge fat stores but not muscle, whereas starvation depletes both."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "21" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c069
+    section: traps
+    statement: "After puberty, physiologic androgen and IGF-1 levels play little direct role in muscle hypertrophy."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "23-24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c070
+    section: traps
+    statement: "Concentric hypertrophy has no chamber enlargement; dilation indicates eccentric hypertrophy, often with failure."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "638" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c071
+    section: traps
+    statement: "Slow fetal myosin impairs contractility but is adaptive by improving energy efficiency."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "640" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c072
+    section: mnemonics
+    statement: "Concentric hypertrophy thickens the wall without chamber enlargement; eccentric hypertrophy has a dilated chamber."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "638" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypertrophy-c073
+    section: mnemonics
+    statement: "Hypertrophy increases cell size; hyperplasia increases cell number."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19, 25" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03

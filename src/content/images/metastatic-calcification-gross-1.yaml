@@ -1,0 +1,73 @@
+id: metastatic-calcification-gross-1
+file: metastatic-calcification-gross-1.jpg
+kind: gross
+sourceUrl: https://commons.wikimedia.org/wiki/File:Calcinosis_of_Chronic_Renal_Failure_(w_ruler)_(2281769065).jpg
+author: Ed Uthman
+license: CC-BY-2.0
+licenseUrl: https://creativecommons.org/licenses/by/2.0/
+retrievedAt: 2026-10-10
+modifications: >-
+  Downloaded the 1920 px Wikimedia rendition of the 3872 × 2592 px original, downscaled to 1600 × 1071 px and
+  re-encoded as JPEG (quality 85), which also strips the camera metadata; no crop, no colour change.
+attributionText: >-
+  Ed Uthman, "Calcinosis of Chronic Renal Failure (w/ ruler)" (Flickr), via Wikimedia Commons, CC BY 2.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+caption:
+  it: >-
+    Calcificazione metastatica nella sua forma "tumorale": massa sottocutanea della natica asportata in un uomo in
+    dialisi cronica con iperparatiroidismo secondario, sezionata e fotografata accanto a un righello millimetrato (la
+    lesione misura circa 7 cm). Orientati prima: in alto e a destra le strisce grigie e rugose sono la cute che copriva
+    la massa, quindi il deposito si trova nel sottocutaneo. Poi guarda la superficie di taglio: non è un tessuto
+    compatto ma un nido d'ape di logge irregolari dalle pareti rosa-biancastre, gessose, separate da setti fibrosi
+    bianchi e lucidi. Al taglio le logge erano piene di un liquido denso e opaco ricco di sali di calcio, poi lavato
+    via; restano le pareti incrostate e la reazione fibrosa attorno. Perché è "metastatica": i sali di calcio
+    precipitano in tessuti molli prima sani perché nel sangue il prodotto calcio × fosfato è alto (insufficienza
+    renale con ritenzione di fosfato e iperparatiroidismo secondario), non perché il tessuto fosse necrotico come
+    nella calcificazione distrofica. Attenzione: la forma più comune della calcificazione metastatica è microscopica e
+    silente, nell'interstizio di polmoni, reni, mucosa gastrica e pareti arteriose; masse come questa sono la
+    variante rara e vistosa dei pazienti uremici. Il nome "calcinosi tumorale" in senso stretto indica invece la forma
+    familiare/idiopatica dei giovani con funzione renale normale.
+  en: >-
+    Metastatic calcification in its "tumoral" form: a subcutaneous mass excised from the buttock of a man on chronic
+    dialysis with secondary hyperparathyroidism, cut open and photographed next to a millimetre ruler (the lesion is
+    about 7 cm across). Orient yourself first: the grey, wrinkled strips at the top and on the right are the skin that
+    covered the mass, so the deposit lies in the subcutis. Then read the cut surface: it is not solid tissue but a
+    honeycomb of irregular locules with chalky pinkish-white walls, separated by shiny white fibrous septa. When the
+    specimen was opened the locules were full of a thick, opaque fluid laden with calcium salts, which was washed
+    away; what remains are the encrusted walls and the fibrous reaction around them. Why "metastatic": calcium salts
+    precipitate in previously healthy soft tissue because the blood calcium × phosphate product is high (renal
+    failure with phosphate retention and secondary hyperparathyroidism), not because the tissue was necrotic as in
+    dystrophic calcification. Pitfall: the usual form of metastatic calcification is microscopic and silent, in the
+    interstitium of the lungs, kidneys, gastric mucosa and arterial walls; masses like this one are the rare,
+    striking variant seen in uraemic patients. The term "tumoral calcinosis" in the strict sense refers instead to the
+    familial/idiopathic form of young people with normal renal function.
+alt:
+  it: >-
+    Fotografia macroscopica su fondo nero di una massa ovale sezionata, lunga circa 7 cm secondo il righello
+    millimetrato in basso: la superficie di taglio è rosa pallido e spugnosa, fatta di numerose cavità irregolari con
+    pareti sottili, attraversata da bande bianche diagonali; in alto e a destra sottili strisce di cute grigio scuro.
+  en: >-
+    Gross photograph on a black background of a bisected oval mass, about 7 cm long according to the millimetre ruler
+    below: the cut surface is pale pink and spongy, made of many irregular cavities with thin walls, crossed by
+    diagonal white bands; thin strips of dark grey skin at the top and on the right.
+annotations:
+  - id: chalky-locules
+    label: { it: Logge con pareti gessose incrostate di sali di calcio, en: Locules with chalky walls encrusted with calcium salts }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.20, 0.36, 0.44, 0.34, 0.47, 0.50, 0.44, 0.70, 0.22, 0.70, 0.17, 0.55]
+  - id: fibrous-septum
+    label: { it: Setto fibroso bianco tra le logge, en: White fibrous septum between locules }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.46, 0.36, 0.51, 0.35, 0.58, 0.48, 0.66, 0.60, 0.62, 0.64, 0.53, 0.52]
+  - id: overlying-skin
+    label: { it: Cute sovrastante (la massa è nel sottocutaneo), en: Overlying skin (the mass lies in the subcutis) }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.79, 0.24, 0.96, 0.24, 0.96, 0.36, 0.79, 0.36]

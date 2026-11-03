@@ -1,0 +1,568 @@
+entity: protein-quality-control
+claims:
+  - claimId: protein-quality-control-c001
+    section: definition
+    statement: "Proteostasis covers the cell's machinery for folding proteins correctly, repairing damaged ones and eliminating faulty or obsolete ones."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "7, 10" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c002
+    section: definition
+    statement: "The three main protective systems are proteasomes (ubiquitin-dependent and independent degradation), chaperone families, and lysosome-based autophagy for what proteasomes cannot degrade."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "7" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c003
+    section: definition
+    statement: "Disease results from both increased and decreased activity of these systems, which are commonly impaired in acquired diseases."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "7" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c004
+    section: etiology
+    statement: "Misfolding is intrinsic to protein production because producing many conformations and editing them is energetically cheaper than making only the correct one."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "37" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c005
+    section: etiology
+    statement: "A protein with a correct primary sequence may still fold incorrectly through random energetic fluctuations."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "37" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c006
+    section: etiology
+    statement: "Mutant proteins such as CFTR and alpha-1-antitrypsin fail to fold correctly."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "37-38" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c007
+    section: etiology
+    statement: "Heat, heavy metals, oxygen radicals, altered pH and ionic strength can unfold proteins and expose normally hidden hydrophobic residues."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "9, 37" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c008
+    section: etiology
+    statement: "Proteins with time-limited tasks, such as cell-division drivers, must be eliminated after use, a job of the 26S proteasome."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "7, 9" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c009
+    section: etiology
+    statement: "Oxidatively injured proteins and organelles, and pathogen-encoded proteins (which are also presented to the immune system), must be removed."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "7" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  # fixer: reworded per verifier (target lysines vs. ubiquitin's own lysines for chains).
+  - claimId: protein-quality-control-c010
+    section: pathogenesis
+    statement: "Ubiquitin is a conserved 76-residue protein attached mainly to lysines of target proteins, routing them to compartments such as the proteasome; lysines on ubiquitin itself serve to join further ubiquitins into chains."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "7-8" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c011
+    section: pathogenesis
+    statement: "E1 activates ubiquitin and transfers it to one of dozens of E2 conjugating enzymes; an E3 ligase then attaches it to the target."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "8" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c012
+    section: pathogenesis
+    statement: "Around 800 E3 ligases are known, and they determine which specific proteins are kept or destroyed."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "8" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c013
+    section: pathogenesis
+    statement: "Polyubiquitin chains form by linking ubiquitins to each other (a debated E4 activity); four K48-linked ubiquitins is generally the most efficient proteasome-targeting signal."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "8-9" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c014
+    section: pathogenesis
+    statement: "Depending on the number of ubiquitins and the lysine used for linkage, ubiquitination also mediates DNA repair, endocytosis, transcriptional control, signaling and trafficking."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "7-8" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c015
+    section: pathogenesis
+    statement: "About 100 deubiquitinating enzymes remove or trim ubiquitin and can reverse its effects."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "9" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c016
+    section: pathogenesis
+    statement: "Proteasomes have a cylindrical 20S proteolytic core with caspase-like, chymotrypsin-like and trypsin-like activities; the 26S form carries 19S regulatory caps at one or both ends."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "9" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c017
+    section: pathogenesis
+    statement: "The 19S regulators recognize ubiquitin, excise chains for recycling via DUB activity, bind substrates and provide ATPase activity to open the gate."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "9" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c018
+    section: pathogenesis
+    statement: "Constitutive 26S proteasomes degrade transient native proteins, products of defective mRNAs, proteins chaperones cannot fold, and ER proteins routed back to the cytosol by ERAD."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "9" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  # fixer: ubiquitin-independence clause dropped per verifier.
+  - claimId: protein-quality-control-c019
+    section: pathogenesis
+    statement: "Inflammatory signals such as IFN-gamma and TNF-alpha induce immunoproteasomes with 11S regulators, which help clear damaged proteins and likely serve antigen processing."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "9" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c020
+    section: pathogenesis
+    statement: "Ubiquitin-dependent degradation of IkB releases active NF-kB, which drives pro-survival gene expression."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "9" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c021
+    section: pathogenesis
+    statement: "Heat shock protein families are conventionally grouped as small HSPs (e.g. HSP27), HSP40s (J-proteins), HSP60s, HSP70s, HSP90s and HSP100s."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "10" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c022
+    section: pathogenesis
+    statement: "Some HSPs are constitutive and others are induced by stresses such as heat, oxidants, ischemia, heavy metals, starvation, infection, inflammation and irradiation; HSF-1 drives their expression."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "10, 12" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c023
+    section: pathogenesis
+    statement: "HSP70, often with HSP40, receives the nascent chain leaving the ribosome, and HSP90 or HSP60 may complete folding."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "11" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c024
+    section: pathogenesis
+    statement: "HSP40s, small HSPs and HSP70s recognize exposed hydrophobic stretches; Hip helps HSP40 activate HSP70 with ATP hydrolysis and Hop transfers clients to HSP90."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "12" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c025
+    section: pathogenesis
+    statement: "Under stress, small HSPs bind misfolded proteins and keep them ready for refolding, reducing aggregation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "12" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c026
+    section: pathogenesis
+    statement: "HSP70, perhaps together with HSP110, can disentangle aggregates and attempt refolding."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "12" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c027
+    section: pathogenesis
+    statement: "Chaperones and co-chaperones cooperate with E3 ligases such as CHIP to ubiquitinate unfoldable proteins and send them to proteasomes."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "9" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c028
+    section: pathogenesis
+    statement: "HSPs inhibit cytochrome c release, Bax entry into mitochondria, Apaf-1 and activation of procaspases 9 and 3."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "12" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c029
+    section: pathogenesis
+    statement: "Exposed nonpolar surfaces of misfolded proteins associate with each other to form aggregates."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "11" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c030
+    section: pathogenesis
+    statement: "Soluble aggregates can puncture plasma or mitochondrial membranes (leading to apoptosis) and induce misfolding of normal proteins."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "11" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c031
+    section: pathogenesis
+    statement: "Large insoluble aggregates disrupt the cytoskeleton and transport and magnify oxidant injury, but are less cytotoxic than soluble aggregates."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "11" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c032
+    section: pathogenesis
+    statement: "Ubiquitinated aggregates too large for proteasomes are recognized by the p62 bridge protein and incorporated into autophagosomes."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "16" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c033
+    section: pathogenesis
+    statement: "Some defective proteins enter lysosomes through chaperone-mediated autophagy."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "14-15" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c034
+    section: micro
+    statement: "Lewy bodies (alpha-synuclein) in substantia nigra neurons in Parkinson disease, neurofibrillary tangles (tau) in Alzheimer disease and Mallory bodies (intermediate filaments) in alcoholic liver injury are protein inclusions."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "36-37" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c035
+    section: micro
+    statement: "Mutant alpha-1-antitrypsin accumulates as intracellular aggregates in hepatocytes."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "36, 38" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c036
+    section: ancillary
+    statement: "PAS staining after diastase removal of glycogen highlights alpha-1-antitrypsin aggregates."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "36" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c037
+    section: clinical
+    statement: "Some hereditary Parkinson disease is due to mutations in parkin, a ubiquitin ligase."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "10" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c038
+    section: clinical
+    statement: "In Alzheimer and Huntington diseases and inherited ALS, mutant proteins accumulate and cause neuronal dysfunction and death."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "10" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c039
+    section: clinical
+    statement: "Pathologic protein accumulation may cause cardiomyocyte apoptosis in ischemia-reperfusion injury and pressure overload."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "10" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c040
+    section: clinical
+    statement: "Delta-F508 CFTR misfolds, cannot reach the membrane and is targeted for proteasomal degradation, leaving no functional chloride channel."
+    sourceRef: { source: rubin-8e, chapter: "6", pages: "284-285" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c041
+    section: clinical
+    statement: "Misfolded mutant alpha-1-antitrypsin accumulates in cells causing injury, and lack of secreted antiprotease causes emphysema."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "38" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c042
+    section: clinical
+    statement: "Excessive UPS activity causes sarcopenia in aging and advanced malignancy."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "10" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c043
+    section: clinical
+    statement: "HPV E6 promotes association of a ubiquitin ligase with p53, accelerating p53 degradation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "10" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c044
+    section: clinical
+    statement: "HSPs, notably HSP90, protect cancer cells from toxicity of misfolded mutant proteins, and help viruses fold their proteins."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "13" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c045
+    section: prognosis
+    statement: "Beta-pleated fibrillar aggregates are indigestible, and ubiquitin bound to them is lost, depleting cellular ubiquitin and impairing proteostasis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "38" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  # fixer: Fe2+ attributed to insoluble aggregates, proteasome inhibition to beta-sheet aggregates, per verifier.
+  - claimId: protein-quality-control-c046
+    section: prognosis
+    statement: "Disordered insoluble aggregates sequester ferrous iron, which promotes further ROS; beta-sheet aggregates also inhibit proteasomal degradation and may cause cell death."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "37-38" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c047
+    section: prognosis
+    statement: "Misfolded beta-sheet proteins may be deposited extracellularly as amyloid."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "38" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  # fixer: overload now tied to proteasome inhibition, per verifier.
+  - claimId: protein-quality-control-c048
+    section: prognosis
+    statement: "Proteasome inhibitors treat plasma cell myeloma, a tumor with heavy protein secretion, because once proteasomes are blocked the cells are overwhelmed by the protein they make."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "10" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c049
+    section: prognosis
+    statement: "Proteasome inhibition preserves the IkB-NF-kB complex and preferentially affects activated T cells, so it may help in graft-versus-host disease."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "9-10" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c050
+    section: differential
+    statement: "Autophagy delivers bulk cytoplasm, damaged organelles and aggregated proteins to lysosomes, including aggregates too large for proteasomes."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "14-16" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  # verifier note: page 6 (pigments) does not support this; corrected to 36-38.
+  - claimId: protein-quality-control-c051
+    section: differential
+    statement: "Retained abnormal proteins that cells cannot secrete or degrade form intracellular accumulations."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "36-38" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c052
+    section: differential
+    statement: "Mutant alpha-1-antitrypsin is retained in cells, causing liver injury, and its absence from plasma causes emphysema."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "38" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c053
+    section: differential
+    statement: "Misfolded beta-sheet proteins can be deposited outside cells as amyloid."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "38" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c054
+    section: differential
+    statement: "Mild-to-moderate oxidative damage is handled by 20S proteasomes; excessive oxidative stress causes insoluble aggregates."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "37" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c055
+    section: high-yield
+    statement: "E1 activates ubiquitin, E2 conjugates it and E3 ligases attach it to specific targets."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "8" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c056
+    section: high-yield
+    statement: "Four K48-linked ubiquitins best target proteins to the 26S proteasome, which is a 20S core with 19S caps."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "8-9" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c057
+    section: high-yield
+    statement: "DUBs remove ubiquitin and can reverse ubiquitination."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "9" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c058
+    section: high-yield
+    statement: "HSP70 with HSP40 folds nascent proteins, HSP90 completes folding, and HSF-1 induces HSPs."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "11-12" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c059
+    section: high-yield
+    statement: "Soluble aggregates are more toxic than large insoluble aggregates."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "11" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c060
+    section: high-yield
+    statement: "Aggregates too large for proteasomes are delivered to autophagosomes via p62."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "16" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c061
+    section: high-yield
+    statement: "ERAD ubiquitinates misfolded ER proteins, returns them to the cytosol and sends them to proteasomes."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "9" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c062
+    section: high-yield
+    statement: "Proteasome inhibitors are used to treat plasma cell myeloma."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "10" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c063
+    section: traps
+    statement: "Ubiquitination has many non-degradative outcomes, including signaling, endocytosis and DNA repair, depending on ubiquitin number and linkage."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "8-9" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c064
+    section: traps
+    statement: "Large insoluble aggregates are less cytotoxic than small soluble ones."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "11" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  # fixer: contested immunoproteasome trap replaced with 20S/oxidized-protein point, per verifier.
+  - claimId: protein-quality-control-c065
+    section: traps
+    statement: "Mildly to moderately oxidized proteins are recognized and degraded directly by 20S proteasomes, so proteasomal degradation does not always require ubiquitin."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "37" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c066
+    section: traps
+    statement: "Misfolded mutant CFTR is degraded rather than stored, so cystic fibrosis results from loss of function."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "37" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c067
+    section: traps
+    statement: "HSPs protect cancer cells and virus-infected cells as well as normal cells."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "12-13" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c068
+    section: mnemonics
+    statement: "Ubiquitin is activated by E1, conjugated by E2 and ligated to the target by E3."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "8" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c069
+    section: mnemonics
+    statement: "Chaperones fold proteins, small HSPs hold misfolded proteins during stress, and proteasomes or autophagy remove proteins that cannot be refolded."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "10-12" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: protein-quality-control-c070
+    section: differential
+    statement: "Amyloid stained with Congo red shows red-green birefringence when viewed in polarized light."
+    sourceRef: { source: rubin-8e, chapter: "15", pages: "582" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03

@@ -1,0 +1,71 @@
+id: g01-q-fibrinoid-necrosis-1
+module: g01
+entities: [fibrinoid-necrosis]
+kind: mcq
+difficulty: 3
+tags: [necrosis, necrosis-fibrinoid]
+stem:
+  en: "A 44-year-old man presents with severe headache and blurred vision. His blood pressure is 240/140 mm Hg, fundoscopy shows retinal hemorrhages and papilledema, and urinalysis shows hematuria and proteinuria. A renal biopsy shows arterioles whose walls are replaced by smudgy, homogeneous, intensely eosinophilic material that stains red with Masson trichrome; other arterioles show concentric, onion-skin layers of smooth muscle cells. Which best describes the eosinophilic material in the arteriolar walls?"
+  it: "Un uomo di 44 anni si presenta con cefalea intensa e visione offuscata. La pressione arteriosa è 240/140 mm Hg, il fondo dell'occhio mostra emorragie retiniche e papilledema e l'esame delle urine evidenzia ematuria e proteinuria. La biopsia renale mostra arteriole con parete sostituita da materiale omogeneo, sfumato e intensamente eosinofilo, che si colora in rosso con il tricromico di Masson; altre arteriole presentano strati concentrici di cellule muscolari lisce \"a bulbo di cipolla\". Quale definizione descrive meglio il materiale eosinofilo nella parete delle arteriole?"
+options:
+  - id: a
+    text:
+      en: "Hyaline arteriolosclerosis, the glassy and paucicellular thickening of long-standing benign hypertension"
+      it: "Arteriolosclerosi ialina, l'ispessimento vitreo e povero di cellule dell'ipertensione benigna di lunga durata"
+    correct: false
+    why:
+      en: "Benign hypertension produces hyaline arteriolosclerosis, a thick glassy ring with few smooth muscle cells left. A severe rise in pressure with retinal hemorrhages, papilledema, arteriolar necrosis that is red on trichrome and onion-skin lesions is the malignant phase, whose arteriolar lesion is fibrinoid necrosis."
+      it: "L'ipertensione benigna produce arteriolosclerosi ialina, un anello vitreo e spesso in cui restano poche cellule muscolari lisce. Un rialzo pressorio grave con emorragie retiniche, papilledema, necrosi arteriolare rossa al tricromico e lesioni a bulbo di cipolla indica la fase maligna, la cui lesione arteriolare è la necrosi fibrinoide."
+  - id: b
+    text:
+      en: "Amyloid fibrils deposited in the vessel wall"
+      it: "Fibrille di amiloide depositate nella parete vascolare"
+    correct: false
+    why:
+      en: "Amyloid is a deposit of misfolded protein fibrils identified by Congo red with red-green birefringence; it does not fit this acute hypertensive picture with onion-skin lesions."
+      it: "L'amiloide è un deposito di fibrille proteiche mal ripiegate, riconoscibile con il rosso Congo e la birifrangenza rosso-verde; non si adatta a questo quadro ipertensivo acuto con lesioni a bulbo di cipolla."
+  - id: c
+    text:
+      en: "A fibrin thrombus filling the arteriolar lumen"
+      it: "Un trombo di fibrina che occupa il lume dell'arteriola"
+    correct: false
+    why:
+      en: "A fibrin thrombus sits in the lumen and is listed as a separate lesion; the material described here replaces the wall itself."
+      it: "Il trombo di fibrina si trova nel lume ed è considerato una lesione distinta; il materiale descritto qui sostituisce la parete stessa."
+  - id: d
+    text:
+      en: "Immune complexes and complement, which prove a type III hypersensitivity vasculitis"
+      it: "Immunocomplessi e complemento, che dimostrano una vasculite da ipersensibilità di tipo III"
+    correct: false
+    why:
+      en: "Immune-complex vasculitis can produce fibrinoid necrosis, but so can hypertensive injury without any immune mechanism; in this setting the lesion belongs to malignant hypertension."
+      it: "La vasculite da immunocomplessi può causare necrosi fibrinoide, ma lo stesso fa il danno ipertensivo senza alcun meccanismo immunitario; in questo contesto la lesione è propria dell'ipertensione maligna."
+  - id: e
+    text:
+      en: "Plasma proteins, fibrin among them, that leaked through injured endothelium and soaked the wall (fibrinoid necrosis)"
+      it: "Proteine plasmatiche, fibrina compresa, passate attraverso l'endotelio danneggiato e penetrate nella parete (necrosi fibrinoide)"
+    correct: true
+    why:
+      en: "Correct. Extreme pressure is thought to injure the endothelium; medial myocytes die and plasma proteins including fibrin insudate into the wall, which turns intensely eosinophilic and red on trichrome. Concentric smooth muscle proliferation (onion skin) follows, and in the kidney the picture is malignant nephrosclerosis."
+      it: "Corretto. Si ritiene che la pressione estrema danneggi l'endotelio; i miociti della tonaca media muoiono e le proteine plasmatiche, fibrina compresa, si insudano nella parete, che diventa intensamente eosinofila e rossa al tricromico. Segue la proliferazione concentrica della muscolatura liscia (bulbo di cipolla) e nel rene il quadro è quello della nefrosclerosi maligna."
+backLink: { entity: fibrinoid-necrosis, section: pathogenesis }
+claims:
+  - fibrinoid-necrosis-c001
+  - fibrinoid-necrosis-c002
+  - fibrinoid-necrosis-c009
+  - fibrinoid-necrosis-c013
+  - fibrinoid-necrosis-c019
+  - fibrinoid-necrosis-c020
+  - fibrinoid-necrosis-c026
+  - fibrinoid-necrosis-c031
+  - fibrinoid-necrosis-c043
+  - fibrinoid-necrosis-c049
+  - fibrinoid-necrosis-c055
+  - fibrinoid-necrosis-c056
+  - fibrinoid-necrosis-c059
+  - fibrinoid-necrosis-c067
+  - fibrinoid-necrosis-c068
+  - fibrinoid-necrosis-c069
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

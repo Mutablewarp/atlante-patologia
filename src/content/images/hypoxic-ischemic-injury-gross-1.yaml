@@ -1,0 +1,64 @@
+id: hypoxic-ischemic-injury-gross-1
+file: hypoxic-ischemic-injury-gross-1.jpg
+kind: gross
+sourceUrl: https://commons.wikimedia.org/wiki/File:Nitro_blue_tetrazolium_(NBT)-stained_myocardium_with_circumferential_subendocardial_infarction.jpg
+author: >-
+  Katarzyna Michaud, Cristina Basso, Giulia d'Amati, Carla Giordano, Ivana Kholová, Stephen D. Preston, Stefania
+  Rizzo, Sara Sabatasso, Mary N. Sheppard, Aryan Vink, Allard C. van der Wal, on behalf of the Association for
+  European Cardiovascular Pathology (AECVP)
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-10-10
+modifications: "none (Wikimedia original file, 986 × 1377 px; white arrow from the source figure kept)"
+attributionText: >-
+  Michaud K, Basso C, d'Amati G, et al. (AECVP), "Diagnosis of myocardial infarction at autopsy", Virchows Archiv
+  2019, doi:10.1007/s00428-019-02662-1, via Wikimedia Commons, CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: nitro blue tetrazolium (NBT), middle slice only
+caption:
+  it: >-
+    Cuore all'autopsia con infarto subendocardico circonferenziale, reso visibile con il nitroblu di tetrazolio (NBT).
+    Guarda prima il cuore intero in alto e la fetta in basso: non sono trattati e servono da confronto, perché a occhio
+    nudo l'infarto recente quasi non si vede. Passa poi alla fetta centrale, indicata dalla freccia, l'unica immersa
+    nel colorante: il miocardio vitale si colora di viola scuro, perché i suoi enzimi deidrogenasi riducono l'NBT a un
+    pigmento colorato; intorno alla cavità del ventricolo sinistro, invece, un anello pallido non si colora. Lì le
+    cellule hanno subito un danno irreversibile e hanno perso gli enzimi e i cofattori. L'anello segue tutto il
+    subendocardio, lo strato più lontano dalle coronarie epicardiche e quindi il più sensibile a un calo globale della
+    perfusione. Pallido dopo l'NBT = miocardio morto.
+  en: >-
+    Heart at autopsy with a circumferential subendocardial infarct, made visible with nitro blue tetrazolium (NBT).
+    Look first at the whole heart at the top and the slice at the bottom: they are untreated and serve as controls,
+    because a recent infarct is hard to see with the naked eye. Then move to the middle slice, marked by the arrow, the
+    only one soaked in the dye: viable myocardium stains dark purple because its dehydrogenase enzymes reduce NBT to a
+    coloured pigment, whereas a pale ring around the left ventricular cavity stays unstained. There the cells have
+    suffered irreversible injury and have lost those enzymes and cofactors. The ring follows the whole subendocardium,
+    the layer farthest from the epicardial coronary arteries and therefore the most sensitive to a global drop in
+    perfusion. Pale after NBT = dead myocardium.
+alt:
+  it: >-
+    Su fondo nero, dall'alto in basso: un cuore intero rosa e giallastro, una fetta trasversale dei ventricoli colorata
+    di viola scuro con un anello più chiaro intorno alla cavità del ventricolo sinistro, indicata da una freccia bianca,
+    e una seconda fetta non colorata, rosa uniforme.
+  en: >-
+    On a black background, from top to bottom: a whole pink and yellowish heart, a transverse slice of the ventricles
+    stained dark purple with a paler ring around the left ventricular cavity, marked by a white arrow, and a second,
+    unstained slice of uniform pink.
+annotations:
+  - id: pale-subendocardial-ring
+    label: { it: Anello subendocardico pallido (miocardio necrotico), en: Pale subendocardial ring (necrotic myocardium) }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.735, 0.625, 0.693, 0.684, 0.593, 0.708, 0.493, 0.684, 0.451, 0.625, 0.493, 0.566, 0.593, 0.541, 0.693, 0.566]
+  - id: viable-myocardium
+    label: { it: Miocardio vitale colorato in viola, en: Viable myocardium stained purple }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.737, 0.565, 0.760, 0.565, 0.790, 0.625, 0.765, 0.685, 0.737, 0.685] }
+  - id: unstained-control
+    label: { it: Fetta non trattata (controllo), en: Untreated slice (control) }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.74, 0.855, 0.664, 0.912, 0.48, 0.935, 0.296, 0.912, 0.22, 0.855, 0.296, 0.798, 0.48, 0.775, 0.664, 0.798]

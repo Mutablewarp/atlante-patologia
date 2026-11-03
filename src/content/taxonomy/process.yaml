@@ -105,3 +105,25 @@ terms:
     label:
       it: "Neoplasia"
       en: "Neoplasia"
+  - id: irreversible-injury
+    order: 25
+    label:
+      it: "Danno cellulare irreversibile"
+      en: "Irreversible cell injury"
+    parent: cell-injury
+  - id: hypoxic-ischemic-injury
+    order: 27
+    label:
+      it: "Danno ipossico-ischemico e da riperfusione"
+      en: "Hypoxic-ischemic and reperfusion injury"
+    parent: cell-injury
+  - id: proteostasis
+    order: 45
+    label:
+      it: "Controllo di qualità delle proteine"
+      en: "Protein quality control"
+  - id: autophagy
+    order: 47
+    label:
+      it: "Autofagia"
+      en: "Autophagy"

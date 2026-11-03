@@ -7,7 +7,7 @@
   label:
     it: "Danno, adattamento e morte cellulare"
     en: "Cell injury, adaptation and death"
-  status: planned
+  status: published
   refPages: "26-82"
 - id: g02
   section: I
@@ -17,6 +17,11 @@
     en: "Inflammation"
   status: planned
   refPages: "83-118"
+  planned:
+    - id: acute-inflammation
+      names: { it: "Infiammazione acuta", en: "Acute inflammation" }
+    - id: granulomatous-inflammation
+      names: { it: "Infiammazione granulomatosa", en: "Granulomatous inflammation" }
 - id: g03
   section: I
   order: 3
@@ -41,6 +46,9 @@
     en: "Neoplasia"
   status: planned
   refPages: "193-270"
+  planned:
+    - id: carcinoma-in-situ
+      names: { it: "Carcinoma in situ", en: "Carcinoma in situ" }
 - id: g06
   section: I
   order: 6
@@ -49,6 +57,9 @@
     en: "Genetic and developmental disorders"
   status: planned
   refPages: "271-347"
+  planned:
+    - id: lysosomal-storage-diseases
+      names: { it: "Malattie da accumulo lisosomiale", en: "Lysosomal storage diseases" }
 - id: g07
   section: I
   order: 7
@@ -57,6 +68,9 @@
     en: "Hemodynamic disorders"
   status: planned
   refPages: "348-372"
+  planned:
+    - id: infarction
+      names: { it: "Infarto", en: "Infarction" }
 - id: g08
   section: I
   order: 8
@@ -73,6 +87,11 @@
     en: "Infectious and parasitic diseases"
   status: planned
   refPages: "414-518"
+  planned:
+    - id: tuberculosis
+      names: { it: "Tubercolosi", en: "Tuberculosis" }
+    - id: clostridial-myonecrosis
+      names: { it: "Mionecrosi clostridica (gangrena gassosa)", en: "Clostridial myonecrosis (gas gangrene)" }
 - id: s10
   section: II
   order: 10
@@ -81,6 +100,9 @@
     en: "Aging"
   status: planned
   refPages: "520-528"
+  planned:
+    - id: cellular-aging
+      names: { it: "Invecchiamento cellulare", en: "Cellular aging" }
 - id: s11
   section: II
   order: 11
@@ -105,6 +127,9 @@
     en: "Obesity, diabetes and complications"
   status: planned
   refPages: "554-578"
+  planned:
+    - id: diabetic-foot-gangrene
+      names: { it: "Gangrena del piede diabetico", en: "Diabetic foot gangrene" }
 - id: s14
   section: II
   order: 14
@@ -121,6 +146,9 @@
     en: "Systemic amyloidosis"
   status: planned
   refPages: "606-612"
+  planned:
+    - id: amyloidosis
+      names: { it: "Amiloidosi", en: "Amyloidosis" }
 - id: o16
   section: III
   order: 16
@@ -129,6 +157,13 @@
     en: "Blood vessels"
   status: planned
   refPages: "614-656"
+  planned:
+    - id: atherosclerosis
+      names: { it: "Aterosclerosi", en: "Atherosclerosis" }
+    - id: malignant-hypertension
+      names: { it: "Ipertensione maligna", en: "Malignant hypertension" }
+    - id: polyarteritis-nodosa
+      names: { it: "Poliarterite nodosa", en: "Polyarteritis nodosa" }
 - id: o17
   section: III
   order: 17
@@ -137,6 +172,11 @@
     en: "Heart"
   status: planned
   refPages: "657-718"
+  planned:
+    - id: myocardial-infarction
+      names: { it: "Infarto miocardico", en: "Myocardial infarction" }
+    - id: hypertensive-heart-disease
+      names: { it: "Cardiopatia ipertensiva", en: "Hypertensive heart disease" }
 - id: o18
   section: III
   order: 18
@@ -145,6 +185,11 @@
     en: "Respiratory system"
   status: planned
   refPages: "719-789"
+  planned:
+    - id: pulmonary-infarction
+      names: { it: "Infarto polmonare", en: "Pulmonary infarction" }
+    - id: anthracosis
+      names: { it: "Antracosi", en: "Anthracosis" }
 - id: o19
   section: III
   order: 19
@@ -153,6 +198,11 @@
     en: "Gastrointestinal tract"
   status: planned
   refPages: "790-861"
+  planned:
+    - id: barrett-esophagus
+      names: { it: "Esofago di Barrett", en: "Barrett esophagus" }
+    - id: ischemic-bowel-disease
+      names: { it: "Ischemia intestinale", en: "Ischemic bowel disease" }
 - id: o20
   section: III
   order: 20
@@ -161,6 +211,17 @@
     en: "Liver and biliary system"
   status: planned
   refPages: "862-924"
+  planned:
+    - id: alcoholic-liver-disease
+      names: { it: "Epatopatia alcolica", en: "Alcoholic liver disease" }
+    - id: nonalcoholic-fatty-liver-disease
+      names: { it: "Steatosi epatica non alcolica (MASLD)", en: "Nonalcoholic fatty liver disease (MASLD)" }
+    - id: hereditary-hemochromatosis
+      names: { it: "Emocromatosi ereditaria", en: "Hereditary hemochromatosis" }
+    - id: acute-viral-hepatitis
+      names: { it: "Epatite virale acuta", en: "Acute viral hepatitis" }
+    - id: alpha1-antitrypsin-deficiency
+      names: { it: "Deficit di alfa-1-antitripsina", en: "Alpha-1-antitrypsin deficiency" }
 - id: o21
   section: III
   order: 21
@@ -169,6 +230,9 @@
     en: "Pancreas"
   status: planned
   refPages: "925-939"
+  planned:
+    - id: acute-pancreatitis
+      names: { it: "Pancreatite acuta", en: "Acute pancreatitis" }
 - id: o22
   section: III
   order: 22
@@ -177,6 +241,13 @@
     en: "Kidney"
   status: planned
   refPages: "940-997"
+  planned:
+    - id: renal-infarct
+      names: { it: "Infarto renale", en: "Renal infarct" }
+    - id: acute-tubular-injury
+      names: { it: "Danno tubulare acuto (necrosi tubulare acuta)", en: "Acute tubular injury (acute tubular necrosis)" }
+    - id: nephrocalcinosis
+      names: { it: "Nefrocalcinosi", en: "Nephrocalcinosis" }
 - id: o23
   section: III
   order: 23
@@ -185,6 +256,9 @@
     en: "Lower urinary tract and male genital system"
   status: planned
   refPages: "998-1037"
+  planned:
+    - id: benign-prostatic-hyperplasia
+      names: { it: "Iperplasia prostatica benigna", en: "Benign prostatic hyperplasia" }
 - id: o24
   section: III
   order: 24
@@ -193,6 +267,11 @@
     en: "Female genital system and peritoneum"
   status: planned
   refPages: "1038-1097"
+  planned:
+    - id: endometrial-hyperplasia
+      names: { it: "Iperplasia dell'endometrio", en: "Endometrial hyperplasia" }
+    - id: cervical-squamous-intraepithelial-lesion
+      names: { it: "Lesione squamosa intraepiteliale della cervice (CIN)", en: "Cervical squamous intraepithelial lesion (CIN)" }
 - id: o25
   section: III
   order: 25
@@ -201,6 +280,9 @@
     en: "Breast"
   status: planned
   refPages: "1098-1126"
+  planned:
+    - id: traumatic-fat-necrosis-breast
+      names: { it: "Steatonecrosi traumatica della mammella", en: "Traumatic fat necrosis of the breast" }
 - id: o26
   section: III
   order: 26
@@ -217,6 +299,9 @@
     en: "Endocrine system"
   status: planned
   refPages: "1219-1265"
+  planned:
+    - id: primary-hyperparathyroidism
+      names: { it: "Iperparatiroidismo primitivo", en: "Primary hyperparathyroidism" }
 - id: o28
   section: III
   order: 28
@@ -249,6 +334,9 @@
     en: "Skeletal muscle and peripheral nerve"
   status: planned
   refPages: "1432-1464"
+  planned:
+    - id: denervation-atrophy
+      names: { it: "Atrofia da denervazione", en: "Denervation atrophy" }
 - id: o32
   section: III
   order: 32
@@ -257,6 +345,11 @@
     en: "Central nervous system"
   status: planned
   refPages: "1465-1559"
+  planned:
+    - id: cerebral-infarction
+      names: { it: "Infarto cerebrale", en: "Cerebral infarction" }
+    - id: brain-abscess
+      names: { it: "Ascesso cerebrale", en: "Brain abscess" }
 - id: o33
   section: III
   order: 33

@@ -1,0 +1,450 @@
+entity: hydropic-swelling
+claims:
+  - claimId: hydropic-swelling-c001
+    section: definition
+    statement: "Hydropic swelling is a reversible increase in cell size due to increased cellular water."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c002
+    section: definition
+    statement: "Hydropic swelling is the morphologic expression of acute, reversible cell injury."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c003
+    section: etiology
+    statement: "Causes include chemical and biologic toxins, viral and bacterial infections, ischemia, and excessive heat or cold."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c004
+    section: etiology
+    statement: "The common mechanism is loss of control of cytoplasmic ion concentrations, especially sodium."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c005
+    section: etiology
+    statement: "In ischemia cells cannot produce ATP aerobically and rely on less efficient anaerobic generation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "4" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c006
+    section: etiology
+    statement: "Toxic liver injury can produce severe hydropic swelling of hepatocytes."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c007
+    section: etiology
+    statement: "In acute viral hepatitis many hepatocytes show variable degrees of hydropic swelling."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "864" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c008
+    section: pathogenesis
+    statement: "Cell volume control depends on the plasma membrane, the membrane Na+ pump and ATP."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c009
+    section: pathogenesis
+    statement: "The membrane is imperfectly impermeable to Na+, which enters passively and is extruded by the ATP-dependent Na+/K+-ATPase."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c010
+    section: pathogenesis
+    statement: "Swelling occurs when Na+ entry exceeds pump capacity, when the pump is damaged, or when ATP is depleted."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c011
+    section: pathogenesis
+    statement: "Accumulated intracellular Na+ is followed by water to maintain isosmotic conditions, so the cell swells."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c012
+    section: pathogenesis
+    statement: "Excess water collects mostly in distended ER cisternae, probably drawn in by local ionic shifts."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c013
+    section: pathogenesis
+    statement: "In ischemia, ATP loss impairs Na+/K+ exchange and acidosis activates the Na+/H+ exchanger, increasing intracellular Na+."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c014
+    section: pathogenesis
+    statement: "Raised intracellular Na+ activates Na+/Ca2+ exchange and Ca2+ accumulates because the ATP-dependent Ca2+ pump fails."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c015
+    section: pathogenesis
+    statement: "Calcium overload activates phospholipase and proteases that damage membranes, leading toward necrosis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42-43" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c016
+    section: pathogenesis
+    statement: "Mitochondria swell in acute, especially ischemic, injury because loss of membrane potential impairs their volume control."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c017
+    section: micro
+    statement: "The swollen cell has an enlarged, pale cytoplasm."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c018
+    section: micro
+    statement: "The nucleus stays in its normal position (central in hepatocytes, per the figure)."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c019
+    section: micro
+    statement: "Organelle number is unchanged; organelles are dispersed in a larger volume."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c020
+    section: micro
+    statement: "In toxic hepatic injury severe hydropic swelling can be centrilobular."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c021
+    section: micro
+    statement: "ER cisternae are distended by fluid."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3-4" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c022
+    section: micro
+    statement: "Membrane-bound polysomes may disaggregate and detach from the rough ER, ribosomes lying free in the cytosol."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3-4" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c023
+    section: micro
+    statement: "Mitochondria swell in acute ischemic injury with reduced matrix density and less prominent cristae."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3-4" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c024
+    section: micro
+    statement: "Plasma membrane blebs may form and detach without impairing cell viability."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c025
+    section: micro
+    statement: "Reversible nuclear injury shows segregation of fibrillar and granular nucleolar components."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c026
+    section: micro
+    statement: "These organelle changes impair cell functions such as protein synthesis and energy production."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c027
+    section: clinical
+    statement: "Cytotoxic cerebral edema is intracellular water accumulation equivalent to hydropic swelling, usually after ischemia, preferentially in gray matter."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "344" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c028
+    section: clinical
+    statement: "Hepatocytes show variable hydropic swelling in acute viral hepatitis and in alcoholic hepatitis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "864, 868" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c029
+    section: clinical
+    statement: "Mild reflux injury of esophageal squamous epithelium appears as cell swelling (hydropic change)."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "770" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c030
+    section: prognosis
+    statement: "If the stress is removed in time the cell returns to its normal structural and functional state."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c031
+    section: prognosis
+    statement: "Myocardium whose circulation is interrupted for less than 30 minutes can recover structure and function after reperfusion."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c032
+    section: prognosis
+    statement: "Mitochondrial swelling of reversible injury is fully reversible on recovery."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c033
+    section: prognosis
+    statement: "Severe insults cause irreversible injury and death; the point of no return is not precisely known."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3, 43" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c034
+    section: prognosis
+    statement: "Dying cells show exaggerated reversible-injury changes plus calcified mitochondria, membrane discontinuities and nuclear changes."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c035
+    section: prognosis
+    statement: "When membranes become leaky, the swollen cell is near disintegration."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "43" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c036
+    section: differential
+    statement: "Fatty change shows cytoplasmic lipid globules and is reversible."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c037
+    section: differential
+    statement: "In hyperglycemic states such as poorly controlled diabetes, hepatocytes and proximal tubule cells are swollen by glycogen."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c038
+    section: differential
+    statement: "Coagulative necrosis shows increased cytoplasmic eosinophilia and pyknosis, karyorrhexis or karyolysis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "38-39" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c039
+    section: differential
+    statement: "In alcoholic hepatitis, Mallory-Denk hyalin is most frequent in ballooned hepatocytes, which neutrophils tend to surround."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "868" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c040
+    section: high-yield
+    statement: "Hydropic swelling is a reversible cell enlargement caused by intracellular water."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c041
+    section: high-yield
+    statement: "The primary defect is failure to extrude Na+, through membrane leak, pump damage or ATP lack."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c042
+    section: high-yield
+    statement: "Water follows Na+ to maintain isosmotic conditions."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c043
+    section: high-yield
+    statement: "Light microscopy: enlarged cell, pale cytoplasm, nucleus in its normal position."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c044
+    section: high-yield
+    statement: "Electron microscopy shows dilated ER, detached ribosomes, swollen mitochondria and membrane blebs."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3-4" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c045
+    section: high-yield
+    statement: "Ischemia causes swelling because aerobic ATP production stops and ATP-dependent pumps fail."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "4, 42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c046
+    section: high-yield
+    statement: "In the brain, hydropic swelling corresponds to cytotoxic edema, which mainly involves gray matter."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "344" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c047
+    section: traps
+    statement: "The nucleus remains normally situated in hydropic swelling."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c048
+    section: traps
+    statement: "Cell death is marked by pyknosis, karyorrhexis and karyolysis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c049
+    section: traps
+    statement: "Plasma membrane blebs can detach without loss of cell viability."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c050
+    section: traps
+    statement: "Na+ accumulation is the primary event and water entry follows osmotically."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c051
+    section: traps
+    statement: "In pregnancy pathology hydropic describes edematous villi or an edematous fetus, not cellular hydropic swelling."
+    sourceRef: { source: rubin-8e, chapter: "14", pages: "562-563, 579" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c052
+    section: traps
+    statement: "Cytotoxic edema is intracellular and mainly gray matter; vasogenic edema is extracellular, mainly white matter."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "344" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c053
+    section: mnemonics
+    statement: "Na+ retention, water follows, ER dilation, pale cytoplasm with normally placed nucleus, reversibility."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c054
+    section: differential
+    statement: "Oil red O stain marks neutral lipid."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1411" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c055
+    section: differential
+    statement: "The PAS stain identifies glycogen."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1411" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: hydropic-swelling-c056
+    section: differential
+    statement: "Diastase digestion removes glycogen before PAS staining."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "36" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03

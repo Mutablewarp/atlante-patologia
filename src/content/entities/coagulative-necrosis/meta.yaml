@@ -1,0 +1,148 @@
+id: coagulative-necrosis
+module: g01
+tier: core
+kind: process
+names:
+  it: "Necrosi coagulativa"
+  en: "Coagulative necrosis"
+  eponyms: []
+  synonyms:
+    it: ["Necrosi coagulativa ischemica"]
+    en: ["Ischemic coagulative necrosis"]
+  abbreviations: []
+summary:
+  it: "Morte di un'area di tessuto in cui le cellule morte conservano per un certo tempo il proprio profilo: citoplasma eosinofilo con picnosi, carioressi e cariolisi; è la lesione tipica degli infarti negli organi solidi diversi dal cervello."
+  en: "Death of a tissue area in which dead cells keep their outlines for a time: eosinophilic cytoplasm with pyknosis, karyorrhexis and karyolysis; the typical lesion of infarcts in solid organs other than the brain."
+lenses:
+  system: [general, heart, kidney]
+  process: [cell-death, necrosis, irreversible-injury, hypoxic-ischemic-injury]
+  pattern: [necrosis-coagulative, nuclear-changes]
+  presentation: [ischemic-event, chest-pain, hematuria]
+  marker: [necrosis-serum-markers]
+  group: [vascular, degenerative]
+learningObjectives:
+  - it: "Riconoscere al microscopio la necrosi coagulativa: profili cellulari conservati, eosinofilia citoplasmatica e alterazioni nucleari."
+    en: "Recognize coagulative necrosis under the microscope: preserved cell outlines, cytoplasmic eosinophilia and nuclear changes."
+  - it: "Spiegare perché il citoplasma delle cellule necrotiche diventa più eosinofilo."
+    en: "Explain why the cytoplasm of necrotic cells becomes more eosinophilic."
+  - it: "Collegare l'occlusione di un'arteria terminale all'infarto pallido di cuore, rene e milza, e distinguerlo dall'infarto rosso."
+    en: "Link occlusion of an end artery to pale infarcts of heart, kidney and spleen, and distinguish the red infarct."
+  - it: "Descrivere l'evoluzione temporale di un infarto, dalla necrosi alla cicatrice."
+    en: "Describe the time course of an infarct, from necrosis to scar."
+  - it: "Distinguere la necrosi coagulativa dalla necrosi colliquativa, dalla necrosi caseosa e dall'apoptosi."
+    en: "Distinguish coagulative necrosis from liquefactive necrosis, caseous necrosis and apoptosis."
+prerequisites: [hypoxic-ischemic-injury]
+relations:
+  - type: differentialOf
+    target: liquefactive-necrosis
+    note:
+      it: "Profili cellulari conservati contro tessuto dissolto in materiale fluido."
+      en: "Preserved cell outlines versus tissue dissolved into fluid."
+  - type: differentialOf
+    target: caseous-necrosis
+    note:
+      it: "Profili conservati contro detrito granulare amorfo all'interno di granulomi."
+      en: "Preserved outlines versus amorphous granular debris inside granulomas."
+  - type: sameLesionOtherOrgan
+    target: myocardial-infarction
+    note:
+      it: "L'infarto miocardico è una necrosi coagulativa del miocardio."
+      en: "Myocardial infarction is coagulative necrosis of the myocardium."
+  - type: sameLesionOtherOrgan
+    target: renal-infarct
+    note:
+      it: "L'infarto renale è un'area cuneiforme di necrosi coagulativa."
+      en: "A renal infarct is a wedge-shaped area of coagulative necrosis."
+  - type: prerequisiteOf
+    target: infarction
+    note:
+      it: "L'infarto è la necrosi coagulativa nel territorio di un'arteria terminale occlusa."
+      en: "An infarct is coagulative necrosis in the territory of an occluded end artery."
+quickCheck:
+  - id: coagulative-necrosis-q1
+    q:
+      it: "Perché il citoplasma delle cellule in necrosi coagulativa appare più rosso all'ematossilina-eosina?"
+      en: "Why does the cytoplasm of cells in coagulative necrosis look redder on hematoxylin and eosin?"
+    a:
+      it: "Perché l'RNA citoplasmatico, che lega l'ematossilina, viene rapidamente degradato e prevale così la colorazione eosinofila."
+      en: "Because cytoplasmic RNA, which binds hematoxylin, is rapidly degraded, leaving eosinophilic staining."
+    kind: short
+  - id: coagulative-necrosis-q2
+    q:
+      it: "Elenca le tre alterazioni nucleari della necrosi e indica in quale ordine compaiono di solito."
+      en: "Name the three nuclear changes of necrosis and the order in which they usually appear."
+    a:
+      it: "Prima la picnosi (nucleo piccolo e denso); poi il nucleo picnotico può frammentarsi (carioressi) o perdere la colorabilità della cromatina (cariolisi). La carioressi non è una tappa obbligata."
+      en: "Pyknosis (small, dense nucleus) comes first; the pyknotic nucleus may then fragment (karyorrhexis) or lose chromatin staining (karyolysis). Karyorrhexis is not an obligatory step."
+    kind: short
+  - id: coagulative-necrosis-q3
+    q:
+      it: "In quale organo la necrosi ischemica non resta coagulativa, e in che cosa si trasforma?"
+      en: "In which organ does ischemic necrosis not remain coagulative, and what does it become?"
+    a:
+      it: "Nel cervello: va rapidamente incontro a colliquazione e può lasciare una cavità cistica permanente."
+      en: "In the brain: it rapidly liquefies and can leave a permanent cyst."
+    kind: short
+  - id: coagulative-necrosis-q4
+    q:
+      it: "Che aspetto macroscopico ha un infarto renale recente?"
+      en: "What does a recent renal infarct look like grossly?"
+    a:
+      it: "Un'area pallida a forma di cuneo, con la base sulla capsula e un orlo emorragico."
+      en: "A pale wedge-shaped area with its base on the capsule and a hemorrhagic rim."
+    kind: short
+selfExplain:
+  - it: "Perché le cellule morte conservano il loro profilo nelle prime ore, e che cosa ne determina poi la scomparsa?"
+    en: "Why do dead cells keep their outlines in the first hours, and what later makes them disappear?"
+  - it: "Perché un infarto miocardico non è visibile a occhio nudo nelle prime ore, pur essendo le cellule già morte?"
+    en: "Why is a myocardial infarct invisible to the naked eye in the first hours, even though the cells are already dead?"
+  - it: "Perché un infarto rosso contiene comunque necrosi coagulativa?"
+    en: "Why does a red infarct still contain coagulative necrosis?"
+chain:
+  - pathology:
+      it: "Necrosi coagulativa dei cardiomiociti con rottura del sarcolemma"
+      en: "Coagulative necrosis of cardiac myocytes with sarcolemmal rupture"
+    sign:
+      it: "Dolore toracico prolungato"
+      en: "Prolonged chest pain"
+    lab:
+      it: "Aumento sierico di troponina I o T e di CK"
+      en: "Rise in serum troponin I or T and CK"
+  - pathology:
+      it: "Infarto renale da embolia arteriosa"
+      en: "Renal infarct from arterial embolism"
+    sign:
+      it: "Dolore improvviso al fianco"
+      en: "Sudden flank pain"
+    lab:
+      it: "Ematuria"
+      en: "Hematuria"
+images:
+  - id: coagulative-necrosis-gross-1
+    role: gross
+  - id: coagulative-necrosis-micro-1
+    role: micro
+  - id: coagulative-necrosis-micro-2
+    role: micro
+  - id: g01-necrosis-vs-apoptosis
+    role: diagram
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "1"
+    pages: "3-4, 38-42"
+  - source: rubin-8e
+    chapter: "7"
+    pages: "337-338"
+  - source: rubin-8e
+    chapter: "8"
+    pages: "365"
+  - source: rubin-8e
+    chapter: "17"
+    pages: "657-659"
+  - source: rubin-8e
+    chapter: "22"
+    pages: "954-955, 961-962"
+lastUpdated: 2026-11-03
+status: published

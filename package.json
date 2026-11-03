@@ -25,7 +25,8 @@
     "licenses": "node scripts/license-scan.mjs",
     "test:e2e:study": "playwright test -c tests/e2e/study.config.ts",
     "test:e2e:offline": "playwright test -c tests/e2e/offline.config.ts",
-    "icons": "node scripts/icons.mjs"
+    "icons": "node scripts/icons.mjs",
+    "validate:entity": "node scripts/validate-entity.mjs"
   },
   "simple-git-hooks": {
     "pre-commit": "node scripts/guard.mjs --staged && node scripts/no-verbatim.mjs --staged"

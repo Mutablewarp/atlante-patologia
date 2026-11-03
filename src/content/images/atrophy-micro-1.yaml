@@ -1,0 +1,61 @@
+id: atrophy-micro-1
+file: atrophy-micro-1.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Histology_of_prostate_atrophy.jpg
+author: Mikael Häggström, M.D.
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-10-10
+modifications: "Downloaded the 1920 × 809 px Commons rendition of the 4030 × 1698 px original; downscaled to 1600 × 674 px and re-encoded as JPEG (metadata stripped). No crop, no colour change."
+attributionText: "Mikael Häggström, M.D., via Wikimedia Commons, CC0 1.0 (public domain dedication)"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: intermediate power
+caption:
+  it: >-
+    Atrofia semplice della prostata, EE a medio ingrandimento: l'atrofia aumenta da sinistra verso destra. Parti dal
+    piccolo ingrandimento e segui il gradiente. A sinistra le ghiandole sono ancora numerose, con lume aperto e un
+    rivestimento di cellule cubiche o cilindriche dal citoplasma chiaro. Spostandoti verso destra le ghiandole
+    diventano più rare, più piccole e schiacciate a fessura, mentre lo stroma fibromuscolare rosa occupa una parte
+    sempre maggiore del campo. A forte ingrandimento le cellule delle ghiandole atrofiche sono ridotte quasi al solo
+    nucleo con un sottile orlo di citoplasma, per cui i nuclei sembrano più fitti e più scuri. È l'atrofia nella sua
+    forma elementare: le cellule rimpiccioliscono perdendo citoplasma e organuli, l'organo perde parenchima e lo stroma
+    resta. Nella prostata vi contribuiscono l'età, la ridotta irrorazione, l'infiammazione cronica e la terapia di
+    deprivazione androgenica. Attenzione: ghiandole piccole, affollate e angolate possono simulare un adenocarcinoma;
+    l'atrofia però non ha atipie nucleari né nucleoli evidenti, conserva un'architettura lobulare non infiltrativa e
+    mantiene lo strato di cellule basali (verificabile con immunoistochimica, per esempio p63 o citocheratine ad alto
+    peso molecolare).
+  en: >-
+    Simple atrophy of the prostate, H&E at intermediate power, with atrophy increasing from left to right. Start at low
+    power and follow the gradient. On the left the glands are still numerous, with open lumens and a lining of cuboidal
+    to columnar cells with pale cytoplasm. Moving right, the glands become fewer, smaller and squeezed into slits, while
+    the pink fibromuscular stroma takes up more and more of the field. At high power the cells of the atrophic glands
+    are reduced to little more than a nucleus with a thin rim of cytoplasm, so the nuclei look more crowded and darker.
+    This is atrophy in its basic form: cells shrink by losing cytoplasm and organelles, the organ loses parenchyma and
+    the stroma remains. In the prostate, contributing factors include age, reduced blood supply, chronic inflammation
+    and androgen-deprivation therapy. Pitfall: small, crowded, angulated glands can mimic adenocarcinoma; atrophy,
+    however, lacks nuclear atypia and prominent nucleoli, keeps a lobular, non-infiltrative architecture and retains
+    its basal cell layer (which immunostains such as p63 or high-molecular-weight cytokeratin can confirm).
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina, allungata in orizzontale: a sinistra numerose ghiandole con lume bianco aperto
+    e cellule dal citoplasma chiaro; al centro e a destra prevale uno stroma rosa a fasci, con poche ghiandole piccole e
+    schiacciate a fessura in basso a destra.
+  en: >-
+    Wide H&E micrograph: on the left, many glands with open white lumens and cells with pale cytoplasm; in the centre
+    and on the right, pink bundled stroma predominates, with a few small glands squeezed into slits in the lower right.
+annotations:
+  - id: preserved-glands
+    label: { it: "Ghiandole relativamente conservate: lume aperto, citoplasma chiaro", en: "Relatively preserved glands: open lumens, pale cytoplasm" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.0, 0.05, 0.36, 0.05, 0.36, 0.65, 0.0, 0.65] }
+  - id: atrophic-glands
+    label: { it: "Ghiandole atrofiche: piccole, a fessura, citoplasma scarso", en: "Atrophic glands: small, slit-like, scant cytoplasm" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.47, 0.69, 0.98, 0.69, 0.98, 0.99, 0.47, 0.99] }
+  - id: predominant-stroma
+    label: { it: Stroma fibromuscolare prevalente con poche ghiandole, en: Predominant fibromuscular stroma with few glands }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.62, 0.08, 0.98, 0.08, 0.98, 0.55, 0.62, 0.55] }

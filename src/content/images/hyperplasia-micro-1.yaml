@@ -1,0 +1,55 @@
+id: hyperplasia-micro-1
+file: hyperplasia-micro-1.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Complex_Hyperplasia_of_the_Endometrium_(no_atypia)_(4745672105).jpg
+author: Ed Uthman
+license: CC-BY-2.0
+licenseUrl: https://creativecommons.org/licenses/by/2.0/
+retrievedAt: 2026-10-10
+modifications: >-
+  Downscaled the 1705 × 1235 px original to 1600 × 1159 px and re-encoded as JPEG (quality 78), which also strips the
+  camera EXIF metadata; no crop, no colour change.
+attributionText: >-
+  Ed Uthman, "Complex Hyperplasia of the Endometrium (no atypia)" (Flickr), via Wikimedia Commons, CC BY 2.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: low power
+caption:
+  it: >-
+    Iperplasia endometriale senza atipie, EE a piccolo ingrandimento. Parti dal rapporto tra ghiandole e stroma: le
+    ghiandole sono così numerose da toccarsi quasi l'una con l'altra, e tra loro resta solo un sottile setto di stroma
+    cellulato. Poi guarda la forma: accanto a ghiandole tubulari ce ne sono di ramificate, dal profilo irregolare, e
+    alcune dilatate con secreto rosa nel lume. Solo a questo punto passa all'epitelio: è cilindrico,
+    pseudostratificato, con nuclei allungati e uniformi, cioè privo di atipie citologiche. È l'esempio classico di
+    iperplasia patologica da stimolo ormonale: gli estrogeni non bilanciati dal progesterone (cicli anovulatori,
+    obesità, terapia estrogenica) fanno proliferare le ghiandole, e la proliferazione dipende ancora dallo stimolo.
+    Il dato da cercare è l'atipia nucleare: è questa, più dell'affollamento delle ghiandole, a segnalare il rischio di
+    carcinoma endometrioide.
+  en: >-
+    Endometrial hyperplasia without atypia, H&E at low power. Start with the gland-to-stroma ratio: the glands are so
+    numerous that they almost touch, leaving only thin strips of cellular stroma between them. Then look at their
+    shape: next to tubular glands there are branched, irregular ones, and some are dilated with pink secretion in the
+    lumen. Only then move to the epithelium: it is columnar and pseudostratified, with elongated, uniform nuclei, so
+    there is no cytological atypia. This is the classic pathological hyperplasia driven by a hormone: oestrogen not
+    balanced by progesterone (anovulatory cycles, obesity, oestrogen therapy) makes the glands proliferate, and the
+    proliferation still depends on that stimulus. The finding to look for is nuclear atypia: it, more than gland
+    crowding, signals the risk of endometrioid carcinoma.
+alt:
+  it: >-
+    Micrografia di endometrio in ematossilina-eosina a piccolo ingrandimento: numerose ghiandole viola, tubulari e
+    ramificate, fittamente stipate, separate da sottili setti di stroma; in alto a sinistra una ghiandola allungata e
+    dilatata contiene materiale rosa.
+  en: >-
+    Low-power H&E micrograph of endometrium: many purple glands, tubular and branched, tightly packed and separated by
+    thin strips of stroma; at top left an elongated, dilated gland contains pink material.
+annotations:
+  - id: crowded-glands
+    label: { it: Ghiandole affollate con stroma scarso, en: Crowded glands with scant stroma }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.55, 0.50, 0.88, 0.50, 0.88, 0.86, 0.55, 0.86] }
+  - id: dilated-gland
+    label: { it: Ghiandola dilatata e irregolare, en: Dilated, irregular gland }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.04, 0.09, 0.20, 0.06, 0.32, 0.15, 0.32, 0.29, 0.08, 0.27] }

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 566" width="400" height="566" role="img" aria-labelledby="cal-title cal-desc">
+  <title id="cal-title">Dystrophic versus metastatic calcification</title>
+  <desc id="cal-desc">Side-by-side comparison. Dystrophic calcification: serum calcium normal; calcium salts deposit in dead or damaged tissue because fatty acids released from dying cells bind calcium; examples are atheroma, damaged heart valves, tuberculous lymph nodes and tumours; it can occur in any injured tissue. Metastatic calcification: serum calcium high; deposits form in previously normal tissue because calcium metabolism is deranged; causes include chronic renal failure, vitamin D excess and primary hyperparathyroidism; typical sites are alveolar septa, renal tubules and blood vessels. In both, deposits stain deep blue-purple with haematoxylin and eosin.</desc>
+  <style>
+    text { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; fill: #1c1923; }
+    .h1 { font-size: 18px; font-weight: 700; }
+    .h2 { font-size: 15px; font-weight: 700; }
+    .b { font-size: 13.5px; }
+    .lab { font-size: 12px; fill: #575061; font-weight: 700; letter-spacing: 0.04em; }
+    .m { font-size: 12px; fill: #575061; }
+    .hema { fill: #2a2070; }
+    .eos { fill: #8a1f47; }
+    .rule { stroke: #ddd3c1; stroke-width: 1.2; }
+    .ca { fill: #3a2e8c; }
+  </style>
+  <rect x="1" y="1" width="398" height="564" rx="12" fill="#fffcf6" stroke="#ddd3c1" stroke-width="2"/>
+  <text class="h1" x="200" y="30" text-anchor="middle">Pathological calcification</text>
+
+  <rect x="14" y="44" width="182" height="32" rx="8" fill="#f8e2ea" stroke="#ad2c5b" stroke-width="1.5"/>
+  <text class="h2 eos" x="105" y="65" text-anchor="middle">Dystrophic</text>
+  <rect x="204" y="44" width="182" height="32" rx="8" fill="#e5e0f6" stroke="#3a2e8c" stroke-width="1.5"/>
+  <text class="h2 hema" x="295" y="65" text-anchor="middle">Metastatic</text>
+
+  <!-- Dystrophic icon: tissue with a necrotic focus that calcifies -->
+  <path d="M24 120 C 24 92, 60 86, 90 90 C 122 94, 146 100, 146 128 C 146 160, 112 172, 82 170 C 48 168, 24 152, 24 120 Z" fill="#f8e2ea" stroke="#ad2c5b" stroke-width="1.5"/>
+  <ellipse cx="86" cy="130" rx="34" ry="22" fill="#ede5d6" stroke="#857a6d" stroke-width="1.2" stroke-dasharray="3 3"/>
+  <circle class="ca" cx="72" cy="124" r="3"/><circle class="ca" cx="84" cy="118" r="2.4"/><circle class="ca" cx="96" cy="126" r="3.2"/>
+  <circle class="ca" cx="78" cy="138" r="2.6"/><circle class="ca" cx="92" cy="140" r="2.2"/><circle class="ca" cx="104" cy="134" r="2.4"/>
+  <circle class="ca" cx="66" cy="134" r="2"/>
+  <text class="m" x="86" y="186" text-anchor="middle">necrotic focus</text>
+  <rect x="164" y="96" width="14" height="66" rx="7" fill="#fffcf6" stroke="#857a6d" stroke-width="1.5"/>
+  <rect x="166" y="130" width="10" height="30" rx="5" fill="#ad2c5b"/>
+  <text class="m" x="171" y="186" text-anchor="middle">Ca²⁺</text>
+
+  <!-- Metastatic icon: normal alveoli with deposits along septa -->
+  <circle cx="236" cy="112" r="20" fill="#fffcf6" stroke="#ad2c5b" stroke-width="1.5"/>
+  <circle cx="278" cy="110" r="20" fill="#fffcf6" stroke="#ad2c5b" stroke-width="1.5"/>
+  <circle cx="256" cy="148" r="20" fill="#fffcf6" stroke="#ad2c5b" stroke-width="1.5"/>
+  <circle class="ca" cx="257" cy="111" r="2.6"/><circle class="ca" cx="245" cy="130" r="2.4"/><circle class="ca" cx="267" cy="130" r="2.6"/>
+  <circle class="ca" cx="216" cy="114" r="2.2"/><circle class="ca" cx="296" cy="102" r="2.2"/><circle class="ca" cx="256" cy="168" r="2.4"/>
+  <text class="m" x="256" y="186" text-anchor="middle">normal tissue</text>
+  <rect x="354" y="96" width="14" height="66" rx="7" fill="#fffcf6" stroke="#857a6d" stroke-width="1.5"/>
+  <rect x="356" y="100" width="10" height="60" rx="5" fill="#ad2c5b"/>
+  <text class="m" x="361" y="186" text-anchor="middle">Ca²⁺ ↑</text>
+
+  <!-- Rows -->
+  <line class="rule" x1="14" y1="198" x2="386" y2="198"/>
+  <text class="lab" x="200" y="216" text-anchor="middle">SERUM CALCIUM</text>
+  <text class="b" x="105" y="236" text-anchor="middle">normal</text>
+  <text class="b hema" x="295" y="236" text-anchor="middle" font-weight="700">high</text>
+
+  <line class="rule" x1="14" y1="246" x2="386" y2="246"/>
+  <text class="lab" x="200" y="264" text-anchor="middle">TISSUE</text>
+  <text class="b" x="105" y="284" text-anchor="middle">dead or damaged</text>
+  <text class="b" x="295" y="284" text-anchor="middle">previously normal</text>
+
+  <line class="rule" x1="14" y1="294" x2="386" y2="294"/>
+  <text class="lab" x="200" y="312" text-anchor="middle">MECHANISM</text>
+  <text class="b" x="105" y="332" text-anchor="middle">fatty acids from dying</text>
+  <text class="b" x="105" y="349" text-anchor="middle">cells bind Ca²⁺</text>
+  <text class="b" x="295" y="332" text-anchor="middle">deranged calcium</text>
+  <text class="b" x="295" y="349" text-anchor="middle">metabolism</text>
+
+  <line class="rule" x1="14" y1="358" x2="386" y2="358"/>
+  <text class="lab" x="200" y="376" text-anchor="middle">EXAMPLES / CAUSES</text>
+  <text class="b" x="105" y="396" text-anchor="middle">atheroma,</text>
+  <text class="b" x="105" y="413" text-anchor="middle">damaged heart valves,</text>
+  <text class="b" x="105" y="430" text-anchor="middle">TB nodes, tumours</text>
+  <text class="b" x="295" y="396" text-anchor="middle">renal failure,</text>
+  <text class="b" x="295" y="413" text-anchor="middle">vitamin D excess,</text>
+  <text class="b" x="295" y="430" text-anchor="middle">hyperparathyroidism</text>
+
+  <line class="rule" x1="14" y1="440" x2="386" y2="440"/>
+  <text class="lab" x="200" y="458" text-anchor="middle">TYPICAL SITES</text>
+  <text class="b" x="105" y="478" text-anchor="middle">any injured tissue</text>
+  <text class="b" x="295" y="478" text-anchor="middle">alveolar septa, kidney</text>
+  <text class="b" x="295" y="495" text-anchor="middle">tubules, blood vessels</text>
+
+  <rect x="14" y="512" width="372" height="40" rx="8" fill="#ede5d6" stroke="#857a6d" stroke-width="1.2"/>
+  <circle class="ca" cx="34" cy="532" r="4"/><circle class="ca" cx="44" cy="527" r="3"/><circle class="ca" cx="44" cy="538" r="2.6"/>
+  <text class="b" x="58" y="537">Both: deep blue-purple deposits on H&amp;E</text>
+</svg>

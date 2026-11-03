@@ -1,0 +1,55 @@
+id: g01-q-integrative-7
+module: g01
+entities: [intracellular-accumulations, protein-quality-control, pigment-accumulation]
+kind: mcq
+difficulty: 2
+tags: [integrative, intracellular-accumulations, protein-quality-control]
+stem:
+  it: "Un uomo di 34 anni, che non ha mai fumato e non beve alcolici, lamenta dispnea da sforzo progressiva; la TC mostra enfisema polmonare. Il fegato è lievemente ingrandito e le transaminasi sono aumentate. Nella biopsia epatica molti epatociti contengono globuli citoplasmatici rotondi, debolmente eosinofili, che restano PAS-positivi dopo digestione con diastasi. Quale meccanismo unico spiega meglio il danno epatico e quello polmonare?"
+  en: "A 34-year-old man who has never smoked and does not drink alcohol has progressive exertional dyspnea; CT shows pulmonary emphysema. His liver is mildly enlarged and his transaminases are raised. A liver biopsy shows many hepatocytes containing round, faintly eosinophilic cytoplasmic globules that remain PAS-positive after diastase digestion. Which single mechanism best explains both the liver and the lung damage?"
+options:
+  - id: a
+    text:
+      it: "Un difetto enzimatico ereditario blocca la demolizione del glicogeno, che si accumula negli epatociti."
+      en: "An inherited enzyme defect blocks glycogen breakdown, and glycogen accumulates in hepatocytes."
+    correct: false
+    why:
+      it: "Errata. La diastasi digerisce il glicogeno, che quindi perde la positività al PAS; materiale che resta PAS-positivo dopo diastasi non è glicogeno. Inoltre una glicogenosi non spiegherebbe l'enfisema."
+      en: "Incorrect. Diastase digests glycogen, which then loses its PAS positivity; material that stays PAS-positive after diastase is not glycogen. A glycogen storage disease would also not explain emphysema."
+  - id: b
+    text:
+      it: "L'α1-antitripsina mutata (PiZ) non si ripiega correttamente e viene trattenuta nel reticolo endoplasmatico degli epatociti, dove i suoi aggregati danneggiano la cellula; la sua mancata secrezione lascia il tessuto connettivo polmonare esposto alla proteolisi."
+      en: "Mutant (PiZ) α1-antitrypsin misfolds and is retained in the hepatocyte endoplasmic reticulum, where its aggregates injure the cell; its failure to be secreted leaves lung connective tissue exposed to proteolysis."
+    correct: true
+    why:
+      it: "Corretta. Una sola proteina mal ripiegata causa danno con due meccanismi: un guadagno di funzione tossico nel fegato (aggregati nel reticolo endoplasmatico, globuli PAS-positivi resistenti alla diastasi, fino alla cirrosi) e una perdita di funzione nel polmone, dove manca l'antiproteasi circolante (enfisema)."
+      en: "Correct. A single misfolded protein causes damage by two mechanisms: a toxic gain of function in the liver (aggregates in the endoplasmic reticulum, diastase-resistant PAS-positive globules, eventually cirrhosis) and a loss of function in the lung, where the circulating antiprotease is missing (emphysema)."
+  - id: c
+    text:
+      it: "La proteina mutata viene subito ubiquitinata e degradata dai proteasomi tramite l'ERAD, per cui il danno è dovuto soltanto alla perdita di funzione."
+      en: "The mutant protein is promptly ubiquitinated and degraded by proteasomes through ERAD, so the damage is due solely to loss of function."
+    correct: false
+    why:
+      it: "Errata. Questo schema vale per il CFTR mutato della fibrosi cistica, che viene degradato invece che accumulato. Non spiegherebbe i globuli nel fegato, che dimostrano proprio che la proteina mutata si accumula nella cellula."
+      en: "Incorrect. This pattern fits mutant CFTR in cystic fibrosis, which is degraded rather than stored. It would not explain the globules in the liver, which show that the mutant protein does accumulate in the cell."
+  - id: d
+    text:
+      it: "Corpi di Mallory, inclusioni di filamenti intermedi, danneggiano gli epatociti."
+      en: "Mallory bodies, inclusions of intermediate filaments, injure the hepatocytes."
+    correct: false
+    why:
+      it: "Errata. I corpi di Mallory sono inclusioni del citoscheletro tipiche del danno epatico alcolico, che qui manca, e non spiegherebbero l'enfisema."
+      en: "Incorrect. Mallory bodies are cytoskeletal inclusions typical of alcoholic liver injury, which is absent here, and they would not explain emphysema."
+  - id: e
+    text:
+      it: "Un sovraccarico di ferro genera specie reattive dell'ossigeno che danneggiano fegato e polmone."
+      en: "Iron overload generates reactive oxygen species that damage the liver and the lung."
+    correct: false
+    why:
+      it: "Errata. Il ferro tissutale si dimostra con la colorazione di Perls, non con il PAS, e l'emocromatosi danneggia fegato, pancreas e cuore, non causa enfisema."
+      en: "Incorrect. Tissue iron is shown with the Perls stain, not with PAS, and hemochromatosis damages the liver, pancreas and heart; it does not cause emphysema."
+backLink: { entity: intracellular-accumulations, section: pathogenesis }
+claims: [intracellular-accumulations-c021, intracellular-accumulations-c024, intracellular-accumulations-c025, intracellular-accumulations-c037, intracellular-accumulations-c038, intracellular-accumulations-c042, intracellular-accumulations-c044, intracellular-accumulations-c052, intracellular-accumulations-c058, intracellular-accumulations-c084, protein-quality-control-c006, protein-quality-control-c041, protein-quality-control-c061, protein-quality-control-c066, pigment-accumulation-c039]
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

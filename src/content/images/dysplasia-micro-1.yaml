@@ -1,0 +1,71 @@
+# License check (2026-10-10): Commons file page metadata gives CC BY 2.0, artist Ed Uthman. The file was transferred
+# from the creator's own Flickr account (photo 4445758838) and the license was confirmed by the Flickr review bot.
+# Commons also hosts a cropped PNG derivative ("Spectrum of SIL cervical dysplasia.png", CC BY 2.5); the original
+# JPEG is used here instead.
+id: dysplasia-micro-1
+file: dysplasia-micro-1.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Spectrum_of_SIL_Cervical_Dysplasia_(4445758838).jpg
+author: Ed Uthman
+license: CC-BY-2.0
+licenseUrl: https://creativecommons.org/licenses/by/2.0/
+retrievedAt: 2026-10-10
+modifications: >-
+  Downloaded the 1920 × 768 px Commons rendition of the 1938 × 775 px original; downscaled to 1600 × 640 px and
+  re-encoded as JPEG (quality 82), which also strips the camera EXIF metadata. No crop, no colour change.
+attributionText: >-
+  Ed Uthman, "Spectrum of SIL/Cervical Dysplasia" (Flickr), via Wikimedia Commons, CC BY 2.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: intermediate power
+caption:
+  it: >-
+    Cono LEEP della cervice uterina, EE a medio ingrandimento: nello stesso campo si legge tutta la sequenza, da
+    sinistra a destra, epitelio squamoso normale, coilocitosi, lesione squamosa intraepiteliale di basso grado (LSIL)
+    e di alto grado (HSIL). Prima regola: guarda come cambia la maturazione dal basso verso l'alto. A sinistra le
+    cellule basali sono piccole e ordinate e, salendo, si appiattiscono con nuclei sempre più piccoli: la maturazione è
+    conservata. Al centro gli strati superficiali contengono coilociti, cellule con un alone chiaro attorno a un nucleo
+    ingrandito, scuro e dal contorno irregolare, segno dell'effetto citopatico da HPV; le atipie restano nella parte
+    alta e la maturazione è ancora riconoscibile. A destra le cellule con nuclei grandi, affollati e ipercromatici
+    occupano quasi tutto lo spessore e l'appiattimento in superficie quasi scompare: è la perdita di maturazione e di
+    polarità tipica della displasia di alto grado. Infine controlla il margine inferiore dell'epitelio: è netto e
+    continuo in tutto il campo, quindi la lesione resta intraepiteliale (non è un carcinoma invasivo). Concetto chiave:
+    la displasia si gradua in base alla quota di spessore occupata da cellule atipiche immature, non dal singolo nucleo.
+  en: >-
+    Cervical LEEP cone, H&E at intermediate power: the whole sequence sits in one field, from left to right normal
+    squamous epithelium, koilocytosis, low-grade squamous intraepithelial lesion (LSIL) and high-grade lesion (HSIL).
+    First rule: watch how maturation changes from bottom to top. On the left the basal cells are small and orderly and,
+    as they rise, they flatten and their nuclei shrink: maturation is preserved. In the middle the upper layers contain
+    koilocytes, cells with a clear halo around an enlarged, dark nucleus with an irregular outline, the cytopathic
+    effect of HPV; the atypia stays in the upper part and maturation is still recognisable. On the right, cells with
+    large, crowded, hyperchromatic nuclei fill nearly the whole thickness and surface flattening almost disappears:
+    this is the loss of maturation and polarity typical of high-grade dysplasia. Finally check the lower edge of the
+    epithelium: it is sharp and continuous across the field, so the lesion is still intraepithelial (not invasive
+    carcinoma). Key point: dysplasia is graded by how much of the thickness is taken up by immature atypical cells, not
+    by a single nucleus.
+alt:
+  it: >-
+    Micrografia orizzontale in ematossilina-eosina di una striscia di epitelio squamoso sopra uno stroma rosa. A sinistra
+    l'epitelio ha cellule chiare che si appiattiscono verso la superficie; al centro molte cellule superficiali hanno un
+    alone chiaro attorno al nucleo; a destra l'epitelio è fitto di nuclei viola scuri e ingranditi fino alla superficie.
+    In alto a sinistra c'è un frammento staccato di epitelio.
+  en: >-
+    Wide H&E micrograph of a strip of squamous epithelium over pink stroma. On the left the epithelium has pale cells
+    that flatten towards the surface; in the middle many surface cells have a clear halo around the nucleus; on the
+    right the epithelium is packed with enlarged dark purple nuclei up to the surface. A detached fragment of epithelium
+    lies at the top left.
+annotations:
+  - id: preserved-maturation
+    label: { it: Maturazione conservata, en: Preserved maturation }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.01, 0.40, 0.20, 0.30, 0.20, 0.70, 0.01, 0.74] }
+  - id: koilocytes-lsil
+    label: { it: "Coilociti negli strati alti (LSIL)", en: "Koilocytes in the upper layers (LSIL)" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.27, 0.27, 0.52, 0.20, 0.52, 0.52, 0.27, 0.62] }
+  - id: hsil
+    label: { it: "HSIL: atipie quasi a tutto spessore", en: "HSIL: atypia through nearly the full thickness" }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.64, 0.18, 0.99, 0.25, 0.99, 0.70, 0.64, 0.62] }

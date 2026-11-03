@@ -1,0 +1,63 @@
+# License check (2026-10-10): the Commons file page tags this upload CC BY 3.0, but its Credit field quotes the
+# source article's license. The article (Virchows Archiv 2019, PMC7028821) is CC BY 4.0 per its JATS
+# <permissions> block (Europe PMC full text), so the creators' own grant, CC BY 4.0, is recorded here.
+id: ischemia-reperfusion-injury-gross-1
+file: ischemia-reperfusion-injury-gross-1.jpg
+kind: gross
+sourceUrl: https://commons.wikimedia.org/wiki/File:Histological_features_of_myocardial_infarction_with_reperfusion.jpg
+author: >-
+  Katarzyna Michaud, Cristina Basso, Giulia d'Amati, Carla Giordano, Ivana Kholová, Stephen D. Preston, Stefania Rizzo,
+  Sara Sabatasso, Mary N. Sheppard, Aryan Vink, Allard C. van der Wal, on behalf of the Association for European
+  Cardiovascular Pathology (AECVP)
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-10-10
+modifications: >-
+  Cropped panel (c) out of the four-panel figure (Fig. 7 of the source article); a 52 px strip at the left edge was
+  removed to drop the panel letter. Re-encoded as JPEG at the original pixel size; no color change.
+attributionText: >-
+  Michaud K, Basso C, d'Amati G, et al. (AECVP), "Diagnosis of myocardial infarction at autopsy: AECVP reappraisal in
+  the light of the current clinical classification", Virchows Archiv 2019, doi:10.1007/s00428-019-02662-1, Fig. 7c,
+  via Wikimedia Commons, CC BY 4.0; cropped
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+caption:
+  it: >-
+    Infarto miocardico riperfuso, sezione trasversale del cuore (asse corto). Orientati prima: al centro la cavità del
+    ventricolo sinistro, nera; intorno i muscoli papillari e le trabecole; all'esterno lo spessore della parete; in alto
+    a sinistra il grasso epicardico giallo. Reperto chiave: una fascia rosso-bruna scura abbraccia l'endocardio lungo
+    tutta la circonferenza e chiazze scure macchiano i muscoli papillari, mentre la parte esterna della parete resta
+    pallida. È un'emorragia subendocardica circonferenziale: gli strati interni, i più lontani dalle coronarie
+    epicardiche e quindi i primi a morire, si riempiono di sangue quando il flusso ritorna. Confronta con l'infarto da
+    occlusione persistente, che è pallido e nelle prime ore non si riconosce a occhio nudo.
+  en: >-
+    Reperfused myocardial infarct, transverse (short-axis) slice of the heart. Orient yourself first: the black left
+    ventricular cavity in the middle; the papillary muscles and trabeculae around it; the thickness of the wall outside
+    them; yellow epicardial fat at the upper left. Key finding: a dark red-brown band hugs the endocardium all the way
+    around, and dark blotches stain the papillary muscles, while the outer part of the wall stays pale. This is
+    circumferential subendocardial hemorrhage: the inner layers, farthest from the epicardial coronary arteries and so
+    the first to die, fill with blood when flow returns. Compare an infarct from persistent occlusion, which is pale
+    and cannot be seen with the naked eye in its first hours.
+alt:
+  it: >-
+    Fotografia di una fetta trasversale di cuore: al centro la cavità ventricolare nera circondata da muscoli papillari
+    e trabecole con chiazze scure; una fascia rosso-bruna scura riveste la parete interna tutto intorno alla cavità; la
+    parete esterna è color nocciola chiaro; grasso giallo in alto a sinistra.
+  en: >-
+    Photograph of a transverse slice of heart: in the middle the black ventricular cavity, surrounded by papillary
+    muscles and trabeculae with dark blotches; a dark red-brown band lines the inner wall all around the cavity; the
+    outer wall is light tan; yellow fat at the upper left.
+annotations:
+  - id: pale-outer-wall
+    label: { it: Parete esterna pallida, en: Pale outer wall }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.40, 0.07, 0.75, 0.07, 0.75, 0.18, 0.40, 0.18] }
+  - id: subendocardial-hemorrhage
+    label: { it: Emorragia subendocardica, en: Subendocardial hemorrhage }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.28, 0.30, 0.55, 0.26, 0.78, 0.30, 0.85, 0.40, 0.70, 0.40, 0.40, 0.36, 0.28, 0.36] }
+  - id: hemorrhagic-papillary-muscle
+    label: { it: Muscolo papillare con chiazze emorragiche, en: Papillary muscle with hemorrhagic blotches }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.58, 0.46, 0.82, 0.46, 0.82, 0.66, 0.58, 0.66] }

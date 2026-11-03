@@ -1,0 +1,91 @@
+id: oxidative-injury-micro-3
+file: oxidative-injury-micro-3.jpg
+kind: micro
+sourceUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC11414483/figure/fig1/
+author: Hunter L. Monroe, Tony El Jabbour
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-10-10
+modifications: >-
+  Fig. 1 of the source article, downscaled from the publisher's 3601 × 1366 px high-resolution rendition to
+  1600 × 607 px and re-encoded as JPEG (metadata stripped); no crop, no colour change. The panel letters and the
+  black, orange and green arrows belong to the original figure. The article is published under CC BY 4.0 and the
+  figure carries no third-party credit line.
+attributionText: >-
+  Monroe HL, El Jabbour T, "Educational Case: Acetaminophen hepatotoxicity: Pathophysiology and evaluation of acute
+  liver failure", Academic Pathology 2024;11(4):100146, doi:10.1016/j.acpath.2024.100146, Fig. 1, CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: medium power (20× objective, both panels)
+caption:
+  it: >-
+    Sovradosaggio di paracetamolo, biopsia epatica transgiugulare, EE: due campi allo stesso ingrandimento, con
+    frecce aggiunte dagli autori dell'articolo originale. Comincia individuando in ciascun pannello il vaso che fa da
+    punto di repere, perché questa lesione si definisce in base alla sua posizione nel lobulo. Il pannello A è
+    centrato su una vena centrolobulare (freccia nera): intorno non resta alcun epatocita vitale, solo l'impalcatura
+    collassata del lobulo, piena di globuli rossi stravasati, con linfociti e plasmacellule sparsi. Il pannello B è
+    centrato su uno spazio portale con il suo ramo della vena porta (freccia arancione); qui le lamine di epatociti
+    sono integre (freccia verde), con citoplasma rosa e nuclei rotondi. Cellule morte intorno alla vena
+    centrolobulare e cellule vive intorno allo spazio portale configurano il quadro della necrosi centrolobulare
+    (zona 3). Perché proprio la zona 3: lì è più abbondante il CYP2E1, l'enzima del citocromo P450 che trasforma una
+    piccola quota del farmaco nel metabolita reattivo NAPQI. Di norma il glutatione neutralizza il NAPQI; dopo un
+    sovradosaggio il glutatione si esaurisce, il NAPQI si lega alle proteine mitocondriali e la catena respiratoria
+    danneggiata libera superossido, perossido di idrogeno e perossinitrito, che ossidano lipidi, proteine e DNA fino
+    alla morte dell'epatocita per necrosi. La N-acetilcisteina, l'antidoto, agisce ricostituendo il glutatione.
+    Trappola d'esame: il fegato da shock (epatite ischemica) dà lo stesso quadro zonale, quindi sono la storia
+    clinica e il dosaggio del paracetamolo nel siero, non la sola biopsia, a indicare la causa.
+  en: >-
+    Paracetamol (acetaminophen) overdose, transjugular liver biopsy, H&E: two fields at the same magnification, with
+    arrows added by the authors of the source article. Begin by finding the landmark vessel in each panel, because
+    this lesion is defined by where it sits in the lobule. Panel A is centred on a central vein (black arrow): no
+    viable hepatocytes are left around it, only the collapsed framework of the lobule, filled with extravasated red
+    cells and scattered lymphocytes and plasma cells. Panel B is centred on a portal tract and its portal vein
+    branch (orange arrow); here the hepatocyte plates are intact (green arrow), with pink cytoplasm and round nuclei.
+    Dead cells around the central vein and surviving cells around the portal tract make the pattern of centrilobular
+    (zone 3) necrosis. Why zone 3: CYP2E1, the cytochrome P450 enzyme that turns a small share of the drug into the
+    reactive metabolite NAPQI, is most abundant there. Glutathione normally neutralises NAPQI; after an overdose it
+    runs out, NAPQI binds mitochondrial proteins, and the damaged respiratory chain releases superoxide, hydrogen
+    peroxide and peroxynitrite, which oxidise lipids, proteins and DNA until the hepatocyte dies by necrosis.
+    N-acetylcysteine, the antidote, works by restoring glutathione. Exam trap: ischaemic ("shock") liver gives the
+    same zonal pattern, so the history and the serum paracetamol level, not the biopsy alone, point to the cause.
+alt:
+  it: >-
+    Due micrografie in ematossilina-eosina affiancate, indicate con A e B. In A un ampio lume vascolare bianco e
+    triangolare, segnalato da una freccia scura, è circondato da tessuto rosa lasso affollato di globuli rossi e di
+    nuclei scuri sparsi, senza lamine di cellule epatiche. In B un lume vascolare bianco e ovale, segnalato da una
+    freccia arancione, si trova in una banda di connettivo con piccoli dotti e cellule infiammatorie, circondata da
+    lamine di cellule epatiche rosa e poligonali con nuclei rotondi; a sinistra una freccia verde indica queste
+    cellule.
+  en: >-
+    Two H&E micrographs side by side, labelled A and B. In A, a large white triangular vessel lumen marked by a dark
+    arrow is surrounded by loose pink tissue crowded with red blood cells and scattered dark nuclei, with no plates of
+    liver cells. In B, an oval white vessel lumen marked by an orange arrow lies in a band of connective tissue with
+    small ducts and inflammatory cells, surrounded by plates of pink polygonal liver cells with round nuclei; a green
+    arrow on the left points to these cells.
+annotations:
+  - id: central-vein
+    label: { it: Vena centrolobulare (zona 3), en: Central vein (zone 3) }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.168, 0.226, 0.200, 0.282, 0.250, 0.367, 0.307, 0.466, 0.279, 0.527, 0.232, 0.612, 0.193, 0.697, 0.157, 0.762, 0.138, 0.786, 0.154, 0.659, 0.175, 0.527, 0.179, 0.395, 0.171, 0.282]
+  - id: hepatocyte-dropout
+    label: { it: Perdita di epatociti con globuli rossi stravasati, en: Hepatocyte dropout with extravasated red cells }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.007, 0.329, 0.071, 0.311, 0.132, 0.282, 0.132, 0.400, 0.132, 0.560, 0.107, 0.640, 0.007, 0.649]
+  - id: portal-vein
+    label: { it: Ramo della vena porta nello spazio portale (zona 1), en: Portal vein branch in the portal tract (zone 1) }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.720, 0.339, 0.750, 0.311, 0.804, 0.311, 0.839, 0.396, 0.868, 0.565, 0.857, 0.622, 0.804, 0.631, 0.750, 0.603, 0.721, 0.509, 0.714, 0.405]
+  - id: intact-hepatocytes
+    label: { it: Epatociti periportali integri, en: Intact periportal hepatocytes }
+    revealOrder: 4
+    shape:
+      type: polygon
+      coords: [0.507, 0.188, 0.564, 0.179, 0.582, 0.245, 0.582, 0.659, 0.546, 0.810, 0.507, 0.810]

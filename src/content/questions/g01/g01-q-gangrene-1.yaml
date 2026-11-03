@@ -1,0 +1,74 @@
+id: g01-q-gangrene-1
+module: g01
+entities: [gangrene]
+kind: mcq
+difficulty: 2
+tags: [necrosis, gangrene]
+stem:
+  en: "A 27-year-old man sustains an open fracture of the thigh in a motorcycle crash; the wound is heavily soiled and contains crushed muscle, and débridement is delayed. Three days later the wound suddenly becomes extremely painful and swollen, the skin over it is tense and dusky, and a thin, foul, blood-stained, bubbly fluid drains from it. His hemoglobin is falling, and a Gram stain of the exudate shows gram-positive rods with very few neutrophils. Which mechanism best explains the spread of necrosis into previously healthy muscle?"
+  it: "Un uomo di 27 anni riporta una frattura esposta della coscia in un incidente in moto; la ferita è molto contaminata e contiene muscolo schiacciato, e lo sbrigliamento chirurgico viene ritardato. Tre giorni dopo la ferita diventa improvvisamente molto dolorosa e tumefatta, la cute sovrastante è tesa e scura e ne fuoriesce un liquido fluido, maleodorante, ematico e con bolle. L'emoglobina sta calando e la colorazione di Gram dell'essudato mostra bastoncelli gram-positivi con pochissimi neutrofili. Quale meccanismo spiega meglio l'estensione della necrosi al muscolo prima sano?"
+options:
+  - id: a
+    text:
+      en: "Occlusion of the femoral artery, turning the limb into a large pale infarct (dry gangrene)"
+      it: "L'occlusione dell'arteria femorale, che trasforma l'arto in un grande infarto pallido (gangrena secca)"
+    correct: false
+    why:
+      en: "Dry gangrene is coagulative necrosis beyond an occluded artery, with no infection and no gas. Here the muscle that dies had a normal blood supply and is killed by a bacterial toxin."
+      it: "La gangrena secca è una necrosi coagulativa a valle di un'arteria occlusa, senza infezione né gas. Qui il muscolo che muore aveva un'irrorazione normale ed è ucciso da una tossina batterica."
+  - id: b
+    text:
+      en: "Ischemic dead tissue colonized by pyogenic bacteria and liquefied by neutrophil hydrolases (wet gangrene)"
+      it: "Tessuto ischemico morto colonizzato da batteri piogeni e colliquato dalle idrolasi dei neutrofili (gangrena umida)"
+    correct: false
+    why:
+      en: "Wet gangrene is rich in neutrophils, whose enzymes liquefy the dead tissue. The striking scarcity of neutrophils here points instead to a toxin that destroys them."
+      it: "La gangrena umida è ricca di neutrofili, i cui enzimi colliquano il tessuto morto. La marcata scarsità di neutrofili in questo caso indica invece una tossina che li distrugge."
+  - id: c
+    text:
+      en: "Immune-complex vasculitis with fibrinoid necrosis, in which complement C5a recruits neutrophils that damage vessel walls"
+      it: "Una vasculite da immunocomplessi con necrosi fibrinoide, in cui il C5a del complemento richiama neutrofili che danneggiano la parete dei vasi"
+    correct: false
+    why:
+      en: "Immune-complex injury draws neutrophils into the vessel wall, the opposite of what the Gram stain shows; the setting is a heavily contaminated wound with devitalized muscle, the classic soil for clostridial infection."
+      it: "Il danno da immunocomplessi richiama neutrofili nella parete vascolare, l'opposto di quanto mostra la colorazione di Gram; il contesto è una ferita molto contaminata con muscolo devitalizzato, il terreno classico dell'infezione da clostridi."
+  - id: d
+    text:
+      en: "A clostridial α toxin, a phospholipase (lecithinase) that destroys the membranes of muscle fibers, leukocytes and red cells"
+      it: "L'α-tossina dei clostridi, una fosfolipasi (lecitinasi) che distrugge le membrane delle fibre muscolari, dei leucociti e dei globuli rossi"
+    correct: true
+    why:
+      en: "Correct. This is gas gangrene (clostridial myonecrosis): spores germinate in anaerobic devitalized tissue, and the α toxin kills previously healthy muscle, destroys neutrophils (hence their scarcity) and lyses red cells (hence the falling hemoglobin). It typically starts 2 to 4 days after the injury and can progress to shock and renal failure."
+      it: "Corretto. È una gangrena gassosa (mionecrosi clostridica): le spore germinano nel tessuto devitalizzato e anaerobio, e l'α-tossina uccide il muscolo prima sano, distrugge i neutrofili (da cui la loro scarsità) e lisa i globuli rossi (da cui il calo dell'emoglobina). Esordisce di solito 2-4 giorni dopo il trauma e può evolvere verso shock e insufficienza renale."
+  - id: e
+    text:
+      en: "Cold-induced endothelial injury with local thrombosis (frostbite)"
+      it: "Danno endoteliale da freddo con trombosi locale (congelamento)"
+    correct: false
+    why:
+      en: "Frostbite can end in gangrene through endothelial injury and thrombosis, but there is no cold exposure here, and it would not explain gram-positive rods, gas and hemolysis."
+      it: "Il congelamento può esitare in gangrena per danno endoteliale e trombosi, ma qui non c'è esposizione al freddo e non spiegherebbe i bastoncelli gram-positivi, il gas e l'emolisi."
+backLink: { entity: gangrene, section: pathogenesis }
+claims:
+  - gangrene-c003
+  - gangrene-c004
+  - gangrene-c005
+  - gangrene-c012
+  - gangrene-c014
+  - gangrene-c015
+  - gangrene-c018
+  - gangrene-c019
+  - gangrene-c021
+  - gangrene-c027
+  - gangrene-c030
+  - gangrene-c036
+  - gangrene-c037
+  - gangrene-c054
+  - gangrene-c055
+  - gangrene-c059
+  - gangrene-c061
+  - fibrinoid-necrosis-c015
+  - fibrinoid-necrosis-c016
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

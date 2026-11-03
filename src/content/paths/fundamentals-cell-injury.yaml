@@ -1,0 +1,40 @@
+id: fundamentals-cell-injury
+kind: vertical
+title:
+  it: "Fondamenti: danno, adattamento e morte cellulare"
+  en: "Fundamentals: cell injury, adaptation and death"
+description:
+  it: "Tutto il modulo di patologia cellulare in ordine didattico: meccanismi del danno e alterazioni reversibili, controllo di qualità delle proteine e accumuli, adattamenti, tipi di necrosi e morte cellulare regolata, calcificazioni patologiche."
+  en: "The whole cell pathology module in teaching order: mechanisms of injury and reversible change, protein quality control and accumulations, adaptations, types of necrosis and regulated cell death, and pathologic calcification."
+steps:
+  # 1. Mechanisms of injury and reversible change
+  - entity: hypoxic-ischemic-injury
+  - entity: hydropic-swelling
+  - entity: fatty-change
+  - entity: oxidative-injury
+  - entity: ischemia-reperfusion-injury
+  # 2. Proteostasis and accumulations
+  - entity: protein-quality-control
+  - entity: autophagy
+  - entity: intracellular-accumulations
+  - entity: pigment-accumulation
+  # 3. Adaptations
+  - entity: atrophy
+  - entity: hypertrophy
+  - entity: hyperplasia
+  - entity: metaplasia
+  - entity: dysplasia
+  # 4. Cell death
+  - entity: coagulative-necrosis
+  - entity: liquefactive-necrosis
+  - entity: caseous-necrosis
+  - entity: fat-necrosis
+  - entity: fibrinoid-necrosis
+  - entity: gangrene
+  - entity: apoptosis
+  - entity: necroptosis
+  - entity: pyroptosis
+  - entity: other-regulated-cell-death
+  # 5. Pathologic calcification (dystrophic calcification needs the necrosis cards first)
+  - entity: dystrophic-calcification
+  - entity: metastatic-calcification

@@ -1,0 +1,62 @@
+# License check (2026-10-10): the Commons file page tags this upload CC BY 3.0, but its Credit field quotes the
+# source article's license. The article (Virchows Archiv 2019, PMC7028821) is CC BY 4.0 per its JATS
+# <permissions> block (Europe PMC full text), so the creators' own grant, CC BY 4.0, is recorded here.
+id: ischemia-reperfusion-injury-micro-1
+file: ischemia-reperfusion-injury-micro-1.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Histological_features_of_myocardial_infarction_with_reperfusion.jpg
+author: >-
+  Katarzyna Michaud, Cristina Basso, Giulia d'Amati, Carla Giordano, Ivana Kholová, Stephen D. Preston, Stefania Rizzo,
+  Sara Sabatasso, Mary N. Sheppard, Aryan Vink, Allard C. van der Wal, on behalf of the Association for European
+  Cardiovascular Pathology (AECVP)
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-10-10
+modifications: >-
+  Cropped panel (a) out of the four-panel figure (Fig. 7 of the source article); a 52 px strip at the left edge was
+  removed to drop the panel letter. Re-encoded as JPEG at the original pixel size; no color change.
+attributionText: >-
+  Michaud K, Basso C, d'Amati G, et al. (AECVP), "Diagnosis of myocardial infarction at autopsy: AECVP reappraisal in
+  the light of the current clinical classification", Virchows Archiv 2019, doi:10.1007/s00428-019-02662-1, Fig. 7a,
+  via Wikimedia Commons, CC BY 4.0; cropped
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: medium power
+caption:
+  it: >-
+    Infarto miocardico riperfuso, EE: necrosi a bande di contrazione. A piccolo ingrandimento segui l'orientamento delle
+    fibre, che corrono in diagonale dal basso a sinistra verso l'alto a destra; al margine sinistro restano lunghe,
+    sottili e colorate in modo uniforme. Poi spostati al centro: qui i miociti sono spezzati in blocchi irregolari di
+    citoplasma rosso acceso (ipereosinofilo), attraversati da bande trasversali dense e grossolane e separati da spazi
+    chiari; i nuclei sono pochi. Il meccanismo da ricordare: quando il sangue torna in cellule con la membrana già
+    danneggiata, il calcio entra in massa e le miofibrille ancora capaci di contrarsi si ipercontraggono e si
+    frammentano. È il quadro istologico tipico della riperfusione (per esempio dopo trombolisi o angioplastica), ma può
+    comparire anche quando le catecolamine sono molto elevate.
+  en: >-
+    Reperfused myocardial infarct, H&E: contraction band necrosis. At low power, follow the fibers, which run diagonally
+    from lower left to upper right; at the left edge they are still long, slender and evenly stained. Then move to the
+    center: here the myocytes are broken into irregular blocks of bright red (hypereosinophilic) cytoplasm, crossed by
+    coarse, dense transverse bands and separated by clear spaces; few nuclei remain. The mechanism to remember: when
+    blood returns to cells whose membranes are already damaged, calcium floods in and the myofibrils that can still
+    contract hypercontract and tear apart. This is the classic histological sign of reperfusion (for example after
+    thrombolysis or angioplasty), but it can also appear when catecholamine levels are very high.
+alt:
+  it: >-
+    Micrografia di miocardio in ematossilina-eosina a medio ingrandimento: fibre muscolari orientate in diagonale; al
+    centro sono frammentate in blocchi irregolari rosso acceso separati da spazi bianchi, mentre al margine sinistro
+    restano allungate e uniformi; pochi nuclei violacei sparsi.
+  en: >-
+    Medium-power H&E micrograph of myocardium: muscle fibers run diagonally; in the center they are broken into
+    irregular bright red blocks separated by white spaces, while at the left edge they stay long and uniform; a few
+    scattered violet nuclei.
+annotations:
+  - id: preserved-fibers
+    label: { it: Fibre allungate e uniformi, en: Long, evenly stained fibers }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.00, 0.12, 0.08, 0.02, 0.15, 0.02, 0.07, 0.62, 0.00, 0.62] }
+  - id: contraction-bands
+    label: { it: Miociti frammentati con bande di contrazione, en: Fragmented myocytes with contraction bands }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.38, 0.15, 0.62, 0.15, 0.62, 0.62, 0.38, 0.62] }

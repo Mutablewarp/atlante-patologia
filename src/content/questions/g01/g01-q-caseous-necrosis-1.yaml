@@ -1,0 +1,69 @@
+id: g01-q-caseous-necrosis-1
+module: g01
+entities: [caseous-necrosis]
+kind: mcq
+difficulty: 2
+tags: [necrosis, necrosis-caseous, granuloma, hypersensitivity]
+stem:
+  en: "A 34-year-old man who moved from a country where tuberculosis is endemic has had cough, night sweats and weight loss for 3 months. A chest radiograph shows a cavity at the apex of the right upper lobe. A biopsy from the edge of the lesion shows granulomas whose centers consist of amorphous, granular, pink debris with no recognizable cell outlines, surrounded by epithelioid macrophages, Langhans giant cells and lymphocytes. Which mechanism is mainly responsible for the tissue destruction at the center of these granulomas?"
+  it: "Un uomo di 34 anni, trasferitosi da un paese in cui la tubercolosi è endemica, presenta da 3 mesi tosse, sudorazioni notturne e calo ponderale. La radiografia del torace mostra una cavità all'apice del lobo superiore destro. Una biopsia al margine della lesione mostra granulomi con centro costituito da detriti rosa, amorfi e granulari, senza profili cellulari riconoscibili, circondati da macrofagi epitelioidi, cellule giganti di Langhans e linfociti. Quale meccanismo è il principale responsabile della distruzione tissutale al centro di questi granulomi?"
+options:
+  - id: a
+    text:
+      en: "Direct killing of host cells by a secreted bacterial exotoxin, independent of the immune response"
+      it: "L'uccisione diretta delle cellule dell'ospite da parte di un'esotossina batterica secreta, indipendente dalla risposta immunitaria"
+    correct: false
+    why:
+      en: "Waxy glycolipids of the mycobacterial wall may give the necrosis its peculiar quality, but most of the tissue damage comes from the host's own hypersensitivity response, not from a toxin acting alone."
+      it: "I glicolipidi cerosi della parete micobatterica possono conferire alla necrosi il suo aspetto peculiare, ma gran parte del danno tissutale deriva dalla risposta di ipersensibilità dell'ospite, non da una tossina che agisce da sola."
+  - id: b
+    text:
+      en: "Digestion of the dead tissue by neutrophil hydrolases, turning it into pus"
+      it: "La digestione del tessuto morto da parte delle idrolasi dei neutrofili, che lo trasformano in pus"
+    correct: false
+    why:
+      en: "That is liquefactive necrosis, as in an abscess. In caseous necrosis the dead cells lose their outlines but are not digested by neutrophils; they persist as granular debris."
+      it: "Questo descrive la necrosi colliquativa, come nell'ascesso. Nella necrosi caseosa le cellule morte perdono i loro profili ma non vengono digerite dai neutrofili: persistono come detriti granulari."
+  - id: c
+    text:
+      en: "Lytic enzymes released by macrophages activated through IFN-γ from antigen-specific T cells (cell-mediated hypersensitivity)"
+      it: "Gli enzimi litici liberati dai macrofagi attivati dall'IFN-γ prodotto dai linfociti T antigene-specifici (ipersensibilità cellulo-mediata)"
+    correct: true
+    why:
+      en: "Correct. Macrophages cannot kill the bacilli; T cells that recognize mycobacterial antigens secrete IFN-γ, which loads macrophages with lytic enzymes. Released enzymes damage host tissue and, when bacilli are numerous, produce extensive caseation; a caseous focus that erodes into a bronchus empties and leaves a cavity."
+      it: "Corretto. I macrofagi non riescono a uccidere i bacilli; i linfociti T che riconoscono gli antigeni micobatterici secernono IFN-γ, che arricchisce i macrofagi di enzimi litici. Gli enzimi liberati danneggiano i tessuti dell'ospite e, quando i bacilli sono numerosi, causano una caseificazione estesa; un focolaio caseoso che erode un bronco si svuota e lascia una caverna."
+  - id: d
+    text:
+      en: "Occlusion of an end artery, producing an infarct"
+      it: "L'occlusione di un'arteria terminale, con formazione di un infarto"
+    correct: false
+    why:
+      en: "Ischemic infarcts show coagulative necrosis, in which the ghost outlines of dead cells persist; here the outlines are lost and the necrosis sits inside granulomas."
+      it: "Gli infarti ischemici mostrano necrosi coagulativa, in cui i profili delle cellule morte persistono; qui i profili sono scomparsi e la necrosi si trova all'interno di granulomi."
+  - id: e
+    text:
+      en: "Circulating immune complexes lodging in small vessel walls and activating complement"
+      it: "Immunocomplessi circolanti che si depositano nella parete dei piccoli vasi e attivano il complemento"
+    correct: false
+    why:
+      en: "Immune-complex (type III) injury of vessel walls is the classic cause of fibrinoid necrosis, not of caseous granulomas."
+      it: "Il danno da immunocomplessi (tipo III) della parete vascolare è la causa classica della necrosi fibrinoide, non dei granulomi caseosi."
+backLink: { entity: caseous-necrosis, section: pathogenesis }
+claims:
+  - caseous-necrosis-c001
+  - caseous-necrosis-c009
+  - caseous-necrosis-c010
+  - caseous-necrosis-c012
+  - caseous-necrosis-c013
+  - caseous-necrosis-c022
+  - caseous-necrosis-c041
+  - caseous-necrosis-c046
+  - caseous-necrosis-c047
+  - caseous-necrosis-c054
+  - caseous-necrosis-c056
+  - caseous-necrosis-c064
+  - fibrinoid-necrosis-c004
+  - fibrinoid-necrosis-c014
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

@@ -1,0 +1,61 @@
+id: dysplasia-micro-2
+file: dysplasia-micro-2.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Histopathology_of_high-grade_squamous_intraepithelial_lesion_(HSIL)_of_vulva.jpg
+author: Mikael Häggström, M.D.
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-10-10
+modifications: "Downloaded the 1920 × 1436 px Commons rendition of the 2048 × 1532 px original; downscaled to 1600 × 1197 px and re-encoded as JPEG (quality 82, metadata stripped). No crop, no colour change."
+attributionText: "Mikael Häggström, M.D., via Wikimedia Commons, CC0 1.0 (public domain dedication)"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: low to intermediate power
+caption:
+  it: >-
+    Lesione squamosa intraepiteliale di alto grado (HSIL) della vulva accanto a epitelio normale, EE. Parti dal
+    confronto a piccolo ingrandimento: a destra l'epitelio squamoso è roseo e ordinato, con cellule ricche di
+    citoplasma e nuclei piccoli e regolari che si appiattiscono progressivamente verso la superficie; a sinistra gli
+    zaffi epiteliali sono molto più scuri e basofili, perché pieni di cellule immature con poco citoplasma. Passa poi
+    all'ingrandimento maggiore sulla parte sinistra: nuclei grandi, di forma e dimensioni diverse (pleomorfismo),
+    ipercromatici, affollati e disposti senza orientamento, con rapporto nucleo/citoplasma elevato; cerca anche mitosi
+    lontane dallo strato basale. Le cellule atipiche occupano l'intero spessore senza maturare: è una displasia a tutto
+    spessore. Nello stroma al centro c'è un denso infiltrato di linfociti, reazione frequente ma non specifica.
+    Concetto chiave: il bordo tra epitelio e stroma resta liscio e arrotondato; se fossero presenti cellule atipiche
+    isolate o nidi irregolari nello stroma si parlerebbe di carcinoma invasivo.
+  en: >-
+    High-grade squamous intraepithelial lesion (HSIL) of the vulva next to normal epithelium, H&E. Start with the
+    comparison at low power: on the right the squamous epithelium is pink and orderly, with cells rich in cytoplasm and
+    small, regular nuclei that flatten steadily towards the surface; on the left the epithelial nests are much darker
+    and more basophilic, because they are packed with immature cells with little cytoplasm. Then move up in power on the
+    left side: large nuclei of varying size and shape (pleomorphism), hyperchromatic, crowded and arranged without
+    orientation, with a high nuclear-to-cytoplasmic ratio; also look for mitoses far above the basal layer. The atypical
+    cells fill the whole thickness without maturing: this is full-thickness dysplasia. The stroma in the middle holds a
+    dense lymphocytic infiltrate, a common but non-specific reaction. Key point: the border between epithelium and
+    stroma stays smooth and rounded; isolated atypical cells or irregular nests within the stroma would mean invasive
+    carcinoma.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina di un rilievo cutaneo-mucoso arrotondato. A sinistra grandi zaffi epiteliali
+    viola scuro, fitti di nuclei grandi e irregolari; al centro uno stroma pieno di piccoli nuclei rotondi molto scuri
+    (linfociti); a destra un epitelio rosa chiaro con cellule grandi, nuclei piccoli e uno strato superficiale
+    appiattito.
+  en: >-
+    H&E micrograph of a rounded mucocutaneous surface. On the left, large dark purple epithelial nests packed with big,
+    irregular nuclei; in the middle, stroma filled with small, very dark round nuclei (lymphocytes); on the right, a
+    pale pink epithelium with large cells, small nuclei and a flattened surface layer.
+annotations:
+  - id: normal-epithelium
+    label: { it: "Epitelio normale: maturazione ordinata", en: "Normal epithelium: orderly maturation" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.70, 0.12, 0.85, 0.18, 0.97, 0.40, 0.97, 0.58, 0.80, 0.58, 0.70, 0.40] }
+  - id: full-thickness-dysplasia
+    label: { it: "HSIL: displasia a tutto spessore", en: "HSIL: full-thickness dysplasia" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.14, 0.30, 0.30, 0.22, 0.45, 0.35, 0.50, 0.55, 0.47, 0.82, 0.30, 0.87, 0.15, 0.75, 0.10, 0.50] }
+  - id: lymphocytic-infiltrate
+    label: { it: Infiltrato linfocitario nello stroma, en: Lymphocytic infiltrate in the stroma }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.50, 0.30, 0.60, 0.28, 0.66, 0.50, 0.62, 0.78, 0.50, 0.72, 0.48, 0.50] }

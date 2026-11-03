@@ -1,0 +1,55 @@
+id: g01-q-integrative-6
+module: g01
+entities: [gangrene, coagulative-necrosis, liquefactive-necrosis, ischemia-reperfusion-injury, caseous-necrosis]
+kind: mcq
+difficulty: 1
+tags: [integrative, gangrene, coagulative-necrosis, liquefactive-necrosis]
+stem:
+  it: "Un uomo di 67 anni con diabete di tipo 2 di lunga data e arteriopatia periferica ha da alcune settimane il secondo dito del piede destro nero, secco e raggrinzito, separato dalla cute vitale da un orletto rosso. Nel corso di tre giorni il dito e l'avampiede diventano gonfi, molli e maleodoranti, con secrezione purulenta, e compare febbre. Non c'è crepitio sottocutaneo e la radiografia non mostra gas nei tessuti molli. Quale affermazione descrive meglio ciò che è accaduto al tessuto?"
+  en: "A 67-year-old man with long-standing type 2 diabetes and peripheral arterial disease has had a black, dry, shriveled second right toe for several weeks, separated from viable skin by a red rim. Over three days the toe and forefoot become swollen, soft and foul-smelling, with purulent discharge, and he develops fever. There is no subcutaneous crepitus and the radiograph shows no gas in the soft tissues. Which statement best describes what has happened to the tissue?"
+options:
+  - id: a
+    text:
+      it: "Batteri hanno colonizzato il tessuto morto; i neutrofili richiamati liberano idrolasi che lo digeriscono, sovrapponendo una necrosi colliquativa alla necrosi coagulativa dell'infarto ischemico (gangrena umida)."
+      en: "Bacteria have colonized the dead tissue; the neutrophils they attract release hydrolases that digest it, superimposing liquefactive necrosis on the coagulative necrosis of the ischemic infarct (wet gangrene)."
+    correct: true
+    why:
+      it: "Corretta. La gangrena secca è un grande infarto pallido con necrosi coagulativa. Il tessuto necrotico oppone poca resistenza ai batteri; quando un infarto si infetta, gli enzimi idrolitici dei neutrofili dissolvono il tessuto morto, che diventa molle e purulento."
+      en: "Correct. Dry gangrene is a large pale infarct with coagulative necrosis. Necrotic tissue offers little resistance to bacteria; once an infarct becomes infected, neutrophil hydrolases dissolve the dead tissue, which turns soft and purulent."
+  - id: b
+    text:
+      it: "Una tossina α clostridica (lecitinasi) distrugge il muscolo sano, con scarsi neutrofili."
+      en: "A clostridial α toxin (lecithinase) destroys healthy muscle, with few neutrophils."
+    correct: false
+    why:
+      it: "Errata. Questa è la gangrena gassosa: edema e gas si accumulano sotto una cute tesa e i neutrofili sono scarsi. L'assenza di crepitio e di gas e la secrezione purulenta, ricca di neutrofili, la rendono improbabile."
+      en: "Incorrect. This is gas gangrene: edema and gas build up under tense skin and neutrophils are sparse. The absence of crepitus and gas and the purulent, neutrophil-rich discharge make it unlikely."
+  - id: c
+    text:
+      it: "Il flusso arterioso si è ripristinato e le specie reattive dell'ossigeno hanno causato un danno da riperfusione."
+      en: "Arterial flow has been restored, and reactive oxygen species have caused reperfusion injury."
+    correct: false
+    why:
+      it: "Errata. Nulla indica una rivascolarizzazione. Il danno da riperfusione richiede il ritorno del sangue in un tessuto ischemico, mentre qui il tessuto era morto da settimane; febbre e pus indicano un'infezione."
+      en: "Incorrect. Nothing points to revascularization. Reperfusion injury requires blood to return to ischemic tissue, whereas here the tissue had been dead for weeks; fever and pus point to infection."
+  - id: d
+    text:
+      it: "La necrosi coagulativa si è trasformata in necrosi caseosa per una reazione granulomatosa."
+      en: "The coagulative necrosis has turned into caseous necrosis through a granulomatous reaction."
+    correct: false
+    why:
+      it: "Errata. La necrosi caseosa si forma al centro dei granulomi, per lo più tubercolari, e i suoi detriti non vengono digeriti dai neutrofili. Un'infezione batterica acuta con pus produce invece necrosi colliquativa."
+      en: "Incorrect. Caseous necrosis forms at the center of granulomas, mostly tuberculous ones, and its debris is not digested by neutrophils. An acute bacterial infection with pus produces liquefactive necrosis instead."
+  - id: e
+    text:
+      it: "La fase secca era una necrosi colliquativa, che l'infezione ha trasformato in necrosi coagulativa."
+      en: "The dry phase was liquefactive necrosis, which the infection has turned into coagulative necrosis."
+    correct: false
+    why:
+      it: "Errata. La sequenza è invertita: l'occlusione arteriosa produce necrosi coagulativa con profili cellulari conservati, e sono i neutrofili richiamati dall'infezione a renderla colliquativa."
+      en: "Incorrect. The sequence is reversed: arterial occlusion produces coagulative necrosis with preserved cell outlines, and it is the neutrophils drawn by infection that make it liquefactive."
+backLink: { entity: gangrene, section: pathogenesis }
+claims: [gangrene-c003, gangrene-c009, gangrene-c015, gangrene-c017, gangrene-c018, gangrene-c024, gangrene-c027, gangrene-c028, gangrene-c029, gangrene-c053, gangrene-c063, coagulative-necrosis-c005, coagulative-necrosis-c049, liquefactive-necrosis-c004, liquefactive-necrosis-c012, caseous-necrosis-c003, caseous-necrosis-c054]
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

@@ -1,0 +1,62 @@
+id: g01-q-autophagy-2
+module: g01
+entities: [autophagy]
+kind: mcq
+difficulty: 1
+tags: [autophagy]
+stem:
+  it: "Una ragazza di 21 anni ha diarrea cronica, calo di peso e una fistola perianale; la biopsia ileale mostra infiammazione transmurale con granulomi non necrotizzanti. Lo studio genetico rivela varianti in due geni dell'autofagia necessari per eliminare i batteri penetrati nelle cellule. Quale forma di autofagia è compromessa?"
+  en: "A 21-year-old woman has chronic diarrhea, weight loss and a perianal fistula; an ileal biopsy shows transmural inflammation with non-necrotizing granulomas. Genetic testing reveals variants in two autophagy genes needed to clear bacteria that have entered cells. Which form of autophagy is impaired?"
+options:
+  - id: a
+    text:
+      it: "Xenofagia"
+      en: "Xenophagy"
+    correct: true
+    why:
+      it: "Corretto. La xenofagia è una macroautofagia selettiva diretta contro i microrganismi intracellulari. Varianti di due geni dell'autofagia che la sostengono aumentano il rischio di malattia di Crohn: i batteri vengono eliminati peggio e aumenta la produzione di molecole pro-infiammatorie."
+      en: "Correct. Xenophagy is a selective macroautophagy aimed at intracellular microbes. Variants in two autophagy genes that support it raise the risk of Crohn disease: bacteria are cleared less well and more pro-inflammatory molecules are made."
+  - id: b
+    text:
+      it: "Autofagia mediata da chaperoni (CMA)"
+      en: "Chaperone-mediated autophagy (CMA)"
+    correct: false
+    why:
+      it: "La CMA trasporta singole proteine, scortate da un chaperone come Hsc70, attraverso il recettore lisosomiale LAMP-2A senza vescicole: non può accogliere un batterio intero."
+      en: "CMA moves single proteins, escorted by a chaperone such as Hsc70, across the lysosomal receptor LAMP-2A without a vesicle; it cannot take up a whole bacterium."
+  - id: c
+    text:
+      it: "Microautofagia"
+      en: "Microautophagy"
+    correct: false
+    why:
+      it: "Nella microautofagia la membrana lisosomiale si invagina e ingloba direttamente piccole porzioni di citosol; è in gran parte costitutiva e serve al ricambio di membrane e organelli, non all'eliminazione mirata dei microrganismi."
+      en: "In microautophagy the lysosomal membrane folds inward and swallows small bits of cytosol directly; it is largely constitutive and serves membrane and organelle turnover, not targeted removal of microbes."
+  - id: d
+    text:
+      it: "Mitofagia"
+      en: "Mitophagy"
+    correct: false
+    why:
+      it: "La mitofagia è anch'essa selettiva, ma il suo bersaglio sono i mitocondri danneggiati, non i batteri."
+      en: "Mitophagy is also selective, but its target is damaged mitochondria, not bacteria."
+  - id: e
+    text:
+      it: "Degradazione dei batteri da parte del sistema ubiquitina-proteasoma"
+      en: "Degradation of bacteria by the ubiquitin–proteasome system"
+    correct: false
+    why:
+      it: "Non è una forma di autofagia, e il proteasoma digerisce singole proteine: batteri, organelli e aggregati sono troppo grandi e vengono smaltiti dall'autofagia."
+      en: "This is not a form of autophagy, and the proteasome digests single proteins: bacteria, organelles and aggregates are too large and are handled by autophagy."
+backLink: { entity: autophagy, section: clinical }
+claims:
+  - autophagy-c012
+  - autophagy-c013
+  - autophagy-c014
+  - autophagy-c015
+  - autophagy-c029
+  - autophagy-c045
+  - autophagy-c051
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

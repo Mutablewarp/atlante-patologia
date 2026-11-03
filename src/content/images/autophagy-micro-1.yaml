@@ -1,0 +1,63 @@
+id: autophagy-micro-1
+file: autophagy-micro-1.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Autophagy_in_plants.jpg
+author: Géraldine Mitou, Hikmet Budak, Devrim Gozuacik
+license: CC-BY-3.0
+licenseUrl: https://creativecommons.org/licenses/by/3.0/
+retrievedAt: 2026-10-10
+modifications: "White border (20 px on each side) trimmed from the 600 × 424 px Commons original, giving 560 × 384 px, and re-encoded as JPEG. The arrow and arrowhead belong to the published figure."
+attributionText: "Géraldine Mitou, Hikmet Budak and Devrim Gozuacik (Int J Plant Genomics 2009, article 451357, fig. 2b), via Wikimedia Commons, CC BY 3.0"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: transmission electron microscopy (TEM)
+magnification: ultrastructural (high power)
+caption:
+  it: >-
+    Un autofagosoma colto sul fatto, al microscopio elettronico a trasmissione (rene di topo trattato con
+    tunicamicina, una sostanza che provoca stress del reticolo endoplasmatico). Parti dal quadro d'insieme: il fondo
+    grigio e granulare è il citoplasma, i corpi scuri e allungati con sottili striature interne sono mitocondri. Poi
+    cerca quello al centro, indicato dalla punta di freccia: a differenza dei vicini è chiuso in un sottile anello
+    chiaro delimitato da due membrane parallele (freccia). Questo involucro a doppia membrana è il segno distintivo
+    dell'autofagosoma: il fagoforo si è richiuso attorno a una porzione di citoplasma, qui un intero mitocondrio con
+    un po' di citosol, e la isola per consegnarla al lisosoma. Quando il bersaglio è un mitocondrio si parla di
+    mitofagia. Il passo successivo, che qui non si vede, è la fusione con un lisosoma: si forma un autolisosoma, il
+    cui contenuto viene digerito, e ciò che non si digerisce può restare come corpo residuo (lipofuscina).
+    All'ematossilina-eosina l'autofagia di solito non si riconosce: per dimostrarla servono la microscopia
+    elettronica o marcatori come LC3.
+  en: >-
+    An autophagosome caught in the act, seen by transmission electron microscopy (mouse kidney after tunicamycin, a
+    drug that causes endoplasmic reticulum stress). Begin with the overall view: the grey, granular background is
+    cytoplasm, and the dark, elongated bodies with fine internal striations are mitochondria. Then find the one in
+    the centre, marked by the arrowhead: unlike its neighbours, it sits inside a thin pale ring bounded by two
+    parallel membranes (arrow). That double-membrane envelope is the hallmark of an autophagosome: the phagophore has
+    closed around a portion of cytoplasm, here a whole mitochondrion with some cytosol, and isolates it for delivery
+    to a lysosome. When the cargo is a mitochondrion the process is called mitophagy. The next step, not shown here,
+    is fusion with a lysosome to form an autolysosome, whose contents are digested; whatever cannot be digested may
+    remain as a residual body (lipofuscin). Autophagy is usually not recognisable on H&E: electron microscopy or
+    markers such as LC3 are needed to demonstrate it.
+alt:
+  it: >-
+    Micrografia elettronica in bianco e nero: al centro un grande mitocondrio scuro e allungato è racchiuso da un
+    sottile bordo chiaro delimitato da due membrane parallele; una punta di freccia nera a sinistra indica il
+    mitocondrio e una freccia nera in basso indica la doppia membrana; intorno, altri mitocondri e piccole vescicole
+    nel citoplasma grigio.
+  en: >-
+    Black-and-white electron micrograph: in the centre a large, dark, elongated mitochondrion is enclosed by a thin
+    pale rim bounded by two parallel membranes; a black arrowhead on the left points to the mitochondrion and a black
+    arrow at the bottom points to the double membrane; other mitochondria and small vesicles lie in the surrounding
+    grey cytoplasm.
+annotations:
+  - id: autophagosome-double-membrane
+    label: { it: Doppia membrana dell'autofagosoma, en: Double membrane of the autophagosome }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.730, 0.290, 0.790, 0.330, 0.815, 0.450, 0.800, 0.600, 0.760, 0.670, 0.740, 0.640, 0.775, 0.580, 0.790, 0.450, 0.770, 0.360, 0.720, 0.315]
+  - id: engulfed-mitochondrion
+    label: { it: Mitocondrio sequestrato (mitofagia), en: Engulfed mitochondrion (mitophagy) }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.120, 0.450, 0.200, 0.380, 0.300, 0.340, 0.380, 0.310, 0.450, 0.300, 0.550, 0.320, 0.620, 0.310, 0.700, 0.310, 0.740, 0.350, 0.770, 0.450, 0.760, 0.560, 0.700, 0.620, 0.600, 0.590, 0.500, 0.560, 0.420, 0.600, 0.350, 0.650, 0.300, 0.620, 0.250, 0.570, 0.200, 0.520]

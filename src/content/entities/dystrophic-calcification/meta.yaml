@@ -1,0 +1,161 @@
+id: dystrophic-calcification
+module: g01
+tier: core
+kind: process
+names:
+  it: "Calcificazione distrofica"
+  en: "Dystrophic calcification"
+  eponyms: []
+  synonyms:
+    it: ["Mineralizzazione distrofica", "Calcificazione eterotopica (di tipo distrofico)"]
+    en: ["Dystrophic mineralization", "Heterotopic calcification (dystrophic type)"]
+  abbreviations: []
+summary:
+  it: "Deposito extracellulare di sali di calcio in tessuti danneggiati o necrotici, con metabolismo del calcio e calcemia normali."
+  en: "Extracellular deposition of calcium salts in injured or necrotic tissue, with normal calcium metabolism and normal serum calcium."
+lenses:
+  system: [general, vessels, heart, breast]
+  process: [pathologic-calcification, extracellular-accumulation, cell-death, necrosis]
+  pattern: [dystrophic-calcification]
+  presentation: [incidental-finding, mass-lesion]
+  marker: [special-stains, von-kossa, calcium-phosphate]
+  group: [degenerative]
+learningObjectives:
+  - it: "Definire la calcificazione distrofica e distinguerla dalla calcificazione metastatica per causa, sede e valori di calcemia."
+    en: "Define dystrophic calcification and distinguish it from metastatic calcification by cause, site and serum calcium."
+  - it: "Spiegare come le membrane di cellule morte o morenti forniscano acidi grassi che legano il calcio e ne innescano la precipitazione."
+    en: "Explain how the membranes of dead or dying cells supply fatty acids that bind calcium and start its precipitation."
+  - it: "Elencare i contesti tipici: necrosi caseosa tubercolare, steatonecrosi, ateromi, valvole cardiache, infarti renali, necrosi tumorale, corpi psammomatosi."
+    en: "List the typical settings: tuberculous caseous necrosis, fat necrosis, atheromas, heart valves, renal infarcts, tumor necrosis, psammoma bodies."
+  - it: "Riconoscere il calcio all'ematossilina-eosina (depositi basofili) e con la colorazione di von Kossa (depositi neri)."
+    en: "Recognize calcium on H&E (basophilic deposits) and with the von Kossa stain (black)."
+  - it: "Discutere quando la calcificazione distrofica è clinicamente silente e quando causa malattia, come nella stenosi aortica calcifica."
+    en: "Discuss when dystrophic calcification is clinically silent and when it causes disease, as in calcific aortic stenosis."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: metastatic-calcification
+    note:
+      it: "Stesso deposito di sali di calcio: nella forma distrofica in un tessuto danneggiato con calcemia normale, nella metastatica in un tessuto sano per un aumento del prodotto calcio-fosforo (ipercalcemia e/o iperfosfatemia)."
+      en: "Same calcium salt deposit: damaged tissue with normal serum calcium versus healthy tissue with a raised calcium-phosphate product (hypercalcemia and/or hyperphosphatemia)."
+  - type: complicationOf
+    target: caseous-necrosis
+    note:
+      it: "I focolai caseosi tubercolari del polmone e dei linfonodi calcificano spesso."
+      en: "Tuberculous caseous foci in lung and lymph nodes often calcify."
+  - type: complicationOf
+    target: fat-necrosis
+    note:
+      it: "Gli acidi grassi liberati legano il calcio formando saponi; nella mammella il focolaio calcificato può simulare un tumore."
+      en: "Released fatty acids bind calcium as soaps; in the breast the calcified focus can mimic a tumor."
+  - type: complicationOf
+    target: coagulative-necrosis
+    note:
+      it: "Gli infarti di vecchia data, per esempio renali, possono andare incontro a calcificazione distrofica."
+      en: "Old infarcts, for example in the kidney, may undergo dystrophic calcification."
+  - type: complicationOf
+    target: atherosclerosis
+    note:
+      it: "Le placche aterosclerotiche calcificate irrigidiscono la parete arteriosa."
+      en: "Calcified atherosclerotic plaques stiffen the arterial wall."
+quickCheck:
+  - id: dystrophic-calcification-q1
+    q:
+      it: "Qual è la calcemia tipica nella calcificazione distrofica, e perché?"
+      en: "What is the typical serum calcium in dystrophic calcification, and why?"
+    a:
+      it: "Normale: il deposito è innescato da un danno tissutale locale, non da un disturbo del metabolismo del calcio."
+      en: "Normal: deposition is triggered by local tissue injury, not by a disorder of calcium metabolism."
+    kind: short
+  - id: dystrophic-calcification-q2
+    q:
+      it: "Che aspetto ha il calcio in ematossilina-eosina e quale colorazione speciale lo evidenzia in nero?"
+      en: "What does calcium look like on H&E, and which special stain shows it black?"
+    a:
+      it: "Depositi amorfi basofili (blu-viola intenso); la colorazione di von Kossa li colora di nero."
+      en: "Amorphous basophilic (deep blue-purple) deposits; the von Kossa stain colors them black."
+    kind: short
+  - id: dystrophic-calcification-q3
+    q:
+      it: "Che cosa sono i corpi psammomatosi e in quali tumori si trovano?"
+      en: "What are psammoma bodies and in which tumors are they found?"
+    a:
+      it: "Piccole calcificazioni distrofiche sferiche a lamelle concentriche; tipiche del carcinoma papillare della tiroide, del carcinoma sieroso ovarico di basso grado e del meningioma."
+      en: "Small spherical, concentrically laminated dystrophic calcifications; typical of papillary thyroid carcinoma, low-grade serous ovarian carcinoma and meningioma."
+    kind: short
+  - id: dystrophic-calcification-q4
+    q:
+      it: "Perché la calcificazione di una valvola aortica è un problema, mentre quella di un linfonodo tubercolare di solito no?"
+      en: "Why is calcification of an aortic valve a problem, while calcification of a tuberculous lymph node usually is not?"
+    a:
+      it: "Perché la valvola deve restare flessibile: le cuspidi calcificate e rigide non si aprono del tutto e ostacolano il flusso; il linfonodo calcificato non ha una funzione meccanica da perdere."
+      en: "Because the valve must stay flexible: rigid calcified cusps cannot open fully and obstruct flow; a calcified lymph node has no mechanical function to lose."
+    kind: free
+selfExplain:
+  - it: "Perché le cellule morte accumulano calcio mentre quelle vive mantengono un gradiente di calcio così marcato?"
+    en: "Why do dead cells take up calcium while living cells maintain such a large calcium gradient?"
+  - it: "Perché la calcificazione della valvola aortica è considerata un processo attivo e non un semplice deposito passivo su tessuto morto?"
+    en: "Why is aortic valve calcification considered an active process rather than passive mineral deposition on dead tissue?"
+  - it: "Come mai le microcalcificazioni lineari e ramificate alla mammografia fanno sospettare un carcinoma duttale in situ?"
+    en: "Why do linear, branching microcalcifications on mammography raise suspicion of ductal carcinoma in situ?"
+chain:
+  - pathology:
+      it: "Calcificazione distrofica delle cuspidi aortiche (stenosi aortica calcifica)"
+      en: "Dystrophic calcification of the aortic cusps (calcific aortic stenosis)"
+    sign:
+      it: "Paziente anziano, di solito oltre i 60 anni, con ipertrofia concentrica del ventricolo sinistro"
+      en: "Older patient, usually over 60, with concentric left ventricular hypertrophy"
+    lab:
+      it: "Calcemia normale; all'imaging valvola calcificata con apertura ridotta"
+      en: "Normal serum calcium; imaging shows a calcified valve that opens poorly"
+  - pathology:
+      it: "Calcificazione distrofica della necrosi intraduttale (carcinoma duttale in situ di tipo comedonico)"
+      en: "Dystrophic calcification of intraductal necrosis (comedo-type ductal carcinoma in situ)"
+    sign:
+      it: "Spesso asintomatico; riscontro allo screening"
+      en: "Often no symptoms; found at screening"
+    lab:
+      it: "Mammografia: microcalcificazioni lineari e ramificate"
+      en: "Mammography: linear, branching microcalcifications"
+images:
+  - id: dystrophic-calcification-gross-1
+    role: gross
+    pairWith: dystrophic-calcification-micro-1
+  - id: dystrophic-calcification-micro-1
+    role: micro
+  - id: dystrophic-calcification-micro-2
+    role: micro
+  - id: g01-calcification-types
+    role: diagram
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "1"
+    pages: "29-30, 39-40"
+  - source: rubin-8e
+    chapter: "16"
+    pages: "617-618"
+  - source: rubin-8e
+    chapter: "17"
+    pages: "671-672"
+  - source: rubin-8e
+    chapter: "22"
+    pages: "954-955, 962, 964-965"
+  - source: rubin-8e
+    chapter: "24"
+    pages: "1061"
+  - source: rubin-8e
+    chapter: "25"
+    pages: "1077, 1089"
+  - source: rubin-8e
+    chapter: "27"
+    pages: "1217"
+  - source: rubin-8e
+    chapter: "30"
+    pages: "1346-1348, 1396"
+  - source: rubin-8e
+    chapter: "32"
+    pages: "1513"
+lastUpdated: 2026-11-03
+status: published

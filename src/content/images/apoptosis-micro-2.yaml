@@ -1,0 +1,68 @@
+id: apoptosis-micro-2
+file: apoptosis-micro-2.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Burkitt_lymphoma,_H%26E.jpg
+author: Ed Uthman
+license: CC-BY-2.0
+licenseUrl: https://creativecommons.org/licenses/by/2.0/
+retrievedAt: 2026-10-10
+modifications: >-
+  Re-encoded as JPEG (quality 85) to keep the file under 600 KB and to strip the camera EXIF metadata; no crop, no
+  resize (1024 × 768 px), no colour change.
+attributionText: >-
+  Ed Uthman, "Burkitt lymphoma, H&E" (Flickr), via Wikimedia Commons, CC BY 2.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+# License check (2026-10-10): Commons file page metadata gives CC BY 2.0, artist Ed Uthman. The file was transferred
+# from the creator's own Flickr account (photo 144136195) and the licence was confirmed by the Flickr review bot
+# (FlickreviewR, status passed, 2019-12-08).
+stain: H&E
+magnification: high power
+caption:
+  it: >-
+    Linfoma di Burkitt, EE a forte ingrandimento: l'aspetto a "cielo stellato", un luogo classico per vedere
+    l'apoptosi su larga scala. Guarda prima il "cielo": un tappeto uniforme di cellule linfoidi tumorali di taglia
+    media, fittamente stipate, con nuclei rotondi e un sottile orlo di citoplasma viola intenso. Poi cerca le "stelle":
+    grandi cellule chiare, sparse, con citoplasma abbondante e pallido che contiene frammenti nucleari rotondi e scuri.
+    Sono macrofagi a corpi tingibili che hanno fagocitato cellule tumorali morte per apoptosi. Nel linfoma di Burkitt,
+    sostenuto dall'attivazione di MYC, le cellule proliferano molto in fretta e allo stesso tempo molte muoiono per
+    apoptosi; i fagociti le rimuovono senza alcuna reazione infiammatoria: niente neutrofili, niente laghi di detriti
+    necrotici. Gli stessi macrofagi si trovano normalmente nei centri germinativi reattivi, dove i linfociti B che non
+    superano la selezione muoiono per apoptosi. Da ricordare: l'apoptosi è silenziosa e la sua unica traccia è il
+    macrofago carico di frammenti.
+  en: >-
+    Burkitt lymphoma, H&E at high power: the "starry sky" pattern, a classic place to see apoptosis on a large scale.
+    Look first at the "sky": a uniform carpet of medium-sized lymphoid tumour cells, tightly packed, with round nuclei
+    and a thin rim of deep purple cytoplasm. Then look for the "stars": large, scattered clear cells with abundant pale
+    cytoplasm that holds round, dark nuclear fragments. These are tingible-body macrophages that have engulfed tumour
+    cells killed by apoptosis. In Burkitt lymphoma, driven by MYC activation, the cells proliferate very fast and at
+    the same time many of them die by apoptosis; phagocytes clear them without any inflammatory reaction: no
+    neutrophils, no lakes of necrotic debris. The same macrophages are normally found in reactive germinal centres,
+    where B cells that fail selection die by apoptosis. Key point: apoptosis is silent, and its only trace is the
+    macrophage loaded with fragments.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina di un tappeto fitto e uniforme di piccole cellule rotonde viola scuro,
+    interrotto da alcune grandi cellule chiare sparse che contengono granuli rotondi scuri; un sottile vaso rosa
+    attraversa il campo in orizzontale.
+  en: >-
+    H&E micrograph of a dense, uniform carpet of small, round, dark purple cells, broken by a few large, scattered
+    clear cells that contain round dark granules; a thin pink vessel crosses the field horizontally.
+annotations:
+  - id: tumour-cell-sheet
+    label: { it: "Cellule tumorali uniformi: il \"cielo\"", en: "Uniform tumour cells: the \"sky\"" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.02, 0.02, 0.30, 0.02, 0.30, 0.20, 0.02, 0.20] }
+  - id: tingible-body-macrophage-centre
+    label: { it: "Macrofago a corpi tingibili: una \"stella\"", en: "Tingible-body macrophage: a \"star\"" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.410, 0.245, 0.472, 0.245, 0.472, 0.348, 0.410, 0.348] }
+  - id: tingible-body-macrophage-right
+    label: { it: Macrofago con frammenti nucleari fagocitati, en: Macrophage with engulfed nuclear fragments }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.932, 0.245, 0.992, 0.245, 0.992, 0.335, 0.932, 0.335] }
+  - id: tingible-body-macrophage-lower
+    label: { it: Altro macrofago a corpi tingibili, en: Another tingible-body macrophage }
+    revealOrder: 4
+    shape: { type: polygon, coords: [0.163, 0.780, 0.228, 0.780, 0.228, 0.885, 0.163, 0.885] }

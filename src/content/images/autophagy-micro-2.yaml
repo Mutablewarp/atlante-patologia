@@ -1,0 +1,69 @@
+id: autophagy-micro-2
+file: autophagy-micro-2.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Mitophagy_purkinje_cell.jpg
+author: Lisa Chakrabarti, Jeremiah Eng, Nishi Ivanov, Gwenn A. Garden, Albert R. La Spada
+license: CC-BY-2.0
+licenseUrl: https://creativecommons.org/licenses/by/2.0/
+retrievedAt: 2026-10-10
+modifications: "none (600 × 617 px original as uploaded to Wikimedia Commons; panel letters, arrows, asterisks and boxes belong to the published figure)"
+attributionText: "Chakrabarti L, Eng J, Ivanov N, Garden GA, La Spada AR (Mol Brain 2009;2:24, fig. 3), via Wikimedia Commons, CC BY 2.0"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: transmission electron microscopy (TEM)
+magnification: ultrastructural; C and D enlarge the boxed areas of B (scale bars 1 µm)
+caption:
+  it: >-
+    Autofagia e mitofagia in neuroni che stanno degenerando: corpo cellulare delle cellule di Purkinje del cervelletto
+    al microscopio elettronico, in topi di 18 giorni. (A) è un topo normale; (B–D) un topo mutante pcd, le cui
+    cellule di Purkinje vanno poi incontro a morte. Confronta prima A e B a piccolo ingrandimento: in A il citoplasma è
+    granulare e uniforme, con mitocondri piccoli e cisterne del reticolo ordinate; in B è affollato da mitocondri
+    ingranditi (frecce nere spesse), reticolo endoplasmatico dilatato e quasi privo di ribosomi (frecce bianche) e
+    numerosi vacuoli (frecce sottili). Poi passa agli ingrandimenti C e D, che corrispondono ai riquadri di B: i
+    vacuoli autofagici sono rotondi, delimitati da membrana e contengono materiale chiaro o detriti citoplasmatici
+    scuri; alcuni (asterischi) racchiudono un mitocondrio ancora riconoscibile, cioè mitofagia. Il messaggio per
+    l'esame: l'aumento dei vacuoli autofagici indica una cellula sotto stress che cerca di eliminare organuli
+    danneggiati; accompagna il danno e può precedere la morte cellulare, ma da solo non dice se l'autofagia stia
+    proteggendo la cellula o contribuendo a ucciderla.
+  en: >-
+    Autophagy and mitophagy in degenerating neurons: cell bodies of cerebellar Purkinje cells seen by electron
+    microscopy in 18-day-old mice. (A) is a normal mouse; (B–D) a pcd mutant mouse, whose Purkinje cells later die.
+    Compare A and B at low power first: in A the cytoplasm is evenly granular, with small mitochondria and orderly
+    reticulum cisterns; in B it is crowded with enlarged mitochondria (thick black arrows), dilated endoplasmic
+    reticulum largely stripped of ribosomes (white arrows) and many vacuoles (thin arrows). Then move to the
+    enlargements C and D, which correspond to the boxes in B: autophagic vacuoles are round, membrane-bound and hold
+    either pale material or dark cytoplasmic debris; some (asterisks) contain a still recognisable mitochondrion,
+    that is, mitophagy. The point for the exam: more autophagic vacuoles mean a stressed cell trying to clear damaged
+    organelles; this accompanies injury and may precede cell death, but on its own it does not tell whether autophagy
+    is protecting the cell or helping to kill it.
+alt:
+  it: >-
+    Figura in bianco e nero di microscopia elettronica in quattro pannelli. A: citoplasma grigio, fine e uniforme con
+    pochi piccoli mitocondri. B: citoplasma con molti mitocondri scuri e rotondi, vacuoli chiari e frecce nere e
+    bianche, con due riquadri marcati C e D. C e D: ingrandimenti con vacuoli rotondi a contenuto chiaro o scuro,
+    indicati da frecce, e due mitocondri dentro vacuoli segnati da asterischi.
+  en: >-
+    Four-panel black-and-white electron micrograph figure. A: grey, fine, uniform cytoplasm with a few small
+    mitochondria. B: cytoplasm with many dark round mitochondria, pale vacuoles and black and white arrows, with two
+    boxes labelled C and D. C and D: enlargements showing round vacuoles with pale or dark contents, marked by
+    arrows, and two mitochondria inside vacuoles marked by asterisks.
+annotations:
+  - id: normal-purkinje-cytoplasm
+    label: { it: Controllo normale (A), en: Normal control (A) }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.010, 0.010, 0.490, 0.010, 0.490, 0.610, 0.010, 0.610]
+  - id: mitochondrion-in-autophagic-vacuole
+    label: { it: Mitocondrio dentro un vacuolo autofagico, en: Mitochondrion inside an autophagic vacuole }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.775, 0.655, 0.830, 0.645, 0.865, 0.680, 0.860, 0.735, 0.815, 0.755, 0.780, 0.725]
+  - id: small-mitophagic-vacuole
+    label: { it: Piccolo vacuolo con mitocondrio, en: Small vacuole holding a mitochondrion }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.135, 0.660, 0.165, 0.650, 0.190, 0.675, 0.185, 0.710, 0.155, 0.720, 0.135, 0.700]

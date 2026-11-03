@@ -1,0 +1,142 @@
+id: hypoxic-ischemic-injury
+module: g01
+tier: core
+kind: process
+names:
+  it: "Danno cellulare ipossico-ischemico"
+  en: "Hypoxic–ischemic cell injury"
+  eponyms: []
+  synonyms:
+    it: ["Danno ischemico", "Danno ipossico", "Morte cellulare ischemica", "Necrosi ischemica"]
+    en: ["Ischemic cell injury", "Hypoxic cell injury", "Ischemic cell death", "Ischemic necrosis"]
+  abbreviations: []
+summary:
+  it: "Danno da carenza di ossigeno e di flusso ematico: la caduta dell'ATP altera l'equilibrio ionico, il sovraccarico di calcio distrugge le membrane e il danno, se prolungato, evolve in necrosi."
+  en: "Injury from lack of oxygen and blood flow: falling ATP upsets ion balance, calcium overload destroys membranes and, if prolonged, the damage ends in necrosis."
+lenses:
+  system: [general, heart, cns]
+  process: [cell-injury, hypoxic-ischemic-injury, reversible-injury, irreversible-injury, necrosis]
+  pattern: [cellular-swelling, necrosis-coagulative, nuclear-changes]
+  presentation: [ischemic-event, chest-pain]
+  marker: [necrosis-serum-markers]
+  group: [vascular]
+learningObjectives:
+  - it: "Descrivere in sequenza gli eventi biochimici del danno ischemico: deplezione di ATP, acidosi, accumulo di sodio, sovraccarico di calcio, danno di membrana e mitocondriale."
+    en: "Describe in order the biochemical events of ischemic injury: ATP depletion, acidosis, sodium loading, calcium overload, membrane and mitochondrial damage."
+  - it: "Distinguere le alterazioni morfologiche reversibili da quelle irreversibili, al microscopio ottico ed elettronico."
+    en: "Distinguish reversible from irreversible morphologic changes on light and electron microscopy."
+  - it: "Spiegare il ruolo centrale del calcio e del poro di transizione della permeabilità mitocondriale nel superamento del punto di non ritorno."
+    en: "Explain the central role of calcium and of the mitochondrial permeability transition pore in crossing the point of no return."
+  - it: "Collegare la durata dell'ischemia all'esito: recupero completo, morte durante la riperfusione o morte già durante l'ischemia."
+    en: "Relate the duration of ischemia to the outcome: full recovery, death during reperfusion or death during ischemia itself."
+prerequisites: []
+relations:
+  - type: causes
+    target: hydropic-swelling
+    note:
+      it: "Il cedimento della pompa Na+/K+ per mancanza di ATP fa entrare acqua nella cellula."
+      en: "Failure of the ATP-starved Na+/K+ pump lets water enter the cell."
+  - type: causes
+    target: coagulative-necrosis
+    note:
+      it: "Esito morfologico tipico dell'ischemia prolungata negli organi solidi."
+      en: "Typical morphologic outcome of prolonged ischemia in solid organs."
+  - type: causes
+    target: liquefactive-necrosis
+    note:
+      it: "Nel cervello la necrosi ischemica va rapidamente incontro a colliquazione."
+      en: "In the brain, ischemic necrosis rapidly liquefies."
+  - type: causes
+    target: infarction
+    note:
+      it: "L'infarto è l'area di necrosi ischemica a livello tissutale."
+      en: "An infarct is the tissue-level area of ischemic necrosis."
+  - type: prerequisiteOf
+    target: ischemia-reperfusion-injury
+    note:
+      it: "Il danno da riperfusione presuppone un precedente danno ischemico."
+      en: "Reperfusion injury presupposes prior ischemic damage."
+  - type: sharesMechanism
+    target: oxidative-injury
+    note:
+      it: "I mitocondri ischemici producono più specie reattive dell'ossigeno."
+      en: "Ischemic mitochondria generate more reactive oxygen species."
+  - type: differentialOf
+    target: apoptosis
+    note:
+      it: "Necrosi ischemica di gruppi di cellule, con infiammazione, a differenza della morte di singole cellule senza infiammazione."
+      en: "Ischemic necrosis of groups of cells with inflammation versus death of single cells without inflammation."
+quickCheck:
+  - id: hypoxic-ischemic-injury-q1
+    q:
+      it: "Qual è il primo evento biochimico del danno ischemico?"
+      en: "What is the first biochemical event in ischemic injury?"
+    a:
+      it: "La caduta dell'ATP, perché senza ossigeno si arresta la fosforilazione ossidativa mitocondriale."
+      en: "The fall in ATP, because without oxygen mitochondrial oxidative phosphorylation stops."
+    kind: short
+  - id: hypoxic-ischemic-injury-q2
+    q:
+      it: "Attraverso quale scambiatore l'eccesso di sodio porta al sovraccarico di calcio?"
+      en: "Through which exchanger does excess sodium lead to calcium overload?"
+    a:
+      it: "Lo scambiatore Na+/Ca2+, che importa calcio mentre la pompa del calcio ATP-dipendente non riesce a espellerlo."
+      en: "The Na+/Ca2+ exchanger, which imports calcium while the ATP-dependent calcium pump cannot expel it."
+    kind: short
+  - id: hypoxic-ischemic-injury-q3
+    q:
+      it: "Quali reperti indicano che il danno è diventato irreversibile?"
+      en: "Which findings indicate that injury has become irreversible?"
+    a:
+      it: "Picnosi, carioressi o cariolisi, eosinofilia citoplasmatica, calcificazione dei mitocondri e interruzioni della membrana plasmatica."
+      en: "Pyknosis, karyorrhexis or karyolysis, cytoplasmic eosinophilia, mitochondrial calcification and breaks in the plasma membrane."
+    kind: short
+  - id: hypoxic-ischemic-injury-q4
+    q:
+      it: "Perché un aumento del calcio intracellulare danneggia le membrane?"
+      en: "Why does high intracellular calcium damage membranes?"
+    a:
+      it: "Attiva la fosfolipasi A2, che degrada i fosfolipidi in lisofosfolipidi ad azione detergente, e attiva proteasi che staccano il citoscheletro dalla membrana."
+      en: "It activates phospholipase A2, which breaks phospholipids into detergent-like lysophospholipids, and proteases that detach the cytoskeleton from the membrane."
+    kind: free
+selfExplain:
+  - it: "Perché cardiomiociti e neuroni sono le cellule più vulnerabili all'ischemia?"
+    en: "Why are cardiac myocytes and neurons the cells most vulnerable to ischemia?"
+  - it: "In che modo lo scambiatore Na+/H+, attivato per difendere il pH, finisce per aggravare il danno?"
+    en: "How does the Na+/H+ exchanger, switched on to defend pH, end up worsening the injury?"
+  - it: "Perché il rigonfiamento dei mitocondri è reversibile mentre la loro calcificazione indica morte cellulare?"
+    en: "Why is mitochondrial swelling reversible, whereas mitochondrial calcification signals cell death?"
+chain:
+  - pathology:
+      it: "Necrosi ischemica dei cardiomiociti con rottura della membrana"
+      en: "Ischemic necrosis of cardiac myocytes with membrane rupture"
+    sign:
+      it: "Dolore toracico prolungato"
+      en: "Prolonged chest pain"
+    lab:
+      it: "Aumento della troponina cardiaca (I o T) nel siero"
+      en: "Rise in serum cardiac troponin (I or T)"
+images:
+  - id: hypoxic-ischemic-injury-gross-1
+    role: gross
+    pairWith: hypoxic-ischemic-injury-micro-1
+  - id: hypoxic-ischemic-injury-micro-1
+    role: micro
+  - id: hypoxic-ischemic-injury-micro-2
+    role: micro
+  - id: g01-cell-injury-timeline
+    role: diagram
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "1"
+    pages: "3-4, 38-45"
+  - source: rubin-8e
+    chapter: "7"
+    pages: "337"
+  - source: rubin-8e
+    chapter: "17"
+    pages: "655, 659-660"
+lastUpdated: 2026-11-03
+status: published

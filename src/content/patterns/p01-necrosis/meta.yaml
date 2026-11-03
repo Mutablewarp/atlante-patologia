@@ -1,0 +1,127 @@
+id: p01-necrosis
+names:
+  it: "Tipi di necrosi"
+  en: "Types of necrosis"
+summary:
+  it: "Confronto fra necrosi coagulativa, colliquativa, caseosa, adiposa (steatonecrosi), fibrinoide e gangrena: organi e contesti tipici, meccanismo, aspetto macroscopico e microscopico, evoluzione."
+  en: "Side-by-side comparison of coagulative, liquefactive, caseous, fat and fibrinoid necrosis and gangrene: typical organs and settings, mechanism, gross and microscopic appearance, outcome."
+process: necrosis
+matrix:
+  columns:
+    - it: "Tipo di necrosi"
+      en: "Type of necrosis"
+    - it: "Organi e contesti tipici"
+      en: "Typical organs and settings"
+    - it: "Meccanismo"
+      en: "Mechanism"
+    - it: "Aspetto macroscopico"
+      en: "Gross appearance"
+    - it: "Aspetto microscopico"
+      en: "Microscopic appearance"
+    - it: "Evoluzione tipica"
+      en: "Typical outcome"
+  rows:
+    - entity: coagulative-necrosis
+      cells:
+        - it: "Infarti di cuore, rene e milza; necrosi corticale renale nello shock; necrosi papillare da analgesici; gangrena secca degli arti"
+          en: "Infarcts of heart, kidney and spleen; renal cortical necrosis in shock; papillary necrosis from analgesics; dry gangrene of a limb"
+        - it: "Ischemia da occlusione di un'arteria terminale (e altri danni); per un certo tempo le cellule morte non vengono digerite"
+          en: "Ischemia from end-artery occlusion (and other injuries); for a while the dead cells are not digested"
+        - it: "Area giallo-pallida ben delimitata con bordo rosso scuro; cuneiforme sotto la capsula nella milza"
+          en: "Sharply bounded pale-yellow area with a dark-red border; wedge-shaped under the capsule in the spleen"
+        - it: "Cellule fantasma: profili e architettura conservati, citoplasma intensamente eosinofilo, picnosi, carioressi, cariolisi"
+          en: "Ghost cells: outlines and architecture preserved, deeply eosinophilic cytoplasm, pyknosis, karyorrhexis, karyolysis"
+        - it: "Neutrofili e poi macrofagi dal margine vitale, tessuto di granulazione, cicatrice; possibile calcificazione distrofica"
+          en: "Neutrophils then macrophages from the living edge, granulation tissue, scar; may undergo dystrophic calcification"
+    - entity: liquefactive-necrosis
+      cells:
+        - it: "Ascessi batterici in qualunque organo solido; infarto e ascesso cerebrale; globi pallidi nell'intossicazione da monossido di carbonio"
+          en: "Bacterial abscesses in any solid organ; brain infarct and brain abscess; globus pallidus in carbon monoxide poisoning"
+        - it: "La digestione supera la riparazione: idrolasi dei neutrofili o, dopo un infarto cerebrale, enzimi propri del tessuto nervoso"
+          en: "Digestion outpaces repair: neutrophil hydrolases or, after a brain infarct, the nervous tissue's own enzymes"
+        - it: "Cavità con pus o liquido; nel cervello cisti dopo l'infarto"
+          en: "Cavity filled with pus or fluid; a cyst in the brain after infarction"
+        - it: "Neutrofili e detriti amorfi eosinofili in una cavità, senza profili cellulari; poi parete di granulazione e fibrosi (gliosi nel cervello)"
+          en: "Neutrophils and amorphous eosinophilic debris in a cavity, no cell outlines; later a wall of granulation tissue and fibrosis (gliosis in the brain)"
+        - it: "Ascesso circoscritto da capsula fibrosa; cisti cerebrale permanente; l'ascesso cerebrale non trattato può causare erniazione"
+          en: "Abscess walled off by a fibrous capsule; permanent brain cyst; an untreated brain abscess can cause herniation"
+    - entity: caseous-necrosis
+      cells:
+        - it: "Tubercolosi: focolaio e complesso di Ghon, caverne apicali, tubercolomi; più raramente altre infezioni"
+          en: "Tuberculosis: Ghon focus and complex, apical cavities, tuberculomas; less often other infections"
+        - it: "Risposta immunitaria mediata da linfociti T contro i micobatteri; implicati i lipidi cerosi della parete batterica"
+          en: "T-cell–mediated immune response to mycobacteria; the waxy lipids of the bacterial wall are implicated"
+        - it: "Materiale bianco-grigiastro, molle e friabile, simile a formaggio"
+          en: "Grey-white, soft, friable, cheese-like material"
+        - it: "Detriti eosinofili granulosi e amorfi senza profili cellulari, al centro di un granuloma (macrofagi epitelioidi, cellule giganti di Langhans, linfociti)"
+          en: "Amorphous granular eosinophilic debris without cell outlines, at the centre of a granuloma (epithelioid macrophages, Langhans giant cells, lymphocytes)"
+        - it: "Persiste a lungo; guarisce con fibrosi e calcificazione oppure si estende, escava caverne e si diffonde"
+          en: "Persists; heals by scarring and calcification, or enlarges, cavitates and spreads"
+    - entity: fat-necrosis
+      cells:
+        - it: "Grasso peripancreatico e mesenterico nella pancreatite acuta; mammella dopo un trauma; attorno a protesi in silicone rotte"
+          en: "Peripancreatic and mesenteric fat in acute pancreatitis; breast after trauma; around a ruptured silicone implant"
+        - it: "Le lipasi liberate scindono i trigliceridi; gli acidi grassi legano il calcio e formano saponi (saponificazione)"
+          en: "Released lipases split triglycerides; fatty acids bind calcium and form soaps (saponification)"
+        - it: "Focolai irregolari, gessosi, bianco-giallastri nel tessuto adiposo"
+          en: "Irregular chalky yellow-white foci in the fat"
+        - it: "Adipociti fantasma con depositi basofili amorfi di saponi di calcio ai margini; infiammazione, macrofagi schiumosi, cellule giganti"
+          en: "Ghost fat cells with amorphous basophilic calcium soaps at their edges; inflammation, foamy macrophages, giant cells"
+        - it: "Fibrosi e calcificazione distrofica; nodulo mammario che simula un carcinoma; ipocalcemia nella pancreatite acuta"
+          en: "Fibrosis and dystrophic calcification; breast lump mimicking carcinoma; low blood calcium in acute pancreatitis"
+    - entity: fibrinoid-necrosis
+      cells:
+        - it: "Pareti vasali: vasculiti da immunocomplessi e altre (poliarterite nodosa, granulomatosi eosinofila con poliangioite, vasculite cutanea), arteriole nell'ipertensione maligna, rigetto anticorpo-mediato"
+          en: "Vessel walls: immune-complex and other vasculitides (polyarteritis nodosa, eosinophilic granulomatosis with polyangiitis, cutaneous vasculitis), arterioles in malignant hypertension, antibody-mediated rejection"
+        - it: "Le proteine plasmatiche, fra cui la fibrina, penetrano in una parete vasale danneggiata"
+          en: "Plasma proteins, fibrin among them, leak into an injured vessel wall"
+        - it: "Si riconosce dagli effetti: porpora palpabile nella vasculite cutanea; rene screziato rosso-giallo con piccoli infarti nell'ipertensione maligna"
+          en: "Seen through its effects: palpable purpura in skin vasculitis; mottled red-yellow kidney with small infarcts in malignant hypertension"
+        - it: "Banda rosa intensa, omogenea e netta nella parete del vaso, spesso con infiammazione e trombosi"
+          en: "Sharply bounded, homogeneous, deep pink band in the vessel wall, often with inflammation and thrombosis"
+        - it: "Trombosi, rottura della parete con emorragia, aneurismi; piccoli infarti a valle"
+          en: "Thrombosis, wall rupture with hemorrhage, aneurysms; small infarcts downstream"
+    - entity: gangrene
+      cells:
+        - it: "Dita, piede e gamba (aterosclerosi, diabete); estremità distali nella vasculite grave; intestino; ferite contaminate (gangrena gassosa)"
+          en: "Toes, foot and leg (atherosclerosis, diabetes); distal limbs in severe vasculitis; bowel; contaminated wounds (gas gangrene)"
+        - it: "Necrosi ischemica di una grande massa di tessuto (secca), con sovrapposizione batterica (umida) o da tossina clostridica (gassosa)"
+          en: "Ischemic necrosis of a large tissue mass (dry), with superimposed infection (wet) or from clostridial toxin (gas)"
+        - it: "Secca: grande infarto pallido nettamente separato dal tessuto vivo; gassosa: cute tesa e scura sopra tessuti edematosi con gas"
+          en: "Dry: large pale infarct sharply separated from living tissue; gas: tense, darkened skin over swollen, gas-filled tissue"
+        - it: "Soprattutto necrosi coagulativa; colliquazione con neutrofili se infetta; nella forma gassosa necrosi estesa con pochi neutrofili e bacilli Gram-positivi"
+          en: "Mostly coagulative necrosis; liquefaction with neutrophils if infected; in gas gangrene extensive necrosis with few neutrophils and Gram-positive rods"
+        - it: "Sbrigliamento chirurgico o amputazione; la gangrena gassosa può dare emolisi, shock e insufficienza renale"
+          en: "Debridement or amputation; gas gangrene can cause hemolysis, shock and renal failure"
+images:
+  - id: coagulative-necrosis-gross-1
+    entity: coagulative-necrosis
+  - id: liquefactive-necrosis-gross-1
+    entity: liquefactive-necrosis
+  - id: caseous-necrosis-micro-1
+    entity: caseous-necrosis
+  - id: fat-necrosis-micro-1
+    entity: fat-necrosis
+  - id: fibrinoid-necrosis-micro-1
+    entity: fibrinoid-necrosis
+  - id: gangrene-clinical-1
+    entity: gangrene
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - { source: rubin-8e, chapter: "1", pages: "29-30, 38-41" }
+  - { source: rubin-8e, chapter: "4", pages: "147, 149, 157-158" }
+  - { source: rubin-8e, chapter: "7", pages: "330, 337-338" }
+  - { source: rubin-8e, chapter: "8", pages: "365" }
+  - { source: rubin-8e, chapter: "9", pages: "417, 429, 451-452" }
+  - { source: rubin-8e, chapter: "13", pages: "539, 551" }
+  - { source: rubin-8e, chapter: "16", pages: "606, 620, 622" }
+  - { source: rubin-8e, chapter: "17", pages: "657" }
+  - { source: rubin-8e, chapter: "18", pages: "735-738" }
+  - { source: rubin-8e, chapter: "19", pages: "803, 837" }
+  - { source: rubin-8e, chapter: "21", pages: "903" }
+  - { source: rubin-8e, chapter: "22", pages: "951, 955, 961-962, 967" }
+  - { source: rubin-8e, chapter: "25", pages: "1076-1077" }
+  - { source: rubin-8e, chapter: "32", pages: "1465, 1468, 1490" }
+lastUpdated: 2026-11-03
+status: published

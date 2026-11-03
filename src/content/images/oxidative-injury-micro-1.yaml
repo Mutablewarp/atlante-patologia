@@ -1,0 +1,54 @@
+id: oxidative-injury-micro-1
+file: oxidative-injury-micro-1.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Myocardial_lipofuscin_(original).jpg
+author: Mikael Häggström, M.D.
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-10-10
+modifications: "Downscaled from the Wikimedia 1920 × 2560 px rendition to 1200 × 1600 px and re-encoded as JPEG (metadata stripped); no crop, no colour change."
+attributionText: "Mikael Häggström, M.D., via Wikimedia Commons, CC0 1.0 (public domain dedication)"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+caption:
+  it: >-
+    Lipofuscina nel miocardio, EE. È la traccia visibile del danno ossidativo cronico: un residuo di lipidi e proteine
+    perossidati che i lisosomi non riescono a digerire e che si accumula negli anni nelle cellule che non si dividono,
+    come i cardiomiociti e i neuroni. A piccolo ingrandimento guarda l'insieme: fibre cardiache tagliate in senso
+    longitudinale, rosse, separate da spazi chiari. Poi avvicinati e segui i nuclei: ai loro poli, in un alone fusiforme
+    più chiaro del sarcoplasma, si raccolgono granuli fini di colore bruno-giallastro. Il pigmento non danneggia la
+    cellula di per sé e non indica una malattia: aumenta con l'età ed è più evidente quando l'organo si atrofizza
+    (atrofia bruna del cuore). Attenzione a non confonderlo con l'emosiderina, che forma granuli più grossolani e si
+    colora di blu con il metodo di Perls.
+  en: >-
+    Lipofuscin in the myocardium, H&E. It is the visible trace of chronic oxidative injury: a residue of peroxidised
+    lipids and proteins that lysosomes cannot digest and that builds up over the years in cells that no longer divide,
+    such as cardiac myocytes and neurons. At low power, take in the whole field: cardiac fibres cut lengthwise, red,
+    separated by clear spaces. Then move closer and follow the nuclei: at their poles, in a paler spindle-shaped zone of
+    sarcoplasm, fine yellow-brown granules gather. The pigment does not harm the cell by itself and does not signal
+    disease: it increases with age and is more conspicuous when the organ shrinks (brown atrophy of the heart). Do not
+    mistake it for haemosiderin, which forms coarser granules and stains blue with Perls' method.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina di miocardio in un campo circolare su fondo nero: fibre muscolari rosse e striate,
+    disposte in fasci paralleli obliqui e separate da spazi chiari; accanto a molti nuclei viola si vedono piccoli aloni
+    allungati e chiari pieni di granuli bruni.
+  en: >-
+    H&E micrograph of myocardium in a circular field on a black background: red, striated muscle fibres arranged in
+    parallel oblique bundles and separated by clear spaces; next to many purple nuclei there are small, elongated pale
+    zones filled with brown granules.
+annotations:
+  - id: lipofuscin-nuclear-pole
+    label: { it: Granuli di lipofuscina al polo del nucleo, en: Lipofuscin granules at the nuclear pole }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.400, 0.516, 0.425, 0.510, 0.465, 0.514, 0.470, 0.528, 0.430, 0.536, 0.400, 0.530]
+  - id: lipofuscin-second-fibre
+    label: { it: Lipofuscina perinucleare in un'altra fibra, en: Perinuclear lipofuscin in another fibre }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.515, 0.502, 0.545, 0.498, 0.575, 0.503, 0.572, 0.516, 0.540, 0.519, 0.515, 0.514]

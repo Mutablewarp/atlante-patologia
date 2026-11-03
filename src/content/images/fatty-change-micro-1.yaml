@@ -1,0 +1,55 @@
+id: fatty-change-micro-1
+file: fatty-change-micro-1.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Histopathology_of_centrilobular_steatosis_of_the_liver.jpg
+author: Mikael Häggström, M.D.
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-10-10
+modifications: "Re-encoded as JPEG to reduce file size and to strip camera EXIF/GPS metadata; no crop, no resize, no colour change."
+attributionText: "Mikael Häggström, M.D., via Wikimedia Commons, CC0 1.0 (public domain dedication)"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: low power
+caption:
+  it: >-
+    Steatosi macrovescicolare centrolobulare (zona 3) del fegato, EE a piccolo ingrandimento. Prima di cercare le
+    cellule, guarda la distribuzione: i vacuoli bianchi, rotondi e a margini netti si raccolgono in chiazze attorno alle
+    vene centrolobulari, mentre il parenchima tra una chiazza e l'altra, verso gli spazi portali (aree rosa più fibrose),
+    resta compatto e rosa. Ogni vacuolo è lo spazio lasciato da una goccia di trigliceridi, sciolta dai solventi durante
+    l'allestimento: per questo appare vuoto. A forte ingrandimento le gocce grandi occupano quasi tutta la cellula e spingono il nucleo alla
+    periferia. Perché la zona 3? È la parte del lobulo più lontana dall'apporto di ossigeno e più ricca degli enzimi
+    che metabolizzano alcol e farmaci, quindi la più vulnerabile all'alcol, all'ipossia e ai disturbi metabolici. Attenzione: i buchi tondi e vuoti
+    indicano grasso; il rigonfiamento idropico dà invece un citoplasma pallido e sfilacciato senza vacuoli a stampo.
+  en: >-
+    Centrilobular (zone 3) macrovesicular steatosis of the liver, H&E at low power. Before looking at single cells, read
+    the distribution: the round, white, sharp-edged vacuoles gather in patches around the central veins, while the
+    parenchyma between patches, towards the portal tracts (the pinker, more fibrous areas), stays solid and pink. Each
+    vacuole is the space left by a triglyceride droplet dissolved by solvents during processing, which is why it looks
+    empty. At high
+    power the large droplets fill most of the cell and push the nucleus to the edge. Why zone 3? It is the part of the
+    lobule farthest from the oxygen supply and the richest in the enzymes that metabolise alcohol and drugs, so it is the
+    most vulnerable to alcohol, hypoxia and metabolic stress. Pitfall: round, empty, punched-out holes mean fat; hydropic swelling instead gives
+    pale, wispy cytoplasm without punched-out vacuoles.
+alt:
+  it: >-
+    Micrografia di fegato in ematossilina-eosina a piccolo ingrandimento: su fondo rosa compatto spiccano chiazze di
+    numerosi vacuoli bianchi e rotondi di varie dimensioni, una grande al centro e altre ai bordi dell'immagine, separate
+    da parenchima rosa senza vacuoli.
+  en: >-
+    Low-power H&E micrograph of liver: on a dense pink background stand out patches of many round white vacuoles of
+    varying size, one large patch in the centre and others at the edges of the image, separated by pink parenchyma
+    without vacuoles.
+annotations:
+  - id: centrilobular-steatosis
+    label: { it: Chiazza di steatosi attorno alla vena centrolobulare, en: Patch of steatosis around a central vein }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.48, 0.21, 0.67, 0.24, 0.77, 0.37, 0.75, 0.53, 0.66, 0.70, 0.52, 0.72, 0.38, 0.58, 0.38, 0.35]
+  - id: fat-free-parenchyma
+    label: { it: Parenchima senza vacuoli lipidici, en: Parenchyma without lipid vacuoles }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.16, 0.40, 0.33, 0.40, 0.33, 0.64, 0.16, 0.64] }

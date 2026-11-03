@@ -1,0 +1,55 @@
+id: g01-q-pigment-1
+module: g01
+entities: [pigment-accumulation, intracellular-accumulations, oxidative-injury]
+kind: mcq
+difficulty: 3
+tags: [intracellular-accumulation, pigment-accumulation]
+stem:
+  it: "Un uomo di 54 anni ha diabete, iperpigmentazione cutanea ed epatomegalia. Non ha mai ricevuto trasfusioni. La saturazione della transferrina è vicina al 100% e la ferritina sierica è molto aumentata. La biopsia epatica mostra una cirrosi micronodulare; granuli grossolani bruno-dorati riempiono gli epatociti e l'epitelio dei dotti biliari, mentre le cellule di Kupffer ne contengono poco. Con la colorazione di Perls i granuli diventano blu. Quale affermazione spiega meglio il quadro?"
+  en: "A 54-year-old man has diabetes, darkened skin and an enlarged liver. He has never received a blood transfusion. Transferrin saturation is close to 100% and serum ferritin is greatly increased. A liver biopsy shows micronodular cirrhosis; coarse golden-brown granules fill the hepatocytes and bile duct epithelium, while Kupffer cells contain little of them. With the Perls stain the granules turn blue. Which statement best explains the findings?"
+options:
+  - id: a
+    text:
+      it: "È lipofuscina, residuo di lipidi perossidati e proteine ossidate che si accumula con l'età."
+      en: "It is lipofuscin, a residue of peroxidized lipids and oxidized proteins that builds up with age."
+    correct: false
+    why:
+      it: "Errata. La lipofuscina forma fini granuli bruno-dorati nelle cellule longeve, ma non contiene ferro e quindi non si colora con il Perls. La positività al blu di Prussia indica ferro."
+      en: "Incorrect. Lipofuscin forms fine golden-brown granules in long-lived cells, but it contains no iron and so does not stain with Perls. Prussian blue positivity means iron."
+  - id: b
+    text:
+      it: "È ferro derivato da sangue trasfuso, captato per primo dalle cellule di Kupffer."
+      en: "It is iron derived from transfused blood, taken up first by Kupffer cells."
+    correct: false
+    why:
+      it: "Errata. Il paziente non è mai stato trasfuso. Nel sovraccarico secondario il ferro si deposita prima nelle cellule di Kupffer e solo dopo passa agli epatociti, e la cirrosi è rara; qui il ferro sta negli epatociti e nei dotti, con le Kupffer quasi risparmiate."
+      en: "Incorrect. The patient has never been transfused. In secondary overload iron lodges first in Kupffer cells and only later spills into hepatocytes, and cirrhosis is rare; here iron sits in hepatocytes and ducts, with Kupffer cells largely spared."
+  - id: c
+    text:
+      it: "Troppo poca epcidina lascia la ferroportina senza freno: l'assorbimento di ferro aumenta e il ferro libero invade le cellule parenchimali, che vengono danneggiate dallo stress ossidativo che esso genera."
+      en: "Too little hepcidin leaves ferroportin unchecked: iron absorption rises and free iron floods parenchymal cells, which are injured by the oxidant stress it generates."
+    correct: true
+    why:
+      it: "Corretta. È l'emocromatosi ereditaria: il difetto di epcidina aumenta l'assorbimento intestinale e il rilascio dai depositi, la transferrina si satura e il ferro libero si accumula negli epatociti e nei dotti biliari (le Kupffer solo tardi). Il ferro in eccesso alimenta la formazione di radicali e danneggia gli organi: cirrosi, diabete, iperpigmentazione cutanea."
+      en: "Correct. This is hereditary hemochromatosis: the hepcidin defect increases gut absorption and release from stores, transferrin saturates, and free iron accumulates in hepatocytes and bile ducts (Kupffer cells only late). The excess iron drives free-radical formation and damages organs: cirrhosis, diabetes, skin darkening."
+  - id: d
+    text:
+      it: "È un'emosiderosi: un aumento del ferro di deposito che per definizione non danneggia le cellule."
+      en: "It is hemosiderosis: an increase in stored iron that by definition does not injure cells."
+    correct: false
+    why:
+      it: "Errata. Il termine emosiderosi implica proprio l'assenza di danno cellulare. Qui il danno c'è ed è grave (cirrosi, diabete): è il tratto che distingue l'emocromatosi dall'emosiderosi."
+      en: "Incorrect. The term hemosiderosis implies precisely that the cells are not injured. Here there is serious damage (cirrhosis, diabetes): this is the feature that separates hemochromatosis from hemosiderosis."
+  - id: e
+    text:
+      it: "È il pigmento della sindrome di Dubin-Johnson, accumulato in lisosomi ingranditi."
+      en: "It is Dubin–Johnson pigment, stored in enlarged lysosomes."
+    correct: false
+    why:
+      it: "Errata. Il pigmento della Dubin-Johnson è scuro ma privo di ferro, quindi Perls-negativo, e il fegato non mostra altre lesioni istologiche, tanto meno una cirrosi."
+      en: "Incorrect. Dubin–Johnson pigment is dark but iron-free, and therefore Perls-negative, and the liver shows no other histologic lesion, let alone cirrhosis."
+backLink: { entity: pigment-accumulation, section: micro }
+claims: [pigment-accumulation-c018, pigment-accumulation-c019, pigment-accumulation-c029, pigment-accumulation-c034, pigment-accumulation-c035, pigment-accumulation-c039, pigment-accumulation-c040, pigment-accumulation-c044, pigment-accumulation-c045, pigment-accumulation-c048, pigment-accumulation-c056, pigment-accumulation-c058, pigment-accumulation-c060, pigment-accumulation-c070, intracellular-accumulations-c058]
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

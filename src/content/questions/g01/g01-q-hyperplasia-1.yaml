@@ -1,0 +1,55 @@
+id: g01-q-hyperplasia-1
+module: g01
+entities: [hyperplasia]
+kind: mcq
+difficulty: 2
+tags: [cellular-adaptation, hyperplasia]
+stem:
+  it: "Un uomo di 71 anni riferisce da due anni getto urinario sempre più debole e minzioni frequenti. All'esplorazione rettale la prostata è aumentata di volume, di consistenza duro-elastica e nodulare. Quale affermazione descrive meglio la patogenesi dell'ingrossamento prostatico?"
+  en: "A 71-year-old man has had a progressively weaker urinary stream and frequent urination for two years. On digital rectal examination the prostate is enlarged, firm and nodular. Which statement best describes how the prostatic enlargement develops?"
+options:
+  - id: a
+    text:
+      it: "Il diidrotestosterone, prodotto dal testosterone per azione della 5α-reduttasi, agisce su recettori nucleari dell'epitelio e dello stroma e ne stimola la proliferazione."
+      en: "Dihydrotestosterone, made from testosterone by 5α-reductase, acts on nuclear receptors in the epithelium and stroma and drives them to proliferate."
+    correct: true
+    why:
+      it: "Corretta. L'iperplasia prostatica benigna è un aumento del numero di cellule dipendente dagli androgeni: il DHT stimola sia la componente ghiandolare sia quella stromale. Per questo non compare prima della pubertà né negli uomini castrati, e gli inibitori della 5α-reduttasi riducono il volume della ghiandola."
+      en: "Correct. Benign prostatic hyperplasia is an androgen-dependent increase in cell number: DHT stimulates both the glandular and the stromal compartments. That is why it does not occur before puberty or in castrated men, and why 5α-reductase inhibitors shrink the gland."
+  - id: b
+    text:
+      it: "Un clone di cellule epiteliali mutate cresce in modo autonomo, indipendente dagli ormoni."
+      en: "A clone of mutated epithelial cells grows autonomously, independent of hormones."
+    correct: false
+    why:
+      it: "Errata. La crescita autonoma di un clone mutato definisce una neoplasia. L'IPB è invece una risposta iperplastica che resta legata allo stimolo ormonale: senza androgeni (castrazione prepuberale) non si sviluppa."
+      en: "Incorrect. Autonomous growth of a mutated clone defines a neoplasm. BPH is a hyperplastic response that stays tied to its hormonal stimulus: without androgens (castration before puberty) it does not develop."
+  - id: c
+    text:
+      it: "Le fibrocellule muscolari lisce aumentano di volume, mentre il numero delle cellule resta invariato."
+      en: "The smooth muscle cells grow larger while the number of cells stays the same."
+    correct: false
+    why:
+      it: "Errata. Nell'IPB proliferano, in proporzioni variabili, l'epitelio acinare e duttale, la muscolatura liscia e i fibroblasti stromali: il numero delle cellule aumenta, quindi il processo di fondo è un'iperplasia e non una semplice ipertrofia."
+      en: "Incorrect. In BPH the acinar and ductal epithelium, smooth muscle and stromal fibroblasts all proliferate in varying proportions: cell number rises, so the underlying process is hyperplasia, not simple hypertrophy."
+  - id: d
+    text:
+      it: "Un eccesso di estrogeni, dovuto a ridotta clearance epatica, stimola l'epitelio ghiandolare."
+      en: "Excess estrogen, caused by poor clearance in the liver, stimulates the glandular epithelium."
+    correct: false
+    why:
+      it: "Errata. Un eccesso di estrogeni da epatopatia è una causa di ginecomastia, cioè di iperplasia della mammella maschile. La crescita della prostata nell'IPB dipende dagli androgeni (DHT)."
+      en: "Incorrect. Estrogen excess from liver disease is a cause of gynecomastia, a hyperplasia of the male breast. Prostatic growth in BPH depends on androgens (DHT)."
+  - id: e
+    text:
+      it: "I noduli nascono nella zona periferica e comprimono l'uretra dall'esterno della ghiandola."
+      en: "The nodules arise in the peripheral zone and compress the urethra from the outside of the gland."
+    correct: false
+    why:
+      it: "Errata. I noduli dell'IPB iniziano attorno all'uretra prossimale, nella zona di transizione, e crescendo comprimono sia il lume uretrale sia la prostata periferica."
+      en: "Incorrect. BPH nodules start around the proximal urethra, in the transition zone, and as they grow they compress both the urethral lumen and the peripheral gland."
+backLink: { entity: hyperplasia, section: pathogenesis }
+claims: [hyperplasia-c009, hyperplasia-c012, hyperplasia-c025, hyperplasia-c026, hyperplasia-c029, hyperplasia-c032, hyperplasia-c036, hyperplasia-c041, hyperplasia-c044, hyperplasia-c048, hyperplasia-c064]
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

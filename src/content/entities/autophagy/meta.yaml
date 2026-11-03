@@ -1,0 +1,129 @@
+id: autophagy
+module: g01
+tier: core
+kind: process
+names:
+  it: "Autofagia"
+  en: "Autophagy"
+  eponyms: []
+  synonyms:
+    it: ["Macroautofagia", "Microautofagia", "Autofagia mediata da chaperoni (CMA)", "Xenofagia", "Mitofagia"]
+    en: ["Macroautophagy", "Microautophagy", "Chaperone-mediated autophagy (CMA)", "Xenophagy", "Mitophagy"]
+  abbreviations: ["CMA"]
+summary:
+  it: "Processo conservato nell'evoluzione con cui la cellula consegna ai lisosomi parti di sé (citoplasma, organelli danneggiati, aggregati proteici, microrganismi) per degradarle e riciclarle; è frenato da mTORC1 e attivato da AMPK in condizioni di stress."
+  en: "Conserved process by which a cell delivers parts of itself (cytoplasm, damaged organelles, protein aggregates, microbes) to lysosomes for breakdown and recycling; held back by mTORC1 and switched on by AMPK under stress."
+lenses:
+  system: [general]
+  process: [autophagy, proteostasis, cellular-adaptation, regulated-cell-death]
+  pattern: [atrophy, intracellular-inclusions]
+  presentation: []
+  marker: [molecular]
+  group: [adaptive, degenerative, metabolic]
+learningObjectives:
+  - it: "Distinguere macroautofagia, microautofagia, autofagia mediata da chaperoni e xenofagia in base al carico, al riconoscimento e alla via di consegna al lisosoma."
+    en: "Distinguish macroautophagy, microautophagy, chaperone-mediated autophagy and xenophagy by cargo, recognition and route to the lysosome."
+  - it: "Descrivere le tappe della formazione dell'autofagosoma, dal fagoforo alla fusione con il lisosoma."
+    en: "Describe the steps of autophagosome formation, from phagophore to lysosomal fusion."
+  - it: "Spiegare come mTORC1 e AMPK regolino in senso opposto l'autofagia attraverso ULK1 e la Beclina-1."
+    en: "Explain how mTORC1 and AMPK regulate autophagy in opposite directions through ULK1 and Beclin-1."
+  - it: "Collegare l'autofagia all'atrofia, all'apoptosi e al danno da ischemia-riperfusione."
+    en: "Relate autophagy to atrophy, apoptosis and ischemia–reperfusion injury."
+  - it: "Riassumere il ruolo dell'autofagia nel cancro, nella neurodegenerazione, nell'invecchiamento, nelle infezioni e nella malattia di Crohn."
+    en: "Summarize the role of autophagy in cancer, neurodegeneration, aging, infection and Crohn disease."
+prerequisites: [protein-quality-control]
+relations:
+  - type: sharesMechanism
+    target: apoptosis
+    note:
+      it: "La Beclina-1 possiede un dominio BH3 ed è sequestrata da Bcl-2; le caspasi la tagliano, mentre Atg5 frena la via apoptotica estrinseca."
+      en: "Beclin-1 has a BH3 domain and is held by Bcl-2; caspases cleave it, while Atg5 restrains the extrinsic pathway."
+  - type: sharesMechanism
+    target: atrophy
+    note:
+      it: "Nell'atrofia aumenta l'attività autofagica insieme alla degradazione proteasomica."
+      en: "In atrophy, autophagic activity rises along with proteasomal degradation."
+  - type: sharesMechanism
+    target: protein-quality-control
+    note:
+      it: "Il sistema ubiquitina-proteasoma elimina le proteine a breve emivita; l'autofagia si occupa di aggregati e organelli, e ciascuna delle due vie può supplire all'altra."
+      en: "The ubiquitin–proteasome system removes short-lived proteins; autophagy handles aggregates and organelles, and each can compensate for the other."
+  - type: sharesMechanism
+    target: ischemia-reperfusion-injury
+    note:
+      it: "Ischemia e riperfusione attivano l'autofagia, con effetti sia protettivi sia dannosi."
+      en: "Ischemia and reperfusion activate autophagy, with both protective and harmful effects."
+quickCheck:
+  - id: autophagy-q1
+    q:
+      it: "Quale complesso blocca l'autofagia nella cellula ben nutrita e su quale chinasi agisce direttamente?"
+      en: "Which complex blocks autophagy in the well-fed cell, and which kinase does it act on directly?"
+    a:
+      it: "mTORC1, attivato da insulina e IGF-1 attraverso la PI3K di classe I e Akt; lega e inibisce ULK1."
+      en: "mTORC1, driven by insulin/IGF-1 via class I PI3K and Akt; it binds and inhibits ULK1."
+    kind: short
+  - id: autophagy-q2
+    q:
+      it: "Che cosa attiva AMPK durante il digiuno e come promuove l'autofagia?"
+      en: "What activates AMPK during starvation, and how does it promote autophagy?"
+    a:
+      it: "L'aumento del rapporto AMP/ATP; AMPK inibisce mTORC1 tramite il complesso della sclerosi tuberosa e fosforila direttamente ULK1, che attiva la Beclina-1."
+      en: "A rising AMP/ATP ratio; AMPK inhibits mTORC1 through the tuberous sclerosis complex and directly phosphorylates ULK1, which activates Beclin-1."
+    kind: short
+  - id: autophagy-q3
+    q:
+      it: "Quale forma di autofagia trasporta singole proteine attraverso la membrana lisosomiale senza ricorrere a vescicole e quale recettore utilizza?"
+      en: "Which form of autophagy moves single proteins across the lysosomal membrane without a vesicle, and which receptor does it use?"
+    a:
+      it: "L'autofagia mediata da chaperoni (CMA), tramite il recettore lisosomiale LAMP-2A."
+      en: "Chaperone-mediated autophagy (CMA), through the lysosomal receptor LAMP-2A."
+    kind: short
+  - id: autophagy-q4
+    q:
+      it: "Perché si dice che l'autofagia sia un'arma a doppio taglio nel cancro?"
+      en: "Why is autophagy called a double-edged sword in cancer?"
+    a:
+      it: "Geni come quello della Beclina-1 e alcuni geni ATG agiscono da oncosoppressori e sono persi in molti tumori, ma l'autofagia aiuta anche le cellule tumorali a sopravvivere all'ipossia, alla carenza di nutrienti e alla chemioterapia."
+      en: "Genes such as Beclin-1 and some ATGs act as tumor suppressors and are lost in many tumors, yet autophagy also helps tumor cells survive hypoxia, nutrient lack and chemotherapy."
+    kind: free
+selfExplain:
+  - it: "Perché la cellula tiene sempre pronte le proteine dell'autofagia invece di sintetizzarle solo quando servono?"
+    en: "Why does the cell keep autophagy proteins constantly made instead of producing them only when needed?"
+  - it: "Perché il proteasoma da solo non basta a smaltire un aggregato proteico o un mitocondrio danneggiato, e come interviene p62?"
+    en: "Why can the proteasome alone not dispose of a protein aggregate or a damaged mitochondrion, and how does p62 step in?"
+  - it: "In che modo Bcl-2 e le caspasi orientano la scelta tra sopravvivenza mediata dall'autofagia e apoptosi?"
+    en: "How do Bcl-2 and caspases link the choice between autophagic survival and apoptosis?"
+chain:
+  - pathology:
+      it: "Varianti di geni dell'autofagia coinvolti nella xenofagia, con ridotta eliminazione dei batteri"
+      en: "Variants in autophagy genes involved in xenophagy, with impaired bacterial clearance"
+    sign:
+      it: "Malattia di Crohn: infiammazione intestinale cronica"
+      en: "Crohn disease: chronic intestinal inflammation"
+    lab:
+      it: "Indici di infiammazione aspecifici aumentati; nessun test di routine per l'autofagia"
+      en: "Raised non-specific markers of inflammation; no routine test of autophagy"
+  - pathology:
+      it: "Ridotta capacità di eliminare aggregati proteici e mitocondri danneggiati nei neuroni"
+      en: "Reduced clearance of protein aggregates and damaged mitochondria in neurons"
+    sign:
+      it: "Malattie neurodegenerative (Huntington, Alzheimer, Parkinson)"
+      en: "Neurodegenerative disease (Huntington, Alzheimer, Parkinson)"
+    lab:
+      it: "Aggregati proteici intracellulari nei neuroni"
+      en: "Intracellular protein aggregates in neurons"
+images:
+  - id: autophagy-micro-1
+    role: micro
+  - id: autophagy-micro-2
+    role: micro
+  - id: autophagy-micro-3
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "1"
+    pages: "13-19, 21, 24-25, 38, 44, 54"
+lastUpdated: 2026-11-03
+status: published

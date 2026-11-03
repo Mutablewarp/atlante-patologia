@@ -1,0 +1,62 @@
+id: pigment-accumulation-micro-1
+file: pigment-accumulation-micro-1.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Kupffer_cell_with_hemosiderin_and_hepatocyte_with_lipofuscin,_original.jpg
+author: Mikael Häggström, M.D.
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-10-10
+modifications: "Used the unlabelled 'original' version of the file (2048 × 1532 px); downscaled to 1600 × 1197 px and re-encoded as JPEG, which also strips the camera EXIF metadata. No crop, no colour change."
+attributionText: "Mikael Häggström, M.D., via Wikimedia Commons, CC0 1.0 (public domain dedication)"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: high power
+caption:
+  it: >-
+    Fegato, EE a forte ingrandimento: due pigmenti bruni nello stesso campo, il confronto classico tra emosiderina e
+    lipofuscina. In EE un pigmento bruno è solo "bruno": per capire quale sia guarda tre cose, cioè la cellula che lo
+    contiene, la grandezza dei granuli e la loro tinta. In basso a sinistra una cellula di Kupffer (macrofago residente
+    del fegato, con nucleo allungato e bluastro) contiene globuli grossolani, tondeggianti, bruno-dorati scuri: è
+    emosiderina, la forma di deposito del ferro che i macrofagi accumulano quando demoliscono globuli rossi o quando
+    l'organismo è sovraccarico di ferro. Al centro un grande epatocita con nucleo rotondo raccoglie accanto al nucleo
+    un gruppo di granuli più fini e più chiari, bruno-giallastri: è lipofuscina, il pigmento "da usura" formato da
+    lipidi e proteine ossidati che i lisosomi non riescono a digerire; aumenta con l'età e nelle cellule atrofiche e di
+    per sé non danneggia la cellula. Regola pratica in EE: grossolano e scuro dentro un macrofago fa pensare
+    all'emosiderina, fine e perinucleare in una cellula parenchimale alla lipofuscina. Per decidere davvero serve la
+    colorazione di Perls (blu di Prussia) sullo stesso tessuto: diventa blu solo l'emosiderina.
+  en: >-
+    Liver, H&E at high power: two brown pigments in the same field, the classic comparison between hemosiderin and
+    lipofuscin. On H&E a brown pigment is just "brown": to tell which one it is, look at three things, namely the cell
+    that holds it, the size of the granules and their shade. At the lower left a Kupffer cell (a resident liver
+    macrophage, with an elongated bluish nucleus) contains coarse, rounded, dark golden-brown globules: this is
+    hemosiderin, the storage form of iron that macrophages build up when they break down red cells or when the body is
+    overloaded with iron. In the centre a large hepatocyte with a round nucleus holds, next to the nucleus, a cluster of
+    finer and paler yellow-brown granules: this is lipofuscin, the "wear-and-tear" pigment made of oxidised lipids and
+    proteins that lysosomes cannot digest; it increases with age and in atrophic cells and does not harm the cell by
+    itself. Rule of thumb on H&E: coarse and dark inside a macrophage suggests hemosiderin, fine and perinuclear in a
+    parenchymal cell suggests lipofuscin. To decide for sure, use the Perls (Prussian blue) stain on the same tissue:
+    only hemosiderin turns blue.
+alt:
+  it: >-
+    Micrografia di fegato in ematossilina-eosina a forte ingrandimento su fondo rosa: al centro un grande epatocita
+    con nucleo rotondo viola circondato da fini granuli bruno-giallastri; in basso a sinistra una cellula con nucleo
+    allungato bluastro e grossi globuli tondi bruno scuro raccolti in grappoli.
+  en: >-
+    High-power H&E micrograph of liver on a pink background: in the centre a large hepatocyte with a round purple
+    nucleus surrounded by fine yellow-brown granules; at the lower left a cell with an elongated bluish nucleus and
+    large, round, dark brown globules gathered in clusters.
+annotations:
+  - id: kupffer-hemosiderin
+    label: { it: Cellula di Kupffer con emosiderina (globuli grossolani bruno-dorati), en: Kupffer cell with hemosiderin (coarse golden-brown globules) }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.18, 0.66, 0.30, 0.64, 0.41, 0.70, 0.41, 0.81, 0.33, 0.83, 0.20, 0.78]
+  - id: hepatocyte-lipofuscin
+    label: { it: Epatocita con lipofuscina perinucleare (granuli fini bruno-giallastri), en: Hepatocyte with perinuclear lipofuscin (fine yellow-brown granules) }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.40, 0.33, 0.53, 0.17, 0.67, 0.17, 0.67, 0.37, 0.53, 0.48, 0.40, 0.48]

@@ -1,0 +1,94 @@
+id: pyroptosis-micro-2
+file: pyroptosis-micro-2.jpg
+kind: micro
+sourceUrl: https://www.nature.com/articles/s41467-020-16143-6/figures/1
+author: Kai S. Beckwith, Marianne S. Beckwith, Sindre Ullmann, Ragnhild S. Sætra, Haelin Kim, Anne Marstad, Signe E. Åsberg, Trine A. Strand, Markus Haug, Michael Niederweis, Harald A. Stenmark, Trude H. Flo
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-10-10
+modifications: >-
+  Cropped to the image grid of panel f (an 890 × 650 px region at the lower left of the publisher's 2001 × 1927 px
+  high-resolution Fig. 1,
+  https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41467-020-16143-6/MediaObjects/41467_2020_16143_Fig1_HTML.png)
+  and re-encoded as JPEG at that size (metadata stripped). The panel letter, the cell-death curves of panel f and
+  panels a–e and g were left out. The colour legend, time stamps, row labels and scale bars belong to the published
+  figure.
+attributionText: >-
+  Kai S. Beckwith, Marianne S. Beckwith, Sindre Ullmann, Ragnhild S. Sætra, Haelin Kim, Anne Marstad, Signe E. Åsberg,
+  Trine A. Strand, Markus Haug, Michael Niederweis, Harald A. Stenmark, Trude H. Flo, "Plasma membrane damage causes
+  NLRP3 activation and pyroptosis during Mycobacterium tuberculosis infection", Nat Commun 2020;11:2270,
+  doi:10.1038/s41467-020-16143-6, Fig. 1f (image panels, cropped), CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+# License check (2026-10-10): same article and same checks as pyroptosis-micro-1. Europe PMC (PMC7210277) gives
+# "cc by", the article states a Creative Commons Attribution 4.0 International License, and the Fig. 1 legend has no
+# third-party credit line: the frames are the authors' own time-lapse imaging of a human cell line (THP-1), no
+# patient material.
+stain: >-
+  live-cell time-lapse fluorescence microscopy over a transmitted-light image; Mtb blue (BFP), ASC green (GFP),
+  DRAQ7 magenta
+magnification: high power (single cells; scale bars 10 µm)
+caption:
+  it: >-
+    Tre modi di morire nella stessa coltura: macrofagi umani (linea THP-1) infettati da Mycobacterium tuberculosis e
+    seguiti in time-lapse con la microscopia a fluorescenza, sovrapposta all'immagine in luce trasmessa. Legenda dei
+    colori (in alto): batteri in blu, ASC, la proteina adattatrice dell'inflammasoma, in verde, DRAQ7 in magenta. Il
+    DRAQ7 è un colorante del DNA che non attraversa una membrana plasmatica integra: un nucleo magenta significa che la
+    membrana è stata violata. In ogni riga i tempi sono contati da un fotogramma di riferimento (0); leggi le righe da
+    sinistra a destra. Piroptosi (in alto): la cellula contiene diversi batteri e ha l'ASC diffuso nel citoplasma; al
+    tempo 0 l'ASC si raccoglie in un unico punto verde brillante, lo «speck» di ASC, cioè l'inflammasoma assemblato;
+    entro 10 minuti il nucleo diventa magenta e l'alone verde diffuso scompare, lasciando un «fantasma» pallido della
+    cellula: la membrana è stata perforata (nella piroptosi, dai pori di gasdermina D) e il contenuto solubile è
+    fuoriuscito. Necrosi (al centro): nessuno speck; nel corso di circa un'ora la cellula si rigonfia in grosse bolle
+    tondeggianti e il DRAQ7 entra solo più tardi (visibile a +4 h). Apoptosi (in basso): una cellula senza batteri
+    visibili si arrotonda e in pochi minuti si divide in numerose bolle e piccoli frammenti rotondi (corpi
+    apoptotici), senza colorazione magenta nei fotogrammi mostrati, perché i frammenti restano chiusi da membrana. Da
+    ricordare: lo speck di ASC seguito in pochi minuti dalla perdita di integrità della membrana è la firma della
+    piroptosi nelle cellule vive; nei preparati in EE la piroptosi non ha un aspetto specifico e si riconosce solo con
+    marcatori molecolari (inflammasoma, caspasi-1, gasdermina D).
+  en: >-
+    Three ways to die in the same culture: human macrophages (THP-1 line) infected with Mycobacterium tuberculosis and
+    followed by time-lapse fluorescence microscopy, overlaid on a transmitted-light image. Colour key (top): bacteria
+    blue, ASC, the inflammasome adaptor protein, green, and DRAQ7 magenta. DRAQ7 is a DNA dye that cannot cross an
+    intact plasma membrane: a magenta nucleus means the membrane has been breached. In each row, times are counted
+    from a reference frame (0); read the rows from left to right. Pyroptosis (top): the cell holds several bacteria
+    and its ASC is spread through the cytoplasm; at time 0 the ASC collapses into a single bright green dot, the ASC
+    speck, that is, the assembled inflammasome; within 10 minutes the nucleus turns magenta and the diffuse green haze
+    is gone, leaving a pale "ghost" of the cell: the membrane has been pierced (in pyroptosis, by gasdermin D pores)
+    and the soluble contents have leaked out. Necrosis (middle): no speck; over about an hour the cell swells into
+    large rounded bulges, and DRAQ7 enters only later (visible at +4 h). Apoptosis (bottom): a cell with no visible
+    bacteria rounds up and within minutes splits into many round blebs and small fragments (apoptotic bodies), with no
+    magenta in the frames shown, because the fragments stay sealed by membrane. Remember: an ASC speck followed within
+    minutes by loss of membrane integrity is the signature of pyroptosis in living cells; in H&E sections pyroptosis
+    has no specific appearance and is recognised only with molecular markers (inflammasome, caspase-1, gasdermin D).
+alt:
+  it: >-
+    Griglia di 15 fotogrammi time-lapse a fluorescenza in tre righe etichettate Pyroptosis, Necrosis e Apoptosis, con
+    i tempi sopra ogni fotogramma e una legenda dei colori: Mtb::BFP blu, ASC-GFP verde, DRAQ7 magenta. Riga in alto:
+    una cellula rotonda verde con batteri blu sviluppa un unico punto verde brillante e poi un nucleo magenta. Riga
+    centrale: una cellula verde si gonfia in rigonfiamenti tondeggianti e più tardi mostra nuclei di un magenta
+    tenue. Riga in basso: una cellula fusata si arrotonda e si frammenta in molte piccole bolle rotonde.
+  en: >-
+    Grid of 15 fluorescence time-lapse frames in three rows labelled Pyroptosis, Necrosis and Apoptosis, with times
+    above each frame and a colour key: Mtb::BFP blue, ASC-GFP green, DRAQ7 magenta. Top row: a round green cell with
+    blue bacteria develops a single bright green dot, then a magenta nucleus. Middle row: a green cell bulges into
+    rounded swellings and later shows faint magenta nuclei. Bottom row: a spindle-shaped cell rounds up and breaks
+    into many small round blebs.
+annotations:
+  - id: asc-speck
+    label: { it: "Speck di ASC: l'inflammasoma assemblato", en: "ASC speck: the assembled inflammasome" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.501, 0.194, 0.546, 0.194, 0.546, 0.255, 0.501, 0.255] }
+  - id: draq7-nucleus
+    label: { it: "Nucleo DRAQ7+: membrana plasmatica perforata", en: "DRAQ7+ nucleus: plasma membrane breached" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.721, 0.157, 0.803, 0.157, 0.803, 0.265, 0.721, 0.265] }
+  - id: necrotic-swelling
+    label: { it: "Necrosi: rigonfiamento a bolle, senza speck", en: "Necrosis: swelling into bulges, no speck" }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.489, 0.485, 0.640, 0.485, 0.640, 0.623, 0.489, 0.623] }
+  - id: apoptotic-bodies
+    label: { it: "Apoptosi: bolle e corpi apoptotici, DRAQ7-negativi", en: "Apoptosis: blebs and apoptotic bodies, DRAQ7-negative" }
+    revealOrder: 4
+    shape: { type: polygon, coords: [0.506, 0.757, 0.618, 0.757, 0.618, 0.931, 0.506, 0.931] }

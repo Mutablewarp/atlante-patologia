@@ -1,0 +1,56 @@
+id: coagulative-necrosis-gross-1
+file: coagulative-necrosis-gross-1.jpg
+kind: gross
+sourceUrl: https://commons.wikimedia.org/wiki/File:Healed_splenic_infarcts.jpg
+author: Narraburra (Wikimedia Commons user)
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-10-10
+modifications: "Downscaled from 2784 px to 1600 px wide (from the 1920 px Wikimedia rendition) and re-encoded as JPEG. No crop, no colour change."
+attributionText: "Narraburra, own work, via Wikimedia Commons, CC0 1.0"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+caption:
+  it: >-
+    Superficie di taglio di una milza con alcuni infarti pallidi in un parenchima rosso scuro. Guarda prima la
+    forma: la lesione più grande, in alto, è un'area pallida grossomodo a cuneo, larga dove tocca la capsula e più stretta verso
+    la profondità dell'organo: il territorio di un singolo ramo arterioso occluso. Una seconda area pallida si
+    trova sul margine sinistro e altri piccoli focolai chiari sono sparsi lì vicino. In un infarto anemico (bianco)
+    recente di un organo solido, come milza, rene o cuore, il tessuto morto è necrosi coagulativa: compatto, pallido,
+    ben delimitato, e al microscopio conserva ancora il profilo delle strutture originarie. Secondo la fonte questi
+    sono infarti vecchi, già guariti, quindi gran parte del tessuto necrotico è stata sostituita da una cicatrice
+    chiara; la nota clinica del file riporta una cardiopatia reumatica con endocardite batterica subacuta, sorgente
+    classica di emboli arteriosi. Il righello in basso a destra indica 1 cm.
+  en: >-
+    Cut surface of a spleen with several pale infarcts in a dark-red parenchyma. Look at the shape first:
+    the largest lesion, at the top, is a pale, roughly wedge-shaped area, broad where it meets the capsule and narrowing into the
+    depth of the organ: the territory of a single occluded arterial branch. A second pale area sits on the left edge
+    and smaller pale foci are scattered nearby. In a recent pale (anaemic) infarct of a solid organ such as spleen,
+    kidney or heart, the dead tissue is coagulative necrosis: firm, pale, sharply bordered and, under the microscope,
+    still showing the outlines of the original structures. According to the source these are old, healed infarcts,
+    so much of the dead tissue has already been replaced by pale scar; the clinical note on the file mentions
+    rheumatic heart disease with subacute bacterial endocarditis, a classic source of arterial emboli. The scale at
+    the lower right marks 1 cm.
+alt:
+  it: >-
+    Fotografia macroscopica di una milza sezionata su fondo azzurro: superficie di taglio rosso scuro con piccoli vasi
+    beanti; in alto al centro un'area a cuneo bianco-crema che raggiunge la capsula, sul margine sinistro un'altra area
+    giallastra e alcuni piccoli focolai chiari sparsi; in basso a destra un righello di 1 cm.
+  en: >-
+    Gross photograph of a sliced spleen on a light-blue background: a dark-red cut surface with small gaping vessels; a
+    cream-white wedge-shaped area reaching the capsule at the top centre, another yellowish area on the left edge and a
+    few small scattered pale foci; a 1 cm scale at the lower right.
+annotations:
+  - id: wedge-infarct
+    label: { it: Infarto pallido grossomodo a cuneo che raggiunge la capsula, en: Pale, roughly wedge-shaped infarct reaching the capsule }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.568, 0.069, 0.661, 0.069, 0.677, 0.177, 0.651, 0.254, 0.643, 0.400, 0.599, 0.400, 0.552, 0.269, 0.557, 0.169] }
+  - id: marginal-infarct
+    label: { it: Secondo infarto pallido sul margine, en: Second pale infarct at the edge }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.040, 0.420, 0.110, 0.430, 0.120, 0.550, 0.100, 0.600, 0.050, 0.600, 0.040, 0.500] }
+  - id: viable-parenchyma
+    label: { it: Parenchima splenico vitale, en: Viable splenic parenchyma }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.700, 0.300, 0.950, 0.300, 0.950, 0.620, 0.700, 0.620] }

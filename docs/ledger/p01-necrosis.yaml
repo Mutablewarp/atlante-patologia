@@ -1,0 +1,442 @@
+entity: p01-necrosis
+claims:
+  - claimId: p01-necrosis-c001
+    section: definition
+    statement: "Necrosis is death forced on cells by injury that overwhelms their adaptive capacity; it typically involves a geographic group of cells and elicits acute inflammation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "38, 42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c002
+    section: definition
+    statement: "Coagulative, liquefactive, fat, caseous and fibrinoid necrosis are named recognizable histologic patterns that reflect different initiating stimuli."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "38-40" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c003
+    section: definition
+    statement: "Rubin uses gangrene for necrosis of a large tissue region (foot or leg after arterial occlusion; intestine, ch. 16 p. 606); it is not among the chapter 1 histologic patterns, and dry gangrene of the foot or leg is essentially a large pale infarct with coagulative necrosis."
+    sourceRef: { source: rubin-8e, chapter: "1, 7", pages: "38-40, 330, 337" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c004
+    section: pathogenesis
+    statement: "The necrotic pattern reflects the fate of dead cells (persistence of outlines, enzymatic dissolution, persistence as debris) and the tissue substrate (adipose tissue, vessel wall)."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "38-40" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c005
+    section: pathogenesis
+    statement: "Shortly after death the cell outline is kept; rapid loss of cytoplasmic RNA, which binds hematoxylin, makes the cytoplasm more eosinophilic."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "38-39" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c006
+    section: pathogenesis
+    statement: "Liquefactive necrosis results when dissolution of necrotic cells far exceeds repair; neutrophil hydrolases, usually recruited by bacterial infection, digest the dead cells."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c007
+    section: pathogenesis
+    statement: "After cerebral artery occlusion the necrotic brain tissue dissolves by a mechanism not attributable to acute inflammation; abundant or CNS-specific lysosomal hydrolases may explain it."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c008
+    section: pathogenesis
+    statement: "In fat necrosis, released pancreatic enzymes (or lipases from injured adipocytes in trauma) free triglycerides and hydrolyse them; the fatty acids bind calcium and precipitate as soaps."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "39-40" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c009
+    section: pathogenesis
+    statement: "In caseous necrosis dead cells lose outlines but are not lysed, persisting as debris; this is generally attributed to the complex waxes of the mycobacterial cell wall."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "40" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c010
+    section: pathogenesis
+    statement: "Fibrinoid necrosis arises in injured vessels when plasma proteins insudate into and accumulate in the wall, which then stains strongly with eosin."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "40" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c011
+    section: gross
+    statement: "Infarction means coagulative necrosis developing downstream of an occluded end artery; the necrotic zone is the infarct."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "337" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c012
+    section: gross
+    statement: "Pale infarcts with uniform coagulative necrosis are typical in heart, kidney and spleen; splenic infarcts are pale wedges beneath the capsule, and renal infarct pallor extends to the subcapsular surface (ch. 22 fig.)."
+    sourceRef: { source: rubin-8e, chapter: "7, 22", pages: "337, 955" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c013
+    section: micro
+    statement: "Ischemic myocytes are deeply eosinophilic with coagulative necrosis by 24 hours, but complete loss of nuclei takes several days."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "657" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c014
+    section: clinical
+    statement: "Renal cortical necrosis (coagulative necrosis of cortical parenchyma) complicates shock, classically premature placental separation; analgesic nephropathy causes coagulative papillary necrosis."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "955, 961-962" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c015
+    section: pathogenesis
+    statement: "Rapid cell death occurs only with radiation doses well above 10 Gy and is morphologically indistinguishable from coagulative necrosis of other causes."
+    sourceRef: { source: rubin-8e, chapter: "8", pages: "365" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c016
+    section: definition
+    statement: "An abscess is a cavity in a solid tissue formed by liquefactive necrosis, usually from a localized bacterial infection with neutrophil accumulation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c017
+    section: gross
+    statement: "Brain abscess begins as cerebritis that softens and liquefies within days; it becomes encapsulated by granulation tissue, a fibrous rind and astrogliosis; the granulation layer lacks a blood-brain barrier and causes ring enhancement."
+    sourceRef: { source: rubin-8e, chapter: "32", pages: "1465" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c018
+    section: prognosis
+    statement: "Liquefaction of extensive CNS territory can leave a permanent cavity or cyst; brain infarcts typically liquefy into cystic infarcts (ch. 7 p. 338)."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c019
+    section: clinical
+    statement: "Bilateral liquefactive destruction of the globus pallidus is an almost specific sign of severe CO poisoning."
+    sourceRef: { source: rubin-8e, chapter: "32", pages: "1490" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c020
+    section: prognosis
+    statement: "A septic infarct (infarct containing pyogenic bacteria) may become a frank abscess."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "338" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c021
+    section: definition
+    statement: "Caseous necrosis is characteristic of tuberculosis but occurs less often in other settings."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "40" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c022
+    section: micro
+    statement: "In the classic tuberculous granuloma a semisolid caseous centre is ringed by epithelioid histiocytes and Langhans-type giant cells, with lymphocytes and fibrosis at the periphery."
+    sourceRef: { source: rubin-8e, chapter: "9", pages: "451" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c023
+    section: clinical
+    statement: "Primary TB forms a subpleural Ghon focus with involved hilar/mediastinal nodes; secondary TB forms apical cavities with caseous material; parenchymal CNS TB forms tuberculomas with central caseous necrosis (ch. 32)."
+    sourceRef: { source: rubin-8e, chapter: "9, 32", pages: "451-452, 1468" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c024
+    section: clinical
+    statement: "Tuberculomas rank high among intracranial masses in TB-endemic regions."
+    sourceRef: { source: rubin-8e, chapter: "32", pages: "1468" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c025
+    section: definition
+    statement: "Fat necrosis affects adipose tissue and most often results from pancreatitis or trauma."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c026
+    section: gross
+    statement: "Acute pancreatitis produces yellow-white, chalky foci of fat necrosis around the pancreas and in the mesentery; enzyme release into the peritoneum causes peritonitis with fat necrosis (ch. 19 p. 837)."
+    sourceRef: { source: rubin-8e, chapter: "21, 19", pages: "903, 837" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c027
+    section: clinical
+    statement: "Traumatic breast fat necrosis is common, presents as a hard mass often with skin tethering, and may mimic carcinoma, especially when calcified (ch. 25 p. 1077)."
+    sourceRef: { source: rubin-8e, chapter: "1, 25", pages: "40, 1077" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c028
+    section: clinical
+    statement: "Rupture of a silicone breast implant elicits a reaction combining necrotic fat with foreign-body giant cells."
+    sourceRef: { source: rubin-8e, chapter: "25", pages: "1076" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c029
+    section: definition
+    statement: "Fibrinoid necrosis occurs in injured blood vessels."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "40" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c030
+    section: clinical
+    statement: "Fibrinoid necrosis is the classic appearance of immune-complex vasculitis (Arthus reaction model, ch. 4); it is seen in polyarteritis nodosa, in cutaneous hypersensitivity vasculitis of venules and in Churg-Strauss syndrome (ch. 16)."
+    sourceRef: { source: rubin-8e, chapter: "4, 16", pages: "147, 149, 620, 622" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c031
+    section: pathogenesis
+    statement: "In malignant hypertension, injured arteriolar endothelium lets plasma seep into the arteriolar wall, producing fibrinoid necrosis in the kidney."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "951" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c032
+    section: micro
+    statement: "Hyperacute and acute humoral (antibody-mediated) renal allograft rejection can show vasculitis/arteritis with fibrinoid necrosis (ch. 22 p. 967)."
+    sourceRef: { source: rubin-8e, chapter: "4, 22", pages: "157-158, 967" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c033
+    section: etiology
+    statement: "Thrombosis on atherosclerotic leg arteries causes ischemic leg and gangrene; arterial occlusion causes dry gangrene; dry gangrene is a complication of diabetic macrovascular disease (ch. 13 p. 551)."
+    sourceRef: { source: rubin-8e, chapter: "7, 13", pages: "330, 337, 551" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c034
+    section: prognosis
+    statement: "Most nontraumatic limb amputations in the US are due to diabetes, with ischemic gangrene from macrovascular disease as the major factor."
+    sourceRef: { source: rubin-8e, chapter: "13", pages: "539" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c035
+    section: pathogenesis
+    statement: "Infarcts infected by pyogenic bacteria become septic and neutrophil hydrolases liquefy the dead tissue (ch. 1 p. 39). The label \"wet gangrene\" is not used in rubin-8e; the process it names is."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "338" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c036
+    section: pathogenesis
+    statement: "Gas gangrene (clostridial myonecrosis) follows anaerobic growth of C. perfringens in devitalized wound tissue; its phospholipase myotoxin kills healthy muscle; gas forms, neutrophils are scarce, and it can be fatal within hours."
+    sourceRef: { source: rubin-8e, chapter: "9", pages: "429" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c037
+    section: etiology
+    statement: "Severe vasculitis after meningococcemia may cause gangrene of the distal extremities; arterial occlusion can cause gangrene of the intestine (ch. 16 p. 606; ch. 19 p. 803)."
+    sourceRef: { source: rubin-8e, chapter: "9, 16, 19", pages: "417, 606, 803" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c038
+    section: micro
+    statement: "Coagulative necrosis keeps cell outlines; liquefactive necrosis forms a cavity filled with neutrophils and amorphous debris; caseous necrosis is outline-free granular eosinophilic debris in a granuloma."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "38-40" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c039
+    section: micro
+    statement: "Fibrinoid necrosis is a sharply demarcated, homogeneous, deeply eosinophilic zone in an arterial wall; fat necrosis shows amorphous basophilic soap deposits at the edges of necrotic adipocyte islands."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "40" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c040
+    section: micro
+    statement: "Nuclear changes of coagulative necrosis: pyknosis (small, dark nucleus), karyorrhexis (fragmentation) and karyolysis (fading of chromatin)."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c041
+    section: micro
+    statement: "Tuberculous granulomas contain epithelioid macrophages and Langhans giant cells; breast fat necrosis accumulates foamy macrophages and giant cells engulfing lipid (ch. 25)."
+    sourceRef: { source: rubin-8e, chapter: "9, 25", pages: "451, 1077" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c042
+    section: prognosis
+    statement: "Neutrophils infiltrate an infarct from the viable border over several days, then macrophages; granulation tissue and finally a scar follow; the center of a large infarct may persist for months."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "337-338" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c043
+    section: prognosis
+    statement: "An abscess is eventually walled off by a fibrous capsule; large CNS liquefaction leaves a lifelong cyst."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c044
+    section: prognosis
+    statement: "A brain abscess may threaten life by herniation or by rupture into a ventricle."
+    sourceRef: { source: rubin-8e, chapter: "32", pages: "1465" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c045
+    section: prognosis
+    statement: "Contained Ghon complexes heal, shrink, scar and calcify; progressive disease may cavitate, rupture into the pleural cavity or erode into a bronchus."
+    sourceRef: { source: rubin-8e, chapter: "9", pages: "451-452" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c046
+    section: prognosis
+    statement: "In breast fat necrosis, foamy macrophages and giant cells accumulate, followed by fibrosis and dystrophic calcification; in pancreatitis, calcium soap formation can depress blood calcium (ch. 21 p. 903)."
+    sourceRef: { source: rubin-8e, chapter: "25, 21", pages: "1077, 903" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c047
+    section: prognosis
+    statement: "Vessel walls with fibrinoid necrosis can be disrupted with hemorrhage (PAN), show thrombosis and aneurysm formation (Churg-Strauss), and arteriolar thrombosis causes focal cortical infarcts in malignant hypertension (ch. 22 p. 951)."
+    sourceRef: { source: rubin-8e, chapter: "16, 22", pages: "620, 622, 951" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c048
+    section: prognosis
+    statement: "Dry gangrene of the foot may require debridement and amputation (ch. 7 fig.); gas gangrene can lead to hemolytic anemia, hypotension, renal failure and shock."
+    sourceRef: { source: rubin-8e, chapter: "7, 9", pages: "338, 429" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c049
+    section: prognosis
+    statement: "Dead tissue can undergo dystrophic calcification, e.g., in tuberculous lungs or lymph nodes and in survivors of renal cortical necrosis (ch. 22 p. 955)."
+    sourceRef: { source: rubin-8e, chapter: "1, 22", pages: "29, 955" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c050
+    section: traps
+    statement: "The term fibrinoid necrosis is a misnomer, because the eosinophilic plasma proteins obscure the wall and make it hard or impossible to tell whether necrosis is present."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "40-41" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c051
+    section: traps
+    statement: "Berylliosis, hypersensitivity pneumonitis and sarcoidosis show noncaseating granulomas; caseous necrosis is characteristic enough to raise suspicion of TB, but M. tuberculosis is not its only cause (ch. 9 p. 451)."
+    sourceRef: { source: rubin-8e, chapter: "18, 9", pages: "735-738, 451" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c052
+    section: traps
+    statement: "Brain coagulative necrosis after arterial occlusion is followed by liquefaction not due to acute inflammation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c053
+    section: traps
+    statement: "Red infarcts also contain coagulative necrosis plus hemorrhage, occurring mainly in organs with dual blood supply (lung) or rich collaterals (small intestine)."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "337" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c054
+    section: traps
+    statement: "Gross changes of an acute MI are absent during the first 12 h; pallor of the cut surface is evident at 24 h."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "657" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10
+  - claimId: p01-necrosis-c055
+    section: traps
+    statement: "Apoptosis affects single cells or small groups among viable cells, and apoptotic bodies are removed without an inflammatory reaction, unlike necrosis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "41" }
+    status: verified
+    verifiedBy: agent
+    verifier: "p01-author-agent (second-pass page re-read)"
+    date: 2026-10-10

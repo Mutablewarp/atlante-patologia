@@ -1,0 +1,61 @@
+id: liquefactive-necrosis-gross-2
+file: liquefactive-necrosis-gross-2.jpg
+kind: gross
+sourceUrl: https://commons.wikimedia.org/wiki/File:Gross_pathology_of_diverticulitis_with_diverticular_abscesses.jpg
+author: Mikael Häggström, M.D.
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-10-10
+modifications: "Wikimedia 1920-px rendition downscaled to 1600 px wide and re-encoded as JPEG, which also strips camera metadata; no crop, no colour change. The two white arrows are part of the original file."
+attributionText: "Mikael Häggström, M.D., via Wikimedia Commons, CC0 1.0 (public domain dedication)"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+caption:
+  it: >-
+    Tratto di colon aperto e sezionato in un caso di diverticolite, con due ascessi diverticolari indicati dalle
+    frecce bianche (mucosa in alto, sierosa e grasso pericolico giallo in basso; righello in centimetri in alto; il
+    colore grigio-blu a destra è un tatuaggio eseguito in precedenza per localizzare il tratto). Segui prima la freccia di
+    sinistra, poi quella di destra: nella parete e nel grasso sotto la mucosa si aprono due raccolte arrotondate di
+    circa 1-2 cm, con un contenuto molle, bruno-rossastro, dove il tessuto della parete non è più riconoscibile. Ogni
+    raccolta è circondata da un bordo biancastro e compatto: è il tessuto fibroso e infiammatorio che delimita l'ascesso. Un ascesso
+    è proprio questo: una cavità scavata dalla necrosi colliquativa in un tessuto solido, dove gli enzimi dei
+    neutrofili richiamati dai batteri sciolgono le cellule morte, e che col tempo viene circoscritta da tessuto
+    fibroso.
+  en: >-
+    Segment of colon opened and sectioned in a case of diverticulitis, with two diverticular abscesses marked by the
+    white arrows (mucosa at the top, serosa and yellow pericolic fat at the bottom; centimetre ruler at the top; the
+    grey-blue colour on the right is a tattoo placed earlier to locate the segment). Follow first the left arrow,
+    then the right one: within the wall and the fat beneath the mucosa lie two rounded collections about 1-2 cm
+    across, with soft, reddish-brown contents in which the tissue of the wall can no longer be recognised. Each
+    collection is surrounded by a firm whitish rim: this is the fibrous, inflamed tissue that walls off the abscess. That is
+    exactly what an abscess is: a cavity carved out of a solid tissue by liquefactive necrosis, where the enzymes of
+    neutrophils drawn in by bacteria dissolve the dead cells, and which over time is walled off by fibrous tissue.
+alt:
+  it: >-
+    Fotografia a colori di un tratto di colon aperto e sezionato su un telo chiaro: in alto le pieghe della mucosa, in
+    parte colorate di grigio-blu; in basso due aree rotondeggianti brunastre, circondate da un bordo biancastro e da
+    grasso giallo, indicate da due grandi frecce bianche; in alto un righello capovolto in centimetri.
+  en: >-
+    Colour photograph of an opened and sectioned segment of colon on a pale drape: mucosal folds at the top, partly
+    stained grey-blue; at the bottom two rounded brownish areas, surrounded by a whitish rim and yellow fat, marked by
+    two large white arrows; an upside-down centimetre ruler at the top.
+annotations:
+  - id: abscess-left
+    label: { it: Primo ascesso diverticolare, en: First diverticular abscess }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.38, 0.68, 0.42, 0.62, 0.48, 0.62, 0.52, 0.68, 0.53, 0.78, 0.48, 0.83, 0.40, 0.82, 0.37, 0.76]
+  - id: abscess-right
+    label: { it: Secondo ascesso diverticolare, en: Second diverticular abscess }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.66, 0.64, 0.72, 0.59, 0.80, 0.60, 0.86, 0.66, 0.85, 0.74, 0.78, 0.78, 0.70, 0.77, 0.66, 0.71]
+  - id: fibrous-wall
+    label: { it: Bordo fibroso biancastro (capsula), en: Whitish fibrous rim (capsule) }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.53, 0.66, 0.56, 0.66, 0.58, 0.80, 0.56, 0.85, 0.53, 0.84]

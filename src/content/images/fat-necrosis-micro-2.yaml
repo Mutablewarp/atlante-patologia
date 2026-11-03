@@ -1,0 +1,67 @@
+id: fat-necrosis-micro-2
+file: fat-necrosis-micro-2.jpg
+kind: micro
+sourceUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC9207225/figure/ccr35971-fig-0002/
+author: Chaima Kouki, Mariem Amouri, Emna Bahloul, Slim Charfi, Fatma Hammemi, Tahya Boudawara, Hamida Turki
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-10-10
+modifications: >-
+  None: Figure 2 of the source article is used exactly as published (709 × 532 px, no labels or arrows in the
+  original). The image file was obtained through the Europe PMC open-access service for PMC9207225.
+attributionText: >-
+  Chaima Kouki, Mariem Amouri, Emna Bahloul, Slim Charfi, Fatma Hammemi, Tahya Boudawara, Hamida Turki, "Fat
+  necrosis: A neglected side effect of intramuscular injections", Clinical Case Reports 2022;10(6):e5971,
+  doi:10.1002/ccr3.5971, Figure 2, CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+# License check (2026-10-10): the article XML on Europe PMC states CC BY 4.0 ("© 2022 The Authors", published by
+# Wiley); the figure legend gives no third-party credit, so the article authors are the creators. The journal
+# citation indexes the authors as "Chaima K, Mariem A, …" (given and family names swapped in the PMC metadata);
+# author and attributionText give the names in byline order (given name, family name).
+# Histology only, nothing identifies the patient.
+stain: H&E
+magnification: low power (×50 in the source)
+caption:
+  it: >-
+    Necrosi del tessuto adiposo non enzimatica, insorta nel sottocute di un gluteo dopo iniezioni intramuscolari: è
+    l'equivalente della forma traumatica, in cui sono le lipasi degli stessi adipociti danneggiati a liberare gli
+    acidi grassi. Qui la lesione è in fase avanzata, di riparazione. A piccolo ingrandimento colpiscono gli spazi
+    vuoti di dimensioni molto diverse, alcuni enormi e di forma irregolare: sono adipociti morti confluiti in
+    microcisti oleose (pseudocisti lipidiche), il cui contenuto si è sciolto durante l'allestimento del preparato.
+    Poi guarda ciò che sta fra gli spazi: uno stroma rosa denso di collagene, più compatto in alto a destra
+    (fibrosi), con istiociti e cellule infiammatorie che rivestono le cavità. Gli autori descrivono numerose cellule
+    giganti multinucleate da corpo estraneo, che a questa risoluzione non si riconoscono una per una. È la sequenza
+    tipica: necrosi e infiammazione acuta all'inizio, poi macrofagi schiumosi e cellule giganti che inglobano i
+    lipidi, infine fibrosi e talora calcificazione distrofica; per questo la lesione diventa dura e può simulare un
+    tumore, soprattutto nella mammella.
+  en: >-
+    Non-enzymatic fat necrosis in the subcutis of a buttock after intramuscular injections: the equivalent of the
+    traumatic form, in which lipases from the injured adipocytes themselves release the fatty acids. Here the lesion
+    is late, in the healing phase. At low power the striking feature is the empty spaces of very different sizes,
+    some huge and irregular: dead adipocytes have merged into oil microcysts (lipid pseudocysts) whose contents
+    dissolved during tissue processing. Then look at what lies between the spaces: a dense pink collagenous stroma,
+    most compact at the upper right (fibrosis), with histiocytes and inflammatory cells lining the cavities. The
+    authors describe numerous multinucleated foreign-body giant cells, which cannot be picked out one by one at this
+    resolution. This is the usual sequence: necrosis and acute inflammation first, then foamy macrophages and giant
+    cells that engulf the lipid, finally fibrosis and sometimes dystrophic calcification; that is why the lesion
+    becomes firm and can mimic a tumour, especially in the breast.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina a piccolo ingrandimento: numerosi spazi bianchi vuoti, rotondi o irregolari e
+    di grandezza molto variabile, immersi in uno stroma rosa intenso con molti piccoli nuclei; in alto a destra lo
+    stroma è più compatto e fibroso.
+  en: >-
+    Low-power haematoxylin and eosin micrograph: many empty white spaces, round or irregular and of very variable
+    size, set in an intensely pink stroma with many small nuclei; at the upper right the stroma is denser and
+    fibrous.
+annotations:
+  - id: lipid-cysts
+    label: { it: Microcisti oleose da adipociti necrotici confluiti, en: Oil microcysts from merged necrotic adipocytes }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.02, 0.08, 0.40, 0.05, 0.62, 0.45, 0.62, 0.98, 0.02, 0.98] }
+  - id: fibrosis
+    label: { it: "Fibrosi: stroma collagene denso", en: "Fibrosis: dense collagenous stroma" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.55, 0.02, 0.98, 0.02, 0.98, 0.45, 0.70, 0.50, 0.55, 0.30] }

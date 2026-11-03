@@ -1,0 +1,54 @@
+id: liquefactive-necrosis-gross-1
+file: liquefactive-necrosis-gross-1.jpg
+kind: gross
+sourceUrl: https://commons.wikimedia.org/wiki/File:Liver_containing_amebic_abscess,_gross_pathology_3MG0042_lores.jpg
+author: Centers for Disease Control and Prevention (CDC) / Dr. Mae Melvin; Dr. E. West of Mobile, Alabama
+license: PD
+licenseUrl: https://commons.wikimedia.org/wiki/Template:PD-USGov-HHS-CDC
+retrievedAt: 2026-10-10
+modifications: "Re-encoded as JPEG because the Commons original (700 × 472 px) is a truncated file that strict decoders reject; no crop, no resize, no colour change."
+attributionText: "CDC / Dr. Mae Melvin; Dr. E. West, CDC Public Health Image Library (PHIL #357), public domain, via Wikimedia Commons"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+caption:
+  it: >-
+    Fegato sezionato con un ascesso amebico da Entamoeba histolytica (fotografia CDC del 1962; a sinistra un
+    righello in centimetri). Guarda prima il centro: al posto del parenchima c'è una grande cavità di diversi
+    centimetri, con la parete irregolare, sfilacciata e granulosa, di colore rosa-grigiastro. È il segno macroscopico
+    della necrosi colliquativa: il tessuto morto non conserva la struttura dell'organo, ma si scioglie e lascia uno
+    spazio. Confronta poi la parete della cavità con il parenchima epatico conservato, liscio e rosso-bruno, sulla
+    sinistra della sezione. Nell'ascesso amebico le amebe uccidono gli epatociti al margine della lesione, che così
+    si allarga lentamente; il contenuto è un materiale denso e bruno, detto "a pasta d'acciughe", con pochi
+    neutrofili, quindi non è vero pus. Nell'ascesso batterico, invece, il tessuto viene sciolto dagli enzimi
+    idrolitici dei neutrofili. In entrambi i casi il risultato è lo stesso: una cavità dove prima c'era tessuto
+    solido.
+  en: >-
+    Cut liver with an amoebic abscess caused by Entamoeba histolytica (CDC photograph from 1962; a centimetre ruler
+    on the left). Look first at the centre: in place of the parenchyma there is a large cavity several centimetres
+    across, with an irregular, shaggy, granular, pinkish-grey wall. This is the gross sign of liquefactive necrosis:
+    the dead tissue does not keep the structure of the organ but dissolves and leaves a space. Then compare the
+    cavity wall with the preserved, smooth, red-brown liver parenchyma on the left of the slice. In an amoebic
+    abscess the amoebae kill hepatocytes at the edge of the lesion, which therefore enlarges slowly; the contents are
+    a thick brown material described as "anchovy paste", with few neutrophils, so it is not true pus. In a bacterial
+    abscess, by contrast, the tissue is dissolved by the hydrolytic enzymes of neutrophils. Either way the result is
+    the same: a cavity where there used to be solid tissue.
+alt:
+  it: >-
+    Fotografia a colori di un fegato tagliato: al centro una grande cavità dalla parete irregolare, granulosa e
+    rosa-grigiastra, circondata da tessuto epatico rosso-bruno e violaceo; a sinistra un righello verticale in
+    centimetri.
+  en: >-
+    Colour photograph of a cut liver: in the centre a large cavity with an irregular, granular, pinkish-grey wall,
+    surrounded by red-brown and purplish liver tissue; on the left a vertical centimetre ruler.
+annotations:
+  - id: abscess-cavity
+    label: { it: Cavità dell'ascesso con parete sfilacciata, en: Abscess cavity with shaggy wall }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.37, 0.40, 0.47, 0.30, 0.55, 0.25, 0.66, 0.33, 0.72, 0.48, 0.74, 0.60, 0.68, 0.72, 0.60, 0.84, 0.47, 0.87, 0.39, 0.80, 0.35, 0.65]
+  - id: preserved-liver
+    label: { it: Parenchima epatico conservato, en: Preserved liver parenchyma }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.14, 0.34, 0.28, 0.34, 0.33, 0.56, 0.22, 0.60, 0.15, 0.50] }

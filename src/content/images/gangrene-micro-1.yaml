@@ -1,0 +1,59 @@
+id: gangrene-micro-1
+file: gangrene-micro-1.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Histopathology_of_small_bowel_gangrene.jpg
+author: Mikael Häggström, M.D.
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-10-10
+modifications: "none (Wikimedia original file, 1160 × 857 px)"
+attributionText: "Mikael Häggström, M.D., via Wikimedia Commons, CC0 1.0 (public domain dedication)"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: low power
+caption:
+  it: >-
+    Parete di intestino tenue da un volvolo (ansa attorcigliata), EE a basso ingrandimento. Procedi dal colore
+    d'insieme ai dettagli. A piccolo ingrandimento quasi tutto il campo è rosso: il sangue è uscito dai vasi e si è
+    diffuso in tutti gli strati della parete (emorragia transmurale). Cerca poi i vasi: parecchi sono molto dilatati e
+    pieni di emazie, segno che il deflusso venoso è bloccato; quando un'ansa si torce, le vene, a parete sottile,
+    vengono compresse prima delle arterie, quindi il sangue continua ad arrivare ma non riesce a uscire. In basso i
+    fasci violacei della tonaca muscolare propria sono separati dal sangue che vi si infiltra; nella parte alta il
+    tessuto è frammentato e cosparso di cellule infiammatorie. È l'aspetto microscopico della gangrena di un organo
+    interno: un infarto emorragico di tutto lo spessore della parete, che a occhio nudo appare rosso-nerastra,
+    edematosa e friabile e viene invasa facilmente dai batteri intestinali (gangrena umida). Poiché la necrosi è
+    transmurale, la parete può perforarsi.
+  en: >-
+    Small-bowel wall from a volvulus (twisted loop), H&E at low power. Work from the overall colour to the details. At
+    scanning power almost the whole field is red: blood has left the vessels and spread through every layer of the
+    wall (transmural hemorrhage). Next find the vessels: several are hugely distended and packed with red cells, the
+    sign of blocked venous outflow; when a loop twists, the thin-walled veins are compressed before the arteries, so
+    blood keeps coming in but cannot get out. At the bottom, the purple bundles of the muscularis propria are being
+    split apart by blood; in the upper part the tissue is fragmented and dotted with inflammatory cells. This is the
+    microscopic face of gangrene in an internal organ: hemorrhagic infarction of the full thickness of the wall, which
+    grossly looks dark red to black, swollen and friable and is easily invaded by gut bacteria (wet gangrene). Because
+    the necrosis is transmural, the wall can perforate.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina a basso ingrandimento di parete intestinale dominata da emorragia rosso vivo,
+    con diversi vasi rotondi e allungati dilatati da emazie, fasci di muscolatura liscia violacei in basso e tessuto
+    frammentato con molti piccoli nuclei scuri in alto a destra.
+  en: >-
+    Low-power H&E micrograph of bowel wall dominated by bright red hemorrhage, with several round and elongated
+    vessels distended by red cells, purple smooth-muscle bundles at the bottom and fragmented tissue with many small
+    dark nuclei at the upper right.
+annotations:
+  - id: congested-vessel
+    label: { it: Vaso dilatato e pieno di emazie (congestione), en: Distended vessel packed with red cells (congestion) }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.49, 0.58, 0.56, 0.55, 0.79, 0.60, 0.80, 0.68, 0.72, 0.79, 0.58, 0.80, 0.50, 0.73] }
+  - id: hemorrhage
+    label: { it: Emorragia nello spessore della parete, en: Hemorrhage within the wall }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.29, 0.57, 0.48, 0.57, 0.49, 0.72, 0.32, 0.74, 0.27, 0.66] }
+  - id: muscularis-propria
+    label: { it: Tonaca muscolare propria dissociata dal sangue, en: Muscularis propria split apart by blood }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.10, 0.77, 0.45, 0.77, 0.45, 0.98, 0.10, 0.98] }

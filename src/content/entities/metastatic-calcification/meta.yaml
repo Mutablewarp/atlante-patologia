@@ -1,0 +1,142 @@
+id: metastatic-calcification
+module: g01
+tier: core
+kind: process
+names:
+  it: "Calcificazione metastatica"
+  en: "Metastatic calcification"
+  eponyms: []
+  synonyms:
+    it: ["Calcinosi metastatica"]
+    en: ["Metastatic calcinosis"]
+  abbreviations: []
+summary:
+  it: "Deposito di sali di calcio in tessuti sani, causato da un aumento sistemico del prodotto calcio-fosforo (ipercalcemia o iperfosfatemia)."
+  en: "Deposition of calcium salts in healthy tissue, caused by a systemic rise in the calcium-phosphorus product (hypercalcemia or hyperphosphatemia)."
+lenses:
+  system: [general, kidney, respiratory, vessels]
+  process: [pathologic-calcification, extracellular-accumulation]
+  pattern: [metastatic-calcification]
+  presentation: [hypercalcemia]
+  marker: [von-kossa, calcium-phosphate]
+  group: [metabolic]
+learningObjectives:
+  - it: "Definire la calcificazione metastatica e distinguerla dalla calcificazione distrofica in base allo stato del tessuto e del metabolismo minerale."
+    en: "Define metastatic calcification and distinguish it from dystrophic calcification by the state of the tissue and of mineral metabolism."
+  - it: "Elencare le principali cause di ipercalcemia e di iperfosfatemia che portano a calcificazione metastatica."
+    en: "List the main causes of hypercalcemia and hyperphosphatemia that lead to metastatic calcification."
+  - it: "Spiegare perché l'insufficienza renale cronica può causare calcificazione metastatica anche senza ipercalcemia."
+    en: "Explain why chronic kidney disease can cause metastatic calcification even without hypercalcemia."
+  - it: "Riconoscere le sedi tipiche e l'aspetto istologico dei depositi, anche con la colorazione di von Kossa."
+    en: "Recognize the typical sites and histologic appearance of the deposits, including the von Kossa stain."
+  - it: "Descrivere la nefrocalcinosi e le sue conseguenze sulla funzione tubulare."
+    en: "Describe nephrocalcinosis and its consequences for tubular function."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: dystrophic-calcification
+    note:
+      it: "Stesso minerale (idrossiapatite): tessuto sano con alterazione sistemica del metabolismo calcio-fosforico, contro tessuto danneggiato con calcemia e fosforemia normali."
+      en: "Same mineral (hydroxyapatite): healthy tissue with a systemic calcium-phosphorus disorder versus damaged tissue with normal mineral levels."
+  - type: complicationOf
+    target: primary-hyperparathyroidism
+    note:
+      it: "L'ipercalcemia da riassorbimento osseo provoca nefrocalcinosi e calcificazioni dei tessuti molli."
+      en: "Hypercalcemia from bone resorption causes nephrocalcinosis and soft-tissue calcification."
+  - type: sameLesionOtherOrgan
+    target: nephrocalcinosis
+    note:
+      it: "La nefrocalcinosi da ipercalcemia è la calcificazione metastatica del rene."
+      en: "Nephrocalcinosis due to hypercalcemia is metastatic calcification of the kidney."
+quickCheck:
+  - id: metastatic-calcification-q1
+    q:
+      it: "Qual è la differenza fondamentale tra calcificazione metastatica e distrofica?"
+      en: "What is the fundamental difference between metastatic and dystrophic calcification?"
+    a:
+      it: "La metastatica colpisce tessuti sani per un'alterazione sistemica del metabolismo minerale (ipercalcemia o iperfosfatemia); la distrofica colpisce tessuti danneggiati o necrotici, senza alterazione sistemica."
+      en: "Metastatic calcification affects healthy tissue because of a systemic mineral disorder (hypercalcemia or hyperphosphatemia); dystrophic calcification affects damaged or necrotic tissue without a systemic disorder."
+    kind: short
+  - id: metastatic-calcification-q2
+    q:
+      it: "Citare tre sedi tipiche della calcificazione metastatica."
+      en: "Name three typical sites of metastatic calcification."
+    a:
+      it: "Setti alveolari del polmone, tubuli renali e pareti dei vasi sanguigni."
+      en: "Pulmonary alveolar septa, renal tubules and blood vessel walls."
+    kind: short
+  - id: metastatic-calcification-q3
+    q:
+      it: "Con quale colorazione speciale i depositi di calcio appaiono neri?"
+      en: "Which special stain turns calcium deposits black?"
+    a:
+      it: "La colorazione di von Kossa."
+      en: "The von Kossa stain."
+    kind: short
+  - id: metastatic-calcification-q4
+    q:
+      it: "Perché un paziente con insufficienza renale cronica terminale può sviluppare una calcificazione metastatica pur avendo una calcemia normale o bassa?"
+      en: "Why can a patient with end-stage chronic kidney disease develop metastatic calcification despite normal or low serum calcium?"
+    a:
+      it: "La riduzione della filtrazione glomerulare provoca ritenzione di fosfato: l'iperfosfatemia aumenta il prodotto calcio-fosforo anche se la calcemia tende a scendere."
+      en: "The reduced glomerular filtration rate retains phosphate: hyperphosphatemia raises the calcium-phosphorus product even though serum calcium tends to fall."
+    kind: free
+selfExplain:
+  - it: "Perché un aumento del prodotto calcio-fosforo fa precipitare il minerale anche in tessuti con cellule sane?"
+    en: "Why does a raised calcium-phosphorus product make mineral precipitate even in tissues whose cells are healthy?"
+  - it: "Perché la presenza di calcificazioni in un tessuto non basta a dimostrare un'ipercalcemia?"
+    en: "Why is finding calcification in a tissue not enough to prove hypercalcemia?"
+  - it: "In che modo la nefrocalcinosi porta a difetti di concentrazione delle urine e ad acidosi tubulare renale?"
+    en: "How does nephrocalcinosis lead to urinary concentrating defects and renal tubular acidosis?"
+chain:
+  - pathology:
+      it: "Nefrocalcinosi da iperparatiroidismo primario"
+      en: "Nephrocalcinosis from primary hyperparathyroidism"
+    sign:
+      it: "Poliuria e polidipsia; coliche renali da calcoli"
+      en: "Polyuria and polydipsia; renal colic from stones"
+    lab:
+      it: "Ipercalcemia e ipercalciuria; calcificazione renale diffusa all'imaging"
+      en: "Hypercalcemia and hypercalciuria; diffuse renal calcification on imaging"
+  - pathology:
+      it: "Calcificazione metastatica nell'insufficienza renale cronica terminale"
+      en: "Metastatic calcification in end-stage chronic kidney disease"
+    sign:
+      it: "Calcificazioni dei tessuti molli e dei vasi all'imaging"
+      en: "Soft-tissue and vascular calcification on imaging"
+    lab:
+      it: "Iperfosfatemia con calcemia normale o bassa; iperparatiroidismo secondario"
+      en: "Hyperphosphatemia with normal or low serum calcium; secondary hyperparathyroidism"
+images:
+  - id: metastatic-calcification-gross-1
+    role: gross
+    pairWith: metastatic-calcification-micro-1
+  - id: metastatic-calcification-micro-1
+    role: micro
+  - id: metastatic-calcification-micro-2
+    role: micro
+  - id: g01-calcification-types
+    role: diagram
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "1"
+    pages: "29-30"
+  - source: rubin-8e
+    chapter: "8"
+    pages: "388"
+  - source: rubin-8e
+    chapter: "22"
+    pages: "964-965"
+  - source: rubin-8e
+    chapter: "26"
+    pages: "1179"
+  - source: rubin-8e
+    chapter: "27"
+    pages: "1222"
+  - source: rubin-8e
+    chapter: "30"
+    pages: "1348, 1361-1362, 1396"
+lastUpdated: 2026-11-03
+status: published

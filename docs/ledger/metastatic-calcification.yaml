@@ -1,0 +1,474 @@
+entity: metastatic-calcification
+claims:
+  - claimId: metastatic-calcification-c001
+    section: definition
+    statement: "Metastatic calcification is calcium salt deposition in previously normal tissue caused by a systemic derangement of calcium metabolism."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29-30" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c002
+    section: definition
+    statement: "Dystrophic calcification begins with cell injury, whereas metastatic calcification reflects a systemic mineral disorder."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29-30" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c003
+    section: definition
+    statement: "Both dystrophic and metastatic calcification lay down calcium hydroxyapatite, the mineral that makes up most of bone and dental tissue."
+    sourceRef: { source: rubin-8e, chapter: "30", pages: "1396" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c004
+    section: etiology
+    statement: "An increased calcium-phosphorus product, from hypercalcemia or hyperphosphatemia, predisposes normal soft tissue to calcify."
+    sourceRef: { source: rubin-8e, chapter: "30", pages: "1348" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c005
+    section: etiology
+    statement: "Hypercalcemia from bone resorption arises in primary hyperparathyroidism, PTH- or PTH-like-protein-secreting tumors, osteolytic tumors and metastases, and renal osteodystrophy."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "964" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c006
+    section: etiology
+    statement: "In plasma cell myeloma, calcium released by bone resorption can precipitate in the kidneys (nephrocalcinosis)."
+    sourceRef: { source: rubin-8e, chapter: "26", pages: "1179" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c007
+    section: etiology
+    statement: "Hypercalcemia from increased intestinal calcium absorption occurs with vitamin D excess, sarcoidosis, milk-alkali syndrome and idiopathic hypercalcemia."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "964" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c008
+    section: etiology
+    statement: "Excess vitamin D usually results from overdosing; granulomatous disorders like sarcoidosis can occasionally activate vitamin D abnormally."
+    sourceRef: { source: rubin-8e, chapter: "8", pages: "388" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c009
+    section: etiology
+    statement: "Falling GFR in chronic kidney disease retains phosphate; end-stage patients with high phosphate may calcify soft tissues in several locations."
+    sourceRef: { source: rubin-8e, chapter: "30", pages: "1361-1362" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c010
+    section: pathogenesis
+    statement: "A raised calcium-phosphorus product leads to calcification of soft tissues that were normal."
+    sourceRef: { source: rubin-8e, chapter: "30", pages: "1348" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c011
+    section: pathogenesis
+    statement: "Metastatic calcification tends to occur where pH gradients produce local alkalinity."
+    sourceRef: { source: rubin-8e, chapter: "30", pages: "1362" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c012
+    section: pathogenesis
+    statement: "Hyperphosphatemia alone, as in chronic kidney disease, can predispose to metastatic calcification."
+    sourceRef: { source: rubin-8e, chapter: "30", pages: "1348, 1362" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c013
+    section: pathogenesis
+    statement: "In chronic renal disease high phosphate lowers serum calcium, tubular injury reduces 1-alpha-hydroxylase and 1,25(OH)2D, intestinal calcium absorption falls, hypocalcemia stimulates PTH, and most end-stage patients have hyperparathyroidism."
+    sourceRef: { source: rubin-8e, chapter: "30", pages: "1361-1362" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c014
+    section: pathogenesis
+    statement: "In dystrophic calcification, membrane-derived fatty acids from dying cells complex with calcium, which then precipitates locally."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c015
+    section: gross
+    statement: "Deposits in hypercalcemic nephrocalcinosis vary from microscopic foci to clumps visible by eye or on imaging."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "964" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c016
+    section: gross
+    statement: "With severe hypercalcemia such as primary hyperparathyroidism, kidneys may show wedge-shaped scars, where calcification has produced fibrosis of the interstitium and parenchymal atrophy, between relatively normal tissue."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "964" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c017
+    section: micro
+    statement: "Disorders that raise blood calcium can calcify vessel walls, renal tubules and the alveolar septa of the lung."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "30" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c018
+    section: micro
+    statement: "Vitamin D excess can cause ectopic calcium deposits in the heart as well as in vessels and lungs."
+    sourceRef: { source: rubin-8e, chapter: "8", pages: "388" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c019
+    section: micro
+    statement: "In nephrocalcinosis, tubular basement membranes calcify, especially in proximal convoluted tubules, and the interstitium contains calcium precipitates."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "964" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c020
+    section: micro
+    statement: "Calcium also accumulates in tubular epithelial cell cytoplasm; the cells degenerate and slough into lumens forming calcified casts."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "964-965" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c021
+    section: micro
+    statement: "Bowman capsule of some glomeruli and intrarenal arteries may be calcified."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c022
+    section: micro
+    statement: "Calcium deposits stain deep blue with hematoxylin."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c023
+    section: ancillary
+    statement: "The von Kossa stain, more specific than hematoxylin, colors calcium deposits black."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c024
+    section: ancillary
+    statement: "On electron microscopy, the mitochondria of tubular epithelium contain plentiful calcium deposits."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c025
+    section: clinical
+    statement: "Nephrocalcinosis can impair renal function through tubular dysfunction: renal tubular acidosis, urinary salt loss and impaired urine concentration."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "964" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c026
+    section: clinical
+    statement: "Primary hyperparathyroidism produces hypercalciuria-driven polyuria with secondary thirst, and imaging may show diffuse calcification of the kidneys."
+    sourceRef: { source: rubin-8e, chapter: "27", pages: "1222" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c027
+    section: clinical
+    statement: "The first effect of vitamin D excess is hypercalcemia, with nonspecific weakness and headaches."
+    sourceRef: { source: rubin-8e, chapter: "8", pages: "388" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c028
+    section: diagnosis
+    statement: "Radiographically, heterotopic calcification is amorphous and often denser than bone, unlike the trabeculated pattern of bone formation."
+    sourceRef: { source: rubin-8e, chapter: "30", pages: "1348" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c029
+    section: prognosis
+    statement: "Hypercalciuria can cause nephrocalcinosis, calcium-containing stones, or both."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "964" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c030
+    section: prognosis
+    statement: "Infants tolerate vitamin D excess poorly; uncorrected, it risks renal acidosis, premature arteriosclerosis and stenosis of the aorta above the valve."
+    sourceRef: { source: rubin-8e, chapter: "8", pages: "388" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c031
+    section: differential
+    statement: "Dystrophic calcification affects diseased or injured soft tissue, for example tumors, arteriosclerotic vessels and sites of trauma."
+    sourceRef: { source: rubin-8e, chapter: "30", pages: "1348" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c032
+    section: differential
+    statement: "Renal calcification caused by hypercalcemia is metastatic, whereas calcification in infarcted or necrotic cortex is dystrophic."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "964" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c033
+    section: differential
+    statement: "Calcium stones arise when luminal fluids are supersaturated and calcium settles on an organic core, e.g. in bile ducts or the urinary tract."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "30" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c034
+    section: differential
+    statement: "Heterotopic ossification means new bone in soft tissue and is not tied to a metabolic disorder; serum calcium and phosphate are normal."
+    sourceRef: { source: rubin-8e, chapter: "30", pages: "1348" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c035
+    section: differential
+    statement: "CPPD crystals are short rhomboid crystals with weak positive birefringence deposited on cartilage."
+    sourceRef: { source: rubin-8e, chapter: "30", pages: "1396" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c036
+    section: high-yield
+    statement: "Metastatic calcification affects normal tissue and is due to a systemic mineral disorder."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29-30" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c037
+    section: high-yield
+    statement: "Hypercalcemic causes of nephrocalcinosis include primary hyperparathyroidism, vitamin D excess, sarcoidosis, milk-alkali syndrome and osteolytic tumors."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "964" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c038
+    section: high-yield
+    statement: "Typical sites are blood vessels, renal tubules and the alveolar septa of the lung."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "30" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c039
+    section: high-yield
+    statement: "Calcium deposits are blue on hematoxylin and black with von Kossa."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c040
+    section: traps
+    statement: "In chronic kidney disease, phosphate retention underlies metastatic calcification while serum calcium is driven down."
+    sourceRef: { source: rubin-8e, chapter: "30", pages: "1361-1362" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c041
+    section: traps
+    statement: "About 20% of kidneys at autopsy have small calcium deposits without functional significance or association with hypercalcemia."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "964" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c042
+    section: traps
+    statement: "Nephrocalcinosis denotes parenchymal calcium deposits, nephrolithiasis denotes stones in the collecting system; hypercalciuria can produce one or both."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "964-965" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c043
+    section: pathogenesis
+    statement: "Metastatic calcification is calcium salt deposition in previously normal tissue caused by a systemic derangement of calcium metabolism."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29-30" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c044
+    section: diagnosis
+    statement: "An increased calcium-phosphorus product, from hypercalcemia or hyperphosphatemia, predisposes normal soft tissue to calcify."
+    sourceRef: { source: rubin-8e, chapter: "30", pages: "1348" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c045
+    section: diagnosis
+    statement: "The von Kossa stain, more specific than hematoxylin, colors calcium deposits black."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c046
+    section: prognosis
+    statement: "With severe hypercalcemia such as primary hyperparathyroidism, kidneys may show wedge-shaped scars, where calcification has produced fibrosis of the interstitium and parenchymal atrophy, between relatively normal tissue."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "964" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c047
+    section: high-yield
+    statement: "An increased calcium-phosphorus product, from hypercalcemia or hyperphosphatemia, predisposes normal soft tissue to calcify."
+    sourceRef: { source: rubin-8e, chapter: "30", pages: "1348" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c048
+    section: high-yield
+    statement: "Metastatic calcification tends to occur where pH gradients produce local alkalinity."
+    sourceRef: { source: rubin-8e, chapter: "30", pages: "1362" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c049
+    section: high-yield
+    statement: "In nephrocalcinosis, tubular basement membranes calcify, especially in proximal convoluted tubules, and the interstitium contains calcium precipitates."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "964" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c050
+    section: high-yield
+    statement: "Both dystrophic and metastatic calcification lay down calcium hydroxyapatite, the mineral that makes up most of bone and dental tissue."
+    sourceRef: { source: rubin-8e, chapter: "30", pages: "1396" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c051
+    section: high-yield
+    statement: "Nephrocalcinosis can impair renal function through tubular dysfunction: renal tubular acidosis, urinary salt loss and impaired urine concentration."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "964" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c052
+    section: traps
+    statement: "Metastatic calcification is calcium salt deposition in previously normal tissue caused by a systemic derangement of calcium metabolism."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29-30" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c053
+    section: traps
+    statement: "Hypercalcemia from bone resorption arises in primary hyperparathyroidism, PTH- or PTH-like-protein-secreting tumors, osteolytic tumors and metastases, and renal osteodystrophy."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "964" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c054
+    section: traps
+    statement: "Both dystrophic and metastatic calcification lay down calcium hydroxyapatite, the mineral that makes up most of bone and dental tissue."
+    sourceRef: { source: rubin-8e, chapter: "30", pages: "1396" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c055
+    section: mnemonics
+    statement: "Dystrophic calcification begins with cell injury, whereas metastatic calcification reflects a systemic mineral disorder."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29-30" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c056
+    section: mnemonics
+    statement: "Typical sites are blood vessels, renal tubules and the alveolar septa of the lung."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "30" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c057
+    section: mnemonics
+    statement: "Metastatic calcification tends to occur where pH gradients produce local alkalinity."
+    sourceRef: { source: rubin-8e, chapter: "30", pages: "1362" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c058
+    section: high-yield
+    statement: "In plasma cell myeloma, calcium freed by tumor-driven bone resorption can deposit in the kidneys."
+    sourceRef: { source: rubin-8e, chapter: "26", pages: "1179" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: metastatic-calcification-c059
+    section: high-yield
+    statement: "Chronic kidney disease leads to metastatic calcification through phosphate retention and hyperphosphatemia."
+    sourceRef: { source: rubin-8e, chapter: "30", pages: "1361-1362" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03

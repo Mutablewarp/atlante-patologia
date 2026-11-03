@@ -1,0 +1,147 @@
+id: liquefactive-necrosis
+module: g01
+tier: core
+kind: process
+names:
+  it: "Necrosi colliquativa"
+  en: "Liquefactive necrosis"
+  eponyms: []
+  synonyms:
+    it: ["Necrosi liquefattiva", "Colliquazione", "Necrosi da liquefazione"]
+    en: ["Colliquative necrosis", "Liquefaction necrosis"]
+  abbreviations: []
+summary:
+  it: "Necrosi in cui gli enzimi digeriscono le cellule morte più rapidamente di quanto il tessuto riesca a ripararsi: il tessuto si colliqua, come nell'ascesso e nell'infarto cerebrale, e può lasciare una cavità."
+  en: "Necrosis in which enzymes digest dead cells faster than the tissue can repair, so the tissue turns to liquid, as in an abscess or a brain infarct, and may leave a cavity."
+lenses:
+  system: [general, cns, skin]
+  process: [cell-death, necrosis, irreversible-injury, acute-inflammation, hypoxic-ischemic-injury]
+  pattern: [necrosis-liquefactive]
+  presentation: [mass-lesion, fever, ischemic-event]
+  marker: []
+  group: [infectious, vascular, toxic-environmental]
+learningObjectives:
+  - it: "Spiegare perché la necrosi colliquativa dipende dal rapporto tra la velocità con cui gli enzimi digeriscono le cellule morte e quella con cui il tessuto si ripara."
+    en: "Explain why liquefactive necrosis depends on the balance between how fast dead cells are digested by enzymes and how fast the tissue repairs."
+  - it: "Distinguere i due contesti classici: l'ascesso batterico, in cui il tessuto è digerito dagli enzimi dei neutrofili, e l'infarto cerebrale, che va incontro a colliquazione anche in assenza di infiammazione acuta."
+    en: "Distinguish the two classic settings: the bacterial abscess, digested by neutrophil enzymes, and the brain infarct, which liquefies even without acute inflammation."
+  - it: "Descrivere l'evoluzione temporale dell'infarto cerebrale fino alla formazione di una cavità cistica e la struttura a strati dell'ascesso cerebrale."
+    en: "Describe the time course of a brain infarct up to a cystic cavity and the layered structure of a brain abscess."
+  - it: "Riconoscere il quadro dell'ascesso cerebrale all'imaging: presa di contrasto ad anello regolare, di spessore uniforme, e centro iperintenso nelle sequenze in diffusione (DWI)."
+    en: "Recognize the imaging picture of a brain abscess: a smooth enhancing ring of uniform thickness and a core that is bright on diffusion-weighted imaging."
+prerequisites: [hypoxic-ischemic-injury]
+relations:
+  - type: differentialOf
+    target: coagulative-necrosis
+    note:
+      it: "Nella necrosi coagulativa i profili cellulari si conservano; in quella colliquativa il tessuto viene dissolto."
+      en: "In coagulative necrosis cell outlines are preserved; in liquefactive necrosis the tissue is dissolved."
+  - type: differentialOf
+    target: caseous-necrosis
+    note:
+      it: "In entrambe i profili cellulari vanno perduti, ma il materiale caseoso persiste come detrito granulare anziché essere lisato."
+      en: "Both lose cell outlines, but caseous material persists as granular debris instead of being lysed."
+  - type: complicationOf
+    target: acute-inflammation
+    note:
+      it: "Quando l'infiammazione acuta purulenta distrugge il tessuto e viene circoscritta, si forma un ascesso."
+      en: "When purulent acute inflammation destroys tissue and is walled off, an abscess forms."
+  - type: prerequisiteOf
+    target: brain-abscess
+    note:
+      it: "L'ascesso cerebrale è una cavità di necrosi colliquativa circondata da una capsula e da gliosi."
+      en: "A brain abscess is a cavity of liquefactive necrosis surrounded by a capsule and gliosis."
+  - type: prerequisiteOf
+    target: cerebral-infarction
+    note:
+      it: "L'infarto cerebrale va incontro a colliquazione e diventa una cavità cistica."
+      en: "A cerebral infarct liquefies and becomes a cystic cavity."
+quickCheck:
+  - id: liquefactive-necrosis-q1
+    q:
+      it: "In quali due situazioni classiche si osserva la necrosi colliquativa?"
+      en: "In which two classic settings does liquefactive necrosis occur?"
+    a:
+      it: "Nell'ascesso da infezione batterica e nell'infarto (necrosi ischemica) del sistema nervoso centrale."
+      en: "In abscesses from bacterial infection and in infarcts (ischemic necrosis) of the central nervous system."
+    kind: short
+  - id: liquefactive-necrosis-q2
+    q:
+      it: "Da dove provengono gli enzimi responsabili della colliquazione del tessuto in un ascesso?"
+      en: "Where do the enzymes that liquefy tissue in an abscess come from?"
+    a:
+      it: "Dai granulociti neutrofili richiamati dall'infiammazione acuta: sono le loro idrolasi."
+      en: "From the hydrolases of neutrophils recruited by acute inflammation."
+    kind: short
+  - id: liquefactive-necrosis-q3
+    q:
+      it: "Che cosa resta, a distanza di mesi, di un ampio infarto cerebrale?"
+      en: "What remains of a large brain infarct months later?"
+    a:
+      it: "Una cavità cistica delimitata da glia, con macrofagi carichi di lipidi ed emosiderina, che persiste per tutta la vita."
+      en: "A glia-lined cystic cavity containing lipid- and hemosiderin-laden macrophages, which persists for life."
+    kind: short
+  - id: liquefactive-necrosis-q4
+    q:
+      it: "Perché alla RM con mezzo di contrasto un ascesso cerebrale mostra una presa di contrasto ad anello?"
+      en: "Why does a brain abscess appear as an enhancing ring on contrast MRI?"
+    a:
+      it: "Perché lo strato di tessuto di granulazione che circonda il centro necrotico è privo di barriera ematoencefalica e lascia stravasare il mezzo di contrasto."
+      en: "The granulation tissue layer around the necrotic core lacks a blood-brain barrier and leaks contrast medium."
+    kind: free
+selfExplain:
+  - it: "Perché dopo un infarto il cervello va incontro a colliquazione, mentre il cuore o il rene mostrano una necrosi coagulativa persistente?"
+    en: "Why does the brain liquefy after an infarct, whereas the heart or kidney shows persistent coagulative necrosis?"
+  - it: "Perché le basi forti causano necrosi colliquativa e lesioni profonde, mentre gli acidi forti causano necrosi coagulativa più superficiale?"
+    en: "Why do strong alkalis cause liquefactive necrosis and deep injury, whereas strong acids cause more limited coagulative necrosis?"
+  - it: "In che modo la capsula fibrosa protegge il tessuto circostante, e che cosa succede se un ascesso non viene drenato?"
+    en: "How does the fibrous capsule protect the surrounding tissue, and what happens if an abscess is not drained?"
+chain:
+  - pathology:
+      it: "Ascesso cerebrale con centro purulento colliquato e capsula di tessuto di granulazione"
+      en: "Brain abscess with a liquefied purulent core and a granulation-tissue capsule"
+    sign:
+      it: "Deficit neurologici e segni di ipertensione endocranica da massa in espansione"
+      en: "Neurologic deficits and signs of raised intracranial pressure from an expanding mass"
+    lab:
+      it: "RM: presa di contrasto ad anello regolare di spessore uniforme; DWI: centro iperintenso"
+      en: "Contrast MRI: smooth enhancing ring of uniform thickness; DWI: bright core"
+  - pathology:
+      it: "Infarto cerebrale in via di colliquazione, con edema"
+      en: "Liquefying cerebral infarct with edema"
+    sign:
+      it: "Deficit neurologico focale improvviso, poi peggioramento da effetto massa"
+      en: "Sudden focal neurologic deficit, then worsening from mass effect"
+    lab:
+      it: "RM: restrizione della diffusione nell'area infartuata"
+      en: "MRI: restricted diffusion in the infarcted area"
+images:
+  - id: liquefactive-necrosis-gross-1
+    role: gross
+  - id: liquefactive-necrosis-gross-2
+    role: gross
+  - id: liquefactive-necrosis-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "1"
+    pages: "38-40"
+  - source: rubin-8e
+    chapter: "2"
+    pages: "68, 88"
+  - source: rubin-8e
+    chapter: "7"
+    pages: "338"
+  - source: rubin-8e
+    chapter: "9"
+    pages: "409-410"
+  - source: rubin-8e
+    chapter: "19"
+    pages: "773"
+  - source: rubin-8e
+    chapter: "32"
+    pages: "1456, 1465-1466, 1490"
+lastUpdated: 2026-11-03
+status: published

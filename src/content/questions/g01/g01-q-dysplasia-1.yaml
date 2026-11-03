@@ -1,0 +1,47 @@
+id: g01-q-dysplasia-1
+module: g01
+entities: [dysplasia]
+kind: mcq
+difficulty: 3
+tags: [cellular-adaptation, dysplasia]
+stem:
+  it: "Una donna di 34 anni, positiva per un tipo di HPV ad alto rischio, ha un Pap test anomalo. La biopsia mirata della zona di trasformazione mostra cellule squamose con nuclei grandi, irregolari e ipercromatici e rapporto nucleo/citoplasma elevato, che occupano tutto lo spessore dell'epitelio; non c'è maturazione verso la superficie e le mitosi si trovano a tutti i livelli. La membrana basale è integra e lo stroma non è infiltrato. Quale affermazione descrive meglio questa lesione?"
+  en: "A 34-year-old woman who tests positive for a high-risk HPV type has an abnormal Pap smear. A targeted biopsy of the transformation zone shows squamous cells with large, irregular, dark nuclei and a high nuclear-to-cytoplasmic ratio occupying the whole thickness of the epithelium; there is no maturation toward the surface and mitoses are found at every level. The basement membrane is intact and the stroma is not infiltrated. Which statement best describes this lesion?"
+options:
+  - id: a
+    text:
+      it: "HSIL (CIN 3): l'integrazione del DNA di un HPV ad alto rischio nel genoma ospite e le oncoproteine E6/E7 favoriscono l'espansione di un clone; la lesione tende a progredire e va trattata, ma non ha ancora superato la membrana basale."
+      en: "HSIL (CIN 3): integration of high-risk HPV DNA into the host genome and the E6/E7 oncoproteins favor expansion of one clone; the lesion tends to progress and needs treatment, but it has not yet crossed the basement membrane."
+    correct: true
+    why:
+      it: "Corretta. Atipie a tutto spessore senza maturazione superficiale, con membrana basale integra, corrispondono a displasia grave/carcinoma in situ, cioè CIN 3, compresa nella HSIL. Il passaggio ad alto grado è legato all'integrazione virale e alla selezione clonale guidata da E6/E7; le lesioni di alto grado tendono a progredire e si trattano. Finché la membrana basale è integra la lesione è in situ e non può invadere i vasi."
+      en: "Correct. Full-thickness atypia without surface maturation and with an intact basement membrane corresponds to severe dysplasia/carcinoma in situ, that is CIN 3, which falls within HSIL. Progression to high grade is linked to viral integration and E6/E7-driven clonal selection; high-grade lesions tend to progress and are treated. As long as the basement membrane is intact the lesion is in situ and cannot invade vessels."
+  - id: b
+    text:
+      it: "LSIL (CIN 1): il DNA virale resta separato dai cromosomi in molte cellule indipendenti; la lesione di solito regredisce, per cui basta il controllo nel tempo."
+      en: "LSIL (CIN 1): the viral DNA stays separate from the chromosomes in many independent cells; the lesion usually regresses, so follow-up alone is enough."
+    correct: false
+    why:
+      it: "Errata. Questa è la descrizione corretta di una lesione di basso grado (displasia lieve), che spesso scompare da sola. Ma qui le atipie occupano tutto lo spessore e manca ogni maturazione superficiale: il quadro è di alto grado, e limitarsi al controllo sarebbe un errore."
+      en: "Incorrect. This correctly describes a low-grade lesion (mild dysplasia), which often disappears on its own. Here, however, atypia fills the whole thickness and surface maturation is absent: the picture is high grade, and follow-up alone would be a mistake."
+  - id: c
+    text:
+      it: "Carcinoma squamoso invasivo, già in grado di metastatizzare per via linfatica."
+      en: "Invasive squamous cell carcinoma, already able to metastasize through lymphatic vessels."
+    correct: false
+    why:
+      it: "Errata. Il confine tra lesione in situ e carcinoma invasivo è la membrana basale: solo dopo averla superata le cellule invadono lo stroma e raggiungono i vasi. Qui la membrana basale è integra e lo stroma è libero."
+      en: "Incorrect. The boundary between an in situ lesion and invasive carcinoma is the basement membrane: only after crossing it do the cells invade the stroma and reach vessels. Here the basement membrane is intact and the stroma is free."
+  - id: d
+    text:
+      it: "Metaplasia squamosa della zona di trasformazione, un adattamento benigno e reversibile."
+      en: "Squamous metaplasia of the transformation zone, a benign and reversible adaptation."
+    correct: false
+    why:
+      it: "Errata. La zona di trasformazione è effettivamente sede di metaplasia squamosa, ma le cellule metaplastiche maturano normalmente e non hanno atipie nucleari. Pleomorfismo, nuclei ipercromatici, mitosi in alto e perdita della maturazione definiscono la displasia."
+      en: "Incorrect. The transformation zone is indeed a site of squamous metaplasia, but metaplastic cells mature normally and lack nuclear atypia. Pleomorphism, dark nuclei, mitoses high up and loss of maturation define dysplasia."
+backLink: { entity: dysplasia, section: micro }
+claims: [dysplasia-c019, dysplasia-c021, dysplasia-c022, dysplasia-c023, dysplasia-c024, dysplasia-c025, dysplasia-c030, dysplasia-c038, dysplasia-c041, dysplasia-c045, dysplasia-c047, dysplasia-c048, metaplasia-c008, metaplasia-c016, metaplasia-c026, metaplasia-c057]
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

@@ -1,0 +1,55 @@
+id: g01-q-fatty-change-1
+module: g01
+entities: [fatty-change, intracellular-accumulations, hydropic-swelling]
+kind: mcq
+difficulty: 2
+tags: [intracellular-accumulation, fatty-change]
+stem:
+  it: "Una donna di 29 anni alla 35ª settimana di gravidanza presenta dolore addominale, anoressia e ittero, con transaminasi aumentate. La biopsia epatica mostra epatociti ingranditi, con il citoplasma pieno di innumerevoli vacuoli minuti e il nucleo che resta al centro della cellula. Su sezione al congelatore l'Oil red O colora i vacuoli in rosso. Quale meccanismo spiega meglio l'alterazione degli epatociti, e che cosa implica?"
+  en: "A 29-year-old woman at 35 weeks of pregnancy has abdominal pain, anorexia and jaundice, with raised transaminases. A liver biopsy shows enlarged hepatocytes whose cytoplasm is filled with countless tiny vacuoles, while the nucleus stays in the center of the cell. On a frozen section, oil red O stains the vacuoles red. Which mechanism best explains the hepatocyte change, and what does it imply?"
+options:
+  - id: a
+    text:
+      it: "Un maggiore afflusso di acidi grassi liberi dal tessuto adiposo, con un accumulo di per sé innocuo."
+      en: "Increased delivery of free fatty acids from adipose tissue, producing a storage change that is harmless in itself."
+    correct: false
+    why:
+      it: "Errata. L'eccesso di acidi grassi in arrivo (diabete, lipolisi da etanolo) dà tipicamente una steatosi macrovescicolare, con una grossa goccia che spinge il nucleo alla periferia; quella goccia è innocua di per sé. Qui le gocce sono minute e il nucleo è centrale: un quadro di danno mitocondriale, tutt'altro che innocuo."
+      en: "Incorrect. Excess incoming fatty acids (diabetes, ethanol-driven lipolysis) typically give macrovesicular steatosis, with one large droplet pushing the nucleus to the periphery; that droplet is harmless in itself. Here the droplets are tiny and the nucleus is central, a pattern of mitochondrial injury that is anything but harmless."
+  - id: b
+    text:
+      it: "La mancanza di apoproteine per esportare i lipidi, come nella malnutrizione proteica."
+      en: "Lack of apoproteins to export lipid, as in protein malnutrition."
+    correct: false
+    why:
+      it: "Errata. È il meccanismo del fegato grasso nel kwashiorkor, dove i carboidrati forniscono il substrato ma il deficit proteico limita l'esportazione; quel fegato torna normale. Nulla indica malnutrizione, e lo schema microvescicolare punta ai mitocondri."
+      en: "Incorrect. That is the mechanism of the fatty liver of kwashiorkor, where carbohydrate supplies the substrate but protein deficiency limits export; that liver returns to normal. Nothing suggests malnutrition, and the microvesicular pattern points to mitochondria."
+  - id: c
+    text:
+      it: "Acqua in eccesso nella cellula per insufficienza della pompa del sodio (rigonfiamento idropico)."
+      en: "Excess intracellular water from failure of the sodium pump (hydropic swelling)."
+    correct: false
+    why:
+      it: "Errata. Anche nel rigonfiamento idropico il nucleo resta centrale, ma il citoplasma è pallido per l'acqua raccolta nelle cisterne del RE e una colorazione per i grassi è negativa. Qui l'Oil red O, che colora i lipidi neutri, è positivo."
+      en: "Incorrect. In hydropic swelling the nucleus also stays central, but the cytoplasm is pale from water held in the ER cisternae and a fat stain is negative. Here oil red O, which stains neutral lipid, is positive."
+  - id: d
+    text:
+      it: "L'ossidazione β mitocondriale materna è sopraffatta dagli acidi grassi non metabolizzati di un feto con un difetto della loro ossidazione; il quadro segnala una malattia epatica grave, potenzialmente mortale."
+      en: "The mother's mitochondrial β-oxidation is overwhelmed by unmetabolized fatty acids from a fetus with a defect in their oxidation; the pattern signals severe, potentially fatal liver disease."
+    correct: true
+    why:
+      it: "Corretta. È la steatosi acuta gravidica: terzo trimestre, dolore addominale, ittero e anoressia, epatociti ingranditi con grasso microvescicolare. Un deficit fetale (classicamente di LCHAD) rimanda acidi grassi alla madre e ne satura l'ossidazione β. Le gocce piccole con nucleo centrale sono il segno di un danno mitocondriale e si associano a malattia epatica grave."
+      en: "Correct. This is acute fatty liver of pregnancy: third trimester, abdominal pain, jaundice and anorexia, enlarged hepatocytes with microvesicular fat. A fetal defect (classically LCHAD deficiency) returns fatty acids to the mother and saturates her β-oxidation. Small droplets with a central nucleus mark mitochondrial injury and go with severe liver disease."
+  - id: e
+    text:
+      it: "Accumulo di glicogeno per l'iperglicemia della gravidanza."
+      en: "Glycogen accumulation from pregnancy-related hyperglycemia."
+    correct: false
+    why:
+      it: "Errata. Il glicogeno si dimostra con la PAS, non con l'Oil red O. Un vacuolo che si colora in rosso con l'Oil red O contiene lipidi neutri."
+      en: "Incorrect. Glycogen is shown with PAS, not with oil red O. A vacuole that oil red O stains red contains neutral lipid."
+backLink: { entity: fatty-change, section: pathogenesis }
+claims: [fatty-change-c016, fatty-change-c021, fatty-change-c022, fatty-change-c023, fatty-change-c027, fatty-change-c028, fatty-change-c029, fatty-change-c033, fatty-change-c034, fatty-change-c037, fatty-change-c049, fatty-change-c050, fatty-change-c051, fatty-change-c058, fatty-change-c059]
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

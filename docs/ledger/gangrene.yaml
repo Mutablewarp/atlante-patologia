@@ -1,0 +1,514 @@
+entity: gangrene
+claims:
+  - claimId: gangrene-c001
+    section: definition
+    statement: "Rubin uses gangrene for necrosis of a large tissue region, notably the foot or leg after arterial occlusion and the small bowel."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "330, 337" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c002
+    section: definition
+    statement: "The necrosis patterns described in chapter 1 are coagulative, liquefactive, fat, caseous and fibrinoid; gangrene is not among them, and dry gangrene is described as coagulative necrosis on the scale of a large infarct."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "38-40, 337" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c003
+    section: definition
+    statement: "Dry gangrene of the foot or leg from arterial occlusion is essentially a large pale infarct."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "337" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c004
+    section: definition
+    statement: "An infarct whose necrotic tissue harbors pyogenic bacteria is a septic infarct, and neutrophil hydrolases then dissolve the dead tissue (ch. 1 p. 39). The clinical label \"wet gangrene\" is not used in rubin-8e; the process it names is."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "338" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c005
+    section: definition
+    statement: "Gas gangrene, or clostridial myonecrosis, is a gas-forming necrotizing infection arising in contaminated wounds that kills previously healthy muscle."
+    sourceRef: { source: rubin-8e, chapter: "9", pages: "428-429" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c006
+    section: definition
+    statement: "Diabetes accounts for most nontraumatic limb amputations in the US, ischemic gangrene from macrovascular disease being the major factor."
+    sourceRef: { source: rubin-8e, chapter: "13", pages: "539, 550" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c007
+    section: etiology
+    statement: "Thrombosis on atherosclerotic plaques in leg and mesenteric arteries causes ischemic leg gangrene and intestinal infarction (also ch. 16 pp. 606-607)."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "330" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c008
+    section: etiology
+    statement: "Embolic occlusion of a leg artery causes acute limb ischemia; ch. 16 p. 607 adds that thrombus from an abdominal aortic aneurysm can occlude the popliteal artery and cause leg gangrene."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "335" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c009
+    section: etiology
+    statement: "In diabetes, peripheral atherosclerosis of the legs causes ulcers and gangrene of toes and feet; neuropathy and greater susceptibility to infection also contribute."
+    sourceRef: { source: rubin-8e, chapter: "13", pages: "539, 550" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c010
+    section: etiology
+    statement: "Buerger disease, an occlusive inflammatory disease of small and medium-sized arteries tied to smoking, and rarely Raynaud phenomenon can lead to gangrene of the digits."
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "618, 622-623" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c011
+    section: etiology
+    statement: "Severe vasculitis in survivors of meningococcemia can cause gangrene of the distal extremities."
+    sourceRef: { source: rubin-8e, chapter: "9", pages: "416-417" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c012
+    section: etiology
+    statement: "In frostbite, endothelial injury causes local thrombosis, and the vascular occlusion often leads to gangrene."
+    sourceRef: { source: rubin-8e, chapter: "8", pages: "379" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c013
+    section: etiology
+    statement: "Bowel ischemia results from mesenteric arterial thrombosis or embolism, mesenteric vein thrombosis, volvulus, intussusception and incarceration in a hernia sac."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "802, 804" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c014
+    section: etiology
+    statement: "Clostridial myonecrosis requires extensive devitalized tissue, as in severe penetrating trauma, war wounds and septic abortion."
+    sourceRef: { source: rubin-8e, chapter: "9", pages: "429" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c015
+    section: pathogenesis
+    statement: "Infarction is coagulative necrosis distal to an occluded end artery; the necrotic zone is the infarct."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "337" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c016
+    section: pathogenesis
+    statement: "Stenosis without occlusion more commonly causes the atrophy and fibrosis of chronic ischemia than necrosis; necrosis follows end-artery occlusion, and in diabetes chronic vascular insufficiency of the legs still leads to gangrene of toes and feet (ch. 13 p. 550)."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "337" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c017
+    section: pathogenesis
+    statement: "Necrotic tissue offers little resistance to bacteria; infarcts in the lung and those caused by infected emboli from endocarditis are often septic."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "338" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c018
+    section: pathogenesis
+    statement: "Neutrophil hydrolases digest dead cells; when dissolution outpaces repair the result is liquefactive necrosis, often an abscess (ch. 7 p. 338: a septic infarct may become an abscess)."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c019
+    section: pathogenesis
+    statement: "Clostridial spores deposited in anaerobic devitalized wound tissue revert to vegetative bacteria."
+    sourceRef: { source: rubin-8e, chapter: "9", pages: "428-429" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c020
+    section: pathogenesis
+    statement: "C. perfringens type A supplies the myotoxin in 80-90% of gas gangrene; C. novyi and C. septicum can also be responsible."
+    sourceRef: { source: rubin-8e, chapter: "9", pages: "429" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c021
+    section: pathogenesis
+    statement: "The clostridial alpha toxin is a phospholipase (lecithinase) that damages membranes of muscle cells, leukocytes and erythrocytes, killing previously healthy muscle and causing hemolysis."
+    sourceRef: { source: rubin-8e, chapter: "9", pages: "428-429" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c022
+    section: pathogenesis
+    statement: "Abrupt occlusion of a large mesenteric artery causes infarction before collaterals can compensate."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "802" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c023
+    section: pathogenesis
+    statement: "Mesenteric venous obstruction causes blood and fluid to accumulate in the segment, compromising arterial perfusion."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "804" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c024
+    section: gross
+    statement: "Dry gangrene of the foot or leg is a large pale infarct; pale infarcts are sharply delineated with a dark-red border from hemorrhage into adjacent viable tissue, and, unlike red infarcts, lack bleeding into the necrotic area."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "337-338" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c025
+    section: gross
+    statement: "In infarcted bowel the segment is swollen, hemorrhagic and purple; its boundary is sharp after arterial occlusion and less defined after venous occlusion."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "804" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c026
+    section: gross
+    statement: "Later gross findings of infarcted bowel include an exudate-covered dull serosa, a thinned distended wall with loss of mucosa, and possible gas in the wall and mesenteric veins."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "804" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c027
+    section: gross
+    statement: "In gas gangrene the overlying skin becomes tense and dark as edema and gas accumulate, and the affected muscle progresses from mottled to necrotic and may liquefy."
+    sourceRef: { source: rubin-8e, chapter: "9", pages: "429" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c028
+    section: micro
+    statement: "Pale infarcts, including dry gangrene, show uniform coagulative necrosis (ch. 1 pp. 38-39 for ghost outlines and eosinophilia)."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "337" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c029
+    section: micro
+    statement: "Localized collections of neutrophils responding to bacteria dissolve tissue, producing liquefactive necrosis and abscesses (ch. 7 p. 338 for septic infarcts)."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c030
+    section: micro
+    statement: "Gas gangrene shows a striking paucity of neutrophils, apparently destroyed by the toxin, despite extensive necrosis with cell dissolution; the organisms are lozenge-shaped gram-positive rods."
+    sourceRef: { source: rubin-8e, chapter: "9", pages: "429" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c031
+    section: micro
+    statement: "Bowel infarcts show edema, hemorrhage, crypt abscesses, ulcers and necrotic surface epithelium with ghost cells, progressing to full-thickness necrosis in severe cases."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "804" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c032
+    section: ancillary
+    statement: "Tissue affected by gas gangrene typically contains gram-positive rods, with few neutrophils."
+    sourceRef: { source: rubin-8e, chapter: "9", pages: "429" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c033
+    section: clinical
+    statement: "Leg artery embolism produces sudden pain, absent pulses and a cold limb; acute limb ischemia may also cause paresthesia and paralysis."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "335" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c034
+    section: clinical
+    statement: "Buerger disease typically begins between 25 and 40 years with intermittent claudication, followed by painful digital ulceration and loss of the digit tips."
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "623" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c035
+    section: clinical
+    statement: "Embolic bowel infarction presents as an acute abdomen; ch. 19 p. 804 notes it may be preceded by postprandial abdominal angina from arteries unable to meet digestive demand."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "335" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c036
+    section: clinical
+    statement: "Gas gangrene usually begins 2-4 days after injury with abrupt severe wound pain, swelling and tenderness, darkening skin and a thick, foul, serosanguineous discharge that may contain gas."
+    sourceRef: { source: rubin-8e, chapter: "9", pages: "429" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c037
+    section: clinical
+    statement: "Systemic disease follows in gas gangrene: hemolytic anemia, hypotension and renal failure, with shock, jaundice and coma at the terminal stage."
+    sourceRef: { source: rubin-8e, chapter: "9", pages: "429" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c038
+    section: diagnosis
+    statement: "Limb ischemia is recognized by pain, absent pulses and a cold limb; the dead tissue of dry gangrene is coagulative necrosis."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "335, 337" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c039
+    section: diagnosis
+    statement: "Gas bubbles in the bowel wall and mesenteric veins occur in infarcted bowel; endoscopy in ischemic bowel may show a pseudomembrane, multiple ulcers or hemorrhagic nodules."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "804" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c040
+    section: diagnosis
+    statement: "Gas gangrene: gram-positive rods with very few neutrophils in affected tissue, plus hemolysis."
+    sourceRef: { source: rubin-8e, chapter: "9", pages: "429" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c041
+    section: prognosis
+    statement: "Limb embolism sometimes requires amputation (ch. 7 p. 335); in diabetes, ulcers and gangrene of the toes and feet ultimately lead to amputation (ch. 13 p. 550)."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "335" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c042
+    section: prognosis
+    statement: "Embolic bowel infarction requires immediate surgery; ch. 19 p. 804 adds that chronic intestinal vascular insufficiency can cause fibrosis and stricture."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "335" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c043
+    section: prognosis
+    statement: "A septic infarct may become a frank abscess."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "338" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c044
+    section: prognosis
+    statement: "Gas gangrene can be fatal within hours of onset and is rare when wounds are promptly debrided."
+    sourceRef: { source: rubin-8e, chapter: "9", pages: "429" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c045
+    section: prognosis
+    statement: "In Buerger disease, stopping smoking may induce remission, and patients who keep smoking may lose hands and feet."
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "623" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c046
+    section: differential
+    statement: "Infarction is coagulative necrosis distal to an occluded end artery; dry gangrene of the foot or leg is a large pale infarct."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "337" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c047
+    section: differential
+    statement: "Nonocclusive intestinal ischemia is hemodynamic, may be reversible and is often segmental in the colon; severe bowel infarcts become full-thickness."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "804" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c048
+    section: differential
+    statement: "Clostridial myonecrosis begins in contaminated wounds, destroys previously healthy muscle and produces gas."
+    sourceRef: { source: rubin-8e, chapter: "9", pages: "429" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c049
+    section: differential
+    statement: "An abscess is a localized cavity of liquefactive necrosis in a solid tissue, later walled off by a fibrous capsule."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c050
+    section: differential
+    statement: "Coagulative necrosis is the light-microscopic pattern with preserved outlines and is the necrosis of infarcts."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "38, 337" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c051
+    section: high-yield
+    statement: "Gangrene is not among the necrosis patterns of chapter 1; dry gangrene is a large infarct of coagulative necrosis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "38-40, 337" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c052
+    section: high-yield
+    statement: "Dry gangrene from arterial occlusion is a large pale infarct with coagulative necrosis."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "337" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c053
+    section: high-yield
+    statement: "Infected infarcts are septic and may liquefy into abscesses (ch. 1 p. 39 for neutrophil hydrolases). The label \"wet gangrene\" is not used in rubin-8e."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "338" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c054
+    section: high-yield
+    statement: "C. perfringens alpha toxin is a phospholipase that kills previously healthy muscle and causes hemolysis."
+    sourceRef: { source: rubin-8e, chapter: "9", pages: "428-429" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c055
+    section: high-yield
+    statement: "Neutrophils are scarce in gas gangrene, apparently because the myotoxin destroys them."
+    sourceRef: { source: rubin-8e, chapter: "9", pages: "429" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c056
+    section: high-yield
+    statement: "Limb gangrene arises from atherosclerotic thrombosis and arterial embolism; ch. 13 p. 550 adds diabetic peripheral vascular disease."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "330, 335" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c057
+    section: high-yield
+    statement: "Bowel infarction follows mesenteric arterial occlusion, mesenteric vein thrombosis, volvulus or incarceration in a hernia sac."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "802" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c058
+    section: traps
+    statement: "Gangrene is not a histologic necrosis type; dry gangrene histologically is coagulative necrosis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "38-40, 337" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c059
+    section: traps
+    statement: "In gas gangrene the clostridial myotoxin causes necrosis of previously healthy muscle."
+    sourceRef: { source: rubin-8e, chapter: "9", pages: "429" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c060
+    section: traps
+    statement: "Red infarcts occur in organs with extensive collateral circulation such as the small intestine, unlike the pale infarct of dry gangrene."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "337" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c061
+    section: traps
+    statement: "Bacterial infection draws neutrophils that liquefy tissue into abscesses (contrast ch. 9 p. 429: neutrophils are sparse in gas gangrene)."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c062
+    section: traps
+    statement: "Partial arterial occlusion more commonly causes atrophy than necrosis (ch. 16 p. 607); diabetic vascular insufficiency nonetheless leads to toe and foot gangrene (ch. 13 p. 550)."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "337" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c063
+    section: mnemonics
+    statement: "Summary of the three forms: dry = ischemic coagulative necrosis, wet = infected and liquefied, gas = clostridial toxin destroying healthy muscle with few neutrophils (ch. 9 p. 429)."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "337-338" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: gangrene-c064
+    section: etiology
+    statement: "Nonocclusive intestinal ischemia, seen with shock and reduced cardiac output, is more common than the occlusive type and may be just as extensive."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "804" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03

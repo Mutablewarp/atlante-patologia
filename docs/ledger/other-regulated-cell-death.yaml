@@ -1,0 +1,410 @@
+entity: other-regulated-cell-death
+claims:
+  - claimId: other-regulated-cell-death-c001
+    section: definition
+    statement: "Besides necrosis, cells have several suicide programs; beyond apoptosis, necroptosis, pyroptosis and autophagy there are further specialized forms of programmed cell death."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "38, 54-56" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c002
+    section: definition
+    statement: "Anoikis, granzyme/perforin killing, NETosis and entosis are among the specialized forms of programmed cell death."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54-58" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c003
+    section: definition
+    statement: "Programmed cell death pathways interconnect, so distinctions between them are not always clear-cut."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "38" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c004
+    section: etiology
+    statement: "Anoikis affects anchorage-dependent cells, mainly epithelial, that detach from their native ECM or contact inappropriate ECM."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c005
+    section: etiology
+    statement: "CTLs and NK cells attack a cell they recognize as foreign."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "56" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c006
+    section: etiology
+    statement: "NETosis occurs mainly in neutrophils after pathogen recognition, and also in eosinophils and mast cells."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "58" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c007
+    section: etiology
+    statement: "In entosis, non-professional phagocytes engulf neighboring living cells; it occurs most often in tumors."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "58" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c008
+    section: etiology
+    statement: "Entosis is described as a response to loss of ECM attachment in which a detached living cell invades the cytoplasm of another cell."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "45" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c009
+    section: pathogenesis
+    statement: "Integrins bound to native ECM activate survival signals that block both intrinsic and extrinsic apoptotic pathways (Fig. 1-52)."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "56" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c010
+    section: pathogenesis
+    statement: "Without appropriate integrin binding, survival signaling is lost, both classical apoptotic pathways are upregulated, and the cell dies by apoptosis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54, 56" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c011
+    section: pathogenesis
+    statement: "An intestinal epithelial cell pushed off the villus tip by crypt proliferation loses integrin survival signaling and undergoes anoikis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c012
+    section: pathogenesis
+    statement: "ECM binding signals correct location; anoikis deletes displaced cells, preventing colonies at improper sites and thereby inhibiting metastasis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c013
+    section: pathogenesis
+    statement: "CTLs and NK cells release two main effectors, perforin and granzymes."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "56" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c014
+    section: pathogenesis
+    statement: "Perforin creates a channel in the target plasma membrane through which lymphocyte proteins, including granzymes, enter."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "56-57" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c015
+    section: pathogenesis
+    statement: "Granzyme B is the most studied member of the granzyme serine-protease family."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "56" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c016
+    section: pathogenesis
+    statement: "Granzyme B cleaves Bid, a BH3-only protein, to tBid, which increases mitochondrial cytochrome c release and triggers the intrinsic pathway."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "56-57" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c017
+    section: pathogenesis
+    statement: "Granzyme B also converts procaspases, notably procaspase-3, to active caspases."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "56-57" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c018
+    section: pathogenesis
+    statement: "Granzymes can also disrupt the CAD-ICAD complex, freeing the DNase CAD, which then degrades genomic DNA without caspases."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "56-57" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c019
+    section: pathogenesis
+    statement: "NETosis requires autophagy and NADPH oxidase activity; ROS drive chromatin decondensation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "58" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c020
+    section: pathogenesis
+    statement: "In NETosis the nuclear envelope and most granule membranes break down and the cell releases a chromatin NET carrying antimicrobial histones, histone fragments and other antimicrobial products."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "58" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c021
+    section: pathogenesis
+    statement: "NETs can kill bacteria, fungi and protozoa."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "58" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c022
+    section: pathogenesis
+    statement: "NETs can be made from nuclear DNA or from mitochondrial DNA, so a neutrophil need not die to produce one."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "58" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c023
+    section: pathogenesis
+    statement: "Cells dying by NETosis do not expose phosphatidylserine as apoptotic cells do, so macrophages do not clear them early and inflammation can result."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "58" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c024
+    section: pathogenesis
+    statement: "The engulfing cell in entosis can take up a cell of its own lineage or of a different one."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "58" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c025
+    section: pathogenesis
+    statement: "When the entotic vacuole fuses with lysosomes the target cell usually dies, but death is not inevitable."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "58" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c026
+    section: pathogenesis
+    statement: "The engulfed cell may survive, may escape unharmed, or its nuclear material may become part of the aggressor cell."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "58" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c027
+    section: pathogenesis
+    statement: "The control mechanisms of entosis are still mostly unknown."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "58" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c028
+    section: micro
+    statement: "Anoikis is a variety of apoptosis and granzyme killing proceeds via apoptosis with nuclear fragmentation, so both show apoptotic morphology."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54, 56-57" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c029
+    section: micro
+    statement: "NETs are extracellular fibrous networks composed mainly of DNA released by neutrophils."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "45, 58" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c030
+    section: micro
+    statement: "In entosis a cell lies within a vacuole of another cell; incorporation of its nuclear material can make the host multinucleate, polyploid or aneuploid."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "58" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c031
+    section: clinical
+    statement: "Tumor cells can escape anoikis, and metastasizing cells do so particularly well."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "45, 54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c032
+    section: clinical
+    statement: "NETosis can promote tumor progression and dissemination."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "45" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c033
+    section: clinical
+    statement: "Entosis is seen mainly in tumors, where a cell can grow inside the cell it has entered and consume its nutrients."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "45, 58" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c034
+    section: clinical
+    statement: "NETs act early against microbes, holding them in place and helping newly arriving neutrophils kill them with limited harm to host tissue."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "45" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c035
+    section: clinical
+    statement: "In an experimental setting, hepatocytes take up and kill autoreactive T cells by entosis, which dampens autoimmune liver injury."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "58" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c036
+    section: differential
+    statement: "Apoptosis shows phosphatidylserine eat-me signals and proceeds without inflammation; anoikis and granzyme killing lead to apoptosis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54, 58" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c037
+    section: differential
+    statement: "Necroptosis is a caspase-independent programmed death with necrotic morphology, mediated by the RIP1/RIP3 necrosome and MLKL."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c038
+    section: differential
+    statement: "Pyroptosis depends on inflammasome-generated caspase-1, which forms plasma membrane pores; the cell, often but not always infected (triggers include mineral crystals), swells and bursts, causing inflammation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "45, 56-57" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c039
+    section: differential
+    statement: "NETosis requires autophagy; whether autophagy kills cells independently is unclear."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54, 58" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c040
+    section: high-yield
+    statement: "Anoikis is apoptosis of anchorage-dependent cells that lose integrin binding to their native ECM, and it inhibits metastasis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54, 56" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c041
+    section: high-yield
+    statement: "Perforin forms a membrane channel; granzyme B cleaves Bid to tBid and activates procaspase-3."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "56-57" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c042
+    section: high-yield
+    statement: "Granzymes can also kill caspase-independently by freeing CAD from ICAD."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "56-57" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c043
+    section: high-yield
+    statement: "NETosis requires autophagy and NADPH oxidase; NETs contain DNA and histones and kill bacteria, fungi and protozoa."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "58" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c044
+    section: high-yield
+    statement: "NETotic cells lack phosphatidylserine exposure and can stimulate inflammation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "58" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c045
+    section: high-yield
+    statement: "Entosis is engulfment of a living cell by a non-professional phagocyte, mostly in tumors, and can produce multinucleate or aneuploid cells."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "58" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c046
+    section: traps
+    statement: "Anoikis uses the classical intrinsic and extrinsic apoptotic pathways."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c047
+    section: traps
+    statement: "The CAD route of granzyme killing degrades DNA independently of caspases."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "56-57" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c048
+    section: traps
+    statement: "NETs can be built from mitochondrial DNA, so NET formation does not always kill the neutrophil."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "58" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c049
+    section: traps
+    statement: "In entosis the engulfed cell is alive and may survive or escape."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "58" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c050
+    section: traps
+    statement: "Lacking eat-me signals, NETotic cells can stimulate inflammation, unlike apoptotic cells."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "58" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: other-regulated-cell-death-c051
+    section: mnemonics
+    statement: "Summary mnemonic of the four forms: anoikis (loss of matrix home), granzyme entry through perforin pores, NETosis (DNA nets), entosis (engulfment of a living cell)."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54-58" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03

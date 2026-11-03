@@ -1,0 +1,61 @@
+id: liquefactive-necrosis-micro-1
+file: liquefactive-necrosis-micro-1.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Histopathology_of_a_lacunar_cerebral_infarct.jpg
+author: Mikael Häggström, M.D.
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-10-10
+modifications: "Downscaled from 1829 to 1600 px wide and re-encoded as JPEG, which also strips the camera EXIF/GPS metadata of the original; no crop, no colour change."
+attributionText: "Mikael Häggström, M.D., via Wikimedia Commons, CC0 1.0 (public domain dedication)"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: low power
+caption:
+  it: >-
+    Infarto lacunare del talamo, EE a piccolo ingrandimento. Parti dai bordi dell'immagine: il neuropilo sano è rosa,
+    compatto e uniforme. Al centro spicca un'area chiara a contorni irregolari in cui il tessuto è rarefatto e
+    spugnoso, ridotto a sottili filamenti e piccoli spazi vuoti, attraversato da qualche vaso sottile a parete spessa,
+    tagliato di traverso. Qui il tessuto nervoso morto non è rimasto come impalcatura, come accadrebbe nella necrosi
+    coagulativa del cuore o del rene: è stato sciolto e poi rimosso dai macrofagi, che a forte ingrandimento si
+    cercano come cellule dal citoplasma chiaro e schiumoso. È il quadro tipico della necrosi colliquativa nel sistema
+    nervoso centrale, che con il tempo lascia una piccola cavità rivestita da glia. Le lacune sono piccoli infarti, in
+    genere sotto i 15 mm, nel territorio delle arterie perforanti profonde danneggiate dall'ipertensione. Da
+    ricordare: nel cervello l'infarto va verso la colliquazione anche senza infezione e senza pus.
+  en: >-
+    Lacunar infarct of the thalamus, H&E at low power. Start at the edges of the image: healthy neuropil is pink,
+    solid and even. In the centre stands out a pale, irregular area where the tissue is rarefied and spongy, reduced
+    to thin strands and small empty spaces, crossed by a few small thick-walled vessels cut in cross-section. Here the
+    dead nervous tissue has not stayed behind as a scaffold, as it would in coagulative necrosis of the heart or
+    kidney: it has been dissolved and then removed by macrophages, which at high power you look for as cells with
+    pale, foamy cytoplasm. This is the typical picture of liquefactive necrosis in the central nervous system, which
+    over time leaves a small glia-lined cavity. Lacunes are small infarcts, usually under 15 mm, in the territory of
+    deep penetrating arteries damaged by hypertension. Key point: in the brain an infarct turns liquefactive even
+    without infection and without pus.
+alt:
+  it: >-
+    Micrografia di cervello in ematossilina-eosina a piccolo ingrandimento: su un fondo rosa compatto si apre al
+    centro un'ampia area pallida, di forma irregolare, dall'aspetto spugnoso e sfilacciato, con alcuni piccoli vasi
+    rotondi a parete spessa.
+  en: >-
+    Low-power H&E micrograph of brain: on a solid pink background a large, pale, irregular area opens up in the
+    centre, with a spongy, frayed texture and a few small round thick-walled vessels.
+annotations:
+  - id: rarefied-necrotic-area
+    label: { it: Area rarefatta di necrosi colliquativa, en: Rarefied area of liquefactive necrosis }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.20, 0.42, 0.30, 0.36, 0.45, 0.36, 0.55, 0.28, 0.62, 0.20, 0.68, 0.25, 0.70, 0.40, 0.72, 0.55, 0.70, 0.70, 0.68, 0.85, 0.60, 0.85, 0.53, 0.78, 0.50, 0.66, 0.42, 0.60, 0.30, 0.56, 0.20, 0.52]
+  - id: thick-walled-vessel
+    label: { it: Piccolo vaso a parete spessa, en: Small thick-walled vessel }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.552, 0.497, 0.566, 0.492, 0.580, 0.497, 0.584, 0.512, 0.580, 0.527, 0.566, 0.532, 0.552, 0.527, 0.548, 0.512]
+  - id: healthy-neuropil
+    label: { it: Neuropilo sano, compatto, en: Healthy, solid neuropil }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.04, 0.05, 0.30, 0.05, 0.30, 0.24, 0.04, 0.24] }

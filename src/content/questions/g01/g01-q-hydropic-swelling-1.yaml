@@ -1,0 +1,55 @@
+id: g01-q-hydropic-swelling-1
+module: g01
+entities: [hydropic-swelling, intracellular-accumulations, fatty-change]
+kind: mcq
+difficulty: 1
+tags: [reversible-injury, hydropic-swelling]
+stem:
+  it: "Un uomo di 32 anni ha un'epatite virale acuta. La biopsia epatica mostra numerosi epatociti ingranditi, con citoplasma pallido e dilatato; i nuclei sono centrali e non presentano picnosi, carioressi né cariolisi. Una colorazione per i lipidi su sezione al congelatore è negativa e la PAS non mostra un eccesso di glicogeno. Al microscopio elettronico le cisterne del reticolo endoplasmatico sono dilatate. Quale evento spiega meglio l'alterazione di queste cellule?"
+  en: "A 32-year-old man has acute viral hepatitis. A liver biopsy shows many enlarged hepatocytes with pale, expanded cytoplasm; their nuclei are central and show no pyknosis, karyorrhexis or karyolysis. A fat stain on a frozen section is negative, and PAS shows no excess glycogen. Electron microscopy shows dilated endoplasmic reticulum cisternae. Which event best explains the change in these cells?"
+options:
+  - id: a
+    text:
+      it: "Il glicogeno si accumula perché l'iperglicemia aumenta le riserve della cellula."
+      en: "Glycogen builds up because high blood glucose enlarges the cell's stores."
+    correct: false
+    why:
+      it: "Errata. Nel diabete mal controllato epatociti e cellule del tubulo prossimale possono gonfiarsi di glicogeno, ma il materiale è PAS-positivo; qui la PAS non mostra glicogeno in eccesso."
+      en: "Incorrect. In poorly controlled diabetes hepatocytes and proximal tubule cells can swell with glycogen, but that material is PAS-positive; here PAS shows no excess glycogen."
+  - id: b
+    text:
+      it: "I trigliceridi si accumulano perché l'esportazione delle lipoproteine dall'epatocita è compromessa."
+      en: "Triglycerides build up because export of lipoproteins from the hepatocyte is impaired."
+    correct: false
+    why:
+      it: "Errata. È il meccanismo della steatosi, che forma gocce lipidiche nel citoplasma. In ematossilina-eosina quei vacuoli sembrano vuoti perché i lipidi si sciolgono durante la processazione, ed è per questo che serve una colorazione per i grassi su sezione al congelatore: qui è negativa."
+      en: "Incorrect. That is the mechanism of fatty change, which forms lipid droplets in the cytoplasm. On H&E those vacuoles look empty because lipid dissolves during processing, which is why a fat stain on a frozen section is needed; here it is negative."
+  - id: c
+    text:
+      it: "Il sodio viene trattenuto perché la membrana lo lascia entrare in eccesso o la pompa Na+/K+ ATP-dipendente non funziona; l'acqua lo segue per mantenere il citoplasma isosmotico."
+      en: "Sodium is retained because the membrane lets too much in or the ATP-driven Na+/K+ pump fails; water follows it to keep the cytoplasm isosmotic."
+    correct: true
+    why:
+      it: "Corretta. È un rigonfiamento idropico, la lesione reversibile tipica di questa epatite. Il controllo del volume dipende da membrana integra, pompa del sodio e ATP; se uno dei tre cede, il Na+ si accumula e l'acqua entra per osmosi, raccogliendosi soprattutto nelle cisterne del RE. Il nucleo normale conferma che la cellula è ancora vitale."
+      en: "Correct. This is hydropic swelling, the reversible lesion typical of this hepatitis. Volume control depends on an intact membrane, the sodium pump and ATP; when any of them fails, Na+ builds up and water enters osmotically, collecting mainly in the ER cisternae. The normal nucleus confirms that the cell is still alive."
+  - id: d
+    text:
+      it: "Il calcio entra in massa attraverso una membrana plasmatica rotta, segnando il punto di non ritorno."
+      en: "Calcium floods in through a ruptured plasma membrane, marking the point of no return."
+    correct: false
+    why:
+      it: "Errata. L'ingresso massivo di calcio da una membrana lesa è un passo decisivo della morte cellulare; una cellula necrotica mostrerebbe citoplasma più eosinofilo e picnosi, carioressi o cariolisi. Qui i nuclei sono normali, quindi il danno è ancora reversibile."
+      en: "Incorrect. Massive calcium entry through a breached membrane is a decisive step in cell death; a necrotic cell would show more eosinophilic cytoplasm and pyknosis, karyorrhexis or karyolysis. Here the nuclei are normal, so the injury is still reversible."
+  - id: e
+    text:
+      it: "La cellula perde organuli, per cui il citoplasma appare pallido e vuoto."
+      en: "The cell loses organelles, so the cytoplasm looks pale and empty."
+    correct: false
+    why:
+      it: "Errata. Nel rigonfiamento idropico il numero degli organuli non cambia: sono solo dispersi in un volume maggiore. Il pallore viene dall'acqua in eccesso, non da una perdita di componenti."
+      en: "Incorrect. In hydropic swelling the number of organelles does not change; they are simply spread through a larger volume. The pallor comes from excess water, not from loss of components."
+backLink: { entity: hydropic-swelling, section: pathogenesis }
+claims: [hydropic-swelling-c007, hydropic-swelling-c008, hydropic-swelling-c010, hydropic-swelling-c011, hydropic-swelling-c017, hydropic-swelling-c018, hydropic-swelling-c019, hydropic-swelling-c021, hydropic-swelling-c036, hydropic-swelling-c037, hydropic-swelling-c038, hydropic-swelling-c047, hydropic-swelling-c050, intracellular-accumulations-c081, fatty-change-c031, hypoxic-ischemic-injury-c028]
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

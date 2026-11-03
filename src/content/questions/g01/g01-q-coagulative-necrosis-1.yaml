@@ -1,0 +1,66 @@
+id: g01-q-coagulative-necrosis-1
+module: g01
+entities: [coagulative-necrosis]
+kind: mcq
+difficulty: 1
+tags: [necrosis, necrosis-coagulative, nuclear-changes]
+stem:
+  en: "A 66-year-old man dies 2 days after the onset of crushing chest pain. Sections of the left ventricular wall show a zone of myocytes that are much pinker on H&E than the neighboring viable muscle; their outlines are still recognizable, and many of their nuclei are shrunken and dark or have disappeared. Which change best accounts for the increased cytoplasmic eosinophilia of these myocytes?"
+  it: "Un uomo di 66 anni muore 2 giorni dopo l'esordio di un dolore toracico oppressivo. Nelle sezioni della parete del ventricolo sinistro si osserva un'area di miocardiociti molto più rosa all'EE rispetto al miocardio vitale adiacente; i loro profili sono ancora riconoscibili e molti nuclei sono piccoli e scuri oppure scomparsi. Quale modificazione spiega meglio l'aumentata eosinofilia citoplasmatica di questi miocardiociti?"
+options:
+  - id: a
+    text:
+      en: "Clotting of blood inside the dead myocytes, which is what gives coagulative necrosis its name"
+      it: "La coagulazione del sangue all'interno dei miocardiociti morti, da cui deriva il nome di necrosi coagulativa"
+    correct: false
+    why:
+      en: "The name refers to the old comparison with protein set by heat, not to blood clotting; no clot forms inside the cells."
+      it: "Il nome richiama il vecchio paragone con le proteine denaturate dal calore, non la coagulazione del sangue: all'interno delle cellule non si forma alcun coagulo."
+  - id: b
+    text:
+      en: "Rapid breakdown of cytoplasmic RNA, which normally binds hematoxylin"
+      it: "La rapida degradazione dell'RNA citoplasmatico, che normalmente lega l'ematossilina"
+    correct: true
+    why:
+      en: "Correct. After death, cytoplasmic RNA is degraded quickly; losing this hematoxylin-binding component leaves the cytoplasm redder on H&E. Together with preserved outlines and pyknosis, karyorrhexis or karyolysis, it identifies coagulative necrosis of an infarct."
+      it: "Corretto. Dopo la morte cellulare l'RNA citoplasmatico viene degradato rapidamente; perdendo questa componente che lega l'ematossilina, il citoplasma appare più rosso all'EE. Insieme ai profili conservati e a picnosi, carioressi o cariolisi, definisce la necrosi coagulativa dell'infarto."
+  - id: c
+    text:
+      en: "Insudation of plasma proteins and fibrin into the myocytes"
+      it: "L'insudazione di proteine plasmatiche e fibrina nei miocardiociti"
+    correct: false
+    why:
+      en: "Plasma proteins soaking a structure and turning it bright pink describes fibrinoid necrosis, which affects the walls of injured blood vessels, not a geographic zone of parenchymal cells."
+      it: "L'imbibizione di proteine plasmatiche che rende una struttura rosa intenso descrive la necrosi fibrinoide, che colpisce la parete dei vasi danneggiati e non un'area estesa di cellule parenchimali."
+  - id: d
+    text:
+      en: "Water entry after failure of the ion pumps (hydropic swelling)"
+      it: "L'ingresso di acqua dopo il cedimento delle pompe ioniche (rigonfiamento idropico)"
+    correct: false
+    why:
+      en: "Hydropic swelling is a reversible change: the cell is enlarged and paler, and its nucleus looks normal. Here the cytoplasm is pinker and the nuclei are pyknotic or lost, so the cells are dead."
+      it: "Il rigonfiamento idropico è un danno reversibile: la cellula è più grande e più chiara e il nucleo appare normale. Qui il citoplasma è più rosa e i nuclei sono picnotici o assenti, quindi le cellule sono morte."
+  - id: e
+    text:
+      en: "Calcium deposits accumulating inside swollen mitochondria"
+      it: "L'accumulo di depositi di calcio nei mitocondri rigonfi"
+    correct: false
+    why:
+      en: "Calcified, swollen mitochondria are a finding of electron microscopy in dead cells, but they do not explain the light-microscopic eosinophilia, which mainly reflects loss of cytoplasmic RNA."
+      it: "I mitocondri rigonfi e calcificati sono un reperto di microscopia elettronica nelle cellule necrotiche, ma non spiegano l'eosinofilia vista al microscopio ottico, dovuta soprattutto alla perdita dell'RNA citoplasmatico."
+backLink: { entity: coagulative-necrosis, section: micro }
+claims:
+  - coagulative-necrosis-c004
+  - coagulative-necrosis-c010
+  - coagulative-necrosis-c022
+  - coagulative-necrosis-c027
+  - coagulative-necrosis-c035
+  - coagulative-necrosis-c047
+  - coagulative-necrosis-c048
+  - coagulative-necrosis-c050
+  - coagulative-necrosis-c051
+  - coagulative-necrosis-c057
+  - fibrinoid-necrosis-c001
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

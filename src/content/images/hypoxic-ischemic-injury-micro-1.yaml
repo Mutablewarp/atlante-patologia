@@ -1,0 +1,59 @@
+id: hypoxic-ischemic-injury-micro-1
+file: hypoxic-ischemic-injury-micro-1.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Histopathology_of_coagulative_necrosis_of_cardiomyocytes.jpg
+author: >-
+  Katarzyna Michaud, Cristina Basso, Giulia d'Amati, Carla Giordano, Ivana Kholová, Stephen D. Preston, Stefania
+  Rizzo, Sara Sabatasso, Mary N. Sheppard, Aryan Vink, Allard C. van der Wal, on behalf of the Association for
+  European Cardiovascular Pathology (AECVP)
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-10-10
+modifications: "none (Wikimedia original file, 751 px wide; panel letter 'c' from the source figure kept)"
+attributionText: >-
+  Michaud K, Basso C, d'Amati G, et al. (AECVP), "Diagnosis of myocardial infarction at autopsy", Virchows Archiv
+  2019, doi:10.1007/s00428-019-02662-1, via Wikimedia Commons, CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: medium power
+caption:
+  it: >-
+    Infarto miocardico non riperfuso, EE a medio ingrandimento: il quadro tipico del danno ischemico irreversibile,
+    cioè la necrosi coagulativa. Parti dalla metà inferiore, dove i miocardiociti sono ancora vitali: fibre rosa
+    pallido, ognuna con il suo nucleo allungato e un po' di pigmento bruno (verosimilmente lipofuscina) ai poli del nucleo. Sali poi
+    verso la metà superiore: le fibre sono più rosse (ipereosinofilia), frammentate, e quasi tutte prive di nucleo, ma
+    conservano ancora il loro profilo. Al confine tra le due zone c'è una banda di piccoli nuclei scuri, cellule
+    infiammatorie e interstiziali richiamate dal tessuto morto. Regola pratica: rosso più intenso + nuclei scomparsi
+    con il disegno del tessuto ancora riconoscibile = necrosi coagulativa da ischemia.
+  en: >-
+    Non-reperfused myocardial infarct, H&E at medium power: the typical picture of irreversible ischemic injury,
+    coagulative necrosis. Start in the lower half, where the cardiomyocytes are still viable: pale pink fibres, each
+    with its elongated nucleus and a little brown pigment (probably lipofuscin) at the nuclear poles. Then move up to the upper
+    half: the fibres are redder (hypereosinophilia), fragmented and mostly without nuclei, yet they keep their outline.
+    At the border between the two zones lies a band of small dark nuclei, inflammatory and interstitial cells drawn in
+    by the dead tissue. Rule of thumb: deeper red + nuclei gone while the tissue pattern is still recognisable =
+    ischemic coagulative necrosis.
+alt:
+  it: >-
+    Micrografia di miocardio in ematossilina-eosina: nella parte alta fibre muscolari rosso intenso, frammentate e
+    senza nuclei; al centro una fascia di piccoli nuclei violacei e, a destra, alcuni vacuoli adiposi bianchi; nella
+    parte bassa fibre rosa più chiare con nuclei allungati e granuli bruni. In basso a sinistra la lettera "c".
+  en: >-
+    H&E micrograph of myocardium: in the upper part, intensely red, fragmented muscle fibres without nuclei; across the
+    middle a band of small violet nuclei and, at the right, a few white fat vacuoles; in the lower part, paler pink
+    fibres with elongated nuclei and brown granules. The letter "c" sits at the bottom left.
+annotations:
+  - id: necrotic-fibres
+    label: { it: Fibre necrotiche ipereosinofile senza nucleo, en: Hypereosinophilic necrotic fibres without nuclei }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.05, 0.04, 0.90, 0.04, 0.90, 0.30, 0.05, 0.38] }
+  - id: inflammatory-band
+    label: { it: Banda di cellule infiammatorie, en: Band of inflammatory cells }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.36, 0.56, 0.60, 0.58, 0.62, 0.74, 0.40, 0.74] }
+  - id: viable-myocardium
+    label: { it: Miocardio vitale con nuclei conservati, en: Viable myocardium with preserved nuclei }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.10, 0.80, 0.95, 0.80, 0.95, 0.95, 0.10, 0.95] }

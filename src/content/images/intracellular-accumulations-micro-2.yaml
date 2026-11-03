@@ -1,0 +1,73 @@
+id: intracellular-accumulations-micro-2
+file: intracellular-accumulations-micro-2.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Liver_alpha-1-antitrypsin_deficiency_(4165770653).jpg
+author: Ed Uthman
+license: CC-BY-2.0
+licenseUrl: https://creativecommons.org/licenses/by/2.0/
+retrievedAt: 2026-10-10
+modifications: >-
+  Re-encoded as JPEG (quality 85) to keep the file under 600 KB and to strip camera EXIF metadata; no crop, no
+  resize, no colour change.
+attributionText: >-
+  Ed Uthman, "Liver: alpha-1-antitrypsin deficiency" (Flickr), via Wikimedia Commons, CC BY 2.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+caption:
+  it: >-
+    Fegato nel deficit di α1-antitripsina, EE. A piccolo ingrandimento orientati sulla banda di tessuto connettivo che
+    attraversa il campo in diagonale, dall'alto a sinistra verso il basso al centro, con dotti biliari e cellule
+    infiammatorie. Poi cerca negli epatociti vicini a questa banda, soprattutto al centro e a destra: alcuni contengono
+    globuli rotondi, omogenei, vitrei, di un rosa acceso più intenso del citoplasma, di dimensioni variabili e spesso
+    raggruppati. Sono depositi della proteina mutata: l'α1-antitripsina anomala si ripiega male, polimerizza nel
+    reticolo endoplasmatico e non viene secreta, quindi si accumula nell'epatocita che l'ha prodotta. Il risultato è
+    duplice: danno epatico per l'accumulo e livelli bassi nel sangue, con perdita della protezione del polmone
+    dall'elastasi (enfisema). Nella pratica i globuli si confermano con il PAS dopo diastasi, a cui resistono. Trappola:
+    accanto ai globuli ci sono vacuoli bianchi e vuoti; quelli sono gocce di grasso sciolte durante l'allestimento, non
+    proteina.
+  en: >-
+    Liver in alpha-1-antitrypsin deficiency, H&E. At low power, orient yourself on the band of connective tissue that
+    crosses the field diagonally, from top left to bottom centre, with bile ducts and inflammatory cells. Then search
+    the hepatocytes next to this band, especially in the centre and on the right: some contain round, homogeneous,
+    glassy globules of a bright pink, more intense than the cytoplasm, of varying size and often clustered. These are
+    deposits of the mutant protein: abnormal alpha-1-antitrypsin misfolds, polymerises in the endoplasmic reticulum and
+    is not secreted, so it accumulates in the hepatocyte that made it. The result is twofold: liver damage from the
+    accumulation, and low blood levels that leave the lung unprotected against elastase (emphysema). In practice the
+    globules are confirmed with PAS after diastase, which they resist. Pitfall: next to the globules there are white,
+    empty vacuoles; those are fat droplets dissolved during processing, not protein.
+alt:
+  it: >-
+    Micrografia di fegato in ematossilina-eosina: epatociti rosa attraversati in diagonale da una banda di tessuto
+    connettivo con nuclei scuri; al centro e a destra alcuni epatociti contengono gruppi di globuli rotondi rosa acceso,
+    accanto a vacuoli bianchi e vuoti.
+  en: >-
+    H&E micrograph of liver: pink hepatocytes crossed diagonally by a band of connective tissue with dark nuclei; in the
+    centre and on the right some hepatocytes contain clusters of bright pink round globules, next to empty white
+    vacuoles.
+annotations:
+  - id: globules-centre
+    label: { it: Globuli eosinofili di α1-antitripsina, en: Eosinophilic alpha-1-antitrypsin globules }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.48, 0.40, 0.545, 0.40, 0.545, 0.465, 0.48, 0.465]
+  - id: globules-right
+    label: { it: Altri epatociti con globuli, en: More hepatocytes with globules }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.61, 0.585, 0.70, 0.585, 0.70, 0.69, 0.61, 0.69]
+  - id: fat-vacuoles
+    label: { it: Vacuoli lipidici vuoti (non proteina), en: Empty lipid vacuoles (not protein) }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.595, 0.50, 0.645, 0.50, 0.645, 0.58, 0.595, 0.58]
+  - id: connective-tissue-band
+    label: { it: Banda di tessuto connettivo, en: Band of connective tissue }
+    revealOrder: 4
+    shape:
+      type: polygon
+      coords: [0.10, 0.09, 0.30, 0.17, 0.45, 0.33, 0.50, 0.42, 0.55, 0.62, 0.58, 0.75, 0.575, 0.95, 0.50, 0.95, 0.48, 0.73, 0.44, 0.55, 0.39, 0.44, 0.25, 0.29, 0.10, 0.17]

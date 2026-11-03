@@ -1,0 +1,73 @@
+id: g01-q-necroptosis-1
+module: g01
+entities: [necroptosis]
+kind: mcq
+difficulty: 3
+tags: [necroptosis]
+stem:
+  it: "Un virus che infetta le cellule epiteliali produce un inibitore ad ampio spettro che blocca tutte le caspasi, sia quelle apoptotiche (compresa la caspasi-8) sia quelle infiammatorie. Nel tessuto infettato le cellule muoiono comunque: si rigonfiano, la membrana plasmatica si frammenta, il nucleo diventa picnotico e compare un infiltrato infiammatorio. Quale meccanismo spiega meglio questa morte cellulare?"
+  en: "A virus that infects epithelial cells makes a broad-spectrum inhibitor that blocks every caspase, both the apoptotic ones (including caspase-8) and the inflammatory ones. In the infected tissue, cells die anyway: they swell, the plasma membrane breaks up, the nucleus becomes pyknotic and an inflammatory infiltrate appears. Which mechanism best explains this cell death?"
+options:
+  - id: a
+    text:
+      it: "Il citocromo c esce dai mitocondri e forma l'apoptosoma; la caspasi-9 attiva la caspasi-3."
+      en: "Cytochrome c leaves the mitochondria and forms the apoptosome; caspase-9 activates caspase-3."
+    correct: false
+    why:
+      it: "La via intrinseca richiede caspasi-9 e caspasi-3, entrambe bloccate dall'inibitore virale. Inoltre l'apoptosi produce cellule rimpicciolite con bolle di membrana, senza infiammazione."
+      en: "The intrinsic pathway needs caspase-9 and caspase-3, both blocked by the viral inhibitor. Apoptosis also produces shrunken, blebbing cells without inflammation."
+  - id: b
+    text:
+      it: "Poiché la caspasi-8 è inattiva, RIP1 non viene tagliata: RIP1 e RIP3 formano il necrosoma, che attiva MLKL e ne provoca l'inserimento nelle membrane."
+      en: "Because caspase-8 is inactive, RIP1 is not cleaved: RIP1 and RIP3 form the necrosome, which activates MLKL and drives its insertion into membranes."
+    correct: true
+    why:
+      it: "Corretto. È la necroptosi: normalmente la caspasi-8 taglia RIP1 e impedisce la formazione del necrosoma. Se le caspasi sono bloccate, il necrosoma si forma, MLKL compromette le membrane e la cellula muore con aspetto necrotico, liberando DAMP che richiamano infiammazione. È una difesa che limita la diffusione del virus."
+      en: "Correct. This is necroptosis: caspase-8 normally cleaves RIP1 and prevents necrosome formation. With caspases blocked, the necrosome forms, MLKL breaches the membranes and the cell dies with a necrotic appearance, releasing DAMPs that attract inflammation. It is a defense that limits viral spread."
+  - id: c
+    text:
+      it: "Un sensore NLR attiva l'inflammasoma e la caspasi-1 provoca la piroptosi."
+      en: "An NLR sensor activates the inflammasome and caspase-1 causes pyroptosis."
+    correct: false
+    why:
+      it: "Anche la piroptosi dà rigonfiamento, rottura della membrana e infiammazione, ma dipende dalla caspasi-1, che qui è bloccata insieme alle altre caspasi infiammatorie. Una morte che procede senza alcuna caspasi indica la necroptosi."
+      en: "Pyroptosis also causes swelling, membrane rupture and inflammation, but it depends on caspase-1, which is blocked here along with the other inflammatory caspases. A death that proceeds without any caspase points to necroptosis."
+  - id: d
+    text:
+      it: "La caspasi-8 taglia Bid in tBid, che trasmette il segnale ai mitocondri."
+      en: "Caspase-8 cleaves Bid to tBid, which passes the signal on to the mitochondria."
+    correct: false
+    why:
+      it: "Il taglio di Bid richiede una caspasi-8 attiva, che qui è bloccata. Inoltre questo collegamento porta all'apoptosi, non a una morte con aspetto necrotico."
+      en: "Cleavage of Bid needs active caspase-8, which is blocked here. This link also leads to apoptosis, not to a death with a necrotic appearance."
+  - id: e
+    text:
+      it: "Le cellule infettate si staccano dalla matrice extracellulare e muoiono per anoikis."
+      en: "Infected cells detach from the extracellular matrix and die by anoikis."
+    correct: false
+    why:
+      it: "L'anoikis usa le vie apoptotiche classiche, quindi richiede le caspasi e produce un quadro apoptotico. Nulla nel caso indica la perdita di contatto con la matrice."
+      en: "Anoikis uses the classical apoptotic pathways, so it needs caspases and produces an apoptotic picture. Nothing in the case points to loss of contact with the matrix."
+backLink: { entity: necroptosis, section: pathogenesis }
+claims:
+  - necroptosis-c003
+  - necroptosis-c008
+  - necroptosis-c012
+  - necroptosis-c014
+  - necroptosis-c020
+  - necroptosis-c021
+  - necroptosis-c024
+  - necroptosis-c025
+  - necroptosis-c027
+  - necroptosis-c040
+  - necroptosis-c047
+  - apoptosis-c025
+  - apoptosis-c032
+  - apoptosis-c039
+  - pyroptosis-c002
+  - pyroptosis-c025
+  - other-regulated-cell-death-c010
+  - other-regulated-cell-death-c046
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

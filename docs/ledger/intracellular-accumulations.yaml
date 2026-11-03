@@ -1,0 +1,674 @@
+entity: intracellular-accumulations
+claims:
+  - claimId: intracellular-accumulations-c001
+    section: definition
+    statement: "Intracellular storage is the retention of material inside cells."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "4" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c002
+    section: definition
+    statement: "Stored substances may be normal or abnormal, endogenous or exogenous, and harmful or harmless."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "4" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c003
+    section: definition
+    statement: "The stored material in the textbook overview comprises lipids (fat, cholesterol), glycogen, abnormal proteins, and pigments or particulates."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "4-7" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c004
+    section: definition
+    statement: "Intracellular storage is listed among the major adaptive responses of cells to persistent stress, together with atrophy, hypertrophy, hyperplasia, metaplasia and dysplasia."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "7" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c005
+    section: definition
+    statement: "Glycogen storage diseases have a combined incidence of about 1 in 20,000 to 25,000 births."
+    sourceRef: { source: rubin-8e, chapter: "6", pages: "274" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c006
+    section: etiology
+    statement: "Increased fatty acid delivery in diabetes or alcohol-altered metabolism, glycogen excess in uncontrolled diabetes, cholesterol in familial hypercholesterolemia and iron overload are causes of storage of normal constituents."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5, 7" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c007
+    section: etiology
+    statement: "Inherited enzyme defects block glycogen degradation or lysosomal catabolism of complex lipids and mucopolysaccharides."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c008
+    section: etiology
+    statement: "Abnormal tertiary protein structure may result from a mutation or from an acquired folding defect."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "36" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c009
+    section: etiology
+    statement: "Non-metabolized materials include insoluble pigments such as lipofuscin and foreign particulates such as inhaled silica or carbon."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "4-5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c010
+    section: pathogenesis
+    statement: "Hepatocytes take up fatty acids from adipose tissue, convert them to triglycerides and secrete most of them as lipoproteins."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c011
+    section: pathogenesis
+    statement: "Increased free fatty acid delivery to the liver leads to triglyceride accumulation in hepatocytes."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c012
+    section: pathogenesis
+    statement: "Blood glucose levels regulate glycogen storage; hyperglycemia can increase glycogen stores."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c013
+    section: pathogenesis
+    statement: "Glycogen is converted stepwise to glucose by several enzymes, and mutational inactivation of any one causes a glycogen storage disease."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c014
+    section: pathogenesis
+    statement: "Lysosomal acid hydrolases degrade lipids, glycoproteins and mucopolysaccharides; deficiency of one leaves its substrate undigested within distended lysosomes."
+    sourceRef: { source: rubin-8e, chapter: "6", pages: "274" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c015
+    section: pathogenesis
+    statement: "Distended lysosomes interfere with other cellular functions and can lead to cell death; brain and heart are most affected."
+    sourceRef: { source: rubin-8e, chapter: "6", pages: "274" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c016
+    section: pathogenesis
+    statement: "Lysosomal storage diseases are grouped by the class of substrate retained (sphingolipidoses, gangliosidoses, mucopolysaccharidoses and others)."
+    sourceRef: { source: rubin-8e, chapter: "6", pages: "274" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c017
+    section: pathogenesis
+    statement: "Cerebrosides accumulate in Gaucher disease, gangliosides in Tay-Sachs disease and mucopolysaccharide products in Hurler and Hunter syndromes."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c018
+    section: pathogenesis
+    statement: "Symptoms of glycogenoses reflect either glycogen accumulation itself (Pompe) or lack of glucose from glycogen breakdown (von Gierke)."
+    sourceRef: { source: rubin-8e, chapter: "6", pages: "274" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c019
+    section: pathogenesis
+    statement: "Protein misfolding occurs continually; chaperones and proteasomes refold or eliminate defective proteins."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "7, 37" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c020
+    section: pathogenesis
+    statement: "If protein quality control fails or is overloaded, misfolded proteins accumulate as amorphous aggregates or fibrils."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "37" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c021
+    section: pathogenesis
+    statement: "Misfolded proteins injure cells through loss of function or harmful gain of function."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "37" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c022
+    section: pathogenesis
+    statement: "Protein aggregates too large for proteasomes are directed to autophagosomes via ubiquitin and the p62 adaptor."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "16" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c023
+    section: pathogenesis
+    statement: "Protein aggregates can deplete cellular ubiquitin, generate reactive oxygen species and inhibit proteasomes, leading to cell death."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "37-38" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c024
+    section: pathogenesis
+    statement: "The PiZ alpha-1-antitrypsin mutant folds abnormally and is retained in the hepatocyte endoplasmic reticulum rather than exported."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c025
+    section: pathogenesis
+    statement: "Retained alpha-1-antitrypsin injures hepatocytes and causes cirrhosis; failure to secrete it allows proteolysis of lung connective tissue (emphysema)."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "38" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c026
+    section: pathogenesis
+    statement: "Lipofuscin consists of peroxidized unsaturated lipids and oxidized cross-linked proteins that autophagy cannot remove."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c027
+    section: pathogenesis
+    statement: "Alveolar macrophages phagocytose inhaled carbon and carry it to hilar lymph nodes, where it remains indefinitely."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "7" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c028
+    section: gross
+    statement: "Von Gierke disease presents with marked hepatomegaly."
+    sourceRef: { source: rubin-8e, chapter: "6", pages: "274" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c029
+    section: gross
+    statement: "Splenomegaly is practically universal in Gaucher disease."
+    sourceRef: { source: rubin-8e, chapter: "6", pages: "280" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c030
+    section: gross
+    statement: "Clusters of cholesterol-storing macrophages can be grossly visible in subcutaneous tissue as xanthomas."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c031
+    section: gross
+    statement: "Anthracotic lungs may look striking grossly but the condition is innocuous."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "7" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c032
+    section: micro
+    statement: "Triglyceride accumulation in hepatocytes appears as cytoplasmic lipid globules."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5-6" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c033
+    section: micro
+    statement: "In atherosclerosis cholesterol first accumulates in intimal macrophages, later also in smooth muscle cells; macrophages store cholesterol in xanthomas."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c034
+    section: micro
+    statement: "In poorly controlled diabetes hepatocytes and proximal tubule cells are swollen by glycogen."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c035
+    section: micro
+    statement: "Gaucher cells are large macrophages with eccentric nuclei and clear fibrillar cytoplasm resembling wrinkled paper."
+    sourceRef: { source: rubin-8e, chapter: "6", pages: "280" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c036
+    section: micro
+    statement: "Niemann-Pick foam cells are macrophages containing many small, uniform vacuoles of sphingomyelin and cholesterol."
+    sourceRef: { source: rubin-8e, chapter: "6", pages: "279" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c037
+    section: micro
+    statement: "In alpha-1-antitrypsin deficiency hepatocytes contain faintly eosinophilic PAS-positive cytoplasmic droplets within dilated ER cisternae."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c038
+    section: micro
+    statement: "Mallory bodies, composed of intermediate filaments, are hepatocellular inclusions in alcoholic liver injury."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "37" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c039
+    section: micro
+    statement: "Lewy bodies (alpha-synuclein) occur in substantia nigra neurons in Parkinson disease; neurofibrillary tangles (tau) occur in cortical neurons in Alzheimer disease."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "36-37" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c040
+    section: micro
+    statement: "Lipofuscin is a golden-brown pigment accumulating mainly in postmitotic or rarely dividing cells such as neurons, cardiac myocytes and hepatocytes."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5-6" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c041
+    section: micro
+    statement: "Hyaline is a descriptive term for homogeneous eosinophilic material on routine stains."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "30" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c042
+    section: ancillary
+    statement: "PAS after diastase removal of glycogen highlights alpha-1-antitrypsin aggregates in the liver."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "36" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c043
+    section: ancillary
+    statement: "Gaucher cell cytoplasm stains intensely with PAS."
+    sourceRef: { source: rubin-8e, chapter: "6", pages: "280" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c044
+    section: ancillary
+    statement: "Prussian blue stain highlights iron storage in the liver in hereditary hemochromatosis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "6" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c045
+    section: ancillary
+    statement: "On frozen sections, fat can be shown with a red lipid stain such as Sudan red."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "336" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c046
+    section: clinical
+    statement: "Stored materials range from innocuous to injurious, and storage diseases range from asymptomatic to fatal."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "4-5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c047
+    section: clinical
+    statement: "Von Gierke disease presents in infancy or early childhood with marked hepatomegaly and hypoglycemia."
+    sourceRef: { source: rubin-8e, chapter: "6", pages: "274" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c048
+    section: clinical
+    statement: "Infantile Pompe disease features muscle weakness with death from heart failure in the first year."
+    sourceRef: { source: rubin-8e, chapter: "6", pages: "274" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c049
+    section: clinical
+    statement: "Lysosomal storage diseases vary from asymptomatic organomegaly to rapidly fatal brain disease."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c050
+    section: clinical
+    statement: "Sphingolipidoses such as Tay-Sachs disease show a macular cherry-red spot."
+    sourceRef: { source: rubin-8e, chapter: "6", pages: "279" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c051
+    section: clinical
+    statement: "Alpha-1-antitrypsin deficiency ranges from neonatal cholestatic hepatitis to cirrhosis in childhood or adulthood, and also causes emphysema."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c052
+    section: clinical
+    statement: "Hereditary hemochromatosis damages mainly heart, liver, testes and pancreas."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "7" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c053
+    section: clinical
+    statement: "Familial hypercholesterolemia causes xanthomas; cholesterol storage is linked to atherosclerosis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c054
+    section: diagnosis
+    statement: "Stored material is identified by morphology plus special stains, namely PAS with and without diastase, and Prussian blue for iron."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "6, 36" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c055
+    section: diagnosis
+    statement: "Von Gierke disease is due to glucose-6-phosphatase deficiency; Pompe disease to lysosomal acid alpha-glucosidase deficiency."
+    sourceRef: { source: rubin-8e, chapter: "6", pages: "274" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c056
+    section: diagnosis
+    statement: "Pompe disease does not cause hypoglycemia because the defect is lysosomal and cytosolic glycogen metabolism remains intact."
+    sourceRef: { source: rubin-8e, chapter: "6", pages: "274" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c057
+    section: prognosis
+    statement: "Simple triglyceride storage is reversible, and the lipid droplets per se have not been shown to impair cell function."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c058
+    section: prognosis
+    statement: "Iron in hemosiderosis by definition does not injure cells; in hereditary hemochromatosis oxidative stress causes organ damage and increases liver cancer risk."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "7" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c059
+    section: prognosis
+    statement: "Lysosomal storage diseases are all progressive."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c060
+    section: prognosis
+    statement: "Cirrhosis in alpha-1-antitrypsin deficiency carries a high incidence of hepatocellular carcinoma."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c061
+    section: prognosis
+    statement: "Lipofuscin may increase oxidant stress by impairing proteasomal and lysosomal degradation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5-6" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c062
+    section: prognosis
+    statement: "Cholesterol-laden intimal macrophages form the initial lesion of atherosclerosis (fatty streak); advanced plaques contain extracellular cholesterol."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c063
+    section: prognosis
+    statement: "Misfolded proteins may form insoluble aggregates deposited extracellularly, evolving to amyloid fibrils."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "38" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c064
+    section: differential
+    statement: "Fatty change is reversible accumulation of triglycerides in hepatocytes."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c065
+    section: differential
+    statement: "In hydropic swelling the ER cisternae are dilated by excess fluid."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "4" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c066
+    section: differential
+    statement: "In hepatic glycogenoses glycogen accumulates in the liver and hypoglycemia results."
+    sourceRef: { source: rubin-8e, chapter: "6", pages: "274" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c067
+    section: differential
+    statement: "Lysosomal storage diseases such as Gaucher and Niemann-Pick disease show macrophages distended by stored lipid, with organomegaly."
+    sourceRef: { source: rubin-8e, chapter: "6", pages: "279-280" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c068
+    section: differential
+    statement: "Alpha-1-antitrypsin deficiency shows PAS-positive hepatocyte globules and affects liver and lung."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c069
+    section: differential
+    statement: "Pigment accumulations include lipofuscin, melanin, carbon and hemosiderin."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5-7" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c070
+    section: differential
+    statement: "Aggregated misfolded proteins may be deposited extracellularly."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "38" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c071
+    section: high-yield
+    statement: "Storage arises from overload of normal substances, missing enzymes, abnormal proteins, or indigestible materials."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "4-5, 36-37" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c072
+    section: high-yield
+    statement: "Fat storage is reversible."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c073
+    section: high-yield
+    statement: "Von Gierke (glucose-6-phosphatase) causes hepatomegaly and hypoglycemia; Pompe (acid alpha-glucosidase) causes myopathy and heart failure without hypoglycemia."
+    sourceRef: { source: rubin-8e, chapter: "6", pages: "274" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c074
+    section: high-yield
+    statement: "Lysosomal storage diseases are classified by the retained substrate; Gaucher disease stores glucocerebroside."
+    sourceRef: { source: rubin-8e, chapter: "6", pages: "274" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c075
+    section: high-yield
+    statement: "PiZ alpha-1-antitrypsin is retained in hepatocyte ER, forming PAS-positive globules, with cirrhosis and emphysema."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c076
+    section: high-yield
+    statement: "Hemosiderosis does not injure cells, whereas hereditary hemochromatosis causes organ damage."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "7" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c077
+    section: high-yield
+    statement: "Lipofuscin is a golden-brown wear-and-tear pigment of long-lived cells."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c078
+    section: traps
+    statement: "Hyaline material differs by site: plasma proteins in lung hyaline membranes, basement-membrane material in arteriolar hyaline, cytoskeletal filaments in alcoholic hyaline."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "30" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c079
+    section: traps
+    statement: "Pompe disease is a glycogen storage disease that is also a lysosomal storage disease."
+    sourceRef: { source: rubin-8e, chapter: "6", pages: "274" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c080
+    section: traps
+    statement: "Anthracosis is innocuous and hemosiderosis does not injure cells."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "7" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c081
+    section: traps
+    statement: "In poorly controlled diabetes, hyperglycemia increases glycogen stores in hepatocytes and renal proximal tubule cells."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c082
+    section: traps
+    statement: "Misfolded CFTR chloride channels are degraded and fail to reach the membrane, a loss-of-function mechanism."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "37" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c083
+    section: mnemonics
+    statement: "Mnemonic for the four routes to storage: surplus normal substance, missing enzyme, abnormal protein, indigestible material."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "4-5, 36-37" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: intracellular-accumulations-c084
+    section: mnemonics
+    statement: "Diastase removes glycogen while alpha-1-antitrypsin aggregates remain PAS-positive."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "36" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03

@@ -1,0 +1,51 @@
+id: fatty-change-micro-2
+file: fatty-change-micro-2.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Histopathology_of_microvesicular_steatosis.jpg
+author: Joshua Ronen, Shahzeb Shaheen, David Steinberg, Kevin R. Justus
+license: CC-BY-3.0
+licenseUrl: https://creativecommons.org/licenses/by/3.0/
+retrievedAt: 2026-10-10
+modifications: "none (the arrow, arrowhead and inset are part of the file as published on Wikimedia Commons)"
+attributionText: "Ronen J, Shaheen S, Steinberg D, Justus KR. Acute Fatty Liver of Pregnancy. Cureus 2018 (doi:10.7759/cureus.2164), via Wikimedia Commons, CC BY 3.0"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: high power (inset lower power)
+caption:
+  it: >-
+    Steatosi microvescicolare (in un caso di steatosi epatica acuta della gravidanza) a confronto con la macrovescicolare
+    (riquadro), EE. Guarda prima il riquadro in alto a destra: grandi vacuoli rotondi e vuoti, spesso uno per cellula,
+    che spingono il nucleo alla periferia; è la steatosi macrovescicolare, tipica di alcol, obesità e diabete. Poi passa
+    al campo principale: gli epatociti indicati da freccia e punta di freccia sono ingranditi, con citoplasma chiaro e
+    schiumoso pieno di goccioline minute, e il nucleo resta al centro. Questo quadro, legato a un deficit
+    dell'ossidazione mitocondriale degli acidi grassi, si vede anche nella sindrome di Reye e in alcune tossicità da
+    farmaci, e di solito indica un danno più grave. Attenzione: a piccolo ingrandimento le cellule schiumose possono
+    sembrare semplicemente rigonfie; cerca le microgoccioline e conferma il grasso con colorazioni per i lipidi.
+  en: >-
+    Microvesicular steatosis (in a case of acute fatty liver of pregnancy) compared with macrovesicular steatosis
+    (inset), H&E. Look first at the inset at the top right: large, round, empty vacuoles, often one per cell, that push
+    the nucleus to the edge; this is macrovesicular steatosis, typical of alcohol, obesity and diabetes. Then move to the
+    main field: the hepatocytes marked by the arrow and the arrowhead are enlarged, with pale, foamy cytoplasm packed
+    with tiny droplets, and the nucleus stays central. This pattern, linked to failing mitochondrial fatty acid
+    oxidation, is also seen in Reye syndrome and some drug toxicities, and usually signals more severe injury. Pitfall:
+    at low power foamy cells can pass for simple swelling; look for the microdroplets and confirm fat with lipid stains.
+alt:
+  it: >-
+    Micrografia di fegato in ematossilina-eosina ad alto ingrandimento: epatociti grandi e chiari con citoplasma
+    schiumoso e nucleo centrale, uno indicato da una freccia chiara e uno da una punta di freccia chiara; in alto a
+    destra un riquadro con epatociti pieni di grandi vacuoli rotondi e bianchi.
+  en: >-
+    High-power H&E micrograph of liver: large, pale hepatocytes with foamy cytoplasm and central nuclei, one marked by a
+    pale arrow and one by a pale arrowhead; at the top right an inset of hepatocytes filled with large, round white
+    vacuoles.
+annotations:
+  - id: macrovesicular-inset
+    label: { it: Riquadro con steatosi macrovescicolare, en: Inset with macrovesicular steatosis }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.58, 0.0, 1.0, 0.0, 1.0, 0.43, 0.58, 0.43] }
+  - id: foamy-hepatocyte
+    label: { it: Epatocita schiumoso con nucleo centrale, en: Foamy hepatocyte with central nucleus }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.05, 0.57, 0.22, 0.57, 0.22, 0.75, 0.05, 0.75] }

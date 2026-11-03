@@ -1,0 +1,55 @@
+id: g01-q-integrative-8
+module: g01
+entities: [hyperplasia, dysplasia, metaplasia, hypertrophy]
+kind: mcq
+difficulty: 3
+tags: [integrative, hyperplasia, dysplasia, metaplasia, hypertrophy]
+stem:
+  it: "Una donna di 56 anni, obesa e in postmenopausa, assume da due anni estrogeni senza progestinico e ora presenta sanguinamenti uterini anomali. La biopsia endometriale mostra un aumento del rapporto ghiandole/stroma, con ghiandole affollate e in parte cisticamente dilatate, distribuite in modo variabile nel campione. Non si riconoscono atipie citologiche né un gruppo circoscritto di ghiandole diverse dall'endometrio circostante. Quale affermazione su questa lesione è corretta?"
+  en: "A 56-year-old obese postmenopausal woman has taken estrogen without a progestin for two years and now has abnormal uterine bleeding. An endometrial biopsy shows a raised gland-to-stroma ratio, with crowded glands, some cystically dilated, varying from place to place in the sample. There is no cytologic atypia and no circumscribed cluster of glands that differ from the surrounding endometrium. Which statement about this lesion is correct?"
+options:
+  - id: a
+    text:
+      it: "È una displasia: un clone di cellule mutate ha perso la normale maturazione e, essendo autonomo, progredirà anche se gli estrogeni vengono sospesi."
+      en: "It is dysplasia: a clone of mutated cells has lost normal maturation and, being autonomous, will progress even if estrogen is stopped."
+    correct: false
+    why:
+      it: "Errata. La displasia richiede alterazioni citologiche (pleomorfismo, nuclei grandi e ipercromatici) e perdita della maturazione, che qui mancano. Inoltre nemmeno la displasia è pienamente autonoma e può regredire quando lo stimolo cessa."
+      en: "Incorrect. Dysplasia requires cytologic changes (pleomorphism, large hyperchromatic nuclei) and loss of maturation, which are absent here. Even dysplasia is not fully autonomous and can regress when the stimulus stops."
+  - id: b
+    text:
+      it: "È una metaplasia: l'epitelio ghiandolare è stato sostituito da un altro tipo di epitelio maturo più resistente."
+      en: "It is metaplasia: the glandular epithelium has been replaced by another, more resistant type of mature epithelium."
+    correct: false
+    why:
+      it: "Errata. La metaplasia è la sostituzione di un tipo cellulare differenziato con un altro. Qui le ghiandole sono endometriali, solo più numerose e affollate."
+      en: "Incorrect. Metaplasia is the replacement of one differentiated cell type by another. Here the glands are endometrial, just more numerous and crowded."
+  - id: c
+    text:
+      it: "È un'ipertrofia: le cellule endometriali si sono ingrandite senza dividersi."
+      en: "It is hypertrophy: the endometrial cells have enlarged without dividing."
+    correct: false
+    why:
+      it: "Errata. L'ipertrofia è un aumento delle dimensioni delle cellule. L'aumento del rapporto ghiandole/stroma con ghiandole affollate indica un aumento del numero di cellule e di ghiandole, cioè un'iperplasia."
+      en: "Incorrect. Hypertrophy is an increase in cell size. A raised gland-to-stroma ratio with crowded glands indicates more cells and more glands, that is, hyperplasia."
+  - id: d
+    text:
+      it: "È un'iperplasia non atipica: endometrio funzionalmente normale che prolifera in risposta all'eccesso di estrogeni; può andare in remissione con alte dosi di progestinici, ma la proliferazione prolungata aumenta il rischio di carcinoma endometriale."
+      en: "It is nonatypical hyperplasia: functionally normal endometrium proliferating in response to excess estrogen; it can remit with high-dose progestins, but prolonged proliferation raises the risk of endometrial carcinoma."
+    correct: true
+    why:
+      it: "Corretta. Gli estrogeni esogeni fanno proliferare epitelio e stroma endometriali; senza atipie né un clone circoscritto la lesione resta dipendente dallo stimolo ormonale. Non è una neoplasia, ma ogni mitosi comporta un piccolo rischio di mutazione che può portare a una proliferazione autonoma, per cui l'esposizione prolungata agli estrogeni aumenta il rischio di carcinoma."
+      en: "Correct. Exogenous estrogen makes endometrial epithelium and stroma proliferate; without atypia or a circumscribed clone the lesion still depends on the hormonal stimulus. It is not a neoplasm, but every mitosis carries a small risk of mutation that can lead to autonomous growth, so prolonged estrogen exposure raises the risk of carcinoma."
+  - id: e
+    text:
+      it: "È un'iperplasia atipica (EIN): una proliferazione clonale e neoplastica di ghiandole geneticamente alterate."
+      en: "It is atypical hyperplasia (EIN): a clonal, neoplastic proliferation of genetically altered glands."
+    correct: false
+    why:
+      it: "Errata. L'EIN si riconosce come un gruppo geografico di ghiandole affollate e citologicamente alterate, distinto dall'endometrio di fondo. Qui l'affollamento è variabile e diffuso, senza atipie né un focolaio circoscritto."
+      en: "Incorrect. EIN is recognized as a geographic cluster of crowded, cytologically altered glands that stands apart from the background endometrium. Here the crowding is variable and diffuse, with no atypia and no circumscribed focus."
+backLink: { entity: hyperplasia, section: pathogenesis }
+claims: [hyperplasia-c008, hyperplasia-c011, hyperplasia-c027, hyperplasia-c029, hyperplasia-c030, hyperplasia-c038, hyperplasia-c039, hyperplasia-c049, hyperplasia-c050, hyperplasia-c061, hyperplasia-c063, dysplasia-c001, dysplasia-c051, dysplasia-c052, dysplasia-c057, metaplasia-c001, hypertrophy-c001, atrophy-c052]
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

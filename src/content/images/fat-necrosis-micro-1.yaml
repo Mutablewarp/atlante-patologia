@@ -1,0 +1,69 @@
+id: fat-necrosis-micro-1
+file: fat-necrosis-micro-1.jpg
+kind: micro
+sourceUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC13091641/figure/FIG5/
+author: Marcia Mejia, Dellys Adriana Alvarez Alvarado, Ana Maria Trujillo Gómez
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-10-10
+modifications: >-
+  None: Figure 5 of the source article is used exactly as published (750 × 563 px, no labels or arrows in the
+  original). The image file was obtained through the Europe PMC open-access service for PMC13091641.
+attributionText: >-
+  Marcia Mejia, Dellys Adriana Alvarez Alvarado, Ana Maria Trujillo Gómez, "A Case of Acute Pancreatitis With Fat
+  Saponification Mimicking Carcinomatosis in an Adolescent: Is It Carcinomatosis or Fat Necrosis?", Cureus
+  2026;18(3):e105504, doi:10.7759/cureus.105504, Figure 5, CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+# License check (2026-10-10): the article XML on Europe PMC carries a CC BY 4.0 licence statement
+# (https://creativecommons.org/licenses/by/4.0/), copyright "Mejia et al."; the figure legend gives no third-party
+# credit, so the article authors are the creators. Histology only, nothing identifies the patient.
+stain: H&E
+magnification: medium power (not stated in the source)
+caption:
+  it: >-
+    Biopsia peritoneale in un caso di pancreatite acuta in età adolescenziale: è la forma enzimatica della necrosi del tessuto
+    adiposo (steatonecrosi), quella in cui lipasi e altri enzimi pancreatici fuoriusciti dal pancreas digeriscono il
+    grasso circostante. Parti dall'insieme: il campo è diviso in tre fasce. In alto il grasso è morto: gli adipociti
+    non hanno più nuclei e restano solo profili sfumati, pallidi e rosati, come "fantasmi" delle cellule (la
+    struttura si intravede ma la cellula è perduta). Al centro corre una fascia di infiammazione acuta e cronica, con
+    neutrofili, linfociti, plasmacellule e istiociti a citoplasma vacuolato che iniziano a rimuovere i lipidi
+    liberati. In basso gli adipociti conservano contorni netti, con il lume vuoto e setti sottili. In questa biopsia
+    non si vedono depositi di saponi di calcio: quando ci sono appaiono come materiale amorfo blu-violaceo
+    (basofilo) ai margini delle isole necrotiche e corrispondono, a occhio nudo, alle macchie bianco-gesso della
+    saponificazione. Il quadro clinico è istruttivo: alla TC questi micronoduli peritoneali avevano simulato una
+    carcinosi.
+  en: >-
+    Peritoneal biopsy from an adolescent with acute pancreatitis: the enzymatic form of fat necrosis, in which lipase
+    and other pancreatic enzymes that have escaped from the gland digest the surrounding fat. Start with the whole
+    field, which falls into three bands. At the top the fat is dead: the adipocytes have lost their nuclei and only
+    blurred, pale pink outlines remain, "ghosts" of the cells (the architecture is still faintly visible but the cells
+    are gone). Across the middle runs a band of acute and chronic inflammation, with neutrophils, lymphocytes, plasma
+    cells and histiocytes with vacuolated cytoplasm that start to clear the released lipid. At the bottom the
+    adipocytes keep sharp outlines, with empty lumens and thin septa. No calcium soap deposits are seen in this
+    biopsy: when present they appear as amorphous blue-purple (basophilic) material at the edges of the necrotic
+    islands and match the chalky white spots of saponification seen with the naked eye. The clinical story is
+    instructive: on CT these small peritoneal nodules had mimicked carcinomatosis.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina: nella metà superiore materiale rosa pallido, amorfo e privo di nuclei con
+    contorni cellulari sfumati; al centro una fascia diagonale ricca di piccoli nuclei scuri di cellule
+    infiammatorie; in basso spazi chiari rotondeggianti separati da setti sottili.
+  en: >-
+    Haematoxylin and eosin micrograph: in the upper half pale pink, amorphous material without nuclei and with
+    blurred cell outlines; across the middle a diagonal band crowded with small dark nuclei of inflammatory cells;
+    at the bottom rounded clear spaces separated by thin septa.
+annotations:
+  - id: necrotic-adipocytes
+    label: { it: "Adipociti necrotici: profili \"fantasma\" senza nuclei", en: "Necrotic adipocytes: nucleus-free \"ghost\" outlines" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.18, 0.03, 0.97, 0.03, 0.97, 0.40, 0.62, 0.47, 0.20, 0.42] }
+  - id: inflammatory-band
+    label: { it: Fascia infiammatoria con istiociti vacuolati, en: Inflammatory band with vacuolated histiocytes }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.15, 0.45, 0.45, 0.55, 0.88, 0.48, 0.92, 0.66, 0.56, 0.80, 0.25, 0.84, 0.12, 0.70] }
+  - id: preserved-adipocytes
+    label: { it: Adipociti con contorni conservati, en: Adipocytes with preserved outlines }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.40, 0.81, 0.66, 0.81, 0.66, 0.97, 0.40, 0.97] }

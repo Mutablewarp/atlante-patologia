@@ -1,0 +1,70 @@
+id: g01-q-other-regulated-cell-death-1
+module: g01
+entities: [other-regulated-cell-death]
+kind: mcq
+difficulty: 2
+tags: [granzyme-perforin]
+stem:
+  it: "In un paziente con epatite virale acuta, la biopsia epatica mostra linfociti T citotossici CD8+ a stretto contatto con epatociti infettati; molti di questi epatociti muoiono come cellule singole, con aspetto apoptotico. Quale sequenza descrive meglio come le proteine dei granuli del linfocita uccidono l'epatocita bersaglio?"
+  en: "In a patient with acute viral hepatitis, a liver biopsy shows CD8+ cytotoxic T lymphocytes in close contact with infected hepatocytes; many of these hepatocytes die as single cells with an apoptotic appearance. Which sequence best describes how the lymphocyte's granule proteins kill the target hepatocyte?"
+options:
+  - id: a
+    text:
+      it: "I pori di perforina bastano da soli a far rigonfiare e scoppiare l'epatocita, che muore per necrosi con infiammazione."
+      en: "Perforin pores alone make the hepatocyte swell and burst, so it dies by necrosis with inflammation."
+    correct: false
+    why:
+      it: "La perforina apre un canale che serve da via d'ingresso per le proteine del linfocita; l'uccisione è affidata ai granzimi, che attivano l'apoptosi. Lo conferma l'aspetto apoptotico delle cellule singole."
+      en: "Perforin opens a channel that serves as an entry route for the lymphocyte's proteins; the killing is done by granzymes, which switch on apoptosis. The apoptotic appearance of the single cells confirms this."
+  - id: b
+    text:
+      it: "La perforina apre un canale nella membrana; il granzima B entra, taglia Bid in tBid (rilascio mitocondriale di citocromo c) e converte la procaspasi-3 in caspasi attiva."
+      en: "Perforin opens a channel in the membrane; granzyme B enters, cleaves Bid to tBid (mitochondrial release of cytochrome c) and converts procaspase-3 into an active caspase."
+    correct: true
+    why:
+      it: "Corretto. Il granzima B, una serin-proteasi, recluta la via mitocondriale tramite tBid e attiva direttamente le caspasi esecutrici: l'epatocita muore per apoptosi, come cellula singola."
+      en: "Correct. Granzyme B, a serine protease, recruits the mitochondrial pathway through tBid and directly activates executioner caspases: the hepatocyte dies by apoptosis, as a single cell."
+  - id: c
+    text:
+      it: "Il granzima B attiva la caspasi-1 nell'inflammasoma dell'epatocita, che muore per piroptosi."
+      en: "Granzyme B activates caspase-1 in the hepatocyte's inflammasome, and the cell dies by pyroptosis."
+    correct: false
+    why:
+      it: "Il granzima B agisce su Bid e sulla procaspasi-3, non sulla caspasi-1. La piroptosi è una morte litica e infiammatoria, diversa dall'aspetto apoptotico descritto."
+      en: "Granzyme B acts on Bid and procaspase-3, not on caspase-1. Pyroptosis is a lytic, inflammatory death, unlike the apoptotic appearance described."
+  - id: d
+    text:
+      it: "I granzimi agiscono solo per una via indipendente dalle caspasi: liberano la DNasi CAD, che degrada il DNA, e le caspasi non vengono mai attivate."
+      en: "Granzymes work only through a caspase-independent route: they free the DNase CAD, which degrades DNA, and caspases are never activated."
+    correct: false
+    why:
+      it: "La via di CAD esiste, ma non è l'unica: il granzima B attiva anche la procaspasi-3 e, tramite tBid, la via mitocondriale. La parola «solo» rende falsa l'affermazione."
+      en: "The CAD route exists, but it is not the only one: granzyme B also activates procaspase-3 and, through tBid, the mitochondrial pathway. The word \"only\" makes the statement false."
+  - id: e
+    text:
+      it: "I granzimi attivano la NADPH ossidasi, che decondensa la cromatina, e l'epatocita espelle una rete di DNA."
+      en: "Granzymes activate NADPH oxidase, which decondenses chromatin, and the hepatocyte extrudes a DNA net."
+    correct: false
+    why:
+      it: "È la NETosi, un programma proprio dei neutrofili (e di eosinofili e mastociti), che ne hanno bisogno per intrappolare i microbi. Non è il modo in cui i linfociti citotossici uccidono le cellule bersaglio."
+      en: "That is NETosis, a program of neutrophils themselves (and of eosinophils and mast cells), used to trap microbes. It is not how cytotoxic lymphocytes kill target cells."
+backLink: { entity: other-regulated-cell-death, section: pathogenesis }
+claims:
+  - other-regulated-cell-death-c005
+  - other-regulated-cell-death-c006
+  - other-regulated-cell-death-c013
+  - other-regulated-cell-death-c014
+  - other-regulated-cell-death-c015
+  - other-regulated-cell-death-c016
+  - other-regulated-cell-death-c017
+  - other-regulated-cell-death-c018
+  - other-regulated-cell-death-c019
+  - other-regulated-cell-death-c020
+  - other-regulated-cell-death-c028
+  - other-regulated-cell-death-c047
+  - apoptosis-c041
+  - pyroptosis-c002
+  - pyroptosis-c025
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

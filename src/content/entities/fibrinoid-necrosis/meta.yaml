@@ -1,0 +1,159 @@
+id: fibrinoid-necrosis
+module: g01
+tier: core
+kind: process
+names:
+  it: "Necrosi fibrinoide"
+  en: "Fibrinoid necrosis"
+  eponyms: []
+  synonyms:
+    it: ["Degenerazione fibrinoide", "Necrosi fibrinoide vascolare", "Alterazione fibrinoide"]
+    en: ["Fibrinoid degeneration", "Vascular fibrinoid necrosis", "Fibrinoid change"]
+  abbreviations: []
+summary:
+  it: "Lesione dei vasi danneggiati in cui proteine plasmatiche e fibrina penetrano nella parete, che diventa intensamente eosinofila; è tipica delle vasculiti da immunocomplessi e dell'ipertensione maligna."
+  en: "Lesion of damaged vessels in which plasma proteins and fibrin seep into the wall, which turns intensely eosinophilic; typical of immune complex vasculitis and malignant hypertension."
+lenses:
+  system: [vessels, kidney, skin]
+  process: [necrosis, hypersensitivity, acute-inflammation, extracellular-accumulation]
+  pattern: [necrosis-fibrinoid]
+  presentation: [hematuria]
+  marker: [special-stains]
+  group: [vascular, immune, inflammatory]
+learningObjectives:
+  - it: "Descrivere l'aspetto istologico della necrosi fibrinoide e spiegare perché la parete vasale appare intensamente eosinofila."
+    en: "Describe the histology of fibrinoid necrosis and explain why the vessel wall looks intensely eosinophilic."
+  - it: "Spiegare la via immunitaria (immunocomplessi, complemento, neutrofili) e la via emodinamica (ipertensione maligna) che portano alla lesione."
+    en: "Explain the immune route (immune complexes, complement, neutrophils) and the hemodynamic route (malignant hypertension) to the lesion."
+  - it: "Elencare le principali condizioni in cui si osserva necrosi fibrinoide: vasculiti, ipertensione maligna, rigetto anticorpo-mediato, nodulo reumatoide."
+    en: "List the main conditions with fibrinoid necrosis: vasculitis, malignant hypertension, antibody-mediated rejection, rheumatoid nodule."
+  - it: "Distinguere la necrosi fibrinoide dall'arteriolosclerosi ialina, dall'amiloide e dal trombo di fibrina."
+    en: "Distinguish fibrinoid necrosis from hyaline arteriolosclerosis, amyloid and a fibrin thrombus."
+  - it: "Collegare la lesione alle sue complicanze: trombosi, infarti, aneurismi e cicatrice parietale."
+    en: "Link the lesion to its complications: thrombosis, infarcts, aneurysms and wall scarring."
+prerequisites: [coagulative-necrosis]
+relations:
+  - type: differentialOf
+    target: coagulative-necrosis
+    note:
+      it: "Deposito proteico nella parete di un vaso da un lato, morte di un'area di tessuto con profili cellulari conservati dall'altro."
+      en: "Protein deposit in a vessel wall versus death of a tissue area with preserved cell outlines."
+  - type: differentialOf
+    target: amyloidosis
+    note:
+      it: "Entrambe producono un deposito eosinofilo nella parete vasale; l'amiloide, colorata con rosso Congo, è birifrangente in luce polarizzata."
+      en: "Both give an eosinophilic deposit in the vessel wall; amyloid is birefringent with Congo red."
+  - type: sameLesionOtherOrgan
+    target: polyarteritis-nodosa
+    note:
+      it: "La poliarterite nodosa è una necrosi fibrinoide segmentaria delle arterie muscolari."
+      en: "Polyarteritis nodosa is segmental fibrinoid necrosis of muscular arteries."
+  - type: sameLesionOtherOrgan
+    target: malignant-hypertension
+    note:
+      it: "Nell'ipertensione maligna le arteriole vanno incontro a necrosi fibrinoide e poi a una proliferazione a bulbo di cipolla."
+      en: "In malignant hypertension arterioles undergo fibrinoid necrosis, then onion-skin proliferation."
+quickCheck:
+  - id: fibrinoid-necrosis-q1
+    q:
+      it: "Da che cosa dipende la forte eosinofilia della parete vasale nella necrosi fibrinoide?"
+      en: "What causes the strong eosinophilia of the vessel wall in fibrinoid necrosis?"
+    a:
+      it: "Dall'accumulo nella parete di proteine plasmatiche, in particolare fibrina, filtrate attraverso un endotelio danneggiato."
+      en: "Accumulation in the wall of plasma proteins, especially fibrin, that have leaked through a damaged endothelium."
+    kind: short
+  - id: fibrinoid-necrosis-q2
+    q:
+      it: "Quale frazione del complemento richiama i neutrofili nelle vasculiti da immunocomplessi?"
+      en: "Which complement fragment recruits neutrophils in immune complex vasculitis?"
+    a:
+      it: "Il C5a, che aumenta anche la permeabilità vascolare insieme al C3a."
+      en: "C5a, which also increases vascular permeability together with C3a."
+    kind: short
+  - id: fibrinoid-necrosis-q3
+    q:
+      it: "Quale lesione arteriolare segue la necrosi fibrinoide nell'ipertensione maligna?"
+      en: "Which arteriolar lesion follows fibrinoid necrosis in malignant hypertension?"
+    a:
+      it: "La proliferazione concentrica di cellule muscolari lisce, con aspetto a bulbo di cipolla (arteriolosclerosi maligna)."
+      en: "Concentric smooth muscle proliferation with an onion-skin appearance (malignant arteriolosclerosis)."
+    kind: short
+  - id: fibrinoid-necrosis-q4
+    q:
+      it: "Perché nell'espressione «necrosi fibrinoide» il termine «necrosi» è in parte improprio?"
+      en: "Why is the term fibrinoid \"necrosis\" partly misleading?"
+    a:
+      it: "Perché il deposito eosinofilo nasconde la parete, per cui spesso non si può dimostrare una vera morte cellulare."
+      en: "Because the eosinophilic deposit hides the wall, so true cell death often cannot be demonstrated."
+    kind: short
+selfExplain:
+  - it: "Perché due meccanismi così diversi, immunitario ed emodinamico, producono lo stesso quadro istologico?"
+    en: "Why do two very different mechanisms, immune and hemodynamic, produce the same histologic picture?"
+  - it: "In che modo la necrosi fibrinoide di un segmento arterioso può portare a un infarto o a un aneurisma?"
+    en: "How can fibrinoid necrosis of an arterial segment lead to an infarct or an aneurysm?"
+  - it: "Perché l'ipertensione benigna dà arteriolosclerosi ialina mentre quella maligna dà necrosi fibrinoide?"
+    en: "Why does benign hypertension cause hyaline arteriolosclerosis while malignant hypertension causes fibrinoid necrosis?"
+chain:
+  - pathology:
+      it: "Necrosi fibrinoide delle arteriole renali nell'ipertensione maligna"
+      en: "Fibrinoid necrosis of renal arterioles in malignant hypertension"
+    sign:
+      it: "Cefalea e disturbi visivi"
+      en: "Headache and visual disturbance"
+    lab:
+      it: "Ematuria e proteinuria"
+      en: "Hematuria and proteinuria"
+  - pathology:
+      it: "Necrosi fibrinoide delle venule cutanee superficiali (vasculite leucocitoclastica)"
+      en: "Fibrinoid necrosis of superficial skin venules (leukocytoclastic vasculitis)"
+    sign:
+      it: "Porpora palpabile agli arti inferiori"
+      en: "Palpable purpura on the legs"
+    lab:
+      it: "Biopsia cutanea con necrosi fibrinoide e neutrofili"
+      en: "Skin biopsy with fibrinoid necrosis and neutrophils"
+  - pathology:
+      it: "Microangiopatia trombotica con necrosi fibrinoide arteriolare"
+      en: "Thrombotic microangiopathy with arteriolar fibrinoid necrosis"
+    sign:
+      it: "Ipertensione e insufficienza renale"
+      en: "Hypertension and renal failure"
+    lab:
+      it: "Anemia emolitica con schistociti e piastrinopenia"
+      en: "Hemolytic anemia with schistocytes and thrombocytopenia"
+images:
+  - id: fibrinoid-necrosis-micro-1
+    role: micro
+  - id: fibrinoid-necrosis-micro-2
+    role: micro
+  - id: fibrinoid-necrosis-micro-3
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "1"
+    pages: "38-41"
+  - source: rubin-8e
+    chapter: "4"
+    pages: "147-158"
+  - source: rubin-8e
+    chapter: "14"
+    pages: "573"
+  - source: rubin-8e
+    chapter: "15"
+    pages: "581-582"
+  - source: rubin-8e
+    chapter: "16"
+    pages: "617-622"
+  - source: rubin-8e
+    chapter: "22"
+    pages: "947-953, 966-967"
+  - source: rubin-8e
+    chapter: "30"
+    pages: "1388"
+  - source: rubin-8e
+    chapter: "32"
+    pages: "1458"
+lastUpdated: 2026-11-03
+status: published

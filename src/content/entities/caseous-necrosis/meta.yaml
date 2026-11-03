@@ -1,0 +1,149 @@
+id: caseous-necrosis
+module: g01
+tier: core
+kind: process
+names:
+  it: "Necrosi caseosa"
+  en: "Caseous necrosis"
+  eponyms: []
+  synonyms:
+    it: ["Caseificazione", "Necrosi caseificante"]
+    en: ["Caseation", "Caseating necrosis"]
+  abbreviations: []
+summary:
+  it: "Necrosi dall'aspetto di formaggio al centro di un granuloma, in cui le cellule morte perdono i contorni ma non vengono digerite: tipica della tubercolosi."
+  en: "Cheese-like necrosis at the center of a granuloma, in which dead cells lose their outlines but are not digested away: the hallmark of tuberculosis."
+lenses:
+  system: [general, respiratory, hematolymphoid, cns]
+  process: [cell-death, necrosis, granulomatous-inflammation, chronic-inflammation, hypersensitivity]
+  pattern: [necrosis-caseous, granuloma]
+  presentation: [lymphadenopathy, fever, mass-lesion]
+  marker: [special-stains, ziehl-neelsen]
+  group: [infectious, inflammatory]
+learningObjectives:
+  - it: "Definire la necrosi caseosa e distinguerla dalla necrosi coagulativa e da quella colliquativa in base al destino delle cellule morte."
+    en: "Define caseous necrosis and distinguish it from coagulative and liquefactive necrosis by what happens to the dead cells."
+  - it: "Spiegare come la reazione di ipersensibilità mediata dai linfociti T e l'attivazione dei macrofagi da parte dell'IFN-γ producano la necrosi nella tubercolosi."
+    en: "Explain how T-cell-mediated hypersensitivity and IFN-γ activation of macrophages produce necrosis in tuberculosis."
+  - it: "Descrivere l'aspetto macroscopico e microscopico del granuloma caseoso: centro eosinofilo amorfo, macrofagi epitelioidi, cellule giganti di Langhans, linfociti, fibrosi."
+    en: "Describe the gross and microscopic appearance of a caseating granuloma: amorphous eosinophilic center, epithelioid macrophages, Langhans giant cells, lymphocytes, fibrosis."
+  - it: "Elencare le cause di necrosi caseosa diverse dalla tubercolosi, in particolare istoplasmosi e coccidioidomicosi, e le colorazioni che servono a identificarne gli agenti."
+    en: "List causes of caseous necrosis other than tuberculosis, especially histoplasmosis and coccidioidomycosis, and the stains used to identify them."
+  - it: "Discutere l'evoluzione dei focolai caseosi: guarigione con fibrosi e calcificazione, oppure erosione bronchiale con cavitazione e diffusione."
+    en: "Discuss the fate of caseous foci: healing with fibrosis and calcification, or bronchial erosion with cavitation and spread."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: coagulative-necrosis
+    note:
+      it: "Nella necrosi coagulativa i contorni cellulari restano visibili; nella caseosa scompaiono e resta un detrito granulare amorfo."
+      en: "In coagulative necrosis cell outlines remain visible; in caseous necrosis they vanish, leaving amorphous granular debris."
+  - type: differentialOf
+    target: liquefactive-necrosis
+    note:
+      it: "La necrosi colliquativa è una digestione del tessuto da parte dei neutrofili; il materiale caseoso persiste più a lungo, ma può rammollirsi e colliquare, e lascia una caverna quando si svuota in un bronco."
+      en: "Liquefactive necrosis is digestion of tissue by neutrophils; caseous material lingers longer, but it can soften and liquefy, and it leaves a cavity once it drains into a bronchus."
+  - type: prerequisiteOf
+    target: tuberculosis
+    note:
+      it: "La necrosi caseosa è la lesione chiave per capire la morfologia della tubercolosi."
+      en: "Caseous necrosis is the key lesion for understanding the morphology of tuberculosis."
+quickCheck:
+  - id: caseous-necrosis-q1
+    q:
+      it: "Che cosa distingue al microscopio la necrosi caseosa dalla necrosi coagulativa?"
+      en: "What distinguishes caseous necrosis from coagulative necrosis under the microscope?"
+    a:
+      it: "Nella necrosi caseosa le cellule morte perdono i contorni e formano un detrito amorfo, granulare ed eosinofilo; in quella coagulativa i contorni cellulari restano riconoscibili."
+      en: "In caseous necrosis dead cells lose their outlines and form amorphous granular eosinophilic debris; in coagulative necrosis the cell outlines remain recognizable."
+    kind: short
+  - id: caseous-necrosis-q2
+    q:
+      it: "Quali cellule circondano il centro necrotico di un granuloma tubercolare?"
+      en: "Which cells surround the necrotic center of a tuberculous granuloma?"
+    a:
+      it: "Macrofagi epitelioidi, cellule giganti di Langhans (nuclei a ferro di cavallo alla periferia), linfociti e, all'esterno, tessuto fibroso."
+      en: "Epithelioid macrophages, Langhans giant cells (horseshoe of peripheral nuclei), lymphocytes and, outside them, fibrous tissue."
+    kind: short
+  - id: caseous-necrosis-q3
+    q:
+      it: "Oltre alla tubercolosi, quali infezioni possono dare granulomi caseosi e con quali colorazioni si cercano i microrganismi?"
+      en: "Besides tuberculosis, which infections can cause caseating granulomas, and which stains are used to find the organisms?"
+    a:
+      it: "Istoplasmosi e coccidioidomicosi; GMS (argentica) e PAS per i funghi, Ziehl-Neelsen per i micobatteri."
+      en: "Histoplasmosis and coccidioidomycosis; GMS (silver) and PAS stains for fungi, Ziehl–Neelsen for mycobacteria."
+    kind: short
+  - id: caseous-necrosis-q4
+    q:
+      it: "Un paziente con AIDS e tubercolosi disseminata ha granulomi scarsi e mal formati, quasi senza caseificazione. Perché?"
+      en: "A patient with AIDS and disseminated tuberculosis has few, poorly formed granulomas with almost no caseation. Why?"
+    a:
+      it: "Granuloma e necrosi caseosa dipendono dalla risposta dei linfociti T: se l'immunità cellulo-mediata è depressa si formano solo aggregati lassi di macrofagi, mentre i bacilli si moltiplicano."
+      en: "The granuloma and caseation depend on the T-cell response: with depressed cell-mediated immunity only loose macrophage aggregates form, while bacilli multiply."
+    kind: free
+selfExplain:
+  - it: "Perché nella tubercolosi gran parte del danno tissutale è causato dalla risposta immunitaria dell'ospite e non direttamente dal bacillo?"
+    en: "Why is much of the tissue damage in tuberculosis caused by the host immune response rather than directly by the bacillus?"
+  - it: "In che cosa la necrosi caseosa differisce dalla digestione da parte dei neutrofili tipica della necrosi colliquativa, e come il materiale caseoso, rammollendosi e svuotandosi in un bronco, forma una caverna tubercolare?"
+    en: "How does caseous necrosis differ from the neutrophil digestion of liquefactive necrosis, and how does caseous material, by softening and emptying into a bronchus, form a tuberculous cavity?"
+  - it: "Perché un focolaio tubercolare guarito e calcificato può comunque causare malattia anni dopo?"
+    en: "Why can a healed, calcified tuberculous focus still cause disease years later?"
+chain:
+  - pathology:
+      it: "Tubercolosi secondaria con caverna apicale piena di materiale caseoso"
+      en: "Secondary tuberculosis with an apical cavity full of caseous material"
+    sign:
+      it: "Tosse, febbricola, calo ponderale, sudorazioni notturne, emottisi"
+      en: "Cough, low-grade fever, weight loss, night sweats, hemoptysis"
+    lab:
+      it: "Bacilli alcol-acido resistenti nell'espettorato; radiografia del torace con cavitazioni apicali"
+      en: "Acid-fast bacilli in sputum; chest radiograph with apical cavities"
+  - pathology:
+      it: "Tubercoloma cerebrale (massa con centro caseoso)"
+      en: "Brain tuberculoma (mass with a caseous center)"
+    sign:
+      it: "Segni di massa endocranica; se si rompe nel liquor, meningite basale"
+      en: "Signs of an intracranial mass; if it ruptures into the CSF, basal meningitis"
+    lab:
+      it: "Biopsia: granuloma con necrosi caseosa, macrofagi e cellule giganti di Langhans"
+      en: "Biopsy: granuloma with caseous necrosis, macrophages and Langhans giant cells"
+images:
+  - id: caseous-necrosis-gross-1
+    role: gross
+    pairWith: caseous-necrosis-micro-2
+  - id: caseous-necrosis-micro-1
+    role: micro
+  - id: caseous-necrosis-micro-2
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "1"
+    pages: "29, 38-40"
+  - source: rubin-8e
+    chapter: "2"
+    pages: "92"
+  - source: rubin-8e
+    chapter: "9"
+    pages: "450-452, 461-463"
+  - source: rubin-8e
+    chapter: "18"
+    pages: "707-709, 735, 738"
+  - source: rubin-8e
+    chapter: "19"
+    pages: "807"
+  - source: rubin-8e
+    chapter: "23"
+    pages: "998"
+  - source: rubin-8e
+    chapter: "24"
+    pages: "1020"
+  - source: rubin-8e
+    chapter: "30"
+    pages: "1352"
+  - source: rubin-8e
+    chapter: "32"
+    pages: "1468"
+lastUpdated: 2026-11-03
+status: published

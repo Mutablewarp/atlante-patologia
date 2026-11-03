@@ -1,0 +1,58 @@
+id: pigment-accumulation-gross-1
+file: pigment-accumulation-gross-1.jpg
+kind: gross
+sourceUrl: https://commons.wikimedia.org/wiki/File:BIRMINGHAM_COAL_MINER%27S_LUNG_SHOWING_EFFECT_OF_BLACK_LUNG_DISEASE._(FROM_THE_SITES_EXHIBITION._FOR_OTHER_IMAGES_IN..._-_NARA_-_553848.jpg
+author: LeRoy Woodson, photographer for the U.S. Environmental Protection Agency (DOCUMERICA project)
+license: PD
+licenseUrl: https://commons.wikimedia.org/wiki/Template:PD-USGov-EPA
+retrievedAt: 2026-10-10
+modifications: "Downloaded the 1920 × 2810 px Commons rendition of the 2050 × 3000 px original; downscaled to 1093 × 1600 px and re-encoded as JPEG. No crop, no colour change."
+attributionText: "LeRoy Woodson / U.S. Environmental Protection Agency (DOCUMERICA), U.S. National Archives (NAID 553848), public domain, via Wikimedia Commons"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+caption:
+  it: >-
+    Polmone di un minatore di carbone di Birmingham (Alabama), fotografato nel 1972 per una mostra sulle malattie
+    professionali: pezzo essiccato, tenuto in mano. È l'esempio classico di pigmento esogeno, il carbone. Guarda prima
+    il colore d'insieme: il polmone normale è grigio-rosato, questo è nero quasi ovunque. La polvere di carbone inalata
+    (e in misura minore la fuliggine delle città) arriva agli alveoli, viene fagocitata dai macrofagi alveolari e
+    trasportata lungo i linfatici verso la pleura e i linfonodi ilari, dove resta per tutta la vita perché il carbonio
+    non può essere degradato. Nella parte alta la superficie irregolare raccoglie il pigmento nero nei solchi; nella
+    parte bassa il tessuto spugnoso mostra spazi aerei dilatati con pareti annerite. Le zone pallide e traslucide
+    contengono poco pigmento: il nero viene dalle particelle depositate, non dal tessuto in sé. Un'antracosi lieve,
+    comune in chi vive in città e nei fumatori, è innocua; nei minatori molto esposti lo stesso pigmento si accompagna
+    a enfisema e fibrosi da polvere (pneumoconiosi dei minatori di carbone, il "polmone nero").
+  en: >-
+    Lung of a coal miner from Birmingham, Alabama, photographed in 1972 for an exhibition on occupational disease: a
+    dried specimen, held in the hand. It is the classic example of an exogenous pigment, carbon. Look first at the
+    overall colour: normal lung is pinkish-grey, this one is black almost everywhere. Inhaled coal dust (and, to a
+    lesser degree, city soot) reaches the alveoli, is engulfed by alveolar macrophages and is carried along the
+    lymphatics towards the pleura and the hilar lymph nodes, where it stays for life because carbon cannot be broken
+    down. In the upper part the bumpy surface collects black pigment in its grooves; in the lower part the spongy
+    tissue shows enlarged airspaces with blackened walls. The pale, translucent areas hold little pigment: the black
+    comes from the deposited particles, not from the tissue itself. Mild anthracosis, common in city dwellers and
+    smokers, is harmless; in heavily exposed miners the same pigment comes with dust-related emphysema and fibrosis
+    (coal workers' pneumoconiosis, "black lung").
+alt:
+  it: >-
+    Fotografia d'epoca di un pezzo di polmone essiccato, allungato in verticale, tenuto tra le dita su fondo beige:
+    il tessuto è in gran parte nero, con superficie bitorzoluta in alto, zone pallide e traslucide a metà a sinistra e
+    un aspetto spugnoso a cavità annerite in basso.
+  en: >-
+    Vintage photograph of a dried, vertically elongated piece of lung held between the fingers against a beige
+    background: the tissue is mostly black, with a knobbly surface at the top, pale translucent areas in the middle on
+    the left, and a spongy look with blackened cavities at the bottom.
+annotations:
+  - id: pigmented-surface
+    label: { it: Superficie irregolare con pigmento nero nei solchi, en: Bumpy surface with black pigment in the grooves }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.33, 0.05, 0.55, 0.02, 0.72, 0.08, 0.80, 0.25, 0.75, 0.33, 0.50, 0.30, 0.36, 0.22]
+  - id: blackened-airspaces
+    label: { it: Tessuto spugnoso con spazi aerei dilatati e pareti annerite, en: Spongy tissue with enlarged airspaces and blackened walls }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.46, 0.58, 0.62, 0.56, 0.79, 0.62, 0.78, 0.85, 0.70, 0.97, 0.55, 0.95, 0.50, 0.80]

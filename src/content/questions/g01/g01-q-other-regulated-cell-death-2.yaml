@@ -1,0 +1,68 @@
+id: g01-q-other-regulated-cell-death-2
+module: g01
+entities: [other-regulated-cell-death]
+kind: mcq
+difficulty: 3
+tags: [anoikis]
+stem:
+  it: "Un uomo di 66 anni con adenocarcinoma del colon sviluppa metastasi epatiche. Una cellula epiteliale normale del colon che si stacca dalla propria membrana basale muore rapidamente; il clone metastatico, invece, è sopravvissuto al distacco e si è insediato su una matrice estranea, nel fegato. A quale meccanismo fisiologico è sfuggito con maggiore probabilità il tumore, e come agisce questo meccanismo?"
+  en: "A 66-year-old man with colon adenocarcinoma develops liver metastases. A normal colonic epithelial cell that detaches from its own basement membrane dies quickly; the metastatic clone, by contrast, survived detachment and settled on a foreign matrix in the liver. Which physiologic mechanism has the tumor most likely escaped, and how does that mechanism work?"
+options:
+  - id: a
+    text:
+      it: "Anoikis: senza il legame delle integrine con la matrice nativa cessano i segnali di sopravvivenza, si attivano le vie apoptotiche classiche intrinseca ed estrinseca e la cellula muore per apoptosi."
+      en: "Anoikis: without integrin binding to the native matrix, survival signals stop, the classical intrinsic and extrinsic apoptotic pathways are switched on and the cell dies by apoptosis."
+    correct: true
+    why:
+      it: "Corretto. Il contatto con la propria matrice segnala alla cellula che si trova nel posto giusto; l'anoikis elimina le cellule fuori sede e ostacola così le metastasi. Le cellule metastatiche sono particolarmente abili a sfuggirle."
+      en: "Correct. Contact with its own matrix tells the cell it is in the right place; anoikis removes displaced cells and so opposes metastasis. Metastatic cells are particularly good at escaping it."
+  - id: b
+    text:
+      it: "Anoikis: la perdita di contatto con la matrice attiva un macchinario di morte proprio, indipendente dalle caspasi e distinto dall'apoptosi classica."
+      en: "Anoikis: loss of matrix contact switches on a death machinery of its own, caspase-independent and separate from classical apoptosis."
+    correct: false
+    why:
+      it: "Il nome è giusto, il meccanismo no: l'anoikis non ha un macchinario privato, ma usa le vie apoptotiche classiche, intrinseca ed estrinseca."
+      en: "The name is right, the mechanism is not: anoikis has no private machinery and uses the classical intrinsic and extrinsic apoptotic pathways."
+  - id: c
+    text:
+      it: "Necroptosi: la perdita delle integrine fa assemblare il necrosoma RIP1–RIP3 nella cellula staccata."
+      en: "Necroptosis: loss of integrins makes the detached cell assemble the RIP1–RIP3 necrosome."
+    correct: false
+    why:
+      it: "Il necrosoma si forma soprattutto dopo l'attivazione di recettori di morte come TNFR1, non per la perdita di adesione alla matrice. Nelle metastasi, anzi, la necroptosi delle cellule endoteliali favorisce il passaggio delle cellule tumorali attraverso la parete vascolare."
+      en: "The necrosome forms mainly after engagement of death receptors such as TNFR1, not after loss of matrix adhesion. In metastasis, necroptosis of endothelial cells actually helps tumor cells cross the vessel wall."
+  - id: d
+    text:
+      it: "Piroptosi: i sensori NLR riconoscono la perdita di adesione e attivano la caspasi-1."
+      en: "Pyroptosis: NLR sensors detect the loss of adhesion and activate caspase-1."
+    correct: false
+    why:
+      it: "Gli NLR riconoscono molecole microbiche o altri segnali di pericolo intracellulari, non il distacco dalla matrice. La piroptosi è soprattutto una difesa contro i patogeni intracellulari."
+      en: "NLRs detect microbial molecules or other intracellular danger signals, not detachment from the matrix. Pyroptosis is mainly a defense against intracellular pathogens."
+  - id: e
+    text:
+      it: "NETosi: i neutrofili intrappolano le cellule tumorali circolanti nelle loro reti di DNA e le uccidono, impedendo le metastasi."
+      en: "NETosis: neutrophils trap circulating tumor cells in their DNA nets and kill them, preventing metastasis."
+    correct: false
+    why:
+      it: "Le NET sono rivolte contro batteri, funghi e protozoi; nel cancro la NETosi tende anzi a favorire la crescita e la diffusione del tumore. Non è il meccanismo che elimina le cellule epiteliali staccate."
+      en: "NETs are aimed at bacteria, fungi and protozoa; in cancer, NETosis tends instead to favor tumor growth and spread. It is not the mechanism that removes detached epithelial cells."
+backLink: { entity: other-regulated-cell-death, section: pathogenesis }
+claims:
+  - other-regulated-cell-death-c004
+  - other-regulated-cell-death-c009
+  - other-regulated-cell-death-c010
+  - other-regulated-cell-death-c012
+  - other-regulated-cell-death-c021
+  - other-regulated-cell-death-c031
+  - other-regulated-cell-death-c032
+  - other-regulated-cell-death-c040
+  - other-regulated-cell-death-c046
+  - necroptosis-c006
+  - necroptosis-c010
+  - pyroptosis-c003
+  - pyroptosis-c011
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

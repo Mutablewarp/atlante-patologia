@@ -1,0 +1,75 @@
+id: hyperplasia-micro-2
+file: hyperplasia-micro-2.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Micrograph_of_psoriasis_vulgaris.jpg
+author: Jenny Giang, Marc A. J. Seelen, Martijn B. A. van Doorn, Robert Rissmann, Errol P. Prens, Jeffrey Damman
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-10-10
+modifications: >-
+  None: the Commons file, which is Figure 2 of the source article (panels A and B with the authors' own letters,
+  bracket and arrows), is used unchanged at its full size of 1568 × 523 px.
+attributionText: >-
+  Jenny Giang, Marc A. J. Seelen, Martijn B. A. van Doorn, Robert Rissmann, Errol P. Prens and Jeffrey Damman,
+  "Complement Activation in Inflammatory Skin Diseases", Frontiers in Immunology 9:639 (2018), Figure 2,
+  doi:10.3389/fimmu.2018.00639, © 2018 the authors; via Wikimedia Commons, CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: "A: medium power; B: high power"
+caption:
+  it: >-
+    Psoriasi volgare, EE: un'iperplasia dell'epidermide. Parti dal pannello A, a medio ingrandimento. La parentesi
+    con la sigla EH abbraccia l'epidermide, molto più spessa del normale perché contiene molti più strati di
+    cheratinociti (acantosi). Le creste epidermiche sono allungate, sottili e quasi tutte di pari lunghezza; si
+    spingono in profondità nel derma e si alternano a papille dermiche alte, con piccoli vasi all'apice. Le cellule
+    maturano ancora in modo ordinato dalla base verso la superficie e hanno un aspetto uniforme: la crescita è
+    iperplastica, non displastica. Poi guarda la superficie: lo strato corneo è una banda rosa compatta che
+    conserva nuclei appiattiti (paracheratosi), perché le cellule risalgono troppo in fretta per completare la
+    cheratinizzazione, e lo strato granuloso sotto di esso è assottigliato o assente. La freccia indica neutrofili
+    raccolti nello strato corneo. Nel pannello B, a forte ingrandimento, i neutrofili attraversano gli strati
+    superficiali dell'epidermide diretti verso lo strato corneo (frecce). Il messaggio didattico: qui lo stimolo non
+    è un ormone ma un'infiammazione mediata dal sistema immunitario, che spinge i cheratinociti a dividersi; è
+    quindi un'iperplasia patologica di un tessuto le cui cellule si dividono di continuo.
+  en: >-
+    Psoriasis vulgaris, H&E: a hyperplasia of the epidermis. Start with panel A, at medium power. The bracket
+    marked EH spans the epidermis, which is much thicker than normal because it holds many more layers of
+    keratinocytes (acanthosis). The rete ridges are long, slender and nearly all the same length; they reach deep
+    into the dermis and alternate with tall dermal papillae that carry small vessels at their tips. The cells still
+    mature in an orderly way from the base to the surface and look uniform, so the growth is hyperplastic, not
+    dysplastic. Then look at the surface: the cornified layer is a compact pink band that keeps flattened nuclei
+    (parakeratosis), because the cells move up too fast to finish keratinization, and the granular layer beneath it
+    is thin or missing. The arrow points to neutrophils collected in the cornified layer. In panel B, at high power,
+    neutrophils cross the upper layers of the epidermis on their way to the cornified layer (arrows). The teaching
+    point: here the stimulus is not a hormone but immune-mediated inflammation that drives keratinocytes to divide,
+    so this is a pathological hyperplasia of a tissue whose cells divide all the time.
+alt:
+  it: >-
+    Micrografia di cute in due pannelli, colorata con ematossilina-eosina. A sinistra (A): epidermide viola molto
+    spessa, con lunghe propaggini regolari che scendono nel derma rosa, una parentesi con la sigla EH lungo tutto il
+    suo spessore, uno strato superficiale compatto rosa acceso e una freccia rivolta verso puntini scuri al suo
+    interno. A destra (B): dettaglio degli strati superficiali dell'epidermide, con grandi cellule rosa, numerosi
+    piccoli nuclei scuri e segmentati tra di esse, uno strato rosa in alto a sinistra e due frecce.
+  en: >-
+    Two-panel H&E micrograph of skin. Left (A): a very thick purple epidermis with long, regular projections reaching
+    down into the pink dermis, a bracket labelled EH along its full height, a compact bright-pink surface layer and
+    an arrow pointing at dark dots inside it. Right (B): close-up of the upper epidermis, with large pink cells, many
+    small dark segmented nuclei between them, a pink layer at top left and two arrows.
+annotations:
+  - id: elongated-rete-ridges
+    label: { it: "Epidermide ispessita: creste epidermiche allungate (acantosi)", en: "Thickened epidermis: elongated rete ridges (acanthosis)" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.045, 0.40, 0.445, 0.40, 0.445, 0.97, 0.045, 0.97] }
+  - id: parakeratotic-layer
+    label: { it: Strato corneo paracheratosico con neutrofili, en: Parakeratotic cornified layer with neutrophils }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.005, 0.17, 0.10, 0.145, 0.20, 0.11, 0.30, 0.065, 0.45, 0.02, 0.45, 0.13, 0.30, 0.19, 0.20, 0.235, 0.10, 0.255, 0.005, 0.29]
+  - id: migrating-neutrophils
+    label: { it: Neutrofili in migrazione attraverso l'epidermide, en: Neutrophils migrating through the epidermis }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.60, 0.40, 0.66, 0.29, 0.76, 0.21, 0.86, 0.13, 0.92, 0.10, 0.94, 0.17, 0.88, 0.30, 0.82, 0.42, 0.76, 0.55, 0.73, 0.66, 0.61, 0.66]

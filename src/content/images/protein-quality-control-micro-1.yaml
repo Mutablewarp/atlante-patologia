@@ -1,0 +1,80 @@
+id: protein-quality-control-micro-1
+file: protein-quality-control-micro-1.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Histology_of_frontotemporal_lobar_degeneration.jpg
+author: Mackenzie IR, Butland SL, Devon RS, Dwosh E, Feldman H, Lindholm C, Neal SJ, Ouellette BF, Leavitt BR
+license: CC-BY-2.0
+licenseUrl: https://creativecommons.org/licenses/by/2.0/
+retrievedAt: 2026-10-10
+modifications: "none (Wikimedia original file, 1200 × 2401 px; Figure 1 of the source article)"
+attributionText: >-
+  Mackenzie IR, Butland SL, Devon RS, Dwosh E, Feldman H, Lindholm C, Neal SJ, Ouellette BF, Leavitt BR, "Familial
+  frontotemporal dementia with neuronal intranuclear inclusions is not a polyglutamine expansion disease", BMC
+  Neurology 2006;6:32, Figure 1, doi:10.1186/1471-2377-6-32, via Wikimedia Commons, CC BY 2.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: immunohistochemistry for ubiquitin (brown), haematoxylin counterstain (blue)
+magnification: "scale bar 40 µm in a and b, 25 µm in c, 6 µm in the inset"
+caption:
+  it: >-
+    Inclusioni ubiquitinate nel cervello, immunoistochimica per l'ubiquitina (marrone) con controcolorazione
+    all'ematossilina (blu); tre pannelli da un caso familiare di degenerazione lobare frontotemporale con inclusioni
+    ubiquitina-positive (FTLD-U). Prima di cercare il marrone, ricorda il principio: l'ubiquitina è l'etichetta che la
+    cellula attacca alle proteine da distruggere nel proteasoma. Se l'etichetta si accumula in ammassi visibili al
+    microscopio, vuol dire che le proteine marcate non sono state smaltite e si sono aggregate. Pannello a (corteccia
+    superficiale): su un fondo rosa chiaro con nuclei blu spiccano molti filamenti marroni spessi e tortuosi (neuriti
+    distrofici) e alcune inclusioni compatte nel citoplasma dei neuroni, accanto al nucleo. Pannello b (giro dentato
+    dell'ippocampo): tra i fitti nuclei rotondi dei granuli, alcune cellule hanno un piccolo granulo marrone o una
+    falce nel citoplasma. Pannello c (corteccia): le frecce indicano inclusioni dentro il nucleo, allungate a lente;
+    il riquadro ne mostra una a forte ingrandimento. Nella maggior parte dei casi di FTLD-U la proteina ubiquitinata
+    è stata poi identificata nella TDP-43. Lo stesso principio vale per i corpi di Lewy (alfa-sinucleina) e per i
+    corpi di Mallory-Denk (cheratine).
+  en: >-
+    Ubiquitinated inclusions in the brain, immunohistochemistry for ubiquitin (brown) with a haematoxylin counterstain
+    (blue); three panels from a familial case of frontotemporal lobar degeneration with ubiquitin-positive inclusions
+    (FTLD-U). Before you look for brown, recall the principle: ubiquitin is the tag the cell attaches to proteins
+    meant for destruction in the proteasome. When the tag piles up in clumps you can see with a microscope, the tagged
+    proteins were not cleared and have aggregated instead. Panel a (superficial cortex): on a pale pink background
+    with blue nuclei, many thick, twisted brown threads stand out (dystrophic neurites), together with a few compact
+    inclusions in the cytoplasm of neurons, next to the nucleus. Panel b (dentate gyrus of the hippocampus): among the
+    crowded round nuclei of the granule cells, some cells carry a small brown dot or crescent in the cytoplasm. Panel c
+    (cortex): the arrows point to inclusions inside the nucleus, elongated like a lens; the inset shows one at high
+    power. In most FTLD-U cases the ubiquitinated protein was later identified as TDP-43. The same principle applies to
+    Lewy bodies (alpha-synuclein) and Mallory-Denk bodies (keratins).
+alt:
+  it: >-
+    Figura in tre pannelli sovrapposti, a, b e c, di tessuto cerebrale colorato in marrone per l'ubiquitina su fondo
+    rosa chiaro con nuclei blu. In a molti filamenti marroni tortuosi e qualche ammasso marrone nel citoplasma dei
+    neuroni; in b piccoli granuli marroni accanto ai nuclei rotondi di cellule fitte; in c due frecce nere indicano
+    nuclei che contengono un corpo marrone allungato, ingrandito in un riquadro in basso a destra.
+  en: >-
+    Three stacked panels, a, b and c, of brain tissue stained brown for ubiquitin on a pale pink background with blue
+    nuclei. Panel a shows many twisted brown threads and a few brown clumps in neuronal cytoplasm; panel b shows small
+    brown dots beside the round nuclei of densely packed cells; in panel c two black arrows point to nuclei that
+    contain an elongated brown body, enlarged in an inset at the lower right.
+annotations:
+  - id: ubiquitinated-neurite
+    label: { it: Neurite distrofico ubiquitinato (pannello a), en: Ubiquitinated dystrophic neurite (panel a) }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.23, 0.123, 0.209, 0.134, 0.178, 0.134, 0.156, 0.123, 0.156, 0.108, 0.178, 0.097, 0.209, 0.097, 0.23, 0.108]
+  - id: cytoplasmic-inclusion-cortex
+    label: { it: Inclusione citoplasmatica in un neurone corticale (pannello a), en: Cytoplasmic inclusion in a cortical neuron (panel a) }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.762, 0.265, 0.748, 0.273, 0.727, 0.273, 0.713, 0.265, 0.713, 0.255, 0.727, 0.248, 0.748, 0.248, 0.762, 0.255]
+  - id: cytoplasmic-inclusion-granule-cell
+    label: { it: Inclusione citoplasmatica in un granulo del giro dentato (pannello b), en: Cytoplasmic inclusion in a dentate granule cell (panel b) }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.798, 0.518, 0.785, 0.525, 0.765, 0.525, 0.752, 0.518, 0.752, 0.508, 0.765, 0.502, 0.785, 0.502, 0.798, 0.508]
+  - id: intranuclear-inclusions
+    label: { it: Inclusioni intranucleari a lente (pannello c), en: Lens-shaped intranuclear inclusions (panel c) }
+    revealOrder: 4
+    shape:
+      type: polygon
+      coords: [0.255, 0.73, 0.345, 0.73, 0.345, 0.78, 0.31, 0.845, 0.255, 0.845]

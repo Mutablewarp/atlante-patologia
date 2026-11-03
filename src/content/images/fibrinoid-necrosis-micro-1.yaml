@@ -1,0 +1,85 @@
+# License check (2026-10-10): the Commons uploader (PecMo) is not the creator. The file reproduces panels a and b of
+# Fig. 2 of an open-access case report (Cureus 2023, PMC10665773). The article's JATS <permissions> block (Europe PMC
+# full text) grants the Creative Commons Attribution License without a version number; the Commons file page tags it
+# CC BY 4.0, which is the licence Cureus applies to its articles. The figure caption does not say that the figure was
+# reproduced from another work. The case report states that patient consent was obtained or waived.
+id: fibrinoid-necrosis-micro-1
+file: fibrinoid-necrosis-micro-1.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Fibrinoid_necrosis.jpg
+author: Angela Xue, Adele Bernard, Vanessa Moreno, Lindsey Phillips, Evan Raff
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-10-10
+modifications: >-
+  Downscaled from 1834 × 768 px to 1600 × 670 px and re-encoded as JPEG (EXIF metadata removed); no crop, no colour
+  change. The yellow arrows come from the source figure. The Commons file itself shows only panels a and b of the
+  three-panel source figure.
+attributionText: >-
+  Xue A, Bernard A, Moreno V, Phillips L, Raff E, "A Rare Case of Hydralazine-Induced Diffuse Alveolar Hemorrhage",
+  Cureus 2023, doi:10.7759/cureus.47591, Fig. 2 (panels a and b), via Wikimedia Commons, CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E (left), trichrome (right)
+magnification: high power
+caption:
+  it: >-
+    Biopsia renale: glomeruli con necrosi fibrinoide segmentale in una glomerulonefrite pauci-immune necrotizzante da
+    ANCA anti-MPO, scatenata dall'idralazina. A sinistra ematossilina-eosina, a destra colorazione tricromica dello
+    stesso tipo di lesione. Primo passo: in ciascun pannello trova il glomerulo, il gomitolo rotondo di anse capillari
+    dentro lo spazio di Bowman, circondato dai tubuli. Poi segui la freccia gialla: in un segmento del gomitolo le anse
+    sottili e le loro cellule non si riconoscono più e al loro posto c'è una massa vitrea, omogenea, intensamente
+    eosinofila, dai contorni sfumati (a sinistra). Con la tricromica lo stesso segmento si colora di rosso vivo, il
+    colore che la fibrina assume con questa colorazione, mentre il collagene della capsula di Bowman e dell'interstizio
+    è blu e le anse risparmiate, sul lato destro del gomitolo, mantengono il lume aperto. Come leggerla: la necrosi
+    fibrinoide non è un modo diverso di morire ma un aspetto morfologico. La parete capillare danneggiata lascia uscire
+    le proteine del plasma, la fibrina precipita nella parete insieme ai detriti cellulari e il tutto assomiglia alla
+    fibrina. Il segno da cercare è una chiazza rosa brillante e vitrea nella parete di un vaso o nel gomitolo, che diventa
+    rossa con la tricromica. Collegamento clinico: dalle anse necrotiche il sangue e la fibrina passano nello spazio di
+    Bowman e stimolano la formazione di semilune; il quadro clinico è quello di una glomerulonefrite rapidamente
+    progressiva.
+  en: >-
+    Renal biopsy: glomeruli with segmental fibrinoid necrosis in pauci-immune necrotising glomerulonephritis due to
+    anti-MPO ANCA, triggered by hydralazine. H&E on the left, trichrome stain of the same kind of lesion on the right.
+    First step: in each panel find the glomerulus, the round tuft of capillary loops inside Bowman's space, surrounded by
+    tubules. Then follow the yellow arrow: in one segment of the tuft the thin loops and their cells can no longer be
+    made out, and in their place lies a glassy, homogeneous, intensely eosinophilic mass with blurred edges (left). On
+    trichrome the same segment stains bright red, the colour fibrin takes with this stain, while the collagen of
+    Bowman's capsule and the interstitium is blue and the spared loops on the right side of the tuft keep open lumens.
+    How to read it: fibrinoid necrosis is not a separate way of dying but a morphological pattern. The damaged capillary
+    wall lets plasma proteins out, fibrin precipitates in the wall together with cell debris, and the result looks like
+    fibrin. The cue to look for is a bright pink, glassy smudge in a vessel wall or in the tuft that turns red on
+    trichrome. Clinical link: blood and fibrin escape from the necrotic loops into Bowman's space and drive crescent
+    formation; clinically this is rapidly progressive glomerulonephritis.
+alt:
+  it: >-
+    Due micrografie affiancate di glomeruli renali. A sinistra, in ematossilina-eosina, una freccia
+    gialla indica un segmento del gomitolo sostituito da materiale rosa intenso, omogeneo e senza cellule
+    riconoscibili; il resto del gomitolo e i tubuli circostanti sono rosa più chiaro con nuclei viola. A destra, in
+    tricromica, la freccia indica lo stesso tipo di area colorata in rosso vivo, circondata da collagene blu della
+    capsula e dell'interstizio.
+  en: >-
+    Two side-by-side micrographs of renal glomeruli. On the left, in H&E, a yellow arrow points to a
+    segment of the tuft replaced by intensely pink, homogeneous material without recognisable cells; the rest of the
+    tuft and the surrounding tubules are lighter pink with purple nuclei. On the right, in trichrome, the arrow points to
+    the same kind of area stained bright red, surrounded by blue collagen of the capsule and interstitium.
+annotations:
+  - id: fibrinoid-segment-he
+    label: { it: Segmento con necrosi fibrinoide (EE), en: Segment with fibrinoid necrosis (H&E) }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.13, 0.20, 0.20, 0.17, 0.24, 0.24, 0.24, 0.38, 0.20, 0.45, 0.14, 0.42, 0.12, 0.30]
+  - id: fibrinoid-segment-trichrome
+    label: { it: Fibrina rossa alla tricromica, en: Fibrin stained red on trichrome }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.63, 0.24, 0.69, 0.21, 0.73, 0.27, 0.73, 0.40, 0.70, 0.50, 0.64, 0.46, 0.62, 0.34]
+  - id: spared-capillary-loops
+    label: { it: Anse capillari risparmiate, en: Spared capillary loops }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.74, 0.28, 0.82, 0.27, 0.86, 0.40, 0.84, 0.66, 0.76, 0.70, 0.72, 0.55]

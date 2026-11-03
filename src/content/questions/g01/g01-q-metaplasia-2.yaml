@@ -1,0 +1,47 @@
+id: g01-q-metaplasia-2
+module: g01
+entities: [metaplasia, dysplasia]
+kind: mcq
+difficulty: 3
+tags: [cellular-adaptation, metaplasia, dysplasia]
+stem:
+  it: "Un uomo di 58 anni, obeso, soffre da molti anni di malattia da reflusso gastroesofageo. All'endoscopia l'esofago distale presenta lingue di mucosa rosa salmone; la biopsia mostra epitelio cilindrico di tipo intestinale con cellule caliciformi ben formate, senza atipie. Quattro anni dopo, una biopsia di sorveglianza nello stesso segmento mostra ghiandole affollate con nuclei grandi, ipercromatici e stratificati e mitosi fino alla superficie; la lamina propria non è infiltrata. Quale affermazione interpreta meglio la sequenza delle due biopsie?"
+  en: "A 58-year-old obese man has had gastroesophageal reflux disease for many years. Endoscopy shows tongues of salmon-pink mucosa in the distal esophagus; biopsy shows intestinal-type columnar epithelium with well-formed goblet cells and no atypia. Four years later, a surveillance biopsy from the same segment shows crowded glands with large, dark, stratified nuclei and mitoses up to the surface; the lamina propria is not infiltrated. Which statement best interprets the sequence of the two biopsies?"
+options:
+  - id: a
+    text:
+      it: "Metaplasia seguita da displasia: anni di proliferazione nell'epitelio metaplastico hanno permesso l'accumulo di mutazioni e l'espansione di un clone; la displasia aumenta il rischio di adenocarcinoma e viene trattata."
+      en: "Metaplasia followed by dysplasia: years of proliferation in the metaplastic epithelium let mutations accumulate and a clone expand; the dysplasia raises the risk of adenocarcinoma and is treated."
+    correct: true
+    why:
+      it: "Corretta. La prima biopsia mostra un esofago di Barrett, metaplasia da squamoso a cilindrico di tipo intestinale indotta dal reflusso acido. La seconda mostra atipie nucleari e mitosi lontane dallo strato basale, cioè displasia insorta nell'epitelio metaplastico. Il rischio di adenocarcinoma cresce con il grado di displasia, e la displasia nel Barrett si tratta con ablazione endoscopica a radiofrequenza."
+      en: "Correct. The first biopsy shows Barrett esophagus, squamous-to-intestinal-type columnar metaplasia driven by acid reflux. The second shows nuclear atypia and mitoses away from the basal layer, that is dysplasia arising in the metaplastic epithelium. Adenocarcinoma risk rises with the grade of dysplasia, and dysplasia in Barrett is treated by endoscopic radiofrequency ablation."
+  - id: b
+    text:
+      it: "Metaplasia seguita da iperplasia: lo stimolo acido ha solo aumentato il numero di cellule caliciformi, senza un rischio aggiuntivo."
+      en: "Metaplasia followed by hyperplasia: the acid stimulus has only increased the number of goblet cells, with no added risk."
+    correct: false
+    why:
+      it: "Errata. L'iperplasia aumenta il numero di cellule senza nuclei atipici e senza perdita della maturazione ordinata. Nuclei grandi, ipercromatici e mitosi fino alla superficie indicano displasia, una lesione precancerosa."
+      en: "Incorrect. Hyperplasia adds cells without atypical nuclei and without loss of orderly maturation. Large, dark nuclei and mitoses up to the surface indicate dysplasia, a precancerous lesion."
+  - id: c
+    text:
+      it: "Displasia fin dalla prima biopsia: la presenza di cellule caliciformi nell'esofago è di per sé un segno di displasia."
+      en: "Dysplasia from the first biopsy: goblet cells in the esophagus are in themselves a sign of dysplasia."
+    correct: false
+    why:
+      it: "Errata. Le cellule caliciformi definiscono l'epitelio 'specializzato' del Barrett, cioè la metaplasia, non la displasia. Le cellule metaplastiche sono mature e prive di atipie, come nella prima biopsia."
+      en: "Incorrect. Goblet cells define the 'specialized' epithelium of Barrett esophagus, that is metaplasia, not dysplasia. Metaplastic cells are mature and lack atypia, as in the first biopsy."
+  - id: d
+    text:
+      it: "Metaplasia seguita da adenocarcinoma invasivo."
+      en: "Metaplasia followed by invasive adenocarcinoma."
+    correct: false
+    why:
+      it: "Errata. Per parlare di carcinoma invasivo le cellule devono superare la membrana basale e infiltrare i tessuti sottostanti; qui la lamina propria non è infiltrata. La lesione è una displasia, ancora confinata all'epitelio."
+      en: "Incorrect. Invasive carcinoma requires cells to cross the basement membrane and infiltrate the underlying tissue; here the lamina propria is not infiltrated. The lesion is dysplasia, still confined to the epithelium."
+backLink: { entity: metaplasia, section: prognosis }
+claims: [metaplasia-c011, metaplasia-c012, metaplasia-c019, metaplasia-c020, metaplasia-c021, metaplasia-c022, metaplasia-c027, metaplasia-c041, metaplasia-c043, metaplasia-c053, metaplasia-c057, metaplasia-c060, dysplasia-c010, dysplasia-c014, dysplasia-c016, dysplasia-c022, dysplasia-c024, dysplasia-c046, dysplasia-c048]
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published

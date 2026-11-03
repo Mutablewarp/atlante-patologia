@@ -1,0 +1,77 @@
+id: necroptosis-micro-2
+file: necroptosis-micro-2.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:The-necroptosis-inducing-kinase-RIPK3-dampens-adipose-tissue-inflammation-and-glucose-intolerance-ncomms11869-s3.ogv
+author: >-
+  Gautheron J, Vucur M, Schneider A, Severi I, Roderburg C, Roy S, Bartneck M, Schrammen P, Diaz M, Ehling J,
+  Gremse F, Heymann F, Koppe C, Lammers T, Kiessling F, Van Best N, Pabst O, Courtois G, Linkermann A, Krautwald S,
+  Neumann U, Tacke F, Trautwein C, Green D, Longerich T, Frey N, Luedde M, Bluher M, Herzig S, Heikenwalder M,
+  Luedde T
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-10-10
+modifications: >-
+  One still frame taken from the Commons video (Supplementary Movie 2, 1920 × 1080 px) at the timestamp 02:18:55.377,
+  cropped at native resolution to the lower-right 960 × 720 px of the image area (the timestamp is cut off; the 50 µm
+  scale bar burned into the video is kept), then saved as JPEG. No other changes.
+attributionText: >-
+  Gautheron J, Vucur M, Schneider A et al., "The necroptosis-inducing kinase RIPK3 dampens adipose tissue inflammation
+  and glucose intolerance", Nature Communications 2016;7:11869, doi:10.1038/ncomms11869, Supplementary Movie 2 (still
+  frame, cropped), via Wikimedia Commons, CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+# License check (2026-10-10): same source as necroptosis-micro-1. Commons metadata gives CC BY 4.0 with the article
+# authors as creators; uploader is the Open Access Media Importer bot; Europe PMC (PMC4919522) confirms the article is
+# open access under CC BY 4.0 and the movie legend has no third-party credit line.
+stain: none (phase-contrast microscopy of living, unstained cells)
+magnification: medium power (cropped detail; scale bar 50 µm)
+caption:
+  it: >-
+    Necroptosi colta a metà strada: fibroblasti murini L929 trattati con l'inibitore delle caspasi zVAD-fmk e poi con
+    TNF, ripresi in vivo al microscopio a contrasto di fase a registrazione in corso (dettaglio dello stesso esperimento di
+    necroptosis-micro-1). Nello stesso campo convivono tre aspetti, ed è utile
+    leggerli come le tappe di una sequenza. Cerca prima le cellule ancora vive: allungate, fusate, aderenti al fondo,
+    con un bordo luminoso. Poi le cellule tonde e molto brillanti: si sono staccate e arrotondate, ma la membrana è
+    ancora integra e trattiene il citoplasma denso, per questo appaiono rifrangenti. Infine le più numerose, le cellule
+    tonde, grigie, granulose e senza alone: sono morte, con la membrana plasmatica perforata da MLKL dopo
+    l'attivazione di RIPK1 e RIPK3. La morte non è sincronizzata: ogni cellula passa da una tappa all'altra con i
+    propri tempi, per questo il campo appare misto. Da ricordare: nella necroptosi la cellula si gonfia e la membrana
+    cede, liberando nel microambiente il suo contenuto (DAMP), che richiama l'infiammazione; nell'apoptosi invece la
+    cellula si rimpicciolisce, forma bolle sulla superficie e si frammenta in corpi apoptotici che vengono fagocitati
+    senza infiammazione. Attenzione: è un esperimento su cellule in coltura, non un preparato istologico.
+  en: >-
+    Necroptosis caught halfway: mouse L929 fibroblasts treated with the caspase inhibitor zVAD-fmk and then with TNF,
+    imaged live by phase-contrast microscopy partway through the recording (a detail from the same experiment as
+    necroptosis-micro-1). Three appearances share the same field, and it helps to read them as
+    steps in a sequence. First find the cells that are still alive: elongated, spindle-shaped, attached to the dish,
+    with a bright edge. Then the round, very bright cells: they have detached and rounded up, but their membrane is
+    still intact and holds in the dense cytoplasm, which is why they look refractile. Finally the most numerous ones,
+    the round, grey, granular cells without a halo: they are dead, their plasma membrane perforated by MLKL after
+    RIPK1 and RIPK3 were activated. Death is not synchronised: each cell moves through the steps on its own schedule,
+    which is why the field looks mixed. Key point: in necroptosis the cell swells and the membrane gives way, releasing
+    its contents (DAMPs) into the surroundings, which draws in inflammation; in apoptosis the cell shrinks, blebs and
+    breaks up into apoptotic bodies that are phagocytosed without inflammation. Note that this is a cell-culture
+    experiment, not a histological section.
+alt:
+  it: >-
+    Micrografia in scala di grigi al contrasto di fase, con barra di scala da 50 µm in basso a destra: su fondo grigio
+    scuro alcune cellule allungate e appuntite con bordi luminosi, alcune piccole cellule tonde molto brillanti e molte
+    cellule tonde, grigie e granulose senza alone luminoso.
+  en: >-
+    Greyscale phase-contrast micrograph with a 50 µm scale bar at lower right: on a dark grey background, a few
+    elongated, pointed cells with bright edges, a few small, very bright round cells and many round, grey, granular
+    cells without a bright halo.
+annotations:
+  - id: living-fibroblast
+    label: { it: "Fibroblasto ancora vivo, fusato e aderente", en: "Fibroblast still alive, spindle-shaped and attached" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.146, 0.146, 0.245, 0.146, 0.245, 0.257, 0.146, 0.257] }
+  - id: rounded-refractile-cell
+    label: { it: "Cellula arrotondata e rifrangente (membrana ancora integra)", en: "Rounded, refractile cell (membrane still intact)" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.292, 0.285, 0.339, 0.285, 0.339, 0.354, 0.292, 0.354] }
+  - id: necroptotic-cell
+    label: { it: "Cellula necroptotica: rigonfia, grigia, senza alone", en: "Necroptotic cell: swollen, grey, no halo" }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.729, 0.146, 0.810, 0.146, 0.810, 0.257, 0.729, 0.257] }

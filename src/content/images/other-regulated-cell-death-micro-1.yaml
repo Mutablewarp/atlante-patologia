@@ -1,0 +1,82 @@
+id: other-regulated-cell-death-micro-1
+file: other-regulated-cell-death-micro-1.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Representative_scanning_electron_micrographs_showing_an_unstimulated_neutrophil_(CTR)_and_neutrophils_treated_with_phorbol_12-myristate_13-acetate_(PMA).png
+author: Lara Gibellini, Rebecca Borella, Elena Santacroce, Eugenia Serattini, Federica Boraldi, Daniela Quaglino, Beatrice Aramini, Sara De Biasi, Andrea Cossarizza
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-10-10
+modifications: >-
+  Downscaled from the 1846 × 1916 px Commons original to 1600 × 1661 px and re-encoded from PNG to JPEG. No crop
+  or retouching; the panel labels (CTR, PMA), scale bars and inset frame belong to the published figure.
+attributionText: >-
+  Lara Gibellini, Rebecca Borella, Elena Santacroce, Eugenia Serattini, Federica Boraldi, Daniela Quaglino, Beatrice
+  Aramini, Sara De Biasi, Andrea Cossarizza, "Circulating and Tumor-Associated Neutrophils in the Era of Immune
+  Checkpoint Inhibitors: Dynamics, Phenotypes, Metabolism, and Functions", Cancers 2023;15(13):3327,
+  doi:10.3390/cancers15133327, Figure 2, via Wikimedia Commons, CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+# License check (2026-10-10): Commons file page metadata gives CC BY 4.0 ({{cc-by-4.0}}) with the nine article
+# authors as creators. The uploader is not the creator, but the source is explicit: Europe PMC (PMC10341361) lists
+# the article as CC BY 4.0 (MDPI), and neither the Figure 2 legend nor the article text carries a "reproduced" or
+# "with permission" note, so the licence covers this figure.
+stain: scanning electron microscopy (SEM)
+magnification: ultrastructural (scale bars 1 µm; inset 200 nm)
+caption:
+  it: >-
+    NETosi vista al microscopio elettronico a scansione: neutrofili umani isolati dal sangue, a riposo e dopo
+    stimolazione in vitro con un estere del forbolo (PMA), un attivatore della proteina chinasi C usato in laboratorio
+    per scatenare la NETosi. Leggi i tre riquadri come una sequenza. In alto a sinistra (CTR) il neutrofilo a riposo è
+    una sfera compatta con la superficie increspata da piccole pieghe di membrana. In alto a destra (PMA) la cellula
+    attivata si è appiattita sul supporto, emette sporgenze irregolari e libera tutto intorno numerose vescicole: la
+    membrana sta perdendo la sua integrità. Nel riquadro in basso guarda lo sfondo, che non è vuoto: è attraversato da
+    una rete di filamenti sottilissimi, ramificati, punteggiati da piccoli granuli; l'inserto a ingrandimento maggiore
+    (barra di 200 nm) mostra fibre lisce interrotte da domini globulari. Questa rete è la trappola extracellulare del
+    neutrofilo (NET): cromatina decondensata (DNA e istoni) espulsa dalla cellula e decorata da proteine dei granuli
+    come elastasi e mieloperossidasi, capace di imbrigliare e uccidere i microrganismi. Da ricordare: nella forma
+    classica (NETosi «suicida») la cellula muore per rottura delle membrane, come nella necrosi, ma attraverso un
+    programma regolato che dipende dalle specie reattive dell'ossigeno prodotte dalla NADPH ossidasi e dalla
+    citrullinazione degli istoni da parte di PAD4. Al microscopio ottico con l'ematossilina-eosina le NET di solito non
+    si riconoscono: servono la microscopia elettronica o marcatori come gli istoni citrullinati.
+  en: >-
+    NETosis seen by scanning electron microscopy: human neutrophils isolated from blood, at rest and after in vitro
+    stimulation with a phorbol ester (PMA), a protein kinase C activator used in the laboratory to trigger NETosis.
+    Read the three panels as a sequence. At top left (CTR) the resting neutrophil is a compact sphere whose surface is
+    ruffled by small membrane folds. At top right (PMA) the activated cell has flattened onto the support, throws out
+    irregular protrusions and sheds many vesicles around itself: its membrane is losing integrity. In the lower panel
+    look at the background, which is not empty: it is crossed by a network of very thin, branching threads dotted with
+    small granules; the higher-power inset (200 nm bar) shows smooth fibres interrupted by globular domains. This web
+    is the neutrophil extracellular trap (NET): decondensed chromatin (DNA and histones) expelled from the cell and
+    studded with granule proteins such as elastase and myeloperoxidase, able to snare and kill microbes. Key point: in
+    the classic ("suicidal") form the cell dies by membrane rupture, as in necrosis, but through a regulated programme
+    that depends on reactive oxygen species made by NADPH oxidase and on histone citrullination by PAD4. On a routine
+    H&E slide NETs are usually not recognisable: electron microscopy or markers such as citrullinated histones are
+    needed.
+alt:
+  it: >-
+    Tre micrografie elettroniche a scansione in bianco e nero. In alto a sinistra, con l'etichetta CTR, una cellula
+    sferica con superficie a pieghe fini. In alto a destra, con l'etichetta PMA, una cellula appiattita e irregolare con
+    molte sporgenze e piccole vescicole sparse intorno. In basso, con l'etichetta PMA, un corpo cellulare a pieghe
+    nell'angolo in alto a destra collegato da un grosso filamento a uno sfondo attraversato da una rete di fibre
+    sottili; in basso a sinistra un inserto bordato di bianco mostra le fibre a ingrandimento maggiore, con barra di
+    200 nm.
+  en: >-
+    Three black-and-white scanning electron micrographs. Top left, labelled CTR, a spherical cell with a finely folded
+    surface. Top right, labelled PMA, a flattened, irregular cell with many protrusions and small vesicles scattered
+    around it. Bottom, labelled PMA, a folded cell body in the upper right corner joined by a thick strand to a
+    background crossed by a network of thin fibres; at lower left a white-framed inset shows the fibres at higher
+    magnification, with a 200 nm scale bar.
+annotations:
+  - id: resting-neutrophil
+    label: { it: Neutrofilo a riposo, en: Resting neutrophil }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.035, 0.063, 0.404, 0.063, 0.404, 0.397, 0.035, 0.397] }
+  - id: activated-neutrophil
+    label: { it: "Neutrofilo attivato (PMA): appiattito, con vescicole", en: "Activated neutrophil (PMA): flattened, shedding vesicles" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.47, 0.07, 0.97, 0.07, 0.97, 0.433, 0.47, 0.433] }
+  - id: net-fibres
+    label: { it: "Fibre della NET (cromatina extracellulare)", en: "NET fibres (extracellular chromatin)" }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.012, 0.648, 0.397, 0.648, 0.397, 0.995, 0.012, 0.995] }

@@ -1,0 +1,114 @@
+id: apoptosis
+module: g01
+tier: core
+kind: process
+names:
+  it: "Apoptosi"
+  en: "Apoptosis"
+  eponyms: []
+  synonyms:
+    it: ["Morte cellulare programmata (accezione storica)", "Morte cellulare dipendente dalle caspasi"]
+    en: ["Programmed cell death (historical usage)", "Caspase-dependent cell death"]
+  abbreviations: []
+summary:
+  it: "Morte cellulare regolata e dipendente dalle caspasi, che elimina singole cellule tra cellule vitali, con condensazione e frammentazione del nucleo, formazione di corpi apoptotici e rimozione da parte dei fagociti senza infiammazione."
+  en: "Regulated, caspase-dependent cell death that removes single cells among viable ones, with nuclear condensation and fragmentation, apoptotic bodies and phagocytic removal without inflammation."
+lenses:
+  system: [general, liver-biliary, hematolymphoid]
+  process: [cell-death, apoptosis, regulated-cell-death]
+  pattern: [apoptotic-bodies, nuclear-changes]
+  presentation: []
+  marker: [molecular]
+  group: [degenerative, neoplastic, immune]
+learningObjectives:
+  - it: "Elencare i ruoli fisiologici e patologici dell'apoptosi, con esempi tratti dallo sviluppo, dal ricambio tissutale e dalle malattie."
+    en: "List the physiologic and pathologic roles of apoptosis, with examples from development, tissue turnover and disease."
+  - it: "Descrivere la via estrinseca (recettori di morte, DISC, caspasi-8) e la via intrinseca (mitocondri, citocromo c, apoptosoma, caspasi-9)."
+    en: "Describe the extrinsic pathway (death receptors, DISC, caspase-8) and the intrinsic pathway (mitochondria, cytochrome c, apoptosome, caspase-9)."
+  - it: "Spiegare come l'equilibrio tra i membri pro- e antiapoptotici della famiglia BCL-2 determini il destino della cellula e quale ruolo svolga p53."
+    en: "Explain how the balance between pro- and anti-apoptotic BCL-2 family members decides cell fate, and the role of p53."
+  - it: "Riconoscere al microscopio la cellula apoptotica e spiegare perché la sua rimozione (efferocitosi) non provoca infiammazione."
+    en: "Recognize an apoptotic cell under the microscope and explain why its removal (efferocytosis) causes no inflammation."
+  - it: "Distinguere l'apoptosi dalla necrosi, dalla necroptosi e dalla piroptosi."
+    en: "Distinguish apoptosis from necrosis, necroptosis and pyroptosis."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: coagulative-necrosis
+    note:
+      it: "Singole cellule senza infiammazione rispetto a un'area di cellule morte con infiammazione acuta."
+      en: "Single cells without inflammation versus an area of dead cells with acute inflammation."
+  - type: sharesMechanism
+    target: pyroptosis
+    note:
+      it: "Entrambe usano le caspasi, ma la piroptosi rompe la membrana e scatena l'infiammazione."
+      en: "Both use caspases, but pyroptosis ruptures the membrane and triggers inflammation."
+quickCheck:
+  - id: apoptosis-q1
+    q:
+      it: "Quale complesso si forma quando il citocromo c esce dal mitocondrio, e quale caspasi attiva?"
+      en: "Which complex forms when cytochrome c leaves the mitochondrion, and which caspase does it activate?"
+    a:
+      it: "L'apoptosoma (citocromo c, Apaf-1 e procaspasi-9), che attiva la caspasi-9 e quindi le caspasi effettrici."
+      en: "The apoptosome (cytochrome c, Apaf-1 and procaspase-9), which activates caspase-9 and then the executioner caspases."
+    kind: short
+  - id: apoptosis-q2
+    q:
+      it: "Quale caspasi iniziatrice viene attivata dalla via estrinseca, e in che modo collega questa via a quella mitocondriale?"
+      en: "Which initiator caspase does the extrinsic pathway activate, and how does it link to the mitochondrial pathway?"
+    a:
+      it: "La caspasi-8: taglia Bid generando tBid, che attiva la via intrinseca a livello del mitocondrio."
+      en: "Caspase-8; it cleaves Bid to tBid, which activates the intrinsic pathway at the mitochondrion."
+    kind: short
+  - id: apoptosis-q3
+    q:
+      it: "Perché la morte per apoptosi non provoca infiammazione, a differenza della necrosi?"
+      en: "Why does apoptotic death cause no inflammation, unlike necrosis?"
+    a:
+      it: "Perché i corpi apoptotici espongono segnali «mangiami» come la fosfatidilserina e vengono fagocitati prima che la membrana si rompa, senza liberare il contenuto cellulare."
+      en: "Because apoptotic bodies expose eat-me signals such as phosphatidylserine and are engulfed before the membrane breaks, so the cell contents are not released."
+    kind: short
+  - id: apoptosis-q4
+    q:
+      it: "Bcl-2, Bax e PUMA: quali sono antiapoptotici e quali proapoptotici?"
+      en: "Bcl-2, Bax and PUMA: which are anti-apoptotic and which pro-apoptotic?"
+    a:
+      it: "Bcl-2 è antiapoptotico; Bax e PUMA sono proapoptotici (PUMA è indotto da p53)."
+      en: "Bcl-2 is anti-apoptotic; Bax and PUMA are pro-apoptotic (PUMA is induced by p53)."
+    kind: short
+selfExplain:
+  - it: "Perché una cellula che esaurisce l'ATP durante un danno mitocondriale muore per necrosi anziché per apoptosi?"
+    en: "Why does a cell that runs out of ATP during mitochondrial injury die by necrosis rather than apoptosis?"
+  - it: "In che modo la perdita di p53 o l'eccesso di Bcl-2 favorisce la comparsa di un tumore?"
+    en: "How does loss of p53 or excess Bcl-2 favor the development of a tumor?"
+  - it: "Perché un virus trae vantaggio dal bloccare l'apoptosi della cellula che infetta?"
+    en: "Why does a virus benefit from blocking apoptosis in the cell it infects?"
+chain: []
+images:
+  - id: apoptosis-micro-1
+    role: micro
+  - id: apoptosis-micro-2
+    role: micro
+  - id: apoptosis-micro-3
+    role: micro
+  - id: g01-apoptosis-pathways
+    role: diagram
+  - id: g01-necrosis-vs-apoptosis
+    role: diagram
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "1"
+    pages: "39, 41, 45-54, 56"
+  - source: rubin-8e
+    chapter: "5"
+    pages: "190"
+  - source: rubin-8e
+    chapter: "9"
+    pages: "398"
+  - source: rubin-8e
+    chapter: "11"
+    pages: "513"
+lastUpdated: 2026-11-03
+status: published

@@ -1,0 +1,66 @@
+id: protein-quality-control-micro-2
+file: protein-quality-control-micro-2.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Immunostaining_(brown)_of_alpha-synuclein_in_Lewy_Bodies_and_Lewy_Neurites_in_the_neocortex_of_a_patient_with_Lewy_Body_Disease.jpg
+author: Movalley
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-10-10
+modifications: "re-encoded as JPEG (quality 85) to reduce file size; same 750 × 750 px frame, no crop"
+attributionText: >-
+  Movalley, "Immunostaining (brown) of alpha-synuclein in Lewy Bodies and Lewy Neurites in the neocortex of a patient
+  with Lewy Body Disease", via Wikimedia Commons, CC0 1.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: immunohistochemistry for alpha-synuclein (brown), Nissl counterstain (blue)
+magnification: 40× objective
+caption:
+  it: >-
+    Corpi di Lewy e neuriti di Lewy nella neocorteccia, immunoistochimica per l'alfa-sinucleina (marrone) con
+    controcolorazione di Nissl (blu), obiettivo 40×. L'alfa-sinucleina è una proteina neuronale che può ripiegarsi
+    male e aggregarsi; quando chaperoni, proteasoma e autofagia non riescono a smaltirla, si raccoglie in inclusioni
+    stabili, che contengono anche ubiquitina. Come leggere l'immagine: prima guarda il fondo, un neuropilo azzurro
+    pallido con nuclei blu di neuroni (grandi, chiari) e di cellule gliali (piccoli, scuri). Poi cerca il marrone:
+    alcuni neuroni hanno nel citoplasma un ammasso rotondo, denso e omogeneo, che spesso sposta il nucleo di lato.
+    Sono corpi di Lewy corticali. I sottili fili marroni sparsi nel neuropilo sono neuriti di Lewy, lo stesso
+    aggregato dentro assoni e dendriti. Con la sola ematossilina-eosina i corpi di Lewy della corteccia sono difficili
+    da riconoscere; l'immunoistochimica li rende evidenti. Si trovano nella malattia di Parkinson e nella demenza a
+    corpi di Lewy.
+  en: >-
+    Lewy bodies and Lewy neurites in the neocortex, immunohistochemistry for alpha-synuclein (brown) with a Nissl
+    counterstain (blue), 40× objective. Alpha-synuclein is a neuronal protein that can misfold and aggregate; when
+    chaperones, the proteasome and autophagy fail to clear it, it collects in stable inclusions that also contain
+    ubiquitin. How to read the image: first look at the background, a pale blue neuropil with blue nuclei of neurons
+    (large, pale) and glial cells (small, dark). Then look for brown: some neurons hold a round, dense, uniform clump in
+    the cytoplasm that often pushes the nucleus to one side. These are cortical Lewy bodies. The thin brown threads
+    scattered through the neuropil are Lewy neurites, the same aggregate inside axons and dendrites. On haematoxylin
+    and eosin alone, cortical Lewy bodies are hard to recognise; immunohistochemistry makes them obvious. They occur
+    in Parkinson disease and in dementia with Lewy bodies.
+alt:
+  it: >-
+    Micrografia di corteccia cerebrale su fondo azzurro pallido con nuclei blu. Diversi neuroni contengono un
+    ammasso rotondo marrone scuro nel citoplasma, accanto al nucleo; sottili filamenti marroni sono sparsi tra le
+    cellule.
+  en: >-
+    Micrograph of cerebral cortex on a pale blue background with blue nuclei. Several neurons contain a round,
+    dark brown clump in the cytoplasm next to the nucleus; thin brown threads are scattered between the cells.
+annotations:
+  - id: lewy-body-displacing-nucleus
+    label: { it: Corpo di Lewy che sposta il nucleo del neurone, en: Lewy body pushing the neuron's nucleus aside }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.234, 0.525, 0.213, 0.546, 0.182, 0.546, 0.16, 0.525, 0.16, 0.494, 0.182, 0.472, 0.213, 0.472, 0.234, 0.494]
+  - id: cortical-lewy-body
+    label: { it: Corpo di Lewy corticale (ammasso rotondo e omogeneo), en: Cortical Lewy body (round, uniform clump) }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.521, 0.215, 0.503, 0.233, 0.476, 0.233, 0.457, 0.215, 0.457, 0.188, 0.476, 0.169, 0.503, 0.169, 0.521, 0.188]
+  - id: lewy-neurite
+    label: { it: Neurite di Lewy (filamento marrone nel neuropilo), en: Lewy neurite (brown thread in the neuropil) }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.56, 0.195, 0.625, 0.195, 0.625, 0.218, 0.56, 0.218]
