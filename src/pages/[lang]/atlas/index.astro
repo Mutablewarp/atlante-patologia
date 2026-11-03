@@ -17,7 +17,9 @@ const lenses = LENSES.map((lens) => {
   const tax = taxonomy.get(lens);
   const counts = membership.get(lens)!;
   const used = [...counts.values()].reduce((n, ids) => n + ids.length, 0);
-  return { lens, label: tax?.label[lang] ?? lens, terms: tax?.terms ?? [], used };
+  // Terms with a page (D036) are linked inline: Home → Atlas → term → entity (NAVIGATION_SPEC ≤ 3 taps).
+  const linked = (tax?.terms ?? []).filter((x) => (counts.get(x.id)?.length ?? 0) > 0);
+  return { lens, label: tax?.label[lang] ?? lens, terms: tax?.terms ?? [], linked, used };
 });
 const pats = await patterns();
 const tools = (['compare', 'diff', 'map', 'paths'] as const).map((k) => ({
@@ -44,16 +46,28 @@ const sections = (['I', 'II', 'III'] as const).map((s) => ({
       {
         lenses.map((l) => (
           <li>
-            <a class="card link-card" href={langPath(lang, `atlas/${l.lens}/`)}>
-              <h3>{l.label} →</h3>
-              <p class="small muted">
-                {l.terms
-                  .slice(0, 6)
-                  .map((x) => x.label[lang])
-                  .join(' · ')}
-                {l.terms.length > 6 && ' …'}
-              </p>
-            </a>
+            <div class="card lens-card">
+              <h3>
+                <a href={langPath(lang, `atlas/${l.lens}/`)}>{l.label} →</a>
+              </h3>
+              {l.linked.length > 0 ? (
+                <ul class="lens-terms small">
+                  {l.linked.map((x) => (
+                    <li>
+                      <a href={langPath(lang, `atlas/${l.lens}/${x.id}/`)}>{x.label[lang]}</a>
+                    </li>
+                  ))}
+                </ul>
+              ) : (
+                <p class="small muted">
+                  {l.terms
+                    .slice(0, 6)
+                    .map((x) => x.label[lang])
+                    .join(' · ')}
+                  {l.terms.length > 6 && ' …'}
+                </p>
+              )}
+            </div>
           </li>
         ))
       }

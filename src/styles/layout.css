@@ -338,6 +338,26 @@ main:focus {
   color: var(--hema);
 }
 
+.lens-card h3 {
+  margin-top: 0;
+}
+.lens-card h3 a {
+  color: var(--hema);
+}
+.lens-terms {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1) var(--space-3);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.lens-terms a {
+  display: inline-block;
+  min-height: 1.5rem; /* WCAG 2.2 target size (24 px) */
+  padding: var(--space-1) 0;
+}
+
 .module-list {
   list-style: none;
   padding: 0;
