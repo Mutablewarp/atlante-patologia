@@ -1,0 +1,514 @@
+entity: dystrophic-calcification
+claims:
+  - claimId: dystrophic-calcification-c001
+    section: definition
+    statement: "Dystrophic calcification is extracellular deposition of calcium salts in injured or dead tissue."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c002
+    section: definition
+    statement: "The dystrophic form begins with local tissue injury, whereas metastatic calcification reflects a systemic calcium/phosphate disorder (hypercalcemia and/or hyperphosphatemia); serum calcium is typically normal in the dystrophic form."
+    sourceRef: { source: rubin-8e, chapter: "1, 30", pages: "29-30, 1348" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c003
+    section: definition
+    statement: "Calcium hydroxyapatite, the main mineral of bone and teeth, is the mineral deposited in dystrophic calcification."
+    sourceRef: { source: rubin-8e, chapter: "30", pages: "1396" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c004
+    section: definition
+    statement: "Dystrophic calcification occurs in abnormal or damaged soft tissues such as tumors, degenerative diseases like arteriosclerosis and traumatized areas."
+    sourceRef: { source: rubin-8e, chapter: "30", pages: "1348" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c005
+    section: etiology
+    statement: "Tuberculous lesions of the lung and lymph nodes calcify."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c006
+    section: etiology
+    statement: "Fat necrosis follows pancreatitis or trauma, with fatty acids precipitating with calcium; traumatic breast fat necrosis calcifies with time."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "40" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c007
+    section: etiology
+    statement: "Old renal infarcts, healed renal cortical necrosis and necrotic renal papillae undergo dystrophic calcification."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "954-955, 962" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c008
+    section: etiology
+    statement: "In osteonecrosis the necrotic marrow shows dystrophic calcification."
+    sourceRef: { source: rubin-8e, chapter: "30", pages: "1346-1347" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c009
+    section: etiology
+    statement: "Atherosclerotic coronary arteries become calcified."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c010
+    section: etiology
+    statement: "Calcific aortic stenosis arises on rheumatic valves, congenitally bicuspid valves and age-degenerated normal three-cusped aortic valves; mitral valves and the mitral annulus may also calcify."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c011
+    section: etiology
+    statement: "Mönckeberg medial sclerosis is degenerative calcification of the media of muscular arteries, mainly in older people and in arteries of the arms and legs."
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c012
+    section: etiology
+    statement: "Small calcifications in breast tumors may reflect cell death from rapid turnover."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c013
+    section: etiology
+    statement: "Small calcifications occur in the brains of infants who had certain intrauterine infections."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c014
+    section: etiology
+    statement: "Loss of neurologic function, as in quadriplegia and hemiplegia, predisposes affected areas to soft-tissue calcification."
+    sourceRef: { source: rubin-8e, chapter: "30", pages: "1348" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c015
+    section: pathogenesis
+    statement: "After injury, dying cells lose the ability to maintain a steep calcium gradient and calcium enters them."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c016
+    section: pathogenesis
+    statement: "Intracellular calcium accumulation in injured cells is visible only as inclusions in mitochondria."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c017
+    section: pathogenesis
+    statement: "Free fatty acids derived from the membrane lipids of dead cells capture calcium and serve as a nucleus for its precipitation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c018
+    section: pathogenesis
+    statement: "In fat necrosis lipases release fatty acids that bind calcium and precipitate as soaps."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "39-40" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c019
+    section: pathogenesis
+    statement: "The mechanism is obscure, but bone-mineralizing proteins such as osteopontin, osteonectin and osteocalcin may contribute."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c020
+    section: pathogenesis
+    statement: "Aortic valve calcification is active: interstitial cells take on an osteoblastic phenotype and mineralize matrix, promoted by oxidized LDL, TGF-beta and osteopontin."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671-672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c021
+    section: pathogenesis
+    statement: "Calcific aortic stenosis relates to cumulative years of turbulent flow across the valve."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c022
+    section: gross
+    statement: "Dystrophic calcification is often grossly visible and palpable, ranging from fine gritty particles to hard stone-like masses."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c023
+    section: gross
+    statement: "Fat necrosis looks like irregular chalky white areas in adipose tissue."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "40" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c024
+    section: gross
+    statement: "In calcific aortic stenosis calcified nodules gather in the lower half of each cusp on its sinus aspect and usually spare the free edge."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c025
+    section: gross
+    statement: "Degenerative calcific aortic stenosis lacks commissural fusion, which is a hallmark of rheumatic disease."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c026
+    section: gross
+    statement: "Arteries with Mönckeberg medial sclerosis are hard and dilated."
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "618" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c027
+    section: micro
+    statement: "Calcium deposits are amorphous and basophilic on routine staining."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "40" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c028
+    section: micro
+    statement: "Calcium soaps in fat necrosis appear at the edges of necrotic adipocyte islands among inflammatory cells."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "40" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c029
+    section: micro
+    statement: "Psammoma bodies are concentrically laminated, spherical calcific particles."
+    sourceRef: { source: rubin-8e, chapter: "27", pages: "1217" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c030
+    section: micro
+    statement: "In papillary thyroid carcinoma, papillae undergo degenerative calcification and form psammoma bodies."
+    sourceRef: { source: rubin-8e, chapter: "27", pages: "1217" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c031
+    section: micro
+    statement: "In Mönckeberg sclerosis dystrophic calcium forms rings in the media, the internal elastic lamina commonly calcifies in patches, and osseous metaplasia can develop."
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "618" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c032
+    section: ancillary
+    statement: "Calcium deposits stain deep blue with hematoxylin."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c033
+    section: ancillary
+    statement: "Calcium deposits are black with the more specific von Kossa stain."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c034
+    section: clinical
+    statement: "Dystrophic calcification may have no functional consequence, as in tuberculous lungs or lymph nodes."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c035
+    section: clinical
+    statement: "Calcified mitral or aortic valves may fail to open fully and limit blood flow."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c036
+    section: clinical
+    statement: "Severe aortic stenosis causes concentric left ventricular hypertrophy; functional derangement typically appears after age 60."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671-672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c037
+    section: clinical
+    statement: "Calcified atherosclerotic coronary arteries may compromise oxygen delivery to the heart."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c038
+    section: clinical
+    statement: "Mönckeberg medial sclerosis ordinarily does not cause clinically significant impairment."
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "618" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c039
+    section: clinical
+    statement: "Breast fat necrosis presents as a hard mass that may mimic cancer, particularly once calcified (calcification point from ch1 p40)."
+    sourceRef: { source: rubin-8e, chapter: "1, 25", pages: "40, 1077" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c040
+    section: diagnosis
+    statement: "Serum calcium is typically normal in dystrophic calcification; hypercalcemia or hyperphosphatemia suggests a metastatic process, which may coexist."
+    sourceRef: { source: rubin-8e, chapter: "1, 30", pages: "29-30, 1348" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c041
+    section: diagnosis
+    statement: "Radiographically heterotopic calcification is irregular and amorphous and usually denser than bone, while bone has a spicular or trabecular pattern."
+    sourceRef: { source: rubin-8e, chapter: "30", pages: "1348" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c042
+    section: diagnosis
+    statement: "Calcified necrotic debris in comedo DCIS shows on mammography as linear, branching calcifications."
+    sourceRef: { source: rubin-8e, chapter: "25", pages: "1089" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c043
+    section: diagnosis
+    statement: "Calcium is basophilic on H&E and black with von Kossa."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c044
+    section: prognosis
+    statement: "Dystrophic calcification can be functionally silent (tuberculous nodes) or can impair a structure that must be flexible (heart valves)."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c045
+    section: prognosis
+    statement: "Aortic stenosis leads to LV hypertrophy, later dilation and failure; valve replacement is highly successful if done before ventricular dysfunction is irreversible."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c046
+    section: prognosis
+    statement: "Statins slow atherosclerosis but have not been shown to halt calcification of the aortic valve."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c047
+    section: differential
+    statement: "Metastatic calcification affects normal tissues such as alveolar septa, renal tubules and vessels and follows a raised calcium-phosphate product (hypercalcemia or hyperphosphatemia), e.g. chronic renal failure, vitamin D excess, primary hyperparathyroidism."
+    sourceRef: { source: rubin-8e, chapter: "1, 30", pages: "30, 1348" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c048
+    section: differential
+    statement: "Calcium stones form when fluids are supersaturated with calcium and precipitate around organic nidi in biliary tract, renal pelvis or bladder."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "30" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c049
+    section: differential
+    statement: "Heterotopic ossification forms bone with a spicular or trabecular radiographic pattern."
+    sourceRef: { source: rubin-8e, chapter: "30", pages: "1348" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c050
+    section: high-yield
+    statement: "Dystrophic calcification deposits calcium in damaged tissue with normal calcium metabolism."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29-30" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c051
+    section: high-yield
+    statement: "Membrane-derived fatty acids from dead cells bind calcium and seed precipitation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c052
+    section: high-yield
+    statement: "Typical settings include tuberculosis, fat necrosis, atherosclerosis, heart valves, old infarcts and tumors."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29, 40" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c053
+    section: high-yield
+    statement: "Calcium is basophilic on H&E and black with von Kossa."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c054
+    section: high-yield
+    statement: "Psammoma bodies are concentrically laminated calcifications, classically found in papillary thyroid carcinoma."
+    sourceRef: { source: rubin-8e, chapter: "27", pages: "1217" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c055
+    section: high-yield
+    statement: "Calcification of valves limits their flexibility, as in calcific aortic stenosis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c056
+    section: traps
+    statement: "Metastatic, not dystrophic, calcification is defined by a systemic calcium/phosphate disorder (hypercalcemia and/or hyperphosphatemia)."
+    sourceRef: { source: rubin-8e, chapter: "1, 30", pages: "29-30, 1348" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c057
+    section: traps
+    statement: "Metastatic calcification affects normal tissues whereas dystrophic needs injury."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29-30" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c058
+    section: traps
+    statement: "Valvular calcification is an active cell-mediated process."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671-672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c059
+    section: traps
+    statement: "Heterotopic calcification is amorphous on radiographs while heterotopic bone is trabecular."
+    sourceRef: { source: rubin-8e, chapter: "30", pages: "1348" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c060
+    section: traps
+    statement: "Calcified fat necrosis of the breast can mimic a tumor."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "40" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c061
+    section: mnemonics
+    statement: "Original mnemonic restating that dystrophic calcification follows tissue damage with normal calcium, while metastatic follows deranged calcium/phosphate metabolism in healthy tissue."
+    sourceRef: { source: rubin-8e, chapter: "1, 30", pages: "29-30, 1348" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c062
+    section: mnemonics
+    statement: "Original mnemonic restating the three classic psammoma body sites: papillary thyroid carcinoma (sourced here), serous ovarian carcinoma (see c063) and meningioma (see c064)."
+    sourceRef: { source: rubin-8e, chapter: "27", pages: "1217" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c063
+    section: micro
+    statement: "Psammoma bodies are frequent in low-grade serous carcinoma of the ovary."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1061" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dystrophic-calcification-c064
+    section: micro
+    statement: "Meningiomas commonly contain psammoma bodies."
+    sourceRef: { source: rubin-8e, chapter: "32", pages: "1513" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03

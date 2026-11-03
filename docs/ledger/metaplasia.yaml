@@ -1,0 +1,546 @@
+entity: metaplasia
+claims:
+  - claimId: metaplasia-c001
+    section: definition
+    statement: "Metaplasia is conversion of one differentiated (mature) cell type into another."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "27" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c002
+    section: definition
+    statement: "Metaplasia is one of the adaptive responses to persistent stress, alongside atrophy, hypertrophy and hyperplasia."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "7, 27" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c003
+    section: definition
+    statement: "Metaplasia is usually adaptive: the tissue takes on the phenotype that best resists the persistent stressor."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "27" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c004
+    section: definition
+    statement: "Barrett esophagus has a prevalence of roughly 5-15% among adults with GERD."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c005
+    section: etiology
+    statement: "Replacement of glandular/columnar epithelium by squamous epithelium is the most frequent form of metaplasia."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "27" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c006
+    section: etiology
+    statement: "Long-term smokers develop squamous metaplasia of the bronchial lining."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "27-28" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c007
+    section: etiology
+    statement: "Chronic endocervical infection can make the columnar epithelium become squamous."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "28" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c008
+    section: etiology
+    statement: "Acidity of the vaginal milieu is one of several factors that push everted endocervical columnar epithelium in the transformation zone toward squamous metaplasia."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1028" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c009
+    section: etiology
+    statement: "Vitamin A deficiency causes squamous metaplasia of glandular/columnar epithelia including airways, conjunctiva, tear and sweat ducts, renal pelvis and pancreatic ducts."
+    sourceRef: { source: rubin-8e, chapter: "8", pages: "382" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c010
+    section: etiology
+    statement: "Squamous metaplasia of the urothelium reacts to chronic injury and inflammation and is especially linked to calculi."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c011
+    section: etiology
+    statement: "Chronic reflux of acidic gastric contents into the lower esophagus can lead to intestinal-type glandular epithelium replacing squamous epithelium (Barrett esophagus)."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "28" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c012
+    section: etiology
+    statement: "Barrett risk factors: male predominance about 3:1, diagnosis mostly after 50, smokers about double risk, obesity, white race."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c013
+    section: etiology
+    statement: "Chronic bladder inflammation can turn transitional epithelium into glandular epithelium (cystitis glandularis)."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "28" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c014
+    section: etiology
+    statement: "In chronic gastritis, intestinal-type cells replace atrophic gastric glands; Helicobacter is the leading cause of multifocal atrophic gastritis."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "779" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c015
+    section: pathogenesis
+    statement: "Whether metaplasia arises from tissue stem cells committing to a different lineage or from maturing cells changing their differentiation remains unresolved."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "28" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c016
+    section: pathogenesis
+    statement: "Transformation-zone squamous cells rich in glycogen derive from reserve cells, a normally one-cell-thick layer that expands and supplants the mucinous lining."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1029" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c017
+    section: pathogenesis
+    statement: "Squamous metaplasia protects the bronchus from smoke; Barrett glandular mucosa resists acid and pepsin better than squamous mucosa."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "27-28" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c018
+    section: pathogenesis
+    statement: "Bronchial squamous metaplasia limits mucus production and impairs ciliary clearance."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "28" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c019
+    section: pathogenesis
+    statement: "Continued irritant-driven epithelial proliferation in metaplastic areas may lead to cancer."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "28" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c020
+    section: pathogenesis
+    statement: "Replication carries an intrinsic mutation risk, so prolonged proliferation allows mutations to accumulate."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "27, 29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c021
+    section: pathogenesis
+    statement: "Dysplasia can affect metaplastic epithelium, e.g., smoker's bronchus and Barrett esophagus."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c022
+    section: gross
+    statement: "Barrett mucosa is salmon-pink at endoscopy, forming tongues among squamous mucosa or covering the entire distal esophagus."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "771-772" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c023
+    section: gross
+    statement: "Young metaplastic epithelium appears faintly white at colposcopy, and the whiteness intensifies with maturation."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1028-1029" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c024
+    section: gross
+    statement: "Nephrogenic metaplasia can form papillary, tumor-like nodules in the bladder."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c025
+    section: micro
+    statement: "Squamous metaplasia appears as a squamous focus within normal endocervical columnar epithelium."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "28" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c026
+    section: micro
+    statement: "When metaplastic squamous cells accumulate glycogen they become indistinguishable from native exocervical squamous epithelium."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1028" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c027
+    section: micro
+    statement: "Barrett specialized epithelium shows goblet cells mixed with gastric foveolar cells, with villiform architecture."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "771-772" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c028
+    section: micro
+    statement: "Intestinal metaplasia in atrophic gastric mucosa features goblet cells."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "779, 781" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c029
+    section: micro
+    statement: "Urothelial metaplasias include cystitis glandularis (mucus-secreting epithelium) and nephrogenic metaplasia (tubules resembling renal tubules)."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c030
+    section: micro
+    statement: "Osseous metaplasia may occur in calcified areas of arterial media (Monckeberg sclerosis)."
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "618" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c031
+    section: ancillary
+    statement: "In the Schiller test iodine stains glycogen-laden mature squamous epithelium dark brown, while glycogen-poor immature epithelium remains unstained."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1028-1029" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c032
+    section: clinical
+    statement: "Symptoms attributable to metaplasia reflect functions of the original epithelium that are lost (e.g., mucus, ciliary clearance)."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "28" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c033
+    section: clinical
+    statement: "Squamous metaplasia in the smoker's bronchus limits mucus production and ciliary clearance."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "28" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c034
+    section: clinical
+    statement: "In vitamin A deficiency, airway metaplasia predisposes to bronchopneumonia, conjunctival metaplasia leads to xerophthalmia and keratomalacia, and renal pelvis stasis favors stones."
+    sourceRef: { source: rubin-8e, chapter: "8", pages: "382" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c035
+    section: clinical
+    statement: "Barrett esophagus is usually diagnosed after GERD complaints, though many patients have no reflux symptoms."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c036
+    section: diagnosis
+    statement: "Barrett esophagus is diagnosed by endoscopy with biopsy; specialized (goblet-cell) epithelium is required."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c037
+    section: diagnosis
+    statement: "Colposcopy and iodine staining (Schiller test) are used to examine the transformation zone."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1028-1029" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c038
+    section: diagnosis
+    statement: "Squamous metaplasia in endocervical gland crypts can mimic carcinoma, and nephrogenic or glandular urothelial metaplasia can mimic a bladder tumor (ch.23, p.983)."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1029" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c039
+    section: prognosis
+    statement: "Metaplasia is usually fully reversible when the stimulus is removed; bronchial squamous metaplasia reverts to columnar after smoking cessation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "28" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c040
+    section: prognosis
+    statement: "Lung, stomach, bladder and other cancers often arise in metaplastic areas."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "28" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c041
+    section: prognosis
+    statement: "A minority of Barrett patients develop dysplasia and adenocarcinoma; longer involved segments and higher-grade dysplasia mean higher risk."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c042
+    section: prognosis
+    statement: "Estimated annual adenocarcinoma risk in Barrett esophagus is 0.1-0.3%."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c043
+    section: prognosis
+    statement: "Guideline-based (ACG 2016): surveillance endoscopy every 3-5 years without dysplasia; dysplasia treated with radiofrequency ablation plus endoscopic resection of nodular areas."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c044
+    section: prognosis
+    statement: "Atrophic gastritis leads to intestinal metaplasia, which predisposes to dysplasia and gastric adenocarcinoma."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "779" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c045
+    section: prognosis
+    statement: "The transformation zone is the site where cervical squamous carcinoma develops."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1028" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c046
+    section: prognosis
+    statement: "Metaplastic urothelial lesions are not themselves considered precancerous but identify patients at higher risk of urothelial carcinoma, and of adenocarcinoma for cystitis glandularis."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c047
+    section: differential
+    statement: "Dysplasia shows variable cell size and shape, enlarged irregular hyperchromatic nuclei, mitoses away from the basal layer and disordered maturation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c048
+    section: differential
+    statement: "Hyperplasia is an increase in cell number; metaplasia is a change of cell type."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "25, 27" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c049
+    section: differential
+    statement: "Benign squamous metaplasia occupying endocervical gland crypts can imitate invasive carcinoma."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1029" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c050
+    section: differential
+    statement: "Nephrogenic metaplasia can form papillary, tumor-like bladder nodules composed of renal-tubule-like structures."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c051
+    section: high-yield
+    statement: "Metaplasia is replacement of one mature cell type by another, adaptive and usually reversible."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "27-28" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c052
+    section: high-yield
+    statement: "Columnar-to-squamous metaplasia is the most common form (bronchus of smokers, endocervix); vitamin A deficiency also causes it (ch.8, p.382)."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "27-28" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c053
+    section: high-yield
+    statement: "Barrett esophagus is squamous-to-intestinal-type columnar metaplasia from chronic acid reflux; goblet cells define it (ch.19, p.771)."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "28" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c054
+    section: high-yield
+    statement: "The cellular origin (maturing cells vs stem cells) of metaplasia is unresolved."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "28" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c055
+    section: high-yield
+    statement: "Metaplasia carries a functional cost such as loss of mucus production and ciliary clearance."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "28" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c056
+    section: high-yield
+    statement: "Dysplasia and carcinoma can arise in metaplastic epithelium; Barrett can progress to adenocarcinoma (ch.19, p.771)."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "28-29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c057
+    section: traps
+    statement: "Metaplasia differs from dysplasia: dysplasia implies atypia and disordered maturation (p.29)."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "28-29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c058
+    section: traps
+    statement: "Protective metaplasia is not innocuous: functions are lost and cancers often arise in metaplastic areas."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "28" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c059
+    section: traps
+    statement: "Metaplasia can go in either direction (columnar to squamous, squamous to columnar) and glandular-to-glandular."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "27-28" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c060
+    section: traps
+    statement: "Specialized epithelium with goblet cells is required for the diagnosis of Barrett esophagus."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c061
+    section: traps
+    statement: "Many patients with Barrett esophagus do not report reflux symptoms."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c062
+    section: traps
+    statement: "Barrett esophagus is common in GERD (about 5-15%) but its annual progression to adenocarcinoma is low, about 0.1-0.3%."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c063
+    section: mnemonics
+    statement: "Metaplasia replaces one normal cell type with another; dysplasia disturbs maturation and nuclear regularity."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "28-29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c064
+    section: mnemonics
+    statement: "Tobacco smoke causes bronchial squamous metaplasia."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "27-28" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c065
+    section: mnemonics
+    statement: "Vaginal acidity favors squamous metaplasia in the cervical transformation zone."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1028" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c066
+    section: mnemonics
+    statement: "Vitamin A deficiency causes squamous metaplasia."
+    sourceRef: { source: rubin-8e, chapter: "8", pages: "382" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c067
+    section: mnemonics
+    statement: "Chronic endocervical infection can cause squamous metaplasia."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "28" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: metaplasia-c068
+    section: mnemonics
+    statement: "Bladder calculi are associated with squamous metaplasia of the urothelium."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03

@@ -1,0 +1,122 @@
+id: ischemia-reperfusion-injury
+module: g01
+tier: core
+kind: process
+names:
+  it: "Danno da ischemia-riperfusione"
+  en: "Ischemia–reperfusion injury"
+  eponyms: []
+  synonyms:
+    it: ["Danno da riperfusione", "Lesione da ischemia-riperfusione"]
+    en: ["Reperfusion injury", "Ischemia/reperfusion injury"]
+  abbreviations: ["I/R", "IRI"]
+summary:
+  it: "Danno aggiuntivo che si verifica quando il flusso ematico ritorna in un tessuto ischemico, sostenuto da un'esplosione di specie reattive dell'ossigeno, dal sovraccarico di calcio, dall'apertura del poro di transizione di permeabilità mitocondriale e dall'infiammazione."
+  en: "Additional damage caused when blood flow returns to ischemic tissue, driven by a burst of reactive oxygen species, calcium overload, opening of the mitochondrial permeability transition pore and inflammation."
+lenses:
+  system: [general, heart]
+  process: [cell-injury, hypoxic-ischemic-injury, oxidative-injury, irreversible-injury]
+  pattern: [necrosis-coagulative]   # no term for contraction band necrosis; closest existing term
+  presentation: [ischemic-event]
+  marker: []
+  group: [vascular]
+learningObjectives:
+  - it: "Spiegare perché il ritorno dell'ossigeno, pur salvando le cellule con danno reversibile, può ucciderne altre."
+    en: "Explain why the return of oxygen, while rescuing reversibly injured cells, can kill others."
+  - it: "Descrivere le tre fonti di specie reattive dell'ossigeno durante la riperfusione: xantina ossidasi, mitocondri e neutrofili."
+    en: "Describe the three sources of reactive oxygen species during reperfusion: xanthine oxidase, mitochondria and neutrophils."
+  - it: "Collegare il sovraccarico di calcio e l'apertura del poro di transizione di permeabilità mitocondriale alla morte cellulare."
+    en: "Link calcium overload and opening of the mitochondrial permeability transition pore to cell death."
+  - it: "Riconoscere l'infarto riperfuso: aspetto emorragico e necrosi a bande di contrazione."
+    en: "Recognize the reperfused infarct: hemorrhagic appearance and contraction band necrosis."
+  - it: "Spiegare il precondizionamento ischemico e i tre possibili esiti della riperfusione a seconda della durata dell'ischemia."
+    en: "Explain ischemic preconditioning and the three possible outcomes of reperfusion depending on how long ischemia lasted."
+prerequisites: [hypoxic-ischemic-injury]
+relations:
+  - type: sharesMechanism
+    target: oxidative-injury
+    note:
+      it: "Le specie reattive dell'ossigeno sono il principale motore del danno da riperfusione."
+      en: "Reactive oxygen species are the main driver of reperfusion injury."
+  - type: sharesMechanism
+    target: apoptosis
+    note:
+      it: "L'apertura del poro mitocondriale libera il citocromo c, che può innescare la via intrinseca dell'apoptosi."
+      en: "Opening of the mitochondrial pore releases cytochrome c, which can trigger intrinsic apoptosis."
+  - type: complicationOf
+    target: myocardial-infarction
+    note:
+      it: "Si verifica quando un infarto in evoluzione viene riperfuso, spontaneamente oppure con trombolisi o angioplastica coronarica."
+      en: "Occurs when an evolving infarct is reperfused, spontaneously or by thrombolysis or coronary intervention."
+quickCheck:
+  - id: ischemia-reperfusion-injury-q1
+    q:
+      it: "Quali sono le tre fonti principali di specie reattive dell'ossigeno durante la riperfusione?"
+      en: "What are the three main sources of reactive oxygen species during reperfusion?"
+    a:
+      it: "La xantina ossidasi (soprattutto endoteliale), i mitocondri e i neutrofili reclutati."
+      en: "Xanthine oxidase (mainly endothelial), mitochondria and recruited neutrophils."
+    kind: short
+  - id: ischemia-reperfusion-injury-q2
+    q:
+      it: "Perché la xantina ossidasi produce superossido proprio al momento della riperfusione?"
+      en: "Why does xanthine oxidase produce superoxide precisely at reperfusion?"
+    a:
+      it: "Durante l'ischemia si accumulano xantina e altre purine derivate dall'ATP, ma l'enzima richiede ossigeno: quando l'ossigeno ritorna, converte il substrato in acido urico generando superossido."
+      en: "During ischemia xanthine and other ATP-derived purines accumulate, but the enzyme needs oxygen: when oxygen returns it converts the substrate to uric acid and generates superoxide."
+    kind: free
+  - id: ischemia-reperfusion-injury-q3
+    q:
+      it: "Quale reperto istologico è caratteristico dell'infarto miocardico acuto riperfuso?"
+      en: "Which histologic finding is characteristic of a reperfused acute myocardial infarct?"
+    a:
+      it: "La necrosi a bande di contrazione: bande eosinofile trasversali di sarcomeri ipercontratti, dovute all'ingresso massivo di calcio."
+      en: "Contraction band necrosis: transverse eosinophilic bands of hypercontracted sarcomeres caused by massive calcium influx."
+    kind: short
+  - id: ischemia-reperfusion-injury-q4
+    q:
+      it: "Che cosa succede alla cellula quando il poro di transizione di permeabilità mitocondriale resta aperto?"
+      en: "What happens to the cell when the mitochondrial permeability transition pore stays open?"
+    a:
+      it: "Il potenziale di membrana mitocondriale crolla, il mitocondrio si rigonfia, la sintesi di ATP crolla e il citocromo c passa nel citosol, dove può attivare l'apoptosi."
+      en: "The mitochondrial membrane potential collapses, the mitochondrion swells, ATP synthesis falls sharply and cytochrome c enters the cytosol, where it can activate apoptosis."
+    kind: free
+selfExplain:
+  - it: "Perché la rapida correzione del pH intracellulare alla riperfusione peggiora il sovraccarico di calcio?"
+    en: "Why does rapid correction of intracellular pH at reperfusion worsen calcium overload?"
+  - it: "Perché l'ossido nitrico è protettivo in condizioni normali ma dannoso durante la riperfusione?"
+    en: "Why is nitric oxide protective in normal conditions but harmful during reperfusion?"
+  - it: "Perché la durata dell'ischemia stabilisce se la riperfusione salva le cellule, le danneggia o è ormai irrilevante?"
+    en: "Why does the duration of ischemia decide whether reperfusion heals, harms or no longer matters?"
+chain:
+  - pathology:
+      it: "Infarto miocardico riperfuso, emorragico, con necrosi a bande di contrazione"
+      en: "Reperfused myocardial infarct, hemorrhagic, with contraction band necrosis"
+    sign:
+      it: "Occlusione coronarica acuta trattata con trombolisi o angioplastica coronarica"
+      en: "Acute coronary occlusion treated by thrombolysis or coronary intervention"
+    lab:
+      it: "Aumento della troponina cardiaca (necrosi miocardica)"
+      en: "Raised cardiac troponin (myocardial necrosis)"
+images:
+  - id: ischemia-reperfusion-injury-gross-1
+    role: gross
+    pairWith: ischemia-reperfusion-injury-micro-1
+  - id: ischemia-reperfusion-injury-micro-1
+    role: micro
+  - id: ischemia-reperfusion-injury-micro-2
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "1"
+    pages: "31, 42-45, 49"
+  - source: rubin-8e
+    chapter: "7"
+    pages: "337"
+  - source: rubin-8e
+    chapter: "17"
+    pages: "659-660"
+lastUpdated: 2026-11-03
+status: published

@@ -1,0 +1,121 @@
+id: hypertrophy
+module: g01
+tier: core
+kind: process
+names:
+  it: "Ipertrofia"
+  en: "Hypertrophy"
+  eponyms: []
+  synonyms:
+    it: ["Ipertrofia cellulare", "Ipertrofia d'organo", "Ipertrofia fisiologica", "Ipertrofia patologica (compensatoria)", "Ipertrofia concentrica", "Ipertrofia eccentrica", "Cuore d'atleta"]
+    en: ["Cellular hypertrophy", "Organ hypertrophy", "Physiologic hypertrophy", "Pathologic (compensatory) hypertrophy", "Concentric hypertrophy", "Eccentric hypertrophy", "Athlete's heart"]
+  abbreviations: []
+summary:
+  it: "Aumento del volume delle cellule, e quindi dell'organo, in risposta a un maggiore carico di lavoro o a stimoli trofici, con una sintesi proteica che prevale sulla degradazione."
+  en: "Increase in the size of cells, and hence of the organ, in response to greater workload or trophic stimulation, in which protein synthesis outpaces degradation."
+lenses:
+  system: [general, heart, muscle-nerve]
+  process: [cellular-adaptation, proteostasis]
+  pattern: [hypertrophy]
+  presentation: [organomegaly]
+  marker: [laboratory]
+  group: [adaptive]
+learningObjectives:
+  - it: "Definire l'ipertrofia e distinguerla dall'iperplasia, indicando gli organi che crescono soprattutto per ipertrofia."
+    en: "Define hypertrophy and distinguish it from hyperplasia, naming the organs that grow mainly by hypertrophy."
+  - it: "Distinguere l'ipertrofia fisiologica da quella patologica, con esempi nel muscolo scheletrico e nel cuore."
+    en: "Distinguish physiologic from pathologic hypertrophy, with examples in skeletal muscle and the heart."
+  - it: "Spiegare il ruolo dell'asse IGF-1/PI3K/Akt/mTORC1 e dei suoi antagonisti (FOXO, miostatina, Cbl-b) nell'ipertrofia muscolare."
+    en: "Explain the role of the IGF-1/PI3K/Akt/mTORC1 axis and its antagonists (FOXO, myostatin, Cbl-b) in muscle hypertrophy."
+  - it: "Confrontare la risposta delle fibre di tipo I all'allenamento di resistenza aerobica con quella delle fibre di tipo II all'allenamento con carichi elevati."
+    en: "Compare the response of type I fibers to endurance training with that of type II fibers to heavy-load training."
+  - it: "Descrivere l'ipertrofia cardiaca concentrica ed eccentrica, i rispettivi aspetti morfologici e il motivo per cui l'adattamento ha un limite."
+    en: "Describe concentric and eccentric cardiac hypertrophy, their morphology and why the adaptation has a limit."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: hyperplasia
+    note:
+      it: "L'ipertrofia aumenta il volume delle cellule, l'iperplasia il loro numero; spesso coesistono."
+      en: "Hypertrophy increases cell size, hyperplasia cell number; they often coexist."
+  - type: sharesMechanism
+    target: protein-quality-control
+    note:
+      it: "Durante l'ipertrofia la cellula avvia selettivamente al proteasoma le proteine che non le servono più."
+      en: "During hypertrophy the cell selectively sends proteins it no longer needs to the proteasome."
+  - type: prerequisiteOf
+    target: hypertensive-heart-disease
+    note:
+      it: "Il sovraccarico pressorio cronico produce un'ipertrofia concentrica del ventricolo sinistro."
+      en: "Chronic pressure overload produces concentric left ventricular hypertrophy."
+quickCheck:
+  - id: hypertrophy-q1
+    q:
+      it: "In quali organi l'aumento di massa avviene soprattutto per ipertrofia e in quali possono aumentare sia il volume sia il numero delle cellule?"
+      en: "In which organs does mass increase mainly by hypertrophy, and in which can both cell size and cell number increase?"
+    a:
+      it: "Cuore e muscolo scheletrico crescono soprattutto per ipertrofia; nel rene possono aumentare sia il volume sia il numero delle cellule."
+      en: "Heart and skeletal muscle grow mainly by hypertrophy; in the kidney both cell size and cell number can increase."
+    kind: short
+  - id: hypertrophy-q2
+    q:
+      it: "Perché un maratoneta non sviluppa muscoli voluminosi come un sollevatore di pesi?"
+      en: "Why does a marathon runner not develop bulky muscles like a weightlifter?"
+    a:
+      it: "L'allenamento di resistenza aerobica con carichi leggeri aumenta il numero di mitocondri nelle fibre di tipo I (tramite AMPK e PGC-1α) senza aumentare la massa; i carichi elevati fanno ipertrofizzare le fibre di tipo II."
+      en: "Endurance training with light loads adds mitochondria to type I fibers (via AMPK and PGC-1α) without increasing mass; heavy loads make type II fibers hypertrophy."
+    kind: short
+  - id: hypertrophy-q3
+    q:
+      it: "Quali sono i reperti istologici tipici dell'ipertrofia miocardica patologica?"
+      en: "What are the typical histologic findings of pathologic myocardial hypertrophy?"
+    a:
+      it: "Miociti più larghi, con nuclei grandi, ipercromatici e rettangolari («a vagone merci»), e fibrosi interstiziale."
+      en: "Thicker myocytes with large, hyperchromatic, rectangular (\"boxcar\") nuclei, and interstitial fibrosis."
+    kind: short
+  - id: hypertrophy-q4
+    q:
+      it: "Che cosa limita l'utilità dell'ipertrofia cardiaca e come evolve l'ipertrofia concentrica non trattata?"
+      en: "What limits the usefulness of cardiac hypertrophy, and how does untreated concentric hypertrophy evolve?"
+    a:
+      it: "Oltre una certa dimensione l'ossigeno deve diffondere per una distanza eccessiva, dall'interstizio al centro della fibra; se non trattata, l'ipertrofia concentrica evolve verso quella eccentrica, con dilatazione e scompenso cardiaco."
+      en: "Beyond a certain size oxygen must diffuse too far from the interstitium to the center of the fiber; untreated concentric (pressure-overload) hypertrophy progresses to eccentric hypertrophy with dilation and heart failure."
+    kind: free
+selfExplain:
+  - it: "Perché nell'adulto IGF-1 e Akt favoriscono l'ipertrofia soprattutto inibendo l'atrofia? Che ruolo hanno FOXO e mTORC1 in questo equilibrio?"
+    en: "Why do IGF-1 and Akt in adults favor hypertrophy mainly by inhibiting atrophy? What roles do FOXO and mTORC1 play in this balance?"
+  - it: "Come può un cuore ipertrofico, inizialmente compensato, andare incontro a disfunzione diastolica e poi a scompenso?"
+    en: "How can an initially compensated hypertrophic heart develop diastolic dysfunction and then failure?"
+  - it: "Perché il passaggio alla miosina lenta (di tipo fetale) è allo stesso tempo dannoso e adattativo?"
+    en: "Why is the switch to slow (fetal-type) myosin both harmful and adaptive?"
+chain:
+  - pathology:
+      it: "Ipertensione arteriosa cronica con ipertrofia concentrica del ventricolo sinistro"
+      en: "Chronic hypertension with concentric left ventricular hypertrophy"
+    sign:
+      it: "Inizialmente asintomatica; in seguito manifestazioni di disfunzione diastolica e di scompenso cardiaco"
+      en: "Initially silent; later features of diastolic dysfunction and heart failure"
+    lab:
+      it: "BNP plasmatico elevato quando compare lo scompenso; all'autopsia aumento del peso del cuore e nuclei «a vagone merci»"
+      en: "Raised blood BNP once failure develops; at autopsy increased heart weight and boxcar nuclei"
+images:
+  - id: hypertrophy-gross-1
+    role: gross
+    pairWith: hypertrophy-micro-2
+  - id: hypertrophy-micro-1
+    role: micro
+  - id: hypertrophy-micro-2
+    role: micro
+  - id: g01-adaptation-spectrum
+    role: diagram
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "1"
+    pages: "19-25"
+  - source: rubin-8e
+    chapter: "17"
+    pages: "637-640, 663"
+lastUpdated: 2026-11-03
+status: published

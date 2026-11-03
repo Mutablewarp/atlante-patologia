@@ -1,0 +1,596 @@
+entity: apoptosis
+claims:
+  - claimId: apoptosis-c001
+    section: definition
+    statement: "Apoptosis is a caspase-driven, regulated death program that eliminates isolated cells or small clusters amid living tissue."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "41, 45-46" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c002
+    section: definition
+    statement: "Apoptosis is the most thoroughly characterized of the programmed cell death types, in which pre-existing signaling circuits kill the cell."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "45" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c003
+    section: definition
+    statement: "Apoptosis cannot be stopped once started, hence its strict regulation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "46" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c004
+    section: definition
+    statement: "In a healthy adult, apoptosis removes more than a million cells each second, matching the rate at which new cells are made."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "41, 45" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c005
+    section: etiology
+    statement: "During embryogenesis apoptosis removes the pronephros and mesonephros, sex-inappropriate Mullerian or Wolffian ducts and interdigital tissue, and hollows solid primordia into tubes."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "46" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c006
+    section: etiology
+    statement: "Autoreactive lymphocyte clones are eliminated by apoptosis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "46" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c007
+    section: etiology
+    statement: "Intestinal epithelial cells reaching the villus tips die by apoptosis and are shed."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "47" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c008
+    section: etiology
+    statement: "Apoptosis mediates regression of breast hyperplasia after lactation ends and endometrial atrophy after menopause."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "47" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  # verifier note c009: matches rubin-8e p47, but "most spermatozoa" is imprecise; apoptosis mainly culls developing germ cells (spermatogonia/spermatocytes). Fixed 2026-11-03: card now says "developing male germ cells".
+  - claimId: apoptosis-c009
+    section: etiology
+    statement: "Apoptosis removes a large share of developing male germ cells and nearly all (about 99%) of the oocytes a girl is born with."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "47" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c010
+    section: etiology
+    statement: "DNA damage too severe to repair, from replication errors, UV, ionizing radiation or DNA-binding chemicals, leads to apoptosis, with p53 the main sensor."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "47" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c011
+    section: etiology
+    statement: "Virally infected cells tend to undergo apoptosis, restricting viral spread."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "47" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c012
+    section: etiology
+    statement: "Cytotoxic T cells and NK cells kill targets by inserting granzymes through perforin pores, activating apoptotic signaling."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "56" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c013
+    section: etiology
+    statement: "Sustained calcium release from ER stores can induce apoptosis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "51" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c014
+    section: pathogenesis
+    statement: "Caspases are cysteine proteases activated sequentially by conversion from inactive proenzymes."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "47" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c015
+    section: pathogenesis
+    statement: "Roughly fourteen caspases have been identified; around half of them act in apoptotic signaling."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "47" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c016
+    section: pathogenesis
+    statement: "Initiator caspases start the program and the executioners (caspase-3, -6, -7) finish it by broad proteolysis; caspase-3 is the executioner activated most often."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "46-47" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c017
+    section: pathogenesis
+    statement: "Caspase-3 triggers DNA cleavage through caspase-activated DNase and causes cytoskeletal collapse, allowing fragmentation into apoptotic bodies."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "47" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c018
+    section: pathogenesis
+    statement: "Ligands such as TNF-alpha, FasL or TRAIL engage surface receptors whose cytoplasmic death domains dock adaptor proteins forming the DISC."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "47-48" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c019
+    section: pathogenesis
+    statement: "Receptor-bound adaptors activate procaspases 8 and 10, which then activate downstream executioner caspases."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "47-48" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c020
+    section: pathogenesis
+    statement: "TNF receptor activation can also induce NF-kB-driven anti-apoptotic proteins, so the same receptor can signal survival."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "47, 52" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c021
+    section: pathogenesis
+    statement: "The intrinsic pathway responds to intracellular stress through Bcl-2 family proteins at the mitochondrial outer membrane."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "49" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c022
+    section: pathogenesis
+    statement: "In normal mitochondria, Bcl-2, Bcl-xL and Mcl-1 restrain Bax and Bak; the default mitochondrial state favors survival."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "49" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c023
+    section: pathogenesis
+    statement: "Activated BH3-only proteins such as Bim, Bid and Bad dissociate anti-apoptotic partners from Bax/Bak or activate Bax directly."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "49" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c024
+    section: pathogenesis
+    statement: "Liberated Bax and Bak form outer-membrane channels (MAC) through which cytochrome c, SMACs and AIF reach the cytosol."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "49, 52" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c025
+    section: pathogenesis
+    statement: "Apaf-1 bound to cytosolic cytochrome c recruits procaspase-9 into the apoptosome, which generates active caspase-9 that then activates the executioner caspases."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "49, 52" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c026
+    section: pathogenesis
+    statement: "SMACs bind and neutralize IAPs, which otherwise inhibit caspases 3, 7 and 9."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "49, 52" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c027
+    section: pathogenesis
+    statement: "AIF translocates to the nucleus and causes DNA fragmentation independently of caspases."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "49, 52" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c028
+    section: pathogenesis
+    statement: "High calcium, ROS and nitric oxide open the mitochondrial permeability transition pore, contributing to release of mitochondrial death proteins."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "49" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c029
+    section: pathogenesis
+    statement: "Bcl-2 family proteins have up to four BH domains; anti-apoptotic members have BH1-BH2 and often BH4, Bax/Bak have BH1-BH3, and BH3-only members have only BH3."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "49, 51" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c030
+    section: pathogenesis
+    statement: "Under basal conditions Mdm2 polyubiquitinates p53 and targets it for proteasomal degradation, keeping levels low."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "50" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c031
+    section: pathogenesis
+    statement: "Stress-stabilized p53 induces Bax, NOXA and PUMA, represses Bcl-2, Bcl-xL and Mcl-1, and in the cytosol can activate Bax directly."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "50-51" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c032
+    section: pathogenesis
+    statement: "Caspase-8 cleaves Bid to tBid, connecting extrinsic to mitochondrial signaling; granzyme B from cytotoxic lymphocytes likewise cleaves Bid."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "47, 56" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c033
+    section: pathogenesis
+    statement: "PI3K-Akt survival signaling counters apoptosis, for instance by inactivating Bad and activating NF-kB."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "52-53" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c034
+    section: pathogenesis
+    statement: "Dying cells emit find-me chemoattractants and expose eat-me signals like phosphatidylserine and calreticulin, normally on the inner membrane leaflet."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "41" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c035
+    section: pathogenesis
+    statement: "Apoptotic cells soon shed the protective don't-eat-me signals that every viable cell displays."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "41" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c036
+    section: pathogenesis
+    statement: "Professional phagocytes and adjacent epithelial cells or fibroblasts clear apoptotic bodies before membrane integrity fails, avoiding inflammation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "41" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c037
+    section: micro
+    statement: "Apoptosis involves single cells or small groups within viable tissue rather than geographic areas."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "41" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c038
+    section: micro
+    statement: "Apoptotic nuclei condense (pyknosis) and break into fragments (karyorrhexis) while the cell membrane remains intact."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "39, 41" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c073
+    section: micro
+    statement: "Apoptotic cells shrink while their plasma membrane stays intact."
+    sourceRef: { source: rubin-8e, chapter: "11", pages: "513" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c074
+    section: micro
+    statement: "Apoptotic cytoplasm becomes strongly eosinophilic on H&E, as seen in Councilman bodies formed by virus-induced hepatocyte apoptosis."
+    sourceRef: { source: rubin-8e, chapter: "9", pages: "398" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c039
+    section: micro
+    statement: "Organelles segregate, the plasma membrane blebs and the cell breaks into membrane-bound fragments, often anucleate."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "41" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c040
+    section: micro
+    statement: "Apoptotic death does not provoke an inflammatory response."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "41, 54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c041
+    section: micro
+    statement: "Apoptotic cells are illustrated in viral hepatitis liver and erythema multiforme skin."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "41" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c042
+    section: micro
+    statement: "In yellow fever, virus-induced apoptotic hepatocytes become strongly eosinophilic and detach as Councilman bodies."
+    sourceRef: { source: rubin-8e, chapter: "9", pages: "398" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c043
+    section: ancillary
+    statement: "Molecular features of apoptosis include cytochrome c release, caspase-3 activation, CAD-mediated DNA fragmentation and surface phosphatidylserine."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "41, 47, 49" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c044
+    section: ancillary
+    statement: "Effector caspases cleave lamin, alpha-fodrin and PARP."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "48" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c045
+    section: clinical
+    statement: "Loss of p53 allows unchecked mutation accumulation, and Bcl-2 overexpression occurs in some highly aggressive lymphomas."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  # verifier note c046: rubin-8e ch5 p190 names the follicular lymphoma translocation as t(8;14), which is a reference error (correct: t(14;18)). Card text correctly omits it; do not add t(8;14).
+  - claimId: apoptosis-c046
+    section: clinical
+    statement: "In follicular lymphoma a translocation places Bcl-2 under the immunoglobulin heavy-chain promoter, shifting B-cell balance toward survival."
+    sourceRef: { source: rubin-8e, chapter: "5", pages: "190" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c047
+    section: clinical
+    statement: "Many viruses inhibit apoptosis; HPV inactivates p53."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c048
+    section: clinical
+    statement: "Defective apoptosis that fails to remove self-reactive lymphocytes is implicated in autoimmune disease."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "53-54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c049
+    section: clinical
+    statement: "In chronic myeloid leukemia an anti-apoptotic genetic lesion allows granulocytes to accumulate."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "47" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c050
+    section: clinical
+    statement: "In some neurodegenerative diseases accumulated intracellular proteins trigger neuronal apoptosis and loss."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c051
+    section: clinical
+    statement: "Excessive spermatozoa apoptosis contributes to some male infertility."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "47" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c052
+    section: prognosis
+    statement: "Impaired efferocytosis is implicated in cystic fibrosis, bronchiectasis and atherosclerosis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "41" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c053
+    section: prognosis
+    statement: "The apoptosome requires ATP; with exhausted ATP during prolonged MPTP opening, cells die by necrosis instead."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "52" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c054
+    section: differential
+    statement: "Necrosis involves zones of tissue in which cells swell and their membranes break up, and it is followed by inflammation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "41, 54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c055
+    section: differential
+    statement: "Necroptosis is programmed, caspase-independent, uses the RIP1-RIP3 necrosome and MLKL membrane insertion, looks necrotic and is inflammatory."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "45, 54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c056
+    section: differential
+    statement: "Pyroptosis is infection-triggered death that depends on caspase-1, generated by the inflammasome; the cell swells and bursts, releasing DAMPs."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "45, 56" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c057
+    section: differential
+    statement: "Autophagy mainly supports survival under stress; whether it kills cells independently is unresolved."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c058
+    section: high-yield
+    statement: "Apoptosis kills individual cells without inflammation, whereas necrosis affects areas with inflammation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "41, 54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c059
+    section: high-yield
+    statement: "Caspases are cysteine proteases and caspase-3 is the principal executioner."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "47" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c060
+    section: high-yield
+    statement: "The extrinsic pathway runs through Fas/FasL or TNF receptors, the DISC and caspase-8."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "47-48" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c061
+    section: high-yield
+    statement: "In the intrinsic pathway BH3-only proteins release Bax/Bak, cytochrome c exits and the Apaf-1 apoptosome activates caspase-9."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "49, 52" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c062
+    section: high-yield
+    statement: "Bcl-2, Bcl-xL and Mcl-1 are anti-apoptotic; Bax, Bak and BH3-only proteins are pro-apoptotic."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "49" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c063
+    section: high-yield
+    statement: "tBid connects the extrinsic pathway to the intrinsic pathway."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "47" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c064
+    section: high-yield
+    statement: "p53 induces apoptosis after irreparable DNA damage via PUMA, NOXA and Bax."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "49-50" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c065
+    section: high-yield
+    statement: "Externalized phosphatidylserine is an eat-me signal for efferocytosis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "41" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c066
+    section: traps
+    statement: "Pyknosis and nuclear fragmentation occur in both apoptosis and necrosis; extent and inflammation distinguish them."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "41, 54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c067
+    section: traps
+    statement: "The apoptosome needs ATP and severe ATP depletion shifts death to necrosis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "52" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c068
+    section: traps
+    statement: "Bcl-2 is anti-apoptotic while its relatives Bax and Bak are pro-apoptotic."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "49" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c069
+    section: traps
+    statement: "TNF-alpha can induce survival through NF-kB and PI3K as well as death."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "47, 52" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c070
+    section: traps
+    statement: "Necroptosis and pyroptosis are programmed yet lytic and inflammatory forms of cell death."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "45, 54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c071
+    section: traps
+    statement: "AIF and granzymes can cause DNA fragmentation without caspases."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "49, 52, 56" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: apoptosis-c072
+    section: mnemonics
+    statement: "Original mnemonic summarizing single-cell non-inflammatory death, caspase control, intact membrane, phosphatidylserine eat-me signal and the caspase-8/caspase-9 pathways converging on caspase-3."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "41, 47-49" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03

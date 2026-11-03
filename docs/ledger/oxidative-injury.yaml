@@ -1,0 +1,602 @@
+entity: oxidative-injury
+claims:
+  - claimId: oxidative-injury-c001
+    section: definition
+    statement: "Oxidative injury is cell and tissue damage by ROS and related reactive species when their production overwhelms cellular defenses."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "30, 32" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c002
+    section: definition
+    statement: "Incompletely reduced oxygen species are able to injure almost every class of biomolecule they encounter."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "30" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c003
+    section: definition
+    statement: "ROS serve as physiologic signaling intermediates and as microbicidal effectors of phagocytes."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "31" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c004
+    section: etiology
+    statement: "Oxidant stressors arise from both endogenous metabolism and exogenous exposures."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "30" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c005
+    section: etiology
+    statement: "Electron leaks in the mitochondrial electron transport chain, involving coenzyme Q, reduce O2 to superoxide."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "31" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c006
+    section: etiology
+    statement: "In normal cells roughly 1-3% of mitochondrial oxygen ends up as ROS."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "43" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c007
+    section: etiology
+    statement: "Cytochrome P450 mixed-function oxygenases and peroxisomal oxidases are sources of ROS."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "31" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c008
+    section: etiology
+    statement: "Phagocyte NADPH oxidase produces superoxide in the respiratory burst; myeloperoxidase converts H2O2 to hypochlorous acid/hypochlorite."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "31" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c009
+    section: etiology
+    statement: "Xanthine oxidase activity rises in ischemic endothelium and, when oxygen returns, oxidizes ATP-derived purines producing superoxide."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c010
+    section: etiology
+    statement: "Ionizing radiation generates hydroxyl radicals by radiolysis of water."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "31" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c011
+    section: etiology
+    statement: "Ferrous iron or cuprous copper converts H2O2 to hydroxyl radical (Fenton reaction)."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "31" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c012
+    section: etiology
+    statement: "Heavy metals, xenobiotics and many drugs are oxidant or electrophilic stressors."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "30" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c013
+    section: etiology
+    statement: "Excess oxygen, including oxygen therapy, is listed as a source of activated oxygen causing cell injury."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "31" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c014
+    section: pathogenesis
+    statement: "Full reduction of O2 to water needs four electrons; one, two and three electron transfers yield superoxide, hydrogen peroxide and hydroxyl radical."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "30-31" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c015
+    section: pathogenesis
+    statement: "Superoxide does not diffuse far from its origin and gives rise to other ROS."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c016
+    section: pathogenesis
+    statement: "H2O2 is not very injurious by itself but is membrane permeable and diffuses widely."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19, 31" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c017
+    section: pathogenesis
+    statement: "Hydroxyl radical is the most reactive ROS and the main intracellular attacker of macromolecules."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19, 32" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c018
+    section: pathogenesis
+    statement: "Hydroxyl radical forms via the Fenton reaction (H2O2 with Fe2+) and the Haber-Weiss reaction (superoxide with H2O2)."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "31" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c019
+    section: pathogenesis
+    statement: "Nitric oxide reacts with superoxide to form peroxynitrite, which damages lipids, proteins and DNA."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "32" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c020
+    section: pathogenesis
+    statement: "Hypochlorous acid/hypochlorite from neutrophil myeloperoxidase kills microorganisms and can kill host cells if released extracellularly."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "31" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c021
+    section: pathogenesis
+    statement: "Lipid peroxidation: OH radical abstracts hydrogen from unsaturated fatty acids, the lipid radical reacts with O2 and the peroxyl radical propagates a chain reaction."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "32" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c022
+    section: pathogenesis
+    statement: "Lipid peroxides are unstable, break down into low-molecular-weight aldehydes, and membrane integrity is impaired."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "32" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c023
+    section: pathogenesis
+    statement: "ROS peroxidize cardiolipin, a mitochondrial phospholipid rich in unsaturated fatty acids, impairing the electron transport chain and ATP production."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "43" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c024
+    section: pathogenesis
+    statement: "Sulfur- and nitrogen-containing amino acids are especially vulnerable; oxidized proteins fragment, cross-link and aggregate."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "32" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c025
+    section: pathogenesis
+    statement: "Insoluble oxidized protein aggregates sequester Fe2+, which generates more ROS and enlarges the aggregates."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "37" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c026
+    section: pathogenesis
+    statement: "Hydroxyl radicals attack sugars, giving reactive intermediates that modify proteins into advanced glycation end-products."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "32" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c027
+    section: pathogenesis
+    statement: "Hydroxyl radicals cause DNA strand breaks, base modification and cross-links; excessive damage leads to mutation or cell death."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "32" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c028
+    section: pathogenesis
+    statement: "Oxidative stress damages extracellular matrix proteins (collagen, elastin, fibronectin, laminin) and basement membranes."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "34" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c029
+    section: pathogenesis
+    statement: "How well antioxidant defenses work largely decides whether ROS exposure causes injury."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "32" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c030
+    section: pathogenesis
+    statement: "SODs convert superoxide to H2O2 (Cu/Zn SOD cytosolic, MnSOD mitochondrial); catalase (peroxisomes) and GPX (cytosol, mitochondria) reduce H2O2 to water."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "30-31, 33" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c031
+    section: pathogenesis
+    statement: "Peroxiredoxins (regenerated by thioredoxins), NQO1 and heme oxygenase are additional protective enzymes."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "33" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c032
+    section: pathogenesis
+    statement: "GSH is the most abundant endogenous antioxidant; GPX oxidizes it to GSSG, which is regenerated by GSH reductase or exported."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "33" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c033
+    section: pathogenesis
+    statement: "Vitamin E (fat-soluble) halts radical chain reactions within membranes; vitamin C (water-soluble) quenches ROS and restores vitamin E; lipid-soluble vitamin A precursors also break radical chains."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "33" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c034
+    section: pathogenesis
+    statement: "Extracellular antioxidants include albumin, GSH, ascorbate, alpha-tocopherol and an extracellular SOD."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "34" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c035
+    section: pathogenesis
+    statement: "Nrf2 signaling is the most potent single activator of antioxidant defenses."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "32-33" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c036
+    section: pathogenesis
+    statement: "Unstressed Nrf2 is bound in the cytosol to Keap1 with a CUL3 E3 ubiquitin ligase and degraded by proteasomes."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "33-34" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c037
+    section: pathogenesis
+    statement: "Under stress, p53-induced sestrins and p62 free Nrf2, and p62 mediates autophagic degradation of Keap1."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "33-34" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c038
+    section: pathogenesis
+    statement: "Nuclear Nrf2 activates genes with antioxidant response elements, e.g. NQO1, glutathione S-transferases, peroxiredoxins and ferritins."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "33-35" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c039
+    section: pathogenesis
+    statement: "H2O2 oxidizes active-site cysteines of protein tyrosine phosphatases, inactivating them and increasing kinase signaling; MAP kinases activate AP-1, NF-kB and Nrf2."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "33-35" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c040
+    section: pathogenesis
+    statement: "With low oxidant stress p53 maintains antioxidant gene expression; with severe stress it activates genes that impair defenses and lead to cell death."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "34" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c041
+    section: micro
+    statement: "Acetaminophen-injured centrilobular liver cells are coagulatively necrotic or hydropically swollen, some with small lipid droplets, and the inflammatory infiltrate is scant."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c042
+    section: micro
+    statement: "Lipofuscin is a golden-brown pigment of peroxidized lipids and oxidized cross-linked proteins, accumulating with age mainly in postmitotic or rarely dividing cells (neurons, cardiac myocytes, hepatocytes)."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c043
+    section: clinical
+    statement: "During reperfusion ROS rise from xanthine oxidase, a sudden increase in mitochondrial electron transport, and recruited neutrophils."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c044
+    section: clinical
+    statement: "Reperfusion injury can be responsible for as much as half of final myocardial infarct size."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "43" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c045
+    section: clinical
+    statement: "Centrilobular necrosis after acetaminophen overdose results from a toxic drug metabolite using up hepatocyte glutathione, so peroxides are left unneutralized."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c046
+    section: clinical
+    statement: "Acetaminophen toxicity is the leading cause of acute liver failure in the US."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c047
+    section: clinical
+    statement: "Chronic granulomatous disease is hereditary NADPH oxidase deficiency; phagocytes cannot produce superoxide and H2O2 and patients have recurrent infections."
+    sourceRef: { source: rubin-8e, chapter: "2", pages: "74" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c048
+    section: clinical
+    statement: "High inspired oxygen is toxic to developing alveoli and contributes to bronchopulmonary dysplasia in premature infants."
+    sourceRef: { source: rubin-8e, chapter: "6", pages: "314" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c049
+    section: clinical
+    statement: "Ionizing radiation, chemical carcinogenesis, aging and degenerative diseases are associated with activated oxygen species."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "31" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c050
+    section: clinical
+    statement: "Impaired antioxidant defenses, especially in non-dividing cells, allow protein oxidation and misfolding with formation of toxic aggregates."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "37" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c051
+    section: prognosis
+    statement: "With mild to moderate oxidative stress, exposed hydrophobic regions of oxidized proteins are recognized and degraded by 20S proteasomes."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "37" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c052
+    section: prognosis
+    statement: "Increased calcium and mitochondrial ROS open the MPTP, dissipating membrane potential and triggering mitochondrial cell death programs."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c053
+    section: prognosis
+    statement: "Oxidant stress can lead to cellular dysfunction, malignant transformation and death."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "30" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c054
+    section: differential
+    statement: "In ischemia the primary event is ATP loss with failure of ion pumps; ROS production is a contributing injury."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42-43" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c055
+    section: differential
+    statement: "Ischemia promotes ROS generation that is greatly magnified on reperfusion."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42-44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c056
+    section: differential
+    statement: "Phagocytes generate ROS to destroy phagocytosed microbes."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "31" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c057
+    section: differential
+    statement: "Abnormal protein aggregates may arise from genetic mutations or from oxidative/acquired damage to normal proteins."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "37" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c058
+    section: high-yield
+    statement: "Stepwise reduction of O2 yields superoxide, hydrogen peroxide and hydroxyl radical."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "30-31" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c059
+    section: high-yield
+    statement: "Hydroxyl radical is the most reactive ROS and forms from H2O2 and Fe2+ by the Fenton reaction."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19, 31-32" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c060
+    section: high-yield
+    statement: "Lipid peroxidation is a self-propagating chain reaction; vitamin E terminates it in membranes."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "32-33" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c061
+    section: high-yield
+    statement: "SOD converts superoxide to H2O2; catalase (peroxisomes) and GPX (cytosol, mitochondria) convert H2O2 to water."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "31, 33" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c062
+    section: high-yield
+    statement: "GSH is the most abundant endogenous antioxidant."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "33" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c063
+    section: high-yield
+    statement: "Nrf2 released from Keap1 activates genes with antioxidant response elements."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "33-34" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c064
+    section: high-yield
+    statement: "Xanthine oxidase and neutrophils generate ROS during reperfusion."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c065
+    section: high-yield
+    statement: "Acetaminophen depletes glutathione and causes centrilobular necrosis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c066
+    section: high-yield
+    statement: "NADPH oxidase deficiency causes chronic granulomatous disease."
+    sourceRef: { source: rubin-8e, chapter: "2", pages: "74" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c067
+    section: high-yield
+    statement: "Lipofuscin, the wear-and-tear pigment, consists of peroxidized lipids and oxidized proteins."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c068
+    section: traps
+    statement: "H2O2 alone has low toxicity; its hazard lies in Fe2+-driven conversion to hydroxyl radical."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19, 31" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c069
+    section: traps
+    statement: "NO is protective (vasodilation, reduced iron uptake) but reacts with superoxide to form peroxynitrite."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "32, 44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c070
+    section: traps
+    statement: "Catalase is located mainly in peroxisomes; GPX acts in cytosol and mitochondria."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "31, 33" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c071
+    section: traps
+    statement: "Oxygen-dependent microbial killing is essential, as shown by chronic granulomatous disease."
+    sourceRef: { source: rubin-8e, chapter: "2", pages: "74" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c072
+    section: traps
+    statement: "Under severe oxidant stress p53 impairs antioxidant defenses and promotes cell death."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "34" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c073
+    section: mnemonics
+    statement: "One, two and three electron reductions of O2 give superoxide, peroxide and hydroxyl radical; four give water."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "30-31" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c074
+    section: mnemonics
+    statement: "SOD makes H2O2 from superoxide; catalase and GPX convert it to water."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "31, 33" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: oxidative-injury-c075
+    section: mnemonics
+    statement: "ROS targets include lipids, proteins, DNA and sugars."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "32" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03

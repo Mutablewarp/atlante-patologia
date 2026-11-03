@@ -1,0 +1,144 @@
+id: metaplasia
+module: g01
+tier: core
+kind: process
+names:
+  it: "Metaplasia"
+  en: "Metaplasia"
+  eponyms: ["Barrett"]
+  synonyms:
+    it: ["Metaplasia squamosa", "Metaplasia malpighiana", "Metaplasia intestinale", "Metaplasia ghiandolare (colonnare)", "Metaplasia ossea"]
+    en: ["Squamous metaplasia", "Intestinal metaplasia", "Glandular (columnar) metaplasia", "Osseous metaplasia"]
+  abbreviations: []
+summary:
+  it: "Sostituzione reversibile di un tipo cellulare maturo con un altro, più resistente a uno stimolo cronico; protegge il tessuto ma ne compromette la funzione e può diventare il terreno su cui insorgono displasia e carcinoma."
+  en: "Reversible replacement of one mature cell type by another that better withstands a chronic stimulus; it protects the tissue but costs function and can be the soil for dysplasia and carcinoma."
+lenses:
+  system: [general, respiratory, gastrointestinal, female-genital, urinary-male-genital]
+  process: [cellular-adaptation, chronic-inflammation, neoplasia]
+  pattern: [metaplasia]
+  presentation: [incidental-finding]
+  marker: []
+  group: [adaptive, inflammatory, nutritional]
+learningObjectives:
+  - it: "Definire la metaplasia e collocarla tra le risposte adattative al danno persistente."
+    en: "Define metaplasia and place it among the adaptive responses to persistent injury."
+  - it: "Descrivere gli esempi principali: metaplasia squamosa bronchiale e cervicale, esofago di Barrett, metaplasia intestinale gastrica, cistite ghiandolare."
+    en: "Describe the main examples: bronchial and cervical squamous metaplasia, Barrett esophagus, gastric intestinal metaplasia, cystitis glandularis."
+  - it: "Spiegare il ruolo delle cellule staminali/di riserva e il prezzo funzionale della metaplasia."
+    en: "Explain the role of stem/reserve cells and the functional cost of metaplasia."
+  - it: "Distinguere la metaplasia dalla displasia e dall'iperplasia."
+    en: "Distinguish metaplasia from dysplasia and hyperplasia."
+  - it: "Spiegare perché la metaplasia, pur essendo reversibile, aumenta il rischio di carcinoma, prendendo come esempio la sequenza Barrett–adenocarcinoma."
+    en: "Explain why metaplasia is reversible yet raises cancer risk, using the Barrett–adenocarcinoma sequence."
+prerequisites: [hyperplasia]
+relations:
+  - type: prerequisiteOf
+    target: dysplasia
+    note:
+      it: "La displasia può insorgere nell'epitelio metaplastico, come nel bronco del fumatore o nell'esofago di Barrett."
+      en: "Dysplasia can arise in metaplastic epithelium, as in the smoker's bronchus or Barrett esophagus."
+  - type: differentialOf
+    target: hyperplasia
+    note:
+      it: "Nell'iperplasia aumenta il numero di cellule dello stesso tipo; nella metaplasia cambia il tipo cellulare."
+      en: "Hyperplasia adds cells of the same type; metaplasia changes the cell type."
+  - type: prerequisiteOf
+    target: barrett-esophagus
+    note:
+      it: "L'esofago di Barrett è una metaplasia intestinale dell'esofago distale causata dal reflusso cronico."
+      en: "Barrett esophagus is intestinal metaplasia of the lower esophagus caused by chronic reflux."
+quickCheck:
+  - id: metaplasia-q1
+    q:
+      it: "Qual è la forma più frequente di metaplasia e dove la si osserva tipicamente?"
+      en: "What is the most common type of metaplasia and where is it typically seen?"
+    a:
+      it: "La metaplasia squamosa di un epitelio colonnare/ghiandolare, per esempio nei bronchi dei fumatori e nell'endocervice."
+      en: "Squamous metaplasia of a columnar/glandular epithelium, for example in the bronchi of smokers and in the endocervix."
+    kind: short
+  - id: metaplasia-q2
+    q:
+      it: "Quale reperto istologico è indispensabile per la diagnosi di esofago di Barrett (definizione statunitense/ACG)?"
+      en: "Which histologic finding is required to diagnose Barrett esophagus (US/ACG definition)?"
+    a:
+      it: "Un epitelio «specializzato» con cellule caliciformi (metaplasia intestinale) al posto dell'epitelio squamoso."
+      en: "\"Specialized\" epithelium with goblet cells (intestinal metaplasia) replacing the squamous lining."
+    kind: short
+  - id: metaplasia-q3
+    q:
+      it: "Che cosa succede alla metaplasia squamosa bronchiale quando il paziente smette di fumare?"
+      en: "What happens to bronchial squamous metaplasia when the patient stops smoking?"
+    a:
+      it: "Di solito regredisce e l'epitelio torna colonnare, perché la metaplasia è in genere reversibile."
+      en: "It usually regresses and the lining returns to columnar, because metaplasia is generally reversible."
+    kind: short
+  - id: metaplasia-q4
+    q:
+      it: "Perché una metaplasia «protettiva» non è innocua?"
+      en: "Why is a \"protective\" metaplasia not harmless?"
+    a:
+      it: "Perché il nuovo epitelio perde alcune funzioni (produzione di muco, clearance ciliare) e nelle aree metaplastiche possono insorgere displasia e carcinoma."
+      en: "Because the new epithelium loses functions (mucus, ciliary clearance) and because dysplasia and carcinoma can arise in metaplastic areas."
+    kind: free
+selfExplain:
+  - it: "Perché nell'esofago di Barrett un epitelio ghiandolare è più adatto di quello squamoso, mentre nel bronco del fumatore accade il contrario?"
+    en: "Why does glandular epithelium suit the esophagus in Barrett esophagus, while the opposite switch happens in the smoker's bronchus?"
+  - it: "In che modo la proliferazione continua in un'area metaplastica favorisce la comparsa di mutazioni e di displasia?"
+    en: "How does continuous proliferation in a metaplastic field favor mutations and dysplasia?"
+  - it: "Perché la carenza di vitamina A può causare sia infezioni respiratorie sia cecità?"
+    en: "Why can vitamin A deficiency cause both respiratory infections and blindness?"
+chain:
+  - pathology:
+      it: "Esofago di Barrett (metaplasia intestinale da reflusso gastroesofageo cronico)"
+      en: "Barrett esophagus (intestinal metaplasia from chronic gastroesophageal reflux)"
+    sign:
+      it: "Sintomi da reflusso gastroesofageo, che però spesso mancano"
+      en: "Reflux symptoms, although often absent"
+    lab:
+      it: "Endoscopia: mucosa rosa salmone; biopsia: epitelio con cellule caliciformi"
+      en: "Endoscopy: salmon-pink mucosa; biopsy: epithelium with goblet cells"
+  - pathology:
+      it: "Metaplasia squamosa da carenza di vitamina A"
+      en: "Squamous metaplasia from vitamin A deficiency"
+    sign:
+      it: "Xeroftalmia, cheratomalacia, broncopolmoniti ricorrenti"
+      en: "Xerophthalmia, keratomalacia, recurrent bronchopneumonia"
+    lab:
+      it: "Metaplasia squamosa della congiuntiva e delle vie aeree"
+      en: "Squamous metaplasia of conjunctiva and airways"
+images:
+  - id: metaplasia-micro-1
+    role: micro
+  - id: metaplasia-micro-2
+    role: micro
+  - id: metaplasia-micro-3
+    role: micro
+  - id: g01-adaptation-spectrum
+    role: diagram
+reviewStatus: ai-generated-unreviewed
+editionDependent: true
+editionNote:
+  it: "Gli intervalli di sorveglianza e le terapie dell'esofago di Barrett seguono le linee guida ACG 2016 riportate nella fonte e possono cambiare con aggiornamenti successivi."
+  en: "Barrett esophagus surveillance intervals and treatment follow the ACG 2016 guidelines cited in the source and may change with later updates."
+sources:
+  - source: rubin-8e
+    chapter: "1"
+    pages: "7, 25, 27-29"
+  - source: rubin-8e
+    chapter: "8"
+    pages: "382"
+  - source: rubin-8e
+    chapter: "16"
+    pages: "618"
+  - source: rubin-8e
+    chapter: "19"
+    pages: "771-772, 779, 781"
+  - source: rubin-8e
+    chapter: "23"
+    pages: "983"
+  - source: rubin-8e
+    chapter: "24"
+    pages: "1028-1029"
+lastUpdated: 2026-11-03
+status: published

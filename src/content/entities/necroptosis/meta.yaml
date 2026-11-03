@@ -1,0 +1,97 @@
+id: necroptosis
+module: g01
+tier: extended
+kind: process
+names:
+  it: "Necroptosi"
+  en: "Necroptosis"
+  eponyms: []
+  synonyms:
+    it: ["Necrosi programmata"]
+    en: ["Programmed necrosis"]
+  abbreviations: []
+summary:
+  it: "Morte cellulare programmata, indipendente dalle caspasi, che ha l'aspetto della necrosi: RIP1 (RIPK1) e RIP3 (RIPK3) formano il necrosoma, MLKL rompe le membrane e il rilascio di DAMP accende l'infiammazione."
+  en: "Caspase-independent programmed cell death that looks like necrosis: RIP1 (RIPK1) and RIP3 (RIPK3) build the necrosome, MLKL breaches membranes, and released DAMPs ignite inflammation."
+lenses:
+  system: [general]
+  process: [cell-death, regulated-cell-death, necrosis]
+  pattern: [nuclear-changes]
+  presentation: []
+  marker: [molecular]
+  group: [inflammatory, infectious]
+learningObjectives:
+  - it: "Definire la necroptosi come forma di necrosi regolata e distinguerla dalla necrosi classica e dall'apoptosi per meccanismo e morfologia."
+    en: "Define necroptosis as a form of regulated necrosis and distinguish it from classical necrosis and apoptosis by mechanism and morphology."
+  - it: "Descrivere la sequenza TNFR1 → TRADD → RIP1/RIP3 (necrosoma) → MLKL e i danni a valle (Ca2+, calpaine, ROS, AIF)."
+    en: "Describe the sequence TNFR1 → TRADD → RIP1/RIP3 (necrosome) → MLKL and the downstream damage (Ca2+, calpains, ROS, AIF)."
+  - it: "Spiegare perché la caspasi-8 determina la scelta tra apoptosi e necroptosi e perché i virus che bloccano le caspasi smascherano la necroptosi."
+    en: "Explain why caspase-8 decides between apoptosis and necroptosis and why viruses that block caspases unmask it."
+  - it: "Elencare i ruoli fisiologici e le malattie in cui la necroptosi è coinvolta."
+    en: "List the physiologic roles of necroptosis and the diseases in which it is involved."
+prerequisites: [apoptosis]
+relations:
+  - type: sharesMechanism
+    target: apoptosis
+    note:
+      it: "Stessi recettori di morte e stesso snodo, la caspasi-8: se è attiva taglia RIP1 e prevale l'apoptosi; se è bloccata si forma il necrosoma."
+      en: "Same death receptors and the same switch, caspase-8: when active it cleaves RIP1 and apoptosis wins; when blocked the necrosome forms."
+quickCheck:
+  - id: necroptosis-q1
+    q:
+      it: "Quali due proteine formano il necrosoma e quale effettore attivano?"
+      en: "Which two proteins form the necrosome, and which effector do they activate?"
+    a:
+      it: "RIP1 e RIP3 (RIPK1/RIPK3); attivano MLKL, che si inserisce nelle membrane e ne distrugge l'integrità."
+      en: "RIP1 and RIP3 (RIPK1/RIPK3); they activate MLKL, which inserts into membranes and destroys their integrity."
+    kind: short
+  - id: necroptosis-q2
+    q:
+      it: "Quale caspasi impedisce la necroptosi e in che modo?"
+      en: "Which caspase prevents necroptosis, and how?"
+    a:
+      it: "La caspasi-8, che taglia RIP1 e così impedisce la formazione del necrosoma."
+      en: "Caspase-8, which cleaves RIP1 and so prevents the necrosome from forming."
+    kind: short
+  - id: necroptosis-q3
+    q:
+      it: "Perché la necroptosi è una difesa utile contro i virus?"
+      en: "Why is necroptosis a useful defense against viruses?"
+    a:
+      it: "Molti virus producono inibitori delle caspasi che bloccano l'apoptosi; la cellula infetta può comunque uccidersi per una via indipendente dalle caspasi, limitando la diffusione del virus."
+      en: "Many viruses make caspase inhibitors that block apoptosis; the infected cell can still kill itself through a caspase-independent route, limiting viral spread."
+    kind: short
+  - id: necroptosis-q4
+    q:
+      it: "Al microscopio ottico, come si distingue una cellula in necroptosi da una cellula in necrosi classica?"
+      en: "Under the light microscope, how do you tell a necroptotic cell from a cell in classical necrosis?"
+    a:
+      it: "Non si distingue: la morfologia è la stessa (rigonfiamento, rottura della membrana, picnosi, infiammazione); la differenza sta nel meccanismo, che è programmato."
+      en: "You cannot: the morphology is the same (swelling, membrane rupture, pyknosis, inflammation); the difference lies in the mechanism, which is programmed."
+    kind: free
+selfExplain:
+  - it: "Perché una morte cellulare «programmata» come la necroptosi provoca infiammazione, mentre l'apoptosi di solito no?"
+    en: "Why does a 'programmed' death such as necroptosis cause inflammation, while apoptosis usually does not?"
+  - it: "In che modo bloccare l'apoptosi in una cellula tumorale può spingerla verso la necroptosi?"
+    en: "How can blocking apoptosis in a tumor cell push it toward necroptosis?"
+  - it: "In che modo l'attivazione di RIP3 porta a una crisi bioenergetica, attraverso il calcio, i mitocondri e il ferro?"
+    en: "How does RIP3 activation lead to a bioenergetic crisis through calcium, mitochondria and iron?"
+chain: []
+images:
+  - id: necroptosis-micro-1
+    role: micro
+  - id: necroptosis-micro-2
+    role: micro
+  - id: necroptosis-micro-3
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "1"
+    pages: "42, 45-47, 54-55"
+  - source: rubin-8e
+    chapter: "5"
+    pages: "199"
+lastUpdated: 2026-11-03
+status: published

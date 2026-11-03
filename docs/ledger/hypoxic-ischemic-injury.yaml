@@ -1,0 +1,586 @@
+entity: hypoxic-ischemic-injury
+claims:
+  - claimId: hypoxic-ischemic-injury-c001
+    section: definition
+    statement: "Ischemia means reduced or absent blood flow, leaving cells short of the oxygen they need."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "4, 42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c002
+    section: definition
+    statement: "Ischemia withholds glucose and other nutrients as well as oxygen, and metabolic wastes such as CO2 accumulate."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c003
+    section: definition
+    statement: "Short ischemia causes damage that cells can recover from; long ischemia causes irreversible injury and death, forming a single spectrum."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "4, 42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c004
+    section: definition
+    statement: "Ischemic necrosis is the most clinically relevant necrosis because it causes both myocardial infarction and stroke, the leading causes of death in Western countries."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c005
+    section: etiology
+    statement: "Ischemia most often results from blocked arterial inflow, such as coronary occlusion."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42-43" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c071
+    section: etiology
+    statement: "Venous as well as arterial occlusion can cause infarction, producing a red (hemorrhagic) infarct."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "337" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c072
+    section: etiology
+    statement: "Myocardial ischemia can result from prolonged supply-demand imbalance without fixed occlusion, e.g. hypotension, anemia, arrhythmias or coronary spasm."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "655" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c006
+    section: etiology
+    statement: "Cardiac myocytes and neurons have high energy use and small energy stores, so loss of oxygen and fuel is especially harmful to them."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c007
+    section: etiology
+    statement: "Longer ischemia leads to irreversible injury, whereas short periods may be survived."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "4, 44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c008
+    section: pathogenesis
+    statement: "Extracellular Na+ and Ca2+ greatly exceed intracellular levels, while K+ is higher inside the cell."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c009
+    section: pathogenesis
+    statement: "Ion gradients depend on channels, pumps, exchangers, an intact plasma membrane and abundant ATP."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c010
+    section: pathogenesis
+    statement: "Steps of ischemic myocyte death may be simultaneous or sequential."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c011
+    section: pathogenesis
+    statement: "Reduced oxygen blocks ATP production and mitochondrial oxidation of pyruvate."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c012
+    section: pathogenesis
+    statement: "Pyruvate is converted to lactate by anaerobic glycolysis, and lactate accumulation acidifies the cytosol."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c013
+    section: pathogenesis
+    statement: "Ischemia causes loss of glycogen stores."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c014
+    section: pathogenesis
+    statement: "ATP shortage impairs the Na+/K+ exchanger and Na+ accumulates."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c015
+    section: pathogenesis
+    statement: "Acidosis activates the normally quiescent Na+/H+ exchanger, exporting H+ in exchange for Na+ and raising intracellular sodium."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c016
+    section: pathogenesis
+    statement: "Retained Na+ obliges water to enter to keep isosmotic conditions, so the cell swells."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c017
+    section: pathogenesis
+    statement: "Increased intracellular Na+ activates the Na+/Ca2+ exchanger, and the ATP-dependent calcium pump cannot clear the extra Ca2+."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c018
+    section: pathogenesis
+    statement: "Cytosolic Ca2+ is about 10^-7 M versus millimolar (10^-3 M) extracellular levels, creating a large gradient."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c019
+    section: pathogenesis
+    statement: "Raised Ca2+ activates PLA2, degrading membrane phospholipids and releasing free fatty acids and lysophospholipids."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c020
+    section: pathogenesis
+    statement: "Lysophospholipids solubilize membranes like detergents and impair ion channels and pumps."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c021
+    section: pathogenesis
+    statement: "Calcium-activated proteases disrupt cytoskeleton-membrane attachments, producing membrane blebs."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "43" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c022
+    section: pathogenesis
+    statement: "During ischemia mitochondria generate more ROS because detoxification is damaged and the ETC is impaired."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "43" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c023
+    section: pathogenesis
+    statement: "ROS peroxidize cardiolipin, a mitochondrial phospholipid with many unsaturated fatty acids, impairing the ETC and ATP production."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "43" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c024
+    section: pathogenesis
+    statement: "Ischemia causes sustained MPTP opening; loss of cytochrome c lowers ATP synthesis and may trigger apoptosis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "43" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c025
+    section: pathogenesis
+    statement: "A cell dies when it can no longer keep its metabolism going."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "43" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c026
+    section: pathogenesis
+    statement: "There is no sharply defined moment at which reversible injury becomes irreversible."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3, 43" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c027
+    section: pathogenesis
+    statement: "With prolonged ischemia, membrane injury pushes the cell past the point of no return so that reflow cannot save it."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c028
+    section: pathogenesis
+    statement: "Calcium entry through a breached plasma membrane is a decisive step in ischemic cell death."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c029
+    section: gross
+    statement: "Interruption of blood flow may result in infarction."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c030
+    section: gross
+    statement: "Myocardial infarcts from persistent occlusion are pale and grossly apparent only after about 12 hours; reperfused infarcts are hemorrhagic."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "659" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c031
+    section: micro
+    statement: "In hydropic swelling the cell enlarges, cytoplasm is pale and the nucleus stays normally situated."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c032
+    section: micro
+    statement: "Reversible injury shows distended ER cisternae and polysomes detached from rough ER."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3-4" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c033
+    section: micro
+    statement: "Mitochondria swell in acute ischemic injury with lower matrix density and less prominent cristae; this is reversible on recovery."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3-4" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c034
+    section: micro
+    statement: "Plasma membrane blebs can detach without impairing viability."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c035
+    section: micro
+    statement: "Reversible nuclear injury shows segregation of fibrillar and granular nucleolar components."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c036
+    section: micro
+    statement: "Necrotic cytoplasm is more eosinophilic due to rapid degradation of hematoxylin-binding cytoplasmic RNA."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "38-39" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c037
+    section: micro
+    statement: "Nuclear changes of necrosis are pyknosis, karyorrhexis and karyolysis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c038
+    section: micro
+    statement: "Dead cells show swollen and calcified mitochondria and plasma membrane discontinuities."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c039
+    section: micro
+    statement: "The cell outline is maintained shortly after death, before enzymatic lysis disintegrates the cell."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "38-39" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c040
+    section: micro
+    statement: "Contraction band necrosis results from massive Ca2+ influx and shows thick transverse eosinophilic bands of hypercontracted sarcomeres, especially in reperfused infarcts."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "659-660" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c041
+    section: clinical
+    statement: "Repetitive angina can occur without infarction; ischemia can result in myocardial infarction."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42, 44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c042
+    section: clinical
+    statement: "Cerebral artery occlusion causes coagulative necrosis followed by rapid liquefaction that can leave a persistent cavity or cyst."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c043
+    section: clinical
+    statement: "Enzymes and mediators released by necrotic cells induce inflammation and can injure nearby viable cells."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c044
+    section: diagnosis
+    statement: "A rise in serum cardiac troponin (I or T) or MB-CK, released from dead myocytes, indicates myocardial necrosis."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "660" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c045
+    section: diagnosis
+    statement: "Cardiac troponin (I or T) is the most widely assayed biomarker and is highly specific for cardiac muscle."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "660" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c073
+    section: diagnosis
+    statement: "Diagnosing myocardial infarction requires a rise and/or fall of the cardiac biomarker within the time frame of a compatible clinical event."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "660" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c046
+    section: prognosis
+    statement: "The degree of cell injury depends on the duration of ischemia."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c047
+    section: prognosis
+    statement: "When coronary flow is interrupted for under 30 minutes, restored blood supply allows recovery."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c048
+    section: prognosis
+    statement: "After short ischemia, reperfusion completely restores structure and function."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c049
+    section: prognosis
+    statement: "With longer ischemia, lethal injury occurs during reperfusion; in the heart reperfusion injury may account for up to half of final infarct size."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "43-44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c050
+    section: prognosis
+    statement: "Lethal injury can develop during ischemia itself, requiring a longer ischemic period, independent of reperfusion."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c051
+    section: prognosis
+    statement: "Repeated transient sublethal ischemia (e.g. repetitive angina) induces ischemic preconditioning, limiting necrosis after later prolonged ischemia."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c052
+    section: prognosis
+    statement: "HIF-1alpha contributes to preconditioning by inducing genes that limit ATP loss, calcium accumulation and ROS generation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "45" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c053
+    section: differential
+    statement: "Hydropic swelling is reversible injury with a normally situated nucleus."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c054
+    section: differential
+    statement: "Coagulative necrosis shows eosinophilic cytoplasm and pyknosis, karyorrhexis or karyolysis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "38-39" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c055
+    section: differential
+    statement: "Apoptosis affects single cells among viable cells, with nuclear condensation inside an intact membrane and no inflammatory reaction."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "41" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c056
+    section: differential
+    statement: "Reperfusion adds injury through extra ROS from returning oxygen and exacerbated Ca2+ overload."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "43-44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c057
+    section: high-yield
+    statement: "Lack of oxygen blocks aerobic ATP production."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c058
+    section: high-yield
+    statement: "Anaerobic glycolysis generates lactate and lowers intracellular pH."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c059
+    section: high-yield
+    statement: "Na+/K+ pump failure and Na+/H+ exchange load the cell with Na+, and water follows."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3, 42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c060
+    section: high-yield
+    statement: "Excess Na+ activates the Na+/Ca2+ exchanger and Ca2+ accumulates."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c061
+    section: high-yield
+    statement: "Ca2+ activates PLA2 and proteases that damage membranes and cytoskeleton."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42-43" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c062
+    section: high-yield
+    statement: "Mitochondrial injury involves ROS, cardiolipin peroxidation, sustained MPTP opening and cytochrome c release."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "43" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c063
+    section: high-yield
+    statement: "Severe membrane damage and massive calcium influx mark the transition to irreversible injury."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42-43" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c064
+    section: high-yield
+    statement: "Ischemia ends in coagulative necrosis, which in the brain is followed by liquefaction."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "38-39" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c065
+    section: traps
+    statement: "Swelling, mitochondrial swelling and blebs are reversible; nuclear changes and mitochondrial calcification indicate cell death."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3-4, 39" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c066
+    section: traps
+    statement: "Reperfusion salvages reversibly injured cells but can itself cause lethal injury."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "43" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c067
+    section: traps
+    statement: "The Na+/H+ exchanger is activated to maintain intracellular pH and in doing so raises intracellular Na+."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c068
+    section: traps
+    statement: "Necrotic eosinophilia is due to loss of cytoplasmic RNA staining with hematoxylin."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "38-39" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c069
+    section: traps
+    statement: "Reperfusion cannot save a cell whose membranes are already severely damaged; it helps only reversibly injured cells."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42, 44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c070
+    section: mnemonics
+    statement: "Ischemic cascade: ATP falls, lactate acidosis, Na+ entry with water, calcium overload, PLA2 and proteases damage membranes."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42-43" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03

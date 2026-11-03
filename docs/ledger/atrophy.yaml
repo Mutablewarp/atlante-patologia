@@ -1,0 +1,554 @@
+entity: atrophy
+claims:
+  - claimId: atrophy-c001
+    section: definition
+    statement: "Atrophy means decreased size of a cell or an organ."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c002
+    section: definition
+    statement: "Atrophy is listed among the major adaptive responses to persistent stress, with hypertrophy, hyperplasia and metaplasia."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "7" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c003
+    section: definition
+    statement: "Atrophy can both cause and result from altered (reduced) function."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c004
+    section: definition
+    statement: "Atrophy can let a cell accommodate environmental change while staying viable."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c005
+    section: definition
+    statement: "Organ size reduction may come from reversible cell shrinkage or irreversible cell loss."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c006
+    section: etiology
+    statement: "Atrophy caused by altered hormone levels can be physiologic."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "20" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c007
+    section: etiology
+    statement: "The endometrium atrophies when estrogen falls after menopause."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "20" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c008
+    section: etiology
+    statement: "The breast atrophies after lactation ends."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "20" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c009
+    section: etiology
+    statement: "Conditions causing atrophy are often the inverse of those that stimulate hypertrophy."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "20-21" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c010
+    section: etiology
+    statement: "Casted limb muscle shrinks from disuse; muscle whose motor nerve is injured loses mass and strength, and denervation also counts as loss of trophic input."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19-20" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c011
+    section: etiology
+    statement: "Surviving cells in poorly perfused margins of infarcts in heart or kidney may become atrophic."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "20" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c012
+    section: etiology
+    statement: "Starvation causes wasting of skeletal muscle and fat (ch.1 p.20); wasting of heart and liver in marasmus is covered in ch.8 p.381."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "20" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c013
+    section: etiology
+    statement: "Loss of trophic signals (endocrine ablation, denervation) causes atrophy; anterior pituitary injury such as Sheehan syndrome causes thyroid and adrenal cortical atrophy."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "20" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c014
+    section: etiology
+    statement: "Sustained pressure from bed rest atrophies skin; centrilobular hepatocytes atrophy when congestive heart failure raises intrasinusoidal pressure."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "20-21" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c015
+    section: etiology
+    statement: "With age, nerve cells, heart muscle cells and skeletal muscle fibers shrink or are lost; age-related muscle loss is termed sarcopenia."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "21" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c016
+    section: etiology
+    statement: "Chronic diseases such as cancer, heart failure, COPD, AIDS and rheumatoid arthritis cause atrophy exceeding what reduced caloric intake explains."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "21-22, 24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c017
+    section: etiology
+    statement: "Glucocorticoid-related muscle wasting has long been known."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c018
+    section: pathogenesis
+    statement: "Cell size reflects an equilibrium between anabolic and catabolic forces."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c019
+    section: pathogenesis
+    statement: "Atrophy is an active process reflecting selective synthesis and degradation of cell constituents."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "23" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c020
+    section: pathogenesis
+    statement: "In atrophy less protein is made than is degraded."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c021
+    section: pathogenesis
+    statement: "Skeletal muscle is the paradigm for studying atrophy and hypertrophy."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c022
+    section: pathogenesis
+    statement: "In atrophy, selected proteins (among them pro-synthetic ones) are ubiquitinated more and broken down by proteasomes."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c023
+    section: pathogenesis
+    statement: "Autophagic activity increases in atrophy."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c024
+    section: pathogenesis
+    statement: "Actomyosin is degraded via ubiquitin pathways in atrophy; prior cleavage by caspase-3 or calpain greatly enhances proteasomal degradation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c025
+    section: pathogenesis
+    statement: "IGF-1 signals via IRS-1, PI3K and Akt; in adults IGF-1 and Akt mainly inhibit atrophy rather than directly elicit hypertrophy."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "23-24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c026
+    section: pathogenesis
+    statement: "FOXO transcription factors increase E3 ubiquitin ligases (MuRF, MAFbx) and inhibit TORC1."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "23-24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c027
+    section: pathogenesis
+    statement: "Akt inhibits FOXO."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c028
+    section: pathogenesis
+    statement: "TGF-beta family signaling (e.g., myostatin) activates Smads, which inhibit Akt and stimulate FOXO."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "23" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c029
+    section: pathogenesis
+    statement: "Nutrient deprivation increases TGF-beta family cytokines such as myostatin."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c030
+    section: pathogenesis
+    statement: "TNF-alpha, IL-1 and IL-6 rise in chronic inflammatory conditions and stimulate atrophy."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c031
+    section: pathogenesis
+    statement: "Tumor-induced mobilization of body fat frees cytokines that add to muscle loss."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c032
+    section: pathogenesis
+    statement: "Cbl-b, an E3 ligase, polyubiquitinates IRS-1 for degradation and inhibits hypertrophy."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c033
+    section: pathogenesis
+    statement: "Settings favoring atrophy or hypertrophy often act by inhibiting the opposite process; the outcome depends on the balance."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c034
+    section: pathogenesis
+    statement: "When cell loss outpaces progenitor replacement in old age, the heart, skeletal muscle and brain become atrophic."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "25" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c035
+    section: gross
+    statement: "Atrophic organs are reduced in size."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c036
+    section: gross
+    statement: "Brain atrophy shows thinned gyri and widened sulci."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c037
+    section: gross
+    statement: "The endometrium of an elderly woman is thin compared with reproductive age."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "21" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c038
+    section: micro
+    statement: "Starvation produces decreased size of cells such as myocytes and adipocytes."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "20" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c039
+    section: micro
+    statement: "Denervated muscle shows loss of myocyte protein with relatively more prominent nuclei."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "20" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c040
+    section: micro
+    statement: "Atrophic postmenopausal endometrium has only a few atrophic, cystic glands."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "21" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c041
+    section: micro
+    statement: "Lipofuscin is a golden-brown pigment of postmitotic cells such as neurons and cardiac myocytes and may be more conspicuous in organ atrophy."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c042
+    section: clinical
+    statement: "Cachexia is harmful on its own: it can shorten survival independently of the underlying illness and lessens treatment benefit and recovery."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "22" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c043
+    section: clinical
+    statement: "Sarcopenia erodes mobility and independence in older people and drives care costs."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "22" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c044
+    section: clinical
+    statement: "Congestive heart failure mainly affects type I fibers due to poor oxygen delivery; sarcopenia mainly affects type II fibers."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c045
+    section: clinical
+    statement: "Age-related decrease in size of muscle, heart and brain leads to weakness and debility."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "21" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c046
+    section: prognosis
+    statement: "Disuse atrophy of a casted limb reverses when the muscle is used again."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c047
+    section: prognosis
+    statement: "Brain atrophy in Alzheimer disease reflects cell loss and cannot be restored."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c048
+    section: prognosis
+    statement: "Pressure atrophy of the skin leads to decubitus ulcers."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "21" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c049
+    section: prognosis
+    statement: "Hormone antagonist treatment can make androgen-dependent prostate cancer and estrogen-dependent breast cancer regress."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "20" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c050
+    section: prognosis
+    statement: "Pro-hypertrophy measures can slow or prevent muscle loss; the reference reports only a tendency for angiotensin antagonists to help older people retain muscle, so the card hedges this."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "22, 24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c051
+    section: differential
+    statement: "Hypertrophy is increased cell size with net protein synthesis over degradation; Akt and mTORC1 drive it."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19, 24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c052
+    section: differential
+    statement: "Hyperplasia is increased cell number."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c053
+    section: differential
+    statement: "Organ atrophy from cell loss (e.g., Alzheimer disease) means fewer cells, not smaller ones, and is irreversible."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c054
+    section: differential
+    statement: "Lipofuscin accumulates with age in postmitotic cells and may be conspicuous in atrophic organs."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c055
+    section: high-yield
+    statement: "Atrophy is decreased cell or organ size with the cell remaining viable."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c056
+    section: high-yield
+    statement: "Physiologic atrophy: postmenopausal endometrium, post-lactation breast."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "20" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c057
+    section: high-yield
+    statement: "Causes: reduced demand, ischemia, malnutrition, loss of trophic signals, pressure, aging, chronic disease."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "20-21" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c058
+    section: high-yield
+    statement: "In atrophy degradation exceeds synthesis via ubiquitin-proteasome and autophagy."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c059
+    section: high-yield
+    statement: "FOXO increases E3 ubiquitin ligases; IGF-1/Akt inhibits atrophy."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "23-24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c060
+    section: high-yield
+    statement: "Cell shrinkage is reversible; cell loss is not."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c061
+    section: high-yield
+    statement: "Cachexia and sarcopenia are the major clinical muscle atrophy states."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "22" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c062
+    section: traps
+    statement: "Atrophy is active with selective synthesis and degradation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "23" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c063
+    section: traps
+    statement: "Reduced organ size may reflect irreversible cell loss."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c064
+    section: traps
+    statement: "Tissue loss in chronic disease exceeds caloric deficit and reflects cytokines and mediators."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "21" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c065
+    section: traps
+    statement: "Hormone-related atrophy can be physiologic (endometrium, breast)."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "20" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c066
+    section: traps
+    statement: "In adults IGF-1 and Akt mainly inhibit atrophy rather than directly stimulate hypertrophy."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c067
+    section: traps
+    statement: "Lipofuscin is thought to arise from oxidant stress and also to worsen it."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5-6" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c068
+    section: mnemonics
+    statement: "Causes of pathologic atrophy: disuse, ischemia, pressure, chronic disease, aging, nutrient lack, loss of endocrine or nerve signals."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "20-21" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: atrophy-c069
+    section: mnemonics
+    statement: "Akt inhibits atrophy; FOXO increases E3 ubiquitin ligases that target proteins to the proteasome."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "23-24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03

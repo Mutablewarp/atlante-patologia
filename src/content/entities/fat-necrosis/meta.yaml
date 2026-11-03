@@ -1,0 +1,134 @@
+id: fat-necrosis
+module: g01
+tier: core
+kind: process
+names:
+  it: "Necrosi adiposa (steatonecrosi)"
+  en: "Fat necrosis"
+  eponyms: []
+  synonyms:
+    it: ["Steatonecrosi", "Necrosi del tessuto adiposo", "Citosteatonecrosi", "Necrosi adiposa enzimatica (forma pancreatica)", "Necrosi adiposa traumatica (forma mammaria)"]
+    en: ["Adipose tissue necrosis", "Enzymatic fat necrosis (pancreatic form)", "Traumatic fat necrosis (breast form)"]
+  abbreviations: []
+summary:
+  it: "Necrosi limitata al tessuto adiposo: le lipasi liberano dai trigliceridi acidi grassi che si legano al calcio formando saponi (saponificazione), visibili come focolai bianco gesso; si osserva nella pancreatite acuta e dopo traumi, soprattutto nella mammella, dove può simulare un carcinoma."
+  en: "Necrosis limited to adipose tissue: lipases release fatty acids from triglyceride, which bind calcium as soaps (saponification) and form chalky white foci; it occurs in acute pancreatitis and after trauma, especially in the breast, where it can mimic carcinoma."
+lenses:
+  system: [general, pancreas, breast]
+  process: [cell-death, necrosis, irreversible-injury, acute-inflammation, pathologic-calcification]
+  pattern: [necrosis-fat, dystrophic-calcification]
+  presentation: [mass-lesion]
+  marker: [laboratory]
+  group: [inflammatory]
+learningObjectives:
+  - it: "Descrivere le tappe della necrosi adiposa: danno di membrana, idrolisi dei trigliceridi da parte della lipasi, formazione di saponi di calcio."
+    en: "Describe the steps of fat necrosis: membrane damage, hydrolysis of triglyceride by lipase, formation of calcium soaps."
+  - it: "Distinguere la necrosi adiposa enzimatica della pancreatite acuta da quella traumatica della mammella, indicando l'origine delle lipasi in ciascun caso."
+    en: "Distinguish enzymatic fat necrosis in acute pancreatitis from traumatic fat necrosis of the breast, naming the source of the lipases in each."
+  - it: "Riconoscere i reperti macroscopici e microscopici: focolai bianco gesso, depositi basofili amorfi, macrofagi schiumosi e calcificazione distrofica."
+    en: "Recognize the gross and microscopic findings: chalky white foci, amorphous basophilic deposits, foamy macrophages and dystrophic calcification."
+  - it: "Spiegare perché la pancreatite acuta grave può causare ipocalcemia e perché la necrosi adiposa mammaria può simulare un carcinoma."
+    en: "Explain why severe acute pancreatitis can cause hypocalcemia and why breast fat necrosis can mimic carcinoma."
+prerequisites: []
+relations:
+  - type: complicationOf
+    target: acute-pancreatitis
+    note:
+      it: "Gli enzimi pancreatici attivati digeriscono il grasso peripancreatico e mesenterico, con saponificazione."
+      en: "Activated pancreatic enzymes digest peripancreatic and mesenteric fat, with saponification."
+  - type: sameLesionOtherOrgan
+    target: traumatic-fat-necrosis-breast
+    note:
+      it: "Lo stesso processo nella mammella dopo un trauma: una massa dura che può simulare un carcinoma."
+      en: "The same process in the breast after trauma: a hard mass that can mimic carcinoma."
+  - type: differentialOf
+    target: liquefactive-necrosis
+    note:
+      it: "Entrambe sono necrosi da digestione enzimatica, ma la necrosi adiposa colpisce solo il grasso e forma saponi di calcio."
+      en: "Both involve enzymatic digestion, but fat necrosis affects only fat and forms calcium soaps."
+quickCheck:
+  - id: fat-necrosis-q1
+    q:
+      it: "Che cosa sono i depositi basofili amorfi visibili ai margini degli adipociti necrotici?"
+      en: "What are the amorphous basophilic deposits at the edges of necrotic adipocytes?"
+    a:
+      it: "Saponi di calcio: acidi grassi, liberati dalla lipasi, che si sono legati al calcio (saponificazione)."
+      en: "Calcium soaps: fatty acids released by lipase that have bound calcium (saponification)."
+    kind: short
+  - id: fat-necrosis-q2
+    q:
+      it: "Da dove provengono le lipasi nella necrosi adiposa traumatica della mammella?"
+      en: "Where do the lipases come from in traumatic fat necrosis of the breast?"
+    a:
+      it: "Dagli stessi adipociti danneggiati, che liberano trigliceridi e lipasi; non servono enzimi pancreatici."
+      en: "From the injured adipocytes themselves, which release triglyceride and lipases; no pancreatic enzymes are needed."
+    kind: short
+  - id: fat-necrosis-q3
+    q:
+      it: "Perché nella pancreatite acuta grave la calcemia può diminuire?"
+      en: "Why can blood calcium fall in severe acute pancreatitis?"
+    a:
+      it: "Perché gli acidi grassi liberati nei focolai di necrosi adiposa sequestrano il calcio sotto forma di saponi."
+      en: "Because fatty acids released in foci of fat necrosis trap calcium as soaps."
+    kind: short
+  - id: fat-necrosis-q4
+    q:
+      it: "Perché la necrosi adiposa della mammella entra in diagnosi differenziale con il carcinoma, e come si risolve il dubbio?"
+      en: "Why does breast fat necrosis enter the differential with carcinoma, and how is the question settled?"
+    a:
+      it: "Forma una massa dura, spesso con retrazione cutanea, che può calcificare; l'istologia mostra grasso necrotico, macrofagi schiumosi e cellule giganti invece di cellule tumorali."
+      en: "It forms a hard mass, often with skin tethering, that may calcify; histology shows necrotic fat, foamy macrophages and giant cells instead of tumor cells."
+    kind: free
+selfExplain:
+  - it: "Perché la presenza di trigliceridi rende la necrosi del tessuto adiposo diversa da quella degli altri tessuti?"
+    en: "Why does the presence of triglyceride make necrosis of adipose tissue different from necrosis of other tissues?"
+  - it: "Perché nella pancreatite l'obesità si associa a una necrosi adiposa più estesa e a una malattia più grave?"
+    en: "Why is obesity associated with more extensive fat necrosis and more severe disease in pancreatitis?"
+  - it: "Come si passa, nel tempo, dagli adipociti necrotici a una lesione mammaria fibrosa e calcificata?"
+    en: "How does a breast lesion progress over time from necrotic adipocytes to a fibrotic, calcified lesion?"
+chain:
+  - pathology:
+      it: "Pancreatite acuta con necrosi adiposa peripancreatica e saponificazione"
+      en: "Acute pancreatitis with peripancreatic fat necrosis and saponification"
+    sign:
+      it: "Dolore epigastrico intenso irradiato al dorso; nei casi gravi, ipereccitabilità neuromuscolare"
+      en: "Severe epigastric pain radiating to the back; in severe cases neuromuscular irritability"
+    lab:
+      it: "Amilasi e lipasi sieriche aumentate; calcemia ridotta"
+      en: "Raised serum amylase and lipase; low blood calcium"
+  - pathology:
+      it: "Necrosi adiposa traumatica della mammella con macrofagi schiumosi, fibrosi e calcificazione"
+      en: "Traumatic breast fat necrosis with foamy macrophages, fibrosis and calcification"
+    sign:
+      it: "Massa mammaria dura con retrazione cutanea"
+      en: "Hard breast mass with skin tethering"
+    lab:
+      it: "Biopsia: grasso necrotico e macrofagi schiumosi, nessuna cellula di carcinoma"
+      en: "Biopsy: necrotic fat and foamy macrophages, no carcinoma cells"
+images:
+  - id: fat-necrosis-gross-1
+    role: gross
+  - id: fat-necrosis-micro-1
+    role: micro
+  - id: fat-necrosis-micro-2
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "1"
+    pages: "5, 29, 38-40"
+  - source: rubin-8e
+    chapter: "6"
+    pages: "319"
+  - source: rubin-8e
+    chapter: "19"
+    pages: "837"
+  - source: rubin-8e
+    chapter: "21"
+    pages: "902-905, 910"
+  - source: rubin-8e
+    chapter: "25"
+    pages: "1076-1078"
+lastUpdated: 2026-11-03
+status: published

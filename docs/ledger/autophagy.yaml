@@ -1,0 +1,538 @@
+entity: autophagy
+claims:
+  - claimId: autophagy-c001
+    section: definition
+    statement: "Autophagy is a highly conserved process that delivers intracellular targets to lysosomes for digestion."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "13" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c002
+    section: definition
+    statement: "Autophagy operates continuously and is obligatory for homeostasis and survival."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "14" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c003
+    section: definition
+    statement: "Autophagy is activated by stress sensors and is central to cellular adaptation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "13-14" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c004
+    section: definition
+    statement: "All forms of autophagy end in lysosomal degradation but differ in regulation, cargo, target recognition and delivery route."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "14" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c005
+    section: etiology
+    statement: "Bulk (nonselective) autophagy sustains cell survival in starvation and in poor perfusion."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "14" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c006
+    section: etiology
+    statement: "Autophagy serves nutrient recycling, clearance of misfolded proteins and damaged organelles, antigen presentation and inflammation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "14" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c007
+    section: etiology
+    statement: "CMA has a modest constitutive level and is further activated by starvation, oxidant stress and toxic exposures."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "16" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c008
+    section: etiology
+    statement: "Intracellular pathogen sensing activates IRGM and TRIM proteins, which help form autophagy initiation complexes in xenophagy."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "16" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c009
+    section: etiology
+    statement: "In ischemia-reperfusion, reduced ATP, ROS-mediated Beclin-1/PI3K-III complex formation and ubiquitinated protein aggregates activate autophagy."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c010
+    section: etiology
+    statement: "Periodic fasting activates autophagy, possibly contributing to its presumed health benefits."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "18" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c011
+    section: pathogenesis
+    statement: "Macroautophagy, the most studied form, encloses large portions of cytoplasm together with organelles and soluble or clumped proteins."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "14" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c012
+    section: pathogenesis
+    statement: "In microautophagy the lysosomal membrane invaginates to engulf cytosolic cargo; it is largely constitutive and supports membrane and organelle turnover."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "15-16" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c013
+    section: pathogenesis
+    statement: "In CMA, chaperone-bound proteins (e.g. Hsc70) are recognized by lysosomal LAMP-2A and translocated without a vesicle intermediate."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "15-16" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c014
+    section: pathogenesis
+    statement: "Xenophagy is a selective form of macroautophagy targeting intracellular pathogens."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "16" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c015
+    section: pathogenesis
+    statement: "Damaged mitochondria are removed by autophagy (mitophagy), including during adaptation to exercise."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "16, 21" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c016
+    section: pathogenesis
+    statement: "Autophagy proteins are constitutively expressed and activated by post-translational modification (phosphorylation, ubiquitination) rather than transcription."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "14" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c017
+    section: pathogenesis
+    statement: "Insulin and IGF-1 act via class I PI3K and Akt to activate mTORC1, which inhibits autophagy."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "14, 16" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c018
+    section: pathogenesis
+    statement: "mTORC1 binds and inhibits ULK1."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "14" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c019
+    section: pathogenesis
+    statement: "During starvation, amino acid scarcity is sensed, growth factors decline and a rising AMP/ATP ratio activates AMPK."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "14" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c020
+    section: pathogenesis
+    statement: "AMPK inhibits mTORC1 via the tuberous sclerosis complex, freeing ULK1, and also phosphorylates and activates ULK1 directly."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "14, 16" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c021
+    section: pathogenesis
+    statement: "ULK1 activates Beclin-1; a Beclin-1/class III PI3K complex triggers autophagy."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "14, 16" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c022
+    section: pathogenesis
+    statement: "mTORC1 is the main antagonist of AMPK in adaptive responses, and AMPK generally increases autophagy."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "24-25" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c023
+    section: pathogenesis
+    statement: "The phagophore partially encloses cytoplasm and fuses at its ends to form the autophagosome."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "14-15" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c024
+    section: pathogenesis
+    statement: "The autophagosome membrane can originate from the ER, Golgi, plasma membrane or outer mitochondrial membrane."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "14" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c025
+    section: pathogenesis
+    statement: "After the autophagosome merges with a lysosome, lysosomal enzymes break its cargo into simple components the cell recycles."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "14-15" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c026
+    section: pathogenesis
+    statement: "Starvation-related autophagy is mostly nonselective."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "14" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c027
+    section: pathogenesis
+    statement: "Damaged mitochondria with altered membrane potential bind Nix, recruit Parkin and ubiquitin-like ATG proteins, and p62 attaches them to the phagophore."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "16-17" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c028
+    section: pathogenesis
+    statement: "Misfolded proteins with exposed hydrophobic residues are polyubiquitinated by E3 ligases; aggregates too large for proteasomes are delivered by p62 to autophagosomes."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "16" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c029
+    section: pathogenesis
+    statement: "The UPS digests mainly short-lived proteins, autophagy longer-lived proteins, aggregates, organelles and internalized microbes; each can partly compensate for the other."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "17" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c030
+    section: pathogenesis
+    statement: "Beclin-1 has a BH3 domain and is bound and inactivated by Bcl-2, Mcl-1 and Bim in unstressed cells."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "18" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c031
+    section: pathogenesis
+    statement: "Starvation-activated JNK1 phosphorylates Bcl-2 (and Bim) to release Beclin-1; Bad, Puma and HMGB-1 can also displace it."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "18" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c032
+    section: pathogenesis
+    statement: "Caspases cleave and inactivate Beclin-1; caspases and calpains cleave Atg proteins and Ambra1, facilitating apoptosis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "18" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c033
+    section: pathogenesis
+    statement: "Atg5 inhibits extrinsic apoptotic signaling and some autophagy signaling degrades caspases."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "18" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c034
+    section: pathogenesis
+    statement: "p53 can inhibit AMPK and impede autophagy, and can also promote mitophagy via PUMA."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "18" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c035
+    section: pathogenesis
+    statement: "In atrophy, protein degradation increases via ubiquitin-proteasome degradation and increased autophagic activity."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c036
+    section: pathogenesis
+    statement: "Necrosis, apoptosis and autophagy are the three main avenues of cell death; autophagy is an active signaling process."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "38" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c037
+    section: pathogenesis
+    statement: "Experimentally, blocking autophagy spares cells from several lethal agents, but an independent killing role is unproven and autophagy may support survival in dying cells."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c038
+    section: pathogenesis
+    statement: "In ischemia-reperfusion, autophagy has adaptive (ATP generation, aggregate removal) and maladaptive (excess removal of proteins and organelles, proapoptosis) effects."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c039
+    section: clinical
+    statement: "Beclin-1 and some Atg genes are tumor suppressors deleted or mutated in many tumors, while autophagy also protects cancer cells under hypoxia, nutrient deprivation and therapy."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "18" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c040
+    section: clinical
+    statement: "In Huntington disease mutations can impair removal of aggregates and defective mitochondria; in Alzheimer and Parkinson disease, falling Beclin-1 production with age may partly explain why aggregates outpace clearance."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "18" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c041
+    section: clinical
+    statement: "Undegraded aggregates accumulate as macroautophagy and CMA decline with age; animal data suggest mTOR inhibition, by enhancing autophagy, may extend lifespan."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "18" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c042
+    section: clinical
+    statement: "Xenophagy eliminates intracellular parasites, viruses including HIV-1, and bacteria such as Shigella, Streptococcus and M. tuberculosis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "18" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c043
+    section: clinical
+    statement: "Some viruses encode Bcl-2-like proteins binding Beclin-1; M. tuberculosis interferes with phagosome-lysosome fusion."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "18" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c044
+    section: clinical
+    statement: "Some RNA viruses, including poliovirus and hepatitis C virus, exploit autophagy by building replication sites on autophagic membranes."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "18" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c045
+    section: clinical
+    statement: "Mutations in two xenophagy-related autophagy genes increase Crohn disease risk; impaired bacterial clearance increases pro-inflammatory molecules."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "18" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c046
+    section: clinical
+    statement: "Autophagy is increased in some COPD, reduced in alveolar macrophages of chronic smokers, and defective autophagic clearance of mutant protein aggregates in airway epithelium is implicated in cystic fibrosis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "18-19" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c047
+    section: clinical
+    statement: "Some inherited cardiomyopathies result from mutated autophagy proteins; deficient autophagy also worsens ischemia/reperfusion injury and heart failure."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "19" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c048
+    section: prognosis
+    statement: "Impaired autophagy can cause accumulation of abnormal proteins and defective organelles, leading to cell death or disease."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "14" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c049
+    section: prognosis
+    statement: "Both excessive and insufficient autophagy have serious consequences, so it is constantly fine-tuned."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "14" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c050
+    section: prognosis
+    statement: "Because autophagy is linked to many diseases, there is considerable interest in manipulating it."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "18" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c051
+    section: differential
+    statement: "The UPS handles short-lived proteins and cannot degrade aggregates or organelles."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "17" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c052
+    section: differential
+    statement: "Apoptosis is caspase-mediated cell suicide, and apoptosis-mediating signals generally inhibit autophagy."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "18, 38" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c053
+    section: differential
+    statement: "In atrophy, increased autophagic activity is one of the routes of increased protein degradation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "24" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c054
+    section: differential
+    statement: "Necroptosis is programmed death morphologically like necrosis, with swelling, membrane fragmentation and inflammation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c055
+    section: high-yield
+    statement: "Autophagy is lysosomal self-digestion, basal and stress-induced, essential for homeostasis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "13-14" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c056
+    section: high-yield
+    statement: "Forms of autophagy include macroautophagy, microautophagy, CMA via LAMP-2A, xenophagy and mitophagy."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "14-16" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c057
+    section: high-yield
+    statement: "mTORC1 driven by insulin/IGF-1 and Akt inhibits autophagy; AMPK activated by high AMP/ATP promotes it via ULK1 and Beclin-1/PI3K-III."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "14, 16" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c058
+    section: high-yield
+    statement: "Phagophore closes into an autophagosome that fuses with lysosomes; p62 links ubiquitinated cargo to the phagophore."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "14, 16" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c059
+    section: high-yield
+    statement: "Bcl-2 sequesters Beclin-1 and caspases cleave it, linking autophagy and apoptosis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "18" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c060
+    section: high-yield
+    statement: "Autophagy is implicated in cancer, neurodegeneration, aging, infection, Crohn disease and cardiomyopathy."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "18-19" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c061
+    section: traps
+    statement: "Autophagy is ongoing physiologic quality control, e.g. against excess ROS from damaged mitochondria."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "14" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c062
+    section: traps
+    statement: "Autophagy may impede malignant transformation but protects malignant cells from chemotherapy."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "38" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c063
+    section: traps
+    statement: "It is unclear whether autophagy causes cell death independently of other forms of programmed cell death."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c064
+    section: traps
+    statement: "Starvation autophagy is largely nonselective, whereas mitophagy, aggregate removal and CMA are selective."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "14, 16" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c065
+    section: traps
+    statement: "Protein aggregates and organelles are too large for the proteasome."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "16-17" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c066
+    section: mnemonics
+    statement: "Original mnemonic for macroautophagy, microautophagy, CMA (LAMP-2A) and xenophagy."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "14-16" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: autophagy-c067
+    section: mnemonics
+    statement: "Original mnemonic: mTORC1 inhibits ULK1 in the fed state; AMPK frees and activates ULK1 in starvation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "14" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03

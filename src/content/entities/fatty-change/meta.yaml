@@ -1,0 +1,146 @@
+id: fatty-change
+module: g01
+tier: core
+kind: process
+names:
+  it: "Steatosi (degenerazione grassa)"
+  en: "Fatty change (steatosis)"
+  eponyms: []
+  synonyms:
+    it: ["Degenerazione grassa", "Metamorfosi grassa", "Steatosi epatica (fegato grasso)", "Steatosi macrovescicolare", "Steatosi microvescicolare"]
+    en: ["Steatosis", "Fatty degeneration", "Fatty metamorphosis", "Fatty liver (hepatic steatosis)", "Macrovesicular steatosis", "Microvesicular steatosis"]
+  abbreviations: []
+summary:
+  it: "Accumulo reversibile di trigliceridi nel citoplasma delle cellule parenchimali, soprattutto degli epatociti, quando l'apporto di lipidi supera la capacità della cellula di ossidarli o di esportarli."
+  en: "Reversible accumulation of triglycerides in the cytoplasm of parenchymal cells, mainly hepatocytes, when lipid supply outpaces the cell's ability to burn or export it."
+lenses:
+  system: [general, liver-biliary, heart]
+  process: [cell-injury, reversible-injury, intracellular-accumulation]
+  pattern: [fatty-change]
+  presentation: [organomegaly, incidental-finding]
+  marker: [special-stains, oil-red-o-sudan]
+  group: [degenerative, metabolic, toxic-environmental, nutritional]
+learningObjectives:
+  - it: "Descrivere il percorso dei lipidi nell'epatocita (captazione, β-ossidazione, riesterificazione, esportazione come VLDL) e i punti in cui uno squilibrio provoca la steatosi."
+    en: "Describe the route of lipids through the hepatocyte (uptake, β-oxidation, re-esterification, export as VLDL) and the points where imbalance causes steatosis."
+  - it: "Distinguere la steatosi macrovescicolare da quella microvescicolare in base ad aspetto, posizione del nucleo, cause e significato prognostico."
+    en: "Distinguish macrovesicular from microvesicular steatosis by appearance, nuclear position, causes and prognostic meaning."
+  - it: "Spiegare perché il grasso appare come vacuoli vuoti in ematossilina-eosina e quali colorazioni lo dimostrano su sezioni congelate."
+    en: "Explain why fat appears as empty vacuoles on H&E and which stains demonstrate it on frozen sections."
+  - it: "Elencare le cause principali (alcol, sindrome metabolica, farmaci e tossici, kwashiorkor, steatosi epatica acuta gravidica, sindrome di Reye) e fare esempi di coinvolgimento del fegato e del muscolo scheletrico (e del cuore nel deficit sistemico di carnitina)."
+    en: "List the main causes (alcohol, metabolic syndrome, drugs and toxins, kwashiorkor, acute fatty liver of pregnancy, Reye syndrome) and give organ examples in liver and skeletal muscle (and heart in systemic carnitine deficiency)."
+  - it: "Discutere la reversibilità della steatosi e distinguerla dalla steatoepatite e dalla steatonecrosi."
+    en: "Discuss the reversibility of fatty change and distinguish it from steatohepatitis and from fat necrosis."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: hydropic-swelling
+    note:
+      it: "Entrambe reversibili: citoplasma pallido e diffusamente rigonfio contro vacuoli lipidici distinti."
+      en: "Both reversible: diffusely swollen pale cytoplasm versus discrete lipid vacuoles."
+  - type: sharesMechanism
+    target: intracellular-accumulations
+    note:
+      it: "La steatosi è il prototipo di accumulo intracellulare per squilibrio tra apporto e smaltimento di un metabolita normale."
+      en: "Fatty change is the prototype of intracellular accumulation from an imbalance between supply and disposal of a normal metabolite."
+  - type: differentialOf
+    target: fat-necrosis
+    note:
+      it: "Nomi simili, processi diversi: lipidi nel citoplasma di cellule vive da un lato, morte degli adipociti con saponificazione dall'altro."
+      en: "Similar names, different processes: lipid in the cytoplasm of living cells versus death of adipocytes with soap formation."
+  - type: prerequisiteOf
+    target: alcoholic-liver-disease
+  - type: prerequisiteOf
+    target: nonalcoholic-fatty-liver-disease
+quickCheck:
+  - id: fatty-change-q1
+    q:
+      it: "Quali sono i tre grandi meccanismi che portano all'accumulo di trigliceridi nell'epatocita?"
+      en: "What are the three broad mechanisms that lead to triglyceride accumulation in the hepatocyte?"
+    a:
+      it: "Aumentato apporto o sintesi di acidi grassi, ridotta β-ossidazione mitocondriale, ridotta esportazione come lipoproteine (VLDL)."
+      en: "Increased delivery or synthesis of fatty acids, reduced mitochondrial β-oxidation, reduced export as lipoproteins (VLDL)."
+    kind: short
+  - id: fatty-change-q2
+    q:
+      it: "Dove si trova il nucleo nella steatosi macrovescicolare e in quella microvescicolare?"
+      en: "Where is the nucleus in macrovesicular and in microvesicular steatosis?"
+    a:
+      it: "Nella macrovescicolare è schiacciato e spinto alla periferia da un grosso vacuolo; nella microvescicolare resta centrale tra tanti piccoli vacuoli."
+      en: "In macrovesicular steatosis it is flattened and pushed to the periphery by a large vacuole; in microvesicular steatosis it stays central among many small vacuoles."
+    kind: short
+  - id: fatty-change-q3
+    q:
+      it: "Perché in ematossilina-eosina i vacuoli lipidici sembrano vuoti, e come si dimostra che contengono grasso?"
+      en: "Why do lipid vacuoles look empty on H&E, and how do you prove they contain fat?"
+    a:
+      it: "I solventi della processazione di routine sciolgono i lipidi; serve una sezione congelata colorata con Oil Red O o Sudan, coloranti che tingono di rosso i lipidi neutri."
+      en: "The solvents of routine processing dissolve the lipid; a frozen section stained with oil red O or Sudan stains neutral lipid red."
+    kind: short
+  - id: fatty-change-q4
+    q:
+      it: "Perché la steatosi microvescicolare è più preoccupante di quella macrovescicolare, pur avendo gocce più piccole?"
+      en: "Why is microvesicular steatosis more worrying than macrovesicular steatosis, despite smaller droplets?"
+    a:
+      it: "Perché è il segno di un grave danno mitocondriale (difetto di β-ossidazione) e si associa a epatopatie severe, talora fatali, come la steatosi epatica acuta gravidica e la sindrome di Reye."
+      en: "Because it signals severe mitochondrial injury (failed β-oxidation) and accompanies severe, sometimes fatal liver disease such as acute fatty liver of pregnancy and Reye syndrome."
+    kind: free
+selfExplain:
+  - it: "Perché nel kwashiorkor un'alimentazione con carboidrati sufficienti ma povera di proteine porta al fegato grasso?"
+    en: "Why does a diet with enough carbohydrate but too little protein lead to a fatty liver in kwashiorkor?"
+  - it: "Se il grasso in sé non danneggia l'epatocita, come mai la steatosi è associata a malattie epatiche progressive?"
+    en: "If fat itself does not harm the hepatocyte, why is fatty change associated with progressive liver disease?"
+  - it: "Come agisce l'etanolo su ciascuna tappa del metabolismo lipidico epatico per produrre steatosi?"
+    en: "How does ethanol act on each step of hepatic lipid metabolism to produce steatosis?"
+chain:
+  - pathology:
+      it: "Steatosi microvescicolare da difetto della β-ossidazione mitocondriale (steatosi epatica acuta gravidica)"
+      en: "Microvesicular steatosis from failed mitochondrial β-oxidation (acute fatty liver of pregnancy)"
+    sign:
+      it: "Dolore addominale, ittero e anoressia nel terzo trimestre"
+      en: "Abdominal pain, jaundice and anorexia in the third trimester"
+    lab:
+      it: "Aumento degli enzimi epatici e della bilirubina; nei casi gravi coagulazione intravascolare disseminata"
+      en: "Raised liver enzymes and bilirubin; disseminated intravascular coagulation in severe cases"
+  - pathology:
+      it: "Steatosi epatica non alcolica (NAFLD) su base di insulino-resistenza"
+      en: "Steatosis in nonalcoholic fatty liver disease (insulin resistance)"
+    sign:
+      it: "Spesso asintomatica, in un paziente con obesità addominale e diabete"
+      en: "Often asymptomatic, in a patient with abdominal obesity and diabetes"
+    lab:
+      it: "Aumento solo moderato delle transaminasi"
+      en: "Only moderate rise in serum liver enzymes"
+images:
+  - id: fatty-change-gross-1
+    role: gross
+  - id: fatty-change-micro-1
+    role: micro
+  - id: fatty-change-micro-2
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "1"
+    pages: "3-5, 39-40"
+  - source: rubin-8e
+    chapter: "7"
+    pages: "336"
+  - source: rubin-8e
+    chapter: "8"
+    pages: "381-382"
+  - source: rubin-8e
+    chapter: "14"
+    pages: "575-577"
+  - source: rubin-8e
+    chapter: "18"
+    pages: "721"
+  - source: rubin-8e
+    chapter: "20"
+    pages: "867-870, 880-882"
+  - source: rubin-8e
+    chapter: "31"
+    pages: "1411, 1425"
+lastUpdated: 2026-11-03
+status: published

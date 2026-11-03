@@ -1,0 +1,466 @@
+entity: ischemia-reperfusion-injury
+claims:
+  - claimId: ischemia-reperfusion-injury-c001
+    section: definition
+    statement: "Ischemia-reperfusion injury is extra tissue damage that occurs when blood flow is restored after ischemia."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "43" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c002
+    section: definition
+    statement: "Reperfusion benefits viable, reversibly injured cells, yet can itself kill some cells that might otherwise have been saved."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "43" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c003
+    section: definition
+    statement: "Up to about half of the final myocardial infarct size may be attributable to reperfusion injury."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "43" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c004
+    section: etiology
+    statement: "Reperfusion injury arises when flow returns to tissue injured by a period of ischemia."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "43" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c005
+    section: etiology
+    statement: "Coronary reperfusion can occur spontaneously through lysis of the occluding thrombus."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "337" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c006
+    section: etiology
+    statement: "Therapeutic reperfusion in acute myocardial infarction is achieved by thrombolysis or coronary intervention to reopen the artery."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "659" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c007
+    section: etiology
+    statement: "Organ transplantation is a setting of reperfusion injury: the graft is ischemic before implantation and is reperfused in the recipient."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "43" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c008
+    section: etiology
+    statement: "Prolonged cardiopulmonary bypass with irreversibly injured myocardium, followed by reperfusion, gives extensive contraction band necrosis."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "660" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c009
+    section: etiology
+    statement: "The duration of ischemia determines whether reperfusion fully restores the cell, kills it, or comes too late to matter."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c010
+    section: pathogenesis
+    statement: "In ischemia, ATP loss impairs the Na+/K+ pump, anaerobic glycolysis lowers pH, and the Na+/H+ and Na+/Ca2+ exchangers lead to sodium then calcium accumulation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c011
+    section: pathogenesis
+    statement: "Ischemia increases ROS generation and leaves antioxidant systems impaired."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42-44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c012
+    section: pathogenesis
+    statement: "During ischemia ATP is catabolized to purines including xanthine, and xanthine oxidase activity increases, especially in endothelium."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c013
+    section: pathogenesis
+    statement: "On reperfusion, arriving oxygen combines with free radicals formed during ischemia to generate more ROS."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "43-44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c014
+    section: pathogenesis
+    statement: "Xanthine oxidase requires oxygen to convert xanthine to uric acid, producing superoxide; reoxygenation therefore causes a sudden ROS increase."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c015
+    section: pathogenesis
+    statement: "Mitochondrial oxidant stress rises at reperfusion because electron transport resumes abruptly while antioxidant defenses are depleted."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c016
+    section: pathogenesis
+    statement: "Oxidative attack on cardiolipin, an unsaturated-fatty-acid-rich phospholipid found only in mitochondria, damages the electron transport chain."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "43" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c017
+    section: pathogenesis
+    statement: "At reperfusion cellular pH is suddenly corrected and reversal of the Na+/Ca2+ exchanger aggravates the calcium overload begun in ischemia."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c018
+    section: pathogenesis
+    statement: "Raised cytosolic calcium activates phospholipase A2 and proteases that damage membranes and disrupt cytoskeleton-membrane attachments."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42-43" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c019
+    section: pathogenesis
+    statement: "Increased cytosolic calcium together with mitochondrial ROS causes opening of the mitochondrial permeability transition pore."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "43-44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c020
+    section: pathogenesis
+    statement: "MPTP opening admits water and ions to the matrix, dissipates membrane potential, swells mitochondria and impairs ATP production."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "49" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c021
+    section: pathogenesis
+    statement: "Cytochrome c released from damaged mitochondria lowers ATP synthesis and may trigger apoptosis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "43, 49" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c022
+    section: pathogenesis
+    statement: "Reperfusion brings P-selectin to the endothelial surface, increasing neutrophil binding via ICAM-1; neutrophils release ROS and hydrolytic enzymes."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c023
+    section: pathogenesis
+    statement: "The cytokines TNF-alpha, IL-1 and IL-6 constrict vessels, make neutrophils and platelets stick to the endothelium, and act at remote sites."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c024
+    section: pathogenesis
+    statement: "Complement activation during reperfusion deposits membrane attack complexes and recruits neutrophils."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c025
+    section: pathogenesis
+    statement: "Platelets adhere to injured microvasculature and release factors with both damaging and cytoprotective effects."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c026
+    section: pathogenesis
+    statement: "Nitric oxide is protective by dilating microvessels, inhibiting platelet aggregation and reducing leukocyte adhesion."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c027
+    section: pathogenesis
+    statement: "Reperfusion inactivates SOD and supplies superoxide, favoring peroxynitrite formation from NO; peroxynitrite causes DNA strand breaks and lipid peroxidation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c028
+    section: pathogenesis
+    statement: "Ischemia and reperfusion impair the ubiquitin-proteasome system; ubiquitinated aggregates with low ATP and ROS activate autophagy, which can be adaptive or maladaptive."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c029
+    section: gross
+    statement: "Reperfused myocardial infarcts are typically hemorrhagic (red) because blood flows through damaged microvasculature."
+    sourceRef: { source: rubin-8e, chapter: "7, 17", pages: "337, 659" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c030
+    section: gross
+    statement: "A pale infarct from persistent occlusion becomes visible to the naked eye only after roughly 12 hours, whereas hemorrhage reveals a reperfused infarct at once."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "659" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c031
+    section: micro
+    statement: "The characteristic lesion of a reperfused acute infarct is contraction band necrosis: coarse cross-wise eosinophilic bands made of hypercontracted sarcomeres, with dense Z lines and a broken sarcolemma."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "659" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c032
+    section: micro
+    statement: "Contraction bands result from massive Ca2+ entry through ROS-damaged sarcolemma into myocytes still able to contract."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "659-660" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c033
+    section: micro
+    statement: "In contraction band necrosis the mitochondria lying between bands swell and can accumulate calcium phosphate."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "659" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c034
+    section: micro
+    statement: "In reperfused infarcts neutrophils permeate the whole infarct, accumulate and disappear more rapidly, and scar replacement is faster."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "659" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c035
+    section: clinical
+    statement: "Acute myocardial infarction reperfused spontaneously or by treatment is the commonest setting of reperfusion injury."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "43" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c036
+    section: clinical
+    statement: "Organ transplantation and prolonged cardiopulmonary bypass are other settings of reperfusion injury."
+    sourceRef: { source: rubin-8e, chapter: "1, 17", pages: "43, 660" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c037
+    section: clinical
+    statement: "Repeated angina episodes without infarction can precondition myocardium and limit necrosis after a later prolonged ischemic episode."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c038
+    section: prognosis
+    statement: "Short ischemia is fully reversible on reperfusion; longer ischemia leads to lethal injury during reperfusion that interventions may prevent; still longer ischemia kills cells during ischemia itself."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c039
+    section: prognosis
+    statement: "Ischemic preconditioning involves the RISK pathway (Akt, ERK, GSK3beta), the SAFE pathway (TNF-alpha, STAT3) and HIF-1alpha."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "44-45" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c040
+    section: prognosis
+    statement: "HIF-1alpha induces genes whose products reduce oxidant generation, calcium loading and energy depletion."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "45" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c041
+    section: differential
+    statement: "Ischemic injury involves ATP loss, acidosis and sodium and calcium accumulation during the ischemic period itself."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42-43" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c042
+    section: differential
+    statement: "Infarcts from persistent occlusion are pale, apparent grossly after about 12 hours, and any contraction band necrosis is limited to the margins."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "659-660" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c043
+    section: differential
+    statement: "Oxidative injury from activated oxygen species also arises from inflammation, chemical toxicity and ionizing radiation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "31" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c044
+    section: differential
+    statement: "Contraction bands also follow massive catecholamine release in head injury or pheochromocytoma, or high-dose pressors in shock."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "660" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c045
+    section: high-yield
+    statement: "Reperfusion salvages reversibly injured cells but can kill cells itself, up to half of infarct size in the heart."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "43" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c046
+    section: high-yield
+    statement: "ROS during reperfusion come from xanthine oxidase, neutrophils and mitochondria."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "45" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c047
+    section: high-yield
+    statement: "Calcium overload is exacerbated at reperfusion by reversal of the Na+/Ca2+ exchanger as pH normalizes."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c048
+    section: high-yield
+    statement: "Calcium and ROS open the MPTP, collapsing membrane potential, lowering ATP and releasing cytochrome c."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "43-44, 49" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c049
+    section: high-yield
+    statement: "Inflammatory mechanisms include P-selectin/ICAM-1 neutrophil adhesion, cytokines, complement and platelets."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c050
+    section: high-yield
+    statement: "NO reacts with superoxide to form peroxynitrite."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c051
+    section: high-yield
+    statement: "Reperfused infarcts are hemorrhagic with contraction band necrosis."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "659" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c052
+    section: high-yield
+    statement: "Ischemic preconditioning protects against a subsequent longer ischemic episode."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c053
+    section: traps
+    statement: "Reperfusion is beneficial in salvaging reversibly injured cells despite causing reperfusion injury."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "43" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c054
+    section: traps
+    statement: "ROS generation begins in ischemia and is greatly magnified on reperfusion."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c055
+    section: traps
+    statement: "Contraction bands occur whenever massive calcium influx into myocytes occurs, including catecholamine excess, not only reperfusion."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "659-660" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c056
+    section: traps
+    statement: "NO is protective normally but contributes to injury through peroxynitrite during reperfusion."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "44" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c057
+    section: traps
+    statement: "Rapid pH normalization after acidosis is listed among reperfusion injury mechanisms."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "45" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: ischemia-reperfusion-injury-c058
+    section: mnemonics
+    statement: "Summary of reperfusion mechanisms: ROS, Na+/Ca2+ exchanger reversal with calcium overload, inflammation, NO/peroxynitrite, cytochrome c release via MPTP."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "44-45" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03

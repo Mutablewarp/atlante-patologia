@@ -1,0 +1,514 @@
+entity: dysplasia
+claims:
+  - claimId: dysplasia-c001
+    section: definition
+    statement: "Dysplastic epithelium loses the uniform size and shape of its cells and their orderly maturation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c002
+    section: definition
+    statement: "Under the microscope, dysplasia is what disturbed growth and maturation of an epithelium looks like."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c003
+    section: definition
+    statement: "Dysplasia is a precancerous stage and, in organs such as the cervix, prostate and bladder, belongs to the intraepithelial neoplasia spectrum."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c004
+    section: definition
+    statement: "In developmental pathology, dysplasia means abnormal histogenesis, a meaning distinct from precancerous epithelial dysplasia."
+    sourceRef: { source: rubin-8e, chapter: "6", pages: "305" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c005
+    section: etiology
+    statement: "Dysplasia arises in settings of persistent injury, as metaplasia does."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c006
+    section: etiology
+    statement: "Dysplasia can arise in any epithelium."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c007
+    section: etiology
+    statement: "Actinic keratosis is sunlight-induced dysplasia of epidermal keratinocytes."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c008
+    section: etiology
+    statement: "Chronically inflamed colonic mucosa in ulcerative colitis can become dysplastic."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c009
+    section: etiology
+    statement: "HPV-infected cervical epithelium can become dysplastic."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c010
+    section: etiology
+    statement: "Metaplastic epithelia, e.g. a smoker's bronchus or Barrett mucosa, can become dysplastic."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c011
+    section: etiology
+    statement: "Adenomatous colorectal polyps are dysplastic by definition and usually precede colon carcinoma."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c012
+    section: pathogenesis
+    statement: "Normal squamous mucosa proliferates from its basal layer; rising cells stop dividing, gain cytoplasm, have proportionally smaller nuclei and end as flat surface cells."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c013
+    section: pathogenesis
+    statement: "Dysplasia disrupts the ordered maturation sequence of the epithelium."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c014
+    section: pathogenesis
+    statement: "Dysplasia, like cancer, results from mutations accumulating stepwise in proliferating cells kept dividing by injury."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c015
+    section: pathogenesis
+    statement: "Each DNA replication round can introduce errors, so more cell divisions give more chances of mutation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c016
+    section: pathogenesis
+    statement: "A cell whose mutation favors growth or survival out-reproduces its neighbors and its clone takes over."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c017
+    section: pathogenesis
+    statement: "The expanding clone divides more, gains further mutations and progressively escapes normal growth control."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c018
+    section: pathogenesis
+    statement: "Control is only partly lost in dysplasia, so removing the cause can let the tissue return to normal."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c019
+    section: pathogenesis
+    statement: "Early HPV infection with non-integrated viral DNA in many cells gives low-grade lesions; integration of high-risk HPV and E6/E7 activity select one clone that progresses to a high-grade lesion."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1031" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c020
+    section: gross
+    statement: "Colitis-associated dysplasia can be flat or raised; the raised form is termed DALM."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "818" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c021
+    section: micro
+    statement: "Dysplastic cells vary in size and shape."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c022
+    section: micro
+    statement: "Dysplastic nuclei are enlarged, irregular and hyperchromatic."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c023
+    section: micro
+    statement: "Dysplastic cells have a higher than normal nucleus-to-cytoplasm ratio."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c024
+    section: micro
+    statement: "In dysplasia mitoses occur far from the basal layer."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c025
+    section: micro
+    statement: "Dysplastic epithelium lacks normal polarity and shows disorderly arrangement without maturation from base to surface."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c026
+    section: micro
+    statement: "Low-grade adenoma dysplasia has slender dark cigar-shaped nuclei with mild stratification."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c027
+    section: micro
+    statement: "High-grade adenoma dysplasia shows complex, sometimes cribriform glands and more pleomorphic nuclei with conspicuous nucleoli."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c028
+    section: micro
+    statement: "Colonic dysplasia is split into low and high grade by the severity of cell and gland abnormalities."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "818" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c029
+    section: micro
+    statement: "Cervical and anal squamous dysplasia was traditionally graded mild, moderate or severe; since 2012 LAST (LSIL/HSIL) terminology covers all anogenital sites."
+    sourceRef: { source: rubin-8e, chapter: "19, 24", pages: "833, 1031" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c030
+    section: micro
+    statement: "LSIL corresponds to CIN-1/mild dysplasia; HSIL covers CIN-2/moderate and CIN-3/severe dysplasia and carcinoma in situ."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1031" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c031
+    section: micro
+    statement: "Severe cervical dysplasia and cervical carcinoma in situ are hard to tell apart histologically."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c032
+    section: clinical
+    statement: "Atypical cells are present at the cervical surface even in low-grade lesions, so exfoliative cytology can detect them."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1031" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c033
+    section: clinical
+    statement: "Cytologic screening reduced cervical carcinoma by 50-85% in Western countries."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1030" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c034
+    section: clinical
+    statement: "Cervical SIL generally occurs before age 40, while cervical cancer usually presents at 40-60 years."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1031" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c035
+    section: clinical
+    statement: "Barrett esophagus patients undergo surveillance endoscopy to detect dysplasia early."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c036
+    section: clinical
+    statement: "Most patients with established IBD should undergo surveillance colonoscopy with systematic biopsies for dysplasia."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "818" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c037
+    section: diagnosis
+    statement: "Dysplasia is a morphologic diagnosis made on histology, and in the cervix also on cytologic smears."
+    sourceRef: { source: rubin-8e, chapter: "1, 24", pages: "29, 1031" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c038
+    section: diagnosis
+    statement: "The basement membrane separates in situ lesions from invasive carcinoma, which can reach vessels."
+    sourceRef: { source: rubin-8e, chapter: "5", pages: "173" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c039
+    section: diagnosis
+    statement: "If heavy inflammation prevents confirming or excluding dysplasia, the biopsy is reported as indefinite for dysplasia."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "818" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c040
+    section: prognosis
+    statement: "Dysplasia usually regresses when the stressor ends, e.g. smoking cessation or immune clearance of HPV-infected cervical cells."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c041
+    section: prognosis
+    statement: "Cervical low-grade lesions usually vanish without progressing; high-grade lesions tend to advance and are treated."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1031" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c042
+    section: prognosis
+    statement: "Severe dysplasia warrants firm prevention by removing the cause, stopping exposure or excising the lesion."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c043
+    section: prognosis
+    statement: "High-grade dysplasia on biopsy in ulcerative colitis usually leads to colectomy because of the high later cancer risk."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "818" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c044
+    section: prognosis
+    statement: "Polypectomy cures adenomas whose dysplasia is confined to the mucosa; high-grade lesions left in place may become invasive adenocarcinoma."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c045
+    section: differential
+    statement: "Metaplasia replaces one differentiated cell type with another; dysplasia may develop within metaplastic epithelium."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "27, 29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c046
+    section: differential
+    statement: "Hyperplasia is an increase in cell number, whereas dysplasia is defined by atypia and disordered maturation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "25, 29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c047
+    section: differential
+    statement: "In carcinoma in situ neoplastic cells fill the full epithelial thickness without surface maturation but stay above the basement membrane; cervical CIN 3 includes severe dysplasia and carcinoma in situ."
+    sourceRef: { source: rubin-8e, chapter: "5, 24", pages: "173, 1031" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c048
+    section: differential
+    statement: "Once tumor breaches the basement membrane it invades stroma and gains access to vessels for metastasis."
+    sourceRef: { source: rubin-8e, chapter: "5", pages: "173" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c049
+    section: differential
+    statement: "Intense inflammation can produce changes not reliably distinguishable from dysplasia."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "818" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c050
+    section: high-yield
+    statement: "Dysplasia is disordered epithelial growth and maturation and is precancerous."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c051
+    section: high-yield
+    statement: "Cytologic features of dysplasia: pleomorphism, enlarged hyperchromatic nuclei, high N/C ratio."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c052
+    section: high-yield
+    statement: "Architectural features of dysplasia: loss of polarity and maturation, suprabasal mitoses."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c053
+    section: high-yield
+    statement: "Dysplasia results from sequential mutations with clonal selection in proliferating cells."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c054
+    section: high-yield
+    statement: "Dysplasia is graded low vs high; cervical LSIL = CIN-1 and HSIL = CIN-2/3."
+    sourceRef: { source: rubin-8e, chapter: "19, 24", pages: "818, 1031" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c055
+    section: high-yield
+    statement: "Dysplasia is not autonomous and can regress when the stimulus stops."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c056
+    section: high-yield
+    statement: "Carcinoma in situ sits above an intact basement membrane; invasion begins when it is breached."
+    sourceRef: { source: rubin-8e, chapter: "5", pages: "173" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c057
+    section: traps
+    statement: "Dysplastic cells are not fully autonomous and the tissue can revert to normal."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c058
+    section: traps
+    statement: "Cervical LSIL commonly disappears and rarely progresses."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1031" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c059
+    section: traps
+    statement: "Dysplasia arises in glandular mucosa such as colon and in metaplastic epithelium such as Barrett esophagus, not only squamous epithelium."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c060
+    section: traps
+    statement: "Developmental dysplasia, e.g. renal dysplasia, reflects abnormal histogenesis/differentiation, not precancerous epithelial change."
+    sourceRef: { source: rubin-8e, chapter: "6, 22", pages: "305, 921" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c061
+    section: traps
+    statement: "CIN-3 encompasses both severe dysplasia and carcinoma in situ, which look very similar."
+    sourceRef: { source: rubin-8e, chapter: "1, 24", pages: "29, 1031" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c062
+    section: traps
+    statement: "No in situ stage exists for tumors of mesenchymal, lymphoid or hepatocellular origin, since those cells lack a basement membrane."
+    sourceRef: { source: rubin-8e, chapter: "5", pages: "173" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c063
+    section: mnemonics
+    statement: "Core dysplasia features: lost maturation/layering, atypical nuclei, high mitoses, pleomorphism."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: dysplasia-c064
+    section: mnemonics
+    statement: "Low-grade cervical lesions tend to regress while high-grade lesions tend to progress."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1031" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03

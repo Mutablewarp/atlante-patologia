@@ -1,0 +1,138 @@
+id: hyperplasia
+module: g01
+tier: core
+kind: process
+names:
+  it: "Iperplasia"
+  en: "Hyperplasia"
+  eponyms: []
+  synonyms:
+    it: ["Iperplasia fisiologica", "Iperplasia ormonale", "Iperplasia compensatoria", "Iperplasia patologica"]
+    en: ["Physiologic hyperplasia", "Hormonal hyperplasia", "Compensatory hyperplasia", "Pathologic hyperplasia"]
+  abbreviations: ["BPH", "IPB"]
+summary:
+  it: "Aumento del numero di cellule in un tessuto o in un organo per divisione cellulare, in risposta a ormoni, maggiore richiesta funzionale o danno cronico; di per sé non è una neoplasia, ma ogni mitosi in più aumenta il rischio di mutazioni."
+  en: "An increase in the number of cells in a tissue or organ through cell division, driven by hormones, greater functional demand or chronic injury; it is not itself a neoplasm, but every extra mitosis adds mutation risk."
+lenses:
+  system: [general, endocrine, female-genital, urinary-male-genital, hematolymphoid, skin, breast]
+  process: [cellular-adaptation, neoplasia]
+  pattern: [hyperplasia]
+  presentation: [organomegaly, mass-lesion]
+  marker: [ihc]
+  group: [adaptive]
+learningObjectives:
+  - it: "Definire l'iperplasia e distinguerla dall'ipertrofia, dalla metaplasia e dalla displasia."
+    en: "Define hyperplasia and distinguish it from hypertrophy, metaplasia and dysplasia."
+  - it: "Classificare le cause di iperplasia (stimolo ormonale, aumentata richiesta funzionale, danno cronico) con un esempio per ciascuna."
+    en: "Classify the causes of hyperplasia (hormonal stimulation, increased functional demand, chronic injury) with one example of each."
+  - it: "Spiegare perché un'iperplasia persistente aumenta il rischio di neoplasia, usando l'endometrio come modello."
+    en: "Explain why persistent hyperplasia raises the risk of neoplasia, using the endometrium as the model."
+  - it: "Riconoscere gli aspetti macroscopici, microscopici e clinici dell'iperplasia prostatica benigna e dell'iperplasia endometriale."
+    en: "Recognize the gross, microscopic and clinical features of benign prostatic hyperplasia and endometrial hyperplasia."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: hypertrophy
+    note:
+      it: "Nell'iperplasia aumenta il numero di cellule, nell'ipertrofia il loro volume; i due processi coesistono spesso nello stesso organo."
+      en: "Hyperplasia adds cells, hypertrophy enlarges them; the two often coexist in the same organ."
+  - type: differentialOf
+    target: metaplasia
+    note:
+      it: "L'iperplasia espande una popolazione cellulare senza cambiarne il tipo; la metaplasia sostituisce un tipo cellulare differenziato con un altro."
+      en: "Hyperplasia expands a cell population without changing its type; metaplasia swaps one differentiated cell type for another."
+  - type: differentialOf
+    target: dysplasia
+    note:
+      it: "Nell'iperplasia la maturazione resta ordinata; nella displasia cellule e nuclei diventano irregolari e la maturazione è disordinata."
+      en: "In hyperplasia maturation stays orderly; in dysplasia cells and nuclei become irregular and maturation is disordered."
+  - type: differentialOf
+    target: atrophy
+    note:
+      it: "Risposte opposte alla richiesta funzionale e ai segnali trofici: l'atrofia riduce le dimensioni dell'organo, l'iperplasia le aumenta aggiungendo cellule."
+      en: "Opposite responses to demand and trophic signals: atrophy shrinks the organ, hyperplasia enlarges it by adding cells."
+quickCheck:
+  - id: hyperplasia-q1
+    q:
+      it: "Quali sono le tre grandi categorie di stimoli che causano iperplasia?"
+      en: "What are the three broad categories of stimuli that cause hyperplasia?"
+    a:
+      it: "Stimolo ormonale (es. estrogeni sull'endometrio), aumentata richiesta funzionale (es. iperplasia eritroide in alta quota) e danno cronico (es. callo cutaneo)."
+      en: "Hormonal stimulation (e.g., estrogen acting on the endometrium), increased functional demand (e.g., erythroid hyperplasia at high altitude) and chronic injury (e.g., a skin callus)."
+    kind: short
+  - id: hyperplasia-q2
+    q:
+      it: "Perché un uomo trattato con estrogeni per un carcinoma prostatico può sviluppare un aumento di volume della mammella?"
+      en: "Why can a man treated with estrogen for prostate cancer develop breast enlargement?"
+    a:
+      it: "Perché l'eccesso di estrogeni stimola la proliferazione del tessuto mammario: è una ginecomastia, un'iperplasia di origine ormonale."
+      en: "Because excess estrogen drives proliferation of breast tissue: this is gynecomastia, a hormone-driven hyperplasia."
+    kind: short
+  - id: hyperplasia-q3
+    q:
+      it: "In che cosa differisce l'iperplasia endometriale non atipica dalla neoplasia intraepiteliale endometriale (EIN)?"
+      en: "How does nonatypical endometrial hyperplasia differ from endometrial intraepithelial neoplasia (EIN)?"
+    a:
+      it: "La prima è un endometrio normale che risponde a un eccesso di estrogeni (rischio di carcinoma basso); la EIN è un clone di cellule mutate, cioè una lesione precancerosa, con rischio di carcinoma endometrioide molto più alto."
+      en: "The former is normal endometrium responding to excess estrogen (low cancer risk); EIN is a clone of mutated cells, a true precancer, with a much higher risk of endometrioid carcinoma."
+    kind: short
+  - id: hyperplasia-q4
+    q:
+      it: "Se l'iperplasia non è una neoplasia, perché un'iperplasia prolungata aumenta il rischio di cancro?"
+      en: "If hyperplasia is not a neoplasm, why does long-standing hyperplasia raise cancer risk?"
+    a:
+      it: "Perché ogni mitosi comporta una piccola probabilità di mutazione: quante più divisioni avvengono, tante più occasioni ha una cellula di acquisire una crescita autonoma."
+      en: "Because every mitosis carries a small chance of mutation; more divisions give more opportunities for a cell to acquire autonomous growth."
+    kind: free
+selfExplain:
+  - it: "Perché il cuore e il muscolo scheletrico rispondono a un maggiore carico di lavoro soprattutto con l'ipertrofia, mentre il midollo osseo risponde all'ipossia con l'iperplasia?"
+    en: "Why do the heart and skeletal muscle respond to a heavier workload mainly by hypertrophy, whereas the bone marrow responds to hypoxia by hyperplasia?"
+  - it: "Segui il percorso che va dall'eccesso di estrogeni non bilanciati dal progesterone all'iperplasia endometriale non atipica e poi alla EIN: in quale punto la lesione smette di essere un adattamento e diventa una neoplasia?"
+    en: "Trace the path from unopposed estrogen to nonatypical endometrial hyperplasia and then to EIN: at which point does the lesion stop being an adaptation and become a neoplasm?"
+  - it: "Perché la castrazione prima della pubertà impedisce l'iperplasia prostatica benigna, e su quale enzima agiscono i farmaci che riducono il volume della prostata?"
+    en: "Why does castration before puberty prevent benign prostatic hyperplasia, and which enzyme do the drugs that shrink the prostate target?"
+chain:
+  - pathology:
+      it: "Iperplasia nodulare della prostata (IPB) nella zona di transizione periuretrale"
+      en: "Nodular hyperplasia of the prostate (BPH) in the periurethral transition zone"
+    sign:
+      it: "Getto urinario debole e minzioni sempre più frequenti per ostruzione dello sbocco vescicale"
+      en: "Weak urinary stream and increasing frequency from bladder outlet obstruction"
+    lab:
+      it: "Esplorazione rettale: prostata più voluminosa del normale, duro-elastica e con superficie irregolare (nodulare)"
+      en: "Digital rectal examination: the prostate feels bigger than normal, firm and lumpy (nodular)"
+  - pathology:
+      it: "Tumore renale che secerne eritropoietina, con iperplasia eritroide del midollo"
+      en: "Erythropoietin-secreting renal tumor with erythroid hyperplasia of the marrow"
+    sign:
+      it: "L'eccesso ormonale può essere la prima manifestazione del tumore"
+      en: "The hormone excess may be the tumor's first manifestation"
+    lab:
+      it: "Aumento dei globuli rossi; midollo ipercellulare con riduzione relativa del tessuto adiposo"
+      en: "Raised red cell count; hypercellular marrow with relatively less fat"
+images:
+  - id: hyperplasia-gross-1
+    role: gross
+  - id: hyperplasia-micro-1
+    role: micro
+  - id: hyperplasia-micro-2
+    role: micro
+  - id: g01-adaptation-spectrum
+    role: diagram
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "1"
+    pages: "19, 25, 27-29"
+  - source: rubin-8e
+    chapter: "3"
+    pages: "121"
+  - source: rubin-8e
+    chapter: "23"
+    pages: "1007-1008"
+  - source: rubin-8e
+    chapter: "24"
+    pages: "1041-1042"
+lastUpdated: 2026-11-03
+status: published

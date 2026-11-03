@@ -1,0 +1,129 @@
+id: atrophy
+module: g01
+tier: core
+kind: process
+names:
+  it: "Atrofia"
+  en: "Atrophy"
+  eponyms: []
+  synonyms:
+    it: ["Atrofia cellulare", "Atrofia d'organo", "Atrofia da disuso", "Atrofia da compressione", "Sarcopenia (atrofia muscolare senile)", "Cachessia (deperimento)"]
+    en: ["Cellular atrophy", "Organ atrophy", "Disuse atrophy", "Pressure atrophy", "Sarcopenia (age-related muscle atrophy)", "Cachexia (wasting)"]
+  abbreviations: []
+summary:
+  it: "Riduzione delle dimensioni di una cellula o di un organo, adattamento attivo in cui la degradazione delle proteine supera la sintesi e la cellula resta vitale."
+  en: "Reduction in the size of a cell or organ, an active adaptation in which protein degradation outpaces synthesis while the cell remains viable."
+lenses:
+  system: [general, muscle-nerve, cns, female-genital, endocrine]
+  process: [cellular-adaptation, proteostasis, autophagy]
+  pattern: [atrophy]
+  presentation: [incidental-finding]
+  marker: []
+  group: [adaptive, degenerative, nutritional]
+learningObjectives:
+  - it: "Definire l'atrofia e distinguere la riduzione di volume delle cellule (reversibile) dalla perdita di cellule (irreversibile)."
+    en: "Define atrophy and distinguish shrinkage of cells (reversible) from loss of cells (irreversible)."
+  - it: "Elencare le cause di atrofia fisiologica e patologica con un esempio per ciascuna."
+    en: "List the causes of physiologic and pathologic atrophy with one example of each."
+  - it: "Spiegare come il sistema ubiquitina-proteasoma e l'autofagia spostino il bilancio proteico verso la degradazione."
+    en: "Explain how the ubiquitin–proteasome system and autophagy shift the protein balance toward breakdown."
+  - it: "Descrivere il ruolo di IGF-1/Akt, FOXO, miostatina e citochine infiammatorie nell'atrofia muscolare."
+    en: "Describe the roles of IGF-1/Akt, FOXO, myostatin and inflammatory cytokines in muscle atrophy."
+  - it: "Riconoscere gli aspetti macroscopici e microscopici dell'atrofia nel cervello, nel muscolo e nell'endometrio, e il significato clinico di cachessia e sarcopenia."
+    en: "Recognize the gross and microscopic features of atrophy in brain, muscle and endometrium, and the clinical significance of cachexia and sarcopenia."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: hypertrophy
+    note:
+      it: "Risposte speculari: nell'atrofia la degradazione delle proteine prevale sulla sintesi, nell'ipertrofia avviene il contrario."
+      en: "Mirror-image responses: in atrophy protein breakdown outweighs synthesis, in hypertrophy the reverse."
+  - type: sharesMechanism
+    target: autophagy
+    note:
+      it: "L'aumento dell'attività autofagica contribuisce alla perdita di massa cellulare nell'atrofia."
+      en: "Increased autophagic activity contributes to the loss of cell mass in atrophy."
+  - type: sharesMechanism
+    target: protein-quality-control
+    note:
+      it: "Le ubiquitina-ligasi E3 indotte da FOXO indirizzano le proteine muscolari al proteasoma."
+      en: "FOXO-induced E3 ubiquitin ligases send muscle proteins to the proteasome."
+quickCheck:
+  - id: atrophy-q1
+    q:
+      it: "Quali sono i due modi in cui un organo può ridursi di volume, e quale dei due è reversibile?"
+      en: "What are the two ways an organ can shrink, and which one is reversible?"
+    a:
+      it: "Riduzione del volume delle singole cellule (reversibile, come il muscolo dopo l'immobilizzazione in gesso) o perdita di cellule (irreversibile, come il cervello nella malattia di Alzheimer)."
+      en: "Shrinkage of individual cells (reversible, as in muscle after a cast) or loss of cells (irreversible, as in the brain in Alzheimer disease)."
+    kind: short
+  - id: atrophy-q2
+    q:
+      it: "Citate due esempi di atrofia fisiologica."
+      en: "Give two examples of physiologic atrophy."
+    a:
+      it: "L'endometrio dopo la menopausa, per il calo degli estrogeni, e la mammella al termine dell'allattamento."
+      en: "The endometrium after menopause, as estrogen falls, and the breast after lactation ends."
+    kind: short
+  - id: atrophy-q3
+    q:
+      it: "Quali due vie di degradazione sono potenziate nella cellula atrofica?"
+      en: "Which two degradation pathways increase in the atrophic cell?"
+    a:
+      it: "Il sistema ubiquitina-proteasoma (con aumento delle ubiquitina-ligasi E3) e l'autofagia."
+      en: "The ubiquitin–proteasome system (with more E3 ubiquitin ligases) and autophagy."
+    kind: short
+  - id: atrophy-q4
+    q:
+      it: "Perché la cachessia neoplastica non si spiega solo con il ridotto apporto calorico?"
+      en: "Why can cancer cachexia not be explained by reduced calorie intake alone?"
+    a:
+      it: "Perché citochine come TNF-α, IL-1 e IL-6 attivano direttamente le vie dell'atrofia muscolare, per cui la perdita di tessuto supera il deficit calorico."
+      en: "Because cytokines such as TNF-α, IL-1 and IL-6 directly activate muscle atrophy pathways, so tissue loss exceeds the calorie deficit."
+    kind: free
+selfExplain:
+  - it: "Perché nell'adulto IGF-1 e Akt agiscono più come freno dell'atrofia che come stimolo diretto alla crescita? Che cosa succede quando questo freno si allenta?"
+    en: "Why do IGF-1 and Akt in adults act more as a brake on atrophy than as a direct stimulus for growth? What happens when that brake is released?"
+  - it: "In che modo lo scompenso cardiaco congestizio porta sia all'atrofia degli epatociti centrolobulari sia alla perdita di fibre muscolari di tipo I?"
+    en: "How does congestive heart failure lead both to atrophy of centrilobular hepatocytes and to loss of type I muscle fibers?"
+  - it: "Perché la terapia antiormonale può far regredire un carcinoma prostatico androgeno-dipendente?"
+    en: "Why can hormone antagonist therapy shrink an androgen-dependent prostate cancer?"
+chain:
+  - pathology:
+      it: "Danno ipofisario postpartum (sindrome di Sheehan) con perdita dei segnali trofici e atrofia della tiroide e della corticale del surrene"
+      en: "Postpartum pituitary damage (Sheehan syndrome) with loss of trophic signals and atrophy of the thyroid and adrenal cortex"
+    sign:
+      it: "Mancata lattazione dopo il parto (agalattia) e amenorrea; segni di ipotiroidismo e di insufficienza surrenalica"
+      en: "Failure of postpartum lactation (agalactia) and amenorrhea; features of hypothyroidism and adrenal insufficiency"
+    lab:
+      it: "Ormoni ipofisari e delle ghiandole bersaglio ridotti"
+      en: "Low pituitary and target-gland hormones"
+  - pathology:
+      it: "Atrofia muscolare da denervazione"
+      en: "Denervation atrophy of skeletal muscle"
+    sign:
+      it: "Riduzione della massa e della forza dei muscoli innervati dal nervo leso"
+      en: "Loss of bulk and strength in the muscles supplied by the injured nerve"
+    lab:
+      it: "Biopsia: fibre con meno citoplasma e nuclei relativamente più evidenti"
+      en: "Biopsy: fibers with less cytoplasm and relatively prominent nuclei"
+images:
+  - id: atrophy-gross-1
+    role: gross
+  - id: atrophy-micro-1
+    role: micro
+  - id: atrophy-micro-2
+    role: micro
+  - id: g01-adaptation-spectrum
+    role: diagram
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "1"
+    pages: "5-7, 19-25"
+  - source: rubin-8e
+    chapter: "8"
+    pages: "381"
+lastUpdated: 2026-11-03
+status: published

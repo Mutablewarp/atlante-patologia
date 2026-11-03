@@ -1,0 +1,119 @@
+id: other-regulated-cell-death
+module: g01
+tier: extended
+kind: concept
+names:
+  it: "Altre forme di morte cellulare regolata (anoikis, NETosi, entosi, morte da granzimi)"
+  en: "Other regulated cell death (anoikis, NETosis, entosis, granzyme-mediated)"
+  eponyms: []
+  synonyms:
+    it: ["Forme specializzate di morte cellulare programmata", "Anoikis", "Citotossicità mediata da perforina e granzimi", "NETosi", "Trappole extracellulari dei neutrofili", "Entosi", "Cannibalismo cellulare (cell-in-cell)"]
+    en: ["Specialized forms of programmed cell death", "Anoikis", "Perforin/granzyme-mediated cytotoxicity", "NETosis", "Neutrophil extracellular traps", "Entosis", "Cell-in-cell cannibalism"]
+  abbreviations: ["NET", "CTL", "NK", "CAD", "ICAD", "tBid"]
+summary:
+  it: "Quattro programmi di morte specializzati: l'anoikis elimina per apoptosi le cellule staccate dalla propria matrice, perforina e granzimi dei linfociti citotossici innescano l'apoptosi dall'esterno, la NETosi rilascia reti di DNA antimicrobiche e nell'entosi una cellula viva viene inglobata da un'altra."
+  en: "Four specialized death programs: anoikis removes cells detached from their matrix by apoptosis, perforin and granzymes from cytotoxic lymphocytes trigger apoptosis from outside, NETosis releases antimicrobial DNA nets, and entosis has one cell swallow another alive."
+lenses:
+  system: [general]
+  process: [regulated-cell-death, cell-death, apoptosis, autophagy]
+  pattern: [apoptotic-bodies]
+  presentation: []
+  marker: [molecular]
+  group: [immune, neoplastic, infectious]
+learningObjectives:
+  - it: "Spiegare come la perdita del legame integrine–matrice extracellulare attivi l'anoikis e perché ciò ostacoli le metastasi."
+    en: "Explain how loss of integrin–extracellular matrix binding triggers anoikis and why this opposes metastasis."
+  - it: "Descrivere come la perforina e il granzima B dei linfociti T citotossici e delle cellule NK inducano l'apoptosi, e la via di morte indipendente dalle caspasi mediata dalla CAD."
+    en: "Describe how perforin and granzyme B from cytotoxic T and NK cells induce apoptosis, and the caspase-independent CAD route."
+  - it: "Descrivere i requisiti, la struttura e la funzione antimicrobica delle trappole extracellulari dei neutrofili (NET)."
+    en: "Describe the requirements, structure and antimicrobial role of neutrophil extracellular traps (NETs)."
+  - it: "Definire l'entosi e i suoi possibili esiti per la cellula inglobata e per quella che la ingloba."
+    en: "Define entosis and its possible outcomes for the engulfed and the engulfing cell."
+  - it: "Confrontare queste forme con apoptosi, necroptosi e piroptosi in base all'innesco, agli effettori e all'infiammazione."
+    en: "Compare these forms with apoptosis, necroptosis and pyroptosis by trigger, effectors and inflammation."
+prerequisites: [apoptosis]
+relations:
+  - type: sharesMechanism
+    target: apoptosis
+    note:
+      it: "L'anoikis e l'uccisione da granzimi sfruttano le vie classiche dell'apoptosi (Bid/tBid, caspasi-3)."
+      en: "Anoikis and granzyme killing run on the classical apoptotic pathways (Bid/tBid, caspase-3)."
+  - type: sharesMechanism
+    target: autophagy
+    note:
+      it: "La NETosi richiede l'autofagia insieme alla NADPH ossidasi."
+      en: "NETosis requires autophagy together with NADPH oxidase."
+  - type: differentialOf
+    target: necroptosis
+    note:
+      it: "Entrambe sono forme di morte regolata; la necroptosi ha morfologia necrotica e dipende da RIP1/RIP3 e MLKL."
+      en: "Both are regulated deaths; necroptosis has necrotic morphology and depends on RIP1/RIP3 and MLKL."
+  - type: differentialOf
+    target: pyroptosis
+    note:
+      it: "Piroptosi e NETosi sono forme di morte infiammatoria legate alle infezioni, ma la piroptosi dipende dalla caspasi-1 attivata dall'inflammasoma."
+      en: "Pyroptosis and NETosis are inflammatory, infection-linked deaths, but pyroptosis depends on inflammasome caspase-1."
+quickCheck:
+  - id: other-regulated-cell-death-q1
+    q:
+      it: "Che cosa innesca l'anoikis e quali vie di morte utilizza?"
+      en: "What triggers anoikis, and which death pathways does it use?"
+    a:
+      it: "La perdita dei segnali di sopravvivenza mediati dalle integrine quando una cellula dipendente dall'ancoraggio si stacca dalla propria matrice extracellulare; usa le vie classiche dell'apoptosi, intrinseca ed estrinseca."
+      en: "Loss of integrin survival signals when an anchorage-dependent cell detaches from its own extracellular matrix; it uses the classical intrinsic and extrinsic apoptotic pathways."
+    kind: short
+  - id: other-regulated-cell-death-q2
+    q:
+      it: "Quale substrato taglia il granzima B per attivare la via mitocondriale dell'apoptosi?"
+      en: "Which substrate does granzyme B cleave to switch on the mitochondrial pathway of apoptosis?"
+    a:
+      it: "Bid, che viene convertito in tBid e favorisce il rilascio del citocromo c dai mitocondri."
+      en: "Bid, which becomes tBid and promotes release of cytochrome c from mitochondria."
+    kind: short
+  - id: other-regulated-cell-death-q3
+    q:
+      it: "Quali due attività sono necessarie per la NETosi?"
+      en: "Which two activities are required for NETosis?"
+    a:
+      it: "L'autofagia e la NADPH ossidasi (che produce specie reattive dell'ossigeno)."
+      en: "Autophagy and NADPH oxidase (which produces reactive oxygen species)."
+    kind: short
+  - id: other-regulated-cell-death-q4
+    q:
+      it: "Perché le cellule in NETosi, a differenza di quelle apoptotiche, possono stimolare l'infiammazione?"
+      en: "Why can NETotic cells, unlike apoptotic cells, stimulate inflammation?"
+    a:
+      it: "Non espongono la fosfatidilserina come segnale «mangiami», quindi i macrofagi non le rimuovono precocemente."
+      en: "They do not expose phosphatidylserine as an \"eat me\" signal, so macrophages do not remove them early."
+    kind: free
+  - id: other-regulated-cell-death-q5
+    q:
+      it: "Nell'entosi, la cellula inglobata muore sempre?"
+      en: "In entosis, does the engulfed cell always die?"
+    a:
+      it: "No: di solito muore se il vacuolo si fonde con i lisosomi, ma può sopravvivere, fuggire intatta o cedere il proprio materiale nucleare alla cellula ospite."
+      en: "No: it usually dies if the vacuole fuses with lysosomes, but it can survive, escape intact or pass its nuclear material to the host cell."
+    kind: short
+selfExplain:
+  - it: "Perché è vantaggioso per l'organismo che una cellula epiteliale muoia quando perde il contatto con la propria matrice, e che cosa cambia quando una cellula tumorale sfugge a questo controllo?"
+    en: "Why is it useful for the body that an epithelial cell dies when it loses contact with its own matrix, and what changes when a tumor cell escapes this check?"
+  - it: "Perché un linfocito citotossico ha bisogno sia della perforina sia dei granzimi, e quale vantaggio offre una seconda via di morte indipendente dalle caspasi?"
+    en: "Why does a cytotoxic lymphocyte need both perforin and granzymes, and what advantage does a second, caspase-independent death route offer?"
+  - it: "Confronta NETosi e apoptosi: in che modo la presenza o l'assenza del segnale «mangiami» determina se la morte sarà silenziosa o infiammatoria?"
+    en: "Compare NETosis and apoptosis: how does the presence or absence of the \"eat me\" signal decide whether death is silent or inflammatory?"
+chain: []
+images:
+  - id: other-regulated-cell-death-micro-1
+    role: micro
+  - id: other-regulated-cell-death-micro-2
+    role: micro
+  - id: other-regulated-cell-death-micro-3
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "1"
+    pages: "38, 45, 54, 56-58"
+lastUpdated: 2026-11-03
+status: published

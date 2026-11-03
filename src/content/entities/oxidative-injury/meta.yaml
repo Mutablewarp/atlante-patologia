@@ -1,0 +1,137 @@
+id: oxidative-injury
+module: g01
+tier: core
+kind: process
+names:
+  it: "Danno ossidativo (radicali liberi)"
+  en: "Oxidative (free-radical) injury"
+  eponyms: []
+  synonyms:
+    it: ["Stress ossidativo", "Danno da radicali liberi", "Danno da specie reattive dell'ossigeno"]
+    en: ["Oxidative stress", "Free-radical injury", "Reactive oxygen species injury", "Oxidant injury"]
+  abbreviations: ["ROS"]
+summary:
+  it: "Danno a lipidi, proteine e DNA causato dalle specie reattive dell'ossigeno quando la loro produzione supera le difese antiossidanti della cellula."
+  en: "Damage to lipids, proteins and DNA by reactive oxygen species when their production outstrips the cell's antioxidant defenses."
+lenses:
+  system: [general]
+  process: [oxidative-injury, cell-injury]
+  pattern: [pigment-deposits]
+  presentation: []
+  marker: []
+  group: [toxic-environmental, degenerative]
+learningObjectives:
+  - it: "Descrivere le principali specie reattive dell'ossigeno (superossido, perossido di idrogeno, radicale ossidrile, perossinitrito) e le loro fonti endogene ed esogene."
+    en: "Describe the main reactive oxygen species (superoxide, hydrogen peroxide, hydroxyl radical, peroxynitrite) and their endogenous and exogenous sources."
+  - it: "Spiegare come i radicali liberi danneggiano lipidi di membrana, proteine, carboidrati e DNA."
+    en: "Explain how free radicals damage membrane lipids, proteins, carbohydrates and DNA."
+  - it: "Elencare le difese antiossidanti enzimatiche e non enzimatiche e la loro sede cellulare."
+    en: "List the enzymatic and non-enzymatic antioxidant defenses and where in the cell they act."
+  - it: "Descrivere la risposta adattativa mediata da Nrf2/Keap1 e il doppio ruolo di p53."
+    en: "Describe the Nrf2/Keap1 adaptive response and the dual role of p53."
+  - it: "Riconoscere esempi clinici: danno da riperfusione, tossicità da paracetamolo, malattia granulomatosa cronica, lipofuscina."
+    en: "Recognize clinical examples: reperfusion injury, acetaminophen toxicity, chronic granulomatous disease, lipofuscin."
+prerequisites: []
+relations:
+  - type: sharesMechanism
+    target: ischemia-reperfusion-injury
+    note:
+      it: "Il danno da riperfusione è in gran parte danno ossidativo: al ritorno dell'ossigeno la produzione di ROS aumenta bruscamente."
+      en: "Reperfusion injury is largely oxidative: ROS production surges when oxygen returns."
+  - type: sharesMechanism
+    target: hypoxic-ischemic-injury
+    note:
+      it: "Nell'ischemia la deplezione di ATP è l'evento primario, ma le ROS mitocondriali contribuiscono al danno."
+      en: "In ischemia ATP depletion is primary, but mitochondrial ROS add to the damage."
+  - type: causes
+    target: pigment-accumulation
+    note:
+      it: "La lipofuscina deriva da lipidi perossidati e proteine ossidate."
+      en: "Lipofuscin derives from peroxidized lipids and oxidized proteins."
+  - type: sharesMechanism
+    target: protein-quality-control
+    note:
+      it: "Le proteine ossidate assumono un ripiegamento anomalo: se il danno è lieve vengono eliminate dal proteasoma, se è grave formano aggregati tossici."
+      en: "Oxidized proteins misfold: mild damage is cleared by the proteasome, severe damage forms toxic aggregates."
+quickCheck:
+  - id: oxidative-injury-q1
+    q:
+      it: "Quale tra le specie reattive dell'ossigeno è la più reattiva e come si forma in presenza di ferro?"
+      en: "Which is the most reactive oxygen species, and how does it form in the presence of iron?"
+    a:
+      it: "Il radicale ossidrile (•OH), che si forma dal perossido di idrogeno e dal Fe²⁺ con la reazione di Fenton."
+      en: "The hydroxyl radical (•OH), formed from hydrogen peroxide and Fe²⁺ in the Fenton reaction."
+    kind: short
+  - id: oxidative-injury-q2
+    q:
+      it: "Quali enzimi convertono il superossido in acqua e dove agiscono?"
+      en: "Which enzymes convert superoxide to water, and where do they act?"
+    a:
+      it: "La superossido dismutasi trasforma il superossido in H₂O₂; la catalasi (nei perossisomi) e la glutatione perossidasi (nel citosol e nei mitocondri) riducono H₂O₂ ad acqua."
+      en: "Superoxide dismutase turns superoxide into H₂O₂; catalase (in peroxisomes) and glutathione peroxidase (in cytosol and mitochondria) reduce H₂O₂ to water."
+    kind: short
+  - id: oxidative-injury-q3
+    q:
+      it: "Perché la perossidazione lipidica è particolarmente dannosa per le membrane e quale vitamina la interrompe?"
+      en: "Why is lipid peroxidation especially damaging to membranes, and which vitamin interrupts it?"
+    a:
+      it: "Perché è una reazione a catena che si autopropaga tra gli acidi grassi insaturi dei fosfolipidi; la vitamina E, liposolubile, la interrompe."
+      en: "Because it is a self-propagating chain reaction among unsaturated fatty acids of phospholipids; fat-soluble vitamin E interrupts it."
+    kind: short
+  - id: oxidative-injury-q4
+    q:
+      it: "In che modo un sovradosaggio di paracetamolo provoca necrosi epatica centrolobulare?"
+      en: "How does an acetaminophen overdose cause centrilobular liver necrosis?"
+    a:
+      it: "Un suo metabolita consuma il glutatione degli epatociti, che non riescono più a neutralizzare i perossidi; il danno è centrolobulare perché lì gli enzimi che metabolizzano il farmaco sono più attivi."
+      en: "Hepatocyte glutathione is used up by a toxic metabolite of the drug, leaving the cells unable to neutralize peroxides; centrilobular cells suffer most because drug-metabolizing enzymes are most active there."
+    kind: free
+  - id: oxidative-injury-q5
+    q:
+      it: "Come viene attivato Nrf2 in condizioni di stress ossidativo?"
+      en: "How is Nrf2 activated under oxidative stress?"
+    a:
+      it: "In condizioni basali Keap1 lo trattiene nel citosol e lo avvia alla degradazione proteasomica; in condizioni di stress le sestrine e la p62 lo liberano, e Nrf2 entra nel nucleo, dove attiva i geni dotati di elementi di risposta antiossidante (ARE)."
+      en: "At rest Keap1 holds it in the cytosol and sends it for proteasomal degradation; under stress sestrins and p62 release it, and Nrf2 enters the nucleus to activate genes with antioxidant response elements (AREs)."
+    kind: free
+selfExplain:
+  - it: "Perché il perossido di idrogeno, poco tossico di per sé, diventa pericoloso in presenza di ferro libero?"
+    en: "Why does hydrogen peroxide, only mildly toxic by itself, become dangerous when free iron is present?"
+  - it: "Perché il ritorno dell'ossigeno dopo un'ischemia può peggiorare il danno invece di ripararlo?"
+    en: "Why can the return of oxygen after ischemia worsen the damage instead of repairing it?"
+  - it: "Che cosa insegna la malattia granulomatosa cronica sul ruolo fisiologico delle ROS?"
+    en: "What does chronic granulomatous disease teach about the physiologic role of ROS?"
+chain:
+  - pathology:
+      it: "Sovradosaggio di paracetamolo: deplezione del glutatione e necrosi epatica centrolobulare"
+      en: "Acetaminophen overdose: glutathione depletion and centrilobular liver necrosis"
+    sign:
+      it: "Encefalopatia epatica da insufficienza epatica acuta"
+      en: "Hepatic encephalopathy from acute liver failure"
+    lab:
+      it: "Iperammoniemia"
+      en: "Raised blood ammonia"
+images:
+  - id: oxidative-injury-micro-1
+    role: micro
+  - id: oxidative-injury-micro-2
+    role: micro
+  - id: oxidative-injury-micro-3
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "1"
+    pages: "5, 19, 30-37, 42-44"
+  - source: rubin-8e
+    chapter: "2"
+    pages: "74"
+  - source: rubin-8e
+    chapter: "6"
+    pages: "314"
+  - source: rubin-8e
+    chapter: "20"
+    pages: "850, 880"
+lastUpdated: 2026-11-03
+status: published

@@ -1,0 +1,143 @@
+id: intracellular-accumulations
+module: g01
+tier: core
+kind: process
+names:
+  it: "Accumuli intracellulari"
+  en: "Intracellular accumulations"
+  eponyms: []
+  synonyms:
+    it: ["Accumulo intracellulare", "Depositi intracellulari", "Immagazzinamento intracellulare", "Malattie da accumulo (tesaurismosi)"]
+    en: ["Intracellular storage", "Intracellular deposits", "Storage disorders"]
+  abbreviations: []
+summary:
+  it: "Ritenzione all'interno delle cellule di sostanze normali o anomale (lipidi, glicogeno, proteine, pigmenti), dovuta a eccesso di apporto, difetto enzimatico, proteine mal ripiegate o materiale non digeribile."
+  en: "Retention inside cells of normal or abnormal substances (lipids, glycogen, proteins, pigments) from excess supply, an enzyme defect, misfolded proteins or indigestible material."
+lenses:
+  system: [general, liver-biliary, cns, heart]
+  process: [intracellular-accumulation, cellular-adaptation, cell-injury, proteostasis]
+  pattern: [fatty-change, intracellular-inclusions, hyaline-change, pigment-deposits]
+  presentation: [organomegaly, jaundice, incidental-finding]
+  marker: [special-stains, pas, perls-prussian-blue, oil-red-o-sudan]
+  group: [metabolic, genetic, degenerative]
+learningObjectives:
+  - it: "Classificare gli accumuli intracellulari secondo i quattro meccanismi: eccesso di una sostanza normale, difetto enzimatico, proteina anomala, materiale non digeribile."
+    en: "Classify intracellular accumulations by the four mechanisms: excess of a normal substance, enzyme defect, abnormal protein, indigestible material."
+  - it: "Spiegare come il deficit di un'idrolasi acida lisosomiale causi una malattia da accumulo lisosomiale e perché ne risentano soprattutto cervello e cuore."
+    en: "Explain how a lysosomal acid hydrolase deficiency causes lysosomal storage diseases and why brain and heart suffer most."
+  - it: "Descrivere come le proteine mal ripiegate si accumulino e danneggino la cellula, prendendo come esempio il deficit di α1-antitripsina."
+    en: "Describe how misfolded proteins accumulate and injure the cell, using α1-antitrypsin deficiency as the example."
+  - it: "Riconoscere al microscopio i principali accumuli e scegliere la colorazione speciale adatta (PAS con e senza diastasi, blu di Prussia, Sudan su sezioni congelate)."
+    en: "Recognize the main accumulations under the microscope and choose the right special stain (PAS with and without diastase, Prussian blue, Sudan on frozen section)."
+  - it: "Distinguere gli accumuli innocui (antracosi, emosiderosi) da quelli che danneggiano la cellula (emocromatosi, aggregati proteici)."
+    en: "Distinguish harmless accumulations (anthracosis, hemosiderosis) from injurious ones (hemochromatosis, protein aggregates)."
+prerequisites: []
+relations:
+  - type: prerequisiteOf
+    target: pigment-accumulation
+    note:
+      it: "I pigmenti (lipofuscina, emosiderina, melanina, carbone) sono una classe particolare di accumulo intracellulare."
+      en: "Pigments (lipofuscin, hemosiderin, melanin, carbon) are a special class of intracellular accumulation."
+  - type: sharesMechanism
+    target: fatty-change
+    note:
+      it: "La steatosi è il prototipo dell'accumulo dovuto a uno squilibrio tra apporto e smaltimento di una sostanza normale."
+      en: "Fatty change is the prototype of storage from an imbalance between supply and disposal of a normal substance."
+  - type: differentialOf
+    target: hydropic-swelling
+    note:
+      it: "Citoplasma chiaro per eccesso d'acqua, a differenza del materiale accumulato, che si dimostra con colorazioni speciali."
+      en: "Clear cytoplasm from excess water versus stored material demonstrable with special stains."
+  - type: sharesMechanism
+    target: protein-quality-control
+    note:
+      it: "Gli aggregati proteici si formano quando chaperoni, proteasoma e autofagia non riescono a eliminare le proteine mal ripiegate."
+      en: "Protein aggregates form when chaperones, proteasomes and autophagy fail to clear misfolded proteins."
+  - type: prerequisiteOf
+    target: lysosomal-storage-diseases
+  - type: prerequisiteOf
+    target: alpha1-antitrypsin-deficiency
+quickCheck:
+  - id: intracellular-accumulations-q1
+    q:
+      it: "Quali sono i quattro meccanismi generali che portano a un accumulo intracellulare?"
+      en: "What are the four general mechanisms that lead to intracellular accumulation?"
+    a:
+      it: "Eccesso di una sostanza normale che supera la capacità di smaltimento, difetto ereditario di un enzima di degradazione, proteina anomala che non può essere esportata né degradata, materiale non digeribile (pigmenti, particelle)."
+      en: "Excess of a normal substance overwhelming disposal, an inherited defect of a degradative enzyme, an abnormal protein that can be neither exported nor degraded, indigestible material (pigments, particles)."
+    kind: short
+  - id: intracellular-accumulations-q2
+    q:
+      it: "Perché i globuli di α1-antitripsina restano PAS-positivi dopo digestione con diastasi, mentre il glicogeno scompare?"
+      en: "Why do α1-antitrypsin globules stay PAS-positive after diastase treatment while glycogen disappears?"
+    a:
+      it: "La diastasi digerisce il glicogeno; i globuli sono aggregati di proteina mutante mal ripiegata, che la diastasi non rimuove."
+      en: "Diastase digests glycogen; the globules are aggregates of misfolded mutant protein, which diastase does not remove."
+    kind: short
+  - id: intracellular-accumulations-q3
+    q:
+      it: "Perché nella malattia di von Gierke c'è ipoglicemia e nella malattia di Pompe no?"
+      en: "Why is there hypoglycemia in von Gierke disease but not in Pompe disease?"
+    a:
+      it: "Nella malattia di von Gierke manca la glucosio-6-fosfatasi, quindi il fegato non riesce a liberare glucosio; nella malattia di Pompe è difettosa solo la degradazione del glicogeno nei lisosomi, mentre il suo metabolismo nel citosol non è toccato e la glicemia resta normale."
+      en: "In von Gierke disease glucose-6-phosphatase is missing, so the liver cannot release glucose; in Pompe disease only lysosomal glycogen breakdown is defective; glycogen turnover in the cytosol is untouched, so blood glucose stays normal."
+    kind: short
+  - id: intracellular-accumulations-q4
+    q:
+      it: "Che differenza c'è tra emosiderosi ed emocromatosi ereditaria per quanto riguarda il danno cellulare?"
+      en: "How do hemosiderosis and hereditary hemochromatosis differ with respect to cell injury?"
+    a:
+      it: "Nell'emosiderosi il ferro in eccesso, per definizione, non danneggia le cellule; nell'emocromatosi lo stress ossidativo indotto dal ferro danneggia cuore, fegato, pancreas e testicoli e aumenta il rischio di carcinoma epatico."
+      en: "In hemosiderosis the excess iron by definition does not injure cells; in hemochromatosis iron-driven oxidative stress damages heart, liver, pancreas and testes and raises the risk of liver cancer."
+    kind: free
+selfExplain:
+  - it: "Perché il deficit di α1-antitripsina danneggia sia il fegato sia il polmone, pur trattandosi di un'unica proteina?"
+    en: "Why does α1-antitrypsin deficiency damage both the liver and the lung, though only one protein is involved?"
+  - it: "In che modo un aggregato proteico può, di per sé, ridurre la capacità della cellula di eliminare altre proteine danneggiate?"
+    en: "How can a protein aggregate itself worsen the cell's ability to clear other damaged proteins?"
+  - it: "Perché la lipofuscina si accumula soprattutto in neuroni e cardiomiociti e poco nelle cellule che si dividono spesso?"
+    en: "Why does lipofuscin build up mainly in neurons and cardiac myocytes and little in frequently dividing cells?"
+chain:
+  - pathology:
+      it: "α1-antitripsina mutante (PiZ) trattenuta nel reticolo endoplasmatico degli epatociti"
+      en: "Mutant (PiZ) α1-antitrypsin retained in the hepatocyte endoplasmic reticulum"
+    sign:
+      it: "Ittero colestatico neonatale; più tardi cirrosi ed enfisema"
+      en: "Neonatal cholestatic jaundice; later cirrhosis and emphysema"
+    lab:
+      it: "Iperbilirubinemia coniugata; alla biopsia, globuli epatocitari PAS-positivi resistenti alla diastasi"
+      en: "Conjugated hyperbilirubinemia; PAS-positive, diastase-resistant hepatocyte globules on biopsy"
+  - pathology:
+      it: "Accumulo di glicogeno nel fegato per deficit di glucosio-6-fosfatasi (malattia di von Gierke)"
+      en: "Hepatic glycogen storage from glucose-6-phosphatase deficiency (von Gierke disease)"
+    sign:
+      it: "Epatomegalia marcata e crisi ipoglicemiche nel lattante"
+      en: "Marked hepatomegaly and hypoglycemic episodes in infancy"
+    lab:
+      it: "Ipoglicemia; acidosi lattica durante infezioni intercorrenti"
+      en: "Hypoglycemia; lactic acidosis during intercurrent infections"
+images:
+  - id: intracellular-accumulations-gross-1
+    role: gross
+    pairWith: intracellular-accumulations-micro-1
+  - id: intracellular-accumulations-micro-1
+    role: micro
+  - id: intracellular-accumulations-micro-2
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "1"
+    pages: "4-7, 16, 30, 36-38"
+  - source: rubin-8e
+    chapter: "6"
+    pages: "274, 279-280"
+  - source: rubin-8e
+    chapter: "7"
+    pages: "336"
+  - source: rubin-8e
+    chapter: "20"
+    pages: "878"
+lastUpdated: 2026-11-03
+status: published

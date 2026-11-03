@@ -1,0 +1,155 @@
+id: pigment-accumulation
+module: g01
+tier: core
+kind: process
+names:
+  it: "Accumulo di pigmenti"
+  en: "Pigment accumulation"
+  eponyms: ["Perls", "Dubin–Johnson"]
+  synonyms:
+    it: ["Pigmentazioni patologiche", "Pigmenti endogeni ed esogeni", "Lipofuscina (pigmento da usura)", "Emosiderina", "Emosiderosi", "Melanina", "Bilirubina", "Antracosi"]
+    en: ["Pathologic pigmentation", "Endogenous and exogenous pigments", "Lipofuscin (wear-and-tear pigment)", "Hemosiderin", "Hemosiderosis", "Melanin", "Bilirubin", "Anthracosis"]
+  abbreviations: []
+summary:
+  it: "Deposito intracellulare di sostanze colorate, endogene (lipofuscina, emosiderina, melanina, bilirubina) o esogene (carbone): di solito innocuo, diventa dannoso nel sovraccarico di ferro e nell'iperbilirubinemia neonatale."
+  en: "Retention of colored substances in cells, endogenous (lipofuscin, hemosiderin, melanin, bilirubin) or exogenous (carbon), usually harmless but injurious in iron overload and neonatal hyperbilirubinemia."
+lenses:
+  system: [general, liver-biliary, respiratory, skin, hematolymphoid]
+  process: [intracellular-accumulation, oxidative-injury]
+  pattern: [pigment-deposits]
+  presentation: [jaundice, incidental-finding]
+  marker: [special-stains, perls-prussian-blue, laboratory]
+  group: [degenerative, metabolic, toxic-environmental, genetic]
+learningObjectives:
+  - it: "Classificare i pigmenti in endogeni ed esogeni e riconoscere lipofuscina, emosiderina, melanina, bilirubina e carbone in base al colore, alla sede cellulare e alle colorazioni speciali."
+    en: "Classify pigments as endogenous or exogenous and recognize lipofuscin, hemosiderin, melanin, bilirubin and carbon by color, cellular location and stain."
+  - it: "Spiegare perché la lipofuscina si accumula con l'età e come può alimentare il danno ossidativo."
+    en: "Explain why lipofuscin accumulates with age and how it can feed oxidative injury."
+  - it: "Descrivere come il ferro si deposita sotto forma di ferritina ed emosiderina e distinguere l'emosiderosi dall'emocromatosi ereditaria in base alla sede del ferro e al danno d'organo."
+    en: "Describe iron storage as ferritin and hemosiderin and distinguish hemosiderosis from hereditary hemochromatosis by iron location and organ damage."
+  - it: "Ricostruire il percorso dall'eme alla bilirubina coniugata, elencare i meccanismi dell'ittero e spiegare il rischio di kernittero."
+    en: "Trace the path from heme to conjugated bilirubin and list the mechanisms of jaundice and the risk of kernicterus."
+  - it: "Usare la colorazione di Perls (blu di Prussia) per distinguere il ferro dagli altri pigmenti bruni."
+    en: "Use the Perls (Prussian blue) stain to separate iron from the other brown pigments."
+prerequisites: [intracellular-accumulations]
+relations:
+  - type: sharesMechanism
+    target: oxidative-injury
+    note:
+      it: "Il ferro non legato genera radicali liberi tramite la reazione di Fenton, e la lipofuscina è un residuo di lipidi e proteine ossidati."
+      en: "Free iron generates radicals through the Fenton reaction, and lipofuscin is a residue of oxidized lipids and proteins."
+  - type: sharesMechanism
+    target: autophagy
+    note:
+      it: "La lipofuscina è materiale che l'autofagia e i lisosomi non riescono a degradare."
+      en: "Lipofuscin is material that autophagy and lysosomes fail to degrade."
+  - type: prerequisiteOf
+    target: hereditary-hemochromatosis
+  - type: prerequisiteOf
+    target: anthracosis
+  - type: prerequisiteOf
+    target: cellular-aging
+quickCheck:
+  - id: pigment-accumulation-q1
+    q:
+      it: "Un pigmento bruno nel citoplasma diventa blu con la colorazione di Perls: di che cosa si tratta?"
+      en: "A brown cytoplasmic pigment turns blue with the Perls stain: what is it?"
+    a:
+      it: "Emosiderina, cioè ferro depositato sotto forma di ferritina parzialmente denaturata e aggregata."
+      en: "Hemosiderin, that is, iron stored as partly denatured, aggregated ferritin."
+    kind: short
+  - id: pigment-accumulation-q2
+    q:
+      it: "Che cosa sono le «cellule da vizio cardiaco» e che cosa indicano?"
+      en: "What are heart failure cells and what do they indicate?"
+    a:
+      it: "Macrofagi alveolari carichi di emosiderina; indicano una congestione polmonare passiva da insufficienza ventricolare sinistra."
+      en: "Alveolar macrophages loaded with hemosiderin; they indicate passive pulmonary congestion from left ventricular failure."
+    kind: short
+  - id: pigment-accumulation-q3
+    q:
+      it: "In quali cellule si accumula soprattutto la lipofuscina e perché?"
+      en: "In which cells does lipofuscin mainly accumulate, and why?"
+    a:
+      it: "Nelle cellule che non si dividono più o che si rinnovano lentamente (neuroni, cardiomiociti, epatociti), perché il residuo ossidato non viene degradato né diluito dalla divisione cellulare."
+      en: "In cells that no longer divide or renew slowly (neurons, cardiac myocytes, hepatocytes), because the oxidized residue is neither degraded nor diluted by cell division."
+    kind: free
+  - id: pigment-accumulation-q4
+    q:
+      it: "Qual è la differenza fondamentale tra emosiderosi ed emocromatosi ereditaria?"
+      en: "What is the key difference between hemosiderosis and hereditary hemochromatosis?"
+    a:
+      it: "Nell'emosiderosi il ferro è aumentato ma le cellule non sono danneggiate; nell'emocromatosi il ferro si accumula nelle cellule parenchimali e causa danno d'organo (cirrosi, diabete, cardiopatia)."
+      en: "In hemosiderosis iron is increased but cells are not injured; in hemochromatosis iron accumulates in parenchymal cells and causes organ damage (cirrhosis, diabetes, heart disease)."
+    kind: short
+selfExplain:
+  - it: "Perché la bilirubina non coniugata è pericolosa per il cervello del neonato ma quasi innocua nell'adulto?"
+    en: "Why is unconjugated bilirubin dangerous to the newborn brain but nearly harmless in the adult?"
+  - it: "Come fa la carenza di epcidina a trasformare un normale deposito di ferro in un danno d'organo?"
+    en: "How does a lack of hepcidin turn normal iron storage into organ damage?"
+  - it: "Perché il carbone inalato resta per tutta la vita nei linfonodi ilari senza causare fibrosi?"
+    en: "Why does inhaled carbon stay in the hilar lymph nodes for life without causing fibrosis?"
+chain:
+  - pathology:
+      it: "Accumulo di ferro nelle cellule parenchimali (emocromatosi ereditaria)"
+      en: "Iron accumulation in parenchymal cells (hereditary hemochromatosis)"
+    sign:
+      it: "Pigmentazione cutanea, diabete, epatomegalia, scompenso cardiaco"
+      en: "Skin pigmentation, diabetes, enlarged liver, heart failure"
+    lab:
+      it: "Sideremia aumentata, saturazione della transferrina nettamente aumentata (fino al 100%), ferritina sierica molto elevata"
+      en: "Raised serum iron, markedly raised transferrin saturation (up to 100%), very high serum ferritin"
+  - pathology:
+      it: "Iperproduzione di bilirubina da emolisi"
+      en: "Bilirubin overproduction from hemolysis"
+    sign:
+      it: "Ittero cutaneo e sclerale"
+      en: "Jaundice of skin and sclerae"
+    lab:
+      it: "Aumento prevalente della bilirubina non coniugata"
+      en: "Rise mainly in unconjugated bilirubin"
+  - pathology:
+      it: "Macrofagi alveolari carichi di emosiderina da congestione polmonare cronica"
+      en: "Hemosiderin-laden alveolar macrophages from chronic pulmonary congestion"
+    sign:
+      it: "Dispnea in un paziente con insufficienza ventricolare sinistra"
+      en: "Dyspnea in a patient with left ventricular failure"
+    lab:
+      it: "Macrofagi alveolari positivi alla colorazione di Perls nel tessuto polmonare"
+      en: "Perls-positive alveolar macrophages in lung tissue"
+images:
+  - id: pigment-accumulation-gross-1
+    role: gross
+  - id: pigment-accumulation-micro-1
+    role: micro
+  - id: pigment-accumulation-micro-2
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "1"
+    pages: "4-7, 33"
+  - source: rubin-8e
+    chapter: "6"
+    pages: "268"
+  - source: rubin-8e
+    chapter: "7"
+    pages: "326"
+  - source: rubin-8e
+    chapter: "8"
+    pages: "381"
+  - source: rubin-8e
+    chapter: "17"
+    pages: "641"
+  - source: rubin-8e
+    chapter: "18"
+    pages: "732"
+  - source: rubin-8e
+    chapter: "20"
+    pages: "842-847, 872-876"
+  - source: rubin-8e
+    chapter: "26"
+    pages: "1123"
+lastUpdated: 2026-11-03
+status: published

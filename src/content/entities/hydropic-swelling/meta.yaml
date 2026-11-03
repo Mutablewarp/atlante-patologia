@@ -1,0 +1,112 @@
+id: hydropic-swelling
+module: g01
+tier: core
+kind: process
+names:
+  it: "Rigonfiamento idropico (degenerazione idropica)"
+  en: "Hydropic (cellular) swelling"
+  eponyms: []
+  synonyms:
+    it: ["Rigonfiamento cellulare", "Degenerazione idropica", "Degenerazione vacuolare", "Rigonfiamento torbido (termine storico)", "Tumefazione torbida (termine storico)"]
+    en: ["Cellular swelling", "Hydropic change", "Hydropic degeneration", "Vacuolar degeneration", "Cloudy swelling (historical term)"]
+  abbreviations: []
+summary:
+  it: "Aumento reversibile del volume cellulare per ingresso di acqua, causato dall'insufficienza della pompa Na+/K+ e dalla perdita del controllo ionico di membrana."
+  en: "Reversible increase in cell volume from water influx, caused by failure of the Na+/K+ pump and of membrane ion control."
+lenses:
+  system: [general]
+  process: [cell-injury, reversible-injury, hypoxic-ischemic-injury]
+  pattern: [cellular-swelling]
+  presentation: []
+  marker: []
+  group: [degenerative]
+learningObjectives:
+  - it: "Spiegare come un difetto della membrana plasmatica, della pompa Na+/K+-ATPasi o della produzione di ATP porti all'ingresso di acqua nella cellula."
+    en: "Explain how failure of the plasma membrane, the Na+/K+-ATPase or ATP supply leads to water entering the cell."
+  - it: "Descrivere l'aspetto al microscopio ottico e le alterazioni ultrastrutturali del rigonfiamento idropico."
+    en: "Describe the light-microscopic appearance and the ultrastructural changes of hydropic swelling."
+  - it: "Distinguere il rigonfiamento idropico (reversibile) dalla steatosi e dalla necrosi coagulativa (irreversibile)."
+    en: "Distinguish hydropic swelling (reversible) from fatty change and from coagulative necrosis (irreversible)."
+  - it: "Riconoscere esempi d'organo: fegato, edema cerebrale citotossico, epitelio esofageo."
+    en: "Recognize organ examples: liver, cytotoxic cerebral edema, esophageal epithelium."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: fatty-change
+    note:
+      it: "Entrambe reversibili: citoplasma pallido e diffusamente rigonfio contro vacuoli lipidici distinti."
+      en: "Both reversible: diffusely swollen pale cytoplasm versus discrete lipid vacuoles."
+  - type: differentialOf
+    target: coagulative-necrosis
+    note:
+      it: "Danno reversibile e morte cellulare a confronto: nucleo normale nel primo; picnosi, carioressi e cariolisi nella seconda."
+      en: "Reversible injury versus cell death: normal nucleus versus pyknosis, karyorrhexis and karyolysis."
+quickCheck:
+  - id: hydropic-swelling-q1
+    q:
+      it: "Quali tre elementi, se compromessi, portano al rigonfiamento idropico?"
+      en: "Which three components, when they fail, lead to hydropic swelling?"
+    a:
+      it: "La membrana plasmatica, la pompa del sodio (Na+/K+-ATPasi) e l'ATP che la alimenta."
+      en: "The plasma membrane, the sodium pump (Na+/K+-ATPase) and the ATP that fuels it."
+    kind: short
+  - id: hydropic-swelling-q2
+    q:
+      it: "Al microscopio elettronico, in quale compartimento si raccoglie la maggior parte dell'acqua in eccesso?"
+      en: "In which compartment does most of the excess water collect on electron microscopy?"
+    a:
+      it: "Nelle cisterne del reticolo endoplasmatico, che appaiono dilatate."
+      en: "In the endoplasmic reticulum cisternae, which appear dilated."
+    kind: short
+  - id: hydropic-swelling-q3
+    q:
+      it: "Quale reperto al microscopio ottico aiuta a distinguere il rigonfiamento idropico dalla necrosi coagulativa?"
+      en: "Which light-microscopic finding helps distinguish hydropic swelling from coagulative necrosis?"
+    a:
+      it: "Nel rigonfiamento idropico il nucleo resta normale e in sede; nella necrosi compaiono picnosi, carioressi o cariolisi e il citoplasma diventa più eosinofilo."
+      en: "In hydropic swelling the nucleus stays normal and in place; in necrosis there is pyknosis, karyorrhexis or karyolysis and the cytoplasm becomes more eosinophilic."
+    kind: short
+  - id: hydropic-swelling-q4
+    q:
+      it: "Perché l'ischemia provoca rigonfiamento cellulare?"
+      en: "Why does ischemia cause cell swelling?"
+    a:
+      it: "Senza ossigeno la cellula non produce ATP per via aerobica; la pompa Na+/K+ si ferma, il Na+ si accumula e l'acqua lo segue per mantenere l'isosmolarità."
+      en: "Without oxygen the cell cannot make ATP aerobically; the Na+/K+ pump stalls, Na+ accumulates and water follows to keep the cell isosmotic."
+    kind: free
+selfExplain:
+  - it: "Perché l'accumulo di sodio, e non l'ingresso diretto di acqua, è l'evento primario del rigonfiamento idropico?"
+    en: "Why is sodium accumulation, rather than water entry itself, the primary event in hydropic swelling?"
+  - it: "Perché il rigonfiamento idropico è considerato reversibile, mentre la comparsa di alterazioni nucleari indica morte cellulare?"
+    en: "Why is hydropic swelling considered reversible, whereas the appearance of nuclear changes signals cell death?"
+  - it: "In che modo l'acidosi intracellulare dell'ischemia aggrava prima il carico di sodio e poi quello di calcio?"
+    en: "How does intracellular acidosis in ischemia worsen the sodium load and then the calcium load?"
+chain: []
+images:
+  - id: hydropic-swelling-micro-1
+    role: micro
+  - id: g01-cell-injury-timeline
+    role: diagram
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "1"
+    pages: "3-5, 36, 38-39, 42-43"
+  - source: rubin-8e
+    chapter: "7"
+    pages: "344"
+  - source: rubin-8e
+    chapter: "14"
+    pages: "562-563, 579"
+  - source: rubin-8e
+    chapter: "19"
+    pages: "770"
+  - source: rubin-8e
+    chapter: "20"
+    pages: "864, 868"
+  - source: rubin-8e
+    chapter: "31"
+    pages: "1411"
+lastUpdated: 2026-11-03
+status: published

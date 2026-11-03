@@ -1,0 +1,559 @@
+entity: fatty-change
+claims:
+  - claimId: fatty-change-c001
+    section: definition
+    statement: "Steatosis is abnormal accumulation of triglycerides within the cytoplasm of parenchymal cells."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c002
+    section: definition
+    statement: "Abnormal fat storage is most conspicuous in the liver; heart, kidney and skeletal muscle also store fat."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c003
+    section: definition
+    statement: "Hepatocytes normally contain some fat; fatty liver is seen as cytoplasmic lipid droplets."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c004
+    section: definition
+    statement: "Almost all chronic alcoholics accumulate fat in their hepatocytes."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "867" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c005
+    section: etiology
+    statement: "Steatosis results from an imbalance between delivery or synthesis of lipid in the hepatocyte and its oxidation or export."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "867" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c006
+    section: etiology
+    statement: "Ethanol alters multiple steps of hepatic lipid metabolism and is a classic cause of fatty liver."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "867" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c007
+    section: etiology
+    statement: "Risk factors for NAFLD are obesity, type 2 diabetes, hyperlipidemia and metabolic syndrome; insulin resistance appears to be the strongest."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c008
+    section: etiology
+    statement: "In diabetes, delivery of free fatty acids to the liver is increased."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c009
+    section: etiology
+    statement: "Carbon tetrachloride, corticosteroids and antimetabolites such as methotrexate can cause macrovesicular steatosis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c010
+    section: etiology
+    statement: "Fatty liver also occurs in hepatitis C."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "868" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c011
+    section: etiology
+    statement: "In kwashiorkor the liver is markedly fatty."
+    sourceRef: { source: rubin-8e, chapter: "8", pages: "381" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c012
+    section: etiology
+    statement: "Acute fatty liver of pregnancy and Reye syndrome feature microvesicular steatosis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880-882" }
+    status: verified
+    secondSource: { source: rubin-8e, locator: "ch. 14, printed p. 575-577 (acute fatty liver of pregnancy)" }
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c013
+    section: pathogenesis
+    statement: "Hepatocytes take up free fatty acids released from adipose tissue and dietary fat arriving as chylomicrons and free fatty acids."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "867" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c014
+    section: pathogenesis
+    statement: "Fatty acids in hepatocytes are either oxidized in mitochondria or converted to triglycerides in the ER."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "867" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c015
+    section: pathogenesis
+    statement: "Newly made triglycerides are secreted in lipoproteins, mainly VLDL, or stored."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "867" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c016
+    section: pathogenesis
+    statement: "Increased free fatty acid delivery to the liver occurs in diabetes and with ethanol-induced lipolysis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "867" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c017
+    section: pathogenesis
+    statement: "Reduced mitochondrial oxidation of fatty acids contributes to fat accumulation."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "867" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c018
+    section: pathogenesis
+    statement: "Impaired release of lipoproteins contributes to fat accumulation."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "867" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c019
+    section: pathogenesis
+    statement: "Ethanol increases fatty acid synthesis and triglyceride production, decreases mitochondrial fatty acid oxidation and impairs lipoprotein release."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "867" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c020
+    section: pathogenesis
+    statement: "Most fat in the liver after chronic alcohol intake derives from the diet."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "867" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c021
+    section: pathogenesis
+    statement: "In kwashiorkor carbohydrate provides lipid but protein deficiency limits apoprotein synthesis needed to export lipid."
+    sourceRef: { source: rubin-8e, chapter: "8", pages: "381" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c022
+    section: pathogenesis
+    statement: "Microvesicular steatosis is a manifestation of severe injury to subcellular structures, chiefly mitochondria."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c023
+    section: pathogenesis
+    statement: "In acute fatty liver of pregnancy, a fetal fatty acid oxidation defect (classically LCHAD deficiency) returns fatty acids to the mother and overwhelms her beta-oxidation."
+    sourceRef: { source: rubin-8e, chapter: "14", pages: "575" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c024
+    section: gross
+    statement: "With heavy alcohol use the liver becomes yellow and enlarged, weighing up to three times normal."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "868" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c025
+    section: gross
+    statement: "Water and protein, not fat alone, contribute to the increased liver weight."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "868" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c026
+    section: micro
+    statement: "Fat accumulation ranges from small scattered droplets to coalesced droplets filling the cytoplasm of most cells."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "868" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c027
+    section: micro
+    statement: "When fat coalesces into one large droplet, the hepatocyte looks like an adipocyte with its nucleus compressed at the periphery."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "868" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c028
+    section: micro
+    statement: "Microvesicular fat consists of many tiny droplets that leave the nucleus in a central position."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c029
+    section: micro
+    statement: "In acute fatty liver of pregnancy the hepatocytes are enlarged and contain microvesicular fat."
+    sourceRef: { source: rubin-8e, chapter: "14", pages: "577" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c030
+    section: micro
+    statement: "Electron microscopy of alcoholic fatty liver shows direct ethanol toxicity: enlarged or giant mitochondria and proliferated smooth ER."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "868" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c031
+    section: ancillary
+    statement: "Lipid is dissolved during routine tissue processing, leaving empty spaces in sections."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "721" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c032
+    section: ancillary
+    statement: "Frozen sections stained with Sudan red show fat as red-staining material."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "336" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c033
+    section: ancillary
+    statement: "Oil red O stains neutral lipid red."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1411, 1425" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c034
+    section: ancillary
+    statement: "PAS identifies glycogen."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1411" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c035
+    section: clinical
+    statement: "Uncomplicated alcoholic fatty liver produces few or no symptoms even when the histologic change is marked."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "868" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c036
+    section: clinical
+    statement: "Many NAFLD patients are asymptomatic with only moderately increased liver enzymes."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c037
+    section: clinical
+    statement: "Acute fatty liver of pregnancy presents almost only in the third trimester with abdominal pain, jaundice and anorexia."
+    sourceRef: { source: rubin-8e, chapter: "14", pages: "575" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c038
+    section: clinical
+    statement: "Reye syndrome is an uncommon childhood disease, typically after a febrile viral illness such as influenza or varicella, combining microvesicular steatosis, liver failure and encephalopathy."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "882" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c039
+    section: clinical
+    statement: "In carnitine deficiency fatty acids are not transported into mitochondria and lipid droplets accumulate massively in muscle fibers."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1425" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c040
+    section: clinical
+    statement: "Systemic carnitine deficiency can also affect the heart and liver."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1425" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c041
+    section: diagnosis
+    statement: "Steatosis is recognized morphologically as lipid droplets in hepatocyte cytoplasm; since fat itself is harmless and progression runs through steatohepatitis and fibrosis, those are what a biopsy must assess."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
+    status: verified
+    secondSource: { source: rubin-8e, locator: "ch. 20, printed p. 870 (NAFLD progression via NASH and fibrosis) and p. 880 (fat per se does not injure hepatocytes)" }
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c042
+    section: diagnosis
+    statement: "Drugs can reproduce nearly every liver injury pattern, so a detailed history of medications and supplements is required."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c043
+    section: diagnosis
+    statement: "Trichrome staining highlights pericellular fibrosis in steatohepatitis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "869" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c044
+    section: prognosis
+    statement: "Fat storage is reversible and excess cytoplasmic fat itself has not been shown to impair cell function."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c045
+    section: prognosis
+    statement: "Alcoholic fatty liver is fully and rapidly reversible on abstinence and does not progress on its own."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "867-868" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c046
+    section: prognosis
+    statement: "Alcoholic hepatitis usually arises on a fatty liver but fat accumulation has not been shown to predispose to it."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "868" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c047
+    section: prognosis
+    statement: "NAFLD ranges from simple steatosis through NASH to bridging fibrosis and cirrhosis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c048
+    section: prognosis
+    statement: "Steatosis often disappears once cirrhosis develops, so NAFLD likely underlies many cryptogenic cirrhoses."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c049
+    section: prognosis
+    statement: "Macrovesicular fat is harmless in itself, so the underlying disease determines the outcome; microvesicular fat indicates mitochondrial injury and is often linked to severe, sometimes fatal, liver disease."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c050
+    section: prognosis
+    statement: "The fatty liver of kwashiorkor reverts to normal and does not progress to chronic liver disease."
+    sourceRef: { source: rubin-8e, chapter: "8", pages: "382" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c051
+    section: differential
+    statement: "In hydropic swelling the cytoplasm is enlarged and pale from excess water, held mainly in dilated ER cisternae, and the nucleus stays central."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c052
+    section: differential
+    statement: "In poorly controlled diabetes hepatocytes and renal proximal tubule cells may be swollen by glycogen."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c053
+    section: differential
+    statement: "Fat necrosis affects adipose tissue after pancreatitis or trauma; fatty acids precipitate with calcium as soaps and appear as chalky white areas."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "39-40" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c054
+    section: differential
+    statement: "Amiodarone causes a steatohepatitis-like picture: enlarged foamy hepatocytes and Kupffer cells from phospholipid accumulation, with abundant Mallory-Denk hyalins."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c055
+    section: differential
+    statement: "Steatohepatitis shows ballooned hepatocytes, Mallory-Denk hyalins, neutrophils and pericellular fibrosis in addition to fat."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "868-870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c056
+    section: high-yield
+    statement: "Steatosis is triglyceride storage in the cytoplasm of parenchymal cells, especially hepatocytes."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c057
+    section: high-yield
+    statement: "Fat accumulates from increased fatty acid supply, decreased mitochondrial oxidation or decreased lipoprotein export."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "867" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c058
+    section: high-yield
+    statement: "Macrovesicular steatosis displaces the nucleus peripherally and is linked to alcohol, NAFLD, corticosteroids and methotrexate."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "868-870, 880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c059
+    section: high-yield
+    statement: "Microvesicular steatosis has small vacuoles and a central nucleus, reflects mitochondrial injury, and occurs in AFLP and Reye syndrome."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880-882" }
+    status: verified
+    secondSource: { source: rubin-8e, locator: "ch. 14, printed p. 575-577 (acute fatty liver of pregnancy)" }
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c060
+    section: high-yield
+    statement: "Lipid vacuoles appear empty in routine sections; fat is demonstrated by oil red O or Sudan stains on frozen sections."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "336" }
+    status: verified
+    secondSource: { source: rubin-8e, locator: "ch. 31, printed p. 1411 (oil red O); ch. 18, printed p. 721 (lipid lost in processing)" }
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c061
+    section: high-yield
+    statement: "Fatty change is reversible when the cause is removed."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "867" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c062
+    section: traps
+    statement: "Steatosis is lipid inside living cells, while fat necrosis is death of adipocytes with soap formation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5, 39-40" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c063
+    section: traps
+    statement: "Microvesicular steatosis, despite smaller droplets, is the pattern associated with severe liver disease."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c064
+    section: traps
+    statement: "In alcoholic liver disease cell injury reflects ethanol toxicity, and fat accumulation has not been shown to cause alcoholic hepatitis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "868" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c065
+    section: traps
+    statement: "Steatosis often disappears once NAFLD reaches cirrhosis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c066
+    section: traps
+    statement: "Both microvesicular steatosis and hydropic swelling keep the nucleus in a central position."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    secondSource: { source: rubin-8e, locator: "ch. 1, printed p. 3 (hydropic swelling, nucleus stays in place)" }
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c067
+    section: mnemonics
+    statement: "Fatty change arises from increased fatty acid supply, failed beta-oxidation and impaired export as lipoproteins."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "867" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c068
+    section: mnemonics
+    statement: "Microvesicular steatosis reflects mitochondrial injury, keeps the nucleus central and can accompany fatal liver disease."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "verifier-agent"
+    date: 2026-11-03
+  - claimId: fatty-change-c069
+    section: clinical
+    statement: "Reye syndrome has been linked to aspirin given during the preceding illness, but it is recognized to be more complex than simple aspirin toxicity."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "882" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-03

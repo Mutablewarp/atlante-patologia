@@ -1,0 +1,121 @@
+id: protein-quality-control
+module: g01
+tier: extended
+kind: concept
+names:
+  it: "Controllo di qualità delle proteine (sistema ubiquitina-proteasoma, chaperoni)"
+  en: "Protein quality control (ubiquitin–proteasome system, chaperones)"
+  eponyms: []
+  synonyms:
+    it: ["Proteostasi", "Omeostasi proteica", "Sistema ubiquitina-proteasoma", "Chaperoni molecolari", "Proteine da shock termico"]
+    en: ["Proteostasis", "Protein homeostasis", "Ubiquitin–proteasome system", "Molecular chaperones", "Heat shock proteins"]
+  abbreviations: ["UPS", "HSP", "ERAD", "DUB"]
+summary:
+  it: "Rete cellulare che ripiega le proteine, ripara quelle danneggiate ed elimina quelle mal ripiegate o non più necessarie, grazie a chaperoni (proteine da shock termico), ubiquitinazione, proteasoma e autofagia."
+  en: "Network of chaperones (heat shock proteins), ubiquitination, the proteasome and autophagy that folds proteins, repairs damaged ones and removes those that are misfolded or no longer needed."
+lenses:
+  system: [general, cns]
+  process: [proteostasis, cell-injury, intracellular-accumulation, autophagy]
+  pattern: [intracellular-inclusions]
+  presentation: []
+  marker: [special-stains, pas]
+  group: [degenerative, genetic, neoplastic]
+learningObjectives:
+  - it: "Descrivere le tappe dell'ubiquitinazione (E1, E2, E3) e il ruolo delle deubiquitinasi."
+    en: "Describe the steps of ubiquitination (E1, E2, E3) and the role of deubiquitinating enzymes."
+  - it: "Spiegare struttura e funzioni del proteasoma 26S e in che cosa se ne differenzia l'immunoproteasoma."
+    en: "Explain the structure and functions of the 26S proteasome and how the immunoproteasome differs."
+  - it: "Illustrare come le proteine da shock termico (HSP70, HSP40, HSP90, piccole HSP) ripiegano, proteggono e smistano le proteine."
+    en: "Explain how heat shock proteins (HSP70, HSP40, HSP90, small HSPs) fold, protect and route proteins."
+  - it: "Spiegare perché gli aggregati solubili sono più tossici delle grandi inclusioni insolubili e come gli aggregati vengono smaltiti."
+    en: "Explain why soluble aggregates are more toxic than large insoluble inclusions and how aggregates are cleared."
+  - it: "Collegare i difetti o gli eccessi del controllo di qualità a malattie concrete (neurodegenerazione, fibrosi cistica, deficit di α1-antitripsina, sarcopenia, mieloma)."
+    en: "Link defects or excesses of quality control to concrete diseases (neurodegeneration, cystic fibrosis, α1-antitrypsin deficiency, sarcopenia, myeloma)."
+prerequisites: []
+relations:
+  - type: prerequisiteOf
+    target: autophagy
+    note:
+      it: "Gli aggregati troppo grandi per il proteasoma vengono ubiquitinati e consegnati agli autofagosomi tramite p62."
+      en: "Aggregates too large for the proteasome are ubiquitinated and handed to autophagosomes through p62."
+  - type: prerequisiteOf
+    target: alpha1-antitrypsin-deficiency
+    note:
+      it: "Esempio classico di proteina di secrezione mal ripiegata trattenuta nell'epatocita."
+      en: "Classic example of a misfolded secretory protein retained in the hepatocyte."
+  - type: prerequisiteOf
+    target: amyloidosis
+    note:
+      it: "Le proteine mal ripiegate a foglietto β possono depositarsi fuori dalle cellule come amiloide."
+      en: "Misfolded β-sheet proteins can be deposited outside cells as amyloid."
+quickCheck:
+  - id: protein-quality-control-q1
+    q:
+      it: "Quali tre enzimi legano l'ubiquitina a una proteina, e quale di essi decide quale proteina viene marcata?"
+      en: "Which three enzymes attach ubiquitin to a protein, and which of them decides which protein is tagged?"
+    a:
+      it: "E1 (attiva l'ubiquitina), E2 (la coniuga) e ligasi E3 (la trasferisce sul bersaglio); la specificità dipende dalla ligasi E3."
+      en: "E1 (activates ubiquitin), E2 (conjugates it), E3 ligase (transfers it to the target); specificity comes from the E3 ligase."
+    kind: short
+  - id: protein-quality-control-q2
+    q:
+      it: "Quale segnale viene riconosciuto con la massima efficienza dal proteasoma 26S, e da quale sua componente?"
+      en: "Which signal does the 26S proteasome recognize most efficiently, and which part of it does the recognizing?"
+    a:
+      it: "Una catena di quattro ubiquitine legate tramite K48, riconosciuta dalle particelle regolatrici 19S."
+      en: "A chain of four K48-linked ubiquitins, recognized by the 19S regulatory particles."
+    kind: short
+  - id: protein-quality-control-q3
+    q:
+      it: "Perché i piccoli aggregati solubili sono più pericolosi delle grandi inclusioni insolubili?"
+      en: "Why are small soluble aggregates more dangerous than large insoluble inclusions?"
+    a:
+      it: "Possono perforare la membrana plasmatica e quelle mitocondriali (innescando l'apoptosi) e indurre il mal ripiegamento di proteine normali; le grandi inclusioni sono meno citotossiche."
+      en: "They can perforate the plasma and mitochondrial membranes (triggering apoptosis) and make normal proteins misfold; large inclusions are less cytotoxic."
+    kind: short
+  - id: protein-quality-control-q4
+    q:
+      it: "Perché la fibrosi cistica da mutazione ΔF508 è una malattia da perdita di funzione e non da accumulo?"
+      en: "Why is cystic fibrosis due to ΔF508 a loss-of-function disease rather than a storage disease?"
+    a:
+      it: "La CFTR mutata si ripiega male e viene degradata dal proteasoma prima di raggiungere la membrana: non si accumula, ma viene semplicemente a mancare il canale del cloro."
+      en: "The mutant CFTR misfolds and is degraded by the proteasome before reaching the membrane, so it does not accumulate; the chloride channel is simply missing."
+    kind: free
+selfExplain:
+  - it: "Perché gli inibitori del proteasoma uccidono in modo selettivo le cellule del mieloma plasmacellulare?"
+    en: "Why do proteasome inhibitors selectively kill plasma cell myeloma cells?"
+  - it: "In che modo un aggregato proteico insolubile può di per sé peggiorare la capacità della cellula di smaltire altre proteine danneggiate?"
+    en: "How can an insoluble protein aggregate itself worsen the cell's ability to clear other damaged proteins?"
+  - it: "Perché le proteine da shock termico, utili per la cellula normale, possono favorire tumori e infezioni virali?"
+    en: "Why can heat shock proteins, helpful to normal cells, favor tumors and viral infections?"
+chain:
+  - pathology:
+      it: "CFTR mutata (ΔF508) mal ripiegata e degradata dal proteasoma prima di raggiungere la membrana"
+      en: "Misfolded mutant CFTR (ΔF508) degraded by the proteasome before reaching the membrane"
+    sign:
+      it: "Sudore salato; muco denso nelle vie aeree e nel pancreas"
+      en: "Salty sweat; thick mucus in the airways and pancreas"
+    lab:
+      it: "Cloro sudorale aumentato; mutazioni di CFTR all'analisi genetica"
+      en: "Raised sweat chloride; CFTR mutations on genetic testing"
+images:
+  - id: protein-quality-control-diagram-1
+    role: diagram
+  - id: protein-quality-control-micro-1
+    role: micro
+  - id: protein-quality-control-micro-2
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "1"
+    pages: "7-16, 36-38"
+  - source: rubin-8e
+    chapter: "6"
+    pages: "284-286"
+  - source: rubin-8e
+    chapter: "15"
+    pages: "582"
+lastUpdated: 2026-11-03
+status: published
