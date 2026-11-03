@@ -56,6 +56,8 @@ async function init(root: HTMLElement) {
 
   function render(announce: boolean) {
     history.replaceState(null, '', ids.length ? `?ids=${ids.join(',')}` : location.pathname);
+    for (const o of select.options) o.disabled = ids.includes(o.value);
+    if (select.selectedOptions[0]?.disabled) select.value = [...select.options].find((o) => !o.disabled)?.value ?? '';
 
     chosenList.replaceChildren(
       ...ids.map((id) => {
@@ -105,7 +107,7 @@ async function init(root: HTMLElement) {
   root.querySelector('[data-compare-form]')!.addEventListener('submit', (ev) => {
     ev.preventDefault();
     const id = select.value;
-    if (ids.includes(id)) return;
+    if (!id || ids.includes(id)) return;
     if (ids.length >= 4) {
       status.textContent = S.max;
       return;
