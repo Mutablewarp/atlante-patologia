@@ -23,3 +23,69 @@ terms:
     label:
       it: "Colorazioni speciali"
       en: "Special stains"
+  - id: perls-prussian-blue
+    order: 41
+    label:
+      it: "Colorazione di Perls (blu di Prussia)"
+      en: "Perls (Prussian blue) stain"
+    parent: special-stains
+  - id: von-kossa
+    order: 42
+    label:
+      it: "Colorazione di von Kossa"
+      en: "von Kossa stain"
+    parent: special-stains
+  - id: alizarin-red
+    order: 43
+    label:
+      it: "Rosso alizarina"
+      en: "Alizarin red"
+    parent: special-stains
+  - id: oil-red-o-sudan
+    order: 44
+    label:
+      it: "Oil Red O / Sudan (su congelato)"
+      en: "Oil Red O / Sudan (frozen section)"
+    parent: special-stains
+  - id: pas
+    order: 45
+    label:
+      it: "PAS (acido periodico-Schiff)"
+      en: "PAS (periodic acid-Schiff)"
+    parent: special-stains
+  - id: fontana-masson
+    order: 46
+    label:
+      it: "Fontana-Masson (melanina)"
+      en: "Fontana-Masson (melanin)"
+    parent: special-stains
+  - id: ziehl-neelsen
+    order: 47
+    label:
+      it: "Ziehl-Neelsen (bacilli alcol-acido resistenti)"
+      en: "Ziehl-Neelsen (acid-fast bacilli)"
+    parent: special-stains
+  - id: cleaved-caspase-3
+    order: 11
+    label:
+      it: "Caspasi-3 clivata"
+      en: "Cleaved caspase-3"
+    parent: ihc
+  - id: tunel
+    order: 21
+    label:
+      it: "TUNEL (frammentazione del DNA)"
+      en: "TUNEL (DNA fragmentation)"
+    parent: molecular
+  - id: necrosis-serum-markers
+    order: 31
+    label:
+      it: "Marcatori sierici di necrosi (troponine, transaminasi, CK, lipasi)"
+      en: "Serum markers of necrosis (troponins, aminotransferases, CK, lipase)"
+    parent: laboratory
+  - id: calcium-phosphate
+    order: 32
+    label:
+      it: "Calcemia e fosfatemia"
+      en: "Serum calcium and phosphate"
+    parent: laboratory

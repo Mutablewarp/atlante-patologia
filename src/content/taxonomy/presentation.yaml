@@ -48,3 +48,23 @@ terms:
     label:
       it: "Linfoadenopatia"
       en: "Lymphadenopathy"
+  - id: ischemic-event
+    order: 100
+    label:
+      it: "Evento ischemico (infarto)"
+      en: "Ischemic event (infarct)"
+  - id: organomegaly
+    order: 110
+    label:
+      it: "Organomegalia"
+      en: "Organomegaly"
+  - id: hypercalcemia
+    order: 120
+    label:
+      it: "Ipercalcemia"
+      en: "Hypercalcemia"
+  - id: incidental-finding
+    order: 130
+    label:
+      it: "Reperto occasionale"
+      en: "Incidental finding"
