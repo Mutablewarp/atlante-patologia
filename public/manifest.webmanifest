@@ -1,12 +1,20 @@
 {
+  "id": "/atlante-patologia/",
   "name": "Atlante di Patologia",
   "short_name": "Atlante",
   "description": "Atlante di anatomia patologica libero e bilingue per studenti di medicina.",
+  "lang": "it",
+  "dir": "ltr",
   "start_url": "/atlante-patologia/",
   "scope": "/atlante-patologia/",
   "display": "standalone",
   "background_color": "#f6f1e7",
   "theme_color": "#f6f1e7",
-  "lang": "it",
-  "icons": [{ "src": "/atlante-patologia/favicon.svg", "sizes": "any", "type": "image/svg+xml" }]
+  "categories": ["education", "medical"],
+  "icons": [
+    { "src": "/atlante-patologia/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/atlante-patologia/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any" },
+    { "src": "/atlante-patologia/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" },
+    { "src": "/atlante-patologia/favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
 }

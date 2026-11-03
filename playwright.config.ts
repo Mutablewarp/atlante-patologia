@@ -44,6 +44,8 @@ const projects = wanted.flatMap((engine) =>
 
 export default defineConfig({
   testDir: 'tests/e2e',
+  // These two need a draft-fixture build; they have their own configs (npm run test:e2e:study / test:e2e:offline).
+  testIgnore: ['study.spec.ts', 'offline.spec.ts'],
   fullyParallel: true,
   forbidOnly: CI,
   retries: CI ? 1 : 0,

@@ -6,8 +6,8 @@ export const REPO_URL = 'https://github.com/Mutablewarp/atlante-patologia';
 
 export const tCommon = defineStrings({
   tagline: {
-    it: 'Atlante di anatomia patologica libero e bilingue per chi studia medicina.',
-    en: 'A free, bilingual pathology atlas for medical students.',
+    it: 'Atlante di anatomia patologica libero e bilingue per chi studia medicina. Dopo la prima visita si apre anche senza connessione, e i capitoli si possono scaricare per studiarli offline.',
+    en: 'A free, bilingual pathology atlas for medical students. After your first visit it opens without a connection too, and chapters can be downloaded to study offline.',
   },
   skipToContent: { it: 'Vai al contenuto', en: 'Skip to content' },
   language: { it: 'Lingua', en: 'Language' },

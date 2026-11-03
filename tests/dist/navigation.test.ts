@@ -15,7 +15,9 @@ const NOT_FOUND = `${BASE}404.html`;
 // Tab roots are linked from the primary navigation on every page by design;
 // the orphan rule is about content pages, so they are exempt (with / and 404).
 const TAB_ROOTS = LANGS.flatMap((l) => ['', 'atlas/', 'study/', 'search/', 'me/'].map((p) => `${BASE}${l}/${p}`));
-const ORPHAN_EXEMPT = new Set([ROOT, NOT_FOUND, ...TAB_ROOTS]);
+// The offline fallback is served by the service worker in place of a missing page, like 404.
+const OFFLINE = LANGS.map((l) => `${BASE}${l}/offline/`);
+const ORPHAN_EXEMPT = new Set([ROOT, NOT_FOUND, ...TAB_ROOTS, ...OFFLINE]);
 
 describe('navigation graph (content links only)', () => {
   it('finds the built pages', () => {

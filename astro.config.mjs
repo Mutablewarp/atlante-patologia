@@ -19,8 +19,10 @@ export default defineConfig({
     sitemap({
       // Same codes as the <link rel="alternate" hreflang> tags in BaseLayout.
       i18n: { defaultLocale: 'it', locales: { it: 'it', en: 'en' } },
-      // The root `/` is only a language picker (D027), not an Italian page.
-      filter: (page) => !page.endsWith('/404/') && new URL(page).pathname !== '/atlante-patologia/',
+      // The root `/` is only a language picker (D027), not an Italian page; 404 and the
+      // offline fallback (served by the service worker) are not landing pages.
+      filter: (page) =>
+        !page.endsWith('/404/') && !/\/(it|en)\/offline\/$/.test(page) && new URL(page).pathname !== '/atlante-patologia/',
     }),
   ],
   devToolbar: { enabled: false },

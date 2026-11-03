@@ -10,7 +10,7 @@
   },
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && pagefind --site dist",
+    "build": "astro build && pagefind --site dist && node scripts/sw-manifest.mjs",
     "preview": "astro preview",
     "check": "astro check",
     "test": "vitest run --project unit",
@@ -22,7 +22,10 @@
     "test:dist": "vitest run --project dist",
     "test:e2e": "playwright test",
     "lighthouse": "node scripts/lighthouse-assert.mjs",
-    "licenses": "node scripts/license-scan.mjs"
+    "licenses": "node scripts/license-scan.mjs",
+    "test:e2e:study": "playwright test -c tests/e2e/study.config.ts",
+    "test:e2e:offline": "playwright test -c tests/e2e/offline.config.ts",
+    "icons": "node scripts/icons.mjs"
   },
   "simple-git-hooks": {
     "pre-commit": "node scripts/guard.mjs --staged && node scripts/no-verbatim.mjs --staged"
