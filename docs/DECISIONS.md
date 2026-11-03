@@ -82,7 +82,7 @@ Format: ID — decision — reason — status. "Deviation" marks a departure fro
 | H04 | Glossary, path and image files whose name starts with `_` are fixtures, visible only with `PREVIEW_DRAFTS=1` (these collections have no `status`); `_`-prefixed image files are excluded from the asset glob and inlined only in preview | Keeps fixtures out of production `dist/` | accepted |
 | H05 | "Try to recall first" is an optional, remembered reading mode (toolbar toggle): each section shows a generic localized prompt and the section is revealed on demand | Avoids hiding content from readers who did not ask for retrieval practice | accepted |
 | H06 | `?via=lens:term` context is server-rendered as `<template>`s (breadcrumb + prev/next per lens term of the entity) and swapped in by a tiny script; canonical unchanged | No client-side data fetch; strings stay in the i18n modules | accepted |
-| H07 | `<ap-path-progress entities="a b c">` receives **space-separated** entity ids (patterns excluded); fallback text stays visible until the element upgrades | Token-list convention of HTML attributes | accepted — align with the study layer |
+| H07 | `<ap-path-progress entities="a b c">` receives **space-separated** entity ids (patterns excluded); fallback text stays visible until the element upgrades. The element splits on `/[\s,]+/` (`parseIdList`, unit-tested), so comma lists also work | Token-list convention of HTML attributes | accepted — reconciled with the study layer at integration |
 
 ## Study engine (feat/study-engine, 2026-10-10)
 

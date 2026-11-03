@@ -4,7 +4,7 @@
  *
  *   <ap-recent></ap-recent>                       last 20 viewed cards
  *   <ap-resume></ap-resume>                       last card + section anchor
- *   <ap-path-progress entities="a,b,c"></ap-path-progress>   read / in-review count with a bar
+ *   <ap-path-progress entities="a b c"></ap-path-progress>   read / in-review count with a bar
  *   <ap-due-count></ap-due-count>                 reviews due today
  *   <ap-export-reminder></ap-export-reminder>     gentle backup reminder (14 days, dismissible)
  *
@@ -14,7 +14,7 @@ import { fmt, isLang, type Lang } from '../i18n/index.ts';
 import { tS } from '../i18n/study.ts';
 import { SECTIONS, QUICK_CHECK } from '../i18n/sections.ts';
 import { getAll, getSetting, setSetting, hasData, reminderDue } from '../lib/db.ts';
-import { entitiesRead, dueCount } from '../lib/progress.ts';
+import { entitiesRead, dueCount, parseIdList } from '../lib/progress.ts';
 import { langPath } from '../lib/url.ts';
 
 const lang = (): Lang => (isLang(document.documentElement.lang) ? (document.documentElement.lang as Lang) : 'it');
@@ -78,7 +78,7 @@ class ApPathProgress extends Live {
     if (this.isConnected) void this.update();
   }
   async render() {
-    const ids = (this.getAttribute('entities') ?? '').split(',').map((s) => s.trim()).filter(Boolean);
+    const ids = parseIdList(this.getAttribute('entities'));
     if (!ids.length) return;
     const read = entitiesRead(await getAll('readProgress'));
     const inReview = new Set((await getAll('cards')).map((c) => c.entity));

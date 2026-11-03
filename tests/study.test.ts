@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { createEmptyCard } from 'ts-fsrs';
 import { clozeCards, qaCards, occlusionCards, cardId, listItems } from '../src/lib/cards.ts';
 import { buildQueue, rate, toStored, toCard, Rating, State, type CardRecord } from '../src/lib/srs.ts';
-import { emptyFsrs, entitiesRead, SECTION_COUNT, dueCount, isMastered } from '../src/lib/progress.ts';
+import { emptyFsrs, entitiesRead, SECTION_COUNT, dueCount, isMastered, parseIdList } from '../src/lib/progress.ts';
 import { mergeRecords, makeExport, checkExport, reminderDue, SCHEMA_VERSION } from '../src/lib/db.ts';
 import { buildPlan } from '../src/lib/planner.ts';
 import { interleave, weakQuestions, entityAccuracy } from '../src/lib/quiz.ts';
@@ -148,5 +148,15 @@ describe('quiz selection', () => {
     ];
     expect(entityAccuracy(attempts).get('b')).toEqual({ right: 1, total: 1 });
     expect(weakQuestions(qs, attempts).map((q) => q.id)).toEqual(['q4']);
+  });
+});
+
+describe('parseIdList (<ap-path-progress entities>)', () => {
+  it('accepts space-separated, comma-separated and mixed lists', () => {
+    expect(parseIdList('a b  c')).toEqual(['a', 'b', 'c']);
+    expect(parseIdList('a,b, c')).toEqual(['a', 'b', 'c']);
+    expect(parseIdList(' a,\n b c, ')).toEqual(['a', 'b', 'c']);
+    expect(parseIdList(null)).toEqual([]);
+    expect(parseIdList('')).toEqual([]);
   });
 });

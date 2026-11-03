@@ -10,6 +10,9 @@ export const SECTION_COUNT = SECTIONS.length + 1;
 /** An entity counts as read when this share of its sections was scrolled through. */
 export const READ_SHARE = 0.8;
 
+/** Entity ids from an attribute list: space- and/or comma-separated (H07, D045). */
+export const parseIdList = (value: string | null): string[] => (value ?? '').split(/[\s,]+/).filter(Boolean);
+
 /** entity id → number of distinct sections read. */
 export function sectionsRead(rows: readonly { entity: string; section: string }[]): Map<string, number> {
   const seen = new Map<string, Set<string>>();
