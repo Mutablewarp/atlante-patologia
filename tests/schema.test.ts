@@ -26,7 +26,9 @@ describe('content data files match the schemas', () => {
   });
   it('sources.yaml is valid', () => {
     const src = sourceSchema.array().parse(read('sources.yaml'));
-    expect(src.filter((s) => s.kind === 'article' && s.doi)).toHaveLength(8);
+    // content modules add article sources over time; every article must be traceable by DOI or PMID
+    expect(src.filter((s) => s.kind === 'article' && s.doi).length).toBeGreaterThanOrEqual(8);
+    expect(src.filter((s) => s.kind === 'article' && !s.doi && !s.pmid).map((s) => s.id)).toEqual([]);
   });
   it('the fixture entity is valid and stays a draft', () => {
     const fx = entitySchema.parse(read('entities/_fixture-demo/meta.yaml'));

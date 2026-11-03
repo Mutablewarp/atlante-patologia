@@ -17,7 +17,8 @@
     "guard": "node scripts/guard.mjs --tree",
     "contrast": "node scripts/contrast-check.mjs",
     "prepare": "simple-git-hooks",
-    "no-verbatim": "node scripts/no-verbatim.mjs"
+    "no-verbatim": "node scripts/no-verbatim.mjs",
+    "validate:entity": "node scripts/validate-entity.mjs"
   },
   "simple-git-hooks": {
     "pre-commit": "node scripts/guard.mjs --staged"
