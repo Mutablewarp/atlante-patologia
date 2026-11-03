@@ -93,10 +93,11 @@ for (const path of PAGES) {
       await page.keyboard.press(tabKey(browserName));
       const s = await focusState(page);
       if (!s) break; // focus left the document: we went all the way round
-      // Firefox keeps activeElement on the last element when focus leaves the page;
+      // Firefox keeps activeElement on the last element when focus leaves the page, so in
+      // Firefox only, a stuck last element ends the walk (a trap there goes unseen);
       // anywhere else, Tab that does not move focus is a keyboard trap (WCAG 2.1.2).
       if (s.same) {
-        if (!s.last) problems.push(`focus did not move (keyboard trap?) at <${s.tag}> "${s.label}"`);
+        if (!s.last || browserName !== 'firefox') problems.push(`focus did not move (keyboard trap?) at <${s.tag}> "${s.label}"`);
         break;
       }
       const id = `${s.tag}:${s.label}:${i}`;
