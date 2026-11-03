@@ -14,9 +14,12 @@ const MAX_STOPS = 80;
 // Smooth scrolling would still be moving when focus is measured.
 test.use({ reducedMotion: 'reduce' });
 
-type Stop = { tag: string; skip: boolean; label: string; visible: boolean; obscured: boolean; after: boolean; inViewport: boolean };
+type Stop = { tag: string; skip: boolean; label: string; visible: boolean; obscured: boolean; after: boolean; inViewport: boolean; same: boolean; last: boolean };
 
-/** Describe the focused element; `after` = it follows the previous stop in DOM order. */
+/**
+ * Describe the focused element; `after` = it follows the previous stop in DOM order,
+ * `same` = Tab did not move focus, `last` = no tabbable element follows it.
+ */
 async function focusState(page: Page): Promise<Stop | null> {
   return page.evaluate(async () => {
     // Measure after the browser has applied :focus styles and scrolled.
@@ -27,6 +30,12 @@ async function focusState(page: Page): Promise<Stop | null> {
     const prev = w.__prev;
     w.__prev = el;
     const after = !prev || !!(prev.compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING);
+    const tabbable = (e: HTMLElement) =>
+      e.tabIndex >= 0 && !e.matches(':disabled') && !e.closest('[inert]') && e.checkVisibility({ visibilityProperty: true });
+    const candidates = document.querySelectorAll<HTMLElement>(
+      'a[href], area[href], button, input, select, textarea, summary, iframe, audio[controls], video[controls], [tabindex], [contenteditable]',
+    );
+    const last = ![...candidates].some((o) => el.compareDocumentPosition(o) & Node.DOCUMENT_POSITION_FOLLOWING && tabbable(o));
     const cs = getComputedStyle(el);
     const visible =
       (cs.outlineStyle !== 'none' && parseFloat(cs.outlineWidth) >= 2) || (cs.boxShadow !== 'none' && cs.boxShadow !== '');
@@ -51,6 +60,8 @@ async function focusState(page: Page): Promise<Stop | null> {
       obscured: pts.every(covered),
       after,
       inViewport: r.bottom > 0 && r.top < innerHeight && r.right > 0 && r.left < innerWidth,
+      same: prev === el,
+      last,
     };
   });
 }
@@ -82,6 +93,12 @@ for (const path of PAGES) {
       await page.keyboard.press(tabKey(browserName));
       const s = await focusState(page);
       if (!s) break; // focus left the document: we went all the way round
+      // Firefox keeps activeElement on the last element when focus leaves the page;
+      // anywhere else, Tab that does not move focus is a keyboard trap (WCAG 2.1.2).
+      if (s.same) {
+        if (!s.last) problems.push(`focus did not move (keyboard trap?) at <${s.tag}> "${s.label}"`);
+        break;
+      }
       const id = `${s.tag}:${s.label}:${i}`;
       if (seen.has(id)) break;
       seen.add(id);
