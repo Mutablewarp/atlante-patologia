@@ -1,0 +1,61 @@
+id: pigment-accumulation-micro-2
+file: pigment-accumulation-micro-2.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Kupffer_cell_with_hemosiderin_and_hepatocyte_with_lipofuscin,_iron_stain,_original.jpg
+author: Mikael Häggström, M.D.
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-10-10
+modifications: "Used the unlabelled 'original' version of the file (2048 × 1532 px); downscaled to 1600 × 1197 px and re-encoded as JPEG, which also strips the camera EXIF metadata. No crop, no colour change."
+attributionText: "Mikael Häggström, M.D., via Wikimedia Commons, CC0 1.0 (public domain dedication)"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: Perls Prussian blue (iron stain)
+magnification: high power
+caption:
+  it: >-
+    Fegato, colorazione di Perls per il ferro (blu di Prussia), forte ingrandimento: è il test che risolve il dubbio
+    lasciato dall'EE. Il fondo è quasi incolore, quindi l'occhio va subito ai colori che contano. In alto a sinistra la
+    cellula di Kupffer è piena di zolle di un blu intenso: il ferro ferrico dell'emosiderina reagisce con il
+    ferrocianuro di potassio e forma il blu di Prussia; il suo nucleo è rosa per la colorazione di contrasto. Al centro
+    a destra l'epatocita, attorno a un nucleo rosa, conserva granuli bruno-dorati che NON sono diventati blu: è
+    lipofuscina, che non contiene ferro colorabile e mantiene il suo colore naturale. Altri epatociti del campo, in
+    basso a sinistra e a destra, mostrano gli stessi granuli dorati non colorati. Regola di lettura: un pigmento bruno
+    che diventa blu con il Perls è emosiderina; uno che resta bruno è altro (lipofuscina, melanina, bilirubina...). La
+    colorazione indica anche dove si trova il ferro: se sta soprattutto nei macrofagi depone per una demolizione di
+    globuli rossi o per trasfusioni ripetute, mentre un carico pesante dentro gli epatociti è tipico
+    dell'emocromatosi ereditaria.
+  en: >-
+    Liver, Perls stain for iron (Prussian blue), high power: this is the test that settles the doubt left by H&E. The
+    background is almost colourless, so the eye goes straight to the colours that matter. At the upper left the
+    Kupffer cell is packed with clumps of intense blue: the ferric iron of hemosiderin reacts with potassium
+    ferrocyanide and forms Prussian blue; its nucleus is pink from the counterstain. In the centre right the
+    hepatocyte, around a pink nucleus, keeps golden-brown granules that have NOT turned blue: this is lipofuscin, which
+    contains no stainable iron and keeps its natural colour. Other hepatocytes in the field, at the lower left and on
+    the right, show the same unstained golden granules. Reading rule: a brown pigment that turns blue with Perls is
+    hemosiderin; one that stays brown is something else (lipofuscin, melanin, bilirubin...). The stain also shows where
+    the iron sits: mostly inside macrophages fits red-cell breakdown or repeated transfusions, whereas a heavy load
+    inside hepatocytes is typical of hereditary hemochromatosis.
+alt:
+  it: >-
+    Micrografia di fegato con colorazione per il ferro su fondo grigio-rosato quasi incolore: in alto a sinistra una
+    cellula con zolle irregolari blu intenso e un nucleo rosa; al centro a destra un grande epatocita con nucleo rosa
+    circondato da piccoli granuli bruno-dorati non colorati in blu.
+  en: >-
+    Iron-stained liver micrograph on an almost colourless greyish-pink background: at the upper left a cell with
+    irregular, intense blue clumps and a pink nucleus; in the centre right a large hepatocyte with a pink nucleus
+    surrounded by small golden-brown granules that are not stained blue.
+annotations:
+  - id: kupffer-prussian-blue
+    label: { it: Cellula di Kupffer con emosiderina blu (Perls positiva), en: Kupffer cell with blue hemosiderin (Perls-positive) }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.30, 0.25, 0.38, 0.23, 0.42, 0.30, 0.41, 0.43, 0.34, 0.52, 0.26, 0.48, 0.27, 0.36]
+  - id: hepatocyte-lipofuscin-negative
+    label: { it: Epatocita con lipofuscina dorata (Perls negativa), en: Hepatocyte with golden lipofuscin (Perls-negative) }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.50, 0.47, 0.58, 0.43, 0.70, 0.46, 0.71, 0.60, 0.63, 0.68, 0.52, 0.66]

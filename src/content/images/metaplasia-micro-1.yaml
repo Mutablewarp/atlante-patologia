@@ -1,0 +1,66 @@
+id: metaplasia-micro-1
+file: metaplasia-micro-1.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Histopathology_of_Barrett%27s_esophagus,_original.jpg
+author: Mikael Häggström, M.D.
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-10-10
+modifications: "Unannotated version of the file; downscaled from 2048 × 1800 px to 1600 px width and re-encoded as JPEG (metadata stripped); no crop, no colour change."
+attributionText: "Mikael Häggström, M.D., via Wikimedia Commons, CC0 1.0 (public domain dedication)"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: intermediate power
+caption:
+  it: >-
+    Esofago di Barrett, cioè metaplasia intestinale della mucosa dell'esofago distale, EE a medio ingrandimento.
+    Leggi l'immagine da sinistra a destra. A sinistra c'è il rivestimento nativo dell'esofago: epitelio pavimentoso
+    pluristratificato non cheratinizzato, spesso, rosa e compatto. Subito a destra il rivestimento cambia di colpo e
+    diventa un epitelio colonnare a strato singolo che forma fossette e cripte, con una lamina propria ricca di cellule
+    infiammatorie. Al centro una cripta è tappezzata da cellule caliciformi: grandi vacuoli di muco rotondi, chiari e
+    appena grigio-azzurri, intercalati alle cellule colonnari. Sono il reperto che documenta la metaplasia
+    intestinale. A destra l'epitelio colonnare di tipo gastrico (foveolare) ha una mucina apicale pallida ma nessuna
+    cellula caliciforme. Tranello: subito a destra della giunzione squamo-colonnare le cellule colonnari hanno nuclei
+    più grandi, scuri e affollati; in questo caso si tratta di alterazioni reattive, non di displasia. Il perché: il
+    reflusso cronico di succo gastrico danneggia di continuo l'epitelio
+    pavimentoso, che viene sostituito da un epitelio ghiandolare più resistente all'acido. È un adattamento
+    protettivo, ma è anche il terreno su cui possono svilupparsi displasia e adenocarcinoma.
+  en: >-
+    Barrett esophagus, that is, intestinal metaplasia of the distal oesophageal mucosa, H&E at intermediate power.
+    Read the image from left to right. On the left is the native lining of the oesophagus: thick, compact, pink,
+    non-keratinising stratified squamous epithelium. Just to the right the lining changes abruptly into a
+    single-layered columnar epithelium that forms pits and crypts, over a lamina propria full of inflammatory cells.
+    In the centre one crypt is lined by goblet cells: large, round, clear mucin vacuoles with a faint grey-blue tint,
+    set between the columnar cells. They are the finding that documents intestinal metaplasia. On the right, the
+    gastric-type (foveolar) columnar epithelium has pale apical mucin but no goblet cells. Pitfall: just to the right
+    of the squamous-columnar junction the columnar cells have larger, darker, crowded nuclei; in this case they are a
+    reactive change, not dysplasia. Why it happens: chronic
+    reflux of gastric juice keeps damaging the squamous epithelium, which is replaced by a glandular epithelium that
+    resists acid better. The change is protective, but it is also the ground on which dysplasia and adenocarcinoma
+    can develop.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina di mucosa esofagea: a sinistra un epitelio pavimentoso spesso e rosa; al centro
+    e a destra un epitelio colonnare viola che forma cripte allungate, una delle quali contiene molte cellule con
+    grandi vacuoli rotondi e chiari; in alto, sfondo bianco.
+  en: >-
+    H&E micrograph of oesophageal mucosa: on the left a thick pink squamous epithelium; in the centre and on the right
+    a purple columnar epithelium forming elongated crypts, one of which contains many cells with large round clear
+    vacuoles; white background at the top.
+annotations:
+  - id: native-squamous-epithelium
+    label: { it: Epitelio pavimentoso nativo dell'esofago, en: Native squamous epithelium of the oesophagus }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.0, 0.37, 0.12, 0.39, 0.24, 0.44, 0.28, 0.48, 0.30, 0.60, 0.37, 0.75, 0.36, 0.97, 0.0, 0.97] }
+  - id: goblet-cell-crypt
+    label: { it: Cripta con cellule caliciformi (metaplasia intestinale), en: Crypt with goblet cells (intestinal metaplasia) }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.465, 0.29, 0.52, 0.28, 0.56, 0.42, 0.60, 0.50, 0.66, 0.52, 0.69, 0.66, 0.72, 0.80, 0.70, 0.89, 0.64, 0.90, 0.60, 0.80, 0.57, 0.70, 0.52, 0.60, 0.48, 0.45]
+  - id: gastric-foveolar-epithelium
+    label: { it: Epitelio colonnare di tipo gastrico (foveolare), en: Gastric-type (foveolar) columnar epithelium }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.66, 0.30, 0.78, 0.24, 0.92, 0.23, 0.99, 0.30, 0.99, 0.62, 0.86, 0.60, 0.78, 0.55, 0.70, 0.48, 0.66, 0.42] }

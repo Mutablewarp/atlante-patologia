@@ -1,0 +1,67 @@
+# License check (2026-10-10): the Commons file page tags this upload CC BY 3.0, but its Credit field quotes the
+# source article's license. The article (Virchows Archiv 2019, PMC7028821) is CC BY 4.0 per its JATS
+# <permissions> block (Europe PMC full text), so the creators' own grant, CC BY 4.0, is recorded here.
+id: ischemia-reperfusion-injury-micro-2
+file: ischemia-reperfusion-injury-micro-2.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Histological_features_of_myocardial_infarction_with_reperfusion.jpg
+author: >-
+  Katarzyna Michaud, Cristina Basso, Giulia d'Amati, Carla Giordano, Ivana Kholová, Stephen D. Preston, Stefania Rizzo,
+  Sara Sabatasso, Mary N. Sheppard, Aryan Vink, Allard C. van der Wal, on behalf of the Association for European
+  Cardiovascular Pathology (AECVP)
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-10-10
+modifications: >-
+  Cropped panel (b) out of the four-panel figure (Fig. 7 of the source article); a 53 px strip at the left edge was
+  removed to drop the panel letter. Re-encoded as JPEG at the original pixel size; no color change.
+attributionText: >-
+  Michaud K, Basso C, d'Amati G, et al. (AECVP), "Diagnosis of myocardial infarction at autopsy: AECVP reappraisal in
+  the light of the current clinical classification", Virchows Archiv 2019, doi:10.1007/s00428-019-02662-1, Fig. 7b,
+  via Wikimedia Commons, CC BY 4.0; cropped
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: medium power
+caption:
+  it: >-
+    Infarto miocardico riperfuso, EE: danno del microcircolo con emorragia interstiziale. A piccolo ingrandimento
+    riconosci le fibre miocardiche allungate che attraversano il campo in orizzontale, in alto e in basso. Tra le
+    fibre, al posto del normale interstizio sottile, c'è un'ampia fascia piena di globuli rossi liberi, piccoli e
+    arancio-rosati: sono usciti dai vasi. Al centro, verso destra, un piccolo vaso tagliato di traverso contiene globuli
+    rossi e leucociti; nuclei scuri di cellule infiammatorie sono sparsi in tutto il campo. Concetto chiave: la
+    riperfusione riporta sangue in capillari già lesi dall'ischemia, che lo lasciano stravasare. Per questo l'infarto
+    riperfuso è emorragico, e i neutrofili vi arrivano prima e lo invadono tutto, non solo ai margini.
+  en: >-
+    Reperfused myocardial infarct, H&E: microvascular damage with interstitial hemorrhage. At low power, recognize the
+    long myocardial fibers crossing the field horizontally at the top and bottom. Between the fibers, where there
+    should be only a thin interstitium, a broad band is packed with free, small, orange-pink red blood cells: they have
+    leaked out of the vessels. At the center, toward the right, a small vessel cut in cross-section holds red cells and
+    leukocytes; dark nuclei of inflammatory cells are scattered across the field. Key concept: reperfusion pushes
+    blood back into capillaries already injured by ischemia, and they let it escape. That is why a reperfused infarct
+    is hemorrhagic, and why neutrophils reach it sooner and spread through all of it, not only its edges.
+alt:
+  it: >-
+    Micrografia di miocardio in ematossilina-eosina a medio ingrandimento: fibre muscolari rosa allungate in
+    orizzontale; tra di esse molti piccoli globuli rossi liberi arancio-rosati e nuclei scuri sparsi; a destra del
+    centro la sezione rotonda di un piccolo vaso con cellule nel lume.
+  en: >-
+    Medium-power H&E micrograph of myocardium: long pink muscle fibers run horizontally; between them lie many small,
+    free orange-pink red blood cells and scattered dark nuclei; right of center, the round cross-section of a small
+    vessel with cells in its lumen.
+annotations:
+  - id: myocardial-fibers
+    label: { it: Fibre miocardiche, en: Myocardial fibers }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.20, 0.06, 0.75, 0.06, 0.75, 0.17, 0.20, 0.17] }
+  - id: extravasated-rbc
+    label: { it: Globuli rossi stravasati nell'interstizio, en: Red blood cells leaked into the interstitium }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.28, 0.31, 0.46, 0.31, 0.46, 0.45, 0.28, 0.45] }
+  - id: small-vessel
+    label: { it: Piccolo vaso in sezione trasversale, en: Small vessel in cross-section }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.46, 0.49, 0.50, 0.42, 0.595, 0.395, 0.69, 0.42, 0.73, 0.49, 0.69, 0.56, 0.595, 0.585, 0.50, 0.56]

@@ -1,0 +1,78 @@
+# License check (2026-10-10): the Commons uploader (Mikael Häggström) is not the creator. The file is Fig. 4 of an
+# open-access review (Frontiers in Immunology 2018, PMC5911619); the article's JATS <permissions> block (Europe PMC
+# full text) grants CC BY 4.0, matching the Commons tag. The figure caption does not say that the figure was
+# reproduced from another work. The asterisks and arrows come from the source figure.
+id: fibrinoid-necrosis-micro-2
+file: fibrinoid-necrosis-micro-2.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Micrograph_of_cutaneous_small-vessel_vasculitis.jpg
+author: Jenny Giang, Marc A. J. Seelen, Martijn B. A. van Doorn, Robert Rissmann, Errol P. Prens, Jeffrey Damman
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-10-10
+modifications: >-
+  None by this project: the Commons file is used as downloaded (original pixel size, 960 × 668 px, not re-encoded).
+  The asterisks and arrows are part of the source figure.
+attributionText: >-
+  Giang J, Seelen MAJ, van Doorn MBA, Rissmann R, Prens EP, Damman J, "Complement Activation in Inflammatory Skin
+  Diseases", Frontiers in Immunology 2018, doi:10.3389/fimmu.2018.00639, Fig. 4, via Wikimedia Commons, CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: intermediate power
+caption:
+  it: >-
+    Biopsia cutanea con vasculite leucocitoclastica dei piccoli vasi, ematossilina-eosina a medio ingrandimento. A
+    piccolo ingrandimento orientati: in alto l'epidermide, di aspetto conservato; sotto, nel derma superficiale, un
+    infiltrato infiammatorio denso che si addensa attorno ai piccoli vasi (venule post-capillari) invece di distribuirsi
+    a caso. Poi cerca gli asterischi: lì la parete del vaso è ispessita e sostituita da materiale rosa, omogeneo e
+    sfumato, che cancella il confine tra parete e derma circostante, con neutrofili dentro e attorno alla parete. È la
+    necrosi fibrinoide dei piccoli vasi; a questo ingrandimento è un segno sottile, quindi ingrandisci sui vasi con
+    l'asterisco. Le frecce tratteggiate indicano neutrofili che si frammentano lasciando granuli di cromatina sparsi
+    (polvere nucleare, leucocitoclasia); le frecce piene indicano globuli rossi fuori dai vasi (stravaso), segno che la
+    parete non trattiene più il sangue. Come leggerla: nella vasculite da immunocomplessi (ipersensibilità di tipo III)
+    i complessi si depositano nella parete delle venule, attivano il complemento e richiamano neutrofili, i cui enzimi
+    danneggiano la parete; le proteine del plasma, fibrinogeno compreso, vi penetrano e la fibrina precipita.
+    Collegamento clinico: la porpora palpabile, tipica degli arti inferiori.
+  en: >-
+    Skin biopsy with leukocytoclastic small-vessel vasculitis, H&E at intermediate power. Get oriented at low power:
+    the epidermis is at the top and looks preserved; beneath it, in the superficial dermis, a dense inflammatory
+    infiltrate clusters around small vessels (postcapillary venules) instead of being scattered at random. Then find the
+    asterisks: there the vessel wall is thickened and replaced by smudgy, homogeneous pink material that erases the
+    boundary between wall and surrounding dermis, with neutrophils in and around the wall. This is fibrinoid necrosis
+    of small vessels; at this magnification it is a subtle sign, so zoom in on the asterisked vessels. The dashed arrows
+    mark neutrophils breaking up and leaving scattered chromatin granules (nuclear dust, leukocytoclasis); the solid
+    arrows mark red blood cells outside the vessels (extravasation), a sign that the wall no longer holds blood in. How
+    to read it: in immune-complex vasculitis (type III hypersensitivity) complexes lodge in venule walls, activate
+    complement and recruit neutrophils, whose enzymes damage the wall; plasma proteins, fibrinogen included, seep in and
+    fibrin precipitates. Clinical link: palpable purpura, typically on the lower legs.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina di cute: in alto l'epidermide viola-rosa con lo strato corneo; sotto, il derma
+    superficiale è occupato da numerosi piccoli nuclei scuri raccolti attorno a due piccoli vasi segnati da asterischi,
+    con pareti rosa sfumate. Frecce tratteggiate indicano aree di nuclei frammentati e frecce piene indicano globuli
+    rossi sparsi nel derma.
+  en: >-
+    H&E micrograph of skin: at the top the purple-pink epidermis with its cornified layer; below, the superficial dermis
+    holds many small dark nuclei gathered around two small vessels marked by asterisks, with blurred pink walls. Dashed
+    arrows point to areas of fragmented nuclei and solid arrows point to red blood cells scattered in the dermis.
+annotations:
+  - id: necrotic-venule-left
+    label: { it: Venula con necrosi fibrinoide, en: Venule with fibrinoid necrosis }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.350, 0.780, 0.325, 0.866, 0.265, 0.902, 0.205, 0.866, 0.180, 0.780, 0.205, 0.694, 0.265, 0.658, 0.325, 0.694]
+  - id: necrotic-venule-right
+    label: { it: Seconda venula con necrosi fibrinoide, en: Second venule with fibrinoid necrosis }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.840, 0.710, 0.815, 0.796, 0.755, 0.832, 0.695, 0.796, 0.670, 0.710, 0.695, 0.624, 0.755, 0.588, 0.815, 0.624]
+  - id: leukocytoclasis
+    label: { it: Neutrofili e polvere nucleare (leucocitoclasia), en: Neutrophils and nuclear dust (leukocytoclasis) }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.56, 0.40, 0.70, 0.40, 0.70, 0.56, 0.56, 0.56]

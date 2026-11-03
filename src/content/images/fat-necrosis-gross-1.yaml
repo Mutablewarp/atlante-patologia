@@ -1,0 +1,88 @@
+id: fat-necrosis-gross-1
+file: fat-necrosis-gross-1.jpg
+kind: gross
+sourceUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC10154068/figure/Fig3/
+author: Chathula Ushari Wickramasinghe, Murugapillai Sivasubramanium, Rohitha Muthugala
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-10-10
+modifications: >-
+  Re-encoded as JPEG (quality 82) to stay under the 600 KB file limit; same dimensions as published
+  (1592 × 1196 px), no crop. The panel letters and the green and red arrows are part of the published figure. The
+  image file was obtained through the Europe PMC open-access service for PMC10154068.
+attributionText: >-
+  Chathula Ushari Wickramasinghe, Murugapillai Sivasubramanium, Rohitha Muthugala, "Acute hemorrhagic pancreatitis
+  following influenza infection: a case report", Journal of Medical Case Reports 2023;17:176,
+  doi:10.1186/s13256-023-03906-0, Figure 3, CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+# License check (2026-10-10): the article XML on Europe PMC states CC BY 4.0 ("© The Author(s) 2023", BMC /
+# Springer Nature); the figure legend gives no third-party credit line, so the article authors are the creators.
+# The article states that the next of kin gave written consent for publication of the images. Autopsy organ block
+# only: no face, no label or case number in this figure (Figure 2 of the same article shows a case label and was
+# not used).
+caption:
+  it: >-
+    Riscontro autoptico in un caso mortale di pancreatite acuta emorragica insorta dopo un'influenza: è l'aspetto
+    macroscopico della forma enzimatica di necrosi del tessuto adiposo (steatonecrosi). Nel pannello a gli organi
+    addominali sono stati asportati in blocco, con il fegato in alto a sinistra e le anse dell'intestino tenue in
+    basso; la fascia di grasso che attraversa il centro circonda la regione pancreatica. Parti dalla superficie del
+    grasso: il tessuto adiposo normale è liscio, lucido e di un giallo uniforme, qui invece il grasso
+    peripancreatico, quello omentale e quello tra le anse sono disseminati di innumerevoli piccoli noduli opachi,
+    bianco-giallastri, dall'aspetto gessoso. Ogni nodulo è un focolaio di steatonecrosi in cui gli acidi grassi
+    liberati si sono legati al calcio formando saponi (saponificazione): all'inizio i foci sono pastosi, poi
+    diventano duri e gessosi man mano che i saponi si accumulano. La freccia verde indica l'emorragia, rosso scuro,
+    nei tessuti peripancreatici; la freccia rossa un'area di grasso con saponificazione estesa. Il pannello b mostra
+    da vicino la regione pancreatica: la ghiandola è trasformata in un tessuto molle, rosso-bruno e in parte
+    nerastro, cioè in necrosi emorragica. Il meccanismo da ricordare: gli enzimi pancreatici attivati fuoriescono
+    nei tessuti circostanti, la lipasi scinde i trigliceridi degli adipociti in acidi grassi e questi sequestrano il
+    calcio; quando i foci sono numerosi la calcemia può scendere. Al microscopio gli stessi foci corrispondono ad
+    adipociti necrotici ridotti a contorni "fantasma", con depositi basofili (blu-violacei) di saponi di calcio ai
+    margini.
+  en: >-
+    Autopsy findings in a fatal case of acute haemorrhagic pancreatitis that followed influenza: the gross
+    appearance of the enzymatic form of fat necrosis. In panel a the abdominal organs have been removed en bloc,
+    with the liver at the top left and loops of small bowel at the bottom; the band of fat across the middle
+    surrounds the pancreatic region. Start with the surface of the fat: normal adipose tissue is smooth, glistening
+    and evenly yellow, whereas here the peripancreatic fat, the omental fat and the fat between the bowel loops are
+    studded with countless small, opaque, chalky yellow-white nodules. Each nodule is a focus of fat necrosis in
+    which the released fatty acids have bound calcium to form soaps (saponification): the foci are pasty at first
+    and turn firm and chalk-like as soap accumulates. The green arrow marks dark red haemorrhage in the
+    peripancreatic tissue; the red arrow marks fat with extensive saponification. Panel b is a close-up of the
+    pancreatic region, where the gland has been turned into soft, red-brown and partly blackish tissue:
+    haemorrhagic necrosis. The mechanism to remember: activated pancreatic enzymes leak into the surrounding
+    tissue, lipase splits the triglycerides of adipocytes into fatty acids, and these trap calcium; when the foci
+    are numerous, blood calcium can fall. Under the microscope the same foci correspond to necrotic adipocytes
+    reduced to "ghost" outlines, with blue-purple (basophilic) calcium soap deposits at their edges.
+alt:
+  it: >-
+    Fotografia autoptica a colori in due pannelli su fondo chiaro. Pannello a: organi addominali asportati in
+    blocco, con il fegato rosso scuro in alto a sinistra, un organo pallido in alto a destra, una fascia di grasso
+    arancione al centro e anse intestinali grigio-verdastre in basso; il grasso è coperto da innumerevoli piccoli
+    noduli giallo-biancastri; una freccia verde indica un'area rosso scura all'estremità destra della fascia e una
+    freccia rossa il grasso tra le anse. Pannello b: primo piano di tessuto rosso-bruno lucido con chiazze nerastre,
+    delimitato in basso da grasso giallo lobulato.
+  en: >-
+    Two-panel colour autopsy photograph on a light background. Panel a: abdominal organs removed en bloc, with the
+    dark red liver at the top left, a pale organ at the top right, a band of orange fat across the middle and
+    grey-green bowel loops at the bottom; the fat is covered with countless small yellow-white nodules; a green
+    arrow points to a dark red area at the right end of the band and a red arrow to the fat between the bowel loops.
+    Panel b: close-up of glistening red-brown tissue with blackish patches, bordered below by lobulated yellow fat.
+annotations:
+  - id: saponification-foci
+    label: { it: "Foci di steatonecrosi: noduli gessosi bianco-giallastri (saponificazione)", en: "Fat necrosis foci: chalky yellow-white nodules (saponification)" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.02, 0.30, 0.15, 0.30, 0.29, 0.28, 0.30, 0.40, 0.20, 0.41, 0.10, 0.43, 0.03, 0.41] }
+  - id: peripancreatic-haemorrhage
+    label: { it: Emorragia nei tessuti peripancreatici (freccia verde), en: Haemorrhage in the peripancreatic tissue (green arrow) }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.385, 0.325, 0.43, 0.315, 0.455, 0.36, 0.475, 0.42, 0.47, 0.50, 0.45, 0.52, 0.43, 0.44, 0.40, 0.38] }
+  - id: saponified-fat
+    label: { it: Grasso con saponificazione estesa (freccia rossa), en: Fat with extensive saponification (red arrow) }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.07, 0.55, 0.13, 0.52, 0.20, 0.52, 0.21, 0.58, 0.15, 0.62, 0.10, 0.70, 0.10, 0.78, 0.06, 0.76, 0.05, 0.64] }
+  - id: haemorrhagic-pancreas
+    label: { it: "Pancreas: area di necrosi emorragica", en: "Pancreas: area of haemorrhagic necrosis" }
+    revealOrder: 4
+    shape: { type: polygon, coords: [0.585, 0.09, 0.66, 0.09, 0.665, 0.17, 0.65, 0.235, 0.60, 0.235, 0.585, 0.17] }

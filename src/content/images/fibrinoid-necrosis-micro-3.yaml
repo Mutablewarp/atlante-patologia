@@ -1,0 +1,68 @@
+id: fibrinoid-necrosis-micro-3
+file: fibrinoid-necrosis-micro-3.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Histopathology_of_a_rheumatoid_nodule,_original.png
+author: Mikael Häggström, M.D.
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-10-10
+modifications: >-
+  Downscaled from 2048 × 1532 px to 1600 × 1197 px and converted from PNG to JPEG; no crop, no colour change. The
+  unlabelled version of the file was used; the labels are this project's bilingual annotations.
+attributionText: "Mikael Häggström, M.D., via Wikimedia Commons, CC0 1.0 (public domain dedication)"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: intermediate power
+caption:
+  it: >-
+    Nodulo reumatoide del dito indice, ematossilina-eosina a medio ingrandimento: necrosi fibrinoide fuori dai vasi.
+    Parti dal centro: c'è un'area rosa pallido, fibrillare e sfumata, quasi priva di nuclei, in cui il collagene ha perso
+    la sua struttura netta. Sopra, una fascia di istiociti epitelioidi con nuclei allungati e chiari disposti uno accanto
+    all'altro, con l'asse lungo rivolto verso il centro necrotico (palizzata). In basso a sinistra un grumo compatto di
+    fibrina, di un rosa più intenso. In alto a destra, all'esterno, fasci di collagene denso del tessuto fibroso
+    circostante. Come leggerla: il termine fibrinoide descrive l'aspetto, non la sede; qui il danno su base immunitaria
+    colpisce il connettivo e il deposito di proteine plasmatiche e fibrina gli conferisce lo stesso aspetto vitreo ed
+    eosinofilo visto nella parete dei vasi. Il centro necrotico circondato da istiociti a palizzata è il quadro del
+    granuloma a palizzata, da distinguere dal granuloma tubercolare, che ha al centro necrosi caseosa granulare.
+    Collegamento clinico: noduli sottocutanei duri sulle sedi di pressione (avambraccio, dita) nell'artrite reumatoide.
+  en: >-
+    Rheumatoid nodule of the index finger, H&E at intermediate power: fibrinoid necrosis outside vessels. Start in the
+    centre: there is a pale pink, fibrillar, smudgy area with hardly any nuclei, where the collagen has lost its crisp
+    structure. Above it, a band of epithelioid histiocytes with pale, elongated nuclei lined up side by side, their long
+    axes pointing towards the necrotic centre (palisade). At the lower left, a compact clump of more intensely pink
+    fibrin. At the upper right, on the outside, bundles of dense collagen from the surrounding fibrous tissue. How to
+    read it: the word fibrinoid describes the look, not the site; here immune-mediated injury hits connective tissue,
+    and the deposit of plasma proteins and fibrin gives it the same glassy, eosinophilic look seen in vessel walls. A
+    necrotic centre rimmed by palisading histiocytes is the picture of a palisading granuloma, to be told apart from a
+    tuberculous granuloma, whose centre holds granular caseous necrosis. Clinical link: firm subcutaneous nodules over
+    pressure points (forearm, fingers) in rheumatoid arthritis.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina, tutta in toni di rosa: al centro un'area rosa pallido e fibrillare con pochi
+    nuclei; sopra e a destra file di nuclei viola allungati; in basso a sinistra un piccolo grumo rosa scuro e compatto;
+    in alto a destra fasci di collagene rosa brillante.
+  en: >-
+    H&E micrograph, all in shades of pink: in the centre a pale, fibrillar pink area with few nuclei; above and to the
+    right rows of elongated purple nuclei; at the lower left a small, compact dark pink clump; at the upper right bright
+    pink collagen bundles.
+annotations:
+  - id: central-fibrinoid-necrosis
+    label: { it: Necrosi fibrinoide centrale, en: Central fibrinoid necrosis }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.22, 0.36, 0.40, 0.32, 0.58, 0.36, 0.70, 0.44, 0.68, 0.56, 0.55, 0.62, 0.38, 0.64, 0.24, 0.58, 0.18, 0.47]
+  - id: palisading-histiocytes
+    label: { it: Istiociti epitelioidi a palizzata, en: Palisading epithelioid histiocytes }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.08, 0.10, 0.40, 0.08, 0.75, 0.12, 0.95, 0.20, 0.95, 0.32, 0.70, 0.30, 0.40, 0.28, 0.10, 0.32]
+  - id: fibrin-clump
+    label: { it: Grumo di fibrina, en: Fibrin clump }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.26, 0.78, 0.33, 0.73, 0.39, 0.72, 0.40, 0.78, 0.36, 0.83, 0.30, 0.87, 0.26, 0.84]

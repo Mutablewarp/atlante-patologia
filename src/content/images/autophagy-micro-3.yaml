@@ -1,0 +1,69 @@
+id: autophagy-micro-3
+file: autophagy-micro-3.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Inclusion_body_myositis_histology.jpg
+author: Pedro Machado, Stefen Brady, Michael G. Hanna
+license: CC-BY-3.0
+licenseUrl: https://creativecommons.org/licenses/by/3.0/
+retrievedAt: 2026-10-10
+modifications: "none (536 × 602 px original as uploaded to Wikimedia Commons; panel letters (a)–(f), the scale bar and the journal watermark belong to the published figure)"
+attributionText: "Pedro Machado, Stefen Brady and Michael G. Hanna (Curr Opin Rheumatol 2013;25(6):763–771, fig. 1), via Wikimedia Commons, CC BY 3.0"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: "H&E (a) and p62 immunohistochemistry (e); other panels: Congo red under fluorescence (b), electron microscopy (c), MHC class I (d) and TDP-43 (f) immunohistochemistry"
+magnification: "scale bar 50 µm in (a), 25 µm in (e)"
+caption:
+  it: >-
+    Miosite a corpi inclusi, una malattia muscolare dell'uomo in cui lo smaltimento autofagico è inefficiente: figura
+    composita da una biopsia muscolare. Concentrati su due pannelli. Pannello (a), ematossilina-eosina, ingrandimento
+    medio: fibre muscolari tagliate trasversalmente, di calibro variabile; dentro alcune fibre cerca piccole fessure
+    irregolari bordate da materiale granulare blu-violaceo. Sono i vacuoli orlati (rimmed vacuoles), che contengono
+    detriti di origine autofagica. Pannello (e), immunoistochimica per p62 (sequestosoma 1), ingrandimento maggiore:
+    una fibra è punteggiata di granuli marroni, mentre quelle accanto sono pulite. p62 è l'adattatore che aggancia il
+    materiale marcato con ubiquitina al macchinario autofagico e viene degradato insieme a esso: se si accumula in
+    aggregati, vuol dire che il flusso autofagico è bloccato. Gli altri pannelli mostrano altri aspetti della malattia,
+    cioè amiloide al rosso Congo (b), tubulofilamenti al microscopio elettronico (c), aumento delle molecole MHC di
+    classe I (d) e aggregati di TDP-43 (f), e qui non sono il punto principale.
+  en: >-
+    Inclusion body myositis, a human muscle disease in which autophagic clearance fails: a composite figure from a
+    muscle biopsy. Focus on two panels. Panel (a), H&E, medium power: muscle fibres cut in cross-section, of varying
+    size; inside some fibres look for small irregular clefts edged by bluish-purple granular material. These are
+    rimmed vacuoles, which contain debris of autophagic origin. Panel (e), immunohistochemistry for p62
+    (sequestosome 1), higher power: one fibre is dotted with brown granules while its neighbours are clean. p62 is
+    the adaptor that hooks ubiquitin-tagged cargo onto the autophagy machinery and is degraded together with it, so
+    when it builds up in aggregates the autophagic flux is blocked. The remaining panels show other features of the
+    disease, namely amyloid with Congo red (b), tubulofilaments on electron microscopy (c), increased MHC class I
+    expression (d) and TDP-43 aggregates (f), and are not the main point here.
+alt:
+  it: >-
+    Figura in sei pannelli di sezioni di biopsia muscolare, contrassegnati da (a) a (f). (a) ematossilina-eosina:
+    fibre muscolari rosa e tondeggianti in sezione trasversale, alcune con piccole fessure irregolari a bordo
+    granulare bluastro. (b) fluorescenza verde con un deposito rosso fra le fibre. (c) micrografia elettronica grigia
+    con fasci di filamenti. (d) e (f) colorazione immunoistochimica marrone che delinea le fibre. (e) una fibra chiara
+    piena di puntini marrone scuro, circondata da fibre non colorate con nuclei blu.
+  en: >-
+    Six-panel figure of muscle biopsy sections labelled (a) to (f). (a) H&E: pink, rounded muscle fibres in
+    cross-section, a few containing small irregular clefts with bluish granular edges. (b) green fluorescence with a
+    red deposit between fibres. (c) grey electron micrograph with bundles of filaments. (d) and (f) brown
+    immunostaining outlining the fibres. (e) a pale fibre filled with scattered dark brown dots, surrounded by
+    unstained fibres with blue nuclei.
+annotations:
+  - id: rimmed-vacuole-1
+    label: { it: Vacuolo orlato, en: Rimmed vacuole }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.226, 0.168, 0.266, 0.168, 0.266, 0.206, 0.226, 0.206]
+  - id: rimmed-vacuole-2
+    label: { it: Vacuolo orlato a bordo granulare, en: Rimmed vacuole with granular rim }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.247, 0.243, 0.287, 0.243, 0.287, 0.279, 0.247, 0.279]
+  - id: p62-aggregates
+    label: { it: Fibra con aggregati di p62, en: Fibre with p62 aggregates }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.140, 0.780, 0.200, 0.755, 0.270, 0.765, 0.330, 0.800, 0.380, 0.850, 0.390, 0.920, 0.370, 0.965, 0.300, 0.965, 0.220, 0.940, 0.160, 0.900, 0.135, 0.840]

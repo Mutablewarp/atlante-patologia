@@ -1,0 +1,53 @@
+id: gangrene-clinical-1
+file: gangrene-clinical-1.jpg
+kind: clinical
+sourceUrl: https://commons.wikimedia.org/wiki/File:Acral_gangrene_due_to_plague.jpg
+author: CDC / William Archibald
+license: PD
+licenseUrl: https://commons.wikimedia.org/wiki/Template:PD-USGov-HHS-CDC
+retrievedAt: 2026-10-10
+modifications: "Downloaded the 1280 × 849 px Wikimedia rendition of the 3231 × 2144 px original; no crop, no colour change, no labels added to the image."
+attributionText: "CDC / William Archibald, CDC Public Health Image Library (phil.cdc.gov, PHIL #1957), public domain, via Wikimedia Commons"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+caption:
+  it: >-
+    Mano destra di un paziente con peste (infezione da Yersinia pestis), fotografia del CDC. Parti dalla
+    distribuzione: il danno riguarda solo l'estremità di quattro dita, mentre il pollice e il resto della mano hanno
+    un aspetto normale. Poi osserva le dita una per una: attorno all'unghia la cute è nera, secca e raggrinzita,
+    con lembi di epidermide biancastra che si sfalda ai bordi, e finisce di colpo dove comincia la cute rosea ancora
+    vitale. È la gangrena secca: una necrosi coagulativa ischemica di una parte distale del corpo, in cui il tessuto
+    morto perde acqua e si mummifica invece di colliquare, perché vi crescono pochi batteri. Nella peste i piccoli
+    vasi delle dita vengono occlusi dai microtrombi della coagulazione intravascolare disseminata, e per questo
+    muoiono per prime le parti più periferiche (sedi acrali): la stessa distribuzione della gangrena delle dita del
+    piede nell'aterosclerosi. Se i batteri colonizzassero il tessuto morto, la zona diventerebbe gonfia, umida e
+    maleodorante: gangrena umida.
+  en: >-
+    Right hand of a patient with plague (Yersinia pestis infection), CDC photograph. Start with the distribution: the
+    damage is limited to the ends of four fingers, while the thumb and the rest of the hand look normal. Then look at
+    one fingertip at a time: the skin around the nail is black, dry and shrivelled, with flakes of whitish, peeling
+    epidermis at its edges, and it stops abruptly where pink, living skin begins. This is dry gangrene: ischemic
+    coagulative necrosis of a distal body part, in which the dead tissue loses water and mummifies instead of
+    liquefying, because few bacteria grow in it. In plague the small vessels of the fingers are blocked by the
+    microthrombi of disseminated intravascular coagulation, so the most peripheral (acral) parts die first: the same
+    distribution as gangrene of the toes in atherosclerosis. If bacteria colonised the dead tissue it would become
+    swollen, moist and foul-smelling: wet gangrene.
+alt:
+  it: >-
+    Fotografia a colori di una mano destra appoggiata su un telo grigio, con le dita rivolte a sinistra: le estremità
+    di indice, medio, anulare e mignolo sono nere e raggrinzite, con bordi biancastri che si sfaldano; il pollice e il
+    resto della mano hanno cute rosea normale.
+  en: >-
+    Colour photograph of a right hand lying on a grey cloth, fingers pointing left: the ends of the index, middle, ring
+    and little fingers are black and shrivelled with whitish, peeling edges; the thumb and the rest of the hand have
+    normal pink skin.
+annotations:
+  - id: necrotic-fingertip
+    label: { it: Estremità del dito necrotica, nera e mummificata, en: Black, mummified necrotic fingertip }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.238, 0.418, 0.352, 0.412, 0.367, 0.471, 0.359, 0.565, 0.250, 0.571, 0.234, 0.495] }
+  - id: viable-skin
+    label: { it: Cute vitale della mano, en: Viable skin of the hand }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.55, 0.30, 0.88, 0.30, 0.92, 0.60, 0.88, 0.85, 0.55, 0.85, 0.50, 0.60] }

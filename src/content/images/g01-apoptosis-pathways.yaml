@@ -1,0 +1,40 @@
+id: g01-apoptosis-pathways
+file: g01-apoptosis-pathways.svg
+kind: diagram
+sourceUrl: https://github.com/Mutablewarp/atlante-patologia/blob/main/src/assets/images/g01-apoptosis-pathways.svg
+author: Atlante di Patologia contributors
+license: original
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+retrievedAt: 2026-10-10
+modifications: none
+attributionText: "Original diagram: Atlante di Patologia contributors, CC BY-SA 4.0"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: content-agent g01 (checked against rubin-8e ch. 1), date: 2026-10-10 }
+annotations: []
+caption:
+  it: >-
+    Le due vie dell'apoptosi. Via estrinseca: un ligando di morte (FasL, TNF, TRAIL) lega il proprio recettore, si forma
+    il complesso DISC e si attiva la caspasi-8. Via intrinseca: uno stress cellulare (danno al DNA tramite p53, ROS)
+    aumenta le proteine BH3-only, che neutralizzano Bcl-2 e liberano Bax e Bak; i pori nella membrana mitocondriale
+    esterna rilasciano citocromo c e SMAC, e il citocromo c con Apaf-1 forma l'apoptosoma, che attiva la caspasi-9. La
+    caspasi-8 può anche tagliare Bid in tBid, che recluta la via mitocondriale. Entrambe convergono sulle caspasi
+    esecutrici 3, 6 e 7. Freni: Bcl-2, Bcl-xL e Mcl-1 tengono inattivi Bax e Bak; le IAP inibiscono le caspasi e SMAC
+    rimuove questo blocco.
+  en: >-
+    The two pathways of apoptosis. Extrinsic: a death ligand (FasL, TNF, TRAIL) binds its receptor, the DISC forms and
+    caspase-8 is activated. Intrinsic: cell stress (DNA damage via p53, ROS) raises BH3-only proteins, which neutralise
+    Bcl-2 and free Bax and Bak; pores in the outer mitochondrial membrane release cytochrome c and SMAC, and cytochrome c
+    with Apaf-1 forms the apoptosome, which activates caspase-9. Caspase-8 can also cut Bid into tBid, which recruits the
+    mitochondrial pathway. Both converge on executioner caspases 3, 6 and 7. Brakes: Bcl-2, Bcl-xL and Mcl-1 keep Bax and
+    Bak inactive; IAPs inhibit caspases and SMAC lifts that block.
+alt:
+  it: >-
+    Diagramma a due colonne che convergono. A sinistra la via estrinseca in quattro riquadri fino alla caspasi-8; a
+    destra la via intrinseca in quattro riquadri fino all'apoptosoma; una freccia tratteggiata rosa "tBid" collega la
+    caspasi-8 ai pori Bax/Bak. Le due colonne confluiscono nel riquadro delle caspasi esecutrici, poi nell'apoptosi; in
+    fondo un riquadro giallo elenca i freni.
+  en: >-
+    Two converging columns. On the left, the extrinsic pathway in four boxes down to caspase-8; on the right, the
+    intrinsic pathway in four boxes down to the apoptosome; a dashed pink "tBid" arrow links caspase-8 to the Bax/Bak
+    pores. Both columns feed the executioner-caspase box, then apoptosis; a yellow box at the bottom lists the brakes.

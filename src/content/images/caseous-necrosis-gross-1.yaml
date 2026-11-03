@@ -1,0 +1,74 @@
+# License check (2026-10-10): Wellcome Collection catalogue record hesh7tz3 (Miro image number W0043160), read
+# through the catalogue API: item location license "CC0 1.0 Universal", credit "Wellcome Collection", access open.
+# The holding institution publishes the photograph itself, so there is no uploader/creator gap; the photographer is
+# not named. Specimen photograph only; nothing identifies the patient.
+id: caseous-necrosis-gross-1
+file: caseous-necrosis-gross-1.jpg
+kind: gross
+sourceUrl: https://wellcomecollection.org/works/hesh7tz3
+author: Wellcome Collection (photographer not named)
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-10-10
+modifications: "Downscaled from 5185 × 3368 px (via the 3200 px rendition of the Wellcome IIIF image server) to 1600 × 1040 px and re-encoded as JPEG; no crop, no colour change."
+attributionText: "Wellcome Collection, \"Lymph node: tuberculous lymphadenitis and HIV\" (image W0043160), CC0 1.0 (public domain dedication)"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+caption:
+  it: >-
+    Linfadenite tubercolare, quadro macroscopico: superficie di taglio di un gruppo di linfonodi mesenterici di un
+    paziente HIV-positivo. Prima il quadro d'insieme: la sezione comprende diversi linfonodi ingranditi, addossati e in
+    parte fusi in un'unica massa (pacchetto linfonodale); puoi ignorare il tessuto molle sfrangiato e brunastro ai
+    margini della fetta. Poi guarda la superficie di taglio di ciascun linfonodo: del normale tessuto linfonodale non
+    resta nulla. Al suo posto c'è un materiale uniforme e opaco, da color crema a giallo pallido, che appare molle e
+    friabile, simile a un formaggio che si sbriciola; i linfonodi vicini sono separati solo da sottili capsule chiare e
+    qua e là si vede qualche piccola chiazza rosata. Il grosso linfonodo a sinistra mostra quanto è molle questo materiale: si è staccato dalla
+    capsula sottile, lasciando fessure scure a semiluna. Questa è la necrosi caseosa (dal latino caseus, formaggio).
+    Come distinguerla a occhio nudo: l'infarto con necrosi coagulativa è compatto e lascia riconoscibile il disegno
+    dell'organo;
+    l'ascesso da necrosi colliquativa è una cavità piena di pus fluido; il materiale caseoso sta nel mezzo, né compatto
+    né liquido. Collegamento clinico: linfonodi ingranditi, fusi e caseosi fanno pensare alla tubercolosi, ma infezioni
+    fungine e tumori necrotici possono avere un aspetto simile; la diagnosi si conferma con l'istologia (granulomi), la
+    colorazione di Ziehl-Neelsen per i bacilli alcol-acido resistenti, la coltura o i test molecolari.
+  en: >-
+    Tuberculous lymphadenitis, gross: cut surface of a group of mesenteric lymph nodes from an HIV-positive patient.
+    Start with the overview: the slice contains several enlarged lymph nodes pressed together and partly fused into one
+    mass (matted nodes); ignore the ragged, brownish soft tissue at the edges of the slice. Then look at the cut surface
+    of each node: no normal nodal tissue is left. It has been replaced by uniform, opaque, cream to pale-yellow material
+    that looks soft and friable, like crumbly cheese; neighbouring nodes are separated only by thin, pale capsules, and
+    a few faint pink spots are scattered through them. The large node on the left shows how soft this material is: it
+    has split away from the thin capsule, leaving dark, crescent-shaped clefts. This is caseous necrosis (from Latin
+    caseus, cheese). How to tell it apart with the naked eye: an infarct with coagulative necrosis is firm and keeps the
+    organ's architecture recognisable; an abscess with liquefactive necrosis is a cavity of fluid pus; caseous material lies in
+    between, neither firm nor liquid. Clinical link: enlarged, matted nodes with caseation suggest tuberculosis, but
+    fungal infections and necrotic tumours can look similar, so the diagnosis is confirmed by histology (granulomas), a
+    Ziehl-Neelsen stain for acid-fast bacilli, culture or molecular tests.
+alt:
+  it: >-
+    Fotografia su fondo azzurro della superficie di taglio di un pacchetto di linfonodi mesenterici fusi tra loro. Ogni
+    linfonodo è occupato da materiale uniforme e opaco, color crema-giallo pallido; il grosso linfonodo a sinistra ha
+    fessure scure a semiluna lungo il margine.
+  en: >-
+    Photograph on a blue background of the cut surface of a mass of matted mesenteric lymph nodes. Every node is filled
+    with uniform, opaque, cream to pale-yellow material; the large node on the left has dark, crescent-shaped clefts
+    along its edge.
+annotations:
+  - id: matted-caseous-nodes
+    label: { it: "Pacchetto di linfonodi fusi, sostituiti da necrosi caseosa", en: "Matted lymph nodes replaced by caseous necrosis" }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.273, 0.315, 0.35, 0.293, 0.438, 0.322, 0.519, 0.293, 0.6, 0.322, 0.625, 0.404, 0.619, 0.538, 0.6, 0.673, 0.581, 0.798, 0.5, 0.832, 0.4, 0.822, 0.316, 0.784, 0.3, 0.692, 0.295, 0.615, 0.3, 0.538, 0.299, 0.462, 0.289, 0.409]
+  - id: node-replaced-by-caseation
+    label: { it: Linfonodo interamente sostituito da materiale caseoso, en: Lymph node entirely replaced by caseous material }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.024, 0.317, 0.044, 0.248, 0.084, 0.21, 0.134, 0.197, 0.178, 0.213, 0.212, 0.242, 0.247, 0.277, 0.259, 0.356, 0.249, 0.431, 0.217, 0.495, 0.194, 0.553, 0.17, 0.598, 0.125, 0.615, 0.081, 0.587, 0.05, 0.538, 0.031, 0.452, 0.021, 0.385]
+  - id: cleft-under-capsule
+    label: { it: Fessura tra il materiale caseoso molle e la capsula, en: Cleft between the soft caseous material and the capsule }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.094, 0.577, 0.109, 0.594, 0.128, 0.608, 0.15, 0.615, 0.153, 0.627, 0.138, 0.633, 0.119, 0.625, 0.1, 0.606]

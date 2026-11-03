@@ -1,0 +1,54 @@
+id: metaplasia-micro-3
+file: metaplasia-micro-3.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Histopathology_of_goblet_cells_and_foveolar_cells_in_incomplete_Barrett%27s_esophagus.jpg
+author: Mikael Häggström, M.D.
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-10-10
+modifications: "Unannotated version of the file; downscaled from 2048 × 1532 px to 1600 px width and re-encoded as JPEG (metadata stripped); no crop, no colour change."
+attributionText: "Mikael Häggström, M.D., via Wikimedia Commons, CC0 1.0 (public domain dedication)"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: high power
+caption:
+  it: >-
+    Metaplasia intestinale incompleta nell'esofago di Barrett, EE a forte ingrandimento. Qui si vedono da vicino i due
+    tipi di cellule che convivono nella forma incompleta. Le cellule caliciformi sono rigonfie e a forma di calice:
+    ciascuna contiene un unico grande vacuolo di muco ovale, a margini netti, con un tono grigio-azzurro e un aspetto
+    finemente granulare. Lungo la superficie, invece, le cellule colonnari di tipo gastrico (foveolari) hanno una
+    piccola coppa di mucina apicale chiara, appena rosata; i loro bordi cellulari netti danno un aspetto a nido
+    d'ape. Nella metà inferiore si vedono i nuclei allungati delle cellule colonnari, allineati alla base. Tranello: una
+    cellula foveolare molto distesa di muco può imitare una caliciforme (pseudo-caliciforme); cerca il tono azzurro e
+    la forma a calice ben delimitata. Sono le cellule caliciformi a documentare la metaplasia intestinale.
+  en: >-
+    Incomplete intestinal metaplasia in Barrett esophagus, H&E at high power. Here you see up close the two cell types
+    that coexist in the incomplete form. Goblet cells are swollen and goblet-shaped: each holds a single large, oval,
+    sharply outlined mucin vacuole with a grey-blue tint and a finely granular look. Along the surface, by contrast,
+    the gastric-type (foveolar) columnar cells carry a small cup of clear, faintly pink apical mucin; their crisp cell
+    borders give a honeycomb pattern. In the lower half you see the elongated nuclei of the columnar cells, lined up
+    at the base. Pitfall: a foveolar cell heavily distended by mucin can mimic a goblet cell (pseudo-goblet cell);
+    look for the blue tint and the well-defined goblet shape. It is the goblet cells that document intestinal
+    metaplasia.
+alt:
+  it: >-
+    Micrografia ad alto ingrandimento in ematossilina-eosina di un epitelio colonnare: una fila di grandi vacuoli
+    ovali grigio-azzurri, piccole cellule chiare a nido d'ape lungo il margine superficiale a sinistra e in alto, e
+    nella metà inferiore numerosi nuclei viola allungati.
+  en: >-
+    High-power H&E micrograph of a columnar epithelium: a row of large grey-blue oval vacuoles, small clear
+    honeycomb-like cells along the surface edge at the left and top, and many elongated purple nuclei in the lower
+    half.
+annotations:
+  - id: goblet-cells
+    label: { it: Cellule caliciformi, en: Goblet cells }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.33, 0.37, 0.40, 0.34, 0.47, 0.33, 0.56, 0.29, 0.65, 0.29, 0.65, 0.48, 0.56, 0.48, 0.50, 0.60, 0.42, 0.61, 0.33, 0.51] }
+  - id: foveolar-cells
+    label: { it: Cellule foveolari di tipo gastrico, en: Gastric-type foveolar cells }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.04, 0.75, 0.12, 0.56, 0.20, 0.44, 0.28, 0.33, 0.38, 0.24, 0.48, 0.17, 0.58, 0.13, 0.64, 0.12, 0.64, 0.22, 0.56, 0.25, 0.47, 0.29, 0.39, 0.33, 0.31, 0.42, 0.24, 0.53, 0.17, 0.66, 0.11, 0.82]

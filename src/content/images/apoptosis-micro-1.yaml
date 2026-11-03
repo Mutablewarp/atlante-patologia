@@ -1,0 +1,71 @@
+id: apoptosis-micro-1
+file: apoptosis-micro-1.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Histopathology_of_acute_hepatitis.jpg
+author: Alexander Boyd, Owen Cain, Abhishek Chauhan, Gwilym James Webb
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-10-10
+modifications: >-
+  None by us: the file is used exactly as published on Wikimedia Commons (635 × 474 px), where the uploader had
+  already cut the top-left panel out of Figure 4 of the source article. The arrow is part of the original figure.
+attributionText: >-
+  Alexander Boyd, Owen Cain, Abhishek Chauhan, Gwilym James Webb, "Medical liver biopsy: background, indications,
+  procedure and histopathology", Frontline Gastroenterology 2020;11(1):40–47, doi:10.1136/flgastro-2018-101139,
+  Figure 4 (top-left panel), via Wikimedia Commons, CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+# License check (2026-10-10): Commons file page metadata gives CC BY 4.0 with the four article authors as creators.
+# The uploader is not the creator, but the source is explicit: Europe PMC (PMC6914302) lists the article as open
+# access under CC BY 4.0 ("Re-use permitted under CC BY"), and the Figure 4 legend carries no "reproduced with
+# permission" note, so the licence covers this panel.
+stain: H&E
+magnification: medium power
+caption:
+  it: >-
+    Epatite acuta su biopsia epatica, EE a medio ingrandimento; la freccia, già presente nella figura originale, indica
+    un corpo acidofilo (corpo di Councilman). Guarda prima l'insieme: le trabecole epatiche hanno perso la loro
+    disposizione ordinata (disordine lobulare), tra gli epatociti sono sparsi molti linfociti e qua e là compaiono
+    piccoli accumuli di pigmento biliare bruno-dorato, segno di colestasi. Poi segui la freccia: un singolo epatocita
+    spicca perché è più piccolo dei vicini, angolato, con citoplasma rosso intenso e vitreo e un minuscolo residuo
+    nucleare scuro, separato dalla trabecola da un sottile alone chiaro. È un epatocita morto per apoptosi, che si è
+    raggrinzito, condensato e staccato dalla trabecola; nell'epatite virale il segnale di morte viene soprattutto dai
+    linfociti T citotossici che riconoscono gli antigeni virali. Da ricordare: l'apoptosi colpisce cellule singole e
+    sparse, non aree confluenti; la cellula si rimpicciolisce invece di gonfiarsi; intorno non c'è reazione di
+    neutrofili, perché i resti vengono rimossi in silenzio dai macrofagi (cellule di Kupffer). Attenzione a non
+    confonderlo con l'epatocita balloniforme, che è il quadro opposto: grande, pallido e rigonfio.
+  en: >-
+    Acute hepatitis in a liver biopsy, H&E at medium power; the arrow, already present in the original figure, points
+    to an acidophil body (Councilman body). Look at the whole field first: the liver cell plates have lost their
+    orderly arrangement (lobular disarray), many lymphocytes are scattered between the hepatocytes and here and there
+    small golden-brown plugs of bile pigment mark cholestasis. Then follow the arrow: one hepatocyte stands out
+    because it is smaller than its neighbours, angular, with intensely pink, glassy cytoplasm and a tiny dark nuclear
+    remnant, separated from the plate by a thin clear rim. This is a hepatocyte that has died by apoptosis, shrunk,
+    condensed and dropped out of the plate; in viral hepatitis the death signal comes mainly from cytotoxic T cells
+    that recognise viral antigens. Key points: apoptosis hits single, scattered cells, not confluent areas; the cell
+    shrinks instead of swelling; and there is no neutrophil reaction around it, because the remnants are quietly
+    removed by macrophages (Kupffer cells). Do not confuse it with a ballooned hepatocyte, which is the opposite
+    picture: large, pale and swollen.
+alt:
+  it: >-
+    Micrografia di fegato in ematossilina-eosina: epatociti rosa disposti in modo disordinato, molti piccoli nuclei
+    scuri di linfociti e alcuni granuli bruni; in basso a sinistra una freccia nera vuota punta verso il basso su una
+    piccola cellula angolata, rosso intenso, con un minuscolo punto nucleare scuro e circondata da un alone chiaro.
+  en: >-
+    H&E micrograph of liver: pink hepatocytes in a disordered arrangement, many small dark lymphocyte nuclei and a few
+    brown granules; at lower left a black outlined arrow points down to a small, angular, deep-pink cell with a tiny
+    dark nuclear dot, surrounded by a clear halo.
+annotations:
+  - id: acidophil-body
+    label: { it: "Corpo acidofilo: epatocita apoptotico", en: "Acidophil body: apoptotic hepatocyte" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.068, 0.752, 0.112, 0.752, 0.112, 0.835, 0.068, 0.835] }
+  - id: lobular-lymphocytes
+    label: { it: Linfociti nel lobulo, en: Lymphocytes within the lobule }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.54, 0.13, 0.65, 0.13, 0.65, 0.21, 0.54, 0.21] }
+  - id: bile-pigment
+    label: { it: Pigmento biliare (colestasi), en: Bile pigment (cholestasis) }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.028, 0.565, 0.060, 0.565, 0.060, 0.612, 0.028, 0.612] }

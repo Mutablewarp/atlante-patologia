@@ -1,0 +1,61 @@
+id: metastatic-calcification-micro-1
+file: metastatic-calcification-micro-1.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Calcinosis_of_Chronic_Renal_Failure_(2282168322).jpg
+author: Ed Uthman
+license: CC-BY-2.0
+licenseUrl: https://creativecommons.org/licenses/by/2.0/
+retrievedAt: 2026-10-10
+modifications: >-
+  Re-encoded the 1513 × 1413 px original as JPEG (quality 80) to keep the file under 600 KB and to strip camera EXIF
+  metadata; no crop, no resize, no colour change.
+attributionText: >-
+  Ed Uthman, "Calcinosis of Chronic Renal Failure" (Flickr), via Wikimedia Commons, CC BY 2.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: low power
+caption:
+  it: >-
+    Calcificazione metastatica in una massa sottocutanea di un paziente in dialisi cronica (la stessa lesione della
+    foto macroscopica), EE a piccolo ingrandimento. Il campo ha solo due componenti, e il primo passo è separarle: le
+    isole e i cordoni irregolari viola scuro, granulosi, che serpeggiano nel campo sono i depositi di sali di calcio;
+    il fondo rosa chiaro e fibrillare tra di essi è stroma fibroso reattivo. In questa foto i colori virano al magenta,
+    ma il calcio in EE è tipicamente basofilo (blu-viola) e amorfo, spesso frammentato o "strappato" dal microtomo:
+    da qui le fessure bianche dentro i depositi. Nota l'assenza di un tessuto necrotico preesistente: il calcio si è
+    depositato in un tessuto molle di per sé sano, per l'eccesso sistemico di calcio e fosfato, ed è questo che
+    distingue la calcificazione metastatica da quella distrofica. Alla luce polarizzata questi sali di fosfato di
+    calcio non sono birifrangenti; per confermarli si usa la colorazione di von Kossa (nero) o il rosso alizarina.
+  en: >-
+    Metastatic calcification in a subcutaneous mass from a patient on chronic dialysis (the same lesion as the gross
+    photograph), H&E at low power. The field has only two components, and the first step is to tell them apart: the
+    dark purple, granular islands and cords that meander across the field are the deposits of calcium salts; the pale
+    pink, fibrillary background between them is reactive fibrous stroma. The colours in this photograph are shifted
+    towards magenta, but on H&E calcium is typically basophilic (blue-purple) and amorphous, and often fragmented or
+    torn by the microtome, which explains the white cracks inside the deposits. Note that there is no pre-existing
+    necrotic tissue: the calcium has been laid down in soft tissue that was healthy in itself, because of a systemic
+    excess of calcium and phosphate, and this is what separates metastatic from dystrophic calcification. Under
+    polarised light these calcium phosphate salts are not birefringent; to confirm them, use the von Kossa stain
+    (black) or alizarin red.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina a piccolo ingrandimento: numerose isole e cordoni irregolari viola-magenta
+    scuro, granulosi e con piccole fessure bianche, disposti a festoni e ad anello su un fondo rosa chiaro di tessuto
+    fibroso.
+  en: >-
+    Low-power H&E micrograph: many irregular dark purple-magenta islands and cords, granular and with small white
+    cracks, arranged in scallops and in a ring on a pale pink background of fibrous tissue.
+annotations:
+  - id: calcium-deposit
+    label: { it: Deposito basofilo di sali di calcio, en: Basophilic deposit of calcium salts }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.34, 0.33, 0.38, 0.33, 0.42, 0.45, 0.41, 0.58, 0.38, 0.68, 0.35, 0.70, 0.31, 0.62, 0.29, 0.47]
+  - id: fibrous-stroma
+    label: { it: Stroma fibroso reattivo tra i depositi, en: Reactive fibrous stroma between the deposits }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.75, 0.62, 0.87, 0.62, 0.87, 0.72, 0.75, 0.72]

@@ -1,0 +1,108 @@
+id: protein-quality-control-diagram-1
+file: protein-quality-control-diagram-1.png
+kind: diagram
+sourceUrl: https://commons.wikimedia.org/wiki/File:ProteinQS.svg
+author: Armin Kübelbeck (Kuebi)
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-10-10
+modifications: >-
+  Rendered from SVG to PNG and resized to 1600 × 1250 px on a white background; the original German text labels were
+  covered and replaced by numbered markers 1–8, which the caption explains in Italian and English.
+attributionText: >-
+  Armin Kübelbeck (Kuebi), "ProteinQS.svg" (ERAD pathway sketch), via Wikimedia Commons, CC0 1.0; labels replaced by
+  numbered markers by Atlante di Patologia
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+caption:
+  it: >-
+    Controllo di qualità delle proteine nel reticolo endoplasmatico (RE). Il riquadro grigio è il lume del RE; segui
+    le frecce da sinistra. 1: la catena nascente entra nel RE attraverso un canale della membrana (traslocone) mentre
+    viene sintetizzata. 2: passa per uno stato intermedio, non ancora ripiegato; qui gli chaperoni del RE (per esempio
+    BiP, della famiglia HSP70) la aiutano a raggiungere la forma corretta. 3: la proteina ripiegata bene lascia il RE in
+    una vescicola di trasporto diretta al Golgi. 4: le catene che non si ripiegano espongono superfici idrofobiche e
+    tendono ad aggregarsi. 5: l'accumulo di proteine non ripiegate attiva la risposta alle proteine non ripiegate (UPR),
+    che riduce la sintesi proteica, aumenta gli chaperoni e la degradazione; se lo stress non si risolve, avvia
+    l'apoptosi. 6: le proteine che non si possono recuperare vengono avviate alla distruzione, per due vie. 7:
+    autofagia. 8: degradazione associata al RE (ERAD): la proteina torna nel citosol attraverso un canale, riceve una
+    catena di ubiquitina (non disegnata) e il proteasoma la taglia in brevi peptidi; il cilindro blu è il nucleo
+    catalitico, le sfere viola sono i cappucci regolatori che riconoscono l'ubiquitina. Esempio da esame: la variante
+    Z dell'alfa-1-antitripsina si ripiega male, resta intrappolata nel RE degli epatociti come globuli PAS-positivi
+    resistenti alla diastasi e manca nel sangue.
+  en: >-
+    Protein quality control in the endoplasmic reticulum (ER). The grey box is the ER lumen; follow the arrows from
+    the left. 1: the nascent chain enters the ER through a membrane channel (the translocon) while it is being made.
+    2: it passes through an intermediate, not yet folded state; here ER chaperones (for example BiP, a member of the
+    HSP70 family) help it reach the correct shape. 3: the properly folded protein leaves the ER in a transport vesicle
+    bound for the Golgi. 4: chains that fail to fold expose hydrophobic surfaces and tend to aggregate. 5: the build-up
+    of unfolded proteins switches on the unfolded protein response (UPR), which slows protein synthesis and increases
+    chaperones and degradation; if the stress is not relieved, it starts apoptosis. 6: proteins that cannot be rescued
+    are sent for destruction by two routes. 7: autophagy. 8: ER-associated degradation (ERAD): the protein is moved
+    back into the cytosol through a channel, receives a ubiquitin chain (not drawn) and the proteasome cuts it into
+    short peptides; the blue barrel is the catalytic core, the purple spheres are the regulatory caps that recognise
+    ubiquitin. Exam example: the Z variant of alpha-1-antitrypsin misfolds, stays trapped in the ER of hepatocytes as
+    PAS-positive, diastase-resistant globules and is missing from the blood.
+alt:
+  it: >-
+    Schema di un compartimento grigio, il reticolo endoplasmatico, con marcatori numerati da 1 a 8. Una catena
+    proteica entra da sinistra attraverso un canale azzurro nella membrana (1), si attorciglia in un gomitolo
+    allentato (2) e poi diventa una spirale ordinata che esce in alto in una vescicola (3). Dal gomitolo partono
+    frecce verso un groviglio denso (4), che punta verso il basso (5), e verso un nodo di smistamento (6) che porta a
+    destra (7) e in basso. In basso la catena attraversa un secondo canale azzurro, entra in un cilindro di sfere blu
+    con cappucci viola e ne esce in frammenti (8).
+  en: >-
+    Diagram of a grey compartment, the endoplasmic reticulum, with numbered markers 1 to 8. A protein chain enters
+    from the left through a blue channel in the membrane (1), twists into a loose tangle (2) and then into an orderly
+    spiral that leaves at the top in a vesicle (3). Arrows run from the tangle to a dense knot (4), which points down
+    (5), and to a sorting point (6) that leads to the right (7) and downwards. At the bottom the chain passes through a
+    second blue channel, enters a barrel of blue spheres with purple caps and leaves it as fragments (8).
+annotations:
+  - id: translocation
+    label: { it: "1 · Ingresso nel RE attraverso il traslocone", en: "1 · Entry into the ER through the translocon" }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.101, 0.267, 0.088, 0.284, 0.069, 0.284, 0.055, 0.267, 0.055, 0.242, 0.069, 0.225, 0.088, 0.225, 0.101, 0.242]
+  - id: folding-intermediate
+    label: { it: "2 · Intermedio di ripiegamento, assistito dagli chaperoni", en: "2 · Folding intermediate, helped by chaperones" }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.455, 0.206, 0.442, 0.223, 0.423, 0.223, 0.409, 0.206, 0.409, 0.181, 0.423, 0.164, 0.442, 0.164, 0.455, 0.181]
+  - id: export-vesicle
+    label: { it: "3 · Proteina ripiegata, esportata in una vescicola", en: "3 · Folded protein, exported in a vesicle" }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.75, 0.07, 0.736, 0.087, 0.717, 0.087, 0.703, 0.07, 0.703, 0.045, 0.717, 0.028, 0.736, 0.028, 0.75, 0.045]
+  - id: aggregation
+    label: { it: "4 · Aggregazione delle proteine mal ripiegate", en: "4 · Aggregation of misfolded proteins" }
+    revealOrder: 4
+    shape:
+      type: polygon
+      coords: [0.341, 0.475, 0.327, 0.492, 0.308, 0.492, 0.295, 0.475, 0.295, 0.45, 0.308, 0.433, 0.327, 0.433, 0.341, 0.45]
+  - id: unfolded-protein-response
+    label: { it: "5 · Risposta alle proteine non ripiegate (UPR)", en: "5 · Unfolded protein response (UPR)" }
+    revealOrder: 5
+    shape:
+      type: polygon
+      coords: [0.446, 0.682, 0.432, 0.7, 0.413, 0.7, 0.4, 0.682, 0.4, 0.658, 0.413, 0.64, 0.432, 0.64, 0.446, 0.658]
+  - id: sent-for-degradation
+    label: { it: "6 · Avvio alla degradazione", en: "6 · Sent for degradation" }
+    revealOrder: 6
+    shape:
+      type: polygon
+      coords: [0.647, 0.432, 0.634, 0.45, 0.614, 0.45, 0.601, 0.432, 0.601, 0.408, 0.614, 0.39, 0.634, 0.39, 0.647, 0.408]
+  - id: autophagy-route
+    label: { it: "7 · Autofagia", en: "7 · Autophagy" }
+    revealOrder: 7
+    shape:
+      type: polygon
+      coords: [0.801, 0.436, 0.787, 0.454, 0.768, 0.454, 0.755, 0.436, 0.755, 0.412, 0.768, 0.394, 0.787, 0.394, 0.801, 0.412]
+  - id: erad-proteasome
+    label: { it: "8 · ERAD: ritorno nel citosol e taglio nel proteasoma", en: "8 · ERAD: return to the cytosol and breakdown in the proteasome" }
+    revealOrder: 8
+    shape:
+      type: polygon
+      coords: [0.745, 0.947, 0.731, 0.964, 0.712, 0.964, 0.699, 0.947, 0.699, 0.922, 0.712, 0.905, 0.731, 0.905, 0.745, 0.922]

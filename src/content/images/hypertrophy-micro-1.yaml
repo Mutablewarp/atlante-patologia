@@ -1,0 +1,68 @@
+# License check (2026-10-10): the Commons uploader (Mikael Häggström) is not the creator. The file is a derivative of
+# Fig. 1 of an open-access article (Scientific Reports 2019, PMC6397159); the article's JATS <permissions> block
+# (Europe PMC full text) grants CC BY 4.0, matching the Commons tag. Panels d (normal) and b (hypertrophy) of the
+# source figure were placed side by side and relabelled a and b by the uploader.
+id: hypertrophy-micro-1
+file: hypertrophy-micro-1.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Histopathology_of_myocardial_hypertrophy.jpg
+author: Yu Kakimoto, Chisa Okada, Noboru Kawabe, Ayumi Sasaki, Hideo Tsukamoto, Ryoko Nagao, Motoki Osawa
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-10-10
+modifications: >-
+  None by this project: the Commons file is used as downloaded (original pixel size, not re-encoded). The Commons file
+  itself is a derivative by Mikael Häggström that places panels d and b of the source figure side by side and relabels
+  them a and b.
+attributionText: >-
+  Kakimoto Y, Okada C, Kawabe N, Sasaki A, Tsukamoto H, Nagao R, Osawa M, "Myocardial lipofuscin accumulation in
+  ageing and sudden cardiac death", Scientific Reports 2019, doi:10.1038/s41598-019-40250-0, Fig. 1 (panels d and b,
+  rearranged and relabelled by Mikael Häggström), via Wikimedia Commons, CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: high power (scale bar 50 µm)
+caption:
+  it: >-
+    Miocardio normale (a, a sinistra, adulto giovane) e miocardio ipertrofico (b, a destra, scompenso cardiaco da cuore
+    ipertrofico), EE allo stesso ingrandimento (barra 50 µm). Parti dall'insieme: in a le fibre sono sottili, parallele
+    e fitte, con nuclei piccoli e allungati a sigaro; in b le fibre sono chiaramente più larghe e meno regolari. Poi
+    guarda i nuclei: in b sono ingranditi, più tondeggianti o rettangolari "a vagone" (box-car), con cromatina più
+    grossolana, segno dell'aumento del DNA (poliploidia) che accompagna la crescita della cellula. Gli autori descrivono
+    anche una lieve fibrosi interstiziale. Concetto chiave: le fibre sono più grandi, non più numerose; i
+    cardiomiociti sono cellule perenni, quindi il cuore aumenta di massa per ipertrofia. Attenzione: confronta le
+    larghezze solo allo stesso ingrandimento e su fibre tagliate per il lungo, perché un taglio obliquo fa sembrare le
+    fibre più larghe.
+  en: >-
+    Normal myocardium (a, left, young adult) and hypertrophic myocardium (b, right, heart failure from a hypertrophic
+    heart), H&E at the same magnification (scale bar 50 µm). Start with the overall texture: in a the fibres are slim,
+    parallel and closely packed, with small, elongated, cigar-shaped nuclei; in b the fibres are clearly wider and less
+    regular. Then look at the nuclei: in b they are enlarged, rounder or rectangular "box-car" nuclei with coarser
+    chromatin, a sign of the increased DNA content (polyploidy) that goes with the growth of the cell. The authors also
+    describe slight interstitial fibrosis. Key point: the fibres are bigger, not more numerous; cardiac myocytes are
+    permanent cells, so the heart gains mass by hypertrophy. Pitfall: compare widths only at the same magnification and
+    on fibres cut lengthwise, because an oblique cut makes fibres look wider.
+alt:
+  it: >-
+    Due micrografie affiancate di muscolo cardiaco in ematossilina-eosina, con barra di scala in basso a destra in
+    ciascuna. A sinistra, pannello a: fibre rosa sottili e parallele in diagonale, con piccoli nuclei viola allungati. A
+    destra, pannello b: fibre rosa più larghe e irregolari con nuclei viola più grandi e tondeggianti e spazi chiari tra
+    le fibre.
+  en: >-
+    Two side-by-side H&E micrographs of heart muscle, each with a scale bar at the bottom right. Left, panel a: slim,
+    parallel pink fibres running diagonally, with small elongated purple nuclei. Right, panel b: wider, irregular pink
+    fibres with larger, rounder purple nuclei and pale spaces between the fibres.
+annotations:
+  - id: normal-myocardium
+    label: { it: "a: miocardio normale, fibre sottili", en: "a: normal myocardium, slim fibres" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.01, 0.01, 0.475, 0.01, 0.475, 0.99, 0.01, 0.99] }
+  - id: hypertrophic-myocardium
+    label: { it: "b: miocardio ipertrofico, fibre più larghe", en: "b: hypertrophic myocardium, wider fibres" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.495, 0.01, 0.99, 0.01, 0.99, 0.99, 0.495, 0.99] }
+  - id: enlarged-nuclei
+    label: { it: Nuclei ingranditi e tondeggianti, en: Enlarged, rounded nuclei }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.62, 0.41, 0.725, 0.41, 0.725, 0.52, 0.62, 0.52] }

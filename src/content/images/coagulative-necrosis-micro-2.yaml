@@ -1,0 +1,71 @@
+id: coagulative-necrosis-micro-2
+file: coagulative-necrosis-micro-2.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Histopathology_of_a_pheochromocytoma_with_coagulative_necrosis,_annotated.jpg
+author: >-
+  Nobumasa Ohara, Yasuyuki Uemura, Naomi Mezaki, Keita Kimura, Masanori Kaneko, Hirohiko Kuwano, Katsuya Ebe,
+  Toshio Fujita, Takeshi Komeyama, Hiroyuki Usuda, Yuto Yamazaki, Takashi Maekawa, Hironobu Sasano, Kenzo Kaneko,
+  Kyuzi Kamoi
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-10-10
+modifications: "none by us (Wikimedia original file, 834 px wide); the four panels and white arrows come from the Commons version, which selects panels of the published figure"
+attributionText: >-
+  Ohara N, Uemura Y, Mezaki N, et al., "Histopathological analysis of spontaneous large necrosis of adrenal
+  pheochromocytoma manifested as acute attacks of alternating hypertension and hypotension: a case report", Journal
+  of Medical Case Reports 2016, doi:10.1186/s13256-016-1068-3, via Wikimedia Commons, CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: composite (gross, whole-mount section, medium and high power)
+caption:
+  it: >-
+    Necrosi coagulativa dentro un tumore: feocromocitoma del surrene con un'ampia necrosi centrale spontanea, seguito
+    dall'occhio nudo al forte ingrandimento. Leggi i quattro riquadri in senso orario; le frecce indicano l'area
+    necrotica o il suo margine. In alto a sinistra, la superficie di taglio del tumore capsulato, con la parte necrotica
+    opaca, giallo-bruna. In alto a destra, la sezione intera del pezzo a piccolissimo ingrandimento. In basso a
+    sinistra, medio ingrandimento: in alto un'area necrotica rosa intenso e omogenea, separata da un confine netto dal
+    tessuto vitale, più cellulato, che sta sotto. In basso a destra, forte ingrandimento: a sinistra le cellule
+    fantasma, cioè cellule tumorali con citoplasma rosso intenso e nucleo scomparso ma profilo ancora riconoscibile; a
+    destra, al bordo della necrosi, cellule con nuclei conservati, tra cui macrofagi carichi di emosiderina (granuli
+    bruni). Messaggio da portare a casa: profilo conservato + nucleo perso = necrosi coagulativa, in qualunque organo;
+    nei tumori riflette di solito un apporto di sangue insufficiente.
+  en: >-
+    Coagulative necrosis inside a tumour: an adrenal phaeochromocytoma with a large area of spontaneous central
+    necrosis, followed from the naked eye to high power. Read the four panels clockwise; the arrows mark the necrotic
+    area or its border. Top left, the cut surface of the encapsulated tumour, with its dull, tan-yellow necrotic part.
+    Top right, the whole specimen section at scanning power. Bottom left, medium power: at the top, a homogeneous,
+    intensely pink necrotic area, separated by a sharp border from the more cellular viable tissue below. Bottom
+    right, high power: on the left, ghost cells, tumour cells with deep-pink cytoplasm whose nuclei have vanished while
+    their outlines remain; on the right, at the edge of the necrosis, cells with preserved nuclei, including
+    hemosiderin-laden macrophages (brown granules). Take-home message: preserved outline + lost nucleus = coagulative
+    necrosis, whatever the organ; in tumours it usually reflects an inadequate blood supply.
+alt:
+  it: >-
+    Composizione di quattro immagini con frecce bianche: in alto a sinistra un tumore sezionato, rotondeggiante e
+    giallo-bruno, circondato da tessuto rosso; in alto a destra una sezione istologica intera rosa pallido; in basso a
+    sinistra una zona rosa intenso e uniforme sopra un tessuto più violaceo; in basso a destra cellule rosa senza nuclei
+    a sinistra e cellule con nuclei viola e alcuni granuli bruni a destra.
+  en: >-
+    Four-panel composite with white arrows: top left, a sliced, rounded, tan-yellow tumour surrounded by red tissue;
+    top right, a pale pink whole-mount histological section; bottom left, a uniform, intensely pink zone above more
+    purple tissue; bottom right, pink cells without nuclei on the left and cells with purple nuclei and a few brown
+    granules on the right.
+annotations:
+  - id: necrosis-medium-power
+    label: { it: Area necrotica omogenea (medio ingrandimento), en: Homogeneous necrotic area (medium power) }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.005, 0.50, 0.46, 0.50, 0.46, 0.57, 0.40, 0.62, 0.31, 0.68, 0.21, 0.71, 0.10, 0.67, 0.005, 0.61] }
+  - id: viable-tumour
+    label: { it: Tessuto tumorale vitale, en: Viable tumour tissue }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.005, 0.80, 0.46, 0.80, 0.46, 0.96, 0.005, 0.96] }
+  - id: ghost-cells
+    label: { it: Cellule fantasma senza nucleo, en: Ghost cells without nuclei }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.47, 0.50, 0.69, 0.50, 0.74, 0.99, 0.47, 0.99] }
+  - id: necrosis-border
+    label: { it: Bordo con macrofagi carichi di emosiderina, en: Border with hemosiderin-laden macrophages }
+    revealOrder: 4
+    shape: { type: polygon, coords: [0.77, 0.50, 0.995, 0.50, 0.995, 0.99, 0.83, 0.99] }

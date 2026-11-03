@@ -1,0 +1,66 @@
+id: intracellular-accumulations-micro-1
+file: intracellular-accumulations-micro-1.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Histopathology_of_cholesterolosis.jpg
+author: K C Geetika, Talwar OP
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-10-10
+modifications: "none (Wikimedia original file, 704 × 526 px)"
+attributionText: >-
+  K C Geetika, Talwar OP, "Histomorphological changes in gall bladder diseases and its association with helicobacter
+  infection", Journal of Pathology of Nepal 2014;4(8):617–622, doi:10.3126/jpn.v4i8.11607, via Wikimedia Commons,
+  CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: high power (original 400×)
+caption:
+  it: >-
+    Colesterolosi della colecisti, EE a forte ingrandimento (400× nell'originale). Parti dall'architettura: è l'apice
+    di una plica mucosa, rivestito da un solo strato di epitelio cilindrico ben visibile in alto e lungo il margine
+    destro. Poi guarda l'asse della plica, la lamina propria: invece del normale stroma sottile, è stipata di grandi
+    cellule rotonde con citoplasma chiaro e schiumoso, finemente vacuolato, e un piccolo nucleo scuro spesso centrale.
+    Sono macrofagi schiumosi, che hanno inglobato colesterolo ed esteri del colesterolo e li conservano in minuscole
+    goccioline; i solventi usati per includere il tessuto in paraffina sciolgono i lipidi, per cui resta solo l'aspetto
+    "a schiuma". Lo stesso tipo di cellula forma le strie lipidiche dell'aterosclerosi e gli xantomi della cute.
+    Attenzione al confronto con la steatosi epatica: lì il grasso (trigliceridi) forma pochi vacuoli grandi e netti
+    dentro l'epatocita; qui le goccioline sono molte e minute, dentro un macrofago.
+  en: >-
+    Cholesterolosis of the gallbladder, H&E at high power (400× in the original). Start from the architecture: this is
+    the tip of a mucosal fold, lined by a single layer of columnar epithelium that is easy to see at the top and along
+    the right edge. Then look at the core of the fold, the lamina propria: instead of thin normal stroma, it is crowded
+    with large round cells that have pale, foamy, finely vacuolated cytoplasm and a small dark nucleus, often central.
+    These are foam cells, macrophages that have taken up cholesterol and cholesterol esters and keep them in tiny
+    droplets; the solvents used to embed the tissue in paraffin dissolve the lipid, leaving only the "foamy" look. The
+    same kind of cell builds the fatty streaks of atherosclerosis and the xanthomas of the skin. Mind the contrast with
+    fatty liver: there the fat (triglyceride) forms a few large, sharp vacuoles inside the hepatocyte; here the
+    droplets are many and tiny, inside a macrophage.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina dell'apice di una plica di mucosa della colecisti: un bordo di cellule
+    epiteliali cilindriche con nuclei scuri circonda un'area centrale piena di grandi cellule rotonde dal citoplasma
+    chiaro e schiumoso, ciascuna con un piccolo nucleo scuro.
+  en: >-
+    H&E micrograph of the tip of a gallbladder mucosal fold: a rim of columnar epithelial cells with dark nuclei
+    surrounds a central area packed with large round cells with pale, foamy cytoplasm, each with a small dark nucleus.
+annotations:
+  - id: foam-cells-lamina-propria
+    label: { it: Lamina propria stipata di macrofagi schiumosi, en: Lamina propria crowded with foam cells }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.12, 0.28, 0.28, 0.16, 0.55, 0.14, 0.63, 0.26, 0.63, 0.60, 0.55, 0.78, 0.30, 0.80, 0.12, 0.70]
+  - id: single-foam-cell
+    label: { it: Un macrofago schiumoso (citoplasma chiaro, nucleo piccolo), en: One foam cell (pale cytoplasm, small nucleus) }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.477, 0.64, 0.465, 0.675, 0.437, 0.69, 0.409, 0.675, 0.397, 0.64, 0.409, 0.605, 0.437, 0.59, 0.465, 0.605]
+  - id: columnar-epithelium
+    label: { it: Epitelio cilindrico di rivestimento, en: Columnar surface epithelium }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.77, 0.08, 0.84, 0.08, 0.87, 0.30, 0.84, 0.50, 0.80, 0.66, 0.72, 0.66, 0.74, 0.48, 0.75, 0.30]

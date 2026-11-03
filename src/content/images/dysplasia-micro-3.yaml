@@ -1,0 +1,57 @@
+# Annotation placement follows the arrows in the author's own annotated version of the same field
+# (File:Histopathology_of_high-grade_dysplasia_in_tubulovillous_adenoma,_annotated.png, CC0).
+id: dysplasia-micro-3
+file: dysplasia-micro-3.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Histopathology_of_high-grade_dysplasia_in_a_tubulovillous_adenoma.jpg
+author: Mikael Häggström, M.D.
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-10-10
+modifications: "Downloaded the 1920 × 1436 px Commons rendition of the 2048 × 1532 px original; downscaled to 1600 × 1197 px and re-encoded as JPEG (quality 82, metadata stripped). No crop, no colour change."
+attributionText: "Mikael Häggström, M.D., via Wikimedia Commons, CC0 1.0 (public domain dedication)"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: high power
+caption:
+  it: >-
+    Displasia di alto grado in un adenoma tubulo-villoso del colon, EE ad alto ingrandimento: è la displasia di un
+    epitelio ghiandolare, utile per confrontarla con quella squamosa. Tutto l'epitelio del campo è già displastico,
+    quindi il confronto è tra due gradi. Parti dal margine in alto a sinistra: la displasia di basso grado ha nuclei
+    allungati "a matita", ipercromatici e stratificati, ma ancora paralleli tra loro e perpendicolari alla membrana
+    basale, cioè con la polarità conservata. Poi segui la striscia centrale di epitelio: qui i nuclei diventano rotondi,
+    vescicolosi, più grandi e disposti in modo disordinato, e non mantengono più l'orientamento verso la base.
+    Questa perdita di polarità con nuclei tondeggianti e atipici definisce la displasia di alto grado. Concetto chiave:
+    in un adenoma il grado di displasia si giudica dalla forma e dall'orientamento dei nuclei, oltre che
+    dall'architettura delle ghiandole (per esempio aspetti cribriformi); la displasia resta confinata sopra la
+    membrana basale finché non c'è invasione.
+  en: >-
+    High-grade dysplasia in a tubulovillous adenoma of the colon, H&E at high power: this is dysplasia of a glandular
+    epithelium, useful to compare with the squamous kind. All the epithelium in the field is already dysplastic, so the
+    comparison is between two grades. Start at the upper left edge: low-grade dysplasia has elongated, "pencil-like",
+    hyperchromatic, stratified nuclei that are still parallel to each other and perpendicular to the basement
+    membrane, so polarity is preserved. Then follow the central strip of epithelium: here the nuclei become round,
+    vesicular, larger and haphazardly arranged, and they no longer point towards the base. This loss of polarity with
+    rounded, atypical nuclei defines high-grade dysplasia. Key point: in an adenoma the grade of dysplasia is judged
+    from the shape and orientation of the nuclei as well as from gland architecture (for example cribriform
+    patterns); the dysplasia stays above the basement membrane until invasion occurs.
+alt:
+  it: >-
+    Micrografia ad alto ingrandimento in ematossilina-eosina di epitelio ghiandolare viola che riveste spazi bianchi
+    (lumi). In alto a sinistra i nuclei sono allungati, scuri e paralleli; nella striscia centrale i nuclei sono più
+    grandi, rotondi, chiari e disordinati. In basso al centro c'è un sottile stroma rosa con piccoli nuclei.
+  en: >-
+    High-power H&E micrograph of purple glandular epithelium lining white spaces (lumens). At the upper left the nuclei
+    are elongated, dark and parallel; in the central strip the nuclei are larger, round, pale and disordered. A thin
+    pink stroma with small nuclei runs across the lower centre.
+annotations:
+  - id: low-grade-dysplasia
+    label: { it: "Basso grado: nuclei allungati e paralleli", en: "Low grade: elongated, parallel nuclei" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.01, 0.08, 0.18, 0.05, 0.26, 0.25, 0.18, 0.45, 0.08, 0.55, 0.01, 0.55] }
+  - id: high-grade-dysplasia
+    label: { it: "Alto grado: nuclei tondi, perdita di polarità", en: "High grade: round nuclei, loss of polarity" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.17, 0.47, 0.30, 0.36, 0.48, 0.43, 0.52, 0.22, 0.70, 0.14, 0.86, 0.20, 0.86, 0.60, 0.70, 0.66, 0.45, 0.70, 0.25, 0.75, 0.17, 0.62] }

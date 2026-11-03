@@ -1,0 +1,69 @@
+id: caseous-necrosis-micro-1
+file: caseous-necrosis-micro-1.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Necrogran10x.jpg
+author: Mutleysmith (Wikimedia Commons user)
+license: PD
+licenseUrl: https://commons.wikimedia.org/wiki/Template:PD-self
+retrievedAt: 2026-10-10
+modifications: "Re-encoded as JPEG (EXIF camera metadata removed); no crop, no resize (1360 × 1024 px), no colour change."
+attributionText: "Mutleysmith, own work, released into the public domain, via Wikimedia Commons"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: 10× objective (low to intermediate power)
+caption:
+  it: >-
+    Granuloma caseoso nel polmone di un paziente con tubercolosi miliare, EE, obiettivo 10×. Parti dal piccolo
+    ingrandimento: un unico grande nodulo rotondeggiante riempie quasi tutto il campo; negli angoli resta un po' del
+    parenchima polmonare circostante, con globuli rossi. Poi leggi il nodulo dall'esterno verso l'interno. Il bordo più
+    esterno (margine sinistro) è un manicotto di piccoli linfociti scuri. All'interno c'è una fascia di macrofagi
+    epitelioidi, cellule chiare con nuclei ovali o allungati, insieme a diverse cellule giganti multinucleate, ben
+    visibili lungo il margine in basso a sinistra e sul lato destro. Il reperto chiave è il centro: un'ampia area rosa
+    pallido, amorfa o finemente granulare, in cui i profili delle cellule e l'architettura del tessuto sono scomparsi e
+    restano solo frammenti nucleari scuri sparsi. Questa è la necrosi caseosa. Come riconoscerla: nella necrosi
+    coagulativa le sagome delle cellule e del tessuto restano riconoscibili, qui no; nella necrosi colliquativa il centro
+    sarebbe liquido e ricco di granulociti neutrofili, non una massa rosa compatta. Collegamento clinico: un granuloma
+    necrotizzante come questo impone di cercare i micobatteri (colorazione di Ziehl-Neelsen, coltura, test molecolari);
+    anche alcuni funghi, per esempio Histoplasma, possono dare lo stesso quadro.
+  en: >-
+    Caseating granuloma in the lung of a patient with miliary tuberculosis, H&E, 10× objective. Start at low power: one
+    large, round nodule fills most of the field; in the corners a little of the surrounding lung remains, with red blood
+    cells. Then read the nodule from the outside in. The outermost rim (left edge) is a cuff of small, dark lymphocytes.
+    Inside it lies a band of epithelioid macrophages, pale cells with oval or elongated nuclei, together with several
+    multinucleated giant cells that are easiest to see along the lower left border and on the right side. The key
+    finding is the centre: a wide, pale pink, amorphous to finely granular zone in which cell outlines and tissue
+    architecture have disappeared and only scattered dark fragments of nuclei remain. This is caseous necrosis. How to
+    tell it apart: in coagulative necrosis the ghost outlines of cells and tissue are still recognisable, here they are
+    not; in liquefactive necrosis the centre would be fluid and full of neutrophils, not a solid pink mass. Clinical
+    link: a necrotising granuloma like this one calls for a search for mycobacteria (Ziehl-Neelsen stain, culture,
+    molecular tests); some fungi, such as Histoplasma, can produce the same picture.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina: un grande nodulo rotondo occupa il campo. Il suo ampio centro è rosa pallido e
+    privo di struttura, con pochi puntini scuri sparsi; intorno ci sono cellule chiare epitelioidi, alcune cellule giganti
+    multinucleate (in basso a sinistra e a destra) e, sul margine sinistro, una fascia scura di linfociti.
+  en: >-
+    H&E micrograph: a large round nodule fills the field. Its wide centre is pale pink and structureless with a few
+    scattered dark dots; around it lie pale epithelioid cells, several multinucleated giant cells (lower left and right)
+    and, along the left edge, a dark band of lymphocytes.
+annotations:
+  - id: central-caseous-necrosis
+    label: { it: Necrosi caseosa centrale, en: Central caseous necrosis }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.38, 0.22, 0.58, 0.17, 0.72, 0.27, 0.77, 0.45, 0.71, 0.63, 0.55, 0.71, 0.40, 0.66, 0.33, 0.50, 0.33, 0.33]
+  - id: multinucleated-giant-cells
+    label: { it: Cellule giganti multinucleate tra gli istiociti epitelioidi, en: Multinucleated giant cells among epithelioid histiocytes }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.09, 0.53, 0.17, 0.51, 0.22, 0.64, 0.27, 0.74, 0.34, 0.78, 0.34, 0.88, 0.25, 0.87, 0.18, 0.80, 0.12, 0.70, 0.08, 0.61]
+  - id: lymphocyte-cuff
+    label: { it: Manicotto di linfociti, en: Lymphocyte cuff }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.0, 0.10, 0.06, 0.02, 0.14, 0.0, 0.16, 0.06, 0.12, 0.20, 0.11, 0.40, 0.10, 0.56, 0.03, 0.58, 0.0, 0.45]

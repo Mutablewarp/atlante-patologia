@@ -1,0 +1,73 @@
+id: apoptosis-micro-3
+file: apoptosis-micro-3.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Apoptosis_multi_mouseliver.jpg
+author: Laboratory of Experimental Pathology, Division of Intramural Research, NIEHS (U.S. National Institutes of Health)
+license: PD
+licenseUrl: https://commons.wikimedia.org/wiki/Template:PD-USGov
+retrievedAt: 2026-10-10
+modifications: >-
+  None: the file is used exactly as published on Wikimedia Commons (417 × 417 px). The black arrows are part of the
+  original image.
+attributionText: >-
+  Laboratory of Experimental Pathology, NIEHS, U.S. National Institutes of Health, public domain, via Wikimedia
+  Commons
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+# License check (2026-10-10): the Commons file page carries {{PD-USGov}}; author is a federal laboratory (NIEHS
+# Laboratory of Experimental Pathology) and the source is the NIEHS liver pathology web atlas. Laboratory mouse
+# tissue, so no patient is involved.
+stain: H&E
+magnification: high power
+caption:
+  it: >-
+    Fegato di topo da laboratorio, EE a forte ingrandimento; le frecce nere fanno parte dell'immagine originale. È una
+    vista pulita della morfologia dell'apoptosi nella singola cellula. Prendi prima come riferimento un epatocita
+    normale: cellula grande e poligonale, citoplasma violetto pallido, nucleo rotondo con cromatina granulare
+    distribuita in modo uniforme. Poi segui le frecce. In alto a sinistra un epatocita morente si è frammentato in diversi piccoli corpi
+    rotondi, delimitati da membrana, con citoplasma rosa acceso, alcuni con frammenti nucleari scuri (carioressi). Poco
+    più a destra c'è un corpo apoptotico rotondo, liscio ed eosinofilo, senza nucleo. In basso una piccola cellula con
+    un unico nucleo rotondo e molto denso (picnosi) giace in un alone chiaro, staccata dalle vicine. I segni da
+    riconoscere sono riduzione di volume, ipereosinofilia, condensazione della cromatina, frammentazione in corpi
+    apoptotici e assenza di infiammazione. Da ricordare: la membrana plasmatica resta integra, quindi il contenuto non
+    si riversa all'esterno e intorno alle cellule che muoiono non c'è infiltrato infiammatorio. Confronta con la
+    necrosi coagulativa, in cui muoiono interi gruppi di cellule, che si gonfiano e perdono il nucleo pur conservando
+    il profilo.
+  en: >-
+    Laboratory mouse liver, H&E at high power; the black arrows are part of the original image. This is a clean view
+    of the morphology of apoptosis in single cells. First take a normal hepatocyte as a reference: a large polygonal
+    cell with pale violet cytoplasm and a round nucleus with evenly granular chromatin. Then follow the arrows. At upper left a dying hepatocyte has broken up into several small, round, membrane-bound bodies with
+    bright pink cytoplasm, some holding dark nuclear fragments (karyorrhexis). Just to the right lies a round, smooth,
+    eosinophilic apoptotic body without a nucleus. At the bottom a small cell with a single, very dense round nucleus
+    (pyknosis) sits in a clear halo, detached from its neighbours. The signs to recognise are shrinkage,
+    hypereosinophilia, chromatin condensation, fragmentation into apoptotic bodies and the lack of inflammation. Key
+    point: the plasma membrane stays intact, so the contents do not leak out and no inflammatory infiltrate gathers
+    around the dying cells. Compare with coagulative necrosis, where whole groups of cells die, swell and lose their
+    nuclei while keeping their outline.
+alt:
+  it: >-
+    Micrografia ad alto ingrandimento di fegato in ematossilina-eosina: grandi epatociti violetti con nuclei rotondi a
+    cromatina granulare; cinque frecce nere puntano verso il centro su piccoli corpi rotondi rosa acceso, alcuni con frammenti
+    scuri, e in basso su una piccola cellula con un nucleo nero e denso circondata da un alone chiaro.
+  en: >-
+    High-power H&E micrograph of liver: large violet hepatocytes with round, granular nuclei; five black arrows point
+    towards the centre at small, round, bright pink bodies, some with dark fragments, and at the bottom at a small
+    cell with a dense black nucleus surrounded by a clear halo.
+annotations:
+  - id: normal-hepatocyte-nucleus
+    label: { it: Nucleo di epatocita normale (riferimento), en: Normal hepatocyte nucleus (reference) }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.544, 0.458, 0.643, 0.458, 0.643, 0.588, 0.544, 0.588] }
+  - id: apoptotic-bodies-with-fragments
+    label: { it: Corpi apoptotici con frammenti nucleari (carioressi), en: Apoptotic bodies with nuclear fragments (karyorrhexis) }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.223, 0.460, 0.319, 0.460, 0.319, 0.592, 0.223, 0.592] }
+  - id: eosinophilic-apoptotic-body
+    label: { it: Corpo apoptotico eosinofilo, en: Eosinophilic apoptotic body }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.384, 0.484, 0.451, 0.484, 0.451, 0.556, 0.384, 0.556] }
+  - id: pyknotic-cell
+    label: { it: Nucleo picnotico in un alone chiaro, en: Pyknotic nucleus in a clear halo }
+    revealOrder: 4
+    shape: { type: polygon, coords: [0.324, 0.784, 0.396, 0.784, 0.396, 0.856, 0.324, 0.856] }

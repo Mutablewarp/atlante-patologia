@@ -1,0 +1,63 @@
+id: metaplasia-micro-2
+file: metaplasia-micro-2.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Keratinizing_squamous_metaplasia_of_the_urinary_bladder,_intermed._mag.jpg
+author: CoRus13 (Wikimedia Commons user)
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-10-10
+modifications: "Downscaled from 4272 × 2848 px to 1600 px width and re-encoded as JPEG (metadata stripped); no crop, no colour change."
+attributionText: "CoRus13, via Wikimedia Commons, CC0 1.0 (public domain dedication)"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: intermediate power
+caption:
+  it: >-
+    Metaplasia squamosa cheratinizzante della vescica in una cistite cronica, EE a medio ingrandimento. Parti dalla
+    superficie a sinistra: l'urotelio normale è sottile, fatto di pochi strati di cellule con nuclei scuri e
+    affollati. Seguendo la superficie verso destra trovi un passaggio netto a un epitelio pavimentoso pluristratificato
+    molto più spesso, rosa, con cellule poligonali a citoplasma ampio che si appiattiscono verso l'alto. Sopra si
+    staccano lamelle di cheratina, ondulate e rosa scuro, come nella cute: la vescica non produce cheratina, quindi
+    la loro presenza basta a dire che il tipo di epitelio è cambiato. Sotto, la lamina propria è pallida ed
+    edematosa, con capillari congesti e cellule infiammatorie, segno dello stimolo cronico. Il messaggio chiave: il
+    nuovo epitelio è un tessuto adulto normale nel posto sbagliato, senza atipie. Protegge dall'irritazione, ma su
+    questo terreno può insorgere un carcinoma squamoso.
+  en: >-
+    Keratinising squamous metaplasia of the urinary bladder in chronic cystitis, H&E at intermediate power. Start at
+    the surface on the left: the normal urothelium is thin, a few layers of cells with dark, crowded nuclei. Follow
+    the surface to the right and you meet a sharp switch to a much thicker, pink, stratified squamous epithelium,
+    with polygonal cells and ample cytoplasm that flatten towards the top. Above it, wavy dark-pink flakes of
+    keratin peel away, as in skin: the bladder does not make keratin, so their presence alone tells you the type of
+    epithelium has changed. Beneath, the lamina propria is pale and oedematous, with congested capillaries and
+    inflammatory cells, a sign of the chronic stimulus. Key message: the new epithelium is normal adult tissue in the
+    wrong place, without atypia. It resists irritation, but squamous cell carcinoma can arise on this ground.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina di parete vescicale: a sinistra un epitelio sottile e viola scuro; da metà
+    immagine verso destra un epitelio rosa molto più spesso, sormontato da sottili lamelle ondulate rosa scuro; sotto,
+    un tessuto connettivo pallido con piccoli vasi rossi.
+  en: >-
+    H&E micrograph of bladder wall: on the left a thin, dark-purple epithelium; from the middle of the image to the
+    right a much thicker pink epithelium topped by thin, wavy dark-pink flakes; below, pale connective tissue with
+    small red vessels.
+annotations:
+  - id: native-urothelium
+    label: { it: Urotelio normale, en: Normal urothelium }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.0, 0.44, 0.10, 0.49, 0.14, 0.58, 0.17, 0.50, 0.25, 0.44, 0.32, 0.39, 0.32, 0.52, 0.25, 0.56, 0.15, 0.62, 0.10, 0.58, 0.0, 0.53]
+  - id: metaplastic-squamous-epithelium
+    label: { it: Epitelio pavimentoso metaplastico, en: Metaplastic squamous epithelium }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.31, 0.42, 0.52, 0.39, 0.58, 0.32, 0.65, 0.28, 0.78, 0.33, 1.0, 0.38, 1.0, 0.68, 0.78, 0.60, 0.68, 0.63, 0.52, 0.69, 0.39, 0.65, 0.32, 0.55]
+  - id: keratin-flakes
+    label: { it: Lamelle di cheratina, en: Keratin flakes }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.32, 0.24, 0.45, 0.22, 0.62, 0.14, 0.80, 0.17, 1.0, 0.20, 1.0, 0.37, 0.85, 0.32, 0.70, 0.28, 0.60, 0.27, 0.55, 0.36, 0.45, 0.40, 0.38, 0.38]

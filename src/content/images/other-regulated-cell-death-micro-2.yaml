@@ -1,0 +1,75 @@
+id: other-regulated-cell-death-micro-2
+file: other-regulated-cell-death-micro-2.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Killer_T_cells_surround_a_cancer_cell.png
+author: Alex Ritter, Jennifer Lippincott Schwartz and Gillian Griffiths (credited by the U.S. National Institutes of Health, NIH Image Gallery)
+license: PD
+licenseUrl: https://creativecommons.org/publicdomain/mark/1.0/
+retrievedAt: 2026-10-10
+modifications: >-
+  Converted from PNG to JPEG at the original size (601 × 401 px); the few transparent pixels were flattened onto the
+  black background. No crop or retouching.
+attributionText: >-
+  Alex Ritter, Jennifer Lippincott Schwartz and Gillian Griffiths, National Institutes of Health (NIH Image Gallery),
+  public domain, via Wikimedia Commons
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+# License check (2026-10-10): Commons file page metadata gives "Public domain" ({{PD-USGov}}), author "The National
+# Institutes of Health", source the official NIH Flickr account (photo 20673870162). That Flickr page labels the image
+# with the Public Domain Mark 1.0 and credits Alex Ritter, Jennifer Lippincott Schwartz and Gillian Griffiths. One
+# credited author (Griffiths) worked at the University of Cambridge, not a U.S. federal agency; the related research
+# article (Ritter et al., Immunity 2015;42:864-876, PMC4448150) is CC BY 4.0, so the image is freely reusable either
+# way. Credit all three names. Small file (601 × 401 px) but sharp at its native size.
+stain: multicolour fluorescence, super-resolution microscopy
+magnification: high power (single cells)
+caption:
+  it: >-
+    Morte cellulare mediata da granzimi colta un attimo prima del colpo: immagine in fluorescenza a super-risoluzione
+    di linfociti T citotossici (CD8+) attorno a una cellula tumorale in coltura. Orientati sui colori: al centro la
+    grande cellula blu, rotonda e ancora integra, è la cellula bersaglio; le tre cellule più piccole che la circondano
+    sono i linfociti T, con il bordo verde e il citoplasma pieno di puntini rossi. I puntini rossi sono i granuli
+    litici, lisosomi specializzati che contengono perforina e granzimi. Poi guarda i contatti: la cellula a destra e
+    quella in basso a sinistra aderiscono al bersaglio e i loro granuli si addensano proprio sul lato che lo tocca. È la
+    sinapsi immunologica: il linfocita riconosce l'antigene presentato dalle molecole MHC di classe I, orienta i granuli
+    verso il punto di contatto e li scarica nello stretto spazio tra le due membrane. La perforina apre pori nella
+    membrana del bersaglio e lascia entrare i granzimi; il granzima B taglia e attiva le caspasi (direttamente la
+    caspasi 3, e indirettamente tramite BID e i mitocondri). Da ricordare: la cellula bersaglio muore per apoptosi
+    pilotata dall'esterno, scavalcando i recettori di morte; dopo il colpo il linfocita si stacca, intatto, e può
+    uccidere un'altra cellula. È il meccanismo con cui vengono eliminate le cellule infettate da virus, le cellule
+    tumorali e, nel rigetto e nella malattia del trapianto contro l'ospite, le cellule dei tessuti bersaglio.
+  en: >-
+    Granzyme-mediated cell death caught a moment before the hit: a super-resolution fluorescence image of cytotoxic
+    (CD8+) T cells around a cultured cancer cell. Get your bearings from the colours: in the centre the large, round,
+    still intact blue cell is the target; the three smaller cells around it are the T cells, with a green rim and
+    cytoplasm full of red dots. The red dots are lytic granules, specialised lysosomes that contain perforin and
+    granzymes. Then look at the contacts: the cell on the right and the one at lower left cling to the target, and
+    their granules gather on the very side that touches it. This is the immunological synapse: the T cell recognises
+    antigen presented on MHC class I, steers its granules to the contact point and releases them into the narrow gap
+    between the two membranes. Perforin opens pores in the target membrane that let the granzymes in; granzyme B
+    cleaves and activates caspases (caspase-3 directly, and indirectly through BID and the mitochondria). Key point:
+    the target dies by apoptosis driven from outside, bypassing the death receptors; after the hit the T cell detaches
+    unharmed and can kill another cell. This is how virus-infected cells and tumour cells are removed and, in
+    rejection and graft-versus-host disease, how the cells of the target tissues are destroyed.
+alt:
+  it: >-
+    Immagine in fluorescenza su fondo nero: al centro una grande cellula rotonda blu con un sottile contorno verde;
+    attorno, tre cellule più piccole con bordo verde frastagliato, interno blu e numerosi puntini rossi; nelle cellule a
+    destra e in basso a sinistra i puntini rossi sono raggruppati sul lato rivolto verso la cellula centrale.
+  en: >-
+    Fluorescence image on a black background: in the centre a large round blue cell with a thin green outline; around
+    it, three smaller cells with a ragged green rim, blue interior and many red dots; in the cells on the right and at
+    lower left the red dots are clustered on the side facing the central cell.
+annotations:
+  - id: target-cell
+    label: { it: Cellula bersaglio (tumorale), en: Target (cancer) cell }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.375, 0.356, 0.646, 0.356, 0.646, 0.755, 0.375, 0.755] }
+  - id: cytotoxic-t-cell
+    label: { it: Linfocita T citotossico aderente al bersaglio, en: Cytotoxic T cell attached to the target }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.633, 0.218, 0.867, 0.218, 0.867, 0.662, 0.633, 0.662] }
+  - id: lytic-granules
+    label: { it: "Granuli litici (perforina, granzimi) verso la sinapsi", en: "Lytic granules (perforin, granzymes) facing the synapse" }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.665, 0.37, 0.76, 0.37, 0.76, 0.53, 0.665, 0.53] }

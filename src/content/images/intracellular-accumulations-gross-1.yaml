@@ -1,0 +1,53 @@
+id: intracellular-accumulations-gross-1
+file: intracellular-accumulations-gross-1.jpg
+kind: gross
+sourceUrl: https://commons.wikimedia.org/wiki/File:Gross_pathology_of_cholesterolosis.jpg
+author: K C Geetika, Talwar OP
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-10-10
+modifications: "none (Wikimedia original file, 704 × 519 px)"
+attributionText: >-
+  K C Geetika, Talwar OP, "Histomorphological changes in gall bladder diseases and its association with helicobacter
+  infection", Journal of Pathology of Nepal 2014;4(8):617–622, doi:10.3126/jpn.v4i8.11607, via Wikimedia Commons,
+  CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+caption:
+  it: >-
+    Colecisti aperta con colesterolosi, superficie mucosa vista dall'alto. Il colore verde scuro di fondo è dovuto
+    all'imbibizione biliare e non è il reperto. Avvicinati alla mucosa: è cosparsa di innumerevoli puntini e sottili
+    strie gialle, fitti come i semi di una fragola (per questo si parla di "colecisti a fragola", che su una mucosa non
+    tinta di bile appare rossa punteggiata di giallo). Ogni puntino corrisponde all'apice di una plica mucosa la cui
+    lamina propria è piena di macrofagi carichi di colesterolo: l'accumulo intracellulare, invisibile nella singola
+    cellula, diventa visibile a occhio nudo quando migliaia di cellule lo condividono. Confronta con il margine della
+    parete, giallo pallido e liscio, privo di screziature.
+  en: >-
+    Opened gallbladder with cholesterolosis, mucosal surface seen from above. The dark green background comes from bile
+    staining and is not the finding. Look closely at the mucosa: it is sprinkled with countless yellow dots and thin
+    yellow streaks, packed like the seeds on a strawberry (hence "strawberry gallbladder", which on mucosa not stained
+    by bile looks red flecked with yellow). Each dot is the tip of a mucosal fold whose lamina propria is filled with
+    cholesterol-laden macrophages: an intracellular accumulation, invisible in a single cell, becomes visible to the
+    naked eye when thousands of cells share it. Compare with the edge of the wall, pale yellow and smooth, without
+    flecks.
+alt:
+  it: >-
+    Fotografia di una colecisti aperta su un piano bianco: due lembi di mucosa verde scuro, finemente punteggiata di
+    giallo, circondati da un bordo di parete giallo pallido e liscio.
+  en: >-
+    Photograph of an opened gallbladder on a white board: two flaps of dark green mucosa finely speckled with yellow,
+    surrounded by a smooth, pale yellow rim of wall.
+annotations:
+  - id: speckled-mucosa
+    label: { it: Mucosa screziata di giallo (depositi di colesterolo), en: Yellow-flecked mucosa (cholesterol deposits) }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.37, 0.08, 0.48, 0.02, 0.53, 0.18, 0.60, 0.35, 0.60, 0.62, 0.57, 0.80, 0.50, 0.89, 0.42, 0.88, 0.32, 0.78, 0.28, 0.55, 0.29, 0.32, 0.35, 0.20]
+  - id: smooth-wall-edge
+    label: { it: Margine della parete senza screziature, en: Edge of the wall without flecks }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.22, 0.34, 0.27, 0.34, 0.28, 0.60, 0.31, 0.80, 0.36, 0.92, 0.31, 0.93, 0.26, 0.76, 0.23, 0.56]

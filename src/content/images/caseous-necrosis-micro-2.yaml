@@ -1,0 +1,75 @@
+id: caseous-necrosis-micro-2
+file: caseous-necrosis-micro-2.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Tuberculous_lymphadenitis_Wellcome_W0044758.jpg
+author: SB Lucas (Wellcome Collection)
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-10-10
+modifications: "Downscaled from 5182 × 3372 px (via the 1920 px Commons rendition) to 1600 × 1041 px and re-encoded as JPEG; no crop, no colour change."
+attributionText: "SB Lucas, Wellcome Collection, CC0 1.0 (public domain dedication), via Wikimedia Commons"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: medium power
+caption:
+  it: >-
+    Linfadenite tubercolare con necrosi caseosa iniziale, EE, medio ingrandimento. Prima il quadro d'insieme: la normale
+    architettura del linfonodo è sostituita da numerosi granulomi accostati, ciascuno un ammasso rotondeggiante di
+    macrofagi epitelioidi chiari con nuclei ovali e vescicolosi; tra un granuloma e l'altro corrono fasce scure di piccoli
+    linfociti (in alto al centro), che restano anche negli angoli. Poi guarda il centro dei granulomi. In alto al centro e
+    a destra la parte centrale del granuloma è diventata un'area omogenea, finemente granulare, rosa acceso, con pochi o
+    nessun nucleo integro: è la caseificazione che comincia, prima che le aree necrotiche si allarghino e confluiscano
+    nei grandi centri amorfi del tubercolo maturo. A sinistra del centro c'è una cellula gigante multinucleata, una
+    grande cellula rosa con molti nuclei ammassati, nata dalla fusione di macrofagi. In basso al centro, il centro di un
+    altro granuloma contiene un gruppo di piccoli nuclei scuri e di frammenti nucleari. Perché conta: la necrosi parte
+    dal centro del granuloma, dove i macrofagi attivati muoiono nella reazione di ipersensibilità ritardata (mediata dai
+    linfociti T) contro i bacilli; estendendosi, può sostituire gran parte del linfonodo con materiale caseoso.
+    Confronta con la sarcoidosi, in cui i granulomi sono di regola non necrotizzanti.
+  en: >-
+    Tuberculous lymphadenitis with early caseous necrosis, H&E, medium power. Get the overview first: the normal lymph
+    node architecture is replaced by many granulomas packed side by side, each a rounded cluster of pale epithelioid
+    macrophages with oval, vesicular nuclei; dark bands of small lymphocytes run between them (top centre) and survive
+    in the corners. Then look at the centres of the granulomas. At the top centre and on the right, the middle of a
+    granuloma has turned into a homogeneous, finely granular, bright pink zone with few or no intact nuclei: this is
+    caseation beginning, before the necrotic areas grow and merge into the large structureless centres of a mature
+    tubercle. Left of centre sits a multinucleated giant cell, a large pink cell with many crowded nuclei, formed by
+    fusion of macrophages. At the bottom centre, the middle of another granuloma holds a cluster of small dark nuclei
+    and nuclear fragments. Why it matters: necrosis starts in the centre of the granuloma, where activated macrophages
+    die in the delayed-type (T-cell-mediated) hypersensitivity reaction against the bacilli; as it spreads, much of the
+    node can be replaced by cheesy material. Compare with sarcoidosis, whose granulomas are typically non-necrotising.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina di un linfonodo occupato da granulomi chiari di cellule epitelioidi, separati da
+    fasce scure di linfociti. Al centro dei granulomi, in alto al centro e a destra, ci sono chiazze rosa acceso povere di
+    cellule; a sinistra del centro una grande cellula gigante multinucleata con un ammasso scuro di nuclei.
+  en: >-
+    H&E micrograph of a lymph node filled with pale granulomas of epithelioid cells, separated by dark bands of
+    lymphocytes. Bright pink, cell-poor patches lie in the centres of granulomas at the top centre and on the right; left
+    of centre a large multinucleated giant cell holds a dark cluster of nuclei.
+annotations:
+  - id: early-caseation-right
+    label: { it: Necrosi caseosa iniziale al centro di un granuloma, en: Early caseous necrosis in a granuloma centre }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.76, 0.22, 0.84, 0.24, 0.90, 0.38, 0.92, 0.56, 0.88, 0.67, 0.83, 0.60, 0.80, 0.45, 0.75, 0.32]
+  - id: early-caseation-top
+    label: { it: Piccolo focolaio iniziale di caseificazione, en: Small early focus of caseation }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.37, 0.15, 0.43, 0.11, 0.47, 0.16, 0.47, 0.27, 0.42, 0.31, 0.37, 0.26]
+  - id: multinucleated-giant-cell
+    label: { it: Cellula gigante multinucleata, en: Multinucleated giant cell }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.27, 0.39, 0.33, 0.37, 0.37, 0.41, 0.36, 0.48, 0.30, 0.50, 0.26, 0.46]
+  - id: lymphocyte-band
+    label: { it: Fascia di linfociti tra i granulomi, en: Band of lymphocytes between granulomas }
+    revealOrder: 4
+    shape:
+      type: polygon
+      coords: [0.56, 0.06, 0.62, 0.05, 0.64, 0.25, 0.67, 0.45, 0.66, 0.56, 0.61, 0.52, 0.58, 0.32]

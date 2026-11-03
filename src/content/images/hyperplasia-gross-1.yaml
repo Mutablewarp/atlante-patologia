@@ -1,0 +1,55 @@
+id: hyperplasia-gross-1
+file: hyperplasia-gross-1.jpg
+kind: gross
+sourceUrl: https://commons.wikimedia.org/wiki/File:Benign_hyperplasia_prostate;_evidence_or_bladder_neck_obstruction.jpg
+author: Narraburra (Wikimedia Commons user)
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-10-10
+modifications: >-
+  Downloaded the 1920 × 1279 px Commons rendition of the 2816 × 1876 px original; downscaled to 1600 × 1066 px and
+  re-encoded as JPEG; no crop, no colour change.
+attributionText: "Narraburra, via Wikimedia Commons, CC0 1.0 (public domain dedication)"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+caption:
+  it: >-
+    Iperplasia prostatica benigna con vescica da sforzo: vescica aperta anteriormente, con il collo vescicale e la
+    prostata in basso (righello in centimetri in alto a destra). Orientati prima: la parete della vescica occupa quasi
+    tutta l'immagine, l'uretra prostatica è la fessura verticale al centro del margine inferiore. Ai due lati del collo
+    vescicale sporgono due rilievi tondeggianti e pallidi: sono i noduli iperplastici della prostata, che crescono
+    attorno all'uretra e la restringono. Poi guarda la mucosa vescicale: invece di essere liscia è percorsa da una rete
+    di cordoni in rilievo, la trabecolatura, dovuta ai fasci ipertrofici del detrusore che per anni hanno spinto l'urina
+    contro un'uscita ostruita; i vasi congesti fanno pensare anche a un'infiammazione. Il messaggio didattico: lo stesso
+    pezzo mostra due adattamenti diversi, l'iperplasia (più cellule, nella prostata stimolata dagli androgeni) e
+    l'ipertrofia (cellule muscolari più grandi, nella vescica sovraccaricata). L'iperplasia prostatica non è una lesione
+    precancerosa.
+  en: >-
+    Benign prostatic hyperplasia with a work-hypertrophied bladder: the bladder is opened from the front, with the
+    bladder neck and prostate at the bottom (centimetre ruler at top right). Orient yourself first: the bladder wall
+    fills most of the picture, and the prostatic urethra is the vertical slit at the centre of the lower edge. On
+    either side of the bladder neck two rounded, pale bulges protrude: these are the hyperplastic prostatic nodules,
+    which grow around the urethra and narrow it. Then look at the bladder lining: instead of being smooth it is crossed
+    by a network of raised cords, called trabeculation, made by hypertrophied bundles of detrusor muscle that have
+    pushed urine against a blocked outlet for years; the congested vessels also suggest inflammation. The teaching
+    point: one specimen shows two different adaptations, hyperplasia (more cells, in the androgen-driven prostate) and
+    hypertrophy (larger muscle cells, in the overloaded bladder). Prostatic hyperplasia is not a precancerous lesion.
+alt:
+  it: >-
+    Fotografia di un pezzo anatomico su fondo blu: vescica urinaria aperta, con mucosa rosa percorsa da una fitta rete
+    di cordoni in rilievo e da piccoli vasi rossi; in basso al centro due rilievi tondeggianti e biancastri ai lati di
+    una fessura verticale; righello in centimetri in alto a destra.
+  en: >-
+    Photograph of a pathology specimen on a blue background: an opened urinary bladder with pink lining crossed by a
+    dense network of raised cords and small red vessels; at the bottom centre two rounded whitish bulges flank a
+    vertical slit; a centimetre ruler at top right.
+annotations:
+  - id: prostatic-nodules
+    label: { it: Noduli iperplastici della prostata al collo vescicale, en: Hyperplastic prostatic nodules at the bladder neck }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.33, 0.59, 0.64, 0.59, 0.64, 0.80, 0.50, 0.84, 0.33, 0.82] }
+  - id: trabeculated-bladder
+    label: { it: Mucosa vescicale trabecolata (ipertrofia del detrusore), en: Trabeculated bladder lining (detrusor hypertrophy) }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.30, 0.10, 0.78, 0.10, 0.80, 0.50, 0.55, 0.58, 0.30, 0.50] }

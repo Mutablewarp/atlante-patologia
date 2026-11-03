@@ -1,0 +1,62 @@
+id: dystrophic-calcification-micro-1
+file: dystrophic-calcification-micro-1.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Histopathology_of_a_heart_valve_with_dystrophic_calcification.jpg
+author: Mikael Häggström, M.D.
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-10-10
+modifications: "Downscaled from 2048 × 1532 px to 1600 × 1197 px and re-encoded as JPEG (EXIF metadata removed); no crop, no colour change."
+attributionText: "Mikael Häggström, M.D., via Wikimedia Commons, CC0 1.0 (public domain dedication)"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: intermediate power
+caption:
+  it: >-
+    Valvola cardiaca con calcificazione distrofica, EE a medio ingrandimento. Parti dallo sfondo: la valvola è fatta di
+    tessuto fibroso denso, rosa e povero di cellule, con pochi nuclei fusati (in alto a sinistra). Al centro spiccano
+    depositi irregolari e lobulati di colore lilla-viola: i sali di calcio sono basofili e si colorano con l'ematossilina.
+    Avvicinandoti, i depositi appaiono amorfi o granulari (più scuri e granulosi in alto a destra) e al loro interno non
+    si riconoscono cellule vive. Nota le crepe nette che li attraversano e li circondano: il tessuto calcificato è duro e
+    fragile e si spezza al taglio del microtomo; in alcune fessure si vedono globuli rossi. Come leggerla: il calcio si è
+    depositato in un tessuto connettivo già danneggiato e degenerato, non perché la calcemia fosse alta; è questo che
+    distingue la forma distrofica da quella metastatica. Collegamento clinico: nella valvola aortica lo stesso processo
+    irrigidisce le cuspidi e restringe l'orifizio (stenosi aortica calcifica).
+  en: >-
+    Heart valve with dystrophic calcification, H&E at intermediate power. Start with the background: the valve is made
+    of dense, pink, cell-poor fibrous tissue with a few spindle-shaped nuclei (top left). In the middle stand irregular,
+    lobulated deposits stained lilac to purple: calcium salts are basophilic and take up haematoxylin. Closer up, the
+    deposits look amorphous or granular (darkest and most granular at the upper right) and contain no recognisable living
+    cells. Note the sharp cracks running through and around them: calcified tissue is hard and brittle and shatters when
+    the section is cut; a few red blood cells lie inside some of the clefts. How to read it: the calcium has settled in
+    connective tissue that was already damaged and degenerated, not because blood calcium was high; this is what sets
+    the dystrophic form apart from the metastatic one. Clinical link: in the aortic valve the same process stiffens the
+    cusps and narrows the orifice (calcific aortic stenosis).
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina: tessuto fibroso rosa con pochi nuclei allungati circonda al centro grandi
+    depositi lobulati di colore lilla e viola, attraversati da fessure bianche nette che contengono qualche globulo rosso;
+    in alto a destra i depositi sono più scuri e granulosi.
+  en: >-
+    H&E micrograph: pink fibrous tissue with a few elongated nuclei surrounds, in the centre, large lobulated lilac and
+    purple deposits crossed by sharp white clefts that hold a few red blood cells; at the upper right the deposits are
+    darker and granular.
+annotations:
+  - id: granular-calcium-deposit
+    label: { it: Deposito di calcio granulare e basofilo, en: Granular basophilic calcium deposit }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.67, 0.19, 0.80, 0.17, 0.91, 0.21, 0.95, 0.36, 0.88, 0.45, 0.76, 0.43, 0.68, 0.33]
+  - id: calcified-nodule
+    label: { it: Nodulo calcificato con crepe da taglio, en: Calcified nodule with cutting cracks }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.15, 0.60, 0.24, 0.55, 0.34, 0.57, 0.43, 0.66, 0.49, 0.76, 0.45, 0.86, 0.30, 0.86, 0.17, 0.80]
+  - id: valve-fibrous-tissue
+    label: { it: Tessuto fibroso della valvola, en: Fibrous tissue of the valve }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.02, 0.04, 0.28, 0.04, 0.28, 0.30, 0.02, 0.30] }

@@ -1,0 +1,62 @@
+id: coagulative-necrosis-micro-1
+file: coagulative-necrosis-micro-1.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Histopathology_of_shock_liver_(intermediate_magnification).jpg
+author: Mikael Häggström, M.D.
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-10-10
+modifications: "Downscaled from 2048 px to 1600 px wide (from the 1920 px Wikimedia rendition) and re-encoded as JPEG. No crop, no colour change, no labels added to the image."
+attributionText: "Mikael Häggström, M.D., own work, via Wikimedia Commons, CC0 1.0"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: medium power
+caption:
+  it: >-
+    Fegato da shock (epatite ischemica), EE a medio ingrandimento. Orientati prima con lo spazio portale in alto a
+    sinistra (dotto biliare e ramo arterioso in un connettivo rosa) e con la vena centrolobulare, il piccolo spazio
+    vuoto in basso al centro. Gli epatociti intorno agli spazi portali, nella parte alta, sono vitali: trabecole
+    rosa-violacee con nuclei rotondi ben visibili. Scendi poi verso la vena centrolobulare: le cellule diventano più
+    rosse (ipereosinofile), si staccano l'una dall'altra e la maggior parte dei nuclei sbiadisce fino a scomparire,
+    eppure il profilo delle cellule e la disposizione delle trabecole si riconoscono ancora. È necrosi coagulativa
+    della zona centrolobulare (zona 3), la parte del lobulo più lontana dal sangue in arrivo e quindi la prima a
+    morire quando calano perfusione o ossigeno. Regola pratica: una banda di epatociti "fantasma" eosinofili intorno
+    alle vene centrolobulari, con cellule periportali conservate, orienta verso una causa ischemica o ipossica.
+  en: >-
+    Shock liver (ischaemic hepatitis), H&E at medium power. Orient yourself first with the portal tract at the upper
+    left (bile duct and arterial branch in pink connective tissue) and the central vein, the small empty space low in
+    the centre. The hepatocytes around the portal tracts, in the upper part, are viable: purple-pink cords with clear,
+    round nuclei. Then move down towards the central vein: the cells turn redder (hypereosinophilic), pull apart from
+    one another and most nuclei fade until they disappear, yet the cell outlines and the layout of the cords can still
+    be traced. This is coagulative necrosis of the centrilobular zone (zone 3), the part of the lobule farthest from
+    the incoming blood and therefore the first to die when perfusion or oxygen falls. Rule of thumb: a band of
+    eosinophilic "ghost" hepatocytes around central veins, with preserved periportal cells, points to an ischaemic or
+    hypoxic cause.
+alt:
+  it: >-
+    Micrografia di fegato in ematossilina-eosina: nella parte alta trabecole di epatociti violacei con nuclei evidenti
+    e, in alto a sinistra, uno spazio portale con piccoli dotti e vasi in un connettivo rosa; nella parte bassa una
+    vasta zona di cellule più rosse, separate tra loro e quasi prive di nuclei, intorno a un piccolo lume vuoto.
+  en: >-
+    H&E micrograph of liver: in the upper part, cords of purple hepatocytes with obvious nuclei and, at the upper left,
+    a portal tract with small ducts and vessels in pink connective tissue; in the lower part, a broad zone of redder,
+    separated cells that have almost no nuclei, around a small empty lumen.
+annotations:
+  - id: viable-periportal
+    label: { it: Epatociti periportali vitali, en: Viable periportal hepatocytes }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.02, 0.02, 0.98, 0.02, 0.98, 0.28, 0.60, 0.32, 0.30, 0.36, 0.02, 0.40] }
+  - id: portal-tract
+    label: { it: Spazio portale, en: Portal tract }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.05, 0.12, 0.27, 0.10, 0.27, 0.21, 0.08, 0.24] }
+  - id: centrilobular-necrosis
+    label: { it: Necrosi coagulativa centrolobulare, en: Centrilobular coagulative necrosis }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.28, 0.55, 0.80, 0.52, 0.85, 0.95, 0.30, 0.97] }
+  - id: central-vein
+    label: { it: Vena centrolobulare, en: Central vein }
+    revealOrder: 4
+    shape: { type: polygon, coords: [0.535, 0.835, 0.595, 0.835, 0.595, 0.905, 0.535, 0.905] }

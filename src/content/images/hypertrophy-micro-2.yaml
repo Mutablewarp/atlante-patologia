@@ -1,0 +1,64 @@
+id: hypertrophy-micro-2
+file: hypertrophy-micro-2.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Histopathology_of_moderate_myocardial_hypertrophy.jpg
+author: Mikael Häggström, M.D.
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-10-10
+modifications: "Re-encoded as JPEG to strip camera EXIF metadata; original pixel size (933 × 769) kept; no crop, no colour change."
+attributionText: "Mikael Häggström, M.D., via Wikimedia Commons, CC0 1.0 (public domain dedication)"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: high power (no scale bar)
+caption:
+  it: >-
+    Ipertrofia miocardica moderata, EE a forte ingrandimento (senza barra di scala). I cardiomiociti sono tagliati per
+    il lungo e attraversano il campo in diagonale; in alcuni punti si intravede la striatura trasversale. A questo
+    ingrandimento la diagnosi si legge nei nuclei, quindi parti da lì. Diversi nuclei sono molto più grandi del normale,
+    più scuri (ipercromatici), con cromatina grossolana, e hanno forma rettangolare con le estremità tronche e
+    squadrate: sono i nuclei "a vagone" (boxcar) del miocita ipertrofico, chiamati così perché ricordano un vagone
+    merci. Come metro di paragone usa i nuclei piccoli, sottili e uniformemente scuri delle cellule interstiziali tra
+    le fibre. Il nucleo si ingrandisce perché la cellula cresce senza dividersi (i cardiomiociti sono cellule perenni)
+    e intanto duplica il suo DNA (poliploidia). Attenzione: i fini granuli bruno-dorati ai poli di alcuni nuclei sono
+    con ogni probabilità lipofuscina, il pigmento "di usura" legato all'età; è frequente nei cuori anziani e non è un
+    segno di ipertrofia.
+  en: >-
+    Moderate myocardial hypertrophy, H&E at high power (no scale bar). The cardiac myocytes are cut along their length
+    and cross the field diagonally; faint cross-striations can be seen in places. At this power the diagnosis lies in
+    the nuclei, so start there. Several nuclei are much larger than normal, darker (hyperchromatic) with coarse
+    chromatin, and rectangular with blunt, squared-off ends: these are the "boxcar" nuclei of the hypertrophic myocyte,
+    named after a railway freight wagon. Use the small, slender, evenly dark nuclei of the interstitial cells between
+    the fibres as a size reference. The nucleus enlarges because the cell grows without dividing (cardiac myocytes are
+    permanent cells) while it copies its DNA (polyploidy). Pitfall: the fine golden-brown granules at the poles of some
+    nuclei are most likely lipofuscin, the age-related "wear-and-tear" pigment; it is common in older hearts and is not
+    a sign of hypertrophy.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina a forte ingrandimento di muscolo cardiaco: fibre rosa striate che corrono in
+    diagonale dall'alto a sinistra verso il basso a destra. Dentro le fibre ci sono diversi nuclei viola scuro, grandi e
+    rettangolari, con le estremità squadrate, molto più grandi dei piccoli nuclei sottili e scuri tra le fibre. Accanto
+    ad alcuni nuclei si vedono fini granuli bruni.
+  en: >-
+    High-power H&E micrograph of heart muscle: pink, striated fibres run diagonally from upper left to lower right.
+    Inside the fibres lie several large, dark purple, rectangular nuclei with squared-off ends, much bigger than the
+    small, slender dark nuclei between the fibres. Fine brown granules sit next to some nuclei.
+annotations:
+  - id: boxcar-nucleus
+    label: { it: "Nucleo a vagone: grande, scuro, rettangolare, a estremità squadrate", en: "Boxcar nucleus: large, dark, rectangular, with squared-off ends" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.38, 0.115, 0.565, 0.115, 0.565, 0.255, 0.38, 0.255] }
+  - id: boxcar-nucleus-2
+    label: { it: Un altro nucleo a vagone, en: Another boxcar nucleus }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.195, 0.645, 0.325, 0.665, 0.352, 0.742, 0.212, 0.725] }
+  - id: interstitial-nucleus
+    label: { it: "Nucleo sottile di una cellula interstiziale: metro di paragone", en: "Slender nucleus of an interstitial cell: size reference" }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.63, 0.105, 0.745, 0.105, 0.745, 0.165, 0.63, 0.165] }
+  - id: lipofuscin
+    label: { it: Probabili granuli di lipofuscina al polo del nucleo, en: Probable lipofuscin granules at the nuclear pole }
+    revealOrder: 4
+    shape: { type: polygon, coords: [0.53, 0.445, 0.60, 0.455, 0.69, 0.49, 0.69, 0.525, 0.60, 0.50, 0.53, 0.48] }

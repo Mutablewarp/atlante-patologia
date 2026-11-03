@@ -1,0 +1,68 @@
+id: oxidative-injury-micro-2
+file: oxidative-injury-micro-2.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Hemochromatosis_liver_iron_prussian_blue.jpg
+author: Joseph Mathew, May Y Leong, Nick Morley, Alastair D Burt
+license: CC-BY-2.0
+licenseUrl: https://creativecommons.org/licenses/by/2.0/
+retrievedAt: 2026-10-10
+modifications: "none (Wikimedia original file, 1200 × 960 px; scale bar from the source figure kept)"
+attributionText: >-
+  Mathew J, Leong MY, Morley N, Burt AD, "A liver fibrosis cocktail? Psoriasis, methotrexate and genetic
+  hemochromatosis", BMC Dermatology 2005;5:12, doi:10.1186/1471-5945-5-12 (figure 2), via Wikimedia Commons, CC BY 2.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: Perls' Prussian blue
+magnification: low power (×10)
+caption:
+  it: >-
+    Biopsia epatica in emocromatosi genetica, colorazione di Perls (blu di Prussia), piccolo ingrandimento. Il ferro
+    depositato compare come granuli blu nel citoplasma degli epatociti. Leggi la biopsia da sinistra a destra: la banda
+    di connettivo rosa dello spazio portale è circondata da epatociti zeppi di granuli blu; allontanandosi dallo spazio
+    portale il blu si attenua fino quasi a scomparire. Questo gradiente periportale è tipico dell'emocromatosi ereditaria,
+    in cui il ferro assorbito in eccesso dall'intestino arriva al fegato con il sangue portale. Perché il ferro
+    danneggia: il ferro libero (Fe2+) catalizza la reazione di Fenton, che trasforma il perossido di idrogeno nel radicale
+    ossidrile, il più reattivo dei radicali dell'ossigeno e un forte innesco della perossidazione lipidica delle
+    membrane; negli anni ne derivano morte degli epatociti, fibrosi e cirrosi. Il blu di Perls mostra il ferro ferrico
+    immagazzinato (emosiderina): misura quanto ferro si è accumulato, non i radicali in sé. I grandi vacuoli bianchi e
+    rotondi a destra sono gocce di grasso (steatosi), un reperto associato in questa biopsia.
+  en: >-
+    Liver biopsy in genetic haemochromatosis, Perls' Prussian blue stain, low power. Stored iron appears as blue
+    granules in the cytoplasm of hepatocytes. Read the core from left to right: the pink band of portal connective
+    tissue is surrounded by hepatocytes packed with blue granules; moving away from the portal tract the blue fades
+    until it almost disappears. This periportal gradient is typical of hereditary haemochromatosis, in which iron
+    absorbed in excess by the gut reaches the liver with portal blood. Why iron does harm: free iron (Fe2+) catalyses
+    the Fenton reaction, which turns hydrogen peroxide into the hydroxyl radical, the most reactive oxygen radical and a
+    strong trigger of membrane lipid peroxidation; over the years this leads to hepatocyte death, fibrosis and
+    cirrhosis. Perls' blue shows stored ferric iron (haemosiderin): it measures how much iron has built up, not the
+    radicals themselves. The large round white vacuoles on the right are fat droplets (steatosis), an associated
+    finding in this biopsy.
+alt:
+  it: >-
+    Micrografia di una biopsia epatica allungata colorata con il metodo di Perls: a sinistra, intorno a una banda di
+    tessuto rosa, gli epatociti sono pieni di granuli blu scuri; verso destra il blu sfuma e il tessuto è occupato da
+    numerosi vacuoli bianchi e rotondi di varie dimensioni. In basso a destra una barra di scala di 500 micrometri.
+  en: >-
+    Micrograph of an elongated liver biopsy stained with Perls' method: on the left, around a band of pink tissue,
+    hepatocytes are filled with dark blue granules; towards the right the blue fades and the tissue is taken up by many
+    round white vacuoles of different sizes. A 500-micrometre scale bar sits at the lower right.
+annotations:
+  - id: periportal-iron
+    label: { it: Epatociti periportali carichi di ferro (blu), en: Iron-laden periportal hepatocytes (blue) }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.18, 0.12, 0.36, 0.11, 0.42, 0.30, 0.43, 0.60, 0.38, 0.82, 0.21, 0.82, 0.19, 0.60, 0.20, 0.30]
+  - id: portal-connective-tissue
+    label: { it: Connettivo dello spazio portale, en: Portal connective tissue }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.09, 0.61, 0.17, 0.60, 0.18, 0.70, 0.18, 0.79, 0.105, 0.80, 0.095, 0.70]
+  - id: steatosis-low-iron
+    label: { it: Steatosi con poco ferro, lontano dallo spazio portale, en: Steatosis with little iron, away from the portal tract }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.52, 0.11, 0.99, 0.08, 0.99, 0.70, 0.62, 0.72, 0.50, 0.60]

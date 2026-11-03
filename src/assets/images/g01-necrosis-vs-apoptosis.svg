@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 624" width="400" height="624" role="img" aria-labelledby="nva-title nva-desc">
+  <title id="nva-title">Necrosis versus apoptosis</title>
+  <desc id="nva-desc">Side-by-side comparison. Necrosis: groups of cells, swollen cells, pyknosis, then karyorrhexis or karyolysis, ruptured membrane with leaking contents, inflammation, caused by loss of ATP and ion control, pathological. Apoptosis: single scattered cells, shrunken cells, chromatin condenses then fragments, intact membrane with blebs and apoptotic bodies, no inflammation because phagocytes clear the bodies, driven by regulated caspase cascades, physiological or pathological.</desc>
+  <defs>
+    <marker id="nva-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#575061"/>
+    </marker>
+  </defs>
+  <style>
+    text { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; fill: #1c1923; }
+    .h1 { font-size: 18px; font-weight: 700; }
+    .h2 { font-size: 15px; font-weight: 700; }
+    .b { font-size: 13.5px; }
+    .lab { font-size: 12px; fill: #575061; font-weight: 700; letter-spacing: 0.04em; }
+    .hema { fill: #2a2070; }
+    .eos { fill: #8a1f47; }
+    .rule { stroke: #ddd3c1; stroke-width: 1.2; }
+  </style>
+  <rect x="1" y="1" width="398" height="622" rx="12" fill="#fffcf6" stroke="#ddd3c1" stroke-width="2"/>
+  <text class="h1" x="200" y="32" text-anchor="middle">Necrosis vs apoptosis</text>
+
+  <rect x="14" y="46" width="182" height="32" rx="8" fill="#f8e2ea" stroke="#ad2c5b" stroke-width="1.5"/>
+  <text class="h2 eos" x="105" y="67" text-anchor="middle">Necrosis</text>
+  <rect x="204" y="46" width="182" height="32" rx="8" fill="#e5e0f6" stroke="#3a2e8c" stroke-width="1.5"/>
+  <text class="h2 hema" x="295" y="67" text-anchor="middle">Apoptosis</text>
+
+  <!-- Necrosis icon: swollen cell, broken membrane, leaking contents -->
+  <circle cx="105" cy="136" r="38" fill="#f8e2ea" stroke="#ad2c5b" stroke-width="2.2" stroke-dasharray="200 39"/>
+  <ellipse cx="86" cy="122" rx="9" ry="5" fill="#fbecc6" stroke="#857a6d" stroke-width="1"/>
+  <ellipse cx="118" cy="154" rx="9" ry="5" fill="#fbecc6" stroke="#857a6d" stroke-width="1"/>
+  <circle cx="102" cy="140" r="7" fill="#1c1923"/>
+  <circle cx="150" cy="110" r="3" fill="#ad2c5b"/>
+  <circle cx="160" cy="98" r="2.5" fill="#ad2c5b"/>
+  <circle cx="146" cy="94" r="2.5" fill="#ad2c5b"/>
+  <circle cx="166" cy="114" r="2" fill="#ad2c5b"/>
+
+  <!-- Apoptosis icon: shrunken cell with blebs, then apoptotic bodies -->
+  <ellipse cx="256" cy="134" rx="22" ry="19" fill="#e5e0f6" stroke="#3a2e8c" stroke-width="2"/>
+  <circle cx="275" cy="120" r="5" fill="#e5e0f6" stroke="#3a2e8c" stroke-width="1.6"/>
+  <circle cx="240" cy="150" r="4" fill="#e5e0f6" stroke="#3a2e8c" stroke-width="1.6"/>
+  <circle cx="250" cy="130" r="3.2" fill="#1c1923"/>
+  <circle cx="261" cy="137" r="3.6" fill="#1c1923"/>
+  <circle cx="252" cy="142" r="2.6" fill="#1c1923"/>
+  <line x1="284" y1="134" x2="306" y2="134" stroke="#575061" stroke-width="1.5" marker-end="url(#nva-arrow)"/>
+  <circle cx="326" cy="118" r="10" fill="#e5e0f6" stroke="#3a2e8c" stroke-width="1.6"/>
+  <circle cx="326" cy="118" r="3" fill="#1c1923"/>
+  <circle cx="352" cy="138" r="9" fill="#e5e0f6" stroke="#3a2e8c" stroke-width="1.6"/>
+  <circle cx="324" cy="152" r="8" fill="#e5e0f6" stroke="#3a2e8c" stroke-width="1.6"/>
+  <circle cx="324" cy="152" r="2.6" fill="#1c1923"/>
+  <text class="lab" x="337" y="180" text-anchor="middle" font-weight="400">apoptotic bodies</text>
+
+  <!-- Rows -->
+  <line class="rule" x1="14" y1="196" x2="386" y2="196"/>
+  <text class="lab" x="200" y="214" text-anchor="middle">EXTENT</text>
+  <text class="b" x="105" y="234" text-anchor="middle">groups / areas of cells</text>
+  <text class="b" x="295" y="234" text-anchor="middle">single scattered cells</text>
+
+  <line class="rule" x1="14" y1="244" x2="386" y2="244"/>
+  <text class="lab" x="200" y="262" text-anchor="middle">CELL SIZE</text>
+  <text class="b" x="105" y="282" text-anchor="middle">swollen</text>
+  <text class="b" x="295" y="282" text-anchor="middle">shrunken</text>
+
+  <line class="rule" x1="14" y1="292" x2="386" y2="292"/>
+  <text class="lab" x="200" y="310" text-anchor="middle">NUCLEUS</text>
+  <text class="b" x="105" y="330" text-anchor="middle">pyknosis, karyorrhexis,</text>
+  <text class="b" x="105" y="347" text-anchor="middle">karyolysis</text>
+  <text class="b" x="295" y="330" text-anchor="middle">chromatin condenses,</text>
+  <text class="b" x="295" y="347" text-anchor="middle">then fragments</text>
+
+  <line class="rule" x1="14" y1="356" x2="386" y2="356"/>
+  <text class="lab" x="200" y="374" text-anchor="middle">PLASMA MEMBRANE</text>
+  <text class="b" x="105" y="394" text-anchor="middle">ruptures;</text>
+  <text class="b" x="105" y="411" text-anchor="middle">contents leak out</text>
+  <text class="b" x="295" y="394" text-anchor="middle">intact; blebs, then</text>
+  <text class="b" x="295" y="411" text-anchor="middle">apoptotic bodies</text>
+
+  <line class="rule" x1="14" y1="420" x2="386" y2="420"/>
+  <text class="lab" x="200" y="438" text-anchor="middle">INFLAMMATION</text>
+  <text class="b eos" x="105" y="458" text-anchor="middle" font-weight="700">yes</text>
+  <text class="b hema" x="295" y="458" text-anchor="middle" font-weight="700">no</text>
+  <text class="b" x="295" y="475" text-anchor="middle">bodies eaten by phagocytes</text>
+
+  <line class="rule" x1="14" y1="484" x2="386" y2="484"/>
+  <text class="lab" x="200" y="502" text-anchor="middle">DRIVER</text>
+  <text class="b" x="105" y="522" text-anchor="middle">loss of ATP and</text>
+  <text class="b" x="105" y="539" text-anchor="middle">ion control</text>
+  <text class="b" x="295" y="522" text-anchor="middle">regulated caspase</text>
+  <text class="b" x="295" y="539" text-anchor="middle">cascades</text>
+
+  <line class="rule" x1="14" y1="548" x2="386" y2="548"/>
+  <text class="lab" x="200" y="566" text-anchor="middle">SETTING</text>
+  <text class="b" x="105" y="586" text-anchor="middle">pathological</text>
+  <text class="b" x="295" y="586" text-anchor="middle">physiological</text>
+  <text class="b" x="295" y="603" text-anchor="middle">or pathological</text>
+</svg>

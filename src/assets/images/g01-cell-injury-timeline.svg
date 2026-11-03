@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 550" width="400" height="550" role="img" aria-labelledby="inj-title inj-desc">
+  <title id="inj-title">Reversible versus irreversible cell injury</title>
+  <desc id="inj-desc">Flow from a normal cell to reversible injury (ATP falls, sodium and water enter, the cell, endoplasmic reticulum and mitochondria swell, the membrane blebs), which recovers if the stress stops. Past a point of no return whose exact timing is not known, injury becomes irreversible: the plasma membrane ruptures, calcium floods in, mitochondria fail, leaked contents cause inflammation and the nucleus shrinks and darkens (pyknosis), then either fragments (karyorrhexis) or fades (karyolysis).</desc>
+  <defs>
+    <marker id="inj-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#1c1923"/>
+    </marker>
+  </defs>
+  <style>
+    text { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif; fill: #1c1923; }
+    .h1 { font-size: 18px; font-weight: 700; }
+    .h2 { font-size: 15px; font-weight: 700; }
+    .b { font-size: 13.5px; }
+    .m { font-size: 12.5px; fill: #575061; }
+    .hema { fill: #2a2070; }
+    .eos { fill: #8a1f47; }
+  </style>
+  <rect x="1" y="1" width="398" height="548" rx="12" fill="#fffcf6" stroke="#ddd3c1" stroke-width="2"/>
+  <text class="h1" x="200" y="32" text-anchor="middle">Reversible vs irreversible injury</text>
+
+  <!-- Normal cell -->
+  <rect x="110" y="50" width="180" height="60" rx="10" fill="#ede5d6" stroke="#857a6d" stroke-width="1.5"/>
+  <ellipse cx="146" cy="80" rx="20" ry="15" fill="#f8e2ea" stroke="#ad2c5b" stroke-width="1.5"/>
+  <circle cx="146" cy="80" r="6" fill="#3a2e8c"/>
+  <text class="h2" x="178" y="85">Normal cell</text>
+
+  <!-- Injury arrow -->
+  <line x1="200" y1="110" x2="200" y2="152" stroke="#1c1923" stroke-width="2" marker-end="url(#inj-arrow)"/>
+  <text class="m" x="192" y="128" text-anchor="end">injury: ischaemia,</text>
+  <text class="m" x="192" y="144" text-anchor="end">toxins, infection</text>
+
+  <!-- Recovery arrow -->
+  <path d="M360 225 C 394 225, 394 80, 296 80" fill="none" stroke="#3a2e8c" stroke-width="2" marker-end="url(#inj-arrow)"/>
+  <text class="m hema" x="364" y="128" text-anchor="end">stress stops:</text>
+  <text class="m hema" x="364" y="144" text-anchor="end">full recovery</text>
+
+  <!-- Reversible injury -->
+  <rect x="40" y="155" width="320" height="138" rx="10" fill="#e5e0f6" stroke="#3a2e8c" stroke-width="1.5"/>
+  <text class="h2 hema" x="200" y="180" text-anchor="middle">Reversible injury</text>
+  <text class="b" x="58" y="205">• ↓ ATP: Na⁺ and water enter the cell</text>
+  <text class="b" x="58" y="227">• cell swelling, dilated ER</text>
+  <text class="b" x="58" y="249">• swollen mitochondria, membrane blebs</text>
+  <text class="b" x="58" y="271">• ribosomes detach: ↓ protein synthesis</text>
+
+  <!-- Point of no return -->
+  <line x1="16" y1="322" x2="384" y2="322" stroke="#ad2c5b" stroke-width="2" stroke-dasharray="7 5"/>
+  <rect x="22" y="309" width="150" height="26" rx="4" fill="#fffcf6"/>
+  <text class="b eos" x="30" y="327" font-weight="700">point of no return</text>
+  <line x1="200" y1="293" x2="200" y2="374" stroke="#1c1923" stroke-width="2" marker-end="url(#inj-arrow)"/>
+  <text class="m" x="208" y="345">exact timing not known</text>
+  <text class="m" x="192" y="364" text-anchor="end">severe or persistent</text>
+
+  <!-- Irreversible injury -->
+  <rect x="40" y="378" width="320" height="156" rx="10" fill="#f8e2ea" stroke="#ad2c5b" stroke-width="1.5"/>
+  <text class="h2 eos" x="200" y="402" text-anchor="middle">Irreversible injury → necrosis</text>
+  <text class="b" x="58" y="426">• plasma membrane ruptures</text>
+  <text class="b" x="58" y="447">• Ca²⁺ floods in; mitochondria fail</text>
+  <text class="b" x="58" y="468">• leaked contents → inflammation</text>
+
+  <!-- Nuclear changes -->
+  <!-- The pyknotic nucleus either fragments (karyorrhexis) or fades (karyolysis) -->
+  <ellipse cx="200" cy="494" rx="22" ry="14" fill="#fffcf6" stroke="#ad2c5b" stroke-width="1.5"/>
+  <circle cx="200" cy="494" r="5" fill="#1c1923"/>
+  <ellipse cx="95" cy="494" rx="22" ry="14" fill="#fffcf6" stroke="#ad2c5b" stroke-width="1.5"/>
+  <circle cx="85" cy="489" r="2.6" fill="#1c1923"/>
+  <circle cx="98" cy="486" r="2.2" fill="#1c1923"/>
+  <circle cx="106" cy="497" r="2.6" fill="#1c1923"/>
+  <circle cx="91" cy="501" r="2.2" fill="#1c1923"/>
+  <circle cx="81" cy="497" r="1.8" fill="#1c1923"/>
+  <ellipse cx="305" cy="494" rx="22" ry="14" fill="#fffcf6" stroke="#ad2c5b" stroke-width="1.5"/>
+  <circle cx="305" cy="494" r="8" fill="#e5e0f6" stroke="#857a6d" stroke-width="1.2" stroke-dasharray="2.5 2"/>
+  <line x1="176" y1="494" x2="122" y2="494" stroke="#575061" stroke-width="1.5" marker-end="url(#inj-arrow)"/>
+  <line x1="224" y1="494" x2="278" y2="494" stroke="#575061" stroke-width="1.5" marker-end="url(#inj-arrow)"/>
+  <text class="m" x="95" y="525" text-anchor="middle">karyorrhexis</text>
+  <text class="m" x="200" y="525" text-anchor="middle" font-weight="700">pyknosis</text>
+  <text class="m" x="305" y="525" text-anchor="middle">karyolysis</text>
+</svg>

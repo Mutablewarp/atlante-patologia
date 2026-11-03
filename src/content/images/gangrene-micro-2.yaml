@@ -1,0 +1,60 @@
+id: gangrene-micro-2
+file: gangrene-micro-2.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Gas_gangrene_pathology_slide.jpg
+author: Engelbert Schröpfer, Stephan Rauthe, Thomas Meyer
+license: CC-BY-2.0
+licenseUrl: https://creativecommons.org/licenses/by/2.0/
+retrievedAt: 2026-10-10
+modifications: "none (Wikimedia original file, 1038 × 771 px; Figure 3 of the source article)"
+attributionText: >-
+  Schröpfer E, Rauthe S, Meyer T, "Diagnosis and misdiagnosis of necrotizing soft tissue infections: three case
+  reports", Cases Journal 2008;1:252, doi:10.1186/1757-1626-1-252 (Figure 3), via Wikimedia Commons, CC BY 2.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+stain: H&E
+magnification: low power (100× in the source)
+caption:
+  it: >-
+    Muscolo scheletrico asportato chirurgicamente da un paziente con gangrena gassosa della coscia da Clostridium
+    perfringens, EE (100× nell'articolo di origine). A piccolo ingrandimento colpiscono i grandi spazi vuoti e
+    tondeggianti sparsi nel muscolo: sono bolle di gas prodotte dai batteri, che allontanano le fibre l'una
+    dall'altra. Guarda poi le fibre: sono rosa pallido, rigonfie o frammentate e hanno pochissimi nuclei residui
+    (mionecrosi). Nota anche che cosa manca: l'infiltrato infiammatorio è quasi assente, perché le tossine dei
+    clostridi (soprattutto la tossina alfa, una fosfolipasi C o lecitinasi) distruggono le membrane cellulari, anche
+    quelle dei leucociti, e si diffondono più in fretta della risposta infiammatoria. Non confondere il gas con il
+    grasso: sul margine destro una striscia di tessuto adiposo mostra cellule piccole, regolari e rotonde, ciascuna
+    con una sottile membrana, mentre gli spazi gassosi sono più grandi, irregolari e privi di rivestimento. Sul piano
+    clinico corrisponde al crepitio alla palpazione e al gas visibile alla radiografia; è un'emergenza chirurgica.
+  en: >-
+    Skeletal muscle removed at surgery from a patient with gas gangrene of the thigh caused by Clostridium
+    perfringens, H&E (100× in the source article). At low power the striking feature is the large, empty, rounded
+    spaces scattered through the muscle: these are gas bubbles made by the bacteria, which push the fibres apart. Then
+    look at the fibres themselves: they are pale pink, swollen or fragmented, and very few nuclei are left
+    (myonecrosis). Notice also what is missing: there is hardly any inflammatory infiltrate, because clostridial
+    toxins (above all alpha-toxin, a phospholipase C or lecithinase) destroy cell membranes, including those of white
+    cells, and spread faster than the inflammatory response. Do not mistake gas for fat: along the right edge a strip
+    of adipose tissue shows small, regular, round cells, each with a thin membrane, whereas the gas spaces are larger,
+    irregular and lined by nothing. Clinically this matches crepitus on palpation and gas on X-ray; it is a surgical
+    emergency.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina di muscolo scheletrico: fasci di fibre rosa con pochi nuclei separati da grandi
+    spazi bianchi vuoti e irregolari; lungo il margine destro una sottile striscia di piccole cellule adipose rotonde.
+  en: >-
+    H&E micrograph of skeletal muscle: bundles of pink fibres with few nuclei separated by large, empty, irregular
+    white spaces; along the right edge a narrow strip of small, round fat cells.
+annotations:
+  - id: gas-bubble
+    label: { it: Bolla di gas tra le fibre muscolari, en: Gas bubble between muscle fibres }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.55, 0.40, 0.62, 0.37, 0.70, 0.40, 0.74, 0.50, 0.72, 0.66, 0.66, 0.75, 0.58, 0.70, 0.54, 0.55] }
+  - id: necrotic-fibres
+    label: { it: Fibre muscolari necrotiche con pochi nuclei e senza infiltrato, en: Necrotic muscle fibres with few nuclei and no infiltrate }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.22, 0.05, 0.62, 0.05, 0.66, 0.30, 0.58, 0.34, 0.52, 0.45, 0.32, 0.58, 0.22, 0.40] }
+  - id: adipose-tissue
+    label: { it: Tessuto adiposo, da non confondere con il gas, en: Adipose tissue, not to be mistaken for gas }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.88, 0.58, 0.94, 0.58, 0.94, 0.90, 0.88, 0.90] }
