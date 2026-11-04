@@ -13,6 +13,7 @@ import { tHz } from '../../../i18n/horizontal.ts';
 import { LENSES } from '../../../lib/schema.ts';
 import { withCrossLinks, imageById, patternsForEntity, SECTION_FOR_ROLE } from '../../../lib/horizontal.ts';
 import EntityActions from '../../../components/entity/EntityActions.astro';
+import SectionToc from '../../../components/entity/SectionToc.astro';
 import SelfExplain from '../../../components/entity/SelfExplain.astro';
 import ExamQuestions from '../../../components/entity/ExamQuestions.astro'; // study branch: exam questions + quick-check confidence
 import EntityPathways from '../../../components/pathway/EntityPathways.astro'; // v2/3d-pathways: compact pathway block
@@ -119,18 +120,7 @@ const contexts = LENSES.flatMap((lens) =>
     <EntityActions lang={lang} entity={entity} />
 
     <div class="entity-layout">
-      <nav class="section-toc" aria-label={t('onThisPage')}>
-        <p class="toc-title" aria-hidden="true">{t('onThisPage')}</p>
-        <ol>
-          {
-            toc.map((s) => (
-              <li data-quick={String(s.quick)}>
-                <a href={`#${s.id}`}>{s.short[lang]}</a>
-              </li>
-            ))
-          }
-        </ol>
-      </nav>
+      <SectionToc lang={lang} items={toc.map((s) => ({ id: s.id, label: s.short[lang], quick: s.quick }))} />
 
       <div class="entity-body">
         <section class="objectives card" aria-labelledby="objectives-title">

@@ -97,6 +97,43 @@ if (progress && article) {
   update();
 }
 
+// ── Section spy (entity and pattern pages): mark the contents entry being read ─
+const strip = document.querySelector<HTMLElement>('.section-toc ol');
+// An entry's section: the element its #hash names or, for a heading, the <section> around it.
+const entryOf = new Map<Element, HTMLAnchorElement>();
+strip?.querySelectorAll<HTMLAnchorElement>('a[href^="#"]').forEach((a) => {
+  const section = document.getElementById(decodeURIComponent(a.hash.slice(1)))?.closest('section');
+  if (section) entryOf.set(section, a);
+});
+const spied = [...entryOf.keys()];
+if (strip && spied.length) {
+  const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  const inBand = new Set<Element>();
+  let current: HTMLAnchorElement | undefined;
+  const markCurrent = (a: HTMLAnchorElement | undefined) => {
+    if (a === current) return;
+    current?.removeAttribute('aria-current');
+    current = a;
+    a?.setAttribute('aria-current', 'true');
+    // Phone/tablet chip strip: bring the current chip to the middle (the strip scrolls sideways only).
+    if (!a || strip.scrollWidth <= strip.clientWidth) return;
+    const delta = a.getBoundingClientRect().left - strip.getBoundingClientRect().left - (strip.clientWidth - a.offsetWidth) / 2;
+    strip.scrollBy({ left: delta, behavior: reduceMotion.matches ? 'auto' : 'smooth' });
+  };
+  // The section being read: the last one crossing the top 30% of the viewport. Hidden
+  // sections (Quick mode) never intersect; past the last section the last one stays current.
+  const spy = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((e) => (e.isIntersecting ? inBand.add(e.target) : inBand.delete(e.target)));
+      const reading = spied.filter((s) => inBand.has(s)).at(-1);
+      if (reading) markCurrent(entryOf.get(reading));
+      else if (spied[0]!.getBoundingClientRect().top > innerHeight * 0.3) markCurrent(undefined);
+    },
+    { rootMargin: '0px 0px -70% 0px' },
+  );
+  spied.forEach((s) => spy.observe(s));
+}
+
 // ── Sidebar collapse (desktop) ──────────────────────────────────────────
 const sideBtn = document.querySelector<HTMLButtonElement>('[data-sidebar-toggle]');
 function syncSidebar() {

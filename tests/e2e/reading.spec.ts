@@ -2,8 +2,9 @@
  * Reading experience (owner decisions O11, O12): no per-page AI badge but an
  * AI line in every footer; sections open by default with "Continue" links;
  * A-/A+ reading size remembered and applied before paint; reading progress;
- * section chips that follow the scroll; differential tables in a labelled
- * scroll region; form fields never below 16 px (no iOS zoom).
+ * section chips that follow the scroll, on entity and pattern pages;
+ * differential tables in a labelled scroll region; form fields never below
+ * 16 px (no iOS zoom).
  */
 import { expect, test, type Page } from '@playwright/test';
 
@@ -180,6 +181,31 @@ test('reading progress and the section chips follow the scroll', async ({ page }
   await page.evaluate(() => document.getElementById('traps')!.scrollIntoView());
   await expect(page.locator('.section-toc a[href="#traps"]')).toHaveAttribute('aria-current', 'true');
   if (width() < 1024) await expect(page.locator('.section-toc a[href="#traps"]')).toBeInViewport();
+});
+
+test('the pattern page has the contents of entity pages: chips on phones and tablets, a side list on desktop', async ({ page }) => {
+  await page.goto(PATTERN);
+  const toc = page.getByRole('navigation', { name: 'On this page' });
+  const links = toc.getByRole('link');
+  // The text's H2s (label cut at a colon or bracket), then the matrix, images and cards.
+  await expect(links.first()).toHaveText('Overview');
+  await expect(toc.getByRole('link', { name: 'How to recognize it', exact: true })).toHaveAttribute('href', '#how-to-recognize-it-low-to-high-power');
+  await expect(links.last()).toHaveText('Cards in this pattern');
+  const [nav, text] = [(await toc.boundingBox())!, (await page.locator('.prose').boundingBox())!];
+  if (width() >= 1024) expect(nav.x).toBeGreaterThan(text.x + text.width); // beside the text
+  else expect(nav.y + nav.height).toBeLessThanOrEqual(text.y); // above it, then sticky
+
+  // A chip lands its heading below the top bar and the sticky strip (SC 2.4.11), and becomes current.
+  const comparison = toc.getByRole('link', { name: 'Comparison' });
+  await comparison.click();
+  await expect(comparison).toHaveAttribute('aria-current', 'true');
+  const heading = (await page.locator('#matrix-title').boundingBox())!;
+  // The lowest sticky bar over the text: the chip strip below 1024 px, the top bar above.
+  const cover = await page.evaluate((wide) => document.querySelector(wide ? '.topbar' : '.section-toc')!.getBoundingClientRect().bottom, width() >= 1024);
+  expect(heading.y).toBeGreaterThanOrEqual(cover - 1);
+  await page.evaluate(() => document.getElementById('pitfalls')!.scrollIntoView());
+  await expect(toc.getByRole('link', { name: 'Pitfalls' })).toHaveAttribute('aria-current', 'true');
+  await expect(toc.locator('a[aria-current]')).toHaveCount(1);
 });
 
 test('the differential table scrolls inside a labelled region with a sticky first column on phones', async ({ page }) => {

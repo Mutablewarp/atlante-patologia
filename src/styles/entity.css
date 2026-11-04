@@ -176,14 +176,11 @@
     background: var(--hema-soft);
   }
 }
-/* Sections sit below the sticky chip row: keep focus/anchors visible (SC 2.4.11).
-   html scroll-padding already clears the top bar; scroll-margin adds only the chip row. */
-.entity {
-  --entity-scroll: var(--chips-h);
-}
-.entity-section,
-.entity [id] {
-  scroll-margin-top: var(--entity-scroll);
+/* Anchors, scrollIntoView and keyboard focus stop below the top bar and the sticky chip row (SC 2.4.11) */
+@media (max-width: 1023px) {
+  :root:has(.section-toc) {
+    scroll-padding-top: calc(var(--topbar-h) + env(safe-area-inset-top, 0px) + var(--chips-h) + var(--space-4));
+  }
 }
 
 .entity-body {
@@ -485,8 +482,5 @@ html:not(.js) .section-toggle {
   .entity-body {
     grid-column: 1;
     grid-row: 1;
-  }
-  .entity {
-    --entity-scroll: 0px;
   }
 }
