@@ -25,8 +25,12 @@ type Stop = { tag: string; skip: boolean; label: string; visible: boolean; obscu
  */
 async function focusState(page: Page): Promise<Stop | null> {
   return page.evaluate(async () => {
-    // Measure after the browser has applied :focus styles and scrolled.
-    await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+    // Measure after the browser has applied :focus styles and scrolled. Under heavy load headless Chromium
+    // can hold rAF for many seconds (22 s once on it/e/apoptosis/), so a timer bounds the wait.
+    await new Promise((r) => {
+      requestAnimationFrame(() => requestAnimationFrame(r));
+      setTimeout(r, 500);
+    });
     const el = document.activeElement as HTMLElement | null;
     if (!el || el === document.body) return null;
     const w = window as unknown as { __prev?: Element };
