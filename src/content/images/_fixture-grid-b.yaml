@@ -1,0 +1,34 @@
+# FIXTURE — NOT CONTENT (shown only with PREVIEW_DRAFTS=1). Generated test pattern, no patient data.
+# Second member of group fixture-grid-set: exercises the stain/magnification switch and the scale bar.
+id: fixture-grid-b
+file: _fixture-grid-b.png
+kind: micro
+sourceUrl: https://github.com/Mutablewarp/atlante-patologia
+author: Atlante di Patologia (generated test pattern)
+license: original
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+retrievedAt: 2026-11-03
+modifications: none
+attributionText: "Test pattern generated for the template (placeholder, not a medical image)."
+patientIdentifiable: false
+verifiedBy: { who: agent, name: horizontal-agent, date: 2026-11-03 }
+group: fixture-grid-set
+stain: "PAS"
+magnification: high power
+objective: 40x
+mpp: 0.25
+section: paraffin
+orientation:
+  it: "Orientamento segnaposto: specchiata rispetto alla prima."
+  en: "Placeholder orientation: mirrored from the first one."
+lookFor:
+  it: "Testo segnaposto: confronta i colori con la prima immagine."
+  en: "Placeholder text: compare the colours with the first image."
+caption:
+  it: "Immagine di prova B: griglia segnaposto con colori diversi."
+  en: "Test image B: placeholder grid in other colours."
+alt:
+  it: "Griglia di quadrati in altri colori, specchiata, usata come segnaposto."
+  en: "Mirrored grid of squares in other colours, used as a placeholder."
+annotations:
+  - { id: b1, label: { it: "Etichetta B", en: "Label B" }, revealOrder: 1, shape: { type: rect, coords: [0.1, 0.1, 0.2, 0.2] } }

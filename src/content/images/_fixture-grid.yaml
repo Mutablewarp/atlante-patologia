@@ -11,7 +11,13 @@ modifications: none
 attributionText: "Test pattern generated for the template (placeholder, not a medical image)."
 patientIdentifiable: false
 verifiedBy: { who: agent, name: horizontal-agent, date: 2026-10-10 }
-stain: "—"
+group: fixture-grid-set
+stain: "H&E"
+magnification: low power
+section: paraffin
+lookFor:
+  it: "Testo segnaposto: prima il quadro d'insieme, poi le etichette."
+  en: "Placeholder text: overview first, then the labels."
 caption:
   it: "Immagine di prova: griglia colorata segnaposto."
   en: "Test image: placeholder colour grid."
