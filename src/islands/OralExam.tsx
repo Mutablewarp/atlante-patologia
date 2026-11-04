@@ -7,26 +7,28 @@ import { useEffect, useRef, useState } from 'preact/hooks';
 import type { Lang } from '../i18n/index.ts';
 import { fmt, formatDate, LOCALE_TAG } from '../i18n/index.ts';
 import { tS } from '../i18n/study.ts';
-import { getAll, put } from '../lib/db.ts';
+import { getAll, put, remove } from '../lib/db.ts';
 import { drawQuestions, isOralItem, oralCalibration, rubricMean, RUBRIC, SCORES, type OralItem, type OralQuestion, type Rubric, type Score } from '../lib/oral.ts';
 import { loadOral, useLoad } from './client.ts';
 
 type T = (k: Parameters<typeof tS>[1]) => string;
 type Run = { id: string; at: number; questions: OralQuestion[]; seconds?: number };
+/** A saved session as History shows it: `damaged` when no date or no readable item (it can only be deleted). */
+type Saved = { id: string; at: number; items: OralItem[]; damaged: boolean };
 const BIAS = { tooFew: 'oralBiasTooFew', over: 'oralBiasOver', under: 'oralBiasUnder', calibrated: 'oralBiasCalibrated' } as const;
 
 const one = (lang: Lang, n: number) => new Intl.NumberFormat(LOCALE_TAG[lang], { maximumFractionDigits: 1 }).format(n);
 
-async function sessions() {
-  try {
-    // checkExport validates oral rows on import; this guard also covers rows written before that check.
-    return (await getAll('oralSessions'))
-      .map((s) => ({ ...s, items: Array.isArray(s.items) ? s.items.filter(isOralItem) : [] }))
-      .filter((s) => typeof s.at === 'number' && s.items.length > 0)
-      .sort((a, b) => b.at - a.at);
-  } catch {
-    return []; // no storage: the simulator still works, nothing is remembered
-  }
+/** Throws when the database cannot be read (History then shows the storage notice, never "nothing saved"). */
+async function sessions(): Promise<Saved[]> {
+  // checkExport validates oral rows on import; this guard also covers rows written before that check.
+  return (await getAll('oralSessions'))
+    .map((s) => {
+      const items = Array.isArray(s.items) ? (s.items as unknown[]).filter(isOralItem) : [];
+      const at = typeof s.at === 'number' ? s.at : 0;
+      return { id: s.id, at, items, damaged: !at || !items.length };
+    })
+    .sort((a, b) => b.at - a.at);
 }
 
 export default function OralExam({ lang }: { lang: Lang }) {
@@ -34,7 +36,6 @@ export default function OralExam({ lang }: { lang: Lang }) {
   const pool = useLoad(() => loadOral(lang));
   const [run, setRun] = useState<Run | null>(null);
   const [restarted, setRestarted] = useState(false);
-  const history = useLoad(sessions, [run]);
   // The page builds the empty state itself when there are no questions; this covers a failed fetch.
   if (!pool.loading && !pool.data?.length) return <p class="empty-state">{t('oralNoContent')}</p>;
   if (run)
@@ -59,7 +60,8 @@ export default function OralExam({ lang }: { lang: Lang }) {
         focus={restarted}
         onStart={(seconds) => setRun({ id: `oral@${Date.now()}`, at: Date.now(), questions: drawQuestions(pool.data!), seconds })}
       />
-      <History lang={lang} t={t} list={history.loading ? undefined : (history.data ?? [])} />
+      {/* History mounts again after every run, so it reads the sessions afresh (never a stale "nothing saved"). */}
+      <History lang={lang} t={t} />
     </div>
   );
 }
@@ -268,29 +270,61 @@ function Runner({ lang, t, run, onRestart }: { lang: Lang; t: T; run: Run; onRes
   );
 }
 
-function History({ lang, t, list }: { lang: Lang; t: T; list?: { id: string; at: number; items: OralItem[] }[] }) {
-  const c = oralCalibration((list ?? []).flatMap((s) => s.items));
+function History({ lang, t }: { lang: Lang; t: T }) {
+  const saved = useLoad(sessions);
+  const [deleted, setDeleted] = useState<string[]>([]);
+  const head = useRef<HTMLHeadingElement>(null);
+  const list = saved.data?.filter((s) => !deleted.includes(s.id)) ?? [];
+  const readable = list.filter((s) => !s.damaged);
+  // Damaged sessions come first, so they can always be found and deleted (nothing else is touched).
+  const shown = [...list.filter((s) => s.damaged), ...readable.slice(0, 10)];
+  const c = oralCalibration(readable.flatMap((s) => s.items));
+  async function del(id: string) {
+    try {
+      await remove('oralSessions', id);
+    } catch {
+      return; // storage unavailable: the session stays listed
+    }
+    setDeleted((d) => [...d, id]);
+    head.current?.focus(); // the pressed button is gone: keep focus in the list's section
+  }
   return (
     <section aria-labelledby="oral-history-title">
-      <h2 id="oral-history-title">{t('historyTitle')}</h2>
-      {/* While reloading, never claim that nothing is saved. */}
-      {!list ? (
+      <h2 id="oral-history-title" tabIndex={-1} ref={head}>
+        {t('historyTitle')}
+      </h2>
+      {/* While loading, or when storage is unavailable (private mode, a database newer than this code), never claim that nothing is saved. */}
+      {saved.loading ? (
         <p class="muted">{t('loading')}</p>
-      ) : list.length ? (
+      ) : saved.error ? (
+        <p class="notice notice-caution">{t('storageError')}</p>
+      ) : shown.length ? (
         <>
           <ul class="oral-history">
-            {list.slice(0, 10).map((s) => (
-              <li>
-                {fmt(t('historyRow'), {
-                  date: formatDate(lang, new Date(s.at)),
-                  n: s.items.length,
-                  a: s.items.length ? one(lang, s.items.reduce((n, i) => n + rubricMean(i.rubric), 0) / s.items.length) : '–',
-                })}
-              </li>
-            ))}
+            {shown.map((s) => {
+              const label = s.damaged
+                ? t('historyDamaged')
+                : fmt(t('historyRow'), {
+                    date: formatDate(lang, new Date(s.at)),
+                    n: s.items.length,
+                    a: one(lang, s.items.reduce((n, i) => n + rubricMean(i.rubric), 0) / s.items.length),
+                  });
+              return (
+                <li key={s.id}>
+                  {label}{' '}
+                  <button type="button" class="btn btn-small" aria-label={`${t('delete')}: ${label}`} onClick={() => void del(s.id)}>
+                    {t('delete')}
+                  </button>
+                </li>
+              );
+            })}
           </ul>
-          <p>{fmt(t('oralAverages'), { p: one(lang, c.predicted), a: one(lang, c.assessed), n: c.n })}</p>
-          <p class="notice">{t(BIAS[c.bias])}</p>
+          {c.n > 0 && (
+            <>
+              <p>{fmt(t('oralAverages'), { p: one(lang, c.predicted), a: one(lang, c.assessed), n: c.n })}</p>
+              <p class="notice">{t(BIAS[c.bias])}</p>
+            </>
+          )}
         </>
       ) : (
         <p class="muted">{t('historyEmpty')}</p>

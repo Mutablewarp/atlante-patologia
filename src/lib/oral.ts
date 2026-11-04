@@ -28,18 +28,26 @@ export type OralSession = { id: string; at: number; items: OralItem[] };
 export const SESSION_SIZE = 3;
 
 const isScore = (x: unknown): x is Score => x === 1 || x === 2 || x === 3 || x === 4;
-/** Shape check for a stored or imported oral item: question text, a predicted score and all four rubric scores. */
+/** Shape check for a stored or imported oral item: every field of OralItem (seconds may be absent). */
 export function isOralItem(x: unknown): x is OralItem {
   const i = x as Partial<OralItem> | null;
   return (
     !!i &&
     typeof i.question === 'string' &&
+    typeof i.entity === 'string' &&
     typeof i.text === 'string' &&
     isScore(i.predicted) &&
     !!i.rubric &&
     typeof i.rubric === 'object' &&
-    RUBRIC.every((c) => isScore((i.rubric as Partial<Rubric>)[c]))
+    RUBRIC.every((c) => isScore((i.rubric as Partial<Rubric>)[c])) &&
+    (i.seconds === undefined || (typeof i.seconds === 'number' && i.seconds >= 0))
   );
+}
+
+/** A session the simulator can read: an id, a date and at least one complete item (the simulator never saves an empty one). */
+export function isOralSession(x: unknown): x is OralSession {
+  const s = x as Partial<OralSession> | null;
+  return !!s && typeof s.id === 'string' && typeof s.at === 'number' && Array.isArray(s.items) && s.items.length > 0 && s.items.every(isOralItem);
 }
 
 /**

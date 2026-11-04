@@ -26,6 +26,12 @@ async function noAxeViolations(page: Page) {
   expect(res.violations.map((v) => `${v.id}: ${v.nodes.map((n) => n.target.join(' ')).join(', ')}`)).toEqual([]);
 }
 
+/** Open the data page and wait for its island: the server-rendered buttons ignore a click made before hydration (Astro then drops `ssr`). */
+async function openData(page: Page) {
+  await page.goto('en/me/data/');
+  await expect(page.locator('astro-island[component-url*="DataManager"][ssr]')).toHaveCount(0);
+}
+
 test('entity actions feed review, bookmarks, resume and the Me pages', async ({ page }) => {
   const foreign = guardRequests(page);
   await page.goto('it/e/fixture-demo/');
@@ -97,7 +103,7 @@ test('export then re-import merges with an integrity check', async ({ page }) =>
   const bm = page.getByRole('button', { name: /Bookmark/ });
   await bm.click();
   await expect(bm).toHaveAttribute('aria-pressed', 'true');
-  await page.goto('en/me/data/');
+  await openData(page);
   const [download] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: 'Export data' }).click()]);
   const path = await download.path();
   const file = JSON.parse(readFileSync(path, 'utf8'));
@@ -217,6 +223,8 @@ test('confidence is asked before the answer in quiz, review and quick check, and
     await page.getByRole('button', { name: 'Check' }).click();
   }
   await expect(q.getByRole('radio', { name: 'Fairly sure' })).toBeDisabled();
+  // The attempt is written after the feedback shows: leaving the page sooner would abort the write.
+  await expect.poll(async () => (await readStore(page, 'quizAttempts')).length).toBe(2);
 
   // Review: pick a confidence, reveal, rate.
   await page.goto('en/study/review/');
@@ -278,12 +286,113 @@ test('oral simulator: three questions, prediction before self-assessment, calibr
   const [session] = await readStore(page, 'oralSessions');
   expect((session!.items as unknown[]).length).toBe(3);
 
-  await page.getByRole('button', { name: 'Start again' }).click();
+  // Record every text the history shows after "Start again": it must never claim that nothing is saved, not even for one frame.
+  await page.evaluate(() => {
+    const w = window as unknown as { historyTexts: string[] };
+    w.historyTexts = [];
+    new MutationObserver(() => {
+      const h = document.querySelector('[aria-labelledby="oral-history-title"]');
+      if (h) w.historyTexts.push(h.textContent ?? '');
+    }).observe(document.body, { subtree: true, childList: true, characterData: true });
+  });
+  await page.getByRole('button', { name: 'Start again' }).press('Enter'); // keyboard, as in the review finding
   // Focus goes to the first setup control, never to <body> (WCAG 2.4.3).
   await expect(page.getByRole('checkbox', { name: 'Use a timer for each question' })).toBeFocused();
   await expect(page.getByRole('region', { name: 'Previous sessions' }).getByText(/3 questions, self-assessed 2\.3 out of 4/)).toBeVisible();
-  await expect(page.getByText('No sessions saved on this device.')).toHaveCount(0);
+  const texts = await page.evaluate(() => (window as unknown as { historyTexts: string[] }).historyTexts);
+  expect(texts.length).toBeGreaterThan(0);
+  expect(texts.filter((s) => s.includes('No sessions saved'))).toEqual([]);
+  // The page stays scrolled after the results: the focused setup control must not end up under the sticky bar.
+  await noAxeViolations(page);
   expect(foreign).toEqual([]);
+});
+
+/** Write records into one store of the learner DB (the app must have opened it first, see readStore). */
+const writeStore = (page: Page, store: string, records: object[]) =>
+  page.evaluate(
+    ([s, recs]) =>
+      new Promise<void>((resolve, reject) => {
+        const req = indexedDB.open('atlas');
+        req.onerror = () => reject(req.error);
+        req.onsuccess = () => {
+          const d = req.result;
+          const tx = d.transaction(s, 'readwrite');
+          for (const r of recs) tx.objectStore(s).put(r);
+          tx.oncomplete = () => {
+            d.close();
+            resolve();
+          };
+          tx.onerror = () => reject(tx.error);
+        };
+      }),
+    [store, records] as const,
+  );
+
+test('oral history: a damaged session is listed and can be deleted without touching anything else', async ({ page }) => {
+  await page.goto('en/study/oral/');
+  const history = page.getByRole('region', { name: 'Previous sessions' });
+  await expect(history).toContainText('No sessions saved on this device.');
+  const rubric = { completeness: 3, accuracy: 3, structure: 3, terminology: 3 };
+  const good = { id: 'oral@2', at: Date.UTC(2026, 10, 2), updated: 2, items: [{ question: 'fixture-demo#1', entity: 'fixture-demo', text: 'Q?', predicted: 4, rubric, seconds: 30 }] };
+  // Written by an older build or by hand: no rubric, so the simulator cannot read it.
+  const damaged = { id: 'oral@1', at: Date.UTC(2026, 10, 1), updated: 1, items: [{ question: 'fixture-demo#2', entity: 'fixture-demo', text: 'Q?', predicted: 3 }] };
+  await writeStore(page, 'oralSessions', [good, damaged]);
+  await writeStore(page, 'notes', [{ id: 'fixture-demo', text: 'my note', updated: 1 }]);
+  await page.reload();
+
+  await expect(history.getByRole('listitem')).toHaveCount(2);
+  await expect(history.getByRole('listitem').first()).toContainText('Damaged session, cannot be read');
+  await expect(history).toContainText('2 Nov 2026: 1 questions, self-assessed 3 out of 4');
+  await expect(history).toContainText('Mean predicted 4 · mean self-assessed 3 (out of 4, 1 questions)');
+  await noAxeViolations(page);
+
+  await history.getByRole('button', { name: 'Delete: Damaged session, cannot be read' }).click();
+  await expect(page.getByRole('heading', { name: 'Previous sessions' })).toBeFocused();
+  await expect(history.getByRole('listitem')).toHaveCount(1);
+  const rows = await readStore(page, 'oralSessions');
+  expect(rows.find((r) => r.id === 'oral@1')).toMatchObject({ deleted: true }); // a tombstone: an older backup cannot bring it back
+  expect(rows.find((r) => r.id === 'oral@2')).toEqual(good);
+  expect(await readStore(page, 'notes')).toEqual([{ id: 'fixture-demo', text: 'my note', updated: 1 }]);
+
+  await history.getByRole('button', { name: /^Delete: 2 Nov 2026/ }).click();
+  await expect(history).toContainText('No sessions saved on this device.');
+  await expect(history).not.toContainText('Mean predicted');
+});
+
+test('exam mode: pressing Finish again while the answers are being saved stores each answer once', async ({ context }) => {
+  // An older tab holds the database open, so the writes wait (as on a slow phone): the second press lands while they are pending.
+  const old = await context.newPage();
+  await holdOpen(old, 1);
+  const page = await context.newPage();
+  await page.goto('en/study/quiz/?mode=exam');
+  await page.getByRole('spinbutton', { name: 'Number of questions' }).fill('3');
+  await page.getByRole('button', { name: 'Start' }).click();
+  let answered = 0;
+  for (let i = 0; i < 3; i++) {
+    const options = page.locator('.question .options').getByRole('radio');
+    await expect(page.getByRole('heading', { name: `Question ${i + 1} of 3` })).toBeVisible();
+    if ((await options.count()) > 0) {
+      await options.first().check();
+      answered++;
+    }
+    if (i < 2) await page.getByRole('button', { name: 'Next' }).click();
+  }
+  expect(answered).toBeGreaterThan(0); // the fixtures hold one free-text question at most, so two or three get options
+  const finish = page.getByRole('button', { name: 'Finish' });
+  await finish.click();
+  await finish.click(); // still shown: the first press is waiting for the database
+  await old.close();
+  await expect(page.getByRole('heading', { name: 'Results' })).toBeVisible();
+  await page.waitForTimeout(300); // let any second round of writes land before counting
+  const attempts = await readStore(page, 'quizAttempts');
+  expect(attempts).toHaveLength(answered);
+  expect(new Set(attempts.map((a) => a.question)).size).toBe(answered);
+
+  // "Start again" removes the results: focus goes to the chosen mode, never to <body> (WCAG 2.4.3).
+  await page.getByRole('button', { name: 'Start again' }).press('Enter');
+  await expect(page.getByRole('radio', { name: /^Timed exam/ })).toBeFocused();
+  await expect(page.getByRole('radio', { name: /^Timed exam/ })).toBeChecked();
+  await noAxeViolations(page); // the focused control is not left under the sticky bar
 });
 
 test('oral simulator: "time is up" is announced in a live region, and a double save stores one answer', async ({ page }) => {
@@ -306,7 +415,7 @@ test('oral simulator: "time is up" is announced in a live region, and a double s
 });
 
 test('a malformed oral session in an import file is rejected', async ({ page }) => {
-  await page.goto('en/me/data/');
+  await openData(page);
   const stores = { oralSessions: [{ id: 'oral@1', at: 1, updated: 1, items: [{ question: 'a#1', entity: 'a', text: '?', predicted: 3 }] }] };
   const file = await page.evaluate(async (st) => {
     const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(JSON.stringify(st)));
@@ -334,7 +443,7 @@ test('export and import carry confidence and oral sessions into a fresh browser'
   await page.getByRole('button', { name: 'Save and continue' }).click();
   await expect(page.getByRole('heading', { name: 'Question 2 of 3' })).toBeVisible();
 
-  await page.goto('en/me/data/');
+  await openData(page);
   const [download] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: 'Export data' }).click()]);
   const path = await download.path();
   const file = JSON.parse(readFileSync(path, 'utf8'));
@@ -344,7 +453,7 @@ test('export and import carry confidence and oral sessions into a fresh browser'
 
   const fresh = await browser.newContext({ baseURL: info.project.use.baseURL });
   const other = await fresh.newPage();
-  await other.goto('en/me/data/');
+  await openData(other);
   await other.locator('input[type=file]').setInputFiles(path);
   await expect(other.getByText(/Import complete: [1-9]\d* items updated\./)).toBeVisible();
   expect((await readStore(other, 'oralSessions'))[0]).toMatchObject({ items: [{ predicted: 2 }] });
@@ -434,6 +543,19 @@ test('an older tab that keeps the database open blocks the upgrade with a notice
   await expect(history).toContainText('No sessions saved on this device.');
   expect(await readStore(page, 'notes')).toEqual([{ id: 'fixture-demo', text: 'v1 note', updated: 1 }]);
   expect(await readStore(page, 'oralSessions')).toEqual([]);
+});
+
+test('code older than the learner database shows the storage notice, never "No sessions saved"', async ({ context }) => {
+  // A newer build has already upgraded the database (as after a rollback): this build's open fails with a VersionError.
+  const newer = await context.newPage();
+  await holdOpen(newer, 99);
+  await newer.close();
+  const page = await context.newPage();
+  await page.goto('en/study/oral/');
+  const history = page.getByRole('region', { name: 'Previous sessions' });
+  await expect(history).toContainText('Your browser does not allow saving data');
+  await expect(history).not.toContainText('No sessions saved');
+  await expect(page.getByRole('button', { name: 'Start' })).toBeVisible(); // the simulator itself still works
 });
 
 test('a newer version in another tab is never blocked by this one, which offers a reload', async ({ context }) => {

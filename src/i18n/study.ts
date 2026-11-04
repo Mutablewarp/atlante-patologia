@@ -338,8 +338,8 @@ export const tS = defineStrings({
   calibRow: { it: '{right} giuste su {total} ({pct} %)', en: '{right} right of {total} ({pct} %)' },
   calibNone: { it: 'nessuna risposta', en: 'no answers' },
   adviceTooFew: {
-    it: 'Servono almeno 10 risposte con il livello di sicurezza per un confronto utile. Continua a indicarlo prima di rispondere.',
-    en: 'At least 10 answers with a confidence level are needed for a useful comparison. Keep choosing it before you answer.',
+    it: 'Servono almeno 10 risposte con il livello di sicurezza per un confronto utile, di cui almeno 5 per ciascuno di due livelli. Continua a indicarlo prima di rispondere.',
+    en: 'At least 10 answers with a confidence level are needed for a useful comparison, with at least 5 at each of two levels. Keep choosing it before you answer.',
   },
   adviceOverconfident: {
     it: 'Quando ti senti sicuro sbagli più di una volta su quattro. Prima di rispondere, prova a spiegare il perché: se non ci riesci, non sei davvero sicuro.',
@@ -452,4 +452,5 @@ export const tS = defineStrings({
   historyTitle: { it: 'Sessioni precedenti', en: 'Previous sessions' },
   historyEmpty: { it: 'Nessuna sessione salvata su questo dispositivo.', en: 'No sessions saved on this device.' },
   historyRow: { it: '{date}: {n} domande, autovalutato {a} su 4', en: '{date}: {n} questions, self-assessed {a} out of 4' },
+  historyDamaged: { it: 'Sessione danneggiata, non leggibile', en: 'Damaged session, cannot be read' },
 });

@@ -103,6 +103,8 @@ npm run build =
 | Persistence | `navigator.storage.persist()` | Requested after the first meaningful action (first review saved), not on page load. Supported from Safari 17 and granted by heuristics. |
 | Offline packs | Cache Storage `pack-<lang>-<module>-<hash>` | Opt-in per module. Storage meter uses `navigator.storage.estimate()`. Delete per pack. |
 
+**Learner database versions only move forward.** `DB_VERSION` in `src/lib/db.ts` is the IndexedDB version. An upgrade only adds stores (`STORES_ADDED_IN`), so no record is rewritten or dropped. Once a browser has opened version N, older code that asks for version N − 1 gets a `VersionError`: until the page loads newer code, the study and Me features can neither read nor save progress (the pages that list saved data show the storage notice, never "nothing saved"), and the data stays intact. So a deploy is never rolled back past a `DB_VERSION` bump. Roll forward instead: revert the faulty change in a new commit, keep `DB_VERSION` and the stores it added, and deploy. While an upgrade waits for a tab that still runs older code, the page asks the learner to close the other atlas tabs (`blocked`); a tab that holds up a newer version closes its connection and offers a reload (`blocking`). Import checks the whole file before writing anything (`checkExport`: an id and a timestamp on every record, every field of an oral session), and the oral simulator lists any stored session it cannot read so the learner can delete just that session.
+
 Service-worker strategies:
 - App shell is precached.
 - Navigations are network-first with an offline fallback page.

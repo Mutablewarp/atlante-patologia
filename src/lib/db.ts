@@ -9,7 +9,7 @@
 import { openDB, type IDBPDatabase } from 'idb';
 import type { CardRecord } from './srs.ts';
 import type { Confidence } from './metacog.ts';
-import { isOralItem, type OralSession } from './oral.ts';
+import { isOralSession, type OralSession } from './oral.ts';
 
 export const DB_NAME = 'atlas';
 /** IndexedDB version: bump and add the new stores to STORES_ADDED_IN (never change an existing store). */
@@ -117,11 +117,8 @@ export async function checkExport(raw: unknown): Promise<ImportCheck> {
       const rec = r as Partial<Base> | null;
       if (!rec || typeof rec !== 'object' || typeof rec.id !== 'string' || typeof rec.updated !== 'number')
         return { ok: false, error: 'records' };
-      // The oral simulator reads every item field: a malformed session would break it on every visit.
-      if (name === 'oralSessions' && !rec.deleted) {
-        const o = rec as Partial<OralSessionRecord>;
-        if (typeof o.at !== 'number' || !Array.isArray(o.items) || !o.items.every(isOralItem)) return { ok: false, error: 'records' };
-      }
+      // The oral simulator reads every field of a session: never let a malformed one in (tombstones carry no data to read).
+      if (name === 'oralSessions' && !rec.deleted && !isOralSession(rec)) return { ok: false, error: 'records' };
     }
   }
   return { ok: true, file: f as ExportFile };
