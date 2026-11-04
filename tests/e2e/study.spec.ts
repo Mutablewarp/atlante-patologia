@@ -537,6 +537,19 @@ test('an older tab that keeps the database open blocks the upgrade with a notice
   expect(await readStore(page, 'oralSessions')).toEqual([]);
 });
 
+test('code older than the learner database shows the storage notice, never "No sessions saved"', async ({ context }) => {
+  // A newer build has already upgraded the database (as after a rollback): this build's open fails with a VersionError.
+  const newer = await context.newPage();
+  await holdOpen(newer, 99);
+  await newer.close();
+  const page = await context.newPage();
+  await page.goto('en/study/oral/');
+  const history = page.getByRole('region', { name: 'Previous sessions' });
+  await expect(history).toContainText('Your browser does not allow saving data');
+  await expect(history).not.toContainText('No sessions saved');
+  await expect(page.getByRole('button', { name: 'Start' })).toBeVisible(); // the simulator itself still works
+});
+
 test('a newer version in another tab is never blocked by this one, which offers a reload', async ({ context }) => {
   const page = await context.newPage();
   await page.goto('en/study/oral/');

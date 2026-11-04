@@ -19,19 +19,16 @@ const BIAS = { tooFew: 'oralBiasTooFew', over: 'oralBiasOver', under: 'oralBiasU
 
 const one = (lang: Lang, n: number) => new Intl.NumberFormat(LOCALE_TAG[lang], { maximumFractionDigits: 1 }).format(n);
 
+/** Throws when the database cannot be read (History then shows the storage notice, never "nothing saved"). */
 async function sessions(): Promise<Saved[]> {
-  try {
-    // checkExport validates oral rows on import; this guard also covers rows written before that check.
-    return (await getAll('oralSessions'))
-      .map((s) => {
-        const items = Array.isArray(s.items) ? (s.items as unknown[]).filter(isOralItem) : [];
-        const at = typeof s.at === 'number' ? s.at : 0;
-        return { id: s.id, at, items, damaged: !at || !items.length };
-      })
-      .sort((a, b) => b.at - a.at);
-  } catch {
-    return []; // no storage: the simulator still works, nothing is remembered
-  }
+  // checkExport validates oral rows on import; this guard also covers rows written before that check.
+  return (await getAll('oralSessions'))
+    .map((s) => {
+      const items = Array.isArray(s.items) ? (s.items as unknown[]).filter(isOralItem) : [];
+      const at = typeof s.at === 'number' ? s.at : 0;
+      return { id: s.id, at, items, damaged: !at || !items.length };
+    })
+    .sort((a, b) => b.at - a.at);
 }
 
 export default function OralExam({ lang }: { lang: Lang }) {
@@ -296,9 +293,11 @@ function History({ lang, t }: { lang: Lang; t: T }) {
       <h2 id="oral-history-title" tabIndex={-1} ref={head}>
         {t('historyTitle')}
       </h2>
-      {/* While loading, never claim that nothing is saved. */}
+      {/* While loading, or when storage is unavailable (private mode, a database newer than this code), never claim that nothing is saved. */}
       {saved.loading ? (
         <p class="muted">{t('loading')}</p>
+      ) : saved.error ? (
+        <p class="notice notice-caution">{t('storageError')}</p>
       ) : shown.length ? (
         <>
           <ul class="oral-history">
