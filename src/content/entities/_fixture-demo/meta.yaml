@@ -68,6 +68,10 @@ editionDependent: true
 editionNote:
   it: "Nota di edizione segnaposto."
   en: "Placeholder edition note."
+# Exercises ClassificationNote: 5th-ed. Vol. 1 is superseded by the 6th-ed. print volume, so the notice shows.
+classification:
+  source: who-5e-dig
+  checked: 2026-11-03
 sources:
   - source: rubin-8e
 lastUpdated: 2026-10-10

@@ -40,3 +40,44 @@ describe('content data files match the schemas', () => {
     expect(entitySchema.safeParse(bad).success).toBe(false);
   });
 });
+
+describe('standards and entity classification (WHO watch)', () => {
+  const all = () => sourceSchema.array().parse(read('sources.yaml'));
+  const std = { id: 'x-std', title: 'T', year: 2026, kind: 'standard', existsVerified: { via: 'publisher', date: '2026-11-03' } };
+
+  it('every supersedes points to an existing standard of the same series and an older edition', () => {
+    const src = all();
+    const byId = new Map(src.map((s) => [s.id, s]));
+    const withSup = src.filter((s) => s.supersedes);
+    expect(withSup.length).toBeGreaterThanOrEqual(4);
+    for (const s of withSup) {
+      const old = byId.get(s.supersedes!);
+      expect(old, `${s.id} supersedes unknown ${s.supersedes}`).toBeDefined();
+      expect(old!.kind).toBe('standard');
+      expect(old!.series).toBe(s.series);
+      expect(old!.edition!).toBeLessThan(s.edition!);
+    }
+  });
+  it('lists the verified WHO status: 5th ed. complete, 6th-ed. Digestive in print, three 6th-ed. betas', () => {
+    const who = all().filter((s) => s.series === 'WHO Classification of Tumours');
+    expect(who.filter((s) => s.edition === 5).map((s) => s.volume).sort((a, b) => a! - b!)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]);
+    expect(who.find((s) => s.id === 'who-5e-dig')!.status).toBe('superseded');
+    expect(who.find((s) => s.id === 'who-6e-dig')).toMatchObject({ status: 'print', volume: 1, isbn: '978-92-832-4548-3' });
+    expect(who.filter((s) => s.status === 'online-beta').map((s) => s.id).sort()).toEqual(['who-6e-breast', 'who-6e-fgt', 'who-6e-stb']);
+  });
+  it('accepts the new standard fields and rejects them on other kinds', () => {
+    expect(sourceSchema.safeParse({ ...std, series: 'S', edition: 6, volume: 1, status: 'online-beta', supersedes: 'y', isbn: '978-92-832-4548-3' }).success).toBe(true);
+    expect(sourceSchema.safeParse({ ...std, kind: 'article', status: 'print' }).success).toBe(false);
+    expect(sourceSchema.safeParse({ ...std, status: 'draft' }).success).toBe(false);
+    expect(sourceSchema.safeParse({ ...std, supersedes: 'x-std' }).success).toBe(false);
+    expect(sourceSchema.safeParse({ ...std, isbn: '9789283245483' }).success).toBe(false);
+  });
+  it('the fixture carries a classification block; the block is optional and needs a date', () => {
+    const fx = entitySchema.parse(read('entities/_fixture-demo/meta.yaml'));
+    expect(fx.classification).toEqual({ source: 'who-5e-dig', checked: new Date('2026-11-03') });
+    const raw = read('entities/_fixture-demo/meta.yaml');
+    expect(entitySchema.safeParse({ ...raw, classification: undefined }).success).toBe(true);
+    expect(entitySchema.safeParse({ ...raw, classification: { source: 'who-5e-dig' } }).success).toBe(false);
+    expect(entitySchema.safeParse({ ...raw, classification: { source: 'who-5e-dig', volume: 0, checked: '2026-11-03' } }).success).toBe(false);
+  });
+});

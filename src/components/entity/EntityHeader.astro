@@ -7,6 +7,7 @@ import { LENSES } from '../../lib/schema.ts';
 import { langPath } from '../../lib/url.ts';
 import type { SiteData } from '../../lib/content.ts';
 import { tHz } from '../../i18n/horizontal.ts';
+import ClassificationNote from './ClassificationNote.astro'; // v2/who-watch: WHO classification line
 
 interface Props {
   lang: Lang;
@@ -67,6 +68,8 @@ const synonyms = [...n.synonyms[lang], ...n.synonyms[other]];
     <li><span class="badge">{fmt(t('updated'), { date: formatDate(lang, entity.lastUpdated) })}</span></li>
     {entity.editionDependent && <li><span class="badge">◷ {t('editionDependent')}</span></li>}
   </ul>
+  {/* v2/who-watch: WHO classification line + newer-edition notice (renders nothing without a block) */}
+  <ClassificationNote lang={lang} classification={entity.classification} />
 
   <div class="entity-toolbar js-only">
     <div class="segmented" role="group" aria-label={t('mode')}>

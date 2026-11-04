@@ -77,6 +77,10 @@ export const entitySchema = z
     reviewedBy: ReviewedBy.optional(),
     editionDependent: z.boolean(),
     editionNote: L.optional(),
+    /** WHO tumour classification the card follows; `checked` is the date a HUMAN last confirmed it (docs/WHO_WATCH.md). */
+    classification: z
+      .object({ source: Id, volume: z.number().int().positive().optional(), checked: z.coerce.date() })
+      .optional(),
     sources: z.array(SourceRef).min(1),
     lastUpdated: z.coerce.date(),
     status: Status,
@@ -245,20 +249,35 @@ export const moduleSchema = z.object({
 });
 export type Module = z.infer<typeof moduleSchema>;
 
-export const sourceSchema = z.object({
-  id: Id,
-  title: z.string().min(1),
-  authors: z.string().optional(),
-  edition: z.number().int().optional(),
-  year: z.number().int(),
-  publisher: z.string().optional(),
-  journal: z.string().optional(),
-  kind: z.enum(['textbook', 'standard', 'article']),
-  doi: z.string().optional(),
-  pmid: z.string().optional(),
-  url: z.url().optional(),
-  existsVerified: z.object({ via: z.enum(['crossref', 'pubmed', 'publisher']), date: z.coerce.date() }),
-});
+/** Publication status of a standard (WHO volumes go online as beta before print). */
+export const SOURCE_STATUSES = ['print', 'online-beta', 'forthcoming', 'superseded'] as const;
+export const sourceSchema = z
+  .object({
+    id: Id,
+    title: z.string().min(1),
+    authors: z.string().optional(),
+    edition: z.number().int().optional(),
+    year: z.number().int(),
+    publisher: z.string().optional(),
+    journal: z.string().optional(),
+    kind: z.enum(['textbook', 'standard', 'article']),
+    doi: z.string().optional(),
+    pmid: z.string().optional(),
+    url: z.url().optional(),
+    // Standards only (e.g. WHO Classification of Tumours volumes); set only where verified.
+    series: z.string().min(1).optional(),
+    volume: z.number().int().positive().optional(),
+    status: z.enum(SOURCE_STATUSES).optional(),
+    supersedes: Id.optional(),
+    isbn: z.string().regex(/^97[89]-\d{1,5}-\d{1,7}-\d{1,7}-\d$/, 'ISBN-13 with hyphens').optional(),
+    existsVerified: z.object({ via: z.enum(['crossref', 'pubmed', 'publisher']), date: z.coerce.date() }),
+  })
+  .superRefine((s, ctx) => {
+    for (const k of ['series', 'volume', 'status', 'supersedes'] as const)
+      if (s[k] !== undefined && s.kind !== 'standard')
+        ctx.addIssue({ code: 'custom', path: [k], message: `${k} is only allowed on kind: standard` });
+    if (s.supersedes === s.id) ctx.addIssue({ code: 'custom', path: ['supersedes'], message: 'a source cannot supersede itself' });
+  });
 export type Source = z.infer<typeof sourceSchema>;
 
 // ── §8 Claim ledger — docs/ledger/<entity-or-pattern-id>.yaml ────────────────

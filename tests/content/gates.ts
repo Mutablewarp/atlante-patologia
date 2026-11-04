@@ -208,6 +208,7 @@ export function referencesGate(parsed: Parsed): Problem[] {
     for (const lens of LENSES)
       for (const t of e.lenses[lens]) need(parsed.taxonomy.get(lens)?.has(t) ?? false, f, `unknown ${lens} lens term "${t}"`);
     for (const s of e.sources) need(parsed.sources.has(s.source), f, `unknown source "${s.source}"`);
+    if (e.classification) need(parsed.sources.has(e.classification.source), f, `unknown classification source "${e.classification.source}"`);
     for (const img of e.images) {
       need(imageIds.has(img.id), f, `unknown image "${img.id}"`);
       if (img.pairWith) need(imageIds.has(img.pairWith), f, `unknown pairWith image "${img.pairWith}"`);

@@ -1,6 +1,6 @@
 # Sources
 
-Updated 2026-10-10. Reference files live only in the gitignored `/reference/` folder and are never committed (see [COMPLIANCE_PLAN.md](COMPLIANCE_PLAN.md) §1).
+Updated 2026-11-03 (§2); otherwise 2026-10-10. Reference files live only in the gitignored `/reference/` folder and are never committed (see [COMPLIANCE_PLAN.md](COMPLIANCE_PLAN.md) §1).
 
 ## 1. Owner-supplied references
 
@@ -28,16 +28,22 @@ The owner confirms lawful access to every supplied reference. References are onl
 
 ## 2. Primary standards for edition-dependent content
 
-These are used to verify, or to flag as "edition-dependent", the items the reference may have outdated. Status was checked 2026-10-10 ([VERIFIED_FACTS.md](VERIFIED_FACTS.md) §K).
+These are used to verify, or to flag as "edition-dependent", the items the reference may have outdated. WHO status was re-checked 2026-11-03 ([VERIFIED_FACTS.md](VERIFIED_FACTS.md) §K); the other rows were checked 2026-10-10. Every WHO volume is an entry of `src/content/sources.yaml` (`series`, `edition`, `volume`, `status`, `supersedes`, `isbn`), and the weekly WHO watch reports changes for human review ([WHO_WATCH.md](WHO_WATCH.md)).
 
 | ID | Standard | Current status (verified) | Use |
 |---|---|---|---|
-| `who-5e` | WHO Classification of Tumours, 5th ed. (14 volumes, 2018–2026) | Complete | Tumour names, definitions, grading per site |
-| `who-6e-dig` | WHO Classification of Tumours, 6th ed., Vol. 1 Digestive System Tumours | Published 2026; supersedes 5th-ed. Vol. 1 | Digestive tumours (o19, o20, o21) |
+| `who-5e-*` | WHO Classification of Tumours, 5th ed., 14 volumes (print years 2019–2026; the series page gives the programme as 2018–2026) | Complete. Vol. 1 Digestive (`who-5e-dig`) is superseded by the 6th edition | Tumour names, definitions, grading per site |
+| `who-6e-dig` | WHO Classification of Tumours, 6th ed., Vol. 1 Digestive System Tumours, ISBN 978-92-832-4548-3 | In print since 29 Jul 2026 (online before print) | Digestive tumours (o19, o20, o21) |
+| `who-6e-breast`, `who-6e-fgt`, `who-6e-stb` | WHO Classification of Tumours, 6th ed.: Breast; Female Genital; Soft Tissue and Bone | Online beta, not yet in print; volume numbers not published | Cards keep the 5th-ed. citation until print (plan: beta policy) |
+| — | WHO Classification of Tumours, 6th ed.: Thoracic; Central Nervous System | Listed as forthcoming; no date. Not in `sources.yaml` until a year is verified | o18, o32 later |
+| — | ICD-O-4 (International Classification of Diseases for Oncology, 4th ed.) | Final tables published 20 Jul 2026 on WHO Classification of Tumours Online | Tumour codes (not yet used) |
+| — | ICD-11 MMS | Current release `2026-01`; a new release every year | Disease codes (not yet used; CC BY-ND 3.0 IGO) |
 | `uicc-tnm9` | UICC TNM Classification, 9th ed. | Published 2025; effective date not stated | Staging |
 | `ajcc` | AJCC Cancer Staging (8th ed. + Version 9 site protocols) | 8th ed. applies per site until replaced by V9 | Staging where AJCC is the cited system |
 
-Access caveat: WHO Blue Books and TNM are paid publications. We use them to **check** terms and categories and never copy their text or tables. If a needed standard is not accessible, the card carries "edition-dependent — not yet verified against current standard".
+Access caveat: WHO Blue Books and TNM are paid publications, and IARC content is all rights reserved. We use them to **check** terms and categories and cite only bibliographic facts (series, edition, volume, title, year, ISBN); we never copy their text, tables, figures or images, in English or in translation. If a needed standard is not accessible, the card carries "edition-dependent — not yet verified against current standard".
+
+Entity cards that follow a WHO volume carry a `classification` block (`source`, optional `volume`, `checked` = the date a person last confirmed the card). The page shows the citation line and, at build time, a "newer edition available" notice when a print or online-beta volume in `sources.yaml` supersedes the cited one.
 
 ## 3. Edition-sensitive topics to verify in each batch
 

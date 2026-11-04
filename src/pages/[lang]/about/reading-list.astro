@@ -7,7 +7,8 @@ import { sources } from '../../../lib/content.ts';
 export const getStaticPaths = langPaths;
 const lang = Astro.params.lang as Lang;
 const all = await sources();
-const books = all.filter((s) => s.kind !== 'article');
+// Standards (WHO volumes) are cited on the cards that follow them, not listed as "the reference textbook".
+const books = all.filter((s) => s.kind === 'textbook');
 // "Aljamal H, et al." already ends with a period: never print "et al..".
 const endStop = (s: string) => (s.endsWith('.') ? s : `${s}.`);
 const articles = all.filter((s) => s.kind === 'article').sort((a, b) => b.year - a.year);

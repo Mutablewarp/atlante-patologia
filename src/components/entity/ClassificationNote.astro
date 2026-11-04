@@ -1,0 +1,61 @@
+---
+/**
+ * WHO classification line for an entity with a `classification` block, and a
+ * build-time "newer edition available" notice (docs/WHO_WATCH.md). Volume titles
+ * stay in English: they are the official titles. Renders nothing without a block.
+ */
+import type { Lang } from '../../i18n/index.ts';
+import { fmt, formatDate } from '../../i18n/index.ts';
+import { tClass } from '../../i18n/classification.ts';
+import { classificationView, editionLabel } from '../../lib/classification.ts';
+import { sources } from '../../lib/content.ts';
+import type { Entity } from '../../lib/schema.ts';
+
+interface Props {
+  lang: Lang;
+  classification: Entity['classification'];
+}
+const { lang, classification } = Astro.props;
+const view = classificationView(classification, await sources());
+const t = (k: Parameters<typeof tClass>[1]) => tClass(lang, k);
+const edition = (s: { edition?: number; status?: string }) =>
+  [s.edition && editionLabel(lang, s.edition), s.status === 'online-beta' && t('online-beta')].filter(Boolean).join(', ');
+---
+
+{
+  view && (
+    <div class="classification-note">
+      <p>
+        <strong>{t('label')}:</strong>{' '}
+        <span lang="en">{view.source.series ?? view.source.title}</span>, {edition(view.source)}
+        {view.volume && `, ${fmt(t('volume'), { n: view.volume })}`}:{' '}
+        <cite lang="en">{view.source.title}</cite> ({view.source.year}) ·{' '}
+        {fmt(t('checked'), { date: formatDate(lang, view.checked) })}
+      </p>
+      {view.newer && (
+        <p class="notice notice-caution" data-newer-edition>
+          {fmt(t('newer'), {
+            edition: editionLabel(lang, view.newer.edition ?? 0),
+            status: t(view.newer.status ?? 'print'),
+            year: view.newer.year,
+          })}
+        </p>
+      )}
+    </div>
+  )
+}
+
+<style>
+  .classification-note {
+    max-width: var(--measure);
+    margin-block: var(--space-4);
+    font-size: var(--step--1);
+    color: var(--ink-muted);
+  }
+  .classification-note p {
+    margin: 0 0 var(--space-2);
+  }
+  .classification-note .notice {
+    padding: var(--space-3) var(--space-4);
+  }
+</style>

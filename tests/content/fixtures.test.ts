@@ -152,6 +152,10 @@ describe('content gates: synthetic fixture', () => {
       expect(fail('references', (t) => void (meta(alpha(t)).lenses.marker = ['nope']))).toEqual([expect.stringMatching(/unknown marker lens term "nope"/)]));
     it('fails on an unknown source', () =>
       expect(fail('references', (t) => meta(alpha(t)).sources.push({ source: 'nope' }))).toEqual([expect.stringMatching(/unknown source "nope"/)]));
+    it('fails on an unknown classification source', () =>
+      expect(fail('references', (t) => void (meta(alpha(t)).classification = { source: 'nope', checked: '2026-11-03' }))).toEqual([
+        expect.stringMatching(/unknown classification source "nope"/),
+      ]));
     it('fails on unknown images (entity, pattern, question)', () =>
       expect(
         fail('references', (t) => {
