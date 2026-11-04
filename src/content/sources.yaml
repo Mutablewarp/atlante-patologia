@@ -119,3 +119,258 @@
   kind: article
   pmid: "3381879"
   existsVerified: { via: pubmed, date: 2026-11-03 }
+
+# WHO Classification of Tumours (IARC). Bibliographic metadata only: never copy their text, tables or figures.
+# Checked 2026-11-03 against the IARC catalogue and volume pages (docs/SOURCES.md §2, docs/VERIFIED_FACTS.md §K).
+# `year` is the catalogue (print) year; for online-beta volumes, the year they went online. Volume numbers of the
+# 6th-edition betas are not public, so they are left out. Forthcoming volumes (6th-ed. Thoracic, CNS) have no
+# verified year and are not listed. scripts/who-watch.mjs reports changes; a human edits this list.
+- id: who-5e-dig
+  title: "Digestive System Tumours"
+  authors: "WHO Classification of Tumours Editorial Board"
+  series: "WHO Classification of Tumours"
+  edition: 5
+  volume: 1
+  year: 2019
+  publisher: "IARC"
+  kind: standard
+  status: superseded
+  isbn: "978-92-832-4499-8"
+  url: https://publications.iarc.who.int/Book-And-Report-Series/Who-Classification-Of-Tumours/Digestive-System-Tumours-2019
+  existsVerified: { via: publisher, date: 2026-11-03 }
+
+- id: who-5e-breast
+  title: "Breast Tumours"
+  authors: "WHO Classification of Tumours Editorial Board"
+  series: "WHO Classification of Tumours"
+  edition: 5
+  volume: 2
+  year: 2019
+  publisher: "IARC"
+  kind: standard
+  status: print
+  isbn: "978-92-832-4500-1"
+  url: https://publications.iarc.who.int/Book-And-Report-Series/Who-Classification-Of-Tumours/Breast-Tumours-2019
+  existsVerified: { via: publisher, date: 2026-11-03 }
+
+- id: who-5e-stb
+  title: "Soft Tissue and Bone Tumours"
+  authors: "WHO Classification of Tumours Editorial Board"
+  series: "WHO Classification of Tumours"
+  edition: 5
+  volume: 3
+  year: 2020
+  publisher: "IARC"
+  kind: standard
+  status: print
+  isbn: "978-92-832-4502-5"
+  url: https://publications.iarc.who.int/Book-And-Report-Series/Who-Classification-Of-Tumours/Soft-Tissue-And-Bone-Tumours-2020
+  existsVerified: { via: publisher, date: 2026-11-03 }
+
+- id: who-5e-fgt
+  title: "Female Genital Tumours"
+  authors: "WHO Classification of Tumours Editorial Board"
+  series: "WHO Classification of Tumours"
+  edition: 5
+  volume: 4
+  year: 2020
+  publisher: "IARC"
+  kind: standard
+  status: print
+  isbn: "978-92-832-4504-9"
+  url: https://publications.iarc.who.int/Book-And-Report-Series/Who-Classification-Of-Tumours/Female-Genital-Tumours-2020
+  existsVerified: { via: publisher, date: 2026-11-03 }
+
+- id: who-5e-thor
+  title: "Thoracic Tumours"
+  authors: "WHO Classification of Tumours Editorial Board"
+  series: "WHO Classification of Tumours"
+  edition: 5
+  volume: 5
+  year: 2021
+  publisher: "IARC"
+  kind: standard
+  status: print
+  isbn: "978-92-832-4506-3"
+  url: https://publications.iarc.who.int/Book-And-Report-Series/Who-Classification-Of-Tumours/Thoracic-Tumours-2021
+  existsVerified: { via: publisher, date: 2026-11-03 }
+
+- id: who-5e-cns
+  title: "Central Nervous System Tumours"
+  authors: "WHO Classification of Tumours Editorial Board"
+  series: "WHO Classification of Tumours"
+  edition: 5
+  volume: 6
+  year: 2021
+  publisher: "IARC"
+  kind: standard
+  status: print
+  isbn: "978-92-832-4508-7"
+  url: https://publications.iarc.who.int/Book-And-Report-Series/Who-Classification-Of-Tumours/Central-Nervous-System-Tumours-2021
+  existsVerified: { via: publisher, date: 2026-11-03 }
+
+- id: who-5e-paed
+  title: "Paediatric Tumours"
+  authors: "WHO Classification of Tumours Editorial Board"
+  series: "WHO Classification of Tumours"
+  edition: 5
+  volume: 7
+  year: 2023
+  publisher: "IARC"
+  kind: standard
+  status: print
+  isbn: "978-92-832-4510-0"
+  url: https://publications.iarc.who.int/Book-And-Report-Series/Who-Classification-Of-Tumours/Paediatric-Tumours-2023
+  existsVerified: { via: publisher, date: 2026-11-03 }
+
+- id: who-5e-uro
+  title: "Urinary and Male Genital Tumours"
+  authors: "WHO Classification of Tumours Editorial Board"
+  series: "WHO Classification of Tumours"
+  edition: 5
+  volume: 8
+  year: 2022
+  publisher: "IARC"
+  kind: standard
+  status: print
+  isbn: "978-92-832-4512-4"
+  url: https://publications.iarc.who.int/Book-And-Report-Series/Who-Classification-Of-Tumours/Urinary-And-Male-Genital-Tumours-2022
+  existsVerified: { via: publisher, date: 2026-11-03 }
+
+- id: who-5e-han
+  title: "Head and Neck Tumours"
+  authors: "WHO Classification of Tumours Editorial Board"
+  series: "WHO Classification of Tumours"
+  edition: 5
+  volume: 9
+  year: 2024
+  publisher: "IARC"
+  kind: standard
+  status: print
+  isbn: "978-92-832-4514-8"
+  url: https://publications.iarc.who.int/Book-And-Report-Series/Who-Classification-Of-Tumours/Head-And-Neck-Tumours-2024
+  existsVerified: { via: publisher, date: 2026-11-03 }
+
+- id: who-5e-endo
+  title: "Endocrine and Neuroendocrine Tumours"
+  authors: "WHO Classification of Tumours Editorial Board"
+  series: "WHO Classification of Tumours"
+  edition: 5
+  volume: 10
+  year: 2025
+  publisher: "IARC"
+  kind: standard
+  status: print
+  isbn: "978-92-832-4524-7"
+  url: https://publications.iarc.who.int/Book-And-Report-Series/Who-Classification-Of-Tumours/Endocrine-And-Neuroendocrine-Tumours-2025
+  existsVerified: { via: publisher, date: 2026-11-03 }
+
+- id: who-5e-haem
+  title: "Haematolymphoid Tumours"
+  authors: "WHO Classification of Tumours Editorial Board"
+  series: "WHO Classification of Tumours"
+  edition: 5
+  volume: 11
+  year: 2024
+  publisher: "IARC"
+  kind: standard
+  status: print
+  isbn: "978-92-832-4520-9"
+  url: https://publications.iarc.who.int/Book-And-Report-Series/Who-Classification-Of-Tumours/Haematolymphoid-Tumours-2024
+  existsVerified: { via: publisher, date: 2026-11-03 }
+
+- id: who-5e-skin
+  title: "Skin Tumours"
+  authors: "WHO Classification of Tumours Editorial Board"
+  series: "WHO Classification of Tumours"
+  edition: 5
+  volume: 12
+  year: 2025
+  publisher: "IARC"
+  kind: standard
+  status: print
+  isbn: "978-92-832-4535-3"
+  url: https://publications.iarc.who.int/Book-And-Report-Series/Who-Classification-Of-Tumours/Skin-Tumours-2025
+  existsVerified: { via: publisher, date: 2026-11-03 }
+
+- id: who-5e-eye
+  title: "Eye and Orbit Tumours"
+  authors: "WHO Classification of Tumours Editorial Board"
+  series: "WHO Classification of Tumours"
+  edition: 5
+  volume: 13
+  year: 2026
+  publisher: "IARC"
+  kind: standard
+  status: print
+  isbn: "978-92-832-4546-9"
+  url: https://publications.iarc.who.int/Book-And-Report-Series/Who-Classification-Of-Tumours/Eye-And-Orbit-Tumours-2026
+  existsVerified: { via: publisher, date: 2026-11-03 }
+
+- id: who-5e-gts
+  title: "Genetic Tumour Syndromes"
+  authors: "WHO Classification of Tumours Editorial Board"
+  series: "WHO Classification of Tumours"
+  edition: 5
+  volume: 14
+  year: 2026
+  publisher: "IARC"
+  kind: standard
+  status: print
+  isbn: "978-92-832-4547-6"
+  url: https://publications.iarc.who.int/Book-And-Report-Series/Who-Classification-Of-Tumours/Genetic-Tumour-Syndromes-2026
+  existsVerified: { via: publisher, date: 2026-11-03 }
+
+- id: who-6e-dig
+  title: "Digestive System Tumours"
+  authors: "WHO Classification of Tumours Editorial Board"
+  series: "WHO Classification of Tumours"
+  edition: 6
+  volume: 1
+  year: 2026
+  publisher: "IARC"
+  kind: standard
+  status: print
+  supersedes: who-5e-dig
+  isbn: "978-92-832-4548-3"
+  url: https://publications.iarc.who.int/Book-And-Report-Series/Who-Classification-Of-Tumours/Digestive-System-Tumours-2026
+  existsVerified: { via: publisher, date: 2026-11-03 }
+
+- id: who-6e-breast
+  title: "Breast Tumours"
+  authors: "WHO Classification of Tumours Editorial Board"
+  series: "WHO Classification of Tumours"
+  edition: 6
+  year: 2026
+  publisher: "IARC"
+  kind: standard
+  status: online-beta
+  supersedes: who-5e-breast
+  url: https://tumourclassification.iarc.who.int/welcome/
+  existsVerified: { via: publisher, date: 2026-11-03 }
+
+- id: who-6e-fgt
+  title: "Female Genital Tumours"
+  authors: "WHO Classification of Tumours Editorial Board"
+  series: "WHO Classification of Tumours"
+  edition: 6
+  year: 2026
+  publisher: "IARC"
+  kind: standard
+  status: online-beta
+  supersedes: who-5e-fgt
+  url: https://tumourclassification.iarc.who.int/welcome/
+  existsVerified: { via: publisher, date: 2026-11-03 }
+
+- id: who-6e-stb
+  title: "Soft Tissue and Bone Tumours"
+  authors: "WHO Classification of Tumours Editorial Board"
+  series: "WHO Classification of Tumours"
+  edition: 6
+  year: 2026
+  publisher: "IARC"
+  kind: standard
+  status: online-beta
+  supersedes: who-5e-stb
+  url: https://tumourclassification.iarc.who.int/welcome/
+  existsVerified: { via: publisher, date: 2026-11-03 }
