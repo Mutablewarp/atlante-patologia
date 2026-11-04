@@ -26,6 +26,12 @@ async function noAxeViolations(page: Page) {
   expect(res.violations.map((v) => `${v.id}: ${v.nodes.map((n) => n.target.join(' ')).join(', ')}`)).toEqual([]);
 }
 
+/** Open the data page and wait for its island: the server-rendered buttons ignore a click made before hydration (Astro then drops `ssr`). */
+async function openData(page: Page) {
+  await page.goto('en/me/data/');
+  await expect(page.locator('astro-island[component-url*="DataManager"][ssr]')).toHaveCount(0);
+}
+
 test('entity actions feed review, bookmarks, resume and the Me pages', async ({ page }) => {
   const foreign = guardRequests(page);
   await page.goto('it/e/fixture-demo/');
@@ -97,7 +103,7 @@ test('export then re-import merges with an integrity check', async ({ page }) =>
   const bm = page.getByRole('button', { name: /Bookmark/ });
   await bm.click();
   await expect(bm).toHaveAttribute('aria-pressed', 'true');
-  await page.goto('en/me/data/');
+  await openData(page);
   const [download] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: 'Export data' }).click()]);
   const path = await download.path();
   const file = JSON.parse(readFileSync(path, 'utf8'));
@@ -306,7 +312,7 @@ test('oral simulator: "time is up" is announced in a live region, and a double s
 });
 
 test('a malformed oral session in an import file is rejected', async ({ page }) => {
-  await page.goto('en/me/data/');
+  await openData(page);
   const stores = { oralSessions: [{ id: 'oral@1', at: 1, updated: 1, items: [{ question: 'a#1', entity: 'a', text: '?', predicted: 3 }] }] };
   const file = await page.evaluate(async (st) => {
     const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(JSON.stringify(st)));
@@ -334,7 +340,7 @@ test('export and import carry confidence and oral sessions into a fresh browser'
   await page.getByRole('button', { name: 'Save and continue' }).click();
   await expect(page.getByRole('heading', { name: 'Question 2 of 3' })).toBeVisible();
 
-  await page.goto('en/me/data/');
+  await openData(page);
   const [download] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: 'Export data' }).click()]);
   const path = await download.path();
   const file = JSON.parse(readFileSync(path, 'utf8'));
@@ -344,7 +350,7 @@ test('export and import carry confidence and oral sessions into a fresh browser'
 
   const fresh = await browser.newContext({ baseURL: info.project.use.baseURL });
   const other = await fresh.newPage();
-  await other.goto('en/me/data/');
+  await openData(other);
   await other.locator('input[type=file]').setInputFiles(path);
   await expect(other.getByText(/Import complete: [1-9]\d* items updated\./)).toBeVisible();
   expect((await readStore(other, 'oralSessions'))[0]).toMatchObject({ items: [{ predicted: 2 }] });
