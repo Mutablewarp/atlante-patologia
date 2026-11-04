@@ -305,7 +305,9 @@ html:not(.js) .js-only {
   *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+    /* 0s, not 0.01ms: with transition-property's default `all`, any duration turns every style change into a
+       transition, and a script that measures right after a change reads the old geometry (image-viewer label fit). */
+    transition-duration: 0s !important;
     scroll-behavior: auto !important;
   }
 }
