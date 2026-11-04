@@ -73,8 +73,9 @@
 }
 .radio input,
 .checkbox input {
-  width: 1.25rem;
-  height: 1.25rem;
+  /* WCAG 2.5.8: at least 24 px, also at the A- reading size */
+  width: max(1.5rem, 24px);
+  height: max(1.5rem, 24px);
   margin-top: 0.15rem;
   flex: none;
   accent-color: var(--hema);
