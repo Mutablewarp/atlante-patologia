@@ -8,7 +8,7 @@ import type { Lang } from '../i18n/index.ts';
 import { fmt, formatDate, LOCALE_TAG } from '../i18n/index.ts';
 import { tS } from '../i18n/study.ts';
 import { getAll, put } from '../lib/db.ts';
-import { drawQuestions, oralCalibration, rubricMean, RUBRIC, SCORES, type OralItem, type OralQuestion, type Rubric, type Score } from '../lib/oral.ts';
+import { drawQuestions, isOralItem, oralCalibration, rubricMean, RUBRIC, SCORES, type OralItem, type OralQuestion, type Rubric, type Score } from '../lib/oral.ts';
 import { loadOral, useLoad } from './client.ts';
 
 type T = (k: Parameters<typeof tS>[1]) => string;
@@ -19,8 +19,11 @@ const one = (lang: Lang, n: number) => new Intl.NumberFormat(LOCALE_TAG[lang], {
 
 async function sessions() {
   try {
-    // Imported files are only checked for id/updated: skip records without an items list.
-    return (await getAll('oralSessions')).filter((s) => Array.isArray(s.items)).sort((a, b) => b.at - a.at);
+    // checkExport validates oral rows on import; this guard also covers rows written before that check.
+    return (await getAll('oralSessions'))
+      .map((s) => ({ ...s, items: Array.isArray(s.items) ? s.items.filter(isOralItem) : [] }))
+      .filter((s) => typeof s.at === 'number' && s.items.length > 0)
+      .sort((a, b) => b.at - a.at);
   } catch {
     return []; // no storage: the simulator still works, nothing is remembered
   }
@@ -30,31 +33,55 @@ export default function OralExam({ lang }: { lang: Lang }) {
   const t: T = (k) => tS(lang, k);
   const pool = useLoad(() => loadOral(lang));
   const [run, setRun] = useState<Run | null>(null);
+  const [restarted, setRestarted] = useState(false);
   const history = useLoad(sessions, [run]);
-  if (pool.loading) return <p aria-live="polite">{t('loading')}</p>;
-  if (!pool.data?.length) return <p class="empty-state">{t('oralNoContent')}</p>;
-  if (run) return <Runner key={run.id} lang={lang} t={t} run={run} onRestart={() => setRun(null)} />;
+  // The page builds the empty state itself when there are no questions; this covers a failed fetch.
+  if (!pool.loading && !pool.data?.length) return <p class="empty-state">{t('oralNoContent')}</p>;
+  if (run)
+    return (
+      <Runner
+        key={run.id}
+        lang={lang}
+        t={t}
+        run={run}
+        onRestart={() => {
+          setRun(null);
+          setRestarted(true);
+        }}
+      />
+    );
+  // While the pool loads, the same form is shown (start disabled), so nothing shifts on hydration.
   return (
     <div class="study-tool">
-      <Setup t={t} onStart={(seconds) => setRun({ id: `oral@${Date.now()}`, at: Date.now(), questions: drawQuestions(pool.data!), seconds })} />
-      <History lang={lang} t={t} list={history.data ?? []} />
+      <Setup
+        t={t}
+        ready={!!pool.data}
+        focus={restarted}
+        onStart={(seconds) => setRun({ id: `oral@${Date.now()}`, at: Date.now(), questions: drawQuestions(pool.data!), seconds })}
+      />
+      <History lang={lang} t={t} list={history.loading ? undefined : (history.data ?? [])} />
     </div>
   );
 }
 
-function Setup({ t, onStart }: { t: T; onStart: (seconds?: number) => void }) {
+function Setup({ t, ready, focus, onStart }: { t: T; ready: boolean; focus: boolean; onStart: (seconds?: number) => void }) {
   const [timer, setTimer] = useState(false);
   const [minutes, setMinutes] = useState(5);
+  const first = useRef<HTMLInputElement>(null);
+  // After "Start again" the results are gone: put focus on the first control instead of <body>.
+  useEffect(() => {
+    if (focus) first.current?.focus();
+  }, []);
   return (
     <form
       class="card tool-form"
       onSubmit={(e) => {
         e.preventDefault();
-        onStart(timer ? Math.round(minutes * 60) : undefined);
+        if (ready) onStart(timer ? Math.round(minutes * 60) : undefined);
       }}
     >
       <label class="checkbox">
-        <input type="checkbox" checked={timer} onChange={(e) => setTimer((e.target as HTMLInputElement).checked)} />
+        <input ref={first} type="checkbox" checked={timer} onChange={(e) => setTimer((e.target as HTMLInputElement).checked)} />
         <span>{t('useTimer')}</span>
       </label>
       {timer && (
@@ -64,8 +91,8 @@ function Setup({ t, onStart }: { t: T; onStart: (seconds?: number) => void }) {
         </label>
       )}
       <p>
-        <button type="submit" class="btn btn-primary">
-          {t('start')}
+        <button type="submit" class="btn btn-primary" aria-disabled={ready ? undefined : 'true'}>
+          {ready ? t('start') : t('loading')}
         </button>
       </p>
     </form>
@@ -99,6 +126,8 @@ function Runner({ lang, t, run, onRestart }: { lang: Lang; t: T; run: Run; onRes
   const started = useRef(Date.now());
   const spent = useRef(0);
   const headRef = useRef<HTMLHeadingElement>(null);
+  const saving = useRef(false);
+  const [busy, setBusy] = useState(false);
   const q = run.questions[pos]!;
 
   useEffect(() => {
@@ -113,6 +142,10 @@ function Runner({ lang, t, run, onRestart }: { lang: Lang; t: T; run: Run; onRes
     setPhase('predict');
   }
   async function save() {
+    // One record per answer: a second activation while the write is pending is ignored.
+    if (saving.current) return;
+    saving.current = true;
+    setBusy(true);
     const item: OralItem = { question: q.id, entity: q.entity, text: q.text, predicted: predicted!, rubric: rubric as Rubric, seconds: spent.current };
     const all = [...items, item];
     setItems(all);
@@ -121,6 +154,8 @@ function Runner({ lang, t, run, onRestart }: { lang: Lang; t: T; run: Run; onRes
     } catch {
       /* storage unavailable: the session continues, it is not remembered */
     }
+    saving.current = false;
+    setBusy(false);
     if (pos + 1 >= run.questions.length) return setPhase('done');
     setPos(pos + 1);
     setPhase('answer');
@@ -185,7 +220,10 @@ function Runner({ lang, t, run, onRestart }: { lang: Lang; t: T; run: Run; onRes
       {phase === 'answer' && (
         <>
           <p>{t('answerAloud')}</p>
-          {run.seconds && left === 0 && <p class="notice">{t('oralTimeUp')}</p>}
+          {/* Live region present from the start of the answer, so "time is up" is announced (WCAG 4.1.3). */}
+          <p role="status" class={run.seconds && left === 0 ? 'notice' : 'visually-hidden'}>
+            {run.seconds && left === 0 ? t('oralTimeUp') : ''}
+          </p>
           <button type="button" class="btn btn-primary" onClick={answered}>
             {t('doneAnswering')}
           </button>
@@ -221,7 +259,7 @@ function Runner({ lang, t, run, onRestart }: { lang: Lang; t: T; run: Run; onRes
           {RUBRIC.map((c) => (
             <Scores t={t} name={`rub-${pos}-${c}`} legend={t(c)} value={rubric[c]} onChange={(s) => setRubric((r) => ({ ...r, [c]: s }))} />
           ))}
-          <button type="button" class="btn btn-primary" disabled={RUBRIC.some((c) => !rubric[c])} onClick={() => void save()}>
+          <button type="button" class="btn btn-primary" disabled={busy || RUBRIC.some((c) => !rubric[c])} onClick={() => void save()}>
             {pos + 1 >= run.questions.length ? t('finish') : t('saveNext')}
           </button>
         </>
@@ -230,12 +268,15 @@ function Runner({ lang, t, run, onRestart }: { lang: Lang; t: T; run: Run; onRes
   );
 }
 
-function History({ lang, t, list }: { lang: Lang; t: T; list: { id: string; at: number; items: OralItem[] }[] }) {
-  const c = oralCalibration(list.flatMap((s) => s.items));
+function History({ lang, t, list }: { lang: Lang; t: T; list?: { id: string; at: number; items: OralItem[] }[] }) {
+  const c = oralCalibration((list ?? []).flatMap((s) => s.items));
   return (
     <section aria-labelledby="oral-history-title">
       <h2 id="oral-history-title">{t('historyTitle')}</h2>
-      {list.length ? (
+      {/* While reloading, never claim that nothing is saved. */}
+      {!list ? (
+        <p class="muted">{t('loading')}</p>
+      ) : list.length ? (
         <>
           <ul class="oral-history">
             {list.slice(0, 10).map((s) => (

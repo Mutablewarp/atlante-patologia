@@ -27,6 +27,21 @@ export type OralSession = { id: string; at: number; items: OralItem[] };
 
 export const SESSION_SIZE = 3;
 
+const isScore = (x: unknown): x is Score => x === 1 || x === 2 || x === 3 || x === 4;
+/** Shape check for a stored or imported oral item: question text, a predicted score and all four rubric scores. */
+export function isOralItem(x: unknown): x is OralItem {
+  const i = x as Partial<OralItem> | null;
+  return (
+    !!i &&
+    typeof i.question === 'string' &&
+    typeof i.text === 'string' &&
+    isScore(i.predicted) &&
+    !!i.rubric &&
+    typeof i.rubric === 'object' &&
+    RUBRIC.every((c) => isScore((i.rubric as Partial<Rubric>)[c]))
+  );
+}
+
 /**
  * Draw `n` questions spread across chapters (round-robin over shuffled
  * modules) with one question per entity; only when there are fewer entities

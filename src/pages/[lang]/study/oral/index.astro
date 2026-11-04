@@ -4,13 +4,16 @@ import OralExam from '../../../../islands/OralExam.tsx';
 import { langPaths, type Lang } from '../../../../i18n/index.ts';
 import { tS } from '../../../../i18n/study.ts';
 import { tNav } from '../../../../i18n/nav.ts';
+import { oralQuestions } from '../../../../lib/study.ts';
 import { langPath } from '../../../../lib/url.ts';
 
 export const getStaticPaths = langPaths;
 const lang = Astro.params.lang as Lang;
+// The pool is static: with no exam questions the empty state is built into the page, so nothing shifts after load.
+const hasQuestions = (await oralQuestions(lang)).length > 0;
 ---
 
 <StudyPage lang={lang} tab="study" title={tS(lang, 'oralTitle')} intro={tS(lang, 'oralIntro')} parent={{ label: tNav(lang, 'study'), href: langPath(lang, 'study/') }}>
   <p class="small muted">{tS(lang, 'examNote')}</p>
-  <OralExam client:load lang={lang} />
+  {hasQuestions ? <OralExam client:load lang={lang} /> : <p class="empty-state">{tS(lang, 'oralNoContent')}</p>}
 </StudyPage>
