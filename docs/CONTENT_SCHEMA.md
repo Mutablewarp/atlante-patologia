@@ -181,7 +181,7 @@ image = z.object({
                    'CC-BY-SA-2.0','CC-BY-SA-2.5','CC-BY-SA-3.0','CC-BY-SA-4.0']),
   licenseUrl: z.string().url(),
   retrievedAt: z.coerce.date(),
-  modifications: z.string(),                       // 'none' or what we changed (crop, labels…)
+  modifications: z.union([z.literal('none'), L]),  // 'none' or what we changed (crop, labels…), in both languages
   attributionText: z.string().min(1),              // exact credit line shown under the image
   patientIdentifiable: z.literal(false),
   ownerApproved: z.boolean().default(false),        // must be true for any CC-BY-SA-*

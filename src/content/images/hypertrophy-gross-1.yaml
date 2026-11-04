@@ -6,7 +6,12 @@ author: Mikael Häggström, M.D.
 license: CC0-1.0
 licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
 retrievedAt: 2026-10-10
-modifications: "Re-encoded as JPEG to strip camera EXIF/GPS metadata; no crop, no resize, no colour change."
+modifications:
+  it: >-
+    Ricodifica in JPEG per rimuovere i metadati EXIF/GPS della fotocamera; nessun ritaglio, nessun ridimensionamento,
+    nessuna modifica dei colori.
+  en: >-
+    Re-encoded as JPEG to strip camera EXIF/GPS metadata; no crop, no resize, no colour change.
 attributionText: "Mikael Häggström, M.D., via Wikimedia Commons, CC0 1.0 (public domain dedication)"
 patientIdentifiable: false
 ownerApproved: false

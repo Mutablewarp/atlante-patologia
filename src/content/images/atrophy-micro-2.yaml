@@ -9,10 +9,15 @@ author: Ed Uthman
 license: CC-BY-2.0
 licenseUrl: https://creativecommons.org/licenses/by/2.0/
 retrievedAt: 2026-10-10
-modifications: >-
-  Cropped away the top 250 px of empty background above the epithelial surface (original 1760 × 1095 px);
-  downscaled the remaining 1760 × 845 px to 1600 × 768 px and re-encoded as JPEG (quality 82), which also strips the
-  camera EXIF metadata. No colour change.
+modifications:
+  it: >-
+    Ritaglio dei 250 px superiori di sfondo vuoto sopra la superficie epiteliale (originale da 1760 × 1095 px); la parte
+    restante, 1760 × 845 px, è stata ridotta a 1600 × 768 px e ricodificata in JPEG (qualità 82), operazione che rimuove
+    anche i metadati EXIF della fotocamera. Nessuna modifica dei colori.
+  en: >-
+    Cropped away the top 250 px of empty background above the epithelial surface (original 1760 × 1095 px); downscaled
+    the remaining 1760 × 845 px to 1600 × 768 px and re-encoded as JPEG (quality 82), which also strips the camera EXIF
+    metadata. No colour change.
 attributionText: >-
   Ed Uthman, "Atrophic Atypia of Exocervix" (Flickr), via Wikimedia Commons, CC BY 2.0
 patientIdentifiable: false

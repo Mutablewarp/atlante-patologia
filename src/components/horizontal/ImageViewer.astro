@@ -70,6 +70,16 @@ const variantLabel = (img: Img, i: number) => {
     fmt(t('variantN'), { n: i + 1 })
   );
 };
+/** Stain and magnification keep the source's (English) wording; in the page language when that is just a name on our lists. */
+const stainWords = (img: Img) => {
+  const code = stainCode(img.stain);
+  const plain = code && !code.startsWith('IHC:') && tHz('en', `st_${code as Exclude<typeof code, `IHC:${string}`>}`) === img.stain?.trim();
+  return plain ? stainName(img) : undefined;
+};
+const powerWords = (img: Img) => {
+  const power = /^(low|medium|intermediate|high) power$/i.test(img.magnification?.trim() ?? '') ? powerOf(img.magnification) : undefined;
+  return power && t(`pow_${power}`);
+};
 const anyNotes = panels.some((p) => p.notes.length > 0);
 /** Label placement that keeps it inside the image: anchored at its start, middle or end, top, middle or bottom. */
 const place = (x: number, y: number) => ({ h: x < 30 ? 'start' : x > 70 ? 'end' : 'mid', v: y < 12 ? 'top' : y > 88 ? 'bottom' : 'mid' });
@@ -199,25 +209,24 @@ const helpId = `viewer-help-${id}`;
             {(img.stain || img.magnification || img.section || img.objective || img.orientation) && (
               <p class="small muted">
                 {[
-                  img.stain && `${t('stain')}: ${img.stain}`,
-                  img.section && `${t('section')}: ${t(`sec_${img.section}`)}`,
-                  img.magnification && `${t('magnification')}: ${img.magnification}`,
-                  img.objective && `${t('objective')}: ${img.objective}`,
-                  img.orientation && `${t('orientation')}: ${img.orientation[lang]}`,
+                  img.stain && [t('stain'), stainWords(img) ?? <span lang="en">{img.stain}</span>],
+                  img.section && [t('section'), t(`sec_${img.section}`)],
+                  img.magnification && [t('magnification'), powerWords(img) ?? <span lang="en">{img.magnification}</span>],
+                  img.objective && [t('objective'), img.objective],
+                  img.orientation && [t('orientation'), img.orientation[lang]],
                 ]
-                  .filter(Boolean)
-                  .join(' · ')}
+                  .filter((part): part is [string, unknown] => !!part)
+                  .map(([name, value], k) => (
+                    <>
+                      {k > 0 && ' · '}
+                      {name}: {value}
+                    </>
+                  ))}
               </p>
             )}
             <p class="small muted credit">
               {t('credit')}: {img.attributionText} · <a href={img.licenseUrl}>{img.license}</a>
-              {/* shortcut: `modifications` is English-only provenance text, marked as such; make it { it, en } when image YAMLs are next revised. */}
-              {img.modifications !== 'none' && (
-                <>
-                  {' · '}
-                  <span lang="en">{img.modifications}</span>
-                </>
-              )}
+              {img.modifications !== 'none' && ` · ${img.modifications[lang]}`}
             </p>
           </div>
         ))}

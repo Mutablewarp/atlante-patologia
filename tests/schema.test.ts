@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { readFileSync, readdirSync } from 'node:fs';
 import { parse } from 'yaml';
-import { entitySchema, moduleSchema, sourceSchema, taxonomySchema } from '../src/lib/schema.ts';
+import { entitySchema, imageSchema, moduleSchema, sourceSchema, taxonomySchema } from '../src/lib/schema.ts';
 
 const read = (p: string) => parse(readFileSync(new URL(`../src/content/${p}`, import.meta.url), 'utf8'));
 
@@ -38,6 +38,13 @@ describe('content data files match the schemas', () => {
     const fx = read('entities/_fixture-demo/meta.yaml');
     const bad = { ...fx, lenses: { system: ['general'], group: ['degenerative'] } };
     expect(entitySchema.safeParse(bad).success).toBe(false);
+  });
+  it('image modifications are "none" or text in both languages (shown in the credit line)', () => {
+    const img = read('images/apoptosis-micro-2.yaml');
+    expect(imageSchema.parse(img).modifications).toMatchObject({ it: expect.stringContaining('JPEG'), en: expect.stringContaining('JPEG') });
+    expect(imageSchema.safeParse({ ...img, modifications: 'none' }).success).toBe(true);
+    expect(imageSchema.safeParse({ ...img, modifications: 'Re-encoded as JPEG' }).success).toBe(false);
+    expect(imageSchema.safeParse({ ...img, modifications: { en: 'Re-encoded as JPEG' } }).success).toBe(false);
   });
 });
 
