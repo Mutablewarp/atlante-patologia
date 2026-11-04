@@ -175,6 +175,10 @@ export function ledgerGate(tree: Tree, parsed: Parsed): Problem[] {
       if (c.status === 'sources-differ' && !bodies.every((b) => b.includes('class="sources-differ"')))
         p(file, `${c.claimId}: sources-differ needs <aside class="sources-differ"> in en.md and it.md`);
     }
+    // The page shows only meta `sources`, so it must list every known source its ledger relies on.
+    const cited = new Set(data.sources.map((s) => s.source));
+    const relied = ledger.data.claims.flatMap((c) => [c.sourceRef.source, ...(c.secondSource ? [c.secondSource.source] : [])]);
+    for (const id of new Set(relied)) if (parsed.sources.has(id) && !cited.has(id)) p(unit.meta.path, `sources must list "${id}", which the ledger cites`);
   }
   for (const { doc, data } of parsed.questions)
     if (data.status === 'published')

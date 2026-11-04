@@ -111,6 +111,13 @@ describe('content gates: synthetic fixture', () => {
           Object.assign(meta(t.patterns[0]!).matrix.rows[0].cells[0], { en: 'placeholder<!--c:fx-pattern-c002-->', it: 'segnaposto<!--c:fx-pattern-c002-->' });
         }),
       ).toEqual([]));
+    it('fails when the page does not list a source its ledger relies on', () =>
+      expect(
+        fail('ledger', (t) => {
+          Object.assign(ledger(t).claims[0], { status: 'beyond-reference', secondSource: { source: 'fx-article', locator: 'abstract' } });
+          meta(alpha(t)).sources = meta(alpha(t)).sources.filter((s: Any) => s.source !== 'fx-article');
+        }),
+      ).toEqual([expect.stringMatching(/fx-alpha\/meta\.yaml: sources must list "fx-article"/)]));
     it('fails when a question cites an unknown claim', () =>
       expect(fail('ledger', (t) => void (doc(t.questions[0]!).claims = ['fx-alpha-c404']))).toEqual([expect.stringMatching(/fx-alpha-c404/)]));
   });
