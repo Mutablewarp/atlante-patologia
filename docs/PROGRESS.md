@@ -85,7 +85,7 @@ Merged with `git merge --no-ff` in this order: `v2/who-watch` (`420c5af`), `v2/i
 | who-watch | WHO volumes in `sources.yaml` with series, edition, status and `supersedes`; `classification` block on entities with a newer-edition notice; weekly `who-watch.yml` + `scripts/who-watch.mjs` that open review issues; reviewed baseline of 2026-11-03; `docs/WHO_WATCH.md` |
 | image-viewer | image `group`, `objective`, `mpp`, `section`, `orientation`, `lookFor`; pan buttons (WCAG 2.5.7), keyboard zoom, full screen dialog, sharper zoom via srcset, stain/section switch, scale bar only with `mpp` |
 | study-metacognition | learner DB v2 (adds stores only, v1 upgrade tested); confidence before the answer in quick check, quiz and review; calibration in Me; optional `examQuestions`; oral simulator; export schema 2 that still imports v1 files |
-| 3d-pathways | intrinsic apoptosis pathway page, 3Dmol 2.5.5 loaded on demand (D050), four CC0 PDB structures with provenance and posters; the 3Dmol chunk and `/structures/*` stay out of the precache (dist test) |
+| 3d-pathways | intrinsic apoptosis pathway page, 3Dmol 2.5.5 loaded on demand (D050), six CC0 PDB structures (1F16, 1NW9, 1PAU, 3JBT, 3ZCF, 6O0K) with provenance and posters; the 3Dmol chunk and `/structures/*` stay out of the precache (dist test) |
 | reading-ux | fluid type, warm paper and soft graphite themes, A-/A+ text size, reading progress, study callouts, Continue links, no per-page AI badge, AI-assistance line in every footer and a rewritten Method page (O11) |
 
 Conflicts, all resolved by keeping both sides: `sources.yaml` (WHO volumes + PDB citations), entity page imports (ExamQuestions + EntityPathways), study hub (oral card + pathway cards), `EntityHeader.astro` (ClassificationNote + TextSize). `package-lock.json` changed with 3dmol, so `npm ci` ran after that merge.
@@ -118,8 +118,61 @@ Open after V2.1:
 - Not pushed: CI, deploy and the live smoke test have not run on these commits. The WHO watch workflow has never run on GitHub (`gh workflow run who-watch.yml` once after the push confirms labels and issue creation).
 - Study blocks: no "Come si studia" section and no renamed labels; no published `examQuestions`, so the oral simulator shows its empty state in production (V2.2).
 - Image viewer: no magnification presets; existing images still use free-text magnification. No published image has a `group`.
-- Pathway step text is `ai-generated-unreviewed` and was verified by the authoring agent, not a separate verifier (CONTENT_SCHEMA §8). The pathway page is not in the command-palette page list.
+- Pathway step text is `ai-generated-unreviewed`. Closed on 2026-11-04: an independent verifier re-checked the pathway and p01 (see the review fixes below). Still open: the pathway page is not in the command-palette page list.
 - Entity pages score 91–94 on Lighthouse performance (render-blocking CSS ~900 ms); the margin over 90 is small.
 - Full Playwright runs here use `--workers=4`; at default parallelism builders saw timeouts on this machine.
-- Not done: Firefox locally, real iOS/Android devices, Lighthouse on Linux. No DECISIONS entries yet for DB v2, export schema 2 and "extend the in-house viewer, no OpenSeadragon yet"; CONTENT_SCHEMA does not yet describe the new source fields and the `classification` block.
+- Not done: Firefox locally, real iOS/Android devices, Lighthouse on Linux. No DECISIONS entries yet for DB v2 and export schema 2 (OpenSeadragon is recorded as planned only, D059); CONTENT_SCHEMA does not yet describe the new source fields and the `classification` block.
 - The A-/A+ control appears only on entity and pattern pages; the size applies site-wide.
+
+## V2.1 review fixes (2026-11-04) — merged on `main`, not pushed
+
+An adversarial review of V2.1 found 49 problems (4 blockers, 14 major, 31 minor). Some were fixed before `ec5fb2d`. Five fixer branches closed the rest, and each fixer reported every finding in its area as fixed. They were merged with `git merge --no-ff` in this order: `w1b/science-docs` (`c7aae15`), `w1b/ci-security` (`cb99b60`), `w1b/study` (`a4f5ced`), `w1b/viewer3d` (`198a310`), `w1b/reading` (`e9859e9`).
+
+| Area | What was fixed |
+|---|---|
+| Science and docs | The independent re-check is applied to the pathway and p01: 61 ledger rows now name `independent-verifier-agent`, and the Method page counts the rows that only their writer or fixer checked (18 pages). p01 matrix cells carry claim markers (D060). A page must list every source its ledger relies on (D062). The 3ZCF note now says "deposited model". DECISIONS gained D051–D062; COMPLIANCE_PLAN, NAVIGATION_SPEC and CONTENT_SCHEMA were updated to match the code (the WHO source fields and the `classification` block are still undocumented) |
+| CI and security | zod 4.6.7, undici 8.12.3 and 6.29.1 (`npm audit --omit=dev`: 0 vulnerabilities). The WHO watch opens one summary issue for more than 10 changes and neutralises corrigenda labels. A pathway page goes into the offline pack of the card that links to it. A dist test checks the worker `VERSION` |
+| Study | Oral import checks every field and lists a damaged session so it can be deleted. A database that cannot be opened shows the storage notice, not "no sessions saved". A double press saves once. Focus stays in the setup after "Start again" (oral and quiz). Answers spread thinly over the levels give "too few". ARCHITECTURE states the roll-forward rule for `DB_VERSION` |
+| Viewer and 3D | Our changes to an image, its stain and its magnification show in the page language (76 image YAMLs). Numbered labels that still touch are moved apart. The full-screen dialog has a short name. The 5 SVG diagrams render. A structure that fails on a later step falls back to its poster and description. Every poster is opaque, with the model at least 3:1 against the stage |
+| Reading | Summaries, sources and atlas lists keep to the measure. On phones the lens chips, tools and objectives fold behind toggles: once the first-launch notice is closed, the first paragraph at 375 × 812 starts at 984 px instead of 2,214 px (measured again on `main`, Chromium and WebKit). Pattern pages have section chips and side contents. The site name shows whole, or as "Atlante", down to 320 px |
+
+Integration:
+
+- `src/pages/[lang]/pattern/[id].astro` conflicted. Both sides are kept: the reading layout (contents, sections, card list with summaries) and the matrix cells rendered through `stepHtml`, so claim markers stay HTML comments. `tests/e2e/pages.ts` merged cleanly but listed the pattern template twice; the `en` entry is kept.
+- `package-lock.json` changed (zod, undici), so `npm ci` ran. `npm run licenses` left `dependencies.json` as the ci-security branch committed it.
+- `2c664cd` fix(motion): under reduced motion, `base.css` gave every element a 0.01 ms transition, and `transition-property` defaults to `all`. So when the image viewer fitted the labels a second time (after the web fonts loaded), it read the old position of a moved number and left two numbers on top of each other at 375 px. Under load the label test failed 2 of 12 runs, and an instrumented replay over every labelled page failed 4 of 16. With `0s` the label test passed 16 of 16 runs in Chromium and 8 of 8 in WebKit, and the replay 24 of 24.
+- `b102332` test(keyboard): under heavy load headless Chromium held `requestAnimationFrame` for 22 s during the tab walk on `it/e/apoptosis/`, so one key press hit the 30 s timeout (the reading fixer saw the same stall on `en/atlas/`). A 500 ms timer now bounds that wait; `keyboard.spec.ts` passed 180 of 180 runs before the change and 90 of 90 after it.
+
+The local copy of the reference text had about 1,000 garbled lines (characters shifted by −29). They are now decoded, so no-verbatim also compares against text it could not read before. On the first run it found two shared 12-word runs in `docs/ledger/p01-necrosis.yaml` (claim c021), and `w1b/science-docs` reworded that claim.
+
+Verification on `main` after the merges and the two fixes:
+
+| Command | Result |
+|---|---|
+| `npm run check` | 0 errors, 0 warnings, 0 hints (204 files) |
+| `npm test` | 212 passed, 2 skipped |
+| `npm run build` | 320 pages; Pagefind 286 pages; `sw-manifest: shell 60 files, 2 offline pack(s)`; the known chunk-size and `[EVAL]` warnings from the lazy 3Dmol chunk |
+| `npm run test:dist` | 17/17 passed |
+| `npm run contrast` | all 94 pairs pass |
+| `npm run guard` | ok (698 checked files) |
+| `npm run licenses` | 570 packages, 9 documented exceptions; `dependencies.json` unchanged |
+| `NO_VERBATIM_WORK=…/.work npm run no-verbatim` | 306 files, 0 failed |
+| `E2E_ENGINES=chromium,webkit npx playwright test --workers=3` | 775 passed, 235 skipped by design, 0 failed (final run, 7.2 min). The two runs before it each had one failure: the label overlap test (fixed in `2c664cd`) and a keyboard walk stalled by a 22 s rAF wait (bounded in `b102332`) |
+| `npm run test:e2e:study` / `npm run test:e2e:offline` | 27 passed, 3 skipped / 6/6 passed |
+| `npm run lighthouse` | `/it/`, `/en/atlas/`, `/it/about/`: performance 99, 100 in the other three. `node scripts/lighthouse-assert.mjs` on six v2 pages: performance 90 (`/it/e/apoptosis/`), 93, 94, 97, 97 and 99; 100 in the other three; no CLS loss |
+| `E2E_ENGINES=firefox npx playwright test --grep @smoke` | not run: Firefox is not installed locally, and the browser download needs the owner's approval |
+| public-naming grep over tracked files, `dist/` and the new commit messages | 0 hits |
+
+Open after the review fixes:
+
+- Not pushed: CI, deploy, the live smoke test and the first WHO watch run on GitHub have not run on these commits.
+- Some claims were checked only by their writer or fixer: 4 on the pathway, 21 on p01 (including the new c057–c063) and 212 older rows in 16 g01 ledgers. The Method page states these counts, and REVIEW_QUEUE has 3 new rows for a human.
+- The text inside the 5 g01 SVG diagrams is in English only; caption and alt are bilingual.
+- Oral page: once exam questions are published (V2.2), a returning learner's history fills in after load and can move the footer (CLS 0.00066 at 1920 × 1080 in the drafts build; production shows the static empty state).
+- Import checks every field only for oral sessions. Other stores check only `id` and `updated`, so a crafted file with a valid checksum could still break the Me dashboard.
+- Focus falls to `<body>` after "Next" in image training and in the chain exercise (found by reading the code, not fixed).
+- On phones the top bar, chip strip and tab bar take 186 px (232 px at the largest text size). Touch targets are 2.75rem, which is 39.6 px at A−.
+- Structure files have no content hash in their names. Until a returning visitor accepts the worker update, the old worker serves its cached copy.
+- `npm audit` lists 21 moderate advisories, all in development tools. `ci.yml` pins actions by tag, not by SHA.
+- `/it/e/apoptosis/` scores exactly 90 for Lighthouse mobile performance (FCP and LCP from 134 KB of HTML and render-blocking CSS).
+- OpenSeadragon is planned only (D059).

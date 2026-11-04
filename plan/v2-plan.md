@@ -33,6 +33,7 @@ Public-naming rule: no teacher names, channel names, course codes or university 
 - [ ] Image viewer: pan buttons (WCAG 2.5.7), sharper zoom via srcset, stain/section switch (`group`), magnification presets, scale bar only with `mpp` — done except the magnification presets (merged 2026-11-04)
 - [x] Service worker: exclude lazy vendor chunks, with a test
 - [x] WHO watch: weekly GitHub Action + script + human-edited baseline + tests; `classification` block on entities with "newer edition exists" notice; refresh SOURCES §2 and VERIFIED_FACTS
+- [x] Adversarial review of V2.1: 49 findings (4 blockers, 14 major, 31 minor) fixed and merged 2026-11-04 (five `w1b/*` branches plus one integration fix); not pushed yet, see PROGRESS.md
 
 ### V2.2 g01 enrichment (content) — workflow W2
 - [ ] Per entity: 3–6 possible oral questions with model answers, Come si studia, extra original diagrams where they add understanding
