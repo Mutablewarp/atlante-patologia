@@ -60,6 +60,29 @@ test('no AI badge on entity and pattern pages; the footer carries the AI line @s
   await expect(page.locator('footer [data-ai-notice]')).toBeVisible();
 });
 
+test('the medical disclaimer is in the footer and the first-launch notice, not repeated on the home page', async ({ page }) => {
+  for (const [path, short, notice] of [
+    ['it/', 'Solo a scopo didattico', 'Non è uno strumento clinico'],
+    ['en/', 'For education only', 'It is not a clinical tool'],
+  ] as const) {
+    await page.goto(path);
+    await expect(page.locator('footer'), path).toContainText(short);
+    await expect(page.locator('.first-notice'), path).toContainText(notice);
+    await expect(page.locator('main'), path).not.toContainText(short);
+  }
+});
+
+test('the atlas links each cross-cutting pattern on one readable line, with its summary below', async ({ page }) => {
+  await page.goto('it/atlas/');
+  const link = page.locator('.pattern-list li > a').first();
+  await expect(link).toHaveText('Tipi di necrosi');
+  const [lines, width] = await link.evaluate((a) => [a.getClientRects().length, a.getBoundingClientRect().width]);
+  expect(lines).toBe(1);
+  expect(width).toBeGreaterThan(80); // it was squeezed into a 26-37 px column, broken mid-word
+  const summary = (await page.locator('.pattern-list li > span').first().boundingBox())!;
+  expect(summary.y).toBeGreaterThan((await link.boundingBox())!.y);
+});
+
 test('sections are open by default, end with "Continue", and the reading controls still work @smoke', async ({ page }) => {
   await page.goto(ENTITY);
   const toggles = page.locator('[data-section-toggle]');
