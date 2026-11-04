@@ -31,6 +31,10 @@ Add an exception only for a package that never ships to the browser, and always 
 
 570 packages (+6: `3dmol` 2.5.5 BSD-3-Clause, `pako` 2.2.0 and 1.0.11 `(MIT AND Zlib)`, `iobuffer` 5.4.0, `netcdfjs` 3.0.0 and `upng-js` 2.1.0, all MIT). Same 9 documented exceptions. No package failed.
 
+## 2026-11-04 run (macOS, arm64), after the security updates
+
+570 packages. `npm audit` high advisories fixed inside the existing semver ranges (`npm update zod undici`, no direct dependency changed): `zod` 4.6.5 → 4.6.7 and `undici` 8.11.2 → 8.12.3 (production tree, build time only), `undici` 6.29.0 → 6.29.1 (development). All MIT. Same 9 documented exceptions. No package failed. See [VERIFIED_FACTS.md](../VERIFIED_FACTS.md) §A.
+
 ## Compatibility note
 
 What the browser actually downloads is Preact (MIT), @preact/signals (MIT), ts-fsrs (MIT), idb (ISC), the Pagefind search runtime (MIT) and the Atkinson Hyperlegible Next and Fraunces fonts (OFL-1.1, credited with their license on the Credits page). Only when a learner presses “Load the 3D view” does the browser also download 3Dmol.js (BSD-3-Clause, with the GLmol, three.js and jQuery notices in its licence file) and the code it bundles: pako (MIT, with the zlib notice), iobuffer, netcdfjs and upng-js (MIT). Their full notices are reproduced on the Licences page, as BSD-3-Clause and MIT require. All are permissive and compatible with the project's MIT code license; the fonts keep their own OFL terms, which allow bundling with any software. Build-time tools (Astro, Vite, sharp, lightningcss) process the site but their code is not redistributed in `dist/`, so their licenses place no conditions on the published site. Site content is licensed separately under CC BY-SA 4.0 (see `LICENSE-CONTENT.md`).
