@@ -24,9 +24,14 @@ const store = {
 const THEMES = ['system', 'light', 'dark'] as const;
 type Theme = (typeof THEMES)[number];
 const themeBtn = document.querySelector<HTMLButtonElement>('[data-theme-toggle]');
+// Browser chrome colour (theme-color) follows a forced theme, not only the system one.
+const themeMetas = [...document.querySelectorAll<HTMLMetaElement>('meta[name="theme-color"]')].map((m) => [m, m.content] as const);
 function applyTheme(theme: Theme) {
   if (theme === 'system') delete root.dataset.theme;
   else root.dataset.theme = theme;
+  // A forced theme paints both metas with its colour; 'system' restores each one.
+  const forced = themeMetas.find(([m]) => m.media.includes(`(prefers-color-scheme: ${theme})`))?.[1];
+  themeMetas.forEach(([m, original]) => (m.content = forced ?? original));
   if (!themeBtn) return;
   const labels = JSON.parse(themeBtn.dataset.labels ?? '{}') as Record<Theme, string>;
   themeBtn.setAttribute('aria-label', (themeBtn.dataset.template ?? '{mode}').replace('{mode}', labels[theme]));
@@ -40,6 +45,57 @@ themeBtn?.addEventListener('click', () => {
   store.set('ap-theme', next);
   applyTheme(next);
 });
+
+// ── Reading size A-/A+: root class (applied before paint by BaseLayout) ─
+const SIZES = ['s', 'm', 'l', 'xl'] as const;
+type Size = (typeof SIZES)[number];
+const sizeGroups = document.querySelectorAll<HTMLElement>('[data-text-size]');
+function applySize(size: Size, announce = false) {
+  SIZES.forEach((s) => root.classList.toggle(`text-${s}`, s === size && s !== 'm'));
+  const i = SIZES.indexOf(size);
+  sizeGroups.forEach((g) => {
+    g.querySelectorAll<HTMLButtonElement>('[data-text-step]').forEach((b) => {
+      const end = b.dataset.textStep === '-1' ? i === 0 : i === SIZES.length - 1;
+      // aria-disabled, not disabled: the focused button keeps focus at the end of the range.
+      if (end) b.setAttribute('aria-disabled', 'true');
+      else b.removeAttribute('aria-disabled');
+    });
+    const status = g.querySelector('[data-text-size-status]');
+    if (status && announce) status.textContent = (g.dataset.status ?? '').replace('{n}', String(i + 1)).replace('{total}', String(SIZES.length));
+  });
+}
+const savedSize = store.get('ap-text');
+applySize((SIZES as readonly string[]).includes(savedSize ?? '') ? (savedSize as Size) : 'm');
+sizeGroups.forEach((g) =>
+  g.addEventListener('click', (ev) => {
+    const btn = (ev.target as Element).closest<HTMLButtonElement>('[data-text-step]');
+    if (!btn || btn.getAttribute('aria-disabled') === 'true') return;
+    const current = SIZES.find((s) => root.classList.contains(`text-${s}`)) ?? 'm';
+    const next = SIZES[Math.min(SIZES.length - 1, Math.max(0, SIZES.indexOf(current) + Number(btn.dataset.textStep)))]!;
+    store.set('ap-text', next);
+    applySize(next, true);
+  }),
+);
+
+// ── Reading progress (entity and pattern pages): transform only, no layout ─
+const progress = document.querySelector<HTMLElement>('[data-read-progress]');
+const article = progress?.closest<HTMLElement>('article');
+if (progress && article) {
+  let queued = false;
+  const update = () => {
+    queued = false;
+    const r = article.getBoundingClientRect();
+    const p = Math.min(1, Math.max(0, -r.top / Math.max(1, r.height - innerHeight)));
+    progress.style.transform = `scaleX(${p})`;
+  };
+  const queue = () => {
+    if (!queued) requestAnimationFrame(update);
+    queued = true;
+  };
+  addEventListener('scroll', queue, { passive: true });
+  addEventListener('resize', queue, { passive: true });
+  update();
+}
 
 // ── Sidebar collapse (desktop) ──────────────────────────────────────────
 const sideBtn = document.querySelector<HTMLButtonElement>('[data-sidebar-toggle]');

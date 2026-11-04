@@ -54,8 +54,9 @@ const fullTitle = title === SITE_NAME ? SITE_NAME : `${title} · ${SITE_NAME}`;
     {!noindex && <link rel="canonical" href={abs(path)} />}
     {alternates && LANGS.map((l) => <link rel="alternate" hreflang={l} href={abs(alternate(l, path))} />)}
     {alternates && <link rel="alternate" hreflang="x-default" href={abs(url())} />}
+    {/* = --paper in tokens.css; shell.ts follows a forced theme */}
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f1e7" />
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0e1120" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1c21" />
     <meta name="color-scheme" content="light dark" />
     <link rel="icon" href={url('favicon.svg')} type="image/svg+xml" />
     <link rel="apple-touch-icon" href={url('icons/apple-touch-icon.png')} />
@@ -76,6 +77,8 @@ const fullTitle = title === SITE_NAME ? SITE_NAME : `${title} · ${SITE_NAME}`;
           if (s.getItem('ap-disclaimer') === '1') d.dataset.disclaimerAck = '';
           if (s.getItem('ap-sidebar') === 'collapsed') d.dataset.sidebar = 'collapsed';
           if (s.getItem('ap-mode') === 'quick') d.dataset.mode = 'quick';
+          var z = s.getItem('ap-text');
+          if (z === 's' || z === 'l' || z === 'xl') d.classList.add('text-' + z);
         } catch (e) {}
       })();
     </script>
