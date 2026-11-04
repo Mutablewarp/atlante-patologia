@@ -97,18 +97,31 @@ const tocLinks = new Map(
   [...document.querySelectorAll<HTMLAnchorElement>('.section-toc a[href^="#"]')].map((a) => [a.hash.slice(1), a]),
 );
 const spySections = [...document.querySelectorAll<HTMLElement>('.entity-section')];
-let spyQueued = false;
-function spy() {
-  spyQueued = false;
-  // The section being read: the last one whose top has passed 30% of the viewport.
-  const line = window.innerHeight * 0.3;
-  const current = spySections.filter((s) => s.offsetParent !== null && s.getBoundingClientRect().top <= line).at(-1);
-  tocLinks.forEach((a, id) => (current?.id === id ? a.setAttribute('aria-current', 'true') : a.removeAttribute('aria-current')));
+const strip = document.querySelector<HTMLElement>('.section-toc ol');
+const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
+const inBand = new Set<Element>();
+let currentId: string | undefined;
+function markCurrent(id: string | undefined) {
+  if (id === currentId) return;
+  currentId = id;
+  tocLinks.forEach((a, key) => (key === id ? a.setAttribute('aria-current', 'true') : a.removeAttribute('aria-current')));
+  // Phone/tablet chip strip: bring the current chip to the middle (the strip scrolls sideways only).
+  const a = id ? tocLinks.get(id) : undefined;
+  if (!a || !strip || strip.scrollWidth <= strip.clientWidth) return;
+  const delta = a.getBoundingClientRect().left - strip.getBoundingClientRect().left - (strip.clientWidth - a.offsetWidth) / 2;
+  strip.scrollBy({ left: delta, behavior: reduceMotion.matches ? 'auto' : 'smooth' });
 }
-window.addEventListener('scroll', () => {
-  if (!spyQueued) requestAnimationFrame(spy);
-  spyQueued = true;
-}, { passive: true });
-spy();
+// The section being read: the last one crossing the top 30% of the viewport. Hidden
+// sections (Quick mode) never intersect; past the last section the last one stays current.
+const spy = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((e) => (e.isIntersecting ? inBand.add(e.target) : inBand.delete(e.target)));
+    const current = spySections.filter((s) => inBand.has(s)).at(-1);
+    if (current) markCurrent(current.id);
+    else if (spySections[0] && spySections[0].getBoundingClientRect().top > innerHeight * 0.3) markCurrent(undefined);
+  },
+  { rootMargin: '0px 0px -70% 0px' },
+);
+spySections.forEach((s) => spy.observe(s));
 
 export {};

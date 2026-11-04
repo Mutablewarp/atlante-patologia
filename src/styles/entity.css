@@ -1,4 +1,35 @@
-/* Entity page: header, sticky section chips (phone/tablet), right-hand TOC (desktop). */
+/*
+ * Reading pages (entity, pattern): header, reading-progress bar, sticky section
+ * chips (phone/tablet), right-hand TOC (desktop), study callouts, tables.
+ * Motion is transform-only and off under prefers-reduced-motion (base.css).
+ */
+
+/* Thin reading-progress bar along the top edge; scaled by shell.ts */
+.read-progress {
+  position: fixed;
+  top: env(safe-area-inset-top, 0px);
+  left: 0;
+  right: 0;
+  z-index: 40;
+  height: 3px;
+  pointer-events: none;
+}
+.read-progress > span {
+  display: block;
+  height: 100%;
+  background: var(--eosin);
+  transform: scaleX(0);
+  transform-origin: 0 50%;
+}
+
+/* Phone/tablet: one centred reading column */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .entity,
+  .pattern {
+    max-width: 46rem;
+    margin-inline: auto;
+  }
+}
 
 .entity-head {
   margin-bottom: var(--space-5);
@@ -10,18 +41,19 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-1) var(--space-4);
-  margin: 0 0 var(--space-3);
+  margin: 0 0 var(--space-4);
   color: var(--ink-muted);
+  line-height: 1.45;
 }
-.entity-names div {
-  display: flex;
-  gap: var(--space-1);
+/* Label and value run on as one line of text: no narrow hanging column on phones */
+.entity-names :is(dt, dd) {
+  display: inline;
 }
 .entity-names dt {
   font-weight: 700;
 }
 .entity-names dt::after {
-  content: ':';
+  content: ': ';
 }
 .entity-names dd {
   margin: 0;
@@ -100,7 +132,8 @@
   z-index: 10;
   margin: 0 calc(-1 * var(--gutter)) var(--space-4);
   padding: var(--space-2) var(--gutter);
-  background: color-mix(in srgb, var(--paper) 94%, transparent);
+  background: color-mix(in srgb, var(--paper) 96%, transparent);
+  backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--rule);
 }
 .section-toc .toc-title {
@@ -110,26 +143,43 @@
   display: flex;
   gap: var(--space-2);
   overflow-x: auto;
+  overscroll-behavior-x: contain;
   list-style: none;
   margin: 0;
-  padding: 0 0 var(--space-1);
-  scrollbar-width: thin;
+  /* room for the focus ring inside the scroller */
+  padding: 4px 4px var(--space-1);
+  scrollbar-width: none;
+}
+.section-toc ol::-webkit-scrollbar {
+  display: none;
 }
 .section-toc a {
   display: inline-flex;
   align-items: center;
-  min-height: 2rem;
+  min-height: 2.25rem;
   padding: 0 var(--space-3);
   border-radius: 999px;
   border: 1px solid var(--border-strong);
   background: var(--surface);
+  color: var(--ink);
   white-space: nowrap;
   font-size: var(--step--1);
   text-decoration: none;
 }
-/* Sections sit below the sticky chip row: keep focus/anchors visible (SC 2.4.11) */
+/* Current chip: fill and border only; a bolder weight would widen it and shift its neighbours (CLS) */
+@media (max-width: 1023px) {
+  .section-toc a,
+  .section-toc a[aria-current] {
+    font-weight: 600;
+  }
+  .section-toc a[aria-current] {
+    background: var(--hema-soft);
+  }
+}
+/* Sections sit below the sticky chip row: keep focus/anchors visible (SC 2.4.11).
+   html scroll-padding already clears the top bar; scroll-margin adds only the chip row. */
 .entity {
-  --entity-scroll: calc(var(--topbar-h) + var(--chips-h) + var(--space-4));
+  --entity-scroll: var(--chips-h);
 }
 .entity-section,
 .entity [id] {
@@ -194,9 +244,123 @@ html:not(.js) .section-toggle {
 .section-body {
   padding-bottom: var(--space-4);
 }
-.section-body table {
-  display: block;
-  overflow-x: auto;
+
+/* "Continue: next section" at the end of each section */
+.section-next {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  margin: var(--space-5) 0 0;
+}
+.section-next a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 2.75rem;
+  padding: 0 var(--space-1);
+  font-size: var(--step--1);
+  font-weight: 600;
+  text-decoration: none;
+}
+.section-next a:hover {
+  text-decoration: underline;
+}
+[data-mode='quick'] .section-next .next-full,
+:root:not([data-mode='quick']) .section-next .next-quick {
+  display: none;
+}
+
+/* Tables (differential): scroll sideways inside their box, row labels stick on phones */
+.section-body .table-scroll {
+  --cell-bg: var(--surface);
+  overscroll-behavior-x: contain;
+  font-size: var(--step--1);
+}
+.section-body .table-scroll table {
+  min-width: 100%;
+  margin: 0;
+}
+.section-body .table-scroll :is(th, td) {
+  line-height: 1.5;
+}
+.section-body .table-scroll thead th {
+  --cell-bg: var(--surface-2);
+  background: var(--cell-bg);
+}
+.section-body .table-scroll tr:last-child > * {
+  border-bottom: 0;
+}
+@media (max-width: 599px) {
+  .section-body .table-scroll :is(th, td) {
+    min-width: 10rem;
+  }
+  .section-body .table-scroll :is(th, td):first-child {
+    position: sticky;
+    left: 0;
+    z-index: 1;
+    min-width: 7rem;
+    max-width: 8.5rem;
+    background: var(--cell-bg);
+    box-shadow: 1px 0 0 var(--rule);
+  }
+}
+
+/* Figures: edge to edge on phones, so detail is as large as the screen allows */
+@media (max-width: 599px) {
+  .section-body .viewer-figure {
+    margin-inline: calc(-1 * var(--gutter));
+    max-width: none;
+  }
+  .section-body .viewer-stage {
+    border-radius: 0;
+  }
+  .section-body .viewer-figure > :not(ap-image-viewer),
+  .section-body .viewer-figure ap-image-viewer > :not(.viewer-stage) {
+    margin-inline: var(--gutter);
+  }
+}
+
+/* Study callouts: calm tinted cards, one stain accent each */
+.entity-section[data-callout] {
+  margin: var(--space-5) 0;
+  padding: 0 var(--space-5) var(--space-1);
+  border: 0;
+  border-left: 4px solid var(--accent);
+  border-radius: var(--radius-m);
+  background: var(--tint);
+}
+.entity-section[data-callout] + .entity-section {
+  border-top: 0;
+}
+.entity-section[data-callout] .section-toggle {
+  color: var(--ink);
+}
+.entity-section[data-callout] .chevron {
+  border-color: var(--accent);
+}
+.entity-section[data-callout] .table-scroll {
+  --cell-bg: var(--tint);
+}
+.entity-section[data-callout='high-yield'] {
+  --accent: var(--hema);
+  --tint: var(--hema-soft);
+}
+.entity-section[data-callout='traps'] {
+  --accent: var(--saffron);
+  --tint: var(--saffron-soft);
+}
+.entity-section[data-callout='mnemonics'] {
+  --accent: var(--masson);
+  --tint: var(--masson-soft);
+}
+.entity-section[data-callout='quick-check'] {
+  --accent: var(--eosin);
+  --tint: var(--eosin-soft);
+}
+@media (max-width: 599px) {
+  .entity-section[data-callout] {
+    padding-inline: var(--space-4);
+  }
 }
 
 /* Quick mode: only quick sections; definition shows its first paragraph */
@@ -204,7 +368,7 @@ html:not(.js) .section-toggle {
 [data-mode='quick'] .section-toc li[data-quick='false'] {
   display: none;
 }
-[data-mode='quick'] #definition .section-body > :not(:first-child) {
+[data-mode='quick'] #definition .section-body > :not(:first-child, .section-next) {
   display: none;
 }
 
@@ -212,16 +376,20 @@ html:not(.js) .section-toggle {
   padding-left: var(--space-5);
 }
 .quick-check li {
-  margin-bottom: var(--space-3);
+  margin-bottom: var(--space-4);
 }
 .qc-q {
   font-weight: 600;
   margin-bottom: var(--space-1);
 }
 .quick-check summary {
+  padding-block: var(--space-2);
   cursor: pointer;
-  color: var(--hema);
-  min-height: 1.5rem;
+  color: var(--hema-ink);
+  font-weight: 600;
+}
+.quick-check details[open] > p {
+  margin-top: 0;
 }
 
 .related {
@@ -292,13 +460,17 @@ html:not(.js) .section-toggle {
     padding: 0;
     border: 0;
     background: none;
+    color: var(--ink-muted);
     white-space: normal;
+  }
+  .section-toc a:hover {
+    color: var(--hema);
   }
   .entity-body {
     grid-column: 1;
     grid-row: 1;
   }
   .entity {
-    --entity-scroll: calc(var(--topbar-h) + var(--space-5));
+    --entity-scroll: 0px;
   }
 }

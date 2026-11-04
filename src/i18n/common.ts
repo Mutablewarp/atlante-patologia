@@ -32,6 +32,17 @@ export const tCommon = defineStrings({
     it: 'Solo a scopo didattico: non usare per diagnosi o decisioni terapeutiche. Può contenere errori.',
     en: 'For education only: not for diagnosis or treatment decisions. It may contain errors.',
   },
+  // EU AI Act art. 50(4): one disclosure line on every page (owner decision O11)
+  aiNotice: {
+    it: 'Testi redatti con l’aiuto dell’intelligenza artificiale e controllati sulle fonti citate; possono contenere errori.',
+    en: 'Texts drafted with AI assistance and checked against the cited sources; they may contain errors.',
+  },
+  aiNoticeLink: { it: 'Come nascono i contenuti', en: 'How the content is made' },
+  // Reading size (A-/A+)
+  textSize: { it: 'Dimensione del testo', en: 'Text size' },
+  textSmaller: { it: 'Testo più piccolo', en: 'Smaller text' },
+  textLarger: { it: 'Testo più grande', en: 'Larger text' },
+  textSizeNow: { it: 'Dimensione del testo: {n} di {total}', en: 'Text size: {n} of {total}' },
   reportError: { it: 'Segnala un errore', en: 'Report an error' },
   footerAbout: { it: 'Informazioni', en: 'About' },
   footerMethod: { it: 'Metodo', en: 'Method' },

@@ -41,21 +41,23 @@ const lang = Astro.params.lang as Lang;
       </ol>
       <h2>Uso dell’intelligenza artificiale</h2>
       <p>
-        Testi, domande e schemi sono prodotti con l’assistenza di modelli di intelligenza artificiale e controllati con il
-        processo descritto sopra. L’IA può sbagliare, anche in modo convincente: per questo ogni scheda mostra il suo
-        stato di revisione.
+        Testi, domande e schemi sono redatti con l’aiuto di modelli di intelligenza artificiale e controllati sulle fonti
+        citate con il processo descritto sopra. L’IA può sbagliare, anche in modo convincente: per questo una riga in
+        fondo a ogni pagina lo ricorda e rimanda qui.
       </p>
       <h2>Che cosa significa lo stato di revisione</h2>
       <dl>
-        <dt><strong>Generato con IA, non ancora revisionato</strong></dt>
+        <dt><strong>Registro delle affermazioni</strong></dt>
+        <dd>Ogni affermazione di fatto ha una voce nel registro: fonte, pagina ed esito del controllo.</dd>
+        <dt><strong>Verifica automatica indipendente</strong></dt>
         <dd>
-          La scheda ha superato i controlli automatici e la verifica delle affermazioni, ma nessun esperto umano l’ha
-          ancora letta per intero.
+          Un secondo agente, separato da quello che scrive, ricontrolla ogni affermazione sul riferimento. Una scheda con
+          affermazioni contraddette non viene pubblicata.
         </dd>
-        <dt><strong>Revisionato da un esperto</strong></dt>
+        <dt><strong>Nessuna revisione di esperti, salvo dove indicato</strong></dt>
         <dd>
-          Una persona competente, indicata per nome, ha letto e approvato la scheda. Solo un revisore umano può assegnare
-          questo stato.
+          Finora nessun esperto umano ha letto per intero le schede. Fanno eccezione solo quelle con il contrassegno
+          «Revisionato da un esperto», che riporta il nome del revisore: solo una persona può assegnarlo.
         </dd>
       </dl>
       <h2>Limiti</h2>
@@ -92,15 +94,24 @@ const lang = Astro.params.lang as Lang;
       </ol>
       <h2>Use of artificial intelligence</h2>
       <p>
-        Texts, questions and diagrams are produced with the help of AI models and checked with the process above. AI can
-        be wrong, sometimes convincingly so: that is why every card shows its review status.
+        Texts, questions and diagrams are drafted with the help of AI models and checked against the cited sources with the
+        process above. AI can be wrong, sometimes convincingly so: that is why a line at the bottom of every page says so
+        and links here.
       </p>
       <h2>What the review status means</h2>
       <dl>
-        <dt><strong>AI-generated, not yet reviewed</strong></dt>
-        <dd>The card passed the automated checks and the claim verification, but no human expert has read all of it yet.</dd>
-        <dt><strong>Expert-reviewed</strong></dt>
-        <dd>A qualified person, named on the card, has read and approved it. Only a human reviewer can set this status.</dd>
+        <dt><strong>Claim ledger</strong></dt>
+        <dd>Every factual claim has an entry in the ledger: source, page and result of the check.</dd>
+        <dt><strong>Independent automated verification</strong></dt>
+        <dd>
+          A second agent, separate from the one that writes, checks each claim against the reference again. A card with a
+          contradicted claim is not published.
+        </dd>
+        <dt><strong>No expert review yet, unless marked</strong></dt>
+        <dd>
+          No human expert has read the cards in full so far. The only exceptions carry the “Expert-reviewed” mark with the
+          reviewer’s name: only a person can set it.
+        </dd>
       </dl>
       <h2>Limits</h2>
       <ul>

@@ -1,0 +1,25 @@
+---
+/**
+ * A-/A+ reading size (4 steps). shell.ts stores the step in localStorage;
+ * BaseLayout sets the root class before first paint, so nothing jumps.
+ */
+import type { Lang } from '../../i18n/index.ts';
+import { tCommon } from '../../i18n/common.ts';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+const t = (k: Parameters<typeof tCommon>[1]) => tCommon(lang, k);
+---
+
+<div class="text-size js-only" role="group" aria-label={t('textSize')} data-text-size data-status={t('textSizeNow')}>
+  {/* The name starts with the visible "A−"/"A+" (WCAG 2.5.3 label in name) */}
+  <button type="button" class="btn btn-small" data-text-step="-1" title={t('textSmaller')}>
+    <span class="ts-a ts-a-small">A−</span><span class="visually-hidden"> {t('textSmaller')}</span>
+  </button>
+  <button type="button" class="btn btn-small" data-text-step="1" title={t('textLarger')}>
+    <span class="ts-a">A+</span><span class="visually-hidden"> {t('textLarger')}</span>
+  </button>
+  <span class="visually-hidden" role="status" data-text-size-status></span>
+</div>

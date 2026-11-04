@@ -8,6 +8,7 @@ import { langPath } from '../../lib/url.ts';
 import type { SiteData } from '../../lib/content.ts';
 import { tHz } from '../../i18n/horizontal.ts';
 import ClassificationNote from './ClassificationNote.astro'; // v2/who-watch: WHO classification line
+import TextSize from '../nav/TextSize.astro';
 
 interface Props {
   lang: Lang;
@@ -56,15 +57,14 @@ const synonyms = [...n.synonyms[lang], ...n.synonyms[other]];
   </ul>
 
   <ul class="badges">
-    <li>
-      {
-        entity.reviewStatus === 'expert-reviewed' ? (
+    {/* No per-page AI badge (O11): the footer and the Method page carry the AI notice. */}
+    {
+      entity.reviewStatus === 'expert-reviewed' && (
+        <li>
           <span class="badge badge-published">✓ {t('reviewExpert')}{entity.reviewedBy && ` · ${entity.reviewedBy.name}`}</span>
-        ) : (
-          <span class="badge badge-eosin">⚠︎ {t('reviewUnreviewed')}</span>
-        )
-      }
-    </li>
+        </li>
+      )
+    }
     <li><span class="badge">{fmt(t('updated'), { date: formatDate(lang, entity.lastUpdated) })}</span></li>
     {entity.editionDependent && <li><span class="badge">◷ {t('editionDependent')}</span></li>}
   </ul>
@@ -82,5 +82,6 @@ const synonyms = [...n.synonyms[lang], ...n.synonyms[other]];
     <button type="button" class="btn btn-small" data-recall-toggle aria-pressed="false">{tHz(lang, 'recallToggle')}</button>
     <a class="btn btn-small" href={langPath(lang, `compare/?ids=${entity.id}`)}>{tHz(lang, 'compareWith')}</a>
     <button type="button" class="btn btn-small" data-print>{t('print')}</button>
+    <TextSize lang={lang} />
   </div>
 </header>

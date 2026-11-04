@@ -60,6 +60,19 @@ const crumbs = [
   { label: entity.names[lang] },
 ];
 const toc = [...SECTIONS, QUICK_CHECK];
+/** "Continue" targets after section i: the next one in full mode and, if different, the next one in quick mode. */
+const nextOf = (i: number) => {
+  const full = toc[i + 1];
+  const quick = toc.slice(i + 1).find((s) => s.quick);
+  return { full, quick: toc[i]!.quick && quick?.id !== full?.id ? quick : undefined };
+};
+const CALLOUTS = new Set(['high-yield', 'traps', 'mnemonics']);
+const attr = (v: string) => v.replace(/&/g, '&amp;').replace(/"/g, '&quot;');
+/** Markdown tables scroll inside a labelled, focusable region (WCAG 2.1.1, 1.4.10). */
+const wrapTables = (html: string, section: string) =>
+  html
+    .replace(/<table>/g, `<div class="table-scroll" role="region" tabindex="0" aria-label="${attr(fmt(t('tableOf'), { section }))}"><table>`)
+    .replace(/<\/table>/g, '</table></div>');
 const imgs = await imageById();
 const imagesIn = (section: string) => entity.images.filter((i) => SECTION_FOR_ROLE[i.role] === section);
 const entityPatterns = await patternsForEntity(id);
@@ -100,6 +113,7 @@ const contexts = LENSES.flatMap((lens) =>
     ))
   }
   <article class="entity" data-entity={id}>
+    <div class="read-progress js-only" aria-hidden="true"><span data-read-progress></span></div>
     {entity.status === 'draft' && <p class="notice notice-caution draft-banner" role="note">{t('draftBanner')}</p>}
     <EntityHeader lang={lang} entity={entity} data={data} />
     <EntityActions lang={lang} entity={entity} />
@@ -133,11 +147,12 @@ const contexts = LENSES.flatMap((lens) =>
         }
 
         {
-          SECTIONS.map((s) => (
+          SECTIONS.map((s, i) => (
             <section
               class="entity-section"
               id={s.id}
               data-quick={String(s.quick)}
+              data-callout={CALLOUTS.has(s.id) ? s.id : undefined}
               data-print={(PRINT_SECTIONS as readonly string[]).includes(s.id) ? '' : undefined}
               aria-labelledby={`${s.id}-title`}
             >
@@ -152,14 +167,28 @@ const contexts = LENSES.flatMap((lens) =>
                 <button type="button" class="btn btn-small" data-recall-reveal>{tHz(lang, 'recallReveal')}</button>
               </div>
               <div class="section-body prose" id={`${s.id}-body`}>
-                <Fragment set:html={split.sections.get(s.id) ?? ''} />
-                {imagesIn(s.id).map((i) => <ImageViewer lang={lang} image={imgs.get(i.id)} id={i.id} />)}
+                <Fragment set:html={wrapTables(split.sections.get(s.id) ?? '', s.title[lang])} />
+                {imagesIn(s.id).map((img) => <ImageViewer lang={lang} image={imgs.get(img.id)} id={img.id} />)}
+                {
+                  nextOf(i).full && (
+                    <p class="section-next" data-pagefind-ignore>
+                      <a class={nextOf(i).quick ? 'next-full' : undefined} href={`#${nextOf(i).full!.id}`}>
+                        {fmt(t('continueTo'), { section: nextOf(i).full!.title[lang] })} <span aria-hidden="true">↓</span>
+                      </a>
+                      {nextOf(i).quick && (
+                        <a class="next-quick" href={`#${nextOf(i).quick!.id}`}>
+                          {fmt(t('continueTo'), { section: nextOf(i).quick!.title[lang] })} <span aria-hidden="true">↓</span>
+                        </a>
+                      )}
+                    </p>
+                  )
+                }
               </div>
             </section>
           ))
         }
 
-        <section class="entity-section" id={QUICK_CHECK.id} data-quick="true" aria-labelledby="quick-check-title">
+        <section class="entity-section" id={QUICK_CHECK.id} data-quick="true" data-callout="quick-check" aria-labelledby="quick-check-title">
           <h2 id="quick-check-title" class="section-title">
             <button type="button" class="section-toggle" aria-expanded="true" aria-controls="quick-check-body" data-section-toggle>
               <span>{QUICK_CHECK.title[lang]}</span>
