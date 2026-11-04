@@ -1,0 +1,41 @@
+name: WHO watch
+
+# Weekly check of public WHO/IARC metadata against data/who-watch/baseline.json.
+# It only opens issues for human review: it never commits and never edits content.
+# Runbook: docs/WHO_WATCH.md (triage, baseline refresh, re-enabling after 60 idle days).
+on:
+  schedule:
+    - cron: '17 6 * * 1' # Mondays 06:17 UTC; an odd minute avoids the top-of-hour queue
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency:
+  group: who-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          # The token must not sit in .git/config while dependencies are installed.
+          persist-credentials: false
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+          cache: npm
+      # Install scripts are not needed by the parser tests and do not run.
+      - run: npm ci --ignore-scripts
+      - name: Parser tests (saved fixtures, no network)
+        run: npx vitest run --project unit tests/who-watch.test.ts
+      - name: Check sources, open issues
+        run: node scripts/who-watch.mjs
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_REPO: ${{ github.repository }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}

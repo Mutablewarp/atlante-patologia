@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Handwritten fixture: imitates a WordPress RSS 2.0 feed. -->
+<rss version="2.0"><channel>
+  <title>Topic &#8211; Example</title>
+  <item>
+    <title>Publication of the WHO Classification of Tumours, 6th Edition, Volume 9: Alpha Tumours</title>
+    <link>https://example.org/news/alpha/</link>
+    <guid isPermaLink="false">https://example.org/?post_type=news-events&#038;p=101</guid>
+  </item>
+  <item>
+    <title>Awareness Month 2026</title>
+    <guid isPermaLink="false">https://example.org/?post_type=news-events&#038;p=102</guid>
+  </item>
+  <item>
+    <title><![CDATA[ICD-O tables & notes]]></title>
+    <guid isPermaLink="false">https://example.org/?post_type=news-events&#038;p=103</guid>
+  </item>
+</channel></rss>
