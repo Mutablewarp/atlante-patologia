@@ -72,12 +72,7 @@ const sections = (['I', 'II', 'III'] as const).map((s) => ({
     <p><a href={langPath(lang, 'about/roadmap/')}>{t('seeRoadmap')}</a></p>
   </section>
 
-  <aside class="notice" aria-label={tCommon(lang, 'footerDisclaimer')}>
-    <p style="margin:0">
-      {tCommon(lang, 'disclaimerShort')}{' '}
-      <a href={langPath(lang, 'about/disclaimer/')}>{tCommon(lang, 'noticeMore')}</a>
-    </p>
-  </aside>
+  {/* The medical disclaimer is in the footer of every page and in the first-launch notice. */}
 </BaseLayout>
 
 <style>
@@ -114,9 +109,5 @@ const sections = (['I', 'II', 'III'] as const).map((s) => ({
   }
   .section-progress dd {
     margin: 0;
-  }
-  aside.notice {
-    margin-top: var(--space-6);
-    max-width: var(--measure);
   }
 </style>

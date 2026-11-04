@@ -89,6 +89,15 @@ html {
     display: none;
   }
 }
+/* Larger reading sizes (A+) on phones: the name keeps its own size and drops "di Patologia", so it is not cut */
+@media (max-width: 420px) {
+  :root:is(.text-l, .text-xl) .topbar .brand {
+    font-size: 17px;
+  }
+  :root:is(.text-l, .text-xl) .topbar .brand .brand-sub {
+    display: none;
+  }
+}
 .topbar-search {
   display: none;
 }
@@ -437,6 +446,17 @@ main:focus {
 .term-list li > a {
   min-width: 1.5rem; /* WCAG 2.2 target size: short labels such as "Ub" */
 }
+/* Atlas hub, cross-cutting patterns: the link on its own line, the long summary under it */
+.term-list.pattern-list {
+  columns: auto;
+  max-width: var(--measure);
+}
+.pattern-list li {
+  display: block;
+}
+.pattern-list li > span {
+  display: block;
+}
 .term-list .child {
   padding-left: var(--space-4);
 }
@@ -599,6 +619,10 @@ main:focus {
   .topbar-search kbd {
     position: absolute;
     right: 0.9rem;
+    /* Fixed box: the script swaps "Ctrl K" for "⌘ K" on Apple devices after paint (no layout shift) */
+    box-sizing: border-box;
+    width: 4.75em;
+    text-align: center;
   }
 }
 

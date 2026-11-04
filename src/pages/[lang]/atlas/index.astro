@@ -99,7 +99,7 @@ const sections = (['I', 'II', 'III'] as const).map((s) => ({
         <>
           <h3>{tHz(lang, 'patternsTitle')}</h3>
           <p class="muted">{tHz(lang, 'patternsBody')}</p>
-          <ul class="term-list">
+          <ul class="term-list pattern-list">
             {pats.map((p) => (
               <li>
                 <a href={langPath(lang, `pattern/${p.id}/`)}>{p.names[lang]}</a>

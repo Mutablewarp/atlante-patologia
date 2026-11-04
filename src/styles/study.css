@@ -357,6 +357,15 @@
 .hub-due {
   margin: 0;
   font-weight: 700;
+  min-height: calc(var(--leading) * 1em);
+}
+/* Room for the resume card (kicker, title, section) before it is read from IndexedDB */
+.hub-status ap-resume {
+  display: block;
+  min-height: 7rem;
+}
+.hub-status .resume-link {
+  margin-bottom: 0;
 }
 .mode-card h2 {
   margin-top: 0;

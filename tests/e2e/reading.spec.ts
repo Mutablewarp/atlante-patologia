@@ -15,8 +15,8 @@ test.use({ reducedMotion: 'reduce' });
 
 test('no AI badge on entity and pattern pages; the footer carries the AI line @smoke', async ({ page }) => {
   for (const [path, text, method] of [
-    [ENTITY, /Testi redatti con l’aiuto dell’intelligenza artificiale/, /\/it\/about\/method\/$/],
-    [PATTERN, /Texts drafted with AI assistance/, /\/en\/about\/method\/$/],
+    [ENTITY, /Testi generati con l’IA e controllati automaticamente/, /\/it\/about\/method\/$/],
+    [PATTERN, /Texts generated with AI and checked automatically/, /\/en\/about\/method\/$/],
   ] as const) {
     await page.goto(path);
     await expect(page.locator('main'), path).not.toContainText(/Generato con IA|AI-generated|non ancora revisionato|not yet reviewed/);

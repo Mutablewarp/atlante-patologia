@@ -8,8 +8,8 @@ export const tHome = defineStrings({
   },
   status: { it: 'Stato del progetto', en: 'Project status' },
   statusBody: {
-    it: 'Fase 1: la struttura del sito è online. Il primo capitolo, Danno, adattamento e morte cellulare, è in scrittura e verifica: lo pubblichiamo solo quando ogni affermazione è controllata.',
-    en: 'Phase 1: the structure of the site is live. The first chapter, Cell injury, adaptation and death, is being written and checked: it goes online only once every claim has been verified.',
+    it: 'Il primo capitolo, Danno, adattamento e morte cellulare, è online con il sistema di studio. I capitoli successivi seguono il programma e vengono pubblicati solo quando ogni affermazione è controllata.',
+    en: 'The first chapter, Cell injury, adaptation and death, is online with the study system. The next chapters follow the syllabus and go online only once every claim has been checked.',
   },
   startHere: { it: 'Da dove cominciare', en: 'Start here' },
   atlasCardTitle: { it: 'Sfoglia l’atlante', en: 'Browse the atlas' },
