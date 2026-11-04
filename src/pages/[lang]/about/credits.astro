@@ -4,6 +4,7 @@ import Bi from '../../../components/Bi.astro';
 import { langPaths, type Lang } from '../../../i18n/index.ts';
 import { images } from '../../../lib/content.ts';
 import { structureById } from '../../../lib/pathways.ts';
+import { langPath } from '../../../lib/url.ts';
 
 export const getStaticPaths = langPaths;
 const lang = Astro.params.lang as Lang;
@@ -45,11 +46,13 @@ const structs = [...(await structureById()).values()].sort((a, b) => a.pdb.local
         <Bi lang={lang}>
           <p slot="it">
             Dati del Protein Data Bank (RCSB PDB), di pubblico dominio (CC0 1.0); ringraziamo gli autori di ogni struttura.
-            Le immagini statiche e la vista 3D sono rese con 3Dmol.js.
+            Le immagini statiche e la vista 3D sono rese con 3Dmol.js; le sue licenze e quelle delle librerie che include sono nella
+            pagina <a href={langPath(lang, 'about/licenses/#third-party-code')}>Licenze</a>.
           </p>
           <p slot="en">
             Data from the Protein Data Bank (RCSB PDB), in the public domain (CC0 1.0); we credit the authors of each structure.
-            The still images and the 3D view are drawn with 3Dmol.js.
+            The still images and the 3D view are drawn with 3Dmol.js; its licence and those of the libraries it bundles are on the{' '}
+            <a href={langPath(lang, 'about/licenses/#third-party-code')}>Licences</a> page.
           </p>
         </Bi>
         <ul>
@@ -88,9 +91,14 @@ const structs = [...(await structureById()).values()].sort((a, b) => a.pdb.local
   <h2>{lang === 'it' ? 'Software' : 'Software'}</h2>
   <Bi lang={lang}>
     <p slot="it">
-      Il sito è costruito con Astro, Preact e Pagefind; il ripasso a intervalli userà ts-fsrs. Tutti sono software libero con
-      licenze permissive.
+      Il sito è costruito con Astro, Preact e Pagefind; il ripasso a intervalli usa ts-fsrs, i dati di studio sono salvati con
+      idb e la vista 3D usa 3Dmol.js. Tutti sono software libero con licenze permissive (dettagli nella pagina
+      <a href={langPath(lang, 'about/licenses/')}>Licenze</a>).
     </p>
-    <p slot="en">The site is built with Astro, Preact and Pagefind; spaced review will use ts-fsrs. All are free software under permissive licences.</p>
+    <p slot="en">
+      The site is built with Astro, Preact and Pagefind; spaced review uses ts-fsrs, study data is stored with idb and the 3D
+      view uses 3Dmol.js. All are free software under permissive licences (details on the{' '}
+      <a href={langPath(lang, 'about/licenses/')}>Licences</a> page).
+    </p>
   </Bi>
 </AboutPage>

@@ -23,6 +23,8 @@ const notices = [
   { name: 'iobuffer 5.4.0', license: 'MIT', text: pkg('iobuffer/LICENSE') },
   { name: 'netcdfjs 3.0.0', license: 'MIT', text: pkg('netcdfjs/LICENSE') },
   { name: 'upng-js 2.1.0', license: 'MIT', text: pkg('upng-js/LICENSE') },
+  // Vendored inside 3Dmol (src/vendor/mmtf.js) without a licence header; text copied from the upstream repository (rcsb/mmtf-javascript).
+  { name: 'mmtf-javascript 1.0.1', license: 'MIT', text: readFileSync(`${process.cwd()}/docs/licenses/mmtf-javascript-1.0.1.LICENSE`, 'utf8').trim() },
 ];
 ---
 

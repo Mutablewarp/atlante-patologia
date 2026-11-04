@@ -3,6 +3,8 @@
  * page (inline scripts + module scripts + their static imports, gzipped) is
  * ≤ 50 KB on content pages and ≤ 120 KB on study pages. Dynamic imports
  * (the Pagefind bundle on the search page) load on demand and are not counted.
+ * Astro islands count: their component, renderer and before-hydration modules
+ * are fetched on hydration (client:load / idle / visible).
  */
 import { readFileSync, statSync } from 'node:fs';
 import { dirname, join } from 'node:path';
@@ -27,6 +29,9 @@ function staticGraph(file: string, seen = new Set<string>()): Set<string> {
 }
 
 const gz = (s: string | Buffer) => gzipSync(s).length;
+// Shared chunks are counted on many pages: gzip each file once.
+const gzCache = new Map<string, number>();
+const gzFile = (f: string) => gzCache.get(f) ?? gzCache.set(f, gz(readFileSync(f))).get(f)!;
 
 describe('size budget', () => {
   it(`dist/ is smaller than ${TOTAL_MAX / MB} MB`, () => {
@@ -44,13 +49,15 @@ describe('size budget', () => {
       const refs = [
         ...p.html.matchAll(/<script\b[^>]*\ssrc="([^"]+)"/g),
         ...p.html.matchAll(/<link\b[^>]*rel="modulepreload"[^>]*href="([^"]+)"/g),
+        // Attributes of <astro-island> only (each island has several).
+        ...p.html.matchAll(/\s(?:component|renderer|before-hydration)-url="([^"]+)"/g),
       ].map((m) => m[1]!);
       for (const ref of refs) {
         const u = internalUrl(ref, p.url);
         const f = u && resolveFile(u.pathname);
         if (f) staticGraph(f).forEach((x) => files.add(x));
       }
-      const bytes = gz(inline) + [...files].reduce((n, f) => n + gz(readFileSync(f)), 0);
+      const bytes = gz(inline) + [...files].reduce((n, f) => n + gzFile(f), 0);
       const max = isStudy(p.url) ? STUDY_JS_MAX : CONTENT_JS_MAX;
       if (bytes > max) over.push(`${p.url}: ${(bytes / KB).toFixed(1)} KB gz > ${max / KB} KB`);
       if (bytes > heaviest.bytes) heaviest = { url: p.url, bytes };
