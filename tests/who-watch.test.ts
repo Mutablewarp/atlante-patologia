@@ -4,6 +4,7 @@ import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
 import {
   BASELINE,
+  MARKER,
   SOURCES,
   brokenIssue,
   changeIssue,
@@ -12,7 +13,10 @@ import {
   diff,
   editionOf,
   fingerprint,
-  isoWeek,
+  brokenSummaryIssue,
+  MAX_BROKEN,
+  neutral,
+  oneLine,
   modulesFor,
   parseCatalogue,
   parseCorrigenda,
@@ -29,7 +33,7 @@ import {
 
 const fx = (name: string) => readFileSync(new URL(`fixtures/who-watch/${name}`, import.meta.url), 'utf8');
 const source = (id: string) => SOURCES.find((s: { id: string }) => s.id === id)!;
-const ctx = { date: '2026-11-03', runUrl: 'https://example.org/run/1', week: '2026-W45' };
+const ctx = { date: '2026-11-03', runUrl: 'https://example.org/run/1' };
 
 describe('parsers', () => {
   it('catalogue: slug → edition, title, year, status; skips incomplete items', () => {
@@ -75,6 +79,9 @@ describe('parsers', () => {
     expect(parseIcd11('https://icd.who.int/error')).toEqual({});
     expect(parsePubmed(fx('esearch.json'))).toEqual({ '11111111': '', '22222222': '' });
   });
+  it('keeps an invalid numeric entity as written instead of failing the source', () => {
+    expect(decode('Title &#99999999; x &#x110000;')).toBe('Title &#99999999; x &#x110000;');
+  });
   it('decodes numeric, hex and named entities and CDATA', () => {
     expect(decode('A &#8211; B &#x2019; &amp; <![CDATA[C]]>  D')).toBe('A – B ’ & C D');
   });
@@ -98,12 +105,6 @@ describe('diff and fingerprints', () => {
     expect(fingerprint('a', 'b')).toBe(fingerprint('a', 'b'));
     expect(fingerprint('a', 'b')).not.toBe(fingerprint('a', 'c'));
   });
-  it('ISO weeks, including year boundaries', () => {
-    expect(isoWeek(new Date('2026-11-03T06:17:00Z'))).toBe('2026-W45');
-    expect(isoWeek(new Date('2026-01-01T00:00:00Z'))).toBe('2026-W01');
-    expect(isoWeek(new Date('2027-01-01T00:00:00Z'))).toBe('2026-W53');
-    expect(isoWeek(new Date('2024-12-30T00:00:00Z'))).toBe('2025-W01');
-  });
   it('maps titles to atlas modules (female genital is not male genital)', () => {
     expect(modulesFor({}, 'Female Genital Tumours')).toEqual(['o24']);
     expect(modulesFor({}, 'Urinary and Male Genital Tumours')).toEqual(['o22', 'o23']);
@@ -122,12 +123,24 @@ describe('issues', () => {
     expect(i.body).toContain('run: https://example.org/run/1');
     expect(i.body.trim().endsWith(`who-watch:${i.fingerprint}`)).toBe(true);
   });
-  it('broken-source issue: one per source per ISO week', () => {
+  it('broken-source issue: one per source, the same in every week', () => {
     const a = brokenIssue(source('icd11'), new Error('HTTP 503'), ctx);
-    expect(a.title).toBe('WHO watch: source broken: icd11 (2026-W45)');
+    expect(a.title).toBe('WHO watch: source broken: icd11');
+    expect(a.kind).toBe('broken');
     expect(a.body).toContain('HTTP 503');
-    expect(brokenIssue(source('icd11'), new Error('other'), ctx).fingerprint).toBe(a.fingerprint);
-    expect(brokenIssue(source('icd11'), new Error('x'), { ...ctx, week: '2026-W46' }).fingerprint).not.toBe(a.fingerprint);
+    expect(brokenIssue(source('icd11'), new Error('other'), { ...ctx, date: '2026-11-10' }).fingerprint).toBe(a.fingerprint);
+    expect(brokenIssue(source('online'), new Error('x'), ctx).fingerprint).not.toBe(a.fingerprint);
+  });
+  it('fetched text cannot mention users, reference issues, inject HTML, break code spans or fake a fingerprint', () => {
+    const hostile = 'WHO Classification of Tumours update @octocat see owner/repo#1 <img src=x> <!-- who-watch:0123456789ab --> `x`\n::error::x';
+    const i = changeIssue(source('news'), { kind: 'added', id: 'https://e.org/a?b=1@c', value: hostile }, ctx);
+    expect(i.body).not.toMatch(/@octocat|repo#1|<img|<!--|`x`|\n::error/);
+    expect(i.body).toContain('@\u200boctocat');
+    expect(i.body).toContain('**Item URL:** https://e.org/a?b=1%40c');
+    expect(i.body).toContain('&lt;!-- who-watch:0123456789ab --&gt;'); // escaped, and not on the last line
+    expect(i.body.match(MARKER)?.[1]).toBe(i.fingerprint);
+    expect(neutral('a\u0000b')).toBe('a b');
+    expect(oneLine('x\n::error::y')).toBe('x ::error::y');
   });
 });
 
@@ -172,11 +185,41 @@ describe('pipeline (offline)', () => {
     });
     const { issues, unbaselined } = plan(results, baseline, { now: new Date('2026-11-03T06:17:00Z') });
     expect(issues.map((i: { title: string }) => i.title)).toEqual([
-      'WHO watch: source broken: monographs (2026-W45)',
+      'WHO watch: source broken: monographs',
+      'WHO watch: source broken: pubmed',
       'WHO watch: ICD-11 MMS latest release: changed 2027-01',
-      'WHO watch: source broken: pubmed (2026-W45)',
     ]);
     expect(unbaselined).toEqual(['corrigenda/Alpha-Tumours-2019']);
+  });
+  it('circuit breaker: many broken sources give one summary issue', async () => {
+    const baseline = toBaseline(await readAll({ get: fakeGet() }), '2026-11-03');
+    const down = Object.fromEntries(SOURCES.map((s: { id: string }) => [s.id, new Error('HTTP 403')]));
+    const results = await readAll({ get: fakeGet(down), baseline });
+    const { issues } = plan(results, baseline);
+    expect(results.filter((r: { error?: unknown }) => r.error).length).toBeGreaterThan(MAX_BROKEN);
+    expect(issues.map((i: { title: string }) => i.title)).toEqual([`WHO watch: ${SOURCES.length} sources broken in one run`]);
+    expect(issues[0].fingerprint).toBe(brokenSummaryIssue([], ctx).fingerprint);
+  });
+  it('many removed items report the source as broken instead of one issue per item', async () => {
+    const baseline = { sources: { catalogue: Object.fromEntries(Array.from({ length: 20 }, (_, k) => [`V-${k}`, `5th Edition, Volume ${k} | V | 2020 | current`])) } };
+    const results = [{ source: source('catalogue'), entries: Object.fromEntries(Object.entries(baseline.sources.catalogue).slice(0, 15)) }];
+    const { issues } = plan(results, baseline);
+    expect(issues).toHaveLength(1);
+    expect(issues[0].title).toBe('WHO watch: source broken: catalogue');
+    expect(issues[0].body).toContain('5 of 20 baseline items missing');
+    // A couple of removals are still reported item by item.
+    const two = [{ source: source('catalogue'), entries: Object.fromEntries(Object.entries(baseline.sources.catalogue).slice(0, 18)) }];
+    expect(plan(two, baseline).issues.map((i: { title: string }) => i.title.split(': ').slice(-1)[0])).toHaveLength(2);
+  });
+  it('past the run deadline the remaining sources are reported broken without being fetched', async () => {
+    let calls = 0;
+    const get = async () => {
+      calls++;
+      throw new Error('timeout');
+    };
+    const results = await readAll({ get, budgetMs: 0 });
+    expect(calls).toBe(0);
+    expect(results.every((r: { error?: Error }) => /deadline/.test(r.error!.message))).toBe(true);
   });
   it('refuses to write a baseline while a source is broken', async () => {
     const results = await readAll({ get: fakeGet({ online: 'garbage' }) });
@@ -196,7 +239,8 @@ describe('publish (GitHub client injected)', () => {
     const gh = async (method: string, path: string, body?: { title?: string; name?: string }) => {
       calls.push(`${method} ${path}${body?.title ? ` ${body.title}` : body?.name ? ` ${body.name}` : ''}`);
       if (method === 'GET' && path.startsWith('/labels/')) return labels.includes(decodeURIComponent(path.slice(8))) ? { status: 200, data: {} } : { status: 404, data: null };
-      if (method === 'GET' && path.startsWith('/issues')) return { status: 200, data: existingBodies.map((b) => ({ body: b })) };
+      if (method === 'GET' && path.startsWith('/issues'))
+        return { status: 200, data: existingBodies.map((b) => ({ body: b.replace(/^open:/, ''), state: b.startsWith('open:') ? 'open' : 'closed' })) };
       return { status: 201, data: { html_url: `https://example.org/issues/${calls.length}` } };
     };
     return { gh, calls };
@@ -205,8 +249,8 @@ describe('publish (GitHub client injected)', () => {
   const b = { fingerprint: 'bbbbbbbbbbbb', title: 'B', body: 'y\nwho-watch:bbbbbbbbbbbb' };
 
   it('creates missing labels, skips fingerprints already in any issue, never opens a duplicate in one run', async () => {
-    const { gh, calls } = fakeGh(['closed earlier\nwho-watch:aaaaaaaaaaaa'], ['who-watch']);
-    const opened = await publish([a, b, b], gh);
+    const { gh, calls } = fakeGh(['closed earlier\nwho-watch:aaaaaaaaaaaa', 'mentions who-watch:bbbbbbbbbbbb mid-text\nwho-watch:cccccccccccc'], ['who-watch']);
+    const opened = await publish([a, b, b], gh, { pause: async () => {} });
     expect(opened).toHaveLength(1);
     expect(calls).toEqual([
       'GET /labels/who-watch',
@@ -215,6 +259,26 @@ describe('publish (GitHub client injected)', () => {
       'GET /issues?labels=who-watch&state=all&per_page=100&page=1',
       'POST /issues B',
     ]);
+  });
+});
+
+describe('publish: broken sources and pacing', () => {
+  it('reopens a broken-source issue only when no open one exists, and pauses between POSTs', async () => {
+    const broken = { kind: 'broken', fingerprint: 'dddddddddddd', title: 'D', body: 'z\nwho-watch:dddddddddddd' };
+    const change = { kind: 'change', fingerprint: 'eeeeeeeeeeee', title: 'E', body: 'z\nwho-watch:eeeeeeeeeeee' };
+    const posts: string[] = [];
+    let pauses = 0;
+    const gh = (state: string) => async (method: string, path: string, body?: { title?: string }) => {
+      if (method === 'GET' && path.startsWith('/labels/')) return { status: 200, data: {} };
+      if (method === 'GET') return { status: 200, data: [{ body: 'x\nwho-watch:dddddddddddd', state }] };
+      posts.push(body!.title!);
+      return { status: 201, data: {} };
+    };
+    await publish([broken, change], gh('open'), { pause: async () => void pauses++ });
+    expect(posts).toEqual(['E']);
+    await publish([broken, change], gh('closed'), { pause: async () => void pauses++ });
+    expect(posts).toEqual(['E', 'D', 'E']);
+    expect(pauses).toBe(1);
   });
 });
 

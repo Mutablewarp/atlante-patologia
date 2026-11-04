@@ -26,12 +26,20 @@ const PUBMED_TERM =
 // ── Parsers: text → { itemId: value }. An empty result means "source broken". ──
 
 const ENTITIES = { amp: '&', lt: '<', gt: '>', quot: '"', apos: "'", nbsp: ' ' };
+/** One invalid numeric entity must not break the whole source: keep it as written. */
+function codePoint(raw, n) {
+  try {
+    return String.fromCodePoint(n);
+  } catch {
+    return raw;
+  }
+}
 /** Decode the HTML/XML entities that appear in titles and URLs. */
 export function decode(s) {
   return s
     .replace(/<!\[CDATA\[([\s\S]*?)\]\]>/g, '$1')
-    .replace(/&#x([0-9a-f]+);/gi, (_, h) => String.fromCodePoint(parseInt(h, 16)))
-    .replace(/&#(\d+);/g, (_, d) => String.fromCodePoint(Number(d)))
+    .replace(/&#x([0-9a-f]+);/gi, (m, h) => codePoint(m, parseInt(h, 16)))
+    .replace(/&#(\d+);/g, (m, d) => codePoint(m, Number(d)))
     .replace(/&([a-z]+);/gi, (m, n) => ENTITIES[n.toLowerCase()] ?? m)
     .replace(/\s+/g, ' ')
     .trim();
@@ -225,15 +233,31 @@ export function diff(source, before, after) {
 }
 
 export const fingerprint = (...parts) => createHash('sha256').update(parts.join('\n')).digest('hex').slice(0, 12);
-export const MARKER = /who-watch:([0-9a-f]{12})/g;
+/** The fingerprint marker is the body's last line; a marker-like string inside fetched text never counts. */
+export const MARKER = /\nwho-watch:([0-9a-f]{12})\s*$/;
 
-/** ISO 8601 week, e.g. 2026-W45 (broken-source issues are deduplicated per week). */
-export function isoWeek(date) {
-  const d = new Date(Date.UTC(date.getUTCFullYear(), date.getUTCMonth(), date.getUTCDate()));
-  d.setUTCDate(d.getUTCDate() + 4 - (d.getUTCDay() || 7));
-  const week = Math.ceil(((d.getTime() - Date.UTC(d.getUTCFullYear(), 0, 1)) / 86_400_000 + 1) / 7);
-  return `${d.getUTCFullYear()}-W${String(week).padStart(2, '0')}`;
-}
+/**
+ * Fetched text goes into issue bodies: no control characters or newlines, no @-mentions, no #-references,
+ * no raw HTML, no backticks (code spans). Zero-width spaces keep @ and # readable but inert.
+ */
+export const neutral = (v) =>
+  String(v)
+    .replace(/[\u0000-\u001f\u007f]+/g, ' ')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/`/g, "'")
+    .replace(/([@#])/g, '$1\u200b');
+/** Same for a URL: unsafe characters are percent-encoded so the link still works. */
+export const neutralUrl = (u) => String(u).replace(/[\u0000-\u0020\u007f<>`"'@]/g, (c) => `%${c.charCodeAt(0).toString(16).padStart(2, '0').toUpperCase()}`);
+/** For console output (GitHub parses `::` workflow commands at a line start): one line, no control characters. */
+export const oneLine = (v) => String(v).replace(/[\u0000-\u001f\u007f]+/g, ' ');
+
+/** Above this many broken sources in one run, one summary issue replaces the per-source issues. */
+export const MAX_BROKEN = 3;
+/** More removed items than this (count, or share of the baseline) means the page changed, not the catalogue. */
+export const MAX_REMOVED = 3;
+export const MAX_REMOVED_SHARE = 0.2;
 
 const CHECKLIST = [
   'Open the source and confirm edition, volume, year and status (print, online beta, forthcoming).',
@@ -253,10 +277,10 @@ export function changeIssue(source, change, { date, runUrl }) {
   const lines = [
     `**Source:** ${source.label} — ${source.url}`,
     `**Detected:** ${date} (run: ${runUrl || 'local'})`,
-    `**Change:** ${change.kind} \`${change.id}\``,
-    ...(change.before !== undefined ? [`- before: ${change.before || '(empty)'}`] : []),
-    ...(change.value !== undefined ? [`- now: ${change.value || '(empty)'}`] : []),
-    ...(source.itemUrl ? [`**Item URL:** ${source.itemUrl(change.id)}`] : []),
+    `**Change:** ${change.kind} ${neutral(change.id)}`,
+    ...(change.before !== undefined ? [`- before: ${neutral(change.before) || '(empty)'}`] : []),
+    ...(change.value !== undefined ? [`- now: ${neutral(change.value) || '(empty)'}`] : []),
+    ...(source.itemUrl ? [`**Item URL:** ${neutralUrl(source.itemUrl(change.id))}`] : []),
     `**Atlas modules to check (proposed, from titles only):** ${mods.length ? mods.join(', ') : 'none matched, decide by hand'}`,
     '',
     '**Human checklist**',
@@ -266,16 +290,16 @@ export function changeIssue(source, change, { date, runUrl }) {
     '',
     `who-watch:${fp}`,
   ];
-  return { fingerprint: fp, title: clip(`WHO watch: ${source.label}: ${change.kind} ${name}`, 200), body: lines.join('\n') };
+  return { kind: 'change', fingerprint: fp, title: clip(`WHO watch: ${source.label}: ${change.kind} ${neutral(name)}`, 200), body: lines.join('\n') };
 }
 
-/** Issue for a source that could not be fetched or parsed; one per source per ISO week. */
-export function brokenIssue(source, error, { date, runUrl, week }) {
-  const fp = fingerprint('broken', source.id, week);
+/** Issue for a source that could not be fetched or parsed: one per source, not reopened while an open one exists. */
+export function brokenIssue(source, error, { date, runUrl }) {
+  const fp = fingerprint('broken', source.id);
   const body = [
     `**Source:** ${source.label} — ${source.url}`,
     `**Detected:** ${date} (run: ${runUrl || 'local'})`,
-    `**Problem:** ${clip(String(error?.message ?? error), 300)}`,
+    `**Problem:** ${neutral(clip(String(error?.message ?? error), 300))}`,
     '',
     'The watch could not read this source, so changes to it are not being detected.',
     '',
@@ -287,13 +311,32 @@ export function brokenIssue(source, error, { date, runUrl, week }) {
     '',
     `who-watch:${fp}`,
   ].join('\n');
-  return { fingerprint: fp, title: `WHO watch: source broken: ${source.id} (${week})`, body };
+  return { kind: 'broken', fingerprint: fp, title: `WHO watch: source broken: ${neutral(source.id)}`, body };
+}
+
+/** Circuit breaker: one issue for a run where many sources fail (often one host down), not one per source. */
+export function brokenSummaryIssue(broken, { date, runUrl }) {
+  const fp = fingerprint('broken-summary');
+  const body = [
+    `**Detected:** ${date} (run: ${runUrl || 'local'})`,
+    `**Problem:** ${broken.length} sources could not be read in this run, so changes to them are not being detected.`,
+    '',
+    ...broken.map((r) => `- ${neutral(r.source.id)}: ${neutral(clip(String(r.error?.message ?? r.error), 160))}`),
+    '',
+    '**Human checklist**',
+    '- [ ] Check whether one host is down or blocking automated reads (most sources are on publications.iarc.who.int).',
+    '- [ ] Never bypass bot protection or log in; if the site blocks automated reads, drop the sources.',
+    '- [ ] Close this issue once a run reads the sources again.',
+    '',
+    `who-watch:${fp}`,
+  ].join('\n');
+  return { kind: 'broken', fingerprint: fp, title: `WHO watch: ${broken.length} sources broken in one run`, body };
 }
 
 // ── Fetching and checking ────────────────────────────────────────────────────
 
 /** GET with a 20 s timeout and one retry (none after 403/429). Redirect sources return the Location header. */
-export async function fetchText(url, { redirect = false } = {}) {
+export async function fetchText(url, { redirect = false, deadline = Infinity } = {}) {
   let last;
   for (let attempt = 0; attempt < 2; attempt++) {
     try {
@@ -307,15 +350,17 @@ export async function fetchText(url, { redirect = false } = {}) {
       return await res.text();
     } catch (e) {
       last = e;
-      if (/HTTP (403|429)/.test(String(e?.message))) break;
+      if (/HTTP (403|429)/.test(String(e?.message)) || Date.now() >= deadline) break;
     }
   }
   throw last;
 }
 
-async function read(source, get) {
+async function read(source, get, deadline) {
+  // Past the run deadline the remaining sources are reported broken, so a hanging host still yields an issue.
+  if (Date.now() >= deadline) return { source, error: new Error('not read: the run deadline was reached (slow or hanging host)') };
   try {
-    const entries = source.parse(await get(source.url, { redirect: source.redirect }));
+    const entries = source.parse(await get(source.url, { redirect: source.redirect, deadline }));
     if (Object.keys(entries).length === 0) throw new Error('parser found no items (layout changed?)');
     return { source, entries };
   } catch (error) {
@@ -323,16 +368,20 @@ async function read(source, get) {
   }
 }
 
+/** Time budget for reading all sources (the workflow job allows 20 minutes). */
+export const READ_BUDGET_MS = 5 * 60_000;
+
 /**
  * Read every source in order (politeness: one request at a time).
- * @param {{ get?: typeof fetchText, baseline?: { sources?: Record<string, Record<string, string>> } }} [opts]
+ * @param {{ get?: typeof fetchText, baseline?: { sources?: Record<string, Record<string, string>> }, budgetMs?: number }} [opts]
  */
-export async function readAll({ get = fetchText, baseline } = {}) {
+export async function readAll({ get = fetchText, baseline, budgetMs = READ_BUDGET_MS } = {}) {
+  const deadline = Date.now() + budgetMs;
   const results = [];
-  for (const s of SOURCES) results.push(await read(s, get));
+  for (const s of SOURCES) results.push(await read(s, get, deadline));
   // Volume pages come from the live catalogue; if that is broken, from the baseline's.
   const catalogue = results[0].entries ?? baseline?.sources?.catalogue ?? {};
-  for (const s of corrigendaSources(catalogue)) results.push(await read(s, get));
+  for (const s of corrigendaSources(catalogue)) results.push(await read(s, get, deadline));
   return results;
 }
 
@@ -351,12 +400,13 @@ export function toBaseline(results, reviewed) {
 
 /** Would-be issues for one run. Sources missing from the baseline are reported in `unbaselined`, not diffed. */
 export function plan(results, baseline, { now = new Date(), runUrl = '' } = {}) {
-  const ctx = { date: now.toISOString().slice(0, 10), runUrl, week: isoWeek(now) };
-  const issues = [];
+  const ctx = { date: now.toISOString().slice(0, 10), runUrl };
+  const changes = [];
+  const broken = [];
   const unbaselined = [];
   for (const r of results) {
     if (r.error) {
-      issues.push(brokenIssue(r.source, r.error, ctx));
+      broken.push(r);
       continue;
     }
     const before = baseline.sources?.[r.source.id];
@@ -364,15 +414,26 @@ export function plan(results, baseline, { now = new Date(), runUrl = '' } = {}) 
       unbaselined.push(r.source.id);
       continue;
     }
-    for (const c of diff(r.source, before, r.entries)) issues.push(changeIssue(r.source, c, ctx));
+    const found = diff(r.source, before, r.entries);
+    const removed = found.filter((c) => c.kind === 'removed').length;
+    const total = Object.keys(before).length;
+    // Many items gone at once is a layout or page-size change: report the source, not each item.
+    if (removed > MAX_REMOVED || (total > 0 && removed / total > MAX_REMOVED_SHARE)) {
+      broken.push({ source: r.source, error: new Error(`${removed} of ${total} baseline items missing (layout or page-size change?)`) });
+      continue;
+    }
+    for (const c of found) changes.push(changeIssue(r.source, c, ctx));
   }
-  return { issues, unbaselined };
+  const brokenIssues = broken.length > MAX_BROKEN ? [brokenSummaryIssue(broken, ctx)] : broken.map((r) => brokenIssue(r.source, r.error, ctx));
+  return { issues: [...brokenIssues, ...changes], unbaselined };
 }
 
 // ── GitHub (REST API with GH_TOKEN; the token is only ever sent as a header) ─
 
+export const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+
 export function githubClient(token, repo) {
-  return async (method, path, body) => {
+  return async function call(method, path, body, retried = false) {
     const res = await fetch(`https://api.github.com/repos/${repo}${path}`, {
       method,
       headers: {
@@ -385,28 +446,45 @@ export function githubClient(token, repo) {
       body: body ? JSON.stringify(body) : undefined,
       signal: AbortSignal.timeout(20_000),
     });
+    // Secondary rate limit: wait as told (at most a minute) and try once more.
+    const retryAfter = Number(res.headers.get('retry-after'));
+    if ((res.status === 403 || res.status === 429) && retryAfter > 0 && !retried) {
+      await sleep(Math.min(retryAfter, 60) * 1000);
+      return call(method, path, body, true);
+    }
     if (res.status === 404 && method === 'GET') return { status: 404, data: null };
     if (!res.ok) throw new Error(`GitHub ${method} ${path.split('?')[0]}: HTTP ${res.status}`);
     return { status: res.status, data: await res.json() };
   };
 }
 
-/** Create missing labels, skip issues whose fingerprint any open or closed who-watch issue already has, open the rest. */
-export async function publish(issues, gh) {
+/**
+ * Create missing labels and open the issues not seen before: a change is skipped if any who-watch issue (open or
+ * closed) has its fingerprint; a broken-source issue only while an open one has it. At least 1 s between POSTs.
+ */
+export async function publish(issues, gh, { pause = () => sleep(1000) } = {}) {
   for (const l of LABELS) {
     const { status } = await gh('GET', `/labels/${encodeURIComponent(l.name)}`);
     if (status === 404) await gh('POST', '/labels', l);
   }
   const seen = new Set();
+  const open = new Set();
   for (let page = 1; ; page++) {
     const { data } = await gh('GET', `/issues?labels=who-watch&state=all&per_page=100&page=${page}`);
-    for (const i of data ?? []) for (const m of (i.body ?? '').matchAll(MARKER)) seen.add(m[1]);
+    for (const i of data ?? []) {
+      const fp = (i.body ?? '').match(MARKER)?.[1];
+      if (!fp) continue;
+      seen.add(fp);
+      if (i.state === 'open') open.add(fp);
+    }
     if (!data || data.length < 100) break;
   }
   const opened = [];
   for (const issue of issues) {
-    if (seen.has(issue.fingerprint)) continue;
+    if ((issue.kind === 'broken' ? open : seen).has(issue.fingerprint)) continue;
     seen.add(issue.fingerprint);
+    open.add(issue.fingerprint);
+    if (opened.length) await pause();
     const { data } = await gh('POST', '/issues', { title: issue.title, body: issue.body, labels: LABELS.map((l) => l.name) });
     opened.push(data?.html_url ?? issue.title);
   }
@@ -428,9 +506,9 @@ async function main(argv) {
   }
 
   const { issues, unbaselined } = plan(results, baseline, { runUrl: process.env.RUN_URL });
-  for (const id of unbaselined) console.log(`who-watch: ${id} is not in the baseline yet (refresh it after review)`);
-  const broken = results.filter((r) => r.error).length;
-  console.log(`who-watch: ${results.length} sources read, ${issues.length - broken} change(s), ${broken} broken (baseline reviewed ${baseline.reviewed})`);
+  for (const id of unbaselined) console.log(`who-watch: ${oneLine(id)} is not in the baseline yet (refresh it after review)`);
+  const broken = issues.filter((i) => i.kind === 'broken').length;
+  console.log(`who-watch: ${results.length} sources read, ${issues.length - broken} change(s), ${broken} broken-source issue(s) (baseline reviewed ${oneLine(baseline.reviewed)})`);
 
   if (mode === 'dry-run') {
     for (const i of issues) console.log(`\n── ${i.title}\n${i.body}`);

@@ -19,20 +19,17 @@ concurrency:
 jobs:
   watch:
     runs-on: ubuntu-24.04
-    timeout-minutes: 10
+    # Reading has its own 5-minute budget (scripts/who-watch.mjs READ_BUDGET_MS); the rest is GitHub calls.
+    timeout-minutes: 20
+    # The script needs no dependencies, so nothing is installed or run in this job before the token is used.
+    # Its tests run in CI (`npm test` includes tests/who-watch.test.ts). Actions pinned by commit SHA.
     steps:
-      - uses: actions/checkout@v7
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
-          # The token must not sit in .git/config while dependencies are installed.
           persist-credentials: false
-      - uses: actions/setup-node@v7
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
         with:
           node-version-file: .nvmrc
-          cache: npm
-      # Install scripts are not needed by the parser tests and do not run.
-      - run: npm ci --ignore-scripts
-      - name: Parser tests (saved fixtures, no network)
-        run: npx vitest run --project unit tests/who-watch.test.ts
       - name: Check sources, open issues
         run: node scripts/who-watch.mjs
         env:
