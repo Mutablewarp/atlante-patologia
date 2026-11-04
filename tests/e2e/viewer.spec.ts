@@ -1,8 +1,9 @@
 /**
  * Image viewer (components/horizontal/ImageViewer.astro, scripts/image-viewer.ts):
  * pan buttons (WCAG 2.5.7), keyboard and double-click zoom, the sharper srcset
- * candidate on zoom, full screen on a phone (Escape and Back close it) and the
- * stain/magnification switch. The switch runs on the draft fixture group
+ * candidate on zoom, full screen on a phone (Escape and Back close it; axe),
+ * labels that never cover each other, the credit line in the page language and
+ * the stain/magnification switch. The switch runs on the draft fixture group
  * (fixture-grid + fixture-grid-b), so it needs a PREVIEW_DRAFTS=1 build:
  *   npx playwright test -c tests/e2e/study.config.ts tests/e2e/viewer.spec.ts
  */
@@ -59,7 +60,8 @@ test('@smoke pan buttons stay disabled until zoomed, then move the image; focus 
   await expect.poll(() => view(fig)).toEqual({ x: 0, y: 0, s: 1 });
   await expect(right).toHaveAttribute('aria-disabled', 'true');
   await expect(right).toBeFocused();
-  await right.click();
+  // Playwright refuses to click an aria-disabled button: activate it from the keyboard; it does nothing at 1×.
+  await page.keyboard.press('Enter');
   await expect.poll(() => view(fig)).toEqual({ x: 0, y: 0, s: 1 });
 });
 
@@ -137,6 +139,54 @@ test('@smoke full screen on a phone: a 100dvh dialog that Escape and Back close'
   expect(page.url()).toBe(url);
 });
 
+for (const scheme of ['light', 'dark'] as const)
+  test(`the full-screen viewer has no axe violations (${scheme})`, async ({ page }) => {
+    test.skip(![375, 1280].includes(test.info().project.metadata.width as number), 'runs at 375 and 1280 px');
+    await page.emulateMedia({ colorScheme: scheme });
+    const fig = await openViewer(page);
+    await fig.getByRole('button', { name: 'Schermo intero' }).click();
+    await expect(page.getByRole('dialog')).toBeVisible();
+    const axe = await new AxeBuilder({ page }).include('.viewer-dialog').withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze();
+    expect(axe.violations.map((v) => `${v.id}: ${v.nodes.map((n) => n.target.join(' ')).join(', ')}`)).toEqual([]);
+  });
+
+test('labels stay inside the image and never cover each other (numbers stand in when they would)', async ({ page }) => {
+  for (const path of ['it/e/apoptosis/', 'it/e/caseous-necrosis/']) {
+    await page.goto(path);
+    await page.evaluate(() => document.fonts.ready);
+    const problems = () =>
+      page.evaluate(() =>
+        [...document.querySelectorAll('.viewer-panel:not([hidden]) .viewer-stage')].flatMap((stage) => {
+          const s = stage.getBoundingClientRect();
+          const boxes = [...stage.querySelectorAll<HTMLElement>('.viewer-label')]
+            .filter((l) => l.checkVisibility())
+            .map((l) => [l.textContent!.trim(), l.getBoundingClientRect()] as const);
+          const out = boxes
+            .filter(([, b]) => b.left < s.left - 0.5 || b.right > s.right + 0.5 || b.top < s.top - 0.5 || b.bottom > s.bottom + 0.5)
+            .map(([t]) => `cut off: ${t}`);
+          boxes.forEach(([t, a], i) =>
+            boxes.slice(i + 1).forEach(([u, b]) => {
+              if (Math.min(a.right, b.right) - Math.max(a.left, b.left) > 1 && Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top) > 1)
+                out.push(`overlap: ${t} / ${u}`);
+            }),
+          );
+          return out;
+        }),
+      );
+    await expect.poll(problems, { message: path }).toEqual([]);
+  }
+});
+
+test('the credit line states our changes to the image in the page language', async ({ page }) => {
+  for (const [path, text] of [
+    ['it/e/apoptosis/', 'Ricodifica in JPEG (qualità 85)'],
+    ['en/e/apoptosis/', 'Re-encoded as JPEG (quality 85)'],
+  ] as const) {
+    await page.goto(path);
+    await expect(page.locator(`${FIG} .credit`)).toContainText(text);
+  }
+});
+
 test.describe('stain and magnification switch (draft fixtures)', () => {
   test.beforeEach(async ({ request }) => {
     test.skip(!(await request.get('it/e/fixture-demo-b/')).ok(), 'needs a PREVIEW_DRAFTS=1 build with the draft fixtures');
@@ -163,8 +213,10 @@ test.describe('stain and magnification switch (draft fixtures)', () => {
     await page.keyboard.press('ArrowRight');
     await expect(radios.nth(1)).toBeChecked();
     await expect.poll(() => view(fig)).toEqual({ x: 0, y: 0, s: 1.5 });
-    await expect(fig.getByRole('group', { name: /Griglia di quadrati in altri colori/ })).toBeVisible();
-    await expect(fig.getByRole('group', { name: /con tre cerchi/ })).toBeHidden();
+    // The stage is a short "zoomable image" group; the alt is read once, on the image itself.
+    await expect(fig.getByRole('group', { name: 'Immagine ingrandibile' })).toBeVisible();
+    await expect(fig.getByRole('img', { name: /Griglia di quadrati in altri colori/ })).toBeVisible();
+    await expect(fig.getByRole('img', { name: /con tre cerchi/ })).toBeHidden();
     await expect(fig.getByRole('list', { name: 'Etichette dell’immagine' })).toHaveText('Etichetta B');
     await expect(fig.getByText('Immagine di prova B')).toBeVisible();
     await expect(fig.getByText('Immagine di prova: griglia')).toBeHidden();
@@ -179,5 +231,16 @@ test.describe('stain and magnification switch (draft fixtures)', () => {
 
     const axe = await new AxeBuilder({ page }).include('#fig-fixture-grid').withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze();
     expect(axe.violations.map((v) => `${v.id}: ${v.nodes.map((n) => n.target.join(' ')).join(', ')}`)).toEqual([]);
+
+    // Full screen: the dialog is named after the image shown now, and a switch made inside the modal is
+    // announced from inside it (outside, the status line would be inert: WCAG 4.1.3).
+    await fig.getByRole('button', { name: 'Schermo intero' }).click();
+    const dialog = page.getByRole('dialog');
+    await expect(dialog).toHaveAccessibleName(/Griglia di quadrati in altri colori/);
+    await dialog.getByRole('radio', { checked: true }).focus();
+    await page.keyboard.press('ArrowLeft');
+    await expect(dialog.getByRole('radio').nth(0)).toBeChecked();
+    await expect(dialog).toHaveAccessibleName(/con tre cerchi/);
+    await expect(dialog.locator('[role="status"][data-viewer-status]')).toHaveText('EE · in paraffina · piccolo ingrandimento');
   });
 });

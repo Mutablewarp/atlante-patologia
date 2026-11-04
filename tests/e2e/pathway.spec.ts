@@ -1,10 +1,13 @@
 /**
  * 3D pathways (O9): the 2D stepper, the "Load the 3D view" button, step sync
- * of the 3D highlight, our own controls, no third-party requests, and axe with
- * the viewer open. Without WebGL the poster, description and steps must stay.
+ * of the 3D highlight, our own controls, no third-party requests, axe and the
+ * model's contrast with the viewer open (light and dark), readable future
+ * steps and 44 px touch targets. Without WebGL the poster, description and
+ * steps must stay.
  */
 import AxeBuilder from '@axe-core/playwright';
-import { expect, test, type Page } from '@playwright/test';
+import { expect, test, type Locator, type Page } from '@playwright/test';
+import sharp from 'sharp';
 
 const PAGE = 'it/pathways/intrinsic-apoptosis/';
 const WCAG = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'];
@@ -55,14 +58,20 @@ test('the 3D view loads on demand, follows the steps and makes no third-party re
   await expect(viewer.locator('img[data-poster]:visible')).toHaveCount(1);
 
   const webgl = await hasWebGL(page);
-  await viewer.locator('[data-load]').focus();
-  await page.keyboard.press('Enter');
+  const load = viewer.locator('[data-load]');
+  // Activated from the keyboard, the button keeps the focus while the view loads (WCAG 2.4.3), read synchronously.
+  const loading = await load.evaluate((b: HTMLButtonElement) => {
+    b.focus();
+    b.click();
+    return { focused: document.activeElement === b, busy: b.getAttribute('aria-disabled'), text: b.textContent };
+  });
   if (!webgl) {
     await expect(viewer.locator('[data-fallback]')).toBeVisible();
     await expect(viewer.locator('[data-fallback]')).toBeFocused();
     await expect(viewer.locator('img[data-poster]:visible')).toHaveCount(1);
     return;
   }
+  expect(loading).toEqual({ focused: true, busy: 'true', text: 'Caricamento della vista 3D…' });
   await expect(viewer).toHaveAttribute('data-loaded', '', GL);
   await expect(viewer.locator('[data-stage]')).toBeFocused();
   await expect(viewer.locator('[data-tools]')).toBeVisible();
@@ -100,15 +109,82 @@ test('the 3D view loads on demand, follows the steps and makes no third-party re
   expect(requests.some((u) => u.includes('/structures/1f16.bcif.gz'))).toBe(true);
 });
 
-test('the pathway page has no axe violations with the 3D view open', async ({ page }) => {
-  test.setTimeout(60_000);
-  await page.goto(PAGE);
-  if (await hasWebGL(page)) {
-    await page.locator('[data-load]').click();
-    await expect(page.locator('ap-structure')).toHaveAttribute('data-loaded', '', GL);
+/** Relative luminance of an sRGB colour (WCAG). */
+const lum = ([r, g, b]: number[]) => {
+  const f = (v: number) => ((v /= 255) <= 0.04045 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4);
+  return 0.2126 * f(r!) + 0.7152 * f(g!) + 0.0722 * f(b!);
+};
+
+/** Contrast against the stage of the median grey and the median orange pixel of the rendered model. */
+async function modelContrast(canvas: Locator) {
+  const { data, info } = await sharp(await canvas.screenshot()).raw().toBuffer({ resolveWithObject: true });
+  const at = (8 * info.width + 8) * info.channels; // just inside the rounded corner: always stage
+  const stage = lum([data[at]!, data[at + 1]!, data[at + 2]!]);
+  const grey: number[] = [];
+  const orange: number[] = [];
+  for (let i = 0; i < data.length; i += info.channels) {
+    const [r, g, b] = [data[i]!, data[i + 1]!, data[i + 2]!];
+    const l = lum([r, g, b]);
+    if (Math.abs(l - stage) < 0.05) continue; // the stage and its anti-aliased edges
+    if (r - b > 80) orange.push(l);
+    else if (Math.abs(r - g) < 12 && Math.abs(g - b) < 12) grey.push(l);
   }
-  const { violations } = await new AxeBuilder({ page }).withTags(WCAG).analyze();
-  expect(violations.map((v) => `${v.id}: ${v.nodes.map((n) => n.target.join(' ')).join(' | ')}`)).toEqual([]);
+  const ratio = (a: number[]) => (stage + 0.05) / (a.sort((x, y) => x - y)[a.length >> 1]! + 0.05);
+  return { grey: ratio(grey), orange: ratio(orange) };
+}
+
+for (const scheme of ['light', 'dark'] as const)
+  test(`with the 3D view open: no axe violations, and the model keeps 3:1 against its stage (${scheme})`, async ({ page }) => {
+    test.setTimeout(60_000);
+    await page.emulateMedia({ colorScheme: scheme });
+    await page.goto(PAGE);
+    const webgl = await hasWebGL(page);
+    if (webgl) {
+      await page.locator('[data-load]').click();
+      await expect(page.locator('ap-structure')).toHaveAttribute('data-loaded', '', GL);
+    }
+    const { violations } = await new AxeBuilder({ page }).withTags(WCAG).analyze();
+    expect(violations.map((v) => `${v.id}: ${v.nodes.map((n) => n.target.join(' ')).join(' | ')}`)).toEqual([]);
+    if (!webgl) return;
+    // WCAG 1.4.11 in both themes (the canvas keeps its own light stage); the 3D label would count as grey.
+    await page.locator('[data-act="labels"]').click();
+    const c = await modelContrast(page.locator('[data-canvas]'));
+    expect(c.grey).toBeGreaterThanOrEqual(3);
+    expect(c.orange).toBeGreaterThanOrEqual(3);
+  });
+
+test('without WebGL the 3D button gives way to a focused explanation; poster and steps stay', async ({ page }) => {
+  await page.addInitScript(() => {
+    const get = HTMLCanvasElement.prototype.getContext;
+    Object.defineProperty(HTMLCanvasElement.prototype, 'getContext', {
+      value(this: HTMLCanvasElement, type: string, ...args: unknown[]) {
+        return type.startsWith('webgl') ? null : Reflect.apply(get, this, [type, ...args]);
+      },
+    });
+  });
+  await page.goto(PAGE);
+  const viewer = page.locator('ap-structure');
+  await viewer.locator('[data-load]').focus();
+  await page.keyboard.press('Enter');
+  await expect(viewer.locator('[data-fallback]')).toBeVisible();
+  await expect(viewer.locator('[data-fallback]')).toBeFocused();
+  await expect(viewer.locator('[data-load]')).toBeHidden();
+  await expect(viewer.locator('[data-status]')).toHaveText(/non è disponibile su questo dispositivo/);
+  await expect(viewer.locator('img[data-poster]:visible')).toHaveCount(1);
+  await expect(page.locator('[data-step-item]')).toHaveCount(10);
+});
+
+test('on touch screens the stepper and the 3D tools have 44 px targets', async ({ page }) => {
+  await page.goto(PAGE);
+  test.skip(!(await page.evaluate(() => matchMedia('(pointer: coarse)').matches)), 'needs a coarse pointer (phone projects)');
+  for (const b of await page.locator('.pw-controls .btn-small').all()) {
+    const box = (await b.boundingBox())!;
+    expect(Math.min(box.width, box.height)).toBeGreaterThanOrEqual(44);
+  }
+  // The 3D toolbar is hidden until loaded: its computed minimum size is enough.
+  const mins = await page.locator('.structure-tools .btn-small').evaluateAll((bs) => bs.map((b) => parseFloat(getComputedStyle(b).minHeight)));
+  expect(mins.length).toBeGreaterThan(5);
+  for (const m of mins) expect(m).toBeGreaterThanOrEqual(44);
 });
 
 test('the apoptosis card shows the compact pathway, one step at a time, with a link to the full page', async ({ page }) => {
