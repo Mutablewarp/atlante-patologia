@@ -1,5 +1,5 @@
 ---
-/** Footer on every page: medical disclaimer, report link, about links, licences. */
+/** Footer on every page: medical disclaimer, AI notice, report link, about links, licences. */
 import type { Lang } from '../../i18n/index.ts';
 import { tCommon, ISSUES_URL } from '../../i18n/common.ts';
 import { langPath } from '../../lib/url.ts';
@@ -25,6 +25,10 @@ const links = [
     <p class="footer-disclaimer">
       <strong>{t('disclaimerShort')}</strong>{' '}
       <a href={ISSUES_URL} rel="noopener">{t('reportError')} <span class="visually-hidden">{t('newTab')}</span></a>
+    </p>
+    {/* AI-assistance disclosure for every page (O11, EU AI Act art. 50(4)) */}
+    <p class="footer-ai" data-ai-notice>
+      {t('aiNotice')} <a href={langPath(lang, 'about/method/')}>{t('aiNoticeLink')}</a>
     </p>
     <ul class="footer-links">
       {
