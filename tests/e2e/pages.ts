@@ -30,6 +30,7 @@ export const TEMPLATES: Record<string, string> = Object.fromEntries(
     az: 'en/atlas/az/',
     entity: first(/^it\/e\/[^/]+\/$/),
     study: 'it/study/',
+    'study-oral': 'en/study/oral/',
     search: 'it/search/?q=atlante',
     me: 'en/me/',
     'about-index': 'it/about/',
