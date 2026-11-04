@@ -5,13 +5,45 @@
  * section chips that follow the scroll; differential tables in a labelled
  * scroll region; form fields never below 16 px (no iOS zoom).
  */
-import { expect, test } from '@playwright/test';
+import { expect, test, type Page } from '@playwright/test';
 
 const ENTITY = 'it/e/apoptosis/';
 const PATTERN = 'en/pattern/p01-necrosis/';
 const width = () => test.info().project.metadata.width as number;
 
 test.use({ reducedMotion: 'reduce' });
+
+/** Characters on the longest rendered line of the visible elements matching `sel`. */
+const longestLine = (page: Page, sel: string) =>
+  page.evaluate((sel) => {
+    let max = 0;
+    for (const el of document.querySelectorAll(sel)) {
+      if (el.getBoundingClientRect().width < 50 || !el.checkVisibility()) continue; // skips visually hidden status text
+      const perLine = new Map<number, number>();
+      const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+      const range = document.createRange();
+      for (let n = walker.nextNode(); n; n = walker.nextNode())
+        for (let i = 0; i < n.textContent!.length; i++) {
+          range.setStart(n, i);
+          range.setEnd(n, i + 1);
+          const r = range.getClientRects()[0];
+          if (r?.width) perLine.set(Math.round(r.bottom / 4), (perLine.get(Math.round(r.bottom / 4)) ?? 0) + 1);
+        }
+      max = Math.max(max, ...perLine.values());
+    }
+    return max;
+  }, sel);
+
+test('lines stay within the reading measure: text, summary, captions and credit lines', async ({ page }) => {
+  // About 66 characters per line is the target; 80 is the WCAG 1.4.8 ceiling.
+  for (const [path, sel] of [
+    [ENTITY, '.section-body p, .section-body li, .entity-head .lede, figcaption p'],
+    [PATTERN, '.prose p, .prose li, .entity-head .lede, figcaption p, .related li'],
+  ] as const) {
+    await page.goto(path);
+    expect(await longestLine(page, sel), path).toBeLessThanOrEqual(80);
+  }
+});
 
 test('no AI badge on entity and pattern pages; the footer carries the AI line @smoke', async ({ page }) => {
   for (const [path, text, method] of [
