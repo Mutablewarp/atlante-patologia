@@ -34,11 +34,13 @@ const longestLine = (page: Page, sel: string) =>
     return max;
   }, sel);
 
-test('lines stay within the reading measure: text, summary, captions and credit lines', async ({ page }) => {
-  // About 66 characters per line is the target; 80 is the WCAG 1.4.8 ceiling.
+test('lines stay within the reading measure: text, summary, captions, credit lines and lists', async ({ page }) => {
+  // About 66 characters per line is the target; 80 is the WCAG 1.4.8 ceiling. Lists with summaries in
+  // small type (cards in a pattern, the atlas patterns) count each line in its own type size.
   for (const [path, sel] of [
-    [ENTITY, '.section-body p, .section-body li, .entity-head .lede, figcaption p'],
-    [PATTERN, '.prose p, .prose li, .entity-head .lede, figcaption p, .related li'],
+    [ENTITY, '.section-body p, .section-body li, .entity-head .lede, figcaption p, .objectives li, .related li, .sources li'],
+    [PATTERN, '.prose p, .prose li, .entity-head .lede, figcaption p, .related li, .sources li'],
+    ['it/atlas/', '.pattern-list li'],
   ] as const) {
     await page.goto(path);
     expect(await longestLine(page, sel), path).toBeLessThanOrEqual(80);

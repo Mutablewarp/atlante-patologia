@@ -148,7 +148,7 @@ const captionId = 'matrix-caption';
           rows.map((r) => (
             <li>
               {r.visible ? <a href={langPath(lang, `e/${r.entity}/`)}>{r.name}</a> : r.name}
-              {r.visible && <span class="small muted"> — {data.entityById.get(r.entity)!.summary[lang]}</span>}
+              {r.visible && <span class="small muted">{data.entityById.get(r.entity)!.summary[lang]}</span>}
             </li>
           ))
         }

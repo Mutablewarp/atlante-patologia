@@ -460,6 +460,7 @@ main:focus {
 }
 .pattern-list li > span {
   display: block;
+  max-width: var(--measure); /* in its own, smaller type: about 66 characters */
 }
 .term-list .child {
   padding-left: var(--space-4);

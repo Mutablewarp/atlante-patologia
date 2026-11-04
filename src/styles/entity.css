@@ -401,9 +401,15 @@ html:not(.js) .section-toggle {
 .related {
   margin-top: var(--space-6);
 }
-/* Pattern pages: one link + summary per line, kept to the reading measure */
-.related > ul {
+/* Card and pattern lists: the link, its summary underneath; each line keeps the measure of its own type size
+   (the smaller summary type fits more characters into the list's width) */
+.related > ul,
+.related > ul > li > .small,
+.sources > ul {
   max-width: var(--measure);
+}
+.related > ul > li > .small {
+  display: block;
 }
 .related-groups {
   display: grid;

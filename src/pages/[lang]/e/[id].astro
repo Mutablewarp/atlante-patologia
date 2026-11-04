@@ -227,7 +227,7 @@ const contexts = LENSES.flatMap((lens) =>
                 {entityPatterns.map((p) => (
                   <li>
                     <a href={langPath(lang, `pattern/${p.id}/`)}>{p.names[lang]}</a>
-                    <span class="small muted"> — {p.summary[lang]}</span>
+                    <span class="small muted">{p.summary[lang]}</span>
                   </li>
                 ))}
               </ul>
