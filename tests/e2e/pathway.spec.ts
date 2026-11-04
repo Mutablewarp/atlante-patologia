@@ -2,8 +2,8 @@
  * 3D pathways (O9): the 2D stepper, the "Load the 3D view" button, step sync
  * of the 3D highlight, our own controls, no third-party requests, axe and the
  * model's contrast with the viewer open (light and dark), readable future
- * steps and 44 px touch targets. Without WebGL the poster, description and
- * steps must stay.
+ * steps and 44 px touch targets. Without WebGL, or when a structure file
+ * fails on a later step, the poster, description and steps must stay.
  */
 import AxeBuilder from '@axe-core/playwright';
 import { expect, test, type Locator, type Page } from '@playwright/test';
@@ -176,6 +176,39 @@ test('without WebGL the 3D button gives way to a focused explanation; poster and
   await expect(viewer.locator('[data-status]')).toHaveText(/non è disponibile su questo dispositivo/);
   await expect(viewer.locator('img[data-poster]:visible')).toHaveCount(1);
   await expect(page.locator('[data-step-item]')).toHaveCount(10);
+});
+
+test.describe(() => {
+  // page.route never sees what a service worker fetches.
+  test.use({ serviceWorkers: 'block' });
+
+  test('if a structure file fails on a later step, the poster, description and steps come back; focus stays put', async ({ page }) => {
+    test.setTimeout(90_000);
+    await page.route('**/structures/1f16.bcif.gz', (r) => r.abort());
+    const errors: string[] = [];
+    page.on('pageerror', (e) => errors.push(e.message));
+    await page.goto(PAGE);
+    test.skip(!(await hasWebGL(page)), 'needs WebGL');
+    const viewer = page.locator('ap-structure');
+    await viewer.locator('[data-load]').click();
+    await expect(viewer).toHaveAttribute('data-shown', '6o0k:2', GL);
+    // Step 4 (BAX, PDB 1F16) from the 2D stepper, by keyboard: its file never arrives.
+    const next = page.locator('[data-step-next]');
+    await next.focus();
+    for (let i = 0; i < 3; i++) await page.keyboard.press('Enter');
+    await expect(viewer.locator('[data-fallback]')).toBeVisible(GL);
+    await expect(viewer).not.toHaveAttribute('data-loaded');
+    await expect(viewer.locator('[data-tools]')).toBeHidden();
+    await expect(viewer.locator('canvas')).toBeHidden();
+    await expect(viewer.locator('img[data-poster]:visible')).toHaveAttribute('alt', /1F16/);
+    await expect(viewer.locator('.structure-desc:visible')).toContainText('PDB 1F16');
+    await expect(viewer.locator('[data-status]')).toHaveText(/non è disponibile/);
+    // The learner was on the stepper, not in the 3D viewer: focus stays; later steps still work, without errors.
+    await expect(next).toBeFocused();
+    await page.keyboard.press('Enter');
+    await expect(page.locator('[data-step-item]').nth(4)).toHaveAttribute('aria-current', 'step');
+    expect(errors).toEqual([]);
+  });
 });
 
 test('on touch screens the stepper and the 3D tools have 44 px targets', async ({ page }) => {
