@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-10",
+  "generated": "2026-11-03",
   "tool": "license-checker-rseidelsohn 5.0.1",
   "platform": "darwin-arm64",
   "allowlist": [
@@ -11,9 +11,10 @@
     "0BSD",
     "CC0-1.0",
     "BlueOak-1.0.0",
-    "OFL-1.1"
+    "OFL-1.1",
+    "Zlib"
   ],
-  "total": 564,
+  "total": 570,
   "exceptions": [
     "@axe-core/playwright@4.13.0",
     "@img/sharp-libvips-darwin-arm64@1.3.4",
@@ -1094,6 +1095,13 @@
       "scope": "development"
     },
     {
+      "name": "3dmol",
+      "version": "2.5.5",
+      "license": "BSD-3-Clause",
+      "repository": "https://github.com/3dmol/3Dmol.js",
+      "scope": "production"
+    },
+    {
       "name": "abbrev",
       "version": "2.0.0",
       "license": "ISC",
@@ -2083,6 +2091,13 @@
       "scope": "development"
     },
     {
+      "name": "iobuffer",
+      "version": "5.4.0",
+      "license": "MIT",
+      "repository": "https://github.com/image-js/iobuffer",
+      "scope": "production"
+    },
+    {
       "name": "ip-address",
       "version": "10.7.3",
       "license": "MIT",
@@ -2554,6 +2569,13 @@
       "scope": "production"
     },
     {
+      "name": "netcdfjs",
+      "version": "3.0.0",
+      "license": "MIT",
+      "repository": "https://github.com/cheminfo/netcdfjs",
+      "scope": "production"
+    },
+    {
       "name": "nlcst-to-string",
       "version": "4.0.0",
       "license": "MIT",
@@ -2769,6 +2791,20 @@
       "license": "MIT",
       "repository": "https://github.com/Pagefind/pagefind",
       "scope": "development"
+    },
+    {
+      "name": "pako",
+      "version": "1.0.11",
+      "license": "(MIT AND Zlib)",
+      "repository": "https://github.com/nodeca/pako",
+      "scope": "production"
+    },
+    {
+      "name": "pako",
+      "version": "2.2.0",
+      "license": "(MIT AND Zlib)",
+      "repository": "https://github.com/nodeca/pako",
+      "scope": "production"
     },
     {
       "name": "parse-conflict-json",
@@ -3582,6 +3618,13 @@
       "version": "1.3.4",
       "license": "MIT",
       "repository": "https://github.com/browserslist/update-db",
+      "scope": "production"
+    },
+    {
+      "name": "upng-js",
+      "version": "2.1.0",
+      "license": "MIT",
+      "repository": "https://github.com/photopea/UPNG.js",
       "scope": "production"
     },
     {

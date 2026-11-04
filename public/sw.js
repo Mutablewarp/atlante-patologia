@@ -5,7 +5,8 @@
  *   precached into `shell-<VERSION>` at install.
  * - Navigations: network first; offline → cached copy (shell or installed
  *   pack) → /<lang>/offline/.
- * - Hashed /_astro/ assets: cache first, stored on first use.
+ * - Hashed /_astro/ assets: cache first, stored on first use. Structure files
+ *   (/structures/*.bcif.gz, 3D pathways) too: they are never precached.
  * - Everything else: served from cache only if a cache holds it (shell or an
  *   installed offline pack, `pack-<lang>-<module>-<hash>`), otherwise network.
  * - Cross-origin requests are never touched or cached.
@@ -54,7 +55,7 @@ self.addEventListener('fetch', (event) => {
   const url = new URL(req.url);
   if (url.origin !== self.location.origin || !url.pathname.startsWith(BASE)) return;
   if (req.mode === 'navigate') event.respondWith(navigate(req, url));
-  else if (url.pathname.startsWith(`${BASE}_astro/`)) event.respondWith(hashedAsset(req));
+  else if (url.pathname.startsWith(`${BASE}_astro/`) || url.pathname.startsWith(`${BASE}structures/`)) event.respondWith(hashedAsset(req));
   else event.respondWith(cachedOrNetwork(req));
 });
 

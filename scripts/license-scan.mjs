@@ -20,6 +20,7 @@ export const ALLOW = new Set([
   'CC0-1.0',
   'BlueOak-1.0.0',
   'OFL-1.1', // self-hosted fonts (Fontsource)
+  'Zlib', // pako, bundled in 3Dmol (D050); OSI-approved, permissive
 ]);
 
 // Packages outside the allowlist that never reach the published site. Each

@@ -29,6 +29,7 @@ export const TEMPLATES: Record<string, string> = Object.fromEntries(
     'lens-term': first(/^it\/atlas\/(?!az\/)[^/]+\/[^/]+\/$/),
     az: 'en/atlas/az/',
     entity: first(/^it\/e\/[^/]+\/$/),
+    pathway: first(/^it\/pathways\/[^/]+\/$/),
     study: 'it/study/',
     'study-oral': 'en/study/oral/',
     search: 'it/search/?q=atlante',

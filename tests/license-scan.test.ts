@@ -8,6 +8,7 @@ describe('license allowlist', () => {
     expect(allowed('(MIT OR CC0-1.0)')).toBe(true);
     expect(allowed('(MIT OR GPL-3.0)')).toBe(true);
     expect(allowed('(MIT AND CC-BY-3.0)')).toBe(false);
+    expect(allowed('(MIT AND Zlib)')).toBe(true); // pako via 3Dmol (D050)
     expect(allowed('GPL-3.0')).toBe(false);
     expect(allowed('UNKNOWN')).toBe(false);
   });

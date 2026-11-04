@@ -3,11 +3,13 @@ import AboutPage from '../../../components/AboutPage.astro';
 import Bi from '../../../components/Bi.astro';
 import { langPaths, type Lang } from '../../../i18n/index.ts';
 import { images } from '../../../lib/content.ts';
+import { structureById } from '../../../lib/pathways.ts';
 
 export const getStaticPaths = langPaths;
 const lang = Astro.params.lang as Lang;
 const imgs = (await images()).sort((a, b) => a.id.localeCompare(b.id));
 const OFL = 'https://openfontlicense.org';
+const structs = [...(await structureById()).values()].sort((a, b) => a.pdb.localeCompare(b.pdb));
 ---
 
 <AboutPage lang={lang} slug="credits">
@@ -33,6 +35,37 @@ const OFL = 'https://openfontlicense.org';
           </li>
         ))}
       </ul>
+    )
+  }
+
+  {
+    structs.length > 0 && (
+      <>
+        <h2 id="structures">{lang === 'it' ? 'Strutture 3D' : '3D structures'}</h2>
+        <Bi lang={lang}>
+          <p slot="it">
+            Dati del Protein Data Bank (RCSB PDB), di pubblico dominio (CC0 1.0); ringraziamo gli autori di ogni struttura.
+            Le immagini statiche e la vista 3D sono rese con 3Dmol.js.
+          </p>
+          <p slot="en">
+            Data from the Protein Data Bank (RCSB PDB), in the public domain (CC0 1.0); we credit the authors of each structure.
+            The still images and the 3D view are drawn with 3Dmol.js.
+          </p>
+        </Bi>
+        <ul>
+          {structs.map((s) => (
+            <li id={`pdb-${s.id}`}>
+              <a href={s.sourceUrl} rel="noopener">PDB {s.pdb}</a> — <span lang="en">{s.title}</span>.{' '}
+              <span lang="en">{s.citation.authors.split('; ')[0]} et al., {s.citation.journal} ({s.citation.year})</span>
+              {s.citation.doi && (
+                <>
+                  {' '}· <a href={`https://doi.org/${s.citation.doi}`} rel="noopener">doi:{s.citation.doi}</a>
+                </>
+              )}
+            </li>
+          ))}
+        </ul>
+      </>
     )
   }
 

@@ -1,0 +1,167 @@
+/* Pathways (O9): 2D step schema, step list and the <ap-structure> 3D viewer. Colours are design tokens only. */
+.pathway {
+  display: block;
+  margin: var(--space-5) 0;
+}
+.pw-figure {
+  display: grid;
+  gap: var(--space-5);
+  align-items: start;
+}
+@media (min-width: 64rem) {
+  .pw-figure {
+    grid-template-columns: minmax(14rem, 20rem) minmax(0, 1fr);
+  }
+}
+
+/* 2D diagram */
+.pw-diagram {
+  display: block;
+  width: 100%;
+  max-width: 22rem;
+  height: auto;
+  font-family: var(--font-body);
+  font-size: 13px;
+}
+.pw-diagram rect {
+  fill: var(--surface);
+  stroke: var(--border-strong);
+  stroke-width: 1.5;
+}
+.pw-diagram text {
+  fill: var(--ink);
+}
+.pw-arrow {
+  stroke: var(--border-strong);
+  stroke-width: 1.5;
+}
+.pw-arrow-head {
+  fill: var(--border-strong);
+}
+.pw-diagram [data-state='current'] rect {
+  fill: var(--eosin-soft);
+  stroke: var(--eosin);
+  stroke-width: 2.5;
+}
+.pw-diagram [data-state='current'] text {
+  fill: var(--eosin-ink);
+  font-weight: 700;
+}
+/* Steps not reached yet stay faint (layout never jumps); the list is the text alternative. */
+.pw-diagram [data-state='future'] {
+  opacity: 0.2;
+}
+@media (prefers-reduced-motion: no-preference) {
+  .pw-diagram g {
+    transition: opacity 0.25s var(--ease);
+  }
+}
+.pw-controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-3);
+  flex-wrap: wrap;
+}
+.pw-controls [aria-disabled='true'] {
+  opacity: 0.55;
+  cursor: default;
+}
+
+/* Step list: all steps without JS; with JS the current one is marked (only it, in compact mode). */
+.pw-steps {
+  margin: var(--space-5) 0 0;
+  padding-left: var(--space-5);
+  max-width: var(--measure);
+}
+.pw-steps li {
+  margin-bottom: var(--space-4);
+  padding: var(--space-2) var(--space-3);
+  border-left: 4px solid transparent;
+  border-radius: var(--radius-s);
+}
+.pw-steps li[aria-current='step'] {
+  border-left-color: var(--eosin);
+  background: var(--surface);
+}
+.pw-step-title {
+  font-size: var(--step-1);
+  margin: 0 0 var(--space-1);
+}
+.pathway[data-ready][data-compact] .pw-steps li:not([aria-current]) {
+  display: none;
+}
+
+/* 3D viewer */
+.structure {
+  display: block;
+  min-width: 0;
+}
+.structure-stage {
+  position: relative;
+  aspect-ratio: 4 / 3;
+  max-width: 40rem;
+  border-radius: var(--radius-s);
+  background: var(--surface-2);
+  overflow: hidden;
+}
+.structure-stage img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.structure-noposter {
+  margin: 0;
+  padding: var(--space-4);
+}
+.structure-canvas {
+  position: absolute;
+  inset: 0;
+}
+.structure[data-loaded] [data-poster] {
+  display: none;
+}
+.structure [hidden] {
+  display: none !important;
+}
+.structure [data-load] {
+  margin: var(--space-3) 0;
+}
+.structure-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: var(--space-3) 0;
+}
+.structure-desc {
+  max-width: 40rem;
+  margin-top: var(--space-3);
+}
+.structure-desc p {
+  margin: 0 0 var(--space-2);
+}
+.structure-legend {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 var(--space-2);
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+.swatch {
+  display: inline-block;
+  width: 0.9em;
+  height: 0.9em;
+  margin-right: 0.35em;
+  border-radius: 2px;
+  vertical-align: -0.1em;
+  border: 1px solid var(--border-strong);
+}
+/* Same colours as the 3D drawing (scripts/structure-3d.ts). */
+.swatch-grey {
+  background: #9a9a9a;
+}
+.swatch-orange {
+  background: #e66100;
+}

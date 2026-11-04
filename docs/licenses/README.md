@@ -6,7 +6,7 @@ The file records the date and platform of the run. Optional native packages (`li
 
 ## Allowlist
 
-MIT, ISC, BSD-2-Clause, BSD-3-Clause, Apache-2.0, 0BSD, CC0-1.0, BlueOak-1.0.0, and OFL-1.1 for the self-hosted fonts. An SPDX `OR` expression passes when one option is on the list; an `AND` expression passes only when every part is.
+MIT, ISC, BSD-2-Clause, BSD-3-Clause, Apache-2.0, 0BSD, CC0-1.0, BlueOak-1.0.0, OFL-1.1 for the self-hosted fonts, and Zlib (D050) for `pako`, which 3Dmol.js bundles (`(MIT AND Zlib)`). An SPDX `OR` expression passes when one option is on the list; an `AND` expression passes only when every part is.
 
 ## Documented exceptions
 
@@ -27,8 +27,12 @@ Add an exception only for a package that never ships to the browser, and always 
 
 564 packages. On the allowlist (555): MIT 396, ISC 76, Apache-2.0 41, BlueOak-1.0.0 12, BSD-2-Clause 12, BSD-3-Clause 11, CC0-1.0 3, OFL-1.1 2, 0BSD 1, `MIT OR CC0-1.0` 1. Documented exceptions (9): MPL-2.0 4, LGPL-3.0-or-later 1, `Apache-2.0 AND LGPL-3.0-or-later AND MIT` 1, CC-BY-4.0 1, CC-BY-3.0 1, `MIT AND CC-BY-3.0` 1. No package failed. 258 are production dependencies (mostly Astro's build toolchain).
 
+## 2026-11-03 run (macOS, arm64), after adding 3Dmol.js (D050)
+
+570 packages (+6: `3dmol` 2.5.5 BSD-3-Clause, `pako` 2.2.0 and 1.0.11 `(MIT AND Zlib)`, `iobuffer` 5.4.0, `netcdfjs` 3.0.0 and `upng-js` 2.1.0, all MIT). Same 9 documented exceptions. No package failed.
+
 ## Compatibility note
 
-What the browser actually downloads is Preact (MIT), @preact/signals (MIT), ts-fsrs (MIT), idb (ISC), the Pagefind search runtime (MIT) and the Atkinson Hyperlegible Next and Fraunces fonts (OFL-1.1, credited with their license on the Credits page). All are permissive and compatible with the project's MIT code license; the fonts keep their own OFL terms, which allow bundling with any software. Build-time tools (Astro, Vite, sharp, lightningcss) process the site but their code is not redistributed in `dist/`, so their licenses place no conditions on the published site. Site content is licensed separately under CC BY-SA 4.0 (see `LICENSE-CONTENT.md`).
+What the browser actually downloads is Preact (MIT), @preact/signals (MIT), ts-fsrs (MIT), idb (ISC), the Pagefind search runtime (MIT) and the Atkinson Hyperlegible Next and Fraunces fonts (OFL-1.1, credited with their license on the Credits page). Only when a learner presses “Load the 3D view” does the browser also download 3Dmol.js (BSD-3-Clause, with the GLmol, three.js and jQuery notices in its licence file) and the code it bundles: pako (MIT, with the zlib notice), iobuffer, netcdfjs and upng-js (MIT). Their full notices are reproduced on the Licences page, as BSD-3-Clause and MIT require. All are permissive and compatible with the project's MIT code license; the fonts keep their own OFL terms, which allow bundling with any software. Build-time tools (Astro, Vite, sharp, lightningcss) process the site but their code is not redistributed in `dist/`, so their licenses place no conditions on the published site. Site content is licensed separately under CC BY-SA 4.0 (see `LICENSE-CONTENT.md`).
 
 This is an engineering summary, not legal advice.

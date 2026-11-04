@@ -1,0 +1,84 @@
+---
+/**
+ * One pathway (O9): the 2D step schema with previous/next controls, the 3D
+ * structure viewer that follows the current step, and the ordered step list
+ * (our own text, claim markers kept as comments). `compact` (entity page)
+ * shows one step at a time with JS and links to the full page.
+ * Behaviour: scripts/pathway.ts (<ap-pathway>) and scripts/structure-viewer.ts.
+ */
+import { fmt, type Lang } from '../../i18n/index.ts';
+import { tPw, METHOD } from '../../i18n/pathway.ts';
+import type { Pathway, Structure } from '../../lib/schema.ts';
+import { stepHtml } from '../../lib/pathways.ts';
+import { langPath } from '../../lib/url.ts';
+import PathwayDiagram from './PathwayDiagram.astro';
+import StructureViewer from './StructureViewer.astro';
+import './pathway.css';
+
+interface Props {
+  lang: Lang;
+  pathway: Pathway;
+  structures: Map<string, Structure>;
+  compact?: boolean;
+  /** Heading level of each step title (h3 under a page h2). */
+  stepHeading?: 'h3' | 'h4';
+}
+const { lang, pathway, structures, compact = false, stepHeading: Step = 'h3' } = Astro.props;
+const t = (k: Parameters<typeof tPw>[1]) => tPw(lang, k);
+const total = pathway.steps.length;
+---
+
+<ap-pathway
+  class="pathway"
+  data-compact={compact ? '' : undefined}
+  data-t-counter={t('stepOf')}
+  data-t-status={t('stepStatus')}
+>
+  <div class="pw-figure">
+    <div class="pw-diagram-wrap">
+      <div class="pw-controls js-only">
+        <button type="button" class="btn btn-small" data-step-prev>← {t('prev')}</button>
+        <span class="small" data-step-counter>{fmt(t('stepOf'), { n: 1, total })}</span>
+        <button type="button" class="btn btn-small" data-step-next>{t('next')} →</button>
+      </div>
+      <PathwayDiagram lang={lang} pathway={pathway} />
+      <p class="visually-hidden" role="status" data-step-status></p>
+    </div>
+    <StructureViewer lang={lang} pathway={pathway} structures={structures} />
+  </div>
+
+  <ol class="pw-steps" aria-label={t('steps')}>
+    {
+      pathway.steps.map((s, i) => {
+        const st = s.structure ? structures.get(s.structure) : undefined;
+        return (
+          <li id={`step-${s.id}`} value={i + 1} data-step-item>
+            <Step class="pw-step-title" data-step-title>
+              {s.title[lang]}
+            </Step>
+            <p set:html={stepHtml(s.text[lang])} />
+            {st && (
+              <p class="small muted pw-step-structure">
+                {fmt(t('structureLine'), { pdb: st.pdb })} ({METHOD[st.method]?.[lang] ?? st.method}
+                {st.resolution && `, ${st.resolution} Å`}){s.highlight && ` · ${fmt(t('legendHighlight'), { label: s.highlight.label[lang] })}`}.{' '}
+                <strong>{t('note')}:</strong> {st.caveats[lang]}
+              </p>
+            )}
+          </li>
+        );
+      })
+    }
+  </ol>
+  {
+    compact && (
+      <p>
+        <a href={langPath(lang, `pathways/${pathway.id}/`)}>{t('openFull')} →</a>
+      </p>
+    )
+  }
+</ap-pathway>
+
+<script>
+  import '../../scripts/pathway.ts';
+  import '../../scripts/structure-viewer.ts';
+</script>

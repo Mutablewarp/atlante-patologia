@@ -1,0 +1,45 @@
+---
+/**
+ * Original 2D step schema: one box per step, top to bottom, joined by arrows.
+ * <ap-pathway> (scripts/pathway.ts) reveals boxes up to the current step via
+ * data-state; without JS the whole diagram is visible. Text alternative: the
+ * step list next to it (same order, same titles).
+ */
+import type { Lang } from '../../i18n/index.ts';
+import { tPw } from '../../i18n/pathway.ts';
+import type { Pathway } from '../../lib/schema.ts';
+
+interface Props {
+  lang: Lang;
+  pathway: Pathway;
+}
+const { lang, pathway } = Astro.props;
+const W = 320;
+const BOX = 32;
+const GAP = 14;
+const H = pathway.steps.length * (BOX + GAP) - GAP + 4;
+const descId = `pw-diagram-desc-${pathway.id}`;
+---
+
+<svg class="pw-diagram" viewBox={`0 0 ${W} ${H}`} role="img" aria-label={tPw(lang, 'diagram')} aria-describedby={descId}>
+  <desc id={descId}>{tPw(lang, 'diagramDesc')}</desc>
+  <defs>
+    <marker id={`pw-arrow-${pathway.id}`} viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" class="pw-arrow-head"></path>
+    </marker>
+  </defs>
+  {
+    pathway.steps.map((s, i) => {
+      const y = 2 + i * (BOX + GAP);
+      return (
+        <g data-step-box={i}>
+          {i > 0 && <line class="pw-arrow" x1={W / 2} y1={y - GAP} x2={W / 2} y2={y - 1} marker-end={`url(#pw-arrow-${pathway.id})`} />}
+          <rect x="2" y={y} width={W - 4} height={BOX} rx="8" />
+          <text x={W / 2} y={y + BOX / 2} dominant-baseline="central" text-anchor="middle">
+            {`${i + 1}. ${s.short[lang]}`}
+          </text>
+        </g>
+      );
+    })
+  }
+</svg>

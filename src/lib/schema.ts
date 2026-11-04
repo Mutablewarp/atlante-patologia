@@ -336,3 +336,120 @@ export const ledgerSchema = z.object({
   ),
 });
 export type Ledger = z.infer<typeof ledgerSchema>;
+
+// ── Structures — src/content/structures/<id>.yaml (written by scripts/fetch-structures.mjs) ──
+/** PDB entries shown in the 3D pathway viewer (O9). Provenance comes from the RCSB Data API; PDB data are CC0. */
+export const structureSchema = z
+  .object({
+    id: Id,
+    pdb: z.string().regex(/^[0-9][A-Z0-9]{3}$/),
+    title: z.string().min(1), // RCSB title, verbatim
+    method: z.string().min(1),
+    resolution: z.number().positive().optional(), // Å; absent for NMR
+    organisms: z.array(z.string().min(1)).min(1),
+    released: z.coerce.date(),
+    components: z
+      .array(
+        z.object({
+          name: z.string().min(1),
+          organism: z.string().min(1),
+          chains: z.array(z.string().min(1)).min(1),
+          mutations: z.number().int().min(0),
+          fragment: z.string().optional(),
+        }),
+      )
+      .min(1),
+    ligands: z.array(z.object({ id: z.string().min(1), name: z.string().min(1) })).default([]),
+    citation: z
+      .object({
+        title: z.string().min(1),
+        authors: z.string().min(1),
+        journal: z.string().min(1),
+        year: z.number().int(),
+        doi: z.string().optional(),
+        pmid: z.string().regex(/^\d+$/).optional(),
+      })
+      .refine((c) => c.doi || c.pmid, 'citation needs a DOI or a PMID'),
+    /** Construct and organism notes (engineered, non-human, fragment, NMR model, CA-only), our own wording. */
+    caveats: L,
+    file: z.string().regex(/^structures\/[a-z0-9]+\.bcif\.gz$/),
+    bytes: z.number().int().positive(),
+    // The ModelServer `assembly` BinaryCIF output crashes the 3Dmol 2.5.5 parser.
+    modelServerQuery: z.string().refine((q) => !q.startsWith('assembly'), 'never use the /assembly BinaryCIF output'),
+    /** CA-only trace (very large complexes). */
+    coarse: z.boolean(),
+    /** Only these chains are drawn (e.g. one copy of a crystal's asymmetric unit). */
+    show: z.array(z.string().min(1)).optional(),
+    atomCount: z.number().int().positive(),
+    hydrogenAtoms: z.number().int().min(0),
+    extraAltLocAtoms: z.number().int().min(0),
+    chains: z
+      .array(
+        z.object({
+          id: z.string().min(1),
+          atoms: z.number().int().positive(),
+          residues: z.string().optional(),
+          hetero: z.array(z.string()).optional(),
+        }),
+      )
+      .min(1),
+    license: z.literal('CC0-1.0'),
+    sourceUrl: z.url(),
+    retrievedAt: z.coerce.date(),
+  })
+  .superRefine((s, ctx) => {
+    if (s.id !== s.pdb.toLowerCase()) ctx.addIssue({ code: 'custom', path: ['id'], message: 'id must be the lower-case PDB id' });
+    const chains = new Set(s.chains.map((c) => c.id));
+    for (const c of s.show ?? []) if (!chains.has(c)) ctx.addIssue({ code: 'custom', path: ['show'], message: `unknown chain "${c}"` });
+  });
+export type Structure = z.infer<typeof structureSchema>;
+
+// ── Pathways — src/content/pathways/<id>.yaml; claims in docs/ledger/pathway-<id>.yaml ──
+/** What the 3D view highlights for one step: chains, a residue range and/or residue names (ligands). */
+export const highlightSchema = z
+  .object({
+    chains: z.array(z.string().min(1)).optional(),
+    resi: z.string().regex(/^\d+(-\d+)?$/).optional(),
+    resn: z.array(z.string().min(1)).optional(),
+    label: L,
+  })
+  .refine((h) => h.chains || h.resi || h.resn, 'highlight needs chains, resi or resn');
+export const pathwaySchema = z
+  .object({
+    id: Id,
+    title: L,
+    summary: L,
+    /** Entity page that shows the compact block. */
+    entity: Id,
+    module: ModuleId,
+    steps: z
+      .array(
+        z.object({
+          id: Id,
+          title: L,
+          /** Label inside the 2D diagram box (a few words). */
+          short: L,
+          /** Our own wording, with claim markers <!--c:<claim-id>--> after each factual sentence. */
+          text: L,
+          structure: Id.optional(),
+          highlight: highlightSchema.optional(),
+        }),
+      )
+      .min(2),
+    sources: z.array(SourceRef).min(1),
+    reviewStatus: ReviewStatus,
+    reviewedBy: ReviewedBy.optional(),
+    lastUpdated: z.coerce.date(),
+    status: Status,
+  })
+  .superRefine((p, ctx) => {
+    const ids = p.steps.map((s) => s.id);
+    if (new Set(ids).size !== ids.length) ctx.addIssue({ code: 'custom', path: ['steps'], message: 'step ids must be unique' });
+    p.steps.forEach((s, i) => {
+      if (s.highlight && !s.structure)
+        ctx.addIssue({ code: 'custom', path: ['steps', i, 'highlight'], message: 'highlight needs a structure' });
+    });
+    if (p.reviewStatus === 'expert-reviewed' && !p.reviewedBy)
+      ctx.addIssue({ code: 'custom', path: ['reviewedBy'], message: 'reviewedBy is required for expert-reviewed' });
+  });
+export type Pathway = z.infer<typeof pathwaySchema>;

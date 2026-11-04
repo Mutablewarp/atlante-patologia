@@ -1,0 +1,128 @@
+---
+/**
+ * <ap-structure> markup (scripts/structure-viewer.ts): a poster and a written
+ * description per structure (only the current one visible), the "Load the 3D
+ * view" button, our own toolbar and a status line. The poster PNGs are made
+ * offline by scripts/render-posters.mjs. Without JS: the first poster and its
+ * description.
+ */
+import { Image } from 'astro:assets';
+import type { ImageMetadata } from 'astro';
+import { fmt, type Lang } from '../../i18n/index.ts';
+import { tPw, METHOD } from '../../i18n/pathway.ts';
+import type { Pathway, Structure } from '../../lib/schema.ts';
+import { viewerSteps } from '../../lib/pathways.ts';
+import { url } from '../../lib/url.ts';
+
+interface Props {
+  lang: Lang;
+  pathway: Pathway;
+  structures: Map<string, Structure>;
+}
+const { lang, pathway, structures } = Astro.props;
+const t = (k: Parameters<typeof tPw>[1]) => tPw(lang, k);
+const posters = import.meta.glob<{ default: ImageMetadata }>('../../assets/structures/*.png', { eager: true });
+const steps = viewerSteps(pathway, structures, lang);
+// Each structure once, in step order, with the highlight label of the first step that uses it.
+const used = pathway.steps
+  .filter((s, i) => s.structure && pathway.steps.findIndex((x) => x.structure === s.structure) === i)
+  .map((s) => ({ s: structures.get(s.structure!)!, label: s.highlight?.label[lang], poster: posters[`../../assets/structures/${s.structure}.png`]?.default }));
+const first = used[0]?.s.id;
+const authors = (a: string) => {
+  const list = a.split('; ');
+  return list.length > 2 ? `${list[0]} et al.` : list.join(', ');
+};
+---
+
+{
+  used.length > 0 && (
+    <ap-structure
+      class="structure"
+      data-base={url('')}
+      data-t-loading={t('loading3d')}
+      data-t-ready={fmt(t('loaded3d'), { title: pathway.title[lang] })}
+      data-t-fail={t('no3d')}
+      data-t-none={t('noStructure')}
+    >
+      <script type="application/json" data-steps set:html={JSON.stringify(steps)} />
+      <div class="structure-stage" data-stage role="group" aria-label={t('stageHelp')}>
+        {used.map(({ s, poster }) =>
+          poster ? (
+            <Image
+              src={poster}
+              alt={fmt(t('poster'), { pdb: s.pdb })}
+              widths={[320, 640]}
+              sizes="(min-width: 1024px) 30rem, 100vw"
+              data-for={s.id}
+              data-poster
+              hidden={s.id !== first}
+            />
+          ) : (
+            <p class="structure-noposter small muted" data-for={s.id} data-poster hidden={s.id !== first}>
+              {fmt(t('structureLine'), { pdb: s.pdb })}
+            </p>
+          ),
+        )}
+        <div class="structure-canvas" data-canvas />
+      </div>
+      <button type="button" class="btn js-only" data-load>{t('load3d')}</button>
+      <p class="small muted" data-fallback hidden>{t('no3d')}</p>
+      <div class="structure-tools" role="toolbar" aria-label={t('tools3d')} data-tools hidden>
+        <button type="button" class="btn btn-small" data-act="left">{t('rotateLeft')}</button>
+        <button type="button" class="btn btn-small" data-act="right">{t('rotateRight')}</button>
+        <button type="button" class="btn btn-small" data-act="in">{t('zoomIn')}</button>
+        <button type="button" class="btn btn-small" data-act="out">{t('zoomOut')}</button>
+        <button type="button" class="btn btn-small" data-act="reset">{t('reset')}</button>
+        <button type="button" class="btn btn-small" data-act="labels" aria-pressed="true">{t('labels')}</button>
+        <button type="button" class="btn btn-small" data-act="prev">← {t('prev')}</button>
+        <button type="button" class="btn btn-small" data-act="next">{t('next')} →</button>
+      </div>
+      {used.map(({ s, label }) => (
+        <div class="structure-desc small" data-for={s.id} hidden={s.id !== first}>
+          <p>
+            <strong>{fmt(t('structureLine'), { pdb: s.pdb })}</strong> — <span lang="en">{s.title}</span>
+          </p>
+          <p>
+            {t('method')}: {METHOD[s.method]?.[lang] ?? s.method}
+            {s.resolution && `, ${t('resolution')} ${s.resolution} Å`} · {t('organisms')}: <i>{s.organisms.join(', ')}</i>
+          </p>
+          <p>
+            {t('shows')}:{' '}
+            {s.components.map((c, i) => (
+              <>
+                {i > 0 && '; '}
+                <span lang="en">{c.name}</span> ({t('chains')} {c.chains.join(', ')})
+              </>
+            ))}
+            {s.ligands.length > 0 && `; ${s.ligands.map((l) => l.id).join(', ')}`}.
+          </p>
+          <p>
+            <strong>{t('note')}:</strong> {s.caveats[lang]}
+          </p>
+          <ul class="structure-legend" aria-label={t('view3d')}>
+            <li>
+              <span class="swatch swatch-grey" aria-hidden="true" />
+              {t('legendBase')}
+            </li>
+            {label && (
+              <li>
+                <span class="swatch swatch-orange" aria-hidden="true" />
+                {fmt(t('legendHighlight'), { label })}
+              </li>
+            )}
+          </ul>
+          <p class="muted">
+            {t('citation')}: {authors(s.citation.authors)}, <span lang="en">{s.citation.journal}</span> ({s.citation.year})
+            {s.citation.doi && (
+              <>
+                {' '}· <a href={`https://doi.org/${s.citation.doi}`} rel="noopener">doi:{s.citation.doi}</a>
+              </>
+            )}{' '}
+            · <a href={s.sourceUrl} rel="noopener">RCSB PDB {s.pdb}</a> · {t('dataCredit')}
+          </p>
+        </div>
+      ))}
+      <p class="visually-hidden" role="status" data-status />
+    </ap-structure>
+  )
+}

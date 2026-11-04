@@ -1,0 +1,105 @@
+# Intrinsic (mitochondrial) apoptosis, step by step (owner decision O9).
+# Claims: docs/ledger/pathway-intrinsic-apoptosis.yaml. Structures: src/content/structures/<id>.yaml.
+id: intrinsic-apoptosis
+title:
+  it: "Apoptosi intrinseca (via mitocondriale)"
+  en: "Intrinsic (mitochondrial) apoptosis"
+summary:
+  it: "Dieci passi, dallo stress della cellula alla rimozione dei corpi apoptotici, con le strutture proteiche reali che puoi ruotare."
+  en: "Ten steps, from cell stress to the removal of apoptotic bodies, with real protein structures you can rotate."
+entity: apoptosis
+module: g01
+steps:
+  - id: cell-stress
+    title: { it: "Stress dentro la cellula", en: "Stress inside the cell" }
+    short: { it: "Stress cellulare", en: "Cell stress" }
+    text:
+      it: "La via intrinseca è un programma di suicidio che la cellula avvia quando è lei stessa sotto stress.<!--c:intrinsic-apoptosis-c001--> Inneschi tipici sono un danno al DNA troppo grave per essere riparato, avvertito soprattutto tramite p53, e una liberazione prolungata di calcio dal reticolo endoplasmatico.<!--c:intrinsic-apoptosis-c002-->"
+      en: "The intrinsic pathway is a suicide program that a cell starts when it is itself under stress.<!--c:intrinsic-apoptosis-c001--> Typical triggers are DNA damage too severe to repair, sensed mainly through p53, and prolonged release of calcium from the endoplasmic reticulum.<!--c:intrinsic-apoptosis-c002-->"
+  - id: bh3-only
+    title: { it: "Si accendono le proteine solo-BH3", en: "BH3-only proteins switch on" }
+    short: { it: "Proteine solo-BH3", en: "BH3-only proteins" }
+    text:
+      it: "I segnali di stress agiscono soprattutto attraverso i membri solo-BH3 della famiglia BCL-2, come BIM, BID, BAD, PUMA e NOXA.<!--c:intrinsic-apoptosis-c003--> Si attivano perché ne aumenta la trascrizione o perché cambiano forma: p53, per esempio, fa trascrivere di più PUMA e NOXA.<!--c:intrinsic-apoptosis-c004-->"
+      en: "Stress signals act mostly through the BH3-only members of the BCL-2 family, such as BIM, BID, BAD, PUMA and NOXA.<!--c:intrinsic-apoptosis-c003--> They are switched on by more transcription or by a change of shape: p53, for example, raises the transcription of PUMA and NOXA.<!--c:intrinsic-apoptosis-c004-->"
+  - id: bcl2-balance
+    title: { it: "L’equilibrio della famiglia BCL-2 si sposta", en: "The BCL-2 family balance tips" }
+    short: { it: "BCL-2 frena BAX/BAK", en: "BCL-2 holds BAX/BAK" }
+    text:
+      it: "Nella cellula sana BCL-2, BCL-xL e MCL-1, che sono anti-apoptotiche, tengono BAX e BAK legate e inattive sulla membrana mitocondriale esterna: di base prevale la sopravvivenza.<!--c:intrinsic-apoptosis-c005--> Le proteine solo-BH3 attive si inseriscono in questi complessi e liberano BAX e BAK.<!--c:intrinsic-apoptosis-c006--> Il farmaco venetoclax, usato nella leucemia linfatica cronica, blocca BCL-2 e spinge così la cellula tumorale verso l’apoptosi; il modello 3D lo mostra legato a BCL-2.<!--c:intrinsic-apoptosis-c007-->"
+      en: "In a healthy cell the anti-apoptotic proteins BCL-2, BCL-xL and MCL-1 keep BAX and BAK bound and inactive at the outer mitochondrial membrane, so the default state favours survival.<!--c:intrinsic-apoptosis-c005--> Active BH3-only proteins wedge into these complexes and set BAX and BAK free.<!--c:intrinsic-apoptosis-c006--> The drug venetoclax, used in chronic lymphocytic leukaemia, blocks BCL-2 and so pushes the cancer cell toward apoptosis; the 3D model shows it bound to BCL-2.<!--c:intrinsic-apoptosis-c007-->"
+    structure: 6o0k
+    highlight:
+      resn: [LBM]
+      label: { it: "venetoclax", en: "venetoclax" }
+  - id: bax-bak
+    title: { it: "BAX e BAK aprono la membrana esterna", en: "BAX and BAK open the outer membrane" }
+    short: { it: "BAX/BAK: MOMP", en: "BAX/BAK: MOMP" }
+    text:
+      it: "Una volta libere, BAX (per lo più nel citosol) e BAK (per lo più sul mitocondrio) si raccolgono nella membrana mitocondriale esterna e vi aprono dei canali: è la permeabilizzazione della membrana esterna (MOMP).<!--c:intrinsic-apoptosis-c008--> Nella forma inattiva e solubile di BAX mostrata in 3D, l’ultima elica (α9) è ripiegata nel solco che i membri della famiglia BCL-2 usano per legarsi fra loro.<!--c:intrinsic-apoptosis-c009-->"
+      en: "Once free, BAX (mostly in the cytosol) and BAK (mostly on the mitochondrion) gather in the outer mitochondrial membrane and open channels in it: this is outer membrane permeabilisation (MOMP).<!--c:intrinsic-apoptosis-c008--> In the inactive, soluble form of BAX shown in 3D, its last helix (α9) is folded into the groove that BCL-2 family members use to bind one another.<!--c:intrinsic-apoptosis-c009-->"
+    structure: 1f16
+    highlight:
+      resi: "170-189"
+      label: { it: "elica α9", en: "helix α9" }
+  - id: cyt-c-release
+    title: { it: "Esce il citocromo c", en: "Cytochrome c escapes" }
+    short: { it: "Esce il citocromo c", en: "Cytochrome c out" }
+    text:
+      it: "Attraverso la membrana esterna aperta passano nel citosol proteine dello spazio intermembrana: citocromo c, SMAC e AIF.<!--c:intrinsic-apoptosis-c010--> Il citocromo c di norma trasporta elettroni nella catena respiratoria, quindi la sua perdita riduce anche la produzione di ATP.<!--c:intrinsic-apoptosis-c011-->"
+      en: "Through the opened outer membrane, proteins of the intermembrane space pass into the cytosol: cytochrome c, SMAC and AIF.<!--c:intrinsic-apoptosis-c010--> Cytochrome c normally carries electrons in the respiratory chain, so losing it also lowers ATP production.<!--c:intrinsic-apoptosis-c011-->"
+    structure: 3zcf
+    highlight:
+      resn: [HEC]
+      label: { it: "gruppo eme", en: "haem group" }
+  - id: apoptosome
+    title: { it: "Si forma l’apoptosoma", en: "The apoptosome forms" }
+    short: { it: "Apoptosoma (APAF1)", en: "Apoptosome (APAF1)" }
+    text:
+      it: "Nel citosol il citocromo c si lega ad APAF1, che insieme all’ATP si assembla nell’apoptosoma e vi richiama la procaspasi-9.<!--c:intrinsic-apoptosis-c012--> Il modello 3D mostra l’apoptosoma come una ruota di sette molecole di APAF1, ciascuna legata a un citocromo c.<!--c:intrinsic-apoptosis-c013-->"
+      en: "In the cytosol cytochrome c binds APAF1, which together with ATP assembles into the apoptosome and recruits procaspase-9.<!--c:intrinsic-apoptosis-c012--> The 3D model shows the apoptosome as a wheel of seven APAF1 molecules, each bound to one cytochrome c.<!--c:intrinsic-apoptosis-c013-->"
+    structure: 3jbt
+    highlight:
+      chains: [B, D, F, H, J, L, N]
+      label: { it: "citocromo c", en: "cytochrome c" }
+  - id: caspase-9
+    title: { it: "Caspasi-9, IAP e SMAC", en: "Caspase-9, IAPs and SMAC" }
+    short: { it: "Caspasi-9 (iniziatrice)", en: "Caspase-9 (initiator)" }
+    text:
+      it: "Nell’apoptosoma la procaspasi-9 diventa caspasi-9 attiva, la caspasi iniziatrice di questa via.<!--c:intrinsic-apoptosis-c014--> Le proteine inibitrici dell’apoptosi (IAP) possono bloccare le caspasi-9, -3 e -7; SMAC, uscita dal mitocondrio, lega le IAP e toglie questo freno.<!--c:intrinsic-apoptosis-c015--> Nel modello 3D il dominio BIR3 della IAP chiamata XIAP tiene la caspasi-9 come singola unità inattiva.<!--c:intrinsic-apoptosis-c016-->"
+      en: "In the apoptosome procaspase-9 becomes active caspase-9, the initiator caspase of this pathway.<!--c:intrinsic-apoptosis-c014--> Inhibitor of apoptosis proteins (IAPs) can block caspases-9, -3 and -7; SMAC, released from the mitochondrion, binds the IAPs and lifts this brake.<!--c:intrinsic-apoptosis-c015--> In the 3D model the BIR3 domain of the IAP called XIAP holds caspase-9 as a single, inactive unit.<!--c:intrinsic-apoptosis-c016-->"
+    structure: 1nw9
+    highlight:
+      chains: [A]
+      label: { it: "XIAP (BIR3)", en: "XIAP (BIR3)" }
+  - id: executioners
+    title: { it: "Entrano in gioco le caspasi esecutrici", en: "Executioner caspases take over" }
+    short: { it: "Caspasi-3 e -7", en: "Caspases-3 and -7" }
+    text:
+      it: "La caspasi-9 attiva taglia e attiva le procaspasi esecutrici -3, -6 e -7; la caspasi-3 è quella attivata più spesso.<!--c:intrinsic-apoptosis-c017--> Le caspasi esecutrici tagliano molte proteine senza selezione e, arrivati a questo punto, il processo non si può più invertire.<!--c:intrinsic-apoptosis-c018-->"
+      en: "Active caspase-9 cleaves and activates the executioner procaspases-3, -6 and -7; caspase-3 is the one activated most often.<!--c:intrinsic-apoptosis-c017--> Executioner caspases cut many proteins without selection, and once this stage is reached the process cannot be reversed.<!--c:intrinsic-apoptosis-c018-->"
+    structure: 1pau
+    highlight:
+      chains: [C]
+      label: { it: "inibitore Ac-DEVD-CHO", en: "Ac-DEVD-CHO inhibitor" }
+  - id: substrates
+    title: { it: "Substrati tagliati e aspetto della cellula", en: "Cut substrates and what the cell looks like" }
+    short: { it: "Substrati e morfologia", en: "Substrates, morphology" }
+    text:
+      it: "La caspasi-3 attiva una DNasi (CAD) che spezza il DNA dei cromosomi, e le caspasi tagliano le lamine nucleari, proteine del citoscheletro come la fodrina, e PARP.<!--c:intrinsic-apoptosis-c019--> Al microscopio il nucleo si condensa e si frammenta, la membrana forma bolle e la cellula si divide in corpi apoptotici avvolti da membrana, mentre la membrana plasmatica resta integra.<!--c:intrinsic-apoptosis-c020-->"
+      en: "Caspase-3 activates a DNase (CAD) that breaks chromosomal DNA, and caspases cut nuclear lamins, cytoskeletal proteins such as fodrin, and PARP.<!--c:intrinsic-apoptosis-c019--> Under the microscope the nucleus condenses and fragments, the membrane forms blebs and the cell splits into membrane-bound apoptotic bodies, while the plasma membrane stays intact.<!--c:intrinsic-apoptosis-c020-->"
+  - id: efferocytosis
+    title: { it: "Fosfatidilserina ed efferocitosi", en: "Phosphatidylserine and efferocytosis" }
+    short: { it: "PS → efferocitosi", en: "PS → efferocytosis" }
+    text:
+      it: "La cellula che muore emette segnali «trovami» e porta segnali «mangiami», come la fosfatidilserina, dal foglietto interno a quello esterno della membrana, mentre i segnali «non mangiarmi» calano.<!--c:intrinsic-apoptosis-c021--> Macrofagi e cellule vicine inglobano i corpi apoptotici prima che le loro membrane si rompano (efferocitosi): il contenuto non si riversa fuori e non segue infiammazione.<!--c:intrinsic-apoptosis-c022-->"
+      en: "The dying cell sends “find me” signals and moves “eat me” signals such as phosphatidylserine from the inner to the outer leaflet of its membrane, while “don’t eat me” signals fall.<!--c:intrinsic-apoptosis-c021--> Macrophages and neighbouring cells engulf the apoptotic bodies before their membranes break (efferocytosis), so the contents do not leak and no inflammation follows.<!--c:intrinsic-apoptosis-c022-->"
+sources:
+  - { source: rubin-8e, chapter: "1", pages: "41, 46-54" }
+  - { source: birkinshaw-2019 }
+  - { source: suzuki-2000 }
+  - { source: zhou-2015 }
+  - { source: shiozaki-2003 }
+reviewStatus: ai-generated-unreviewed
+lastUpdated: 2026-11-03
+status: published
