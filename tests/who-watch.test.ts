@@ -219,7 +219,7 @@ describe('pipeline (offline)', () => {
     };
     const results = await readAll({ get, budgetMs: 0 });
     expect(calls).toBe(0);
-    expect(results.every((r: { error?: Error }) => /deadline/.test(r.error!.message))).toBe(true);
+    expect(results.every((r) => /deadline/.test(String((r.error as Error).message)))).toBe(true);
   });
   it('refuses to write a baseline while a source is broken', async () => {
     const results = await readAll({ get: fakeGet({ online: 'garbage' }) });
