@@ -167,6 +167,8 @@ export const IMAGE_LICENSES = [
   'original', 'PD', 'CC0-1.0', 'CC-BY-2.0', 'CC-BY-2.5', 'CC-BY-3.0', 'CC-BY-4.0',
   'CC-BY-SA-2.0', 'CC-BY-SA-2.5', 'CC-BY-SA-3.0', 'CC-BY-SA-4.0',
 ] as const;
+export const IMAGE_SECTIONS = ['transverse', 'longitudinal', 'oblique', 'frozen', 'paraffin', 'smear', 'cytospin', 'other'] as const;
+export const IMAGE_OBJECTIVES = ['2x', '4x', '10x', '20x', '40x', '60x', '100x'] as const;
 export const imageSchema = z
   .object({
     id: Id,
@@ -182,8 +184,20 @@ export const imageSchema = z
     patientIdentifiable: z.literal(false),
     ownerApproved: z.boolean().default(false),
     verifiedBy: z.object({ who: z.enum(['agent', 'human']), name: z.string().min(1), date: z.coerce.date() }),
+    /** Images of the same lesion (other stains, sections, magnifications) share a group id; the viewer offers a switch. */
+    group: Id.optional(),
+    /** As the source states it; image-meta.ts `stainCode()` maps it to the controlled list. */
     stain: z.string().optional(),
+    /** As the source states it; `powerOf()` reads low / medium (intermediate) / high power from it. */
     magnification: z.string().optional(),
+    /** Objective, only when the source states it. */
+    objective: z.enum(IMAGE_OBJECTIVES).optional(),
+    /** Microns per pixel of this file, only when the source states it; enables the scale bar. */
+    mpp: z.number().positive().optional(),
+    section: z.enum(IMAGE_SECTIONS).optional(),
+    orientation: L.optional(),
+    /** One short "how to look at this slide" hint shown under the viewer. */
+    lookFor: L.optional(),
     caption: L,
     alt: L,
     annotations: z

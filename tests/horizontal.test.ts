@@ -110,6 +110,6 @@ describe('horizontal fixtures are valid and stay drafts/fixtures', () => {
       expect(entitySchema.parse(read(`entities/${e}/meta.yaml`)).status).toBe('draft');
     for (const g of ['_fixture-term', '_fixture-term-b']) glossarySchema.parse(read(`glossary/${g}.yaml`));
     for (const p of ['_fixture-path-vertical', '_fixture-path-horizontal']) pathSchema.parse(read(`paths/${p}.yaml`));
-    imageSchema.parse(read('images/_fixture-grid.yaml'));
+    for (const i of ['_fixture-grid', '_fixture-grid-b']) imageSchema.parse(read(`images/${i}.yaml`));
   });
 });

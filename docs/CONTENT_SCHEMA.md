@@ -179,7 +179,14 @@ image = z.object({
   patientIdentifiable: z.literal(false),
   ownerApproved: z.boolean().default(false),        // must be true for any CC-BY-SA-*
   verifiedBy: z.object({ who: z.enum(['agent','human']), name: z.string(), date: z.coerce.date() }),
-  stain: z.string().optional(), magnification: z.string().optional(),
+  group: Id.optional(),                            // images of the same lesion: other stains, sections, magnifications
+  stain: z.string().optional(),                    // as the source states it; normalised by stainCode() (below)
+  magnification: z.string().optional(),            // as the source states it; powerOf() reads low / medium / high power
+  objective: z.enum(['2x','4x','10x','20x','40x','60x','100x']).optional(),   // only when the source states it
+  mpp: z.number().positive().optional(),           // microns per pixel of this file, only when the source states it
+  section: z.enum(['transverse','longitudinal','oblique','frozen','paraffin','smear','cytospin','other']).optional(),
+  orientation: L.optional(),                       // orientation notes (which side is the lumen, the capsule…)
+  lookFor: L.optional(),                           // one short "how to look at this slide" hint, shown under the viewer
   caption: L,                                      // didactic: what to look at, key finding, approach (low → high power)
   alt: L,
   annotations: z.array(z.object({
@@ -188,6 +195,13 @@ image = z.object({
   })).default([]),                                 // normalized coords; drive labels, progressive reveal, occlusion
 });
 ```
+
+**Stains, sections and magnifications** (`src/lib/image-meta.ts`, used by the viewer):
+
+- `stain` keeps the source's wording. `stainCode()` maps it to the controlled list `HE`, `PAS`, `PAS-D`, `Perls`, `von Kossa`, `Alizarin red`, `Congo red`, `Masson trichrome`, `reticulin`, `Oil Red O`, `Sudan`, `Ziehl-Neelsen`, `Grocott`, `Gram`, `Giemsa`, `IHC:<marker>`, `other`. A figure that names several stains (a composite panel) maps to `other`. Write the stain so the code is right, e.g. `H&E`, `PAS-D`, `immunohistochemistry for CD20`.
+- `magnification` keeps the source's wording; write `low power`, `medium power` (or `intermediate power`) or `high power` first so `powerOf()` can read it. Add `objective` only when the source names the objective.
+- `mpp` turns on the scale bar. Never estimate it: no stated calibration, no `mpp`, no scale bar.
+- `group`: every image of one lesion (same case or same teaching set) gets the same group id. The viewer shows a switch (radio group) labelled with stain · section · power · objective, ordered low to high power; each image keeps its own alt, labels, caption and credit. The zoom level is kept on switch and the position resets, because sections are not registered to each other. An entity or pattern lists **one** image of the group (the one shown first); the viewer finds the others, so do not list them again.
 
 The Credits page and per-image credit lines are generated from these files. An image without complete data cannot be referenced. The entity uses a placeholder, and the gap is logged in `docs/MISSING_ASSETS.md`.
 
