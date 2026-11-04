@@ -7,6 +7,7 @@
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Breadcrumb from '../../../components/nav/Breadcrumb.astro';
 import ImageViewer from '../../../components/horizontal/ImageViewer.astro';
+import TextSize from '../../../components/nav/TextSize.astro';
 import { LANGS, fmt, formatDate, type Lang } from '../../../i18n/index.ts';
 import { tAtlas, tEntity } from '../../../i18n/pages.ts';
 import { tHz } from '../../../i18n/horizontal.ts';
@@ -57,6 +58,7 @@ const captionId = 'matrix-caption';
     ]}
   />
   <article class="pattern">
+    <div class="read-progress js-only" aria-hidden="true"><span data-read-progress></span></div>
     {pattern.status === 'draft' && <p class="notice notice-caution draft-banner" role="note">{t('draftBanner')}</p>}
     <header class="entity-head">
       <p class="kicker">{t('patternKicker')}</p>
@@ -64,18 +66,18 @@ const captionId = 'matrix-caption';
       <p class="muted" lang={other}><i>{pattern.names[other]}</i></p>
       <p class="lede">{pattern.summary[lang]}</p>
       <ul class="badges">
-        <li>
-          {
-            pattern.reviewStatus === 'expert-reviewed' ? (
+        {/* No per-page AI badge (O11): the footer and the Method page carry the AI notice. */}
+        {
+          pattern.reviewStatus === 'expert-reviewed' && (
+            <li>
               <span class="badge badge-published">✓ {tEntity(lang, 'reviewExpert')}</span>
-            ) : (
-              <span class="badge badge-eosin">⚠︎ {tEntity(lang, 'reviewUnreviewed')}</span>
-            )
-          }
-        </li>
+            </li>
+          )
+        }
         <li><span class="badge">{fmt(tEntity(lang, 'updated'), { date: formatDate(lang, pattern.lastUpdated) })}</span></li>
         <li><span class="badge">{t('patternProcess')}: {processLabel}</span></li>
       </ul>
+      <div class="entity-toolbar js-only"><TextSize lang={lang} /></div>
     </header>
 
     <div class="prose" set:html={html} />
