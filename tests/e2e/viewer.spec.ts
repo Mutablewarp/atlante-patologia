@@ -2,9 +2,10 @@
  * Image viewer (components/horizontal/ImageViewer.astro, scripts/image-viewer.ts):
  * pan buttons (WCAG 2.5.7), keyboard and double-click zoom, the sharper srcset
  * candidate on zoom, full screen on a phone (Escape and Back close it; axe),
- * labels that never cover each other, the credit line in the page language and
- * the stain/magnification switch. The switch runs on the draft fixture group
- * (fixture-grid + fixture-grid-b), so it needs a PREVIEW_DRAFTS=1 build:
+ * labels that never cover each other, the original SVG diagrams, the credit
+ * line in the page language and the stain/magnification switch. The switch
+ * runs on the draft fixture group (fixture-grid + fixture-grid-b), so it needs
+ * a PREVIEW_DRAFTS=1 build:
  *   npx playwright test -c tests/e2e/study.config.ts tests/e2e/viewer.spec.ts
  */
 import { existsSync, readFileSync, readdirSync } from 'node:fs';
@@ -187,6 +188,22 @@ test('labels stay inside the image and never cover each other on any labelled pa
         }),
       );
     await expect.poll(problems, { message: path }).toEqual([]);
+  }
+});
+
+test('the original SVG diagrams render on the card, not the "not available yet" placeholder', async ({ page }) => {
+  for (const [path, missing] of [
+    ['it/e/apoptosis/', 'Immagine non ancora disponibile.'],
+    ['en/e/apoptosis/', 'Image not available yet.'],
+  ] as const) {
+    await page.goto(path);
+    await expect(page.getByText(missing)).toHaveCount(0);
+    const diagrams = page.locator('.viewer-canvas img[src$=".svg"]');
+    await expect(diagrams).toHaveCount(2);
+    for (const img of await diagrams.all()) {
+      await img.scrollIntoViewIfNeeded();
+      await expect.poll(() => img.evaluate((i: HTMLImageElement) => i.complete && i.naturalWidth), { message: path }).toBeGreaterThan(0);
+    }
   }
 });
 
