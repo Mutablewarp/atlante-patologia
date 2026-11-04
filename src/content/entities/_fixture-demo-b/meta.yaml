@@ -38,6 +38,11 @@ chain:
   - pathology: { it: "Lesione segnaposto C", en: "Placeholder lesion C" }
     sign: { it: "Segno segnaposto C", en: "Placeholder sign C" }
     lab: { it: "Esame segnaposto C", en: "Placeholder test C" }
+examQuestions:
+  - it: "Domanda d'esame segnaposto B1: come si presenta la voce B?"
+    en: "Placeholder exam question B1: how does entry B present?"
+    focus: [clinical, diagnosis]
+    level: 3
 images:
   - { id: fixture-grid, role: micro }
   - { id: fixture-gross-b, role: gross, pairWith: fixture-micro-b }

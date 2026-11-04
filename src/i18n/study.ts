@@ -318,4 +318,130 @@ export const tS = defineStrings({
     it: 'Prova a rispondere con parole tue, a voce o per iscritto, prima di rileggere la scheda.',
     en: 'Try to answer in your own words, aloud or in writing, before re-reading the card.',
   },
+
+  // ── Confidence (quiz, review, quick check) ────────────────────────────
+  confidenceLegend: { it: 'Quanto sei sicuro?', en: 'How sure are you?' },
+  confidenceHelp: { it: 'Scegli prima di vedere la risposta.', en: 'Choose before you see the answer.' },
+  conf1: { it: 'Tiro a indovinare', en: 'Guessing' },
+  conf2: { it: 'Abbastanza sicuro', en: 'Fairly sure' },
+  conf3: { it: 'Sicuro', en: 'Sure' },
+  qcKnew: { it: 'Lo sapevo', en: 'I knew it' },
+  qcMissed: { it: 'Non lo sapevo', en: 'I did not know it' },
+  qcSaved: { it: 'Risposta registrata.', en: 'Answer recorded.' },
+
+  // ── Calibration (Me) ──────────────────────────────────────────────────
+  calibTitle: { it: 'Sicurezza e risultati', en: 'Confidence and results' },
+  calibIntro: {
+    it: 'Quanto spesso hai risposto bene a seconda di quanto ti sentivi sicuro (quiz, ripasso e verifiche rapide).',
+    en: 'How often you were right, by how sure you felt (quizzes, review and quick checks).',
+  },
+  calibRow: { it: '{right} giuste su {total} ({pct} %)', en: '{right} right of {total} ({pct} %)' },
+  calibNone: { it: 'nessuna risposta', en: 'no answers' },
+  adviceTooFew: {
+    it: 'Servono almeno 10 risposte con il livello di sicurezza per un confronto utile. Continua a indicarlo prima di rispondere.',
+    en: 'At least 10 answers with a confidence level are needed for a useful comparison. Keep choosing it before you answer.',
+  },
+  adviceOverconfident: {
+    it: 'Quando ti senti sicuro sbagli più di una volta su quattro. Prima di rispondere, prova a spiegare il perché: se non ci riesci, non sei davvero sicuro.',
+    en: 'When you feel sure you are wrong more than one time in four. Before answering, try to explain why: if you cannot, you are not really sure.',
+  },
+  adviceUnderconfident: {
+    it: 'Anche quando tiri a indovinare rispondi spesso bene: sai più di quanto pensi. Fidati un po’ di più e ripassa per rendere solide queste conoscenze.',
+    en: 'Even when guessing you are often right: you know more than you think. Trust yourself a little more and review to make this knowledge solid.',
+  },
+  adviceCalibrated: {
+    it: 'La tua sicurezza corrisponde bene ai risultati. Usala per decidere cosa ripassare: prima i temi in cui ti senti incerto.',
+    en: 'Your confidence matches your results well. Use it to decide what to review: first the topics where you feel unsure.',
+  },
+  overTitle: { it: 'Eri sicuro ma hai sbagliato', en: 'Sure but wrong' },
+  overHelp: {
+    it: 'Questi argomenti contengono probabilmente un’idea sbagliata: rileggi la scheda prima di ripassare il resto.',
+    en: 'These topics probably hold a misconception: re-read the card before reviewing anything else.',
+  },
+  overReason: { it: '{n} risposte sicure ma sbagliate', en: '{n} sure but wrong answers' },
+  overEmpty: { it: 'Nessuna risposta sicura sbagliata finora.', en: 'No sure-but-wrong answers so far.' },
+  luckyTitle: { it: 'Indovinate per fortuna', en: 'Lucky guesses' },
+  luckyHelp: {
+    it: 'Qui hai risposto bene tirando a indovinare: la conoscenza non è ancora stabile, ripassale presto.',
+    en: 'Here you were right while guessing: the knowledge is not stable yet, review these soon.',
+  },
+  luckyReason: { it: '{n} risposte giuste tirando a indovinare', en: '{n} right answers while guessing' },
+  luckyEmpty: { it: 'Nessuna risposta indovinata per fortuna finora.', en: 'No lucky guesses so far.' },
+
+  // ── Possible exam questions (entity page) ─────────────────────────────
+  examTitle: { it: 'Possibili domande d’esame', en: 'Possible exam questions' },
+  examNote: {
+    it: 'Domande possibili, scritte per esercitarsi: non sono domande ufficiali.',
+    en: 'Possible questions written for practice: they are not official exam questions.',
+  },
+  checkAgainst: { it: 'Rispondi a voce, poi controlla:', en: 'Answer aloud, then check:' },
+  level: { it: 'Livello: {level}', en: 'Level: {level}' },
+  level1: { it: 'base', en: 'basic' },
+  level2: { it: 'intermedio', en: 'intermediate' },
+  level3: { it: 'avanzato', en: 'advanced' },
+  examPractice: { it: 'Allenati con la simulazione dell’orale', en: 'Practise with the oral exam simulator' },
+
+  // ── Oral exam simulator ───────────────────────────────────────────────
+  oralTitle: { it: 'Simulazione dell’orale', en: 'Oral exam simulator' },
+  oralIntro: {
+    it: 'Tre domande estratte da tutto il programma, una alla volta. Rispondi a voce, prevedi il tuo punteggio, poi controlla nella scheda e autovalutati.',
+    en: 'Three questions drawn from the whole programme, one at a time. Answer aloud, predict your score, then check in the card and assess yourself.',
+  },
+  oralNoContent: {
+    it: 'Non ci sono ancora domande d’esame pubblicate. Arrivano con i contenuti dei capitoli.',
+    en: 'There are no published exam questions yet. They arrive with the chapter content.',
+  },
+  useTimer: { it: 'Usa un timer per ogni domanda', en: 'Use a timer for each question' },
+  minutesPerAnswer: { it: 'Minuti per risposta', en: 'Minutes per answer' },
+  answerAloud: {
+    it: 'Rispondi a voce, come se fossi all’esame. Quando hai finito, passa alla tua previsione.',
+    en: 'Answer aloud, as if you were in the exam. When you are done, go on to your prediction.',
+  },
+  doneAnswering: { it: 'Ho risposto', en: 'I have answered' },
+  oralTimeUp: { it: 'Tempo scaduto: concludi la risposta.', en: 'Time is up: wrap up your answer.' },
+  predictLegend: { it: 'Che punteggio ti aspetti?', en: 'What score do you expect?' },
+  predictHelp: {
+    it: 'Decidi prima di controllare: confrontare previsione e autovalutazione allena a capire quanto sai davvero.',
+    en: 'Decide before you check: comparing prediction and self-assessment trains you to know what you really know.',
+  },
+  score1: { it: '1 · insufficiente', en: '1 · poor' },
+  score2: { it: '2 · parziale', en: '2 · partial' },
+  score3: { it: '3 · buono', en: '3 · good' },
+  score4: { it: '4 · ottimo', en: '4 · excellent' },
+  toCheck: { it: 'Passa alla verifica', en: 'Go to the check' },
+  newTab: { it: '(si apre in una nuova scheda)', en: '(opens in a new tab)' },
+  rubricTitle: { it: 'Autovalutazione', en: 'Self-assessment' },
+  rubricHelp: { it: 'Dai un voto da 1 a 4 a ogni aspetto della tua risposta.', en: 'Rate each aspect of your answer from 1 to 4.' },
+  completeness: { it: 'Completezza: hai toccato i punti delle sezioni indicate?', en: 'Completeness: did you cover the points in the listed sections?' },
+  accuracy: { it: 'Correttezza: quello che hai detto è giusto?', en: 'Accuracy: was what you said correct?' },
+  structure: { it: 'Struttura: la risposta aveva un ordine logico?', en: 'Structure: did the answer follow a logical order?' },
+  terminology: { it: 'Terminologia: hai usato i termini tecnici corretti?', en: 'Terminology: did you use the right technical terms?' },
+  saveNext: { it: 'Salva e continua', en: 'Save and continue' },
+  oralDone: { it: 'Sessione completata', en: 'Session complete' },
+  colQuestion: { it: 'Domanda', en: 'Question' },
+  colPredicted: { it: 'Previsto', en: 'Predicted' },
+  colAssessed: { it: 'Autovalutato', en: 'Self-assessed' },
+  oralBiasTooFew: {
+    it: 'Completa almeno 3 domande per confrontare previsioni e autovalutazioni.',
+    en: 'Complete at least 3 questions to compare predictions and self-assessments.',
+  },
+  oralBiasOver: {
+    it: 'Prevedi in media più di quanto poi ti assegni: prima di dire «la so», prova a ripeterla a voce dall’inizio alla fine.',
+    en: 'On average you predict more than you then award yourself: before saying "I know it", try to say it aloud from start to finish.',
+  },
+  oralBiasUnder: {
+    it: 'Prevedi in media meno di quanto poi ti assegni: sai più di quanto credi. Allenati a rispondere con sicurezza.',
+    en: 'On average you predict less than you then award yourself: you know more than you think. Practise answering with confidence.',
+  },
+  oralBiasCalibrated: {
+    it: 'Le tue previsioni corrispondono bene alle autovalutazioni.',
+    en: 'Your predictions match your self-assessments well.',
+  },
+  oralAverages: {
+    it: 'Media previsto {p} · media autovalutato {a} (su 4, {n} domande)',
+    en: 'Mean predicted {p} · mean self-assessed {a} (out of 4, {n} questions)',
+  },
+  historyTitle: { it: 'Sessioni precedenti', en: 'Previous sessions' },
+  historyEmpty: { it: 'Nessuna sessione salvata su questo dispositivo.', en: 'No sessions saved on this device.' },
+  historyRow: { it: '{date}: {n} domande, autovalutato {a} su 4', en: '{date}: {n} questions, self-assessed {a} out of 4' },
 });

@@ -13,6 +13,7 @@ import { siteData, entityBody, images as getImages, PREVIEW_DRAFTS } from './con
 import { splitSections } from './sections.ts';
 import { clozeCards, qaCards, occlusionCards, type StudyCard, type OcclusionImage } from './cards.ts';
 import type { QuizQuestion } from './quiz.ts';
+import type { OralQuestion } from './oral.ts';
 import { langPath } from './url.ts';
 import { SECTIONS, QUICK_CHECK } from '../i18n/sections.ts';
 
@@ -146,4 +147,21 @@ export async function studyIndex(lang: Lang): Promise<StudyIndex> {
       })),
     entities: ents,
   };
+}
+
+/** Every possible exam question of the visible entities (/[lang]/data/oral.json, oral simulator). */
+export async function oralQuestions(lang: Lang): Promise<OralQuestion[]> {
+  const { entities } = await siteData();
+  return entities.flatMap((e) =>
+    // `?? []`: a content cache written before examQuestions existed (node_modules/.astro) lacks the default.
+    (e.examQuestions ?? []).map((q, i) => ({
+      id: `${e.id}#${i + 1}`,
+      entity: e.id,
+      name: e.names[lang],
+      module: e.module,
+      level: q.level,
+      text: q[lang],
+      focus: q.focus.map((s) => ({ id: s, label: sectionLabel(lang, s), href: langPath(lang, `e/${e.id}/#${s}`) })),
+    })),
+  );
 }

@@ -1,0 +1,16 @@
+---
+import StudyPage from '../../../../components/study/StudyPage.astro';
+import OralExam from '../../../../islands/OralExam.tsx';
+import { langPaths, type Lang } from '../../../../i18n/index.ts';
+import { tS } from '../../../../i18n/study.ts';
+import { tNav } from '../../../../i18n/nav.ts';
+import { langPath } from '../../../../lib/url.ts';
+
+export const getStaticPaths = langPaths;
+const lang = Astro.params.lang as Lang;
+---
+
+<StudyPage lang={lang} tab="study" title={tS(lang, 'oralTitle')} intro={tS(lang, 'oralIntro')} parent={{ label: tNav(lang, 'study'), href: langPath(lang, 'study/') }}>
+  <p class="small muted">{tS(lang, 'examNote')}</p>
+  <OralExam client:load lang={lang} />
+</StudyPage>

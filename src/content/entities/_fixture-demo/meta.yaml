@@ -57,6 +57,15 @@ chain:
   - pathology: { it: "Lesione segnaposto A", en: "Placeholder lesion A" }
     sign: { it: "Segno segnaposto A", en: "Placeholder sign A" }
     lab: { it: "Esame segnaposto A", en: "Placeholder test A" }
+examQuestions:
+  - it: "Domanda d'esame segnaposto 1: descrivi la voce di prova."
+    en: "Placeholder exam question 1: describe the demo entry."
+    focus: [definition, pathogenesis]
+    level: 1
+  - it: "Domanda d'esame segnaposto 2: confronta la voce di prova con la voce B."
+    en: "Placeholder exam question 2: compare the demo entry with entry B."
+    focus: [differential]
+    level: 2
 images:
   - id: fixture-gross-a
     role: gross

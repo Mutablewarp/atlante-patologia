@@ -3,6 +3,7 @@
  * src/content.config.ts and by Vitest validators.
  */
 import { z } from 'astro/zod';
+import { SECTIONS } from '../i18n/sections.ts';
 
 // ── §0 Shared types ──────────────────────────────────────────────────────────
 export const Id = z.string().regex(/^[a-z0-9]+(-[a-z0-9]+)*$/, 'ids are lowercase-kebab-case');
@@ -64,6 +65,20 @@ export const entitySchema = z
     quickCheck: z.array(z.object({ id: Id, q: L, a: L, kind: z.enum(['short', 'free']) })).min(3),
     selfExplain: z.array(L).default([]),
     chain: z.array(z.object({ pathology: L, sign: L, lab: L })).default([]),
+    /**
+     * Possible oral exam questions: questions only, no new facts. `focus` names
+     * the sections where the learner checks the answer; level 1 basic … 3 advanced.
+     */
+    examQuestions: z
+      .array(
+        z.object({
+          it: z.string().min(1),
+          en: z.string().min(1),
+          focus: z.array(z.enum(SECTIONS.map((s) => s.id) as [string, ...string[]])).min(1),
+          level: z.union([z.literal(1), z.literal(2), z.literal(3)]),
+        }),
+      )
+      .default([]),
     images: z
       .array(
         z.object({

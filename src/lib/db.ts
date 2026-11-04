@@ -8,32 +8,33 @@
  */
 import { openDB, type IDBPDatabase } from 'idb';
 import type { CardRecord } from './srs.ts';
+import type { Confidence } from './metacog.ts';
+import type { OralSession } from './oral.ts';
 
 export const DB_NAME = 'atlas';
-/** IndexedDB version: bump and add an upgrade step when stores change. */
-export const DB_VERSION = 1;
-/** Export file format version. */
-export const SCHEMA_VERSION = 1;
+/** IndexedDB version: bump and add the new stores to STORES_ADDED_IN (never change an existing store). */
+export const DB_VERSION = 2;
+/** Export file format version. Older files (1…SCHEMA_VERSION) still import. */
+export const SCHEMA_VERSION = 2;
 export const APP_ID = 'atlante-patologia';
 
-export const STORES = [
-  'cards',
-  'reviewLog',
-  'bookmarks',
-  'notes',
-  'highlights',
-  'errors',
-  'readProgress',
-  'recent',
-  'quizAttempts',
-  'plan',
-  'settings',
-] as const;
+/** Stores created by each IndexedDB version. Upgrades only add stores, so existing records are kept. */
+export const STORES_ADDED_IN = {
+  1: ['cards', 'reviewLog', 'bookmarks', 'notes', 'highlights', 'errors', 'readProgress', 'recent', 'quizAttempts', 'plan', 'settings'],
+  2: ['oralSessions'],
+} as const;
+export const STORES = [...STORES_ADDED_IN[1], ...STORES_ADDED_IN[2]] as const;
 export type StoreName = (typeof STORES)[number];
+
+/** Stores the upgrade from `oldVersion` (0 = new database) to DB_VERSION must create. */
+export function storesToCreate(oldVersion: number): StoreName[] {
+  return Object.entries(STORES_ADDED_IN).flatMap(([v, names]) => (Number(v) > oldVersion ? [...names] : []));
+}
 
 type Base = { id: string; updated: number; deleted?: boolean };
 export type Names = { it: string; en: string };
-export type ReviewLogRecord = Base & { card: string; entity: string; module: string; rating: number; state: number; at: number };
+/** `confidence`: asked before the answer was shown (absent in records made before v2 or when skipped). */
+export type ReviewLogRecord = Base & { card: string; entity: string; module: string; rating: number; state: number; at: number; confidence?: Confidence };
 /** Bookmark and note ids are the entity id. Names are resolved from the study index when listed. */
 export type BookmarkRecord = Base;
 export type NoteRecord = Base & { text: string };
@@ -47,9 +48,13 @@ export type QuizAttemptRecord = Base & {
   entities: string[];
   module: string;
   correct: boolean;
+  /** topic | mixed | exam | weak (quiz) or quick (entity quick check, self-graded). */
   mode: string;
   at: number;
+  confidence?: Confidence;
 };
+/** One simulated oral exam; saved after every question so an interrupted session is kept. */
+export type OralSessionRecord = Base & Omit<OralSession, 'id'>;
 export type PlanRecord = Base & { examDate: string; hoursPerWeek: number };
 export type SettingRecord = Base & { value: unknown };
 
@@ -65,6 +70,7 @@ export type StoreRecord = {
   quizAttempts: QuizAttemptRecord;
   plan: PlanRecord;
   settings: SettingRecord;
+  oralSessions: OralSessionRecord;
 };
 
 export const RECENT_MAX = 20;
@@ -133,7 +139,7 @@ let handle: Promise<IDBPDatabase> | undefined;
 export function db(): Promise<IDBPDatabase> {
   handle ??= openDB(DB_NAME, DB_VERSION, {
     upgrade(d, oldVersion) {
-      if (oldVersion < 1) for (const s of STORES) d.createObjectStore(s, { keyPath: 'id' });
+      for (const s of storesToCreate(oldVersion)) d.createObjectStore(s, { keyPath: 'id' });
     },
   });
   return handle;

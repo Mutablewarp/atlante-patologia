@@ -429,3 +429,78 @@ ap-path-progress progress {
   display: flex;
   align-items: center;
 }
+
+/* ── Confidence before the answer (quiz, review) ────────────────────── */
+.confidence,
+.score-scale {
+  border: 0;
+  padding: 0;
+  margin: var(--space-3) 0;
+}
+.confidence legend,
+.score-scale legend {
+  font-weight: 700;
+  margin-bottom: var(--space-1);
+}
+.confidence-options,
+.score-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 var(--space-4);
+}
+
+/* ── Calibration (Me) ───────────────────────────────────────────────── */
+.calib-bars {
+  display: grid;
+  gap: var(--space-2);
+  padding: 0;
+  list-style: none;
+}
+.calib-bars li {
+  display: grid;
+  grid-template-columns: minmax(8rem, auto) 1fr;
+  gap: var(--space-1) var(--space-3);
+  align-items: center;
+}
+.calib-bars li > .small {
+  grid-column: 2;
+}
+.calib-label {
+  font-weight: 600;
+  grid-row: span 2;
+}
+.calib-track {
+  display: block;
+  height: 0.75rem;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-s);
+  overflow: hidden;
+}
+.calib-fill {
+  display: block;
+  height: 100%;
+  background: var(--hema);
+}
+.calib-topics {
+  margin-top: var(--space-4);
+}
+
+/* ── Oral exam simulator ────────────────────────────────────────────── */
+.oral {
+  display: grid;
+  gap: var(--space-3);
+}
+.oral .btn {
+  justify-self: start;
+}
+.oral-question {
+  font-size: var(--step-1);
+  font-weight: 600;
+  margin: 0;
+}
+.oral-focus {
+  margin: 0;
+}
+.oral-history {
+  padding-left: var(--space-5);
+}

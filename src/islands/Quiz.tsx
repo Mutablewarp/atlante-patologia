@@ -7,17 +7,29 @@ import { getAll, put } from '../lib/db.ts';
 import { shuffle, interleave, weakQuestions, type QuizQuestion, type Attempt } from '../lib/quiz.ts';
 import { loadIndex, loadQuestions, useLoad, param, type StudyIndex } from './client.ts';
 import { Figure } from './CardFace.tsx';
+import { ConfidencePicker } from './Confidence.tsx';
+import type { Confidence } from '../lib/metacog.ts';
 
 type Mode = 'topic' | 'mixed' | 'exam' | 'weak';
 const MODES: Mode[] = ['topic', 'mixed', 'exam', 'weak'];
-type Answer = { choice?: string; text?: string; grade?: 'right' | 'partial' | 'wrong' };
+type Answer = { choice?: string; text?: string; grade?: 'right' | 'partial' | 'wrong'; confidence?: Confidence };
 type T = (k: Parameters<typeof tS>[1]) => string;
 type Run = { questions: QuizQuestion[]; mode: Mode; seconds?: number; freeRecall: boolean };
 
-async function saveAttempt(q: QuizQuestion, correct: boolean, mode: Mode) {
+async function saveAttempt(q: QuizQuestion, correct: boolean, mode: Mode, confidence?: Confidence) {
   const at = Date.now();
   try {
-    await put('quizAttempts', { id: `${q.id}@${at}`, question: q.id, entities: q.entities, module: q.module, correct, mode, at, updated: at });
+    await put('quizAttempts', {
+      id: `${q.id}@${at}`,
+      question: q.id,
+      entities: q.entities,
+      module: q.module,
+      correct,
+      mode,
+      at,
+      updated: at,
+      ...(confidence ? { confidence } : {}),
+    });
   } catch {
     /* storage unavailable: the quiz still works */
   }
@@ -169,15 +181,15 @@ function Runner(props: Run & { lang: Lang; t: T; index: StudyIndex; onRestart: (
 
   async function check() {
     setChecked(true);
-    if (q.kind !== 'short') await saveAttempt(q, isRight(q, a), mode);
+    if (q.kind !== 'short') await saveAttempt(q, isRight(q, a), mode, a.confidence);
   }
   async function gradeShort(grade: Answer['grade']) {
     setA({ grade });
     setChecked(true);
-    await saveAttempt(q, grade === 'right', mode);
+    await saveAttempt(q, grade === 'right', mode, a.confidence);
   }
   async function finish() {
-    if (exam) for (const x of questions) if (x.kind !== 'short' && answers[x.id]?.choice) await saveAttempt(x, isRight(x, answers[x.id]), mode);
+    if (exam) for (const x of questions) if (x.kind !== 'short' && answers[x.id]?.choice) await saveAttempt(x, isRight(x, answers[x.id]), mode, answers[x.id]?.confidence);
     setFinished(true);
   }
   function next() {
@@ -212,7 +224,7 @@ function Runner(props: Run & { lang: Lang; t: T; index: StudyIndex; onRestart: (
                     x.kind === 'short' && !answers[x.id]?.grade
                       ? (grade) => {
                           setAnswers((all) => ({ ...all, [x.id]: { ...all[x.id], grade } }));
-                          void saveAttempt(x, grade === 'right', mode);
+                          void saveAttempt(x, grade === 'right', mode, answers[x.id]?.confidence);
                         }
                       : undefined
                   }
@@ -262,6 +274,7 @@ function Runner(props: Run & { lang: Lang; t: T; index: StudyIndex; onRestart: (
             freeRecall={props.freeRecall}
             onChoose={(choice) => !checked && setA({ choice })}
             onText={(text) => setA({ text })}
+            onConfidence={(confidence) => setA({ confidence })}
             onGrade={exam ? undefined : gradeShort}
           />
           <p class="quiz-actions">
@@ -291,6 +304,7 @@ function QuestionView(props: {
   freeRecall: boolean;
   onChoose?: (id: string) => void;
   onText?: (s: string) => void;
+  onConfidence?: (c: Confidence) => void;
   onGrade: ((g: Answer['grade']) => void) | undefined;
 }) {
   const { t, q, a, reveal } = props;
@@ -339,6 +353,15 @@ function QuestionView(props: {
             );
           })}
         </fieldset>
+      )}
+      {props.onConfidence && (
+        <ConfidencePicker
+          lang={props.lang}
+          name={`conf-${q.id}`}
+          value={a.confidence}
+          disabled={reveal || modelShown || !!a.grade}
+          onChange={props.onConfidence}
+        />
       )}
       {q.kind === 'short' && (
         <div class="short-answer">

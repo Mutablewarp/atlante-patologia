@@ -1,0 +1,135 @@
+---
+/**
+ * "Possible exam questions" (entity meta `examQuestions`), shown after the
+ * quick check. Questions only: each one expands (native <details>, no JS
+ * needed) to the sections where the learner checks the answer.
+ *
+ * It also carries the quick-check confidence prompt (template + script below):
+ * the entity page gives the study layer one include, and this is it.
+ */
+import type { Lang } from '../../i18n/index.ts';
+import { fmt } from '../../i18n/index.ts';
+import { tS } from '../../i18n/study.ts';
+import { SECTIONS } from '../../i18n/sections.ts';
+import { CONFIDENCE } from '../../lib/metacog.ts';
+import type { Entity } from '../../lib/schema.ts';
+import { langPath } from '../../lib/url.ts';
+
+interface Props {
+  lang: Lang;
+  entity: Entity;
+}
+const { lang, entity } = Astro.props;
+const t = (k: Parameters<typeof tS>[1]) => tS(lang, k);
+const label = (id: string) => SECTIONS.find((s) => s.id === id)?.title[lang] ?? id;
+// `?? []`: a content cache written before examQuestions existed (node_modules/.astro) lacks the default.
+const questions = entity.examQuestions ?? [];
+---
+
+{
+  questions.length > 0 && (
+    <section class="exam-questions" id="exam-questions" aria-labelledby="exam-questions-title">
+      <h2 id="exam-questions-title">{t('examTitle')}</h2>
+      <p class="small muted">{t('examNote')}</p>
+      <ol>
+        {questions.map((q) => (
+          <li>
+            <details>
+              <summary>
+                <span class="eq-text">{q[lang]}</span> <span class="small muted">{fmt(t('level'), { level: t(`level${q.level}`) })}</span>
+              </summary>
+              <p class="eq-check">{t('checkAgainst')}</p>
+              <ul>
+                {q.focus.map((f) => (
+                  <li>
+                    <a href={`#${f}`}>{label(f)}</a>
+                  </li>
+                ))}
+              </ul>
+            </details>
+          </li>
+        ))}
+      </ol>
+      <p>
+        <a href={langPath(lang, 'study/oral/')}>{t('examPractice')} →</a>
+      </p>
+    </section>
+  )
+}
+
+<template data-qc-confidence data-entity={entity.id} data-module={entity.module} data-ids={JSON.stringify(entity.quickCheck.map((q) => q.id))}>
+  <fieldset class="qc-confidence">
+    <legend>{t('confidenceLegend')} <span class="small muted">{t('confidenceHelp')}</span></legend>
+    {
+      CONFIDENCE.map((c) => (
+        <label class="qc-radio">
+          <input type="radio" name="qc-conf" value={c} />
+          <span>{t(`conf${c}`)}</span>
+        </label>
+      ))
+    }
+  </fieldset>
+  <div class="qc-grade" role="group" aria-label={t('selfGrade')} hidden>
+    <span>{t('selfGrade')}</span>
+    <button type="button" class="btn btn-small" data-grade="1" aria-pressed="false">{t('qcKnew')}</button>
+    <button type="button" class="btn btn-small" data-grade="0" aria-pressed="false">{t('qcMissed')}</button>
+    <span class="qc-live small" role="status" data-saved={t('qcSaved')}></span>
+  </div>
+</template>
+
+<script>
+  import '../../scripts/quick-confidence.ts';
+</script>
+
+<style>
+  .exam-questions {
+    margin-top: var(--space-6);
+  }
+  .exam-questions ol {
+    padding-left: var(--space-5);
+  }
+  .exam-questions > ol > li {
+    margin-bottom: var(--space-3);
+  }
+  .exam-questions summary {
+    cursor: pointer;
+    min-height: 1.5rem;
+  }
+  .eq-text {
+    font-weight: 600;
+  }
+  .eq-check {
+    margin: var(--space-2) 0 var(--space-1);
+  }
+  .qc-confidence {
+    border: 0;
+    padding: 0;
+    margin: 0 0 var(--space-2);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 var(--space-4);
+  }
+  .qc-confidence legend {
+    padding: 0;
+    margin-bottom: var(--space-1);
+  }
+  .qc-radio {
+    display: inline-flex;
+    gap: var(--space-2);
+    align-items: center;
+    min-height: 2.75rem;
+    cursor: pointer;
+  }
+  .qc-radio input {
+    width: 1.25rem;
+    height: 1.25rem;
+    accent-color: var(--hema);
+  }
+  .qc-grade:not([hidden]) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    align-items: center;
+    margin-top: var(--space-2);
+  }
+</style>

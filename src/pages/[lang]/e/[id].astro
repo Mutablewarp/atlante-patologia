@@ -14,6 +14,7 @@ import { LENSES } from '../../../lib/schema.ts';
 import { withCrossLinks, imageById, patternsForEntity, SECTION_FOR_ROLE } from '../../../lib/horizontal.ts';
 import EntityActions from '../../../components/entity/EntityActions.astro';
 import SelfExplain from '../../../components/entity/SelfExplain.astro';
+import ExamQuestions from '../../../components/entity/ExamQuestions.astro'; // study branch: exam questions + quick-check confidence
 import { LANGS, fmt, type Lang } from '../../../i18n/index.ts';
 import { tEntity, tAtlas } from '../../../i18n/pages.ts';
 import { SECTIONS, QUICK_CHECK, PRINT_SECTIONS } from '../../../i18n/sections.ts';
@@ -180,6 +181,7 @@ const contexts = LENSES.flatMap((lens) =>
             </ol>
           </div>
         </section>
+        <ExamQuestions lang={lang} entity={entity} />
 
         <SelfExplain lang={lang} prompts={entity.selfExplain} />
 
