@@ -79,6 +79,12 @@ describe('pathway content gate', () => {
           expect(sources.has(c.sourceRef.source), c.claimId).toBe(true);
           if (NEEDS_SECOND_SOURCE.has(c.status)) expect(sources.has(c.secondSource!.source), c.claimId).toBe(true);
         }
+        // CONTENT_SCHEMA §8: a sources-differ row needs an aside in its step, in both languages, naming that claim.
+        for (const c of ledger.claims.filter((x) => x.status === 'sources-differ')) {
+          const step = p.steps.find((s) => s.id === c.section)!;
+          for (const lang of ['it', 'en'] as const) expect(claimMarkers(step.sourcesDiffer?.[lang] ?? '').has(c.claimId), `${c.claimId}/${lang}`).toBe(true);
+        }
+        for (const s of p.steps) for (const id of claimMarkers(s.sourcesDiffer?.en ?? '')) expect(rows.get(id)?.status, `${s.id}: ${id}`).toBe('sources-differ');
       });
       it('uses known structures, highlights parts that exist in them, and has a poster for each', () => {
         for (const s of p.steps) {

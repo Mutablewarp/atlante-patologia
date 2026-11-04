@@ -36,20 +36,20 @@ claims:
     date: 2026-11-03
   - claimId: intrinsic-apoptosis-c005
     section: bcl2-balance
-    statement: "In a healthy cell anti-apoptotic BCL-2, BCL-xL and MCL-1 keep BAX and BAK bound and inactive at the outer mitochondrial membrane; the default is survival."
+    statement: "In a healthy cell anti-apoptotic BCL-2, BCL-xL and MCL-1 inhibit BAK (mainly mitochondrial) and BAX (largely cytoplasmic); the default is survival."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "49" }
     status: verified
     verifiedBy: agent
-    verifier: "pathway-author-agent"
-    date: 2026-11-03
+    verifier: "fixer-agent (reworded after review; checked against rubin-8e p. 49/52 and PubMed abstracts, 2026-11-04)"
+    date: 2026-11-04
   - claimId: intrinsic-apoptosis-c006
     section: bcl2-balance
-    statement: "Active BH3-only proteins insert into BCL-2/BAX-BAK complexes and free BAX and BAK."
+    statement: "Active BH3-only proteins free BAX and BAK from anti-apoptotic BCL-2 family members or activate them directly."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "49" }
     status: verified
     verifiedBy: agent
-    verifier: "pathway-author-agent"
-    date: 2026-11-03
+    verifier: "fixer-agent (reworded after review; checked against rubin-8e p. 49/52 and PubMed abstracts, 2026-11-04)"
+    date: 2026-11-04
   - claimId: intrinsic-apoptosis-c007
     section: bcl2-balance
     statement: "Venetoclax, used in chronic lymphocytic leukaemia, antagonises BCL-2 and promotes apoptosis; PDB 6O0K shows it bound to BCL-2."
@@ -136,20 +136,22 @@ claims:
     date: 2026-11-03
   - claimId: intrinsic-apoptosis-c017
     section: executioners
-    statement: "Caspase-9 cleaves procaspases-3, -6 and -7; caspase-3 is the most commonly activated executioner caspase."
+    statement: "Caspase-9 cleaves procaspases-3 and -7 and caspase-3 then activates caspase-6; caspase-3 is the most commonly activated executioner caspase."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "47, 52" }
-    status: verified
+    status: sources-differ
+    secondSource: { source: slee-1999, locator: "abstract: caspase-3 is required for the activation of caspase-6 downstream of caspase-9 (the reference lists -3, -6 and -7 as cleaved by caspase-9)" }
     verifiedBy: agent
-    verifier: "pathway-author-agent"
-    date: 2026-11-03
+    verifier: "fixer-agent (reworded after review; checked against rubin-8e p. 49/52 and PubMed abstracts, 2026-11-04)"
+    date: 2026-11-04
   - claimId: intrinsic-apoptosis-c018
     section: executioners
-    statement: "Executioner caspases degrade proteins indiscriminately, and apoptosis is irreversible once begun."
+    statement: "Executioner caspases cut many proteins after an aspartate within a preferred short motif; caspase-3 favours DExD sequences such as DEVD."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "46, 48" }
-    status: verified
+    status: sources-differ
+    secondSource: { source: thornberry-1997, locator: "abstract: DEXD specificity of caspases-2, -3 and -7 (the reference says proteins are degraded indiscriminately)" }
     verifiedBy: agent
-    verifier: "pathway-author-agent"
-    date: 2026-11-03
+    verifier: "fixer-agent (reworded after review; checked against rubin-8e p. 49/52 and PubMed abstracts, 2026-11-04)"
+    date: 2026-11-04
   - claimId: intrinsic-apoptosis-c019
     section: substrates
     statement: "Caspase-3 activates CAD, which degrades chromosomal DNA; caspase targets include lamins, alpha-fodrin and PARP."
@@ -182,3 +184,12 @@ claims:
     verifiedBy: agent
     verifier: "pathway-author-agent"
     date: 2026-11-03
+  - claimId: intrinsic-apoptosis-c023
+    section: executioners
+    statement: "Once executioner caspases are active the cell almost always dies."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "46" }
+    status: sources-differ
+    secondSource: { source: tang-2012, locator: "abstract: most cells recovered after caspase-3 activation once the inducer was removed (the reference calls apoptosis irreversible)" }
+    verifiedBy: agent
+    verifier: "fixer-agent (PubMed abstract check of second sources, 2026-11-04)"
+    date: 2026-11-04

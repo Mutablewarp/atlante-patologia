@@ -431,6 +431,8 @@ export const pathwaySchema = z
           short: L,
           /** Our own wording, with claim markers <!--c:<claim-id>--> after each factual sentence. */
           text: L,
+          /** Shown as <aside class="sources-differ"> under the step; needed for each `sources-differ` ledger row of the step. */
+          sourcesDiffer: L.optional(),
           structure: Id.optional(),
           highlight: highlightSchema.optional(),
         }),

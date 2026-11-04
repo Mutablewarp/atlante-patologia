@@ -31,8 +31,8 @@ const ENTRIES = [
   {
     pdb: '6O0K',
     caveats: {
-      it: 'Costrutto ingegnerizzato: un breve tratto di BCL-2 è sostituito da un segmento di BCL-xL. Il farmaco legato è venetoclax.',
-      en: 'Engineered construct: a short stretch of BCL-2 is replaced by a segment of BCL-xL. The bound drug is venetoclax.',
+      it: 'Costrutto ingegnerizzato: la lunga ansa flessibile di BCL-2 (residui 35–91) è sostituita da una breve ansa di BCL-xL e manca l’àncora di membrana C-terminale (residui 208–239). Il farmaco legato è venetoclax.',
+      en: 'Engineered construct: BCL-2’s long flexible loop (residues 35–91) is replaced by a short loop from BCL-xL, and the C-terminal membrane anchor (residues 208–239) is missing. The bound drug is venetoclax.',
     },
   },
   {
@@ -54,8 +54,8 @@ const ENTRIES = [
     pdb: '3JBT',
     coarse: true,
     caveats: {
-      it: 'Il citocromo c di questo modello è di cavallo (Equus caballus); Apaf-1 è umano. Per alleggerire il file si mostra solo l’atomo Cα di ogni residuo.',
-      en: 'The cytochrome c in this model is from horse (Equus caballus); Apaf-1 is human. To keep the file small only the Cα atom of each residue is shown.',
+      it: 'Il citocromo c di questo modello è di cavallo (Equus caballus); Apaf-1 è umano. Per alleggerire il file si mostra solo l’atomo Cα di ogni residuo. I domini CARD che richiamano la procaspasi-9 non sono risolti e la caspasi-9 non fa parte del modello; eme e dATP non sono disegnati in questo file solo Cα.',
+      en: 'The cytochrome c in this model is from horse (Equus caballus); Apaf-1 is human. To keep the file small only the Cα atom of each residue is shown. The CARD domains that recruit procaspase-9 are not resolved and caspase-9 is not in this model; the haem and dATP are not drawn in this Cα-only file.',
     },
   },
   {

@@ -57,6 +57,7 @@ const total = pathway.steps.length;
               {s.title[lang]}
             </Step>
             <p set:html={stepHtml(s.text[lang])} />
+            {s.sourcesDiffer && <aside class="sources-differ small" set:html={stepHtml(s.sourcesDiffer[lang])} />}
             {st && (
               <p class="small muted pw-step-structure">
                 {fmt(t('structureLine'), { pdb: st.pdb })} ({METHOD[st.method]?.[lang] ?? st.method}
