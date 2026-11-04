@@ -75,3 +75,51 @@ Open (not done in this pass):
 - Keyboard test gaps found in review, not fixed: the `en/atlas/` walk stops at `MAX_STOPS` (80) before the footer; the `seen` check never fires (its id includes the stop index); an off-screen element is reported as "hidden behind sticky bars", never as "off screen".
 - No screen-reader pass and no real iOS/Android device test of offline packs.
 - Gates do not check that a commit author is in `REVIEWERS` (CONTENT_SCHEMA §1a); `no-verbatim --staged` reads the working-tree copy, not the staged blob.
+
+## V2.1 — Reading and study layer — merged on `main` 2026-11-04 (not pushed)
+
+Merged with `git merge --no-ff` in this order: `v2/who-watch` (`420c5af`), `v2/image-viewer` (`7074475`), `v2/study-metacognition` (`1e36f5c`), `v2/3d-pathways` (`b272493`), `v2/reading-ux` (`bbf688f`).
+
+| Branch | What is on `main` |
+|---|---|
+| who-watch | WHO volumes in `sources.yaml` with series, edition, status and `supersedes`; `classification` block on entities with a newer-edition notice; weekly `who-watch.yml` + `scripts/who-watch.mjs` that open review issues; reviewed baseline of 2026-11-03; `docs/WHO_WATCH.md` |
+| image-viewer | image `group`, `objective`, `mpp`, `section`, `orientation`, `lookFor`; pan buttons (WCAG 2.5.7), keyboard zoom, full screen dialog, sharper zoom via srcset, stain/section switch, scale bar only with `mpp` |
+| study-metacognition | learner DB v2 (adds stores only, v1 upgrade tested); confidence before the answer in quick check, quiz and review; calibration in Me; optional `examQuestions`; oral simulator; export schema 2 that still imports v1 files |
+| 3d-pathways | intrinsic apoptosis pathway page, 3Dmol 2.5.5 loaded on demand (D050), four CC0 PDB structures with provenance and posters; the 3Dmol chunk and `/structures/*` stay out of the precache (dist test) |
+| reading-ux | fluid type, warm paper and soft graphite themes, A-/A+ text size, reading progress, study callouts, Continue links, no per-page AI badge, AI-assistance line in every footer and a rewritten Method page (O11) |
+
+Conflicts, all resolved by keeping both sides: `sources.yaml` (WHO volumes + PDB citations), entity page imports (ExamQuestions + EntityPathways), study hub (oral card + pathway cards), `EntityHeader.astro` (ClassificationNote + TextSize). `package-lock.json` changed with 3dmol, so `npm ci` ran after that merge.
+
+Integration fixes:
+
+- `ccbd560` fix(a11y): the quick-check confidence radios were 20 × 20 px, so the target-size test failed on every entity page (10 of 10 projects). Radios and checkboxes are now `max(1.5rem, 24px)`.
+- `3ecba3f` test(e2e): the confidence test pressed "3" before the review key handler had re-bound after the reveal (2 of 6 runs failed). It now waits for the answer to take focus; 24 of 24 runs passed.
+
+Verification on `main` after the fixes:
+
+| Command | Result |
+|---|---|
+| `npm run guard` | ok (691 checked files) |
+| `npm run check` | 0 errors, 0 warnings, 0 hints (199 files) |
+| `npm test` | 190 passed, 2 skipped |
+| `npm run build` | 320 pages; Pagefind 286 pages; `sw-manifest: shell 60 files, 2 offline pack(s)`; Vite chunk-size and `[EVAL]` warnings from the lazy 3Dmol chunk |
+| `npm run test:dist` | 15/15 passed |
+| `npm run contrast` | all 86 pairs pass |
+| `npm run licenses` | 570 packages, 9 documented exceptions |
+| `E2E_ENGINES=chromium,webkit npx playwright test --workers=4` | 580 passed, 120 skipped by design |
+| `npm run test:e2e:study` / `npm run test:e2e:offline` | 18/18 and 6/6 passed |
+| `npm run lighthouse` | `/it/`, `/en/atlas/`, `/it/about/`: performance 99, 100 in the other three |
+| `node scripts/lighthouse-assert.mjs` on 7 v2 pages | performance 91 (`/it/e/apoptosis/`) to 97 (pathway, oral, study hub); 100 accessibility, best practices, SEO; no CLS loss reported |
+| `NO_VERBATIM_WORK=…/.work node scripts/no-verbatim.mjs` | 306 files, 0 failed |
+| public-naming grep (teacher surnames, channel names, course and sheet codes) over tracked files, `dist/` and the new commit messages | 0 hits |
+
+Open after V2.1:
+
+- Not pushed: CI, deploy and the live smoke test have not run on these commits. The WHO watch workflow has never run on GitHub (`gh workflow run who-watch.yml` once after the push confirms labels and issue creation).
+- Study blocks: no "Come si studia" section and no renamed labels; no published `examQuestions`, so the oral simulator shows its empty state in production (V2.2).
+- Image viewer: no magnification presets; existing images still use free-text magnification. No published image has a `group`.
+- Pathway step text is `ai-generated-unreviewed` and was verified by the authoring agent, not a separate verifier (CONTENT_SCHEMA §8). The pathway page is not in the command-palette page list.
+- Entity pages score 91–94 on Lighthouse performance (render-blocking CSS ~900 ms); the margin over 90 is small.
+- Full Playwright runs here use `--workers=4`; at default parallelism builders saw timeouts on this machine.
+- Not done: Firefox locally, real iOS/Android devices, Lighthouse on Linux. No DECISIONS entries yet for DB v2, export schema 2 and "extend the in-house viewer, no OpenSeadragon yet"; CONTENT_SCHEMA does not yet describe the new source fields and the `classification` block.
+- The A-/A+ control appears only on entity and pattern pages; the size applies site-wide.
