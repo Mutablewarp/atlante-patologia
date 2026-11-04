@@ -345,9 +345,17 @@ export const tS = defineStrings({
     it: 'Quando ti senti sicuro sbagli più di una volta su quattro. Prima di rispondere, prova a spiegare il perché: se non ci riesci, non sei davvero sicuro.',
     en: 'When you feel sure you are wrong more than one time in four. Before answering, try to explain why: if you cannot, you are not really sure.',
   },
+  adviceFairlyWrong: {
+    it: 'Quando ti senti abbastanza sicuro sbagli più di una volta su due. Prima di rispondere, prova a spiegare il perché: se non ci riesci, scegli «Tiro a indovinare».',
+    en: 'When you feel fairly sure you are wrong more than one time in two. Before answering, try to explain why: if you cannot, choose “Guessing”.',
+  },
   adviceUnderconfident: {
     it: 'Anche quando tiri a indovinare rispondi spesso bene: sai più di quanto pensi. Fidati un po’ di più e ripassa per rendere solide queste conoscenze.',
     en: 'Even when guessing you are often right: you know more than you think. Trust yourself a little more and review to make this knowledge solid.',
+  },
+  adviceOneLevel: {
+    it: 'Hai scelto quasi sempre lo stesso livello di sicurezza, quindi non c’è ancora nulla da confrontare. Usa anche gli altri livelli quando ti descrivono meglio.',
+    en: 'You almost always chose the same confidence level, so there is nothing to compare yet. Use the other levels too when they describe you better.',
   },
   adviceCalibrated: {
     it: 'La tua sicurezza corrisponde bene ai risultati. Usala per decidere cosa ripassare: prima i temi in cui ti senti incerto.',

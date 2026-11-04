@@ -33,7 +33,13 @@ describe('confidence calibration', () => {
     ];
     expect(advice(calibration([...many(3, 6, 4), ...many(1, 0, 2)]))).toBe('overconfident');
     expect(advice(calibration([...many(3, 8, 1), ...many(1, 4, 1)]))).toBe('underconfident');
-    expect(advice(calibration([...many(3, 8, 1), ...many(1, 1, 3)]))).toBe('calibrated');
+    expect(advice(calibration([...many(3, 8, 1), ...many(1, 1, 4)]))).toBe('calibrated');
+    // A level counts only with enough answers, and the middle level counts too (review findings).
+    expect(advice(calibration(many(2, 0, 10)))).toBe('fairlyWrong');
+    expect(advice(calibration([...many(2, 0, 9), ...many(3, 1, 0)]))).toBe('fairlyWrong');
+    expect(advice(calibration([...many(1, 0, 9), ...many(3, 0, 1)]))).toBe('oneLevel');
+    expect(advice(calibration(many(2, 10, 0)))).toBe('oneLevel');
+    expect(advice(calibration([...many(3, 8, 1), ...many(1, 1, 3)]))).toBe('oneLevel');
     expect(pct(1, 3)).toBe(33);
     expect(pct(0, 0)).toBe(0);
   });

@@ -36,23 +36,28 @@ export const overconfident = (items: readonly Judged[]) => byEntity(items, 3, fa
 export const luckyGuesses = (items: readonly Judged[]) => byEntity(items, 1, true);
 
 export const MIN_JUDGED = 10;
-export type Advice = 'tooFew' | 'overconfident' | 'underconfident' | 'calibrated';
+/** Answers needed at one confidence level before its hit rate can drive a verdict. */
+export const MIN_PER_LEVEL = 5;
+export type Advice = 'tooFew' | 'overconfident' | 'fairlyWrong' | 'underconfident' | 'oneLevel' | 'calibrated';
 
 /**
  * Plain-language verdict. Thresholds are a rough teaching rule, not a
- * statistical test: "sure" should be right at least 3 times in 4, "guessing"
- * should be right no more than 6 times in 10.
+ * statistical test: "sure" should be right at least 3 times in 4, "fairly
+ * sure" at least 1 time in 2, "guessing" no more than 6 times in 10. A level
+ * counts only with at least MIN_PER_LEVEL answers, and "calibrated" needs two
+ * such levels to compare.
  */
 export function advice(stats: readonly LevelStat[]): Advice {
   if (stats.reduce((n, s) => n + s.total, 0) < MIN_JUDGED) return 'tooFew';
   const rate = (l: Confidence) => {
     const s = stats[l - 1]!;
-    return s.total ? s.right / s.total : undefined;
+    return s.total >= MIN_PER_LEVEL ? s.right / s.total : undefined;
   };
-  const sure = rate(3);
-  const guess = rate(1);
+  const [guess, fair, sure] = CONFIDENCE.map(rate);
   if (sure !== undefined && sure < 0.75) return 'overconfident';
+  if (fair !== undefined && fair < 0.5) return 'fairlyWrong';
   if (guess !== undefined && guess > 0.6) return 'underconfident';
+  if ([guess, fair, sure].filter((r) => r !== undefined).length < 2) return 'oneLevel';
   return 'calibrated';
 }
 

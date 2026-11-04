@@ -26,7 +26,14 @@ async function load(lang: Lang) {
 }
 
 type T = (k: Parameters<typeof tS>[1]) => string;
-const ADVICE = { tooFew: 'adviceTooFew', overconfident: 'adviceOverconfident', underconfident: 'adviceUnderconfident', calibrated: 'adviceCalibrated' } as const;
+const ADVICE = {
+  tooFew: 'adviceTooFew',
+  overconfident: 'adviceOverconfident',
+  fairlyWrong: 'adviceFairlyWrong',
+  underconfident: 'adviceUnderconfident',
+  oneLevel: 'adviceOneLevel',
+  calibrated: 'adviceCalibrated',
+} as const;
 
 function Calibration({ lang, t, index, judged }: { lang: Lang; t: T; index: StudyIndex; judged: Judged[] }) {
   const stats = calibration(judged);
