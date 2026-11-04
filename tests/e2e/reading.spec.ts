@@ -2,9 +2,9 @@
  * Reading experience (owner decisions O11, O12): no per-page AI badge but an
  * AI line in every footer; sections open by default with "Continue" links;
  * A-/A+ reading size remembered and applied before paint; reading progress;
- * section chips that follow the scroll, on entity and pattern pages;
- * differential tables in a labelled scroll region; form fields never below
- * 16 px (no iOS zoom).
+ * section chips that follow the scroll, on entity and pattern pages; a light
+ * entity header on phones; differential tables in a labelled scroll region;
+ * form fields never below 16 px (no iOS zoom).
  */
 import { expect, test, type Page } from '@playwright/test';
 
@@ -104,7 +104,8 @@ test('sections are open by default, end with "Continue", and the reading control
   await expect(page.locator('#differential')).toBeInViewport();
   await page.locator('[data-mode-btn="full"]').click();
 
-  // Collapse all / expand all.
+  // Collapse all / expand all (on phones, behind the tools toggle).
+  if (width() < 600) await page.getByRole('button', { name: 'Strumenti' }).click();
   const all = page.locator('[data-expand-all]');
   await all.click();
   for (const t of await toggles.all()) await expect(t).toHaveAttribute('aria-expanded', 'false');
@@ -206,6 +207,36 @@ test('the pattern page has the contents of entity pages: chips on phones and tab
   await page.evaluate(() => document.getElementById('pitfalls')!.scrollIntoView());
   await expect(toc.getByRole('link', { name: 'Pitfalls' })).toHaveAttribute('aria-current', 'true');
   await expect(toc.locator('a[aria-current]')).toHaveCount(1);
+});
+
+test('on phones the card text starts about a screen down: lenses, tools and objectives fold behind toggles', async ({ page }) => {
+  await page.addInitScript(() => localStorage.setItem('ap-disclaimer', '1')); // past the one-time first-launch notice
+  await page.goto(ENTITY);
+  const folds = page.locator('[data-fold]');
+  await expect(folds).toHaveCount(3);
+  if (width() >= 600) {
+    for (const f of await folds.all()) await expect(f).toBeHidden();
+    for (const shown of ['.lens-chips', '#entity-tools [data-print]', '#objectives-list']) await expect(page.locator(shown)).toBeVisible();
+    return;
+  }
+  // The first paragraph of the definition was 2.1-2.7 phone screens down; now about one (844 px tall phone).
+  const top = await page.locator('#definition .section-body p').first().evaluate((p) => p.getBoundingClientRect().top + scrollY);
+  expect(top).toBeLessThan(844 * 1.25);
+  for (const [name, inside] of [
+    [/^Lenti \(\d+\)$/, '.lens-chips'],
+    ['Strumenti', '#entity-tools [data-print]'],
+    ['Obiettivi di apprendimento', '#objectives-list'],
+  ] as const) {
+    const toggle = page.getByRole('button', { name, exact: true });
+    await expect(toggle).toHaveAttribute('aria-expanded', 'false');
+    await expect(page.locator(inside)).toBeHidden();
+    await toggle.click();
+    await expect(toggle).toHaveAttribute('aria-expanded', 'true');
+    await expect(page.locator(inside)).toBeVisible();
+  }
+  // The study actions open with the tools.
+  await expect(page.locator('#entity-tools .entity-actions')).toBeAttached();
+  await expect(page.locator('#entity-tools .entity-actions')).not.toHaveCSS('display', 'none');
 });
 
 test('the differential table scrolls inside a labelled region with a sticky first column on phones', async ({ page }) => {

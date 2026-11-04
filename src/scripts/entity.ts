@@ -1,7 +1,7 @@
 /**
  * Entity page behaviour: collapsible sections, expand/collapse all,
- * Quick/Full mode (remembered), open the section targeted by #hash, print.
- * The section spy is in shell.ts (pattern pages use it too).
+ * Quick/Full mode (remembered), open the section targeted by #hash, print,
+ * the header toggles on phones. The section spy is in shell.ts (pattern pages use it too).
  */
 const root = document.documentElement;
 const toggles = [...document.querySelectorAll<HTMLButtonElement>('[data-section-toggle]')];
@@ -92,5 +92,10 @@ document.querySelectorAll<HTMLButtonElement>('[data-recall-reveal]').forEach((b)
   }),
 );
 openHash();
+
+// Phones: the lens chips, the tools and the objectives fold behind a toggle (entity.css hides what follows a closed one).
+document.querySelectorAll<HTMLButtonElement>('[data-fold]').forEach((b) =>
+  b.addEventListener('click', () => b.setAttribute('aria-expanded', String(b.getAttribute('aria-expanded') !== 'true'))),
+);
 
 export {};

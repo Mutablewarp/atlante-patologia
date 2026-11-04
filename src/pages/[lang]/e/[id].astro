@@ -116,16 +116,21 @@ const contexts = LENSES.flatMap((lens) =>
   <article class="entity" data-entity={id}>
     <div class="read-progress js-only" aria-hidden="true"><span data-read-progress></span></div>
     {entity.status === 'draft' && <p class="notice notice-caution draft-banner" role="note">{t('draftBanner')}</p>}
-    <EntityHeader lang={lang} entity={entity} data={data} />
-    <EntityActions lang={lang} entity={entity} />
+    <EntityHeader lang={lang} entity={entity} data={data}><EntityActions lang={lang} entity={entity} /></EntityHeader>
 
     <div class="entity-layout">
       <SectionToc lang={lang} items={toc.map((s) => ({ id: s.id, label: s.short[lang], quick: s.quick }))} />
 
       <div class="entity-body">
         <section class="objectives card" aria-labelledby="objectives-title">
-          <h2 id="objectives-title" class="kicker">{t('objectives')}</h2>
-          <ul>{entity.learningObjectives.map((o) => <li>{o[lang]}</li>)}</ul>
+          {/* Phones: the list folds behind the title, made a toggle (entity.css) */}
+          <h2 id="objectives-title" class="kicker fold-head">
+            <span class="fold-label">{t('objectives')}</span>
+            <button type="button" class="fold-toggle js-only" aria-expanded="false" aria-controls="objectives-list" data-fold data-pagefind-ignore>
+              {t('objectives')}<span class="chevron" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <ul id="objectives-list">{entity.learningObjectives.map((o) => <li>{o[lang]}</li>)}</ul>
         </section>
 
         {

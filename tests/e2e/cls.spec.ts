@@ -1,8 +1,8 @@
 /**
  * Layout stability ("CLS stays 0") on the pages filled after paint: the oral
- * simulator (hydrated island), the study hub (resume card, due count and
- * backup reminder read from IndexedDB) and the top bar's shortcut hint
- * (rewritten for Apple devices). Chromium only: it is the
+ * simulator (hydrated island), the reading pages (entity and pattern), the
+ * study hub (resume card, due count and backup reminder read from IndexedDB)
+ * and the top bar's shortcut hint (rewritten for Apple devices). Chromium only: it is the
  * engine with the Layout Instability API, and the only one where CDP can slow
  * the CPU (4×) so hydration lands after first paint, as on a mid-range phone.
  */
@@ -38,6 +38,14 @@ async function cls(page: Page, path: string) {
 
 for (const path of ['it/study/oral/', 'en/study/oral/'])
   test(`no layout shift on ${path} (first visit, CPU 4× slower)`, async ({ page }) => {
+    const r = await cls(page, path);
+    expect(r.cls, r.shifts.join(' | ')).toBe(0);
+  });
+
+// Reading pages: the phone header folds by CSS from the first paint (not by script), the study actions keep
+// their space while IndexedDB loads, and the section spy only restyles a chip.
+for (const path of ['it/e/apoptosis/', 'en/pattern/p01-necrosis/'])
+  test(`no layout shift on the reading page ${path} (CPU 4× slower)`, async ({ page }) => {
     const r = await cls(page, path);
     expect(r.cls, r.shifts.join(' | ')).toBe(0);
   });

@@ -116,6 +116,69 @@
   background: var(--hema);
   color: var(--on-hema);
 }
+/* Wider screens: the folded tools sit in the toolbar row; the study actions take a row of their own */
+.toolbar-more {
+  display: contents;
+}
+.entity-toolbar .entity-actions {
+  flex-basis: 100%;
+  margin: 0;
+}
+
+/* Phones: the lens chips, the less used tools and the learning objectives fold behind a toggle, closed
+   from the first paint (CSS only, so nothing moves) and only with JS; the card text starts about a screen down */
+html .fold-toggle {
+  display: none;
+}
+@media screen and (max-width: 599px) {
+  html.js .fold-toggle {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--space-2);
+  }
+  html.js .fold-label,
+  html.js .fold-toggle[aria-expanded='false'] + *,
+  html.js .fold-head:has(> .fold-toggle[aria-expanded='false']) + * {
+    display: none;
+  }
+  /* Closed, the lens toggle shares the row of the badges (a flex box, so it sits beside the float) */
+  .entity-head > .fold-toggle[aria-expanded='false'] {
+    float: left;
+    margin-right: var(--space-2);
+  }
+  .lens-chips {
+    margin-top: var(--space-2);
+  }
+  /* Quick/Full, A−/A+ and the tools toggle fit one row from 375 px */
+  .entity-toolbar :is(.segmented button, .btn-small) {
+    padding-inline: var(--space-2);
+  }
+  .entity-toolbar .text-size .btn {
+    min-width: 2.25rem;
+  }
+  .objectives {
+    padding-block: var(--space-2);
+  }
+  html.js .objectives h2 {
+    margin: 0;
+  }
+  .objectives ul {
+    padding-bottom: var(--space-3);
+  }
+  /* The title itself is the toggle, full width, in the kicker style */
+  .objectives .fold-toggle {
+    justify-content: space-between;
+    width: 100%;
+    min-height: 2.75rem;
+    padding: 0;
+    border: 0;
+    background: none;
+    letter-spacing: inherit;
+    text-transform: inherit;
+    text-align: left;
+    cursor: pointer;
+  }
+}
 
 .draft-banner {
   font-weight: 700;
@@ -235,7 +298,7 @@ html:not(.js) .section-toggle {
   border-bottom: 2px solid var(--hema);
   transform: rotate(45deg) translate(-25%, -25%);
 }
-.section-toggle[aria-expanded='false'] .chevron {
+[aria-expanded='false'] > .chevron {
   transform: rotate(-45deg);
 }
 .section-body {
