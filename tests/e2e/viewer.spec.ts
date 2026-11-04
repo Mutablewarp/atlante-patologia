@@ -7,6 +7,8 @@
  * (fixture-grid + fixture-grid-b), so it needs a PREVIEW_DRAFTS=1 build:
  *   npx playwright test -c tests/e2e/study.config.ts tests/e2e/viewer.spec.ts
  */
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
+import { sep } from 'node:path';
 import { expect, test, type Locator, type Page } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 
@@ -15,6 +17,13 @@ test.use({ reducedMotion: 'reduce' });
 const ENTITY = 'it/e/apoptosis/';
 /** The figure with the widest srcset on the entity page (1024 px original: 480w, 800w, 1024w). */
 const FIG = '#fig-apoptosis-micro-2';
+/** Every built page with image labels, read from dist/, so newly annotated images are covered too. */
+const LABELLED = existsSync('dist')
+  ? readdirSync('dist', { recursive: true, encoding: 'utf8' })
+      .filter((f) => f.endsWith('index.html') && readFileSync(`dist/${f}`, 'utf8').includes('class="viewer-label"'))
+      .map((f) => f.split(sep).join('/').replace(/index\.html$/, ''))
+      .sort()
+  : [];
 
 /** Current zoom and offset of the visible canvas (engines serialize the inline transform differently). */
 async function view(fig: Locator) {
@@ -150,8 +159,11 @@ for (const scheme of ['light', 'dark'] as const)
     expect(axe.violations.map((v) => `${v.id}: ${v.nodes.map((n) => n.target.join(' ')).join(', ')}`)).toEqual([]);
   });
 
-test('labels stay inside the image and never cover each other (numbers stand in when they would)', async ({ page }) => {
-  for (const path of ['it/e/apoptosis/', 'it/e/caseous-necrosis/']) {
+test('labels stay inside the image and never cover each other on any labelled page (numbers stand in, moved apart if needed)', async ({ page }) => {
+  test.skip(![375, 1280].includes(test.info().project.metadata.width as number), 'every labelled page, at 375 and 1280 px');
+  test.setTimeout(120_000);
+  expect(LABELLED.length).toBeGreaterThan(10);
+  for (const path of LABELLED) {
     await page.goto(path);
     await page.evaluate(() => document.fonts.ready);
     const problems = () =>
