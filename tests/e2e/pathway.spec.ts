@@ -13,6 +13,8 @@ test.use({ reducedMotion: 'reduce' });
 // WebGL rendering is the slow part: one phone and one desktop width are enough.
 test.beforeEach(() => test.skip(![375, 1280].includes(test.info().project.metadata.width as number), 'runs at 375 and 1280 px'));
 
+// WebGL draws are slow when many browsers run in parallel.
+const GL = { timeout: 20_000 };
 const hasWebGL = (page: Page) => page.evaluate(() => !!document.createElement('canvas').getContext('webgl'));
 
 test('the stepper moves the current step, the diagram and the announcement @smoke', async ({ page }) => {
@@ -57,12 +59,12 @@ test('the 3D view loads on demand, follows the steps and makes no third-party re
     await expect(viewer.locator('img[data-poster]:visible')).toHaveCount(1);
     return;
   }
-  await expect(viewer).toHaveAttribute('data-loaded', '', { timeout: 20_000 });
+  await expect(viewer).toHaveAttribute('data-loaded', '', GL);
   await expect(viewer.locator('[data-stage]')).toBeFocused();
   await expect(viewer.locator('[data-tools]')).toBeVisible();
   await expect(viewer.locator('canvas')).toHaveCount(1);
   // Step 1 has no structure: the first structured step (3, BCL-2 + venetoclax) is shown.
-  await expect(viewer).toHaveAttribute('data-shown', '6o0k:2');
+  await expect(viewer).toHaveAttribute('data-shown', '6o0k:2', GL);
   const venetoclax = Number(await viewer.getAttribute('data-highlight-atoms'));
   expect(venetoclax).toBeGreaterThan(0);
 
@@ -72,7 +74,7 @@ test('the 3D view loads on demand, follows the steps and makes no third-party re
   await next.click();
   await expect(page.locator('[data-step-item]').nth(2)).toHaveAttribute('aria-current', 'step');
   await next.click();
-  await expect(viewer).toHaveAttribute('data-shown', '1f16:3');
+  await expect(viewer).toHaveAttribute('data-shown', '1f16:3', GL);
   const helix = Number(await viewer.getAttribute('data-highlight-atoms'));
   expect(helix).toBeGreaterThan(0);
   expect(helix).not.toBe(venetoclax);
@@ -97,7 +99,7 @@ test('the pathway page has no axe violations with the 3D view open', async ({ pa
   await page.goto(PAGE);
   if (await hasWebGL(page)) {
     await page.locator('[data-load]').click();
-    await expect(page.locator('ap-structure')).toHaveAttribute('data-loaded', '', { timeout: 20_000 });
+    await expect(page.locator('ap-structure')).toHaveAttribute('data-loaded', '', GL);
   }
   const { violations } = await new AxeBuilder({ page }).withTags(WCAG).analyze();
   expect(violations.map((v) => `${v.id}: ${v.nodes.map((n) => n.target.join(' ')).join(' | ')}`)).toEqual([]);
