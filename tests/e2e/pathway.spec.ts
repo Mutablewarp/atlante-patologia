@@ -80,6 +80,9 @@ test('the 3D view loads on demand, follows the steps and makes no third-party re
   await expect(viewer).toHaveAttribute('data-shown', '6o0k:2', GL);
   const venetoclax = Number(await viewer.getAttribute('data-highlight-atoms'));
   expect(venetoclax).toBeGreaterThan(0);
+  // The stage (a canvas exposes nothing) is described by the visible text about the structure shown.
+  const stage = viewer.locator('[data-stage]');
+  await expect(stage).toHaveAccessibleDescription(/PDB 6O0K/);
 
   // The 3D toolbar's own "next" drives the shared stepper: step 2 keeps 6O0K, step 3 shows it, step 4 is BAX.
   const next = viewer.locator('[data-act="next"]');
@@ -88,6 +91,7 @@ test('the 3D view loads on demand, follows the steps and makes no third-party re
   await expect(page.locator('[data-step-item]').nth(2)).toHaveAttribute('aria-current', 'step');
   await next.click();
   await expect(viewer).toHaveAttribute('data-shown', '1f16:3', GL);
+  await expect(stage).toHaveAccessibleDescription(/PDB 1F16/);
   const helix = Number(await viewer.getAttribute('data-highlight-atoms'));
   expect(helix).toBeGreaterThan(0);
   expect(helix).not.toBe(venetoclax);
