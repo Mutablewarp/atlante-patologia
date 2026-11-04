@@ -223,6 +223,8 @@ test('confidence is asked before the answer in quiz, review and quick check, and
     await page.getByRole('button', { name: 'Check' }).click();
   }
   await expect(q.getByRole('radio', { name: 'Fairly sure' })).toBeDisabled();
+  // The attempt is written after the feedback shows: leaving the page sooner would abort the write.
+  await expect.poll(async () => (await readStore(page, 'quizAttempts')).length).toBe(2);
 
   // Review: pick a confidence, reveal, rate.
   await page.goto('en/study/review/');
@@ -293,7 +295,7 @@ test('oral simulator: three questions, prediction before self-assessment, calibr
       if (h) w.historyTexts.push(h.textContent ?? '');
     }).observe(document.body, { subtree: true, childList: true, characterData: true });
   });
-  await page.getByRole('button', { name: 'Start again' }).click();
+  await page.getByRole('button', { name: 'Start again' }).press('Enter'); // keyboard, as in the review finding
   // Focus goes to the first setup control, never to <body> (WCAG 2.4.3).
   await expect(page.getByRole('checkbox', { name: 'Use a timer for each question' })).toBeFocused();
   await expect(page.getByRole('region', { name: 'Previous sessions' }).getByText(/3 questions, self-assessed 2\.3 out of 4/)).toBeVisible();
