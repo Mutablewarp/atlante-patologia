@@ -357,6 +357,36 @@ test('oral history: a damaged session is listed and can be deleted without touch
   await expect(history).not.toContainText('Mean predicted');
 });
 
+test('exam mode: pressing Finish again while the answers are being saved stores each answer once', async ({ context }) => {
+  // An older tab holds the database open, so the writes wait (as on a slow phone): the second press lands while they are pending.
+  const old = await context.newPage();
+  await holdOpen(old, 1);
+  const page = await context.newPage();
+  await page.goto('en/study/quiz/?mode=exam');
+  await page.getByRole('spinbutton', { name: 'Number of questions' }).fill('3');
+  await page.getByRole('button', { name: 'Start' }).click();
+  let answered = 0;
+  for (let i = 0; i < 3; i++) {
+    const options = page.locator('.question .options').getByRole('radio');
+    await expect(page.getByRole('heading', { name: `Question ${i + 1} of 3` })).toBeVisible();
+    if ((await options.count()) > 0) {
+      await options.first().check();
+      answered++;
+    }
+    if (i < 2) await page.getByRole('button', { name: 'Next' }).click();
+  }
+  expect(answered).toBeGreaterThan(0); // the fixtures hold one free-text question at most, so two or three get options
+  const finish = page.getByRole('button', { name: 'Finish' });
+  await finish.click();
+  await finish.click(); // still shown: the first press is waiting for the database
+  await old.close();
+  await expect(page.getByRole('heading', { name: 'Results' })).toBeVisible();
+  await page.waitForTimeout(300); // let any second round of writes land before counting
+  const attempts = await readStore(page, 'quizAttempts');
+  expect(attempts).toHaveLength(answered);
+  expect(new Set(attempts.map((a) => a.question)).size).toBe(answered);
+});
+
 test('oral simulator: "time is up" is announced in a live region, and a double save stores one answer', async ({ page }) => {
   await page.clock.install();
   await page.goto('en/study/oral/');

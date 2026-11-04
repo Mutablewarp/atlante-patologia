@@ -165,6 +165,7 @@ function Runner(props: Run & { lang: Lang; t: T; index: StudyIndex; onRestart: (
   const [left, setLeft] = useState(props.seconds ?? 0);
   const [paused, setPaused] = useState(false);
   const headRef = useRef<HTMLHeadingElement>(null);
+  const finishing = useRef(false);
   const q = questions[pos]!;
   const a = answers[q.id] ?? {};
   const setA = (patch: Answer) => setAnswers((all) => ({ ...all, [q.id]: { ...all[q.id], ...patch } }));
@@ -189,6 +190,9 @@ function Runner(props: Run & { lang: Lang; t: T; index: StudyIndex; onRestart: (
     await saveAttempt(q, grade === 'right', mode, a.confidence);
   }
   async function finish() {
+    // One save per answer: a second press of Finish, or the timer ticking on while the writes wait, must not save the exam again.
+    if (finishing.current) return;
+    finishing.current = true;
     if (exam) for (const x of questions) if (x.kind !== 'short' && answers[x.id]?.choice) await saveAttempt(x, isRight(x, answers[x.id]), mode, answers[x.id]?.confidence);
     setFinished(true);
   }
