@@ -99,20 +99,20 @@ function main() {
     const { id, module } = parse(readFileSync(metaFile, 'utf8'));
     byModule.set(module, [...(byModule.get(module) ?? []), id]);
   }
-  // Pathway pages go into the pack of their module: entity cards link to them ("Open the full pathway").
+  // Pathway pages go into the pack of the entity whose card links to them ("Open the full pathway").
   const pathwaysDir = join(ROOT, 'src/content/pathways');
-  const pathwaysOf = new Map();
+  const pathwaysOf = new Map(); // entity id → pathway ids
   for (const f of existsSync(pathwaysDir) ? readdirSync(pathwaysDir).filter((x) => x.endsWith('.yaml')) : []) {
-    const { id, module } = parse(readFileSync(join(pathwaysDir, f), 'utf8'));
-    pathwaysOf.set(module, [...(pathwaysOf.get(module) ?? []), id]);
+    const { id, entity } = parse(readFileSync(join(pathwaysDir, f), 'utf8'));
+    pathwaysOf.set(entity, [...(pathwaysOf.get(entity) ?? []), id]);
   }
   let packs = 0;
   for (const lang of LANGS) {
     for (const [module, ids] of byModule) {
       // Only pages the build actually rendered (drafts are not built in production).
-      const pages = [...ids.map((id) => `${lang}/e/${id}/`), ...(pathwaysOf.get(module) ?? []).map((id) => `${lang}/pathways/${id}/`)].filter((p) =>
-        existsSync(fileFor(p)),
-      );
+      const pages = ids
+        .flatMap((id) => [`${lang}/e/${id}/`, ...(pathwaysOf.get(id) ?? []).map((p) => `${lang}/pathways/${p}/`)])
+        .filter((p) => existsSync(fileFor(p)));
       if (pages.length === 0) continue;
       const images = pages.flatMap((p) => imagesIn(readFileSync(fileFor(p), 'utf8'), base)).filter((p) => !(p in shellFiles));
       const data = all.filter((p) => p.startsWith(`${lang}/data/`) && p.endsWith('.json'));
