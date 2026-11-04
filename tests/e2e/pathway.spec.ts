@@ -5,8 +5,9 @@
  * steps and 44 px touch targets. Without WebGL, or when a structure file
  * fails on a later step, the poster, description and steps must stay.
  */
+import { readFileSync, readdirSync } from 'node:fs';
 import AxeBuilder from '@axe-core/playwright';
-import { expect, test, type Locator, type Page } from '@playwright/test';
+import { expect, test, type Page } from '@playwright/test';
 import sharp from 'sharp';
 
 const PAGE = 'it/pathways/intrinsic-apoptosis/';
@@ -119,9 +120,9 @@ const lum = ([r, g, b]: number[]) => {
   return 0.2126 * f(r!) + 0.7152 * f(g!) + 0.0722 * f(b!);
 };
 
-/** Contrast against the stage of the median grey and the median orange pixel of the rendered model. */
-async function modelContrast(canvas: Locator) {
-  const { data, info } = await sharp(await canvas.screenshot()).raw().toBuffer({ resolveWithObject: true });
+/** Contrast against the stage of the median grey and the median orange pixel of a drawn model (PNG). */
+async function modelContrast(png: Buffer) {
+  const { data, info } = await sharp(png).raw().toBuffer({ resolveWithObject: true });
   const at = (8 * info.width + 8) * info.channels; // just inside the rounded corner: always stage
   const stage = lum([data[at]!, data[at + 1]!, data[at + 2]!]);
   const grey: number[] = [];
@@ -152,10 +153,23 @@ for (const scheme of ['light', 'dark'] as const)
     if (!webgl) return;
     // WCAG 1.4.11 in both themes (the canvas keeps its own light stage); the 3D label would count as grey.
     await page.locator('[data-act="labels"]').click();
-    const c = await modelContrast(page.locator('[data-canvas]'));
+    const c = await modelContrast(await page.locator('[data-canvas]').screenshot());
     expect(c.grey).toBeGreaterThanOrEqual(3);
     expect(c.orange).toBeGreaterThanOrEqual(3);
   });
+
+test('every poster is opaque (the same in both themes), with the model at 3:1 or more against its stage', async () => {
+  test.skip(test.info().project.name !== 'chromium-1280', 'reads the committed files: once is enough');
+  const posters = readdirSync('src/assets/structures').filter((f) => f.endsWith('.png'));
+  expect(posters.length).toBeGreaterThan(5);
+  for (const f of posters) {
+    const png = readFileSync(`src/assets/structures/${f}`);
+    expect((await sharp(png).stats()).isOpaque, f).toBe(true);
+    const c = await modelContrast(png);
+    expect(c.grey, f).toBeGreaterThanOrEqual(3);
+    expect(c.orange, f).toBeGreaterThanOrEqual(3);
+  }
+});
 
 test('without WebGL the 3D button gives way to a focused explanation; poster and steps stay', async ({ page }) => {
   await page.addInitScript(() => {
