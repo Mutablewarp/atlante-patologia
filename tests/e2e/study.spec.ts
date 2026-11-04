@@ -387,6 +387,12 @@ test('exam mode: pressing Finish again while the answers are being saved stores 
   const attempts = await readStore(page, 'quizAttempts');
   expect(attempts).toHaveLength(answered);
   expect(new Set(attempts.map((a) => a.question)).size).toBe(answered);
+
+  // "Start again" removes the results: focus goes to the chosen mode, never to <body> (WCAG 2.4.3).
+  await page.getByRole('button', { name: 'Start again' }).press('Enter');
+  await expect(page.getByRole('radio', { name: /^Timed exam/ })).toBeFocused();
+  await expect(page.getByRole('radio', { name: /^Timed exam/ })).toBeChecked();
+  await noAxeViolations(page); // the focused control is not left under the sticky bar
 });
 
 test('oral simulator: "time is up" is announced in a live region, and a double save stores one answer', async ({ page }) => {
