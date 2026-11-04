@@ -215,6 +215,8 @@ test('confidence is asked before the answer in quiz, review and quick check, and
   await page.goto('en/study/review/');
   await page.getByRole('radio', { name: 'Guessing' }).check();
   await page.getByRole('button', { name: /Show answer/ }).click();
+  // The key handler is re-bound after the reveal renders; the answer taking focus marks that point.
+  await expect(page.locator('.answer')).toBeFocused();
   await page.keyboard.press('3');
   await expect(page.getByText('Card 2 of', { exact: false })).toBeVisible();
 
