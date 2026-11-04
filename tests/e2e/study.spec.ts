@@ -128,6 +128,26 @@ test('planner, chain and image training work on fixtures', async ({ page }) => {
   await expect(page.getByText('Which of the two diagnoses does this image show?')).toBeVisible();
 });
 
+test('WHO classification line and newer-edition notice render in both languages', async ({ page }) => {
+  const foreign = guardRequests(page);
+  await page.goto('it/e/fixture-demo/');
+  const note = page.locator('.classification-note');
+  await expect(note).toContainText(
+    'Classificazione: WHO Classification of Tumours, 5ª ed., Vol. 1: Digestive System Tumours (2019) · verificata il 3 nov 2026',
+  );
+  await expect(note.locator('[data-newer-edition]')).toContainText('È disponibile un’edizione più recente: 6ª ed., a stampa, 2026.');
+  await expect(note.locator('cite')).toHaveAttribute('lang', 'en');
+  await noAxeViolations(page);
+
+  await page.goto('en/e/fixture-demo/');
+  await expect(page.locator('.classification-note')).toContainText('Classification: WHO Classification of Tumours, 5th ed., Vol. 1: Digestive System Tumours (2019) · checked on 3 Nov 2026');
+  await expect(page.locator('[data-newer-edition]')).toContainText('A newer edition is available: 6th ed., in print, 2026.');
+  // Cards without a classification block show nothing.
+  await page.goto('en/e/fixture-demo-b/');
+  await expect(page.locator('.classification-note')).toHaveCount(0);
+  expect(foreign).toEqual([]);
+});
+
 test('evidence page cites the eight verified studies', async ({ page }) => {
   await page.goto('it/about/evidence/');
   await expect(page.locator('ol.refs > li')).toHaveCount(8);
