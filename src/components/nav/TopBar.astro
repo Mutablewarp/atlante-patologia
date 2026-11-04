@@ -43,7 +43,7 @@ const palette = {
 <header class="topbar" data-nav="global">
   <a class="brand" href={langPath(lang)}>
     <BrandMark />
-    <span>{first} <span class="brand-sub">{rest.join(' ')}</span></span>
+    <span class="brand-name"><span class="brand-main">{first}</span> <span class="brand-sub">{rest.join(' ')}</span></span>
   </a>
   <form class="topbar-search" role="search" action={langPath(lang, 'search/')} method="get">
     <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">

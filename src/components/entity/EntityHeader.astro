@@ -1,5 +1,5 @@
 ---
-/** Entity header: all names, summary, lens chips, badges, reading toolbar. */
+/** Entity header: all names, summary, lens chips, badges, reading toolbar with the study actions (default slot). */
 import type { Lang } from '../../i18n/index.ts';
 import { formatDate, fmt, otherLang } from '../../i18n/index.ts';
 import { tEntity } from '../../i18n/pages.ts';
@@ -43,7 +43,11 @@ const synonyms = [...n.synonyms[lang], ...n.synonyms[other]];
   </dl>
   <p class="lede">{entity.summary[lang]}</p>
 
-  <ul class="lens-chips" aria-label={t('lensTags')}>
+  {/* Phones: the chips fold behind this toggle, like the tools below (entity.css) */}
+  <button type="button" class="btn btn-small fold-toggle js-only" aria-expanded="false" aria-controls="lens-chips" data-fold>
+    {fmt(t('lensToggle'), { n: chips.length })}<span class="chevron" aria-hidden="true"></span>
+  </button>
+  <ul class="lens-chips" id="lens-chips" aria-label={t('lensTags')}>
     {
       chips.map((c) => (
         <li>
@@ -76,12 +80,19 @@ const synonyms = [...n.synonyms[lang], ...n.synonyms[other]];
       <button type="button" data-mode-btn="quick" aria-pressed="false">{t('quick')}</button>
       <button type="button" data-mode-btn="full" aria-pressed="true">{t('full')}</button>
     </div>
-    <button type="button" class="btn btn-small" data-expand-all data-label-expand={t('expandAll')} data-label-collapse={t('collapseAll')}>
-      {t('collapseAll')}
-    </button>
-    <button type="button" class="btn btn-small" data-recall-toggle aria-pressed="false">{tHz(lang, 'recallToggle')}</button>
-    <a class="btn btn-small" href={langPath(lang, `compare/?ids=${entity.id}`)}>{tHz(lang, 'compareWith')}</a>
-    <button type="button" class="btn btn-small" data-print>{t('print')}</button>
     <TextSize lang={lang} />
+    {/* Phones: the other tools and the study actions (slot) fold behind this toggle; wider screens show them in the row */}
+    <button type="button" class="btn btn-small fold-toggle" aria-expanded="false" aria-controls="entity-tools" data-fold>
+      {t('tools')}<span class="chevron" aria-hidden="true"></span>
+    </button>
+    <div class="toolbar-more" id="entity-tools">
+      <button type="button" class="btn btn-small" data-expand-all data-label-expand={t('expandAll')} data-label-collapse={t('collapseAll')}>
+        {t('collapseAll')}
+      </button>
+      <button type="button" class="btn btn-small" data-recall-toggle aria-pressed="false">{tHz(lang, 'recallToggle')}</button>
+      <a class="btn btn-small" href={langPath(lang, `compare/?ids=${entity.id}`)}>{tHz(lang, 'compareWith')}</a>
+      <button type="button" class="btn btn-small" data-print>{t('print')}</button>
+      <slot />
+    </div>
   </div>
 </header>

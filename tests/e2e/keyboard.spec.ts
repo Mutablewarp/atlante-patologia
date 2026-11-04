@@ -1,15 +1,16 @@
 /**
  * Keyboard-only use (NAVIGATION_SPEC §7): the skip link comes first and works,
  * the tab order follows the document, focus is always visible and never fully
- * hidden behind the sticky top bar or the bottom/side navigation (WCAG 2.4.11).
+ * hidden behind the sticky top bar, the section chip strip or the bottom/side navigation (WCAG 2.4.11).
  */
 import { expect, test, type Page } from '@playwright/test';
 
 // macOS WebKit only moves focus to links with Option+Tab (system default).
 const tabKey = (browserName: string) => (browserName === 'webkit' && process.platform === 'darwin' ? 'Alt+Tab' : 'Tab');
 
-// v2 pages: the entity card (image viewer, compact pathway, quick check) and the full pathway page (stepper, 3D tools).
-const PAGES = ['it/', 'en/atlas/', 'it/about/reading-list/', 'en/search/?q=atlas', 'it/e/apoptosis/', 'it/pathways/intrinsic-apoptosis/'];
+// v2 pages: the entity card (image viewer, compact pathway, quick check), the pattern page (contents, matrix)
+// and the full pathway page (stepper, 3D tools).
+const PAGES = ['it/', 'en/atlas/', 'it/about/reading-list/', 'en/search/?q=atlas', 'it/e/apoptosis/', 'en/pattern/p01-necrosis/', 'it/pathways/intrinsic-apoptosis/'];
 // The entity card has many controls: walk far enough to cross the viewer and the pathway.
 const maxStops = (path: string) => (path.includes('/e/') ? 200 : 80);
 
@@ -44,7 +45,7 @@ async function focusState(page: Page): Promise<Stop | null> {
     const r = el.getBoundingClientRect();
     // Sticky/fixed bars that can cover content: a sample point is hidden when the
     // element painted on top there belongs to one of them (z-index aware).
-    const overlays = [...document.querySelectorAll<HTMLElement>('.topbar, .primary-nav')].filter(
+    const overlays = [...document.querySelectorAll<HTMLElement>('.topbar, .primary-nav, .section-toc')].filter(
       (o) => !o.contains(el) && /fixed|sticky/.test(getComputedStyle(o).position),
     );
     const pts: [number, number][] = [];

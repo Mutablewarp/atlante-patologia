@@ -161,6 +161,8 @@ export const tEntity = defineStrings({
   synonyms: { it: 'Sinonimi', en: 'Synonyms' },
   abbreviations: { it: 'Sigle', en: 'Abbreviations' },
   lensTags: { it: 'Lenti', en: 'Lenses' },
+  lensToggle: { it: 'Lenti ({n})', en: 'Lenses ({n})' },
+  tools: { it: 'Strumenti', en: 'Tools' },
   reviewExpert: { it: 'Revisionato da un esperto', en: 'Expert-reviewed' },
   updated: { it: 'Aggiornato il {date}', en: 'Updated {date}' },
   editionDependent: { it: 'Dipende dall’edizione', en: 'Edition-dependent' },

@@ -94,6 +94,10 @@ li {
 .prose :is(table, th, td, a, code) {
   hyphens: manual;
 }
+/* Captions and credit lines keep the measure even where the figure is wider than the text (pattern pages) */
+figcaption :is(p, li) {
+  max-width: var(--measure);
+}
 
 a {
   color: var(--hema);

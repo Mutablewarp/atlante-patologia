@@ -1,0 +1,28 @@
+---
+/**
+ * Contents of a reading page (entity, pattern): a sticky chip strip on phones
+ * and tablets, a side list on desktop (entity.css). shell.ts marks the entry of
+ * the section being read; `quick` lets Quick mode hide an entry.
+ */
+import type { Lang } from '../../i18n/index.ts';
+import { tEntity } from '../../i18n/pages.ts';
+
+interface Props {
+  lang: Lang;
+  items: { id: string; label: string; quick?: boolean }[];
+}
+const { lang, items } = Astro.props;
+---
+
+<nav class="section-toc" aria-label={tEntity(lang, 'onThisPage')}>
+  <p class="toc-title" aria-hidden="true">{tEntity(lang, 'onThisPage')}</p>
+  <ol>
+    {
+      items.map((s) => (
+        <li data-quick={s.quick === undefined ? undefined : String(s.quick)}>
+          <a href={`#${s.id}`}>{s.label}</a>
+        </li>
+      ))
+    }
+  </ol>
+</nav>
