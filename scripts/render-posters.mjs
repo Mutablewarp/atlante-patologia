@@ -3,10 +3,11 @@
 // Playwright + 3Dmol from the committed structure files. Run by hand after
 // fetch-structures.mjs; outputs are committed (no runtime cost, no network).
 //
-//   node scripts/render-posters.mjs [id…]   → src/assets/structures/<id>.png (640×480, transparent)
+//   node scripts/render-posters.mjs [id…]   → src/assets/structures/<id>.png (640×480, on the light stage colour)
 //
 // The drawing matches scripts/structure-3d.ts: grey cartoon, the highlight of
-// the first pathway step that uses the structure in orange.
+// the first pathway step that uses the structure in orange with spheres, on the
+// opaque light stage colour that keeps both colours readable in the dark theme too.
 import { readdirSync, readFileSync, writeFileSync, mkdirSync } from 'node:fs';
 import { gunzipSync } from 'node:zlib';
 import { fileURLToPath } from 'node:url';
@@ -36,7 +37,7 @@ const PAGE = `<!doctype html><meta charset="utf-8"><style>html,body{margin:0;bac
   import { createViewer } from '${ORIGIN}/3Dmol.js';
   window.draw = async (job) => {
     const bytes = new Uint8Array(await (await fetch('${ORIGIN}/' + job.file)).arrayBuffer());
-    const v = createViewer(document.getElementById('v'), { backgroundColor: 'white', backgroundAlpha: 0, antialias: true });
+    const v = createViewer(document.getElementById('v'), { backgroundColor: '#f6f1e7', backgroundAlpha: 1, antialias: true });
     v.addModel(bytes, 'bcif');
     const scope = job.show ? { chain: job.show } : {};
     const cartoon = (color) => ({ cartoon: job.coarse ? { style: 'trace', color, thickness: 0.6 } : { color } });
@@ -46,6 +47,7 @@ const PAGE = `<!doctype html><meta charset="utf-8"><style>html,body{margin:0;bac
     if (h) {
       const sel = { ...scope, ...(h.chains ? { chain: h.chains } : {}), ...(h.resi ? { resi: h.resi } : {}), ...(h.resn ? { resn: h.resn } : {}) };
       v.setStyle(sel, h.resn ? { stick: { color: '#e66100', radius: 0.3 } } : cartoon('#e66100'));
+      v.addStyle(h.resn ? sel : { ...sel, atom: 'CA' }, { sphere: { color: '#e66100', radius: h.resn ? 0.45 : job.coarse ? 1.6 : 0.9 } });
     }
     v.zoomTo(scope);
     v.render();
@@ -69,7 +71,7 @@ for (const [id, job] of jobs()) {
   });
   await page.goto(`${ORIGIN}/index.html`);
   await page.evaluate((j) => window.draw(j), job);
-  writeFileSync(`${OUT}${id}.png`, await page.locator('#v').screenshot({ omitBackground: true }));
+  writeFileSync(`${OUT}${id}.png`, await page.locator('#v').screenshot());
   await page.close();
   console.log(`poster ${id}.png`);
 }

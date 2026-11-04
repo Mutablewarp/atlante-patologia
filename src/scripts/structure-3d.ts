@@ -83,6 +83,9 @@ export async function mount(el: HTMLElement, base: string, reduce: boolean): Pro
         const sel = spec({ ...scope, ...(h.chains ? { chain: h.chains } : {}), ...(h.resi ? { resi: h.resi } : {}), ...(h.resn ? { resn: h.resn } : {}) });
         // Ligands and small groups as sticks, protein parts as orange cartoon.
         viewer.setStyle(sel, h.resn ? { stick: { color: ORANGE, radius: 0.3 } } : cartoon(ORANGE));
+        // Spheres on its atoms (ligands) or its backbone (protein, CA-only traces too) mark the highlight by shape,
+        // not by colour alone (WCAG 1.4.1), also with the labels off.
+        viewer.addStyle(h.resn ? sel : spec({ ...sel, atom: 'CA' }), { sphere: { color: ORANGE, radius: h.resn ? 0.45 : step.coarse ? 1.6 : 0.9 } });
         count = viewer.selectedAtoms(sel).length;
         label = { text: h.label, sel };
       }

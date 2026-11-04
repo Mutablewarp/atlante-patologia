@@ -32,7 +32,7 @@ const structs = [...(await structureById()).values()].sort((a, b) => a.pdb.local
           <li id={`img-${img.id}`}>
             {img.attributionText} — <a href={img.sourceUrl} rel="noopener">{lang === 'it' ? 'fonte' : 'source'}</a>,{' '}
             <a href={img.licenseUrl} rel="noopener">{img.license}</a>
-            {img.modifications !== 'none' && ` · ${lang === 'it' ? 'modifiche' : 'changes'}: ${img.modifications}`}
+            {img.modifications !== 'none' && ` · ${lang === 'it' ? 'modifiche' : 'changes'}: ${img.modifications[lang]}`}
           </li>
         ))}
       </ul>

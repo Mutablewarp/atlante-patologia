@@ -1,7 +1,8 @@
 /**
  * <ap-image-viewer>: zoom (buttons, + / − / 0 keys, Ctrl+wheel, pinch, double
  * click or tap), pan (drag, arrow keys, and pan buttons for WCAG 2.5.7), label
- * toggle, progressive reveal by `revealOrder`, a scale bar when `mpp` is
+ * toggle, progressive reveal by `revealOrder`, numbered markers for labels that
+ * would cover each other, a scale bar when `mpp` is
  * known, a switch between the images of one group (stain, section,
  * magnification) and a full-screen dialog that Escape or Back closes.
  * Markup comes from components/horizontal/ImageViewer.astro.
@@ -10,6 +11,8 @@ import { scaleBar } from '../lib/image-meta.ts';
 
 const MAX = 6;
 const PAN: Record<string, [number, number]> = { left: [1, 0], right: [-1, 0], up: [0, 1], down: [0, -1] };
+/** Where a crowded label may go, in its own widths and heights: in place first, then ever further out. */
+const NEAR = [[0, 0], [0, 1], [0, -1], [1, 0], [-1, 0], [1, 1], [-1, 1], [1, -1], [-1, -1], [0, 2], [0, -2], [2, 0], [-2, 0]] as const;
 
 class ApImageViewer extends HTMLElement {
   private s = 1;
@@ -25,6 +28,7 @@ class ApImageViewer extends HTMLElement {
   private pointers = new Map<number, { x: number; y: number }>();
   private moved = 0;
   private tap?: { t: number; x: number; y: number };
+  private fitted = '';
 
   connectedCallback() {
     this.body = this.querySelector('.viewer-body')!;
@@ -60,6 +64,7 @@ class ApImageViewer extends HTMLElement {
       const r = ev.target as HTMLInputElement;
       if (r.type !== 'radio') return;
       this.select(r.value);
+      this.fitLabels();
       this.say(r.closest('label')?.textContent?.trim() ?? '');
     });
     this.dialog.addEventListener('close', () => {
@@ -135,6 +140,61 @@ class ApImageViewer extends HTMLElement {
       st.addEventListener('pointercancel', up);
     });
     this.select(this.querySelector<HTMLElement>('.viewer-panel:not([hidden])')?.dataset.panel ?? '0');
+    // Labels are re-fitted when the stage changes size (window, full screen) and once the web fonts are in.
+    new ResizeObserver(() => this.fitLabels()).observe(this.body);
+    void document.fonts.ready.then(() => this.fitLabels());
+  }
+
+  /**
+   * A label that would cover another one shows only its number (the numbered legend below has the text);
+   * numbers that still cover each other, because their shapes nearly touch, move to the nearest free spot.
+   */
+  private fitLabels() {
+    if (!this.total) return;
+    // Same image, size (the height follows the text size) and fonts as the last fit: it still holds.
+    const key = `${this.panel.dataset.panel}:${this.stage.clientWidth}:${this.body.clientHeight}:${document.fonts.status}`;
+    if (key === this.fitted) return;
+    this.fitted = key;
+    const labels = [...this.panel.querySelectorAll<HTMLElement>('.viewer-label')];
+    // Unrevealed labels are measured too, so revealing one never re-flows the others; nothing paints in between.
+    const hidden = labels.filter((l) => l.hidden);
+    const show = (on: boolean) =>
+      hidden.forEach((l) => {
+        l.hidden = !on;
+        l.style.display = on ? '' : 'none';
+      });
+    show(true);
+    labels.forEach((l) => {
+      delete l.dataset.num;
+      l.style.translate = '';
+    });
+    const hit = (a: DOMRect, b: DOMRect) =>
+      Math.min(a.right, b.right) - Math.max(a.left, b.left) > 1 && Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top) > 1;
+    const crowded = () => {
+      const boxes = labels.map((l) => l.getBoundingClientRect());
+      return labels.filter((_, i) => boxes.some((b, j) => j !== i && hit(b, boxes[i]!)));
+    };
+    // Each pass turns the colliding text labels into numbers; a second pass catches a number landing on a text.
+    for (let pass = 0; pass < 3; pass++) {
+      const text = crowded().filter((l) => l.dataset.num === undefined);
+      if (!text.length) break;
+      text.forEach((l) => (l.dataset.num = ''));
+    }
+    // In legend order, each one still covering another takes the first free spot around it, inside the image.
+    const stuck = crowded();
+    const img = this.canvas.getBoundingClientRect();
+    const placed = labels.filter((l) => !stuck.includes(l)).map((l) => l.getBoundingClientRect());
+    for (const l of stuck) {
+      const r = l.getBoundingClientRect();
+      const spot =
+        NEAR.map(([i, j]) => new DOMRect(r.x + i * (r.width + 2), r.y + j * (r.height + 2), r.width, r.height)).find(
+          (m) => m.left >= img.left && m.right <= img.right && m.top >= img.top && m.bottom <= img.bottom && !placed.some((p) => hit(p, m)),
+        ) ?? r;
+      // Screen pixels to the canvas's own (it may be zoomed).
+      l.style.translate = `${(spot.x - r.x) / this.s}px ${(spot.y - r.y) / this.s}px`;
+      placed.push(spot);
+    }
+    show(false);
   }
 
   /** Show image `i` of the group; the zoom level stays, the position resets (sections are not registered). */
@@ -144,8 +204,6 @@ class ApImageViewer extends HTMLElement {
     this.stage = this.panel.querySelector('.viewer-stage')!;
     this.canvas = this.panel.querySelector('.viewer-canvas')!;
     this.total = Number(this.panel.dataset.total);
-    // The dialog is named after the image shown now, not the one active at build time.
-    this.dialog.setAttribute('aria-label', this.canvas.querySelector('img')?.alt ?? '');
     this.querySelectorAll<HTMLButtonElement>('[data-label-toggle], [data-reveal]').forEach((b) => (b.disabled = this.total === 0));
     this.setRevealed(this.total);
     this.recenter();

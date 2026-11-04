@@ -194,7 +194,8 @@ export const imageSchema = z
     license: z.enum(IMAGE_LICENSES),
     licenseUrl: z.url(),
     retrievedAt: z.coerce.date(),
-    modifications: z.string().min(1),
+    /** 'none', or what we changed (crop, resize, re-encoding…) in both languages: it is shown in the credit line. */
+    modifications: z.union([z.literal('none'), L]),
     attributionText: z.string().min(1),
     patientIdentifiable: z.literal(false),
     ownerApproved: z.boolean().default(false),

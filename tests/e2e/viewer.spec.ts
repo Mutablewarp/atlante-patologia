@@ -1,11 +1,15 @@
 /**
  * Image viewer (components/horizontal/ImageViewer.astro, scripts/image-viewer.ts):
  * pan buttons (WCAG 2.5.7), keyboard and double-click zoom, the sharper srcset
- * candidate on zoom, full screen on a phone (Escape and Back close it) and the
- * stain/magnification switch. The switch runs on the draft fixture group
- * (fixture-grid + fixture-grid-b), so it needs a PREVIEW_DRAFTS=1 build:
+ * candidate on zoom, full screen on a phone (Escape and Back close it; axe),
+ * labels that never cover each other, the original SVG diagrams, the credit
+ * line in the page language and the stain/magnification switch. The switch
+ * runs on the draft fixture group (fixture-grid + fixture-grid-b), so it needs
+ * a PREVIEW_DRAFTS=1 build:
  *   npx playwright test -c tests/e2e/study.config.ts tests/e2e/viewer.spec.ts
  */
+import { existsSync, readFileSync, readdirSync } from 'node:fs';
+import { sep } from 'node:path';
 import { expect, test, type Locator, type Page } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 
@@ -14,6 +18,13 @@ test.use({ reducedMotion: 'reduce' });
 const ENTITY = 'it/e/apoptosis/';
 /** The figure with the widest srcset on the entity page (1024 px original: 480w, 800w, 1024w). */
 const FIG = '#fig-apoptosis-micro-2';
+/** Every built page with image labels, read from dist/, so newly annotated images are covered too. */
+const LABELLED = existsSync('dist')
+  ? readdirSync('dist', { recursive: true, encoding: 'utf8' })
+      .filter((f) => f.endsWith('index.html') && readFileSync(`dist/${f}`, 'utf8').includes('class="viewer-label"'))
+      .map((f) => f.split(sep).join('/').replace(/index\.html$/, ''))
+      .sort()
+  : [];
 
 /** Current zoom and offset of the visible canvas (engines serialize the inline transform differently). */
 async function view(fig: Locator) {
@@ -59,7 +70,8 @@ test('@smoke pan buttons stay disabled until zoomed, then move the image; focus 
   await expect.poll(() => view(fig)).toEqual({ x: 0, y: 0, s: 1 });
   await expect(right).toHaveAttribute('aria-disabled', 'true');
   await expect(right).toBeFocused();
-  await right.click();
+  // Playwright refuses to click an aria-disabled button: activate it from the keyboard; it does nothing at 1×.
+  await page.keyboard.press('Enter');
   await expect.poll(() => view(fig)).toEqual({ x: 0, y: 0, s: 1 });
 });
 
@@ -101,7 +113,8 @@ test('@smoke full screen on a phone: a 100dvh dialog that Escape and Back close'
   expect(inline.width).toBeCloseTo(375, 0);
   const full = fig.getByRole('button', { name: 'Schermo intero' });
   await full.click();
-  const dialog = page.getByRole('dialog');
+  // Named briefly: the image's long alt is read once, on the image itself.
+  const dialog = page.getByRole('dialog', { name: 'Immagine a schermo intero' });
   await expect(dialog).toBeVisible();
   const box = (await dialog.boundingBox())!;
   expect(box.x).toBeCloseTo(0, 0);
@@ -137,6 +150,73 @@ test('@smoke full screen on a phone: a 100dvh dialog that Escape and Back close'
   expect(page.url()).toBe(url);
 });
 
+for (const scheme of ['light', 'dark'] as const)
+  test(`the full-screen viewer has no axe violations (${scheme})`, async ({ page }) => {
+    test.skip(![375, 1280].includes(test.info().project.metadata.width as number), 'runs at 375 and 1280 px');
+    await page.emulateMedia({ colorScheme: scheme });
+    const fig = await openViewer(page);
+    await fig.getByRole('button', { name: 'Schermo intero' }).click();
+    await expect(page.getByRole('dialog')).toBeVisible();
+    const axe = await new AxeBuilder({ page }).include('.viewer-dialog').withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze();
+    expect(axe.violations.map((v) => `${v.id}: ${v.nodes.map((n) => n.target.join(' ')).join(', ')}`)).toEqual([]);
+  });
+
+test('labels stay inside the image and never cover each other on any labelled page (numbers stand in, moved apart if needed)', async ({ page }) => {
+  test.skip(![375, 1280].includes(test.info().project.metadata.width as number), 'every labelled page, at 375 and 1280 px');
+  test.setTimeout(120_000);
+  expect(LABELLED.length).toBeGreaterThan(10);
+  for (const path of LABELLED) {
+    await page.goto(path);
+    await page.evaluate(() => document.fonts.ready);
+    const problems = () =>
+      page.evaluate(() =>
+        [...document.querySelectorAll('.viewer-panel:not([hidden]) .viewer-stage')].flatMap((stage) => {
+          const s = stage.getBoundingClientRect();
+          const boxes = [...stage.querySelectorAll<HTMLElement>('.viewer-label')]
+            .filter((l) => l.checkVisibility())
+            .map((l) => [l.textContent!.trim(), l.getBoundingClientRect()] as const);
+          const out = boxes
+            .filter(([, b]) => b.left < s.left - 0.5 || b.right > s.right + 0.5 || b.top < s.top - 0.5 || b.bottom > s.bottom + 0.5)
+            .map(([t]) => `cut off: ${t}`);
+          boxes.forEach(([t, a], i) =>
+            boxes.slice(i + 1).forEach(([u, b]) => {
+              if (Math.min(a.right, b.right) - Math.max(a.left, b.left) > 1 && Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top) > 1)
+                out.push(`overlap: ${t} / ${u}`);
+            }),
+          );
+          return out;
+        }),
+      );
+    await expect.poll(problems, { message: path }).toEqual([]);
+  }
+});
+
+test('the original SVG diagrams render on the card, not the "not available yet" placeholder', async ({ page }) => {
+  for (const [path, missing] of [
+    ['it/e/apoptosis/', 'Immagine non ancora disponibile.'],
+    ['en/e/apoptosis/', 'Image not available yet.'],
+  ] as const) {
+    await page.goto(path);
+    await expect(page.getByText(missing)).toHaveCount(0);
+    const diagrams = page.locator('.viewer-canvas img[src$=".svg"]');
+    await expect(diagrams).toHaveCount(2);
+    for (const img of await diagrams.all()) {
+      await img.scrollIntoViewIfNeeded();
+      await expect.poll(() => img.evaluate((i: HTMLImageElement) => i.complete && i.naturalWidth), { message: path }).toBeGreaterThan(0);
+    }
+  }
+});
+
+test('the credit line states our changes to the image in the page language', async ({ page }) => {
+  for (const [path, text] of [
+    ['it/e/apoptosis/', 'Ricodifica in JPEG (qualità 85)'],
+    ['en/e/apoptosis/', 'Re-encoded as JPEG (quality 85)'],
+  ] as const) {
+    await page.goto(path);
+    await expect(page.locator(`${FIG} .credit`)).toContainText(text);
+  }
+});
+
 test.describe('stain and magnification switch (draft fixtures)', () => {
   test.beforeEach(async ({ request }) => {
     test.skip(!(await request.get('it/e/fixture-demo-b/')).ok(), 'needs a PREVIEW_DRAFTS=1 build with the draft fixtures');
@@ -163,8 +243,10 @@ test.describe('stain and magnification switch (draft fixtures)', () => {
     await page.keyboard.press('ArrowRight');
     await expect(radios.nth(1)).toBeChecked();
     await expect.poll(() => view(fig)).toEqual({ x: 0, y: 0, s: 1.5 });
-    await expect(fig.getByRole('group', { name: /Griglia di quadrati in altri colori/ })).toBeVisible();
-    await expect(fig.getByRole('group', { name: /con tre cerchi/ })).toBeHidden();
+    // The stage is a short "zoomable image" group; the alt is read once, on the image itself.
+    await expect(fig.getByRole('group', { name: 'Immagine ingrandibile' })).toBeVisible();
+    await expect(fig.getByRole('img', { name: /Griglia di quadrati in altri colori/ })).toBeVisible();
+    await expect(fig.getByRole('img', { name: /con tre cerchi/ })).toBeHidden();
     await expect(fig.getByRole('list', { name: 'Etichette dell’immagine' })).toHaveText('Etichetta B');
     await expect(fig.getByText('Immagine di prova B')).toBeVisible();
     await expect(fig.getByText('Immagine di prova: griglia')).toBeHidden();
@@ -179,5 +261,17 @@ test.describe('stain and magnification switch (draft fixtures)', () => {
 
     const axe = await new AxeBuilder({ page }).include('#fig-fixture-grid').withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze();
     expect(axe.violations.map((v) => `${v.id}: ${v.nodes.map((n) => n.target.join(' ')).join(', ')}`)).toEqual([]);
+
+    // Full screen: a short dialog name; the image shown now is named once, by its own alt; a switch made inside
+    // the modal is announced from inside it (outside, the status line would be inert: WCAG 4.1.3).
+    await fig.getByRole('button', { name: 'Schermo intero' }).click();
+    const dialog = page.getByRole('dialog', { name: 'Immagine a schermo intero' });
+    await expect(dialog.getByRole('img', { name: /Griglia di quadrati in altri colori/ })).toBeVisible();
+    await dialog.getByRole('radio', { checked: true }).focus();
+    await page.keyboard.press('ArrowLeft');
+    await expect(dialog.getByRole('radio').nth(0)).toBeChecked();
+    await expect(dialog.getByRole('img', { name: /con tre cerchi/ })).toBeVisible();
+    await expect(dialog.getByRole('img', { name: /Griglia di quadrati in altri colori/ })).toBeHidden();
+    await expect(dialog.locator('[role="status"][data-viewer-status]')).toHaveText('EE · in paraffina · piccolo ingrandimento');
   });
 });
