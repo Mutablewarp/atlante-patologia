@@ -1,0 +1,184 @@
+# Claim ledger for the pathway src/content/pathways/intrinsic-apoptosis.yaml (CONTENT_SCHEMA §8).
+# `section` = step id. Printed pages of the reference (PDF page - 24).
+entity: pathway-intrinsic-apoptosis
+claims:
+  - claimId: intrinsic-apoptosis-c001
+    section: cell-stress
+    statement: "The intrinsic pathway is a suicide program started by a cell that is itself under stress."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "46" }
+    status: verified
+    verifiedBy: agent
+    verifier: "pathway-author-agent"
+    date: 2026-11-03
+  - claimId: intrinsic-apoptosis-c002
+    section: cell-stress
+    statement: "Typical triggers are irreparable DNA damage, sensed mainly through p53, and prolonged calcium release from the endoplasmic reticulum."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "47, 49, 51" }
+    status: verified
+    verifiedBy: agent
+    verifier: "pathway-author-agent"
+    date: 2026-11-03
+  - claimId: intrinsic-apoptosis-c003
+    section: bh3-only
+    statement: "Stress signals act mostly through BH3-only members of the BCL-2 family such as BIM, BID, BAD, PUMA and NOXA."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "49-50" }
+    status: verified
+    verifiedBy: agent
+    verifier: "pathway-author-agent"
+    date: 2026-11-03
+  - claimId: intrinsic-apoptosis-c004
+    section: bh3-only
+    statement: "BH3-only proteins are activated by increased transcription or a change in conformation; p53 raises PUMA and NOXA transcription."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "49-50" }
+    status: verified
+    verifiedBy: agent
+    verifier: "pathway-author-agent"
+    date: 2026-11-03
+  - claimId: intrinsic-apoptosis-c005
+    section: bcl2-balance
+    statement: "In a healthy cell anti-apoptotic BCL-2, BCL-xL and MCL-1 keep BAX and BAK bound and inactive at the outer mitochondrial membrane; the default is survival."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "49" }
+    status: verified
+    verifiedBy: agent
+    verifier: "pathway-author-agent"
+    date: 2026-11-03
+  - claimId: intrinsic-apoptosis-c006
+    section: bcl2-balance
+    statement: "Active BH3-only proteins insert into BCL-2/BAX-BAK complexes and free BAX and BAK."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "49" }
+    status: verified
+    verifiedBy: agent
+    verifier: "pathway-author-agent"
+    date: 2026-11-03
+  - claimId: intrinsic-apoptosis-c007
+    section: bcl2-balance
+    statement: "Venetoclax, used in chronic lymphocytic leukaemia, antagonises BCL-2 and promotes apoptosis; PDB 6O0K shows it bound to BCL-2."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
+    status: beyond-reference
+    secondSource: { source: birkinshaw-2019, locator: "abstract" }
+    verifiedBy: agent
+    verifier: "pathway-author-agent"
+    date: 2026-11-03
+  - claimId: intrinsic-apoptosis-c008
+    section: bax-bak
+    statement: "Freed BAX (mostly cytosolic) and BAK (mostly mitochondrial) form channels in the outer mitochondrial membrane, permeabilising it."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "49, 52" }
+    status: verified
+    verifiedBy: agent
+    verifier: "pathway-author-agent"
+    date: 2026-11-03
+  - claimId: intrinsic-apoptosis-c009
+    section: bax-bak
+    statement: "In soluble, inactive BAX the C-terminal helix alpha9 occupies the hydrophobic groove used for binding between BCL-2 family members."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "49" }
+    status: beyond-reference
+    secondSource: { source: suzuki-2000, locator: "abstract" }
+    verifiedBy: agent
+    verifier: "pathway-author-agent"
+    date: 2026-11-03
+  - claimId: intrinsic-apoptosis-c010
+    section: cyt-c-release
+    statement: "Cytochrome c, SMAC and AIF pass from the intermembrane space into the cytosol through the permeabilised outer membrane."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "49, 52" }
+    status: verified
+    verifiedBy: agent
+    verifier: "pathway-author-agent"
+    date: 2026-11-03
+  - claimId: intrinsic-apoptosis-c011
+    section: cyt-c-release
+    statement: "Cytochrome c belongs to the electron transport chain, so its release also impairs ATP generation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "49, 51-52" }
+    status: verified
+    verifiedBy: agent
+    verifier: "pathway-author-agent"
+    date: 2026-11-03
+  - claimId: intrinsic-apoptosis-c012
+    section: apoptosome
+    statement: "Cytosolic cytochrome c binds APAF1, which with ATP forms the apoptosome and recruits procaspase-9."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "49, 52" }
+    status: verified
+    verifiedBy: agent
+    verifier: "pathway-author-agent"
+    date: 2026-11-03
+  - claimId: intrinsic-apoptosis-c013
+    section: apoptosome
+    statement: "APAF1 bound to cytochrome c and dATP oligomerises into a heptameric apoptosome (seven APAF1, each with one cytochrome c in PDB 3JBT)."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "52-53" }
+    status: beyond-reference
+    secondSource: { source: zhou-2015, locator: "abstract" }
+    verifiedBy: agent
+    verifier: "pathway-author-agent"
+    date: 2026-11-03
+  - claimId: intrinsic-apoptosis-c014
+    section: caspase-9
+    statement: "In the apoptosome procaspase-9 is converted to active caspase-9, the initiator caspase of the intrinsic pathway."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "46, 49, 52" }
+    status: verified
+    verifiedBy: agent
+    verifier: "pathway-author-agent"
+    date: 2026-11-03
+  - claimId: intrinsic-apoptosis-c015
+    section: caspase-9
+    statement: "IAPs can inhibit caspases-9, -3 and -7; SMAC released from mitochondria binds IAPs and relieves this inhibition."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "49, 52-53" }
+    status: verified
+    verifiedBy: agent
+    verifier: "pathway-author-agent"
+    date: 2026-11-03
+  - claimId: intrinsic-apoptosis-c016
+    section: caspase-9
+    statement: "The BIR3 domain of XIAP binds caspase-9 and holds it as an inactive monomer."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "52-53" }
+    status: beyond-reference
+    secondSource: { source: shiozaki-2003, locator: "abstract" }
+    verifiedBy: agent
+    verifier: "pathway-author-agent"
+    date: 2026-11-03
+  - claimId: intrinsic-apoptosis-c017
+    section: executioners
+    statement: "Caspase-9 cleaves procaspases-3, -6 and -7; caspase-3 is the most commonly activated executioner caspase."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "47, 52" }
+    status: verified
+    verifiedBy: agent
+    verifier: "pathway-author-agent"
+    date: 2026-11-03
+  - claimId: intrinsic-apoptosis-c018
+    section: executioners
+    statement: "Executioner caspases degrade proteins indiscriminately, and apoptosis is irreversible once begun."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "46, 48" }
+    status: verified
+    verifiedBy: agent
+    verifier: "pathway-author-agent"
+    date: 2026-11-03
+  - claimId: intrinsic-apoptosis-c019
+    section: substrates
+    statement: "Caspase-3 activates CAD, which degrades chromosomal DNA; caspase targets include lamins, alpha-fodrin and PARP."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "47-48" }
+    status: verified
+    verifiedBy: agent
+    verifier: "pathway-author-agent"
+    date: 2026-11-03
+  - claimId: intrinsic-apoptosis-c020
+    section: substrates
+    statement: "Apoptotic morphology: nuclear condensation and fragmentation, membrane blebs, fragmentation into membrane-bound apoptotic bodies within an intact cell membrane."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "41" }
+    status: verified
+    verifiedBy: agent
+    verifier: "pathway-author-agent"
+    date: 2026-11-03
+  - claimId: intrinsic-apoptosis-c021
+    section: efferocytosis
+    statement: "Dying cells release find-me signals, expose eat-me signals such as phosphatidylserine normally in the inner leaflet, and downregulate don't-eat-me signals."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "41" }
+    status: verified
+    verifiedBy: agent
+    verifier: "pathway-author-agent"
+    date: 2026-11-03
+  - claimId: intrinsic-apoptosis-c022
+    section: efferocytosis
+    statement: "Phagocytes and neighbouring cells remove apoptotic bodies before membrane integrity is lost (efferocytosis), avoiding leakage and inflammation."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "41" }
+    status: verified
+    verifiedBy: agent
+    verifier: "pathway-author-agent"
+    date: 2026-11-03

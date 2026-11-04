@@ -4,6 +4,7 @@ import { langPaths, type Lang } from '../../../i18n/index.ts';
 import { tStudy } from '../../../i18n/pages.ts';
 import { tS } from '../../../i18n/study.ts';
 import { langPath } from '../../../lib/url.ts';
+import { pathways } from '../../../lib/pathways.ts';
 import '../../../styles/study.css';
 
 export const getStaticPaths = langPaths;
@@ -18,6 +19,7 @@ const modes = [
   ['plannerTitle', 'plannerBody', 'study/planner/'],
   ['lastWeekTitle', 'lastWeekBody', 'study/review/?cram=1'],
 ] as const;
+const pws = await pathways();
 ---
 
 <BaseLayout lang={lang} title={t('title')} description={t('metaDescription')} tab="study">
@@ -37,6 +39,17 @@ const modes = [
           <a class="card link-card mode-card" href={langPath(lang, path)}>
             <h2>{t(title)} →</h2>
             <p class="muted">{t(body)}</p>
+          </a>
+        </li>
+      ))
+    }
+    {/* v2/3d-pathways: molecular pathways with the 3D viewer */}
+    {
+      pws.map((p) => (
+        <li>
+          <a class="card link-card mode-card" href={langPath(lang, `pathways/${p.id}/`)}>
+            <h2>{p.title[lang]} →</h2>
+            <p class="muted">{p.summary[lang]}</p>
           </a>
         </li>
       ))

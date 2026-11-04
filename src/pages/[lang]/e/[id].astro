@@ -14,6 +14,7 @@ import { LENSES } from '../../../lib/schema.ts';
 import { withCrossLinks, imageById, patternsForEntity, SECTION_FOR_ROLE } from '../../../lib/horizontal.ts';
 import EntityActions from '../../../components/entity/EntityActions.astro';
 import SelfExplain from '../../../components/entity/SelfExplain.astro';
+import EntityPathways from '../../../components/pathway/EntityPathways.astro'; // v2/3d-pathways: compact pathway block
 import { LANGS, fmt, type Lang } from '../../../i18n/index.ts';
 import { tEntity, tAtlas } from '../../../i18n/pages.ts';
 import { SECTIONS, QUICK_CHECK, PRINT_SECTIONS } from '../../../i18n/sections.ts';
@@ -182,6 +183,9 @@ const contexts = LENSES.flatMap((lens) =>
         </section>
 
         <SelfExplain lang={lang} prompts={entity.selfExplain} />
+
+        {/* v2/3d-pathways: pathways of this entity (renders nothing when there are none) */}
+        <EntityPathways lang={lang} entity={id} />
 
         <RelatedPanel lang={lang} groups={data.relations.get(id) ?? []} data={data} />
         {

@@ -1,0 +1,26 @@
+---
+/** Compact block of every pathway that belongs to this entity (included once in pages/[lang]/e/[id].astro). */
+import type { Lang } from '../../i18n/index.ts';
+import { tPw } from '../../i18n/pathway.ts';
+import { pathways, structureById } from '../../lib/pathways.ts';
+import Pathway from './Pathway.astro';
+
+interface Props {
+  lang: Lang;
+  entity: string;
+}
+const { lang, entity } = Astro.props;
+const list = (await pathways()).filter((p) => p.entity === entity);
+const structures = await structureById();
+---
+
+{
+  list.map((p) => (
+    <section class="entity-pathway" aria-labelledby={`pathway-${p.id}-title`}>
+      <p class="kicker">{tPw(lang, 'onEntity')}</p>
+      <h2 id={`pathway-${p.id}-title`}>{p.title[lang]}</h2>
+      <p class="small muted">{p.summary[lang]}</p>
+      <Pathway lang={lang} pathway={p} structures={structures} compact />
+    </section>
+  ))
+}

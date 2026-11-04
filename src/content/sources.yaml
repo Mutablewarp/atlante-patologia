@@ -119,3 +119,44 @@
   kind: article
   pmid: "3381879"
   existsVerified: { via: pubmed, date: 2026-11-03 }
+
+# Primary citations of the PDB entries in the intrinsic apoptosis pathway (docs/ledger/pathway-intrinsic-apoptosis.yaml); checked on PubMed.
+- id: birkinshaw-2019
+  title: "Structures of BCL-2 in complex with venetoclax reveal the molecular basis of resistance mutations"
+  authors: "Birkinshaw RW, Gong JN, Luo CS, Lio D, White CA, Anderson MA, Blombery P, Lessene G, Majewski IJ, Thijssen R, Roberts AW, Huang DCS, Colman PM, Czabotar PE"
+  journal: "Nat Commun 10(1):2385"
+  year: 2019
+  kind: article
+  doi: "10.1038/s41467-019-10363-1"
+  pmid: "31160589"
+  existsVerified: { via: pubmed, date: 2026-11-03 }
+
+- id: suzuki-2000
+  title: "Structure of Bax: coregulation of dimer formation and intracellular localization"
+  authors: "Suzuki M, Youle RJ, Tjandra N"
+  journal: "Cell 103(4):645-654"
+  year: 2000
+  kind: article
+  doi: "10.1016/s0092-8674(00)00167-7"
+  pmid: "11106734"
+  existsVerified: { via: pubmed, date: 2026-11-03 }
+
+- id: zhou-2015
+  title: "Atomic structure of the apoptosome: mechanism of cytochrome c- and dATP-mediated activation of Apaf-1"
+  authors: "Zhou M, Li Y, Hu Q, Bai XC, Huang W, Yan C, Scheres SHW, Shi Y"
+  journal: "Genes Dev 29(22):2349-2361"
+  year: 2015
+  kind: article
+  doi: "10.1101/gad.272278.115"
+  pmid: "26543158"
+  existsVerified: { via: pubmed, date: 2026-11-03 }
+
+- id: shiozaki-2003
+  title: "Mechanism of XIAP-mediated inhibition of caspase-9"
+  authors: "Shiozaki EN, Chai J, Rigotti DJ, Riedl SJ, Li P, Srinivasula SM, Alnemri ES, Fairman R, Shi Y"
+  journal: "Mol Cell 11(2):519-527"
+  year: 2003
+  kind: article
+  doi: "10.1016/s1097-2765(03)00054-6"
+  pmid: "12620238"
+  existsVerified: { via: pubmed, date: 2026-11-03 }

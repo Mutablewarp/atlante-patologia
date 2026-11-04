@@ -1,0 +1,70 @@
+---
+/**
+ * Full pathway page (O9): diagram, 3D viewer and step list, then the
+ * structures used (provenance, CC0) and the sources of the step text.
+ */
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../../components/nav/Breadcrumb.astro';
+import Pathway from '../../../components/pathway/Pathway.astro';
+import { LANGS, type Lang } from '../../../i18n/index.ts';
+import { tPw } from '../../../i18n/pathway.ts';
+import { tAtlas } from '../../../i18n/pages.ts';
+import { langPath } from '../../../lib/url.ts';
+import { siteData, sources as getSources } from '../../../lib/content.ts';
+import { pathways, structureById } from '../../../lib/pathways.ts';
+
+export async function getStaticPaths() {
+  return (await pathways()).flatMap((p) => LANGS.map((lang) => ({ params: { lang, id: p.id } })));
+}
+
+const lang = Astro.params.lang as Lang;
+const t = (k: Parameters<typeof tPw>[1]) => tPw(lang, k);
+const pathway = (await pathways()).find((p) => p.id === Astro.params.id)!;
+const structures = await structureById();
+const entity = (await siteData()).entityById.get(pathway.entity);
+const all = await getSources();
+const cited = pathway.sources.map((s) => ({ ...s, src: all.find((x) => x.id === s.source) }));
+const crumbs = [
+  { label: tAtlas(lang, 'title'), href: langPath(lang, 'atlas/') },
+  ...(entity ? [{ label: entity.names[lang], href: langPath(lang, `e/${entity.id}/`) }] : []),
+  { label: pathway.title[lang] },
+];
+---
+
+<BaseLayout lang={lang} title={pathway.title[lang]} description={pathway.summary[lang]} tab="atlas">
+  <Breadcrumb lang={lang} items={crumbs} />
+  <article class="pathway-page">
+    <p class="kicker">{t('kicker')}</p>
+    <h1>{pathway.title[lang]}</h1>
+    <p class="lede">{pathway.summary[lang]}</p>
+    <h2 class="visually-hidden">{t('steps')}</h2>
+    <Pathway lang={lang} pathway={pathway} structures={structures} />
+
+    <section class="sources" aria-labelledby="pw-sources-title">
+      <h2 id="pw-sources-title">{t('sources')}</h2>
+      <ul>
+        {
+          cited.map((c) => (
+            <li>
+              {c.src ? <cite>{c.src.title}</cite> : c.source}
+              {c.src?.edition && `, ed. ${c.src.edition}`}
+              {c.src?.journal && `, ${c.src.journal}`}
+              {c.chapter && ` · ${lang === 'it' ? 'cap.' : 'ch.'} ${c.chapter}`}
+              {c.pages && ` · pp. ${c.pages}`}
+              {c.src?.doi && (
+                <>
+                  {' '}· <a href={`https://doi.org/${c.src.doi}`} rel="noopener">doi:{c.src.doi}</a>
+                </>
+              )}
+            </li>
+          ))
+        }
+      </ul>
+      <p class="small">
+        {entity && <a href={langPath(lang, `e/${entity.id}/`)}>{entity.names[lang]}</a>}
+        {entity && ' · '}
+        <a href={langPath(lang, 'about/report/')}>{t('reportThis')}</a>
+      </p>
+    </section>
+  </article>
+</BaseLayout>
