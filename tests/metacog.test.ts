@@ -39,7 +39,10 @@ describe('confidence calibration', () => {
     expect(advice(calibration([...many(2, 0, 9), ...many(3, 1, 0)]))).toBe('fairlyWrong');
     expect(advice(calibration([...many(1, 0, 9), ...many(3, 0, 1)]))).toBe('oneLevel');
     expect(advice(calibration(many(2, 10, 0)))).toBe('oneLevel');
-    expect(advice(calibration([...many(3, 8, 1), ...many(1, 1, 3)]))).toBe('oneLevel');
+    expect(advice(calibration([...many(2, 8, 0), ...many(3, 2, 0)]))).toBe('oneLevel'); // 8 of 10 at one level
+    // Spread over the levels but under 5 at two of them: "you always chose the same level" would be false.
+    expect(advice(calibration([...many(1, 2, 2), ...many(2, 2, 1), ...many(3, 3, 0)]))).toBe('tooFew');
+    expect(advice(calibration([...many(3, 8, 1), ...many(1, 1, 3)]))).toBe('tooFew');
     expect(pct(1, 3)).toBe(33);
     expect(pct(0, 0)).toBe(0);
   });
