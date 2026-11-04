@@ -4,11 +4,26 @@ import Bi from '../../../components/Bi.astro';
 import { langPaths, type Lang } from '../../../i18n/index.ts';
 import { REPO_URL } from '../../../i18n/common.ts';
 import { langPath } from '../../../lib/url.ts';
+import { readFileSync } from 'node:fs';
 
 export const getStaticPaths = langPaths;
 const lang = Astro.params.lang as Lang;
 const BY_SA = 'https://creativecommons.org/licenses/by-sa/4.0/legalcode';
 const BY_SA_DEED = lang === 'it' ? 'https://creativecommons.org/licenses/by-sa/4.0/deed.it' : 'https://creativecommons.org/licenses/by-sa/4.0/deed.en';
+// Notices of the code the 3D viewer downloads (3Dmol.js and what its build bundles), read from the installed packages (D050).
+const pkg = (p: string) => readFileSync(`${process.cwd()}/node_modules/${p}`, 'utf8').trim();
+// The zlib notice is the comment block at the top of pako's zlib port.
+const zlibNotice = (pkg('pako/lib/zlib/inflate.js').match(/^'use strict';\s*\n((?:\/\/.*\n)+)/)?.[1] ?? '')
+  .replace(/^\/\/ ?/gm, '')
+  .trim();
+if (!zlibNotice.includes('Jean-loup Gailly')) throw new Error('licenses.astro: zlib notice not found in pako');
+const notices = [
+  { name: '3Dmol.js 2.5.5', license: 'BSD-3-Clause', text: pkg('3dmol/LICENSE') },
+  { name: 'pako 2.2.0 / 1.0.11', license: 'MIT AND Zlib', text: `${pkg('pako/LICENSE')}\n\n${zlibNotice}` },
+  { name: 'iobuffer 5.4.0', license: 'MIT', text: pkg('iobuffer/LICENSE') },
+  { name: 'netcdfjs 3.0.0', license: 'MIT', text: pkg('netcdfjs/LICENSE') },
+  { name: 'upng-js 2.1.0', license: 'MIT', text: pkg('upng-js/LICENSE') },
+];
 ---
 
 <AboutPage lang={lang} slug="licenses">
@@ -65,4 +80,35 @@ const BY_SA_DEED = lang === 'it' ? 'https://creativecommons.org/licenses/by-sa/4
       <p>The titles of the textbooks we cite belong to their publishers. No content from those books is reproduced in the atlas.</p>
     </Fragment>
   </Bi>
+  <h2 id="third-party-code">{lang === 'it' ? 'Codice di terze parti per la vista 3D' : 'Third-party code in the 3D view'}</h2>
+  <Bi lang={lang}>
+    <p slot="it">
+      La vista 3D dei percorsi molecolari usa 3Dmol.js, scaricato solo quando premi «Carica la vista 3D», insieme alle
+      librerie che contiene. Ne riportiamo gli avvisi di copyright e le licenze, come richiedono. I dati strutturali vengono
+      dal Protein Data Bank (CC0 1.0) e sono elencati nella pagina <a href={langPath(lang, 'about/credits/')}>Crediti</a>.
+    </p>
+    <p slot="en">
+      The 3D view of the molecular pathways uses 3Dmol.js, downloaded only when you press “Load the 3D view”, together with
+      the libraries it bundles. Their copyright notices and licences are reproduced here, as they require. The structure data
+      come from the Protein Data Bank (CC0 1.0) and are listed on the <a href={langPath(lang, 'about/credits/')}>Credits</a> page.
+    </p>
+  </Bi>
+  {
+    notices.map((n) => (
+      <details class="license-notice">
+        <summary>
+          {n.name} — {n.license}
+        </summary>
+        <pre lang="en">{n.text}</pre>
+      </details>
+    ))
+  }
 </AboutPage>
+
+<style>
+  .license-notice pre {
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    font-size: var(--step--1);
+  }
+</style>
