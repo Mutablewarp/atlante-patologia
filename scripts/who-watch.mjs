@@ -255,6 +255,8 @@ export const oneLine = (v) => String(v).replace(/[\u0000-\u001f\u007f]+/g, ' ');
 
 /** Above this many broken sources in one run, one summary issue replaces the per-source issues. */
 export const MAX_BROKEN = 3;
+/** Above this many changes in one run, one summary issue lists them (a format change, or a long-stale baseline). */
+export const MAX_CHANGES = 10;
 /** More removed items than this (count, or share of the baseline) means the page changed, not the catalogue. */
 export const MAX_REMOVED = 3;
 export const MAX_REMOVED_SHARE = 0.2;
@@ -275,7 +277,8 @@ export function changeIssue(source, change, { date, runUrl }) {
   const name = change.value || change.before || change.id;
   const mods = modulesFor(source, `${source.label} ${change.id} ${change.before ?? ''} ${change.value ?? ''}`);
   const lines = [
-    `**Source:** ${source.label} — ${source.url}`,
+    // Corrigenda labels and URLs are built from fetched catalogue text, so they are neutralised too.
+    `**Source:** ${neutral(source.label)} — ${neutralUrl(source.url)}`,
     `**Detected:** ${date} (run: ${runUrl || 'local'})`,
     `**Change:** ${change.kind} ${neutral(change.id)}`,
     ...(change.before !== undefined ? [`- before: ${neutral(change.before) || '(empty)'}`] : []),
@@ -290,14 +293,35 @@ export function changeIssue(source, change, { date, runUrl }) {
     '',
     `who-watch:${fp}`,
   ];
-  return { kind: 'change', fingerprint: fp, title: clip(`WHO watch: ${source.label}: ${change.kind} ${neutral(name)}`, 200), body: lines.join('\n') };
+  return { kind: 'change', fingerprint: fp, title: clip(`WHO watch: ${neutral(source.label)}: ${change.kind} ${neutral(name)}`, 200), body: lines.join('\n') };
+}
+
+/** Circuit breaker for changes: one issue lists a burst. Seen once (open or closed), the same burst never reopens. */
+export function changeSummaryIssue(changes, { date, runUrl }) {
+  const fp = fingerprint('changes', ...changes.map((c) => c.fingerprint).sort());
+  const shown = changes.slice(0, 50); // GitHub caps a body at 65,536 characters
+  const body = [
+    `**Detected:** ${date} (run: ${runUrl || 'local'})`,
+    `**Problem:** ${changes.length} changes in one run. Real news rarely comes in bursts: most likely a source changed its layout or format, or the baseline has not been refreshed for a long time.`,
+    '',
+    ...shown.map((c) => `- ${c.title.replace(/^WHO watch: /, '')}`),
+    ...(changes.length > shown.length ? [`- … and ${changes.length - shown.length} more`] : []),
+    '',
+    '**Human checklist**',
+    '- [ ] Run `node scripts/who-watch.mjs --dry-run` for the full details and open a few of the sources.',
+    '- [ ] Layout or format change: fix the parser in `scripts/who-watch.mjs` and its test fixture.',
+    '- [ ] Real changes: triage each one as in `docs/WHO_WATCH.md` §2, refresh the baseline, then close this issue.',
+    '',
+    `who-watch:${fp}`,
+  ].join('\n');
+  return { kind: 'change', fingerprint: fp, title: `WHO watch: ${changes.length} changes in one run, check the sources first`, body };
 }
 
 /** Issue for a source that could not be fetched or parsed: one per source, not reopened while an open one exists. */
 export function brokenIssue(source, error, { date, runUrl }) {
   const fp = fingerprint('broken', source.id);
   const body = [
-    `**Source:** ${source.label} — ${source.url}`,
+    `**Source:** ${neutral(source.label)} — ${neutralUrl(source.url)}`,
     `**Detected:** ${date} (run: ${runUrl || 'local'})`,
     `**Problem:** ${neutral(clip(String(error?.message ?? error), 300))}`,
     '',
@@ -425,7 +449,8 @@ export function plan(results, baseline, { now = new Date(), runUrl = '' } = {}) 
     for (const c of found) changes.push(changeIssue(r.source, c, ctx));
   }
   const brokenIssues = broken.length > MAX_BROKEN ? [brokenSummaryIssue(broken, ctx)] : broken.map((r) => brokenIssue(r.source, r.error, ctx));
-  return { issues: [...brokenIssues, ...changes], unbaselined };
+  const changeIssues = changes.length > MAX_CHANGES ? [changeSummaryIssue(changes, ctx)] : changes;
+  return { issues: [...brokenIssues, ...changeIssues], unbaselined };
 }
 
 // ── GitHub (REST API with GH_TOKEN; the token is only ever sent as a header) ─
@@ -508,7 +533,7 @@ async function main(argv) {
   const { issues, unbaselined } = plan(results, baseline, { runUrl: process.env.RUN_URL });
   for (const id of unbaselined) console.log(`who-watch: ${oneLine(id)} is not in the baseline yet (refresh it after review)`);
   const broken = issues.filter((i) => i.kind === 'broken').length;
-  console.log(`who-watch: ${results.length} sources read, ${issues.length - broken} change(s), ${broken} broken-source issue(s) (baseline reviewed ${oneLine(baseline.reviewed)})`);
+  console.log(`who-watch: ${results.length} sources read, ${issues.length - broken} change issue(s), ${broken} broken-source issue(s) (baseline reviewed ${oneLine(baseline.reviewed)})`);
 
   if (mode === 'dry-run') {
     for (const i of issues) console.log(`\n── ${i.title}\n${i.body}`);
