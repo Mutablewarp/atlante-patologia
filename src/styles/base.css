@@ -19,10 +19,11 @@ body {
   color: var(--ink);
   font-family: var(--font-body);
   font-size: var(--step-0);
-  line-height: 1.6;
+  line-height: var(--leading);
   font-kerning: normal;
   font-variant-numeric: proportional-nums;
   overflow-wrap: break-word;
+  -webkit-font-smoothing: antialiased;
 }
 
 h1,
@@ -64,12 +65,34 @@ li {
   text-wrap: pretty;
 }
 
+/* Long-form reading: measure, rhythm and hyphenation (pages carry lang) */
 .prose {
   max-width: var(--measure);
+  hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphenate-limit-chars: 7 3 3;
+}
+.prose :is(p, ul, ol) {
+  margin-bottom: 1.1em;
+}
+.prose li + li {
+  margin-top: 0.4em;
+}
+.prose :is(ul, ol) {
+  padding-left: 1.4em;
+}
+.prose li::marker {
+  color: var(--ink-muted);
 }
 .prose h2 {
   padding-top: var(--space-2);
   border-top: 1px solid var(--rule);
+}
+.prose h3 {
+  margin-top: 1.6em;
+}
+.prose :is(table, th, td, a, code) {
+  hyphens: manual;
 }
 
 a {
@@ -154,6 +177,12 @@ select,
 textarea {
   font: inherit;
   color: inherit;
+}
+/* iOS zooms into fields set below 16 px: never smaller, whatever the reading size */
+input,
+select,
+textarea {
+  font-size: max(1rem, 16px);
 }
 
 /* Buttons: >= 24x24 CSS px everywhere (SC 2.5.8), 44px for primary actions */

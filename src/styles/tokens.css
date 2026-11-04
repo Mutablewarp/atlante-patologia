@@ -1,8 +1,10 @@
 /*
  * Design tokens — "editorial anatomical atlas".
- * Warm paper and deep ink; accents from the H&E stain used with restraint:
- * hematoxylin (blue-violet) for links and actions, eosin (pink) for highlights
- * and focus. Dark theme "darkfield": deep blue-black with eosin accents.
+ * Warm off-white paper and near-black ink; accents from the H&E stain used with
+ * restraint: hematoxylin (blue-violet) for links and actions, eosin (pink) for
+ * highlights and focus; saffron and trichrome green only tint study callouts.
+ * Dark theme: soft graphite grey (never pure black) with off-white text (never
+ * pure white), to keep glare and halation low on long reads.
  *
  * Every colour is written once as light-dark(LIGHT, DARK). The theme is chosen
  * by `color-scheme`: system preference by default, forced by [data-theme].
@@ -13,31 +15,37 @@
   color-scheme: light dark;
 
   /* Surfaces */
-  --paper: light-dark(#f6f1e7, #0e1120);
-  --surface: light-dark(#fffcf6, #151a2d);
-  --surface-2: light-dark(#ede5d6, #1d2339);
-  --rule: light-dark(#ddd3c1, #2a3150);
+  --paper: light-dark(#f6f1e7, #1b1c21);
+  --surface: light-dark(#fffcf6, #23252b);
+  --surface-2: light-dark(#ede5d6, #2c2e35);
+  --rule: light-dark(#ddd3c1, #3a3c45);
 
   /* Text */
-  --ink: light-dark(#1c1923, #ece8f3);
-  --ink-muted: light-dark(#575061, #aaa5bf);
+  --ink: light-dark(#211e27, #e6e3dc);
+  --ink-muted: light-dark(#575061, #b2aea6);
 
   /* UI boundaries (>= 3:1 against paper and surface) */
-  --border-strong: light-dark(#857a6d, #737a9c);
+  --border-strong: light-dark(#857a6d, #7f818c);
 
   /* Hematoxylin: links, primary actions, current navigation */
   --hema: light-dark(#3a2e8c, #aea7ff);
-  --hema-soft: light-dark(#e5e0f6, #272b4d);
+  --hema-soft: light-dark(#e5e0f6, #312f4f);
   --hema-ink: light-dark(#2a2070, #d4d0ff);
-  --on-hema: light-dark(#ffffff, #0e1120);
+  --on-hema: light-dark(#ffffff, #1b1c21);
 
   /* Eosin: highlights, indicator bars, focus */
   --eosin: light-dark(#ad2c5b, #ff8db4);
-  --eosin-soft: light-dark(#f8e2ea, #3b1e31);
+  --eosin-soft: light-dark(#f8e2ea, #3d2731);
   --eosin-ink: light-dark(#8a1f47, #ffc2d6);
 
+  /* Study callouts: saffron (traps) and trichrome green (mnemonics) */
+  --saffron: light-dark(#8a5300, #f0b860);
+  --saffron-soft: light-dark(#fbf0d9, #36301f);
+  --masson: light-dark(#1f6b5c, #7fd1bd);
+  --masson-soft: light-dark(#e1f1ec, #1f3330);
+
   /* Status: draft / caution */
-  --caution-bg: light-dark(#fbecc6, #3a2e10);
+  --caution-bg: light-dark(#fbecc6, #3a3020);
   --caution-ink: light-dark(#5a3c00, #f6d98a);
 
   /* Focus ring */
@@ -45,14 +53,18 @@
 
   /* Type */
   --font-display: 'Fraunces Variable', 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
-  --font-body: 'Atkinson Hyperlegible Next Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --step--1: clamp(0.84rem, 0.82rem + 0.1vw, 0.9rem);
-  --step-0: clamp(1rem, 0.97rem + 0.15vw, 1.0625rem);
-  --step-1: clamp(1.18rem, 1.1rem + 0.35vw, 1.35rem);
-  --step-2: clamp(1.42rem, 1.27rem + 0.7vw, 1.8rem);
+  /* Width-matched fallback: Arial (and its metric twins Arimo/Liberation Sans on Linux) sets a line of Atkinson
+     Hyperlegible Next within 0.5 % of its width (measured), so a first visit without the web font wraps the same way */
+  --font-body: 'Atkinson Hyperlegible Next Variable', Arial, Helvetica, 'Liberation Sans', Arimo, system-ui, sans-serif;
+  /* Fluid scale: body text 17 px on phones to 19 px on wide screens; rem-based, so the A-/A+ size scales it all */
+  --step--1: clamp(0.875rem, 0.85rem + 0.12vw, 0.95rem);
+  --step-0: clamp(1.0625rem, 1rem + 0.3vw, 1.1875rem);
+  --step-1: clamp(1.22rem, 1.12rem + 0.45vw, 1.42rem);
+  --step-2: clamp(1.45rem, 1.27rem + 0.8vw, 1.9rem);
   --step-3: clamp(1.75rem, 1.45rem + 1.4vw, 2.6rem);
-  --step-4: clamp(2.1rem, 1.6rem + 2.4vw, 3.6rem);
-  --measure: 68ch;
+  --step-4: clamp(2.05rem, 1.6rem + 2.2vw, 3.4rem);
+  --measure: 66ch;
+  --leading: 1.65;
 
   /* Space & shape */
   --space-1: 0.25rem;
@@ -73,7 +85,7 @@
   --tabbar-h: 4.25rem;
   --rail-w: 5.5rem;
   --sidebar-w: 15.5rem;
-  --chips-h: 3rem;
+  --chips-h: 3.85rem; /* section chip strip, measured: 0.5rem + 2.75rem + 0.5rem + rule */
   --gutter: clamp(1rem, 0.6rem + 2vw, 2.5rem);
 
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
@@ -84,4 +96,15 @@
 }
 :root[data-theme='dark'] {
   color-scheme: dark;
+}
+
+/* Reading size (A-/A+), set on <html> before first paint by BaseLayout */
+:root.text-s {
+  font-size: 90%;
+}
+:root.text-l {
+  font-size: 112.5%;
+}
+:root.text-xl {
+  font-size: 125%;
 }

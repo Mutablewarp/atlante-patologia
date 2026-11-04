@@ -32,6 +32,28 @@ export const PAIRS = [
   ['focus', 'surface-2', UI, 'focus ring on chips'],
   ['eosin', 'surface', UI, 'nav indicator bar'],
   ['hema', 'hema-soft', UI, 'current nav icon on indicator'],
+  ['hema', 'surface-2', TEXT, 'links in the footer'],
+  ['ink-muted', 'hema-soft', TEXT, 'secondary text in the high-yield callout'],
+  // Study callouts (entity.css [data-callout]): text, links, markers and accent bar on each tint
+  ['ink', 'saffron-soft', TEXT, 'text in the traps callout'],
+  ['hema', 'saffron-soft', TEXT, 'links in the traps callout'],
+  ['ink-muted', 'saffron-soft', TEXT, 'list markers in the traps callout'],
+  ['saffron', 'saffron-soft', UI, 'traps accent bar'],
+  ['saffron', 'paper', UI, 'traps accent bar against the page'],
+  ['ink', 'masson-soft', TEXT, 'text in the mnemonics callout'],
+  ['hema', 'masson-soft', TEXT, 'links in the mnemonics callout'],
+  ['ink-muted', 'masson-soft', TEXT, 'list markers in the mnemonics callout'],
+  ['masson', 'masson-soft', UI, 'mnemonics accent bar'],
+  ['masson', 'paper', UI, 'mnemonics accent bar against the page'],
+  ['ink', 'eosin-soft', TEXT, 'text in the quick-check callout'],
+  ['hema-ink', 'eosin-soft', TEXT, 'show-answer toggles in the quick-check callout'],
+  ['ink-muted', 'eosin-soft', TEXT, 'list markers in the quick-check callout'],
+  ['eosin', 'eosin-soft', UI, 'quick-check accent bar'],
+  ['focus', 'hema-soft', UI, 'focus ring in the high-yield callout'],
+  ['focus', 'saffron-soft', UI, 'focus ring in the traps callout'],
+  ['focus', 'masson-soft', UI, 'focus ring in the mnemonics callout'],
+  ['focus', 'eosin-soft', UI, 'focus ring in the quick-check callout'],
+  ['eosin', 'paper', UI, 'reading-progress bar'],
 ];
 
 export function parseTokens(css) {

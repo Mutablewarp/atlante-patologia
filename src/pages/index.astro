@@ -27,7 +27,7 @@ const abs = (p: string) => new URL(p, Astro.site!).href;
     {LANGS.map((l) => <link rel="alternate" hreflang={l} href={abs(langPath(l))} />)}
     <link rel="alternate" hreflang="x-default" href={abs(url())} />
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#f6f1e7" />
-    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#0e1120" />
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#1b1c21" />
     <link rel="icon" href={url('favicon.svg')} type="image/svg+xml" />
     <link rel="manifest" href={url('manifest.webmanifest')} />
     <script is:inline define:vars={{ targets }}>
