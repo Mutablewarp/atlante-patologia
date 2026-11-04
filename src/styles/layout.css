@@ -75,7 +75,19 @@ html {
   min-width: 0;
   flex-shrink: 1;
 }
-.topbar .brand > span {
+/* One visible line at any width and reading size: when the whole name does not fit, "di Patologia"
+   wraps onto a second line that is clipped (still read as part of the link name), so nothing is cut */
+.topbar .brand-name {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 0.28em;
+  min-width: 0;
+  height: 1.35em;
+  line-height: 1.35;
+  overflow: hidden;
+}
+.topbar .brand-main {
+  min-width: 0;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -84,18 +96,10 @@ html {
     font-size: var(--step-0);
   }
 }
-@media (max-width: 359px) {
-  .topbar .brand .brand-sub {
-    display: none;
-  }
-}
-/* Larger reading sizes (A+) on phones: the name keeps its own size and drops "di Patologia", so it is not cut */
+/* Larger reading sizes (A+) on phones: the name keeps its own size */
 @media (max-width: 420px) {
   :root:is(.text-l, .text-xl) .topbar .brand {
     font-size: 17px;
-  }
-  :root:is(.text-l, .text-xl) .topbar .brand .brand-sub {
-    display: none;
   }
 }
 .topbar-search {

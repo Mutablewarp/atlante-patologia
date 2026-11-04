@@ -124,6 +124,25 @@ test('A-/A+ changes the reading size, is keyboard operable and is applied before
   expect(await field.evaluate((el) => parseFloat(getComputedStyle(el).fontSize))).toBeGreaterThanOrEqual(16);
 });
 
+test('the site name in the top bar is shown whole or as "Atlante", never cut, at every reading size', async ({ page }) => {
+  test.skip(width() >= 1024, 'from 1024 px the name is in the sidebar');
+  for (const size of ['m', 'l', 'xl']) {
+    await page.addInitScript((s) => localStorage.setItem('ap-text', s), size);
+    await page.goto(ENTITY);
+    const brand = page.locator('.topbar .brand');
+    await expect(brand, size).toHaveAccessibleName('Atlante di Patologia');
+    const shown = await brand.evaluate((a) => {
+      const box = a.querySelector('.brand-name')!.getBoundingClientRect();
+      const main = a.querySelector<HTMLElement>('.brand-main')!;
+      const sub = a.querySelector('.brand-sub')!.getBoundingClientRect();
+      if (main.scrollWidth > main.clientWidth) return 'cut';
+      if (sub.top >= box.bottom - 1) return 'Atlante'; // "di Patologia" wrapped onto the clipped line
+      return sub.right <= box.right + 1 && sub.bottom <= box.bottom + 1 ? 'whole' : 'cut';
+    });
+    expect(shown, size).not.toBe('cut');
+  }
+});
+
 test('reading progress and the section chips follow the scroll', async ({ page }) => {
   await page.goto(ENTITY);
   const bar = page.locator('[data-read-progress]');
