@@ -284,11 +284,24 @@ test('oral simulator: three questions, prediction before self-assessment, calibr
   const [session] = await readStore(page, 'oralSessions');
   expect((session!.items as unknown[]).length).toBe(3);
 
+  // Record every text the history shows after "Start again": it must never claim that nothing is saved, not even for one frame.
+  await page.evaluate(() => {
+    const w = window as unknown as { historyTexts: string[] };
+    w.historyTexts = [];
+    new MutationObserver(() => {
+      const h = document.querySelector('[aria-labelledby="oral-history-title"]');
+      if (h) w.historyTexts.push(h.textContent ?? '');
+    }).observe(document.body, { subtree: true, childList: true, characterData: true });
+  });
   await page.getByRole('button', { name: 'Start again' }).click();
   // Focus goes to the first setup control, never to <body> (WCAG 2.4.3).
   await expect(page.getByRole('checkbox', { name: 'Use a timer for each question' })).toBeFocused();
   await expect(page.getByRole('region', { name: 'Previous sessions' }).getByText(/3 questions, self-assessed 2\.3 out of 4/)).toBeVisible();
-  await expect(page.getByText('No sessions saved on this device.')).toHaveCount(0);
+  const texts = await page.evaluate(() => (window as unknown as { historyTexts: string[] }).historyTexts);
+  expect(texts.length).toBeGreaterThan(0);
+  expect(texts.filter((s) => s.includes('No sessions saved'))).toEqual([]);
+  // The page stays scrolled after the results: the focused setup control must not end up under the sticky bar.
+  await noAxeViolations(page);
   expect(foreign).toEqual([]);
 });
 

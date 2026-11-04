@@ -34,7 +34,6 @@ export default function OralExam({ lang }: { lang: Lang }) {
   const pool = useLoad(() => loadOral(lang));
   const [run, setRun] = useState<Run | null>(null);
   const [restarted, setRestarted] = useState(false);
-  const history = useLoad(sessions, [run]);
   // The page builds the empty state itself when there are no questions; this covers a failed fetch.
   if (!pool.loading && !pool.data?.length) return <p class="empty-state">{t('oralNoContent')}</p>;
   if (run)
@@ -59,7 +58,8 @@ export default function OralExam({ lang }: { lang: Lang }) {
         focus={restarted}
         onStart={(seconds) => setRun({ id: `oral@${Date.now()}`, at: Date.now(), questions: drawQuestions(pool.data!), seconds })}
       />
-      <History lang={lang} t={t} list={history.loading ? undefined : (history.data ?? [])} />
+      {/* History mounts again after every run, so it reads the sessions afresh (never a stale "nothing saved"). */}
+      <History lang={lang} t={t} />
     </div>
   );
 }
@@ -268,13 +268,15 @@ function Runner({ lang, t, run, onRestart }: { lang: Lang; t: T; run: Run; onRes
   );
 }
 
-function History({ lang, t, list }: { lang: Lang; t: T; list?: { id: string; at: number; items: OralItem[] }[] }) {
-  const c = oralCalibration((list ?? []).flatMap((s) => s.items));
+function History({ lang, t }: { lang: Lang; t: T }) {
+  const saved = useLoad(sessions);
+  const list = saved.data ?? [];
+  const c = oralCalibration(list.flatMap((s) => s.items));
   return (
     <section aria-labelledby="oral-history-title">
       <h2 id="oral-history-title">{t('historyTitle')}</h2>
-      {/* While reloading, never claim that nothing is saved. */}
-      {!list ? (
+      {/* While loading, never claim that nothing is saved. */}
+      {saved.loading ? (
         <p class="muted">{t('loading')}</p>
       ) : list.length ? (
         <>
