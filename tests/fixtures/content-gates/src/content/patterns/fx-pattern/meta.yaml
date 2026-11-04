@@ -10,7 +10,7 @@ matrix:
   rows:
     - entity: fx-alpha
       cells:
-        - { it: "segnaposto", en: "placeholder" }
+        - { it: "segnaposto<!--c:fx-pattern-c001-->", en: "placeholder<!--c:fx-pattern-c001-->" }
 images:
   - { id: fx-img, entity: fx-alpha }
 reviewStatus: ai-generated-unreviewed

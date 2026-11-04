@@ -14,6 +14,7 @@ import { tHz } from '../../../i18n/horizontal.ts';
 import { langPath } from '../../../lib/url.ts';
 import { siteData, patterns, patternBody, sources as getSources } from '../../../lib/content.ts';
 import { withCrossLinks, imageById, anyEntityName } from '../../../lib/horizontal.ts';
+import { stepHtml } from '../../../lib/pathways.ts';
 import '../../../styles/entity.css';
 import '../../../styles/horizontal.css';
 
@@ -106,7 +107,8 @@ const captionId = 'matrix-caption';
                       </span>
                     )}
                   </th>
-                  {r.cells.map((c) => <td>{c[lang]}</td>)}
+                  {/* Cells carry claim markers: escaped text, markers kept as HTML comments. */}
+                  {r.cells.map((c) => <td set:html={stepHtml(c[lang])} />)}
                   {hasImages && (
                     <td>
                       {r.images.map((i, n) => (

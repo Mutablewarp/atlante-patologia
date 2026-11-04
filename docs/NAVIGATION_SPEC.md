@@ -1,6 +1,6 @@
 # Navigation spec
 
-Status: PHASE 0 proposal, 2026-10-10. Platform guidance verified in [VERIFIED_FACTS.md](VERIFIED_FACTS.md) §H–I.
+Status: PHASE 0 proposal, 2026-10-10; site map, badges and footer brought in line with the code on 2026-11-04. Platform guidance verified in [VERIFIED_FACTS.md](VERIFIED_FACTS.md) §H–I.
 
 ## 1. Primary destinations
 
@@ -50,6 +50,7 @@ All ids in URLs are language-neutral, so switching language swaps only the `/{la
 | `/{lang}/atlas/az/` | A–Z of entities and glossary terms; `#term-<id>` anchors. |
 | `/{lang}/e/{id}/` | **Canonical entity page.** |
 | `/{lang}/pattern/{id}/` | Pattern Page with comparison matrix. |
+| `/{lang}/pathways/{id}/` | Molecular pathway (O9, D054): step list, animated 2D diagram, 3D structure viewer loaded on demand, structure provenance and sources. |
 | `/{lang}/compare/?ids=a,b,c` | Comparison table of 2–4 entities (client-side from the index JSON). |
 | `/{lang}/differential/` | Differential builder. |
 | `/{lang}/map/` | Concept map, with an equivalent tree/list view on the same page as an accessible toggle. |
@@ -60,10 +61,14 @@ All ids in URLs are language-neutral, so switching language swaps only the `/{la
 | `/{lang}/study/images/` | Spot the diagnosis, gross/micro pairs, look-alikes. |
 | `/{lang}/study/chain/` | Pathology → sign → lab trainer. |
 | `/{lang}/study/planner/` | Exam date and weekly hours → schedule. |
+| `/{lang}/study/oral/` | Oral exam simulator: three questions across the programme, self-assessment rubric. |
 | `/{lang}/search/?q=` | Full search with lens filters (Pagefind). |
 | `/{lang}/me/` | Honest dashboard: coverage, mastery, review debt, weak spots. |
-| `/{lang}/me/{bookmarks\|notes\|errors\|data}/` | Personal layer. `data/` holds export/import, storage meter, offline packs and persistence status. |
-| `/{lang}/about/…` | method (incl. AI disclosure), credits, accessibility, privacy, disclaimer, roadmap, reading-list, report-an-error. |
+| `/{lang}/me/{bookmarks\|notes\|errors\|data}/` | Personal layer. `data/` holds export/import, storage meter and persistence status. |
+| `/{lang}/me/offline/` | Offline packs per chapter (opt-in), storage meter and persistence status. |
+| `/{lang}/offline/` | Offline fallback the service worker serves when a page is neither online nor saved. |
+| `/{lang}/about/…` | index, method (incl. AI disclosure), credits, licenses, evidence, accessibility, privacy, disclaimer, roadmap, reading-list, report-an-error. |
+| `/{lang}/data/…` | Static JSON for the client tools: `index.json`, `quick.json`, `study.json`, `oral.json`, `cards/{module}.json`, `questions/{module}.json`. |
 | `/404.html` | Search box, suggestions derived from the failed path, links to Atlas and Home. |
 
 Interpretation recorded in [DECISIONS.md](DECISIONS.md) D010: the brief's `/{lang}/atlas/{lens}/{slug}/` is the **lens-term page**. Entities live only at `/{lang}/e/{id}/`, which avoids duplicate pages and keeps one canonical URL.
@@ -77,7 +82,7 @@ Interpretation recorded in [DECISIONS.md](DECISIONS.md) D010: the brief's `/{lan
 Header contents:
 - Names (it / en / Latin / eponyms / synonyms).
 - Tags: lens chips, each a link.
-- Badges: review status, last updated, edition-dependent (when set).
+- Badges: last updated, edition-dependent (when set), and "Expert-reviewed" with the reviewer's name only after a human review. There is no per-page AI badge (O11, D052): the AI line is in the footer of every page.
 - Buttons: Quick/Full toggle, "Add to review", "Quiz me on this", "Compare with…", bookmark, print.
 
 Body contents:
@@ -98,7 +103,7 @@ Also on the page:
 │ ‹ Atlas › Heart › …     ⋮    │  breadcrumb (truncates from the left)
 │ Coagulative necrosis         │
 │ Necrosi coagulativa · lat. … │  all names visible (search + learning)
-│ [AI-unreviewed] [Upd 2026-…] │  badges (text + icon, not colour only)
+│ [Upd 2026-…] [◷ Edition]     │  badges (text + icon, not colour only)
 │ (Quick|Full) (+Review) (Quiz)│
 ├──────────────────────────────┤
 │ ◀ Def  Path  Gross  Micro …▶ │  sticky chip row, horizontal scroll
@@ -148,6 +153,7 @@ Also on the page:
 │ (collapse «) │                                       │                 │
 ├──────────────┴──────────────────────────────────────┴─────────────────┤
 │ Educational use only — not for diagnosis or treatment. Errors possible. Report ▸ │ footer on every page
+│ AI-generated texts, checked automatically; no expert review yet. Method ▸        │ AI line (O11)
 └───────────────────────────────────────────────────────────────────────┘
 ```
 

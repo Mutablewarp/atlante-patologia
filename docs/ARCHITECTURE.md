@@ -25,6 +25,7 @@ Status: PHASE 0 proposal, 2026-10-10. Versions come from [VERIFIED_FACTS.md](VER
 | Search | Pagefind | 1.5.2 | Post-build; one index per `<html lang>`; diacritic-tolerant since 1.5.0; `baseUrl` for project-site subpath. |
 | Spaced repetition | ts-fsrs | 5.4.2 (MIT, Node ≥ 20) | FSRS v6 scheduler. |
 | Client storage | idb (IndexedDB wrapper) | 8.0.4 (ISC) | |
+| 3D structure viewer | 3Dmol.js | 2.5.5 (BSD-3-Clause) | Loaded by a dynamic import only after "Load the 3D view"; kept out of the service-worker precache; reads committed CC0 BinaryCIF files written by `scripts/fetch-structures.mjs` (D050, D054). |
 | Service worker | Hand-written, plus a build script that emits the precache list | — | `@vite-pwa/astro` does not support Astro 6/7 (D006). |
 | Sitemap | `@astrojs/sitemap` | 3.7.4 | With i18n alternates. |
 | Unit + content validators | Vitest | 5.0.3 | Validators are Vitest suites (D014). |
@@ -32,7 +33,7 @@ Status: PHASE 0 proposal, 2026-10-10. Versions come from [VERIFIED_FACTS.md](VER
 | Performance audit | `lighthouse` CLI + small assertion script | 13.5.0 | `@lhci/cli` not used: no release since 2025-06 (D007). |
 | License scan | license-checker-rseidelsohn | 5.0.1 | Needs Node ≥ 24, npm ≥ 11. |
 | Git hooks | simple-git-hooks | 2.14.0 | Pre-commit containment and no-verbatim guard. |
-| Reference text extraction (guard) | pdfjs-dist | verify in Phase 1 | Apache-2.0, in-repo. PyMuPDF (AGPL) was used only for Phase 0 exploration, outside the repo (D016). |
+| Reference text for the guard | none in the repo | — | `scripts/no-verbatim.mjs` reads text extracted once into gitignored `.work/*.txt`; no PDF library is a dependency. PyMuPDF (AGPL) was used only for Phase 0 exploration, outside the repo (D016, superseded). |
 | Fonts | Fraunces (display) + Atkinson Hyperlegible Next (body), self-hosted via `@fontsource-variable/*` | 5.3.0 / 5.3.0 (OFL-1.1) | Bundled with the site, no third-party requests (D015 revised). |
 
 ## 3. Repository layout

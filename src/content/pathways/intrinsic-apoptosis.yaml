@@ -14,14 +14,14 @@ steps:
     title: { it: "Stress dentro la cellula", en: "Stress inside the cell" }
     short: { it: "Stress cellulare", en: "Cell stress" }
     text:
-      it: "La via intrinseca è un programma di suicidio che la cellula avvia quando è lei stessa sotto stress.<!--c:intrinsic-apoptosis-c001--> Inneschi tipici sono un danno al DNA troppo grave per essere riparato, avvertito soprattutto tramite p53, e una liberazione prolungata di calcio dal reticolo endoplasmatico.<!--c:intrinsic-apoptosis-c002-->"
-      en: "The intrinsic pathway is a suicide program that a cell starts when it is itself under stress.<!--c:intrinsic-apoptosis-c001--> Typical triggers are DNA damage too severe to repair, sensed mainly through p53, and prolonged release of calcium from the endoplasmic reticulum.<!--c:intrinsic-apoptosis-c002-->"
+      it: "La via intrinseca è un programma di suicidio che la cellula avvia quando è lei stessa sotto stress.<!--c:intrinsic-apoptosis-c001--> Inneschi tipici sono un danno al DNA troppo grave per essere riparato, segnalato soprattutto tramite p53, e una liberazione prolungata di calcio dal reticolo endoplasmatico.<!--c:intrinsic-apoptosis-c002-->"
+      en: "The intrinsic pathway is a suicide program that a cell starts when it is itself under stress.<!--c:intrinsic-apoptosis-c001--> Typical triggers are DNA damage too severe to repair, relayed mainly through p53, and prolonged release of calcium from the endoplasmic reticulum.<!--c:intrinsic-apoptosis-c002-->"
   - id: bh3-only
     title: { it: "Si accendono le proteine solo-BH3", en: "BH3-only proteins switch on" }
     short: { it: "Proteine solo-BH3", en: "BH3-only proteins" }
     text:
-      it: "I segnali di stress agiscono soprattutto attraverso i membri solo-BH3 della famiglia BCL-2, come BIM, BID, BAD, PUMA e NOXA.<!--c:intrinsic-apoptosis-c003--> Si attivano perché ne aumenta la trascrizione o perché cambiano forma: p53, per esempio, fa trascrivere di più PUMA e NOXA.<!--c:intrinsic-apoptosis-c004-->"
-      en: "Stress signals act mostly through the BH3-only members of the BCL-2 family, such as BIM, BID, BAD, PUMA and NOXA.<!--c:intrinsic-apoptosis-c003--> They are switched on by more transcription or by a change of shape: p53, for example, raises the transcription of PUMA and NOXA.<!--c:intrinsic-apoptosis-c004-->"
+      it: "I segnali di stress agiscono soprattutto attraverso i membri solo-BH3 della famiglia BCL-2, come BIM, BID, BAD, PUMA e NOXA.<!--c:intrinsic-apoptosis-c003--> Si attivano in vari modi, fra cui un aumento della trascrizione o un cambiamento di forma: p53, per esempio, fa trascrivere di più PUMA e NOXA.<!--c:intrinsic-apoptosis-c004-->"
+      en: "Stress signals act mostly through the BH3-only members of the BCL-2 family, such as BIM, BID, BAD, PUMA and NOXA.<!--c:intrinsic-apoptosis-c003--> They are switched on in several ways, such as more transcription or a change of shape: p53, for example, raises the transcription of PUMA and NOXA.<!--c:intrinsic-apoptosis-c004-->"
   - id: bcl2-balance
     title: { it: "L’equilibrio della famiglia BCL-2 si sposta", en: "The BCL-2 family balance tips" }
     short: { it: "BCL-2 frena BAX/BAK", en: "BCL-2 holds BAX/BAK" }
@@ -36,8 +36,8 @@ steps:
     title: { it: "BAX e BAK aprono la membrana esterna", en: "BAX and BAK open the outer membrane" }
     short: { it: "BAX/BAK: MOMP", en: "BAX/BAK: MOMP" }
     text:
-      it: "Una volta libere, BAX (per lo più nel citosol) e BAK (per lo più sul mitocondrio) si raccolgono nella membrana mitocondriale esterna e vi aprono dei canali: è la permeabilizzazione della membrana esterna (MOMP).<!--c:intrinsic-apoptosis-c008--> Nella forma inattiva e solubile di BAX mostrata in 3D, l’ultima elica (α9) è ripiegata nel solco che i membri della famiglia BCL-2 usano per legarsi fra loro.<!--c:intrinsic-apoptosis-c009-->"
-      en: "Once free, BAX (mostly in the cytosol) and BAK (mostly on the mitochondrion) gather in the outer mitochondrial membrane and open channels in it: this is outer membrane permeabilisation (MOMP).<!--c:intrinsic-apoptosis-c008--> In the inactive, soluble form of BAX shown in 3D, its last helix (α9) is folded into the groove that BCL-2 family members use to bind one another.<!--c:intrinsic-apoptosis-c009-->"
+      it: "Una volta liberate o attivate, BAX (per lo più nel citosol) e BAK (per lo più sul mitocondrio) si raccolgono nella membrana mitocondriale esterna e vi aprono dei canali: è la permeabilizzazione della membrana esterna (MOMP).<!--c:intrinsic-apoptosis-c008--> Nella forma inattiva e solubile di BAX mostrata in 3D, l’ultima elica (α9) è ripiegata nel solco che i membri della famiglia BCL-2 usano per legarsi fra loro.<!--c:intrinsic-apoptosis-c009-->"
+      en: "Once freed or activated, BAX (mostly in the cytosol) and BAK (mostly on the mitochondrion) gather in the outer mitochondrial membrane and open channels in it: this is outer membrane permeabilisation (MOMP).<!--c:intrinsic-apoptosis-c008--> In the inactive, soluble form of BAX shown in 3D, its last helix (α9) is folded into the groove that BCL-2 family members use to bind one another.<!--c:intrinsic-apoptosis-c009-->"
     structure: 1f16
     highlight:
       resi: "170-189"
@@ -79,8 +79,8 @@ steps:
       it: "La caspasi-9 attiva taglia e attiva le procaspasi esecutrici -3 e -7, e la caspasi-3 attiva poi la caspasi-6; la caspasi-3 è quella attivata più spesso.<!--c:intrinsic-apoptosis-c017--> Le caspasi esecutrici tagliano molte proteine, ciascuna subito dopo un aspartato all’interno di un breve motivo preferito: la caspasi-3 predilige sequenze del tipo DExD, come DEVD, il motivo dell’inibitore nel modello 3D.<!--c:intrinsic-apoptosis-c018--> Arrivati a questo punto la cellula quasi sempre muore.<!--c:intrinsic-apoptosis-c023-->"
       en: "Active caspase-9 cleaves and activates the executioner procaspases-3 and -7, and caspase-3 then activates caspase-6; caspase-3 is the one activated most often.<!--c:intrinsic-apoptosis-c017--> Executioner caspases cut many proteins, each just after an aspartate within a short preferred motif: caspase-3 favours sequences of the form DExD, such as DEVD, the motif of the inhibitor in the 3D model.<!--c:intrinsic-apoptosis-c018--> Once this stage is reached the cell almost always dies.<!--c:intrinsic-apoptosis-c023-->"
     sourcesDiffer:
-      it: "Le fonti divergono: il testo di riferimento indica che la caspasi-9 attiva direttamente anche la caspasi-6, che le caspasi esecutrici tagliano le proteine senza selezione e che il processo è irreversibile; in estratti cellulari la caspasi-6 si attiva a valle della caspasi-3, le caspasi riconoscono motivi di sequenza precisi, e alcune cellule si riprendono anche dopo l’attivazione della caspasi-3.<!--c:intrinsic-apoptosis-c017--><!--c:intrinsic-apoptosis-c018--><!--c:intrinsic-apoptosis-c023-->"
-      en: "Sources differ: the reference has caspase-9 activate caspase-6 directly as well, has executioner caspases cut proteins indiscriminately, and calls the process irreversible; in cell extracts caspase-6 is activated downstream of caspase-3, caspases recognise specific sequence motifs, and some cells recover even after caspase-3 has been activated.<!--c:intrinsic-apoptosis-c017--><!--c:intrinsic-apoptosis-c018--><!--c:intrinsic-apoptosis-c023-->"
+      it: "Le fonti divergono: il testo di riferimento indica che la caspasi-9 attiva direttamente anche la caspasi-6, che le caspasi esecutrici tagliano le proteine senza selezione e che il processo è irreversibile; in estratti cellulari la caspasi-6 si attiva a valle della caspasi-3, le caspasi riconoscono motivi di sequenza precisi, e in coltura la maggior parte delle cellule si è ripresa dopo l’attivazione della caspasi-3, una volta rimosso lo stimolo.<!--c:intrinsic-apoptosis-c017--><!--c:intrinsic-apoptosis-c018--><!--c:intrinsic-apoptosis-c023-->"
+      en: "Sources differ: the reference has caspase-9 activate caspase-6 directly as well, has executioner caspases cut proteins indiscriminately, and calls the process irreversible; in cell extracts caspase-6 is activated downstream of caspase-3, caspases recognise specific sequence motifs, and in culture most cells recovered after caspase-3 activation once the trigger was removed.<!--c:intrinsic-apoptosis-c017--><!--c:intrinsic-apoptosis-c018--><!--c:intrinsic-apoptosis-c023-->"
     structure: 1pau
     highlight:
       chains: [C]
@@ -103,6 +103,10 @@ sources:
   - { source: suzuki-2000 }
   - { source: zhou-2015 }
   - { source: shiozaki-2003 }
+  # Second sources of the sources-differ aside in the `executioners` step.
+  - { source: slee-1999 }
+  - { source: thornberry-1997 }
+  - { source: tang-2012 }
 reviewStatus: ai-generated-unreviewed
-lastUpdated: 2026-11-03
+lastUpdated: 2026-11-04
 status: published

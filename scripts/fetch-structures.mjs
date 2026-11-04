@@ -46,8 +46,8 @@ const ENTRIES = [
     pdb: '3ZCF',
     show: ['A'],
     caveats: {
-      it: 'Proteina umana ricombinante. Il cristallo contiene quattro copie; qui se ne mostra una, con il suo gruppo eme.',
-      en: 'Recombinant human protein. The crystal holds four copies; one is shown here, with its haem group.',
+      it: 'Proteina umana ricombinante. Il modello depositato contiene quattro copie della molecola; qui se ne mostra una, con il suo gruppo eme.',
+      en: 'Recombinant human protein. The deposited model contains four copies of the molecule; one is shown here, with its haem group.',
     },
   },
   {
