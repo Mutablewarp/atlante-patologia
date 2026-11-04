@@ -11,6 +11,8 @@ import {
   taxonomySchema,
   moduleSchema,
   sourceSchema,
+  structureSchema,
+  pathwaySchema,
 } from './lib/schema.ts';
 
 const C = './src/content';
@@ -62,4 +64,13 @@ export const collections = {
   }),
   modules: defineCollection({ loader: file(`${C}/modules.yaml`), schema: moduleSchema }),
   sources: defineCollection({ loader: file(`${C}/sources.yaml`), schema: sourceSchema }),
+  // 3D pathways (O9): PDB provenance and ordered pathway steps.
+  structures: defineCollection({
+    loader: glob({ base: `${C}/structures`, pattern: '*.yaml', generateId: idFromData }),
+    schema: structureSchema,
+  }),
+  pathways: defineCollection({
+    loader: glob({ base: `${C}/pathways`, pattern: '*.yaml', generateId: idFromData }),
+    schema: pathwaySchema,
+  }),
 };
