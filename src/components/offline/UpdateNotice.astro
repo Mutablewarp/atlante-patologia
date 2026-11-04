@@ -2,6 +2,8 @@
 /**
  * "New version available" notice, shown by sw-register.ts only when an
  * updated service worker is waiting. Non-modal, dismissible, polite live region.
+ * Second notice (db-notice.ts): the learner database cannot be upgraded while
+ * another tab runs an older version, or this tab must reload for a newer one.
  */
 import type { Lang } from '../../i18n/index.ts';
 import { tOffline } from '../../i18n/offline.ts';
@@ -20,8 +22,17 @@ const { lang } = Astro.props;
   </div>
 </div>
 
+<div class="update-notice" role="status" aria-live="polite" data-db-notice hidden>
+  <p data-db-msg="blocked" hidden>{tOffline(lang, 'dbBlocked')}</p>
+  <p data-db-msg="blocking" hidden>{tOffline(lang, 'dbBlocking')}</p>
+  <div class="notice-actions" data-db-msg="blocking" hidden>
+    <button type="button" class="btn btn-small btn-primary" data-db-reload>{tOffline(lang, 'updateReload')}</button>
+  </div>
+</div>
+
 <script>
   import '../../scripts/sw-register.ts';
+  import '../../scripts/db-notice.ts';
 </script>
 
 <style>

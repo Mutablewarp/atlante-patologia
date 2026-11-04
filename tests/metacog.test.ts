@@ -135,3 +135,21 @@ describe('examQuestions in the entity schema', () => {
     expect(entitySchema.safeParse(one({ en: '' })).success).toBe(false);
   });
 });
+
+describe('import trust boundary for oral sessions', () => {
+  const file = async (items: unknown) => {
+    const stores = { oralSessions: [{ id: 'oral@1', at: 1, updated: 1, items }] };
+    return { app: 'atlante-patologia', schemaVersion: 2, exportedAt: '', checksum: await sha256(JSON.stringify(stores)), stores };
+  };
+  const rubric = { completeness: 3, accuracy: 3, structure: 2, terminology: 4 };
+  it('accepts well-formed items and rejects missing rubric criteria, bad scores and non-arrays', async () => {
+    expect((await checkExport(await file([{ question: 'a#1', entity: 'a', text: '?', predicted: 3, rubric }]))).ok).toBe(true);
+    for (const bad of [
+      [{ question: 'a#1', entity: 'a', text: '?', predicted: 3 }],
+      [{ question: 'a#1', entity: 'a', text: '?', predicted: 3, rubric: { ...rubric, accuracy: undefined } }],
+      [{ question: 'a#1', entity: 'a', text: '?', predicted: 7, rubric }],
+      'x',
+    ])
+      expect(await checkExport(await file(bad))).toEqual({ ok: false, error: 'records' });
+  });
+});

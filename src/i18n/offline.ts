@@ -103,4 +103,12 @@ export const tOffline = defineStrings({
   updateReady: { it: 'È disponibile una nuova versione dell’atlante.', en: 'A new version of the atlas is available.' },
   updateReload: { it: 'Ricarica', en: 'Reload' },
   updateLater: { it: 'Più tardi', en: 'Later' },
+  dbBlocked: {
+    it: 'Chiudi le altre schede dell’atlante per completare l’aggiornamento. Fino ad allora i tuoi dati di studio non sono disponibili.',
+    en: 'Close the other atlas tabs to finish the update. Until then your study data is not available.',
+  },
+  dbBlocking: {
+    it: 'In un’altra scheda è aperta una versione più recente dell’atlante. Ricarica questa pagina per continuare a salvare i tuoi dati.',
+    en: 'A newer version of the atlas is open in another tab. Reload this page to keep saving your data.',
+  },
 });

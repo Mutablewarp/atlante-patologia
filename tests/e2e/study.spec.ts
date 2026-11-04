@@ -193,8 +193,15 @@ test('confidence is asked before the answer in quiz, review and quick check, and
   await qc.getByRole('radio', { name: 'Sure', exact: true }).check();
   await qc.getByText('Show answer').click();
   await expect(qc.getByRole('radio', { name: 'Guessing' })).toBeDisabled(); // locked once the answer is open
-  await qc.getByRole('button', { name: 'I did not know it' }).click();
+  // Two activations in one task (fast double press): one record, one pressed button.
+  await qc.evaluate((li) => {
+    const [knew, missed] = li.querySelectorAll<HTMLButtonElement>('button[data-grade]');
+    missed!.click();
+    knew!.click();
+  });
   await expect(qc.getByRole('status')).toHaveText('Answer recorded.');
+  await expect(qc.locator('button[data-grade][aria-pressed="true"]')).toHaveCount(1);
+  await expect(qc.getByRole('button', { name: 'I did not know it' })).toHaveAttribute('aria-pressed', 'true');
 
   // Quiz: the confidence is locked once the answer is checked.
   await page.goto('en/study/quiz/?mode=topic');
@@ -272,8 +279,45 @@ test('oral simulator: three questions, prediction before self-assessment, calibr
   expect((session!.items as unknown[]).length).toBe(3);
 
   await page.getByRole('button', { name: 'Start again' }).click();
+  // Focus goes to the first setup control, never to <body> (WCAG 2.4.3).
+  await expect(page.getByRole('checkbox', { name: 'Use a timer for each question' })).toBeFocused();
   await expect(page.getByRole('region', { name: 'Previous sessions' }).getByText(/3 questions, self-assessed 2\.3 out of 4/)).toBeVisible();
+  await expect(page.getByText('No sessions saved on this device.')).toHaveCount(0);
   expect(foreign).toEqual([]);
+});
+
+test('oral simulator: "time is up" is announced in a live region, and a double save stores one answer', async ({ page }) => {
+  await page.clock.install();
+  await page.goto('en/study/oral/');
+  await page.getByRole('checkbox', { name: 'Use a timer for each question' }).check();
+  await page.getByRole('spinbutton').fill('1');
+  await page.getByRole('button', { name: 'Start' }).click();
+  const status = page.locator('.oral').getByRole('status');
+  await expect(status).toHaveText('');
+  await page.clock.runFor(61_000);
+  await expect(status).toHaveText('Time is up: wrap up your answer.');
+  await expect(status).toHaveClass(/notice/);
+
+  await answerOral(page, '3 · good', '2 · partial');
+  await page.getByRole('button', { name: 'Save and continue' }).dblclick();
+  await expect(page.getByRole('heading', { name: 'Question 2 of 3' })).toBeFocused();
+  const [session] = await readStore(page, 'oralSessions');
+  expect((session!.items as unknown[]).length).toBe(1);
+});
+
+test('a malformed oral session in an import file is rejected', async ({ page }) => {
+  await page.goto('en/me/data/');
+  const stores = { oralSessions: [{ id: 'oral@1', at: 1, updated: 1, items: [{ question: 'a#1', entity: 'a', text: '?', predicted: 3 }] }] };
+  const file = await page.evaluate(async (st) => {
+    const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(JSON.stringify(st)));
+    const checksum = [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, '0')).join('');
+    return JSON.stringify({ app: 'atlante-patologia', schemaVersion: 2, exportedAt: '2026-01-01T00:00:00Z', checksum, stores: st });
+  }, stores);
+  await page.locator('input[type=file]').setInputFiles({ name: 'bad.json', mimeType: 'application/json', buffer: Buffer.from(file) });
+  await expect(page.getByText('The file is not a valid atlas backup.')).toBeVisible();
+  expect(await readStore(page, 'oralSessions')).toEqual([]);
+  await page.goto('en/study/oral/');
+  await expect(page.getByRole('button', { name: 'Start' })).toBeVisible();
 });
 
 test('export and import carry confidence and oral sessions into a fresh browser', async ({ page, browser }, info) => {
@@ -350,4 +394,55 @@ test('upgrading a version-1 learner database keeps every record and adds the ora
   expect(await readStore(page, 'notes')).toEqual([{ id: 'fixture-demo', text: 'v1 note', updated: 1 }]);
   expect(await readStore(page, 'quizAttempts')).toHaveLength(1);
   expect(await readStore(page, 'oralSessions')).toEqual([]);
+});
+
+/** Opens the learner DB at `version` in a same-origin blank page and keeps the connection open (like a tab running old code). */
+async function holdOpen(page: Page, version: number) {
+  await page.route('**/__blank__', (r) => r.fulfill({ contentType: 'text/html', body: '<!doctype html><title>blank</title>' }));
+  await page.goto('__blank__');
+  await page.evaluate(
+    (v) =>
+      new Promise<void>((resolve, reject) => {
+        const req = indexedDB.open('atlas', v);
+        req.onupgradeneeded = () => {
+          if (req.result.objectStoreNames.length) return; // an upgrade of the app's own DB: add nothing
+          for (const s of ['cards', 'reviewLog', 'bookmarks', 'notes', 'highlights', 'errors', 'readProgress', 'recent', 'quizAttempts', 'plan', 'settings'])
+            req.result.createObjectStore(s, { keyPath: 'id' });
+          req.transaction!.objectStore('notes').put({ id: 'fixture-demo', text: 'v1 note', updated: 1 });
+        };
+        // Old code never closes on versionchange: keep the connection referenced and open.
+        req.onsuccess = () => {
+          (window as unknown as { held: IDBDatabase }).held = req.result;
+          resolve();
+        };
+        req.onerror = () => reject(req.error);
+      }),
+    version,
+  );
+}
+
+test('an older tab that keeps the database open blocks the upgrade with a notice, and nothing is lost', async ({ context }) => {
+  const old = await context.newPage();
+  await holdOpen(old, 1);
+  const page = await context.newPage();
+  await page.goto('en/study/oral/');
+  const history = page.getByRole('region', { name: 'Previous sessions' });
+  await expect(page.getByText('Close the other atlas tabs to finish the update.', { exact: false })).toBeVisible();
+  await expect(history).toContainText('Loading…');
+  await old.close();
+  await expect(page.getByText('Close the other atlas tabs to finish the update.', { exact: false })).toBeHidden();
+  await expect(history).toContainText('No sessions saved on this device.');
+  expect(await readStore(page, 'notes')).toEqual([{ id: 'fixture-demo', text: 'v1 note', updated: 1 }]);
+  expect(await readStore(page, 'oralSessions')).toEqual([]);
+});
+
+test('a newer version in another tab is never blocked by this one, which offers a reload', async ({ context }) => {
+  const page = await context.newPage();
+  await page.goto('en/study/oral/');
+  await expect(page.getByRole('region', { name: 'Previous sessions' })).toContainText('No sessions saved on this device.');
+  const next = await context.newPage();
+  // Resolves only if this tab closes its connection (no `blocked` wait).
+  await holdOpen(next, 99);
+  await expect(page.getByText('A newer version of the atlas is open in another tab.', { exact: false })).toBeVisible();
+  await expect(page.locator('[data-db-reload]')).toBeVisible();
 });

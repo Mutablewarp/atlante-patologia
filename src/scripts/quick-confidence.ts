@@ -31,6 +31,8 @@ function enhance(tpl: HTMLTemplateElement, li: HTMLLIElement, i: number) {
   grade.addEventListener('click', async (e) => {
     const b = (e.target as HTMLElement).closest<HTMLButtonElement>('button[data-grade]');
     if (!b || grade.querySelector('[aria-pressed="true"]')) return; // one record per answer
+    // Marked before the write, so a second activation while it is pending is ignored; undone if the write fails.
+    b.setAttribute('aria-pressed', 'true');
     const confidence = Number(box.querySelector<HTMLInputElement>('input:checked')?.value);
     const at = Date.now();
     const question = `qc:${d.entity}:${qid}`;
@@ -47,9 +49,9 @@ function enhance(tpl: HTMLTemplateElement, li: HTMLLIElement, i: number) {
         ...(isConfidence(confidence) ? { confidence } : {}),
       });
     } catch {
+      b.setAttribute('aria-pressed', 'false');
       return; // no storage: nothing to record
     }
-    b.setAttribute('aria-pressed', 'true');
     live.textContent = live.dataset.saved ?? '';
   });
 }

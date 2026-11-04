@@ -9,7 +9,7 @@
 import { openDB, type IDBPDatabase } from 'idb';
 import type { CardRecord } from './srs.ts';
 import type { Confidence } from './metacog.ts';
-import type { OralSession } from './oral.ts';
+import { isOralItem, type OralSession } from './oral.ts';
 
 export const DB_NAME = 'atlas';
 /** IndexedDB version: bump and add the new stores to STORES_ADDED_IN (never change an existing store). */
@@ -117,6 +117,11 @@ export async function checkExport(raw: unknown): Promise<ImportCheck> {
       const rec = r as Partial<Base> | null;
       if (!rec || typeof rec !== 'object' || typeof rec.id !== 'string' || typeof rec.updated !== 'number')
         return { ok: false, error: 'records' };
+      // The oral simulator reads every item field: a malformed session would break it on every visit.
+      if (name === 'oralSessions' && !rec.deleted) {
+        const o = rec as Partial<OralSessionRecord>;
+        if (typeof o.at !== 'number' || !Array.isArray(o.items) || !o.items.every(isOralItem)) return { ok: false, error: 'records' };
+      }
     }
   }
   return { ok: true, file: f as ExportFile };
@@ -136,11 +141,34 @@ export function reminderDue(now: number, s: { lastExport?: number; firstUse?: nu
 
 let handle: Promise<IDBPDatabase> | undefined;
 
+/**
+ * 'blocked': another tab still holds an older version open, so the upgrade waits.
+ * 'blocking': a newer version of the atlas, in another tab, waits for this one; this tab closed its connection.
+ * 'ready': the database is open. components/offline/UpdateNotice.astro shows the matching notice.
+ */
+export type DbState = 'blocked' | 'blocking' | 'ready';
+const notify = (state: DbState) => {
+  if (typeof window !== 'undefined') window.dispatchEvent(new CustomEvent<DbState>('ap:db-state', { detail: state }));
+};
+
 export function db(): Promise<IDBPDatabase> {
   handle ??= openDB(DB_NAME, DB_VERSION, {
     upgrade(d, oldVersion) {
       for (const s of storesToCreate(oldVersion)) d.createObjectStore(s, { keyPath: 'id' });
     },
+    blocked: () => notify('blocked'),
+    // Never hold up a newer version: close now; this page needs a reload to use the database again.
+    blocking() {
+      void handle?.then((d) => d.close());
+      handle = undefined;
+      notify('blocking');
+    },
+    terminated() {
+      handle = undefined;
+    },
+  }).then((d) => {
+    notify('ready');
+    return d;
   });
   return handle;
 }
