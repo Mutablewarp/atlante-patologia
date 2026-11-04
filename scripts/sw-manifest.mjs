@@ -28,6 +28,11 @@ const IMAGE = /\.(avif|webp|png|jpe?g|gif|svg)$/i;
 
 /** Is this dist path part of the precached app shell? (Structure files under structures/ never are.) */
 export const isShellAsset = (p) => SHELL_ASSET.test(p) && !LAZY_ONLY.test(p);
+/**
+ * Cached on first use (cache-first) but not precached: their hashes still feed the worker VERSION, so a
+ * structure file replaced under the same name reaches returning visitors with the next worker.
+ */
+export const isLazyCached = (p) => LAZY_ONLY.test(p) || p.startsWith('structures/');
 
 const sha = (buf) => createHash('sha256').update(buf).digest('hex').slice(0, 16);
 const posix = (p) => p.split(sep).join('/');
@@ -54,7 +59,7 @@ function hashed(paths) {
   return files;
 }
 
-const versionOf = (files) => sha(Object.entries(files).map(([p, h]) => `${p} ${h}`).join('\n'));
+export const versionOf = (files) => sha(Object.entries(files).map(([p, h]) => `${p} ${h}`).join('\n'));
 
 /** Base-relative same-site image paths referenced by an HTML page (src, srcset, href). */
 export function imagesIn(html, base) {
@@ -82,7 +87,7 @@ function main() {
     ...STATIC_SHELL,
   ];
   const shellFiles = hashed(shellPaths);
-  const version = versionOf(shellFiles);
+  const version = versionOf({ ...shellFiles, ...hashed(all.filter(isLazyCached)) });
   writeFileSync(join(DIST, 'precache.json'), JSON.stringify({ version, files: shellFiles }));
 
   // ── Offline packs: one per language and module with at least one built page ──
@@ -94,11 +99,20 @@ function main() {
     const { id, module } = parse(readFileSync(metaFile, 'utf8'));
     byModule.set(module, [...(byModule.get(module) ?? []), id]);
   }
+  // Pathway pages go into the pack of their module: entity cards link to them ("Open the full pathway").
+  const pathwaysDir = join(ROOT, 'src/content/pathways');
+  const pathwaysOf = new Map();
+  for (const f of existsSync(pathwaysDir) ? readdirSync(pathwaysDir).filter((x) => x.endsWith('.yaml')) : []) {
+    const { id, module } = parse(readFileSync(join(pathwaysDir, f), 'utf8'));
+    pathwaysOf.set(module, [...(pathwaysOf.get(module) ?? []), id]);
+  }
   let packs = 0;
   for (const lang of LANGS) {
     for (const [module, ids] of byModule) {
       // Only pages the build actually rendered (drafts are not built in production).
-      const pages = ids.map((id) => `${lang}/e/${id}/`).filter((p) => existsSync(fileFor(p)));
+      const pages = [...ids.map((id) => `${lang}/e/${id}/`), ...(pathwaysOf.get(module) ?? []).map((id) => `${lang}/pathways/${id}/`)].filter((p) =>
+        existsSync(fileFor(p)),
+      );
       if (pages.length === 0) continue;
       const images = pages.flatMap((p) => imagesIn(readFileSync(fileFor(p), 'utf8'), base)).filter((p) => !(p in shellFiles));
       const data = all.filter((p) => p.startsWith(`${lang}/data/`) && p.endsWith('.json'));

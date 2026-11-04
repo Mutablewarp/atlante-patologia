@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { imagesIn, isShellAsset, LAZY_ONLY } from '../scripts/sw-manifest.mjs';
+import { imagesIn, isLazyCached, isShellAsset, LAZY_ONLY, versionOf } from '../scripts/sw-manifest.mjs';
 
 describe('sw-manifest imagesIn', () => {
   it('collects same-site images from src, srcset and href, relative to the base', () => {
@@ -26,3 +26,14 @@ describe('sw-manifest shell assets', () => {
     expect(LAZY_ONLY.test('_astro/structure-3d.CmaSPdvp.js')).toBe(true);
   });
 });
+
+describe('sw-manifest version', () => {
+  it('a structure file or the 3Dmol chunk changes the worker version without being precached', () => {
+    expect(isLazyCached('structures/6o0k.bcif.gz')).toBe(true);
+    expect(isLazyCached('_astro/structure-3d.DkWQqcJc.js')).toBe(true);
+    expect(isLazyCached('_astro/index.abc.css')).toBe(false);
+    const shell = { 'it/': 'aaaa' };
+    expect(versionOf({ ...shell, 'structures/6o0k.bcif.gz': '1111' })).not.toBe(versionOf({ ...shell, 'structures/6o0k.bcif.gz': '2222' }));
+  });
+});
+

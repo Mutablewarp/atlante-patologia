@@ -54,6 +54,9 @@ test('an installed offline pack makes its pages load offline', async ({ page, co
   await context.setOffline(true);
   await page.goto('it/e/fixture-demo/');
   await expect(page.getByRole('heading', { level: 1 })).toContainText('Voce di prova');
+  // The module's pathway page is in the pack too (entity cards link to it).
+  await page.goto('it/pathways/intrinsic-apoptosis/');
+  await expect(page.getByRole('heading', { level: 1 })).toContainText('Apoptosi intrinseca');
   // Packs are per language: the English pack was not installed.
   await page.goto('en/e/fixture-demo/');
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('You are offline');
