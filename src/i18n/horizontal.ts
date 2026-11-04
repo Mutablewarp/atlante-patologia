@@ -149,6 +149,7 @@ export const tHz = defineStrings({
   panRight: { it: 'Sposta a destra', en: 'Move right' },
   fullOpen: { it: 'Schermo intero', en: 'Full screen' },
   fullClose: { it: 'Chiudi schermo intero', en: 'Exit full screen' },
+  fullDialog: { it: 'Immagine a schermo intero', en: 'Full-screen image' },
   variants: { it: 'Colorazione, sezione e ingrandimento', en: 'Stain, section and magnification' },
   variantN: { it: 'Immagine {n}', en: 'Image {n}' },
   variantNow: { it: 'Ora: {label}', en: 'Now showing: {label}' },

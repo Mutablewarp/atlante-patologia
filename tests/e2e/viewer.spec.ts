@@ -112,7 +112,8 @@ test('@smoke full screen on a phone: a 100dvh dialog that Escape and Back close'
   expect(inline.width).toBeCloseTo(375, 0);
   const full = fig.getByRole('button', { name: 'Schermo intero' });
   await full.click();
-  const dialog = page.getByRole('dialog');
+  // Named briefly: the image's long alt is read once, on the image itself.
+  const dialog = page.getByRole('dialog', { name: 'Immagine a schermo intero' });
   await expect(dialog).toBeVisible();
   const box = (await dialog.boundingBox())!;
   expect(box.x).toBeCloseTo(0, 0);
@@ -244,15 +245,16 @@ test.describe('stain and magnification switch (draft fixtures)', () => {
     const axe = await new AxeBuilder({ page }).include('#fig-fixture-grid').withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze();
     expect(axe.violations.map((v) => `${v.id}: ${v.nodes.map((n) => n.target.join(' ')).join(', ')}`)).toEqual([]);
 
-    // Full screen: the dialog is named after the image shown now, and a switch made inside the modal is
-    // announced from inside it (outside, the status line would be inert: WCAG 4.1.3).
+    // Full screen: a short dialog name; the image shown now is named once, by its own alt; a switch made inside
+    // the modal is announced from inside it (outside, the status line would be inert: WCAG 4.1.3).
     await fig.getByRole('button', { name: 'Schermo intero' }).click();
-    const dialog = page.getByRole('dialog');
-    await expect(dialog).toHaveAccessibleName(/Griglia di quadrati in altri colori/);
+    const dialog = page.getByRole('dialog', { name: 'Immagine a schermo intero' });
+    await expect(dialog.getByRole('img', { name: /Griglia di quadrati in altri colori/ })).toBeVisible();
     await dialog.getByRole('radio', { checked: true }).focus();
     await page.keyboard.press('ArrowLeft');
     await expect(dialog.getByRole('radio').nth(0)).toBeChecked();
-    await expect(dialog).toHaveAccessibleName(/con tre cerchi/);
+    await expect(dialog.getByRole('img', { name: /con tre cerchi/ })).toBeVisible();
+    await expect(dialog.getByRole('img', { name: /Griglia di quadrati in altri colori/ })).toBeHidden();
     await expect(dialog.locator('[role="status"][data-viewer-status]')).toHaveText('EE · in paraffina · piccolo ingrandimento');
   });
 });

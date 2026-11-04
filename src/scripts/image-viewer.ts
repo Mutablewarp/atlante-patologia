@@ -204,8 +204,6 @@ class ApImageViewer extends HTMLElement {
     this.stage = this.panel.querySelector('.viewer-stage')!;
     this.canvas = this.panel.querySelector('.viewer-canvas')!;
     this.total = Number(this.panel.dataset.total);
-    // The dialog is named after the image shown now, not the one active at build time.
-    this.dialog.setAttribute('aria-label', this.canvas.querySelector('img')?.alt ?? '');
     this.querySelectorAll<HTMLButtonElement>('[data-label-toggle], [data-reveal]').forEach((b) => (b.disabled = this.total === 0));
     this.setRevealed(this.total);
     this.recenter();
