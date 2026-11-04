@@ -1,7 +1,8 @@
 /**
  * <ap-image-viewer>: zoom (buttons, + / − / 0 keys, Ctrl+wheel, pinch, double
  * click or tap), pan (drag, arrow keys, and pan buttons for WCAG 2.5.7), label
- * toggle, progressive reveal by `revealOrder`, a scale bar when `mpp` is
+ * toggle, progressive reveal by `revealOrder`, numbered markers for labels that
+ * would cover each other, a scale bar when `mpp` is
  * known, a switch between the images of one group (stain, section,
  * magnification) and a full-screen dialog that Escape or Back closes.
  * Markup comes from components/horizontal/ImageViewer.astro.
@@ -135,6 +136,33 @@ class ApImageViewer extends HTMLElement {
       st.addEventListener('pointercancel', up);
     });
     this.select(this.querySelector<HTMLElement>('.viewer-panel:not([hidden])')?.dataset.panel ?? '0');
+    // Labels are re-fitted when the stage changes size (window, full screen) and once the web fonts are in.
+    new ResizeObserver(() => this.fitLabels()).observe(this.body);
+    void document.fonts.ready.then(() => this.fitLabels());
+  }
+
+  /** A label that would cover another one shows only its number; the numbered legend below has the text. */
+  private fitLabels() {
+    const labels = [...this.panel.querySelectorAll<HTMLElement>('.viewer-label')];
+    // Unrevealed labels are measured too, so revealing one never re-flows the others; nothing paints in between.
+    const hidden = labels.filter((l) => l.hidden);
+    const show = (on: boolean) =>
+      hidden.forEach((l) => {
+        l.hidden = !on;
+        l.style.display = on ? '' : 'none';
+      });
+    show(true);
+    labels.forEach((l) => delete l.dataset.num);
+    const hit = (a: DOMRect, b: DOMRect) =>
+      Math.min(a.right, b.right) - Math.max(a.left, b.left) > 1 && Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top) > 1;
+    // Each pass turns the colliding text labels into numbers; a second pass catches a number landing on a text.
+    for (let pass = 0; pass < 3; pass++) {
+      const boxes = labels.map((l) => l.getBoundingClientRect());
+      const crowded = labels.filter((l, i) => l.dataset.num === undefined && boxes.some((b, j) => j !== i && hit(b, boxes[i]!)));
+      if (!crowded.length) break;
+      crowded.forEach((l) => (l.dataset.num = ''));
+    }
+    show(false);
   }
 
   /** Show image `i` of the group; the zoom level stays, the position resets (sections are not registered). */
@@ -149,6 +177,7 @@ class ApImageViewer extends HTMLElement {
     this.querySelectorAll<HTMLButtonElement>('[data-label-toggle], [data-reveal]').forEach((b) => (b.disabled = this.total === 0));
     this.setRevealed(this.total);
     this.recenter();
+    this.fitLabels();
   }
 
   private say(text: string) {
