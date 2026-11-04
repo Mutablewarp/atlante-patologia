@@ -19,8 +19,15 @@ const DIST = join(ROOT, process.argv[2] ?? 'dist');
 const LANGS = ['it', 'en'];
 const SHELL_PAGES = ['', ...LANGS.flatMap((l) => [`${l}/`, `${l}/offline/`, `${l}/me/offline/`])];
 const SHELL_ASSET = /^_astro\/.+\.(css|js|woff2)$/;
+// Heavy chunks that only a learner's click imports (3Dmol in structure-3d.ts, ~160 kB gz):
+// never precached for every visitor; public/sw.js caches them on first use (hashedAsset).
+// tests/dist/pathway.test.ts checks that the 3Dmol chunk still matches this name.
+export const LAZY_ONLY = /^_astro\/structure-3d\.[^/]+\.js$/;
 const STATIC_SHELL = ['manifest.webmanifest', 'favicon.svg'];
 const IMAGE = /\.(avif|webp|png|jpe?g|gif|svg)$/i;
+
+/** Is this dist path part of the precached app shell? (Structure files under structures/ never are.) */
+export const isShellAsset = (p) => SHELL_ASSET.test(p) && !LAZY_ONLY.test(p);
 
 const sha = (buf) => createHash('sha256').update(buf).digest('hex').slice(0, 16);
 const posix = (p) => p.split(sep).join('/');
@@ -70,7 +77,7 @@ function main() {
   const all = walk(DIST).map((f) => posix(relative(DIST, f)));
   const shellPaths = [
     ...SHELL_PAGES,
-    ...all.filter((p) => SHELL_ASSET.test(p)),
+    ...all.filter(isShellAsset),
     ...all.filter((p) => p.startsWith('icons/')),
     ...STATIC_SHELL,
   ];

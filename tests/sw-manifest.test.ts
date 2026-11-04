@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { imagesIn } from '../scripts/sw-manifest.mjs';
+import { imagesIn, isShellAsset, LAZY_ONLY } from '../scripts/sw-manifest.mjs';
 
 describe('sw-manifest imagesIn', () => {
   it('collects same-site images from src, srcset and href, relative to the base', () => {
@@ -13,5 +13,16 @@ describe('sw-manifest imagesIn', () => {
     expect(imagesIn(html, '/b/').sort()).toEqual(
       ['_astro/a.H1.webp', '_astro/s.1.avif', '_astro/s.2.avif', 'img/x.jpg', 'media/full.png'].sort(),
     );
+  });
+});
+
+describe('sw-manifest shell assets', () => {
+  it('precaches hashed CSS/JS/fonts but never the lazily imported 3Dmol chunk or structure files', () => {
+    expect(isShellAsset('_astro/BaseLayout.astro_astro_type_script_index_0_lang.DUbkG10_.js')).toBe(true);
+    expect(isShellAsset('_astro/Pathway.astro_astro_type_script_index_0_lang.CsmH7j_W.js')).toBe(true);
+    expect(isShellAsset('_astro/fraunces-latin.woff2')).toBe(true);
+    expect(isShellAsset('_astro/structure-3d.CmaSPdvp.js')).toBe(false);
+    expect(isShellAsset('structures/3jbt.bcif.gz')).toBe(false);
+    expect(LAZY_ONLY.test('_astro/structure-3d.CmaSPdvp.js')).toBe(true);
   });
 });
