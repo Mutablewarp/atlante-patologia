@@ -1,0 +1,158 @@
+{
+  "$comment": "Reviewed state for scripts/who-watch.mjs. Only a human updates it (docs/WHO_WATCH.md).",
+  "reviewed": "2026-11-03",
+  "sources": {
+    "catalogue": {
+      "Breast-Tumours-2019": "5th Edition, Volume 2 | Breast Tumours | 2019 | current",
+      "Central-Nervous-System-Tumours-2021": "5th Edition, Volume 6 | Central Nervous System Tumours | 2021 | current",
+      "Digestive-System-Tumours-2019": "5th Edition, Volume 1 | Digestive System Tumours | 2019 | new edition available",
+      "Digestive-System-Tumours-2026": "6th Edition, Volume 1 | Digestive System Tumours | 2026 | current",
+      "Endocrine-And-Neuroendocrine-Tumours-2025": "5th Edition, Volume 10 | Endocrine and Neuroendocrine Tumours | 2025 | current",
+      "Eye-And-Orbit-Tumours-2026": "5th Edition, Volume 13 | Eye and Orbit Tumours | 2026 | current",
+      "Female-Genital-Tumours-2020": "5th Edition, Volume 4 | Female Genital Tumours | 2020 | current",
+      "Genetic-Tumour-Syndromes-2026": "5th Edition, Volume 14 | Genetic Tumour Syndromes | 2026 | current",
+      "Haematolymphoid-Tumours-2024": "5th Edition, Volume 11 | Haematolymphoid Tumours | 2024 | current",
+      "Head-And-Neck-Tumours-2024": "5th Edition, Volume 9 | Head and Neck Tumours | 2024 | current",
+      "Paediatric-Tumours-2023": "5th Edition, Volume 7 | Paediatric Tumours | 2023 | current",
+      "Pathology-And-Genetics-Of-Head-And-Neck-Tumours-2005": "3rd Edition, Volume 9 | Pathology and Genetics of Head and Neck Tumours | 2005 | new edition available",
+      "Pathology-And-Genetics-Of-Skin-Tumours-2005": "3rd Edition, Volume 6 | Pathology and Genetics of Skin Tumours | 2005 | new edition available",
+      "Pathology-And-Genetics-Of-Tumours-Of-Endocrine-Organs-2004": "3rd Edition, Volume 8 | Pathology and Genetics of Tumours of Endocrine Organs | 2004 | new edition available",
+      "Pathology-And-Genetics-Of-Tumours-Of-Haematopoietic-And-Lymphoid-Tissues-2001": "3rd Edition, Volume 3 | Pathology and Genetics of Tumours of Haematopoietic and Lymphoid Tissues | 2001 | new edition available",
+      "Pathology-And-Genetics-Of-Tumours-Of-Soft-Tissue-And-Bone-2002": "3rd Edition, Volume 5 | Pathology and Genetics of Tumours of Soft Tissue and Bone | 2002 | new edition available",
+      "Pathology-And-Genetics-Of-Tumours-Of-The-Breast-And-Female-Genital-Organs-2003": "3rd Edition, Volume 4 | Pathology and Genetics of Tumours of the Breast and Female Genital Organs | 2003 | new edition available",
+      "Pathology-And-Genetics-Of-Tumours-Of-The-Digestive-System-2000": "3rd Edition, Volume 2 | Pathology and Genetics of Tumours of the Digestive System | 2000 | new edition available",
+      "Pathology-And-Genetics-Of-Tumours-Of-The-Lung-Pleura-Thymus-And-Heart-2004": "3rd Edition, Volume 10 | Pathology and Genetics of Tumours of the Lung, Pleura, Thymus and Heart | 2004 | new edition available",
+      "Pathology-And-Genetics-Of-Tumours-Of-The-Nervous-System-2000": "3rd Edition, Volume 1 | Pathology and Genetics of Tumours of the Nervous System | 2000 | new edition available",
+      "Pathology-And-Genetics-Of-Tumours-Of-The-Urinary-System-And-Male-Genital-Organs-2004": "3rd Edition, Volume 7 | Pathology and Genetics of Tumours of the Urinary System and Male Genital Organs | 2004 | new edition available",
+      "Skin-Tumours-2025": "5th Edition, Volume 12 | Skin Tumours | 2025 | current",
+      "Soft-Tissue-And-Bone-Tumours-2020": "5th Edition, Volume 3 | Soft Tissue and Bone Tumours | 2020 | current",
+      "Thoracic-Tumours-2021": "5th Edition, Volume 5 | Thoracic Tumours | 2021 | current",
+      "Urinary-And-Male-Genital-Tumours-2022": "5th Edition, Volume 8 | Urinary and Male Genital Tumours | 2022 | current",
+      "WHO-Classification-Of-Head-And-Neck-Tumours-2017": "4th Edition, Volume 9 | WHO Classification of Head and Neck Tumours | 2017 | new edition available",
+      "WHO-Classification-Of-Skin-Tumours-2018": "4th Edition, Volume 11 | WHO Classification of Skin Tumours | 2018 | new edition available",
+      "WHO-Classification-Of-Tumours-Of-Endocrine-Organs-2017": "4th Edition, Volume 10 | WHO Classification of Tumours of Endocrine Organs | 2017 | new edition available",
+      "WHO-Classification-Of-Tumours-Of-Female-Reproductive-Organs-2014": "4th Edition, Volume 6 | WHO Classification of Tumours of Female Reproductive Organs | 2014 | new edition available",
+      "WHO-Classification-Of-Tumours-Of-Haematopoietic-And-Lymphoid-Tissues-2008": "4th Edition, Volume 2 | WHO Classification of Tumours of Haematopoietic and Lymphoid Tissues | 2008 | new edition available",
+      "WHO-Classification-Of-Tumours-Of-Haematopoietic-And-Lymphoid-Tissues-2017": "Revised 4th Edition, Volume 2 | WHO Classification of Tumours of Haematopoietic and Lymphoid Tissues | 2017 | new edition available",
+      "WHO-Classification-Of-Tumours-Of-Soft-Tissue-And-Bone-2013": "4th Edition, Volume 5 | WHO Classification of Tumours of Soft Tissue and Bone | 2013 | new edition available",
+      "WHO-Classification-Of-Tumours-Of-The-Breast-2012": "4th Edition, Volume 4 | WHO Classification of Tumours of the Breast | 2012 | new edition available",
+      "WHO-Classification-Of-Tumours-Of-The-Central-Nervous-System-2007": "4th Edition, Volume 1 | WHO Classification of Tumours of the Central Nervous System | 2007 | new edition available",
+      "WHO-Classification-Of-Tumours-Of-The-Central-Nervous-System-2016": "Revised 4th Edition, Volume 1 | WHO Classification of Tumours of the Central Nervous System | 2016 | new edition available",
+      "WHO-Classification-Of-Tumours-Of-The-Digestive-System-2010": "4th Edition, Volume 3 | WHO Classification of Tumours of the Digestive System | 2010 | new edition available",
+      "WHO-Classification-Of-Tumours-Of-The-Eye-2018": "4th Edition, Volume 12 | WHO Classification of Tumours of the Eye | 2018 | new edition available",
+      "WHO-Classification-Of-Tumours-Of-The-Lung-Pleura-Thymus-And-Heart-2015": "4th Edition, Volume 7 | WHO Classification of Tumours of the Lung, Pleura, Thymus and Heart | 2015 | new edition available",
+      "WHO-Classification-Of-Tumours-Of-The-Urinary-System-And-Male-Genital-Organs-2016": "4th Edition, Volume 8 | WHO Classification of Tumours of the Urinary System and Male Genital Organs | 2016 | new edition available"
+    },
+    "corrigenda/Breast-Tumours-2019": {
+      "corrigenda": "wct_breast5_corrigenda.pdf"
+    },
+    "corrigenda/Central-Nervous-System-Tumours-2021": {
+      "corrigenda": "CNS5 Corrigenda doc_2024-07-08.pdf"
+    },
+    "corrigenda/Digestive-System-Tumours-2019": {
+      "corrigenda": "wct_dig5_corrigenda.pdf"
+    },
+    "corrigenda/Digestive-System-Tumours-2026": {
+      "corrigenda": "none"
+    },
+    "corrigenda/Endocrine-And-Neuroendocrine-Tumours-2025": {
+      "corrigenda": "Endo5 Corrigenda doc_Updated 2025-05-26.pdf"
+    },
+    "corrigenda/Eye-And-Orbit-Tumours-2026": {
+      "corrigenda": "none"
+    },
+    "corrigenda/Female-Genital-Tumours-2020": {
+      "corrigenda": "wct_fgt5_corrigenda.pdf"
+    },
+    "corrigenda/Genetic-Tumour-Syndromes-2026": {
+      "corrigenda": "none"
+    },
+    "corrigenda/Haematolymphoid-Tumours-2024": {
+      "corrigenda": "none"
+    },
+    "corrigenda/Head-And-Neck-Tumours-2024": {
+      "corrigenda": "HAN5 Corrigenda doc_2024-07-08.pdf"
+    },
+    "corrigenda/Paediatric-Tumours-2023": {
+      "corrigenda": "none"
+    },
+    "corrigenda/Skin-Tumours-2025": {
+      "corrigenda": "none"
+    },
+    "corrigenda/Soft-Tissue-And-Bone-Tumours-2020": {
+      "corrigenda": "STB5 Corrigenda doc_2024-07-08.pdf"
+    },
+    "corrigenda/Thoracic-Tumours-2021": {
+      "corrigenda": "wct_thor5_corrigenda.pdf"
+    },
+    "corrigenda/Urinary-And-Male-Genital-Tumours-2022": {
+      "corrigenda": "Uro5 Corrigenda doc_2024-07-08.pdf"
+    },
+    "icd11": {
+      "release": "2026-01"
+    },
+    "iris": {
+      "https://iris.who.int/handle/10665/385625": "WHO consolidated guidelines for the management of common childhood illness: management of asthma in children and adolescents and bronchiolitis in infants and young children",
+      "https://iris.who.int/handle/10665/385723": "Guidelines for the prevention of bloodstream infections and other infections associated with the use of intravascular catheters: part 2: central venous catheters",
+      "https://iris.who.int/handle/10665/385873": "Laboratory testing of Andes virus (Orthohantavirus andesense) infection: interim guidance, 15 May 2026",
+      "https://iris.who.int/handle/10665/385879": "Infection prevention and control guideline for Ebola and Marburg diseases",
+      "https://iris.who.int/handle/10665/386380": "WHO guidelines for the clinical management of filovirus disease",
+      "https://iris.who.int/handle/10665/386694": "Risk reduction of cognitive decline and dementia: WHO guidelines",
+      "https://iris.who.int/handle/10665/386708": "Guideline on doxycycline post-exposure prophylaxis for sexually transmitted infections among men who have sex with men and transgender women",
+      "https://iris.who.int/handle/10665/386756": "WHO guidelines on leishmaniases: treatment of visceral leishmaniasis and post-kala-azar dermal leishmaniasis in eastern Africa and South-East Asia",
+      "https://iris.who.int/handle/10665/386828": "WHO guidelines on the integrated management of obesity in children",
+      "https://iris.who.int/handle/10665/386830": "WHO guidelines on the integrated management of obesity in adolescents",
+      "https://iris.who.int/handle/10665/386947": "WHO guideline on fluid management of acutely ill children",
+      "https://iris.who.int/handle/10665/387011": "HQ-2024-04614 WHO guideline on the use of glucagon-like peptide-1 (GLP-1) therapies for the treatment of obesity in adults",
+      "https://iris.who.int/handle/10665/387504": "WHO guidelines for malaria, 10 September 2026",
+      "https://iris.who.int/handle/10665/387546": "Lignes directrices de l’OMS sur la prévention et la prise en charge de l’émaciation et de l’œdème nutritionnel (malnutrition aiguë) chez le nourrisson et l’enfant de moins de cinq ans",
+      "https://iris.who.int/handle/10665/387579": "WHO guidelines on expanding contraceptive options",
+      "https://iris.who.int/handle/10665/387622": "WHO consolidated guidelines on tuberculosis: module 4: treatment and care",
+      "https://iris.who.int/handle/10665/387653": "WHO guidelines for clinical management of mpox",
+      "https://iris.who.int/handle/10665/387716": "Directrices de la OMS para el tratamiento de pacientes con equinococosis quística",
+      "https://iris.who.int/handle/10665/387791": "Lignes directrices de l’OMS sur la prise en charge clinique de la maladie à filovirus",
+      "https://iris.who.int/handle/10665/387985": "WHO consolidated guidelines on tuberculosis: module 3: diagnosis"
+    },
+    "monographs": {
+      "last-update": "30 October 2026"
+    },
+    "news": {
+      "https://www.iarc.who.int/?post_type=news-events&p=61846": "An overview of the new International Classification of Diseases for Oncology, 4th edition (ICD-O-4)",
+      "https://www.iarc.who.int/?post_type=news-events&p=61941": "Publication of the IAC-IARC-WHO Cytopathology Reporting Systems, 1st Edition, Volume 4: WHO Reporting System for Soft Tissue Cytopathology",
+      "https://www.iarc.who.int/?post_type=news-events&p=62424": "Upcoming event: Launch of the WHO Classification of Tumours Evidence Explorer tool",
+      "https://www.iarc.who.int/?post_type=news-events&p=62445": "Publication of the WHO Classification of Tumours, 6th Edition, Volume 1: Digestive System Tumours",
+      "https://www.iarc.who.int/?post_type=news-events&p=63080": "Publication of the WHO Classification of Tumours, 5th Edition, Volume 14: Genetic Tumour Syndromes",
+      "https://www.iarc.who.int/?post_type=news-events&p=63251": "International Classification of Diseases for Oncology, fourth edition (ICD-O-4) final tables now available",
+      "https://www.iarc.who.int/?post_type=research_websites&p=63784": "WHO Classification of Tumours Series (WHO Blue Books)"
+    },
+    "online": {
+      "Breast Tumours (5th ed.)": "no beta label | in print",
+      "Breast Tumours (6th ed.)": "Beta version ahead of print | not in print",
+      "Central Nervous System Tumours (5th ed.)": "no beta label | in print",
+      "Digestive Tumours (5th ed.)": "no beta label | in print",
+      "Digestive Tumours (6th ed.)": "no beta label | in print",
+      "Endocrine Tumours (5th ed.)": "no beta label | in print",
+      "Eye Tumours (5th ed.)": "no beta label | in print",
+      "Female Genital Tumours (5th ed.)": "no beta label | in print",
+      "Female Genital Tumours (6th ed.)": "Beta version ahead of print | not in print",
+      "Genetic Tumour Syndromes (5th ed.)": "no beta label | in print",
+      "Haematolymphoid Tumours (5th ed.)": "no beta label | in print",
+      "Head and Neck Tumours (5th ed.)": "no beta label | in print",
+      "Paediatric Tumours (5th ed.)": "no beta label | in print",
+      "Skin Tumours (5th ed.)": "no beta label | in print",
+      "Soft Tissue and Bone Tumours (5th ed.)": "no beta label | in print",
+      "Soft Tissue and Bone Tumours (6th ed.)": "Beta version ahead of print | not in print",
+      "Thoracic Tumours (5th ed.)": "no beta label | in print",
+      "Urinary and Male Genital Tumours (5th ed.)": "no beta label | in print"
+    },
+    "pubmed": {
+      "39293942": "",
+      "41724188": "",
+      "42011085": "",
+      "42411933": "",
+      "42414098": "",
+      "42709193": "",
+      "42839882": ""
+    }
+  }
+}
