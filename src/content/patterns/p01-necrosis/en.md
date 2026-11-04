@@ -13,14 +13,14 @@ The pattern depends on what happens to the dead cells next: whether their protei
 - **Structure persists (coagulative):** after ischemic death the outline of each cell and the plan of the tissue stay visible for a while, and the breakdown of cytoplasmic RNA removes the blue tint, so the cytoplasm looks more eosinophilic.<!--c:p01-necrosis-c005-->
 - **Digestion wins (liquefactive):** when dead cells are dissolved much faster than repair can proceed, the tissue turns liquid; the hydrolases usually come from neutrophils gathered around bacteria.<!--c:p01-necrosis-c006--> In the brain, an infarct liquefies without any need for acute inflammation, perhaps because of the abundant lysosomal enzymes of nervous tissue.<!--c:p01-necrosis-c007-->
 - **Lipid substrate (fat necrosis):** lipases released from an injured pancreas, or from damaged fat cells after trauma, split triglycerides, and the free fatty acids bind calcium and precipitate as soaps (saponification).<!--c:p01-necrosis-c008-->
-- **Mycobacterial wall (caseous):** in the centre of tuberculous granulomas the dead cells lose their outlines but are not lysed; the waxy lipids of the mycobacterial cell wall are thought to be responsible.<!--c:p01-necrosis-c009-->
-- **Leaky vessel wall (fibrinoid):** plasma proteins, fibrin among them, seep into an injured vessel wall and make it stain intensely with eosin.<!--c:p01-necrosis-c010-->
+- **Mycobacterial wall (caseous):** in the centre of tuberculous granulomas the dead cells lose their outlines, yet their remains are not digested away as in liquefactive necrosis; the waxy lipids of the mycobacterial cell wall are thought to be responsible.<!--c:p01-necrosis-c009-->
+- **Leaky vessel wall (fibrinoid):** plasma proteins, fibrin among them, seep into an injured vessel wall, which then looks bright pink on H&E.<!--c:p01-necrosis-c010-->
 
 ## Type by type: organ examples
 
 ### Coagulative necrosis
 
-The model lesion is the infarct: occlusion of an end artery causes coagulative necrosis of the whole territory it supplies.<!--c:p01-necrosis-c011--> Pale infarcts with uniform coagulative necrosis are typical of the heart, kidney and spleen; in the spleen they form wedges under the capsule, and in the kidney the pale zone reaches the capsular surface.<!--c:p01-necrosis-c012--> In the myocardium, dead fibers are deeply eosinophilic by about 24 hours, but their nuclei take several days to vanish completely.<!--c:p01-necrosis-c013--> The kidney adds two more examples: diffuse cortical necrosis in severe shock, classically after premature separation of the placenta, and papillary necrosis in analgesic nephropathy.<!--c:p01-necrosis-c014--> Extremely high radiation doses kill cells within a short time, and the result cannot be told apart from coagulative necrosis of other origin.<!--c:p01-necrosis-c015-->
+The model lesion is the infarct: occlusion of an end artery causes coagulative necrosis of the tissue downstream.<!--c:p01-necrosis-c011--> Pale infarcts with uniform coagulative necrosis are typical of the heart, kidney and spleen; in the spleen they form wedges under the capsule, and in the kidney the pale zone reaches the capsular surface.<!--c:p01-necrosis-c012--> In heart muscle the dead fibers already look intensely pink about 24 hours after the infarct, yet it is only after several days that all their nuclei have gone.<!--c:p01-necrosis-c013--> The kidney adds two more examples: diffuse cortical necrosis in severe shock, classically after premature separation of the placenta, and papillary necrosis in analgesic nephropathy.<!--c:p01-necrosis-c014--> Only very large radiation doses, well above 10 Gy, kill cells outright within a short time, and the microscope gives no clue to the cause: the picture is ordinary coagulative necrosis.<!--c:p01-necrosis-c015-->
 
 ### Liquefactive necrosis
 
@@ -28,7 +28,7 @@ The usual example is the abscess, a cavity hollowed out of a solid organ by a lo
 
 ### Caseous necrosis
 
-Caseous necrosis is the signature of tuberculosis, although it occasionally appears in other settings.<!--c:p01-necrosis-c021--> In the tuberculous granuloma a soft, cheese-like centre is ringed by epithelioid macrophages and Langhans giant cells, with lymphocytes and fibrous tissue at the periphery.<!--c:p01-necrosis-c022--> Typical sites are the subpleural Ghon focus with its hilar or mediastinal lymph nodes in primary infection, apical cavities filled with caseous material in secondary tuberculosis, and tuberculomas in the brain.<!--c:p01-necrosis-c023--> Tuberculomas rank among the commonest intracranial masses in regions where tuberculosis is endemic.<!--c:p01-necrosis-c024-->
+Tuberculosis is the classic cause of caseous necrosis, though not the only one.<!--c:p01-necrosis-c021--> A tuberculous granuloma has a soft, cheesy necrotic centre; epithelioid macrophages and Langhans giant cells crowd around it, and an outer cuff of lymphocytes and fibrous tissue closes it off.<!--c:p01-necrosis-c022--> Typical sites are the subpleural Ghon focus with its hilar or mediastinal lymph nodes in primary infection, apical cavities filled with caseous material in secondary tuberculosis, and tuberculomas in the brain.<!--c:p01-necrosis-c023--> Tuberculomas rank among the commonest intracranial masses in regions where tuberculosis is endemic.<!--c:p01-necrosis-c024-->
 
 ### Fat necrosis
 
@@ -40,24 +40,24 @@ Fibrinoid necrosis is a lesion of blood-vessel walls.<!--c:p01-necrosis-c029--> 
 
 ### Gangrene
 
-Dry gangrene of a foot or leg follows arterial occlusion, typically thrombosis on atherosclerotic leg arteries or diabetic vascular disease.<!--c:p01-necrosis-c033--> Diabetes accounts for most limb amputations not caused by trauma in the United States, and ischemic gangrene is the main reason.<!--c:p01-necrosis-c034--> When dead tissue becomes infected, neutrophil enzymes liquefy it: this is the picture usually taught as wet gangrene.<!--c:p01-necrosis-c035--> Gas gangrene (clostridial myonecrosis) is a separate process: *Clostridium perfringens* growing in devitalized wound tissue releases a phospholipase toxin that kills healthy muscle, with gas in the tissues, few neutrophils and a course that can be fatal within hours.<!--c:p01-necrosis-c036--> Severe vasculitis after meningococcal sepsis and infarction of the bowel are further causes of gangrene.<!--c:p01-necrosis-c037-->
+Dry gangrene of a foot or leg follows arterial occlusion, typically thrombosis on atherosclerotic leg arteries or diabetic vascular disease.<!--c:p01-necrosis-c033--> To the eye the dead part is dry, shrunken and dark to black (mummified), with a sharp line where it meets living tissue.<!--c:p01-necrosis-c056--> Diabetes accounts for most limb amputations not caused by trauma in the United States, and ischemic gangrene is the main reason.<!--c:p01-necrosis-c034--> When dead tissue becomes infected, neutrophil enzymes liquefy it: this is the picture usually taught as wet gangrene.<!--c:p01-necrosis-c035--> Gas gangrene (clostridial myonecrosis) is a separate process: *Clostridium perfringens* growing in devitalized wound tissue releases a phospholipase toxin that kills healthy muscle, with gas in the tissues, few neutrophils and a course that can be fatal within hours.<!--c:p01-necrosis-c036--> Meningococcal sepsis can also end in gangrene of the fingers, toes or limbs, through clotting in the small vessels of the skin during the sepsis (purpura fulminans) or, in some survivors, through severe vasculitis; infarction of the bowel is another cause of gangrene.<!--c:p01-necrosis-c037-->
 
 ## How to recognize it (low to high power)
 
 - **Is the architecture still there?** Ghost outlines of cells and tissue mean coagulative necrosis; a cavity full of neutrophils and debris means liquefactive necrosis; structureless granular pink debris inside a granuloma means caseous necrosis.<!--c:p01-necrosis-c038-->
-- **Where is it?** A sharply bounded, homogeneous, deep pink zone limited to a vessel wall is fibrinoid necrosis; dead fat cells with amorphous basophilic deposits at their edges are fat necrosis.<!--c:p01-necrosis-c039-->
+- **Where is it?** If the change is confined to the wall of a blood vessel, which has turned into a bright pink, uniform band with crisp edges, it is fibrinoid necrosis; if it sits in fat, where ghost outlines of fat cells are edged by bluish, shapeless calcium soaps, it is fat necrosis.<!--c:p01-necrosis-c039-->
 - **Look at the nuclei.** In coagulative necrosis the nucleus shrinks and darkens (pyknosis), breaks into fragments (karyorrhexis) or fades away (karyolysis).<!--c:p01-necrosis-c040-->
 - **Look at the rim.** A granuloma with epithelioid macrophages and Langhans giant cells around the necrosis points to caseation; foamy macrophages and giant cells engulfing lipid point to fat necrosis.<!--c:p01-necrosis-c041-->
 
 ## Typical outcome
 
 - **Coagulative:** neutrophils enter from the living border within days, macrophages then clear the debris, granulation tissue forms and a scar results; the centre of a large infarct can stay unresorbed for months.<!--c:p01-necrosis-c042-->
-- **Liquefactive:** an abscess ends up enclosed in a fibrous capsule, while a liquefied brain infarct leaves a permanent cyst.<!--c:p01-necrosis-c043--> An untreated brain abscess can kill by herniation or by rupture into a ventricle.<!--c:p01-necrosis-c044-->
+- **Liquefactive:** an abscess ends up enclosed in a fibrous capsule, while a liquefied brain infarct can leave a permanent cyst.<!--c:p01-necrosis-c043--> An untreated brain abscess can kill by herniation or by rupture into a ventricle.<!--c:p01-necrosis-c044-->
 - **Caseous:** contained lesions shrink, scar and calcify, as in a healed Ghon complex; uncontrolled ones cavitate and spread, for example by eroding into a bronchus or rupturing into the pleural cavity.<!--c:p01-necrosis-c045-->
-- **Fat:** foamy macrophages and giant cells take up the lipid, then fibrosis and dystrophic calcification follow; in acute pancreatitis the soaps trap calcium and blood calcium can fall.<!--c:p01-necrosis-c046-->
+- **Fat:** lipid-laden (foamy) macrophages and giant cells clear the fat, after which the area scars and may calcify (dystrophic calcification); in acute pancreatitis the soaps trap calcium and blood calcium can fall.<!--c:p01-necrosis-c046-->
 - **Fibrinoid:** the damaged wall can thrombose, rupture and bleed, or form aneurysms, and arteriolar thrombosis causes small infarcts downstream.<!--c:p01-necrosis-c047-->
 - **Gangrene:** dry gangrene often ends in debridement or amputation; gas gangrene can bring hemolytic anemia, shock and renal failure.<!--c:p01-necrosis-c048-->
-- **Any type:** necrotic tissue can calcify (dystrophic calcification), as in old tuberculous lymph nodes or in kidneys that survived cortical necrosis.<!--c:p01-necrosis-c049-->
+- **Any type:** necrotic tissue can calcify (dystrophic calcification), as in old tuberculous lymph nodes or in the kidneys of patients who survived cortical necrosis.<!--c:p01-necrosis-c049-->
 
 ## Pitfalls
 

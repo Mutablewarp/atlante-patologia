@@ -146,7 +146,7 @@ export function ledgerGate(tree: Tree, parsed: Parsed): Problem[] {
   const problems: Problem[] = [];
   const allClaims = new Set([...parsed.ledgers.values()].flatMap((l) => l.data.claims.map((c) => c.claimId)));
   const published = [...parsed.entities, ...parsed.patterns].filter((x) => x.data.status === 'published');
-  for (const { unit } of published) {
+  for (const { unit, data } of published) {
     const p = (file: string, message: string) => problems.push({ gate: 'ledger', file, message });
     const file = `docs/ledger/${unit.id}.yaml`;
     if (!tree.ledgers.has(unit.id)) {
@@ -156,7 +156,14 @@ export function ledgerGate(tree: Tree, parsed: Parsed): Problem[] {
     const ledger = parsed.ledgers.get(unit.id);
     if (!ledger) continue; // schema problem already reported
     const bodies = [unit.en ?? '', unit.it ?? ''];
-    const markers = new Set(bodies.flatMap((b) => [...claimMarkers(b)]));
+    // Pattern matrix cells state facts too: each carries the same markers in both languages (CONTENT_SCHEMA §3).
+    const cells = 'matrix' in data ? data.matrix.rows.flatMap((r) => r.cells) : [];
+    for (const c of cells) {
+      const [en, it] = [[...claimMarkers(c.en)].sort().join(), [...claimMarkers(c.it)].sort().join()];
+      if (!en) p(unit.meta.path, `matrix cell without a claim marker: "${c.en.slice(0, 60)}"`);
+      else if (en !== it) p(unit.meta.path, `matrix cell markers differ between en and it: "${c.en.slice(0, 60)}"`);
+    }
+    const markers = new Set([...bodies, ...cells.map((c) => c.en)].flatMap((b) => [...claimMarkers(b)]));
     const rows = new Set(ledger.data.claims.map((c) => c.claimId));
     for (const m of markers) if (!rows.has(m)) p(file, `no ledger row for marker ${m}`);
     for (const c of ledger.data.claims) {
