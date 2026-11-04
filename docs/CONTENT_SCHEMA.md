@@ -48,6 +48,11 @@ entity = z.object({
   quickCheck: z.array(z.object({ id: Id, q: L, a: L, kind: z.enum(['short','free']) })).min(3),
   selfExplain: z.array(L).default([]), // "why does X cause Y?" prompts
   chain: z.array(z.object({ pathology: L, sign: L, lab: L })).default([]), // chain trainer
+  examQuestions: z.array(z.object({     // "Possible exam questions" block + oral simulator
+    it: z.string().min(1), en: z.string().min(1),
+    focus: z.array(SectionId).min(1),   // §1b section ids where the learner checks the answer
+    level: z.union([z.literal(1), z.literal(2), z.literal(3)]), // 1 basic, 2 intermediate, 3 advanced
+  })).default([]),
   images: z.array(z.object({ id: Id, role: z.enum(['gross','micro','diagram','imaging','clinical']),
                              pairWith: Id.optional() })).default([]),
   reviewStatus: ReviewStatus,           // starts 'ai-generated-unreviewed'
@@ -59,6 +64,8 @@ entity = z.object({
   status: Status,
 });
 ```
+
+`examQuestions` are **questions only**: they add no medical statement, so they need no claim marker; the answer lives in the `focus` sections, which carry their own claims. They are possible questions written for practice, never presented as official ones, and their wording stays neutral (no examiner, course or channel cues). Rendered after the quick check as "Possibili domande d'esame" / "Possible exam questions" (`ExamQuestions.astro`) and served to the oral simulator as `/[lang]/data/oral.json` (question id `<entity>#<n>`, n = 1-based position, so append new questions rather than reordering).
 
 Derived, not stored:
 - `claimLedgerRef` = `docs/ledger/<id>.yaml`; the validator checks it exists.
