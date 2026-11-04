@@ -43,7 +43,7 @@ export const tPw = defineStrings({
   labels: { it: 'Etichette', en: 'Labels' },
   poster: { it: 'Immagine statica della struttura {pdb}', en: 'Still image of structure {pdb}' },
   legendBase: { it: 'grigio: resto della struttura', en: 'grey: rest of the structure' },
-  legendHighlight: { it: 'arancione: {label}', en: 'orange: {label}' },
+  legendHighlight: { it: 'arancione con sfere: {label}', en: 'orange with spheres: {label}' },
   structureLine: { it: 'Struttura 3D: PDB {pdb}', en: '3D structure: PDB {pdb}' },
   method: { it: 'Metodo', en: 'Method' },
   resolution: { it: 'risoluzione', en: 'resolution' },
