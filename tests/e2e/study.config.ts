@@ -1,7 +1,8 @@
 /**
- * Playwright config for the study-engine smoke tests. Builds with the draft
- * fixtures (PREVIEW_DRAFTS=1) into .e2e-study-dist/ (never dist/) and serves it
- * with `astro preview`.
+ * Playwright config for the study-engine smoke tests and the image-viewer
+ * specs (the group switch needs the fixtures). Builds with the draft fixtures
+ * (PREVIEW_DRAFTS=1) into .e2e-study-dist/ (never dist/) and serves it with
+ * `astro preview`.
  *   npx playwright test -c tests/e2e/study.config.ts
  */
 import { fileURLToPath } from 'node:url';
@@ -11,7 +12,7 @@ const PORT = Number(process.env.STUDY_E2E_PORT ?? 4373);
 const DIR = '.e2e-study-dist';
 export default defineConfig({
   testDir: '.',
-  testMatch: 'study.spec.ts',
+  testMatch: ['study.spec.ts', 'viewer.spec.ts'],
   timeout: 30_000,
   retries: 0,
   reporter: 'list',
