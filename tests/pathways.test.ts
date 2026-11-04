@@ -85,6 +85,10 @@ describe('pathway content gate', () => {
           for (const lang of ['it', 'en'] as const) expect(claimMarkers(step.sourcesDiffer?.[lang] ?? '').has(c.claimId), `${c.claimId}/${lang}`).toBe(true);
         }
         for (const s of p.steps) for (const id of claimMarkers(s.sourcesDiffer?.en ?? '')) expect(rows.get(id)?.status, `${s.id}: ${id}`).toBe('sources-differ');
+        // The page renders only `sources`, so every source and second source the ledger relies on must be listed there.
+        const cited = new Set(p.sources.map((s) => s.source));
+        for (const c of ledger.claims)
+          for (const id of [c.sourceRef.source, c.secondSource?.source].filter(Boolean)) expect(cited.has(id!), `${c.claimId}: ${id}`).toBe(true);
       });
       it('uses known structures, highlights parts that exist in them, and has a poster for each', () => {
         for (const s of p.steps) {
