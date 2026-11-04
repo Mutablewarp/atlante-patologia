@@ -305,6 +305,58 @@ test('oral simulator: three questions, prediction before self-assessment, calibr
   expect(foreign).toEqual([]);
 });
 
+/** Write records into one store of the learner DB (the app must have opened it first, see readStore). */
+const writeStore = (page: Page, store: string, records: object[]) =>
+  page.evaluate(
+    ([s, recs]) =>
+      new Promise<void>((resolve, reject) => {
+        const req = indexedDB.open('atlas');
+        req.onerror = () => reject(req.error);
+        req.onsuccess = () => {
+          const d = req.result;
+          const tx = d.transaction(s, 'readwrite');
+          for (const r of recs) tx.objectStore(s).put(r);
+          tx.oncomplete = () => {
+            d.close();
+            resolve();
+          };
+          tx.onerror = () => reject(tx.error);
+        };
+      }),
+    [store, records] as const,
+  );
+
+test('oral history: a damaged session is listed and can be deleted without touching anything else', async ({ page }) => {
+  await page.goto('en/study/oral/');
+  const history = page.getByRole('region', { name: 'Previous sessions' });
+  await expect(history).toContainText('No sessions saved on this device.');
+  const rubric = { completeness: 3, accuracy: 3, structure: 3, terminology: 3 };
+  const good = { id: 'oral@2', at: Date.UTC(2026, 10, 2), updated: 2, items: [{ question: 'fixture-demo#1', entity: 'fixture-demo', text: 'Q?', predicted: 4, rubric, seconds: 30 }] };
+  // Written by an older build or by hand: no rubric, so the simulator cannot read it.
+  const damaged = { id: 'oral@1', at: Date.UTC(2026, 10, 1), updated: 1, items: [{ question: 'fixture-demo#2', entity: 'fixture-demo', text: 'Q?', predicted: 3 }] };
+  await writeStore(page, 'oralSessions', [good, damaged]);
+  await writeStore(page, 'notes', [{ id: 'fixture-demo', text: 'my note', updated: 1 }]);
+  await page.reload();
+
+  await expect(history.getByRole('listitem')).toHaveCount(2);
+  await expect(history.getByRole('listitem').first()).toContainText('Damaged session, cannot be read');
+  await expect(history).toContainText('2 Nov 2026: 1 questions, self-assessed 3 out of 4');
+  await expect(history).toContainText('Mean predicted 4 · mean self-assessed 3 (out of 4, 1 questions)');
+  await noAxeViolations(page);
+
+  await history.getByRole('button', { name: 'Delete: Damaged session, cannot be read' }).click();
+  await expect(page.getByRole('heading', { name: 'Previous sessions' })).toBeFocused();
+  await expect(history.getByRole('listitem')).toHaveCount(1);
+  const rows = await readStore(page, 'oralSessions');
+  expect(rows.find((r) => r.id === 'oral@1')).toMatchObject({ deleted: true }); // a tombstone: an older backup cannot bring it back
+  expect(rows.find((r) => r.id === 'oral@2')).toEqual(good);
+  expect(await readStore(page, 'notes')).toEqual([{ id: 'fixture-demo', text: 'my note', updated: 1 }]);
+
+  await history.getByRole('button', { name: /^Delete: 2 Nov 2026/ }).click();
+  await expect(history).toContainText('No sessions saved on this device.');
+  await expect(history).not.toContainText('Mean predicted');
+});
+
 test('oral simulator: "time is up" is announced in a live region, and a double save stores one answer', async ({ page }) => {
   await page.clock.install();
   await page.goto('en/study/oral/');

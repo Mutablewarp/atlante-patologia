@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { parse } from 'yaml';
 import { calibration, overconfident, luckyGuesses, advice, pct, type Judged } from '../src/lib/metacog.ts';
-import { drawQuestions, oralCalibration, rubricMean, type OralItem, type OralQuestion } from '../src/lib/oral.ts';
+import { drawQuestions, isOralSession, oralCalibration, rubricMean, type OralItem, type OralQuestion } from '../src/lib/oral.ts';
 import { checkExport, makeExport, sha256, storesToCreate, STORES, DB_VERSION, SCHEMA_VERSION, STORES_ADDED_IN } from '../src/lib/db.ts';
 import { entitySchema } from '../src/lib/schema.ts';
 
@@ -107,7 +107,14 @@ describe('learner data v2 (migration and export)', () => {
       JSON.stringify(
         await makeExport({
           quizAttempts: [{ id: 'q@1', question: 'q', entities: ['a'], module: 'g01', correct: true, mode: 'topic', at: 1, updated: 1, confidence: 3 }],
-          oralSessions: [{ id: 'oral@1', at: 1, updated: 1, items: [] }],
+          oralSessions: [
+            {
+              id: 'oral@1',
+              at: 1,
+              updated: 1,
+              items: [{ question: 'a#1', entity: 'a', text: '?', predicted: 2, rubric: { completeness: 2, accuracy: 3, structure: 2, terminology: 2 }, seconds: 40 }],
+            },
+          ],
         }),
       ),
     );
@@ -137,11 +144,12 @@ describe('examQuestions in the entity schema', () => {
 });
 
 describe('import trust boundary for oral sessions', () => {
-  const file = async (items: unknown) => {
-    const stores = { oralSessions: [{ id: 'oral@1', at: 1, updated: 1, items }] };
+  const file = async (items: unknown, session: object = {}) => {
+    const stores = { oralSessions: [{ id: 'oral@1', at: 1, updated: 1, items, ...session }] };
     return { app: 'atlante-patologia', schemaVersion: 2, exportedAt: '', checksum: await sha256(JSON.stringify(stores)), stores };
   };
   const rubric = { completeness: 3, accuracy: 3, structure: 2, terminology: 4 };
+  const good = { question: 'a#1', entity: 'a', text: '?', predicted: 3, rubric, seconds: 75 };
   it('accepts well-formed items and rejects missing rubric criteria, bad scores and non-arrays', async () => {
     expect((await checkExport(await file([{ question: 'a#1', entity: 'a', text: '?', predicted: 3, rubric }]))).ok).toBe(true);
     for (const bad of [
@@ -151,5 +159,27 @@ describe('import trust boundary for oral sessions', () => {
       'x',
     ])
       expect(await checkExport(await file(bad))).toEqual({ ok: false, error: 'records' });
+  });
+  it('checks every field of a session and of its items, and lets tombstones through', async () => {
+    expect((await checkExport(await file([good]))).ok).toBe(true);
+    for (const [items, session] of [
+      [[{ ...good, entity: undefined }], {}],
+      [[{ ...good, text: 3 }], {}],
+      [[{ ...good, question: null }], {}],
+      [[{ ...good, seconds: -1 }], {}],
+      [[{ ...good, seconds: '75' }], {}],
+      [[good, { ...good, rubric: 'all 4' }], {}],
+      [[], {}], // the simulator never saves an empty session
+      [[good], { at: '2026-11-04' }],
+    ] as const)
+      expect(await checkExport(await file(items, session))).toEqual({ ok: false, error: 'records' });
+    // A deleted session keeps whatever it held: it is never read, only merged.
+    expect((await checkExport(await file('x', { deleted: true }))).ok).toBe(true);
+  });
+  it('isOralSession accepts only what the simulator can read', () => {
+    expect(isOralSession({ id: 'oral@1', at: 1, items: [good] })).toBe(true);
+    expect(isOralSession({ id: 'oral@1', at: 1, items: [good, {}] })).toBe(false);
+    expect(isOralSession({ at: 1, items: [good] })).toBe(false);
+    expect(isOralSession(null)).toBe(false);
   });
 });
