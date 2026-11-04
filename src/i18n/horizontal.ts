@@ -139,6 +139,7 @@ export const tHz = defineStrings({
     en: 'Image viewer: + and − zoom, arrow keys move, 0 resets; double-click or double-tap zooms in, Ctrl + wheel zooms.',
   },
   viewerTools: { it: 'Strumenti dell’immagine', en: 'Image tools' },
+  zoomable: { it: 'Immagine ingrandibile', en: 'Zoomable image' },
   zoomIn: { it: 'Ingrandisci', en: 'Zoom in' },
   zoomOut: { it: 'Riduci', en: 'Zoom out' },
   zoomReset: { it: 'Ripristina la vista', en: 'Reset view' },

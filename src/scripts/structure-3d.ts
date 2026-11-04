@@ -11,6 +11,8 @@ import type { ViewerStep } from '../lib/pathways.ts';
 // Colour-vision-safe pair; the legend repeats it in text and 3D labels name the part.
 const GREY = '#9a9a9a';
 const ORANGE = '#e66100';
+/** Same as .structure-stage[data-loaded] in pathway.css. */
+const STAGE = '#f6f1e7';
 // 3Dmol accepts arrays for chain/resn and "170-189" for resi at runtime; its declarations are narrower.
 const spec = (s: object) => s as AtomSelectionSpec;
 
@@ -33,7 +35,8 @@ export type Controller = {
 
 export async function mount(el: HTMLElement, base: string, reduce: boolean): Promise<Controller> {
   const ms = reduce ? 0 : 300;
-  const viewer = createViewer(el, { backgroundColor: 'white', backgroundAlpha: 0, antialias: true });
+  // Opaque light backdrop in both themes: grey and orange keep >= 3:1 against it (WCAG 1.4.11); over the dark stage they did not.
+  const viewer = createViewer(el, { backgroundColor: STAGE, backgroundAlpha: 1, antialias: true });
   const files = new Map<string, Uint8Array>();
   let current: string | undefined;
   let view: unknown[] | undefined;

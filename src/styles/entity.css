@@ -314,9 +314,15 @@ html:not(.js) .section-toggle {
   .section-body .viewer-stage {
     border-radius: 0;
   }
+  /* Only the inline controls and text get the gutter; the stage stays edge to edge and the
+     full-screen dialog (which .viewer-body moves into) keeps its own layout. */
   .section-body .viewer-figure > :not(ap-image-viewer),
-  .section-body .viewer-figure ap-image-viewer > :not(.viewer-stage) {
+  .section-body ap-image-viewer > .viewer-body > :not(.viewer-panel),
+  .section-body ap-image-viewer > .viewer-body > .viewer-panel > :not(.viewer-stage) {
     margin-inline: var(--gutter);
+  }
+  .section-body .viewer-dialog {
+    margin: 0;
   }
 }
 
@@ -394,6 +400,10 @@ html:not(.js) .section-toggle {
 
 .related {
   margin-top: var(--space-6);
+}
+/* Pattern pages: one link + summary per line, kept to the reading measure */
+.related > ul {
+  max-width: var(--measure);
 }
 .related-groups {
   display: grid;

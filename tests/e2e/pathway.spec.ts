@@ -41,6 +41,8 @@ test('the stepper moves the current step, the diagram and the announcement @smok
 });
 
 test('the 3D view loads on demand, follows the steps and makes no third-party request @smoke', async ({ page, baseURL }) => {
+  // Three WebGL waits of up to 20 s each: the default 30 s test timeout is too short under parallel load.
+  test.setTimeout(90_000);
   const origin = new URL(baseURL!).origin;
   const requests: string[] = [];
   page.on('request', (r) => requests.push(r.url()));
@@ -53,9 +55,11 @@ test('the 3D view loads on demand, follows the steps and makes no third-party re
   await expect(viewer.locator('img[data-poster]:visible')).toHaveCount(1);
 
   const webgl = await hasWebGL(page);
-  await viewer.locator('[data-load]').click();
+  await viewer.locator('[data-load]').focus();
+  await page.keyboard.press('Enter');
   if (!webgl) {
     await expect(viewer.locator('[data-fallback]')).toBeVisible();
+    await expect(viewer.locator('[data-fallback]')).toBeFocused();
     await expect(viewer.locator('img[data-poster]:visible')).toHaveCount(1);
     return;
   }
@@ -84,7 +88,8 @@ test('the 3D view loads on demand, follows the steps and makes no third-party re
   // Our controls and keys work without throwing.
   const errors: string[] = [];
   page.on('pageerror', (e) => errors.push(e.message));
-  for (const act of ['left', 'right', 'in', 'out', 'reset']) await viewer.locator(`[data-act="${act}"]`).click();
+  // Single-pointer alternatives to dragging about both axes (WCAG 2.5.7).
+  for (const act of ['left', 'right', 'up', 'down', 'in', 'out', 'reset']) await viewer.locator(`[data-act="${act}"]`).click();
   await viewer.locator('[data-act="labels"]').click();
   await expect(viewer.locator('[data-act="labels"]')).toHaveAttribute('aria-pressed', 'false');
   await viewer.locator('[data-stage]').focus();
@@ -96,6 +101,7 @@ test('the 3D view loads on demand, follows the steps and makes no third-party re
 });
 
 test('the pathway page has no axe violations with the 3D view open', async ({ page }) => {
+  test.setTimeout(60_000);
   await page.goto(PAGE);
   if (await hasWebGL(page)) {
     await page.locator('[data-load]').click();
@@ -113,3 +119,35 @@ test('the apoptosis card shows the compact pathway, one step at a time, with a l
   await expect(block.locator('[data-step-item]:visible [data-step-title]')).toHaveText('BH3-only proteins switch on');
   await expect(block.getByRole('link', { name: /Open the full pathway/ })).toHaveAttribute('href', /\/en\/pathways\/intrinsic-apoptosis\/$/);
 });
+
+/** Effective contrast of each future step label: fill composited with every ancestor's opacity over the page. */
+const futureLabelContrast = (page: Page, scope: string) =>
+  page.locator(scope).evaluate((root) => {
+    const rgb = (c: string) => (c.match(/[\d.]+/g) ?? []).slice(0, 3).map(Number);
+    const lum = ([r, g, b]: number[]) => {
+      const f = (v: number) => ((v /= 255) <= 0.04045 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4);
+      return 0.2126 * f(r!) + 0.7152 * f(g!) + 0.0722 * f(b!);
+    };
+    const pageBg = rgb(getComputedStyle(document.body).backgroundColor);
+    return [...root.querySelectorAll<SVGTextElement>('[data-state="future"] text')].map((t) => {
+      let alpha = 1;
+      for (let el: Element | null = t; el && el !== document.body; el = el.parentElement) alpha *= Number(getComputedStyle(el).opacity);
+      const fill = rgb(getComputedStyle(t).fill).map((c, i) => alpha * c + (1 - alpha) * pageBg[i]!);
+      const [hi, lo] = [lum(fill), lum(pageBg)].sort((a, b) => b - a);
+      return (hi! + 0.05) / (lo! + 0.05);
+    });
+  });
+
+for (const scheme of ['light', 'dark'] as const)
+  test(`future steps in the 2D diagram stay readable (>= 4.5:1, ${scheme})`, async ({ page }) => {
+    await page.emulateMedia({ colorScheme: scheme });
+    for (const [path, scope] of [
+      [PAGE, '.pw-diagram'],
+      ['en/e/apoptosis/', 'ap-pathway[data-compact] .pw-diagram'],
+    ] as const) {
+      await page.goto(path);
+      const ratios = await futureLabelContrast(page, scope);
+      expect(ratios.length, path).toBeGreaterThan(5);
+      for (const r of ratios) expect(r, path).toBeGreaterThanOrEqual(4.5);
+    }
+  });

@@ -29,7 +29,7 @@ interface Props {
 const { lang, image, id } = Astro.props;
 const t = (k: Parameters<typeof tHz>[1]) => tHz(lang, k);
 // `_`-prefixed files are fixtures: kept out of the bundle so they never reach a production build.
-const files = import.meta.glob<{ default: ImageMetadata }>(['../../assets/images/**/*.{png,jpg,jpeg,webp,avif,gif}', '!**/_*']);
+const files = import.meta.glob<{ default: ImageMetadata }>(['../../assets/images/**/*.{png,jpg,jpeg,webp,avif,gif,svg}', '!**/_*']);
 
 async function load(img: Img) {
   const loader = files[`../../assets/images/${img.file}`];
@@ -41,7 +41,8 @@ async function load(img: Img) {
   const W = meta?.width ?? fixture!.readUInt32BE(16);
   const H = meta?.height ?? fixture!.readUInt32BE(20);
   const notes = [...img.annotations].sort((a, b) => a.revealOrder - b.revealOrder);
-  return { img, meta, fixture, W, H, notes };
+  // Original diagrams are SVG: served as the emitted file at its intrinsic size (no raster srcset).
+  return { img, meta, fixture, W, H, notes, svg: img.file.endsWith('.svg') };
 }
 const members = image ? groupMembers(image.group ? await images() : [], image) : [];
 const panels = (await Promise.all(members.map(load))).filter((p) => p !== undefined);
@@ -70,6 +71,8 @@ const variantLabel = (img: Img, i: number) => {
   );
 };
 const anyNotes = panels.some((p) => p.notes.length > 0);
+/** Label placement that keeps it inside the image: anchored at its start, middle or end, top, middle or bottom. */
+const place = (x: number, y: number) => ({ h: x < 30 ? 'start' : x > 70 ? 'end' : 'mid', v: y < 12 ? 'top' : y > 88 ? 'bottom' : 'mid' });
 const helpId = `viewer-help-${id}`;
 ---
 
@@ -90,15 +93,15 @@ const helpId = `viewer-help-${id}`;
             </fieldset>
           )}
           <p id={helpId} class="visually-hidden">{t('viewerHelp')}</p>
-          <div class="viewer-tools js-only" role="toolbar" aria-label={t('viewerTools')}>
+          <div class="viewer-tools js-only" role="group" aria-label={t('viewerTools')}>
             <button type="button" class="btn btn-small" data-zoom="out" aria-label={t('zoomOut')}>−</button>
             <button type="button" class="btn btn-small" data-zoom="in" aria-label={t('zoomIn')}>+</button>
             <button type="button" class="btn btn-small" data-zoom="reset">{t('zoomReset')}</button>
             <span class="viewer-pan">
-              <button type="button" class="btn btn-small" data-pan="left" aria-label={t('panLeft')} disabled>←</button>
-              <button type="button" class="btn btn-small" data-pan="up" aria-label={t('panUp')} disabled>↑</button>
-              <button type="button" class="btn btn-small" data-pan="down" aria-label={t('panDown')} disabled>↓</button>
-              <button type="button" class="btn btn-small" data-pan="right" aria-label={t('panRight')} disabled>→</button>
+              <button type="button" class="btn btn-small" data-pan="left" aria-label={t('panLeft')} aria-disabled="true">←</button>
+              <button type="button" class="btn btn-small" data-pan="up" aria-label={t('panUp')} aria-disabled="true">↑</button>
+              <button type="button" class="btn btn-small" data-pan="down" aria-label={t('panDown')} aria-disabled="true">↓</button>
+              <button type="button" class="btn btn-small" data-pan="right" aria-label={t('panRight')} aria-disabled="true">→</button>
             </span>
             {anyNotes && (
               <>
@@ -110,18 +113,20 @@ const helpId = `viewer-help-${id}`;
               {t('fullOpen')}
             </button>
           </div>
-          {panels.map(({ img, meta, fixture, W, H, notes }, i) => (
+          {panels.map(({ img, meta, fixture, W, H, notes, svg }, i) => (
             <div class="viewer-panel" data-panel={i} data-total={notes.length} data-w={W} data-mpp={img.mpp} hidden={i !== active}>
               <div
                 class="viewer-stage"
                 tabindex="0"
                 role="group"
-                aria-label={img.alt[lang]}
+                aria-label={t('zoomable')}
                 aria-describedby={helpId}
-                style={`--ar:${W}/${H}`}
+                style={`--ar:${W}/${H}${svg ? `;max-width:${W}px` : ''}`}
               >
                 <div class="viewer-canvas">
-                  {meta ? (
+                  {meta && svg ? (
+                    <img src={meta.src} alt={img.alt[lang]} width={W} height={H} loading="lazy" decoding="async" />
+                  ) : meta ? (
                     <Image
                       src={meta}
                       alt={img.alt[lang]}
@@ -145,11 +150,21 @@ const helpId = `viewer-help-${id}`;
                       })}
                     </svg>
                   )}
-                  {notes.map((n) => {
+                  {notes.map((n, k) => {
                     const p = anchor(n.shape);
+                    const at = place(p.x, p.y);
+                    // data-n: the number shown instead of the text on phones; it matches the legend below.
                     return (
-                      <span class="viewer-label" data-order={n.revealOrder} style={`left:${p.x}%;top:${p.y}%`} aria-hidden="true">
-                        {n.label[lang]}
+                      <span
+                        class="viewer-label"
+                        data-order={n.revealOrder}
+                        data-n={k + 1}
+                        data-h={at.h}
+                        data-v={at.v}
+                        style={`left:${p.x}%;top:${p.y}%`}
+                        aria-hidden="true"
+                      >
+                        <span class="viewer-label-text">{n.label[lang]}</span>
                       </span>
                     );
                   })}
@@ -158,8 +173,10 @@ const helpId = `viewer-help-${id}`;
               </div>
               {notes.length > 0 && (
                 <ol class="viewer-legend small" aria-label={t('labelList')}>
-                  {notes.map((n) => (
-                    <li data-order={n.revealOrder}>{n.label[lang]}</li>
+                  {notes.map((n, k) => (
+                    <li data-order={n.revealOrder} value={k + 1}>
+                      {n.label[lang]}
+                    </li>
                   ))}
                 </ol>
               )}
@@ -170,9 +187,10 @@ const helpId = `viewer-help-${id}`;
               )}
             </div>
           ))}
+          {/* Inside .viewer-body, so it moves into the dialog in full screen and stays exposed (WCAG 4.1.3). */}
+          <p class="visually-hidden" role="status" data-viewer-status />
         </div>
         <dialog class="viewer-dialog" aria-label={image.alt[lang]} />
-        <p class="visually-hidden" role="status" data-viewer-status />
       </ap-image-viewer>
       <figcaption>
         {panels.map(({ img }, i) => (
@@ -193,7 +211,13 @@ const helpId = `viewer-help-${id}`;
             )}
             <p class="small muted credit">
               {t('credit')}: {img.attributionText} · <a href={img.licenseUrl}>{img.license}</a>
-              {img.modifications !== 'none' && ` · ${img.modifications}`}
+              {/* shortcut: `modifications` is English-only provenance text, marked as such; make it { it, en } when image YAMLs are next revised. */}
+              {img.modifications !== 'none' && (
+                <>
+                  {' · '}
+                  <span lang="en">{img.modifications}</span>
+                </>
+              )}
             </p>
           </div>
         ))}

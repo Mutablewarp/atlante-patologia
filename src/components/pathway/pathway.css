@@ -47,13 +47,21 @@
   fill: var(--eosin-ink);
   font-weight: 700;
 }
-/* Steps not reached yet stay faint (layout never jumps); the list is the text alternative. */
-.pw-diagram [data-state='future'] {
-  opacity: 0.2;
+/* Steps not reached yet: a dashed outline and muted labels that stay readable (>= 4.5:1, WCAG 1.4.3);
+   no opacity, which would blend the text into the page. The layout never jumps. */
+.pw-diagram [data-state='future'] rect {
+  fill: none;
+  stroke-dasharray: 5 4;
+}
+.pw-diagram [data-state='future'] text {
+  fill: var(--ink-muted);
 }
 @media (prefers-reduced-motion: no-preference) {
-  .pw-diagram g {
-    transition: opacity 0.25s var(--ease);
+  .pw-diagram rect,
+  .pw-diagram text {
+    transition:
+      fill 0.25s var(--ease),
+      stroke 0.25s var(--ease);
   }
 }
 .pw-controls {
@@ -66,6 +74,14 @@
 .pw-controls [aria-disabled='true'] {
   opacity: 0.55;
   cursor: default;
+}
+/* Touch: the same 44 px targets as the image viewer's tools */
+@media (pointer: coarse) {
+  .pw-controls .btn-small,
+  .structure-tools .btn-small {
+    min-width: 2.75rem;
+    min-height: 2.75rem;
+  }
 }
 
 /* Step list: all steps without JS; with JS the current one is marked (only it, in compact mode). */
@@ -104,6 +120,10 @@
   border-radius: var(--radius-s);
   background: var(--surface-2);
   overflow: hidden;
+}
+/* Same backdrop as the 3D canvas (scripts/structure-3d.ts STAGE): the model keeps its contrast in the dark theme. */
+.structure[data-loaded] .structure-stage {
+  background: #f6f1e7;
 }
 .structure-stage img {
   display: block;
@@ -164,4 +184,9 @@
 }
 .swatch-orange {
   background: #e66100;
+}
+.pw-steps .sources-differ {
+  margin: var(--space-2) 0 0;
+  padding-left: var(--space-3);
+  border-left: 3px solid var(--saffron);
 }

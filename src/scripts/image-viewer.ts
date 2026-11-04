@@ -37,6 +37,7 @@ class ApImageViewer extends HTMLElement {
       if (d.zoom === 'reset') this.reset();
       else if (d.zoom) this.zoomBy(d.zoom === 'in' ? 1.5 : 1 / 1.5);
       else if (d.pan) {
+        if (this.s === 1) return; // aria-disabled (not disabled), so focus stays on the button at 1×
         const r = this.stage.getBoundingClientRect();
         const [dx, dy] = PAN[d.pan]!;
         this.pan(dx * r.width * 0.2, dy * r.height * 0.2);
@@ -143,6 +144,8 @@ class ApImageViewer extends HTMLElement {
     this.stage = this.panel.querySelector('.viewer-stage')!;
     this.canvas = this.panel.querySelector('.viewer-canvas')!;
     this.total = Number(this.panel.dataset.total);
+    // The dialog is named after the image shown now, not the one active at build time.
+    this.dialog.setAttribute('aria-label', this.canvas.querySelector('img')?.alt ?? '');
     this.querySelectorAll<HTMLButtonElement>('[data-label-toggle], [data-reveal]').forEach((b) => (b.disabled = this.total === 0));
     this.setRevealed(this.total);
     this.recenter();
@@ -198,7 +201,7 @@ class ApImageViewer extends HTMLElement {
     this.y = Math.min(0, Math.max(r.height - r.height * this.s, this.y));
     this.canvas.style.transform = `translate(${this.x}px, ${this.y}px) scale(${this.s})`;
     this.stage.dataset.zoomed = String(this.s > 1);
-    this.querySelectorAll<HTMLButtonElement>('[data-pan]').forEach((b) => (b.disabled = this.s === 1));
+    this.querySelectorAll<HTMLButtonElement>('[data-pan]').forEach((b) => b.setAttribute('aria-disabled', String(this.s === 1)));
     // Past 1.5× (or in full screen) widen `sizes` once so the browser fetches the sharper srcset candidate.
     const img = this.canvas.querySelector('img');
     if (img?.srcset && (this.s > 1.5 || this.dialog.open)) {

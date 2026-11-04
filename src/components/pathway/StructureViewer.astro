@@ -45,7 +45,7 @@ const authors = (a: string) => {
       data-t-none={t('noStructure')}
     >
       <script type="application/json" data-steps set:html={JSON.stringify(steps)} />
-      <div class="structure-stage" data-stage role="group" aria-label={t('stageHelp')}>
+      <div class="structure-stage" data-stage role="group" aria-label={t('stageHelp')} aria-describedby={`structure-desc-${first}`}>
         {used.map(({ s, poster }) =>
           poster ? (
             <Image
@@ -66,10 +66,13 @@ const authors = (a: string) => {
         <div class="structure-canvas" data-canvas />
       </div>
       <button type="button" class="btn js-only" data-load>{t('load3d')}</button>
-      <p class="small muted" data-fallback hidden>{t('no3d')}</p>
-      <div class="structure-tools" role="toolbar" aria-label={t('tools3d')} data-tools hidden>
+      <p class="small muted" data-fallback tabindex="-1" hidden>{t('no3d')}</p>
+      {/* role=group, not toolbar: each button is its own Tab stop, as in every other control group on the site. */}
+      <div class="structure-tools" role="group" aria-label={t('tools3d')} data-tools hidden>
         <button type="button" class="btn btn-small" data-act="left">{t('rotateLeft')}</button>
         <button type="button" class="btn btn-small" data-act="right">{t('rotateRight')}</button>
+        <button type="button" class="btn btn-small" data-act="up">{t('rotateUp')}</button>
+        <button type="button" class="btn btn-small" data-act="down">{t('rotateDown')}</button>
         <button type="button" class="btn btn-small" data-act="in">{t('zoomIn')}</button>
         <button type="button" class="btn btn-small" data-act="out">{t('zoomOut')}</button>
         <button type="button" class="btn btn-small" data-act="reset">{t('reset')}</button>
@@ -78,7 +81,7 @@ const authors = (a: string) => {
         <button type="button" class="btn btn-small" data-act="next">{t('next')} →</button>
       </div>
       {used.map(({ s, label }) => (
-        <div class="structure-desc small" data-for={s.id} hidden={s.id !== first}>
+        <div class="structure-desc small" id={`structure-desc-${s.id}`} data-for={s.id} hidden={s.id !== first}>
           <p>
             <strong>{fmt(t('structureLine'), { pdb: s.pdb })}</strong> — <span lang="en">{s.title}</span>
           </p>

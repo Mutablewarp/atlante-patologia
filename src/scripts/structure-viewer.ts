@@ -49,6 +49,7 @@ class ApStructure extends HTMLElement {
     this.index = i;
     const id = this.steps[this.structureAt(i)]?.structure;
     this.querySelectorAll<HTMLElement>('[data-for]').forEach((el) => (el.hidden = el.dataset.for !== id));
+    if (id) this.$('[data-stage]')?.setAttribute('aria-describedby', `structure-desc-${id}`);
     // Draws run one after another and always draw the latest step, so fast clicks never leave a stale model.
     return (this.queue = this.queue.then(() => this.draw()));
   }
@@ -81,9 +82,12 @@ class ApStructure extends HTMLElement {
   private async load() {
     const button = this.$('[data-load]')!;
     const stage = this.$('[data-stage]')!;
+    if (button.getAttribute('aria-disabled') === 'true') return;
     const canvas = document.createElement('canvas');
     if (!(canvas.getContext('webgl2') ?? canvas.getContext('webgl'))) return this.fail();
-    button.hidden = true;
+    // The button stays in place (and keeps focus) while loading; focus moves to the stage or the fallback after.
+    button.setAttribute('aria-disabled', 'true');
+    button.textContent = this.dataset.tLoading!;
     this.say(this.dataset.tLoading!);
     try {
       const { mount } = await import('./structure-3d.ts');
@@ -91,6 +95,7 @@ class ApStructure extends HTMLElement {
       await this.go(this.index);
       this.dataset.loaded = '';
       this.$('[data-tools]')!.hidden = false;
+      button.hidden = true;
       stage.tabIndex = 0;
       stage.focus();
       this.say(this.dataset.tReady!);
@@ -104,7 +109,9 @@ class ApStructure extends HTMLElement {
   private fail() {
     delete this.dataset.loaded;
     this.$('[data-load]')!.hidden = true;
-    this.$('[data-fallback]')!.hidden = false;
+    const fallback = this.$('[data-fallback]')!;
+    fallback.hidden = false;
+    fallback.focus(); // the focused button is gone: keep the keyboard user's place
     this.say(this.dataset.tFail!);
   }
 }

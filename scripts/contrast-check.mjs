@@ -54,6 +54,11 @@ export const PAIRS = [
   ['focus', 'masson-soft', UI, 'focus ring in the mnemonics callout'],
   ['focus', 'eosin-soft', UI, 'focus ring in the quick-check callout'],
   ['eosin', 'paper', UI, 'reading-progress bar'],
+  // Pathway 2D diagram (components/pathway/pathway.css): future steps have no fill, so labels sit on the page or card
+  ['ink-muted', 'paper', TEXT, 'future pathway step labels on the page'],
+  ['ink-muted', 'surface', TEXT, 'future pathway step labels on a card'],
+  ['border-strong', 'paper', UI, 'future pathway step outline'],
+  ['eosin-ink', 'eosin-soft', TEXT, 'current pathway step label'],
 ];
 
 export function parseTokens(css) {

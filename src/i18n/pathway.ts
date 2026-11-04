@@ -35,6 +35,8 @@ export const tPw = defineStrings({
   tools3d: { it: 'Comandi della vista 3D', en: '3D view controls' },
   rotateLeft: { it: 'Ruota a sinistra', en: 'Rotate left' },
   rotateRight: { it: 'Ruota a destra', en: 'Rotate right' },
+  rotateUp: { it: 'Ruota in alto', en: 'Rotate up' },
+  rotateDown: { it: 'Ruota in basso', en: 'Rotate down' },
   zoomIn: { it: 'Ingrandisci', en: 'Zoom in' },
   zoomOut: { it: 'Riduci', en: 'Zoom out' },
   reset: { it: 'Vista iniziale', en: 'Reset view' },

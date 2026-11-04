@@ -37,15 +37,46 @@
 }
 .viewer-label {
   position: absolute;
-  transform: translate(-50%, -50%);
+  /* Kept inside the image: anchored by its start, middle or end (data-h / data-v, set from the anchor point) and wrapped */
+  transform: translate(var(--tx, -50%), var(--ty, -50%));
+  width: max-content;
+  max-width: 45%;
   padding: 0.1em 0.45em;
   border-radius: 4px;
   background: color-mix(in srgb, var(--surface) 88%, transparent);
   color: var(--ink);
   font-size: var(--step--1);
   font-weight: 700;
-  white-space: nowrap;
+  line-height: 1.25;
   pointer-events: none;
+}
+.viewer-label[data-h='start'] {
+  --tx: 0%;
+}
+.viewer-label[data-h='end'] {
+  --tx: -100%;
+}
+.viewer-label[data-v='top'] {
+  --ty: 0%;
+}
+.viewer-label[data-v='bottom'] {
+  --ty: -100%;
+}
+/* Phones: a numbered marker on the image; the full text is in the numbered legend below. */
+@media (max-width: 599px) {
+  .viewer-label[data-n] {
+    --tx: -50%;
+    --ty: -50%;
+    min-width: 1.7em;
+    text-align: center;
+    border-radius: 999px;
+  }
+  .viewer-label::before {
+    content: attr(data-n);
+  }
+  .viewer-label-text {
+    display: none;
+  }
 }
 /* Outside the canvas, so it keeps its size while the image zooms. */
 .viewer-scale {
@@ -79,7 +110,8 @@
 .viewer-tools .btn-small {
   min-width: 2rem;
 }
-.viewer-tools .btn:disabled {
+.viewer-tools .btn:disabled,
+.viewer-tools .btn[aria-disabled='true'] {
   opacity: 0.45;
   cursor: not-allowed;
 }

@@ -8,8 +8,10 @@ import { expect, test, type Page } from '@playwright/test';
 // macOS WebKit only moves focus to links with Option+Tab (system default).
 const tabKey = (browserName: string) => (browserName === 'webkit' && process.platform === 'darwin' ? 'Alt+Tab' : 'Tab');
 
-const PAGES = ['it/', 'en/atlas/', 'it/about/reading-list/', 'en/search/?q=atlas'];
-const MAX_STOPS = 80;
+// v2 pages: the entity card (image viewer, compact pathway, quick check) and the full pathway page (stepper, 3D tools).
+const PAGES = ['it/', 'en/atlas/', 'it/about/reading-list/', 'en/search/?q=atlas', 'it/e/apoptosis/', 'it/pathways/intrinsic-apoptosis/'];
+// The entity card has many controls: walk far enough to cross the viewer and the pathway.
+const maxStops = (path: string) => (path.includes('/e/') ? 200 : 80);
 
 // Smooth scrolling would still be moving when focus is measured.
 test.use({ reducedMotion: 'reduce' });
@@ -89,7 +91,7 @@ for (const path of PAGES) {
     await page.goto(path);
     const problems: string[] = [];
     const seen = new Set<string>();
-    for (let i = 0; i < MAX_STOPS; i++) {
+    for (let i = 0; i < maxStops(path); i++) {
       await page.keyboard.press(tabKey(browserName));
       const s = await focusState(page);
       if (!s) break; // focus left the document: we went all the way round

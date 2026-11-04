@@ -31,17 +31,18 @@ async function openViewer(page: Page) {
   return page.locator(FIG);
 }
 
-test('@smoke pan buttons stay disabled until zoomed, then move the image', async ({ page }) => {
+test('@smoke pan buttons stay disabled until zoomed, then move the image; focus stays when they disable', async ({ page }) => {
   const fig = await openViewer(page);
   const right = fig.getByRole('button', { name: 'Sposta a destra' });
   const down = fig.getByRole('button', { name: 'Sposta in basso' });
   // WebKit can resolve a click before the page has handled it, so every reading polls.
   const at = (k: 'x' | 'y' | 's') => expect.poll(async () => (await view(fig))[k]);
-  await expect(right).toBeDisabled();
+  // aria-disabled, not disabled: a focused pan button keeps focus when the zoom returns to 1× (WCAG 2.4.3).
+  await expect(right).toHaveAttribute('aria-disabled', 'true');
   await fig.getByRole('button', { name: 'Ingrandisci' }).click();
   await fig.getByRole('button', { name: 'Ingrandisci' }).click();
   await at('s').toBeCloseTo(2.25);
-  await expect(right).toBeEnabled();
+  await expect(right).toHaveAttribute('aria-disabled', 'false');
   const before = await view(fig);
   await right.click();
   await at('x').toBeLessThan(before.x);
@@ -52,9 +53,14 @@ test('@smoke pan buttons stay disabled until zoomed, then move the image', async
   await at('x').toBeGreaterThan(after.x);
   await fig.getByRole('button', { name: 'Sposta in alto' }).click();
   await at('y').toBeGreaterThan(after.y);
-  await fig.getByRole('button', { name: 'Ripristina la vista' }).click();
+  await right.focus();
+  // Zoom back to 1× without moving focus (as Ctrl+wheel or a pinch would).
+  await fig.locator('[data-zoom="reset"]').evaluate((b: HTMLButtonElement) => b.click());
   await expect.poll(() => view(fig)).toEqual({ x: 0, y: 0, s: 1 });
-  await expect(right).toBeDisabled();
+  await expect(right).toHaveAttribute('aria-disabled', 'true');
+  await expect(right).toBeFocused();
+  await right.click();
+  await expect.poll(() => view(fig)).toEqual({ x: 0, y: 0, s: 1 });
 });
 
 test('@smoke keyboard zoom: + zooms, arrows pan, 0 resets', async ({ page }) => {
@@ -89,14 +95,24 @@ test('double click zooms in at the pointer; past 1.5× the largest srcset candid
 test('@smoke full screen on a phone: a 100dvh dialog that Escape and Back close', async ({ page, isMobile, browserName }) => {
   await page.setViewportSize({ width: 375, height: 667 });
   const fig = await openViewer(page);
+  // Inline the stage is edge to edge.
+  const inline = (await fig.locator('.viewer-stage').boundingBox())!;
+  expect(inline.x).toBeCloseTo(0, 0);
+  expect(inline.width).toBeCloseTo(375, 0);
   const full = fig.getByRole('button', { name: 'Schermo intero' });
   await full.click();
   const dialog = page.getByRole('dialog');
   await expect(dialog).toBeVisible();
   const box = (await dialog.boundingBox())!;
+  expect(box.x).toBeCloseTo(0, 0);
   expect(box.width).toBeCloseTo(375, 0);
   expect(box.height).toBeCloseTo(667, 0);
   await expect(dialog.locator('.viewer-stage')).toBeVisible();
+  const stage = (await dialog.locator('.viewer-stage').boundingBox())!;
+  expect(stage.x + stage.width).toBeLessThanOrEqual(375);
+  // The status line moves into the modal dialog with the controls, so its announcements are not inert (WCAG 4.1.3).
+  await dialog.getByRole('button', { name: 'Mostra l’etichetta successiva' }).click();
+  await expect(dialog.locator('[role="status"][data-viewer-status]')).toHaveText(/^1\/\d+: \S/);
   // Inside the dialog the plain wheel zooms (no page to scroll behind it); mobile WebKit has no wheel.
   if (!(isMobile && browserName === 'webkit')) {
     await dialog.locator('.viewer-stage').hover();
