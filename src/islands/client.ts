@@ -10,6 +10,7 @@ import { langPath } from '../lib/url.ts';
 import type { StudyCard } from '../lib/cards.ts';
 import type { QuizQuestion } from '../lib/quiz.ts';
 import type { StudyIndex } from '../lib/study.ts';
+import type { OralQuestion } from '../lib/oral.ts';
 
 export type { StudyCard, QuizQuestion, StudyIndex };
 
@@ -20,6 +21,7 @@ async function json<T>(lang: Lang, path: string): Promise<T> {
 }
 
 export const loadIndex = (lang: Lang) => json<StudyIndex>(lang, 'study.json');
+export const loadOral = (lang: Lang) => json<OralQuestion[]>(lang, 'oral.json');
 
 export async function loadCards(lang: Lang, modules: string[]): Promise<StudyCard[]> {
   return (await Promise.all(modules.map((m) => json<StudyCard[]>(lang, `cards/${m}.json`)))).flat();

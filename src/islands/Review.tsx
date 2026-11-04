@@ -7,6 +7,8 @@ import { getAll, getSetting, setSetting, put, requestPersistOnce } from '../lib/
 import { buildQueue, rate, previewIntervals, Rating, State, type CardRecord, type Grade } from '../lib/srs.ts';
 import { loadIndex, loadCards, useLoad, entityHref, interval, param, type StudyCard, type StudyIndex } from './client.ts';
 import { CardFace } from './CardFace.tsx';
+import { ConfidencePicker } from './Confidence.tsx';
+import type { Confidence } from '../lib/metacog.ts';
 
 type Props = { lang: Lang };
 const GRADES: { g: Grade; key: 'again' | 'hard' | 'good' | 'easy' }[] = [
@@ -139,6 +141,7 @@ function Session(props: {
   const [queue, setQueue] = useState(initial);
   const [pos, setPos] = useState(0);
   const [shown, setShown] = useState(false);
+  const [confidence, setConfidence] = useState<Confidence | undefined>();
   const [done, setDone] = useState(0);
   const [live, setLive] = useState('');
   const revealRef = useRef<HTMLButtonElement>(null);
@@ -157,7 +160,7 @@ function Session(props: {
       state.set(card.id, record);
       try {
         await put('cards', record);
-        await put('reviewLog', log);
+        await put('reviewLog', confidence ? { ...log, confidence } : log);
         await requestPersistOnce();
       } catch {
         /* storage failed: the session continues, progress is not saved */
@@ -168,6 +171,7 @@ function Session(props: {
     }
     setDone((n) => n + 1);
     setShown(false);
+    setConfidence(undefined);
     setPos((p) => p + 1);
   }
   useEffect(() => {
@@ -227,9 +231,14 @@ function Session(props: {
             </p>
           </div>
         ) : (
-          <button type="button" class="btn btn-primary" ref={revealRef} onClick={() => setShown(true)}>
-            {t('reveal')} <kbd>{t('revealKey')}</kbd>
-          </button>
+          <>
+            {!cram && dbOk && (
+              <ConfidencePicker lang={lang} name={`conf-${pos}`} value={confidence} onChange={setConfidence} />
+            )}
+            <button type="button" class="btn btn-primary" ref={revealRef} onClick={() => setShown(true)}>
+              {t('reveal')} <kbd>{t('revealKey')}</kbd>
+            </button>
+          </>
         )}
       </article>
       {shown && (
