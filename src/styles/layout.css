@@ -102,6 +102,13 @@ html {
     font-size: 17px;
   }
 }
+/* Below 360 px at the largest size the language and theme buttons leave no room for "Atlante" beside the mark:
+   the mark goes, the name stays whole */
+@media (max-width: 359px) {
+  :root.text-xl .topbar .brand svg {
+    display: none;
+  }
+}
 .topbar-search {
   display: none;
 }
