@@ -3,6 +3,7 @@ import AboutPage from '../../../components/AboutPage.astro';
 import Bi from '../../../components/Bi.astro';
 import { langPaths, type Lang } from '../../../i18n/index.ts';
 import { langPath } from '../../../lib/url.ts';
+import { SELF_VERIFIED } from '../../../lib/self-verified.ts';
 
 export const getStaticPaths = langPaths;
 const lang = Astro.params.lang as Lang;
@@ -34,15 +35,15 @@ const lang = Astro.params.lang as Lang;
           pagina e esito del controllo.
         </li>
         <li>
-          Un secondo agente, che non vede il ragionamento del primo, confronta ogni affermazione con il riferimento. Le
-          affermazioni contraddette bloccano la pubblicazione; quelle non presenti nel riferimento richiedono una
-          seconda fonte verificata.
+          Di regola un secondo agente, che non vede il ragionamento del primo, confronta ogni affermazione con il
+          riferimento (le eccezioni sono elencate più sotto). Le affermazioni contraddette bloccano la pubblicazione;
+          quelle non presenti nel riferimento richiedono una seconda fonte verificata.
         </li>
       </ol>
       <h2>Uso dell’intelligenza artificiale</h2>
       <p>
-        Testi, domande e schemi sono redatti con l’aiuto di modelli di intelligenza artificiale e controllati sulle fonti
-        citate con il processo descritto sopra. L’IA può sbagliare, anche in modo convincente: per questo una riga in
+        Testi, domande e schemi sono generati con modelli di intelligenza artificiale e controllati automaticamente sulle
+        fonti citate con il processo descritto sopra; nessun esperto li ha ancora rivisti. L’IA può sbagliare, anche in modo convincente: per questo una riga in
         fondo a ogni pagina lo ricorda e rimanda qui.
       </p>
       <h2>Che cosa significa lo stato di revisione</h2>
@@ -51,8 +52,25 @@ const lang = Astro.params.lang as Lang;
         <dd>Ogni affermazione di fatto ha una voce nel registro: fonte, pagina ed esito del controllo.</dd>
         <dt><strong>Verifica automatica indipendente</strong></dt>
         <dd>
-          Un secondo agente, separato da quello che scrive, ricontrolla ogni affermazione sul riferimento. Una scheda con
-          affermazioni contraddette non viene pubblicata.
+          Di regola un secondo agente, separato da quello che scrive, ricontrolla ogni affermazione sul riferimento. Una
+          scheda con affermazioni contraddette non viene pubblicata.
+        </dd>
+        <dt><strong>Pagine controllate solo dall’agente che le ha scritte</strong></dt>
+        <dd>
+          Per queste pagine la verifica indipendente non è ancora stata fatta: le affermazioni sono state controllate sul
+          riferimento solo dall’agente che le ha scritte.
+          <ul>
+            {SELF_VERIFIED.map((p) => (
+              <li>
+                <a href={langPath(lang, p.path)}>{p.name.it}</a>
+              </li>
+            ))}
+          </ul>
+        </dd>
+        <dt><strong>Strutture 3D</strong></dt>
+        <dd>
+          Le note sulle strutture 3D (organismo, metodo, parti mancanti o modificate) descrivono la provenienza del modello
+          e sono ricavate dalla voce RCSB PDB citata; non hanno voci nel registro delle affermazioni.
         </dd>
         <dt><strong>Nessuna revisione di esperti, salvo dove indicato</strong></dt>
         <dd>
@@ -88,14 +106,15 @@ const lang = Astro.params.lang as Lang;
           result of the check.
         </li>
         <li>
-          A second agent, which does not see the first one’s reasoning, checks each claim against the reference.
-          Contradicted claims block publication; claims not found in the reference need a second, verified source.
+          As a rule a second agent, which does not see the first one’s reasoning, checks each claim against the reference
+          (exceptions are listed below). Contradicted claims block publication; claims not found in the reference need a
+          second, verified source.
         </li>
       </ol>
       <h2>Use of artificial intelligence</h2>
       <p>
-        Texts, questions and diagrams are drafted with the help of AI models and checked against the cited sources with the
-        process above. AI can be wrong, sometimes convincingly so: that is why a line at the bottom of every page says so
+        Texts, questions and diagrams are generated with AI models and checked automatically against the cited sources with
+        the process above; no expert has reviewed them yet. AI can be wrong, sometimes convincingly so: that is why a line at the bottom of every page says so
         and links here.
       </p>
       <h2>What the review status means</h2>
@@ -104,8 +123,25 @@ const lang = Astro.params.lang as Lang;
         <dd>Every factual claim has an entry in the ledger: source, page and result of the check.</dd>
         <dt><strong>Independent automated verification</strong></dt>
         <dd>
-          A second agent, separate from the one that writes, checks each claim against the reference again. A card with a
-          contradicted claim is not published.
+          As a rule a second agent, separate from the one that writes, checks each claim against the reference again. A
+          card with a contradicted claim is not published.
+        </dd>
+        <dt><strong>Pages checked only by the agent that wrote them</strong></dt>
+        <dd>
+          The independent check has not been done yet for these pages: their claims were checked against the reference only
+          by the agent that wrote them.
+          <ul>
+            {SELF_VERIFIED.map((p) => (
+              <li>
+                <a href={langPath(lang, p.path)}>{p.name.en}</a>
+              </li>
+            ))}
+          </ul>
+        </dd>
+        <dt><strong>3D structures</strong></dt>
+        <dd>
+          The notes on 3D structures (organism, method, missing or modified parts) describe where the model comes from and
+          are taken from the cited RCSB PDB entry; they have no claim-ledger entries.
         </dd>
         <dt><strong>No expert review yet, unless marked</strong></dt>
         <dd>

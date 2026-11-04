@@ -8,11 +8,12 @@ import '../styles/tokens.css';
 import '../styles/base.css';
 import '../styles/layout.css';
 import { LANGS } from '../i18n/index.ts';
-import { SITE_NAME } from '../i18n/common.ts';
+import { SITE_NAME, tCommon } from '../i18n/common.ts';
 import { langPath, url } from '../lib/url.ts';
 import BrandMark from '../components/nav/BrandMark.astro';
 
 const targets = { it: langPath('it'), en: langPath('en') };
+const AI = { it: tCommon('it', 'aiNotice'), en: tCommon('en', 'aiNotice') };
 const abs = (p: string) => new URL(p, Astro.site!).href;
 ---
 
@@ -120,6 +121,9 @@ const abs = (p: string) => new URL(p, Astro.site!).href;
         <p class="small muted">
           Solo a scopo didattico, non per diagnosi o terapia.{' '}
           <span lang="en">For education only, not for diagnosis or treatment.</span>
+        </p>
+        <p class="small muted" data-ai-notice>
+          {AI.it}{' '}<span lang="en">{AI.en}</span>
         </p>
       </div>
     </main>

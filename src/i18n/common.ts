@@ -34,8 +34,8 @@ export const tCommon = defineStrings({
   },
   // EU AI Act art. 50(4): one disclosure line on every page (owner decision O11)
   aiNotice: {
-    it: 'Testi redatti con l’aiuto dell’intelligenza artificiale e controllati sulle fonti citate; possono contenere errori.',
-    en: 'Texts drafted with AI assistance and checked against the cited sources; they may contain errors.',
+    it: 'Testi generati con l’IA e controllati automaticamente sulle fonti citate; nessun esperto li ha ancora rivisti: possono contenere errori.',
+    en: 'Texts generated with AI and checked automatically against the cited sources; no expert has reviewed them yet, so they may contain errors.',
   },
   aiNoticeLink: { it: 'Come nascono i contenuti', en: 'How the content is made' },
   // Reading size (A-/A+)
@@ -57,8 +57,8 @@ export const tCommon = defineStrings({
   },
   noticeTitle: { it: 'Prima di iniziare', en: 'Before you start' },
   noticeBody: {
-    it: 'Questo atlante serve a studiare. Non è uno strumento clinico: non usarlo per fare diagnosi o per decidere terapie. Parte dei contenuti è prodotta con l’assistenza dell’IA e controllata con un processo documentato, ma può contenere errori.',
-    en: 'This atlas is for studying. It is not a clinical tool: do not use it for diagnosis or to decide treatment. Parts of the content are produced with AI assistance and checked with a documented process, but it may contain errors.',
+    it: 'Questo atlante serve a studiare. Non è uno strumento clinico: non usarlo per fare diagnosi o per decidere terapie. I contenuti sono generati con l’IA e controllati automaticamente con un processo documentato; nessun esperto li ha ancora rivisti: possono contenere errori.',
+    en: 'This atlas is for studying. It is not a clinical tool: do not use it for diagnosis or to decide treatment. The content is generated with AI and checked automatically with a documented process; no expert has reviewed it yet, so it may contain errors.',
   },
   noticeMore: { it: 'Leggi l’avvertenza completa', en: 'Read the full disclaimer' },
   noticeDismiss: { it: 'Ho capito', en: 'I understand' },
