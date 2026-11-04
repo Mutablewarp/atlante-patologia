@@ -1,0 +1,171 @@
+/* Image viewer (components/horizontal/ImageViewer.astro, scripts/image-viewer.ts). */
+.viewer-figure {
+  margin: var(--space-5) 0;
+  max-width: 46rem;
+}
+.viewer-stage {
+  position: relative;
+  overflow: hidden;
+  border-radius: var(--radius-s);
+  background: var(--surface-2);
+  touch-action: pan-x pan-y;
+  user-select: none;
+  -webkit-user-select: none;
+}
+.viewer-stage[data-zoomed='true'] {
+  touch-action: none;
+  cursor: grab;
+}
+.viewer-canvas {
+  position: relative;
+  transform-origin: 0 0;
+}
+.viewer-canvas img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.viewer-shapes {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: var(--eosin);
+  stroke-width: 0.4%;
+  pointer-events: none;
+}
+.viewer-label {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  padding: 0.1em 0.45em;
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--surface) 88%, transparent);
+  color: var(--ink);
+  font-size: var(--step--1);
+  font-weight: 700;
+  white-space: nowrap;
+  pointer-events: none;
+}
+/* Outside the canvas, so it keeps its size while the image zooms. */
+.viewer-scale {
+  position: absolute;
+  left: var(--space-2);
+  bottom: var(--space-2);
+  min-width: 1px;
+  padding-top: 0.15em;
+  border-top: 3px solid var(--ink);
+  background: color-mix(in srgb, var(--surface) 85%, transparent);
+  color: var(--ink);
+  font-size: var(--step--1);
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+  white-space: nowrap;
+  pointer-events: none;
+}
+.viewer-tools {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: var(--space-2) 0;
+  /* Quick repeated taps on + or an arrow must not become a page double-tap zoom. */
+  touch-action: manipulation;
+}
+.viewer-pan {
+  display: inline-flex;
+  gap: var(--space-1);
+}
+.viewer-tools .btn-small {
+  min-width: 2rem;
+}
+.viewer-tools .btn:disabled {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+@media (pointer: coarse) {
+  .viewer-tools .btn-small {
+    min-width: 2.75rem;
+    min-height: 2.75rem;
+  }
+}
+.viewer-switch {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin: var(--space-2) 0;
+  padding: 0;
+  border: 0;
+}
+.viewer-switch legend {
+  margin-bottom: var(--space-1);
+  padding: 0;
+  font-weight: 700;
+}
+.viewer-choice {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 2.75rem;
+  padding: 0 var(--space-3);
+  border: 1.5px solid var(--border-strong);
+  border-radius: 999px;
+  background: var(--surface);
+  cursor: pointer;
+}
+.viewer-choice:has(:checked) {
+  border-color: var(--hema);
+  background: var(--hema-soft);
+  color: var(--hema-ink);
+  font-weight: 700;
+}
+.viewer-choice input {
+  width: 1.1rem;
+  height: 1.1rem;
+  margin: 0;
+  accent-color: var(--hema);
+}
+.viewer-legend {
+  margin: var(--space-2) 0;
+  padding-left: var(--space-5);
+}
+.viewer-lookfor {
+  margin: var(--space-2) 0;
+  padding-left: var(--space-3);
+  border-left: 3px solid var(--hema);
+}
+.viewer-figure figcaption p {
+  margin: 0 0 var(--space-1);
+}
+/* Without JS every image of a group stays visible (the switch needs JS). */
+html:not(.js) .viewer-figure [data-panel][hidden] {
+  display: block;
+}
+
+/* Full screen: a modal dialog that fills the small viewport, inside the safe areas. */
+.viewer-dialog {
+  width: 100%;
+  max-width: none;
+  height: 100dvh;
+  max-height: none;
+  margin: 0;
+  padding: max(var(--space-3), env(safe-area-inset-top)) max(var(--space-3), env(safe-area-inset-right))
+    max(var(--space-3), env(safe-area-inset-bottom)) max(var(--space-3), env(safe-area-inset-left));
+  border: 0;
+  background: var(--paper);
+  color: var(--ink);
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+.viewer-dialog::backdrop {
+  background: var(--paper);
+}
+.viewer-dialog .viewer-tools,
+.viewer-dialog .viewer-switch {
+  margin-top: 0;
+}
+/* As large as fits under the controls, keeping the image's aspect ratio. */
+.viewer-dialog .viewer-stage {
+  width: min(100%, calc((100dvh - 9rem) * var(--ar)));
+  margin-inline: auto;
+}
