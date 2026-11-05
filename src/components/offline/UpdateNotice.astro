@@ -4,6 +4,8 @@
  * updated service worker is waiting. Non-modal, dismissible, polite live region.
  * Second notice (db-notice.ts): the learner database cannot be upgraded while
  * another tab runs an older version, or this tab must reload for a newer one.
+ * Both sit in one fixed column, so neither covers the other; db-notice.ts
+ * turns its height into scroll padding, so focus never goes under it (WCAG 2.4.11).
  */
 import type { Lang } from '../../i18n/index.ts';
 import { tOffline } from '../../i18n/offline.ts';
@@ -14,19 +16,27 @@ interface Props {
 const { lang } = Astro.props;
 ---
 
-<div class="update-notice" role="status" aria-live="polite" data-update-notice hidden>
-  <p>{tOffline(lang, 'updateReady')}</p>
-  <div class="notice-actions">
-    <button type="button" class="btn btn-small btn-primary" data-update-reload>{tOffline(lang, 'updateReload')}</button>
-    <button type="button" class="btn btn-small" data-update-later>{tOffline(lang, 'updateLater')}</button>
+<div class="notices" data-notices>
+  <div class="update-notice" role="status" aria-live="polite" data-update-notice hidden>
+    <p>{tOffline(lang, 'updateReady')}</p>
+    <div class="notice-actions">
+      <button type="button" class="btn btn-small btn-primary" data-update-reload>{tOffline(lang, 'updateReload')}</button>
+      <button type="button" class="btn btn-small" data-update-later>{tOffline(lang, 'updateLater')}</button>
+    </div>
   </div>
-</div>
 
-<div class="update-notice" role="status" aria-live="polite" data-db-notice hidden>
-  <p data-db-msg="blocked" hidden>{tOffline(lang, 'dbBlocked')}</p>
-  <p data-db-msg="blocking" hidden>{tOffline(lang, 'dbBlocking')}</p>
-  <div class="notice-actions" data-db-msg="blocking" hidden>
-    <button type="button" class="btn btn-small btn-primary" data-db-reload>{tOffline(lang, 'updateReload')}</button>
+  <!-- The live region stays rendered; only its content appears, which screen readers announce more reliably. -->
+  <div role="status" aria-live="polite" data-db-notice>
+    <div class="update-notice" data-db-box hidden>
+      <p data-db-msg="blocked" hidden>{tOffline(lang, 'dbBlocked')}</p>
+      <p data-db-msg="blocked-update" hidden>{tOffline(lang, 'dbBlockedUpdate')}</p>
+      <p data-db-msg="blocking" hidden>{tOffline(lang, 'dbBlocking')}</p>
+      <div class="notice-actions">
+        <button type="button" class="btn btn-small btn-primary" data-db-msg="blocking" data-db-reload hidden>{tOffline(lang, 'updateReload')}</button>
+        <button type="button" class="btn btn-small" data-db-msg="blocking" data-db-dismiss hidden>{tOffline(lang, 'updateLater')}</button>
+        <button type="button" class="btn btn-small" data-db-msg="blocked blocked-update" data-db-dismiss hidden>{tOffline(lang, 'dbClose')}</button>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -36,13 +46,20 @@ const { lang } = Astro.props;
 </script>
 
 <style>
-  .update-notice {
+  .notices {
     position: fixed;
     z-index: 40;
     inset-inline: var(--space-4);
     bottom: calc(var(--tabbar-h) + env(safe-area-inset-bottom) + var(--space-3));
     max-width: 30rem;
     margin-inline: auto;
+    display: flex;
+    flex-direction: column;
+    /* The column itself never takes a click or a tap; only the notices do. */
+    pointer-events: none;
+  }
+  .update-notice {
+    margin-top: var(--space-2);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -53,9 +70,7 @@ const { lang } = Astro.props;
     border: 1.5px solid var(--border-strong);
     border-radius: var(--radius-m);
     box-shadow: var(--shadow);
-  }
-  .update-notice[hidden] {
-    display: none;
+    pointer-events: auto;
   }
   .update-notice p {
     margin: 0;
@@ -64,13 +79,17 @@ const { lang } = Astro.props;
     display: flex;
     gap: var(--space-2);
   }
+  /* Author display rules would otherwise win over the hidden attribute. */
+  [hidden] {
+    display: none !important;
+  }
   @media (min-width: 600px) {
-    .update-notice {
+    .notices {
       bottom: calc(var(--space-4) + env(safe-area-inset-bottom));
     }
   }
   @media print {
-    .update-notice {
+    .notices {
       display: none;
     }
   }

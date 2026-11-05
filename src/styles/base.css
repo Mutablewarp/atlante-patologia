@@ -10,7 +10,8 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   scroll-padding-top: calc(var(--topbar-h) + var(--space-4));
-  scroll-padding-bottom: var(--space-4);
+  /* --notice-h: how far the fixed notices reach up from the bottom (db-notice.ts), 0 when none is shown. */
+  scroll-padding-bottom: calc(var(--notice-h, 0px) + var(--space-4));
 }
 
 body {

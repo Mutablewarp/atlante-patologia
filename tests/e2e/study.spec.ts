@@ -537,6 +537,9 @@ test('an older tab that keeps the database open blocks the upgrade with a notice
   await page.goto('en/study/oral/');
   const history = page.getByRole('region', { name: 'Previous sessions' });
   await expect(page.getByText('Close the other atlas tabs to finish the update.', { exact: false })).toBeVisible();
+  // Reloading this tab cannot end the wait: no Reload here, only Close.
+  await expect(page.locator('[data-db-reload]')).toBeHidden();
+  await expect(page.locator('[data-db-box]').getByRole('button', { name: 'Close' })).toBeVisible();
   await expect(history).toContainText('Loading…');
   await old.close();
   await expect(page.getByText('Close the other atlas tabs to finish the update.', { exact: false })).toBeHidden();
@@ -567,4 +570,45 @@ test('a newer version in another tab is never blocked by this one, which offers 
   await holdOpen(next, 99);
   await expect(page.getByText('A newer version of the atlas is open in another tab.', { exact: false })).toBeVisible();
   await expect(page.locator('[data-db-reload]')).toBeVisible();
+});
+
+test('every tab that waits behind a blocked upgrade shows the notice, and each continues once the old tab closes', async ({ context }) => {
+  // Only the request at the head of the browser's queue gets a `blocked` event; the others wait silently.
+  const old = await context.newPage();
+  await holdOpen(old, 1);
+  const review = await context.newPage();
+  await review.goto('en/study/review/');
+  const card = await context.newPage();
+  await card.goto('en/e/fixture-demo/');
+  for (const p of [review, card]) await expect(p.getByText('Close the other atlas tabs to finish the update.', { exact: false })).toBeVisible();
+  await old.close();
+  for (const p of [review, card]) await expect(p.locator('[data-db-box]')).toBeHidden();
+  await expect(review.getByText(/0 due · [1-9]\d* new/)).toBeVisible();
+  const bm = card.getByRole('button', { name: /Bookmark/ });
+  await bm.click();
+  await expect(bm).toHaveAttribute('aria-pressed', 'true');
+  expect(await readStore(card, 'bookmarks')).toMatchObject([{ id: 'fixture-demo' }]);
+  expect(await readStore(card, 'notes')).toEqual([{ id: 'fixture-demo', text: 'v1 note', updated: 1 }]);
+});
+
+test('with a new version waiting, the database notice points to its Reload and never covers it', async ({ page }) => {
+  await page.goto('en/');
+  // As in a deploy: the update notice is up, then this tab's upgrade waits for an older tab.
+  await page.evaluate(() => {
+    document.querySelector<HTMLElement>('[data-update-notice]')!.hidden = false;
+    window.dispatchEvent(new CustomEvent('ap:db-state', { detail: 'blocked' }));
+  });
+  const box = page.locator('[data-db-box]');
+  await expect(box).toContainText('press “Reload” in the new-version notice');
+  await expect(page.locator('[data-db-reload]')).toBeHidden();
+  const reload = page.locator('[data-update-reload]');
+  const hit = await reload.evaluate((el) => {
+    const r = el.getBoundingClientRect();
+    return el.contains(document.elementFromPoint(r.left + r.width / 2, r.top + r.height / 2));
+  });
+  expect(hit).toBe(true);
+  // Escape (or Close) dismisses the database notice; the update notice stays.
+  await page.keyboard.press('Escape');
+  await expect(box).toBeHidden();
+  await expect(reload).toBeVisible();
 });

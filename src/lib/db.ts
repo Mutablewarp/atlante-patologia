@@ -141,15 +141,24 @@ let handle: Promise<IDBPDatabase> | undefined;
 /**
  * 'blocked': another tab still holds an older version open, so the upgrade waits.
  * 'blocking': a newer version of the atlas, in another tab, waits for this one; this tab closed its connection.
- * 'ready': the database is open. components/offline/UpdateNotice.astro shows the matching notice.
+ * 'ready': the database is open. 'failed': it cannot be opened (the page shows its storage notice).
+ * components/offline/UpdateNotice.astro shows the matching notice.
  */
-export type DbState = 'blocked' | 'blocking' | 'ready';
+export type DbState = 'blocked' | 'blocking' | 'ready' | 'failed';
 const notify = (state: DbState) => {
   if (typeof window !== 'undefined') window.dispatchEvent(new CustomEvent<DbState>('ap:db-state', { detail: state }));
 };
 
+/**
+ * Only the request at the head of the browser's queue gets a `blocked` event; a tab whose
+ * open waits behind it hears nothing. An open that has not settled by then is reported as blocked.
+ */
+export const BLOCKED_AFTER_MS = 1500;
+
 export function db(): Promise<IDBPDatabase> {
-  handle ??= openDB(DB_NAME, DB_VERSION, {
+  if (handle) return handle;
+  const waiting = setTimeout(() => notify('blocked'), BLOCKED_AFTER_MS);
+  handle = openDB(DB_NAME, DB_VERSION, {
     upgrade(d, oldVersion) {
       for (const s of storesToCreate(oldVersion)) d.createObjectStore(s, { keyPath: 'id' });
     },
@@ -163,10 +172,18 @@ export function db(): Promise<IDBPDatabase> {
     terminated() {
       handle = undefined;
     },
-  }).then((d) => {
-    notify('ready');
-    return d;
-  });
+  }).then(
+    (d) => {
+      clearTimeout(waiting);
+      notify('ready');
+      return d;
+    },
+    (err: unknown) => {
+      clearTimeout(waiting);
+      notify('failed');
+      throw err;
+    },
+  );
   return handle;
 }
 
