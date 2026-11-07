@@ -71,6 +71,11 @@
   cursor: pointer;
   font-weight: 400;
 }
+/* A checkbox in a tool form stays beside its label (.tool-form > label is a bold grid). */
+.tool-form > label.checkbox {
+  display: flex;
+  font-weight: 400;
+}
 .radio input,
 .checkbox input {
   /* WCAG 2.5.8: at least 24 px, also at the A- reading size */

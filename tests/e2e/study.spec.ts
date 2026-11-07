@@ -261,7 +261,10 @@ test('entity page lists possible exam questions that open onto the focus section
 test('oral simulator: three questions, prediction before self-assessment, calibration and history', async ({ page }) => {
   const foreign = guardRequests(page);
   await page.goto('en/study/oral/');
-  await page.getByRole('checkbox', { name: 'Use a timer for each question' }).check();
+  const timer = page.getByRole('checkbox', { name: 'Use a timer for each question' });
+  // The box sits beside its label, in regular weight (a tool-form label is otherwise a bold grid).
+  expect(await timer.evaluate((i) => [getComputedStyle(i.parentElement!).display, getComputedStyle(i.parentElement!).fontWeight])).toEqual(['flex', '400']);
+  await timer.check();
   await page.getByRole('button', { name: 'Start' }).click();
   await expect(page.getByRole('heading', { name: 'Question 1 of 3' })).toBeFocused();
   await expect(page.getByRole('timer')).toContainText('Time left: 4:5');
