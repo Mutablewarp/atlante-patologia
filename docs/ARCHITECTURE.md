@@ -109,6 +109,7 @@ Service-worker strategies:
 - App shell is precached.
 - Navigations are network-first with an offline fallback page.
 - Hashed `/_astro/*` assets are cache-first.
+- Study data (`/<lang>/data/*.json`) is network-first: packs hold it under the same names in every deploy, so it is served from a pack only offline.
 - Offline packs are cache-first, only when the pack is installed.
 
 The cache name includes the precache hash, so a new deploy replaces the shell atomically. Old caches are deleted on activate.
