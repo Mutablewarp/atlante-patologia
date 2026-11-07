@@ -1,0 +1,68 @@
+# License check (2026-11-04): same Commons file and article as autophagy-micro-6 (PLoS ONE 2020;15(11):e0241745,
+# CC BY 4.0, confirmed on the file page and in PMC7641434 / PubMed 33147279). This is the right micrograph of panel 2D,
+# from another biopsy (its printed specimen code differs; the code was covered). Group podocyte-autophagosomes-tem.
+# No sizes in the captions and no mpp: the printed 2 µm bars do not scale with the printed magnifications.
+id: autophagy-micro-7
+file: autophagy-micro-7.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Evidence_of_podocyte_autophagy_in_renal_biopsy_of_patients_with_FSGS_and_MCD.tiff
+author: "Crislaine Aparecida da Silva, Maria Luíza Gonçalves dos Reis Monteiro, Liliane Silvano Araújo, Monise Gini Urzedo, Lenaldo Branco Rocha, Marlene Antônia dos Reis, Juliana Reis Machado"
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-11-04
+modifications: >-
+  Cropped the right electron micrograph of panel D with its data strip (704 × 632 px) from the 2194 × 1571 px Commons
+  original (TIFF), without resampling; covered the specimen code printed in the data strip with a white box;
+  re-encoded as JPEG (quality 90, metadata stripped). The arrowhead belongs to the published figure; panels A–C and
+  the first micrograph of panel D are not shown here.
+attributionText: >-
+  Crislaine A. da Silva et al. (PLoS ONE 2020;15(11):e0241745, fig. 2D, cropped), via Wikimedia Commons, CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-04 }
+group: podocyte-autophagosomes-tem
+stain: transmission electron microscopy (TEM)
+magnification: "high power for electron microscopy (20000× printed on the micrograph)"
+lookFor:
+  it: "Segui la punta di freccia fino al piccolo sacco rotondo a doppio contorno dentro un pedicello."
+  en: "Follow the arrowhead to the small round sac with a double outline inside a foot process."
+caption:
+  it: >-
+    Lo stesso studio a ingrandimento maggiore (20000× come stampato sulla micrografia), su un'altra biopsia renale
+    umana. Trova la punta di freccia al centro: indica un piccolo sacco rotondo con un doppio contorno e un contenuto più
+    denso, che si trova dentro un pedicello, uno dei sottili prolungamenti con cui il podocita avvolge dall'esterno i
+    capillari glomerulari. Gli autori hanno contato strutture come questa come autofagosomi, cioè vescicole che
+    racchiudono citoplasma non ancora digerito, e contarle era uno dei due modi con cui lo studio misurava l'attività
+    autofagica (l'altro era l'immunoistochimica per LC3). Il doppio involucro di membrana è il segno distintivo dell'autofagosoma; a questa risoluzione si vede solo
+    come un doppio contorno. Confronta con la vista a ingrandimento minore della serie: il sacco è minuscolo rispetto
+    alla cellula, per cui nelle biopsie umane gli autofagosomi vanno cercati ad alto ingrandimento e non si vedono al
+    microscopio ottico di routine.
+  en: >-
+    The same study at higher magnification (20000× printed on the micrograph), from another human renal biopsy. Find
+    the arrowhead in the centre: it points to a small round sac with a double outline and denser contents, lying inside
+    a foot process (pedicel), one of the slender extensions with which the podocyte wraps the outside of the glomerular
+    capillaries. The authors counted structures like this one as autophagosomes, that is, vesicles that enclose
+    cytoplasm not yet digested, and counting them was one of the study's two measures of autophagic activity (the
+    other was immunostaining for LC3). A double
+    membrane envelope is the hallmark of an autophagosome; at this resolution it shows only as a double outline. Compare
+    with the lower-magnification view in this set: the sac is tiny compared with the cell, so in human biopsies
+    autophagosomes have to be searched for at high magnification and are not seen on routine light microscopy.
+alt:
+  it: >-
+    Micrografia elettronica in bianco e nero ad alto ingrandimento. Un'ampia fascia grigia di citoplasma attraversa
+    l'immagine in diagonale dal basso a sinistra all'alto a destra, con una sottile membrana ondulata lungo il lato
+    superiore; sopra di essa lo sfondo è chiaro. Sotto la fascia, prolungamenti grigi digitiformi stanno in uno spazio
+    chiaro. Al centro una punta di freccia nera indica, dentro uno di questi prolungamenti, un piccolo sacco rotondo a
+    doppio contorno con il centro più scuro. In basso una striscia di dati riporta Mag 20000 x, HV 50 kV e una barra di
+    scala di 2 µm; il codice del campione è coperto.
+  en: >-
+    Black-and-white electron micrograph at high magnification. A broad grey band of cytoplasm runs diagonally from lower
+    left to upper right, with a thin wavy membrane along its upper side; above it the background is pale. Below the
+    band, grey finger-like processes lie in a pale space. In the centre a black arrowhead points to a small round sac
+    with a double outline and a darker centre inside one of these processes. At the bottom a data strip reads Mag 20000
+    x, HV 50 kV, with a 2 µm scale bar; the specimen code is blanked out.
+annotations:
+  - id: autophagosome-foot-process
+    label: { it: Autofagosoma in un pedicello, en: Autophagosome in a foot process }
+    revealOrder: 1
+    shape: { type: circle, coords: [0.566, 0.559, 0.043] }

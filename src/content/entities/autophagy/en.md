@@ -61,11 +61,18 @@ Not applicable.
 
 ## Microscopic morphology
 
-Not applicable.
+- **Electron microscopy:** the autophagosome is a vacuole bounded by a double membrane that still holds recognizable cytoplasm, often whole organelles such as mitochondria or pieces of endoplasmic reticulum; after fusion with a lysosome it becomes an autolysosome, bounded by a single membrane, with contents at various stages of digestion.<!--c:autophagy-c068-->
+- **Light microscopy:** lipofuscin, seen as golden-brown cytoplasmic granules, is made of peroxidized lipids and oxidized proteins that the cell's disposal systems, autophagy included, cannot break down.<!--c:autophagy-c069--> It builds up mainly in long-lived cells such as neurons and cardiac myocytes, and in hepatocytes; it increases with age and is more evident in atrophic organs (see [[pigment-accumulation]]).<!--c:autophagy-c070-->
 
 ## Special stains, IHC and molecular findings
 
-Not applicable.
+**How it is studied:**
+
+- **No single test:** there is no gold-standard method for measuring autophagic activity, so several are combined; electron microscopy, the most traditional, identifies the vacuoles described under Microscopic morphology but does not show their lysosomal digestion directly.<!--c:autophagy-c071-->
+- **LC3:** this mammalian homologue of yeast Atg8 stays on the autophagosome membrane and is a widely used marker; immunofluorescence or immunohistochemistry shows autophagosomes as cytoplasmic dots (puncta), and immunoblotting measures LC3-II, its lipid-conjugated, membrane-bound form.<!--c:autophagy-c072-->
+- **p62 (SQSTM1):** it binds LC3 and is degraded by autophagy together with the cargo, so its level tends to fall when autophagy is active and to rise when autophagy is deficient.<!--c:autophagy-c073-->
+- **Reading the result:** more autophagosomes, more LC3-II or stronger LC3 staining can mean either more autophagy or a block in lysosomal degradation; measuring autophagic flux tells them apart, for example by comparing LC3-II with and without a lysosomal inhibitor such as chloroquine or bafilomycin A1.<!--c:autophagy-c074-->
+- **Molecular genetics:** genome-wide association studies have linked Crohn disease to variants of two autophagy genes, ATG16L1 and IRGM.<!--c:autophagy-c075-->
 
 ## Clinical presentation
 
@@ -106,6 +113,7 @@ Not applicable.
 - **Phagophore → autophagosome → fusion with lysosome**; **p62** links ubiquitinated cargo to the phagophore.<!--c:autophagy-c058-->
 - **Bcl-2** holds Beclin-1; **caspases** cleave it, linking autophagy to apoptosis.<!--c:autophagy-c059-->
 - Disease links: **cancer** (double-edged), **neurodegeneration**, **aging**, **infection**, **Crohn disease**, **cardiomyopathy**.<!--c:autophagy-c060-->
+- How it is studied: **electron microscopy** shows the **double-membrane autophagosome**; **LC3** marks autophagosomes; **p62** builds up when autophagy fails; counting autophagosomes does not measure **flux**.<!--c:autophagy-c077-->
 
 ## Common misconceptions and exam traps
 
@@ -114,6 +122,7 @@ Not applicable.
 - **"Autophagic cell death" is not proven as an independent killer;** its contribution apart from other forms of programmed death is unclear.<!--c:autophagy-c063-->
 - **Not always random:** starvation autophagy is largely bulk, but mitophagy, aggregate removal and CMA are highly selective.<!--c:autophagy-c064-->
 - **The proteasome cannot replace it:** aggregates and whole organelles are too large for the proteasome.<!--c:autophagy-c065-->
+- **More autophagic vacuoles do not mean more autophagy:** in some neurodegenerative and degenerative muscle diseases, a build-up of early autophagic structures was first read as excess autophagy, but it more likely reflects a block in the later steps of the pathway.<!--c:autophagy-c076-->
 
 ## Mnemonics
 

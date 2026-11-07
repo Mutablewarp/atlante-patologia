@@ -44,22 +44,30 @@ Atrophy is a reduction in the size of a cell or of an organ.<!--c:atrophy-c001--
 
 Many stimuli do not trigger atrophy directly; they switch off the opposing growth program, and the result depends on which side prevails.<!--c:atrophy-c033-->
 
-**Cell loss.** In the very old, when replacement by progenitor cells cannot keep pace with cell loss, the heart, skeletal muscle and brain become atrophic.<!--c:atrophy-c034-->
+**Cell loss.** In the very old, when replacement by progenitor cells cannot keep pace with cell loss, the heart, skeletal muscle and brain become atrophic.<!--c:atrophy-c034--> In organs that depend on hormones, apoptosis helps restore the cell balance when the stimulus fades, for example as the breast involutes after breastfeeding ends (see [[apoptosis]]).<!--c:atrophy-c070-->
 
 ## Gross morphology
 
-The affected organ or tissue is reduced in size.<!--c:atrophy-c035--> In an atrophic brain the gyri are thin and the sulci wide.<!--c:atrophy-c036--> The endometrium of an elderly woman is thin compared with that of reproductive age.<!--c:atrophy-c037-->
+The affected organ or tissue is reduced in size.<!--c:atrophy-c035--> In an atrophic brain the gyri are thin and the sulci wide.<!--c:atrophy-c036--> The ventricles enlarge to take up the space left by the lost tissue (hydrocephalus ex vacuo), a compensatory change rather than a disturbance of cerebrospinal fluid flow.<!--c:atrophy-c071--> The endometrium of an elderly woman is thin compared with that of reproductive age.<!--c:atrophy-c037-->
 
 ## Microscopic morphology
 
 - Cells are smaller than their normal counterparts, as seen in myocytes and adipocytes during starvation.<!--c:atrophy-c038-->
 - In denervated skeletal muscle, fibers lose cytoplasmic protein, so their nuclei appear relatively more prominent.<!--c:atrophy-c039-->
-- The atrophic postmenopausal endometrium contains only a few small glands, some of them cystic.<!--c:atrophy-c040-->
+- Cut across, a denervated fiber shrinks to a small angular profile wedged between normal fibers; such fibers are scattered at first, then gather in small and later larger groups.<!--c:atrophy-c072--> If reinnervation fails, the fibers eventually vanish and fat and fibrous tissue take their place.<!--c:atrophy-c073-->
+- The atrophic postmenopausal endometrium contains only a few small glands, some of them cystic.<!--c:atrophy-c040--> Its residual glands have a thin epithelial lining and lie in a fibrous, collagen-rich stroma; when the glands are cystically dilated, the picture is called senile cystic atrophy.<!--c:atrophy-c074-->
 - Lipofuscin, the golden-brown "wear-and-tear" pigment of long-lived cells such as neurons and cardiac myocytes, can be more conspicuous in atrophic organs.<!--c:atrophy-c041-->
 
 ## Special stains, IHC and molecular findings
 
-Not applicable.
+**How it is studied:**
+
+- **Specimen:** muscle atrophy is assessed on a biopsy of a moderately affected muscle, often the quadriceps or biceps (the gastrocnemius together with the sural nerve when a neuropathy is suspected), because a spared muscle may look normal and a very weak one may show only end-stage fibro-fatty tissue.<!--c:atrophy-c075-->
+- **Handling:** the sample is divided between formalin, unfixed freezing for enzyme histochemistry (it reveals enzyme activity, while immunohistochemistry only reveals that a protein is there) and glutaraldehyde for electron microscopy.<!--c:atrophy-c076-->
+- **H&E and myosin ATPase:** on H&E, selective atrophy of type II fibers produces angular fibers that mimic denervation; myosin ATPase (type I fibers pale, type II dark at alkaline pH) shows that in this pattern, seen with chronic disuse, corticosteroids, old age or cachexia, every angular fiber is type II.<!--c:atrophy-c077-->
+- **Nonspecific esterase and NADH-tetrazolium reductase (NADH-TR):** denervated atrophic fibers, of both types, take up these stains very darkly, unlike fibers shrunk by disuse or wasting.<!--c:atrophy-c078-->
+- **Fiber-type grouping:** on ATPase, patches of one fiber type lying beside patches of the other prove that denervation was followed by reinnervation; if denervation goes on, whole enlarged motor units atrophy together (grouped atrophy, typical of chronic denervating diseases such as ALS).<!--c:atrophy-c079-->
+- **Limits:** the biopsy shows that denervation is present and whether it is recent or chronic, but not its cause: amyotrophic lateral sclerosis and diabetic neuropathy can look alike.<!--c:atrophy-c080-->
 
 ## Clinical presentation
 
@@ -98,6 +106,7 @@ Not applicable.
 - **FOXO** raises **E3 ubiquitin ligases** and promotes atrophy; **IGF-1/Akt** restrains it.<!--c:atrophy-c059-->
 - Cell **shrinkage** is reversible; cell **loss** (e.g., Alzheimer brain) is not.<!--c:atrophy-c060-->
 - **Cachexia** and **sarcopenia** are the major clinical forms of muscle atrophy.<!--c:atrophy-c061-->
+- **Denervation atrophy**: small **angular** fibers of both types, dark with **nonspecific esterase/NADH-TR**; **fiber-type grouping** on ATPase = denervation followed by reinnervation.<!--c:atrophy-c081-->
 
 ## Common misconceptions and exam traps
 
@@ -107,6 +116,8 @@ Not applicable.
 - Atrophy is not always pathologic: the postmenopausal endometrium and the post-lactation breast are physiologic examples.<!--c:atrophy-c065-->
 - In adults, IGF-1 and Akt mainly prevent atrophy rather than directly cause growth.<!--c:atrophy-c066-->
 - Lipofuscin is not necessarily inert: it may both result from and add to oxidant stress in the cell.<!--c:atrophy-c067-->
+- Angular atrophic fibers on H&E do not prove denervation: selective type II atrophy (corticosteroids, disuse) looks the same until ATPase, esterase and NADH-TR are done.<!--c:atrophy-c082-->
+- A stroke or multiple sclerosis paralyses muscle through the upper motor neuron; the lower motor neuron is spared, so the muscle shows only diffuse, nonspecific shrinkage, not the denervation pattern.<!--c:atrophy-c083-->
 
 ## Mnemonics
 

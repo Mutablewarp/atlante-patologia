@@ -112,6 +112,31 @@ chain:
     lab:
       it: "Aggregati proteici intracellulari nei neuroni"
       en: "Intracellular protein aggregates in neurons"
+examQuestions:
+  - it: "Mi parli dell'autofagia: che cos'è, a che cosa serve e quali forme conosce?"
+    en: "Tell me about autophagy: what is it, what is it for, and which forms do you know?"
+    focus: [definition, etiology, pathogenesis]
+    level: 1
+  - it: "Come viene regolata l'autofagia? Che cosa cambia tra una cellula ben nutrita e una cellula a digiuno?"
+    en: "How is autophagy regulated? What changes between a well-fed cell and a starving one?"
+    focus: [pathogenesis]
+    level: 2
+  - it: "Che rapporti ci sono tra autofagia e apoptosi? L'autofagia può uccidere la cellula da sola?"
+    en: "How are autophagy and apoptosis connected? Can autophagy kill a cell on its own?"
+    focus: [pathogenesis, differential, traps]
+    level: 2
+  - it: "Come distingue il lavoro dell'autofagia da quello del sistema ubiquitina-proteasoma? E che fine fa un aggregato proteico?"
+    en: "How do you tell the work of autophagy apart from that of the ubiquitin–proteasome system? And what happens to a protein aggregate?"
+    focus: [pathogenesis, differential]
+    level: 3
+  - it: "Come si studia l'autofagia in un tessuto? Che cosa vede al microscopio elettronico, che cosa al microscopio ottico, per esempio in un organo atrofico, e quali marcatori userebbe?"
+    en: "How is autophagy studied in tissue? What do you see by electron microscopy, what under the light microscope, for example in an atrophic organ, and which markers would you use?"
+    focus: [micro, ancillary]
+    level: 3
+  - it: "In quali malattie entra in gioco l'autofagia? Perché nel cancro la si definisce un'arma a doppio taglio?"
+    en: "In which diseases does autophagy play a part? Why is it called a double-edged sword in cancer?"
+    focus: [clinical, traps]
+    level: 3
 images:
   - id: autophagy-micro-1
     role: micro
@@ -124,6 +149,10 @@ editionDependent: false
 sources:
   - source: rubin-8e
     chapter: "1"
-    pages: "13-19, 21, 24-25, 38, 44, 54"
-lastUpdated: 2026-11-03
+    pages: "5-6, 13-19, 21, 24-25, 38, 44, 54"
+  - source: rubin-8e
+    chapter: "19"
+    pages: "811"
+  - source: mizushima-2010
+lastUpdated: 2026-11-04
 status: published

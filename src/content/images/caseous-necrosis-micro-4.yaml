@@ -1,0 +1,91 @@
+# License check (2026-11-04): Commons file page {{Information}} gives Source {{own}}, Author User:Humpath, license
+# {{self|cc-by-sa-3.0}}; extmetadata LicenseShortName "CC BY-SA 3.0", AttributionRequired true. The uploader's user
+# page states that they are a pathologist, and the file is self-licensed own work. CC BY-SA is approved as a class by
+# owner decision O7 (plan/v2-plan.md, 2026-11-03), hence ownerApproved: true. Same description and same capture session
+# (2014-04-22 08:25:27 vs 08:25:34) as File:Tuberculoid_granuloma_humpath_2.png (caseous-necrosis-micro-3), so the two
+# share one group: same lesion at low and high power. The source description names epithelioid cells, Langhans
+# multinucleated giant cells and caseous necrosis at the upper right; it does not name the stain (H&E by appearance).
+# Facts checked against rubin-8e ch. 1 p. 40, ch. 2 p. 92 and ch. 9 p. 451.
+id: caseous-necrosis-micro-4
+file: caseous-necrosis-micro-4.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Tuberculoid_granuloma_humpath_1.png
+author: Humpath
+license: CC-BY-SA-3.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/3.0/
+retrievedAt: 2026-11-04
+modifications: >-
+  Converted the 971 × 788 px PNG original to JPEG (quality 85); the embedded display colour profile was converted to
+  sRGB and metadata stripped. No resize, no crop. This adaptation is shared under the same licence (CC BY-SA 3.0).
+attributionText: >-
+  Humpath, "Tuberculoid granuloma humpath 1", via Wikimedia Commons, CC BY-SA 3.0
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-04 }
+group: caseous-granuloma-lymph-node-humpath
+stain: "H&E (by appearance; the source does not name the stain)"
+magnification: "high power (the source does not state the objective)"
+orientation:
+  it: "La periferia del granuloma, con i linfociti, è a sinistra; il margine della necrosi caseosa è in alto a destra."
+  en: "The periphery of the granuloma, with the lymphocytes, is on the left; the edge of the caseous necrosis is at the upper right."
+lookFor:
+  it: "Da sinistra a destra: linfociti, istiociti epitelioidi con due cellule di Langhans, poi il margine della necrosi."
+  en: "Left to right: lymphocytes, epithelioid histiocytes with two Langhans cells, then the edge of the necrosis."
+caption:
+  it: >-
+    La stessa lesione del linfonodo a forte ingrandimento (la fonte non indica la colorazione; dall'aspetto è
+    un'ematossilina-eosina). Leggi il campo da sinistra a destra, cioè dalla periferia del granuloma verso la necrosi.
+    Lungo il margine sinistro c'è una fascia di piccoli linfociti, con nuclei tondi e scuri e pochissimo citoplasma. Al
+    centro dominano gli istiociti epitelioidi: nuclei ovali o allungati, chiari, e citoplasma rosa pallido dai limiti
+    sfumati, tanto che le cellule sembrano fondersi l'una nell'altra. Fra di essi ci sono due cellule giganti di
+    Langhans, grandi cellule con abbondante citoplasma rosa e molti nuclei allineati lungo il bordo a ferro di cavallo,
+    più evidente in quella in basso a destra. In alto a destra il tessuto si trasforma in un materiale rosa pallido,
+    finemente granulare, quasi senza nuclei: è il margine della necrosi caseosa. Perché conta: la necrosi caseosa si
+    riconosce dentro questa cornice di macrofagi epitelioidi, cellule giganti e linfociti; le cellule di Langhans
+    nascono dalla fusione di macrofagi attivati. Non confonderle con le cellule giganti da corpo estraneo, nelle quali i
+    nuclei sono sparsi in tutto il citoplasma, che spesso contiene il materiale estraneo.
+  en: >-
+    The same lymph node lesion at high power (the source does not name the stain; it looks like H&E). Read the field
+    from left to right, that is, from the periphery of the granuloma towards the necrosis. Along the left edge runs a
+    band of small lymphocytes, with round dark nuclei and very little cytoplasm. The centre is dominated by epithelioid
+    histiocytes: oval or elongated pale nuclei and pale pink cytoplasm with blurred borders, so that the cells seem to
+    merge into one another. Among them lie two Langhans giant cells, large cells with abundant pink cytoplasm and many
+    nuclei lined up along the edge in a horseshoe, clearest in the one at the lower right. At the upper right the tissue
+    turns into pale pink, finely granular material with hardly any nuclei: this is the edge of the caseous necrosis.
+    Why it matters: caseous necrosis is recognised within this frame of epithelioid macrophages, giant cells and
+    lymphocytes; Langhans cells arise from the fusion of activated macrophages. Do not confuse them with foreign-body
+    giant cells, whose nuclei are scattered throughout the cytoplasm, which often holds the foreign material.
+alt:
+  it: >-
+    Micrografia rosa a forte ingrandimento: a sinistra molti piccoli nuclei tondi e scuri; al centro cellule chiare con
+    nuclei ovali e due grandi cellule rosa con nuclei disposti lungo il bordo, una in alto a sinistra e una in basso a
+    destra; in alto a destra un'area rosa pallida e granulare quasi priva di nuclei.
+  en: >-
+    High-power pink micrograph: on the left many small round dark nuclei; in the centre pale cells with oval nuclei and
+    two large pink cells with nuclei along their edge, one at the upper left and one at the lower right; at the upper
+    right a pale pink granular area almost free of nuclei.
+annotations:
+  - id: caseous-edge
+    label: { it: "Margine della necrosi caseosa: rosa pallido, granulare, quasi senza nuclei", en: "Edge of the caseous necrosis: pale pink, granular, almost no nuclei" }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.7, 0.0, 1.0, 0.0, 1.0, 0.5, 0.92, 0.48, 0.84, 0.4, 0.78, 0.3, 0.74, 0.18]
+  - id: langhans-cell-horseshoe
+    label: { it: "Cellula gigante di Langhans: nuclei a ferro di cavallo lungo il bordo", en: "Langhans giant cell: horseshoe of nuclei along the edge" }
+    revealOrder: 2
+    shape: { type: circle, coords: [0.765, 0.85, 0.095] }
+  - id: langhans-cell-upper
+    label: { it: "Seconda cellula gigante di Langhans", en: "Second Langhans giant cell" }
+    revealOrder: 3
+    shape: { type: circle, coords: [0.36, 0.215, 0.09] }
+  - id: epithelioid-histiocytes
+    label: { it: "Istiociti epitelioidi: nuclei ovali chiari, limiti cellulari sfumati", en: "Epithelioid histiocytes: pale oval nuclei, blurred cell borders" }
+    revealOrder: 4
+    shape: { type: rect, coords: [0.4, 0.4, 0.25, 0.25] }
+  - id: lymphocytes
+    label: { it: "Linfociti: piccoli nuclei tondi e scuri", en: "Lymphocytes: small round dark nuclei" }
+    revealOrder: 5
+    shape:
+      type: polygon
+      coords: [0.0, 0.0, 0.17, 0.0, 0.2, 0.3, 0.19, 0.7, 0.22, 1.0, 0.0, 1.0]

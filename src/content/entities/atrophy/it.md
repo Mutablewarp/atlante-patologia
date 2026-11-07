@@ -1,6 +1,6 @@
 ---
 lang: it
-translatedFrom: 99cde6a07e7d27dc5073a1ff1064b50ce9a76cf94d2a6d369e5d80727056b72d
+translatedFrom: 4d95db53ceee5c938417fe3b6ab0661568968ba7b03afff5cbd1120aa905eb79
 ---
 
 ## Definizione ed epidemiologia
@@ -45,22 +45,30 @@ L'**atrofia patologica** ha diverse cause, molte delle quali sono l'immagine spe
 
 Molti stimoli non innescano direttamente l'atrofia, ma spengono il programma di crescita che vi si oppone; l'esito dipende da quale dei due versanti prevale.<!--c:atrophy-c033-->
 
-**Perdita di cellule.** Nei grandi anziani, quando la sostituzione da parte delle cellule progenitrici non riesce a tenere il passo con la perdita di cellule, il cuore, il muscolo scheletrico e il cervello si atrofizzano.<!--c:atrophy-c034-->
+**Perdita di cellule.** Nei grandi anziani, quando la sostituzione da parte delle cellule progenitrici non riesce a tenere il passo con la perdita di cellule, il cuore, il muscolo scheletrico e il cervello si atrofizzano.<!--c:atrophy-c034--> Negli organi che dipendono dagli ormoni, l'apoptosi contribuisce a ristabilire l'equilibrio cellulare quando lo stimolo si esaurisce, per esempio nell'involuzione della mammella al termine dell'allattamento (vedi [[apoptosis]]).<!--c:atrophy-c070-->
 
 ## Morfologia macroscopica
 
-L'organo o il tessuto colpito è ridotto di volume.<!--c:atrophy-c035--> Nel cervello atrofico le circonvoluzioni sono assottigliate e i solchi allargati.<!--c:atrophy-c036--> L'endometrio di una donna anziana è sottile rispetto a quello dell'età fertile.<!--c:atrophy-c037-->
+L'organo o il tessuto colpito è ridotto di volume.<!--c:atrophy-c035--> Nel cervello atrofico le circonvoluzioni sono assottigliate e i solchi allargati.<!--c:atrophy-c036--> I ventricoli si dilatano per occupare lo spazio lasciato dal tessuto perduto (idrocefalo ex vacuo): è un fenomeno compensatorio, non un disturbo della circolazione del liquor.<!--c:atrophy-c071--> L'endometrio di una donna anziana è sottile rispetto a quello dell'età fertile.<!--c:atrophy-c037-->
 
 ## Morfologia microscopica
 
 - Le cellule sono più piccole delle corrispondenti cellule normali, come si osserva nei miociti e negli adipociti durante il digiuno prolungato.<!--c:atrophy-c038-->
 - Nel muscolo scheletrico denervato le fibre perdono proteine citoplasmatiche, per cui i nuclei appaiono relativamente più evidenti.<!--c:atrophy-c039-->
-- L'endometrio atrofico postmenopausale contiene solo poche piccole ghiandole, alcune delle quali cistiche.<!--c:atrophy-c040-->
+- In sezione trasversale la fibra denervata si riduce a un piccolo profilo angolato, incuneato tra fibre normali; queste fibre sono dapprima sparse, poi si riuniscono in piccoli gruppi e più tardi in gruppi più ampi.<!--c:atrophy-c072--> Se la reinnervazione non avviene, le fibre finiscono per scomparire e al loro posto subentra tessuto adiposo e fibroso.<!--c:atrophy-c073-->
+- L'endometrio atrofico postmenopausale contiene solo poche piccole ghiandole, alcune delle quali cistiche.<!--c:atrophy-c040--> Le ghiandole residue hanno un rivestimento epiteliale sottile e sono immerse in uno stroma fibroso, ricco di collagene; quando le ghiandole sono dilatate in senso cistico, il quadro prende il nome di atrofia cistica senile.<!--c:atrophy-c074-->
 - La lipofuscina, il pigmento bruno-dorato «da usura» delle cellule longeve come neuroni e cardiomiociti, può essere più evidente negli organi atrofici.<!--c:atrophy-c041-->
 
 ## Colorazioni speciali, IIC e reperti molecolari
 
-Non applicabile.
+**Come si studia:**
+
+- **Campione:** l'atrofia muscolare si valuta su una biopsia di un muscolo colpito in misura moderata, spesso il quadricipite o il bicipite (il gastrocnemio insieme al nervo surale se si sospetta una neuropatia), perché un muscolo risparmiato può apparire normale e uno molto debole può mostrare solo tessuto fibroadiposo di fase terminale.<!--c:atrophy-c075-->
+- **Allestimento:** il prelievo si suddivide tra formalina, congelamento a fresco senza fissazione per le reazioni istoenzimatiche (che rivelano l'attività di un enzima, mentre l'immunoistochimica rivela soltanto la presenza di una proteina) e glutaraldeide per la microscopia elettronica.<!--c:atrophy-c076-->
+- **Ematossilina-eosina e ATPasi miosinica:** all'ematossilina-eosina l'atrofia selettiva delle fibre di tipo II produce fibre angolate che simulano una denervazione; l'ATPasi miosinica (fibre di tipo I chiare, di tipo II scure a pH alcalino) dimostra che in questo quadro, che si osserva nel disuso cronico, nella terapia cortisonica, nell'anziano e nella cachessia, tutte le fibre angolate sono di tipo II.<!--c:atrophy-c077-->
+- **Esterasi non specifica e NADH-tetrazolio reduttasi (NADH-TR):** le fibre atrofiche denervate, di entrambi i tipi, si colorano in modo molto intenso, a differenza delle fibre ridotte di volume da disuso o da deperimento.<!--c:atrophy-c078-->
+- **Raggruppamento per tipo di fibra (*fiber type grouping*):** all'ATPasi, aree di fibre di un tipo accostate ad aree dell'altro tipo dimostrano che alla denervazione è seguita una reinnervazione; se la denervazione prosegue, intere unità motorie ingrandite si atrofizzano insieme (atrofia a gruppi, tipica delle malattie denervanti croniche come la SLA).<!--c:atrophy-c079-->
+- **Limiti:** la biopsia dimostra che c'è una denervazione e se è recente o cronica, ma non ne indica la causa: la sclerosi laterale amiotrofica e la neuropatia diabetica possono avere lo stesso aspetto.<!--c:atrophy-c080-->
 
 ## Presentazione clinica
 
@@ -99,6 +107,7 @@ Non applicabile.
 - **FOXO** aumenta le **ubiquitina-ligasi E3** e promuove l'atrofia; **IGF-1/Akt** la frena.<!--c:atrophy-c059-->
 - La **riduzione di volume** delle cellule è reversibile; la **perdita** di cellule (per es. il cervello nella malattia di Alzheimer) no.<!--c:atrophy-c060-->
 - **Cachessia** e **sarcopenia** sono le principali forme cliniche di atrofia muscolare.<!--c:atrophy-c061-->
+- **Atrofia da denervazione**: piccole fibre **angolate** di entrambi i tipi, scure con **esterasi non specifica/NADH-TR**; il **raggruppamento per tipo di fibra** all'ATPasi = denervazione seguita da reinnervazione.<!--c:atrophy-c081-->
 
 ## Errori comuni e trappole d'esame
 
@@ -108,6 +117,8 @@ Non applicabile.
 - L'atrofia non è sempre patologica: l'endometrio dopo la menopausa e la mammella dopo l'allattamento ne sono esempi fisiologici.<!--c:atrophy-c065-->
 - Nell'adulto IGF-1 e Akt agiscono soprattutto prevenendo l'atrofia, più che provocando direttamente la crescita.<!--c:atrophy-c066-->
 - La lipofuscina non è necessariamente inerte: può derivare dallo stress ossidativo della cellula e, a sua volta, aggravarlo.<!--c:atrophy-c067-->
+- Fibre atrofiche angolate all'ematossilina-eosina non dimostrano una denervazione: l'atrofia selettiva delle fibre di tipo II (cortisonici, disuso) ha lo stesso aspetto finché non si eseguono ATPasi, esterasi e NADH-TR.<!--c:atrophy-c082-->
+- L'ictus o la sclerosi multipla paralizzano il muscolo attraverso il primo motoneurone; il secondo motoneurone resta integro, per cui il muscolo mostra solo una riduzione di volume diffusa e aspecifica, non il quadro della denervazione.<!--c:atrophy-c083-->
 
 ## Mnemotecniche
 

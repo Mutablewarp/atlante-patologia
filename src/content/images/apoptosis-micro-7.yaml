@@ -1,0 +1,90 @@
+# License check (2026-11-04): taken from the article itself, not from Wikimedia Commons. Europe PMC full text
+# (PMC10670237, PMID 37998541) carries the licence "https://creativecommons.org/licenses/by/4.0/" ("Licensee MDPI ...
+# distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license"), © 2023 by the
+# authors. The Figure 1 legend has no "reproduced" or "with permission" note: the micrographs are the authors' own case
+# material. Allowed under COMPLIANCE_PLAN §4 (PubMed Central figure in an article with an explicit CC BY licence).
+# Panels (a) and (b) are clinical photographs and were NOT used; panel (d) is immunohistochemistry only and shows
+# nothing that identifies the patient. Methods as stated in the article: immunoperoxidase with diaminobenzidine (brown),
+# rabbit polyclonal antibody to cleaved caspase-3. Panel (c), the H&E of the same biopsy, is apoptosis-micro-6.
+id: apoptosis-micro-7
+file: apoptosis-micro-7.jpg
+kind: micro
+sourceUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC10670237/figure/diagnostics-13-03405-f001/
+author: Mitsuhiro Tachibana, Hideki Hamayasu, Kazuki Tomita, Yuta Kage
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-11-04
+modifications: >-
+  Cropped to panel (d) of Figure 1 from the publisher's 1415 × 996 px PNG
+  (https://mdpi-res.com/diagnostics/diagnostics-13-03405/article_deploy/html/images/diagnostics-13-03405-g001.png):
+  pixels x 706–1401, y 541–984, giving 696 × 444 px; the crop leaves out the panel letter, a strip of empty slide
+  background at the top and panels (a), (b) and (c). Saved as JPEG; no resize, no colour change. The negative-control
+  inset belongs to the published figure.
+attributionText: >-
+  Mitsuhiro Tachibana, Hideki Hamayasu, Kazuki Tomita, Yuta Kage, "Individual Keratinocyte Necroses in the Epidermis
+  Are Apoptotic Keratinocytes in the Skin", Diagnostics 2023;13(22):3405, doi:10.3390/diagnostics13223405, Figure 1d
+  (cropped), CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-04 }
+group: apoptosis-sjs-skin
+stain: cleaved-caspase-3 immunohistochemistry (immunoperoxidase, DAB)
+magnification: medium power (original magnification ×200)
+orientation:
+  it: "Superficie cutanea in alto, derma superficiale in basso; il riquadro in basso a destra è il controllo negativo."
+  en: "Skin surface at the top, superficial dermis at the bottom; the inset at lower right is the negative control."
+lookFor:
+  it: "Confronta la distribuzione delle cellule brune nell'epidermide con quella dei cheratinociti rosa e vitrei dell'immagine in EE, poi verifica che il riquadro del controllo negativo non abbia colore bruno."
+  en: "Compare where the brown cells lie in the epidermis with the glassy pink keratinocytes of the H&E view, then check that the negative-control inset has no brown."
+caption:
+  it: >-
+    La stessa biopsia di sindrome di Stevens-Johnson in immunoistochimica per la caspasi-3 clivata, ×200; il riquadro in
+    basso a destra è il controllo negativo e fa parte della figura pubblicata. La maggior parte dei nuclei è blu
+    (colorazione di contrasto) e negativa. I depositi bruni e granulari segnano le cellule che contengono la forma
+    clivata, cioè attiva, della caspasi-3, la principale caspasi effettrice: si trovano isolati o in piccoli gruppi
+    dentro l'epidermide, nelle stesse zone dei cheratinociti rosa e vitrei dell'immagine in EE, mentre il derma
+    sottostante è quasi del tutto negativo. Nel controllo negativo il tessuto resta blu, quindi il segnale bruno non è
+    un artefatto di fondo. Perché questa colorazione conta: la procaspasi-3 è presente anche nelle cellule vive, ma
+    l'anticorpo riconosce solo la forma tagliata che compare quando la cascata delle caspasi si è attivata, per cui una
+    cellula positiva è una cellula ormai avviata all'apoptosi. Da ricordare per l'esame: l'EE fa sospettare l'apoptosi
+    dalla morfologia, l'immunoistochimica per la caspasi-3 clivata (o il TUNEL) la dimostra sul piano biochimico nella
+    sezione. Gli autori dell'articolo l'hanno usata proprio per sostenere che i cosiddetti cheratinociti «necrotici»
+    della sindrome di Stevens-Johnson sono in realtà apoptotici.
+  en: >-
+    The same Stevens–Johnson biopsy stained by immunohistochemistry for cleaved caspase-3, ×200; the inset at lower
+    right is the negative control and belongs to the published figure. Most nuclei are blue (counterstain) and
+    negative. The brown granular deposits mark cells that contain the cleaved, active form of caspase-3, the main
+    executioner caspase: they lie singly or in small clusters within the epidermis, in the same zones as the glassy pink
+    keratinocytes of the H&E view, while the dermis below is almost entirely negative. In the negative control the
+    tissue stays blue, so the brown signal is not background artefact. Why this stain matters: procaspase-3 is present
+    in living cells too, but the antibody recognises only the cut form that appears once the caspase cascade has been
+    switched on, so a positive cell is a cell already committed to apoptosis. Key point for the exam: H&E suggests
+    apoptosis from morphology, while immunohistochemistry for cleaved caspase-3 (or TUNEL) demonstrates it
+    biochemically in the section. The article's authors used it precisely to argue that the so-called "necrotic"
+    keratinocytes of Stevens–Johnson syndrome are in fact apoptotic.
+alt:
+  it: >-
+    Immunoistochimica di cute per la caspasi-3 clivata: epidermide e derma pallidi con nuclei blu, depositi bruni e
+    granulari in singole cellule e piccoli gruppi sparsi nell'epidermide e, in basso a destra, un riquadro con un campo
+    simile in cui compaiono solo nuclei blu.
+  en: >-
+    Immunohistochemistry of skin for cleaved caspase-3: pale epidermis and dermis with blue nuclei, brown granular
+    deposits in scattered single cells and small clusters within the epidermis, and an inset at lower right showing a
+    similar field with blue nuclei only.
+annotations:
+  - id: positive-cluster
+    label: { it: Gruppo di cheratinociti positivi per la caspasi-3 clivata, en: Cluster of cleaved caspase-3-positive keratinocytes }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.46, 0.25, 0.575, 0.25, 0.575, 0.50, 0.46, 0.50] }
+  - id: positive-upper-epidermis
+    label: { it: Cellule positive nell'epidermide superficiale, en: Positive cells in the upper epidermis }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.67, 0.11, 0.81, 0.11, 0.81, 0.22, 0.67, 0.22] }
+  - id: positive-lower-epidermis
+    label: { it: Cellule positive nella parte bassa dell'epidermide, en: Positive cells in the lower epidermis }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.89, 0.30, 0.98, 0.30, 0.98, 0.47, 0.89, 0.47] }
+  - id: negative-control
+    label: { it: "Controllo negativo (riquadro): nessun segnale bruno", en: "Negative control (inset): no brown signal" }
+    revealOrder: 4
+    shape: { type: polygon, coords: [0.629, 0.585, 1.0, 0.585, 1.0, 1.0, 0.629, 1.0] }

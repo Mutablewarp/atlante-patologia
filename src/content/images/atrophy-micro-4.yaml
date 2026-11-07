@@ -1,0 +1,82 @@
+# License check (2026-11-04): Commons file page {{Information}} gives Source {{own}}, Author User:Nephron, license
+# {{self|cc-by-sa-3.0|GFDL}}; extmetadata LicenseShortName "CC BY-SA 3.0", AttributionRequired true, no Restrictions.
+# CC BY-SA is approved as a class by owner decision O7 (plan/v2-plan.md, 2026-11-03), hence ownerApproved: true.
+# Same biopsy and upload set as atrophy-micro-3 and atrophy-micro-5 (group atrophy-denervation-muscle).
+# section: frozen because myofibrillar ATPase is an enzyme histochemical reaction run on unfixed frozen sections
+# (rubin-8e ch. 31, p. 1411); the source page itself does not state the section type.
+id: atrophy-micro-4
+file: atrophy-micro-4.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Denervation_atrophy_-_atp94_-_intermed_mag.jpg
+author: Nephron
+license: CC-BY-SA-3.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/3.0/
+retrievedAt: 2026-11-04
+modifications: >-
+  Downloaded the 1920 × 1280 px Commons rendition of the 4272 × 2848 px original; downscaled to 1600 × 1067 px and
+  re-encoded as JPEG (quality 82, metadata stripped). No crop, no colour change. This adaptation is shared under the
+  same licence (CC BY-SA 3.0).
+attributionText: >-
+  Nephron, "Denervation atrophy - atp94 - intermed mag", via Wikimedia Commons, CC BY-SA 3.0
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-04 }
+group: atrophy-denervation-muscle
+stain: "ATPase pH 9.4 (myofibrillar ATPase enzyme histochemistry)"
+magnification: "intermediate power (the source: intermediate magnification)"
+section: frozen
+orientation:
+  it: "Sezione trasversale al criostato: le fibre sono tagliate di traverso; le fasce bianche sono setti di connettivo."
+  en: "Transverse cryostat section: the fibres are cut across; the white bands are connective-tissue septa."
+lookFor:
+  it: "Scuro = tipo II, chiaro = tipo I. Trova le fibre scure piccole, poi osserva come quelle grandi e chiare si raggruppano."
+  en: "Dark = type II, pale = type I. Find the small dark fibres, then notice how the large pale ones cluster together."
+caption:
+  it: >-
+    La stessa biopsia con atrofia da denervazione, colorata per l'ATPasi miofibrillare a pH 9,4, una reazione
+    enzimatica che si esegue su sezioni congelate non fissate, a medio ingrandimento. A questo pH le fibre di tipo I
+    (lente) restano chiare e quelle di tipo II (rapide) diventano bruno-nere, per cui ogni fibra viene assegnata al suo
+    tipo. Nel muscolo normale i due tipi sono mescolati a caso, a mosaico, e hanno calibro simile. Qui lo schema è
+    alterato in due modi. Primo, le fibre scure sono per lo più piccole, schiacciate fra le grandi fibre chiare in file
+    e piccoli gruppi: è l'atrofia a gruppi (group atrophy), il segno di fibre che hanno perso l'innervazione; la fonte
+    precisa che in questa biopsia l'atrofia colpisce le fibre di tipo II. Secondo, le grandi fibre chiare stanno una
+    accanto all'altra in ampie zone invece di alternarsi a quelle scure: è il raggruppamento per tipo di fibra (fiber
+    type grouping), che compare quando gli assoni superstiti emettono nuove terminazioni e reinnervano le fibre rimaste
+    senza nervo, imponendo loro il proprio tipo. Alcune fibre scure hanno invece un calibro normale o anche maggiore: il
+    colore scuro indica il tipo di fibra, non l'atrofia. Attenzione: fibre di tipo II piccole e sparse, senza
+    raggruppamento, sono il quadro dell'atrofia da disuso, della terapia cortisonica cronica, della cachessia o
+    dell'invecchiamento, non della denervazione.
+  en: >-
+    The same denervation-atrophy biopsy stained for myofibrillar ATPase at pH 9.4, an enzyme reaction performed on
+    unfixed frozen sections, intermediate power. At this pH type I (slow) fibres stay pale and type II (fast) fibres
+    turn brown-black, so every fibre is sorted by type. In normal muscle the two types are mixed at random, like a
+    mosaic, and have similar sizes. Here the pattern is altered in two ways. First, the dark fibres are mostly small,
+    squeezed between the large pale fibres in rows and small clusters: this is group atrophy, the sign of fibres that
+    have lost their nerve supply; the source states that in this biopsy the atrophy affects the type II fibres. Second,
+    the large pale fibres lie next to one another in wide fields instead of alternating with dark ones: this is fibre
+    type grouping, which appears when surviving axons sprout new endings and reinnervate fibres left without a nerve,
+    imposing their own type on them. Some dark fibres, by contrast, have a normal or even larger size: the dark colour
+    marks the fibre type, not atrophy. Pitfall: small type II fibres scattered without any grouping are the pattern of
+    disuse, long-term corticosteroid therapy, cachexia or ageing, not of denervation.
+alt:
+  it: >-
+    Micrografia in bianco, grigio e nero di muscolo tagliato di traverso: grandi fibre poligonali grigio chiaro
+    accostate fra loro, con numerose piccole fibre nere disposte in file e gruppi negli spazi intermedi, alcune fibre
+    nere più grandi e tonde, e setti bianchi di tessuto connettivo che attraversano il campo.
+  en: >-
+    Black, grey and white micrograph of muscle cut across: large pale grey polygonal fibres packed side by side, with
+    many small black fibres in rows and clusters between them, a few larger round black fibres, and white
+    connective-tissue septa crossing the field.
+annotations:
+  - id: small-type2-cluster
+    label: { it: "Gruppo di piccole fibre scure di tipo II (atrofia a gruppi)", en: "Cluster of small dark type II fibres (group atrophy)" }
+    revealOrder: 1
+    shape: { type: rect, coords: [0.425, 0.805, 0.055, 0.08] }
+  - id: pale-type1-group
+    label: { it: "Grandi fibre chiare di tipo I accostate fra loro", en: "Large pale type I fibres lying side by side" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.425, 0.31, 0.468, 0.31, 0.47, 0.40, 0.405, 0.40, 0.405, 0.35, 0.425, 0.335] }
+  - id: normal-size-type2
+    label: { it: "Fibra scura di calibro normale: scuro indica il tipo II, non l'atrofia", en: "Dark fibre of normal size: dark means type II, not atrophy" }
+    revealOrder: 3
+    shape: { type: circle, coords: [0.373, 0.288, 0.025] }

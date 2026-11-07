@@ -1,0 +1,95 @@
+# License check (2026-11-04): Commons file page {{Information}} gives Source {{own}}, Author User:Humpath, license
+# {{self|cc-by-sa-3.0}}; extmetadata LicenseShortName "CC BY-SA 3.0", AttributionRequired true. The uploader's user
+# page states that they are a pathologist, and the file is self-licensed own work. CC BY-SA is approved as a class by
+# owner decision O7 (plan/v2-plan.md, 2026-11-03), hence ownerApproved: true. Same description and same capture session
+# (2014-04-22 08:25:34 vs 08:25:27) as File:Tuberculoid_granuloma_humpath_1.png (caseous-necrosis-micro-4), so the two
+# share one group: same lesion at low and high power. The source names the organ only through its category
+# ("Histopathology of lymph nodes", "Histopathology of tuberculosis") and does not name the stain; the H&E stain is read
+# from the appearance. Facts checked against rubin-8e ch. 1 p. 40 and ch. 2 p. 92.
+id: caseous-necrosis-micro-3
+file: caseous-necrosis-micro-3.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Tuberculoid_granuloma_humpath_2.png
+author: Humpath
+license: CC-BY-SA-3.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/3.0/
+retrievedAt: 2026-11-04
+modifications: >-
+  Converted the 1165 × 829 px PNG original to JPEG (quality 85); the embedded display colour profile was converted to
+  sRGB and metadata stripped. No resize, no crop. This adaptation is shared under the same licence (CC BY-SA 3.0).
+attributionText: >-
+  Humpath, "Tuberculoid granuloma humpath 2", via Wikimedia Commons, CC BY-SA 3.0
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-04 }
+group: caseous-granuloma-lymph-node-humpath
+stain: "H&E (by appearance; the source does not name the stain)"
+magnification: "low power (the source does not state the objective)"
+orientation:
+  it: "La necrosi caseosa occupa la parte in alto a destra; il tessuto granulomatoso vivo sta in basso e a sinistra."
+  en: "The caseous necrosis fills the upper right; the living granulomatous tissue lies below and to the left."
+lookFor:
+  it: "Trova il confine obliquo fra la necrosi rosa senza struttura e il tessuto ricco di cellule con le cellule giganti."
+  en: "Find the oblique border between the structureless pink necrosis and the cellular tissue with the giant cells."
+caption:
+  it: >-
+    Granuloma di tipo tubercolare con necrosi caseosa in un linfonodo, piccolo ingrandimento (la fonte non indica la
+    colorazione; dall'aspetto è un'ematossilina-eosina). Parti dal quadro d'insieme: un confine obliquo divide il campo
+    in due. In alto a destra c'è un'ampia area di necrosi caseosa: rosa, omogenea, senza nessuna struttura
+    riconoscibile, con una sfumatura violacea e granulare nella parte più lontana dal bordo, dove si accumulano i
+    frammenti dei nuclei (polvere nucleare). In basso e a sinistra c'è il tessuto vivo del granuloma, fitto di istiociti
+    epitelioidi chiari e di piccoli linfociti scuri, nel quale spiccano diverse cellule giganti multinucleate, rotonde o
+    ovali, con il citoplasma rosa e i nuclei raccolti alla periferia. Lungo il confine il tessuto diventa via via più
+    pallido e più povero di nuclei, con cellule allungate disposte parallelamente al bordo: è il fronte su cui la
+    necrosi avanza. Il punto chiave: dentro l'area caseosa non si riconoscono né i contorni delle cellule morte né
+    l'architettura del linfonodo, mentre in un infarto (necrosi coagulativa) le sagome delle cellule resterebbero
+    visibili, e un ascesso (necrosi colliquativa) avrebbe un centro fluido, pieno di granulociti neutrofili. Usa il
+    selettore per passare al forte ingrandimento della stessa lesione.
+  en: >-
+    Tuberculosis-type granuloma with caseous necrosis in a lymph node, low power (the source does not name the stain; it
+    looks like H&E). Start with the overview: an oblique border divides the field in two. In the upper right lies a wide
+    area of caseous necrosis: pink, homogeneous, with no recognisable structure, and with a granular purple tinge in the
+    part farthest from the border, where fragments of nuclei pile up (nuclear dust). Below and to the left lies the
+    living tissue of the granuloma, crowded with pale epithelioid histiocytes and small dark lymphocytes, among which
+    several multinucleated giant cells stand out, round or oval, with pink cytoplasm and nuclei gathered at the
+    periphery. Along the border the tissue becomes paler and poorer in nuclei, with elongated cells lined up parallel to
+    the edge: this is the front along which the necrosis advances. The key point: inside the caseous area neither the
+    outlines of the dead cells nor the architecture of the node can be recognised, whereas in an infarct (coagulative
+    necrosis) the cell outlines would still be visible, and an abscess (liquefactive necrosis) would have a fluid centre
+    packed with neutrophils. Use the switch to move to high power of the same lesion.
+alt:
+  it: >-
+    Micrografia rosa e viola: in alto a destra un'ampia area rosa omogenea senza cellule riconoscibili, con una
+    sfumatura violacea; in basso e a sinistra tessuto fitto di piccoli nuclei scuri con diverse grandi cellule rosa
+    multinucleate, rotonde o ovali.
+  en: >-
+    Pink and purple micrograph: in the upper right a wide homogeneous pink area with no recognisable cells and a purple
+    tinge; below and to the left, tissue crowded with small dark nuclei and several large, round or oval, pink
+    multinucleated cells.
+annotations:
+  - id: caseous-necrosis-area
+    label: { it: "Necrosi caseosa: rosa, amorfa, senza contorni cellulari", en: "Caseous necrosis: pink, amorphous, no cell outlines" }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.42, 0.0, 1.0, 0.0, 1.0, 0.58, 0.9, 0.57, 0.78, 0.52, 0.65, 0.47, 0.55, 0.42, 0.48, 0.35, 0.44, 0.22]
+  - id: nuclear-dust
+    label: { it: "Sfumatura violacea: polvere nucleare nella necrosi", en: "Purple tinge: nuclear dust within the necrosis" }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.62, 0.05, 0.98, 0.05, 0.98, 0.42, 0.8, 0.44, 0.66, 0.36, 0.6, 0.2]
+  - id: cellular-zone
+    label: { it: "Tessuto granulomatoso vivo: istiociti epitelioidi e linfociti", en: "Living granulomatous tissue: epithelioid histiocytes and lymphocytes" }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.0, 0.0, 0.36, 0.0, 0.38, 0.25, 0.33, 0.45, 0.25, 0.6, 0.12, 0.68, 0.0, 0.7]
+  - id: giant-cell-large
+    label: { it: "Cellula gigante multinucleata", en: "Multinucleated giant cell" }
+    revealOrder: 4
+    shape: { type: circle, coords: [0.243, 0.91, 0.035] }
+  - id: giant-cell-round
+    label: { it: "Cellula gigante multinucleata con i nuclei alla periferia", en: "Multinucleated giant cell with peripheral nuclei" }
+    revealOrder: 5
+    shape: { type: circle, coords: [0.165, 0.745, 0.022] }

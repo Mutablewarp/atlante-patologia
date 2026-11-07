@@ -31,6 +31,8 @@ learningObjectives:
     en: "List causes of caseous necrosis other than tuberculosis, especially histoplasmosis and coccidioidomycosis, and the stains used to identify them."
   - it: "Discutere l'evoluzione dei focolai caseosi: guarigione con fibrosi e calcificazione, oppure erosione bronchiale con cavitazione e diffusione."
     en: "Discuss the fate of caseous foci: healing with fibrosis and calcification, or bronchial erosion with cavitation and spread."
+  - it: "Descrivere come si studia un granuloma caseoso: scelta e gestione del prelievo, colorazione di Ziehl-Neelsen e colorazioni per i funghi, esame colturale e PCR, con i limiti di ciascuno."
+    en: "Describe how a caseating granuloma is worked up: choice and handling of the specimen, Ziehl–Neelsen and fungal stains, culture and PCR, and the limits of each."
 prerequisites: []
 relations:
   - type: differentialOf
@@ -107,6 +109,31 @@ chain:
     lab:
       it: "Biopsia: granuloma con necrosi caseosa, macrofagi e cellule giganti di Langhans"
       en: "Biopsy: granuloma with caseous necrosis, macrophages and Langhans giant cells"
+examQuestions:
+  - it: "Mi parli della necrosi caseosa: che cos'è, da dove prende il nome e in quale malattia è tipica?"
+    en: "Tell me about caseous necrosis: what is it, where does its name come from, and which disease is it typical of?"
+    focus: [definition, gross]
+    level: 1
+  - it: "Che cosa vede al microscopio in un granuloma tubercolare con necrosi caseosa? Come riconosce una cellula gigante di Langhans?"
+    en: "What do you see under the microscope in a tuberculous granuloma with caseous necrosis? How do you recognize a Langhans giant cell?"
+    focus: [micro]
+    level: 1
+  - it: "Perché nella tubercolosi si forma la necrosi caseosa? Mi spieghi il ruolo dei macrofagi, dei linfociti T e dell'IFN-γ."
+    en: "Why does caseous necrosis develop in tuberculosis? Explain the roles of macrophages, T cells and IFN-γ."
+    focus: [pathogenesis]
+    level: 2
+  - it: "Come evolve un focolaio caseoso nel polmone? Mi descriva il complesso primario di Ghon, la guarigione con calcificazione e la formazione della caverna."
+    en: "How does a caseous focus in the lung evolve? Describe the Ghon complex, healing with calcification and the formation of a cavity."
+    focus: [gross, prognosis]
+    level: 2
+  - it: "In una biopsia linfonodale trova granulomi con necrosi caseosa: come arriva alla causa? Quali colorazioni e quali altri esami richiederebbe?"
+    en: "A lymph node biopsy shows granulomas with caseous necrosis: how do you reach the cause? Which stains and which other tests would you ask for?"
+    focus: [ancillary, diagnosis]
+    level: 3
+  - it: "Come distingue la necrosi caseosa dalla necrosi coagulativa e da quella colliquativa? E un granuloma caseoso da un granuloma non necrotizzante, come quello della sarcoidosi?"
+    en: "How do you tell caseous necrosis from coagulative and liquefactive necrosis? And a caseating granuloma from a nonnecrotizing one, such as the sarcoid granuloma?"
+    focus: [definition, pathogenesis, differential]
+    level: 3
 images:
   - id: caseous-necrosis-gross-1
     role: gross
@@ -126,7 +153,7 @@ sources:
     pages: "92"
   - source: rubin-8e
     chapter: "9"
-    pages: "450-452, 461-463"
+    pages: "449-452, 461-463"
   - source: rubin-8e
     chapter: "18"
     pages: "707-709, 735, 738"
@@ -140,10 +167,15 @@ sources:
     chapter: "24"
     pages: "1020"
   - source: rubin-8e
+    chapter: "26"
+    pages: "1162"
+  - source: rubin-8e
     chapter: "30"
     pages: "1352"
   - source: rubin-8e
     chapter: "32"
-    pages: "1468"
-lastUpdated: 2026-11-03
+    pages: "1468-1469"
+  - source: stellmacher-2021
+  - source: lewinsohn-2017
+lastUpdated: 2026-11-04
 status: published

@@ -146,12 +146,12 @@ claims:
     date: 2026-11-03
   - claimId: coagulative-necrosis-c019
     section: gross
-    statement: "Red infarcts contain coagulative necrosis plus blood from adjacent vessels; they can follow arterial or venous occlusion and arise in organs with dual supply or abundant collaterals and in reperfused myocardium."
+    statement: "Red infarcts contain coagulative necrosis plus blood from adjacent vessels; they can follow arterial or venous occlusion and arise in organs with dual supply (the lung) or abundant collaterals (the small intestine) and in reperfused myocardium."
     sourceRef: { source: rubin-8e, chapter: "7", pages: "337" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "author-agent v22/coagulative-necrosis"
+    date: 2026-11-04
   - claimId: coagulative-necrosis-c020
     section: gross
     statement: "Dry gangrene of a limb after arterial occlusion is essentially a large pale infarct."
@@ -528,3 +528,91 @@ claims:
     verifiedBy: agent
     verifier: "fixer-agent"
     date: 2026-11-03
+  - claimId: coagulative-necrosis-c067
+    section: prognosis
+    statement: "Free-wall rupture, a complication of transmural infarcts, is most frequent at days 2-7, when the necrotic wall is softest because proteases of inflammatory cells have degraded its matrix before new matrix is laid down; it usually ends in hemopericardium and fatal tamponade."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "660-661" }
+    status: verified
+    verifiedBy: agent
+    verifier: "author-agent v22/coagulative-necrosis"
+    date: 2026-11-04
+  - claimId: coagulative-necrosis-c068
+    section: diagnosis
+    statement: "Cardiac troponin I or T, highly specific for heart muscle, is the most widely measured marker; diagnosing infarction requires its blood level to rise and/or fall in a time frame matching the clinical event."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "660" }
+    status: verified
+    verifiedBy: agent
+    verifier: "author-agent v22/coagulative-necrosis"
+    date: 2026-11-04
+  - claimId: coagulative-necrosis-c069
+    section: differential
+    statement: "When flow returns to an evolving infarct, the infarct is hemorrhagic, neutrophils infiltrate all of it rather than only its periphery, and contraction band necrosis (thick irregular transverse bands of hypercontracted sarcomeres) is characteristic; with persistent occlusion contraction bands may be limited to the margins."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "659-660" }
+    status: verified
+    verifiedBy: agent
+    verifier: "author-agent v22/coagulative-necrosis"
+    date: 2026-11-04
+  - claimId: coagulative-necrosis-c070
+    section: ancillary
+    statement: "Up to one third of nonfatal Q-wave myocardial infarcts cause no symptoms and are detected only later, by ECG or at autopsy."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "660" }
+    status: verified
+    verifiedBy: agent
+    verifier: "author-agent v22/coagulative-necrosis"
+    date: 2026-11-04
+  - claimId: coagulative-necrosis-c071
+    section: ancillary
+    statement: "A transmural infarct maps onto the occluded artery: left anterior descending to the anterior wall, apex and anterior septum; proximal right coronary to the posterior basal left ventricle and posterior septum (inferior infarct); circumflex to the lateral wall. Textbook figures show infarcts on transverse slices of the ventricles."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "656-657" }
+    status: verified
+    verifiedBy: agent
+    verifier: "author-agent v22/coagulative-necrosis"
+    date: 2026-11-04
+  - claimId: coagulative-necrosis-c072
+    section: ancillary
+    statement: "The age of an infarct is best judged at its outer border, where blood still flows and repair begins, because large infarcts mature more slowly in the center."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "657, 659" }
+    status: verified
+    verifiedBy: agent
+    verifier: "author-agent v22/coagulative-necrosis"
+    date: 2026-11-04
+  - claimId: coagulative-necrosis-c073
+    section: ancillary
+    statement: "On H&E, infarcted myocardium is eosinophilic after about 12-18 hours; the neutrophils, then macrophages and granulation tissue that arrive at the border afterwards indicate the age of the infarct."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "657-659" }
+    status: verified
+    verifiedBy: agent
+    verifier: "author-agent v22/coagulative-necrosis"
+    date: 2026-11-04
+  - claimId: coagulative-necrosis-c074
+    section: ancillary
+    statement: "The earliest morphologic signs of ischemic injury need electron microscopy; the reversible stage lasts about 20-30 minutes of total ischemia and shows sarcoplasmic edema, mild mitochondrial swelling and glycogen loss."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "657" }
+    status: verified
+    verifiedBy: agent
+    verifier: "author-agent v22/coagulative-necrosis"
+    date: 2026-11-04
+  - claimId: coagulative-necrosis-c075
+    section: ancillary
+    statement: "By 30-60 minutes of ischemia myocyte injury is irreversible: markedly swollen mitochondria with disorganized cristae and amorphous matrix densities, clumped chromatin at the nuclear rim and focal sarcolemmal disruption."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "657-658" }
+    status: verified
+    verifiedBy: agent
+    verifier: "author-agent v22/coagulative-necrosis"
+    date: 2026-11-04
+  - claimId: coagulative-necrosis-c076
+    section: ancillary
+    statement: "With a trichrome stain for collagen, a healed infarct is blue-green, compact and nearly acellular, with a sharp boundary against living myocardium."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "659" }
+    status: verified
+    verifiedBy: agent
+    verifier: "author-agent v22/coagulative-necrosis"
+    date: 2026-11-04
+  - claimId: coagulative-necrosis-c077
+    section: ancillary
+    statement: "Old renal infarcts and necrotic papillae may undergo dystrophic calcification; calcium deposits are deep blue with hematoxylin and black with the more specific von Kossa stain."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "954, 962, 965" }
+    status: verified
+    verifiedBy: agent
+    verifier: "author-agent v22/coagulative-necrosis"
+    date: 2026-11-04

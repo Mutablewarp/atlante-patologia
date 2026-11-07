@@ -1,0 +1,87 @@
+# License check (2026-11-04): Commons file page {{Information}} gives Source {{own}}, Author User:Nephron, license
+# {{self|cc-by-sa-3.0|GFDL}}; extmetadata LicenseShortName "CC BY-SA 3.0", AttributionRequired true, no Restrictions.
+# CC BY-SA is approved as a class by owner decision O7 (plan/v2-plan.md, 2026-11-03), hence ownerApproved: true.
+# Same biopsy and upload set as atrophy-micro-3 and atrophy-micro-4 (group atrophy-denervation-muscle).
+# section: frozen because myofibrillar ATPase is an enzyme histochemical reaction run on unfixed frozen sections
+# (rubin-8e ch. 31, p. 1411); the source page itself does not state the section type.
+id: atrophy-micro-5
+file: atrophy-micro-5.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Denervation_atrophy_-_atp94_-_high_mag.jpg
+author: Nephron
+license: CC-BY-SA-3.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/3.0/
+retrievedAt: 2026-11-04
+modifications: >-
+  Downloaded the 1920 × 1280 px Commons rendition of the 4272 × 2848 px original; downscaled to 1600 × 1067 px and
+  re-encoded as JPEG (quality 82, metadata stripped). No crop, no colour change. This adaptation is shared under the
+  same licence (CC BY-SA 3.0).
+attributionText: >-
+  Nephron, "Denervation atrophy - atp94 - high mag", via Wikimedia Commons, CC BY-SA 3.0
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-04 }
+group: atrophy-denervation-muscle
+stain: "ATPase pH 9.4 (myofibrillar ATPase enzyme histochemistry)"
+magnification: "high power (the source: high magnification)"
+section: frozen
+orientation:
+  it: "Sezione trasversale al criostato: le fibre sono tagliate di traverso; gli spazi bianchi sono endomisio e perimisio."
+  en: "Transverse cryostat section: the fibres are cut across; the white spaces are endomysium and perimysium."
+lookFor:
+  it: "Confronta ogni piccola fibra scura con le vicine chiare: profilo angolato e diametro pari a una frazione del loro."
+  en: "Compare each small dark fibre with its pale neighbours: angular outline and a fraction of their diameter."
+caption:
+  it: >-
+    Stessa biopsia e stessa reazione per l'ATPasi miofibrillare a pH 9,4, a forte ingrandimento, dove si legge bene la
+    forma delle fibre atrofiche. Le piccole fibre scure (tipo II) sono angolate, cioè appiattite, triangolari o a
+    semiluna, come se fossero compresse dalle grandi fibre chiare (tipo I) che le circondano: è il profilo tipico della
+    fibra che ha perso il nervo, che si riduce perdendo progressivamente miofibrille e viene modellata dalle vicine
+    normali. In un angolo del campo le fibre piccole si addensano in un gruppo, come all'ingrandimento minore. Guarda
+    poi le grandi fibre chiare: alcune mostrano una zona centrale rotonda di intensità diversa dal resto, la fibra a
+    bersaglio, che compare in modo transitorio durante la denervazione e la reinnervazione e indica un processo
+    attivo. Qualche grande fibra scura ricorda che non tutte le fibre di tipo II sono atrofiche. Attenzione: la forma
+    angolata da sola non è specifica, perché anche l'atrofia selettiva delle fibre di tipo II (disuso, cortisonici)
+    produce fibre piccole e angolate; per la denervazione contano il raggruppamento e le fibre a bersaglio. E con
+    questa colorazione scuro non vuol dire danneggiato: il colore indica il tipo di fibra, mentre l'atrofia si giudica
+    dal calibro e dalla forma rispetto alle fibre vicine.
+  en: >-
+    Same biopsy and same myofibrillar ATPase reaction at pH 9.4, at high power, where the shape of the atrophic fibres
+    is easy to read. The small dark (type II) fibres are angular, that is flattened, triangular or crescent-shaped, as
+    if pressed by the large pale (type I) fibres around them: this is the typical outline of a fibre that has lost its
+    nerve, which shrinks as it progressively loses myofibrils and is moulded by its normal neighbours. In one corner
+    of the field the small fibres crowd into a cluster, as at lower power. Then look at the large pale fibres: some
+    show a round central zone that stains differently from the rest, the target fibre, which appears transiently
+    during denervation and reinnervation and marks an active process. A few large dark fibres show that not every
+    type II fibre is atrophic. Pitfall: an angular shape alone is not specific, because selective atrophy of type II
+    fibres (disuse, corticosteroids) also produces small angular fibres; for denervation, what counts is the grouping
+    and the target fibres. And with this stain dark does not mean damaged: the colour reports the fibre type, while
+    atrophy is judged by size and shape compared with the neighbouring fibres.
+alt:
+  it: >-
+    Micrografia a forte ingrandimento in bianco, grigio e nero: grandi fibre grigio chiaro a granulosità fine separate
+    da sottili spazi bianchi, con numerose piccole fibre nere triangolari, appiattite o a semiluna incuneate fra di
+    esse; in alto a sinistra un gruppo di piccole fibre nere, in alto a destra una grande fibra chiara con una zona
+    centrale rotonda, e alcune grandi fibre nere sparse nel campo.
+  en: >-
+    High-power black, grey and white micrograph: large, finely granular pale grey fibres separated by thin white
+    spaces, with many small black fibres of triangular, flattened or crescent shape wedged between them; a cluster of
+    small black fibres at the upper left, a large pale fibre with a round central zone at the upper right, and a few
+    large black fibres scattered across the field.
+annotations:
+  - id: small-type2-cluster
+    label: { it: "Gruppo di piccole fibre scure di tipo II (atrofia a gruppi)", en: "Cluster of small dark type II fibres (group atrophy)" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.016, 0.18, 0.064, 0.15, 0.12, 0.141, 0.16, 0.144, 0.16, 0.20, 0.135, 0.245, 0.07, 0.25, 0.06, 0.21, 0.016, 0.207] }
+  - id: angular-fibre
+    label: { it: "Fibra atrofica angolata, schiacciata fra fibre chiare", en: "Angular atrophic fibre squeezed between pale fibres" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.3437, 0.3917, 0.3698, 0.4222, 0.3684, 0.4331, 0.3407, 0.4309, 0.3364, 0.4113] }
+  - id: target-fibre
+    label: { it: "Fibra chiara con zona centrale rotonda (fibra a bersaglio)", en: "Pale fibre with a round central zone (target fibre)" }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.91, 0.207, 0.8964, 0.2438, 0.8635, 0.259, 0.8306, 0.2438, 0.817, 0.207, 0.8306, 0.1702, 0.8635, 0.155, 0.8964, 0.1702] }
+  - id: large-type2-fibre
+    label: { it: "Grande fibra scura: una fibra di tipo II che ha mantenuto il calibro", en: "Large dark fibre: a type II fibre that has kept its size" }
+    revealOrder: 4
+    shape: { type: circle, coords: [0.288, 0.098, 0.04] }

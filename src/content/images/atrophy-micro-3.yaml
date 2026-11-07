@@ -1,0 +1,79 @@
+# License check (2026-11-04): Commons file page {{Information}} gives Source {{own}}, Author User:Nephron, license
+# {{self|cc-by-sa-3.0|GFDL}}; extmetadata LicenseShortName "CC BY-SA 3.0", AttributionRequired true, no Restrictions.
+# CC BY-SA is approved as a class by owner decision O7 (plan/v2-plan.md, 2026-11-03), hence ownerApproved: true.
+# Same muscle biopsy and same upload set as atrophy-micro-4 and atrophy-micro-5 (the file pages list them together
+# under "Related images"), so the three share one group. The source names the stain HPS, not H&E.
+id: atrophy-micro-3
+file: atrophy-micro-3.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Denervation_atrophy_-_intermed_mag.jpg
+author: Nephron
+license: CC-BY-SA-3.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/3.0/
+retrievedAt: 2026-11-04
+modifications: >-
+  Downloaded the 1920 × 1280 px Commons rendition of the 4272 × 2848 px original; downscaled to 1600 × 1067 px and
+  re-encoded as JPEG (quality 82, metadata stripped). No crop, no colour change. This adaptation is shared under the
+  same licence (CC BY-SA 3.0).
+attributionText: >-
+  Nephron, "Denervation atrophy - intermed mag", via Wikimedia Commons, CC BY-SA 3.0
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-04 }
+group: atrophy-denervation-muscle
+stain: "HPS (haematoxylin-phloxine-saffron)"
+magnification: "intermediate power (the source: intermediate magnification)"
+orientation:
+  it: "Sezione trasversale: le fibre muscolari sono tagliate di traverso e appaiono come poligoni."
+  en: "Transverse section: the muscle fibres are cut across and appear as polygons."
+lookFor:
+  it: "Prima confronta il calibro delle fibre, grandi e tonde accanto a piccole; poi cerca il centro più scuro delle fibre a bersaglio."
+  en: "First compare fibre sizes, big rounded fibres beside small ones; then look for the darker centres of the target fibres."
+caption:
+  it: >-
+    Atrofia da denervazione del muscolo scheletrico in una biopsia muscolare, sezione trasversale colorata con HPS
+    (ematossilina-floxina-zafferano, una variante dell'ematossilina-eosina in cui lo zafferano colora il collagene di
+    giallo-arancio), a medio ingrandimento. È la vista di routine della stessa biopsia che le altre immagini della serie
+    mostrano con l'ATPasi. Parti dal quadro d'insieme: le fibre, tagliate di traverso, sono raccolte in fascicoli
+    separati da setti perimisiali arancioni. Poi confronta le fibre fra loro. Nel muscolo normale sono poligonali e di
+    calibro abbastanza uniforme; qui fibre grandi e tondeggianti stanno accanto a fibre molto più piccole, e molte fibre
+    grandi hanno una zona centrale più scura: sono le fibre a bersaglio (target) descritte per questa biopsia, un segno
+    che denervazione e reinnervazione sono in corso. Con una colorazione di routine le fibre atrofiche passano
+    facilmente inosservate, perché sembrano semplici fibre piccole; è l'ATPasi a mostrare quali fibre si sono ridotte
+    e a quale tipo appartengono. Attenzione: la variabilità di calibro da sola non basta per parlare di denervazione;
+    anche l'atrofia selettiva delle fibre di tipo II (da disuso, da terapia cortisonica cronica, nella cachessia o
+    nell'anziano) può avere un aspetto molto simile all'ematossilina-eosina, e la distinzione richiede l'istochimica.
+  en: >-
+    Denervation atrophy of skeletal muscle in a muscle biopsy, transverse section stained with HPS
+    (haematoxylin-phloxine-saffron, a variant of H&E in which saffron colours collagen orange-yellow), intermediate
+    power. This is the routine view of the same biopsy that the other images of the set show with the ATPase reaction.
+    Start with the overview: the fibres, cut across, are packed into fascicles separated by orange perimysial septa.
+    Then compare the fibres with one another. In normal muscle they are polygonal and of fairly even size; here large,
+    rounded fibres sit next to much smaller ones, and many large fibres have a darker central zone: these are the
+    target fibres described for this biopsy, a sign that denervation and reinnervation are under way. On a routine
+    stain the atrophic fibres are easy to overlook, because they look like ordinary small fibres; it is the ATPase
+    reaction that shows which fibres have shrunk and to which type they belong. Pitfall: variation in fibre size alone
+    does not prove denervation; selective atrophy of type II fibres (from disuse, long-term corticosteroid therapy,
+    cachexia or old age) can look very similar on H&E, and telling them apart needs histochemistry.
+alt:
+  it: >-
+    Micrografia rosa acceso di muscolo tagliato di traverso: numerose fibre poligonali di dimensioni diverse raccolte
+    in fascicoli, alcune grandi fibre tonde con il centro rosso più scuro, piccoli nuclei blu scuro ai margini delle
+    fibre e bande arancioni di tessuto connettivo che attraversano il campo in diagonale, con qualche fessura bianca.
+  en: >-
+    Bright pink micrograph of muscle cut across: many polygonal fibres of mixed sizes packed into fascicles, several
+    large round fibres with a darker red centre, small dark blue nuclei at the fibre edges, and orange bands of
+    connective tissue crossing the field diagonally, with a few white clefts.
+annotations:
+  - id: perimysial-septum
+    label: { it: "Setto perimisiale: collagene giallo-arancio per lo zafferano", en: "Perimysial septum: collagen orange-yellow from saffron" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.521, 0.22, 0.539, 0.22, 0.498, 0.30, 0.451, 0.40, 0.425, 0.46, 0.40, 0.52, 0.381, 0.56, 0.37, 0.62, 0.36, 0.66, 0.34, 0.66, 0.345, 0.62, 0.349, 0.56, 0.375, 0.52, 0.40, 0.46, 0.43, 0.40, 0.4755, 0.30] }
+  - id: small-fibre
+    label: { it: "Fibra piccola accanto a una grande: confronta i diametri", en: "Small fibre beside a large one: compare the diameters" }
+    revealOrder: 2
+    shape: { type: circle, coords: [0.5455, 0.398, 0.009] }
+  - id: target-fibre
+    label: { it: "Fibra grande con centro più scuro (fibra a bersaglio)", en: "Large fibre with a darker centre (target fibre)" }
+    revealOrder: 3
+    shape: { type: circle, coords: [0.58, 0.383, 0.02] }

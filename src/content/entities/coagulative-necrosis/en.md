@@ -22,7 +22,7 @@ Loss of blood supply starves the cell of oxygen and fuel; ATP falls, ion pumps f
 - **Pale (white) infarcts** are typical of solid organs with a single arterial supply: heart, kidney and spleen.<!--c:coagulative-necrosis-c014--> Their color changes fast: the swollen, dusky-red zone of the first hours becomes, by day 1–2, a soft pale-yellow area with a crisp margin, framed by a band of hemorrhage against the surviving tissue.<!--c:coagulative-necrosis-c015-->
 - **Kidney:** on cut section the infarct is a pale triangle whose broad side faces the capsule; once healed it leaves a sunken, well-defined notch of cortical scar.<!--c:coagulative-necrosis-c016-->
 - **Heart:** gross and microscopic changes follow a predictable clock, shown in the timeline table under complications and prognosis.
-- **Red (hemorrhagic) infarcts** also contain coagulative necrosis, with blood added from neighboring vessels; they follow arterial or venous occlusion and occur in organs with a dual supply or rich collaterals and in a reperfused heart.<!--c:coagulative-necrosis-c019-->
+- **Red (hemorrhagic) infarcts** also contain coagulative necrosis, with blood added from neighboring vessels; they follow arterial or venous occlusion and occur in organs with a dual supply, such as the lung, or with rich collaterals, such as the small intestine, and in a reperfused heart.<!--c:coagulative-necrosis-c019-->
 - **Dry gangrene** of a limb after arterial occlusion is in essence a large pale infarct (see [[gangrene]]).<!--c:coagulative-necrosis-c020-->
 
 ## Microscopic morphology
@@ -39,7 +39,14 @@ Loss of blood supply starves the cell of oxygen and fuel; ATP falls, ion pumps f
 
 ## Special stains, IHC and molecular findings
 
-Not applicable.
+**How it is studied:**
+
+- **Autopsy:** besides the infarct that caused death, the autopsy can bring silent ones to light: up to a third of nonfatal Q-wave myocardial infarcts give no symptoms and are recognized only later, on the ECG or at autopsy.<!--c:coagulative-necrosis-c070-->
+- **Gross handling:** on transverse slices of the ventricles, the position of a transmural infarct points to the blocked artery: anterior wall, apex and front of the septum for the left anterior descending; posterior basal wall and back of the septum ("inferior" infarct) for the right coronary; lateral wall for the circumflex.<!--c:coagulative-necrosis-c071--> To date an infarct, sample its border, where living tissue begins and repair starts, because the center of a large infarct matures later.<!--c:coagulative-necrosis-c072-->
+- **H&E:** compare the dead zone with the surviving tissue next to it: in the heart the infarct turns more eosinophilic after about 12–18 hours, and the cells that later reach its border (neutrophils, then macrophages and granulation tissue) tell its age, as in the timeline below.<!--c:coagulative-necrosis-c073-->
+- **Electron microscopy** is needed for the earliest changes: during the first 20–30 minutes of total ischemia the myocyte is still reversibly injured, with sarcoplasmic edema, slight mitochondrial swelling and loss of glycogen.<!--c:coagulative-necrosis-c074--> After 30–60 minutes the injury is irreversible: mitochondria are markedly swollen, with disorganized cristae and amorphous dense deposits in the matrix; chromatin clumps along the nuclear membrane; the sarcolemma is broken in places.<!--c:coagulative-necrosis-c075-->
+- **Masson trichrome:** collagen stains blue-green, so a healed infarct stands out as a compact, cell-poor scar with a sharp edge against the surviving muscle.<!--c:coagulative-necrosis-c076-->
+- **Calcification:** old renal infarcts and necrotic papillae may calcify; the calcium salts are deep blue with hematoxylin and black with von Kossa, the more specific stain (see [[dystrophic-calcification]]).<!--c:coagulative-necrosis-c077-->
 
 ## Clinical presentation
 
@@ -51,7 +58,7 @@ The symptoms are those of the infarcted organ.<!--c:coagulative-necrosis-c030-->
 
 ## Diagnosis, key lab and imaging
 
-When the plasma membrane of dead myocytes breaks down, their contents reach the blood: cardiac troponin (I or T), CK, LDH and myoglobin.<!--c:coagulative-necrosis-c034--> In tissue, the diagnosis is morphologic on routine H&E: eosinophilic cells with preserved outlines whose nuclei are pyknotic, fragmented or already gone.<!--c:coagulative-necrosis-c035-->
+When the plasma membrane of dead myocytes breaks down, their contents reach the blood: cardiac troponin (I or T), CK, LDH and myoglobin.<!--c:coagulative-necrosis-c034--> Troponin I or T is the marker measured most, being highly specific for heart muscle; an infarct is diagnosed when its blood level goes up and/or down in step with the clinical episode.<!--c:coagulative-necrosis-c068--> In tissue, the diagnosis is morphologic on routine H&E: eosinophilic cells with preserved outlines whose nuclei are pyknotic, fragmented or already gone.<!--c:coagulative-necrosis-c035-->
 
 ## Complications and prognosis
 
@@ -69,6 +76,7 @@ When the plasma membrane of dead myocytes breaks down, their contents reach the 
 
 Other outcomes:
 
+- **Rupture:** the necrotic wall is weakest between days 2 and 7, when inflammatory proteases have digested its matrix and new collagen has not yet been laid down; free-wall rupture of a transmural infarct is most frequent in this window and usually kills by hemopericardium and tamponade.<!--c:coagulative-necrosis-c067-->
 - The center of a large infarct may stay unreached by leukocytes for months, and dead myocytes can persist "mummified"; the age of a large infarct is best judged at its border.<!--c:coagulative-necrosis-c040-->
 - Old necrotic areas, for example healed renal infarcts or necrotic papillae, often undergo [[dystrophic-calcification]].<!--c:coagulative-necrosis-c041-->
 - If the dead tissue becomes infected, the result is a septic infarct, which may turn into an abscess.<!--c:coagulative-necrosis-c042-->
@@ -84,6 +92,7 @@ Other outcomes:
 | [[apoptosis]] | Single cells or small groups among viable cells, membrane-bound fragments, no inflammation.<!--c:coagulative-necrosis-c046--> | Pattern: scattered single cells, no neutrophils |
 | [[hydropic-swelling]] | Reversible injury: swollen pale cell with an intact nucleus.<!--c:coagulative-necrosis-c047--> | Normal nucleus on H&E |
 | [[fibrinoid-necrosis]] | Bright eosinophilic deposit of plasma proteins in an injured vessel wall.<!--c:coagulative-necrosis-c048--> | Location in the vessel wall |
+| Reperfused infarct ([[ischemia-reperfusion-injury]]) | Blood flow returns to an evolving infarct: it is hemorrhagic from the start, neutrophils spread through all of it instead of stopping at the edge, and contraction bands (thick, irregular cross-bands of hypercontracted sarcomeres) are widespread, whereas with persistent occlusion they are at most confined to the margins.<!--c:coagulative-necrosis-c069--> | Hemorrhage and contraction bands throughout the infarct |
 
 ## High-yield summary
 

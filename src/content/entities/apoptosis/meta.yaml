@@ -31,6 +31,8 @@ learningObjectives:
     en: "Recognize an apoptotic cell under the microscope and explain why its removal (efferocytosis) causes no inflammation."
   - it: "Distinguere l'apoptosi dalla necrosi, dalla necroptosi e dalla piroptosi."
     en: "Distinguish apoptosis from necrosis, necroptosis and pyroptosis."
+  - it: "Indicare con quali metodi si dimostra l'apoptosi in un tessuto (EE, caspasi-3 clivata, TUNEL, microscopia elettronica) e quali limiti hanno."
+    en: "Name the methods that demonstrate apoptosis in a tissue (H&E, cleaved caspase-3, TUNEL, electron microscopy) and their limits."
 prerequisites: []
 relations:
   - type: differentialOf
@@ -84,6 +86,31 @@ selfExplain:
   - it: "Perché un virus trae vantaggio dal bloccare l'apoptosi della cellula che infetta?"
     en: "Why does a virus benefit from blocking apoptosis in the cell it infects?"
 chain: []
+examQuestions:
+  - it: "Mi parli dell'apoptosi: che cos'è e in quali situazioni, fisiologiche e patologiche, si verifica?"
+    en: "Tell me about apoptosis: what is it, and in which physiologic and pathologic settings does it occur?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Che cosa vede al microscopio, in una sezione colorata con ematossilina-eosina, quando alcune cellule muoiono per apoptosi?"
+    en: "What do you see under the microscope, in a section stained with hematoxylin and eosin, when some cells are dying by apoptosis?"
+    focus: [micro, ancillary]
+    level: 1
+  - it: "Mi descriva le due vie dell'apoptosi, estrinseca e intrinseca: come si attivano e dove convergono?"
+    en: "Describe the two pathways of apoptosis, extrinsic and intrinsic: how is each one triggered, and where do they converge?"
+    focus: [pathogenesis, high-yield]
+    level: 2
+  - it: "Che ruolo hanno p53 e le proteine della famiglia BCL-2 nel decidere se una cellula con il DNA danneggiato muore per apoptosi?"
+    en: "What roles do p53 and the BCL-2 family proteins play in deciding whether a cell with damaged DNA dies by apoptosis?"
+    focus: [pathogenesis]
+    level: 2
+  - it: "Come distingue al microscopio l'apoptosi dalla necrosi coagulativa, e perché nell'apoptosi manca l'infiammazione?"
+    en: "How do you tell apoptosis from coagulative necrosis under the microscope, and why is there no inflammation in apoptosis?"
+    focus: [micro, differential, pathogenesis]
+    level: 3
+  - it: "Oltre all'ematossilina-eosina, quali tecniche userebbe per dimostrare che le cellule di un tessuto muoiono per apoptosi, e quali limiti hanno?"
+    en: "Besides hematoxylin and eosin, which techniques would you use to show that cells in a tissue are dying by apoptosis, and what are their limits?"
+    focus: [ancillary, traps]
+    level: 3
 images:
   - id: apoptosis-micro-1
     role: micro
@@ -110,5 +137,15 @@ sources:
   - source: rubin-8e
     chapter: "11"
     pages: "513"
-lastUpdated: 2026-11-03
+  - source: rubin-8e
+    chapter: "20"
+    pages: "863-864"
+  - source: rubin-8e
+    chapter: "26"
+    pages: "1158, 1176-1177"
+  - source: rubin-8e
+    chapter: "28"
+    pages: "1260, 1265"
+  - source: elmore-2007
+lastUpdated: 2026-11-04
 status: published

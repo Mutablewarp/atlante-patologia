@@ -552,3 +552,115 @@ claims:
     verifiedBy: agent
     verifier: "verifier-agent"
     date: 2026-11-03
+  - claimId: atrophy-c070
+    section: pathogenesis
+    statement: "In hormone-responsive organs apoptosis keeps cell numbers in balance, e.g., when the lactating breast regresses after nursing stops."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "47" }
+    status: verified
+    verifiedBy: agent
+    verifier: "g01-v22-enrichment-author (re-read of cited pages)"
+    date: 2026-11-04
+  - claimId: atrophy-c071
+    section: gross
+    statement: "Hydrocephalus ex vacuo is ventricular enlargement compensating for lost brain tissue (often diffuse cortical atrophy, as in Alzheimer disease); it is distinct from hydrocephalus due to abnormal CSF dynamics."
+    sourceRef: { source: rubin-8e, chapter: "32", pages: "1448, 1493" }
+    status: verified
+    verifiedBy: agent
+    verifier: "g01-v22-enrichment-author (re-read of cited pages)"
+    date: 2026-11-04
+  - claimId: atrophy-c072
+    section: micro
+    statement: "Denervated muscle fibers look angular and atrophic in cross-section; they are scattered early and later appear in small, then progressively larger clusters."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1428" }
+    status: verified
+    verifiedBy: agent
+    verifier: "g01-v22-enrichment-author (re-read of cited pages)"
+    date: 2026-11-04
+  - claimId: atrophy-c073
+    section: micro
+    statement: "Without reinnervation, denervated fibers lose all myofibrils and finally disappear, replaced mostly by fibroadipose tissue."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1428" }
+    status: verified
+    verifiedBy: agent
+    verifier: "g01-v22-enrichment-author (re-read of cited pages)"
+    date: 2026-11-04
+  - claimId: atrophy-c074
+    section: micro
+    statement: "After menopause the endometrium keeps few glands with thin epithelium in a collagenous stroma; dilated glands give the pattern named senile cystic atrophy."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1038" }
+    status: verified
+    verifiedBy: agent
+    verifier: "g01-v22-enrichment-author (re-read of cited pages)"
+    date: 2026-11-04
+  - claimId: atrophy-c075
+    section: ancillary
+    statement: "A moderately affected muscle is the best biopsy site (commonly quadriceps or biceps; gastrocnemius plus sural nerve when neuropathy is suspected); spared muscle may be near normal and very weak muscle may be end-stage fibrofatty tissue."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1411" }
+    status: verified
+    verifiedBy: agent
+    verifier: "g01-v22-enrichment-author (re-read of cited pages)"
+    date: 2026-11-04
+  - claimId: atrophy-c076
+    section: ancillary
+    statement: "Muscle biopsy tissue goes to formalin, to unfixed freezing for enzyme histochemistry (which shows enzyme function, whereas IHC shows only protein presence) and to glutaraldehyde for electron microscopy."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1411" }
+    status: verified
+    verifiedBy: agent
+    verifier: "g01-v22-enrichment-author (re-read of cited pages)"
+    date: 2026-11-04
+  - claimId: atrophy-c077
+    section: ancillary
+    statement: "Selective type II fiber atrophy (chronic disuse, corticosteroids, old age, cachexia) gives angular fibers that mimic denervation on H&E; myosin ATPase (alkaline pH: type I pale, type II dark) shows that all these angular fibers are type II."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1410-1411, 1427" }
+    status: verified
+    verifiedBy: agent
+    verifier: "g01-v22-enrichment-author (re-read of cited pages)"
+    date: 2026-11-04
+  - claimId: atrophy-c078
+    section: ancillary
+    statement: "Atrophic fibers from denervation, which include both fiber types, stain very dark with nonspecific esterase and NADH-TR, whereas disuse or wasting atrophy does not."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1427-1428" }
+    status: verified
+    verifiedBy: agent
+    verifier: "g01-v22-enrichment-author (re-read of cited pages)"
+    date: 2026-11-04
+  - claimId: atrophy-c079
+    section: ancillary
+    statement: "Clusters of one fiber type next to clusters of the other on ATPase indicate denervation with later reinnervation; ongoing denervation then makes enlarged motor units atrophy as a group, as in ALS."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1429-1430" }
+    status: verified
+    verifiedBy: agent
+    verifier: "g01-v22-enrichment-author (re-read of cited pages)"
+    date: 2026-11-04
+  - claimId: atrophy-c080
+    section: ancillary
+    statement: "Muscle biopsy identifies lower motor neuron denervation and whether it is recent or chronic, but cannot tell its cause, for instance ALS versus diabetic neuropathy."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1428" }
+    status: verified
+    verifiedBy: agent
+    verifier: "g01-v22-enrichment-author (re-read of cited pages)"
+    date: 2026-11-04
+  - claimId: atrophy-c081
+    section: high-yield
+    statement: "Denervation atrophy shows angular atrophic fibers of both types that are dark with nonspecific esterase and NADH-TR; fiber-type grouping means reinnervation after denervation."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1428-1430" }
+    status: verified
+    verifiedBy: agent
+    verifier: "g01-v22-enrichment-author (re-read of cited pages)"
+    date: 2026-11-04
+  - claimId: atrophy-c082
+    section: traps
+    statement: "Angular atrophic fibers on H&E can be selective type II atrophy (corticosteroids, disuse) rather than denervation; ATPase, esterase and NADH-TR separate the two."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1427-1428" }
+    status: verified
+    verifiedBy: agent
+    verifier: "g01-v22-enrichment-author (re-read of cited pages)"
+    date: 2026-11-04
+  - claimId: atrophy-c083
+    section: traps
+    statement: "Upper motor neuron lesions (stroke, multiple sclerosis) cause paralysis with diffuse nonspecific atrophy, not denervation atrophy, because lower motor neurons survive."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1428" }
+    status: verified
+    verifiedBy: agent
+    verifier: "g01-v22-enrichment-author (re-read of cited pages)"
+    date: 2026-11-04

@@ -13,6 +13,7 @@ Dysplasia develops where injury persists, the same setting that produces metapla
 - **Skin:** keratinocytes damaged by sunlight, as in actinic keratosis.<!--c:dysplasia-c007-->
 - **Colon:** columnar mucosa chronically inflamed by ulcerative colitis.<!--c:dysplasia-c008-->
 - **Uterine cervix:** squamous epithelium infected by human papillomavirus (HPV).<!--c:dysplasia-c009-->
+- **Oral mucosa:** tobacco, alcohol and local irritation cause leukoplakia and also contribute to oral carcinoma.<!--c:dysplasia-c065-->
 - **Metaplastic epithelium:** the squamous metaplasia of a smoker's bronchus and the glandular metaplasia of Barrett esophagus.<!--c:dysplasia-c010-->
 - **Colorectal adenomas:** their epithelium is dysplastic by definition, and they are the usual precursors of colon carcinoma.<!--c:dysplasia-c011-->
 
@@ -58,7 +59,14 @@ Dysplasia is defined under the microscope; in the colon of patients with ulcerat
 
 ## Special stains, IHC and molecular findings
 
-Not applicable.
+**How it is studied:**
+
+- **Specimen:** cervical cytology and biopsies, endoscopic biopsies in Barrett esophagus and long-standing colitis, and polypectomy specimens of colorectal adenomas.<!--c:dysplasia-c066-->
+- **Cytology screens, histology grades:** a Pap smear collects cells shed from the cervical surface, and their nuclei and cytoplasmic maturation already suggest LSIL or HSIL, but the smear remains a screening test.<!--c:dysplasia-c067--> An abnormal smear leads to biopsy, because the final grade needs a histologic section that shows the whole thickness of the epithelium.<!--c:dysplasia-c068-->
+- **Aiming the biopsy:** at colposcopy, a mosaic surface and punctate vessels are the patterns most typical of high-grade lesions, and biopsies are aimed at the abnormal areas; alternatively, a wire loop (LEEP) removes the whole transformation zone, which both diagnoses and treats.<!--c:dysplasia-c069--> In colitis surveillance, a dye sprayed on the mucosa during endoscopy (chromoendoscopy) or confocal laser endomicroscopy can raise the number of dysplastic lesions that biopsies catch.<!--c:dysplasia-c070-->
+- **H&E, what to look for:** whether the cells still mature from base to surface, how large, dark and irregular the nuclei are compared with the cytoplasm, how high the mitoses reach, and whether the basement membrane is intact.<!--c:dysplasia-c071--> In the cervix, LSIL shows koilocytes (large, irregular nuclei in ballooned, cleared cytoplasm) in the upper layers above a thin, orderly basal zone; in HSIL, disorganized basal-type cells rise high without maturing, sometimes with abnormal mitoses that betray aneuploidy.<!--c:dysplasia-c072--> In a polyp, invasive adenocarcinoma requires neoplastic glands below the muscularis mucosae.<!--c:dysplasia-c073-->
+- **Immunohistochemistry:** lesions caused by oncogenic HPV types generally show activated p16, which immunostaining displays in the section.<!--c:dysplasia-c074--> In cervical biopsies, diffuse, strong p16 staining helps to recognize true high-grade lesions (CIN 2–3) and makes grading more consistent between pathologists.<!--c:dysplasia-c075-->
+- **Molecular tests:** HPV DNA can be detected directly, and in situ hybridization shows viral nucleic acid inside the cells of a tissue section.<!--c:dysplasia-c076--> HSIL usually carries high-risk types such as HPV 16 and 18, whereas cervical condylomas often carry the low-risk types 6 and 11.<!--c:dysplasia-c077-->
 
 ## Clinical presentation
 
@@ -67,17 +75,24 @@ Not applicable.
 - Cervical squamous intraepithelial lesions generally occur before age 40, whereas invasive cervical cancer usually presents between 40 and 60.<!--c:dysplasia-c034-->
 - Patients with Barrett esophagus are followed with surveillance endoscopy to detect dysplasia early.<!--c:dysplasia-c035-->
 - Surveillance colonoscopy with systematic biopsies is advised for most people with established inflammatory bowel disease, to catch dysplasia.<!--c:dysplasia-c036-->
+- In the mouth and the rest of the upper aerodigestive tract, precursor lesions appear as white patches (leukoplakia), red patches (erythroplakia) or mixed white and red patches (speckled leukoplakia).<!--c:dysplasia-c078-->
+- Erythroplakia is rarer than leukoplakia but more ominous: it often corresponds to severe dysplasia, carcinoma in situ or invasive carcinoma, although some red patches are only inflammatory.<!--c:dysplasia-c079-->
 
 ## Diagnosis, key lab and imaging
 
 - The diagnosis is morphologic, made on biopsy and, in the cervix, also on cytology.<!--c:dysplasia-c037-->
 - The key boundary with invasive carcinoma is the basement membrane: a lesion that has not crossed it is in situ, whereas one that has crossed it can invade and reach vessels.<!--c:dysplasia-c038-->
 - When heavy inflammation stops the pathologist from either confirming or ruling out dysplasia, the biopsy is signed out as "indefinite for dysplasia".<!--c:dysplasia-c039-->
+- Leukoplakia is a clinical description, not a diagnosis: under the microscope a white patch ranges from surface keratinization without dysplasia to invasive squamous carcinoma, so only a biopsy shows whether dysplasia is present.<!--c:dysplasia-c080-->
 
 ## Complications and prognosis
 
 - Dysplasia often regresses when the stimulus stops, for example after smoking cessation or when the immune system clears HPV-infected cervical cells.<!--c:dysplasia-c040-->
 - In the cervix, LSIL seldom progresses and often disappears, whereas HSIL tends to progress and needs treatment.<!--c:dysplasia-c041-->
+- Of LSIL, 70% regress, 6% progress to HSIL and fewer than 1% become invasive; of untreated HSIL, 10–20% progress to invasive carcinoma.<!--c:dysplasia-c081-->
+- LSIL is often managed with repeat smears and close follow-up, whereas HSIL is removed or destroyed, for example by loop excision (LEEP), conization or ablation.<!--c:dysplasia-c082-->
+- The cancer risk of oral leukoplakia is 10–12%; speckled leukoplakia carries a higher risk, and erythroplakia the highest.<!--c:dysplasia-c083-->
+- The carcinogenic exposure affects a whole mucosal field: in the mouth, separate carcinomas can arise together or years apart (field cancerization), and in the lower genital tract an HPV-related vaginal or vulvar cancer can appear years after a cervical lesion, so follow-up continues for life.<!--c:dysplasia-c084-->
 - Severe dysplasia calls for firm prevention, whether by eliminating the cause, ending the harmful exposure or excising the lesion.<!--c:dysplasia-c042-->
 - Colectomy is usually advised once biopsy shows high-grade dysplasia in ulcerative colitis, because the later cancer risk is high.<!--c:dysplasia-c043-->
 - Complete polypectomy cures an adenoma whose dysplasia has not gone beyond the mucosa; if left in place, a high-grade lesion may turn into invasive adenocarcinoma.<!--c:dysplasia-c044-->
@@ -101,6 +116,7 @@ Not applicable.
 - Grading: **low vs high grade**; cervix **LSIL = CIN 1**, **HSIL = CIN 2–3**.<!--c:dysplasia-c054-->
 - Dysplasia is **not autonomous** and can **regress** when the stimulus stops.<!--c:dysplasia-c055-->
 - **Carcinoma in situ** lies above an intact **basement membrane**; invasion begins when it is breached.<!--c:dysplasia-c056-->
+- Oral **leukoplakia** (white patch) is a clinical term that needs a biopsy; **erythroplakia** (red patch) is rarer but more often hides severe dysplasia or carcinoma.<!--c:dysplasia-c085-->
 
 ## Common misconceptions and exam traps
 
@@ -110,6 +126,7 @@ Not applicable.
 - "Renal dysplasia" or other developmental dysplasias are malformations of tissue formation, not precancerous epithelial lesions.<!--c:dysplasia-c060-->
 - CIN 3 includes both severe dysplasia and carcinoma in situ; the two are hard to tell apart.<!--c:dysplasia-c061-->
 - Tumors arising from cells that do not sit on a basement membrane, such as connective tissue cells, lymphoid cells and hepatocytes, have no in situ stage.<!--c:dysplasia-c062-->
+- Leukoplakia, Barrett esophagus and long-standing colitis signal a higher risk but are not dysplasia in themselves: only a biopsy shows whether dysplasia, the actual precursor lesion, is present.<!--c:dysplasia-c086-->
 
 ## Mnemonics
 
