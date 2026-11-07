@@ -3,7 +3,7 @@ import { createEmptyCard } from 'ts-fsrs';
 import { clozeCards, qaCards, occlusionCards, cardId, listItems } from '../src/lib/cards.ts';
 import { buildQueue, rate, toStored, toCard, Rating, State, type CardRecord } from '../src/lib/srs.ts';
 import { emptyFsrs, entitiesRead, SECTION_COUNT, dueCount, isMastered, parseIdList } from '../src/lib/progress.ts';
-import { mergeRecords, makeExport, checkExport, reminderDue, SCHEMA_VERSION } from '../src/lib/db.ts';
+import { mergeRecords, makeExport, checkExport, isImportable, reminderDue, SCHEMA_VERSION } from '../src/lib/db.ts';
 import { buildPlan } from '../src/lib/planner.ts';
 import { interleave, weakQuestions, entityAccuracy } from '../src/lib/quiz.ts';
 
@@ -94,6 +94,16 @@ describe('learner data', () => {
     expect(await checkExport({ ...parsed, app: 'other' })).toEqual({ ok: false, error: 'app' });
     expect(await checkExport({ ...parsed, schemaVersion: SCHEMA_VERSION + 1 })).toEqual({ ok: false, error: 'version' });
     expect(await checkExport(null)).toEqual({ ok: false, error: 'format' });
+  });
+  it('import keeps every card state and review row the app itself writes (also after a ts-fsrs update)', () => {
+    const now = new Date('2026-11-07T10:00:00Z');
+    const card = { id: 'apoptosis:qa:1', entity: 'apoptosis', module: 'g01' };
+    const added: CardRecord = { ...card, fsrs: emptyFsrs(now.getTime()), added: now.getTime(), updated: now.getTime() };
+    const fresh: CardRecord = { ...card, fsrs: toStored(createEmptyCard(now)), updated: now.getTime() };
+    const once = rate(added, card, Rating.Good, now);
+    const twice = rate(once.record, card, Rating.Again, new Date(now.getTime() + 86_400_000));
+    for (const r of [added, fresh, once.record, twice.record]) expect(isImportable('cards', JSON.parse(JSON.stringify(r))), JSON.stringify(r)).toBe(true);
+    for (const r of [once.log, twice.log]) expect(isImportable('reviewLog', JSON.parse(JSON.stringify(r)))).toBe(true);
   });
   it('reminds gently: only with data, after 14 days, not right after a dismissal', () => {
     const day = 86_400_000;

@@ -53,7 +53,8 @@ export default function DataManager({ lang }: { lang: Lang }) {
     const check = await checkExport(raw);
     if (!check.ok)
       return setMsg(t(check.error === 'version' ? 'importErrorVersion' : check.error === 'checksum' ? 'importErrorChecksum' : 'importErrorFormat'));
-    setMsg(fmt(t('importDone'), { n: await importFile(check.file) }));
+    const done = fmt(t('importDone'), { n: await importFile(check.file) });
+    setMsg(check.skipped ? `${done} ${fmt(t('importSkipped'), { n: check.skipped })}` : done);
     input.value = '';
     await refresh();
   }

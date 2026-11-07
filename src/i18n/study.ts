@@ -272,6 +272,10 @@ export const tS = defineStrings({
     en: 'Import merges: for each item it keeps the newest version. It deletes nothing.',
   },
   importDone: { it: 'Importazione completata: {n} elementi aggiornati.', en: 'Import complete: {n} items updated.' },
+  importSkipped: {
+    it: 'Elementi danneggiati non importati: {n} (l’atlante non può leggerli).',
+    en: 'Damaged items not imported: {n} (the atlas cannot read them).',
+  },
   importErrorFormat: { it: 'Il file non è un backup valido dell’atlante.', en: 'The file is not a valid atlas backup.' },
   importErrorVersion: {
     it: 'Il file viene da una versione più recente dell’atlante: aggiorna la pagina e riprova.',

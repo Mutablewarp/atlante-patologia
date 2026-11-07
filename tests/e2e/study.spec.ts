@@ -421,19 +421,55 @@ test('oral simulator: "time is up" is announced in a live region, and a double s
   expect((session!.items as unknown[]).length).toBe(1);
 });
 
-test('a malformed oral session in an import file is rejected', async ({ page }) => {
+test('an import leaves out the records the atlas cannot read, says how many, and restores the rest', async ({ page }) => {
   await openData(page);
-  const stores = { oralSessions: [{ id: 'oral@1', at: 1, updated: 1, items: [{ question: 'a#1', entity: 'a', text: '?', predicted: 3 }] }] };
+  const fsrs = { due: 1, stability: 0, difficulty: 0, elapsed_days: 0, scheduled_days: 0, learning_steps: 0, reps: 0, lapses: 0, state: 0 };
+  const stores = {
+    oralSessions: [{ id: 'oral@1', at: 1, updated: 1, items: [{ question: 'a#1', entity: 'a', text: '?', predicted: 3 }] }],
+    // A crafted card with no FSRS state used to break the review queue and the Me page.
+    cards: [
+      { id: 'fixture-demo:qa:bad', entity: 'fixture-demo', module: 'g01', updated: 1 },
+      { id: 'fixture-demo:qa:good', entity: 'fixture-demo', module: 'g01', fsrs, updated: 1 },
+    ],
+    notes: [{ id: 'fixture-demo', text: 'kept', updated: 1 }],
+  };
   const file = await page.evaluate(async (st) => {
     const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(JSON.stringify(st)));
     const checksum = [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, '0')).join('');
     return JSON.stringify({ app: 'atlante-patologia', schemaVersion: 2, exportedAt: '2026-01-01T00:00:00Z', checksum, stores: st });
   }, stores);
   await page.locator('input[type=file]').setInputFiles({ name: 'bad.json', mimeType: 'application/json', buffer: Buffer.from(file) });
-  await expect(page.getByText('The file is not a valid atlas backup.')).toBeVisible();
+  await expect(page.getByText('Import complete: 2 items updated. Damaged items not imported: 2 (the atlas cannot read them).')).toBeVisible();
   expect(await readStore(page, 'oralSessions')).toEqual([]);
+  expect((await readStore(page, 'cards')).map((c) => c.id)).toEqual(['fixture-demo:qa:good']);
+  expect(await readStore(page, 'notes')).toEqual([{ id: 'fixture-demo', text: 'kept', updated: 1 }]);
   await page.goto('en/study/oral/');
   await expect(page.getByRole('button', { name: 'Start' })).toBeVisible();
+  await page.goto('en/study/review/');
+  await expect(page.getByText(/0 due · [1-9]\d* new/)).toBeVisible();
+});
+
+test('a backup that holds a damaged oral session still restores everything else in a fresh browser', async ({ page, browser }, info) => {
+  await page.goto('en/study/oral/');
+  await expect(page.getByRole('region', { name: 'Previous sessions' })).toContainText('No sessions saved on this device.');
+  // Written by an older build (a negative answer time): the oral simulator cannot read it.
+  const rubric = { completeness: 3, accuracy: 3, structure: 3, terminology: 3 };
+  await writeStore(page, 'oralSessions', [{ id: 'oral@1', at: 1, updated: 1, items: [{ question: 'a#1', entity: 'a', text: '?', predicted: 3, rubric, seconds: -32 }] }]);
+  await writeStore(page, 'notes', [{ id: 'fixture-demo', text: 'my note', updated: 1 }]);
+  await writeStore(page, 'bookmarks', [{ id: 'fixture-demo', updated: 1 }]);
+  await openData(page);
+  const [download] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: 'Export data' }).click()]);
+  const path = await download.path();
+
+  const fresh = await browser.newContext({ baseURL: info.project.use.baseURL });
+  const other = await fresh.newPage();
+  await openData(other);
+  await other.locator('input[type=file]').setInputFiles(path);
+  await expect(other.getByText(/Import complete: [1-9]\d* items updated\. Damaged items not imported: 1 /)).toBeVisible();
+  expect(await readStore(other, 'notes')).toEqual([{ id: 'fixture-demo', text: 'my note', updated: 1 }]);
+  expect(await readStore(other, 'bookmarks')).toEqual([{ id: 'fixture-demo', updated: 1 }]);
+  expect(await readStore(other, 'oralSessions')).toEqual([]);
+  await fresh.close();
 });
 
 test('the oral history moves nothing on the page for a returning learner (CPU 4× slower, footer in view)', async ({ page }) => {
