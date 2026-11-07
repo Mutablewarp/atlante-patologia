@@ -1,7 +1,7 @@
 # Claim ledger for the pattern page src/content/patterns/p01-necrosis (CONTENT_SCHEMA §8). Printed pages of the reference.
-# Independent re-check 2026-11-04 by a fresh-context verifier ("independent-verifier-agent"); rows reworded or added after
-# that report keep the fixer's id and are counted on the Method page (src/lib/self-verified.ts). Matrix cells in
-# meta.yaml carry markers too: c057-c063 back facts that only the matrix states.
+# Independent re-checks 2026-11-04 and 2026-11-07 by a fresh-context verifier ("independent-verifier-agent"); a row whose
+# final wording is the fixer's own keeps the fixer's id and is counted on the Method page (src/lib/self-verified.ts).
+# Matrix cells in meta.yaml carry markers too: c057-c063 back facts that only the matrix states.
 entity: p01-necrosis
 claims:
   - claimId: p01-necrosis-c001
@@ -70,28 +70,28 @@ claims:
     date: 2026-11-04
   - claimId: p01-necrosis-c009
     section: pathogenesis
-    statement: "In caseous necrosis the dead cells lose their outlines but their remains are not digested away as in liquefactive necrosis; the waxy lipids of the mycobacterial wall are thought to be responsible."
+    statement: "Caseation is usually blamed on the waxy lipids of the mycobacterial cell wall; the result sits between coagulative and liquefactive necrosis, because no cell outlines survive and yet the remains are not dissolved, so the debris lasts."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "40" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent (wording from the independent verifier's report of 2026-11-04, rechecked against the cited pages)"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-07
   - claimId: p01-necrosis-c010
     section: pathogenesis
-    statement: "In fibrinoid necrosis plasma proteins, including fibrin, enter an injured vessel wall, which then looks bright pink on H&E."
-    sourceRef: { source: rubin-8e, chapter: "1", pages: "40" }
+    statement: "In fibrinoid necrosis plasma proteins leak into an injured vessel wall and fibrin is laid down there, so the wall looks bright pink on H&E."
+    sourceRef: { source: rubin-8e, chapter: "1, 16", pages: "40, 617" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent (wording from the independent verifier's report of 2026-11-04, rechecked against the cited pages)"
-    date: 2026-11-04
+    verifier: "fixer-agent (reworded after the 2026-11-07 independent re-check; checked against the cited pages)"
+    date: 2026-11-07
   - claimId: p01-necrosis-c011
     section: gross
     statement: "Occlusion of an end artery causes coagulative necrosis of the tissue downstream; that dead zone is the infarct."
     sourceRef: { source: rubin-8e, chapter: "7", pages: "337" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent (wording from the independent verifier's report of 2026-11-04, rechecked against the cited pages)"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-07
   - claimId: p01-necrosis-c012
     section: gross
     statement: "Pale infarcts with uniform coagulative necrosis are typical in heart, kidney and spleen; splenic infarcts are pale wedges beneath the capsule, and renal infarct pallor extends to the subcapsular surface (ch. 22 fig.)."
@@ -102,12 +102,12 @@ claims:
     date: 2026-11-04
   - claimId: p01-necrosis-c013
     section: micro
-    statement: "Dead myocardial fibers look intensely eosinophilic about 24 hours after an infarct, but it takes several days for all their nuclei to disappear."
+    statement: "In a myocardial infarct the nuclei lag behind the cytoplasm: at about one day the dead fibres are already strongly eosinophilic, while complete loss of their nuclei needs several days."
     sourceRef: { source: rubin-8e, chapter: "17", pages: "657" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent (wording from the independent verifier's report of 2026-11-04, rechecked against the cited pages)"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-07
   - claimId: p01-necrosis-c014
     section: clinical
     statement: "Renal cortical necrosis (coagulative necrosis of cortical parenchyma) complicates shock, classically premature placental separation; analgesic nephropathy causes coagulative papillary necrosis."
@@ -122,8 +122,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "8", pages: "365" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent (reworded in its own structure after the second review flagged a close paraphrase, 2026-11-04; checked against the cited page)"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-07
   - claimId: p01-necrosis-c016
     section: definition
     statement: "An abscess is a cavity in a solid tissue formed by liquefactive necrosis, usually from a localized bacterial infection with neutrophil accumulation."
@@ -134,12 +134,12 @@ claims:
     date: 2026-11-04
   - claimId: p01-necrosis-c017
     section: gross
-    statement: "Brain abscess begins as cerebritis that softens and liquefies within days; it becomes encapsulated by granulation tissue, a fibrous rind and astrogliosis; the granulation layer lacks a blood-brain barrier and causes ring enhancement."
+    statement: "The contrast ring around a brain abscess on imaging is its granulation-tissue lining, which has no blood-brain barrier; the abscess starts as cerebritis that liquefies within days and is then enclosed, from inside out, by granulation tissue, a collagen capsule laid down by fibroblasts and a zone of reactive astrocytes."
     sourceRef: { source: rubin-8e, chapter: "32", pages: "1465" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent (wording from the independent verifier's report of 2026-11-04, rechecked against the cited pages)"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-07
   - claimId: p01-necrosis-c018
     section: prognosis
     statement: "Liquefaction of extensive CNS territory can leave a permanent cavity or cyst; brain infarcts typically liquefy into cystic infarcts (ch. 7 p. 338)."
@@ -170,16 +170,16 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "1", pages: "40" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent (page sentence and statement reworded after the independent verifier's report of 2026-11-04, rechecked against the cited page)"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-07
   - claimId: p01-necrosis-c022
     section: micro
-    statement: "A tuberculous granuloma has a soft caseous necrotic centre surrounded by epithelioid macrophages and Langhans giant cells, with an outer cuff of lymphocytes and fibrous tissue."
+    statement: "From the outside in, a tuberculous granuloma shows a cuff of lymphocytes and fibrous tissue, then epithelioid macrophages with Langhans giant cells, and at its centre a soft zone of caseous necrosis."
     sourceRef: { source: rubin-8e, chapter: "9", pages: "451" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent (wording from the independent verifier's report of 2026-11-04, rechecked against the cited pages)"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-07
   - claimId: p01-necrosis-c023
     section: clinical
     statement: "Primary TB forms a subpleural Ghon focus with involved hilar/mediastinal nodes; secondary TB forms apical cavities with caseous material; parenchymal CNS TB forms tuberculomas with central caseous necrosis (ch. 32)."
@@ -296,12 +296,12 @@ claims:
   - claimId: p01-necrosis-c037
     section: etiology
     statement: "Meningococcal sepsis can cause gangrene of the digits or limbs, through dermal vascular thrombosis during the sepsis (purpura fulminans) or, in some survivors, through severe late vasculitis; bowel infarction is another cause of gangrene (ch. 16 p. 606; ch. 19 p. 803)."
-    sourceRef: { source: rubin-8e, chapter: "9, 16, 19", pages: "417, 606, 803" }
+    sourceRef: { source: rubin-8e, chapter: "9, 16, 19", pages: "416-417, 606, 803" }
     status: beyond-reference
     secondSource: { source: betrosian-2006, locator: "abstract: purpura fulminans (DIC with dermal vascular thrombosis), most often from meningococcal sepsis, progresses to distal ischemia and often to amputation" }
     verifiedBy: agent
-    verifier: "fixer-agent (wording from the independent verifier's report of 2026-11-04, rechecked against the cited pages)"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-07
   - claimId: p01-necrosis-c038
     section: micro
     statement: "Coagulative necrosis keeps cell outlines; liquefactive necrosis forms a cavity filled with neutrophils and amorphous debris; caseous necrosis is outline-free granular eosinophilic debris in a granuloma."
@@ -312,12 +312,12 @@ claims:
     date: 2026-11-04
   - claimId: p01-necrosis-c039
     section: micro
-    statement: "Fibrinoid necrosis turns a segment of a vessel wall into a bright pink, uniform band with crisp edges; in fat necrosis the outlines of dead fat cells are edged by bluish, shapeless calcium soaps."
+    statement: "In fibrinoid necrosis a stretch of vessel wall is replaced by smooth, intensely eosinophilic material that ends abruptly against the surviving wall; in fat necrosis bluish calcium soaps without a definite shape crust the margins of clusters of dead fat cells."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "40" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent (wording from the independent verifier's report of 2026-11-04, rechecked against the cited pages)"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-07
   - claimId: p01-necrosis-c040
     section: micro
     statement: "Nuclear changes of coagulative necrosis: pyknosis (small, dark nucleus), karyorrhexis (fragmentation) and karyolysis (fading of chromatin)."
@@ -344,12 +344,12 @@ claims:
     date: 2026-11-04
   - claimId: p01-necrosis-c043
     section: prognosis
-    statement: "An abscess is eventually walled off by a fibrous capsule; liquefaction of a large area of the CNS can leave a lifelong cyst."
+    statement: "An abscess ends up enclosed by fibrous tissue that holds its contents in; when a large part of the brain or spinal cord liquefies, a cavity or cyst remains for the rest of the patient's life."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent (wording from the independent verifier's report of 2026-11-04, rechecked against the cited pages)"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-07
   - claimId: p01-necrosis-c044
     section: prognosis
     statement: "A brain abscess may threaten life by herniation or by rupture into a ventricle."
@@ -372,8 +372,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "25, 21", pages: "1077, 903" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent (wording from the independent verifier's report of 2026-11-04, rechecked against the cited pages)"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-07
   - claimId: p01-necrosis-c047
     section: prognosis
     statement: "Vessel walls with fibrinoid necrosis can be disrupted with hemorrhage (PAN), show thrombosis and aneurysm formation (Churg-Strauss), and arteriolar thrombosis causes focal cortical infarcts in malignant hypertension (ch. 22 p. 951)."
@@ -396,8 +396,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "1, 22", pages: "29, 955" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent (wording from the independent verifier's report of 2026-11-04, rechecked against the cited pages)"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-07
   - claimId: p01-necrosis-c050
     section: traps
     statement: "The term fibrinoid necrosis is a misnomer, because the eosinophilic plasma proteins obscure the wall and make it hard or impossible to tell whether necrosis is present."
@@ -453,61 +453,61 @@ claims:
     status: beyond-reference
     secondSource: { source: al-wahbi-2018, locator: "full text (PMC5987754), section 'Dry gangrene'" }
     verifiedBy: agent
-    verifier: "fixer-agent (wording from the independent verifier's report of 2026-11-04, rechecked against the cited pages)"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-07
   - claimId: p01-necrosis-c057
     section: gross
-    statement: "Gas gangrene shows on the skin above it: gas and fluid collecting in the deeper soft tissue stretch that skin tight, and it darkens as it bleeds and dies."
+    statement: "Gas gangrene shows on the skin above it: gas and fluid collecting in the deeper soft tissue stretch that skin tight, and bleeding into it and its death turn it dark."
     sourceRef: { source: rubin-8e, chapter: "9", pages: "429" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent (reworded in its own structure after the second review flagged a close paraphrase, 2026-11-04; checked against the cited page)"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-07
   - claimId: p01-necrosis-c058
     section: micro
     statement: "Tissue affected by gas gangrene shows widespread necrosis with very few neutrophils, and Gram-positive rods are often seen in it."
     sourceRef: { source: rubin-8e, chapter: "9", pages: "429" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent (matrix cell claim added after the independent verifier's report of 2026-11-04, checked against the cited page)"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-07
   - claimId: p01-necrosis-c059
     section: gross
-    statement: "Over the first one to two days the dead zone of a pale infarct softens and fades to a clearly bounded yellow, while blood leaking into the living tissue around it frames it in dark red."
+    statement: "A pale infarct turns yellow within one to two days, once the first congestion has passed; a dark-red rim, from blood leaking into the surviving tissue, marks its sharp edge, and the dead zone itself is soft."
     sourceRef: { source: rubin-8e, chapter: "7", pages: "337" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent (reworded in its own structure after the second review flagged a close paraphrase, 2026-11-04; checked against the cited page)"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-07
   - claimId: p01-necrosis-c060
     section: pathogenesis
     statement: "Caseation reflects the T-cell–driven hypersensitivity response to M. tuberculosis, which destroys tissue when the bacillary load is high."
     sourceRef: { source: rubin-8e, chapter: "9", pages: "451" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent (matrix cell claim added after the independent verifier's report of 2026-11-04, checked against the cited page)"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-07
   - claimId: p01-necrosis-c061
     section: gross
     statement: "The name says it: to the naked eye the dead centre resembles cheese, a pale material that breaks up easily."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "40" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent (reworded in its own structure after the second review flagged a close paraphrase, 2026-11-04; checked against the cited page)"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-07
   - claimId: p01-necrosis-c062
     section: clinical
     statement: "In cutaneous hypersensitivity vasculitis the legs are the usual site of palpable purpura."
     sourceRef: { source: rubin-8e, chapter: "16", pages: "620" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent (matrix cell claim added after the independent verifier's report of 2026-11-04, checked against the cited page)"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-07
   - claimId: p01-necrosis-c063
     section: gross
-    statement: "Where malignant hypertension has injured the small renal vessels, thrombosis can leave small infarcts in the cortex; cut open, such a kidney looks blotched with red and yellow."
+    statement: "Small renal vessels damaged by malignant hypertension may clot, and the patches of cortex they feed then die as small infarcts; the sectioned kidney shows red and yellow patches."
     sourceRef: { source: rubin-8e, chapter: "22", pages: "951" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent (reworded again, cause first, after the second review found the 2026-11-04 wording still followed the reference point by point; checked against the cited page)"
+    verifier: "independent-verifier-agent"
     date: 2026-11-07
