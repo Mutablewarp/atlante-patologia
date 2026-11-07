@@ -188,14 +188,18 @@ export const imageSchema = z
   .object({
     id: Id,
     file: z.string().min(1),
+    /** Italian copy of an original diagram whose drawing carries text (`file` is the English one); see image-meta.ts `fileFor`. */
+    fileIt: z.string().min(1).optional(),
     kind: z.enum(['gross', 'micro', 'diagram', 'imaging', 'clinical']),
     sourceUrl: z.url(),
     author: z.string().min(1),
     license: z.enum(IMAGE_LICENSES),
     licenseUrl: z.url(),
     retrievedAt: z.coerce.date(),
-    modifications: z.string().min(1),
-    attributionText: z.string().min(1),
+    /** 'none', or what we changed (crop, resize, re-encoding…) in both languages: it is shown in the credit line. */
+    modifications: z.union([z.literal('none'), L]),
+    /** Exact credit line: a third party's as its source asks for it; ours (license 'original') in both languages. */
+    attributionText: z.union([z.string().min(1), L]),
     patientIdentifiable: z.literal(false),
     ownerApproved: z.boolean().default(false),
     verifiedBy: z.object({ who: z.enum(['agent', 'human']), name: z.string().min(1), date: z.coerce.date() }),
@@ -234,6 +238,10 @@ export const imageSchema = z
   .superRefine((img, ctx) => {
     if (img.license.startsWith('CC-BY-SA') && !img.ownerApproved)
       ctx.addIssue({ code: 'custom', path: ['ownerApproved'], message: 'CC BY-SA images need ownerApproved: true' });
+    if (img.license === 'original' && typeof img.attributionText === 'string')
+      ctx.addIssue({ code: 'custom', path: ['attributionText'], message: 'our own images credit us in both languages ({ it, en })' });
+    if (img.fileIt && img.license !== 'original')
+      ctx.addIssue({ code: 'custom', path: ['fileIt'], message: 'only our own diagrams have an Italian copy' });
   });
 
 // ── §6 Other collections ─────────────────────────────────────────────────────

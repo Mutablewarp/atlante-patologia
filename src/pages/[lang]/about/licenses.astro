@@ -10,8 +10,22 @@ export const getStaticPaths = langPaths;
 const lang = Astro.params.lang as Lang;
 const BY_SA = 'https://creativecommons.org/licenses/by-sa/4.0/legalcode';
 const BY_SA_DEED = lang === 'it' ? 'https://creativecommons.org/licenses/by-sa/4.0/deed.it' : 'https://creativecommons.org/licenses/by-sa/4.0/deed.en';
-// Notices of the code the 3D viewer downloads (3Dmol.js and what its build bundles), read from the installed packages (D050).
+// Notices read from the installed packages, so the text and the version always match what the build ships.
 const pkg = (p: string) => readFileSync(`${process.cwd()}/node_modules/${p}`, 'utf8').trim();
+const ver = (p: string) => (JSON.parse(pkg(`${p}/package.json`)) as { version: string }).version;
+// Code every visitor's browser runs: the island runtime (Astro, @astrojs/preact), the islands (Preact, signals),
+// study data (idb, ts-fsrs) and search (Pagefind, under pagefind/).
+const site = [
+  { name: `Astro ${ver('astro')}`, license: 'MIT', text: pkg('astro/LICENSE') },
+  { name: `@astrojs/preact ${ver('@astrojs/preact')}`, license: 'MIT', text: pkg('@astrojs/preact/LICENSE') },
+  { name: `Preact ${ver('preact')}`, license: 'MIT', text: pkg('preact/LICENSE') },
+  { name: `@preact/signals ${ver('@preact/signals')}`, license: 'MIT', text: pkg('@preact/signals/LICENSE') },
+  { name: `@preact/signals-core ${ver('@preact/signals-core')}`, license: 'MIT', text: pkg('@preact/signals-core/LICENSE') },
+  { name: `idb ${ver('idb')}`, license: 'ISC', text: pkg('idb/LICENSE') },
+  { name: `ts-fsrs ${ver('ts-fsrs')}`, license: 'MIT', text: pkg('ts-fsrs/LICENSE') },
+  { name: `Pagefind ${ver('pagefind')}`, license: 'MIT', text: pkg('pagefind/LICENSE/LICENSE') },
+];
+// Notices of the code the 3D viewer downloads (3Dmol.js and what its build bundles) (D050).
 // The zlib notice is the comment block at the top of pako's zlib port.
 const zlibNotice = (pkg('pako/lib/zlib/inflate.js').match(/^'use strict';\s*\n((?:\/\/.*\n)+)/)?.[1] ?? '')
   .replace(/^\/\/ ?/gm, '')
@@ -82,7 +96,30 @@ const notices = [
       <p>The titles of the textbooks we cite belong to their publishers. No content from those books is reproduced in the atlas.</p>
     </Fragment>
   </Bi>
-  <h2 id="third-party-code">{lang === 'it' ? 'Codice di terze parti per la vista 3D' : 'Third-party code in the 3D view'}</h2>
+  <h2 id="third-party-code">{lang === 'it' ? 'Codice di terze parti' : 'Third-party code'}</h2>
+  <Bi lang={lang}>
+    <p slot="it">
+      Il sito fa girare nel tuo browser codice libero di altri progetti: Astro e @astrojs/preact per le parti interattive,
+      Preact e @preact/signals per gli strumenti di studio, idb per salvare i dati sul dispositivo, ts-fsrs per il ripasso a
+      intervalli e Pagefind per la ricerca. Ne riportiamo gli avvisi di copyright e le licenze, come richiedono.
+    </p>
+    <p slot="en">
+      The site runs free code from other projects in your browser: Astro and @astrojs/preact for the interactive parts, Preact
+      and @preact/signals for the study tools, idb to store data on your device, ts-fsrs for spaced review and Pagefind for
+      search. Their copyright notices and licences are reproduced here, as they require.
+    </p>
+  </Bi>
+  {
+    site.map((n) => (
+      <details class="license-notice">
+        <summary>
+          {n.name} — {n.license}
+        </summary>
+        <pre lang="en">{n.text}</pre>
+      </details>
+    ))
+  }
+  <h3 id="third-party-3d">{lang === 'it' ? 'Vista 3D' : '3D view'}</h3>
   <Bi lang={lang}>
     <p slot="it">
       La vista 3D dei percorsi molecolari usa 3Dmol.js, scaricato solo quando premi «Carica la vista 3D», insieme alle

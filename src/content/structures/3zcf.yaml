@@ -27,10 +27,10 @@ citation:
   doi: 10.1042/BJ20130758
   pmid: "24099549"
 caveats:
-  it: Proteina umana ricombinante. Il cristallo contiene quattro copie; qui se ne mostra una, con il suo gruppo eme.
-  en: Recombinant human protein. The crystal holds four copies; one is shown here, with its haem group.
+  it: Proteina umana ricombinante. Il modello depositato contiene quattro copie della molecola; qui se ne mostra una, con il suo gruppo eme.
+  en: Recombinant human protein. The deposited model contains four copies of the molecule; one is shown here, with its haem group.
 file: structures/3zcf.bcif.gz
-bytes: 37728
+bytes: 37732
 modelServerQuery: full?model_nums=1&encoding=bcif
 coarse: false
 show:
@@ -61,4 +61,4 @@ chains:
       - HEC
 license: CC0-1.0
 sourceUrl: https://www.rcsb.org/structure/3ZCF
-retrievedAt: 2026-11-03
+retrievedAt: 2026-11-04

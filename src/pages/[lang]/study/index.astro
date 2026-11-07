@@ -58,8 +58,8 @@ const pws = await pathways();
   <p><a href={langPath(lang, 'about/evidence/')}>{tS(lang, 'evidenceLink')} →</a></p>
   {/* Filled from IndexedDB after paint: kept below the cards, in reserved space, so nothing above it moves (CLS 0). */}
   <div class="hub-status">
-    <ap-export-reminder></ap-export-reminder>
     <p class="hub-due"><ap-due-count></ap-due-count></p>
     <ap-resume></ap-resume>
+    <ap-export-reminder></ap-export-reminder>
   </div>
 </BaseLayout>

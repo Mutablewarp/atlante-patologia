@@ -1,6 +1,6 @@
 # Content schema
 
-Status: PHASE 0 proposal, 2026-10-10. In Phase 1 these become Zod schemas in `src/lib/schema.ts` (`import { z } from 'astro/zod'`, Zod 4), imported by `src/content.config.ts` and by the Vitest validators. One schema, used in two places.
+Status: PHASE 0 proposal, 2026-10-10, implemented in Phase 1 as Zod schemas in `src/lib/schema.ts` (`import { z } from 'astro/zod'`, Zod 4), imported by `src/content.config.ts` and by the Vitest validators. One schema, used in two places; where this page and `src/lib/schema.ts` differ, the code wins. §1b, §3, §3a and §8 were brought in line with the code on 2026-11-04.
 
 ## 0. Shared types
 
@@ -78,7 +78,7 @@ Derived, not stored:
 
 Frontmatter: `{ lang: 'en' | 'it', translatedFrom?: <sha256 of en.md at translation time> }`.
 
-Body: exactly these H2 sections, in this order. The titles are the canonical localized strings in `src/i18n/<lang>.ts`. A small rehype step maps each title to a stable anchor id, so anchors match across languages.
+Body: exactly these H2 sections, in this order. The titles are the canonical localized strings in `src/i18n/sections.ts`. `src/lib/sections.ts` splits the rendered HTML on these titles and gives each section a stable anchor id (D030), so anchors match across languages.
 
 | # | Anchor id | EN title | IT title (proposed) | Quick mode |
 |---|---|---|---|---|
@@ -102,7 +102,7 @@ A section that does not apply, such as gross morphology for a molecular process,
 Authoring conventions inside the markdown:
 
 - **Claim markers:** `<!--c:<entity>-c###-->` at the end of every sentence that states a fact. The same marker appears in both languages. The marker survives in HTML as a comment and is reused by the "report an error" link.
-- **Numbers** (%, rates, survival, lab ranges) must have a claim marker whose ledger row has a source. Otherwise write "approximately" and the validator flags the line for REVIEW_QUEUE.
+- **Numbers** (%, rates, survival, lab ranges) must have a claim marker whose ledger row has a source; the numbers gate fails a sentence that states a number without one. A number written as "approximately" because no source gives it also needs a REVIEW_QUEUE entry, added by hand.
 - **Sources differ:** `<aside class="sources-differ">…</aside>`, plus a REVIEW_QUEUE entry.
 - **Edition-dependent passages:** `<aside class="edition">…</aside>`.
 - **Differential section:** a markdown table with columns: entity | discriminating features | key test. Linked entities use `[[id]]` (or `[[id|label]]`); glossary terms use `[[g:id]]`. Links are resolved at build on the rendered HTML (`src/lib/crosslinks.ts`, D038). Unpublished targets render as plain text with a "planned" label. The references gate fails on an id that is neither an entity nor planned.
@@ -148,6 +148,14 @@ pattern = z.object({
 
 `en.md` / `it.md`: free sections (overview, mechanism, how to recognise it, pitfalls), with claim markers. The matrix renders as a table with a sticky first column and horizontal scroll on phones.
 
+Matrix cells state facts, so **every cell carries claim markers** (`<!--c:<pattern>-c###-->`), right after the phrase each one supports, with the same markers in `it` and `en`. A cell that restates a claim of the page text reuses its marker; a fact that only the matrix states gets its own ledger row. The ledger gate fails a cell of a published pattern without a marker or with different markers in the two languages (D060). The page renders a cell as escaped text and keeps its markers as HTML comments.
+
+## 3a. Pathway — `src/content/pathways/<id>.yaml` (O9, D054)
+
+`pathwaySchema` in `src/lib/schema.ts`: `id, title: L, summary: L, entity: Id` (the card that shows the compact block), `module`, `steps` (≥ 2: `id, title: L, short: L` for the diagram box, `text: L` with claim markers after every sentence, optional `sourcesDiffer: L` aside, optional `structure` and `highlight`), `sources, reviewStatus, lastUpdated, status`. Claims live in `docs/ledger/pathway-<id>.yaml`, where `section` is the step id (tested in `tests/pathways.test.ts`).
+
+Structures (`src/content/structures/<pdb>.yaml`) are **generated** by `scripts/fetch-structures.mjs` from the RCSB Data API and ModelServer, together with `public/structures/<pdb>.bcif.gz`. Their `caveats` (organism, method, missing or engineered parts) are our own wording, written in the script and checked against the RCSB entry; they are provenance notes with no claim markers. Edit the script and regenerate, never the YAML.
+
 ## 4. Question — `src/content/questions/<module>/<id>.yaml`
 
 ```ts
@@ -174,6 +182,7 @@ question = z.object({
 image = z.object({
   id: Id,
   file: z.string(),                                // path under src/assets/images
+  fileIt: z.string().optional(),                   // Italian copy of one of our diagrams whose drawing carries text (only license 'original')
   kind: z.enum(['gross','micro','diagram','imaging','clinical']),
   sourceUrl: z.string().url(),                     // the FILE page, not a search page
   author: z.string().min(1),                       // the creator, not merely the uploader
@@ -181,8 +190,8 @@ image = z.object({
                    'CC-BY-SA-2.0','CC-BY-SA-2.5','CC-BY-SA-3.0','CC-BY-SA-4.0']),
   licenseUrl: z.string().url(),
   retrievedAt: z.coerce.date(),
-  modifications: z.string(),                       // 'none' or what we changed (crop, labels…)
-  attributionText: z.string().min(1),              // exact credit line shown under the image
+  modifications: z.union([z.literal('none'), L]),  // 'none' or what we changed (crop, labels…), in both languages
+  attributionText: z.union([z.string().min(1), L]), // exact credit line shown under the image; { it, en } for our own (license 'original')
   patientIdentifiable: z.literal(false),
   ownerApproved: z.boolean().default(false),        // must be true for any CC-BY-SA-*
   verifiedBy: z.object({ who: z.enum(['agent','human']), name: z.string(), date: z.coerce.date() }),
@@ -209,6 +218,8 @@ image = z.object({
 - `magnification` keeps the source's wording; write `low power`, `medium power` (or `intermediate power`) or `high power` first so `powerOf()` can read it. Add `objective` only when the source names the objective.
 - `mpp` turns on the scale bar. Never estimate it: no stated calibration, no `mpp`, no scale bar.
 - `group`: every image of one lesion (same case or same teaching set) gets the same group id. The viewer shows a switch (radio group) labelled with stain · section · power · objective, ordered low to high power; each image keeps its own alt, labels, caption and credit. The zoom level is kept on switch and the position resets, because sections are not registered to each other. An entity or pattern lists **one** image of the group (the one shown first); the viewer finds the others, so do not list them again.
+
+**Our own diagrams** (`license: original`, shown as CC BY-SA 4.0) are drawn once per language when the drawing carries words: `file` is the English SVG, `fileIt` the Italian copy (`<name>.it.svg`, same drawing, translated labels, title and description), and each page shows the copy in its language (`fileFor()` in `src/lib/image-meta.ts`). Their credit line is `{ it, en }`. Like captions and alt text, the words in a drawing have no claim markers or ledger rows (the Method page says so).
 
 The Credits page and per-image credit lines are generated from these files. An image without complete data cannot be referenced. The entity uses a placeholder, and the gap is logged in `docs/MISSING_ASSETS.md`.
 
@@ -258,6 +269,8 @@ Gate rules:
 - `not-found-in-reference` and `beyond-reference` need `secondSource`, or the claim is removed.
 - `sources-differ` must also appear as an aside in the text and in REVIEW_QUEUE.
 - The verifier is a separate sub-agent with fresh context. It receives the card text and reference pages, never the author agent's reasoning.
+- `verifier` ids: a separate verifier records `verifier-agent` or `independent-verifier-agent`. A row checked only by the agent that wrote it (`…author-agent`) or that reworded or added it after the verifier's report (`fixer-agent…`) is a self-check. `src/lib/self-verified.ts` counts self-checked rows per page and the Method page lists them; `tests/ledger-verifier.test.ts` keeps the list equal to the ledgers and accepts no other agent id (D061). A later check by a separate verifier replaces the id.
+- The page lists in its `sources` every source and second source its ledger relies on, because the page shows only `sources` (D062).
 
 ## 9. Example (illustrative only, not reviewed content)
 

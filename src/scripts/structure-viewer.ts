@@ -20,7 +20,7 @@ class ApStructure extends HTMLElement {
 
   connectedCallback() {
     this.steps = JSON.parse(this.querySelector('[data-steps]')?.textContent ?? '[]');
-    this.closest('ap-pathway')?.addEventListener('ap-step', (e) => this.go((e as CustomEvent<number>).detail));
+    this.closest('ap-pathway')?.addEventListener('ap-step', (e) => void this.go((e as CustomEvent<number>).detail).catch((err) => this.broken(err)));
     this.$('[data-load]')?.addEventListener('click', () => void this.load());
     this.querySelectorAll<HTMLButtonElement>('[data-act]').forEach((b) => b.addEventListener('click', () => this.act(b.dataset.act!, b)));
     this.$('[data-stage]')?.addEventListener('keydown', (ev) => {
@@ -50,8 +50,11 @@ class ApStructure extends HTMLElement {
     const id = this.steps[this.structureAt(i)]?.structure;
     this.querySelectorAll<HTMLElement>('[data-for]').forEach((el) => (el.hidden = el.dataset.for !== id));
     if (id) this.$('[data-stage]')?.setAttribute('aria-describedby', `structure-desc-${id}`);
-    // Draws run one after another and always draw the latest step, so fast clicks never leave a stale model.
-    return (this.queue = this.queue.then(() => this.draw()));
+    // Draws run one after another and always draw the latest step, so fast clicks never leave a stale model;
+    // a failed draw does not block the ones after it (its caller gets the error).
+    const run = this.queue.then(() => this.draw());
+    this.queue = run.catch(() => undefined);
+    return run;
   }
 
   private async draw() {
@@ -100,18 +103,26 @@ class ApStructure extends HTMLElement {
       stage.focus();
       this.say(this.dataset.tReady!);
     } catch (err) {
-      console.error(err);
-      this.ctrl = undefined;
-      this.fail();
+      this.broken(err);
     }
   }
 
+  /** The import, WebGL or a structure file failed, at load or on a later step: back to the poster, description and steps. */
+  private broken(err: unknown) {
+    console.error(err);
+    this.ctrl = undefined;
+    this.fail();
+  }
+
   private fail() {
+    // Focus moves only when it was on a control that disappears now (or nowhere): keep the keyboard user's place.
+    const lost = !document.activeElement || document.activeElement === document.body || this.contains(document.activeElement);
     delete this.dataset.loaded;
-    this.$('[data-load]')!.hidden = true;
+    for (const s of ['[data-load]', '[data-tools]', '[data-canvas]']) this.$(s)!.hidden = true;
+    this.$('[data-stage]')!.removeAttribute('tabindex');
     const fallback = this.$('[data-fallback]')!;
     fallback.hidden = false;
-    fallback.focus(); // the focused button is gone: keep the keyboard user's place
+    if (lost) fallback.focus();
     this.say(this.dataset.tFail!);
   }
 }

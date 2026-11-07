@@ -1,0 +1,45 @@
+---
+/**
+ * The sources a pathway's ledger relies on (D062). On the pathway page, and
+ * under the compact block of the card that hosts the pathway, so the card
+ * cites what its sources-differ asides report.
+ */
+import type { Lang } from '../../i18n/index.ts';
+import type { Pathway } from '../../lib/schema.ts';
+import { sources as getSources } from '../../lib/content.ts';
+
+interface Props {
+  lang: Lang;
+  pathway: Pathway;
+  /** Id of the heading (the section is labelled by it). */
+  id: string;
+  title: string;
+  heading?: 'h2' | 'h3';
+}
+const { lang, pathway, id, title, heading: H = 'h2' } = Astro.props;
+const all = await getSources();
+const cited = pathway.sources.map((s) => ({ ...s, src: all.find((x) => x.id === s.source) }));
+---
+
+<section class="sources" aria-labelledby={id}>
+  <H id={id}>{title}</H>
+  <ul>
+    {
+      cited.map((c) => (
+        <li>
+          {c.src ? <cite>{c.src.title}</cite> : c.source}
+          {c.src?.edition && `, ed. ${c.src.edition}`}
+          {c.src?.journal && `, ${c.src.journal}`}
+          {c.chapter && ` · ${lang === 'it' ? 'cap.' : 'ch.'} ${c.chapter}`}
+          {c.pages && ` · pp. ${c.pages}`}
+          {c.src?.doi && (
+            <>
+              {' '}· <a href={`https://doi.org/${c.src.doi}`} rel="noopener">doi:{c.src.doi}</a>
+            </>
+          )}
+        </li>
+      ))
+    }
+  </ul>
+  <slot />
+</section>

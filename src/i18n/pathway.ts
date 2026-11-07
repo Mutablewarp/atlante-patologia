@@ -16,6 +16,7 @@ export const tPw = defineStrings({
   openFull: { it: 'Apri il percorso completo', en: 'Open the full pathway' },
   onEntity: { it: 'Il percorso passo per passo', en: 'The pathway step by step' },
   sources: { it: 'Fonti', en: 'Sources' },
+  sourcesOfPathway: { it: 'Fonti di questo percorso', en: 'Sources of this pathway' },
   reportThis: { it: 'Segnala un errore in questo percorso', en: 'Report an error in this pathway' },
 
   // 3D viewer
@@ -43,7 +44,7 @@ export const tPw = defineStrings({
   labels: { it: 'Etichette', en: 'Labels' },
   poster: { it: 'Immagine statica della struttura {pdb}', en: 'Still image of structure {pdb}' },
   legendBase: { it: 'grigio: resto della struttura', en: 'grey: rest of the structure' },
-  legendHighlight: { it: 'arancione: {label}', en: 'orange: {label}' },
+  legendHighlight: { it: 'arancione con sfere: {label}', en: 'orange with spheres: {label}' },
   structureLine: { it: 'Struttura 3D: PDB {pdb}', en: '3D structure: PDB {pdb}' },
   method: { it: 'Metodo', en: 'Method' },
   resolution: { it: 'risoluzione', en: 'resolution' },

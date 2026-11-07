@@ -146,7 +146,7 @@ export function ledgerGate(tree: Tree, parsed: Parsed): Problem[] {
   const problems: Problem[] = [];
   const allClaims = new Set([...parsed.ledgers.values()].flatMap((l) => l.data.claims.map((c) => c.claimId)));
   const published = [...parsed.entities, ...parsed.patterns].filter((x) => x.data.status === 'published');
-  for (const { unit } of published) {
+  for (const { unit, data } of published) {
     const p = (file: string, message: string) => problems.push({ gate: 'ledger', file, message });
     const file = `docs/ledger/${unit.id}.yaml`;
     if (!tree.ledgers.has(unit.id)) {
@@ -156,7 +156,14 @@ export function ledgerGate(tree: Tree, parsed: Parsed): Problem[] {
     const ledger = parsed.ledgers.get(unit.id);
     if (!ledger) continue; // schema problem already reported
     const bodies = [unit.en ?? '', unit.it ?? ''];
-    const markers = new Set(bodies.flatMap((b) => [...claimMarkers(b)]));
+    // Pattern matrix cells state facts too: each carries the same markers in both languages (CONTENT_SCHEMA §3).
+    const cells = 'matrix' in data ? data.matrix.rows.flatMap((r) => r.cells) : [];
+    for (const c of cells) {
+      const [en, it] = [[...claimMarkers(c.en)].sort().join(), [...claimMarkers(c.it)].sort().join()];
+      if (!en) p(unit.meta.path, `matrix cell without a claim marker: "${c.en.slice(0, 60)}"`);
+      else if (en !== it) p(unit.meta.path, `matrix cell markers differ between en and it: "${c.en.slice(0, 60)}"`);
+    }
+    const markers = new Set([...bodies, ...cells.map((c) => c.en)].flatMap((b) => [...claimMarkers(b)]));
     const rows = new Set(ledger.data.claims.map((c) => c.claimId));
     for (const m of markers) if (!rows.has(m)) p(file, `no ledger row for marker ${m}`);
     for (const c of ledger.data.claims) {
@@ -168,6 +175,10 @@ export function ledgerGate(tree: Tree, parsed: Parsed): Problem[] {
       if (c.status === 'sources-differ' && !bodies.every((b) => b.includes('class="sources-differ"')))
         p(file, `${c.claimId}: sources-differ needs <aside class="sources-differ"> in en.md and it.md`);
     }
+    // The page shows only meta `sources`, so it must list every known source its ledger relies on.
+    const cited = new Set(data.sources.map((s) => s.source));
+    const relied = ledger.data.claims.flatMap((c) => [c.sourceRef.source, ...(c.secondSource ? [c.secondSource.source] : [])]);
+    for (const id of new Set(relied)) if (parsed.sources.has(id) && !cited.has(id)) p(unit.meta.path, `sources must list "${id}", which the ledger cites`);
   }
   for (const { doc, data } of parsed.questions)
     if (data.status === 'published')
@@ -283,9 +294,11 @@ export function reviewGate(tree: Tree, parsed: Parsed): Problem[] {
 
 /** Gate 6: image files exist (licence and patientIdentifiable rules are schema-level, reported as gate "images"). */
 export function imagesGate(tree: Tree, parsed: Parsed): Problem[] {
-  return parsed.images
-    .filter(({ doc, data }) => !tree.assets.has(data.file) && !(isFixtureDoc(doc) && tree.fixtureAssets.has(data.file)))
-    .map(({ doc, data }) => ({ gate: 'images' as const, file: doc.path, message: `file "${data.file}" not found under src/assets/images` }));
+  return parsed.images.flatMap(({ doc, data }) =>
+    [data.file, ...(data.fileIt ? [data.fileIt] : [])]
+      .filter((f) => !tree.assets.has(f) && !(isFixtureDoc(doc) && tree.fixtureAssets.has(f)))
+      .map((f) => ({ gate: 'images' as const, file: doc.path, message: `file "${f}" not found under src/assets/images` })),
+  );
 }
 
 export function runGates(tree: Tree): { problems: Problem[]; stale: StaleTranslation[] } {

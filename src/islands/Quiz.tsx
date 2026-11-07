@@ -42,13 +42,26 @@ export default function Quiz({ lang, filter }: { lang: Lang; filter?: 'image-spo
   const t: T = (k) => tS(lang, k);
   const idx = useLoad(() => loadIndex(lang));
   const [run, setRun] = useState<Run | null>(null);
+  const [restarted, setRestarted] = useState(false);
   if (idx.loading) return <p aria-live="polite">{t('loading')}</p>;
   const index = idx.data;
   const modules = (index?.modules ?? []).filter((m) => m.questions > 0);
   if (!index || !modules.length) return <p class="empty-state">{t('noContent')}</p>;
   if (run)
-    return <Runner key={run.questions.map((q) => q.id).join()} lang={lang} t={t} {...run} index={index} onRestart={() => setRun(null)} />;
-  return <Setup lang={lang} t={t} index={index} modules={modules.map((m) => m.id)} filter={filter} onStart={setRun} />;
+    return (
+      <Runner
+        key={run.questions.map((q) => q.id).join()}
+        lang={lang}
+        t={t}
+        {...run}
+        index={index}
+        onRestart={() => {
+          setRun(null);
+          setRestarted(true);
+        }}
+      />
+    );
+  return <Setup lang={lang} t={t} index={index} modules={modules.map((m) => m.id)} filter={filter} focus={restarted} onStart={setRun} />;
 }
 
 function Setup(props: {
@@ -57,9 +70,15 @@ function Setup(props: {
   index: StudyIndex;
   modules: string[];
   filter?: 'image-spot';
+  focus: boolean;
   onStart: (r: Run) => void;
 }) {
   const { lang, t, index, filter } = props;
+  const form = useRef<HTMLFormElement>(null);
+  // After "Start again" the results are gone: focus the chosen mode (or the first field) instead of <body>.
+  useEffect(() => {
+    if (props.focus) form.current?.querySelector<HTMLElement>('input:checked, input:not([type=radio]), select')?.focus();
+  }, []);
   const initialMode = param('mode') as Mode | null;
   const entity = param('entity');
   const [mode, setMode] = useState<Mode>(filter ? 'mixed' : initialMode && MODES.includes(initialMode) ? initialMode : 'topic');
@@ -94,7 +113,7 @@ function Setup(props: {
   }
 
   return (
-    <form class="card tool-form" onSubmit={start}>
+    <form ref={form} class="card tool-form" onSubmit={start}>
       {!filter && (
         <fieldset>
           <legend>{t('mode')}</legend>
@@ -165,6 +184,7 @@ function Runner(props: Run & { lang: Lang; t: T; index: StudyIndex; onRestart: (
   const [left, setLeft] = useState(props.seconds ?? 0);
   const [paused, setPaused] = useState(false);
   const headRef = useRef<HTMLHeadingElement>(null);
+  const finishing = useRef(false);
   const q = questions[pos]!;
   const a = answers[q.id] ?? {};
   const setA = (patch: Answer) => setAnswers((all) => ({ ...all, [q.id]: { ...all[q.id], ...patch } }));
@@ -189,6 +209,9 @@ function Runner(props: Run & { lang: Lang; t: T; index: StudyIndex; onRestart: (
     await saveAttempt(q, grade === 'right', mode, a.confidence);
   }
   async function finish() {
+    // One save per answer: a second press of Finish, or the timer ticking on while the writes wait, must not save the exam again.
+    if (finishing.current) return;
+    finishing.current = true;
     if (exam) for (const x of questions) if (x.kind !== 'short' && answers[x.id]?.choice) await saveAttempt(x, isRight(x, answers[x.id]), mode, answers[x.id]?.confidence);
     setFinished(true);
   }

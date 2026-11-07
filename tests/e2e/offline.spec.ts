@@ -70,3 +70,28 @@ test('an installed offline pack makes its pages load offline', async ({ page, co
   await page.goto('it/e/fixture-demo/');
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Sei offline');
 });
+
+test('study data from an installed pack is served only offline: online, the deployed file wins', async ({ page, context }) => {
+  await page.goto('it/me/offline/');
+  await swReady(page);
+  const pack = page.locator('[data-pack="g01"]');
+  await pack.getByRole('button', { name: /^Scarica / }).click();
+  await expect(pack.locator('[data-state]')).toHaveText('Disponibile offline');
+  // The pack holds the file as it was on the day of the download; a later deploy changes it under the same name.
+  const url = new URL('../../data/index.json', page.url()).href; // it/me/offline/ → it/data/index.json
+  const packed = '{"packed":true}';
+  await page.evaluate(
+    async ([u, body]) => {
+      const name = (await caches.keys()).find((k) => k.startsWith('pack-it-g01-'))!;
+      await (await caches.open(name)).put(u, new Response(body, { headers: { 'content-type': 'application/json' } }));
+    },
+    [url, packed] as const,
+  );
+  const read = () => page.evaluate(async (u) => (await fetch(u)).text(), url);
+  const deployed = await read();
+  expect(deployed).not.toBe(packed);
+  expect(JSON.parse(deployed)).toHaveProperty('entities');
+  await context.setOffline(true);
+  expect(await read()).toBe(packed);
+  await context.setOffline(false);
+});

@@ -2,18 +2,22 @@
 /**
  * Pattern Page (CONTENT_SCHEMA §3, NAVIGATION_SPEC §5): overview text, the
  * cross-organ comparison matrix (real table, sticky first column, labelled
- * focusable scroll region), images per row, related cards.
+ * focusable scroll region), images per row, related cards; contents as on
+ * entity pages (section chips on phones and tablets, side list on desktop).
  */
+import type { MarkdownHeading } from 'astro';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Breadcrumb from '../../../components/nav/Breadcrumb.astro';
 import ImageViewer from '../../../components/horizontal/ImageViewer.astro';
 import TextSize from '../../../components/nav/TextSize.astro';
+import SectionToc from '../../../components/entity/SectionToc.astro';
 import { LANGS, fmt, formatDate, type Lang } from '../../../i18n/index.ts';
 import { tAtlas, tEntity } from '../../../i18n/pages.ts';
 import { tHz } from '../../../i18n/horizontal.ts';
 import { langPath } from '../../../lib/url.ts';
 import { siteData, patterns, patternBody, sources as getSources } from '../../../lib/content.ts';
 import { withCrossLinks, imageById, anyEntityName } from '../../../lib/horizontal.ts';
+import { stepHtml } from '../../../lib/pathways.ts';
 import '../../../styles/entity.css';
 import '../../../styles/horizontal.css';
 
@@ -45,6 +49,16 @@ const rows = await Promise.all(
 const hasImages = pattern.images.length > 0;
 const allSources = await getSources();
 const captionId = 'matrix-caption';
+// Contents as on entity pages: the text's H2s (label up to a colon or bracket), then matrix, images and cards.
+const headings = (body?.rendered?.metadata?.headings ?? []) as MarkdownHeading[];
+const toc = [
+  ...headings.filter((h) => h.depth === 2).map((h) => ({ id: h.slug, label: h.text.split(/\s*[(:]/)[0] || h.text })),
+  { id: 'matrix-title', label: t('matrixTitle') },
+  ...(hasImages ? [{ id: 'images-title', label: t('imagesTitle') }] : []),
+  { id: 'pattern-cards-title', label: t('patternCards') },
+];
+// Each H2 with its text up to the next H2 becomes a <section>, the unit the contents follow (shell.ts).
+const sectioned = html.replace(/<h2\b[\s\S]*?(?=<h2\b|$)/g, (s) => `<section>${s}</section>`);
 ---
 
 <BaseLayout lang={lang} title={pattern.names[lang]} description={pattern.summary[lang]} tab="atlas">
@@ -80,112 +94,123 @@ const captionId = 'matrix-caption';
       <div class="entity-toolbar js-only"><TextSize lang={lang} /></div>
     </header>
 
-    <div class="prose" set:html={html} />
+    <div class="entity-layout">
+      {/* The side list stays beside the text and ends with it (desktop), so it never covers the full-width
+          matrix; on phones and tablets the lead is no box and the chip strip stays sticky to the end (entity.css). */}
+      <div class="pattern-lead">
+        <SectionToc lang={lang} items={toc} />
+        <div class="entity-body">
+          <div class="prose" set:html={sectioned} />
+        </div>
+      </div>
+      <div class="entity-body">
+        <section class="pattern-matrix" aria-labelledby="matrix-title">
+          <h2 id="matrix-title">{t('matrixTitle')}</h2>
+          <div class="table-scroll" role="region" aria-labelledby={captionId} tabindex="0">
+            <table class="matrix">
+              <caption id={captionId}>{fmt(t('scrollTable'), { name: pattern.names[lang] })}</caption>
+              <thead>
+                <tr>
+                  {pattern.matrix.columns.map((c) => <th scope="col">{c[lang]}</th>)}
+                  {hasImages && <th scope="col">{t('matrixImages')}</th>}
+                </tr>
+              </thead>
+              <tbody>
+                {
+                  rows.map((r) => (
+                    <tr>
+                      <th scope="row">
+                        {r.visible ? (
+                          <a href={langPath(lang, `e/${r.entity}/`)}>{r.name}</a>
+                        ) : (
+                          <span>
+                            {r.name} <span class="badge badge-planned">{t('planned')}</span>
+                          </span>
+                        )}
+                      </th>
+                      {/* Cells carry claim markers: escaped text, markers kept as HTML comments. */}
+                      {r.cells.map((c) => <td set:html={stepHtml(c[lang])} />)}
+                      {hasImages && (
+                        <td>
+                          {r.images.map((i, n) => (
+                            <a class="matrix-thumb" href={`#fig-${i.id}`}>
+                              {t(`img_${imgs.get(i.id)?.kind ?? 'micro'}`)}
+                              {r.images.length > 1 ? ` ${n + 1}` : ''}
+                            </a>
+                          ))}
+                        </td>
+                      )}
+                    </tr>
+                  ))
+                }
+              </tbody>
+            </table>
+          </div>
+        </section>
 
-    <section aria-labelledby="matrix-title">
-      <h2 id="matrix-title">{t('matrixTitle')}</h2>
-      <div class="table-scroll" role="region" aria-labelledby={captionId} tabindex="0">
-        <table class="matrix">
-          <caption id={captionId}>{fmt(t('scrollTable'), { name: pattern.names[lang] })}</caption>
-          <thead>
-            <tr>
-              {pattern.matrix.columns.map((c) => <th scope="col">{c[lang]}</th>)}
-              {hasImages && <th scope="col">{t('matrixImages')}</th>}
-            </tr>
-          </thead>
-          <tbody>
+        {
+          hasImages && (
+            <section aria-labelledby="images-title">
+              <h2 id="images-title">{t('imagesTitle')}</h2>
+              {rows
+                .filter((r) => r.images.length > 0)
+                .map((r) => (
+                  <>
+                    <h3>{r.name}</h3>
+                    {r.images.map((i) => <ImageViewer lang={lang} image={imgs.get(i.id)} id={i.id} />)}
+                  </>
+                ))}
+            </section>
+          )
+        }
+
+        <section class="related" aria-labelledby="pattern-cards-title">
+          <h2 id="pattern-cards-title">{t('patternCards')}</h2>
+          <ul>
             {
               rows.map((r) => (
-                <tr>
-                  <th scope="row">
-                    {r.visible ? (
-                      <a href={langPath(lang, `e/${r.entity}/`)}>{r.name}</a>
-                    ) : (
-                      <span>
-                        {r.name} <span class="badge badge-planned">{t('planned')}</span>
-                      </span>
-                    )}
-                  </th>
-                  {r.cells.map((c) => <td>{c[lang]}</td>)}
-                  {hasImages && (
-                    <td>
-                      {r.images.map((i, n) => (
-                        <a class="matrix-thumb" href={`#fig-${i.id}`}>
-                          {t(`img_${imgs.get(i.id)?.kind ?? 'micro'}`)}
-                          {r.images.length > 1 ? ` ${n + 1}` : ''}
-                        </a>
-                      ))}
-                    </td>
-                  )}
-                </tr>
+                <li>
+                  {r.visible ? <a href={langPath(lang, `e/${r.entity}/`)}>{r.name}</a> : r.name}
+                  {r.visible && <span class="small muted">{data.entityById.get(r.entity)!.summary[lang]}</span>}
+                </li>
               ))
             }
-          </tbody>
-        </table>
-      </div>
-    </section>
-
-    {
-      hasImages && (
-        <section aria-labelledby="images-title">
-          <h2 id="images-title">{t('imagesTitle')}</h2>
-          {rows
-            .filter((r) => r.images.length > 0)
-            .map((r) => (
-              <>
-                <h3>{r.name}</h3>
-                {r.images.map((i) => <ImageViewer lang={lang} image={imgs.get(i.id)} id={i.id} />)}
-              </>
-            ))}
+          </ul>
+          {
+            rows.filter((r) => r.visible).length >= 2 && (
+              <p>
+                <a
+                  class="btn btn-small"
+                  href={langPath(lang, `compare/?ids=${rows.filter((r) => r.visible).slice(0, 4).map((r) => r.entity).join(',')}`)}
+                >
+                  {t('compareTitle')}
+                </a>
+              </p>
+            )
+          }
         </section>
-      )
-    }
 
-    <section class="related" aria-labelledby="pattern-cards-title">
-      <h2 id="pattern-cards-title">{t('patternCards')}</h2>
-      <ul>
-        {
-          rows.map((r) => (
-            <li>
-              {r.visible ? <a href={langPath(lang, `e/${r.entity}/`)}>{r.name}</a> : r.name}
-              {r.visible && <span class="small muted"> — {data.entityById.get(r.entity)!.summary[lang]}</span>}
-            </li>
-          ))
-        }
-      </ul>
-      {
-        rows.filter((r) => r.visible).length >= 2 && (
-          <p>
-            <a
-              class="btn btn-small"
-              href={langPath(lang, `compare/?ids=${rows.filter((r) => r.visible).slice(0, 4).map((r) => r.entity).join(',')}`)}
-            >
-              {t('compareTitle')}
-            </a>
-          </p>
-        )
-      }
-    </section>
-
-    <section class="sources" aria-labelledby="sources-title">
-      <h2 id="sources-title">{tEntity(lang, 'sources')}</h2>
-      <ul>
-        {
-          pattern.sources.map((c) => {
-            const src = allSources.find((x) => x.id === c.source);
-            return (
-              <li>
-                {src ? <cite>{src.title}</cite> : c.source}
-                {src?.edition && `, ed. ${src.edition}`}
-                {c.chapter && ` · ${lang === 'it' ? 'cap.' : 'ch.'} ${c.chapter}`}
-                {c.pages && ` · pp. ${c.pages}`}
-              </li>
-            );
-          })
-        }
-      </ul>
-      <p class="small"><a href={langPath(lang, 'about/report/')}>{tEntity(lang, 'reportThis')}</a></p>
-    </section>
+        <section class="sources" aria-labelledby="sources-title">
+          <h2 id="sources-title">{tEntity(lang, 'sources')}</h2>
+          <ul>
+            {
+              pattern.sources.map((c) => {
+                const src = allSources.find((x) => x.id === c.source);
+                return (
+                  <li>
+                    {src ? <cite>{src.title}</cite> : c.source}
+                    {src?.edition && `, ed. ${src.edition}`}
+                    {c.chapter && ` · ${lang === 'it' ? 'cap.' : 'ch.'} ${c.chapter}`}
+                    {c.pages && ` · pp. ${c.pages}`}
+                  </li>
+                );
+              })
+            }
+          </ul>
+          <p class="small"><a href={langPath(lang, 'about/report/')}>{tEntity(lang, 'reportThis')}</a></p>
+        </section>
+      </div>
+    </div>
   </article>
 </BaseLayout>
 

@@ -3,6 +3,7 @@ import AboutPage from '../../../components/AboutPage.astro';
 import Bi from '../../../components/Bi.astro';
 import { langPaths, type Lang } from '../../../i18n/index.ts';
 import { images } from '../../../lib/content.ts';
+import { attributionFor, licenseName } from '../../../lib/image-meta.ts';
 import { structureById } from '../../../lib/pathways.ts';
 import { langPath } from '../../../lib/url.ts';
 
@@ -30,9 +31,9 @@ const structs = [...(await structureById()).values()].sort((a, b) => a.pdb.local
       <ul>
         {imgs.map((img) => (
           <li id={`img-${img.id}`}>
-            {img.attributionText} — <a href={img.sourceUrl} rel="noopener">{lang === 'it' ? 'fonte' : 'source'}</a>,{' '}
-            <a href={img.licenseUrl} rel="noopener">{img.license}</a>
-            {img.modifications !== 'none' && ` · ${lang === 'it' ? 'modifiche' : 'changes'}: ${img.modifications}`}
+            {attributionFor(img.attributionText, lang)} — <a href={img.sourceUrl} rel="noopener">{lang === 'it' ? 'fonte' : 'source'}</a>,{' '}
+            <a href={img.licenseUrl} rel="noopener">{licenseName(img.license, lang)}</a>
+            {img.modifications !== 'none' && ` · ${lang === 'it' ? 'modifiche' : 'changes'}: ${img.modifications[lang]}`}
           </li>
         ))}
       </ul>
@@ -47,12 +48,12 @@ const structs = [...(await structureById()).values()].sort((a, b) => a.pdb.local
           <p slot="it">
             Dati del Protein Data Bank (RCSB PDB), di pubblico dominio (CC0 1.0); ringraziamo gli autori di ogni struttura.
             Le immagini statiche e la vista 3D sono rese con 3Dmol.js; le sue licenze e quelle delle librerie che include sono nella
-            pagina <a href={langPath(lang, 'about/licenses/#third-party-code')}>Licenze</a>.
+            pagina <a href={langPath(lang, 'about/licenses/#third-party-3d')}>Licenze</a>.
           </p>
           <p slot="en">
             Data from the Protein Data Bank (RCSB PDB), in the public domain (CC0 1.0); we credit the authors of each structure.
             The still images and the 3D view are drawn with 3Dmol.js; its licence and those of the libraries it bundles are on the{' '}
-            <a href={langPath(lang, 'about/licenses/#third-party-code')}>Licences</a> page.
+            <a href={langPath(lang, 'about/licenses/#third-party-3d')}>Licences</a> page.
           </p>
         </Bi>
         <ul>
@@ -92,13 +93,13 @@ const structs = [...(await structureById()).values()].sort((a, b) => a.pdb.local
   <Bi lang={lang}>
     <p slot="it">
       Il sito è costruito con Astro, Preact e Pagefind; il ripasso a intervalli usa ts-fsrs, i dati di studio sono salvati con
-      idb e la vista 3D usa 3Dmol.js. Tutti sono software libero con licenze permissive (dettagli nella pagina
-      <a href={langPath(lang, 'about/licenses/')}>Licenze</a>).
+      idb e la vista 3D usa 3Dmol.js. Tutti sono software libero con licenze permissive: avvisi di copyright e licenze sono
+      nella pagina <a href={langPath(lang, 'about/licenses/#third-party-code')}>Licenze</a>.
     </p>
     <p slot="en">
       The site is built with Astro, Preact and Pagefind; spaced review uses ts-fsrs, study data is stored with idb and the 3D
-      view uses 3Dmol.js. All are free software under permissive licences (details on the{' '}
-      <a href={langPath(lang, 'about/licenses/')}>Licences</a> page).
+      view uses 3Dmol.js. All are free software under permissive licences: their copyright notices and licences are on the{' '}
+      <a href={langPath(lang, 'about/licenses/#third-party-code')}>Licences</a> page.
     </p>
   </Bi>
 </AboutPage>

@@ -1,6 +1,7 @@
 /**
  * Entity page behaviour: collapsible sections, expand/collapse all,
- * Quick/Full mode (remembered), open the section targeted by #hash, print.
+ * Quick/Full mode (remembered), open the section targeted by #hash, print,
+ * the header toggles on phones. The section spy is in shell.ts (pattern pages use it too).
  */
 const root = document.documentElement;
 const toggles = [...document.querySelectorAll<HTMLButtonElement>('[data-section-toggle]')];
@@ -92,36 +93,9 @@ document.querySelectorAll<HTMLButtonElement>('[data-recall-reveal]').forEach((b)
 );
 openHash();
 
-// Scroll-spy: mark the TOC entry of the section being read.
-const tocLinks = new Map(
-  [...document.querySelectorAll<HTMLAnchorElement>('.section-toc a[href^="#"]')].map((a) => [a.hash.slice(1), a]),
+// Phones: the lens chips, the tools and the objectives fold behind a toggle (entity.css hides what follows a closed one).
+document.querySelectorAll<HTMLButtonElement>('[data-fold]').forEach((b) =>
+  b.addEventListener('click', () => b.setAttribute('aria-expanded', String(b.getAttribute('aria-expanded') !== 'true'))),
 );
-const spySections = [...document.querySelectorAll<HTMLElement>('.entity-section')];
-const strip = document.querySelector<HTMLElement>('.section-toc ol');
-const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
-const inBand = new Set<Element>();
-let currentId: string | undefined;
-function markCurrent(id: string | undefined) {
-  if (id === currentId) return;
-  currentId = id;
-  tocLinks.forEach((a, key) => (key === id ? a.setAttribute('aria-current', 'true') : a.removeAttribute('aria-current')));
-  // Phone/tablet chip strip: bring the current chip to the middle (the strip scrolls sideways only).
-  const a = id ? tocLinks.get(id) : undefined;
-  if (!a || !strip || strip.scrollWidth <= strip.clientWidth) return;
-  const delta = a.getBoundingClientRect().left - strip.getBoundingClientRect().left - (strip.clientWidth - a.offsetWidth) / 2;
-  strip.scrollBy({ left: delta, behavior: reduceMotion.matches ? 'auto' : 'smooth' });
-}
-// The section being read: the last one crossing the top 30% of the viewport. Hidden
-// sections (Quick mode) never intersect; past the last section the last one stays current.
-const spy = new IntersectionObserver(
-  (entries) => {
-    entries.forEach((e) => (e.isIntersecting ? inBand.add(e.target) : inBand.delete(e.target)));
-    const current = spySections.filter((s) => inBand.has(s)).at(-1);
-    if (current) markCurrent(current.id);
-    else if (spySections[0] && spySections[0].getBoundingClientRect().top > innerHeight * 0.3) markCurrent(undefined);
-  },
-  { rootMargin: '0px 0px -70% 0px' },
-);
-spySections.forEach((s) => spy.observe(s));
 
 export {};

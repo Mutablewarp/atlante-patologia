@@ -13,6 +13,7 @@ import { tHz } from '../../../i18n/horizontal.ts';
 import { LENSES } from '../../../lib/schema.ts';
 import { withCrossLinks, imageById, patternsForEntity, SECTION_FOR_ROLE } from '../../../lib/horizontal.ts';
 import EntityActions from '../../../components/entity/EntityActions.astro';
+import SectionToc from '../../../components/entity/SectionToc.astro';
 import SelfExplain from '../../../components/entity/SelfExplain.astro';
 import ExamQuestions from '../../../components/entity/ExamQuestions.astro'; // study branch: exam questions + quick-check confidence
 import EntityPathways from '../../../components/pathway/EntityPathways.astro'; // v2/3d-pathways: compact pathway block
@@ -115,27 +116,21 @@ const contexts = LENSES.flatMap((lens) =>
   <article class="entity" data-entity={id}>
     <div class="read-progress js-only" aria-hidden="true"><span data-read-progress></span></div>
     {entity.status === 'draft' && <p class="notice notice-caution draft-banner" role="note">{t('draftBanner')}</p>}
-    <EntityHeader lang={lang} entity={entity} data={data} />
-    <EntityActions lang={lang} entity={entity} />
+    <EntityHeader lang={lang} entity={entity} data={data}><EntityActions lang={lang} entity={entity} /></EntityHeader>
 
     <div class="entity-layout">
-      <nav class="section-toc" aria-label={t('onThisPage')}>
-        <p class="toc-title" aria-hidden="true">{t('onThisPage')}</p>
-        <ol>
-          {
-            toc.map((s) => (
-              <li data-quick={String(s.quick)}>
-                <a href={`#${s.id}`}>{s.short[lang]}</a>
-              </li>
-            ))
-          }
-        </ol>
-      </nav>
+      <SectionToc lang={lang} items={toc.map((s) => ({ id: s.id, label: s.short[lang], quick: s.quick }))} />
 
       <div class="entity-body">
         <section class="objectives card" aria-labelledby="objectives-title">
-          <h2 id="objectives-title" class="kicker">{t('objectives')}</h2>
-          <ul>{entity.learningObjectives.map((o) => <li>{o[lang]}</li>)}</ul>
+          {/* Phones: the list folds behind the title, made a toggle (entity.css) */}
+          <h2 id="objectives-title" class="kicker fold-head">
+            <span class="fold-label">{t('objectives')}</span>
+            <button type="button" class="fold-toggle js-only" aria-expanded="false" aria-controls="objectives-list" data-fold data-pagefind-ignore>
+              {t('objectives')}<span class="chevron" aria-hidden="true"></span>
+            </button>
+          </h2>
+          <ul id="objectives-list">{entity.learningObjectives.map((o) => <li>{o[lang]}</li>)}</ul>
         </section>
 
         {
@@ -227,7 +222,7 @@ const contexts = LENSES.flatMap((lens) =>
                 {entityPatterns.map((p) => (
                   <li>
                     <a href={langPath(lang, `pattern/${p.id}/`)}>{p.names[lang]}</a>
-                    <span class="small muted"> — {p.summary[lang]}</span>
+                    <span class="small muted">{p.summary[lang]}</span>
                   </li>
                 ))}
               </ul>

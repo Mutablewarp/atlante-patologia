@@ -233,28 +233,51 @@ export function diff(source, before, after) {
 }
 
 export const fingerprint = (...parts) => createHash('sha256').update(parts.join('\n')).digest('hex').slice(0, 12);
-/** The fingerprint marker is the body's last line; a marker-like string inside fetched text never counts. */
-export const MARKER = /\nwho-watch:([0-9a-f]{12})\s*$/;
-
 /**
- * Fetched text goes into issue bodies: no control characters or newlines, no @-mentions, no #-references,
- * no raw HTML, no backticks (code spans). Zero-width spaces keep @ and # readable but inert.
+ * The fingerprint marker is a line of its own, anywhere in the body (a maintainer may add a note below it).
+ * Fetched text never starts a line: it has no newlines (neutral) and always follows a fixed prefix.
  */
-export const neutral = (v) =>
+export const MARKER = /^who-watch:([0-9a-f]{12})\r?$/m;
+
+/** One line, and @-mentions, #-references and github.com links made inert with zero-width spaces. */
+const inert = (v) =>
   String(v)
     .replace(/[\u0000-\u001f\u007f]+/g, ' ')
+    .replace(/([@#])/g, '$1\u200b')
+    .replace(/github/gi, '$&\u200b');
+/**
+ * Fetched text goes into issue bodies: no control characters or newlines, no @-mentions, no #-references,
+ * no github.com links (cross-references), no raw HTML, no Markdown links or images, no backticks (code spans).
+ */
+export const neutral = (v) =>
+  inert(v)
+    .replace(/\\/g, '\\\\')
+    .replace(/[[\]()!]/g, '\\$&')
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
-    .replace(/`/g, "'")
-    .replace(/([@#])/g, '$1\u200b');
+    .replace(/`/g, "'");
+/** An issue title is plain text on GitHub (escapes would show), so it only gets the inert treatment. */
+export const neutralTitle = inert;
 /** Same for a URL: unsafe characters are percent-encoded so the link still works. */
-export const neutralUrl = (u) => String(u).replace(/[\u0000-\u0020\u007f<>`"'@]/g, (c) => `%${c.charCodeAt(0).toString(16).padStart(2, '0').toUpperCase()}`);
+export const neutralUrl = (u) =>
+  String(u).replace(/[\u0000-\u0020\u007f<>`"'@[\]()!]/g, (c) => `%${c.charCodeAt(0).toString(16).padStart(2, '0').toUpperCase()}`);
+/** A fetched item link, only when it is an https URL on a WHO or NIH host; otherwise none (its id is on the Change line). */
+export function itemLink(u) {
+  try {
+    const url = new URL(String(u));
+    return url.protocol === 'https:' && /(^|\.)(who\.int|nih\.gov)$/.test(url.hostname) ? neutralUrl(url.href) : undefined;
+  } catch {
+    return undefined;
+  }
+}
 /** For console output (GitHub parses `::` workflow commands at a line start): one line, no control characters. */
 export const oneLine = (v) => String(v).replace(/[\u0000-\u001f\u007f]+/g, ' ');
 
 /** Above this many broken sources in one run, one summary issue replaces the per-source issues. */
 export const MAX_BROKEN = 3;
+/** Above this many changes in one run, one summary issue lists them (a format change, or a long-stale baseline). */
+export const MAX_CHANGES = 10;
 /** More removed items than this (count, or share of the baseline) means the page changed, not the catalogue. */
 export const MAX_REMOVED = 3;
 export const MAX_REMOVED_SHARE = 0.2;
@@ -275,12 +298,13 @@ export function changeIssue(source, change, { date, runUrl }) {
   const name = change.value || change.before || change.id;
   const mods = modulesFor(source, `${source.label} ${change.id} ${change.before ?? ''} ${change.value ?? ''}`);
   const lines = [
-    `**Source:** ${source.label} — ${source.url}`,
+    // Corrigenda labels and URLs are built from fetched catalogue text, so they are neutralised too.
+    `**Source:** ${neutral(source.label)} — ${neutralUrl(source.url)}`,
     `**Detected:** ${date} (run: ${runUrl || 'local'})`,
     `**Change:** ${change.kind} ${neutral(change.id)}`,
     ...(change.before !== undefined ? [`- before: ${neutral(change.before) || '(empty)'}`] : []),
     ...(change.value !== undefined ? [`- now: ${neutral(change.value) || '(empty)'}`] : []),
-    ...(source.itemUrl ? [`**Item URL:** ${neutralUrl(source.itemUrl(change.id))}`] : []),
+    ...(source.itemUrl && itemLink(source.itemUrl(change.id)) ? [`**Item URL:** ${itemLink(source.itemUrl(change.id))}`] : []),
     `**Atlas modules to check (proposed, from titles only):** ${mods.length ? mods.join(', ') : 'none matched, decide by hand'}`,
     '',
     '**Human checklist**',
@@ -290,14 +314,36 @@ export function changeIssue(source, change, { date, runUrl }) {
     '',
     `who-watch:${fp}`,
   ];
-  return { kind: 'change', fingerprint: fp, title: clip(`WHO watch: ${source.label}: ${change.kind} ${neutral(name)}`, 200), body: lines.join('\n') };
+  return { kind: 'change', fingerprint: fp, title: clip(`WHO watch: ${neutralTitle(source.label)}: ${change.kind} ${neutralTitle(name)}`, 200), body: lines.join('\n') };
+}
+
+/** Circuit breaker for changes: one issue lists a burst. Seen once (open or closed), the same burst never reopens. */
+export function changeSummaryIssue(changes, { date, runUrl }) {
+  const fp = fingerprint('changes', ...changes.map((c) => c.fingerprint).sort());
+  const shown = changes.slice(0, 50); // GitHub caps a body at 65,536 characters
+  const body = [
+    `**Detected:** ${date} (run: ${runUrl || 'local'})`,
+    `**Problem:** ${changes.length} changes in one run. Real news rarely comes in bursts: most likely a source changed its layout or format, or the baseline has not been refreshed for a long time.`,
+    '',
+    // Titles are plain text; in a body they need the full treatment.
+    ...shown.map((c) => `- ${neutral(c.title.replace(/^WHO watch: /, ''))}`),
+    ...(changes.length > shown.length ? [`- … and ${changes.length - shown.length} more`] : []),
+    '',
+    '**Human checklist**',
+    '- [ ] Run `node scripts/who-watch.mjs --dry-run` for the full details and open a few of the sources.',
+    '- [ ] Layout or format change: fix the parser in `scripts/who-watch.mjs` and its test fixture.',
+    '- [ ] Real changes: triage each one as in `docs/WHO_WATCH.md` §2, refresh the baseline, then close this issue.',
+    '',
+    `who-watch:${fp}`,
+  ].join('\n');
+  return { kind: 'change', fingerprint: fp, title: `WHO watch: ${changes.length} changes in one run, check the sources first`, body };
 }
 
 /** Issue for a source that could not be fetched or parsed: one per source, not reopened while an open one exists. */
 export function brokenIssue(source, error, { date, runUrl }) {
   const fp = fingerprint('broken', source.id);
   const body = [
-    `**Source:** ${source.label} — ${source.url}`,
+    `**Source:** ${neutral(source.label)} — ${neutralUrl(source.url)}`,
     `**Detected:** ${date} (run: ${runUrl || 'local'})`,
     `**Problem:** ${neutral(clip(String(error?.message ?? error), 300))}`,
     '',
@@ -311,7 +357,7 @@ export function brokenIssue(source, error, { date, runUrl }) {
     '',
     `who-watch:${fp}`,
   ].join('\n');
-  return { kind: 'broken', fingerprint: fp, title: `WHO watch: source broken: ${neutral(source.id)}`, body };
+  return { kind: 'broken', fingerprint: fp, title: `WHO watch: source broken: ${neutralTitle(source.id)}`, body };
 }
 
 /** Circuit breaker: one issue for a run where many sources fail (often one host down), not one per source. */
@@ -425,7 +471,8 @@ export function plan(results, baseline, { now = new Date(), runUrl = '' } = {}) 
     for (const c of found) changes.push(changeIssue(r.source, c, ctx));
   }
   const brokenIssues = broken.length > MAX_BROKEN ? [brokenSummaryIssue(broken, ctx)] : broken.map((r) => brokenIssue(r.source, r.error, ctx));
-  return { issues: [...brokenIssues, ...changes], unbaselined };
+  const changeIssues = changes.length > MAX_CHANGES ? [changeSummaryIssue(changes, ctx)] : changes;
+  return { issues: [...brokenIssues, ...changeIssues], unbaselined };
 }
 
 // ── GitHub (REST API with GH_TOKEN; the token is only ever sent as a header) ─
@@ -508,7 +555,7 @@ async function main(argv) {
   const { issues, unbaselined } = plan(results, baseline, { runUrl: process.env.RUN_URL });
   for (const id of unbaselined) console.log(`who-watch: ${oneLine(id)} is not in the baseline yet (refresh it after review)`);
   const broken = issues.filter((i) => i.kind === 'broken').length;
-  console.log(`who-watch: ${results.length} sources read, ${issues.length - broken} change(s), ${broken} broken-source issue(s) (baseline reviewed ${oneLine(baseline.reviewed)})`);
+  console.log(`who-watch: ${results.length} sources read, ${issues.length - broken} change issue(s), ${broken} broken-source issue(s) (baseline reviewed ${oneLine(baseline.reviewed)})`);
 
   if (mode === 'dry-run') {
     for (const i of issues) console.log(`\n── ${i.title}\n${i.body}`);

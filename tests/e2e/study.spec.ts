@@ -26,6 +26,12 @@ async function noAxeViolations(page: Page) {
   expect(res.violations.map((v) => `${v.id}: ${v.nodes.map((n) => n.target.join(' ')).join(', ')}`)).toEqual([]);
 }
 
+/** Open the data page and wait for its island: the server-rendered buttons ignore a click made before hydration (Astro then drops `ssr`). */
+async function openData(page: Page) {
+  await page.goto('en/me/data/');
+  await expect(page.locator('astro-island[component-url*="DataManager"][ssr]')).toHaveCount(0);
+}
+
 test('entity actions feed review, bookmarks, resume and the Me pages', async ({ page }) => {
   const foreign = guardRequests(page);
   await page.goto('it/e/fixture-demo/');
@@ -97,7 +103,7 @@ test('export then re-import merges with an integrity check', async ({ page }) =>
   const bm = page.getByRole('button', { name: /Bookmark/ });
   await bm.click();
   await expect(bm).toHaveAttribute('aria-pressed', 'true');
-  await page.goto('en/me/data/');
+  await openData(page);
   const [download] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: 'Export data' }).click()]);
   const path = await download.path();
   const file = JSON.parse(readFileSync(path, 'utf8'));
@@ -217,6 +223,8 @@ test('confidence is asked before the answer in quiz, review and quick check, and
     await page.getByRole('button', { name: 'Check' }).click();
   }
   await expect(q.getByRole('radio', { name: 'Fairly sure' })).toBeDisabled();
+  // The attempt is written after the feedback shows: leaving the page sooner would abort the write.
+  await expect.poll(async () => (await readStore(page, 'quizAttempts')).length).toBe(2);
 
   // Review: pick a confidence, reveal, rate.
   await page.goto('en/study/review/');
@@ -253,7 +261,10 @@ test('entity page lists possible exam questions that open onto the focus section
 test('oral simulator: three questions, prediction before self-assessment, calibration and history', async ({ page }) => {
   const foreign = guardRequests(page);
   await page.goto('en/study/oral/');
-  await page.getByRole('checkbox', { name: 'Use a timer for each question' }).check();
+  const timer = page.getByRole('checkbox', { name: 'Use a timer for each question' });
+  // The box sits beside its label, in regular weight (a tool-form label is otherwise a bold grid).
+  expect(await timer.evaluate((i) => [getComputedStyle(i.parentElement!).display, getComputedStyle(i.parentElement!).fontWeight])).toEqual(['flex', '400']);
+  await timer.check();
   await page.getByRole('button', { name: 'Start' }).click();
   await expect(page.getByRole('heading', { name: 'Question 1 of 3' })).toBeFocused();
   await expect(page.getByRole('timer')).toContainText('Time left: 4:5');
@@ -278,12 +289,117 @@ test('oral simulator: three questions, prediction before self-assessment, calibr
   const [session] = await readStore(page, 'oralSessions');
   expect((session!.items as unknown[]).length).toBe(3);
 
-  await page.getByRole('button', { name: 'Start again' }).click();
+  // Record every text the history shows after "Start again": it must never claim that nothing is saved, not even for one frame.
+  await page.evaluate(() => {
+    const w = window as unknown as { historyTexts: string[] };
+    w.historyTexts = [];
+    new MutationObserver(() => {
+      const h = document.querySelector('[aria-labelledby="oral-history-title"]');
+      if (h) w.historyTexts.push(h.textContent ?? '');
+    }).observe(document.body, { subtree: true, childList: true, characterData: true });
+  });
+  await page.getByRole('button', { name: 'Start again' }).press('Enter'); // keyboard, as in the review finding
   // Focus goes to the first setup control, never to <body> (WCAG 2.4.3).
   await expect(page.getByRole('checkbox', { name: 'Use a timer for each question' })).toBeFocused();
-  await expect(page.getByRole('region', { name: 'Previous sessions' }).getByText(/3 questions, self-assessed 2\.3 out of 4/)).toBeVisible();
-  await expect(page.getByText('No sessions saved on this device.')).toHaveCount(0);
+  // The list stays folded behind one line (no shift when it loads) until the learner opens it.
+  const history = page.getByRole('region', { name: 'Previous sessions' });
+  await history.getByText('Saved sessions: 1').click();
+  await expect(history.getByText(/3 questions, self-assessed 2\.3 out of 4/)).toBeVisible();
+  const texts = await page.evaluate(() => (window as unknown as { historyTexts: string[] }).historyTexts);
+  expect(texts.length).toBeGreaterThan(0);
+  expect(texts.filter((s) => s.includes('No sessions saved'))).toEqual([]);
+  // The page stays scrolled after the results: the focused setup control must not end up under the sticky bar.
+  await noAxeViolations(page);
   expect(foreign).toEqual([]);
+});
+
+/** Write records into one store of the learner DB (the app must have opened it first, see readStore). */
+const writeStore = (page: Page, store: string, records: object[]) =>
+  page.evaluate(
+    ([s, recs]) =>
+      new Promise<void>((resolve, reject) => {
+        const req = indexedDB.open('atlas');
+        req.onerror = () => reject(req.error);
+        req.onsuccess = () => {
+          const d = req.result;
+          const tx = d.transaction(s, 'readwrite');
+          for (const r of recs) tx.objectStore(s).put(r);
+          tx.oncomplete = () => {
+            d.close();
+            resolve();
+          };
+          tx.onerror = () => reject(tx.error);
+        };
+      }),
+    [store, records] as const,
+  );
+
+test('oral history: a damaged session is listed and can be deleted without touching anything else', async ({ page }) => {
+  await page.goto('en/study/oral/');
+  const history = page.getByRole('region', { name: 'Previous sessions' });
+  await expect(history).toContainText('No sessions saved on this device.');
+  const rubric = { completeness: 3, accuracy: 3, structure: 3, terminology: 3 };
+  const good = { id: 'oral@2', at: Date.UTC(2026, 10, 2), updated: 2, items: [{ question: 'fixture-demo#1', entity: 'fixture-demo', text: 'Q?', predicted: 4, rubric, seconds: 30 }] };
+  // Written by an older build or by hand: no rubric, so the simulator cannot read it.
+  const damaged = { id: 'oral@1', at: Date.UTC(2026, 10, 1), updated: 1, items: [{ question: 'fixture-demo#2', entity: 'fixture-demo', text: 'Q?', predicted: 3 }] };
+  await writeStore(page, 'oralSessions', [good, damaged]);
+  await writeStore(page, 'notes', [{ id: 'fixture-demo', text: 'my note', updated: 1 }]);
+  await page.reload();
+
+  await history.getByText('Saved sessions: 2').click();
+  await expect(history.getByRole('listitem')).toHaveCount(2);
+  await expect(history.getByRole('listitem').first()).toContainText('Damaged session, cannot be read');
+  await expect(history).toContainText('2 Nov 2026: 1 questions, self-assessed 3 out of 4');
+  await expect(history).toContainText('Mean predicted 4 · mean self-assessed 3 (out of 4, 1 questions)');
+  await noAxeViolations(page);
+
+  await history.getByRole('button', { name: 'Delete: Damaged session, cannot be read' }).click();
+  await expect(page.getByRole('heading', { name: 'Previous sessions' })).toBeFocused();
+  await expect(history.getByRole('listitem')).toHaveCount(1);
+  const rows = await readStore(page, 'oralSessions');
+  expect(rows.find((r) => r.id === 'oral@1')).toMatchObject({ deleted: true }); // a tombstone: an older backup cannot bring it back
+  expect(rows.find((r) => r.id === 'oral@2')).toEqual(good);
+  expect(await readStore(page, 'notes')).toEqual([{ id: 'fixture-demo', text: 'my note', updated: 1 }]);
+
+  await history.getByRole('button', { name: /^Delete: 2 Nov 2026/ }).click();
+  await expect(history).toContainText('No sessions saved on this device.');
+  await expect(history).not.toContainText('Mean predicted');
+});
+
+test('exam mode: pressing Finish again while the answers are being saved stores each answer once', async ({ context }) => {
+  // An older tab holds the database open, so the writes wait (as on a slow phone): the second press lands while they are pending.
+  const old = await context.newPage();
+  await holdOpen(old, 1);
+  const page = await context.newPage();
+  await page.goto('en/study/quiz/?mode=exam');
+  await page.getByRole('spinbutton', { name: 'Number of questions' }).fill('3');
+  await page.getByRole('button', { name: 'Start' }).click();
+  let answered = 0;
+  for (let i = 0; i < 3; i++) {
+    const options = page.locator('.question .options').getByRole('radio');
+    await expect(page.getByRole('heading', { name: `Question ${i + 1} of 3` })).toBeVisible();
+    if ((await options.count()) > 0) {
+      await options.first().check();
+      answered++;
+    }
+    if (i < 2) await page.getByRole('button', { name: 'Next' }).click();
+  }
+  expect(answered).toBeGreaterThan(0); // the fixtures hold one free-text question at most, so two or three get options
+  const finish = page.getByRole('button', { name: 'Finish' });
+  await finish.click();
+  await finish.click(); // still shown: the first press is waiting for the database
+  await old.close();
+  await expect(page.getByRole('heading', { name: 'Results' })).toBeVisible();
+  await page.waitForTimeout(300); // let any second round of writes land before counting
+  const attempts = await readStore(page, 'quizAttempts');
+  expect(attempts).toHaveLength(answered);
+  expect(new Set(attempts.map((a) => a.question)).size).toBe(answered);
+
+  // "Start again" removes the results: focus goes to the chosen mode, never to <body> (WCAG 2.4.3).
+  await page.getByRole('button', { name: 'Start again' }).press('Enter');
+  await expect(page.getByRole('radio', { name: /^Timed exam/ })).toBeFocused();
+  await expect(page.getByRole('radio', { name: /^Timed exam/ })).toBeChecked();
+  await noAxeViolations(page); // the focused control is not left under the sticky bar
 });
 
 test('oral simulator: "time is up" is announced in a live region, and a double save stores one answer', async ({ page }) => {
@@ -305,19 +421,100 @@ test('oral simulator: "time is up" is announced in a live region, and a double s
   expect((session!.items as unknown[]).length).toBe(1);
 });
 
-test('a malformed oral session in an import file is rejected', async ({ page }) => {
-  await page.goto('en/me/data/');
-  const stores = { oralSessions: [{ id: 'oral@1', at: 1, updated: 1, items: [{ question: 'a#1', entity: 'a', text: '?', predicted: 3 }] }] };
+test('an import leaves out the records the atlas cannot read, says how many, and restores the rest', async ({ page }) => {
+  await openData(page);
+  const fsrs = { due: 1, stability: 0, difficulty: 0, elapsed_days: 0, scheduled_days: 0, learning_steps: 0, reps: 0, lapses: 0, state: 0 };
+  const stores = {
+    oralSessions: [{ id: 'oral@1', at: 1, updated: 1, items: [{ question: 'a#1', entity: 'a', text: '?', predicted: 3 }] }],
+    // A crafted card with no FSRS state used to break the review queue and the Me page.
+    cards: [
+      { id: 'fixture-demo:qa:bad', entity: 'fixture-demo', module: 'g01', updated: 1 },
+      { id: 'fixture-demo:qa:good', entity: 'fixture-demo', module: 'g01', fsrs, updated: 1 },
+    ],
+    notes: [{ id: 'fixture-demo', text: 'kept', updated: 1 }],
+  };
   const file = await page.evaluate(async (st) => {
     const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(JSON.stringify(st)));
     const checksum = [...new Uint8Array(buf)].map((b) => b.toString(16).padStart(2, '0')).join('');
     return JSON.stringify({ app: 'atlante-patologia', schemaVersion: 2, exportedAt: '2026-01-01T00:00:00Z', checksum, stores: st });
   }, stores);
   await page.locator('input[type=file]').setInputFiles({ name: 'bad.json', mimeType: 'application/json', buffer: Buffer.from(file) });
-  await expect(page.getByText('The file is not a valid atlas backup.')).toBeVisible();
+  await expect(page.getByText('Import complete: 2 items updated. Damaged items not imported: 2 (the atlas cannot read them).')).toBeVisible();
   expect(await readStore(page, 'oralSessions')).toEqual([]);
+  expect((await readStore(page, 'cards')).map((c) => c.id)).toEqual(['fixture-demo:qa:good']);
+  expect(await readStore(page, 'notes')).toEqual([{ id: 'fixture-demo', text: 'kept', updated: 1 }]);
   await page.goto('en/study/oral/');
   await expect(page.getByRole('button', { name: 'Start' })).toBeVisible();
+  await page.goto('en/study/review/');
+  await expect(page.getByText(/0 due · [1-9]\d* new/)).toBeVisible();
+});
+
+test('a backup that holds a damaged oral session still restores everything else in a fresh browser', async ({ page, browser }, info) => {
+  await page.goto('en/study/oral/');
+  await expect(page.getByRole('region', { name: 'Previous sessions' })).toContainText('No sessions saved on this device.');
+  // Written by an older build (a negative answer time): the oral simulator cannot read it.
+  const rubric = { completeness: 3, accuracy: 3, structure: 3, terminology: 3 };
+  await writeStore(page, 'oralSessions', [{ id: 'oral@1', at: 1, updated: 1, items: [{ question: 'a#1', entity: 'a', text: '?', predicted: 3, rubric, seconds: -32 }] }]);
+  await writeStore(page, 'notes', [{ id: 'fixture-demo', text: 'my note', updated: 1 }]);
+  await writeStore(page, 'bookmarks', [{ id: 'fixture-demo', updated: 1 }]);
+  await openData(page);
+  const [download] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: 'Export data' }).click()]);
+  const path = await download.path();
+
+  const fresh = await browser.newContext({ baseURL: info.project.use.baseURL });
+  const other = await fresh.newPage();
+  await openData(other);
+  await other.locator('input[type=file]').setInputFiles(path);
+  await expect(other.getByText(/Import complete: [1-9]\d* items updated\. Damaged items not imported: 1 /)).toBeVisible();
+  expect(await readStore(other, 'notes')).toEqual([{ id: 'fixture-demo', text: 'my note', updated: 1 }]);
+  expect(await readStore(other, 'bookmarks')).toEqual([{ id: 'fixture-demo', updated: 1 }]);
+  expect(await readStore(other, 'oralSessions')).toEqual([]);
+  await fresh.close();
+});
+
+test('the oral history moves nothing on the page for a returning learner (CPU 4× slower, footer in view)', async ({ page }) => {
+  await page.goto('en/study/oral/');
+  await expect(page.getByRole('region', { name: 'Previous sessions' })).toContainText('No sessions saved on this device.');
+  const rubric = { completeness: 3, accuracy: 3, structure: 3, terminology: 3 };
+  const item = { question: 'fixture-demo#1', entity: 'fixture-demo', text: 'Q?', predicted: 3, rubric, seconds: 30 };
+  await writeStore(page, 'oralSessions', [1, 2, 3].map((n) => ({ id: `oral@${n}`, at: Date.UTC(2026, 10, n), updated: n, items: [item, item, item] })));
+  // Sized so the footer is in view: anything that grows after paint would push it down and count.
+  const footer = await page.locator('.site-footer').evaluate((f) => f.getBoundingClientRect().top + scrollY);
+  await page.setViewportSize({ width: 1280, height: Math.ceil(footer) + 40 });
+  const cdp = await page.context().newCDPSession(page);
+  await cdp.send('Emulation.setCPUThrottlingRate', { rate: 4 });
+  await page.addInitScript(() => {
+    const w = window as unknown as { __cls: number };
+    w.__cls = 0;
+    new PerformanceObserver((list) => {
+      for (const e of list.getEntries() as (PerformanceEntry & { value: number; hadRecentInput: boolean })[]) if (!e.hadRecentInput) w.__cls += e.value;
+    }).observe({ type: 'layout-shift', buffered: true });
+  });
+  await page.goto('en/study/oral/');
+  const history = page.getByRole('region', { name: 'Previous sessions' });
+  await expect(history.getByText('Saved sessions: 3')).toBeVisible();
+  await page.waitForTimeout(1000);
+  await cdp.send('Emulation.setCPUThrottlingRate', { rate: 1 });
+  expect(await page.evaluate(() => (window as unknown as { __cls: number }).__cls)).toBe(0);
+  // Opened on request, the list and the verdict are all there.
+  await history.getByText('Saved sessions: 3').click();
+  await expect(history.getByRole('listitem')).toHaveCount(3);
+  await expect(history).toContainText('Mean predicted 3 · mean self-assessed 3 (out of 4, 9 questions)');
+});
+
+test('an answer time stays positive when the wall clock steps back during the answer', async ({ page }) => {
+  await page.clock.install();
+  await page.goto('en/study/oral/');
+  await page.getByRole('button', { name: 'Start' }).click();
+  await page.clock.runFor(5_000);
+  // The device clock is corrected backwards (network time): Date jumps, performance.now() does not.
+  await page.clock.setSystemTime(Date.now() - 60_000);
+  await answerOral(page, '3 · good', '3 · good');
+  await page.getByRole('button', { name: 'Save and continue' }).click();
+  await expect(page.getByRole('heading', { name: 'Question 2 of 3' })).toBeFocused();
+  const [session] = await readStore(page, 'oralSessions');
+  const [item] = session!.items as { seconds: number }[];
+  expect(item!.seconds).toBeGreaterThanOrEqual(0);
 });
 
 test('export and import carry confidence and oral sessions into a fresh browser', async ({ page, browser }, info) => {
@@ -334,7 +531,7 @@ test('export and import carry confidence and oral sessions into a fresh browser'
   await page.getByRole('button', { name: 'Save and continue' }).click();
   await expect(page.getByRole('heading', { name: 'Question 2 of 3' })).toBeVisible();
 
-  await page.goto('en/me/data/');
+  await openData(page);
   const [download] = await Promise.all([page.waitForEvent('download'), page.getByRole('button', { name: 'Export data' }).click()]);
   const path = await download.path();
   const file = JSON.parse(readFileSync(path, 'utf8'));
@@ -344,12 +541,13 @@ test('export and import carry confidence and oral sessions into a fresh browser'
 
   const fresh = await browser.newContext({ baseURL: info.project.use.baseURL });
   const other = await fresh.newPage();
-  await other.goto('en/me/data/');
+  await openData(other);
   await other.locator('input[type=file]').setInputFiles(path);
   await expect(other.getByText(/Import complete: [1-9]\d* items updated\./)).toBeVisible();
   expect((await readStore(other, 'oralSessions'))[0]).toMatchObject({ items: [{ predicted: 2 }] });
   expect((await readStore(other, 'quizAttempts'))[0]).toMatchObject({ confidence: 1 });
   await other.goto('en/study/oral/');
+  await other.getByText('Saved sessions: 1').click();
   await expect(other.getByText(/1 questions, self-assessed 4 out of 4/)).toBeVisible();
   await fresh.close();
 });
@@ -428,12 +626,28 @@ test('an older tab that keeps the database open blocks the upgrade with a notice
   await page.goto('en/study/oral/');
   const history = page.getByRole('region', { name: 'Previous sessions' });
   await expect(page.getByText('Close the other atlas tabs to finish the update.', { exact: false })).toBeVisible();
+  // Reloading this tab cannot end the wait: no Reload here, only Close.
+  await expect(page.locator('[data-db-reload]')).toBeHidden();
+  await expect(page.locator('[data-db-box]').getByRole('button', { name: 'Close' })).toBeVisible();
   await expect(history).toContainText('Loading…');
   await old.close();
   await expect(page.getByText('Close the other atlas tabs to finish the update.', { exact: false })).toBeHidden();
   await expect(history).toContainText('No sessions saved on this device.');
   expect(await readStore(page, 'notes')).toEqual([{ id: 'fixture-demo', text: 'v1 note', updated: 1 }]);
   expect(await readStore(page, 'oralSessions')).toEqual([]);
+});
+
+test('code older than the learner database shows the storage notice, never "No sessions saved"', async ({ context }) => {
+  // A newer build has already upgraded the database (as after a rollback): this build's open fails with a VersionError.
+  const newer = await context.newPage();
+  await holdOpen(newer, 99);
+  await newer.close();
+  const page = await context.newPage();
+  await page.goto('en/study/oral/');
+  const history = page.getByRole('region', { name: 'Previous sessions' });
+  await expect(history).toContainText('Your browser does not allow saving data');
+  await expect(history).not.toContainText('No sessions saved');
+  await expect(page.getByRole('button', { name: 'Start' })).toBeVisible(); // the simulator itself still works
 });
 
 test('a newer version in another tab is never blocked by this one, which offers a reload', async ({ context }) => {
@@ -445,4 +659,45 @@ test('a newer version in another tab is never blocked by this one, which offers 
   await holdOpen(next, 99);
   await expect(page.getByText('A newer version of the atlas is open in another tab.', { exact: false })).toBeVisible();
   await expect(page.locator('[data-db-reload]')).toBeVisible();
+});
+
+test('every tab that waits behind a blocked upgrade shows the notice, and each continues once the old tab closes', async ({ context }) => {
+  // Only the request at the head of the browser's queue gets a `blocked` event; the others wait silently.
+  const old = await context.newPage();
+  await holdOpen(old, 1);
+  const review = await context.newPage();
+  await review.goto('en/study/review/');
+  const card = await context.newPage();
+  await card.goto('en/e/fixture-demo/');
+  for (const p of [review, card]) await expect(p.getByText('Close the other atlas tabs to finish the update.', { exact: false })).toBeVisible();
+  await old.close();
+  for (const p of [review, card]) await expect(p.locator('[data-db-box]')).toBeHidden();
+  await expect(review.getByText(/0 due · [1-9]\d* new/)).toBeVisible();
+  const bm = card.getByRole('button', { name: /Bookmark/ });
+  await bm.click();
+  await expect(bm).toHaveAttribute('aria-pressed', 'true');
+  expect(await readStore(card, 'bookmarks')).toMatchObject([{ id: 'fixture-demo' }]);
+  expect(await readStore(card, 'notes')).toEqual([{ id: 'fixture-demo', text: 'v1 note', updated: 1 }]);
+});
+
+test('with a new version waiting, the database notice points to its Reload and never covers it', async ({ page }) => {
+  await page.goto('en/');
+  // As in a deploy: the update notice is up, then this tab's upgrade waits for an older tab.
+  await page.evaluate(() => {
+    document.querySelector<HTMLElement>('[data-update-notice]')!.hidden = false;
+    window.dispatchEvent(new CustomEvent('ap:db-state', { detail: 'blocked' }));
+  });
+  const box = page.locator('[data-db-box]');
+  await expect(box).toContainText('press “Reload” in the new-version notice');
+  await expect(page.locator('[data-db-reload]')).toBeHidden();
+  const reload = page.locator('[data-update-reload]');
+  const hit = await reload.evaluate((el) => {
+    const r = el.getBoundingClientRect();
+    return el.contains(document.elementFromPoint(r.left + r.width / 2, r.top + r.height / 2));
+  });
+  expect(hit).toBe(true);
+  // Escape (or Close) dismisses the database notice; the update notice stays.
+  await page.keyboard.press('Escape');
+  await expect(box).toBeHidden();
+  await expect(reload).toBeVisible();
 });

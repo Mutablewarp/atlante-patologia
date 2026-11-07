@@ -3,7 +3,8 @@ import { useEffect, useState } from 'preact/hooks';
 import type { Lang } from '../i18n/index.ts';
 import { fmt, formatDate } from '../i18n/index.ts';
 import { tS } from '../i18n/study.ts';
-import { exportAll, importFile, checkExport, getSetting } from '../lib/db.ts';
+import { exportAll, importFile, getSetting } from '../lib/db.ts';
+import { checkExport } from '../lib/import-check.ts';
 
 const size = (lang: Lang, bytes: number) =>
   new Intl.NumberFormat(lang === 'it' ? 'it-IT' : 'en-GB', { style: 'unit', unit: bytes > 1e9 ? 'gigabyte' : 'megabyte', maximumFractionDigits: 1 }).format(
@@ -53,7 +54,8 @@ export default function DataManager({ lang }: { lang: Lang }) {
     const check = await checkExport(raw);
     if (!check.ok)
       return setMsg(t(check.error === 'version' ? 'importErrorVersion' : check.error === 'checksum' ? 'importErrorChecksum' : 'importErrorFormat'));
-    setMsg(fmt(t('importDone'), { n: await importFile(check.file) }));
+    const done = fmt(t('importDone'), { n: await importFile(check.file) });
+    setMsg(check.skipped ? `${done} ${fmt(t('importSkipped'), { n: check.skipped })}` : done);
     input.value = '';
     await refresh();
   }

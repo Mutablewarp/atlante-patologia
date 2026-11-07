@@ -71,6 +71,11 @@
   cursor: pointer;
   font-weight: 400;
 }
+/* A checkbox in a tool form stays beside its label (.tool-form > label is a bold grid). */
+.tool-form > label.checkbox {
+  display: flex;
+  font-weight: 400;
+}
 .radio input,
 .checkbox input {
   /* WCAG 2.5.8: at least 24 px, also at the A- reading size */
@@ -349,6 +354,7 @@
 .note-text {
   white-space: pre-wrap;
 }
+/* Study hub: filled from IndexedDB after paint, so every slot has its final size from the start (CLS 0). */
 .hub-status {
   display: grid;
   gap: var(--space-3);
@@ -359,13 +365,48 @@
   font-weight: 700;
   min-height: calc(var(--leading) * 1em);
 }
-/* Room for the resume card (kicker, title, section) before it is read from IndexedDB */
+/* Exactly the resume card of personal.ts: border, padding, kicker and its margin, two lines of name, section,
+   two gaps (.resume-link clamps longer text to these lines) */
 .hub-status ap-resume {
   display: block;
-  min-height: 7rem;
+  min-height: calc(4rem + 2px + var(--leading) * (2 * var(--step--1) + 2 * var(--step-0)));
 }
-.hub-status .resume-link {
-  margin-bottom: 0;
+.hub-status ap-resume > * {
+  min-height: inherit;
+  margin: 0;
+  align-content: start;
+}
+/* No card yet: the empty-state line fills the same slot as a placeholder */
+.hub-status ap-resume > p {
+  display: grid;
+  align-content: center;
+  max-width: 32rem;
+  padding: var(--space-4) var(--space-5);
+  border: 1.5px dashed var(--border-strong);
+  border-radius: var(--radius-m);
+}
+.hub-status .export-reminder {
+  margin: 0;
+}
+/* Wide screens can show the block at load: the backup reminder sits beside the due line and the resume
+   card, inside the height they already reserve, so it moves nothing. Narrower screens show the block far
+   below the fold, with the reminder last. */
+@media (min-width: 1024px) {
+  .hub-status {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas: 'due reminder' 'resume reminder';
+    align-items: start;
+    column-gap: var(--space-5);
+  }
+  .hub-due {
+    grid-area: due;
+  }
+  .hub-status ap-resume {
+    grid-area: resume;
+  }
+  .hub-status ap-export-reminder {
+    grid-area: reminder;
+  }
 }
 .mode-card h2 {
   margin-top: 0;
@@ -377,6 +418,20 @@
   gap: var(--space-1);
   max-width: 32rem;
   margin-bottom: var(--space-4);
+}
+/* One line for the kicker and the section, two for the card name: the hub reserves exactly this (no shift). */
+.resume-link > * {
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.resume-link > strong {
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
 }
 .recent-list {
   columns: 16rem;
@@ -513,4 +568,13 @@ ap-path-progress progress {
 }
 .oral-history {
   padding-left: var(--space-5);
+}
+/* Loading, empty and closed list: the same one-line height (no shift when the sessions arrive). */
+.oral-history-line {
+  margin: 0;
+  padding-block: var(--space-2);
+}
+.oral-history-box summary {
+  cursor: pointer;
+  font-weight: 600;
 }

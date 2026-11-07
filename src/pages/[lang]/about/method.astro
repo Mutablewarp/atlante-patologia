@@ -7,6 +7,7 @@ import { SELF_VERIFIED } from '../../../lib/self-verified.ts';
 
 export const getStaticPaths = langPaths;
 const lang = Astro.params.lang as Lang;
+const selfChecked = [...SELF_VERIFIED].sort((a, b) => a.name[lang].localeCompare(b.name[lang], lang));
 ---
 
 <AboutPage lang={lang} slug="method">
@@ -14,9 +15,11 @@ const lang = Astro.params.lang as Lang;
     <Fragment slot="it">
       <h2>In breve</h2>
       <p>
-        Le schede sono scritte con l’assistenza di un’intelligenza artificiale, seguendo il programma di un corso di
-        anatomia patologica. Ogni affermazione di fatto viene controllata su un testo di riferimento prima della
-        pubblicazione. Una scheda viene pubblicata solo quando supera tutti i controlli automatici.
+        Le schede sono generate con l’intelligenza artificiale, seguendo il programma di un corso di anatomia patologica.
+        Prima della pubblicazione agenti di intelligenza artificiale controllano le affermazioni di fatto delle schede, delle
+        tabelle di confronto e dei percorsi molecolari su un testo di riferimento o, se il testo non le tratta, su una
+        seconda fonte verificata; nessun esperto le ha ancora riviste.
+        Una scheda viene pubblicata solo quando supera tutti i controlli automatici.
       </p>
       <h2>Come viene scritta una scheda</h2>
       <ol>
@@ -31,8 +34,8 @@ const lang = Astro.params.lang as Lang;
           suonare naturale.
         </li>
         <li>
-          Ogni frase che afferma un fatto porta un marcatore invisibile collegato a un registro delle verifiche: fonte,
-          pagina e esito del controllo.
+          Nelle sezioni della scheda ogni frase che afferma un fatto porta un marcatore invisibile collegato a un registro
+          delle verifiche: fonte, pagina ed esito del controllo.
         </li>
         <li>
           Di regola un secondo agente, che non vede il ragionamento del primo, confronta ogni affermazione con il
@@ -42,35 +45,43 @@ const lang = Astro.params.lang as Lang;
       </ol>
       <h2>Uso dell’intelligenza artificiale</h2>
       <p>
-        Testi, domande e schemi sono generati con modelli di intelligenza artificiale e controllati automaticamente sulle
-        fonti citate con il processo descritto sopra; nessun esperto li ha ancora rivisti. L’IA può sbagliare, anche in modo convincente: per questo una riga in
-        fondo a ogni pagina lo ricorda e rimanda qui.
+        Testi, domande e schemi sono generati con modelli di intelligenza artificiale. Le loro affermazioni di fatto sono
+        controllate automaticamente sulle fonti citate con il processo descritto sopra, con le eccezioni elencate più sotto;
+        nessun esperto li ha ancora rivisti. L’IA può sbagliare, anche in modo convincente: per questo una riga in fondo a
+        ogni pagina lo ricorda e rimanda qui.
       </p>
       <h2>Che cosa significa lo stato di revisione</h2>
       <dl>
         <dt><strong>Registro delle affermazioni</strong></dt>
-        <dd>Ogni affermazione di fatto ha una voce nel registro: fonte, pagina ed esito del controllo.</dd>
+        <dd>
+          Ogni frase che afferma un fatto nelle sezioni delle schede, nelle celle delle tabelle di confronto e nei passi dei
+          percorsi molecolari ha una voce nel registro: fonte, pagina ed esito del controllo.
+        </dd>
         <dt><strong>Verifica automatica indipendente</strong></dt>
         <dd>
           Di regola un secondo agente, separato da quello che scrive, ricontrolla ogni affermazione sul riferimento. Una
           scheda con affermazioni contraddette non viene pubblicata.
         </dd>
-        <dt><strong>Pagine controllate solo dall’agente che le ha scritte</strong></dt>
+        <dt><strong>Affermazioni controllate solo da chi le ha scritte o corrette</strong></dt>
         <dd>
-          Per queste pagine la verifica indipendente non è ancora stata fatta: le affermazioni sono state controllate sul
-          riferimento solo dall’agente che le ha scritte.
+          Su queste pagine alcune affermazioni sono state controllate sulle fonti solo dall’agente che le ha scritte o che
+          le ha corrette dopo la verifica indipendente, non da un secondo agente. Tra parentesi il loro numero; tutte le
+          altre affermazioni sono state ricontrollate da un agente separato.
           <ul>
-            {SELF_VERIFIED.map((p) => (
+            {selfChecked.map((p) => (
               <li>
-                <a href={langPath(lang, p.path)}>{p.name.it}</a>
+                <a href={langPath(lang, p.path)}>{p.name.it}</a> ({p.claims} {p.claims === 1 ? 'affermazione' : 'affermazioni'})
               </li>
             ))}
           </ul>
         </dd>
-        <dt><strong>Strutture 3D</strong></dt>
+        <dt><strong>Testi senza voci proprie nel registro</strong></dt>
         <dd>
-          Le note sulle strutture 3D (organismo, metodo, parti mancanti o modificate) descrivono la provenienza del modello
-          e sono ricavate dalla voce RCSB PDB citata; non hanno voci nel registro delle affermazioni.
+          Non hanno voci proprie nel registro delle affermazioni: le note sulle strutture 3D (organismo, metodo, parti
+          mancanti o modificate, ricavate dalla voce RCSB PDB citata), le definizioni del glossario, i riassunti delle
+          schede, dei pattern e dei percorsi, gli esercizi della catena patologia–segno–esame, le note sulle relazioni tra
+          le schede, le didascalie, i testi alternativi e le scritte degli schemi e delle immagini, e le risposte della
+          verifica rapida.
         </dd>
         <dt><strong>Nessuna revisione di esperti, salvo dove indicato</strong></dt>
         <dd>
@@ -89,9 +100,10 @@ const lang = Astro.params.lang as Lang;
     <Fragment slot="en">
       <h2>In short</h2>
       <p>
-        Cards are written with the help of artificial intelligence, following the syllabus of a pathology course. Every
-        factual claim is checked against a reference textbook before publication. A card goes online only when it passes
-        every automated check.
+        Cards are generated with artificial intelligence, following the syllabus of a pathology course. Before publication,
+        AI agents check the factual claims of the cards, comparison tables and molecular pathways against a reference
+        textbook or, when the textbook does not cover them, against a second verified source; no expert has reviewed them
+        yet. A card goes online only when it passes every automated check.
       </p>
       <h2>How a card is written</h2>
       <ol>
@@ -102,8 +114,8 @@ const lang = Astro.params.lang as Lang;
         </li>
         <li>The English version is written first; the Italian one is translated from our English and then edited to read naturally.</li>
         <li>
-          Every sentence that states a fact carries an invisible marker linked to a verification ledger: source, page and
-          result of the check.
+          In a card’s sections, every sentence that states a fact carries an invisible marker linked to a verification
+          ledger: source, page and result of the check.
         </li>
         <li>
           As a rule a second agent, which does not see the first one’s reasoning, checks each claim against the reference
@@ -113,35 +125,41 @@ const lang = Astro.params.lang as Lang;
       </ol>
       <h2>Use of artificial intelligence</h2>
       <p>
-        Texts, questions and diagrams are generated with AI models and checked automatically against the cited sources with
-        the process above; no expert has reviewed them yet. AI can be wrong, sometimes convincingly so: that is why a line at the bottom of every page says so
-        and links here.
+        Texts, questions and diagrams are generated with AI models. Their factual claims are checked automatically against
+        the cited sources with the process above, with the exceptions listed below; no expert has reviewed them yet. AI can
+        be wrong, sometimes convincingly so: that is why a line at the bottom of every page says so and links here.
       </p>
       <h2>What the review status means</h2>
       <dl>
         <dt><strong>Claim ledger</strong></dt>
-        <dd>Every factual claim has an entry in the ledger: source, page and result of the check.</dd>
+        <dd>
+          Every sentence that states a fact in a card’s sections, in a comparison-table cell or in a pathway step has an
+          entry in the ledger: source, page and result of the check.
+        </dd>
         <dt><strong>Independent automated verification</strong></dt>
         <dd>
           As a rule a second agent, separate from the one that writes, checks each claim against the reference again. A
           card with a contradicted claim is not published.
         </dd>
-        <dt><strong>Pages checked only by the agent that wrote them</strong></dt>
+        <dt><strong>Claims checked only by the agent that wrote or corrected them</strong></dt>
         <dd>
-          The independent check has not been done yet for these pages: their claims were checked against the reference only
-          by the agent that wrote them.
+          On these pages some claims were checked against the sources only by the agent that wrote them, or that corrected
+          them after the independent check, not by a second agent. Their number is in brackets; every other claim was
+          re-checked by a separate agent.
           <ul>
-            {SELF_VERIFIED.map((p) => (
+            {selfChecked.map((p) => (
               <li>
-                <a href={langPath(lang, p.path)}>{p.name.en}</a>
+                <a href={langPath(lang, p.path)}>{p.name.en}</a> ({p.claims} {p.claims === 1 ? 'claim' : 'claims'})
               </li>
             ))}
           </ul>
         </dd>
-        <dt><strong>3D structures</strong></dt>
+        <dt><strong>Texts without their own ledger entries</strong></dt>
         <dd>
-          The notes on 3D structures (organism, method, missing or modified parts) describe where the model comes from and
-          are taken from the cited RCSB PDB entry; they have no claim-ledger entries.
+          These have no entries of their own in the claim ledger: notes on 3D structures (organism, method, missing or
+          modified parts, taken from the cited RCSB PDB entry), glossary definitions, the summaries of cards, patterns and
+          pathways, the chain-trainer items (pathology, sign, test), the notes on relations between cards, image captions,
+          alt text and the words in diagrams and images, and quick-check answers.
         </dd>
         <dt><strong>No expert review yet, unless marked</strong></dt>
         <dd>

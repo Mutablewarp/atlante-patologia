@@ -272,6 +272,10 @@ export const tS = defineStrings({
     en: 'Import merges: for each item it keeps the newest version. It deletes nothing.',
   },
   importDone: { it: 'Importazione completata: {n} elementi aggiornati.', en: 'Import complete: {n} items updated.' },
+  importSkipped: {
+    it: 'Elementi danneggiati non importati: {n} (l’atlante non può leggerli).',
+    en: 'Damaged items not imported: {n} (the atlas cannot read them).',
+  },
   importErrorFormat: { it: 'Il file non è un backup valido dell’atlante.', en: 'The file is not a valid atlas backup.' },
   importErrorVersion: {
     it: 'Il file viene da una versione più recente dell’atlante: aggiorna la pagina e riprova.',
@@ -338,8 +342,8 @@ export const tS = defineStrings({
   calibRow: { it: '{right} giuste su {total} ({pct} %)', en: '{right} right of {total} ({pct} %)' },
   calibNone: { it: 'nessuna risposta', en: 'no answers' },
   adviceTooFew: {
-    it: 'Servono almeno 10 risposte con il livello di sicurezza per un confronto utile. Continua a indicarlo prima di rispondere.',
-    en: 'At least 10 answers with a confidence level are needed for a useful comparison. Keep choosing it before you answer.',
+    it: 'Servono almeno 10 risposte con il livello di sicurezza per un confronto utile, di cui almeno 5 per ciascuno di due livelli. Continua a indicarlo prima di rispondere.',
+    en: 'At least 10 answers with a confidence level are needed for a useful comparison, with at least 5 at each of two levels. Keep choosing it before you answer.',
   },
   adviceOverconfident: {
     it: 'Quando ti senti sicuro sbagli più di una volta su quattro. Prima di rispondere, prova a spiegare il perché: se non ci riesci, non sei davvero sicuro.',
@@ -356,6 +360,10 @@ export const tS = defineStrings({
   adviceOneLevel: {
     it: 'Hai scelto quasi sempre lo stesso livello di sicurezza, quindi non c’è ancora nulla da confrontare. Usa anche gli altri livelli quando ti descrivono meglio.',
     en: 'You almost always chose the same confidence level, so there is nothing to compare yet. Use the other levels too when they describe you better.',
+  },
+  adviceNotRising: {
+    it: 'Quando ti senti più sicuro non rispondi meglio: a un livello di sicurezza più alto sbagli più spesso che a uno più basso. Prima di scegliere il livello, chiediti se sapresti spiegare la risposta.',
+    en: 'Feeling surer does not make you more accurate: at a higher confidence level you are wrong more often than at a lower one. Before choosing the level, ask yourself whether you could explain the answer.',
   },
   adviceCalibrated: {
     it: 'La tua sicurezza corrisponde bene ai risultati. Usala per decidere cosa ripassare: prima i temi in cui ti senti incerto.',
@@ -452,4 +460,7 @@ export const tS = defineStrings({
   historyTitle: { it: 'Sessioni precedenti', en: 'Previous sessions' },
   historyEmpty: { it: 'Nessuna sessione salvata su questo dispositivo.', en: 'No sessions saved on this device.' },
   historyRow: { it: '{date}: {n} domande, autovalutato {a} su 4', en: '{date}: {n} questions, self-assessed {a} out of 4' },
+  historyDamaged: { it: 'Sessione danneggiata, non leggibile', en: 'Damaged session, cannot be read' },
+  historyCount: { it: 'Sessioni salvate: {n}', en: 'Saved sessions: {n}' },
+  historyUnreadable: { it: 'risposte non leggibili: {n}', en: 'unreadable answers: {n}' },
 });

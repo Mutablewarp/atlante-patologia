@@ -93,3 +93,15 @@ export function scaleBar(mpp: number, naturalW: number, shownW: number, maxPx = 
   const um = Number(([5, 2, 1].map((k) => k * p).find((v) => v <= max) ?? p).toPrecision(1));
   return { um, px: um / umPerPx };
 }
+
+type Lang2 = 'it' | 'en';
+/** The file a page in `lang` shows: an original diagram whose drawing carries text has an Italian copy (`fileIt`). */
+export const fileFor = (img: { file: string; fileIt?: string }, lang: Lang2): string => (lang === 'it' && img.fileIt) || img.file;
+/** The credit line in the page language: a third party's text as its source gives it, ours in both languages. */
+export const attributionFor = (text: string | Record<Lang2, string>, lang: Lang2): string => (typeof text === 'string' ? text : text[lang]);
+/** A licence as readers know it: our own images are CC BY-SA 4.0 like all our content (O2); codes lose their hyphens. */
+export function licenseName(license: string, lang: Lang2): string {
+  if (license === 'original') return 'CC BY-SA 4.0';
+  if (license === 'PD') return lang === 'it' ? 'pubblico dominio' : 'public domain';
+  return license.replace(/^CC-/, 'CC ').replace(/-(\d)/, ' $1');
+}

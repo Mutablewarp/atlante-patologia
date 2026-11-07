@@ -1,21 +1,25 @@
 // WHO watch (scripts/who-watch.mjs): parsers on handwritten fixtures, diff, dedup, issue bodies.
 // No network: every fetch goes through an injected function that serves tests/fixtures/who-watch/.
 import { readFileSync } from 'node:fs';
-import { describe, expect, it } from 'vitest';
+import { afterEach, describe, expect, it, vi } from 'vitest';
 import {
   BASELINE,
   MARKER,
   SOURCES,
   brokenIssue,
   changeIssue,
+  changeSummaryIssue,
   corrigendaSources,
   decode,
   diff,
   editionOf,
   fingerprint,
+  githubClient,
   brokenSummaryIssue,
   MAX_BROKEN,
+  MAX_CHANGES,
   neutral,
+  neutralTitle,
   oneLine,
   modulesFor,
   parseCatalogue,
@@ -133,14 +137,54 @@ describe('issues', () => {
   });
   it('fetched text cannot mention users, reference issues, inject HTML, break code spans or fake a fingerprint', () => {
     const hostile = 'WHO Classification of Tumours update @octocat see owner/repo#1 <img src=x> <!-- who-watch:0123456789ab --> `x`\n::error::x';
-    const i = changeIssue(source('news'), { kind: 'added', id: 'https://e.org/a?b=1@c', value: hostile }, ctx);
+    const i = changeIssue(source('news'), { kind: 'added', id: 'https://www.iarc.who.int/news/a?b=1@c', value: hostile }, ctx);
     expect(i.body).not.toMatch(/@octocat|repo#1|<img|<!--|`x`|\n::error/);
     expect(i.body).toContain('@\u200boctocat');
-    expect(i.body).toContain('**Item URL:** https://e.org/a?b=1%40c');
-    expect(i.body).toContain('&lt;!-- who-watch:0123456789ab --&gt;'); // escaped, and not on the last line
+    expect(i.body).toContain('**Item URL:** https://www.iarc.who.int/news/a?b=1%40c');
+    expect(i.body).toContain('&lt;\\!-- who-watch:0123456789ab --&gt;'); // escaped, and not on a line of its own
     expect(i.body.match(MARKER)?.[1]).toBe(i.fingerprint);
     expect(neutral('a\u0000b')).toBe('a b');
     expect(oneLine('x\n::error::y')).toBe('x ::error::y');
+  });
+  it('a corrigenda source built from hostile catalogue text cannot inject through its label or URL', () => {
+    const [src] = corrigendaSources({ 'Bad`@evil Slug': '5th Edition, Volume 1 <img src=x> @octocat owner/repo#1 | Alpha | 2020 | current' });
+    const issues = [changeIssue(src, { kind: 'changed', id: 'corrigenda', before: 'none', value: 'a.pdf' }, ctx), brokenIssue(src, new Error('HTTP 500'), ctx)];
+    for (const i of issues) {
+      expect(`${i.title}\n${i.body}`).not.toMatch(/@octocat|@evil|repo#1/);
+      expect(i.body).not.toMatch(/<img|`@/); // a title is plain text on GitHub: only the body needs HTML escaping
+      expect(i.body).toContain('Bad%60%40evil%20Slug');
+      expect(i.body.match(MARKER)?.[1]).toBe(i.fingerprint);
+    }
+    expect(issues[0].title).toContain('@​octocat');
+  });
+  it('a fetched item id or link gets an Item URL line only as an https WHO or NIH address', () => {
+    const lines = (body: string) => body.split('\n').filter((l) => l.startsWith('**Item URL:**'));
+    // A guid or link that is a repository reference, or Markdown, is never printed as a link.
+    for (const [id, guid] of [
+      ['news', 'owner/repo#1'],
+      ['iris', 'octo/other#7'],
+      ['news', '[click me](https://evil.example/x) ![p](https://evil.example/p.png)'],
+      ['iris', 'https://evil.example/x'],
+      ['iris', 'http://iris.who.int/handle/1'],
+      ['news', 'https://github.com/octo/repo/issues/1'],
+    ] as const) {
+      const i = changeIssue(source(id), { kind: 'added', id: guid, value: 'WHO Classification of Tumours update' }, ctx);
+      expect(lines(i.body), guid).toEqual([]);
+      expect(i.body, guid).not.toMatch(/repo#1|other#7|(?<!\\)\]\(|(?<!\\)!\[|github\.com/);
+    }
+    const ok = changeIssue(source('iris'), { kind: 'added', id: 'https://iris.who.int/handle/10665/1(2)', value: 'x' }, ctx);
+    expect(lines(ok.body)).toEqual(['**Item URL:** https://iris.who.int/handle/10665/1%282%29']);
+    expect(lines(changeIssue(source('pubmed'), { kind: 'added', id: '41000001', value: 'x' }, ctx).body)).toEqual(['**Item URL:** https://pubmed.ncbi.nlm.nih.gov/41000001/']);
+  });
+  it('Markdown links, images and github.com links in fetched text stay plain text; titles are not HTML-escaped', () => {
+    const value = 'ICD-O tables & notes [click](https://evil.example/x) ![p](https://evil.example/p.png) see https://github.com/octo/repo/issues/1';
+    const i = changeIssue(source('news'), { kind: 'added', id: 'x', value }, ctx);
+    expect(i.body).toContain('ICD-O tables &amp; notes \\[click\\]\\(https://evil.example/x\\) \\!\\[p\\]');
+    expect(i.body).not.toMatch(/github\.com/i);
+    expect(i.title).toContain('ICD-O tables & notes [click]');
+    expect(i.title).not.toMatch(/&amp;|github\.com/);
+    expect(neutralTitle('a\nb @c #d')).toBe('a b @\u200bc #\u200bd');
+    expect(neutral('\\[x]')).toBe('\\\\\\[x\\]'); // a backslash in the text cannot undo the escape
   });
 });
 
@@ -211,6 +255,22 @@ describe('pipeline (offline)', () => {
     const two = [{ source: source('catalogue'), entries: Object.fromEntries(Object.entries(baseline.sources.catalogue).slice(0, 18)) }];
     expect(plan(two, baseline).issues.map((i: { title: string }) => i.title.split(': ').slice(-1)[0])).toHaveLength(2);
   });
+  it('a burst of changes (e.g. every value in a new format) gives one summary issue that lists them', () => {
+    const volumes = (n: number) => Object.fromEntries(Array.from({ length: n }, (_, k) => [`V-${k}`, `5th Edition, Volume ${k} | V | 2020 | current`]));
+    const reformatted = (n: number) => Object.fromEntries(Object.entries(volumes(n)).map(([k, v]) => [k, `${v} | new layout`]));
+    const run = (n: number) => plan([{ source: source('catalogue'), entries: reformatted(n) }], { sources: { catalogue: volumes(n) } }, { now: new Date('2026-11-03') });
+    expect(run(MAX_CHANGES).issues).toHaveLength(MAX_CHANGES); // up to the cap, one issue per change
+    const { issues } = run(MAX_CHANGES + 2);
+    expect(issues).toHaveLength(1);
+    expect(issues[0].title).toBe(`WHO watch: ${MAX_CHANGES + 2} changes in one run, check the sources first`);
+    expect(issues[0].body).toContain('- IARC catalogue, WHO Classification of Tumours: changed 5th Edition, Volume 11 | V | 2020 | current | new layout');
+    expect(issues[0].body.match(MARKER)?.[1]).toBe(issues[0].fingerprint);
+    // The same burst in any order has the same fingerprint (seen once, never reopened); another burst gets a new one.
+    const changes = Object.entries(volumes(MAX_CHANGES + 2)).map(([id, v]) => changeIssue(source('catalogue'), { kind: 'changed', id, before: v, value: `${v} | new layout` }, ctx));
+    expect(changeSummaryIssue([...changes].reverse(), ctx).fingerprint).toBe(issues[0].fingerprint);
+    expect(changeSummaryIssue(changes.slice(1), ctx).fingerprint).not.toBe(issues[0].fingerprint);
+    expect(run(60).issues[0].body).toContain('- … and 10 more');
+  });
   it('past the run deadline the remaining sources are reported broken without being fetched', async () => {
     let calls = 0;
     const get = async () => {
@@ -248,6 +308,14 @@ describe('publish (GitHub client injected)', () => {
   const a = { fingerprint: 'aaaaaaaaaaaa', title: 'A', body: 'x\nwho-watch:aaaaaaaaaaaa' };
   const b = { fingerprint: 'bbbbbbbbbbbb', title: 'B', body: 'y\nwho-watch:bbbbbbbbbbbb' };
 
+  it('still recognises an issue when a maintainer adds a note below the marker', async () => {
+    const edited = `${changeIssue(source('icd11'), { kind: 'changed', id: 'release', before: '2026-01', value: '2027-01' }, ctx).body}\r\n\r\nTriage (maintainer): no impact.`;
+    const fp = edited.match(MARKER)?.[1];
+    expect(fp).toMatch(/^[0-9a-f]{12}$/);
+    const { gh, calls } = fakeGh([`open:${edited}`], ['who-watch', 'needs-human-review']);
+    expect(await publish([{ kind: 'change', fingerprint: fp, title: 'again', body: 'x' }], gh, { pause: async () => {} })).toEqual([]);
+    expect(calls.filter((c) => c.startsWith('POST'))).toEqual([]);
+  });
   it('creates missing labels, skips fingerprints already in any issue, never opens a duplicate in one run', async () => {
     const { gh, calls } = fakeGh(['closed earlier\nwho-watch:aaaaaaaaaaaa', 'mentions who-watch:bbbbbbbbbbbb mid-text\nwho-watch:cccccccccccc'], ['who-watch']);
     const opened = await publish([a, b, b], gh, { pause: async () => {} });
@@ -279,6 +347,46 @@ describe('publish: broken sources and pacing', () => {
     await publish([broken, change], gh('closed'), { pause: async () => void pauses++ });
     expect(posts).toEqual(['E', 'D', 'E']);
     expect(pauses).toBe(1);
+  });
+});
+
+describe('GitHub client (fetch stubbed)', () => {
+  afterEach(() => {
+    vi.unstubAllGlobals();
+    vi.useRealTimers();
+  });
+  /** Replies with the given statuses in order; records the requests. */
+  function stubFetch(replies: { status: number; headers?: Record<string, string> }[]) {
+    const requests: { url: string; init: RequestInit }[] = [];
+    vi.stubGlobal('fetch', async (url: string, init: RequestInit) => {
+      requests.push({ url, init });
+      const r = replies.shift()!;
+      return new Response(r.status < 300 ? '{"html_url":"https://example.org/issues/1"}' : '{}', { status: r.status, headers: r.headers });
+    });
+    return requests;
+  }
+
+  it('waits as long as retry-after says on a secondary rate limit, then retries once', async () => {
+    vi.useFakeTimers();
+    const requests = stubFetch([{ status: 403, headers: { 'retry-after': '7' } }, { status: 201 }]);
+    const call = githubClient('t0ken', 'owner/repo')('POST', '/issues', { title: 'x' });
+    await vi.advanceTimersByTimeAsync(6_999);
+    expect(requests).toHaveLength(1);
+    await vi.advanceTimersByTimeAsync(1);
+    await expect(call).resolves.toEqual({ status: 201, data: { html_url: 'https://example.org/issues/1' } });
+    expect(requests.map((r) => r.url)).toEqual(['https://api.github.com/repos/owner/repo/issues', 'https://api.github.com/repos/owner/repo/issues']);
+    expect((requests[0]!.init.headers as Record<string, string>).authorization).toBe('Bearer t0ken'); // the token travels only as a header
+  });
+
+  it('gives up after one retry, and at once without retry-after', async () => {
+    vi.useFakeTimers();
+    stubFetch([{ status: 429, headers: { 'retry-after': '1' } }, { status: 429, headers: { 'retry-after': '1' } }]);
+    const call = githubClient('t', 'o/r')('POST', '/issues', { title: 'x' });
+    const failed = expect(call).rejects.toThrow('GitHub POST /issues: HTTP 429');
+    await vi.advanceTimersByTimeAsync(1_000);
+    await failed;
+    stubFetch([{ status: 403 }]);
+    await expect(githubClient('t', 'o/r')('POST', '/issues', { title: 'x' })).rejects.toThrow('HTTP 403');
   });
 });
 

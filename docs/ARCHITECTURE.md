@@ -25,6 +25,7 @@ Status: PHASE 0 proposal, 2026-10-10. Versions come from [VERIFIED_FACTS.md](VER
 | Search | Pagefind | 1.5.2 | Post-build; one index per `<html lang>`; diacritic-tolerant since 1.5.0; `baseUrl` for project-site subpath. |
 | Spaced repetition | ts-fsrs | 5.4.2 (MIT, Node ≥ 20) | FSRS v6 scheduler. |
 | Client storage | idb (IndexedDB wrapper) | 8.0.4 (ISC) | |
+| 3D structure viewer | 3Dmol.js | 2.5.5 (BSD-3-Clause) | Loaded by a dynamic import only after "Load the 3D view"; kept out of the service-worker precache; reads committed CC0 BinaryCIF files written by `scripts/fetch-structures.mjs` (D050, D054). |
 | Service worker | Hand-written, plus a build script that emits the precache list | — | `@vite-pwa/astro` does not support Astro 6/7 (D006). |
 | Sitemap | `@astrojs/sitemap` | 3.7.4 | With i18n alternates. |
 | Unit + content validators | Vitest | 5.0.3 | Validators are Vitest suites (D014). |
@@ -32,7 +33,7 @@ Status: PHASE 0 proposal, 2026-10-10. Versions come from [VERIFIED_FACTS.md](VER
 | Performance audit | `lighthouse` CLI + small assertion script | 13.5.0 | `@lhci/cli` not used: no release since 2025-06 (D007). |
 | License scan | license-checker-rseidelsohn | 5.0.1 | Needs Node ≥ 24, npm ≥ 11. |
 | Git hooks | simple-git-hooks | 2.14.0 | Pre-commit containment and no-verbatim guard. |
-| Reference text extraction (guard) | pdfjs-dist | verify in Phase 1 | Apache-2.0, in-repo. PyMuPDF (AGPL) was used only for Phase 0 exploration, outside the repo (D016). |
+| Reference text for the guard | none in the repo | — | `scripts/no-verbatim.mjs` reads text extracted once into gitignored `.work/*.txt`; no PDF library is a dependency. PyMuPDF (AGPL) was used only for Phase 0 exploration, outside the repo (D016, superseded). |
 | Fonts | Fraunces (display) + Atkinson Hyperlegible Next (body), self-hosted via `@fontsource-variable/*` | 5.3.0 / 5.3.0 (OFL-1.1) | Bundled with the site, no third-party requests (D015 revised). |
 
 ## 3. Repository layout
@@ -102,10 +103,13 @@ npm run build =
 | Persistence | `navigator.storage.persist()` | Requested after the first meaningful action (first review saved), not on page load. Supported from Safari 17 and granted by heuristics. |
 | Offline packs | Cache Storage `pack-<lang>-<module>-<hash>` | Opt-in per module. Storage meter uses `navigator.storage.estimate()`. Delete per pack. |
 
+**Learner database versions only move forward.** `DB_VERSION` in `src/lib/db.ts` is the IndexedDB version. An upgrade only adds stores (`STORES_ADDED_IN`), so no record is rewritten or dropped. Once a browser has opened version N, older code that asks for version N − 1 gets a `VersionError`: until the page loads newer code, the study and Me features can neither read nor save progress (the pages that list saved data show the storage notice, never "nothing saved"), and the data stays intact. So a deploy is never rolled back past a `DB_VERSION` bump. Roll forward instead: revert the faulty change in a new commit, keep `DB_VERSION` and the stores it added, and deploy. While an upgrade waits for a tab that still runs older code, every page that needs the database asks the learner to close the other atlas tabs (`blocked`). The browser sends `blocked` only to the request at the head of its queue, so `db()` also reports it when an open has not settled after 1.5 s (`BLOCKED_AFTER_MS`); when a new service worker is waiting, the notice points to the Reload of the update notice, which reloads the older tabs that show it. A tab that holds up a newer version closes its connection and offers a reload (`blocking`). The database notice and the update notice sit in one fixed column at the bottom, so neither covers the other; the database notice can be dismissed (its button or Escape), the update notice with Later, and the column adds its height to `scroll-padding-bottom` and the footer (`--notice-h`), so neither hides the focused control. Import checks the whole file before writing anything (`checkExport` in `src/lib/import-check.ts`, which only the data page loads): the app, version and checksum of the file, then each record, which must carry an id, a timestamp and every field the study tools read (`isImportable`; a tombstone needs only the first two). A record that fails is left out and counted, and the learner is told how many, so one damaged record never blocks the rest of a backup. The oral simulator lists any stored session it cannot read, and marks a session with unreadable answers, so the learner can delete just that session.
+
 Service-worker strategies:
 - App shell is precached.
 - Navigations are network-first with an offline fallback page.
 - Hashed `/_astro/*` assets are cache-first.
+- Study data (`/<lang>/data/*.json`) is network-first: packs hold it under the same names in every deploy, so it is served from a pack only offline.
 - Offline packs are cache-first, only when the pack is installed.
 
 The cache name includes the precache hash, so a new deploy replaces the shell atomically. Old caches are deleted on activate.
@@ -119,6 +123,7 @@ The cache name includes the precache hash, so a new deploy replaces the shell at
 - Workflow `ci.yml`:
   - **`test` job** (push and PR), using `actions/checkout@v7` and `actions/setup-node@v7`: `npm ci`, containment guard, license scan, `astro check`, content validators, build, dist validators, Playwright, Lighthouse assertions.
   - **`deploy` job** (main only, `needs: test`): `withastro/action@v6` then `actions/deploy-pages@v5`.
+  - Every `uses:` line names a full commit SHA, with its version in a comment (checked with `git ls-remote` on 2026-11-04 and again on 2026-11-07: checkout v7.0.1, setup-node v7.1.0, upload-artifact v7.0.2, download-artifact v8.0.2, withastro/action v6.1.4, deploy-pages v5.0.1). A moved tag cannot change what runs with the deploy job's `pages: write` and `id-token: write`; withastro/action v6.1.4 pins the actions it calls by SHA too. To update, resolve the new tag's SHA the same way.
   - Phase 1 must verify that `withastro/action` runs our `build` script, so that Pagefind and the SW manifest are included.
 - Custom `404.html` is supported by Pages. Deep links work because every route is emitted as `/path/index.html`.
 - Publishing requires the owner's `gh auth login`. Tokens are never handled by the agent.

@@ -10,7 +10,8 @@ html {
   -webkit-text-size-adjust: 100%;
   text-size-adjust: 100%;
   scroll-padding-top: calc(var(--topbar-h) + var(--space-4));
-  scroll-padding-bottom: var(--space-4);
+  /* --notice-h: how far the fixed notices reach up from the bottom (db-notice.ts), 0 when none is shown. */
+  scroll-padding-bottom: calc(var(--notice-h, 0px) + var(--space-4));
 }
 
 body {
@@ -93,6 +94,17 @@ li {
 }
 .prose :is(table, th, td, a, code) {
   hyphens: manual;
+}
+/* Captions and credit lines keep the measure even where the figure is wider than the text (pattern pages) */
+figcaption :is(p, li) {
+  max-width: var(--measure);
+}
+/* Related-card lists and source lists (entity, pattern and pathway pages): each line keeps the measure of its
+   own type size (the smaller summary type fits more characters into the list's width) */
+.related > ul,
+.related > ul > li > .small,
+.sources > ul {
+  max-width: var(--measure);
 }
 
 a {
@@ -301,7 +313,9 @@ html:not(.js) .js-only {
   *::after {
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+    /* 0s, not 0.01ms: with transition-property's default `all`, any duration turns every style change into a
+       transition, and a script that measures right after a change reads the old geometry (image-viewer label fit). */
+    transition-duration: 0s !important;
     scroll-behavior: auto !important;
   }
 }

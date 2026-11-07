@@ -11,6 +11,7 @@ import type { ImageMetadata } from 'astro';
 import type { Lang } from '../i18n/index.ts';
 import { siteData, entityBody, images as getImages, PREVIEW_DRAFTS } from './content.ts';
 import { splitSections } from './sections.ts';
+import { fileFor } from './image-meta.ts';
 import { clozeCards, qaCards, occlusionCards, type StudyCard, type OcclusionImage } from './cards.ts';
 import type { QuizQuestion } from './quiz.ts';
 import type { OralQuestion } from './oral.ts';
@@ -69,6 +70,7 @@ export function allCards() {
       for (const ref of e.images) {
         const img = imgs.get(ref.id);
         if (!img || !img.annotations.length) continue;
+        // shortcut: occlusion cards share one drawing across languages; an Italian copy (`fileIt`) is not used here, add it if a labelled diagram ever needs one.
         const src = await imageSrc(img.file);
         if (src) occ.push({ id: img.id, ...src, alt: img.alt, caption: img.caption, section: sectionForImageKind(ref.role), annotations: img.annotations });
       }
@@ -98,7 +100,7 @@ export async function questionsFor(module: string, lang: Lang): Promise<QuizQues
   for (const q of (await questions()).filter((x) => x.module === module)) {
     const target = entityById.get(q.backLink.entity);
     const img = q.image ? imgs.get(q.image) : undefined;
-    const src = img ? await imageSrc(img.file) : undefined;
+    const src = img ? await imageSrc(fileFor(img, lang)) : undefined;
     out.push({
       id: q.id,
       module: q.module,

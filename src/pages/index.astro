@@ -123,7 +123,8 @@ const abs = (p: string) => new URL(p, Astro.site!).href;
           <span lang="en">For education only, not for diagnosis or treatment.</span>
         </p>
         <p class="small muted" data-ai-notice>
-          {AI.it}{' '}<span lang="en">{AI.en}</span>
+          {AI.it} <a href={langPath('it', 'about/method/')}>{tCommon('it', 'aiNoticeLink')}</a>{' '}
+          <span lang="en">{AI.en} <a href={langPath('en', 'about/method/')}>{tCommon('en', 'aiNoticeLink')}</a></span>
         </p>
       </div>
     </main>

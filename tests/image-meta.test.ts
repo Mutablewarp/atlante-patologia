@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { readFileSync, readdirSync } from 'node:fs';
 import { parse } from 'yaml';
 import { imageSchema } from '../src/lib/schema.ts';
-import { STAINS, groupMembers, powerOf, scaleBar, stainCode } from '../src/lib/image-meta.ts';
+import { STAINS, attributionFor, fileFor, groupMembers, licenseName, powerOf, scaleBar, stainCode } from '../src/lib/image-meta.ts';
 
 describe('stainCode', () => {
   it.each([
@@ -120,5 +120,46 @@ describe('image schema: study fields', () => {
     expect(() => imageSchema.parse({ ...base, mpp: 0 })).toThrow();
     expect(() => imageSchema.parse({ ...base, group: 'Not Kebab' })).toThrow();
     expect(() => imageSchema.parse({ ...base, lookFor: { it: 'solo italiano' } })).toThrow();
+  });
+});
+
+describe('original diagrams in both languages', () => {
+  const dir = new URL('../src/content/images/', import.meta.url);
+  const assets = new URL('../src/assets/images/', import.meta.url);
+  const ours = readdirSync(dir)
+    .filter((f) => f.endsWith('.yaml') && !f.startsWith('_'))
+    .map((f) => imageSchema.parse(parse(readFileSync(new URL(f, dir), 'utf8'))))
+    .filter((i) => i.license === 'original');
+  it('every published diagram of ours with text in the drawing has an Italian copy, and each language shows its own', () => {
+    expect(ours.length).toBeGreaterThan(0);
+    for (const img of ours.filter((i) => i.file.endsWith('.svg'))) {
+      expect(img.fileIt, img.id).toBe(img.file.replace(/\.svg$/, '.it.svg'));
+      expect(fileFor(img, 'it')).toBe(img.fileIt);
+      expect(fileFor(img, 'en')).toBe(img.file);
+      const it = readFileSync(new URL(img.fileIt!, assets), 'utf8');
+      const en = readFileSync(new URL(img.file, assets), 'utf8');
+      // Same drawing, other words: as many labels, and none of the English ones left (names and symbols aside).
+      const labels = (svg: string) => [...svg.matchAll(/<text\b[^>]*>([^<]*)<\/text>/g)].map((m) => m[1]!);
+      expect(labels(it).length, img.id).toBe(labels(en).length);
+      const kept = labels(it).filter((t, k) => t === labels(en)[k] && /[a-z]{4,}/.test(t) && !/^[A-Z][\w-]*,? ?(?:[A-Z]\w*,? ?)*$/.test(t));
+      expect(kept, img.id).toEqual([]);
+    }
+  });
+  it('credits us in the page language under our licence name', () => {
+    for (const img of ours) {
+      expect(typeof img.attributionText, img.id).toBe('object');
+      expect(attributionFor(img.attributionText, 'it'), img.id).toMatch(/Atlante di Patologia/);
+      expect(licenseName(img.license, 'it')).toBe('CC BY-SA 4.0');
+    }
+    expect(attributionFor('Mikael Häggström, CC0 1.0', 'it')).toBe('Mikael Häggström, CC0 1.0');
+    expect(licenseName('CC-BY-SA-3.0', 'en')).toBe('CC BY-SA 3.0');
+    expect(licenseName('CC0-1.0', 'en')).toBe('CC0 1.0');
+    expect(licenseName('PD', 'it')).toBe('pubblico dominio');
+  });
+  it('rejects an English-only credit on our own image, and an Italian copy of a third-party one', () => {
+    const base = parse(readFileSync(new URL('g01-apoptosis-pathways.yaml', dir), 'utf8'));
+    expect(imageSchema.safeParse(base).success).toBe(true);
+    expect(imageSchema.safeParse({ ...base, attributionText: 'Original diagram' }).success).toBe(false);
+    expect(imageSchema.safeParse({ ...base, license: 'CC0-1.0' }).success).toBe(false);
   });
 });

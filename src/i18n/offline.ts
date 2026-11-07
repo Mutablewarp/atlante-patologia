@@ -107,8 +107,13 @@ export const tOffline = defineStrings({
     it: 'Chiudi le altre schede dell’atlante per completare l’aggiornamento. Fino ad allora i tuoi dati di studio non sono disponibili.',
     en: 'Close the other atlas tabs to finish the update. Until then your study data is not available.',
   },
+  dbBlockedUpdate: {
+    it: 'Per completare l’aggiornamento premi “Ricarica” nell’avviso della nuova versione, oppure chiudi le altre schede dell’atlante. Fino ad allora i tuoi dati di studio non sono disponibili.',
+    en: 'To finish the update, press “Reload” in the new-version notice, or close the other atlas tabs. Until then your study data is not available.',
+  },
   dbBlocking: {
     it: 'In un’altra scheda è aperta una versione più recente dell’atlante. Ricarica questa pagina per continuare a salvare i tuoi dati.',
     en: 'A newer version of the atlas is open in another tab. Reload this page to keep saving your data.',
   },
+  dbClose: { it: 'Chiudi', en: 'Close' },
 });

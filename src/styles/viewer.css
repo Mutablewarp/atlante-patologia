@@ -62,11 +62,22 @@
 .viewer-label[data-v='bottom'] {
   --ty: -100%;
 }
-/* Phones: a numbered marker on the image; the full text is in the numbered legend below. */
+/* A numbered marker instead of the text, placed like the text so it stays inside the image; the numbered
+   legend below has the full text. On phones every label; elsewhere a label that would cover another one
+   (scripts/image-viewer.ts sets data-num). */
+.viewer-label[data-num] {
+  min-width: 1.7em;
+  text-align: center;
+  border-radius: 999px;
+}
+.viewer-label[data-num]::before {
+  content: attr(data-n);
+}
+.viewer-label[data-num] .viewer-label-text {
+  display: none;
+}
 @media (max-width: 599px) {
   .viewer-label[data-n] {
-    --tx: -50%;
-    --ty: -50%;
     min-width: 1.7em;
     text-align: center;
     border-radius: 999px;

@@ -1,6 +1,6 @@
 ---
 lang: it
-translatedFrom: 5ded39008edb8a390f58577e54d7a0c25cf62bf8ddcd8cc6f22a433b98d26b0b
+translatedFrom: 177c1751c3c25b741d664dddc1528804b1265bd4df033628ed56a9f96b7f560d
 ---
 
 ## Definizione ed epidemiologia
@@ -48,10 +48,10 @@ Non applicabile.
 
 - Colpisce **singole cellule o piccoli gruppi** sparsi tra cellule vitali, non un'area a carta geografica.<!--c:apoptosis-c037-->
 - **Nucleo:** la cromatina si condensa (picnosi) e il nucleo si frammenta (carioressi), all'interno di una membrana cellulare integra.<!--c:apoptosis-c038-->
-- **Corpo cellulare:** la cellula apoptotica si raggrinzisce.<!--c:apoptosis-c073--> Il suo citoplasma diventa intensamente eosinofilo all'EE, come nei corpi di Councilman.<!--c:apoptosis-c074-->
+- **Corpo cellulare:** la cellula apoptotica si raggrinzisce, ma la sua membrana plasmatica resta integra.<!--c:apoptosis-c073--> Il suo citoplasma può diventare eosinofilo all'EE, come nei cheratinociti apoptotici dell'eritema multiforme; i corpi acidofili dell'epatite virale sono epatociti apoptotici con citoplasma intensamente eosinofilo.<!--c:apoptosis-c074-->
 - **Citoplasma e membrana:** gli organelli vanno incontro a segregazione, la membrana plasmatica forma bolle (blebs) e la cellula si frammenta in corpi apoptotici delimitati da membrana, molti dei quali privi di materiale nucleare.<!--c:apoptosis-c039-->
 - **Nessun infiltrato infiammatorio** attorno alle cellule morenti.<!--c:apoptosis-c040-->
-- Esempi classici: gli epatociti apoptotici nell'epatite virale e i cheratinociti apoptotici nell'eritema multiforme.<!--c:apoptosis-c041--> Nell'epatite virale acuta i singoli epatociti morti diventano piccoli **corpi acidofili**, fortemente eosinofili, talvolta con un nucleo picnotico.<!--c:apoptosis-c075--> Nella febbre gialla gli epatociti apoptotici diventano intensamente eosinofili e si distaccano formando i **corpi di Councilman**.<!--c:apoptosis-c042--> Nel lichen planus i cheratinociti apoptotici formano **corpi colloidi (di Civatte)**, rotondi ed eosinofili, frammisti all'infiltrato infiammatorio della giunzione dermo-epidermica.<!--c:apoptosis-c076-->
+- Esempi classici: gli epatociti apoptotici nell'epatite virale e i cheratinociti apoptotici nell'eritema multiforme.<!--c:apoptosis-c041--> Nell'epatite virale acuta i singoli epatociti morti diventano piccoli **corpi acidofili**, fortemente eosinofili, talvolta con un nucleo picnotico.<!--c:apoptosis-c075--> Il virus della febbre gialla spinge alcuni epatociti verso l'apoptosi: sono i **corpi di Councilman**, staccati dalle cellule epatiche circostanti e con citoplasma intensamente eosinofilo.<!--c:apoptosis-c042--> Nel lichen planus i cheratinociti apoptotici formano **corpi colloidi (di Civatte)**, rotondi ed eosinofili, frammisti all'infiltrato infiammatorio della giunzione dermo-epidermica.<!--c:apoptosis-c076-->
 - I **macrofagi a corpi tingibili** sono macrofagi carichi di detriti nucleari fagocitati e costituiscono un reperto normale nei centri germinativi.<!--c:apoptosis-c077--> Nel linfoma di Burkitt i macrofagi che hanno inglobato cellule tumorali apoptotiche sono sparsi tra le cellule neoplastiche e creano l'aspetto a **cielo stellato**.<!--c:apoptosis-c078-->
 
 ## Colorazioni speciali, IIC e reperti molecolari

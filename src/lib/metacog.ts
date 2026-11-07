@@ -38,17 +38,23 @@ export const luckyGuesses = (items: readonly Judged[]) => byEntity(items, 1, tru
 export const MIN_JUDGED = 10;
 /** Answers needed at one confidence level before its hit rate can drive a verdict. */
 export const MIN_PER_LEVEL = 5;
-export type Advice = 'tooFew' | 'overconfident' | 'fairlyWrong' | 'underconfident' | 'oneLevel' | 'calibrated';
+/** Share of the answers at one level from which "you almost always chose the same level" is true. */
+export const ONE_LEVEL_SHARE = 0.8;
+export type Advice = 'tooFew' | 'overconfident' | 'fairlyWrong' | 'underconfident' | 'oneLevel' | 'notRising' | 'calibrated';
 
 /**
  * Plain-language verdict. Thresholds are a rough teaching rule, not a
  * statistical test: "sure" should be right at least 3 times in 4, "fairly
  * sure" at least 1 time in 2, "guessing" no more than 6 times in 10. A level
  * counts only with at least MIN_PER_LEVEL answers, and "calibrated" needs two
- * such levels to compare.
+ * such levels to compare. Without them the verdict is 'oneLevel' when one
+ * level holds ONE_LEVEL_SHARE of the answers, otherwise 'tooFew'.
+ * 'notRising': a higher level is right less often than a lower one, or most
+ * "sure" answers are wrong while the guesses are right (however few they are).
  */
 export function advice(stats: readonly LevelStat[]): Advice {
-  if (stats.reduce((n, s) => n + s.total, 0) < MIN_JUDGED) return 'tooFew';
+  const total = stats.reduce((n, s) => n + s.total, 0);
+  if (total < MIN_JUDGED) return 'tooFew';
   const rate = (l: Confidence) => {
     const s = stats[l - 1]!;
     return s.total >= MIN_PER_LEVEL ? s.right / s.total : undefined;
@@ -56,9 +62,14 @@ export function advice(stats: readonly LevelStat[]): Advice {
   const [guess, fair, sure] = CONFIDENCE.map(rate);
   if (sure !== undefined && sure < 0.75) return 'overconfident';
   if (fair !== undefined && fair < 0.5) return 'fairlyWrong';
-  if (guess !== undefined && guess > 0.6) return 'underconfident';
-  if ([guess, fair, sure].filter((r) => r !== undefined).length < 2) return 'oneLevel';
-  return 'calibrated';
+  if (guess !== undefined && guess > 0.6) {
+    const s = stats[2]!;
+    return s.right * 2 < s.total ? 'notRising' : 'underconfident';
+  }
+  const rates = [guess, fair, sure].filter((r): r is number => r !== undefined);
+  if (rates.length < 2) return Math.max(...stats.map((s) => s.total)) >= ONE_LEVEL_SHARE * total ? 'oneLevel' : 'tooFew';
+  // From less to more confident, accuracy must never fall.
+  return rates.some((r, i) => rates.slice(i + 1).some((higher) => higher < r)) ? 'notRising' : 'calibrated';
 }
 
 /** Percentage rounded for display (0 when there is nothing to divide). */

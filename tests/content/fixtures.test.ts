@@ -99,6 +99,25 @@ describe('content gates: synthetic fixture', () => {
       expect(
         fail('ledger', (t) => Object.assign(ledger(t).claims[0], { status: 'sources-differ', secondSource: { source: 'fx-article', locator: 'p. 2' } })),
       ).toEqual([expect.stringMatching(/sources-differ needs <aside/)]));
+    it('fails when a pattern matrix cell has no marker, or different markers in the two languages', () => {
+      const cell = (t: Tree) => meta(t.patterns[0]!).matrix.rows[0].cells[0];
+      expect(fail('ledger', (t) => void (cell(t).en = 'placeholder'))).toEqual([expect.stringMatching(/fx-pattern\/meta\.yaml: matrix cell without a claim marker/)]);
+      expect(fail('ledger', (t) => void (cell(t).it = 'segnaposto'))).toEqual([expect.stringMatching(/fx-pattern\/meta\.yaml: matrix cell markers differ between en and it/)]);
+    });
+    it('accepts a ledger row whose only marker is in a matrix cell', () =>
+      expect(
+        fail('ledger', (t) => {
+          ledger(t, 'fx-pattern').claims.push({ ...ledger(t, 'fx-pattern').claims[0], claimId: 'fx-pattern-c002' });
+          Object.assign(meta(t.patterns[0]!).matrix.rows[0].cells[0], { en: 'placeholder<!--c:fx-pattern-c002-->', it: 'segnaposto<!--c:fx-pattern-c002-->' });
+        }),
+      ).toEqual([]));
+    it('fails when the page does not list a source its ledger relies on', () =>
+      expect(
+        fail('ledger', (t) => {
+          Object.assign(ledger(t).claims[0], { status: 'beyond-reference', secondSource: { source: 'fx-article', locator: 'abstract' } });
+          meta(alpha(t)).sources = meta(alpha(t)).sources.filter((s: Any) => s.source !== 'fx-article');
+        }),
+      ).toEqual([expect.stringMatching(/fx-alpha\/meta\.yaml: sources must list "fx-article"/)]));
     it('fails when a question cites an unknown claim', () =>
       expect(fail('ledger', (t) => void (doc(t.questions[0]!).claims = ['fx-alpha-c404']))).toEqual([expect.stringMatching(/fx-alpha-c404/)]));
   });

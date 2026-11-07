@@ -1,14 +1,18 @@
 /**
  * 3D pathways on the built site: the 3Dmol chunk exists, is loaded only by a
  * dynamic import (never in a page's static graph) and stays out of the
- * service-worker precache, like the structure files. Reports gzipped sizes.
+ * service-worker precache, like the structure files, whose hashes still change
+ * the worker version. Offline packs carry the pathway pages their cards link
+ * to. Reports gzipped sizes.
  */
+import { createHash } from 'node:crypto';
 import { readdirSync, readFileSync } from 'node:fs';
-import { dirname, join } from 'node:path';
+import { dirname, join, relative, sep } from 'node:path';
 import { gzipSync } from 'node:zlib';
 import { describe, expect, it } from 'vitest';
-import { LAZY_ONLY } from '../../scripts/sw-manifest.mjs';
-import { DIST, resolveFile } from './lib.ts';
+import { parse } from 'yaml';
+import { isLazyCached, LAZY_ONLY, versionOf } from '../../scripts/sw-manifest.mjs';
+import { anchorHrefs, BASE, DIST, LANGS, resolveFile, walk } from './lib.ts';
 
 const KB = 1024;
 const gz = (f: string) => gzipSync(readFileSync(f)).length;
@@ -41,6 +45,30 @@ describe('3D pathway assets', () => {
     expect(precache.some((p) => p.includes('Pathway.astro'))).toBe(true); // the small element code is shell
   });
 
+  it('the worker version covers the structure files and the 3Dmol chunk, so a replaced one reaches returning visitors', () => {
+    const { version, files } = JSON.parse(readFileSync(join(DIST, 'precache.json'), 'utf8'));
+    const lazy = walk().map((f) => relative(DIST, f).split(sep).join('/')).filter(isLazyCached).sort();
+    expect(lazy.filter((p) => p.startsWith('structures/')).length).toBeGreaterThan(0);
+    const sha = (p: string) => createHash('sha256').update(readFileSync(join(DIST, p))).digest('hex').slice(0, 16);
+    expect(versionOf({ ...files, ...Object.fromEntries(lazy.map((p) => [p, sha(p)])) })).toBe(version);
+    expect(readFileSync(join(DIST, 'sw.js'), 'utf8')).toContain(`const VERSION = '${version}';`);
+  });
+
+  it('an offline pack holds every pathway page that its entity cards link to', () => {
+    const links = LANGS.flatMap((lang) =>
+      readdirSync(join(DIST, 'packs', lang)).flatMap((file) => {
+        const pack = Object.keys(JSON.parse(readFileSync(join(DIST, 'packs', lang, file), 'utf8')).files);
+        return pack
+          .filter((p) => p.startsWith(`${lang}/e/`))
+          .flatMap((p) => anchorHrefs(readFileSync(resolveFile(BASE + p)!, 'utf8')))
+          .filter((href) => href.startsWith(`${BASE}${lang}/pathways/`))
+          .map((href) => ({ pack, page: href.slice(BASE.length).split('#')[0]!, where: `packs/${lang}/${file}` }));
+      }),
+    );
+    expect(links.length).toBeGreaterThan(0);
+    for (const { pack, page, where } of links) expect(pack, where).toContain(page);
+  });
+
   it('pages with a pathway never load 3Dmol up front', () => {
     for (const page of ['/atlante-patologia/it/e/apoptosis/', '/atlante-patologia/en/pathways/intrinsic-apoptosis/']) {
       const files = staticJs(page);
@@ -48,5 +76,26 @@ describe('3D pathway assets', () => {
       const bytes = files.reduce((n, f) => n + gz(f), 0);
       console.info(`${page}: ${files.length} JS files, ${(bytes / KB).toFixed(1)} KB gz before the 3D button`);
     }
+  });
+
+  it('the card that hosts a pathway cites every source of that pathway, in both languages (D062)', () => {
+    const src = (f: string) => readFileSync(join(process.cwd(), 'src/content', f), 'utf8');
+    const registry = parse(src('sources.yaml')) as { id: string; title: string; doi?: string }[];
+    const pathways = readdirSync(join(process.cwd(), 'src/content/pathways'))
+      .filter((f) => f.endsWith('.yaml'))
+      .map((f) => parse(src(`pathways/${f}`)) as { id: string; entity: string; sources: { source: string }[] });
+    expect(pathways.length).toBeGreaterThan(0);
+    for (const p of pathways)
+      for (const lang of LANGS) {
+        const card = resolveFile(`${BASE}${lang}/e/${p.entity}/`);
+        if (!card) continue; // a draft card is not built
+        const html = readFileSync(card, 'utf8');
+        for (const { source } of p.sources) {
+          const s = registry.find((x) => x.id === source)!;
+          // A title is in the HTML as Astro escapes text.
+          const title = s.title.replace(/&/g, '&amp;').replace(/'/g, '&#39;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+          expect(html, `${lang}/e/${p.entity}/: ${source}`).toContain(s.doi ? `https://doi.org/${s.doi}` : title);
+        }
+      }
   });
 });

@@ -9,7 +9,7 @@
 import { openDB, type IDBPDatabase } from 'idb';
 import type { CardRecord } from './srs.ts';
 import type { Confidence } from './metacog.ts';
-import { isOralItem, type OralSession } from './oral.ts';
+import type { OralSession } from './oral.ts';
 
 export const DB_NAME = 'atlas';
 /** IndexedDB version: bump and add the new stores to STORES_ADDED_IN (never change an existing store). */
@@ -100,32 +100,7 @@ export async function makeExport(stores: ExportFile['stores'], now = new Date())
   return { app: APP_ID, schemaVersion: SCHEMA_VERSION, exportedAt: now.toISOString(), checksum: await sha256(JSON.stringify(stores)), stores };
 }
 
-export type ImportCheck = { ok: true; file: ExportFile } | { ok: false; error: 'format' | 'app' | 'version' | 'checksum' | 'records' };
-
-/** Structural and integrity check of a parsed export file (trust boundary). */
-export async function checkExport(raw: unknown): Promise<ImportCheck> {
-  if (!raw || typeof raw !== 'object') return { ok: false, error: 'format' };
-  const f = raw as Partial<ExportFile>;
-  if (f.app !== APP_ID) return { ok: false, error: 'app' };
-  if (typeof f.schemaVersion !== 'number' || f.schemaVersion < 1 || f.schemaVersion > SCHEMA_VERSION)
-    return { ok: false, error: 'version' };
-  if (!f.stores || typeof f.stores !== 'object' || typeof f.checksum !== 'string') return { ok: false, error: 'format' };
-  if ((await sha256(JSON.stringify(f.stores))) !== f.checksum) return { ok: false, error: 'checksum' };
-  for (const [name, rows] of Object.entries(f.stores)) {
-    if (!(STORES as readonly string[]).includes(name) || !Array.isArray(rows)) return { ok: false, error: 'records' };
-    for (const r of rows as unknown[]) {
-      const rec = r as Partial<Base> | null;
-      if (!rec || typeof rec !== 'object' || typeof rec.id !== 'string' || typeof rec.updated !== 'number')
-        return { ok: false, error: 'records' };
-      // The oral simulator reads every item field: a malformed session would break it on every visit.
-      if (name === 'oralSessions' && !rec.deleted) {
-        const o = rec as Partial<OralSessionRecord>;
-        if (typeof o.at !== 'number' || !Array.isArray(o.items) || !o.items.every(isOralItem)) return { ok: false, error: 'records' };
-      }
-    }
-  }
-  return { ok: true, file: f as ExportFile };
-}
+// Import checks (the trust boundary): lib/import-check.ts, loaded only by the data page.
 
 export const REMINDER_DAYS = 14;
 /** Gentle export reminder: only with data, 14 days after the last export (or first use), and not right after a dismissal. */
@@ -144,15 +119,24 @@ let handle: Promise<IDBPDatabase> | undefined;
 /**
  * 'blocked': another tab still holds an older version open, so the upgrade waits.
  * 'blocking': a newer version of the atlas, in another tab, waits for this one; this tab closed its connection.
- * 'ready': the database is open. components/offline/UpdateNotice.astro shows the matching notice.
+ * 'ready': the database is open. 'failed': it cannot be opened (the page shows its storage notice).
+ * components/offline/UpdateNotice.astro shows the matching notice.
  */
-export type DbState = 'blocked' | 'blocking' | 'ready';
+export type DbState = 'blocked' | 'blocking' | 'ready' | 'failed';
 const notify = (state: DbState) => {
   if (typeof window !== 'undefined') window.dispatchEvent(new CustomEvent<DbState>('ap:db-state', { detail: state }));
 };
 
+/**
+ * Only the request at the head of the browser's queue gets a `blocked` event; a tab whose
+ * open waits behind it hears nothing. An open that has not settled by then is reported as blocked.
+ */
+export const BLOCKED_AFTER_MS = 1500;
+
 export function db(): Promise<IDBPDatabase> {
-  handle ??= openDB(DB_NAME, DB_VERSION, {
+  if (handle) return handle;
+  const waiting = setTimeout(() => notify('blocked'), BLOCKED_AFTER_MS);
+  handle = openDB(DB_NAME, DB_VERSION, {
     upgrade(d, oldVersion) {
       for (const s of storesToCreate(oldVersion)) d.createObjectStore(s, { keyPath: 'id' });
     },
@@ -166,10 +150,18 @@ export function db(): Promise<IDBPDatabase> {
     terminated() {
       handle = undefined;
     },
-  }).then((d) => {
-    notify('ready');
-    return d;
-  });
+  }).then(
+    (d) => {
+      clearTimeout(waiting);
+      notify('ready');
+      return d;
+    },
+    (err: unknown) => {
+      clearTimeout(waiting);
+      notify('failed');
+      throw err;
+    },
+  );
   return handle;
 }
 
