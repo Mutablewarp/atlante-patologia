@@ -360,10 +360,11 @@
   font-weight: 700;
   min-height: calc(var(--leading) * 1em);
 }
-/* Exactly the resume card of personal.ts: border, padding, kicker and its margin, name, section, two gaps */
+/* Exactly the resume card of personal.ts: border, padding, kicker and its margin, two lines of name, section,
+   two gaps (.resume-link clamps longer text to these lines) */
 .hub-status ap-resume {
   display: block;
-  min-height: calc(4rem + 2px + var(--leading) * (2 * var(--step--1) + var(--step-0)));
+  min-height: calc(4rem + 2px + var(--leading) * (2 * var(--step--1) + 2 * var(--step-0)));
 }
 .hub-status ap-resume > * {
   min-height: inherit;
@@ -412,6 +413,20 @@
   gap: var(--space-1);
   max-width: 32rem;
   margin-bottom: var(--space-4);
+}
+/* One line for the kicker and the section, two for the card name: the hub reserves exactly this (no shift). */
+.resume-link > * {
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.resume-link > strong {
+  white-space: normal;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
 }
 .recent-list {
   columns: 16rem;

@@ -58,11 +58,14 @@ test('no layout shift when the shortcut hint turns into "⌘ K" on Apple devices
   await expect(page.locator('[data-shortcut-hint]')).toHaveText('⌘ K');
 });
 
+/** The longest card name in g01: it wraps over several lines in the resume card unless clamped. */
+const LONG = { id: 'other-regulated-cell-death', it: 'Altre forme di morte cellulare regolata (anoikis, NETosi, entosi, morte da granzimi)', en: 'Other forms of regulated cell death' };
+
 /** A returning learner: a recently viewed card and a card in review; `reminder`: first use 30 days ago, never exported. */
-async function seedLearner(page: Page, reminder: boolean) {
+async function seedLearner(page: Page, reminder: boolean, long = false) {
   await page.goto('it/about/');
   await page.evaluate(
-    (reminder) =>
+    ([reminder, last]) =>
       new Promise<void>((resolve, reject) => {
         const req = indexedDB.open('atlas', 2);
         req.onupgradeneeded = () => {
@@ -73,7 +76,7 @@ async function seedLearner(page: Page, reminder: boolean) {
           const d = req.result;
           const tx = d.transaction(['recent', 'cards', 'settings'], 'readwrite');
           const now = Date.now();
-          tx.objectStore('recent').put({ id: 'apoptosis', names: { it: 'Apoptosi', en: 'Apoptosis' }, module: 'g01', section: 'pathogenesis', at: now, updated: now });
+          tx.objectStore('recent').put({ id: last.id, names: { it: last.it, en: last.en }, module: 'g01', section: 'ancillary', at: now, updated: now });
           tx.objectStore('cards').put({ id: 'apoptosis:c1', entity: 'apoptosis', module: 'g01', fsrs: { state: 2, due: now - 1000 }, updated: now });
           if (reminder) tx.objectStore('settings').put({ id: 'firstUse', value: now - 30 * 86_400_000, updated: now });
           tx.oncomplete = () => {
@@ -84,18 +87,20 @@ async function seedLearner(page: Page, reminder: boolean) {
         };
         req.onerror = () => reject(req.error);
       }),
-    reminder,
+    [reminder, long ? LONG : { id: 'apoptosis', it: 'Apoptosi', en: 'Apoptosis' }] as const,
   );
 }
 
 // The hub block sits below the cards, so on most screens it is below the fold and could not shift anything in
 // view. The viewport is sized to show the block and the top of the footer: anything that grows or shrinks after
 // paint (due line, resume card, backup reminder) would move the footer and count.
-for (const state of ['first visit', 'returning learner', 'learner with a backup reminder'] as const)
+for (const state of ['first visit', 'returning learner', 'learner with a backup reminder', 'learner back from a long card name, largest text'] as const)
   test(`no layout shift on the study hub, block in view, ${state} (CPU 4× slower)`, async ({ page }) => {
     const width = test.info().project.metadata.width as number;
     test.skip(state === 'learner with a backup reminder' && width < 1024, 'below 1024 px the reminder comes last, far below the fold of any real screen');
-    if (state !== 'first visit') await seedLearner(page, state === 'learner with a backup reminder');
+    const long = state.startsWith('learner back');
+    if (long) await page.addInitScript(() => localStorage.setItem('ap-text', 'xl'));
+    if (state !== 'first visit') await seedLearner(page, state === 'learner with a backup reminder', long);
     await page.goto('it/study/');
     await expect(page.locator('ap-resume > *')).toBeVisible();
     const footer = await page.locator('.site-footer').evaluate((f) => f.getBoundingClientRect().top + scrollY);
