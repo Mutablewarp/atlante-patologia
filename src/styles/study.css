@@ -549,3 +549,12 @@ ap-path-progress progress {
 .oral-history {
   padding-left: var(--space-5);
 }
+/* Loading, empty and closed list: the same one-line height (no shift when the sessions arrive). */
+.oral-history-line {
+  margin: 0;
+  padding-block: var(--space-2);
+}
+.oral-history-box summary {
+  cursor: pointer;
+  font-weight: 600;
+}

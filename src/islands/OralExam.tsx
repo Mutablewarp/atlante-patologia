@@ -13,8 +13,11 @@ import { loadOral, useLoad } from './client.ts';
 
 type T = (k: Parameters<typeof tS>[1]) => string;
 type Run = { id: string; at: number; questions: OralQuestion[]; seconds?: number };
-/** A saved session as History shows it: `damaged` when no date or no readable item (it can only be deleted). */
-type Saved = { id: string; at: number; items: OralItem[]; damaged: boolean };
+/**
+ * A saved session as History shows it: `damaged` when no date or no readable item (it can only be deleted);
+ * `unreadable` counts the items left out because they cannot be read.
+ */
+type Saved = { id: string; at: number; items: OralItem[]; damaged: boolean; unreadable: number };
 const BIAS = { tooFew: 'oralBiasTooFew', over: 'oralBiasOver', under: 'oralBiasUnder', calibrated: 'oralBiasCalibrated' } as const;
 
 const one = (lang: Lang, n: number) => new Intl.NumberFormat(LOCALE_TAG[lang], { maximumFractionDigits: 1 }).format(n);
@@ -24,9 +27,10 @@ async function sessions(): Promise<Saved[]> {
   // checkExport validates oral rows on import; this guard also covers rows written before that check.
   return (await getAll('oralSessions'))
     .map((s) => {
-      const items = Array.isArray(s.items) ? (s.items as unknown[]).filter(isOralItem) : [];
+      const stored: unknown[] = Array.isArray(s.items) ? s.items : [];
+      const items = stored.filter(isOralItem);
       const at = typeof s.at === 'number' ? s.at : 0;
-      return { id: s.id, at, items, damaged: !at || !items.length };
+      return { id: s.id, at, items, damaged: !at || !items.length, unreadable: stored.length - items.length };
     })
     .sort((a, b) => b.at - a.at);
 }
@@ -125,7 +129,8 @@ function Runner({ lang, t, run, onRestart }: { lang: Lang; t: T; run: Run; onRes
   const [predicted, setPredicted] = useState<Score | undefined>();
   const [rubric, setRubric] = useState<Partial<Rubric>>({});
   const [left, setLeft] = useState(run.seconds ?? 0);
-  const started = useRef(Date.now());
+  // performance.now() is monotonic: a wall-clock change during an answer cannot make its time negative.
+  const started = useRef(performance.now());
   const spent = useRef(0);
   const headRef = useRef<HTMLHeadingElement>(null);
   const saving = useRef(false);
@@ -140,7 +145,7 @@ function Runner({ lang, t, run, onRestart }: { lang: Lang; t: T; run: Run; onRes
   useEffect(() => headRef.current?.focus(), [pos, phase]);
 
   function answered() {
-    spent.current = Math.round((Date.now() - started.current) / 1000);
+    spent.current = Math.max(0, Math.round((performance.now() - started.current) / 1000));
     setPhase('predict');
   }
   async function save() {
@@ -164,7 +169,7 @@ function Runner({ lang, t, run, onRestart }: { lang: Lang; t: T; run: Run; onRes
     setPredicted(undefined);
     setRubric({});
     setLeft(run.seconds ?? 0);
-    started.current = Date.now();
+    started.current = performance.now();
   }
 
   if (phase === 'done') {
@@ -293,22 +298,25 @@ function History({ lang, t }: { lang: Lang; t: T }) {
       <h2 id="oral-history-title" tabIndex={-1} ref={head}>
         {t('historyTitle')}
       </h2>
-      {/* While loading, or when storage is unavailable (private mode, a database newer than this code), never claim that nothing is saved. */}
+      {/* While loading, or when storage is unavailable (private mode, a database newer than this code), never claim that nothing is saved.
+          Every state is one line until the learner opens the list, so nothing below moves when the sessions arrive (CLS). */}
       {saved.loading ? (
-        <p class="muted">{t('loading')}</p>
+        <p class="muted oral-history-line">{t('loading')}</p>
       ) : saved.error ? (
         <p class="notice notice-caution">{t('storageError')}</p>
       ) : shown.length ? (
-        <>
+        <details class="oral-history-box">
+          <summary class="oral-history-line">{fmt(t('historyCount'), { n: list.length })}</summary>
           <ul class="oral-history">
             {shown.map((s) => {
-              const label = s.damaged
+              const row = s.damaged
                 ? t('historyDamaged')
                 : fmt(t('historyRow'), {
                     date: formatDate(lang, new Date(s.at)),
                     n: s.items.length,
                     a: one(lang, s.items.reduce((n, i) => n + rubricMean(i.rubric), 0) / s.items.length),
                   });
+              const label = !s.damaged && s.unreadable ? `${row} · ${fmt(t('historyUnreadable'), { n: s.unreadable })}` : row;
               return (
                 <li key={s.id}>
                   {label}{' '}
@@ -325,9 +333,9 @@ function History({ lang, t }: { lang: Lang; t: T }) {
               <p class="notice">{t(BIAS[c.bias])}</p>
             </>
           )}
-        </>
+        </details>
       ) : (
-        <p class="muted">{t('historyEmpty')}</p>
+        <p class="muted oral-history-line">{t('historyEmpty')}</p>
       )}
     </section>
   );

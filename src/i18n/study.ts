@@ -453,4 +453,6 @@ export const tS = defineStrings({
   historyEmpty: { it: 'Nessuna sessione salvata su questo dispositivo.', en: 'No sessions saved on this device.' },
   historyRow: { it: '{date}: {n} domande, autovalutato {a} su 4', en: '{date}: {n} questions, self-assessed {a} out of 4' },
   historyDamaged: { it: 'Sessione danneggiata, non leggibile', en: 'Damaged session, cannot be read' },
+  historyCount: { it: 'Sessioni salvate: {n}', en: 'Saved sessions: {n}' },
+  historyUnreadable: { it: 'risposte non leggibili: {n}', en: 'unreadable answers: {n}' },
 });

@@ -298,7 +298,10 @@ test('oral simulator: three questions, prediction before self-assessment, calibr
   await page.getByRole('button', { name: 'Start again' }).press('Enter'); // keyboard, as in the review finding
   // Focus goes to the first setup control, never to <body> (WCAG 2.4.3).
   await expect(page.getByRole('checkbox', { name: 'Use a timer for each question' })).toBeFocused();
-  await expect(page.getByRole('region', { name: 'Previous sessions' }).getByText(/3 questions, self-assessed 2\.3 out of 4/)).toBeVisible();
+  // The list stays folded behind one line (no shift when it loads) until the learner opens it.
+  const history = page.getByRole('region', { name: 'Previous sessions' });
+  await history.getByText('Saved sessions: 1').click();
+  await expect(history.getByText(/3 questions, self-assessed 2\.3 out of 4/)).toBeVisible();
   const texts = await page.evaluate(() => (window as unknown as { historyTexts: string[] }).historyTexts);
   expect(texts.length).toBeGreaterThan(0);
   expect(texts.filter((s) => s.includes('No sessions saved'))).toEqual([]);
@@ -340,6 +343,7 @@ test('oral history: a damaged session is listed and can be deleted without touch
   await writeStore(page, 'notes', [{ id: 'fixture-demo', text: 'my note', updated: 1 }]);
   await page.reload();
 
+  await history.getByText('Saved sessions: 2').click();
   await expect(history.getByRole('listitem')).toHaveCount(2);
   await expect(history.getByRole('listitem').first()).toContainText('Damaged session, cannot be read');
   await expect(history).toContainText('2 Nov 2026: 1 questions, self-assessed 3 out of 4');
@@ -429,6 +433,51 @@ test('a malformed oral session in an import file is rejected', async ({ page }) 
   await expect(page.getByRole('button', { name: 'Start' })).toBeVisible();
 });
 
+test('the oral history moves nothing on the page for a returning learner (CPU 4× slower, footer in view)', async ({ page }) => {
+  await page.goto('en/study/oral/');
+  await expect(page.getByRole('region', { name: 'Previous sessions' })).toContainText('No sessions saved on this device.');
+  const rubric = { completeness: 3, accuracy: 3, structure: 3, terminology: 3 };
+  const item = { question: 'fixture-demo#1', entity: 'fixture-demo', text: 'Q?', predicted: 3, rubric, seconds: 30 };
+  await writeStore(page, 'oralSessions', [1, 2, 3].map((n) => ({ id: `oral@${n}`, at: Date.UTC(2026, 10, n), updated: n, items: [item, item, item] })));
+  // Sized so the footer is in view: anything that grows after paint would push it down and count.
+  const footer = await page.locator('.site-footer').evaluate((f) => f.getBoundingClientRect().top + scrollY);
+  await page.setViewportSize({ width: 1280, height: Math.ceil(footer) + 40 });
+  const cdp = await page.context().newCDPSession(page);
+  await cdp.send('Emulation.setCPUThrottlingRate', { rate: 4 });
+  await page.addInitScript(() => {
+    const w = window as unknown as { __cls: number };
+    w.__cls = 0;
+    new PerformanceObserver((list) => {
+      for (const e of list.getEntries() as (PerformanceEntry & { value: number; hadRecentInput: boolean })[]) if (!e.hadRecentInput) w.__cls += e.value;
+    }).observe({ type: 'layout-shift', buffered: true });
+  });
+  await page.goto('en/study/oral/');
+  const history = page.getByRole('region', { name: 'Previous sessions' });
+  await expect(history.getByText('Saved sessions: 3')).toBeVisible();
+  await page.waitForTimeout(1000);
+  await cdp.send('Emulation.setCPUThrottlingRate', { rate: 1 });
+  expect(await page.evaluate(() => (window as unknown as { __cls: number }).__cls)).toBe(0);
+  // Opened on request, the list and the verdict are all there.
+  await history.getByText('Saved sessions: 3').click();
+  await expect(history.getByRole('listitem')).toHaveCount(3);
+  await expect(history).toContainText('Mean predicted 3 · mean self-assessed 3 (out of 4, 9 questions)');
+});
+
+test('an answer time stays positive when the wall clock steps back during the answer', async ({ page }) => {
+  await page.clock.install();
+  await page.goto('en/study/oral/');
+  await page.getByRole('button', { name: 'Start' }).click();
+  await page.clock.runFor(5_000);
+  // The device clock is corrected backwards (network time): Date jumps, performance.now() does not.
+  await page.clock.setSystemTime(Date.now() - 60_000);
+  await answerOral(page, '3 · good', '3 · good');
+  await page.getByRole('button', { name: 'Save and continue' }).click();
+  await expect(page.getByRole('heading', { name: 'Question 2 of 3' })).toBeFocused();
+  const [session] = await readStore(page, 'oralSessions');
+  const [item] = session!.items as { seconds: number }[];
+  expect(item!.seconds).toBeGreaterThanOrEqual(0);
+});
+
 test('export and import carry confidence and oral sessions into a fresh browser', async ({ page, browser }, info) => {
   await page.goto('en/e/fixture-demo-b/');
   const qc = page.locator('.quick-check > li').first();
@@ -459,6 +508,7 @@ test('export and import carry confidence and oral sessions into a fresh browser'
   expect((await readStore(other, 'oralSessions'))[0]).toMatchObject({ items: [{ predicted: 2 }] });
   expect((await readStore(other, 'quizAttempts'))[0]).toMatchObject({ confidence: 1 });
   await other.goto('en/study/oral/');
+  await other.getByText('Saved sessions: 1').click();
   await expect(other.getByText(/1 questions, self-assessed 4 out of 4/)).toBeVisible();
   await fresh.close();
 });
