@@ -34,7 +34,7 @@ Status: PHASE 0 proposal, 2026-10-10. Versions come from [VERIFIED_FACTS.md](VER
 | License scan | license-checker-rseidelsohn | 5.0.1 | Needs Node ≥ 24, npm ≥ 11. |
 | Git hooks | simple-git-hooks | 2.14.0 | Pre-commit containment and no-verbatim guard. |
 | Reference text for the guard | none in the repo | — | `scripts/no-verbatim.mjs` reads text extracted once into gitignored `.work/*.txt`; no PDF library is a dependency. PyMuPDF (AGPL) was used only for Phase 0 exploration, outside the repo (D016, superseded). |
-| Fonts | Fraunces (display) + Atkinson Hyperlegible Next (body), self-hosted via `@fontsource-variable/*` | 5.3.0 / 5.3.0 (OFL-1.1) | Bundled with the site, no third-party requests (D015 revised). |
+| Fonts | Fraunces (display) + Atkinson Hyperlegible Next (body), with the Greek subset of Source Sans 3 for Greek letters, self-hosted via `@fontsource-variable/*` | 5.3.0 / 5.3.0 / 5.3.1 (OFL-1.1) | Bundled with the site, no third-party requests (D015 revised, D063). |
 
 ## 3. Repository layout
 
