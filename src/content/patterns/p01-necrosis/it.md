@@ -1,6 +1,6 @@
 ---
 lang: it
-translatedFrom: 9a032b1fb64e1579ba0be5fb98b159001b87c02fcbad065eb9e9384d3d965527
+translatedFrom: 8bd68dfc5a4d662a2265be67390ece1da612cd455fa6e10337f2350b7cb74d35
 ---
 
 ## Panoramica
@@ -25,7 +25,7 @@ La lesione modello è l'infarto: l'occlusione di un'arteria terminale provoca ne
 
 ### Necrosi colliquativa
 
-L'esempio abituale è l'ascesso, una cavità scavata in un organo solido da un'infezione batterica localizzata e dagli enzimi dei neutrofili che essa richiama.<!--c:p01-necrosis-c016--> L'anello di enhancement attorno a un ascesso cerebrale corrisponde al suo rivestimento di tessuto di granulazione, privo di barriera emato-encefalica.<!--c:p01-necrosis-c017--> L'ascesso nasce come cerebrite, con tessuto molle ed edematoso che colliqua nel giro di pochi giorni, e viene poi racchiuso, dall'interno verso l'esterno, da tessuto di granulazione, da una capsula collagene e da una zona di astrociti reattivi.<!--c:p01-necrosis-c017--> Anche l'infarto ischemico cerebrale colliqua e può lasciare una cisti piena di liquido che persiste per tutta la vita.<!--c:p01-necrosis-c018--> L'intossicazione grave da monossido di carbonio distrugge entrambi i globi pallidi per necrosi colliquativa, un reperto quasi specifico.<!--c:p01-necrosis-c019--> Altrove un infarto diventa colliquativo se si infetta: un infarto settico può evolvere in ascesso.<!--c:p01-necrosis-c020-->
+L'esempio abituale è l'ascesso, una cavità scavata in un organo solido da un'infezione batterica localizzata e dagli enzimi dei neutrofili che essa richiama.<!--c:p01-necrosis-c016--> L'anello di enhancement attorno a un ascesso cerebrale corrisponde al suo rivestimento di tessuto di granulazione, privo di barriera emato-encefalica.<!--c:p01-necrosis-c017--> L'ascesso nasce come cerebrite che colliqua nel giro di pochi giorni, e viene poi racchiuso, dall'interno verso l'esterno, da tessuto di granulazione, da una capsula collagene e da una zona di astrociti reattivi.<!--c:p01-necrosis-c017--> Anche l'infarto ischemico cerebrale colliqua e può lasciare una cisti piena di liquido che persiste per tutta la vita.<!--c:p01-necrosis-c018--> L'intossicazione grave da monossido di carbonio distrugge entrambi i globi pallidi per necrosi colliquativa, un reperto quasi specifico.<!--c:p01-necrosis-c019--> Altrove un infarto diventa colliquativo se si infetta: un infarto settico può evolvere in ascesso.<!--c:p01-necrosis-c020-->
 
 ### Necrosi caseosa
 
@@ -46,14 +46,14 @@ La gangrena secca di un piede o di una gamba segue l'occlusione arteriosa, tipic
 ## Come riconoscerla (dal piccolo al forte ingrandimento)
 
 - **L'architettura è ancora presente?** Profili fantasma di cellule e tessuto indicano necrosi coagulativa; una cavità piena di neutrofili e detriti indica necrosi colliquativa; detriti rosa granulosi e senza struttura all'interno di un granuloma indicano necrosi caseosa.<!--c:p01-necrosis-c038-->
-- **Dove si trova?** Se l'alterazione è confinata alla parete di un vaso, dove un tratto di parete è sostituito da materiale liscio, di un rosa intenso, che si interrompe bruscamente contro la parete conservata, è necrosi fibrinoide; se si trova nel grasso, dove saponi di calcio bluastri incrostano i margini di gruppi di adipociti morti, è steatonecrosi.<!--c:p01-necrosis-c039-->
+- **Dove si trova?** Se l'alterazione è confinata alla parete di un vaso, dove un tratto di parete è imbibito di materiale uniforme, di un rosa intenso, è necrosi fibrinoide; se si trova nel grasso, dove ai margini del tessuto adiposo necrotico compaiono saponi di calcio informi che si colorano in blu, è steatonecrosi.<!--c:p01-necrosis-c039-->
 - **Guarda i nuclei.** Nella necrosi coagulativa il nucleo si raggrinzisce e diventa scuro (picnosi), si frammenta (carioressi) o sbiadisce fino a scomparire (cariolisi).<!--c:p01-necrosis-c040-->
 - **Guarda il bordo.** Un granuloma con macrofagi epitelioidi e cellule giganti di Langhans attorno alla necrosi orienta verso la caseosi; macrofagi schiumosi e cellule giganti che inglobano lipidi orientano verso la steatonecrosi.<!--c:p01-necrosis-c041-->
 
 ## Evoluzione tipica
 
 - **Coagulativa:** in pochi giorni i neutrofili entrano dal margine vitale, poi i macrofagi rimuovono i detriti, si forma tessuto di granulazione e residua una cicatrice; il centro di un infarto esteso può restare non riassorbito per mesi.<!--c:p01-necrosis-c042-->
-- **Colliquativa:** l'ascesso viene circoscritto da una capsula fibrosa, mentre un esteso infarto cerebrale colliquato può lasciare una cisti permanente.<!--c:p01-necrosis-c043--> Un ascesso cerebrale non trattato può uccidere per erniazione o per rottura in un ventricolo.<!--c:p01-necrosis-c044-->
+- **Colliquativa:** attorno all'ascesso finisce per formarsi una capsula fibrosa, e nell'encefalo o nel midollo spinale, dove un'ampia area è andata incontro a colliquazione, può restare una cisti permanente.<!--c:p01-necrosis-c043--> Un ascesso cerebrale non trattato può uccidere per erniazione o per rottura in un ventricolo.<!--c:p01-necrosis-c044-->
 - **Caseosa:** le lesioni contenute si riducono, cicatrizzano e calcificano, come nel complesso di Ghon guarito; quelle non controllate escavano caverne e si diffondono, per esempio erodendo un bronco o rompendosi nel cavo pleurico.<!--c:p01-necrosis-c045-->
 - **Adiposa:** nella mammella macrofagi carichi di lipidi (schiumosi) e cellule giganti rimuovono il grasso, poi la zona cicatrizza e può calcificare (calcificazione distrofica); nella pancreatite acuta i saponi sequestrano calcio e la calcemia può ridursi.<!--c:p01-necrosis-c046-->
 - **Fibrinoide:** la parete danneggiata può andare incontro a trombosi, rompersi e sanguinare o formare aneurismi, e la trombosi arteriolare causa piccoli infarti a valle.<!--c:p01-necrosis-c047-->

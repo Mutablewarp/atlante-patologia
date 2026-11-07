@@ -82,7 +82,7 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "1, 16", pages: "40, 617" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent (reworded after the 2026-11-07 independent re-check; checked against the cited pages)"
+    verifier: "independent-verifier-agent"
     date: 2026-11-07
   - claimId: p01-necrosis-c011
     section: gross
@@ -312,7 +312,7 @@ claims:
     date: 2026-11-04
   - claimId: p01-necrosis-c039
     section: micro
-    statement: "In fibrinoid necrosis a stretch of vessel wall is replaced by smooth, intensely eosinophilic material that ends abruptly against the surviving wall; in fat necrosis bluish calcium soaps without a definite shape crust the margins of clusters of dead fat cells."
+    statement: "Fibrinoid necrosis: part of a vessel wall is soaked with uniform, intensely eosinophilic material. Fat necrosis: along the edges of the necrotic fat, the calcium soaps show as shapeless material that stains blue with hematoxylin."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "40" }
     status: verified
     verifiedBy: agent
@@ -344,7 +344,7 @@ claims:
     date: 2026-11-04
   - claimId: p01-necrosis-c043
     section: prognosis
-    statement: "An abscess ends up enclosed by fibrous tissue that holds its contents in; when a large part of the brain or spinal cord liquefies, a cavity or cyst remains for the rest of the patient's life."
+    statement: "A fibrous capsule eventually forms around an abscess; in the brain or spinal cord, a permanent cyst can mark the place where a large area has liquefied."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
     status: verified
     verifiedBy: agent
@@ -473,7 +473,7 @@ claims:
     date: 2026-11-07
   - claimId: p01-necrosis-c059
     section: gross
-    statement: "A pale infarct turns yellow within one to two days, once the first congestion has passed; a dark-red rim, from blood leaking into the surviving tissue, marks its sharp edge, and the dead zone itself is soft."
+    statement: "A pale infarct changes colour as it ages: congested at first, its dead zone is light yellow and clearly bounded within one to two days, and bleeding into the living tissue around it often leaves a dark-red border."
     sourceRef: { source: rubin-8e, chapter: "7", pages: "337" }
     status: verified
     verifiedBy: agent

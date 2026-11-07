@@ -24,7 +24,7 @@ The model lesion is the infarct: occlusion of an end artery causes coagulative n
 
 ### Liquefactive necrosis
 
-The usual example is the abscess, a cavity hollowed out of a solid organ by a localized bacterial infection and the enzymes of the neutrophils it attracts.<!--c:p01-necrosis-c016--> The ring of contrast enhancement around a brain abscess is its granulation-tissue lining, which has no blood-brain barrier.<!--c:p01-necrosis-c017--> The abscess starts as soft, swollen cerebritis that liquefies within days and is then enclosed, from inside out, by granulation tissue, a collagen capsule and a zone of reactive astrocytes.<!--c:p01-necrosis-c017--> An ischemic infarct of the brain also liquefies and can leave a fluid-filled cyst that persists for life.<!--c:p01-necrosis-c018--> Severe carbon monoxide poisoning destroys both globus pallidus nuclei by liquefactive necrosis, a nearly specific finding.<!--c:p01-necrosis-c019--> An infarct elsewhere turns liquefactive when it becomes infected: a septic infarct may evolve into an abscess.<!--c:p01-necrosis-c020-->
+The usual example is the abscess, a cavity hollowed out of a solid organ by a localized bacterial infection and the enzymes of the neutrophils it attracts.<!--c:p01-necrosis-c016--> The ring of contrast enhancement around a brain abscess is its granulation-tissue lining, which has no blood-brain barrier.<!--c:p01-necrosis-c017--> The abscess starts as cerebritis that liquefies within days and is then enclosed, from inside out, by granulation tissue, a collagen capsule and a zone of reactive astrocytes.<!--c:p01-necrosis-c017--> An ischemic infarct of the brain also liquefies and can leave a fluid-filled cyst that persists for life.<!--c:p01-necrosis-c018--> Severe carbon monoxide poisoning destroys both globus pallidus nuclei by liquefactive necrosis, a nearly specific finding.<!--c:p01-necrosis-c019--> An infarct elsewhere turns liquefactive when it becomes infected: a septic infarct may evolve into an abscess.<!--c:p01-necrosis-c020-->
 
 ### Caseous necrosis
 
@@ -45,14 +45,14 @@ Dry gangrene of a foot or leg follows arterial occlusion, typically thrombosis o
 ## How to recognize it (low to high power)
 
 - **Is the architecture still there?** Ghost outlines of cells and tissue mean coagulative necrosis; a cavity full of neutrophils and debris means liquefactive necrosis; structureless granular pink debris inside a granuloma means caseous necrosis.<!--c:p01-necrosis-c038-->
-- **Where is it?** If the change is confined to a vessel wall, where a stretch of wall has been replaced by smooth, intensely pink material that ends abruptly against the surviving wall, it is fibrinoid necrosis; if it sits in fat, where bluish calcium soaps crust the margins of clusters of dead fat cells, it is fat necrosis.<!--c:p01-necrosis-c039-->
+- **Where is it?** If the change is confined to a vessel wall, where part of the wall is soaked with uniform, intensely pink material, it is fibrinoid necrosis; if it sits in fat, where the edges of the necrotic fat carry shapeless calcium soaps that stain blue, it is fat necrosis.<!--c:p01-necrosis-c039-->
 - **Look at the nuclei.** In coagulative necrosis the nucleus shrinks and darkens (pyknosis), breaks into fragments (karyorrhexis) or fades away (karyolysis).<!--c:p01-necrosis-c040-->
 - **Look at the rim.** A granuloma with epithelioid macrophages and Langhans giant cells around the necrosis points to caseation; foamy macrophages and giant cells engulfing lipid point to fat necrosis.<!--c:p01-necrosis-c041-->
 
 ## Typical outcome
 
 - **Coagulative:** neutrophils enter from the living border within days, macrophages then clear the debris, granulation tissue forms and a scar results; the centre of a large infarct can stay unresorbed for months.<!--c:p01-necrosis-c042-->
-- **Liquefactive:** an abscess ends up enclosed in a fibrous capsule, while a large liquefied brain infarct can leave a permanent cyst.<!--c:p01-necrosis-c043--> An untreated brain abscess can kill by herniation or by rupture into a ventricle.<!--c:p01-necrosis-c044-->
+- **Liquefactive:** a fibrous capsule eventually forms around an abscess, and in the brain or spinal cord a permanent cyst can mark the place where a large area has liquefied.<!--c:p01-necrosis-c043--> An untreated brain abscess can kill by herniation or by rupture into a ventricle.<!--c:p01-necrosis-c044-->
 - **Caseous:** contained lesions shrink, scar and calcify, as in a healed Ghon complex; uncontrolled ones cavitate and spread, for example by eroding into a bronchus or rupturing into the pleural cavity.<!--c:p01-necrosis-c045-->
 - **Fat:** in the breast, lipid-laden (foamy) macrophages and giant cells clear the fat, after which the area scars and may calcify (dystrophic calcification); in acute pancreatitis the soaps trap calcium and blood calcium can fall.<!--c:p01-necrosis-c046-->
 - **Fibrinoid:** the damaged wall can thrombose, rupture and bleed, or form aneurysms, and arteriolar thrombosis causes small infarcts downstream.<!--c:p01-necrosis-c047-->
