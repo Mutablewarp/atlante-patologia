@@ -63,6 +63,18 @@ test('no AI badge on entity and pattern pages; the footer carries the AI line @s
   await expect(page.locator('footer [data-ai-notice]')).toBeVisible();
 });
 
+test('the language entry carries the AI line, linked to the Method page in both languages (no-JS view)', async ({ page }) => {
+  // The root page redirects with JavaScript: strip its script to see what a visitor without it sees.
+  await page.route(/\/atlante-patologia\/$/, async (route) => {
+    const res = await route.fetch();
+    await route.fulfill({ response: res, body: (await res.text()).replace(/<script\b[^>]*>[\s\S]*?<\/script>/g, '') });
+  });
+  await page.goto('./');
+  const line = page.locator('[data-ai-notice]');
+  await expect(line.getByRole('link', { name: 'Come nascono i contenuti' })).toHaveAttribute('href', /\/it\/about\/method\/$/);
+  await expect(line.getByRole('link', { name: 'How the content is made' })).toHaveAttribute('href', /\/en\/about\/method\/$/);
+});
+
 test('the medical disclaimer is in the footer and the first-launch notice, not repeated on the home page', async ({ page }) => {
   for (const [path, short, notice] of [
     ['it/', 'Solo a scopo didattico', 'Non è uno strumento clinico'],
