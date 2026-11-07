@@ -1,6 +1,6 @@
 ---
 lang: it
-translatedFrom: 8bd68dfc5a4d662a2265be67390ece1da612cd455fa6e10337f2350b7cb74d35
+translatedFrom: ff180a2c70dcda717af5e6a8ab62ca92013b608b426279eb022687dfec9e3c39
 ---
 
 ## Panoramica

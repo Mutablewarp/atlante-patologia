@@ -208,7 +208,21 @@ The following items from the list above are now closed: the English-only text in
 
 Still open:
 
-- No fresh-context verifier has re-read the reworded p01 rows (c057–c063, c015). They stay labelled as checked by the fixer, and the Method page counts them that way.
 - The words in our diagrams have no claim markers or ledger rows, like captions and alt text (the Method page says so). The diagrams have no dark-mode style.
 - The sticky bars are sized in rem, so A+ enlarges them too. Changing that needs px-sized bars and new scroll-padding offsets, and is left for its own reading pass.
 - `/it/e/apoptosis/` scores 88 for Lighthouse mobile performance locally, down from 90. `serve-dist.mjs` sends HTML uncompressed, and the page's 138 KB of HTML now sit just past a simulated round-trip step: with 3.4 KB less HTML it scores 90 again. GitHub Pages sends the page gzipped (32 KB). The CI sample pages are unaffected.
+
+### Independent re-check of self-checked rows (2026-11-07) — on `main`
+
+Fresh-context verifiers re-read the 27 rows on the pathway, p01 and apoptosis that only their writer or fixer had checked (21 on p01, 4 on the pathway, 2 on apoptosis). No claim was contradicted. Three rows were partly supported (p01-c010, pathway-c023, apoptosis-c074), eight p01 rows followed the reference too closely (c009, c013, c017, c022, c039, c043, c059, c063), and three public texts said more than their ledger row (p01-c037, p01-c046, apoptosis-c073); apoptosis-c042 was added for its close wording. A fixer reworded these rows (`f467074`, `a5d3555`, `a67b22c`). A second fresh verifier re-read them: all were supported, but c039, c043 and c059 still followed the reference, c062 kept a six-word run and the c017 body added a detail; its own wording replaced those (`8a5cd04`, `b6de0fd`).
+
+All rows on these three pages now name an independent verifier, so they left the Method page list (`src/lib/self-verified.ts`): 15 older g01 ledgers with 210 self-checked rows remain, and V2.2 re-checks them.
+
+| Command | Result |
+|---|---|
+| `npm test` / `npm run check` | 232 passed, 2 skipped / 0 errors, 0 warnings, 0 hints |
+| `npm run no-verbatim` | 306 files, 0 failed |
+| `npm run build` / `npm run test:dist` / `npm run guard` | OK (Pagefind 286 pages) / 21/21 / ok (706 files) |
+| Playwright, chromium and webkit, 190 tests on the changed pages | 119 passed, 71 skipped by design, 0 failed |
+
+Left open: c043 repeats the brain-cyst fact of c018; c056's second source (al-wahbi-2018) was not re-read in this pass.
