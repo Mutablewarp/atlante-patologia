@@ -127,6 +127,35 @@ for (const path of PAGES) {
   });
 }
 
+test('focus rings are drawn whole inside pill groups, the chip strip and the chapter index (SC 2.4.7)', async ({ page }) => {
+  const width = test.info().project.metadata.width as number;
+  await page.goto('it/e/metaplasia/'); // late in the chapter index: its entry sits in the scrolled part of the list
+  const controls = ['[data-mode-btn="quick"]', '[data-mode-btn="full"]', '.lang-switch a'];
+  if (width < 1024) controls.push('.section-toc a[href="#definition"]', '.section-toc a[href="#micro"]');
+  else controls.push('.primary-nav .module-tree a[aria-current]', '.primary-nav .module-tree summary');
+  for (const sel of controls) {
+    await page.keyboard.press('Shift+Tab'); // keyboard modality: programmatic focus then matches :focus-visible
+    await page.locator(sel).first().focus();
+    // The ring's outer edge must lie inside every ancestor that clips (overflow other than visible).
+    const cut = await page.locator(sel).first().evaluate((el) => {
+      const cs = getComputedStyle(el);
+      if (!el.matches(':focus-visible') || cs.outlineStyle === 'none') return 'no ring';
+      const grow = parseFloat(cs.outlineOffset) + parseFloat(cs.outlineWidth);
+      const r = el.getBoundingClientRect();
+      for (let a = el.parentElement; a; a = a.parentElement) {
+        const s = getComputedStyle(a);
+        if (s.overflowX === 'visible' && s.overflowY === 'visible') continue;
+        const b = a.getBoundingClientRect();
+        const [l, t] = [b.left + a.clientLeft, b.top + a.clientTop];
+        if (r.left - grow < l - 0.5 || r.top - grow < t - 0.5 || r.right + grow > l + a.clientWidth + 0.5 || r.bottom + grow > t + a.clientHeight + 0.5)
+          return `cut by <${a.tagName.toLowerCase()} class="${a.className}">`;
+      }
+      return '';
+    });
+    expect(cut, sel).toBe('');
+  }
+});
+
 test('the learner-database notice never hides the focused control', async ({ context, browserName }) => {
   // An older tab keeps the database open at version 1, so this card's upgrade waits and the notice stays up.
   const old = await context.newPage();

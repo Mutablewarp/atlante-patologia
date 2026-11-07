@@ -144,6 +144,22 @@ a:hover {
 :focus:not(:focus-visible) {
   outline: none;
 }
+/* Inside a pill group or a scroller that clips its children, an outer ring is cut away (SC 2.4.7): the ring is drawn
+   inside the control, with a paper band that keeps it visible on a filled (pressed or current) one. The chip strip
+   uses it too (entity.css). */
+.segmented button:focus-visible,
+.lang-switch a:focus-visible {
+  outline-offset: -3px;
+  box-shadow: inset 0 0 0 5px var(--paper);
+}
+/* The end segments of a pill group take its rounded ends, so the ring inside follows them (the study tools'
+   groups are rounded rectangles that wrap: their segments stay square) */
+:is(.entity-toolbar .segmented, .map .segmented, .lang-switch) > :first-child {
+  border-radius: 999px 0 0 999px;
+}
+:is(.entity-toolbar .segmented, .map .segmented, .lang-switch) > :last-child {
+  border-radius: 0 999px 999px 0;
+}
 
 strong {
   font-weight: 700;

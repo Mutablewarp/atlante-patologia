@@ -283,6 +283,11 @@ html .fold-toggle {
   .section-toc a[aria-current] {
     background: var(--hema-soft);
   }
+  /* The strip scrolls, so it clips: the focus ring is drawn inside the chip (base.css, segmented control) */
+  .section-toc a:focus-visible {
+    outline-offset: -3px;
+    box-shadow: inset 0 0 0 5px var(--paper);
+  }
 }
 /* Anchors, scrollIntoView and keyboard focus stop below the top bar and the sticky chip row (SC 2.4.11) */
 @media (max-width: 1023px) {

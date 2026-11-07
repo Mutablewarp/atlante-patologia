@@ -149,61 +149,68 @@
   }
 }
 
-.module-tree {
+/* Chapter index: the sidebar copy (>= 1024 px, sidebar expanded) and the chapter dialog (ChapterIndex.astro) */
+.primary-nav .module-tree {
   display: none;
 }
 @media (min-width: 1024px) {
-  .module-tree {
+  .primary-nav .module-tree {
     display: block;
     flex: 1 1 auto;
     min-height: 0;
     overflow-y: auto;
     margin: var(--space-4) 0 var(--space-3);
-    padding: var(--space-3) var(--space-1) 0;
+    padding-top: var(--space-3);
     border-top: 1px solid var(--rule);
-    font-size: var(--step--1);
   }
-  :root[data-sidebar='collapsed'] .module-tree {
+  :root[data-sidebar='collapsed'] .primary-nav .module-tree {
     display: none;
   }
-  .module-tree-title {
-    margin: 0 0 var(--space-2);
-    font-weight: 700;
-    color: var(--ink-muted);
-  }
-  .module-tree ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  .module-tree ul ul {
-    padding-left: var(--space-3);
-  }
-  .module-tree summary {
-    min-height: 1.75rem;
-    cursor: pointer;
-  }
-  .module-tree a {
-    display: block;
-    padding: 0.2rem var(--space-2);
-    border-radius: var(--radius-s);
-    color: var(--ink);
-    text-decoration: none;
-  }
-  .module-tree a:hover {
-    background: var(--surface-2);
-  }
-  .module-tree a[aria-current] {
-    background: var(--hema-soft);
-    color: var(--hema-ink);
-    font-weight: 700;
-  }
-  .module-tree .here {
-    display: block;
-    font-size: var(--step--2);
-    font-weight: 600;
-    color: var(--eosin-ink);
-  }
+}
+.module-tree {
+  /* The list scrolls, so it clips: room for the 6 px focus ring, and keyboard focus stops clear of the edges */
+  padding-inline: var(--space-2);
+  padding-bottom: var(--space-2);
+  scroll-padding-block: var(--space-2);
+  font-size: var(--step--1);
+}
+.module-tree-title {
+  margin: 0 0 var(--space-2);
+  font-weight: 700;
+  color: var(--ink-muted);
+}
+.module-tree ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.module-tree ul ul {
+  padding-left: var(--space-3);
+}
+.module-tree summary {
+  min-height: 1.75rem;
+  cursor: pointer;
+}
+.module-tree a {
+  display: block;
+  padding: 0.2rem var(--space-2);
+  border-radius: var(--radius-s);
+  color: var(--ink);
+  text-decoration: none;
+}
+.module-tree a:hover {
+  background: var(--surface-2);
+}
+.module-tree a[aria-current] {
+  background: var(--hema-soft);
+  color: var(--hema-ink);
+  font-weight: 700;
+}
+.module-tree .here {
+  display: block;
+  font-size: var(--step--2);
+  font-weight: 600;
+  color: var(--eosin-ink);
 }
 
 /* ── Tool pages ─────────────────────────────────────────────────────── */
