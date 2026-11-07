@@ -123,6 +123,7 @@ The cache name includes the precache hash, so a new deploy replaces the shell at
 - Workflow `ci.yml`:
   - **`test` job** (push and PR), using `actions/checkout@v7` and `actions/setup-node@v7`: `npm ci`, containment guard, license scan, `astro check`, content validators, build, dist validators, Playwright, Lighthouse assertions.
   - **`deploy` job** (main only, `needs: test`): `withastro/action@v6` then `actions/deploy-pages@v5`.
+  - Every `uses:` line names a full commit SHA, with its version in a comment (checked with `git ls-remote` on 2026-11-04 and again on 2026-11-07: checkout v7.0.1, setup-node v7.1.0, upload-artifact v7.0.2, download-artifact v8.0.2, withastro/action v6.1.4, deploy-pages v5.0.1). A moved tag cannot change what runs with the deploy job's `pages: write` and `id-token: write`; withastro/action v6.1.4 pins the actions it calls by SHA too. To update, resolve the new tag's SHA the same way.
   - Phase 1 must verify that `withastro/action` runs our `build` script, so that Pagefind and the SW manifest are included.
 - Custom `404.html` is supported by Pages. Deep links work because every route is emitted as `/path/index.html`.
 - Publishing requires the owner's `gh auth login`. Tokens are never handled by the agent.
