@@ -185,6 +185,8 @@ export const tEntity = defineStrings({
   notPublished: { it: 'non ancora pubblicato', en: 'not yet published' },
   prevIn: { it: 'Precedente in “{term}”', en: 'Previous in “{term}”' },
   nextIn: { it: 'Successivo in “{term}”', en: 'Next in “{term}”' },
+  prevCard: { it: 'Scheda precedente', en: 'Previous card' },
+  nextCard: { it: 'Scheda successiva', en: 'Next card' },
   sources: { it: 'Fonti', en: 'Sources' },
   reportThis: { it: 'Segnala un errore in questa scheda', en: 'Report an error on this card' },
 });

@@ -1,5 +1,5 @@
 ---
-/** Sticky top bar: brand (phone/tablet), global search (desktop), language, theme. */
+/** Sticky top bar: brand (phone/tablet), global search (desktop), language, theme; the default slot opens the tools (the chapter button of entity pages). */
 import type { Lang } from '../../i18n/index.ts';
 import { tNav } from '../../i18n/nav.ts';
 import { SITE_NAME } from '../../i18n/common.ts';
@@ -64,6 +64,7 @@ const palette = {
     <span id="global-search-hint" class="visually-hidden">{tNav(lang, 'shortcutHint')}</span>
   </form>
   <div class="topbar-tools">
+    <slot />
     <button
       type="button"
       class="icon-btn js-only"

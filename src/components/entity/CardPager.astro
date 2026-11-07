@@ -1,0 +1,36 @@
+---
+/** Previous and next card beside the breadcrumb (entity pages, from 600 px): the order of the links at the end of the
+    card, so the next card is one tap from the top. */
+import type { Lang } from '../../i18n/index.ts';
+import { tEntity } from '../../i18n/pages.ts';
+
+type Card = { href: string; name: string };
+interface Props {
+  lang: Lang;
+  prev?: Card;
+  next?: Card;
+}
+const { lang, prev, next } = Astro.props;
+---
+
+{
+  (prev || next) && (
+    <p class="pager" data-pagefind-ignore>
+      {prev && (
+        <a href={prev.href}>
+          <span aria-hidden="true">← </span>
+          <span class="visually-hidden">{tEntity(lang, 'prevCard')}: </span>
+          {prev.name}
+        </a>
+      )}
+      {prev && next && <span aria-hidden="true">·</span>}
+      {next && (
+        <a href={next.href}>
+          <span class="visually-hidden">{tEntity(lang, 'nextCard')}: </span>
+          {next.name}
+          <span aria-hidden="true"> →</span>
+        </a>
+      )}
+    </p>
+  )
+}

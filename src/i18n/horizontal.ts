@@ -132,6 +132,8 @@ export const tHz = defineStrings({
   recallReveal: { it: 'Mostra la sezione', en: 'Show the section' },
   youAreHere: { it: 'sei qui', en: 'you are here' },
   moduleTree: { it: 'Indice dei capitoli', en: 'Chapter contents' },
+  chapterOpen: { it: 'Capitolo', en: 'Chapter' },
+  chapterClose: { it: 'Chiudi l’indice dei capitoli', en: 'Close the chapter contents' },
 
   // Image viewer
   viewerHelp: {

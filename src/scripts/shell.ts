@@ -169,6 +169,33 @@ if (chipStrip && chipLayout && topBar) {
   phone.addEventListener('change', update);
 }
 
+// ── Chapter index (entity pages): the "Chapter" dialog opens on the current card ─
+/** Scroll a chapter index so the current card sits in its middle: scrollTop only, the page never moves. */
+const centreCurrent = (tree: HTMLElement) => {
+  const cur = tree.querySelector('a[aria-current]');
+  if (!cur) return;
+  const [t, r] = [tree.getBoundingClientRect(), cur.getBoundingClientRect()];
+  tree.scrollTop += r.top - t.top - (tree.clientHeight - r.height) / 2;
+};
+const chapter = document.querySelector<HTMLDialogElement>('[data-chapter-dialog]');
+const chapterBtn = document.querySelector<HTMLButtonElement>('[data-chapter-open]');
+if (chapter && chapterBtn) {
+  const tree = chapter.querySelector<HTMLElement>('.module-tree')!;
+  chapterBtn.addEventListener('click', () => {
+    chapter.showModal();
+    centreCurrent(tree);
+    tree.querySelector<HTMLElement>('a[aria-current]')?.focus({ preventScroll: true });
+  });
+  // A click on the backdrop closes it, as Esc does; focus goes back to the button.
+  chapter.addEventListener('click', (ev) => {
+    const r = chapter.getBoundingClientRect();
+    if (ev.target === chapter && (ev.clientX < r.left || ev.clientX > r.right || ev.clientY < r.top || ev.clientY > r.bottom)) chapter.close();
+  });
+  chapter.addEventListener('close', () => chapterBtn.focus());
+  // Back from the card picked in it, the page comes out of the browser cache with the dialog closed.
+  addEventListener('pagehide', () => chapter.close());
+}
+
 // ── Sidebar collapse (desktop) ──────────────────────────────────────────
 const sideBtn = document.querySelector<HTMLButtonElement>('[data-sidebar-toggle]');
 function syncSidebar() {

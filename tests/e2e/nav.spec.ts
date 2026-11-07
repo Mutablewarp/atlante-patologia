@@ -77,3 +77,63 @@ test('no page scrolls horizontally @smoke', async ({ page }) => {
     expect(scroll, path).toBeLessThanOrEqual(client);
   }
 });
+
+// macOS WebKit only moves focus to links with Option+Tab (system default).
+const tabKey = (browserName: string) => (browserName === 'webkit' && process.platform === 'darwin' ? 'Alt+Tab' : 'Tab');
+
+test('the chapter index opens from the top bar where the sidebar does not show it, on the current card', async ({ page, browserName }) => {
+  await page.goto('it/e/coagulative-necrosis/');
+  const open = page.getByRole('button', { name: 'Capitolo' });
+  if (width() < 600) return await expect(open).toBeHidden(); // phones keep their layout
+  const sidebarTree = page.locator('.primary-nav .module-tree');
+  if (width() >= 1024) {
+    await expect(sidebarTree).toBeVisible();
+    await expect(open).toBeHidden();
+    await page.locator('[data-sidebar-toggle]').click(); // collapsed, the sidebar has no index: the button takes over
+    await expect(sidebarTree).toBeHidden();
+  }
+  await open.focus();
+  await page.keyboard.press('Enter');
+  const dialog = page.getByRole('dialog', { name: 'Indice dei capitoli' });
+  await expect(dialog).toBeVisible();
+  const current = dialog.getByRole('link', { name: /^Necrosi coagulativa/ });
+  await expect(current).toHaveAttribute('aria-current', 'location');
+  await expect(current).toContainText('sei qui');
+  await expect(current).toBeFocused();
+  await expect(current).toBeInViewport();
+  // Italian names, Italian order: the next entry is the next card of the chapter.
+  await page.keyboard.press(tabKey(browserName));
+  await expect(dialog.getByRole('link', { name: 'Necrosi colliquativa' })).toBeFocused();
+  // Modal: Tab never reaches the page behind (the platform keeps focus inside).
+  for (let i = 0; i < 32; i++) {
+    await page.keyboard.press(tabKey(browserName));
+    const inside = await page.evaluate(() => {
+      const el = document.activeElement;
+      return !el || el === document.body || !!el.closest('dialog[open]');
+    });
+    expect(inside, `Tab ${i + 1}`).toBe(true);
+  }
+  await page.keyboard.press('Escape');
+  await expect(dialog).toBeHidden();
+  await expect(open).toBeFocused();
+});
+
+test('from 600 px the previous and next card sit beside the breadcrumb, in the order of the context', async ({ page }) => {
+  await page.goto('it/e/coagulative-necrosis/');
+  const pager = page.locator('.crumb-row .pager');
+  if (width() < 600) return await expect(pager).toBeHidden(); // phones keep their layout
+  const prev = pager.getByRole('link', { name: 'Scheda precedente: Necrosi caseosa' });
+  const next = pager.getByRole('link', { name: 'Scheda successiva: Necrosi colliquativa' });
+  await expect(prev).toHaveAttribute('href', /\/it\/e\/caseous-necrosis\/$/);
+  await expect(next).toHaveAttribute('href', /\/it\/e\/liquefactive-necrosis\/$/);
+  // The same neighbours as the links at the end of the card.
+  await expect(page.locator('[data-lens-nav] a[rel="next"]')).toHaveAttribute('href', (await next.getAttribute('href'))!);
+  // On a computer the pair shares the breadcrumb's row: the card text does not move down.
+  if (width() >= 1024) {
+    const [crumb, pair] = [(await page.locator('.crumb-row .breadcrumb').boundingBox())!, (await pager.boundingBox())!];
+    expect(Math.abs(crumb.y - pair.y)).toBeLessThan(4);
+  }
+  // Reached through a lens, the pair follows that lens's order.
+  await page.goto('it/e/coagulative-necrosis/?via=system:heart');
+  await expect(pager.getByRole('link', { name: 'Scheda successiva: Steatosi (degenerazione grassa)' })).toHaveAttribute('href', /\/fatty-change\/\?via=system:heart$/);
+});
