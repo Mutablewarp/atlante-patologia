@@ -10,6 +10,7 @@ import { readdirSync, readFileSync } from 'node:fs';
 import { dirname, join, relative, sep } from 'node:path';
 import { gzipSync } from 'node:zlib';
 import { describe, expect, it } from 'vitest';
+import { parse } from 'yaml';
 import { isLazyCached, LAZY_ONLY, versionOf } from '../../scripts/sw-manifest.mjs';
 import { anchorHrefs, BASE, DIST, LANGS, resolveFile, walk } from './lib.ts';
 
@@ -75,5 +76,26 @@ describe('3D pathway assets', () => {
       const bytes = files.reduce((n, f) => n + gz(f), 0);
       console.info(`${page}: ${files.length} JS files, ${(bytes / KB).toFixed(1)} KB gz before the 3D button`);
     }
+  });
+
+  it('the card that hosts a pathway cites every source of that pathway, in both languages (D062)', () => {
+    const src = (f: string) => readFileSync(join(process.cwd(), 'src/content', f), 'utf8');
+    const registry = parse(src('sources.yaml')) as { id: string; title: string; doi?: string }[];
+    const pathways = readdirSync(join(process.cwd(), 'src/content/pathways'))
+      .filter((f) => f.endsWith('.yaml'))
+      .map((f) => parse(src(`pathways/${f}`)) as { id: string; entity: string; sources: { source: string }[] });
+    expect(pathways.length).toBeGreaterThan(0);
+    for (const p of pathways)
+      for (const lang of LANGS) {
+        const card = resolveFile(`${BASE}${lang}/e/${p.entity}/`);
+        if (!card) continue; // a draft card is not built
+        const html = readFileSync(card, 'utf8');
+        for (const { source } of p.sources) {
+          const s = registry.find((x) => x.id === source)!;
+          // A title is in the HTML as Astro escapes text.
+          const title = s.title.replace(/&/g, '&amp;').replace(/'/g, '&#39;').replace(/"/g, '&quot;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+          expect(html, `${lang}/e/${p.entity}/: ${source}`).toContain(s.doi ? `https://doi.org/${s.doi}` : title);
+        }
+      }
   });
 });

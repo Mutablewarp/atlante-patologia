@@ -4,6 +4,7 @@ import type { Lang } from '../../i18n/index.ts';
 import { tPw } from '../../i18n/pathway.ts';
 import { pathways, structureById } from '../../lib/pathways.ts';
 import Pathway from './Pathway.astro';
+import PathwaySources from './PathwaySources.astro';
 
 interface Props {
   lang: Lang;
@@ -21,6 +22,8 @@ const structures = await structureById();
       <h2 id={`pathway-${p.id}-title`}>{p.title[lang]}</h2>
       <p class="small muted">{p.summary[lang]}</p>
       <Pathway lang={lang} pathway={p} structures={structures} compact />
+      {/* The steps report what these sources say (sources-differ asides): the card cites them too (D062). */}
+      <PathwaySources lang={lang} pathway={p} id={`pathway-${p.id}-sources`} title={tPw(lang, 'sourcesOfPathway')} heading="h3" />
     </section>
   ))
 }
