@@ -176,3 +176,39 @@ Open after the review fixes:
 - `npm audit` lists 21 moderate advisories, all in development tools. `ci.yml` pins actions by tag, not by SHA.
 - `/it/e/apoptosis/` scores exactly 90 for Lighthouse mobile performance (FCP and LCP from 134 KB of HTML and render-blocking CSS).
 - OpenSeadragon is planned only (D059).
+
+### Second review and final fixes (2026-11-07) — on `main`, not pushed
+
+Fresh reviewers re-checked `main` and found 25 items still open or newly broken (7 major, 18 minor). A first final fixer stopped at a usage limit after `00389cd` (the database notices) and left 56 files uncommitted. The second final fixer reviewed that work, kept it, corrected two parts and finished the rest: 21 commits, `00389cd` to `9a2947b`.
+
+| Area | What changed |
+|---|---|
+| Science and licences | The card that hosts a pathway lists the pathway's sources, so the apoptosis card now cites the three papers its sources-differ aside reports (D062; dist test). The AI line on `/` links to the Method page in both languages. p01 claims c057, c059, c061, c063 and c015 are reworded in our own structure. c063 was reworded a second time, cause first: the first rewording still followed the reference point by point. The Licences page reproduces the notice of every library the site runs (dist test). The Method page now names every kind of text that has no ledger rows, including the words in our diagrams |
+| Reading | Five more blocks keep the measure. The badges flow around the folded lens toggle, so no card scrolls sideways at 320–375 px with text l or xl. Our five diagrams have Italian copies (`fileIt`). Our credit lines are in the page language, and their link shows the licence name. The pattern matrix takes the full width on desktop. In the first version the sticky side list covered the matrix's last column, and the keyboard walk failed at 1280 px. Now the list and the text share a lead block, and the list stops where that block ends. On phones the chip strip slides away while the learner reads down. The oral history (folded to one line), the hub resume card (two lines reserved) and the tool-form checkboxes no longer shift or misalign |
+| Learner data | Every waiting tab shows the blocked notice after 1.5 s. The database notice and the update notice share one column, can be dismissed and keep focus clear (`00389cd`). Import keeps the readable records of every store and says how many it left out. The checks live in `import-check.ts`, which only the data page loads, so the database chunk drops from 4.2 to 2.6 KB gz. Answer times use `performance.now()`. The calibration verdict says when accuracy does not rise with confidence |
+| CI and security | Study data is network-first in the service worker, so an offline pack no longer keeps old questions. The WHO watch prints an Item URL only for https WHO and NIH links, keeps fetched Markdown inert and finds its marker on any line. Every action in `ci.yml` is pinned by SHA (checked again with `git ls-remote`). The JS budget now also counts the dynamic imports that load at once (`/it/study/`: 20.8 KB, not 4.0 KB) |
+
+Verification on `9a2947b`:
+
+| Command | Result |
+|---|---|
+| `npm run check` | 0 errors, 0 warnings, 0 hints (207 files) |
+| `npm test` | 232 passed, 2 skipped |
+| `npm run build` | 320 pages; Pagefind 286 pages; `sw-manifest: shell 61 files, 2 offline pack(s)` |
+| `npm run test:dist` | 21/21 passed |
+| `npm run contrast` / `npm run guard` | all 94 pairs pass / ok (706 checked files) |
+| `NO_VERBATIM_WORK=…/.work npm run no-verbatim` | 306 files, 0 failed (and 10 SVG files under `src/assets/images`, 0 failed) |
+| `E2E_ENGINES=chromium,webkit npx playwright test --workers=3` on reading, cls, a11y, keyboard, nav | 663 passed, 67 skipped by design, 0 failed |
+| the same on pathway, i18n, privacy | 73 passed, 157 skipped by design, 0 failed |
+| `npm run test:e2e:study` / `npm run test:e2e:offline` | 32 passed, 3 skipped / 8/8 passed |
+| `npm run lighthouse` | `/it/`, `/en/atlas/`, `/it/about/`: performance 99, 100 in the other three. Six more pages: 88 (`/it/e/apoptosis/`), 90, 94, 97, 97 and 99; 100 in the other three |
+| public-naming grep over tracked files, `dist/` and the new commit messages | 0 hits |
+
+The following items from the list above are now closed: the English-only text in the SVG diagrams, the shift on the oral page, the import checks that covered only oral sessions, and the action tags in `ci.yml`. On phones the chrome is shorter while the learner reads down.
+
+Still open:
+
+- No fresh-context verifier has re-read the reworded p01 rows (c057–c063, c015). They stay labelled as checked by the fixer, and the Method page counts them that way.
+- The words in our diagrams have no claim markers or ledger rows, like captions and alt text (the Method page says so). The diagrams have no dark-mode style.
+- The sticky bars are sized in rem, so A+ enlarges them too. Changing that needs px-sized bars and new scroll-padding offsets, and is left for its own reading pass.
+- `/it/e/apoptosis/` scores 88 for Lighthouse mobile performance locally, down from 90. `serve-dist.mjs` sends HTML uncompressed, and the page's 138 KB of HTML now sit just past a simulated round-trip step: with 3.4 KB less HTML it scores 90 again. GitHub Pages sends the page gzipped (32 KB). The CI sample pages are unaffected.
