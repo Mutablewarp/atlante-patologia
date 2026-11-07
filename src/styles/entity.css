@@ -142,10 +142,20 @@ html .fold-toggle {
   html.js .fold-head:has(> .fold-toggle[aria-expanded='false']) + * {
     display: none;
   }
-  /* Closed, the lens toggle shares the row of the badges (a flex box, so it sits beside the float) */
+  /* Closed, the lens toggle shares the row of the badges. The badges are inline boxes that flow around the
+     float: one that does not fit beside it moves below it (a flex row would be squeezed beside the float, and
+     a nowrap badge would stick out of the page at the larger text sizes). */
   .entity-head > .fold-toggle[aria-expanded='false'] {
     float: left;
     margin-right: var(--space-2);
+  }
+  .entity-head > .badges {
+    display: block;
+    margin-bottom: calc(var(--space-3) - var(--space-1));
+  }
+  .entity-head > .badges > li {
+    display: inline-block;
+    margin: 0 var(--space-2) var(--space-1) 0;
   }
   .lens-chips {
     margin-top: var(--space-2);

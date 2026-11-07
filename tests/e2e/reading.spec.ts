@@ -191,6 +191,20 @@ test('the site name in the top bar is shown whole or as "Atlante", never cut, at
     }
 });
 
+test('at the larger reading sizes no card scrolls sideways on phones, folded toggles included', async ({ page }) => {
+  test.skip(width() >= 600, 'the lens toggle folds only below 600 px');
+  // The folded "Lenti (n)" toggle floats beside the badges: a badge that does not fit must move below it.
+  for (const path of [ENTITY, 'en/e/coagulative-necrosis/', 'it/e/other-regulated-cell-death/'])
+    for (const w of [320, 360, 375])
+      for (const size of ['l', 'xl']) {
+        await page.setViewportSize({ width: w, height: 700 });
+        await page.addInitScript((s) => localStorage.setItem('ap-text', s), size);
+        await page.goto(path);
+        const over = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+        expect(over, `${path} ${w} px, text ${size}`).toBeLessThanOrEqual(0);
+      }
+});
+
 test('reading progress and the section chips follow the scroll', async ({ page }) => {
   await page.goto(ENTITY);
   const bar = page.locator('[data-read-progress]');
