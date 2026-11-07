@@ -311,16 +311,16 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "11", pages: "513" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-07
   - claimId: apoptosis-c074
     section: micro
-    statement: "Apoptotic cytoplasm becomes strongly eosinophilic on H&E, as seen in Councilman bodies formed by virus-induced hepatocyte apoptosis."
-    sourceRef: { source: rubin-8e, chapter: "9", pages: "398" }
+    statement: "Apoptotic cells can have eosinophilic cytoplasm on H&E, as apoptotic keratinocytes do in erythema multiforme; the acidophilic bodies of viral hepatitis are apoptotic hepatocytes with intensely eosinophilic cytoplasm."
+    sourceRef: { source: rubin-8e, chapter: "20, 28", pages: "863, 1260" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "fixer-agent (reworded after the 2026-11-07 independent re-check; checked against the cited pages)"
+    date: 2026-11-07
   - claimId: apoptosis-c039
     section: micro
     statement: "Organelles segregate, the plasma membrane blebs and the cell breaks into membrane-bound fragments, often anucleate."
@@ -347,12 +347,12 @@ claims:
     date: 2026-11-03
   - claimId: apoptosis-c042
     section: micro
-    statement: "In yellow fever, virus-induced apoptotic hepatocytes become strongly eosinophilic and detach as Councilman bodies."
+    statement: "Yellow fever virus drives some hepatocytes into apoptosis; these are the Councilman bodies, separated from the surrounding liver cells and with strongly eosinophilic cytoplasm."
     sourceRef: { source: rubin-8e, chapter: "9", pages: "398" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "fixer-agent (reworded after the 2026-11-07 independent re-check; checked against the cited pages)"
+    date: 2026-11-07
   - claimId: apoptosis-c043
     section: ancillary
     statement: "Molecular features of apoptosis include cytochrome c release, caspase-3 activation, CAD-mediated DNA fragmentation and surface phosphatidylserine."

@@ -1,6 +1,6 @@
 ---
 lang: it
-translatedFrom: 33b1b5171d961daf7c2296ad34377df724927c02087e99343a8b09663ae98393
+translatedFrom: 521e2173ea1291b252c2c3b865074b646cecea7bee91d82c1a1f43b3cced2a75
 ---
 
 ## Definizione ed epidemiologia
@@ -48,10 +48,10 @@ Non applicabile.
 
 - Colpisce **singole cellule o piccoli gruppi** sparsi tra cellule vitali, non un'area a carta geografica.<!--c:apoptosis-c037-->
 - **Nucleo:** la cromatina si condensa (picnosi) e il nucleo si frammenta (carioressi), all'interno di una membrana cellulare integra.<!--c:apoptosis-c038-->
-- **Corpo cellulare:** la cellula apoptotica si raggrinzisce.<!--c:apoptosis-c073--> Il suo citoplasma diventa intensamente eosinofilo all'EE, come nei corpi di Councilman.<!--c:apoptosis-c074-->
+- **Corpo cellulare:** la cellula apoptotica si raggrinzisce, ma la sua membrana plasmatica resta integra.<!--c:apoptosis-c073--> Il suo citoplasma può diventare eosinofilo all'EE, come nei cheratinociti apoptotici dell'eritema multiforme; i corpi acidofili dell'epatite virale sono epatociti apoptotici con citoplasma intensamente eosinofilo.<!--c:apoptosis-c074-->
 - **Citoplasma e membrana:** gli organelli vanno incontro a segregazione, la membrana plasmatica forma bolle (blebs) e la cellula si frammenta in corpi apoptotici delimitati da membrana, molti dei quali privi di materiale nucleare.<!--c:apoptosis-c039-->
 - **Nessun infiltrato infiammatorio** attorno alle cellule morenti.<!--c:apoptosis-c040-->
-- Esempi classici: gli epatociti apoptotici nell'epatite virale e i cheratinociti apoptotici nell'eritema multiforme.<!--c:apoptosis-c041--> Nella febbre gialla gli epatociti apoptotici diventano intensamente eosinofili e si distaccano formando i **corpi di Councilman**.<!--c:apoptosis-c042-->
+- Esempi classici: gli epatociti apoptotici nell'epatite virale e i cheratinociti apoptotici nell'eritema multiforme.<!--c:apoptosis-c041--> Il virus della febbre gialla spinge alcuni epatociti verso l'apoptosi: sono i **corpi di Councilman**, staccati dalle cellule epatiche circostanti e con citoplasma intensamente eosinofilo.<!--c:apoptosis-c042-->
 
 ## Colorazioni speciali, IIC e reperti molecolari
 

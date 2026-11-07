@@ -47,10 +47,10 @@ Not applicable.
 
 - Affects **single cells or small groups** scattered among viable cells, not a geographic area.<!--c:apoptosis-c037-->
 - **Nucleus:** chromatin condenses (pyknosis) and the nucleus fragments (karyorrhexis), inside an intact cell membrane.<!--c:apoptosis-c038-->
-- **Cell body:** the apoptotic cell shrinks.<!--c:apoptosis-c073--> Its cytoplasm turns intensely eosinophilic on H&E, as in Councilman bodies.<!--c:apoptosis-c074-->
+- **Cell body:** the apoptotic cell shrinks, but its plasma membrane stays intact.<!--c:apoptosis-c073--> Its cytoplasm can turn eosinophilic on H&E, as in the apoptotic keratinocytes of erythema multiforme; the acidophilic bodies of viral hepatitis are apoptotic hepatocytes with intensely eosinophilic cytoplasm.<!--c:apoptosis-c074-->
 - **Cytoplasm and membrane:** organelles segregate, the plasma membrane forms blebs, and the cell splits into membrane-bound apoptotic bodies, many without nuclear material.<!--c:apoptosis-c039-->
 - **No inflammatory infiltrate** around the dying cells.<!--c:apoptosis-c040-->
-- Classic examples: apoptotic hepatocytes in viral hepatitis and apoptotic keratinocytes in erythema multiforme.<!--c:apoptosis-c041--> In yellow fever, apoptotic hepatocytes become intensely eosinophilic and detach as **Councilman bodies**.<!--c:apoptosis-c042-->
+- Classic examples: apoptotic hepatocytes in viral hepatitis and apoptotic keratinocytes in erythema multiforme.<!--c:apoptosis-c041--> Yellow fever virus pushes some hepatocytes into apoptosis, and these are the **Councilman bodies**: separated from the surrounding liver cells, with intensely eosinophilic cytoplasm.<!--c:apoptosis-c042-->
 
 ## Special stains, IHC and molecular findings
 
