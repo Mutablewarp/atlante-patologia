@@ -99,6 +99,13 @@ li {
 figcaption :is(p, li) {
   max-width: var(--measure);
 }
+/* Related-card lists and source lists (entity, pattern and pathway pages): each line keeps the measure of its
+   own type size (the smaller summary type fits more characters into the list's width) */
+.related > ul,
+.related > ul > li > .small,
+.sources > ul {
+  max-width: var(--measure);
+}
 
 a {
   color: var(--hema);

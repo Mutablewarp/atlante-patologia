@@ -42,6 +42,7 @@
   flex-wrap: wrap;
   gap: var(--space-1) var(--space-4);
   margin: 0 0 var(--space-4);
+  max-width: var(--measure);
   color: var(--ink-muted);
   line-height: 1.45;
 }
@@ -461,13 +462,7 @@ html:not(.js) .section-toggle {
 .related {
   margin-top: var(--space-6);
 }
-/* Card and pattern lists: the link, its summary underneath; each line keeps the measure of its own type size
-   (the smaller summary type fits more characters into the list's width) */
-.related > ul,
-.related > ul > li > .small,
-.sources > ul {
-  max-width: var(--measure);
-}
+/* Card and pattern lists: the link, its summary underneath (measure: base.css, shared with the pathway page) */
 .related > ul > li > .small {
   display: block;
 }

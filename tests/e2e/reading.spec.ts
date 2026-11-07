@@ -39,8 +39,14 @@ test('lines stay within the reading measure: text, summary, captions, credit lin
   // About 66 characters per line is the target; 80 is the WCAG 1.4.8 ceiling. Lists with summaries in
   // small type (cards in a pattern, the atlas patterns) count each line in its own type size.
   for (const [path, sel] of [
-    [ENTITY, '.section-body p, .section-body li, .entity-head .lede, figcaption p, .objectives li, .related li, .sources li'],
+    [
+      ENTITY,
+      '.section-body p, .section-body li, .entity-head .lede, figcaption p, .objectives li, .related li, .sources li, ' +
+        // the first-launch notice, the names and synonyms, the pathway block's intro and the 3D structure notes
+        '.first-notice p, .entity-names dd, .entity-pathway > p, .structure-desc p',
+    ],
     [PATTERN, '.prose p, .prose li, .entity-head .lede, figcaption p, .related li, .sources li'],
+    ['it/pathways/intrinsic-apoptosis/', '.sources li, .structure-desc p, .pw-steps p'],
     ['it/atlas/', '.pattern-list li'],
   ] as const) {
     await page.goto(path);

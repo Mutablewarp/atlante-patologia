@@ -324,6 +324,7 @@ main:focus {
 }
 .first-notice p {
   margin-bottom: var(--space-3);
+  max-width: var(--measure);
 }
 .first-notice .notice-actions {
   display: flex;

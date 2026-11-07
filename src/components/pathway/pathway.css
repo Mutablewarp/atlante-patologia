@@ -160,6 +160,11 @@
 }
 .structure-desc p {
   margin: 0 0 var(--space-2);
+  max-width: var(--measure);
+}
+/* The summary above the compact block on a card keeps the reading measure. */
+.entity-pathway > p {
+  max-width: var(--measure);
 }
 .structure-legend {
   list-style: none;
