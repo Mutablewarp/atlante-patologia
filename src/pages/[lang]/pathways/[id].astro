@@ -22,7 +22,7 @@ const lang = Astro.params.lang as Lang;
 const t = (k: Parameters<typeof tPw>[1]) => tPw(lang, k);
 const pathway = (await pathways()).find((p) => p.id === Astro.params.id)!;
 const structures = await structureById();
-const entity = (await siteData()).entityById.get(pathway.entity);
+const entity = (await siteData(lang)).entityById.get(pathway.entity);
 const crumbs = [
   { label: tAtlas(lang, 'title'), href: langPath(lang, 'atlas/') },
   ...(entity ? [{ label: entity.names[lang], href: langPath(lang, `e/${entity.id}/`) }] : []),

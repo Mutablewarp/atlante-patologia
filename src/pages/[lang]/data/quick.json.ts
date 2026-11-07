@@ -15,7 +15,7 @@ const firstBlock = (html: string) => html.replace(/<!--[\s\S]*?-->/g, '').match(
 
 export const GET: APIRoute = async ({ params }) => {
   const lang = params.lang as Lang;
-  const { entities } = await siteData();
+  const { entities } = await siteData(lang);
   const quick = SECTIONS.filter((s) => s.quick);
   const out: Record<string, Record<string, string>> = {};
   for (const e of entities) {

@@ -29,14 +29,14 @@ import '../../../styles/entity.css';
 import '../../../styles/horizontal.css';
 
 export async function getStaticPaths() {
-  const { entities } = await siteData();
+  const { entities } = await siteData('it'); // only the ids: the same in both languages
   return entities.flatMap((e) => LANGS.map((lang) => ({ params: { lang, id: e.id } })));
 }
 
 const lang = Astro.params.lang as Lang;
 const id = Astro.params.id!;
 const t = (k: Parameters<typeof tEntity>[1]) => tEntity(lang, k);
-const data = await siteData();
+const data = await siteData(lang);
 const entity = data.entityById.get(id)!;
 const body = await entityBody(id, lang);
 const split = splitSections(await withCrossLinks(body?.rendered?.html ?? '', lang));

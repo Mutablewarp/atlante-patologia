@@ -22,7 +22,7 @@ export const getStaticPaths = langPaths;
 
 const lang = Astro.params.lang as Lang;
 const t = (k: Parameters<typeof tHz>[1]) => tHz(lang, k);
-const { entities, entityById, relations } = await siteData();
+const { entities, entityById, relations } = await siteData(lang);
 
 // Edges between visible entities; symmetric pairs declared on both sides count once.
 const seen = new Set<string>();

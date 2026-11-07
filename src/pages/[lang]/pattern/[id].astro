@@ -28,7 +28,7 @@ export async function getStaticPaths() {
 const lang = Astro.params.lang as Lang;
 const { pattern } = Astro.props as { pattern: Awaited<ReturnType<typeof patterns>>[number] };
 const t = (k: Parameters<typeof tHz>[1]) => tHz(lang, k);
-const data = await siteData();
+const data = await siteData(lang);
 const body = await patternBody(pattern.id, lang);
 const html = await withCrossLinks(body?.rendered?.html ?? '', lang);
 const imgs = await imageById();

@@ -10,7 +10,7 @@ export const getStaticPaths = langPaths;
 
 const lang = Astro.params.lang as Lang;
 const t = (k: Parameters<typeof tHome>[1]) => tHome(lang, k);
-const { modules } = await siteData();
+const { modules } = await siteData(lang);
 const published = modules.filter((m) => m.status === 'published').length;
 const pct = Math.round((published / modules.length) * 100);
 const sections = (['I', 'II', 'III'] as const).map((s) => ({

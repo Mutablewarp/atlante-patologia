@@ -15,7 +15,7 @@ export const getStaticPaths = langPaths;
 
 const lang = Astro.params.lang as Lang;
 const t = (k: Parameters<typeof tAtlas>[1]) => tAtlas(lang, k);
-const { entities, entityById } = await siteData();
+const { entities, entityById } = await siteData(lang);
 const other = lang === 'it' ? 'en' : 'it';
 const collator = new Intl.Collator(lang, { sensitivity: 'base' });
 type Row = { name: string; href: string; anchor?: string; primary?: string; definition?: string };

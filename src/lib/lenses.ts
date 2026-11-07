@@ -2,6 +2,7 @@
  * Lens membership (NAVIGATION_SPEC §2): which entities belong to each lens term,
  * in syllabus order, plus prev/next within a lens term.
  */
+import type { Lang } from '../i18n/index.ts';
 import type { LensId } from './schema.ts';
 import { LENSES } from './schema.ts';
 
@@ -12,22 +13,24 @@ export type LensEntity = {
   lenses: Record<LensId, string[]>;
 };
 
-/** Syllabus order: module order, then English name (stable across languages). */
-export function syllabusSort<T extends LensEntity>(entities: readonly T[], moduleOrder: ReadonlyMap<string, number>): T[] {
+/** Syllabus order: module order, then the name in the page language. The data has no order of cards inside a
+ *  module (D067), so a list reads alphabetically in the language of the page. */
+export function syllabusSort<T extends LensEntity>(entities: readonly T[], moduleOrder: ReadonlyMap<string, number>, lang: Lang): T[] {
   return [...entities].sort(
     (a, b) =>
       (moduleOrder.get(a.module) ?? 999) - (moduleOrder.get(b.module) ?? 999) ||
-      a.names.en.localeCompare(b.names.en, 'en'),
+      a.names[lang].localeCompare(b.names[lang], lang),
   );
 }
 
-/** lens → term → entity ids (syllabus order). Terms without entities are absent. */
+/** lens → term → entity ids (syllabus order in `lang`). Terms without entities are absent. */
 export function lensMembership<T extends LensEntity>(
   entities: readonly T[],
   moduleOrder: ReadonlyMap<string, number>,
+  lang: Lang,
 ): Map<LensId, Map<string, string[]>> {
   const out = new Map<LensId, Map<string, string[]>>(LENSES.map((l) => [l, new Map()]));
-  for (const e of syllabusSort(entities, moduleOrder)) {
+  for (const e of syllabusSort(entities, moduleOrder, lang)) {
     for (const lens of LENSES) {
       for (const term of e.lenses[lens] ?? []) {
         const terms = out.get(lens)!;
