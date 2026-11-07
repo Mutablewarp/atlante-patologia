@@ -20,11 +20,27 @@ body {
   color: var(--ink);
   font-family: var(--font-body);
   font-size: var(--step-0);
+  font-weight: var(--weight-body);
   line-height: var(--leading);
   font-kerning: normal;
   font-variant-numeric: proportional-nums;
   overflow-wrap: break-word;
+  caret-color: var(--hema);
+}
+/* macOS: grayscale smoothing only for light text on the dark theme (it keeps strokes from blooming there); on the
+   light theme it would thin dark text by about a sixth, so the system default stays */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme='light']) body {
+    -webkit-font-smoothing: antialiased;
+  }
+}
+:root[data-theme='dark'] body {
   -webkit-font-smoothing: antialiased;
+}
+/* Selected text: an eosin wash that shows on the paper and on every callout tint */
+::selection {
+  background: color-mix(in srgb, var(--eosin) 28%, transparent);
+  color: var(--ink);
 }
 
 h1,
@@ -34,7 +50,7 @@ h4 {
   font-family: var(--font-display);
   font-optical-sizing: auto;
   font-weight: 560;
-  line-height: 1.15;
+  line-height: var(--leading-tight);
   letter-spacing: -0.01em;
   margin: 0 0 var(--space-3);
   text-wrap: balance;
@@ -73,11 +89,13 @@ li {
   -webkit-hyphens: auto;
   hyphenate-limit-chars: 7 3 3;
 }
+/* Paragraph gap 0.85em: baseline to baseline across a break is 2.35em, still 1.5 times the 1.5em line spacing
+   (WCAG 1.4.8) */
 .prose :is(p, ul, ol) {
-  margin-bottom: 1.1em;
+  margin-bottom: 0.85em;
 }
 .prose li + li {
-  margin-top: 0.4em;
+  margin-top: 0.25em;
 }
 .prose :is(ul, ol) {
   padding-left: 1.4em;
@@ -92,7 +110,9 @@ li {
 .prose h3 {
   margin-top: 1.6em;
 }
-.prose :is(table, th, td, a, code) {
+/* Short labels never break inside a word: tables, links, code, chips and the labels on and under an image */
+.prose :is(table, th, td, a, code, .viewer-label, .viewer-legend),
+.chip {
   hyphens: manual;
 }
 /* Captions and credit lines keep the measure even where the figure is wider than the text (pattern pages) */
@@ -159,6 +179,7 @@ td {
   vertical-align: top;
   padding: var(--space-2) var(--space-3);
   border-bottom: 1px solid var(--rule);
+  line-height: var(--leading-compact);
 }
 th {
   font-weight: 700;
@@ -256,8 +277,8 @@ html:not(.js) .js-only {
 
 .lede {
   font-size: var(--step-1);
-  line-height: 1.5;
-  color: var(--ink-muted);
+  line-height: var(--leading);
+  color: var(--ink);
   max-width: var(--measure);
 }
 

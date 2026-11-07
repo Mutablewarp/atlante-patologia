@@ -69,12 +69,12 @@
   min-height: 2.75rem;
   padding: var(--space-2) 0;
   cursor: pointer;
-  font-weight: 400;
+  font-weight: var(--weight-body);
 }
 /* A checkbox in a tool form stays beside its label (.tool-form > label is a bold grid). */
 .tool-form > label.checkbox {
   display: flex;
-  font-weight: 400;
+  font-weight: var(--weight-body);
 }
 .radio input,
 .checkbox input {
@@ -96,7 +96,7 @@
 }
 .card-text {
   font-size: var(--step-1);
-  line-height: 1.5;
+  line-height: var(--leading);
 }
 .cloze-gap {
   display: inline-block;

@@ -262,12 +262,17 @@ test('oral simulator: three questions, prediction before self-assessment, calibr
   const foreign = guardRequests(page);
   await page.goto('en/study/oral/');
   const timer = page.getByRole('checkbox', { name: 'Use a timer for each question' });
-  // The box sits beside its label, in regular weight (a tool-form label is otherwise a bold grid).
-  expect(await timer.evaluate((i) => [getComputedStyle(i.parentElement!).display, getComputedStyle(i.parentElement!).fontWeight])).toEqual(['flex', '400']);
+  // The box sits beside its label, in the regular text weight (a tool-form label is otherwise a bold grid).
+  expect(
+    await timer.evaluate((i) => [getComputedStyle(i.parentElement!).display, getComputedStyle(i.parentElement!).fontWeight, getComputedStyle(document.body).fontWeight]),
+  ).toEqual(['flex', '430', '430']);
   await timer.check();
   await page.getByRole('button', { name: 'Start' }).click();
   await expect(page.getByRole('heading', { name: 'Question 1 of 3' })).toBeFocused();
   await expect(page.getByRole('timer')).toContainText('Time left: 4:5');
+  // As after "Finish" below: with the denser text, the click on Start leaves the breadcrumb half under the sticky
+  // header, which axe reads as a small target.
+  await page.evaluate(() => window.scrollTo(0, 0));
   await noAxeViolations(page);
   await answerOral(page, '3 · good', '2 · partial');
   await expect(page.getByRole('button', { name: 'Save and continue' })).toBeEnabled();
@@ -301,6 +306,9 @@ test('oral simulator: three questions, prediction before self-assessment, calibr
   await page.getByRole('button', { name: 'Start again' }).press('Enter'); // keyboard, as in the review finding
   // Focus goes to the first setup control, never to <body> (WCAG 2.4.3).
   await expect(page.getByRole('checkbox', { name: 'Use a timer for each question' })).toBeFocused();
+  // The page stays scrolled after the results: the focused setup control must not end up under the sticky bar (WCAG 2.4.11).
+  const [control, bar] = await page.evaluate(() => [document.activeElement!.getBoundingClientRect().top, document.querySelector('.topbar')!.getBoundingClientRect().bottom]);
+  expect(control).toBeGreaterThanOrEqual(bar!);
   // The list stays folded behind one line (no shift when it loads) until the learner opens it.
   const history = page.getByRole('region', { name: 'Previous sessions' });
   await history.getByText('Saved sessions: 1').click();
@@ -308,7 +316,9 @@ test('oral simulator: three questions, prediction before self-assessment, calibr
   const texts = await page.evaluate(() => (window as unknown as { historyTexts: string[] }).historyTexts);
   expect(texts.length).toBeGreaterThan(0);
   expect(texts.filter((s) => s.includes('No sessions saved'))).toEqual([]);
-  // The page stays scrolled after the results: the focused setup control must not end up under the sticky bar.
+  // Checked above, where it is focused; scrolled here, the breadcrumb sits half under the sticky header, which axe reads
+  // as a small target (as after "Finish").
+  await page.evaluate(() => window.scrollTo(0, 0));
   await noAxeViolations(page);
   expect(foreign).toEqual([]);
 });

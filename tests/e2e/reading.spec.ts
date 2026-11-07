@@ -213,9 +213,10 @@ test('reading progress and the section chips follow the scroll', async ({ page }
   await page.evaluate(() => document.getElementById('pathogenesis')!.scrollIntoView());
   await expect(page.locator('.section-toc a[href="#pathogenesis"]')).toHaveAttribute('aria-current', 'true');
   await expect(page.locator('.section-toc a[aria-current]')).toHaveCount(1);
-  await expect.poll(scale).toBeGreaterThan(0.1);
   await page.evaluate(() => document.getElementById('traps')!.scrollIntoView());
   await expect(page.locator('.section-toc a[href="#traps"]')).toHaveAttribute('aria-current', 'true');
+  // With the denser text pathogenesis starts right at 10 % of the card, so the bar is read here, 71-76 % down.
+  await expect.poll(scale).toBeGreaterThan(0.5);
   if (width() < 1024) await expect(page.locator('.section-toc a[href="#traps"]')).toBeInViewport();
 });
 
@@ -305,6 +306,33 @@ test('on phones the card text starts about a screen down: lenses, tools and obje
   // The study actions open with the tools.
   await expect(page.locator('#entity-tools .entity-actions')).toBeAttached();
   await expect(page.locator('#entity-tools .entity-actions')).not.toHaveCSS('display', 'none');
+});
+
+test('the reading measure holds 62-70 characters per line on tablets and computers', async ({ page }) => {
+  test.skip(width() < 600, 'phones: the screen, not the measure, sets the line length');
+  await page.goto(ENTITY);
+  // Median of the full lines (the last line of each paragraph excluded) of the card's running text.
+  const median = await page.evaluate(() => {
+    const counts: number[] = [];
+    const range = document.createRange();
+    for (const p of document.querySelectorAll('.entity-section:not([data-callout]) .section-body > p')) {
+      if (!p.checkVisibility()) continue;
+      const lines = new Map<number, number>();
+      const walker = document.createTreeWalker(p, NodeFilter.SHOW_TEXT);
+      for (let n = walker.nextNode(); n; n = walker.nextNode())
+        for (let i = 0; i < n.textContent!.length; i++) {
+          range.setStart(n, i);
+          range.setEnd(n, i + 1);
+          const r = range.getClientRects()[0];
+          if (r?.width) lines.set(Math.round(r.bottom / 4), (lines.get(Math.round(r.bottom / 4)) ?? 0) + 1);
+        }
+      counts.push(...[...lines.entries()].sort((a, b) => a[0] - b[0]).map((e) => e[1]).slice(0, -1));
+    }
+    counts.sort((a, b) => a - b);
+    return counts[Math.floor(counts.length / 2)]!;
+  });
+  expect(median).toBeGreaterThanOrEqual(62);
+  expect(median).toBeLessThanOrEqual(70);
 });
 
 test('the differential table scrolls inside a labelled region with a sticky first column on phones', async ({ page }) => {
