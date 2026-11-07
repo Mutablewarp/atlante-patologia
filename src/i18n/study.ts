@@ -361,6 +361,10 @@ export const tS = defineStrings({
     it: 'Hai scelto quasi sempre lo stesso livello di sicurezza, quindi non c’è ancora nulla da confrontare. Usa anche gli altri livelli quando ti descrivono meglio.',
     en: 'You almost always chose the same confidence level, so there is nothing to compare yet. Use the other levels too when they describe you better.',
   },
+  adviceNotRising: {
+    it: 'Quando ti senti più sicuro non rispondi meglio: a un livello di sicurezza più alto sbagli più spesso che a uno più basso. Prima di scegliere il livello, chiediti se sapresti spiegare la risposta.',
+    en: 'Feeling surer does not make you more accurate: at a higher confidence level you are wrong more often than at a lower one. Before choosing the level, ask yourself whether you could explain the answer.',
+  },
   adviceCalibrated: {
     it: 'La tua sicurezza corrisponde bene ai risultati. Usala per decidere cosa ripassare: prima i temi in cui ti senti incerto.',
     en: 'Your confidence matches your results well. Use it to decide what to review: first the topics where you feel unsure.',

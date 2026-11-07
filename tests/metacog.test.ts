@@ -43,6 +43,13 @@ describe('confidence calibration', () => {
     // Spread over the levels but under 5 at two of them: "you always chose the same level" would be false.
     expect(advice(calibration([...many(1, 2, 2), ...many(2, 2, 1), ...many(3, 3, 0)]))).toBe('tooFew');
     expect(advice(calibration([...many(3, 8, 1), ...many(1, 1, 3)]))).toBe('tooFew');
+    // Accuracy that falls as confidence rises is never "calibrated" (second review).
+    expect(advice(calibration([...many(1, 6, 4), ...many(2, 5, 5)]))).toBe('notRising');
+    expect(advice(calibration([...many(1, 3, 2), ...many(2, 5, 5), ...many(3, 15, 5)]))).toBe('notRising');
+    expect(advice(calibration([...many(1, 3, 2), ...many(2, 6, 4), ...many(3, 16, 4)]))).toBe('calibrated');
+    // Every "sure" answer wrong (too few to count alone) and every guess right: not "trust yourself more".
+    expect(advice(calibration([...many(3, 0, 4), ...many(1, 6, 0)]))).toBe('notRising');
+    expect(advice(calibration([...many(3, 3, 1), ...many(1, 6, 0)]))).toBe('underconfident');
     expect(pct(1, 3)).toBe(33);
     expect(pct(0, 0)).toBe(0);
   });

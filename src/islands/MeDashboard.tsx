@@ -32,6 +32,7 @@ const ADVICE = {
   fairlyWrong: 'adviceFairlyWrong',
   underconfident: 'adviceUnderconfident',
   oneLevel: 'adviceOneLevel',
+  notRising: 'adviceNotRising',
   calibrated: 'adviceCalibrated',
 } as const;
 
