@@ -95,11 +95,16 @@ const sectioned = html.replace(/<h2\b[\s\S]*?(?=<h2\b|$)/g, (s) => `<section>${s
     </header>
 
     <div class="entity-layout">
-      <SectionToc lang={lang} items={toc} />
+      {/* The side list stays beside the text and ends with it (desktop), so it never covers the full-width
+          matrix; on phones and tablets the lead is no box and the chip strip stays sticky to the end (entity.css). */}
+      <div class="pattern-lead">
+        <SectionToc lang={lang} items={toc} />
+        <div class="entity-body">
+          <div class="prose" set:html={sectioned} />
+        </div>
+      </div>
       <div class="entity-body">
-        <div class="prose" set:html={sectioned} />
-
-        <section aria-labelledby="matrix-title">
+        <section class="pattern-matrix" aria-labelledby="matrix-title">
           <h2 id="matrix-title">{t('matrixTitle')}</h2>
           <div class="table-scroll" role="region" aria-labelledby={captionId} tabindex="0">
             <table class="matrix">

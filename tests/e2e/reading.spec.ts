@@ -228,8 +228,18 @@ test('the pattern page has the contents of entity pages: chips on phones and tab
   await expect(toc.getByRole('link', { name: 'How to recognize it', exact: true })).toHaveAttribute('href', '#how-to-recognize-it-low-to-high-power');
   await expect(links.last()).toHaveText('Cards in this pattern');
   const [nav, text] = [(await toc.boundingBox())!, (await page.locator('.prose').boundingBox())!];
-  if (width() >= 1024) expect(nav.x).toBeGreaterThan(text.x + text.width); // beside the text
-  else expect(nav.y + nav.height).toBeLessThanOrEqual(text.y); // above it, then sticky
+  if (width() >= 1024) {
+    expect(nav.x).toBeGreaterThan(text.x + text.width); // beside the text
+    // The comparison matrix, the page's main tool, takes the full width: under the side list too.
+    const matrix = (await page.locator('.pattern-matrix .table-scroll').boundingBox())!;
+    expect(matrix.x + matrix.width).toBeGreaterThanOrEqual(nav.x + nav.width - 1);
+    // The sticky list ends with the text: read through, the matrix is never under it (SC 2.4.11).
+    await page.locator('.pattern-matrix .table-scroll').evaluate((m) => m.scrollIntoView({ block: 'center' }));
+    const [list, table] = await page.evaluate(() =>
+      ['.section-toc', '.pattern-matrix .table-scroll'].map((s) => document.querySelector(s)!.getBoundingClientRect().toJSON() as DOMRect),
+    );
+    expect(list!.bottom <= table!.top || list!.right <= table!.left, 'side list over the matrix').toBe(true);
+  } else expect(nav.y + nav.height).toBeLessThanOrEqual(text.y); // above it, then sticky
 
   // A chip lands its heading below the top bar and the sticky strip (SC 2.4.11), and becomes current.
   const comparison = toc.getByRole('link', { name: 'Comparison' });

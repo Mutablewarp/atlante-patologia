@@ -260,6 +260,11 @@ html .fold-toggle {
 .entity-body {
   min-width: 0;
 }
+/* Pattern pages: the side list and the text (a grid of their own on desktop). Below 1024 px it is no box, so
+   the chip strip's sticky range is the whole layout, matrix and cards included. */
+.pattern-lead {
+  display: contents;
+}
 .objectives {
   max-width: var(--measure);
   margin-bottom: var(--space-5);
@@ -550,5 +555,16 @@ html:not(.js) .section-toggle {
   .entity-body {
     grid-column: 1;
     grid-row: 1;
+  }
+  /* Pattern pages: the side list and the text share the lead (the list's sticky range ends with the text);
+     the comparison matrix, the page's main tool, and the sections after it take the full width below, with
+     no sticky list over them (SC 2.4.11). */
+  .pattern .entity-layout {
+    display: block;
+  }
+  .pattern .pattern-lead {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 14rem;
+    gap: var(--space-7);
   }
 }
