@@ -303,10 +303,11 @@ html .fold-toggle {
   font-size: var(--step--1);
   text-decoration: none;
 }
-/* Current chip: fill and border only; a bolder weight would widen it and shift its neighbours (CLS) */
+/* Current chip: fill and border only; a bolder weight would widen it and shift its neighbours (CLS). `li >` outranks
+   the bold current entry of the desktop list (horizontal.css), which loads later and made the chip 1.4 px wider */
 @media (max-width: 1023px) {
   .section-toc a,
-  .section-toc a[aria-current] {
+  .section-toc li > a[aria-current] {
     font-weight: 600;
   }
   .section-toc a[aria-current] {
@@ -316,6 +317,24 @@ html .fold-toggle {
   .section-toc a:focus-visible {
     outline-offset: -3px;
     box-shadow: inset 0 0 0 5px var(--paper);
+  }
+}
+/* Tablets: the edges that hide chips fade (shell.ts sets data-fade), never over a keyboard focus; the current chip is
+   filled like the pressed reading mode, with the same weight and border, so no chip changes width (CLS 0) */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .section-toc ol[data-fade]:not(:has(:focus-visible)) {
+    mask-image: linear-gradient(to right, var(--fade-start, #000), #000 2.5rem, #000 calc(100% - 2.5rem), var(--fade-end, #000));
+  }
+  .section-toc ol[data-fade~='start'] {
+    --fade-start: transparent;
+  }
+  .section-toc ol[data-fade~='end'] {
+    --fade-end: transparent;
+  }
+  .section-toc li > a[aria-current] {
+    background: var(--hema);
+    border-color: var(--hema);
+    color: var(--on-hema);
   }
 }
 /* Anchors, scrollIntoView and keyboard focus stop below the top bar and the sticky chip row (SC 2.4.11) */

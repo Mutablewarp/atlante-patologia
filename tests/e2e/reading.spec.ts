@@ -220,6 +220,24 @@ test('reading progress and the section chips follow the scroll', async ({ page }
   if (width() < 1024) await expect(page.locator('.section-toc a[href="#traps"]')).toBeInViewport();
 });
 
+test('on tablets the chip strip fades where it hides chips and fills the current chip, at the same width', async ({ page }) => {
+  test.skip(width() < 600 || width() >= 1024, 'the chip strip of tablets (600-1023 px)');
+  await page.goto(ENTITY);
+  const strip = page.locator('.section-toc ol');
+  await expect(strip).toHaveAttribute('data-fade', 'end');
+  expect(await strip.evaluate((o) => getComputedStyle(o).maskImage)).toContain('gradient');
+  const chip = page.locator('.section-toc a[href="#pathogenesis"]');
+  const before = (await chip.boundingBox())!.width;
+  await page.evaluate(() => document.getElementById('pathogenesis')!.scrollIntoView());
+  await expect(chip).toHaveAttribute('aria-current', 'true');
+  // Filled like the pressed reading mode ("Completa"), and no wider (CLS 0).
+  const fill = (sel: string) => page.locator(sel).evaluate((el) => [getComputedStyle(el).backgroundColor, getComputedStyle(el).color]);
+  expect(await fill('.section-toc a[aria-current]')).toEqual(await fill('[data-mode-btn="full"]'));
+  expect((await chip.boundingBox())!.width).toBe(before);
+  await strip.evaluate((o) => (o.scrollLeft = o.scrollWidth));
+  await expect(strip).toHaveAttribute('data-fade', 'start');
+});
+
 test('on phones the chip strip slides away while reading down and comes back reading up or on focus', async ({ page }) => {
   test.skip(width() >= 600, 'only below 600 px, where the sticky chrome takes a fifth of the screen');
   await page.goto(ENTITY);

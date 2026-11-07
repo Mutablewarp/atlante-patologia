@@ -20,6 +20,20 @@ const store = {
   },
 };
 
+/** A scroller lists in data-fade the edges ("start", "end") that hide content; the CSS fades those edges. Also
+    watched: its children, whose size changes when content hides or opens (Quick mode, a chapter folded). */
+function edgeFade(el: HTMLElement, horizontal: boolean) {
+  const update = () => {
+    const [pos, size, view] = horizontal ? [el.scrollLeft, el.scrollWidth, el.clientWidth] : [el.scrollTop, el.scrollHeight, el.clientHeight];
+    const fade = `${pos > 1 ? 'start' : ''} ${pos + view < size - 1 ? 'end' : ''}`.trim();
+    if (fade) el.dataset.fade = fade;
+    else delete el.dataset.fade;
+  };
+  el.addEventListener('scroll', update, { passive: true });
+  const watch = new ResizeObserver(update);
+  for (const box of [el, ...el.children]) watch.observe(box);
+}
+
 // ── Theme: system → light → dark ────────────────────────────────────────
 const THEMES = ['system', 'light', 'dark'] as const;
 type Theme = (typeof THEMES)[number];
@@ -106,6 +120,7 @@ strip?.querySelectorAll<HTMLAnchorElement>('a[href^="#"]').forEach((a) => {
   if (section) entryOf.set(section, a);
 });
 const spied = [...entryOf.keys()];
+if (strip) edgeFade(strip, true);
 if (strip && spied.length) {
   const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
   const inBand = new Set<Element>();
@@ -195,6 +210,19 @@ if (chapter && chapterBtn) {
   // Back from the card picked in it, the page comes out of the browser cache with the dialog closed.
   addEventListener('pagehide', () => chapter.close());
 }
+// The sidebar copy (>= 1024 px) opens on the current card each time it appears (on load, when the sidebar is
+// expanded, when an iPad turns to landscape) and while its width changes (the sidebar opens with a transition, and
+// the cards wrap differently); a change of height alone (the browser's toolbars) leaves the reader's scroll alone.
+const sideTree = document.querySelector<HTMLElement>('.primary-nav .module-tree');
+if (sideTree) {
+  let width = 0;
+  new ResizeObserver(() => {
+    const shown = sideTree.clientHeight > 0;
+    if (shown && sideTree.clientWidth !== width) centreCurrent(sideTree);
+    width = shown ? sideTree.clientWidth : 0;
+  }).observe(sideTree);
+}
+document.querySelectorAll<HTMLElement>('.module-tree').forEach((tree) => edgeFade(tree, false));
 
 // ── Sidebar collapse (desktop) ──────────────────────────────────────────
 const sideBtn = document.querySelector<HTMLButtonElement>('[data-sidebar-toggle]');

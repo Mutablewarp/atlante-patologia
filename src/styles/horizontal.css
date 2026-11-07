@@ -167,6 +167,16 @@
     display: none;
   }
 }
+/* An index that scrolls fades at the edges that hide cards (shell.ts sets data-fade); never over a keyboard focus */
+.module-tree[data-fade]:not(:has(:focus-visible)) {
+  mask-image: linear-gradient(var(--fade-start, #000), #000 2rem, #000 calc(100% - 2rem), var(--fade-end, #000));
+}
+.module-tree[data-fade~='start'] {
+  --fade-start: transparent;
+}
+.module-tree[data-fade~='end'] {
+  --fade-end: transparent;
+}
 .module-tree {
   /* The list scrolls, so it clips: room for the 6 px focus ring, and keyboard focus stops clear of the edges */
   padding-inline: var(--space-2);

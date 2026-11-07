@@ -137,3 +137,28 @@ test('from 600 px the previous and next card sit beside the breadcrumb, in the o
   await page.goto('it/e/coagulative-necrosis/?via=system:heart');
   await expect(pager.getByRole('link', { name: 'Scheda successiva: Steatosi (degenerazione grassa)' })).toHaveAttribute('href', /\/fatty-change\/\?via=system:heart$/);
 });
+
+test('the sidebar chapter index opens on the current card and fades where it hides cards', async ({ page }) => {
+  test.skip(width() < 1024, 'the sidebar shows its index from 1024 px');
+  await page.goto('it/e/metaplasia/'); // 17th of 26: below the first screenful of the index
+  const tree = page.locator('.primary-nav .module-tree');
+  // The current card and the one after it are inside the index's box, which scrolled; the page did not.
+  const shown = () =>
+    tree.evaluate((t) => {
+      const box = t.getBoundingClientRect();
+      const inside = (a: Element | null | undefined) => !!a && a.getBoundingClientRect().top >= box.top && a.getBoundingClientRect().bottom <= box.bottom;
+      const cur = t.querySelector('a[aria-current]');
+      return t.scrollTop > 0 && inside(cur) && inside(cur?.closest('li')?.nextElementSibling?.querySelector('a'));
+    });
+  await expect.poll(shown).toBe(true);
+  expect(await page.evaluate(() => scrollY)).toBe(0);
+  await expect(tree).toHaveAttribute('data-fade', /start/);
+  expect(await tree.evaluate((t) => getComputedStyle(t).maskImage)).toContain('gradient');
+  // Scrolled back to the top, only the bottom edge fades; collapsed and expanded, it opens on the card again.
+  await tree.evaluate((t) => (t.scrollTop = 0));
+  await expect(tree).toHaveAttribute('data-fade', 'end');
+  await page.locator('[data-sidebar-toggle]').click();
+  await page.evaluate(() => new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)))); // a person is slower than a frame
+  await page.locator('[data-sidebar-toggle]').click();
+  await expect.poll(shown).toBe(true);
+});
