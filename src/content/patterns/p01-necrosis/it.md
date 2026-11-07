@@ -1,6 +1,6 @@
 ---
 lang: it
-translatedFrom: e686fea2fd62bbc99c75ce44d4242fd82528d6df7bd4963ce7a4416f7a8996ce
+translatedFrom: 33c8d93f6ed074be6ed8815e337cdeb5431a4b9c308713dc514958509022000c
 ---
 
 ## Panoramica
@@ -21,7 +21,7 @@ Il quadro dipende da ciò che accade dopo alle cellule morte: se le loro protein
 
 ### Necrosi coagulativa
 
-La lesione modello è l'infarto: l'occlusione di un'arteria terminale provoca necrosi coagulativa del tessuto a valle.<!--c:p01-necrosis-c011--> Gli infarti pallidi, con necrosi coagulativa uniforme, sono tipici di cuore, rene e milza; nella milza formano cunei sotto la capsula e nel rene l'area pallida raggiunge la superficie capsulare.<!--c:p01-necrosis-c012--> Nel miocardio le fibre morte appaiono già di un rosa intenso circa 24 ore dopo l'infarto, ma solo dopo parecchi giorni tutti i loro nuclei sono scomparsi.<!--c:p01-necrosis-c013--> Il rene offre altri due esempi: la necrosi corticale diffusa nello shock grave, classicamente dopo distacco intempestivo di placenta, e la necrosi papillare nella nefropatia da analgesici.<!--c:p01-necrosis-c014--> Solo dosi di radiazioni molto elevate, ben oltre 10 Gy, uccidono direttamente le cellule in breve tempo, e al microscopio nulla rivela la causa: il quadro è quello di una comune necrosi coagulativa.<!--c:p01-necrosis-c015-->
+La lesione modello è l'infarto: l'occlusione di un'arteria terminale provoca necrosi coagulativa del tessuto a valle.<!--c:p01-necrosis-c011--> Gli infarti pallidi, con necrosi coagulativa uniforme, sono tipici di cuore, rene e milza; nella milza formano cunei sotto la capsula e nel rene l'area pallida raggiunge la superficie capsulare.<!--c:p01-necrosis-c012--> Nel miocardio le fibre morte appaiono già di un rosa intenso circa 24 ore dopo l'infarto, ma solo dopo parecchi giorni tutti i loro nuclei sono scomparsi.<!--c:p01-necrosis-c013--> Il rene offre altri due esempi: la necrosi corticale diffusa nello shock grave, classicamente dopo distacco intempestivo di placenta, e la necrosi papillare nella nefropatia da analgesici.<!--c:p01-necrosis-c014--> Per uccidere direttamente le cellule in breve tempo serve una dose di radiazioni molto superiore a 10 Gy, e al microscopio nulla rivela la causa: il quadro è quello di una comune necrosi coagulativa.<!--c:p01-necrosis-c015-->
 
 ### Necrosi colliquativa
 

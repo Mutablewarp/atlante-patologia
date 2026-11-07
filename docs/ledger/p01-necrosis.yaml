@@ -118,11 +118,11 @@ claims:
     date: 2026-11-04
   - claimId: p01-necrosis-c015
     section: pathogenesis
-    statement: "Only very large radiation doses, well above 10 Gy, kill cells outright within a short time, and the result looks like coagulative necrosis of any other cause."
+    statement: "Killing cells outright within a short time takes a radiation dose much higher than 10 Gy; the necrosis that follows is coagulative and has no feature that reveals its cause."
     sourceRef: { source: rubin-8e, chapter: "8", pages: "365" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent (wording from the independent verifier's report of 2026-11-04, rechecked against the cited pages)"
+    verifier: "fixer-agent (reworded in its own structure after the second review flagged a close paraphrase, 2026-11-04; checked against the cited page)"
     date: 2026-11-04
   - claimId: p01-necrosis-c016
     section: definition
@@ -457,11 +457,11 @@ claims:
     date: 2026-11-04
   - claimId: p01-necrosis-c057
     section: gross
-    statement: "In gas gangrene the skin over the lesion turns tense, because oedema and gas swell the soft tissue beneath it, and dark, from bleeding and necrosis of the skin."
+    statement: "Gas gangrene shows on the skin above it: gas and fluid collecting in the deeper soft tissue stretch that skin tight, and it darkens as it bleeds and dies."
     sourceRef: { source: rubin-8e, chapter: "9", pages: "429" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent (matrix cell claim added after the independent verifier's report of 2026-11-04, checked against the cited page)"
+    verifier: "fixer-agent (reworded in its own structure after the second review flagged a close paraphrase, 2026-11-04; checked against the cited page)"
     date: 2026-11-04
   - claimId: p01-necrosis-c058
     section: micro
@@ -473,11 +473,11 @@ claims:
     date: 2026-11-04
   - claimId: p01-necrosis-c059
     section: gross
-    statement: "Bleeding into the surviving tissue at its edge gives a pale infarct a dark-red rim; inside, after one or two days, the dead zone is soft, well defined and yellowish."
+    statement: "Over the first one to two days the dead zone of a pale infarct softens and fades to a clearly bounded yellow, while blood leaking into the living tissue around it frames it in dark red."
     sourceRef: { source: rubin-8e, chapter: "7", pages: "337" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent (matrix cell claim added after the independent verifier's report of 2026-11-04, checked against the cited page)"
+    verifier: "fixer-agent (reworded in its own structure after the second review flagged a close paraphrase, 2026-11-04; checked against the cited page)"
     date: 2026-11-04
   - claimId: p01-necrosis-c060
     section: pathogenesis
@@ -489,11 +489,11 @@ claims:
     date: 2026-11-04
   - claimId: p01-necrosis-c061
     section: gross
-    statement: "To the naked eye caseous material looks like cheese: whitish-grey, soft and crumbly."
+    statement: "The name says it: to the naked eye the dead centre resembles cheese, a pale material that breaks up easily."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "40" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent (matrix cell claim added after the independent verifier's report of 2026-11-04, checked against the cited page)"
+    verifier: "fixer-agent (reworded in its own structure after the second review flagged a close paraphrase, 2026-11-04; checked against the cited page)"
     date: 2026-11-04
   - claimId: p01-necrosis-c062
     section: clinical
@@ -505,9 +505,9 @@ claims:
     date: 2026-11-04
   - claimId: p01-necrosis-c063
     section: gross
-    statement: "Red-and-yellow mottling of the cut surface, sometimes with small cortical infarcts, marks the kidney in malignant hypertension."
+    statement: "Where malignant hypertension has injured the small renal vessels, thrombosis can leave small infarcts in the cortex; cut open, such a kidney looks blotched with red and yellow."
     sourceRef: { source: rubin-8e, chapter: "22", pages: "951" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent (matrix cell claim added after the independent verifier's report of 2026-11-04, checked against the cited page)"
-    date: 2026-11-04
+    verifier: "fixer-agent (reworded again, cause first, after the second review found the 2026-11-04 wording still followed the reference point by point; checked against the cited page)"
+    date: 2026-11-07
