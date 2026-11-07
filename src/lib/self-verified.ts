@@ -15,7 +15,6 @@ export type SelfVerified = {
 };
 
 export const SELF_VERIFIED: readonly SelfVerified[] = [
-  { ledger: 'pathway-intrinsic-apoptosis', claims: 4, name: { it: 'Via intrinseca dell’apoptosi', en: 'Intrinsic apoptosis pathway' }, path: 'pathways/intrinsic-apoptosis/' },
   { ledger: 'p01-necrosis', claims: 1, name: { it: 'Tipi di necrosi (quadro trasversale)', en: 'Types of necrosis (pattern page)' }, path: 'pattern/p01-necrosis/' },
   { ledger: 'apoptosis', claims: 2, name: { it: 'Apoptosi', en: 'Apoptosis' }, path: 'e/apoptosis/' },
   { ledger: 'coagulative-necrosis', claims: 21, name: { it: 'Necrosi coagulativa', en: 'Coagulative necrosis' }, path: 'e/coagulative-necrosis/' },

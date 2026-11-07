@@ -14,8 +14,8 @@ steps:
     title: { it: "Stress dentro la cellula", en: "Stress inside the cell" }
     short: { it: "Stress cellulare", en: "Cell stress" }
     text:
-      it: "La via intrinseca è un programma di suicidio che la cellula avvia quando è lei stessa sotto stress.<!--c:intrinsic-apoptosis-c001--> Inneschi tipici sono un danno al DNA troppo grave per essere riparato, segnalato soprattutto tramite p53, e una liberazione prolungata di calcio dal reticolo endoplasmatico.<!--c:intrinsic-apoptosis-c002-->"
-      en: "The intrinsic pathway is a suicide program that a cell starts when it is itself under stress.<!--c:intrinsic-apoptosis-c001--> Typical triggers are DNA damage too severe to repair, relayed mainly through p53, and prolonged release of calcium from the endoplasmic reticulum.<!--c:intrinsic-apoptosis-c002-->"
+      it: "La via intrinseca è un programma di suicidio che la cellula avvia quando è lei stessa sotto stress.<!--c:intrinsic-apoptosis-c001--> Inneschi tipici sono un danno al DNA irreparabile, segnalato soprattutto tramite p53, e una liberazione prolungata di calcio dal reticolo endoplasmatico.<!--c:intrinsic-apoptosis-c002-->"
+      en: "The intrinsic pathway is a suicide program that a cell starts when it is itself under stress.<!--c:intrinsic-apoptosis-c001--> Typical triggers are irreparable DNA damage, signalled mainly via p53, and prolonged calcium release from the endoplasmic reticulum.<!--c:intrinsic-apoptosis-c002-->"
   - id: bh3-only
     title: { it: "Si accendono le proteine solo-BH3", en: "BH3-only proteins switch on" }
     short: { it: "Proteine solo-BH3", en: "BH3-only proteins" }
@@ -76,8 +76,8 @@ steps:
     title: { it: "Entrano in gioco le caspasi esecutrici", en: "Executioner caspases take over" }
     short: { it: "Caspasi-3 e -7", en: "Caspases-3 and -7" }
     text:
-      it: "La caspasi-9 attiva taglia e attiva le procaspasi esecutrici -3 e -7, e la caspasi-3 attiva poi la caspasi-6; la caspasi-3 è quella attivata più spesso.<!--c:intrinsic-apoptosis-c017--> Le caspasi esecutrici tagliano molte proteine, ciascuna subito dopo un aspartato all’interno di un breve motivo preferito: la caspasi-3 predilige sequenze del tipo DExD, come DEVD, il motivo dell’inibitore nel modello 3D.<!--c:intrinsic-apoptosis-c018--> Arrivati a questo punto la cellula quasi sempre muore.<!--c:intrinsic-apoptosis-c023-->"
-      en: "Active caspase-9 cleaves and activates the executioner procaspases-3 and -7, and caspase-3 then activates caspase-6; caspase-3 is the one activated most often.<!--c:intrinsic-apoptosis-c017--> Executioner caspases cut many proteins, each just after an aspartate within a short preferred motif: caspase-3 favours sequences of the form DExD, such as DEVD, the motif of the inhibitor in the 3D model.<!--c:intrinsic-apoptosis-c018--> Once this stage is reached the cell almost always dies.<!--c:intrinsic-apoptosis-c023-->"
+      it: "La caspasi-9 attiva taglia e attiva le procaspasi esecutrici -3 e -7, e la caspasi-3 attiva poi la caspasi-6; la caspasi-3 è quella attivata più spesso.<!--c:intrinsic-apoptosis-c017--> Le caspasi esecutrici tagliano molte proteine, ciascuna subito dopo un aspartato all’interno di un breve motivo preferito: la caspasi-3 predilige sequenze del tipo DExD, come DEVD, il motivo dell’inibitore nel modello 3D.<!--c:intrinsic-apoptosis-c018--> Finché lo stimolo persiste, da questo punto la cellula va incontro alla morte.<!--c:intrinsic-apoptosis-c023-->"
+      en: "Active caspase-9 cleaves and activates the executioner procaspases-3 and -7, and caspase-3 then activates caspase-6; caspase-3 is the one activated most often.<!--c:intrinsic-apoptosis-c017--> Executioner caspases cut many proteins, each just after an aspartate within a short preferred motif: caspase-3 favours sequences of the form DExD, such as DEVD, the motif of the inhibitor in the 3D model.<!--c:intrinsic-apoptosis-c018--> As long as the trigger persists, the cell goes on to die from this point.<!--c:intrinsic-apoptosis-c023-->"
     sourcesDiffer:
       it: "Le fonti divergono: il testo di riferimento indica che la caspasi-9 attiva direttamente anche la caspasi-6, che le caspasi esecutrici tagliano le proteine senza selezione e che il processo è irreversibile; in estratti cellulari la caspasi-6 si attiva a valle della caspasi-3, le caspasi riconoscono motivi di sequenza precisi, e in coltura la maggior parte delle cellule si è ripresa dopo l’attivazione della caspasi-3, una volta rimosso lo stimolo.<!--c:intrinsic-apoptosis-c017--><!--c:intrinsic-apoptosis-c018--><!--c:intrinsic-apoptosis-c023-->"
       en: "Sources differ: the reference has caspase-9 activate caspase-6 directly as well, has executioner caspases cut proteins indiscriminately, and calls the process irreversible; in cell extracts caspase-6 is activated downstream of caspase-3, caspases recognise specific sequence motifs, and in culture most cells recovered after caspase-3 activation once the trigger was removed.<!--c:intrinsic-apoptosis-c017--><!--c:intrinsic-apoptosis-c018--><!--c:intrinsic-apoptosis-c023-->"
@@ -108,5 +108,5 @@ sources:
   - { source: thornberry-1997 }
   - { source: tang-2012 }
 reviewStatus: ai-generated-unreviewed
-lastUpdated: 2026-11-04
+lastUpdated: 2026-11-07
 status: published

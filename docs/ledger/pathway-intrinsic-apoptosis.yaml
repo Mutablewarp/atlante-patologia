@@ -1,7 +1,7 @@
 # Claim ledger for the pathway src/content/pathways/intrinsic-apoptosis.yaml (CONTENT_SCHEMA §8).
 # `section` = step id. Printed pages of the reference (PDF page - 24).
-# Independent re-check 2026-11-04 by a fresh-context verifier ("independent-verifier-agent"); rows reworded after
-# that report keep the fixer's id and are listed on the Method page (src/lib/self-verified.ts).
+# Independent re-checks 2026-11-04 and 2026-11-07 by a fresh-context verifier ("independent-verifier-agent"); a row
+# whose final wording is the fixer's own keeps the fixer's id and is listed on the Method page (src/lib/self-verified.ts).
 entity: pathway-intrinsic-apoptosis
 claims:
   - claimId: intrinsic-apoptosis-c001
@@ -18,8 +18,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "1", pages: "47, 49, 51" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent (wording from the independent verifier's report of 2026-11-04, rechecked against the cited pages)"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-07
   - claimId: intrinsic-apoptosis-c003
     section: bh3-only
     statement: "Stress signals act mostly through BH3-only members of the BCL-2 family such as BIM, BID, BAD, PUMA and NOXA."
@@ -31,11 +31,11 @@ claims:
   - claimId: intrinsic-apoptosis-c004
     section: bh3-only
     statement: "BH3-only proteins are switched on in several ways, among them increased transcription and a change in conformation; p53 raises PUMA and NOXA transcription."
-    sourceRef: { source: rubin-8e, chapter: "1", pages: "47, 49-50" }
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "49-50" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent (wording from the independent verifier's report of 2026-11-04, rechecked against the cited pages)"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-07
   - claimId: intrinsic-apoptosis-c005
     section: bcl2-balance
     statement: "In a healthy cell anti-apoptotic BCL-2, BCL-xL and MCL-1 inhibit BAK (mainly mitochondrial) and BAX (largely cytoplasmic); the default is survival."
@@ -63,12 +63,12 @@ claims:
     date: 2026-11-04
   - claimId: intrinsic-apoptosis-c008
     section: bax-bak
-    statement: "Freed or directly activated BAX (mostly cytosolic) and BAK (mostly mitochondrial) form channels in the outer mitochondrial membrane, permeabilising it."
-    sourceRef: { source: rubin-8e, chapter: "1", pages: "49, 52" }
+    statement: "Once released from their anti-apoptotic partners, or switched on directly by BH3-only proteins, BAX (mostly cytosolic) and BAK (mostly mitochondrial) assemble into pores that permeabilise the outer mitochondrial membrane."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "49, 51-52" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent (reworded after the independent verifier's report of 2026-11-04 to match step 3; rechecked against the cited pages)"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-07
   - claimId: intrinsic-apoptosis-c009
     section: bax-bak
     statement: "In soluble, inactive BAX the C-terminal helix alpha9 occupies the hydrophobic groove used for binding between BCL-2 family members."
@@ -188,10 +188,10 @@ claims:
     date: 2026-11-04
   - claimId: intrinsic-apoptosis-c023
     section: executioners
-    statement: "Once executioner caspases are active the cell almost always dies."
-    sourceRef: { source: rubin-8e, chapter: "1", pages: "46" }
+    statement: "While the trigger persists, a cell whose executioner caspases are active goes on to die."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "46, 48" }
     status: sources-differ
-    secondSource: { source: tang-2012, locator: "abstract: in culture most cells recovered after caspase-3 activation once the inducer was washed out (the reference calls apoptosis irreversible)" }
+    secondSource: { source: tang-2012, locator: "abstract + Results (Suppl. Fig. S3): with the inducer left in place virtually all cultured cells died; after washout the vast majority recovered despite caspase-3 activation (the reference calls apoptosis irreversible)" }
     verifiedBy: agent
-    verifier: "fixer-agent (aside reworded from the independent verifier's report of 2026-11-04, rechecked against the abstract)"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-07
