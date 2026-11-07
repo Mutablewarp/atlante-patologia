@@ -116,7 +116,7 @@
   background: var(--hema);
   color: var(--on-hema);
 }
-/* Wider screens: the folded tools sit in the toolbar row; the study actions take a row of their own */
+/* Opened, the tools join the toolbar row; the study actions take a row of their own */
 .toolbar-more {
   display: contents;
 }
@@ -124,13 +124,31 @@
   flex-basis: 100%;
   margin: 0;
 }
+/* Bookmark and quiz: in the toolbar row from 600 px, behind "Tools" with the other study actions on phones.
+   Two copies, one shown at a time, so the tab order follows what is on screen at every width. */
+.entity-pinned {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+@media (max-width: 599px) {
+  .entity-pinned {
+    display: none;
+  }
+}
+@media (min-width: 600px) {
+  .entity-actions [data-pinned] {
+    display: none;
+  }
+}
 
-/* Phones: the lens chips, the less used tools and the learning objectives fold behind a toggle, closed
-   from the first paint (CSS only, so nothing moves) and only with JS; the card text starts about a screen down */
+/* The lens chips, the less used tools and the learning objectives fold behind a toggle at every width, closed
+   from the first paint (CSS only, so nothing moves) and only with JS: the card text starts on the first screen
+   of a tablet or a computer, and about a screen down on phones. Without JS everything shows, as before. */
 html .fold-toggle {
   display: none;
 }
-@media screen and (max-width: 599px) {
+@media screen {
   html.js .fold-toggle {
     display: inline-flex;
     align-items: center;
@@ -159,20 +177,13 @@ html .fold-toggle {
   .lens-chips {
     margin-top: var(--space-2);
   }
-  /* Quick/Full, A−/A+ and the tools toggle fit one row from 375 px */
-  .entity-toolbar :is(.segmented button, .btn-small) {
-    padding-inline: var(--space-2);
-  }
-  .entity-toolbar .text-size .btn {
-    min-width: 2.25rem;
-  }
-  .objectives {
+  html.js .objectives {
     padding-block: var(--space-2);
   }
   html.js .objectives h2 {
     margin: 0;
   }
-  .objectives ul {
+  html.js .objectives ul {
     padding-bottom: var(--space-3);
   }
   /* The title itself is the toggle, full width, in the kicker style */
@@ -187,6 +198,30 @@ html .fold-toggle {
     text-transform: inherit;
     text-align: left;
     cursor: pointer;
+  }
+}
+/* Quick/Full, A−/A+ and the tools toggle fit one row from 375 px; with the bookmark and the quiz, from 768 px,
+   where A− and A+ go square */
+@media screen and (max-width: 1023px) {
+  .entity-toolbar :is(.segmented button, .btn-small) {
+    padding-inline: var(--space-2);
+  }
+  .entity-toolbar .text-size .btn {
+    min-width: 2.25rem;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .entity-toolbar .text-size .btn {
+    min-width: 2rem;
+    padding-inline: var(--space-1);
+  }
+}
+@media screen and (max-width: 599px) {
+  .objectives {
+    padding-block: var(--space-2);
+  }
+  .objectives ul {
+    padding-bottom: var(--space-3);
   }
 }
 
@@ -291,6 +326,16 @@ html .fold-toggle {
 .edition-note {
   max-width: var(--measure);
   margin-bottom: var(--space-5);
+}
+/* Tablets and computers: the folded header and the objectives bar sit closer to the text, so the first sentence
+   of the card is on the first screen (iPad landscape included) */
+@media screen and (min-width: 600px) {
+  .entity-head {
+    margin-bottom: var(--space-4);
+  }
+  .objectives {
+    margin-bottom: var(--space-4);
+  }
 }
 
 .entity-section {

@@ -463,10 +463,10 @@ ap-path-progress progress {
   margin: var(--space-3) 0;
 }
 /* Hidden (space kept) until the learner's data is loaded; stays hidden without IndexedDB. */
-.entity-actions:not([data-ready]) {
+:is(.entity-actions, .entity-pinned):not([data-ready]) {
   visibility: hidden;
 }
-.entity-actions [aria-pressed='true'] {
+:is(.entity-actions, .entity-pinned) [aria-pressed='true'] {
   background: var(--hema-soft);
   border-color: var(--hema);
   color: var(--hema-ink);

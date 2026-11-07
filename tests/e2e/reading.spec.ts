@@ -3,7 +3,7 @@
  * AI line in every footer; sections open by default with "Continue" links;
  * A-/A+ reading size remembered and applied before paint; reading progress;
  * section chips that follow the scroll, on entity and pattern pages; a light
- * entity header on phones; differential tables in a labelled scroll region;
+ * entity header at every width; differential tables in a labelled scroll region;
  * form fields never below 16 px (no iOS zoom).
  */
 import { expect, test, type Page } from '@playwright/test';
@@ -122,8 +122,8 @@ test('sections are open by default, end with "Continue", and the reading control
   await expect(page.locator('#differential')).toBeInViewport();
   await page.locator('[data-mode-btn="full"]').click();
 
-  // Collapse all / expand all (on phones, behind the tools toggle).
-  if (width() < 600) await page.getByRole('button', { name: 'Strumenti' }).click();
+  // Collapse all / expand all (behind the tools toggle at every width).
+  await page.getByRole('button', { name: 'Strumenti' }).click();
   const all = page.locator('[data-expand-all]');
   await all.click();
   for (const t of await toggles.all()) await expect(t).toHaveAttribute('aria-expanded', 'false');
@@ -191,11 +191,11 @@ test('the site name in the top bar is shown whole or as "Atlante", never cut, at
     }
 });
 
-test('at the larger reading sizes no card scrolls sideways on phones, folded toggles included', async ({ page }) => {
-  test.skip(width() >= 600, 'the lens toggle folds only below 600 px');
+test('at the larger reading sizes no card scrolls sideways, folded toggles included', async ({ page }) => {
   // The folded "Lenti (n)" toggle floats beside the badges: a badge that does not fit must move below it.
+  // Phones are checked down to 320 px; wider projects at their own width.
   for (const path of [ENTITY, 'en/e/coagulative-necrosis/', 'it/e/other-regulated-cell-death/'])
-    for (const w of [320, 360, 375])
+    for (const w of width() < 600 ? [320, 360, 375] : [width()])
       for (const size of ['l', 'xl']) {
         await page.setViewportSize({ width: w, height: 700 });
         await page.addInitScript((s) => localStorage.setItem('ap-text', s), size);
@@ -278,19 +278,18 @@ test('the pattern page has the contents of entity pages: chips on phones and tab
   await expect(toc.locator('a[aria-current]')).toHaveCount(1);
 });
 
-test('on phones the card text starts about a screen down: lenses, tools and objectives fold behind toggles', async ({ page }) => {
+test('lenses, less used tools and objectives fold behind toggles at every width, closed from the first paint', async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem('ap-disclaimer', '1')); // past the one-time first-launch notice
   await page.goto(ENTITY);
-  const folds = page.locator('[data-fold]');
-  await expect(folds).toHaveCount(3);
-  if (width() >= 600) {
-    for (const f of await folds.all()) await expect(f).toBeHidden();
-    for (const shown of ['.lens-chips', '#entity-tools [data-print]', '#objectives-list']) await expect(page.locator(shown)).toBeVisible();
-    return;
-  }
-  // The first paragraph of the definition was 2.1-2.7 phone screens down; now about one (844 px tall phone).
-  const top = await page.locator('#definition .section-body p').first().evaluate((p) => p.getBoundingClientRect().top + scrollY);
-  expect(top).toBeLessThan(844 * 1.25);
+  await expect(page.locator('[data-fold]')).toHaveCount(3);
+  // Phones: the first paragraph of the definition was 2.1-2.7 phone screens down; now about one (844 px tall phone).
+  // Tablets and computers: its first line is on the first screen (it was 1.2-1.7 screens down).
+  const [top, bottom, screen] = await page
+    .locator('#definition .section-body p')
+    .first()
+    .evaluate((p) => [p.getBoundingClientRect().top + scrollY, p.getBoundingClientRect().top + scrollY + parseFloat(getComputedStyle(p).lineHeight), innerHeight]);
+  if (width() < 600) expect(top).toBeLessThan(844 * 1.25);
+  else expect(bottom).toBeLessThanOrEqual(screen);
   for (const [name, inside] of [
     [/^Lenti \(\d+\)$/, '.lens-chips'],
     ['Strumenti', '#entity-tools [data-print]'],
@@ -306,6 +305,26 @@ test('on phones the card text starts about a screen down: lenses, tools and obje
   // The study actions open with the tools.
   await expect(page.locator('#entity-tools .entity-actions')).toBeAttached();
   await expect(page.locator('#entity-tools .entity-actions')).not.toHaveCSS('display', 'none');
+  // Bookmark and quiz: in the toolbar row from 600 px (one copy only in the accessibility tree), behind "Tools" on phones.
+  const bookmark = page.getByRole('button', { name: /Segnalibro/ });
+  const quiz = page.getByRole('link', { name: 'Quiz su questa scheda' });
+  await expect(bookmark).toHaveCount(1);
+  await expect(quiz).toHaveCount(1);
+  for (const control of [bookmark, quiz]) {
+    expect(await control.evaluate((el) => !!el.closest('#entity-tools')), 'inside the tools fold').toBe(width() < 600);
+    await expect(control).toBeVisible();
+  }
+});
+
+test('the reading toolbar keeps one row from 768 px: mode, A-/A+, bookmark, quiz and tools', async ({ page }) => {
+  test.skip(width() < 768, 'phones: mode, A-/A+ and tools only (the bookmark and the quiz are behind the tools)');
+  await page.goto(ENTITY);
+  const boxes = await page
+    .locator('.entity-toolbar :is(.segmented, .text-size, .entity-pinned > *, .fold-toggle)')
+    .evaluateAll((els) => els.filter((e) => e.checkVisibility()).map((e) => e.getBoundingClientRect().toJSON() as DOMRect));
+  expect(boxes).toHaveLength(5); // Quick/Full, the A-/A+ pair, bookmark, quiz, tools
+  const tops = boxes.map((b) => b.top);
+  expect(Math.max(...tops) - Math.min(...tops), 'one row').toBeLessThan(boxes[0]!.height / 2);
 });
 
 test('the reading measure holds 62-70 characters per line on tablets and computers', async ({ page }) => {

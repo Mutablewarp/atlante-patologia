@@ -35,6 +35,8 @@ async function openData(page: Page) {
 test('entity actions feed review, bookmarks, resume and the Me pages', async ({ page }) => {
   const foreign = guardRequests(page);
   await page.goto('it/e/fixture-demo/');
+  // "Add to review" sits behind the tools toggle; the bookmark stays in the toolbar row (1280 px).
+  await page.getByRole('button', { name: 'Strumenti' }).click();
   const add = page.getByRole('button', { name: 'Aggiungi al ripasso' });
   await add.click();
   await expect(page.getByRole('button', { name: /Nel ripasso \(7\)/ })).toHaveAttribute('aria-pressed', 'true');

@@ -1,5 +1,8 @@
 ---
-/** Entity header: all names, summary, lens chips, badges, reading toolbar with the study actions (default slot). */
+/**
+ * Entity header: all names, summary, lens chips, badges, reading toolbar with the study actions (default slot,
+ * behind "Tools") and the bookmark and quiz kept in the toolbar row from 600 px (slot "pinned").
+ */
 import type { Lang } from '../../i18n/index.ts';
 import { formatDate, fmt, otherLang } from '../../i18n/index.ts';
 import { tEntity } from '../../i18n/pages.ts';
@@ -43,7 +46,7 @@ const synonyms = [...n.synonyms[lang], ...n.synonyms[other]];
   </dl>
   <p class="lede">{entity.summary[lang]}</p>
 
-  {/* Phones: the chips fold behind this toggle, like the tools below (entity.css) */}
+  {/* The chips fold behind this toggle, like the tools below and the objectives (entity.css) */}
   <button type="button" class="btn btn-small fold-toggle js-only" aria-expanded="false" aria-controls="lens-chips" data-fold>
     {fmt(t('lensToggle'), { n: chips.length })}<span class="chevron" aria-hidden="true"></span>
   </button>
@@ -81,7 +84,8 @@ const synonyms = [...n.synonyms[lang], ...n.synonyms[other]];
       <button type="button" data-mode-btn="full" aria-pressed="true">{t('full')}</button>
     </div>
     <TextSize lang={lang} />
-    {/* Phones: the other tools and the study actions (slot) fold behind this toggle; wider screens show them in the row */}
+    <slot name="pinned" />
+    {/* The other tools and the study actions (slot) fold behind this toggle */}
     <button type="button" class="btn btn-small fold-toggle" aria-expanded="false" aria-controls="entity-tools" data-fold>
       {t('tools')}<span class="chevron" aria-hidden="true"></span>
     </button>
