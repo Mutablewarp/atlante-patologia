@@ -3,7 +3,8 @@ import { createEmptyCard } from 'ts-fsrs';
 import { clozeCards, qaCards, occlusionCards, cardId, listItems } from '../src/lib/cards.ts';
 import { buildQueue, rate, toStored, toCard, Rating, State, type CardRecord } from '../src/lib/srs.ts';
 import { emptyFsrs, entitiesRead, SECTION_COUNT, dueCount, isMastered, parseIdList } from '../src/lib/progress.ts';
-import { mergeRecords, makeExport, checkExport, isImportable, reminderDue, SCHEMA_VERSION } from '../src/lib/db.ts';
+import { mergeRecords, makeExport, reminderDue, SCHEMA_VERSION } from '../src/lib/db.ts';
+import { checkExport, isImportable } from '../src/lib/import-check.ts';
 import { buildPlan } from '../src/lib/planner.ts';
 import { interleave, weakQuestions, entityAccuracy } from '../src/lib/quiz.ts';
 

@@ -3,7 +3,8 @@ import { readFileSync } from 'node:fs';
 import { parse } from 'yaml';
 import { calibration, overconfident, luckyGuesses, advice, pct, type Judged } from '../src/lib/metacog.ts';
 import { drawQuestions, isOralSession, oralCalibration, rubricMean, type OralItem, type OralQuestion } from '../src/lib/oral.ts';
-import { checkExport, isImportable, makeExport, sha256, storesToCreate, STORES, DB_VERSION, SCHEMA_VERSION, STORES_ADDED_IN, type StoreName } from '../src/lib/db.ts';
+import { makeExport, sha256, storesToCreate, STORES, DB_VERSION, SCHEMA_VERSION, STORES_ADDED_IN, type StoreName } from '../src/lib/db.ts';
+import { checkExport, isImportable } from '../src/lib/import-check.ts';
 import { entitySchema } from '../src/lib/schema.ts';
 
 const j = (entity: string, confidence: 1 | 2 | 3 | undefined, correct: boolean): Judged => ({ entities: [entity], confidence, correct });
