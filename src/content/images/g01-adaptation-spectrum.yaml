@@ -1,5 +1,6 @@
 id: g01-adaptation-spectrum
 file: g01-adaptation-spectrum.svg
+fileIt: g01-adaptation-spectrum.it.svg
 kind: diagram
 sourceUrl: https://github.com/Mutablewarp/atlante-patologia/blob/main/src/assets/images/g01-adaptation-spectrum.svg
 author: Atlante di Patologia contributors
@@ -7,7 +8,9 @@ license: original
 licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
 retrievedAt: 2026-10-10
 modifications: none
-attributionText: "Original diagram: Atlante di Patologia contributors, CC BY-SA 4.0"
+attributionText:
+  it: "Schema originale: collaboratori dell’Atlante di Patologia"
+  en: "Original diagram: Atlante di Patologia contributors"
 patientIdentifiable: false
 ownerApproved: false
 verifiedBy: { who: agent, name: content-agent g01 (checked against rubin-8e ch. 1), date: 2026-10-10 }

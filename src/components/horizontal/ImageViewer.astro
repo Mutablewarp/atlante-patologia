@@ -16,7 +16,7 @@ import type { imageSchema } from '../../lib/schema.ts';
 import type { z } from 'astro/zod';
 import { readFile } from 'node:fs/promises';
 import { PREVIEW_DRAFTS, images } from '../../lib/content.ts';
-import { groupMembers, powerOf, stainCode } from '../../lib/image-meta.ts';
+import { attributionFor, fileFor, groupMembers, licenseName, powerOf, stainCode } from '../../lib/image-meta.ts';
 import '../../styles/viewer.css';
 
 type Img = z.infer<typeof imageSchema>;
@@ -32,17 +32,18 @@ const t = (k: Parameters<typeof tHz>[1]) => tHz(lang, k);
 const files = import.meta.glob<{ default: ImageMetadata }>(['../../assets/images/**/*.{png,jpg,jpeg,webp,avif,gif,svg}', '!**/_*']);
 
 async function load(img: Img) {
-  const loader = files[`../../assets/images/${img.file}`];
+  const file = fileFor(img, lang);
+  const loader = files[`../../assets/images/${file}`];
   const meta = loader ? (await loader()).default : undefined;
   // shortcut: fixture PNGs are inlined as data: URIs (PREVIEW_DRAFTS only), not optimized by astro:assets.
   const fixture =
-    !meta && img.file.startsWith('_') && PREVIEW_DRAFTS ? await readFile(`${process.cwd()}/src/assets/images/${img.file}`) : undefined;
+    !meta && file.startsWith('_') && PREVIEW_DRAFTS ? await readFile(`${process.cwd()}/src/assets/images/${file}`) : undefined;
   if (!meta && !fixture) return undefined;
   const W = meta?.width ?? fixture!.readUInt32BE(16);
   const H = meta?.height ?? fixture!.readUInt32BE(20);
   const notes = [...img.annotations].sort((a, b) => a.revealOrder - b.revealOrder);
   // Original diagrams are SVG: served as the emitted file at its intrinsic size (no raster srcset).
-  return { img, meta, fixture, W, H, notes, svg: img.file.endsWith('.svg') };
+  return { img, meta, fixture, W, H, notes, svg: file.endsWith('.svg') };
 }
 const members = image ? groupMembers(image.group ? await images() : [], image) : [];
 const panels = (await Promise.all(members.map(load))).filter((p) => p !== undefined);
@@ -226,7 +227,7 @@ const helpId = `viewer-help-${id}`;
               </p>
             )}
             <p class="small muted credit">
-              {t('credit')}: {img.attributionText} · <a href={img.licenseUrl}>{img.license}</a>
+              {t('credit')}: {attributionFor(img.attributionText, lang)} · <a href={img.licenseUrl}>{licenseName(img.license, lang)}</a>
               {img.modifications !== 'none' && ` · ${img.modifications[lang]}`}
             </p>
           </div>

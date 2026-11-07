@@ -3,6 +3,7 @@ import AboutPage from '../../../components/AboutPage.astro';
 import Bi from '../../../components/Bi.astro';
 import { langPaths, type Lang } from '../../../i18n/index.ts';
 import { images } from '../../../lib/content.ts';
+import { attributionFor, licenseName } from '../../../lib/image-meta.ts';
 import { structureById } from '../../../lib/pathways.ts';
 import { langPath } from '../../../lib/url.ts';
 
@@ -30,8 +31,8 @@ const structs = [...(await structureById()).values()].sort((a, b) => a.pdb.local
       <ul>
         {imgs.map((img) => (
           <li id={`img-${img.id}`}>
-            {img.attributionText} — <a href={img.sourceUrl} rel="noopener">{lang === 'it' ? 'fonte' : 'source'}</a>,{' '}
-            <a href={img.licenseUrl} rel="noopener">{img.license}</a>
+            {attributionFor(img.attributionText, lang)} — <a href={img.sourceUrl} rel="noopener">{lang === 'it' ? 'fonte' : 'source'}</a>,{' '}
+            <a href={img.licenseUrl} rel="noopener">{licenseName(img.license, lang)}</a>
             {img.modifications !== 'none' && ` · ${lang === 'it' ? 'modifiche' : 'changes'}: ${img.modifications[lang]}`}
           </li>
         ))}

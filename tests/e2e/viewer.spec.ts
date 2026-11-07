@@ -203,7 +203,13 @@ test('the original SVG diagrams render on the card, not the "not available yet" 
     for (const img of await diagrams.all()) {
       await img.scrollIntoViewIfNeeded();
       await expect.poll(() => img.evaluate((i: HTMLImageElement) => i.complete && i.naturalWidth), { message: path }).toBeGreaterThan(0);
+      // The words in the drawing are in the page language (an Italian copy of each of our diagrams).
+      expect(/\.it\.[\w-]+\.svg$/.test((await img.getAttribute('src'))!), path).toBe(path.startsWith('it/'));
     }
+    // Our credit line is in the page language, and its link names the licence.
+    const credit = page.locator('figure:has(img[src$=".svg"]) .credit').first();
+    await expect(credit).toContainText(path.startsWith('it/') ? 'Schema originale: collaboratori dell’Atlante di Patologia' : 'Original diagram');
+    await expect(credit.getByRole('link')).toHaveText('CC BY-SA 4.0');
   }
 });
 

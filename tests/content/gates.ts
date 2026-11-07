@@ -294,9 +294,11 @@ export function reviewGate(tree: Tree, parsed: Parsed): Problem[] {
 
 /** Gate 6: image files exist (licence and patientIdentifiable rules are schema-level, reported as gate "images"). */
 export function imagesGate(tree: Tree, parsed: Parsed): Problem[] {
-  return parsed.images
-    .filter(({ doc, data }) => !tree.assets.has(data.file) && !(isFixtureDoc(doc) && tree.fixtureAssets.has(data.file)))
-    .map(({ doc, data }) => ({ gate: 'images' as const, file: doc.path, message: `file "${data.file}" not found under src/assets/images` }));
+  return parsed.images.flatMap(({ doc, data }) =>
+    [data.file, ...(data.fileIt ? [data.fileIt] : [])]
+      .filter((f) => !tree.assets.has(f) && !(isFixtureDoc(doc) && tree.fixtureAssets.has(f)))
+      .map((f) => ({ gate: 'images' as const, file: doc.path, message: `file "${f}" not found under src/assets/images` })),
+  );
 }
 
 export function runGates(tree: Tree): { problems: Problem[]; stale: StaleTranslation[] } {

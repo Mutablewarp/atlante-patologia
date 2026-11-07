@@ -182,6 +182,7 @@ question = z.object({
 image = z.object({
   id: Id,
   file: z.string(),                                // path under src/assets/images
+  fileIt: z.string().optional(),                   // Italian copy of one of our diagrams whose drawing carries text (only license 'original')
   kind: z.enum(['gross','micro','diagram','imaging','clinical']),
   sourceUrl: z.string().url(),                     // the FILE page, not a search page
   author: z.string().min(1),                       // the creator, not merely the uploader
@@ -190,7 +191,7 @@ image = z.object({
   licenseUrl: z.string().url(),
   retrievedAt: z.coerce.date(),
   modifications: z.union([z.literal('none'), L]),  // 'none' or what we changed (crop, labels…), in both languages
-  attributionText: z.string().min(1),              // exact credit line shown under the image
+  attributionText: z.union([z.string().min(1), L]), // exact credit line shown under the image; { it, en } for our own (license 'original')
   patientIdentifiable: z.literal(false),
   ownerApproved: z.boolean().default(false),        // must be true for any CC-BY-SA-*
   verifiedBy: z.object({ who: z.enum(['agent','human']), name: z.string(), date: z.coerce.date() }),
@@ -217,6 +218,8 @@ image = z.object({
 - `magnification` keeps the source's wording; write `low power`, `medium power` (or `intermediate power`) or `high power` first so `powerOf()` can read it. Add `objective` only when the source names the objective.
 - `mpp` turns on the scale bar. Never estimate it: no stated calibration, no `mpp`, no scale bar.
 - `group`: every image of one lesion (same case or same teaching set) gets the same group id. The viewer shows a switch (radio group) labelled with stain · section · power · objective, ordered low to high power; each image keeps its own alt, labels, caption and credit. The zoom level is kept on switch and the position resets, because sections are not registered to each other. An entity or pattern lists **one** image of the group (the one shown first); the viewer finds the others, so do not list them again.
+
+**Our own diagrams** (`license: original`, shown as CC BY-SA 4.0) are drawn once per language when the drawing carries words: `file` is the English SVG, `fileIt` the Italian copy (`<name>.it.svg`, same drawing, translated labels, title and description), and each page shows the copy in its language (`fileFor()` in `src/lib/image-meta.ts`). Their credit line is `{ it, en }`. Like captions and alt text, the words in a drawing have no claim markers or ledger rows (the Method page says so).
 
 The Credits page and per-image credit lines are generated from these files. An image without complete data cannot be referenced. The entity uses a placeholder, and the gap is logged in `docs/MISSING_ASSETS.md`.
 
