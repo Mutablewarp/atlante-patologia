@@ -134,6 +134,41 @@ if (strip && spied.length) {
   spied.forEach((s) => spy.observe(s));
 }
 
+// ── Phones: reading down, the chip strip slides up behind the top bar; reading up, it comes back ─
+// Only a root attribute changes; entity.css moves the strip with a transform, so the layout never shifts.
+const chipStrip = document.querySelector<HTMLElement>('.section-toc');
+const chipLayout = chipStrip?.closest<HTMLElement>('.entity-layout');
+const topBar = document.querySelector<HTMLElement>('.topbar');
+if (chipStrip && chipLayout && topBar) {
+  const phone = matchMedia('(max-width: 599px)');
+  const STEP = 8; // px of scroll that count as a direction, not as jitter
+  let lastY = scrollY;
+  let queued = false;
+  const update = () => {
+    queued = false;
+    const y = scrollY;
+    // Stuck under the top bar only once its layout has scrolled under it; before that the strip is in the page flow.
+    if (!phone.matches || chipLayout.getBoundingClientRect().top >= topBar.getBoundingClientRect().bottom) {
+      delete root.dataset.chips;
+      lastY = y;
+      return;
+    }
+    if (Math.abs(y - lastY) < STEP) return;
+    if (y > lastY) root.dataset.chips = 'away';
+    else delete root.dataset.chips;
+    lastY = y;
+  };
+  addEventListener(
+    'scroll',
+    () => {
+      if (!queued) requestAnimationFrame(update);
+      queued = true;
+    },
+    { passive: true },
+  );
+  phone.addEventListener('change', update);
+}
+
 // ── Sidebar collapse (desktop) ──────────────────────────────────────────
 const sideBtn = document.querySelector<HTMLButtonElement>('[data-sidebar-toggle]');
 function syncSidebar() {

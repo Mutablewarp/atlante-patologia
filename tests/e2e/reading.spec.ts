@@ -219,6 +219,29 @@ test('reading progress and the section chips follow the scroll', async ({ page }
   if (width() < 1024) await expect(page.locator('.section-toc a[href="#traps"]')).toBeInViewport();
 });
 
+test('on phones the chip strip slides away while reading down and comes back reading up or on focus', async ({ page }) => {
+  test.skip(width() >= 600, 'only below 600 px, where the sticky chrome takes a fifth of the screen');
+  await page.goto(ENTITY);
+  const html = page.locator('html');
+  const strip = page.locator('.section-toc');
+  const bar = await page.locator('.topbar').evaluate((t) => t.getBoundingClientRect().bottom);
+  const stripBottom = () => strip.evaluate((s) => s.getBoundingClientRect().bottom);
+  // In the page flow at the top: scrolling a little never hides it.
+  await page.evaluate(() => scrollBy(0, 40));
+  await expect(html).not.toHaveAttribute('data-chips');
+  await page.evaluate(() => scrollBy(0, document.getElementById('pathogenesis')!.getBoundingClientRect().top));
+  await expect(html).toHaveAttribute('data-chips', 'away');
+  await expect.poll(stripBottom).toBeLessThanOrEqual(bar + 1); // behind the top bar
+  await page.evaluate(() => scrollBy(0, -120));
+  await expect(html).not.toHaveAttribute('data-chips');
+  await expect.poll(stripBottom).toBeGreaterThan(bar + 40);
+  // Away again, a focused chip brings the strip back (keyboard users never tab into a hidden strip).
+  await page.evaluate(() => scrollBy(0, 400));
+  await expect(html).toHaveAttribute('data-chips', 'away');
+  await strip.getByRole('link').first().focus();
+  await expect.poll(stripBottom).toBeGreaterThan(bar + 40);
+});
+
 test('the pattern page has the contents of entity pages: chips on phones and tablets, a side list on desktop', async ({ page }) => {
   await page.goto(PATTERN);
   const toc = page.getByRole('navigation', { name: 'On this page' });

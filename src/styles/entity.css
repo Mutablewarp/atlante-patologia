@@ -256,6 +256,20 @@ html .fold-toggle {
     scroll-padding-top: calc(var(--topbar-h) + env(safe-area-inset-top, 0px) + var(--chips-h) + var(--space-4));
   }
 }
+/* Phones: reading down, the stuck chip strip slides up behind the top bar and the text gets its rows back;
+   reading up, or with a chip focused, it comes back (shell.ts sets data-chips). A transform, so nothing in the
+   layout moves (CLS 0); still focusable while away, and focus brings it back. */
+@media screen and (max-width: 599px) {
+  .section-toc {
+    transition:
+      transform 0.25s var(--ease),
+      opacity 0.25s var(--ease);
+  }
+  :root[data-chips='away'] .section-toc:not(:focus-within) {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
 
 .entity-body {
   min-width: 0;
