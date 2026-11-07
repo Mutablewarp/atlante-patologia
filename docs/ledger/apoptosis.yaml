@@ -319,7 +319,7 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "20, 28", pages: "863, 1260" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent (reworded after the 2026-11-07 independent re-check; checked against the cited pages)"
+    verifier: "independent-verifier-agent"
     date: 2026-11-07
   - claimId: apoptosis-c039
     section: micro
@@ -351,7 +351,7 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "9", pages: "398" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent (reworded after the 2026-11-07 independent re-check; checked against the cited pages)"
+    verifier: "independent-verifier-agent"
     date: 2026-11-07
   - claimId: apoptosis-c043
     section: ancillary

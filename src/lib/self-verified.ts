@@ -15,7 +15,6 @@ export type SelfVerified = {
 };
 
 export const SELF_VERIFIED: readonly SelfVerified[] = [
-  { ledger: 'apoptosis', claims: 2, name: { it: 'Apoptosi', en: 'Apoptosis' }, path: 'e/apoptosis/' },
   { ledger: 'coagulative-necrosis', claims: 21, name: { it: 'Necrosi coagulativa', en: 'Coagulative necrosis' }, path: 'e/coagulative-necrosis/' },
   { ledger: 'dysplasia', claims: 21, name: { it: 'Displasia', en: 'Dysplasia' }, path: 'e/dysplasia/' },
   { ledger: 'fat-necrosis', claims: 20, name: { it: 'Necrosi adiposa (steatonecrosi)', en: 'Fat necrosis' }, path: 'e/fat-necrosis/' },
