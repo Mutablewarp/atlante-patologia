@@ -70,6 +70,71 @@ test('navigation targets are ≥ 44px and other targets ≥ 24px', async ({ page
   }
 });
 
+test.describe('touch screens', () => {
+  test.use({ hasTouch: true, reducedMotion: 'reduce' }); // (pointer: coarse) in Chromium and WebKit
+
+  test('from 600 px every control and list entry is at least 44 px tall (SC 2.5.5); phones keep their size', async ({ page }) => {
+    test.skip(width() !== 768, 'one run per engine: the test sets its own iPad and phone viewports');
+    await page.addInitScript(() => localStorage.setItem('ap-disclaimer', '1'));
+    const SEL = '.chip, .btn-small, .segmented button, .section-toc a, .breadcrumb a, .pager a, .lens-terms a, .matrix-thumb, .module-tree a, .module-tree summary';
+    const heights = () =>
+      page.evaluate((sel) => {
+        const out: Record<string, number> = {};
+        for (const el of document.querySelectorAll<HTMLElement>(sel)) {
+          if (!el.getClientRects().length || el.closest('dialog:not([open])')) continue; // not rendered
+          const key = `${el.className || el.tagName.toLowerCase()} "${el.textContent!.trim().slice(0, 24)}"`;
+          out[key] = Math.min(out[key] ?? 99, el.getBoundingClientRect().height);
+        }
+        return out;
+      }, SEL);
+    for (const viewport of [
+      { width: 820, height: 1180 }, // iPad portrait: chip strip, chapter dialog
+      { width: 1180, height: 820 }, // iPad landscape: side list, sidebar index
+    ]) {
+      await page.setViewportSize(viewport);
+      for (const path of ['it/e/coagulative-necrosis/', 'it/atlas/', 'en/pattern/p01-necrosis/']) {
+        await page.goto(path);
+        if (path.includes('/e/')) {
+          await page.getByRole('button', { name: /^Lenti/ }).click(); // the lens chips
+          await page.getByRole('button', { name: 'Strumenti' }).click(); // the small buttons of the tools
+          if (viewport.width < 1024) await page.getByRole('button', { name: 'Capitolo' }).click(); // the chapter index
+        }
+        const small = Object.entries(await heights()).filter(([, h]) => h < 43.5);
+        expect(small, `${path} at ${viewport.width} px`).toEqual([]);
+        if (viewport.width < 1024 && path.includes('/e/')) await page.keyboard.press('Escape');
+      }
+      // The first sentence of the card stays on the first screen (it reached 809 of 820 px before the touch sizes).
+      await page.goto('it/e/coagulative-necrosis/');
+      const sentence = await page.evaluate(() => {
+        const walker = document.createTreeWalker(document.querySelector('#definition-body > p')!, NodeFilter.SHOW_TEXT);
+        for (let n = walker.nextNode(); n; n = walker.nextNode()) {
+          const end = n.textContent!.search(/[.!?](\s|$)/);
+          if (end < 0) continue;
+          const range = document.createRange();
+          range.setStart(n, end);
+          range.setEnd(n, end + 1);
+          return range.getBoundingClientRect().bottom;
+        }
+        return Infinity;
+      });
+      expect(sentence, `first sentence at ${viewport.width} px`).toBeLessThanOrEqual(viewport.height);
+    }
+    // The taller chip strip of tablets: anchors and focus still stop below it (scroll-padding reads --chips-h).
+    await page.setViewportSize({ width: 820, height: 1180 });
+    await page.goto('it/e/coagulative-necrosis/');
+    const [strip, token] = await page.evaluate(() => [
+      document.querySelector('.section-toc')!.getBoundingClientRect().height,
+      parseFloat(getComputedStyle(document.documentElement).getPropertyValue('--chips-h')) * parseFloat(getComputedStyle(document.documentElement).fontSize),
+    ]);
+    expect(Math.abs(strip - token)).toBeLessThan(2);
+    // Phones are left as they are.
+    await page.setViewportSize({ width: 390, height: 844 });
+    await page.goto('it/e/coagulative-necrosis/');
+    expect((await page.locator('.section-toc a').first().boundingBox())!.height).toBeCloseTo(36, 0);
+    expect((await page.locator('.segmented button').first().boundingBox())!.height).toBeCloseTo(32, 0);
+  });
+});
+
 test('no page scrolls horizontally @smoke', async ({ page }) => {
   for (const path of Object.values(TEMPLATES)) {
     await page.goto(path);

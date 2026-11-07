@@ -125,6 +125,9 @@
   gap: var(--space-2);
   align-items: center;
   margin-top: var(--space-4);
+  /* Below the folded lens toggle, which floats beside the badges: a row placed beside it would be narrowed by its
+     width and wrap (touch-sized toggle on an iPad) */
+  clear: both;
 }
 .segmented {
   display: inline-flex;
@@ -631,16 +634,31 @@ html:not(.js) .section-toggle {
     grid-template-columns: minmax(0, 1fr) 14rem;
     gap: var(--space-7);
   }
+  /* A list taller than the screen (touch-sized entries on an iPad in landscape, the largest reading size) scrolls
+     inside its box (shell.ts keeps the current entry in view and marks the edges that hide entries). The rule is a
+     background stripe, not a border, so the current entry's bar on it stays inside the scrolling box. */
   .section-toc {
     grid-column: 2;
     grid-row: 1;
     align-self: start;
     top: calc(var(--topbar-h) + var(--space-5));
+    max-height: calc(100dvh - var(--topbar-h) - var(--space-5) - var(--space-4) - var(--notice-h, 0px));
+    overflow-y: auto;
     margin: 0;
-    padding: 0 0 0 var(--space-4);
-    background: none;
+    /* room for the 6 px focus ring inside the scrolling box */
+    padding: 0 var(--space-2) var(--space-2) calc(var(--space-4) + 2px);
+    scroll-padding-block: var(--space-2);
+    background: linear-gradient(var(--rule), var(--rule)) 0 0 / 2px 100% no-repeat;
     border-bottom: 0;
-    border-left: 2px solid var(--rule);
+  }
+  .section-toc[data-fade]:not(:has(:focus-visible)) {
+    mask-image: linear-gradient(var(--fade-start, #000), #000 2rem, #000 calc(100% - 2rem), var(--fade-end, #000));
+  }
+  .section-toc[data-fade~='start'] {
+    --fade-start: transparent;
+  }
+  .section-toc[data-fade~='end'] {
+    --fade-end: transparent;
   }
   .section-toc .toc-title {
     display: block;

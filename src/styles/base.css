@@ -263,6 +263,48 @@ textarea {
   padding: 0 var(--space-3);
   font-size: var(--step--1);
 }
+/* Touch screens from 600 px (iPad): controls and list entries are at least 44 px tall (SC 2.5.5), by padding, at the
+   same type size; phones keep their layout. `:root` outranks the base rule of each control, wherever it loads. The
+   links of the breadcrumb row keep the height of their line (negative margins), so the card text does not move down;
+   an 8 px gap keeps the two rows of a wrapped row from overlapping. */
+@media (min-width: 600px) and (pointer: coarse) {
+  :root {
+    --chips-h: 4.35rem; /* the chip strip with 2.75rem chips (tokens.css) */
+  }
+  :root :is(.chip, .btn-small, .segmented button, .section-toc a, .lens-terms a, .matrix-thumb, .module-tree :is(a, summary)) {
+    min-height: 2.75rem;
+  }
+  /* Text entries: centred in their taller box (a chapter's "sei qui" line stacks under the name) */
+  :root :is(.lens-terms a, .module-tree a) {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  :root .module-tree a {
+    display: flex;
+  }
+  /* A summary keeps its disclosure triangle (display: list-item): padding centres its line */
+  :root .module-tree summary {
+    padding-block: 0.6rem;
+  }
+  :root :is(.breadcrumb, .pager) a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
+    margin-block: -0.625rem;
+  }
+  :root .crumb-row {
+    row-gap: var(--space-2);
+  }
+  /* The taller reading toolbar takes back what it adds above the card text: on an iPad in landscape (1180 x 820)
+     the first sentence of the card stays on the first screen */
+  :root main {
+    padding-top: var(--space-4);
+  }
+  :root .entity-toolbar {
+    margin-top: var(--space-3);
+  }
+}
 
 .visually-hidden {
   position: absolute !important;

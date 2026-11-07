@@ -34,6 +34,17 @@ function edgeFade(el: HTMLElement, horizontal: boolean) {
   for (const box of [el, ...el.children]) watch.observe(box);
 }
 
+/** Scroll `box` so `el` sits in its middle, on the axis `box` scrolls on: scrollLeft or scrollTop only, the page never
+    moves (scrollIntoView would scroll it too). */
+function centreIn(box: HTMLElement, el: Element, behavior: ScrollBehavior = 'auto') {
+  const [b, r] = [box.getBoundingClientRect(), el.getBoundingClientRect()];
+  box.scrollBy({
+    left: box.scrollWidth > box.clientWidth ? r.left - b.left - (box.clientWidth - r.width) / 2 : 0,
+    top: box.scrollHeight > box.clientHeight ? r.top - b.top - (box.clientHeight - r.height) / 2 : 0,
+    behavior,
+  });
+}
+
 // ── Theme: system → light → dark ────────────────────────────────────────
 const THEMES = ['system', 'light', 'dark'] as const;
 type Theme = (typeof THEMES)[number];
@@ -120,8 +131,12 @@ strip?.querySelectorAll<HTMLAnchorElement>('a[href^="#"]').forEach((a) => {
   if (section) entryOf.set(section, a);
 });
 const spied = [...entryOf.keys()];
-if (strip) edgeFade(strip, true);
-if (strip && spied.length) {
+const toc = strip?.closest<HTMLElement>('.section-toc');
+if (strip && toc) {
+  edgeFade(strip, true); // the chip strip (< 1024 px) scrolls sideways
+  edgeFade(toc, false); // the side list (>= 1024 px) scrolls when it is taller than the screen
+}
+if (strip && toc && spied.length) {
   const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
   const inBand = new Set<Element>();
   let current: HTMLAnchorElement | undefined;
@@ -130,10 +145,11 @@ if (strip && spied.length) {
     current?.removeAttribute('aria-current');
     current = a;
     a?.setAttribute('aria-current', 'true');
-    // Phone/tablet chip strip: bring the current chip to the middle (the strip scrolls sideways only).
-    if (!a || strip.scrollWidth <= strip.clientWidth) return;
-    const delta = a.getBoundingClientRect().left - strip.getBoundingClientRect().left - (strip.clientWidth - a.offsetWidth) / 2;
-    strip.scrollBy({ left: delta, behavior: reduceMotion.matches ? 'auto' : 'smooth' });
+    // The current entry comes to the middle of the list wherever the list scrolls.
+    if (!a) return;
+    const behavior = reduceMotion.matches ? 'auto' : 'smooth';
+    centreIn(strip, a, behavior);
+    centreIn(toc, a, behavior);
   };
   // The section being read: the last one crossing the top 30% of the viewport. Hidden
   // sections (Quick mode) never intersect; past the last section the last one stays current.
@@ -185,12 +201,10 @@ if (chipStrip && chipLayout && topBar) {
 }
 
 // ── Chapter index (entity pages): the "Chapter" dialog opens on the current card ─
-/** Scroll a chapter index so the current card sits in its middle: scrollTop only, the page never moves. */
+/** Scroll a chapter index so the current card sits in its middle. */
 const centreCurrent = (tree: HTMLElement) => {
   const cur = tree.querySelector('a[aria-current]');
-  if (!cur) return;
-  const [t, r] = [tree.getBoundingClientRect(), cur.getBoundingClientRect()];
-  tree.scrollTop += r.top - t.top - (tree.clientHeight - r.height) / 2;
+  if (cur) centreIn(tree, cur);
 };
 const chapter = document.querySelector<HTMLDialogElement>('[data-chapter-dialog]');
 const chapterBtn = document.querySelector<HTMLButtonElement>('[data-chapter-open]');
