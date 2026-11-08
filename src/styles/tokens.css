@@ -6,10 +6,11 @@
  * Dark theme: soft graphite grey (never pure black) with off-white text (never
  * pure white), to keep glare and halation low on long reads.
  *
- * Every colour is written once as light-dark(LIGHT, DARK). The theme is chosen
+ * Every colour is written once as light-dark(LIGHT, DARK); only the muted ink
+ * has a second value, from 600 px (end of this file). The theme is chosen
  * by `color-scheme`: system preference by default, forced by [data-theme].
- * scripts/contrast-check.mjs parses these lines — keep one token per line,
- * hex values only.
+ * scripts/contrast-check.mjs parses these lines (every definition of a token)
+ * — keep one token per line, hex values only.
  */
 :root {
   color-scheme: light dark;
