@@ -55,6 +55,7 @@ const card = (eid: string | undefined, via?: string) =>
   eid ? { href: langPath(lang, `e/${eid}/${via ? `?via=${via}` : ''}`), name: nameOf(eid) } : undefined;
 const allSources = await getSources();
 const cited = entity.sources.map((s) => ({ ...s, src: allSources.find((x) => x.id === s.source) }));
+const relations = data.relations.get(id) ?? [];
 
 const crumbs = [
   { label: tAtlas(lang, 'title'), href: langPath(lang, 'atlas/') },
@@ -133,7 +134,13 @@ const contexts = LENSES.flatMap((lens) =>
     </EntityHeader>
 
     <div class="entity-layout">
-      <SectionToc lang={lang} items={toc.map((s) => ({ id: s.id, label: s.short[lang], quick: s.quick }))} />
+      <SectionToc
+        lang={lang}
+        items={toc.map((s) => ({ id: s.id, label: s.short[lang], quick: s.quick }))}
+        related={relations.length > 0 ? 'related' : undefined}
+        cardNav={termLabel ? 'card-nav' : undefined}
+        next={card(next)}
+      />
 
       <div class="entity-body">
         <section class="objectives card" aria-labelledby="objectives-title">
@@ -227,7 +234,7 @@ const contexts = LENSES.flatMap((lens) =>
         {/* v2/3d-pathways: pathways of this entity (renders nothing when there are none) */}
         <EntityPathways lang={lang} entity={id} />
 
-        <RelatedPanel lang={lang} groups={data.relations.get(id) ?? []} data={data} />
+        <RelatedPanel lang={lang} groups={relations} data={data} />
         {
           entityPatterns.length > 0 && (
             <section class="related" aria-labelledby="entity-patterns-title">
@@ -263,7 +270,8 @@ const contexts = LENSES.flatMap((lens) =>
           </p>
         </section>
 
-        <div data-lens-nav>
+        {/* The section list's last entry and the link under it read the next card from here (lens-context.ts) */}
+        <div data-lens-nav id="card-nav">
         {
           (prev || next) && termLabel && (
             <nav class="prev-next" aria-label={termLabel}>
@@ -274,7 +282,7 @@ const contexts = LENSES.flatMap((lens) =>
                 </a>
               )}
               {next && (
-                <a rel="next" href={langPath(lang, `e/${next}/`)}>
+                <a rel="next" href={langPath(lang, `e/${next}/`)} data-name={nameOf(next)}>
                   <span class="small muted">{fmt(t('nextIn'), { term: termLabel })}</span>
                   <span>{nameOf(next)} →</span>
                 </a>
@@ -295,7 +303,7 @@ const contexts = LENSES.flatMap((lens) =>
                     </a>
                   )}
                   {c.next && (
-                    <a rel="next" href={langPath(lang, `e/${c.next}/?via=${c.via}`)}>
+                    <a rel="next" href={langPath(lang, `e/${c.next}/?via=${c.via}`)} data-name={nameOf(c.next)}>
                       <span class="small muted">{fmt(t('nextIn'), { term: c.termLabel })}</span>
                       <span>{nameOf(c.next)} →</span>
                     </a>

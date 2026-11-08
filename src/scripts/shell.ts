@@ -20,11 +20,13 @@ const store = {
   },
 };
 
-/** A scroller lists in data-fade the edges ("start", "end") that hide content; the CSS fades those edges. Also
+/** A scroller lists in data-fade the edges ("start", "end") that hide content; the CSS fades those edges. It scrolls
+    sideways (the chip strip) or up and down (an index, the side list): the same list does both across 1024 px. Also
     watched: its children, whose size changes when content hides or opens (Quick mode, a chapter folded). */
-function edgeFade(el: HTMLElement, horizontal: boolean) {
+function edgeFade(el: HTMLElement) {
   const update = () => {
-    const [pos, size, view] = horizontal ? [el.scrollLeft, el.scrollWidth, el.clientWidth] : [el.scrollTop, el.scrollHeight, el.clientHeight];
+    const across = el.scrollWidth - el.clientWidth > 1;
+    const [pos, size, view] = across ? [el.scrollLeft, el.scrollWidth, el.clientWidth] : [el.scrollTop, el.scrollHeight, el.clientHeight];
     const fade = `${pos > 1 ? 'start' : ''} ${pos + view < size - 1 ? 'end' : ''}`.trim();
     if (fade) el.dataset.fade = fade;
     else delete el.dataset.fade;
@@ -132,12 +134,9 @@ strip?.querySelectorAll<HTMLAnchorElement>('a[href^="#"]').forEach((a) => {
   if (section) entryOf.set(section, a);
 });
 const spied = [...entryOf.keys()];
-const toc = strip?.closest<HTMLElement>('.section-toc');
-if (strip && toc) {
-  edgeFade(strip, true); // the chip strip (< 1024 px) scrolls sideways
-  edgeFade(toc, false); // the side list (>= 1024 px) scrolls when it is taller than the screen
-}
-if (strip && toc && spied.length) {
+// The chip strip (< 1024 px) scrolls sideways; the side list (>= 1024 px) up and down when taller than the screen.
+if (strip) edgeFade(strip);
+if (strip && spied.length) {
   const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
   let current: HTMLAnchorElement | undefined;
   const markCurrent = (a: HTMLAnchorElement | undefined) => {
@@ -145,16 +144,13 @@ if (strip && toc && spied.length) {
     current?.removeAttribute('aria-current');
     current = a;
     a?.setAttribute('aria-current', 'true');
-    // The current entry comes to the middle of the list wherever the list scrolls.
-    if (!a) return;
-    const behavior = reduceMotion.matches ? 'auto' : 'smooth';
-    centreIn(strip, a, behavior);
-    centreIn(toc, a, behavior);
+    // The current entry comes to the middle of the list, on the axis the list scrolls on.
+    if (a) centreIn(strip, a, reduceMotion.matches ? 'auto' : 'smooth');
   };
   // The section being read is the one under a reading line just below the sticky bars: 8 px under the place where
   // an anchor puts its heading (scroll-padding-top). A short section no longer loses to the next one, as it did in
-  // a band of the top 30 % of the screen. Hidden sections (Quick mode) and hidden entries are skipped, and
-  // between two sections the current one stays. At the end of the page, which the last sections
+  // a band of the top 30 % of the screen. Hidden sections (Quick mode) and hidden entries (the last two on phones)
+  // are skipped, and between two sections the current one stays. At the end of the page, which the last sections
   // may not scroll up to the line, a tapped section on screen stays current, else the last one on screen is.
   const shown = (el: Element) => el.getClientRects().length > 0;
   const sectionOf = new Map([...entryOf].map(([s, a]) => [a, s]));
@@ -276,7 +272,7 @@ if (sideTree) {
     width = shown ? sideTree.clientWidth : 0;
   }).observe(sideTree);
 }
-document.querySelectorAll<HTMLElement>('.module-tree').forEach((tree) => edgeFade(tree, false));
+document.querySelectorAll<HTMLElement>('.module-tree').forEach((tree) => edgeFade(tree));
 
 // ── Sidebar collapse (desktop) ──────────────────────────────────────────
 const sideBtn = document.querySelector<HTMLButtonElement>('[data-sidebar-toggle]');

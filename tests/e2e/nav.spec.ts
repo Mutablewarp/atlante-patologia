@@ -134,6 +134,38 @@ test.describe('touch screens', () => {
     expect((await page.locator('.segmented button').first().boundingBox())!.height).toBeCloseTo(32, 0);
   });
 
+  test('on an iPad in landscape the side list scrolls inside its box, keeps the current entry in view and the next card on screen', async ({ page }) => {
+    test.skip(width() !== 768, 'one run per engine: the test sets its own iPad viewport');
+    await page.setViewportSize({ width: 1180, height: 820 });
+    await page.goto('it/e/coagulative-necrosis/');
+    const list = page.locator('.section-toc ol');
+    // Stuck under the top bar, the list ends on the screen and fades at the edge that hides entries; the link to
+    // the next card stays under it.
+    for (const [id, fade] of [
+      ['micro', /end/],
+      ['card-nav', /start/],
+    ] as const) {
+      await page.evaluate((id) => document.getElementById(id)!.scrollIntoView(), id);
+      await expect(list).toHaveAttribute('data-fade', fade);
+      const state = await page.evaluate(() => {
+        const nav = document.querySelector('.section-toc')!;
+        const ol = nav.querySelector('ol')!;
+        const box = ol.getBoundingClientRect();
+        const cur = ol.querySelector('a[aria-current]')?.getBoundingClientRect();
+        const next = nav.querySelector('.toc-next a')!.getBoundingClientRect();
+        return {
+          overflows: ol.scrollHeight > ol.clientHeight,
+          bottom: nav.getBoundingClientRect().bottom,
+          inside: !!cur && cur.top >= box.top && cur.bottom <= box.bottom,
+          next: next.height > 0 && next.top >= box.bottom && next.bottom <= innerHeight,
+        };
+      });
+      expect(state.overflows, id).toBe(true);
+      expect(state.bottom, id).toBeLessThanOrEqual(820);
+      expect(state.inside, `${id}: the current entry is in the list's box`).toBe(true);
+      expect(state.next, `${id}: "Successiva" under the list, on screen`).toBe(true);
+    }
+  });
 });
 
 test('no page scrolls horizontally @smoke', async ({ page }) => {
@@ -202,6 +234,38 @@ test('from 600 px the previous and next card sit beside the breadcrumb, in the o
   // Reached through a lens, the pair follows that lens's order.
   await page.goto('it/e/coagulative-necrosis/?via=system:heart');
   await expect(pager.getByRole('link', { name: 'Scheda successiva: Steatosi (degenerazione grassa)' })).toHaveAttribute('href', /\/fatty-change\/\?via=system:heart$/);
+});
+
+test('from 600 px the section list ends with the related cards and the next card; from 1024 px the next card is a click away', async ({ page }) => {
+  await page.goto('it/e/coagulative-necrosis/');
+  const toc = page.getByRole('navigation', { name: 'In questa pagina' });
+  const list = toc.locator('ol');
+  const related = list.getByRole('link', { name: 'Schede correlate' });
+  const nextEntry = list.getByRole('link', { name: 'Successiva: Necrosi colliquativa' });
+  const nextCard = toc.locator('.toc-next a');
+  if (width() < 600) {
+    // Phones keep their chip strip.
+    for (const el of [related, nextEntry, nextCard]) await expect(el).toBeHidden();
+    return;
+  }
+  const shown = await list.locator('a').evaluateAll((as) => as.filter((a) => a.getClientRects().length).map((a) => a.getAttribute('href')));
+  expect(shown.slice(-3)).toEqual(['#quick-check', '#related', '#card-nav']);
+  await expect(page.locator('#related h2')).toHaveText('Schede correlate'); // the entry names its heading
+  if (width() >= 1024) {
+    await expect(nextCard).toBeVisible();
+    await expect(nextCard).toHaveAccessibleName('Successiva: Necrosi colliquativa');
+    await expect(nextCard).toHaveAttribute('href', /\/it\/e\/liquefactive-necrosis\/$/);
+  } else await expect(nextCard).toBeHidden();
+  // The entry takes the reader to the links at the end of the card, and is marked.
+  await nextEntry.click();
+  await expect(page.locator('#card-nav a[rel="next"]')).toBeInViewport();
+  await expect(nextEntry).toHaveAttribute('aria-current', 'true');
+  // Reached through a lens, both name the next card of that lens.
+  await page.goto('it/e/coagulative-necrosis/?via=system:heart');
+  await expect(list.getByRole('link', { name: 'Successiva: Steatosi (degenerazione grassa)' })).toHaveAttribute('href', '#card-nav');
+  if (width() < 1024) return;
+  await expect(nextCard).toHaveAttribute('href', /\/fatty-change\/\?via=system:heart$/);
+  await expect(nextCard).toHaveAccessibleName('Successiva: Steatosi (degenerazione grassa)');
 });
 
 test.describe('smooth scrolling', () => {

@@ -17,7 +17,7 @@ const label = (id: string) => data.entityById.get(id)?.names[lang] ?? id.replace
 
 {
   groups.length > 0 && (
-    <section class="related" aria-labelledby="related-title">
+    <section class="related" id="related" aria-labelledby="related-title">
       <h2 id="related-title">{tEntity(lang, 'related')}</h2>
       <div class="related-groups">
         {groups.map((g) => (

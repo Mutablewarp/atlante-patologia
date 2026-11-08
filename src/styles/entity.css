@@ -340,6 +340,16 @@ html .fold-toggle {
     color: var(--on-hema);
   }
 }
+/* The related cards and the next card end the list from 600 px (phones keep their strip); the next card's own link
+   sits under the side list (SectionToc.astro) */
+@media (max-width: 599px) {
+  .section-toc .toc-extra {
+    display: none;
+  }
+}
+.toc-next {
+  display: none;
+}
 /* Anchors, scrollIntoView and keyboard focus stop below the top bar and the sticky chip row (SC 2.4.11) */
 @media (max-width: 1023px) {
   :root:has(.section-toc) {
@@ -635,40 +645,46 @@ html:not(.js) .section-toggle {
     gap: var(--space-7);
   }
   /* A list taller than the screen (touch-sized entries on an iPad in landscape, the largest reading size) scrolls
-     inside its box (shell.ts keeps the current entry in view and marks the edges that hide entries). The rule is a
-     background stripe, not a border, so the current entry's bar on it stays inside the scrolling box. */
+     inside its box, under its title and above the next card's link, which stay in view (shell.ts keeps the current
+     entry in view and marks the edges that hide entries). The rule is a background stripe, not a border: the
+     current entry's bar on it stays inside the scrolling list, which starts at the stripe. */
   .section-toc {
     grid-column: 2;
     grid-row: 1;
     align-self: start;
     top: calc(var(--topbar-h) + var(--space-5));
+    display: flex;
+    flex-direction: column;
     max-height: calc(100dvh - var(--topbar-h) - var(--space-5) - var(--space-4) - var(--notice-h, 0px));
-    overflow-y: auto;
     margin: 0;
-    /* room for the 6 px focus ring inside the scrolling box */
-    padding: 0 var(--space-2) var(--space-2) calc(var(--space-4) + 2px);
-    scroll-padding-block: var(--space-2);
+    padding: 0;
     background: linear-gradient(var(--rule), var(--rule)) 0 0 / 2px 100% no-repeat;
     border-bottom: 0;
-  }
-  .section-toc[data-fade]:not(:has(:focus-visible)) {
-    mask-image: linear-gradient(var(--fade-start, #000), #000 2rem, #000 calc(100% - 2rem), var(--fade-end, #000));
-  }
-  .section-toc[data-fade~='start'] {
-    --fade-start: transparent;
-  }
-  .section-toc[data-fade~='end'] {
-    --fade-end: transparent;
   }
   .section-toc .toc-title {
     display: block;
     font-weight: 700;
-    margin-bottom: var(--space-2);
+    margin: 0 0 var(--space-1);
+    padding-left: calc(var(--space-4) + 2px);
   }
   .section-toc ol {
     display: grid;
+    flex: 0 1 auto;
+    min-height: 0;
     gap: 0;
-    overflow: visible;
+    overflow: hidden auto;
+    /* room for the 6 px focus ring inside the scrolling list */
+    padding: var(--space-2) var(--space-2) var(--space-2) calc(var(--space-4) + 2px);
+    scroll-padding-block: var(--space-2);
+  }
+  .section-toc ol[data-fade]:not(:has(:focus-visible)) {
+    mask-image: linear-gradient(var(--fade-start, #000), #000 2rem, #000 calc(100% - 2rem), var(--fade-end, #000));
+  }
+  .section-toc ol[data-fade~='start'] {
+    --fade-start: transparent;
+  }
+  .section-toc ol[data-fade~='end'] {
+    --fade-end: transparent;
   }
   .section-toc a {
     min-height: 1.9rem;
@@ -680,6 +696,22 @@ html:not(.js) .section-toggle {
   }
   .section-toc a:hover {
     color: var(--hema);
+  }
+  /* The next card, one click from anywhere in the card: an action in hematoxylin under the list */
+  .toc-next:not([hidden]) {
+    display: block;
+    flex: none;
+    margin: var(--space-1) 0 0 calc(var(--space-4) + 2px);
+    padding-top: var(--space-2);
+    border-top: 1px solid var(--rule);
+  }
+  .section-toc .toc-next a {
+    min-height: 2.75rem;
+    color: var(--hema);
+    font-weight: 600;
+  }
+  .section-toc .toc-next a:hover {
+    text-decoration: underline;
   }
   .entity-body {
     grid-column: 1;

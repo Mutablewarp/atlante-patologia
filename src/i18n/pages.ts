@@ -181,12 +181,15 @@ export const tEntity = defineStrings({
   tableOf: { it: 'Tabella: {section}', en: 'Table: {section}' },
   objectives: { it: 'Obiettivi di apprendimento', en: 'Learning objectives' },
   showAnswer: { it: 'Mostra la risposta', en: 'Show answer' },
-  related: { it: 'Collegamenti', en: 'Related' },
+  related: { it: 'Schede correlate', en: 'Related cards' },
   notPublished: { it: 'non ancora pubblicato', en: 'not yet published' },
   prevIn: { it: 'Precedente in “{term}”', en: 'Previous in “{term}”' },
   nextIn: { it: 'Successivo in “{term}”', en: 'Next in “{term}”' },
   prevCard: { it: 'Scheda precedente', en: 'Previous card' },
   nextCard: { it: 'Scheda successiva', en: 'Next card' },
+  /** Last entries of the section list (SectionToc.astro): the block at the end of the card, and the card itself */
+  nextEntry: { it: 'Successiva: {name}', en: 'Next: {name}' },
+  nextShort: { it: 'Successiva', en: 'Next' },
   sources: { it: 'Fonti', en: 'Sources' },
   reportThis: { it: 'Segnala un errore in questa scheda', en: 'Report an error on this card' },
 });
