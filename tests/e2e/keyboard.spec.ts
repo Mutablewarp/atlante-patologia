@@ -124,6 +124,54 @@ test('reading pages have a second skip link, to the text of the card, past its h
   }
 });
 
+test('in the chip strip a focused chip is whole, backwards and forwards, and the page does not jump (SC 2.4.11)', async ({ page, browserName }) => {
+  test.skip((test.info().project.metadata.width as number) >= 1024, 'the chip strip of phones and tablets (below 1024 px)');
+  const [tab, back] = [tabKey(browserName), tabKey(browserName).replace('Tab', 'Shift+Tab')];
+  // The focused chip inside the strip's box, and the page's scroll position.
+  const where = () =>
+    page.evaluate(async () => {
+      await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+      const el = document.activeElement!;
+      const list = document.querySelector('.section-toc ol')!;
+      const [r, b] = [el.getBoundingClientRect(), list.getBoundingClientRect()];
+      const whole = r.left >= b.left - 0.5 && r.right <= b.right + 0.5 && r.top >= b.top - 0.5 && r.bottom <= b.bottom + 0.5;
+      return { inList: list.contains(el), whole, y: scrollY, label: el.textContent!.trim().slice(0, 30) };
+    });
+  for (const [path, skip] of [
+    ['en/pattern/p01-necrosis/', 'Skip to the pattern text'],
+    ['it/e/coagulative-necrosis/', 'Vai al testo della scheda'],
+  ] as const) {
+    await page.goto(path);
+    await page.keyboard.press(tab);
+    await page.keyboard.press(tab);
+    await expect(page.getByRole('link', { name: skip })).toBeFocused();
+    await page.keyboard.press('Enter');
+    await page.keyboard.press(tab); // the first control of the text: the strip, stuck under the top bar, is above it
+    // Backwards into the strip and along it: the strip used to scroll the page by its own height at every chip
+    // (about 560 px) and the section spy pushed the focused chip out of the strip's view.
+    let stops = 0;
+    let prev = await where();
+    for (let i = 0; i < 6 && stops < 3; i++) {
+      await page.keyboard.press(back);
+      const s = await where();
+      if (s.inList) {
+        stops++;
+        expect(s.whole, `${path}: "${s.label}" whole in the strip`).toBe(true);
+        if (prev.inList) expect(s.y, `${path}: "${s.label}": the page did not move`).toBe(prev.y);
+      }
+      prev = s;
+    }
+    expect(stops, `${path}: chips reached backwards`).toBe(3);
+    for (let i = 0; i < 2; i++) {
+      await page.keyboard.press(tab);
+      const s = await where();
+      expect(s.inList && s.whole, `${path}: "${s.label}" whole in the strip, forwards`).toBe(true);
+      expect(s.y, `${path}: "${s.label}": the page did not move, forwards`).toBe(prev.y);
+      prev = s;
+    }
+  }
+});
+
 test('no positive tabindex anywhere', async ({ page }) => {
   for (const path of PAGES) {
     await page.goto(path);

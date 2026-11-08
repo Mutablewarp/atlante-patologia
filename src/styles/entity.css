@@ -331,6 +331,17 @@ html .fold-toggle {
     outline-offset: -3px;
     box-shadow: inset 0 0 0 5px var(--paper);
   }
+  /* A chip that takes focus in the stuck strip is already below the top bar: the page must not scroll to clear the
+     strip's own height (scroll-padding-top), which jumped it about 560 px per Shift+Tab (SC 2.4.11) */
+  .section-toc a {
+    scroll-margin-top: calc(-1 * (var(--chips-h) + var(--space-4)));
+  }
+}
+/* Forced colours drop the fill: the current chip is underlined instead (no change of width) */
+@media (max-width: 1023px) and (forced-colors: active) {
+  .section-toc a[aria-current] {
+    text-decoration: underline 2px;
+  }
 }
 /* Tablets: the edges that hide chips fade (shell.ts sets data-fade), never over a keyboard focus; the current chip is
    filled like the pressed reading mode, with the same weight and border, so no chip changes width (CLS 0) */

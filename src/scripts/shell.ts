@@ -152,8 +152,9 @@ if (strip && spied.length) {
     current?.removeAttribute('aria-current');
     current = a;
     a?.setAttribute('aria-current', 'true');
-    // The current entry comes to the middle of the list, on the axis the list scrolls on.
-    if (a) centreIn(strip, a, reduceMotion.matches ? 'auto' : 'smooth');
+    // The current entry comes to the middle of the list, on the axis the list scrolls on; never while a keyboard
+    // user is in the list, where it pushed the focused entry out of view (SC 2.4.11).
+    if (a && !strip.querySelector(':focus-visible')) centreIn(strip, a, reduceMotion.matches ? 'auto' : 'smooth');
   };
   // The section being read is the one under a reading line just below the sticky bars: 8 px under the place where
   // an anchor puts its heading (scroll-padding-top). A short section no longer loses to the next one, as it did in
@@ -186,6 +187,12 @@ if (strip && spied.length) {
       read();
     }, 150);
   };
+  // A keyboard-focused entry comes to the middle of the list instead, whole (the browser only scrolls it to the edge).
+  // Not on a click or a tap, which focuses the entry too: the list would move under the pointer before it is let go.
+  strip.addEventListener('focusin', (ev) => {
+    const el = ev.target as Element;
+    if (el.matches(':focus-visible')) centreIn(strip, el);
+  });
   strip.addEventListener('click', (ev) => {
     const a = (ev.target as Element).closest<HTMLAnchorElement>('a[href^="#"]');
     if (!a || !sectionOf.has(a)) return;
