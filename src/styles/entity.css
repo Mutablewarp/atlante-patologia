@@ -360,9 +360,13 @@ html .fold-toggle {
     border-color: var(--hema);
     color: var(--on-hema);
   }
+  .section-toc li > a[aria-current]::selection,
+  .section-toc li > a[aria-current] ::selection {
+    color: var(--on-hema);
+  }
 }
-/* The related cards and the next card end the list from 600 px (phones keep their strip); the next card's own link
-   sits under the side list (SectionToc.astro) */
+/* From 600 px the strip ends with the related cards and a link to the next card (phones keep their strip); from
+   1024 px that link sits under the side list instead (SectionToc.astro) */
 @media (max-width: 599px) {
   .section-toc .toc-extra {
     display: none;

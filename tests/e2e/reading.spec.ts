@@ -254,7 +254,7 @@ test('a section entry, short sections included, is marked when tapped and while 
   await expect(current).toHaveAttribute('href', '#gross');
 });
 
-test('on tablets the chip strip fades where it hides chips and fills the current chip, at the same width', async ({ page }) => {
+test('on tablets the chip strip fades where it hides chips and fills the current chip, at the same width', async ({ page, browserName }) => {
   test.skip(width() < 600 || width() >= 1024, 'the chip strip of tablets (600-1023 px)');
   await page.goto(ENTITY);
   const strip = page.locator('.section-toc ol');
@@ -270,6 +270,18 @@ test('on tablets the chip strip fades where it hides chips and fills the current
   expect((await chip.boundingBox())!.width).toBe(before);
   await strip.evaluate((o) => (o.scrollLeft = o.scrollWidth));
   await expect(strip).toHaveAttribute('data-fade', 'start');
+  // Selected, the text of a filled chip or control keeps the fill's ink (the page's ink there was 1.65:1).
+  const selected = (sel: string) => page.locator(sel).evaluate((el) => [getComputedStyle(el, '::selection').color, getComputedStyle(el).color]);
+  for (const sel of ['.section-toc a[aria-current]', '[data-mode-btn="full"]']) {
+    const [text, fill] = await selected(sel);
+    expect(text, sel).toBe(fill);
+  }
+  // Forced colours drop the fill: the current chip is underlined instead.
+  if (browserName === 'chromium') {
+    await page.emulateMedia({ forcedColors: 'active' });
+    expect(await chip.evaluate((a) => getComputedStyle(a).textDecorationLine)).toBe('underline');
+    expect((await chip.boundingBox())!.width).toBe(before);
+  }
 });
 
 test('on phones the chip strip slides away while reading down and comes back reading up or on focus', async ({ page }) => {

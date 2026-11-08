@@ -42,6 +42,12 @@ body {
   background: color-mix(in srgb, var(--eosin) 28%, transparent);
   color: var(--ink);
 }
+/* On a control filled with hematoxylin the wash lies over the fill: the text keeps the fill's own ink (9.95:1 light,
+   7.77:1 dark; ink there was 1.65:1). The current chip of tablets: entity.css. */
+:is(.btn-primary, .skip-link, .segmented button[aria-pressed='true'])::selection,
+:is(.btn-primary, .skip-link, .segmented button[aria-pressed='true']) ::selection {
+  color: var(--on-hema);
+}
 
 h1,
 h2,
