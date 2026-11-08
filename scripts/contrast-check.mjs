@@ -1,7 +1,8 @@
 #!/usr/bin/env node
 // WCAG 2.2 contrast gate for the design tokens (src/styles/tokens.css).
 // Parses `--token: light-dark(#light, #dark);` and checks every foreground/
-// background pair the stylesheets use, in both themes. Exit 1 below threshold.
+// background pair the stylesheets use, in both themes. A token defined again
+// for a width (tablets: --ink-muted) is checked in every definition. Exit 1 below threshold.
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 
@@ -61,10 +62,11 @@ export const PAIRS = [
   ['eosin-ink', 'eosin-soft', TEXT, 'current pathway step label'],
 ];
 
+/** Every definition of each token, in source order: `{ name: [{ light, dark }, …] }`. */
 export function parseTokens(css) {
   const tokens = {};
   const re = /--([a-z0-9-]+):\s*light-dark\(\s*(#[0-9a-f]{6})\s*,\s*(#[0-9a-f]{6})\s*\)/gi;
-  for (const [, name, light, dark] of css.matchAll(re)) tokens[name] = { light, dark };
+  for (const [, name, light, dark] of css.matchAll(re)) (tokens[name] ??= []).push({ light, dark });
   return tokens;
 }
 
@@ -83,6 +85,7 @@ function main() {
   const css = readFileSync(fileURLToPath(new URL('../src/styles/tokens.css', import.meta.url)), 'utf8');
   const tokens = parseTokens(css);
   let failures = 0;
+  let checked = 0;
   for (const theme of ['light', 'dark']) {
     console.log(`\n${theme.toUpperCase()}`);
     for (const [fg, bg, min, what] of PAIRS) {
@@ -91,17 +94,22 @@ function main() {
         failures++;
         continue;
       }
-      const ratio = contrast(tokens[fg][theme], tokens[bg][theme]);
-      const ok = ratio >= min;
-      if (!ok) failures++;
-      console.log(`  ${ok ? 'ok  ' : 'FAIL'}  ${ratio.toFixed(2).padStart(5)} >= ${min}  ${fg} on ${bg} (${what})`);
+      for (const [i, f] of tokens[fg].entries())
+        for (const [j, b] of tokens[bg].entries()) {
+          const ratio = contrast(f[theme], b[theme]);
+          const ok = ratio >= min;
+          if (!ok) failures++;
+          checked++;
+          const which = tokens[fg].length + tokens[bg].length > 2 ? ` [definition ${i + 1}/${j + 1}]` : '';
+          console.log(`  ${ok ? 'ok  ' : 'FAIL'}  ${ratio.toFixed(2).padStart(5)} >= ${min}  ${fg} on ${bg} (${what})${which}`);
+        }
     }
   }
   if (failures) {
     console.error(`\ncontrast-check: ${failures} pair(s) below WCAG 2.2 AA thresholds`);
     process.exit(1);
   }
-  console.log(`\ncontrast-check: all ${PAIRS.length * 2} pairs pass`);
+  console.log(`\ncontrast-check: all ${checked} pairs pass`);
 }
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) main();

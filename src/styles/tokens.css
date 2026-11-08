@@ -20,9 +20,9 @@
   --surface-2: light-dark(#ede5d6, #2c2e35);
   --rule: light-dark(#ddd3c1, #3a3c45);
 
-  /* Text (muted: 7.76:1 on paper in light, 9.38:1 in dark, so secondary text stays crisp in both themes) */
+  /* Text (muted: phones; a darker one from 600 px, below) */
   --ink: light-dark(#211e27, #e6e3dc);
-  --ink-muted: light-dark(#4f4859, #c4c0b8);
+  --ink-muted: light-dark(#575061, #b2aea6);
 
   /* UI boundaries (>= 3:1 against paper and surface) */
   --border-strong: light-dark(#857a6d, #7f818c);
@@ -56,26 +56,24 @@
   /* Width-matched fallback: Arial (and its metric twins Arimo/Liberation Sans on Linux) sets a line of Atkinson
      Hyperlegible Next within 0.5 % of its width (measured), so a first visit without the web font wraps the same way */
   --font-body: 'Atkinson Hyperlegible Next Variable', Arial, Helvetica, 'Liberation Sans', Arimo, system-ui, sans-serif;
-  /* Fluid scale: body text 17 px on phones, 17.7 px on an iPad in portrait (820 px), 19 px from 1110 px; rem-based,
-     so the A-/A+ size scales it all */
+  /* Fluid scale: body text 17 px on phones to 19 px on wide screens; rem-based, so the A-/A+ size scales it all.
+     These are the phone values; from 600 px the reading text is denser (below). */
   --step--2: 0.8125rem;
   --step--1: clamp(0.875rem, 0.85rem + 0.12vw, 0.95rem);
-  --step-0: clamp(1.0625rem, 0.875rem + 0.45vw, 1.1875rem);
+  --step-0: clamp(1.0625rem, 1rem + 0.3vw, 1.1875rem);
   --step-1: clamp(1.22rem, 1.12rem + 0.45vw, 1.42rem);
-  --step-2: clamp(1.375rem, 1.2rem + 0.7vw, 1.75rem);
+  --step-2: clamp(1.45rem, 1.27rem + 0.8vw, 1.9rem);
   --step-3: clamp(1.75rem, 1.45rem + 1.4vw, 2.6rem);
-  --step-4: clamp(1.875rem, 1.5rem + 1.6vw, 2.75rem);
-  /* Reading measure in em, so the column keeps its width when the fallback font renders (ch followed the fallback's
-     narrower '0'). Measured on a card, median characters per full line of paragraphs (Chromium / WebKit):
-     68 / 65 at 820 px, 67 / 64 at 1180 px, 68 / 65 at 1440 px; longest line 73 */
-  --measure: 31em;
+  --step-4: clamp(2.05rem, 1.6rem + 2.2vw, 3.4rem);
+  /* About 66 characters per line: one ch ('0') of Atkinson Hyperlegible Next is ~1.46 average characters (measured) */
+  --measure: 45ch;
   /* Line height by role: reading text, headings, one-line controls and labels, small text in tables and cards */
-  --leading: 1.5;
+  --leading: 1.65;
   --leading-tight: 1.15;
   --leading-ui: 1.25;
   --leading-compact: 1.45;
-  /* Regular text weight: a touch above 400 on Atkinson's variable axis (200-800), darker strokes for +0.9 % width */
-  --weight-body: 430;
+  /* Regular text weight */
+  --weight-body: 400;
 
   /* Space & shape */
   --space-1: 0.25rem;
@@ -100,6 +98,25 @@
   --gutter: clamp(1rem, 0.6rem + 2vw, 2.5rem);
 
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+
+/* Tablets and computers (D064): clearer, denser reading text. Phones keep the values above. */
+@media (min-width: 600px) {
+  :root {
+    /* Muted text 7.76:1 on paper in light, 9.38:1 in dark, so secondary text stays crisp in both themes */
+    --ink-muted: light-dark(#4f4859, #c4c0b8);
+    /* Body text 17.7 px on an iPad in portrait (820 px), 19 px from 1110 px */
+    --step-0: clamp(1.0625rem, 0.875rem + 0.45vw, 1.1875rem);
+    --step-2: clamp(1.375rem, 1.2rem + 0.7vw, 1.75rem);
+    --step-4: clamp(1.875rem, 1.5rem + 1.6vw, 2.75rem);
+    /* Reading measure in em, so the column keeps its width when the fallback font renders (ch followed the
+       fallback's narrower '0'). Measured on a card, median characters per full line of paragraphs (Chromium /
+       WebKit): 68 / 65 at 820 px, 67 / 64 at 1180 px, 68 / 65 at 1440 px; longest line 73 */
+    --measure: 31em;
+    --leading: 1.5;
+    /* A touch above 400 on Atkinson's variable axis (200-800): darker strokes for +0.9 % width */
+    --weight-body: 430;
+  }
 }
 
 :root[data-theme='light'] {

@@ -98,7 +98,7 @@
   color: var(--ink);
   box-shadow: var(--shadow);
   font-size: var(--step--1);
-  line-height: var(--leading);
+  line-height: 1.5;
 }
 /* Without positioning JS (or before it runs) the popover sits mid-screen. */
 .gloss-pop:popover-open:not([style]) {

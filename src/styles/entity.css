@@ -498,8 +498,10 @@ html:not(.js) .section-toggle {
   border-bottom: 0;
 }
 @media (max-width: 599px) {
+  /* a step more compact than the text (from 600 px every table is: base.css) */
   .section-body .table-scroll :is(th, td) {
     min-width: 10rem;
+    line-height: 1.5;
   }
   .section-body .table-scroll :is(th, td):first-child {
     position: sticky;
@@ -617,13 +619,17 @@ html:not(.js) .section-toggle {
   gap: var(--space-4);
   grid-template-columns: repeat(auto-fill, minmax(min(100%, 16rem), 1fr));
 }
-/* In the body face, bold: Fraunces' heading weight (560) and tracking would read as a near-regular Atkinson */
 .related-group h3 {
   margin-top: 0;
   font-size: var(--step-0);
   font-family: var(--font-body);
-  font-weight: 700;
-  letter-spacing: normal;
+}
+/* From 600 px in the body face's bold: Fraunces' heading weight (560) and tracking read as a near-regular Atkinson */
+@media (min-width: 600px) {
+  .related-group h3 {
+    font-weight: 700;
+    letter-spacing: normal;
+  }
 }
 .related-group ul {
   padding-left: var(--space-4);

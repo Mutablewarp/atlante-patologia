@@ -89,13 +89,21 @@ li {
   -webkit-hyphens: auto;
   hyphenate-limit-chars: 7 3 3;
 }
-/* Paragraph gap 0.85em: baseline to baseline across a break is 2.35em, still 1.5 times the 1.5em line spacing
-   (WCAG 1.4.8) */
 .prose :is(p, ul, ol) {
-  margin-bottom: 0.85em;
+  margin-bottom: 1.1em;
 }
 .prose li + li {
-  margin-top: 0.25em;
+  margin-top: 0.4em;
+}
+/* From 600 px, with the 1.5 line spacing (tokens.css): paragraph gap 0.85em, so baseline to baseline across a break
+   is 2.35em, still 1.5 times the line spacing (WCAG 1.4.8). Phones keep theirs. */
+@media (min-width: 600px) {
+  .prose :is(p, ul, ol) {
+    margin-bottom: 0.85em;
+  }
+  .prose li + li {
+    margin-top: 0.25em;
+  }
 }
 .prose :is(ul, ol) {
   padding-left: 1.4em;
@@ -110,10 +118,16 @@ li {
 .prose h3 {
   margin-top: 1.6em;
 }
-/* Short labels never break inside a word: tables, links, code, chips and the labels on and under an image */
-.prose :is(table, th, td, a, code, .viewer-label, .viewer-legend),
-.chip {
+/* Short labels never break inside a word: tables, links and code; from 600 px also chips and the labels on and
+   under an image (phones show numbers on the image and keep their legend) */
+.prose :is(table, th, td, a, code) {
   hyphens: manual;
+}
+@media (min-width: 600px) {
+  .prose :is(.viewer-label, .viewer-legend),
+  .chip {
+    hyphens: manual;
+  }
 }
 /* Captions and credit lines keep the measure even where the figure is wider than the text (pattern pages) */
 figcaption :is(p, li) {
@@ -195,7 +209,13 @@ td {
   vertical-align: top;
   padding: var(--space-2) var(--space-3);
   border-bottom: 1px solid var(--rule);
-  line-height: var(--leading-compact);
+}
+/* From 600 px every table is compact; phones keep the body line spacing (cards' tables: entity.css) */
+@media (min-width: 600px) {
+  th,
+  td {
+    line-height: var(--leading-compact);
+  }
 }
 th {
   font-weight: 700;
@@ -342,9 +362,15 @@ html:not(.js) .js-only {
 
 .lede {
   font-size: var(--step-1);
-  line-height: var(--leading);
-  color: var(--ink);
+  line-height: 1.5;
+  color: var(--ink-muted);
   max-width: var(--measure);
+}
+/* From 600 px the summary is set in the text ink: it is the card's first sentence, not metadata */
+@media (min-width: 600px) {
+  .lede {
+    color: var(--ink);
+  }
 }
 
 .badge {

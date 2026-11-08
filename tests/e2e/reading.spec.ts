@@ -409,6 +409,31 @@ test('the reading measure holds 62-70 characters per line on tablets and compute
   expect(median).toBeLessThanOrEqual(70);
 });
 
+test('phones keep their reading text; from 600 px it is denser and a touch darker (D064)', async ({ page }) => {
+  await page.goto('it/e/coagulative-necrosis/');
+  const t = await page.evaluate(() => {
+    const cs = (sel: string) => getComputedStyle(document.querySelector(sel)!);
+    const [body, p] = [cs('body'), cs('#definition-body > p')];
+    return {
+      leading: parseFloat(body.lineHeight) / parseFloat(body.fontSize),
+      weight: body.fontWeight,
+      gap: parseFloat(p.marginBottom) / parseFloat(p.fontSize),
+      muted: cs('.entity-names').color,
+      lede: cs('.lede').color,
+      ink: body.color,
+      // The other-language name: Fraunces, preloaded, never swapped after the first paint (CLS)
+      name: cs('.entity-names div:first-child dd').fontFamily,
+    };
+  });
+  const phone = width() < 600;
+  expect(t.leading).toBeCloseTo(phone ? 1.65 : 1.5, 2);
+  expect(t.weight).toBe(phone ? '400' : '430');
+  expect(t.gap).toBeCloseTo(phone ? 1.1 : 0.85, 2);
+  expect(t.muted).toBe(phone ? 'rgb(87, 80, 97)' : 'rgb(79, 72, 89)'); // #575061 on phones, #4f4859 from 600 px
+  expect(t.lede).toBe(phone ? t.muted : t.ink);
+  expect(t.name).toMatch(/^"?Fraunces/);
+});
+
 test('from 1024 px the text keeps 60 characters a line beside the side list; from 1280 px text and list are one centred block', async ({ page }) => {
   test.skip(width() !== 1280, 'one run per engine: the test sets its own widths');
   for (const viewport of [
