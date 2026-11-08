@@ -69,7 +69,8 @@ const [before, after] = tEntity(lang, 'nextEntry').split('{name}');
           data-next-link
         >
           <span>
-            {tEntity(lang, 'nextShort')}<span aria-hidden="true"> →</span>
+            {/* A no-break space: in the 9.5rem list (1024-1279 px) the arrow wrapped alone onto a line */}
+            {tEntity(lang, 'nextShort')}<span aria-hidden="true">&nbsp;→</span>
           </span>
         </a>
       </p>

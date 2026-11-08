@@ -193,6 +193,15 @@ test.describe('touch screens', () => {
       expect(state.inside, `${id}: the current entry is in the list's box`).toBe(true);
       expect(state.next, `${id}: "Scheda successiva" under the list, on screen`).toBe(true);
     }
+    // In the narrow list the arrow stays on the line of the word before it, never alone.
+    const together = await page.locator('.toc-next a > span').evaluate((s) => {
+      const text = s.firstChild as Text;
+      const range = document.createRange();
+      range.setStart(text, text.data.trimEnd().length - 1);
+      range.setEnd(text, text.data.trimEnd().length);
+      return Math.abs(range.getBoundingClientRect().top - s.querySelector('[aria-hidden="true"]')!.getBoundingClientRect().top) < 2;
+    });
+    expect(together, 'the arrow on the line of "successiva"').toBe(true);
   });
 });
 
