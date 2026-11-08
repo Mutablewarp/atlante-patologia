@@ -88,10 +88,13 @@
 .entity-names dd {
   margin: 0;
 }
-/* The name in the other language: the real Atkinson italic (Fraunces ships no italic: the browser slanted the roman) */
+/* The name in the other language. In Fraunces, preloaded and never swapped: in the Atkinson italic, which arrives
+   later (swap), the line's baseline moved 3 px on iPads (CLS). Fraunces has no italic: the browser slants it. */
 .entity-names div:first-child dd {
+  font-family: var(--font-display);
   font-size: var(--step-1);
   font-style: italic;
+  color: var(--ink);
 }
 
 .lens-chips,
