@@ -12,9 +12,6 @@ html {
   scroll-padding-top: calc(var(--topbar-h) + var(--space-4));
   /* --notice-h: how far the fixed notices reach up from the bottom (db-notice.ts), 0 when none is shown. */
   scroll-padding-bottom: calc(var(--notice-h, 0px) + var(--space-4));
-  /* Where scrollbars take room (Windows, Linux), keep it from the first paint: a long page painted before it is fully
-     parsed is not yet scrollable, and the scrollbar arriving later moved the right-hand top-bar tools (CLS). */
-  scrollbar-gutter: stable;
 }
 
 body {

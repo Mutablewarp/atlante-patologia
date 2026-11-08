@@ -17,11 +17,19 @@ async function cls(page: Page, path: string) {
     const w = window as unknown as { __cls: number; __shifts: string[] };
     w.__cls = 0;
     w.__shifts = [];
+    type Source = { node?: Node; previousRect: DOMRectReadOnly; currentRect: DOMRectReadOnly };
+    const box = (r: DOMRectReadOnly) => `${Math.round(r.x)},${Math.round(r.y)} ${Math.round(r.width)}×${Math.round(r.height)}`;
     new PerformanceObserver((list) => {
-      for (const e of list.getEntries() as (PerformanceEntry & { value: number; hadRecentInput: boolean; sources?: { node?: Node }[] })[]) {
+      for (const e of list.getEntries() as (PerformanceEntry & { value: number; hadRecentInput: boolean; sources?: Source[] })[]) {
         if (e.hadRecentInput) continue;
         w.__cls += e.value;
-        w.__shifts.push((e.sources ?? []).map((s) => (s.node as Element | undefined)?.className || s.node?.nodeName).join(','));
+        // Where each element moved, when, and how many font faces had loaded by then: enough to find a cause from a CI log.
+        const fonts = [...document.fonts].filter((f) => f.status === 'loaded').length;
+        w.__shifts.push(
+          (e.sources ?? [])
+            .map((s) => `${String((s.node as Element | undefined)?.className || s.node?.nodeName)} (${box(s.previousRect)} → ${box(s.currentRect)})`)
+            .join(',') + ` @${Math.round(e.startTime)}ms, ${fonts} fonts`,
+        );
       }
     }).observe({ type: 'layout-shift', buffered: true });
   });
