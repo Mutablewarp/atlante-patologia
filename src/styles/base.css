@@ -292,13 +292,20 @@ textarea {
 /* Touch screens from 600 px (iPad): controls and list entries are at least 44 px tall (SC 2.5.5), by padding, at the
    same type size; phones keep their layout. `:root` outranks the base rule of each control, wherever it loads. The
    links of the breadcrumb row keep the height of their line (negative margins), so the card text does not move down;
-   an 8 px gap keeps the two rows of a wrapped row from overlapping. */
+   a 12 px gap keeps the two rows of a wrapped row from overlapping (8 px left their targets 2 px over each other). */
 @media (min-width: 600px) and (pointer: coarse) {
   :root {
     --chips-h: 4.35rem; /* the chip strip with 2.75rem chips (tokens.css) */
   }
-  :root :is(.chip, .btn-small, .segmented button, .section-toc a, .lens-terms a, .matrix-thumb, .module-tree :is(a, summary)) {
+  :root :is(.chip, .btn-small, .segmented button, .section-toc a, .lens-terms a, .matrix-thumb, .module-tree :is(a, summary), .lang-switch :is(a, span), .topbar-search input) {
     min-height: 2.75rem;
+  }
+  /* Short labels are 44 px wide too ("Atlas", "Full", A- and A+; the card's A-/A+: entity.css) */
+  :root :is(.text-size .btn, .segmented button, .breadcrumb a) {
+    min-width: 2.75rem;
+  }
+  :root .breadcrumb a {
+    text-align: center;
   }
   /* Text entries: centred in their taller box (a chapter's "sei qui" line stacks under the name) */
   :root :is(.lens-terms a, .module-tree a) {
@@ -319,7 +326,7 @@ textarea {
     margin-block: calc((1lh - 2.75rem) / 2);
   }
   :root .crumb-row {
-    row-gap: var(--space-2);
+    row-gap: var(--space-3);
   }
   /* The taller reading toolbar takes back what it adds above the card text: on an iPad in landscape (1180 x 820)
      the first sentence of the card stays on the first screen */

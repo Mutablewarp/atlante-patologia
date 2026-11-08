@@ -76,7 +76,31 @@ test.describe('touch screens', () => {
   test('from 600 px every control and list entry is at least 44 px tall (SC 2.5.5); phones keep their size', async ({ page }) => {
     test.skip(width() !== 768, 'one run per engine: the test sets its own iPad and phone viewports');
     await page.addInitScript(() => localStorage.setItem('ap-disclaimer', '1'));
-    const SEL = '.chip, .btn-small, .segmented button, .section-toc a, .breadcrumb a, .pager a, .lens-terms a, .matrix-thumb, .module-tree a, .module-tree summary';
+    const SEL = '.chip, .btn-small, .segmented button, .section-toc a, .breadcrumb a, .pager a, .lens-terms a, .matrix-thumb, .module-tree a, .module-tree summary, .lang-switch a, .topbar-search input';
+    // Short labels are as wide as they are tall ("Atlas", "Full", A- and A+), and so are the side list's entries
+    const WIDE = '.text-size .btn, .segmented button, .breadcrumb a, .lang-switch a, .section-toc li > a';
+    const narrow = () =>
+      page.evaluate((sel) => {
+        const out: string[] = [];
+        for (const el of document.querySelectorAll<HTMLElement>(sel)) {
+          const r = el.getBoundingClientRect();
+          if (el.checkVisibility() && r.width < 43.5) out.push(`${el.className || el.tagName.toLowerCase()} "${el.textContent!.trim().slice(0, 24)}" ${Math.round(r.width)} px wide`);
+        }
+        return out;
+      }, WIDE);
+    // The tap areas of the breadcrumb row (its links and the pager's) never overlap, wrapped or not
+    const overlaps = () =>
+      page.evaluate(() => {
+        const boxes = [...document.querySelectorAll('.crumb-row a')].filter((a) => a.checkVisibility()).map((a) => a.getBoundingClientRect());
+        const out: string[] = [];
+        boxes.forEach((a, i) =>
+          boxes.slice(i + 1).forEach((b) => {
+            const [x, y] = [Math.min(a.right, b.right) - Math.max(a.left, b.left), Math.min(a.bottom, b.bottom) - Math.max(a.top, b.top)];
+            if (x > 0.5 && y > 0.5) out.push(`${Math.round(x)} x ${Math.round(y)} px`);
+          }),
+        );
+        return out;
+      });
     const heights = () =>
       page.evaluate((sel) => {
         const out: Record<string, number> = {};
@@ -101,6 +125,8 @@ test.describe('touch screens', () => {
         }
         const small = Object.entries(await heights()).filter(([, h]) => h < 43.5);
         expect(small, `${path} at ${viewport.width} px`).toEqual([]);
+        expect(await narrow(), `${path} at ${viewport.width} px`).toEqual([]);
+        expect(await overlaps(), `${path} at ${viewport.width} px: breadcrumb row`).toEqual([]);
         if (viewport.width < 1024 && path.includes('/e/')) await page.keyboard.press('Escape');
       }
       // The first sentence of the card stays on the first screen (it reached 809 of 820 px before the touch sizes).

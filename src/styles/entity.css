@@ -251,6 +251,13 @@ html .fold-toggle {
     padding-inline: var(--space-1);
   }
 }
+/* On touch screens A- and A+ are 44 px square, as on main (base.css): there the row holds from 820 px (Italian
+   labels; it wraps once at 744-819 px) */
+@media (min-width: 600px) and (pointer: coarse) {
+  .entity-toolbar .text-size .btn {
+    min-width: 2.75rem;
+  }
+}
 @media screen and (max-width: 599px) {
   .objectives {
     padding-block: var(--space-2);
@@ -717,10 +724,14 @@ html:not(.js) .section-toggle {
   .section-toc ol[data-fade~='end'] {
     --fade-end: transparent;
   }
+  /* The whole row is the target (short labels were 36 px wide); a rounded rectangle for the focus ring, which a pill
+     drew across the first and last letters of a wrapped entry */
   .section-toc a {
+    display: flex;
     min-height: 1.9rem;
     padding: 0;
     border: 0;
+    border-radius: var(--radius-s);
     background: none;
     color: var(--ink-muted);
     white-space: normal;

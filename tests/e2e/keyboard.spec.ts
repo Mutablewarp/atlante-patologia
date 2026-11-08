@@ -242,6 +242,10 @@ test('focus rings are drawn whole inside pill groups, the chip strip and the cha
     });
     expect(cut, sel).toBe('');
   }
+  // From 1024 px a side-list entry is a whole row with a rounded rectangle for its ring: a pill crossed the first and
+  // last letters of a wrapped entry.
+  if (width >= 1024)
+    expect(await page.locator('.section-toc a[href="#ancillary"]').evaluate((a) => [getComputedStyle(a).display, getComputedStyle(a).borderRadius])).toEqual(['flex', '6px']);
 });
 
 test('the learner-database notice never hides the focused control', async ({ context, browserName }) => {
