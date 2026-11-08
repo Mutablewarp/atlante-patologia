@@ -729,3 +729,26 @@ html:not(.js) .section-toggle {
     gap: var(--space-7);
   }
 }
+/* 1024-1279 px (iPad Pro in portrait, small laptops): with the sidebar open, a 14rem list and a 3rem gap left the
+   text 444 px and 52 characters a line. A 9.5rem list and a 1rem gap give it 548 px: 61 characters in WebKit, 64 in
+   Chromium (11rem and 1.5rem gave WebKit 57). The list's entries wrap. */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .entity-layout,
+  .pattern .pattern-lead {
+    grid-template-columns: minmax(0, 1fr) 9.5rem;
+    gap: var(--space-4);
+  }
+}
+/* From 1280 px the text column is the measure (and the room of the section toggles), the list sits right beside it,
+   and on cards the page is that block, centred: no empty band of 240-370 px between the text and the list. Pattern
+   pages keep their block on the left, above the full-width matrix. */
+@media (min-width: 1280px) {
+  .entity-layout,
+  .pattern .pattern-lead {
+    grid-template-columns: minmax(0, calc(var(--measure) + 4rem)) 14rem;
+    gap: var(--space-6);
+  }
+  .page:has(> .entity) {
+    max-width: calc(var(--measure) + 4rem + var(--space-6) + 14rem);
+  }
+}

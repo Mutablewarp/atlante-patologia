@@ -378,11 +378,9 @@ test('the reading toolbar keeps one row from 768 px: mode, A-/A+, bookmark, quiz
   expect(Math.max(...tops) - Math.min(...tops), 'one row').toBeLessThan(boxes[0]!.height / 2);
 });
 
-test('the reading measure holds 62-70 characters per line on tablets and computers', async ({ page }) => {
-  test.skip(width() < 600, 'phones: the screen, not the measure, sets the line length');
-  await page.goto(ENTITY);
-  // Median of the full lines (the last line of each paragraph excluded) of the card's running text.
-  const median = await page.evaluate(() => {
+/** Median characters of the full lines (the last line of each paragraph excluded) of the card's running text. */
+const medianLine = (page: Page) =>
+  page.evaluate(() => {
     const counts: number[] = [];
     const range = document.createRange();
     for (const p of document.querySelectorAll('.entity-section:not([data-callout]) .section-body > p')) {
@@ -401,8 +399,40 @@ test('the reading measure holds 62-70 characters per line on tablets and compute
     counts.sort((a, b) => a - b);
     return counts[Math.floor(counts.length / 2)]!;
   });
+
+test('the reading measure holds 62-70 characters per line on tablets and computers', async ({ page }) => {
+  test.skip(width() < 600, 'phones: the screen, not the measure, sets the line length');
+  await page.goto(ENTITY);
+  const median = await medianLine(page);
   expect(median).toBeGreaterThanOrEqual(62);
   expect(median).toBeLessThanOrEqual(70);
+});
+
+test('from 1024 px the text keeps 60 characters a line beside the side list; from 1280 px text and list are one centred block', async ({ page }) => {
+  test.skip(width() !== 1280, 'one run per engine: the test sets its own widths');
+  for (const viewport of [
+    { width: 1024, height: 1366 }, // iPad Pro 12.9 in portrait, sidebar open: 52 characters a line before
+    { width: 1180, height: 820 },
+    { width: 1440, height: 900 },
+    { width: 1920, height: 1080 },
+  ]) {
+    await page.setViewportSize(viewport);
+    await page.goto(ENTITY);
+    const median = await medianLine(page);
+    expect(median, `${viewport.width} px`).toBeGreaterThanOrEqual(60);
+    expect(median, `${viewport.width} px`).toBeLessThanOrEqual(70);
+    if (viewport.width < 1280) continue;
+    // No empty band between the text and the list: the gap and the room of the section toggles only (6rem).
+    const [text, list, page_, main] = await page.evaluate(() =>
+      ['#definition-body > p', '.section-toc', '.page', 'main'].map((s) => document.querySelector(s)!.getBoundingClientRect().toJSON() as DOMRect),
+    );
+    expect(list!.left - text!.right, `${viewport.width} px: text to list`).toBeLessThanOrEqual(6 * 16 + 2);
+    // The block sits in the middle of the reading area, and the breadcrumb and the header start where the text starts.
+    const pad = parseFloat(await page.evaluate(() => getComputedStyle(document.querySelector('main')!).paddingLeft));
+    expect(Math.abs(page_!.left - (main!.left + pad) - (main!.right - pad - page_!.right)), `${viewport.width} px: centred`).toBeLessThanOrEqual(2);
+    for (const sel of ['.crumb-row', '.entity-head h1'])
+      expect(Math.abs((await page.locator(sel).boundingBox())!.x - text!.left), `${viewport.width} px: ${sel}`).toBeLessThanOrEqual(1);
+  }
 });
 
 test('the differential table scrolls inside a labelled region with a sticky first column on phones', async ({ page }) => {
