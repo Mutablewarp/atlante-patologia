@@ -51,11 +51,11 @@ for (const path of ['it/e/apoptosis/', 'en/pattern/p01-necrosis/'])
   });
 
 test('no layout shift when the shortcut hint turns into "⌘ K" on Apple devices (CPU 4× slower)', async ({ page }) => {
-  test.skip((test.info().project.metadata.width as number) < 1024, 'the search field and its hint show from 1024 px');
+  test.skip((test.info().project.metadata.width as number) < 740, 'the hint shows on the palette button from 740 px, in the search field from 1024 px');
   await page.addInitScript(() => Object.defineProperty(Navigator.prototype, 'platform', { get: () => 'MacIntel' }));
   const r = await cls(page, 'it/');
   expect(r.cls, r.shifts.join(' | ')).toBe(0);
-  await expect(page.locator('[data-shortcut-hint]')).toHaveText('⌘ K');
+  await expect(page.locator('[data-shortcut-hint]:visible')).toHaveText('⌘ K');
 });
 
 /** The longest card name in g01: it wraps over several lines in the resume card unless clamped. */

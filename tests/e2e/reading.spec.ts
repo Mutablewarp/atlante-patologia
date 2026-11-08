@@ -171,8 +171,9 @@ test('A-/A+ changes the reading size, is keyboard operable and is applied before
 
 test('the site name in the top bar is shown whole or as "Atlante", never cut, at every reading size', async ({ page }) => {
   test.skip(width() >= 1024, 'from 1024 px the name is in the sidebar');
-  // Phones are also checked at 320 px, the narrowest common width.
-  for (const w of width() < 600 ? [width(), 320] : [width()])
+  // Phones are also checked at 320 px, the narrowest common width; tablets from 600 px, where the chapter button
+  // and the palette shortcut share the bar.
+  for (const w of width() < 600 ? [width(), 320] : [600, 640, 700, 744, width()])
     for (const size of ['m', 'l', 'xl']) {
       await page.setViewportSize({ width: w, height: 700 });
       await page.addInitScript((s) => localStorage.setItem('ap-text', s), size);
@@ -195,7 +196,7 @@ test('at the larger reading sizes no card scrolls sideways, folded toggles inclu
   // The folded "Lenti (n)" toggle floats beside the badges: a badge that does not fit must move below it.
   // Phones are checked down to 320 px; wider projects at their own width.
   for (const path of [ENTITY, 'en/e/coagulative-necrosis/', 'it/e/other-regulated-cell-death/'])
-    for (const w of width() < 600 ? [320, 360, 375] : [width()])
+    for (const w of width() < 600 ? [320, 360, 375] : width() < 1024 ? [600, 700, width()] : [width()])
       for (const size of ['l', 'xl']) {
         await page.setViewportSize({ width: w, height: 700 });
         await page.addInitScript((s) => localStorage.setItem('ap-text', s), size);

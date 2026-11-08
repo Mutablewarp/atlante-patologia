@@ -79,6 +79,8 @@ const palette = {
         <circle cx="10.8" cy="10.8" r="6.6"></circle>
         <path d="M15.6 15.6 20.4 20.4"></path>
       </svg>
+      {/* The shortcut, shown where the top bar has no search field to show it (600-1023 px) */}
+      <kbd class="palette-kbd" aria-hidden="true" data-shortcut-hint>Ctrl K</kbd>
     </button>
     <LangSwitch lang={lang} toHome={langSwitchToHome} />
     <ThemeToggle lang={lang} />
@@ -86,10 +88,30 @@ const palette = {
 </header>
 
 <style>
-  /* Phones reach search from the bottom tab bar; keep the brand readable. */
-  @media (max-width: 599px) {
+  /* Phones reach search from the bottom tab bar; keep the brand readable. From 1024 px the top bar has the search
+     field, which shows the shortcut that opens the palette: a second magnifier would only repeat it. */
+  @media (max-width: 599px), (min-width: 1024px) {
     [data-palette-open] {
       display: none;
+    }
+  }
+  /* 740-1023 px (iPads in portrait): the shortcut on the button, where the bar has no search field to show it.
+     Narrower bars and the largest reading size need that room for the site name. */
+  .palette-kbd {
+    display: none;
+  }
+  @media (min-width: 740px) and (max-width: 1023px) {
+    :global(:root:not(.text-xl)) [data-palette-open] {
+      grid-auto-flow: column;
+      gap: var(--space-2);
+      padding-inline: var(--space-3);
+    }
+    /* Fixed box: the script swaps "Ctrl K" for "⌘ K" on Apple devices after paint (no layout shift) */
+    :global(:root:not(.text-xl)) .palette-kbd {
+      display: block;
+      box-sizing: border-box;
+      width: 4.75em;
+      text-align: center;
     }
   }
 </style>

@@ -168,6 +168,25 @@ test.describe('touch screens', () => {
   });
 });
 
+test('the palette shortcut shows on its button on iPads in portrait; from 1024 px the search field takes the button’s place', async ({ page }) => {
+  await page.goto('it/e/coagulative-necrosis/');
+  const button = page.locator('[data-palette-open]');
+  const field = page.locator('#global-search');
+  if (width() < 600) return await expect(button).toBeHidden(); // phones: search is in the tab bar
+  if (width() < 1024) {
+    await expect(button.locator('kbd')).toBeVisible();
+    await expect(button.locator('kbd')).toHaveText(/^(Ctrl K|⌘ K)$/);
+    await expect(field).toBeHidden();
+  } else {
+    await expect(button).toBeHidden(); // one magnifier, not two
+    await expect(field).toBeVisible();
+    await expect(page.locator('.topbar-search kbd')).toHaveText(/^(Ctrl K|⌘ K)$/);
+  }
+  // The shortcut opens the palette at both widths.
+  await page.keyboard.press('Control+k');
+  await expect(page.getByRole('dialog', { name: 'Ricerca rapida' })).toBeVisible();
+});
+
 test('no page scrolls horizontally @smoke', async ({ page }) => {
   for (const path of Object.values(TEMPLATES)) {
     await page.goto(path);

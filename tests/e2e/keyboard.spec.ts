@@ -62,7 +62,7 @@ async function focusState(page: Page): Promise<Stop | null> {
     };
     return {
       tag: el.tagName.toLowerCase(),
-      skip: el.classList.contains('skip-link'),
+      skip: el === document.querySelector('.skip-link'), // the first one: reading pages have a second
       label: (el.getAttribute('aria-label') ?? el.textContent ?? '').trim().slice(0, 40),
       visible,
       obscured: pts.every(covered),
@@ -83,6 +83,45 @@ test('the skip link is the first stop and moves focus to the main content @smoke
   await page.keyboard.press('Enter');
   await expect(page).toHaveURL(/#main$/);
   await expect(page.locator('#main')).toBeFocused();
+});
+
+test('reading pages have a second skip link, to the text of the card, past its header and tools', async ({ page, browserName }) => {
+  for (const [path, name, first] of [
+    ['it/e/apoptosis/', 'Vai al testo della scheda', 'definition'],
+    ['en/pattern/p01-necrosis/', 'Skip to the pattern text', 'overview'],
+  ] as const) {
+    await page.goto(path);
+    await page.keyboard.press(tabKey(browserName));
+    await page.keyboard.press(tabKey(browserName));
+    const skip = page.getByRole('link', { name });
+    await expect(skip, path).toBeFocused();
+    await expect(skip, path).toBeInViewport();
+    await page.keyboard.press('Enter');
+    await expect(page, path).toHaveURL(new RegExp(`#${first}$`));
+    // The text starts below the bars across the top: the top bar, and the chip strip below 1024 px (from 1024 px
+    // the list is beside the text).
+    const [top, bars] = await page.evaluate(
+      (id) => [
+        document.getElementById(id)!.getBoundingClientRect().top,
+        Math.max(...[...document.querySelectorAll(innerWidth < 1024 ? '.topbar, .section-toc' : '.topbar')].map((b) => b.getBoundingClientRect().bottom)),
+      ],
+      first,
+    );
+    expect(top, path).toBeGreaterThanOrEqual(bars! - 1);
+    // The next stop comes after the start of that section (on a card, its Definition toggle): the header, its tools
+    // and the section list are skipped.
+    await page.keyboard.press(tabKey(browserName));
+    const state = await page.evaluate((id) => {
+      const target = document.getElementById(id)!;
+      const el = document.activeElement!;
+      return {
+        after: target.contains(el) || !!(target.compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING),
+        toggle: el.matches(`#${id} [data-section-toggle]`),
+      };
+    }, first);
+    expect(state.after, `${path}: focus after the start of the text`).toBe(true);
+    if (path.includes('/e/')) expect(state.toggle, 'the Definition toggle').toBe(true);
+  }
 });
 
 test('no positive tabindex anywhere', async ({ page }) => {

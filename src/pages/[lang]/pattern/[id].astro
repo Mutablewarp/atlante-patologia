@@ -62,6 +62,7 @@ const sectioned = html.replace(/<h2\b[\s\S]*?(?=<h2\b|$)/g, (s) => `<section>${s
 ---
 
 <BaseLayout lang={lang} title={pattern.names[lang]} description={pattern.summary[lang]} tab="atlas">
+  <a slot="skip" class="skip-link" href={`#${toc[0]!.id}`}>{t('skipToPatternText')}</a>
   <Breadcrumb
     lang={lang}
     items={[

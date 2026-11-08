@@ -118,6 +118,20 @@ html {
   align-items: center;
   gap: var(--space-2);
 }
+/* From 600 px the tools keep their width and the site name gives way, down to "Atlante". The group used to shrink:
+   its icons count as nothing in min-content sizing (max-width: 100%), so the language switch was squeezed below its
+   44 px targets or the last button stuck out of the bar. Phones keep their bar. */
+@media (min-width: 600px) {
+  .topbar-tools {
+    flex: none;
+  }
+}
+/* 600-639 px at the largest reading size: the mark goes and "Atlante" stays whole, as below 360 px on phones */
+@media (min-width: 600px) and (max-width: 639px) {
+  :root.text-xl .topbar .brand svg {
+    display: none;
+  }
+}
 
 .lang-switch {
   display: inline-flex;

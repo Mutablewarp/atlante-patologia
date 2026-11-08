@@ -187,6 +187,8 @@ export const tEntity = defineStrings({
   nextIn: { it: 'Successivo in “{term}”', en: 'Next in “{term}”' },
   prevCard: { it: 'Scheda precedente', en: 'Previous card' },
   nextCard: { it: 'Scheda successiva', en: 'Next card' },
+  /** Second skip link of a card: to its first section, past the header and the tools */
+  skipToText: { it: 'Vai al testo della scheda', en: 'Skip to the card text' },
   /** Last entries of the section list (SectionToc.astro): the block at the end of the card, and the card itself */
   nextEntry: { it: 'Successiva: {name}', en: 'Next: {name}' },
   nextShort: { it: 'Successiva', en: 'Next' },

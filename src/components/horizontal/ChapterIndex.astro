@@ -21,7 +21,7 @@ const { lang, data, current } = Astro.props;
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
     <path d="M9.5 6h10M9.5 12h10M9.5 18h10M4.5 6h.01M4.5 12h.01M4.5 18h.01"></path>
   </svg>
-  {tHz(lang, 'chapterOpen')}
+  <span class="chapter-label">{tHz(lang, 'chapterOpen')}</span>
 </button>
 <dialog class="chapter-dialog" aria-labelledby="chapter-tree-title" data-chapter-dialog>
   <form method="dialog">

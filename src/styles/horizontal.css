@@ -239,6 +239,22 @@
     display: inline-flex;
   }
 }
+/* Below 740 px the button keeps its icon and its name, and the word "Capitolo" is read but not shown: at the larger
+   reading sizes the site name lost even "Atlante" */
+@media (min-width: 600px) and (max-width: 739px) {
+  .chapter-open {
+    min-width: 2.75rem;
+    padding-inline: 0;
+  }
+  .chapter-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+}
 @media (min-width: 1024px) {
   :root[data-sidebar='collapsed'] .chapter-open {
     display: inline-flex;

@@ -49,6 +49,8 @@ export const tHz = defineStrings({
 
   // Pattern page
   patternKicker: { it: 'Quadro trasversale', en: 'Pattern page' },
+  /** Second skip link of a pattern page: to its first section */
+  skipToPatternText: { it: 'Vai al testo del quadro', en: 'Skip to the pattern text' },
   matrixTitle: { it: 'Confronto', en: 'Comparison' },
   matrixImages: { it: 'Immagini', en: 'Images' },
   imagesTitle: { it: 'Immagini per scheda', en: 'Images by card' },
