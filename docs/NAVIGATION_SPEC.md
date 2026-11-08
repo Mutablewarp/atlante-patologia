@@ -94,9 +94,9 @@ Body contents:
 - Each section opens with an optional "Try to recall first" block: a generic localized prompt, with the answer hidden until revealed.
 
 Also on the page:
-- Related panel ("Schede correlate", `#related`), grouped by relation type.
+- Related panel ("Collegamenti", `#related`), grouped by relation type.
 - Breadcrumb, and Prev/Next within the current lens (`#card-nav`). From 600 px the same previous/next pair sits beside the breadcrumb ("← Necrosi caseosa · Necrosi colliquativa →", D066).
-- Section list: the chip strip below 1024 px, the side list from 1024 px. From 600 px it ends with "Schede correlate" and "Successiva: ‹name› →" (the block at the end of the card); from 1024 px a "Successiva →" link under the side list opens the next card. In a lens context (`?via=`) both name that lens's next card. The current entry is the section under a reading line 8 px below where an anchor puts its heading (`scroll-padding-top`); a tapped entry is marked at once and the spy waits until the scroll settles; at the end of the page a tapped section on screen, or else the last one, is current.
+- Section list: the chip strip below 1024 px, the side list from 1024 px. From 600 px the strip ends with "Collegamenti" and "Scheda successiva: ‹name› →", a link to the next card itself (`rel="next"`, never marked by the spy); from 1024 px the side list ends with "Collegamenti" and that link sits under it as "Scheda successiva →" (named "Scheda successiva: ‹name›", as in the pager). One name always leads to one card (SC 2.4.4). In a lens context (`?via=`) both lead to that lens's next card. Keyboard focus in the strip stays in view: a keyboard-focused chip comes to the middle of the strip, the spy does not recentre the strip while keyboard focus is in it, and a chip taking focus does not scroll the page (SC 2.4.11). The current entry is the section under a reading line 8 px below where an anchor puts its heading (`scroll-padding-top`); a tapped entry is marked at once and the spy waits until the scroll settles; at the end of the page a tapped section on screen, or else the last one, is current.
 - Two skip links: "Vai al contenuto" (`#main`) and "Vai al testo della scheda" (the first section); pattern pages: "Vai al testo del quadro".
 - Deep-linkable section anchors (`#micro` and so on).
 - A print stylesheet that produces a one-page summary (high-yield, differential, traps).
@@ -105,7 +105,7 @@ Reading layout (D068):
 - 600–1023 px: one centred column (46rem), chip strip under the top bar, at most 4.35rem tall on touch screens (`--chips-h` feeds `scroll-padding-top`). The strip fades at the edges that hide chips; the current chip is filled in hematoxylin.
 - 1024–1279 px: side list 9.5rem with a 1rem gap, so the text keeps 60 characters a line with the sidebar open (61 in WebKit and 64 in Chromium at 1024 px; 52 before).
 - ≥ 1280 px: the text column is the measure (31em) plus the room of the section toggles, the side list sits 2rem beside it, and the card (breadcrumb, header, text, list) is one block centred in the page. Pattern pages keep their block on the left, above the full-width matrix.
-- When the side list is taller than the screen (touch sizes in landscape, the largest reading size) only its entries scroll: the title and the "Successiva →" link stay in view, the current entry is kept in the middle and the edges that hide entries fade.
+- When the side list is taller than the screen (touch sizes in landscape, the largest reading size) only its entries scroll: the title and the "Scheda successiva →" link stay in view, the current entry is kept in the middle and the edges that hide entries fade.
 
 ### Phone (375–430 px)
 
@@ -141,7 +141,7 @@ Reading layout (D068):
 │ ⌂ │ ‹ Atlas › General  ← Caseous · Liquef. → │  breadcrumb + previous/next card
 │ ▦ │ Coagulative necrosis   badges  [Lenti ▾] │
 │ ✎ │ [Quick|Full] [A−][A+] [☆] [Quiz] [Tools] │  one row from 768 px
-│ ⌕ │ chips: Def · Path · … · Related · Next → │  (sticky, fades at the edges)
+│ ⌕ │ chips: Def · Path · … · Related · Next → │  (sticky, fades; Next → is the card)
 │ ☺ │──────────────────────────────────────────│
 │   │ sections…                                │
 │   │ Related (grouped) — 2 columns            │
@@ -161,9 +161,9 @@ Reading layout (D068):
 │   • Adapt…   │                                       │ ▸ Pathogenesis  │ scroll-spy
 │   • Necro… ◀ │ sections (collapsible, Expand all)    │ • Gross         │
 │ Study        │                                       │ …               │
-│ Search       │ Related (grouped by relation type)    │ Related cards   │
-│ Me           │ ◀ Prev in lens            Next ▶      │ Next: ‹name›    │
-│ (collapse «) │                                       │ ─ Successiva →  │ the next card itself
+│ Search       │ Related (grouped by relation type)    │ Related         │
+│ Me           │ ◀ Prev in lens            Next ▶      │ ─ Next card →   │ the next card itself
+│ (collapse «) │                                       │                 │
 ├──────────────┴──────────────────────────────────────┴─────────────────┤
 │ Educational use only — not for diagnosis or treatment. Errors possible. Report ▸ │ footer on every page
 │ AI-generated texts, checked automatically; no expert review yet. Method ▸        │ AI line (O11)

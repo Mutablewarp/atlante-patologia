@@ -3,9 +3,9 @@
  * Contents of a reading page (entity, pattern): a sticky chip strip on phones
  * and tablets, a side list on desktop (entity.css). shell.ts marks the entry of
  * the section being read; `quick` lets Quick mode hide an entry.
- * Entity pages, from 600 px: the list ends with the related cards and the next card (the links at the end of the
- * card), and from 1024 px the next card itself is one click away under the list. lens-context.ts gives both the next
- * card of the lens the reader came from; with no next card in the order shown they stay hidden.
+ * Entity pages, from 600 px: the strip ends with the related cards and a link to the next card; from 1024 px that
+ * link sits under the side list instead (entity.css). lens-context.ts points both at the next card of the lens the
+ * reader came from; with no next card in the order shown they stay hidden.
  */
 import type { Lang } from '../../i18n/index.ts';
 import { fmt } from '../../i18n/index.ts';
@@ -14,7 +14,7 @@ import { tEntity } from '../../i18n/pages.ts';
 interface Props {
   lang: Lang;
   items: { id: string; label: string; quick?: boolean }[];
-  /** Ids of the related-cards section and of the previous/next block, when the page has them. */
+  /** Id of the related-cards section; `cardNav`: the page has a previous/next block (the id of that block). */
   related?: string;
   cardNav?: string;
   next?: { href: string; name: string };
@@ -43,8 +43,9 @@ const [before, after] = tEntity(lang, 'nextEntry').split('{name}');
     {
       cardNav && (
         <li class="toc-extra" hidden={!next} data-next-entry>
-          {/* One box inside the link: as a flex item of its own each part lost its spaces and could not wrap */}
-          <a href={`#${cardNav}`}>
+          {/* The card itself, not the block at the end of this one: one name, one destination (SC 2.4.4). One box
+              inside the link: as a flex item of its own each part lost its spaces and could not wrap. */}
+          <a rel="next" href={next?.href} data-next-link>
             <span>
               {before}
               <span data-next-name>{next?.name}</span>
@@ -59,7 +60,7 @@ const [before, after] = tEntity(lang, 'nextEntry').split('{name}');
   {
     cardNav && (
       <p class="toc-next" hidden={!next} data-next-entry>
-        {/* Named "Successiva: <card>", the visible label first (SC 2.5.3); lens-context.ts fills data-label */}
+        {/* Named "Scheda successiva: <card>", the visible label first (SC 2.5.3); lens-context.ts fills data-label */}
         <a
           rel="next"
           href={next?.href}

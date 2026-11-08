@@ -165,7 +165,7 @@ test.describe('touch screens', () => {
       expect(state.sideways, id).toBe(false);
       expect(state.bottom, id).toBeLessThanOrEqual(820);
       expect(state.inside, `${id}: the current entry is in the list's box`).toBe(true);
-      expect(state.next, `${id}: "Successiva" under the list, on screen`).toBe(true);
+      expect(state.next, `${id}: "Scheda successiva" under the list, on screen`).toBe(true);
     }
   });
 });
@@ -272,23 +272,39 @@ test('from 600 px the previous and next card sit beside the breadcrumb, in the o
   await expect(pager.getByRole('link', { name: 'Scheda successiva: Steatosi (degenerazione grassa)' })).toHaveAttribute('href', /\/fatty-change\/\?via=system:heart$/);
 });
 
-test('from 600 px the section list ends with the related cards and the next card; from 1024 px the next card is a click away', async ({ page }) => {
+test('from 600 px the section list ends with the related cards and a link to the next card; from 1024 px it sits under the list', async ({ page }) => {
   await page.goto('it/e/coagulative-necrosis/');
   const toc = page.getByRole('navigation', { name: 'In questa pagina' });
   const list = toc.locator('ol');
-  const related = list.getByRole('link', { name: 'Schede correlate' });
-  const nextEntry = list.getByRole('link', { name: 'Successiva: Necrosi colliquativa' });
+  const related = list.getByRole('link', { name: 'Collegamenti' });
+  const nextEntry = list.getByRole('link', { name: 'Scheda successiva: Necrosi colliquativa' });
   const nextCard = toc.locator('.toc-next a');
   if (width() < 600) {
     // Phones keep their chip strip.
     for (const el of [related, nextEntry, nextCard]) await expect(el).toBeHidden();
     return;
   }
+  await expect(page.locator('#related h2')).toHaveText('Collegamenti'); // the entry names its heading
   const shown = await list.locator('a').evaluateAll((as) => as.filter((a) => a.getClientRects().length).map((a) => a.getAttribute('href')));
-  expect(shown.slice(-3)).toEqual(['#quick-check', '#related', '#card-nav']);
-  await expect(page.locator('#related h2')).toHaveText('Schede correlate'); // the entry names its heading
-  // Their parts keep the spaces between them ("Successiva: Necrosi colliquativa →", "← Necrosi caseosa"): set as
-  // separate flex items, the spaces were dropped.
+  // One name, one destination (SC 2.4.4): the next card is a link to the card, in the strip below 1024 px and under
+  // the list from 1024 px, never both on screen and never a jump to the end of this card.
+  const next = /\/it\/e\/liquefactive-necrosis\/$/;
+  if (width() < 1024) {
+    expect(shown.slice(-3, -1)).toEqual(['#quick-check', '#related']);
+    expect(shown.at(-1)).toMatch(next);
+    await expect(nextEntry).toHaveAttribute('rel', 'next');
+    await expect(nextCard).toBeHidden();
+  } else {
+    expect(shown.slice(-2)).toEqual(['#quick-check', '#related']);
+    await expect(nextEntry).toBeHidden();
+    await expect(nextCard).toBeVisible();
+    await expect(nextCard).toHaveAccessibleName('Scheda successiva: Necrosi colliquativa');
+    await expect(nextCard).toHaveAttribute('href', next);
+  }
+  // The pager's link has the same name for the same card.
+  await expect(page.locator('.crumb-row .pager').getByRole('link', { name: 'Scheda successiva: Necrosi colliquativa' })).toHaveAttribute('href', next);
+  // Their parts keep the spaces between them ("Scheda successiva: Necrosi colliquativa →", "← Necrosi caseosa"):
+  // set as separate flex items, the spaces were dropped.
   const gaps = await page.evaluate(() => {
     /** The box of the last (or first) visible character of a node. */
     const glyph = (n: Node, last: boolean) => {
@@ -306,26 +322,21 @@ test('from 600 px the section list ends with the related cards and the next card
       const [end, start] = [glyph(a, true), glyph(b, false)];
       return Math.abs(start.top - end.top) < 2 ? start.left - end.right : 99; // on one line only
     };
-    const entry = document.querySelector('.section-toc a[href="#card-nav"] > span')!;
     const prev = document.querySelector('.crumb-row .pager a')!;
-    return [between(entry.firstChild!, entry.querySelector('[data-next-name]')!), between(prev.firstElementChild!, prev.lastChild!)];
+    const out = [between(prev.firstElementChild!, prev.lastChild!)];
+    const entry = document.querySelector('.section-toc li[data-next-entry] a > span')!;
+    if (entry.checkVisibility()) out.push(between(entry.firstChild!, entry.querySelector('[data-next-name]')!));
+    return out;
   });
   for (const gap of gaps) expect(gap).toBeGreaterThan(2);
-  if (width() >= 1024) {
-    await expect(nextCard).toBeVisible();
-    await expect(nextCard).toHaveAccessibleName('Successiva: Necrosi colliquativa');
-    await expect(nextCard).toHaveAttribute('href', /\/it\/e\/liquefactive-necrosis\/$/);
-  } else await expect(nextCard).toBeHidden();
-  // The entry takes the reader to the links at the end of the card, and is marked.
-  await nextEntry.click();
-  await expect(page.locator('#card-nav a[rel="next"]')).toBeInViewport();
-  await expect(nextEntry).toHaveAttribute('aria-current', 'true');
-  // Reached through a lens, both name the next card of that lens.
+  // The section spy never marks the link to another card.
+  await page.evaluate(() => scrollTo(0, document.documentElement.scrollHeight));
+  await expect(list.locator('a[aria-current]')).toHaveAttribute('href', /^#/);
+  // Reached through a lens, the link leads to the next card of that lens.
   await page.goto('it/e/coagulative-necrosis/?via=system:heart');
-  await expect(list.getByRole('link', { name: 'Successiva: Steatosi (degenerazione grassa)' })).toHaveAttribute('href', '#card-nav');
-  if (width() < 1024) return;
-  await expect(nextCard).toHaveAttribute('href', /\/fatty-change\/\?via=system:heart$/);
-  await expect(nextCard).toHaveAccessibleName('Successiva: Steatosi (degenerazione grassa)');
+  const lensNext = width() < 1024 ? list.getByRole('link', { name: 'Scheda successiva: Steatosi (degenerazione grassa)' }) : nextCard;
+  await expect(lensNext).toHaveAttribute('href', /\/fatty-change\/\?via=system:heart$/);
+  await expect(lensNext).toHaveAccessibleName('Scheda successiva: Steatosi (degenerazione grassa)');
 });
 
 test.describe('smooth scrolling', () => {

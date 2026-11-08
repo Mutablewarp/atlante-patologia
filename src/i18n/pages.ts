@@ -181,7 +181,7 @@ export const tEntity = defineStrings({
   tableOf: { it: 'Tabella: {section}', en: 'Table: {section}' },
   objectives: { it: 'Obiettivi di apprendimento', en: 'Learning objectives' },
   showAnswer: { it: 'Mostra la risposta', en: 'Show answer' },
-  related: { it: 'Schede correlate', en: 'Related cards' },
+  related: { it: 'Collegamenti', en: 'Related' },
   notPublished: { it: 'non ancora pubblicato', en: 'not yet published' },
   prevIn: { it: 'Precedente in “{term}”', en: 'Previous in “{term}”' },
   nextIn: { it: 'Successivo in “{term}”', en: 'Next in “{term}”' },
@@ -189,9 +189,9 @@ export const tEntity = defineStrings({
   nextCard: { it: 'Scheda successiva', en: 'Next card' },
   /** Second skip link of a card: to its first section, past the header and the tools */
   skipToText: { it: 'Vai al testo della scheda', en: 'Skip to the card text' },
-  /** Last entries of the section list (SectionToc.astro): the block at the end of the card, and the card itself */
-  nextEntry: { it: 'Successiva: {name}', en: 'Next: {name}' },
-  nextShort: { it: 'Successiva', en: 'Next' },
+  /** The next card in the section list and under it (SectionToc.astro), worded as in the pager (nextCard) */
+  nextEntry: { it: 'Scheda successiva: {name}', en: 'Next card: {name}' },
+  nextShort: { it: 'Scheda successiva', en: 'Next card' },
   sources: { it: 'Fonti', en: 'Sources' },
   reportThis: { it: 'Segnala un errore in questa scheda', en: 'Report an error on this card' },
 });

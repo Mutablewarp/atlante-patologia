@@ -724,6 +724,10 @@ html:not(.js) .section-toggle {
   .section-toc a:hover {
     color: var(--hema);
   }
+  /* The next card has its own link under the list (below), so the list ends with the related cards */
+  .section-toc .toc-extra[data-next-entry] {
+    display: none;
+  }
   /* The next card, one click from anywhere in the card: an action in hematoxylin under the list */
   .toc-next:not([hidden]) {
     display: block;
