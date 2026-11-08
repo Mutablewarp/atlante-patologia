@@ -90,6 +90,10 @@
   padding-left: var(--space-5);
   max-width: var(--measure);
 }
+/* Each paragraph takes the measure in its own type size, so the small structure notes keep ~70 characters a line too. */
+.pw-steps p {
+  max-width: var(--measure);
+}
 .pw-steps li {
   margin-bottom: var(--space-4);
   padding: var(--space-2) var(--space-3);

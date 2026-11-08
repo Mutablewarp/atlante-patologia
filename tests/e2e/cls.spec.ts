@@ -26,7 +26,10 @@ async function cls(page: Page, path: string) {
     }).observe({ type: 'layout-shift', buffered: true });
   });
   await page.goto(path);
-  await page.waitForLoadState('networkidle');
+  // On a slow CI runner the first visit's service-worker install can keep 'networkidle' from ever firing (seen on
+  // it/e/apoptosis/ and it/study/oral/); wait for it at most 10 s, then for the fonts, then let the page settle.
+  await page.waitForLoadState('networkidle', { timeout: 10_000 }).catch(() => {});
+  await page.evaluate(() => document.fonts.ready);
   await page.waitForTimeout(1500);
   const r = await page.evaluate(() => {
     const w = window as unknown as { __cls: number; __shifts: string[] };
