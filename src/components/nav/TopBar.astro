@@ -72,15 +72,16 @@ const palette = {
       data-palette={JSON.stringify(palette)}
       aria-haspopup="dialog"
       aria-keyshortcuts="Control+K Meta+K"
-      aria-label={h('paletteOpen')}
       title={h('paletteOpen')}
     >
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
         <circle cx="10.8" cy="10.8" r="6.6"></circle>
         <path d="M15.6 15.6 20.4 20.4"></path>
       </svg>
-      {/* The shortcut, shown where the top bar has no search field to show it (600-1023 px) */}
-      <kbd class="palette-kbd" aria-hidden="true" data-shortcut-hint>Ctrl K</kbd>
+      <span class="visually-hidden">{h('paletteOpen')}</span>
+      {/* The shortcut, shown where the top bar has no search field to show it (740-1023 px): shown, it is part of the
+          button's name ("Ricerca rapida ⌘ K", SC 2.5.3) */}
+      <kbd class="palette-kbd" data-shortcut-hint>Ctrl K</kbd>
     </button>
     <LangSwitch lang={lang} toHome={langSwitchToHome} />
     <ThemeToggle lang={lang} />

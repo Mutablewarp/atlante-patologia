@@ -46,7 +46,7 @@ const hasQuiz = (await questions()).some((q) => q.entities.includes(entity.id));
     )
   }
   {hasQuiz && <a class="btn btn-small" href={langPath(lang, `study/quiz/?mode=topic&entity=${entity.id}`)} data-pinned>{t('quizMe')}</a>}
-  <button type="button" class="btn btn-small" data-act="bookmark" aria-pressed="false" data-pinned>☆ {t('bookmark')}</button>
+  <button type="button" class="btn btn-small" data-act="bookmark" aria-pressed="false" data-pinned><span><span aria-hidden="true">☆</span> {t('bookmark')}</span></button>
   <button type="button" class="btn btn-small" data-act="error" aria-pressed="false">{t('errorLog')}</button>
   <button type="button" class="btn btn-small" data-act="highlight" disabled title={t('highlightHelp')} aria-describedby={`hl-help-${entity.id}`}>
     {t('highlight')}

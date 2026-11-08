@@ -370,7 +370,7 @@ test('lenses, less used tools and objectives fold behind toggles at every width,
   await expect(page.locator('#entity-tools .entity-actions')).toBeAttached();
   await expect(page.locator('#entity-tools .entity-actions')).not.toHaveCSS('display', 'none');
   // Bookmark and quiz: in the toolbar row from 600 px (one copy only in the accessibility tree), behind "Tools" on phones.
-  const bookmark = page.getByRole('button', { name: /Segnalibro/ });
+  const bookmark = page.getByRole('button', { name: 'Segnalibro', exact: true }); // the star is not read
   const quiz = page.getByRole('link', { name: 'Quiz su questa scheda' });
   await expect(bookmark).toHaveCount(1);
   await expect(quiz).toHaveCount(1);

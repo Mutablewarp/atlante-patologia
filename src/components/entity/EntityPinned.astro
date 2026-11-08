@@ -19,6 +19,6 @@ const hasQuiz = (await questions()).some((q) => q.entities.includes(entity.id));
 ---
 
 <span class="entity-pinned js-only" data-entity-pinned data-pagefind-ignore>
-  <button type="button" class="btn btn-small" data-act="bookmark" aria-pressed="false">☆ {t('bookmark')}</button>
+  <button type="button" class="btn btn-small" data-act="bookmark" aria-pressed="false"><span><span aria-hidden="true">☆</span> {t('bookmark')}</span></button>
   {hasQuiz && <a class="btn btn-small" href={langPath(lang, `study/quiz/?mode=topic&entity=${entity.id}`)}>{t('quizMe')}</a>}
 </span>

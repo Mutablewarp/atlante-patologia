@@ -204,6 +204,8 @@ test('the palette shortcut shows on its button on iPads in portrait; from 1024 p
   if (width() < 1024) {
     await expect(button.locator('kbd')).toBeVisible();
     await expect(button.locator('kbd')).toHaveText(/^(Ctrl K|⌘ K)$/);
+    // The shortcut on the button is part of its name (SC 2.5.3)
+    await expect(button).toHaveAccessibleName(/^Ricerca rapida (Ctrl K|⌘ K)$/);
     await expect(field).toBeHidden();
   } else {
     await expect(button).toBeHidden(); // one magnifier, not two
