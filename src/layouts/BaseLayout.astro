@@ -100,6 +100,9 @@ const fullTitle = title === SITE_NAME ? SITE_NAME : `${title} · ${SITE_NAME}`;
       <Footer lang={lang} />
     </div>
     <UpdateNotice lang={lang} />
+    {/* Page dialogs (the chapter index): after the page and outside <main>, so they neither delay the top bar nor
+        reach the search index */}
+    <slot name="dialogs" />
     <script>
       import '../scripts/shell.ts';
       // Personal-layer elements (<ap-recent>, <ap-resume>, <ap-path-progress>…) load their code only where used.

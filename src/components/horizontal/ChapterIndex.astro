@@ -1,20 +1,16 @@
 ---
 /**
- * "Chapter" button in the top bar and its dialog: the chapter index where the sidebar does not show it (600-1023 px,
- * and from 1024 px with the sidebar collapsed). A native modal <dialog>: the platform keeps focus inside, Esc closes,
- * focus returns to the button (shell.ts opens it on the current card). Without JS neither shows.
+ * "Chapter" button in the top bar: opens the chapter index (ChapterDialog.astro) where the sidebar does not show it
+ * (600-1023 px, and from 1024 px with the sidebar collapsed). Only the button sits in the top bar; the dialog with the
+ * card list comes after the page, so the bar is parsed whole before the first paint. Without JS neither shows.
  */
 import type { Lang } from '../../i18n/index.ts';
 import { tHz } from '../../i18n/horizontal.ts';
-import type { SiteData } from '../../lib/content.ts';
-import ModuleTree from './ModuleTree.astro';
 
 interface Props {
   lang: Lang;
-  data: SiteData;
-  current: string;
 }
-const { lang, data, current } = Astro.props;
+const { lang } = Astro.props;
 ---
 
 <button type="button" class="btn chapter-open js-only" aria-haspopup="dialog" data-chapter-open>
@@ -23,13 +19,3 @@ const { lang, data, current } = Astro.props;
   </svg>
   <span class="chapter-label">{tHz(lang, 'chapterOpen')}</span>
 </button>
-<dialog class="chapter-dialog" aria-labelledby="chapter-tree-title" data-chapter-dialog>
-  <form method="dialog">
-    <button class="icon-btn chapter-close" aria-label={tHz(lang, 'chapterClose')}>
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
-        <path d="M6.5 6.5l11 11M17.5 6.5l-11 11"></path>
-      </svg>
-    </button>
-  </form>
-  <ModuleTree lang={lang} data={data} current={current} id="chapter-tree" />
-</dialog>

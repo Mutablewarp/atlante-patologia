@@ -10,6 +10,7 @@ import RelatedPanel from '../../../components/entity/RelatedPanel.astro';
 import ImageViewer from '../../../components/horizontal/ImageViewer.astro';
 import ModuleTree from '../../../components/horizontal/ModuleTree.astro';
 import ChapterIndex from '../../../components/horizontal/ChapterIndex.astro';
+import ChapterDialog from '../../../components/horizontal/ChapterDialog.astro';
 import { tHz } from '../../../i18n/horizontal.ts';
 import { LENSES } from '../../../lib/schema.ts';
 import { withCrossLinks, imageById, patternsForEntity, SECTION_FOR_ROLE } from '../../../lib/horizontal.ts';
@@ -105,7 +106,8 @@ const contexts = LENSES.flatMap((lens) =>
 <BaseLayout lang={lang} title={entity.names[lang]} description={entity.summary[lang]} tab="atlas">
   <a slot="skip" class="skip-link" href={`#${toc[0]!.id}`}>{t('skipToText')}</a>
   <Fragment slot="sidebar"><ModuleTree lang={lang} data={data} current={id} /></Fragment>
-  <ChapterIndex slot="topbar" lang={lang} data={data} current={id} />
+  <ChapterIndex slot="topbar" lang={lang} />
+  <ChapterDialog slot="dialogs" lang={lang} data={data} current={id} />
   <div class="crumb-row" data-lens-crumb>
     <Breadcrumb lang={lang} items={crumbs} />
     {termLabel && <CardPager lang={lang} prev={card(prev)} next={card(next)} />}
