@@ -13,10 +13,18 @@
 }
 
 /* ── Tool shell ─────────────────────────────────────────────────────── */
+/* No form widens the page (SC 1.4.10): a select is as wide as its longest option ("G01 · Danno, adattamento e morte
+   cellulare") and a file field as its name, and their columns grew to fit them, 54 px past a 375 px phone (quiz) and
+   up to 207 px at the largest reading size. The columns may now shrink, and so may the controls (max-width). Where
+   nothing overflowed nothing moves. */
 .study-tool {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--space-5);
   max-width: 48rem;
+}
+.file-input input {
+  max-width: 100%;
 }
 .tool-controls,
 .tool-form {
@@ -32,6 +40,7 @@
 .tool-controls label,
 .tool-form > label {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--space-1);
   font-weight: 600;
 }

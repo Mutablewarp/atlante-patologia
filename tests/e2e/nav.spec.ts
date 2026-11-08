@@ -240,6 +240,21 @@ test('no page scrolls horizontally @smoke', async ({ page }) => {
   }
 });
 
+test('the study forms never widen a phone page, at every reading size (SC 1.4.10)', async ({ page }) => {
+  test.skip(width() >= 600, 'phones: a select as wide as its longest option widened the page by up to 207 px');
+  for (const w of [320, width()])
+    for (const size of ['m', 'l', 'xl']) {
+      await page.setViewportSize({ width: w, height: 740 });
+      await page.addInitScript((s) => localStorage.setItem('ap-text', s), size);
+      for (const path of ['it/study/quiz/', 'it/study/review/', 'en/me/data/']) {
+        await page.goto(path);
+        await page.waitForLoadState('networkidle'); // the forms are islands
+        const over = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+        expect(over, `${path} at ${w} px, size ${size}`).toBeLessThanOrEqual(0);
+      }
+    }
+});
+
 // macOS WebKit only moves focus to links with Option+Tab (system default).
 const tabKey = (browserName: string) => (browserName === 'webkit' && process.platform === 'darwin' ? 'Alt+Tab' : 'Tab');
 
