@@ -21,8 +21,10 @@ function guardRequests(page: Page) {
   return foreign;
 }
 
-async function noAxeViolations(page: Page) {
-  const res = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze();
+async function noAxeViolations(page: Page, disable: string[] = []) {
+  let axe = new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']);
+  if (disable.length) axe = axe.disableRules(disable);
+  const res = await axe.analyze();
   expect(res.violations.map((v) => `${v.id}: ${v.nodes.map((n) => n.target.join(' ')).join(', ')}`)).toEqual([]);
 }
 
@@ -273,7 +275,8 @@ test('oral simulator: three questions, prediction before self-assessment, calibr
   await expect(page.getByRole('heading', { name: 'Question 1 of 3' })).toBeFocused();
   await expect(page.getByRole('timer')).toContainText('Time left: 4:5');
   // As after "Finish" below: with the denser text, the click on Start leaves the breadcrumb half under the sticky
-  // header, which axe reads as a small target.
+  // header, which axe reads as a small target. Every other rule is checked in that state, target size at the top.
+  await noAxeViolations(page, ['target-size']);
   await page.evaluate(() => window.scrollTo(0, 0));
   await noAxeViolations(page);
   await answerOral(page, '3 · good', '2 · partial');
@@ -290,7 +293,9 @@ test('oral simulator: three questions, prediction before self-assessment, calibr
   await expect(page.locator('.oral-results tbody tr')).toHaveCount(3);
   await expect(page.getByText(/Mean predicted 3\.3 · mean self-assessed 2\.3/)).toBeVisible();
   await expect(page.getByText(/you predict more than you then award yourself/)).toBeVisible();
-  // Focusing the heading scrolls the breadcrumb under the sticky header, which axe reads as a small target.
+  // Focusing the heading scrolls the breadcrumb under the sticky header, which axe reads as a small target: every other
+  // rule is checked scrolled, target size at the top.
+  await noAxeViolations(page, ['target-size']);
   await page.evaluate(() => window.scrollTo(0, 0));
   await noAxeViolations(page);
   const [session] = await readStore(page, 'oralSessions');
@@ -319,7 +324,8 @@ test('oral simulator: three questions, prediction before self-assessment, calibr
   expect(texts.length).toBeGreaterThan(0);
   expect(texts.filter((s) => s.includes('No sessions saved'))).toEqual([]);
   // Checked above, where it is focused; scrolled here, the breadcrumb sits half under the sticky header, which axe reads
-  // as a small target (as after "Finish").
+  // as a small target (as after "Finish"): every other rule is checked scrolled, target size at the top.
+  await noAxeViolations(page, ['target-size']);
   await page.evaluate(() => window.scrollTo(0, 0));
   await noAxeViolations(page);
   expect(foreign).toEqual([]);
