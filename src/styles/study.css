@@ -274,16 +274,20 @@
   display: grid;
   gap: var(--space-4);
 }
-/* The question of an image drill: a sentence, set like the quiz stem and the oral question (not in capitals) */
-.drill-prompt {
-  max-width: var(--measure);
-  margin: 0;
-  font-family: var(--font-body);
-  font-size: var(--step-1);
-  font-weight: 600;
-  line-height: var(--leading-ui);
-  letter-spacing: normal;
-  color: var(--ink);
+/* The question of an image drill: from 600 px a sentence set like the quiz stem and the oral question, not in
+   capitals (phones keep the kicker) */
+@media (min-width: 600px) {
+  .drill-prompt {
+    max-width: var(--measure);
+    margin: 0;
+    font-family: var(--font-body);
+    font-size: var(--step-1);
+    font-weight: 600;
+    line-height: var(--leading-ui);
+    letter-spacing: normal;
+    text-transform: none;
+    color: var(--ink);
+  }
 }
 .study-tool .segmented {
   display: inline-flex;

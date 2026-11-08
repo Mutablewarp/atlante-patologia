@@ -436,7 +436,8 @@ test('from 1024 px the text keeps 60 characters a line beside the side list; fro
   }
 });
 
-test('capitals and tracking only for labels of up to three words; longer labels and drill questions in sentence case', async ({ page }) => {
+test('from 600 px capitals and tracking only for labels of up to three words, longer labels and drill questions in sentence case', async ({ page }) => {
+  const phone = width() < 600; // phones keep their kickers
   const style = (sel: string) =>
     page.locator(sel).first().evaluate((el) => {
       const cs = getComputedStyle(el);
@@ -444,11 +445,13 @@ test('capitals and tracking only for labels of up to three words; longer labels 
     });
   await page.goto(ENTITY);
   const chapter = await style('.entity-head .kicker'); // "G01 · Danno, adattamento e morte cellulare"
-  expect([chapter.transform, chapter.spacing]).toEqual(['none', 'normal']);
+  expect(chapter.transform).toBe(phone ? 'uppercase' : 'none');
+  if (!phone) expect(chapter.spacing).toBe('normal');
   expect((await style('#objectives-title')).transform).toBe('uppercase'); // "Obiettivi di apprendimento"
   await page.goto('it/study/images/');
   const question = await style('#pairs-q'); // "Quale immagine istologica appartiene alla stessa lesione?"
-  expect(question.transform).toBe('none');
+  expect(question.transform).toBe(phone ? 'uppercase' : 'none');
+  if (phone) return;
   expect(question.family).toMatch(/^"?Atkinson/);
   expect(question.color).toBe(await page.evaluate(() => getComputedStyle(document.body).color)); // ink, not eosin
 });

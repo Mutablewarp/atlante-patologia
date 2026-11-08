@@ -16,7 +16,7 @@ Rules for every width:
 - **Current destination:** filled icon, bold label, an indicator bar, and `aria-current="page"`. Never colour alone.
 - **Targets:** nav items are ≥ 44 × 44 CSS px. Every other control is ≥ 24 × 24 CSS px, the WCAG 2.2 SC 2.5.8 AA minimum. On touch screens from 600 px (`pointer: coarse`, iPads) chips, small buttons, the reading-mode control, section chips and the side list, lens terms, matrix thumbnails, breadcrumb and pager links and the chapter index are ≥ 44 px tall (SC 2.5.5), by padding at the same type size; breadcrumb and pager links keep their line's height. Phones keep their sizes (D068).
 - **Focus visible:** inside a pill group (reading mode, language) or a list that scrolls (chip strip, side list, chapter index) the ring is drawn inside the control or the list leaves room for it, so it is never clipped (SC 2.4.7).
-- **Sticky bars** are opaque `--paper`: no text shows through them.
+- **Sticky bars** are opaque `--paper` from 600 px: no text shows through them (phones keep their translucent bars).
 - **Safe areas:** `viewport-fit=cover`, and the bottom bar pads by `env(safe-area-inset-bottom)`.
 - **Focus not obscured (SC 2.4.11 AA):** sticky bar heights are CSS variables reused in `scroll-padding-top/bottom`. A Playwright test tabs through each template and asserts the focused element's box never sits under a sticky bar.
 - **Per-tab back stack:** this is a multi-page static site, so each tab remembers its last URL in `sessionStorage`.

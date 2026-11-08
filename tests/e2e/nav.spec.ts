@@ -187,15 +187,19 @@ test('the palette shortcut shows on its button on iPads in portrait; from 1024 p
   await expect(page.getByRole('dialog', { name: 'Ricerca rapida' })).toBeVisible();
 });
 
-test('the sticky bars are opaque, and the home status card has no stripe', async ({ page }) => {
+test('from 600 px the sticky bars are opaque and the home status card has no stripe; phones keep theirs', async ({ page }) => {
+  const phone = width() < 600;
   await page.goto('it/e/coagulative-necrosis/');
   for (const sel of ['.topbar', ...(width() < 1024 ? ['.section-toc'] : [])]) {
     const [bg, filter] = await page.locator(sel).evaluate((el) => [getComputedStyle(el).backgroundColor, getComputedStyle(el).backdropFilter]);
-    expect(bg, sel).toMatch(/^rgb\(/); // no alpha: text scrolled under it never shows through
-    expect(filter, sel).toBe('none');
+    if (phone) expect(filter, sel).toBe('blur(8px)');
+    else {
+      expect(bg, sel).toMatch(/^rgb\(/); // no alpha: text scrolled under it never shows through
+      expect(filter, sel).toBe('none');
+    }
   }
   await page.goto('it/');
-  expect(await page.locator('.status').evaluate((el) => getComputedStyle(el).borderLeftWidth)).toBe('1px'); // the card's own border
+  expect(await page.locator('.status').evaluate((el) => getComputedStyle(el).borderLeftWidth)).toBe(phone ? '4px' : '1px');
 });
 
 test('no page scrolls horizontally @smoke', async ({ page }) => {

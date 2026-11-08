@@ -44,9 +44,17 @@ html {
   display: flex;
   align-items: center;
   gap: var(--space-3);
-  /* Opaque: text scrolled under the bar showed through it, a blurred smear in Chromium and ghost text in WebKit */
-  background: var(--paper);
+  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--rule);
+}
+/* From 600 px opaque: text scrolled under the bar showed through it, a blurred smear in Chromium and ghost text in
+   WebKit. Phones keep their bar. */
+@media (min-width: 600px) {
+  .topbar {
+    background: var(--paper);
+    backdrop-filter: none;
+  }
 }
 .brand {
   display: inline-flex;

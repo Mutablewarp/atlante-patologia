@@ -93,6 +93,14 @@ const sections = (['I', 'II', 'III'] as const).map((s) => ({
   }
   .status {
     max-width: var(--measure);
+    border-left: 4px solid var(--hema);
+  }
+  /* From 600 px the card keeps only its own border: the stripe added nothing to a bordered card with a kicker.
+     Phones keep their page. */
+  @media (min-width: 600px) {
+    .status {
+      border-left: 1px solid var(--rule);
+    }
   }
   .status p {
     margin: 0;
