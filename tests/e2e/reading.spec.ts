@@ -434,6 +434,16 @@ test('phones keep their reading text; from 600 px it is denser and a touch darke
   expect(t.name).toMatch(/^"?Fraunces/);
 });
 
+test('print leaves out the previous and next card beside the breadcrumb', async ({ page }) => {
+  test.skip(width() < 600, 'the pair shows from 600 px');
+  await page.goto('it/e/coagulative-necrosis/');
+  const pager = page.locator('.crumb-row .pager');
+  await expect(pager).toBeVisible();
+  await page.emulateMedia({ media: 'print' });
+  await expect(pager).toBeHidden();
+  await expect(page.locator('.entity-head h1')).toBeVisible();
+});
+
 test('from 1024 px the text keeps 60 characters a line beside the side list; from 1280 px text and list are one centred block', async ({ page }) => {
   test.skip(width() !== 1280, 'one run per engine: the test sets its own widths');
   for (const viewport of [
