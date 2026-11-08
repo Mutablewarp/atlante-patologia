@@ -220,6 +220,39 @@ test('reading progress and the section chips follow the scroll', async ({ page }
   if (width() < 1024) await expect(page.locator('.section-toc a[href="#traps"]')).toBeInViewport();
 });
 
+test('a section entry, short sections included, is marked when tapped and while its section is under the reading line', async ({ page }) => {
+  // The old spy took the last section in the top 30 % of the screen: tapping "Macroscopia" marked "Microscopia",
+  // "Diagnosi" marked "Prognosi", "Colorazioni e IIC" marked "Clinica".
+  const current = page.locator('.section-toc a[aria-current]');
+  for (const [path, ids] of [
+    [ENTITY, ['gross', 'diagnosis', 'etiology', 'traps']],
+    ['it/e/coagulative-necrosis/', ['ancillary', 'clinical']],
+  ] as const) {
+    await page.goto(path);
+    for (const id of ids) {
+      const entry = page.locator(`.section-toc a[href="#${id}"]`);
+      await entry.click();
+      await expect(page).toHaveURL(new RegExp(`#${id}$`));
+      await expect(entry).toHaveAttribute('aria-current', 'true');
+      // Read on by a pixel, past the click's hold: the section under the line is still the tapped one.
+      await page.waitForTimeout(300);
+      await page.evaluate(() => scrollBy(0, 1));
+      await page.evaluate(() => new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r))));
+      await expect(current, `${path}#${id}`).toHaveAttribute('href', `#${id}`);
+      await expect(current).toHaveCount(1);
+    }
+  }
+  // Scrolled by hand until the end of "Macroscopia" is 2 px under the line: the next heading is in the top 30 % of
+  // the screen, yet Macroscopia is the section being read.
+  await page.goto(ENTITY);
+  await page.evaluate(() => {
+    const line = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) + 8;
+    scrollBy(0, document.getElementById('gross')!.getBoundingClientRect().bottom - (line + 2));
+  });
+  expect(await page.evaluate(() => document.getElementById('micro')!.getBoundingClientRect().top < innerHeight * 0.3)).toBe(true);
+  await expect(current).toHaveAttribute('href', '#gross');
+});
+
 test('on tablets the chip strip fades where it hides chips and fills the current chip, at the same width', async ({ page }) => {
   test.skip(width() < 600 || width() >= 1024, 'the chip strip of tablets (600-1023 px)');
   await page.goto(ENTITY);

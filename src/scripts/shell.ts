@@ -127,7 +127,8 @@ const strip = document.querySelector<HTMLElement>('.section-toc ol');
 // An entry's section: the element its #hash names or, for a heading, the <section> around it.
 const entryOf = new Map<Element, HTMLAnchorElement>();
 strip?.querySelectorAll<HTMLAnchorElement>('a[href^="#"]').forEach((a) => {
-  const section = document.getElementById(decodeURIComponent(a.hash.slice(1)))?.closest('section');
+  const target = document.getElementById(decodeURIComponent(a.hash.slice(1)));
+  const section = target?.closest('section') ?? target;
   if (section) entryOf.set(section, a);
 });
 const spied = [...entryOf.keys()];
@@ -138,7 +139,6 @@ if (strip && toc) {
 }
 if (strip && toc && spied.length) {
   const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
-  const inBand = new Set<Element>();
   let current: HTMLAnchorElement | undefined;
   const markCurrent = (a: HTMLAnchorElement | undefined) => {
     if (a === current) return;
@@ -151,18 +151,58 @@ if (strip && toc && spied.length) {
     centreIn(strip, a, behavior);
     centreIn(toc, a, behavior);
   };
-  // The section being read: the last one crossing the top 30% of the viewport. Hidden
-  // sections (Quick mode) never intersect; past the last section the last one stays current.
-  const spy = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((e) => (e.isIntersecting ? inBand.add(e.target) : inBand.delete(e.target)));
-      const reading = spied.filter((s) => inBand.has(s)).at(-1);
-      if (reading) markCurrent(entryOf.get(reading));
-      else if (spied[0]!.getBoundingClientRect().top > innerHeight * 0.3) markCurrent(undefined);
-    },
-    { rootMargin: '0px 0px -70% 0px' },
-  );
-  spied.forEach((s) => spy.observe(s));
+  // The section being read is the one under a reading line just below the sticky bars: 8 px under the place where
+  // an anchor puts its heading (scroll-padding-top). A short section no longer loses to the next one, as it did in
+  // a band of the top 30 % of the screen. Hidden sections (Quick mode) and hidden entries are skipped, and
+  // between two sections the current one stays. At the end of the page, which the last sections
+  // may not scroll up to the line, a tapped section on screen stays current, else the last one on screen is.
+  const shown = (el: Element) => el.getClientRects().length > 0;
+  const sectionOf = new Map([...entryOf].map(([s, a]) => [a, s]));
+  let tapped: Element | undefined;
+  const read = () => {
+    const line = parseFloat(getComputedStyle(root).scrollPaddingTop) + 8;
+    const live = spied.filter((s) => shown(s) && shown(entryOf.get(s)!));
+    const boxes = live.map((s) => s.getBoundingClientRect());
+    let i = boxes.findIndex((r) => r.top <= line && r.bottom > line);
+    if (innerHeight + scrollY >= root.scrollHeight - 2) {
+      const t = tapped ? live.indexOf(tapped) : -1;
+      i = t >= 0 && boxes[t]!.top < innerHeight ? t : boxes.map((r) => r.top < innerHeight).lastIndexOf(true);
+    } else tapped = undefined;
+    if (i >= 0) markCurrent(entryOf.get(live[i]!));
+    else if (!boxes[0] || boxes[0].top > line) markCurrent(undefined);
+  };
+  // A tap on an entry marks it at once; while the page scrolls there the line passes other sections, so the spy
+  // waits until the scrolling settles (150 ms without a scroll event) and then reads the line again.
+  let held = false;
+  let settle: ReturnType<typeof setTimeout> | undefined;
+  const settleThenRead = () => {
+    clearTimeout(settle);
+    settle = setTimeout(() => {
+      held = false;
+      read();
+    }, 150);
+  };
+  strip.addEventListener('click', (ev) => {
+    const a = (ev.target as Element).closest<HTMLAnchorElement>('a[href^="#"]');
+    if (!a || !sectionOf.has(a)) return;
+    markCurrent(a);
+    tapped = sectionOf.get(a);
+    held = true;
+    settleThenRead();
+  });
+  let queued = false;
+  const queue = () => {
+    if (held) return settleThenRead(); // still scrolling to the tapped entry's section
+    if (queued) return;
+    queued = true;
+    requestAnimationFrame(() => {
+      queued = false;
+      read();
+    });
+  };
+  addEventListener('scroll', queue, { passive: true });
+  // Sections that open, close or hide (Quick mode, a section folded) and a new width move the line's section.
+  new ResizeObserver(queue).observe(strip.closest('.entity-layout') ?? document.body);
 }
 
 // ── Phones: reading down, the chip strip slides up behind the top bar; reading up, it comes back ─

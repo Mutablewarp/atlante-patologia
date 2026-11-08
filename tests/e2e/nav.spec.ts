@@ -133,6 +133,7 @@ test.describe('touch screens', () => {
     expect((await page.locator('.section-toc a').first().boundingBox())!.height).toBeCloseTo(36, 0);
     expect((await page.locator('.segmented button').first().boundingBox())!.height).toBeCloseTo(32, 0);
   });
+
 });
 
 test('no page scrolls horizontally @smoke', async ({ page }) => {
@@ -201,6 +202,31 @@ test('from 600 px the previous and next card sit beside the breadcrumb, in the o
   // Reached through a lens, the pair follows that lens's order.
   await page.goto('it/e/coagulative-necrosis/?via=system:heart');
   await expect(pager.getByRole('link', { name: 'Scheda successiva: Steatosi (degenerazione grassa)' })).toHaveAttribute('href', /\/fatty-change\/\?via=system:heart$/);
+});
+
+test.describe('smooth scrolling', () => {
+  test.use({ reducedMotion: 'no-preference' });
+
+  test('a tapped section entry stays the only one marked while the page scrolls to its section', async ({ page }) => {
+    await page.goto('it/e/apoptosis/');
+    await page.locator('.section-toc a[href="#prognosis"]').click();
+    // Sampled every frame while the page passes the sections in between, and after it stops: never another entry.
+    const marks = await page.evaluate(
+      () =>
+        new Promise<string[]>((resolve) => {
+          const seen = new Set<string>();
+          const t0 = performance.now();
+          const tick = () => {
+            seen.add(document.querySelector('.section-toc a[aria-current]')?.getAttribute('href') ?? 'none');
+            if (performance.now() - t0 < 1500) requestAnimationFrame(tick);
+            else resolve([...seen]);
+          };
+          tick();
+        }),
+    );
+    expect(marks).toEqual(['#prognosis']);
+    expect(await page.evaluate(() => scrollY)).toBeGreaterThan(1000); // it did scroll
+  });
 });
 
 test('the sidebar chapter index opens on the current card and fades where it hides cards', async ({ page }) => {
