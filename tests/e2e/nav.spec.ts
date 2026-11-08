@@ -273,6 +273,17 @@ test('the chapter index opens from the top bar where the sidebar does not show i
     });
     expect(inside, `Tab ${i + 1}`).toBe(true);
   }
+  // The list scrolls under its title, which stays at the top, and under the close button, which stays on top.
+  const pinned = await dialog.evaluate((d) => {
+    const tree = d.querySelector<HTMLElement>('.module-tree')!;
+    tree.scrollTop = tree.scrollHeight;
+    const title = d.querySelector('.module-tree-title')!.getBoundingClientRect();
+    const close = d.querySelector('.chapter-close')!.getBoundingClientRect();
+    const hit = document.elementFromPoint(close.left + close.width / 2, close.top + close.height / 2);
+    return { title: Math.abs(title.top - tree.getBoundingClientRect().top), close: !!hit?.closest('.chapter-close') };
+  });
+  expect(pinned.title, 'the title at the top of the list').toBeLessThan(1);
+  expect(pinned.close, 'the close button above the title').toBe(true);
   await page.keyboard.press('Escape');
   await expect(dialog).toBeHidden();
   await expect(open).toBeFocused();
