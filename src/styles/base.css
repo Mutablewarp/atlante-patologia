@@ -288,10 +288,9 @@ textarea {
     padding-block: 0.6rem;
   }
   :root :is(.breadcrumb, .pager) a {
-    display: inline-flex;
-    align-items: center;
-    min-height: 2.75rem;
-    margin-block: -0.625rem;
+    display: inline-block;
+    padding-block: calc((2.75rem - 1lh) / 2);
+    margin-block: calc((1lh - 2.75rem) / 2);
   }
   :root .crumb-row {
     row-gap: var(--space-2);

@@ -155,12 +155,14 @@ test.describe('touch screens', () => {
         const next = nav.querySelector('.toc-next a')!.getBoundingClientRect();
         return {
           overflows: ol.scrollHeight > ol.clientHeight,
+          sideways: ol.scrollLeft !== 0 || ol.scrollWidth > ol.clientWidth + 1, // a list shifted sideways cut every entry
           bottom: nav.getBoundingClientRect().bottom,
           inside: !!cur && cur.top >= box.top && cur.bottom <= box.bottom,
           next: next.height > 0 && next.top >= box.bottom && next.bottom <= innerHeight,
         };
       });
       expect(state.overflows, id).toBe(true);
+      expect(state.sideways, id).toBe(false);
       expect(state.bottom, id).toBeLessThanOrEqual(820);
       expect(state.inside, `${id}: the current entry is in the list's box`).toBe(true);
       expect(state.next, `${id}: "Successiva" under the list, on screen`).toBe(true);
@@ -285,6 +287,30 @@ test('from 600 px the section list ends with the related cards and the next card
   const shown = await list.locator('a').evaluateAll((as) => as.filter((a) => a.getClientRects().length).map((a) => a.getAttribute('href')));
   expect(shown.slice(-3)).toEqual(['#quick-check', '#related', '#card-nav']);
   await expect(page.locator('#related h2')).toHaveText('Schede correlate'); // the entry names its heading
+  // Their parts keep the spaces between them ("Successiva: Necrosi colliquativa →", "← Necrosi caseosa"): set as
+  // separate flex items, the spaces were dropped.
+  const gaps = await page.evaluate(() => {
+    /** The box of the last (or first) visible character of a node. */
+    const glyph = (n: Node, last: boolean) => {
+      const walker = document.createTreeWalker(n, NodeFilter.SHOW_TEXT);
+      const all: Text[] = n.nodeType === Node.TEXT_NODE ? [n as Text] : [];
+      for (let t = walker.nextNode(); t; t = walker.nextNode()) all.push(t as Text);
+      const t = (last ? all.reverse() : all).find((x) => /\S/.test(x.data))!;
+      const i = last ? t.data.search(/\S\s*$/) : t.data.search(/\S/);
+      const range = document.createRange();
+      range.setStart(t, i);
+      range.setEnd(t, i + 1);
+      return range.getBoundingClientRect();
+    };
+    const between = (a: Node, b: Node) => {
+      const [end, start] = [glyph(a, true), glyph(b, false)];
+      return Math.abs(start.top - end.top) < 2 ? start.left - end.right : 99; // on one line only
+    };
+    const entry = document.querySelector('.section-toc a[href="#card-nav"] > span')!;
+    const prev = document.querySelector('.crumb-row .pager a')!;
+    return [between(entry.firstChild!, entry.querySelector('[data-next-name]')!), between(prev.firstElementChild!, prev.lastChild!)];
+  });
+  for (const gap of gaps) expect(gap).toBeGreaterThan(2);
   if (width() >= 1024) {
     await expect(nextCard).toBeVisible();
     await expect(nextCard).toHaveAccessibleName('Successiva: Necrosi colliquativa');

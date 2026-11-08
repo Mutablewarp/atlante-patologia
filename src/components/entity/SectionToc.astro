@@ -43,11 +43,14 @@ const [before, after] = tEntity(lang, 'nextEntry').split('{name}');
     {
       cardNav && (
         <li class="toc-extra" hidden={!next} data-next-entry>
+          {/* One box inside the link: as a flex item of its own each part lost its spaces and could not wrap */}
           <a href={`#${cardNav}`}>
-            {before}
-            <span data-next-name>{next?.name}</span>
-            {after}
-            <span aria-hidden="true"> →</span>
+            <span>
+              {before}
+              <span data-next-name>{next?.name}</span>
+              {after}
+              <span aria-hidden="true"> →</span>
+            </span>
           </a>
         </li>
       )
@@ -64,7 +67,9 @@ const [before, after] = tEntity(lang, 'nextEntry').split('{name}');
           data-label={tEntity(lang, 'nextEntry')}
           data-next-link
         >
-          {tEntity(lang, 'nextShort')}<span aria-hidden="true"> →</span>
+          <span>
+            {tEntity(lang, 'nextShort')}<span aria-hidden="true"> →</span>
+          </span>
         </a>
       </p>
     )

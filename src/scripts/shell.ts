@@ -25,7 +25,7 @@ const store = {
     watched: its children, whose size changes when content hides or opens (Quick mode, a chapter folded). */
 function edgeFade(el: HTMLElement) {
   const update = () => {
-    const across = el.scrollWidth - el.clientWidth > 1;
+    const across = scrolls(el, 'x');
     const [pos, size, view] = across ? [el.scrollLeft, el.scrollWidth, el.clientWidth] : [el.scrollTop, el.scrollHeight, el.clientHeight];
     const fade = `${pos > 1 ? 'start' : ''} ${pos + view < size - 1 ? 'end' : ''}`.trim();
     if (fade) el.dataset.fade = fade;
@@ -36,13 +36,21 @@ function edgeFade(el: HTMLElement) {
   for (const box of [el, ...el.children]) watch.observe(box);
 }
 
+/** Does `el` scroll on this axis: overflow set to scroll there, and content beyond its box? (A hidden overflow can
+    still be scrolled by script, which would shift a list sideways out of view.) */
+function scrolls(el: HTMLElement, axis: 'x' | 'y') {
+  const overflow = getComputedStyle(el)[axis === 'x' ? 'overflowX' : 'overflowY'];
+  const [size, view] = axis === 'x' ? [el.scrollWidth, el.clientWidth] : [el.scrollHeight, el.clientHeight];
+  return (overflow === 'auto' || overflow === 'scroll') && size - view > 1;
+}
+
 /** Scroll `box` so `el` sits in its middle, on the axis `box` scrolls on: scrollLeft or scrollTop only, the page never
     moves (scrollIntoView would scroll it too). */
 function centreIn(box: HTMLElement, el: Element, behavior: ScrollBehavior = 'auto') {
   const [b, r] = [box.getBoundingClientRect(), el.getBoundingClientRect()];
   box.scrollBy({
-    left: box.scrollWidth > box.clientWidth ? r.left - b.left - (box.clientWidth - r.width) / 2 : 0,
-    top: box.scrollHeight > box.clientHeight ? r.top - b.top - (box.clientHeight - r.height) / 2 : 0,
+    left: scrolls(box, 'x') ? r.left - b.left - (box.clientWidth - r.width) / 2 : 0,
+    top: scrolls(box, 'y') ? r.top - b.top - (box.clientHeight - r.height) / 2 : 0,
     behavior,
   });
 }
