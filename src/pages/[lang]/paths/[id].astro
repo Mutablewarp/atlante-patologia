@@ -18,7 +18,7 @@ export async function getStaticPaths() {
 const lang = Astro.params.lang as Lang;
 const { path } = Astro.props as { path: Awaited<ReturnType<typeof paths>>[number] };
 const t = (k: Parameters<typeof tHz>[1]) => tHz(lang, k);
-const { entityById } = await siteData();
+const { entityById } = await siteData(lang);
 const pats = new Map((await patterns()).map((p) => [p.id, p]));
 const steps = await Promise.all(
   path.steps.map(async (s) => {
@@ -55,7 +55,7 @@ const kindLabel = path.kind === 'vertical' ? t('pathKindVertical') : t('pathKind
     ]}
   />
   <header class="page-head">
-    <p class="kicker">{kindLabel} · {fmt(t('pathSteps'), { n: steps.length })}</p>
+    <p class="kicker kicker-sentence">{kindLabel} · {fmt(t('pathSteps'), { n: steps.length })}</p>
     <h1>{path.title[lang]}</h1>
     <p class="lede">{path.description[lang]}</p>
   </header>

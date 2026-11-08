@@ -49,6 +49,8 @@ export const tHz = defineStrings({
 
   // Pattern page
   patternKicker: { it: 'Quadro trasversale', en: 'Pattern page' },
+  /** Second skip link of a pattern page: to its first section */
+  skipToPatternText: { it: 'Vai al testo del quadro', en: 'Skip to the pattern text' },
   matrixTitle: { it: 'Confronto', en: 'Comparison' },
   matrixImages: { it: 'Immagini', en: 'Images' },
   imagesTitle: { it: 'Immagini per scheda', en: 'Images by card' },
@@ -132,6 +134,8 @@ export const tHz = defineStrings({
   recallReveal: { it: 'Mostra la sezione', en: 'Show the section' },
   youAreHere: { it: 'sei qui', en: 'you are here' },
   moduleTree: { it: 'Indice dei capitoli', en: 'Chapter contents' },
+  chapterOpen: { it: 'Capitolo', en: 'Chapter' },
+  chapterClose: { it: 'Chiudi l’indice dei capitoli', en: 'Close the chapter contents' },
 
   // Image viewer
   viewerHelp: {

@@ -12,7 +12,7 @@ export const getStaticPaths = langPaths;
 
 const lang = Astro.params.lang as Lang;
 const t = (k: Parameters<typeof tAtlas>[1]) => tAtlas(lang, k);
-const { taxonomy, membership, modules } = await siteData();
+const { taxonomy, membership, modules } = await siteData(lang);
 const lenses = LENSES.map((lens) => {
   const tax = taxonomy.get(lens);
   const counts = membership.get(lens)!;

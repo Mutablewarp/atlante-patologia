@@ -22,6 +22,9 @@ async function init(box: HTMLElement) {
     requestAnimationFrame(() => (live.textContent = msg));
   };
   const btn = (act: string) => box.querySelector<HTMLButtonElement>(`[data-act="${act}"]`);
+  // The bookmark also has a copy in the toolbar row (EntityPinned.astro): every copy shares one state.
+  const head = box.closest('.entity-head') ?? box;
+  const copies = (act: string) => [...head.querySelectorAll<HTMLButtonElement>(`[data-act="${act}"]`)];
 
   try {
     await recordRecent({ id: entity, names, module });
@@ -50,19 +53,21 @@ async function init(box: HTMLElement) {
 
   // ── Toggles: bookmark, error log ────────────────────────────────────
   const toggle = async (act: 'bookmark' | 'error') => {
-    const b = btn(act)!;
+    const bs = copies(act);
     const store = act === 'bookmark' ? 'bookmarks' : 'errors';
     const id = act === 'bookmark' ? entity : `entity:${entity}`;
-    const on = b.getAttribute('aria-pressed') === 'true';
+    const on = bs[0]?.getAttribute('aria-pressed') === 'true';
     if (on) await remove(store, id);
     else if (act === 'bookmark') await put('bookmarks', { id, updated: Date.now() });
     else await put('errors', { id, entity, updated: Date.now() });
-    b.setAttribute('aria-pressed', String(!on));
+    bs.forEach((b) => b.setAttribute('aria-pressed', String(!on)));
   };
-  btn('bookmark')?.setAttribute('aria-pressed', String(!!(await get('bookmarks', entity))));
-  btn('error')?.setAttribute('aria-pressed', String(!!(await get('errors', `entity:${entity}`))));
-  btn('bookmark')?.addEventListener('click', () => void toggle('bookmark'));
-  btn('error')?.addEventListener('click', () => void toggle('error'));
+  const saved = { bookmark: !!(await get('bookmarks', entity)), error: !!(await get('errors', `entity:${entity}`)) };
+  for (const act of ['bookmark', 'error'] as const)
+    for (const b of copies(act)) {
+      b.setAttribute('aria-pressed', String(saved[act]));
+      b.addEventListener('click', () => void toggle(act));
+    }
 
   // ── Note ────────────────────────────────────────────────────────────
   const noteField = box.querySelector<HTMLTextAreaElement>('[data-note]')!;
@@ -93,7 +98,7 @@ async function init(box: HTMLElement) {
     say(d.liveHighlight!);
   });
 
-  box.dataset.ready = '';
+  for (const el of [box, ...head.querySelectorAll<HTMLElement>('[data-entity-pinned]')]) el.dataset.ready = '';
   trackReading(entity, names, module);
 }
 

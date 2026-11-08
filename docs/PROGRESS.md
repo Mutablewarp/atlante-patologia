@@ -226,3 +226,65 @@ All rows on these three pages now name an independent verifier, so they left the
 | Playwright, chromium and webkit, 190 tests on the changed pages | 119 passed, 71 skipped by design, 0 failed |
 
 Left open: c043 repeats the brain-cyst fact of c018; c056's second source (al-wahbi-2018) was not re-read in this pass.
+
+## Reading refinement for tablet and desktop (2026-11-08) — merged into `main` on 2026-11-08
+
+The owner asked for easier navigation and clearer, slightly denser text on iPad and computer, in a face that does not tire the eyes. Atkinson Hyperlegible Next stays the body face (it tells I/l/1 and 0/O apart best: IL-1, CD10, "tipo I/II") and Fraunces stays for headings; the request is met by tokens, weight and rendering (D063–D068). Phones keep their layout, apart from shared fixes: focus rings, card order, the scroll spy, keyboard focus in the chip strip and study forms that overflowed. 16 implementation commits (`5feb5e8`…`02b031d`), three fresh reviews (design, accessibility, regression), then 12 fix commits (`979d88d`…`32c7175`).
+
+| Area | What changed |
+|---|---|
+| Text, from 600 px (D064) | Body 17.7 px on an iPad in portrait, 19 px from 1110 px; line height 1.5; measure 31em; weight 430; paragraph gap 0.85em; muted ink 7.76:1 (light) and 9.38:1 (dark); compact tables; the lede in ink; font smoothing in dark mode only; Greek letters from the Source Sans 3 subset (D063, every width) |
+| Card header (D065) | Lens chips, less used tools and objectives fold at every width; bookmark and quiz stay in the toolbar row from 600 px |
+| Navigation (D066–D068) | Chapter dialog on tablets, previous/next beside the breadcrumb, a second skip link to the text, a section list that ends with "Collegamenti" and a link to the next card, a reading-line scroll spy, cards ordered by the page language |
+| Layout and touch (D068) | Side list 9.5rem at 1024–1279 px; one centred block from 1280 px; opaque bars from 600 px; 44 × 44 px touch targets from 600 px |
+| Review fixes | The new tokens had reached phones: phones have main's values again. The other-language name is in Fraunces again (its late Atkinson italic moved the line on iPads). The pager is out of print. A focused chip stays whole and the page still. One name for each next-card link. Selected text on filled controls, a forced-colours cue, the palette button's name, the bookmark star. Study forms no longer widen their card or a phone page (also on main) |
+
+Measured on `it/e/coagulative-necrosis/`, Chromium, first visit, before (main) → after:
+
+| Viewport | Characters per line (median) | Body size / line height | First sentence ends at (screen height) | Card height |
+|---|---|---|---|---|
+| iPad 768 × 1024 | 61 → 66 | 18.3/30.2 px → 17.5/26.2 px | 1640 → 954 px (1024) | 17957 → 15521 px (-13.6 %) |
+| iPad 820 × 1180 | 61 → 66 | 18.5/30.5 px → 17.7/26.5 px | 1648 → 907 px (1180) | 17971 → 15493 px (-13.8 %) |
+| iPad Pro 1024 × 1366 | 46 → 59 | 19.0/31.4 px → 18.6/27.9 px | 1657 → 843 px (1366) | 20892 → 16774 px (-19.7 %) |
+| iPad 1180 × 820 | 60 → 66 | 19.0/31.4 px → 19.0/28.5 px | 1491 → 808 px (820) | 18410 → 16064 px (-12.7 %) |
+| Desktop 1440 × 900 | 61 → 66 | 19.0/31.4 px → 19.0/28.5 px | 1415 → 811 px (900) | 18016 → 16077 px (-10.8 %) |
+| Desktop 1920 × 1080 | 61 → 66 | 19.0/31.4 px → 19.0/28.5 px | 1415 → 811 px (1080) | 17953 → 16077 px (-10.4 %) |
+| Phone 375 × 812 | 38 → 38 | 17.1/28.3 px → 17.1/28.3 px | 1022 → 1022 px (812) | 20968 → 20996 px (+0.1 %) |
+
+WebKit: 58 → 61 characters a line at 820 px, 57 → 61 at 1180 px, 58 → 61 at 1440 px; the first sentence is on the first screen at all three (it was 1.4–1.8 screens down).
+
+Other measurements on the final build:
+
+- CLS: 0 of 105 first visits (5 cards × 7 sizes × reading sizes M, L and XL, CPU 4× slower). At `02b031d` 15 of 105 shifted.
+- Phones (375 × 812 and 390 × 844, Chromium and WebKit, light and dark, 8 pages) against the merge-base build: the same page heights and element boxes, except the next card at the end of coagulative necrosis (card order, +28 px). With the font smoothing set equal on both builds, 0–0.01 % of the pixels of the first three screens differ.
+- Keyboard in the chip strip (768–820 px and 375 px, pattern and card, both directions, Chromium and WebKit): 400 stops, every focused chip whole, no page jump between two chips. Before: a chip could be 100 % hidden, and each Shift+Tab scrolled the page by about 560 px.
+- Study forms on phones: the quiz scrolled 54 px sideways at 375 px, and up to 207 px at 320 px with size XL. Now 0 at 320–599 px, in every size.
+
+Verification on `32c7175`:
+
+| Command | Result |
+|---|---|
+| `npm run check` | 0 errors, 0 warnings, 0 hints (210 files) |
+| `npm test` | 233 passed, 2 skipped |
+| `npm run build` | 320 pages; Pagefind 286 pages; `sw-manifest: shell 63 files, 2 offline pack(s)`; the same warnings as main (3Dmol chunk size and its `eval`) |
+| `npm run test:dist` | 21/21 passed (JS budgets included) |
+| `npm run contrast` | all 112 pairs pass (94 before: the phone and the tablet muted ink are both checked now) |
+| `npm run guard` | ok (709 checked files) |
+| `npm run licenses` | 571 packages, 9 documented exceptions; `dependencies.json` unchanged (the scan's new date was put back) |
+| `NO_VERBATIM_WORK=…/.work npm run no-verbatim` | 306 files, 0 failed |
+| `E2E_ENGINES=chromium,webkit npx playwright test --workers=3` | 968 passed, 332 skipped by design, 0 failed, 0 flaky (11.0 min). Seven new tests (70 runs, skips by width included): CLS at 1180 × 820 and 1024 × 1366 (sizes L and XL), the keyboard walk into the chip strip, the phone text values, print and the study forms. Run on the `02b031d` build, each fails wherever it is not skipped |
+| `npm run test:e2e:study` / `npm run test:e2e:offline` | 32 passed, 3 skipped / 8/8 passed |
+| `npm run lighthouse` | `/it/`, `/en/atlas/`, `/it/about/`: performance 99, 100 in the other three |
+| `node scripts/lighthouse-assert.mjs /it/e/coagulative-necrosis/ /it/pattern/p01-necrosis/ /it/atlas/` | performance 90, 94 and 99; 100 in the other three |
+| `impeccable detect` on the 12 changed CSS and Astro files | 5 findings, all known side-tab false positives (stain-coded callouts, the disclaimer notice, the recall box, revision weeks, the look-for rule) |
+| Firefox | not run: not installed locally (CI runs it) |
+
+Still open:
+
+- Not merged and not pushed: CI (with Firefox), deploy and the live smoke test have not run on these commits. Real iPad Safari and VoiceOver were not tested.
+- Phones share changes beyond the named shared fixes: the Greek subset (D063), font smoothing in dark mode only (iOS and Android ignore it), the eosin selection wash, the caret colour, and the current chip set in the weight of the other chips (it no longer widens and moves its neighbours). None of them moves the layout; the lead should confirm them as shared.
+- The other-language name is again a slanted Fraunces roman, as on main. A real italic needs either a preloaded italic face (Performance cost) or a metric-matched fallback.
+- On touch iPads at 744–819 px the Italian reading toolbar wraps once, because A− and A+ are 44 × 44 px (as on main).
+- At 320 px with size XL, three lens-term pagers and the roadmap table still scroll sideways by 3–60 px, as on main. Letting the term pager wrap would also restack it at size M on phones (156 of 180 page and width cases at 375 and 390 px).
+- The quiz options run 1115 px wide at 1440 px, well past the reading measure, as on main: the runner is not inside the 48rem study column (NAV-15).
+- `/it/e/coagulative-necrosis/` scores 90 for Lighthouse mobile performance locally (FCP 2.6 s); `02b031d` and main score 91 (FCP 2.5 s) in the same conditions. The card's CSS grew by 0.4 KB gzipped (2 KB raw), and `serve-dist.mjs` sends it uncompressed.

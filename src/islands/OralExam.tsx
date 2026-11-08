@@ -214,7 +214,7 @@ function Runner({ lang, t, run, onRestart }: { lang: Lang; t: T; run: Run; onRes
   return (
     <section class="card oral" aria-labelledby="oral-q-title">
       <div class="quiz-bar">
-        <h2 id="oral-q-title" class="kicker" tabIndex={-1} ref={headRef}>
+        <h2 id="oral-q-title" class="kicker kicker-sentence" tabIndex={-1} ref={headRef}>
           {title}
         </h2>
         {run.seconds && phase === 'answer' && (

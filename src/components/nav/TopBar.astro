@@ -1,5 +1,5 @@
 ---
-/** Sticky top bar: brand (phone/tablet), global search (desktop), language, theme. */
+/** Sticky top bar: brand (phone/tablet), global search (desktop), language, theme; the default slot opens the tools (the chapter button of entity pages). */
 import type { Lang } from '../../i18n/index.ts';
 import { tNav } from '../../i18n/nav.ts';
 import { SITE_NAME } from '../../i18n/common.ts';
@@ -64,6 +64,7 @@ const palette = {
     <span id="global-search-hint" class="visually-hidden">{tNav(lang, 'shortcutHint')}</span>
   </form>
   <div class="topbar-tools">
+    <slot />
     <button
       type="button"
       class="icon-btn js-only"
@@ -71,13 +72,16 @@ const palette = {
       data-palette={JSON.stringify(palette)}
       aria-haspopup="dialog"
       aria-keyshortcuts="Control+K Meta+K"
-      aria-label={h('paletteOpen')}
       title={h('paletteOpen')}
     >
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
         <circle cx="10.8" cy="10.8" r="6.6"></circle>
         <path d="M15.6 15.6 20.4 20.4"></path>
       </svg>
+      <span class="visually-hidden">{h('paletteOpen')}</span>
+      {/* The shortcut, shown where the top bar has no search field to show it (740-1023 px): shown, it is part of the
+          button's name ("Ricerca rapida ⌘ K", SC 2.5.3) */}
+      <kbd class="palette-kbd" data-shortcut-hint>Ctrl K</kbd>
     </button>
     <LangSwitch lang={lang} toHome={langSwitchToHome} />
     <ThemeToggle lang={lang} />
@@ -85,10 +89,30 @@ const palette = {
 </header>
 
 <style>
-  /* Phones reach search from the bottom tab bar; keep the brand readable. */
-  @media (max-width: 599px) {
+  /* Phones reach search from the bottom tab bar; keep the brand readable. From 1024 px the top bar has the search
+     field, which shows the shortcut that opens the palette: a second magnifier would only repeat it. */
+  @media (max-width: 599px), (min-width: 1024px) {
     [data-palette-open] {
       display: none;
+    }
+  }
+  /* 740-1023 px (iPads in portrait): the shortcut on the button, where the bar has no search field to show it.
+     Narrower bars and the largest reading size need that room for the site name. */
+  .palette-kbd {
+    display: none;
+  }
+  @media (min-width: 740px) and (max-width: 1023px) {
+    :global(:root:not(.text-xl)) [data-palette-open] {
+      grid-auto-flow: column;
+      gap: var(--space-2);
+      padding-inline: var(--space-3);
+    }
+    /* Fixed box: the script swaps "Ctrl K" for "⌘ K" on Apple devices after paint (no layout shift) */
+    :global(:root:not(.text-xl)) .palette-kbd {
+      display: block;
+      box-sizing: border-box;
+      width: 4.75em;
+      text-align: center;
     }
   }
 </style>

@@ -66,7 +66,7 @@ class ApResume extends Live {
     const last = (await getAll('recent')).sort((a, b) => b.at - a.at)[0];
     if (!last) return void this.replaceChildren(el('p', { class: 'small muted' }, t('resumeEmpty')));
     const a = el('a', { class: 'card link-card resume-link', href: langPath(lang(), `e/${last.id}/${last.section ? `#${last.section}` : ''}`) });
-    a.append(el('span', { class: 'kicker' }, t('resumeTitle')), el('strong', {}, last.names[lang()]));
+    a.append(el('span', { class: 'kicker kicker-sentence' }, t('resumeTitle')), el('strong', {}, last.names[lang()]));
     if (last.section) a.append(el('span', { class: 'small muted' }, sectionTitle(last.section)));
     this.replaceChildren(a);
   }

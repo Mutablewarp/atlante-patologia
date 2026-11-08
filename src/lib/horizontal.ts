@@ -20,7 +20,7 @@ let names: Promise<Map<string, { it: string; en: string }>> | undefined;
 function allNames() {
   names ??= (async () => {
     const out = new Map<string, { it: string; en: string }>();
-    const { modules } = await siteData();
+    const { modules } = await siteData('it'); // modules: the same in both languages
     for (const m of modules) for (const p of m.planned) out.set(p.id, p.names);
     for (const e of await getCollection('entities')) out.set(e.data.id, { it: e.data.names.it, en: e.data.names.en });
     return out;
@@ -29,7 +29,7 @@ function allNames() {
 }
 
 export async function crossLinkContext(lang: Lang, idPrefix = 'gloss'): Promise<CrossLinkCtx> {
-  const { entityById } = await siteData();
+  const { entityById } = await siteData(lang);
   const known = await allNames();
   const gloss = new Map((await glossary()).map((g) => [g.id, g]));
   return {

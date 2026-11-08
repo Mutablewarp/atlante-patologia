@@ -47,7 +47,7 @@
   color: var(--ink);
   font-size: var(--step--1);
   font-weight: 700;
-  line-height: 1.25;
+  line-height: var(--leading-ui);
   pointer-events: none;
 }
 .viewer-label[data-h='start'] {

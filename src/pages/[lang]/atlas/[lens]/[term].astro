@@ -11,7 +11,7 @@ import { prevNext } from '../../../../lib/lenses.ts';
 import { tHz } from '../../../../i18n/horizontal.ts';
 
 export async function getStaticPaths() {
-  const { membership } = await siteData();
+  const { membership } = await siteData('it'); // only the terms: the same in both languages
   return LANGS.flatMap((lang) =>
     LENSES.flatMap((lens) => [...membership.get(lens)!.keys()].map((term) => ({ params: { lang, lens, term } }))),
   );
@@ -21,7 +21,7 @@ const lang = Astro.params.lang as Lang;
 const lens = Astro.params.lens as LensId;
 const termId = Astro.params.term!;
 const t = (k: Parameters<typeof tAtlas>[1]) => tAtlas(lang, k);
-const { taxonomy, membership, entityById } = await siteData();
+const { taxonomy, membership, entityById } = await siteData(lang);
 const tax = taxonomy.get(lens);
 const term = tax?.terms.find((x) => x.id === termId);
 const termLabel = term?.label[lang] ?? termId;

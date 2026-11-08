@@ -16,7 +16,7 @@ export const getStaticPaths = langPaths;
 const lang = Astro.params.lang as Lang;
 const t = (k: Parameters<typeof tOffline>[1]) => tOffline(lang, k);
 
-const { modules, entities } = await siteData();
+const { modules, entities } = await siteData(lang);
 const packs = modules
   .map((m) => ({ id: m.id, label: m.label[lang], count: entities.filter((e) => e.module === m.id).length }))
   .filter((m) => m.count > 0);

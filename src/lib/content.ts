@@ -3,6 +3,7 @@
  * unless the build runs with PREVIEW_DRAFTS=1 (local template checks).
  */
 import { getCollection, type CollectionEntry } from 'astro:content';
+import type { Lang } from '../i18n/index.ts';
 import type { LensId } from './schema.ts';
 import { lensMembership, syllabusSort } from './lenses.ts';
 import { buildRelationIndex } from './relations.ts';
@@ -17,25 +18,29 @@ export type EntityEntry = CollectionEntry<'entities'>;
 export type ModuleEntry = CollectionEntry<'modules'>;
 export type TaxonomyEntry = CollectionEntry<'taxonomy'>;
 
-let cache: Promise<SiteData> | undefined;
+const cache = new Map<Lang, Promise<SiteData>>();
+
+type Entity = EntityEntry['data'];
 
 export type SiteData = {
   modules: ModuleEntry['data'][];
   moduleOrder: Map<string, number>;
   taxonomy: Map<LensId, TaxonomyEntry['data']>;
-  entities: EntityEntry['data'][];
-  entityById: Map<string, EntityEntry['data']>;
+  /** Syllabus order in the page language (lenses.ts), as are the lens lists in `membership`. */
+  entities: Entity[];
+  entityById: Map<string, Entity>;
   membership: ReturnType<typeof lensMembership>;
   relations: ReturnType<typeof buildRelationIndex>;
 };
 
-async function load(): Promise<SiteData> {
+async function load(lang: Lang): Promise<SiteData> {
   const modules = (await getCollection('modules')).map((m) => m.data).sort((a, b) => a.order - b.order);
   const moduleOrder = new Map(modules.map((m) => [m.id, m.order]));
   const taxonomy = new Map((await getCollection('taxonomy')).map((t) => [t.data.lens, t.data] as const));
   const entities = syllabusSort(
     (await getCollection('entities', (e) => visible(e.data.status))).map((e) => e.data),
     moduleOrder,
+    lang,
   );
   return {
     modules,
@@ -43,15 +48,15 @@ async function load(): Promise<SiteData> {
     taxonomy,
     entities,
     entityById: new Map(entities.map((e) => [e.id, e])),
-    membership: lensMembership(entities, moduleOrder),
+    membership: lensMembership(entities, moduleOrder, lang),
     relations: buildRelationIndex(entities),
   };
 }
 
-/** Cached for the whole build. */
-export function siteData(): Promise<SiteData> {
-  cache ??= load();
-  return cache;
+/** Cached for the whole build, once per page language: every list of cards comes in that language's order. */
+export function siteData(lang: Lang): Promise<SiteData> {
+  if (!cache.has(lang)) cache.set(lang, load(lang));
+  return cache.get(lang)!;
 }
 
 export async function entityBody(id: string, lang: 'it' | 'en') {

@@ -50,12 +50,32 @@ for (const path of ['it/e/apoptosis/', 'en/pattern/p01-necrosis/'])
     expect(r.cls, r.shifts.join(' | ')).toBe(0);
   });
 
+// iPads at the larger reading sizes: there the other-language name under the title, set in a face that arrived after
+// the first paint, moved by 3 px (1180 × 820 at size L, 1024 × 1366 at L and XL).
+test.describe('iPads', () => {
+  test.use({ hasTouch: true });
+  for (const [w, h, size] of [
+    [1180, 820, 'l'],
+    [1024, 1366, 'l'],
+    [1024, 1366, 'xl'],
+  ] as const)
+    test(`no layout shift on cards at ${w} × ${h}, reading size ${size.toUpperCase()} (CPU 4× slower)`, async ({ page }) => {
+      test.skip(test.info().project.metadata.width !== 1280, 'one run: the test sets its own viewport');
+      await page.setViewportSize({ width: w, height: h });
+      await page.addInitScript((s) => localStorage.setItem('ap-text', s), size);
+      for (const path of ['en/e/other-regulated-cell-death/', 'it/e/coagulative-necrosis/']) {
+        const r = await cls(page, path);
+        expect(r.cls, `${path}: ${r.shifts.join(' | ')}`).toBe(0);
+      }
+    });
+});
+
 test('no layout shift when the shortcut hint turns into "⌘ K" on Apple devices (CPU 4× slower)', async ({ page }) => {
-  test.skip((test.info().project.metadata.width as number) < 1024, 'the search field and its hint show from 1024 px');
+  test.skip((test.info().project.metadata.width as number) < 740, 'the hint shows on the palette button from 740 px, in the search field from 1024 px');
   await page.addInitScript(() => Object.defineProperty(Navigator.prototype, 'platform', { get: () => 'MacIntel' }));
   const r = await cls(page, 'it/');
   expect(r.cls, r.shifts.join(' | ')).toBe(0);
-  await expect(page.locator('[data-shortcut-hint]')).toHaveText('⌘ K');
+  await expect(page.locator('[data-shortcut-hint]:visible')).toHaveText('⌘ K');
 });
 
 /** The longest card name in g01: it wraps over several lines in the resume card unless clamped. */

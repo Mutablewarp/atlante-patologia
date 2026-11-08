@@ -21,7 +21,7 @@
   max-width: 22rem;
   height: auto;
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: 13px; /* SVG user units, sized to the 32-unit boxes; the drawing's rem width follows A-/A+ */
 }
 .pw-diagram rect {
   fill: var(--surface);

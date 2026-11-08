@@ -28,7 +28,7 @@ export async function getStaticPaths() {
 const lang = Astro.params.lang as Lang;
 const { pattern } = Astro.props as { pattern: Awaited<ReturnType<typeof patterns>>[number] };
 const t = (k: Parameters<typeof tHz>[1]) => tHz(lang, k);
-const data = await siteData();
+const data = await siteData(lang);
 const body = await patternBody(pattern.id, lang);
 const html = await withCrossLinks(body?.rendered?.html ?? '', lang);
 const imgs = await imageById();
@@ -62,6 +62,7 @@ const sectioned = html.replace(/<h2\b[\s\S]*?(?=<h2\b|$)/g, (s) => `<section>${s
 ---
 
 <BaseLayout lang={lang} title={pattern.names[lang]} description={pattern.summary[lang]} tab="atlas">
+  <a slot="skip" class="skip-link" href={`#${toc[0]!.id}`}>{t('skipToPatternText')}</a>
   <Breadcrumb
     lang={lang}
     items={[

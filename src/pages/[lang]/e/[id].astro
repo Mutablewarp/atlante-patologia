@@ -9,10 +9,13 @@ import EntityHeader from '../../../components/entity/EntityHeader.astro';
 import RelatedPanel from '../../../components/entity/RelatedPanel.astro';
 import ImageViewer from '../../../components/horizontal/ImageViewer.astro';
 import ModuleTree from '../../../components/horizontal/ModuleTree.astro';
+import ChapterIndex from '../../../components/horizontal/ChapterIndex.astro';
 import { tHz } from '../../../i18n/horizontal.ts';
 import { LENSES } from '../../../lib/schema.ts';
 import { withCrossLinks, imageById, patternsForEntity, SECTION_FOR_ROLE } from '../../../lib/horizontal.ts';
 import EntityActions from '../../../components/entity/EntityActions.astro';
+import EntityPinned from '../../../components/entity/EntityPinned.astro';
+import CardPager from '../../../components/entity/CardPager.astro';
 import SectionToc from '../../../components/entity/SectionToc.astro';
 import SelfExplain from '../../../components/entity/SelfExplain.astro';
 import ExamQuestions from '../../../components/entity/ExamQuestions.astro'; // study branch: exam questions + quick-check confidence
@@ -28,14 +31,14 @@ import '../../../styles/entity.css';
 import '../../../styles/horizontal.css';
 
 export async function getStaticPaths() {
-  const { entities } = await siteData();
+  const { entities } = await siteData('it'); // only the ids: the same in both languages
   return entities.flatMap((e) => LANGS.map((lang) => ({ params: { lang, id: e.id } })));
 }
 
 const lang = Astro.params.lang as Lang;
 const id = Astro.params.id!;
 const t = (k: Parameters<typeof tEntity>[1]) => tEntity(lang, k);
-const data = await siteData();
+const data = await siteData(lang);
 const entity = data.entityById.get(id)!;
 const body = await entityBody(id, lang);
 const split = splitSections(await withCrossLinks(body?.rendered?.html ?? '', lang));
@@ -47,8 +50,12 @@ const termLabel = primary ? systemTax?.terms.find((x) => x.id === primary.term)?
 const order = primary ? (data.membership.get('system')?.get(primary.term) ?? []) : [];
 const { prev, next } = prevNext(order, id);
 const nameOf = (eid: string) => data.entityById.get(eid)?.names[lang] ?? eid;
+/** A neighbour for the pager beside the breadcrumb, in the default order or in a lens context (`via`). */
+const card = (eid: string | undefined, via?: string) =>
+  eid ? { href: langPath(lang, `e/${eid}/${via ? `?via=${via}` : ''}`), name: nameOf(eid) } : undefined;
 const allSources = await getSources();
 const cited = entity.sources.map((s) => ({ ...s, src: allSources.find((x) => x.id === s.source) }));
+const relations = data.relations.get(id) ?? [];
 
 const crumbs = [
   { label: tAtlas(lang, 'title'), href: langPath(lang, 'atlas/') },
@@ -96,8 +103,13 @@ const contexts = LENSES.flatMap((lens) =>
 ---
 
 <BaseLayout lang={lang} title={entity.names[lang]} description={entity.summary[lang]} tab="atlas">
+  <a slot="skip" class="skip-link" href={`#${toc[0]!.id}`}>{t('skipToText')}</a>
   <Fragment slot="sidebar"><ModuleTree lang={lang} data={data} current={id} /></Fragment>
-  <div data-lens-crumb><Breadcrumb lang={lang} items={crumbs} /></div>
+  <ChapterIndex slot="topbar" lang={lang} data={data} current={id} />
+  <div class="crumb-row" data-lens-crumb>
+    <Breadcrumb lang={lang} items={crumbs} />
+    {termLabel && <CardPager lang={lang} prev={card(prev)} next={card(next)} />}
+  </div>
   {
     contexts.map((c) => (
       <template data-via-crumb={c.via} data-pagefind-ignore>
@@ -110,20 +122,30 @@ const contexts = LENSES.flatMap((lens) =>
             { label: entity.names[lang] },
           ]}
         />
+        <CardPager lang={lang} prev={card(c.prev, c.via)} next={card(c.next, c.via)} />
       </template>
     ))
   }
   <article class="entity" data-entity={id}>
     <div class="read-progress js-only" aria-hidden="true"><span data-read-progress></span></div>
     {entity.status === 'draft' && <p class="notice notice-caution draft-banner" role="note">{t('draftBanner')}</p>}
-    <EntityHeader lang={lang} entity={entity} data={data}><EntityActions lang={lang} entity={entity} /></EntityHeader>
+    <EntityHeader lang={lang} entity={entity} data={data}>
+      <EntityActions lang={lang} entity={entity} />
+      <EntityPinned slot="pinned" lang={lang} entity={entity} />
+    </EntityHeader>
 
     <div class="entity-layout">
-      <SectionToc lang={lang} items={toc.map((s) => ({ id: s.id, label: s.short[lang], quick: s.quick }))} />
+      <SectionToc
+        lang={lang}
+        items={toc.map((s) => ({ id: s.id, label: s.short[lang], quick: s.quick }))}
+        related={relations.length > 0 ? 'related' : undefined}
+        cardNav={termLabel ? 'card-nav' : undefined}
+        next={card(next)}
+      />
 
       <div class="entity-body">
         <section class="objectives card" aria-labelledby="objectives-title">
-          {/* Phones: the list folds behind the title, made a toggle (entity.css) */}
+          {/* With JS the list folds behind the title, made a toggle (entity.css) */}
           <h2 id="objectives-title" class="kicker fold-head">
             <span class="fold-label">{t('objectives')}</span>
             <button type="button" class="fold-toggle js-only" aria-expanded="false" aria-controls="objectives-list" data-fold data-pagefind-ignore>
@@ -213,7 +235,7 @@ const contexts = LENSES.flatMap((lens) =>
         {/* v2/3d-pathways: pathways of this entity (renders nothing when there are none) */}
         <EntityPathways lang={lang} entity={id} />
 
-        <RelatedPanel lang={lang} groups={data.relations.get(id) ?? []} data={data} />
+        <RelatedPanel lang={lang} groups={relations} data={data} />
         {
           entityPatterns.length > 0 && (
             <section class="related" aria-labelledby="entity-patterns-title">
@@ -249,7 +271,8 @@ const contexts = LENSES.flatMap((lens) =>
           </p>
         </section>
 
-        <div data-lens-nav>
+        {/* The section list's last entry and the link under it read the next card from here (lens-context.ts) */}
+        <div data-lens-nav id="card-nav">
         {
           (prev || next) && termLabel && (
             <nav class="prev-next" aria-label={termLabel}>
@@ -260,7 +283,7 @@ const contexts = LENSES.flatMap((lens) =>
                 </a>
               )}
               {next && (
-                <a rel="next" href={langPath(lang, `e/${next}/`)}>
+                <a rel="next" href={langPath(lang, `e/${next}/`)} data-name={nameOf(next)}>
                   <span class="small muted">{fmt(t('nextIn'), { term: termLabel })}</span>
                   <span>{nameOf(next)} →</span>
                 </a>
@@ -281,7 +304,7 @@ const contexts = LENSES.flatMap((lens) =>
                     </a>
                   )}
                   {c.next && (
-                    <a rel="next" href={langPath(lang, `e/${c.next}/?via=${c.via}`)}>
+                    <a rel="next" href={langPath(lang, `e/${c.next}/?via=${c.via}`)} data-name={nameOf(c.next)}>
                       <span class="small muted">{fmt(t('nextIn'), { term: c.termLabel })}</span>
                       <span>{nameOf(c.next)} →</span>
                     </a>

@@ -60,7 +60,8 @@ let cardCache: Promise<Map<string, { it: StudyCard[]; en: StudyCard[] }>> | unde
 /** All cards by module, both languages, generated once per build. */
 export function allCards() {
   cardCache ??= (async () => {
-    const { entities } = await siteData();
+    // One pass builds both languages: the cards keep the English syllabus order in both files, as before.
+    const { entities } = await siteData('en');
     const imgs = new Map((await getImages()).map((i) => [i.id, i]));
     const byModule = new Map<string, { it: StudyCard[]; en: StudyCard[] }>();
     for (const e of entities) {
@@ -94,7 +95,7 @@ export function allCards() {
 const sectionLabel = (lang: Lang, id: string) => [...SECTIONS, QUICK_CHECK].find((s) => s.id === id)?.title[lang] ?? id;
 
 export async function questionsFor(module: string, lang: Lang): Promise<QuizQuestion[]> {
-  const { entityById } = await siteData();
+  const { entityById } = await siteData(lang);
   const imgs = new Map((await getImages()).map((i) => [i.id, i]));
   const out: QuizQuestion[] = [];
   for (const q of (await questions()).filter((x) => x.module === module)) {
@@ -126,7 +127,7 @@ export type StudyIndex = {
 
 /** Compact index used by every study island (/[lang]/data/study.json). */
 export async function studyIndex(lang: Lang): Promise<StudyIndex> {
-  const { modules, entities } = await siteData();
+  const { modules, entities } = await siteData(lang);
   const cards = await allCards();
   const qs = await questions();
   const ents = entities.map((e) => ({
@@ -153,7 +154,7 @@ export async function studyIndex(lang: Lang): Promise<StudyIndex> {
 
 /** Every possible exam question of the visible entities (/[lang]/data/oral.json, oral simulator). */
 export async function oralQuestions(lang: Lang): Promise<OralQuestion[]> {
-  const { entities } = await siteData();
+  const { entities } = await siteData(lang);
   return entities.flatMap((e) =>
     // `?? []`: a content cache written before examQuestions existed (node_modules/.astro) lacks the default.
     (e.examQuestions ?? []).map((q, i) => ({

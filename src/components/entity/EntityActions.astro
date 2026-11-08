@@ -2,7 +2,9 @@
 /**
  * Study actions in the entity header (NAVIGATION_SPEC §4): add to review, quiz,
  * bookmark, note, error log, save highlight. Works only with JS (personal data
- * lives in IndexedDB), so the whole bar is `js-only`.
+ * lives in IndexedDB), so the whole bar is `js-only`. From 600 px the bookmark
+ * and the quiz show in the toolbar row instead (EntityPinned.astro); the copies
+ * marked `data-pinned` here serve phones (entity.css).
  */
 import type { Lang } from '../../i18n/index.ts';
 import { tS } from '../../i18n/study.ts';
@@ -43,8 +45,8 @@ const hasQuiz = (await questions()).some((q) => q.entities.includes(entity.id));
       </button>
     )
   }
-  {hasQuiz && <a class="btn btn-small" href={langPath(lang, `study/quiz/?mode=topic&entity=${entity.id}`)}>{t('quizMe')}</a>}
-  <button type="button" class="btn btn-small" data-act="bookmark" aria-pressed="false">☆ {t('bookmark')}</button>
+  {hasQuiz && <a class="btn btn-small" href={langPath(lang, `study/quiz/?mode=topic&entity=${entity.id}`)} data-pinned>{t('quizMe')}</a>}
+  <button type="button" class="btn btn-small" data-act="bookmark" aria-pressed="false" data-pinned><span><span aria-hidden="true">☆</span> {t('bookmark')}</span></button>
   <button type="button" class="btn btn-small" data-act="error" aria-pressed="false">{t('errorLog')}</button>
   <button type="button" class="btn btn-small" data-act="highlight" disabled title={t('highlightHelp')} aria-describedby={`hl-help-${entity.id}`}>
     {t('highlight')}

@@ -3,7 +3,7 @@
  * AI line in every footer; sections open by default with "Continue" links;
  * A-/A+ reading size remembered and applied before paint; reading progress;
  * section chips that follow the scroll, on entity and pattern pages; a light
- * entity header on phones; differential tables in a labelled scroll region;
+ * entity header at every width; differential tables in a labelled scroll region;
  * form fields never below 16 px (no iOS zoom).
  */
 import { expect, test, type Page } from '@playwright/test';
@@ -122,8 +122,8 @@ test('sections are open by default, end with "Continue", and the reading control
   await expect(page.locator('#differential')).toBeInViewport();
   await page.locator('[data-mode-btn="full"]').click();
 
-  // Collapse all / expand all (on phones, behind the tools toggle).
-  if (width() < 600) await page.getByRole('button', { name: 'Strumenti' }).click();
+  // Collapse all / expand all (behind the tools toggle at every width).
+  await page.getByRole('button', { name: 'Strumenti' }).click();
   const all = page.locator('[data-expand-all]');
   await all.click();
   for (const t of await toggles.all()) await expect(t).toHaveAttribute('aria-expanded', 'false');
@@ -171,8 +171,9 @@ test('A-/A+ changes the reading size, is keyboard operable and is applied before
 
 test('the site name in the top bar is shown whole or as "Atlante", never cut, at every reading size', async ({ page }) => {
   test.skip(width() >= 1024, 'from 1024 px the name is in the sidebar');
-  // Phones are also checked at 320 px, the narrowest common width.
-  for (const w of width() < 600 ? [width(), 320] : [width()])
+  // Phones are also checked at 320 px, the narrowest common width; tablets from 600 px, where the chapter button
+  // and the palette shortcut share the bar.
+  for (const w of width() < 600 ? [width(), 320] : [600, 640, 700, 744, width()])
     for (const size of ['m', 'l', 'xl']) {
       await page.setViewportSize({ width: w, height: 700 });
       await page.addInitScript((s) => localStorage.setItem('ap-text', s), size);
@@ -191,11 +192,11 @@ test('the site name in the top bar is shown whole or as "Atlante", never cut, at
     }
 });
 
-test('at the larger reading sizes no card scrolls sideways on phones, folded toggles included', async ({ page }) => {
-  test.skip(width() >= 600, 'the lens toggle folds only below 600 px');
+test('at the larger reading sizes no card scrolls sideways, folded toggles included', async ({ page }) => {
   // The folded "Lenti (n)" toggle floats beside the badges: a badge that does not fit must move below it.
+  // Phones are checked down to 320 px; wider projects at their own width.
   for (const path of [ENTITY, 'en/e/coagulative-necrosis/', 'it/e/other-regulated-cell-death/'])
-    for (const w of [320, 360, 375])
+    for (const w of width() < 600 ? [320, 360, 375] : width() < 1024 ? [600, 700, width()] : [width()])
       for (const size of ['l', 'xl']) {
         await page.setViewportSize({ width: w, height: 700 });
         await page.addInitScript((s) => localStorage.setItem('ap-text', s), size);
@@ -213,10 +214,74 @@ test('reading progress and the section chips follow the scroll', async ({ page }
   await page.evaluate(() => document.getElementById('pathogenesis')!.scrollIntoView());
   await expect(page.locator('.section-toc a[href="#pathogenesis"]')).toHaveAttribute('aria-current', 'true');
   await expect(page.locator('.section-toc a[aria-current]')).toHaveCount(1);
-  await expect.poll(scale).toBeGreaterThan(0.1);
   await page.evaluate(() => document.getElementById('traps')!.scrollIntoView());
   await expect(page.locator('.section-toc a[href="#traps"]')).toHaveAttribute('aria-current', 'true');
+  // With the denser text pathogenesis starts right at 10 % of the card, so the bar is read here, 71-76 % down.
+  await expect.poll(scale).toBeGreaterThan(0.5);
   if (width() < 1024) await expect(page.locator('.section-toc a[href="#traps"]')).toBeInViewport();
+});
+
+test('a section entry, short sections included, is marked when tapped and while its section is under the reading line', async ({ page }) => {
+  // The old spy took the last section in the top 30 % of the screen: tapping "Macroscopia" marked "Microscopia",
+  // "Diagnosi" marked "Prognosi", "Colorazioni e IIC" marked "Clinica".
+  const current = page.locator('.section-toc a[aria-current]');
+  for (const [path, ids] of [
+    [ENTITY, ['gross', 'diagnosis', 'etiology', 'traps']],
+    ['it/e/coagulative-necrosis/', ['ancillary', 'clinical']],
+  ] as const) {
+    await page.goto(path);
+    for (const id of ids) {
+      const entry = page.locator(`.section-toc a[href="#${id}"]`);
+      await entry.click();
+      await expect(page).toHaveURL(new RegExp(`#${id}$`));
+      await expect(entry).toHaveAttribute('aria-current', 'true');
+      // Read on by a pixel, past the click's hold: the section under the line is still the tapped one.
+      await page.waitForTimeout(300);
+      await page.evaluate(() => scrollBy(0, 1));
+      await page.evaluate(() => new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r))));
+      await expect(current, `${path}#${id}`).toHaveAttribute('href', `#${id}`);
+      await expect(current).toHaveCount(1);
+    }
+  }
+  // Scrolled by hand until the end of "Macroscopia" is 2 px under the line: the next heading is in the top 30 % of
+  // the screen, yet Macroscopia is the section being read.
+  await page.goto(ENTITY);
+  await page.evaluate(() => {
+    const line = parseFloat(getComputedStyle(document.documentElement).scrollPaddingTop) + 8;
+    scrollBy(0, document.getElementById('gross')!.getBoundingClientRect().bottom - (line + 2));
+  });
+  expect(await page.evaluate(() => document.getElementById('micro')!.getBoundingClientRect().top < innerHeight * 0.3)).toBe(true);
+  await expect(current).toHaveAttribute('href', '#gross');
+});
+
+test('on tablets the chip strip fades where it hides chips and fills the current chip, at the same width', async ({ page, browserName }) => {
+  test.skip(width() < 600 || width() >= 1024, 'the chip strip of tablets (600-1023 px)');
+  await page.goto(ENTITY);
+  const strip = page.locator('.section-toc ol');
+  await expect(strip).toHaveAttribute('data-fade', 'end');
+  expect(await strip.evaluate((o) => getComputedStyle(o).maskImage)).toContain('gradient');
+  const chip = page.locator('.section-toc a[href="#pathogenesis"]');
+  const before = (await chip.boundingBox())!.width;
+  await page.evaluate(() => document.getElementById('pathogenesis')!.scrollIntoView());
+  await expect(chip).toHaveAttribute('aria-current', 'true');
+  // Filled like the pressed reading mode ("Completa"), and no wider (CLS 0).
+  const fill = (sel: string) => page.locator(sel).evaluate((el) => [getComputedStyle(el).backgroundColor, getComputedStyle(el).color]);
+  expect(await fill('.section-toc a[aria-current]')).toEqual(await fill('[data-mode-btn="full"]'));
+  expect((await chip.boundingBox())!.width).toBe(before);
+  await strip.evaluate((o) => (o.scrollLeft = o.scrollWidth));
+  await expect(strip).toHaveAttribute('data-fade', 'start');
+  // Selected, the text of a filled chip or control keeps the fill's ink (the page's ink there was 1.65:1).
+  const selected = (sel: string) => page.locator(sel).evaluate((el) => [getComputedStyle(el, '::selection').color, getComputedStyle(el).color]);
+  for (const sel of ['.section-toc a[aria-current]', '[data-mode-btn="full"]']) {
+    const [text, fill] = await selected(sel);
+    expect(text, sel).toBe(fill);
+  }
+  // Forced colours drop the fill: the current chip is underlined instead.
+  if (browserName === 'chromium') {
+    await page.emulateMedia({ forcedColors: 'active' });
+    expect(await chip.evaluate((a) => getComputedStyle(a).textDecorationLine)).toBe('underline');
+    expect((await chip.boundingBox())!.width).toBe(before);
+  }
 });
 
 test('on phones the chip strip slides away while reading down and comes back reading up or on focus', async ({ page }) => {
@@ -277,19 +342,18 @@ test('the pattern page has the contents of entity pages: chips on phones and tab
   await expect(toc.locator('a[aria-current]')).toHaveCount(1);
 });
 
-test('on phones the card text starts about a screen down: lenses, tools and objectives fold behind toggles', async ({ page }) => {
+test('lenses, less used tools and objectives fold behind toggles at every width, closed from the first paint', async ({ page }) => {
   await page.addInitScript(() => localStorage.setItem('ap-disclaimer', '1')); // past the one-time first-launch notice
   await page.goto(ENTITY);
-  const folds = page.locator('[data-fold]');
-  await expect(folds).toHaveCount(3);
-  if (width() >= 600) {
-    for (const f of await folds.all()) await expect(f).toBeHidden();
-    for (const shown of ['.lens-chips', '#entity-tools [data-print]', '#objectives-list']) await expect(page.locator(shown)).toBeVisible();
-    return;
-  }
-  // The first paragraph of the definition was 2.1-2.7 phone screens down; now about one (844 px tall phone).
-  const top = await page.locator('#definition .section-body p').first().evaluate((p) => p.getBoundingClientRect().top + scrollY);
-  expect(top).toBeLessThan(844 * 1.25);
+  await expect(page.locator('[data-fold]')).toHaveCount(3);
+  // Phones: the first paragraph of the definition was 2.1-2.7 phone screens down; now about one (844 px tall phone).
+  // Tablets and computers: its first line is on the first screen (it was 1.2-1.7 screens down).
+  const [top, bottom, screen] = await page
+    .locator('#definition .section-body p')
+    .first()
+    .evaluate((p) => [p.getBoundingClientRect().top + scrollY, p.getBoundingClientRect().top + scrollY + parseFloat(getComputedStyle(p).lineHeight), innerHeight]);
+  if (width() < 600) expect(top).toBeLessThan(844 * 1.25);
+  else expect(bottom).toBeLessThanOrEqual(screen);
   for (const [name, inside] of [
     [/^Lenti \(\d+\)$/, '.lens-chips'],
     ['Strumenti', '#entity-tools [data-print]'],
@@ -305,6 +369,138 @@ test('on phones the card text starts about a screen down: lenses, tools and obje
   // The study actions open with the tools.
   await expect(page.locator('#entity-tools .entity-actions')).toBeAttached();
   await expect(page.locator('#entity-tools .entity-actions')).not.toHaveCSS('display', 'none');
+  // Bookmark and quiz: in the toolbar row from 600 px (one copy only in the accessibility tree), behind "Tools" on phones.
+  const bookmark = page.getByRole('button', { name: 'Segnalibro', exact: true }); // the star is not read
+  const quiz = page.getByRole('link', { name: 'Quiz su questa scheda' });
+  await expect(bookmark).toHaveCount(1);
+  await expect(quiz).toHaveCount(1);
+  for (const control of [bookmark, quiz]) {
+    expect(await control.evaluate((el) => !!el.closest('#entity-tools')), 'inside the tools fold').toBe(width() < 600);
+    await expect(control).toBeVisible();
+  }
+});
+
+test('the reading toolbar keeps one row from 768 px: mode, A-/A+, bookmark, quiz and tools', async ({ page }) => {
+  test.skip(width() < 768, 'phones: mode, A-/A+ and tools only (the bookmark and the quiz are behind the tools)');
+  await page.goto(ENTITY);
+  const boxes = await page
+    .locator('.entity-toolbar :is(.segmented, .text-size, .entity-pinned > *, .fold-toggle)')
+    .evaluateAll((els) => els.filter((e) => e.checkVisibility()).map((e) => e.getBoundingClientRect().toJSON() as DOMRect));
+  expect(boxes).toHaveLength(5); // Quick/Full, the A-/A+ pair, bookmark, quiz, tools
+  const tops = boxes.map((b) => b.top);
+  expect(Math.max(...tops) - Math.min(...tops), 'one row').toBeLessThan(boxes[0]!.height / 2);
+});
+
+/** Median characters of the full lines (the last line of each paragraph excluded) of the card's running text. */
+const medianLine = (page: Page) =>
+  page.evaluate(() => {
+    const counts: number[] = [];
+    const range = document.createRange();
+    for (const p of document.querySelectorAll('.entity-section:not([data-callout]) .section-body > p')) {
+      if (!p.checkVisibility()) continue;
+      const lines = new Map<number, number>();
+      const walker = document.createTreeWalker(p, NodeFilter.SHOW_TEXT);
+      for (let n = walker.nextNode(); n; n = walker.nextNode())
+        for (let i = 0; i < n.textContent!.length; i++) {
+          range.setStart(n, i);
+          range.setEnd(n, i + 1);
+          const r = range.getClientRects()[0];
+          if (r?.width) lines.set(Math.round(r.bottom / 4), (lines.get(Math.round(r.bottom / 4)) ?? 0) + 1);
+        }
+      counts.push(...[...lines.entries()].sort((a, b) => a[0] - b[0]).map((e) => e[1]).slice(0, -1));
+    }
+    counts.sort((a, b) => a - b);
+    return counts[Math.floor(counts.length / 2)]!;
+  });
+
+test('the reading measure holds 62-70 characters per line on tablets and computers', async ({ page }) => {
+  test.skip(width() < 600, 'phones: the screen, not the measure, sets the line length');
+  await page.goto(ENTITY);
+  const median = await medianLine(page);
+  expect(median).toBeGreaterThanOrEqual(62);
+  expect(median).toBeLessThanOrEqual(70);
+});
+
+test('phones keep their reading text; from 600 px it is denser and a touch darker (D064)', async ({ page }) => {
+  await page.goto('it/e/coagulative-necrosis/');
+  const t = await page.evaluate(() => {
+    const cs = (sel: string) => getComputedStyle(document.querySelector(sel)!);
+    const [body, p] = [cs('body'), cs('#definition-body > p')];
+    return {
+      leading: parseFloat(body.lineHeight) / parseFloat(body.fontSize),
+      weight: body.fontWeight,
+      gap: parseFloat(p.marginBottom) / parseFloat(p.fontSize),
+      muted: cs('.entity-names').color,
+      lede: cs('.lede').color,
+      ink: body.color,
+      // The other-language name: Fraunces, preloaded, never swapped after the first paint (CLS)
+      name: cs('.entity-names div:first-child dd').fontFamily,
+    };
+  });
+  const phone = width() < 600;
+  expect(t.leading).toBeCloseTo(phone ? 1.65 : 1.5, 2);
+  expect(t.weight).toBe(phone ? '400' : '430');
+  expect(t.gap).toBeCloseTo(phone ? 1.1 : 0.85, 2);
+  expect(t.muted).toBe(phone ? 'rgb(87, 80, 97)' : 'rgb(79, 72, 89)'); // #575061 on phones, #4f4859 from 600 px
+  expect(t.lede).toBe(phone ? t.muted : t.ink);
+  expect(t.name).toMatch(/^"?Fraunces/);
+});
+
+test('print leaves out the previous and next card beside the breadcrumb', async ({ page }) => {
+  test.skip(width() < 600, 'the pair shows from 600 px');
+  await page.goto('it/e/coagulative-necrosis/');
+  const pager = page.locator('.crumb-row .pager');
+  await expect(pager).toBeVisible();
+  await page.emulateMedia({ media: 'print' });
+  await expect(pager).toBeHidden();
+  await expect(page.locator('.entity-head h1')).toBeVisible();
+});
+
+test('from 1024 px the text keeps 60 characters a line beside the side list; from 1280 px text and list are one centred block', async ({ page }) => {
+  test.skip(width() !== 1280, 'one run per engine: the test sets its own widths');
+  for (const viewport of [
+    { width: 1024, height: 1366 }, // iPad Pro 12.9 in portrait, sidebar open: 52 characters a line before
+    { width: 1180, height: 820 },
+    { width: 1440, height: 900 },
+    { width: 1920, height: 1080 },
+  ]) {
+    await page.setViewportSize(viewport);
+    await page.goto(ENTITY);
+    const median = await medianLine(page);
+    expect(median, `${viewport.width} px`).toBeGreaterThanOrEqual(60);
+    expect(median, `${viewport.width} px`).toBeLessThanOrEqual(70);
+    if (viewport.width < 1280) continue;
+    // No empty band between the text and the list: the gap and the room of the section toggles only (6rem).
+    const [text, list, page_, main] = await page.evaluate(() =>
+      ['#definition-body > p', '.section-toc', '.page', 'main'].map((s) => document.querySelector(s)!.getBoundingClientRect().toJSON() as DOMRect),
+    );
+    expect(list!.left - text!.right, `${viewport.width} px: text to list`).toBeLessThanOrEqual(6 * 16 + 2);
+    // The block sits in the middle of the reading area, and the breadcrumb and the header start where the text starts.
+    const pad = parseFloat(await page.evaluate(() => getComputedStyle(document.querySelector('main')!).paddingLeft));
+    expect(Math.abs(page_!.left - (main!.left + pad) - (main!.right - pad - page_!.right)), `${viewport.width} px: centred`).toBeLessThanOrEqual(2);
+    for (const sel of ['.crumb-row', '.entity-head h1'])
+      expect(Math.abs((await page.locator(sel).boundingBox())!.x - text!.left), `${viewport.width} px: ${sel}`).toBeLessThanOrEqual(1);
+  }
+});
+
+test('from 600 px capitals and tracking only for labels of up to three words, longer labels and drill questions in sentence case', async ({ page }) => {
+  const phone = width() < 600; // phones keep their kickers
+  const style = (sel: string) =>
+    page.locator(sel).first().evaluate((el) => {
+      const cs = getComputedStyle(el);
+      return { transform: cs.textTransform, spacing: cs.letterSpacing, family: cs.fontFamily, color: cs.color };
+    });
+  await page.goto(ENTITY);
+  const chapter = await style('.entity-head .kicker'); // "G01 · Danno, adattamento e morte cellulare"
+  expect(chapter.transform).toBe(phone ? 'uppercase' : 'none');
+  if (!phone) expect(chapter.spacing).toBe('normal');
+  expect((await style('#objectives-title')).transform).toBe('uppercase'); // "Obiettivi di apprendimento"
+  await page.goto('it/study/images/');
+  const question = await style('#pairs-q'); // "Quale immagine istologica appartiene alla stessa lesione?"
+  expect(question.transform).toBe(phone ? 'uppercase' : 'none');
+  if (phone) return;
+  expect(question.family).toMatch(/^"?Atkinson/);
+  expect(question.color).toBe(await page.evaluate(() => getComputedStyle(document.body).color)); // ink, not eosin
 });
 
 test('the differential table scrolls inside a labelled region with a sticky first column on phones', async ({ page }) => {
