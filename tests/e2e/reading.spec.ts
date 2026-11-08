@@ -436,6 +436,23 @@ test('from 1024 px the text keeps 60 characters a line beside the side list; fro
   }
 });
 
+test('capitals and tracking only for labels of up to three words; longer labels and drill questions in sentence case', async ({ page }) => {
+  const style = (sel: string) =>
+    page.locator(sel).first().evaluate((el) => {
+      const cs = getComputedStyle(el);
+      return { transform: cs.textTransform, spacing: cs.letterSpacing, family: cs.fontFamily, color: cs.color };
+    });
+  await page.goto(ENTITY);
+  const chapter = await style('.entity-head .kicker'); // "G01 · Danno, adattamento e morte cellulare"
+  expect([chapter.transform, chapter.spacing]).toEqual(['none', 'normal']);
+  expect((await style('#objectives-title')).transform).toBe('uppercase'); // "Obiettivi di apprendimento"
+  await page.goto('it/study/images/');
+  const question = await style('#pairs-q'); // "Quale immagine istologica appartiene alla stessa lesione?"
+  expect(question.transform).toBe('none');
+  expect(question.family).toMatch(/^"?Atkinson/);
+  expect(question.color).toBe(await page.evaluate(() => getComputedStyle(document.body).color)); // ink, not eosin
+});
+
 test('the differential table scrolls inside a labelled region with a sticky first column on phones', async ({ page }) => {
   await page.goto(ENTITY);
   const region = page.locator('#differential .table-scroll');

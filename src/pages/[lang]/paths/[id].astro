@@ -55,7 +55,7 @@ const kindLabel = path.kind === 'vertical' ? t('pathKindVertical') : t('pathKind
     ]}
   />
   <header class="page-head">
-    <p class="kicker">{kindLabel} · {fmt(t('pathSteps'), { n: steps.length })}</p>
+    <p class="kicker kicker-sentence">{kindLabel} · {fmt(t('pathSteps'), { n: steps.length })}</p>
     <h1>{path.title[lang]}</h1>
     <p class="lede">{path.description[lang]}</p>
   </header>

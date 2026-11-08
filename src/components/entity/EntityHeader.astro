@@ -35,7 +35,7 @@ const synonyms = [...n.synonyms[lang], ...n.synonyms[other]];
 ---
 
 <header class="entity-head">
-  {mod && <p class="kicker">{mod.id.toUpperCase()} · {mod.label[lang]}</p>}
+  {mod && <p class="kicker kicker-sentence">{mod.id.toUpperCase()} · {mod.label[lang]}</p>}
   <h1>{n[lang]}</h1>
   <dl class="entity-names">
     <div><dt class="visually-hidden">{other.toUpperCase()}</dt><dd lang={other}>{n[other]}</dd></div>

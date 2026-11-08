@@ -44,8 +44,8 @@ html {
   display: flex;
   align-items: center;
   gap: var(--space-3);
-  background: color-mix(in srgb, var(--paper) 92%, transparent);
-  backdrop-filter: blur(8px);
+  /* Opaque: text scrolled under the bar showed through it, a blurred smear in Chromium and ghost text in WebKit */
+  background: var(--paper);
   border-bottom: 1px solid var(--rule);
 }
 .brand {

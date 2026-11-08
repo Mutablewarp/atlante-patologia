@@ -268,7 +268,7 @@ function Runner(props: Run & { lang: Lang; t: T; index: StudyIndex; onRestart: (
   return (
     <section class="quiz" aria-labelledby="quiz-q-title">
       <div class="quiz-bar">
-        <h2 id="quiz-q-title" class="kicker" tabIndex={-1} ref={headRef}>
+        <h2 id="quiz-q-title" class="kicker kicker-sentence" tabIndex={-1} ref={headRef}>
           {fmt(t('questionOf'), { i: pos + 1, n: questions.length })}
         </h2>
         {exam && (

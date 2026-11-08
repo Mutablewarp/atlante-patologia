@@ -332,6 +332,12 @@ html:not(.js) .js-only {
   color: var(--eosin);
   margin: 0 0 var(--space-2);
 }
+/* Capitals and tracking suit a label of one to three words; a longer one (a chapter name, a card name after its
+   kind) keeps the kicker's colour and weight in sentence case, which reads faster */
+.kicker-sentence {
+  letter-spacing: normal;
+  text-transform: none;
+}
 
 .lede {
   font-size: var(--step-1);

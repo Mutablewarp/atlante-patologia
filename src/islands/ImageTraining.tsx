@@ -63,7 +63,7 @@ function Pairs({ lang, t, pairs }: { lang: Lang; t: T; pairs: Pair[] }) {
   if (!item) return <p class="empty-state">{t('noImages')}</p>;
   return (
     <section class="drill" aria-labelledby="pairs-q">
-      <h2 id="pairs-q" class="kicker">
+      <h2 id="pairs-q" class="drill-prompt">
         {t('pairsPrompt')}
       </h2>
       <Figure img={{ ...item.gross, shapes: [], target: 0 }} />
@@ -104,7 +104,7 @@ function LookAlikes({ lang, t, items }: { lang: Lang; t: T; items: LookAlike[] }
   if (!item) return <p class="empty-state">{t('noImages')}</p>;
   return (
     <section class="drill" aria-labelledby="look-q">
-      <h2 id="look-q" class="kicker">
+      <h2 id="look-q" class="drill-prompt">
         {t('lookPrompt')}
       </h2>
       <Figure img={{ ...item.image, shapes: [], target: 0 }} />
