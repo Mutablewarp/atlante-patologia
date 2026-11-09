@@ -417,7 +417,29 @@ test('exam mode: pressing Finish again while the answers are being saved stores 
   await page.getByRole('button', { name: 'Start again' }).press('Enter');
   await expect(page.getByRole('radio', { name: /^Timed exam/ })).toBeFocused();
   await expect(page.getByRole('radio', { name: /^Timed exam/ })).toBeChecked();
-  await noAxeViolations(page); // the focused control is not left under the sticky bar
+  // press() focuses the button first (as Tab does), which starts a smooth scroll toward it. Once the page is still, that
+  // scroll must not have carried the modes off the top or under the sticky bar (SC 2.4.11; 2.5.8 for the radios beside it).
+  await page.evaluate(
+    () =>
+      new Promise<void>((done) => {
+        let y = NaN;
+        let still = 0;
+        const tick = () => {
+          still = scrollY === y ? still + 1 : 0;
+          y = scrollY;
+          if (still >= 10) done();
+          else requestAnimationFrame(tick);
+        };
+        tick();
+      }),
+  );
+  const bar = await page.locator('.topbar').evaluate((b) => b.getBoundingClientRect().bottom);
+  for (const mode of await page.locator('input[name=mode]').all()) {
+    const box = (await mode.boundingBox())!;
+    expect(box.y).toBeGreaterThanOrEqual(bar);
+    expect(box.y + box.height).toBeLessThanOrEqual(page.viewportSize()!.height);
+  }
+  await noAxeViolations(page);
 });
 
 test('oral simulator: "time is up" is announced in a live region, and a double save stores one answer', async ({ page }) => {
