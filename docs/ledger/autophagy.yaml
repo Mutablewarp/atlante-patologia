@@ -330,12 +330,12 @@ claims:
     date: 2026-11-03
   - claimId: autophagy-c042
     section: clinical
-    statement: "Xenophagy eliminates intracellular parasites, viruses including HIV-1, and bacteria such as Shigella, Streptococcus and M. tuberculosis."
+    statement: "Xenophagy is the form of autophagy that clears pathogens from inside the cell, including bacteria such as M. tuberculosis and viruses such as HIV-1."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "18" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "fixer-agent (finalizer g01-v22; reworded after a run of 9 words shared with rubin-8e p. 18, checked on that page)"
+    date: 2026-11-12
   - claimId: autophagy-c043
     section: clinical
     statement: "Some viruses encode Bcl-2-like proteins binding Beclin-1; M. tuberculosis interferes with phagosome-lysosome fusion."
@@ -362,12 +362,12 @@ claims:
     date: 2026-11-03
   - claimId: autophagy-c046
     section: clinical
-    statement: "Autophagy is increased in some COPD, reduced in alveolar macrophages of chronic smokers, and defective autophagic clearance of mutant protein aggregates in airway epithelium is implicated in cystic fibrosis."
+    statement: "Impaired removal of aggregates of the mutant protein by autophagy in the lining of the airways is implicated in cystic fibrosis; autophagy is higher in some COPD and lower in alveolar macrophages of chronic smokers."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "18-19" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "fixer-agent (finalizer g01-v22; reworded after a run of 9 words shared with rubin-8e pp. 18-19, checked on those pages)"
+    date: 2026-11-12
   - claimId: autophagy-c047
     section: clinical
     statement: "Some inherited cardiomyopathies result from mutated autophagy proteins; deficient autophagy also worsens ischemia/reperfusion injury and heart failure."
@@ -394,12 +394,12 @@ claims:
     date: 2026-11-03
   - claimId: autophagy-c050
     section: prognosis
-    statement: "Because autophagy is linked to many diseases, there is considerable interest in manipulating it."
+    statement: "Researchers are actively looking for ways to alter autophagy, since it takes part in so many disease processes."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "18" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "fixer-agent (finalizer g01-v22; statement reworded after a run of 10 words shared with rubin-8e p. 18; public text unchanged)"
+    date: 2026-11-12
   - claimId: autophagy-c051
     section: differential
     statement: "The UPS handles short-lived proteins and cannot degrade aggregates or organelles."

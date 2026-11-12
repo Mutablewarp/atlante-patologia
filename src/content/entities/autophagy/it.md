@@ -1,6 +1,6 @@
 ---
 lang: it
-translatedFrom: f6abd517e162a336d9639abe376b3068b8dab9e084dd346cb84b2308db740278
+translatedFrom: c573eaf4149331e74ceab23556de335c33c5ff1540382f4e9cf8df2e9d0e3bb9
 ---
 
 ## Definizione ed epidemiologia
@@ -82,9 +82,9 @@ Un difetto o un eccesso di autofagia contribuisce a molte malattie:
 - **Cancro:** il gene della Beclina-1 e alcuni geni Atg sono oncosoppressori, deleti o mutati in molti tumori umani; tuttavia l'autofagia protegge anche le cellule tumorali dall'ipossia, dalla carenza di nutrienti e dalla terapia.<!--c:autophagy-c039-->
 - **Neurodegenerazione:** nella malattia di Huntington alcune mutazioni possono ostacolare la rimozione degli aggregati e dei mitocondri difettosi; nelle malattie di Alzheimer e di Parkinson il calo della produzione di Beclina-1 legato all'età potrebbe spiegare in parte perché gli aggregati si accumulano più in fretta di quanto vengano eliminati.<!--c:autophagy-c040-->
 - **Invecchiamento:** gli aggregati non degradati si accumulano man mano che la macroautofagia e la CMA si riducono con l'età; studi sugli animali suggeriscono che gli inibitori di mTOR, potenziando l'autofagia, possano allungare la vita.<!--c:autophagy-c041-->
-- **Infezioni:** la xenofagia elimina parassiti intracellulari, virus come HIV-1 e batteri come *Shigella*, *Streptococcus* e *Mycobacterium tuberculosis*.<!--c:autophagy-c042--> I microrganismi contrattaccano: alcuni virus producono proteine simili a Bcl-2 che legano la Beclina-1, e *M. tuberculosis* blocca la fusione tra fagosoma e lisosoma.<!--c:autophagy-c043--> Il poliovirus, il virus dell'epatite C e altri virus a RNA volgono la via a proprio vantaggio, allestendo i siti di replicazione sulle membrane autofagiche.<!--c:autophagy-c044-->
+- **Infezioni:** la xenofagia è il ramo dell'autofagia che libera la cellula dagli invasori annidati al suo interno, dai batteri come *Mycobacterium tuberculosis* ai virus come HIV-1.<!--c:autophagy-c042--> I microrganismi contrattaccano: alcuni virus producono proteine simili a Bcl-2 che legano la Beclina-1, e *M. tuberculosis* blocca la fusione tra fagosoma e lisosoma.<!--c:autophagy-c043--> Il poliovirus, il virus dell'epatite C e altri virus a RNA volgono la via a proprio vantaggio, allestendo i siti di replicazione sulle membrane autofagiche.<!--c:autophagy-c044-->
 - **Malattia di Crohn:** varianti di due geni dell'autofagia che sostengono la xenofagia aumentano il rischio; la scarsa eliminazione dei batteri accresce la produzione di mediatori proinfiammatori.<!--c:autophagy-c045-->
-- **Polmone:** l'autofagia è aumentata in alcune forme di BPCO e ridotta nei macrofagi alveolari dei fumatori cronici, mentre una ridotta eliminazione autofagica degli aggregati di proteina mutante nell'epitelio delle vie aeree contribuisce alla fibrosi cistica.<!--c:autophagy-c046-->
+- **Polmone:** nella fibrosi cistica le cellule che rivestono le vie aeree sembrano eliminare male gli aggregati della proteina mutata, e ciò contribuirebbe alla malattia; nei fumatori il quadro è misto, con più autofagia in alcuni casi di BPCO e meno nei macrofagi alveolari.<!--c:autophagy-c046-->
 - **Cuore:** alcune cardiomiopatie ereditarie derivano da mutazioni di proteine dell'autofagia; un'autofagia insufficiente aggrava inoltre il danno da ischemia-riperfusione e lo scompenso cardiaco.<!--c:autophagy-c047-->
 
 ## Diagnosi, laboratorio e imaging
