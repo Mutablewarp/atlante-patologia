@@ -77,7 +77,12 @@ function Setup(props: {
   const form = useRef<HTMLFormElement>(null);
   // After "Start again" the results are gone: focus the chosen mode (or the first field) instead of <body>.
   useEffect(() => {
-    if (props.focus) form.current?.querySelector<HTMLElement>('input:checked, input:not([type=radio]), select')?.focus();
+    if (!props.focus) return;
+    // Focusing "Start again" can start a smooth scroll toward it that is still running here. focus() does not stop it when
+    // the field is in view, and it would carry the form off the top, under the sticky bar (SC 2.4.11). An instant scroll
+    // stops it and shows the form from its top.
+    form.current?.scrollIntoView({ block: 'start', behavior: 'instant' });
+    form.current?.querySelector<HTMLElement>('input:checked, input:not([type=radio]), select')?.focus();
   }, []);
   const initialMode = param('mode') as Mode | null;
   const entity = param('entity');
