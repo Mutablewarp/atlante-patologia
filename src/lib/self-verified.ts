@@ -15,26 +15,32 @@ export type SelfVerified = {
 };
 
 export const SELF_VERIFIED: readonly SelfVerified[] = [
-  { ledger: 'coagulative-necrosis', claims: 21, name: { it: 'Necrosi coagulativa', en: 'Coagulative necrosis' }, path: 'e/coagulative-necrosis/' },
-  { ledger: 'dysplasia', claims: 21, name: { it: 'Displasia', en: 'Dysplasia' }, path: 'e/dysplasia/' },
-  { ledger: 'fat-necrosis', claims: 20, name: { it: 'Necrosi adiposa (steatonecrosi)', en: 'Fat necrosis' }, path: 'e/fat-necrosis/' },
-  { ledger: 'fatty-change', claims: 14, name: { it: 'Steatosi (degenerazione grassa)', en: 'Fatty change (steatosis)' }, path: 'e/fatty-change/' },
-  { ledger: 'fibrinoid-necrosis', claims: 15, name: { it: 'Necrosi fibrinoide', en: 'Fibrinoid necrosis' }, path: 'e/fibrinoid-necrosis/' },
-  { ledger: 'gangrene', claims: 18, name: { it: 'Gangrena', en: 'Gangrene' }, path: 'e/gangrene/' },
-  { ledger: 'hydropic-swelling', claims: 11, name: { it: 'Rigonfiamento idropico (degenerazione idropica)', en: 'Hydropic (cellular) swelling' }, path: 'e/hydropic-swelling/' },
-  { ledger: 'hypoxic-ischemic-injury', claims: 15, name: { it: 'Danno cellulare ipossico-ischemico', en: 'Hypoxic–ischemic cell injury' }, path: 'e/hypoxic-ischemic-injury/' },
-  { ledger: 'intracellular-accumulations', claims: 12, name: { it: 'Accumuli intracellulari', en: 'Intracellular accumulations' }, path: 'e/intracellular-accumulations/' },
-  { ledger: 'metaplasia', claims: 16, name: { it: 'Metaplasia', en: 'Metaplasia' }, path: 'e/metaplasia/' },
-  { ledger: 'metastatic-calcification', claims: 3, name: { it: 'Calcificazione metastatica', en: 'Metastatic calcification' }, path: 'e/metastatic-calcification/' },
-  { ledger: 'oxidative-injury', claims: 4, name: { it: 'Danno ossidativo (radicali liberi)', en: 'Oxidative (free-radical) injury' }, path: 'e/oxidative-injury/' },
-  { ledger: 'pigment-accumulation', claims: 21, name: { it: 'Accumulo di pigmenti', en: 'Pigment accumulation' }, path: 'e/pigment-accumulation/' },
+  { ledger: 'apoptosis', claims: 2, name: { it: 'Apoptosi', en: 'Apoptosis' }, path: 'e/apoptosis/' },
+  { ledger: 'autophagy', claims: 3, name: { it: 'Autofagia', en: 'Autophagy' }, path: 'e/autophagy/' },
+  { ledger: 'dysplasia', claims: 1, name: { it: 'Displasia', en: 'Dysplasia' }, path: 'e/dysplasia/' },
+  {
+    ledger: 'dystrophic-calcification',
+    claims: 1,
+    name: { it: 'Calcificazione distrofica', en: 'Dystrophic calcification' },
+    path: 'e/dystrophic-calcification/',
+  },
+  { ledger: 'fat-necrosis', claims: 11, name: { it: 'Necrosi adiposa (steatonecrosi)', en: 'Fat necrosis' }, path: 'e/fat-necrosis/' },
+  { ledger: 'hypertrophy', claims: 3, name: { it: 'Ipertrofia', en: 'Hypertrophy' }, path: 'e/hypertrophy/' },
+  { ledger: 'liquefactive-necrosis', claims: 1, name: { it: 'Necrosi colliquativa', en: 'Liquefactive necrosis' }, path: 'e/liquefactive-necrosis/' },
+  { ledger: 'metaplasia', claims: 1, name: { it: 'Metaplasia', en: 'Metaplasia' }, path: 'e/metaplasia/' },
+  {
+    ledger: 'other-regulated-cell-death',
+    claims: 17,
+    name: { it: 'Altre forme di morte cellulare regolata (anoikis, NETosi, entosi, morte da granzimi)', en: 'Other regulated cell death (anoikis, NETosis, entosis, granzyme-mediated)' },
+    path: 'e/other-regulated-cell-death/',
+  },
+  { ledger: 'pigment-accumulation', claims: 2, name: { it: 'Accumulo di pigmenti', en: 'Pigment accumulation' }, path: 'e/pigment-accumulation/' },
   {
     ledger: 'protein-quality-control',
-    claims: 6,
+    claims: 1,
     name: { it: 'Controllo di qualità delle proteine (sistema ubiquitina-proteasoma, chaperoni)', en: 'Protein quality control (ubiquitin–proteasome system, chaperones)' },
     path: 'e/protein-quality-control/',
   },
-  { ledger: 'pyroptosis', claims: 13, name: { it: 'Piroptosi', en: 'Pyroptosis' }, path: 'e/pyroptosis/' },
 ];
 
 /** A ledger `verifier` that names the writing or the correcting agent is not a separate verifier. */
