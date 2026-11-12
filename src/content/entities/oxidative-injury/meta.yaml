@@ -85,8 +85,8 @@ quickCheck:
       it: "In che modo un sovradosaggio di paracetamolo provoca necrosi epatica centrolobulare?"
       en: "How does an acetaminophen overdose cause centrilobular liver necrosis?"
     a:
-      it: "Un suo metabolita consuma il glutatione degli epatociti, che non riescono più a neutralizzare i perossidi; il danno è centrolobulare perché lì gli enzimi che metabolizzano il farmaco sono più attivi."
-      en: "Hepatocyte glutathione is used up by a toxic metabolite of the drug, leaving the cells unable to neutralize peroxides; centrilobular cells suffer most because drug-metabolizing enzymes are most active there."
+      it: "Un suo metabolita consuma il glutatione degli epatociti, che non riescono più a neutralizzare i perossidi; il danno è centrolobulare probabilmente perché lì gli enzimi che metabolizzano il farmaco sono più attivi."
+      en: "Hepatocyte glutathione is used up by a toxic metabolite of the drug, leaving the cells unable to neutralize peroxides; centrilobular cells suffer most, probably because drug-metabolizing enzymes are most active there."
     kind: free
   - id: oxidative-injury-q5
     q:
@@ -141,7 +141,11 @@ examQuestions:
 images:
   - id: oxidative-injury-micro-1
     role: micro
+  - id: oxidative-injury-micro-7
+    role: micro
   - id: oxidative-injury-micro-2
+    role: micro
+  - id: oxidative-injury-micro-4
     role: micro
   - id: oxidative-injury-micro-3
     role: micro
@@ -165,5 +169,5 @@ sources:
     pages: "850, 875, 880"
   - source: toyokuni-1999
   - source: zarkovic-2003
-lastUpdated: 2026-11-08
+lastUpdated: 2026-11-12
 status: published

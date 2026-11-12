@@ -114,12 +114,12 @@ claims:
     date: 2026-11-03
   - claimId: oxidative-injury-c015
     section: pathogenesis
-    statement: "Superoxide does not diffuse far from its origin and gives rise to other ROS."
+    statement: "Superoxide acts near the site where it forms and is the precursor of the other ROS."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "19" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
   - claimId: oxidative-injury-c016
     section: pathogenesis
     statement: "H2O2 is not very injurious by itself but is membrane permeable and diffuses widely."
@@ -186,12 +186,12 @@ claims:
     date: 2026-11-03
   - claimId: oxidative-injury-c024
     section: pathogenesis
-    statement: "Cysteine and methionine (sulfur-containing) and nitrogen-containing residues are the most oxidation-prone amino acids; oxidized proteins fragment or aggregate."
+    statement: "Amino acids with sulfur-containing side chains (cysteine, methionine) or nitrogen-containing side chains are among the most oxidation-prone; oxidized proteins fragment or aggregate."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "32" }
     status: verified
     verifiedBy: agent
-    verifier: "author-agent v22/oxidative-injury"
-    date: 2026-11-08
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
   - claimId: oxidative-injury-c025
     section: pathogenesis
     statement: "Fe2+ held by insoluble oxidized-protein aggregates fuels ROS formation that enlarges the aggregates, a vicious circle."
@@ -202,12 +202,12 @@ claims:
     date: 2026-11-09
   - claimId: oxidative-injury-c026
     section: pathogenesis
-    statement: "AGEs are protein modifications produced by reactive intermediates arising from hydroxyl-radical attack on sugars."
+    statement: "AGEs are proteins modified by reactive sugar-derived intermediates; hydroxyl-radical attack on sugars is one source of these intermediates."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "32" }
     status: verified
     verifiedBy: agent
-    verifier: "author-agent v22/oxidative-injury"
-    date: 2026-11-08
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
   - claimId: oxidative-injury-c027
     section: pathogenesis
     statement: "The hydroxyl radical modifies DNA bases, breaks strands and cross-links them; damage beyond repair results in cell death or permanent mutation."
@@ -218,12 +218,12 @@ claims:
     date: 2026-11-09
   - claimId: oxidative-injury-c028
     section: pathogenesis
-    statement: "Oxidants also damage extracellular matrix proteins such as collagen and elastin, and basement membranes."
+    statement: "Oxidant damage extends to collagen, elastin and other extracellular matrix proteins, and to basement membranes."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "34" }
     status: verified
     verifiedBy: agent
-    verifier: "author-agent v22/oxidative-injury"
-    date: 2026-11-08
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
   - claimId: oxidative-injury-c029
     section: pathogenesis
     statement: "How well antioxidant defenses work largely decides whether ROS exposure causes injury."
@@ -278,8 +278,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "1", pages: "32-33" }
     status: verified
     verifiedBy: agent
-    verifier: "author-agent v22/oxidative-injury"
-    date: 2026-11-08
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
   - claimId: oxidative-injury-c036
     section: pathogenesis
     statement: "Unstressed Nrf2 is bound in the cytosol to Keap1 with a CUL3 E3 ubiquitin ligase and degraded by proteasomes."
@@ -322,12 +322,12 @@ claims:
     date: 2026-11-09
   - claimId: oxidative-injury-c041
     section: micro
-    statement: "Acetaminophen-injured centrilobular liver cells are coagulatively necrotic or hydropically swollen, some with small lipid droplets, and the inflammatory infiltrate is scant."
+    statement: "In acetaminophen toxicity, inflammation around the central veins is slight, and the hepatocytes there are hydropically swollen or coagulatively necrotic."
     sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
   - claimId: oxidative-injury-c042
     section: micro
     statement: "Lipofuscin, a golden-brown age pigment of long-lived cells such as neurons and cardiac myocytes, consists of lipids damaged by peroxidation and proteins cross-linked by oxidation."
@@ -362,12 +362,12 @@ claims:
     date: 2026-11-09
   - claimId: oxidative-injury-c046
     section: clinical
-    statement: "Acetaminophen toxicity is the leading cause of acute liver failure in the US."
+    statement: "In the US, no cause of acute liver failure is more common than acetaminophen toxicity."
     sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
   - claimId: oxidative-injury-c047
     section: clinical
     statement: "In chronic granulomatous disease, an inherited NADPH oxidase defect, phagocytes cannot make superoxide or H2O2, infections recur, and the disease shows that regulated ROS production is required."
@@ -610,12 +610,12 @@ claims:
     date: 2026-11-09
   - claimId: oxidative-injury-c077
     section: ancillary
-    statement: "No test is specific for drug-induced liver injury, so diagnosis relies on the drug history plus exclusion of other liver disease; because drug-related histology mimics other liver diseases, biopsy is often inconclusive."
+    statement: "Because drug-related liver histology overlaps with other liver diseases, biopsy often cannot prove drug injury; the diagnosis rests mainly on the drug history and on excluding other liver disease."
     sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
     status: verified
     verifiedBy: agent
-    verifier: "author-agent v22/oxidative-injury"
-    date: 2026-11-08
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
   - claimId: oxidative-injury-c078
     section: ancillary
     statement: "At toxic doses acetaminophen necrosis is zonal around central veins (centrilobular); very high doses may make it panlobular."
@@ -635,12 +635,12 @@ claims:
     date: 2026-11-09
   - claimId: oxidative-injury-c080
     section: ancillary
-    statement: "In hereditary hemochromatosis the Perls stain reveals heavy iron deposits within hepatocytes."
+    statement: "Hepatocytes overloaded with iron in hereditary hemochromatosis are made visible by the Perls stain."
     sourceRef: { source: rubin-8e, chapter: "20", pages: "875" }
     status: verified
     verifiedBy: agent
-    verifier: "author-agent v22/oxidative-injury"
-    date: 2026-11-08
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
   - claimId: oxidative-injury-c081
     section: ancillary
     statement: "Antibodies to ROS-specific covalent products, such as 8-OHdG in DNA and HNE-modified proteins, allow immunohistochemical localization of oxidative damage in paraffin-embedded tissue."
@@ -683,3 +683,11 @@ claims:
     verifiedBy: agent
     verifier: "independent-verifier-agent"
     date: 2026-11-09
+  - claimId: oxidative-injury-c086
+    section: clinical
+    statement: "Hepatocytes near the central veins are hit hardest, likely because drug-metabolizing enzymes work hardest there."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
