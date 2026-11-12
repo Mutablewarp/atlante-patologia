@@ -133,11 +133,17 @@ examQuestions:
     focus: [differential, ancillary]
     level: 3
 images:
+  - id: metaplasia-micro-4
+    role: micro
+  - id: metaplasia-micro-6
+    role: micro
   - id: metaplasia-micro-1
     role: micro
-  - id: metaplasia-micro-2
-    role: micro
   - id: metaplasia-micro-3
+    role: micro
+  - id: metaplasia-micro-5
+    role: micro
+  - id: metaplasia-micro-2
     role: micro
   - id: g01-adaptation-spectrum
     role: diagram
@@ -170,9 +176,9 @@ sources:
     pages: "1028-1029, 1032-1033"
   - source: rubin-8e
     chapter: "25"
-    pages: "1076, 1078-1079"
+    pages: "1077-1079"
   - source: shaheen-2016
   - source: naini-2016
   - source: regauer-2007
-lastUpdated: 2026-11-08
+lastUpdated: 2026-11-12
 status: published

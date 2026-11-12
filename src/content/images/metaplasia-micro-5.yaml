@@ -10,6 +10,9 @@
 # doi:10.1016/j.prp.2005.03.010: Alcian blue pH 2.5/PAS stains acid mucin in goblet cells and in some non-goblet
 # columnar cells) and PMID 28248814 (Srivastava et al. 2017, doi:10.1097/PAS.0000000000000819: goblet cells are almost
 # always identifiable on H&E, so the stain is not needed on every oesophageal biopsy).
+# The pseudogoblet pitfall (a distended foveolar cell can mimic the goblet shape and also takes up Alcian blue, usually
+# more weakly; a true goblet cell has a triangle-shaped nucleus) rests on naini-2016 (PMID 26813745, full text read in
+# PMC4833583), which the card's ledger already cites; wording from the independent verifier's report, applied 2026-11-12.
 id: metaplasia-micro-5
 file: metaplasia-micro-5.jpg
 kind: micro
@@ -49,8 +52,9 @@ caption:
     cellule caliciformi accumulano mucina acida, che l'Alcian blu colora: spiccano come puntini blu scuro lungo i villi
     e come gruppi turchesi nelle cripte, mentre il resto del tessuto resta rosa e viola. Le cellule caliciformi indicano
     la metaplasia intestinale e sono il reperto che definisce l'epitelio specializzato dell'esofago di Barrett.
-    Tranelli: anche alcune cellule cilindriche senza forma a calice possono prendere il colorante, quindi conta solo le
-    cellule blu che hanno anche la forma di un calice; inoltre la colorazione è un aiuto nei casi dubbi, non un
+    Tranelli: anche alcune cellule cilindriche senza forma a calice prendono il colorante, e cellule foveolari distese
+    possono perfino imitarne la forma, quindi conta solo le cellule blu con una vera forma a calice, un unico vacuolo di
+    muco tondeggiante sopra un piccolo nucleo triangolare; inoltre la colorazione è un aiuto nei casi dubbi, non un
     passaggio di routine, perché in EE le cellule caliciformi si riconoscono quasi sempre (confronta le immagini in EE
     di questa scheda).
   en: >-
@@ -60,10 +64,10 @@ caption:
     finger-like (villiform) projections and crypts. Now look for blue. Goblet cells store acid mucin, which Alcian blue
     colours: they stand out as dark-blue dots along the villi and as turquoise clusters in the crypts, while the rest of
     the tissue stays pink and purple. Goblet cells mark intestinal metaplasia and are the finding that defines the
-    specialized epithelium of Barrett esophagus. Pitfalls: some columnar cells without the goblet shape can take up the
-    dye too, so count only blue cells that also have the shape of a goblet; and the stain is a help for doubtful cases,
-    not a routine step, because on H&E goblet cells can nearly always be recognised (compare the H&E images of this
-    card).
+    specialized epithelium of Barrett esophagus. Pitfalls: some columnar cells without the goblet shape take up the dye
+    too, and distended foveolar cells can even mimic that shape, so count only blue cells with a true goblet shape, one
+    rounded mucin vacuole above a small triangular nucleus; and the stain is a help for doubtful cases, not a routine
+    step, because on H&E goblet cells can nearly always be recognised (compare the H&E images of this card).
 alt:
   it: >-
     Micrografia a piccolo ingrandimento di mucosa esofagea colorata con Alcian blu: a sinistra una mucosa rosa e viola
