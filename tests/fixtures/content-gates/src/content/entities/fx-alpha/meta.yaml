@@ -12,6 +12,8 @@ lenses:
   system: [fx-system]
   process: [fx-process]
   group: [fx-group]
+sites:
+  - { organ: fx-organ, claim: fx-alpha-c001 }
 learningObjectives:
   - { it: "Obiettivo segnaposto.", en: "Placeholder objective." }
 relations:

@@ -1,0 +1,59 @@
+# Organ nodes of the interactive body (docs/CONTENT_SCHEMA.md §6a). One node = one place a lesion can sit.
+# `system`: an anatomical term of taxonomy/system.yaml (never general or systemic). `order`: that term's order plus the position inside it.
+# `meshes`: filled later by the 3D asset pipeline (plan/v3-plan.md §8.3); empty until then.
+- { id: aorta, system: vessels, order: 31, label: { it: "Aorta", en: "Aorta" } }
+- { id: carotid-arteries, system: vessels, order: 32, label: { it: "Arterie carotidi", en: "Carotid arteries" } }
+- { id: lower-limb-veins, system: vessels, order: 33, label: { it: "Vene degli arti inferiori", en: "Veins of the lower limb" } }
+- { id: heart, system: heart, order: 41, label: { it: "Cuore", en: "Heart" }, aliases: { it: ["Pericardio"], en: ["Pericardium"] } }
+- { id: heart-valves, system: heart, order: 42, label: { it: "Valvole cardiache", en: "Heart valves" } }
+- { id: trachea-bronchi, system: respiratory, order: 51, label: { it: "Trachea e bronchi", en: "Trachea and bronchi" } }
+- { id: lung, system: respiratory, order: 52, label: { it: "Polmone", en: "Lung" }, aliases: { it: ["Polmoni"], en: ["Lungs"] } }
+- { id: pleura, system: respiratory, order: 53, label: { it: "Pleura", en: "Pleura" } }
+- { id: esophagus, system: gastrointestinal, order: 61, label: { it: "Esofago", en: "Esophagus" }, aliases: { it: [], en: ["Oesophagus"] } }
+- { id: stomach, system: gastrointestinal, order: 62, label: { it: "Stomaco", en: "Stomach" } }
+- { id: small-intestine, system: gastrointestinal, order: 63, label: { it: "Intestino tenue", en: "Small intestine" }, aliases: { it: [], en: ["Small bowel"] } }
+- { id: appendix, system: gastrointestinal, order: 64, label: { it: "Appendice vermiforme", en: "Vermiform appendix" }, aliases: { it: ["Appendice"], en: ["Appendix"] } }
+- { id: colon, system: gastrointestinal, order: 65, label: { it: "Colon", en: "Colon" }, aliases: { it: ["Intestino crasso"], en: ["Large intestine", "Large bowel"] } }
+- { id: rectum-anal-canal, system: gastrointestinal, order: 66, label: { it: "Retto e canale anale", en: "Rectum and anal canal" } }
+- { id: liver, system: liver-biliary, order: 71, label: { it: "Fegato", en: "Liver" } }
+- { id: gallbladder-bile-ducts, system: liver-biliary, order: 72, label: { it: "Colecisti e vie biliari", en: "Gallbladder and bile ducts" } }
+- { id: pancreas, system: pancreas, order: 81, label: { it: "Pancreas", en: "Pancreas" } }
+- { id: kidney, system: kidney, order: 91, label: { it: "Rene", en: "Kidney" }, aliases: { it: ["Reni"], en: ["Kidneys"] } }
+- { id: ureter, system: urinary-male-genital, order: 101, label: { it: "Uretere", en: "Ureter" } }
+- { id: urinary-bladder, system: urinary-male-genital, order: 102, label: { it: "Vescica urinaria", en: "Urinary bladder" }, aliases: { it: ["Vescica"], en: ["Bladder"] } }
+- { id: urethra, system: urinary-male-genital, order: 103, label: { it: "Uretra", en: "Urethra" } }
+- { id: prostate, system: urinary-male-genital, order: 104, label: { it: "Prostata", en: "Prostate" } }
+- { id: testis, system: urinary-male-genital, order: 105, label: { it: "Testicolo", en: "Testis" }, aliases: { it: ["Testicoli"], en: ["Testicle"] } }
+- { id: penis, system: urinary-male-genital, order: 106, label: { it: "Pene", en: "Penis" } }
+- { id: vulva, system: female-genital, order: 111, label: { it: "Vulva", en: "Vulva" } }
+- { id: vagina, system: female-genital, order: 112, label: { it: "Vagina", en: "Vagina" } }
+- { id: uterine-cervix, system: female-genital, order: 113, label: { it: "Cervice uterina", en: "Uterine cervix" }, aliases: { it: [], en: ["Cervix"] } }
+- { id: uterus, system: female-genital, order: 114, label: { it: "Utero", en: "Uterus" } }
+- { id: fallopian-tube, system: female-genital, order: 115, label: { it: "Tuba uterina", en: "Fallopian tube" }, aliases: { it: ["Salpinge"], en: ["Uterine tube"] } }
+- { id: ovary, system: female-genital, order: 116, label: { it: "Ovaio", en: "Ovary" }, aliases: { it: ["Ovaie"], en: ["Ovaries"] } }
+- { id: peritoneum, system: female-genital, order: 117, label: { it: "Peritoneo", en: "Peritoneum" } }
+- { id: breast, system: breast, order: 121, label: { it: "Mammella", en: "Breast" }, aliases: { it: [], en: ["Mammary gland"] } }
+- { id: bone-marrow, system: hematolymphoid, order: 131, label: { it: "Midollo osseo", en: "Bone marrow" } }
+- { id: lymph-nodes, system: hematolymphoid, order: 132, label: { it: "Linfonodi", en: "Lymph nodes" } }
+- { id: spleen, system: hematolymphoid, order: 133, label: { it: "Milza", en: "Spleen" } }
+- { id: thymus, system: hematolymphoid, order: 134, label: { it: "Timo", en: "Thymus" } }
+- { id: pituitary-gland, system: endocrine, order: 141, label: { it: "Ipofisi", en: "Pituitary gland" }, aliases: { it: [], en: ["Hypophysis"] } }
+- { id: thyroid-gland, system: endocrine, order: 142, label: { it: "Tiroide", en: "Thyroid gland" } }
+- { id: parathyroid-glands, system: endocrine, order: 143, label: { it: "Paratiroidi", en: "Parathyroid glands" } }
+- { id: adrenal-gland, system: endocrine, order: 144, label: { it: "Ghiandola surrenale", en: "Adrenal gland" }, aliases: { it: ["Surrene"], en: ["Suprarenal gland"] } }
+- { id: skin, system: skin, order: 151, label: { it: "Cute", en: "Skin" } }
+- { id: oral-cavity, system: head-neck, order: 161, label: { it: "Cavità orale", en: "Oral cavity" } }
+- { id: salivary-glands, system: head-neck, order: 162, label: { it: "Ghiandole salivari", en: "Salivary glands" } }
+- { id: nasal-cavity-sinuses, system: head-neck, order: 163, label: { it: "Cavità nasali e seni paranasali", en: "Nasal cavity and paranasal sinuses" } }
+- { id: pharynx, system: head-neck, order: 164, label: { it: "Faringe", en: "Pharynx" } }
+- { id: larynx, system: head-neck, order: 165, label: { it: "Laringe", en: "Larynx" } }
+- { id: ear, system: head-neck, order: 166, label: { it: "Orecchio", en: "Ear" } }
+- { id: bones, system: bone-soft-tissue, order: 171, label: { it: "Ossa", en: "Bones" } }
+- { id: joints, system: bone-soft-tissue, order: 172, label: { it: "Articolazioni", en: "Joints" } }
+- { id: soft-tissue, system: bone-soft-tissue, order: 173, label: { it: "Tessuti molli", en: "Soft tissue" } }
+- { id: skeletal-muscle, system: muscle-nerve, order: 181, label: { it: "Muscolo scheletrico", en: "Skeletal muscle" } }
+- { id: peripheral-nerves, system: muscle-nerve, order: 182, label: { it: "Nervi periferici", en: "Peripheral nerves" } }
+- { id: brain, system: cns, order: 191, label: { it: "Encefalo", en: "Brain" }, aliases: { it: ["Cervello", "Cervelletto", "Tronco encefalico"], en: ["Cerebrum", "Cerebellum", "Brainstem"] } }
+- { id: spinal-cord, system: cns, order: 192, label: { it: "Midollo spinale", en: "Spinal cord" } }
+- { id: meninges, system: cns, order: 193, label: { it: "Meningi", en: "Meninges" } }
+- { id: eye, system: eye, order: 201, label: { it: "Occhio", en: "Eye" }, aliases: { it: ["Bulbo oculare"], en: ["Eyeball"] } }

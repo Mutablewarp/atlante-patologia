@@ -59,6 +59,8 @@ export const entitySchema = z
       marker: z.array(Id).default([]),
       group: z.array(Id).min(1),
     }),
+    /** Organs of the interactive body where the lesion occurs (anatomy.yaml); `claim` = the ledger claim that supports it. None: the organs of the `system` terms. */
+    sites: z.array(z.object({ organ: Id, claim: Id.optional() })).default([]),
     learningObjectives: z.array(L).min(1).max(6),
     prerequisites: z.array(Id).default([]),
     relations: z.array(z.object({ type: RelationType, target: Id, note: L.optional() })).default([]),
@@ -286,6 +288,19 @@ export const moduleSchema = z.object({
   planned: z.array(z.object({ id: Id, names: L })).default([]),
 });
 export type Module = z.infer<typeof moduleSchema>;
+
+/** System terms that own no organ: general pathology and systemic conditions. */
+export const NO_ORGAN_SYSTEMS: readonly string[] = ['general', 'systemic'];
+/** Organ nodes of the interactive body — src/content/anatomy.yaml. `meshes` are filled by the 3D asset pipeline. */
+export const anatomySchema = z.object({
+  id: Id,
+  system: Id.refine((s) => !NO_ORGAN_SYSTEMS.includes(s), 'an organ belongs to an anatomical system, not to general or systemic'),
+  label: L,
+  aliases: LList.default({ it: [], en: [] }),
+  meshes: z.array(z.string().min(1)).default([]),
+  order: z.number().int(),
+});
+export type Organ = z.infer<typeof anatomySchema>;
 
 /** Publication status of a standard (WHO volumes go online as beta before print). */
 export const SOURCE_STATUSES = ['print', 'online-beta', 'forthcoming', 'superseded'] as const;

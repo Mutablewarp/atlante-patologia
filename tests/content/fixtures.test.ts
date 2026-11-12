@@ -24,7 +24,7 @@ function addBeta(t: Tree): Unit {
   const b = structuredClone(alpha(t));
   Object.assign(b, { id: 'fx-beta', dir: 'src/content/entities/fx-beta' });
   b.meta.path = 'src/content/entities/fx-beta/meta.yaml';
-  Object.assign(meta(b), { id: 'fx-beta', status: 'draft', relations: [] });
+  Object.assign(meta(b), { id: 'fx-beta', status: 'draft', relations: [], sites: [] });
   t.entities.push(b);
   return b;
 }
@@ -187,6 +187,42 @@ describe('content gates: synthetic fixture', () => {
       expect(fail('references', (t) => void (meta(t.patterns[0]!).matrix.rows[0].entity = 'nope'))).toEqual([expect.stringMatching(/matrix row → unknown entity/)]));
     it('fails when matrix cells do not match the columns (schema)', () =>
       expect(fail('schema', (t) => meta(t.patterns[0]!).matrix.rows[0].cells.push({ it: 'x', en: 'x' }))).toEqual([expect.stringMatching(/columns.length - 1/)]));
+  });
+
+  describe('anatomy and sites', () => {
+    const organs = (t: Tree) => t.anatomy.data as Any[];
+    const sites = (t: Tree) => meta(alpha(t)).sites as Any[];
+    it('accepts a site with a claim, a site without one, and a card with no sites', () => {
+      expect(fail('references', (t) => sites(t).push({ organ: 'fx-organ' }))).toEqual([]);
+      expect(fail('references', (t) => delete meta(alpha(t)).sites)).toEqual([]);
+    });
+    it('fails when a site names an organ that is not in anatomy.yaml', () =>
+      expect(fail('references', (t) => sites(t).push({ organ: 'ghost' }))).toEqual([expect.stringMatching(/fx-alpha\/meta\.yaml: sites → unknown organ "ghost"/)]));
+    it('fails when a site cites a claim that is not in the ledger of its own card (even one that exists in another ledger)', () =>
+      expect(fail('references', (t) => sites(t).push({ organ: 'fx-organ', claim: 'fx-alpha-c404' }, { organ: 'fx-organ', claim: 'fx-pattern-c001' }))).toEqual([
+        expect.stringMatching(/sites → claim "fx-alpha-c404" is not in docs\/ledger\/fx-alpha\.yaml/),
+        expect.stringMatching(/sites → claim "fx-pattern-c001" is not in docs\/ledger\/fx-alpha\.yaml/),
+      ]));
+    it('fails when a draft card with no ledger cites a claim', () =>
+      expect(fail('references', (t) => void (meta(addBeta(t)).sites = [{ organ: 'fx-organ', claim: 'fx-alpha-c001' }]))).toEqual([
+        expect.stringMatching(/fx-beta\/meta\.yaml: sites → claim "fx-alpha-c001" is not in docs\/ledger\/fx-beta\.yaml/),
+      ]));
+    it('fails on a duplicate organ id', () =>
+      expect(fail('references', (t) => organs(t).push({ ...organs(t)[0], order: 12 }))).toEqual([expect.stringMatching(/anatomy\.yaml: duplicate organ id "fx-organ"/)]));
+    it('fails when an organ names a system term that does not exist', () =>
+      expect(fail('references', (t) => void (organs(t)[0].system = 'nope'))).toContainEqual(expect.stringMatching(/organ "fx-organ": unknown system term "nope"/)));
+    it('fails when an anatomical system has no organ, but not for general or systemic', () => {
+      expect(fail('references', (t) => void (t.anatomy.data = []))).toContainEqual(expect.stringMatching(/anatomy\.yaml: system "fx-system" has no organ/));
+      const system = (t: Tree) => doc(t.taxonomy.find((d) => d.path.endsWith('system.yaml'))!);
+      expect(fail('references', (t) => system(t).terms.push({ id: 'general', label: { it: 'G', en: 'G' }, order: 2 }, { id: 'systemic', label: { it: 'S', en: 'S' }, order: 3 }))).toEqual([]);
+      expect(fail('references', (t) => system(t).terms.push({ id: 'heart', label: { it: 'C', en: 'H' }, order: 4 }))).toEqual([expect.stringMatching(/system "heart" has no organ/)]);
+    });
+    it('fails when an organ sits under general or systemic (schema)', () =>
+      expect(fail('schema', (t) => void (organs(t)[0].system = 'general'))).toEqual([expect.stringMatching(/anatomy\.yaml: 0\.system: an organ belongs to an anatomical system/)]));
+    it('fails when anatomy.yaml is missing or has no label in one language (schema)', () => {
+      expect(fail('schema', (t) => void (t.anatomy.data = null))).toHaveLength(1);
+      expect(fail('schema', (t) => void delete organs(t)[0].label.it)).toEqual([expect.stringMatching(/anatomy\.yaml: 0\.label\.it/)]);
+    });
   });
 
   describe('review status', () => {

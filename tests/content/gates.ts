@@ -12,7 +12,9 @@ import {
   imageSchema,
   ledgerSchema,
   moduleSchema,
+  anatomySchema,
   NEEDS_SECOND_SOURCE,
+  NO_ORGAN_SYSTEMS,
   patternSchema,
   questionSchema,
   sourceSchema,
@@ -20,6 +22,7 @@ import {
   LENSES,
   type Entity,
   type Ledger,
+  type Organ,
 } from '../../src/lib/schema.ts';
 import { SECTIONS, QUICK_CHECK } from '../../src/i18n/sections.ts';
 import { contradictoryPairs } from '../../src/lib/relations.ts';
@@ -43,6 +46,7 @@ export type Parsed = {
   /** ids of non-fixture glossary entries */
   glossary: Set<string>;
   taxonomy: Map<string, Set<string>>;
+  organs: Organ[];
   planned: Set<string>;
   sources: Set<string>;
   ledgers: Map<string, { doc: Doc; data: Ledger }>;
@@ -75,6 +79,7 @@ export function parseTree(tree: Tree): Parsed {
 
   const taxonomy = new Map(docs(tree.taxonomy, taxonomySchema, 'schema').map(({ data }) => [data.lens as string, new Set(data.terms.map((t) => t.id))]));
   const modules = take(moduleSchema.array(), tree.modules, 'schema') ?? [];
+  const organs = take(anatomySchema.array(), tree.anatomy, 'schema') ?? [];
   const sources = take(sourceSchema.array(), tree.sources, 'schema') ?? []; // existsVerified is required by the schema
   const ledgers = new Map<string, { doc: Doc; data: Ledger }>();
   for (const [id, doc] of tree.ledgers) {
@@ -91,6 +96,7 @@ export function parseTree(tree: Tree): Parsed {
     images: docs(tree.images, imageSchema, 'images'),
     glossary: new Set(docs(tree.glossary, glossarySchema, 'schema').filter(({ doc }) => !isFixtureDoc(doc)).map(({ data }) => data.id)),
     taxonomy,
+    organs,
     planned: new Set(modules.flatMap((m) => m.planned.map((p) => p.id))),
     sources: new Set(sources.map((s) => s.id)),
     ledgers,
@@ -209,8 +215,23 @@ export function referencesGate(parsed: Parsed): Problem[] {
   const sectionIds = new Set([...SECTIONS.map((s) => s.id), QUICK_CHECK.id]);
   const need = (ok: boolean, file: string, message: string) => ok || problems.push({ gate: 'references', file, message });
 
+  // anatomy.yaml (CONTENT_SCHEMA §6a): unique ids, a known system term, and every anatomical system owns an organ.
+  const organIds = new Set<string>();
+  const systems = parsed.taxonomy.get('system') ?? new Set<string>();
+  for (const o of parsed.organs) {
+    need(!organIds.has(o.id), 'src/content/anatomy.yaml', `duplicate organ id "${o.id}"`);
+    organIds.add(o.id);
+    need(systems.has(o.system), 'src/content/anatomy.yaml', `organ "${o.id}": unknown system term "${o.system}"`);
+  }
+  for (const s of systems) need(NO_ORGAN_SYSTEMS.includes(s) || parsed.organs.some((o) => o.system === s), 'src/content/anatomy.yaml', `system "${s}" has no organ`);
+
   for (const { unit, data: e } of entities) {
     const f = unit.meta.path;
+    const claims = new Set(parsed.ledgers.get(unit.id)?.data.claims.map((c) => c.claimId));
+    for (const s of e.sites) {
+      need(organIds.has(s.organ), f, `sites → unknown organ "${s.organ}" (not in anatomy.yaml)`);
+      if (s.claim) need(claims.has(s.claim), f, `sites → claim "${s.claim}" is not in docs/ledger/${unit.id}.yaml`);
+    }
     for (const r of e.relations) {
       need(r.target !== e.id, f, `self-relation (${r.type})`);
       need(known.has(r.target), f, `relation ${r.type} → unknown target "${r.target}" (not an entity nor planned in modules.yaml)`);
