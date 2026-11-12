@@ -219,14 +219,16 @@ describe('buildPacket', () => {
 
 const REAL = fileURLToPath(new URL('../.work/fulltext.txt', import.meta.url));
 describe.skipIf(!existsSync(REAL))('the real reference text (owner machine only, read-only)', () => {
-  const texts = splitPages(readFileSync(REAL, 'utf8'));
+  // Read inside the tests: vitest still runs this callback to collect a skipped suite, and CI has no .work/.
+  const load = () => splitPages(readFileSync(REAL, 'utf8'));
 
   it('prints the page number it is asked for: printed page N is PDF page N + 24', () => {
+    const texts = load();
     for (const n of [38, 655, 662, 1200]) expect(texts.get(n + 24)?.split('\n').slice(0, 3).map((l: string) => l.trim())).toContain(String(n));
   });
 
   it('cuts a chapter within the cap with [p. N] markers', () => {
-    const out = buildSource(parsePages('655–662'), texts);
+    const out = buildSource(parsePages('655–662'), load());
     expect(out.text.startsWith('[p. 655]\n')).toBe(true);
     expect(out.pages).toEqual(range(655, 662));
     expect(Buffer.byteLength(out.text)).toBeLessThanOrEqual(60_000);
