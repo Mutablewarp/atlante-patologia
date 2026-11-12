@@ -1,6 +1,6 @@
 ---
 lang: it
-translatedFrom: 4d95db53ceee5c938417fe3b6ab0661568968ba7b03afff5cbd1120aa905eb79
+translatedFrom: 91cb7999426aa4b1f96633362b56eb053c474d07359fda465c0a06680a4c52af
 ---
 
 ## Definizione ed epidemiologia
@@ -55,20 +55,20 @@ L'organo o il tessuto colpito è ridotto di volume.<!--c:atrophy-c035--> Nel cer
 
 - Le cellule sono più piccole delle corrispondenti cellule normali, come si osserva nei miociti e negli adipociti durante il digiuno prolungato.<!--c:atrophy-c038-->
 - Nel muscolo scheletrico denervato le fibre perdono proteine citoplasmatiche, per cui i nuclei appaiono relativamente più evidenti.<!--c:atrophy-c039-->
-- In sezione trasversale la fibra denervata si riduce a un piccolo profilo angolato, incuneato tra fibre normali; queste fibre sono dapprima sparse, poi si riuniscono in piccoli gruppi e più tardi in gruppi più ampi.<!--c:atrophy-c072--> Se la reinnervazione non avviene, le fibre finiscono per scomparire e al loro posto subentra tessuto adiposo e fibroso.<!--c:atrophy-c073-->
-- L'endometrio atrofico postmenopausale contiene solo poche piccole ghiandole, alcune delle quali cistiche.<!--c:atrophy-c040--> Le ghiandole residue hanno un rivestimento epiteliale sottile e sono immerse in uno stroma fibroso, ricco di collagene; quando le ghiandole sono dilatate in senso cistico, il quadro prende il nome di atrofia cistica senile.<!--c:atrophy-c074-->
+- In sezione trasversale la fibra denervata diventa piccola e angolata; all'inizio queste fibre compaiono isolate, poi col tempo si riuniscono in gruppi che da poche fibre arrivano a comprenderne molte.<!--c:atrophy-c072--> Se la reinnervazione non avviene, le fibre finiscono per scomparire e al loro posto subentra tessuto adiposo e fibroso.<!--c:atrophy-c073-->
+- L'endometrio atrofico postmenopausale contiene solo poche piccole ghiandole, alcune delle quali cistiche.<!--c:atrophy-c040--> Quando, come accade spesso, le ghiandole residue sono dilatate in cisti, il quadro prende il nome di atrofia cistica senile; dilatate o no, le ghiandole hanno un rivestimento sottile e sono immerse in uno stroma fibroso, ricco di collagene.<!--c:atrophy-c074-->
 - La lipofuscina, il pigmento bruno-dorato «da usura» delle cellule longeve come neuroni e cardiomiociti, può essere più evidente negli organi atrofici.<!--c:atrophy-c041-->
 
 ## Colorazioni speciali, IIC e reperti molecolari
 
 **Come si studia:**
 
-- **Campione:** l'atrofia muscolare si valuta su una biopsia di un muscolo colpito in misura moderata, spesso il quadricipite o il bicipite (il gastrocnemio insieme al nervo surale se si sospetta una neuropatia), perché un muscolo risparmiato può apparire normale e uno molto debole può mostrare solo tessuto fibroadiposo di fase terminale.<!--c:atrophy-c075-->
+- **Campione:** l'atrofia muscolare si valuta su una biopsia di un muscolo colpito in misura moderata, spesso il quadricipite o il bicipite (il gastrocnemio insieme al nervo surale se si sospetta una neuropatia): un muscolo non interessato può essere quasi normale, mentre in uno gravemente indebolito può restare ben poco tessuto muscolare fra tessuto adiposo e fibroso.<!--c:atrophy-c075-->
 - **Allestimento:** il prelievo si suddivide tra formalina, congelamento a fresco senza fissazione per le reazioni istoenzimatiche (che rivelano l'attività di un enzima, mentre l'immunoistochimica rivela soltanto la presenza di una proteina) e glutaraldeide per la microscopia elettronica.<!--c:atrophy-c076-->
 - **Ematossilina-eosina e ATPasi miosinica:** all'ematossilina-eosina l'atrofia selettiva delle fibre di tipo II produce fibre angolate che simulano una denervazione; l'ATPasi miosinica (fibre di tipo I chiare, di tipo II scure a pH alcalino) dimostra che in questo quadro, che si osserva nel disuso cronico, nella terapia cortisonica, nell'anziano e nella cachessia, tutte le fibre angolate sono di tipo II.<!--c:atrophy-c077-->
-- **Esterasi non specifica e NADH-tetrazolio reduttasi (NADH-TR):** le fibre atrofiche denervate, di entrambi i tipi, si colorano in modo molto intenso, a differenza delle fibre ridotte di volume da disuso o da deperimento.<!--c:atrophy-c078-->
-- **Raggruppamento per tipo di fibra (*fiber type grouping*):** all'ATPasi, aree di fibre di un tipo accostate ad aree dell'altro tipo dimostrano che alla denervazione è seguita una reinnervazione; se la denervazione prosegue, intere unità motorie ingrandite si atrofizzano insieme (atrofia a gruppi, tipica delle malattie denervanti croniche come la SLA).<!--c:atrophy-c079-->
-- **Limiti:** la biopsia dimostra che c'è una denervazione e se è recente o cronica, ma non ne indica la causa: la sclerosi laterale amiotrofica e la neuropatia diabetica possono avere lo stesso aspetto.<!--c:atrophy-c080-->
+- **Esterasi non specifica e NADH-tetrazolio reduttasi (NADH-TR):** le fibre atrofiche da denervazione, che comprendono entrambi i tipi, spiccano perché intensamente colorate, mentre le fibre angolate dell'atrofia selettiva di tipo II non si colorano in modo intenso.<!--c:atrophy-c078-->
+- **Raggruppamento per tipo di fibra (*fiber type grouping*):** all'ATPasi il muscolo normale è un mosaico di fibre chiare e scure; ampie aree di un solo tipo indicano che, dopo la denervazione, i motoneuroni superstiti hanno preso in carico le fibre rimaste senza nervo imponendo loro il proprio tipo (reinnervazione); l'atrofia a gruppi, tipica della denervazione cronica come nella SLA, è il passo successivo, quando anche queste unità motorie ingrandite perdono l'innervazione e un'intera area si atrofizza insieme.<!--c:atrophy-c079-->
+- **Limiti:** la biopsia non può dire perché il muscolo ha perso l'innervazione, dato che la sclerosi laterale amiotrofica e una neuropatia diabetica possono dare lo stesso quadro; dimostra invece che è danneggiato il secondo motoneurone o il suo assone, e se il processo è recente o di lunga data.<!--c:atrophy-c080-->
 
 ## Presentazione clinica
 
@@ -118,7 +118,7 @@ Non applicabile.
 - Nell'adulto IGF-1 e Akt agiscono soprattutto prevenendo l'atrofia, più che provocando direttamente la crescita.<!--c:atrophy-c066-->
 - La lipofuscina non è necessariamente inerte: può derivare dallo stress ossidativo della cellula e, a sua volta, aggravarlo.<!--c:atrophy-c067-->
 - Fibre atrofiche angolate all'ematossilina-eosina non dimostrano una denervazione: l'atrofia selettiva delle fibre di tipo II (cortisonici, disuso) ha lo stesso aspetto finché non si eseguono ATPasi, esterasi e NADH-TR.<!--c:atrophy-c082-->
-- L'ictus o la sclerosi multipla paralizzano il muscolo attraverso il primo motoneurone; il secondo motoneurone resta integro, per cui il muscolo mostra solo una riduzione di volume diffusa e aspecifica, non il quadro della denervazione.<!--c:atrophy-c083-->
+- La paralisi da ictus o da sclerosi multipla non dà il quadro della denervazione: la lesione riguarda il primo motoneurone, il secondo motoneurone continua a innervare le fibre e il muscolo si riduce di volume solo in modo diffuso e aspecifico.<!--c:atrophy-c083-->
 
 ## Mnemotecniche
 

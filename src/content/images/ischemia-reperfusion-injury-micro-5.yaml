@@ -1,0 +1,78 @@
+# License check (2026-11-08): the Commons file page has no {{Information}} box; its description reads
+# "Histopathology of acute myocardial infarction, showing contraction band necrosis. PTAH stain." and its license
+# tag is {{GFDL-self|migration=relicense}}, the uploader KGH's statement that the work is their own, relicensed to
+# CC BY-SA 3.0 by the 2009 GFDL license migration; extmetadata LicenseShortName "CC BY-SA 3.0", AttributionRequired
+# true, no Restrictions. Single upload (2006-01-11), 500 × 376 px; EXIF from an Olympus DP70 microscope camera,
+# dated 2003-05-17. CC BY-SA is approved as a class by owner decision O7 (plan/v2-plan.md, 2026-11-03), hence
+# ownerApproved: true. Histology only; nothing identifies the patient. A different case from micro-3/micro-4 (the
+# Nephron file page links it as "Different case stained with PTAH"), so it shares no group with them. The source
+# does not state the magnification; the image verifier (2026-11-09) judged the field about 235 µm wide from
+# lymphocyte and myocyte-nucleus size, so `magnification` gives high power as judged from the image, with no
+# `objective` or `mpp`; section: longitudinal by inspection. The
+# Commons original is the only rendition and is used unchanged. Annotations placed by inspection.
+id: ischemia-reperfusion-injury-micro-5
+file: ischemia-reperfusion-injury-micro-5.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Acute_myocardial_infarction_with_contraction_band_necrosis_(1)_PTAH.JPG
+author: KGH
+license: CC-BY-SA-3.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/3.0/
+retrievedAt: 2026-11-08
+modifications: none
+attributionText: >-
+  KGH, "Acute myocardial infarction with contraction band necrosis (1) PTAH", via Wikimedia Commons, CC BY-SA 3.0
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+stain: "PTAH (phosphotungstic acid–hematoxylin)"
+magnification: "high power (judged from the image; the source does not state it)"
+section: longitudinal
+orientation:
+  it: "Fibre tagliate per il lungo, che salgono ripide dal basso a sinistra verso l'alto a destra."
+  en: "Fibers cut along their length, rising steeply from the lower left to the upper right."
+lookFor:
+  it: "Confronta una fibra piena di ammassi viola scuro con le fibre a righe regolari al centro del campo."
+  en: "Compare a fiber full of dark violet clumps with the evenly striped fibers in the middle of the field."
+caption:
+  it: >-
+    Infarto miocardico acuto con necrosi a bande di contrazione, colorazione PTAH (ematossilina all'acido
+    fosfotungstico); è un caso diverso da quello delle immagini in EE di questa scheda. La PTAH colora in blu-viola le
+    miofibrille del muscolo cardiaco, per cui l'aggregazione dell'apparato contrattile risalta in viola scuro su un
+    fondo pallido. Orientati prima: le fibre sono tagliate per il lungo e salgono ripide dal basso a sinistra verso
+    l'alto a destra. La maggior parte ha perso la striatura regolare: le miofibrille sono collassate in ammassi viola
+    scuro disposti di traverso nella fibra, separati da citoplasma più pallido e sbiadito. Questi ammassi sono le bande
+    di contrazione, tratti di sarcomeri ipercontratti da un ingresso massivo di calcio. Ora confronta le fibre al
+    centro del campo (segnate): qui le miofibrille corrono ancora in linee lunghe, regolari e parallele, senza
+    ammassi. Visti fianco a fianco, i due aspetti rendono il danno facile da riconoscere. In EE le stesse bande
+    appaiono come barre dense di colore rosa acceso. Come in EE, le bande dicono che il calcio ha invaso le cellule, di
+    solito al momento della riperfusione, ma da sole non dimostrano che la riperfusione ci sia stata.
+  en: >-
+    Acute myocardial infarct with contraction band necrosis, PTAH stain (phosphotungstic acid–hematoxylin); this is a
+    different case from the H&E images of this card. PTAH colors the myofibrils of heart muscle blue-violet, so any
+    clumping of the contractile apparatus shows up dark violet against a pale background. Orient yourself first: the
+    fibers are cut along their length and rise steeply from the lower left to the upper right. Most of them have lost
+    their regular striation: their myofibrils have collapsed into dark violet clumps lying crosswise in the fiber, with
+    paler, washed-out cytoplasm between them. These clumps are the contraction bands, stretches of sarcomeres
+    hypercontracted by a massive entry of calcium. Now compare the fibers in the middle of the field (marked): there
+    the myofibrils still run as long, even, parallel lines, with no clumps. Seen side by side, the two patterns make
+    the damage easy to spot. On H&E the same bands appear as dense, bright pink bars. As on H&E, the bands tell you
+    that calcium flooded the cells, usually at the moment of reperfusion, but on their own they do not prove that
+    reperfusion took place.
+alt:
+  it: >-
+    Micrografia in toni di viola: fibre tagliate per il lungo salgono ripide dal basso a sinistra verso l'alto a
+    destra; la maggior parte è interrotta da ammassi viola scuro disposti di traverso, con chiazze pallide tra l'uno e
+    l'altro; al centro del campo alcune fibre sono di un viola uniforme, con linee lunghe, sottili e parallele.
+  en: >-
+    Micrograph in shades of violet: fibers cut lengthwise rise steeply from the lower left to the upper right; most
+    are broken up by dark violet clumps lying crosswise, with pale patches between them; in the middle of the field a
+    few fibers are evenly violet, with long, fine parallel lines.
+annotations:
+  - id: contraction-bands
+    label: { it: Fibra con bande di contrazione (ammassi viola scuro), en: Fiber with contraction bands (dark violet clumps) }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.47, 0.35, 0.555, 0.35, 0.54, 0.67, 0.45, 0.67] }
+  - id: even-myofibrils
+    label: { it: "Fibre senza bande: miofibrille parallele e regolari", en: "Fibers without bands: even, parallel myofibrils" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.60, 0.30, 0.70, 0.30, 0.66, 0.62, 0.56, 0.62] }

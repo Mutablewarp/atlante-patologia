@@ -82,12 +82,12 @@ claims:
     date: 2026-11-03
   - claimId: hyperplasia-c011
     section: etiology
-    statement: "Causes of nonatypical endometrial hyperplasia: lack of ovulation, PCOS, tumors making estrogen, estrogen therapy, obesity."
+    statement: "Endometrial hyperplasia results from lasting estrogen excess unopposed by progesterone, for example with repeated anovulatory cycles or with obesity."
     sourceRef: { source: rubin-8e, chapter: "24", pages: "1042" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hyperplasia-c012
     section: etiology
     statement: "Androgens (DHT) promote prostatic growth underlying BPH."
@@ -544,3 +544,99 @@ claims:
     verifiedBy: agent
     verifier: "verifier-agent"
     date: 2026-11-03
+  - claimId: hyperplasia-c069
+    section: ancillary
+    statement: "On H&E, hyperplasia is identified by setting the tissue beside normal tissue of the same site at equal magnification, such as marrow cellularity versus fat or epidermal thickness versus normal skin."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "25, 28" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hyperplasia-c070
+    section: ancillary
+    statement: "Nonatypical hyperplasia changes the endometrium diffusely, whereas EIN is a circumscribed focus judged against the background glands of the same sample."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1041-1042" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hyperplasia-c071
+    section: ancillary
+    statement: "Benign prostatic glands, including those of BPH, keep a basal cell layer that stains for p63 and high-molecular-weight cytokeratin; in carcinoma that layer is missing, so the glands stay unstained."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1007, 1009-1010" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hyperplasia-c072
+    section: ancillary
+    statement: "AMACR is expressed by high-grade PIN and prostatic adenocarcinoma but not by benign glands; when a biopsy is hard to interpret, it is read together with the basal cell markers."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1010" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hyperplasia-c073
+    section: ancillary
+    statement: "For an enlarged lymph node, excisional biopsy is preferred to needle sampling, and interpretation must take the clinical setting and the patient's age into account."
+    sourceRef: { source: rubin-8e, chapter: "26", pages: "1162" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hyperplasia-c074
+    section: ancillary
+    statement: "Reactive follicular hyperplasia is Bcl-2 negative in its germinal centers, while more than 90% of follicular lymphomas express Bcl-2."
+    sourceRef: { source: rubin-8e, chapter: "26", pages: "1171" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hyperplasia-c075
+    section: differential
+    statement: "Prostatic adenocarcinoma mostly arises in the peripheral zone (BPH in the transition zone), has stroma-infiltrating glands without basal cells, and uncommonly presents with bladder outlet obstruction."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1007, 1009, 1011" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hyperplasia-c076
+    section: differential
+    statement: "Reactive follicular hyperplasia leaves nodal architecture recognizable, whereas follicular lymphoma fills the node with crowded neoplastic follicles, often back to back."
+    sourceRef: { source: rubin-8e, chapter: "26", pages: "1162, 1171" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hyperplasia-c077
+    section: micro
+    statement: "About 20% of BPH cases have focal infarcts, typically rimmed by ducts with squamous metaplasia, and nonspecific prostatitis frequently coexists with BPH."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1007" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hyperplasia-c078
+    section: prognosis
+    statement: "Bladder outlet obstruction from BPH leads to hypertrophy of the bladder muscle and to increased residual urine."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1008" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hyperplasia-c079
+    section: diagnosis
+    statement: "Serum PSA is raised in BPH as well as in prostate cancer, so an elevated level is nonspecific; it calls for further work-up, and cancer must be confirmed on tissue, usually from a needle biopsy."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1011" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hyperplasia-c080
+    section: traps
+    statement: "The name 'prostatic hypertrophy', still in use, is inaccurate for BPH: the gland enlarges because its glandular and stromal cells increase in number, which is hyperplasia."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1007, 1011" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09

@@ -61,16 +61,16 @@ Not applicable.
 
 ## Microscopic morphology
 
-- **Electron microscopy:** the autophagosome is a vacuole bounded by a double membrane that still holds recognizable cytoplasm, often whole organelles such as mitochondria or pieces of endoplasmic reticulum; after fusion with a lysosome it becomes an autolysosome, bounded by a single membrane, with contents at various stages of digestion.<!--c:autophagy-c068-->
-- **Light microscopy:** lipofuscin, seen as golden-brown cytoplasmic granules, is made of peroxidized lipids and oxidized proteins that the cell's disposal systems, autophagy included, cannot break down.<!--c:autophagy-c069--> It builds up mainly in long-lived cells such as neurons and cardiac myocytes, and in hepatocytes; it increases with age and is more evident in atrophic organs (see [[pigment-accumulation]]).<!--c:autophagy-c070-->
+- **Electron microscopy:** a vacuole with two membranes around intact, recognizable cytoplasm (often a mitochondrion or a stretch of endoplasmic reticulum) is an autophagosome; a vacuole with a single membrane around cargo that is already partly or largely digested is an autolysosome, which forms once a lysosome has merged with the autophagosome.<!--c:autophagy-c068-->
+- **Light microscopy:** lipofuscin appears as golden-brown cytoplasmic granules; it is an indigestible residue of oxidized proteins and peroxidized lipids that builds up because autophagy and the cell's other disposal routes fail to clear it.<!--c:autophagy-c069--> Its amount grows with age and it stands out more in an atrophic organ; most of it is found in cells that divide rarely or never, such as neurons, cardiac myocytes and hepatocytes (see [[pigment-accumulation]]).<!--c:autophagy-c070-->
 
 ## Special stains, IHC and molecular findings
 
 **How it is studied:**
 
-- **No single test:** there is no gold-standard method for measuring autophagic activity, so several are combined; electron microscopy, the most traditional, identifies the vacuoles described under Microscopic morphology but does not show their lysosomal digestion directly.<!--c:autophagy-c071-->
-- **LC3:** this mammalian homologue of yeast Atg8 stays on the autophagosome membrane and is a widely used marker; immunofluorescence or immunohistochemistry shows autophagosomes as cytoplasmic dots (puncta), and immunoblotting measures LC3-II, its lipid-conjugated, membrane-bound form.<!--c:autophagy-c072-->
-- **p62 (SQSTM1):** it binds LC3 and is degraded by autophagy together with the cargo, so its level tends to fall when autophagy is active and to rise when autophagy is deficient.<!--c:autophagy-c073-->
+- **No single test:** autophagic activity is assessed by combining several methods, because each has limits and none is a gold standard; electron microscopy, the oldest method, recognizes the vacuoles described under Microscopic morphology but cannot show whether their contents are actually being broken down in lysosomes.<!--c:autophagy-c071-->
+- **LC3:** the mammalian counterpart of yeast Atg8, it is the usual marker of autophagosomes because, unlike most autophagy proteins, it stays bound to the finished vesicle; immunofluorescence or immunohistochemistry shows autophagosomes as cytoplasmic dots (puncta), and an immunoblot measures LC3-II, the form attached to a membrane lipid.<!--c:autophagy-c072-->
+- **p62 (SQSTM1):** a fall in p62 suggests that autophagy is working and a build-up that it is deficient, because this adaptor, attached to LC3, is digested together with the cargo it delivers.<!--c:autophagy-c073-->
 - **Reading the result:** more autophagosomes, more LC3-II or stronger LC3 staining can mean either more autophagy or a block in lysosomal degradation; measuring autophagic flux tells them apart, for example by comparing LC3-II with and without a lysosomal inhibitor such as chloroquine or bafilomycin A1.<!--c:autophagy-c074-->
 - **Molecular genetics:** genome-wide association studies have linked Crohn disease to variants of two autophagy genes, ATG16L1 and IRGM.<!--c:autophagy-c075-->
 
@@ -122,7 +122,7 @@ Not applicable.
 - **"Autophagic cell death" is not proven as an independent killer;** its contribution apart from other forms of programmed death is unclear.<!--c:autophagy-c063-->
 - **Not always random:** starvation autophagy is largely bulk, but mitophagy, aggregate removal and CMA are highly selective.<!--c:autophagy-c064-->
 - **The proteasome cannot replace it:** aggregates and whole organelles are too large for the proteasome.<!--c:autophagy-c065-->
-- **More autophagic vacuoles do not mean more autophagy:** in some neurodegenerative and degenerative muscle diseases, a build-up of early autophagic structures was first read as excess autophagy, but it more likely reflects a block in the later steps of the pathway.<!--c:autophagy-c076-->
+- **More autophagic vacuoles do not by themselves prove more autophagy:** vacuoles also pile up when a later step, such as fusion with lysosomes or digestion, is blocked, and such a block, rather than the excess autophagy first suspected, is the likelier explanation for the vacuoles that accumulate in some neurodegenerative and degenerative muscle diseases.<!--c:autophagy-c076-->
 
 ## Mnemonics
 

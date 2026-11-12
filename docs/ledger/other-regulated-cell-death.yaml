@@ -408,3 +408,120 @@ claims:
     verifiedBy: agent
     verifier: "verifier-agent"
     date: 2026-11-03
+  - claimId: other-regulated-cell-death-c052
+    section: pathogenesis
+    statement: "Caspase-8 can be activated directly by integrins that lack a bound ligand."
+    sourceRef: { source: rubin-8e, chapter: "5", pages: "190" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: other-regulated-cell-death-c053
+    section: pathogenesis
+    statement: "Apart from perforin and granzymes, a CTL can induce apoptosis of a target cell when its Fas ligand binds Fas on that cell."
+    sourceRef: { source: rubin-8e, chapter: "4", pages: "149-150" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: other-regulated-cell-death-c054
+    section: ancillary
+    statement: "Anoikis and granzyme killing proceed through apoptosis, so the dying cells appear as ordinary apoptotic cells; the context, such as detachment from the matrix or attack by cytotoxic lymphocytes, points to the form."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54, 56-57" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: other-regulated-cell-death-c055
+    section: ancillary
+    statement: "Granule proteins such as granzyme B and TIA-1 define a cytotoxic phenotype, which some mature T-cell lymphomas, including anaplastic large cell lymphoma, express."
+    sourceRef: { source: rubin-8e, chapter: "26", pages: "1180, 1182" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: other-regulated-cell-death-c056
+    section: ancillary
+    statement: "A DNA stain alone cannot prove NETs in tissue: immunofluorescence has to place a granule protein such as neutrophil elastase on the same extracellular strands as a nuclear component (DNA or a histone), and dark smudgy threads among neutrophils on H&E only raise the suspicion."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "58" }
+    status: beyond-reference
+    secondSource: { source: brinkmann-2016, locator: "abstract; Results and Discussion (full text, PMC5118445)" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: other-regulated-cell-death-c057
+    section: ancillary
+    statement: "NETs are better preserved in paraffin-embedded tissue than in cryosections, where NET-like artifacts can arise from neutrophils damaged by ice crystals."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "58" }
+    status: beyond-reference
+    secondSource: { source: brinkmann-2016, locator: "abstract; Introduction (full text, PMC5118445)" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: other-regulated-cell-death-c058
+    section: ancillary
+    statement: "Cell-in-cell figures are frequent in human cancers under the microscope, and entosis has been proposed as one way they arise."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "58" }
+    status: beyond-reference
+    secondSource: { source: overholtzer-2007, locator: "abstract (PubMed 18045538)" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: other-regulated-cell-death-c059
+    section: clinical
+    statement: "Persistent survival signaling from unbound integrins lets some cancer cells escape anoikis; TrkB activation is another anoikis-escape route used by tumor cells in the bloodstream."
+    sourceRef: { source: rubin-8e, chapter: "5", pages: "190, 198" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: other-regulated-cell-death-c060
+    section: clinical
+    statement: "In some circumstances NETosis contributes to thrombus formation."
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "596" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: other-regulated-cell-death-c061
+    section: clinical
+    statement: "Host tissue injury in sepsis can come from neutrophil antimicrobial mechanisms, NETs included."
+    sourceRef: { source: rubin-8e, chapter: "12", pages: "524" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: other-regulated-cell-death-c062
+    section: clinical
+    statement: "Large numbers of NETs have been found in human acute appendicitis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "45, 58" }
+    status: beyond-reference
+    secondSource: { source: brinkmann-2004, locator: "abstract (PubMed 15001782)" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: other-regulated-cell-death-c063
+    section: clinical
+    statement: "Cytotoxic T-cell killing helps clear virus-infected cells and contributes to the rejection of transplanted tissue."
+    sourceRef: { source: rubin-8e, chapter: "4", pages: "148-149, 151" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: other-regulated-cell-death-c064
+    section: high-yield
+    statement: "Fas ligand–Fas binding is a second killing route of CTLs besides perforin and granzymes."
+    sourceRef: { source: rubin-8e, chapter: "4", pages: "149-150" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: other-regulated-cell-death-c065
+    section: traps
+    statement: "Dark DNA strands on H&E only hint at NETs; they are proven when immunofluorescence shows a granular NET component on the same strands as a nuclear one."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "58" }
+    status: beyond-reference
+    secondSource: { source: brinkmann-2016, locator: "abstract; Discussion (full text, PMC5118445)" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09

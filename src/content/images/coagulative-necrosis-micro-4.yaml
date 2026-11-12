@@ -1,0 +1,71 @@
+# License check (2026-11-07): Commons file page {{Information}} gives Source {{Institution: Calicut Medical College}},
+# Author "Department of Pathology, Calicut Medical College", Permission {{PermissionTicket|id=2014102010001497}}
+# confirmed by a Wikimedia VRT volunteer on 11 December 2014, license {{cc-by-sa-4.0}}; extmetadata LicenseShortName
+# "CC BY-SA 4.0", AttributionRequired true, no Restrictions. Same GLAM-in-India release, same permission ticket and
+# same upload session (two seconds apart) as coagulative-necrosis-micro-3, hence the shared group; the source does
+# not say whether both come from the same slide. CC BY-SA is approved as a class by owner decision O7
+# (plan/v2-plan.md, 2026-11-03), hence ownerApproved: true. Histology only; nothing identifies the patient.
+# "40X" is the source's label; `objective` is left out for the reason given in coagulative-necrosis-micro-3.
+id: coagulative-necrosis-micro-4
+file: coagulative-necrosis-micro-4.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Renal_cortical_infarction_showing_coagulative_necrosis_40X.jpg
+author: Department of Pathology, Calicut Medical College
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+retrievedAt: 2026-11-07
+modifications: none
+attributionText: >-
+  Department of Pathology, Calicut Medical College, "Renal cortical infarction showing coagulative necrosis 40X",
+  via Wikimedia Commons, CC BY-SA 4.0
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-07 }
+group: coagulative-necrosis-renal-infarct
+stain: H&E
+magnification: high power (40X in the source)
+lookFor:
+  it: "Cerca i nuclei dove dovrebbero esserci, nell'epitelio dei tubuli e nei flocculi glomerulari: profili ovunque, nuclei quasi da nessuna parte."
+  en: "Look for nuclei where they should be, in the tubular epithelium and in the glomerular tufts: outlines everywhere, nuclei almost nowhere."
+caption:
+  it: >-
+    All'interno di un infarto renale, EE a forte ingrandimento (40X secondo la fonte). Due glomeruli occupano il
+    centro del campo. Si riconoscono ancora la capsula di Bowman e il contorno lobulato di ciascun flocculo capillare,
+    ma le cellule del flocculo appaiono sbiadite e i loro nuclei sono pallidi o assenti. Tutt'intorno i tubuli
+    conservano la loro forma, un anello di epitelio rosa attorno a un lume, ma le loro cellule hanno perso il nucleo:
+    pensa a un tubulo vivo, in cui ogni cellula epiteliale ha il suo nucleo, e la differenza salta agli occhi. Ecco
+    che cosa significa in pratica «profili conservati, nuclei persi»: i nuclei sono già scomparsi, punto d'arrivo
+    delle alterazioni nucleari della necrosi, mentre i confini cellulari e l'architettura reggono ancora. In seguito
+    i leucociti, entrando dal margine vitale, rimuoveranno questo tessuto morto, e un infarto renale guarito diventa
+    una cicatrice infossata nella corticale.
+  en: >-
+    Inside a renal infarct, H&E at high power (labeled 40X by the source). Two glomeruli fill the center of the
+    field. Bowman's capsule and the lobed outline of each capillary tuft can still be traced, but the cells of the
+    tufts look smudged and their nuclei are faint or missing. All around, the tubules keep their shape, a ring of pink
+    epithelium around a lumen, yet their cells have lost their nuclei: picture a living tubule, where every epithelial
+    cell has its own nucleus, and the difference is obvious. This is what "outlines preserved, nuclei lost" means in
+    practice: the nuclei have already gone, the end point of the nuclear changes of necrosis, while cell borders and
+    architecture still stand. Later, leukocytes entering from the living edge will clear this dead tissue, and a
+    healed renal infarct ends up as a sunken scar in the cortex.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina a forte ingrandimento di corticale renale necrotica: al centro due grandi
+    glomeruli rotondi con flocculi viola pallidi e sbiaditi, circondati da tubuli con pareti rosa integre ma quasi
+    senza nuclei; in basso a destra alcune masse rotonde rosa intenso dentro alcuni tubuli.
+  en: >-
+    High-power H&E micrograph of necrotic kidney cortex: two large round glomeruli with pale, smudged purple tufts in
+    the center, surrounded by tubules whose pink walls are intact but hold almost no nuclei; a few dense pink round
+    masses lie inside some tubules at the lower right.
+annotations:
+  - id: ghost-glomerulus-center
+    label: { it: "Glomerulo: flocculo ancora delineato, nuclei pallidi o assenti", en: "Glomerulus: tuft still outlined, nuclei faint or absent" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.46, 0.22, 0.52, 0.17, 0.62, 0.17, 0.70, 0.26, 0.735, 0.42, 0.72, 0.53, 0.66, 0.61, 0.56, 0.61, 0.47, 0.55, 0.42, 0.42] }
+  - id: ghost-glomerulus-lower
+    label: { it: "Secondo glomerulo fantasma", en: "Second ghost glomerulus" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.25, 0.60, 0.33, 0.54, 0.40, 0.55, 0.44, 0.62, 0.45, 0.75, 0.40, 0.83, 0.31, 0.83, 0.24, 0.76, 0.23, 0.66] }
+  - id: ghost-tubule
+    label: { it: "Tubulo con parete integra e senza nuclei", en: "Tubule with intact wall and no nuclei" }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.08, 0.55, 0.21, 0.55, 0.21, 0.80, 0.08, 0.80] }

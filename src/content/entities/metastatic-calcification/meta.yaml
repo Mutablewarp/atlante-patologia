@@ -14,11 +14,11 @@ summary:
   it: "Deposito di sali di calcio in tessuti sani, causato da un aumento sistemico del prodotto calcio-fosforo (ipercalcemia o iperfosfatemia)."
   en: "Deposition of calcium salts in healthy tissue, caused by a systemic rise in the calcium-phosphorus product (hypercalcemia or hyperphosphatemia)."
 lenses:
-  system: [general, kidney, respiratory, vessels]
+  system: [general, kidney, respiratory, vessels, gastrointestinal]
   process: [pathologic-calcification, extracellular-accumulation]
   pattern: [metastatic-calcification]
-  presentation: [hypercalcemia]
-  marker: [von-kossa, calcium-phosphate]
+  presentation: [hypercalcemia, incidental-finding]
+  marker: [von-kossa, alizarin-red, calcium-phosphate]
   group: [metabolic]
 learningObjectives:
   - it: "Definire la calcificazione metastatica e distinguerla dalla calcificazione distrofica in base allo stato del tessuto e del metabolismo minerale."
@@ -107,7 +107,39 @@ chain:
     lab:
       it: "Iperfosfatemia con calcemia normale o bassa; iperparatiroidismo secondario"
       en: "Hyperphosphatemia with normal or low serum calcium; secondary hyperparathyroidism"
+examQuestions:
+  - it: "Mi parli della calcificazione metastatica: che cos'è e quali condizioni la provocano?"
+    en: "Tell me about metastatic calcification: what is it, and which conditions cause it?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Che cosa vede al microscopio nel rene di un paziente con nefrocalcinosi da ipercalcemia, e con quali colorazioni conferma che i depositi sono di calcio?"
+    en: "What do you see under the microscope in the kidney of a patient with nephrocalcinosis from hypercalcemia, and which stains confirm that the deposits are calcium?"
+    focus: [micro, ancillary]
+    level: 1
+  - it: "Mi spieghi perché l'insufficienza renale cronica può causare calcificazioni metastatiche anche senza ipercalcemia: che ruolo hanno il fosfato, la vitamina D attiva e il paratormone?"
+    en: "Explain why chronic kidney disease can cause metastatic calcification even without hypercalcemia: what roles do phosphate, active vitamin D and parathyroid hormone play?"
+    focus: [pathogenesis, etiology]
+    level: 2
+  - it: "Quali sono le sedi tipiche della calcificazione metastatica, e perché il calcio si deposita proprio lì?"
+    en: "What are the typical sites of metastatic calcification, and why does calcium settle there in particular?"
+    focus: [micro, pathogenesis]
+    level: 2
+  - it: "Come distingue una calcificazione metastatica da una calcificazione distrofica? Quali dati morfologici e di laboratorio userebbe?"
+    en: "How do you tell metastatic from dystrophic calcification? Which morphological and laboratory findings would you use?"
+    focus: [definition, differential, diagnosis]
+    level: 3
+  - it: "In un paziente con insufficienza renale cronica terminale, come si manifesta una calcificazione metastatica del polmone? Con quali esami la riconosce, e può regredire?"
+    en: "In a patient with end-stage chronic kidney disease, how does metastatic calcification of the lung present? Which tests reveal it, and can it regress?"
+    focus: [clinical, diagnosis, prognosis]
+    level: 3
 images:
+  - id: metastatic-calcification-micro-3
+    role: micro
+  - id: metastatic-calcification-micro-5
+    role: micro
+  - id: metastatic-calcification-gross-2
+    role: gross
+    pairWith: metastatic-calcification-micro-3
   - id: metastatic-calcification-gross-1
     role: gross
     pairWith: metastatic-calcification-micro-1
@@ -138,5 +170,9 @@ sources:
   - source: rubin-8e
     chapter: "30"
     pages: "1348, 1361-1362, 1396"
-lastUpdated: 2026-11-03
+  - source: gorospe-2007
+  - source: belem-2014
+  - source: schneider-2021
+  - source: bahrani-2020
+lastUpdated: 2026-11-09
 status: published

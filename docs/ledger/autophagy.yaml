@@ -538,82 +538,82 @@ claims:
     date: 2026-11-03
   - claimId: autophagy-c068
     section: micro
-    statement: "On electron microscopy an autophagosome is a double-membrane vacuole with still-recognizable cytoplasm, often organelles such as mitochondria or ER fragments; after lysosomal fusion the autolysosome has a single limiting membrane and contents at different stages of digestion."
+    statement: "By electron microscopy, a vacuole with a double membrane around intact cytoplasm (often a mitochondrion or ER) is an autophagosome, and one with a single membrane around partly or largely digested cargo is an autolysosome, formed once a lysosome has merged with the autophagosome."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "14-15" }
     status: beyond-reference
     secondSource: { source: mizushima-2010, locator: "section Electron Microscopy (full text, PMC2852113)" }
     verifiedBy: agent
-    verifier: "enrichment-author-agent g01/autophagy (rubin-8e pp. 14-15 give phagophore, autophagosome and lysosomal fusion only; membrane criteria from mizushima-2010 full text)"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: autophagy-c069
     section: micro
-    statement: "Lipofuscin appears as golden-brown cytoplasmic granules made of peroxidized lipids and oxidized proteins that disposal mechanisms such as autophagy cannot clear."
+    statement: "Lipofuscin is seen as golden-brown cytoplasmic granules: an indigestible residue of oxidized proteins and peroxidized lipids that builds up because autophagy and other disposal routes fail to clear it."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "5-6" }
     status: verified
     verifiedBy: agent
-    verifier: "enrichment-author-agent g01/autophagy (checked against rubin-8e pp. 5-6, incl. Fig. 1-4B)"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: autophagy-c070
     section: micro
-    statement: "Lipofuscin accumulates mainly in postmitotic cells such as neurons and cardiac myocytes and in slowly cycling hepatocytes, increases with age and is more conspicuous in atrophic organs."
+    statement: "Lipofuscin increases with age and is more evident in atrophic organs; it is most abundant in cells that rarely or never divide, such as neurons, cardiac myocytes and hepatocytes."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
     status: verified
     verifiedBy: agent
-    verifier: "enrichment-author-agent g01/autophagy (checked against rubin-8e p. 5)"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: autophagy-c071
     section: ancillary
-    statement: "No single gold-standard method measures autophagic activity, so methods are combined; electron microscopy, the most traditional, identifies autophagic vacuoles but gives no direct information on their lysosomal degradation."
+    statement: "Autophagic activity is assessed by combining methods, since each has limits and none is a gold standard; electron microscopy, the oldest method, recognizes autophagic vacuoles but cannot show whether their contents are being degraded in lysosomes."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "14-16" }
     status: beyond-reference
     secondSource: { source: mizushima-2010, locator: "sections Electron Microscopy, Monitoring Autophagic Flux and Concluding Remarks (full text, PMC2852113)" }
     verifiedBy: agent
-    verifier: "enrichment-author-agent g01/autophagy (methods not covered by rubin-8e; checked in mizushima-2010 full text)"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: autophagy-c072
     section: ancillary
-    statement: "LC3, a mammalian homologue of yeast Atg8, associates with autophagosome membranes and is a widely used autophagosome marker; microscopy shows autophagosomes as LC3 puncta, and immunoblotting detects the phosphatidylethanolamine-conjugated, membrane-bound LC3-II."
+    statement: "LC3, the mammalian counterpart of yeast Atg8, is the usual autophagosome marker because, unlike most Atg proteins, it remains on completed autophagosomes; immunofluorescence or immunohistochemistry shows autophagosomes as LC3 puncta, and an immunoblot measures LC3-II, its form attached to a membrane lipid."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "14-16" }
     status: beyond-reference
     secondSource: { source: mizushima-2010, locator: "sections The Primer's Primer on Autophagy, Fluorescence Microscopy and Biochemical Assays (full text, PMC2852113)" }
     verifiedBy: agent
-    verifier: "enrichment-author-agent g01/autophagy (LC3 not covered by rubin-8e; checked in mizushima-2010 full text)"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: autophagy-c073
     section: ancillary
-    statement: "p62/SQSTM1 binds LC3 and is degraded by autophagy, so its cellular level varies inversely with autophagic activity and it accumulates in autophagy-deficient cells."
+    statement: "A fall in p62/SQSTM1 suggests working autophagy and a build-up suggests deficient autophagy, because this LC3-bound adaptor is degraded together with the cargo it delivers."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "16" }
     status: beyond-reference
     secondSource: { source: mizushima-2010, locator: "section Degradation of LC3 and Selective Substrates (full text, PMC2852113)" }
     verifiedBy: agent
-    verifier: "enrichment-author-agent g01/autophagy (rubin-8e p. 16 has p62 only as the cargo bridge; turnover readout from mizushima-2010 full text)"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: autophagy-c074
     section: ancillary
     statement: "Increased autophagosomes, LC3-II or LC3 staining can reflect either induction of autophagy or a block in lysosomal degradation; flux assays such as LC3-II measured with and without lysosomal inhibitors (e.g., chloroquine, bafilomycin A1) distinguish the two."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "14-16" }
     status: beyond-reference
-    secondSource: { source: mizushima-2010, locator: "sections Monitoring Cellular Autophagic Activity, Monitoring Autophagic Flux and LC3 Turnover Assay (full text, PMC2852113)" }
+    secondSource: { source: mizushima-2010, locator: "sections Monitoring Cellular Autophagic Activity, Monitoring Autophagic Flux, LC3 Turnover Assay and Degradation of LC3 and Selective Substrates (full text, PMC2852113)" }
     verifiedBy: agent
-    verifier: "enrichment-author-agent g01/autophagy (flux not covered by rubin-8e; checked in mizushima-2010 full text)"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: autophagy-c075
     section: ancillary
     statement: "Genome-wide association studies found Crohn disease susceptibility polymorphisms in two autophagy-related genes, ATG16L1 and IRGM."
     sourceRef: { source: rubin-8e, chapter: "19", pages: "811" }
     status: verified
     verifiedBy: agent
-    verifier: "enrichment-author-agent g01/autophagy (checked against rubin-8e p. 811)"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: autophagy-c076
     section: traps
-    statement: "In some neurodegenerative and myodegenerative diseases, accumulated early autophagic intermediates were first read as increased autophagy but more likely reflect a block in later steps of the pathway."
+    statement: "Autophagic vacuoles also accumulate when a later step such as lysosomal fusion or degradation is blocked; such a block, rather than the excess autophagy first assumed, is the likelier explanation for the vacuoles seen in some neurodegenerative and degenerative muscle diseases."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "18" }
     status: beyond-reference
-    secondSource: { source: mizushima-2010, locator: "Introduction (full text, PMC2852113)" }
+    secondSource: { source: mizushima-2010, locator: "Introduction and section Monitoring Cellular Autophagic Activity (full text, PMC2852113)" }
     verifiedBy: agent
-    verifier: "enrichment-author-agent g01/autophagy (not in rubin-8e; checked in mizushima-2010 full text)"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: autophagy-c077
     section: high-yield
     statement: "Electron microscopy shows double-membrane autophagosomes, LC3 marks autophagosomes, p62 accumulates when autophagy fails, and autophagosome counts alone do not measure autophagic flux."
@@ -621,5 +621,5 @@ claims:
     status: beyond-reference
     secondSource: { source: mizushima-2010, locator: "sections Electron Microscopy, Fluorescence Microscopy, Degradation of LC3 and Selective Substrates, Monitoring Autophagic Flux (full text, PMC2852113)" }
     verifiedBy: agent
-    verifier: "enrichment-author-agent g01/autophagy (summary of c068 and c071-c074)"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09

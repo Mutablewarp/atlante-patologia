@@ -20,6 +20,11 @@ Hypertrophy is an increase in cell size that, summed over many cells, enlarges t
 - **Pressure overload:** chronic hypertension or a stenotic valve.<!--c:hypertrophy-c010-->
 - **Volume overload:** an incompetent (regurgitant) valve.<!--c:hypertrophy-c011-->
 - **Myocardial injury** and primary diseases of cardiac myocytes (cardiomyopathies).<!--c:hypertrophy-c012-->
+- **Right ventricular overload:** pulmonary hypertension (cor pulmonale) or a failing left ventricle, which shifts extra work onto the right one.<!--c:hypertrophy-c074-->
+
+**Compensatory hypertrophy of a paired organ**
+
+- **Single kidney:** when one kidney never develops (unilateral renal agenesis), the other takes on much of the missing kidney's work by growing larger.<!--c:hypertrophy-c075-->
 
 ## Pathogenesis
 
@@ -48,14 +53,26 @@ Hypertrophy is an increase in cell size that, summed over many cells, enlarges t
 - **Physiologic** cardiac hypertrophy: wall thickness and chamber volume grow in proportion.<!--c:hypertrophy-c032-->
 - **Concentric** hypertrophy (pressure overload): the left ventricular free wall and septum are uniformly thick, the cavity is not enlarged, and the right ventricle is normal.<!--c:hypertrophy-c033--> In hypertensive heart disease the heart weighs more than 375 g in men and 350 g in women.<!--c:hypertrophy-c034-->
 - **Eccentric** hypertrophy: the cavity dilates as hypertrophy decompensates.<!--c:hypertrophy-c035-->
+- **Right ventricle** (chronic cor pulmonale): its free wall, normally 0.3–0.5 cm thick, can exceed 1.0 cm, and when the hypertrophy is severe the interventricular septum flattens and may even bulge into the left ventricle.<!--c:hypertrophy-c076-->
 
 ## Microscopic morphology
 
 - Hypertrophic cardiac myocytes are wider, with large, dark (hyperchromatic), rectangular "boxcar" nuclei.<!--c:hypertrophy-c036-->
+- These nuclei are large and dark because the hypertrophic myocyte copies its DNA, and sometimes splits its nucleus, without dividing; binucleated myocytes therefore become more common in pathologic hypertrophy.<!--c:hypertrophy-c077-->
 - Myocyte shape follows the pattern: wider and longer in physiologic growth, wider only in concentric hypertrophy, longer in eccentric hypertrophy.<!--c:hypertrophy-c037-->
 - Interstitial fibrosis accompanies essentially every case of pathologic cardiac hypertrophy.<!--c:hypertrophy-c038-->
 
 ## Special stains, IHC and molecular findings
+
+**How it is studied:**
+
+- **Gross, on the whole heart:** the heart is weighed and then cut transversely across both ventricles, so that wall thickness can be measured and the cavities checked for dilation.<!--c:hypertrophy-c078--> Normal adult values for comparison: 280–340 g in men and 230–280 g in women, with a left ventricular wall of 1.3–1.5 cm and a right one under 0.5 cm.<!--c:hypertrophy-c079-->
+- **H&E:** judge fiber width and nuclear size against normal myocardium at the same magnification.<!--c:hypertrophy-c080-->
+- **Trichrome stain:** it colors fibrous tissue blue and myocytes red, and so brings out the interstitial fibrosis of pathologic hypertrophy.<!--c:hypertrophy-c081-->
+- **Molecular tests:** when no load explains the hypertrophy, the sarcomere genes are tested for hypertrophic cardiomyopathy; a disease-causing variant, most often in MYH7 or MYBPC3, turns up more often when other relatives are affected, and a negative result does not exclude the disease.<!--c:hypertrophy-c082-->
+- **Limits:** a failing heart looks much the same whatever damaged it, unless it carries the marks of a specific disease such as an old infarct or amyloid; hypertensive heart disease and hypertrophic cardiomyopathy are diagnosed only after the other causes of hypertrophy have been ruled out (see Diagnosis and Differential diagnosis).<!--c:hypertrophy-c083-->
+
+**Molecular changes in the hypertrophic myocyte:**
 
 - Under acute pressure overload, myocytes switch on immediate-early genes (c-fos, c-jun) and Hsp70.<!--c:hypertrophy-c039-->
 - Pathologic hypertrophy reactivates a **fetal gene program**: ventricles again make atrial natriuretic factor and BNP.<!--c:hypertrophy-c040-->
@@ -79,6 +96,7 @@ Hypertrophy is an increase in cell size that, summed over many cells, enlarges t
 - Untreated pressure-overload hypertrophy tends to progress to eccentric hypertrophy with heart failure.<!--c:hypertrophy-c049-->
 - Increased myocyte apoptosis may help tip compensated hypertrophy into failure.<!--c:hypertrophy-c050-->
 - Myocardial fibrosis disturbs conduction and favors atrial fibrillation and ventricular tachycardia.<!--c:hypertrophy-c051-->
+- **Sudden death:** when acute ischemia strikes a hypertrophic ventricle, a lethal ventricular arrhythmia is more likely to start.<!--c:hypertrophy-c084-->
 - Heart failure is the main cause of death in untreated hypertension.<!--c:hypertrophy-c052-->
 - ACE inhibitors, angiotensin receptor blockers and mineralocorticoid receptor antagonists may limit pathologic hypertrophy; β-blockers lower mortality in advanced heart failure.<!--c:hypertrophy-c053-->
 
@@ -90,6 +108,7 @@ Hypertrophy is an increase in cell size that, summed over many cells, enlarges t
 | [[atrophy]] | The opposite change: smaller cells, with breakdown of protein exceeding synthesis.<!--c:hypertrophy-c055--> | Cell size compared with normal tissue |
 | Endurance-trained muscle | More mitochondria in type I fibers without an increase in muscle mass.<!--c:hypertrophy-c056--> | Muscle mass and fiber size are unchanged |
 | [[hypertensive-heart-disease]] | Concentric left ventricular hypertrophy with no cause other than hypertension; fibrosis and boxcar nuclei, unlike the efficient athlete's heart.<!--c:hypertrophy-c057--> | Blood pressure history; exclusion of other causes |
+| Hypertrophic cardiomyopathy | Left ventricular hypertrophy that neither a pressure load nor athletic training explains; the septum is often more than 1.5 times as thick as the free wall (asymmetric hypertrophy), and histology shows myocyte disarray.<!--c:hypertrophy-c085--> | Exclusion of secondary causes; family screening and sarcomere gene testing |
 
 ## High-yield summary
 
@@ -101,6 +120,8 @@ Hypertrophy is an increase in cell size that, summed over many cells, enlarges t
 - **Pressure overload** → **concentric** LVH; decompensation → **eccentric** hypertrophy and failure.<!--c:hypertrophy-c063-->
 - Pathologic cardiac hypertrophy: **boxcar nuclei**, **interstitial fibrosis**, **fetal gene program** (ANF, BNP).<!--c:hypertrophy-c064-->
 - The **limit** of useful hypertrophy is set by **oxygen diffusion** distance.<!--c:hypertrophy-c065-->
+- **Cor pulmonale** = **right ventricular** hypertrophy from **pulmonary hypertension**; a failing left ventricle can also overload the right.<!--c:hypertrophy-c086-->
+- **Unexplained** left ventricular hypertrophy (no load, no training) → think of **hypertrophic cardiomyopathy**: asymmetric septum, **myocyte disarray**.<!--c:hypertrophy-c087-->
 
 ## Common misconceptions and exam traps
 
@@ -110,6 +131,7 @@ Hypertrophy is an increase in cell size that, summed over many cells, enlarges t
 - After puberty, normal levels of androgens and IGF-1 do little to drive muscle hypertrophy directly.<!--c:hypertrophy-c069-->
 - Concentric hypertrophy has a normal or small cavity; a dilated cavity signals eccentric hypertrophy, often with failure.<!--c:hypertrophy-c070-->
 - Fetal isoform re-expression is not purely harmful: slow myosin reduces contractility but improves energy efficiency.<!--c:hypertrophy-c071-->
+- In "benign prostatic hypertrophy", a traditional name still in use, the gland actually enlarges by [[hyperplasia|hyperplasia]]: its glands and stroma proliferate.<!--c:hypertrophy-c088-->
 
 ## Mnemonics
 

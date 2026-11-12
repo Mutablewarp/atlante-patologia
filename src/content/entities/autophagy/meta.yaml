@@ -125,8 +125,8 @@ examQuestions:
     en: "How are autophagy and apoptosis connected? Can autophagy kill a cell on its own?"
     focus: [pathogenesis, differential, traps]
     level: 2
-  - it: "Come distingue il lavoro dell'autofagia da quello del sistema ubiquitina-proteasoma? E che fine fa un aggregato proteico?"
-    en: "How do you tell the work of autophagy apart from that of the ubiquitin–proteasome system? And what happens to a protein aggregate?"
+  - it: "In che cosa si differenziano i compiti dell'autofagia e del sistema ubiquitina-proteasoma? E che fine fa un aggregato proteico?"
+    en: "How does the work of autophagy differ from that of the ubiquitin–proteasome system? And what happens to a protein aggregate?"
     focus: [pathogenesis, differential]
     level: 3
   - it: "Come si studia l'autofagia in un tessuto? Che cosa vede al microscopio elettronico, che cosa al microscopio ottico, per esempio in un organo atrofico, e quali marcatori userebbe?"
@@ -138,9 +138,15 @@ examQuestions:
     focus: [clinical, traps]
     level: 3
 images:
+  - id: autophagy-micro-4
+    role: micro
   - id: autophagy-micro-1
     role: micro
   - id: autophagy-micro-2
+    role: micro
+  - id: autophagy-micro-6
+    role: micro
+  - id: autophagy-micro-5
     role: micro
   - id: autophagy-micro-3
     role: micro
@@ -154,5 +160,5 @@ sources:
     chapter: "19"
     pages: "811"
   - source: mizushima-2010
-lastUpdated: 2026-11-04
+lastUpdated: 2026-11-09
 status: published

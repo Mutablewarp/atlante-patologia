@@ -10,9 +10,13 @@ author: Wellcome Collection (photographer not named)
 license: CC0-1.0
 licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
 retrievedAt: 2026-11-04
-modifications: >-
-  Downscaled from the 3390 × 5156 px original to 1052 × 1600 px by the Wellcome Collection IIIF image server; the JPEG
-  rendition is used as delivered. No crop, no colour change.
+modifications:
+  it: >-
+    Ridimensionata dall'originale di 3390 × 5156 px a 1052 × 1600 px dal server di immagini IIIF della Wellcome
+    Collection; la versione JPEG è usata così come fornita. Nessun ritaglio, nessuna modifica dei colori.
+  en: >-
+    Downscaled from the 3390 × 5156 px original to 1052 × 1600 px by the Wellcome Collection IIIF image server; the
+    JPEG rendition is used as delivered. No crop, no colour change.
 attributionText: "Wellcome Collection, \"Rectum: HIV-related enteropathy\" (image W0043171), CC0 1.0 (public domain dedication)"
 patientIdentifiable: false
 ownerApproved: false
@@ -21,8 +25,8 @@ group: apoptosis-hiv-enteropathy
 stain: H&E
 magnification: high power (as described by the source)
 orientation:
-  it: "Le cripte corrono in diagonale, dall'alto a sinistra verso il basso a destra; tra di esse c'è la lamina propria."
-  en: "The crypts run diagonally from upper left to lower right, with lamina propria between them."
+  it: "Le cripte corrono in diagonale, dall'alto a destra verso il basso a sinistra; tra di esse c'è la lamina propria."
+  en: "The crypts run diagonally from upper right to lower left, with lamina propria between them."
 lookFor:
   it: "Trova un grappolo di granuli nucleari scuri in un piccolo vacuolo, poi un singolo nucleo rotondo e compatto in un alone chiaro: sono entrambi corpi apoptotici."
   en: "Find a cluster of dark nuclear beads in a small vacuole, then a single dense round nucleus in a clear halo: both are apoptotic bodies."
@@ -38,7 +42,9 @@ caption:
     neutrofili, niente pus, nessuna area estesa di cellule morte. Da ricordare: in una biopsia intestinale cerca i corpi
     apoptotici alla base delle cripte; nella malattia del trapianto contro l'ospite sono il reperto chiave, ma anche
     l'infezione da HIV, come qui, e alcuni farmaci possono dare la stessa lesione. Non confonderli con i linfociti
-    intraepiteliali: anche questi sono piccoli e scuri, ma hanno un unico nucleo integro e non un grappolo di frammenti.
+    intraepiteliali: anche questi sono piccoli e scuri e possono stare in un alone chiaro, ma sono cellule intere, con
+    un nucleo rotondo in cui si riconosce ancora la trama della cromatina, non una pallina nera come l'inchiostro né un
+    grappolo di frammenti.
   en: >-
     The same rectal biopsy at high power, H&E. Use the intact crypt cells as your reference: columnar cells with oval
     nuclei and the round, clear vacuoles of goblet cells. Then look for the cells that do not fit. Some have shrunk to a
@@ -49,7 +55,8 @@ caption:
     them: no neutrophils, no pus, no broad area of dead cells. Key point: in a bowel biopsy, look for apoptotic bodies
     at the base of the crypts; in graft-versus-host disease they are the key finding, but HIV infection, as here, and
     some drugs can produce the same lesion. Do not mistake intraepithelial lymphocytes for them: these are small and
-    dark too, but each has one intact nucleus rather than a cluster of fragments.
+    dark too, and may also sit in a clear halo, but each is a whole cell whose round nucleus still shows chromatin
+    texture, not an ink-black ball or a cluster of fragments.
 alt:
   it: >-
     Micrografia in ematossilina-eosina ad alto ingrandimento di cripte rettali disposte in diagonale: epitelio colonnare

@@ -18,7 +18,7 @@ The common denominator is a raised calcium–phosphorus product: either hypercal
 
 When the calcium–phosphorus product in blood and interstitial fluid rises, mineral precipitates in soft tissues whose cells were not injured to begin with.<!--c:metastatic-calcification-c010--> Deposition favors places where a pH gradient creates a locally alkaline environment.<!--c:metastatic-calcification-c011-->
 
-Chronic kidney disease shows that phosphate alone can drive the process.<!--c:metastatic-calcification-c012--> High serum phosphate pushes serum calcium down; damaged tubules make less 1α-hydroxylase, so active vitamin D (1,25(OH)2D) falls and intestinal calcium uptake drops; the resulting hypocalcemia stimulates PTH secretion, and most patients with end-stage renal disease develop secondary hyperparathyroidism.<!--c:metastatic-calcification-c013-->
+Chronic kidney disease shows that phosphate alone can drive the process.<!--c:metastatic-calcification-c012--> High serum phosphate pushes serum calcium down; damaged tubules make less 1α-hydroxylase, so active vitamin D (1,25(OH)2D) falls and intestinal calcium uptake drops; the resulting hypocalcemia stimulates PTH secretion, which is why secondary hyperparathyroidism is found in the majority of end-stage patients.<!--c:metastatic-calcification-c013-->
 
 The contrast with dystrophic calcification is mechanistic. In dystrophic calcification, fatty acids freed from the membranes of dying cells bind calcium and make it precipitate on the spot.<!--c:metastatic-calcification-c014--> In metastatic calcification the trigger is systemic and the tissue is the passive recipient.<!--c:metastatic-calcification-c043-->
 
@@ -28,7 +28,7 @@ In nephrocalcinosis due to hypercalcemia the deposits range from tiny foci to ag
 
 ## Microscopic morphology
 
-**Typical sites.** Deposits form in the alveolar septa of the lung, in renal tubules and in blood vessel walls.<!--c:metastatic-calcification-c017--> With vitamin D excess, calcium can also be laid down in the heart.<!--c:metastatic-calcification-c018-->
+**Typical sites.** Deposits form in the alveolar septa of the lung, in renal tubules and in blood vessel walls.<!--c:metastatic-calcification-c017--> With vitamin D excess, calcium can also be laid down in the heart.<!--c:metastatic-calcification-c018--> The gastric mucosa can calcify too, and the proposed reason is a relatively alkaline environment inside its cells.<!--c:metastatic-calcification-c060-->
 
 **Kidney (nephrocalcinosis).**
 
@@ -36,27 +36,37 @@ In nephrocalcinosis due to hypercalcemia the deposits range from tiny foci to ag
 - calcium accumulates inside tubular epithelial cells, which degenerate and slough into the lumen as calcified casts;<!--c:metastatic-calcification-c020-->
 - Bowman capsule of scattered glomeruli and intrarenal arteries may calcify too.<!--c:metastatic-calcification-c021-->
 
+**Lung.** The alveolar walls become encrusted with calcium salts, and most of the mineral sits on the basement membrane beneath the alveolar epithelium.<!--c:metastatic-calcification-c061-->
+
 On routine H&E the deposits are intensely basophilic, staining deep blue with hematoxylin.<!--c:metastatic-calcification-c022-->
 
 ## Special stains, IHC and molecular findings
 
-- **von Kossa stain:** a more specific method than H&E that turns calcium deposits black.<!--c:metastatic-calcification-c023-->
+**How it is studied:**
+
+- **Autopsy:** the lung form often goes unrecognized in life, yet among patients dying with renal failure, 60–75% have calcified lungs at autopsy.<!--c:metastatic-calcification-c062-->
+- **Stomach (endoscopic biopsies):** routine biopsies show gastric deposits only rarely; they are found more often at autopsy, or on a bone scan whose tracer collects in the stomach.<!--c:metastatic-calcification-c063--> The finding matters beyond the stomach: metastatic calcification of the heart can be fatal, and gastric deposits seen in a biopsy can be the clue to a systemic process, so the pathologist mentions them in the report.<!--c:metastatic-calcification-c064-->
+- **H&E:** the routine stain already shows the deposits, which hematoxylin colors deep blue (for where to look in the kidney, see Microscopic morphology).<!--c:metastatic-calcification-c065-->
+- **von Kossa stain:** a more specific method than H&E that turns calcium deposits black.<!--c:metastatic-calcification-c023--> The black is metallic silver (see [[g:von-kossa-stain]]): the deposits capture silver ions from a silver nitrate solution, and light helps turn the captured silver into the metal.<!--c:metastatic-calcification-c066-->
+- **Alizarin red:** a second calcium stain; like von Kossa, it helps to bring out small or doubtful deposits.<!--c:metastatic-calcification-c067-->
 - **Electron microscopy:** tubular epithelial cells contain abundant calcium deposits within their mitochondria.<!--c:metastatic-calcification-c024-->
+- **IHC and molecular tests:** none is needed for the diagnosis.
 
 ## Clinical presentation
 
-Nephrocalcinosis can impair renal function, mainly through tubular dysfunction: renal tubular acidosis, loss of salt in the urine and an inability to concentrate urine.<!--c:metastatic-calcification-c025--> In primary hyperparathyroidism, hypercalciuria causes polyuria with secondary polydipsia, and nephrocalcinosis may appear on imaging as diffuse renal calcification.<!--c:metastatic-calcification-c026--> In vitamin D excess, hypercalcemia first gives nonspecific complaints such as weakness and headache.<!--c:metastatic-calcification-c027-->
+Nephrocalcinosis can impair renal function, mainly through tubular dysfunction: renal tubular acidosis, loss of salt in the urine and an inability to concentrate urine.<!--c:metastatic-calcification-c025--> In primary hyperparathyroidism, hypercalciuria causes polyuria with secondary polydipsia, and nephrocalcinosis may appear on imaging as diffuse renal calcification.<!--c:metastatic-calcification-c026--> In vitamin D excess, hypercalcemia first gives nonspecific complaints such as weakness and headache.<!--c:metastatic-calcification-c027--> Lung calcification can go as far as respiratory failure, although it often causes no symptoms.<!--c:metastatic-calcification-c068-->
 
 ## Diagnosis, key lab and imaging
 
 - **Laboratory:** serum calcium and phosphate reveal the driver, since either hypercalcemia or hyperphosphatemia can raise the calcium–phosphorus product.<!--c:metastatic-calcification-c044-->
-- **Imaging:** soft-tissue calcification looks like patchy, shapeless densities that are often denser than bone and lack the trabecular architecture of true new bone.<!--c:metastatic-calcification-c028-->
+- **Imaging:** soft-tissue calcification looks like patchy, shapeless densities that are often denser than bone and lack the trabecular architecture of true new bone.<!--c:metastatic-calcification-c028--> In the lung, high-resolution CT can show calcified nodules or ground-glass areas, and on a bone scan the tracer may collect in the lungs.<!--c:metastatic-calcification-c069-->
 - **Histology:** basophilic deposits on H&E that turn black with von Kossa.<!--c:metastatic-calcification-c045-->
 
 ## Complications and prognosis
 
 - Hypercalciuria can lead to nephrocalcinosis, to calcium-containing kidney stones, or to both.<!--c:metastatic-calcification-c029-->
 - Severe renal calcification leaves fibrotic, atrophic scars.<!--c:metastatic-calcification-c046-->
+- Lung deposits are not always permanent: correcting the mineral disorder of chronic renal failure, for instance with a kidney transplant or a parathyroidectomy, can make them regress.<!--c:metastatic-calcification-c070-->
 - Infants are especially sensitive to vitamin D excess and, if it is not corrected, are at risk of renal acidosis, early arteriosclerosis and aortic stenosis above the valve.<!--c:metastatic-calcification-c030-->
 
 ## Differential diagnosis
@@ -64,7 +74,7 @@ Nephrocalcinosis can impair renal function, mainly through tubular dysfunction: 
 | Entity | Discriminating features | Key test |
 |---|---|---|
 | [[dystrophic-calcification]] | Calcium deposits in damaged or necrotic tissue, such as tumors, arteriosclerotic vessels or traumatized areas, without a systemic mineral disorder.<!--c:metastatic-calcification-c031--> | Normal serum calcium and phosphate; underlying necrosis on histology |
-| Dystrophic calcification of the kidney (see [[nephrocalcinosis]]) | In the same kidney, calcification at sites of parenchymal injury, such as infarcts or cortical necrosis, is dystrophic, whereas diffuse calcification from hypercalcemia is metastatic.<!--c:metastatic-calcification-c032--> | Distribution: focal injury versus diffuse tubulointerstitial deposits |
+| Dystrophic calcification of the kidney (see [[nephrocalcinosis]]) | In the same kidney, an infarct or a patch of cortical necrosis calcifies by the dystrophic route, whereas diffuse deposits driven by hypercalcemia are metastatic.<!--c:metastatic-calcification-c032--> | Distribution: focal injury versus diffuse tubulointerstitial deposits |
 | Kidney and gallbladder stones | Calcium precipitates in supersaturated fluids around an organic nidus inside lumens, not within the tissue.<!--c:metastatic-calcification-c033--> | Imaging of the collecting system or biliary tract |
 | Heterotopic ossification | True bone forms in soft tissue, with normal serum calcium and phosphate; not linked to a metabolic disorder.<!--c:metastatic-calcification-c034--> | Trabeculated pattern on radiograph |
 | Calcium pyrophosphate deposition disease | Stubby rhomboid crystals with weak positive birefringence in articular cartilage.<!--c:metastatic-calcification-c035--> | Polarized light microscopy |
@@ -74,7 +84,7 @@ Nephrocalcinosis can impair renal function, mainly through tubular dysfunction: 
 - Metastatic calcification = calcium salts in **normal tissue** because of a **systemic mineral disorder**.<!--c:metastatic-calcification-c036-->
 - The driver is a raised **calcium–phosphorus product**: **hypercalcemia** or **hyperphosphatemia**.<!--c:metastatic-calcification-c047-->
 - Classic hypercalcemic causes: **primary hyperparathyroidism**, **vitamin D excess**, **sarcoidosis**, **milk–alkali syndrome**, osteolytic tumors.<!--c:metastatic-calcification-c037--> **Plasma cell myeloma** does the same through bone resorption.<!--c:metastatic-calcification-c058--> **Chronic kidney disease** acts through **phosphate retention**.<!--c:metastatic-calcification-c059-->
-- Favored sites: **alveolar septa**, **renal tubules**, **blood vessels**.<!--c:metastatic-calcification-c038--> Deposits prefer **locally alkaline** sites.<!--c:metastatic-calcification-c048-->
+- Favored sites: **alveolar septa**, **renal tubules**, **blood vessels**.<!--c:metastatic-calcification-c038--> The **gastric mucosa** is a further favored site.<!--c:metastatic-calcification-c071--> Deposits prefer **locally alkaline** sites.<!--c:metastatic-calcification-c048-->
 - Kidney: calcified **tubular basement membranes**, especially in the **proximal tubules**.<!--c:metastatic-calcification-c049-->
 - Deposits are **basophilic** on H&E and **black with von Kossa**.<!--c:metastatic-calcification-c039-->
 - The mineral is calcium **hydroxyapatite**, as in dystrophic calcification.<!--c:metastatic-calcification-c050-->
@@ -86,6 +96,7 @@ Nephrocalcinosis can impair renal function, mainly through tubular dysfunction: 
 - Serum calcium need not be high: in chronic kidney disease, phosphate retention drives calcification while serum calcium tends to fall.<!--c:metastatic-calcification-c040-->
 - Finding calcium in tissue does not prove hypercalcemia: about 20% of kidneys at autopsy carry small deposits with no functional significance or link to hypercalcemia.<!--c:metastatic-calcification-c041-->
 - Nephrocalcinosis (calcium in the renal parenchyma) is not the same as nephrolithiasis (stones in the collecting system), although hypercalciuria can cause both.<!--c:metastatic-calcification-c042-->
+- A normal chest X-ray does not rule out lung involvement: in metastatic pulmonary calcification the chest film is often normal.<!--c:metastatic-calcification-c072-->
 - Dystrophic and metastatic calcification are told apart by the state of the tissue and the blood, not by the mineral, which is hydroxyapatite in both.<!--c:metastatic-calcification-c054-->
 
 ## Mnemonics

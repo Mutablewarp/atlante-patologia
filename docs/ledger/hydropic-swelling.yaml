@@ -74,12 +74,12 @@ claims:
     date: 2026-11-03
   - claimId: hydropic-swelling-c010
     section: pathogenesis
-    statement: "Swelling occurs when Na+ entry exceeds pump capacity, when the pump is damaged, or when ATP is depleted."
+    statement: "Na+ is retained when ATP is lacking, when the pump is injured, or when membrane leakage admits more Na+ than the pump can extrude."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hydropic-swelling-c011
     section: pathogenesis
     statement: "Accumulated intracellular Na+ is followed by water to maintain isosmotic conditions, so the cell swells."
@@ -90,12 +90,12 @@ claims:
     date: 2026-11-03
   - claimId: hydropic-swelling-c012
     section: pathogenesis
-    statement: "Excess water collects mostly in distended ER cisternae, probably drawn in by local ionic shifts."
+    statement: "The endoplasmic reticulum receives most of the excess water: ion shifts probably draw it into the cisternae, which then dilate."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hydropic-swelling-c013
     section: pathogenesis
     statement: "In ischemia, ATP loss impairs Na+/K+ exchange and acidosis activates the Na+/H+ exchanger, increasing intracellular Na+."
@@ -142,8 +142,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hydropic-swelling-c019
     section: micro
     statement: "Organelle number is unchanged; organelles are dispersed in a larger volume."
@@ -278,8 +278,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "1", pages: "43" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hydropic-swelling-c036
     section: differential
     statement: "Fatty change shows cytoplasmic lipid globules and is reversible."
@@ -310,8 +310,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "20", pages: "868" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hydropic-swelling-c040
     section: high-yield
     statement: "Hydropic swelling is a reversible cell enlargement caused by intracellular water."
@@ -342,8 +342,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hydropic-swelling-c044
     section: high-yield
     statement: "Electron microscopy shows dilated ER, detached ribosomes, swollen mitochondria and membrane blebs."
@@ -366,8 +366,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "7", pages: "344" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hydropic-swelling-c047
     section: traps
     statement: "The nucleus remains normally situated in hydropic swelling."
@@ -422,29 +422,141 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hydropic-swelling-c054
     section: differential
     statement: "Oil red O stain marks neutral lipid."
     sourceRef: { source: rubin-8e, chapter: "31", pages: "1411" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hydropic-swelling-c055
     section: differential
     statement: "The PAS stain identifies glycogen."
     sourceRef: { source: rubin-8e, chapter: "31", pages: "1411" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hydropic-swelling-c056
     section: differential
     statement: "Diastase digestion removes glycogen before PAS staining."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "36" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hydropic-swelling-c057
+    section: etiology
+    statement: "Carbon tetrachloride and acetaminophen overdose cause zonal, centrilobular liver injury in which hydropic swelling of hepatocytes accompanies coagulative necrosis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hydropic-swelling-c058
+    section: gross
+    statement: "An edematous brain, whatever the type of edema (the passage covers vasogenic, cytotoxic and interstitial edema), shows narrowing of the sulci and flattening of the gyri."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "344" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hydropic-swelling-c059
+    section: ancillary
+    statement: "In a liver biopsy taken after an acetaminophen overdose, the hepatocytes still alive around the centrilobular necrosis are strongly swollen (figure legend)."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "881" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hydropic-swelling-c060
+    section: ancillary
+    statement: "Alcoholic hepatitis mixes unevenly swollen hepatocytes with single or grouped dead hepatocytes whose nuclei are fragmented or pyknotic."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "868" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hydropic-swelling-c061
+    section: ancillary
+    statement: "Lipid, such as aspirated oil, is largely lost when tissue is processed into paraffin, so routine sections show empty vacuoles where it was."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "721" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hydropic-swelling-c062
+    section: ancillary
+    statement: "Sudan red applied to a frozen section colors fat red, as shown for pulmonary fat emboli."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "336" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hydropic-swelling-c063
+    section: ancillary
+    statement: "Diastase digestion before the PAS reaction removes glycogen, so PAS positivity that disappears after diastase identifies glycogen."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hydropic-swelling-c064
+    section: ancillary
+    statement: "The first, still reversible changes of myocardial ischemia (mild mitochondrial swelling, sarcoplasmic edema) are visible only by electron microscopy."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "657" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hydropic-swelling-c065
+    section: ancillary
+    statement: "Drug-induced liver injury mimics the histology of other liver diseases, so the biopsy frequently cannot establish that a drug caused it."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hydropic-swelling-c066
+    section: clinical
+    statement: "Feathery degeneration is the name for hepatocytes that, in extrahepatic biliary obstruction, become both bile-stained and hydropically swollen."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "847" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hydropic-swelling-c067
+    section: prognosis
+    statement: "The rigid skull leaves a swelling brain no space, so intracranial pressure climbs and cerebral perfusion falls; in severe cases tonsillar herniation may be fatal."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "344" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hydropic-swelling-c068
+    section: traps
+    statement: "The blood-brain barrier stays intact in cytotoxic edema, with water entering osmotically, but loosens in vasogenic edema; infarcts often combine both."
+    sourceRef: { source: rubin-8e, chapter: "32", pages: "1447" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hydropic-swelling-c069
+    section: traps
+    statement: "Microvesicular steatosis keeps the hepatocyte nucleus central, with the fat spread as tiny vacuoles."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hydropic-swelling-c070
+    section: high-yield
+    statement: "PAS is used to identify glycogen, and oil red O to show neutral lipid."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1411" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09

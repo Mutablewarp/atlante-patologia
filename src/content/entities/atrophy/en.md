@@ -54,20 +54,20 @@ The affected organ or tissue is reduced in size.<!--c:atrophy-c035--> In an atro
 
 - Cells are smaller than their normal counterparts, as seen in myocytes and adipocytes during starvation.<!--c:atrophy-c038-->
 - In denervated skeletal muscle, fibers lose cytoplasmic protein, so their nuclei appear relatively more prominent.<!--c:atrophy-c039-->
-- Cut across, a denervated fiber shrinks to a small angular profile wedged between normal fibers; such fibers are scattered at first, then gather in small and later larger groups.<!--c:atrophy-c072--> If reinnervation fails, the fibers eventually vanish and fat and fibrous tissue take their place.<!--c:atrophy-c073-->
-- The atrophic postmenopausal endometrium contains only a few small glands, some of them cystic.<!--c:atrophy-c040--> Its residual glands have a thin epithelial lining and lie in a fibrous, collagen-rich stroma; when the glands are cystically dilated, the picture is called senile cystic atrophy.<!--c:atrophy-c074-->
+- Seen in cross-section, the denervated fiber becomes small and angulated; at first such fibers appear in isolation, then with time they come together in clusters that grow from a few fibers into large groups.<!--c:atrophy-c072--> If reinnervation fails, the fibers eventually vanish and fat and fibrous tissue take their place.<!--c:atrophy-c073-->
+- The atrophic postmenopausal endometrium contains only a few small glands, some of them cystic.<!--c:atrophy-c040--> When, as often happens, the residual glands are dilated into cysts, the picture is called senile cystic atrophy; dilated or not, the glands have a thin lining and lie in a fibrous, collagen-rich stroma.<!--c:atrophy-c074-->
 - Lipofuscin, the golden-brown "wear-and-tear" pigment of long-lived cells such as neurons and cardiac myocytes, can be more conspicuous in atrophic organs.<!--c:atrophy-c041-->
 
 ## Special stains, IHC and molecular findings
 
 **How it is studied:**
 
-- **Specimen:** muscle atrophy is assessed on a biopsy of a moderately affected muscle, often the quadriceps or biceps (the gastrocnemius together with the sural nerve when a neuropathy is suspected), because a spared muscle may look normal and a very weak one may show only end-stage fibro-fatty tissue.<!--c:atrophy-c075-->
+- **Specimen:** muscle atrophy is assessed on a biopsy of a moderately affected muscle, often the quadriceps or biceps (the gastrocnemius together with the sural nerve when a neuropathy is suspected): an unaffected muscle can be almost normal, while in a severely weakened one little muscle may be left among fat and fibrous tissue.<!--c:atrophy-c075-->
 - **Handling:** the sample is divided between formalin, unfixed freezing for enzyme histochemistry (it reveals enzyme activity, while immunohistochemistry only reveals that a protein is there) and glutaraldehyde for electron microscopy.<!--c:atrophy-c076-->
 - **H&E and myosin ATPase:** on H&E, selective atrophy of type II fibers produces angular fibers that mimic denervation; myosin ATPase (type I fibers pale, type II dark at alkaline pH) shows that in this pattern, seen with chronic disuse, corticosteroids, old age or cachexia, every angular fiber is type II.<!--c:atrophy-c077-->
-- **Nonspecific esterase and NADH-tetrazolium reductase (NADH-TR):** denervated atrophic fibers, of both types, take up these stains very darkly, unlike fibers shrunk by disuse or wasting.<!--c:atrophy-c078-->
-- **Fiber-type grouping:** on ATPase, patches of one fiber type lying beside patches of the other prove that denervation was followed by reinnervation; if denervation goes on, whole enlarged motor units atrophy together (grouped atrophy, typical of chronic denervating diseases such as ALS).<!--c:atrophy-c079-->
-- **Limits:** the biopsy shows that denervation is present and whether it is recent or chronic, but not its cause: amyotrophic lateral sclerosis and diabetic neuropathy can look alike.<!--c:atrophy-c080-->
+- **Nonspecific esterase and NADH-tetrazolium reductase (NADH-TR):** atrophic fibers caused by denervation, which include both types, stand out as intensely stained, while the angular fibers of selective type II atrophy are not darkly stained.<!--c:atrophy-c078-->
+- **Fiber-type grouping:** on ATPase, normal muscle is a mosaic of pale and dark fibers; large patches of a single type mean that, after denervation, surviving motor neurons adopted the orphaned fibers and imposed their own type on them (reinnervation); grouped atrophy, typical of chronic denervation as in ALS, is the next step, when these enlarged motor units lose their nerve supply too and a whole patch shrinks at once.<!--c:atrophy-c079-->
+- **Limits:** the biopsy cannot tell why the muscle lost its nerve supply, since amyotrophic lateral sclerosis and a diabetic neuropathy can give the same picture; what it does show is that the lower motor neuron or its axon is damaged, and whether the process is recent or long-standing.<!--c:atrophy-c080-->
 
 ## Clinical presentation
 
@@ -117,7 +117,7 @@ Not applicable.
 - In adults, IGF-1 and Akt mainly prevent atrophy rather than directly cause growth.<!--c:atrophy-c066-->
 - Lipofuscin is not necessarily inert: it may both result from and add to oxidant stress in the cell.<!--c:atrophy-c067-->
 - Angular atrophic fibers on H&E do not prove denervation: selective type II atrophy (corticosteroids, disuse) looks the same until ATPase, esterase and NADH-TR are done.<!--c:atrophy-c082-->
-- A stroke or multiple sclerosis paralyses muscle through the upper motor neuron; the lower motor neuron is spared, so the muscle shows only diffuse, nonspecific shrinkage, not the denervation pattern.<!--c:atrophy-c083-->
+- Paralysis from a stroke or multiple sclerosis does not give the denervation pattern: the lesion lies in the upper motor neuron, the lower motor neuron still supplies the fibers, and the muscle shrinks only in a diffuse, nonspecific way.<!--c:atrophy-c083-->
 
 ## Mnemonics
 

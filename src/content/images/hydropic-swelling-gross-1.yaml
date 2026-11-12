@@ -1,0 +1,88 @@
+# License check (2026-11-08): Commons file page {{Information}} gives Source "World Journal of Surgical Oncology 2006,
+# 4:85, doi:10.1186/1477-7819-4-85", Author "Rajalakshmi L Nair et al", license {{cc-by-2.0}}; extmetadata
+# LicenseShortName "CC BY 2.0", AttributionRequired true, no Restrictions. The uploader is not the creator, but the
+# source is explicit: the PMC open-access record (pmc-oa-opendata, PMC1697813.1) gives license_code "CC BY", and the
+# article's permissions block states distribution under the Creative Commons Attribution License
+# (http://creativecommons.org/licenses/by/2.0), © 2006 Nair et al, licensee BioMed Central Ltd. PubMed confirms
+# PMID 17137499, doi:10.1186/1477-7819-4-85. The file is Figure 3 of the article (same picture and legend; PMC holds
+# a 600 × 447 px copy, Commons this 1200 × 894 px one). The authors' contributions statement says two of the authors
+# did the pathology and helped prepare the figures, and the legend has no "reproduced" or "with permission" note.
+# Autopsy brain slice; nothing identifies the patient (the captions give neither age nor sex).
+# The article never names the type of edema and could not find its cause; the captions say so.
+id: hydropic-swelling-gross-1
+file: hydropic-swelling-gross-1.jpg
+kind: gross
+sourceUrl: https://commons.wikimedia.org/wiki/File:Coronal_cross-section_of_human_brain.jpg
+author: Rajalakshmi L. Nair, Jonathan Tobias, Grant Stemmerman, Andrew M. Lowy
+license: CC-BY-2.0
+licenseUrl: https://creativecommons.org/licenses/by/2.0/
+retrievedAt: 2026-11-08
+modifications: none
+attributionText: >-
+  Rajalakshmi L. Nair, Jonathan Tobias, Grant Stemmerman, Andrew M. Lowy, "Cerebral edema in a patient following
+  cytoreductive surgery and hyperthermic intraoperative intraperitoneal chemoperfusion", World Journal of Surgical
+  Oncology 2006;4:85, doi:10.1186/1477-7819-4-85, Figure 3, via Wikimedia Commons, CC BY 2.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+orientation:
+  it: >-
+    Fetta coronale che comprende entrambi gli emisferi cerebrali: al centro l'arco bianco del corpo calloso, lungo i
+    margini inferiori le leptomeningi con vasi scuri.
+  en: >-
+    Coronal slice through both cerebral hemispheres: the white arch of the corpus callosum crosses the middle, and
+    leptomeninges with dark vessels line the lower edges.
+lookFor:
+  it: "Cerca gli spazi che mancano: sotto il corpo calloso i ventricoli laterali sono ridotti a fessure."
+  en: "Look for the spaces that are missing: under the corpus callosum the lateral ventricles are reduced to slits."
+caption:
+  it: >-
+    Encefalo rigonfio all'autopsia: fetta coronale dell'encefalo di un paziente morto per edema cerebrale diffuso,
+    comparso poche ore dopo un intervento di chirurgia maggiore per un tumore addominale associato a chemioterapia
+    intraperitoneale ipertermica.
+    All'autopsia le tonsille cerebellari erano erniate e non si è trovata alcuna causa dell'edema. Parti dal centro,
+    sotto l'arco bianco del corpo calloso: in un encefalo normale qui si aprono i ventricoli laterali, due cavità ben
+    visibili; in questa fetta sono schiacciati in sottili fessure ai lati della linea mediana. Poi guarda la
+    periferia: i solchi sono ridotti a linee sottili e le circonvoluzioni sono accostate e appiattite l'una contro
+    l'altra. Sostanza grigia e sostanza bianca non mostrano lesioni focali: qui l'edema si riconosce dagli spazi che
+    ha occupato. Perché succede: dentro una scatola cranica rigida, l'acqua in più può trovare posto solo spingendo
+    fuori il liquor; esaurito questo margine, la pressione endocranica sale, ed è per questo che l'edema
+    dell'encefalo è pericoloso (in questo caso è culminato nell'erniazione tonsillare). Attenzione: la fetta non dice
+    di che tipo di edema si tratta. Gli autori lo descrivono come corticale, cioè della sostanza grigia, dove si
+    concentra l'edema citotossico (la forma cerebrale del rigonfiamento idropico), ma non ne hanno stabilito il tipo,
+    e gli stessi segni macroscopici compaiono anche nell'edema vasogenico.
+  en: >-
+    Swollen brain at autopsy: a coronal slice from a patient who died of diffuse cerebral edema that developed a few
+    hours after major surgery for an abdominal cancer combined with heated intraperitoneal chemotherapy. At autopsy
+    the cerebellar tonsils had herniated, and no cause for the edema was found. Start in the middle, under the white
+    arch of the corpus callosum: in a normal brain this is where the lateral ventricles open as two clearly visible
+    cavities; in this slice they are squeezed into thin slits on either side of the midline. Then look at the
+    periphery: the sulci are closed to fine lines and the gyri are pressed flat against one another. Grey and white
+    matter show no focal lesion: here the edema is recognised by the spaces it has filled. Why it happens: inside a
+    rigid skull, extra water can only find room by pushing cerebrospinal fluid out; once that margin is used up,
+    intracranial pressure climbs, which is what makes brain edema dangerous (in this case it ended in tonsillar
+    herniation). Pitfall: the slice does not tell you which kind of edema this is. The authors describe it as
+    cortical, that is in the grey matter, where cytotoxic edema (the brain's form of hydropic swelling)
+    concentrates, but they did not establish its type, and the same gross signs also appear in vasogenic edema.
+alt:
+  it: >-
+    Fotografia macroscopica su fondo bianco di una fetta coronale di encefalo intero: sostanza bianca color crema e
+    corteccia più scura, beige; al centro l'arco bianco del corpo calloso, sotto il quale i ventricoli compaiono solo
+    come sottili fessure; solchi ridotti a sottili linee scure; vasi meningei scuri lungo i margini inferiori.
+  en: >-
+    Gross photograph on a white background of a coronal slice of a whole brain: cream-coloured white matter and a
+    darker beige cortex; in the middle the white arch of the corpus callosum, under which the ventricles appear only as
+    thin slits; sulci reduced to fine dark lines; dark meningeal vessels along the lower edges.
+annotations:
+  - id: corpus-callosum
+    label: { it: "Corpo calloso (punto di repere)", en: "Corpus callosum (landmark)" }
+    revealOrder: 1
+    shape: { type: rect, coords: [0.40, 0.416, 0.1625, 0.076] }
+  - id: slit-ventricles
+    label: { it: "Ventricoli laterali ridotti a fessure", en: "Lateral ventricles squeezed to slits" }
+    revealOrder: 2
+    shape: { type: rect, coords: [0.45, 0.492, 0.0625, 0.168] }
+  - id: closed-sulci
+    label: { it: "Solchi chiusi, circonvoluzioni accostate", en: "Closed sulci, gyri pressed together" }
+    revealOrder: 3
+    shape: { type: rect, coords: [0.1125, 0.224, 0.1667, 0.246] }

@@ -1,0 +1,86 @@
+# License check (2026-11-07): Commons file page {{Photograph}} gives photographer "Denis Desaulniers et Bernard Têtu",
+# source the holding library's digital collection "Kalos" (record 55-o.apatho-1046p-foie, linked from the file page),
+# permission {{cc-by-sa-4.0}}; extmetadata LicenseShortName "CC BY-SA 4.0", AttributionRequired true. The library's
+# own record (cdm22018.contentdm.oclc.org, collection p22018coll19, id 1713) states "Utilisation et diffusion:
+# CC-BY-SA 4.0" and asks to be cited as written in attributionText (its "Pour citer cette source" field). The
+# uploader (Cephas, batch upload with Pattypan) is not the creator, but the licence comes from the holding library's
+# own record. CC BY-SA is approved as a class by owner decision O7 (plan/v2-plan.md, 2026-11-03), hence
+# ownerApproved: true. Museum specimen; the record gives patient sex, age and year as unknown and names no cause; the
+# two printed labels are the catalogue number (1046, also in the file name) and the diagnosis. Nothing identifies
+# the patient.
+id: fatty-change-gross-2
+file: fatty-change-gross-2.jpg
+kind: gross
+sourceUrl: https://commons.wikimedia.org/wiki/File:Macro_Foie_-_Foie_gras_55-o.apatho-1046p-foie.jpg
+author: Denis Desaulniers, Bernard Têtu
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+retrievedAt: 2026-11-07
+modifications:
+  it: >-
+    Ridimensionata da 1890 × 1649 px a 1600 × 1396 px e ricodificata in JPEG, con rimozione dei metadati della
+    fotocamera. Nessun ritaglio, nessuna modifica dei colori. Questo adattamento è condiviso con la stessa licenza
+    (CC BY-SA 4.0).
+  en: >-
+    Downscaled from 1890 × 1649 px to 1600 × 1396 px and re-encoded as JPEG, with the camera metadata removed. No
+    crop, no colour change. This adaptation is shared under the same licence (CC BY-SA 4.0).
+attributionText: >-
+  Denis Desaulniers et Bernard Têtu, 55-o.apatho-1046p-foie, CC-BY-SA 4.0, Kalos, Bibliothèque de l’Université
+  Laval, via Wikimedia Commons
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-07 }
+orientation:
+  it: "A sinistra la superficie esterna, liscia, di un lobo; a destra un'ampia superficie di taglio."
+  en: "On the left, the smooth outer surface of one lobe; on the right, a broad cut surface."
+lookFor:
+  it: "Percorri la superficie di taglio da un margine all'altro: un unico giallo pallido uniforme, senza noduli né cicatrici."
+  en: "Run your eye across the cut surface from edge to edge: one even pale yellow, with no nodules and no scars."
+caption:
+  it: >-
+    Grosso fegato steatosico, pezzo anatomico da museo conservato in liquido fissativo (l'etichetta francese «GROS
+    FOIE GRAS» significa «grosso fegato grasso»; 1046 è il numero di catalogo). A sinistra vedi la superficie esterna
+    di un lobo, liscia e lucida; a destra un'ampia superficie di taglio. Parti da quest'ultima: è di un giallo
+    camoscio pallido uniforme da un margine all'altro, interrotta solo da piccoli orifizi vascolari e da qualche
+    sottile parete di vaso ramificata, senza noduli e senza cicatrici fibrose. Il tessuto bitorzoluto al centro,
+    attorno ai grossi vasi, è connettivo e non parenchima epatico: escludilo quando giudichi il colore. Concetto
+    chiave: il grasso accumulato negli epatociti rende il fegato giallo e l'organo si ingrandisce; nei forti bevitori
+    può arrivare a pesare fino a tre volte il normale. Attenzione: tutta la foto ha una dominante giallo-verde data
+    dal liquido di conservazione e dall'illuminazione, e il tessuto fissato perde il colore del fresco; valuta perciò
+    l'uniformità più che la tonalità esatta. Una superficie di taglio omogenea distingue anche la steatosi semplice
+    dalla cirrosi, nella quale il taglio si frammenta in noduli tondeggianti separati da tessuto cicatriziale chiaro.
+  en: >-
+    Large fatty liver, a museum specimen kept in fixative (the French label "GROS FOIE GRAS" means "large fatty
+    liver"; 1046 is its catalogue number). On the left you see the smooth, glossy outer surface of one lobe; on the
+    right, a broad cut surface. Start with the cut surface: it is an even pale buff-yellow from edge to edge, broken
+    only by small vessel openings and a few thin, branching vessel walls, with no nodules and no fibrous scars. The
+    lumpy tissue in the centre, around the large vessels, is connective tissue, not liver parenchyma: leave it out
+    when you judge the colour. Key point: the fat stored in hepatocytes turns the liver yellow and the organ
+    enlarges; in heavy drinkers it can weigh up to three times normal. Pitfall: the whole photograph has a
+    yellow-green cast from the preserving fluid and the lighting, and fixed tissue loses its fresh colour, so judge
+    the evenness rather than the exact shade. An even cut surface also sets simple fatty change apart from cirrhosis,
+    where the cut surface breaks up into rounded nodules separated by pale scar tissue.
+alt:
+  it: >-
+    Fotografia macroscopica di un fegato intero in una teca da museo su fondo giallo-verde: a sinistra la superficie
+    esterna liscia di un grosso lobo; a destra un'ampia superficie di taglio piatta, di colore giallo camoscio pallido
+    uniforme, con piccoli fori vascolari e senza noduli; al centro tessuto connettivo chiaro e bitorzoluto attorno ai
+    vasi; in alto a sinistra un'etichetta stampata «1046 FOIE» e in basso a sinistra «GROS FOIE GRAS».
+  en: >-
+    Gross photograph of a whole liver in a museum display box against a yellow-green background: on the left the
+    smooth outer surface of a large lobe; on the right a wide, flat cut surface of even pale buff-yellow with small
+    vessel holes and no nodules; pale, lumpy connective tissue around vessels in the centre; a printed label "1046
+    FOIE" at the top left and "GROS FOIE GRAS" at the bottom left.
+annotations:
+  - id: even-cut-surface
+    label: { it: "Superficie di taglio uniforme, senza noduli", en: "Even cut surface without nodules" }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.55, 0.17, 0.76, 0.12, 0.76, 0.60, 0.64, 0.60, 0.58, 0.53, 0.47, 0.50, 0.47, 0.30, 0.58, 0.29]
+  - id: smooth-outer-surface
+    label: { it: "Superficie esterna liscia di un lobo", en: "Smooth outer surface of a lobe" }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.03, 0.10, 0.24, 0.06, 0.36, 0.20, 0.40, 0.45, 0.40, 0.80, 0.33, 0.91, 0.18, 0.86, 0.04, 0.55]

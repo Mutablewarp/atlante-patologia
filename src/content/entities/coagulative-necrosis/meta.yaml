@@ -138,16 +138,21 @@ examQuestions:
     en: "How do you tell coagulative necrosis from liquefactive necrosis, caseous necrosis and apoptosis under the microscope? And in which organ does ischemic necrosis not stay coagulative?"
     focus: [differential, traps, high-yield]
     level: 3
-  - it: "All'autopsia di un paziente morto poche ore dopo la comparsa di un dolore toracico, il cuore appare normale a occhio nudo: questo esclude un infarto? Quali tecniche userebbe oltre all'ematossilina-eosina, e quali esami del sangue avrebbero documentato la necrosi in vita?"
-    en: "At the autopsy of a patient who died a few hours after chest pain began, the heart looks normal to the naked eye: does that rule out an infarct? Which techniques would you use besides hematoxylin and eosin, and which blood tests would have documented the necrosis during life?"
-    focus: [traps, ancillary, diagnosis]
+  - it: "All'autopsia di un paziente morto poche ore dopo la comparsa di un dolore toracico, il cuore appare normale a occhio nudo: questo esclude un infarto? Che cosa potrebbero mostrare a questo stadio l'ematossilina-eosina e la microscopia elettronica, e quali esami del sangue avrebbero documentato la necrosi in vita?"
+    en: "At the autopsy of a patient who died a few hours after chest pain began, the heart looks normal to the naked eye: does that rule out an infarct? What could H&E and electron microscopy show at this stage, and which blood tests would have documented the necrosis during life?"
+    focus: [traps, micro, ancillary, diagnosis]
     level: 3
 images:
   - id: coagulative-necrosis-gross-1
     role: gross
+  - id: coagulative-necrosis-gross-2
+    role: gross
+    pairWith: hypoxic-ischemic-injury-micro-1
   - id: coagulative-necrosis-micro-1
     role: micro
   - id: coagulative-necrosis-micro-2
+    role: micro
+  - id: coagulative-necrosis-micro-3
     role: micro
   - id: g01-necrosis-vs-apoptosis
     role: diagram
@@ -169,5 +174,5 @@ sources:
   - source: rubin-8e
     chapter: "22"
     pages: "954-955, 961-962, 965"
-lastUpdated: 2026-11-04
+lastUpdated: 2026-11-09
 status: published

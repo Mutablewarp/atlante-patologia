@@ -1,5 +1,8 @@
 # Claim ledger for the entity page src/content/entities/apoptosis (CONTENT_SCHEMA §8). Printed pages of the reference.
 # Independent re-check 2026-11-07 by a fresh-context verifier ("independent-verifier-agent"): c073, c074 and c042 reworded.
+# Independent check 2026-11-09 of the V2.2 rows c075-c089; the verifier's exact rewordings applied to c075, c078, c080, c081, c084, c087 and c027.
+# c037 reworded by the fixer on 2026-11-09 (own wording, re-checked on p. 41) to remove a 6-word run shared with elmore-2007.
+# c040 public sentence reworded by the fixer on 2026-11-09 ("no inflammatory infiltrate around" contradicted c080: lymphocytes accompany immune-mediated apoptosis); statement unchanged, re-checked on pp. 41, 54.
 entity: apoptosis
 claims:
   - claimId: apoptosis-c001
@@ -213,12 +216,12 @@ claims:
     date: 2026-11-03
   - claimId: apoptosis-c027
     section: pathogenesis
-    statement: "AIF translocates to the nucleus and causes DNA fragmentation independently of caspases."
+    statement: "AIF moves into the nucleus and breaks up DNA without any caspase involvement."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "49, 52" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: apoptosis-c028
     section: pathogenesis
     statement: "High calcium, ROS and nitric oxide open the mitochondrial permeability transition pore, contributing to release of mitochondrial death proteins."
@@ -293,12 +296,12 @@ claims:
     date: 2026-11-03
   - claimId: apoptosis-c037
     section: micro
-    statement: "Apoptosis involves single cells or small groups within viable tissue rather than geographic areas."
+    statement: "Apoptosis strikes single cells or small groups within viable tissue rather than geographic areas."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "41" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "fixer-agent"
+    date: 2026-11-09
   - claimId: apoptosis-c038
     section: micro
     statement: "Apoptotic nuclei condense (pyknosis) and break into fragments (karyorrhexis) while the cell membrane remains intact."
@@ -337,8 +340,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "1", pages: "41, 54" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "fixer-agent"
+    date: 2026-11-09
   - claimId: apoptosis-c041
     section: micro
     statement: "Apoptotic cells are illustrated in viral hepatitis liver and erythema multiforme skin."
@@ -357,36 +360,36 @@ claims:
     date: 2026-11-07
   - claimId: apoptosis-c075
     section: micro
-    statement: "In acute viral hepatitis, single apoptotic hepatocytes become small, strongly eosinophilic acidophil bodies, sometimes with a pyknotic nucleus."
+    statement: "Acidophilic bodies are not specific to viral hepatitis, since many other liver diseases produce them as well."
     sourceRef: { source: rubin-8e, chapter: "20", pages: "863-864" }
     status: verified
     verifiedBy: agent
-    verifier: "author-agent v22/apoptosis"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: apoptosis-c076
     section: micro
     statement: "In lichen planus, apoptotic keratinocytes form round eosinophilic colloid (Civatte) bodies admixed with the inflammatory infiltrate at the dermal-epidermal interface."
     sourceRef: { source: rubin-8e, chapter: "28", pages: "1265" }
     status: verified
     verifiedBy: agent
-    verifier: "author-agent v22/apoptosis"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: apoptosis-c077
     section: micro
     statement: "Macrophages containing phagocytosed nuclear debris, called tingible body macrophages, are a normal component of germinal centers."
     sourceRef: { source: rubin-8e, chapter: "26", pages: "1158" }
     status: verified
     verifiedBy: agent
-    verifier: "author-agent v22/apoptosis"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: apoptosis-c078
     section: micro
-    statement: "In Burkitt lymphoma, macrophages that have ingested debris of apoptotic tumor cells are scattered through the tumor and produce a starry-sky appearance."
+    statement: "Burkitt lymphoma shows a starry-sky pattern: macrophages that have engulfed apoptotic tumor cells form the stars against a sky of rapidly proliferating tumor cells."
     sourceRef: { source: rubin-8e, chapter: "26", pages: "1176-1177" }
     status: verified
     verifiedBy: agent
-    verifier: "author-agent v22/apoptosis"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: apoptosis-c043
     section: ancillary
     statement: "Molecular features of apoptosis include cytochrome c release, caspase-3 activation, CAD-mediated DNA fragmentation and surface phosphatidylserine."
@@ -410,26 +413,26 @@ claims:
     status: verified
     secondSource: { source: rubin-8e, locator: "ch. 20, printed pp. 863-864 (acute viral hepatitis); ch. 28, printed p. 1260 (erythema multiforme, small biopsy)" }
     verifiedBy: agent
-    verifier: "author-agent v22/apoptosis"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: apoptosis-c080
     section: ancillary
-    statement: "On H&E, apoptotic cells are isolated shrunken cells with dense eosinophilic cytoplasm and a condensed or fragmented nucleus, lying among viable cells without inflammation."
+    statement: "On H&E, apoptotic cells are isolated shrunken cells with dense eosinophilic cytoplasm and a condensed or fragmented nucleus among viable cells; they attract no neutrophils, although lymphocytes accompany immune-mediated apoptosis, as in viral hepatitis or erythema multiforme."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "41" }
     status: verified
-    secondSource: { source: rubin-8e, locator: "ch. 20, printed p. 863 (small, deeply eosinophilic acidophil bodies); ch. 11, printed p. 513 (cell shrinkage)" }
+    secondSource: { source: rubin-8e, locator: "ch. 20, printed pp. 863-864 (acidophilic bodies; lymphocytes around dying hepatocytes); ch. 11, printed p. 513 (cell shrinkage); ch. 28, printed p. 1260 (lymphocytes at the dermal-epidermal interface in erythema multiforme)" }
     verifiedBy: agent
-    verifier: "author-agent v22/apoptosis"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: apoptosis-c081
     section: ancillary
-    statement: "H&E detects only late-stage apoptosis, and because fragments are phagocytosed rapidly, substantial apoptosis can occur before it is histologically evident."
+    statement: "H&E shows only the late morphological changes of apoptosis, and because apoptotic fragments are cleared quickly, H&E can underestimate how much apoptosis is taking place."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "41" }
     status: beyond-reference
     secondSource: { source: elmore-2007, locator: "section Assays for Apoptosis, Cytomorphological Alterations" }
     verifiedBy: agent
-    verifier: "author-agent v22/apoptosis"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: apoptosis-c082
     section: ancillary
     statement: "Immunohistochemistry for cleaved (active) caspase-3, or for cleaved caspase substrates such as PARP, labels apoptotic cells in tissue sections."
@@ -437,8 +440,8 @@ claims:
     status: beyond-reference
     secondSource: { source: elmore-2007, locator: "section Detection of Caspases, Cleaved Substrates, Regulators, and Inhibitors; Fig. 5" }
     verifiedBy: agent
-    verifier: "author-agent v22/apoptosis"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: apoptosis-c083
     section: ancillary
     statement: "In the TUNEL method, terminal deoxynucleotidyl transferase adds labeled dUTP to the 3' ends of DNA strand breaks; with peroxidase-DAB detection the labeled nuclei appear brown in the section."
@@ -446,17 +449,17 @@ claims:
     status: beyond-reference
     secondSource: { source: elmore-2007, locator: "section DNA Fragmentation (TUNEL); Fig. 4" }
     verifiedBy: agent
-    verifier: "author-agent v22/apoptosis"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: apoptosis-c084
     section: ancillary
-    statement: "Transmission electron microscopy is regarded as the gold standard for confirming apoptosis: electron-dense chromatin marginated under the nuclear membrane, nuclear fragmentation, an intact plasma membrane with surface blebs, and membrane-bound apoptotic bodies with intact organelles, which may lie inside phagocytes."
+    statement: "Transmission electron microscopy is the reference method for apoptosis, though it surveys only a very small area of tissue: it shows an intact plasma membrane, chromatin compacted into dense crescents against the nuclear envelope, and apoptotic bodies with recognizable organelles, some already engulfed by phagocytes."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "41" }
     status: beyond-reference
-    secondSource: { source: elmore-2007, locator: "sections Morphology of Apoptosis and Assays for Apoptosis, Cytomorphological Alterations (TEM); Fig. 2" }
+    secondSource: { source: elmore-2007, locator: "sections Morphology of Apoptosis and Assays for Apoptosis, Cytomorphological Alterations (TEM and its disadvantages)" }
     verifiedBy: agent
-    verifier: "author-agent v22/apoptosis"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: apoptosis-c085
     section: ancillary
     statement: "Agarose gel electrophoresis of DNA extracted from apoptotic cells shows a ladder of fragments spaced about 180 base pairs apart."
@@ -464,8 +467,8 @@ claims:
     status: beyond-reference
     secondSource: { source: elmore-2007, locator: "section DNA Fragmentation (DNA laddering)" }
     verifiedBy: agent
-    verifier: "author-agent v22/apoptosis"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: apoptosis-c086
     section: ancillary
     statement: "Labeled annexin V detects phosphatidylserine on the outer membrane of apoptotic cells; membrane-impermeant dyes such as propidium iodide enter only cells with damaged membranes and so identify necrotic cells."
@@ -473,8 +476,8 @@ claims:
     status: beyond-reference
     secondSource: { source: elmore-2007, locator: "section Membrane Alterations" }
     verifiedBy: agent
-    verifier: "author-agent v22/apoptosis"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: apoptosis-c045
     section: clinical
     statement: "Loss of p53 allows unchecked mutation accumulation, and Bcl-2 overexpression occurs in some highly aggressive lymphomas."
@@ -510,12 +513,12 @@ claims:
     date: 2026-11-03
   - claimId: apoptosis-c087
     section: clinical
-    statement: "In systemic lupus erythematosus, uptake of dying cells is impaired and apoptotic debris increases; its DNA-histone and RNA-protein complexes activate dendritic cells and autoreactive B cells through Toll-like receptors."
+    statement: "In SLE, defective clearance of dying cells lets apoptotic debris accumulate; Toll-like receptors of dendritic cells and autoreactive B cells sense the debris's DNA-histone and RNA-protein material, especially when autoantibodies are bound to it, which sustains autoimmunity."
     sourceRef: { source: rubin-8e, chapter: "11", pages: "513" }
     status: verified
     verifiedBy: agent
-    verifier: "author-agent v22/apoptosis"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: apoptosis-c049
     section: clinical
     statement: "In chronic myeloid leukemia an anti-apoptotic genetic lesion allows granulocytes to accumulate."
@@ -659,8 +662,8 @@ claims:
     status: beyond-reference
     secondSource: { source: elmore-2007, locator: "section Assays for Apoptosis (introduction; Cytomorphological Alterations; DNA Fragmentation; Detection of Caspases)" }
     verifiedBy: agent
-    verifier: "author-agent v22/apoptosis"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: apoptosis-c066
     section: traps
     statement: "Pyknosis and nuclear fragmentation occur in both apoptosis and necrosis; extent and inflammation distinguish them."
@@ -716,8 +719,8 @@ claims:
     status: beyond-reference
     secondSource: { source: elmore-2007, locator: "section Assays for Apoptosis (DNA Fragmentation; Membrane Alterations)" }
     verifiedBy: agent
-    verifier: "author-agent v22/apoptosis"
-    date: 2026-11-04
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: apoptosis-c072
     section: mnemonics
     statement: "Original mnemonic summarizing single-cell non-inflammatory death, caspase control, intact membrane, phosphatidylserine eat-me signal and the caspase-8/caspase-9 pathways converging on caspase-3."

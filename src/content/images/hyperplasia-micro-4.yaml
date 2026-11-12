@@ -1,0 +1,72 @@
+# License check (2026-11-08): Commons file page {{Information}} gives source {{Own}}, author {{Mikael Häggström}},
+# license {{cc-zero}}; extmetadata LicenseShortName "CC0", AttributionRequired false. We use the plain version, not
+# the author's "annotated" copy with the printed words Benign / Cancer: our own bilingual annotations replace them.
+# The file page names the markers (p63, CK5 and CK14 brown; AMACR red) but no magnification: "high power" is our
+# reading of the field. Annotations placed by inspection.
+id: hyperplasia-micro-4
+file: hyperplasia-micro-4.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:PIN-4_staining_of_benign_prostate_gland_and_adenocarcinoma.jpg
+author: Mikael Häggström
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-11-08
+modifications: none
+attributionText: >-
+  Mikael Häggström, M.D., "PIN-4 staining of benign prostate gland and adenocarcinoma", via Wikimedia Commons, CC0 1.0
+  (public domain dedication)
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+stain: "immunohistochemistry for PIN-4 (p63, CK5 and CK14 brown; AMACR red)"
+magnification: high power
+lookFor:
+  it: "Segui il bordo esterno di ogni ghiandola: cellule basali marroni indicano una ghiandola benigna; nessun orlo marrone e citoplasma rosso orientano verso il carcinoma."
+  en: "Trace the outer edge of each gland: brown basal cells mean benign; no brown rim and red cytoplasm point to carcinoma."
+caption:
+  it: >-
+    Tessuto prostatico colorato con il cocktail PIN-4, a forte ingrandimento: un'unica reazione immunoistochimica che
+    combina tre marcatori delle cellule basali (p63 e le citocheratine ad alto peso molecolare CK5 e CK14, in marrone)
+    con l'AMACR (in rosso). La ghiandola in alto a sinistra è benigna: sotto le cellule luminali, che restano non
+    colorate, corre un orlo marrone quasi continuo di cellule basali appiattite, quindi la ghiandola ha due strati di
+    cellule. La ghiandola in basso a destra è un adenocarcinoma: nessuna cellula basale marrone la circonda, e il
+    citoplasma delle sue cellule è punteggiato da fini granuli rossi, il segnale dell'AMACR. Questa colorazione aiuta a
+    risolvere un focolaio dubbio su un'agobiopsia. Le ghiandole benigne, comprese quelle dell'IPB, conservano le cellule
+    basali e non esprimono l'AMACR; il carcinoma ha perso le cellule basali ed esprime l'AMACR. Attenzione: l'AMACR da
+    sola non distingue il carcinoma dalla neoplasia intraepiteliale prostatica (PIN) di alto grado, che la esprime
+    anch'essa ma conserva ancora alcune cellule basali, meno numerose del normale; per questo i marcatori si leggono
+    insieme e sempre accanto alla morfologia in EE.
+  en: >-
+    Prostate tissue stained with the PIN-4 cocktail, high power: a single immunostain that combines three basal cell
+    markers (p63 and the high-molecular-weight cytokeratins CK5 and CK14, brown) with AMACR (red). The gland at upper
+    left is benign: an almost continuous brown rim of flat basal cells runs beneath its unstained luminal cells, so the
+    gland has two cell layers. The gland at lower right is adenocarcinoma: no brown basal cell surrounds it, and the
+    cytoplasm of its cells is dusted with fine red granules, the AMACR signal. This stain helps settle a doubtful focus
+    on a needle biopsy. Benign glands, those of BPH included, keep their basal cells and do not express AMACR;
+    carcinoma has lost the basal cells and expresses AMACR. Pitfall: AMACR alone does not separate carcinoma from
+    high-grade prostatic intraepithelial neoplasia (PIN), which also expresses it but still keeps some basal cells,
+    fewer than normal; so the markers are read together, and always alongside the H&E morphology.
+alt:
+  it: >-
+    Micrografia a forte ingrandimento su fondo chiaro con nuclei blu: in alto a sinistra una ghiandola tondeggiante il
+    cui orlo esterno è formato da cellule marrone scuro, sotto una fila di cellule non colorate; in basso a destra una
+    seconda ghiandola senza cellule marroni, con il citoplasma cosparso di fini granuli rosso-rosa.
+  en: >-
+    High-power micrograph on a pale background with blue nuclei: at upper left a rounded gland whose outer rim is made
+    of dark brown cells beneath a row of unstained cells; at lower right a second gland with no brown cells, its
+    cytoplasm sprinkled with fine red-pink granules.
+annotations:
+  - id: basal-cells
+    label: { it: "Cellule basali (marroni) di una ghiandola benigna", en: "Basal cells (brown) of a benign gland" }
+    revealOrder: 1
+    shape: { type: circle, coords: [0.19, 0.70, 0.10] }
+  - id: luminal-cells
+    label: { it: "Cellule luminali, non colorate", en: "Luminal cells, unstained" }
+    revealOrder: 2
+    shape: { type: circle, coords: [0.11, 0.42, 0.045] }
+  - id: carcinoma-gland
+    label: { it: "Adenocarcinoma: niente cellule basali, AMACR rossa nel citoplasma", en: "Adenocarcinoma: no basal cells, red AMACR in the cytoplasm" }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.42, 0.55, 0.50, 0.43, 0.62, 0.39, 0.78, 0.40, 0.90, 0.46, 0.98, 0.58, 0.99, 0.80, 0.95, 0.97, 0.55, 0.99, 0.46, 0.88, 0.41, 0.72]

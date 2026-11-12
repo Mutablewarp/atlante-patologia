@@ -1,6 +1,6 @@
 ---
 lang: it
-translatedFrom: 733ac9bba44ea98da0821a6d25be1fa9f1f1518fc39f70885ba8cb726afff2cb
+translatedFrom: f6abd517e162a336d9639abe376b3068b8dab9e084dd346cb84b2308db740278
 ---
 
 ## Definizione ed epidemiologia
@@ -62,16 +62,16 @@ Non applicabile.
 
 ## Morfologia microscopica
 
-- **Microscopia elettronica:** l'autofagosoma è un vacuolo delimitato da una doppia membrana che contiene ancora citoplasma riconoscibile, spesso organelli interi come mitocondri o frammenti di reticolo endoplasmatico; dopo la fusione con un lisosoma diventa un autolisosoma (autofagolisosoma), delimitato da una sola membrana, con un contenuto in vari stadi di digestione.<!--c:autophagy-c068-->
-- **Microscopia ottica:** la lipofuscina, visibile come granuli citoplasmatici bruno-dorati, è formata da lipidi perossidati e proteine ossidate che i sistemi di smaltimento della cellula, autofagia compresa, non riescono a degradare.<!--c:autophagy-c069--> Si accumula soprattutto nelle cellule longeve, come i neuroni e i cardiomiociti, e negli epatociti; aumenta con l'età ed è più evidente negli organi atrofici (vedi [[pigment-accumulation]]).<!--c:autophagy-c070-->
+- **Microscopia elettronica:** un vacuolo con due membrane attorno a citoplasma intatto e riconoscibile (spesso un mitocondrio o un tratto di reticolo endoplasmatico) è un autofagosoma; un vacuolo con una sola membrana attorno a un contenuto già in parte o in gran parte digerito è un autolisosoma (autofagolisosoma), che si forma quando un lisosoma si è fuso con l'autofagosoma.<!--c:autophagy-c068-->
+- **Microscopia ottica:** la lipofuscina appare come granuli citoplasmatici bruno-dorati; è un residuo non digeribile di proteine ossidate e lipidi perossidati, che si accumula perché né l'autofagia né gli altri sistemi di smaltimento della cellula riescono a eliminarlo.<!--c:autophagy-c069--> La sua quantità cresce con l'età ed è più evidente in un organo atrofico; se ne trova di più nelle cellule che si dividono raramente o mai, come neuroni, cardiomiociti ed epatociti (vedi [[pigment-accumulation]]).<!--c:autophagy-c070-->
 
 ## Colorazioni speciali, IIC e reperti molecolari
 
 **Come si studia:**
 
-- **Nessun esame basta da solo:** non esiste un metodo di riferimento unico per misurare l'attività autofagica, quindi se ne combinano diversi; la microscopia elettronica, il più tradizionale, riconosce i vacuoli descritti in «Morfologia microscopica», ma non documenta direttamente la loro digestione nei lisosomi.<!--c:autophagy-c071-->
-- **LC3:** omologo nei mammiferi della proteina Atg8 del lievito, resta sulla membrana dell'autofagosoma ed è un marcatore molto usato; all'immunofluorescenza o all'immunoistochimica gli autofagosomi appaiono come puntini citoplasmatici (*puncta*), mentre l'immunoblot (Western blot) misura LC3-II, la forma coniugata a un lipide e legata alle membrane.<!--c:autophagy-c072-->
-- **p62 (SQSTM1):** si lega a LC3 e viene degradata dall'autofagia insieme al carico, per cui i suoi livelli tendono a scendere quando l'autofagia è attiva e a salire quando è deficitaria.<!--c:autophagy-c073-->
+- **Nessun esame basta da solo:** l'attività autofagica si valuta combinando più metodi, perché ognuno ha i suoi limiti e nessuno è un riferimento assoluto (gold standard); la microscopia elettronica, il metodo più antico, riconosce i vacuoli descritti in «Morfologia microscopica», ma non può dire se il loro contenuto venga davvero demolito nei lisosomi.<!--c:autophagy-c071-->
+- **LC3:** controparte nei mammiferi della proteina Atg8 del lievito, è il marcatore abituale degli autofagosomi perché, a differenza della maggior parte delle proteine dell'autofagia, resta legata alla vescicola completa; all'immunofluorescenza o all'immunoistochimica gli autofagosomi appaiono come puntini citoplasmatici (*puncta*), mentre l'immunoblot (Western blot) misura LC3-II, la forma legata a un lipide di membrana.<!--c:autophagy-c072-->
+- **p62 (SQSTM1):** un calo di p62 fa pensare che l'autofagia funzioni, un suo accumulo che sia deficitaria, perché questo adattatore, agganciato a LC3, viene digerito insieme al carico che consegna.<!--c:autophagy-c073-->
 - **Come leggere il risultato:** più autofagosomi, più LC3-II o una colorazione per LC3 più intensa possono indicare sia un aumento dell'autofagia sia un blocco della degradazione lisosomiale; per distinguere i due casi si misura il flusso autofagico, per esempio confrontando LC3-II con e senza un inibitore lisosomiale come la clorochina o la bafilomicina A1.<!--c:autophagy-c074-->
 - **Genetica molecolare:** gli studi di associazione sull'intero genoma (GWAS) hanno collegato la malattia di Crohn a varianti di due geni dell'autofagia, ATG16L1 e IRGM.<!--c:autophagy-c075-->
 
@@ -123,7 +123,7 @@ Non applicabile.
 - **La «morte cellulare autofagica» non è dimostrata come meccanismo letale autonomo;** il suo contributo, distinto da quello di altre forme di morte programmata, non è chiaro.<!--c:autophagy-c063-->
 - **Non è sempre indiscriminata:** l'autofagia da digiuno è in gran parte non selettiva, ma la mitofagia, la rimozione degli aggregati e la CMA sono altamente selettive.<!--c:autophagy-c064-->
 - **Il proteasoma non può sostituirla:** aggregati e organelli interi sono troppo grandi per il proteasoma.<!--c:autophagy-c065-->
-- **Più vacuoli autofagici non significano più autofagia:** in alcune malattie neurodegenerative e muscolari degenerative l'accumulo di strutture autofagiche precoci è stato interpretato in un primo tempo come un eccesso di autofagia, ma riflette più probabilmente un blocco delle tappe successive della via.<!--c:autophagy-c076-->
+- **Più vacuoli autofagici non dimostrano, da soli, più autofagia:** i vacuoli si accumulano anche quando è bloccata una tappa successiva, come la fusione con i lisosomi o la digestione, e proprio un blocco di questo tipo, più che l'eccesso di autofagia ipotizzato in un primo tempo, è la spiegazione più probabile dei vacuoli che si accumulano in alcune malattie neurodegenerative e muscolari degenerative.<!--c:autophagy-c076-->
 
 ## Mnemotecniche
 

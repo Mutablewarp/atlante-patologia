@@ -31,6 +31,8 @@ learningObjectives:
     en: "Explain why soluble aggregates are more toxic than large insoluble inclusions and how aggregates are cleared."
   - it: "Collegare i difetti o gli eccessi del controllo di qualità a malattie concrete (neurodegenerazione, fibrosi cistica, deficit di α1-antitripsina, sarcopenia, mieloma)."
     en: "Link defects or excesses of quality control to concrete diseases (neurodegeneration, cystic fibrosis, α1-antitrypsin deficiency, sarcopenia, myeloma)."
+  - it: "Riconoscere al microscopio le inclusioni da proteine mal ripiegate (corpi di Lewy, corpi di Mallory-Denk, globuli di α1-antitripsina) e scegliere le indagini per caratterizzarle."
+    en: "Recognize misfolded-protein inclusions under the microscope (Lewy bodies, Mallory–Denk bodies, α1-antitrypsin globules) and choose the investigations that characterize them."
 prerequisites: []
 relations:
   - type: prerequisiteOf
@@ -98,6 +100,31 @@ chain:
     lab:
       it: "Cloro sudorale aumentato; mutazioni di CFTR all'analisi genetica"
       en: "Raised sweat chloride; CFTR mutations on genetic testing"
+examQuestions:
+  - it: "Mi parli del controllo di qualità delle proteine: quali sistemi lo compongono e come viene marcata una proteina destinata al proteasoma?"
+    en: "Tell me about protein quality control: which systems make it up, and how is a protein tagged for the proteasome?"
+    focus: [definition, pathogenesis]
+    level: 1
+  - it: "Che cosa vede al microscopio quando il controllo di qualità delle proteine fallisce? Mi descriva qualche inclusione e mi dica in quali cellule la cerca."
+    en: "What do you see under the microscope when protein quality control fails? Describe a few inclusions and tell me in which cells you look for them."
+    focus: [micro, ancillary]
+    level: 1
+  - it: "Che cosa sono le proteine da shock termico e in che modo proteggono la cellula sotto stress?"
+    en: "What are heat shock proteins, and how do they protect the cell under stress?"
+    focus: [pathogenesis]
+    level: 2
+  - it: "Che cosa succede quando una proteina mal ripiegata sfugge al controllo di qualità? E che cosa c'entra con le malattie neurodegenerative?"
+    en: "What happens when a misfolded protein escapes quality control? And what does that have to do with neurodegenerative diseases?"
+    focus: [pathogenesis, clinical, prognosis]
+    level: 2
+  - it: "Quali colorazioni e quali altre indagini userebbe per dimostrare un accumulo di proteine mal ripiegate nel fegato o nel cervello?"
+    en: "Which stains and other investigations would you use to show a build-up of misfolded proteins in the liver or in the brain?"
+    focus: [ancillary, differential]
+    level: 3
+  - it: "Come distingue una malattia da accumulo di proteine mal ripiegate da una malattia da perdita di funzione? Mi confronti il deficit di α1-antitripsina e la fibrosi cistica."
+    en: "How do you tell a disease in which misfolded protein is stored from a loss-of-function disease? Compare α1-antitrypsin deficiency and cystic fibrosis."
+    focus: [clinical, traps, ancillary]
+    level: 3
 images:
   - id: protein-quality-control-diagram-1
     role: diagram
@@ -117,5 +144,11 @@ sources:
   - source: rubin-8e
     chapter: "15"
     pages: "582"
-lastUpdated: 2026-11-03
+  - source: rubin-8e
+    chapter: "20"
+    pages: "868-869, 878, 881"
+  - source: rubin-8e
+    chapter: "32"
+    pages: "1491-1492, 1494, 1496, 1498-1499"
+lastUpdated: 2026-11-09
 status: published

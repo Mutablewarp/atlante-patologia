@@ -141,6 +141,10 @@ images:
     role: micro
   - id: dysplasia-micro-3
     role: micro
+  - id: dysplasia-micro-4
+    role: micro
+  - id: dysplasia-clinical-1
+    role: clinical
   - id: g01-adaptation-spectrum
     role: diagram
 reviewStatus: ai-generated-unreviewed
@@ -163,10 +167,10 @@ sources:
     pages: "921"
   - source: rubin-8e
     chapter: "24"
-    pages: "1018, 1022, 1026, 1030-1033"
+    pages: "1018, 1023, 1026, 1030-1033"
   - source: rubin-8e
     chapter: "29"
     pages: "1304-1305, 1317"
   - source: dijkstra-2010
-lastUpdated: 2026-11-04
+lastUpdated: 2026-11-09
 status: published

@@ -107,6 +107,31 @@ chain:
     lab:
       it: "Metaplasia squamosa della congiuntiva e delle vie aeree"
       en: "Squamous metaplasia of conjunctiva and airways"
+examQuestions:
+  - it: "Mi parli della metaplasia: che cos'è, perché la si considera una risposta adattativa e quali sono gli esempi più frequenti?"
+    en: "Tell me about metaplasia: what is it, why is it considered an adaptive response, and what are the most common examples?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Che cosa vede al microscopio in una biopsia di esofago di Barrett? Quali colorazioni possono aiutarla, e con quali limiti?"
+    en: "What do you see under the microscope in a biopsy of Barrett esophagus? Which stains can help, and what are their limits?"
+    focus: [micro, ancillary]
+    level: 1
+  - it: "Da quali cellule nasce l'epitelio metaplastico? Mi faccia l'esempio della zona di trasformazione della cervice."
+    en: "Which cells does metaplastic epithelium come from? Use the cervical transformation zone as your example."
+    focus: [pathogenesis]
+    level: 2
+  - it: "Quali tipi di metaplasia compaiono nello stomaco nelle gastriti croniche, e come la loro distribuzione nelle biopsie orienta verso la causa?"
+    en: "Which types of metaplasia appear in the stomach in chronic gastritis, and how does their distribution across the biopsies point to the cause?"
+    focus: [etiology, ancillary]
+    level: 2
+  - it: "Mi descriva il percorso che porta dall'esofago di Barrett all'adenocarcinoma: quanto è alto il rischio e come si sorvegliano questi pazienti?"
+    en: "Describe the path from Barrett esophagus to adenocarcinoma: how high is the risk, and how are these patients followed up?"
+    focus: [prognosis, ancillary]
+    level: 3
+  - it: "Come distingue al microscopio una metaplasia da una displasia? E nella cervice, se una metaplasia squamosa immatura somiglia a una CIN 3, quali immunocolorazioni userebbe?"
+    en: "How do you tell metaplasia from dysplasia under the microscope? And in the cervix, if immature squamous metaplasia looks like CIN 3, which immunostains would you use?"
+    focus: [differential, ancillary]
+    level: 3
 images:
   - id: metaplasia-micro-1
     role: micro
@@ -132,13 +157,22 @@ sources:
     chapter: "16"
     pages: "618"
   - source: rubin-8e
+    chapter: "18"
+    pages: "753"
+  - source: rubin-8e
     chapter: "19"
-    pages: "771-772, 779, 781"
+    pages: "771-772, 778-781"
   - source: rubin-8e
     chapter: "23"
-    pages: "983"
+    pages: "983, 989"
   - source: rubin-8e
     chapter: "24"
-    pages: "1028-1029"
-lastUpdated: 2026-11-03
+    pages: "1028-1029, 1032-1033"
+  - source: rubin-8e
+    chapter: "25"
+    pages: "1076, 1078-1079"
+  - source: shaheen-2016
+  - source: naini-2016
+  - source: regauer-2007
+lastUpdated: 2026-11-08
 status: published

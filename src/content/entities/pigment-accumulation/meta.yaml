@@ -117,6 +117,31 @@ chain:
     lab:
       it: "Macrofagi alveolari positivi alla colorazione di Perls nel tessuto polmonare"
       en: "Perls-positive alveolar macrophages in lung tissue"
+examQuestions:
+  - it: "Mi parli dei pigmenti: come li classifica e quali sono i principali pigmenti endogeni ed esogeni?"
+    en: "Tell me about pigments: how do you classify them, and which are the main endogenous and exogenous ones?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Mi parli della lipofuscina: dove si accumula, che aspetto ha al microscopio e perché aumenta con l'età?"
+    en: "Tell me about lipofuscin: where does it build up, what does it look like under the microscope, and why does it increase with age?"
+    focus: [etiology, pathogenesis, micro]
+    level: 1
+  - it: "Mi spieghi il metabolismo della bilirubina: quali meccanismi causano l'ittero e perché il neonato rischia il kernittero?"
+    en: "Walk me through bilirubin metabolism: which mechanisms cause jaundice, and why is the newborn at risk of kernicterus?"
+    focus: [etiology, pathogenesis, prognosis]
+    level: 2
+  - it: "Perché nella congestione polmonare cronica compaiono le «cellule da vizio cardiaco», e che aspetto assume il polmone?"
+    en: "Why do heart failure cells appear in chronic pulmonary congestion, and what does the lung look like?"
+    focus: [etiology, micro, gross]
+    level: 2
+  - it: "Come distingue l'emosiderosi dall'emocromatosi ereditaria, al microscopio e con gli esami di laboratorio?"
+    en: "How do you tell hemosiderosis from hereditary hemochromatosis, under the microscope and with laboratory tests?"
+    focus: [micro, diagnosis, traps]
+    level: 3
+  - it: "Davanti a un pigmento bruno in una sezione istologica, quali colorazioni userebbe e come arriva a riconoscerlo?"
+    en: "Faced with a brown pigment in a tissue section, which stains would you use, and how do you work out what it is?"
+    focus: [ancillary, differential, diagnosis]
+    level: 3
 images:
   - id: pigment-accumulation-gross-1
     role: gross
@@ -135,22 +160,28 @@ sources:
     pages: "268"
   - source: rubin-8e
     chapter: "7"
-    pages: "326"
+    pages: "326-328"
   - source: rubin-8e
     chapter: "8"
     pages: "381"
+  - source: rubin-8e
+    chapter: "9"
+    pages: "467"
   - source: rubin-8e
     chapter: "17"
     pages: "641"
   - source: rubin-8e
     chapter: "18"
-    pages: "732"
+    pages: "732-734"
   - source: rubin-8e
     chapter: "20"
     pages: "842-847, 872-876"
   - source: rubin-8e
     chapter: "26"
-    pages: "1123"
+    pages: "1107, 1117-1118, 1123"
+  - source: rubin-8e
+    chapter: "32"
+    pages: "1442, 1499"
   - source: walker-1988 # second source of pigment-accumulation-c072
-lastUpdated: 2026-11-03
+lastUpdated: 2026-11-08
 status: published

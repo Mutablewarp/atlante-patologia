@@ -98,12 +98,12 @@ claims:
     date: 2026-11-03
   - claimId: pigment-accumulation-c013
     section: pathogenesis
-    statement: "Lipofuscin granules combine peroxidized lipid with oxidized cross-linked protein; autophagy and lysosomes cannot degrade them, so they increase over time."
+    statement: "Autophagy and lysosomal enzymes cannot degrade lipofuscin, so it keeps building up; its granules are peroxidized lipid plus protein that oxidation has cross-linked."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pigment-accumulation-c014
     section: pathogenesis
     statement: "Lipofuscin may hinder proteasomal and lysosomal clearance and thereby may let damaged ROS-generating mitochondria persist, sustaining oxidant stress (hedged in source)."
@@ -130,12 +130,12 @@ claims:
     date: 2026-11-03
   - claimId: pigment-accumulation-c017
     section: pathogenesis
-    statement: "Hemosiderin is partially denatured aggregated ferritin, found mainly in spleen, bone marrow and Kupffer cells."
+    statement: "Hemosiderin is partly denatured ferritin that clumps; its normal sites include the spleen and the Kupffer cells of the liver."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "7" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "fixer-agent v22/pigment-accumulation (reworded for rule 1; checked against rubin-8e p. 7)"
+    date: 2026-11-08
   - claimId: pigment-accumulation-c018
     section: pathogenesis
     statement: "In hereditary hemochromatosis reduced hepcidin leaves ferroportin unregulated, raising intestinal absorption and export from stores, so free iron floods parenchymal cells."
@@ -162,20 +162,20 @@ claims:
     date: 2026-11-03
   - claimId: pigment-accumulation-c021
     section: pathogenesis
-    statement: "Bilirubin is the terminal product of heme catabolism; roughly 80% of heme is recycled from aged erythrocytes cleared by phagocytes of liver, marrow and spleen."
+    statement: "Bilirubin ends heme catabolism; mononuclear phagocytes clearing worn-out red cells supply roughly 80% of that heme."
     sourceRef: { source: rubin-8e, chapter: "20", pages: "842" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pigment-accumulation-c022
     section: pathogenesis
     statement: "Unconjugated bilirubin is lipid-soluble and albumin-bound; hepatocytes take it up, glucuronidate it in the ER (making it water-soluble) and secrete it into bile, the rate-limiting step."
     sourceRef: { source: rubin-8e, chapter: "20", pages: "842-843" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pigment-accumulation-c023
     section: pathogenesis
     statement: "Bilirubin not bound to albumin or conjugated readily enters the lipid-rich brain, where it is very toxic."
@@ -222,8 +222,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "1", pages: "7" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pigment-accumulation-c029
     section: gross
     statement: "In hereditary hemochromatosis the liver is enlarged, red-brown, with micronodular cirrhosis; the pancreas is rust colored and fibrotic."
@@ -311,8 +311,8 @@ claims:
     status: verified
     secondSource: { source: rubin-8e, locator: "ch. 20, printed p. 875 (Fig. 20-43, Perls iron stain in hemochromatosis)" }
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pigment-accumulation-c040
     section: ancillary
     statement: "Dubin-Johnson pigment is iron-free and by electron microscopy lies in enlarged lysosomes."
@@ -351,16 +351,16 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "20", pages: "874-876" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pigment-accumulation-c045
     section: clinical
     statement: "In hemosiderosis total stored iron increases in many organs, and the term implies the iron-laden cells are not injured."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "7" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "fixer-agent v22/pigment-accumulation (public organ list cut to two for rule 1; checked against rubin-8e p. 7)"
+    date: 2026-11-08
   - claimId: pigment-accumulation-c046
     section: clinical
     statement: "Hemosiderin-laden alveolar macrophages arise from passive pulmonary congestion in left ventricular failure."
@@ -376,8 +376,8 @@ claims:
     status: verified
     secondSource: { source: rubin-8e, locator: "ch. 20, printed p. 875 (Fig. 20-43, Perls iron stain)" }
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pigment-accumulation-c048
     section: diagnosis
     statement: "In established hereditary hemochromatosis serum iron exceeds twice normal, transferrin saturation is markedly raised (reaching 100%) and serum ferritin is greatly increased."
@@ -396,20 +396,20 @@ claims:
     date: 2026-11-03
   - claimId: pigment-accumulation-c050
     section: diagnosis
-    statement: "Uncomplicated hemolysis raises mainly unconjugated bilirubin; parenchymal liver disease raises both conjugated and unconjugated bilirubin."
+    statement: "With uncomplicated hemolysis the excess bilirubin is mostly unconjugated; hepatocellular disease increases the conjugated and unconjugated fractions together."
     sourceRef: { source: rubin-8e, chapter: "20", pages: "842-844" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pigment-accumulation-c051
     section: prognosis
-    statement: "Heart failure is a frequent cause of death in hereditary hemochromatosis; hepatocellular carcinoma is a complication (also ch. 1 p. 7)."
+    statement: "In hereditary hemochromatosis death often results from heart failure, and hepatocellular carcinoma is a recognized complication (also ch. 1 p. 7)."
     sourceRef: { source: rubin-8e, chapter: "20", pages: "874-876" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pigment-accumulation-c052
     section: prognosis
     statement: "Excess iron storage may increase cancer risk, e.g. lung cancer in metal polishers with pulmonary siderosis."
@@ -424,8 +424,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "20", pages: "842-844" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pigment-accumulation-c054
     section: prognosis
     statement: "Carbon is a nuisance dust; inhaled with silica it can lead to anthracosilicosis."
@@ -440,8 +440,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "1", pages: "5-6" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pigment-accumulation-c056
     section: differential
     statement: "Lipofuscin forms golden-brown cytoplasmic granules in postmitotic or slowly cycling cells such as neurons, myocytes and hepatocytes."
@@ -465,8 +465,8 @@ claims:
     status: verified
     secondSource: { source: rubin-8e, locator: "ch. 26, printed p. 1123 (thalassemia: iron overload from absorption plus transfusions causes morbidity and mortality, chelation)" }
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pigment-accumulation-c059
     section: differential
     statement: "Anthracotic pigment is black carbon in macrophages of lung and lymph nodes."
@@ -489,8 +489,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "1", pages: "6" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pigment-accumulation-c062
     section: differential
     statement: "In alkaptonuria homogentisic acid accumulates in connective tissue causing bluish-black ochronosis and arthritis."
@@ -578,8 +578,8 @@ claims:
     status: beyond-reference
     secondSource: { source: walker-1988, locator: "abstract" }
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pigment-accumulation-c073
     section: traps
     statement: "Transfusional iron rarely causes cirrhosis because it lodges in mononuclear phagocytes, but massive overload (e.g. thalassemia major) damages tissues and needs chelation."
@@ -587,8 +587,8 @@ claims:
     status: verified
     secondSource: { source: rubin-8e, locator: "ch. 26, printed p. 1123 (thalassemia iron overload: morbidity, mortality, chelation)" }
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pigment-accumulation-c074
     section: traps
     statement: "Serum ferritin also rises in acute inflammation."
@@ -621,3 +621,187 @@ claims:
     verifiedBy: agent
     verifier: "verifier-agent"
     date: 2026-11-03
+  - claimId: pigment-accumulation-c078
+    section: pathogenesis
+    statement: "About 70% of normal newborns have a transient unconjugated (physiologic) hyperbilirubinemia, because red-cell destruction rises after birth while hepatic conjugation matures to the adult level only around two weeks of age."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "845" }
+    status: verified
+    verifiedBy: agent
+    verifier: "author-agent v22/pigment-accumulation"
+    date: 2026-11-08
+  - claimId: pigment-accumulation-c079
+    section: pathogenesis
+    statement: "Neurons of some brainstem nuclei contain brown neuromelanin, which arises as a side product of making catecholamine transmitters."
+    sourceRef: { source: rubin-8e, chapter: "32", pages: "1442" }
+    status: verified
+    verifiedBy: agent
+    verifier: "author-agent v22/pigment-accumulation"
+    date: 2026-11-08
+  - claimId: pigment-accumulation-c080
+    section: gross
+    statement: "A healing ecchymosis shifts from its first purple to green and then yellow, tracking the conversion of hemoglobin from degraded red cells into bilirubin."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "328" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: pigment-accumulation-c081
+    section: gross
+    statement: "Chronic passive pulmonary congestion gives hard, brown lungs (brown induration) through interstitial scarring plus hemosiderin-laden alveolar macrophages."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "326-327" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: pigment-accumulation-c082
+    section: gross
+    statement: "Gamna-Gandy bodies are fibrotic foci holding iron and calcium, left by old hemorrhages in a chronically congested spleen."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "327" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: pigment-accumulation-c083
+    section: gross
+    statement: "In Parkinson disease, loss of pigmented neurons depigments the substantia nigra and the locus coeruleus."
+    sourceRef: { source: rubin-8e, chapter: "32", pages: "1499" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: pigment-accumulation-c084
+    section: micro
+    statement: "In persistent extrahepatic biliary obstruction, bile-swollen hepatocytes show feathery degeneration, and rupture of distended ductules forms bile lakes, golden-yellow foci of extravasated bile."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "847" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: pigment-accumulation-c085
+    section: ancillary
+    statement: "The liver is involved in all cases of hereditary hemochromatosis; in late disease its iron content exceeds 0.5 g per 100 g wet weight."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "874" }
+    status: verified
+    verifiedBy: agent
+    verifier: "author-agent v22/pigment-accumulation"
+    date: 2026-11-08
+  - claimId: pigment-accumulation-c086
+    section: ancillary
+    statement: "Marrow iron stores are evaluated on a Prussian blue-stained smear; in normal people both macrophages and nucleated erythroid precursors carry stored iron granules."
+    sourceRef: { source: rubin-8e, chapter: "26", pages: "1107" }
+    status: verified
+    verifiedBy: agent
+    verifier: "author-agent v22/pigment-accumulation"
+    date: 2026-11-08
+  - claimId: pigment-accumulation-c087
+    section: ancillary
+    statement: "Prussian blue on marrow aspirates: iron deficiency shows neither storage nor erythroid iron; in anemia of inflammation macrophage iron is normal or raised but erythroid iron is reduced, as cytokine-driven hepcidin keeps macrophages from passing their iron to erythroid precursors."
+    sourceRef: { source: rubin-8e, chapter: "26", pages: "1117-1118" }
+    status: verified
+    verifiedBy: agent
+    verifier: "author-agent v22/pigment-accumulation"
+    date: 2026-11-08
+  - claimId: pigment-accumulation-c088
+    section: ancillary
+    statement: "Under polarized light silicotic nodules show birefringent, needle-shaped silicate particles; nodules of coal dust mixed with silica are classed as anthracosilicosis."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732-733" }
+    status: verified
+    verifiedBy: agent
+    verifier: "author-agent v22/pigment-accumulation"
+    date: 2026-11-08
+  - claimId: pigment-accumulation-c089
+    section: ancillary
+    statement: "Hereditary hemochromatosis: the surplus iron in cells sits mainly within lysosomes, in the ferric state."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "874" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: pigment-accumulation-c090
+    section: ancillary
+    statement: "Cholestasis under the electron microscope: canalicular microvilli are blunted or lost, and hepatocytes hold bile in large lysosomes."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "847" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: pigment-accumulation-c091
+    section: ancillary
+    statement: "C282Y homozygosity in HFE underlies about 90% of hereditary hemochromatosis, but some C282Y homozygotes never develop iron overload."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "874" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: pigment-accumulation-c092
+    section: ancillary
+    statement: "Dubin-Johnson syndrome is caused by biallelic (homozygous or compound heterozygous) ABCC2/MRP2 mutations; MRP proteins carry conjugated bilirubin across the canalicular membrane."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "844" }
+    status: verified
+    verifiedBy: agent
+    verifier: "author-agent v22/pigment-accumulation"
+    date: 2026-11-08
+  - claimId: pigment-accumulation-c093
+    section: ancillary
+    statement: "Asbestos bodies look golden brown by light microscopy and react strongly with Prussian blue, since macrophages wrap each fiber in a ferritin-containing protein layer."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "734" }
+    status: verified
+    verifiedBy: agent
+    verifier: "author-agent v22/pigment-accumulation"
+    date: 2026-11-08
+  - claimId: pigment-accumulation-c094
+    section: ancillary
+    statement: "Autopsy lung digests reveal asbestos bodies in virtually all adults; incidental bodies are not asbestosis, which also requires diffuse interstitial fibrosis."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "734" }
+    status: verified
+    verifiedBy: agent
+    verifier: "author-agent v22/pigment-accumulation"
+    date: 2026-11-08
+  - claimId: pigment-accumulation-c095
+    section: prognosis
+    statement: "Untreated hereditary hemochromatosis has a 10-year survival of only 6%, while iron depletion by repeated phlebotomy gives homozygotes free of cirrhosis and diabetes a normal life expectancy."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "876" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: pigment-accumulation-c096
+    section: prognosis
+    statement: "Light converts unconjugated bilirubin into water-soluble isomers, the basis of routine phototherapy for neonatal jaundice."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "845" }
+    status: verified
+    verifiedBy: agent
+    verifier: "author-agent v22/pigment-accumulation"
+    date: 2026-11-08
+  - claimId: pigment-accumulation-c097
+    section: differential
+    statement: "Asbestos bodies: asbestos fibers whose iron-protein coat is beaded, golden brown, lying in alveolar spaces or bronchiolar walls and often too large for one macrophage to engulf completely."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "734" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: pigment-accumulation-c098
+    section: differential
+    statement: "In malaria, macrophages of the enlarged liver and spleen store both malarial pigment (made by the parasite from digested hemoglobin) and hemosiderin, darkening these organs."
+    sourceRef: { source: rubin-8e, chapter: "9", pages: "467" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: pigment-accumulation-c099
+    section: high-yield
+    statement: "Brown induration of the lung and Gamna-Gandy bodies of the spleen both arise in chronic passive congestion and combine fibrosis with iron pigment."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "327" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: pigment-accumulation-c100
+    section: traps
+    statement: "Hemochromatosis skin darkening is mostly melanin: heavy skin iron is present in only about half of patients, while in most iron nonspecifically raises melanin output of basal melanocytes."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "876" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09

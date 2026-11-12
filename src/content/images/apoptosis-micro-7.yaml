@@ -14,12 +14,19 @@ author: Mitsuhiro Tachibana, Hideki Hamayasu, Kazuki Tomita, Yuta Kage
 license: CC-BY-4.0
 licenseUrl: https://creativecommons.org/licenses/by/4.0/
 retrievedAt: 2026-11-04
-modifications: >-
-  Cropped to panel (d) of Figure 1 from the publisher's 1415 × 996 px PNG
-  (https://mdpi-res.com/diagnostics/diagnostics-13-03405/article_deploy/html/images/diagnostics-13-03405-g001.png):
-  pixels x 706–1401, y 541–984, giving 696 × 444 px; the crop leaves out the panel letter, a strip of empty slide
-  background at the top and panels (a), (b) and (c). Saved as JPEG; no resize, no colour change. The negative-control
-  inset belongs to the published figure.
+modifications:
+  it: >-
+    Ritaglio del pannello (d) della Figura 1 dal PNG dell'editore di 1415 × 996 px
+    (https://mdpi-res.com/diagnostics/diagnostics-13-03405/article_deploy/html/images/diagnostics-13-03405-g001.png):
+    pixel x 706–1401, y 541–984, per un'immagine di 696 × 444 px; il ritaglio esclude la lettera del pannello, una
+    striscia di vetrino vuoto in alto e i pannelli (a), (b) e (c). Salvata in JPEG; nessun ridimensionamento, nessuna
+    modifica dei colori. Il riquadro del controllo negativo fa parte della figura pubblicata.
+  en: >-
+    Cropped to panel (d) of Figure 1 from the publisher's 1415 × 996 px PNG
+    (https://mdpi-res.com/diagnostics/diagnostics-13-03405/article_deploy/html/images/diagnostics-13-03405-g001.png):
+    pixels x 706–1401, y 541–984, giving 696 × 444 px; the crop leaves out the panel letter, a strip of empty slide
+    background at the top and panels (a), (b) and (c). Saved as JPEG; no resize, no colour change. The
+    negative-control inset belongs to the published figure.
 attributionText: >-
   Mitsuhiro Tachibana, Hideki Hamayasu, Kazuki Tomita, Yuta Kage, "Individual Keratinocyte Necroses in the Epidermis
   Are Apoptotic Keratinocytes in the Skin", Diagnostics 2023;13(22):3405, doi:10.3390/diagnostics13223405, Figure 1d
@@ -46,9 +53,9 @@ caption:
     sottostante è quasi del tutto negativo. Nel controllo negativo il tessuto resta blu, quindi il segnale bruno non è
     un artefatto di fondo. Perché questa colorazione conta: la procaspasi-3 è presente anche nelle cellule vive, ma
     l'anticorpo riconosce solo la forma tagliata che compare quando la cascata delle caspasi si è attivata, per cui una
-    cellula positiva è una cellula ormai avviata all'apoptosi. Da ricordare per l'esame: l'EE fa sospettare l'apoptosi
-    dalla morfologia, l'immunoistochimica per la caspasi-3 clivata (o il TUNEL) la dimostra sul piano biochimico nella
-    sezione. Gli autori dell'articolo l'hanno usata proprio per sostenere che i cosiddetti cheratinociti «necrotici»
+    cellula positiva è, in pratica, una cellula nella fase esecutiva dell'apoptosi. Da ricordare per l'esame: l'EE fa
+    sospettare l'apoptosi dalla morfologia, l'immunoistochimica per la caspasi-3 clivata la conferma sul piano
+    biochimico nella sezione; anche la TUNEL aiuta, ma marca pure le cellule necrotiche. Gli autori dell'articolo l'hanno usata proprio per sostenere che i cosiddetti cheratinociti «necrotici»
     della sindrome di Stevens-Johnson sono in realtà apoptotici.
   en: >-
     The same Stevens–Johnson biopsy stained by immunohistochemistry for cleaved caspase-3, ×200; the inset at lower
@@ -58,9 +65,9 @@ caption:
     keratinocytes of the H&E view, while the dermis below is almost entirely negative. In the negative control the
     tissue stays blue, so the brown signal is not background artefact. Why this stain matters: procaspase-3 is present
     in living cells too, but the antibody recognises only the cut form that appears once the caspase cascade has been
-    switched on, so a positive cell is a cell already committed to apoptosis. Key point for the exam: H&E suggests
-    apoptosis from morphology, while immunohistochemistry for cleaved caspase-3 (or TUNEL) demonstrates it
-    biochemically in the section. The article's authors used it precisely to argue that the so-called "necrotic"
+    switched on, so a positive cell is, in practice, a cell in the execution phase of apoptosis. Key point for the exam:
+    H&E suggests apoptosis from morphology, while immunohistochemistry for cleaved caspase-3 confirms it biochemically
+    in the section; TUNEL helps as well, but it also marks necrotic cells. The article's authors used it precisely to argue that the so-called "necrotic"
     keratinocytes of Stevens–Johnson syndrome are in fact apoptotic.
 alt:
   it: >-

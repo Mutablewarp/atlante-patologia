@@ -29,6 +29,8 @@ learningObjectives:
     en: "Distinguish hydropic swelling (reversible) from fatty change and from coagulative necrosis (irreversible)."
   - it: "Riconoscere esempi d'organo: fegato, edema cerebrale citotossico, epitelio esofageo."
     en: "Recognize organ examples: liver, cytotoxic cerebral edema, esophageal epithelium."
+  - it: "Spiegare come si studia il rigonfiamento idropico: che cosa cercare in ematossilina-eosina, quali colorazioni escludono glicogeno e grassi e che cosa aggiunge la microscopia elettronica."
+    en: "Explain how hydropic swelling is studied: what to look for on H&E, which stains rule out glycogen and fat, and what electron microscopy adds."
 prerequisites: []
 relations:
   - type: differentialOf
@@ -82,9 +84,38 @@ selfExplain:
   - it: "In che modo l'acidosi intracellulare dell'ischemia aggrava prima il carico di sodio e poi quello di calcio?"
     en: "How does intracellular acidosis in ischemia worsen the sodium load and then the calcium load?"
 chain: []
+examQuestions:
+  - it: "Mi parli del rigonfiamento idropico: che cos'è, quali cause lo provocano e perché lo si considera un danno reversibile?"
+    en: "Tell me about hydropic swelling: what is it, what causes it, and why is it considered reversible injury?"
+    focus: [definition, etiology, prognosis]
+    level: 1
+  - it: "Perché una cellula ischemica si rigonfia? Mi descriva i passaggi dalla caduta dell'ATP all'ingresso di acqua e al sovraccarico di calcio."
+    en: "Why does an ischemic cell swell? Take me through the steps from the fall in ATP to water entry and calcium overload."
+    focus: [pathogenesis]
+    level: 2
+  - it: "Che cosa vede al microscopio ottico in un epatocita con rigonfiamento idropico, e che cosa aggiunge la microscopia elettronica?"
+    en: "What do you see under the light microscope in a hepatocyte with hydropic swelling, and what does electron microscopy add?"
+    focus: [micro, ancillary]
+    level: 1
+  - it: "Come distingue il rigonfiamento idropico dalla necrosi coagulativa, dalla steatosi e dall'accumulo di glicogeno, e quali colorazioni userebbe?"
+    en: "How do you tell hydropic swelling from coagulative necrosis, fatty change and glycogen accumulation, and which stains would you use?"
+    focus: [differential, ancillary, traps]
+    level: 3
+  - it: "Che cos'è l'edema cerebrale citotossico, in che cosa differisce dall'edema vasogenico e perché l'edema dell'encefalo può essere mortale?"
+    en: "What is cytotoxic cerebral edema, how does it differ from vasogenic edema, and why can brain edema be fatal?"
+    focus: [clinical, traps, prognosis]
+    level: 3
+  - it: "In quali malattie del fegato e dell'esofago si osserva il rigonfiamento idropico, e che cosa può dire, e che cosa no, una biopsia epatica?"
+    en: "In which liver and esophageal diseases is hydropic swelling seen, and what can a liver biopsy tell you, and what can it not?"
+    focus: [clinical, etiology, ancillary]
+    level: 2
 images:
   - id: hydropic-swelling-micro-1
     role: micro
+  - id: hydropic-swelling-micro-2
+    role: micro
+  - id: hydropic-swelling-gross-1
+    role: gross
   - id: g01-cell-injury-timeline
     role: diagram
 reviewStatus: ai-generated-unreviewed
@@ -95,18 +126,27 @@ sources:
     pages: "3-5, 36, 38-39, 42-43"
   - source: rubin-8e
     chapter: "7"
-    pages: "344"
+    pages: "336, 344"
   - source: rubin-8e
     chapter: "14"
     pages: "562-563, 579"
+  - source: rubin-8e
+    chapter: "17"
+    pages: "657"
+  - source: rubin-8e
+    chapter: "18"
+    pages: "721"
   - source: rubin-8e
     chapter: "19"
     pages: "770"
   - source: rubin-8e
     chapter: "20"
-    pages: "864, 868"
+    pages: "847, 864, 868, 878, 880-881"
   - source: rubin-8e
     chapter: "31"
     pages: "1411"
-lastUpdated: 2026-11-03
+  - source: rubin-8e
+    chapter: "32"
+    pages: "1447"
+lastUpdated: 2026-11-09
 status: published

@@ -30,8 +30,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "1", pages: "7" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: intracellular-accumulations-c005
     section: definition
     statement: "Glycogen storage diseases have a combined incidence of about 1 in 20,000 to 25,000 births."
@@ -74,12 +74,12 @@ claims:
     date: 2026-11-03
   - claimId: intracellular-accumulations-c010
     section: pathogenesis
-    statement: "Hepatocytes take up fatty acids from adipose tissue, convert them to triglycerides and secrete most of them as lipoproteins."
+    statement: "Most triglyceride made in the liver, which hepatocytes build from the free fatty acids that adipocytes release, leaves as lipoproteins."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: intracellular-accumulations-c011
     section: pathogenesis
     statement: "Increased free fatty acid delivery to the liver leads to triglyceride accumulation in hepatocytes."
@@ -114,20 +114,20 @@ claims:
     date: 2026-11-03
   - claimId: intracellular-accumulations-c015
     section: pathogenesis
-    statement: "Distended lysosomes interfere with other cellular functions and can lead to cell death; brain and heart are most affected."
+    statement: "Brain and heart cells are the most likely to fail or die when swollen lysosomes crowd out their other work."
     sourceRef: { source: rubin-8e, chapter: "6", pages: "274" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: intracellular-accumulations-c016
     section: pathogenesis
-    statement: "Lysosomal storage diseases are grouped by the class of substrate retained (sphingolipidoses, gangliosidoses, mucopolysaccharidoses and others)."
+    statement: "Each lysosomal storage disease group is named for the substrate class it retains, e.g. gangliosidoses, mucopolysaccharidoses."
     sourceRef: { source: rubin-8e, chapter: "6", pages: "274" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: intracellular-accumulations-c017
     section: pathogenesis
     statement: "Cerebrosides accumulate in Gaucher disease, gangliosides in Tay-Sachs disease and mucopolysaccharide products in Hurler and Hunter syndromes."
@@ -202,12 +202,12 @@ claims:
     date: 2026-11-03
   - claimId: intracellular-accumulations-c026
     section: pathogenesis
-    statement: "Lipofuscin consists of peroxidized unsaturated lipids and oxidized cross-linked proteins that autophagy cannot remove."
+    statement: "Lipofuscin accumulates when autophagy fails to dispose of lipid-peroxidation products and oxidatively cross-linked proteins."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: intracellular-accumulations-c027
     section: pathogenesis
     statement: "Alveolar macrophages phagocytose inhaled carbon and carry it to hilar lymph nodes, where it remains indefinitely."
@@ -266,28 +266,28 @@ claims:
     date: 2026-11-03
   - claimId: intracellular-accumulations-c034
     section: micro
-    statement: "In poorly controlled diabetes hepatocytes and proximal tubule cells are swollen by glycogen."
+    statement: "Poorly controlled diabetes can distend liver cells and renal proximal tubular epithelium with glycogen."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: intracellular-accumulations-c035
     section: micro
-    statement: "Gaucher cells are large macrophages with eccentric nuclei and clear fibrillar cytoplasm resembling wrinkled paper."
+    statement: "Gaucher cells: large macrophages whose fibrillar cytoplasm looks like creased paper, nucleus off-centre."
     sourceRef: { source: rubin-8e, chapter: "6", pages: "280" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: intracellular-accumulations-c036
     section: micro
-    statement: "Niemann-Pick foam cells are macrophages containing many small, uniform vacuoles of sphingomyelin and cholesterol."
+    statement: "Sphingomyelin and cholesterol fill the many small, equal-sized vacuoles that make Niemann-Pick macrophages look foamy."
     sourceRef: { source: rubin-8e, chapter: "6", pages: "279" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: intracellular-accumulations-c037
     section: micro
     statement: "In alpha-1-antitrypsin deficiency hepatocytes contain faintly eosinophilic PAS-positive cytoplasmic droplets within dilated ER cisternae."
@@ -306,12 +306,12 @@ claims:
     date: 2026-11-03
   - claimId: intracellular-accumulations-c039
     section: micro
-    statement: "Lewy bodies (alpha-synuclein) occur in substantia nigra neurons in Parkinson disease; neurofibrillary tangles (tau) occur in cortical neurons in Alzheimer disease."
+    statement: "Parkinson disease: alpha-synuclein Lewy bodies in substantia nigra neurons; Alzheimer disease: tau neurofibrillary tangles in cortical neurons."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "36-37" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: intracellular-accumulations-c040
     section: micro
     statement: "Lipofuscin is a golden-brown pigment accumulating mainly in postmitotic or rarely dividing cells such as neurons, cardiac myocytes and hepatocytes."
@@ -358,8 +358,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "7", pages: "336" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: intracellular-accumulations-c046
     section: clinical
     statement: "Stored materials range from innocuous to injurious, and storage diseases range from asymptomatic to fatal."
@@ -410,12 +410,12 @@ claims:
     date: 2026-11-03
   - claimId: intracellular-accumulations-c052
     section: clinical
-    statement: "Hereditary hemochromatosis damages mainly heart, liver, testes and pancreas."
+    statement: "Hereditary hemochromatosis damages mainly liver, pancreas, heart and testes."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "7" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: intracellular-accumulations-c053
     section: clinical
     statement: "Familial hypercholesterolemia causes xanthomas; cholesterol storage is linked to atherosclerosis."
@@ -430,8 +430,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "1", pages: "6, 36" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: intracellular-accumulations-c055
     section: diagnosis
     statement: "Von Gierke disease is due to glucose-6-phosphatase deficiency; Pompe disease to lysosomal acid alpha-glucosidase deficiency."
@@ -446,16 +446,16 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "6", pages: "274" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: intracellular-accumulations-c057
     section: prognosis
     statement: "Simple triglyceride storage is reversible, and the lipid droplets per se have not been shown to impair cell function."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: intracellular-accumulations-c058
     section: prognosis
     statement: "Iron in hemosiderosis by definition does not injure cells; in hereditary hemochromatosis oxidative stress causes organ damage and increases liver cancer risk."
@@ -490,12 +490,12 @@ claims:
     date: 2026-11-03
   - claimId: intracellular-accumulations-c062
     section: prognosis
-    statement: "Cholesterol-laden intimal macrophages form the initial lesion of atherosclerosis (fatty streak); advanced plaques contain extracellular cholesterol."
+    statement: "Intimal macrophages loaded with cholesterol make up the fatty streak, where atherosclerosis starts; later plaques also have cholesterol outside cells."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: intracellular-accumulations-c063
     section: prognosis
     statement: "Misfolded proteins may form insoluble aggregates deposited extracellularly, evolving to amyloid fibrils."
@@ -522,20 +522,20 @@ claims:
     date: 2026-11-03
   - claimId: intracellular-accumulations-c066
     section: differential
-    statement: "In hepatic glycogenoses glycogen accumulates in the liver and hypoglycemia results."
+    statement: "Liver glycogenoses such as von Gierke disease fill hepatocytes with glycogen and cause low blood sugar."
     sourceRef: { source: rubin-8e, chapter: "6", pages: "274" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: intracellular-accumulations-c067
     section: differential
     statement: "Lysosomal storage diseases such as Gaucher and Niemann-Pick disease show macrophages distended by stored lipid, with organomegaly."
     sourceRef: { source: rubin-8e, chapter: "6", pages: "279-280" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: intracellular-accumulations-c068
     section: differential
     statement: "Alpha-1-antitrypsin deficiency shows PAS-positive hepatocyte globules and affects liver and lung."
@@ -618,12 +618,12 @@ claims:
     date: 2026-11-03
   - claimId: intracellular-accumulations-c078
     section: traps
-    statement: "Hyaline material differs by site: plasma proteins in lung hyaline membranes, basement-membrane material in arteriolar hyaline, cytoskeletal filaments in alcoholic hyaline."
-    sourceRef: { source: rubin-8e, chapter: "1", pages: "30" }
+    statement: "The same glassy look covers unrelated materials: immunoglobulin in Russell bodies, cytokeratin filaments in Mallory-Denk bodies, and plasma proteins with basement-membrane material in arteriolar hyaline."
+    sourceRef: { source: rubin-8e, chapter: "1, 16, 20, 26", pages: "30, 615, 868, 1161" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: intracellular-accumulations-c079
     section: traps
     statement: "Pompe disease is a glycogen storage disease that is also a lysosomal storage disease."
@@ -642,12 +642,12 @@ claims:
     date: 2026-11-03
   - claimId: intracellular-accumulations-c081
     section: traps
-    statement: "In poorly controlled diabetes, hyperglycemia increases glycogen stores in hepatocytes and renal proximal tubule cells."
+    statement: "Liver cells and renal proximal tubular epithelium can fill with extra glycogen from high blood glucose alone, as in poorly controlled diabetes."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "5" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: intracellular-accumulations-c082
     section: traps
     statement: "Misfolded CFTR chloride channels are degraded and fail to reach the membrane, a loss-of-function mechanism."
@@ -672,3 +672,131 @@ claims:
     verifiedBy: agent
     verifier: "verifier-agent"
     date: 2026-11-03
+  - claimId: intracellular-accumulations-c085
+    section: micro
+    statement: "Russell bodies: eosinophilic globules of stored immunoglobulin in plasma cells, whether the plasma cells are reactive or neoplastic."
+    sourceRef: { source: rubin-8e, chapter: "26", pages: "1161" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: intracellular-accumulations-c086
+    section: ancillary
+    statement: "Muscle storage of glycogen or lipid is assessed on a biopsy from a moderately involved muscle, typically quadriceps or biceps."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1411" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: intracellular-accumulations-c087
+    section: ancillary
+    statement: "Part of a muscle biopsy goes into glutaraldehyde in case electron microscopy is needed, and part is frozen unfixed for histochemistry."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1411" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: intracellular-accumulations-c088
+    section: ancillary
+    statement: "Gaucher cells and Niemann-Pick foam cells are most numerous in spleen and bone marrow, among other sites."
+    sourceRef: { source: rubin-8e, chapter: "6", pages: "279-280" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: intracellular-accumulations-c089
+    section: ancillary
+    statement: "On routine sections lipofuscin looks golden-brown, hemosiderin yellow-brown, melanin brown-black and carbon black."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "5-7" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: intracellular-accumulations-c090
+    section: ancillary
+    statement: "Empty vacuoles on H&E are all that remains of stored fat, which paraffin processing largely dissolves."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "721" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: intracellular-accumulations-c091
+    section: ancillary
+    statement: "Oil red O is especially helpful in lipid myopathies; in carnitine deficiency it stains red the neutral fat filling muscle fibers."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1411, 1425" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: intracellular-accumulations-c092
+    section: ancillary
+    statement: "PAS colors glycogen red, whereas on H&E glycogen only makes the cytoplasm pale; example: hepatocytes in glycogenosis type I."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "879" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: intracellular-accumulations-c093
+    section: ancillary
+    statement: "In acid maltase deficiency the glycogen stored in muscle fibers lies in PAS-positive vacuoles."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1423" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: intracellular-accumulations-c094
+    section: ancillary
+    statement: "On iron stain, hereditary hemochromatosis loads hepatocytes, whereas transfusional siderosis deposits iron first in Kupffer cells."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "874-876" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: intracellular-accumulations-c095
+    section: ancillary
+    statement: "An immunoperoxidase stain for HBsAg colors brown the ground-glass hepatocytes of chronic hepatitis B, whose pale cytoplasm reflects HBsAg-rich smooth ER."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865-866" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: intracellular-accumulations-c096
+    section: ancillary
+    statement: "By electron microscopy, glycogen is membrane-bound (lysosomal) in acid maltase deficiency, sometimes detectable only this way in mild late-onset forms, but lies free under the sarcolemma in McArdle disease."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1423-1424" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: intracellular-accumulations-c097
+    section: ancillary
+    statement: "Ultrastructurally, Tay-Sachs neurons have lysosomes with concentric membranous whorls, and Gaucher cells hold their lipid as tubular stacks within enlarged lysosomes."
+    sourceRef: { source: rubin-8e, chapter: "6", pages: "278-280" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: intracellular-accumulations-c098
+    section: ancillary
+    statement: "Leukocyte assay showing low beta-glucocerebrosidase activity establishes Gaucher disease; two pathogenic GBA variants confirm it."
+    sourceRef: { source: rubin-8e, chapter: "6", pages: "280" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: intracellular-accumulations-c099
+    section: ancillary
+    statement: "A histochemical reaction showing absent myophosphorylase points to McArdle disease; genetic testing or a biochemical enzyme assay must confirm it."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1424" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: intracellular-accumulations-c100
+    section: ancillary
+    statement: "Besides alcoholic liver disease, Mallory-Denk bodies are found in other conditions such as NASH and Wilson disease."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "868" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09

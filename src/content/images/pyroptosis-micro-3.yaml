@@ -1,0 +1,111 @@
+# License check (2026-11-09): taken from the article itself, not from Wikimedia Commons. The article XML in PubMed
+# Central (PMC5752838) and the PMC copyright record give CC BY 4.0 ("Copyright © 2017 The Author(s)"); the licence
+# notice adds that third-party material is covered unless a credit line says otherwise, and the Fig. 1 legend has no
+# credit line. The micrographs are the authors' own scanning electron micrographs of a mouse cell line (RAW264.7), no
+# patient material. Provenance note: several of these cells look like the SEM fields in Fig. 1G of the same group's
+# earlier paper (Chen et al., Cell Res 2016, doi:10.1038/cr.2016.100, CC BY-NC-ND); the 2018 review, same group and
+# same journal, republishes them under CC BY 4.0 with no credit line, which COMPLIANCE_PLAN §4 accepts (logged in the
+# review queue for the owner). The publisher's web rendition is only 700 px wide, so the file was cut from the Fig. 1
+# image embedded in the article PDF (1949 × 2109 px) of the PMC open-access copy. Caption facts: stimuli and cell
+# line from the Fig. 1 legend; pyroptotic bodies (1-5 µm, similar in size to apoptotic bodies), cell flattening, little
+# swelling and the non-selective GSDMD pore versus the MLKL channel from the article text (sections on necroptotic and
+# pyroptotic membrane changes); necrosis/necroptosis swelling and apoptotic blebbing on rubin-8e ch. 1 p. 54; pyroptotic
+# cells "swell and burst", water entering through pores, on rubin-8e ch. 1 p. 56. Annotation boxes placed by
+# inspection on the panel grid.
+id: pyroptosis-micro-3
+file: pyroptosis-micro-3.jpg
+kind: micro
+sourceUrl: https://www.nature.com/articles/cr2017133/figures/1
+author: Yingying Zhang, Xin Chen, Cyril Gueydan, Jiahuai Han
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-11-09
+modifications:
+  it: >-
+    Ritaglio sul pannello A della Fig. 1 (le 15 micrografie con le cornici colorate e le etichette delle righe; esclusi
+    la lettera del pannello e lo schema del pannello B), preso dall'immagine della figura incorporata nel PDF
+    dell'articolo in PubMed Central (PMC5752838, 1949 × 2109 px), perché la versione web dell'editore è larga solo 700
+    px; riduzione a 1600 × 777 px e ricodifica in JPEG (metadati rimossi). Cornici ed etichette Apoptosis, Necroptosis e
+    Pyroptosis fanno parte della figura pubblicata.
+  en: >-
+    Cropped to panel A of Fig. 1 (the 15 micrographs with their coloured frames and row labels; the panel letter and the
+    panel B schematic were left out), taken from the figure image embedded in the article PDF in PubMed Central
+    (PMC5752838, 1949 × 2109 px) because the publisher's web rendition is only 700 px wide; downscaled to 1600 × 777 px
+    and re-encoded as JPEG (metadata stripped). The frames and the Apoptosis, Necroptosis and Pyroptosis labels belong
+    to the published figure.
+attributionText: >-
+  Yingying Zhang, Xin Chen, Cyril Gueydan, Jiahuai Han, "Plasma membrane changes during programmed cell deaths", Cell
+  Res 2018;28:9–21, doi:10.1038/cr.2017.133, Fig. 1 (panel A, cropped), CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-09 }
+stain: scanning electron microscopy (SEM)
+magnification: high power (single cells; the source gives no scale bar)
+lookFor:
+  it: "Leggi riga per riga e confronta la superficie: grappoli di bolle (apoptosi), un pallone gonfio (necroptosi), una cellula piatta con poche bolle tonde (piroptosi)."
+  en: "Read row by row and compare the surface: clusters of beads (apoptosis), a swollen balloon (necroptosis), a flat cell with a few round bubbles (pyroptosis)."
+caption:
+  it: >-
+    Tre morti programmate viste dall'esterno: micrografie al microscopio elettronico a scansione (SEM) di cellule
+    macrofagiche di topo in coltura (linea RAW264.7), cinque cellule per riga, una riga per ciascun tipo di morte. Il
+    SEM mostra solo la superficie della cellula, in rilievo: qui si giudica la forma della cellula e della sua membrana,
+    non l'interno. Apoptosi (riga in alto, TNF più uno Smac-mimetico): la cellula si scompone in un grappolo di bolle
+    rotonde delimitate da membrana, da cui derivano i corpi apoptotici, e sottili filamenti la tengono spesso ancorata
+    al supporto; la membrana non si rompe. Necroptosi (riga centrale, stesso stimolo più zVAD, un inibitore delle
+    caspasi): la cellula si arrotonda e si gonfia come un pallone, e in alcuni punti la superficie appare ruvida e
+    lacerata, dove la membrana cede. Piroptosi (riga in basso: LPS come segnale di innesco, o priming, poi nigericina,
+    che attiva l'inflammasoma NLRP3): i macrofagi restano distesi e piatti sul supporto ed emettono poche bolle lisce e
+    rotonde, che gli autori chiamano corpi piroptotici, grandi più o meno come i corpi apoptotici (1–5 µm); nelle ultime
+    due cellule il citoplasma appiattito appare eroso e bucherellato. In questo studio le cellule piroptotiche si sono
+    rigonfiate poco, a differenza di quelle necroptotiche: gli autori lo attribuiscono al poro di gasdermina D, che, a
+    differenza del canale MLKL della necroptosi, lascia passare gli ioni senza selezionarli. Il nostro testo di
+    riferimento descrive invece la cellula piroptotica come una cellula che si gonfia e poi scoppia; le due descrizioni
+    concordano sul punto decisivo, la rottura della membrana plasmatica, con fuoriuscita del contenuto cellulare e
+    infiammazione, cioè l'opposto dell'apoptosi. Sono cellule in coltura: nelle sezioni di tessuto questi dettagli di
+    superficie non si vedono.
+  en: >-
+    Three programmed deaths seen from outside: scanning electron micrographs (SEM) of cultured mouse macrophage-like
+    cells (RAW264.7 line), five cells per row, one row for each way of dying. SEM shows only the cell surface, in
+    relief, so here you judge the shape of the cell and of its membrane, not its inside. Apoptosis (top row, TNF plus a
+    Smac mimetic): the cell breaks up into a cluster of round, membrane-bound blebs, which give rise to apoptotic
+    bodies, and thin strands often still tie it to the support; the membrane does not break. Necroptosis (middle row,
+    the same stimulus plus zVAD, a caspase inhibitor): the cell rounds up and swells like a balloon, and in places its
+    surface looks rough and torn, where the membrane gives way. Pyroptosis (bottom row: LPS priming, then nigericin,
+    which activates the NLRP3 inflammasome): the macrophages stay spread flat on the support and put out a few smooth,
+    round bubbles, which the authors call pyroptotic bodies, roughly the size of apoptotic bodies (1–5 µm); in the last
+    two cells the flattened cytoplasm looks eroded and full of small holes. In this study the pyroptotic cells swelled
+    little, unlike the necroptotic ones: the authors put this down to the gasdermin D pore, which, unlike the MLKL
+    channel of necroptosis, lets ions through without selecting them. Our main textbook, by contrast, describes the
+    pyroptotic cell as swelling and then bursting; both accounts agree on the decisive point, the rupture of the plasma
+    membrane, with release of the cell contents and inflammation, the opposite of apoptosis. These are cultured cells:
+    in tissue sections such surface details cannot be seen.
+alt:
+  it: >-
+    Figura di microscopia elettronica a scansione, in grigio su fondo scuro, con tre righe di cinque cellule singole
+    incorniciate in verde (Apoptosis), rosso (Necroptosis) e viola (Pyroptosis). Riga in alto: cellule coperte da
+    grappoli di piccole sfere rotonde, con sottili filamenti. Riga centrale: grandi cellule arrotondate e gonfie, con
+    zone ruvide e spugnose. Riga in basso: cellule piatte distese sulla superficie con poche bolle lisce e rotonde; le
+    ultime due sono lamine piatte con un centro rilevato e molti piccoli fori.
+  en: >-
+    Scanning electron microscopy figure, grey on a dark background, with three rows of five single cells framed in green
+    (Apoptosis), red (Necroptosis) and purple (Pyroptosis). Top row: cells covered by clusters of small round beads,
+    with thin threads. Middle row: large, rounded, swollen cells with rough, frothy patches. Bottom row: flat cells
+    spread on the surface with a few smooth round bubbles; the last two are flat sheets with a raised centre and many
+    small holes.
+annotations:
+  - id: apoptotic-blebs
+    label: { it: "Apoptosi: la cellula si scompone in bolle rotonde", en: "Apoptosis: the cell breaks up into round blebs" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.046, 0.016, 0.231, 0.016, 0.231, 0.322, 0.046, 0.322] }
+  - id: necroptotic-balloon
+    label: { it: "Necroptosi: cellula arrotondata e gonfia", en: "Necroptosis: rounded, swollen cell" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.235, 0.345, 0.420, 0.345, 0.420, 0.654, 0.235, 0.654] }
+  - id: pyroptotic-bodies
+    label: { it: "Piroptosi: bolle tonde (corpi piroptotici) su una cellula piatta", en: "Pyroptosis: round bubbles (pyroptotic bodies) on a flat cell" }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.046, 0.679, 0.231, 0.679, 0.231, 0.986, 0.046, 0.986] }
+  - id: perforated-cell
+    label: { it: "Piroptosi: cellula appiattita, con superficie erosa e bucherellata", en: "Pyroptosis: flattened cell with an eroded, perforated surface" }
+    revealOrder: 4
+    shape: { type: polygon, coords: [0.615, 0.679, 0.800, 0.679, 0.800, 0.986, 0.615, 0.986] }

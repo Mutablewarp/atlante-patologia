@@ -98,14 +98,46 @@ chain:
     lab:
       it: "Aumento della troponina cardiaca (necrosi miocardica)"
       en: "Raised cardiac troponin (myocardial necrosis)"
+examQuestions:
+  - it: "Mi parli del danno da ischemia-riperfusione: che cos'è e in quali situazioni cliniche si verifica?"
+    en: "Tell me about ischemia–reperfusion injury: what is it, and in which clinical settings does it occur?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Che cosa vede, a occhio nudo e al microscopio, in un infarto miocardico riperfuso, e con quali tecniche lo studierebbe?"
+    en: "What do you see, with the naked eye and under the microscope, in a reperfused myocardial infarct, and which techniques would you use to study it?"
+    focus: [gross, micro, ancillary]
+    level: 1
+  - it: "Perché il ritorno dell'ossigeno può uccidere cellule che erano ancora vive? Mi descriva i meccanismi, partendo dalle fonti di specie reattive dell'ossigeno."
+    en: "Why can the return of oxygen kill cells that were still alive? Describe the mechanisms, starting from the sources of reactive oxygen species."
+    focus: [pathogenesis, high-yield]
+    level: 2
+  - it: "Che ruolo ha il calcio nel danno da riperfusione? Mi spieghi il legame con il poro di transizione di permeabilità mitocondriale e con le bande di contrazione."
+    en: "What role does calcium play in reperfusion injury? Explain how it links to the mitochondrial permeability transition pore and to contraction bands."
+    focus: [pathogenesis, micro, ancillary]
+    level: 2
+  - it: "Come distingue un infarto miocardico riperfuso da uno dovuto a un'occlusione persistente? E le bande di contrazione bastano a dimostrare che c'è stata riperfusione?"
+    en: "How do you tell a reperfused myocardial infarct from one caused by persistent occlusion? And are contraction bands enough to prove that reperfusion took place?"
+    focus: [gross, differential, traps]
+    level: 3
+  - it: "Un paziente con infarto acuto viene trattato con trombolisi o con angioplastica coronarica: da che cosa dipende l'effetto della riperfusione sul suo miocardio? Che cosa sono il miocardio stordito e il precondizionamento ischemico?"
+    en: "A patient with acute infarction is treated with thrombolysis or coronary intervention: what decides the effect of reperfusion on the myocardium? What are stunned myocardium and ischemic preconditioning?"
+    focus: [prognosis, clinical]
+    level: 3
 images:
   - id: ischemia-reperfusion-injury-gross-1
     role: gross
     pairWith: ischemia-reperfusion-injury-micro-1
   - id: ischemia-reperfusion-injury-micro-1
     role: micro
+  # micro-3 leads group contraction-band-necrosis-nephron; its 400x member micro-4 is found by the viewer (CONTENT_SCHEMA §5)
+  - id: ischemia-reperfusion-injury-micro-3
+    role: micro
+  - id: ischemia-reperfusion-injury-micro-5
+    role: micro
   - id: ischemia-reperfusion-injury-micro-2
     role: micro
+  - id: ischemia-reperfusion-injury-diagram-1
+    role: diagram
 reviewStatus: ai-generated-unreviewed
 editionDependent: false
 sources:
@@ -117,6 +149,7 @@ sources:
     pages: "337"
   - source: rubin-8e
     chapter: "17"
-    pages: "659-660"
-lastUpdated: 2026-11-03
+    pages: "657, 659-660"
+  - source: shen-1972
+lastUpdated: 2026-11-09
 status: published

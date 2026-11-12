@@ -30,8 +30,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "4", pages: "147" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fibrinoid-necrosis-c005
     section: etiology
     statement: "Immune complex diseases with vasculitis include serum sickness, the Arthus reaction, SLE, hepatitis C cryoglobulinemic vasculitis and IgA-associated Henoch-Schonlein purpura."
@@ -126,16 +126,16 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "4", pages: "147" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fibrinoid-necrosis-c017
     section: pathogenesis
-    statement: "In the Arthus reaction lesions appear over 2-10 hours: the damaged vessel wall is rich in neutrophils, edema and hemorrhage extend into the surrounding tissue, and fibrin creates the fibrinoid appearance."
+    statement: "In the experimental Arthus reaction, antigen injected into the skin of a previously immunized subject meets circulating antibody in small dermal vessel walls; within 2 to 10 hours fibrin collects there, producing the fibrinoid appearance, and neutrophils crowd the injured walls."
     sourceRef: { source: rubin-8e, chapter: "4", pages: "147" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fibrinoid-necrosis-c018
     section: pathogenesis
     statement: "Activated neutrophils express myeloperoxidase and proteinase 3 on their surface; ANCA binding activates them and degranulation injures endothelium."
@@ -158,8 +158,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fibrinoid-necrosis-c021
     section: gross
     statement: "Polyarteritis nodosa lesions are patchy segments of fibrinoid necrosis less than 1 mm long."
@@ -174,16 +174,16 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "22", pages: "951" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fibrinoid-necrosis-c023
     section: micro
-    statement: "The fibrinoid deposit is homogeneous and strongly eosinophilic; in polyarteritis nodosa the media and adjacent tissue merge into a featureless mass."
-    sourceRef: { source: rubin-8e, chapter: "16", pages: "619" }
+    statement: "The fibrinoid deposit is an intensely eosinophilic band without visible structure that hides the layers of the wall; in a necrotic arterial segment the media can no longer be told apart from the tissue around it."
+    sourceRef: { source: rubin-8e, chapter: "1, 16", pages: "40-41, 619" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fibrinoid-necrosis-c024
     section: micro
     statement: "The necrotizing arterial lesion is surrounded by acute and mixed inflammation (neutrophils, lymphocytes, plasma cells, macrophages, sometimes eosinophils), typically involving the adventitia."
@@ -254,8 +254,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "22", pages: "953" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fibrinoid-necrosis-c033
     section: ancillary
     statement: "C4d deposition along peritubular capillaries indicates antibody-mediated rejection."
@@ -341,10 +341,10 @@ claims:
     statement: "Malignant hypertension is a severe pressure rise (systolic at least 180 and diastolic at least 120 mm Hg) with organ injury such as retinal hemorrhage or papilledema."
     sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
     status: sources-differ
-    secondSource: { source: rubin-8e, locator: "ch. 22, printed pp. 950-951 (gives a diastolic pressure above 130 mm Hg as the usual criterion)" }
+    secondSource: { source: rubin-8e, locator: "ch. 22, printed pp. 950-951 (lists a diastolic pressure above 130 mm Hg among the usual criteria and says no single pressure defines malignant hypertension)" }
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fibrinoid-necrosis-c044
     section: diagnosis
     statement: "Thrombotic microangiopathies cause Coombs-negative hemolytic anemia with schistocytes and thrombocytopenia."
@@ -371,20 +371,20 @@ claims:
     date: 2026-11-03
   - claimId: fibrinoid-necrosis-c047
     section: prognosis
-    statement: "Polyarteritis nodosa may leave small aneurysms (under 0.5 cm) in renal, coronary and cerebral arteries whose rupture can be fatal."
+    statement: "Rupture of the small aneurysms (under 0.5 cm) that polyarteritis nodosa can leave in organ arteries, for example renal or coronary branches, may cause fatal bleeding."
     sourceRef: { source: rubin-8e, chapter: "16", pages: "619" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fibrinoid-necrosis-c048
     section: prognosis
-    statement: "As polyarteritis lesions heal the debris is cleared, the media scars and the elastic laminae remain interrupted."
+    statement: "Healed polyarteritis lesions keep broken elastic laminae, and scar tissue takes the place of the media once the necrotic debris has been removed."
     sourceRef: { source: rubin-8e, chapter: "16", pages: "619" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fibrinoid-necrosis-c049
     section: prognosis
     statement: "The vascular changes of malignant hypertension constitute malignant arteriosclerosis or arteriolosclerosis, called malignant nephrosclerosis in the kidney."
@@ -399,16 +399,16 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "22", pages: "951" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fibrinoid-necrosis-c051
     section: prognosis
     statement: "Corticosteroids with cyclophosphamide bring most patients with polyarteritis nodosa to remission or cure; untreated disease is usually fatal."
     sourceRef: { source: rubin-8e, chapter: "16", pages: "620" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fibrinoid-necrosis-c052
     section: prognosis
     statement: "When necrotizing transplant arteritis develops, fewer than 30% of grafts survive one year."
@@ -435,12 +435,12 @@ claims:
     date: 2026-11-03
   - claimId: fibrinoid-necrosis-c055
     section: differential
-    statement: "In benign hypertension hyaline arteriolosclerosis turns the arteriolar wall into a thick concentric hyaline ring with few, peripherally displaced smooth muscle cells."
+    statement: "In benign hypertension, hyaline arteriolosclerosis reduces the arteriolar smooth muscle cells or pushes them outward while glassy hyaline material accumulates in the wall as a thick concentric ring."
     sourceRef: { source: rubin-8e, chapter: "22", pages: "950" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fibrinoid-necrosis-c056
     section: differential
     statement: "Amyloid is a deposit of misfolded protein fibrils that can involve arterial walls and shows red-green birefringence with Congo red under polarized light."
@@ -575,13 +575,101 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fibrinoid-necrosis-c073
     section: diagnosis
-    statement: "Some sources define malignant hypertension by a diastolic pressure above 130 mm Hg."
+    statement: "One chapter of the reference uses a diastolic pressure above 130 mm Hg, together with eye and kidney damage, as a usual criterion for malignant hypertension and states that no pressure value alone defines it."
     sourceRef: { source: rubin-8e, chapter: "22", pages: "950-951" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fibrinoid-necrosis-c074
+    section: ancillary
+    statement: "Fibrinoid necrosis is found in biopsies of the involved organ: skin with palpable purpura (superficial venules), native kidney or renal allograft, and, for a suspected neuropathy, sural nerve with gastrocnemius muscle; in preeclampsia the decidual spiral arteries of the placenta show it."
+    sourceRef: { source: rubin-8e, chapter: "4, 14, 16, 22, 31", pages: "158, 573, 620, 925, 947, 1411" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fibrinoid-necrosis-c075
+    section: ancillary
+    statement: "In vasculitic neuropathy, for example polyarteritis nodosa with mononeuropathy multiplex, axonal degeneration results from nerve ischemia caused by fibrinoid necrosis of epineurial arteries, which a sural nerve biopsy can show."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1435" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fibrinoid-necrosis-c076
+    section: ancillary
+    statement: "On H&E, vascular fibrinoid material lies in the wall rather than in the lumen, unlike a fibrin thrombus, and its surroundings suggest the setting: neutrophils with nuclear debris in leukocytoclastic vasculitis and onion-skin smooth muscle proliferation in malignant hypertension; outside vessels, palisaded macrophages around a fibrinoid core mark a rheumatoid nodule."
+    sourceRef: { source: rubin-8e, chapter: "16, 22, 30", pages: "617, 620, 953, 1388" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fibrinoid-necrosis-c077
+    section: ancillary
+    statement: "PTAH (phosphotungstic acid-hematoxylin) is a stain that turns fibrin deep purple."
+    sourceRef: { source: rubin-8e, chapter: "26", pages: "1144" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fibrinoid-necrosis-c078
+    section: ancillary
+    statement: "In granulomatosis with polyangiitis, an elastic stain demonstrates that the arterial inflammation has broken down both the inner and the outer elastic lamina."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "746" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fibrinoid-necrosis-c079
+    section: ancillary
+    statement: "Renal immunofluorescence separates mechanisms: granular staining in immune complex disease (IgA-dominant in IgA vasculitis, Henoch-Schonlein purpura), linear IgG along the GBM in anti-GBM disease, and scarcely any immunoglobulin or complement in ANCA glomerulonephritis, which is therefore termed pauci-immune."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "927, 945-949" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fibrinoid-necrosis-c080
+    section: ancillary
+    statement: "Peritubular capillary C4d in antibody-mediated rejection is demonstrated by immunofluorescence or immunohistochemistry."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "966-967" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fibrinoid-necrosis-c081
+    section: ancillary
+    statement: "In thrombotic microangiopathy, malignant hypertension included, plasma proteins that leak beneath damaged glomerular endothelium form a pale band on electron microscopy, and this band narrows the capillary lumen."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "951, 953" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fibrinoid-necrosis-c082
+    section: ancillary
+    statement: "Malignant hypertensive nephropathy and hemolytic-uremic syndrome share the same renal lesions of thrombotic microangiopathy, so the specific cause is identified from the clinical context, for example preceding bloody diarrhea or exposure to a drug such as cyclosporine."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "951-953" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fibrinoid-necrosis-c083
+    section: etiology
+    statement: "The Aschoff body of rheumatic myocarditis has a fibrinoid center, and fibrinoid degeneration of myocardial collagen already marks the earliest phase, before Aschoff bodies form."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "666" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fibrinoid-necrosis-c084
+    section: etiology
+    statement: "Renal afferent arterioles frequently show fibrinoid necrosis in systemic sclerosis."
+    sourceRef: { source: rubin-8e, chapter: "11", pages: "520" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09

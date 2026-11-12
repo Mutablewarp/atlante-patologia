@@ -115,19 +115,51 @@ chain:
     lab:
       it: "RM: restrizione della diffusione nell'area infartuata"
       en: "MRI: restricted diffusion in the infarcted area"
+examQuestions:
+  - it: "Mi parli della necrosi colliquativa: che cos'è e in quali situazioni la incontra?"
+    en: "Tell me about liquefactive necrosis: what is it, and in which situations do you find it?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Che cosa vede al microscopio in un ascesso? Poi mi descriva la parete di un ascesso cerebrale maturo, dall'interno verso l'esterno."
+    en: "What do you see under the microscope in an abscess? Then describe the wall of a mature brain abscess, from the inside out."
+    focus: [micro, high-yield]
+    level: 1
+  - it: "Mi descriva come evolve un infarto cerebrale, a occhio nudo e al microscopio, dalle prime ore fino alla cavità cistica. Perché proprio nel cervello la necrosi ischemica va incontro a colliquazione?"
+    en: "Describe how a brain infarct evolves, to the naked eye and under the microscope, from the first hours to the cystic cavity. Why does ischemic necrosis liquefy in the brain in particular?"
+    focus: [gross, micro, pathogenesis]
+    level: 2
+  - it: "Mi parli dell'ascesso polmonare: come si forma, perché è più frequente a destra e che cosa mostra la radiografia del torace?"
+    en: "Tell me about lung abscess: how does it form, why is it more often on the right, and what does the chest radiograph show?"
+    focus: [etiology, gross, diagnosis]
+    level: 2
+  - it: "Come distingue al microscopio la necrosi colliquativa dalla necrosi coagulativa e da quella caseosa? E perché le basi forti provocano una necrosi diversa da quella degli acidi forti?"
+    en: "How do you tell liquefactive necrosis from coagulative and caseous necrosis under the microscope? And why do strong alkalis cause a different necrosis from strong acids?"
+    focus: [differential, pathogenesis, traps]
+    level: 3
+  - it: "Un paziente con endocardite batterica sviluppa deficit neurologici e la RM mostra una lesione con presa di contrasto ad anello. Che cosa sospetta, come la distingue da un tumore necrotico e quali colorazioni ed esami richiederebbe sul pus drenato?"
+    en: "A patient with bacterial endocarditis develops neurologic deficits, and MRI shows a ring-enhancing lesion. What do you suspect, how do you tell it from a necrotic tumor, and which stains and tests would you request on the drained pus?"
+    focus: [diagnosis, ancillary, differential]
+    level: 3
 images:
+  - id: liquefactive-necrosis-gross-3
+    role: gross
+    pairWith: liquefactive-necrosis-micro-2
+  - id: liquefactive-necrosis-micro-2
+    role: micro
+  - id: liquefactive-necrosis-micro-1
+    role: micro
+  - id: liquefactive-necrosis-micro-4
+    role: micro
   - id: liquefactive-necrosis-gross-1
     role: gross
   - id: liquefactive-necrosis-gross-2
     role: gross
-  - id: liquefactive-necrosis-micro-1
-    role: micro
 reviewStatus: ai-generated-unreviewed
 editionDependent: false
 sources:
   - source: rubin-8e
     chapter: "1"
-    pages: "38-40"
+    pages: "6-7, 38-40"
   - source: rubin-8e
     chapter: "2"
     pages: "68, 88"
@@ -136,12 +168,15 @@ sources:
     pages: "338"
   - source: rubin-8e
     chapter: "9"
-    pages: "409-410"
+    pages: "409-410, 418"
+  - source: rubin-8e
+    chapter: "18"
+    pages: "709-711, 713-715"
   - source: rubin-8e
     chapter: "19"
     pages: "773"
   - source: rubin-8e
     chapter: "32"
-    pages: "1456, 1465-1466, 1490"
-lastUpdated: 2026-11-03
+    pages: "1442-1444, 1456, 1463, 1465-1466, 1468-1469, 1490"
+lastUpdated: 2026-11-09
 status: published

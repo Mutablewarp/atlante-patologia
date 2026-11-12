@@ -1,0 +1,76 @@
+# License check (2026-11-08): Commons file page {{Information}} gives source {{own}}, author [[User:Patho|Patho]],
+# license {{self|cc-by-sa-3.0}}; extmetadata LicenseShortName "CC BY-SA 3.0", Artist "Patho", Credit "Own work",
+# AttributionRequired true, no Restrictions. Self-published by its creator. CC BY-SA is approved as a class by owner
+# decision O7 (plan/v2-plan.md, 2026-11-03), hence ownerApproved: true; this closes the 2026-10-10 MISSING_ASSETS row
+# that named HE 1 of the same series and was blocked only by the BY-SA approval (HE 2 and HE 3 were chosen instead:
+# HE 1 has a strong purple cast that hides the eosinophilia). Histology only; nothing identifies the patient.
+# HE 1 to HE 4 form one upload set with the same description ("Global hypoxic neuronal injury after cardiopulmonal
+# reanimation, not sufficient to cause (complete) infarction in this area") and list each other as other versions,
+# hence the shared group with hypoxic-ischemic-injury-micro-5. The source states neither magnification nor region:
+# "low power" is our estimate from the size of the neurons and glial nuclei (cell bodies about a fortieth of the field width), so
+# no `objective` and no `mpp`. Caption facts checked on rubin-8e pp. 1453-1454 (global ischemia from cardiac arrest or
+# shock, no oxygen and scant glycogen reserves, selective vulnerability of particular neuronal populations).
+id: hypoxic-ischemic-injury-micro-4
+file: hypoxic-ischemic-injury-micro-4.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Hypoxic_neuronal_injury,_HE_3.jpg
+author: Patho
+license: CC-BY-SA-3.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/3.0/
+retrievedAt: 2026-11-08
+modifications:
+  it: "Ridimensionata da 1920 × 1280 a 1600 × 1067 px e salvata di nuovo in JPEG."
+  en: "Downscaled from 1920 × 1280 to 1600 × 1067 px and re-saved as JPEG."
+attributionText: 'Patho, "Hypoxic neuronal injury, HE 3", via Wikimedia Commons, CC BY-SA 3.0'
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+group: hypoxic-neuronal-injury-patho
+stain: H&E
+magnification: low power (not stated by the source; estimated from the size of the neurons and glial nuclei)
+lookFor:
+  it: "Conta i neuroni: quasi tutti sono piccoli, triangolari, rosso scuro e chiusi in un alone chiaro, quindi il danno è diffuso."
+  en: "Count the neurons: nearly all are small, triangular, dark red and sit in a clear halo, so the injury is diffuse."
+caption:
+  it: >-
+    Sostanza grigia cerebrale dopo una rianimazione cardiopolmonare, EE a piccolo ingrandimento: l'autore la descrive
+    come danno ipossico globale dei neuroni. Guarda prima l'insieme del campo. I neuroni sono cellule piramidali, con
+    corpo triangolare e un lungo dendrite, e quasi tutti hanno lo stesso aspetto: raggrinziti, angolati, di un rosso
+    più scuro dello sfondo, ciascuno circondato da un alone chiaro. Il neuropilo tra loro è pieno di piccoli vacuoli.
+    L'ischemia globale nasce di solito da un arresto cardiaco o da uno shock grave: tutto l'encefalo resta insieme
+    senza ossigeno e senza glucosio, e non ha riserve di ossigeno, mentre quelle di glicogeno sono minime. Il danno però è selettivo:
+    alcuni neuroni muoiono per primi, per esempio le cellule piramidali del settore di Sommer (CA1) dell'ippocampo e le
+    cellule di Purkinje del cervelletto. Secondo l'autore, in quest'area il danno non è arrivato a un
+    infarto (completo): il tessuto nel suo insieme non è necrotico, ma i suoi elementi più vulnerabili, i neuroni,
+    stanno morendo. Passa al forte ingrandimento per vedere da vicino i singoli neuroni rossi.
+  en: >-
+    Brain grey matter after cardiopulmonary resuscitation, H&E at low power: the author describes it as global
+    hypoxic injury of neurons. Survey the whole field first. The neurons are pyramidal cells, with a triangular body
+    and a long dendrite, and almost all of them look alike: shrunken, angular, darker red than the background, each
+    sitting in a clear halo. The neuropil between them is full of small holes. Global ischemia usually follows cardiac
+    arrest or severe shock: the whole brain goes without oxygen and glucose at once, and it keeps no oxygen in store
+    and very little glycogen. Yet the damage is selective: some neurons die first, for example the pyramidal cells of
+    the Sommer sector (CA1) of the hippocampus and the Purkinje cells of the cerebellum. The author notes that in this
+    area the injury did not amount to a (complete) infarct: the tissue as a whole is not necrotic, but its most
+    vulnerable cells, the neurons, are dying. Switch to high power to see single red neurons up close.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina a piccolo ingrandimento di sostanza grigia cerebrale: numerosi neuroni piccoli,
+    triangolari, magenta scuro, ciascuno con una sottile coda e un alone chiaro, sparsi in modo uniforme su uno sfondo
+    rosa finemente vacuolato.
+  en: >-
+    Low-power H&E micrograph of brain grey matter: many small, triangular, dark magenta neurons, each with a thin
+    tail and a clear halo, scattered evenly over a pink, finely vacuolated background.
+annotations:
+  - id: red-neuron-halo
+    label: { it: "Neurone rosso in un alone chiaro", en: "Red neuron in a clear halo" }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.914, 0.377, 0.931, 0.373, 0.944, 0.389, 0.938, 0.422, 0.931, 0.455, 0.92, 0.436, 0.915, 0.408]
+  - id: more-red-neurons
+    label: { it: "Altri due neuroni rossi: il danno è diffuso", en: "Two more red neurons: the injury is diffuse" }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.32, 0.517, 0.345, 0.517, 0.347, 0.562, 0.344, 0.609, 0.32, 0.609, 0.316, 0.562]

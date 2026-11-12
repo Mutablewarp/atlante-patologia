@@ -1,0 +1,96 @@
+# License check (2026-11-07): Commons file page {{Information}} gives Source {{Institution: Calicut Medical College}},
+# Author "Department of Pathology, Calicut Medical College", Permission {{PermissionTicket|id=2014102010001497}}
+# confirmed by a Wikimedia VRT volunteer on 11 December 2014, license {{cc-by-sa-4.0}}; extmetadata LicenseShortName
+# "CC BY-SA 4.0", AttributionRequired true, no Restrictions. The file belongs to a GLAM-in-India release of 312
+# images from that department. The uploader is not the creator, but the creator's own permission is on file with
+# the Wikimedia VRT, which answers the objection raised in the 2026-10-10 MISSING_ASSETS row. CC BY-SA is approved
+# as a class by owner decision O7 (plan/v2-plan.md, 2026-11-03), hence ownerApproved: true. Histology only; nothing
+# identifies the patient. Same upload set and same description style as coagulative-necrosis-micro-4, hence the
+# shared group. The source labels the image "4X" without saying what the figure measures; the field (a glomerulus
+# spans about a sixth of its width) looks narrower than a plain 4x objective gives, and the "40X" partner is only
+# about twice as magnified, so `objective` is left out and the label is kept only in `magnification`.
+id: coagulative-necrosis-micro-3
+file: coagulative-necrosis-micro-3.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Renal_cortical_infarction_showing_coagulative_necrosis_4X.jpg
+author: Department of Pathology, Calicut Medical College
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+retrievedAt: 2026-11-07
+modifications: none
+attributionText: >-
+  Department of Pathology, Calicut Medical College, "Renal cortical infarction showing coagulative necrosis 4X", via
+  Wikimedia Commons, CC BY-SA 4.0
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-07 }
+group: coagulative-necrosis-renal-infarct
+stain: H&E
+magnification: low power (4X in the source)
+orientation:
+  it: "Corticale vitale in alto a sinistra; l'infarto occupa il resto del campo, verso il basso a destra."
+  en: "Living cortex at the upper left; the infarct fills the rest of the field towards the lower right."
+lookFor:
+  it: "Confronta il glomerulo in alto a sinistra con quelli pallidi in basso: stessa forma, ma solo quello vivo ha ancora i nuclei."
+  en: "Compare the glomerulus at the top left with the pale ones at the bottom: same shape, but only the living one still has nuclei."
+caption:
+  it: >-
+    Margine di un infarto renale, EE a piccolo ingrandimento (4X secondo la fonte). Parti dall'angolo in alto a
+    sinistra, dove la corticale è ancora viva: un glomerulo affollato di nuclei violacei e, lungo il bordo sinistro,
+    tubuli le cui cellule epiteliali conservano il nucleo. Poi scendi verso destra, dentro l'infarto. Le stesse
+    strutture ci sono ancora, con la loro forma intatta, sia i tubuli sia i glomeruli, ma sono uniformemente rosa e
+    non hanno quasi più nuclei. Questi profili «fantasma» sono la firma della necrosi coagulativa: le cellule sono
+    morte, ma per un certo tempo l'architettura del tessuto resiste, perché le cellule morte non sono ancora state
+    digerite. Tra i
+    tubuli i globuli rossi riempiono l'interstizio, soprattutto intorno al glomerulo in basso a sinistra; la fonte
+    segnala anche un modesto infiltrato infiammatorio lungo il margine. Questo sangue al margine è il versante
+    microscopico della fascia emorragica scura che, a occhio nudo, incornicia un infarto recente. Nota che i glomeruli
+    muoiono insieme ai tubuli: in un infarto tutte le strutture del territorio dell'arteria occlusa vanno incontro a
+    necrosi coagulativa. Passa all'immagine a forte ingrandimento per vedere da vicino tubuli e glomeruli fantasma.
+  en: >-
+    Edge of a renal infarct, H&E at low power (labeled 4X by the source). Start at the upper left, where the cortex
+    is still alive: a glomerulus crowded with purple nuclei and, along the left edge, tubules whose epithelial cells
+    keep their nuclei. Then move down and to the right, into the infarct. The same structures are still there with
+    their shapes intact, tubules and glomeruli alike, but they are evenly pink and have almost no nuclei left. These
+    "ghost" outlines are the signature of coagulative necrosis: the cells are dead, yet for a while the tissue plan
+    holds because the dead cells have not been digested yet. Between the tubules, red blood cells pack the
+    interstitium, most
+    densely around the glomerulus at the bottom left; the source also notes a mild inflammatory infiltrate along the
+    border. This blood at the margin is the microscopic side of the dark hemorrhagic band that frames a recent infarct
+    to the naked eye. Note that the glomeruli die together with the tubules: in an infarct, every structure in the
+    territory of the blocked artery undergoes coagulative necrosis. Switch to the high-power image to see ghost
+    tubules and glomeruli up close.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina a piccolo ingrandimento di corticale renale: in alto a sinistra un glomerulo
+    rotondo pieno di nuclei viola scuro e tubuli con nuclei visibili; nel resto del campo tubuli rosa e due glomeruli
+    rotondi pallidi quasi senza nuclei, separati da numerosi globuli rossi.
+  en: >-
+    Low-power H&E micrograph of kidney cortex: at the upper left, a round glomerulus packed with dark purple nuclei and
+    tubules with visible nuclei; over the rest of the field, pink tubules and two pale round glomeruli with almost no
+    nuclei, separated by many red blood cells.
+annotations:
+  - id: viable-glomerulus
+    label: { it: "Glomerulo vitale, con i nuclei", en: "Living glomerulus, nuclei present" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.205, 0.0, 0.37, 0.0, 0.37, 0.12, 0.33, 0.19, 0.25, 0.19, 0.205, 0.12] }
+  - id: viable-tubules
+    label: { it: "Tubuli vitali al margine", en: "Living tubules at the edge" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.0, 0.0, 0.19, 0.0, 0.19, 0.24, 0.14, 0.45, 0.10, 0.62, 0.0, 0.64] }
+  - id: ghost-glomerulus
+    label: { it: "Glomerulo fantasma, senza nuclei", en: "Ghost glomerulus without nuclei" }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.81, 0.79, 0.92, 0.79, 0.95, 0.84, 0.95, 0.93, 0.92, 0.96, 0.82, 0.96, 0.79, 0.92, 0.79, 0.83] }
+  - id: ghost-tubules
+    label: { it: "Tubuli fantasma: profilo conservato, nuclei persi", en: "Ghost tubules: outline kept, nuclei lost" }
+    revealOrder: 4
+    shape: { type: polygon, coords: [0.64, 0.18, 0.84, 0.18, 0.84, 0.46, 0.64, 0.46] }
+  - id: interstitial-hemorrhage
+    label: { it: "Emorragia interstiziale", en: "Interstitial hemorrhage" }
+    revealOrder: 5
+    shape: { type: polygon, coords: [0.465, 0.58, 0.56, 0.58, 0.565, 0.70, 0.53, 0.76, 0.47, 0.74] }
+  - id: ghost-glomerulus-in-blood
+    label: { it: "Glomerulo fantasma circondato da sangue", en: "Ghost glomerulus ringed by blood" }
+    revealOrder: 6
+    shape: { type: polygon, coords: [0.18, 0.81, 0.30, 0.81, 0.32, 0.86, 0.32, 0.97, 0.29, 0.99, 0.18, 0.99, 0.16, 0.95, 0.16, 0.86] }

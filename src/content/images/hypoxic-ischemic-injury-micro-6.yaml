@@ -1,0 +1,83 @@
+# License check (2026-11-08): the source article (Michaud et al., Virchows Arch 2020;476:179-194, published online
+# 2019, PMC7028821, doi:10.1007/s00428-019-02662-1) carries "Open Access ... Creative Commons Attribution 4.0
+# International License" in its PMC XML <license> element; Europe PMC lists it as license "cc by". The Commons file is
+# panel a of the article's Figure 4, cut out by the uploader; its page is tagged {{cc-by-3.0}}, but its source field
+# quotes the article's CC BY 4.0 statement, so the licence recorded here is the article's, as for
+# hypoxic-ischemic-injury-micro-1 (panel c of the same figure) and -gross-1 (open review-queue row of 2026-10-10).
+# The Figure 4 legend names no other source for its panels. Histology only; nothing identifies the patient. The
+# source states no magnification: "medium power" is our estimate (the field holds many myocyte nuclei across its
+# width), so no `objective` and no `mpp`. Caption facts: the legend (myofiber waviness, MI without reperfusion, H&E);
+# rubin-8e p. 657 (noncontracting ischemic myocytes stretched at each systole become wavy fibers in the first 24 hours;
+# deep eosinophilia by 24 hours; myocyte nuclei take several days to disappear); the article's section on post-mortem
+# diagnosis (CPR-related changes and autolysis can mimic the early histology of MI).
+id: hypoxic-ischemic-injury-micro-6
+file: hypoxic-ischemic-injury-micro-6.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Histopathology_of_myofiber_waviness_in_myocardial_infarction.jpg
+author: >-
+  Katarzyna Michaud, Cristina Basso, Giulia d'Amati, Carla Giordano, Ivana Kholová, Stephen D. Preston, Stefania
+  Rizzo, Sara Sabatasso, Mary N. Sheppard, Aryan Vink, Allard C. van der Wal, on behalf of the Association for
+  European Cardiovascular Pathology (AECVP)
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-11-08
+modifications:
+  it: >-
+    nessuna modifica da parte nostra (file di Wikimedia usato così come pubblicato, 751 × 565 px; chi l'ha caricato
+    aveva già ritagliato il pannello a dalla Figura 4 dell'articolo; mantenuta la lettera di pannello «a»)
+  en: >-
+    none by us (Wikimedia file used as published, 751 × 565 px; the uploader had already cut panel a out of Figure 4
+    of the article; panel letter 'a' kept)
+attributionText: >-
+  Michaud K, Basso C, d'Amati G, et al. (AECVP), "Diagnosis of myocardial infarction at autopsy", Virchows Archiv
+  2019, doi:10.1007/s00428-019-02662-1, Figure 4a, via Wikimedia Commons, CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+stain: H&E
+magnification: medium power (not stated by the source; estimated)
+lookFor:
+  it: "Segui un fascio di fibre da sinistra a destra: invece di correre diritto si piega a zig-zag, ma i nuclei ci sono ancora."
+  en: "Follow one bundle of fibres from left to right: instead of running straight it zig-zags, yet its nuclei are still there."
+caption:
+  it: >-
+    Infarto miocardico non riperfuso, fase precoce, EE a medio ingrandimento (autopsia; pannello a della figura
+    originale). Guarda la direzione delle fibre: invece di correre diritti e paralleli, i miocardiociti sono piegati in
+    onde regolari, come un nastro ripiegato, e appaiono sottili e allungati. I nuclei sono ancora presenti: le
+    alterazioni nucleari della necrosi non sono ancora comparse. Perché ondulate? Perché sono state stirate: le fibre
+    ischemiche non si contraggono più e a ogni sistole il muscolo vivo che le circonda le tira. Le fibre ondulate sono
+    un reperto del primo giorno: il citoplasma diventa intensamente eosinofilo entro circa 24 ore, mentre per la
+    scomparsa dei nuclei servono giorni. Attenzione: i primi segni di un infarto non sono specifici, e all'autopsia
+    quadri simili possono seguire una rianimazione o semplicemente l'autolisi, quindi vanno letti insieme alla storia
+    clinica e agli altri reperti. Fibre sottili e ondulate con i nuclei ancora presenti = danno ischemico molto precoce
+    del miocardio.
+  en: >-
+    Myocardial infarct without reperfusion, early stage, H&E at medium power (autopsy; panel a of the source figure).
+    Look at the direction of the fibres: instead of running straight and parallel, the myocytes are bent into regular
+    waves, like a folded ribbon, and look thin and elongated. Their nuclei are still present: the nuclear changes of
+    necrosis have not appeared yet. Why wavy? Because they have been stretched: ischemic fibres no longer contract,
+    and at each systole the living muscle around them pulls on them. Wavy fibres are a finding of the first day: the
+    cytoplasm turns deeply eosinophilic within about 24 hours, whereas the loss of the nuclei is a matter of days.
+    Watch out: the earliest signs of an infarct are not specific, and at autopsy similar pictures can follow
+    resuscitation or simple autolysis, so they are read together with the clinical history and the other findings.
+    Thin, wavy fibres with nuclei still present = very early ischemic injury of the myocardium.
+alt:
+  it: >-
+    Micrografia di miocardio in ematossilina-eosina: fasci di fibre muscolari rosa con piccoli nuclei scuri allungati,
+    piegati in onde parallele a zig-zag in tutto il campo e separati da sottili fessure bianche; in alto a destra un
+    piccolo vaso; in basso a sinistra la lettera "a".
+  en: >-
+    H&E micrograph of heart muscle: bundles of pink muscle fibres with small, dark, elongated nuclei, bent into
+    parallel zig-zag waves across the whole field and separated by thin white clefts; a small vessel at the upper
+    right; the letter "a" at the lower left.
+annotations:
+  - id: wavy-fibres
+    label: { it: "Fascio di fibre piegato a onda", en: "Bundle of fibres bent into a wave" }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.2, 0.36, 0.35, 0.4, 0.52, 0.47, 0.62, 0.33, 0.72, 0.28, 0.74, 0.38, 0.62, 0.45, 0.53, 0.6, 0.35, 0.52, 0.2, 0.48]
+  - id: preserved-nuclei
+    label: { it: "Nuclei ancora presenti", en: "Nuclei still present" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.45, 0.407, 0.533, 0.407, 0.533, 0.471, 0.45, 0.471] }

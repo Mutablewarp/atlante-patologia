@@ -1,0 +1,81 @@
+# License check (2026-11-07): Commons file page {{Information}} gives Source = Flickr photo 7205728160 (stream
+# "euthman"), Author = Ed Uthman; license template {{cc-by-2.0}}, confirmed by {{flickrreview}} (File Upload Bot
+# (Magnus Manske), 2013-12-11); extmetadata LicenseShortName "CC BY 2.0", AttributionRequired true, no Restrictions.
+# The Flickr stream is the author's own, so the Commons transfer (by User:CFCF) opens no uploader/creator gap. The
+# downloaded original matches the Commons SHA-1 (b132687b26d462d5ded93b327c983afa70b85df4).
+# Same CIN 2 case as dysplasia-micro-4 (H&E) and dysplasia-micro-5 (Ki-67), hence one group. The file description
+# states that a high-grade lesion needs strong, diffuse p16 staining and that benign biopsies often stain weakly or
+# patchily. The source does not state the magnification or the chromogen. HPV E7 binding RB: rubin-8e ch. 24 p. 1032;
+# p16 in lesions caused by oncogenic HPV: rubin-8e ch. 24 p. 1023.
+id: dysplasia-micro-6
+file: dysplasia-micro-6.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:CIN_2_(HSIL),_p16_Immunostain_(7205728160).jpg
+author: Ed Uthman
+license: CC-BY-2.0
+licenseUrl: https://creativecommons.org/licenses/by/2.0/
+retrievedAt: 2026-11-07
+modifications:
+  it: >-
+    Scaricato da Wikimedia Commons l'originale da 1717 × 1144 px; riduzione a 1600 × 1066 px e ricodifica in JPEG
+    (qualità 82, metadati rimossi). Nessun ritaglio, nessuna modifica dei colori.
+  en: >-
+    Downloaded the 1717 × 1144 px original from Wikimedia Commons; downscaled to 1600 × 1066 px and re-encoded as JPEG
+    (quality 82, metadata stripped). No crop, no colour change.
+attributionText: >-
+  Ed Uthman, "CIN 2 (HSIL), p16 Immunostain" (Flickr 7205728160), via Wikimedia Commons, CC BY 2.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-07 }
+group: cin2-cervix-uthman
+stain: immunohistochemistry for p16 (p16INK4a), haematoxylin counterstain
+magnification: medium power (judged from the image; the source does not state it)
+orientation:
+  it: "Superficie dell'epitelio in alto, stroma in basso; epitelio normale a sinistra, lesione a destra."
+  en: "Epithelial surface at the top, stroma at the bottom; normal epithelium on the left, the lesion on the right."
+lookFor:
+  it: "Cerca una colorazione scura e continua dalla base alla superficie (a blocco) e il suo confine netto con l'epitelio normale, blu."
+  en: "Look for dark, continuous staining from base to surface (the block pattern) and its sharp border with the blue normal epithelium."
+caption:
+  it: >-
+    Lo stesso prelievo cervicale con CIN 2, colorato in immunoistochimica per p16 (p16INK4a), a medio ingrandimento. Già
+    a piccolo ingrandimento il quadro è netto: la parte destra dell'epitelio è colorata in rosso-bruno scuro, in modo
+    uniforme, dalla base alla superficie, nei nuclei e nel citoplasma, mentre l'epitelio normale a sinistra resta blu;
+    il confine tra le due zone è brusco e attraversa l'epitelio in obliquo. Questa colorazione intensa e continua, estesa
+    a tutta la lesione, si chiama positività «a blocco». Perché p16 si accumula: nell'infezione da HPV ad alto rischio la
+    proteina virale E7 inattiva RB e la cellula reagisce accumulando p16, un inibitore delle CDK che non riesce più a
+    fermare il ciclo; per questo p16 segnala le cellule trasformate da HPV ad alto rischio. Concetto chiave: conta solo
+    la positività a blocco; una reazione tenue o a macchie, frequente anche nel tessuto cervicale benigno, non ha valore
+    diagnostico. Letta così, p16 aiuta a distinguere una vera HSIL (CIN 2–3) dalle lesioni che la imitano,
+    come la metaplasia squamosa immatura o l'atrofia, e rende il grading più concorde tra patologi. Le poche cellule
+    rosse sparse nello stroma in basso a sinistra non fanno parte della lesione.
+  en: >-
+    The same CIN 2 cervical specimen immunostained for p16 (p16INK4a), medium power. At low power the picture is already
+    clear: the right part of the epithelium is stained a solid dark red-brown from the base to the surface, in both
+    nuclei and cytoplasm, while the normal epithelium on the left stays blue; the border between the two is abrupt and
+    runs obliquely through the epithelium. This strong staining, continuous across the whole lesion, is called block
+    positivity. Why p16 builds up: in infection by high-risk HPV the viral E7 protein inactivates RB, and the cell
+    responds by accumulating p16, a CDK inhibitor that can no longer halt the cycle; p16 therefore marks cells
+    transformed by high-risk HPV. Key point: only block positivity counts; a faint or spotty reaction, frequent even in
+    benign cervical tissue, carries no diagnostic weight. Read this way, p16 helps to separate true HSIL (CIN 2–3) from
+    its mimics, such as immature squamous metaplasia or atrophy, and makes grading more consistent between
+    pathologists. The few scattered red cells in the stroma at the lower left are not part of the lesion.
+alt:
+  it: >-
+    Micrografia immunoistochimica: la metà destra di una fascia di epitelio squamoso è di un rosso-bruno scuro e
+    uniforme dall'alto in basso, mentre la metà sinistra e lo stroma sottostante sono azzurro chiaro. Il confine tra
+    l'epitelio rosso-bruno e quello azzurro è netto e corre in diagonale. Nello stroma in basso a sinistra ci sono alcuni
+    piccoli punti rossi sparsi.
+  en: >-
+    Immunostained micrograph: the right half of a band of squamous epithelium is a solid dark red-brown from top to
+    bottom, while the left half and the stroma below are pale blue. The border between the red-brown and the blue
+    epithelium is sharp and runs diagonally. A few small red dots are scattered in the stroma at the lower left.
+annotations:
+  - id: p16-negative-normal
+    label: { it: "Epitelio normale: p16 negativo", en: "Normal epithelium: p16 negative" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.00, 0.31, 0.15, 0.30, 0.26, 0.30, 0.31, 0.40, 0.38, 0.50, 0.44, 0.58, 0.30, 0.62, 0.00, 0.60] }
+  - id: block-positivity
+    label: { it: "Positività a blocco: intensa e continua, dalla base alla superficie", en: "Block positivity: strong and continuous, base to surface" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.30, 0.28, 0.45, 0.25, 0.80, 0.25, 0.99, 0.30, 0.99, 0.80, 0.88, 0.76, 0.78, 0.71, 0.62, 0.70, 0.56, 0.58, 0.50, 0.47, 0.39, 0.39, 0.30, 0.33] }

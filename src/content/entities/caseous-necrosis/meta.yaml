@@ -110,7 +110,7 @@ chain:
       it: "Biopsia: granuloma con necrosi caseosa, macrofagi e cellule giganti di Langhans"
       en: "Biopsy: granuloma with caseous necrosis, macrophages and Langhans giant cells"
 examQuestions:
-  - it: "Mi parli della necrosi caseosa: che cos'è, da dove prende il nome e in quale malattia è tipica?"
+  - it: "Mi parli della necrosi caseosa: che cos'è, da dove prende il nome e di quale malattia è tipica?"
     en: "Tell me about caseous necrosis: what is it, where does its name come from, and which disease is it typical of?"
     focus: [definition, gross]
     level: 1
@@ -141,6 +141,11 @@ images:
   - id: caseous-necrosis-micro-1
     role: micro
   - id: caseous-necrosis-micro-2
+    role: micro
+  - id: caseous-necrosis-gross-2
+    role: gross
+    pairWith: caseous-necrosis-micro-1
+  - id: caseous-necrosis-micro-3
     role: micro
 reviewStatus: ai-generated-unreviewed
 editionDependent: false
@@ -177,5 +182,5 @@ sources:
     pages: "1468-1469"
   - source: stellmacher-2021
   - source: lewinsohn-2017
-lastUpdated: 2026-11-04
+lastUpdated: 2026-11-09
 status: published

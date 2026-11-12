@@ -1,0 +1,114 @@
+# License check (2026-11-08): taken from the article itself, not from Wikimedia Commons. The publisher's article page
+# (nature.com) and the PMC full text (PMC7244585, PMID 32444644) state a Creative Commons Attribution 4.0 International
+# License, © The Author(s) 2020; Crossref lists CC BY 4.0 for the version of record and Europe PMC gives "cc by". The
+# Figure 1 legend has no "reproduced", "adapted" or "with permission" note: the micrographs are the authors' own
+# material. Allowed under COMPLIANCE_PLAN §4 (PubMed Central figure in an article with an explicit CC BY licence).
+# Surgical tumour specimens; the article states ethics approval and informed consent; tissue sections only, nothing
+# can identify a patient.
+# Facts in the caption come from the article: symbols as defined in the Fig. 1 legend (black arrow karyopyknosis, white
+# arrow karyolysis, white triangle cell swelling and disconnection, asterisk coagulative necrotic debris); ×100 and
+# ×400 original magnifications; DAB chromogen with haematoxylin counterstain; pMLKL found in some tumours and in none
+# of 40 tumour-adjacent epithelium sections. Panel d of the same figure is necroptosis-micro-7. Not grouped with -7:
+# both are H&E + IHC composites at the same powers, so the viewer's switch would show two identical labels.
+id: necroptosis-micro-6
+file: necroptosis-micro-6.jpg
+kind: micro
+sourceUrl: https://www.nature.com/articles/s41419-020-2538-5/figures/1
+author: >-
+  Jingyuan Li, Sihui Huang, Lijuan Zeng, Kan Li, Le Yang, Siyong Gao, Chenyu Guan, Sien Zhang, Xiaomei Lao, Guiqing
+  Liao, Yujie Liang
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-11-08
+modifications:
+  it: >-
+    Ritaglio del pannello a dalla Figura 1 a piena risoluzione dell'editore (PNG 1895 × 1800 px,
+    https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41419-020-2538-5/MediaObjects/41419_2020_2538_Fig1_HTML.png),
+    alla risoluzione nativa (pixel x 26–1211, y 14–505: 1186 × 492 px); restano fuori la lettera del pannello, la
+    linea del bordo sinistro con una striscia di 6 px della prima micrografia e i pannelli b–i. Salvato in JPEG (qualità
+    90), metadati rimossi. Titoli, etichette delle righe, frecce, triangoli, asterischi, riquadri e barre di scala fanno
+    parte della figura pubblicata.
+  en: >-
+    Cropped to panel a of the publisher's full-size Figure 1 (PNG, 1895 × 1800 px,
+    https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41419-020-2538-5/MediaObjects/41419_2020_2538_Fig1_HTML.png)
+    at native resolution (pixels x 26–1211, y 14–505: 1186 × 492 px); the panel letter, the left border line with a
+    6 px strip of the first micrograph, and panels b–i are left out. Saved as JPEG (quality 90), metadata stripped.
+    Titles, row labels, arrows, triangles, asterisks, boxes and scale bars belong to the published figure.
+attributionText: >-
+  Li J, Huang S, Zeng L et al., "Necroptosis in head and neck squamous cell carcinoma: characterization of
+  clinicopathological relevance and in vitro cell model", Cell Death Dis 2020;11:391, doi:10.1038/s41419-020-2538-5,
+  Fig. 1a (cropped), CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+stain: >-
+  H&E (top row) and immunohistochemistry for phosphorylated MLKL (p-MLKL; DAB, haematoxylin counterstain; bottom row)
+  on serial sections
+magnification: >-
+  low power (original ×100, scale bars 200 µm) with high-power enlargements of the boxed areas (original ×400, scale
+  bars 50 µm)
+section: paraffin
+orientation:
+  it: "Riga in alto EE, riga in basso pMLKL su sezioni seriali; in ogni coppia, a sinistra il piccolo ingrandimento, a destra il riquadro ingrandito."
+  en: "Top row H&E, bottom row pMLKL on serial sections; in each pair the low-power view is on the left and the enlarged box on the right."
+lookFor:
+  it: "Nell'EE a forte ingrandimento trova i nuclei picnotici (frecce nere) e quelli che sbiadiscono (frecce bianche), poi guarda la stessa zona nella pMLKL sotto: le cellule sono brune."
+  en: "In the high-power H&E find the pyknotic nuclei (black arrows) and the fading ones (white arrows), then look at the same area in the pMLKL panel below: the cells are brown."
+caption:
+  it: >-
+    Necroptosi in un tumore umano, e perché l'EE non basta a riconoscerla. Carcinoma squamocellulare del distretto
+    testa-collo, pezzi chirurgici, sezioni seriali: sopra l'ematossilina-eosina (EE), sotto l'immunoistochimica per la
+    MLKL fosforilata (pMLKL), la forma attiva della proteina che esegue la necroptosi (prodotto bruno, nuclei azzurri
+    per la controcolorazione con ematossilina). In ogni coppia il pannello di sinistra è a piccolo ingrandimento (×100),
+    quello di destra ingrandisce il riquadro (×400); i simboli sono degli autori. Coppia di sinistra, un «focolaio
+    necrotico»: nell'EE le frecce nere indicano nuclei picnotici, piccoli, scuri e raggrinziti; le frecce bianche nuclei
+    che si stanno dissolvendo (cariolisi); i triangoli bianchi cellule rigonfie che si sono staccate dalle vicine. Nella
+    pMLKL lo stesso focolaio contiene cellule tumorali brune. Coppia di destra, «necrosi coagulativa»: l'asterisco segna
+    detriti necrotici amorfi, e nella pMLKL le cellule brune si trovano lungo il loro margine. Come leggerla: le cellule
+    brune avevano attivato la via RIPK1–RIPK3–MLKL, eppure all'EE mostrano solo il quadro classico della necrosi:
+    rigonfiamento, picnosi, cariolisi. Nello studio la pMLKL era presente in una parte dei tumori e assente in tutte le
+    40 sezioni di epitelio vicino al tumore che sono state esaminate. Da ricordare per l'esame: la necroptosi si
+    riconosce dal marcatore, non dalla morfologia; e un segnale bruno vale solo se il controllo negativo resta azzurro,
+    come è avvenuto in questo studio.
+  en: >-
+    Necroptosis in a human tumour, and why H&E is not enough to recognise it. Head and neck squamous cell carcinoma,
+    surgical specimens, serial sections: haematoxylin and eosin (H&E) above, immunohistochemistry for phosphorylated
+    MLKL (pMLKL) below; pMLKL is the active form of the protein that carries out necroptosis (brown product, nuclei blue
+    from the haematoxylin counterstain). In each pair the left panel is low power (×100) and the right one enlarges the
+    box (×400); the symbols are the authors'. Left pair, a "necrotic cluster": on H&E, black arrows mark pyknotic
+    nuclei, small, dark and shrunken; white arrows mark nuclei that are dissolving (karyolysis); white triangles mark
+    swollen cells that have come apart from their neighbours. In the pMLKL panel the same cluster holds brown tumour
+    cells. Right pair, "coagulative necrosis": the asterisk marks amorphous necrotic debris, and in the pMLKL panel the
+    brown cells lie along its edge. How to read it: the brown cells had switched on the RIPK1–RIPK3–MLKL route, yet on
+    H&E they show only the classic picture of necrosis: swelling, pyknosis, karyolysis. In the study, pMLKL was present
+    in some of the tumours and absent from all 40 sections of epithelium next to the tumour that were examined. Key
+    point for the exam: necroptosis is recognised by its marker, not by its morphology; and a brown signal counts only
+    if the negative control stays blue, as it did in this study.
+alt:
+  it: >-
+    Otto micrografie in due righe, etichettate a destra «H&E» e «p-MLKL», raggruppate sotto i titoli «Necrotic cluster»
+    e «Coagulative necrosis». Nella riga in alto, rosa e viola, i pannelli a forte ingrandimento mostrano cellule
+    tumorali squamose con frecce nere, frecce bianche, triangoli bianchi e un asterisco su un'area rosa amorfa. Nella
+    riga in basso, su fondo chiaro con nuclei azzurri, gruppi di cellule hanno citoplasma bruno chiaro o bruno scuro.
+  en: >-
+    Eight micrographs in two rows, labelled "H&E" and "p-MLKL" on the right and grouped under the headings "Necrotic
+    cluster" and "Coagulative necrosis". In the pink-purple top row the high-power panels show squamous tumour cells
+    with black arrows, white arrows, white triangles and an asterisk on an amorphous pink area. In the bottom row, on a
+    pale background with blue nuclei, groups of cells have light-brown or dark-brown cytoplasm.
+annotations:
+  - id: necrotic-morphology-he
+    label: { it: "EE ×400: picnosi (frecce nere), cariolisi (frecce bianche), cellule rigonfie (triangoli)", en: "H&E ×400: pyknosis (black arrows), karyolysis (white arrows), swollen cells (triangles)" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.2125, 0.138, 0.4275, 0.138, 0.4275, 0.559, 0.2125, 0.559] }
+  - id: pmlkl-positive-cluster
+    label: { it: "Stesso focolaio: cellule tumorali pMLKL-positive (brune)", en: "Same cluster: pMLKL-positive tumour cells (brown)" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.2125, 0.573, 0.4275, 0.573, 0.4275, 0.990, 0.2125, 0.990] }
+  - id: necrotic-debris
+    label: { it: "Detriti necrotici amorfi (asterisco)", en: "Amorphous necrotic debris (asterisk)" }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.810, 0.380, 0.881, 0.380, 0.881, 0.530, 0.810, 0.530] }
+  - id: pmlkl-around-debris
+    label: { it: "Cellule pMLKL-positive al margine dei detriti", en: "pMLKL-positive cells at the edge of the debris" }
+    revealOrder: 4
+    shape: { type: polygon, coords: [0.666, 0.573, 0.881, 0.573, 0.881, 0.990, 0.666, 0.990] }

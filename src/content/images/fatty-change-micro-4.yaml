@@ -1,0 +1,95 @@
+# License check (2026-11-07): Commons file page {{Information}} gives Source {{Own}}, Author User:Nephron, license
+# {{self|cc-by-sa-3.0|GFDL}}; extmetadata LicenseShortName "CC BY-SA 3.0", AttributionRequired true, no Restrictions.
+# Nephron is the creator (own work, liver biopsy photographed with the uploader's camera). CC BY-SA is approved as a
+# class by owner decision O7 (plan/v2-plan.md, 2026-11-03), hence ownerApproved: true. Histology only; nothing
+# identifies the patient. Same uploader, description and "See also" cross-links as fatty-change-micro-5 (intermediate
+# magnification), hence the shared group; the two are different fields, so the captions do not claim the same field.
+# section: paraffin is our inference, not the source's wording: the fat vacuoles are empty, so the lipid was removed
+# by solvent processing, and the source names a routine liver-biopsy trichrome. Annotations placed by inspection.
+id: fatty-change-micro-4
+file: fatty-change-micro-4.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Periportal_hepatosteatosis_low_mag.jpg
+author: Nephron
+license: CC-BY-SA-3.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/3.0/
+retrievedAt: 2026-11-07
+modifications:
+  it: >-
+    Scaricata la versione Commons di 1920 × 1039 px dell'originale di 3704 × 2004 px; ridimensionata a 1600 × 866 px e
+    ricodificata in JPEG. Nessun ritaglio, nessuna modifica dei colori. Questo adattamento è condiviso con la stessa
+    licenza (CC BY-SA 3.0).
+  en: >-
+    Downloaded the 1920 × 1039 px Commons rendition of the 3704 × 2004 px original; downscaled to 1600 × 866 px and
+    re-encoded as JPEG. No crop, no colour change. This adaptation is shared under the same licence (CC BY-SA 3.0).
+attributionText: >-
+  Nephron, "Periportal hepatosteatosis low mag", via Wikimedia Commons, CC BY-SA 3.0
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-07 }
+group: fatty-change-periportal-biopsy
+stain: "trichrome (the source: Trichrome stain)"
+magnification: "low power (the source: low magnification)"
+section: paraffin
+orientation:
+  it: "Frustolo di agobiopsia disposto in orizzontale: spazio portale a sinistra, vena centrolobulare a destra."
+  en: "Needle core lying horizontally: portal tract on the left, central vein on the right."
+lookFor:
+  it: "Trova prima spazio portale e vena centrolobulare, poi guarda attorno a quale dei due si raccolgono i vacuoli."
+  en: "Find the portal tract and the central vein first, then see which of the two the vacuoles gather around."
+caption:
+  it: >-
+    Steatosi macrovescicolare periportale (zona 1) in un'agobiopsia epatica, colorazione tricromica a piccolo
+    ingrandimento. In questa colorazione gli epatociti sono rossi e il collagene verde-azzurro; le gocce di grasso si
+    sono sciolte durante l'allestimento in paraffina, quindi anche qui appaiono come buchi rotondi e vuoti. Trova
+    prima i punti di repere: a sinistra uno spazio portale, un piccolo ammasso di nuclei scuri tra fibre collagene
+    verdi; a destra una vena centrolobulare, un lume chiaro dalla parete sottile, quasi senza collagene attorno. Poi
+    disegna la mappa del grasso: i vacuoli si affollano attorno allo spazio portale e si diradano verso la vena, i cui
+    epatociti ne sono quasi privi. Il sangue entra nel lobulo dagli spazi portali e scorre nei sinusoidi fino alla
+    vena centrolobulare: gli epatociti accanto allo spazio portale (zona 1) lo ricevono per primi, quelli attorno alla
+    vena (zona 3) per ultimi. Qui il grasso sta dunque in zona 1, all'opposto del quadro centrolobulare (zona 3)
+    mostrato in un'altra immagine di questa scheda. Davanti a una biopsia annota dove si trova il grasso, oltre al
+    tipo di gocce e alla quantità. Passa alla veduta a medio ingrandimento per guardare le gocce dentro le cellule.
+  en: >-
+    Periportal (zone 1) macrovesicular steatosis in a liver needle biopsy, trichrome stain at low power. In this
+    stain hepatocytes are red and collagen is green-blue; the fat droplets were dissolved while the paraffin section
+    was being prepared, so here too they show up as round, empty holes. Find the landmarks first: on the left a portal
+    tract, a small cluster of dark nuclei among green collagen fibres; on the right a central vein, a clear lumen with
+    a thin wall and almost no collagen around it. Then map the fat: the vacuoles crowd around the portal tract and
+    thin out towards the vein, whose hepatocytes are almost free of them. Blood enters the lobule at the portal tracts
+    and drains through the sinusoids to the central vein, so the hepatocytes next to the portal tract (zone 1) receive
+    it first and those around the vein (zone 3) last. So the fat here lies in zone 1, the opposite of the
+    centrilobular (zone 3) pattern shown in another image on this card. When you read a biopsy, note where the fat
+    lies as well as the droplet type and the amount. Switch to the intermediate-power view to look at the droplets
+    inside the cells.
+alt:
+  it: >-
+    Micrografia a piccolo ingrandimento di un frustolo di agobiopsia epatica in colorazione tricromica, disposto in
+    orizzontale su fondo bianco: epatociti rossi; nella metà sinistra numerosi vacuoli bianchi rotondi di varie
+    dimensioni attorno a un piccolo ammasso di nuclei scuri con fibre verdi; nella metà destra epatociti compatti quasi
+    senza vacuoli attorno a un lume vascolare bianco.
+  en: >-
+    Low-power micrograph of a liver needle core in trichrome stain, lying horizontally on a white background: red
+    hepatocytes; in the left half many round white vacuoles of varying size around a small cluster of dark nuclei with
+    green fibres; in the right half compact hepatocytes with almost no vacuoles around a white vascular lumen.
+annotations:
+  - id: portal-tract
+    label: { it: "Spazio portale", en: "Portal tract" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.175, 0.54, 0.25, 0.54, 0.25, 0.77, 0.175, 0.77] }
+  - id: zone-1-fat
+    label: { it: "Grasso attorno allo spazio portale (zona 1)", en: "Fat around the portal tract (zone 1)" }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.0, 0.15, 0.14, 0.13, 0.30, 0.25, 0.40, 0.50, 0.52, 0.62, 0.52, 0.86, 0.20, 0.89, 0.0, 0.86]
+  - id: central-vein
+    label: { it: "Vena centrolobulare", en: "Central vein" }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.725, 0.31, 0.79, 0.31, 0.79, 0.52, 0.725, 0.52] }
+  - id: zone-3-spared
+    label:
+      it: "Epatociti attorno alla vena quasi privi di grasso (zona 3)"
+      en: "Hepatocytes around the vein almost free of fat (zone 3)"
+    revealOrder: 4
+    shape: { type: polygon, coords: [0.58, 0.16, 0.86, 0.16, 0.86, 0.86, 0.58, 0.86] }

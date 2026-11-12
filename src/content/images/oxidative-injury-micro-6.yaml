@@ -1,0 +1,81 @@
+# License check (2026-11-08): same article, licence and provenance as oxidative-injury-micro-4 (PMC12664704, CC BY
+# 4.0, PubMed 41322939); this is panel d of Figure 2, cropped at full resolution from the figure embedded in the PMC
+# open-access PDF. Group hepatic-lipofuscin-omameuda (see oxidative-injury-micro-4). The source says only "iron
+# staining" and does not name the method, so `stain` keeps those words (stain code "other"). The legend gives ×100 for
+# panel a and ×200 for this panel, but the two 50 µm bars have the same length (99 px in these crops) and the fields
+# look alike, so both are labelled low power and the source's figure is kept in brackets; the review queue asks for
+# a check. Histology only; nothing identifies the patient.
+# Re-checked 2026-11-09: the crop matches the PDF figure at offset 1446,1086 (mean pixel difference 1.1/255); the
+# legend gives ×100 for panel a and ×200 for panels c and d, and all four bars stand for 50 µm.
+id: oxidative-injury-micro-6
+file: oxidative-injury-micro-6.jpg
+kind: micro
+sourceUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC12664704/figure/FIG2/
+author: Takahiko Omameuda, Yasuharu Onishi, Yukihiro Sanada, Yasunaru Sakuma, Hironori Yamaguchi
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-11-08
+modifications:
+  it: >-
+    Pannello d della Fig. 2 dell'articolo di origine, ritagliato dalla figura come è inclusa nel PDF dell'articolo
+    nell'archivio open access di PMC (2892 × 2164 px): ritaglio di 1414 × 1058 px a piena risoluzione, ricodificato in
+    JPEG; nessun ridimensionamento, nessuna modifica dei colori. La lettera del pannello, le punte di freccia gialle e
+    la barra di scala da 50 µm fanno parte della figura originale.
+  en: >-
+    Panel d of Fig. 2 of the source article, cropped from the figure as embedded in the article PDF of the PMC
+    open-access record (2892 × 2164 px): a 1414 × 1058 px crop at full resolution, re-encoded as JPEG; no resizing, no
+    colour change. The panel letter, the yellow arrowheads and the 50 µm scale bar belong to the original figure.
+attributionText: >-
+  Omameuda T, Onishi Y, Sanada Y, Sakuma Y, Yamaguchi H, "Hepatic Lipofuscin Deposition in Living Liver Donor
+  Candidate", Cureus 2025;17(10):e95770, doi:10.7759/cureus.95770, Fig. 2 (panel d), CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-09 }
+group: hepatic-lipofuscin-omameuda
+stain: iron stain
+magnification: low power (×200 in the source; its 50 µm bar is as long as in the ×100 H&E panel)
+lookFor:
+  it: "Cerca il blu in tutto il campo: non ce n'è; i granuli bruni restano del loro colore."
+  en: "Look for blue anywhere in the field: there is none; the brown granules keep their own colour."
+caption:
+  it: >-
+    La stessa biopsia con una colorazione per il ferro (la fonte non ne indica il metodo); le punte di freccia gialle
+    sono degli autori. Il campo ricorda quello in EE a piccolo ingrandimento, con una vena al centro. I nuclei sono rosa
+    per la controcolorazione e gli epatociti quasi incolori, così il pigmento risalta con il suo colore naturale:
+    granuli bruni raccolti fra cellule vicine, proprio dove li mostrava l'EE. In nessun punto compare il blu. Se fossero
+    emosiderina, cioè ferro di deposito, la colorazione li avrebbe resi blu, come nell'immagine con il blu di Prussia di
+    questa scheda. L'emosiderina è quindi esclusa e, insieme ai granuli fini e uniformi dentro gli epatociti visti in
+    EE, il quadro depone per la lipofuscina; gli autori hanno anche mostrato che i granuli si anneriscono con un metodo
+    all'argento (Fontana-Masson, pannello c della figura originale, qui non riprodotto). Perché conta in questa scheda:
+    ferro e lipofuscina sono entrambi bruni in EE ma stanno ai due capi opposti del processo. Il ferro libero alimenta
+    la reazione di Fenton, che produce il radicale ossidrile; la lipofuscina è ciò che resta dopo che i radicali hanno
+    danneggiato lipidi e proteine.
+  en: >-
+    The same biopsy with an iron stain (the source does not name the method); the yellow arrowheads are the authors'.
+    The field resembles the low-power H&E view, with a vein in the middle. The nuclei are pink from the counterstain and
+    the hepatocytes almost colourless, so the pigment stands out in its own natural colour: brown granules gathered
+    between neighbouring cells, just where the H&E showed them. Nothing anywhere has turned blue. Had they been
+    haemosiderin, that is stored iron, the stain would have coloured them blue, as in the Prussian blue image on this
+    card. So haemosiderin is excluded and, together with the fine, uniform granules inside hepatocytes on H&E, the
+    picture points to lipofuscin; the authors also showed the granules blackening with a silver method (Fontana-Masson,
+    panel c of the source figure, not reproduced here). Why it matters on this card: iron and lipofuscin are both brown
+    on H&E but stand at opposite ends of the process. Free iron drives the Fenton reaction, which makes the hydroxyl
+    radical; lipofuscin is what remains after radicals have damaged lipids and proteins.
+alt:
+  it: >-
+    Micrografia di fegato con una colorazione per il ferro: fondo rosa pallido con molti piccoli nuclei rosa; al centro
+    un lume vascolare chiaro e allungato scende dall'alto verso il basso a sinistra; granuli bruni sparsi a gruppi tra
+    gli epatociti, nessuna traccia di blu; quattro punte di freccia gialle indicano gruppi di granuli; in alto a
+    sinistra la lettera d in un riquadro bianco, in basso a destra una barra di scala da 50 µm.
+  en: >-
+    Micrograph of liver with an iron stain: a pale pink background with many small pink nuclei; in the middle a pale,
+    elongated vessel lumen runs from the top down to the lower left; brown granules in scattered groups between the
+    hepatocytes and no trace of blue; four yellow arrowheads point to groups of granules; the letter d in a white box
+    at the top left and a 50 µm scale bar at the bottom right.
+annotations:
+  - id: iron-negative-granules
+    label: { it: "Granuli bruni senza blu: colorazione per il ferro negativa", en: "Brown granules, no blue: iron stain negative" }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.565, 0.58, 0.60, 0.555, 0.65, 0.565, 0.665, 0.61, 0.63, 0.655, 0.58, 0.65]

@@ -29,8 +29,10 @@ learningObjectives:
     en: "List the enzymatic and non-enzymatic antioxidant defenses and where in the cell they act."
   - it: "Descrivere la risposta adattativa mediata da Nrf2/Keap1 e il doppio ruolo di p53."
     en: "Describe the Nrf2/Keap1 adaptive response and the dual role of p53."
-  - it: "Riconoscere esempi clinici: danno da riperfusione, tossicità da paracetamolo, malattia granulomatosa cronica, lipofuscina."
-    en: "Recognize clinical examples: reperfusion injury, acetaminophen toxicity, chronic granulomatous disease, lipofuscin."
+  - it: "Riconoscere esempi clinici: danno da riperfusione, tossicità da paracetamolo, sovraccarico di ferro, asbesto, malattia granulomatosa cronica, lipofuscina."
+    en: "Recognize clinical examples: reperfusion injury, acetaminophen toxicity, iron overload, asbestos, chronic granulomatous disease, lipofuscin."
+  - it: "Indicare come si riconosce il danno ossidativo nei tessuti: lesioni e pigmenti all'ematossilina-eosina, colorazione di Perls per il ferro, immunoistochimica per i prodotti di ossidazione."
+    en: "State how oxidative damage is recognized in tissue: lesions and pigments on H&E, the Perls stain for iron, immunohistochemistry for oxidation products."
 prerequisites: []
 relations:
   - type: sharesMechanism
@@ -111,6 +113,31 @@ chain:
     lab:
       it: "Iperammoniemia"
       en: "Raised blood ammonia"
+examQuestions:
+  - it: "Mi parli dei radicali liberi: che cosa sono le specie reattive dell'ossigeno, quali sono le principali e da dove derivano?"
+    en: "Tell me about free radicals: what are reactive oxygen species, which are the main ones, and where do they come from?"
+    focus: [definition, etiology, pathogenesis]
+    level: 1
+  - it: "Che cos'è la lipofuscina, in quali cellule si accumula e come la riconosce al microscopio?"
+    en: "What is lipofuscin, in which cells does it build up, and how do you recognize it under the microscope?"
+    focus: [micro, ancillary, high-yield]
+    level: 1
+  - it: "In che modo i radicali liberi danneggiano le membrane cellulari? Mi spieghi la perossidazione lipidica e che cosa la interrompe."
+    en: "How do free radicals damage cell membranes? Explain lipid peroxidation and what stops it."
+    focus: [pathogenesis, high-yield]
+    level: 2
+  - it: "Quali difese antiossidanti possiede la cellula, dove agisce ciascuna e come si attiva la risposta adattativa mediata da Nrf2?"
+    en: "Which antioxidant defenses does the cell have, where does each one act, and how is the Nrf2 adaptive response switched on?"
+    focus: [pathogenesis, high-yield, traps]
+    level: 2
+  - it: "Che cosa vede al microscopio nel fegato dopo un sovradosaggio di paracetamolo? Perché la necrosi è centrolobulare, e la biopsia basta a dimostrarne la causa?"
+    en: "What do you see under the microscope in the liver after an acetaminophen overdose? Why is the necrosis centrilobular, and is a biopsy enough to prove its cause?"
+    focus: [micro, clinical, ancillary]
+    level: 3
+  - it: "Perché il ferro libero rende pericoloso il perossido di idrogeno? Mi faccia degli esempi di malattie in cui il ferro alimenta il danno ossidativo e mi dica con quale colorazione metterebbe in evidenza il ferro nei tessuti."
+    en: "Why does free iron make hydrogen peroxide dangerous? Give examples of diseases in which iron fuels oxidative injury, and tell me which stain would show the iron in tissue."
+    focus: [pathogenesis, clinical, ancillary]
+    level: 3
 images:
   - id: oxidative-injury-micro-1
     role: micro
@@ -123,7 +150,7 @@ editionDependent: false
 sources:
   - source: rubin-8e
     chapter: "1"
-    pages: "5, 19, 30-37, 42-44"
+    pages: "5-7, 19, 30-37, 42-44"
   - source: rubin-8e
     chapter: "2"
     pages: "74"
@@ -131,7 +158,12 @@ sources:
     chapter: "6"
     pages: "314"
   - source: rubin-8e
+    chapter: "8"
+    pages: "361"
+  - source: rubin-8e
     chapter: "20"
-    pages: "850, 880"
-lastUpdated: 2026-11-03
+    pages: "850, 875, 880"
+  - source: toyokuni-1999
+  - source: zarkovic-2003
+lastUpdated: 2026-11-08
 status: published

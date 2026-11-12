@@ -1,6 +1,6 @@
 ---
 lang: it
-translatedFrom: 20c1680bacbf2ce7df802f5d775292d34c07e8e1738116109926872b389090f2
+translatedFrom: 548bdb5637b5de193b8ffb39c95bfdf1d15e7a2c0aa07ff677303404b9604b59
 ---
 
 ## Definizione ed epidemiologia
@@ -20,11 +20,11 @@ Senza apporto di sangue la cellula resta priva di ossigeno e di substrati energe
 
 ## Morfologia macroscopica
 
-- Gli **infarti pallidi (bianchi)** sono tipici degli organi solidi con un'unica fonte di apporto arterioso: cuore, rene e milza.<!--c:coagulative-necrosis-c014--> Il colore cambia in fretta: la zona tumefatta e rosso cupo delle prime ore diventa, entro il 1°–2° giorno, un'area molle, giallo pallido e dal margine netto, incorniciata da una fascia emorragica verso il tessuto sopravvissuto.<!--c:coagulative-necrosis-c015-->
+- Gli **infarti pallidi (bianchi)** sono tipici degli organi solidi con un'unica fonte di apporto arterioso: cuore, rene e milza.<!--c:coagulative-necrosis-c014--> Il colore cambia in fretta: all'inizio il territorio è tumefatto e rosso scuro, ma entro il 1°–2° giorno è diventato giallo pallido e spicca nettamente, con un orlo rosso emorragico nel tessuto vivo al suo margine.<!--c:coagulative-necrosis-c015-->
 - **Rene:** al taglio l'infarto è un triangolo pallido con il lato largo rivolto verso la capsula; una volta guarito lascia nella corticale un'incisura cicatriziale infossata e ben definita.<!--c:coagulative-necrosis-c016-->
 - **Cuore:** le alterazioni macroscopiche e microscopiche seguono un orologio prevedibile, riassunto nella tabella cronologica della sezione su complicanze e prognosi.
-- Anche gli **infarti rossi (emorragici)** contengono necrosi coagulativa, a cui si aggiunge sangue proveniente dai vasi vicini; seguono un'occlusione arteriosa o venosa e si osservano negli organi a doppia circolazione, come il polmone, o ricchi di circoli collaterali, come l'intestino tenue, e nel cuore riperfuso.<!--c:coagulative-necrosis-c019-->
-- La **gangrena secca** di un arto dopo un'occlusione arteriosa è, in sostanza, un grande infarto pallido (vedi [[gangrene]]).<!--c:coagulative-necrosis-c020-->
+- Anche gli **infarti rossi (emorragici)** sono necrosi coagulativa, ma nell'area morta filtra il sangue dei vasi vicini; possono seguire un'occlusione arteriosa o venosa e sono tipici delle sedi in cui il sangue può ancora raggiungere il tessuto morto: il polmone, con la sua doppia circolazione, l'intestino tenue, ricco di circoli collaterali, e il cuore quando l'arteria occlusa viene riaperta (riperfusione).<!--c:coagulative-necrosis-c019-->
+- **Gangrena secca:** quando un arto perde l'apporto arterioso, la parte morta dell'arto equivale a un unico grande infarto pallido (vedi [[gangrene]]).<!--c:coagulative-necrosis-c020-->
 
 ## Morfologia microscopica
 
@@ -34,7 +34,7 @@ Senza apporto di sangue la cellula resta priva di ossigeno e di substrati energe
   - **Picnosi:** il nucleo si riduce di volume e diventa scuro e denso.<!--c:coagulative-necrosis-c024-->
   - **Carioressi:** il nucleo picnotico si spezza in numerosi frammenti.<!--c:coagulative-necrosis-c025-->
   - **Cariolisi:** il nucleo sbiadisce perché la cromatina perde la colorabilità, oppure viene espulso.<!--c:coagulative-necrosis-c026-->
-- **Microscopia elettronica**, organello per organello: la membrana plasmatica presenta bolle (blebs) o interruzioni; i mitocondri si rigonfiano e accumulano depositi di calcio; il reticolo endoplasmatico è dilatato e i suoi ribosomi sono dispersi; i filamenti del citoscheletro si aggregano in ammassi.<!--c:coagulative-necrosis-c027-->
+- **Microscopia elettronica:** le alterazioni del danno reversibile progrediscono; tra l'altro, la membrana plasmatica presenta bolle (blebs) o interruzioni e i mitocondri si rigonfiano e calcificano.<!--c:coagulative-necrosis-c027-->
 - **Miocardio:** i miociti morti non si contraggono più, così a ogni sistole il muscolo sopravvissuto li stira in «fibre ondulate» (wavy fibers); l'intensa eosinofilia compare già entro il primo giorno, mentre la scomparsa completa dei nuclei richiede diversi giorni.<!--c:coagulative-necrosis-c028-->
 - **Rene:** in un infarto tutte le strutture dell'area, sia i glomeruli sia i tubuli, vanno incontro a necrosi coagulativa.<!--c:coagulative-necrosis-c029-->
 
@@ -42,12 +42,12 @@ Senza apporto di sangue la cellula resta priva di ossigeno e di substrati energe
 
 **Come si studia:**
 
-- **Autopsia (riscontro diagnostico):** oltre all'infarto che ha causato la morte, l'autopsia può portare alla luce infarti silenti: fino a un terzo degli infarti miocardici con onda Q non fatali non dà sintomi e viene riconosciuto solo in seguito, all'ECG o all'autopsia.<!--c:coagulative-necrosis-c070-->
-- **Esame macroscopico:** sulle sezioni trasversali dei ventricoli, la sede di un infarto transmurale indica l'arteria occlusa: parete anteriore, apice e porzione anteriore del setto per la discendente anteriore (interventricolare anteriore); parete posteriore basale e porzione posteriore del setto (infarto «inferiore») per la coronaria destra; parete laterale per la circonflessa.<!--c:coagulative-necrosis-c071--> Per datare un infarto se ne campiona il margine, dove comincia il tessuto vivo e parte la riparazione, perché il centro di un infarto esteso matura più tardi.<!--c:coagulative-necrosis-c072-->
+- **Autopsia (riscontro diagnostico):** oltre all'infarto che ha causato la morte, può svelarne altri più vecchi, mai diagnosticati in vita: un infarto può decorrere senza sintomi ed emergere, al più, solo a un ECG successivo, come accade fino a un infarto con onda Q non fatale su tre.<!--c:coagulative-necrosis-c070-->
+- **Esame macroscopico:** sulle sezioni trasversali dei ventricoli, la sede di un infarto transmurale indica l'arteria occlusa: parete anteriore, apice e porzione anteriore del setto per la discendente anteriore (interventricolare anteriore); parete posteriore basale e porzione posteriore del setto (infarto «inferiore») per la coronaria destra; parete laterale per la circonflessa.<!--c:coagulative-necrosis-c071-->
 - **EE:** si confronta l'area necrotica con il tessuto vitale adiacente: nel cuore l'infarto diventa più eosinofilo dopo circa 12–18 ore, e le cellule che ne raggiungono poi il margine (neutrofili, quindi macrofagi e tessuto di granulazione) ne indicano l'età, come nella tabella cronologica più avanti.<!--c:coagulative-necrosis-c073-->
-- La **microscopia elettronica** serve a cogliere le alterazioni più precoci: nei primi 20–30 minuti di ischemia totale il danno del miocita è ancora reversibile, con edema del sarcoplasma, lieve rigonfiamento dei mitocondri e perdita del glicogeno.<!--c:coagulative-necrosis-c074--> Dopo 30–60 minuti il danno è irreversibile: i mitocondri sono molto rigonfi, con creste disorganizzate e densità amorfe nella matrice; la cromatina si addensa lungo la membrana nucleare; il sarcolemma presenta interruzioni focali.<!--c:coagulative-necrosis-c075-->
-- **Tricromica di Masson:** colora il collagene in blu-verde, così un infarto guarito risalta come una cicatrice compatta e povera di cellule, dal margine netto rispetto al miocardio sopravvissuto.<!--c:coagulative-necrosis-c076-->
-- **Calcificazione:** gli infarti renali di vecchia data e le papille necrotiche possono calcificare; i sali di calcio appaiono blu intenso con l'ematossilina e neri con la colorazione di von Kossa, più specifica (vedi [[dystrophic-calcification]]).<!--c:coagulative-necrosis-c077-->
+- **Microscopia elettronica:** le prime alterazioni si vedono solo a questo livello; per circa 20–30 minuti dall'arresto completo del flusso il miocita può ancora recuperare, e le alterazioni sono lievi (glicogeno esaurito, sarcoplasma e mitocondri lievemente rigonfi).<!--c:coagulative-necrosis-c074--> Dopo 30–60 minuti il danno non è più reversibile: il sarcolemma presenta interruzioni focali, la cromatina è addensata alla periferia del nucleo e i mitocondri, molto rigonfi, contengono densità amorfe.<!--c:coagulative-necrosis-c075-->
+- **Tricromica di Masson:** un infarto guarito appare come un'area di collagene blu-verde dai confini netti, quasi priva di cellule, accanto ai miociti sopravvissuti.<!--c:coagulative-necrosis-c076-->
+- **Calcificazione:** gli infarti renali di vecchia data e le papille necrotiche possono calcificare; all'EE il minerale appare blu scuro, e la colorazione di von Kossa, più specifica, lo conferma colorandolo di nero (vedi [[dystrophic-calcification]]).<!--c:coagulative-necrosis-c077-->
 
 ## Presentazione clinica
 
@@ -72,12 +72,12 @@ Quando la membrana plasmatica dei miociti morti si rompe, il loro contenuto pass
 | 2°–3° giorno | — | I neutrofili, che entrano solo dal margine perfuso, raggiungono il massimo<!--c:coagulative-necrosis-c037--> |
 | 3°–5° giorno | Centro necrotico giallo dentro un orlo rosso iperemico<!--c:coagulative-necrosis-c064--> | — |
 | 5°–7° giorno | — | I macrofagi rimuovono il muscolo morto; i miofibroblasti depongono collagene dal margine verso il centro<!--c:coagulative-necrosis-c038--> |
-| 2–3 settimane<!--c:coagulative-necrosis-c018--> | Area infossata, molle, gelatinosa<!--c:coagulative-necrosis-c018--> | — |
-| Dopo 4 settimane (guarigione)<!--c:coagulative-necrosis-c039--> | Cicatrice compatta, retratta, bianco-grigiastra<!--c:coagulative-necrosis-c065--> | Tessuto fibroso denso, sempre meno cellulato man mano che matura<!--c:coagulative-necrosis-c039--> |
+| 2–3 settimane<!--c:coagulative-necrosis-c018--> | Area infossata, di aspetto gelatinoso<!--c:coagulative-necrosis-c018--> | — |
+| Dopo 4 settimane (guarigione)<!--c:coagulative-necrosis-c039--> | Cicatrice bianco-grigiastra, compatta e retratta<!--c:coagulative-necrosis-c065--> | Tessuto fibroso denso, sempre meno cellulato man mano che matura<!--c:coagulative-necrosis-c039--> |
 
 Altri esiti:
 
-- **Rottura:** la parete necrotica è più debole tra il 2° e il 7° giorno, quando le proteasi delle cellule infiammatorie ne hanno digerito la matrice e il nuovo collagene non è ancora stato deposto; in questo intervallo la rottura della parete libera di un infarto transmurale è più frequente e di solito uccide per emopericardio e tamponamento cardiaco.<!--c:coagulative-necrosis-c067-->
+- **Rottura:** la rottura della parete libera complica gli infarti transmurali e raggiunge la massima frequenza dal 2° al 7° giorno: a quel punto le cellule infiammatorie hanno demolito la matrice della parete morta, mentre il collagene di riparazione è ancora scarso, così la parete si lacera facilmente; il sangue riempie allora il pericardio (emopericardio) e il tamponamento cardiaco che ne deriva è di solito mortale.<!--c:coagulative-necrosis-c067-->
 - Il centro di un infarto esteso può restare per mesi irraggiungibile dai leucociti, e i miociti morti possono persistere «mummificati»; per datare un infarto esteso conviene esaminarne il margine.<!--c:coagulative-necrosis-c040-->
 - Le aree necrotiche di vecchia data, per esempio gli infarti renali guariti o le papille necrotiche, vanno spesso incontro a [[dystrophic-calcification]].<!--c:coagulative-necrosis-c041-->
 - Se il tessuto morto si infetta, si ha un infarto settico, che può evolvere in ascesso.<!--c:coagulative-necrosis-c042-->
@@ -93,7 +93,7 @@ Altri esiti:
 | [[apoptosis]] | Singole cellule o piccoli gruppi tra cellule vitali, frammenti circondati da membrana (corpi apoptotici), nessuna infiammazione.<!--c:coagulative-necrosis-c046--> | Quadro: singole cellule sparse, senza neutrofili |
 | [[hydropic-swelling]] | Danno reversibile: cellula rigonfia e pallida, con nucleo integro.<!--c:coagulative-necrosis-c047--> | Nucleo normale all'EE |
 | [[fibrinoid-necrosis]] | Deposito intensamente eosinofilo di proteine plasmatiche nella parete di un vaso danneggiato.<!--c:coagulative-necrosis-c048--> | Sede nella parete vasale |
-| Infarto riperfuso ([[ischemia-reperfusion-injury]]) | Il flusso ritorna in un infarto in evoluzione: l'area è emorragica fin dall'inizio, i neutrofili la invadono tutta invece di fermarsi al margine e le bande di contrazione (bande trasversali spesse e irregolari di sarcomeri ipercontratti) sono diffuse, mentre nell'occlusione persistente compaiono al più ai margini.<!--c:coagulative-necrosis-c069--> | Emorragia e bande di contrazione in tutto l'infarto |
+| Infarto riperfuso ([[ischemia-reperfusion-injury]]) | Il flusso ritorna in un infarto in evoluzione: l'infarto è rosso (emorragico) fin dall'inizio; i neutrofili ne raggiungono tutta l'estensione, non solo il margine; e molti miociti mostrano bande di contrazione, bande rosa che attraversano la fibra, formate da ammassi di sarcomeri ipercontratti (nell'occlusione persistente compaiono, semmai, solo al margine).<!--c:coagulative-necrosis-c069--> | Emorragia e bande di contrazione in tutto l'infarto |
 
 ## Punti chiave
 

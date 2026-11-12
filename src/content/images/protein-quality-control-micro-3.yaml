@@ -1,0 +1,90 @@
+# License check (2026-11-09): Commons file page {{Information}} gives Source {{own}}, Author User:Tulemo, date
+# 2021-02-08, license {{self|cc-by-sa-4.0}}; extmetadata LicenseShortName "CC BY-SA 4.0", AttributionRequired true, no
+# Restrictions. The file has one version, uploaded by Tulemo (UploadWizard, "own work"), so the uploader is the
+# creator. CC BY-SA is approved as a class by owner decision O7 (plan/v2-plan.md, 2026-11-03), hence ownerApproved:
+# true. Histology only; nothing identifies the patient. The file is used byte for byte (SHA-1 e52752d5… matches the
+# Commons record). The arrowhead and the 20 µm scale bar are part of the original image. The source states the stain
+# and the bar length but no objective or magnification, so `magnification` is our reading of the field (high power)
+# and no `mpp` is derived from the bar. Annotations placed by inspection on a gridded copy of the file.
+id: protein-quality-control-micro-3
+file: protein-quality-control-micro-3.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Lewy_body_in_the_substantia_nigra_from_a_person_with_Parkinson%27s_disease.jpg
+author: Tulemo
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+retrievedAt: 2026-11-09
+modifications: none
+attributionText: >-
+  Tulemo, "Lewy body in the substantia nigra from a person with Parkinson's disease", via Wikimedia Commons, CC BY-SA
+  4.0
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-09 }
+stain: H&E
+magnification: "high power (the source gives only a 20 µm scale bar)"
+lookFor:
+  it: "Trova il neurone pieno di pigmento bruno, poi cerca sotto il nucleo la sfera rosa, liscia, con un sottile bordo chiaro: è il corpo di Lewy."
+  en: "Find the neuron full of brown pigment, then look below its nucleus for the smooth pink sphere with a thin pale rim: that is the Lewy body."
+caption:
+  it: >-
+    Sostanza nera di una persona morta con malattia di Parkinson, EE, forte ingrandimento (la barra nera in basso a
+    destra misura 20 µm; la punta di freccia fa parte dell'immagine originale). Prima orientati: il fondo rosa pallido è
+    neuropilo, i piccoli nuclei scuri sparsi appartengono per lo più a cellule gliali e a sinistra un capillare contiene
+    globuli rossi di un rosso vivo. Al centro c'è un grande neurone. Il suo citoplasma è pieno di granuli bruni
+    grossolani di neuromelanina, un pigmento che hanno anche i neuroni sani della sostanza nera: il colore bruno,
+    quindi, non è la lesione. Nella parte alta della cellula si vede il nucleo, chiaro, con un piccolo nucleolo. Ora
+    segui la punta di freccia: sotto il nucleo c'è una pallina liscia rosa-violacea, separata dal pigmento da un sottile
+    bordo chiaro. È un corpo di Lewy, un'inclusione fatta di filamenti di alfa-sinucleina, una proteina dei neuroni che
+    si è ripiegata male ed è stata impacchettata invece di essere eliminata. Pigmento e inclusione potrebbero essere
+    collegati: la sintesi della neuromelanina passa per l'ossidazione delle catecolamine, e si ritiene che lo stress
+    ossidativo che ne deriva favorisca il mal ripiegamento dell'alfa-sinucleina. La parkina, una ligasi E3
+    dell'ubiquitina, collega questa lesione al controllo di qualità delle proteine: le sue mutazioni causano alcune
+    forme ereditarie della malattia. Nel Parkinson molti neuroni pigmentati della sostanza nera vanno perduti, e infatti
+    a occhio nudo la sostanza nera perde il suo colore scuro; solo una minoranza dei neuroni superstiti contiene un
+    corpo di Lewy come questo.
+  en: >-
+    Substantia nigra of a person who died with Parkinson disease, H&E, high power (the black bar at the lower right is
+    20 µm; the arrowhead is part of the original image). Get your bearings first: the pale pink background is neuropil,
+    the small dark nuclei scattered around belong mostly to glial cells, and on the left a capillary holds bright red
+    blood cells. In the centre lies one large neuron. Its cytoplasm is crowded with coarse brown granules of
+    neuromelanin, a pigment that healthy neurons of the substantia nigra also carry, so the brown colour is not the
+    lesion. Near the top of the cell is its pale nucleus with a small nucleolus. Now follow the arrowhead: below the
+    nucleus sits a smooth pink-violet ball, set off from the pigment by a thin clear rim. This is a Lewy body, an
+    inclusion built from filaments of alpha-synuclein, a neuronal protein that misfolded and was packed away instead of
+    being cleared. The pigment and the inclusion may be connected: making neuromelanin involves the oxidation of
+    catecholamines, and the oxidative stress this generates is thought to favour alpha-synuclein misfolding. Parkin, an
+    E3 ubiquitin ligase, ties this lesion to protein quality control: its mutations cause some inherited forms of the
+    disease. In Parkinson disease many pigmented neurons of the substantia nigra are lost, which is why, to the naked
+    eye, the substantia nigra loses its dark colour; only a minority of the neurons that survive contain a Lewy body
+    like this one.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina di tessuto cerebrale su fondo rosa pallido. Al centro un grande neurone è pieno
+    di granuli bruni grossolani; nella parte alta si vede un nucleo chiaro e più in basso un corpo rotondo, liscio,
+    rosa-violaceo, con un sottile bordo chiaro, indicato a destra da una punta di freccia nera. A sinistra globuli rossi
+    di un rosso vivo in un capillare; in basso a destra una barra di scala nera.
+  en: >-
+    H&E micrograph of brain tissue on a pale pink background. In the centre, a large neuron is filled with coarse brown
+    granules; near its top is a pale nucleus, and below it a smooth, round, pink-violet body with a thin clear rim,
+    pointed at by a black arrowhead on its right. On the left, bright red blood cells lie in a capillary; a black scale
+    bar is at the lower right.
+annotations:
+  - id: lewy-body
+    label: { it: "Corpo di Lewy: inclusione rotonda rosa con un sottile alone chiaro", en: "Lewy body: round pink inclusion with a thin pale halo" }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.558, 0.483, 0.558, 0.541, 0.522, 0.583, 0.47, 0.583, 0.434, 0.541, 0.434, 0.483, 0.47, 0.441, 0.522, 0.441]
+  - id: neuromelanin
+    label: { it: "Neuromelanina: il normale pigmento bruno di questi neuroni", en: "Neuromelanin: the normal brown pigment of these neurons" }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.405, 0.3, 0.44, 0.27, 0.5, 0.255, 0.545, 0.27, 0.5, 0.295, 0.47, 0.33, 0.455, 0.39, 0.445, 0.45, 0.41, 0.46, 0.4, 0.38]
+  - id: neuron-nucleus
+    label: { it: Nucleo del neurone con il nucleolo, en: Nucleus of the neuron with its nucleolus }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.567, 0.342, 0.567, 0.394, 0.541, 0.43, 0.503, 0.43, 0.477, 0.394, 0.477, 0.342, 0.503, 0.306, 0.541, 0.306]

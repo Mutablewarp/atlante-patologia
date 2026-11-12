@@ -1,6 +1,6 @@
 ---
 lang: it
-translatedFrom: 177c1751c3c25b741d664dddc1528804b1265bd4df033628ed56a9f96b7f560d
+translatedFrom: 3c0623630186e80fe061f48e83bbfe7e77303412930df23481dcb4f4ab9255af
 ---
 
 ## Definizione ed epidemiologia
@@ -50,9 +50,9 @@ Non applicabile.
 - **Nucleo:** la cromatina si condensa (picnosi) e il nucleo si frammenta (carioressi), all'interno di una membrana cellulare integra.<!--c:apoptosis-c038-->
 - **Corpo cellulare:** la cellula apoptotica si raggrinzisce, ma la sua membrana plasmatica resta integra.<!--c:apoptosis-c073--> Il suo citoplasma può diventare eosinofilo all'EE, come nei cheratinociti apoptotici dell'eritema multiforme; i corpi acidofili dell'epatite virale sono epatociti apoptotici con citoplasma intensamente eosinofilo.<!--c:apoptosis-c074-->
 - **Citoplasma e membrana:** gli organelli vanno incontro a segregazione, la membrana plasmatica forma bolle (blebs) e la cellula si frammenta in corpi apoptotici delimitati da membrana, molti dei quali privi di materiale nucleare.<!--c:apoptosis-c039-->
-- **Nessun infiltrato infiammatorio** attorno alle cellule morenti.<!--c:apoptosis-c040-->
-- Esempi classici: gli epatociti apoptotici nell'epatite virale e i cheratinociti apoptotici nell'eritema multiforme.<!--c:apoptosis-c041--> Nell'epatite virale acuta i singoli epatociti morti diventano piccoli **corpi acidofili**, fortemente eosinofili, talvolta con un nucleo picnotico.<!--c:apoptosis-c075--> Il virus della febbre gialla spinge alcuni epatociti verso l'apoptosi: sono i **corpi di Councilman**, staccati dalle cellule epatiche circostanti e con citoplasma intensamente eosinofilo.<!--c:apoptosis-c042--> Nel lichen planus i cheratinociti apoptotici formano **corpi colloidi (di Civatte)**, rotondi ed eosinofili, frammisti all'infiltrato infiammatorio della giunzione dermo-epidermica.<!--c:apoptosis-c076-->
-- I **macrofagi a corpi tingibili** sono macrofagi carichi di detriti nucleari fagocitati e costituiscono un reperto normale nei centri germinativi.<!--c:apoptosis-c077--> Nel linfoma di Burkitt i macrofagi che hanno inglobato cellule tumorali apoptotiche sono sparsi tra le cellule neoplastiche e creano l'aspetto a **cielo stellato**.<!--c:apoptosis-c078-->
+- Le cellule che muoiono **non provocano**, di per sé, **infiammazione**.<!--c:apoptosis-c040-->
+- Esempi classici: gli epatociti apoptotici nell'epatite virale e i cheratinociti apoptotici nell'eritema multiforme.<!--c:apoptosis-c041--> I corpi acidofili **non sono specifici** dell'epatite virale: si ritrovano anche in molte altre epatopatie.<!--c:apoptosis-c075--> Il virus della febbre gialla spinge alcuni epatociti verso l'apoptosi: sono i **corpi di Councilman**, staccati dalle cellule epatiche circostanti e con citoplasma intensamente eosinofilo.<!--c:apoptosis-c042--> Nel lichen planus i cheratinociti apoptotici formano **corpi colloidi (di Civatte)**, rotondi ed eosinofili, frammisti all'infiltrato infiammatorio della giunzione dermo-epidermica.<!--c:apoptosis-c076-->
+- I **macrofagi a corpi tingibili** sono macrofagi carichi di detriti nucleari fagocitati e costituiscono un reperto normale nei centri germinativi.<!--c:apoptosis-c077--> Il linfoma di Burkitt ha un aspetto a **cielo stellato**: tra le distese di cellule tumorali in rapida proliferazione (il cielo) spiccano, come stelle, i macrofagi che hanno fagocitato cellule tumorali apoptotiche.<!--c:apoptosis-c078-->
 
 ## Colorazioni speciali, IIC e reperti molecolari
 
@@ -62,10 +62,10 @@ Non applicabile.
 **Come si studia:**
 
 - **Prelievo e campionamento:** l'apoptosi colpisce singole cellule sparse, quindi non c'è una lesione macroscopica da campionare; è un reperto microscopico delle comuni sezioni istologiche, per esempio del fegato nell'epatite virale acuta o di una biopsia cutanea nell'eritema multiforme.<!--c:apoptosis-c079-->
-- **EE:** si cercano cellule isolate e raggrinzite, con citoplasma denso ed eosinofilo e nucleo scuro, condensato o frammentato, circondate da cellule sane e senza infiammazione.<!--c:apoptosis-c080--> L'EE coglie solo le fasi tardive e, poiché i frammenti vengono fagocitati in fretta, una quota consistente di apoptosi può passare inosservata.<!--c:apoptosis-c081-->
+- **EE:** si cercano, tra cellule sane, cellule isolate e raggrinzite, con citoplasma denso ed eosinofilo e nucleo scuro, condensato o frammentato; le cellule che muoiono non richiamano neutrofili, ma se la causa è immunitaria, come nell'epatite virale o nell'eritema multiforme, sono presenti linfociti.<!--c:apoptosis-c080--> L'EE coglie solo le fasi tardive e, poiché i frammenti vengono fagocitati in fretta, una quota consistente di apoptosi può passare inosservata.<!--c:apoptosis-c081-->
 - **Immunoistochimica:** gli anticorpi contro la caspasi-3 clivata (attiva), o contro substrati delle caspasi in forma clivata come PARP, marcano le cellule apoptotiche nella sezione.<!--c:apoptosis-c082-->
 - **TUNEL:** l'enzima desossinucleotidil-transferasi terminale (TdT) aggiunge nucleotidi marcati alle estremità 3′ libere del DNA frammentato; con una rivelazione alla perossidasi i nuclei apoptotici si colorano in bruno nella sezione.<!--c:apoptosis-c083-->
-- **Microscopia elettronica**, il metodo di riferimento: cromatina densa addossata all'involucro nucleare, frammenti nucleari, membrana plasmatica integra con bolle (blebs) superficiali e corpi apoptotici delimitati da membrana, con organelli conservati, talvolta già all'interno dei fagociti.<!--c:apoptosis-c084-->
+- La **microscopia elettronica** è il metodo di riferimento, anche se esamina solo un minuscolo frammento di tessuto: mostra che la membrana plasmatica della cellula apoptotica resta integra, che la cromatina è compattata in dense semilune addossate all'involucro nucleare e che i corpi apoptotici conservano organelli riconoscibili, alcuni già all'interno dei fagociti.<!--c:apoptosis-c084-->
 - **Esami sul DNA e sulle cellule:** all'elettroforesi su gel di agarosio il DNA delle cellule apoptotiche forma una «scala» di frammenti distanziati di circa 180 paia di basi.<!--c:apoptosis-c085--> L'annessina V si lega alla fosfatidilserina esposta, mentre un colorante che entra solo nelle cellule con membrana danneggiata, come lo ioduro di propidio, distingue le cellule necrotiche.<!--c:apoptosis-c086-->
 
 ## Presentazione clinica
@@ -74,7 +74,7 @@ Non applicabile.
 
 - **Neoplasie:** la perdita di p53 permette alle mutazioni di accumularsi, e la sovraespressione di Bcl-2 si riscontra in alcuni linfomi aggressivi.<!--c:apoptosis-c045--> Nel linfoma follicolare una traslocazione pone Bcl-2 sotto il controllo del promotore della catena pesante delle immunoglobuline, per cui i linfociti B sopravvivono e si accumulano.<!--c:apoptosis-c046-->
 - **Infezioni virali persistenti e oncogenesi:** molti virus bloccano l'apoptosi; il papillomavirus umano inattiva p53.<!--c:apoptosis-c047-->
-- **Autoimmunità:** mancata eliminazione dei cloni linfocitari autoreattivi.<!--c:apoptosis-c048--> Nel lupus eritematoso sistemico la rimozione delle cellule morenti è difettosa; il materiale nucleare dei detriti apoptotici (DNA legato agli istoni, RNA legato a proteine) attiva le cellule dendritiche e i linfociti B autoreattivi attraverso i recettori Toll-like.<!--c:apoptosis-c087-->
+- **Autoimmunità:** mancata eliminazione dei cloni linfocitari autoreattivi.<!--c:apoptosis-c048--> Nel lupus eritematoso sistemico le cellule morenti vengono rimosse male e i detriti apoptotici si accumulano; i recettori Toll-like delle cellule dendritiche e dei linfociti B autoreattivi riconoscono allora il loro materiale nucleare (DNA legato agli istoni, RNA legato a proteine), soprattutto quando vi si sono legati gli autoanticorpi, e ciò alimenta la risposta autoimmune.<!--c:apoptosis-c087-->
 - **Leucemia mieloide cronica:** una lesione genetica antiapoptotica fa accumulare i granulociti.<!--c:apoptosis-c049-->
 
 **Apoptosi eccessiva**

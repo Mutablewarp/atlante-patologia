@@ -1,0 +1,83 @@
+# License check (2026-11-08): Commons file page {{Information}} gives Source {{own}}, Author [[User:Patho]],
+# Permission {{cc-by-sa-3.0}}; extmetadata LicenseShortName "CC BY-SA 3.0", AttributionRequired true, no Restrictions.
+# CC BY-SA is approved as a class by owner decision O7 (plan/v2-plan.md, 2026-11-03), hence ownerApproved: true.
+# The file page lists the uploader's H&E, CD20, CD3, CD10, Bcl-2 and Mib-1 images of this reactive node as other
+# versions. It states no magnification: "medium power" is our reading of the field. Annotation 1 is the uploader's
+# own ImageNote box ("the reactive germinal center ist bcl-2 negative", x 739, y 507, w 470, h 636 on
+# 1920 × 1280), normalised; annotation 2 was placed by inspection.
+id: hyperplasia-micro-6
+file: hyperplasia-micro-6.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Follicular_lymphatic_hyperplasia,_Bcl-2.jpg
+author: Patho (Wikimedia Commons user)
+license: CC-BY-SA-3.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/3.0/
+retrievedAt: 2026-11-08
+modifications:
+  it: >-
+    Riduzione dell'originale da 1920 × 1280 px a 1600 × 1067 px e ricodifica in JPEG (qualità 82, metadati rimossi);
+    nessun ritaglio, nessuna modifica dei colori. Questo adattamento è condiviso con la stessa licenza (CC BY-SA 3.0).
+  en: >-
+    Downscaled the 1920 × 1280 px original to 1600 × 1067 px and re-encoded as JPEG (quality 82, metadata stripped);
+    no crop, no colour change. This adaptation is shared under the same licence (CC BY-SA 3.0).
+attributionText: >-
+  Patho, "Follicular lymphatic hyperplasia, Bcl-2", via Wikimedia Commons, CC BY-SA 3.0
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+stain: immunohistochemistry for Bcl-2
+magnification: medium power
+orientation:
+  it: "In alto la capsula e il grasso perilinfonodale; il follicolo si trova nella corticale, subito sotto."
+  en: "Capsule and perinodal fat at the top; the follicle lies in the cortex just beneath them."
+lookFor:
+  it: "Guarda solo il centro germinativo: blu (negativo) è compatibile con un'iperplasia reattiva; centri follicolari rossi farebbero pensare a un linfoma follicolare."
+  en: "Judge the germinal centre only: blue (negative) fits reactive hyperplasia; red follicle centres would point to follicular lymphoma."
+caption:
+  it: >-
+    Iperplasia follicolare reattiva di un linfonodo, immunoistochimica per Bcl-2 (cellule positive in rosso, nuclei
+    controcolorati in blu), a medio ingrandimento. Orientati prima: in alto ci sono la capsula e il grasso perilinfonodale, e
+    il follicolo si trova subito sotto. Al centro c'è il centro germinativo, un ovale di cellule più grandi e più
+    chiare: è quasi tutto blu, cioè negativo per Bcl-2. Tutt'intorno, l'orlo compatto di piccoli linfociti (la zona
+    mantellare) e molti piccoli linfociti tra un follicolo e l'altro sono rossi: queste cellule normali dimostrano che
+    la reazione ha funzionato, quindi il centro germinativo vuoto è un vero negativo. È un'iperplasia compensatoria, di
+    tipo immunitario: i linfociti B che incontrano un antigene proliferano nei centri germinativi, i follicoli si
+    ingrandiscono e il linfonodo aumenta di volume, e il quadro regredisce quando lo stimolo scompare. Bcl-2 è una
+    proteina che blocca l'apoptosi. La sua assenza nei centri germinativi reattivi aiuta a distinguere questa
+    iperplasia dal linfoma follicolare, in cui la traslocazione t(14;18) sposta il gene BCL2 accanto al locus della
+    catena pesante delle immunoglobuline e ne provoca così l'iperespressione: oltre il 90% dei casi esprime la proteina
+    nei follicoli neoplastici. Attenzione: valuta i centri germinativi e non il linfonodo nel suo insieme, perché, come si vede qui, i piccoli
+    linfociti attorno al follicolo sono comunque positivi.
+  en: >-
+    Reactive follicular hyperplasia in a lymph node, immunohistochemistry for Bcl-2 (positive cells red, nuclei
+    counterstained blue), medium power. Orient yourself first: the capsule and the perinodal fat are at the top, and
+    the follicle lies just beneath them. In the centre is the germinal centre, an oval of larger, paler cells: it is
+    almost entirely blue, that is, Bcl-2 negative. Around it, the dense rim of small lymphocytes (the mantle zone) and
+    many small lymphocytes between the follicles are red: these normal cells show that the stain has worked, so the
+    empty germinal centre is a true negative. This is a compensatory, immune hyperplasia: B cells that meet an antigen
+    proliferate in the germinal centres, the follicles enlarge and the node swells, and the change regresses once the
+    stimulus is gone. Bcl-2 is a protein that blocks apoptosis. Its absence from reactive germinal centres helps
+    separate this hyperplasia from follicular lymphoma, in which the t(14;18) translocation joins the BCL2 gene to the
+    immunoglobulin heavy-chain locus, which drives its overexpression: more than 90% of cases express the protein in
+    the neoplastic follicles. Pitfall: judge the germinal centres, not the node as a whole, because, as this image shows,
+    the small lymphocytes around the follicle are positive anyway.
+alt:
+  it: >-
+    Micrografia di linfonodo colorata in rosso e blu: cellule adipose bianche lungo il margine superiore; sotto, al
+    centro, un'ampia area ovale di cellule azzurro chiaro, circondata da uno spesso anello di piccole cellule
+    fittamente stipate colorate in rosso; altre cellule rosse e blu occupano il resto del campo.
+  en: >-
+    Red-and-blue micrograph of a lymph node: white fat cells along the top edge; below them, in the centre, a large
+    oval area of pale blue cells, surrounded by a thick ring of densely packed small red-stained cells; more red and
+    blue cells fill the rest of the field.
+annotations:
+  - id: germinal-centre-negative
+    label: { it: "Centro germinativo negativo per Bcl-2", en: "Bcl-2-negative germinal centre" }
+    revealOrder: 1
+    shape: { type: rect, coords: [0.385, 0.396, 0.245, 0.497] }
+  - id: mantle-zone-positive
+    label: { it: "Zona mantellare: piccoli linfociti positivi per Bcl-2", en: "Mantle zone: Bcl-2-positive small lymphocytes" }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.31, 0.12, 0.45, 0.07, 0.60, 0.07, 0.69, 0.13, 0.70, 0.30, 0.66, 0.40, 0.62, 0.40, 0.58, 0.385, 0.45, 0.385, 0.385, 0.42, 0.33, 0.40, 0.30, 0.30]
