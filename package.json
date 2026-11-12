@@ -29,6 +29,10 @@
     "agent:manifest": "node scripts/agent/manifest.mjs",
     "agent:packet": "node scripts/agent/packet.mjs",
     "card:check": "node scripts/agent/card-check.mjs",
+    "agent:next": "node scripts/agent/next.mjs",
+    "agent:record": "node scripts/agent/record.mjs",
+    "agent:commit": "node scripts/agent/commit-finished.mjs",
+    "agent:finalize": "node scripts/agent/finalize-batch.mjs",
     "prepush": "npm run check && npm test && npm run contrast && npm run guard && npm run test:e2e:linux",
     "icons": "node scripts/icons.mjs",
     "validate:entity": "node scripts/validate-entity.mjs"

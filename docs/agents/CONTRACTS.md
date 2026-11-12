@@ -69,7 +69,7 @@ With `--stage`, a gate that cannot apply yet is skipped: before `translator` the
 
 ## 5. Running a batch
 
-- `node scripts/agent/next.mjs --batch W02 [--max 8]` prints `{ "packets": ".work/packets", "cards": [{ "id", "from" }] }`. `from` is the first stage with no `done` report. It takes cards in manifest order, P0 first, skips published cards and cards whose stages are all done, and builds the missing packets.
+- `node scripts/agent/next.mjs --batch W02 [--max 8]` prints `{ "packets": ".work/packets", "cards": [{ "id", "from" }] }`. `from` is the first stage with no `done` report. It takes cards in manifest order, P0 first, skips published cards, `pattern` rows and cards whose stages are all done, and builds the missing packets. A stage whose report is `blocked` counts as not done: the card comes back with that stage in `from` until a person fixes the cause.
 - `node scripts/agent/commit-finished.mjs [--batch W02]`: for each card whose six stages are `done` and whose `card:check` passes, stage exactly the card's files (the entity folder, the ledger, its image yaml and image files) and commit them as `feat(<id>): add the card (<kind>, <priority>)`, with the trailer given in the environment variable `AGENT_COAUTHOR`. A card that fails is skipped with a one-line reason. Never `git add -A`.
 - `node scripts/agent/finalize-batch.mjs --batch W02`: rebuilds the entries of `src/lib/self-verified.ts` from the ledgers (rows whose `verifier` contains `author` or `fixer`, with exact counts; `tests/ledger-verifier.test.ts` checks them) and merges the fragments (§6). It prints a summary and commits nothing.
 - `scripts/agent/content-batch.workflow.js` is the Workflow script for one sub-batch: the cards of `next.mjs`, one agent per card and stage, a blocked card stops while the others go on, results kept small.
@@ -81,6 +81,6 @@ Agents never edit a shared file (`src/content/sources.yaml`, `src/content/module
 - `sources.yaml`: entries in the format of `src/content/sources.yaml`;
 - `review-queue.md`: rows in the format of `docs/REVIEW_QUEUE.md`;
 - `missing-assets.md`: rows in the format of `docs/MISSING_ASSETS.md`;
-- `planned.yaml`: ids to add to the `planned` list of a module in `modules.yaml`.
+- `planned.yaml`: a YAML list of `{ module, id, names: { it, en } }`; each id is added to the `planned` list of its module in `modules.yaml` (a known id is skipped).
 
 `finalize-batch.mjs` merges them: it keeps one entry per id and one row per distinct text.
