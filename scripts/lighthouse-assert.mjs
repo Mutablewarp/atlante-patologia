@@ -17,7 +17,8 @@ const THRESHOLD = 0.9;
 const DEBUG_PORT = Number(process.env.LH_DEBUG_PORT ?? 9333);
 const paths = process.argv.slice(2).length ? process.argv.slice(2) : ['/it/', '/en/atlas/', '/it/about/'];
 
-const server = createDistServer();
+// gzip, as GitHub Pages sends text: uncompressed, the 170 KB card pages lose about 10 performance points (docs/PROGRESS.md).
+const server = createDistServer({ gzip: true });
 await new Promise((resolve) => server.listen(0, '127.0.0.1', resolve));
 const origin = `http://127.0.0.1:${server.address().port}`;
 
