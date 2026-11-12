@@ -136,7 +136,7 @@ examQuestions:
     level: 2
   - it: "Come distingue l'emosiderosi dall'emocromatosi ereditaria, al microscopio e con gli esami di laboratorio?"
     en: "How do you tell hemosiderosis from hereditary hemochromatosis, under the microscope and with laboratory tests?"
-    focus: [micro, diagnosis, traps]
+    focus: [micro, diagnosis, ancillary, differential, traps]
     level: 3
   - it: "Davanti a un pigmento bruno in una sezione istologica, quali colorazioni userebbe e come arriva a riconoscerlo?"
     en: "Faced with a brown pigment in a tissue section, which stains would you use, and how do you work out what it is?"
@@ -145,9 +145,16 @@ examQuestions:
 images:
   - id: pigment-accumulation-gross-1
     role: gross
+    pairWith: pigment-accumulation-micro-5
   - id: pigment-accumulation-micro-1
     role: micro
   - id: pigment-accumulation-micro-2
+    role: micro
+  - id: pigment-accumulation-micro-3
+    role: micro
+  - id: pigment-accumulation-micro-5
+    role: micro
+  - id: pigment-accumulation-micro-6
     role: micro
 reviewStatus: ai-generated-unreviewed
 editionDependent: false
@@ -183,5 +190,5 @@ sources:
     chapter: "32"
     pages: "1442, 1499"
   - source: walker-1988 # second source of pigment-accumulation-c072
-lastUpdated: 2026-11-08
+lastUpdated: 2026-11-12
 status: published
