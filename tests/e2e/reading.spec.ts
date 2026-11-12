@@ -213,9 +213,10 @@ test('reading progress and the section chips follow the scroll', async ({ page }
   await page.evaluate(() => document.getElementById('pathogenesis')!.scrollIntoView());
   await expect(page.locator('.section-toc a[href="#pathogenesis"]')).toHaveAttribute('aria-current', 'true');
   await expect(page.locator('.section-toc a[aria-current]')).toHaveCount(1);
-  await expect.poll(scale).toBeGreaterThan(0.1);
   await page.evaluate(() => document.getElementById('traps')!.scrollIntoView());
   await expect(page.locator('.section-toc a[href="#traps"]')).toHaveAttribute('aria-current', 'true');
+  // With the denser text pathogenesis starts right at 10 % of the card, so the bar is read here, 71-76 % down.
+  await expect.poll(scale).toBeGreaterThan(0.5);
   if (width() < 1024) await expect(page.locator('.section-toc a[href="#traps"]')).toBeInViewport();
 });
 
