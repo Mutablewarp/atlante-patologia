@@ -46,9 +46,9 @@ export function parseContentOutput({ status, output }) {
   });
 }
 
-/** Problems in the output of scripts/no-verbatim.mjs: one `FAIL <file>: <counts>` line per file (it never prints reference text). */
+/** Problems in the output of scripts/no-verbatim.mjs --where: one `FAIL <file>: <counts>` line per file, then `  lines: <numbers>` (it never prints reference text). */
 export function parseVerbatimOutput({ status, output }) {
-  const fails = [...output.matchAll(/^FAIL (\S+): (.*)$/gm)].map((m) => problem('verbatim', m[1], m[2]));
+  const fails = [...output.matchAll(/^FAIL (\S+): (.*)(?:\n {2}lines: (.*))?$/gm)].map((m) => problem('verbatim', m[1], m[3] ? `${m[2]}; lines ${m[3]}` : m[2]));
   if (status === 0) return [];
   return fails.length ? fails : [problem('verbatim', 'scripts/no-verbatim.mjs', `failed: ${why(output)}`)];
 }
@@ -92,7 +92,7 @@ export function checkCard(id, {
   root = ROOT,
   stage = 'all',
   runContent = (x) => run(root, ['node_modules/vitest/vitest.mjs', 'run', '--project', 'unit', 'tests/content-one', '--reporter=default'], { ENTITY: x, NO_COLOR: '1' }),
-  runVerbatim = (paths) => run(root, ['scripts/no-verbatim.mjs', ...paths]),
+  runVerbatim = (paths) => run(root, ['scripts/no-verbatim.mjs', '--where', ...paths]),
 } = {}) {
   const at = stage === 'all' ? Infinity : STAGES.indexOf(stage);
   const hasIt = at >= STAGES.indexOf('translator');
