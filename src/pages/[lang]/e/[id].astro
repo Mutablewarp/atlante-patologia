@@ -23,6 +23,8 @@ import ExamQuestions from '../../../components/entity/ExamQuestions.astro'; // s
 import EntityPathways from '../../../components/pathway/EntityPathways.astro'; // v2/3d-pathways: compact pathway block
 import { LANGS, fmt, type Lang } from '../../../i18n/index.ts';
 import { tEntity, tAtlas } from '../../../i18n/pages.ts';
+import { tCommon } from '../../../i18n/common.ts';
+import type { LensData } from '../../../lib/lens-context.ts';
 import { SECTIONS, QUICK_CHECK, PRINT_SECTIONS } from '../../../i18n/sections.ts';
 import { langPath } from '../../../lib/url.ts';
 import { siteData, entityBody, sources as getSources } from '../../../lib/content.ts';
@@ -51,9 +53,8 @@ const termLabel = primary ? systemTax?.terms.find((x) => x.id === primary.term)?
 const order = primary ? (data.membership.get('system')?.get(primary.term) ?? []) : [];
 const { prev, next } = prevNext(order, id);
 const nameOf = (eid: string) => data.entityById.get(eid)?.names[lang] ?? eid;
-/** A neighbour for the pager beside the breadcrumb, in the default order or in a lens context (`via`). */
-const card = (eid: string | undefined, via?: string) =>
-  eid ? { href: langPath(lang, `e/${eid}/${via ? `?via=${via}` : ''}`), name: nameOf(eid) } : undefined;
+/** A neighbour for the pager beside the breadcrumb, in the default order. */
+const card = (eid: string | undefined) => (eid ? { href: langPath(lang, `e/${eid}/`), name: nameOf(eid) } : undefined);
 const allSources = await getSources();
 const cited = entity.sources.map((s) => ({ ...s, src: allSources.find((x) => x.id === s.source) }));
 const relations = data.relations.get(id) ?? [];
@@ -86,48 +87,35 @@ const imgs = await imageById();
 const imagesIn = (section: string) => entity.images.filter((i) => SECTION_FOR_ROLE[i.role] === section);
 const entityPatterns = await patternsForEntity(id);
 
-// Lens context (?via=lens:term): breadcrumb + prev/next for every lens term of this entity, swapped in by lens-context.ts.
-const contexts = LENSES.flatMap((lens) =>
-  entity.lenses[lens].map((term) => {
-    const tax = data.taxonomy.get(lens);
-    const ids = data.membership.get(lens)?.get(term) ?? [];
-    return {
-      via: `${lens}:${term}`,
-      lens,
-      term,
-      lensLabel: tax?.label[lang] ?? lens,
-      termLabel: tax?.terms.find((x) => x.id === term)?.label[lang] ?? term,
-      ...prevNext(ids, id),
-    };
-  }),
-);
+// Lens context (?via=lens:term): breadcrumb + prev/next for every lens term of this entity, as compact JSON that
+// lens-context.ts turns into markup (src/lib/lens-context.ts). Rendered as <template>s these were 15-25 % of the page.
+const near = (eid?: string): [string, string] | null => (eid ? [eid, nameOf(eid)] : null);
+const lensData: LensData = {
+  base: langPath(lang),
+  name: entity.names[lang],
+  s: { crumb: tCommon(lang, 'breadcrumb'), atlas: tAtlas(lang, 'title'), prevCard: t('prevCard'), nextCard: t('nextCard'), prevIn: t('prevIn'), nextIn: t('nextIn') },
+  c: Object.fromEntries(
+    LENSES.flatMap((lens) =>
+      entity.lenses[lens].map((term): [string, LensData['c'][string]] => {
+        const tax = data.taxonomy.get(lens);
+        const { prev, next } = prevNext(data.membership.get(lens)?.get(term) ?? [], id);
+        return [`${lens}:${term}`, [tax?.label[lang] ?? lens, tax?.terms.find((x) => x.id === term)?.label[lang] ?? term, near(prev), near(next)]];
+      }),
+    ),
+  ),
+};
 ---
 
 <BaseLayout lang={lang} title={entity.names[lang]} description={entity.summary[lang]} tab="atlas">
   <a slot="skip" class="skip-link" href={`#${toc[0]!.id}`}>{t('skipToText')}</a>
   <Fragment slot="sidebar"><ModuleTree lang={lang} data={data} current={id} /></Fragment>
   <ChapterIndex slot="topbar" lang={lang} />
-  <ChapterDialog slot="dialogs" lang={lang} data={data} current={id} />
+  <ChapterDialog slot="dialogs" lang={lang} />
   <div class="crumb-row" data-lens-crumb>
     <Breadcrumb lang={lang} items={crumbs} />
     {termLabel && <CardPager lang={lang} prev={card(prev)} next={card(next)} />}
   </div>
-  {
-    contexts.map((c) => (
-      <template data-via-crumb={c.via} data-pagefind-ignore>
-        <Breadcrumb
-          lang={lang}
-          items={[
-            { label: tAtlas(lang, 'title'), href: langPath(lang, 'atlas/') },
-            { label: c.lensLabel, href: langPath(lang, `atlas/${c.lens}/`) },
-            { label: c.termLabel, href: langPath(lang, `atlas/${c.lens}/${c.term}/`) },
-            { label: entity.names[lang] },
-          ]}
-        />
-        <CardPager lang={lang} prev={card(c.prev, c.via)} next={card(c.next, c.via)} />
-      </template>
-    ))
-  }
+  <script type="application/json" id="lens-contexts" set:html={JSON.stringify(lensData).replace(/</g, '\\u003c')} />
   <article class="entity" data-entity={id}>
     <div class="read-progress js-only" aria-hidden="true"><span data-read-progress></span></div>
     {entity.status === 'draft' && <p class="notice notice-caution draft-banner" role="note">{t('draftBanner')}</p>}
@@ -294,28 +282,6 @@ const contexts = LENSES.flatMap((lens) =>
           )
         }
         </div>
-        {
-          contexts.map((c) => (
-            <template data-via-nav={c.via} data-pagefind-ignore>
-              {(c.prev || c.next) && (
-                <nav class="prev-next" aria-label={c.termLabel}>
-                  {c.prev && (
-                    <a rel="prev" href={langPath(lang, `e/${c.prev}/?via=${c.via}`)}>
-                      <span class="small muted">{fmt(t('prevIn'), { term: c.termLabel })}</span>
-                      <span>← {nameOf(c.prev)}</span>
-                    </a>
-                  )}
-                  {c.next && (
-                    <a rel="next" href={langPath(lang, `e/${c.next}/?via=${c.via}`)} data-name={nameOf(c.next)}>
-                      <span class="small muted">{fmt(t('nextIn'), { term: c.termLabel })}</span>
-                      <span>{nameOf(c.next)} →</span>
-                    </a>
-                  )}
-                </nav>
-              )}
-            </template>
-          ))
-        }
       </div>
     </div>
   </article>

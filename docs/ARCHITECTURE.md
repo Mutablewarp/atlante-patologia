@@ -154,7 +154,15 @@ The cache name includes the precache hash, so a new deploy replaces the shell at
 - **Images:** the default is AVIF + WebP at 2 widths. If the measured Phase 2 average puts the projected full-scope total above budget, drop to AVIF-only plus the smallest WebP fallback (D026, decided by measurement).
   - Rough budget: ≤ 220 MB of the 300 MB for images, i.e. ~110 KB per image at 2,000 images.
   - CI prints the per-module image cost.
-- **HTML:** ~2 languages × (~1,190 entities + ~16 pattern pages + lens/term pages + tools) ≈ 3,000–3,500 pages. Text weight is negligible next to images.
+- **HTML** (plan I-6): `node scripts/html-weight.mjs` prints what the bytes are made of; `tests/dist/html-weight.test.ts` holds the limits.
+  - Measured 2026-11-12 on 26 cards in both languages: a card page weighs a median of 95 kB (78–104 kB, plus about 27 kB for each pathway it embeds). Before the diet: 115 kB (90–153 kB).
+  - Limits: card page ≤ 110 kB, the plan target for a card of at most 1,300 words (measured maximum 104 kB), plus 28 kB per embedded pathway (measured 27 kB); pattern page ≤ 91 kB (measured 86 kB); pathway page ≤ 56 kB (measured 53 kB). Where there is no plan target, the limit is the measured maximum plus 5 %.
+  - The diet (D069), on a card with 15 lens terms, 127 → 103 kB: the lens contexts as JSON instead of `<template>`s (22 kB → 2.8 kB), the claim markers (2.4 kB), the chapter index once instead of twice (2.7 kB), the card ids in `data-cards` (1 kB), shorter coordinates in the image viewer.
+  - Left alone: about 12 kB of inline CSS on every card page (Astro inlines the small stylesheets; as files they would save about 10 MB at 808 pages but add render-blocking requests, and the brief keeps the inline CSS that prevents layout shift), and about 1.6 kB per image of the same viewer tool buttons and help text.
+  - **Estimate at 404 cards, 2 languages (808 card pages).** A fit to the 52 pages built today (±3 kB), not a measurement: about 66 kB of page structure + 13 bytes per word of card text + 3.3 kB per image + **90 bytes per published card**, because the chapter index in the sidebar lists every published card.
+    - A card at the cap (1,200 English words, about 1,380 Italian, 3 images): 91 kB (en) and 94 kB (it) with 26 cards, **125 and 128 kB with 404, over the 110 kB limit**. About 100 MB of card HTML in all. The index alone is then about 36 kB on every card page. The limit holds to about 60 more cards. Cards of 800 or 500 words are 5–9 kB lighter, which does not change the picture.
+    - To stay under 110 kB at 404 cards the index must not list every card: with only the current chapter's cards (about 5 kB, with the names of the other chapters) a card page is about 94–97 kB and the card HTML about 77 MB. That changes NAVIGATION_SPEC §6 and is the owner's decision.
+    - A–Z (74 kB at 26 cards) and the lens-term pages also grow with the cards; they are not projected here.
 - **Caching:** filenames are content-hashed. GitHub Pages does not offer custom cache headers (verify in Phase 1), so the service worker's cache-first strategy provides long-lived caching for returning users.
 
 ## 9. Operations

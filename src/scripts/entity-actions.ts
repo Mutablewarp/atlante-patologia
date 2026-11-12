@@ -15,7 +15,7 @@ async function init(box: HTMLElement) {
   const entity = d.id!;
   const module = d.module!;
   const names = { it: d.nameIt!, en: d.nameEn! };
-  const cardIds = JSON.parse(d.cards ?? '[]') as string[];
+  const cardIds = (d.cards ?? '').split(' ').filter(Boolean).map((c) => `${entity}:${c}`);
   const live = box.querySelector<HTMLElement>('[data-live]')!;
   const say = (msg: string) => {
     live.textContent = '';

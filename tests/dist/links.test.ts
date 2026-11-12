@@ -6,7 +6,8 @@
  */
 import { readFileSync } from 'node:fs';
 import { describe, expect, it } from 'vitest';
-import { BASE, SITE_ORIGIN, anchorHrefs, attrValues, ids, internalUrl, pages, resolveFile, walk } from './lib.ts';
+import type { LensData } from '../../src/lib/lens-context.ts';
+import { BASE, SITE_ORIGIN, anchorHrefs, attrValues, ids, internalUrl, isEntity, pages, resolveFile, walk } from './lib.ts';
 
 const all = pages();
 const idCache = new Map<string, Set<string>>();
@@ -52,6 +53,27 @@ describe('links and anchors', () => {
       }
     }
     expect(bad).toEqual([]);
+  });
+
+  // The lens contexts of a card are JSON, not links (src/lib/lens-context.ts): check here that what they point at exists.
+  it('every lens context of an entity page leads to a lens term page and to cards that exist', () => {
+    const broken: string[] = [];
+    const entities = all.filter((p) => isEntity(p.url));
+    expect(entities.length).toBeGreaterThan(0);
+    for (const p of entities) {
+      const json = p.html.match(/<script type="application\/json" id="lens-contexts">([\s\S]*?)<\/script>/)?.[1];
+      if (!json) {
+        broken.push(`${p.url}: no lens-contexts JSON`);
+        continue;
+      }
+      const { base, c } = JSON.parse(json) as LensData;
+      for (const [via, [, , prev, next]] of Object.entries(c)) {
+        const [lens, term] = via.split(':');
+        const to = [`atlas/${lens}/${term}/`, ...[prev, next].flatMap((n) => (n ? [`e/${n[0]}/`] : []))];
+        for (const path of to) if (!resolveFile(base + path)) broken.push(`${p.url} ${via}: ${base + path}`);
+      }
+    }
+    expect(broken).toEqual([]);
   });
 });
 
