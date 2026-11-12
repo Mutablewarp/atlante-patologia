@@ -14,7 +14,7 @@ import { imageSrc, questions } from '../../../../lib/study.ts';
 
 export const getStaticPaths = langPaths;
 const lang = Astro.params.lang as Lang;
-const { entities, entityById } = await siteData();
+const { entities, entityById } = await siteData(lang);
 const meta = new Map((await images()).map((i) => [i.id, i]));
 async function img(id: string): Promise<Img | undefined> {
   const m = meta.get(id);

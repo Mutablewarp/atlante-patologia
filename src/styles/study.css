@@ -13,10 +13,18 @@
 }
 
 /* ── Tool shell ─────────────────────────────────────────────────────── */
+/* No form widens the page (SC 1.4.10): a select is as wide as its longest option ("G01 · Danno, adattamento e morte
+   cellulare") and a file field as its name, and their columns grew to fit them, 54 px past a 375 px phone (quiz) and
+   up to 207 px at the largest reading size. The columns may now shrink, and so may the controls (max-width). Where
+   nothing overflowed nothing moves. */
 .study-tool {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--space-5);
   max-width: 48rem;
+}
+.file-input input {
+  max-width: 100%;
 }
 .tool-controls,
 .tool-form {
@@ -32,6 +40,7 @@
 .tool-controls label,
 .tool-form > label {
   display: grid;
+  grid-template-columns: minmax(0, 1fr);
   gap: var(--space-1);
   font-weight: 600;
 }
@@ -69,12 +78,12 @@
   min-height: 2.75rem;
   padding: var(--space-2) 0;
   cursor: pointer;
-  font-weight: 400;
+  font-weight: var(--weight-body);
 }
 /* A checkbox in a tool form stays beside its label (.tool-form > label is a bold grid). */
 .tool-form > label.checkbox {
   display: flex;
-  font-weight: 400;
+  font-weight: var(--weight-body);
 }
 .radio input,
 .checkbox input {
@@ -274,6 +283,21 @@
   display: grid;
   gap: var(--space-4);
 }
+/* The question of an image drill: from 600 px a sentence set like the quiz stem and the oral question, not in
+   capitals (phones keep the kicker) */
+@media (min-width: 600px) {
+  .drill-prompt {
+    max-width: var(--measure);
+    margin: 0;
+    font-family: var(--font-body);
+    font-size: var(--step-1);
+    font-weight: 600;
+    line-height: var(--leading-ui);
+    letter-spacing: normal;
+    text-transform: none;
+    color: var(--ink);
+  }
+}
 .study-tool .segmented {
   display: inline-flex;
   flex-wrap: wrap;
@@ -463,10 +487,10 @@ ap-path-progress progress {
   margin: var(--space-3) 0;
 }
 /* Hidden (space kept) until the learner's data is loaded; stays hidden without IndexedDB. */
-.entity-actions:not([data-ready]) {
+:is(.entity-actions, .entity-pinned):not([data-ready]) {
   visibility: hidden;
 }
-.entity-actions [aria-pressed='true'] {
+:is(.entity-actions, .entity-pinned) [aria-pressed='true'] {
   background: var(--hema-soft);
   border-color: var(--hema);
   color: var(--hema-ink);

@@ -20,13 +20,25 @@ describe('lens membership', () => {
     e('cell-b', 'g01', 'Beta', { system: ['general'], process: ['cell-death'], group: ['degenerative'] }),
     e('cell-a', 'g01', 'Zeta', { system: ['general', 'heart'], group: ['degenerative'] }),
   ];
-  const m = lensMembership(list, order);
+  const m = lensMembership(list, order, 'en');
 
   it('groups entities by lens term in syllabus order (module, then name)', () => {
     expect(m.get('system')!.get('general')).toEqual(['cell-b', 'cell-a']);
     expect(m.get('system')!.get('heart')).toEqual(['cell-a', 'heart-x']);
     expect(m.get('process')!.get('cell-death')).toEqual(['cell-b']);
     expect(m.get('marker')!.size).toBe(0);
+  });
+
+  it('orders names in the page language, with its own collation (accents, case)', () => {
+    const g01 = [
+      { ...e('dysplasia', 'g01', 'Dysplasia', { system: ['general'] }), names: { it: 'Displasia', en: 'Dysplasia' } },
+      { ...e('caseous', 'g01', 'Caseous necrosis', { system: ['general'] }), names: { it: 'Necrosi caseosa', en: 'Caseous necrosis' } },
+      { ...e('atrophy', 'g01', 'Atrophy', { system: ['general'] }), names: { it: 'atrofia', en: 'Atrophy' } },
+      { ...e('ecchymosis', 'g01', 'Ecchymosis', { system: ['general'] }), names: { it: 'Ecchimosi', en: 'Ecchymosis' } },
+      { ...e('edema', 'g01', 'Edema', { system: ['general'] }), names: { it: 'Èdema', en: 'Edema' } },
+    ];
+    expect(lensMembership(g01, order, 'it').get('system')!.get('general')).toEqual(['atrophy', 'dysplasia', 'ecchymosis', 'edema', 'caseous']);
+    expect(lensMembership(g01, order, 'en').get('system')!.get('general')).toEqual(['atrophy', 'caseous', 'dysplasia', 'ecchymosis', 'edema']);
   });
 
   it('counts non-empty lenses and picks the primary organ-system term', () => {

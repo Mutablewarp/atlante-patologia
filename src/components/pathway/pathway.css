@@ -21,7 +21,7 @@
   max-width: 22rem;
   height: auto;
   font-family: var(--font-body);
-  font-size: 13px;
+  font-size: 13px; /* SVG user units, sized to the 32-unit boxes; the drawing's rem width follows A-/A+ */
 }
 .pw-diagram rect {
   fill: var(--surface);
@@ -88,6 +88,10 @@
 .pw-steps {
   margin: var(--space-5) 0 0;
   padding-left: var(--space-5);
+  max-width: var(--measure);
+}
+/* Each paragraph takes the measure in its own type size, so the small structure notes keep ~70 characters a line too. */
+.pw-steps p {
   max-width: var(--measure);
 }
 .pw-steps li {

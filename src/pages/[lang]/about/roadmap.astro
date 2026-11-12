@@ -8,7 +8,7 @@ import { siteData } from '../../../lib/content.ts';
 
 export const getStaticPaths = langPaths;
 const lang = Astro.params.lang as Lang;
-const { modules } = await siteData();
+const { modules } = await siteData(lang);
 const published = modules.filter((m) => m.status === 'published').length;
 const sections = (['I', 'II', 'III'] as const).map((s) => ({
   label: tCommon(lang, `section${s}`),

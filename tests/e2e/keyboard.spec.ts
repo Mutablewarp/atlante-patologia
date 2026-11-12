@@ -62,7 +62,7 @@ async function focusState(page: Page): Promise<Stop | null> {
     };
     return {
       tag: el.tagName.toLowerCase(),
-      skip: el.classList.contains('skip-link'),
+      skip: el === document.querySelector('.skip-link'), // the first one: reading pages have a second
       label: (el.getAttribute('aria-label') ?? el.textContent ?? '').trim().slice(0, 40),
       visible,
       obscured: pts.every(covered),
@@ -83,6 +83,93 @@ test('the skip link is the first stop and moves focus to the main content @smoke
   await page.keyboard.press('Enter');
   await expect(page).toHaveURL(/#main$/);
   await expect(page.locator('#main')).toBeFocused();
+});
+
+test('reading pages have a second skip link, to the text of the card, past its header and tools', async ({ page, browserName }) => {
+  for (const [path, name, first] of [
+    ['it/e/apoptosis/', 'Vai al testo della scheda', 'definition'],
+    ['en/pattern/p01-necrosis/', 'Skip to the pattern text', 'overview'],
+  ] as const) {
+    await page.goto(path);
+    await page.keyboard.press(tabKey(browserName));
+    await page.keyboard.press(tabKey(browserName));
+    const skip = page.getByRole('link', { name });
+    await expect(skip, path).toBeFocused();
+    await expect(skip, path).toBeInViewport();
+    await page.keyboard.press('Enter');
+    await expect(page, path).toHaveURL(new RegExp(`#${first}$`));
+    // The text starts below the bars across the top: the top bar, and the chip strip below 1024 px (from 1024 px
+    // the list is beside the text).
+    const [top, bars] = await page.evaluate(
+      (id) => [
+        document.getElementById(id)!.getBoundingClientRect().top,
+        Math.max(...[...document.querySelectorAll(innerWidth < 1024 ? '.topbar, .section-toc' : '.topbar')].map((b) => b.getBoundingClientRect().bottom)),
+      ],
+      first,
+    );
+    expect(top, path).toBeGreaterThanOrEqual(bars! - 1);
+    // The next stop comes after the start of that section (on a card, its Definition toggle): the header, its tools
+    // and the section list are skipped.
+    await page.keyboard.press(tabKey(browserName));
+    const state = await page.evaluate((id) => {
+      const target = document.getElementById(id)!;
+      const el = document.activeElement!;
+      return {
+        after: target.contains(el) || !!(target.compareDocumentPosition(el) & Node.DOCUMENT_POSITION_FOLLOWING),
+        toggle: el.matches(`#${id} [data-section-toggle]`),
+      };
+    }, first);
+    expect(state.after, `${path}: focus after the start of the text`).toBe(true);
+    if (path.includes('/e/')) expect(state.toggle, 'the Definition toggle').toBe(true);
+  }
+});
+
+test('in the chip strip a focused chip is whole, backwards and forwards, and the page does not jump (SC 2.4.11)', async ({ page, browserName }) => {
+  test.skip((test.info().project.metadata.width as number) >= 1024, 'the chip strip of phones and tablets (below 1024 px)');
+  const [tab, back] = [tabKey(browserName), tabKey(browserName).replace('Tab', 'Shift+Tab')];
+  // The focused chip inside the strip's box, and the page's scroll position.
+  const where = () =>
+    page.evaluate(async () => {
+      await new Promise((r) => requestAnimationFrame(() => requestAnimationFrame(r)));
+      const el = document.activeElement!;
+      const list = document.querySelector('.section-toc ol')!;
+      const [r, b] = [el.getBoundingClientRect(), list.getBoundingClientRect()];
+      const whole = r.left >= b.left - 0.5 && r.right <= b.right + 0.5 && r.top >= b.top - 0.5 && r.bottom <= b.bottom + 0.5;
+      return { inList: list.contains(el), whole, y: scrollY, label: el.textContent!.trim().slice(0, 30) };
+    });
+  for (const [path, skip] of [
+    ['en/pattern/p01-necrosis/', 'Skip to the pattern text'],
+    ['it/e/coagulative-necrosis/', 'Vai al testo della scheda'],
+  ] as const) {
+    await page.goto(path);
+    await page.keyboard.press(tab);
+    await page.keyboard.press(tab);
+    await expect(page.getByRole('link', { name: skip })).toBeFocused();
+    await page.keyboard.press('Enter');
+    await page.keyboard.press(tab); // the first control of the text: the strip, stuck under the top bar, is above it
+    // Backwards into the strip and along it: the strip used to scroll the page by its own height at every chip
+    // (about 560 px) and the section spy pushed the focused chip out of the strip's view.
+    let stops = 0;
+    let prev = await where();
+    for (let i = 0; i < 6 && stops < 3; i++) {
+      await page.keyboard.press(back);
+      const s = await where();
+      if (s.inList) {
+        stops++;
+        expect(s.whole, `${path}: "${s.label}" whole in the strip`).toBe(true);
+        if (prev.inList) expect(s.y, `${path}: "${s.label}": the page did not move`).toBe(prev.y);
+      }
+      prev = s;
+    }
+    expect(stops, `${path}: chips reached backwards`).toBe(3);
+    for (let i = 0; i < 2; i++) {
+      await page.keyboard.press(tab);
+      const s = await where();
+      expect(s.inList && s.whole, `${path}: "${s.label}" whole in the strip, forwards`).toBe(true);
+      expect(s.y, `${path}: "${s.label}": the page did not move, forwards`).toBe(prev.y);
+      prev = s;
+    }
+  }
 });
 
 test('no positive tabindex anywhere', async ({ page }) => {
@@ -126,6 +213,40 @@ for (const path of PAGES) {
     expect(await walk(page, path, browserName)).toEqual([]);
   });
 }
+
+test('focus rings are drawn whole inside pill groups, the chip strip and the chapter index (SC 2.4.7)', async ({ page }) => {
+  const width = test.info().project.metadata.width as number;
+  await page.goto('it/e/metaplasia/'); // late in the chapter index: its entry sits in the scrolled part of the list
+  const controls = ['[data-mode-btn="quick"]', '[data-mode-btn="full"]', '.lang-switch a'];
+  if (width < 1024) controls.push('.section-toc a[href="#definition"]', '.section-toc a[href="#micro"]');
+  // The side list scrolls when it is taller than the screen, so it clips too: its first and its longest entries.
+  else controls.push('.primary-nav .module-tree a[aria-current]', '.primary-nav .module-tree summary', '.section-toc a[href="#definition"]', '.section-toc a[href="#ancillary"]');
+  for (const sel of controls) {
+    await page.keyboard.press('Shift+Tab'); // keyboard modality: programmatic focus then matches :focus-visible
+    await page.locator(sel).first().focus();
+    // The ring's outer edge must lie inside every ancestor that clips (overflow other than visible).
+    const cut = await page.locator(sel).first().evaluate((el) => {
+      const cs = getComputedStyle(el);
+      if (!el.matches(':focus-visible') || cs.outlineStyle === 'none') return 'no ring';
+      const grow = parseFloat(cs.outlineOffset) + parseFloat(cs.outlineWidth);
+      const r = el.getBoundingClientRect();
+      for (let a = el.parentElement; a; a = a.parentElement) {
+        const s = getComputedStyle(a);
+        if (s.overflowX === 'visible' && s.overflowY === 'visible') continue;
+        const b = a.getBoundingClientRect();
+        const [l, t] = [b.left + a.clientLeft, b.top + a.clientTop];
+        if (r.left - grow < l - 0.5 || r.top - grow < t - 0.5 || r.right + grow > l + a.clientWidth + 0.5 || r.bottom + grow > t + a.clientHeight + 0.5)
+          return `cut by <${a.tagName.toLowerCase()} class="${a.className}">`;
+      }
+      return '';
+    });
+    expect(cut, sel).toBe('');
+  }
+  // From 1024 px a side-list entry is a whole row with a rounded rectangle for its ring: a pill crossed the first and
+  // last letters of a wrapped entry.
+  if (width >= 1024)
+    expect(await page.locator('.section-toc a[href="#ancillary"]').evaluate((a) => [getComputedStyle(a).display, getComputedStyle(a).borderRadius])).toEqual(['flex', '6px']);
+});
 
 test('the learner-database notice never hides the focused control', async ({ context, browserName }) => {
   // An older tab keeps the database open at version 1, so this card's upgrade waits and the notice stays up.

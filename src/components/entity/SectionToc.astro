@@ -3,15 +3,24 @@
  * Contents of a reading page (entity, pattern): a sticky chip strip on phones
  * and tablets, a side list on desktop (entity.css). shell.ts marks the entry of
  * the section being read; `quick` lets Quick mode hide an entry.
+ * Entity pages, from 600 px: the strip ends with the related cards and a link to the next card; from 1024 px that
+ * link sits under the side list instead (entity.css). lens-context.ts points both at the next card of the lens the
+ * reader came from; with no next card in the order shown they stay hidden.
  */
 import type { Lang } from '../../i18n/index.ts';
+import { fmt } from '../../i18n/index.ts';
 import { tEntity } from '../../i18n/pages.ts';
 
 interface Props {
   lang: Lang;
   items: { id: string; label: string; quick?: boolean }[];
+  /** Id of the related-cards section; `cardNav`: the page has a previous/next block (the id of that block). */
+  related?: string;
+  cardNav?: string;
+  next?: { href: string; name: string };
 }
-const { lang, items } = Astro.props;
+const { lang, items, related, cardNav, next } = Astro.props;
+const [before, after] = tEntity(lang, 'nextEntry').split('{name}');
 ---
 
 <nav class="section-toc" aria-label={tEntity(lang, 'onThisPage')}>
@@ -24,5 +33,47 @@ const { lang, items } = Astro.props;
         </li>
       ))
     }
+    {
+      related && (
+        <li class="toc-extra">
+          <a href={`#${related}`}>{tEntity(lang, 'related')}</a>
+        </li>
+      )
+    }
+    {
+      cardNav && (
+        <li class="toc-extra" hidden={!next} data-next-entry>
+          {/* The card itself, not the block at the end of this one: one name, one destination (SC 2.4.4). One box
+              inside the link: as a flex item of its own each part lost its spaces and could not wrap. */}
+          <a rel="next" href={next?.href} data-next-link>
+            <span>
+              {before}
+              <span data-next-name>{next?.name}</span>
+              {after}
+              <span aria-hidden="true"> →</span>
+            </span>
+          </a>
+        </li>
+      )
+    }
   </ol>
+  {
+    cardNav && (
+      <p class="toc-next" hidden={!next} data-next-entry>
+        {/* Named "Scheda successiva: <card>", the visible label first (SC 2.5.3); lens-context.ts fills data-label */}
+        <a
+          rel="next"
+          href={next?.href}
+          aria-label={next && fmt(tEntity(lang, 'nextEntry'), { name: next.name })}
+          data-label={tEntity(lang, 'nextEntry')}
+          data-next-link
+        >
+          <span>
+            {/* A no-break space: in the 9.5rem list (1024-1279 px) the arrow wrapped alone onto a line */}
+            {tEntity(lang, 'nextShort')}<span aria-hidden="true">&nbsp;→</span>
+          </span>
+        </a>
+      </p>
+    )
+  }
 </nav>

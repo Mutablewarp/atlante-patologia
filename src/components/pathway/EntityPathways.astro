@@ -18,7 +18,7 @@ const structures = await structureById();
 {
   list.map((p) => (
     <section class="entity-pathway" aria-labelledby={`pathway-${p.id}-title`}>
-      <p class="kicker">{tPw(lang, 'onEntity')}</p>
+      <p class="kicker kicker-sentence">{tPw(lang, 'onEntity')}</p>
       <h2 id={`pathway-${p.id}-title`}>{p.title[lang]}</h2>
       <p class="small muted">{p.summary[lang]}</p>
       <Pathway lang={lang} pathway={p} structures={structures} compact />

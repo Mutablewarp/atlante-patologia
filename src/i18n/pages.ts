@@ -185,6 +185,13 @@ export const tEntity = defineStrings({
   notPublished: { it: 'non ancora pubblicato', en: 'not yet published' },
   prevIn: { it: 'Precedente in “{term}”', en: 'Previous in “{term}”' },
   nextIn: { it: 'Successivo in “{term}”', en: 'Next in “{term}”' },
+  prevCard: { it: 'Scheda precedente', en: 'Previous card' },
+  nextCard: { it: 'Scheda successiva', en: 'Next card' },
+  /** Second skip link of a card: to its first section, past the header and the tools */
+  skipToText: { it: 'Vai al testo della scheda', en: 'Skip to the card text' },
+  /** The next card in the section list and under it (SectionToc.astro), worded as in the pager (nextCard) */
+  nextEntry: { it: 'Scheda successiva: {name}', en: 'Next card: {name}' },
+  nextShort: { it: 'Scheda successiva', en: 'Next card' },
   sources: { it: 'Fonti', en: 'Sources' },
   reportThis: { it: 'Segnala un errore in questa scheda', en: 'Report an error on this card' },
 });

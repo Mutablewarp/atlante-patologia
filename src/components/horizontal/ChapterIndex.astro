@@ -1,0 +1,21 @@
+---
+/**
+ * "Chapter" button in the top bar: opens the chapter index (ChapterDialog.astro) where the sidebar does not show it
+ * (600-1023 px, and from 1024 px with the sidebar collapsed). Only the button sits in the top bar; the dialog with the
+ * card list comes after the page, so the bar is parsed whole before the first paint. Without JS neither shows.
+ */
+import type { Lang } from '../../i18n/index.ts';
+import { tHz } from '../../i18n/horizontal.ts';
+
+interface Props {
+  lang: Lang;
+}
+const { lang } = Astro.props;
+---
+
+<button type="button" class="btn chapter-open js-only" aria-haspopup="dialog" data-chapter-open>
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+    <path d="M9.5 6h10M9.5 12h10M9.5 18h10M4.5 6h.01M4.5 12h.01M4.5 18h.01"></path>
+  </svg>
+  <span class="chapter-label">{tHz(lang, 'chapterOpen')}</span>
+</button>

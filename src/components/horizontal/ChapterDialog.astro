@@ -1,0 +1,30 @@
+---
+/**
+ * The chapter index dialog opened by the "Chapter" button (ChapterIndex.astro). A native modal <dialog>: the platform
+ * keeps focus inside, Esc closes, focus returns to the button (shell.ts opens it on the current card). It goes in
+ * BaseLayout's "dialogs" slot, after the page: inside the top bar its long card list delayed the rest of the bar, so a
+ * slow device painted the bar before the language switch and the theme button and then moved them (CLS).
+ */
+import type { Lang } from '../../i18n/index.ts';
+import { tHz } from '../../i18n/horizontal.ts';
+import type { SiteData } from '../../lib/content.ts';
+import ModuleTree from './ModuleTree.astro';
+
+interface Props {
+  lang: Lang;
+  data: SiteData;
+  current: string;
+}
+const { lang, data, current } = Astro.props;
+---
+
+<dialog class="chapter-dialog" aria-labelledby="chapter-tree-title" data-chapter-dialog>
+  <form method="dialog">
+    <button class="icon-btn chapter-close" aria-label={tHz(lang, 'chapterClose')}>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
+        <path d="M6.5 6.5l11 11M17.5 6.5l-11 11"></path>
+      </svg>
+    </button>
+  </form>
+  <ModuleTree lang={lang} data={data} current={current} id="chapter-tree" />
+</dialog>

@@ -48,6 +48,14 @@ html {
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--rule);
 }
+/* From 600 px opaque: text scrolled under the bar showed through it, a blurred smear in Chromium and ghost text in
+   WebKit. Phones keep their bar. */
+@media (min-width: 600px) {
+  .topbar {
+    background: var(--paper);
+    backdrop-filter: none;
+  }
+}
 .brand {
   display: inline-flex;
   align-items: center;
@@ -117,6 +125,20 @@ html {
   display: flex;
   align-items: center;
   gap: var(--space-2);
+}
+/* From 600 px the tools keep their width and the site name gives way, down to "Atlante". The group used to shrink:
+   its icons count as nothing in min-content sizing (max-width: 100%), so the language switch was squeezed below its
+   44 px targets or the last button stuck out of the bar. Phones keep their bar. */
+@media (min-width: 600px) {
+  .topbar-tools {
+    flex: none;
+  }
+}
+/* 600-639 px at the largest reading size: the mark goes and "Atlante" stays whole, as below 360 px on phones */
+@media (min-width: 600px) and (max-width: 639px) {
+  :root.text-xl .topbar .brand svg {
+    display: none;
+  }
 }
 
 .lang-switch {
@@ -198,6 +220,12 @@ html {
   font-size: 0.78rem;
   line-height: 1.1;
   text-align: center;
+}
+/* The rail of tablets: labels on the type scale (13 px); phones keep their tab bar */
+@media (min-width: 600px) {
+  .nav-item {
+    font-size: var(--step--2);
+  }
 }
 .nav-icon {
   display: grid;
@@ -386,6 +414,14 @@ main:focus {
   margin-top: 0;
   color: var(--hema);
 }
+/* From 600 px card descriptions are a step below the body text, compact, so a hub card reads as a title with a
+   gloss; phones keep theirs */
+@media (min-width: 600px) {
+  .link-card p {
+    font-size: var(--step--1);
+    line-height: var(--leading-compact);
+  }
+}
 
 .lens-card h3 {
   margin-top: 0;
@@ -405,6 +441,19 @@ main:focus {
   display: inline-block;
   min-height: 1.5rem; /* WCAG 2.2 target size (24 px) */
   padding: var(--space-1) 0;
+}
+/* From 600 px every item is a link of a navigation list, not prose: the underline shows on hover and focus, and
+   about an em between terms tells them apart. Phones keep theirs. */
+@media (min-width: 600px) {
+  .lens-terms {
+    column-gap: var(--space-4);
+  }
+  .lens-terms a {
+    text-decoration: none;
+  }
+  .lens-terms a:is(:hover, :focus-visible) {
+    text-decoration: underline;
+  }
 }
 
 .module-list {
@@ -563,7 +612,7 @@ main:focus {
     gap: var(--space-3);
     padding: 0 var(--space-3) 0 var(--space-1);
     border-radius: 999px;
-    font-size: var(--step-0);
+    font-size: 1rem; /* a label, a step below the 19 px body text */
   }
   .nav-item:hover {
     background: var(--surface-2);

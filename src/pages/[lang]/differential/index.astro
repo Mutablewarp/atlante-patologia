@@ -17,7 +17,7 @@ export const getStaticPaths = langPaths;
 
 const lang = Astro.params.lang as Lang;
 const t = (k: Parameters<typeof tHz>[1]) => tHz(lang, k);
-const { entities, taxonomy, membership } = await siteData();
+const { entities, taxonomy, membership } = await siteData(lang);
 const facets = DIFF_FACETS.map((lens) => {
   const tax = taxonomy.get(lens);
   const used = membership.get(lens)!;

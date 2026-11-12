@@ -9,7 +9,7 @@ import { siteData } from '../../../../lib/content.ts';
 
 export const getStaticPaths = langPaths;
 const lang = Astro.params.lang as Lang;
-const { entities } = await siteData();
+const { entities } = await siteData(lang);
 const links: ChainLink[] = entities.flatMap((e) =>
   e.chain.map((c) => ({ entity: e.id, name: e.names[lang], pathology: c.pathology[lang], sign: c.sign[lang], lab: c.lab[lang] })),
 );

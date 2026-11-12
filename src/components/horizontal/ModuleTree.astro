@@ -1,5 +1,6 @@
 ---
-/** Sidebar module tree (desktop) with "you are here" on the current entity (NAVIGATION_SPEC §4, §6). */
+/** Module tree with "you are here" on the current entity (NAVIGATION_SPEC §4, §6): in the sidebar (>= 1024 px) and in
+    the chapter dialog (ChapterIndex.astro). */
 import type { Lang } from '../../i18n/index.ts';
 import { tHz } from '../../i18n/horizontal.ts';
 import { langPath } from '../../lib/url.ts';
@@ -9,8 +10,10 @@ interface Props {
   lang: Lang;
   data: SiteData;
   current: string;
+  /** Prefix of the title id: the sidebar copy and the dialog copy share a page. */
+  id?: string;
 }
-const { lang, data, current } = Astro.props;
+const { lang, data, current, id = 'module-tree' } = Astro.props;
 const currentModule = data.entityById.get(current)?.module;
 const mods = data.modules
   .map((m) => ({ ...m, items: data.entities.filter((e) => e.module === m.id) }))
@@ -18,8 +21,8 @@ const mods = data.modules
 ---
 
 <div class="module-tree">
-  <p class="module-tree-title" id="module-tree-title">{tHz(lang, 'moduleTree')}</p>
-  <ul aria-labelledby="module-tree-title">
+  <p class="module-tree-title" id={`${id}-title`}>{tHz(lang, 'moduleTree')}</p>
+  <ul aria-labelledby={`${id}-title`}>
     {
       mods.map((m) => (
         <li>

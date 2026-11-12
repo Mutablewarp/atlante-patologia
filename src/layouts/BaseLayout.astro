@@ -86,8 +86,10 @@ const fullTitle = title === SITE_NAME ? SITE_NAME : `${title} · ${SITE_NAME}`;
   </head>
   <body data-tab={tab}>
     <a class="skip-link" href="#main">{tCommon(lang, 'skipToContent')}</a>
+    {/* Reading pages add a second one, straight to the text of the card (past its header and tools) */}
+    <slot name="skip" />
     <div class="app">
-      <TopBar lang={lang} langSwitchToHome={!alternates} />
+      <TopBar lang={lang} langSwitchToHome={!alternates}><slot name="topbar" /></TopBar>
       <PrimaryNav lang={lang} current={tab}><slot name="sidebar" /></PrimaryNav>
       <main id="main" tabindex="-1">
         <DisclaimerNotice lang={lang} />
@@ -98,6 +100,9 @@ const fullTitle = title === SITE_NAME ? SITE_NAME : `${title} · ${SITE_NAME}`;
       <Footer lang={lang} />
     </div>
     <UpdateNotice lang={lang} />
+    {/* Page dialogs (the chapter index): after the page and outside <main>, so they neither delay the top bar nor
+        reach the search index */}
+    <slot name="dialogs" />
     <script>
       import '../scripts/shell.ts';
       // Personal-layer elements (<ap-recent>, <ap-resume>, <ap-path-progress>…) load their code only where used.

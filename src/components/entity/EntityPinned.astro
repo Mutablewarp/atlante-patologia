@@ -1,0 +1,24 @@
+---
+/**
+ * Bookmark and quiz link in the entity toolbar row, shown from 600 px (entity.css). EntityActions keeps its own
+ * copies for phones, behind "Tools"; its script binds both and shows them once the learner's data is loaded.
+ */
+import type { Lang } from '../../i18n/index.ts';
+import { tS } from '../../i18n/study.ts';
+import { langPath } from '../../lib/url.ts';
+import { questions } from '../../lib/study.ts';
+import type { SiteData } from '../../lib/content.ts';
+
+interface Props {
+  lang: Lang;
+  entity: SiteData['entities'][number];
+}
+const { lang, entity } = Astro.props;
+const t = (k: Parameters<typeof tS>[1]) => tS(lang, k);
+const hasQuiz = (await questions()).some((q) => q.entities.includes(entity.id));
+---
+
+<span class="entity-pinned js-only" data-entity-pinned data-pagefind-ignore>
+  <button type="button" class="btn btn-small" data-act="bookmark" aria-pressed="false"><span><span aria-hidden="true">☆</span> {t('bookmark')}</span></button>
+  {hasQuiz && <a class="btn btn-small" href={langPath(lang, `study/quiz/?mode=topic&entity=${entity.id}`)}>{t('quizMe')}</a>}
+</span>

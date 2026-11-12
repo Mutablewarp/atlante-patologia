@@ -21,8 +21,10 @@ function guardRequests(page: Page) {
   return foreign;
 }
 
-async function noAxeViolations(page: Page) {
-  const res = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']).analyze();
+async function noAxeViolations(page: Page, disable: string[] = []) {
+  let axe = new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa', 'wcag22aa']);
+  if (disable.length) axe = axe.disableRules(disable);
+  const res = await axe.analyze();
   expect(res.violations.map((v) => `${v.id}: ${v.nodes.map((n) => n.target.join(' ')).join(', ')}`)).toEqual([]);
 }
 
@@ -35,6 +37,8 @@ async function openData(page: Page) {
 test('entity actions feed review, bookmarks, resume and the Me pages', async ({ page }) => {
   const foreign = guardRequests(page);
   await page.goto('it/e/fixture-demo/');
+  // "Add to review" sits behind the tools toggle; the bookmark stays in the toolbar row (1280 px).
+  await page.getByRole('button', { name: 'Strumenti' }).click();
   const add = page.getByRole('button', { name: 'Aggiungi al ripasso' });
   await add.click();
   await expect(page.getByRole('button', { name: /Nel ripasso \(7\)/ })).toHaveAttribute('aria-pressed', 'true');
@@ -262,12 +266,18 @@ test('oral simulator: three questions, prediction before self-assessment, calibr
   const foreign = guardRequests(page);
   await page.goto('en/study/oral/');
   const timer = page.getByRole('checkbox', { name: 'Use a timer for each question' });
-  // The box sits beside its label, in regular weight (a tool-form label is otherwise a bold grid).
-  expect(await timer.evaluate((i) => [getComputedStyle(i.parentElement!).display, getComputedStyle(i.parentElement!).fontWeight])).toEqual(['flex', '400']);
+  // The box sits beside its label, in the regular text weight (a tool-form label is otherwise a bold grid).
+  expect(
+    await timer.evaluate((i) => [getComputedStyle(i.parentElement!).display, getComputedStyle(i.parentElement!).fontWeight, getComputedStyle(document.body).fontWeight]),
+  ).toEqual(['flex', '430', '430']);
   await timer.check();
   await page.getByRole('button', { name: 'Start' }).click();
   await expect(page.getByRole('heading', { name: 'Question 1 of 3' })).toBeFocused();
   await expect(page.getByRole('timer')).toContainText('Time left: 4:5');
+  // As after "Finish" below: with the denser text, the click on Start leaves the breadcrumb half under the sticky
+  // header, which axe reads as a small target. Every other rule is checked in that state, target size at the top.
+  await noAxeViolations(page, ['target-size']);
+  await page.evaluate(() => window.scrollTo(0, 0));
   await noAxeViolations(page);
   await answerOral(page, '3 · good', '2 · partial');
   await expect(page.getByRole('button', { name: 'Save and continue' })).toBeEnabled();
@@ -283,7 +293,9 @@ test('oral simulator: three questions, prediction before self-assessment, calibr
   await expect(page.locator('.oral-results tbody tr')).toHaveCount(3);
   await expect(page.getByText(/Mean predicted 3\.3 · mean self-assessed 2\.3/)).toBeVisible();
   await expect(page.getByText(/you predict more than you then award yourself/)).toBeVisible();
-  // Focusing the heading scrolls the breadcrumb under the sticky header, which axe reads as a small target.
+  // Focusing the heading scrolls the breadcrumb under the sticky header, which axe reads as a small target: every other
+  // rule is checked scrolled, target size at the top.
+  await noAxeViolations(page, ['target-size']);
   await page.evaluate(() => window.scrollTo(0, 0));
   await noAxeViolations(page);
   const [session] = await readStore(page, 'oralSessions');
@@ -301,6 +313,9 @@ test('oral simulator: three questions, prediction before self-assessment, calibr
   await page.getByRole('button', { name: 'Start again' }).press('Enter'); // keyboard, as in the review finding
   // Focus goes to the first setup control, never to <body> (WCAG 2.4.3).
   await expect(page.getByRole('checkbox', { name: 'Use a timer for each question' })).toBeFocused();
+  // The page stays scrolled after the results: the focused setup control must not end up under the sticky bar (WCAG 2.4.11).
+  const [control, bar] = await page.evaluate(() => [document.activeElement!.getBoundingClientRect().top, document.querySelector('.topbar')!.getBoundingClientRect().bottom]);
+  expect(control).toBeGreaterThanOrEqual(bar!);
   // The list stays folded behind one line (no shift when it loads) until the learner opens it.
   const history = page.getByRole('region', { name: 'Previous sessions' });
   await history.getByText('Saved sessions: 1').click();
@@ -308,7 +323,10 @@ test('oral simulator: three questions, prediction before self-assessment, calibr
   const texts = await page.evaluate(() => (window as unknown as { historyTexts: string[] }).historyTexts);
   expect(texts.length).toBeGreaterThan(0);
   expect(texts.filter((s) => s.includes('No sessions saved'))).toEqual([]);
-  // The page stays scrolled after the results: the focused setup control must not end up under the sticky bar.
+  // Checked above, where it is focused; scrolled here, the breadcrumb sits half under the sticky header, which axe reads
+  // as a small target (as after "Finish"): every other rule is checked scrolled, target size at the top.
+  await noAxeViolations(page, ['target-size']);
+  await page.evaluate(() => window.scrollTo(0, 0));
   await noAxeViolations(page);
   expect(foreign).toEqual([]);
 });
@@ -399,7 +417,29 @@ test('exam mode: pressing Finish again while the answers are being saved stores 
   await page.getByRole('button', { name: 'Start again' }).press('Enter');
   await expect(page.getByRole('radio', { name: /^Timed exam/ })).toBeFocused();
   await expect(page.getByRole('radio', { name: /^Timed exam/ })).toBeChecked();
-  await noAxeViolations(page); // the focused control is not left under the sticky bar
+  // press() focuses the button first (as Tab does), which starts a smooth scroll toward it. Once the page is still, that
+  // scroll must not have carried the modes off the top or under the sticky bar (SC 2.4.11; 2.5.8 for the radios beside it).
+  await page.evaluate(
+    () =>
+      new Promise<void>((done) => {
+        let y = NaN;
+        let still = 0;
+        const tick = () => {
+          still = scrollY === y ? still + 1 : 0;
+          y = scrollY;
+          if (still >= 10) done();
+          else requestAnimationFrame(tick);
+        };
+        tick();
+      }),
+  );
+  const bar = await page.locator('.topbar').evaluate((b) => b.getBoundingClientRect().bottom);
+  for (const mode of await page.locator('input[name=mode]').all()) {
+    const box = (await mode.boundingBox())!;
+    expect(box.y).toBeGreaterThanOrEqual(bar);
+    expect(box.y + box.height).toBeLessThanOrEqual(page.viewportSize()!.height);
+  }
+  await noAxeViolations(page);
 });
 
 test('oral simulator: "time is up" is announced in a live region, and a double save stores one answer', async ({ page }) => {

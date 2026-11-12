@@ -20,6 +20,41 @@ const store = {
   },
 };
 
+/** A scroller lists in data-fade the edges ("start", "end") that hide content; the CSS fades those edges. It scrolls
+    sideways (the chip strip) or up and down (an index, the side list): the same list does both across 1024 px. Also
+    watched: its children, whose size changes when content hides or opens (Quick mode, a chapter folded). */
+function edgeFade(el: HTMLElement) {
+  const update = () => {
+    const across = scrolls(el, 'x');
+    const [pos, size, view] = across ? [el.scrollLeft, el.scrollWidth, el.clientWidth] : [el.scrollTop, el.scrollHeight, el.clientHeight];
+    const fade = `${pos > 1 ? 'start' : ''} ${pos + view < size - 1 ? 'end' : ''}`.trim();
+    if (fade) el.dataset.fade = fade;
+    else delete el.dataset.fade;
+  };
+  el.addEventListener('scroll', update, { passive: true });
+  const watch = new ResizeObserver(update);
+  for (const box of [el, ...el.children]) watch.observe(box);
+}
+
+/** Does `el` scroll on this axis: overflow set to scroll there, and content beyond its box? (A hidden overflow can
+    still be scrolled by script, which would shift a list sideways out of view.) */
+function scrolls(el: HTMLElement, axis: 'x' | 'y') {
+  const overflow = getComputedStyle(el)[axis === 'x' ? 'overflowX' : 'overflowY'];
+  const [size, view] = axis === 'x' ? [el.scrollWidth, el.clientWidth] : [el.scrollHeight, el.clientHeight];
+  return (overflow === 'auto' || overflow === 'scroll') && size - view > 1;
+}
+
+/** Scroll `box` so `el` sits in its middle, on the axis `box` scrolls on: scrollLeft or scrollTop only, the page never
+    moves (scrollIntoView would scroll it too). */
+function centreIn(box: HTMLElement, el: Element, behavior: ScrollBehavior = 'auto') {
+  const [b, r] = [box.getBoundingClientRect(), el.getBoundingClientRect()];
+  box.scrollBy({
+    left: scrolls(box, 'x') ? r.left - b.left - (box.clientWidth - r.width) / 2 : 0,
+    top: scrolls(box, 'y') ? r.top - b.top - (box.clientHeight - r.height) / 2 : 0,
+    behavior,
+  });
+}
+
 // ── Theme: system → light → dark ────────────────────────────────────────
 const THEMES = ['system', 'light', 'dark'] as const;
 type Theme = (typeof THEMES)[number];
@@ -102,36 +137,83 @@ const strip = document.querySelector<HTMLElement>('.section-toc ol');
 // An entry's section: the element its #hash names or, for a heading, the <section> around it.
 const entryOf = new Map<Element, HTMLAnchorElement>();
 strip?.querySelectorAll<HTMLAnchorElement>('a[href^="#"]').forEach((a) => {
-  const section = document.getElementById(decodeURIComponent(a.hash.slice(1)))?.closest('section');
+  const target = document.getElementById(decodeURIComponent(a.hash.slice(1)));
+  const section = target?.closest('section') ?? target;
   if (section) entryOf.set(section, a);
 });
 const spied = [...entryOf.keys()];
+// The chip strip (< 1024 px) scrolls sideways; the side list (>= 1024 px) up and down when taller than the screen.
+if (strip) edgeFade(strip);
 if (strip && spied.length) {
   const reduceMotion = matchMedia('(prefers-reduced-motion: reduce)');
-  const inBand = new Set<Element>();
   let current: HTMLAnchorElement | undefined;
   const markCurrent = (a: HTMLAnchorElement | undefined) => {
     if (a === current) return;
     current?.removeAttribute('aria-current');
     current = a;
     a?.setAttribute('aria-current', 'true');
-    // Phone/tablet chip strip: bring the current chip to the middle (the strip scrolls sideways only).
-    if (!a || strip.scrollWidth <= strip.clientWidth) return;
-    const delta = a.getBoundingClientRect().left - strip.getBoundingClientRect().left - (strip.clientWidth - a.offsetWidth) / 2;
-    strip.scrollBy({ left: delta, behavior: reduceMotion.matches ? 'auto' : 'smooth' });
+    // The current entry comes to the middle of the list, on the axis the list scrolls on; never while a keyboard
+    // user is in the list, where it pushed the focused entry out of view (SC 2.4.11).
+    if (a && !strip.querySelector(':focus-visible')) centreIn(strip, a, reduceMotion.matches ? 'auto' : 'smooth');
   };
-  // The section being read: the last one crossing the top 30% of the viewport. Hidden
-  // sections (Quick mode) never intersect; past the last section the last one stays current.
-  const spy = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((e) => (e.isIntersecting ? inBand.add(e.target) : inBand.delete(e.target)));
-      const reading = spied.filter((s) => inBand.has(s)).at(-1);
-      if (reading) markCurrent(entryOf.get(reading));
-      else if (spied[0]!.getBoundingClientRect().top > innerHeight * 0.3) markCurrent(undefined);
-    },
-    { rootMargin: '0px 0px -70% 0px' },
-  );
-  spied.forEach((s) => spy.observe(s));
+  // The section being read is the one under a reading line just below the sticky bars: 8 px under the place where
+  // an anchor puts its heading (scroll-padding-top). A short section no longer loses to the next one, as it did in
+  // a band of the top 30 % of the screen. Hidden sections (Quick mode) and hidden entries (the last two on phones)
+  // are skipped, and between two sections the current one stays. At the end of the page, which the last sections
+  // may not scroll up to the line, a tapped section on screen stays current, else the last one on screen is.
+  const shown = (el: Element) => el.getClientRects().length > 0;
+  const sectionOf = new Map([...entryOf].map(([s, a]) => [a, s]));
+  let tapped: Element | undefined;
+  const read = () => {
+    const line = parseFloat(getComputedStyle(root).scrollPaddingTop) + 8;
+    const live = spied.filter((s) => shown(s) && shown(entryOf.get(s)!));
+    const boxes = live.map((s) => s.getBoundingClientRect());
+    let i = boxes.findIndex((r) => r.top <= line && r.bottom > line);
+    if (innerHeight + scrollY >= root.scrollHeight - 2) {
+      const t = tapped ? live.indexOf(tapped) : -1;
+      i = t >= 0 && boxes[t]!.top < innerHeight ? t : boxes.map((r) => r.top < innerHeight).lastIndexOf(true);
+    } else tapped = undefined;
+    if (i >= 0) markCurrent(entryOf.get(live[i]!));
+    else if (!boxes[0] || boxes[0].top > line) markCurrent(undefined);
+  };
+  // A tap on an entry marks it at once; while the page scrolls there the line passes other sections, so the spy
+  // waits until the scrolling settles (150 ms without a scroll event) and then reads the line again.
+  let held = false;
+  let settle: ReturnType<typeof setTimeout> | undefined;
+  const settleThenRead = () => {
+    clearTimeout(settle);
+    settle = setTimeout(() => {
+      held = false;
+      read();
+    }, 150);
+  };
+  // A keyboard-focused entry comes to the middle of the list instead, whole (the browser only scrolls it to the edge).
+  // Not on a click or a tap, which focuses the entry too: the list would move under the pointer before it is let go.
+  strip.addEventListener('focusin', (ev) => {
+    const el = ev.target as Element;
+    if (el.matches(':focus-visible')) centreIn(strip, el);
+  });
+  strip.addEventListener('click', (ev) => {
+    const a = (ev.target as Element).closest<HTMLAnchorElement>('a[href^="#"]');
+    if (!a || !sectionOf.has(a)) return;
+    markCurrent(a);
+    tapped = sectionOf.get(a);
+    held = true;
+    settleThenRead();
+  });
+  let queued = false;
+  const queue = () => {
+    if (held) return settleThenRead(); // still scrolling to the tapped entry's section
+    if (queued) return;
+    queued = true;
+    requestAnimationFrame(() => {
+      queued = false;
+      read();
+    });
+  };
+  addEventListener('scroll', queue, { passive: true });
+  // Sections that open, close or hide (Quick mode, a section folded) and a new width move the line's section.
+  new ResizeObserver(queue).observe(strip.closest('.entity-layout') ?? document.body);
 }
 
 // ── Phones: reading down, the chip strip slides up behind the top bar; reading up, it comes back ─
@@ -168,6 +250,44 @@ if (chipStrip && chipLayout && topBar) {
   );
   phone.addEventListener('change', update);
 }
+
+// ── Chapter index (entity pages): the "Chapter" dialog opens on the current card ─
+/** Scroll a chapter index so the current card sits in its middle. */
+const centreCurrent = (tree: HTMLElement) => {
+  const cur = tree.querySelector('a[aria-current]');
+  if (cur) centreIn(tree, cur);
+};
+const chapter = document.querySelector<HTMLDialogElement>('[data-chapter-dialog]');
+const chapterBtn = document.querySelector<HTMLButtonElement>('[data-chapter-open]');
+if (chapter && chapterBtn) {
+  const tree = chapter.querySelector<HTMLElement>('.module-tree')!;
+  chapterBtn.addEventListener('click', () => {
+    chapter.showModal();
+    centreCurrent(tree);
+    tree.querySelector<HTMLElement>('a[aria-current]')?.focus({ preventScroll: true });
+  });
+  // A click on the backdrop closes it, as Esc does; focus goes back to the button.
+  chapter.addEventListener('click', (ev) => {
+    const r = chapter.getBoundingClientRect();
+    if (ev.target === chapter && (ev.clientX < r.left || ev.clientX > r.right || ev.clientY < r.top || ev.clientY > r.bottom)) chapter.close();
+  });
+  chapter.addEventListener('close', () => chapterBtn.focus());
+  // Back from the card picked in it, the page comes out of the browser cache with the dialog closed.
+  addEventListener('pagehide', () => chapter.close());
+}
+// The sidebar copy (>= 1024 px) opens on the current card each time it appears (on load, when the sidebar is
+// expanded, when an iPad turns to landscape) and while its width changes (the sidebar opens with a transition, and
+// the cards wrap differently); a change of height alone (the browser's toolbars) leaves the reader's scroll alone.
+const sideTree = document.querySelector<HTMLElement>('.primary-nav .module-tree');
+if (sideTree) {
+  let width = 0;
+  new ResizeObserver(() => {
+    const shown = sideTree.clientHeight > 0;
+    if (shown && sideTree.clientWidth !== width) centreCurrent(sideTree);
+    width = shown ? sideTree.clientWidth : 0;
+  }).observe(sideTree);
+}
+document.querySelectorAll<HTMLElement>('.module-tree').forEach((tree) => edgeFade(tree));
 
 // ── Sidebar collapse (desktop) ──────────────────────────────────────────
 const sideBtn = document.querySelector<HTMLButtonElement>('[data-sidebar-toggle]');

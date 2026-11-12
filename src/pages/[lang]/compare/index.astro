@@ -14,7 +14,7 @@ export const getStaticPaths = langPaths;
 
 const lang = Astro.params.lang as Lang;
 const t = (k: Parameters<typeof tHz>[1]) => tHz(lang, k);
-const { entities } = await siteData();
+const { entities } = await siteData(lang);
 const collator = new Intl.Collator(lang);
 const options = [...entities].sort((a, b) => collator.compare(a.names[lang], b.names[lang]));
 const config = {

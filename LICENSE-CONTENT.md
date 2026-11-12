@@ -17,7 +17,7 @@ It does **not** cover:
 
 - **Code** (everything else, including `src/` code, `scripts/`, `tests/`, configuration): MIT, see [LICENSE](LICENSE).
 - **Third-party images**: each keeps its own license, recorded in `src/content/images/<id>.yaml` and shown on the Credits page.
-- **Fonts**: Fraunces and Atkinson Hyperlegible Next, SIL Open Font License 1.1, bundled from npm packages.
+- **Fonts**: Fraunces, Atkinson Hyperlegible Next and Source Sans 3 (Greek letters only), SIL Open Font License 1.1, bundled from npm packages.
 - **Reference textbooks**: titles are cited for reference only; no text, tables or figures from them are reproduced.
 
 ## In short (not a substitute for the license)

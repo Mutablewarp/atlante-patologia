@@ -14,7 +14,7 @@ export const getStaticPaths = () => LANGS.map((lang) => ({ params: { lang } }));
 
 export const GET: APIRoute = async ({ params }) => {
   const lang = params.lang as Lang;
-  const data = await siteData();
+  const data = await siteData(lang);
   const body = {
     lang,
     entities: data.entities.map((e) => ({

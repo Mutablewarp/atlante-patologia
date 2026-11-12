@@ -219,7 +219,7 @@ function Session(props: {
         {fmt(t('queueSummary'), { due: counts.due, new: counts.news })} · {fmt(t('cardOf'), { i: Math.min(pos + 1, queue.length), n: queue.length })}
       </p>
       <article class="card flashcard">
-        <h2 id="review-card-title" class="kicker">
+        <h2 id="review-card-title" class="kicker kicker-sentence">
           {t(card.kind === 'cloze' ? 'kindCloze' : card.kind === 'qa' ? 'kindQa' : 'kindOcclusion')} · {name}
         </h2>
         <CardFace lang={lang} card={card} side="front" />

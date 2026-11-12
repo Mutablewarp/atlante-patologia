@@ -31,6 +31,35 @@
   }
 }
 
+/* From 600 px the previous and next card sit beside the breadcrumb, or under it when the row is full (CardPager) */
+@media (min-width: 600px) {
+  .crumb-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    column-gap: var(--space-5);
+  }
+}
+.pager {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-1) var(--space-2);
+  margin: 0 0 var(--space-3);
+  font-size: var(--step--1);
+  color: var(--ink-muted);
+}
+.pager a {
+  display: inline-block;
+  min-height: 1.5rem;
+}
+@media (max-width: 599px) {
+  .pager {
+    display: none;
+  }
+}
+
 .entity-head {
   margin-bottom: var(--space-5);
 }
@@ -44,7 +73,7 @@
   margin: 0 0 var(--space-4);
   max-width: var(--measure);
   color: var(--ink-muted);
-  line-height: 1.45;
+  line-height: var(--leading-compact);
 }
 /* Label and value run on as one line of text: no narrow hanging column on phones */
 .entity-names :is(dt, dd) {
@@ -59,6 +88,8 @@
 .entity-names dd {
   margin: 0;
 }
+/* The name in the other language. In Fraunces, preloaded and never swapped: in the Atkinson italic, which arrives
+   later (swap), the line's baseline moved 3 px on iPads (CLS). Fraunces has no italic: the browser slants it. */
 .entity-names div:first-child dd {
   font-family: var(--font-display);
   font-size: var(--step-1);
@@ -97,6 +128,9 @@
   gap: var(--space-2);
   align-items: center;
   margin-top: var(--space-4);
+  /* Below the folded lens toggle, which floats beside the badges: a row placed beside it would be narrowed by its
+     width and wrap (touch-sized toggle on an iPad) */
+  clear: both;
 }
 .segmented {
   display: inline-flex;
@@ -117,7 +151,7 @@
   background: var(--hema);
   color: var(--on-hema);
 }
-/* Wider screens: the folded tools sit in the toolbar row; the study actions take a row of their own */
+/* Opened, the tools join the toolbar row; the study actions take a row of their own */
 .toolbar-more {
   display: contents;
 }
@@ -125,13 +159,31 @@
   flex-basis: 100%;
   margin: 0;
 }
+/* Bookmark and quiz: in the toolbar row from 600 px, behind "Tools" with the other study actions on phones.
+   Two copies, one shown at a time, so the tab order follows what is on screen at every width. */
+.entity-pinned {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+@media (max-width: 599px) {
+  .entity-pinned {
+    display: none;
+  }
+}
+@media (min-width: 600px) {
+  .entity-actions [data-pinned] {
+    display: none;
+  }
+}
 
-/* Phones: the lens chips, the less used tools and the learning objectives fold behind a toggle, closed
-   from the first paint (CSS only, so nothing moves) and only with JS; the card text starts about a screen down */
+/* The lens chips, the less used tools and the learning objectives fold behind a toggle at every width, closed
+   from the first paint (CSS only, so nothing moves) and only with JS: the card text starts on the first screen
+   of a tablet or a computer, and about a screen down on phones. Without JS everything shows, as before. */
 html .fold-toggle {
   display: none;
 }
-@media screen and (max-width: 599px) {
+@media screen {
   html.js .fold-toggle {
     display: inline-flex;
     align-items: center;
@@ -160,20 +212,13 @@ html .fold-toggle {
   .lens-chips {
     margin-top: var(--space-2);
   }
-  /* Quick/Full, A−/A+ and the tools toggle fit one row from 375 px */
-  .entity-toolbar :is(.segmented button, .btn-small) {
-    padding-inline: var(--space-2);
-  }
-  .entity-toolbar .text-size .btn {
-    min-width: 2.25rem;
-  }
-  .objectives {
+  html.js .objectives {
     padding-block: var(--space-2);
   }
   html.js .objectives h2 {
     margin: 0;
   }
-  .objectives ul {
+  html.js .objectives ul {
     padding-bottom: var(--space-3);
   }
   /* The title itself is the toggle, full width, in the kicker style */
@@ -188,6 +233,37 @@ html .fold-toggle {
     text-transform: inherit;
     text-align: left;
     cursor: pointer;
+  }
+}
+/* Quick/Full, A−/A+ and the tools toggle fit one row from 375 px; with the bookmark and the quiz, from 768 px,
+   where A− and A+ go square */
+@media screen and (max-width: 1023px) {
+  .entity-toolbar :is(.segmented button, .btn-small) {
+    padding-inline: var(--space-2);
+  }
+  .entity-toolbar .text-size .btn {
+    min-width: 2.25rem;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1023px) {
+  .entity-toolbar .text-size .btn {
+    min-width: 2rem;
+    padding-inline: var(--space-1);
+  }
+}
+/* On touch screens A- and A+ are 44 px square, as on main (base.css): there the row holds from 820 px (Italian
+   labels; it wraps once at 744-819 px) */
+@media (min-width: 600px) and (pointer: coarse) {
+  .entity-toolbar .text-size .btn {
+    min-width: 2.75rem;
+  }
+}
+@media screen and (max-width: 599px) {
+  .objectives {
+    padding-block: var(--space-2);
+  }
+  .objectives ul {
+    padding-bottom: var(--space-3);
   }
 }
 
@@ -209,6 +285,13 @@ html .fold-toggle {
   background: color-mix(in srgb, var(--paper) 96%, transparent);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--rule);
+}
+/* From 600 px opaque like the top bar: no text showing through (the side list draws its own stripe, below) */
+@media (min-width: 600px) {
+  .section-toc {
+    background: var(--paper);
+    backdrop-filter: none;
+  }
 }
 .section-toc .toc-title {
   display: none;
@@ -240,15 +323,64 @@ html .fold-toggle {
   font-size: var(--step--1);
   text-decoration: none;
 }
-/* Current chip: fill and border only; a bolder weight would widen it and shift its neighbours (CLS) */
+/* Current chip: fill and border only; a bolder weight would widen it and shift its neighbours (CLS). `li >` outranks
+   the bold current entry of the desktop list (horizontal.css), which loads later and made the chip 1.4 px wider */
 @media (max-width: 1023px) {
   .section-toc a,
-  .section-toc a[aria-current] {
+  .section-toc li > a[aria-current] {
     font-weight: 600;
   }
   .section-toc a[aria-current] {
     background: var(--hema-soft);
   }
+  /* The strip scrolls, so it clips: the focus ring is drawn inside the chip (base.css, segmented control) */
+  .section-toc a:focus-visible {
+    outline-offset: -3px;
+    box-shadow: inset 0 0 0 5px var(--paper);
+  }
+  /* A chip that takes focus in the stuck strip is already below the top bar: the page must not scroll to clear the
+     strip's own height (scroll-padding-top), which jumped it about 560 px per Shift+Tab (SC 2.4.11) */
+  .section-toc a {
+    scroll-margin-top: calc(-1 * (var(--chips-h) + var(--space-4)));
+  }
+}
+/* Forced colours drop the fill: the current chip is underlined instead (no change of width) */
+@media (max-width: 1023px) and (forced-colors: active) {
+  .section-toc a[aria-current] {
+    text-decoration: underline 2px;
+  }
+}
+/* Tablets: the edges that hide chips fade (shell.ts sets data-fade), never over a keyboard focus; the current chip is
+   filled like the pressed reading mode, with the same weight and border, so no chip changes width (CLS 0) */
+@media (min-width: 600px) and (max-width: 1023px) {
+  .section-toc ol[data-fade]:not(:has(:focus-visible)) {
+    mask-image: linear-gradient(to right, var(--fade-start, #000), #000 2.5rem, #000 calc(100% - 2.5rem), var(--fade-end, #000));
+  }
+  .section-toc ol[data-fade~='start'] {
+    --fade-start: transparent;
+  }
+  .section-toc ol[data-fade~='end'] {
+    --fade-end: transparent;
+  }
+  .section-toc li > a[aria-current] {
+    background: var(--hema);
+    border-color: var(--hema);
+    color: var(--on-hema);
+  }
+  .section-toc li > a[aria-current]::selection,
+  .section-toc li > a[aria-current] ::selection {
+    color: var(--on-hema);
+  }
+}
+/* From 600 px the strip ends with the related cards and a link to the next card (phones keep their strip); from
+   1024 px that link sits under the side list instead (SectionToc.astro) */
+@media (max-width: 599px) {
+  .section-toc .toc-extra {
+    display: none;
+  }
+}
+.toc-next {
+  display: none;
 }
 /* Anchors, scrollIntoView and keyboard focus stop below the top bar and the sticky chip row (SC 2.4.11) */
 @media (max-width: 1023px) {
@@ -292,6 +424,16 @@ html .fold-toggle {
 .edition-note {
   max-width: var(--measure);
   margin-bottom: var(--space-5);
+}
+/* Tablets and computers: the folded header and the objectives bar sit closer to the text, so the first sentence
+   of the card is on the first screen (iPad landscape included) */
+@media screen and (min-width: 600px) {
+  .entity-head {
+    margin-bottom: var(--space-4);
+  }
+  .objectives {
+    margin-bottom: var(--space-4);
+  }
 }
 
 .entity-section {
@@ -370,9 +512,6 @@ html:not(.js) .section-toggle {
   min-width: 100%;
   margin: 0;
 }
-.section-body .table-scroll :is(th, td) {
-  line-height: 1.5;
-}
 .section-body .table-scroll thead th {
   --cell-bg: var(--surface-2);
   background: var(--cell-bg);
@@ -381,8 +520,10 @@ html:not(.js) .section-toggle {
   border-bottom: 0;
 }
 @media (max-width: 599px) {
+  /* a step more compact than the text (from 600 px every table is: base.css) */
   .section-body .table-scroll :is(th, td) {
     min-width: 10rem;
+    line-height: 1.5;
   }
   .section-body .table-scroll :is(th, td):first-child {
     position: sticky;
@@ -505,6 +646,13 @@ html:not(.js) .section-toggle {
   font-size: var(--step-0);
   font-family: var(--font-body);
 }
+/* From 600 px in the body face's bold: Fraunces' heading weight (560) and tracking read as a near-regular Atkinson */
+@media (min-width: 600px) {
+  .related-group h3 {
+    font-weight: 700;
+    letter-spacing: normal;
+  }
+}
 .related-group ul {
   padding-left: var(--space-4);
 }
@@ -534,37 +682,82 @@ html:not(.js) .section-toggle {
     grid-template-columns: minmax(0, 1fr) 14rem;
     gap: var(--space-7);
   }
+  /* A list taller than the screen (touch-sized entries on an iPad in landscape, the largest reading size) scrolls
+     inside its box, under its title and above the next card's link, which stay in view (shell.ts keeps the current
+     entry in view and marks the edges that hide entries). The rule is a background stripe, not a border: the
+     current entry's bar on it stays inside the scrolling list, which starts at the stripe. */
   .section-toc {
     grid-column: 2;
     grid-row: 1;
     align-self: start;
     top: calc(var(--topbar-h) + var(--space-5));
+    display: flex;
+    flex-direction: column;
+    max-height: calc(100dvh - var(--topbar-h) - var(--space-5) - var(--space-4) - var(--notice-h, 0px));
     margin: 0;
-    padding: 0 0 0 var(--space-4);
-    background: none;
+    padding: 0;
+    background: linear-gradient(var(--rule), var(--rule)) 0 0 / 2px 100% no-repeat;
     border-bottom: 0;
-    border-left: 2px solid var(--rule);
   }
   .section-toc .toc-title {
     display: block;
     font-weight: 700;
-    margin-bottom: var(--space-2);
+    margin: 0 0 var(--space-1);
+    padding-left: calc(var(--space-4) + 2px);
   }
   .section-toc ol {
     display: grid;
+    flex: 0 1 auto;
+    min-height: 0;
     gap: 0;
-    overflow: visible;
+    overflow: hidden auto;
+    /* room for the 6 px focus ring inside the scrolling list */
+    padding: var(--space-2) var(--space-2) var(--space-2) calc(var(--space-4) + 2px);
+    scroll-padding-block: var(--space-2);
   }
+  .section-toc ol[data-fade]:not(:has(:focus-visible)) {
+    mask-image: linear-gradient(var(--fade-start, #000), #000 2rem, #000 calc(100% - 2rem), var(--fade-end, #000));
+  }
+  .section-toc ol[data-fade~='start'] {
+    --fade-start: transparent;
+  }
+  .section-toc ol[data-fade~='end'] {
+    --fade-end: transparent;
+  }
+  /* The whole row is the target (short labels were 36 px wide); a rounded rectangle for the focus ring, which a pill
+     drew across the first and last letters of a wrapped entry */
   .section-toc a {
+    display: flex;
     min-height: 1.9rem;
     padding: 0;
     border: 0;
+    border-radius: var(--radius-s);
     background: none;
     color: var(--ink-muted);
     white-space: normal;
   }
   .section-toc a:hover {
     color: var(--hema);
+  }
+  /* The next card has its own link under the list (below), so the list ends with the related cards */
+  .section-toc .toc-extra[data-next-entry] {
+    display: none;
+  }
+  /* The next card, one click from anywhere in the card: an action in hematoxylin under the list */
+  .toc-next:not([hidden]) {
+    display: block;
+    flex: none;
+    margin: var(--space-1) 0 0 calc(var(--space-4) + 2px);
+    padding-top: var(--space-2);
+    border-top: 1px solid var(--rule);
+  }
+  .section-toc .toc-next a {
+    min-height: 2.75rem;
+    color: var(--hema);
+    font-weight: 600;
+  }
+  .section-toc .toc-next a:hover {
+    text-decoration: underline;
   }
   .entity-body {
     grid-column: 1;
@@ -580,5 +773,28 @@ html:not(.js) .section-toggle {
     display: grid;
     grid-template-columns: minmax(0, 1fr) 14rem;
     gap: var(--space-7);
+  }
+}
+/* 1024-1279 px (iPad Pro in portrait, small laptops): with the sidebar open, a 14rem list and a 3rem gap left the
+   text 444 px and 52 characters a line. A 9.5rem list and a 1rem gap give it 548 px: 61 characters in WebKit, 64 in
+   Chromium (11rem and 1.5rem gave WebKit 57). The list's entries wrap. */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  .entity-layout,
+  .pattern .pattern-lead {
+    grid-template-columns: minmax(0, 1fr) 9.5rem;
+    gap: var(--space-4);
+  }
+}
+/* From 1280 px the text column is the measure (and the room of the section toggles), the list sits right beside it,
+   and on cards the page is that block, centred: no empty band of 240-370 px between the text and the list. Pattern
+   pages keep their block on the left, above the full-width matrix. */
+@media (min-width: 1280px) {
+  .entity-layout,
+  .pattern .pattern-lead {
+    grid-template-columns: minmax(0, calc(var(--measure) + 4rem)) 14rem;
+    gap: var(--space-6);
+  }
+  .page:has(> .entity) {
+    max-width: calc(var(--measure) + 4rem + var(--space-6) + 14rem);
   }
 }
