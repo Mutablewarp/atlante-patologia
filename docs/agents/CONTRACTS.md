@@ -39,7 +39,7 @@ Writes `.work/packets/<id>/`:
 - `vocab.json`: `{ taxonomy: { system: [ids], process: [...], pattern: [...], presentation: [...], marker: [...], group: [...] }, entities: [existing entity ids], planned: [ids in the planned lists of modules.yaml], modules: [ids] }`.
 - `NOTES.md`, at most 20 lines: names, kind, priority, depth, a warning if `editionDependent`, the must-cover list, and the paths of the exemplar cards named in `docs/agents/BRIEF.md`.
 
-Prints `packet <id>: <pages> pages, <bytes> bytes`. Exits 1, with the reason, when the id is not in the manifest.
+Prints `packet <id>: <pages> pages, <bytes> bytes`. Exits 1, with the reason, when the id is not in the manifest, and for a row of kind `pattern` (seven rows: comparison pages of `src/content/patterns/`, not entity cards; no flow for them yet, they wait for sub-batch W00b).
 
 ## 3. Reports
 
@@ -63,9 +63,9 @@ Gates:
 2. `node scripts/no-verbatim.mjs` on the card's files: `src/content/entities/<id>/`, `docs/ledger/<id>.yaml`, `src/content/images/<id>-*.yaml`. Skipped, with a note, when `.work/*.txt` is absent.
 3. `it.md` has `translatedFrom` equal to the sha256 of `en.md`.
 4. Claim markers `<!--c:...-->` in `en.md` and in `it.md` are the same list, and equal the `claimId`s of the ledger.
-5. English words of `en.md` do not exceed the cap in the packet's `row.json`, when the packet exists.
+5. English words of `en.md` do not exceed the cap in the packet's `row.json`, when the packet exists. Words: runs of letters and digits in the body (a hyphenated or apostrophe word counts once), outside the frontmatter, HTML comments and tags; headings and table cells count. The older exemplar `coagulative-necrosis` has 1,324 words by this count: copy its formats, not its length.
 
-With `--stage`, a gate that cannot apply yet is skipped: before `translator` there is no `it.md`; before `scout` there are no images.
+With `--stage`, a gate that cannot apply yet is skipped: before `translator` there is no `it.md`; before `scout` there are no images. Without `it.md`, the structure of `en.md` (frontmatter, the 13 H2 titles, the differential table, the high-yield bullets) is still checked.
 
 ## 5. Running a batch
 

@@ -27,6 +27,8 @@
     "test:e2e:offline": "playwright test -c tests/e2e/offline.config.ts",
     "test:e2e:linux": "node scripts/e2e-linux.mjs",
     "agent:manifest": "node scripts/agent/manifest.mjs",
+    "agent:packet": "node scripts/agent/packet.mjs",
+    "card:check": "node scripts/agent/card-check.mjs",
     "prepush": "npm run check && npm test && npm run contrast && npm run guard && npm run test:e2e:linux",
     "icons": "node scripts/icons.mjs",
     "validate:entity": "node scripts/validate-entity.mjs"
