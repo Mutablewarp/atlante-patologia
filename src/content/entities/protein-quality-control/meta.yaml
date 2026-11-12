@@ -105,7 +105,7 @@ examQuestions:
     en: "Tell me about protein quality control: which systems make it up, and how is a protein tagged for the proteasome?"
     focus: [definition, pathogenesis]
     level: 1
-  - it: "Che cosa vede al microscopio quando il controllo di qualità delle proteine fallisce? Mi descriva qualche inclusione e mi dica in quali cellule la cerca."
+  - it: "Che cosa vede al microscopio quando il controllo di qualità delle proteine fallisce? Mi descriva alcune inclusioni e mi dica in quali cellule le cerca."
     en: "What do you see under the microscope when protein quality control fails? Describe a few inclusions and tell me in which cells you look for them."
     focus: [micro, ancillary]
     level: 1
@@ -132,6 +132,12 @@ images:
     role: micro
   - id: protein-quality-control-micro-2
     role: micro
+  - id: protein-quality-control-micro-3
+    role: micro
+  - id: protein-quality-control-micro-4
+    role: micro
+  - id: protein-quality-control-micro-5
+    role: micro
 reviewStatus: ai-generated-unreviewed
 editionDependent: false
 sources:
@@ -142,13 +148,13 @@ sources:
     chapter: "6"
     pages: "284-286"
   - source: rubin-8e
-    chapter: "15"
-    pages: "582"
-  - source: rubin-8e
     chapter: "20"
     pages: "868-869, 878, 881"
   - source: rubin-8e
+    chapter: "22"
+    pages: "935-936"
+  - source: rubin-8e
     chapter: "32"
-    pages: "1491-1492, 1494, 1496, 1498-1499"
-lastUpdated: 2026-11-09
+    pages: "1479-1480, 1482, 1491-1492, 1494, 1496, 1498-1499"
+lastUpdated: 2026-11-12
 status: published

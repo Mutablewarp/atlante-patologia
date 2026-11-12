@@ -73,14 +73,15 @@ claims:
     verifier: "verifier-agent"
     date: 2026-11-03
   # fixer: reworded per verifier (target lysines vs. ubiquitin's own lysines for chains).
+  # fixer 2026-11-12: rewritten for rule 1(a) with the independent verifier's own wording (en.md, it.md and this row).
   - claimId: protein-quality-control-c010
     section: pathogenesis
-    statement: "Ubiquitin is a conserved 76-residue protein attached mainly to lysines of target proteins, routing them to compartments such as the proteasome; lysines on ubiquitin itself serve to join further ubiquitins into chains."
+    statement: "Ubiquitin acts as an address tag that sends many proteins to their destination, the proteasome among others; this small 76-residue protein, nearly unchanged through evolution, is usually bound to a lysine of the target, while lysines of ubiquitin itself join further ubiquitins into chains."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "7-8" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
   - claimId: protein-quality-control-c011
     section: pathogenesis
     statement: "Ubiquitin tagging takes three enzymes: E1 activates ubiquitin, an E2 conjugating enzyme (the cell has dozens) receives it, and an E3 ligase fixes it onto the target protein."
@@ -282,14 +283,16 @@ claims:
     verifiedBy: agent
     verifier: "verifier-agent"
     date: 2026-11-03
+  # fixer 2026-11-12: the old statement followed the Fig. 1-33 legend point by point (rule 1(a), flagged by the independent
+  # verifier); reworded by the fixer alone, so the row is self-checked. Public text unchanged.
   - claimId: protein-quality-control-c036
     section: ancillary
-    statement: "PAS staining after diastase removal of glycogen highlights alpha-1-antitrypsin aggregates."
+    statement: "After diastase has digested the glycogen, the PAS reaction still stains the alpha-1-antitrypsin globules in the liver."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "36" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "fixer-agent"
+    date: 2026-11-12
   - claimId: protein-quality-control-c037
     section: clinical
     statement: "Mutation of parkin, an E3 ubiquitin ligase, underlies some inherited forms of Parkinson disease."
@@ -363,14 +366,15 @@ claims:
     verifier: "independent-verifier-agent"
     date: 2026-11-09
   # fixer: Fe2+ attributed to insoluble aggregates, proteasome inhibition to beta-sheet aggregates, per verifier.
+  # fixer 2026-11-12: statement rewritten for rule 1(a) with the independent verifier's own wording; public text unchanged.
   - claimId: protein-quality-control-c046
     section: prognosis
-    statement: "Disordered insoluble aggregates sequester ferrous iron, which promotes further ROS; beta-sheet aggregates also inhibit proteasomal degradation and may cause cell death."
+    statement: "Iron (Fe2+) held in insoluble, often disordered aggregates feeds further ROS production; beta-sheet aggregates also block proteasomes and can thereby kill the cell."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "37-38" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
   - claimId: protein-quality-control-c047
     section: prognosis
     statement: "Misfolded beta-sheet proteins may be deposited extracellularly as amyloid."
@@ -518,14 +522,16 @@ claims:
     verifier: "verifier-agent"
     date: 2026-11-03
   # fixer: contested immunoproteasome trap replaced with 20S/oxidized-protein point, per verifier.
+  # fixer 2026-11-12: statement rewritten for rule 1(a) with the independent verifier's own wording; pages 7 and 9 added
+  # because they show that proteasomal degradation can work without ubiquitin; public text unchanged.
   - claimId: protein-quality-control-c065
     section: traps
-    statement: "Mildly to moderately oxidized proteins are recognized and degraded directly by 20S proteasomes, so proteasomal degradation does not always require ubiquitin."
-    sourceRef: { source: rubin-8e, chapter: "1", pages: "37" }
+    statement: "20S proteasomes can break down proteins with mild or moderate oxidative damage without a ubiquitin tag, so not every proteasomal degradation depends on ubiquitin."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "7, 9, 37" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
   - claimId: protein-quality-control-c066
     section: traps
     statement: "Misfolded mutant CFTR is degraded rather than stored, so cystic fibrosis results from loss of function."
@@ -560,28 +566,28 @@ claims:
     date: 2026-11-03
   - claimId: protein-quality-control-c070
     section: differential
-    statement: "Amyloid stained with Congo red shows red-green birefringence when viewed in polarized light."
-    sourceRef: { source: rubin-8e, chapter: "15", pages: "582" }
+    statement: "Congo red-stained amyloid shows apple-green birefringence in polarized light."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "935-936" }
     status: verified
     verifiedBy: agent
     verifier: "independent-verifier-agent"
-    date: 2026-11-09
+    date: 2026-11-12
   - claimId: protein-quality-control-c071
     section: pathogenesis
-    statement: "Abnormally folded prion protein, converted from its alpha-helical form to a beta-pleated sheet by an inherited mutation or by exposure to the abnormal form, accumulates and causes spongiform neurodegeneration."
-    sourceRef: { source: rubin-8e, chapter: "1", pages: "36" }
+    statement: "Prion protein switches from an alpha-helical to a beta-pleated conformation and accumulates in the brain, causing spongiform encephalopathy; most cases are sporadic, the rest inherited (prion protein gene mutations) or acquired through exposure to the abnormal protein."
+    sourceRef: { source: rubin-8e, chapter: "32", pages: "1479-1480, 1482" }
     status: verified
     verifiedBy: agent
-    verifier: "author-agent v22/protein-quality-control"
-    date: 2026-11-08
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
   - claimId: protein-quality-control-c072
     section: pathogenesis
-    statement: "'Prion-like' templating, the conversion of normal protein by a misfolded copy, probably accounts for the focal onset and stereotyped spread of neurodegenerative diseases."
+    statement: "'Prion-like' templating, in which a misfolded protein converts normal copies of itself, probably explains the predictable spread of other neurodegenerative diseases from the region where they begin."
     sourceRef: { source: rubin-8e, chapter: "32", pages: "1492" }
     status: verified
     verifiedBy: agent
-    verifier: "author-agent v22/protein-quality-control"
-    date: 2026-11-09
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
   - claimId: protein-quality-control-c073
     section: ancillary
     statement: "A liver biopsy can display hepatocyte inclusions such as Mallory-Denk hyalins (illustrated in amiodarone-associated phospholipidosis)."
@@ -600,12 +606,12 @@ claims:
     date: 2026-11-09
   - claimId: protein-quality-control-c075
     section: ancillary
-    statement: "Lewy bodies are eosin-stained inclusions in the cytoplasm of neurons, and a clear halo often rims them."
+    statement: "In neurons, Lewy bodies stain with eosin and are frequently ringed by a pale halo."
     sourceRef: { source: rubin-8e, chapter: "32", pages: "1498-1499" }
     status: verified
     verifiedBy: agent
-    verifier: "author-agent v22/protein-quality-control"
-    date: 2026-11-09
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
   - claimId: protein-quality-control-c076
     section: ancillary
     statement: "On H&E, Mallory-Denk hyalins are eosinophilic hepatocyte inclusions that often lie near the nucleus, whereas alpha-1-antitrypsin droplets take up eosin only faintly."
@@ -624,12 +630,12 @@ claims:
     date: 2026-11-09
   - claimId: protein-quality-control-c078
     section: ancillary
-    statement: "No technique detects aggregated proteins more sensitively than ubiquitin immunostaining, yet a positive stain points to no particular disease; antibodies to the aggregating protein, such as tau or alpha-synuclein, identify it, and interpretation needs the clinical context."
+    statement: "Aggregated proteins are picked up with high sensitivity by ubiquitin immunostaining, yet a positive stain points to no particular disease; antibodies to the aggregating protein, such as tau or alpha-synuclein, identify it, and interpretation needs the clinical context."
     sourceRef: { source: rubin-8e, chapter: "32", pages: "1491-1492" }
     status: verified
     verifiedBy: agent
-    verifier: "author-agent v22/protein-quality-control"
-    date: 2026-11-09
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
   - claimId: protein-quality-control-c079
     section: ancillary
     statement: "Light microscopy shows only the larger inclusions, which can shield the cell by walling off toxic fibrils; the early fibrils, potentially very cytotoxic, need electron microscopy to be seen."
