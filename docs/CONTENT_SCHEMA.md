@@ -1,6 +1,6 @@
 # Content schema
 
-Status: PHASE 0 proposal, 2026-10-10, implemented in Phase 1 as Zod schemas in `src/lib/schema.ts` (`import { z } from 'astro/zod'`, Zod 4), imported by `src/content.config.ts` and by the Vitest validators. One schema, used in two places; where this page and `src/lib/schema.ts` differ, the code wins. §1b, §3, §3a and §8 were brought in line with the code on 2026-11-04.
+Status: PHASE 0 proposal, 2026-10-10, implemented in Phase 1 as Zod schemas in `src/lib/schema.ts` (`import { z } from 'astro/zod'`, Zod 4), imported by `src/content.config.ts` and by the Vitest validators. One schema, used in two places; where this page and `src/lib/schema.ts` differ, the code wins. §1b, §3, §3a and §8 were brought in line with the code on 2026-11-04. §1a, §1b and §6 were extended on 2026-11-12 (technique cards, module g10).
 
 ## 0. Shared types
 
@@ -25,7 +25,7 @@ entity = z.object({
   id: Id,
   module: ModuleId,
   tier: z.enum(['core','extended']),
-  kind: z.enum(['disease','lesion','process','concept']),
+  kind: z.enum(['disease','lesion','process','concept','technique']), // technique: see the end of §1b
   names: z.object({
     it: z.string(), en: z.string(),
     latin: z.string().optional(),
@@ -98,6 +98,23 @@ Body: exactly these H2 sections, in this order. The titles are the canonical loc
 | — | `quick-check` | Quick check (rendered from `meta.quickCheck`) | Verifica rapida | ✓ |
 
 A section that does not apply, such as gross morphology for a molecular process, contains one localized "not applicable" line. It is never omitted, so the structure stays parallel. Process/concept cards (`kind: process|concept`) may mark sections 4–9 `n/a`.
+
+**Technique cards** (`kind: technique`, module g10, owner decision D2) keep the 13 anchor ids and, in `en.md` / `it.md`, the canonical H2 titles above: the parity gate and `splitSections` depend on them. The page shows other titles on ten sections. `sectionTitle(id, kind, lang)` in `src/i18n/sections.ts` is the one function that names a section on a page (headings, contents list, "continue" links, exam-question and quiz back-links); the contents list shows the same remapped title, which has no shorter form. High-yield, traps, mnemonics and the quick check keep their titles.
+
+| Anchor id | Title on a technique card (EN) | (IT) |
+|---|---|---|
+| `definition` | Principle and aims | Principio e scopi |
+| `etiology` | Indications | Indicazioni |
+| `pathogenesis` | Steps of the method | Fasi del metodo |
+| `gross` | Gross handling | Gestione macroscopica |
+| `micro` | What the slide or smear shows | Cosa mostra il vetrino o lo striscio |
+| `ancillary` | Related tests | Test correlati |
+| `clinical` | Clinical use | Uso clinico |
+| `diagnosis` | Interpretation and reporting | Interpretazione e refertazione |
+| `prognosis` | Limits and cost of errors | Limiti e costo degli errori |
+| `differential` | Compared with other techniques | Confronto con altre tecniche |
+
+Compare shows one row per quick section for several cards at once, so its rows keep the canonical titles.
 
 Authoring conventions inside the markdown:
 
@@ -230,7 +247,7 @@ The Credits page and per-image credit lines are generated from these files. An i
 | Glossary | `glossary/<id>.yaml` | `id, term: L, definition: L (≤ 40 words), aliases: LList, see: Id[]`. Popovers work by tap, keyboard and hover. |
 | Learning path | `paths/<id>.yaml` | `id, kind: 'vertical'\|'horizontal', title: L, description: L, steps: ({entity: Id}\|{pattern: Id})[]` |
 | Taxonomy (lens terms) | `taxonomy/<lens>.yaml` | `lens, label: L, terms: [{ id, label: L, parent?: Id, order }]` |
-| Modules | `modules.yaml` | `id, section: 'I'\|'II'\|'III', label: L, order, status: 'planned'\|'published', refPages, planned: [{ id, names: L }]` (feeds the Roadmap page) |
+| Modules | `modules.yaml` | `id, section: 'I'\|'II'\|'III', label: L, order, status: 'planned'\|'published', refPages, planned: [{ id, names: L }]` (feeds the Roadmap page). `order` is a sort key, not always an integer: g10 (diagnostic methods, technique cards) is 9.5, so it sits between g09 and s10 and no other module is renumbered |
 | Sources | `sources.yaml` | `id, title, edition, year, publisher, kind: 'textbook'\|'standard'\|'article', doi?, pmid?, url?, existsVerified: { via: 'crossref'\|'pubmed'\|'publisher', date }` |
 
 ## 7. Flashcards (generated at build, never hand-authored)

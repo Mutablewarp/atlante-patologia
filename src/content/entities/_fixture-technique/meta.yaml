@@ -1,0 +1,35 @@
+# FIXTURE — NOT CONTENT. Exercises the technique-card section titles (PREVIEW_DRAFTS=1). status: draft keeps it out of every production build. No medical claims.
+id: fixture-technique
+module: g10
+tier: extended
+kind: technique
+names:
+  it: "Tecnica di prova (segnaposto)"
+  en: "Demo technique (placeholder)"
+  eponyms: []
+  synonyms: { it: [], en: [] }
+  abbreviations: []
+summary:
+  it: "Scheda finta di una tecnica, per provare i titoli delle sezioni. Nessuna informazione medica."
+  en: "Fake technique card used to test the section titles. It contains no medical information."
+lenses:
+  system: [general]
+  process: [cell-injury]
+  group: [degenerative]
+learningObjectives:
+  - { it: "Obiettivo segnaposto della tecnica.", en: "Placeholder technique objective." }
+quickCheck:
+  - { id: technique-q1, q: { it: "Domanda tecnica 1?", en: "Technique question 1?" }, a: { it: "Risposta tecnica 1.", en: "Technique answer 1." }, kind: short }
+  - { id: technique-q2, q: { it: "Domanda tecnica 2?", en: "Technique question 2?" }, a: { it: "Risposta tecnica 2.", en: "Technique answer 2." }, kind: short }
+  - { id: technique-q3, q: { it: "Domanda tecnica 3?", en: "Technique question 3?" }, a: { it: "Risposta tecnica 3.", en: "Technique answer 3." }, kind: free }
+examQuestions:
+  - it: "Domanda d'esame segnaposto sulla tecnica: descrivi le fasi del metodo."
+    en: "Placeholder exam question on the technique: describe the steps of the method."
+    focus: [pathogenesis, differential]
+    level: 1
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+lastUpdated: 2026-11-12
+status: draft

@@ -23,7 +23,7 @@ import ExamQuestions from '../../../components/entity/ExamQuestions.astro'; // s
 import EntityPathways from '../../../components/pathway/EntityPathways.astro'; // v2/3d-pathways: compact pathway block
 import { LANGS, fmt, type Lang } from '../../../i18n/index.ts';
 import { tEntity, tAtlas } from '../../../i18n/pages.ts';
-import { SECTIONS, QUICK_CHECK, PRINT_SECTIONS } from '../../../i18n/sections.ts';
+import { SECTIONS, QUICK_CHECK, PRINT_SECTIONS, sectionTitle } from '../../../i18n/sections.ts';
 import { langPath } from '../../../lib/url.ts';
 import { siteData, entityBody, sources as getSources } from '../../../lib/content.ts';
 import { splitSections } from '../../../lib/sections.ts';
@@ -69,6 +69,8 @@ const crumbs = [
   { label: entity.names[lang] },
 ];
 const toc = [...SECTIONS, QUICK_CHECK];
+/** Section names for this card's kind (a technique card remaps ten titles); `short` is the contents-list label. */
+const sectionName = (sectionId: string, short = false) => sectionTitle(sectionId, entity.kind, lang, short);
 /** "Continue" targets after section i: the next one in full mode and, if different, the next one in quick mode. */
 const nextOf = (i: number) => {
   const full = toc[i + 1];
@@ -139,7 +141,7 @@ const contexts = LENSES.flatMap((lens) =>
     <div class="entity-layout">
       <SectionToc
         lang={lang}
-        items={toc.map((s) => ({ id: s.id, label: s.short[lang], quick: s.quick }))}
+        items={toc.map((s) => ({ id: s.id, label: sectionName(s.id, true), quick: s.quick }))}
         related={relations.length > 0 ? 'related' : undefined}
         cardNav={termLabel ? 'card-nav' : undefined}
         next={card(next)}
@@ -177,26 +179,26 @@ const contexts = LENSES.flatMap((lens) =>
             >
               <h2 id={`${s.id}-title`} class="section-title">
                 <button type="button" class="section-toggle" aria-expanded="true" aria-controls={`${s.id}-body`} data-section-toggle>
-                  <span>{s.title[lang]}</span>
+                  <span>{sectionName(s.id)}</span>
                   <span class="chevron js-only" aria-hidden="true" />
                 </button>
               </h2>
               <div class="recall js-only" data-recall>
-                <p>{fmt(tHz(lang, 'recallPrompt'), { section: s.title[lang] })}</p>
+                <p>{fmt(tHz(lang, 'recallPrompt'), { section: sectionName(s.id) })}</p>
                 <button type="button" class="btn btn-small" data-recall-reveal>{tHz(lang, 'recallReveal')}</button>
               </div>
               <div class="section-body prose" id={`${s.id}-body`}>
-                <Fragment set:html={wrapTables(split.sections.get(s.id) ?? '', s.title[lang])} />
+                <Fragment set:html={wrapTables(split.sections.get(s.id) ?? '', sectionName(s.id))} />
                 {imagesIn(s.id).map((img) => <ImageViewer lang={lang} image={imgs.get(img.id)} id={img.id} />)}
                 {
                   nextOf(i).full && (
                     <p class="section-next" data-pagefind-ignore>
                       <a class={nextOf(i).quick ? 'next-full' : undefined} href={`#${nextOf(i).full!.id}`}>
-                        {fmt(t('continueTo'), { section: nextOf(i).full!.title[lang] })} <span aria-hidden="true">↓</span>
+                        {fmt(t('continueTo'), { section: sectionName(nextOf(i).full!.id) })} <span aria-hidden="true">↓</span>
                       </a>
                       {nextOf(i).quick && (
                         <a class="next-quick" href={`#${nextOf(i).quick!.id}`}>
-                          {fmt(t('continueTo'), { section: nextOf(i).quick!.title[lang] })} <span aria-hidden="true">↓</span>
+                          {fmt(t('continueTo'), { section: sectionName(nextOf(i).quick!.id) })} <span aria-hidden="true">↓</span>
                         </a>
                       )}
                     </p>

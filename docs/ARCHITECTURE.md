@@ -50,7 +50,7 @@ Status: PHASE 0 proposal, 2026-10-10. Versions come from [VERIFIED_FACTS.md](VER
 ├─ src/
 │  ├─ content.config.ts           # collections; schemas imported from lib/schema.ts
 │  ├─ content/
-│  │  ├─ modules.yaml             # g01…o34: labels, order, status (planned | published)
+│  │  ├─ modules.yaml             # g01…o34 (+ g10 methods): labels, order, status (planned | published)
 │  │  ├─ taxonomy/<lens>.yaml     # lens terms with it/en labels
 │  │  ├─ sources.yaml             # machine registry of sources (feeds the Reading list page)
 │  │  ├─ entities/<id>/{meta.yaml,en.md,it.md}
@@ -154,7 +154,7 @@ The cache name includes the precache hash, so a new deploy replaces the shell at
 - **Images:** the default is AVIF + WebP at 2 widths. If the measured Phase 2 average puts the projected full-scope total above budget, drop to AVIF-only plus the smallest WebP fallback (D026, decided by measurement).
   - Rough budget: ≤ 220 MB of the 300 MB for images, i.e. ~110 KB per image at 2,000 images.
   - CI prints the per-module image cost.
-- **HTML:** ~2 languages × (~1,190 entities + ~16 pattern pages + lens/term pages + tools) ≈ 3,000–3,500 pages. Text weight is negligible next to images.
+- **HTML:** ~2 languages × (~1,190 entities + ~18 pattern pages + lens/term pages + tools) ≈ 3,000–3,500 pages. Text weight is negligible next to images.
 - **Caching:** filenames are content-hashed. GitHub Pages does not offer custom cache headers (verify in Phase 1), so the service worker's cache-first strategy provides long-lived caching for returning users.
 
 ## 9. Operations

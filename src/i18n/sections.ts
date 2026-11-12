@@ -3,7 +3,7 @@
  * Anchor ids are language-neutral, so `#micro` works in both languages.
  * The H2 titles in `it.md` / `en.md` must match these strings exactly.
  */
-import type { L } from './index.ts';
+import type { L, Lang } from './index.ts';
 
 export type SectionDef = { id: string; title: L; short: L; quick: boolean };
 
@@ -29,6 +29,31 @@ export const QUICK_CHECK: SectionDef = {
   title: { en: 'Quick check', it: 'Verifica rapida' },
   short: { en: 'Quick check', it: 'Verifica' },
 };
+
+/** Titles that a `kind: technique` card shows in place of the canonical ones (CONTENT_SCHEMA §1b). The ids and the H2s in the files stay canonical. */
+const TECHNIQUE_TITLES: Readonly<Record<string, L>> = {
+  definition: { en: 'Principle and aims', it: 'Principio e scopi' },
+  etiology: { en: 'Indications', it: 'Indicazioni' },
+  pathogenesis: { en: 'Steps of the method', it: 'Fasi del metodo' },
+  gross: { en: 'Gross handling', it: 'Gestione macroscopica' },
+  micro: { en: 'What the slide or smear shows', it: 'Cosa mostra il vetrino o lo striscio' },
+  ancillary: { en: 'Related tests', it: 'Test correlati' },
+  clinical: { en: 'Clinical use', it: 'Uso clinico' },
+  diagnosis: { en: 'Interpretation and reporting', it: 'Interpretazione e refertazione' },
+  prognosis: { en: 'Limits and cost of errors', it: 'Limiti e costo degli errori' },
+  differential: { en: 'Compared with other techniques', it: 'Confronto con altre tecniche' },
+};
+
+/**
+ * Name of a section on a card of this `kind`: the entity page (heading, contents list, "continue" links), its exam-question
+ * links and the quiz and oral back-links. `short` is the contents-list label; a remapped title has no shorter form.
+ * Compare rows (several cards) and the learner's own lists (no card kind at hand) keep the generic names.
+ */
+export function sectionTitle(id: string, kind: string | undefined, lang: Lang, short = false): string {
+  const def = id === QUICK_CHECK.id ? QUICK_CHECK : SECTIONS.find((s) => s.id === id);
+  const remapped = kind === 'technique' ? TECHNIQUE_TITLES[id]?.[lang] : undefined;
+  return remapped ?? (short ? def?.short[lang] : def?.title[lang]) ?? id;
+}
 
 /** Sections shown in the printed one-page summary. */
 export const PRINT_SECTIONS = ['high-yield', 'differential', 'traps'] as const;

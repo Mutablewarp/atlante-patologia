@@ -262,6 +262,32 @@ test('entity page lists possible exam questions that open onto the focus section
   await noAxeViolations(page);
 });
 
+test('a technique card keeps the 13 anchors and shows the technique titles, in both languages, everywhere a section is named', async ({ page, request }) => {
+  const titles = {
+    en: { definition: 'Principle and aims', etiology: 'Indications', pathogenesis: 'Steps of the method', differential: 'Compared with other techniques', 'high-yield': 'High-yield summary' },
+    it: { definition: 'Principio e scopi', etiology: 'Indicazioni', pathogenesis: 'Fasi del metodo', differential: 'Confronto con altre tecniche', 'high-yield': 'Punti chiave' },
+  };
+  for (const lang of ['en', 'it'] as const) {
+    await page.goto(`${lang}/e/fixture-technique/`);
+    for (const [id, title] of Object.entries(titles[lang])) await expect(page.locator(`#${id}-title`)).toHaveText(title); // heading
+    await expect(page.locator('.entity-section')).toHaveCount(14); // 13 sections and the quick check: same anchors as any card
+    await expect(page.locator('.section-toc a[href="#pathogenesis"]')).toHaveText(titles[lang].pathogenesis); // contents list
+    await expect(page.locator('.section-toc a[href="#high-yield"]')).toHaveText(lang === 'en' ? 'High-yield' : 'Punti chiave'); // short label kept
+    await expect(page.locator('#definition .section-next a').first()).toContainText(titles[lang].etiology); // "continue" link
+    await expect(page.locator('#definition [data-recall] p')).toContainText(titles[lang].definition); // recall prompt
+    await expect(page.locator('#differential .table-scroll')).toHaveAttribute('aria-label', new RegExp(titles[lang].differential)); // table label
+    const links = page.locator('.exam-questions a[href^="#"]'); // exam-question focus links
+    await expect(links).toHaveText([titles[lang].pathogenesis, titles[lang].differential]);
+  }
+  // the oral simulator's data names the same sections; a card of another kind keeps the canonical titles
+  const oral = (await (await request.get('en/data/oral.json')).json()) as { id: string; focus: { id: string; label: string }[] }[];
+  expect(oral.find((q) => q.id === 'fixture-technique#1')!.focus.map((f) => f.label)).toEqual(['Steps of the method', 'Compared with other techniques']);
+  expect(oral.find((q) => q.id === 'fixture-demo#1')!.focus.map((f) => f.label)).toEqual(['Definition and epidemiology', 'Pathogenesis']);
+  await page.goto('en/e/fixture-demo/');
+  await expect(page.locator('#definition-title')).toHaveText('Definition and epidemiology');
+  await expect(page.locator('.section-toc a[href="#pathogenesis"]')).toHaveText('Pathogenesis');
+});
+
 test('oral simulator: three questions, prediction before self-assessment, calibration and history', async ({ page }) => {
   const foreign = guardRequests(page);
   await page.goto('en/study/oral/');

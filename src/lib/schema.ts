@@ -41,7 +41,7 @@ export const entitySchema = z
     id: Id,
     module: ModuleId,
     tier: z.enum(['core', 'extended']),
-    kind: z.enum(['disease', 'lesion', 'process', 'concept']),
+    kind: z.enum(['disease', 'lesion', 'process', 'concept', 'technique']),
     names: z.object({
       it: z.string().min(1),
       en: z.string().min(1),
@@ -279,7 +279,8 @@ export const moduleSchema = z.object({
   id: ModuleId,
   section: z.enum(['I', 'II', 'III']),
   label: L,
-  order: z.number().int(),
+  /** Sort key. Not necessarily an integer: g10 sits at 9.5, between g09 and s10, so that no other module is renumbered. */
+  order: z.number(),
   status: z.enum(['planned', 'published']),
   refPages: z.string().optional(),
   planned: z.array(z.object({ id: Id, names: L })).default([]),
