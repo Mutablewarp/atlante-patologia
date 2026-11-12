@@ -25,6 +25,9 @@
     "licenses": "node scripts/license-scan.mjs",
     "test:e2e:study": "playwright test -c tests/e2e/study.config.ts",
     "test:e2e:offline": "playwright test -c tests/e2e/offline.config.ts",
+    "test:e2e:linux": "node scripts/e2e-linux.mjs",
+    "agent:manifest": "node scripts/agent/manifest.mjs",
+    "prepush": "npm run check && npm test && npm run contrast && npm run guard && npm run test:e2e:linux",
     "icons": "node scripts/icons.mjs",
     "validate:entity": "node scripts/validate-entity.mjs"
   },

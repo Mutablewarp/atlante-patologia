@@ -118,7 +118,7 @@ return pipeline(args.cards, ...STAGES.map(run))
 | P0-1 | Checkpoint the V2.2 branch | lead | Done: `aab6b06` |
 | P0-2 | Run the last 6 fixes and the batch closing on Sonnet (the script resumes; add `model: 'sonnet'`). Then gates, merge into `main`, deploy, live smoke test | agents, lead | V2.2 live; `docs/PROGRESS.md` updated |
 | P0-3 | Merge `fix/quiz-target-size` (`66087c0`) | lead | Study e2e passes 20 times in a row |
-| P0-4 | Remove the 35 merged worktrees (21 GB). Keep `g01-v22` and the quiz one until merged | lead, after the owner confirms | `git worktree list` shows 3 entries |
+| P0-4 | Remove the 34 merged or patch-equivalent worktrees (19 GB). Keep `g01-v22` and the quiz one until merged | lead, after the owner confirms | Done 2026-11-12: `git worktree list` shows 3 entries |
 | P0-5 | `npm run test:e2e:linux`: the e2e suite in the Playwright Docker image, pinned to the installed Playwright version. `npm run prepush` runs the gates plus this. Add one entity page to the CI Lighthouse list | coder | A known Linux-only failure reproduces locally; no push without it |
 | P0-6 | The 6 pathways and 4 diagrams deferred from V2.2 | agents | Run as sub-batch W00b after the pilot |
 
@@ -264,7 +264,7 @@ B-0 to B-2 start right after Phase 1, in parallel with W02–W03: they touch oth
 | D1 | Card depth | The three levels of §7 |
 | D2 | Technique cards for W01 | Add `kind: technique` with the section mapping proposed in the programme map |
 | D3 | Human review | Name a reviewer and a first set of cards, or accept "not reviewed" on every card |
-| D4 | Worktree cleanup (21 GB) | Remove the 35 merged ones |
+| D4 | Worktree cleanup (19 GB) | Remove the 34 merged ones (done 2026-11-12) |
 | D5 | Anatomy source | BodyParts3D, plus HRA organs where needed |
 | D6 | When to build the body | Right after Phase 1, not at the end |
 | D7 | Where the body lives | The Atlas's opening view on tablets and computers; a highlighted card on phones |
