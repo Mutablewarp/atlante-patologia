@@ -47,8 +47,8 @@ Not applicable.
 - **In tissue:** pyroptosis is hard to catch in the act, because the dying cells burst quickly and macrophages soon clear them away.<!--c:pyroptosis-c054--> On H&E it shows at most the lytic picture described under Microscopic morphology, and appearance alone is not enough to prove it.<!--c:pyroptosis-c055-->
 - **What defines it:** inflammatory caspases often, though not always, start it; for the Nomenclature Committee on Cell Death (NCCD, 2018) the defining step is the opening of pores in the plasma membrane by gasdermins.<!--c:pyroptosis-c056-->
 - **Immunohistochemistry:** on a tissue section a gasdermin stain says little about activation, because current methods struggle to tell the cleaved fragment from the full-length protein.<!--c:pyroptosis-c057-->
-- **Immunoblot and ELISA:** in cultured cells, a Western blot gives definitive evidence that caspase-1 is at work, showing cleaved gasdermin D and cleaved caspase-1, while an ELISA measures the mature IL-1β released into the medium.<!--c:pyroptosis-c058-->
-- **Membrane rupture:** a broken membrane lets out the cytosolic enzyme lactate dehydrogenase (LDH), and the gasdermin pores let in dyes that an intact membrane keeps out, such as ethidium bromide.<!--c:pyroptosis-c059--> Cells genetically lacking caspase-1 or an inflammasome component are the control that ties these results to pyroptosis, because many other kinds of cell death also end in lysis.<!--c:pyroptosis-c060-->
+- **Immunoblot and ELISA:** in cultured cells, the strongest proof that caspase-1 has acted is a Western blot showing cleaved gasdermin D and cleaved caspase-1, while an ELISA measures the mature IL-1β released into the medium.<!--c:pyroptosis-c058-->
+- **Membrane rupture:** lactate dehydrogenase (LDH), an enzyme of the cytosol, turns up in the culture medium once the cell has burst, while ethidium bromide and similar dyes, which an intact membrane keeps out, get in through the gasdermin pores.<!--c:pyroptosis-c059--> Cells genetically lacking caspase-1 or an inflammasome component are the control that ties these results to pyroptosis, because lysis is also the final step in many other ways of dying.<!--c:pyroptosis-c060-->
 - **DNA tests:** pyroptotic nuclei can be TUNEL-positive, like apoptotic and necroptotic ones, so a positive TUNEL does not by itself mean apoptosis.<!--c:pyroptosis-c061--> On a gel, pyroptotic DNA does not form the ladder of fragments about 180 base pairs apart that is typical of apoptosis, although a nuclease activated by caspase-1 does cut it.<!--c:pyroptosis-c062-->
 
 ## Clinical presentation
@@ -75,7 +75,7 @@ Not applicable.
 |---|---|---|
 | [[apoptosis]] | Executioner caspases-3, -6 and -7; no inflammation; the membrane blebs but stays intact, and the nucleus breaks into fragments.<!--c:pyroptosis-c034--> | Is there membrane rupture with inflammation? |
 | [[necroptosis]] | Death-receptor signaling builds a RIP1–RIP3 necrosome; MLKL damages membranes without caspases.<!--c:pyroptosis-c035--> | Caspase-independent (RIP3/MLKL) versus caspase-1/gasdermin D |
-| [[coagulative-necrosis]] | Accidental necrosis also ends in inflammation, after a swollen cell with a pyknotic nucleus loses its membrane.<!--c:pyroptosis-c036--> | Context: unregulated injury (e.g. ischemia) versus a sensor-driven program with cleaved gasdermin D |
+| [[coagulative-necrosis]] | Accidental necrosis also ends in inflammation, after a swollen cell with a pyknotic nucleus loses the integrity of its membrane.<!--c:pyroptosis-c036--> | Context: unregulated injury (e.g. ischemia) versus a sensor-driven program with cleaved gasdermin D |
 | [[other-regulated-cell-death]] | NETosis: neutrophils use NADPH oxidase and autophagy to extrude chromatin nets that trap microbes.<!--c:pyroptosis-c037--> | Extracellular chromatin nets around neutrophils |
 
 ## High-yield summary

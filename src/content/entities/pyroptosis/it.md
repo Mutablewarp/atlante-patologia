@@ -1,6 +1,6 @@
 ---
 lang: it
-translatedFrom: 3e64fefe67f37b9d4c0dc2a00a593b65e4c364c1a4a341571237686557bbee07
+translatedFrom: bb65cb1ab1bce030699f92d3dee85a269f6bba684401b4488bd4073f7fd98463
 ---
 
 ## Definizione ed epidemiologia
@@ -48,8 +48,8 @@ Non applicabile.
 - **Nei tessuti:** la piroptosi è difficile da cogliere sul fatto, perché le cellule che muoiono scoppiano in fretta e i macrofagi le rimuovono presto.<!--c:pyroptosis-c054--> All'EE mostra al massimo il quadro litico descritto in «Morfologia microscopica», e l'aspetto da solo non basta a dimostrarla.<!--c:pyroptosis-c055-->
 - **Che cosa la definisce:** spesso, ma non sempre, la avviano le caspasi infiammatorie; per il Nomenclature Committee on Cell Death (NCCD, 2018) il passaggio che la definisce è l'apertura di pori nella membrana plasmatica da parte delle gasdermine.<!--c:pyroptosis-c056-->
 - **Immunoistochimica:** su una sezione istologica la colorazione per una gasdermina dice poco sulla sua attivazione, perché i metodi attuali faticano a distinguere il frammento tagliato dalla proteina intera.<!--c:pyroptosis-c057-->
-- **Immunoblot ed ELISA:** nelle cellule in coltura il Western blot fornisce la prova definitiva che la caspasi-1 è al lavoro, perché mostra la gasdermina D tagliata e la caspasi-1 tagliata, mentre un test ELISA misura l'IL-1β matura liberata nel terreno di coltura.<!--c:pyroptosis-c058-->
-- **Rottura della membrana:** una membrana rotta lascia uscire l'enzima citosolico lattato deidrogenasi (LDH), e i pori di gasdermina lasciano entrare coloranti che una membrana integra esclude, come il bromuro di etidio.<!--c:pyroptosis-c059--> A legare questi risultati alla piroptosi è il confronto con cellule prive, per via genetica, della caspasi-1 o di un componente dell'inflammasoma, perché molte altre forme di morte cellulare terminano con la lisi.<!--c:pyroptosis-c060-->
+- **Immunoblot ed ELISA:** nelle cellule in coltura la prova più solida che la caspasi-1 abbia agito è un Western blot che mostra la gasdermina D tagliata e la caspasi-1 tagliata, mentre un test ELISA misura l'IL-1β matura liberata nel terreno di coltura.<!--c:pyroptosis-c058-->
+- **Rottura della membrana:** la lattato deidrogenasi (LDH), un enzima del citosol, compare nel terreno di coltura quando la cellula è scoppiata, mentre il bromuro di etidio e coloranti simili, che una membrana integra lascia fuori, entrano attraverso i pori di gasdermina.<!--c:pyroptosis-c059--> A legare questi risultati alla piroptosi è il confronto con cellule prive, per via genetica, della caspasi-1 o di un componente dell'inflammasoma, perché la lisi è il passaggio finale anche di molti altri modi di morire.<!--c:pyroptosis-c060-->
 - **Esami sul DNA:** anche i nuclei piroptotici possono risultare positivi al TUNEL, come quelli apoptotici e necroptotici, per cui un TUNEL positivo non significa di per sé apoptosi.<!--c:pyroptosis-c061--> All'elettroforesi su gel il DNA piroptotico non forma la «scala» di frammenti distanziati di circa 180 paia di basi tipica dell'apoptosi, anche se una nucleasi attivata dalla caspasi-1 lo taglia.<!--c:pyroptosis-c062-->
 
 ## Presentazione clinica

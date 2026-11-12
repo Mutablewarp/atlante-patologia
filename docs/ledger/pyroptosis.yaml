@@ -51,12 +51,12 @@ claims:
     date: 2026-11-09
   - claimId: pyroptosis-c006
     section: etiology
-    statement: "Recognition of the bacterial protein flagellin drives Salmonella-infected macrophages into pyroptosis."
+    statement: "Sensing flagellin, a protein of the bacterium, sets off pyroptosis in macrophages that harbor Salmonella."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "45" }
     status: verified
     verifiedBy: agent
-    verifier: "author-agent v22/pyroptosis"
-    date: 2026-11-09
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
   - claimId: pyroptosis-c007
     section: etiology
     statement: "Human caspase-4 and caspase-5, and mouse caspase-11, recognize cytosolic bacterial LPS directly and trigger pyroptosis."
@@ -278,31 +278,31 @@ claims:
     date: 2026-11-09
   - claimId: pyroptosis-c058
     section: ancillary
-    statement: "In cultured cells, Western blotting gives definitive evidence of caspase-1 activity by detecting cleaved gasdermin D and autoprocessed caspase-1, and ELISA quantifies released mature IL-1beta."
+    statement: "In cultured cells, the strongest evidence of caspase-1 action is a Western blot showing cleaved gasdermin D and cleaved caspase-1, while ELISA quantifies the mature IL-1beta released into the medium."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "56-57" }
     status: beyond-reference
     secondSource: { source: den-hartigh-2018, locator: "Commentary: Background Information; protocol ELISA for mouse IL-1beta" }
     verifiedBy: agent
-    verifier: "author-agent v22/pyroptosis"
-    date: 2026-11-09
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
   - claimId: pyroptosis-c059
     section: ancillary
-    statement: "Membrane rupture releases the cytosolic enzyme LDH, and gasdermin D pores admit small dyes that cannot cross an intact membrane, such as ethidium bromide."
+    statement: "LDH, a cytosolic enzyme, appears in the culture medium after the cell bursts, while ethidium bromide or similar dyes that an intact membrane excludes enter through gasdermin pores."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "56-57" }
     status: beyond-reference
     secondSource: { source: den-hartigh-2018, locator: "Introduction; protocol Visualizing loss of membrane integrity by fluorescence microscopy" }
     verifiedBy: agent
-    verifier: "author-agent v22/pyroptosis"
-    date: 2026-11-09
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
   - claimId: pyroptosis-c060
     section: ancillary
-    statement: "Genetically caspase-1-deficient or inflammasome-deficient cells are the control that links LDH release or dye uptake to pyroptosis, since lysis also ends many other kinds of cell death."
+    statement: "Caspase-1-deficient or inflammasome-deficient cells are the control that links LDH release or dye uptake to pyroptosis, because lysis is also the final step in many other ways of dying."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "56-57" }
     status: beyond-reference
     secondSource: { source: den-hartigh-2018, locator: "Commentary: Background Information" }
     verifiedBy: agent
-    verifier: "author-agent v22/pyroptosis"
-    date: 2026-11-09
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
   - claimId: pyroptosis-c061
     section: ancillary
     statement: "TUNEL staining is positive in pyroptosis as well as in apoptosis and necroptosis, so TUNEL positivity does not identify apoptosis."
@@ -314,13 +314,13 @@ claims:
     date: 2026-11-09
   - claimId: pyroptosis-c062
     section: ancillary
-    statement: "Apoptotic DNA forms an oligonucleosomal ladder of fragments of about 180 bp; pyroptotic DNA, cut by a nuclease that caspase-1 activates, does not."
+    statement: "The ~180-bp DNA ladder of apoptosis is absent in pyroptosis, even though a caspase-1-activated nuclease does cut pyroptotic DNA."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "47, 57" }
     status: beyond-reference
     secondSource: { source: bergsbaken-2009, locator: "section Mechanism and features of pyroptosis" }
     verifiedBy: agent
-    verifier: "author-agent v22/pyroptosis"
-    date: 2026-11-09
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
   - claimId: pyroptosis-c028
     section: clinical
     statement: "Pyroptosis protects the host against intracellular pathogens."
@@ -438,13 +438,13 @@ claims:
     date: 2026-11-03
   - claimId: pyroptosis-c064
     section: high-yield
-    statement: "Besides an activating stimulus such as ATP or urate crystals, NLRP3 generally needs prior priming through a pattern recognition receptor (for example LPS acting on TLR4)."
+    statement: "An activating stimulus such as ATP or urate crystals usually switches NLRP3 on only after a first, priming signal has come through a pattern recognition receptor (for example LPS on TLR4)."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "56" }
     status: beyond-reference
     secondSource: { source: den-hartigh-2018, locator: "Commentary: Background Information" }
     verifiedBy: agent
-    verifier: "author-agent v22/pyroptosis"
-    date: 2026-11-09
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
   - claimId: pyroptosis-c040
     section: high-yield
     statement: "Caspase-1 activates IL-1beta and IL-18 and normally leads to pyroptosis rather than apoptosis."
