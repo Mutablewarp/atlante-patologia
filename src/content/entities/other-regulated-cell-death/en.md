@@ -8,41 +8,41 @@ Besides necrosis, the cell has several suicide programs, and apoptosis, necropto
 
 ## Etiology and risk factors
 
-- **Anoikis:** an anchorage-dependent cell, usually epithelial, loses contact with its own extracellular matrix (ECM) or touches the wrong kind of matrix.<!--c:other-regulated-cell-death-c004-->
+- **Anoikis:** it is set off when a cell loses its own extracellular matrix (ECM) or ends up on the wrong kind of matrix; the cells at risk depend on anchorage, usually epithelial ones.<!--c:other-regulated-cell-death-c004-->
 - **Granzyme/perforin killing:** a cytotoxic T lymphocyte (CTL) or natural killer (NK) cell identifies the target as foreign.<!--c:other-regulated-cell-death-c005-->
 - **NETosis:** a neutrophil recognizes a pathogen; eosinophils and mast cells can also undergo it.<!--c:other-regulated-cell-death-c006-->
-- **Entosis:** a living cell is taken up by a neighbor that is not a professional phagocyte, most often inside tumors.<!--c:other-regulated-cell-death-c007--> It has been linked to detachment from the ECM, with the detached cell entering the cytoplasm of another cell.<!--c:other-regulated-cell-death-c008-->
+- **Entosis:** a living cell is taken up by a neighbor that is not a professional phagocyte, most often inside tumors.<!--c:other-regulated-cell-death-c007--> It has been linked to detachment from the ECM: the detached cell, still alive, pushes its way into another cell.<!--c:other-regulated-cell-death-c008-->
 
 ## Pathogenesis
 
 **Anoikis ("homelessness"): apoptosis of the displaced cell.**
 
-- Integrins bound to the native ECM send survival signals that hold back both the intrinsic and the extrinsic apoptotic pathways.<!--c:other-regulated-cell-death-c009-->
-- When integrins are unbound or engaged by the wrong ECM, these survival signals stop, both classical apoptotic pathways are upregulated and the cell dies by apoptosis.<!--c:other-regulated-cell-death-c010--> Caspase-8 can even be switched on directly by integrins that have lost their ligand.<!--c:other-regulated-cell-death-c052-->
-- Physiologic example: an enterocyte pushed off the villus tip by proliferation in the crypts loses its integrin signaling and undergoes anoikis.<!--c:other-regulated-cell-death-c011-->
-- Purpose: matrix contact tells a cell it is in the right place, so anoikis removes misplaced cells before they can found colonies elsewhere, which opposes metastasis.<!--c:other-regulated-cell-death-c012-->
+- As long as integrins are attached to their native ECM, the survival signals they deliver restrain apoptosis along both its intrinsic and its extrinsic route.<!--c:other-regulated-cell-death-c009-->
+- The cell dies by apoptosis because integrins that are unbound, or engaged by the wrong ECM, stop sending survival signals, and activity rises along both classical apoptotic pathways.<!--c:other-regulated-cell-death-c010--> Caspase-8 can even be switched on directly by integrins that have lost their ligand.<!--c:other-regulated-cell-death-c052-->
+- Physiologic example: cells multiplying in the crypts push enterocytes up and off the villus tip, and these enterocytes, now without integrin signaling, die by anoikis.<!--c:other-regulated-cell-death-c011-->
+- Purpose: anoikis protects against metastasis by eliminating a cell that has strayed from its matrix before that cell can start a colony where it does not belong; matrix contact is what tells a cell it is in the right place.<!--c:other-regulated-cell-death-c012-->
 
 **Granzyme/perforin killing: apoptosis delivered from outside.**
 
 - CTLs and NK cells release two main effectors, **perforin** and **granzymes**.<!--c:other-regulated-cell-death-c013-->
-- Perforin makes a channel in the target's plasma membrane through which the lymphocyte's proteins enter.<!--c:other-regulated-cell-death-c014-->
-- Granzymes are a family of serine proteases; granzyme B is the best studied.<!--c:other-regulated-cell-death-c015-->
-- Granzyme B cuts the BH3-only protein Bid into **tBid**, which drives mitochondrial release of cytochrome c (intrinsic pathway).<!--c:other-regulated-cell-death-c016--> It also converts procaspases, notably procaspase-3, into active caspases.<!--c:other-regulated-cell-death-c017-->
-- Caspase-independent arm: granzymes can also break up the complex between the DNase CAD and its inhibitor ICAD; the freed CAD then degrades genomic DNA.<!--c:other-regulated-cell-death-c018-->
+- Perforin opens a pore in the target cell's membrane, and the lymphocyte's proteins get in through it.<!--c:other-regulated-cell-death-c014-->
+- Granzymes belong to the serine protease family, and granzyme B is the member studied most.<!--c:other-regulated-cell-death-c015-->
+- Granzyme B cuts the BH3-only protein Bid into **tBid**, which drives mitochondrial release of cytochrome c (intrinsic pathway).<!--c:other-regulated-cell-death-c016--> It also switches on caspases by converting their inactive precursors, procaspase-3 above all.<!--c:other-regulated-cell-death-c017-->
+- Caspase-independent arm: granzymes can also pull the DNase CAD away from its inhibitor ICAD; the freed CAD then degrades genomic DNA.<!--c:other-regulated-cell-death-c018-->
 - Besides its granules, the CTL carries a surface weapon, Fas ligand (FasL): when it binds Fas on the target cell, the target dies by apoptosis.<!--c:other-regulated-cell-death-c053-->
 
 **NETosis: the neutrophil casts a net.**
 
 - NETosis needs both **autophagy** and **NADPH oxidase**, whose reactive oxygen species (ROS) decondense chromatin.<!--c:other-regulated-cell-death-c019-->
-- The nuclear envelope and most granule membranes break down, and the cell expels a neutrophil extracellular trap (NET): a web of chromatin strands loaded with histones and histone fragments with potent antimicrobial activity, plus other antimicrobial products.<!--c:other-regulated-cell-death-c020-->
+- The cell expels a neutrophil extracellular trap (NET): a web of chromatin armed with antimicrobial histones and other antimicrobial products, released once the nuclear envelope and most granule membranes have broken down.<!--c:other-regulated-cell-death-c020-->
 - NETs trap and kill bacteria, fungi and protozoa.<!--c:other-regulated-cell-death-c021-->
 - NETs can be built from nuclear DNA or from mitochondrial DNA, so a neutrophil does not always have to die to make one.<!--c:other-regulated-cell-death-c022-->
-- NETotic cells do not display the phosphatidylserine "eat me" signal of apoptotic cells, so macrophages do not clear them early and inflammation can follow.<!--c:other-regulated-cell-death-c023-->
+- Macrophages do not clear NETotic cells early, and inflammation can follow, because these cells lack the phosphatidylserine "eat me" signal that marks apoptotic cells.<!--c:other-regulated-cell-death-c023-->
 
 **Entosis: cell-in-cell cannibalism.**
 
 - The engulfing cell may take in a cell of its own lineage or of a different one.<!--c:other-regulated-cell-death-c024-->
-- If the vacuole holding the engulfed cell fuses with lysosomes, the inner cell usually dies, but death is not guaranteed.<!--c:other-regulated-cell-death-c025-->
+- Usually the engulfed cell is killed once lysosomes fuse with its vacuole, but death is not a given.<!--c:other-regulated-cell-death-c025-->
 - The captured cell may survive, may escape intact, or may hand its nuclear material to the host cell.<!--c:other-regulated-cell-death-c026-->
 - The molecular control of entosis is still largely unknown.<!--c:other-regulated-cell-death-c027-->
 
@@ -53,7 +53,7 @@ Not applicable.
 ## Microscopic morphology
 
 - **Anoikis and granzyme killing:** both run on apoptotic machinery, so the dying cell has the morphology of apoptosis, including nuclear fragmentation.<!--c:other-regulated-cell-death-c028-->
-- **NETosis:** extracellular fibrous networks made mostly of DNA, released by neutrophils.<!--c:other-regulated-cell-death-c029-->
+- **NETosis:** a mesh of fibers outside the cell, built largely of DNA and discharged by neutrophils.<!--c:other-regulated-cell-death-c029-->
 - **Entosis:** a whole cell sits inside a vacuole of another cell; host cells that absorb nuclear material can become multinucleated, polyploid or aneuploid.<!--c:other-regulated-cell-death-c030-->
 
 ## Special stains, IHC and molecular findings
@@ -68,7 +68,7 @@ Not applicable.
 ## Clinical presentation
 
 - **Cancer:** tumor cells can escape anoikis, and metastatic cells are particularly good at it.<!--c:other-regulated-cell-death-c031--> Some keep integrin survival signals going even without a bound ligand, and circulating tumor cells can also activate TrkB, which suppresses anoikis.<!--c:other-regulated-cell-death-c059--> NETosis can also favor tumor growth and spread.<!--c:other-regulated-cell-death-c032--> Entosis is seen mostly in tumors, where an entotic cell may grow inside its host and use the host's nutrients.<!--c:other-regulated-cell-death-c033-->
-- **Infection:** NETs are a first-line defense that immobilizes microbes and helps incoming neutrophils kill them while limiting harm to host cells.<!--c:other-regulated-cell-death-c034--> They have been found in large numbers in human acute appendicitis.<!--c:other-regulated-cell-death-c062-->
+- **Infection:** NETs are a first-line defense: they pin microbes in place and make it easier for neutrophils arriving later to kill them, with less collateral damage to host cells.<!--c:other-regulated-cell-death-c034--> They have been found in large numbers in human acute appendicitis.<!--c:other-regulated-cell-death-c062-->
 - **Thrombosis and sepsis:** under some conditions NETosis contributes to thrombosis.<!--c:other-regulated-cell-death-c060--> Host tissue can suffer in sepsis from the very weapons, NETs among them, that neutrophils turn against microbes.<!--c:other-regulated-cell-death-c061-->
 - **Viral infection and graft rejection:** CTL killing removes virus-infected cells and contributes to the rejection of transplanted tissue.<!--c:other-regulated-cell-death-c063-->
 - **Immunity and tolerance:** in an experimental model, hepatocytes engulf and destroy autoreactive T cells by entosis and so dampen autoimmune liver disease.<!--c:other-regulated-cell-death-c035-->
