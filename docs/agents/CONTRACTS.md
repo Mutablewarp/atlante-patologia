@@ -84,3 +84,13 @@ Agents never edit a shared file (`src/content/sources.yaml`, `src/content/module
 - `planned.yaml`: a YAML list of `{ module, id, names: { it, en } }`; each id is added to the `planned` list of its module in `modules.yaml` (a known id is skipped).
 
 `finalize-batch.mjs` merges them: it keeps one entry per id and one row per distinct text.
+
+## 7. Running a stage and a batch on lean agents
+
+A workflow agent in this environment pays about 121k tokens before it does anything (the skills catalogue, the tool list and the global instructions of the owner's plugin set); a lean `claude -p` run pays about 18k. Content stages therefore run through these two scripts. Workflow stays for code work.
+
+- `node scripts/agent/run-stage.mjs <id> <stage> [--budget 4] [--model sonnet] [--note "..."]`, with `<stage>` one of `author`, `translator`, `verifier`, `fixer`, `questions`, `scout`, `sources`. It runs `claude -p` with `--setting-sources project --disable-slash-commands --strict-mcp-config`, only the tools of the stage (files and `npm run card:check`; `grep` for the translator; `curl`, `WebFetch` and `WebSearch` for the scout and the sources role), `--permission-mode acceptEdits`, `--output-format json` and `--max-budget-usd` (author 4, translator 2, verifier 3, fixer 3, questions 2, scout 3, sources 2). The task is the role card: `docs/agents/BRIEF.md` first, then `docs/agents/roles/<stage>.md`.
+- Afterwards it reads `.work/reports/<id>.<stage>.json` (or, when the agent only returned it, the last JSON object of its message), validates it as `record.mjs` does, and fails the stage when a file outside the card changed (the card's folder, its ledger and its image records; for the scout also `src/assets/images/`). A stage that is not done leaves a `blocked` report on disk, so `next.mjs` shows it as not done. A done stage of the six is recorded in `.work/state/<id>.json`.
+- Every run appends one line to `.work/usage.jsonl`: `at`, `id`, `stage`, `status`, `subtype`, `turns`, `seconds`, `costUsd` (API prices), `input`, `cacheCreate`, `cacheRead`, `output`. The cost of a card is the sum of its lines.
+- Exit code: 0 done, 1 blocked, 3 usage limit reached (nothing is retried).
+- `node scripts/agent/run-batch.mjs --batch W02 [--max 8] [--concurrency 3] [--until scout] [--only a,b] [--budget 40] [--dry-run]` takes the cards of `next.mjs` and runs each stage from `from` to `--until`, `--concurrency` cards at a time. A blocked card stops and the others go on; a usage limit, or `--budget` dollars spent, stops the launching of new stages. It commits nothing: run `npm run agent:commit`, then `npm run agent:finalize`. It writes `.work/last-batch.json`. Run it again to resume. Exit code: 0 all done, 1 a card blocked, 3 usage limit.
