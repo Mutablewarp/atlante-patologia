@@ -10,7 +10,7 @@ claims:
     date: 2026-11-13
   - claimId: inflammatory-mediators-c002
     section: definition
-    statement: "Plasma supplies the complement, kinin and coagulation cascades, whose proteins stay inactive until a protease cuts them."
+    statement: "Before the proteins of the plasma cascades can act, a protease must cleave them; the cascades are the complement, kinin and coagulation systems."
     sourceRef: { source: rubin-8e, chapter: "2", pages: "76" }
     status: verified
     verifiedBy: agent
@@ -18,7 +18,7 @@ claims:
     date: 2026-11-13
   - claimId: inflammatory-mediators-c003
     section: definition
-    statement: "Certain mediators are made ahead of time and kept in granules until the cell is activated; histamine in mast cells is an example."
+    statement: "A mast cell stores histamine in granules before any stimulus, as an example of a cell-derived mediator that is ready-made."
     sourceRef: { source: rubin-8e, chapter: "2", pages: "76" }
     status: verified
     verifiedBy: agent
@@ -26,7 +26,7 @@ claims:
     date: 2026-11-13
   - claimId: inflammatory-mediators-c004
     section: definition
-    statement: "A second group of cell-derived mediators, including prostaglandins and leukotrienes, is newly made once a stimulus arrives."
+    statement: "Prostaglandins and leukotrienes, unlike stored mediators, are synthesized de novo only in response to a stimulus."
     sourceRef: { source: rubin-8e, chapter: "2", pages: "76" }
     status: verified
     verifiedBy: agent
@@ -42,7 +42,7 @@ claims:
     date: 2026-11-13
   - claimId: inflammatory-mediators-c006
     section: diagnosis
-    statement: "People missing an early complement component (C1q, C1r, C1s or C4) are much more likely to develop systemic lupus erythematosus."
+    statement: "Systemic lupus erythematosus is much more likely in a person whose complement is missing one of the early components C1q, C1r, C1s or C4."
     sourceRef: { source: rubin-8e, chapter: "2", pages: "79" }
     status: verified
     verifiedBy: agent
@@ -50,7 +50,7 @@ claims:
     date: 2026-11-13
   - claimId: inflammatory-mediators-c007
     section: diagnosis
-    statement: "Neisseria infections are the risk when the late components C6, C7 and C8 are absent."
+    statement: "Neisseria infection is the risk in people whose complement lacks its terminal components, C6, C7 and C8."
     sourceRef: { source: rubin-8e, chapter: "2", pages: "79" }
     status: verified
     verifiedBy: agent
@@ -66,7 +66,7 @@ claims:
     date: 2026-11-13
   - claimId: inflammatory-mediators-c009
     section: differential
-    statement: "Some mediators, such as reactive oxygen species, act through direct toxic activity rather than receptor binding, and antioxidants scavenge them."
+    statement: "Antioxidants scavenge reactive oxygen species, which differ from most mediators in injuring tissue directly rather than through a receptor."
     sourceRef: { source: rubin-8e, chapter: "2", pages: "76" }
     status: verified
     verifiedBy: agent
@@ -74,7 +74,7 @@ claims:
     date: 2026-11-13
   - claimId: inflammatory-mediators-c010
     section: high-yield
-    statement: "The early leakage from venules follows histamine separating endothelial cells; histamine also dilates arterioles and is released from mast cells."
+    statement: "Mast-cell histamine dilates arterioles and opens gaps between venular endothelial cells, which accounts for the immediate phase of increased permeability."
     sourceRef: { source: rubin-8e, chapter: "2", pages: "84" }
     status: verified
     verifiedBy: agent
@@ -82,7 +82,7 @@ claims:
     date: 2026-11-13
   - claimId: inflammatory-mediators-c011
     section: high-yield
-    statement: "Serotonin is stocked ahead of need, behaves like histamine, and comes out when platelets aggregate."
+    statement: "Platelet aggregation releases serotonin, a preformed mediator with effects similar to those of histamine."
     sourceRef: { source: rubin-8e, chapter: "2", pages: "84" }
     status: verified
     verifiedBy: agent
@@ -90,7 +90,7 @@ claims:
     date: 2026-11-13
   - claimId: inflammatory-mediators-c012
     section: high-yield
-    statement: "Arachidonic acid is metabolized by cyclooxygenase to prostaglandins and thromboxane, or by lipoxygenase to leukotrienes and lipoxins."
+    statement: "Arachidonic acid follows two routes: lipoxygenation (5-lipoxygenase for leukotrienes) or cyclooxygenation, which yields prostaglandins and thromboxane."
     sourceRef: { source: rubin-8e, chapter: "2", pages: "80" }
     status: verified
     verifiedBy: agent
@@ -98,7 +98,7 @@ claims:
     date: 2026-11-13
   - claimId: inflammatory-mediators-c013
     section: high-yield
-    statement: "LTB4 draws neutrophils, monocytes and macrophages to the site of injury."
+    statement: "LTB4 is a potent chemotactic agent: neutrophils are attracted by it, as are monocytes and macrophages."
     sourceRef: { source: rubin-8e, chapter: "2", pages: "80" }
     status: verified
     verifiedBy: agent
@@ -106,15 +106,15 @@ claims:
     date: 2026-11-13
   - claimId: inflammatory-mediators-c014
     section: high-yield
-    statement: "LTC4, LTD4 and LTE4 make smooth muscle contract and vessels leak, and are key players in asthma."
-    sourceRef: { source: rubin-8e, chapter: "2", pages: "81" }
+    statement: "LTC4, LTD4 and LTE4 make smooth muscle contract and make vessels leakier, and they are central to the development of asthma."
+    sourceRef: { source: rubin-8e, chapter: "2", pages: "80-81" }
     status: verified
     verifiedBy: agent
     verifier: "independent-verifier-agent"
     date: 2026-11-13
   - claimId: inflammatory-mediators-c015
     section: high-yield
-    statement: "IL-1, IL-6 and TNFα are together the endogenous pyrogens."
+    statement: "The cytokines that cause fever, the endogenous pyrogens, are IL-1, IL-6 and TNFα."
     sourceRef: { source: rubin-8e, chapter: "2", pages: "83" }
     status: verified
     verifiedBy: agent
@@ -122,7 +122,7 @@ claims:
     date: 2026-11-13
   - claimId: inflammatory-mediators-c016
     section: high-yield
-    statement: "CXC chemokines act mainly on neutrophils and CC chemokines mainly on macrophages and lymphocytes, with exceptions."
+    statement: "Neutrophils are the usual targets of CXC chemokines and macrophages and lymphocytes the usual targets of CC chemokines, though exceptions exist."
     sourceRef: { source: rubin-8e, chapter: "2", pages: "84" }
     status: verified
     verifiedBy: agent
@@ -130,7 +130,7 @@ claims:
     date: 2026-11-13
   - claimId: inflammatory-mediators-c017
     section: high-yield
-    statement: "The complement fragments C3a and C5a are anaphylatoxins that increase vascular permeability."
+    statement: "Vascular permeability increases under the action of C3a and C5a, complement fragments known as anaphylatoxins."
     sourceRef: { source: rubin-8e, chapter: "2", pages: "77-78" }
     status: verified
     verifiedBy: agent
@@ -146,7 +146,7 @@ claims:
     date: 2026-11-13
   - claimId: inflammatory-mediators-c019
     section: high-yield
-    statement: "Activated factor XII converts prekallikrein to kallikrein, which cleaves high-molecular-weight kininogen to release kinins such as bradykinin."
+    statement: "Bradykinin and other kinins are released when kallikrein cleaves high-molecular-weight kininogen; the kallikrein is generated from prekallikrein by activated factor XII."
     sourceRef: { source: rubin-8e, chapter: "2", pages: "76-77" }
     status: verified
     verifiedBy: agent
@@ -154,7 +154,7 @@ claims:
     date: 2026-11-13
   - claimId: inflammatory-mediators-c020
     section: high-yield
-    statement: "NO made by endothelium raises cGMP in vascular smooth muscle and relaxes it, causing vasodilation."
+    statement: "Endothelium produces NO, which raises cGMP in vascular smooth muscle, relaxing it and so causing vasodilation."
     sourceRef: { source: rubin-8e, chapter: "2", pages: "84" }
     status: verified
     verifiedBy: agent
@@ -170,7 +170,7 @@ claims:
     date: 2026-11-13
   - claimId: inflammatory-mediators-c022
     section: traps
-    statement: "Activation of Hageman factor (factor XII) mechanistically links the coagulation, kinin and complement cascades."
+    statement: "The coagulation, kinin and complement cascades share one initial step, activation of Hageman factor (factor XII), which connects them."
     sourceRef: { source: rubin-8e, chapter: "2", pages: "76" }
     status: verified
     verifiedBy: agent
@@ -178,7 +178,7 @@ claims:
     date: 2026-11-13
   - claimId: inflammatory-mediators-c023
     section: traps
-    statement: "Aspirin and the other NSAIDs act on cyclooxygenase, so prostanoid production drops while leukotriene and lipoxin production goes on."
+    statement: "Leukotriene and lipoxin synthesis continues under aspirin and other NSAIDs, because they inhibit only cyclooxygenase upstream, so prostanoid synthesis alone falls."
     sourceRef: { source: rubin-8e, chapter: "2", pages: "81" }
     status: verified
     verifiedBy: agent
