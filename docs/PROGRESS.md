@@ -289,11 +289,12 @@ Still open:
 - The quiz options run 1115 px wide at 1440 px, well past the reading measure, as on main: the runner is not inside the 48rem study column (NAV-15).
 - `/it/e/coagulative-necrosis/` scores 90 for Lighthouse mobile performance locally (FCP 2.6 s); `02b031d` and main score 91 (FCP 2.5 s) in the same conditions. The card's CSS grew by 0.4 KB gzipped (2 KB raw), and `serve-dist.mjs` sends it uncompressed.
 
-## Interactive body (plan §8) — prepared 2026-11-13, not started
+## Interactive body (plan §8) — in progress on `feat/body` (2026-11-13)
 
 - Decided and written: `docs/BODY_SPEC.md` (binding spec), `scripts/anatomy/organ-map.yaml` (56 organ nodes: 40 with a BodyParts3D mesh, 4 fitted from HRA female objects, 6 proxies, 1 schematic, 5 without a model; every concept name resolved against the BodyParts3D tables), `plan/body-tasks.md` (25 tasks, 18 for coder agents), `scripts/agent/run-task.mjs` (runs one coder task on a lean agent and checks the files it wrote; 8 tests). Decision D073; source facts in VERIFIED_FACTS §N.
-- Branch `feat/body`. No site code, no asset and no dependency added yet: three.js and the mesh tools are installed in the setup step of the tasks file.
-- Not measured: mesh sizes, the three.js chunk, frame rates (task B-0 fills spec §11).
+- Done on `feat/body` (lead session, coder tasks on lean Sonnet agents via `run-task.mjs`; one commit per task): setup (three 0.187.0 and the glTF tools, licence scan 594 packages, 0 failed); B-0a to B-0e (measured facts in spec §11); B-2a, B-2b and B-2c (the page `/it/body/` and `/en/body/`: tree data, markup, styles, entry link on the Atlas page, e2e). Costs of the coder runs are in `.work/usage.jsonl` (B-0b $0.25, B-0d $0.22, B-2a $0.43, B-0c $0.30, B-2b $0.35, B-2c $0.30).
+- Measured (B-0): BodyParts3D is millimetres, Z up, front −Y, left +X; 4,070,572 triangles in the 40 mesh organs; 4.4 to 7.4 bytes per triangle after meshopt; spike chunk 173,496 bytes gzip; 58.7 fps on an iPad simulator. Changes to the organ map: the cervix is `hra` (the HRA uterus object has a cervix, no vagina), the peritoneum is a `proxy` (BodyParts3D has only three mesenteries). Licence finding: the OBJ headers still name CC BY-SA 2.1 Japan, the 2025 pages name CC BY 4.0 (spec §2, VERIFIED_FACTS §N).
+- Not done yet: asset build (B-3), viewer (B-4, B-5), the body on the home page (B-9), cards and progress (B-6, B-7), polish (B-8). Not measured: frame rate on desktop and on a real device, the whole body at about 238,000 triangles.
 
 ## Content campaign (all 35 modules) — prepared 2026-11-13
 

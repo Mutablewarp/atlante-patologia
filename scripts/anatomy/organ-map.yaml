@@ -52,17 +52,19 @@ organs:
   prostate: { kind: mesh, concepts: [prostate] }
   testis: { kind: mesh, concepts: ["isa:testis"] } # 2
   penis: { kind: mesh, concepts: ["isa:glans penis", "isa:corpus spongiosum of penis", "isa:corpus cavernosum of penis"] }
-  # female-genital: HRA female objects, fitted on the pelvis. B-0 reads the node names of uterus-female and, if it holds
-  # a cervix or a vagina node, turns those two entries into `hra` with `nodes`.
+  # female-genital: HRA female objects, fitted on the pelvis. B-0 read the nodes of uterus-female/v1.2: a cervix (VH_F_cervix with
+  # its two os nodes) and a cervicovaginal junction, and no vagina. So the cervix is `hra`, and the vagina stays `none`.
+  # `nodes` names the glTF nodes to take (all of them when absent).
   vulva: { kind: none }
-  vagina: { kind: none }
-  uterine-cervix: { kind: proxy, of: [uterus] }
-  uterus: { kind: hra, objects: [uterus-female/v1.2], fit: pelvis }
+  vagina: { kind: none } # the uterus object ends at the cervicovaginal junction
+  uterine-cervix: { kind: hra, objects: [uterus-female/v1.2], nodes: [VH_F_cervix, VH_F_cervicovaginal_junction], fit: pelvis }
+  uterus: { kind: hra, objects: [uterus-female/v1.2], nodes: [VH_F_body_of_uterus, VH_F_fundus_of_uterus, VH_F_lower_uterine_segment, VH_F_cornua], fit: pelvis } # the two wall meshes overlap the body: B-3d confirms the choice by looking
   fallopian-tube: { kind: hra, objects: [fallopian-tube-female-left/v1.2, fallopian-tube-female-right/v1.2], fit: pelvis }
   ovary: { kind: hra, objects: [ovary-female-left/v1.3, ovary-female-right/v1.3], fit: pelvis }
-  peritoneum: { kind: mesh, concepts: [peritoneum] } # 3; B-0 looks at what they are, else proxy of [small-intestine, colon]
+  peritoneum: { kind: proxy, of: [small-intestine, colon] } # BodyParts3D has three folds of it (mesentery, mesoappendix, transverse mesocolon), not the lining
   # breast
-  breast: { kind: hra, objects: [mammary-gland-female-left/v1.1, mammary-gland-female-right/v1.1], fit: thorax }
+  # The two objects hold 270,799 and 585,330 triangles in 8 meshes each: take the outer shape (fat envelope, areola, nipple), simplified hard.
+  breast: { kind: hra, objects: [mammary-gland-female-left/v1.1, mammary-gland-female-right/v1.1], nodes: [VH_F_fat_L, VH_F_fat_R, VH_F_areola_L, VH_F_areola_R, VH_F_nipple_L, VH_F_nipple_R], fit: thorax }
   # hematolymphoid
   bone-marrow: { kind: proxy, of: [bones] }
   lymph-nodes: { kind: none }
