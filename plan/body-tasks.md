@@ -11,7 +11,8 @@ Branch `feat/body`, worktree `../atlante-patologia-wt/body`. The lead is the ses
 - After every coder task the lead reads the diff, runs the task's `Acceptance` commands, and commits (`feat(body): …` or `test(body): …`, one task per commit). A blocked task: read `.work/reports/<id>.coder.json`, fix the brief or split the task, run again. Never loosen a test to pass.
 - Before a merge into `main`: `npm run check`, `npm test`, `npm run build`, `npm run test:dist`, `npm run guard`, `npm run contrast`, `npm run no-verbatim`, `npm run test:e2e:linux`. After the push: CI green, then the live smoke test (see `docs/OPERATIONS.md`).
 - Record each finished task in `docs/PROGRESS.md` (section "Interactive body") and keep the session memory current.
-- Order: B-0 → B-2 (merge 1: the page) → B-3 → B-4 → B-5 (merge 2: the 3D viewer) → B-6 → B-7 (merge 3) → B-8 (merge 4). B-2 does not wait for B-0.
+- Order: B-0 → B-2 (merge 1: the page) → B-3 → B-4 → B-5 → B-9 (merge 2: the 3D viewer, on the home page and on a phone) → B-6 → B-7 (merge 3) → B-8 (merge 4). B-2 does not wait for B-0.
+- Owner request of 2026-11-13 (spec §1, §6, §7, §9 amended): the home page is a short description and then the body, and it must work well on a phone. Phone layout is the first layout of every body task; B-9 puts the body on the home page.
 
 ## Setup (lead, once)
 
@@ -150,7 +151,7 @@ Three fresh read-only lean agents read `src/scripts/body-3d.ts`, `body-viewer.ts
 ### B-5a: pointer picking and gestures (coder)
 Depends: B-4c
 Files: src/scripts/body-viewer.ts, src/scripts/body-3d.ts, tests/e2e/body-viewer.spec.ts
-Do: tap (moved < 6 px) picks and sets the hash; drag rotates; pinch and wheel-with-ctrl zoom; a plain wheel scrolls the page; hover highlights only for a fine pointer. A tap on nothing clears the organ and keeps the system.
+Do: tap (moved < 6 px) picks and sets the hash; drag rotates; pinch and wheel-with-ctrl zoom; a plain wheel scrolls the page; hover highlights only for a fine pointer. A tap on nothing clears the organ and keeps the system. Touch per spec §6: `touch-action: pan-y`, a horizontal drag rotates, a vertical swipe scrolls the page, two fingers zoom.
 Acceptance: `npx astro check` 0 errors; one e2e test clicks the stage centre in the whole-body view and expects some `data-organ` (canvas runs only).
 
 ### B-5b: label and organ panel (coder)
@@ -159,8 +160,34 @@ Files: src/scripts/body-viewer.ts, src/scripts/body-3d.ts, src/styles/body.css, 
 Do: the label of spec §7 at the projected organ centre with a leader line (an SVG line; hidden when the organ is off screen); previous and next organ buttons; after a selection from the canvas, focus moves to the organ's heading in the panel and the status line says "<organ>: <n> cards"; the panel scrolls inside its column on wide screens.
 Acceptance: `npx astro check` 0 errors; e2e: selecting an organ shows its name in the label and focuses its heading.
 
-### B-5c: merge 2 (lead)
-Design pass as in B-2d, gates, merge, push, CI, live smoke with the viewer started in the smoke script.
+### B-5c: checkpoint (lead)
+Design pass as in B-2d and the gates on the branch. Merge 2 happens after B-9.
+
+## B-9: the body on the home page, phone first
+
+### B-9a: phone layout of the viewer (coder)
+Depends: B-5b
+Files: src/styles/body.css, src/components/body/BodyViewer.astro, src/scripts/body-viewer.ts, src/i18n/body.ts
+Goal: the phone layout of spec §7: stage box, chip row, control row, the organ panel as a bottom sheet.
+Do: below 48rem the organ section of the selected organ is shown as a sheet over the page bottom: a close button, focus moved in on open and back to the stage on close, `Escape` closes, the page behind does not scroll while it is open (`overscroll-behavior: contain` on the sheet, no body scroll lock by script). Chips: one row, `overflow-x: auto`, scroll snap, the selected chip scrolled into view. Start rule of spec §1 for phones: the poster carries one button, "Explore in 3D". Check at 320, 375 and 430 px: no horizontal page scroll.
+Acceptance: `npx astro check` 0 errors. The lead looks at 375 × 812 in both themes.
+
+### B-9b: the body on the home page (coder)
+Depends: B-9a
+Files: src/pages/[lang]/index.astro, src/components/body/BodyHome.astro, src/components/body/BodyViewer.astro, src/i18n/pages.ts, src/styles/body.css
+Goal: the home page is a short description of the atlas, then the body.
+Do: `BodyHome.astro` renders the same `<ap-body>` stage, chips and controls, and for each system only its organ list with counts (each organ links to `/[lang]/body/#organ-<id>`, where the cards are), plus one link to the full body page. Place it right after the intro of the home page, before the progress section; shorten the intro to two or three sentences that say what the atlas is and that it is free, without login. Do not touch the progress section (another task owns it). The viewer script is the same module; the home page must not ship more JavaScript than before until the viewer starts.
+Acceptance: `npx astro check` 0 errors; `npm run build && npm run test:dist` (page weight budgets) by the lead.
+
+### B-9c: phone tests (coder)
+Depends: B-9b
+Files: tests/e2e/body-phone.spec.ts, tests/e2e/pages.ts
+Goal: the phone rows of spec §9, at 375 × 812 with touch enabled.
+Do: home page: the description, then the stage, both inside the first two screens; tap on "Explore in 3D" sets `data-webgl` (canvas checks skip when it is `off`); tap a chip, the organ list of that system shows; tap an organ, the full body page opens on that organ with its sheet; close the sheet; no horizontal scroll (`scrollWidth` equals `clientWidth` on the root); layout shift 0 while the viewer starts; axe with the sheet open.
+Acceptance: the lead runs `npm run test:e2e:linux`.
+
+### B-9d: review on a phone and merge 2 (lead)
+Design pass as in B-2d at 375 × 812 and 320 × 568, both themes; try it in the iOS Simulator (Safari) when one is available; Lighthouse phone profile ≥ 90 on the home page; gates, merge, push, CI, live smoke with the viewer started.
 
 ## B-6: where in the body, on cards
 

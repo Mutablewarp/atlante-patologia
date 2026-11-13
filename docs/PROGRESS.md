@@ -295,6 +295,12 @@ Still open:
 - Branch `feat/body`. No site code, no asset and no dependency added yet: three.js and the mesh tools are installed in the setup step of the tasks file.
 - Not measured: mesh sizes, the three.js chunk, frame rates (task B-0 fills spec §11).
 
+## Content campaign (all 35 modules) — prepared 2026-11-13
+
+- Owner request: every module published, the body on the home page, phone first (D074).
+- Written: `plan/content-campaign.md` (the batch loop with commands, stop rules, three tooling tasks for planned lists, module status and progress by cards), `scripts/agent/audit-batch.mjs` (5 tests). The verifier and fixer role cards changed as in D074.
+- Open: card lists for the 8 modules without a manifest row (`g06`, `g08`, `s10`, `s12`, `s13`, `o31`, `o33`, `o34`); the template for cards of kind `technique` (batch W01).
+
 ## V3 batch metrics
 
 | Batch | Date | Cards | Tokens per card | Audit error rate | kB per card | CI |

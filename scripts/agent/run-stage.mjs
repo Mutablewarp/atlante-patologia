@@ -31,9 +31,11 @@ export const TOOLS = {
   sources: [...FILES, 'Bash(curl:*)', 'Bash(grep:*)', 'Bash(head:*)', 'WebFetch', 'WebSearch'],
   // not a card stage: a code task of run-task.mjs (docs/agents/roles/coder.md names these commands)
   coder: [...FILES, 'Bash(npx vitest run:*)', 'Bash(npx astro check:*)', 'Bash(git diff:*)', 'Bash(git status:*)', 'Bash(wc -l:*)', 'Bash(node scripts/anatomy/:*)'],
+  // read-only checks of audit-batch.mjs
+  auditor: ['Read', 'Grep', 'Glob'],
 };
 /** Dollars (API price) a stage may spend: a lean turn costs cents, so a stage past this has lost its way. */
-export const BUDGET = { author: 4, translator: 2, verifier: 3, fixer: 3, distance: 4, questions: 2, scout: 3, sources: 2, coder: 5 };
+export const BUDGET = { author: 4, translator: 2, verifier: 3, fixer: 3, distance: 4, questions: 2, scout: 3, sources: 2, coder: 5, auditor: 2 };
 const TIMEOUT_MS = 25 * 60_000;
 
 export function promptFor(id, stage, note = '') {

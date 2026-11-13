@@ -14,7 +14,8 @@ Purpose: the learner studies pathology by organ system. They open a body, pick a
 | Organs without a model | `proxy`, `schematic` or `none` in `scripts/anatomy/organ-map.yaml`; the page always says which | Honest about what the model shows (accuracy comes first) |
 | Primary interface | The server-rendered tree (system, organ, cards). The canvas mirrors its selection | Works without JavaScript, without WebGL, with a keyboard and a screen reader |
 | State | The URL hash: `#sys-<system>` or `#organ-<organ>` | Back, links and no-JavaScript jumps work with no extra code |
-| Loading | Poster first. 3D starts on a button; on screens ≥ 48rem it starts by itself when idle, unless the learner turned it off or Save-Data is on | Page budget (about 120 kB of JavaScript) and Lighthouse ≥ 90 |
+| Home | The home page is a short description of the atlas, then the body: stage, system chips, and a link to the full page. `/[lang]/body/` keeps the whole tree | Owner request of 2026-11-13: the body is the way into the atlas, and it must work well on a phone (this replaces plan decision D7) |
+| Loading | Poster first; it already shows the body. On screens ≥ 48rem 3D starts by itself when idle. On a phone it starts on one tap on the poster. Never when Save-Data is on or the learner turned 3D off | Page budget (about 120 kB of JavaScript) and Lighthouse ≥ 90 on a phone connection |
 | Colour | Hematoxylin and eosin: organs in eosin tones, the selection in hematoxylin (`--eosin`, `--hema` in `src/styles/tokens.css`) | The atlas's own colour language; passes in both themes |
 
 ## 2. Sources and licences (checked at the source on 2026-11-13)
@@ -104,6 +105,7 @@ export function mount(canvas: HTMLCanvasElement, opts: { manifestUrl: string; re
 - An organ of kind `proxy` selects the meshes in `of`. `inside` ghosts the container. `none` selects nothing and the status line says so.
 - Rendering on demand: one frame per change, a loop only during a camera move. Pixel ratio capped at 2. Context loss shows the poster and a retry button.
 - Buttons for every action: rotate left and right, zoom in and out, front, back, side, reset, previous and next organ, turn 3D off. Keys on the stage: arrows, `+`, `-`, `0`, `[`, `]`, `Escape` (clear). Dragging rotates and pinching zooms, but nothing needs them.
+- Touch: the stage has `touch-action: pan-y`. A horizontal drag rotates, a vertical swipe scrolls the page, two fingers zoom. The stage never traps the scroll of the page.
 - No auto-rotation. Camera moves ease over 400 ms with `--ease`; under `prefers-reduced-motion` they jump.
 - Without WebGL, or after any error: poster, tree and a plain message. Nothing else on the page depends on the canvas.
 - The choice "3D off" is stored in `localStorage` (`ap-body-3d`); nothing leaves the device.
@@ -118,6 +120,8 @@ export function mount(canvas: HTMLCanvasElement, opts: { manifestUrl: string; re
   - an organ with no published card is lighter (mixed towards `--surface-2`) and stays selectable.
 - Label: the selected organ's name in `--font-display` with a leader line, as HTML over the canvas (crisp text, selectable, translated).
 - Controls use the existing button and `.segmented` styles (`src/styles/viewer.css`, `entity.css`). Touch targets ≥ 44 px. Focus ring `--focus`.
+- Phone first (below 48rem): the stage spans the width in a 4:5 box, at most 70svh. The system chips are one row that scrolls sideways with scroll snap, right under the stage, within thumb reach. The controls are one row of 44 px buttons. The organ panel rises from the bottom as a sheet (at most 60svh, a close button, focus kept inside while it is open, `Escape` closes). No horizontal scroll of the page at 320 px.
+- Wide screens: stage on the left, panel on the right, chips above both.
 
 ## 8. Cards and progress
 
@@ -132,7 +136,8 @@ export function mount(canvas: HTMLCanvasElement, opts: { manifestUrl: string; re
 | Unit, placement | uterus centre inside the pelvis box, behind the bladder centre and in front of the rectum centre; ovaries lateral to the uterus; breasts in front of the sternum; thyroid in front of the trachea and below the thyroid cartilage |
 | dist | file budgets of section 4; the `body-3d` chunk is not in the service-worker shell and its gzip size ≤ the number pinned in section 11 (ceiling 200 kB) |
 | e2e | tree and `data-organ` stay in sync; keyboard path from chip to card; no-WebGL path; reduced motion; no layout shift when the canvas replaces the poster; axe; Back restores the selection |
-| Lighthouse | ≥ 90 on `/it/body/` |
+| e2e, phone (375 × 812) | the home page shows the description and then the stage; one tap starts 3D; chip, then organ, then card works with taps only; the sheet opens and closes; no horizontal page scroll; layout shift 0 |
+| Lighthouse | ≥ 90 on `/it/body/` and on the home page, phone profile |
 
 WebGL in the test container: Chromium has a software renderer; Firefox and WebKit may have none, so those runs cover the fallback. A test that needs the canvas starts with `data-webgl="on"` or skips.
 
