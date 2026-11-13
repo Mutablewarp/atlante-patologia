@@ -1,0 +1,128 @@
+id: benign-vs-malignant-tumors
+module: g05
+tier: core
+kind: concept
+names:
+  it: "Caratteristiche cito-istologiche delle neoplasie benigne e maligne"
+  en: "Cytohistological features of benign and malignant tumors"
+  eponyms: []
+  synonyms:
+    it: ["Neoplasie benigne e maligne"]
+    en: ["Benign versus malignant neoplasms"]
+  abbreviations: []
+summary:
+  it: "Una neoplasia è benigna se resta localizzata e maligna se invade e metastatizza; al microscopio lo si prevede da differenziazione, atipia cellulare, mitosi, architettura e invasione."
+  en: "A tumor is benign if it stays localized and malignant if it invades and metastasizes; under the microscope this is predicted from differentiation, cellular atypia, mitoses, architecture and invasion."
+lenses:
+  system: [general]
+  process: [neoplasia]
+  pattern: [nuclear-changes, dysplasia]
+  presentation: [mass-lesion]
+  marker: [ihc]
+  group: [neoplastic]
+learningObjectives:
+  - it: "Definire neoplasia benigna e maligna in base al comportamento biologico, non all'aspetto."
+    en: "Define benign and malignant tumors by biologic behavior, not appearance."
+  - it: "Elencare i segni di atipia cellulare: pleomorfismo, rapporto N/C elevato, ipercromasia, nucleoli prominenti, mitosi atipiche."
+    en: "List the signs of cellular atypia: pleomorphism, high N/C ratio, hyperchromasia, prominent nucleoli, atypical mitoses."
+  - it: "Riconoscere il ruolo di architettura, invasione e metastasi nel diagnosticare la malignità."
+    en: "Recognize the role of architecture, invasion and metastasis in diagnosing malignancy."
+  - it: "Spiegare perché una neoplasia benigna può essere letale e una maligna può essere indolente."
+    en: "Explain why a benign tumor can be lethal and a malignant one indolent."
+  - it: "Usare il tempo di raddoppiamento come misura della velocità di crescita."
+    en: "Use doubling time as a measure of growth rate."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: carcinoma-in-situ
+    note:
+      it: "Cellule maligne ancora al di sopra della membrana basale, senza invasione."
+      en: "Malignant cells still above the basement membrane, with no invasion."
+  - type: sameMarker
+    target: immunohistochemistry
+    note:
+      it: "L'immunoistochimica identifica l'origine di tumori indifferenziati."
+      en: "Immunohistochemistry identifies the origin of undifferentiated tumors."
+quickCheck:
+  - id: benign-vs-malignant-tumors-q1
+    q:
+      it: "Qual è il criterio che definisce una neoplasia benigna?"
+      en: "What criterion defines a benign tumor?"
+    a:
+      it: "L'incapacità di invadere i tessuti adiacenti e di metastatizzare."
+      en: "Its inability to invade adjacent tissue and to metastasize."
+    kind: short
+  - id: benign-vs-malignant-tumors-q2
+    q:
+      it: "Elenca i segni citologici di anaplasia."
+      en: "List the cytologic signs of anaplasia."
+    a:
+      it: "Pleomorfismo, nuclei grandi e ipercromatici con nucleoli prominenti, mitosi atipiche e cellule bizzarre o giganti."
+      en: "Pleomorphism, large hyperchromatic nuclei with prominent nucleoli, atypical mitoses and bizarre or giant cells."
+    kind: short
+  - id: benign-vs-malignant-tumors-q3
+    q:
+      it: "Perché un tumore benigno può uccidere?"
+      en: "Why can a benign tumor kill?"
+    a:
+      it: "Per la sede: può comprimere strutture vitali, bloccare il flusso del liquor o una valvola, oppure produrre ormoni in eccesso."
+      en: "Because of its site: it can compress vital structures, block cerebrospinal fluid flow or a valve, or secrete hormones in excess."
+    kind: short
+  - id: benign-vs-malignant-tumors-q4
+    q:
+      it: "Che cos'è il tempo di raddoppiamento?"
+      en: "What is doubling time?"
+    a:
+      it: "È il tempo che un tumore impiega per raddoppiare il proprio volume; tende a correlare con la prognosi."
+      en: "It is the time a tumor takes for its volume to double; it tends to correlate with prognosis."
+    kind: short
+  - id: benign-vs-malignant-tumors-q5
+    q:
+      it: "Perché la conta delle mitosi può non riflettere la crescita del tumore?"
+      en: "Why may a mitotic count not reflect tumor growth?"
+    a:
+      it: "La mitosi può essere prolungata nelle cellule tumorali e la morte cellulare non viene contata."
+      en: "Mitosis can be prolonged in cancer cells, and cell death is not counted."
+    kind: short
+selfExplain:
+  - it: "Perché la presenza di metastasi dimostra che un tumore è maligno?"
+    en: "Why does the presence of metastases show that a tumor is malignant?"
+  - it: "Perché la sede può rendere letale un tumore benigno?"
+    en: "Why can location make a benign tumor lethal?"
+  - it: "Perché la maggior parte dei decessi per cancro dipende da invasione e metastasi e non dal tumore primario?"
+    en: "Why do most cancer deaths come from invasion and metastasis rather than from the primary tumor?"
+examQuestions:
+  - it: "Mi parli della differenza tra neoplasia benigna e maligna."
+    en: "Tell me about the difference between a benign and a malignant tumor."
+    focus: [definition, high-yield]
+    level: 1
+  - it: "Che cosa vede al microscopio in una neoplasia anaplastica?"
+    en: "What do you see under the microscope in an anaplastic tumor?"
+    focus: [micro]
+    level: 1
+  - it: "Come distingue una neoplasia benigna da una maligna in base a differenziazione, architettura, invasione e metastasi?"
+    en: "How do you tell a benign from a malignant tumor using differentiation, architecture, invasion and metastasis?"
+    focus: [definition, micro]
+    level: 3
+  - it: "Perché una neoplasia benigna può essere letale e una maligna indolente?"
+    en: "Why can a benign tumor be lethal and a malignant one indolent?"
+    focus: [clinical, traps]
+    level: 2
+  - it: "Mi parli della velocità di crescita: come si esprime e perché la conta delle mitosi non basta?"
+    en: "Tell me about growth rate: how is it expressed, and why is the mitotic count not enough?"
+    focus: [prognosis, traps]
+    level: 2
+  - it: "Come distingue un carcinoma in situ da un carcinoma invasivo?"
+    en: "How do you tell carcinoma in situ from invasive carcinoma?"
+    focus: [pathogenesis, differential, prognosis]
+    level: 3
+images:
+  - { id: benign-vs-malignant-tumors-gross-1, role: gross, pairWith: benign-vs-malignant-tumors-micro-1 }
+  - { id: benign-vs-malignant-tumors-micro-1, role: micro }
+  - { id: benign-vs-malignant-tumors-micro-2, role: micro }
+sources:
+  - { source: rubin-8e, chapter: "5", pages: "170-173, 176" }
+status: published
+lastUpdated: 2026-11-13
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
