@@ -1,7 +1,7 @@
 import { describe, expect, it } from 'vitest';
 import { readFileSync } from 'node:fs';
 import { parse } from 'yaml';
-import { cardsOfOrgan, organsOfCard, type AnatomyCard } from '../src/lib/anatomy.ts';
+import { MODULE_SYSTEM, bodyTree, cardsOfOrgan, organsOfCard, type AnatomyCard } from '../src/lib/anatomy.ts';
 import { anatomySchema, entitySchema } from '../src/lib/schema.ts';
 
 const organ = (id: string, system: string) => ({ id, system });
@@ -60,6 +60,92 @@ describe('cardsOfOrgan', () => {
   });
   it('returns the cards themselves', () => {
     expect(cardsOfOrgan('lung', cards, anatomy)[0]).toBe(cards[2]);
+  });
+});
+
+describe('bodyTree', () => {
+  const systems = [
+    { id: 'general', order: 10, label: { it: 'Generale', en: 'General' } },
+    { id: 'heart', order: 40, label: { it: 'Cuore', en: 'Heart' } },
+    { id: 'vessels', order: 30, label: { it: 'Vasi', en: 'Vessels' } },
+    { id: 'respiratory', order: 50, label: { it: 'Respiratorio', en: 'Respiratory' } },
+  ];
+  const processes = [
+    { id: 'ischemia', order: 2, label: { it: 'Ischemia', en: 'Ischemia' } },
+    { id: 'neoplasia', order: 1, label: { it: 'Neoplasia', en: 'Neoplasia' } },
+  ];
+  const organs = [
+    { id: 'heart', system: 'heart', order: 41, label: { it: 'Cuore', en: 'Heart' } },
+    { id: 'heart-valves', system: 'heart', order: 42, label: { it: 'Valvole', en: 'Heart valves' } },
+    { id: 'aorta', system: 'vessels', order: 31, label: { it: 'Aorta', en: 'Aorta' } },
+  ];
+  const modules = [
+    { id: 'o16', planned: [{ id: 'aneurysm', names: { it: 'Aneurisma', en: 'Aneurysm' } }, { id: 'vasculitis', names: { it: 'Vasculite', en: 'Vasculitis' } }] },
+    { id: 'o17', planned: [{ id: 'mi', names: { it: 'Infarto', en: 'Infarct' } }] },
+    { id: 'g01', planned: [{ id: 'ignored', names: { it: 'x', en: 'x' } }] },
+  ];
+  const ent = (id: string, system: string[], process: string[], extra: object = {}) => ({
+    id,
+    status: 'published' as const,
+    names: { it: `${id}-it`, en: `${id}-en` },
+    lenses: { system, process },
+    ...extra,
+  });
+  const entities = [
+    ent('mi', ['heart'], ['ischemia']),
+    ent('cardiac-tumor', ['heart'], ['neoplasia', 'ischemia']),
+    ent('valve-calc', ['general'], [], { sites: [{ organ: 'heart-valves' }, { organ: 'heart' }] }),
+    ent('aortic-tumor', ['vessels'], ['neoplasia']),
+    ent('necrosis', ['general'], ['ischemia']),
+    { ...ent('draft-card', ['heart'], ['ischemia']), status: 'draft' as const },
+  ];
+  const tree = bodyTree({ entities, anatomy: organs, systems, processes, modules, lang: 'en' });
+  const sys = (id: string) => tree.systems.find((s) => s.id === id)!;
+
+  it('lists the systems of the tree in their order, never general or systemic', () => {
+    expect(tree.systems.map((s) => s.id)).toEqual(['vessels', 'heart', 'respiratory']);
+    expect(sys('heart').label).toBe('Heart');
+  });
+  it('lists organs in order, with groups by first process and cards in the order given', () => {
+    const heart = sys('heart').organs;
+    expect(heart.map((o) => o.id)).toEqual(['heart', 'heart-valves']);
+    expect(heart[0].groups.map((g) => g.process)).toEqual(['neoplasia', 'ischemia', '']);
+    expect(heart[0].groups[1].cards).toEqual([{ id: 'mi', name: 'mi-en' }]);
+    expect(heart[0].groups[0].cards).toEqual([{ id: 'cardiac-tumor', name: 'cardiac-tumor-en' }]);
+    expect(heart[0].groups[2]).toEqual({ process: '', label: '', cards: [{ id: 'valve-calc', name: 'valve-calc-en' }] });
+    expect(heart[0].groups[1].label).toBe('Ischemia');
+  });
+  it('counts distinct published cards per organ and per system', () => {
+    expect(sys('heart').organs.map((o) => o.count)).toEqual([3, 3]); // a card without sites sits in every organ of its system
+    expect(sys('heart').count).toBe(3); // distinct: each card counts once for the system
+    expect(sys('vessels').count).toBe(1);
+    expect(sys('respiratory')).toMatchObject({ count: 0, organs: [] });
+  });
+  it('lists the planned entries of the system module that are not published', () => {
+    expect(sys('vessels').planned).toEqual([{ id: 'aneurysm', name: 'Aneurysm' }, { id: 'vasculitis', name: 'Vasculitis' }]);
+    expect(sys('heart').planned).toEqual([]); // `mi` is published
+    expect(sys('respiratory').planned).toEqual([]);
+  });
+  it('counts the published cards that map to no organ', () => {
+    expect(tree.unplaced).toBe(1);
+  });
+  it('uses the names of the language asked', () => {
+    const it = bodyTree({ entities, anatomy: organs, systems, processes, modules, lang: 'it' });
+    expect(it.systems[1].organs[0].label).toBe('Cuore');
+    expect(it.systems[0].planned[0].name).toBe('Aneurisma');
+  });
+});
+
+describe('MODULE_SYSTEM on the real files', () => {
+  const read = (p: string) => parse(readFileSync(p, 'utf8'));
+  const moduleIds = new Set((read('src/content/modules.yaml') as { id: string }[]).map((m) => m.id));
+  const terms = new Set((read('src/content/taxonomy/system.yaml') as { terms: { id: string }[] }).terms.map((t) => t.id));
+  it('maps the 18 modules o16..o33 to existing system terms', () => {
+    expect(Object.keys(MODULE_SYSTEM)).toHaveLength(18);
+    for (const [m, s] of Object.entries(MODULE_SYSTEM)) {
+      expect(moduleIds.has(m), m).toBe(true);
+      expect(terms.has(s), s).toBe(true);
+    }
   });
 });
 
