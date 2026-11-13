@@ -14,7 +14,8 @@ import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { cli, option, readReport, record, ROOT, STAGES, validateReport } from './record.mjs';
 
-export const RUN_STAGES = [...STAGES, 'sources'];
+/** The six stages of the state files, plus two that have a role card and a report but no state: `sources` (second sources for gaps) and `distance` (restructuring after the author). */
+export const RUN_STAGES = [...STAGES, 'sources', 'distance'];
 const FILES = ['Read', 'Write', 'Edit', 'Grep', 'Glob'];
 const CHECK = 'Bash(npm run card:check:*)';
 const SHA = 'Bash(shasum -a 256:*)'; // translatedFrom of it.md: the translator writes it, the fixer recomputes it after an edit of en.md
@@ -24,12 +25,13 @@ export const TOOLS = {
   translator: [...FILES, CHECK, 'Bash(grep:*)', SHA],
   verifier: [...FILES, CHECK],
   fixer: [...FILES, CHECK, SHA],
+  distance: [...FILES, CHECK],
   questions: [...FILES, CHECK],
   scout: [...FILES, CHECK, 'Bash(curl:*)', 'Bash(node scripts/agent/commons-candidates.mjs:*)', 'WebFetch', 'WebSearch'],
   sources: [...FILES, 'Bash(curl:*)', 'Bash(grep:*)', 'Bash(head:*)', 'WebFetch', 'WebSearch'],
 };
 /** Dollars (API price) a stage may spend: a lean turn costs cents, so a stage past this has lost its way. */
-export const BUDGET = { author: 4, translator: 2, verifier: 3, fixer: 3, questions: 2, scout: 3, sources: 2 };
+export const BUDGET = { author: 4, translator: 2, verifier: 3, fixer: 3, distance: 4, questions: 2, scout: 3, sources: 2 };
 const TIMEOUT_MS = 25 * 60_000;
 
 export function promptFor(id, stage, note = '') {

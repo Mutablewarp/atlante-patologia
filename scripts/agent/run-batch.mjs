@@ -21,23 +21,28 @@ const money = (n) => Number(n.toFixed(4));
  * Runs `queue` ([{ id, from }]) stage by stage. `run({ id, stage })` resolves { status, costUsd, ... } (tests replace it);
  * `log(result)` sees each finished stage. Resolves { results, spent, stop: null | 'limit' | 'budget' }.
  */
-export async function runBatch({ queue, concurrency = 3, until = 'scout', budgetUsd = Infinity, run, log = () => {} }) {
+export async function runBatch({ queue, concurrency = 3, until = 'scout', budgetUsd = Infinity, distance = true, run, log = () => {} }) {
   const results = [];
   let spent = 0;
   let stop = null;
+  /** Runs one stage; false when the card must stop (blocked, limit, budget or a stop elsewhere). */
+  const step = async (id, stage) => {
+    if (stop) return false;
+    if (spent >= budgetUsd) {
+      stop = 'budget';
+      return false;
+    }
+    const r = await run({ id, stage });
+    spent += r.costUsd ?? 0;
+    results.push(r);
+    log(r);
+    if (r.status === 'limit') stop = 'limit';
+    return r.status === 'done'; // a blocked card stops; the others go on
+  };
   const card = async ({ id, from }) => {
     for (const stage of STAGES.slice(STAGES.indexOf(from), STAGES.indexOf(until) + 1)) {
-      if (stop) return;
-      if (spent >= budgetUsd) {
-        stop = 'budget';
-        return;
-      }
-      const r = await run({ id, stage });
-      spent += r.costUsd ?? 0;
-      results.push(r);
-      log(r);
-      if (r.status === 'limit') stop = 'limit';
-      if (r.status !== 'done') return; // a blocked card stops; the others go on
+      if (!(await step(id, stage))) return;
+      if (stage === 'author' && distance && !(await step(id, 'distance'))) return; // restructure the sentences before the translation is made from them
     }
   };
   const pending = [...queue];
@@ -67,7 +72,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     const queue = (only ? taken.cards.filter((c) => only.includes(c.id)).slice(0, max) : taken.cards).filter((c) => STAGES.indexOf(c.from) <= STAGES.indexOf(until));
     console.log(`run-batch ${batch}: ${queue.length} card(s) [${queue.map((c) => `${c.id} from ${c.from}`).join(', ')}], until ${until}, concurrency ${concurrency}, budget $${budgetUsd}`);
     if (args.includes('--dry-run') || !queue.length) return;
-    runBatch({ queue, concurrency, until, budgetUsd, run: ({ id, stage }) => runStage({ root: ROOT, id, stage, siblings: queue.map((c) => c.id) }), log: (r) => console.log(line(r)) }).then(({ results, spent, stop }) => {
+    runBatch({ queue, concurrency, until, budgetUsd, distance: !args.includes('--no-distance'), run: ({ id, stage }) => runStage({ root: ROOT, id, stage, siblings: queue.map((c) => c.id) }), log: (r) => console.log(line(r)) }).then(({ results, spent, stop }) => {
       const blocked = results.filter((r) => r.status !== 'done');
       const done = queue.map((c) => c.id).filter((id) => !blocked.some((r) => r.id === id));
       console.log(`run-batch ${batch}: ${results.length} stage(s) run, $${spent}${stop ? `, stopped: ${stop}` : ''}; ${blocked.length ? `blocked: ${blocked.map((r) => `${r.stage}:${r.id}`).join(', ')}` : 'no card blocked'}`);
