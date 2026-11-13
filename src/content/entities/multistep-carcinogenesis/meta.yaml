@@ -1,0 +1,101 @@
+id: multistep-carcinogenesis
+module: g05
+tier: core
+kind: process
+status: published
+lastUpdated: 2026-11-13
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+names:
+  it: "Oncogenesi e progressione tumorale"
+  en: "Multistep carcinogenesis and tumor progression"
+  eponyms: []
+  synonyms:
+    it: ["Cancerogenesi multifasica"]
+    en: ["Oncogenesis"]
+  abbreviations: []
+summary:
+  it: "Processo in cui una sola cellula accumula mutazioni, instabilità genomica e alterazioni epigenetiche fino a sfuggire al controllo della crescita, invadere e dare metastasi."
+  en: "The process in which a single cell accumulates mutations, genomic instability and epigenetic changes until it escapes growth control, invades and metastasizes."
+lenses:
+  system: [general]
+  process: [neoplasia, cell-injury]
+  pattern: []
+  presentation: [mass-lesion]
+  marker: [molecular, ihc]
+  group: [neoplastic, genetic]
+learningObjectives:
+  - it: "Spiegare l'origine clonale di un tumore da una singola cellula."
+    en: "Explain the clonal origin of a tumor from a single cell."
+  - it: "Distinguere le mutazioni driver dalle mutazioni passenger."
+    en: "Distinguish driver mutations from passenger mutations."
+  - it: "Descrivere come proto-oncogeni, oncosoppressori, pRb e p53 controllano il ciclo cellulare."
+    en: "Describe how proto-oncogenes, tumor suppressors, pRb and p53 control the cell cycle."
+  - it: "Elencare i principali sistemi di riparazione del DNA e le sindromi associate."
+    en: "List the main DNA repair systems and the syndromes linked to them."
+  - it: "Spiegare perché il tempo di raddoppiamento non coincide con il conteggio mitotico."
+    en: "Explain why doubling time does not equal the mitotic count."
+prerequisites: []
+relations:
+  - type: sharesMechanism
+    target: dysplasia
+    note:
+      it: "Nelle neoplasie le alterazioni genetiche si accumulano progressivamente."
+      en: "In neoplasia, genetic changes accumulate step by step."
+  - type: prerequisiteOf
+    target: carcinoma-in-situ
+quickCheck:
+  - id: multistep-carcinogenesis-q1
+    q:
+      it: "Da quante cellule ha origine un tumore e che cosa si accumula nei suoi discendenti?"
+      en: "From how many cells does a tumor arise, and what accumulates in its descendants?"
+    a:
+      it: "Da una sola cellula; nei discendenti si accumulano mutazioni e alterazioni dell'espressione genica."
+      en: "From a single cell; mutations and gene-expression changes accumulate in its descendants."
+    kind: short
+  - id: multistep-carcinogenesis-q2
+    q:
+      it: "Qual è la differenza tra mutazione driver e passenger?"
+      en: "What is the difference between a driver and a passenger mutation?"
+    a:
+      it: "Le driver spingono lo sviluppo del tumore e sono relativamente poche; le passenger sono «al seguito» e il loro ruolo è per lo più ignoto."
+      en: "Drivers propel tumor development and are relatively few; passengers are along for the ride and their role is mostly unknown."
+    kind: short
+  - id: multistep-carcinogenesis-q3
+    q:
+      it: "Che cosa fa p53 dopo un danno al DNA?"
+      en: "What does p53 do after DNA damage?"
+    a:
+      it: "Arresta il ciclo per consentire la riparazione; se questa non è possibile induce apoptosi."
+      en: "It halts the cycle to allow repair; if repair is impossible it triggers apoptosis."
+    kind: short
+selfExplain:
+  - it: "Perché il conteggio delle mitosi non basta a stimare la velocità di crescita di un tumore?"
+    en: "Why is the mitotic count not enough to estimate how fast a tumor grows?"
+examQuestions:
+  - it: "Mi parli dell'origine clonale di un tumore: da dove parte e che cosa si accumula nei discendenti?"
+    en: "Tell me about the clonal origin of a tumor: where does it start and what accumulates in the descendants?"
+    focus: [definition, high-yield]
+    level: 1
+  - it: "Come distingue una mutazione driver da una passenger?"
+    en: "How do you tell a driver mutation from a passenger mutation?"
+    focus: [differential, traps]
+    level: 3
+  - it: "Perché i tumori riescono a evolvere e ad adattarsi così in fretta?"
+    en: "Why can tumors evolve and adapt so quickly?"
+    focus: [pathogenesis]
+    level: 2
+  - it: "Come controllano il ciclo cellulare pRb e p53, e che cosa succede quando proto-oncogeni e oncosoppressori sono alterati?"
+    en: "How do pRb and p53 control the cell cycle, and what happens when proto-oncogenes and tumor suppressors are altered?"
+    focus: [pathogenesis]
+    level: 2
+  - it: "Perché il conteggio delle mitosi non basta a dire quanto velocemente cresce un tumore?"
+    en: "Why is a mitotic count not enough to tell how fast a tumor grows?"
+    focus: [micro, diagnosis]
+    level: 3
+images:
+  - { id: multistep-carcinogenesis-micro-1, role: micro }
+sources:
+  - source: rubin-8e
+    chapter: "5"
+    pages: "176-186"
