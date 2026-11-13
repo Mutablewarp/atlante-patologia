@@ -1,0 +1,146 @@
+entity: inherited-cancer-syndromes
+claims:
+- claimId: inherited-cancer-syndromes-c001
+  section: definition
+  statement: "The germline mutation behind an inherited cancer syndrome usually lies in a DNA repair gene or a tumor suppressor gene."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "213" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: inherited-cancer-syndromes-c002
+  section: definition
+  statement: "Inheritance passes on a strong predisposition to cancer, not a tumor."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "213" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: inherited-cancer-syndromes-c003
+  section: definition
+  statement: "Inherited mutations account for roughly 1% of human cancers."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "213" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: inherited-cancer-syndromes-c004
+  section: definition
+  statement: "Many endocrine tumors, Wilms tumor and retinoblastoma are inherited malignant tumors."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "213" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: inherited-cancer-syndromes-c005
+  section: definition
+  statement: "Tumors inherited through APC may remain benign or may become malignant."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "213" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: inherited-cancer-syndromes-c006
+  section: definition
+  statement: "People with Bloom syndrome or ataxia-telangiectasia face a high risk of malignant tumors."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "213" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: inherited-cancer-syndromes-c007
+  section: definition
+  statement: "Germline changes in BRCA1 or in VHL each give rise to a distinct tumor syndrome."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "213" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: inherited-cancer-syndromes-c008
+  section: definition
+  statement: "Phakomatoses such as tuberous sclerosis and neurofibromatosis disturb development, and their tumors arise chiefly in the nervous system."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "213" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: inherited-cancer-syndromes-c009
+  section: micro
+  statement: "Carriers are heterozygous in the germline, with one mutated tumor suppressor allele."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "213" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: inherited-cancer-syndromes-c010
+  section: micro
+  statement: "In a carrier's tumor both copies of the suppressor gene are inactive, the normal copy being disabled by loss of heterozygosity."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "213" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: inherited-cancer-syndromes-c011
+  section: micro
+  statement: "PTEN is frequently decreased across many different cancers."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "213" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: inherited-cancer-syndromes-c012
+  section: micro
+  statement: "Benign hamartomas are the main tumors of Cowden syndrome, which results from germline PTEN loss."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "213" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: inherited-cancer-syndromes-c013
+  section: diagnosis
+  statement: "Some cancer types clearly cluster in families, although mendelian inheritance explains only a few cancers."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "213" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: inherited-cancer-syndromes-c014
+  section: diagnosis
+  statement: "The same tumor type is often two- to threefold more likely to develop in a patient's relatives."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "213" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: inherited-cancer-syndromes-c015
+  section: diagnosis
+  statement: "Among familial cancers, those of the breast and colon stand out."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "213" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: inherited-cancer-syndromes-c017
+  section: differential
+  statement: "Common acquired changes impair tumor suppression, while inherited defects are rare."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "213" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: inherited-cancer-syndromes-c018
+  section: traps
+  statement: "Women are affected more than men by germline BRCA1 mutations, and the tumors are chiefly breast and ovarian cancers."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "213" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: inherited-cancer-syndromes-c019
+  section: traps
+  statement: "No explanation is known for why germline BRCA1 defects favor the breast and ovary over other organs."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "213" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
