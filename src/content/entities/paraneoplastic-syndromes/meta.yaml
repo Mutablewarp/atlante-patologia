@@ -1,0 +1,95 @@
+id: paraneoplastic-syndromes
+module: g05
+tier: extended
+kind: concept
+editionDependent: false
+status: published
+lastUpdated: 2026-11-13
+reviewStatus: ai-generated-unreviewed
+names:
+  it: "Sindromi paraneoplastiche e cachessia neoplastica"
+  en: "Paraneoplastic syndromes and cancer cachexia"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: ["SIADH", "PTHrP"]
+summary:
+  it: "Effetti a distanza di un tumore non dovuti a invasione o metastasi, come sindromi endocrine, cutanee e cachessia, che possono essere la prima manifestazione del cancro."
+  en: "Remote effects of a tumor not caused by invasion or metastasis, such as endocrine and skin syndromes and cachexia, which may be the first sign of cancer."
+lenses:
+  system: [general, endocrine, skin]
+  process: [neoplasia]
+  pattern: []
+  presentation: [hypercalcemia]
+  marker: [laboratory]
+  group: [neoplastic]
+learningObjectives:
+  - it: "Definire una sindrome paraneoplastica e distinguerla dall'invasione o dalle metastasi."
+    en: "Define a paraneoplastic syndrome and distinguish it from invasion or metastasis."
+  - it: "Collegare ACTH ectopico, ADH e peptide simile al paratormone ai tumori che li producono."
+    en: "Link ectopic ACTH, ADH and the parathormone-like peptide to the tumors that make them."
+  - it: "Riconoscere acantosi nigricans, dermatomiosite e sindrome di Sweet come segni cutanei di tumore."
+    en: "Recognize acanthosis nigricans, dermatomyositis and Sweet syndrome as skin signs of cancer."
+  - it: "Distinguere la cachessia neoplastica dal digiuno."
+    en: "Distinguish cancer cachexia from starvation."
+prerequisites: []
+relations: []
+quickCheck:
+  - id: paraneoplastic-syndromes-q1
+    q:
+      it: "Perché è importante riconoscere una sindrome paraneoplastica?"
+      en: "Why is it important to recognize a paraneoplastic syndrome?"
+    a:
+      it: "Può essere la prima manifestazione del tumore e, scambiata per malattia metastatica avanzata, può portare a una terapia sbagliata."
+      en: "It may be the first sign of the tumor, and mistaken for advanced metastatic disease it can lead to the wrong treatment."
+    kind: short
+  - id: paraneoplastic-syndromes-q2
+    q:
+      it: "Quale tumore è l'esempio principale di produzione ectopica di ACTH?"
+      en: "Which tumor is the prime example of ectopic ACTH production?"
+    a:
+      it: "Il carcinoma polmonare a piccole cellule, tra i tumori del polmone che producono ACTH; l'ACTH ectopico causa sindrome di Cushing."
+      en: "Small cell lung carcinoma, among the lung cancers that make ACTH; ectopic ACTH leads to Cushing syndrome."
+    kind: short
+  - id: paraneoplastic-syndromes-q3
+    q:
+      it: "In che cosa la cachessia neoplastica differisce dal digiuno?"
+      en: "How does cancer cachexia differ from starvation?"
+    a:
+      it: "Nel digiuno il metabolismo basale si abbassa, nel cancro spesso aumenta; mangiare meno non spiega il deperimento."
+      en: "In starvation the metabolic rate falls, in cancer it often rises; eating less does not explain the wasting."
+    kind: short
+  - id: paraneoplastic-syndromes-q4
+    q:
+      it: "Da che cosa deriva più spesso l'ipercalcemia nel paziente oncologico?"
+      en: "What most often causes hypercalcemia in a cancer patient?"
+    a:
+      it: "Più spesso da tumore che ha invaso l'osso; in circa un decimo dei casi non ci sono metastasi ossee."
+      en: "Most often tumor that has invaded bone; in about one-tenth of cases there are no bone metastases."
+    kind: short
+selfExplain:
+  - it: "Perché un tumore che non ha invaso l'osso può causare ipercalcemia?"
+    en: "Why can a tumor that has not invaded bone cause hypercalcemia?"
+  - it: "Perché una sindrome paraneoplastica può essere scambiata per malattia metastatica?"
+    en: "Why can a paraneoplastic syndrome be mistaken for metastatic disease?"
+examQuestions:
+  - it: "Mi parli delle sindromi endocrine paraneoplastiche: quali tumori producono ACTH ectopico e peptide simile al paratormone, e con quali effetti?"
+    en: "Tell me about the endocrine paraneoplastic syndromes: which tumors make ectopic ACTH and parathormone-like peptide, and with what effects?"
+    focus: [definition, high-yield]
+    level: 1
+  - it: "Perché un paziente con tumore può avere ipercalcemia anche senza metastasi ossee?"
+    en: "Why can a patient with a tumor have hypercalcemia even without bone metastases?"
+    focus: [definition, differential, traps]
+    level: 2
+  - it: "Come distingue la cachessia neoplastica dal deperimento da digiuno?"
+    en: "How do you tell cancer cachexia from wasting due to starvation?"
+    focus: [differential, traps]
+    level: 3
+images:
+  - { id: paraneoplastic-syndromes-gross-1, role: clinical }
+  - { id: paraneoplastic-syndromes-micro-1, role: micro }
+sources:
+  - { source: rubin-8e, chapter: "5", pages: "244" }
+  - { source: rubin-8e, chapter: "27", pages: "1241" }
+  - { source: rubin-8e, chapter: "28", pages: "1299" }
