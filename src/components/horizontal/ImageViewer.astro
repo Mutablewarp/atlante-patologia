@@ -8,7 +8,6 @@
  * (each keeps its own alt, labels, caption and credit).
  * Without JS: every image of the group, its labels and legend are visible.
  */
-import { Image } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
 import { fmt, type Lang } from '../../i18n/index.ts';
 import { tHz } from '../../i18n/horizontal.ts';
@@ -17,6 +16,7 @@ import type { z } from 'astro/zod';
 import { readFile } from 'node:fs/promises';
 import { PREVIEW_DRAFTS, images } from '../../lib/content.ts';
 import { attributionFor, fileFor, groupMembers, licenseName, powerOf, stainCode } from '../../lib/image-meta.ts';
+import { pictureFiles } from '../../lib/picture.ts';
 import '../../styles/viewer.css';
 
 type Img = z.infer<typeof imageSchema>;
@@ -28,6 +28,10 @@ interface Props {
 }
 const { lang, image, id } = Astro.props;
 const t = (k: Parameters<typeof tHz>[1]) => tHz(lang, k);
+// Measured slot of the image on a card, 375 to 1920 px wide: the full width below 600 px, then 469 to 589 px (37rem at most).
+// width/height on the <img> are the original's: they only give the aspect ratio (the box is `width: 100%` in CSS),
+// so nothing below the image moves when it loads.
+const SIZES = '(max-width: 599px) 100vw, 37rem';
 // `_`-prefixed files are fixtures: kept out of the bundle so they never reach a production build.
 const files = import.meta.glob<{ default: ImageMetadata }>(['../../assets/images/**/*.{png,jpg,jpeg,webp,avif,gif,svg}', '!**/_*']);
 
@@ -39,11 +43,13 @@ async function load(img: Img) {
   const fixture =
     !meta && file.startsWith('_') && PREVIEW_DRAFTS ? await readFile(`${process.cwd()}/src/assets/images/${file}`) : undefined;
   if (!meta && !fixture) return undefined;
-  const W = meta?.width ?? fixture!.readUInt32BE(16);
-  const H = meta?.height ?? fixture!.readUInt32BE(20);
+  // Original diagrams are SVG: served as the emitted file at its intrinsic size (no raster candidates).
+  const svg = file.endsWith('.svg');
+  const pic = meta && !svg ? await pictureFiles(meta) : undefined;
+  const W = pic?.width ?? meta?.width ?? fixture!.readUInt32BE(16);
+  const H = pic?.height ?? meta?.height ?? fixture!.readUInt32BE(20);
   const notes = [...img.annotations].sort((a, b) => a.revealOrder - b.revealOrder);
-  // Original diagrams are SVG: served as the emitted file at its intrinsic size (no raster srcset).
-  return { img, meta, fixture, W, H, notes, svg: file.endsWith('.svg') };
+  return { img, meta, pic, fixture, W, H, notes, svg };
 }
 const members = image ? groupMembers(image.group ? await images() : [], image) : [];
 const panels = (await Promise.all(members.map(load))).filter((p) => p !== undefined);
@@ -126,7 +132,7 @@ const helpId = `viewer-help-${id}`;
               {t('fullOpen')}
             </button>
           </div>
-          {panels.map(({ img, meta, fixture, W, H, notes, svg }, i) => (
+          {panels.map(({ img, meta, pic, fixture, W, H, notes, svg }, i) => (
             <div class="viewer-panel" data-panel={i} data-total={notes.length} data-w={W} data-mpp={img.mpp} hidden={i !== active}>
               <div
                 class="viewer-stage"
@@ -139,13 +145,11 @@ const helpId = `viewer-help-${id}`;
                 <div class="viewer-canvas">
                   {meta && svg ? (
                     <img src={meta.src} alt={img.alt[lang]} width={W} height={H} loading="lazy" decoding="async" />
-                  ) : meta ? (
-                    <Image
-                      src={meta}
-                      alt={img.alt[lang]}
-                      widths={[...new Set([480, 800, 1600, W].filter((w) => w <= W))]}
-                      sizes="(min-width: 1024px) 46rem, 100vw"
-                    />
+                  ) : pic ? (
+                    <picture>
+                      <source type="image/avif" srcset={pic.avifSet} sizes={SIZES} data-zoom={pic.zoomSet} />
+                      <img src={pic.webp} alt={img.alt[lang]} width={W} height={H} loading="lazy" decoding="async" />
+                    </picture>
                   ) : (
                     <img src={`data:image/png;base64,${fixture!.toString('base64')}`} alt={img.alt[lang]} width={W} height={H} />
                   )}

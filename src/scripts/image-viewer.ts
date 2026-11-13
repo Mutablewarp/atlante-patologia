@@ -260,12 +260,10 @@ class ApImageViewer extends HTMLElement {
     this.canvas.style.transform = `translate(${this.x}px, ${this.y}px) scale(${this.s})`;
     this.stage.dataset.zoomed = String(this.s > 1);
     this.querySelectorAll<HTMLButtonElement>('[data-pan]').forEach((b) => b.setAttribute('aria-disabled', String(this.s === 1)));
-    // Past 1.5× (or in full screen) widen `sizes` once so the browser fetches the sharper srcset candidate.
-    const img = this.canvas.querySelector('img');
-    if (img?.srcset && (this.s > 1.5 || this.dialog.open)) {
-      const want = Math.ceil(r.width * (this.s > 1.5 ? MAX : 1));
-      if (want > (parseInt(img.sizes) || 0)) img.sizes = `${want}px`;
-    }
+    // Past 1.5× (or in full screen) swap in the AVIF at the original's width, when the image has one. A browser
+    // without AVIF ignores that <source> and keeps the WebP.
+    const zoom = this.canvas.querySelector<HTMLSourceElement>('source[data-zoom]');
+    if (zoom && (this.s > 1.5 || this.dialog.open) && zoom.srcset !== zoom.dataset.zoom) zoom.srcset = zoom.dataset.zoom!;
     const bar = this.stage.querySelector<HTMLElement>('[data-scale]');
     const sb = bar && scaleBar(Number(this.panel.dataset.mpp), Number(this.panel.dataset.w), r.width * this.s);
     if (bar && sb) {

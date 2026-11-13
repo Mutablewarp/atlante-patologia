@@ -1,7 +1,7 @@
 /**
  * Image viewer (components/horizontal/ImageViewer.astro, scripts/image-viewer.ts):
- * pan buttons (WCAG 2.5.7), keyboard and double-click zoom, the sharper srcset
- * candidate on zoom, full screen on a phone (Escape and Back close it; axe),
+ * pan buttons (WCAG 2.5.7), keyboard and double-click zoom, the AVIF at the
+ * original's width that only a zoom fetches, full screen on a phone (Escape and Back close it; axe),
  * labels that never cover each other, the original SVG diagrams, the credit
  * line in the page language and the stain/magnification switch. The switch
  * runs on the draft fixture group (fixture-grid + fixture-grid-b), so it needs
@@ -16,7 +16,7 @@ import AxeBuilder from '@axe-core/playwright';
 test.use({ reducedMotion: 'reduce' });
 
 const ENTITY = 'it/e/apoptosis/';
-/** The figure with the widest srcset on the entity page (1024 px original: 480w, 800w, 1024w). */
+/** A micrograph on the entity page (1024 px original: its picture has no zoom source, the page AVIF is 960 px). */
 const FIG = '#fig-apoptosis-micro-2';
 /** Every built page with image labels, read from dist/, so newly annotated images are covered too. */
 const LABELLED = existsSync('dist')
@@ -92,16 +92,30 @@ test('@smoke keyboard zoom: + zooms, arrows pan, 0 resets', async ({ page }) => 
   await expect.poll(() => view(fig)).toEqual({ x: 0, y: 0, s: 1 });
 });
 
-test('double click zooms in at the pointer; past 1.5× the largest srcset candidate loads', async ({ page }) => {
-  const fig = await openViewer(page);
+test('double click zooms in at the pointer; past 1.5× the AVIF at the original width loads, and not before', async ({ page }) => {
+  // This card has a 1600 px original: its picture carries a zoom source. The apoptosis micrographs are narrower than 1200 px: none.
+  const fetched: string[] = [];
+  page.on('request', (r) => r.url().endsWith('.avif') && fetched.push(new URL(r.url()).pathname));
+  await page.goto('it/e/coagulative-necrosis/');
+  await page.evaluate(() => document.fonts.ready);
+  const fig = page.locator('#fig-coagulative-necrosis-micro-1');
   const img = fig.locator('img');
-  const largest = await img.evaluate((i: HTMLImageElement) => i.srcset.split(',').at(-1)!.trim().split(' ')[0]!);
+  const source = fig.locator('picture source');
+  const path = (set: string) => new URL(set.split(' ')[0]!, page.url()).pathname;
+  const avif = path((await source.getAttribute('srcset'))!);
+  const zoom = path((await source.getAttribute('data-zoom'))!);
+  expect(zoom).not.toBe(avif);
+  // A browser without AVIF falls back to the <img> WebP, small and the only file it ever loads.
+  await expect(img).toHaveAttribute('src', /\.webp$/);
+  const currentPath = () => img.evaluate((i: HTMLImageElement) => (i.currentSrc ? new URL(i.currentSrc).pathname : ''));
+  await fig.scrollIntoViewIfNeeded();
+  await expect.poll(currentPath).toBe(avif);
+  expect(fetched).not.toContain(zoom);
   await fig.locator('.viewer-stage').dblclick();
   await expect.poll(async () => (await view(fig)).s).toBe(2);
-  await expect(img).toHaveAttribute('sizes', /^\d+px$/);
-  await expect.poll(() => img.evaluate((i: HTMLImageElement) => new URL(i.currentSrc).pathname)).toBe(largest);
-  // The box keeps its size: width/height stay, so nothing below moves.
-  await expect(img).toHaveAttribute('width', '1024');
+  await expect.poll(currentPath).toBe(zoom);
+  // The box keeps its size: width/height stay (the original's), so nothing below moves.
+  await expect(img).toHaveAttribute('width', '1600');
 });
 
 test('@smoke full screen on a phone: a 100dvh dialog that Escape and Back close', async ({ page, isMobile, browserName }) => {

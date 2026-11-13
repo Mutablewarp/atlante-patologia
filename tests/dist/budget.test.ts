@@ -1,5 +1,6 @@
 /**
- * Size budgets (ARCHITECTURE §8): total dist/ < 300 MB; JavaScript loaded by a
+ * Size budgets (ARCHITECTURE §8): total dist/ < 400 MB (V3 plan decision D8: raised from
+ * 300 MB with the image diet; the images of one card: tests/dist/image-weight.test.ts); JavaScript loaded by a
  * page (inline scripts + module scripts + everything they import, gzipped) is
  * ≤ 50 KB on content pages and ≤ 120 KB on study pages.
  * Static imports always count. Dynamic imports count too (the shell script
@@ -18,7 +19,7 @@ import { BASE, internalUrl, pages, resolveFile, walk, type Page } from './lib.ts
 
 const MB = 1024 * 1024;
 const KB = 1024;
-const TOTAL_MAX = 300 * MB;
+const TOTAL_MAX = 400 * MB;
 const CONTENT_JS_MAX = 50 * KB;
 const STUDY_JS_MAX = 120 * KB;
 const isStudy = (url: string) => /^\/atlante-patologia\/(it|en)\/study\//.test(url);

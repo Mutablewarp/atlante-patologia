@@ -14,6 +14,13 @@ describe('sw-manifest imagesIn', () => {
       ['_astro/a.H1.webp', '_astro/s.1.avif', '_astro/s.2.avif', 'img/x.jpg', 'media/full.png'].sort(),
     );
   });
+
+  it('keeps the picture of an image offline: its AVIF source, the WebP fallback and the file the viewer swaps in on zoom', () => {
+    const html = `<picture><source type="image/avif" srcset="/b/_astro/p.AAAAAAAA_1.avif 960w" sizes="100vw" data-zoom="/b/_astro/p.AAAAAAAA_2.avif 1600w">
+      <img src="/b/_astro/p.AAAAAAAA_3.webp" alt="" width="1600" height="1200"></picture>
+      <source data-zoom="https://example.org/far.avif 1600w">`;
+    expect(imagesIn(html, '/b/').sort()).toEqual(['_astro/p.AAAAAAAA_1.avif', '_astro/p.AAAAAAAA_2.avif', '_astro/p.AAAAAAAA_3.webp']);
+  });
 });
 
 describe('sw-manifest shell assets', () => {

@@ -5,10 +5,10 @@ import { fmt } from '../i18n/index.ts';
 import { tS } from '../i18n/study.ts';
 import { shuffle } from '../lib/quiz.ts';
 import { entityHref } from './client.ts';
-import { Figure } from './CardFace.tsx';
+import { Figure, Pic } from './CardFace.tsx';
 import Quiz from './Quiz.tsx';
 
-export type Img = { src: string; width: number; height: number; alt: string };
+export type Img = { src: string; avifSet?: string; width: number; height: number; alt: string };
 export type Pair = { entity: string; name: string; gross: Img; micro: Img };
 export type LookAlike = { entity: string; name: string; image: Img; other: { entity: string; name: string } };
 type T = (k: Parameters<typeof tS>[1]) => string;
@@ -78,7 +78,7 @@ function Pairs({ lang, t, pairs }: { lang: Lang; t: T; pairs: Pair[] }) {
               onClick={() => setPick(c.entity)}
             >
               <span class="small">{fmt(t('choice'), { n: n + 1 })}</span>
-              <img src={c.micro.src} width={c.micro.width} height={c.micro.height} alt={c.micro.alt} loading="lazy" />
+              <Pic img={c.micro} />
             </button>
           </li>
         ))}
