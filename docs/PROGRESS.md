@@ -289,6 +289,12 @@ Still open:
 - The quiz options run 1115 px wide at 1440 px, well past the reading measure, as on main: the runner is not inside the 48rem study column (NAV-15).
 - `/it/e/coagulative-necrosis/` scores 90 for Lighthouse mobile performance locally (FCP 2.6 s); `02b031d` and main score 91 (FCP 2.5 s) in the same conditions. The card's CSS grew by 0.4 KB gzipped (2 KB raw), and `serve-dist.mjs` sends it uncompressed.
 
+## Interactive body (plan §8) — prepared 2026-11-13, not started
+
+- Decided and written: `docs/BODY_SPEC.md` (binding spec), `scripts/anatomy/organ-map.yaml` (56 organ nodes: 40 with a BodyParts3D mesh, 4 fitted from HRA female objects, 6 proxies, 1 schematic, 5 without a model; every concept name resolved against the BodyParts3D tables), `plan/body-tasks.md` (25 tasks, 18 for coder agents), `scripts/agent/run-task.mjs` (runs one coder task on a lean agent and checks the files it wrote; 8 tests). Decision D073; source facts in VERIFIED_FACTS §N.
+- Branch `feat/body`. No site code, no asset and no dependency added yet: three.js and the mesh tools are installed in the setup step of the tasks file.
+- Not measured: mesh sizes, the three.js chunk, frame rates (task B-0 fills spec §11).
+
 ## V3 batch metrics
 
 | Batch | Date | Cards | Tokens per card | Audit error rate | kB per card | CI |

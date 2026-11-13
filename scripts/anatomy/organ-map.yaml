@@ -1,0 +1,97 @@
+# Interactive body: where each organ node of src/content/anatomy.yaml gets its geometry (docs/BODY_SPEC.md §3).
+#
+# BodyParts3D 4.0 concept names are the exact `en` names of partof_parts_list_e.txt (default) or, with the prefix "isa:",
+# of isa_parts_list_e.txt. Every name below was resolved against both tables on 2026-11-13; the number in a comment is
+# its count of element files. The build fails on a name that does not resolve: never guess a name, look it up.
+# BodyParts3D is one adult male body. It has no female genital organs, breast, thyroid gland, parathyroid glands,
+# parotid gland, lymph nodes, limb nerves, meninges (only two dural regions), joints or bone marrow.
+#
+# kind:
+#   mesh       own geometry from BodyParts3D concepts; `minus` removes the element files of other concepts
+#   hra        own geometry from HRA 3D reference objects (female body), moved into the BodyParts3D frame by the `fit`
+#   proxy      no geometry of its own: selecting it highlights the organs in `of`, and the page says so
+#   schematic  a simple original shape placed by landmarks, and the page says so
+#   none       no 3D target yet: the organ lives in the tree only, and the page says so
+# inside: the organ that hides this one; the viewer ghosts it while this one is selected.
+
+shell: { concepts: [skin] } # 1 element; also the mesh of the organ `skin`
+
+# Landmark fits for HRA objects (similarity: translation and one scale, from the bounding boxes of the landmark pair).
+fits:
+  pelvis: { hra: [pelvis-female/v1.3], bp3d: [bony pelvis] }
+  thorax: { hra: [sternum-female/v1.0, manubrium-female/v1.0], bp3d: [sternum] }
+
+organs:
+  # vessels
+  aorta: { kind: mesh, concepts: [aorta] } # 5
+  carotid-arteries: { kind: mesh, concepts: ["isa:common carotid artery", "isa:internal carotid artery"] } # 2 + 2; partof names would bring the cerebral branches
+  lower-limb-veins: { kind: mesh, concepts: ["isa:femoral vein", "isa:popliteal vein", "isa:great saphenous vein", "isa:small saphenous vein"] } # 2 each
+  # heart
+  heart: { kind: mesh, concepts: [heart], minus: [tricuspid valve, mitral valve, aortic valve, pulmonary valve] } # 83
+  heart-valves: { kind: mesh, concepts: [tricuspid valve, mitral valve, aortic valve, pulmonary valve], inside: heart } # 3 + 4 + 3 + 3
+  # respiratory
+  trachea-bronchi: { kind: mesh, concepts: [trachea, right main bronchus, left main bronchus] }
+  lung: { kind: mesh, concepts: [right lung, left lung] } # 156 + 124
+  pleura: { kind: proxy, of: [lung] }
+  # gastrointestinal
+  esophagus: { kind: mesh, concepts: [esophagus] }
+  stomach: { kind: mesh, concepts: [stomach] }
+  small-intestine: { kind: mesh, concepts: [small intestine] } # 56
+  appendix: { kind: mesh, concepts: [appendix] }
+  colon: { kind: mesh, concepts: [large intestine], minus: [rectum, appendix] } # 8 less 2
+  rectum-anal-canal: { kind: mesh, concepts: [rectum, external anal sphincter] } # 1 + 4; the anal canal itself is not modelled
+  # liver-biliary, pancreas
+  liver: { kind: mesh, concepts: [liver] } # 60
+  gallbladder-bile-ducts: { kind: mesh, concepts: [gallbladder, "isa:extrahepatic bile duct"] } # 1 + 4
+  pancreas: { kind: mesh, concepts: [pancreas] } # 4
+  # kidney, urinary-male-genital
+  kidney: { kind: mesh, concepts: [right kidney, left kidney] }
+  ureter: { kind: mesh, concepts: [right ureter, left ureter] }
+  urinary-bladder: { kind: mesh, concepts: [urinary bladder] }
+  urethra: { kind: mesh, concepts: [urethra] }
+  prostate: { kind: mesh, concepts: [prostate] }
+  testis: { kind: mesh, concepts: ["isa:testis"] } # 2
+  penis: { kind: mesh, concepts: ["isa:glans penis", "isa:corpus spongiosum of penis", "isa:corpus cavernosum of penis"] }
+  # female-genital: HRA female objects, fitted on the pelvis. B-0 reads the node names of uterus-female and, if it holds
+  # a cervix or a vagina node, turns those two entries into `hra` with `nodes`.
+  vulva: { kind: none }
+  vagina: { kind: none }
+  uterine-cervix: { kind: proxy, of: [uterus] }
+  uterus: { kind: hra, objects: [uterus-female/v1.2], fit: pelvis }
+  fallopian-tube: { kind: hra, objects: [fallopian-tube-female-left/v1.2, fallopian-tube-female-right/v1.2], fit: pelvis }
+  ovary: { kind: hra, objects: [ovary-female-left/v1.3, ovary-female-right/v1.3], fit: pelvis }
+  peritoneum: { kind: mesh, concepts: [peritoneum] } # 3; B-0 looks at what they are, else proxy of [small-intestine, colon]
+  # breast
+  breast: { kind: hra, objects: [mammary-gland-female-left/v1.1, mammary-gland-female-right/v1.1], fit: thorax }
+  # hematolymphoid
+  bone-marrow: { kind: proxy, of: [bones] }
+  lymph-nodes: { kind: none }
+  spleen: { kind: mesh, concepts: ["isa:spleen"] }
+  thymus: { kind: mesh, concepts: [thymus] } # 2
+  # endocrine
+  pituitary-gland: { kind: mesh, concepts: [pituitary gland] }
+  thyroid-gland: { kind: schematic, shape: two-lobes-isthmus, anchors: ["isa:thyroid cartilage", trachea] } # in front of the trachea, below the thyroid cartilage
+  parathyroid-glands: { kind: proxy, of: [thyroid-gland] }
+  adrenal-gland: { kind: mesh, concepts: [right adrenal gland, left adrenal gland] }
+  # skin
+  skin: { kind: mesh, concepts: [skin] } # the shell: pickable only while the system `skin` is selected
+  # head-neck
+  oral-cavity: { kind: mesh, concepts: [mouth] } # 11
+  salivary-glands: { kind: mesh, concepts: ["isa:submandibular gland", "isa:sublingual gland"] } # 2 + 2; no parotid gland
+  nasal-cavity-sinuses: { kind: mesh, concepts: [nose] } # 10
+  pharynx: { kind: mesh, concepts: ["isa:muscle of pharynx"] } # 12: the muscular wall
+  larynx: { kind: mesh, concepts: ["isa:laryngeal cartilage"] } # 9
+  ear: { kind: mesh, concepts: ["isa:external ear"] }
+  # bone-soft-tissue
+  bones: { kind: mesh, concepts: [skeletal system] } # 138
+  joints: { kind: proxy, of: [bones] }
+  soft-tissue: { kind: none }
+  # muscle-nerve
+  skeletal-muscle: { kind: mesh, concepts: ["isa:muscle organ"] } # 323: the heaviest set, simplify hard or keep the large muscles only
+  peripheral-nerves: { kind: none } # only cranial nerve branches are modelled
+  # cns
+  brain: { kind: mesh, concepts: [brain] } # 59
+  spinal-cord: { kind: mesh, concepts: [spinal cord] }
+  meninges: { kind: proxy, of: [brain, spinal-cord] }
+  # eye
+  eye: { kind: mesh, concepts: [right eyeball, left eyeball] } # 8 + 9
