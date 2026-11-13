@@ -20,6 +20,7 @@ Steps
    - you had to write something different (the fix does not fit, or is itself too close to the source): own words per BRIEF section 2, `verifier: "fixer-agent"`, `date`. Never mark your own wording as independent.
 3. A sentence or row you add: next free claim number, `verifier: "fixer-agent"`, the same marker in both languages.
 4. Keep the tables, the High-yield bullets and the 13 headings intact. Stay under the word cap.
+   Over the cap after the fixes: shorten wording first (the same facts in fewer words). Remove a supported claim only as the last resort, never one that a `mustCover` item of `row.json` or a number rests on, and list each claim removed for the cap in the report as `cut: ["<id>-c018"]`.
 5. If a fix changes the page or source cited, update `meta.yaml` `sources` (a new source only if it is in `second-sources.md`).
 6. When `en.md` is final, set `translatedFrom` in `it.md` to the hash from `shasum -a 256 src/content/entities/<id>/en.md`.
 7. Run `npm run card:check -- <id> --stage fixer`. Fix, run again; at most two fixing rounds.

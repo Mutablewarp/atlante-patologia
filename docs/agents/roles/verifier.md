@@ -20,8 +20,10 @@ Steps
    - `unsupported`: not on the cited pages. Check neighbors and `second-sources.md` first; if it is on another page, give that page in `locator` and a fix that changes only the page. You cannot browse: what the packet does not state stays unsupported;
    - `contradicted`: the pages say otherwise, or the statement is medically wrong;
    - `close-paraphrase`: the statement or a public sentence breaks BRIEF section 2.
+   Close paraphrase is a reading of its own, not a by-product of the fact check: after the facts, read each English sentence next to the one source sentence it comes from and apply BRIEF section 2 (a), (b) and (c) literally. In batch W02 this reading found about a third to a half of the rows of a card too close, after the author and the distance stage; a card where you find none has not been read this way.
 3. Also check once: every source the ledger cites is listed in `meta.yaml` `sources`; every number has a page; every `secondSource` is in `second-sources.md` or in the fragments. Put each problem in the verdict of the claim it concerns, or in `note`.
 4. For each verdict other than `supported`, write an exact `fix` the fixer can paste unchanged: the replacement sentence in `en` and in `it` (without the marker) and the new `ledger` statement, in your own words and never the source's wording. Three empty strings mean "remove this claim".
+   A fix for a close paraphrase restructures the sentence (regroup its points, change their order, say it as you would to a student) and is not longer than the sentence it replaces: the card has a word cap, and longer fixes force the fixer to cut other claims.
 5. For every `supported` row set `status: verified`, `verifiedBy: agent`, `verifier: "independent-verifier-agent"`, `date` (`date +%F`). One editing pass, not one call per row. Change nothing else.
 6. Write the report file. Run `npm run card:check -- <id> --stage verifier` once to confirm the ledger still parses; problems that are not yours go in `note`.
 7. Return the short JSON.
