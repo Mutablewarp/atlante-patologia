@@ -15,8 +15,9 @@ import { pictureFiles, plain } from './picture.ts';
 import { clozeCards, qaCards, occlusionCards, type StudyCard, type OcclusionImage } from './cards.ts';
 import type { QuizQuestion } from './quiz.ts';
 import type { OralQuestion } from './oral.ts';
+import type { Entity } from './schema.ts';
 import { langPath } from './url.ts';
-import { SECTIONS, QUICK_CHECK } from '../i18n/sections.ts';
+import { sectionTitle } from '../i18n/sections.ts';
 
 // `_` files are fixtures (H04): excluded so they never become production build assets.
 const ASSETS = import.meta.glob<ImageMetadata>(['/src/assets/images/*.{png,jpg,jpeg,webp,avif,svg}', '!**/_*'], { import: 'default' });
@@ -93,8 +94,6 @@ export function allCards() {
   return cardCache;
 }
 
-const sectionLabel = (lang: Lang, id: string) => [...SECTIONS, QUICK_CHECK].find((s) => s.id === id)?.title[lang] ?? id;
-
 export async function questionsFor(module: string, lang: Lang): Promise<QuizQuestion[]> {
   const { entityById } = await siteData(lang);
   const imgs = new Map((await getImages()).map((i) => [i.id, i]));
@@ -114,7 +113,7 @@ export async function questionsFor(module: string, lang: Lang): Promise<QuizQues
       ...(q.answer ? { answer: q.answer[lang] } : {}),
       ...(img && src ? { image: { ...src, alt: img.alt[lang] } } : {}),
       ...(target
-        ? { back: { href: langPath(lang, `e/${target.id}/#${q.backLink.section}`), label: `${target.names[lang]} · ${sectionLabel(lang, q.backLink.section)}` } }
+        ? { back: { href: langPath(lang, `e/${target.id}/#${q.backLink.section}`), label: `${target.names[lang]} · ${sectionTitle(q.backLink.section, target.kind, lang)}` } }
         : {}),
     });
   }
@@ -123,7 +122,8 @@ export async function questionsFor(module: string, lang: Lang): Promise<QuizQues
 
 export type StudyIndex = {
   modules: { id: string; label: string; section: 'I' | 'II' | 'III'; order: number; cards: number; questions: number }[];
-  entities: { id: string; name: string; module: string; tier: 'core' | 'extended'; cards: string[] }[];
+  /** `kind`: the learner's lists name a card's sections with it (`sectionTitle`). */
+  entities: { id: string; name: string; kind: Entity['kind']; module: string; tier: 'core' | 'extended'; cards: string[] }[];
 };
 
 /** Compact index used by every study island (/[lang]/data/study.json). */
@@ -134,6 +134,7 @@ export async function studyIndex(lang: Lang): Promise<StudyIndex> {
   const ents = entities.map((e) => ({
     id: e.id,
     name: e.names[lang],
+    kind: e.kind,
     module: e.module,
     tier: e.tier,
     cards: (cards.get(e.module)?.[lang] ?? []).filter((c) => c.entity === e.id).map((c) => c.id),
@@ -165,7 +166,7 @@ export async function oralQuestions(lang: Lang): Promise<OralQuestion[]> {
       module: e.module,
       level: q.level,
       text: q[lang],
-      focus: q.focus.map((s) => ({ id: s, label: sectionLabel(lang, s), href: langPath(lang, `e/${e.id}/#${s}`) })),
+      focus: q.focus.map((s) => ({ id: s, label: sectionTitle(s, e.kind, lang), href: langPath(lang, `e/${e.id}/#${s}`) })),
     })),
   );
 }

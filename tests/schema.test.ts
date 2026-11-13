@@ -2,16 +2,44 @@ import { describe, expect, it } from 'vitest';
 import { readFileSync, readdirSync } from 'node:fs';
 import { parse } from 'yaml';
 import { entitySchema, imageSchema, moduleSchema, sourceSchema, taxonomySchema } from '../src/lib/schema.ts';
+import { syllabusSort } from '../src/lib/lenses.ts';
+import { buildPlan } from '../src/lib/planner.ts';
 
 const read = (p: string) => parse(readFileSync(new URL(`../src/content/${p}`, import.meta.url), 'utf8'));
 
 describe('content data files match the schemas', () => {
-  it('modules.yaml has all 34 modules g01..o34 in order', () => {
+  it('modules.yaml has the 34 syllabus modules g01..o34 plus g10, ordered 1..34 with no renumbering', () => {
     const mods = moduleSchema.array().parse(read('modules.yaml'));
-    expect(mods).toHaveLength(34);
+    expect(mods).toHaveLength(35);
     expect(mods[0]!.id).toBe('g01');
     expect(mods.at(-1)!.id).toBe('o34');
-    expect(mods.map((m) => m.order)).toEqual(mods.map((_, i) => i + 1));
+    expect(mods.filter((m) => m.id !== 'g10').map((m) => m.order)).toEqual(Array.from({ length: 34 }, (_, i) => i + 1));
+    expect(mods.map((m) => m.order)).toEqual([...mods.map((m) => m.order)].sort((a, b) => a - b)); // the file is in sort order
+  });
+  it('g10 (diagnostic methods) sorts right after g09 and before s10, in every consumer of `order`', () => {
+    const mods = moduleSchema.array().parse(read('modules.yaml'));
+    const order = new Map(mods.map((m) => [m.id, m.order] as const));
+    expect([order.get('g09'), order.get('g10'), order.get('s10')]).toEqual([9, 9.5, 10]);
+    expect(mods.find((m) => m.id === 'g10')).toMatchObject({ section: 'I', status: 'planned', label: { it: 'Metodologie e tecniche diagnostiche', en: 'Diagnostic methods' } });
+    expect(mods.find((m) => m.id === 'g10')!.refPages).toBeUndefined();
+    expect(mods.find((m) => m.id === 'g10')!.planned.map((p) => p.id)).toEqual([
+      'pathology-request-form', 'pathology-report', 'biopsy-types', 'specimen-processing', 'gross-examination', 'histochemical-stains', 'immunohistochemistry',
+      'molecular-pathology-techniques', 'predictive-biomarkers', 'cytopathology', 'frozen-section', 'clinical-autopsy', 'microscopy-and-slide-reading',
+      'electron-microscopy', 'flow-cytometry',
+    ]);
+    // content.ts sorts modules by `order`; lenses.ts sorts cards by the same map
+    expect([...mods].sort((a, b) => a.order - b.order).slice(8, 11).map((m) => m.id)).toEqual(['g09', 'g10', 's10']);
+    const card = (id: string, module: string) => ({ id, module, names: { it: id, en: id }, lenses: {} as never });
+    const cards = [card('c-s10', 's10'), card('b-g10', 'g10'), card('z-g09', 'g09'), card('a-g10', 'g10')];
+    expect(syllabusSort(cards, order, 'en').map((c) => c.id)).toEqual(['z-g09', 'a-g10', 'b-g10', 'c-s10']);
+    // the study planner reads the same `order` (and the section: g10 is in I, so it comes before s10 in II)
+    const plan = buildPlan({
+      today: new Date(2026, 9, 10),
+      examDate: '2026-12-20',
+      hoursPerWeek: 20,
+      modules: mods.filter((m) => ['s10', 'g10', 'g09'].includes(m.id)).map((m) => ({ id: m.id, section: m.section, order: m.order, entities: 1, weakness: 0 })),
+    })!;
+    expect([...new Set(plan.weeks.flatMap((w) => w.study.map((x) => x.module)))]).toEqual(['g09', 'g10', 's10']);
   });
   it('taxonomy files are valid and term ids are unique per lens', () => {
     const dir = new URL('../src/content/taxonomy/', import.meta.url);

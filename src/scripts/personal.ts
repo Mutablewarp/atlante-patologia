@@ -12,7 +12,7 @@
  */
 import { fmt, isLang, type Lang } from '../i18n/index.ts';
 import { tS } from '../i18n/study.ts';
-import { SECTIONS, QUICK_CHECK } from '../i18n/sections.ts';
+import { sectionTitle } from '../i18n/sections.ts';
 import { getAll, getSetting, setSetting, hasData, reminderDue } from '../lib/db.ts';
 import { entitiesRead, dueCount, parseIdList } from '../lib/progress.ts';
 import { langPath } from '../lib/url.ts';
@@ -25,7 +25,6 @@ const el = <K extends keyof HTMLElementTagNameMap>(tag: K, attrs: Record<string,
   if (text !== undefined) n.textContent = text;
   return n;
 };
-const sectionTitle = (id: string) => [...SECTIONS, QUICK_CHECK].find((s) => s.id === id)?.short[lang()] ?? id;
 
 /** Base: re-render on connect and whenever the learner's data changes (ap:data). */
 abstract class Live extends HTMLElement {
@@ -67,7 +66,7 @@ class ApResume extends Live {
     if (!last) return void this.replaceChildren(el('p', { class: 'small muted' }, t('resumeEmpty')));
     const a = el('a', { class: 'card link-card resume-link', href: langPath(lang(), `e/${last.id}/${last.section ? `#${last.section}` : ''}`) });
     a.append(el('span', { class: 'kicker kicker-sentence' }, t('resumeTitle')), el('strong', {}, last.names[lang()]));
-    if (last.section) a.append(el('span', { class: 'small muted' }, sectionTitle(last.section)));
+    if (last.section) a.append(el('span', { class: 'small muted' }, sectionTitle(last.section, last.kind, lang(), true)));
     this.replaceChildren(a);
   }
 }

@@ -97,8 +97,7 @@ function main(args) {
   }));
   const modulesText = readFileSync(join(ROOT, 'src/content/modules.yaml'), 'utf8');
   const modules = new Set([...modulesText.matchAll(/^- id: ([a-z0-9]+)\s*$/gm)].map((m) => m[1]));
-  // g10 does not exist yet: it is added when the technique-card decision lands (plan/v3-plan.md, I-8).
-  const found = problems(rows, { modules: new Set([...modules, 'g10']) });
+  const found = problems(rows, { modules });
   if (rows.length !== expect) found.push(`expected ${expect} cards, found ${rows.length}`);
   if (found.length) {
     console.error(`manifest: ${found.length} problem(s)\n  ${found.slice(0, 20).join('\n  ')}`);

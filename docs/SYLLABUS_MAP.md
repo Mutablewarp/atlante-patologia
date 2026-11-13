@@ -35,6 +35,7 @@ Estimates are planning numbers (±30%). Each batch in Phase 3 re-counts before s
 | g07 | Hemodynamic disorders | Disturbi emodinamici | 348–372 | 18 | 14 |
 | g08 | Environmental and nutritional pathology | Patologia ambientale e nutrizionale | 373–413 | 30 | 12 |
 | g09 | Infectious and parasitic diseases | Malattie infettive e parassitarie | 414–518 | 100 | 35 |
+| g10 | Diagnostic methods | Metodologie e tecniche diagnostiche | — | 15 | — |
 | **II. Systemic conditions** | | | | | |
 | s10 | Aging | Invecchiamento | 520–528 | 6 | 2 |
 | s11 | Systemic autoimmune diseases | Malattie autoimmuni sistemiche | 529–546 | 10 | 6 |
@@ -65,6 +66,8 @@ Estimates are planning numbers (±30%). Each batch in Phase 3 re-counts before s
 | | **Total before de-duplication** | | | **1,319** | **637** |
 | | **After merging cross-listed entities (~10%)** | | | **~1,190** | **~590** |
 
+g10 (added 2026-11-12, owner decision D2) holds technique cards (`kind: technique`, section titles in [CONTENT_SCHEMA.md](CONTENT_SCHEMA.md) §1b): the 15 cards planned in `modules.yaml`. It has no ref pages and no core estimate yet, and the totals above do not include it.
+
 Cross-listed examples merged into one canonical card with several lens tags: rheumatoid arthritis (s11/o30), tuberculosis (g09/o18), amyloidosis (s15/o17/o22), Langerhans cell histiocytosis (o18/o26/o30), granulomatosis with polyangiitis (o16/o18/o22/o29), Kaposi sarcoma (o16/o28), mycosis fungoides (o26/o28), hemochromatosis (o20/o30), Wilson disease (o20/o32), mesothelioma (o18/o19/o24), neuroblastoma (g06/o27), systemic sclerosis (s11/o19/o28).
 
 ### Derived workload (planning only)
@@ -76,7 +79,7 @@ Cross-listed examples merged into one canonical card with several lens tags: rhe
 | Vignette MCQs | ≥ 3 per card | ≥ 3,600 | ≥ 1,800 |
 | Images wanted | 2–4 per card | 2,400–4,800 | 1,200–2,400 |
 | Claims in ledger | ~25 per card | ~30,000 | ~15,000 |
-| Pattern Pages | list below | 16 | 16 |
+| Pattern Pages | list below | 18 | 18 |
 
 The image and review rows are the binding constraints; see [RISKS.md](RISKS.md) R1, R4, R5.
 
@@ -169,6 +172,8 @@ Format: **group** — entities (standard names). (P) = Pattern Page candidate. �
 - **Protozoa** — malaria, babesiosis, toxoplasmosis, amebiasis, cryptosporidiosis, giardiasis, leishmaniasis, Chagas disease, African trypanosomiasis, primary amebic meningoencephalitis.
 - **Helminths** — filariasis, onchocerciasis, loiasis, intestinal nematodes (ascariasis, hookworm, pinworm, strongyloidiasis, trichinosis), schistosomiasis, other flukes, tapeworms (cysticercosis, echinococcosis).
 - Scope note: an Italian *anatomia patologica* course usually covers far less microbiology; core tier keeps ~35 entities with distinctive tissue pathology.
+
+**g10 Diagnostic methods** (technique cards) — pathology request form, pathology report, types of biopsy, specimen processing, gross examination, histochemical stains, immunohistochemistry, molecular pathology techniques, predictive biomarkers, cytopathology, frozen section, clinical autopsy, microscopy and slide reading, electron microscopy, flow cytometry.
 
 ### II. Systemic conditions
 
@@ -276,6 +281,8 @@ Format: **group** — entities (standard names). (P) = Pattern Page candidate. �
 | p14 | HPV-related lesions across sites | g05, g09, o24, o23, o29, o28 |
 | p15 | EBV-related diseases across sites | g09, o26, o29 |
 | p16 | Protein misfolding and neurodegeneration | g01, o32 |
+| p17 | Role of biopsy and cytology, organ by organ | g10, every organ module |
+| p18 | Staging across organs | g05, every organ module |
 
 ## Recommended order
 
