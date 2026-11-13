@@ -19,6 +19,7 @@ interface Props {
 }
 const { lang, entity } = Astro.props;
 const t = (k: Parameters<typeof tS>[1]) => tS(lang, k);
+// Ids are `<entity>:<kind>:<hash>`; data-cards lists them without the shared prefix (entity-actions.ts adds it back).
 const cardIds = ((await allCards()).get(entity.module)?.[lang] ?? []).filter((c) => c.entity === entity.id).map((c) => c.id);
 const hasQuiz = (await questions()).some((q) => q.entities.includes(entity.id));
 ---
@@ -32,7 +33,7 @@ const hasQuiz = (await questions()).some((q) => q.entities.includes(entity.id));
   data-module={entity.module}
   data-name-it={entity.names.it}
   data-name-en={entity.names.en}
-  data-cards={JSON.stringify(cardIds)}
+  data-cards={cardIds.map((c) => c.slice(entity.id.length + 1)).join(' ')}
   data-label-added={t('addedToReview')}
   data-live-added={t('addedToReviewLive')}
   data-live-highlight={t('highlightSaved')}

@@ -4,21 +4,19 @@
  * keeps focus inside, Esc closes, focus returns to the button (shell.ts opens it on the current card). It goes in
  * BaseLayout's "dialogs" slot, after the page: inside the top bar its long card list delayed the rest of the bar, so a
  * slow device painted the bar before the language switch and the theme button and then moved them (CLS).
+ * It is empty: the sidebar's ModuleTree moves in when the dialog opens and back when it closes (shell.ts), so a card
+ * page carries the card list once (D072).
  */
 import type { Lang } from '../../i18n/index.ts';
 import { tHz } from '../../i18n/horizontal.ts';
-import type { SiteData } from '../../lib/content.ts';
-import ModuleTree from './ModuleTree.astro';
 
 interface Props {
   lang: Lang;
-  data: SiteData;
-  current: string;
 }
-const { lang, data, current } = Astro.props;
+const { lang } = Astro.props;
 ---
 
-<dialog class="chapter-dialog" aria-labelledby="chapter-tree-title" data-chapter-dialog>
+<dialog class="chapter-dialog" aria-labelledby="module-tree-title" data-chapter-dialog>
   <form method="dialog">
     <button class="icon-btn chapter-close" aria-label={tHz(lang, 'chapterClose')}>
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true">
@@ -26,5 +24,4 @@ const { lang, data, current } = Astro.props;
       </svg>
     </button>
   </form>
-  <ModuleTree lang={lang} data={data} current={current} id="chapter-tree" />
 </dialog>

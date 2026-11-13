@@ -1,6 +1,6 @@
 ---
-/** Module tree with "you are here" on the current entity (NAVIGATION_SPEC §4, §6): in the sidebar (>= 1024 px) and in
-    the chapter dialog (ChapterIndex.astro). */
+/** Module tree with "you are here" on the current entity (NAVIGATION_SPEC §4, §6): in the sidebar (>= 1024 px), and in
+    the chapter dialog (ChapterIndex.astro) while that is open: shell.ts moves this one copy there and back (D072). */
 import type { Lang } from '../../i18n/index.ts';
 import { tHz } from '../../i18n/horizontal.ts';
 import { langPath } from '../../lib/url.ts';
@@ -10,7 +10,7 @@ interface Props {
   lang: Lang;
   data: SiteData;
   current: string;
-  /** Prefix of the title id: the sidebar copy and the dialog copy share a page. */
+  /** Prefix of the title id; the chapter dialog is labelled by `module-tree-title`, the default. */
   id?: string;
 }
 const { lang, data, current, id = 'module-tree' } = Astro.props;
