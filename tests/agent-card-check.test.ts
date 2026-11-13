@@ -120,6 +120,14 @@ describe('gate 2: no-verbatim', () => {
     expect(parseVerbatimOutput({ status: 0, output })).toEqual([]);
   });
 
+  it('adds the line numbers that `no-verbatim --where` prints under a FAIL line', () => {
+    const output = `FAIL ${dirFoo}/en.md: 8-gram overlap 1.22%, shared 12-word runs: 0\n  lines: 12, 14, 15\nFAIL docs/ledger/foo.yaml: 8-gram overlap 2.00%, shared 12-word runs: 1\nno-verbatim: 2 files checked against 1 reference text(s); 2 failed\n`;
+    expect(parseVerbatimOutput({ status: 1, output })).toEqual([
+      { gate: 'verbatim', where: `${dirFoo}/en.md`, message: '8-gram overlap 1.22%, shared 12-word runs: 0; lines 12, 14, 15' },
+      { gate: 'verbatim', where: 'docs/ledger/foo.yaml', message: '8-gram overlap 2.00%, shared 12-word runs: 1' },
+    ]);
+  });
+
   it('passes on exit status 0', () => {
     expect(check({}, { runVerbatim: () => ({ status: 0, output: 'no-verbatim: 2 files checked against 1 reference text(s); 0 failed' }) }).ok).toBe(true);
   });

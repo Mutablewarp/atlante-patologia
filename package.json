@@ -33,6 +33,8 @@
     "agent:record": "node scripts/agent/record.mjs",
     "agent:commit": "node scripts/agent/commit-finished.mjs",
     "agent:finalize": "node scripts/agent/finalize-batch.mjs",
+    "agent:run-stage": "node scripts/agent/run-stage.mjs",
+    "agent:run-batch": "node scripts/agent/run-batch.mjs",
     "prepush": "npm run check && npm test && npm run contrast && npm run guard && npm run test:e2e:linux",
     "icons": "node scripts/icons.mjs",
     "validate:entity": "node scripts/validate-entity.mjs"
