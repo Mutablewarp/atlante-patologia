@@ -40,6 +40,11 @@ export const tAtlas = defineStrings({
   lenses: { it: 'Lenti', en: 'Lenses' },
   az: { it: 'A–Z', en: 'A–Z' },
   azTitle: { it: 'Indice A–Z', en: 'A–Z index' },
+  bodyTitle: { it: 'Il corpo', en: 'The body' },
+  bodyBody: {
+    it: 'Scegli un apparato e un organo, e apri le schede che lo riguardano.',
+    en: 'Pick a system and an organ, and open the cards that concern it.',
+  },
   azBody: {
     it: 'L’indice alfabetico di schede e glossario, in italiano e in inglese, con sinonimi ed eponimi.',
     en: 'The alphabetical index of cards and glossary terms, in Italian and English, with synonyms and eponyms.',

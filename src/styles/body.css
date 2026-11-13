@@ -1,0 +1,138 @@
+/*
+ * The body page (docs/BODY_SPEC.md §5), tree part. Phone first (375 x 812): chips wrap into a row, which is
+ * also the no-JavaScript layout; everything widens with min-width queries. Existing tokens only.
+ */
+ap-body {
+  display: block;
+  max-width: 100%;
+}
+
+/* Chips: a wrapping row with counts */
+.body-systems {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  padding-block: var(--space-3);
+  margin-bottom: var(--space-5);
+  background: var(--paper);
+  border-bottom: 1px solid var(--rule);
+}
+.body-systems a {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  min-height: 2.75rem;
+  padding-inline: var(--space-4);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-l);
+  color: var(--ink);
+  line-height: var(--leading-ui);
+  text-decoration: none;
+}
+.body-systems a:hover {
+  background: var(--hema-soft);
+}
+.body-systems .count {
+  color: var(--ink-muted);
+  font-size: var(--step--1);
+}
+
+/* System and organ sections as ruled blocks */
+ap-body > section[id^='sys-'] {
+  padding-block: var(--space-5);
+  border-top: 1px solid var(--rule);
+}
+ap-body > section[id^='sys-'] > h2 .count,
+ap-body section[data-organ] > h3 .count {
+  color: var(--ink-muted);
+  font-family: var(--font-body);
+  font-size: var(--step--1);
+  font-weight: var(--weight-body);
+}
+ap-body section[data-organ] {
+  margin-block: var(--space-4);
+  padding: var(--space-3) var(--space-4);
+  border-left: 3px solid var(--rule);
+  border-radius: var(--radius-s);
+  overflow-wrap: anywhere;
+}
+ap-body section[data-organ] > h3 a {
+  display: inline-block;
+  min-height: 2.75rem;
+  line-height: 2.75rem;
+}
+ap-body section[data-organ]:target {
+  background: var(--eosin-soft);
+  border-left-color: var(--eosin);
+}
+.body-note {
+  margin-block: var(--space-1) var(--space-3);
+  color: var(--ink-muted);
+  font-size: var(--step--1);
+}
+.body-cards {
+  margin: 0 0 var(--space-3);
+  padding: 0;
+  list-style: none;
+}
+.body-cards li {
+  padding-block: var(--space-1);
+}
+.body-cards a {
+  display: inline-block;
+  min-height: 2.75rem;
+  padding-block: calc((2.75rem - 1lh) / 2);
+}
+.body-cards li > span {
+  display: block; /* the one-line definition sits under the title, not run into it */
+  color: var(--ink-muted);
+  font-size: var(--step--1);
+}
+
+/* Planned cards: muted, no link, the shared badge */
+.body-planned {
+  margin-top: var(--space-4);
+  padding-top: var(--space-3);
+  border-top: 1px dashed var(--rule);
+  color: var(--ink-muted);
+}
+.body-planned ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.body-planned li {
+  padding-block: var(--space-1);
+}
+
+.body-other {
+  padding-block: var(--space-5);
+  border-top: 1px solid var(--rule);
+}
+.body-other a {
+  display: inline-block;
+  min-height: 2.75rem;
+  padding-block: calc((2.75rem - 1lh) / 2);
+}
+
+/* Wide screens: the 18 chips wrap into about five rows, far too tall to stick (seen at 1280 px, a third of the screen),
+   so they scroll away with the page; the sections keep room for the top bar when a hash scrolls them into view. */
+@media (min-width: 48rem) {
+  ap-body > section[id^='sys-'],
+  ap-body section[data-organ] {
+    scroll-margin-top: calc(var(--topbar-h) + var(--space-3));
+  }
+}
+
+@media print {
+  .body-systems {
+    position: static;
+  }
+  ap-body section[hidden],
+  ap-body section {
+    display: block !important;
+  }
+  ap-body section[data-organ] {
+    break-inside: avoid;
+  }
+}

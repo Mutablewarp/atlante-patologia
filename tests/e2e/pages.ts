@@ -25,6 +25,7 @@ export const TEMPLATES: Record<string, string> = Object.fromEntries(
     'home-it': 'it/',
     'home-en': 'en/',
     atlas: 'it/atlas/',
+    body: 'it/body/',
     lens: 'it/atlas/system/',
     'lens-term': first(/^it\/atlas\/(?!az\/)[^/]+\/[^/]+\/$/),
     az: 'en/atlas/az/',
