@@ -41,7 +41,7 @@ While the gates and CI of one batch run, the next batch may be written in a seco
 
 ## Stop rules (plan §10)
 
-Pause and report when: tokens per card pass 600 k in two batches running; the audit fails as in step 3; `dist/` passes 80 % of its budget (`docs/ARCHITECTURE.md`); `main` is red; a card would need a source outside the packet rules.
+Pause and report when: the cost per card at API prices (the sum of `costUsd` in `.work/usage.jsonl` over the cards of the batch, divided by the cards) passes $6 in two batches running (the plan's limit of 600 k tokens used another count and cannot be read from the log; the pilot and W02 cost $4.93 per card with their rework); the audit fails as in step 3; `dist/` passes 80 % of its budget (`docs/ARCHITECTURE.md`); `main` is red; a card would need a source outside the packet rules.
 Cards stay `ai-generated-unreviewed`. Only a person sets `expert-reviewed`.
 
 ## Tooling tasks (coder agents: `node scripts/agent/run-task.mjs <id> --file plan/content-campaign.md`)
