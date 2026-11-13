@@ -106,7 +106,7 @@ async function getJson(url) {
 const pause = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
 /**
- * Candidates for a search or a category, in the API's order (relevance for a search); the unusable ones are left out.
+ * Candidates for a search or a category, in the API's order (relevance for a search) or, for a category listing, sorted by title; the unusable ones are left out.
  * @param {{ query?: string, category?: string, limit?: number, minWidth?: number }} options
  * @param {{ fetchJson?: (url: string) => Promise<any>, sleep?: (ms: number) => Promise<unknown> }} [io] replaced in tests
  */
@@ -118,8 +118,9 @@ export async function searchCommons({ query = '', category = '', limit = MAX_ROW
     if (n) await sleep(PAUSE_MS);
     const data = await fetchJson(requestUrl({ query, category }, cont));
     if (data.error) throw new Error(`${data.error.code}: ${data.error.info}`);
-    // The pages of a generator come sorted by id; `index` is the rank in the search.
-    for (const page of [...(data.query?.pages ?? [])].sort((a, b) => (a.index ?? 0) - (b.index ?? 0))) {
+    // The pages of a generator come sorted by id; `index` is the rank in a search. A category listing has none: sort by title.
+    const byRank = (a, b) => (a.index ?? 0) - (b.index ?? 0) || String(a.title).localeCompare(String(b.title));
+    for (const page of [...(data.query?.pages ?? [])].sort(byRank)) {
       const row = parseImageInfo(page);
       if (!row || row.width < minWidth || seen.has(row.pageUrl)) continue;
       seen.add(row.pageUrl);
@@ -133,8 +134,16 @@ export async function searchCommons({ query = '', category = '', limit = MAX_ROW
 
 /** Command-line options as search options. Throws a message for the user on a missing or bad value. */
 export function parseArgs(args) {
-  const option = (name) => (args.includes(name) ? args[args.indexOf(name) + 1] : undefined);
-  const opts = { query: option('--query') ?? '', category: option('--category') ?? '', limit: Number(option('--limit') ?? MAX_ROWS), minWidth: Number(option('--min-width') ?? 800) };
+  const known = ['--query', '--category', '--limit', '--min-width'];
+  const given = {};
+  for (let i = 0; i < args.length; i += 2) {
+    if (!known.includes(args[i])) throw new Error(`unknown option: ${args[i]}`);
+    const value = args[i + 1];
+    if (value === undefined || value.trim() === '' || value.startsWith('--')) throw new Error(`${args[i]} needs a value`);
+    given[args[i]] = value;
+  }
+  const opts = { query: given['--query'] ?? '', category: given['--category'] ?? '', limit: Number(given['--limit'] ?? MAX_ROWS), minWidth: Number(given['--min-width'] ?? 800) };
+  if ('--category' in given && !opts.category.replace(/^category:/i, '').trim()) throw new Error('--category needs a name after "Category:"');
   if (!opts.query.trim() && !opts.category.trim()) throw new Error('give --query "<text>" and/or --category "Category:..."');
   if (!Number.isInteger(opts.limit) || opts.limit < 1) throw new Error('--limit must be a whole number from 1 to 30');
   if (!Number.isInteger(opts.minWidth) || opts.minWidth < 0) throw new Error('--min-width must be a whole number of pixels');

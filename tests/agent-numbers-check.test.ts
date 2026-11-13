@@ -88,6 +88,10 @@ describe('checkNumbers', () => {
     expect(result.skippedClaims).toBe(1);
   });
 
+  it('skips claims that are not objects', () => {
+    expect(checkNumbers('claims:\n  - just text\n  - null\n  - 7\n', SOURCE)).toEqual({ checked: 0, skippedClaims: 0, notFound: [] });
+  });
+
   it('copes with a ledger without claims', () => {
     expect(checkNumbers('entity: demo\n', SOURCE)).toEqual({ checked: 0, skippedClaims: 0, notFound: [] });
   });
@@ -125,7 +129,7 @@ describe('run', () => {
 
   it('answers with a note, not an error, when a file is missing, the YAML is broken or the id is bad', () => {
     expect(run('ghost', root)).toEqual({ id: 'ghost', checked: 0, skippedClaims: 0, notFound: [], note: 'docs/ledger/ghost.yaml not found' });
-    expect(run('broken', root).note).toBeTruthy();
+    expect(run('broken', root).note).toMatch(/^ledger YAML is not valid(, line \d+)?$/);
     expect(run('../demo', root).note).toMatch(/usage/);
   });
 });

@@ -235,6 +235,16 @@ describe('searchCommons', () => {
     expect(net.pauses).toEqual([1000, 1000]);
   });
 
+  it('sorts a category listing, which has no index, by title', async () => {
+    const named = (title: string) => ({ ...structuredClone(live.query.pages[0]), title, index: undefined });
+    const pages = [named('File:B.png'), named('File:A.png'), named('File:C.png')].map((p, i) => ({
+      ...p,
+      imageinfo: [{ ...p.imageinfo[0], descriptionurl: `https://commons.wikimedia.org/wiki/${p.title}${i}` }],
+    }));
+    const rows = await searchCommons({ category: 'Category:X', minWidth: 0 }, { fetchJson: async () => ({ query: { pages } }), sleep: async () => {} });
+    expect(rows.map((r: { title: string }) => r.title)).toEqual(['File:A.png', 'File:B.png', 'File:C.png']);
+  });
+
   it('reads an answer without pages (an empty category) and reports an API error', async () => {
     expect(await searchCommons({ category: 'Category:Empty' }, fakes({ batchcomplete: true }).io)).toEqual([]);
     await expect(searchCommons({ query: 'x' }, fakes({ error: { code: 'badvalue', info: 'Unrecognized value' } }).io)).rejects.toThrow('badvalue: Unrecognized value');
@@ -256,5 +266,14 @@ describe('parseArgs', () => {
     expect(() => parseArgs([])).toThrow(/--query/);
     expect(() => parseArgs(['--query', 'x', '--limit', 'many'])).toThrow(/--limit/);
     expect(() => parseArgs(['--query', 'x', '--min-width', '-5'])).toThrow(/--min-width/);
+  });
+
+  it('refuses a value that is missing or starts with --, an unknown option and an empty category', () => {
+    expect(() => parseArgs(['--query', '--limit', '5'])).toThrow(/--query needs a value/);
+    expect(() => parseArgs(['--query'])).toThrow(/--query needs a value/);
+    expect(() => parseArgs(['--query', ''])).toThrow(/--query needs a value/);
+    expect(() => parseArgs(['--query', 'x', '--limt', '5'])).toThrow(/unknown option: --limt/);
+    expect(() => parseArgs(['--category', 'Category:'])).toThrow(/--category/);
+    expect(() => parseArgs(['--query', 'x', '--category', 'category: '])).toThrow(/--category/);
   });
 });

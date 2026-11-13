@@ -50,6 +50,7 @@ export function checkNumbers(ledgerYaml, sourceText) {
   let checked = 0;
   let skippedClaims = 0;
   for (const claim of parse(ledgerYaml)?.claims ?? []) {
+    if (!claim || typeof claim !== 'object') continue;
     const numbers = numbersIn(claim.statement);
     const cited = citedPages(claim.sourceRef?.pages).filter((page) => keys.has(page));
     if (!numbers.length) continue;
@@ -78,6 +79,8 @@ export function run(id, root = ROOT) {
   try {
     return { id, ...checkNumbers(readFileSync(ledger, 'utf8'), readFileSync(source, 'utf8')) };
   } catch (error) {
+    // The library's message holds a code frame with the ledger line: say only that the YAML is bad, and where.
+    if (error?.name === 'YAMLParseError') return { ...empty, note: `ledger YAML is not valid${error.linePos?.[0]?.line ? `, line ${error.linePos[0].line}` : ''}` };
     return { ...empty, note: String(error.message).slice(0, 120) };
   }
 }

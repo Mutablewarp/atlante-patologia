@@ -38,6 +38,14 @@ describe('appendRow', () => {
     expect(twice.match(/\| Batch \|/g)).toHaveLength(1);
   });
 
+  it('replaces the row of a repeated batch: same row count, newer numbers', () => {
+    const once = appendRow(PROGRESS, ROW);
+    const newer = '| W02 | 2026-11-13 | 9 | 300 k | 0.0 % (0/40) | 400 | green |';
+    const twice = appendRow(appendRow(once, ROW.replace('W02', 'W03')), newer);
+    expect(twice).toBe(`${PROGRESS}\n## V3 batch metrics\n\n${HEADER}\n${newer}\n${ROW.replace('W02', 'W03')}\n`);
+    expect(twice.match(/\| W02 \|/g)).toHaveLength(1);
+  });
+
   it('keeps the row inside its table when another section follows', () => {
     const text = `${PROGRESS}\n## V3 batch metrics\n\n${HEADER}\n${ROW}\n\n## Later\n\nMore text.\n`;
     const next = ROW.replace('W02', 'W03');
@@ -69,6 +77,12 @@ describe('parseArgs', () => {
     expect(() => parseArgs(ARGS.map((a) => (a === '1' ? '41' : a)))).toThrow('--audit-wrong');
   });
 
+  it('refuses an empty value and a value that is the next flag', () => {
+    expect(() => parseArgs(ARGS.map((a) => (a === 'W02' ? '--cards' : a)))).toThrow('--batch needs a value');
+    expect(() => parseArgs(ARGS.map((a) => (a === '8' ? '' : a)))).toThrow('--cards needs a value');
+    expect(() => parseArgs(ARGS.map((a) => (a === '3200000' ? '' : a)))).toThrow('--tokens needs a value');
+  });
+
   it('keeps a pipe or a line break out of a table cell', () => {
     expect(parseArgs(ARGS.map((a) => (a === 'first-try' ? 'first | try\nlate' : a))).ci).toBe('first try late');
   });
@@ -92,6 +106,19 @@ describe('the command', () => {
 
     const again = execFileSync(process.execPath, [script, ...ARGS.map((a) => (a === 'W02' ? 'W03' : a)), '--file', copy], { encoding: 'utf8' }).trim();
     expect(readFileSync(copy, 'utf8')).toBe(`${first}${again}\n`);
+  });
+
+  it('exits 2 with one message when --file has no value or the file is missing', () => {
+    for (const extra of [['--file'], ['--file', join(dir, 'ghost.md')]]) {
+      let result = { status: 0, stderr: '' };
+      try {
+        execFileSync(process.execPath, [script, ...ARGS, ...extra], { encoding: 'utf8', stdio: 'pipe' });
+      } catch (e) {
+        result = e as typeof result;
+      }
+      expect(result.status).toBe(2);
+      expect(result.stderr.trim().split('\n')).toHaveLength(1);
+    }
   });
 
   it('exits 2 and writes nothing when an option is wrong', () => {
