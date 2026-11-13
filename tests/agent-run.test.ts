@@ -80,6 +80,10 @@ describe('claudeArgs and promptFor', () => {
     for (const s of RUN_STAGES.filter((x: string) => x !== 'sources')) expect(tools[s]).toContain('Bash(npm run card:check:*)');
   });
 
+  it('lets the translator and the fixer compute the sha256 of en.md for translatedFrom, and nobody else', () => {
+    for (const s of RUN_STAGES) expect(tools[s]!.includes('Bash(shasum -a 256:*)')).toBe(s === 'translator' || s === 'fixer');
+  });
+
   it('adds the real .work directory when .work is a link, and takes a budget and a model', () => {
     const a = claudeArgs({ stage: 'fixer', prompt: 'P', addDir: '/x/.work', budget: 7, model: 'opus' });
     expect(a.slice(-2)).toEqual(['--add-dir', '/x/.work']);

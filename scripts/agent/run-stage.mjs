@@ -17,12 +17,13 @@ import { cli, option, readReport, record, ROOT, STAGES, validateReport } from '.
 export const RUN_STAGES = [...STAGES, 'sources'];
 const FILES = ['Read', 'Write', 'Edit', 'Grep', 'Glob'];
 const CHECK = 'Bash(npm run card:check:*)';
+const SHA = 'Bash(shasum -a 256:*)'; // translatedFrom of it.md: the translator writes it, the fixer recomputes it after an edit of en.md
 /** Tools per stage, least privilege: the shell commands each role card names, and the web only for the two roles that may browse. */
 export const TOOLS = {
   author: [...FILES, CHECK],
-  translator: [...FILES, CHECK, 'Bash(grep:*)'],
+  translator: [...FILES, CHECK, 'Bash(grep:*)', SHA],
   verifier: [...FILES, CHECK],
-  fixer: [...FILES, CHECK],
+  fixer: [...FILES, CHECK, SHA],
   questions: [...FILES, CHECK],
   scout: [...FILES, CHECK, 'Bash(curl:*)', 'Bash(node scripts/agent/commons-candidates.mjs:*)', 'WebFetch', 'WebSearch'],
   sources: [...FILES, 'Bash(curl:*)', 'Bash(grep:*)', 'Bash(head:*)', 'WebFetch', 'WebSearch'],
