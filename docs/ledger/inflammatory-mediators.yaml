@@ -1,0 +1,210 @@
+entity: inflammatory-mediators
+claims:
+  - claimId: inflammatory-mediators-c001
+    section: definition
+    statement: "Mediators make vessels dilate and leak and draw inflammatory cells into the injured area."
+    sourceRef: { source: rubin-8e, chapter: "2", pages: "75" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: inflammatory-mediators-c002
+    section: definition
+    statement: "Plasma supplies the complement, kinin and coagulation cascades, whose proteins stay inactive until a protease cuts them."
+    sourceRef: { source: rubin-8e, chapter: "2", pages: "76" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: inflammatory-mediators-c003
+    section: definition
+    statement: "Certain mediators are made ahead of time and kept in granules until the cell is activated; histamine in mast cells is an example."
+    sourceRef: { source: rubin-8e, chapter: "2", pages: "76" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: inflammatory-mediators-c004
+    section: definition
+    statement: "A second group of cell-derived mediators, including prostaglandins and leukotrienes, is newly made once a stimulus arrives."
+    sourceRef: { source: rubin-8e, chapter: "2", pages: "76" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: inflammatory-mediators-c005
+    section: diagnosis
+    statement: "Hereditary angioedema goes with absence of the C1 inhibitor."
+    sourceRef: { source: rubin-8e, chapter: "2", pages: "79-80" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: inflammatory-mediators-c006
+    section: diagnosis
+    statement: "People missing an early complement component (C1q, C1r, C1s or C4) are much more likely to develop systemic lupus erythematosus."
+    sourceRef: { source: rubin-8e, chapter: "2", pages: "79" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: inflammatory-mediators-c007
+    section: diagnosis
+    statement: "Neisseria infections are the risk when the late components C6, C7 and C8 are absent."
+    sourceRef: { source: rubin-8e, chapter: "2", pages: "79" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: inflammatory-mediators-c008
+    section: differential
+    statement: "Mediators are the molecular signals, while acute inflammation is the vascular and cellular response that these signals promote (edema and cell recruitment)."
+    sourceRef: { source: rubin-8e, chapter: "2", pages: "75" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: inflammatory-mediators-c009
+    section: differential
+    statement: "Some mediators, such as reactive oxygen species, act through direct toxic activity rather than receptor binding, and antioxidants scavenge them."
+    sourceRef: { source: rubin-8e, chapter: "2", pages: "76" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: inflammatory-mediators-c010
+    section: high-yield
+    statement: "The early leakage from venules follows histamine separating endothelial cells; histamine also dilates arterioles and is released from mast cells."
+    sourceRef: { source: rubin-8e, chapter: "2", pages: "84" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: inflammatory-mediators-c011
+    section: high-yield
+    statement: "Serotonin is stocked ahead of need, behaves like histamine, and comes out when platelets aggregate."
+    sourceRef: { source: rubin-8e, chapter: "2", pages: "84" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: inflammatory-mediators-c012
+    section: high-yield
+    statement: "Arachidonic acid is metabolized by cyclooxygenase to prostaglandins and thromboxane, or by lipoxygenase to leukotrienes and lipoxins."
+    sourceRef: { source: rubin-8e, chapter: "2", pages: "80" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: inflammatory-mediators-c013
+    section: high-yield
+    statement: "LTB4 draws neutrophils, monocytes and macrophages to the site of injury."
+    sourceRef: { source: rubin-8e, chapter: "2", pages: "80" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: inflammatory-mediators-c014
+    section: high-yield
+    statement: "LTC4, LTD4 and LTE4 make smooth muscle contract and vessels leak, and are key players in asthma."
+    sourceRef: { source: rubin-8e, chapter: "2", pages: "81" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: inflammatory-mediators-c015
+    section: high-yield
+    statement: "IL-1, IL-6 and TNFα are together the endogenous pyrogens."
+    sourceRef: { source: rubin-8e, chapter: "2", pages: "83" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: inflammatory-mediators-c016
+    section: high-yield
+    statement: "CXC chemokines act mainly on neutrophils and CC chemokines mainly on macrophages and lymphocytes, with exceptions."
+    sourceRef: { source: rubin-8e, chapter: "2", pages: "84" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: inflammatory-mediators-c017
+    section: high-yield
+    statement: "The complement fragments C3a and C5a are anaphylatoxins that increase vascular permeability."
+    sourceRef: { source: rubin-8e, chapter: "2", pages: "77-78" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: inflammatory-mediators-c018
+    section: high-yield
+    statement: "The membrane attack complex, C5b-9, lyses target cells."
+    sourceRef: { source: rubin-8e, chapter: "2", pages: "77" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: inflammatory-mediators-c019
+    section: high-yield
+    statement: "Activated factor XII converts prekallikrein to kallikrein, which cleaves high-molecular-weight kininogen to release kinins such as bradykinin."
+    sourceRef: { source: rubin-8e, chapter: "2", pages: "76-77" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: inflammatory-mediators-c020
+    section: high-yield
+    statement: "NO made by endothelium raises cGMP in vascular smooth muscle and relaxes it, causing vasodilation."
+    sourceRef: { source: rubin-8e, chapter: "2", pages: "84" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: inflammatory-mediators-c021
+    section: high-yield
+    statement: "In activated macrophages, nitric oxide helps kill microbes."
+    sourceRef: { source: rubin-8e, chapter: "2", pages: "84" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: inflammatory-mediators-c022
+    section: traps
+    statement: "Activation of Hageman factor (factor XII) mechanistically links the coagulation, kinin and complement cascades."
+    sourceRef: { source: rubin-8e, chapter: "2", pages: "76" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: inflammatory-mediators-c023
+    section: traps
+    statement: "Aspirin and the other NSAIDs act on cyclooxygenase, so prostanoid production drops while leukotriene and lipoxin production goes on."
+    sourceRef: { source: rubin-8e, chapter: "2", pages: "81" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: inflammatory-mediators-c024
+    section: traps
+    statement: "Lipoxins, a class of arachidonic acid products, are anti-inflammatory."
+    sourceRef: { source: rubin-8e, chapter: "2", pages: "81" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: inflammatory-mediators-c025
+    section: traps
+    statement: "C3b on a pathogen surface acts as an opsonin and enhances phagocytosis."
+    sourceRef: { source: rubin-8e, chapter: "2", pages: "77" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: inflammatory-mediators-c026
+    section: traps
+    statement: "C5a is a chemotactic factor for leukocytes."
+    sourceRef: { source: rubin-8e, chapter: "2", pages: "79" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
