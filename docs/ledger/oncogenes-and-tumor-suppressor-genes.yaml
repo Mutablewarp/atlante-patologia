@@ -1,0 +1,338 @@
+entity: oncogenes-and-tumor-suppressor-genes
+claims:
+- claimId: oncogenes-and-tumor-suppressor-genes-c001
+  section: definition
+  statement: "A proto-oncogene is a normal gene that stimulates cell multiplication; a mutant, overactive version of it is an oncogene."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "182" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c002
+  section: definition
+  statement: "Losing a tumor suppressor removes an inhibitory influence on cell cycle transit."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "182" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c003
+  section: definition
+  statement: "Cancer needs overactive proliferation genes together with suppressor genes that are bypassed or switched off."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "182" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c004
+  section: etiology
+  statement: "DNA polymerase infidelity, environmental chemicals and radiation all damage DNA."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "179" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c005
+  section: etiology
+  statement: "Mutations keep accumulating in the offspring of the one cell from which most cancers arise."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "176, 181" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c006
+  section: etiology
+  statement: "Some inherited cancer syndromes involve mutated BRCA1, BRCA2 or PALB2; their proteins help carry out homologous recombination."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "181" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c007
+  section: etiology
+  statement: "A mismatch repair defect can be present from birth or arise later in life."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "180" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c008
+  section: pathogenesis
+  statement: "A driver mutation can strike anywhere along the growth-signaling chain, from the outside signal to the transcription factors at its end."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "182-183" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c009
+  section: pathogenesis
+  statement: "Most mutations in a tumor are passengers with mostly unknown roles; drivers are a small minority."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "181" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c010
+  section: pathogenesis
+  statement: "A receptor mutated into a permanently active state signals without its ligand, and such mutations often drive cancer."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "184" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c011
+  section: pathogenesis
+  statement: "Her2/neu (ErbB2) is activated by amplification, and EGFR by mutation or amplification."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "184" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c012
+  section: pathogenesis
+  statement: "K-, N- and H-Ras switch between GDP and GTP binding and are active only in the GTP-bound state."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "184" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c013
+  section: pathogenesis
+  statement: "GAP acts as the off switch for active Ras by speeding the splitting of GTP to GDP, the resting state."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "185" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c014
+  section: pathogenesis
+  statement: "A Ras mutant never shuts down, and it is found in many malignant tumors."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "185" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c015
+  section: pathogenesis
+  statement: "Abl is activated by translocation, which produces the mutant protein Bcr-Abl."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "184" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c016
+  section: pathogenesis
+  statement: "Myc is activated by amplification or translocation; translocation can place a transcription factor gene beside a promoter that drives it harder."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "184, 186" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c017
+  section: pathogenesis
+  statement: "Myc may control transcription of a sizable fraction of human genes, up to about 10% to 15%."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "186" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c018
+  section: pathogenesis
+  statement: "E2F drives entry into S phase; pRb keeps it blocked until cyclin D-CDK4/6 phosphorylates pRb and releases it."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "178" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c019
+  section: pathogenesis
+  statement: "MDM2 adds ubiquitin to p53 and sends it to the proteasome, so p53 is scarce in an unstressed cell."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "178" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c020
+  section: pathogenesis
+  statement: "Damage-induced arrest runs through p21, which p53 raises after being phosphorylated by ATM/Chk2 or ATR/Chk1."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "179" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c021
+  section: pathogenesis
+  statement: "p53 drives a cell into apoptosis when its DNA damage is beyond repair."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "179" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c022
+  section: pathogenesis
+  statement: "Mismatch repair fixes insertions and deletions from polymerase slippage and single mispaired bases, using two overlapping systems."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "180" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c023
+  section: pathogenesis
+  statement: "Homologous recombination, one of two routes that repair double-strand breaks, involves BRCA1 and BRCA2 gene products."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "181" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c024
+  section: ancillary
+  statement: "Microsatellite instability points to a mismatch repair defect."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "180" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c025
+  section: ancillary
+  statement: "In some tumors, the ERCC1 level can forecast whether cisplatin-type DNA-damaging drugs will work."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "180" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c026
+  section: ancillary
+  statement: "Patients with hormone receptor-positive tumors have lower recurrence risk after surgery when given antiestrogen therapy."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "186" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c027
+  section: clinical
+  statement: "Most prostate cancers eventually become androgen insensitive, although removing androgen stimulation inhibits their growth."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "186" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c028
+  section: prognosis
+  statement: "DNA-targeting chemotherapy is less effective against tumor cells that repair DNA well."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "180" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c029
+  section: differential
+  statement: "Oncogenes are the genes in which gain-of-function changes push cells through the cycle."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "182" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c030
+  section: differential
+  statement: "Tumor suppressor genes act as brakes on the cell cycle, and mutations that inactivate them take the brake off."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "182" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c031
+  section: differential
+  statement: "When DNA repair fails, mutations are handed on to daughter cells."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "179" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c032
+  section: high-yield
+  statement: "Activating mutations act in oncogenes (proto-oncogenes) and inactivating mutations remove tumor suppressors."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "182" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c033
+  section: high-yield
+  statement: "Mutant Ras cannot switch itself off and stays loaded with GTP."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "185" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c034
+  section: high-yield
+  statement: "A translocation involving Abl produces the mutant protein Bcr-Abl."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "184" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c035
+  section: high-yield
+  statement: "pRb binds E2F, and many cancers no longer control the G1 restriction point."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "178" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c036
+  section: high-yield
+  statement: "p53 carries the nickname guardian of the genome."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "178" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c037
+  section: high-yield
+  statement: "Microsatellite instability indicates defective mismatch repair."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "180" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c038
+  section: high-yield
+  statement: "BRCA1 and BRCA2 products participate in homologous recombination."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "181" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c039
+  section: traps
+  statement: "Oncogenes were first found in tumor viruses (v-), while human cancers carry altered versions of normal cellular genes (c-)."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "182" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c040
+  section: traps
+  statement: "The same mutant protein can promote growth in one cell type and cell death in another."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "186" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c041
+  section: traps
+  statement: "Myc can also trigger cell death when p53 and the other death effectors are intact."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "186" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: oncogenes-and-tumor-suppressor-genes-c042
+  section: mnemonics
+  statement: "Oncogenes are activated (gain of function) and tumor suppressors are inactivated (loss of function) in oncogenesis."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "182" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13

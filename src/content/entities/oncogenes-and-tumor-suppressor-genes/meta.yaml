@@ -1,0 +1,97 @@
+id: oncogenes-and-tumor-suppressor-genes
+module: g05
+tier: extended
+kind: concept
+names:
+  it: "Oncogeni e geni oncosoppressori"
+  en: "Oncogenes and tumor suppressor genes"
+  eponyms: []
+  synonyms:
+    it: ["Protooncogeni", "Oncosoppressori"]
+    en: ["Proto-oncogenes", "Tumor suppressors"]
+  abbreviations: []
+summary:
+  it: "Gli oncogeni sono versioni mutate e iperattive di geni che stimolano la crescita, mentre i geni oncosoppressori frenano il ciclo cellulare e la riparazione del DNA; il tumore nasce dall'attivazione dei primi e dalla perdita dei secondi."
+  en: "Oncogenes are mutant, overactive versions of growth-promoting genes, while tumor suppressor genes restrain the cell cycle and repair DNA; cancer arises from activating the former and losing the latter."
+lenses:
+  system: [general]
+  process: [neoplasia]
+  pattern: []
+  presentation: []
+  marker: [molecular]
+  group: [neoplastic, genetic]
+learningObjectives:
+  - it: "Distinguere un oncogene (guadagno di funzione) da un gene oncosoppressore (perdita di funzione)."
+    en: "Distinguish an oncogene (gain of function) from a tumor suppressor gene (loss of function)."
+  - it: "Descrivere come RAS, MYC, i recettori tirosin-chinasici e BCR::ABL1 promuovono la proliferazione."
+    en: "Describe how RAS, MYC, receptor tyrosine kinases and BCR::ABL1 promote proliferation."
+  - it: "Spiegare il ruolo di RB e TP53 nel controllo del ciclo cellulare."
+    en: "Explain the roles of RB and TP53 in cell cycle control."
+  - it: "Collegare riparo del DNA (mismatch repair, BRCA) e instabilità dei microsatelliti al rischio di tumore."
+    en: "Link DNA repair (mismatch repair, BRCA) and microsatellite instability to cancer risk."
+prerequisites: [apoptosis]
+relations:
+  - type: sharesMechanism
+    target: apoptosis
+    note:
+      it: "p53 attiva l'apoptosi quando il DNA non può essere riparato."
+      en: "p53 triggers apoptosis when DNA cannot be repaired."
+  - type: prerequisiteOf
+    target: predictive-biomarkers
+    note:
+      it: "Alterazioni di questi geni, come ERCC1 o i recettori ormonali, orientano la risposta alla terapia."
+      en: "Changes in these genes, such as ERCC1 or hormone receptors, help predict response to therapy."
+quickCheck:
+  - id: oncogenes-and-tumor-suppressor-genes-q1
+    q:
+      it: "Perché una mutazione di RAS stimola la proliferazione in modo continuo?"
+      en: "Why does a RAS mutation stimulate proliferation continuously?"
+    a:
+      it: "Perché la proteina mutata non viene disattivata e resta legata a GTP, cioè sempre accesa."
+      en: "Because the mutant protein is not switched off and stays GTP-bound, that is, always on."
+    kind: short
+  - id: oncogenes-and-tumor-suppressor-genes-q2
+    q:
+      it: "Come RB frena il ciclo cellulare e come viene superato questo freno?"
+      en: "How does RB restrain the cell cycle, and how is this brake released?"
+    a:
+      it: "RB lega E2F e lo tiene inattivo; la fosforilazione da parte di ciclina D-CDK4/6 libera E2F e permette l'ingresso in fase S."
+      en: "RB binds E2F and keeps it inactive; phosphorylation by cyclin D-CDK4/6 frees E2F and allows entry into S phase."
+    kind: short
+  - id: oncogenes-and-tumor-suppressor-genes-q3
+    q:
+      it: "Che cosa indica l'instabilità dei microsatelliti?"
+      en: "What does microsatellite instability indicate?"
+    a:
+      it: "Un difetto del sistema di riparo dei mismatch."
+      en: "A defect of mismatch repair."
+    kind: short
+selfExplain:
+  - it: "Perché un tumore deve attivare oncogeni e anche inattivare oncosoppressori?"
+    en: "Why must a tumor both activate oncogenes and inactivate tumor suppressors?"
+  - it: "Perché p53 è detto il guardiano del genoma?"
+    en: "Why is p53 called the guardian of the genome?"
+examQuestions:
+  - it: "Mi parli degli oncogeni: che cosa sono e come RAS, MYC, i recettori tirosin-chinasici e BCR::ABL1 promuovono la crescita?"
+    en: "Tell me about oncogenes: what are they, and how do RAS, MYC, receptor tyrosine kinases and BCR::ABL1 drive growth?"
+    focus: [definition, pathogenesis]
+    level: 1
+  - it: "Perché la perdita di RB o di p53 favorisce lo sviluppo di un tumore?"
+    en: "Why does losing RB or p53 favor tumor development?"
+    focus: [pathogenesis]
+    level: 2
+  - it: "Come distingue un oncogene da un gene oncosoppressore, e dove si colloca un gene di riparo del DNA come quelli del mismatch repair?"
+    en: "How do you tell an oncogene from a tumor suppressor gene, and where does a DNA repair gene such as the mismatch repair genes fit?"
+    focus: [definition, differential, ancillary]
+    level: 3
+images:
+  - id: oncogenes-and-tumor-suppressor-genes-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "5"
+    pages: "176, 178-186"
+lastUpdated: 2026-11-13
+status: published
