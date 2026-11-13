@@ -107,8 +107,10 @@ async function load() {
   if (!urls.length) { say('no .glb in ./assets/'); return; }
   for (const url of urls) {
     const gltf = await loader.loadAsync(url);
-    gltf.scene.traverse((o) => {
-      if (!o.isMesh) return;
+    // collect first: a hull added during the traversal would be visited itself, and get a hull of its own, without end
+    const meshes = [];
+    gltf.scene.traverse((o) => { if (o.isMesh) meshes.push(o); });
+    for (const o of meshes) {
       if (/shell|skin/i.test(`${url} ${o.name}`)) {
         o.material = shellMaterial;
         o.renderOrder = 2;
@@ -122,7 +124,7 @@ async function load() {
         o.userData.hull = hull;
         organs.push(o);
       }
-    });
+    }
     pivot.add(gltf.scene);
   }
   const box = new Box3().setFromObject(pivot);
