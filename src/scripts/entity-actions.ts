@@ -6,6 +6,7 @@
 import { fmt } from '../i18n/index.ts';
 import { get, getAll, put, putMany, remove, recordRecent } from '../lib/db.ts';
 import { emptyFsrs } from '../lib/progress.ts';
+import type { Entity } from '../lib/schema.ts';
 
 const box = document.querySelector<HTMLElement>('[data-entity-actions]');
 if (box) void init(box);
@@ -14,6 +15,7 @@ async function init(box: HTMLElement) {
   const d = box.dataset;
   const entity = d.id!;
   const module = d.module!;
+  const kind = d.kind as Entity['kind'];
   const names = { it: d.nameIt!, en: d.nameEn! };
   const cardIds = JSON.parse(d.cards ?? '[]') as string[];
   const live = box.querySelector<HTMLElement>('[data-live]')!;
@@ -27,7 +29,7 @@ async function init(box: HTMLElement) {
   const copies = (act: string) => [...head.querySelectorAll<HTMLButtonElement>(`[data-act="${act}"]`)];
 
   try {
-    await recordRecent({ id: entity, names, module });
+    await recordRecent({ id: entity, names, module, kind });
   } catch {
     return; // no IndexedDB: nothing below can work
   }
@@ -99,11 +101,11 @@ async function init(box: HTMLElement) {
   });
 
   for (const el of [box, ...head.querySelectorAll<HTMLElement>('[data-entity-pinned]')]) el.dataset.ready = '';
-  trackReading(entity, names, module);
+  trackReading(entity, names, module, kind);
 }
 
 /** Section read = its end scrolled into view while open. Resume = the section at the top of the viewport. */
-function trackReading(entity: string, names: { it: string; en: string }, module: string) {
+function trackReading(entity: string, names: { it: string; en: string }, module: string, kind: Entity['kind']) {
   const sections = [...document.querySelectorAll<HTMLElement>('.entity-section')];
   const io = new IntersectionObserver((entries) => {
     for (const e of entries) {
@@ -131,7 +133,7 @@ function trackReading(entity: string, names: { it: string; en: string }, module:
     if (here === current) return;
     current = here;
     clearTimeout(timer);
-    timer = window.setTimeout(() => void recordRecent({ id: entity, names, module, ...(current ? { section: current } : {}) }).catch(() => {}), 1500);
+    timer = window.setTimeout(() => void recordRecent({ id: entity, names, module, kind, ...(current ? { section: current } : {}) }).catch(() => {}), 1500);
   };
   window.addEventListener('scroll', onScroll, { passive: true });
 }

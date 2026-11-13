@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
 import { splitSections } from '../src/lib/sections.ts';
+import { entitySchema } from '../src/lib/schema.ts';
 import { QUICK_CHECK, SECTIONS, sectionIdForTitle, sectionTitle } from '../src/i18n/sections.ts';
 
 describe('entity body sections', () => {
@@ -51,7 +52,7 @@ describe('sectionTitle (technique cards keep the 13 ids but show their own title
       }
   });
   it('changes nothing for every other kind (or no kind): title, and short label for the contents list', () => {
-    for (const kind of ['disease', 'lesion', 'process', 'concept', undefined])
+    for (const kind of [...entitySchema.shape.kind.options.filter((k) => k !== 'technique'), undefined]) // every other kind of the schema
       for (const lang of LANGS)
         for (const s of [...SECTIONS, QUICK_CHECK]) {
           expect(sectionTitle(s.id, kind, lang)).toBe(s.title[lang]);

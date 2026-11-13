@@ -288,6 +288,31 @@ test('a technique card keeps the 13 anchors and shows the technique titles, in b
   await expect(page.locator('.section-toc a[href="#pathogenesis"]')).toHaveText('Pathogenesis');
 });
 
+test("the learner's lists name a technique card's section with its technique title: highlights badge and resume tile", async ({ page, request }) => {
+  const rows = ((await (await request.get('en/data/study.json')).json()) as { entities: { id: string; kind: string }[] }).entities;
+  expect(['fixture-technique', 'fixture-demo'].map((id) => rows.find((e) => e.id === id)?.kind)).toEqual(['technique', 'concept']); // the study index carries the kind
+  await page.goto('en/me/notes/');
+  await expect(page.locator('.empty-state')).toBeVisible(); // the learner DB is open
+  const at = Date.now();
+  await writeStore(page, 'highlights', ['fixture-technique', 'fixture-demo'].map((entity, i) => ({ id: `${entity}:${at + i}`, entity, section: 'definition', text: 'Saved text', updated: at + i })));
+  for (const [lang, badges] of [['en', ['Highlights · Definition', 'Highlights · Principle and aims']], ['it', ['Evidenziazioni · Definizione', 'Evidenziazioni · Principio e scopi']]] as const) {
+    await page.goto(`${lang}/me/notes/`);
+    await expect(page.locator('.personal-list .badge')).toHaveText([...badges]); // newest first; the card of another kind keeps the generic name
+  }
+  // Resume tile: the card page saves its kind; a record from before the kind existed keeps the generic name.
+  await page.goto('en/e/fixture-technique/');
+  const saved = async () => (await readStore(page, 'recent')).find((r) => r.id === 'fixture-technique');
+  await expect.poll(async () => (await saved())?.kind).toBe('technique');
+  const record = await saved();
+  for (const [kind, titles] of [[undefined, { en: 'Pathogenesis', it: 'Patogenesi' }], ['technique', { en: 'Steps of the method', it: 'Fasi del metodo' }]] as const) {
+    await writeStore(page, 'recent', [{ ...record, kind, section: 'pathogenesis', at: Date.now() + 1000, updated: Date.now() + 1000 }]);
+    for (const lang of ['en', 'it'] as const) {
+      await page.goto(`${lang}/me/`);
+      await expect(page.locator('ap-resume')).toContainText(titles[lang]);
+    }
+  }
+});
+
 test('oral simulator: three questions, prediction before self-assessment, calibration and history', async ({ page }) => {
   const foreign = guardRequests(page);
   await page.goto('en/study/oral/');
