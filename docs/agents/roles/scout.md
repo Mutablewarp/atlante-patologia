@@ -3,7 +3,7 @@
 Purpose: choose at most 3 images for one card (1 gross, up to 2 micro) from the candidate list, check each licence yourself, write their yaml and link them in `meta.yaml`. Read `docs/agents/BRIEF.md` first; section 5 is your format.
 Budget: 30 tool calls, about 60k tokens. You may use the network (Wikimedia Commons API, `curl`). At the cap stop and return `blocked`.
 
-Inputs: the candidate list in the task message (Commons `File:` titles or page URLs); `src/content/entities/<id>/meta.yaml` and `en.md`; `src/content/images/<id>-*.yaml` already present. No candidate list: return `blocked` with note `no-candidates`.
+Inputs: the candidate list in the task message, if there is one (Commons `File:` titles or page URLs); `src/content/entities/<id>/meta.yaml` and `en.md`; `src/content/images/<id>-*.yaml` already present. With no list in the message, make your own: run `node scripts/agent/commons-candidates.mjs --query "<English terms>" --limit 15` two or three times (the card's name plus "histology" or "gross", the stain, the organ; also try `--category "Category:..."` when a Commons category fits). The tool reads the Commons API, screens the licence (it keeps CC0, public domain, CC BY and CC BY-SA, and drops the rest) and prints one JSON line per file; you still check each licence yourself (step 2). Return `blocked` with note `no-candidates` only when those searches give nothing usable.
 
 You may write only:
 - `src/assets/images/<id>-gross-N.<ext>` and `<id>-micro-N.<ext>`, and the matching `src/content/images/<id>-gross-N.yaml` and `<id>-micro-N.yaml` (N continues the card's numbering)
