@@ -1,6 +1,6 @@
 ---
 lang: it
-translatedFrom: 7aff3ea464bdb5a553eecc71d16c4e34104423383cecdbe4787b58039aaef27e
+translatedFrom: c573eaf4149331e74ceab23556de335c33c5ff1540382f4e9cf8df2e9d0e3bb9
 ---
 
 ## Definizione ed epidemiologia
@@ -62,11 +62,18 @@ Non applicabile.
 
 ## Morfologia microscopica
 
-Non applicabile.
+- **Microscopia elettronica:** un vacuolo con due membrane attorno a citoplasma intatto e riconoscibile (spesso un mitocondrio o un tratto di reticolo endoplasmatico) è un autofagosoma; un vacuolo con una sola membrana attorno a un contenuto già in parte o in gran parte digerito è un autolisosoma (autofagolisosoma), che si forma quando un lisosoma si è fuso con l'autofagosoma.<!--c:autophagy-c068-->
+- **Microscopia ottica:** la lipofuscina appare come granuli citoplasmatici bruno-dorati; è un residuo non digeribile di proteine ossidate e lipidi perossidati, che si accumula perché né l'autofagia né gli altri sistemi di smaltimento della cellula riescono a eliminarlo.<!--c:autophagy-c069--> La sua quantità cresce con l'età ed è più evidente in un organo atrofico; se ne trova di più nelle cellule che si dividono raramente o mai, come neuroni, cardiomiociti ed epatociti (vedi [[pigment-accumulation]]).<!--c:autophagy-c070-->
 
 ## Colorazioni speciali, IIC e reperti molecolari
 
-Non applicabile.
+**Come si studia:**
+
+- **Nessun esame basta da solo:** l'attività autofagica si valuta combinando più metodi, perché ognuno ha i suoi limiti e nessuno è un riferimento assoluto (gold standard); la microscopia elettronica, il metodo più antico, riconosce i vacuoli descritti in «Morfologia microscopica», ma non può dire se il loro contenuto venga davvero demolito nei lisosomi.<!--c:autophagy-c071-->
+- **LC3:** controparte nei mammiferi della proteina Atg8 del lievito, è il marcatore abituale degli autofagosomi perché, a differenza della maggior parte delle proteine dell'autofagia, resta legata alla vescicola completa; all'immunofluorescenza o all'immunoistochimica gli autofagosomi appaiono come puntini citoplasmatici (*puncta*), mentre l'immunoblot (Western blot) misura LC3-II, la forma legata a un lipide di membrana.<!--c:autophagy-c072-->
+- **p62 (SQSTM1):** un calo di p62 fa pensare che l'autofagia funzioni, un suo accumulo che sia deficitaria, perché questo adattatore, agganciato a LC3, viene digerito insieme al carico che consegna.<!--c:autophagy-c073-->
+- **Come leggere il risultato:** più autofagosomi, più LC3-II o una colorazione per LC3 più intensa possono indicare sia un aumento dell'autofagia sia un blocco della degradazione lisosomiale; per distinguere i due casi si misura il flusso autofagico, per esempio confrontando LC3-II con e senza un inibitore lisosomiale come la clorochina o la bafilomicina A1.<!--c:autophagy-c074-->
+- **Genetica molecolare:** gli studi di associazione sull'intero genoma (GWAS) hanno collegato la malattia di Crohn a varianti di due geni dell'autofagia, ATG16L1 e IRGM.<!--c:autophagy-c075-->
 
 ## Presentazione clinica
 
@@ -75,9 +82,9 @@ Un difetto o un eccesso di autofagia contribuisce a molte malattie:
 - **Cancro:** il gene della Beclina-1 e alcuni geni Atg sono oncosoppressori, deleti o mutati in molti tumori umani; tuttavia l'autofagia protegge anche le cellule tumorali dall'ipossia, dalla carenza di nutrienti e dalla terapia.<!--c:autophagy-c039-->
 - **Neurodegenerazione:** nella malattia di Huntington alcune mutazioni possono ostacolare la rimozione degli aggregati e dei mitocondri difettosi; nelle malattie di Alzheimer e di Parkinson il calo della produzione di Beclina-1 legato all'età potrebbe spiegare in parte perché gli aggregati si accumulano più in fretta di quanto vengano eliminati.<!--c:autophagy-c040-->
 - **Invecchiamento:** gli aggregati non degradati si accumulano man mano che la macroautofagia e la CMA si riducono con l'età; studi sugli animali suggeriscono che gli inibitori di mTOR, potenziando l'autofagia, possano allungare la vita.<!--c:autophagy-c041-->
-- **Infezioni:** la xenofagia elimina parassiti intracellulari, virus come HIV-1 e batteri come *Shigella*, *Streptococcus* e *Mycobacterium tuberculosis*.<!--c:autophagy-c042--> I microrganismi contrattaccano: alcuni virus producono proteine simili a Bcl-2 che legano la Beclina-1, e *M. tuberculosis* blocca la fusione tra fagosoma e lisosoma.<!--c:autophagy-c043--> Il poliovirus, il virus dell'epatite C e altri virus a RNA volgono la via a proprio vantaggio, allestendo i siti di replicazione sulle membrane autofagiche.<!--c:autophagy-c044-->
+- **Infezioni:** la xenofagia è il ramo dell'autofagia che libera la cellula dagli invasori annidati al suo interno, dai batteri come *Mycobacterium tuberculosis* ai virus come HIV-1.<!--c:autophagy-c042--> I microrganismi contrattaccano: alcuni virus producono proteine simili a Bcl-2 che legano la Beclina-1, e *M. tuberculosis* blocca la fusione tra fagosoma e lisosoma.<!--c:autophagy-c043--> Il poliovirus, il virus dell'epatite C e altri virus a RNA volgono la via a proprio vantaggio, allestendo i siti di replicazione sulle membrane autofagiche.<!--c:autophagy-c044-->
 - **Malattia di Crohn:** varianti di due geni dell'autofagia che sostengono la xenofagia aumentano il rischio; la scarsa eliminazione dei batteri accresce la produzione di mediatori proinfiammatori.<!--c:autophagy-c045-->
-- **Polmone:** l'autofagia è aumentata in alcune forme di BPCO e ridotta nei macrofagi alveolari dei fumatori cronici, mentre una ridotta eliminazione autofagica degli aggregati di proteina mutante nell'epitelio delle vie aeree contribuisce alla fibrosi cistica.<!--c:autophagy-c046-->
+- **Polmone:** nella fibrosi cistica le cellule che rivestono le vie aeree sembrano eliminare male gli aggregati della proteina mutata, e ciò contribuirebbe alla malattia; nei fumatori il quadro è misto, con più autofagia in alcuni casi di BPCO e meno nei macrofagi alveolari.<!--c:autophagy-c046-->
 - **Cuore:** alcune cardiomiopatie ereditarie derivano da mutazioni di proteine dell'autofagia; un'autofagia insufficiente aggrava inoltre il danno da ischemia-riperfusione e lo scompenso cardiaco.<!--c:autophagy-c047-->
 
 ## Diagnosi, laboratorio e imaging
@@ -107,6 +114,7 @@ Non applicabile.
 - **Fagoforo → autofagosoma → fusione con il lisosoma**; **p62** collega il carico ubiquitinato al fagoforo.<!--c:autophagy-c058-->
 - **Bcl-2** trattiene la Beclina-1; le **caspasi** la tagliano, collegando l'autofagia all'apoptosi.<!--c:autophagy-c059-->
 - Malattie correlate: **cancro** (arma a doppio taglio), **neurodegenerazione**, **invecchiamento**, **infezioni**, **malattia di Crohn**, **cardiomiopatie**.<!--c:autophagy-c060-->
+- Come si studia: la **microscopia elettronica** mostra l'**autofagosoma a doppia membrana**; **LC3** marca gli autofagosomi; **p62** si accumula quando l'autofagia non funziona; contare gli autofagosomi non equivale a misurare il **flusso**.<!--c:autophagy-c077-->
 
 ## Errori comuni e trappole d'esame
 
@@ -115,6 +123,7 @@ Non applicabile.
 - **La «morte cellulare autofagica» non è dimostrata come meccanismo letale autonomo;** il suo contributo, distinto da quello di altre forme di morte programmata, non è chiaro.<!--c:autophagy-c063-->
 - **Non è sempre indiscriminata:** l'autofagia da digiuno è in gran parte non selettiva, ma la mitofagia, la rimozione degli aggregati e la CMA sono altamente selettive.<!--c:autophagy-c064-->
 - **Il proteasoma non può sostituirla:** aggregati e organelli interi sono troppo grandi per il proteasoma.<!--c:autophagy-c065-->
+- **Più vacuoli autofagici non dimostrano, da soli, più autofagia:** i vacuoli si accumulano anche quando è bloccata una tappa successiva, come la fusione con i lisosomi o la digestione, e proprio un blocco di questo tipo, più che l'eccesso di autofagia ipotizzato in un primo tempo, è la spiegazione più probabile dei vacuoli che si accumulano in alcune malattie neurodegenerative e muscolari degenerative.<!--c:autophagy-c076-->
 
 ## Mnemotecniche
 

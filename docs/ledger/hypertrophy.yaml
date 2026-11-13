@@ -584,3 +584,123 @@ claims:
     verifiedBy: agent
     verifier: "verifier-agent"
     date: 2026-11-03
+  - claimId: hypertrophy-c074
+    section: etiology
+    statement: "The right ventricle hypertrophies under pulmonary hypertension (cor pulmonale) and when a failing left ventricle passes extra workload to it."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "641, 664" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hypertrophy-c075
+    section: etiology
+    statement: "If one kidney fails to develop (unilateral renal agenesis), the other compensates for much of the missing function by hypertrophy."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "920" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-09
+  - claimId: hypertrophy-c076
+    section: gross
+    statement: "A normal right ventricular wall measures 0.3-0.5 cm; in chronic cor pulmonale it may exceed 1.0 cm, and severe hypertrophy can straighten the septum or reverse its curvature."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "664-665" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hypertrophy-c077
+    section: micro
+    statement: "Enlarged dark nuclei and a larger share of binucleated myocytes in pathologic hypertrophy reflect DNA synthesis and nuclear division without division of the cell."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "641" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hypertrophy-c078
+    section: ancillary
+    statement: "Gross assessment uses heart weight and a transverse section across the ventricles, which shows wall thickness and whether the chamber is dilated (Figs. 17-25 and 17-27)."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "663, 665" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hypertrophy-c079
+    section: ancillary
+    statement: "Normal adult heart weight is 280-340 g in men and 230-280 g in women; the left ventricular wall measures 1.3-1.5 cm and the right one less than 0.5 cm."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "633" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hypertrophy-c080
+    section: ancillary
+    statement: "Fiber width and nuclear size of hypertrophic myocardium are judged against normal myocardium shown at the same magnification (Fig. 17-26)."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hypertrophy-c081
+    section: ancillary
+    statement: "Trichrome staining shows fibrous tissue in blue and myocytes in red, displaying the interstitial fibrosis that accompanies pathologic hypertrophy."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "640, 685" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hypertrophy-c082
+    section: ancillary
+    statement: "Load-independent left ventricular hypertrophy prompts sarcomere gene testing for HCM; a pathogenic variant, usually in MYH7 or MYBPC3, is found in only part of the probands, more often in familial disease, so a negative test does not rule HCM out."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-09
+  - claimId: hypertrophy-c083
+    section: ancillary
+    statement: "Failing hearts look nonspecific unless a specific disease such as an infarct or amyloidosis has left its own changes; hypertensive heart disease and HCM are diagnosed only once other causes of hypertrophy have been excluded."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "641, 663, 683" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-09
+  - claimId: hypertrophy-c084
+    section: prognosis
+    statement: "Acute ischemia is more likely to set off a lethal ventricular arrhythmia (sudden cardiac death) in a hypertrophic ventricle."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "652" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hypertrophy-c085
+    section: differential
+    statement: "In HCM the left ventricular hypertrophy has no explanation in load or athletic training; a septum over 1.5 times the free-wall thickness (asymmetric hypertrophy) occurs in most cases, and myofiber disarray is the key histologic finding."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "683-684" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hypertrophy-c086
+    section: high-yield
+    statement: "Cor pulmonale is right ventricular hypertrophy caused by pulmonary hypertension; left ventricular failure also increases right ventricular workload."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "641, 664" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hypertrophy-c087
+    section: high-yield
+    statement: "Left ventricular hypertrophy without an explaining load is the hallmark of HCM, which shows asymmetric septal thickening and myofiber disarray."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "683-684" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hypertrophy-c088
+    section: traps
+    statement: "The prostate in BPH enlarges through proliferation of glands and stroma, a hyperplasia, although the word hypertrophy is still applied to it."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1007, 1011" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09

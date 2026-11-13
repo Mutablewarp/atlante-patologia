@@ -1,0 +1,100 @@
+# License check (2026-11-08): Fig. 1 of Dieterlen M-T et al., "Histopathological insights into mitral valve
+# prolapse-induced fibrosis", Front Cardiovasc Med 2023;10:1057986, doi:10.3389/fcvm.2023.1057986, PMID 36960475,
+# PMC10028262 (identifiers confirmed in PubMed). The article's <permissions> block (Europe PMC and PMC open-access XML)
+# grants CC BY 4.0, copyright 2023 the authors; the figure legend describes the authors' own biopsies and carries no
+# "reproduced from" or permission note, so the licence covers the figure. File: the 3000 × 1000 px figure image embedded
+# in the article PDF of the PMC open-access record (PMC10028262.1), because the web figure is only 750 × 250 px. The
+# authors relate the regional fibrosis of mitral valve prolapse to local mechanical stress rather than to volume
+# overload (abstract) and report no myocyte size, so the caption uses the figure only to teach the two trichrome
+# patterns and does not call this myocardium hypertrophic. No `section` (panel A is cut across, panel B in mixed
+# planes), no `objective` and no `mpp` (the source states only the 100 µm scale bars). Caption facts checked against
+# rubin-8e ch. 17 pp. 640 (interstitial and replacement fibrosis) and 663 (fibrosis stiffens the ventricle, diastolic
+# dysfunction). Annotations placed by inspection.
+id: hypertrophy-micro-3
+file: hypertrophy-micro-3.jpg
+kind: micro
+sourceUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC10028262/
+author: >-
+  Maja-Theresa Dieterlen, Kristin Klaeske, Ricardo Spampinato, Mateo Marin-Cuartas, Karoline Wiesner, Jordan
+  Morningstar, Russell A. Norris, Serguei Melnitchouk, Robert A. Levine, Antonia van Kampen, Michael A. Borger
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-11-08
+modifications:
+  it: >-
+    Estratta la Figura 1 (pannelli A e B, come pubblicati) dal PDF dell'articolo nell'archivio open access di PMC, a
+    3000 × 1000 px; ridotta a 1600 × 533 px e salvata in JPEG. Nessun ritaglio, nessuna modifica dei colori; le lettere
+    dei pannelli e le barre di scala sono degli autori.
+  en: >-
+    Extracted Figure 1 (panels A and B, as published) from the article PDF in the PMC open-access archive, at
+    3000 × 1000 px; downscaled to 1600 × 533 px and saved as JPEG. No crop, no colour change; the panel letters and
+    scale bars are the authors'.
+attributionText: >-
+  Dieterlen M-T, Klaeske K, Spampinato R, Marin-Cuartas M, Wiesner K, Morningstar J, Norris RA, Melnitchouk S,
+  Levine RA, van Kampen A, Borger MA, "Histopathological insights into mitral valve prolapse-induced fibrosis",
+  Frontiers in Cardiovascular Medicine 2023;10:1057986, doi:10.3389/fcvm.2023.1057986, Fig. 1, CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+stain: "Masson's trichrome"
+magnification: "medium power (scale bars 100 µm in the source)"
+lookFor:
+  it: "Segui il blu: in A sottili filamenti tra i singoli miociti, in B ampie aree che hanno preso il posto dei miociti."
+  en: "Follow the blue: in A thin strands between single myocytes, in B broad areas that have taken the place of myocytes."
+caption:
+  it: >-
+    Tricromica di Masson su biopsie della parete del ventricolo sinistro (regione inferobasale) di pazienti con
+    prolasso della valvola mitrale sottoposti a riparazione della valvola; barre di scala 100 µm. In questa
+    colorazione i miociti sono rossi e il collagene blu, quindi una fibrosi facile da perdere in ematossilina-eosina
+    salta all'occhio. Pannello A, fibrosi interstiziale: quasi tutto il campo è fatto di miociti rossi tagliati
+    trasversalmente, ma tra di essi corrono sottili filamenti blu che avvolgono singole cellule e piccoli gruppi; i
+    miociti però sono conservati. Pannello B, fibrosi sostitutiva: dove i miociti sono morti il collagene ne ha preso
+    il posto in ampie aree blu, e i superstiti restano come isole rosse sparse o brevi fasci. Perché conta per
+    l'ipertrofia: un certo grado di fibrosi interstiziale accompagna praticamente ogni cuore con ipertrofia patologica
+    e irrigidisce la parete, così il ventricolo si riempie male (disfunzione diastolica); la fibrosi sostitutiva
+    indica invece che dei miociti sono morti. Attenzione: la fonte non riporta le dimensioni dei miociti e gli autori collegano la fibrosi
+    del prolasso soprattutto allo stress meccanico locale sulla parete vicina alla valvola; usa quindi questa figura
+    per imparare i due quadri della tricromica, non come esempio di ipertrofia, e giudica le dimensioni dei miociti in
+    ematossilina-eosina, rispetto al miocardio normale, come nelle altre micrografie di questa scheda.
+  en: >-
+    Masson's trichrome on biopsies of the left ventricular wall (inferobasal region) from patients with mitral valve
+    prolapse who underwent valve repair; scale bars 100 µm. In this stain myocytes are red and collagen is blue, so
+    fibrosis that is easy to miss on H&E stands out. Panel A, interstitial fibrosis: most of the field is red myocytes
+    cut across, but thin blue strands run between them and wrap single cells and small groups; the myocytes
+    themselves are preserved. Panel B, replacement fibrosis: where myocytes have died, collagen has taken their place
+    in broad blue areas, and the survivors are left as scattered red islands or short bundles. Why this matters for
+    hypertrophy: some interstitial fibrosis goes with practically every pathologically hypertrophied heart, and it
+    stiffens the wall, so the ventricle fills poorly (diastolic dysfunction); replacement fibrosis, by contrast, means
+    that myocytes have died.
+    Pitfall: the source does not report myocyte size, and the authors relate the fibrosis of prolapse mainly to local
+    mechanical stress on the wall next to the valve; so use this figure to learn the two trichrome patterns, not as an
+    example of hypertrophy, and judge myocyte size on H&E against normal myocardium, as in the other micrographs on
+    this card.
+alt:
+  it: >-
+    Due micrografie affiancate in rosso e blu, ciascuna con una barra di scala nera in basso a sinistra. A sinistra,
+    pannello A: profili rossi rotondeggianti e fitti, separati da una sottile rete di linee blu, con qualche chiazza blu
+    più grande. A destra, pannello B: ampie aree blu con piccole isole rosse sparse e, nella metà sinistra, alcuni
+    fasci rossi allungati che attraversano il campo.
+  en: >-
+    Two side-by-side micrographs in red and blue, each with a black scale bar at the bottom left. Left, panel A:
+    closely packed, rounded red profiles separated by a fine network of blue lines, with a few larger blue patches.
+    Right, panel B: wide blue areas with small, scattered red islands and, in its left half, a few elongated red
+    bundles crossing the field.
+annotations:
+  - id: myocytes-cut-across
+    label: { it: "A: miociti (rossi) tagliati trasversalmente", en: "A: myocytes (red) cut across" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.050, 0.500, 0.150, 0.500, 0.150, 0.800, 0.050, 0.800] }
+  - id: interstitial-fibrosis
+    label: { it: "A: fibrosi interstiziale, sottili setti blu attorno ai singoli miociti", en: "A: interstitial fibrosis, thin blue septa around single myocytes" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.383, 0.330, 0.487, 0.330, 0.487, 0.700, 0.383, 0.700] }
+  - id: replacement-fibrosis
+    label: { it: "B: fibrosi sostitutiva, il collagene occupa il posto dei miociti perduti", en: "B: replacement fibrosis, collagen in place of lost myocytes" }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.817, 0.050, 0.983, 0.050, 0.983, 0.900, 0.817, 0.900] }
+  - id: surviving-myocytes
+    label: { it: "B: miociti superstiti, tagliati per il lungo, separati da bande di collagene", en: "B: surviving myocytes, cut lengthwise, separated by bands of collagen" }
+    revealOrder: 4
+    shape: { type: polygon, coords: [0.543, 0.300, 0.733, 0.300, 0.733, 0.650, 0.543, 0.650] }

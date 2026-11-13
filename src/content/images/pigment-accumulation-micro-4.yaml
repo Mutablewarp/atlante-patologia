@@ -1,0 +1,80 @@
+# License check (2026-11-08): Commons file page {{Information}} gives Source = Flickr photo 3626657617 (stream
+# "pulmonary_pathology"), Author = Yale Rosen; license template {{cc-by-sa-2.0}}, confirmed on Flickr by FlickreviewR on
+# 2009-08-22 ({{User:FlickreviewR/reviewed-pass-change}}: licence found at review cc-by-sa-2.0); extmetadata
+# LicenseShortName "CC BY-SA 2.0", AttributionRequired true. The Commons transfer is by User:Patho, but the Flickr
+# stream is the author's own, so there is no uploader/creator gap. CC BY-SA is approved as a class by owner decision O7
+# (plan/v2-plan.md, 2026-11-03), hence ownerApproved: true. The file is the unmodified Commons original (1280 × 960 px,
+# 487 KB). Same case as pigment-accumulation-micro-3 (H&E view, photo 3626657027; identical description, "Prussian
+# blue stain" added here, same capture date 2009-01-06), so the two share one group. The source names the stain
+# (Prussian blue) but not the magnification; this view covers several alveoli and is clearly lower power than the H&E
+# view. Facts in the caption checked against rubin-8e ch. 1 p. 7 (hemosiderin as stored iron), ch. 7 p. 326 (red cells
+# degraded by alveolar macrophages, iron kept as hemosiderin) and ch. 20 p. 874 (stored iron is ferric); the Perls
+# reaction chemistry is standard histochemistry and is also stated in pigment-accumulation-micro-2.
+id: pigment-accumulation-micro-4
+file: pigment-accumulation-micro-4.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Intra-alveolar_hemosiderin_deposition_-_Prussian_blue_stain.jpg
+author: Yale Rosen
+license: CC-BY-SA-2.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/2.0/
+retrievedAt: 2026-11-08
+modifications: none
+attributionText: >-
+  Yale Rosen, "Intra-alveolar hemosiderin deposition - Prussian blue stain" (Flickr 3626657617), via Wikimedia Commons,
+  CC BY-SA 2.0
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+group: pigment-accumulation-pvod-hemosiderin
+stain: "Perls' Prussian blue iron stain (the source: Prussian blue stain)"
+magnification: "medium power (the source does not state the magnification)"
+lookFor:
+  it: "Cerca il blu e chiediti dove si trova: nei macrofagi liberi negli spazi aerei, non nelle pareti alveolari."
+  en: "Look for the blue and ask where it sits: in macrophages free in the air spaces, not in the alveolar walls."
+caption:
+  it: >-
+    Lo stesso polmone con PVOD della vista in EE, colorato con la reazione di Perls (blu di Prussia) per il ferro, a
+    medio ingrandimento. Il fondo resta chiaro e i nuclei sono rosa-rossi per la colorazione di contrasto, quindi
+    l'occhio va subito al blu. Il blu riempie gli ammassi di macrofagi liberi negli spazi alveolari (il più grande in
+    basso a sinistra, un altro al centro) e alcune cellule isolate sparse fra l'uno e l'altro; le pareti alveolari quasi
+    non ne contengono. Ogni cellula blu è un siderofago: il ferro ferrico dell'emosiderina reagisce con il ferrocianuro di
+    potassio del reattivo e forma un composto blu insolubile, il blu di Prussia. La tonalità va dall'azzurro pallido al
+    blu notte secondo la quantità di ferro contenuta in ciascuna cellula. Regola di lettura: un pigmento bruno che
+    diventa blu con il Perls è emosiderina; carbone, lipofuscina, melanina e pigmento biliare conservano il loro colore.
+    Nel tessuto polmonare il Perls è la prova più semplice di un sanguinamento alveolare avvenuto in passato: i globuli
+    rossi non ci sono più, ma il loro ferro resta dentro i macrofagi.
+  en: >-
+    The same PVOD lung as the H&E view, stained with Perls' Prussian blue reaction for iron, at medium power. The
+    background stays pale and the nuclei pink-red from the counterstain, so the eye goes straight to the blue. The blue
+    fills the clusters of macrophages lying free in the alveolar spaces (the biggest at lower left, another in the
+    center), plus a few single cells scattered in between; the alveolar walls hold almost none. Each blue cell is a
+    siderophage: the ferric iron of hemosiderin reacts with the potassium ferrocyanide of the stain and forms an
+    insoluble blue compound, Prussian blue. The shade runs from pale turquoise to deep navy with the amount of iron in
+    each cell. Reading rule: a brown pigment that turns blue with Perls is hemosiderin; carbon, lipofuscin, melanin and
+    bile pigment keep their own color. In lung tissue a Perls stain is the simplest proof of bleeding into the alveoli
+    in the past: the red cells are gone, but their iron is still inside the macrophages.
+alt:
+  it: >-
+    Micrografia di polmone con colorazione per il ferro a medio ingrandimento, su fondo chiaro con pareti alveolari rosa
+    tenue e piccoli nuclei rosa-rossi: diversi grandi ammassi di cellule tonde colorate dall'azzurro al blu notte, il più
+    grande in basso a sinistra, un altro al centro, una fascia in basso a destra e gruppi più piccoli negli angoli in
+    alto.
+  en: >-
+    Medium-power iron-stained micrograph of lung on a pale background with faint pink alveolar walls and small pink-red
+    nuclei: several large clusters of round cells stained turquoise to deep navy blue, the biggest at the lower left,
+    another in the center, a band at the lower right and smaller groups in the upper corners.
+annotations:
+  - id: blue-siderophage-cluster
+    label: { it: "Ammasso di macrofagi Perls-positivi (blu) in uno spazio alveolare", en: "Cluster of Perls-positive (blue) macrophages in an alveolar space" }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.35, 0.30, 0.42, 0.20, 0.50, 0.17, 0.54, 0.26, 0.53, 0.42, 0.47, 0.53, 0.38, 0.50, 0.34, 0.40]
+  - id: single-blue-macrophage
+    label: { it: "Macrofago isolato blu notte: carico di ferro elevato", en: "Single macrophage stained deep navy: a heavy iron load" }
+    revealOrder: 2
+    shape: { type: circle, coords: [0.300, 0.242, 0.012] }
+  - id: alveolar-walls-no-iron
+    label: { it: "Pareti alveolari: nuclei rosa, quasi nessun blu", en: "Alveolar walls: pink nuclei, almost no blue" }
+    revealOrder: 3
+    shape: { type: rect, coords: [0.80, 0.33, 0.14, 0.13] }

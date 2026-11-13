@@ -18,7 +18,7 @@ lenses:
   process: [pathologic-calcification, extracellular-accumulation, cell-death, necrosis]
   pattern: [dystrophic-calcification]
   presentation: [incidental-finding, mass-lesion]
-  marker: [special-stains, von-kossa, calcium-phosphate]
+  marker: [special-stains, von-kossa, alizarin-red, calcium-phosphate]
   group: [degenerative]
 learningObjectives:
   - it: "Definire la calcificazione distrofica e distinguerla dalla calcificazione metastatica per causa, sede e valori di calcemia."
@@ -117,6 +117,31 @@ chain:
     lab:
       it: "Mammografia: microcalcificazioni lineari e ramificate"
       en: "Mammography: linear, branching microcalcifications"
+examQuestions:
+  - it: "Mi parli della calcificazione distrofica: che cos'è, in quali contesti si forma e com'è di solito la calcemia?"
+    en: "Tell me about dystrophic calcification: what is it, in which settings does it form, and what is the serum calcium usually like?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Che cosa vede al microscopio in un focolaio di calcificazione distrofica e con quali colorazioni conferma che si tratta di calcio? E che cosa sono i corpi psammomatosi?"
+    en: "What do you see under the microscope in a focus of dystrophic calcification, and which stains confirm that it is calcium? And what are psammoma bodies?"
+    focus: [micro, ancillary]
+    level: 1
+  - it: "Perché un tessuto necrotico calcifica anche se la calcemia è normale? Mi spieghi come gli acidi grassi liberi innescano il deposito e perché la steatonecrosi ne è l'esempio più chiaro."
+    en: "Why does necrotic tissue calcify even when serum calcium is normal? Explain how free fatty acids start the deposit, and why fat necrosis is the clearest example."
+    focus: [pathogenesis]
+    level: 2
+  - it: "Mi parli della stenosi aortica calcifica: dove si formano i noduli calcifici e perché la si considera un processo attivo e non un semplice deposito su tessuto morto?"
+    en: "Tell me about calcific aortic stenosis: where do the calcified nodules form, and why is it seen as an active process rather than simple deposition on dead tissue?"
+    focus: [gross, pathogenesis]
+    level: 2
+  - it: "Come distingue la calcificazione distrofica da quella metastatica? Come classificherebbe il calcio di un infarto renale e quello della nefrocalcinosi di un paziente ipercalcemico?"
+    en: "How do you tell dystrophic from metastatic calcification? How would you classify the calcium in a renal infarct, and in the nephrocalcinosis of a hypercalcemic patient?"
+    focus: [definition, differential, traps]
+    level: 3
+  - it: "Una mammografia di screening mostra microcalcificazioni lineari e ramificate: che cosa sospetta, come si studiano in anatomia patologica e quali lesioni benigne possono calcificare anch'esse?"
+    en: "A screening mammogram shows linear, branching microcalcifications: what do you suspect, how does the pathologist study them, and which benign lesions can calcify too?"
+    focus: [diagnosis, ancillary, traps]
+    level: 3
 images:
   - id: dystrophic-calcification-gross-1
     role: gross
@@ -124,6 +149,13 @@ images:
   - id: dystrophic-calcification-micro-1
     role: micro
   - id: dystrophic-calcification-micro-2
+    role: micro
+  - id: dystrophic-calcification-gross-2
+    role: gross
+    pairWith: dystrophic-calcification-micro-3
+  - id: dystrophic-calcification-micro-3
+    role: micro
+  - id: dystrophic-calcification-micro-5
     role: micro
   - id: g01-calcification-types
     role: diagram
@@ -147,7 +179,7 @@ sources:
     pages: "1061"
   - source: rubin-8e
     chapter: "25"
-    pages: "1077, 1089"
+    pages: "1077-1078, 1089"
   - source: rubin-8e
     chapter: "27"
     pages: "1217"
@@ -157,5 +189,6 @@ sources:
   - source: rubin-8e
     chapter: "32"
     pages: "1513"
-lastUpdated: 2026-11-03
+  - source: bahrani-2020
+lastUpdated: 2026-11-09
 status: published

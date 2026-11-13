@@ -1,6 +1,6 @@
 ---
 lang: it
-translatedFrom: 9141cb9c09b4262f02e9cec118a1f3811b1066b8227d1468a58966145e61fd4d
+translatedFrom: 79379b722680118b9beaa073e01b1754cbd1bc56c8ffc4e8f572b8c57da1d6ce
 ---
 
 ## Definizione ed epidemiologia
@@ -15,13 +15,14 @@ La necrosi fibrinoide è una lesione dei vasi sanguigni danneggiati in cui le pr
 - **Vasculite da ipersensibilità (leucocitoclastica):** reazione a farmaci come aspirina, penicillina o tiazidici, oppure a infezioni, che interessa le venule superficiali della cute.<!--c:fibrinoid-necrosis-c008-->
 - **Ipertensione maligna** e altre microangiopatie trombotiche, come la sindrome emolitico-uremica, che hanno in comune la stessa lesione arteriolare.<!--c:fibrinoid-necrosis-c009-->
 - **Rigetto del trapianto mediato da anticorpi:** sia la forma iperacuta sia il rigetto umorale acuto.<!--c:fibrinoid-necrosis-c010-->
+- **Febbre reumatica e sclerosi sistemica:** il nodulo di Aschoff della miocardite reumatica ha un centro fibrinoide e, già prima che si formi, nella fase più precoce, il collagene del miocardio va incontro a degenerazione fibrinoide.<!--c:fibrinoid-necrosis-c083--> Nella sclerosi sistemica la necrosi fibrinoide è frequente nelle arteriole afferenti del rene.<!--c:fibrinoid-necrosis-c084-->
 - **Altri contesti:** le arterie spirali deciduali materne nella preeclampsia, nel quadro dell'aterosi acuta.<!--c:fibrinoid-necrosis-c011--> Anche il centro del nodulo reumatoide è fibrinoide.<!--c:fibrinoid-necrosis-c012-->
 
 ## Patogenesi
 
 Due strade molto diverse conducono allo stesso quadro: un endotelio che non trattiene più il plasma e una parete lesa impregnata di proteine plasmatiche, fibrina compresa.<!--c:fibrinoid-necrosis-c013-->
 
-**Via immunitaria.** I complessi antigene-anticorpo si formano in circolo o in situ e si localizzano nella parete dei piccoli vasi, dove fissano il complemento.<!--c:fibrinoid-necrosis-c014--> C3a e C5a aumentano la permeabilità dei vasi, e il C5a richiama anche i neutrofili.<!--c:fibrinoid-necrosis-c015--> Il danno parietale è opera dei prodotti dei neutrofili (proteasi, radicali dell'ossigeno, eicosanoidi), rilasciati quando queste cellule incontrano o inglobano gli immunocomplessi.<!--c:fibrinoid-necrosis-c016--> Nel modello di Arthus, nel giro di 2-10 ore i neutrofili affollano la parete danneggiata, edema ed emorragia si estendono al tessuto circostante e la fibrina conferisce l'aspetto fibrinoide.<!--c:fibrinoid-necrosis-c017--> Nelle vasculiti ANCA-associate i neutrofili preattivati espongono sulla superficie la mieloperossidasi o la proteinasi 3; il legame degli ANCA li attiva e i prodotti dei loro granuli danneggiano l'endotelio.<!--c:fibrinoid-necrosis-c018-->
+**Via immunitaria.** I complessi antigene-anticorpo si formano in circolo o in situ e si localizzano nella parete dei piccoli vasi, dove fissano il complemento.<!--c:fibrinoid-necrosis-c014--> C3a e C5a aumentano la permeabilità dei vasi, e il C5a richiama anche i neutrofili.<!--c:fibrinoid-necrosis-c015--> Il danno parietale è opera dei prodotti dei neutrofili (proteasi, radicali dell'ossigeno, eicosanoidi), rilasciati quando queste cellule incontrano o inglobano gli immunocomplessi.<!--c:fibrinoid-necrosis-c016--> La reazione di Arthus sperimentale riproduce questa via: un antigene iniettato nella cute di un soggetto già immunizzato incontra gli anticorpi circolanti nella parete dei piccoli vasi del derma e, nel giro di 2-10 ore, vi si accumula fibrina, che dà l'aspetto fibrinoide, mentre i neutrofili affollano le pareti danneggiate.<!--c:fibrinoid-necrosis-c017--> Nelle vasculiti ANCA-associate i neutrofili preattivati espongono sulla superficie la mieloperossidasi o la proteinasi 3; il legame degli ANCA li attiva e i prodotti dei loro granuli danneggiano l'endotelio.<!--c:fibrinoid-necrosis-c018-->
 
 **Via emodinamica.** Nell'ipertensione maligna si ritiene che la pressione molto elevata all'interno di piccoli vasi ristretti danneggi l'endotelio.<!--c:fibrinoid-necrosis-c019--> Il risultato finale è una parete imbevuta di plasma e fibrina: i miociti della media muoiono, il segmento indebolito si sfianca e il rivestimento endoteliale interrotto lascia passare le proteine.<!--c:fibrinoid-necrosis-c020-->
 
@@ -32,7 +33,7 @@ Due strade molto diverse conducono allo stesso quadro: un endotelio che non trat
 
 ## Morfologia microscopica
 
-- **Il deposito:** una banda omogenea, sfumata, intensamente eosinofila, che cancella la normale stratificazione della parete; nelle arterie la tonaca media e i tessuti adiacenti si fondono in una massa priva di struttura.<!--c:fibrinoid-necrosis-c023-->
+- **Il deposito:** una banda di colore rosa intenso, priva di qualsiasi struttura riconoscibile, che nasconde la normale stratificazione della parete; in un segmento arterioso necrotico non si riesce più a distinguere dove finisca la tonaca media e dove cominci il tessuto circostante.<!--c:fibrinoid-necrosis-c023-->
 - **Infiammazione circostante (vasculite):** neutrofili, linfociti, plasmacellule e macrofagi, talvolta con molti eosinofili; l'infiltrato interessa spesso l'intera avventizia.<!--c:fibrinoid-necrosis-c024-->
 - **Leucocitoclasia:** nella vasculite cutanea dei piccoli vasi la parete delle venule presenta necrosi fibrinoide con infiammazione acuta e «polvere nucleare» derivata dalla frammentazione dei neutrofili.<!--c:fibrinoid-necrosis-c025-->
 - **Ipertensione maligna:** alla necrosi fibrinoide delle arteriole fanno presto seguito strati concentrici di cellule muscolari lisce in proliferazione (lesione **a bulbo di cipolla**).<!--c:fibrinoid-necrosis-c026--> Le arterie del rene mostrano un ispessimento edematoso e mixoide dell'intima.<!--c:fibrinoid-necrosis-c027-->
@@ -41,11 +42,15 @@ Due strade molto diverse conducono allo stesso quadro: un endotelio che non trat
 
 ## Colorazioni speciali, IIC e reperti molecolari
 
-- La massa eosinofila confluente della lesione poliarteritica è positiva alle colorazioni per la fibrina.<!--c:fibrinoid-necrosis-c030-->
-- Con la tricromica di Masson la necrosi fibrinoide delle arteriole si colora in rosso.<!--c:fibrinoid-necrosis-c031-->
-- All'immunofluorescenza diretta su biopsia risaltano la fibrina e le altre proteine plasmatiche intrappolate nella parete danneggiata.<!--c:fibrinoid-necrosis-c032-->
-- Nel rigetto del trapianto mediato da anticorpi il C4d depositato lungo i capillari peritubulari è indice di attivazione del complemento.<!--c:fibrinoid-necrosis-c033-->
-- Pattern ANCA: i P-ANCA sono diretti per lo più contro la mieloperossidasi, i C-ANCA soprattutto contro la proteinasi 3.<!--c:fibrinoid-necrosis-c034-->
+**Come si studia:**
+
+- **Campione:** la lesione si ritrova nelle biopsie dell'organo colpito, per esempio della cute con porpora palpabile, del rene nativo o trapiantato oppure, se si sospetta una neuropatia, del nervo surale insieme al muscolo gastrocnemio; può mostrarla anche la placenta di una gravidanza con preeclampsia.<!--c:fibrinoid-necrosis-c074--> Gli assoni degenerano quando il nervo perde il suo apporto di sangue: nella poliarterite nodosa con mononeurite multipla, la causa da cercare nella biopsia è la necrosi fibrinoide delle arterie epineurali.<!--c:fibrinoid-necrosis-c075-->
+- **EE:** in un vaso si controlla che il deposito rosa stia nella parete e non nel lume, poi si guarda ciò che lo circonda: neutrofili con polvere nucleare orientano verso una vasculite, strati concentrici di cellule muscolari lisce verso l'ipertensione maligna; fuori dai vasi, macrofagi a palizzata attorno a un centro fibrinoide orientano verso un nodulo reumatoide.<!--c:fibrinoid-necrosis-c076-->
+- **Colorazioni speciali:** la massa eosinofila confluente della lesione poliarteritica è positiva alle colorazioni per la fibrina.<!--c:fibrinoid-necrosis-c030--> Con una colorazione per la fibrina come la PTAH (ematossilina all'acido fosfotungstico) la fibrina appare viola intenso.<!--c:fibrinoid-necrosis-c077--> Con la tricromica di Masson la necrosi fibrinoide delle arteriole si colora in rosso.<!--c:fibrinoid-necrosis-c031--> Una colorazione per le fibre elastiche delinea la lamina elastica interna e quella esterna e mostra i tratti distrutti dalla vasculite, come nella granulomatosi con poliangioite.<!--c:fibrinoid-necrosis-c078-->
+- **Immunofluorescenza e immunoistochimica:** all'immunofluorescenza diretta su biopsia risaltano la fibrina e le altre proteine plasmatiche intrappolate nella parete danneggiata.<!--c:fibrinoid-necrosis-c032--> Nel rene il tipo di positività indica il meccanismo: depositi granulari di immunocomplessi (per lo più IgA nella porpora di Henoch–Schönlein), positività lineare per le IgG lungo la membrana basale glomerulare nella malattia anti-MBG, quasi nessuna immunoglobulina o frazione del complemento nelle forme ANCA-associate, che per questo si dicono pauci-immuni.<!--c:fibrinoid-necrosis-c079--> Nel rigetto del trapianto mediato da anticorpi il C4d depositato lungo i capillari peritubulari è indice di attivazione del complemento.<!--c:fibrinoid-necrosis-c033--> Il C4d si può dimostrare con l'immunofluorescenza o con l'immunoistochimica.<!--c:fibrinoid-necrosis-c080-->
+- **Microscopia elettronica:** lo stesso passaggio di proteine plasmatiche (insudazione) si vede anche dentro il glomerulo, dove le proteine penetrate sotto l'endotelio danneggiato formano una banda chiara (elettron-trasparente) che restringe il lume capillare, nell'ipertensione maligna come nelle altre microangiopatie trombotiche.<!--c:fibrinoid-necrosis-c081-->
+- **Sierologia (ANCA):** i P-ANCA sono diretti per lo più contro la mieloperossidasi, i C-ANCA soprattutto contro la proteinasi 3.<!--c:fibrinoid-necrosis-c034-->
+- **Il quadro, non la causa:** l'ipertensione maligna e la sindrome emolitico-uremica producono le stesse lesioni renali, per cui la biopsia definisce il quadro (microangiopatia trombotica), mentre la causa si ricava dal contesto clinico, per esempio da una precedente diarrea emorragica o da un farmaco come la ciclosporina.<!--c:fibrinoid-necrosis-c082-->
 
 ## Presentazione clinica
 
@@ -64,12 +69,12 @@ I sintomi dipendono dalla malattia di base e dai vasi colpiti.<!--c:fibrinoid-ne
 - **Microangiopatia trombotica:** anemia emolitica Coombs-negativa con schistociti, associata a piastrinopenia.<!--c:fibrinoid-necrosis-c044-->
 - **Sierologia ANCA:** in alcuni pazienti il titolo anticorpale segue l'attività della malattia; la poliangioite microscopica è fortemente associata ai P-ANCA.<!--c:fibrinoid-necrosis-c045-->
 
-<aside class="sources-differ">Le fonti divergono: i testi meno recenti definiscono l'ipertensione maligna in base a una pressione diastolica superiore a 130 mmHg, anziché alla soglia di ≥180/≥120 mmHg.<!--c:fibrinoid-necrosis-c073--></aside>
+<aside class="sources-differ">Le fonti divergono: invece della soglia di ≥180/≥120 mmHg, il capitolo sul rene dello stesso testo di riferimento usa come criterio abituale una pressione diastolica superiore a 130 mmHg, insieme al danno oculare e renale, e aggiunge che nessun valore pressorio, da solo, definisce la condizione.<!--c:fibrinoid-necrosis-c073--></aside>
 
 ## Complicanze e prognosi
 
 - La **trombosi** dei segmenti lesi provoca **infarti** negli organi irrorati.<!--c:fibrinoid-necrosis-c046-->
-- **Aneurismi:** un'emorragia fatale può seguire la rottura dei piccoli aneurismi (meno di 0,5 cm) che la poliarterite nodosa lascia nelle arterie di rene, cuore ed encefalo.<!--c:fibrinoid-necrosis-c047-->
+- **Aneurismi:** un'emorragia fatale può seguire la rottura dei piccoli aneurismi (meno di 0,5 cm) che la poliarterite nodosa lascia nelle arterie degli organi, per esempio del rene o del cuore.<!--c:fibrinoid-necrosis-c047-->
 - **Guarigione:** una volta rimossi i detriti, la tonaca media è sostituita da tessuto cicatriziale e le lamine elastiche restano interrotte.<!--c:fibrinoid-necrosis-c048-->
 - **Ipertensione maligna:** le lesioni vascolari prendono il nome di arteriosclerosi o arteriolosclerosi maligna e, nel rene, di nefrosclerosi maligna.<!--c:fibrinoid-necrosis-c049--> Un abbassamento deciso della pressione di solito la tiene sotto controllo; se invece persiste, la funzione renale si deteriora progressivamente.<!--c:fibrinoid-necrosis-c050-->
 - **Poliarterite nodosa:** steroidi e ciclofosfamide portano la maggior parte dei pazienti alla remissione o alla guarigione, mentre la malattia non trattata è per lo più letale.<!--c:fibrinoid-necrosis-c051-->
@@ -81,7 +86,7 @@ I sintomi dipendono dalla malattia di base e dai vasi colpiti.<!--c:fibrinoid-ne
 | Entità | Caratteristiche distintive | Esame chiave |
 |---|---|---|
 | [[coagulative-necrosis]] | Morte a carta geografica delle cellule parenchimali, che conservano profili «fantasma», anziché un deposito proteico nella parete di un vaso.<!--c:fibrinoid-necrosis-c054--> | Sede: area di tessuto oppure parete del vaso |
-| Arteriolosclerosi ialina | Tipica dell'ipertensione benigna: la parete arteriolare diventa un anello spesso e vitreo, con poche cellule muscolari lisce residue, per lo più alla periferia.<!--c:fibrinoid-necrosis-c055--> | Tricromica di Masson: il fibrinoide è rosso acceso con neutrofili e polvere nucleare, la ialina è più pallida e acellulare; andamento dell'ipertensione |
+| Arteriolosclerosi ialina | Tipica dell'ipertensione benigna: le cellule muscolari lisce dell'arteriola si riducono di numero o vengono spinte verso il margine esterno, mentre nella parete si accumula materiale ialino rosa e vitreo, fino a formare un anello concentrico spesso.<!--c:fibrinoid-necrosis-c055--> | Andamento dell'ipertensione; parete necrotica oppure anello spesso e vitreo |
 | [[amyloidosis]] | Deposito extracellulare di fibrille di proteine mal ripiegate, che può interessare la parete delle arterie.<!--c:fibrinoid-necrosis-c056--> | Rosso Congo con birifrangenza rosso-verde in luce polarizzata |
 | [[caseous-necrosis]] | Detrito granulare grossolano al centro di granulomi, tipicamente tubercolari.<!--c:fibrinoid-necrosis-c057--> Un nodulo reumatoide, con il suo nucleo fibrinoide e i macrofagi a palizzata, può somigliare a un granuloma.<!--c:fibrinoid-necrosis-c058--> | Contesto clinico; colorazioni per micobatteri |
 | Trombo di fibrina | La fibrina si trova nel lume del vaso: è una lesione distinta, che spesso accompagna la necrosi fibrinoide.<!--c:fibrinoid-necrosis-c059--> | Sede: lume oppure parete |

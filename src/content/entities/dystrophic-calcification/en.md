@@ -4,7 +4,7 @@ lang: en
 
 ## Definition and epidemiology
 
-Dystrophic calcification is the deposition of calcium salts, outside cells, in tissue that has been injured or has died.<!--c:dystrophic-calcification-c001--> Its starting point is local tissue damage, whereas metastatic calcification starts from a systemic disorder of calcium/phosphate (hypercalcemia and/or hyperphosphatemia); in the dystrophic form serum calcium is typically normal.<!--c:dystrophic-calcification-c002--> The mineral laid down is calcium hydroxyapatite, the same mineral found in bone and teeth.<!--c:dystrophic-calcification-c003--> It can arise in many kinds of abnormal soft tissue: tumors, degenerative lesions such as arteriosclerosis, and areas of trauma.<!--c:dystrophic-calcification-c004-->
+Dystrophic calcification is the deposition of calcium salts, outside cells, in tissue that has been injured or has died.<!--c:dystrophic-calcification-c001--> Its starting point is local tissue damage, whereas metastatic calcification starts from a systemic disorder of calcium/phosphate (hypercalcemia and/or hyperphosphatemia); in the dystrophic form serum calcium is typically normal.<!--c:dystrophic-calcification-c002--> The mineral laid down is calcium hydroxyapatite, the same mineral found in bone and teeth.<!--c:dystrophic-calcification-c003--> Tumors and sites of trauma, like any other abnormal or damaged soft tissue, can calcify in this way.<!--c:dystrophic-calcification-c004-->
 
 ## Etiology and risk factors
 
@@ -19,19 +19,19 @@ Any process that kills or damages tissue can be followed by dystrophic calcifica
 - **Arterial media:** Mönckeberg medial sclerosis in older people, mainly in the arteries of the limbs.<!--c:dystrophic-calcification-c011-->
 - **Tumors:** necrotic tumor tissue and fast cell turnover, for example in breast cancer.<!--c:dystrophic-calcification-c012-->
 - **Infection before birth:** some intrauterine infections leave small calcifications in the infant brain.<!--c:dystrophic-calcification-c013-->
-- **Loss of neurologic function:** paralyzed regions, as in quadriplegia or hemiplegia, are prone to soft-tissue calcification.<!--c:dystrophic-calcification-c014-->
+- **Paralysis:** soft tissues calcify more easily in parts of the body paralyzed by hemiplegia or quadriplegia.<!--c:dystrophic-calcification-c014-->
 
 ## Pathogenesis
 
-**Calcium enters dying cells.** A living cell keeps cytosolic calcium far below extracellular levels; once it is injured beyond repair it loses this gradient and calcium flows in.<!--c:dystrophic-calcification-c015--> Inside the cell, this calcium is seen only as deposits within mitochondria.<!--c:dystrophic-calcification-c016-->
+**Calcium enters dying cells.** A living cell keeps cytosolic calcium far below extracellular levels; once it is injured beyond repair it loses this gradient and calcium flows in.<!--c:dystrophic-calcification-c015--> The mitochondria are the only place in the cell where this calcium becomes visible.<!--c:dystrophic-calcification-c016-->
 
 **Fatty acids act as the seed.** Membrane lipids of dead cells yield free fatty acids, which capture calcium and act as a nucleus for precipitation.<!--c:dystrophic-calcification-c017--> Fat necrosis shows this most clearly: lipases release fatty acids from adipocyte triglycerides, and these combine with calcium to form insoluble soaps (saponification).<!--c:dystrophic-calcification-c018-->
 
-**Not always passive.** The full mechanism is still unclear, but proteins that normally drive bone mineralization, such as osteopontin, osteonectin and osteocalcin, may take part.<!--c:dystrophic-calcification-c019--> In the aortic valve, interstitial cells acquire an osteoblast-like phenotype and actively mineralize the matrix, under the influence of oxidized LDL, TGF-β and osteopontin.<!--c:dystrophic-calcification-c020--> Years of turbulent flow across the valve drive this process.<!--c:dystrophic-calcification-c021-->
+**Not always passive.** Osteopontin and other proteins that build normal bone may take part, although the full mechanism is still not understood.<!--c:dystrophic-calcification-c019--> In the aortic valve, interstitial cells take on osteoblast-like (bone-forming) features and mineralize the matrix themselves; oxidized LDL and TGF-β are among the signals that drive this change.<!--c:dystrophic-calcification-c020--> The driving force is long-standing turbulence of the blood as it crosses the valve.<!--c:dystrophic-calcification-c021-->
 
 ## Gross morphology
 
-Deposits are often visible and palpable, from fine, gritty particles to hard, stone-like masses.<!--c:dystrophic-calcification-c022--> Fat necrosis appears as chalky white areas within fat.<!--c:dystrophic-calcification-c023--> In calcific aortic stenosis, calcified nodules cluster in the lower half of each cusp on its sinus side and usually spare the free edge.<!--c:dystrophic-calcification-c024--> In degenerative aortic stenosis the commissures are not fused, unlike in rheumatic disease.<!--c:dystrophic-calcification-c025--> Arteries with Mönckeberg sclerosis are hard and dilated.<!--c:dystrophic-calcification-c026-->
+To the touch the deposits range from fine grains to hard, stony masses, and they are often visible to the naked eye.<!--c:dystrophic-calcification-c022--> Fat necrosis appears as chalky white areas within fat.<!--c:dystrophic-calcification-c023--> In calcific aortic stenosis the free edge of each cusp is usually spared; the calcified nodules lie on the side of the cusp that faces the sinus of Valsalva, in its basal half.<!--c:dystrophic-calcification-c024--> In degenerative aortic stenosis the commissures are not fused, unlike in rheumatic disease.<!--c:dystrophic-calcification-c025--> Arteries with Mönckeberg sclerosis are hard and dilated.<!--c:dystrophic-calcification-c026-->
 
 ## Microscopic morphology
 
@@ -42,15 +42,19 @@ Deposits are often visible and palpable, from fine, gritty particles to hard, st
 
 ## Special stains, IHC and molecular findings
 
-- **Hematoxylin** stains calcium deposits deep blue.<!--c:dystrophic-calcification-c032-->
-- The **von Kossa** stain is more specific and colors the deposits black.<!--c:dystrophic-calcification-c033-->
-- No IHC or molecular test is needed for the diagnosis.
+**How it is studied:**
+
+- **Breast core biopsy:** calcifications seen on a mammogram are sampled with core needle biopsies aimed at them; besides carcinoma, these biopsies commonly show benign lesions, such as sclerosing adenosis, which frequently calcifies, or columnar cell lesions.<!--c:dystrophic-calcification-c065--> An X-ray of the cores shows whether the calcifications are inside them.<!--c:dystrophic-calcification-c066-->
+- **H&E:** hematoxylin stains calcium deposits deep blue.<!--c:dystrophic-calcification-c032-->
+- **Calcium stains:** the **von Kossa** stain is more specific and colors the deposits black.<!--c:dystrophic-calcification-c033--> **Alizarin red** is another stain for calcium; like von Kossa, it helps to bring out small or doubtful deposits.<!--c:dystrophic-calcification-c067-->
+- **Electron microscopy:** in dead cells the mitochondria are swollen and calcified.<!--c:dystrophic-calcification-c068-->
+- **IHC and molecular tests:** none is needed for the diagnosis.
 
 ## Clinical presentation
 
 - **Often silent:** calcified tuberculous lesions in the lung or lymph nodes may have no functional effect.<!--c:dystrophic-calcification-c034-->
-- **Loss of flexibility:** a calcified aortic or mitral valve may not open fully and obstructs blood flow.<!--c:dystrophic-calcification-c035--> Severe aortic stenosis produces striking concentric left ventricular hypertrophy, and the functional problems usually appear after age 60.<!--c:dystrophic-calcification-c036-->
-- **Vessels:** calcified atherosclerotic coronary arteries may reduce oxygen delivery to the heart.<!--c:dystrophic-calcification-c037--> Mönckeberg sclerosis, by contrast, usually causes no significant impairment.<!--c:dystrophic-calcification-c038-->
+- **Loss of flexibility:** a calcified aortic or mitral valve may not open fully and obstructs blood flow.<!--c:dystrophic-calcification-c035--> Marked concentric hypertrophy of the left ventricle follows once the stenosis becomes severe, and the valve usually starts to cause functional problems after the age of 60.<!--c:dystrophic-calcification-c036-->
+- **Vessels:** when coronary atheromas calcify, the myocardium may receive less oxygen.<!--c:dystrophic-calcification-c037--> Mönckeberg sclerosis, by contrast, usually causes no significant impairment.<!--c:dystrophic-calcification-c038-->
 - **Breast:** fat necrosis can form a hard mass that mimics carcinoma, especially once it has calcified.<!--c:dystrophic-calcification-c039-->
 
 ## Diagnosis, key lab and imaging
@@ -63,15 +67,15 @@ Deposits are often visible and palpable, from fine, gritty particles to hard, st
 ## Complications and prognosis
 
 - Consequences depend on location: the same deposit is harmless in a healed tuberculous node and disabling in a heart valve.<!--c:dystrophic-calcification-c044-->
-- Calcific aortic stenosis leads to left ventricular hypertrophy and then dilation and failure; valve replacement works well if done before ventricular damage becomes irreversible.<!--c:dystrophic-calcification-c045-->
+- Valve replacement gives excellent results as long as the ventricle can still recover; a hypertrophied left ventricle that goes untreated too long ends up dilated and failing.<!--c:dystrophic-calcification-c045-->
 - Although statins slow atherosclerosis, they have not been shown to stop valve calcification.<!--c:dystrophic-calcification-c046-->
 
 ## Differential diagnosis
 
 | Entity | Discriminating features | Key test |
 |---|---|---|
-| [[metastatic-calcification]] | Calcium deposits in normal tissues such as alveolar septa, renal tubules and vessels, caused by a raised calcium-phosphate product (hypercalcemia or hyperphosphatemia; e.g. chronic renal failure, vitamin D excess, primary hyperparathyroidism).<!--c:dystrophic-calcification-c047--> | Serum calcium and phosphate |
-| Calcium-containing stones | Calcium precipitates in supersaturated fluids around an organic nidus in the biliary tract, renal pelvis or bladder.<!--c:dystrophic-calcification-c048--> | Imaging of the duct or collecting system |
+| [[metastatic-calcification]] | Calcium deposits in normal tissue, for example the alveolar walls of the lung or the kidney, because the calcium-phosphate product is raised (hypercalcemia or hyperphosphatemia), as in chronic renal failure or primary hyperparathyroidism.<!--c:dystrophic-calcification-c047--> | Serum calcium and phosphate |
+| Calcium-containing stones | An organic core (nidus) inside the biliary or urinary tract collects calcium from a fluid that is supersaturated with it.<!--c:dystrophic-calcification-c048--> | Imaging of the duct or collecting system |
 | Heterotopic ossification | True bone forms in soft tissue, with a spicular or trabecular pattern on radiographs.<!--c:dystrophic-calcification-c049--> | Radiography; histology shows bone with osteoblasts |
 
 ## High-yield summary
@@ -87,6 +91,7 @@ Deposits are often visible and palpable, from fine, gritty particles to hard, st
 
 - **Dystrophic does not mean hypercalcemic.** Calcium metabolism is normal; the metastatic form is defined by a systemic disorder of calcium/phosphate (hypercalcemia and/or hyperphosphatemia).<!--c:dystrophic-calcification-c056-->
 - Metastatic calcification hits healthy tissue; dystrophic calcification needs prior tissue damage.<!--c:dystrophic-calcification-c057-->
+- **The organ does not tell the type.** In the kidney, calcium laid down in an infarct or in cortical necrosis is dystrophic, whereas the nephrocalcinosis of hypercalcemic patients is metastatic.<!--c:dystrophic-calcification-c069-->
 - Valve calcification is not just passive mineral on dead tissue: valve cells actively mineralize the matrix.<!--c:dystrophic-calcification-c058-->
 - Calcification is not ossification: calcified soft tissue looks amorphous on radiographs, whereas heterotopic bone has trabeculae.<!--c:dystrophic-calcification-c059-->
 - A calcified breast lump is not automatically cancer: fat necrosis can calcify and mimic a tumor.<!--c:dystrophic-calcification-c060-->

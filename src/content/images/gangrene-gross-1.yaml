@@ -1,0 +1,89 @@
+# License check (2026-11-07): Commons file page {{Information}} gives Source {{own}}, Author [[User:Herecomesdoc]],
+# license {{self|cc-by-sa-3.0}}; extmetadata LicenseShortName "CC BY-SA 3.0", AttributionRequired true, no
+# Restrictions. Uploaded by the author himself on 2013-04-25; his other uploads are operative and specimen photographs
+# from the same surgical practice, which supports "own work". CC BY-SA is approved as a class by owner decision O7
+# (plan/v2-plan.md, 2026-11-03), hence ownerApproved: true. Privacy: the file page shows camera coordinates (a
+# {{Location dec}} template); our copy is re-encoded without any metadata. The photograph shows the open abdomen,
+# drapes, retractors and the gloved hands and gown of a team member: no face and nothing that identifies the patient.
+# Classed as gross because it shows the organ itself to the naked eye, as an operative view. Re-checked 2026-11-08:
+# licence, author and description ("Volvulus with gangrene of the sigmoid") unchanged on the file page; our file has
+# no metadata.
+id: gangrene-gross-1
+file: gangrene-gross-1.jpg
+kind: gross
+sourceUrl: https://commons.wikimedia.org/wiki/File:Volvulus_(Dickdarm).JPG
+author: Herecomesdoc
+license: CC-BY-SA-3.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/3.0/
+retrievedAt: 2026-11-07
+modifications:
+  it: >-
+    Ridotta dall'originale di 3264 × 2448 px a 1600 × 1200 px e ricodificata in JPEG senza metadati (comprese le
+    coordinate geografiche della fotocamera). Nessun ritaglio, nessuna modifica dei colori.
+  en: >-
+    Downscaled from the 3264 × 2448 px original to 1600 × 1200 px and re-encoded as JPEG without metadata (the
+    camera's location data included). No crop, no color change.
+attributionText: "Herecomesdoc, own work, via Wikimedia Commons, CC BY-SA 3.0"
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+orientation:
+  it: "Veduta intraoperatoria dell'addome aperto: l'ansa gangrenosa occupa il centro, l'intestino tenue sano curva sotto di essa."
+  en: "Operative view into the open abdomen: the gangrenous loop fills the centre and healthy small bowel curves beneath it."
+lookFor:
+  it: "Confronta i due colori: il rosa lucido dell'intestino tenue vivo e il grigio-verde chiazzato di scuro dell'ansa morta."
+  en: "Compare the two colours: the glossy pink of the living small bowel and the grey-green, dark-mottled colour of the dead loop."
+caption:
+  it: >-
+    Intervento per volvolo del sigma con gangrena: l'ansa torta è stata estratta dall'addome aperto e sotto di essa si
+    vede un'ansa di intestino tenue sano. Parti dal contrasto di colore. Il tenue è rosa e lucido, il colore di una
+    parete viva e ben perfusa. L'ansa del sigma è enormemente distesa e grigio-verdastra, chiazzata di zone grigio
+    scuro o nero-violacee, più cupe in basso a destra; la parete è così stirata e sottile da lasciar intravedere i
+    vasi. Le piccole appendici di grasso giallo sulla superficie (appendici epiploiche) ricordano che si tratta di
+    colon. Quando un'ansa ruota attorno all'asse del proprio mesentere, i vasi che vi decorrono vengono strozzati con
+    essa: le vene, a parete sottile, si chiudono per prime, così il sangue continua ad arrivare ma non riesce a
+    defluire, finché cede anche l'afflusso arterioso. Inoltre l'ansa torta resta chiusa a entrambe le estremità, e gas
+    e liquidi la distendono. Il risultato è un infarto emorragico dell'intero spessore della parete: è questo che si
+    intende per gangrena dell'intestino. La micrografia in EE di un'ansa di tenue torta, in questa scheda, mostra lo
+    stesso processo: sangue in tutti gli strati e vasi dilatati, pieni di emazie. L'intestino morto non trattiene più i
+    batteri intestinali, quindi si infetta presto e può perforarsi: è un'emergenza chirurgica e il tratto gangrenoso
+    va resecato.
+  en: >-
+    Operation for volvulus of the sigmoid colon with gangrene: the twisted loop has been lifted out of the open
+    abdomen, and a loop of healthy small bowel lies beneath it. Start with the contrast in colour. The small bowel is
+    pink and glossy, the colour of a living, well-perfused wall. The sigmoid loop is hugely distended and grey-green,
+    mottled with dark grey to purple-black patches that are darkest at its lower right; its wall is stretched so thin
+    that vessels show through it. The small yellow tags of fat on its surface (appendices epiploicae) are a reminder
+    that this is colon. When a loop rotates around the axis of its own mesentery, the vessels running in that
+    mesentery are wrung along with it: the thin-walled veins close first, so blood keeps coming in but cannot drain
+    out, until the arterial inflow fails too. The twisted loop is also closed off at both ends, so gas and fluid build
+    up and distend it. The result is a hemorrhagic infarct of the whole thickness of the wall, which is what gangrene
+    of the bowel means. The H&E micrograph of a twisted small-bowel loop on this card shows the same process: blood
+    in every layer and vessels distended with red cells. Dead bowel no longer holds back the gut bacteria,
+    so it is soon infected and can perforate: this is a surgical emergency, and the gangrenous segment is resected.
+alt:
+  it: >-
+    Fotografia a colori scattata durante un intervento addominale: al centro un'ansa intestinale enormemente distesa,
+    lucida e grigio-verdastra con chiazze scure, tra divaricatori metallici; sotto di essa curva un'ansa rosa di
+    intestino tenue; sullo sfondo teli verdi, un camice blu e mani guantate.
+  en: >-
+    Colour photograph taken during abdominal surgery: a hugely distended, glossy, grey-green bowel loop with dark
+    mottling fills the centre between metal retractors; a pink loop of small bowel curves beneath it; green drapes, a
+    blue gown and gloved hands are in the background.
+annotations:
+  - id: gangrenous-loop
+    label: { it: "Ansa del sigma gangrenosa: distesa, grigio-verde, chiazzata", en: "Gangrenous sigmoid loop: distended, grey-green, mottled" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.30, 0.40, 0.36, 0.29, 0.45, 0.24, 0.55, 0.23, 0.65, 0.25, 0.75, 0.33, 0.82, 0.45, 0.845, 0.56, 0.82, 0.66, 0.74, 0.72, 0.60, 0.71, 0.45, 0.645, 0.34, 0.575, 0.29, 0.50] }
+  - id: darkest-area
+    label: { it: "Zona più scura, nero-violacea", en: "Darkest, purple-black area" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.76, 0.52, 0.80, 0.51, 0.835, 0.54, 0.84, 0.60, 0.81, 0.62, 0.77, 0.60] }
+  - id: appendices-epiploicae
+    label: { it: "Appendici epiploiche: è colon", en: "Appendices epiploicae: this is colon" }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.655, 0.31, 0.69, 0.29, 0.72, 0.33, 0.745, 0.40, 0.785, 0.45, 0.78, 0.49, 0.75, 0.47, 0.72, 0.42, 0.69, 0.38, 0.66, 0.35] }
+  - id: viable-small-bowel
+    label: { it: "Intestino tenue vitale, rosa e lucido", en: "Living small bowel, pink and glossy" }
+    revealOrder: 4
+    shape: { type: polygon, coords: [0.185, 0.56, 0.21, 0.51, 0.26, 0.50, 0.29, 0.53, 0.32, 0.60, 0.40, 0.655, 0.55, 0.705, 0.66, 0.735, 0.69, 0.77, 0.67, 0.83, 0.60, 0.86, 0.47, 0.86, 0.35, 0.81, 0.25, 0.76, 0.20, 0.70] }

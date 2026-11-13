@@ -1,0 +1,79 @@
+# License check (2026-11-07): same article and licence as fat-necrosis-micro-4 (PMC12596583, CC BY 4.0, © 2025
+# Sociedade Brasileira de Dermatologia, published by Elsevier España; no third-party credit in the Figure 3 legend).
+# Panel D of Figure 3, cut from the publisher's high-resolution file of the figure. Histology only; nothing
+# identifies the patient. The source names this panel "foci of calcification amid steatonecrosis" (von Kossa, ×400)
+# and calls the calcification incipient in the case description; it does not name the counterstain, so the caption
+# only describes the green background. The labels were placed by the agent. Facts checked against the source article
+# and rubin-8e ch. 1 p. 40, ch. 21 p. 903 and ch. 22 p. 965.
+id: fat-necrosis-micro-6
+file: fat-necrosis-micro-6.jpg
+kind: micro
+sourceUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC12596583/figure/fig0015/
+author: Rebecca Perez de Amorim, Laís Maria Bellaver de Almeida, Hélio Amante Miot, Juliano Vilaverde Schmitt
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-11-07
+modifications:
+  it: >-
+    Ritagliato il pannello D dalla Figura 3 dell'articolo, a partire dal file ad alta risoluzione della figura
+    pubblicato dall'editore (3341 × 2215 px); ridimensionato a 1600 × 1058 px e ricodificato in JPEG (qualità 85).
+    Nessuna modifica dei colori. La lettera D in alto a sinistra è l'etichetta del pannello nella figura pubblicata.
+  en: >-
+    Cropped panel D out of Figure 3 of the article, starting from the publisher's high-resolution file of the figure
+    (3341 × 2215 px); downscaled to 1600 × 1058 px and re-encoded as JPEG (quality 85). No colour change. The letter D
+    at the top left is the panel label of the published figure.
+attributionText: >-
+  Rebecca Perez de Amorim, Laís Maria Bellaver de Almeida, Hélio Amante Miot, Juliano Vilaverde Schmitt, "Pancreatic
+  panniculitis following endoscopic retrograde cholangiopancreatography (ERCP): a case report", Anais Brasileiros de
+  Dermatologia 2025;100(6):501211, doi:10.1016/j.abd.2025.501211, Figure 3 (panel D), © 2025 Sociedade Brasileira de
+  Dermatologia, published by Elsevier España, CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-07 }
+group: fat-necrosis-pancreatic-panniculitis
+stain: von Kossa
+magnification: high power (original magnification ×400)
+lookFor:
+  it: "Guarda i granuli neri dentro il lobulo di grasso necrotico, a fondo verde pallido: sono depositi di calcio."
+  en: "Look at the black granules inside the lobule of dead fat, on the pale green background: calcium deposits."
+caption:
+  it: >-
+    La stessa biopsia di pannicolite pancreatica colorata con il metodo di von Kossa, ingrandimento originale ×400: è
+    la colorazione speciale per il calcio, e qui mostra il calcio depositato nel grasso necrotico. I depositi di sali di calcio diventano
+    neri o bruno scuri, mentre il resto del tessuto resta su un fondo verde pallido. Parti dal centro: dentro un
+    lobulo di grasso morto c'è un ammasso di granuli neri, con qualche zolla più piccola più in basso e a destra. Gli
+    autori li indicano come focolai di calcificazione iniziale nel grasso necrotico. Leggi soltanto i granuli dentro
+    il lobulo; le strisce
+    scure più grossolane lungo il margine sinistro stanno fuori da esso. Perché conta: con l'ematossilina-eosina lo
+    stesso calcio appare solo come una tinta blu-viola (passa alle immagini in EE di questa biopsia), mentre la von
+    Kossa è il modo più specifico per metterlo in evidenza. È la stessa chimica che produce le chiazze bianco-gesso
+    della steatonecrosi intorno al pancreas e che, nella pancreatite acuta grave, può far scendere la calcemia.
+  en: >-
+    The same biopsy of pancreatic panniculitis stained by the von Kossa method, original magnification ×400: the
+    special stain for calcium, which here shows calcium deposited in the dead fat. Deposits of calcium salts turn black or dark
+    brown, while the rest of the tissue stays on a pale green background. Start in the centre: inside a lobule of
+    dead fat lies a cluster of black granules, with a few smaller clumps lower down and to the right. The authors
+    identify them as foci of early calcification in the necrotic fat. Read only the granules inside the lobule; the
+    coarser dark streaks along the left edge
+    lie outside it. Why this matters: on H&E the same calcium shows only as a blue-purple tint (switch to the H&E
+    views of this biopsy), whereas von Kossa is the more specific way to show it. It is the same chemistry that makes
+    the chalky white patches of fat necrosis around the pancreas and that, in severe acute pancreatitis, can lower
+    the blood calcium.
+alt:
+  it: >-
+    Micrografia in colorazione di von Kossa a forte ingrandimento, con la lettera D in alto a sinistra: a destra un
+    ampio lobulo a fondo verde pallido con, al centro, un ammasso di granuli neri e bruno scuri e alcune zolle nere
+    più piccole in basso a destra; a sinistra spazi chiari e strisce scure ondulate.
+  en: >-
+    High-power von Kossa micrograph with the letter D at the top left: on the right a large lobule on a pale green
+    background with, in its centre, a cluster of black and dark brown granules and a few smaller black clumps lower
+    right; on the left, clear spaces and dark wavy streaks.
+annotations:
+  - id: calcium-granules
+    label: { it: "Granuli neri von Kossa-positivi: calcio nel grasso necrotico", en: "Black von Kossa-positive granules: calcium in the necrotic fat" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.49, 0.27, 0.62, 0.27, 0.72, 0.35, 0.80, 0.40, 0.81, 0.48, 0.66, 0.49, 0.56, 0.50, 0.54, 0.60, 0.49, 0.60, 0.49, 0.45] }
+  - id: calcium-clumps-lower
+    label: { it: Zolle nere più piccole, en: Smaller black clumps }
+    revealOrder: 2
+    shape: { type: rect, coords: [0.655, 0.585, 0.08, 0.10] }

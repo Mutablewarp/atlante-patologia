@@ -1,0 +1,92 @@
+# License check (2026-11-08): Commons file page {{Information}} gives Source = Flickr photo 4961805859 (stream
+# "pulmonary_pathology", "Metastatic calcification Case 141"), Author = Yale Rosen; licence template {{cc-by-sa-2.0}},
+# confirmed by {{FlickreviewR}} (status passed, 2019-10-03, archived Flickr page); extmetadata LicenseShortName
+# "CC BY-SA 2.0", AttributionRequired true. The Flickr stream is the author's own, so the Commons transfer (by User:Netha
+# Hussain) opens no uploader/creator gap. CC BY-SA is approved as a class by owner decision O7 (plan/v2-plan.md,
+# 2026-11-03), hence ownerApproved: true. Histology only; nothing identifies the patient. Source description: metastatic
+# calcification of alveolar walls in an area of acute pneumonitis. The source names neither the stain nor the
+# magnification (H&E read from the colours; medium power judged from the field: red cells about 10 px across in 1280).
+# Same case and teaching set as metastatic-calcification-micro-3 (Flickr 4962399264): one group, low and medium power.
+# The black clump at lower right is called "probably anthracotic" by the agent, not by the source. Facts in the caption
+# checked against rubin-8e ch. 1 pp. 29-30 (metastatic versus dystrophic) and ch. 22 p. 965 (haematoxylin, von Kossa).
+id: metastatic-calcification-micro-4
+file: metastatic-calcification-micro-4.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Metastatic_calcification_Case_141_(4961805859).jpg
+author: Yale Rosen
+license: CC-BY-SA-2.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/2.0/
+retrievedAt: 2026-11-08
+modifications:
+  it: >-
+    Ricodifica dell'originale da 1280 × 960 px in JPEG (qualità 88), operazione che rimuove anche i metadati EXIF della
+    fotocamera; nessun ritaglio, nessun ridimensionamento, nessuna modifica dei colori. Questo adattamento è condiviso con
+    la stessa licenza (CC BY-SA 2.0).
+  en: >-
+    Re-encoded the 1280 × 960 px original as JPEG (quality 88), which also strips the camera EXIF metadata; no crop, no
+    resize, no colour change. This adaptation is shared under the same licence (CC BY-SA 2.0).
+attributionText: >-
+  Yale Rosen, "Metastatic calcification Case 141" (Flickr 4961805859), via Wikimedia Commons, CC BY-SA 2.0
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+group: metastatic-calcification-lung-rosen-141
+stain: H&E (not named by the source; read from the colours)
+magnification: medium power (not stated by the source; judged from the field)
+lookFor:
+  it: "Prima le bande granulose viola scuro (calcio), poi ciò che riempie gli alveoli (essudato)."
+  en: "First the granular dark purple bands (calcium), then what fills the alveoli (exudate)."
+caption:
+  it: >-
+    Lo stesso polmone a medio ingrandimento (EE a giudicare dai colori; la fonte non indica l'ingrandimento). Le linee
+    viola scuro del piccolo ingrandimento ora appaiono come bande spesse di materiale granuloso, quasi cristallino:
+    pareti alveolari così incrostate di sali di calcio da aver perso il loro profilo sottile. Alcuni depositi sono più
+    lisci e pallidi e attraversati da sottili fessure, tipiche di un minerale fragile spaccato dalla lama del microtomo.
+    Nell'alveolo al centro ci sono granulociti neutrofili con il nucleo lobato, emazie e filamenti rosa pallido di
+    fibrina: è la polmonite acuta che la fonte segnala in quest'area. Il piccolo grumo nero in basso a destra è con ogni
+    probabilità pigmento antracotico (polvere di carbone), frequente nel polmone dell'adulto: non è calcio, che in EE è
+    viola, non nero. Per l'esame: in EE i depositi di calcio sono basofili; per dimostrare che un deposito viola è calcio
+    si usa la von Kossa, che lo colora di nero (vedi l'immagine in von Kossa di questa scheda), oppure il rosso
+    alizarina. La fonte classifica questo polmone come calcificazione metastatica, e l'incrostazione diffusa delle pareti
+    alveolari e vascolari è coerente con questa forma; un singolo deposito, però, ha lo stesso aspetto nella
+    calcificazione distrofica, quindi la distinzione si basa sul contesto (tessuto prima sano, alterazione sistemica di
+    calcio o fosfato), non sul deposito in sé.
+  en: >-
+    The same lung at medium power (H&E judging by the colours; the source does not state the magnification). The dark
+    purple lines of the low-power view now resolve into thick bands of granular, almost crystalline material: alveolar
+    walls so heavily encrusted with calcium salts that their thin outline is lost. Some deposits look smoother and paler
+    and are crossed by fine cracks, typical of brittle mineral split by the microtome blade. In the alveolus at the
+    centre lie neutrophils with lobed nuclei, red cells and pale pink strands of fibrin: the acute pneumonitis that the
+    source reports in this area. The small black clump at the lower right is most probably anthracotic (coal-dust)
+    pigment, frequent in adult lungs: it is not calcium, which on H&E is purple, not black. Exam link: calcium deposits
+    are basophilic on H&E; to prove that a purple deposit is calcium, use von Kossa, which turns it black (see the von
+    Kossa image of this card), or alizarin red. The source classes this lung as metastatic calcification, and the
+    diffuse encrustation of alveolar and vessel walls fits that form; a single deposit, however, looks the same in
+    dystrophic calcification, so the distinction rests on the setting (previously healthy tissue, a systemic calcium or
+    phosphate disorder), not on the deposit itself.
+alt:
+  it: >-
+    Micrografia a medio ingrandimento in rosa e viola: bande spesse, granulose, viola-magenta scuro, alcune con fessure,
+    circondano uno spazio centrale che contiene piccole cellule con il nucleo lobato, globuli rossi e filamenti rosa
+    pallido; in basso a destra un piccolo grumo granuloso nero.
+  en: >-
+    Medium-power micrograph in pink and purple: thick, granular, dark purple-magenta bands, some with cracks, surround a
+    central space that contains small cells with lobed nuclei, red blood cells and pale pink strands; a small black
+    granular clump at the lower right.
+annotations:
+  - id: encrusted-alveolar-wall
+    label: { it: "Parete alveolare incrostata: calcio granuloso viola scuro", en: "Encrusted alveolar wall: granular dark purple calcium" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.31, 0.10, 0.42, 0.06, 0.53, 0.08, 0.565, 0.20, 0.545, 0.30, 0.45, 0.315, 0.36, 0.29, 0.31, 0.21] }
+  - id: alveolar-exudate
+    label: { it: "Essudato: neutrofili, emazie e filamenti di fibrina", en: "Exudate: neutrophils, red cells and fibrin strands" }
+    revealOrder: 2
+    shape: { type: rect, coords: [0.40, 0.40, 0.20, 0.22] }
+  - id: cracked-deposit
+    label: { it: "Deposito più liscio con fessure: minerale fragile spaccato al taglio", en: "Smoother deposit with cracks: brittle mineral split by the blade" }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.80, 0.47, 0.86, 0.44, 0.90, 0.52, 0.89, 0.66, 0.86, 0.73, 0.81, 0.72, 0.79, 0.60] }
+  - id: black-pigment
+    label: { it: "Pigmento nero, probabilmente antracotico: non è calcio", en: "Black pigment, probably anthracotic: not calcium" }
+    revealOrder: 4
+    shape: { type: rect, coords: [0.765, 0.895, 0.06, 0.08] }

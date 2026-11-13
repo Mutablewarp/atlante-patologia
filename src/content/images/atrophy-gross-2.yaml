@@ -1,0 +1,86 @@
+# License check (2026-11-04): Commons file page {{Information}} gives Source {{own}}, Author User:Hersenbank,
+# Date 2008-08-21, license {{self|GFDL|cc-by-sa-3.0,2.5,2.0,1.0}}; extmetadata LicenseShortName "CC BY-SA 3.0",
+# AttributionRequired true, no Restrictions. The account's only other upload, the same day, is "File:Logo NHB.jpg",
+# which supports an institutional own-work upload by a brain bank. No labels, names or other patient identifiers.
+# CC BY-SA is approved as a class by owner decision O7 (plan/v2-plan.md, 2026-11-03), hence ownerApproved: true.
+# The source states which brain is which: Alzheimer disease above, healthy brain below.
+id: atrophy-gross-2
+file: atrophy-gross-2.jpg
+kind: gross
+sourceUrl: https://commons.wikimedia.org/wiki/File:AD_versus_CO.jpg
+author: Hersenbank
+license: CC-BY-SA-3.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/3.0/
+retrievedAt: 2026-11-04
+modifications:
+  it: >-
+    Scaricato il JPEG originale in scala di grigi da 1004 × 1528 px e ricodificato come JPEG in scala di grigi
+    (qualità 85), operazione che rimuove i metadati EXIF e ICC e riduce il file da 654 KB a 145 KB. Nessun ritaglio,
+    nessun ridimensionamento, nessun'altra modifica. Questo adattamento è condiviso con la stessa licenza (CC BY-SA 3.0).
+  en: >-
+    Downloaded the original 1004 × 1528 px greyscale JPEG and re-encoded it as a greyscale JPEG (quality 85), which
+    strips the EXIF and ICC metadata and reduces the file from 654 KB to 145 KB. No crop, no resize, no other change.
+    This adaptation is shared under the same licence (CC BY-SA 3.0).
+attributionText: >-
+  Hersenbank, "AD versus CO", via Wikimedia Commons, CC BY-SA 3.0
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-04 }
+orientation:
+  it: "Veduta laterale di entrambi gli encefali, con il polo frontale a sinistra e il cervelletto in basso a destra."
+  en: "Lateral view of both brains, with the frontal pole on the left and the cerebellum at the lower right."
+lookFor:
+  it: "Confronta prima le dimensioni complessive, poi i due encefali giro per giro: spessore dei giri e ampiezza dei solchi."
+  en: "Compare overall size first, then the two brains gyrus by gyrus: width of the gyri and of the sulci."
+caption:
+  it: >-
+    Due encefali fotografati di lato in bianco e nero: in alto quello di un donatore con malattia di Alzheimer,
+    in basso un encefalo sano per il confronto. È l'atrofia vista dall'esterno; le sezioni coronali mostrano lo stesso
+    processo dall'interno, con corteccia assottigliata e ventricoli dilatati. Confronta prima le dimensioni: l'encefalo
+    con Alzheimer è nettamente più piccolo. Poi confronta la superficie. Nell'encefalo sano i giri sono pieni e
+    accostati, per cui i solchi appaiono come linee sottili; nell'encefalo con Alzheimer i giri sono assottigliati e i
+    solchi beanti su tutta la faccia laterale, in modo evidente nella parte anteriore e nel lobo temporale. Il
+    cervelletto, in basso a destra, ha un aspetto simile nei due casi: la perdita di tessuto riguarda la corteccia
+    cerebrale. È un'atrofia da perdita di cellule: i neuroni muoiono e non vengono sostituiti, quindi il danno non
+    regredisce. Nel vivente lo spazio lasciato dal tessuto perso si riempie di liquor e i ventricoli si dilatano
+    (idrocefalo ex vacuo). Attenzione: un certo assottigliamento dei giri accompagna anche l'invecchiamento normale,
+    perciò va giudicato rispetto a un encefalo di pari età e insieme al quadro clinico; l'encefalo edematoso ha invece
+    l'aspetto opposto, con giri appiattiti e solchi ristretti.
+  en: >-
+    Two brains photographed from the side in black and white: above, the brain of a donor with Alzheimer
+    disease; below, a healthy brain for comparison. This is atrophy seen from the outside; coronal slices show the
+    same process from the inside, with a thinned cortex and enlarged ventricles. Compare overall size first: the
+    Alzheimer brain is clearly smaller. Then compare the surface. In the healthy brain the gyri are plump and pressed
+    together, so the sulci appear as thin lines; in the Alzheimer brain the gyri are thinned and the sulci gape over
+    the whole lateral surface, most clearly toward the front and in the temporal lobe. The cerebellum, at the lower
+    right, looks much the same in both: the loss of tissue concerns the cerebral cortex. This is atrophy through loss
+    of cells: neurons die and are not replaced, so the damage does not reverse. In life the space left by the lost
+    tissue fills with cerebrospinal fluid and the ventricles enlarge (hydrocephalus ex vacuo). Pitfall: some thinning
+    of the gyri also comes with normal ageing, so it must be judged against a brain of the same age and together with
+    the clinical picture; an oedematous brain has the opposite look, with flattened gyri and narrowed sulci.
+alt:
+  it: >-
+    Fotografia in bianco e nero di due encefali visti di lato su fondo nero, uno sopra l'altro: quello in alto è
+    più piccolo, con giri sottili separati da solchi larghi e scuri; quello in basso è più grande, con giri pieni e
+    serrati e solchi stretti; in entrambi si vede in basso a destra il cervelletto con le sue lamelle.
+  en: >-
+    Black-and-white photograph of two brains seen from the side on a black background, one above the other: the
+    upper brain is smaller, with thin gyri separated by wide, dark sulci; the lower brain is larger, with plump,
+    closely packed gyri and narrow sulci; in both, the finely ridged cerebellum is visible at the lower right.
+annotations:
+  - id: alzheimer-brain
+    label: { it: "Alzheimer: encefalo più piccolo, giri sottili, solchi larghi", en: "Alzheimer disease: smaller brain, thin gyri, wide sulci" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.086, 0.20, 0.14, 0.13, 0.25, 0.06, 0.38, 0.022, 0.55, 0.03, 0.75, 0.07, 0.88, 0.11, 0.937, 0.16, 0.93, 0.20, 0.91, 0.27, 0.85, 0.33, 0.72, 0.36, 0.55, 0.36, 0.42, 0.375, 0.30, 0.36, 0.18, 0.36, 0.09, 0.33, 0.08, 0.25] }
+  - id: gaping-sulci
+    label: { it: "Giri assottigliati separati da solchi beanti", en: "Thinned gyri separated by gaping sulci" }
+    revealOrder: 2
+    shape: { type: rect, coords: [0.29, 0.05, 0.2, 0.15] }
+  - id: control-brain
+    label: { it: "Encefalo sano: giri pieni, solchi stretti", en: "Healthy brain: plump gyri, narrow sulci" }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.05, 0.72, 0.10, 0.64, 0.22, 0.58, 0.42, 0.553, 0.62, 0.56, 0.80, 0.60, 0.92, 0.66, 0.97, 0.73, 0.96, 0.80, 0.89, 0.86, 0.88, 0.95, 0.76, 0.985, 0.58, 0.975, 0.52, 0.945, 0.40, 0.94, 0.30, 0.915, 0.20, 0.87, 0.08, 0.83] }
+  - id: cerebellum
+    label: { it: "Cervelletto: aspetto simile nei due encefali", en: "Cerebellum: similar in the two brains" }
+    revealOrder: 4
+    shape: { type: polygon, coords: [0.62, 0.30, 0.70, 0.25, 0.80, 0.225, 0.91, 0.225, 0.90, 0.28, 0.84, 0.33, 0.75, 0.36, 0.66, 0.355] }

@@ -1,0 +1,90 @@
+# License check (2026-11-09): Commons file page {{Information}} gives Source {{own}}, Author [[User:JMGardner|Jerad M
+# Gardner, MD]], date 2011-05-05, license {{self|cc-by-sa-3.0}}; extmetadata LicenseShortName "CC BY-SA 3.0",
+# AttributionRequired true, no Restrictions. The file has one version, uploaded by JMGardner on 2011-05-06, so the
+# uploader is the creator. CC BY-SA is approved as a class by owner decision O7 (plan/v2-plan.md, 2026-11-03), hence
+# ownerApproved: true. Histology only; nothing identifies the patient. The file is used byte for byte (SHA-1
+# b73535e2… matches the Commons record). This is the candidate named first in the 2026-10-10 protein-quality-control
+# row of docs/MISSING_ASSETS.md. The source states the disease and the stain only: no genotype, no magnification, no
+# clinical setting, so the caption gives none of them and `magnification` is our reading of the field. Not grouped with
+# intracellular-accumulations-micro-2 or -micro-3: other authors and cases. Annotations placed by inspection on a
+# gridded copy of the file.
+id: protein-quality-control-micro-4
+file: protein-quality-control-micro-4.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Alpha-1_antitrypsin_deficiency.PAS_Diastase.jpg
+author: Jerad M Gardner, MD
+license: CC-BY-SA-3.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/3.0/
+retrievedAt: 2026-11-09
+modifications: none
+attributionText: >-
+  Jerad M Gardner, MD, "Alpha-1 antitrypsin deficiency.PAS Diastase", via Wikimedia Commons, CC BY-SA 3.0
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-09 }
+stain: "PAS after diastase digestion (PAS-D)"
+magnification: medium power
+orientation:
+  it: "Una banda di tessuto fibroso attraversa in diagonale la parte in basso a sinistra; il resto del campo è parenchima epatico."
+  en: "A band of fibrous tissue crosses the lower left of the field diagonally; the rest is liver parenchyma."
+lookFor:
+  it: "Cerca i globuli magenta dentro gli epatociti e distinguili dai nuclei blu: dopo la diastasi, niente di magenta può essere glicogeno."
+  en: "Look for the magenta globules inside the hepatocytes and tell them from the blue nuclei: after diastase, nothing magenta can be glycogen."
+caption:
+  it: >-
+    Biopsia epatica, deficit di α1-antitripsina (diagnosi della fonte), PAS dopo digestione con diastasi (PAS-D), medio
+    ingrandimento. Ricorda che cosa ha già fatto la colorazione: la diastasi ha digerito il glicogeno prima della
+    reazione PAS, quindi ciò che resta magenta non può essere glicogeno. Orientati sulla banda di tessuto fibroso che
+    attraversa in diagonale la parte in basso a sinistra, con cellule fusate e piccoli nuclei rotondi scuri; il resto
+    del campo è parenchima epatico. Poi guarda dentro gli epatociti: molti sono pieni di globuli rotondi magenta, da
+    puntini fini a gocce ben distinte, altri ne contengono pochi. Non confonderli con i nuclei, che sono blu e uno per
+    cellula. I globuli sono la traccia visibile del controllo di qualità del reticolo endoplasmatico: ognuno è
+    α1-antitripsina, una proteina destinata alla secrezione, trattenuta in cisterne dilatate del reticolo perché la
+    maggior parte delle molecole mutate non raggiunge la forma corretta e quindi non passa al Golgi e al sangue. Così una sola
+    malattia colpisce due organi. Nel fegato il punto d'arrivo può essere la cirrosi, dopo un danno cronico di epatociti
+    che non riescono a esportare il proprio prodotto; nel polmone può comparire l'enfisema, perché arriva troppo poca
+    antiproteasi per tenere a freno l'elastasi dei neutrofili. In EE gli stessi globuli sono solo debolmente eosinofili
+    e sfuggono facilmente: per questo la colorazione da chiedere è la PAS-D. Confronta la fibrosi cistica: lì la CFTR
+    mal ripiegata viene degradata invece che accumulata, e la malattia nasce dal canale che manca.
+  en: >-
+    Liver biopsy, α1-antitrypsin deficiency (the source's diagnosis), PAS after diastase digestion (PAS-D), medium
+    power. Remember what the stain has already done: diastase digested the glycogen before the PAS reaction, so whatever
+    is still magenta cannot be glycogen. Orient yourself on the band of fibrous tissue that crosses the lower left
+    diagonally, with spindle-shaped cells and small dark round nuclei; the rest of the field is liver parenchyma. Then
+    look into the hepatocytes: many are packed with round magenta globules, from fine dots to distinct droplets, while
+    others hold only a few. Do not mistake them for nuclei, which are blue and one per cell. The globules are the
+    visible trace of quality control in the endoplasmic reticulum: each one is α1-antitrypsin, a protein meant for
+    secretion, held in dilated ER cisternae because most mutant molecules fail to reach their correct shape and so are not
+    passed on to the Golgi and the blood. One disease thus hurts two organs. Cirrhosis can be the end point in the
+    liver, after chronic injury to hepatocytes that cannot export their own product; emphysema can follow in the lung,
+    where too little antiprotease arrives to hold neutrophil elastase in check. On H&E the same globules are only
+    faintly eosinophilic and easy to miss, which is why PAS-D is the stain to ask for. Compare cystic fibrosis, where
+    the misfolded CFTR is degraded rather than stored, so the disease comes from the missing channel.
+alt:
+  it: >-
+    Micrografia di fegato colorata con PAS-D a medio ingrandimento: grandi epatociti con nuclei blu, molti pieni di
+    globuli rotondi magenta di dimensioni diverse; una banda rosa-violacea di tessuto fibroso, con nuclei scuri fusati e
+    rotondi, attraversa in diagonale la parte in basso a sinistra del campo.
+  en: >-
+    PAS-D micrograph of liver at medium power: large hepatocytes with blue nuclei, many packed with round magenta
+    globules of different sizes; a pale pink-violet band of fibrous tissue with dark spindle-shaped and round nuclei
+    crosses the lower left of the field diagonally.
+annotations:
+  - id: globule-laden-hepatocyte
+    label: { it: Epatocita pieno di globuli PAS-D positivi, en: Hepatocyte packed with PAS-D-positive globules }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.227, 0.205, 0.227, 0.267, 0.198, 0.311, 0.156, 0.311, 0.127, 0.267, 0.127, 0.205, 0.156, 0.161, 0.198, 0.161]
+  - id: hepatocyte-nucleus
+    label: { it: "Nucleo (blu): non è un globulo", en: "Nucleus (blue): not a globule" }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.795, 0.108, 0.795, 0.126, 0.787, 0.138, 0.775, 0.138, 0.767, 0.126, 0.767, 0.108, 0.775, 0.096, 0.787, 0.096]
+  - id: fibrous-band
+    label: { it: Banda di tessuto fibroso, en: Band of fibrous tissue }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.0, 0.5, 0.1, 0.52, 0.2, 0.545, 0.25, 0.575, 0.322, 0.592, 0.372, 0.667, 0.417, 0.792, 0.494, 0.817, 0.561, 0.842, 0.639, 0.917, 0.672, 1.0, 0.572, 1.0, 0.55, 0.958, 0.494, 0.9, 0.417, 0.842, 0.317, 0.779, 0.25, 0.775, 0.2, 0.77, 0.12, 0.75, 0.05, 0.8, 0.0, 0.82]

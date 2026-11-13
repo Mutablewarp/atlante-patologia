@@ -14,16 +14,16 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: dysplasia-c003
     section: definition
-    statement: "Dysplasia is a precancerous stage and, in organs such as the cervix, prostate and bladder, belongs to the intraepithelial neoplasia spectrum."
+    statement: "Dysplasia is a precancerous stage and, in the cervix and the prostate for example, falls within the intraepithelial neoplasia spectrum."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: dysplasia-c004
     section: definition
     statement: "In developmental pathology, dysplasia means abnormal histogenesis, a meaning distinct from precancerous epithelial dysplasia."
@@ -38,8 +38,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: dysplasia-c006
     section: etiology
     statement: "Dysplasia can arise in any epithelium."
@@ -86,16 +86,16 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: dysplasia-c012
     section: pathogenesis
-    statement: "Normal squamous mucosa proliferates from its basal layer; rising cells stop dividing, gain cytoplasm, have proportionally smaller nuclei and end as flat surface cells."
+    statement: "Normal squamous mucosa is graded by maturity: dividing basal cells with a large nucleus relative to their cytoplasm, flat fully mature surface cells with small nuclei, and intermediate layers at successive steps."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: dysplasia-c013
     section: pathogenesis
     statement: "Dysplasia disrupts the ordered maturation sequence of the epithelium."
@@ -106,52 +106,52 @@ claims:
     date: 2026-11-03
   - claimId: dysplasia-c014
     section: pathogenesis
-    statement: "Dysplasia, like cancer, results from mutations accumulating stepwise in proliferating cells kept dividing by injury."
+    statement: "Persistent injury keeps cells dividing, and dysplasia takes shape in those dividing cells one mutation after another, along the route that also leads to cancer."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: dysplasia-c015
     section: pathogenesis
     statement: "Each DNA replication round can introduce errors, so more cell divisions give more chances of mutation."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: dysplasia-c016
     section: pathogenesis
-    statement: "A cell whose mutation favors growth or survival out-reproduces its neighbors and its clone takes over."
+    statement: "The clone that comes to dominate descends from one cell whose mutation aided its growth or survival, so that its progeny outnumbered those of neighboring cells."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: dysplasia-c017
     section: pathogenesis
     statement: "The expanding clone divides more, gains further mutations and progressively escapes normal growth control."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: dysplasia-c018
     section: pathogenesis
     statement: "Control is only partly lost in dysplasia, so removing the cause can let the tissue return to normal."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: dysplasia-c019
     section: pathogenesis
-    statement: "Early HPV infection with non-integrated viral DNA in many cells gives low-grade lesions; integration of high-risk HPV and E6/E7 activity select one clone that progresses to a high-grade lesion."
+    statement: "Low-grade lesions correspond to early infection, with viral DNA kept outside the host chromosomes in many separate cells; a high-grade lesion follows when high-risk HPV inserts its DNA into the host genome and E6/E7 drive one clone to expand."
     sourceRef: { source: rubin-8e, chapter: "24", pages: "1031" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: dysplasia-c020
     section: gross
     statement: "Colitis-associated dysplasia can be flat or raised; the raised form is termed DALM."
@@ -206,16 +206,16 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: dysplasia-c027
     section: micro
     statement: "High-grade adenoma dysplasia shows complex, sometimes cribriform glands and more pleomorphic nuclei with conspicuous nucleoli."
     sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: dysplasia-c028
     section: micro
     statement: "Colonic dysplasia is split into low and high grade by the severity of cell and gland abnormalities."
@@ -230,8 +230,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "19, 24", pages: "833, 1031" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: dysplasia-c030
     section: micro
     statement: "LSIL corresponds to CIN-1/mild dysplasia; HSIL covers CIN-2/moderate and CIN-3/severe dysplasia and carcinoma in situ."
@@ -246,8 +246,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: dysplasia-c032
     section: clinical
     statement: "Atypical cells are present at the cervical surface even in low-grade lesions, so exfoliative cytology can detect them."
@@ -266,28 +266,28 @@ claims:
     date: 2026-11-03
   - claimId: dysplasia-c034
     section: clinical
-    statement: "Cervical SIL generally occurs before age 40, while cervical cancer usually presents at 40-60 years."
+    statement: "Cervical SIL is mostly seen in women under 40, invasive cervical cancer mostly between 40 and 60."
     sourceRef: { source: rubin-8e, chapter: "24", pages: "1031" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: dysplasia-c035
     section: clinical
     statement: "Barrett esophagus patients undergo surveillance endoscopy to detect dysplasia early."
     sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: dysplasia-c036
     section: clinical
-    statement: "Most patients with established IBD should undergo surveillance colonoscopy with systematic biopsies for dysplasia."
+    statement: "Dysplasia in IBD is sought actively: once the disease is established, most patients should have repeated surveillance colonoscopies with systematic biopsies."
     sourceRef: { source: rubin-8e, chapter: "19", pages: "818" }
     status: verified
     verifiedBy: agent
     verifier: "fixer-agent"
-    date: 2026-11-03
+    date: 2026-11-09
   - claimId: dysplasia-c037
     section: diagnosis
     statement: "Dysplasia is a morphologic diagnosis made on histology, and in the cervix also on cytologic smears."
@@ -302,16 +302,16 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "5", pages: "173" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: dysplasia-c039
     section: diagnosis
     statement: "If heavy inflammation prevents confirming or excluding dysplasia, the biopsy is reported as indefinite for dysplasia."
     sourceRef: { source: rubin-8e, chapter: "19", pages: "818" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: dysplasia-c040
     section: prognosis
     statement: "Dysplasia usually regresses when the stressor ends, e.g. smoking cessation or immune clearance of HPV-infected cervical cells."
@@ -330,28 +330,28 @@ claims:
     date: 2026-11-03
   - claimId: dysplasia-c042
     section: prognosis
-    statement: "Severe dysplasia warrants firm prevention by removing the cause, stopping exposure or excising the lesion."
+    statement: "Severe dysplasia calls for action rather than observation: excision of the lesion or removal of the cause that sustains it."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "29" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: dysplasia-c043
     section: prognosis
-    statement: "High-grade dysplasia on biopsy in ulcerative colitis usually leads to colectomy because of the high later cancer risk."
+    statement: "High-grade dysplasia on biopsy in ulcerative colitis often leads to colectomy because of the high later cancer risk."
     sourceRef: { source: rubin-8e, chapter: "19", pages: "818" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: dysplasia-c044
     section: prognosis
     statement: "Polypectomy cures adenomas whose dysplasia is confined to the mucosa; high-grade lesions left in place may become invasive adenocarcinoma."
     sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: dysplasia-c045
     section: differential
     statement: "Metaplasia replaces one differentiated cell type with another; dysplasia may develop within metaplastic epithelium."
@@ -370,20 +370,20 @@ claims:
     date: 2026-11-03
   - claimId: dysplasia-c047
     section: differential
-    statement: "In carcinoma in situ neoplastic cells fill the full epithelial thickness without surface maturation but stay above the basement membrane; cervical CIN 3 includes severe dysplasia and carcinoma in situ."
+    statement: "Carcinoma in situ shows atypia from base to surface without maturation and an intact basement membrane; cervical CIN 3 groups severe dysplasia with carcinoma in situ."
     sourceRef: { source: rubin-8e, chapter: "5, 24", pages: "173, 1031" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: dysplasia-c048
     section: differential
-    statement: "Once tumor breaches the basement membrane it invades stroma and gains access to vessels for metastasis."
+    statement: "Invasive carcinoma can metastasize because its cells, once past the basement membrane, lie in the stroma within reach of blood and lymphatic vessels."
     sourceRef: { source: rubin-8e, chapter: "5", pages: "173" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: dysplasia-c049
     section: differential
     statement: "Intense inflammation can produce changes not reliably distinguishable from dysplasia."
@@ -490,12 +490,12 @@ claims:
     date: 2026-11-03
   - claimId: dysplasia-c062
     section: traps
-    statement: "No in situ stage exists for tumors of mesenchymal, lymphoid or hepatocellular origin, since those cells lack a basement membrane."
+    statement: "Sarcomas and lymphomas lack an in situ stage because their cells of origin do not rest on a basement membrane."
     sourceRef: { source: rubin-8e, chapter: "5", pages: "173" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: dysplasia-c063
     section: mnemonics
     statement: "Core dysplasia features: lost maturation/layering, atypical nuclei, high mitoses, pleomorphism."
@@ -512,3 +512,196 @@ claims:
     verifiedBy: agent
     verifier: "verifier-agent"
     date: 2026-11-03
+  - claimId: dysplasia-c065
+    section: etiology
+    statement: "Tobacco and alcohol, which predispose to oral squamous cell carcinoma, are also causes of oral leukoplakia."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1305" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: dysplasia-c066
+    section: ancillary
+    statement: "Dysplasia is examined on cervical smears, biopsies and loop excisions, on endoscopic biopsies in Barrett esophagus and chronic colitis, on polypectomy specimens and on biopsies of oral white or red patches."
+    sourceRef: { source: rubin-8e, chapter: "19, 24, 29", pages: "771, 818, 823, 1032-1033, 1305" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: dysplasia-c067
+    section: ancillary
+    statement: "Pap cytology only screens, but shed cells usually allow LSIL and HSIL to be separated by how abnormal their nuclei are and how mature their cytoplasm is."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1032" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: dysplasia-c068
+    section: ancillary
+    statement: "An abnormal smear is followed by biopsy, because the full epithelial thickness, and so the definitive grade, is judged on histology."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1032-1033" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: dysplasia-c069
+    section: ancillary
+    statement: "LEEP excises the whole transformation zone and can diagnose and treat in one step; alternatively, colposcopy aims biopsies at abnormal areas, HSIL typically looking mosaic or punctate."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1032-1033" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: dysplasia-c070
+    section: ancillary
+    statement: "Dye spraying of the colonic mucosa at endoscopy (chromoendoscopy) may increase the dysplasia found by IBD surveillance biopsies."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "818" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: dysplasia-c071
+    section: ancillary
+    statement: "On H&E one assesses maturation from base to surface, nuclear size and darkness relative to cytoplasm, the level of mitoses and basement membrane integrity."
+    sourceRef: { source: rubin-8e, chapter: "1, 5", pages: "29, 173" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: dysplasia-c072
+    section: ancillary
+    statement: "LSIL keeps an orderly basal layer with koilocytes (large wrinkled nucleus, clear halo) above it; in HSIL immature atypical cells from a disordered base occupy more of the thickness, and atypical mitoses may indicate aneuploidy."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1018, 1031-1033" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: dysplasia-c073
+    section: ancillary
+    statement: "A polyp carcinoma is invasive only when neoplastic glands have passed beneath the muscularis mucosae; polypectomy on its own can be curative for a low-risk invasive carcinoma removed with an adequate basal margin."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823-824" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: dysplasia-c074
+    section: ancillary
+    statement: "Lesions caused by oncogenic HPV typically overexpress p16, which p16 immunohistochemistry demonstrates in tissue."
+    sourceRef: { source: rubin-8e, chapter: "24, 29", pages: "1023, 1317" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: dysplasia-c075
+    section: ancillary
+    statement: "In a series of cervical biopsies, reading p16 immunostains with H&E clearly raised agreement on CIN grade among pathologists; genuine CIN 2-3 is what diffuse strong p16 staining is meant to pick out."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1023" }
+    status: beyond-reference
+    secondSource: { source: dijkstra-2010, locator: "abstract (PubMed PMID 20924035): background, results (weighted kappa without and with p16) and conclusions; full text not read" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: dysplasia-c076
+    section: ancillary
+    statement: "HPV DNA can be detected directly by molecular tests, and in situ hybridization localizes HPV nucleic acid within cells in tissue sections."
+    sourceRef: { source: rubin-8e, chapter: "24, 29", pages: "1018, 1304, 1317" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: dysplasia-c077
+    section: ancillary
+    statement: "HSIL usually harbors high-risk HPV types such as 16 and 18, whereas cervical condylomas often contain low-risk types 6 or 11."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1032" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: dysplasia-c078
+    section: clinical
+    statement: "In the upper aerodigestive tract, precursor lesions are named clinically by color: leukoplakia for white and erythroplakia for red patches."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1304-1305" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: dysplasia-c079
+    section: clinical
+    statement: "Erythroplakia is less frequent than leukoplakia but more often contains high-grade dysplasia or carcinoma; many red patches may be inflammatory."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1305" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: dysplasia-c080
+    section: diagnosis
+    statement: "Leukoplakia is a clinical term, not a diagnosis; histologically a white patch may be hyperkeratosis alone, dysplasia or invasive squamous carcinoma, so biopsy is required."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1305" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: dysplasia-c081
+    section: prognosis
+    statement: "Under 1% of LSIL turn into invasive carcinoma and about 6% reach HSIL, while about 70% regress; untreated HSIL becomes invasive carcinoma in 10-20% of cases."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1032-1033" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: dysplasia-c082
+    section: prognosis
+    statement: "LSIL is often managed conservatively with repeat smears; HSIL is treated, e.g. by LEEP (sufficient with negative margins) or conization."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1033" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: dysplasia-c083
+    section: prognosis
+    statement: "Oral leukoplakia carries a 10-12% malignancy risk, erythroplakia the highest, and speckled leukoplakia, considered an erythroplakia variant, an intermediate one."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1305" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: dysplasia-c084
+    section: prognosis
+    statement: "Carcinogens act on a mucosal field: in field cancerization the oral mucosa can give rise to more than one SCC, at once or later, and an HPV-related field effect means vaginal or vulvar carcinoma may follow cervical disease, so follow-up is lifelong."
+    sourceRef: { source: rubin-8e, chapter: "24, 29", pages: "1026, 1033, 1305" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: dysplasia-c085
+    section: high-yield
+    statement: "Oral leukoplakia is a clinical term requiring biopsy; erythroplakia is less common but more often harbors high-grade dysplasia or carcinoma."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1305" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: dysplasia-c086
+    section: traps
+    statement: "Leukoplakia, Barrett esophagus and long-standing colitis are settings of increased risk, not dysplasia; dysplasia, the true precursor, has to be shown on biopsy."
+    sourceRef: { source: rubin-8e, chapter: "19, 29", pages: "771, 818, 1305" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: dysplasia-c087
+    section: pathogenesis
+    statement: "In the oral cavity the precursor stages are seen clinically as white or red patches, and invasive squamous carcinoma usually arises from carcinoma in situ."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1304-1305" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: dysplasia-c088
+    section: prognosis
+    statement: "In Barrett esophagus, adenocarcinoma risk depends on dysplasia grade and segment length; dysplasia is generally treated by endoscopic radiofrequency ablation, with endoscopic resection of nodular areas."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09

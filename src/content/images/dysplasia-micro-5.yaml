@@ -1,0 +1,83 @@
+# License check (2026-11-07): Commons file page {{Information}} gives Source = Flickr photo 7205728056 (stream
+# "euthman"), Author = Ed Uthman; license template {{cc-by-2.0}}, confirmed by {{flickrreview}} (File Upload Bot
+# (Magnus Manske), 2013-12-11); extmetadata LicenseShortName "CC BY 2.0", AttributionRequired true, no Restrictions.
+# The Flickr stream is the author's own, so the Commons transfer (by User:CFCF) opens no uploader/creator gap. The
+# downloaded original matches the Commons SHA-1 (fa54a1b306670172a04398636c531fc3183c80d1).
+# Same CIN 2 case as dysplasia-micro-4 (H&E) and dysplasia-micro-6 (p16), hence one group. The file title names the
+# antibody (MIB-1); the source does not state the magnification or the chromogen. The file description confirms that
+# the epithelium on the left is normal, with Ki-67 limited to the parabasal zone.
+id: dysplasia-micro-5
+file: dysplasia-micro-5.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:CIN_2_(HSIL),_Ki-67_(MIB-1)_Immunostain_(7205728056).jpg
+author: Ed Uthman
+license: CC-BY-2.0
+licenseUrl: https://creativecommons.org/licenses/by/2.0/
+retrievedAt: 2026-11-07
+modifications:
+  it: >-
+    Scaricato da Wikimedia Commons l'originale da 1708 × 1138 px; riduzione a 1600 × 1066 px e ricodifica in JPEG
+    (qualità 82, metadati rimossi). Nessun ritaglio, nessuna modifica dei colori.
+  en: >-
+    Downloaded the 1708 × 1138 px original from Wikimedia Commons; downscaled to 1600 × 1066 px and re-encoded as JPEG
+    (quality 82, metadata stripped). No crop, no colour change.
+attributionText: >-
+  Ed Uthman, "CIN 2 (HSIL), Ki-67 (MIB-1) Immunostain" (Flickr 7205728056), via Wikimedia Commons, CC BY 2.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-07 }
+group: cin2-cervix-uthman
+stain: immunohistochemistry for Ki-67 (MIB-1 antibody), haematoxylin counterstain
+magnification: medium power (judged from the image; the source does not state it)
+orientation:
+  it: "Superficie dell'epitelio in alto, stroma in basso; epitelio normale a sinistra, lesione a destra."
+  en: "Epithelial surface at the top, stroma at the bottom; normal epithelium on the left, the lesion on the right."
+lookFor:
+  it: "Segui i nuclei rosso-bruni verso l'alto: a sinistra si fermano appena sopra la base, a destra arrivano alla superficie."
+  en: "Follow the red-brown nuclei upward: on the left they stop just above the base, on the right they reach the surface."
+caption:
+  it: >-
+    Lo stesso prelievo cervicale con CIN 2, colorato in immunoistochimica per Ki-67 (anticorpo MIB-1), a medio
+    ingrandimento: i nuclei rosso-bruni sono positivi, quelli blu (controcolorazione con ematossilina) negativi. Ki-67 è
+    una proteina nucleare presente in tutte le fasi attive del ciclo cellulare e assente nelle cellule quiescenti,
+    quindi la colorazione mostra dove l'epitelio si sta dividendo. Parti da sinistra, nell'epitelio normale: i nuclei
+    positivi formano una banda sottile appena sopra la base, e la metà superiore dell'epitelio è tutta blu, perché le
+    cellule smettono di dividersi man mano che maturano. Poi passa alla metà destra: i nuclei positivi sono sparsi in
+    tutto lo spessore, fino alla superficie. È la perdita di maturazione vista con un'immunocolorazione: il compartimento
+    proliferativo, che normalmente resta negli strati bassi, si è esteso verso l'alto. Conta solo la colorazione dei
+    nuclei; la lieve tinta bruna nel citoplasma di alcune cellule superficiali è fondo aspecifico. Attenzione: Ki-67
+    misura la proliferazione, non la neoplasia; anche un epitelio infiammato o in rigenerazione può avere più nuclei
+    positivi, quindi va letto insieme all'EE e a p16.
+  en: >-
+    The same CIN 2 cervical specimen immunostained for Ki-67 (MIB-1 antibody), medium power: red-brown nuclei are
+    positive, blue nuclei (haematoxylin counterstain) are negative. Ki-67 is a nuclear protein present in every active
+    phase of the cell cycle and absent in resting cells, so the stain maps where the epithelium is dividing. Start on the
+    left, in the normal epithelium: the positive nuclei form a narrow band just above the base, and the upper half of the
+    epithelium is all blue, because cells stop dividing as they mature. Then move to the right half: positive nuclei are
+    scattered through the whole thickness, up to the surface. This is what loss of maturation looks like with an
+    immunostain: the dividing compartment, normally confined to the lower layers, has spread upward. Only nuclear
+    staining counts; the faint brown tint in the cytoplasm of some surface cells is background. Pitfall: Ki-67 measures
+    proliferation, not neoplasia; inflamed or regenerating epithelium can also have more positive nuclei, so read it
+    together with the H&E and p16.
+alt:
+  it: >-
+    Micrografia immunoistochimica su fondo azzurro chiaro: una fascia di epitelio squamoso attraversa il centro, con lo
+    stroma sotto e uno spazio vuoto sopra. A sinistra i nuclei rosso-bruni formano una banda sottile e ondulata nella
+    parte bassa dell'epitelio; a destra molti nuclei rosso-bruni sono sparsi dalla base fino alla superficie.
+  en: >-
+    Immunostained micrograph on a pale blue background: a band of squamous epithelium crosses the middle, with stroma
+    below and empty space above. On the left, red-brown nuclei form a narrow wavy band in the lower part of the
+    epithelium; on the right, many red-brown nuclei are scattered from the base up to the surface.
+annotations:
+  - id: normal-upper-layers
+    label: { it: "Strati alti normali: nessuna cellula in divisione", en: "Normal upper layers: no dividing cells" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.00, 0.38, 0.10, 0.40, 0.30, 0.37, 0.30, 0.52, 0.10, 0.52, 0.00, 0.51] }
+  - id: normal-ki67-band
+    label: { it: "Lato normale: Ki-67 solo vicino alla base", en: "Normal side: Ki-67 only near the base" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.00, 0.53, 0.20, 0.57, 0.40, 0.55, 0.40, 0.64, 0.20, 0.72, 0.00, 0.68] }
+  - id: lesion-full-thickness
+    label: { it: "Lesione: nuclei positivi fino alla superficie", en: "Lesion: positive nuclei up to the surface" }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.57, 0.31, 0.80, 0.31, 0.99, 0.33, 0.99, 0.76, 0.80, 0.76, 0.58, 0.73] }

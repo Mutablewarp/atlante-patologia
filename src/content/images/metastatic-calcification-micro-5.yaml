@@ -1,0 +1,90 @@
+# License check (2026-11-08): article "A Fatal Case of Metastatic Pulmonary Calcification during the Puerperium",
+# International Journal of Molecular Sciences 2022;23(23):15131, doi:10.3390/ijms232315131, PMID 36499458, PMC9735927.
+# The JATS permissions of the PMC copy and the PMC open-data record (license_code "CC BY") give CC BY 4.0 (© 2022 by the
+# authors, licensee MDPI); the Figure 5 legend credits no third party and has no "reproduced with permission" note.
+# The publisher's site refused automated downloads (HTTP 403), so the panel comes from the article PDF in the PMC
+# open-data bucket (md5 72c00e8ebd36ffe68115977c8969dbfc, as its record lists): there panel (c) is a separate
+# 558 × 446 px JPEG, larger than in the 724 px-wide three-panel figure shown on PMC. Histology only; nothing identifies
+# the patient (the case is published; no name, record number or face). The legend calls the stain "IHC von Kossa";
+# von Kossa is a histochemical silver method, so the stain field reads von Kossa. Magnification ×120 as the legend
+# states it; medium power is the agent's reading. Facts in the caption checked against the article (case report,
+# sections 2.2-2.3, Figure 5 legend) and rubin-8e ch. 1 pp. 29-30 and ch. 22 p. 965 (von Kossa black, more specific).
+id: metastatic-calcification-micro-5
+file: metastatic-calcification-micro-5.jpg
+kind: micro
+sourceUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC9735927/figure/ijms-23-15131-f005/
+author: Alberto Chighine, Andrea Corona, Gualtiero Catani, Celeste Conte, Roberto Demontis, Matteo Nioi
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-11-08
+modifications:
+  it: >-
+    Pannello (c) della Figura 5, preso così com'è dal PDF dell'articolo (copia PMC,
+    https://pmc-oa-opendata.s3.amazonaws.com/PMC9735927.1/PMC9735927.1.pdf), dove è un'immagine JPEG a sé da
+    558 × 446 px: nessun ritaglio, nessun ridimensionamento, nessuna ricodifica, nessuna modifica dei colori. La lettera
+    del pannello, che nel PDF sta sotto l'immagine, e gli altri pannelli della figura non sono inclusi.
+  en: >-
+    Panel (c) of Figure 5, taken as it is from the article PDF (PMC copy,
+    https://pmc-oa-opendata.s3.amazonaws.com/PMC9735927.1/PMC9735927.1.pdf), where it is a separate 558 × 446 px JPEG:
+    no crop, no resize, no re-encoding, no colour change. The panel letter, which sits below the image in the PDF, and
+    the other panels of the figure are not included.
+attributionText: >-
+  Alberto Chighine, Andrea Corona, Gualtiero Catani, Celeste Conte, Roberto Demontis and Matteo Nioi, "A Fatal Case of
+  Metastatic Pulmonary Calcification during the Puerperium", International Journal of Molecular Sciences
+  2022;23(23):15131, doi:10.3390/ijms232315131, Figure 5c, CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+stain: von Kossa
+magnification: medium power (×120 according to the source)
+lookFor:
+  it: "Cerca il nero: segue le pareti alveolari e la parete del vaso in basso."
+  en: "Look for black: it follows the alveolar walls and the wall of the vessel at the bottom."
+caption:
+  it: >-
+    Calcificazione metastatica del polmone evidenziata con la colorazione di von Kossa, a medio ingrandimento (×120
+    secondo la fonte). La sezione viene dall'autopsia di una donna di 35 anni morta per insufficienza respiratoria poco
+    dopo il parto; gli autori hanno ricondotto i depositi di calcio a un iperparatiroidismo primario dovuto a un
+    carcinoma della paratiroide (è una paziente diversa da quella delle immagini in EE di questa scheda). Cerca ciò che è
+    nero: sottili linee nere corrono lungo le pareti alveolari, tratti neri più spessi segnano i punti in cui il minerale
+    si è accumulato di più, e linee nere bordano anche le pareti del vaso sezionato longitudinalmente in basso, con il
+    lume pieno di emazie. Tutto il resto prende la colorazione di contrasto rosa-bruna, e gli spazi alveolari sono quasi
+    vuoti. Come funziona: l'argento prende il posto del calcio nei suoi sali di fosfato e di carbonato e viene poi
+    ridotto ad argento metallico nero, quindi il nero indica il minerale; la colorazione è più specifica
+    dell'ematossilina, il cui blu colora anche i nuclei e altro materiale basofilo. Perché è metastatica: i depositi
+    seguono pareti alveolari e vascolari che prima non erano danneggiate, in tutto il polmone, per l'eccesso sistemico di
+    calcio prodotto dall'iperparatiroidismo primario; la calcificazione distrofica, al contrario, si forma su tessuto morto o danneggiato
+    senza un'alterazione sistemica del calcio. Nella stessa paziente gli autori hanno trovato calcio anche nei reni e
+    nella mucosa gastrica.
+  en: >-
+    Metastatic calcification of the lung shown with the von Kossa stain, medium power (×120 according to the source).
+    The section comes from the autopsy of a 35-year-old woman who died of respiratory failure shortly after childbirth;
+    the authors traced her calcium deposits to primary hyperparathyroidism caused by a parathyroid carcinoma (a
+    different patient from the H&E images of this card). Look for what is black: fine black lines run along the alveolar
+    walls, thicker black segments mark where more mineral has built up, and black lines also edge the walls of the
+    vessel cut lengthwise at the bottom, whose lumen is full of red cells. Everything else takes the pink-brown
+    counterstain, and the alveolar spaces are almost empty. How the stain works: silver takes the place of calcium in
+    its phosphate and carbonate salts and is then reduced to black metallic silver, so black marks the mineral; the
+    stain is more specific than haematoxylin, whose blue also colours nuclei and other basophilic material. Why this is
+    metastatic: the deposits follow alveolar and vessel walls that were not damaged beforehand, throughout the lung,
+    because of the systemic calcium excess that primary hyperparathyroidism produces; dystrophic calcification, by
+    contrast, forms on dead or damaged tissue without a systemic calcium disorder. In the same patient the authors also
+    found calcium in the kidneys and in the gastric mucosa.
+alt:
+  it: >-
+    Sezione di polmone colorata con von Kossa a medio ingrandimento: sottili pareti alveolari rosa-brune attorno a spazi
+    bianchi per lo più vuoti, molte bordate da linee nere sottili o più spesse; in basso un vaso allungato, pieno di
+    cellule rosso-brune, è delimitato da linee nere.
+  en: >-
+    Lung section stained with von Kossa at medium power: thin pink-brown alveolar walls around mostly empty white
+    spaces, many of them edged by fine or thicker black lines; at the bottom, an elongated vessel full of red-brown cells
+    is outlined by black lines.
+annotations:
+  - id: black-septal-deposit
+    label: { it: "Deposito nero lungo una parete alveolare", en: "Black deposit along an alveolar wall" }
+    revealOrder: 1
+    shape: { type: rect, coords: [0.33, 0.37, 0.075, 0.095] }
+  - id: black-edged-vessel
+    label: { it: "Vaso sezionato longitudinalmente: pareti bordate di nero, emazie nel lume", en: "Vessel cut lengthwise: black-edged walls, red cells in the lumen" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.280, 0.761, 0.400, 0.711, 0.499, 0.717, 0.579, 0.798, 0.618, 0.861, 0.708, 0.898, 0.703, 0.923, 0.589, 0.898, 0.479, 0.861, 0.370, 0.861, 0.290, 0.873] }

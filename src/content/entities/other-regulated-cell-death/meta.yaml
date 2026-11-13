@@ -102,6 +102,31 @@ selfExplain:
   - it: "Confronta NETosi e apoptosi: in che modo la presenza o l'assenza del segnale «mangiami» determina se la morte sarà silenziosa o infiammatoria?"
     en: "Compare NETosis and apoptosis: how does the presence or absence of the \"eat me\" signal decide whether death is silent or inflammatory?"
 chain: []
+examQuestions:
+  - it: "Mi parli dell'anoikis: in quali cellule avviene, che cosa la scatena e attraverso quali vie muore la cellula?"
+    en: "Tell me about anoikis: in which cells does it occur, what sets it off, and through which pathways does the cell die?"
+    focus: [etiology, pathogenesis]
+    level: 1
+  - it: "Come uccide la cellula bersaglio un linfocito T citotossico? Mi spieghi il ruolo della perforina e del granzima B, e quali altre vie di uccisione ha a disposizione."
+    en: "How does a cytotoxic T lymphocyte kill its target? Explain the roles of perforin and granzyme B, and which other killing routes it can use."
+    focus: [pathogenesis, traps]
+    level: 2
+  - it: "Che cosa sono le trappole extracellulari dei neutrofili e come si formano? Perché la NETosi, a differenza dell'apoptosi, può alimentare l'infiammazione, e in che cosa si distingue dalla piroptosi?"
+    en: "What are neutrophil extracellular traps, and how do they form? Why can NETosis, unlike apoptosis, fuel inflammation, and how does it differ from pyroptosis?"
+    focus: [pathogenesis, differential, traps]
+    level: 2
+  - it: "Che cosa vede al microscopio nell'entosi, e che fine può fare la cellula inglobata?"
+    en: "What do you see under the microscope in entosis, and what can become of the engulfed cell?"
+    focus: [micro, pathogenesis]
+    level: 1
+  - it: "Come dimostrerebbe la presenza di NET in una sezione istologica? E quali marcatori immunoistochimici userebbe per riconoscere le cellule con fenotipo citotossico?"
+    en: "How would you show NETs in a tissue section? And which immunohistochemical markers would you use to recognize cells with a cytotoxic phenotype?"
+    focus: [ancillary, traps]
+    level: 3
+  - it: "Che ruolo hanno l'anoikis, la NETosi e l'entosi nei tumori? Perché si dice che l'anoikis ostacola le metastasi, e come fanno le cellule tumorali a sfuggirle?"
+    en: "What part do anoikis, NETosis and entosis play in tumors? Why is anoikis said to oppose metastasis, and how do tumor cells escape it?"
+    focus: [pathogenesis, clinical]
+    level: 3
 images:
   - id: other-regulated-cell-death-micro-1
     role: micro
@@ -109,11 +134,35 @@ images:
     role: micro
   - id: other-regulated-cell-death-micro-3
     role: micro
+  - id: other-regulated-cell-death-micro-4
+    role: micro
+  - id: other-regulated-cell-death-micro-6
+    role: micro
+  - id: other-regulated-cell-death-micro-7
+    role: micro
 reviewStatus: ai-generated-unreviewed
 editionDependent: false
 sources:
   - source: rubin-8e
     chapter: "1"
-    pages: "38, 45, 54, 56-58"
-lastUpdated: 2026-11-03
+    pages: "38, 45, 54-58"
+  - source: rubin-8e
+    chapter: "4"
+    pages: "148-151"
+  - source: rubin-8e
+    chapter: "5"
+    pages: "190, 198"
+  - source: rubin-8e
+    chapter: "12"
+    pages: "524"
+  - source: rubin-8e
+    chapter: "16"
+    pages: "596"
+  - source: rubin-8e
+    chapter: "26"
+    pages: "1180, 1182"
+  - source: brinkmann-2004
+  - source: brinkmann-2016
+  - source: overholtzer-2007
+lastUpdated: 2026-11-12
 status: published

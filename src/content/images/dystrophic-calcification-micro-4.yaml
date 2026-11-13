@@ -1,0 +1,82 @@
+# License check (2026-11-07): same article and licence as dystrophic-calcification-gross-2 (Sumi et al., Thoracic
+# Cancer 2020, PMC7605996, CC BY 4.0 in the Europe PMC full text; the Figure 3 legend credits no third party). Histology
+# only; nothing identifies the patient. Panel (c), von Kossa, of the nodule shown on H&E in panel (b)
+# (dystrophic-calcification-micro-3): same group, stain switch. The legend states that the calcium deposits fill the
+# whole tumour. Facts in the caption checked against the article (Fig. 3 legend, case report) and rubin-8e ch. 22 p. 965
+# (calcium is blue with haematoxylin and black with the more specific von Kossa stain) and ch. 1 p. 29.
+id: dystrophic-calcification-micro-4
+file: dystrophic-calcification-micro-4.jpg
+kind: micro
+sourceUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC7605996/figure/tca13663-fig-0003/
+author: >-
+  Toshiyuki Sumi, Hirofumi Uehara, Toshiaki Masaoka, Makoto Tada, Yoshiko Keira, Koki Kamada, Naoki Shijubou,
+  Yuichi Yamada, Hisashi Nakata, Yuji Mori, Hirofumi Chiba
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-11-07
+modifications:
+  it: >-
+    Pannello (c) della Figura 3, ritagliato dal JPEG da 2128 × 1513 px dell'editore
+    (https://onlinelibrary.wiley.com/cms/asset/c06e1e0e-59d2-49df-81c5-8cc46cf58fe3/tca13663-fig-0003-m.jpg): pixel
+    x 713–1418, y 606–1003, per un'immagine di 706 × 398 px; il ritaglio esclude la lettera del pannello con il suo
+    riquadro bianco, una striscia di polmone e di vetrino in alto, un sottile margine ai bordi e gli altri pannelli.
+    Salvato di nuovo in JPEG (qualità 90, senza metadati); nessun ridimensionamento, nessuna modifica dei colori.
+  en: >-
+    Panel (c) of Figure 3, cut from the publisher's 2128 × 1513 px JPEG
+    (https://onlinelibrary.wiley.com/cms/asset/c06e1e0e-59d2-49df-81c5-8cc46cf58fe3/tca13663-fig-0003-m.jpg): pixels
+    x 713–1418, y 606–1003, giving 706 × 398 px; the crop leaves out the panel letter and its white box, a strip of lung
+    and slide at the top, a thin margin at the panel edges and the other panels. Re-saved as JPEG (quality 90, no
+    metadata); no resize, no colour change.
+attributionText: >-
+  Toshiyuki Sumi, Hirofumi Uehara, Toshiaki Masaoka, Makoto Tada, Yoshiko Keira, Koki Kamada, Naoki Shijubou, Yuichi
+  Yamada, Hisashi Nakata, Yuji Mori and Hirofumi Chiba, "Lung adenocarcinoma with tumor resolution and dystrophic
+  calcification after salvage surgery following immune checkpoint inhibitor therapy: A case report", Thoracic Cancer
+  2020;11(11):3396–3400, doi:10.1111/1759-7714.13663, Figure 3c (cropped), CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-07 }
+group: calcified-lung-tumour-necrosis-sumi
+stain: von Kossa
+magnification: low power (loupe image, whole-mount view)
+lookFor:
+  it: "Cerca ciò che è nero: solo il nodulo necrotico. Poi torna all'EE e confronta le stesse zone."
+  en: "Find what is black: only the necrotic nodule. Then switch back to H&E and compare the same zones."
+caption:
+  it: >-
+    Lo stesso nodulo colorato con il metodo di von Kossa, sempre in visione panoramica del vetrino. La differenza con
+    l'EE salta all'occhio: tutto il nodulo necrotico è grigio-nero, comprese le zone che in EE tendevano al rosa,
+    mentre il polmone intorno e l'orlo che delimita la lesione restano chiari; solo la zona centrale sfilacciata è più
+    pallida. Il nero indica i depositi di calcio, e il fatto che riempiano il nodulo e si fermino al suo bordo dice che
+    il calcio si è posato sul tessuto tumorale morto, non sul polmone vivo. Perché usare questa colorazione?
+    L'ematossilina colora di blu molte strutture, tra cui il calcio; il nero della von Kossa indica il calcio in modo
+    molto più affidabile, perciò serve a confermare una calcificazione sospettata in EE e a vederne l'estensione reale.
+    Collegamento con l'esame: calcio basofilo in EE e nero con la von Kossa; la forma distrofica richiede un tessuto
+    danneggiato o morto e di solito si accompagna, come in questo caso, a esami del metabolismo del calcio normali.
+  en: >-
+    The same nodule stained by the von Kossa method, again as a whole-mount view of the slide. The difference from H&E
+    is striking: the whole necrotic nodule is grey-black, including the zones that leaned towards pink on H&E, while
+    the surrounding lung and the rim that bounds the lesion stay pale; only the frayed central zone is lighter. The
+    black marks the calcium deposits, and the way they fill the nodule and stop at its edge tells you the calcium
+    settled on dead tumour tissue, not on living lung. Why use this stain? Haematoxylin colours many structures blue,
+    calcium among them; the black of von Kossa points to calcium far more reliably, so it confirms a calcification
+    suspected on H&E and shows its true extent. Exam link: calcium is basophilic on H&E and black with von Kossa; the
+    dystrophic form needs damaged or dead tissue and usually comes, as in this case, with normal tests of calcium
+    metabolism.
+alt:
+  it: >-
+    Sezione panoramica colorata con von Kossa: lo stesso grande nodulo lobulato appare grigio-nero in modo uniforme,
+    con il centro più chiaro, mentre il polmone e l'orlo intorno sono quasi bianchi, con un tenue alone rosa.
+  en: >-
+    Low-power whole-mount von Kossa section: the same large, lobulated nodule is evenly grey-black with a lighter
+    centre, while the surrounding lung and rim are almost white with a faint pink tinge.
+annotations:
+  - id: von-kossa-positive-nodule
+    label: { it: "Nodulo grigio-nero: depositi di calcio (von Kossa positivo)", en: "Grey-black nodule: calcium deposits (von Kossa positive)" }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.14, 0.693, 0.147, 0.618, 0.273, 0.279, 0.295, 0.254, 0.439, 0.151, 0.579, 0.101, 0.639, 0.088, 0.701, 0.103, 0.711, 0.111, 0.742, 0.158, 0.749, 0.171, 0.802, 0.337, 0.806, 0.359, 0.805, 0.377, 0.799, 0.399, 0.585, 0.844, 0.269, 0.922, 0.142, 0.719]
+  - id: surrounding-lung-unstained
+    label: { it: "Polmone circostante, senza depositi neri", en: "Surrounding lung, no black deposits" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.84, 0.40, 0.97, 0.40, 0.97, 0.70, 0.84, 0.70] }

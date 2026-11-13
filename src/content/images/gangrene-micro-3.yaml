@@ -1,0 +1,71 @@
+# License check (2026-11-07): Commons file page {{Information}} gives Source = Cases Journal 2008, 1:252,
+# doi:10.1186/1757-1626-1-252, Author "Engelbert Schröpfer, Stephan Rauthe and Thomas Meyer", license {{cc-by-2.0}};
+# extmetadata LicenseShortName "CC BY 2.0", AttributionRequired true, no Restrictions. The uploader is not an author,
+# but the source is explicit: PMC (PMC2576185, PMID 18937845) gives "Copyright © 2008 Schröpfer et al; licensee
+# BioMed Central Ltd." under CC BY 2.0, and the figure legend credits no third party. The file is Figure 4 of the
+# article and gangrene-micro-2 is Figure 3: both legends describe muscle removed at operation from the report's first
+# patient (gas gangrene of the right leg, hemipelvectomy), hence the shared group. Histology only; nothing identifies
+# the patient. "Zoom 1000×" is the source's label; it names no objective, so `objective` is left out. Re-checked
+# 2026-11-08: licence unchanged on the file page; our file is byte-identical to the Commons original (same SHA-1) and
+# carries no EXIF; the article's consent statement covers the first patient (written consent from the relatives).
+id: gangrene-micro-3
+file: gangrene-micro-3.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Clostridium_perfringens_gas_gangrene.jpg
+author: Engelbert Schröpfer, Stephan Rauthe, Thomas Meyer
+license: CC-BY-2.0
+licenseUrl: https://creativecommons.org/licenses/by/2.0/
+retrievedAt: 2026-11-07
+modifications: none
+attributionText: >-
+  Schröpfer E, Rauthe S, Meyer T, "Diagnosis and misdiagnosis of necrotizing soft tissue infections: three case
+  reports", Cases Journal 2008;1:252, doi:10.1186/1757-1626-1-252 (Figure 4), via Wikimedia Commons, CC BY 2.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+group: gas-gangrene-muscle-schroepfer
+stain: Gram
+magnification: high power (1000× in the source)
+lookFor:
+  it: "Trova i bastoncelli blu-viola sparsi sul fondo pallido, poi chiediti dove siano i neutrofili: quasi non ce ne sono."
+  en: "Find the blue-purple rods scattered over the pale background, then ask where the neutrophils are: there are almost none."
+caption:
+  it: >-
+    Colorazione di Gram del muscolo asportato nello stesso intervento dell'immagine in EE di questa serie (gangrena
+    gassosa della gamba; 1000× nell'articolo di origine). Con questa colorazione i batteri che trattengono il
+    colorante violetto, i gram-positivi, appaiono blu-viola. Percorri il campo: decine di bastoncelli corti e diritti,
+    con le estremità tronche, sono sparsi, isolati o a coppie, in un tessuto pallido e morto. Secondo gli autori,
+    l'esame microbiologico e quello istologico di questo tessuto hanno confermato che la causa era Clostridium
+    perfringens. Poi cerca ciò che manca: intorno ai batteri non si raccoglie alcuna folla di neutrofili, benché
+    infezione e necrosi siano estese. Questa assenza è un indizio tipico della gangrena gassosa: la tossina α del
+    clostridio, una fosfolipasi, verosimilmente distrugge anche i leucociti. Nella gangrena umida, al contrario, i
+    neutrofili invadono il tessuto morto e lo colliquano. Da ricordare all'esame: bastoncelli gram-positivi con
+    pochissimi neutrofili nel tessuto di una ferita orientano subito verso la gangrena gassosa, un'emergenza
+    chirurgica. Passa all'immagine in EE per vedere le bolle di gas e le fibre necrotiche dello stesso tessuto.
+  en: >-
+    Gram stain of the muscle removed at the same operation as the H&E image of this set (gas gangrene of the leg;
+    1000× in the source article). With this stain, bacteria that keep the violet dye, the gram-positive ones, look
+    blue-purple. Scan the field: dozens of short, straight rods with blunt ends lie scattered, singly or in pairs,
+    through pale, dead tissue. According to the authors, microbiology and histology of this tissue confirmed
+    Clostridium perfringens as the cause. Then look for what is missing: no crowd of neutrophils gathers around the
+    bacteria, even though infection and necrosis are extensive. That absence is a typical clue to gas gangrene: the
+    clostridial α toxin, a phospholipase, probably destroys white cells as well. In wet gangrene, by contrast,
+    neutrophils pour into the dead tissue and liquefy it. For the exam: gram-positive rods with hardly any neutrophils
+    in tissue from a wound point towards gas gangrene, a surgical emergency. Switch to the H&E image to see the gas
+    bubbles and dead fibres of the same tissue.
+alt:
+  it: >-
+    Micrografia con colorazione di Gram a forte ingrandimento: su un fondo rosa-grigio pallido a fibre ondulate sono
+    sparsi molti piccoli bastoncelli blu-viola, diritti, isolati o a coppie; in basso alcuni corpi ovali rossi.
+  en: >-
+    High-power Gram-stained micrograph: over a pale pink-grey background of wavy fibres lie many small, straight,
+    blue-purple rods, single or in pairs; a few red oval bodies are near the bottom.
+annotations:
+  - id: gram-positive-rods
+    label: { it: "Bastoncelli gram-positivi (blu-viola) nel tessuto morto", en: "Gram-positive rods (blue-purple) in dead tissue" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.17, 0.05, 0.31, 0.05, 0.31, 0.26, 0.17, 0.26] }
+  - id: single-rod
+    label: { it: "Un bastoncello: diritto, a estremità tronche", en: "One rod: straight, with blunt ends" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.226, 0.05, 0.252, 0.05, 0.252, 0.074, 0.226, 0.074] }

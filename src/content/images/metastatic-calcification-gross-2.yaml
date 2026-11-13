@@ -1,0 +1,82 @@
+# License check (2026-11-08): Commons file page {{Information}} gives Source = Flickr photo 4867151398 (stream
+# "pulmonary_pathology", "Metastatic calcification"), Author = Yale Rosen; licence template {{cc-by-sa-2.0}}, confirmed
+# by {{flickrreview}} (File Upload Bot (Magnus Manske), 2014-02-12); extmetadata LicenseShortName "CC BY-SA 2.0",
+# AttributionRequired true. The Flickr stream is the author's own, so the Commons transfer (by User:CFCF) opens no
+# uploader/creator gap. CC BY-SA is approved as a class by owner decision O7 (plan/v2-plan.md, 2026-11-03), hence
+# ownerApproved: true. Cut surface of a lung only; nothing identifies the patient. Source description: the pale tan
+# areas represent metastatic calcification. The source gives neither the cause nor a scale, and it does not say that
+# this lung is the Case 141 lung of metastatic-calcification-micro-3/-4, so the caption does not claim it. Facts in the
+# caption checked against rubin-8e ch. 1 pp. 29-30 (definition, causes, gritty texture of calcified tissue) and ch. 22
+# p. 965 (haematoxylin and von Kossa).
+id: metastatic-calcification-gross-2
+file: metastatic-calcification-gross-2.jpg
+kind: gross
+sourceUrl: https://commons.wikimedia.org/wiki/File:Metastatic_calcification_(4867151398).jpg
+author: Yale Rosen
+license: CC-BY-SA-2.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/2.0/
+retrievedAt: 2026-11-08
+modifications:
+  it: >-
+    Scaricata la versione da 1920 × 1252 px generata da Wikimedia a partire dall'originale da 1997 × 1302 px, ridotta a
+    1600 × 1043 px e ricodificata in JPEG (qualità 88, senza metadati); nessun ritaglio, nessuna modifica dei colori.
+    Questo adattamento è condiviso con la stessa licenza (CC BY-SA 2.0).
+  en: >-
+    Downloaded the 1920 × 1252 px Wikimedia rendition of the 1997 × 1302 px original, downscaled to 1600 × 1043 px and
+    re-encoded as JPEG (quality 88, no metadata); no crop, no colour change. This adaptation is shared under the same
+    licence (CC BY-SA 2.0).
+attributionText: >-
+  Yale Rosen, "Metastatic calcification" (Flickr 4867151398), via Wikimedia Commons, CC BY-SA 2.0
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+lookFor:
+  it: "Confronta le aree nocciola pallido con il polmone più scuro attorno, senza farti distrarre dagli anelli bianchi."
+  en: "Compare the pale tan areas with the darker lung around them, and do not let the white rings distract you."
+caption:
+  it: >-
+    Calcificazione metastatica del polmone: particolare della superficie di taglio, con ogni probabilità all'autopsia (la
+    fonte non lo dice; nella foto non c'è una scala). Prima orientati: tutto il campo è polmone, e i piccoli anelli e
+    le fessure bianche sparsi qua e là sono vie aeree e vasi sezionati di traverso. Poi confronta i colori. Al centro e in alto a destra ci sono aree irregolari, a
+    carta geografica, di colore nocciola pallido e dall'aspetto finemente poroso, mentre il polmone attorno è bruno più
+    scuro; secondo la fonte le aree nocciola pallido sono la calcificazione metastatica. Al taglio un polmone così può
+    risultare granuloso, perché il minerale irrigidisce le pareti alveolari (vedi le micrografie di questa scheda).
+    Perché «metastatica»: il calcio precipita in un polmone che prima non era danneggiato, a causa di un eccesso
+    sistemico di calcio o di fosfato, per esempio nell'insufficienza renale cronica o nell'iperparatiroidismo primario; la fonte
+    non indica la causa in questo paziente. Attenzione: a occhio nudo il quadro è sfumato, facile da non vedere o da
+    scambiare per un comune addensamento; la conferma viene dal microscopio, dove le pareti alveolari mostrano depositi
+    viola scuro in EE che diventano neri con la von Kossa.
+  en: >-
+    Metastatic calcification of the lung: close-up of a cut surface, most likely at autopsy (the source does not say;
+    there is no scale in the photograph).
+    Orient yourself first: the whole field is lung, and the small white rings and slits scattered across it are airways
+    and vessels cut across. Then compare the colours. Irregular, map-like areas in the centre and at the upper right are
+    pale tan and finely porous, while the lung around them is darker brown; according to the source, the pale tan areas
+    are the metastatic calcification. Lung like this can feel gritty under the knife, because mineral now stiffens the
+    alveolar walls (see the micrographs of this card). Why "metastatic": calcium precipitates in lung that was not
+    damaged beforehand, driven by a systemic excess of calcium or phosphate, for example in chronic kidney disease or
+    primary hyperparathyroidism; the source does not give the cause in this patient. Pitfall: to the naked eye the
+    change is subtle, easily overlooked or taken for an ordinary consolidation; it is proven under the microscope, where
+    the alveolar walls carry dark purple deposits on H&E that turn black with von Kossa.
+alt:
+  it: >-
+    Fotografia ravvicinata, su fondo blu, della superficie di taglio di un polmone: aree irregolari color nocciola
+    pallido, finemente porose, al centro e in alto a destra, circondate da tessuto bruno più scuro, con molti piccoli
+    anelli e fessure bianchi; pieghe di pleura ai margini.
+  en: >-
+    Close-up photograph, on a blue background, of the cut surface of a lung: irregular pale tan, finely porous areas in
+    the centre and at the upper right, surrounded by darker brown tissue, with many small white rings and slits; folds
+    of pleura at the edges.
+annotations:
+  - id: pale-tan-area
+    label: { it: "Area nocciola pallido: la calcificazione metastatica secondo la fonte", en: "Pale tan area: the metastatic calcification, according to the source" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.33, 0.37, 0.37, 0.29, 0.44, 0.30, 0.465, 0.38, 0.47, 0.47, 0.50, 0.53, 0.48, 0.62, 0.40, 0.66, 0.35, 0.62, 0.32, 0.52] }
+  - id: darker-lung
+    label: { it: "Polmone più scuro attorno", en: "Darker lung around it" }
+    revealOrder: 2
+    shape: { type: rect, coords: [0.52, 0.43, 0.09, 0.12] }
+  - id: airway-or-vessel
+    label: { it: "Via aerea o vaso sezionato: un punto di riferimento, non un deposito", en: "Airway or vessel cut across: a landmark, not a deposit" }
+    revealOrder: 3
+    shape: { type: circle, coords: [0.319, 0.272, 0.02] }

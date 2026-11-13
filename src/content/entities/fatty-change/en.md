@@ -32,7 +32,7 @@ Every cause tips the balance between lipid arriving in the cell and lipid leavin
 
 **Kwashiorkor** shows the export arm in isolation: carbohydrate supplies the substrate for fat, but protein deficiency limits the apoproteins needed to carry it out of the cell.<!--c:fatty-change-c021-->
 
-**Microvesicular steatosis** reflects severe injury to mitochondria.<!--c:fatty-change-c022--> In acute fatty liver of pregnancy, a fetal defect of fatty acid oxidation (classically LCHAD deficiency) sends unprocessed fatty acids back to the mother and overwhelms her β-oxidation.<!--c:fatty-change-c023-->
+**Microvesicular steatosis** reflects severe injury to mitochondria.<!--c:fatty-change-c022--> In acute fatty liver of pregnancy, the mother's β-oxidation can be swamped by fatty acids that return across the placenta from a fetus unable to oxidize them, classically because of LCHAD deficiency.<!--c:fatty-change-c023-->
 
 ## Gross morphology
 
@@ -44,21 +44,27 @@ The fatty liver is enlarged and yellow, and in heavy drinkers it can weigh up to
 
 **Microvesicular steatosis.** Countless tiny droplets fill the cell without displacing its nucleus, which stays in the middle.<!--c:fatty-change-c028--> In acute fatty liver of pregnancy the hepatocytes are also enlarged.<!--c:fatty-change-c029-->
 
-**Ultrastructure.** Electron microscopy of the drinker's hepatocyte shows the toxic footprint of ethanol itself: oversized (even giant) mitochondria and a proliferated smooth ER.<!--c:fatty-change-c030-->
+**Ultrastructure.** In the drinker's hepatocyte the electron microscope finds oversized, sometimes giant, mitochondria and a proliferated smooth ER: changes due to ethanol itself, not to the stored fat.<!--c:fatty-change-c030-->
 
 ## Special stains, IHC and molecular findings
 
-- On routine H&E sections the vacuoles look empty, because lipid is dissolved during tissue processing.<!--c:fatty-change-c031-->
-- Fat is shown on **frozen sections** with lipid stains such as Sudan red, which colors it red.<!--c:fatty-change-c032-->
-- **Oil red O** marks neutral lipid red.<!--c:fatty-change-c033-->
-- **PAS** identifies glycogen, which helps separate glycogen-laden cells from fat-laden ones.<!--c:fatty-change-c034-->
+**How it is studied:**
+
+- **Specimen:** a needle core biopsy of the liver, which pathologists prefer to a surgical wedge for a diffuse disease; only tissue shows whether steatohepatitis has developed on top of simple fatty change, which keeps the biopsy the reference standard in NAFLD.<!--c:fatty-change-c070--> One limit is sampling error, since the liver is 50 000 to 65 000 times larger than even a good core; cores of at least 1.5 cm, or a second core, lower the risk.<!--c:fatty-change-c071-->
+- **H&E:** on routine H&E sections the vacuoles look empty, because lipid is dissolved during tissue processing.<!--c:fatty-change-c031--> The report names the pattern (macrovesicular, microvesicular or mixed) and grades the share of hepatocytes with fat: NAFLD requires fat in more than 5% of them, and 5–33% is mild, 34–66% moderate, more than 66% severe.<!--c:fatty-change-c072--> In adults the fat of NAFLD usually starts around the central vein (acinar zone 3), whereas in most children it does not.<!--c:fatty-change-c073-->
+- **Fat stains:** fat is shown on **frozen sections** with lipid stains such as Sudan red, which colors it red (see [[g:fat-stains]]).<!--c:fatty-change-c032--> **Oil red O** marks neutral lipid red.<!--c:fatty-change-c033--> It matters most when the droplets are tiny: in pure microvesicular steatosis, oil red O may be what proves that the finely vacuolated cytoplasm holds fat.<!--c:fatty-change-c074-->
+- **PAS and PAS-D:** PAS identifies glycogen, which helps separate glycogen-laden cells from fat-laden ones.<!--c:fatty-change-c034--> Diastase digests glycogen, so material that loses its PAS staining on the diastase-treated slide (PAS-D) is glycogen.<!--c:fatty-change-c075--> The two stores can coexist, as in type I glycogen storage disease (von Gierke disease).<!--c:fatty-change-c076-->
+- **Trichrome:** collagen stains blue; in steatohepatitis it usually appears first around the central venule and between single hepatocytes, in a "chicken-wire" pattern.<!--c:fatty-change-c077-->
+- **Immunohistochemistry:** ballooned hepatocytes, the injured cells that mark steatohepatitis, are recognized inconsistently on H&E by different pathologists; keratin 8/18 immunostaining may help to pick them out, because these cells have lost their normal keratins.<!--c:fatty-change-c078-->
+- **Skeletal muscle:** when weakness or exercise intolerance suggests a lipid myopathy, the muscle biopsy is divided: a piece fixed in glutaraldehyde is kept in case electron microscopy is needed, and an unfixed piece is frozen for cryostat sections.<!--c:fatty-change-c079--> On frozen H&E the fibers are riddled with vacuoles, and oil red O turns the same vacuoles red, proof that they hold neutral fat.<!--c:fatty-change-c080-->
+- **Molecular tests:** in some cases of acute fatty liver of pregnancy, DNA analysis finds the fetal defect: the baby carries an LCHAD mutation, such as Glu474Gln, that exposes it to a fatty liver and to hypoketotic hypoglycemia.<!--c:fatty-change-c081-->
 
 ## Clinical presentation
 
 - **Liver:** uncomplicated alcoholic fatty liver is clinically quiet or nearly so, however marked the histology.<!--c:fatty-change-c035--> In nonalcoholic fatty liver disease many patients remain asymptomatic, with only moderate rises in liver enzymes.<!--c:fatty-change-c036-->
 - **Acute fatty liver of pregnancy:** abdominal pain, jaundice and anorexia, almost always in the third trimester.<!--c:fatty-change-c037-->
-- **Reye syndrome:** an uncommon disease of children that typically follows a viral fever (influenza, chickenpox) and combines microvesicular fat with liver failure and encephalopathy.<!--c:fatty-change-c038--> Aspirin given during that illness is the classic association, although the syndrome is now known to be more than simple aspirin toxicity.<!--c:fatty-change-c069-->
-- **Heart and skeletal muscle:** in carnitine deficiency, fatty acids cannot enter mitochondria and lipid droplets pile up in muscle fibers.<!--c:fatty-change-c039--> The systemic form can also involve the heart and liver.<!--c:fatty-change-c040-->
+- **Reye syndrome:** an uncommon disease of children that typically follows a viral fever (influenza, chickenpox) and combines microvesicular fat with liver failure and encephalopathy.<!--c:fatty-change-c038--> Aspirin given during that illness is the classic association, although aspirin toxicity alone is now known not to explain the syndrome.<!--c:fatty-change-c069-->
+- **Heart and skeletal muscle:** in carnitine deficiency, fatty acids cannot enter mitochondria and lipid droplets pile up in muscle fibers.<!--c:fatty-change-c039--> The systemic form can also involve the heart and liver.<!--c:fatty-change-c040--> In diphtheria the toxin can disturb the heart: the myocardium may then show focal necrosis and, in its myocytes, fat droplets.<!--c:fatty-change-c082-->
 
 ## Diagnosis, key lab and imaging
 

@@ -102,8 +102,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "30", pages: "1361-1362" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: metastatic-calcification-c014
     section: pathogenesis
     statement: "In dystrophic calcification, membrane-derived fatty acids from dying cells complex with calcium, which then precipitates locally."
@@ -254,8 +254,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "22", pages: "964" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: metastatic-calcification-c033
     section: differential
     statement: "Calcium stones arise when luminal fluids are supersaturated and calcium settles on an organic core, e.g. in bile ducts or the urinary tract."
@@ -294,8 +294,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "22", pages: "964" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: metastatic-calcification-c038
     section: high-yield
     statement: "Typical sites are blood vessels, renal tubules and the alveolar septa of the lung."
@@ -462,13 +462,129 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "26", pages: "1179" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: metastatic-calcification-c059
     section: high-yield
     statement: "Chronic kidney disease leads to metastatic calcification through phosphate retention and hyperphosphatemia."
     sourceRef: { source: rubin-8e, chapter: "30", pages: "1361-1362" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: metastatic-calcification-c060
+    section: micro
+    statement: "Metastatic calcification also affects the gastric mucosa; relative alkalinity within the cells is the proposed cause of this site preference."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "30" }
+    status: beyond-reference
+    secondSource: { source: gorospe-2007, locator: "abstract (PubMed PMID 17452819); full text not read" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: metastatic-calcification-c061
+    section: micro
+    statement: "Within the alveolar walls of the lung, the basement membrane under the lining epithelium is where most of the calcium salt accumulates."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "30" }
+    status: beyond-reference
+    secondSource: { source: belem-2014, locator: "abstract (PubMed PMID 24529738); full text not read" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: metastatic-calcification-c062
+    section: ancillary
+    statement: "Pulmonary metastatic calcification often goes undiagnosed in life, yet autopsy series find it in 60-75% of renal-failure patients."
+    sourceRef: { source: rubin-8e, chapter: "30", pages: "1362" }
+    status: beyond-reference
+    secondSource: { source: belem-2014, locator: "abstract (PubMed PMID 24529738); full text not read" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: metastatic-calcification-c063
+    section: ancillary
+    statement: "Routine gastric biopsies show metastatic calcification only rarely; it is more often discovered at autopsy or on a bone scan whose tracer collects in the stomach."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "30" }
+    status: beyond-reference
+    secondSource: { source: gorospe-2007, locator: "abstract (PubMed PMID 17452819); full text not read" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: metastatic-calcification-c064
+    section: ancillary
+    statement: "Metastatic calcification of the heart can be fatal, and calcium deposits in a gastric biopsy can be the clue to such a systemic process, so the finding deserves a mention in the pathology report."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "30" }
+    status: beyond-reference
+    secondSource: { source: gorospe-2007, locator: "abstract (PubMed PMID 17452819); full text not read" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: metastatic-calcification-c065
+    section: ancillary
+    statement: "Calcium deposits are already visible on routine H&E, where hematoxylin stains them deep blue."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: metastatic-calcification-c066
+    section: ancillary
+    statement: "The black color of the von Kossa stain is metallic silver: calcium deposits take up silver ions from silver nitrate, and a light-assisted reduction then turns this silver into the metal."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+    status: beyond-reference
+    secondSource: { source: schneider-2021, locator: "section Chemical basis of the staining; also section The original description (full text read in PMC, PMC8695535)" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: metastatic-calcification-c067
+    section: ancillary
+    statement: "Alizarin red, like von Kossa, is a calcium stain that helps to find subtle calcification in tissue sections."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+    status: beyond-reference
+    secondSource: { source: bahrani-2020, locator: "abstract (PubMed PMID 32604207), stated for skin biopsies in calciphylaxis; full text not read" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: metastatic-calcification-c068
+    section: clinical
+    statement: "Pulmonary metastatic calcification can lead to respiratory failure, although it is frequently silent."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "30" }
+    status: beyond-reference
+    secondSource: { source: belem-2014, locator: "abstract (PubMed PMID 24529738); full text not read" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: metastatic-calcification-c069
+    section: diagnosis
+    statement: "In metastatic pulmonary calcification, high-resolution CT may show calcified nodules or ground-glass opacity, and bone-seeking radionuclide scans may show tracer uptake in the lungs."
+    sourceRef: { source: rubin-8e, chapter: "30", pages: "1348" }
+    status: beyond-reference
+    secondSource: { source: belem-2014, locator: "abstract (PubMed PMID 24529738); full text not read" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: metastatic-calcification-c070
+    section: prognosis
+    statement: "Correcting the mineral disorder of chronic renal failure, for example with a kidney transplant or a parathyroidectomy, can make lung calcification regress."
+    sourceRef: { source: rubin-8e, chapter: "30", pages: "1362" }
+    status: beyond-reference
+    secondSource: { source: belem-2014, locator: "abstract (PubMed PMID 24529738); full text not read" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: metastatic-calcification-c071
+    section: high-yield
+    statement: "The gastric mucosa is another preferential site of metastatic calcification."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "30" }
+    status: beyond-reference
+    secondSource: { source: gorospe-2007, locator: "abstract (PubMed PMID 17452819); full text not read" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: metastatic-calcification-c072
+    section: traps
+    statement: "A normal chest radiograph does not exclude metastatic pulmonary calcification, because chest films are often normal in this condition."
+    sourceRef: { source: rubin-8e, chapter: "30", pages: "1348" }
+    status: beyond-reference
+    secondSource: { source: belem-2014, locator: "abstract (PubMed PMID 24529738); full text not read" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09

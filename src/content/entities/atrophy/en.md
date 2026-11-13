@@ -44,22 +44,30 @@ Atrophy is a reduction in the size of a cell or of an organ.<!--c:atrophy-c001--
 
 Many stimuli do not trigger atrophy directly; they switch off the opposing growth program, and the result depends on which side prevails.<!--c:atrophy-c033-->
 
-**Cell loss.** In the very old, when replacement by progenitor cells cannot keep pace with cell loss, the heart, skeletal muscle and brain become atrophic.<!--c:atrophy-c034-->
+**Cell loss.** In the very old, when replacement by progenitor cells cannot keep pace with cell loss, the heart, skeletal muscle and brain become atrophic.<!--c:atrophy-c034--> In organs that depend on hormones, apoptosis helps restore the cell balance when the stimulus fades, for example as the breast involutes after breastfeeding ends (see [[apoptosis]]).<!--c:atrophy-c070-->
 
 ## Gross morphology
 
-The affected organ or tissue is reduced in size.<!--c:atrophy-c035--> In an atrophic brain the gyri are thin and the sulci wide.<!--c:atrophy-c036--> The endometrium of an elderly woman is thin compared with that of reproductive age.<!--c:atrophy-c037-->
+The affected organ or tissue is reduced in size.<!--c:atrophy-c035--> In an atrophic brain the gyri are thin and the sulci wide.<!--c:atrophy-c036--> The ventricles enlarge to take up the space left by the lost tissue (hydrocephalus ex vacuo), a compensatory change rather than a disturbance of cerebrospinal fluid flow.<!--c:atrophy-c071--> The endometrium of an elderly woman is thin compared with that of reproductive age.<!--c:atrophy-c037-->
 
 ## Microscopic morphology
 
 - Cells are smaller than their normal counterparts, as seen in myocytes and adipocytes during starvation.<!--c:atrophy-c038-->
 - In denervated skeletal muscle, fibers lose cytoplasmic protein, so their nuclei appear relatively more prominent.<!--c:atrophy-c039-->
-- The atrophic postmenopausal endometrium contains only a few small glands, some of them cystic.<!--c:atrophy-c040-->
+- Seen in cross-section, the denervated fiber becomes small and angulated; at first such fibers appear in isolation, then with time they come together in clusters that grow from a few fibers into large groups.<!--c:atrophy-c072--> If reinnervation fails, the fibers eventually vanish and fat and fibrous tissue take their place.<!--c:atrophy-c073-->
+- The atrophic postmenopausal endometrium contains only a few small glands, some of them cystic.<!--c:atrophy-c040--> When, as often happens, the residual glands are dilated into cysts, the picture is called senile cystic atrophy; dilated or not, the glands have a thin lining and lie in a fibrous, collagen-rich stroma.<!--c:atrophy-c074-->
 - Lipofuscin, the golden-brown "wear-and-tear" pigment of long-lived cells such as neurons and cardiac myocytes, can be more conspicuous in atrophic organs.<!--c:atrophy-c041-->
 
 ## Special stains, IHC and molecular findings
 
-Not applicable.
+**How it is studied:**
+
+- **Specimen:** muscle atrophy is assessed on a biopsy of a moderately affected muscle, often the quadriceps or biceps (the gastrocnemius together with the sural nerve when a neuropathy is suspected): an unaffected muscle can be almost normal, while in a severely weakened one little muscle may be left among fat and fibrous tissue.<!--c:atrophy-c075-->
+- **Handling:** the sample is divided between formalin, unfixed freezing for enzyme histochemistry (it reveals enzyme activity, while immunohistochemistry only reveals that a protein is there) and glutaraldehyde for electron microscopy.<!--c:atrophy-c076-->
+- **H&E and myosin ATPase:** on H&E, selective atrophy of type II fibers produces angular fibers that mimic denervation; myosin ATPase (type I fibers pale, type II dark at alkaline pH) shows that in this pattern, seen with chronic disuse, corticosteroids, old age or cachexia, every angular fiber is type II.<!--c:atrophy-c077-->
+- **Nonspecific esterase and NADH-tetrazolium reductase (NADH-TR):** atrophic fibers caused by denervation, which include both types, stand out as intensely stained, while the angular fibers of selective type II atrophy are not darkly stained.<!--c:atrophy-c078-->
+- **Fiber-type grouping:** on ATPase, normal muscle is a mosaic of pale and dark fibers; large patches of a single type mean that, after denervation, surviving motor neurons adopted the orphaned fibers and imposed their own type on them (reinnervation); grouped atrophy, typical of chronic denervation as in ALS, is the next step, when these enlarged motor units lose their nerve supply too and a whole patch shrinks at once.<!--c:atrophy-c079-->
+- **Limits:** the biopsy cannot tell why the muscle lost its nerve supply, since amyotrophic lateral sclerosis and a diabetic neuropathy can give the same picture; what it does show is that the lower motor neuron or its axon is damaged, and whether the process is recent or long-standing.<!--c:atrophy-c080-->
 
 ## Clinical presentation
 
@@ -98,6 +106,7 @@ Not applicable.
 - **FOXO** raises **E3 ubiquitin ligases** and promotes atrophy; **IGF-1/Akt** restrains it.<!--c:atrophy-c059-->
 - Cell **shrinkage** is reversible; cell **loss** (e.g., Alzheimer brain) is not.<!--c:atrophy-c060-->
 - **Cachexia** and **sarcopenia** are the major clinical forms of muscle atrophy.<!--c:atrophy-c061-->
+- **Denervation atrophy**: small **angular** fibers of both types, dark with **nonspecific esterase/NADH-TR**; **fiber-type grouping** on ATPase = denervation followed by reinnervation.<!--c:atrophy-c081-->
 
 ## Common misconceptions and exam traps
 
@@ -107,6 +116,8 @@ Not applicable.
 - Atrophy is not always pathologic: the postmenopausal endometrium and the post-lactation breast are physiologic examples.<!--c:atrophy-c065-->
 - In adults, IGF-1 and Akt mainly prevent atrophy rather than directly cause growth.<!--c:atrophy-c066-->
 - Lipofuscin is not necessarily inert: it may both result from and add to oxidant stress in the cell.<!--c:atrophy-c067-->
+- Angular atrophic fibers on H&E do not prove denervation: selective type II atrophy (corticosteroids, disuse) looks the same until ATPase, esterase and NADH-TR are done.<!--c:atrophy-c082-->
+- Paralysis from a stroke or multiple sclerosis does not give the denervation pattern: the lesion lies in the upper motor neuron, the lower motor neuron still supplies the fibers, and the muscle shrinks only in a diffuse, nonspecific way.<!--c:atrophy-c083-->
 
 ## Mnemonics
 

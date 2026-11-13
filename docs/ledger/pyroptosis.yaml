@@ -30,24 +30,33 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "1", pages: "45" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: pyroptosis-c051
+    section: definition
+    statement: "Its inflammatory character is reflected in the name pyroptosis, which joins the Greek ptosis (falling) to pyro- (fire or fever)."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "56" }
+    status: beyond-reference
+    secondSource: { source: bergsbaken-2009, locator: "introduction (origin of the term)" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pyroptosis-c005
     section: etiology
-    statement: "Bacteria, flagellated organisms and DNA or RNA viruses are triggers of pyroptosis."
+    statement: "Viruses and bacteria that infect the cell are typical triggers of pyroptosis."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "56-57" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pyroptosis-c006
     section: etiology
-    statement: "Macrophages infected with Salmonella undergo pyroptosis after recognizing bacterial flagellin."
+    statement: "Sensing flagellin, a protein of the bacterium, sets off pyroptosis in macrophages that harbor Salmonella."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "45" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
   - claimId: pyroptosis-c007
     section: etiology
     statement: "Human caspase-4 and caspase-5, and mouse caspase-11, recognize cytosolic bacterial LPS directly and trigger pyroptosis."
@@ -59,44 +68,44 @@ claims:
     date: 2026-11-03
   - claimId: pyroptosis-c008
     section: etiology
-    statement: "Crystals and other inanimate particles can trigger pyroptosis; monosodium urate crystals act via NLRs to assemble the inflammasome (chapter 4, p. 134)."
+    statement: "Mineral crystals and similar irritants can trigger pyroptosis without infection; monosodium urate crystals, for example, lead to inflammasome assembly through NLRs (chapter 4, p. 134)."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "57" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pyroptosis-c009
     section: etiology
-    statement: "Pyroptosis is thought to have a role in obesity, metabolic syndrome and type 2 diabetes."
+    statement: "Pyroptosis is thought to contribute to obesity and to type 2 diabetes."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "56-58" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pyroptosis-c010
     section: pathogenesis
-    statement: "Some cytosolic NLRs, NLRP3 being the best characterized, assemble into large multiprotein inflammasomes that cleave pro-inflammatory cytokines into their active form."
+    statement: "Inflammasomes, large multiprotein complexes in which some pro-inflammatory cytokines are proteolytically activated, are assembled by cytosolic NLRs."
     sourceRef: { source: rubin-8e, chapter: "2, 11", pages: "87 (ch. 2), 507 (ch. 11)" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pyroptosis-c011
     section: pathogenesis
-    statement: "Inflammasome assembly is triggered when PAMPs or other danger signals such as crystals activate an NLR inside the cell."
+    statement: "An NLR inside the cell is activated by PAMPs or by other danger signals such as crystals, and this sets off inflammasome assembly."
     sourceRef: { source: rubin-8e, chapter: "1, 4", pages: "56-57 (ch. 1), 134 (ch. 4)" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pyroptosis-c012
     section: pathogenesis
-    statement: "The NLRP3 inflammasome, the best studied, comprises an NLR, ASC and caspase-1 in macrophages and other innate immune cells."
+    statement: "Innate immune cells such as macrophages contain inflammasomes; the best characterized, NLRP3, consists of an NLR sensor, the adaptor ASC and caspase-1."
     sourceRef: { source: rubin-8e, chapter: "11", pages: "507" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pyroptosis-c013
     section: pathogenesis
     statement: "Inflammasomes contain procaspase-1, which is converted to active caspase-1 when the linked receptor is activated."
@@ -105,22 +114,31 @@ claims:
     verifiedBy: agent
     verifier: "verifier-agent"
     date: 2026-11-03
+  - claimId: pyroptosis-c052
+    section: pathogenesis
+    statement: "An activating stimulus such as extracellular ATP or urate crystals generally triggers NLRP3 only in a cell primed beforehand through a pattern recognition receptor (for example TLR4 engaged by LPS), priming being what induces NLRP3 and pro-IL-1beta."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "56" }
+    status: beyond-reference
+    secondSource: { source: den-hartigh-2018, locator: "Commentary: Background Information; Critical Parameters, Pyroptosis Induction" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pyroptosis-c014
     section: pathogenesis
     statement: "Caspase-1 is a cysteine protease, like the apoptotic caspases, but its activation normally leads to pyroptosis rather than apoptosis."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "56" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pyroptosis-c015
     section: pathogenesis
-    statement: "Around fourteen caspases are known; roughly half take part in apoptosis, while others such as caspase-1 mediate pyroptosis."
-    sourceRef: { source: rubin-8e, chapter: "1", pages: "47" }
+    statement: "Some caspases, caspase-1 among them, mediate pyroptosis; of the roughly fourteen known caspases, only about half work in apoptosis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "47, 56" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pyroptosis-c016
     section: pathogenesis
     statement: "Inflammasome activation yields active IL-1 (IL-1beta) and IL-18; NLR complexes proteolytically activate pro-inflammatory cytokines (chapter 2, p. 87)."
@@ -131,47 +149,47 @@ claims:
     date: 2026-11-03
   - claimId: pyroptosis-c017
     section: pathogenesis
-    statement: "Caspase-1, -4, -5 and -11 cleave gasdermin D in the linker between its N-terminal and C-terminal domains."
+    statement: "Gasdermin D consists of N-terminal and C-terminal domains joined by a linker, which caspase-1, -4, -5 and -11 cleave."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "56-57" }
     status: beyond-reference
     secondSource: { source: shi-2015, locator: "abstract" }
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pyroptosis-c018
     section: pathogenesis
-    statement: "Cleavage relieves autoinhibition by the C-terminal domain, and the freed N-terminal domain is sufficient to cause pyroptosis."
+    statement: "The N-terminal domain can cause pyroptosis on its own; in the intact protein the C-terminal domain holds it in check, and caspase cleavage removes this restraint."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "56-57" }
     status: beyond-reference
     secondSource: { source: shi-2015, locator: "abstract" }
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pyroptosis-c019
     section: pathogenesis
-    statement: "The gasdermin D N-terminal domain binds membrane lipids such as phosphoinositides, translocates to the plasma membrane and forms large pores."
+    statement: "The freed gasdermin D N-terminal domain forms large pores in the plasma membrane, where it is anchored by binding lipids such as phosphoinositides."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "56-57" }
     status: beyond-reference
     secondSource: { source: ding-2016, locator: "abstract" }
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pyroptosis-c021
     section: pathogenesis
-    statement: "Influx of water and solutes through the pores makes the cell swell and then die by bursting."
+    statement: "The cell finally bursts after swelling with the water and solutes that enter through the pores."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "56" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pyroptosis-c022
     section: pathogenesis
-    statement: "Caspase-1 cleaves glycolytic enzymes, depleting cell energy, and also cytoskeletal proteins, chaperones and caspase-7."
+    statement: "Cellular energy is depleted because caspase-1 also cleaves glycolytic enzymes; cytoskeletal proteins are among its other substrates."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "56-57" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pyroptosis-c023
     section: pathogenesis
     statement: "Gasdermin D-deficient cells release much less IL-1beta although caspase-1 still processes it; gasdermin D pores act as the conduit for IL-1beta release."
@@ -183,12 +201,12 @@ claims:
     date: 2026-11-03
   - claimId: pyroptosis-c024
     section: pathogenesis
-    statement: "Membrane rupture releases DAMPs into the extracellular space, which recruit further immune cells to clear infection."
+    statement: "Further immune cells are recruited to clear infection by the DAMPs that escape from the ruptured cell."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "45" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pyroptosis-c025
     section: micro
     statement: "The pyroptotic cell swells and its membrane ruptures, whereas apoptotic cells show membrane blebbing without rupture."
@@ -207,20 +225,110 @@ claims:
     date: 2026-11-03
   - claimId: pyroptosis-c027
     section: micro
-    statement: "By activating pro-inflammatory cytokines, the dead pyroptotic cell elicits inflammation."
+    statement: "Inflammation follows pyroptotic death because the dying cell activates pro-inflammatory cytokines."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "56" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: pyroptosis-c053
+    section: micro
+    statement: "Unlike apoptotic nuclei, which fragment, the pyroptotic nucleus remains intact while its chromatin condenses."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54, 57" }
+    status: beyond-reference
+    secondSource: { source: bergsbaken-2009, locator: "section Mechanism and features of pyroptosis" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: pyroptosis-c054
+    section: ancillary
+    statement: "Pyroptosis is difficult to catch in tissue because the cells die rapidly and are cleared by macrophages."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "56" }
+    status: beyond-reference
+    secondSource: { source: wang-2022, locator: "Conclusions" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: pyroptosis-c055
+    section: ancillary
+    statement: "Morphology cannot by itself establish pyroptosis; light microscopy shows only a lytic death, as described in the micro section."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "56-57" }
+    status: beyond-reference
+    secondSource: { source: wang-2022, locator: "section Monitoring staining status" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: pyroptosis-c056
+    section: ancillary
+    statement: "Inflammatory caspases often, though not always, trigger pyroptosis; the NCCD 2018 defines it by its dependence on plasma membrane pores formed by gasdermins."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "56-57" }
+    status: beyond-reference
+    secondSource: { source: galluzzi-2018, locator: "section Pyroptosis (proposed definition at the end of the section)" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: pyroptosis-c057
+    section: ancillary
+    statement: "On tissue sections, gasdermin immunohistochemistry is a weak indicator of activation, because current methods struggle to separate cleaved fragments from full-length protein."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "56-57" }
+    status: beyond-reference
+    secondSource: { source: wang-2022, locator: "section Monitoring pyroptosis in vivo" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: pyroptosis-c058
+    section: ancillary
+    statement: "In cultured cells, the strongest evidence of caspase-1 action is a Western blot showing cleaved gasdermin D and cleaved caspase-1, while ELISA quantifies the mature IL-1beta released into the medium."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "56-57" }
+    status: beyond-reference
+    secondSource: { source: den-hartigh-2018, locator: "Commentary: Background Information; protocol ELISA for mouse IL-1beta" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
+  - claimId: pyroptosis-c059
+    section: ancillary
+    statement: "LDH, a cytosolic enzyme, appears in the culture medium after the cell bursts, while ethidium bromide or similar dyes that an intact membrane excludes enter through gasdermin pores."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "56-57" }
+    status: beyond-reference
+    secondSource: { source: den-hartigh-2018, locator: "Introduction; protocol Visualizing loss of membrane integrity by fluorescence microscopy" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
+  - claimId: pyroptosis-c060
+    section: ancillary
+    statement: "Caspase-1-deficient or inflammasome-deficient cells are the control that links LDH release or dye uptake to pyroptosis, because lysis is also the final step in many other ways of dying."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "56-57" }
+    status: beyond-reference
+    secondSource: { source: den-hartigh-2018, locator: "Commentary: Background Information" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
+  - claimId: pyroptosis-c061
+    section: ancillary
+    statement: "TUNEL staining is positive in pyroptosis as well as in apoptosis and necroptosis, so TUNEL positivity does not identify apoptosis."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "57" }
+    status: beyond-reference
+    secondSource: { source: wang-2022, locator: "Table 1" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: pyroptosis-c062
+    section: ancillary
+    statement: "The ~180-bp DNA ladder of apoptosis is absent in pyroptosis, even though a caspase-1-activated nuclease does cut pyroptotic DNA."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "47, 57" }
+    status: beyond-reference
+    secondSource: { source: bergsbaken-2009, locator: "section Mechanism and features of pyroptosis" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
   - claimId: pyroptosis-c028
     section: clinical
     statement: "Pyroptosis protects the host against intracellular pathogens."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "56" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pyroptosis-c029
     section: clinical
     statement: "In people with HIV, pyroptosis accounts for much of the loss of CD4+ T cells and adds to inflammation."
@@ -231,20 +339,29 @@ claims:
     date: 2026-11-03
   - claimId: pyroptosis-c030
     section: clinical
-    statement: "Several periodic fever syndromes arise from inherited defects in inflammasome control, and NLRP3 mutations are associated with hereditary periodic fever syndromes."
+    statement: "Inherited defects in inflammasome control cause several periodic fever syndromes, and hereditary periodic fevers are linked to NLRP3 mutations."
     sourceRef: { source: rubin-8e, chapter: "4, 11", pages: "134 (ch. 4), 507 (ch. 11)" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pyroptosis-c031
     section: clinical
-    statement: "NOMID is an inherited autoinflammatory disease in which mutation leaves cryopyrin, an inflammasome component, permanently active; the resulting IL-1 excess inflames skin and joints."
+    statement: "In NOMID, an inherited autoinflammatory disease, skin and joints become inflamed through excess IL-1 because a mutation keeps the inflammasome component cryopyrin (NLRP3) permanently active."
     sourceRef: { source: rubin-8e, chapter: "11", pages: "507" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: pyroptosis-c065
+    section: clinical
+    statement: "Active IL-1beta and IL-18 are produced when monosodium urate crystals (gout) or calcium pyrophosphate dihydrate crystals (pseudogout) engage the NLRP3 (cryopyrin) inflammasome, which helps explain the inflammation of these crystal arthritides."
+    sourceRef: { source: rubin-8e, chapter: "11", pages: "507" }
+    status: beyond-reference
+    secondSource: { source: martinon-2006, locator: "abstract" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pyroptosis-c032
     section: prognosis
     statement: "Inappropriate or dysregulated inflammasome activity causes inflammatory disease, while pyroptosis is protective in infection (chapter 1, p. 56)."
@@ -262,14 +379,23 @@ claims:
     verifiedBy: agent
     verifier: "verifier-agent"
     date: 2026-11-03
+  - claimId: pyroptosis-c066
+    section: prognosis
+    statement: "The IL-1 receptor antagonist anakinra produced a rapid response in all 18 patients with NOMID in one study, and the disease relapsed within days whenever it was withdrawn."
+    sourceRef: { source: rubin-8e, chapter: "11", pages: "507" }
+    status: beyond-reference
+    secondSource: { source: goldbach-mansky-2006, locator: "abstract" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pyroptosis-c034
     section: differential
-    statement: "Apoptosis uses executioner caspases-3, -6 and -7, shows membrane blebbing and nuclear fragmentation without membrane rupture or inflammation."
+    statement: "Apoptosis uses executioner caspases-3, -6 and -7 and causes no inflammation; its membrane blebs but does not rupture, and its nucleus fragments."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "45, 47, 54" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pyroptosis-c035
     section: differential
     statement: "In necroptosis, death-receptor signaling forms a RIP1-RIP3 necrosome and MLKL damages membranes independently of caspases."
@@ -280,12 +406,12 @@ claims:
     date: 2026-11-03
   - claimId: pyroptosis-c036
     section: differential
-    statement: "Necrotic cells swell, their membranes break up and their nuclei turn pyknotic, after which inflammation sets in."
+    statement: "In necrosis inflammation follows, after a swollen cell with a pyknotic nucleus has lost its plasma membrane integrity."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "54" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pyroptosis-c037
     section: differential
     statement: "In NETosis, neutrophils depend on NADPH oxidase and autophagy to release chromatin traps that catch and kill microbes."
@@ -310,14 +436,23 @@ claims:
     verifiedBy: agent
     verifier: "verifier-agent"
     date: 2026-11-03
+  - claimId: pyroptosis-c064
+    section: high-yield
+    statement: "An activating stimulus such as ATP or urate crystals usually switches NLRP3 on only after a first, priming signal has come through a pattern recognition receptor (for example LPS on TLR4)."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "56" }
+    status: beyond-reference
+    secondSource: { source: den-hartigh-2018, locator: "Commentary: Background Information" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
   - claimId: pyroptosis-c040
     section: high-yield
     statement: "Caspase-1 activates IL-1beta and IL-18 and normally leads to pyroptosis rather than apoptosis."
     sourceRef: { source: rubin-8e, chapter: "1, 11", pages: "56 (ch. 1), 507 (ch. 11)" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pyroptosis-c041
     section: high-yield
     statement: "Inflammatory caspases cleave gasdermin D, and its N-terminal fragment forms plasma membrane pores; the reference states that active caspase-1 leads to plasma membrane pores, the gasdermin D step comes from shi-2015 and ding-2016."
@@ -325,8 +460,8 @@ claims:
     status: beyond-reference
     secondSource: { source: shi-2015, locator: "abstract" }
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pyroptosis-c042
     section: high-yield
     statement: "Caspase-4/5 in humans and caspase-11 in mice directly sense cytosolic LPS."
@@ -358,16 +493,16 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "1", pages: "56" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pyroptosis-c046
     section: traps
-    statement: "Unlike apoptosis, pyroptosis ruptures the plasma membrane and releases DAMPs."
+    statement: "Pyroptotic cells release DAMPs through a ruptured plasma membrane, a rupture that apoptosis does not involve."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "45" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pyroptosis-c047
     section: traps
     statement: "Gasdermin D pores allow IL-1beta secretion from hyperactivated macrophages that remain alive."
@@ -393,6 +528,15 @@ claims:
     verifiedBy: agent
     verifier: "verifier-agent"
     date: 2026-11-03
+  - claimId: pyroptosis-c063
+    section: traps
+    statement: "Cell swelling and TUNEL positivity also occur in other forms of cell death, so they do not establish pyroptosis; detecting gasdermin cleavage, typically by Western blot, does."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "54, 56-57" }
+    status: beyond-reference
+    secondSource: { source: wang-2022, locator: "Table 1; sections Monitoring staining status and Monitoring molecular biomarkers for pyroptosis" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: pyroptosis-c050
     section: mnemonics
     statement: "Sequence: NLR sensing, inflammasome assembly, caspase-1 cleavage of substrates and cytokine activation, membrane pores, cell bursting."

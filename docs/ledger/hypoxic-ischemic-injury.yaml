@@ -10,12 +10,12 @@ claims:
     date: 2026-11-03
   - claimId: hypoxic-ischemic-injury-c002
     section: definition
-    statement: "Ischemia withholds glucose and other nutrients as well as oxygen, and metabolic wastes such as CO2 accumulate."
+    statement: "When blood flow stops, wastes such as CO2 are not cleared and cells are deprived of glucose and other fuels besides oxygen."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hypoxic-ischemic-injury-c003
     section: definition
     statement: "Short ischemia causes damage that cells can recover from; long ischemia causes irreversible injury and death, forming a single spectrum."
@@ -30,32 +30,40 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hypoxic-ischemic-injury-c005
     section: etiology
     statement: "Ischemia most often results from blocked arterial inflow, such as coronary occlusion."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "42-43" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hypoxic-ischemic-injury-c071
     section: etiology
     statement: "Venous as well as arterial occlusion can cause infarction, producing a red (hemorrhagic) infarct."
     sourceRef: { source: rubin-8e, chapter: "7", pages: "337" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hypoxic-ischemic-injury-c072
     section: etiology
-    statement: "Myocardial ischemia can result from prolonged supply-demand imbalance without fixed occlusion, e.g. hypotension, anemia, arrhythmias or coronary spasm."
+    statement: "Without a fixed occlusion, myocardial ischemia can come from a long-lasting shortfall of flow against oxygen demand, for example when blood pressure drops or a coronary artery goes into spasm."
     sourceRef: { source: rubin-8e, chapter: "17", pages: "655" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hypoxic-ischemic-injury-c074
+    section: etiology
+    statement: "Oxygen delivery can fall without any reduction in flow: anemia lowers myocardial oxygen delivery, and in CO poisoning carbon monoxide displaces oxygen from hemoglobin."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "655" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hypoxic-ischemic-injury-c006
     section: etiology
     statement: "Cardiac myocytes and neurons have high energy use and small energy stores, so loss of oxygen and fuel is especially harmful to them."
@@ -82,12 +90,20 @@ claims:
     date: 2026-11-03
   - claimId: hypoxic-ischemic-injury-c009
     section: pathogenesis
-    statement: "Ion gradients depend on channels, pumps, exchangers, an intact plasma membrane and abundant ATP."
+    statement: "Ion gradients last only while ATP is abundant and the plasma membrane stays whole."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hypoxic-ischemic-injury-c075
+    section: pathogenesis
+    statement: "Loss of ATP is the first blow that ischemia deals to the cell."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hypoxic-ischemic-injury-c010
     section: pathogenesis
     statement: "Steps of ischemic myocyte death may be simultaneous or sequential."
@@ -194,36 +210,36 @@ claims:
     date: 2026-11-03
   - claimId: hypoxic-ischemic-injury-c023
     section: pathogenesis
-    statement: "ROS peroxidize cardiolipin, a mitochondrial phospholipid with many unsaturated fatty acids, impairing the ETC and ATP production."
+    statement: "Cardiolipin is rich in unsaturated fatty acids, occurs only in mitochondria and is easily peroxidized by ROS, which impairs the electron transport chain and lowers ATP output."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "43" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hypoxic-ischemic-injury-c024
     section: pathogenesis
-    statement: "Ischemia causes sustained MPTP opening; loss of cytochrome c lowers ATP synthesis and may trigger apoptosis."
+    statement: "Further ATP loss and possible apoptosis follow when ischemia holds the MPTP open and cytochrome c is lost from the electron transport chain."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "43" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hypoxic-ischemic-injury-c025
     section: pathogenesis
     statement: "A cell dies when it can no longer keep its metabolism going."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "43" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hypoxic-ischemic-injury-c026
     section: pathogenesis
-    statement: "There is no sharply defined moment at which reversible injury becomes irreversible."
+    statement: "The exact moment when injury stops being reversible cannot be identified."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "3, 43" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hypoxic-ischemic-injury-c027
     section: pathogenesis
     statement: "With prolonged ischemia, membrane injury pushes the cell past the point of no return so that reflow cannot save it."
@@ -234,12 +250,12 @@ claims:
     date: 2026-11-03
   - claimId: hypoxic-ischemic-injury-c028
     section: pathogenesis
-    statement: "Calcium entry through a breached plasma membrane is a decisive step in ischemic cell death."
+    statement: "When the plasma membrane gives way, calcium floods into the cell down its steep gradient, and this flood is a decisive step in ischemic cell death."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hypoxic-ischemic-injury-c029
     section: gross
     statement: "Interruption of blood flow may result in infarction."
@@ -274,12 +290,12 @@ claims:
     date: 2026-11-03
   - claimId: hypoxic-ischemic-injury-c033
     section: micro
-    statement: "Mitochondria swell in acute ischemic injury with lower matrix density and less prominent cristae; this is reversible on recovery."
+    statement: "Mitochondrial swelling with a paler matrix is a typical ischemic change and reverses if the cell recovers."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "3-4" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hypoxic-ischemic-injury-c034
     section: micro
     statement: "Plasma membrane blebs can detach without impairing viability."
@@ -330,12 +346,78 @@ claims:
     date: 2026-11-03
   - claimId: hypoxic-ischemic-injury-c040
     section: micro
-    statement: "Contraction band necrosis results from massive Ca2+ influx and shows thick transverse eosinophilic bands of hypercontracted sarcomeres, especially in reperfused infarcts."
+    statement: "Massive calcium entry, most marked on reperfusion, makes sarcomeres hypercontract and produces contraction band necrosis, seen as dense eosinophilic cross-bands in the myocytes."
     sourceRef: { source: rubin-8e, chapter: "17", pages: "659-660" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hypoxic-ischemic-injury-c076
+    section: micro
+    statement: "Red neurons, with eosinophilic cytoplasm and a pyknotic nucleus, mark a cerebral infarct in a patient who survived about 6-24 hours; if survival lasted only minutes to a few hours, the tissue still looks normal."
+    sourceRef: { source: rubin-8e, chapter: "32", pages: "1456" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hypoxic-ischemic-injury-c077
+    section: ancillary
+    statement: "An early myocardial infarct is not visible grossly; at autopsy, TTC staining of heart slices detects the loss of dehydrogenase activity in infarcted muscle and aids gross diagnosis, but it misses some acute infarcts that histology confirms."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "657" }
+    status: beyond-reference
+    secondSource: { source: adegboyega-1997, locator: "abstract (TTC versus histology in 638 consecutive adult autopsy hearts)" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hypoxic-ischemic-injury-c078
+    section: ancillary
+    statement: "Viable myocardium stains red with TTC and the staining fades as the postmortem interval lengthens; in one forensic autopsy series the method was useful within about 1.5 days of death, and the infarct was very hard to detect when death followed the onset by under about 9 hours."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "657" }
+    status: beyond-reference
+    secondSource: { source: kakimoto-2013, locator: "abstract" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hypoxic-ischemic-injury-c079
+    section: ancillary
+    statement: "Wavy fibers are an early H&E sign: the living muscle around an infarct keeps contracting and pulls on ischemic myocytes that can no longer contract, until they are stretched into a wavy course."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "657" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hypoxic-ischemic-injury-c080
+    section: ancillary
+    statement: "Infarcted myocardium is eosinophilic on H&E from about 12-18 hours, but complete loss of the myocyte nuclei takes several days."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "657-658" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hypoxic-ischemic-injury-c081
+    section: ancillary
+    statement: "Only electron microscopy shows the earliest ischemic changes, described mainly in animal models; for about 20-30 minutes of complete ischemia the injury stays reversible, with mild mitochondrial swelling and sarcoplasmic edema."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "657" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hypoxic-ischemic-injury-c082
+    section: ancillary
+    statement: "Lethal myocyte injury, reached after about 30-60 minutes, is marked by amorphous matrix densities in greatly swollen mitochondria."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "657-658" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hypoxic-ischemic-injury-c083
+    section: ancillary
+    statement: "A trichrome stain colors collagen blue-green, which makes the scar of a healed infarct stand out."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "659" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hypoxic-ischemic-injury-c041
     section: clinical
     statement: "Repetitive angina can occur without infarction; ischemia can result in myocardial infarction."
@@ -354,36 +436,36 @@ claims:
     date: 2026-11-03
   - claimId: hypoxic-ischemic-injury-c043
     section: clinical
-    statement: "Enzymes and mediators released by necrotic cells induce inflammation and can injure nearby viable cells."
-    sourceRef: { source: rubin-8e, chapter: "1", pages: "42" }
+    statement: "Nearby viable cells can be injured both by the inflammation that necrosis elicits and by enzymes and mediators released from the dead cells."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "38, 42" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hypoxic-ischemic-injury-c044
     section: diagnosis
     statement: "A rise in serum cardiac troponin (I or T) or MB-CK, released from dead myocytes, indicates myocardial necrosis."
     sourceRef: { source: rubin-8e, chapter: "17", pages: "660" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hypoxic-ischemic-injury-c045
     section: diagnosis
-    statement: "Cardiac troponin (I or T) is the most widely assayed biomarker and is highly specific for cardiac muscle."
+    statement: "Cardiac troponin (I or T) is the biomarker most often measured, and a rise points very specifically to heart muscle."
     sourceRef: { source: rubin-8e, chapter: "17", pages: "660" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hypoxic-ischemic-injury-c073
     section: diagnosis
-    statement: "Diagnosing myocardial infarction requires a rise and/or fall of the cardiac biomarker within the time frame of a compatible clinical event."
+    statement: "A rise and/or fall of troponin timed with a compatible clinical event is required before myocardial infarction can be diagnosed."
     sourceRef: { source: rubin-8e, chapter: "17", pages: "660" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hypoxic-ischemic-injury-c046
     section: prognosis
     statement: "The degree of cell injury depends on the duration of ischemia."
@@ -394,12 +476,12 @@ claims:
     date: 2026-11-03
   - claimId: hypoxic-ischemic-injury-c047
     section: prognosis
-    statement: "When coronary flow is interrupted for under 30 minutes, restored blood supply allows recovery."
+    statement: "Myocardium whose flow comes back within 30 minutes can repair the damage and work normally again."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hypoxic-ischemic-injury-c048
     section: prognosis
     statement: "After short ischemia, reperfusion completely restores structure and function."
@@ -410,12 +492,12 @@ claims:
     date: 2026-11-03
   - claimId: hypoxic-ischemic-injury-c049
     section: prognosis
-    statement: "With longer ischemia, lethal injury occurs during reperfusion; in the heart reperfusion injury may account for up to half of final infarct size."
+    statement: "After intermediate ischemia, cells die when flow returns; this reperfusion death may make up as much as half of a heart's final infarct."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "43-44" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hypoxic-ischemic-injury-c050
     section: prognosis
     statement: "Lethal injury can develop during ischemia itself, requiring a longer ischemic period, independent of reperfusion."
@@ -424,6 +506,14 @@ claims:
     verifiedBy: agent
     verifier: "verifier-agent"
     date: 2026-11-03
+  - claimId: hypoxic-ischemic-injury-c084
+    section: prognosis
+    statement: "Atrophy, not necrosis, is the usual outcome of the chronic ischemia that a stenosis causes; in the heart it comes with interstitial fibrosis."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "337" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hypoxic-ischemic-injury-c051
     section: prognosis
     statement: "Repeated transient sublethal ischemia (e.g. repetitive angina) induces ischemic preconditioning, limiting necrosis after later prolonged ischemia."
@@ -434,12 +524,12 @@ claims:
     date: 2026-11-03
   - claimId: hypoxic-ischemic-injury-c052
     section: prognosis
-    statement: "HIF-1alpha contributes to preconditioning by inducing genes that limit ATP loss, calcium accumulation and ROS generation."
+    statement: "Better survival of a later ischemic episode is one effect of HIF-1alpha in preconditioning: the genes it induces help keep ATP and limit calcium build-up."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "45" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hypoxic-ischemic-injury-c053
     section: differential
     statement: "Hydropic swelling is reversible injury with a normally situated nucleus."
@@ -526,16 +616,24 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "1", pages: "42-43" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hypoxic-ischemic-injury-c064
     section: high-yield
     statement: "Ischemia ends in coagulative necrosis, which in the brain is followed by liquefaction."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "38-39" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hypoxic-ischemic-injury-c085
+    section: high-yield
+    statement: "Myocardial ischemic injury is seen first by electron microscopy, then as H&E eosinophilia from about 12-18 hours, and grossly as pallor by about 24 hours."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "657-658" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hypoxic-ischemic-injury-c065
     section: traps
     statement: "Swelling, mitochondrial swelling and blebs are reversible; nuclear changes and mitochondrial calcification indicate cell death."
@@ -574,8 +672,16 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "1", pages: "42, 44" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: hypoxic-ischemic-injury-c086
+    section: traps
+    statement: "A grossly normal heart at autopsy does not exclude an infarct, because gross pallor and H&E eosinophilia take hours to appear."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "657-658" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: hypoxic-ischemic-injury-c070
     section: mnemonics
     statement: "Ischemic cascade: ATP falls, lactate acidosis, Na+ entry with water, calcium overload, PLA2 and proteases damage membranes."

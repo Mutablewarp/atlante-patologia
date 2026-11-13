@@ -30,8 +30,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "7", pages: "338" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: gangrene-c005
     section: definition
     statement: "Gas gangrene, or clostridial myonecrosis, is a gas-forming necrotizing infection arising in contaminated wounds that kills previously healthy muscle."
@@ -74,12 +74,12 @@ claims:
     date: 2026-11-03
   - claimId: gangrene-c010
     section: etiology
-    statement: "Buerger disease, an occlusive inflammatory disease of small and medium-sized arteries tied to smoking, and rarely Raynaud phenomenon can lead to gangrene of the digits."
+    statement: "Buerger disease, which inflames and blocks the small and medium-sized arteries of the limbs in smokers, and, rarely, Raynaud phenomenon can end in gangrene of the digits."
     sourceRef: { source: rubin-8e, chapter: "16", pages: "618, 622-623" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: gangrene-c011
     section: etiology
     statement: "Severe vasculitis in survivors of meningococcemia can cause gangrene of the distal extremities."
@@ -122,12 +122,12 @@ claims:
     date: 2026-11-03
   - claimId: gangrene-c016
     section: pathogenesis
-    statement: "Stenosis without occlusion more commonly causes the atrophy and fibrosis of chronic ischemia than necrosis; necrosis follows end-artery occlusion, and in diabetes chronic vascular insufficiency of the legs still leads to gangrene of toes and feet (ch. 13 p. 550)."
+    statement: "Stenosis without occlusion more commonly causes the atrophy and fibrosis of chronic ischemia than necrosis; necrosis follows end-artery occlusion, and in diabetes the chronic arterial insufficiency of the legs can still end in toe and foot gangrene (ch. 13 p. 550)."
     sourceRef: { source: rubin-8e, chapter: "7", pages: "337" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: gangrene-c017
     section: pathogenesis
     statement: "Necrotic tissue offers little resistance to bacteria; infarcts in the lung and those caused by infected emboli from endocarditis are often septic."
@@ -186,36 +186,36 @@ claims:
     date: 2026-11-03
   - claimId: gangrene-c024
     section: gross
-    statement: "Dry gangrene of the foot or leg is a large pale infarct; pale infarcts are sharply delineated with a dark-red border from hemorrhage into adjacent viable tissue, and, unlike red infarcts, lack bleeding into the necrotic area."
+    statement: "Rubin counts arterial dry gangrene of a limb among the pale infarcts, which, unlike red infarcts, have no bleeding into the necrotic area; their edge is sharp, and bleeding into the living tissue next to it gives a dark-red border."
     sourceRef: { source: rubin-8e, chapter: "7", pages: "337-338" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: gangrene-c025
     section: gross
     statement: "In infarcted bowel the segment is swollen, hemorrhagic and purple; its boundary is sharp after arterial occlusion and less defined after venous occlusion."
     sourceRef: { source: rubin-8e, chapter: "19", pages: "804" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: gangrene-c026
     section: gross
     statement: "Later gross findings of infarcted bowel include an exudate-covered dull serosa, a thinned distended wall with loss of mucosa, and possible gas in the wall and mesenteric veins."
     sourceRef: { source: rubin-8e, chapter: "19", pages: "804" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: gangrene-c027
     section: gross
-    statement: "In gas gangrene the overlying skin becomes tense and dark as edema and gas accumulate, and the affected muscle progresses from mottled to necrotic and may liquefy."
+    statement: "In gas gangrene the muscle passes from a mottled look to frank necrosis and can liquefy; the skin above darkens through hemorrhage and necrosis of its own, and edema and gas spreading in the soft tissue beneath make it tense."
     sourceRef: { source: rubin-8e, chapter: "9", pages: "429" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: gangrene-c028
     section: micro
     statement: "Pale infarcts, including dry gangrene, show uniform coagulative necrosis (ch. 1 pp. 38-39 for ghost outlines and eosinophilia)."
@@ -234,20 +234,20 @@ claims:
     date: 2026-11-03
   - claimId: gangrene-c030
     section: micro
-    statement: "Gas gangrene shows a striking paucity of neutrophils, apparently destroyed by the toxin, despite extensive necrosis with cell dissolution; the organisms are lozenge-shaped gram-positive rods."
+    statement: "In gas gangrene, gram-positive rods, often lozenge-shaped, lie in widely necrotic tissue with disintegrating cells, while neutrophils are nearly absent, probably killed by the toxin; this lack of inflammation is the diagnostic clue."
     sourceRef: { source: rubin-8e, chapter: "9", pages: "429" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: gangrene-c031
     section: micro
-    statement: "Bowel infarcts show edema, hemorrhage, crypt abscesses, ulcers and necrotic surface epithelium with ghost cells, progressing to full-thickness necrosis in severe cases."
-    sourceRef: { source: rubin-8e, chapter: "19", pages: "804" }
+    statement: "In bowel infarction the necrosis begins in the mucosa, where surface epithelium and crypts persist only as ghost outlines (coagulative necrosis) and the lining ulcerates, with hemorrhage in mucosa and submucosa; severe ischemia carries the necrosis outward to the full thickness of the wall (also fig. 19-51)."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "802, 804" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: gangrene-c032
     section: ancillary
     statement: "Tissue affected by gas gangrene typically contains gram-positive rods, with few neutrophils."
@@ -282,20 +282,20 @@ claims:
     date: 2026-11-03
   - claimId: gangrene-c036
     section: clinical
-    statement: "Gas gangrene usually begins 2-4 days after injury with abrupt severe wound pain, swelling and tenderness, darkening skin and a thick, foul, serosanguineous discharge that may contain gas."
+    statement: "About 2 to 4 days after the injury, gas gangrene announces itself with sudden, intense pain in a swollen, tender wound; the skin turns dark from bleeding and necrosis, and a foul, blood-stained discharge with gas bubbles may appear."
     sourceRef: { source: rubin-8e, chapter: "9", pages: "429" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: gangrene-c037
     section: clinical
-    statement: "Systemic disease follows in gas gangrene: hemolytic anemia, hypotension and renal failure, with shock, jaundice and coma at the terminal stage."
+    statement: "In the systemic phase of gas gangrene, circulating toxin lyses red cells and the patient becomes anemic, while renal failure and hypotension set in; jaundice and coma accompany the terminal shock."
     sourceRef: { source: rubin-8e, chapter: "9", pages: "429" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: gangrene-c038
     section: diagnosis
     statement: "Limb ischemia is recognized by pain, absent pulses and a cold limb; the dead tissue of dry gangrene is coagulative necrosis."
@@ -306,12 +306,12 @@ claims:
     date: 2026-11-03
   - claimId: gangrene-c039
     section: diagnosis
-    statement: "Gas bubbles in the bowel wall and mesenteric veins occur in infarcted bowel; endoscopy in ischemic bowel may show a pseudomembrane, multiple ulcers or hemorrhagic nodules."
+    statement: "Infarcted bowel can hold gas bubbles within its wall and in the mesenteric veins; at endoscopy, ischemic mucosa may be ulcerated or covered by a pseudomembrane."
     sourceRef: { source: rubin-8e, chapter: "19", pages: "804" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: gangrene-c040
     section: diagnosis
     statement: "Gas gangrene: gram-positive rods with very few neutrophils in affected tissue, plus hemolysis."
@@ -322,12 +322,12 @@ claims:
     date: 2026-11-03
   - claimId: gangrene-c041
     section: prognosis
-    statement: "Limb embolism sometimes requires amputation (ch. 7 p. 335); in diabetes, ulcers and gangrene of the toes and feet ultimately lead to amputation (ch. 13 p. 550)."
+    statement: "Limb embolism sometimes requires amputation (ch. 7 p. 335), and diabetic gangrene of toes and feet, a result of vascular insufficiency, ends in amputation in the long run (ch. 13 p. 550)."
     sourceRef: { source: rubin-8e, chapter: "7", pages: "335" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: gangrene-c042
     section: prognosis
     statement: "Embolic bowel infarction requires immediate surgery; ch. 19 p. 804 adds that chronic intestinal vascular insufficiency can cause fibrosis and stricture."
@@ -362,20 +362,20 @@ claims:
     date: 2026-11-03
   - claimId: gangrene-c046
     section: differential
-    statement: "Infarction is coagulative necrosis distal to an occluded end artery; dry gangrene of the foot or leg is a large pale infarct."
-    sourceRef: { source: rubin-8e, chapter: "7", pages: "337" }
+    statement: "Outside the brain, where infarcts liquefy (p. 338), an infarct is coagulative necrosis beyond an occluded end artery; arterial dry gangrene of a limb is such an infarct, large and of the pale type."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "337-338" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: gangrene-c047
     section: differential
-    statement: "Nonocclusive intestinal ischemia is hemodynamic, may be reversible and is often segmental in the colon; severe bowel infarcts become full-thickness."
+    statement: "Low-flow (nonocclusive) intestinal ischemia comes from failing perfusion rather than a blocked vessel and can resolve; in the colon it usually affects segments, and severe ischemia can kill the bowel wall through its full thickness."
     sourceRef: { source: rubin-8e, chapter: "19", pages: "804" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: gangrene-c048
     section: differential
     statement: "Clostridial myonecrosis begins in contaminated wounds, destroys previously healthy muscle and produces gas."
@@ -394,12 +394,12 @@ claims:
     date: 2026-11-03
   - claimId: gangrene-c050
     section: differential
-    statement: "Coagulative necrosis is the light-microscopic pattern with preserved outlines and is the necrosis of infarcts."
+    statement: "Coagulative necrosis is the light-microscopic pattern with preserved cell outlines and the necrosis of infarcts outside the brain, where infarcts liquefy (ch. 7 p. 338)."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "38, 337" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: gangrene-c051
     section: high-yield
     statement: "Gangrene is not among the necrosis patterns of chapter 1; dry gangrene is a large infarct of coagulative necrosis."
@@ -438,8 +438,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "9", pages: "429" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: gangrene-c056
     section: high-yield
     statement: "Limb gangrene arises from atherosclerotic thrombosis and arterial embolism; ch. 13 p. 550 adds diabetic peripheral vascular disease."
@@ -494,8 +494,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "7", pages: "337" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: gangrene-c063
     section: mnemonics
     statement: "Summary of the three forms: dry = ischemic coagulative necrosis, wet = infected and liquefied, gas = clostridial toxin destroying healthy muscle with few neutrophils (ch. 9 p. 429)."
@@ -506,9 +506,100 @@ claims:
     date: 2026-11-03
   - claimId: gangrene-c064
     section: etiology
-    statement: "Nonocclusive intestinal ischemia, seen with shock and reduced cardiac output, is more common than the occlusive type and may be just as extensive."
+    statement: "Nonocclusive intestinal ischemia, seen in shock and reduced cardiac output, can involve as long a segment of bowel as occlusive ischemia."
     sourceRef: { source: rubin-8e, chapter: "19", pages: "804" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: gangrene-c065
+    section: definition
+    statement: "Gangrenous cholecystitis is Rubin's name for severe acute cholecystitis with extensive necrosis of the gallbladder mucosa; less severe cases show focal mucosal ulcers."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "897" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: gangrene-c066
+    section: etiology
+    statement: "Sepsis, most often meningococcal, can cause purpura fulminans: thrombi form in dermal vessels during disseminated intravascular coagulation, the skin undergoes hemorrhagic necrosis, and the necrosis tends to advance into ischemia of the extremities, frequently ending in amputation (second source, abstract). rubin-8e describes DIC and widespread skin purpura in meningococcal septicemia and lists gangrene among its complications (fig. 9-17), but does not discuss purpura fulminans in sepsis."
+    sourceRef: { source: rubin-8e, chapter: "9", pages: "416" }
+    status: beyond-reference
+    secondSource: { source: betrosian-2006, locator: "abstract (PubMed 17170624): definition of sepsis-induced purpura fulminans, meningococcal sepsis as its most common cause, progression to distal ischemia and frequent amputation" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: gangrene-c067
+    section: pathogenesis
+    statement: "Infarction can involve virtually the whole small bowel when a large artery is occluded; smaller occlusions give segmental infarcts."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "803" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: gangrene-c068
+    section: gross
+    statement: "To the naked eye, dry gangrene of a toe or foot looks black and mummified; rubin-8e classes it as a large pale infarct but does not describe its colour."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "337" }
+    status: beyond-reference
+    secondSource: { source: al-wahbi-2018, locator: "full text (PMC5987754), section 'Gangrene: an overview', subsection 'Dry gangrene'" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: gangrene-c069
+    section: prognosis
+    statement: "Because dry gangrene is clearly demarcated, the dead part can separate on its own (autoamputation); left untreated, dry gangrene can become infected and can readily become wet gangrene. rubin-8e does not discuss autoamputation; it notes that necrotic tissue resists bacteria poorly (ch. 7 p. 338)."
+    sourceRef: { source: rubin-8e, chapter: "7", pages: "337-338" }
+    status: beyond-reference
+    secondSource: { source: al-wahbi-2018, locator: "full text (PMC5987754), subsections 'Dry gangrene', 'Autoamputation in dry gangrene among diabetics', 'Management of dry gangrene' and 'Autoamputation in diabetic dry gangrene'" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: gangrene-c070
+    section: ancillary
+    statement: "Gangrenous tissue is removed surgically: legs, toes and feet are amputated (ch. 7 p. 335; ch. 13 p. 550; ch. 16 p. 623), devitalized tissue is debrided (fig. 7-27, p. 338; ch. 9 p. 429) and bowel infarction needs immediate surgery (ch. 7 p. 335); infarcted small bowel is also seen at autopsy (fig. 19-50, ch. 19 p. 804)."
+    sourceRef: { source: rubin-8e, chapter: "7, 9, 13, 16, 19", pages: "335, 338, 429, 550, 623, 804" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: gangrene-c071
+    section: ancillary
+    statement: "Leg gangrene follows occlusion of leg arteries by thrombosis on atherosclerotic plaques or by emboli, for example from an abdominal aortic aneurysm that contains thrombus (ch. 7 pp. 330, 335; ch. 16 p. 607); a histologic section through an extremity can show the occluding arterial thrombus (fig. 16-39, p. 624)."
+    sourceRef: { source: rubin-8e, chapter: "7, 16", pages: "330, 335, 607, 624" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: gangrene-c072
+    section: ancillary
+    statement: "Unlike atherosclerotic thrombosis, the occluded small and medium-sized arteries of Buerger disease are acutely inflamed, with giant cells around microabscesses in their wall and inflammation spreading to the adjacent veins and nerves (also fig. 16-39, p. 624); amputation for gangrene is common early in the disease."
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "623-624" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: gangrene-c073
+    section: ancillary
+    statement: "In a mucosal biopsy from ischemic bowel, the crypts may be dead except for a stub at their base, the dead part keeping its shape as a ghost outline, the mark of coagulative necrosis (fig. 19-51)."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "804" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: gangrene-c074
+    section: ancillary
+    statement: "A mucosal biopsy samples only the mucosa (fig. 19-51), whereas severe ischemia can kill the bowel wall through its full thickness (p. 804); the transmural necrosis of bowel gangrene is therefore shown pathologically on resected bowel or at autopsy (fig. 19-50)."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "804" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: gangrene-c075
+    section: ancillary
+    statement: "rubin-8e recognizes the forms of gangrene by gross appearance and light microscopy, adding gram-positive rods in the tissue of gas gangrene, and uses no immunohistochemical, ultrastructural or molecular test to diagnose them."
+    sourceRef: { source: rubin-8e, chapter: "7, 9, 19", pages: "337-338, 429, 804" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09

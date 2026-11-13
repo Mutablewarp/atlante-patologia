@@ -1,6 +1,6 @@
 ---
 lang: it
-translatedFrom: 9a7b526668b11436063b371957adaa4aedd3ae0ea5499647be93756d6d299bae
+translatedFrom: e4f9e4e0f5097693b531bcf04935e307a23184588954eec3d496da73a489f2c8
 ---
 
 ## Definizione ed epidemiologia
@@ -16,7 +16,7 @@ L'iperplasia è causata da tre grandi gruppi di stimoli: stimolazione endocrina,
 - L'epitelio e lo stroma endometriali proliferano quando gli estrogeni aumentano alla pubertà o nella prima fase del ciclo mestruale; gli estrogeni somministrati alle donne in postmenopausa hanno lo stesso effetto.<!--c:hyperplasia-c008-->
 - **Ginecomastia**: aumento di volume della mammella nell'uomo esposto a un eccesso di estrogeni, per esempio durante una terapia estrogenica per carcinoma prostatico o quando un fegato malato non riesce a eliminare gli estrogeni circolanti.<!--c:hyperplasia-c009-->
 - Un tumore può produrre un ormone in quantità eccessiva o in sede ectopica; un tumore renale che secerne eritropoietina induce un'iperplasia eritroide del midollo osseo.<!--c:hyperplasia-c010-->
-- Un eccesso persistente di estrogeni, dovuto a cicli anovulatori, sindrome dell'ovaio policistico, tumore estrogeno-secernente, terapia estrogenica od obesità, causa iperplasia endometriale.<!--c:hyperplasia-c011-->
+- Un eccesso duraturo di estrogeni non bilanciato dal progesterone rende iperplastico l'endometrio, come accade con cicli ripetuti senza ovulazione o nell'obesità.<!--c:hyperplasia-c011-->
 - Gli androgeni sono alla base dell'**iperplasia prostatica benigna (IPB)**.<!--c:hyperplasia-c012-->
 
 **Aumentata richiesta funzionale (iperplasia compensatoria):**
@@ -53,13 +53,18 @@ L'iperplasia è causata da tre grandi gruppi di stimoli: stimolazione endocrina,
 
 - **Iperplasia midollare**: le cellule emopoietiche occupano gran parte dello spazio normalmente occupato dal grasso midollare.<!--c:hyperplasia-c034-->
 - **Psoriasi**: i cheratinociti si accumulano e l'epidermide diventa nettamente più spessa.<!--c:hyperplasia-c035-->
-- **IPB**: proliferano, in proporzioni variabili, l'epitelio acinare e duttale, la muscolatura liscia e i fibroblasti stromali.<!--c:hyperplasia-c036--> Le ghiandole conservano un rivestimento a due strati, con cellule cilindriche alte sopra le cellule basali, e contengono spesso corpi amilacei.<!--c:hyperplasia-c037-->
+- **IPB**: proliferano, in proporzioni variabili, l'epitelio acinare e duttale, la muscolatura liscia e i fibroblasti stromali.<!--c:hyperplasia-c036--> Le ghiandole conservano un rivestimento a due strati, con cellule cilindriche alte sopra le cellule basali, e contengono spesso corpi amilacei.<!--c:hyperplasia-c037--> Circa un caso su cinque contiene infarti focali, ai cui margini i dotti sono tipicamente rivestiti da epitelio squamoso metaplastico, e ai noduli si associa spesso una prostatite aspecifica.<!--c:hyperplasia-c077-->
 - **Iperplasia endometriale non atipica**: affollamento ghiandolare variabile da zona a zona, numerose ghiandole cistiche e rapporto ghiandole/stroma aumentato, ma nessuna variazione focale dell'aspetto delle cellule.<!--c:hyperplasia-c038-->
 - **EIN**: un focolaio circoscritto di ghiandole stipate, le cui cellule hanno un aspetto diverso da quello delle ghiandole di fondo circostanti.<!--c:hyperplasia-c039-->
 
 ## Colorazioni speciali, IIC e reperti molecolari
 
-- All'immunoistochimica le ghiandole della EIN possono perdere l'espressione di PTEN, segno della loro natura clonale e mutata.<!--c:hyperplasia-c040-->
+**Come si studia:**
+
+- **Ematossilina-eosina:** l'iperplasia si riconosce confrontando il tessuto con il tessuto normale della stessa sede, allo stesso ingrandimento, per esempio la cellularità del midollo rispetto al grasso o lo spessore dell'epidermide rispetto a una cute normale.<!--c:hyperplasia-c069-->
+- **Endometrio (biopsia):** l'iperplasia non atipica modifica l'intero endometrio, mentre la EIN è un focolaio circoscritto, che si valuta confrontandolo con le ghiandole di fondo dello stesso campione.<!--c:hyperplasia-c070--> All'immunoistochimica le ghiandole della EIN possono perdere l'espressione di PTEN, segno della loro natura clonale e mutata.<!--c:hyperplasia-c040-->
+- **Prostata (agobiopsia):** le ghiandole benigne, comprese quelle dell'IPB, conservano lo strato di cellule basali, positivo per le citocheratine ad alto peso molecolare e per p63; le ghiandole del carcinoma lo hanno perso e risultano negative.<!--c:hyperplasia-c071--> L'AMACR (α-metilacil-CoA racemasi) si comporta all'opposto: è espressa dalla neoplasia intraepiteliale prostatica (PIN) di alto grado e dal carcinoma, non dalle ghiandole benigne; quando una biopsia è di difficile interpretazione, il patologo la valuta insieme alla colorazione per le cellule basali.<!--c:hyperplasia-c072-->
+- **Linfonodo:** la biopsia escissionale fornisce un materiale migliore del prelievo con ago, e il patologo la interpreta alla luce del quadro clinico e dell'età del paziente.<!--c:hyperplasia-c073--> I centri germinativi dell'iperplasia follicolare reattiva sono negativi per Bcl-2, mentre il linfoma follicolare esprime Bcl-2 in oltre il 90% dei casi.<!--c:hyperplasia-c074-->
 
 ## Presentazione clinica
 
@@ -70,11 +75,13 @@ L'iperplasia è causata da tre grandi gruppi di stimoli: stimolazione endocrina,
 ## Diagnosi, laboratorio e imaging
 
 - Nell'IPB, all'esplorazione rettale la prostata appare più voluminosa del normale, di consistenza duro-elastica e con superficie irregolare (nodulare).<!--c:hyperplasia-c044-->
+- Il PSA sierico aumenta nell'IPB come nel carcinoma prostatico, per cui un valore elevato non è specifico: richiede ulteriori accertamenti, e il carcinoma va confermato sul tessuto, di solito prelevato con un'agobiopsia.<!--c:hyperplasia-c079-->
 - Nell'iperplasia endometriale il rischio di carcinoma a breve termine è basso se un campionamento esteso non mostra EIN; l'iperplasia non atipica persistente va seguita con biopsie ripetute.<!--c:hyperplasia-c045-->
 
 ## Complicanze e prognosi
 
 - L'iperplasia eritroide compensatoria regredisce quando cessa lo stimolo: l'ematocrito torna normale dopo il rientro al livello del mare.<!--c:hyperplasia-c046-->
+- La vescica risponde all'ostruzione del deflusso con un'ipertrofia della sua parete muscolare (detrusore), e dopo la minzione vi rimane più urina (residuo post-minzionale).<!--c:hyperplasia-c078-->
 - Un'ostruzione prostatica grave e prolungata può portare a idrouretere, idronefrosi e infine insufficienza renale.<!--c:hyperplasia-c047-->
 - I farmaci che inibiscono la 5α-reduttasi riducono il volume della prostata iperplastica; i bloccanti α1-adrenergici rilasciano la muscolatura liscia e migliorano il flusso urinario.<!--c:hyperplasia-c048-->
 - Gli estrogeni non bilanciati dal progesterone aumentano da due a dieci volte il rischio di carcinoma endometriale; il carcinoma fa seguito all'iperplasia non atipica solo nell'1–3% dei casi, ma alla EIN nel 37%, ed è quasi sempre di tipo endometrioide.<!--c:hyperplasia-c049-->
@@ -89,6 +96,8 @@ L'iperplasia è causata da tre grandi gruppi di stimoli: stimolazione endocrina,
 | [[dysplasia]] | Cellule e nuclei variano per dimensioni e forma, i nuclei sono ingranditi e ipercromatici, le mitosi compaiono lontano dallo strato basale e la maturazione è disordinata.<!--c:hyperplasia-c053--> | Atipia citologica e maturazione all'esame istologico |
 | EIN (iperplasia endometriale atipica) | Gruppo clonale di ghiandole stipate e citologicamente alterate, distinte da quelle di fondo.<!--c:hyperplasia-c054--> | Morfologia bioptica; perdita di PTEN all'IIC |
 | [[atrophy]] | L'organo si riduce di volume perché le sue cellule si rimpiccioliscono e/o vanno perdute (per esempio l'atrofia cerebrale nella malattia di Alzheimer).<!--c:hyperplasia-c055--> | Volume cellulare rispetto al tessuto normale |
+| Adenocarcinoma prostatico | Nasce di solito nella zona periferica anziché in quella di transizione; le sue ghiandole infiltrano lo stroma e sono prive di cellule basali; l'ostruzione urinaria è raramente il primo segno.<!--c:hyperplasia-c075--> | Agobiopsia: marcatori delle cellule basali (citocheratine ad alto peso molecolare, p63) assenti, AMACR positiva |
+| Linfoma follicolare | A differenza dell'iperplasia follicolare reattiva, che lascia riconoscibile l'architettura del linfonodo, lo occupa con follicoli neoplastici stipati, spesso a stretto contatto l'uno con l'altro.<!--c:hyperplasia-c076--> | IIC per Bcl-2 sui centri germinativi |
 
 ## Punti chiave
 
@@ -104,6 +113,7 @@ L'iperplasia è causata da tre grandi gruppi di stimoli: stimolazione endocrina,
 - **L'iperplasia non è sempre adattativa**: la psoriasi è un'iperplasia epidermica la cui proliferazione non ha alcuna funzione protettiva.<!--c:hyperplasia-c062-->
 - L'«iperplasia endometriale atipica» non è un semplice grado maggiore dello stesso processo: è una neoplasia clonale (EIN), a differenza dell'iperplasia non atipica.<!--c:hyperplasia-c063-->
 - L'IPB non insorge negli uomini castrati prima della pubertà, e la somministrazione di testosterone non la provoca.<!--c:hyperplasia-c064-->
+- «Ipertrofia prostatica», denominazione ancora in uso, è un termine impreciso: la prostata aumenta di volume perché ne proliferano la componente ghiandolare e lo stroma, cioè per iperplasia.<!--c:hyperplasia-c080-->
 - Postmitotico non significa insostituibile: le cellule progenitrici del cervello e del cuore possono ancora proliferare dopo un danno.<!--c:hyperplasia-c065-->
 - Iperplasia e ipertrofia non si escludono a vicenda; spesso si presentano insieme.<!--c:hyperplasia-c066-->
 

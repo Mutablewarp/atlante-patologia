@@ -1,0 +1,98 @@
+# License check (2026-11-08): Commons file page {{Information}} gives source {{Own}}, author {{Mikael Häggström}}
+# (consent=noid: no identifiable features), license {{cc-zero}}; extmetadata LicenseShortName "CC0",
+# AttributionRequired false, no Restrictions. Uploaded by the author himself, as for hypoxic-ischemic-injury-micro-2.
+# This is the author's own annotated version (English labels "Normal", "Infarction", "Neuron", "Neutrophils" are his)
+# of his series "Histopathology of thalamus infarction"; used exactly as published, 1226 × 679 px, so
+# modifications: none. Histology only; nothing identifies the patient. The timing (about 24 hours), the neutrophil
+# infiltrate, the hypereosinophilic neuron and the slight edema come from the file description; the caption facts on
+# timing were checked on rubin-8e p. 1456 (red neurons with pyknosis at 6 to 24 hours of survival, neutrophils from
+# 24 to 72 hours) and the cause of the eosinophilia on rubin-8e ch. 1 (claim hypoxic-ischemic-injury-c036).
+id: hypoxic-ischemic-injury-micro-3
+file: hypoxic-ischemic-injury-micro-3.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Histopathology_of_thalamus_infarction_at_approximately_24_hours,_high_magnification,_annotated.jpg
+author: Mikael Häggström, M.D.
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-11-08
+modifications: none
+attributionText: "Mikael Häggström, M.D., via Wikimedia Commons, CC0 1.0 (public domain dedication)"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+stain: H&E
+magnification: high power (as the source labels it)
+orientation:
+  it: "Due riquadri affiancati: talamo normale a sinistra («Normal»), infarto a destra («Infarction»)."
+  en: "Two panels side by side: normal thalamus on the left (Normal), infarct on the right (Infarction)."
+lookFor:
+  it: "Confronta i due neuroni: granuli bluastri e nucleo chiaro a sinistra, citoplasma rosso e liscio con nucleo scuro e sfumato a destra."
+  en: "Compare the two neurons: bluish granules and a pale nucleus on the left, smooth red cytoplasm and a dark, blurred nucleus on the right."
+caption:
+  it: >-
+    Talamo all'autopsia, EE a forte ingrandimento: due campi affiancati, con le scritte in inglese aggiunte
+    dall'autore. A sinistra la sostanza grigia normale: un neurone con citoplasma finemente granuloso, blu-violaceo (la
+    sostanza di Nissl) e un nucleo grande e chiaro, affiancato dai piccoli nuclei rotondi e scuri di due cellule
+    gliali. A destra un infarto ischemico di circa 24 ore: il neurone ha perso le granulazioni, il citoplasma è
+    diventato liscio e di un rosa intenso e uniforme, e il nucleo è ridotto a un'ombra scura e sfumata. È un «neurone
+    rosso», il segno al microscopio ottico che la cellula è morta. Il colore ha una causa semplice: l'ematossilina
+    tinge di blu l'RNA, e quando la cellula muore l'RNA viene degradato, così prevale il rosa dell'eosina, come in ogni
+    cellula necrotica. Intorno sono già arrivati neutrofili dal nucleo lobato, la
+    risposta infiammatoria acuta alla necrosi, e il neuropilo appare lasso ed edematoso. In un infarto cerebrale i
+    neuroni rossi compaiono se il paziente sopravvive circa 6–24 ore, mentre i neutrofili affluiscono soprattutto tra
+    il primo e il terzo giorno. Neurone granuloso con nucleo chiaro = vivo; neurone liscio e rosso con nucleo scuro =
+    morto.
+  en: >-
+    Thalamus at autopsy, H&E at high power: two fields side by side, with English labels added by the author. On the
+    left, normal grey matter: a neuron with finely granular, bluish-purple cytoplasm (the Nissl substance) and a large,
+    pale nucleus, flanked by the small, round, dark nuclei of two glial cells. On the right, an ischemic infarct about
+    24 hours old: the neuron has lost its granules, its cytoplasm has turned a smooth, uniform deep pink and its
+    nucleus is reduced to a dark, blurred shadow. This is a "red neuron", the light-microscopy sign that the cell has
+    died. The colour has a simple cause: hematoxylin dyes RNA blue, and once the cell dies its RNA is broken down, so
+    the pink of eosin takes over, as in any necrotic cell. Around it,
+    neutrophils with lobed nuclei have already arrived, the acute inflammatory response to necrosis, and the neuropil
+    looks loose and edematous. In a brain infarct, red neurons appear when the patient survives about 6–24 hours,
+    whereas neutrophils move in mostly between the first and the third day. Granular neuron with a pale nucleus =
+    alive; smooth red neuron with a dark nucleus = dead.
+alt:
+  it: >-
+    Due micrografie in ematossilina-eosina affiancate, con scritte nere in inglese. A sinistra, «Normal»: un neurone
+    con citoplasma granuloso violaceo e nucleo ovale chiaro, tra due piccoli nuclei rotondi blu scuro. A destra,
+    «Infarction»: un neurone tondeggiante con citoplasma liscio rosa intenso e nucleo scuro e sfumato; in alto a
+    destra cellule con nucleo lobato scuro indicate come «Neutrophils».
+  en: >-
+    Two H&E micrographs side by side with black English labels. Left, labelled Normal: a neuron with granular purple
+    cytoplasm and a pale oval nucleus, between two small, round, dark blue nuclei. Right, labelled Infarction: a
+    rounded neuron with smooth, deep pink cytoplasm and a dark, blurred nucleus; at the upper right, cells with lobed
+    dark nuclei labelled Neutrophils.
+annotations:
+  - id: normal-nissl
+    label: { it: "Citoplasma granuloso (sostanza di Nissl)", en: "Granular cytoplasm (Nissl substance)" }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.127, 0.568, 0.153, 0.505, 0.194, 0.462, 0.215, 0.486, 0.224, 0.542, 0.265, 0.555, 0.301, 0.542, 0.285, 0.616, 0.24, 0.652, 0.184, 0.689, 0.143, 0.703, 0.127, 0.652]
+  - id: normal-nucleus
+    label: { it: "Nucleo grande e chiaro", en: "Large, pale nucleus" }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.215, 0.523, 0.229, 0.462, 0.265, 0.426, 0.306, 0.412, 0.329, 0.436, 0.331, 0.486, 0.311, 0.532, 0.27, 0.551, 0.229, 0.546]
+  - id: red-cytoplasm
+    label: { it: "Citoplasma liscio, rosa intenso", en: "Smooth, deep pink cytoplasm" }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.59, 0.594, 0.644, 0.586, 0.693, 0.614, 0.72, 0.682, 0.715, 0.751, 0.661, 0.732, 0.639, 0.682, 0.606, 0.644]
+  - id: dark-nucleus
+    label: { it: "Nucleo scuro e sfumato", en: "Dark, blurred nucleus" }
+    revealOrder: 4
+    shape:
+      type: polygon
+      coords: [0.563, 0.77, 0.585, 0.726, 0.622, 0.732, 0.644, 0.77, 0.639, 0.82, 0.606, 0.844, 0.573, 0.829]
+  - id: neutrophils
+    label: { it: "Neutrofili dal nucleo lobato", en: "Neutrophils with lobed nuclei" }
+    revealOrder: 5
+    shape:
+      type: polygon
+      coords: [0.803, 0.401, 0.897, 0.38, 0.962, 0.386, 0.964, 0.493, 0.881, 0.527, 0.803, 0.523]

@@ -1,0 +1,76 @@
+# License check (2026-11-08): Commons file page {{Information}} gives source {{own}}, author
+# [[User:Jensflorian|Jensflorian]], date 2015-09-29, description "Neuropathology course - histopathology specimen of
+# brain abscess - HE stain", license {{self|cc-by-sa-4.0}}; extmetadata LicenseShortName "CC BY-SA 4.0", Artist
+# "Jensflorian", Credit "Own work", AttributionRequired true, no Restrictions. Uploaded by its creator. CC BY-SA is
+# approved as a class by owner decision O7 (plan/v2-plan.md, 2026-11-03), hence ownerApproved: true. Same upload set,
+# description and date as liquefactive-necrosis-micro-2 (500 µm bar), of which this is the closer view (100 µm bar),
+# hence the shared group. Histology only; nothing identifies the patient. Used exactly as published (1500 × 1111 px,
+# no camera metadata), so modifications: none. The burned-in scale bar is the only calibration and the source names
+# no objective, so no `objective` and no `mpp`. The identification of pus and wall in this field is the agent's
+# reading of the image (review-queue row). Caption facts checked on rubin-8e pp. 1465-1466 (liquefactive necrosis of
+# the brain tissue, purulent core, encapsulating fibroblasts); the comparison with caseous and coagulative necrosis
+# follows the card's differential table (claims checked on rubin-8e ch. 1).
+id: liquefactive-necrosis-micro-3
+file: liquefactive-necrosis-micro-3.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Image_NP_E3_0002.jpg
+author: Jensflorian
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+retrievedAt: 2026-11-08
+modifications: none
+attributionText: 'Jensflorian, "Image NP E3 0002", via Wikimedia Commons, CC BY-SA 4.0'
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+group: brain-abscess-jensflorian
+stain: H&E
+magnification: medium power (scale bar 100 µm in the image)
+orientation:
+  it: "Pus a sinistra, parete dell'ascesso a destra; il confine corre dall'alto in basso poco oltre la metà del campo."
+  en: "Pus on the left, abscess wall on the right; the border runs from top to bottom just past the middle of the field."
+lookFor:
+  it: "Confronta le due metà: a sinistra piccoli nuclei scuri sparsi in detriti rosa; a destra cellule allungate con un nucleo ovale."
+  en: "Compare the two halves: on the left, small dark nuclei scattered in pink debris; on the right, elongated cells with an oval nucleus."
+caption:
+  it: >-
+    Ascesso cerebrale, EE a medio ingrandimento (la barra misura 100 µm): lo stesso preparato visto più da vicino,
+    sul confine tra il pus e la parete. La metà sinistra è pus. Della struttura del cervello non resta nulla, né neuroni
+    né fibre: c'è solo uno strato di detriti rosa e granulosi, con piccoli spazi vuoti, fitto di cellule
+    infiammatorie. Molti dei loro nuclei sono piccoli, scuri e irregolari, come quelli dei neutrofili, che in buona
+    parte si stanno disfacendo: sono i loro enzimi ad aver digerito il tessuto. Ecco la necrosi colliquativa vista al
+    microscopio. La metà destra è la parete dell'ascesso: fibroblasti allungati, con nucleo ovale, disposti in fasci
+    in una matrice rosa chiaro, con ancora molti neutrofili tra l'uno e l'altro; al centro le cellule infiammatorie si
+    addensano proprio dove la parete si affaccia sul pus. Confronta con la necrosi caseosa, in cui il tessuto morto
+    resta come detrito amorfo dentro i granulomi, e con la necrosi coagulativa, in cui i profili delle cellule morte
+    si riconoscono ancora: qui, invece, il tessuto è stato sciolto.
+  en: >-
+    Brain abscess, H&E at medium power (the bar is 100 µm): the same specimen seen closer, at the border between the
+    pus and the wall. The left half is pus. Nothing of the brain's structure is left, neither neurons nor fibres: there
+    is only a sheet of pink, granular debris with small gaps, crowded with inflammatory cells. Many of their nuclei are
+    small, dark and irregular, like those of neutrophils, many of which are falling apart: it is their enzymes that
+    have digested the tissue. This is liquefactive necrosis under the microscope. The right half is the wall of the
+    abscess: elongated fibroblasts with oval nuclei lie in streams within a pale pink matrix, still with many
+    neutrophils between them; in the middle the inflammatory cells gather most densely right where the wall faces the
+    pus. Compare with caseous necrosis, where the dead tissue stays as structureless debris inside granulomas, and
+    with coagulative necrosis, where the outlines of the dead cells can still be recognised: here, instead, the
+    tissue has been dissolved.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina a medio ingrandimento. La metà sinistra è uno strato rosa e granuloso con
+    piccoli spazi bianchi e molti piccoli nuclei scuri; nella metà destra cellule viola allungate con nuclei ovali,
+    disposte in fasci e mescolate a piccoli nuclei scuri; nell'angolo in basso a destra una barra di scala nera di
+    100 µm.
+  en: >-
+    Medium-power H&E micrograph. The left half is a pink, granular sheet with small white gaps and many small dark
+    nuclei; the right half shows elongated purple cells with oval nuclei, arranged in streams and mixed with small
+    dark nuclei; at the lower right corner, a black 100 µm scale bar.
+annotations:
+  - id: pus
+    label: { it: "Pus: neutrofili in detriti necrotici rosa", en: "Pus: neutrophils in pink necrotic debris" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.02, 0.03, 0.50, 0.03, 0.52, 0.30, 0.50, 0.60, 0.45, 0.95, 0.02, 0.95] }
+  - id: wall-fibroblasts
+    label: { it: "Parete: fibroblasti allungati e neutrofili", en: "Wall: elongated fibroblasts and neutrophils" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.66, 0.05, 0.98, 0.05, 0.98, 0.95, 0.68, 0.95, 0.64, 0.60] }

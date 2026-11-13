@@ -4,7 +4,7 @@ lang: en
 
 ## Definition and epidemiology
 
-Ischemia–reperfusion injury is the additional damage that tissue suffers when blood flow returns after a period of ischemia.<!--c:ischemia-reperfusion-injury-c001--> Reperfusion is still worthwhile, because it rescues cells that are injured but alive; the paradox is that the returning blood can also kill some of the cells it was meant to save.<!--c:ischemia-reperfusion-injury-c002--> In the heart this reperfusion component may make up as much as half of the final infarct size.<!--c:ischemia-reperfusion-injury-c003--> As a general process it has no epidemiology of its own; it follows the frequency of the ischemic diseases that are reperfused.
+Ischemia–reperfusion injury is the additional damage that tissue suffers when blood flow returns after a period of ischemia.<!--c:ischemia-reperfusion-injury-c001--> Reperfusion is still worthwhile, because it rescues cells that are injured but alive; the paradox is that the returning blood can also kill some of the cells it was meant to save.<!--c:ischemia-reperfusion-injury-c002--> Up to half of the myocardium finally lost in an infarct may be killed by reperfusion rather than by the ischemia itself.<!--c:ischemia-reperfusion-injury-c003--> As a general process it has no epidemiology of its own; it follows the frequency of the ischemic diseases that are reperfused.
 
 ## Etiology and risk factors
 
@@ -24,27 +24,32 @@ The key variable is the duration of ischemia, which decides whether reperfusion 
 **Reperfusion then adds five overlapping mechanisms:**
 
 1. **ROS burst.** Returning O2 reacts with the free radicals and substrates built up during ischemia, sharply increasing ROS.<!--c:ischemia-reperfusion-injury-c013--> Xanthine oxidase needs oxygen, so once O2 is back it converts the accumulated xanthine to uric acid and generates superoxide.<!--c:ischemia-reperfusion-injury-c014--> Mitochondria add more ROS as electron transport suddenly resumes, while their antioxidant systems are still depleted.<!--c:ischemia-reperfusion-injury-c015-->
-2. **Calcium overload.** Intracellular pH is corrected abruptly, and the Na+/Ca2+ exchanger runs in reverse, worsening the Ca2+ overload that began during ischemia.<!--c:ischemia-reperfusion-injury-c017--> High cytosolic Ca2+ activates phospholipase A2 and proteases, which degrade membranes and detach the cytoskeleton from the plasma membrane.<!--c:ischemia-reperfusion-injury-c018-->
+2. **Calcium overload.** Reperfusion corrects the intracellular acidosis abruptly and the Na+/Ca2+ exchanger starts running in reverse, adding to the Ca2+ load accumulated during ischemia.<!--c:ischemia-reperfusion-injury-c017--> High cytosolic Ca2+ activates phospholipase A2 and proteases, which degrade membranes and detach the cytoskeleton from the plasma membrane.<!--c:ischemia-reperfusion-injury-c018-->
 3. **Mitochondrial permeability transition.** Ca2+ overload acting together with mitochondrial ROS opens the mitochondrial permeability transition pore (MPTP) for a sustained period.<!--c:ischemia-reperfusion-injury-c019--> The open pore lets water and ions into the matrix, collapses the membrane potential, swells the mitochondrion and makes ATP synthesis fall sharply.<!--c:ischemia-reperfusion-injury-c020--> Cytochrome c and other proteins leak into the cytosol and can trigger apoptosis.<!--c:ischemia-reperfusion-injury-c021-->
-4. **Inflammation.** Endothelial cells move P-selectin to their surface, so neutrophils adhere (via ICAM-1) and release more ROS and hydrolytic enzymes.<!--c:ischemia-reperfusion-injury-c022--> TNF-α, IL-1 and IL-6 cause vasoconstriction, promote neutrophil and platelet adhesion and act at distant sites.<!--c:ischemia-reperfusion-injury-c023--> Complement activation deposits membrane attack complexes and recruits further neutrophils.<!--c:ischemia-reperfusion-injury-c024--> Platelets stick to the injured microvasculature and release mediators that can both harm and protect.<!--c:ischemia-reperfusion-injury-c025-->
-5. **Disordered nitric oxide.** NO normally protects by dilating microvessels, inhibiting platelet aggregation and reducing leukocyte adhesion.<!--c:ischemia-reperfusion-injury-c026--> At reperfusion superoxide dismutase is inactivated and superoxide is abundant, so NO combines with it to form peroxynitrite (ONOO−), which breaks DNA strands and peroxidizes membrane lipids.<!--c:ischemia-reperfusion-injury-c027-->
+4. **Inflammation.** Neutrophils add their own ROS and hydrolytic enzymes; they bind more readily to ICAM-1 because reperfused endothelium exposes the P-selectin it keeps in store.<!--c:ischemia-reperfusion-injury-c022--> Cytokines, above all TNF-α, IL-1 and IL-6, make neutrophils and platelets stick to the endothelium and narrow the vessels.<!--c:ischemia-reperfusion-injury-c023--> Complement activation deposits membrane attack complexes and recruits further neutrophils.<!--c:ischemia-reperfusion-injury-c024--> Platelets that settle on the damaged microvessels cut both ways: what they secrete can protect the tissue as well as injure it.<!--c:ischemia-reperfusion-injury-c025-->
+5. **Disordered nitric oxide.** In normal conditions NO reduces the adhesion of leukocytes to the endothelium and holds the microvessels dilated, so it protects the tissue.<!--c:ischemia-reperfusion-injury-c026--> At reperfusion it turns harmful through peroxynitrite (ONOO−), the product of NO and superoxide, which breaks DNA strands and peroxidizes membrane lipids; reperfusion favors its formation by inactivating superoxide dismutase, the enzyme that normally keeps superoxide low, just when superoxide is plentiful.<!--c:ischemia-reperfusion-injury-c027-->
 
-Ischemia and reperfusion also impair the ubiquitin–proteasome system, so ubiquitinated protein aggregates build up and, with ROS and low ATP, switch on autophagy that can be adaptive or harmful.<!--c:ischemia-reperfusion-injury-c028-->
+Autophagy is switched on as well; it can either help the cell or harm it, and one of its triggers is the build-up of ubiquitinated protein aggregates that follows damage to the ubiquitin–proteasome system by ischemia and reperfusion.<!--c:ischemia-reperfusion-injury-c028-->
 
 ## Gross morphology
 
-A reperfused myocardial infarct is hemorrhagic (a red infarct), because blood flows through the damaged microvasculature.<!--c:ischemia-reperfusion-injury-c029--> Hemorrhage makes it visible early, whereas an infarct from persistent occlusion is pale and visible to the naked eye only after roughly 12 hours.<!--c:ischemia-reperfusion-injury-c030-->
+Because the returning blood passes through microvessels that are themselves damaged, a reperfused myocardial infarct is usually hemorrhagic (a red infarct).<!--c:ischemia-reperfusion-injury-c029--> Hemorrhage makes it visible early, whereas an infarct from persistent occlusion is pale and visible to the naked eye only after roughly 12 hours.<!--c:ischemia-reperfusion-injury-c030-->
 
 ## Microscopic morphology
 
-- **Contraction band necrosis** is the hallmark of the reperfused acute infarct: coarse cross-wise eosinophilic bands of hypercontracted sarcomeres with dense Z lines and a broken sarcolemma.<!--c:ischemia-reperfusion-injury-c031-->
+- **Contraction band necrosis** is typical of an acute infarct that has been reperfused: in myocytes with a torn sarcolemma, excessive contraction squeezes the sarcomeres together into eosinophilic bands that run across the fiber.<!--c:ischemia-reperfusion-injury-c031-->
 - The bands form when ROS-damaged sarcolemma lets Ca2+ flood into myocytes that can still contract.<!--c:ischemia-reperfusion-injury-c032-->
-- Between the bands, mitochondria swell and can accumulate calcium phosphate.<!--c:ischemia-reperfusion-injury-c033-->
-- Neutrophils spread through the whole infarct rather than only its rim, arrive and leave faster, and scar replacement is quicker.<!--c:ischemia-reperfusion-injury-c034-->
+- Calcium phosphate can precipitate in the matrix of the swollen mitochondria that lie between the bands.<!--c:ischemia-reperfusion-injury-c033-->
+- Neutrophils spread to the center of the infarct instead of stopping at its edge, and they come and go sooner: reperfusion speeds the whole sequence up, and where flow persists the scar replaces the dead muscle earlier.<!--c:ischemia-reperfusion-injury-c034-->
 
 ## Special stains, IHC and molecular findings
 
-Not applicable.
+**How it is studied:**
+
+- **Autopsy, dating the infarct:** the timeline used to date an infarct (see [[coagulative-necrosis]]) was described for infarcts whose artery stays blocked, while reperfusion speeds up both inflammation and repair, so keep this in mind when you date a reperfused infarct.<!--c:ischemia-reperfusion-injury-c059-->
+- **H&E:** look for contraction bands and note how far they extend: at the border of an infarct caused by persistent occlusion, where blood still comes and goes and lets calcium in, they may form small foci, but reperfusion makes them far more extensive.<!--c:ischemia-reperfusion-injury-c060-->
+- **Electron microscopy:** it is the only way to see the structural counterpart of stunned myocardium (see Complications and prognosis): the subtle changes of reversibly injured myocytes, which are also the earliest signs of ischemia (see [[hypoxic-ischemic-injury]]).<!--c:ischemia-reperfusion-injury-c061--> In dog hearts, irreversibly injured myocytes gained a great deal of calcium when they were reperfused but no significant amount when they stayed ischemic; electron microscopy, with other methods, placed a large share of that calcium inside the mitochondria, as dense bodies apparently made of calcium phosphate.<!--c:ischemia-reperfusion-injury-c062-->
+- **Special stains, IHC and molecular tests:** the reference text used for this card describes none that identifies reperfusion injury; for the stains used on any infarct, see [[hypoxic-ischemic-injury]] and [[coagulative-necrosis]].
 
 ## Clinical presentation
 
@@ -58,11 +63,13 @@ Not applicable.
 
 Outcome depends on how long ischemia lasted:<!--c:ischemia-reperfusion-injury-c038-->
 
-- **short ischemia:** reperfusion restores structure and function completely;
-- **intermediate ischemia:** cells die during reperfusion, so treatments aimed at reperfusion injury could rescue them and limit infarct size;
+- **short ischemia:** the cell recovers fully, in structure as well as function;
+- **intermediate ischemia:** the cells die only after flow returns, so this is the window in which the infarct could be kept smaller by shielding them from reperfusion injury;
 - **long ischemia:** cells die during ischemia itself and reperfusion no longer changes their fate.
 
-Preconditioning reduces necrosis after a subsequent prolonged episode, through pathways such as RISK (Akt, ERK, GSK3β), SAFE (TNF-α and STAT3) and HIF-1α.<!--c:ischemia-reperfusion-injury-c039--> HIF-1α induces genes that curb oxidant generation, calcium loading and energy loss.<!--c:ischemia-reperfusion-injury-c040-->
+Even after brief ischemia, recovery of function can lag: in the heart, ROS formed when flow returns can weaken contraction for hours although no myocyte has died, a reversible state called **stunned myocardium**.<!--c:ischemia-reperfusion-injury-c063-->
+
+Ischemic preconditioning (see Clinical presentation) relies on many signals: two key routes are the RISK pathway (Akt, ERK, GSK3β) and the SAFE pathway (TNF-α and STAT3), out of more than 100 molecules implicated in experimental work.<!--c:ischemia-reperfusion-injury-c039--> A later ischemic episode is also better survived thanks to HIF-1α, the transcription factor that drives the response to hypoxia: among other effects, the genes it switches on restrain ROS production.<!--c:ischemia-reperfusion-injury-c040-->
 
 ## Differential diagnosis
 
@@ -71,7 +78,7 @@ Preconditioning reduces necrosis after a subsequent prolonged episode, through p
 | [[hypoxic-ischemic-injury]] | Damage during the ischemic period itself: ATP loss, acidosis, Na+ and Ca2+ loading, without a reperfusion burst.<!--c:ischemia-reperfusion-injury-c041--> | Timing of injury relative to restoration of flow |
 | [[coagulative-necrosis]] (persistent occlusion) | Pale infarct, recognized grossly only after about 12 hours; contraction bands, if any, limited to the margins.<!--c:ischemia-reperfusion-injury-c042--> | Gross color and distribution of contraction bands |
 | [[oxidative-injury]] | Same free-radical machinery, but from any source (radiation, toxins, inflammation), not tied to restored flow.<!--c:ischemia-reperfusion-injury-c043--> | Clinical context |
-| Catecholamine-induced contraction band necrosis | Contraction bands after massive catecholamine release (head injury, pheochromocytoma) or high-dose pressors in shock.<!--c:ischemia-reperfusion-injury-c044--> | History of catecholamine excess |
+| Catecholamine-induced contraction band necrosis | Contraction bands from catecholamine excess, released by the body (for example by a pheochromocytoma) or given as high-dose pressors in shock.<!--c:ischemia-reperfusion-injury-c044--> | History of catecholamine excess |
 
 ## High-yield summary
 
@@ -83,6 +90,7 @@ Preconditioning reduces necrosis after a subsequent prolonged episode, through p
 - NO plus superoxide gives **peroxynitrite**.<!--c:ischemia-reperfusion-injury-c050-->
 - Reperfused infarct: **hemorrhagic** with **contraction band necrosis**.<!--c:ischemia-reperfusion-injury-c051-->
 - **Ischemic preconditioning** protects against a later, longer ischemic episode.<!--c:ischemia-reperfusion-injury-c052-->
+- **Stunned myocardium:** after brief ischemia, contraction can stay weak for hours although no myocyte dies, because of the ROS of reperfusion.<!--c:ischemia-reperfusion-injury-c064-->
 
 ## Common misconceptions and exam traps
 

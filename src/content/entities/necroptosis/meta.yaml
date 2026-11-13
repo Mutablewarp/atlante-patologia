@@ -42,8 +42,8 @@ quickCheck:
       it: "Quali due proteine formano il necrosoma e quale effettore attivano?"
       en: "Which two proteins form the necrosome, and which effector do they activate?"
     a:
-      it: "RIP1 e RIP3 (RIPK1/RIPK3); attivano MLKL, che si inserisce nelle membrane e ne distrugge l'integrità."
-      en: "RIP1 and RIP3 (RIPK1/RIPK3); they activate MLKL, which inserts into membranes and destroys their integrity."
+      it: "RIP1 e RIP3 (RIPK1/RIPK3); attivano MLKL, che apre brecce nella membrana plasmatica e nelle membrane degli organelli."
+      en: "RIP1 and RIP3 (RIPK1/RIPK3); they switch on MLKL, which breaks open the plasma membrane and organelle membranes."
     kind: short
   - id: necroptosis-q2
     q:
@@ -58,16 +58,16 @@ quickCheck:
       it: "Perché la necroptosi è una difesa utile contro i virus?"
       en: "Why is necroptosis a useful defense against viruses?"
     a:
-      it: "Molti virus producono inibitori delle caspasi che bloccano l'apoptosi; la cellula infetta può comunque uccidersi per una via indipendente dalle caspasi, limitando la diffusione del virus."
-      en: "Many viruses make caspase inhibitors that block apoptosis; the infected cell can still kill itself through a caspase-independent route, limiting viral spread."
+      it: "Perché non ha bisogno delle caspasi: la cellula infetta può uccidersi, e così limitare la diffusione del virus, anche quando il virus possiede inibitori delle caspasi che bloccano l'apoptosi."
+      en: "Because it needs no caspases: the infected cell can kill itself, and so limit viral spread, even when the virus carries caspase inhibitors that block apoptosis."
     kind: short
   - id: necroptosis-q4
     q:
       it: "Al microscopio ottico, come si distingue una cellula in necroptosi da una cellula in necrosi classica?"
       en: "Under the light microscope, how do you tell a necroptotic cell from a cell in classical necrosis?"
     a:
-      it: "Non si distingue: la morfologia è la stessa (rigonfiamento, rottura della membrana, picnosi, infiammazione); la differenza sta nel meccanismo, che è programmato."
-      en: "You cannot: the morphology is the same (swelling, membrane rupture, pyknosis, inflammation); the difference lies in the mechanism, which is programmed."
+      it: "Non si distingue: il quadro è lo stesso (nucleo picnotico, cellula rigonfia, membrana rotta, poi infiammazione); cambia solo il meccanismo, che è programmato."
+      en: "You cannot: both show the same picture (pyknotic nucleus, swollen cell, broken membrane, then inflammation); only the mechanism, which is programmed, differs."
     kind: free
 selfExplain:
   - it: "Perché una morte cellulare «programmata» come la necroptosi provoca infiammazione, mentre l'apoptosi di solito no?"
@@ -77,6 +77,31 @@ selfExplain:
   - it: "In che modo l'attivazione di RIP3 porta a una crisi bioenergetica, attraverso il calcio, i mitocondri e il ferro?"
     en: "How does RIP3 activation lead to a bioenergetic crisis through calcium, mitochondria and iron?"
 chain: []
+examQuestions:
+  - it: "Mi parli della necroptosi: che cos'è e perché si parla di «necrosi programmata»?"
+    en: "Tell me about necroptosis: what is it, and why is it called 'programmed necrosis'?"
+    focus: [definition, high-yield]
+    level: 1
+  - it: "In quali situazioni, fisiologiche e patologiche, interviene la necroptosi?"
+    en: "In which physiologic and pathologic settings does necroptosis occur?"
+    focus: [definition, etiology, clinical]
+    level: 1
+  - it: "Mi descriva la via della necroptosi, dall'attivazione del recettore fino alla rottura delle membrane: perché questa morte provoca infiammazione?"
+    en: "Walk me through the necroptosis pathway, from receptor activation to membrane rupture: why does this kind of death cause inflammation?"
+    focus: [pathogenesis, prognosis]
+    level: 2
+  - it: "Perché la caspasi-8 fa da interruttore tra apoptosi e necroptosi, e che cosa succede in una cellula infettata da un virus che blocca le caspasi?"
+    en: "Why does caspase-8 act as the switch between apoptosis and necroptosis, and what happens in a cell infected by a virus that blocks caspases?"
+    focus: [pathogenesis, etiology, traps]
+    level: 2
+  - it: "Come distingue la necroptosi dall'apoptosi e dalla necrosi coagulativa, al microscopio e per meccanismo?"
+    en: "How do you tell necroptosis from apoptosis and from coagulative necrosis, under the microscope and by mechanism?"
+    focus: [micro, differential, traps]
+    level: 3
+  - it: "Che cosa vede all'ematossilina-eosina in un tessuto con cellule in necroptosi, e quali tecniche userebbe per dimostrare che si tratta proprio di necroptosi?"
+    en: "What do you see on hematoxylin and eosin in tissue where cells are dying by necroptosis, and which techniques would you use to prove that it really is necroptosis?"
+    focus: [micro, ancillary, traps]
+    level: 3
 images:
   - id: necroptosis-micro-1
     role: micro
@@ -84,14 +109,23 @@ images:
     role: micro
   - id: necroptosis-micro-3
     role: micro
+  - id: necroptosis-micro-4
+    role: micro
+  - id: necroptosis-micro-6
+    role: micro
+  - id: necroptosis-micro-7
+    role: micro
 reviewStatus: ai-generated-unreviewed
 editionDependent: false
 sources:
   - source: rubin-8e
     chapter: "1"
-    pages: "42, 45-47, 54-55"
+    pages: "42, 45-47, 52-56"
   - source: rubin-8e
     chapter: "5"
     pages: "199"
-lastUpdated: 2026-11-03
+  - source: galluzzi-2018
+  - source: wang-2014
+  - source: samson-2021
+lastUpdated: 2026-11-09
 status: published
