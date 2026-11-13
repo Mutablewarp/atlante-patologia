@@ -9,8 +9,8 @@ export default defineConfig({
   base: '/atlante-patologia',
   trailingSlash: 'always',
   build: { format: 'directory' },
-  // AVIF effort 3: the same bytes as sharp's default 4 (within 1 %) in a fifth of the time, which keeps a cold CI build
-  // of ~1,200 images under the job's time limit (docs/IMAGE_ENCODING.md).
+  // AVIF effort 3: the same bytes as sharp's default 4 (within 1 %) in about a quarter of the time (249 s against 57 s of CPU
+  // on the same 205 files), which keeps a cold CI build under the job's time limit (docs/IMAGE_ENCODING.md).
   image: { service: { entrypoint: 'astro/assets/services/sharp', config: { avif: { effort: 3 } } } },
   i18n: {
     locales: ['it', 'en'],

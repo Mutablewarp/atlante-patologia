@@ -40,16 +40,21 @@ Per raster image the build emits three files (`src/lib/image-meta.ts`, `src/lib/
 Why:
 - Floor of SSIM 0.975 for the AVIF files (the WebP fallback, 0.971, only serves browsers without AVIF). q45 (0.952) visibly loses chromatin detail; q50 (0.963) I did not look at.
 - One page width, not two: the slot measures 375 to 589 px (Chrome, 375–1920 px viewports) on 1× to 3× screens, so a browser would pick 480 px only on a roughly 1× phone. It would cost 26 kB per image (30 MB at 1,210 images). `sizes` was `46rem` from 1024 px; now `(max-width: 599px) 100vw, 37rem`. With one candidate it does not change the choice.
-- Effort 3 (`astro.config.mjs`): the same bytes as sharp's default 4 (within 1 %) in a seventh of the time. A cold `npm run build` took 23 s of CPU before, 249 s with effort 4, 57 s with effort 3 (205 image files). At 1,210 images that is about 12 CPU-minutes against about 60: 3 or 15 minutes on 4 cores, and the CI job's limit is 15 (estimates from this Mac).
+- Effort 3 (`astro.config.mjs`): the same bytes as sharp's default 4 (within 1 %) in about a quarter of the time. A cold `npm run build` of the 205 image files of the 26 cards before V2.2 took 23 s of CPU before this work, 249 s with effort 4, 57 s with effort 3 (measured on this Mac; not repeated with V2.2's 469 files, whose build here ran on a warm cache). Scaled by file count to 404 cards (about 7,600 files) that is about 35 CPU-minutes against about 150: 9 or 38 minutes on 4 cores, and the CI job's limit is 15 (estimate).
 - 4:4:4 chroma kept: 4:2:0 saves 4 %; my reason is the colour edges between eosin and haematoxylin, which I did not test.
 - The original files: Astro kept all 76 (16.6 MB) because our code read their size from the imported object. `plain()` reads a clone, and `tests/dist/image-weight.test.ts` fails if one comes back. That alone is 223 kB per image.
 
 ## Result and projection
 
-- Measured, 26 cards: images in `dist/` 39.1 MB → 12.8 MB (526 → 172 kB per image: page 67, zoom 68 averaged over all 76, fallback 37); `dist/` 57.6 → 31.4 MB. A card loads 197 kB of images on average, 327 kB at most, on any screen; before 212 kB (max 364) on a 1× desktop and 412 kB (max 923) on a 2× screen. Offline pack g01 (it) 21.4 → 17.0 MB.
-- Cap: `tests/dist/image-weight.test.ts`, 450 kB for a card with at most 3 images (heaviest of them: 287 kB; no allowlist needed).
-- Estimate for 404 cards: 76 + 378 × 3 (the cap) = 1,210 images × 172 kB = 204 MB; today's encoding 622 MB. V2.2: the brief says 85 added images; its branch `content/g01-v22` has 100 more raster files than main (26.6 MB of sources), which this pipeline turns into 203 kB each (measured), so +17 MB (85) or +20 MB (100): 221–224 MB; today's encoding would add 54–63 MB (estimate). With 6 images on all 404 cards: 2,424 × 172–203 kB = 407–480 MB, over the budget: the cap of 3 holds the line.
-- D026's first option (AVIF and WebP at 480 and 960 px plus the zoom file): 246 kB per image, 290 MB, above its 220 MB threshold. This is its second option.
-- Site total: images 221 MB + 808 card pages × 113 kB (measured mean) = 89 MB + search index about 11 MB (the plan's estimate, not re-measured) ≈ 321 MB before the body assets. Inside 400 MB.
+Measured: the first three bullets, from the built `dist/` on 2026-11-13 (26 cards, two languages, 52 entity pages, V2.2 included). Estimated: every figure that says "404 cards". "Image" is one raster image (page file, fallback and optional zoom file); the SVG diagrams are counted apart.
+
+- Measured, `dist/`: 1,216 files, 54.1 MB. 469 image files (281 AVIF, 188 WebP) weigh 32.8 MB, 0.15 MB of them the 12 pathway poster files: 177 raster images, 189 kB each. No original JPEG or PNG is in `dist/` (its 4 PNGs are the app icons). Before V2.2, with 76 images: 172 kB each, `dist/` 31.4 MB.
+- Measured, entity pages: every card has 6 to 9 images in its viewer figures (6: 4 pages, 7: 32, 8: 14, 9: 2); mean 7.27 per page (378 in 52 pages: 354 raster, 24 SVG; 6.81 raster). The default load is 493 kB per card on average and 768 kB at most (`/en/e/intracellular-accumulations/`, 7 images).
+- Cap: `tests/dist/image-weight.test.ts`, 450 kB for a card with at most 3 images. No card is that small now, so today the cap checks no card; cards with more images have no cap.
+- Estimate for 404 cards: 404 × 6.81 raster images = 2,751 × 189 kB = 508 MB of images (1.26 MB per card), over the 400 MB budget by itself. It assumes the 26 cards are typical. The earlier estimate (1,210 images, 204 MB) assumed at most 3 images per card. Under 400 MB needs a mean of about 5 images per card, or about 140 kB per image, or a larger budget: the owner's decision.
+- Estimate: D026's first option (AVIF and WebP at 480 and 960 px plus the zoom file) costs about 246 kB per image (spike), so about 650 MB at 2,751 images. This pipeline is its second option.
+- Site total at 404 cards: not estimated again. Images alone are 508 MB, so it is over 400 MB before HTML and search index.
+
+Pathway posters (`StructureViewer.astro`) stay on `<Image>` from `astro:assets`: 12 files (320 and 640 px WebP), 0.15 MB in all, at most 112 kB on a pathway page (4 pages), so a `pictureFiles` conversion would save under 0.1 MB.
 
 Not verified: Firefox and Safari engines (Chrome only); a real phone at 3×; the AVIF fallback in a browser without AVIF; CI cold-build time.

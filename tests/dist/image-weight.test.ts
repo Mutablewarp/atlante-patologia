@@ -47,8 +47,17 @@ describe('image weight per card', () => {
         if (!file) throw new Error(`${p.url}: image ${u} is not in dist/`);
         return n + statSync(file).size;
       }, 0);
-      return { url: p.url.replace('/atlante-patologia/', '/'), images: urls.length, bytes };
+      const figures = [...p.html.matchAll(FIGURE)].map((m) => m[0]);
+      const inFigures = figures.reduce((n, f) => n + (f.match(/<img\b/g)?.length ?? 0), 0);
+      return { url: p.url.replace('/atlante-patologia/', '/'), images: urls.length, bytes, figures: figures.length, inFigures };
     });
+
+  it('counts every image of every viewer figure, at least one per page that has a figure', () => {
+    const wrong = cards
+      .filter((c) => c.figures > 0 && (c.images < 1 || c.images !== c.inFigures))
+      .map((c) => `${c.url}: counted ${c.images}, ${c.inFigures} <img> in ${c.figures} figures`);
+    expect(wrong).toEqual([]);
+  });
 
   it('finds the images of the cards', () => {
     expect(cards.length).toBeGreaterThan(0);

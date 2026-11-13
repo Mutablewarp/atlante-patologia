@@ -10,6 +10,7 @@ import { IMAGE_OUT, imagePlan } from './image-meta.ts';
 /**
  * The imported image's own data. Read it from here, not from the import: touching the import makes Astro keep the
  * original file in dist/, where nothing uses it (about 220 kB per image).
+ * `clone` is a property of Astro 7.3.8's ImageMetadata; tests/dist/image-weight.test.ts fails if originals reach dist/.
  */
 export const plain = (meta: ImageMetadata): ImageMetadata => (meta as ImageMetadata & { clone?: ImageMetadata }).clone ?? meta;
 

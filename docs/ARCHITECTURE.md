@@ -152,8 +152,8 @@ The cache name includes the precache hash, so a new deploy replaces the shell at
 
 - **JS:** content pages ship only small islands (≤ 50 KB gz). Study tools load ts-fsrs and idb only on study routes.
 - **Images:** per image, one AVIF of 960 px for every page, a 640 px WebP for browsers without AVIF (also used by the study tools), and an AVIF at the original width that only the zoom viewer fetches, for originals wider than 1200 px. D026 was decided by measurement on 2026-11-12: [IMAGE_ENCODING.md](IMAGE_ENCODING.md).
-  - Budget: about 172 kB per image in `dist/` (was about 526 kB), so roughly 205–225 MB of images at 404 cards (estimate), inside the 400 MB total; a card page with at most 3 images loads at most 450 kB of images (`tests/dist/image-weight.test.ts`).
-  - Cold-build cost: AVIF effort 3 (`astro.config.mjs`), because sharp's default effort 4 is about 5 times slower for the same bytes.
+  - Measured 2026-11-13 (26 cards): 189 kB per image in `dist/` (177 raster images, 32.7 MB), a card loads 493 kB of images by default (max 768 kB), every card has 6 to 9 images, so the 450 kB cap for cards with at most 3 images (`tests/dist/image-weight.test.ts`) checks none today. Estimate at 404 cards: about 508 MB of images, over the 400 MB total. Which numbers are measured and which estimated: `IMAGE_ENCODING.md`, "Result and projection".
+  - Cold-build cost: AVIF effort 3 (`astro.config.mjs`), because sharp's default effort 4 took about 4 times as long for the same bytes (249 s against 57 s of CPU, 205 files).
 - **HTML** (plan I-6): `node scripts/html-weight.mjs` prints what the bytes are made of; `tests/dist/html-weight.test.ts` holds the limits.
   - Measured 2026-11-12 on 26 cards in both languages: a card page weighs a median of 95 kB (78–104 kB, plus about 27 kB for each pathway it embeds). Before the diet: 115 kB (90–153 kB).
   - Measured 2026-11-13 on 52 card pages (V2.2 content): median 129 kB, maximum 165.9 kB, gzip median 30 kB. The markup (total minus visible text) fits 57.2 kB + 2.13 kB per image panel, residuals −7 to +11 kB.
