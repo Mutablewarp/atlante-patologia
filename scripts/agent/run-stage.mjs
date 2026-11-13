@@ -223,7 +223,9 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
   cli('run-stage', () => {
     if (!id || !stage) throw new Error(`usage: node scripts/agent/run-stage.mjs <card-id> <${RUN_STAGES.join('|')}> [--budget 4] [--model sonnet] [--note "..."]`);
     const budget = option(args, '--budget');
-    runStage({ id, stage, budget: budget === undefined ? undefined : Number(budget), model: option(args, '--model'), note: option(args, '--note', '') })
+    // --siblings a,b: the other cards that run at the same time in this worktree (run-batch passes them itself)
+    const siblings = (option(args, '--siblings', '') ?? '').split(',').filter(Boolean);
+    runStage({ id, stage, budget: budget === undefined ? undefined : Number(budget), model: option(args, '--model'), note: option(args, '--note', ''), siblings })
       .then((r) => {
         console.log(`${r.stage} ${r.id}: ${r.status}, $${r.costUsd}, ${r.turns} turns, ${r.seconds}s${r.note ? `: ${r.note}` : ''}`);
         process.exitCode = r.status === 'done' ? 0 : r.status === 'limit' ? 3 : 1;
