@@ -295,7 +295,7 @@ describe('runBatch', () => {
 
   it('runs each card from its stage to --until, in order', async () => {
     const calls: string[] = [];
-    const out = await runBatch({
+    const out = await runBatch({ distance: false,
       queue: [{ id: 'a', from: 'verifier' }, { id: 'b', from: 'author' }],
       concurrency: 1,
       until: 'fixer',
@@ -313,7 +313,7 @@ describe('runBatch', () => {
     let live = 0;
     let peak = 0;
     const order: string[] = [];
-    await runBatch({
+    await runBatch({ distance: false,
       queue: ['a', 'b', 'c', 'd'].map((id) => ({ id, from: 'author' })),
       concurrency: 2,
       until: 'translator',
@@ -332,7 +332,7 @@ describe('runBatch', () => {
 
   it('stops a blocked card and goes on with the others', async () => {
     const calls: string[] = [];
-    const out = await runBatch({
+    const out = await runBatch({ distance: false,
       queue: [{ id: 'a', from: 'author' }, { id: 'b', from: 'author' }],
       concurrency: 1,
       until: 'translator',
@@ -347,7 +347,7 @@ describe('runBatch', () => {
 
   it('stops everything at a usage limit', async () => {
     const calls: string[] = [];
-    const out = await runBatch({
+    const out = await runBatch({ distance: false,
       queue: ['a', 'b', 'c'].map((id) => ({ id, from: 'author' })),
       concurrency: 1,
       run: async ({ id, stage }: Call) => {
@@ -360,9 +360,27 @@ describe('runBatch', () => {
   });
 
   it('stops launching stages once the budget is spent', async () => {
-    const out = await runBatch({ queue: [{ id: 'a', from: 'author' }], concurrency: 1, budgetUsd: 5, run: async ({ id, stage }: Call) => ok(id, stage, 2) });
+    const out = await runBatch({ distance: false, queue: [{ id: 'a', from: 'author' }], concurrency: 1, budgetUsd: 5, run: async ({ id, stage }: Call) => ok(id, stage, 2) });
     expect(out).toMatchObject({ stop: 'budget', spent: 6 });
     expect(out.results).toHaveLength(3);
+  });
+
+  it('runs the distance stage right after the author, before the translation, and stops the card when it is blocked', async () => {
+    const calls: string[] = [];
+    const out = await runBatch({
+      queue: [{ id: 'a', from: 'author' }, { id: 'b', from: 'translator' }],
+      concurrency: 1,
+      until: 'translator',
+      run: async ({ id, stage }: Call) => {
+        calls.push(`${stage}:${id}`);
+        return stage === 'distance' && id === 'a' ? { id, stage, status: 'blocked', costUsd: 1 } : ok(id, stage);
+      },
+    });
+    expect(calls).toEqual(['author:a', 'distance:a', 'translator:b']);
+    expect(out.stop).toBeNull();
+    const calls2: string[] = [];
+    await runBatch({ queue: [{ id: 'a', from: 'author' }], until: 'translator', run: async ({ id, stage }: Call) => (calls2.push(stage), ok(id, stage)) });
+    expect(calls2).toEqual(['author', 'distance', 'translator']);
   });
 
   it('prints one line per stage', () => {
