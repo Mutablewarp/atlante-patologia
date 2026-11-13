@@ -190,7 +190,7 @@ describe('runStage', () => {
     const root = repo();
     report(root, id, 'author');
     const r = await run(root, agent(() => {}, claudeJson({ result: 'I could not do it' })));
-    expect(r).toMatchObject({ status: 'blocked', note: 'no report (success)' });
+    expect(r).toMatchObject({ status: 'blocked', note: 'no report (success): I could not do it' });
     expect(readJson(root, '.work/reports/foo.author.json')).toMatchObject({ status: 'blocked' });
     expect(existsSync(join(root, '.work/state/foo.json'))).toBe(false);
   });
@@ -256,6 +256,21 @@ describe('runStage', () => {
       report(root, id, 'author');
     }), { siblings: ['other'] });
     expect(r.status).toBe('done');
+  });
+
+  it('lets a stage other than the scout see the image files a sibling scout writes, but not write its own', async () => {
+    const root = repo();
+    const sibling = await run(root, agent(() => {
+      put(root, 'src/content/entities/foo/en.md', 'x');
+      put(root, 'src/assets/images/other-micro-1.jpg', 'sibling image');
+      report(root, id, 'author');
+    }), { siblings: ['other'] });
+    expect(sibling.status).toBe('done');
+    const own = await run(root, agent(() => {
+      put(root, 'src/assets/images/foo-micro-1.jpg', 'own image');
+      report(root, id, 'author');
+    }), { siblings: ['other'] });
+    expect(own).toMatchObject({ status: 'blocked', note: 'wrote outside the card: src/assets/images/foo-micro-1.jpg' });
   });
 
   it('stops on a usage limit: status limit, a blocked report on disk, nothing recorded', async () => {

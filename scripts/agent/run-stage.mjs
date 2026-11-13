@@ -117,7 +117,9 @@ const owns = (id, path) => path.startsWith(`src/content/entities/${id}/`) || pat
  * `siblings` are the other cards of the batch: they run at the same time in the same worktree, so their files are not a violation.
  */
 export const allowedWrite = (id, stage, siblings = []) => (path) =>
-  [id, ...siblings].some((c) => owns(c, path)) || (stage === 'scout' && path.startsWith('src/assets/images/'));
+  [id, ...siblings].some((c) => owns(c, path)) ||
+  (stage === 'scout' && path.startsWith('src/assets/images/')) ||
+  siblings.some((c) => path.startsWith(`src/assets/images/${c}-`)); // a sibling's scout may be writing its image files right now
 
 /** Paths that differ between two snapshots and that the stage may not write. */
 export function violations(before, after, id, stage, siblings = []) {
@@ -198,7 +200,7 @@ export async function runStage({ root = ROOT, id, stage, budget = undefined, mod
   const blocked = (text) => ({ id, stage, status: 'blocked', note: text.slice(0, 200) });
   let outcome;
   if (limitHit(j, run.stderr)) outcome = { ...blocked('usage limit reached'), status: 'limit' };
-  else if (!report) outcome = blocked(`no report (${j?.subtype ?? `exit ${run.status}`})`);
+  else if (!report) outcome = blocked(`no report (${j?.subtype ?? `exit ${run.status}`})${j?.result ? `: ${String(j.result).replace(/\s+/g, ' ').slice(0, 120)}` : ''}`);
   else {
     const problems = validateReport(report, id, stage);
     const stray = violations(before, snapshot(root), id, stage, siblings);
