@@ -94,6 +94,23 @@ export function scaleBar(mpp: number, naturalW: number, shownW: number, maxPx = 
   return { um, px: um / umPerPx };
 }
 
+/**
+ * What the build emits for a teaching image (docs/IMAGE_ENCODING.md, D026): an AVIF that pages load, a smaller WebP
+ * for browsers without AVIF, and an AVIF at the original width that only the zoom viewer fetches.
+ */
+export const IMAGE_OUT = {
+  page: { width: 960, quality: 60 },
+  fallback: { width: 640, quality: 60 },
+  zoom: { from: 1200, quality: 55 },
+} as const;
+
+/** Output widths for an original `w` px wide. Never enlarged; a zoom source only when the original is clearly sharper than the page file. */
+export const imagePlan = (w: number) => ({
+  page: Math.min(w, IMAGE_OUT.page.width),
+  fallback: Math.min(w, IMAGE_OUT.fallback.width),
+  zoom: w > IMAGE_OUT.zoom.from ? w : undefined,
+});
+
 type Lang2 = 'it' | 'en';
 /** The file a page in `lang` shows: an original diagram whose drawing carries text has an Italian copy (`fileIt`). */
 export const fileFor = (img: { file: string; fileIt?: string }, lang: Lang2): string => (lang === 'it' && img.fileIt) || img.file;

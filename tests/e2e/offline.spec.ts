@@ -71,6 +71,36 @@ test('an installed offline pack makes its pages load offline', async ({ page, co
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Sei offline');
 });
 
+test('an installed offline pack keeps the images of its cards: the AVIF, the WebP fallback and the file the viewer zooms to', async ({ page, context }) => {
+  await page.goto('it/me/offline/');
+  await swReady(page);
+  const pack = page.locator('[data-pack="g01"]');
+  await pack.getByRole('button', { name: /^Scarica / }).click();
+  await expect(pack.locator('[data-state]')).toHaveText('Disponibile offline');
+
+  await context.setOffline(true);
+  await page.goto('it/e/coagulative-necrosis/'); // a 1600 px original: its picture has a zoom source
+  const files = await page.locator('#fig-coagulative-necrosis-micro-1 picture').evaluate((p) =>
+    [p.querySelector('source')!.srcset, p.querySelector('source')!.dataset.zoom!, p.querySelector('img')!.src].map((u) => new URL(u.split(' ')[0]!, location.href).href),
+  );
+  expect(files).toHaveLength(3);
+  // A fresh image request for each, as the browser makes one for the page and for a zoom. The page's scripts cannot be
+  // tested offline here: `astro preview` answers `Vary: Origin`, which a module script's request (it carries Origin) misses.
+  for (const url of files) {
+    const loads = await page.evaluate(
+      (u) =>
+        new Promise<boolean>((done) => {
+          const image = new Image();
+          image.onload = () => done(true);
+          image.onerror = () => done(false);
+          image.src = u;
+        }),
+      url,
+    );
+    expect(loads, url).toBe(true);
+  }
+});
+
 test('study data from an installed pack is served only offline: online, the deployed file wins', async ({ page, context }) => {
   await page.goto('it/me/offline/');
   await swReady(page);

@@ -2,7 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { readFileSync, readdirSync } from 'node:fs';
 import { parse } from 'yaml';
 import { imageSchema } from '../src/lib/schema.ts';
-import { STAINS, attributionFor, fileFor, groupMembers, licenseName, powerOf, scaleBar, stainCode } from '../src/lib/image-meta.ts';
+import { IMAGE_OUT, STAINS, attributionFor, fileFor, groupMembers, imagePlan, licenseName, powerOf, scaleBar, stainCode } from '../src/lib/image-meta.ts';
 
 describe('stainCode', () => {
   it.each([
@@ -104,6 +104,21 @@ describe('scaleBar', () => {
     expect(scaleBar(0, 1200, 600)).toBeUndefined();
     expect(scaleBar(Number.NaN, 1200, 600)).toBeUndefined();
     expect(scaleBar(0.25, 1200, 0)).toBeUndefined();
+  });
+});
+
+describe('imagePlan', () => {
+  it('never enlarges: the page and fallback files are the original when it is narrower', () => {
+    expect(imagePlan(600)).toEqual({ page: 600, fallback: 600, zoom: undefined });
+    expect(imagePlan(417)).toEqual({ page: 417, fallback: 417, zoom: undefined });
+  });
+  it('an original up to the zoom threshold has no zoom source: the page file is already (nearly) as sharp', () => {
+    for (const w of [960, 1024, IMAGE_OUT.zoom.from]) expect(imagePlan(w).zoom, String(w)).toBeUndefined();
+    expect(imagePlan(1024)).toMatchObject({ page: 960, fallback: 640 });
+  });
+  it('a larger original gets a zoom source at its own width, and the page file stays at 960', () => {
+    expect(imagePlan(IMAGE_OUT.zoom.from + 1).zoom).toBe(IMAGE_OUT.zoom.from + 1);
+    expect(imagePlan(1600)).toEqual({ page: 960, fallback: 640, zoom: 1600 });
   });
 });
 

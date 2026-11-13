@@ -13,6 +13,7 @@ All notable changes to this project are listed here. The format follows [Keep a 
 - Issue forms (content error, takedown, accessibility, translation), pull request template, contributing guide, code of conduct and operations notes.
 
 ### Changed
+- Images: every page loads one AVIF of at most 960 px, browsers without AVIF get a small WebP, and the image viewer fetches an AVIF at the original width only when a learner zooms. The built site is 31 MB instead of 58 MB for the same 26 cards (about 172 kB per image instead of 526 kB); a card with up to 3 images loads at most 450 kB of images, and the size budget is now 400 MB. See `docs/IMAGE_ENCODING.md`.
 - CI runner pinned to `ubuntu-24.04`; deploy waits for e2e and Lighthouse.
 - The language switch keeps the current `?query` and `#hash`.
 - Smoother Italian in several interface strings.

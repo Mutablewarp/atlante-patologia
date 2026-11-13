@@ -7,7 +7,7 @@ Status: PHASE 0 proposal, 2026-10-10. Versions come from [VERIFIED_FACTS.md](VER
 | Constraint | Consequence |
 |---|---|
 | Free, no login, no trackers, no cookies, user data on device | Fully static site; all personal state in IndexedDB; zero third-party requests (tested). |
-| GitHub Pages: site ≤ 1 GB, deploy ≤ 10 min, soft 100 GB/month, public repo on Free plan | Our own hard budget is **< 300 MB built site** (brief), enforced in CI; images are the main cost. |
+| GitHub Pages: site ≤ 1 GB, deploy ≤ 10 min, soft 100 GB/month, public repo on Free plan | Our own hard budget is **< 400 MB built site** (the brief said 300 MB; raised by decision D8 of the V3 plan together with the image diet), enforced in CI; images are the main cost. |
 | Bilingual it/en with parity | Every authored item carries both languages in the same commit; parity is a build gate. |
 | Offline-capable | Service worker precaches the app shell only; chapters are opt-in offline packs. |
 | Accuracy and licensing gates before publishing | Content is `draft` until the validators and the claim ledger pass; only `published` content is built. |
@@ -21,7 +21,7 @@ Status: PHASE 0 proposal, 2026-10-10. Versions come from [VERIFIED_FACTS.md](VER
 | Site generator | Astro (static output) | 7.3.8 | Content collections + Zod 4 via `astro/zod`; built-in i18n routing. |
 | Language | TypeScript, `strict` | 6.0.3 | Not 7.x: `@astrojs/check` 0.9.10 peer range is TS ^5 \|\| ^6 (D005). |
 | Interactive islands | Preact + `@astrojs/preact` + `@preact/signals` | 10.29.8 / 6.0.6 / 2.11.3 | Not Preact 11: integration peer range is ^10.6.5 (D004). |
-| Images | `astro:assets` + sharp | sharp 0.35.5 | AVIF/WebP, responsive `srcset`, lazy loading. |
+| Images | `astro:assets` + sharp | sharp 0.35.5 | AVIF page file, small WebP fallback, AVIF zoom file, lazy loading ([IMAGE_ENCODING.md](IMAGE_ENCODING.md)). |
 | Search | Pagefind | 1.5.2 | Post-build; one index per `<html lang>`; diacritic-tolerant since 1.5.0; `baseUrl` for project-site subpath. |
 | Spaced repetition | ts-fsrs | 5.4.2 (MIT, Node ≥ 20) | FSRS v6 scheduler. |
 | Client storage | idb (IndexedDB wrapper) | 8.0.4 (ISC) | |
@@ -143,7 +143,7 @@ The cache name includes the precache hash, so a new deploy replaces the shell at
 | ≥ 3 lenses per entity (A–Z not counted) | content | §3.2 |
 | Navigation graph on `dist/`: no orphans, no dead ends, ≤ 3 taps from Home via a lens, hop-distance report, broken links and anchors | dist | §3.6 |
 | Privacy: zero third-party requests, no cookies (Playwright); no external URLs in `src=`/`href=` of built assets except outbound citation links | e2e + dist | §2.5 |
-| Size budget: total `dist/` < 300 MB; per-page JS budget (content pages ≤ 50 KB gz, study pages ≤ 120 KB gz) | dist | §6 |
+| Size budget: total `dist/` < 400 MB; images loaded by a card with at most 3 images ≤ 450 kB; per-page JS budget (content pages ≤ 50 KB gz, study pages ≤ 120 KB gz) | dist | §6 |
 | Accessibility: axe on every template at 5 viewports; keyboard traversal; focus-not-obscured test | e2e | §3.1, §8 |
 | Lighthouse mobile ≥ 90 on Performance, Accessibility, Best Practices, SEO (sample pages) | e2e | §6 |
 | Dependency licenses on allowlist; compatibility report | CI | §2.1 |
@@ -151,9 +151,9 @@ The cache name includes the precache hash, so a new deploy replaces the shell at
 ## 8. Performance and size budgets
 
 - **JS:** content pages ship only small islands (≤ 50 KB gz). Study tools load ts-fsrs and idb only on study routes.
-- **Images:** the default is AVIF + WebP at 2 widths. If the measured Phase 2 average puts the projected full-scope total above budget, drop to AVIF-only plus the smallest WebP fallback (D026, decided by measurement).
-  - Rough budget: ≤ 220 MB of the 300 MB for images, i.e. ~110 KB per image at 2,000 images.
-  - CI prints the per-module image cost.
+- **Images:** per image, one AVIF of 960 px for every page, a 640 px WebP for browsers without AVIF (also used by the study tools), and an AVIF at the original width that only the zoom viewer fetches, for originals wider than 1200 px. D026 was decided by measurement on 2026-11-12: [IMAGE_ENCODING.md](IMAGE_ENCODING.md).
+  - Budget: about 172 kB per image in `dist/` (was about 526 kB), so roughly 205–225 MB of images at 404 cards (estimate), inside the 400 MB total; a card page with at most 3 images loads at most 450 kB of images (`tests/dist/image-weight.test.ts`).
+  - Cold-build cost: AVIF effort 3 (`astro.config.mjs`), because sharp's default effort 4 is about 5 times slower for the same bytes.
 - **HTML:** ~2 languages × (~1,190 entities + ~16 pattern pages + lens/term pages + tools) ≈ 3,000–3,500 pages. Text weight is negligible next to images.
 - **Caching:** filenames are content-hashed. GitHub Pages does not offer custom cache headers (verify in Phase 1), so the service worker's cache-first strategy provides long-lived caching for returning users.
 

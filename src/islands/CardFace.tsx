@@ -13,12 +13,22 @@ function ShapeEl({ s, ratio, cls }: { s: Shape; ratio: number; cls: string }) {
   return <polygon class={cls} points={pts.join(' ')} />;
 }
 
+/** A study image: the AVIF where the browser has it, else the small WebP (src/lib/picture.ts). */
+export function Pic({ img }: { img: { src: string; avifSet?: string; width: number; height: number; alt: string } }) {
+  return (
+    <picture>
+      {img.avifSet && <source type="image/avif" srcSet={img.avifSet} />}
+      <img src={img.src} width={img.width} height={img.height} alt={img.alt} loading="lazy" decoding="async" />
+    </picture>
+  );
+}
+
 export function Figure({ img, target }: { img: NonNullable<StudyCard['image']>; target?: number }) {
   const ratio = img.width / img.height;
   return (
     <figure class="occlusion">
       <div class="occ-wrap">
-        <img src={img.src} width={img.width} height={img.height} alt={img.alt} loading="lazy" decoding="async" />
+        <Pic img={img} />
         {target !== undefined && (
           <svg viewBox="0 0 1 1" preserveAspectRatio="none" aria-hidden="true">
             {img.shapes.map((s, i) => (

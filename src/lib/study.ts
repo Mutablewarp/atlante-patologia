@@ -6,12 +6,12 @@
 import { existsSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { getCollection } from 'astro:content';
-import { getImage } from 'astro:assets';
 import type { ImageMetadata } from 'astro';
 import type { Lang } from '../i18n/index.ts';
 import { siteData, entityBody, images as getImages, PREVIEW_DRAFTS } from './content.ts';
 import { splitSections } from './sections.ts';
 import { fileFor } from './image-meta.ts';
+import { pictureFiles, plain } from './picture.ts';
 import { clozeCards, qaCards, occlusionCards, type StudyCard, type OcclusionImage } from './cards.ts';
 import type { QuizQuestion } from './quiz.ts';
 import type { OralQuestion } from './oral.ts';
@@ -21,18 +21,19 @@ import { SECTIONS, QUICK_CHECK } from '../i18n/sections.ts';
 // `_` files are fixtures (H04): excluded so they never become production build assets.
 const ASSETS = import.meta.glob<ImageMetadata>(['/src/assets/images/*.{png,jpg,jpeg,webp,avif,svg}', '!**/_*'], { import: 'default' });
 
-export type StudyImage = { src: string; width: number; height: number };
+/** `src` is the small WebP, `avifSet` the AVIF `srcset` for browsers that have it; width and height give the display size (at most 1000 px). */
+export type StudyImage = { src: string; avifSet?: string; width: number; height: number };
 
-/** Optimized URL for an image file under src/assets/images (SVG served as is). */
+/** The files of an image under src/assets/images, shared with the card pages (SVG served as is). */
 export async function imageSrc(file: string): Promise<StudyImage | undefined> {
   const name = file.replace(/^.*\//, '');
   const load = ASSETS[`/src/assets/images/${name}`];
   if (!load) return fixtureSrc(name);
   const meta = await load();
-  if (meta.format === 'svg') return { src: meta.src, width: meta.width, height: meta.height };
-  const width = Math.min(meta.width, 1000);
-  const out = await getImage({ src: meta, width, format: 'webp' });
-  return { src: out.src, width, height: Math.round((meta.height * width) / meta.width) };
+  if (plain(meta).format === 'svg') return { src: meta.src, width: meta.width, height: meta.height };
+  const pic = await pictureFiles(meta);
+  const width = Math.min(pic.width, 1000);
+  return { src: pic.webp, avifSet: pic.avifSet, width, height: Math.round((pic.height * width) / pic.width) };
 }
 
 /**

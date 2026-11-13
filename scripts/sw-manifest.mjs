@@ -61,10 +61,10 @@ function hashed(paths) {
 
 export const versionOf = (files) => sha(Object.entries(files).map(([p, h]) => `${p} ${h}`).join('\n'));
 
-/** Base-relative same-site image paths referenced by an HTML page (src, srcset, href). */
+/** Base-relative same-site image paths referenced by an HTML page (src, srcset, href, and data-zoom: the file the image viewer swaps in on zoom). */
 export function imagesIn(html, base) {
   const out = new Set();
-  for (const m of html.matchAll(/\s(?:src|srcset|href)="([^"]+)"/g)) {
+  for (const m of html.matchAll(/\s(?:src|srcset|href|data-zoom)="([^"]+)"/g)) {
     for (const candidate of m[1].split(',')) {
       const u = candidate.trim().split(/\s+/)[0] ?? '';
       if (u.startsWith(base) && IMAGE.test(u.split(/[?#]/)[0])) out.add(u.slice(base.length).split(/[?#]/)[0]);

@@ -24,7 +24,7 @@ export type StudyCard = {
   back: string;
   /** Section anchor the card comes from (back-link). */
   section: string;
-  image?: { src: string; width: number; height: number; alt: string; shapes: Shape[]; target: number };
+  image?: { src: string; avifSet?: string; width: number; height: number; alt: string; shapes: Shape[]; target: number };
 };
 
 export function cardId(entity: string, kind: CardKind, enSource: string): string {
@@ -118,6 +118,7 @@ export function qaCards({ entity, module, quickCheck }: QaInput): { it: StudyCar
 export type OcclusionImage = {
   id: string;
   src: string;
+  avifSet?: string;
   width: number;
   height: number;
   alt: L;
@@ -143,7 +144,7 @@ export function occlusionCards(entity: string, module: string, images: Occlusion
           front: '',
           back: `<strong>${escapeHtml(ann.label[lang])}</strong><br>${escapeHtml(img.caption[lang])}`,
           section: img.section,
-          image: { src: img.src, width: img.width, height: img.height, alt: img.alt[lang], shapes: anns.map((a) => a.shape), target },
+          image: { src: img.src, ...(img.avifSet ? { avifSet: img.avifSet } : {}), width: img.width, height: img.height, alt: img.alt[lang], shapes: anns.map((a) => a.shape), target },
         });
     });
   }

@@ -13,7 +13,7 @@ How the site is hosted, what limits apply, and what to do if traffic grows. Fact
 
 | Limit | Value | Where we stand |
 |---|---|---|
-| Published site size | ≤ 1 GB | Budget: `dist/` < 300 MB, enforced by `tests/dist/budget.test.ts` (Phase 1: about 2 MB) |
+| Published site size | ≤ 1 GB | Budget: `dist/` < 400 MB (300 MB until decision D8 of the V3 plan), enforced by `tests/dist/budget.test.ts` (2026-11-12: about 31 MB, 26 cards) |
 | Source repository | 1 GB recommended | Images are committed once in source form; no build output, no reference material (containment guard) |
 | Bandwidth | Soft limit 100 GB per month | See mitigations below |
 | Deployment | Times out after 10 minutes | Build takes well under a minute today |
@@ -25,8 +25,8 @@ GitHub Pages does not let us set cache headers, so long-lived caching for return
 
 ## Bandwidth mitigations (no paid services)
 
-1. **Image budget:** AVIF + WebP at two widths, about 110 KB per image on average (ARCHITECTURE §8, D026). Images are by far the largest share of the bytes.
-2. **Load on demand:** the search index loads only on the search page and study code only on study pages (JS budgets in `tests/dist/budget.test.ts`); images below the fold will use `loading="lazy"` when they arrive.
+1. **Image budget:** one AVIF per image for every page, a small WebP fallback, and an AVIF at the original width that only the zoom viewer fetches: about 172 KB per image in `dist/`, and at most 450 KB of images loaded by a card page with up to 3 images (ARCHITECTURE §8, D026, [IMAGE_ENCODING.md](IMAGE_ENCODING.md)). Images are by far the largest share of the bytes.
+2. **Load on demand:** the search index loads only on the search page and study code only on study pages (JS budgets in `tests/dist/budget.test.ts`); images use `loading="lazy"` and `decoding="async"`, and the zoom file is fetched only when a learner zooms.
 3. **Service worker (planned):** cache-first for hashed assets, so a returning student downloads a page's assets once.
 4. **Opt-in offline packs (planned):** whole chapters are downloaded only when a student asks, never precached for everyone.
 5. **Measure before acting:** GitHub does not give Pages traffic numbers for bandwidth. Watch for HTTP 429 reports in issues and for a notice from GitHub; the repository's Insights → Traffic shows repository views, not site bandwidth.

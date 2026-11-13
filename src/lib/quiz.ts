@@ -12,7 +12,7 @@ export type QuizQuestion = {
   stem: string;
   options: QuizOption[];
   answer?: string;
-  image?: { src: string; width: number; height: number; alt: string };
+  image?: { src: string; avifSet?: string; width: number; height: number; alt: string };
   /** Back-link to the entity section; absent when the entity is not published. */
   back?: { href: string; label: string };
 };
