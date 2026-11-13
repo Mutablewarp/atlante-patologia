@@ -59,7 +59,7 @@ Prints a JSON object of at most 30 lines: `{ "id", "ok", "words": { "en", "it", 
 
 Gates:
 
-1. The content tests for one entity: `ENTITY=<id>` with `tests/content-one` (what `npm run validate:entity` runs). Each failing test becomes one problem with a message of at most 160 characters.
+1. The content tests for one entity: `ENTITY=<id>` with `tests/content-one` (what `npm run validate:entity` runs). Each failing test becomes one problem with a message of at most 160 characters. The sources of `.work/fragments/<id>/sources.yaml` count as known (env `EXTRA_SOURCES`, merged in memory), so a card that cites a second source passes before `finalize-batch` merges the fragment into `src/content/sources.yaml`.
 2. `node scripts/no-verbatim.mjs` on the card's files: `src/content/entities/<id>/`, `docs/ledger/<id>.yaml`, `src/content/images/<id>-*.yaml`. Skipped, with a note, when `.work/*.txt` is absent.
 3. `it.md` has `translatedFrom` equal to the sha256 of `en.md`.
 4. Claim markers `<!--c:...-->` in `en.md` and in `it.md` are the same list, and equal the `claimId`s of the ledger.

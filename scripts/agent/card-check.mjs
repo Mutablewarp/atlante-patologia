@@ -91,7 +91,7 @@ const run = (root, args, env = {}) => {
 export function checkCard(id, {
   root = ROOT,
   stage = 'all',
-  runContent = (x) => run(root, ['node_modules/vitest/vitest.mjs', 'run', '--project', 'unit', 'tests/content-one', '--reporter=default'], { ENTITY: x, NO_COLOR: '1' }),
+  runContent = (x) => run(root, ['node_modules/vitest/vitest.mjs', 'run', '--project', 'unit', 'tests/content-one', '--reporter=default'], { ENTITY: x, NO_COLOR: '1', EXTRA_SOURCES: join(root, '.work/fragments', x, 'sources.yaml') }),
   runVerbatim = (paths) => run(root, ['scripts/no-verbatim.mjs', '--where', ...paths]),
 } = {}) {
   const at = stage === 'all' ? Infinity : STAGES.indexOf(stage);
