@@ -29,9 +29,11 @@ export const TOOLS = {
   questions: [...FILES, CHECK],
   scout: [...FILES, CHECK, 'Bash(curl:*)', 'Bash(node scripts/agent/commons-candidates.mjs:*)', 'WebFetch', 'WebSearch'],
   sources: [...FILES, 'Bash(curl:*)', 'Bash(grep:*)', 'Bash(head:*)', 'WebFetch', 'WebSearch'],
+  // not a card stage: a code task of run-task.mjs (docs/agents/roles/coder.md names these commands)
+  coder: [...FILES, 'Bash(npx vitest run:*)', 'Bash(npx astro check:*)', 'Bash(git diff:*)', 'Bash(git status:*)', 'Bash(wc -l:*)', 'Bash(node scripts/anatomy/:*)'],
 };
 /** Dollars (API price) a stage may spend: a lean turn costs cents, so a stage past this has lost its way. */
-export const BUDGET = { author: 4, translator: 2, verifier: 3, fixer: 3, distance: 4, questions: 2, scout: 3, sources: 2 };
+export const BUDGET = { author: 4, translator: 2, verifier: 3, fixer: 3, distance: 4, questions: 2, scout: 3, sources: 2, coder: 5 };
 const TIMEOUT_MS = 25 * 60_000;
 
 export function promptFor(id, stage, note = '') {
@@ -121,12 +123,13 @@ export const allowedWrite = (id, stage, siblings = []) => (path) =>
   (stage === 'scout' && path.startsWith('src/assets/images/')) ||
   siblings.some((c) => path.startsWith(`src/assets/images/${c}-`)); // a sibling's scout may be writing its image files right now
 
+/** Paths that differ between two snapshots: changed, new, or gone. */
+export const changedPaths = (before, after) => [...[...after].filter(([p, v]) => before.get(p) !== v).map(([p]) => p), ...[...before].filter(([p]) => !after.has(p)).map(([p]) => p)];
+
 /** Paths that differ between two snapshots and that the stage may not write. */
 export function violations(before, after, id, stage, siblings = []) {
   const ok = allowedWrite(id, stage, siblings);
-  const changed = [...after].filter(([p, v]) => before.get(p) !== v).map(([p]) => p);
-  const gone = [...before].filter(([p]) => !after.has(p)).map(([p]) => p);
-  return [...changed, ...gone].filter((p) => !ok(p)).sort();
+  return changedPaths(before, after).filter((p) => !ok(p)).sort();
 }
 
 /** Runs a command without a stdin, with a wall-clock limit; resolves { status, stdout, stderr } and never rejects. */

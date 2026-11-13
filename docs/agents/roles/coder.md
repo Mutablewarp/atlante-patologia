@@ -7,6 +7,7 @@ Inputs: the task message: goal, the files you may change, the acceptance test, t
 
 You may write only:
 - the files the task names, and their tests (`tests/<name>.test.ts`; for scripts `tests/agent-<name>.test.ts`)
+  (a task run by `scripts/agent/run-task.mjs` has a `Files:` line: exactly those paths are allowed, so its tests are on that line too)
 - the report `.work/reports/<task-id>.coder.json`
 
 Never content (`src/content/`, `docs/ledger/`), shared files, `package.json` or a new dependency, unless the task names them.
