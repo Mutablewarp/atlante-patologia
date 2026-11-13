@@ -23,6 +23,18 @@ const kB = (n) => (n / 1000).toFixed(1);
 const bytes = (s) => Buffer.byteLength(s);
 const attrKey = (n) => (n === 'class' || n === 'href' ? n : n === 'style' ? 'style=' : /^data-/.test(n) ? 'data-*' : /^aria-/.test(n) ? 'aria-*' : 'other');
 
+/** Bytes of the visible text of a page: scripts, styles, comments and tags removed, whitespace collapsed. */
+export function textBytes(html) {
+  const text = html
+    .replace(/<script\b[\s\S]*?<\/script>/g, '')
+    .replace(/<style\b[\s\S]*?<\/style>/g, '')
+    .replace(/<!--[\s\S]*?-->/g, '')
+    .replace(/<[^>]*>/g, '')
+    .replace(/\s+/g, ' ')
+    .trim();
+  return bytes(text);
+}
+
 /** Cut the named parts out of one page, then split the rest into text, tags and attributes. */
 export function breakdown(html) {
   const parts = {};

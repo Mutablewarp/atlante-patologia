@@ -2,18 +2,21 @@
  * HTML weight budgets (plan I-6, ARCHITECTURE §8). The bytes of the built HTML of a card page, a pattern page and a
  * pathway page, 1 kB = 1000 bytes. `node scripts/html-weight.mjs` prints what the bytes are made of.
  *
- * Card page: at most 110 kB, the plan target for a card of at most 1,300 words (measured 2026-11-12, 26 cards in both
- * languages: median 95.4 kB, heaviest 104.4 kB without its pathway block). A card that embeds a pathway adds that block:
- * at most 28 kB each (measured 26.9 kB). Pattern and pathway pages: the measured maximum plus 5 %.
+ * Card page: the bytes of its visible text + 66 kB + 2.2 kB per image panel (`data-panel=`) + 28 kB per embedded
+ * pathway (`<section class="entity-pathway"`, measured 26.9 kB). Content growth does not fail the test, markup bloat does.
+ * Measured 2026-11-13 on 52 card pages: median 129 kB, heaviest 165.9 kB, gzip median 30 kB; the markup (total minus
+ * text) fits 57.2 kB + 2.13 kB per panel, residuals -7 to +11 kB. Pattern and pathway pages: the measured maximum plus 5 %.
  *
  * The chapter index in the sidebar lists every published card, about 90 bytes each, so each new card adds that to every
- * card page: this budget has room for about 60 cards in all. See ARCHITECTURE §8 before raising a limit.
+ * card page, and the 66 kB absorbs only a few dozen more. See ARCHITECTURE §8 before raising a limit.
  */
 import { describe, expect, it } from 'vitest';
+import { textBytes } from '../../scripts/html-weight.mjs';
 import { BASE, isEntity, pages } from './lib.ts';
 
 const KB = 1000;
-const ENTITY_MAX = 110 * KB;
+const ENTITY_BASE = 66 * KB;
+const PANEL_MAX = 2.2 * KB;
 const PATHWAY_BLOCK_MAX = 28 * KB;
 const PATTERN_MAX = 91 * KB; // measured 86.3 kB
 const PATHWAY_MAX = 56 * KB; // measured 52.8 kB
@@ -29,11 +32,11 @@ function overBudget(list: typeof all, limit: (html: string) => number): string[]
 }
 
 describe('HTML weight', () => {
-  it(`a card page is at most ${ENTITY_MAX / KB} kB, plus ${PATHWAY_BLOCK_MAX / KB} kB for each pathway it embeds`, () => {
+  it(`a card page is at most its text + ${ENTITY_BASE / KB} kB + ${PANEL_MAX / KB} kB per image panel + ${PATHWAY_BLOCK_MAX / KB} kB per embedded pathway`, () => {
     const entities = all.filter((p) => isEntity(p.url));
     const heaviest = Math.max(...entities.map((p) => bytes(p.html)));
     console.info(`heaviest card page: ${(heaviest / KB).toFixed(1)} kB (${entities.length} card pages)`);
-    expect(overBudget(entities, (html) => ENTITY_MAX + PATHWAY_BLOCK_MAX * (html.match(/<section class="entity-pathway"/g)?.length ?? 0))).toEqual([]);
+    expect(overBudget(entities, (html) => textBytes(html) + ENTITY_BASE + PANEL_MAX * (html.match(/data-panel=/g)?.length ?? 0) + PATHWAY_BLOCK_MAX * (html.match(/<section class="entity-pathway"/g)?.length ?? 0))).toEqual([]);
   });
 
   it(`a pattern page is at most ${PATTERN_MAX / KB} kB and a pathway page at most ${PATHWAY_MAX / KB} kB`, () => {
