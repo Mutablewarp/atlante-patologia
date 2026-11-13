@@ -22,6 +22,10 @@
       names: { it: "Infiammazione acuta", en: "Acute inflammation" }
     - id: granulomatous-inflammation
       names: { it: "Infiammazione granulomatosa", en: "Granulomatous inflammation" }
+    - id: chronic-inflammation
+      names: { it: "Infiammazione cronica", en: "Chronic inflammation" }
+    - id: systemic-effects-of-inflammation
+      names: { it: "Effetti sistemici dell'infiammazione", en: "Systemic effects of inflammation" }
 - id: g03
   section: I
   order: 3
@@ -30,6 +34,9 @@
     en: "Repair, regeneration and fibrosis"
   status: planned
   refPages: "119-154"
+  planned:
+    - id: repair-and-fibrosis
+      names: { it: "Riparazione, tessuto di granulazione e fibrosi", en: "Repair, granulation tissue and fibrosis" }
 - id: g04
   section: I
   order: 4
@@ -38,17 +45,23 @@
     en: "Immunopathology"
   status: planned
   refPages: "155-192"
+  planned:
+    - id: autoimmunity
+      names: { it: "Autoimmunità: meccanismi e substrati tissutali", en: "Autoimmunity: mechanisms and tissue substrates" }
+    - id: hypersensitivity-reactions
+      names: { it: "Reazioni di ipersensibilità (tipi I–IV)", en: "Hypersensitivity reactions (types I–IV)" }
+    - id: transplant-rejection
+      names: { it: "Rigetto dei trapianti", en: "Transplant rejection" }
+    - id: graft-versus-host-disease
+      names: { it: "Malattia del trapianto contro l'ospite", en: "Graft-versus-host disease" }
 - id: g05
   section: I
   order: 5
   label:
     it: "Neoplasie"
     en: "Neoplasia"
-  status: planned
+  status: published
   refPages: "193-270"
-  planned:
-    - id: carcinoma-in-situ
-      names: { it: "Carcinoma in situ", en: "Carcinoma in situ" }
 - id: g06
   section: I
   order: 6
@@ -60,6 +73,48 @@
   planned:
     - id: lysosomal-storage-diseases
       names: { it: "Malattie da accumulo lisosomiale", en: "Lysosomal storage diseases" }
+    - id: chromosomal-abnormalities
+      names: { it: "Anomalie cromosomiche numeriche e strutturali", en: "Numerical and structural chromosome abnormalities" }
+    - id: down-syndrome
+      names: { it: "Sindrome di Down (trisomia 21)", en: "Down syndrome (trisomy 21)" }
+    - id: sex-chromosome-aneuploidies
+      names: { it: "Aneuploidie dei cromosomi sessuali", en: "Sex chromosome aneuploidies" }
+    - id: mendelian-inheritance-patterns
+      names: { it: "Modalità di trasmissione mendeliana", en: "Mendelian inheritance patterns" }
+    - id: phenylketonuria
+      names: { it: "Fenilchetonuria", en: "Phenylketonuria" }
+    - id: glycogen-storage-diseases
+      names: { it: "Glicogenosi", en: "Glycogen storage diseases" }
+    - id: cystic-fibrosis
+      names: { it: "Fibrosi cistica", en: "Cystic fibrosis" }
+    - id: familial-hypercholesterolemia
+      names: { it: "Ipercolesterolemia familiare", en: "Familial hypercholesterolemia" }
+    - id: marfan-syndrome
+      names: { it: "Sindrome di Marfan", en: "Marfan syndrome" }
+    - id: ehlers-danlos-syndromes
+      names: { it: "Sindromi di Ehlers-Danlos", en: "Ehlers–Danlos syndromes" }
+    - id: osteogenesis-imperfecta
+      names: { it: "Osteogenesi imperfetta", en: "Osteogenesis imperfecta" }
+    - id: neurofibromatosis
+      names: { it: "Neurofibromatosi di tipo 1 e 2", en: "Neurofibromatosis types 1 and 2" }
+    - id: mitochondrial-disorders
+      names: { it: "Malattie mitocondriali", en: "Mitochondrial disorders" }
+    - id: trinucleotide-repeat-disorders
+      names: { it: "Malattie da espansione di triplette", en: "Trinucleotide repeat expansion disorders" }
+    - id: genomic-imprinting-disorders
+      names: { it: "Disordini dell'imprinting genomico", en: "Genomic imprinting disorders" }
+    - id: congenital-anomalies
+      names: { it: "Anomalie congenite: malformazione, deformazione, disruzione", en: "Congenital anomalies: malformation, deformation, disruption" }
+    - id: teratogens-and-torch-infections
+      names: { it: "Teratogeni e infezioni TORCH", en: "Teratogens and TORCH infections" }
+    - id: neonatal-respiratory-distress-syndrome
+      names: { it: "Sindrome da distress respiratorio neonatale", en: "Neonatal respiratory distress syndrome" }
+    - id: fetal-hydrops
+      names: { it: "Idrope fetale", en: "Fetal hydrops" }
+    - id: sudden-infant-death-syndrome
+      names: { it: "Sindrome della morte improvvisa del lattante", en: "Sudden infant death syndrome" }
+    - id: tumors-of-infancy-and-childhood
+      names: { it: "Tumori dell'infanzia: quadro generale", en: "Tumors of infancy and childhood: overview" }
 - id: g07
   section: I
   order: 7
@@ -71,6 +126,18 @@
   planned:
     - id: infarction
       names: { it: "Infarto", en: "Infarction" }
+    - id: hyperemia-and-congestion
+      names: { it: "Iperemia e congestione", en: "Hyperemia and congestion" }
+    - id: hemorrhage
+      names: { it: "Emorragia", en: "Hemorrhage" }
+    - id: edema-and-effusions
+      names: { it: "Edema e versamenti", en: "Edema and effusions" }
+    - id: embolism
+      names: { it: "Embolia", en: "Embolism" }
+    - id: shock
+      names: { it: "Shock", en: "Shock" }
+    - id: pulmonary-embolism
+      names: { it: "Embolia polmonare", en: "Pulmonary embolism" }
 - id: g08
   section: I
   order: 8
@@ -79,6 +146,29 @@
     en: "Environmental and nutritional pathology"
   status: planned
   refPages: "373-413"
+  planned:
+    - id: air-pollution
+      names: { it: "Inquinamento atmosferico", en: "Air pollution" }
+    - id: tobacco-smoking
+      names: { it: "Fumo di tabacco", en: "Tobacco smoking" }
+    - id: lead-poisoning
+      names: { it: "Intossicazione da piombo", en: "Lead poisoning" }
+    - id: toxic-metals-and-industrial-chemicals
+      names: { it: "Metalli tossici e sostanze industriali", en: "Toxic metals and industrial chemicals" }
+    - id: ionizing-radiation-injury
+      names: { it: "Danno da radiazioni ionizzanti", en: "Ionizing radiation injury" }
+    - id: alcohol-related-disease
+      names: { it: "Patologia da alcol", en: "Alcohol-related disease" }
+    - id: drug-abuse-complications
+      names: { it: "Complicanze dell'abuso di sostanze", en: "Complications of drug abuse" }
+    - id: iatrogenic-drug-injury
+      names: { it: "Danno iatrogeno da farmaci e ormoni", en: "Iatrogenic injury by drugs and hormones" }
+    - id: thermal-and-altitude-injury
+      names: { it: "Ipotermia, ipertermia e mal di montagna", en: "Hypothermia, hyperthermia and altitude illness" }
+    - id: protein-energy-malnutrition
+      names: { it: "Malnutrizione proteico-energetica", en: "Protein–energy malnutrition" }
+    - id: vitamin-deficiencies
+      names: { it: "Carenze vitaminiche", en: "Vitamin deficiencies" }
 - id: g09
   section: I
   order: 9
@@ -92,6 +182,32 @@
       names: { it: "Tubercolosi", en: "Tuberculosis" }
     - id: clostridial-myonecrosis
       names: { it: "Mionecrosi clostridica (gangrena gassosa)", en: "Clostridial myonecrosis (gas gangrene)" }
+    - id: infection-and-host-defense
+      names: { it: "Infezione e difese dell'ospite: concetti di base", en: "Infection and host defense: basic concepts" }
+    - id: respiratory-and-exanthematous-viral-infections
+      names: { it: "Virosi respiratorie ed esantematiche", en: "Respiratory and exanthematous viral infections" }
+    - id: herpesvirus-infections
+      names: { it: "Infezioni da herpesvirus", en: "Herpesvirus infections" }
+    - id: human-papillomavirus-infection
+      names: { it: "Infezione da papillomavirus umano", en: "Human papillomavirus infection" }
+    - id: pyogenic-gram-positive-infections
+      names: { it: "Infezioni da cocchi piogeni Gram-positivi", en: "Pyogenic gram-positive coccal infections" }
+    - id: clostridial-diseases
+      names: { it: "Malattie da clostridi", en: "Clostridial diseases" }
+    - id: syphilis
+      names: { it: "Sifilide", en: "Syphilis" }
+    - id: leprosy
+      names: { it: "Lebbra", en: "Leprosy" }
+    - id: opportunistic-fungal-infections
+      names: { it: "Micosi opportunistiche", en: "Opportunistic fungal infections" }
+    - id: endemic-mycoses
+      names: { it: "Micosi endemiche e cutanee", en: "Endemic and cutaneous mycoses" }
+    - id: malaria
+      names: { it: "Malaria", en: "Malaria" }
+    - id: protozoal-infections
+      names: { it: "Altre infezioni da protozoi", en: "Other protozoal infections" }
+    - id: helminth-infections
+      names: { it: "Infezioni da elminti", en: "Helminth infections" }
 # g10 holds technique cards (kind: technique). order 9.5: after g09 and before s10, so no other module is renumbered.
 - id: g10
   section: I
@@ -142,6 +258,10 @@
   planned:
     - id: cellular-aging
       names: { it: "Invecchiamento cellulare", en: "Cellular aging" }
+    - id: premature-aging-syndromes
+      names: { it: "Sindromi da invecchiamento precoce", en: "Premature aging syndromes" }
+    - id: dietary-restriction-and-longevity
+      names: { it: "Restrizione calorica e longevità", en: "Dietary restriction and longevity pathways" }
 - id: s11
   section: II
   order: 11
@@ -150,6 +270,15 @@
     en: "Systemic autoimmune diseases"
   status: planned
   refPages: "529-546"
+  planned:
+    - id: systemic-lupus-erythematosus
+      names: { it: "Lupus eritematoso sistemico", en: "Systemic lupus erythematosus" }
+    - id: systemic-sclerosis
+      names: { it: "Sclerosi sistemica", en: "Systemic sclerosis" }
+    - id: sjogren-syndrome
+      names: { it: "Sindrome di Sjögren", en: "Sjögren syndrome" }
+    - id: igg4-related-disease
+      names: { it: "Malattia correlata alle IgG4", en: "IgG4-related disease" }
 - id: s12
   section: II
   order: 12
@@ -158,6 +287,11 @@
     en: "Sepsis"
   status: planned
   refPages: "547-553"
+  planned:
+    - id: sepsis
+      names: { it: "Sepsi", en: "Sepsis" }
+    - id: organ-injury-in-sepsis
+      names: { it: "Danno d'organo nella sepsi", en: "Organ injury in sepsis" }
 - id: s13
   section: II
   order: 13
@@ -169,6 +303,16 @@
   planned:
     - id: diabetic-foot-gangrene
       names: { it: "Gangrena del piede diabetico", en: "Diabetic foot gangrene" }
+    - id: obesity
+      names: { it: "Obesità", en: "Obesity" }
+    - id: insulin-resistance
+      names: { it: "Insulino-resistenza", en: "Insulin resistance" }
+    - id: type-2-diabetes-mellitus
+      names: { it: "Diabete mellito di tipo 2", en: "Type 2 diabetes mellitus" }
+    - id: type-1-diabetes-mellitus
+      names: { it: "Diabete mellito di tipo 1", en: "Type 1 diabetes mellitus" }
+    - id: diabetic-complications
+      names: { it: "Complicanze del diabete", en: "Complications of diabetes" }
 - id: s14
   section: II
   order: 14
@@ -177,17 +321,19 @@
     en: "Pregnancy and placenta"
   status: planned
   refPages: "579-605"
+  planned:
+    - id: hydatidiform-mole
+      names: { it: "Mola vescicolare (idatiforme)", en: "Hydatidiform mole" }
+    - id: gestational-choriocarcinoma
+      names: { it: "Coriocarcinoma gestazionale", en: "Gestational choriocarcinoma" }
 - id: s15
   section: II
   order: 15
   label:
     it: "Amiloidosi sistemica"
     en: "Systemic amyloidosis"
-  status: planned
+  status: published
   refPages: "606-612"
-  planned:
-    - id: amyloidosis
-      names: { it: "Amiloidosi", en: "Amyloidosis" }
 - id: o16
   section: III
   order: 16
@@ -203,6 +349,26 @@
       names: { it: "Ipertensione maligna", en: "Malignant hypertension" }
     - id: polyarteritis-nodosa
       names: { it: "Poliarterite nodosa", en: "Polyarteritis nodosa" }
+    - id: giant-cell-arteritis
+      names: { it: "Arterite a cellule giganti (e arterite di Takayasu)", en: "Giant cell arteritis (and Takayasu arteritis)" }
+    - id: kawasaki-disease
+      names: { it: "Malattia di Kawasaki", en: "Kawasaki disease" }
+    - id: anca-associated-vasculitis
+      names: { it: "Vasculiti ANCA-associate (GPA, MPA, EGPA)", en: "ANCA-associated vasculitis" }
+    - id: hypersensitivity-vasculitis
+      names: { it: "Vasculite da ipersensibilità (leucocitoclastica, vasculite a IgA)", en: "Hypersensitivity (leukocytoclastic) vasculitis incl. IgA vasculitis" }
+    - id: thromboangiitis-obliterans
+      names: { it: "Tromboangioite obliterante (malattia di Buerger)", en: "Thromboangiitis obliterans (Buerger disease)" }
+    - id: aortic-aneurysm
+      names: { it: "Aneurismi: classificazione; aneurisma dell'aorta", en: "Aneurysms: classification and aortic aneurysm" }
+    - id: aortic-dissection
+      names: { it: "Dissezione aortica", en: "Aortic dissection" }
+    - id: hypertensive-vascular-disease
+      names: { it: "Vasculopatia ipertensiva (arteriolosclerosi)", en: "Hypertensive vascular disease" }
+    - id: venous-disease
+      names: { it: "Varici e trombosi venosa profonda", en: "Varicose veins and deep vein thrombosis" }
+    - id: vascular-tumors
+      names: { it: "Tumori vascolari (emangioma, angiosarcoma, sarcoma di Kaposi)", en: "Vascular tumors" }
 - id: o17
   section: III
   order: 17
@@ -216,6 +382,40 @@
       names: { it: "Infarto miocardico", en: "Myocardial infarction" }
     - id: hypertensive-heart-disease
       names: { it: "Cardiopatia ipertensiva", en: "Hypertensive heart disease" }
+    - id: ischemic-heart-disease
+      names: { it: "Cardiopatia ischemica", en: "Ischemic heart disease" }
+    - id: rheumatic-heart-disease
+      names: { it: "Febbre reumatica e cardiopatia reumatica", en: "Rheumatic fever and rheumatic heart disease" }
+    - id: calcific-aortic-stenosis
+      names: { it: "Stenosi aortica calcifica", en: "Calcific aortic stenosis" }
+    - id: mitral-valve-prolapse
+      names: { it: "Prolasso della valvola mitrale", en: "Mitral valve prolapse" }
+    - id: cardiac-hypertrophy-and-heart-failure
+      names: { it: "Ipertrofia miocardica e scompenso cardiaco", en: "Myocardial hypertrophy and heart failure" }
+    - id: myocarditis
+      names: { it: "Miocarditi", en: "Myocarditis" }
+    - id: dilated-cardiomyopathy
+      names: { it: "Cardiomiopatia dilatativa", en: "Dilated cardiomyopathy" }
+    - id: hypertrophic-cardiomyopathy
+      names: { it: "Cardiomiopatia ipertrofica", en: "Hypertrophic cardiomyopathy" }
+    - id: arrhythmogenic-cardiomyopathy
+      names: { it: "Cardiomiopatia aritmogena", en: "Arrhythmogenic cardiomyopathy" }
+    - id: restrictive-cardiomyopathy
+      names: { it: "Cardiomiopatia restrittiva", en: "Restrictive cardiomyopathy" }
+    - id: infective-endocarditis
+      names: { it: "Endocardite infettiva", en: "Infective endocarditis" }
+    - id: noninfective-endocarditis
+      names: { it: "Endocarditi non infettive (trombotica non batterica, Libman–Sacks)", en: "Non-infective endocarditis (NBTE, Libman–Sacks)" }
+    - id: arrhythmia-substrates-and-sudden-cardiac-death
+      names: { it: "Substrati morfologici delle aritmie e morte cardiaca improvvisa", en: "Morphological substrates of arrhythmia and sudden cardiac death" }
+    - id: cardiac-tumors
+      names: { it: "Tumori cardiaci", en: "Cardiac tumors" }
+    - id: congenital-heart-disease-left-to-right-shunts
+      names: { it: "Cardiopatie congenite con shunt sinistro-destro", en: "Congenital heart disease with left-to-right shunt" }
+    - id: congenital-heart-disease-cyanotic-and-obstructive
+      names: { it: "Cardiopatie congenite cianogene e ostruttive", en: "Cyanotic and obstructive congenital heart disease" }
+    - id: pericardial-disease
+      names: { it: "Patologia del pericardio (versamento, tamponamento, pericarditi)", en: "Pericardial disease" }
 - id: o18
   section: III
   order: 18
@@ -229,6 +429,56 @@
       names: { it: "Infarto polmonare", en: "Pulmonary infarction" }
     - id: anthracosis
       names: { it: "Antracosi", en: "Anthracosis" }
+    - id: pulmonary-hypertension
+      names: { it: "Ipertensione polmonare e cuore polmonare", en: "Pulmonary hypertension and cor pulmonale" }
+    - id: atelectasis
+      names: { it: "Atelettasia", en: "Atelectasis" }
+    - id: bacterial-pneumonia
+      names: { it: "Polmoniti batteriche (polmonite lobare e broncopolmonite)", en: "Bacterial pneumonia (lobar pneumonia and bronchopneumonia)" }
+    - id: atypical-and-viral-pneumonia
+      names: { it: "Polmoniti atipiche, virali e opportunistiche", en: "Atypical, viral and opportunistic pneumonia" }
+    - id: lung-abscess
+      names: { it: "Ascesso polmonare", en: "Lung abscess" }
+    - id: acute-bronchitis-and-bronchiolitis
+      names: { it: "Bronchiti e bronchioliti acute", en: "Acute bronchitis and bronchiolitis" }
+    - id: bronchiectasis
+      names: { it: "Bronchiectasie", en: "Bronchiectasis" }
+    - id: emphysema
+      names: { it: "Enfisema", en: "Emphysema" }
+    - id: chronic-bronchitis
+      names: { it: "Bronchite cronica", en: "Chronic bronchitis" }
+    - id: asthma
+      names: { it: "Asma bronchiale", en: "Asthma" }
+    - id: idiopathic-pulmonary-fibrosis
+      names: { it: "Fibrosi polmonare idiopatica (UIP)", en: "Idiopathic pulmonary fibrosis (UIP pattern)" }
+    - id: hypersensitivity-pneumonitis
+      names: { it: "Polmonite da ipersensibilità", en: "Hypersensitivity pneumonitis" }
+    - id: sarcoidosis
+      names: { it: "Sarcoidosi", en: "Sarcoidosis" }
+    - id: diffuse-alveolar-damage
+      names: { it: "Danno alveolare diffuso (ARDS)", en: "Diffuse alveolar damage (ARDS)" }
+    - id: silicosis
+      names: { it: "Silicosi", en: "Silicosis" }
+    - id: asbestos-related-disease
+      names: { it: "Patologia da asbesto", en: "Asbestos-related disease" }
+    - id: lung-cancer-overview
+      names: { it: "Tumori polmonari: classificazione, stadiazione e diagnosi", en: "Lung cancer: classification, staging and diagnosis" }
+    - id: lung-adenocarcinoma
+      names: { it: "Adenocarcinoma polmonare", en: "Lung adenocarcinoma" }
+    - id: lung-squamous-cell-carcinoma
+      names: { it: "Carcinoma squamoso polmonare", en: "Lung squamous cell carcinoma" }
+    - id: small-cell-lung-carcinoma
+      names: { it: "Carcinoma polmonare a piccole cellule", en: "Small cell lung carcinoma" }
+    - id: lung-carcinoid-tumors
+      names: { it: "Tumori carcinoidi polmonari", en: "Pulmonary carcinoid tumors" }
+    - id: lung-metastases
+      names: { it: "Metastasi polmonari", en: "Lung metastases" }
+    - id: pleural-effusion-and-pleural-fluid-cytology
+      names: { it: "Versamento pleurico, pleuriti e citologia del liquido pleurico", en: "Pleural effusion, pleuritis and pleural-fluid cytology" }
+    - id: malignant-mesothelioma
+      names: { it: "Mesotelioma maligno", en: "Malignant mesothelioma" }
+    - id: solitary-fibrous-tumor-of-pleura
+      names: { it: "Tumore fibroso solitario della pleura", en: "Solitary fibrous tumor of the pleura" }
 - id: o19
   section: III
   order: 19
@@ -242,6 +492,60 @@
       names: { it: "Esofago di Barrett", en: "Barrett esophagus" }
     - id: ischemic-bowel-disease
       names: { it: "Ischemia intestinale", en: "Ischemic bowel disease" }
+    - id: reflux-esophagitis
+      names: { it: "Esofagite da reflusso (malattia da reflusso gastroesofageo)", en: "Reflux esophagitis (GERD)" }
+    - id: eosinophilic-esophagitis
+      names: { it: "Esofagite eosinofila", en: "Eosinophilic esophagitis" }
+    - id: infectious-and-chemical-esophagitis
+      names: { it: "Esofagiti infettive, chimiche e iatrogene", en: "Infectious, chemical and iatrogenic esophagitis" }
+    - id: esophageal-carcinoma
+      names: { it: "Carcinoma dell'esofago", en: "Esophageal carcinoma" }
+    - id: acute-gastritis-and-reactive-gastropathy
+      names: { it: "Gastrite acuta e gastropatia reattiva (chimica)", en: "Acute gastritis and reactive (chemical) gastropathy" }
+    - id: helicobacter-pylori-gastritis
+      names: { it: "Gastrite da Helicobacter pylori", en: "Helicobacter pylori gastritis" }
+    - id: autoimmune-gastritis
+      names: { it: "Gastrite autoimmune", en: "Autoimmune gastritis" }
+    - id: peptic-ulcer-disease
+      names: { it: "Ulcera peptica", en: "Peptic ulcer disease" }
+    - id: gastric-polyps
+      names: { it: "Polipi gastrici", en: "Gastric polyps" }
+    - id: gastric-adenocarcinoma
+      names: { it: "Adenocarcinoma gastrico", en: "Gastric adenocarcinoma" }
+    - id: gastric-malt-lymphoma
+      names: { it: "Linfoma MALT gastrico", en: "Gastric MALT lymphoma" }
+    - id: gastrointestinal-stromal-tumor
+      names: { it: "Tumore stromale gastrointestinale (GIST)", en: "Gastrointestinal stromal tumor" }
+    - id: gastrointestinal-neuroendocrine-tumors
+      names: { it: "Tumori neuroendocrini gastrointestinali", en: "Gastrointestinal neuroendocrine tumors" }
+    - id: infectious-enterocolitis
+      names: { it: "Enterocoliti infettive", en: "Infectious enterocolitis" }
+    - id: pseudomembranous-colitis
+      names: { it: "Colite pseudomembranosa (Clostridioides difficile)", en: "Pseudomembranous colitis" }
+    - id: microscopic-colitis
+      names: { it: "Colite microscopica (collagenosica e linfocitaria)", en: "Microscopic colitis" }
+    - id: malabsorption-syndromes
+      names: { it: "Sindromi da malassorbimento", en: "Malabsorption syndromes" }
+    - id: celiac-disease
+      names: { it: "Malattia celiaca", en: "Celiac disease" }
+    - id: crohn-disease
+      names: { it: "Malattia di Crohn", en: "Crohn disease" }
+    - id: ulcerative-colitis
+      names: { it: "Colite ulcerosa", en: "Ulcerative colitis" }
+    - id: diverticular-disease
+      names: { it: "Malattia diverticolare", en: "Diverticular disease" }
+    - id: non-neoplastic-intestinal-polyps
+      names: { it: "Polipi intestinali non neoplastici (infiammatori, amartomatosi)", en: "Non-neoplastic intestinal polyps" }
+    - id: serrated-colorectal-lesions
+      names: { it: "Lesioni serrate del colon-retto", en: "Serrated colorectal lesions" }
+    - id: colorectal-adenoma
+      names: { it: "Adenoma del colon-retto", en: "Colorectal adenoma" }
+    - id: familial-adenomatous-polyposis
+      names: { it: "Poliposi adenomatosa familiare", en: "Familial adenomatous polyposis" }
+    - id: lynch-syndrome
+      names: { it: "Sindrome di Lynch", en: "Lynch syndrome" }
+    - id: colorectal-adenocarcinoma
+      names: { it: "Adenocarcinoma del colon-retto", en: "Colorectal adenocarcinoma" }
 - id: o20
   section: III
   order: 20
@@ -261,6 +565,36 @@
       names: { it: "Epatite virale acuta", en: "Acute viral hepatitis" }
     - id: alpha1-antitrypsin-deficiency
       names: { it: "Deficit di alfa-1-antitripsina", en: "Alpha-1-antitrypsin deficiency" }
+    - id: chronic-viral-hepatitis
+      names: { it: "Epatite virale cronica", en: "Chronic viral hepatitis" }
+    - id: autoimmune-hepatitis
+      names: { it: "Epatite autoimmune", en: "Autoimmune hepatitis" }
+    - id: drug-induced-liver-injury
+      names: { it: "Danno epatico da farmaci", en: "Drug-induced liver injury" }
+    - id: cirrhosis
+      names: { it: "Cirrosi epatica", en: "Cirrhosis" }
+    - id: portal-hypertension
+      names: { it: "Ipertensione portale", en: "Portal hypertension" }
+    - id: primary-biliary-cholangitis
+      names: { it: "Colangite biliare primitiva (ex cirrosi biliare primitiva)", en: "Primary biliary cholangitis" }
+    - id: primary-sclerosing-cholangitis
+      names: { it: "Colangite sclerosante primitiva", en: "Primary sclerosing cholangitis" }
+    - id: wilson-disease
+      names: { it: "Malattia di Wilson", en: "Wilson disease" }
+    - id: benign-liver-tumors
+      names: { it: "Tumori epatici benigni e lesioni simil-tumorali", en: "Benign liver tumors and tumor-like lesions" }
+    - id: hepatocellular-carcinoma
+      names: { it: "Carcinoma epatocellulare", en: "Hepatocellular carcinoma" }
+    - id: cholangiocarcinoma
+      names: { it: "Colangiocarcinoma", en: "Cholangiocarcinoma" }
+    - id: liver-metastases
+      names: { it: "Metastasi epatiche", en: "Liver metastases" }
+    - id: cholelithiasis
+      names: { it: "Calcolosi biliare", en: "Cholelithiasis" }
+    - id: cholecystitis
+      names: { it: "Colecistiti acute e croniche", en: "Acute and chronic cholecystitis" }
+    - id: gallbladder-carcinoma
+      names: { it: "Carcinoma della colecisti e delle vie biliari extraepatiche", en: "Gallbladder and extrahepatic bile-duct carcinoma" }
 - id: o21
   section: III
   order: 21
@@ -272,6 +606,14 @@
   planned:
     - id: acute-pancreatitis
       names: { it: "Pancreatite acuta", en: "Acute pancreatitis" }
+    - id: chronic-pancreatitis
+      names: { it: "Pancreatite cronica", en: "Chronic pancreatitis" }
+    - id: pancreatic-cystic-neoplasms
+      names: { it: "Neoplasie cistiche del pancreas", en: "Pancreatic cystic neoplasms" }
+    - id: pancreatic-ductal-adenocarcinoma
+      names: { it: "Adenocarcinoma duttale del pancreas", en: "Pancreatic ductal adenocarcinoma" }
+    - id: pancreatic-neuroendocrine-tumors
+      names: { it: "Tumori neuroendocrini del pancreas", en: "Pancreatic neuroendocrine tumors" }
 - id: o22
   section: III
   order: 22
@@ -287,6 +629,46 @@
       names: { it: "Danno tubulare acuto (necrosi tubulare acuta)", en: "Acute tubular injury (acute tubular necrosis)" }
     - id: nephrocalcinosis
       names: { it: "Nefrocalcinosi", en: "Nephrocalcinosis" }
+    - id: congenital-anomalies-kidney-urinary-tract
+      names: { it: "Anomalie congenite del rene e delle vie urinarie", en: "Congenital anomalies of the kidney and urinary tract" }
+    - id: polycystic-kidney-disease
+      names: { it: "Malattia policistica renale e altre cistopatie", en: "Polycystic kidney disease and other cystic diseases" }
+    - id: pyelonephritis
+      names: { it: "Pielonefriti acute e croniche", en: "Acute and chronic pyelonephritis" }
+    - id: drug-induced-interstitial-nephritis
+      names: { it: "Nefriti tubulo-interstiziali da farmaci e nefropatie tossiche", en: "Drug-induced and toxic tubulointerstitial nephritis" }
+    - id: light-chain-cast-nephropathy
+      names: { it: "Nefropatia da cilindri (rene da mieloma)", en: "Light-chain cast nephropathy (myeloma kidney)" }
+    - id: minimal-change-disease
+      names: { it: "Malattia a lesioni minime", en: "Minimal change disease" }
+    - id: focal-segmental-glomerulosclerosis
+      names: { it: "Glomerulosclerosi focale segmentaria", en: "Focal segmental glomerulosclerosis" }
+    - id: membranous-nephropathy
+      names: { it: "Glomerulonefrite membranosa", en: "Membranous nephropathy" }
+    - id: diabetic-nephropathy
+      names: { it: "Nefropatia diabetica", en: "Diabetic nephropathy" }
+    - id: alport-and-thin-basement-membrane-disease
+      names: { it: "Sindrome di Alport e malattia delle membrane basali sottili", en: "Alport syndrome and thin basement membrane disease" }
+    - id: postinfectious-glomerulonephritis
+      names: { it: "Glomerulonefrite post-infettiva", en: "Post-infectious glomerulonephritis" }
+    - id: membranoproliferative-glomerulonephritis
+      names: { it: "Glomerulonefrite membranoproliferativa e glomerulopatia da C3", en: "Membranoproliferative GN and C3 glomerulopathy" }
+    - id: lupus-nephritis
+      names: { it: "Nefrite lupica", en: "Lupus nephritis" }
+    - id: iga-nephropathy
+      names: { it: "Nefropatia a IgA", en: "IgA nephropathy" }
+    - id: crescentic-glomerulonephritis
+      names: { it: "Glomerulonefrite rapidamente progressiva (a semilune): anti-GBM e ANCA", en: "Rapidly progressive (crescentic) glomerulonephritis" }
+    - id: thrombotic-microangiopathies
+      names: { it: "Microangiopatie trombotiche (SEU, PTT)", en: "Thrombotic microangiopathies (HUS, TTP)" }
+    - id: renal-cell-carcinoma
+      names: { it: "Carcinoma a cellule renali", en: "Renal cell carcinoma" }
+    - id: benign-renal-tumors
+      names: { it: "Tumori renali benigni (oncocitoma, angiomiolipoma, adenoma papillare)", en: "Benign renal tumors" }
+    - id: wilms-tumor
+      names: { it: "Tumore di Wilms (nefroblastoma)", en: "Wilms tumor (nephroblastoma)" }
+    - id: urolithiasis-and-obstructive-uropathy
+      names: { it: "Urolitiasi, ostruzione e idronefrosi", en: "Urolithiasis, obstruction and hydronephrosis" }
 - id: o23
   section: III
   order: 23
@@ -298,6 +680,28 @@
   planned:
     - id: benign-prostatic-hyperplasia
       names: { it: "Iperplasia prostatica benigna", en: "Benign prostatic hyperplasia" }
+    - id: cystitis
+      names: { it: "Cistiti", en: "Cystitis" }
+    - id: urothelial-metaplastic-lesions
+      names: { it: "Lesioni proliferative e metaplastiche benigne dell'urotelio", en: "Benign proliferative and metaplastic urothelial lesions" }
+    - id: urothelial-carcinoma
+      names: { it: "Carcinoma uroteliale della vescica e delle vie urinarie", en: "Urothelial carcinoma" }
+    - id: prostatitis
+      names: { it: "Prostatiti", en: "Prostatitis" }
+    - id: prostatic-adenocarcinoma
+      names: { it: "Adenocarcinoma della prostata", en: "Prostatic adenocarcinoma" }
+    - id: testicular-germ-cell-tumors
+      names: { it: "Tumori a cellule germinali del testicolo: classificazione", en: "Testicular germ cell tumors: classification" }
+    - id: seminoma
+      names: { it: "Seminoma", en: "Seminoma" }
+    - id: nonseminomatous-germ-cell-tumors
+      names: { it: "Tumori germinali non seminomatosi", en: "Non-seminomatous germ cell tumors" }
+    - id: testicular-sex-cord-stromal-tumors
+      names: { it: "Tumori dei cordoni sessuali e dello stroma del testicolo", en: "Testicular sex cord–stromal tumors" }
+    - id: epididymitis-and-orchitis
+      names: { it: "Orchiti ed epididimiti", en: "Epididymitis and orchitis" }
+    - id: penile-diseases
+      names: { it: "Patologia del pene (balaniti, condilomi, carcinoma squamoso)", en: "Diseases of the penis" }
 - id: o24
   section: III
   order: 24
@@ -311,6 +715,50 @@
       names: { it: "Iperplasia dell'endometrio", en: "Endometrial hyperplasia" }
     - id: cervical-squamous-intraepithelial-lesion
       names: { it: "Lesione squamosa intraepiteliale della cervice (CIN)", en: "Cervical squamous intraepithelial lesion (CIN)" }
+    - id: vulvovaginitis-and-cervicitis
+      names: { it: "Vulvovaginiti e cerviciti (infezioni genitali)", en: "Vulvovaginitis and cervicitis (genital infections)" }
+    - id: vulvar-dermatoses
+      names: { it: "Dermatosi vulvari (lichen sclerosus, lichen simplex cronico)", en: "Vulvar dermatoses" }
+    - id: vulvar-squamous-neoplasia
+      names: { it: "Neoplasia intraepiteliale e carcinoma squamoso della vulva", en: "Vulvar intraepithelial neoplasia and squamous carcinoma" }
+    - id: cervical-squamous-cell-carcinoma
+      names: { it: "Carcinoma squamoso della cervice", en: "Cervical squamous cell carcinoma" }
+    - id: cervical-adenocarcinoma
+      names: { it: "Adenocarcinoma della cervice (endocervicale)", en: "Endocervical adenocarcinoma" }
+    - id: endometritis
+      names: { it: "Endometriti", en: "Endometritis" }
+    - id: abnormal-uterine-bleeding
+      names: { it: "Patologia disfunzionale dell'endometrio (sanguinamento uterino anomalo)", en: "Dysfunctional endometrium and abnormal uterine bleeding" }
+    - id: endometriosis
+      names: { it: "Endometriosi", en: "Endometriosis" }
+    - id: adenomyosis
+      names: { it: "Adenomiosi", en: "Adenomyosis" }
+    - id: endocervical-and-endometrial-polyps
+      names: { it: "Polipi della cervice e del corpo uterino", en: "Endocervical and endometrial polyps" }
+    - id: endometrial-carcinoma
+      names: { it: "Carcinoma dell'endometrio", en: "Endometrial carcinoma" }
+    - id: uterine-leiomyoma
+      names: { it: "Leiomioma uterino", en: "Uterine leiomyoma" }
+    - id: uterine-leiomyosarcoma
+      names: { it: "Leiomiosarcoma uterino", en: "Uterine leiomyosarcoma" }
+    - id: endometrial-stromal-tumors
+      names: { it: "Tumori stromali endometriali e adenosarcoma", en: "Endometrial stromal tumors and adenosarcoma" }
+    - id: ovarian-tumors
+      names: { it: "Tumori ovarici: inquadramento e classificazione", en: "Ovarian tumors: classification and natural history" }
+    - id: serous-ovarian-tumors
+      names: { it: "Tumori sierosi dell'ovaio", en: "Serous ovarian tumors" }
+    - id: other-epithelial-ovarian-tumors
+      names: { it: "Altri tumori epiteliali dell'ovaio (mucinosi, endometrioidi, a cellule chiare, di Brenner)", en: "Mucinous, endometrioid, clear-cell and Brenner tumors" }
+    - id: ovarian-germ-cell-tumors
+      names: { it: "Tumori a cellule germinali dell'ovaio", en: "Ovarian germ cell tumors" }
+    - id: ovarian-sex-cord-stromal-tumors
+      names: { it: "Tumori dei cordoni sessuali e dello stroma dell'ovaio", en: "Ovarian sex cord–stromal tumors" }
+    - id: ovarian-metastases
+      names: { it: "Metastasi ovariche (tumore di Krukenberg)", en: "Ovarian metastases (Krukenberg tumor)" }
+    - id: ovarian-cysts-and-pcos
+      names: { it: "Cisti ovariche funzionali e sindrome dell'ovaio policistico", en: "Functional ovarian cysts and polycystic ovary syndrome" }
+    - id: ectopic-pregnancy
+      names: { it: "Gravidanza ectopica", en: "Ectopic pregnancy" }
 - id: o25
   section: III
   order: 25
@@ -322,6 +770,36 @@
   planned:
     - id: traumatic-fat-necrosis-breast
       names: { it: "Steatonecrosi traumatica della mammella", en: "Traumatic fat necrosis of the breast" }
+    - id: breast-nodule-work-up
+      names: { it: "Iter diagnostico del nodulo mammario (triplo approccio, agoaspirato e biopsia)", en: "Breast nodule work-up (triple assessment, FNA and core biopsy)" }
+    - id: inflammatory-breast-lesions
+      names: { it: "Lesioni infiammatorie della mammella", en: "Inflammatory lesions of the breast" }
+    - id: fibrocystic-changes
+      names: { it: "Alterazioni fibrocistiche (lesioni non proliferative)", en: "Fibrocystic changes (non-proliferative)" }
+    - id: proliferative-breast-disease
+      names: { it: "Malattia proliferativa della mammella con e senza atipia", en: "Proliferative breast disease with and without atypia" }
+    - id: intraductal-papilloma
+      names: { it: "Papilloma intraduttale", en: "Intraductal papilloma" }
+    - id: fibroadenoma
+      names: { it: "Fibroadenoma", en: "Fibroadenoma" }
+    - id: phyllodes-tumor
+      names: { it: "Tumore fillode", en: "Phyllodes tumor" }
+    - id: ductal-carcinoma-in-situ
+      names: { it: "Carcinoma duttale in situ e malattia di Paget del capezzolo", en: "Ductal carcinoma in situ and Paget disease of the nipple" }
+    - id: lobular-neoplasia
+      names: { it: "Neoplasia lobulare (ALH, LCIS)", en: "Lobular neoplasia (ALH and LCIS)" }
+    - id: invasive-breast-carcinoma-nst
+      names: { it: "Carcinoma mammario invasivo di tipo non speciale", en: "Invasive breast carcinoma of no special type" }
+    - id: invasive-lobular-carcinoma
+      names: { it: "Carcinoma lobulare invasivo", en: "Invasive lobular carcinoma" }
+    - id: special-types-of-breast-carcinoma
+      names: { it: "Tipi speciali di carcinoma mammario", en: "Special types of breast carcinoma" }
+    - id: breast-cancer-biomarkers
+      names: { it: "Recettori ormonali, HER2, Ki-67 e sottotipi molecolari", en: "Breast cancer biomarkers and molecular subtypes" }
+    - id: breast-cancer-staging-and-prognosis
+      names: { it: "Stadiazione e fattori prognostici del carcinoma mammario", en: "Breast cancer staging and prognostic factors" }
+    - id: male-breast-lesions
+      names: { it: "Mammella maschile: ginecomastia e carcinoma", en: "Male breast: gynecomastia and carcinoma" }
 - id: o26
   section: III
   order: 26
@@ -330,6 +808,69 @@
     en: "Hematopathology (marrow, blood, nodes, spleen, thymus)"
   status: planned
   refPages: "1127-1218"
+  planned:
+    - id: langerhans-cell-histiocytosis
+      names: { it: "Istiocitosi a cellule di Langerhans", en: "Langerhans cell histiocytosis" }
+    - id: lymphadenopathy
+      names: { it: "Linfoadenomegalie: diagnosi eziopatogenetica e biopsia linfonodale", en: "Lymphadenopathy: causes and lymph-node biopsy" }
+    - id: bone-marrow-biopsy
+      names: { it: "Biopsia osteomidollare e aspirato midollare", en: "Bone marrow biopsy and aspirate" }
+    - id: hematolymphoid-neoplasm-classification
+      names: { it: "Principi di classificazione delle neoplasie ematolinfoidi", en: "Principles of hematolymphoid neoplasm classification" }
+    - id: lymphoblastic-leukemia-lymphoma
+      names: { it: "Leucemia/linfoma linfoblastico B e T", en: "B- and T-lymphoblastic leukemia/lymphoma" }
+    - id: chronic-lymphocytic-leukemia
+      names: { it: "Leucemia linfatica cronica / linfoma a piccoli linfociti", en: "Chronic lymphocytic leukemia/small lymphocytic lymphoma" }
+    - id: follicular-lymphoma
+      names: { it: "Linfoma follicolare", en: "Follicular lymphoma" }
+    - id: mantle-cell-lymphoma
+      names: { it: "Linfoma mantellare", en: "Mantle cell lymphoma" }
+    - id: marginal-zone-lymphomas
+      names: { it: "Linfomi della zona marginale (MALT, nodale, splenico)", en: "Marginal zone lymphomas" }
+    - id: hairy-cell-leukemia
+      names: { it: "Leucemia a cellule capellute", en: "Hairy cell leukemia" }
+    - id: diffuse-large-b-cell-lymphoma
+      names: { it: "Linfoma diffuso a grandi cellule B", en: "Diffuse large B-cell lymphoma" }
+    - id: burkitt-lymphoma
+      names: { it: "Linfoma di Burkitt", en: "Burkitt lymphoma" }
+    - id: peripheral-t-cell-lymphomas
+      names: { it: "Linfomi T periferici e NK", en: "Peripheral T-cell and NK-cell lymphomas" }
+    - id: mycosis-fungoides
+      names: { it: "Micosi fungoide e sindrome di Sézary", en: "Mycosis fungoides and Sézary syndrome" }
+    - id: classic-hodgkin-lymphoma
+      names: { it: "Linfoma di Hodgkin classico", en: "Classic Hodgkin lymphoma" }
+    - id: nodular-lymphocyte-predominant-hodgkin-lymphoma
+      names: { it: "Linfoma di Hodgkin nodulare a predominanza linfocitaria", en: "Nodular lymphocyte-predominant Hodgkin lymphoma" }
+    - id: immunodeficiency-associated-lymphoproliferative-disorders
+      names: { it: "Disordini linfoproliferativi associati a immunodeficienza (PTLD)", en: "Immunodeficiency-associated lymphoproliferative disorders (PTLD)" }
+    - id: lymphoplasmacytic-lymphoma
+      names: { it: "Linfoma linfoplasmocitico (macroglobulinemia di Waldenström)", en: "Lymphoplasmacytic lymphoma (Waldenström macroglobulinemia)" }
+    - id: acute-myeloid-leukemia
+      names: { it: "Leucemia mieloide acuta", en: "Acute myeloid leukemia" }
+    - id: myelodysplastic-neoplasms
+      names: { it: "Neoplasie mielodisplastiche", en: "Myelodysplastic neoplasms" }
+    - id: chronic-myeloid-leukemia
+      names: { it: "Leucemia mieloide cronica", en: "Chronic myeloid leukemia" }
+    - id: polycythemia-vera
+      names: { it: "Policitemia vera", en: "Polycythemia vera" }
+    - id: essential-thrombocythemia
+      names: { it: "Trombocitemia essenziale", en: "Essential thrombocythemia" }
+    - id: primary-myelofibrosis
+      names: { it: "Mielofibrosi primaria", en: "Primary myelofibrosis" }
+    - id: mastocytosis
+      names: { it: "Mastocitosi", en: "Mastocytosis" }
+    - id: multiple-myeloma
+      names: { it: "Mieloma multiplo e plasmocitoma", en: "Multiple myeloma and plasmacytoma" }
+    - id: monoclonal-gammopathy-of-undetermined-significance
+      names: { it: "Gammopatia monoclonale di significato indeterminato (MGUS)", en: "Monoclonal gammopathy of undetermined significance" }
+    - id: anemia-organ-consequences
+      names: { it: "Anemie: conseguenze d'organo", en: "Anemias: organ consequences" }
+    - id: hemoglobinopathies
+      names: { it: "Emoglobinopatie: anemia falciforme e talassemie", en: "Hemoglobinopathies: sickle cell disease and thalassemias" }
+    - id: thymoma-and-thymic-carcinoma
+      names: { it: "Timoma e carcinoma timico", en: "Thymoma and thymic carcinoma" }
+    - id: disseminated-intravascular-coagulation
+      names: { it: "Coagulazione intravascolare disseminata", en: "Disseminated intravascular coagulation" }
 - id: o27
   section: III
   order: 27
@@ -341,6 +882,52 @@
   planned:
     - id: primary-hyperparathyroidism
       names: { it: "Iperparatiroidismo primitivo", en: "Primary hyperparathyroidism" }
+    - id: hypopituitarism
+      names: { it: "Ipopituitarismo e patologia della neuroipofisi", en: "Hypopituitarism and posterior pituitary disorders" }
+    - id: pituitary-neuroendocrine-tumors
+      names: { it: "Tumori neuroendocrini dell'ipofisi (adenomi ipofisari)", en: "Pituitary neuroendocrine tumors (adenomas)" }
+    - id: hypothyroidism
+      names: { it: "Ipotiroidismo", en: "Hypothyroidism" }
+    - id: graves-disease
+      names: { it: "Malattia di Basedow-Graves", en: "Graves disease" }
+    - id: goiter
+      names: { it: "Gozzo diffuso e multinodulare", en: "Goiter (diffuse and multinodular)" }
+    - id: hashimoto-thyroiditis
+      names: { it: "Tiroidite di Hashimoto", en: "Hashimoto thyroiditis" }
+    - id: other-thyroiditis
+      names: { it: "Altre tiroiditi (acuta, subacuta granulomatosa, silente, di Riedel)", en: "Other thyroiditides" }
+    - id: thyroid-nodule-and-fna
+      names: { it: "Il nodulo tiroideo e l'agoaspirato", en: "Thyroid nodule work-up and fine-needle aspiration" }
+    - id: follicular-adenoma
+      names: { it: "Adenoma follicolare", en: "Follicular adenoma" }
+    - id: papillary-thyroid-carcinoma
+      names: { it: "Carcinoma papillare della tiroide", en: "Papillary thyroid carcinoma" }
+    - id: follicular-thyroid-carcinoma
+      names: { it: "Carcinoma follicolare della tiroide", en: "Follicular thyroid carcinoma" }
+    - id: anaplastic-thyroid-carcinoma
+      names: { it: "Carcinoma anaplastico e scarsamente differenziato della tiroide", en: "Anaplastic and poorly differentiated thyroid carcinoma" }
+    - id: medullary-thyroid-carcinoma
+      names: { it: "Carcinoma midollare della tiroide", en: "Medullary thyroid carcinoma" }
+    - id: secondary-hyperparathyroidism
+      names: { it: "Iperparatiroidismo secondario e terziario", en: "Secondary and tertiary hyperparathyroidism" }
+    - id: hypoparathyroidism
+      names: { it: "Ipoparatiroidismo e pseudoipoparatiroidismo", en: "Hypoparathyroidism and pseudohypoparathyroidism" }
+    - id: adrenal-insufficiency
+      names: { it: "Insufficienza corticosurrenalica", en: "Adrenal insufficiency" }
+    - id: cushing-syndrome
+      names: { it: "Sindrome di Cushing (ipercorticosurrenalismo)", en: "Cushing syndrome" }
+    - id: primary-hyperaldosteronism
+      names: { it: "Iperaldosteronismo primitivo", en: "Primary hyperaldosteronism" }
+    - id: congenital-adrenal-hyperplasia
+      names: { it: "Iperplasia surrenalica congenita", en: "Congenital adrenal hyperplasia" }
+    - id: adrenocortical-neoplasms
+      names: { it: "Adenoma e carcinoma corticosurrenalico", en: "Adrenocortical adenoma and carcinoma" }
+    - id: pheochromocytoma-and-paraganglioma
+      names: { it: "Feocromocitoma e paragangliomi", en: "Pheochromocytoma and paraganglioma" }
+    - id: neuroblastoma
+      names: { it: "Neuroblastoma e ganglioneuroma", en: "Neuroblastoma and ganglioneuroma" }
+    - id: multiple-endocrine-neoplasia
+      names: { it: "Neoplasie endocrine multiple (MEN)", en: "Multiple endocrine neoplasia" }
 - id: o28
   section: III
   order: 28
@@ -349,6 +936,25 @@
     en: "Skin"
   status: planned
   refPages: "1266-1323"
+  planned:
+    - id: seborrheic-keratosis
+      names: { it: "Cheratosi seborroica", en: "Seborrheic keratosis" }
+    - id: actinic-keratosis
+      names: { it: "Cheratosi attinica e malattia di Bowen", en: "Actinic keratosis and Bowen disease" }
+    - id: basal-cell-carcinoma
+      names: { it: "Carcinoma basocellulare", en: "Basal cell carcinoma" }
+    - id: cutaneous-squamous-cell-carcinoma
+      names: { it: "Carcinoma squamoso cutaneo e cheratoacantoma", en: "Cutaneous squamous cell carcinoma and keratoacanthoma" }
+    - id: melanocytic-nevi
+      names: { it: "Nevi melanocitici", en: "Melanocytic nevi" }
+    - id: dysplastic-nevus
+      names: { it: "Nevo displastico (atipico)", en: "Dysplastic (atypical) nevus" }
+    - id: cutaneous-melanoma
+      names: { it: "Melanoma cutaneo", en: "Cutaneous melanoma" }
+    - id: merkel-cell-carcinoma
+      names: { it: "Carcinoma a cellule di Merkel", en: "Merkel cell carcinoma" }
+    - id: dermal-and-adnexal-tumors
+      names: { it: "Tumori annessiali e fibroistiocitari della cute", en: "Adnexal and fibrohistiocytic skin tumors" }
 - id: o29
   section: III
   order: 29
@@ -357,6 +963,27 @@
     en: "Head and neck (incl. salivary glands, ear)"
   status: planned
   refPages: "1324-1353"
+  planned:
+    - id: rhinosinusitis-and-nasal-polyps
+      names: { it: "Riniti, sinusiti e polipi nasali", en: "Rhinitis, sinusitis and nasal polyps" }
+    - id: sinonasal-tumors
+      names: { it: "Tumori delle cavità nasali e dei seni paranasali", en: "Sinonasal tumors" }
+    - id: nasopharyngeal-carcinoma
+      names: { it: "Carcinoma nasofaringeo", en: "Nasopharyngeal carcinoma" }
+    - id: laryngeal-precursor-lesions
+      names: { it: "Lesioni precancerose della laringe", en: "Laryngeal precursor lesions" }
+    - id: laryngeal-squamous-cell-carcinoma
+      names: { it: "Carcinoma squamoso della laringe", en: "Laryngeal squamous cell carcinoma" }
+    - id: salivary-gland-tumors
+      names: { it: "Tumori delle ghiandole salivari: classificazione", en: "Salivary gland tumors: classification" }
+    - id: pleomorphic-adenoma
+      names: { it: "Adenoma pleomorfo", en: "Pleomorphic adenoma" }
+    - id: warthin-tumor
+      names: { it: "Tumore di Warthin", en: "Warthin tumor" }
+    - id: mucoepidermoid-carcinoma
+      names: { it: "Carcinoma mucoepidermoide", en: "Mucoepidermoid carcinoma" }
+    - id: adenoid-cystic-carcinoma
+      names: { it: "Carcinoma adenoido-cistico", en: "Adenoid cystic carcinoma" }
 - id: o30
   section: III
   order: 30
@@ -365,6 +992,55 @@
     en: "Bones, joints and soft tissue"
   status: planned
   refPages: "1354-1431"
+  planned:
+    - id: bone-tumors
+      names: { it: "Tumori ossei: classificazione, diagnosi differenziale e correlazioni radiologiche", en: "Bone tumors: classification, differential diagnosis and radiology" }
+    - id: osteoid-osteoma-and-osteoblastoma
+      names: { it: "Osteoma osteoide e osteoblastoma", en: "Osteoid osteoma and osteoblastoma" }
+    - id: osteochondroma
+      names: { it: "Osteocondroma", en: "Osteochondroma" }
+    - id: enchondroma
+      names: { it: "Encondroma (condroma) ed encondromatosi", en: "Enchondroma and enchondromatosis" }
+    - id: giant-cell-tumor-of-bone
+      names: { it: "Tumore a cellule giganti dell'osso", en: "Giant cell tumor of bone" }
+    - id: bone-cysts-and-fibrous-lesions
+      names: { it: "Cisti ossee e lesioni fibrose (cisti semplice e aneurismatica, fibroma non ossificante, displasia fibrosa)", en: "Bone cysts and fibrous lesions" }
+    - id: osteosarcoma
+      names: { it: "Osteosarcoma", en: "Osteosarcoma" }
+    - id: chondrosarcoma
+      names: { it: "Condrosarcoma", en: "Chondrosarcoma" }
+    - id: ewing-sarcoma
+      names: { it: "Sarcoma di Ewing", en: "Ewing sarcoma" }
+    - id: bone-metastases
+      names: { it: "Metastasi ossee", en: "Bone metastases" }
+    - id: pyogenic-osteomyelitis
+      names: { it: "Osteomielite piogena", en: "Pyogenic osteomyelitis" }
+    - id: tuberculous-osteomyelitis
+      names: { it: "Osteomielite tubercolare (morbo di Pott) e sifilide ossea", en: "Tuberculous osteomyelitis (Pott disease) and bone syphilis" }
+    - id: osteoporosis
+      names: { it: "Osteoporosi", en: "Osteoporosis" }
+    - id: osteomalacia-and-rickets
+      names: { it: "Osteomalacia e rachitismo", en: "Osteomalacia and rickets" }
+    - id: hyperparathyroid-bone-disease
+      names: { it: "Osteopatia iperparatiroidea e osteodistrofia renale", en: "Hyperparathyroid bone disease and renal osteodystrophy" }
+    - id: paget-disease-of-bone
+      names: { it: "Malattia ossea di Paget", en: "Paget disease of bone" }
+    - id: soft-tissue-tumors
+      names: { it: "Tumori dei tessuti molli: istogenesi e classificazione", en: "Soft-tissue tumors: histogenesis and classification" }
+    - id: adipocytic-tumors
+      names: { it: "Tumori adipocitari: lipoma e liposarcoma", en: "Adipocytic tumors: lipoma and liposarcoma" }
+    - id: fibroblastic-tumors
+      names: { it: "Fascite nodulare e fibromatosi", en: "Nodular fasciitis and fibromatoses" }
+    - id: undifferentiated-pleomorphic-sarcoma
+      names: { it: "Sarcoma pleomorfo indifferenziato", en: "Undifferentiated pleomorphic sarcoma" }
+    - id: rhabdomyosarcoma
+      names: { it: "Rabdomiosarcoma", en: "Rhabdomyosarcoma" }
+    - id: smooth-muscle-tumors
+      names: { it: "Tumori muscolari lisci dei tessuti molli (leiomioma, leiomiosarcoma)", en: "Smooth muscle tumors of soft tissue" }
+    - id: synovial-sarcoma
+      names: { it: "Sarcoma sinoviale", en: "Synovial sarcoma" }
+    - id: rheumatoid-arthritis
+      names: { it: "Artrite reumatoide", en: "Rheumatoid arthritis" }
 - id: o31
   section: III
   order: 31
@@ -376,6 +1052,30 @@
   planned:
     - id: denervation-atrophy
       names: { it: "Atrofia da denervazione", en: "Denervation atrophy" }
+    - id: muscle-reactions-to-injury
+      names: { it: "Reazioni patologiche generali del muscolo scheletrico", en: "General pathologic reactions of skeletal muscle" }
+    - id: duchenne-and-becker-muscular-dystrophy
+      names: { it: "Distrofie muscolari di Duchenne e Becker", en: "Duchenne and Becker muscular dystrophies" }
+    - id: myotonic-dystrophy-and-other-dystrophies
+      names: { it: "Distrofia miotonica e altre distrofie muscolari", en: "Myotonic dystrophy and other muscular dystrophies" }
+    - id: congenital-myopathies
+      names: { it: "Miopatie congenite", en: "Congenital myopathies" }
+    - id: inflammatory-myopathies
+      names: { it: "Miopatie infiammatorie idiopatiche", en: "Idiopathic inflammatory myopathies" }
+    - id: myasthenia-gravis
+      names: { it: "Miastenia gravis", en: "Myasthenia gravis" }
+    - id: metabolic-myopathies
+      names: { it: "Miopatie metaboliche", en: "Metabolic myopathies" }
+    - id: rhabdomyolysis
+      names: { it: "Rabdomiolisi", en: "Rhabdomyolysis" }
+    - id: peripheral-nerve-reactions-to-injury
+      names: { it: "Degenerazione assonale e demielinizzazione segmentale", en: "Axonal degeneration and segmental demyelination" }
+    - id: peripheral-neuropathies
+      names: { it: "Neuropatie periferiche", en: "Peripheral neuropathies" }
+    - id: guillain-barre-syndrome
+      names: { it: "Sindrome di Guillain-Barré", en: "Guillain–Barré syndrome" }
+    - id: peripheral-nerve-sheath-tumors
+      names: { it: "Tumori delle guaine dei nervi periferici", en: "Peripheral nerve sheath tumors" }
 - id: o32
   section: III
   order: 32
@@ -389,6 +1089,60 @@
       names: { it: "Infarto cerebrale", en: "Cerebral infarction" }
     - id: brain-abscess
       names: { it: "Ascesso cerebrale", en: "Brain abscess" }
+    - id: cerebral-edema-and-herniation
+      names: { it: "Edema cerebrale, ipertensione endocranica ed erniazioni", en: "Cerebral edema, raised intracranial pressure and herniation" }
+    - id: hypoxic-ischemic-encephalopathy
+      names: { it: "Encefalopatia ipossico-ischemica", en: "Hypoxic–ischemic encephalopathy" }
+    - id: intracerebral-hemorrhage
+      names: { it: "Emorragia intraparenchimale cerebrale", en: "Intracerebral hemorrhage" }
+    - id: subarachnoid-hemorrhage
+      names: { it: "Emorragia subaracnoidea e aneurismi sacculari", en: "Subarachnoid hemorrhage and berry aneurysm" }
+    - id: epidural-and-subdural-hematoma
+      names: { it: "Ematomi epidurale e subdurale", en: "Epidural and subdural hematoma" }
+    - id: bacterial-meningitis
+      names: { it: "Meningite batterica", en: "Bacterial meningitis" }
+    - id: viral-encephalitis
+      names: { it: "Encefaliti virali", en: "Viral encephalitis" }
+    - id: tuberculous-and-fungal-cns-infections
+      names: { it: "Infezioni tubercolari, fungine e parassitarie del SNC", en: "Tuberculous, fungal and parasitic CNS infections" }
+    - id: prion-diseases
+      names: { it: "Malattie da prioni", en: "Prion diseases" }
+    - id: hydrocephalus
+      names: { it: "Idrocefalo", en: "Hydrocephalus" }
+    - id: multiple-sclerosis
+      names: { it: "Sclerosi multipla", en: "Multiple sclerosis" }
+    - id: other-demyelinating-diseases
+      names: { it: "Altre malattie demielinizzanti (NMO, ADEM, mielinolisi osmotica, leucodistrofie)", en: "Other demyelinating diseases" }
+    - id: alzheimer-disease
+      names: { it: "Malattia di Alzheimer", en: "Alzheimer disease" }
+    - id: frontotemporal-lobar-degeneration
+      names: { it: "Degenerazione lobare frontotemporale", en: "Frontotemporal lobar degeneration" }
+    - id: parkinson-disease-and-lewy-body-dementia
+      names: { it: "Malattia di Parkinson e demenza a corpi di Lewy", en: "Parkinson disease and dementia with Lewy bodies" }
+    - id: huntington-disease
+      names: { it: "Malattia di Huntington", en: "Huntington disease" }
+    - id: amyotrophic-lateral-sclerosis
+      names: { it: "Sclerosi laterale amiotrofica", en: "Amyotrophic lateral sclerosis" }
+    - id: cns-tumors
+      names: { it: "Tumori del SNC: classificazione, grading, marcatori molecolari e biopsia stereotassica", en: "CNS tumors: classification, grading, molecular markers and stereotactic biopsy" }
+    - id: glioblastoma
+      names: { it: "Glioblastoma IDH wild-type", en: "Glioblastoma, IDH-wildtype" }
+    - id: idh-mutant-gliomas
+      names: { it: "Gliomi IDH-mutati (astrocitoma e oligodendroglioma)", en: "IDH-mutant gliomas (astrocytoma and oligodendroglioma)" }
+    - id: pilocytic-astrocytoma
+      names: { it: "Astrocitoma pilocitico", en: "Pilocytic astrocytoma" }
+    - id: ependymoma
+      names: { it: "Ependimoma", en: "Ependymoma" }
+    - id: meningioma
+      names: { it: "Meningioma", en: "Meningioma" }
+    - id: medulloblastoma
+      names: { it: "Medulloblastoma", en: "Medulloblastoma" }
+    - id: primary-cns-lymphoma
+      names: { it: "Linfoma primitivo del SNC", en: "Primary CNS lymphoma" }
+    - id: brain-metastases
+      names: { it: "Metastasi cerebrali", en: "Brain metastases" }
+    - id: craniopharyngioma
+      names: { it: "Craniofaringioma", en: "Craniopharyngioma" }
 - id: o33
   section: III
   order: 33
@@ -397,6 +1151,35 @@
     en: "Eye"
   status: planned
   refPages: "1560-1581"
+  planned:
+    - id: eyelid-conjunctiva-and-orbit-disorders
+      names: { it: "Patologia di palpebre, congiuntiva e orbita", en: "Disorders of the eyelids, conjunctiva and orbit" }
+    - id: corneal-disorders
+      names: { it: "Patologia della cornea", en: "Corneal disorders" }
+    - id: cataract
+      names: { it: "Cataratta", en: "Cataract" }
+    - id: uveitis
+      names: { it: "Uveiti", en: "Uveitis" }
+    - id: retinal-vascular-occlusion
+      names: { it: "Occlusioni vascolari della retina", en: "Retinal vascular occlusion" }
+    - id: hypertensive-retinopathy
+      names: { it: "Retinopatia ipertensiva", en: "Hypertensive retinopathy" }
+    - id: diabetic-retinopathy
+      names: { it: "Retinopatia diabetica", en: "Diabetic retinopathy" }
+    - id: retinal-detachment
+      names: { it: "Distacco di retina", en: "Retinal detachment" }
+    - id: retinitis-pigmentosa
+      names: { it: "Retinite pigmentosa", en: "Retinitis pigmentosa" }
+    - id: macular-degeneration
+      names: { it: "Degenerazione maculare legata all'età", en: "Age-related macular degeneration" }
+    - id: optic-nerve-disorders
+      names: { it: "Edema della papilla e atrofia ottica", en: "Optic disc edema and optic atrophy" }
+    - id: glaucoma
+      names: { it: "Glaucoma", en: "Glaucoma" }
+    - id: uveal-melanoma
+      names: { it: "Melanoma uveale", en: "Uveal melanoma" }
+    - id: retinoblastoma
+      names: { it: "Retinoblastoma", en: "Retinoblastoma" }
 - id: o34
   section: III
   order: 34
@@ -405,3 +1188,12 @@
     en: "Forensic pathology (optional)"
   status: planned
   refPages: "1582-1588"
+  planned:
+    - id: cause-and-manner-of-death
+      names: { it: "Causa e modalità della morte", en: "Cause and manner of death" }
+    - id: blunt-and-penetrating-trauma
+      names: { it: "Lesioni contusive e penetranti", en: "Blunt force and penetrating trauma" }
+    - id: asphyxia
+      names: { it: "Asfissie", en: "Asphyxia" }
+    - id: environmental-and-toxic-deaths
+      names: { it: "Morti da agenti ambientali e da intossicazione", en: "Deaths from environmental exposure and intoxication" }
