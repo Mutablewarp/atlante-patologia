@@ -1,0 +1,112 @@
+id: amyloidosis
+module: s15
+tier: core
+kind: disease
+editionDependent: false
+status: published
+lastUpdated: 2026-11-13
+reviewStatus: ai-generated-unreviewed
+names:
+  it: "Amiloidosi"
+  en: "Amyloidosis"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: [AL, AA, ATTR, "Aβ2M"]
+summary:
+  it: "Gruppo di malattie da ripiegamento anomalo delle proteine, con deposito extracellulare di fibrille insolubili con struttura a foglietto β, che si colorano con il rosso Congo e mostrano birifrangenza verde mela in luce polarizzata."
+  en: "A group of protein-misfolding diseases with extracellular deposits of insoluble β-sheet fibrils that stain with Congo red and show apple-green birefringence under polarized light."
+lenses:
+  system: [systemic, kidney, heart]
+  process: [extracellular-accumulation, proteostasis]
+  pattern: [hyaline-change]
+  presentation: [organomegaly, edema]
+  marker: [special-stains, ihc, molecular]
+  group: [degenerative, genetic]
+learningObjectives:
+  - it: "Descrivere la struttura dell'amiloide e il suo aspetto con rosso Congo in luce ordinaria e polarizzata."
+    en: "Describe the structure of amyloid and its look with Congo red in ordinary and polarized light."
+  - it: "Distinguere AL, AA, ATTR, Aβ2M e le forme localizzate in base alla proteina precursore."
+    en: "Tell AL, AA, ATTR, Aβ2M and localized forms apart by their precursor protein."
+  - it: "Indicare gli organi colpiti e le principali manifestazioni cliniche di ciascun tipo."
+    en: "Name the organs involved and the main clinical features of each type."
+  - it: "Scegliere la sede di biopsia (aspirato di grasso addominale) e spiegare perché serve la tipizzazione."
+    en: "Choose the biopsy site (abdominal fat aspirate) and explain why typing is needed."
+prerequisites: [protein-quality-control]
+relations:
+  - type: sharesMechanism
+    target: protein-quality-control
+    note:
+      it: "Il ripiegamento anomalo delle proteine sfugge ai sistemi di controllo di qualità."
+      en: "Protein misfolding escapes the quality-control systems."
+  - type: differentialOf
+    target: hypertensive-heart-disease
+    note:
+      it: "Senza biopsia endomiocardica è difficile distinguere l'amiloide cardiaca dalla cardiopatia ipertensiva."
+      en: "Cardiac amyloid is hard to tell from hypertensive heart disease without an endomyocardial biopsy."
+quickCheck:
+  - id: amyloidosis-q1
+    q:
+      it: "Il rosso Congo positivo basta per dire di che tipo di amiloidosi si tratta?"
+      en: "Is a positive Congo red enough to say which type of amyloidosis it is?"
+    a:
+      it: "No: tutti i tipi appaiono uguali con EE e rosso Congo, quindi la proteina va identificata, per esempio con immunoistochimica o spettrometria di massa."
+      en: "No: all types look alike on H&E and Congo red, so the protein must be identified, for example by immunohistochemistry or mass spectrometry."
+    kind: short
+  - id: amyloidosis-q2
+    q:
+      it: "Qual è la biopsia meno invasiva per cercare l'amiloide?"
+      en: "Which is the least invasive biopsy to look for amyloid?"
+    a:
+      it: "L'aspirato di grasso addominale."
+      en: "The abdominal fat aspirate."
+    kind: short
+  - id: amyloidosis-q3
+    q:
+      it: "Quale proteina precursore sta dietro AL, AA, ATTR e Aβ2M?"
+      en: "Which precursor protein is behind AL, AA, ATTR and Aβ2M?"
+    a:
+      it: "Catene leggere delle immunoglobuline, amiloide sierica A, transtiretina e β2-microglobulina."
+      en: "Immunoglobulin light chains, serum amyloid A, transthyretin and β2-microglobulin."
+    kind: short
+  - id: amyloidosis-q4
+    q:
+      it: "Quale organo, oltre al cuore, è bersaglio abituale dell'amiloidosi AL, e quale è risparmiato?"
+      en: "Which organ, besides the heart, is the usual target of AL amyloidosis, and which is spared?"
+    a:
+      it: "Il rene è bersaglio abituale; il cervello è risparmiato."
+      en: "The kidney is a usual target; the brain is spared."
+    kind: short
+selfExplain:
+  - it: "Perché l'amiloidosi AA compare dopo infiammazione cronica prolungata?"
+    en: "Why does AA amyloidosis follow long-standing chronic inflammation?"
+  - it: "Perché una proteina monoclonale nel sangue non basta a diagnosticare l'amiloidosi AL?"
+    en: "Why is a monoclonal protein in the blood not enough to diagnose AL amyloidosis?"
+examQuestions:
+  - it: "Mi parli dell'amiloidosi: che cos'è e come appare con il rosso Congo."
+    en: "Tell me about amyloidosis: what is it, and how does it look with Congo red?"
+    focus: [definition, ancillary]
+    level: 1
+  - it: "Quali tipi di amiloidosi conosce e quale proteina precursore sta dietro a ciascuno?"
+    en: "Which types of amyloidosis do you know, and which precursor protein is behind each?"
+    focus: [etiology, high-yield]
+    level: 1
+  - it: "Quali organi sono colpiti nell'amiloidosi AL e come si manifesta il danno?"
+    en: "Which organs are involved in AL amyloidosis, and how does the damage show?"
+    focus: [clinical]
+    level: 2
+  - it: "Quale biopsia userebbe per cercare l'amiloide e perché serve poi la tipizzazione?"
+    en: "Which biopsy would you use to look for amyloid, and why is typing needed afterwards?"
+    focus: [ancillary, definition]
+    level: 2
+  - it: "Come distingue l'amiloide dalla glomerulosclerosi diabetica nodulare e dalla malattia da deposizione di immunoglobuline monoclonali?"
+    en: "How do you tell amyloid from nodular diabetic glomerulosclerosis and from monoclonal immunoglobulin deposition disease?"
+    focus: [differential]
+    level: 3
+images:
+  - { id: amyloidosis-micro-1, role: micro }
+sources:
+  - { source: rubin-8e, chapter: "15", pages: "582-588" }
+  - { source: rubin-8e, chapter: "17", pages: "686" }
+  - { source: rubin-8e, chapter: "22", pages: "935-936" }

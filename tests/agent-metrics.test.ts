@@ -1,6 +1,6 @@
 // Batch metrics row (scripts/agent/metrics.mjs): the row, the table edit and the command, on temporary PROGRESS-like files.
 import { execFileSync } from 'node:child_process';
-import { copyFileSync, mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
+import { mkdtempSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -96,7 +96,8 @@ describe('the command', () => {
 
   it('appends the heading, the header and a row to a copy of docs/PROGRESS.md, then only a row', () => {
     const copy = join(dir, 'PROGRESS.md');
-    copyFileSync(real, copy);
+    // The real file gains a "V3 batch metrics" table with every batch: test on a copy that stops before it.
+    writeFileSync(copy, readFileSync(real, 'utf8').split(/\n## V3 batch metrics/)[0]!.trimEnd() + '\n');
     const original = readFileSync(copy, 'utf8');
     const printed = execFileSync(process.execPath, [script, ...ARGS, '--file', copy], { encoding: 'utf8' }).trim();
     expect(printed).toMatch(/^\| W02 \| \d{4}-\d{2}-\d{2} \| 8 \| 400 k \| 2\.5 % \(1\/40\) \| 380 \| first-try \|$/);

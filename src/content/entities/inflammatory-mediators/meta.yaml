@@ -1,0 +1,88 @@
+id: inflammatory-mediators
+module: g02
+tier: extended
+kind: concept
+names:
+  it: "Mediatori dell'infiammazione"
+  en: "Inflammatory mediators"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: []
+summary:
+  it: "Segnali chimici, derivati dal plasma o dalle cellule, che dilatano i vasi, ne aumentano la permeabilità e richiamano le cellule infiammatorie nella sede del danno."
+  en: "Chemical signals, derived from plasma or from cells, that dilate vessels, raise their permeability and recruit inflammatory cells to the site of injury."
+lenses:
+  system: [general]
+  process: [acute-inflammation]
+  pattern: []
+  presentation: []
+  marker: []
+  group: [inflammatory, immune]
+learningObjectives:
+  - it: "Distinguere i mediatori derivati dal plasma da quelli derivati dalle cellule."
+    en: "Tell plasma-derived mediators from cell-derived mediators."
+  - it: "Elencare i principali mediatori: ammine vasoattive, metaboliti dell'acido arachidonico, citochine e chemochine, complemento, chinine e ossido nitrico."
+    en: "List the main mediators: vasoactive amines, arachidonic acid metabolites, cytokines and chemokines, complement, kinins and nitric oxide."
+  - it: "Spiegare come il fattore XII colleghi coagulazione, chinine e complemento."
+    en: "Explain how factor XII links coagulation, kinins and complement."
+prerequisites: []
+relations:
+  - type: prerequisiteOf
+    target: acute-inflammation
+    note:
+      it: "I mediatori sono i segnali che guidano la risposta infiammatoria acuta."
+      en: "Mediators are the signals that drive the acute inflammatory response."
+quickCheck:
+  - id: inflammatory-mediators-q1
+    q:
+      it: "Quale fattore collega le cascate della coagulazione, delle chinine e del complemento?"
+      en: "Which factor links the coagulation, kinin and complement cascades?"
+    a:
+      it: "Il fattore XII (fattore di Hageman) attivato."
+      en: "Activated factor XII (Hageman factor)."
+    kind: short
+  - id: inflammatory-mediators-q2
+    q:
+      it: "Quali prodotti dell'acido arachidonico bloccano l'aspirina e i FANS?"
+      en: "Which arachidonic acid products do aspirin and NSAIDs block?"
+    a:
+      it: "Bloccano la ciclossigenasi, quindi i prostanoidi, ma non i leucotrieni né le lipossine."
+      en: "They block cyclooxygenase, so the prostanoids, but not the leukotrienes or lipoxins."
+    kind: short
+  - id: inflammatory-mediators-q3
+    q:
+      it: "Quali tre citochine sono i pirogeni endogeni?"
+      en: "Which three cytokines are the endogenous pyrogens?"
+    a:
+      it: "IL-1, IL-6 e TNFα."
+      en: "IL-1, IL-6 and TNFα."
+    kind: short
+selfExplain:
+  - it: "Perché l'istamina causa un aumento rapido della permeabilità vascolare?"
+    en: "Why does histamine cause a fast rise in vascular permeability?"
+  - it: "Perché una carenza di inibitore di C1 si associa ad angioedema ereditario?"
+    en: "Why is lack of C1 inhibitor associated with hereditary angioedema?"
+examQuestions:
+  - it: "Mi parli dei mediatori dell'infiammazione: da dove derivano?"
+    en: "Tell me about inflammatory mediators: where do they come from?"
+    focus: [definition, high-yield]
+    level: 1
+  - it: "Perché l'aspirina e i FANS non bloccano tutti i prodotti dell'acido arachidonico?"
+    en: "Why do aspirin and NSAIDs not block every arachidonic acid product?"
+    focus: [high-yield, traps]
+    level: 2
+  - it: "Come distingue un mediatore dalla risposta infiammatoria acuta che esso promuove?"
+    en: "How do you tell a mediator from the acute inflammatory response it promotes?"
+    focus: [differential, traps]
+    level: 3
+images: []
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "2"
+    pages: "75-84"
+lastUpdated: 2026-11-13
+status: published

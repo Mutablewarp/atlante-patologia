@@ -288,3 +288,14 @@ Still open:
 - At 320 px with size XL, three lens-term pagers and the roadmap table still scroll sideways by 3–60 px, as on main. Letting the term pager wrap would also restack it at size M on phones (156 of 180 page and width cases at 375 and 390 px).
 - The quiz options run 1115 px wide at 1440 px, well past the reading measure, as on main: the runner is not inside the 48rem study column (NAV-15).
 - `/it/e/coagulative-necrosis/` scores 90 for Lighthouse mobile performance locally (FCP 2.6 s); `02b031d` and main score 91 (FCP 2.5 s) in the same conditions. The card's CSS grew by 0.4 KB gzipped (2 KB raw), and `serve-dist.mjs` sends it uncompressed.
+
+## V3 batch metrics
+
+| Batch | Date | Cards | Tokens per card | Audit error rate | kB per card | CI |
+|---|---|---:|---:|---:|---:|---|
+| W02-pilot | 2026-11-13 | 4 | 5961 k | 0.0 % (0/60) | 75 | first-try |
+
+Pilot C-0 (W02: thrombosis, amyloidosis, hyaline-change, inflammatory-mediators), notes of 2026-11-13:
+- "Tokens per card" counts input, cache creation, cache reads and output of every run, reruns included (55 runs); cache reads of the fixed context dominate, so the plan's 450 k target (a different count) cannot be compared with it. The measure that matters is dollars at API prices from `.work/usage.jsonl`: $19.71 in all, $4.93 per card with the rework of the pilot (a path-guard bug, a missing shasum permission, a report-note limit, a scout without candidates, and a second pass through all stages after the distance stage was added). A clean run of the seven stages costs about $3.4 for a P0 core card, $2.2 to $2.8 for P1 and P2: about $1,000 for 378 cards. Plan usage moved by less than one point of the weekly limit while the pilot and its supporting session ran (20 % before and after).
+- Audit: 15 claims per card (60 in all) checked against the cited pages by a fresh agent: 0 factual errors, 0 mistranslations. Close paraphrase (the content points of one source sentence in the same order with synonym swaps) was flagged in 23 of 60 claims before the distance stage and in 5 of 60 after it plus a second verifier and fixer pass; the verifier's own count of rows to fix fell from 15 of 73 to 3 of 72 (thrombosis) and from 27 of 51 to 2 of 41 (amyloidosis).
+- The gates for the cards: check, unit tests, build, dist tests, Linux e2e (chromium) green on the branch; card pages weigh 75 kB on average (target 110 kB).
