@@ -1,6 +1,6 @@
 # Content schema
 
-Status: PHASE 0 proposal, 2026-10-10, implemented in Phase 1 as Zod schemas in `src/lib/schema.ts` (`import { z } from 'astro/zod'`, Zod 4), imported by `src/content.config.ts` and by the Vitest validators. One schema, used in two places; where this page and `src/lib/schema.ts` differ, the code wins. §1b, §3, §3a and §8 were brought in line with the code on 2026-11-04.
+Status: PHASE 0 proposal, 2026-10-10, implemented in Phase 1 as Zod schemas in `src/lib/schema.ts` (`import { z } from 'astro/zod'`, Zod 4), imported by `src/content.config.ts` and by the Vitest validators. One schema, used in two places; where this page and `src/lib/schema.ts` differ, the code wins. §1b, §3, §3a and §8 were brought in line with the code on 2026-11-04. §1a, §1b, §6 and the new §6a (technique cards, module g10, anatomy and `sites`) were added on 2026-11-12.
 
 ## 0. Shared types
 
@@ -25,7 +25,7 @@ entity = z.object({
   id: Id,
   module: ModuleId,
   tier: z.enum(['core','extended']),
-  kind: z.enum(['disease','lesion','process','concept']),
+  kind: z.enum(['disease','lesion','process','concept','technique']), // technique: see the end of §1b
   names: z.object({
     it: z.string(), en: z.string(),
     latin: z.string().optional(),
@@ -42,6 +42,7 @@ entity = z.object({
     marker: z.array(Id).default([]),
     group: z.array(Id).min(1),
   }),                                   // validator: >= 3 distinct lenses non-empty (A–Z excluded)
+  sites: z.array(z.object({ organ: Id, claim: Id.optional() })).default([]), // organs of the interactive body, §6a
   learningObjectives: z.array(L).min(1).max(6),
   prerequisites: z.array(Id).default([]),
   relations: z.array(z.object({ type: RelationType, target: Id, note: L.optional() })).default([]),
@@ -98,6 +99,23 @@ Body: exactly these H2 sections, in this order. The titles are the canonical loc
 | — | `quick-check` | Quick check (rendered from `meta.quickCheck`) | Verifica rapida | ✓ |
 
 A section that does not apply, such as gross morphology for a molecular process, contains one localized "not applicable" line. It is never omitted, so the structure stays parallel. Process/concept cards (`kind: process|concept`) may mark sections 4–9 `n/a`.
+
+**Technique cards** (`kind: technique`, module g10, owner decision D2) keep the 13 anchor ids and, in `en.md` / `it.md`, the canonical H2 titles above: the parity gate and `splitSections` depend on them. The page shows other titles on ten sections. `sectionTitle(id, kind, lang)` in `src/i18n/sections.ts` is the one function that names a section on a page (headings, contents list, "continue" links, exam-question and quiz back-links); the contents list shows the same remapped title, which has no shorter form. High-yield, traps, mnemonics and the quick check keep their titles.
+
+| Anchor id | Title on a technique card (EN) | (IT) |
+|---|---|---|
+| `definition` | Principle and aims | Principio e scopi |
+| `etiology` | Indications | Indicazioni |
+| `pathogenesis` | Steps of the method | Fasi del metodo |
+| `gross` | Gross handling | Gestione macroscopica |
+| `micro` | What the slide or smear shows | Cosa mostra il vetrino o lo striscio |
+| `ancillary` | Related tests | Test correlati |
+| `clinical` | Clinical use | Uso clinico |
+| `diagnosis` | Interpretation and reporting | Interpretazione e refertazione |
+| `prognosis` | Limits and cost of errors | Limiti e costo degli errori |
+| `differential` | Compared with other techniques | Confronto con altre tecniche |
+
+Compare shows one row per quick section for several cards at once, so its rows keep the canonical titles. `quick.json` keeps them for the same reason: its rows span several cards, which may be of different kinds (`sectionTitle` in `src/i18n/sections.ts` says the same).
 
 Authoring conventions inside the markdown:
 
@@ -230,8 +248,26 @@ The Credits page and per-image credit lines are generated from these files. An i
 | Glossary | `glossary/<id>.yaml` | `id, term: L, definition: L (≤ 40 words), aliases: LList, see: Id[]`. Popovers work by tap, keyboard and hover. |
 | Learning path | `paths/<id>.yaml` | `id, kind: 'vertical'\|'horizontal', title: L, description: L, steps: ({entity: Id}\|{pattern: Id})[]` |
 | Taxonomy (lens terms) | `taxonomy/<lens>.yaml` | `lens, label: L, terms: [{ id, label: L, parent?: Id, order }]` |
-| Modules | `modules.yaml` | `id, section: 'I'\|'II'\|'III', label: L, order, status: 'planned'\|'published', refPages, planned: [{ id, names: L }]` (feeds the Roadmap page) |
+| Modules | `modules.yaml` | `id, section: 'I'\|'II'\|'III', label: L, order, status: 'planned'\|'published', refPages, planned: [{ id, names: L }]` (feeds the Roadmap page). `order` is a sort key, not always an integer: g10 (diagnostic methods, technique cards) is 9.5, so it sits between g09 and s10 and no other module is renumbered |
+| Anatomy | `anatomy.yaml` | `id, system, label: L, aliases?: LList, meshes?: string[], order` — see §6a |
 | Sources | `sources.yaml` | `id, title, edition, year, publisher, kind: 'textbook'\|'standard'\|'article', doi?, pmid?, url?, existsVerified: { via: 'crossref'\|'pubmed'\|'publisher', date }` |
+
+## 6a. Anatomy — `src/content/anatomy.yaml` and `sites` (plan/v3-plan.md §8.2)
+
+The organ nodes of the interactive body: one array, loaded as the `anatomy` collection (`anatomySchema` in `src/lib/schema.ts`).
+
+| Field | Rule |
+|---|---|
+| `id` | `Id`, unique. |
+| `system` | A term of `taxonomy/system.yaml`: one of the 18 anatomical terms, never `general` or `systemic` (the schema refuses them). Each anatomical term has at least one organ. |
+| `label` | `L`. Standard anatomical names; Italian labels are the standard Italian anatomical terms. |
+| `aliases` | `LList`, optional (default empty). Other names, for search. |
+| `meshes` | List of strings, optional (default empty). Filled by the 3D asset pipeline; empty until then. |
+| `order` | Integer. The `order` of the system term plus the position inside the system. |
+
+`sites` in an entity's `meta.yaml` is optional: `[{ organ: <anatomy id>, claim?: <claim id> }]`, the organs where the lesion occurs. `claim` names the ledger row (`docs/ledger/<id>.yaml`) that supports the site. A card without `sites` takes the organs of its `system` lens terms; `general` and `systemic` own no organ, so a card with only those has none. `src/lib/anatomy.ts` holds the two pure functions, `organsOfCard(entity, anatomy)` and `cardsOfOrgan(organId, entities, anatomy)` (published cards only).
+
+Gate 4 (`references`, docs/CONTENT_GATES.md) fails on: a `sites` organ that is not in `anatomy.yaml`; a `sites` claim that is not in the card's own ledger; a duplicate organ id; an organ whose `system` is not in the taxonomy; an anatomical system with no organ.
 
 ## 7. Flashcards (generated at build, never hand-authored)
 

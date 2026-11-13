@@ -10,7 +10,7 @@
 import type { Lang } from '../../i18n/index.ts';
 import { fmt } from '../../i18n/index.ts';
 import { tS } from '../../i18n/study.ts';
-import { SECTIONS } from '../../i18n/sections.ts';
+import { sectionTitle } from '../../i18n/sections.ts';
 import { CONFIDENCE } from '../../lib/metacog.ts';
 import type { Entity } from '../../lib/schema.ts';
 import { langPath } from '../../lib/url.ts';
@@ -21,7 +21,7 @@ interface Props {
 }
 const { lang, entity } = Astro.props;
 const t = (k: Parameters<typeof tS>[1]) => tS(lang, k);
-const label = (id: string) => SECTIONS.find((s) => s.id === id)?.title[lang] ?? id;
+const label = (id: string) => sectionTitle(id, entity.kind, lang);
 // `?? []`: a content cache written before examQuestions existed (node_modules/.astro) lacks the default.
 const questions = entity.examQuestions ?? [];
 ---

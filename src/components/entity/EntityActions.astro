@@ -31,6 +31,7 @@ const hasQuiz = (await questions()).some((q) => q.entities.includes(entity.id));
   data-entity-actions
   data-id={entity.id}
   data-module={entity.module}
+  data-kind={entity.kind}
   data-name-it={entity.names.it}
   data-name-en={entity.names.en}
   data-cards={cardIds.map((c) => c.slice(entity.id.length + 1)).join(' ')}

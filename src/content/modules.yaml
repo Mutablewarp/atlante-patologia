@@ -92,6 +92,45 @@
       names: { it: "Tubercolosi", en: "Tuberculosis" }
     - id: clostridial-myonecrosis
       names: { it: "Mionecrosi clostridica (gangrena gassosa)", en: "Clostridial myonecrosis (gas gangrene)" }
+# g10 holds technique cards (kind: technique). order 9.5: after g09 and before s10, so no other module is renumbered.
+- id: g10
+  section: I
+  order: 9.5
+  label:
+    it: "Metodologie e tecniche diagnostiche"
+    en: "Diagnostic methods"
+  status: planned
+  planned:
+    - id: pathology-request-form
+      names: { it: "Richiesta di esame anatomo-patologico", en: "Pathology request form" }
+    - id: pathology-report
+      names: { it: "Referto anatomo-patologico", en: "Pathology report" }
+    - id: biopsy-types
+      names: { it: "Tipi di biopsia", en: "Types of biopsy" }
+    - id: specimen-processing
+      names: { it: "Processazione del campione", en: "Specimen processing" }
+    - id: gross-examination
+      names: { it: "Esame macroscopico", en: "Gross examination" }
+    - id: histochemical-stains
+      names: { it: "Colorazioni istochimiche", en: "Histochemical stains" }
+    - id: immunohistochemistry
+      names: { it: "Immunoistochimica", en: "Immunohistochemistry" }
+    - id: molecular-pathology-techniques
+      names: { it: "Tecniche di patologia molecolare", en: "Molecular pathology techniques" }
+    - id: predictive-biomarkers
+      names: { it: "Biomarcatori predittivi", en: "Predictive biomarkers" }
+    - id: cytopathology
+      names: { it: "Citopatologia", en: "Cytopathology" }
+    - id: frozen-section
+      names: { it: "Esame intraoperatorio al congelatore", en: "Frozen section" }
+    - id: clinical-autopsy
+      names: { it: "Autopsia clinica (riscontro diagnostico)", en: "Clinical autopsy" }
+    - id: microscopy-and-slide-reading
+      names: { it: "Microscopia e lettura del vetrino", en: "Microscopy and slide reading" }
+    - id: electron-microscopy
+      names: { it: "Microscopia elettronica", en: "Electron microscopy" }
+    - id: flow-cytometry
+      names: { it: "Citometria a flusso", en: "Flow cytometry" }
 - id: s10
   section: II
   order: 10

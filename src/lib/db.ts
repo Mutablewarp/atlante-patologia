@@ -10,6 +10,7 @@ import { openDB, type IDBPDatabase } from 'idb';
 import type { CardRecord } from './srs.ts';
 import type { Confidence } from './metacog.ts';
 import type { OralSession } from './oral.ts';
+import type { Entity } from './schema.ts';
 
 export const DB_NAME = 'atlas';
 /** IndexedDB version: bump and add the new stores to STORES_ADDED_IN (never change an existing store). */
@@ -42,7 +43,8 @@ export type HighlightRecord = Base & { entity: string; section: string; text: st
 /** Error log: id `entity:<id>` (whole card) or `card:<card id>` (one flashcard). */
 export type ErrorRecord = Base & { entity: string; card?: string };
 export type ReadRecord = Base & { entity: string; section: string; at: number };
-export type RecentRecord = Base & { names: Names; module: string; section?: string; at: number };
+/** `kind`: the resume tile names `section` with it (a technique card has its own titles); absent in records saved before it existed. */
+export type RecentRecord = Base & { names: Names; module: string; kind?: Entity['kind']; section?: string; at: number };
 export type QuizAttemptRecord = Base & {
   question: string;
   entities: string[];

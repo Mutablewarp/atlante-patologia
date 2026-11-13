@@ -20,6 +20,7 @@ export type Tree = {
   glossary: Doc[];
   taxonomy: Doc[];
   modules: Doc;
+  anatomy: Doc;
   sources: Doc;
   /** ledger id (file name without .yaml) → doc */
   ledgers: Map<string, Doc>;
@@ -79,6 +80,7 @@ export function loadTree(root: string): Tree {
     glossary: yamlFiles(join(content, 'glossary')).map((f) => doc(join(content, 'glossary', f))),
     taxonomy: yamlFiles(join(content, 'taxonomy')).map((f) => doc(join(content, 'taxonomy', f))),
     modules: doc(join(content, 'modules.yaml')),
+    anatomy: doc(join(content, 'anatomy.yaml')),
     sources: doc(join(content, 'sources.yaml')),
     ledgers: new Map(yamlFiles(ledgerDir).map((f) => [f.replace(/\.ya?ml$/, ''), doc(join(ledgerDir, f))])),
     reviewers:

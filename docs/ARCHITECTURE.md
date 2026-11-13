@@ -50,7 +50,8 @@ Status: PHASE 0 proposal, 2026-10-10. Versions come from [VERIFIED_FACTS.md](VER
 ├─ src/
 │  ├─ content.config.ts           # collections; schemas imported from lib/schema.ts
 │  ├─ content/
-│  │  ├─ modules.yaml             # g01…o34: labels, order, status (planned | published)
+│  │  ├─ modules.yaml             # g01…o34 (+ g10 methods): labels, order, status (planned | published)
+│  │  ├─ anatomy.yaml             # organ nodes of the interactive body (CONTENT_SCHEMA §6a)
 │  │  ├─ taxonomy/<lens>.yaml     # lens terms with it/en labels
 │  │  ├─ sources.yaml             # machine registry of sources (feeds the Reading list page)
 │  │  ├─ entities/<id>/{meta.yaml,en.md,it.md}
