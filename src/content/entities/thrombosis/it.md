@@ -1,92 +1,92 @@
 ---
 lang: it
-translatedFrom: 339fc4b484276ec6fa7191614a06c813c4c88a4fd63fe8092ff83d22a72bb341
+translatedFrom: db1c1f2537a7efdc05a45e8afaaaeaadfdff3bde0dbeb319c97d7530f4cc89bc
 ---
 
 ## Definizione ed epidemiologia
 
-**Che cos'è un trombo e che cosa non è?** Il trombo è un coagulo che si sviluppa nel lume di un vaso; lo costituiscono fibrina, piastrine e cellule ematiche intrappolate nella trama.<!--c:thrombosis-c001--> È aderente all'endotelio vascolare.<!--c:thrombosis-c002--> Un semplice coagulo dimostra solo che la coagulazione si è attivata e può formarsi in provetta o dopo la morte.<!--c:thrombosis-c003--> L'ematoma è sangue uscito dai vasi e coagulato all'esterno di essi.<!--c:thrombosis-c004-->
+**Che cos'è un trombo e che cosa non è?** Il trombo è sangue coagulato nel lume di un vaso: una rete di fibrina che trattiene piastrine e cellule.<!--c:thrombosis-c001--> È aderente all'endotelio vascolare.<!--c:thrombosis-c002--> Un coagulo in provetta o post mortem indica soltanto che la coagulazione si è attivata, non che si tratti di un trombo.<!--c:thrombosis-c003--> Il sangue coagulato fuori dal sistema vascolare dopo un'emorragia è un ematoma.<!--c:thrombosis-c004-->
 
 ## Eziologia e fattori di rischio
 
 **Che cosa fa coagulare il sangue dentro un vaso?** Lo favoriscono tre alterazioni: lesione endoteliale, stasi o flusso anomalo e stato di ipercoagulabilità (triade di Virchow).<!--c:thrombosis-c005-->
 
 **Dove si formano i trombi e perché?**
-- I trombi arteriosi nascono soprattutto in arterie colpite da aterosclerosi: coronarie, cerebrali, mesenteriche, renali e degli arti inferiori.<!--c:thrombosis-c006-->
-- Gli aneurismi aortici contengono spesso un trombo, perché il flusso disturbato e la malattia di parete favoriscono la coagulazione.<!--c:thrombosis-c008-->
-- Nelle vene, la stasi dovuta a scompenso cardiaco, riposo a letto, immobilità postoperatoria o viaggi favorisce la trombosi venosa profonda (TVP).<!--c:thrombosis-c009-->
-- Anche traumi, interventi chirurgici, parto e infezioni favoriscono la TVP.<!--c:thrombosis-c010-->
-- Sono stati di ipercoagulabilità gli ormoni esogeni, la tarda gravidanza, i tumori e la trombofilia ereditaria.<!--c:thrombosis-c011-->
-- Un trombo murale può formarsi sul ventricolo sinistro al di sopra di un infarto.<!--c:thrombosis-c012-->
-- La fibrillazione atriale rallenta il sangue atriale, per cui i trombi tendono a iniziare nell'auricola sinistra.<!--c:thrombosis-c013-->
-- Anche le malattie primitive del miocardio possono causare trombi murali del ventricolo sinistro.<!--c:thrombosis-c014-->
+- La trombosi arteriosa predilige le arterie soggette ad aterosclerosi: arti inferiori, renali, mesenteriche, cerebrali e coronarie.<!--c:thrombosis-c006-->
+- Nell'aneurisma aortico il flusso disturbato e la parete malata favoriscono la coagulazione, perciò i trombi sono frequenti.<!--c:thrombosis-c008-->
+- Viaggi, riposo a letto, immobilità dopo un intervento e scompenso cardiaco rallentano il flusso venoso e favoriscono la trombosi venosa profonda (TVP).<!--c:thrombosis-c009-->
+- Anche infezioni, parto, interventi chirurgici e traumi favoriscono la TVP.<!--c:thrombosis-c010-->
+- Favoriscono la TVP anche l'ipercoagulabilità da trombofilia ereditaria, tumori, tarda gravidanza od ormoni esogeni.<!--c:thrombosis-c011-->
+- Dopo un infarto miocardico, un trombo murale può depositarsi sul ventricolo sinistro infartuato.<!--c:thrombosis-c012-->
+- Nella fibrillazione atriale il flusso ristagna e il trombo si forma di solito nell'auricola sinistra.<!--c:thrombosis-c013-->
+- Trombi murali del ventricolo sinistro si osservano anche nelle malattie primitive del miocardio.<!--c:thrombosis-c014-->
 
 ## Patogenesi
 
-**Come comincia un trombo a partire dalla parete del vaso?** La lesione endoteliale è l'evento che innesca la maggior parte delle trombosi.<!--c:thrombosis-c016--> Dopo la lesione, le piastrine diventano adesive, si attaccano alla parete e poi aggregano.<!--c:thrombosis-c017--> ADP e trombossano A2 delle piastrine attivate richiamano altre piastrine.<!--c:thrombosis-c019--> La fibrina stabilizza poi la massa piastrinica in crescita.<!--c:thrombosis-c020--> La coagulazione si conclude quando la trombina trasforma il fibrinogeno solubile in fibrina insolubile.<!--c:thrombosis-c021-->
+**In che modo la parete del vaso innesca un trombo?** La maggior parte dei trombi inizia con un danno all'endotelio.<!--c:thrombosis-c016--> La lesione rende le piastrine adesive, che poi si ammassano in un aggregato.<!--c:thrombosis-c017--> Le piastrine attivate liberano ADP e trombossano A2, che richiamano altre piastrine.<!--c:thrombosis-c019--> Una rete di fibrina tiene insieme la massa in crescita.<!--c:thrombosis-c020--> Ultima tappa della coagulazione, la trombina trasforma il fibrinogeno solubile in fibrina insolubile.<!--c:thrombosis-c021-->
 
-**Che cosa tiene sotto controllo la coagulazione?** Prostaciclina e ossido nitrico dell'endotelio sano impediscono l'aggregazione delle piastrine.<!--c:thrombosis-c023--> La trombina legata alla trombomodulina attiva la proteina C, che degrada i fattori V e VIII.<!--c:thrombosis-c025--> Se il flusso è buono, la sola perdita di endotelio provoca una pavimentazione piastrinica, non un trombo.<!--c:thrombosis-c027-->
+**Che cosa tiene sotto controllo la coagulazione?** Le cellule endoteliali frenano l'aggregazione piastrinica secernendo prostaciclina e ossido nitrico.<!--c:thrombosis-c023--> La proteina C attivata distrugge i fattori V e VIII; la trombina la attiva legandosi alla trombomodulina.<!--c:thrombosis-c025--> Dove il flusso resta buono, un endotelio denudato si limita a ricoprirsi di piastrine e non dà un trombo.<!--c:thrombosis-c027-->
 
-**Che cosa aumenta ulteriormente il rischio?** La turbolenza a livello di un aneurisma o di una biforcazione, o il flusso lento in un'arteria ristretta, favorisce la trombosi arteriosa.<!--c:thrombosis-c028--> Policitemia vera, leucemia promielocitica e alcuni tumori aumentano la coagulabilità.<!--c:thrombosis-c029--> Il fattore V di Leiden è la variante genica più comune associata alla trombosi venosa.<!--c:thrombosis-c030--> La mutazione G20210A della protrombina è un fattore di rischio frequente ma lieve.<!--c:thrombosis-c032--> I deficit di proteina C, proteina S o antitrombina sono rari ma sono fattori di rischio forti.<!--c:thrombosis-c033--> I fattori genetici spiegano il 60% del rischio di TVP.<!--c:thrombosis-c034-->
+**Che cosa aumenta ulteriormente il rischio?** Il flusso rallentato in un'arteria ristretta, o la turbolenza a una biforcazione o in un aneurisma, favorisce la trombosi arteriosa.<!--c:thrombosis-c028--> Alcuni tumori, la policitemia vera e la leucemia promielocitica rendono il sangue più incline a coagulare.<!--c:thrombosis-c029--> Tra le varianti geniche, la trombosi venosa è associata più spesso al fattore V di Leiden.<!--c:thrombosis-c030--> Come fattore di rischio è lieve, ma la mutazione G20210A della protrombina è comunque frequente.<!--c:thrombosis-c032--> La carenza di antitrombina, proteina S o proteina C è rara ma costituisce un forte fattore di rischio per la TVP.<!--c:thrombosis-c033--> L'ereditarietà spiega il 60% del rischio di TVP.<!--c:thrombosis-c034-->
 
 ## Morfologia macroscopica
 
-**Che aspetto ha un trombo a occhio nudo?** Da recente, un trombo arterioso aderente alla parete ha colore rosso intenso e consistenza molle, che si sbriciola facilmente.<!--c:thrombosis-c035--> Le linee di Zahn sono sottili strati giallastri ripetuti, fatti di piastrine e fibrina.<!--c:thrombosis-c036--> Le linee di Zahn indicano un trombo formatosi in vita.<!--c:thrombosis-c037--> Con l'organizzazione diventa consistente e bianco-grigiastro.<!--c:thrombosis-c038-->
+**Che aspetto ha un trombo a occhio nudo?** All'inizio, un trombo aderente alla parete di un'arteria è rosso scuro e si sfalda facilmente.<!--c:thrombosis-c035--> Nei suoi strati, piastrine giallastre e fibrina si alternano in sottili bande, dette linee di Zahn.<!--c:thrombosis-c036--> Un trombo formatosi in vita presenta le linee di Zahn.<!--c:thrombosis-c037--> Una volta organizzato, è consistente e bianco-grigiastro.<!--c:thrombosis-c038-->
 
-**In che cosa differisce un coagulo post mortem?** Il coagulo post mortem è gelatinoso e si forma nel sangue stagnante.<!--c:thrombosis-c039--> Per gravità, la parte ricca di globuli rossi forma uno strato rossastro gelatinoso detto "gelatina di ribes".<!--c:thrombosis-c040--> Il "grasso di pollo" è lo strato superiore: plasma coagulato senza globuli rossi, perciò giallo pallido e più compatto.<!--c:thrombosis-c041-->
+**In che cosa differisce un coagulo post mortem?** Il coagulo post mortem è gelatinoso e si forma nel sangue stagnante.<!--c:thrombosis-c039--> La gravità separa il sangue: lo strato ricco di globuli rossi è rossastro e gelatinoso, la "gelatina di ribes".<!--c:thrombosis-c040--> Sopra di esso, il plasma coagulato privo di globuli rossi forma il "grasso di pollo", più compatto e giallo pallido.<!--c:thrombosis-c041-->
 
 ## Morfologia microscopica
 
-**Di che cosa è fatto il trombo al microscopio?** Piastrine e fibrina formano una trama compatta che intrappola anche globuli rossi e leucociti.<!--c:thrombosis-c042--> Questa struttura organizzata distingue il trombo da un coagulo post mortem o in provetta.<!--c:thrombosis-c043-->
+**Di che cosa è fatto il trombo al microscopio?** Nel trombo piastrine e fibrina interagiscono strettamente.<!--c:thrombosis-c042--> Globuli rossi e leucociti vi restano intrappolati.<!--c:thrombosis-c091--> Un coagulo post mortem o in provetta ha un aspetto diverso da questa struttura organizzata.<!--c:thrombosis-c043-->
 
-**Che cosa succede durante l'organizzazione?** Fibroblasti, cellule muscolari lisce e cellule endoteliali penetrano nella fibrina e depongono matrice.<!--c:thrombosis-c044--> Segue la canalizzazione: al suo interno si aprono nuovi canali rivestiti da endotelio.<!--c:thrombosis-c046-->
+**Che cosa succede durante l'organizzazione?** Cellule muscolari lisce (nelle arterie), fibroblasti (nelle vene) ed endotelio migrano nella fibrina reticolata e producono matrice extracellulare.<!--c:thrombosis-c044--> Segue la canalizzazione: il trombo organizzato acquisisce nuovi lumi rivestiti da endotelio.<!--c:thrombosis-c046-->
 
 ## Colorazioni speciali, IIC e reperti molecolari
 
 **Che cosa osserva il patologo?**
-- **Come si studia:** in autopsia o in ambito forense, la struttura del coagulo aiuta a stabilire se si è formato in vita o dopo la morte.<!--c:thrombosis-c047-->
+- **Come si studia:** in autopsia o in ambito forense conta spesso stabilire se un coagulo si sia formato prima o dopo la morte.<!--c:thrombosis-c047-->
 
 ## Presentazione clinica
 
-**Che cosa provoca la trombosi arteriosa?** Poiché di solito ostruiscono il lume, i trombi arteriosi portano spesso all'infarto del territorio irrorato dall'arteria.<!--c:thrombosis-c048--> La trombosi su una placca coronarica causa infarto miocardico, su una placca cerebrale causa ictus.<!--c:thrombosis-c049--> La trombosi delle arterie mesenteriche, renali e degli arti inferiori causa rispettivamente infarto intestinale, infarti renali e una gamba ischemica con gangrena.<!--c:thrombosis-c050-->
+**Che cosa provoca la trombosi arteriosa?** Un risultato frequente è l'infarto del tessuto irrorato dall'arteria, perché la maggior parte dei trombi arteriosi occlude il vaso.<!--c:thrombosis-c048--> L'infarto miocardico segue alla trombosi su una placca coronarica, l'ictus a quella su una placca cerebrale.<!--c:thrombosis-c049--> Un'arteria degli arti inferiori dà una gamba ischemica con gangrena, un'arteria renale infarti del rene, un'arteria mesenterica l'infarto intestinale.<!--c:thrombosis-c050-->
 
-**Che cosa provoca la TVP?** I piccoli trombi delle vene del polpaccio di solito non danno sintomi, e anche quelli estesi ilio-femorali possono essere silenti.<!--c:thrombosis-c051--> In alcuni pazienti, spingere il piede verso l'alto rende dolente il polpaccio: è il segno di Homans.<!--c:thrombosis-c052--> Se è ostruita una vena femorale o iliaca, la gamba diventa congesta, tumefatta e cianotica.<!--c:thrombosis-c053--> I trombi della vena mesenterica superiore possono causare infarto emorragico dell'intestino, quelli delle vene cerebrali possono ridurre la perfusione cerebrale e quelli delle vene epatiche causano la sindrome di Budd-Chiari.<!--c:thrombosis-c054-->
+**Che cosa provoca la TVP?** I piccoli trombi delle vene del polpaccio di solito non danno sintomi, e talvolta nemmeno quelli estesi ilio-femorali.<!--c:thrombosis-c051--> Alcuni pazienti presentano il segno di Homans: dolorabilità del polpaccio, spesso quando il piede viene forzato verso l'alto.<!--c:thrombosis-c052--> Quando un trombo ostruisce la vena femorale o iliaca, la gamba diventa bluastra, tumefatta e congesta.<!--c:thrombosis-c053--> La trombosi della vena epatica causa la sindrome di Budd-Chiari, quella delle vene cerebrali può ridurre il flusso ematico cerebrale e quella della vena mesenterica superiore può causare infarto emorragico dell'intestino.<!--c:thrombosis-c054-->
 
-**Che cosa succede quando un trombo raggiunge i polmoni?** L'embolia polmonare acuta va dalla forma silente al collasso cardiocircolatorio improvviso e alla morte.<!--c:thrombosis-c055--> La maggior parte degli emboli polmonari proviene dalle vene profonde delle gambe.<!--c:thrombosis-c056-->
+**Che cosa succede quando un trombo raggiunge i polmoni?** L'embolia polmonare acuta va dalla forma silente al collasso cardiocircolatorio improvviso e alla morte.<!--c:thrombosis-c055--> Le vene profonde delle gambe sono la sede di origine della maggior parte degli emboli polmonari.<!--c:thrombosis-c056-->
 
 ## Diagnosi, laboratorio e imaging
 
-**Quali reperti orientano verso un trombo?** In autopsia e in ambito forense, distinguere un coagulo formatosi in vita da uno post mortem è spesso importante.<!--c:thrombosis-c059-->
+**Quali reperti orientano verso un trombo?** In autopsia e in ambito forense spesso si deve distinguere un coagulo formatosi in vita da uno formatosi dopo la morte.<!--c:thrombosis-c059-->
 
 ## Complicanze e prognosi
 
 **Che cosa può accadere a un trombo?**
 - **Lisi:** l'attività trombolitica del sangue, con la plasmina che digerisce la fibrina, può scioglierlo.<!--c:thrombosis-c060-->
 - **Propagazione:** il trombo può continuare a crescere, perché su di esso si accumula altro coagulo.<!--c:thrombosis-c061-->
-- I trombi venosi spesso crescono verso il cuore e raggiungono le vene ilio-femorali più grandi.<!--c:thrombosis-c062-->
-- **Organizzazione:** il connettivo lo invade e lo rende consistente e bianco-grigiastro.<!--c:thrombosis-c063-->
+- Le vene ilio-femorali più grandi sono spesso raggiunte dai trombi venosi, che si ingrandiscono verso il cuore.<!--c:thrombosis-c062-->
+- **Organizzazione:** il trombo diventa consistente e bianco-grigiastro man mano che il tessuto connettivo vi cresce dentro.<!--c:thrombosis-c063-->
 - **Ricanalizzazione:** il trombo organizzato viene attraversato da nuovi canali rivestiti da endotelio.<!--c:thrombosis-c064-->
-- Anche dopo la canalizzazione, di solito il trombo lascia passare solo poco sangue.<!--c:thrombosis-c065-->
+- Anche dopo la canalizzazione, di solito il trombo lascia passare solo una piccola quantità di sangue.<!--c:thrombosis-c065-->
 - **Embolizzazione:** una parte del trombo, o tutto, si stacca e si impianta in un vaso a distanza.<!--c:thrombosis-c066-->
 
-**Quali sono le complicanze principali?** L'embolia rende più pericoloso un trombo cardiaco: dei frammenti si staccano e si bloccano in vasi lontani dal cuore.<!--c:thrombosis-c067--> I grandi trombi venosi mettono in pericolo la vita perché possono raggiungere i polmoni.<!--c:thrombosis-c068--> Le valvole di una vena sede di trombosi e organizzazione restano danneggiate, e ne segue quasi sempre un'insufficienza venosa profonda duratura.<!--c:thrombosis-c070--> Nei Paesi industrializzati nessuna altra causa uccide più persone della trombosi delle arterie aterosclerotiche.<!--c:thrombosis-c072-->
+**Quali sono le complicanze principali?** La complicanza principale di un trombo nel cuore è il distacco di frammenti, che si impiantano in vasi lontani.<!--c:thrombosis-c067--> Un grosso trombo venoso può mettere in pericolo la vita, perché può essere trasportato fino ai polmoni.<!--c:thrombosis-c068--> Quando una vena va incontro a trombosi e organizzazione, la funzione valvolare è sempre compromessa, per cui l'insufficienza venosa profonda cronica è quasi inevitabile.<!--c:thrombosis-c070--> Nei Paesi industrializzati nessun'altra causa uccide più persone della trombosi delle arterie aterosclerotiche.<!--c:thrombosis-c072-->
 
 ## Diagnosi differenziale
 
 | Entità | Caratteristiche distintive | Esame chiave |
 |---|---|---|
 | Trombo | Aderente all'endotelio, con linee di Zahn.<!--c:thrombosis-c073--> | Ricerca macroscopica delle linee di Zahn |
-| Coagulo post mortem | Gelatinoso, formato nel sangue stagnante, con strati "gelatina di ribes" e "grasso di pollo".<!--c:thrombosis-c074--> | Esame macroscopico in autopsia |
+| Coagulo post mortem | Gelatinoso, formato nel sangue stagnante, con strati di "gelatina di ribes" e "grasso di pollo".<!--c:thrombosis-c074--> | Esame macroscopico in autopsia |
 | Ematoma | Sangue coagulato dopo un'emorragia all'esterno dei vasi.<!--c:thrombosis-c075--> | Sede esterna al lume vascolare |
-| Tromboembolo | Un coagulo, o un suo frammento, nato in un punto e trasportato dal sangue in una sede lontana.<!--c:thrombosis-c076--> | Individuazione dell'origine del coagulo |
+| Tromboembolo | Materiale coagulato, in tutto o in parte, formatosi in un punto e trasportato dal sangue fino a una sede lontana.<!--c:thrombosis-c076--> | Individuazione dell'origine del coagulo |
 
 ## Punti chiave
 
 - La **triade di Virchow** comprende lesione endoteliale, stasi o turbolenza e ipercoagulabilità.<!--c:thrombosis-c077-->
 - Le **linee di Zahn** sono bande alternate di piastrine e fibrina in un trombo formatosi in vita.<!--c:thrombosis-c078-->
-- Il **coagulo post mortem** è gelatinoso, con strati "gelatina di ribes" e "grasso di pollo".<!--c:thrombosis-c079-->
+- Il **coagulo post mortem** è gelatinoso, con strati di "gelatina di ribes" e "grasso di pollo".<!--c:thrombosis-c079-->
 - I trombi arteriosi si impiantano soprattutto sull'**aterosclerosi**, e la maggior parte dei trombi venosi si forma nelle **vene profonde delle gambe**.<!--c:thrombosis-c080-->
-- Il **fattore V di Leiden** è la variante genica più comune associata alla trombosi venosa.<!--c:thrombosis-c081-->
+- Il **fattore V di Leiden** è al primo posto tra le varianti geniche associate alla trombosi venosa.<!--c:thrombosis-c081-->
 - I destini sono **lisi, propagazione, organizzazione, ricanalizzazione ed embolizzazione**.<!--c:thrombosis-c083-->
 
 ## Errori comuni e trappole d'esame
