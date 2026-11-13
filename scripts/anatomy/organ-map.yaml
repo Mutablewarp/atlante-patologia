@@ -18,7 +18,7 @@ shell: { concepts: [skin] } # 1 element; also the mesh of the organ `skin`
 
 # Landmark fits for HRA objects (similarity: translation and one scale, from the bounding boxes of the landmark pair).
 fits:
-  pelvis: { hra: [pelvis-female/v1.3], bp3d: [bony pelvis] }
+  pelvis: { hra: [pelvis-female/v1.3], bp3d: [bony pelvis], anchor: front } # B-0: the front (pubic symphysis) keeps the uterus behind the bladder, the centre does not
   thorax: { hra: [sternum-female/v1.0, manubrium-female/v1.0], bp3d: [sternum] }
 
 organs:
