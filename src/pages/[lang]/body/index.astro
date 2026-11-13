@@ -1,0 +1,56 @@
+---
+/**
+ * The interactive body (docs/BODY_SPEC.md §5), tree part: systems, organs, cards and planned cards as
+ * static HTML. The stage and the viewer script come later; `<ap-body>` stays an unknown element until then.
+ */
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../../components/nav/Breadcrumb.astro';
+import BodyTree from '../../../components/body/BodyTree.astro';
+import { langPaths, type Lang } from '../../../i18n/index.ts';
+import { tAtlas } from '../../../i18n/pages.ts';
+import { tBody } from '../../../i18n/body.ts';
+import { bodyTree } from '../../../lib/anatomy.ts';
+import { loadBodyMap } from '../../../lib/body-map.ts';
+import { langPath } from '../../../lib/url.ts';
+import { siteData } from '../../../lib/content.ts';
+
+export const getStaticPaths = langPaths;
+
+const lang = Astro.params.lang as Lang;
+const t = (k: Parameters<typeof tBody>[1]) => tBody(lang, k);
+const { entities, modules, taxonomy } = await siteData(lang);
+const anatomy = (await getCollection('anatomy')).map((o) => o.data);
+const terms = (lens: 'system' | 'process') => taxonomy.get(lens)?.terms ?? [];
+
+const tree = bodyTree({ entities, anatomy, systems: terms('system'), processes: terms('process'), modules, lang });
+const map = loadBodyMap();
+const summaries = new Map(entities.map((e) => [e.id, e.summary[lang]]));
+const organLabels = new Map(anatomy.map((o) => [o.id, o.label[lang]]));
+const lenses = ['general', 'systemic'].map((id) => ({ id, label: terms('system').find((s) => s.id === id)?.label[lang] ?? id }));
+---
+
+<BaseLayout lang={lang} title={t('title')} description={t('intro')} tab="atlas">
+  <Breadcrumb lang={lang} items={[{ label: tAtlas(lang, 'title'), href: langPath(lang, 'atlas/') }, { label: t('title') }]} />
+  <header class="page-head">
+    <h1>{t('title')}</h1>
+    <p class="lede">{t('intro')}</p>
+  </header>
+
+  <ap-body>
+    <BodyTree lang={lang} tree={tree} map={map} summaries={summaries} organLabels={organLabels} />
+    <section class="body-other">
+      <h2>{t('otherTitle')}</h2>
+      <p>{t('otherBody')}</p>
+      <ul>
+        {
+          lenses.map((l) => (
+            <li>
+              <a href={langPath(lang, `atlas/system/${l.id}/`)}>{l.label}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+  </ap-body>
+</BaseLayout>

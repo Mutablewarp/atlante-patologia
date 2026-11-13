@@ -1,0 +1,96 @@
+---
+/**
+ * Tree part of the markup contract (docs/BODY_SPEC.md §5): system chips, then one section per system
+ * with its organs, their cards grouped by process, and the planned cards of the system. Static HTML,
+ * complete without JavaScript.
+ */
+import type { Lang } from '../../i18n/index.ts';
+import { fmt } from '../../i18n/index.ts';
+import { tBody } from '../../i18n/body.ts';
+import type { BodyTree } from '../../lib/anatomy.ts';
+import type { BodyMapEntry } from '../../lib/body-map.ts';
+import { langPath } from '../../lib/url.ts';
+
+interface Props {
+  lang: Lang;
+  tree: BodyTree;
+  /** organ id -> how the body shows it */
+  map: Map<string, BodyMapEntry>;
+  /** card id -> one-line definition */
+  summaries: Map<string, string>;
+  /** organ id -> label, for the organs a proxy stands for */
+  organLabels: Map<string, string>;
+}
+const { lang, tree, map, summaries, organLabels } = Astro.props;
+const t = (k: Parameters<typeof tBody>[1]) => tBody(lang, k);
+const count = (n: number) => fmt(t(n === 1 ? 'countOne' : 'countMany'), { n });
+const list = new Intl.ListFormat(lang, { style: 'long', type: 'conjunction' });
+
+/** The note shown next to an organ, by kind; `mesh` has none. */
+function note(organId: string): string {
+  const entry = map.get(organId);
+  if (!entry) return '';
+  if (entry.kind === 'hra') return t('noteHra');
+  if (entry.kind === 'schematic') return t('noteSchematic');
+  if (entry.kind === 'none') return t('noteNone');
+  if (entry.kind === 'proxy') return fmt(t('noteProxy'), { organs: list.format(entry.of.map((id) => organLabels.get(id) ?? id)) });
+  return '';
+}
+---
+
+<nav class="body-systems" aria-label={t('chips')}>
+  {
+    tree.systems.map((s) => (
+      <a href={`#sys-${s.id}`} data-system={s.id}>
+        {s.label} <span class="count">{s.count}</span>
+      </a>
+    ))
+  }
+</nav>
+
+{
+  tree.systems.map((s) => (
+    <section id={`sys-${s.id}`} data-system={s.id}>
+      <h2>
+        {s.label} <span class="count">{count(s.count)}</span>
+      </h2>
+      {s.organs.map((o) => (
+        <section id={`organ-${o.id}`} data-organ={o.id} data-kind={map.get(o.id)?.kind ?? 'none'}>
+          <h3>
+            <a href={`#organ-${o.id}`}>{o.label}</a> <span class="count">{count(o.count)}</span>
+          </h3>
+          {note(o.id) && <p class="body-note">{note(o.id)}</p>}
+          {o.count === 0 ? (
+            <p class="body-note body-empty">{t('noCard')}</p>
+          ) : (
+            o.groups.map((g) => (
+              <>
+                {g.label && <h4 class="small-heading">{g.label}</h4>}
+                <ul class="body-cards">
+                  {g.cards.map((c) => (
+                    <li>
+                      <a href={langPath(lang, `e/${c.id}/`)}>{c.name}</a>
+                      {summaries.get(c.id) && <span> {summaries.get(c.id)}</span>}
+                    </li>
+                  ))}
+                </ul>
+              </>
+            ))
+          )}
+        </section>
+      ))}
+      {s.planned.length > 0 && (
+        <section class="body-planned">
+          <h3>{t('planned')}</h3>
+          <ul>
+            {s.planned.map((p) => (
+              <li>
+                {p.name} <span class="badge badge-planned">{t('plannedBadge')}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+    </section>
+  ))
+}
