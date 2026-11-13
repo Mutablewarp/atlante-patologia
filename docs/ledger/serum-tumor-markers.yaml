@@ -1,0 +1,330 @@
+entity: serum-tumor-markers
+claims:
+- claimId: serum-tumor-markers-c001
+  section: definition
+  statement: "Body fluids or the tumor cells themselves can carry a tumor marker, which is a gene product made by the neoplasm."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "172" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c002
+  section: definition
+  statement: "Many treatments depend on the tumor's lineage, so knowing the cell of origin matters in practice."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "172" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c003
+  section: pathogenesis
+  statement: "A marker is useful only if the tumor still shows the gene activity of its tissue of origin, or makes a product typical of that kind of tumor."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "172" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c004
+  section: micro
+  statement: "Seen on H&E alone, a badly differentiated bladder cancer metastasis may not reveal itself as a carcinoma."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "172" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c005
+  section: ancillary
+  statement: "A positive cytokeratin stain proved that an undifferentiated bladder cancer metastasis was a carcinoma."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "172" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c006
+  section: ancillary
+  statement: "S-100 positivity revealed that an unpigmented colon metastasis of unknown origin was a melanoma."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "172" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c007
+  section: ancillary
+  statement: "In flow cytometry, antibodies against kappa and lambda light chains can reveal that a lymphoid population is monoclonal."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "172" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c008
+  section: ancillary
+  statement: "Tumor lineage can also be worked out with in situ hybridization, gene expression profiling and sequencing."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "172" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c009
+  section: ancillary
+  statement: "Marker studies now do most of this work, but electron microscopy can still show structures specific to an organ or cell type."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "172" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c010
+  section: clinical
+  statement: "After the primary tumor is treated, blood levels of tumor antigens let clinicians watch for progression and new metastases."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "172" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c011
+  section: clinical
+  statement: "CEA is an example of a blood marker used for gastrointestinal tumors."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "172" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c012
+  section: clinical
+  statement: "CA-125 is an example of a blood marker used for ovarian carcinoma."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "172" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c013
+  section: clinical
+  statement: "PSA is an example of a blood marker used for prostate cancer."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "172" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c014
+  section: clinical
+  statement: "Some tissue antigens steer treatment choices: Bcr-Abl in chronic myeloid leukemia, and estrogen and progesterone receptors in breast cancer."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "172" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c015
+  section: clinical
+  statement: "Antibodies can be aimed at CD20 in B-cell lymphomas and at HER2/neu in breast and other cancers."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "172" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c016
+  section: diagnosis
+  statement: "Blood markers have not worked well for screening whole populations; their value lies in monitoring a known tumor."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "172" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c017
+  section: prognosis
+  statement: "What a tumor releases into the blood can be measured repeatedly to watch the disease over time."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "172" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c018
+  section: differential
+  statement: "Serum markers are measured in blood to follow a tumor after treatment."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "172" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c019
+  section: differential
+  statement: "Tissue markers detected on tumor cells establish lineage."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "172" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c020
+  section: differential
+  statement: "Electron microscopy looks for specialized structures but has been largely replaced by marker studies."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "172" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c021
+  section: high-yield
+  statement: "A tumor marker is a neoplastic gene product found in tumor cells or body fluids."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "172" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c022
+  section: high-yield
+  statement: "CEA goes with gastrointestinal tumors, CA-125 with ovarian carcinoma and PSA with prostate cancer."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "172" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c023
+  section: high-yield
+  statement: "Blood markers help follow a treated tumor and detect metastases."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "172" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c024
+  section: high-yield
+  statement: "Blood markers have not worked well for screening whole populations."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "172" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c025
+  section: high-yield
+  statement: "Cytokeratin points to a carcinoma and S-100 to a melanocytic tumor."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "172" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c026
+  section: traps
+  statement: "As screening tools for whole populations, blood tumor markers have done poorly; their role is monitoring a known tumor."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "172" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c027
+  section: traps
+  statement: "S-100 staining can show melanocytic origin in an unpigmented tumor."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "172" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c028
+  section: mnemonics
+  statement: "The mnemonic GOP restates CEA for gut, CA-125 for ovary and PSA for prostate."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "172" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c029
+  section: clinical
+  statement: "Yolk sac tumors secrete AFP."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1004" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c030
+  section: clinical
+  statement: "Syncytiotrophoblast cells of choriocarcinoma secrete hCG."
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1067" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c031
+  section: clinical
+  statement: "A high blood level of AFP or hCG can serve as a marker of a testicular nonseminomatous germ cell tumor."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1004" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c032
+  section: clinical
+  statement: "Medullary thyroid carcinoma, a tumor of the C cells, commonly produces calcitonin."
+  sourceRef: { source: rubin-8e, chapter: "27", pages: "1220" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c033
+  section: diagnosis
+  statement: "Clinical staging of a testicular nonseminomatous germ cell tumor uses the AFP and hCG values taken in the blood before orchiectomy."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1004" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c034
+  section: diagnosis
+  statement: "In ovarian yolk sac tumor, AFP measured in blood helps make the diagnosis and shows whether treatment is working."
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1066" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c035
+  section: diagnosis
+  statement: "In ovarian choriocarcinoma, repeated hCG measurements in serum help to make the diagnosis and to follow the patient."
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1067" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c036
+  section: diagnosis
+  statement: "In MEN2A and MEN2B, which carry a risk of medullary thyroid carcinoma, regular blood tests for CEA and calcitonin are done, and for chromogranin in some cases."
+  sourceRef: { source: rubin-8e, chapter: "27", pages: "1221" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c037
+  section: prognosis
+  statement: "After treatment of a testicular nonseminomatous germ cell tumor, AFP or hCG that does not fall means tumor is still present."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1004" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c038
+  section: prognosis
+  statement: "A renewed climb in AFP and hCG, after they had returned to normal on therapy, most likely means the tumor has metastasized."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1004" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c039
+  section: ancillary
+  statement: "Under electron microscopy, medullary thyroid carcinoma cells show dense-core granules that hold endocrine markers such as calcitonin and chromogranin."
+  sourceRef: { source: rubin-8e, chapter: "27", pages: "1221" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c040
+  section: high-yield
+  statement: "AFP and hCG go with germ cell tumors such as yolk sac tumor and choriocarcinoma."
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1066, 1067" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: serum-tumor-markers-c041
+  section: high-yield
+  statement: "Calcitonin and chromogranin go with medullary thyroid carcinoma."
+  sourceRef: { source: rubin-8e, chapter: "27", pages: "1220, 1221" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
