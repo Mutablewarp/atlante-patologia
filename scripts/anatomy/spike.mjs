@@ -2,7 +2,7 @@
 import { existsSync, mkdirSync, readFileSync, statSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { Document, NodeIO } from '@gltf-transform/core';
+import { Document, Logger, NodeIO } from '@gltf-transform/core';
 import { EXTMeshoptCompression, KHRMeshQuantization } from '@gltf-transform/extensions';
 import { cloneDocument, meshopt, quantize, simplify, weld } from '@gltf-transform/functions';
 import { MeshoptDecoder, MeshoptEncoder, MeshoptSimplifier } from 'meshoptimizer';
@@ -54,7 +54,8 @@ function makeIo() {
  */
 export async function buildGlbs(name, positions, indices, target) {
   await Promise.all([MeshoptEncoder.ready, MeshoptDecoder.ready, MeshoptSimplifier.ready]);
-  const doc = new Document();
+  // gltf-transform logs every transform on stdout, which would break the JSON this script prints
+  const doc = new Document().setLogger(new Logger(Logger.Verbosity.SILENT));
   const buffer = doc.createBuffer();
   const prim = doc.createPrimitive()
     .setAttribute('POSITION', doc.createAccessor().setType('VEC3').setArray(positions).setBuffer(buffer))
@@ -68,7 +69,7 @@ export async function buildGlbs(name, positions, indices, target) {
   if (welded > target) await doc.transform(simplify({ simplifier: MeshoptSimplifier, ratio: target / welded, error: 1 }));
 
   const io = makeIo();
-  const bare = cloneDocument(doc);
+  const bare = cloneDocument(doc).setLogger(new Logger(Logger.Verbosity.SILENT));
   await bare.transform(quantize(), meshopt({ encoder: MeshoptEncoder, level: 'high' }));
   const meshoptNoNormals = (await io.writeBinary(bare)).length;
 
