@@ -82,12 +82,13 @@ describe('summary', () => {
 
 const REAL = fileURLToPath(new URL('../private/research/programme-entities.md', import.meta.url));
 describe.skipIf(!existsSync(REAL))('the real programme map (owner machine only)', () => {
-  it('has 378 unique cards in 19 batches, with the planned ★ ids', () => {
+  // 378 cards of the course programme in W01–W19, plus 89 outside it in W20–W24 (block B16, added 2026-11-13 so that every module has cards).
+  it('has 467 unique cards in 24 batches, with the planned ★ ids', () => {
     const rows = parseProgramme(readFileSync(REAL, 'utf8'));
-    expect(rows).toHaveLength(378);
-    expect(new Set(rows.map((r: { id: string }) => r.id)).size).toBe(378);
-    expect(new Set(rows.map((r: { batch: string }) => r.batch)).size).toBe(19);
-    expect(rows.filter((r: { planned: boolean }) => r.planned)).toHaveLength(31);
+    expect(rows).toHaveLength(467);
+    expect(new Set(rows.map((r: { id: string }) => r.id)).size).toBe(467);
+    expect(new Set(rows.map((r: { batch: string }) => r.batch)).size).toBe(24);
+    expect(rows.filter((r: { planned: boolean }) => r.planned)).toHaveLength(36);
     expect(problems(rows, { modules: new Set(rows.map((r: { module: string }) => r.module)) })).toEqual([]);
   });
 });

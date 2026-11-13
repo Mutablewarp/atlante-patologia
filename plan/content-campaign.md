@@ -6,10 +6,10 @@ The lead is the session that runs this file. The cards are written by lean Sonne
 ## State and scope
 
 - Live before the campaign: 30 cards (26 of module `g01`, 4 of the pilot). Batch W02 (11 cards) is finished by another session: do not touch `../atlante-patologia-wt/w02-rest`.
-- `.work/manifest.json` (private, built from the programme map) has 378 rows in batches W01–W19 for 27 modules. Seven rows are of kind `pattern` and are skipped by the tools (they come later with the pattern pages).
-- Eight modules have no row yet: `g06`, `g08`, `s10`, `s12`, `s13`, `o31`, `o33`, `o34`. Their card lists are being prepared by the orchestrator as batches W20 and later; they arrive as new rows of the manifest. Until then work on W03–W19.
-- W01 (`g10`, 13 cards of kind `technique`) waits for the technique card template from the orchestrator: skip it until this file says otherwise.
-- Order: W03, W04, W05, W06, W07, W08, W09, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, then W01 and W20+ when released.
+- `.work/manifest.json` (private, built from the programme map) has 467 rows in batches W01–W24 for all 35 modules. Seven rows are of kind `pattern` and are skipped by the tools (they come later with the pattern pages).
+- Released on 2026-11-13: batches W20 (`g06`, 22 cards), W21 (`g08`, `s10`, `s12`, `o34`, 20), W22 (`s13`, `o31`, 19), W23 (`o33`, 14) and W24 (`g09`, 14). They cover the eight modules that had no row and widen `g09`; the manifest now has 467 rows. These cards are outside the course programme: their lists come from the reference's chapter outlines, so check the first audit of each of these batches with extra care for must-cover items that the pages do not hold.
+- W01 (`g10`, 13 cards of kind `technique` and 2 concepts) is not released: the reference has no pages for most of these cards, so they must be written from open second sources, and the pipeline does not do that yet (the author and the verifier stop on an empty `source.txt`). The orchestrator owes that variant. Skip W01 until this file says otherwise.
+- Order: W03, W04, W05, W06, W07, W08, W09, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, W22, W23, W24, then W01 when released.
 
 ## Setup (once)
 
@@ -28,7 +28,7 @@ The lead is the session that runs this file. The cards are written by lean Sonne
    - `must-cover item missing`: when the missing part is "not in the packet", confirm that the card's review-queue fragment has a `not-found-in-reference` row for it and go on; otherwise run the fixer with a note that names the item (a wider packet if needed: `node scripts/agent/packet.mjs <id> --extra "<printed pages>"`).
    - a question that names a missing claim or rests on a missing fact: run the `questions` stage again.
    - `audit found an error`: run verifier then fixer again on that card, then `audit-batch.mjs --batch B --only <id> --audit 1`.
-   - Close paraphrase: more than 6 of 60 audited claims flagged means the verifier was not strict enough: run verifier and fixer once more on every card of the batch (note: "Second pass. Facts are verified. Judge close paraphrase strictly, BRIEF section 2 a, b, c; fixes not longer than the sentence they replace."), then `questions` again for cards that lost a claim, then audit again. Record both counts.
+   - Close paraphrase: read what the audit quotes before you act. A second verifier and fixer pass is not the default: in W02 it did not lower the audited count (10 of 60 before, 9 of 60 after) and it removed claims to fit the word cap, which left questions resting on removed facts. Sort the flagged sentences: copied wording or a copied list of items (BRIEF section 2 b and c) must be fixed; a fact of two or three steps in its natural order, a short definition or a standard term is allowed by BRIEF section 2 and is only counted. For the cards with sentences of the first sort run verifier and fixer once more with the note "Second pass. Facts are verified. Judge close paraphrase strictly, BRIEF section 2 a, b, c; fixes not longer than the sentence they replace; remove no claim.", then `questions` again for a card that lost a claim, then `audit-batch.mjs --only <ids> --audit <n>`. Write both counts and the sorting into the notes of the batch.
    - Stop rule: audit errors above 2 % of the audited claims after one repair round: stop the campaign and report to the owner.
 4. Scout leftovers: no image file under `src/assets/images/` without its record in `src/content/images/`, and no record without its file (list both; delete only an image file that no record and no `meta.yaml` names).
 5. Commit and close: `git merge main`; `AGENT_COAUTHOR="Co-Authored-By: Claude Sonnet 5.5 <noreply@anthropic.com>" node scripts/agent/commit-finished.mjs --batch B`; `node scripts/agent/finalize-batch.mjs --batch B`; `node scripts/agent/sync-planned.mjs --write` and `node scripts/agent/module-status.mjs --write` (after C-1 and C-2 exist); commit the shared files (`chore(B): merge fragments, planned lists, module status`).
@@ -41,7 +41,7 @@ While the gates and CI of one batch run, the next batch may be written in a seco
 
 ## Stop rules (plan §10)
 
-Pause and report when: tokens per card pass 600 k in two batches running; the audit fails as in step 3; `dist/` passes 80 % of its budget (`docs/ARCHITECTURE.md`); `main` is red; a card would need a source outside the packet rules.
+Pause and report when: the cost per card at API prices (the sum of `costUsd` in `.work/usage.jsonl` over the cards of the batch, divided by the cards) passes $6 in two batches running (the plan's limit of 600 k tokens used another count and cannot be read from the log; the pilot and W02 cost $4.93 per card with their rework); the audit fails as in step 3; `dist/` passes 80 % of its budget (`docs/ARCHITECTURE.md`); `main` is red; a card would need a source outside the packet rules.
 Cards stay `ai-generated-unreviewed`. Only a person sets `expert-reviewed`.
 
 ## Tooling tasks (coder agents: `node scripts/agent/run-task.mjs <id> --file plan/content-campaign.md`)

@@ -2,7 +2,7 @@
 /**
  * Manifest of the planned cards: one row per card of the programme map, as JSON, for the content agents' tooling.
  *
- *   node scripts/agent/manifest.mjs [--in private/research/programme-entities.md] [--out .work/manifest.json] [--expect 378]
+ *   node scripts/agent/manifest.mjs [--in private/research/programme-entities.md] [--out .work/manifest.json] [--expect 467]
  *
  * The map is private (private/ is never committed); the manifest goes to .work/ (ignored). This script only reads the
  * map's tables: `| id | IT | EN | kind | tier | Rubin pp. | P | mod | prog | batch | must cover |`.
@@ -86,7 +86,7 @@ function option(args, name, fallback) {
 function main(args) {
   const input = join(ROOT, option(args, '--in', 'private/research/programme-entities.md'));
   const output = join(ROOT, option(args, '--out', '.work/manifest.json'));
-  const expect = Number(option(args, '--expect', '378'));
+  const expect = Number(option(args, '--expect', '467'));
   if (!existsSync(input)) {
     console.error(`manifest: ${input} not found (the programme map is private and lives on the owner's machine)`);
     process.exit(2);

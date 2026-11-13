@@ -16,7 +16,7 @@
  * Needs Docker running. The first run pulls the image (about 3.5 GB on disk).
  */
 import { spawn, spawnSync } from 'node:child_process';
-import { existsSync, mkdirSync, rmSync, writeFileSync } from 'node:fs';
+import { existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from 'node:fs';
 import { createRequire } from 'node:module';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
@@ -52,6 +52,44 @@ for (const [list, allowed, name] of [
   for (const x of list) if (!allowed.includes(x)) fail(`unknown ${name} "${x}" (allowed: ${allowed.join(', ')})`);
 
 if (spawnSync('docker', ['info'], { stdio: 'ignore' }).status !== 0) fail('Docker is not running (open Docker Desktop and retry)');
+
+// One run at a time on this machine: two of these containers at once have hung the Docker VM. A second run waits for the first;
+// a lock left by a run that died (its pid is gone) is taken over.
+const LOCK = join(tmpdir(), 'atlante-e2e-linux.lock');
+const holder = () => {
+  try {
+    return Number(readFileSync(LOCK, 'utf8')) || null;
+  } catch {
+    return null;
+  }
+};
+const alive = (pid) => {
+  try {
+    process.kill(pid, 0);
+    return true;
+  } catch (e) {
+    return e.code === 'EPERM';
+  }
+};
+for (let waited = 0; ; waited += 20) {
+  try {
+    writeFileSync(LOCK, String(process.pid), { flag: 'wx' });
+    break;
+  } catch (e) {
+    if (e.code !== 'EEXIST') throw e;
+    const pid = holder();
+    if (pid && !alive(pid)) {
+      rmSync(LOCK, { force: true });
+      continue;
+    }
+    if (waited === 0) console.error(`e2e-linux: another run holds the lock (pid ${pid ?? 'starting'}); waiting for it to end`);
+    if (waited >= 5400) fail('another run held the lock for 90 minutes');
+    spawnSync('sleep', ['20']);
+  }
+}
+process.on('exit', () => {
+  if (holder() === process.pid) rmSync(LOCK, { force: true });
+});
 
 const version = createRequire(join(ROOT, 'package.json'))('@playwright/test/package.json').version;
 const image = `mcr.microsoft.com/playwright:v${version}-noble`;
