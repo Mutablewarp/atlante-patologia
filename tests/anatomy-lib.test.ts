@@ -2,7 +2,7 @@ import { existsSync, mkdtempSync, writeFileSync } from 'node:fs';
 import { tmpdir } from 'node:os';
 import { join } from 'node:path';
 import { describe, expect, it } from 'vitest';
-import { bbox, mergeMeshes, parseObj, readOrganMap, readTables, resolveElements, triangleCount } from '../scripts/anatomy/lib.mjs';
+import { bbox, computeNormals, mergeMeshes, parseObj, readOrganMap, readTables, resolveElements, triangleCount } from '../scripts/anatomy/lib.mjs';
 
 const RAW = '.work/anatomy/raw/bodyparts3d';
 
@@ -64,6 +64,26 @@ describe('mesh helpers', () => {
 
   it('computes the bounding box', () => {
     expect(bbox(b.positions)).toEqual({ min: [2, 2, 2], max: [3, 4, 2], centre: [2.5, 3, 2] });
+  });
+});
+
+describe('computeNormals', () => {
+  it('gives +Z to a counter-clockwise patch in the XY plane', () => {
+    const n = computeNormals(new Float32Array([0, 0, 0, 1, 0, 0, 1, 1, 0, 0, 1, 0]), new Uint32Array([0, 1, 2, 0, 2, 3]));
+    for (let v = 0; v < 4; v += 1) expect(Array.from(n.slice(v * 3, v * 3 + 3))).toEqual([0, 0, 1]);
+  });
+
+  it('averages two perpendicular faces on the shared edge, weighted by area', () => {
+    // face A (floor, area 1) and face B (wall, area 1) share the edge (0,0,0)-(1,0,0)
+    const p = new Float32Array([0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 1]);
+    const n = computeNormals(p, new Uint32Array([0, 1, 2, 0, 3, 1]));
+    expect(n[0]).toBeCloseTo(0, 6);
+    expect(n[1]).toBeCloseTo(Math.SQRT1_2, 6);
+    expect(n[2]).toBeCloseTo(Math.SQRT1_2, 6);
+  });
+
+  it('gives +Y to a vertex that no face touches', () => {
+    expect(Array.from(computeNormals(new Float32Array([0, 0, 0, 5, 5, 5]), new Uint32Array([])))).toEqual([0, 1, 0, 0, 1, 0]);
   });
 });
 

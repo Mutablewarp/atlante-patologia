@@ -95,6 +95,40 @@ export function triangleCount(mesh) {
   return mesh.indices.length / 3;
 }
 
+/** Smooth vertex normals of an indexed triangle mesh, each face weighted by its area; a vertex with no area gets +Y. */
+export function computeNormals(positions, indices) {
+  const normals = new Float32Array(positions.length);
+  for (let t = 0; t < indices.length; t += 3) {
+    const a = indices[t] * 3;
+    const b = indices[t + 1] * 3;
+    const c = indices[t + 2] * 3;
+    const ux = positions[b] - positions[a];
+    const uy = positions[b + 1] - positions[a + 1];
+    const uz = positions[b + 2] - positions[a + 2];
+    const vx = positions[c] - positions[a];
+    const vy = positions[c + 1] - positions[a + 1];
+    const vz = positions[c + 2] - positions[a + 2];
+    // the cross product is twice the face area long, so adding it as it is weights by area
+    const nx = uy * vz - uz * vy;
+    const ny = uz * vx - ux * vz;
+    const nz = ux * vy - uy * vx;
+    for (const i of [a, b, c]) {
+      normals[i] += nx;
+      normals[i + 1] += ny;
+      normals[i + 2] += nz;
+    }
+  }
+  for (let i = 0; i < normals.length; i += 3) {
+    const len = Math.hypot(normals[i], normals[i + 1], normals[i + 2]);
+    if (len > 0) {
+      normals[i] /= len;
+      normals[i + 1] /= len;
+      normals[i + 2] /= len;
+    } else normals[i + 1] = 1;
+  }
+  return normals;
+}
+
 /** Parse the organ map and check kinds and cross-references. */
 export function readOrganMap(path) {
   const map = parse(readFileSync(path, 'utf8'));
