@@ -1,0 +1,93 @@
+id: hallmarks-of-cancer
+module: g05
+tier: extended
+kind: concept
+names:
+  it: "Caratteristiche distintive del cancro"
+  en: "Hallmarks of cancer"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: []
+summary:
+  it: "Gli otto comportamenti che distinguono le cellule dei tumori solidi dalle cellule normali: proliferazione, resistenza ai freni e alla morte cellulare, immortalità, angiogenesi, invasione, metabolismo alterato ed elusione del sistema immunitario."
+  en: "The eight behaviors that set the cells of solid cancers apart from normal cells: proliferation, escape from growth brakes and cell death, immortality, angiogenesis, invasion, altered metabolism and immune evasion."
+lenses:
+  system: [general]
+  process: [neoplasia, cell-death]
+  pattern: []
+  presentation: []
+  marker: []
+  group: [neoplastic]
+learningObjectives:
+  - it: "Elencare gli otto comportamenti distintivi delle cellule dei tumori solidi."
+    en: "List the eight distinguishing behaviors of solid-cancer cells."
+  - it: "Spiegare perché la metastasi, più della massa primaria, rende letali i tumori solidi."
+    en: "Explain why metastasis, more than the primary mass, makes solid tumors lethal."
+  - it: "Distinguere la proliferazione tumorale dall'iperplasia, e l'immortalità cellulare dalla senescenza."
+    en: "Distinguish tumor proliferation from hyperplasia, and cellular immortality from senescence."
+prerequisites: [apoptosis]
+relations:
+  - type: differentialOf
+    target: hyperplasia
+    note:
+      it: "La proliferazione normale segue la richiesta di cellule; quella tumorale è indipendente da stimoli esterni."
+      en: "Normal proliferation follows demand for cells; tumor proliferation is independent of outside stimulation."
+  - type: sharesMechanism
+    target: apoptosis
+    note:
+      it: "Le cellule tumorali devono disattivare l'apoptosi per sopravvivere."
+      en: "Tumor cells must disable apoptosis to survive."
+quickCheck:
+  - id: hallmarks-of-cancer-q1
+    q:
+      it: "Perché un tumore solido uccide di solito il paziente?"
+      en: "Why does a solid tumor usually kill the patient?"
+    a:
+      it: "Soprattutto perché metastatizza ampiamente, non perché la massa primaria diventa grande."
+      en: "Mainly because it metastasizes widely, not because the primary mass becomes large."
+    kind: short
+  - id: hallmarks-of-cancer-q2
+    q:
+      it: "La riattivazione della telomerasi causa il cancro?"
+      en: "Does telomerase reactivation cause cancer?"
+    a:
+      it: "No: ne permette la comparsa ma non lo causa direttamente."
+      en: "No: it permits cancer to emerge but does not directly cause it."
+    kind: short
+  - id: hallmarks-of-cancer-q3
+    q:
+      it: "Perché una traslocazione che attiva Bcl-2 favorisce un linfoma?"
+      en: "Why does a translocation that activates Bcl-2 favor a lymphoma?"
+    a:
+      it: "Perché pone Bcl-2 sotto un promotore delle immunoglobuline: la proteina di sopravvivenza resta attiva e l'apoptosi è bloccata, come nel linfoma follicolare."
+      en: "Because it puts Bcl-2 under an immunoglobulin promoter, so this survival protein stays active and apoptosis is blocked, as in follicular lymphoma."
+    kind: short
+selfExplain:
+  - it: "Perché le cellule tumorali devono disattivare l'apoptosi per sopravvivere?"
+    en: "Why must tumor cells disable apoptosis to survive?"
+  - it: "Perché i farmaci che bloccano il VEGF hanno migliorato poco la sopravvivenza globale?"
+    en: "Why have drugs that block VEGF added little to overall survival?"
+examQuestions:
+  - it: "Mi parli delle caratteristiche distintive delle cellule dei tumori solidi."
+    en: "Tell me about the hallmarks of solid-cancer cells."
+    focus: [definition]
+    level: 1
+  - it: "Come distingue la proliferazione di un tumore da quella di un tessuto normale?"
+    en: "How do you tell tumor proliferation from normal proliferation?"
+    focus: [differential]
+    level: 3
+  - it: "Perché un tumore guidato da Myc deve anche disattivare l'apoptosi?"
+    en: "Why must a Myc-driven tumor also disable apoptosis?"
+    focus: [high-yield]
+    level: 2
+images: []
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "5"
+    pages: "181-183, 187-191"
+lastUpdated: 2026-11-13
+status: published

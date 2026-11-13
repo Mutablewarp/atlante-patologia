@@ -1,0 +1,186 @@
+entity: hallmarks-of-cancer
+claims:
+- claimId: hallmarks-of-cancer-c001
+  section: definition
+  statement: "Eight hallmark behaviors separate the cells of solid cancers from their normal counterparts."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "182" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hallmarks-of-cancer-c002
+  section: definition
+  statement: "Blood cancers differ from solid ones in how they arise and spread, so only some of the hallmarks apply to them."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "182" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hallmarks-of-cancer-c003
+  section: definition
+  statement: "Cancer cells carry out mitosis independently of the normal regulated signals that guide and check cell division."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "182" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hallmarks-of-cancer-c004
+  section: definition
+  statement: "Normal growth is restrained by cell-cell contact and inhibitory cytokines, and cancer cells are generally insensitive to these restraints."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "182" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hallmarks-of-cancer-c005
+  section: definition
+  statement: "Poor anchorage or genomic instability can set off programmed cell death in normal cells, and tumor cells frequently escape it."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "182" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hallmarks-of-cancer-c006
+  section: definition
+  statement: "Cancer cells avoid senescence and so can multiply without limit, unlike normal cells."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "182" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hallmarks-of-cancer-c007
+  section: definition
+  statement: "Tumors tend to reactivate telomerase, which maintains telomere length and shields the cell from chromosomal instability."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "188" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hallmarks-of-cancer-c008
+  section: definition
+  statement: "New blood vessel formation (angiogenesis) is stimulated by molecules that both tumor cells and neighboring cells secrete."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "182" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hallmarks-of-cancer-c009
+  section: definition
+  statement: "Sprouting angiogenesis driven by tumor-produced VEGF gives capillaries that are leaky and poorly formed rather than mature."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "190-191" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hallmarks-of-cancer-c010
+  section: definition
+  statement: "A tumor cell that loses anchorage to adjacent cells and basement membrane can enter the circulation and, after leaving it at a distant site, found a colony."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "182" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hallmarks-of-cancer-c011
+  section: definition
+  statement: "Cancer cells take up more glucose because they usually make their ATP by glycolysis instead of oxidative phosphorylation."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "182" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hallmarks-of-cancer-c012
+  section: definition
+  statement: "Some tumors suppress the host's immune response, which could otherwise restrain them."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "182" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hallmarks-of-cancer-c013
+  section: differential
+  statement: "Tumor cells multiply without waiting for an outside growth signal, while normal cells divide only when the body needs more of them."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "183" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hallmarks-of-cancer-c014
+  section: differential
+  statement: "Apoptosis normally removes defective cells, so a tumor can form only once its cells have found a way to disable it."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "189" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hallmarks-of-cancer-c015
+  section: differential
+  statement: "Malignant cells must neutralize senescence, the state of metabolically active cells that no longer divide."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "187" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hallmarks-of-cancer-c016
+  section: high-yield
+  statement: "Inflammation, genomic instability and inactivation of tumor suppressors are processes that support tumor growth and spread."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "182" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hallmarks-of-cancer-c017
+  section: high-yield
+  statement: "The hallmarks are connected yet stay separate concepts, and no two tumors evolve in the same way."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "182" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hallmarks-of-cancer-c018
+  section: high-yield
+  statement: "Driver mutations are the ones that matter for tumor development, while passenger mutations are bystanders whose role is mostly unknown."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "181" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hallmarks-of-cancer-c019
+  section: high-yield
+  statement: "In follicular lymphoma, a translocation puts Bcl-2 under an immunoglobulin promoter, which keeps this survival protein active and blocks apoptosis."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "190" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hallmarks-of-cancer-c020
+  section: high-yield
+  statement: "A Myc-driven tumor must also inactivate cell death pathways, because Myc overproduction induces apoptosis when those pathways are intact."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "190" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hallmarks-of-cancer-c021
+  section: traps
+  statement: "Solid tumors usually kill through widespread metastasis rather than by growing large."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "182" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hallmarks-of-cancer-c022
+  section: traps
+  statement: "Telomerase activation makes cancer possible without being its direct cause."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "188" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hallmarks-of-cancer-c023
+  section: traps
+  statement: "Many patients gained time before progression on antiangiogenic drugs, but overall survival barely improved except in a few cases."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "190" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
