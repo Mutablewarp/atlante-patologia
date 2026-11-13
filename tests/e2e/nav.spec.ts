@@ -465,3 +465,18 @@ test('the sidebar chapter index opens on the current card and fades where it hid
   await page.locator('[data-sidebar-toggle]').click();
   await expect.poll(shown).toBe(true);
 });
+
+test('the home totals of cards equal the sums of the page\'s own module list', async ({ page }) => {
+  for (const lang of ['it', 'en']) {
+    await page.goto(`${lang}/`);
+    const pairs = await page.locator('[data-module-cards]').evaluateAll((els) =>
+      els.map((e) => (e.getAttribute('data-module-cards') ?? '0/0').split('/').map(Number)),
+    );
+    const sum = pairs.reduce((a, [c, t]) => [a[0] + c, a[1] + t], [0, 0]);
+    expect(await page.locator('[data-cards-total]').getAttribute('data-cards-total')).toBe(sum.join('/'));
+    const parts = await page.locator('[data-section-cards]').evaluateAll((els) =>
+      els.map((e) => (e.getAttribute('data-section-cards') ?? '0/0').split('/').map(Number)),
+    );
+    expect(parts.reduce((a, [c, t]) => [a[0] + c, a[1] + t], [0, 0])).toEqual(sum);
+  }
+});
