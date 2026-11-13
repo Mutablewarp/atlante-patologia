@@ -1,0 +1,118 @@
+id: hyaline-change
+module: g01
+tier: extended
+kind: process
+names:
+  it: "Ialinosi (degenerazione ialina) e alterazioni mixoidi"
+  en: "Hyaline and myxoid change"
+  eponyms: ["Crooke hyaline change"]
+  synonyms:
+    it: ["Degenerazione ialina", "Ialinosi"]
+    en: ["Hyalinization", "Hyaline degeneration"]
+  abbreviations: []
+summary:
+  it: "Aspetto vitreo, omogeneo e rosa di materiale proteico in vasi, glomeruli, isole pancreatiche e cellule ipofisarie, descrittivo e non diagnostico in sé."
+  en: "A glassy, homogeneous pink look of protein-rich material in vessels, glomeruli, pancreatic islets and pituitary cells, descriptive rather than diagnostic by itself."
+lenses:
+  system: [general, vessels, kidney]
+  process: [extracellular-accumulation, intracellular-accumulation]
+  pattern: [hyaline-change, intracellular-inclusions]
+  presentation: []
+  marker: [pas, special-stains]
+  group: [degenerative, vascular]
+learningObjectives:
+  - it: "Riconoscere l'ialinosi arteriolare nell'ipertensione e nel diabete."
+    en: "Recognize hyaline arteriolosclerosis in hypertension and diabetes."
+  - it: "Descrivere le gocce capsulari e i cappucci ialini del glomerulo diabetico."
+    en: "Describe capsular drops and hyaline caps of the diabetic glomerulus."
+  - it: "Spiegare l'ialinosi di Crooke come accumulo di filamenti di cheratina."
+    en: "Explain Crooke hyalinization as an accumulation of keratin filaments."
+  - it: "Distinguere il materiale ialino dall'amiloide e dall'arteriosclerosi delle piccole arterie muscolari."
+    en: "Distinguish hyaline material from amyloid and from arteriosclerosis of small muscular arteries."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: amyloidosis
+    note:
+      it: "Nell'isola diabetica il materiale ialinizzato è amiloide di amilina."
+      en: "In the diabetic islet the hyalinized material is amylin amyloid."
+quickCheck:
+  - id: hyaline-change-q1
+    q:
+      it: "Come appare al microscopio ottico la parete di un'arteriola con ialinosi?"
+      en: "How does the wall of an arteriole with hyaline arteriolosclerosis look under the light microscope?"
+    a:
+      it: "Ha un aspetto vitreo."
+      en: "It has a glassy appearance."
+    kind: short
+  - id: hyaline-change-q2
+    q:
+      it: "Che cosa sono le gocce capsulari e i cappucci ialini?"
+      en: "What are capsular drops and hyaline caps?"
+    a:
+      it: "Lesioni del glomerulo diabetico: le gocce capsulari sono depositi rotondi di proteine contro il rivestimento parietale della capsula di Bowman; i cappucci sono accumuli subendoteliali lungo le anse capillari."
+      en: "Lesions of the diabetic glomerulus: capsular drops are round protein deposits lying against the parietal lining of Bowman capsule; caps are subendothelial accumulations along capillary loops."
+    kind: short
+  - id: hyaline-change-q3
+    q:
+      it: "Da che cosa è formata l'ialinosi di Crooke?"
+      en: "What is Crooke hyalinization made of?"
+    a:
+      it: "Da fasci di filamenti di cheratina attorno al nucleo delle cellule degli adenomi corticotropi."
+      en: "Bundles of keratin filaments around the nucleus of corticotroph adenoma cells."
+    kind: short
+  - id: hyaline-change-q4
+    q:
+      it: "Che cosa è il materiale ialinizzato in un'isola pancreatica nel diabete di tipo 2?"
+      en: "What is the hyalinized material in a pancreatic islet in type 2 diabetes?"
+    a:
+      it: "È amiloide formata da amilina, che le cellule β secernono insieme all'insulina."
+      en: "It is amyloid made of amylin, which the β-cells secrete together with insulin."
+    kind: short
+selfExplain:
+  - it: "Perché l'ialinosi arteriolare compare sia nell'ipertensione sia nel diabete?"
+    en: "Why does hyaline arteriolosclerosis occur in both hypertension and diabetes?"
+  - it: "Perché nel rene diabetico i vasi ristretti rendono più probabili la necrosi papillare e la pielonefrite?"
+    en: "Why do narrowed vessels in the diabetic kidney make papillary necrosis and pyelonephritis more likely?"
+examQuestions:
+  - it: "Mi parli dell'ialinosi: in quali sedi si descrive materiale ialino?"
+    en: "Tell me about hyaline change: in which sites is hyaline material described?"
+    focus: [definition, micro]
+    level: 1
+  - it: "Che cosa vede al microscopio in un'arteriola renale con ialinosi da nefrosclerosi ipertensiva?"
+    en: "What do you see under the microscope in a kidney arteriole with hyaline change from hypertensive nephrosclerosis?"
+    focus: [micro, pathogenesis]
+    level: 1
+  - it: "Mi parli dell'ialinosi di Crooke: dove si osserva e da che cosa è prodotta?"
+    en: "Tell me about Crooke hyalinization: where is it seen and what produces it?"
+    focus: [etiology, pathogenesis, micro]
+    level: 2
+  - it: "Che cosa vede al microscopio nel glomerulo diabetico che ricorda l'ialinosi, e che cosa mostrerebbero l'immunofluorescenza e la microscopia elettronica?"
+    en: "What do you see in the diabetic glomerulus that recalls hyaline change, and what would immunofluorescence and electron microscopy show?"
+    focus: [micro, ancillary]
+    level: 2
+  - it: "Come distingue l'ialinosi arteriolare dall'arteriosclerosi delle piccole arterie muscolari, e che cosa è il materiale ialinizzato di un'isola diabetica?"
+    en: "How do you tell hyaline arteriolosclerosis from arteriosclerosis of small muscular arteries, and what is the hyalinized material of a diabetic islet?"
+    focus: [differential, micro]
+    level: 3
+images:
+  - { id: hyaline-change-micro-1, role: micro }
+  - { id: hyaline-change-micro-2, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "13"
+    pages: "546"
+  - source: rubin-8e
+    chapter: "16"
+    pages: "613-615"
+  - source: rubin-8e
+    chapter: "22"
+    pages: "934, 950"
+  - source: rubin-8e
+    chapter: "27"
+    pages: "1204"
+  - source: kurtovic-2025-mallory-bodies
+lastUpdated: 2026-11-13
+status: published

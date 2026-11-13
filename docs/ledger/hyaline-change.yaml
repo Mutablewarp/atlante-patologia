@@ -1,0 +1,283 @@
+entity: hyaline-change
+claims:
+- claimId: hyaline-change-c001
+  section: definition
+  statement: "In hyaline arteriolosclerosis the arteriole wall has a glassy look under the light microscope"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "614" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c002
+  section: definition
+  statement: "The term hyaline is used for deposits in arterioles, glomeruli, pancreatic islets and pituitary corticotroph tumor cells"
+  sourceRef: { source: rubin-8e, chapter: "13, 16, 22, 27", pages: "546, 614, 934, 1204" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c003
+  section: etiology
+  statement: "Hyaline arteriolosclerosis is a vascular change of chronic hypertension"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "613-614" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c004
+  section: etiology
+  statement: "Hyaline arteriolosclerosis may also occur in diabetes"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "614" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c005
+  section: etiology
+  statement: "Crooke hyalinization is a sign that a high blood cortisol level has switched off ACTH release"
+  sourceRef: { source: rubin-8e, chapter: "27", pages: "1204" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c006
+  section: pathogenesis
+  statement: "The thick wall of a hyaline arteriole holds basement membrane substance plus plasma proteins that have piled up"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "614" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c007
+  section: pathogenesis
+  statement: "In diabetes, hardening of the afferent and efferent arterioles together with leakage of plasma proteins into their walls produces hyaline arteriolosclerosis"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "934" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c008
+  section: pathogenesis
+  statement: "Crooke hyalinization is produced by fine keratin filaments packed in bundles around the nucleus, so numerous that a light microscope can resolve them"
+  sourceRef: { source: rubin-8e, chapter: "27", pages: "1204" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c009
+  section: pathogenesis
+  statement: "In type 2 diabetes, islet amyloid consists of amylin, a polypeptide that beta cells release together with insulin"
+  sourceRef: { source: rubin-8e, chapter: "13", pages: "546" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c010
+  section: gross
+  statement: "A kidney with hypertensive nephrosclerosis is smaller than normal and its surface looks fine-grained"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "950" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c011
+  section: micro
+  statement: "In nephrosclerosis the smooth muscle cells of kidney arterioles are often lost or displaced outward, and hyaline thickens the wall around its whole circumference"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "950" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c012
+  section: micro
+  statement: "In diabetic glomerulosclerosis, capsular drops are round deposits of leaked protein lying against the parietal lining of Bowman capsule"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "934" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c013
+  section: micro
+  statement: "Hyaline caps are subendothelial protein accumulations along glomerular capillary loops"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "934" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c014
+  section: micro
+  statement: "In type 2 diabetes an islet can show amyloid deposition, described as hyalinization"
+  sourceRef: { source: rubin-8e, chapter: "13", pages: "546" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c015
+  section: micro
+  statement: "Crooke hyaline change can be seen by light microscopy in corticotroph adenomas"
+  sourceRef: { source: rubin-8e, chapter: "27", pages: "1204" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c016
+  section: ancillary
+  statement: "On PAS stain the arterioles of hypertensive nephrosclerosis show hyaline sclerosis"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "950" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c017
+  section: ancillary
+  statement: "Under the electron microscope, the hyaline protein deposits of diabetic glomeruli are dense clumps that contain lipid debris"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "934" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c018
+  section: ancillary
+  statement: "Immunofluorescence of diabetic glomeruli shows a diffuse linear pattern from trapped plasma proteins such as IgG and albumin"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "934" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c019
+  section: ancillary
+  statement: "In Crooke adenomas the ACTH and keratin stains usually mark the periphery of the cell"
+  sourceRef: { source: rubin-8e, chapter: "27", pages: "1204" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c020
+  section: clinical
+  statement: "In chronic hypertension the vessel lesions are mainly in small arteries and arterioles, above all those of the kidney"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "615" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c021
+  section: clinical
+  statement: "Most people with hypertensive nephrosclerosis keep their kidney function"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "950" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c022
+  section: prognosis
+  statement: "A minority of people with hypertension have kidney failure that keeps worsening and can end in ESRD"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "950" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c023
+  section: prognosis
+  statement: "In diabetic kidneys, narrowed vessels cut the blood supply to the medulla, which makes papillary necrosis and pyelonephritis more likely"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "934" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c024
+  section: differential
+  statement: "The hyalinized material in a diabetic islet is amyloid composed of amylin"
+  sourceRef: { source: rubin-8e, chapter: "13", pages: "546" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c025
+  section: differential
+  statement: "In small muscular arteries of chronic hypertension the internal elastic lamina is doubled and the intima thickens with fibrous and muscular tissue and extra elastin"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "615" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c026
+  section: differential
+  statement: "Arteriosclerosis is not diagnostic of hypertension because similar changes are associated with aging"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "615" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c027
+  section: high-yield
+  statement: "Hyaline arteriolosclerosis occurs in hypertension and may be present in diabetes"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "614" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c028
+  section: high-yield
+  statement: "Capsular drops and hyaline caps are lesions of diabetic glomerulosclerosis"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "934" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c029
+  section: high-yield
+  statement: "Crooke hyalinization is a change of the cells of corticotroph adenomas due to keratin filaments"
+  sourceRef: { source: rubin-8e, chapter: "27", pages: "1204" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c030
+  section: high-yield
+  statement: "Islet amyloid composed of amylin is the hyalinized material in type 2 diabetes"
+  sourceRef: { source: rubin-8e, chapter: "13", pages: "546" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c031
+  section: traps
+  statement: "Hyaline arteriolosclerosis is not specific for hypertension; it may be present in diabetes"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "614" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c032
+  section: traps
+  statement: "Crooke hyalinization reflects perinuclear keratin filaments in the tumor cells"
+  sourceRef: { source: rubin-8e, chapter: "27", pages: "1204" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c033
+  section: traps
+  statement: "In a diabetic islet the hyalinized material is amyloid"
+  sourceRef: { source: rubin-8e, chapter: "13", pages: "546" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c034
+  section: mnemonics
+  statement: "Hyaline material is described in arterioles, glomeruli, islets and pituitary cells"
+  sourceRef: { source: rubin-8e, chapter: "13, 16, 22, 27", pages: "546, 614, 934, 1204" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: hyaline-change-c035
+  section: micro
+  statement: "Mallory-Denk bodies are hyaline cytoplasmic inclusions of hepatocytes, made mainly of keratin aggregates"
+  sourceRef: { source: kurtovic-2025-mallory-bodies, chapter: "abstract" }
+  status: not-found-in-reference
+  secondSource: { source: kurtovic-2025-mallory-bodies, locator: "abstract" }
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
