@@ -1,6 +1,7 @@
 # Organ nodes of the interactive body (docs/CONTENT_SCHEMA.md §6a). One node = one place a lesion can sit.
 # `system`: an anatomical term of taxonomy/system.yaml (never general or systemic). `order`: that term's order plus the position inside it.
 # `meshes`: filled later by the 3D asset pipeline (plan/v3-plan.md §8.3); empty until then.
+# The peritoneum sits under the system "female-genital" because the taxonomy term is "Female genital system and peritoneum"; do not move it.
 # An alias that names a part (Pericardium, Cerebellum, Brainstem) stands for the node that holds it, until a card needs that part as a node of its own.
 - { id: aorta, system: vessels, order: 31, label: { it: "Aorta", en: "Aorta" } }
 - { id: carotid-arteries, system: vessels, order: 32, label: { it: "Arterie carotidi", en: "Carotid arteries" } }

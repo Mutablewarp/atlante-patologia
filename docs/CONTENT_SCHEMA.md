@@ -115,7 +115,7 @@ A section that does not apply, such as gross morphology for a molecular process,
 | `prognosis` | Limits and cost of errors | Limiti e costo degli errori |
 | `differential` | Compared with other techniques | Confronto con altre tecniche |
 
-Compare shows one row per quick section for several cards at once, so its rows keep the canonical titles.
+Compare shows one row per quick section for several cards at once, so its rows keep the canonical titles. `quick.json` keeps them for the same reason: its rows span several cards, which may be of different kinds (`sectionTitle` in `src/i18n/sections.ts` says the same).
 
 Authoring conventions inside the markdown:
 
