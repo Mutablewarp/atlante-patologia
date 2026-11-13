@@ -1,0 +1,140 @@
+id: thrombosis
+module: g07
+tier: core
+kind: process
+names:
+  it: "Trombosi"
+  en: "Thrombosis"
+  eponyms: []
+  synonyms:
+    it: ["Trombo"]
+    en: ["Thrombus formation"]
+  abbreviations: ["DVT"]
+summary:
+  it: "Formazione, dentro un vaso o una cavità cardiaca, di una massa di sangue coagulato aderente all'endotelio, favorita da lesione endoteliale, stasi o turbolenza e stato di ipercoagulabilità."
+  en: "Formation, inside a vessel or heart chamber, of a mass of clotted blood attached to the endothelium, favored by endothelial injury, stasis or turbulence, and a hypercoagulable state."
+lenses:
+  system: [vessels, heart]
+  process: [thrombosis-embolism]
+  pattern: []
+  presentation: [ischemic-event, dyspnea, edema]
+  marker: []
+  group: [vascular]
+learningObjectives:
+  - it: "Enunciare la triade di Virchow e applicarla a un trombo arterioso, cardiaco e venoso."
+    en: "State the Virchow triad and apply it to an arterial, cardiac and venous thrombus."
+  - it: "Distinguere un trombo da un coagulo post mortem e da un ematoma, riconoscendo le linee di Zahn."
+    en: "Tell a thrombus from a postmortem clot and from a hematoma, recognizing the lines of Zahn."
+  - it: "Descrivere come la lesione endoteliale porta ad adesione piastrinica, formazione di fibrina e crescita del trombo."
+    en: "Describe how endothelial injury leads to platelet adhesion, fibrin formation and thrombus growth."
+  - it: "Elencare i destini di un trombo: propagazione, embolia, lisi, organizzazione e ricanalizzazione."
+    en: "List the fates of a thrombus: propagation, embolism, lysis, organization and recanalization."
+  - it: "Riconoscere gli stati di ipercoagulabilità, ereditari e acquisiti, che favoriscono la trombosi venosa."
+    en: "Recognize the inherited and acquired hypercoagulable states that favor venous thrombosis."
+prerequisites: []
+relations:
+  - type: complicationOf
+    target: atherosclerosis
+    note:
+      it: "La trombosi arteriosa si sviluppa soprattutto su arterie colpite da aterosclerosi."
+      en: "Arterial thrombosis develops mostly in arteries affected by atherosclerosis."
+  - type: causes
+    target: infarction
+    note:
+      it: "Un trombo arterioso occlusivo provoca l'infarto del tessuto irrorato."
+      en: "An occlusive arterial thrombus causes infarction of the tissue it supplies."
+quickCheck:
+  - id: thrombosis-q1
+    q:
+      it: "Quali sono i tre fattori della triade di Virchow?"
+      en: "What are the three factors of the Virchow triad?"
+    a:
+      it: "Lesione endoteliale, stasi o flusso anomalo e stato di ipercoagulabilità."
+      en: "Endothelial injury, stasis or abnormal flow, and a hypercoagulable state."
+    kind: short
+  - id: thrombosis-q2
+    q:
+      it: "Come distingui un trombo da un coagulo post mortem?"
+      en: "How do you tell a thrombus from a postmortem clot?"
+    a:
+      it: "Il trombo è aderente all'endotelio e ha le linee di Zahn; il coagulo post mortem è gelatinoso, con una parte rossa \"gelatina di ribes\" e una gialla \"grasso di pollo\"."
+      en: "A thrombus is attached to the endothelium and shows lines of Zahn; a postmortem clot is gelatinous, with a red \"currant jelly\" part and a yellow \"chicken fat\" part."
+    kind: short
+  - id: thrombosis-q3
+    q:
+      it: "Quali sono i destini di un trombo?"
+      en: "What are the possible fates of a thrombus?"
+    a:
+      it: "Lisi, propagazione, organizzazione, ricanalizzazione ed embolizzazione."
+      en: "Lysis, propagation, organization, recanalization and embolization."
+    kind: short
+  - id: thrombosis-q4
+    q:
+      it: "Che cosa sono le linee di Zahn?"
+      en: "What are the lines of Zahn?"
+    a:
+      it: "Sono bande alternate di piastrine e fibrina in un trombo formatosi in vita."
+      en: "They are alternating bands of platelets and fibrin in a thrombus formed during life."
+    kind: short
+  - id: thrombosis-q5
+    q:
+      it: "Da dove provengono la maggior parte degli emboli polmonari?"
+      en: "Where do most pulmonary emboli come from?"
+    a:
+      it: "Dalle vene profonde delle gambe."
+      en: "From the deep veins of the legs."
+    kind: short
+selfExplain:
+  - it: "Perché la perdita di endotelio in un vaso con buon flusso non basta a causare trombosi?"
+    en: "Why is loss of endothelium in a vessel with good flow not enough to cause thrombosis?"
+  - it: "Perché un trombo venoso profondo può causare un'embolia polmonare?"
+    en: "Why can a deep vein thrombus cause a pulmonary embolism?"
+chain:
+  - pathology:
+      it: "Trombosi venosa profonda con occlusione delle vene femorale o iliaca"
+      en: "Deep vein thrombosis with occlusion of the femoral or iliac veins"
+    sign:
+      it: "Congestione, edema e cianosi della gamba"
+      en: "Congestion, edema and cyanosis of the leg"
+    lab:
+      it: "Nessun esame di laboratorio indicato nella fonte"
+      en: "No laboratory test given in the source"
+examQuestions:
+  - it: "Mi parli della trombosi: che cos'è e quali sono i tre fattori della triade di Virchow?"
+    en: "Tell me about thrombosis: what is it, and what are the three factors of the Virchow triad?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Come distingue un trombo da un coagulo post mortem?"
+    en: "How do you tell a thrombus from a postmortem clot?"
+    focus: [gross, differential]
+    level: 3
+  - it: "Che cosa vede in un trombo, e che cosa sono le linee di Zahn?"
+    en: "What do you see in a thrombus, and what are the lines of Zahn?"
+    focus: [gross, micro]
+    level: 1
+  - it: "Quali sono i possibili destini di un trombo?"
+    en: "What are the possible fates of a thrombus?"
+    focus: [prognosis]
+    level: 1
+  - it: "Perché un trombo venoso profondo della gamba può essere pericoloso per la vita?"
+    en: "Why can a deep vein thrombus in the leg be life-threatening?"
+    focus: [clinical, prognosis]
+    level: 2
+  - it: "Quali condizioni di ipercoagulabilità favoriscono la trombosi venosa?"
+    en: "Which hypercoagulable states favor venous thrombosis?"
+    focus: [etiology, pathogenesis]
+    level: 2
+images:
+  - id: thrombosis-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "7"
+    pages: "329-332"
+  - source: rubin-8e
+    chapter: "16"
+    pages: "596-599"
+lastUpdated: 2026-11-13
+status: published
