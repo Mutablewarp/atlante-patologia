@@ -10,6 +10,7 @@
 import { readdirSync, readFileSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { gzipSync } from 'node:zlib';
 
 const KINDS = [
   ['entity', /^(it|en)\/e\/[^/]+\/index\.html$/],
@@ -49,12 +50,14 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     .filter((f) => f.endsWith('.html'))
     .map((f) => ({ f: f.split('\\').join('/'), html: readFileSync(join(dist, f), 'utf8') }));
   const kindOf = (f) => KINDS.find(([, re]) => re.test(f))?.[0] ?? 'other';
-  console.log('kind       pages     min kB  median kB     max kB   total MB');
+  console.log('kind       pages     min kB  median kB     max kB   total MB  gzip median kB');
   for (const kind of [...KINDS.map(([k]) => k), 'other']) {
-    const sizes = pages.filter((p) => kindOf(p.f) === kind).map((p) => bytes(p.html)).sort((a, b) => a - b);
+    const kindPages = pages.filter((p) => kindOf(p.f) === kind);
+    const sizes = kindPages.map((p) => bytes(p.html)).sort((a, b) => a - b);
     if (!sizes.length) continue;
+    const gz = kindPages.map((p) => gzipSync(p.html).length).sort((a, b) => a - b);
     const total = sizes.reduce((a, b) => a + b, 0) / 1e6;
-    console.log(`${kind.padEnd(10)} ${String(sizes.length).padStart(5)} ${[sizes[0], sizes[sizes.length >> 1], sizes.at(-1)].map((n) => kB(n).padStart(10)).join(' ')} ${total.toFixed(2).padStart(10)}`);
+    console.log(`${kind.padEnd(10)} ${String(sizes.length).padStart(5)} ${[sizes[0], sizes[sizes.length >> 1], sizes.at(-1)].map((n) => kB(n).padStart(10)).join(' ')} ${total.toFixed(2).padStart(10)} ${kB(gz[gz.length >> 1]).padStart(15)}`);
   }
   const heaviest = pages.filter((p) => kindOf(p.f) === 'entity').sort((a, b) => bytes(b.html) - bytes(a.html)).slice(0, 3);
   for (const p of heaviest) {

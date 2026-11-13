@@ -263,7 +263,7 @@ const sideTree = document.querySelector<HTMLElement>('.primary-nav .module-tree'
 if (chapter && chapterBtn && sideTree) {
   // The page carries the index once (D069): the sidebar's copy moves into the dialog while it is open, and back after.
   const [home, after] = [sideTree.parentElement!, sideTree.nextSibling];
-  const putBack = () => home.insertBefore(sideTree, after);
+  const putBack = () => (after?.parentNode === home ? home.insertBefore(sideTree, after) : home.append(sideTree));
   chapterBtn.addEventListener('click', () => {
     chapter.append(sideTree);
     chapter.showModal();

@@ -2,7 +2,8 @@ import { describe, expect, it } from 'vitest';
 import { lensMarkup, type LensData } from '../src/lib/lens-context.ts';
 import { dropClaimMarkers } from '../src/lib/crosslinks.ts';
 
-// The markup is what the entity page used to render as <template>s (Breadcrumb, CardPager and the links at the end of the card).
+// The expected strings are hand-written: these tests pin the markup, they do not prove it equals Breadcrumb.astro or
+// CardPager.astro (only tests/e2e/nav.spec.ts compares the two).
 const data: LensData = {
   base: '/atlante-patologia/it/',
   name: 'Necrosi coagulativa',

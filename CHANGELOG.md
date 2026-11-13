@@ -14,7 +14,7 @@ All notable changes to this project are listed here. The format follows [Keep a 
 
 ### Changed
 - CI runner pinned to `ubuntu-24.04`; deploy waits for e2e and Lighthouse.
-- Card pages are about 17 % lighter (median 115 → 95 kB of HTML): the lens contexts are JSON read in the browser instead of 30 `<template>`s, the claim markers and the second copy of the chapter index are gone from the built HTML. `node scripts/html-weight.mjs` shows what a page is made of; `tests/dist/html-weight.test.ts` holds the budgets.
+- Card pages are about 17 % lighter (median 115 → 95 kB of HTML): the lens contexts are JSON read in the browser instead of 30 `<template>`s, the claim markers and the second copy of the chapter index are gone from the built HTML. `node scripts/html-weight.mjs` shows what a page is made of; `tests/dist/html-weight.test.ts` holds the budgets. The figures are raw HTML (the size in the offline cache), not the transfer size; the report also prints a gzip median.
 - The language switch keeps the current `?query` and `#hash`.
 - Smoother Italian in several interface strings.
 
