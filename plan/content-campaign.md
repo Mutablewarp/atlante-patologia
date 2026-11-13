@@ -6,10 +6,10 @@ The lead is the session that runs this file. The cards are written by lean Sonne
 ## State and scope
 
 - Live before the campaign: 30 cards (26 of module `g01`, 4 of the pilot). Batch W02 (11 cards) is finished by another session: do not touch `../atlante-patologia-wt/w02-rest`.
-- `.work/manifest.json` (private, built from the programme map) has 378 rows in batches W01–W19 for 27 modules. Seven rows are of kind `pattern` and are skipped by the tools (they come later with the pattern pages).
-- Eight modules have no row yet: `g06`, `g08`, `s10`, `s12`, `s13`, `o31`, `o33`, `o34`. Their card lists are being prepared by the orchestrator as batches W20 and later; they arrive as new rows of the manifest. Until then work on W03–W19.
-- W01 (`g10`, 13 cards of kind `technique`) waits for the technique card template from the orchestrator: skip it until this file says otherwise.
-- Order: W03, W04, W05, W06, W07, W08, W09, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, then W01 and W20+ when released.
+- `.work/manifest.json` (private, built from the programme map) has 467 rows in batches W01–W24 for all 35 modules. Seven rows are of kind `pattern` and are skipped by the tools (they come later with the pattern pages).
+- Released on 2026-11-13: batches W20 (`g06`, 22 cards), W21 (`g08`, `s10`, `s12`, `o34`, 20), W22 (`s13`, `o31`, 19), W23 (`o33`, 14) and W24 (`g09`, 14). They cover the eight modules that had no row and widen `g09`; the manifest now has 467 rows. These cards are outside the course programme: their lists come from the reference's chapter outlines, so check the first audit of each of these batches with extra care for must-cover items that the pages do not hold.
+- W01 (`g10`, 13 cards of kind `technique` and 2 concepts) is not released: the reference has no pages for most of these cards, so they must be written from open second sources, and the pipeline does not do that yet (the author and the verifier stop on an empty `source.txt`). The orchestrator owes that variant. Skip W01 until this file says otherwise.
+- Order: W03, W04, W05, W06, W07, W08, W09, W10, W11, W12, W13, W14, W15, W16, W17, W18, W19, W20, W21, W22, W23, W24, then W01 when released.
 
 ## Setup (once)
 

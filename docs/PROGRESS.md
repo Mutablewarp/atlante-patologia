@@ -299,7 +299,8 @@ Still open:
 
 - Owner request: every module published, the body on the home page, phone first (D074).
 - Written: `plan/content-campaign.md` (the batch loop with commands, stop rules, three tooling tasks for planned lists, module status and progress by cards), `scripts/agent/audit-batch.mjs` (5 tests). The verifier and fixer role cards changed as in D074.
-- Open: card lists for the 8 modules without a manifest row (`g06`, `g08`, `s10`, `s12`, `s13`, `o31`, `o33`, `o34`); the template for cards of kind `technique` (batch W01).
+- 2026-11-13: card lists written for the 8 modules without a row and for `g09` (89 cards, batches W20–W24, from the reference's chapter outlines); the private manifest has 467 rows for all 35 modules.
+- Open: batch W01 (`g10`): most of its cards have no pages in the reference and need a variant of the pipeline that writes from open second sources.
 
 ## V3 batch metrics
 
