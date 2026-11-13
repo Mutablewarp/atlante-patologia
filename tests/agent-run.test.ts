@@ -210,6 +210,22 @@ describe('runStage', () => {
     expect(existsSync(join(root, '.work/state/foo.json'))).toBe(false);
   });
 
+  it('cuts a note longer than 200 characters instead of failing the stage', async () => {
+    const root = repo();
+    const r = await run(root, agent(() => report(root, id, 'author', { note: 'x'.repeat(260), claims: 3 })));
+    expect(r.status).toBe('done');
+    const saved = readJson(root, '.work/reports/foo.author.json');
+    expect(saved.note).toHaveLength(200);
+    expect(saved.claims).toBe(3);
+  });
+
+  it('keeps the original report of a stage it blocks, next to the blocked one', async () => {
+    const root = repo();
+    await run(root, agent(() => report(root, id, 'author', { id: 'bar', verdicts: ['kept'] })));
+    expect(readJson(root, '.work/reports/foo.author.agent.json')).toMatchObject({ id: 'bar', verdicts: ['kept'] });
+    expect(readJson(root, '.work/reports/foo.author.json')).toMatchObject({ status: 'blocked' });
+  });
+
   it('blocks a report that fails validation', async () => {
     const root = repo();
     const r = await run(root, agent(() => report(root, id, 'author', { id: 'bar' })));

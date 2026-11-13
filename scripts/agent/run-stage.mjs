@@ -189,6 +189,10 @@ export async function runStage({ root = ROOT, id, stage, budget = undefined, mod
     report = lastJsonObject(j?.result);
     if (report) writeFileSync(reportPath, `${JSON.stringify(report)}\n`); // the agent returned its report without writing it
   }
+  if (report && typeof report.note === 'string' && report.note.length > 200) {
+    report = { ...report, note: `${report.note.slice(0, 197)}...` }; // the note is for a person: cut it, do not fail a stage over it
+    writeFileSync(reportPath, `${JSON.stringify(report)}\n`);
+  }
   const blocked = (text) => ({ id, stage, status: 'blocked', note: text.slice(0, 200) });
   let outcome;
   if (limitHit(j, run.stderr)) outcome = { ...blocked('usage limit reached'), status: 'limit' };
@@ -201,8 +205,10 @@ export async function runStage({ root = ROOT, id, stage, budget = undefined, mod
     else outcome = { id, stage, status: report.status, note: String(report.note ?? '').slice(0, 200) };
   }
   // A stage that is not done leaves a blocked report on disk: next.mjs then shows it as not done, and a person sees why.
-  if (outcome.status !== 'done' && (!report || report.status !== 'blocked' || outcome.note !== String(report.note ?? '').slice(0, 200)))
+  if (outcome.status !== 'done' && (!report || report.status !== 'blocked' || outcome.note !== String(report.note ?? '').slice(0, 200))) {
+    if (report) writeFileSync(join(work, 'reports', `${id}.${stage}.agent.json`), `${JSON.stringify(report)}\n`); // keep what the agent wrote (the verifier's verdicts)
     writeFileSync(reportPath, `${JSON.stringify({ id, stage, status: 'blocked', note: outcome.note, files: [] })}\n`);
+  }
   if (outcome.status === 'done' && STAGES.includes(stage)) record(root, id, stage, now());
   const usage = usageLine({ id, stage, status: outcome.status, j, seconds, now: now() });
   appendFileSync(join(work, 'usage.jsonl'), `${JSON.stringify(usage)}\n`);
