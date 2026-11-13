@@ -67,7 +67,7 @@ if (process.argv[1] === fileURLToPath(import.meta.url)) {
     const queue = (only ? taken.cards.filter((c) => only.includes(c.id)).slice(0, max) : taken.cards).filter((c) => STAGES.indexOf(c.from) <= STAGES.indexOf(until));
     console.log(`run-batch ${batch}: ${queue.length} card(s) [${queue.map((c) => `${c.id} from ${c.from}`).join(', ')}], until ${until}, concurrency ${concurrency}, budget $${budgetUsd}`);
     if (args.includes('--dry-run') || !queue.length) return;
-    runBatch({ queue, concurrency, until, budgetUsd, run: ({ id, stage }) => runStage({ root: ROOT, id, stage }), log: (r) => console.log(line(r)) }).then(({ results, spent, stop }) => {
+    runBatch({ queue, concurrency, until, budgetUsd, run: ({ id, stage }) => runStage({ root: ROOT, id, stage, siblings: queue.map((c) => c.id) }), log: (r) => console.log(line(r)) }).then(({ results, spent, stop }) => {
       const blocked = results.filter((r) => r.status !== 'done');
       const done = queue.map((c) => c.id).filter((id) => !blocked.some((r) => r.id === id));
       console.log(`run-batch ${batch}: ${results.length} stage(s) run, $${spent}${stop ? `, stopped: ${stop}` : ''}; ${blocked.length ? `blocked: ${blocked.map((r) => `${r.stage}:${r.id}`).join(', ')}` : 'no card blocked'}`);

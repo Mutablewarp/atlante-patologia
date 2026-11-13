@@ -135,6 +135,15 @@ describe('the guard on written paths', () => {
     expect(violations(before, after, 'foo', 'author')).toEqual(['notes.txt', 'old.txt', 'scripts/x.mjs']);
   });
 
+  it('the other cards of the batch run at the same time in the same worktree, so their files are not a violation', () => {
+    const ok = allowedWrite('foo', 'author', ['bar', 'baz']);
+    for (const p of ['src/content/entities/bar/en.md', 'docs/ledger/baz.yaml', 'src/content/images/bar-micro-1.yaml', 'src/content/entities/foo/meta.yaml']) expect(ok(p)).toBe(true);
+    for (const p of ['scripts/a.mjs', 'src/content/sources.yaml', 'src/content/entities/qux/en.md']) expect(ok(p)).toBe(false);
+    const before = new Map<string, string>();
+    const after = new Map([['src/content/entities/bar/en.md', '??:a'], ['scripts/x.mjs', '??:b']]);
+    expect(violations(before, after, 'foo', 'author', ['bar'])).toEqual(['scripts/x.mjs']);
+  });
+
   it('snapshot lists changed and untracked files with a content hash, and not ignored files', () => {
     const root = repo();
     put(root, 'src/content/entities/foo/en.md', 'one');
@@ -217,6 +226,16 @@ describe('runStage', () => {
     expect(r.note).toBe('wrote outside the card: scripts/evil.mjs, src/content/entities/other/en.md');
     expect(existsSync(join(root, '.work/state/foo.json'))).toBe(false);
     expect(readJson(root, '.work/reports/foo.author.json')).toMatchObject({ status: 'blocked' });
+  });
+
+  it('lets a stage touch the files of the sibling cards that run in the same worktree', async () => {
+    const root = repo();
+    const r = await run(root, agent(() => {
+      put(root, 'src/content/entities/foo/en.md', 'x');
+      put(root, 'src/content/entities/other/en.md', 'changed by the sibling');
+      report(root, id, 'author');
+    }), { siblings: ['other'] });
+    expect(r.status).toBe('done');
   });
 
   it('stops on a usage limit: status limit, a blocked report on disk, nothing recorded', async () => {

@@ -107,16 +107,18 @@ export function snapshot(root) {
   return out;
 }
 
-/** What a stage may write besides .work/: the card's own folder and ledger, its image records, and for the scout the image files. */
-export const allowedWrite = (id, stage) => (path) =>
-  path.startsWith(`src/content/entities/${id}/`) ||
-  path === `docs/ledger/${id}.yaml` ||
-  path.startsWith(`src/content/images/${id}-`) ||
-  (stage === 'scout' && path.startsWith('src/assets/images/'));
+const owns = (id, path) => path.startsWith(`src/content/entities/${id}/`) || path === `docs/ledger/${id}.yaml` || path.startsWith(`src/content/images/${id}-`);
+
+/**
+ * What a stage may write besides .work/: the card's own folder and ledger, its image records, and for the scout the image files.
+ * `siblings` are the other cards of the batch: they run at the same time in the same worktree, so their files are not a violation.
+ */
+export const allowedWrite = (id, stage, siblings = []) => (path) =>
+  [id, ...siblings].some((c) => owns(c, path)) || (stage === 'scout' && path.startsWith('src/assets/images/'));
 
 /** Paths that differ between two snapshots and that the stage may not write. */
-export function violations(before, after, id, stage) {
-  const ok = allowedWrite(id, stage);
+export function violations(before, after, id, stage, siblings = []) {
+  const ok = allowedWrite(id, stage, siblings);
   const changed = [...after].filter(([p, v]) => before.get(p) !== v).map(([p]) => p);
   const gone = [...before].filter(([p]) => !after.has(p)).map(([p]) => p);
   return [...changed, ...gone].filter((p) => !ok(p)).sort();
@@ -167,7 +169,7 @@ export function usageLine({ id, stage, status, j, seconds, now }) {
  * Runs one stage. `exec(command, args, { cwd })` returns { status, stdout, stderr } (tests replace it).
  * Resolves { id, stage, status: 'done' | 'blocked' | 'limit', note, costUsd, turns, seconds }; never throws for a failed agent.
  */
-export async function runStage({ root = ROOT, id, stage, budget = undefined, model = undefined, note = '', exec = execute, now = () => new Date(), bin = process.env.CLAUDE_BIN || 'claude' }) {
+export async function runStage({ root = ROOT, id, stage, budget = undefined, model = undefined, note = '', siblings = [], exec = execute, now = () => new Date(), bin = process.env.CLAUDE_BIN || 'claude' }) {
   if (!/^[a-z0-9]+(-[a-z0-9]+)*$/.test(id) || !RUN_STAGES.includes(stage)) throw new Error(`"${id}" and "${stage}" are not a card id and one of ${RUN_STAGES.join(', ')}`);
   if (!existsSync(join(root, 'docs/agents/roles', `${stage}.md`))) throw new Error(`docs/agents/roles/${stage}.md not found under ${root}`);
   const work = join(root, '.work');
@@ -192,7 +194,7 @@ export async function runStage({ root = ROOT, id, stage, budget = undefined, mod
   else if (!report) outcome = blocked(`no report (${j?.subtype ?? `exit ${run.status}`})`);
   else {
     const problems = validateReport(report, id, stage);
-    const stray = violations(before, snapshot(root), id, stage);
+    const stray = violations(before, snapshot(root), id, stage, siblings);
     if (problems.length) outcome = blocked(`invalid report: ${problems[0]}`);
     else if (stray.length) outcome = blocked(`wrote outside the card: ${stray.slice(0, 3).join(', ')}${stray.length > 3 ? ` (+${stray.length - 3})` : ''}`);
     else outcome = { id, stage, status: report.status, note: String(report.note ?? '').slice(0, 200) };
