@@ -8,6 +8,7 @@ import { meshopt, quantize, simplify, weld } from '@gltf-transform/functions';
 import { MeshoptDecoder, MeshoptEncoder, MeshoptSimplifier } from 'meshoptimizer';
 import { parse } from 'yaml';
 import { bbox, computeNormals, mergeMeshes, parseObj, readOrganMap, readTables, resolveElements } from './lib.mjs';
+import { fitTransform, hraFile, loadHra } from './hra.mjs';
 import { frameOf, toFrame } from './spike.mjs';
 
 /** Triangle targets of the table below spec §11; an organ that is not listed keeps its source count. */
@@ -34,6 +35,10 @@ export const TARGETS = /** @type {Record<string, number>} */ ({
   larynx: 4000,
   eye: 4000,
   'gallbladder-bile-ducts': 3000,
+  uterus: 3000,
+  'uterine-cervix': 1500,
+  'fallopian-tube': 3000,
+  breast: 6000,
 });
 
 /** Bytes on disk, spec §4. */
@@ -108,6 +113,19 @@ function loadConcepts(raw, tables, id, concepts, minus = []) {
   return mergeMeshes(files.map((f) => parseObj(readFileSync(join(objDir(raw), `${f}.obj`), 'utf8'))));
 }
 
+async function loadObjects(hra, objects, nodes) {
+  const meshes = [];
+  for (const object of objects) meshes.push(await loadHra(hraFile(hra, object), nodes));
+  return mergeMeshes(meshes);
+}
+
+/** The fit of two union boxes in the shell frame: all nodes of the HRA objects, and the element files of the BodyParts3D concepts. */
+async function fitOf(fit, hra, raw, tables, frame) {
+  const hraBox = bbox((await loadObjects(hra, fit.hra)).positions);
+  const bp3dBox = bbox(toFrame(loadConcepts(raw, tables, 'fit', fit.bp3d).positions, frame));
+  return fitTransform(hraBox, bp3dBox, fit.anchor);
+}
+
 // "+ 0" turns -0 into 0, so the JSON on disk reads back equal
 const round = (list) => list.map((v) => Math.round(v * 1e4) / 1e4 + 0);
 
@@ -117,9 +135,9 @@ function checkBudget(file, bytes, budget) {
 
 /**
  * Build the body assets. With `only` (a system id) just that system file is written, with no shell and no manifest.
- * @param {{ raw: string, tables: string, out: string, map?: string, anatomy?: string, targets?: Record<string, number>, budgets?: Partial<typeof BUDGETS>, only?: string }} options
+ * @param {{ raw: string, tables: string, out: string, map?: string, anatomy?: string, targets?: Record<string, number>, budgets?: Partial<typeof BUDGETS>, only?: string, hra?: string }} options
  */
-export async function buildBody({ raw, tables: tablesDir, out, map: mapPath = 'scripts/anatomy/organ-map.yaml', anatomy = 'src/content/anatomy.yaml', targets = TARGETS, budgets = {}, only }) {
+export async function buildBody({ raw, tables: tablesDir, out, map: mapPath = 'scripts/anatomy/organ-map.yaml', anatomy = 'src/content/anatomy.yaml', targets = TARGETS, budgets = {}, only, hra = join(raw, '..', 'hra') }) {
   await Promise.all([MeshoptEncoder.ready, MeshoptDecoder.ready, MeshoptSimplifier.ready]);
   const limit = { ...BUDGETS, ...budgets };
   const map = readOrganMap(mapPath);
@@ -135,12 +153,23 @@ export async function buildBody({ raw, tables: tablesDir, out, map: mapPath = 's
   const organs = {};
   /** @type {Record<string, { id: string, positions: Float32Array, indices: Uint32Array, normals: Float32Array }[]>} */
   const built = {};
+  /** @type {Record<string, { scale: number, translate: number[] }>} */
+  const fits = {};
   for (const [id, organ] of Object.entries(map.organs)) {
     const system = systemOf.get(id);
     organs[id] = { system, kind: organ.kind, of: organ.of ?? [], inside: organ.inside ?? null };
-    if (organ.kind !== 'mesh' || id === SHELL_ORGAN || (only !== undefined && system !== only)) continue;
-    const mesh = loadConcepts(raw, tables, id, organ.concepts, organ.minus ?? []);
-    const reduced = await reduceMesh(toFrame(mesh.positions, frame), mesh.indices, targets[id]);
+    if (!['mesh', 'hra'].includes(organ.kind) || id === SHELL_ORGAN || (only !== undefined && system !== only)) continue;
+    let reduced;
+    if (organ.kind === 'hra') {
+      fits[organ.fit] ??= await fitOf(map.fits[organ.fit], hra, raw, tables, frame);
+      const { scale, translate } = fits[organ.fit];
+      const mesh = await loadObjects(hra, organ.objects, organ.nodes);
+      reduced = await reduceMesh(mesh.positions.map((v, k) => v * scale + translate[k % 3]), mesh.indices, targets[id]);
+      Object.assign(organs[id], { fit: organ.fit, objects: organ.objects });
+    } else {
+      const mesh = loadConcepts(raw, tables, id, organ.concepts, organ.minus ?? []);
+      reduced = await reduceMesh(toFrame(mesh.positions, frame), mesh.indices, targets[id]);
+    }
     const { min, max, centre } = bbox(reduced.positions);
     Object.assign(organs[id], { box: { min: round(min), max: round(max) }, centre: round(centre), triangles: reduced.indices.length / 3 });
     (built[system] ??= []).push({ id, ...reduced });
@@ -183,7 +212,7 @@ function arg(name, required = true) {
 }
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
-  const manifest = await buildBody({ raw: arg('raw'), tables: arg('tables'), out: arg('out'), only: arg('only', false) });
+  const manifest = await buildBody({ raw: arg('raw'), tables: arg('tables'), out: arg('out'), only: arg('only', false), hra: arg('hra', false) });
   const systems = Object.entries(manifest.systems).map(([id, s]) => `${id} ${s.bytes}B/${s.triangles}t`);
   const total = 'shell' in manifest ? ` + shell ${manifest.shell.bytes}B/${manifest.shell.triangles}t` : '';
   console.log(`built: ${systems.join(', ')}${total}`);
