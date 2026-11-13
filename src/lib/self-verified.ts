@@ -36,7 +36,7 @@ export const SELF_VERIFIED: readonly SelfVerified[] = [
     name: { it: 'Controllo di qualità delle proteine (sistema ubiquitina-proteasoma, chaperoni)', en: 'Protein quality control (ubiquitin–proteasome system, chaperones)' },
     path: 'e/protein-quality-control/',
   },
-  { ledger: 'thrombosis', claims: 7, name: { it: 'Trombosi', en: 'Thrombosis' }, path: 'e/thrombosis/' },
+  { ledger: 'thrombosis', claims: 2, name: { it: 'Trombosi', en: 'Thrombosis' }, path: 'e/thrombosis/' },
 ];
 
 /** A ledger `verifier` that names the writing or the correcting agent is not a separate verifier. */
