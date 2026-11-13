@@ -1,0 +1,92 @@
+# License check (2026-11-08): taken from the article itself, not from Wikimedia Commons. The PMC open-access record
+# (pmc-oa-opendata, PMC13231480.1) gives license_code "CC BY"; the article's <permissions> block reads "This is an
+# Open Access article under the CC BY license" with https://creativecommons.org/licenses/by/4.0/, © The Author(s)
+# 2026. PubMed confirms PMID 42244925, doi:10.4314/gmj.v60i1.7, Keita M et al., Ghana Med J 2026;60(1):48–51. The
+# Figure 1 legend has no "reproduced" or "with permission" note: the smear is the authors' own case material. Allowed
+# under COMPLIANCE_PLAN §4 (PubMed Central figure in an article with an explicit CC BY licence). Bone marrow aspirate
+# smear only (the article's case report names the bone marrow aspiration); nothing in it identifies the patient, and
+# the caption gives no personal detail beyond "a child". The PMC web figure is only 417 × 366 px, so the file is the
+# 715 × 626 px JPEG embedded in the article PDF of the same open-access record, saved byte for byte. The legend
+# mentions a red arrow that the published image does not show; our annotations take its place. The legend's "x100" is
+# kept as the source states it; the source does not say whether it is the objective, so objective is left out. No mpp:
+# the source gives no calibration.
+id: intracellular-accumulations-micro-4
+file: intracellular-accumulations-micro-4.jpg
+kind: micro
+sourceUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC13231480/
+author: Mohamed Keita, Blaise F Faye, Alioune B Senghor, Alioune B Diallo, Elimane S Bousso, Sokhna A Touré, Moussa Seck, Saliou Diop
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-11-08
+modifications: none
+attributionText: >-
+  Mohamed Keita, Blaise F Faye, Alioune B Senghor, Alioune B Diallo, Elimane S Bousso, Sokhna A Touré, Moussa Seck,
+  Saliou Diop, "Diagnosis and follow-up of the first case of Gaucher disease under enzyme replacement therapy in
+  Senegal", Ghana Medical Journal 2026;60(1):48–51, doi:10.4314/gmj.v60i1.7, Figure 1, CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+stain: May-Grünwald Giemsa
+magnification: "high power (the source: x100)"
+section: smear
+lookFor:
+  it: "Cerca le cellule giganti con citoplasma blu-grigio striato come carta stropicciata e un nucleo piccolo, spostato di lato."
+  en: "Find the giant cells with blue-grey cytoplasm streaked like crumpled paper and a small, off-centre nucleus."
+caption:
+  it: >-
+    Striscio di aspirato midollare di un bambino con malattia di Gaucher, colorazione May-Grünwald Giemsa, forte
+    ingrandimento (×100 nella fonte). In uno striscio non c'è un'architettura da leggere: si cercano le singole cellule
+    che non dovrebbero esserci. Parti dallo sfondo: i numerosi dischetti rotondi grigio-rosati sono globuli rossi, le
+    cellule più piccole con nucleo viola scuro sono comuni cellule del midollo. Ora trova i due giganti, uno in alto a
+    sinistra e uno in basso al centro: ciascuno è largo parecchie volte un globulo rosso e ha un ampio citoplasma
+    blu-grigio percorso da sottili striature ondulate, come carta velina stropicciata e poi lisciata; in quello in alto
+    il piccolo nucleo sta in disparte, sul margine in alto a destra. Sono cellule di Gaucher: macrofagi con i lisosomi
+    pieni di glucocerebroside (glucosilceramide), il lipide che non riescono a demolire perché è carente la
+    β-glucocerebrosidasi, l'enzima lisosomiale che lo scinde. Gran parte di quel lipide viene dalle membrane dei globuli
+    bianchi invecchiati che i macrofagi hanno inglobato. Queste cellule si raccolgono in organi come la milza e il
+    midollo osseo, e la milza è ingrandita quasi in ogni paziente. Lo striscio orienta, ma la diagnosi si conferma
+    misurando l'attività dell'enzima, che in questo paziente era bassa. Trappola d'esame: l'indizio è il citoplasma
+    striato; il macrofago schiumoso pieno di piccole bolle tutte uguali è un'altra cellula da accumulo (malattia di
+    Niemann-Pick).
+  en: >-
+    Bone marrow aspirate smear from a child with Gaucher disease, May-Grünwald Giemsa stain, high power (×100 in the
+    source). A smear has no architecture to read: you search for single cells that should not be there. Start from the
+    background: the many small, round, pink-grey discs are red blood cells, and the smaller cells with dark purple
+    nuclei are ordinary marrow cells. Now find the two giants, one at upper left and one at lower centre: each is several
+    times wider than a red cell and has a broad blue-grey cytoplasm streaked by fine wavy lines, like tissue paper that
+    has been crumpled and smoothed out again; in the upper one the small nucleus sits apart, at the upper right edge.
+    These are Gaucher cells: macrophages whose lysosomes are packed with glucocerebroside (glucosylceramide), the lipid
+    they cannot break down because β-glucocerebrosidase, the lysosomal enzyme that splits it, is deficient. Most of
+    that lipid comes from the membranes of worn-out white blood cells that the macrophages have engulfed. These cells
+    collect in organs such as the spleen and the bone marrow, and the spleen is enlarged in almost every patient. The smear
+    points the way, but the diagnosis is confirmed by measuring the enzyme's activity, which was low in this patient.
+    Exam trap: the streaked cytoplasm is the clue; a foamy macrophage full of small, even bubbles is a different
+    storage cell (Niemann–Pick disease).
+alt:
+  it: >-
+    Striscio di midollo osseo in tonalità viola e azzurre: molti globuli rossi grigio-rosati e piccole cellule viola
+    scuro; due cellule molto grandi, in alto a sinistra e in basso al centro, hanno un abbondante citoplasma blu-grigio
+    dalla trama sottile, striata e grinzosa; quella in alto ha un piccolo nucleo viola sul margine in alto a destra.
+  en: >-
+    Bone marrow smear in purple and blue tones: many pink-grey red blood cells and small dark purple cells; two very
+    large cells, at upper left and lower centre, have abundant blue-grey cytoplasm with a fine, streaked, wrinkled
+    texture; the upper one has a small purple nucleus at its upper right edge.
+annotations:
+  - id: gaucher-cell-upper
+    label: { it: Cellula di Gaucher, en: Gaucher cell }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.31, 0.22, 0.36, 0.165, 0.45, 0.155, 0.50, 0.195, 0.51, 0.30, 0.47, 0.37, 0.38, 0.39, 0.32, 0.35, 0.30, 0.28]
+  - id: off-centre-nucleus
+    label: { it: Nucleo piccolo e spostato di lato, en: Small off-centre nucleus }
+    revealOrder: 2
+    shape:
+      type: circle
+      coords: [0.462, 0.25, 0.04]
+  - id: gaucher-cell-lower
+    label: { it: "Altra cellula di Gaucher: citoplasma striato a carta stropicciata", en: "Another Gaucher cell: streaked, crumpled-paper cytoplasm" }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.54, 0.70, 0.60, 0.665, 0.68, 0.675, 0.72, 0.74, 0.72, 0.86, 0.66, 0.92, 0.57, 0.92, 0.53, 0.84]

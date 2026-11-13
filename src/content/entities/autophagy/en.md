@@ -61,11 +61,18 @@ Not applicable.
 
 ## Microscopic morphology
 
-Not applicable.
+- **Electron microscopy:** a vacuole with two membranes around intact, recognizable cytoplasm (often a mitochondrion or a stretch of endoplasmic reticulum) is an autophagosome; a vacuole with a single membrane around cargo that is already partly or largely digested is an autolysosome, which forms once a lysosome has merged with the autophagosome.<!--c:autophagy-c068-->
+- **Light microscopy:** lipofuscin appears as golden-brown cytoplasmic granules; it is an indigestible residue of oxidized proteins and peroxidized lipids that builds up because autophagy and the cell's other disposal routes fail to clear it.<!--c:autophagy-c069--> Its amount grows with age and it stands out more in an atrophic organ; most of it is found in cells that divide rarely or never, such as neurons, cardiac myocytes and hepatocytes (see [[pigment-accumulation]]).<!--c:autophagy-c070-->
 
 ## Special stains, IHC and molecular findings
 
-Not applicable.
+**How it is studied:**
+
+- **No single test:** autophagic activity is assessed by combining several methods, because each has limits and none is a gold standard; electron microscopy, the oldest method, recognizes the vacuoles described under Microscopic morphology but cannot show whether their contents are actually being broken down in lysosomes.<!--c:autophagy-c071-->
+- **LC3:** the mammalian counterpart of yeast Atg8, it is the usual marker of autophagosomes because, unlike most autophagy proteins, it stays bound to the finished vesicle; immunofluorescence or immunohistochemistry shows autophagosomes as cytoplasmic dots (puncta), and an immunoblot measures LC3-II, the form attached to a membrane lipid.<!--c:autophagy-c072-->
+- **p62 (SQSTM1):** a fall in p62 suggests that autophagy is working and a build-up that it is deficient, because this adaptor, attached to LC3, is digested together with the cargo it delivers.<!--c:autophagy-c073-->
+- **Reading the result:** more autophagosomes, more LC3-II or stronger LC3 staining can mean either more autophagy or a block in lysosomal degradation; measuring autophagic flux tells them apart, for example by comparing LC3-II with and without a lysosomal inhibitor such as chloroquine or bafilomycin A1.<!--c:autophagy-c074-->
+- **Molecular genetics:** genome-wide association studies have linked Crohn disease to variants of two autophagy genes, ATG16L1 and IRGM.<!--c:autophagy-c075-->
 
 ## Clinical presentation
 
@@ -74,9 +81,9 @@ Autophagy defects or excess contribute to many diseases:
 - **Cancer:** Beclin-1 and some Atg genes are tumor suppressors, deleted or mutated in many human tumors, yet autophagy also protects tumor cells from hypoxia, nutrient lack and therapy.<!--c:autophagy-c039-->
 - **Neurodegeneration:** in Huntington disease, mutations can hamper removal of aggregates and faulty mitochondria; in Alzheimer and Parkinson disease, an age-related drop in Beclin-1 production may help explain why aggregates accumulate faster than they are cleared.<!--c:autophagy-c040-->
 - **Aging:** undegraded aggregates build up as macroautophagy and CMA wane with age; animal studies hint that mTOR inhibitors, which boost autophagy, may lengthen life.<!--c:autophagy-c041-->
-- **Infection:** xenophagy eliminates intracellular parasites, viruses such as HIV-1, and bacteria such as *Shigella*, *Streptococcus* and *Mycobacterium tuberculosis*.<!--c:autophagy-c042--> Microbes fight back: some viruses make Bcl-2–like proteins that bind Beclin-1, and *M. tuberculosis* blocks phagosome–lysosome fusion.<!--c:autophagy-c043--> Poliovirus, hepatitis C virus and other RNA viruses turn the pathway to their advantage by building their replication sites on autophagic membranes.<!--c:autophagy-c044-->
+- **Infection:** xenophagy is the arm of autophagy that clears invaders from inside the cell, from bacteria such as *Mycobacterium tuberculosis* to viruses such as HIV-1.<!--c:autophagy-c042--> Microbes fight back: some viruses make Bcl-2–like proteins that bind Beclin-1, and *M. tuberculosis* blocks phagosome–lysosome fusion.<!--c:autophagy-c043--> Poliovirus, hepatitis C virus and other RNA viruses turn the pathway to their advantage by building their replication sites on autophagic membranes.<!--c:autophagy-c044-->
 - **Crohn disease:** variants in two autophagy genes that support xenophagy raise the risk; poor bacterial clearance increases pro-inflammatory output.<!--c:autophagy-c045-->
-- **Lung:** autophagy is increased in some COPD, reduced in alveolar macrophages of chronic smokers, and impaired autophagic clearance of mutant protein aggregates in airway epithelial cells is implicated in cystic fibrosis.<!--c:autophagy-c046-->
+- **Lung:** in cystic fibrosis, the cells lining the airways are thought to clear aggregates of the mutant protein poorly, which adds to the disease; in smokers the picture is mixed, with more autophagy in some cases of COPD and less in alveolar macrophages.<!--c:autophagy-c046-->
 - **Heart:** some inherited cardiomyopathies stem from mutated autophagy proteins; deficient autophagy also worsens ischemia–reperfusion injury and heart failure.<!--c:autophagy-c047-->
 
 ## Diagnosis, key lab and imaging
@@ -106,6 +113,7 @@ Not applicable.
 - **Phagophore → autophagosome → fusion with lysosome**; **p62** links ubiquitinated cargo to the phagophore.<!--c:autophagy-c058-->
 - **Bcl-2** holds Beclin-1; **caspases** cleave it, linking autophagy to apoptosis.<!--c:autophagy-c059-->
 - Disease links: **cancer** (double-edged), **neurodegeneration**, **aging**, **infection**, **Crohn disease**, **cardiomyopathy**.<!--c:autophagy-c060-->
+- How it is studied: **electron microscopy** shows the **double-membrane autophagosome**; **LC3** marks autophagosomes; **p62** builds up when autophagy fails; counting autophagosomes does not measure **flux**.<!--c:autophagy-c077-->
 
 ## Common misconceptions and exam traps
 
@@ -114,6 +122,7 @@ Not applicable.
 - **"Autophagic cell death" is not proven as an independent killer;** its contribution apart from other forms of programmed death is unclear.<!--c:autophagy-c063-->
 - **Not always random:** starvation autophagy is largely bulk, but mitophagy, aggregate removal and CMA are highly selective.<!--c:autophagy-c064-->
 - **The proteasome cannot replace it:** aggregates and whole organelles are too large for the proteasome.<!--c:autophagy-c065-->
+- **More autophagic vacuoles do not by themselves prove more autophagy:** vacuoles also pile up when a later step, such as fusion with lysosomes or digestion, is blocked, and such a block, rather than the excess autophagy first suspected, is the likelier explanation for the vacuoles that accumulate in some neurodegenerative and degenerative muscle diseases.<!--c:autophagy-c076-->
 
 ## Mnemonics
 

@@ -1,0 +1,91 @@
+# License check (2026-11-08): Commons file page {{Information}} gives source {{own}}, author [[User:Tulemo|Tulemo]],
+# date 2019-05-15, licence {{self|cc-by-sa-4.0}}; extmetadata LicenseShortName "CC BY-SA 4.0", AttributionRequired
+# true, Credit "Own work", no Restrictions. The uploader is the creator: the user page describes a neuroscientist with
+# expertise in pathology, and the account's uploads are its own micrographs of nervous and other tissue, in one style
+# with burned-in scale bars. CC BY-SA is approved as a class by owner decision O7 (plan/v2-plan.md, 2026-11-03), hence
+# ownerApproved: true. Histology only; nothing identifies the person. The description names neither the species nor
+# the brain region, so the captions say only "a neuron of the brain". Section "other" = 2 µm resin (plastic) section;
+# objective 100x as the description states it. The second neuron's granules and the nucleus are read by inspection.
+# Re-checked 2026-11-09: Commons API metadata unchanged (CC BY-SA 4.0, {{own}}, 2400 × 2400 px); the file matches the
+# Commons 960 px rendition (channel means within 0.3/255, so no crop and no colour change). Lipofuscin facts in the
+# caption: rubin-8e pp. 5-6 (peroxidized lipids and oxidized proteins, poor disposal, postmitotic cells, rises with age,
+# may itself add to oxidant stress), reworded on 2026-11-09 to avoid a same-order paraphrase of the reference.
+id: oxidative-injury-micro-7
+file: oxidative-injury-micro-7.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Lipofuscin_in_a_nerve_cell_of_the_brain.jpg
+author: Tulemo
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+retrievedAt: 2026-11-08
+modifications:
+  it: >-
+    Riduzione dall'originale di Wikimedia (2400 × 2400 px) a 1600 × 1600 px e ricodifica in JPEG (metadati rimossi);
+    nessun ritaglio, nessuna modifica dei colori. La freccia e la barra di scala da 10 µm fanno parte dell'immagine
+    originale.
+  en: >-
+    Downscaled from the Wikimedia original (2400 × 2400 px) to 1600 × 1600 px and re-encoded as JPEG (metadata
+    stripped); no crop, no colour change. The arrow and the 10 µm scale bar belong to the original image.
+attributionText: 'Tulemo, "Lipofuscin in a nerve cell of the brain", via Wikimedia Commons, CC BY-SA 4.0'
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-09 }
+stain: toluidine blue
+magnification: high power (100X oil-immersion objective)
+objective: 100x
+section: other
+lookFor:
+  it: "Trova il nucleo con il suo nucleolo scuro, poi guarda subito accanto: il gruppo di granuli scuri è il pigmento."
+  en: "Find the nucleus with its dark nucleolus, then look right beside it: the clump of dark granules is the pigment."
+caption:
+  it: >-
+    Un neurone del cervello a fortissimo ingrandimento (obiettivo a immersione 100×), in una sezione semifine di 2 µm
+    inclusa in resina e colorata con blu di toluidina; la freccia e la barra di 10 µm sono dell'autore. Parti dalla
+    grande cellula al centro: un nucleo rotondo e chiaro con un unico nucleolo scuro, circondato da un ampio citoplasma.
+    Proprio accanto al nucleo, dove punta la freccia, c'è un gruppo di granuli scuri: è lipofuscina. In basso a sinistra
+    un secondo neurone ha il suo gruppo di granuli. Con questo colorante i granuli appaiono blu-neri, mentre in EE lo
+    stesso pigmento è bruno-dorato, come nell'immagine del miocardio di questa scheda: riconoscilo quindi dalla forma e
+    dalla sede, un ammasso di granuli nel citoplasma di una cellula longeva, non dal colore. La lipofuscina si forma da
+    lipidi di membrana e proteine danneggiati dall'ossidazione, materiale che la cellula non riesce né a digerire né a
+    espellere. I neuroni non si dividono più, perciò il residuo si accumula con gli anni. Inoltre non è del tutto
+    inerte: può rallentare i sistemi di smaltimento della cellula e favorire così nuovo danno ossidativo.
+  en: >-
+    A neuron of the brain at very high power (100× oil-immersion objective), in a 2 µm resin (plastic) section stained
+    with toluidine blue; the arrow and the 10 µm bar are the author's. Start from the large cell in the centre: a
+    round, pale nucleus with a single dark nucleolus, surrounded by a broad rim of cytoplasm. Right beside the nucleus,
+    where the arrow points, sits a clump of dark granules: this is lipofuscin. At the lower left a second neuron carries
+    its own clump. With this dye the granules look blue-black, whereas on H&E the same pigment is golden-brown, as in
+    the heart muscle image on this card: so recognise it by its form and place, a cluster of granules in the cytoplasm
+    of a long-lived cell, not by its colour. Lipofuscin forms from membrane lipids and proteins damaged by oxidation,
+    material that the cell can neither digest nor expel. Neurons no longer divide, so the residue builds up over the
+    years. It is not entirely inert either: it can slow the cell's own clean-up and so favour further oxidative damage.
+alt:
+  it: >-
+    Micrografia in tonalità di blu: al centro una grande cellula nervosa con un nucleo rotondo e chiaro e un nucleolo
+    scuro; appena sopra e a sinistra del nucleo un ammasso di granuli blu-neri, indicato da una freccia nera che sale da
+    sinistra in basso; in basso a sinistra una seconda cellula con un ammasso di granuli più piccolo; il fondo è un fitto
+    intreccio di anelli e tratti blu scuro; nell'angolo in basso a destra una barra di scala nera.
+  en: >-
+    Micrograph in shades of blue: in the centre a large nerve cell with a round, pale nucleus and a dark nucleolus;
+    just above and to the left of the nucleus a clump of blue-black granules, marked by a black arrow rising from the
+    lower left; at the lower left a second cell with a smaller clump of granules; the background is a dense mesh of
+    dark blue rings and streaks; a black scale bar in the bottom right corner.
+annotations:
+  - id: lipofuscin-clump
+    label: { it: "Lipofuscina: ammasso di granuli accanto al nucleo", en: "Lipofuscin: a clump of granules beside the nucleus" }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.38, 0.43, 0.41, 0.40, 0.44, 0.365, 0.48, 0.37, 0.52, 0.39, 0.565, 0.40, 0.565, 0.43, 0.50, 0.435, 0.47, 0.46, 0.46, 0.49, 0.41, 0.49, 0.38, 0.46]
+  - id: neuron-nucleus
+    label: { it: Nucleo del neurone con nucleolo evidente, en: Neuron nucleus with a prominent nucleolus }
+    revealOrder: 2
+    shape:
+      type: circle
+      coords: [0.522, 0.503, 0.063]
+  - id: second-neuron-lipofuscin
+    label: { it: Lipofuscina in un secondo neurone, en: Lipofuscin in a second neuron }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.11, 0.755, 0.14, 0.738, 0.20, 0.74, 0.245, 0.75, 0.245, 0.785, 0.20, 0.795, 0.14, 0.79, 0.11, 0.775]

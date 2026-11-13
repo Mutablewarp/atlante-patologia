@@ -1,0 +1,93 @@
+# License check (2026-11-08): Commons file page {{Information}} gives Source {{own}}, Author User:Nephron, license
+# {{self|cc-by-sa-3.0|GFDL}}; extmetadata LicenseShortName "CC BY-SA 3.0", AttributionRequired true, no Restrictions.
+# CC BY-SA is approved as a class by owner decision O7 (plan/v2-plan.md, 2026-11-03), hence ownerApproved: true.
+# The file page says the tissue is prostate curettings from a TURP. It states no magnification: "low power" is our
+# reading of the field. Annotation 1 is the uploader's own ImageNote box ("Nodule with stromal and glandular
+# hyperplasia", x 408, y 175, w 2055, h 1818 on 3328 × 2176), normalised; the other three were placed by inspection.
+id: hyperplasia-micro-3
+file: hyperplasia-micro-3.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Nodular_hyperplasia_of_the_prostate.jpg
+author: Nephron
+license: CC-BY-SA-3.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/3.0/
+retrievedAt: 2026-11-08
+modifications:
+  it: >-
+    Scaricata la versione da 1920 × 1255 px generata da Commons a partire dall'originale da 3328 × 2176 px; riduzione a
+    1600 × 1046 px e ricodifica in JPEG (qualità 82, metadati rimossi); nessun ritaglio, nessuna modifica dei colori.
+    Questo adattamento è condiviso con la stessa licenza (CC BY-SA 3.0).
+  en: >-
+    Downloaded the 1920 × 1255 px Commons rendition of the 3328 × 2176 px original; downscaled to 1600 × 1046 px and
+    re-encoded as JPEG (quality 82, metadata stripped); no crop, no colour change. This adaptation is shared under the
+    same licence (CC BY-SA 3.0).
+attributionText: >-
+  Nephron, "Nodular hyperplasia of the prostate", via Wikimedia Commons, CC BY-SA 3.0
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+stain: H&E
+magnification: low power
+lookFor:
+  it: "Trova prima il nodulo tondeggiante, poi verifica che contenga sia ghiandole sia stroma, non soltanto ghiandole."
+  en: "Find the rounded nodule first, then check that it holds both glands and stroma, not glands alone."
+caption:
+  it: >-
+    Iperplasia prostatica benigna (iperplasia nodulare) su frammenti di resezione transuretrale (TURP), EE a piccolo
+    ingrandimento. Parti dall'architettura d'insieme: le ghiandole non sono distribuite in modo uniforme. Al centro un
+    nodulo tondeggiante contiene molte piccole ghiandole immerse in uno stroma cellulato, e fasci di stroma
+    fibromuscolare rosa (cellule muscolari lisce e fibroblasti) lo avvolgono. Sono cresciuti entrambi i
+    compartimenti, ghiandole e stroma, ed è la loro crescita mista a costruire il nodulo. Passa poi alle ghiandole
+    circostanti: hanno dimensioni molto variabili, molte sono dilatate e il loro rivestimento si ripiega nel lume in
+    introflessioni papillari di cellule alte a citoplasma chiaro. In alcuni lumi ci sono corpi tondeggianti rosa, i
+    corpi amilacei. Al margine sinistro e in basso a destra, frammenti scuri e spigolosi hanno l'aspetto di concrezioni
+    calcificate, i piccoli calcoli che i noduli voluminosi possono contenere. A questo ingrandimento non si può
+    giudicare il rivestimento formato da due tipi di cellule: le cellule basali appiattite, a contatto con lo stroma,
+    e, verso il lume, le cellule secernenti cilindriche. Va cercato a ingrandimento maggiore e, su un'agobiopsia,
+    confermato con i marcatori delle cellule basali, come nell'immagine con il cocktail PIN-4 di questa scheda. Il
+    punto chiave: l'IPB ingrandisce la ghiandola aggiungendo sia ghiandole sia stroma sotto lo stimolo del
+    diidrotestosterone e inizia nella zona di transizione attorno all'uretra, mentre il carcinoma prostatico nasce di
+    solito nella zona periferica.
+  en: >-
+    Benign prostatic hyperplasia (nodular hyperplasia) in chips from a transurethral resection (TURP), H&E at low
+    power. Start with the overall pattern: the glands are not spread evenly. In the centre a rounded nodule holds many
+    small glands set in a cellular stroma, and streams of pink fibromuscular stroma (smooth muscle cells and
+    fibroblasts) wrap around it. Both compartments have grown, glands and stroma alike, and their mixed growth is what
+    builds the nodule. Then move to the glands around it: their size varies widely, many are dilated, and their lining
+    folds into the lumen as papillary infoldings of tall cells with pale cytoplasm. Some lumens contain round pink
+    bodies, the corpora amylacea. At the left edge and at lower right, dark, angular fragments look like calcified
+    concretions, the small stones that large nodules can contain. One feature cannot be judged at this power: the
+    lining made of two cell types, flat basal cells against the stroma and, towards the lumen, columnar secretory
+    cells. Look for it at higher power, and on a needle biopsy confirm it with basal cell markers, as in the PIN-4
+    image on this card. Key point: BPH enlarges the gland by adding both glands and stroma under the drive of
+    dihydrotestosterone, and it starts in the transition zone around the urethra, whereas prostatic carcinoma usually
+    arises in the peripheral zone.
+alt:
+  it: >-
+    Micrografia di prostata in ematossilina-eosina a piccolo ingrandimento: uno stroma rosa disposto a fasci riempie il
+    campo; al centro un'area tondeggiante contiene molte piccole ghiandole viola; intorno, ghiandole più grandi con
+    lume bianco e profilo ondulato, alcune con piccoli corpi rosa tondeggianti all'interno, e gruppi di frammenti
+    angolati bruno-neri al margine sinistro e in basso a destra.
+  en: >-
+    Low-power H&E micrograph of prostate: pink stroma arranged in streams fills the field; in the centre a rounded area
+    holds many small purple glands; around it, larger glands with white lumens and wavy outlines, a few with small
+    round pink bodies inside, and clusters of angular brown-black fragments at the left edge and at lower right.
+annotations:
+  - id: hyperplastic-nodule
+    label: { it: "Nodulo iperplastico: aumentano ghiandole e stroma", en: "Hyperplastic nodule: glands and stroma both increased" }
+    revealOrder: 1
+    shape: { type: rect, coords: [0.123, 0.080, 0.617, 0.836] }
+  - id: papillary-infolding
+    label: { it: "Ghiandola dilatata con introflessioni papillari", en: "Dilated gland with papillary infoldings" }
+    revealOrder: 2
+    shape: { type: rect, coords: [0.48, 0.14, 0.12, 0.155] }
+  - id: corpus-amylaceum
+    label: { it: "Corpo amilaceo nel lume", en: "Corpus amylaceum in the lumen" }
+    revealOrder: 3
+    shape: { type: circle, coords: [0.849, 0.588, 0.02] }
+  - id: calcified-concretions
+    label: { it: "Concrezioni calcificate (piccoli calcoli)", en: "Calcified concretions (small stones)" }
+    revealOrder: 4
+    shape:
+      type: polygon
+      coords: [0.0, 0.56, 0.08, 0.565, 0.13, 0.655, 0.125, 0.70, 0.10, 0.72, 0.10, 0.83, 0.06, 0.835, 0.05, 0.72, 0.0, 0.69]

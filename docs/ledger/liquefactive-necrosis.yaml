@@ -26,44 +26,44 @@ claims:
     date: 2026-11-03
   - claimId: liquefactive-necrosis-c004
     section: etiology
-    statement: "A tightly localized collection of neutrophils, usually responding to bacteria, quickly kills and dissolves tissue."
+    statement: "Bacteria usually provide the stimulus that crowds neutrophils into a small focus, where tissue dies and dissolves quickly."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c005
     section: etiology
-    statement: "S. aureus entering a normally sterile site typically leads to pus formation, with abscesses that vary from microscopic foci to collections several cm across."
+    statement: "Abscesses from microscopic size to several centimetres are the typical lesion of S. aureus, a pyogenic coccus, in normally sterile sites."
     sourceRef: { source: rubin-8e, chapter: "9", pages: "409" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c006
     section: etiology
-    statement: "Occlusion of a cerebral artery causes necrosis that is soon followed by dissolution of the dead tissue."
+    statement: "Brain tissue supplied by an occluded cerebral artery dies and soon liquefies."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c007
     section: etiology
-    statement: "Brain abscesses begin with bacterial or fungal seeding of the neuropil, mostly by blood from cardiac or pulmonary infection, or by direct extension from frontal or mastoid sinus disease or infected neurosurgical wounds."
+    statement: "A brain abscess starts with bacteria or fungi settling in brain tissue; they often come from a cardiac or pulmonary infection through the blood, but may also arrive from an infected neurosurgical wound or spread in from a neighbouring frontal-sinus or mastoid infection."
     sourceRef: { source: rubin-8e, chapter: "32", pages: "1465" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c008
     section: etiology
-    statement: "Severe carbon monoxide poisoning causes nearly pathognomonic bilateral liquefactive necrosis of the globus pallidus."
+    statement: "Liquefactive necrosis of both globi pallidi is an almost pathognomonic lesion of severe carbon monoxide poisoning."
     sourceRef: { source: rubin-8e, chapter: "32", pages: "1490" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c009
     section: etiology
     statement: "Ingested strong alkalis produce transmural liquefactive necrosis of esophagus and stomach and saponify membrane lipids."
@@ -82,68 +82,68 @@ claims:
     date: 2026-11-03
   - claimId: liquefactive-necrosis-c011
     section: pathogenesis
-    statement: "Lytic enzymes from inside and outside the cell eventually break down necrotic cells, especially when acute inflammation has been elicited."
+    statement: "Acute inflammation provoked by necrosis makes the enzymatic digestion of dead cells most intense; the enzymes come partly from the dead cells and partly from outside them."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c012
     section: pathogenesis
-    statement: "Neutrophils contain potent hydrolases able to digest dead cells."
+    statement: "Hydrolases contained in neutrophils are strong enough to digest dead cells."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c013
     section: pathogenesis
-    statement: "A dense focus of neutrophils kills cells quickly and dissolves them, leaving a cavity in solid tissue."
+    statement: "An abscess cavity opens within a solid organ because crowded neutrophils dissolve the tissue faster than it can be repaired."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c014
     section: pathogenesis
-    statement: "If fibrosis encloses a focus of acute inflammation, neutrophil products destroy the trapped tissue, forming an abscess."
+    statement: "Abscess is one outcome of acute inflammation: when fibrosis walls in the inflamed area, substances released by neutrophils destroy the enclosed tissue."
     sourceRef: { source: rubin-8e, chapter: "2", pages: "88" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c015
     section: pathogenesis
-    statement: "Over time a fibrous wall encloses the abscess and retains its contents."
+    statement: "Abscess contents stay confined because a fibrous capsule eventually grows around them."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c016
     section: pathogenesis
-    statement: "Brain necrosis after arterial occlusion is coagulative at first and then rapidly dissolves by a mechanism not attributable to acute inflammation."
+    statement: "Acute inflammation does not explain why dead brain tissue, initially coagulative, soon dissolves."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c017
     section: pathogenesis
-    statement: "The reason for brain liquefaction is unclear; abundant lysosomal enzymes or CNS-specific hydrolases are suspected."
+    statement: "Hydrolases unique to nervous tissue, or the brain's abundant lysosomal enzymes, are proposed causes of brain liquefaction, which remains unexplained."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c018
     section: pathogenesis
-    statement: "Lye-type alkalis in liquid form usually produce severe injury by liquefying tissue, granular forms less often; strong acids coagulate tissue at once and the eschar restricts how deep the damage goes."
+    statement: "Strong alkalis liquefy tissue and, as liquids, usually injure severely (granular forms less often); strong acids penetrate less because the immediate coagulative necrosis they cause forms a protective eschar."
     sourceRef: { source: rubin-8e, chapter: "19", pages: "773" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c019
     section: gross
     statement: "An abscess is a cavity in solid tissue produced by liquefactive necrosis and filled with purulent material."
@@ -154,12 +154,12 @@ claims:
     date: 2026-11-03
   - claimId: liquefactive-necrosis-c020
     section: gross
-    statement: "A bland thrombotic brain infarct is hard to see grossly in the first hours; softening and color change then become evident."
+    statement: "Softening and discoloration of a bland thrombotic brain infarct become grossly evident only after the first several hours."
     sourceRef: { source: rubin-8e, chapter: "32", pages: "1456" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c021
     section: gross
     statement: "A brain infarct swells and liquefies between days 3 and 5."
@@ -178,44 +178,44 @@ claims:
     date: 2026-11-03
   - claimId: liquefactive-necrosis-c023
     section: gross
-    statement: "Extensive CNS liquefaction may leave a permanent cavity or cyst."
+    statement: "A cavity or cyst left by liquefaction of a large CNS area remains for life."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c024
     section: gross
-    statement: "In a brain abscess, an initial edematous inflammatory phase (cerebritis) softens the tissue, and within days liquefaction forms an expanding mass."
+    statement: "A brain abscess starts as cerebritis, an edematous inflammatory reaction, from which an expanding mass of liquefied tissue develops within days."
     sourceRef: { source: rubin-8e, chapter: "32", pages: "1465" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c025
     section: micro
-    statement: "An abscess cavity contains amorphous eosinophilic material filled with neutrophils."
+    statement: "Neutrophils fill an abscess cavity together with structureless eosinophilic debris."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c026
     section: micro
-    statement: "A mature brain abscess has a purulent core enclosed, from inside out, by granulation tissue, a fibroblast-collagen layer, and a zone of reactive astrocytes, activated microglia and edema."
+    statement: "A mature brain abscess has a purulent core enclosed, from inside out, by granulation tissue, a fibroblast-collagen layer and an outer rim of reactive gliosis with edema."
     sourceRef: { source: rubin-8e, chapter: "32", pages: "1465-1466" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c027
     section: micro
-    statement: "Fibroblasts, rare in the brain, invade from the cerebral microvasculature to encapsulate a forming abscess."
+    statement: "The fibroblasts that wall off a forming brain abscess come from the cerebral microvasculature, as the brain otherwise has very few."
     sourceRef: { source: rubin-8e, chapter: "32", pages: "1465" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c028
     section: micro
     statement: "At 6 to 24 hours a brain infarct contains shrunken eosinophilic red neurons with pyknotic nuclei."
@@ -226,60 +226,60 @@ claims:
     date: 2026-11-03
   - claimId: liquefactive-necrosis-c029
     section: micro
-    statement: "Between 24 and 72 hours neutrophils enter the infarct, vessels become prominent and the tissue becomes soft and swollen."
+    statement: "At 24-72 hours the infarct is edematous and softened, with prominent vessels and infiltrating neutrophils."
     sourceRef: { source: rubin-8e, chapter: "32", pages: "1456" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c030
     section: micro
-    statement: "At 3-4 days macrophages supplant neutrophils and begin removing debris; the infarct is mushy."
+    statement: "By 3-4 days the infarct is pulpy, and the neutrophils have given way to macrophages, which begin phagocytosing the dead tissue."
     sourceRef: { source: rubin-8e, chapter: "32", pages: "1456" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c031
     section: micro
-    statement: "In week two reactive astrocytes appear alongside macrophages and over weeks to months build a dense glial network around the necrotic area."
+    statement: "Over weeks to months dense gliosis encloses the necrotic area; it is formed by reactive astrocytes that join the macrophages from the second week."
     sourceRef: { source: rubin-8e, chapter: "32", pages: "1456" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c032
     section: micro
-    statement: "The old brain infarct ends as a glia-lined cyst crossed by thin glial septa and small vessels, containing residual macrophages loaded with lipid or hemosiderin."
+    statement: "The end stage is a fluid-filled cavity walled by gliosis, with scattered foamy and hemosiderin-containing macrophages and a few thin glial strands and vessels crossing it."
     sourceRef: { source: rubin-8e, chapter: "32", pages: "1456" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c033
     section: ancillary
-    statement: "Pathogens of brain abscess are frequently anaerobes or microaerophiles, so cultures may be negative."
+    statement: "Cultures of brain abscess pus may fail because the causative bacteria often grow only without oxygen or at low oxygen levels."
     sourceRef: { source: rubin-8e, chapter: "32", pages: "1465" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c034
     section: clinical
-    statement: "A furuncle starts as a painful red nodule at a hair follicle, develops a yellow apex and a necrotic fluctuant core, and is relieved by rupture or incision."
+    statement: "A furuncle is a painful follicle-centred nodule whose pain is relieved by rupture or incision, by which time its centre has died and become fluctuant."
     sourceRef: { source: rubin-8e, chapter: "9", pages: "409-410" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c035
     section: clinical
-    statement: "An expanding brain abscess can kill through herniation or by bursting into a ventricle."
+    statement: "Herniation and rupture into a ventricle are two ways a growing brain abscess can kill."
     sourceRef: { source: rubin-8e, chapter: "32", pages: "1465-1466" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c036
     section: clinical
     statement: "A swollen, edematous brain infarct can cause lethal mass effect."
@@ -290,28 +290,28 @@ claims:
     date: 2026-11-03
   - claimId: liquefactive-necrosis-c037
     section: diagnosis
-    statement: "The granulation tissue layer of a brain abscess lacks a blood-brain barrier and leaks contrast, giving smooth ring enhancement."
+    statement: "Smooth ring enhancement of a brain abscess reflects contrast leaking from its granulation tissue, which has no blood-brain barrier."
     sourceRef: { source: rubin-8e, chapter: "32", pages: "1465" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c038
     section: diagnosis
-    statement: "On contrast T1 MRI a smooth enhancing rim of even (usually small) thickness around a hypointense core strongly suggests a pyogenic abscess."
+    statement: "A pyogenic abscess is strongly suggested when contrast-enhanced T1 MRI shows a hypointense centre inside a smooth enhancing rim that is equally thick all the way round."
     sourceRef: { source: rubin-8e, chapter: "32", pages: "1466" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c039
     section: diagnosis
-    statement: "On DWI the abscess core is bright, reflecting restricted water diffusion attributed to neutrophils holding water, while necrotic centres of metastatic or malignant primary brain tumors usually show little or no such restriction."
+    statement: "Necrotic centres of metastases or of malignant tumours arising in the brain usually remain dark on DWI, unlike the bright abscess core, where neutrophils sequester water and restrict its diffusion."
     sourceRef: { source: rubin-8e, chapter: "32", pages: "1466" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c040
     section: diagnosis
     statement: "Cerebral infarcts also show strongly restricted diffusion on DWI."
@@ -322,12 +322,12 @@ claims:
     date: 2026-11-03
   - claimId: liquefactive-necrosis-c041
     section: prognosis
-    statement: "An untreated, undrained brain abscess can extrude microbes to form daughter abscesses or rupture into the ventricles."
+    statement: "Without drainage or antibiotics, a brain abscess may rupture into the ventricles or give rise to daughter abscesses, seeded by organisms that the build-up of pressure inside it pushes into neighbouring brain tissue."
     sourceRef: { source: rubin-8e, chapter: "32", pages: "1465" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "fixer-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c042
     section: prognosis
     statement: "Repeated bloodstream seeding explains why 15-20% of patients have more than one brain abscess."
@@ -346,20 +346,20 @@ claims:
     date: 2026-11-03
   - claimId: liquefactive-necrosis-c044
     section: prognosis
-    statement: "Brain infarct debris is removed by macrophages slowly, roughly 1 mL each month."
+    statement: "About 1 mL of brain infarct is removed by macrophages each month."
     sourceRef: { source: rubin-8e, chapter: "32", pages: "1456" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c045
     section: prognosis
-    statement: "People who survive swallowing caustics have a markedly raised lifelong risk of esophageal squamous cell carcinoma."
+    statement: "Esophageal squamous cell carcinoma becomes much more likely, for life, after surviving caustic ingestion."
     sourceRef: { source: rubin-8e, chapter: "19", pages: "773" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c046
     section: differential
     statement: "In coagulative necrosis cell outlines are preserved early, cytoplasm is eosinophilic and nuclei are lost; outside the brain it is not followed by liquefaction."
@@ -370,28 +370,28 @@ claims:
     date: 2026-11-03
   - claimId: liquefactive-necrosis-c047
     section: differential
-    statement: "In caseous necrosis dead cells lose outlines but are not lysed, persisting as granular cheesy debris in granulomas, characteristically in tuberculosis."
+    statement: "Caseous necrosis leaves granular, cheese-like debris inside granulomas, typically in tuberculosis: the cells lose their outlines but are not lysed."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "40" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c048
     section: differential
-    statement: "Fat necrosis affects adipose tissue, mainly from pancreatitis or trauma, with fatty acids precipitating as chalky white calcium soaps."
+    statement: "Seen mainly after pancreatitis or trauma, fat necrosis is limited to adipose tissue, where fatty acids combine with calcium into chalky white soaps."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "39-40" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c049
     section: differential
-    statement: "Necrotic centres of metastatic and malignant brain tumors generally lack the marked diffusion restriction of abscess cores, so they tend to look dark on DWI."
+    statement: "On DWI the necrotic centre of a metastasis or a malignant brain tumour tends to look dark, because it lacks the strong diffusion restriction of an abscess core."
     sourceRef: { source: rubin-8e, chapter: "32", pages: "1466" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c050
     section: high-yield
     statement: "Liquefaction occurs when enzymatic dissolution of dead cells outpaces repair."
@@ -414,16 +414,16 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c053
     section: high-yield
-    statement: "Brain necrosis is coagulative first and then liquefies without depending on acute inflammation, possibly through lysosomal enzymes."
+    statement: "Brain liquefaction does not depend on acute inflammation: the necrosis is coagulative first and then dissolves, possibly through lysosomal enzymes."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c054
     section: high-yield
     statement: "Brain infarct sequence: red neurons at 6-24 h, neutrophils at 24-72 h, macrophages at 3-4 days, astrocytes from week two, glia-lined cyst over weeks to months."
@@ -442,12 +442,12 @@ claims:
     date: 2026-11-03
   - claimId: liquefactive-necrosis-c056
     section: high-yield
-    statement: "Carbon monoxide poisoning produces bilateral liquefactive necrosis of the globus pallidus."
+    statement: "Carbon monoxide poisoning causes liquefactive necrosis of both globi pallidi."
     sourceRef: { source: rubin-8e, chapter: "32", pages: "1490" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: liquefactive-necrosis-c057
     section: high-yield
     statement: "Alkalis produce liquefactive necrosis, acids coagulative necrosis."
@@ -512,3 +512,139 @@ claims:
     verifiedBy: agent
     verifier: "verifier-agent"
     date: 2026-11-03
+  - claimId: liquefactive-necrosis-c065
+    section: etiology
+    statement: "Aspiration is the leading cause of lung abscess; over 90% of cases are due to aspirated anaerobic bacteria of the oropharynx, usually as a polymicrobial infection."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "713-714" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: liquefactive-necrosis-c066
+    section: etiology
+    statement: "Alcoholism is the commonest background of lung abscess; depressed consciousness favours aspiration, but an abscess forms only if impaired coughing or airway clearance also leaves the aspirate in place."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "713-714" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: liquefactive-necrosis-c067
+    section: gross
+    statement: "A bland brain infarct becomes hemorrhagic, and is then easily seen grossly and on imaging, when blood flow returns to the softened tissue, as may happen with embolic occlusion."
+    sourceRef: { source: rubin-8e, chapter: "32", pages: "1456" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: liquefactive-necrosis-c068
+    section: gross
+    statement: "The right main bronchus is more directly aligned with the trachea, which is why lung abscesses predominate on the right."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "714" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: liquefactive-necrosis-c069
+    section: ancillary
+    statement: "No change is visible in a brain infarct when death follows its onset by minutes to several hours, so a normal-looking brain does not exclude it; at 6-24 hours the gray-white boundary becomes blurred."
+    sourceRef: { source: rubin-8e, chapter: "32", pages: "1456" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: liquefactive-necrosis-c070
+    section: ancillary
+    statement: "In CNS infections the type of inflammation hints at the organism, though not reliably: neutrophils suggest bacteria, whereas granulomas more often suggest fungi or mycobacteria."
+    sourceRef: { source: rubin-8e, chapter: "32", pages: "1463" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: liquefactive-necrosis-c071
+    section: ancillary
+    statement: "Gram staining, used on smears and on tissue sections, shows gram-positive bacteria dark blue and gram-negative bacteria red; S. aureus appears as clustered gram-positive cocci."
+    sourceRef: { source: rubin-8e, chapter: "9, 18", pages: "409, 418, 709" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: liquefactive-necrosis-c072
+    section: ancillary
+    statement: "Gram staining and Gomori methenamine silver (GMS) are the preferred stains for Nocardia, a filamentous abscess-forming bacterium; silver stains also demonstrate fungi."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "709-711" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: liquefactive-necrosis-c073
+    section: ancillary
+    statement: "Fungal morphology in tissue, such as budding yeasts or branching hyphae, allows only a tentative identification; the species needs laboratory confirmation such as culture or PCR."
+    sourceRef: { source: rubin-8e, chapter: "32", pages: "1468-1469" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: liquefactive-necrosis-c074
+    section: ancillary
+    statement: "Yellow-brown granules in macrophages of an old brain infarct are hemosiderin, which the Prussian blue (Perls) stain identifies as iron."
+    sourceRef: { source: rubin-8e, chapter: "1, 32", pages: "6-7, 1456" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: liquefactive-necrosis-c075
+    section: ancillary
+    statement: "GFAP immunostaining highlights reactive astrocytes, which form the gliosis around old infarcts and abscesses; CD68, a macrophage marker, stains macrophages and activated microglia."
+    sourceRef: { source: rubin-8e, chapter: "32", pages: "1442-1444, 1456, 1465" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: liquefactive-necrosis-c076
+    section: diagnosis
+    statement: "On a chest radiograph, a lung abscess that has partly drained into a bronchus shows an air-fluid level."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "715" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: liquefactive-necrosis-c077
+    section: high-yield
+    statement: "Lung abscess: usually from aspirated oral anaerobes, more often on the right, with an air-fluid level once it drains into a bronchus."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "713-715" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: liquefactive-necrosis-c078
+    section: traps
+    statement: "A lung cavity does not prove an abscess: cancer cavitates more often than lung abscess, and air-fluid levels are uncommon in tuberculous cavities."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "715" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: liquefactive-necrosis-c079
+    section: clinical
+    statement: "Copious, foul-smelling sputum is typical of lung abscess, and nearly all patients have fever and cough."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "715" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: liquefactive-necrosis-c080
+    section: prognosis
+    statement: "Severe hemoptysis is one danger of lung abscess; another is empyema, when the abscess ruptures into the pleural cavity."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "715" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: liquefactive-necrosis-c081
+    section: etiology
+    statement: "Periodontitis or neglected oral hygiene favours lung abscess, since the aspirate then carries a heavy anaerobic load."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "714" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09

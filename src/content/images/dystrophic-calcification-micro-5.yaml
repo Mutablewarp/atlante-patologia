@@ -1,0 +1,81 @@
+# License check (2026-11-07): Commons file page {{Information}} gives description "Psammoma body in papillary thyroid
+# carcinoma", date 2016-10-12, source {{own}}, author [[User:Eriugen]]; licence template {{self|cc-by-sa-4.0}};
+# extmetadata LicenseShortName "CC BY-SA 4.0", AttributionRequired true, Credit "Own work". Uploaded by Eriugen through
+# the Science Photo Competition 2016 (Ukraine) upload campaign; the uploader's other files are micrographs of the same
+# kind (Congo red, alpha-synuclein immunostaining, papillary thyroid carcinoma nuclei), which supports own work. CC BY-SA
+# is approved as a class by owner decision O7 (plan/v2-plan.md, 2026-11-03), hence ownerApproved: true. The file is used
+# exactly as published (1280 × 1024 px, sha1 96291340d63b21015b1177efbbde568f39a43382). The Ukrainian note on the file
+# page (psammoma bodies "pathognomonic" of malignant papillary tumours) was not used: they also occur in meningioma.
+# The source names neither the stain nor the objective; "×400" comes from the file name. Facts in the caption checked
+# against rubin-8e ch. 27 p. 1217 (degenerative calcification of papillae, concentric lamination, diagnosis by
+# architecture and nuclei), ch. 24 p. 1061 and ch. 32 p. 1513 (other sites).
+id: dystrophic-calcification-micro-5
+file: dystrophic-calcification-micro-5.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Psammoma_body_Papillary_thyroid_carcinoma_magnx400.jpg
+author: Eriugen
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+retrievedAt: 2026-11-07
+modifications: none
+attributionText: >-
+  Eriugen, "Psammoma body Papillary thyroid carcinoma magnx400", via Wikimedia Commons, CC BY-SA 4.0
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-07 }
+stain: H&E (not named by the source; read from the colours)
+magnification: high power (×400 according to the file name)
+lookFor:
+  it: "Segui gli anelli dal bordo del corpo fino al suo centro."
+  en: "Follow the rings from the rim of the body inwards to its centre."
+caption:
+  it: >-
+    Corpo psammomatoso in un carcinoma papillare della tiroide, a forte ingrandimento (×400 secondo la fonte, che non
+    indica la colorazione; i colori sono compatibili con un'EE dalla dominante violacea). A destra del centro c'è un
+    grande corpo rotondo, viola scuro, dal contorno netto. Guardane l'interno: è fatto di tante sottili lamelle
+    concentriche, come gli anelli di un tronco tagliato di traverso, disposte attorno a un piccolo centro. È proprio
+    questa stratificazione concentrica a definire il corpo psammomatoso (dal greco psámmos, sabbia): un granello
+    microscopico di sali di calcio deposti uno strato dopo l'altro. Intorno c'è stroma fibroso chiaro, e in questo campo
+    non si riconoscono con chiarezza cellule tumorali; nell'angolo in alto a destra un altro deposito scuro, irregolare
+    e frammentato è probabilmente anch'esso calcifico. Perché distrofica? Il calcio si deposita su tessuto tumorale
+    degenerato (nel carcinoma papillare, le papille) e la calcemia non c'entra. Dove aspettarseli: tipici del
+    carcinoma papillare della tiroide, frequenti nel carcinoma sieroso di basso grado dell'ovaio e comuni nel
+    meningioma. Attenzione: il corpo psammomatoso è un indizio forte, non una diagnosi; il carcinoma papillare si
+    riconosce dalle caratteristiche proprie del tumore, le papille e soprattutto l'aspetto dei nuclei.
+  en: >-
+    Psammoma body in a papillary thyroid carcinoma, high power (×400 according to the source, which does not name the
+    stain; the colours fit H&E with a violet cast). Right of centre sits a large, round, deep-purple body with a sharp
+    outline. Look inside it: it is built of many thin concentric layers, like the rings of a tree trunk cut across,
+    wrapped around a small core. That concentric lamination is what defines a psammoma body (from the Greek psámmos,
+    sand): a microscopic grain of calcium salts laid down one layer after another. Around it lies pale fibrous stroma,
+    and no tumour cells can be clearly made out in this field; in the top right corner another dark, irregular, broken
+    deposit is probably calcified as well. Why dystrophic? The calcium settles on tumour tissue that has degenerated (in
+    papillary thyroid carcinoma, the papillae), and blood calcium plays no part. Where to expect them: classically in
+    papillary thyroid carcinoma, often in low-grade serous carcinoma of the ovary and commonly in meningioma. Pitfall: a
+    psammoma body is a strong clue, not a diagnosis; papillary carcinoma is recognised by the tumour's own features,
+    its papillae and above all the look of its nuclei.
+alt:
+  it: >-
+    Micrografia a forte ingrandimento in toni violacei: a destra del centro un grande corpo rotondo viola scuro, formato
+    da sottili anelli concentrici, in mezzo a tessuto fibroso chiaro con fessure bianche; nell'angolo in alto a destra
+    un deposito scuro, irregolare e frammentato.
+  en: >-
+    High-power micrograph in shades of violet: right of centre a large, round, dark purple body made of fine concentric
+    rings lies in pale fibrous tissue with white clefts; a dark, irregular, broken deposit fills the top right corner.
+annotations:
+  - id: psammoma-body
+    label: { it: "Corpo psammomatoso", en: "Psammoma body" }
+    revealOrder: 1
+    shape: { type: circle, coords: [0.638, 0.347, 0.212] }
+  - id: concentric-lamellae-centre
+    label: { it: "Centro delle lamelle concentriche", en: "Centre of the concentric lamellae" }
+    revealOrder: 2
+    shape: { type: circle, coords: [0.652, 0.335, 0.05] }
+  - id: fibrous-stroma
+    label: { it: "Stroma fibroso", en: "Fibrous stroma" }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.02, 0.40, 0.40, 0.40, 0.40, 0.70, 0.02, 0.70] }
+  - id: second-dark-deposit
+    label: { it: "Altro deposito scuro e frammentato, probabilmente calcifico", en: "Another dark, broken deposit, probably calcified" }
+    revealOrder: 4
+    shape: { type: polygon, coords: [0.85, 0.0, 1.0, 0.0, 1.0, 0.40, 0.88, 0.38, 0.85, 0.22] }

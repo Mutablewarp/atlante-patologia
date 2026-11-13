@@ -49,6 +49,8 @@ const members = image ? groupMembers(image.group ? await images() : [], image) :
 const panels = (await Promise.all(members.map(load))).filter((p) => p !== undefined);
 const active = panels.findIndex((p) => p.img.id === image?.id);
 
+/** Two decimals are far finer than a pixel; `0.1 * 3` would print as 0.30000000000000004. */
+const r = (v: number) => +v.toFixed(2);
 /** Label anchor point in %, from normalized shape coordinates. */
 const anchor = (s: Img['annotations'][number]['shape']) => {
   const c = s.coords;
@@ -152,11 +154,11 @@ const helpId = `viewer-help-${id}`;
                       {notes.map((n) => {
                         const c = n.shape.coords;
                         return n.shape.type === 'circle' ? (
-                          <circle data-order={n.revealOrder} cx={c[0]! * W} cy={c[1]! * H} r={c[2]! * W} />
+                          <circle data-order={n.revealOrder} cx={r(c[0]! * W)} cy={r(c[1]! * H)} r={r(c[2]! * W)} />
                         ) : n.shape.type === 'rect' ? (
-                          <rect data-order={n.revealOrder} x={c[0]! * W} y={c[1]! * H} width={c[2]! * W} height={c[3]! * H} />
+                          <rect data-order={n.revealOrder} x={r(c[0]! * W)} y={r(c[1]! * H)} width={r(c[2]! * W)} height={r(c[3]! * H)} />
                         ) : (
-                          <polygon data-order={n.revealOrder} points={c.map((v, j) => (j % 2 === 0 ? v * W : v * H)).join(' ')} />
+                          <polygon data-order={n.revealOrder} points={c.map((v, j) => r(j % 2 === 0 ? v * W : v * H)).join(' ')} />
                         );
                       })}
                     </svg>
@@ -172,7 +174,7 @@ const helpId = `viewer-help-${id}`;
                         data-n={k + 1}
                         data-h={at.h}
                         data-v={at.v}
-                        style={`left:${p.x}%;top:${p.y}%`}
+                        style={`left:${r(p.x)}%;top:${r(p.y)}%`}
                         aria-hidden="true"
                       >
                         <span class="viewer-label-text">{n.label[lang]}</span>

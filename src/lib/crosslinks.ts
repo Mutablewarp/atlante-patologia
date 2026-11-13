@@ -23,6 +23,9 @@ export type CrossLinkCtx = {
 };
 
 const LINK = /\[\[(g:)?([a-z0-9]+(?:-[a-z0-9]+)*)(?:\|([^\]]+))?\]\]/g;
+
+/** Claim markers (`<!--c:id-->`) are for the gates, which read them from the Markdown; the built page does not need them. */
+export const dropClaimMarkers = (html: string) => html.replace(/<!--\s*c:[a-z0-9-]+\s*-->/g, '');
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const humanize = (id: string) => id.replace(/-/g, ' ');
 

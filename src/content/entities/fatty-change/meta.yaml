@@ -31,6 +31,8 @@ learningObjectives:
     en: "List the main causes (alcohol, metabolic syndrome, drugs and toxins, kwashiorkor, acute fatty liver of pregnancy, Reye syndrome) and give organ examples in liver and skeletal muscle (and heart in systemic carnitine deficiency)."
   - it: "Discutere la reversibilità della steatosi e distinguerla dalla steatoepatite e dalla steatonecrosi."
     en: "Discuss the reversibility of fatty change and distinguish it from steatohepatitis and from fat necrosis."
+  - it: "Indicare come si studia una steatosi: agobiopsia epatica e suoi limiti, tipo e grado in ematossilina-eosina, colorazioni per i grassi su sezioni congelate, PAS-D, tricromica e biopsia muscolare."
+    en: "State how fatty change is studied: liver needle biopsy and its limits, pattern and grade on H&E, fat stains on frozen sections, PAS-D, trichrome and muscle biopsy."
 prerequisites: []
 relations:
   - type: differentialOf
@@ -111,12 +113,44 @@ chain:
     lab:
       it: "Aumento solo moderato delle transaminasi"
       en: "Only moderate rise in serum liver enzymes"
+examQuestions:
+  - it: "Mi parli della steatosi: che cos'è, in quali organi la si osserva e quali ne sono le cause principali?"
+    en: "Tell me about fatty change: what is it, in which organs is it seen, and what are its main causes?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Che cosa vede al microscopio in un fegato steatosico, e come distingue la forma macrovescicolare da quella microvescicolare?"
+    en: "What do you see under the microscope in a fatty liver, and how do you tell the macrovesicular form from the microvesicular one?"
+    focus: [micro, high-yield]
+    level: 1
+  - it: "Mi spieghi perché i trigliceridi si accumulano nell'epatocita, prendendo come esempi l'alcol e il kwashiorkor."
+    en: "Explain why triglycerides build up in the hepatocyte, taking alcohol and kwashiorkor as examples."
+    focus: [pathogenesis]
+    level: 2
+  - it: "Quali colorazioni userebbe per dimostrare che i vacuoli di un epatocita contengono grasso, e su quale tipo di sezione?"
+    en: "Which stains would you use to prove that the vacuoles in a hepatocyte contain fat, and on what kind of section?"
+    focus: [ancillary]
+    level: 2
+  - it: "Come distingue la steatosi dal rigonfiamento idropico, dall'accumulo di glicogeno e dalla steatonecrosi?"
+    en: "How do you tell fatty change from hydropic swelling, from glycogen accumulation and from fat necrosis?"
+    focus: [differential, ancillary, traps]
+    level: 3
+  - it: "Da che cosa dipende la prognosi di un fegato steatosico, e che cosa deve cercare il patologo in una biopsia epatica?"
+    en: "What does the outlook of a fatty liver depend on, and what must the pathologist look for in a liver biopsy?"
+    focus: [prognosis, diagnosis, ancillary]
+    level: 3
 images:
   - id: fatty-change-gross-1
     role: gross
   - id: fatty-change-micro-1
     role: micro
   - id: fatty-change-micro-2
+    role: micro
+  - id: fatty-change-gross-2
+    role: gross
+    pairWith: fatty-change-micro-1
+  - id: fatty-change-micro-3
+    role: micro
+  - id: fatty-change-micro-4
     role: micro
 reviewStatus: ai-generated-unreviewed
 editionDependent: false
@@ -131,6 +165,9 @@ sources:
     chapter: "8"
     pages: "381-382"
   - source: rubin-8e
+    chapter: "9"
+    pages: "414"
+  - source: rubin-8e
     chapter: "14"
     pages: "575-577"
   - source: rubin-8e
@@ -138,9 +175,11 @@ sources:
     pages: "721"
   - source: rubin-8e
     chapter: "20"
-    pages: "867-870, 880-882"
+    pages: "867-870, 878-882"
   - source: rubin-8e
     chapter: "31"
     pages: "1411, 1425"
-lastUpdated: 2026-11-03
+  - source: brunt-2010
+  - source: ibdah-1999
+lastUpdated: 2026-11-09
 status: published

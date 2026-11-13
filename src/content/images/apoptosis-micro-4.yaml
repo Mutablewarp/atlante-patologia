@@ -1,0 +1,89 @@
+# License check (2026-11-04): Wellcome Collection catalogue record f3wqugh7 (Miro image number W0043170), read through
+# the catalogue API: item location license "CC0 1.0 Universal", credit "Wellcome Collection", access open. The holding
+# institution publishes the photomicrograph itself, so there is no uploader/creator gap; the photographer is not named.
+# Histology only; nothing identifies the patient. The record names W0043171 (apoptosis-micro-5) as another view from
+# the same case, so both share one group.
+id: apoptosis-micro-4
+file: apoptosis-micro-4.jpg
+kind: micro
+sourceUrl: https://wellcomecollection.org/works/f3wqugh7
+author: Wellcome Collection (photographer not named)
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-11-04
+modifications:
+  it: >-
+    Ridimensionata dall'originale di 5150 × 3392 px a 1600 × 1054 px dal server di immagini IIIF della Wellcome
+    Collection; la versione JPEG è usata così come fornita. Nessun ritaglio, nessuna modifica dei colori.
+  en: >-
+    Downscaled from the 5150 × 3392 px original to 1600 × 1054 px by the Wellcome Collection IIIF image server; the
+    JPEG rendition is used as delivered. No crop, no colour change.
+attributionText: "Wellcome Collection, \"Rectum: HIV-related enteropathy\" (image W0043170), CC0 1.0 (public domain dedication)"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-04 }
+group: apoptosis-hiv-enteropathy
+stain: H&E
+magnification: medium power (as described by the source)
+orientation:
+  it: "La superficie luminale è oltre il margine superiore; le basi delle cripte e la muscularis mucosae sono in basso."
+  en: "The luminal surface is beyond the top edge; the crypt bases and the muscularis mucosae are at the bottom."
+lookFor:
+  it: "Cerca alla base delle cripte, in basso a destra, i piccoli punti scuri dentro l'epitelio, poi verifica che la lamina propria intorno non contenga neutrofili."
+  en: "Scan the crypt bases at lower right for tiny dark dots inside the epithelium, then check that the lamina propria around them holds no neutrophils."
+caption:
+  it: >-
+    Biopsia rettale di un adulto HIV-positivo con diarrea, EE a medio ingrandimento; secondo la scheda della fonte, nel
+    campione non c'erano infiammazione né agenti infettivi riconoscibili. Parti dall'architettura: cripte alte e
+    regolari, piene di cellule caliciformi gonfie di muco, poggiano sulla banda rosa della muscularis mucosae in basso, e
+    la lamina propria tra una cripta e l'altra è chiara e povera di cellule. Poi spostati in basso a destra: alcune
+    cripte sono più sottili e più violacee, con meno cellule caliciformi, e alla base sono punteggiate da piccole
+    particelle rotonde e scure. Ogni punto è il nucleo condensato o frammentato di una singola cellula epiteliale morta
+    per apoptosi. Il concetto chiave: le cellule muoiono una alla volta dentro un epitelio che resta integro, e nella
+    lamina propria non compaiono neutrofili, perché i corpi apoptotici vengono fagocitati senza scatenare infiammazione.
+    Passa all'immagine a forte ingrandimento dello stesso caso per vedere da vicino i corpi apoptotici. Nell'intestino,
+    corpi apoptotici alla base delle cripte con scarsa infiammazione sono il reperto principale della malattia del
+    trapianto contro l'ospite (GVHD); alcuni farmaci e, come qui, l'infezione da HIV possono dare un quadro simile,
+    quindi è il contesto clinico a orientare la diagnosi.
+  en: >-
+    Rectal biopsy from an HIV-positive adult with diarrhoea, H&E at medium power; according to the source record, the
+    sample showed no inflammation and no recognisable infective agent. Start with the architecture: tall, regular
+    crypts full of mucus-swollen goblet cells rest on the pink band of the muscularis mucosae at the bottom, and the
+    lamina propria between the crypts is pale and holds few cells. Then move to the lower right: some crypts are
+    thinner and more purple, with fewer goblet cells, and their bases are dotted with small, round, dark particles. Each
+    dot is the condensed or fragmented nucleus of a single epithelial cell that has died by apoptosis. Key point: the
+    cells die one at a time inside an epithelium that stays intact, and no neutrophils appear in the lamina propria,
+    because apoptotic bodies are engulfed without triggering inflammation. Switch to the high-power image of the same
+    case to see the apoptotic bodies up close. In the bowel, apoptotic bodies at the base of the crypts with little
+    inflammation are the main finding of graft-versus-host disease (GVHD); some drugs and, as here, HIV infection can
+    produce a similar picture, so the clinical setting guides the diagnosis.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina a medio ingrandimento di mucosa rettale: cripte parallele piene di vacuoli chiari
+    di muco scendono dall'alto verso il basso, una banda rosa di muscolatura liscia corre lungo il margine inferiore e le
+    cripte in basso a destra sono più sottili e scure, con piccoli punti scuri sparsi vicino alla base.
+  en: >-
+    Medium-power H&E micrograph of rectal mucosa: parallel crypts filled with clear mucus vacuoles run from top to
+    bottom, a pink band of smooth muscle lies along the lower edge, and the crypts at lower right are thinner and
+    darker, with small dark dots scattered near their bases.
+annotations:
+  - id: crypt-base-apoptotic-bodies
+    label: { it: Base di cripta con corpi apoptotici, en: Crypt base with apoptotic bodies }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.62, 0.72, 0.70, 0.72, 0.70, 0.90, 0.62, 0.90] }
+  - id: thinned-crypt
+    label: { it: Cripta assottigliata con punti scuri apoptotici, en: Thinned crypt with dark apoptotic dots }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.74, 0.42, 0.83, 0.42, 0.83, 0.56, 0.74, 0.56] }
+  - id: goblet-cell-crypt
+    label: { it: "Cripta ricca di cellule caliciformi, per confronto", en: "Crypt rich in goblet cells, for comparison" }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.31, 0.05, 0.44, 0.05, 0.44, 0.78, 0.31, 0.78] }
+  - id: lamina-propria
+    label: { it: Lamina propria senza neutrofili, en: Lamina propria without neutrophils }
+    revealOrder: 4
+    shape: { type: polygon, coords: [0.70, 0.58, 0.80, 0.58, 0.80, 0.70, 0.70, 0.70] }
+  - id: muscularis-mucosae
+    label: { it: Muscularis mucosae, en: Muscularis mucosae }
+    revealOrder: 5
+    shape: { type: polygon, coords: [0.12, 0.88, 0.20, 0.84, 0.55, 0.84, 0.60, 0.90, 0.60, 1.0, 0.12, 1.0] }

@@ -1,0 +1,98 @@
+# License check (2026-11-07): taken from the article itself, not from Wikimedia Commons. The PMC open-access record
+# (pmc-oa-opendata, PMC10846056.1) gives license_code "CC BY"; the article's <permissions> block reads "distributed
+# under the terms of the Creative Commons Attribution 4.0 License" (https://creativecommons.org/licenses/by/4.0/),
+# © The Author(s) 2024. PubMed confirms PMID 38322111, doi:10.1177/20420188241227766, Sergi CM, Kehar M,
+# Jimenez-Rivera C, Ther Adv Endocrinol Metab 2024;15:20420188241227766. The Figure 1 legend has no "reproduced" or
+# "with permission" note: the micrographs are the authors' own case material. Allowed under COMPLIANCE_PLAN §4
+# (PubMed Central figure in an article with an explicit CC BY licence). Histology only; the legend gives only the
+# patients' age and sex, which do not identify them. Panels (c) H&E and (d) Masson trichrome were not used.
+# The web figure on PMC is only 689 px wide, so the crop was taken from the larger image embedded in the article PDF
+# of the same open-access record. No mpp: the source gives a 200 µm scale bar, not a calibration of this file.
+# sourceUrl (2026-11-09): the PMC figure page; the id fig1-20420188241227766 is the <fig> id in the article XML
+# (NCBI efetch db=pmc, id 10846056), which also carries the CC BY 4.0 <license> block.
+id: fatty-change-micro-3
+file: fatty-change-micro-3.jpg
+kind: micro
+sourceUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC10846056/figure/fig1-20420188241227766/
+author: Consolato M. Sergi, Mohit Kehar, Carolina Jimenez-Rivera
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-11-07
+modifications:
+  it: >-
+    Ritagliata la riga superiore della Figura 1, cioè i pannelli (a) e (b), dall'immagine JPEG di 1334 × 1001 px
+    contenuta nel PDF ad accesso aperto dell'articolo (PMC10846056): pixel x 0–1333, y 0–483, per un risultato di
+    1334 × 484 px; i pannelli (c) e (d) sono esclusi. Ricodificata in JPEG; nessun ridimensionamento, nessuna modifica
+    dei colori. Frecce, lettere dei pannelli e barre di scala fanno parte della figura pubblicata.
+  en: >-
+    Cropped to the top row of Figure 1, panels (a) and (b), from the 1334 × 1001 px JPEG embedded in the article's
+    open-access PDF (PMC10846056): pixels x 0–1333, y 0–483, giving 1334 × 484 px; panels (c) and (d) are left out.
+    Re-encoded as JPEG; no resize, no colour change. The arrows, panel letters and scale bars belong to the published
+    figure.
+attributionText: >-
+  Consolato M. Sergi, Mohit Kehar, Carolina Jimenez-Rivera, "Liver Biopsy Handling of Metabolic-Associated Fatty Liver
+  Disease (MAFLD): the Children's Hospital of Eastern Ontario grossing protocol", Therapeutic Advances in
+  Endocrinology and Metabolism 2024;15:20420188241227766, doi:10.1177/20420188241227766, Figure 1 (panels a and b,
+  cropped), CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-07 }
+stain: "Oil Red O (the source: ORO solution for fat), frozen sections"
+magnification: "low power (the source: 100× magnification)"
+section: frozen
+orientation:
+  it: "Due pannelli affiancati di due pazienti diversi: (a) a sinistra, (b) a destra; ogni barra nera misura 200 µm."
+  en: "Two panels side by side from two different patients: (a) on the left, (b) on the right; each black bar is 200 µm."
+lookFor:
+  it: "Confronta quanta parte di ciascun frustolo è rossa: puntini sparsi in (a), rosso quasi continuo in (b)."
+  en: "Compare how much of each core is red: scattered dots in (a), almost continuous red in (b)."
+caption:
+  it: >-
+    Oil Red O su sezioni congelate di agobiopsie epatiche di due adolescenti con steatosi epatica non alcolica
+    (NAFLD), a piccolo ingrandimento (×100 secondo la fonte); (a) e (b) vengono da due pazienti diversi. L'Oil Red O
+    è un colorante liposolubile: passa nei lipidi neutri e li tinge di rosso, mentre i nuclei restano blu. Guarda
+    prima (a): il rosso è scarso, una fine punteggiatura su tutto il frustolo con qualche goccia più grossa qua e là
+    (freccia); il grasso è poco. Poi passa a (b): qui il rosso domina, con gocce grosse e rotonde, molte fuse in
+    chiazze rosse, che occupano gran parte del frustolo (freccia); il grasso è massiccio. Perché proprio la sezione
+    congelata? I solventi usati per allestire le sezioni in paraffina sciolgono il grasso, ed è per questo che in EE
+    le stesse gocce appaiono come buchi vuoti. Un frammento della biopsia va quindi congelato e tagliato al criostato
+    anziché incluso in paraffina, e la colorazione va prevista al momento del prelievo: su un blocchetto di paraffina
+    non si può più fare. Attenzione: la banda sfocata lungo il lato destro di (a) è un artefatto della sezione, non
+    una lesione.
+  en: >-
+    Oil red O on frozen sections of liver needle biopsies from two teenagers with nonalcoholic fatty liver disease,
+    at low power (×100 in the source); (a) and (b) come from two different patients. Oil red O is a fat-soluble dye:
+    it moves into neutral lipid and turns it red, while the nuclei stay blue. Look at (a) first: the red is sparse, a
+    fine stippling over the whole core with a bigger drop here and there (arrow); there is little fat. Then move to
+    (b): here red dominates, with big round drops, many fused into red patches, taking up most of the core (arrow);
+    the fat load is massive. Why a frozen section? The solvents used to make paraffin sections dissolve the fat,
+    which is why the same droplets are only empty holes on H&E. A piece of the biopsy must therefore be frozen and cut
+    on a cryostat instead of being embedded in paraffin, and the stain has to be planned when the biopsy is taken:
+    once the tissue is in a paraffin block it is too late. Pitfall: the hazy band along the right side of (a) is a
+    section artefact, not a lesion.
+alt:
+  it: >-
+    Due micrografie affiancate di frammenti di biopsia epatica colorati con Oil Red O su fondo azzurro chiaro: a
+    sinistra (a) tessuto con nuclei blu e una fine punteggiatura rossa, con qualche goccia rossa più grossa e una
+    freccia nera; a destra (b) tessuto gremito di grosse gocce rosse rotonde, molte fuse tra loro, con una freccia
+    nera; in basso a destra di ogni pannello una barra di scala nera.
+  en: >-
+    Two side-by-side micrographs of liver biopsy fragments stained with oil red O on a pale blue background: on the
+    left (a) tissue with blue nuclei and a fine red stippling, with occasional bigger red drops and a black arrow; on
+    the right (b) tissue crowded with big round red drops, many fused together, with a black arrow; a black scale bar
+    at the lower right of each panel.
+annotations:
+  - id: scattered-droplets
+    label: { it: "(a) Goccioline rosse sparse: poco grasso", en: "(a) Scattered red droplets: little fat" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.14, 0.53, 0.18, 0.53, 0.18, 0.66, 0.14, 0.66] }
+  - id: confluent-droplets
+    label:
+      it: "(b) Grosse gocce rosse, molte fuse tra loro: grasso massiccio"
+      en: "(b) Big red drops, many fused together: massive fat"
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.66, 0.36, 0.95, 0.36, 0.95, 0.86, 0.66, 0.86] }
+  - id: section-artefact
+    label: { it: "Banda sfocata: artefatto della sezione", en: "Out-of-focus band: section artefact" }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.40, 0.12, 0.50, 0.12, 0.50, 0.99, 0.40, 0.99] }

@@ -29,6 +29,8 @@ learningObjectives:
     en: "Explain how caspase-1 matures IL-1β and IL-18 and how cleavage of gasdermin D creates membrane pores."
   - it: "Collegare la piroptosi alla difesa dalle infezioni, alla perdita dei linfociti T CD4+ nell'HIV e alle sindromi autoinfiammatorie."
     en: "Relate pyroptosis to infection defense, CD4+ T-cell loss in HIV and autoinflammatory syndromes."
+  - it: "Spiegare come si dimostra la piroptosi (gasdermina D tagliata, caspasi-1 attiva, rilascio di IL-1β) e perché la morfologia o un TUNEL positivo da soli non bastano."
+    en: "Explain how pyroptosis is demonstrated (cleaved gasdermin D, active caspase-1, IL-1β release) and why morphology or a positive TUNEL alone is not enough."
 prerequisites: [apoptosis]
 relations:
   - type: sharesMechanism
@@ -76,8 +78,8 @@ quickCheck:
       it: "Perché la piroptosi è infiammatoria mentre l'apoptosi non lo è?"
       en: "Why is pyroptosis inflammatory while apoptosis is not?"
     a:
-      it: "Nella piroptosi la membrana si rompe e la cellula libera DAMP e citochine attive (IL-1β, IL-18) che richiamano altre cellule immunitarie; nell'apoptosi la membrana resta integra e i frammenti cellulari vengono rimossi senza infiammazione."
-      en: "In pyroptosis the membrane ruptures and the cell releases DAMPs and active cytokines (IL-1β, IL-18) that recruit more immune cells; in apoptosis the membrane stays intact and the fragments are cleared without inflammation."
+      it: "Altre cellule immunitarie vengono richiamate dai DAMP e dalle citochine attive (IL-1β, IL-18) che fuoriescono dalla cellula piroptotica, la cui membrana si rompe; la cellula apoptotica invece mantiene integra la membrana e i suoi frammenti vengono rimossi senza infiammazione."
+      en: "More immune cells are called in by the DAMPs and active cytokines (IL-1β, IL-18) that leak from the pyroptotic cell, whose membrane ruptures; an apoptotic cell keeps its membrane intact and its fragments are cleared without inflammation."
     kind: free
 selfExplain:
   - it: "Perché all'ospite può convenire che una cellula infettata da un batterio intracellulare muoia per piroptosi anziché per apoptosi?"
@@ -105,12 +107,43 @@ chain:
     lab:
       it: "Indici di flogosi elevati"
       en: "Raised systemic inflammatory markers"
+examQuestions:
+  - it: "Mi parli della piroptosi: che cos'è, da dove viene il suo nome e a che cosa serve all'organismo?"
+    en: "Tell me about pyroptosis: what is it, where does its name come from, and what does it do for the body?"
+    focus: [definition, high-yield]
+    level: 1
+  - it: "Che cos'è l'inflammasoma, da quali componenti è formato e quali stimoli, infettivi e sterili, lo attivano?"
+    en: "What is the inflammasome, what is it made of, and which stimuli, infectious and sterile, switch it on?"
+    focus: [pathogenesis, etiology]
+    level: 1
+  - it: "Mi descriva che cosa accade dall'attivazione della caspasi-1 alla morte della cellula: perché la cellula si rigonfia e scoppia, e da dove esce l'IL-1β?"
+    en: "Walk me through what happens from caspase-1 activation to the death of the cell: why does the cell swell and burst, and which way does IL-1β get out?"
+    focus: [pathogenesis, traps]
+    level: 2
+  - it: "Perché si dice che l'inflammasoma NLRP3 ha bisogno di due segnali? Che cosa si intende per priming?"
+    en: "Why is the NLRP3 inflammasome said to need two signals? What is meant by priming?"
+    focus: [pathogenesis, high-yield]
+    level: 2
+  - it: "Come distingue la piroptosi dall'apoptosi e dalla necroptosi, al microscopio e per meccanismo? Quali tecniche userebbe per dimostrarla, e perché un TUNEL positivo non basta?"
+    en: "How do you tell pyroptosis from apoptosis and from necroptosis, under the microscope and by mechanism? Which techniques would you use to prove it, and why is a positive TUNEL not enough?"
+    focus: [micro, differential, ancillary]
+    level: 3
+  - it: "In quali malattie entrano in gioco la piroptosi e l'inflammasoma? Mi parli in particolare dell'infezione da HIV, della NOMID e della gotta."
+    en: "In which diseases do pyroptosis and the inflammasome play a part? Tell me in particular about HIV infection, NOMID and gout."
+    focus: [clinical, prognosis]
+    level: 3
 images:
   - id: pyroptosis-micro-1
     role: micro
+  - id: pyroptosis-micro-3
+    role: micro
   - id: pyroptosis-micro-2
     role: micro
+  - id: pyroptosis-micro-4
+    role: micro
   - id: pyroptosis-diagram-1
+    role: diagram
+  - id: pyroptosis-diagram-2
     role: diagram
 reviewStatus: ai-generated-unreviewed
 editionDependent: false
@@ -130,5 +163,11 @@ sources:
   - source: shi-2015
   - source: ding-2016
   - source: evavold-2018
-lastUpdated: 2026-11-03
+  - source: bergsbaken-2009
+  - source: den-hartigh-2018
+  - source: wang-2022
+  - source: galluzzi-2018
+  - source: martinon-2006
+  - source: goldbach-mansky-2006
+lastUpdated: 2026-11-12
 status: published

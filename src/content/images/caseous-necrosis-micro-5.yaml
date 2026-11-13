@@ -1,0 +1,89 @@
+# License check (2026-11-04): Wellcome Collection catalogue record eqekrdku ("Tuberculous lymphadenitis", contributor
+# SB Lucas), read through the catalogue API: IIIF image location license "CC0 1.0 Universal", credit "SB Lucas", access
+# open. The Commons copy carries {{cc-zero}} with Author SB Lucas and links that record. The holding institution
+# publishes the micrograph itself, so there is no uploader/creator gap. Micrograph only; nothing identifies the patient.
+# Same Wellcome teaching set (SB Lucas, "Tuberculous lymphadenitis", images W0044757-W0044759) as caseous-necrosis-micro-2
+# (W0044758), so the two share one group; the source does not say they come from the same patient. The source states
+# the stain (Ziehl-Neelsen), the power (high power view), the organ (lymph node) and the four acid-fast bacilli, three in
+# the Langhans giant cell and one in a nearby macrophage. Facts checked against rubin-8e ch. 2 p. 92 and ch. 9 pp. 449-451.
+id: caseous-necrosis-micro-5
+file: caseous-necrosis-micro-5.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Tuberculous_lymphadenitis_Wellcome_W0044759.jpg
+author: SB Lucas (Wellcome Collection)
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-11-04
+modifications:
+  it: >-
+    Scaricata la versione di Commons da 1920 × 1245 px dell'originale da 5190 × 3366 px; ridotta a 1600 × 1038 px e
+    ricodificata in JPEG (qualità 82, metadati rimossi). Nessun ritaglio, nessuna modifica dei colori.
+  en: >-
+    Downloaded the 1920 × 1245 px Commons rendition of the 5190 × 3366 px original; downscaled to 1600 × 1038 px and
+    re-encoded as JPEG (quality 82, metadata stripped). No crop, no colour change.
+attributionText: >-
+  SB Lucas, Wellcome Collection, "Tuberculous lymphadenitis" (image W0044759), CC0 1.0 (public domain dedication), via
+  Wikimedia Commons
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-04 }
+group: tuberculous-lymphadenitis-lucas
+stain: "Ziehl-Neelsen (ZN)"
+magnification: "high power (the source: high power view)"
+lookFor:
+  it: "Cerca bastoncini sottili rosso-fucsia nel citoplasma chiaro della cellula gigante, sul fondo blu."
+  en: "Look for thin magenta rods in the pale cytoplasm of the giant cell, against the blue background."
+caption:
+  it: >-
+    Linfadenite tubercolare, colorazione di Ziehl-Neelsen, forte ingrandimento: la colorazione speciale con cui si
+    cercano i micobatteri. Prima orientati: tutto il tessuto è blu per la controcolorazione e in questo campo non c'è
+    necrosi; al centro c'è una grande cellula gigante di Langhans, riconoscibile dai nuclei blu scuro ammassati lungo il
+    bordo superiore e dall'ampio citoplasma chiaro. Poi cerca i bacilli: sono bastoncini sottili e corti, rosso-fucsia,
+    perché la parete dei micobatteri, ricca di lipidi, trattiene il colorante rosso anche dopo il lavaggio con
+    acido-alcol (sono alcol-acido resistenti). Qui se ne contano quattro: una coppia e un bacillo isolato nel citoplasma
+    della cellula gigante e un quarto in un macrofago vicino, in basso a sinistra. Perché conta: la fonte indica questa
+    densità, pochissimi bacilli, come quella abituale in una lesione compatta di una persona non immunodepressa; per
+    trovarli bisogna scorrere molti campi, e un Ziehl-Neelsen negativo non basta a escludere la tubercolosi, per cui
+    servono anche la coltura e i test molecolari. Se invece l'immunità cellulo-mediata è depressa, i granulomi sono mal
+    formati e i bacilli si moltiplicano. Questa immagine appartiene alla stessa serie didattica sulla linfadenite
+    tubercolare della micrografia in ematossilina-eosina con caseificazione iniziale: usa il selettore per confrontarle.
+  en: >-
+    Tuberculous lymphadenitis, Ziehl-Neelsen stain, high power: the special stain used to search for mycobacteria. Get
+    your bearings first: all the tissue is blue from the counterstain and there is no necrosis in this field; in the
+    centre lies a large Langhans giant cell, recognisable by the dark blue nuclei crowded along its upper edge and by its
+    wide pale cytoplasm. Then look for the bacilli: they are thin, short, magenta rods, because the lipid-rich wall of
+    mycobacteria keeps the red dye even after the acid-alcohol wash (they are acid-fast). Four can be counted here: a
+    pair and a single bacillus in the cytoplasm of the giant cell, and a fourth in a nearby macrophage at the lower
+    left. Why it matters: the source describes this density, very few bacilli, as the usual one in a solid lesion of a
+    person who is not immunocompromised; finding them means scanning many fields, and a negative Ziehl-Neelsen stain is
+    not enough to rule out tuberculosis, so culture and molecular tests are needed too. When cell-mediated immunity is
+    depressed, by contrast, granulomas are poorly formed and the bacilli multiply. This image belongs to the same
+    teaching set on tuberculous lymphadenitis as the H&E micrograph with early caseation: use the switch to compare them.
+alt:
+  it: >-
+    Micrografia a forte ingrandimento su fondo azzurro chiaro: al centro una grande cellula con un arco di nuclei blu
+    scuro lungo il bordo superiore e il citoplasma chiaro, nel quale si vedono due bastoncini rossi accostati e un terzo
+    più a destra; un altro bastoncino rosso sta in basso a sinistra.
+  en: >-
+    High-power micrograph on a pale blue background: in the centre a large cell with an arc of dark blue nuclei along its
+    upper edge and pale cytoplasm, in which two red rods lie side by side and a third sits further right; another red
+    rod lies at the lower left.
+annotations:
+  - id: langhans-giant-cell
+    label: { it: "Cellula gigante di Langhans: nuclei ammassati alla periferia", en: "Langhans giant cell: nuclei crowded at the periphery" }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.37, 0.12, 0.44, 0.1, 0.52, 0.12, 0.6, 0.2, 0.64, 0.32, 0.65, 0.45, 0.62, 0.58, 0.57, 0.68, 0.49, 0.71, 0.42, 0.66, 0.38, 0.55, 0.36, 0.4, 0.36, 0.25]
+  - id: afb-pair
+    label: { it: "Coppia di bacilli alcol-acido resistenti (rossi) nel citoplasma", en: "Pair of acid-fast bacilli (red) in the cytoplasm" }
+    revealOrder: 2
+    shape: { type: circle, coords: [0.522, 0.333, 0.02] }
+  - id: afb-single
+    label: { it: "Bacillo isolato nella stessa cellula gigante", en: "Single bacillus in the same giant cell" }
+    revealOrder: 3
+    shape: { type: circle, coords: [0.628, 0.435, 0.015] }
+  - id: afb-macrophage
+    label: { it: "Bacillo in un macrofago vicino", en: "Bacillus in a nearby macrophage" }
+    revealOrder: 4
+    shape: { type: circle, coords: [0.338, 0.84, 0.015] }

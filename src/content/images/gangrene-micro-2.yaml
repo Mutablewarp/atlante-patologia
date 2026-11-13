@@ -17,8 +17,14 @@ attributionText: >-
 patientIdentifiable: false
 ownerApproved: false
 verifiedBy: { who: agent, name: image-agent, date: 2026-10-10 }
+# Group added 2026-11-07: gangrene-micro-3 is Figure 4 of the same article (Gram stain of muscle from the same
+# operation, first patient of the report); licence re-checked on PMC (PMC2576185, CC BY 2.0).
+group: gas-gangrene-muscle-schroepfer
 stain: H&E
 magnification: low power (100× in the source)
+lookFor:
+  it: "Prima le grandi bolle vuote tra le fibre, poi ciò che manca: l'infiltrato di neutrofili."
+  en: "First the large empty bubbles between the fibres, then what is missing: the neutrophil infiltrate."
 caption:
   it: >-
     Muscolo scheletrico asportato chirurgicamente da un paziente con gangrena gassosa della coscia da Clostridium
@@ -31,6 +37,7 @@ caption:
     grasso: sul margine destro una striscia di tessuto adiposo mostra cellule piccole, regolari e rotonde, ciascuna
     con una sottile membrana, mentre gli spazi gassosi sono più grandi, irregolari e privi di rivestimento. Sul piano
     clinico corrisponde al crepitio alla palpazione e al gas visibile alla radiografia; è un'emergenza chirurgica.
+    Passa alla colorazione di Gram del tessuto asportato nello stesso intervento per vedere i batteri.
   en: >-
     Skeletal muscle removed at surgery from a patient with gas gangrene of the thigh caused by Clostridium
     perfringens, H&E (100× in the source article). At low power the striking feature is the large, empty, rounded
@@ -41,7 +48,7 @@ caption:
     cells, and spread faster than the inflammatory response. Do not mistake gas for fat: along the right edge a strip
     of adipose tissue shows small, regular, round cells, each with a thin membrane, whereas the gas spaces are larger,
     irregular and lined by nothing. Clinically this matches crepitus on palpation and gas on X-ray; it is a surgical
-    emergency.
+    emergency. Switch to the Gram stain of tissue from the same operation to see the bacteria themselves.
 alt:
   it: >-
     Micrografia in ematossilina-eosina di muscolo scheletrico: fasci di fibre rosa con pochi nuclei separati da grandi

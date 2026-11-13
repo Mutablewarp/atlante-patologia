@@ -552,3 +552,115 @@ claims:
     verifiedBy: agent
     verifier: "verifier-agent"
     date: 2026-11-03
+  - claimId: atrophy-c070
+    section: pathogenesis
+    statement: "Apoptosis contributes to the involution of a hormone-dependent tissue once its stimulus is withdrawn, as in the breast after lactation ends."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "47" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: atrophy-c071
+    section: gross
+    statement: "Hydrocephalus ex vacuo is ventricular enlargement compensating for lost brain tissue (often diffuse cortical atrophy, as in Alzheimer disease); it is distinct from hydrocephalus due to abnormal CSF dynamics."
+    sourceRef: { source: rubin-8e, chapter: "32", pages: "1448, 1493" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: atrophy-c072
+    section: micro
+    statement: "In cross-section denervated fibers become small and angulated; isolated at first, they later come together in clusters that grow from a few fibers to large groups."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1428" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: atrophy-c073
+    section: micro
+    statement: "A denervated fiber that is never reinnervated is eventually lost altogether, and fat and fibrous tissue take over its space."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1428" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: atrophy-c074
+    section: micro
+    statement: "Residual postmenopausal endometrial glands are often dilated into cysts (senile cystic atrophy); dilated or not, they have a thin lining and lie in a fibrous, collagen-rich stroma."
+    sourceRef: { source: rubin-8e, chapter: "24", pages: "1038" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: atrophy-c075
+    section: ancillary
+    statement: "The biopsy should come from a moderately affected muscle (often quadriceps or biceps; gastrocnemius with sural nerve if neuropathy is suspected), since an unaffected muscle can be almost normal and a severely weakened one may keep little muscle among fat and fibrous tissue."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1411" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: atrophy-c076
+    section: ancillary
+    statement: "Muscle biopsy tissue goes to formalin, to unfixed freezing for enzyme histochemistry (which shows enzyme function, whereas IHC shows only protein presence) and to glutaraldehyde for electron microscopy."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1411" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: atrophy-c077
+    section: ancillary
+    statement: "Selective type II fiber atrophy (chronic disuse, corticosteroids, old age, cachexia) gives angular fibers that mimic denervation on H&E; on myosin ATPase (alkaline pH: type I pale, type II dark) the angular fibers all turn out to be type II."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1410-1411, 1427" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: atrophy-c078
+    section: ancillary
+    statement: "On nonspecific esterase and NADH-TR, denervated atrophic fibers (of both types) stand out as intensely stained, whereas the angular fibers of selective type II atrophy are not darkly stained."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1427-1428" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: atrophy-c079
+    section: ancillary
+    statement: "On ATPase normal muscle is a mosaic of fiber types; large single-type patches mean that surviving motor neurons adopted denervated fibers and imposed their own type (reinnervation); grouped atrophy, typical of chronic denervation as in ALS, follows when these enlarged motor units are denervated in turn."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1411, 1429-1430" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: atrophy-c080
+    section: ancillary
+    statement: "A biopsy cannot tell why the muscle lost its nerve supply (ALS and diabetic neuropathy can look the same); it shows that the lower motor neuron or its axon is damaged and whether the process is recent or long-standing."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1428" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: atrophy-c081
+    section: high-yield
+    statement: "Denervation atrophy shows angular atrophic fibers of both types that are dark with nonspecific esterase and NADH-TR; fiber-type grouping means reinnervation after denervation."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1428-1430" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: atrophy-c082
+    section: traps
+    statement: "Angular atrophic fibers on H&E can be selective type II atrophy (corticosteroids, disuse) rather than denervation; ATPase, esterase and NADH-TR separate the two."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1427-1428" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: atrophy-c083
+    section: traps
+    statement: "Paralysis due to stroke or multiple sclerosis lacks the denervation pattern: the lesion is in the upper motor neuron, the lower motor neuron keeps innervating the fibers, and muscle shrinkage is only diffuse and nonspecific."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1428" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09

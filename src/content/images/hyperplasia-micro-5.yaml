@@ -1,0 +1,79 @@
+# License check (2026-11-08): Commons file page gives Source https://www.flickr.com/photos/euthman/4746311706/,
+# Author Ed Uthman, license {{cc-by-2.0}}, and {{flickrreview}} passed by File Upload Bot (Magnus Manske) on
+# 2013-12-11; extmetadata LicenseShortName "CC BY 2.0", AttributionRequired true. The uploader (CFCF) is not the
+# creator, but the Flickr review confirms the licence at the source.
+# Group endometrial-hyperplasia-uthman: same Flickr author, title and camera (Nikon E995) as hyperplasia-micro-1
+# (Flickr 4745672105); EXIF times 2010-06-29 10:49:54 (micro-1) and 10:51:38 (this file). The source states no
+# magnification: "medium power" is our reading, relative to the low-power micro-1. Annotations placed by inspection.
+id: hyperplasia-micro-5
+file: hyperplasia-micro-5.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Complex_Hyperplasia_of_the_Endometrium_(no_atypia)_(4746311706).jpg
+author: Ed Uthman
+license: CC-BY-2.0
+licenseUrl: https://creativecommons.org/licenses/by/2.0/
+retrievedAt: 2026-11-08
+modifications:
+  it: >-
+    Ricodifica dell'originale da 1541 × 1401 px in JPEG (qualità 82) senza cambiarne le dimensioni, operazione che
+    rimuove anche i metadati EXIF della fotocamera; nessun ritaglio, nessuna modifica dei colori.
+  en: >-
+    Re-encoded the 1541 × 1401 px original as JPEG (quality 82) at the same size, which also strips the camera EXIF
+    metadata; no crop, no colour change.
+attributionText: >-
+  Ed Uthman, "Complex Hyperplasia of the Endometrium (no atypia)" (Flickr), via Wikimedia Commons, CC BY 2.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+group: endometrial-hyperplasia-uthman
+stain: H&E
+magnification: medium power
+lookFor:
+  it: "Controlla i nuclei: allungati e simili ovunque significa nessuna atipia; un focolaio di nuclei tondeggianti e diversi farebbe pensare a una EIN."
+  en: "Check the nuclei: elongated and alike everywhere means no atypia; a focus of rounder, different nuclei would suggest EIN."
+caption:
+  it: >-
+    L'iperplasia endometriale senza atipie mostrata a piccolo ingrandimento in questa scheda, qui vista a ingrandimento
+    maggiore: stesso autore, stesso titolo, foto scattate a due minuti di distanza con la stessa fotocamera (EE). Serve
+    per il passaggio che il piccolo ingrandimento non può risolvere: le cellule. Le ghiandole sono quasi a contatto
+    l'una con l'altra, con contorni irregolari, e le separano solo sottili strisce di stroma con piccoli nuclei scuri.
+    Ora leggi l'epitelio: cellule cilindriche alte, con nuclei situati ad altezze leggermente diverse
+    (pseudostratificazione), ma allungati, simili tra loro e ancora disposti perpendicolarmente alla base della
+    cellula, come nell'endometrio proliferativo normale. Nella nota dell'autore all'immagine a piccolo ingrandimento le
+    cellule sono descritte come prive di atipie, nonostante l'architettura complessa. È questo il punto: nell'iperplasia
+    non atipica le cellule hanno lo stesso aspetto in tutto il campione, perché il tessuto è normale e reagisce soltanto
+    a un eccesso di estrogeni. La EIN richiede invece un cambiamento focale: rispetto alle ghiandole di fondo dello
+    stesso campione, un gruppo circoscritto di ghiandole ha cellule diverse, di solito con nuclei più tondeggianti e più
+    citoplasma. Il titolo del file usa il vecchio nome «iperplasia complessa senza atipie»; lo schema OMS del 2014
+    adottato in questa scheda distingue solo due gruppi, l'iperplasia non atipica e la EIN.
+  en: >-
+    Higher-power view of the endometrial hyperplasia without atypia shown at low power on this card: same author, same
+    title, photographed two minutes apart with the same camera (H&E). It is here for the step that low power cannot
+    settle, the cells. The glands lie almost back to back, with irregular outlines, and only thin strips of stroma with
+    small dark nuclei separate them. Now read the epithelium: tall columnar cells whose nuclei sit at slightly
+    different heights (pseudostratification), yet are elongated, alike and still lined up at right angles to the base
+    of the cell, as in normal proliferative endometrium. In the author's own note on the low-power image, the cells are
+    bland even though the architecture is complex. That is the point: in nonatypical hyperplasia the cells look the
+    same all over the sample, because the tissue is normal and is only reacting to too much estrogen. EIN needs a focal
+    change instead: compared with the background glands of the same sample, one circumscribed group of glands has
+    different cells, typically with rounder nuclei and more cytoplasm. The file title uses the older name "complex
+    hyperplasia without atypia"; the 2014 WHO scheme used on this card keeps only two groups, nonatypical hyperplasia
+    and EIN.
+alt:
+  it: >-
+    Micrografia di endometrio in ematossilina-eosina a ingrandimento maggiore: ghiandole fittamente stipate con lumi
+    bianchi e irregolari, rivestite da cellule viola alte con nuclei allungati su più file; sottili strisce di stroma
+    con piccoli nuclei scuri tra le ghiandole; alcuni globuli rossi in alto a sinistra.
+  en: >-
+    Higher-power H&E micrograph of endometrium: tightly packed glands with white, irregular lumens, lined by tall
+    purple cells with elongated nuclei in several rows; thin strips of stroma with small dark nuclei between the
+    glands; a few red blood cells at upper left.
+annotations:
+  - id: bland-columnar-epithelium
+    label: { it: "Epitelio cilindrico pseudostratificato, nuclei allungati e uniformi", en: "Pseudostratified columnar epithelium, elongated uniform nuclei" }
+    revealOrder: 1
+    shape: { type: circle, coords: [0.83, 0.245, 0.065] }
+  - id: thin-stroma
+    label: { it: "Stroma endometriale cellulato tra le ghiandole", en: "Cellular endometrial stroma between the glands" }
+    revealOrder: 2
+    shape: { type: rect, coords: [0.10, 0.155, 0.09, 0.13] }

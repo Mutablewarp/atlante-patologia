@@ -144,7 +144,7 @@ Each row is one `atlas-coder` task with tests. The lead reviews every diff.
 
 ## 7. Phase 2: content (378 cards)
 
-**C-0, pilot.** Four W02 cards (one process, two diseases, one edition-dependent) through the whole pipeline. Go on only if tokens per card ≤ 600 k and the audit error rate ≤ 2 %. Otherwise fix the briefs or the scripts first.
+**C-0, pilot.** Four W02 cards through the whole pipeline: `thrombosis` (P0 core process, two page ranges, 1,200 words), `amyloidosis` (P1 disease, three ranges), `hyaline-change` (P1 process, scattered source) and `inflammatory-mediators` (P2 concept, six sections). W02 has no edition-dependent card: that path is first exercised in W03. The seven `pattern` rows (comparison pages of `src/content/patterns/`) have no flow yet and wait for W00b. Go on only if tokens per card ≤ 600 k and the audit error rate ≤ 2 %. Otherwise fix the briefs or the scripts first.
 
 **Order.** The programme's batch order (W01–W19), P0-core cards first inside each batch. W01 (methods) starts when D2 is decided; the pilot uses W02 because the reference covers it best.
 

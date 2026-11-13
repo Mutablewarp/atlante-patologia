@@ -1,0 +1,86 @@
+# License check (2026-11-07): Commons file page {{Information}} gives Source {{own}}, Author "James Heilman, MD"
+# (User:Jmh649), license {{self|cc-by-sa-3.0|GFDL}}; extmetadata LicenseShortName "CC BY-SA 3.0", AttributionRequired
+# true, no Restrictions. Uploaded by the author himself (as Doc James, 2011-03-12), so creator and uploader are the
+# same person. We use the CC BY-SA 3.0 option of the dual licence. CC BY-SA is approved as a class by owner decision O7
+# (plan/v2-plan.md, 2026-11-03), hence ownerApproved: true. Privacy: only the forefoot and toes on a towel; no face,
+# tattoo, jewellery, label or record number. Our copy is re-encoded without the EXIF block (camera, dates, an image
+# ID). Re-checked 2026-11-08: licence, author and description ("Gangrene of the 1st to 4th toes of the right foot in
+# person with diabetes") unchanged on the file page; our file has no metadata.
+id: gangrene-clinical-2
+file: gangrene-clinical-2.jpg
+kind: clinical
+sourceUrl: https://commons.wikimedia.org/wiki/File:GangreneFoot.JPG
+author: James Heilman, MD
+license: CC-BY-SA-3.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/3.0/
+retrievedAt: 2026-11-07
+modifications:
+  it: >-
+    Ridotta dall'originale di 2956 × 2707 px a 1600 × 1465 px e ricodificata in JPEG senza metadati. Nessun ritaglio,
+    nessuna modifica dei colori.
+  en: >-
+    Downscaled from the 2956 × 2707 px original to 1600 × 1465 px and re-encoded as JPEG without metadata. No crop, no
+    color change.
+attributionText: "James Heilman, MD, own work, via Wikimedia Commons, CC BY-SA 3.0"
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+orientation:
+  it: "Piede destro visto dal dorso, con le dita in alto nell'immagine: l'alluce è a sinistra."
+  en: "Right foot seen from above, toes pointing up: the big toe is on the left."
+lookFor:
+  it: "Segui ogni dito dalla punta fino alla cute rosa dell'avampiede e trova il margine in cui il tessuto morto incontra quello vivo."
+  en: "Follow each toe from its tip down to the pink skin of the forefoot and find the edge where dead tissue meets living tissue."
+caption:
+  it: >-
+    Avampiede destro di una persona con diabete, visto dal dorso con le dita in alto nell'immagine, perciò l'alluce è
+    a sinistra; la fonte descrive una gangrena dal primo al quarto dito. Parti dall'alluce e dalle dita vicine: sono
+    nere, secche e raggrinzite, con cute rugosa e coriacea e unghie giallastre e opache. È la gangrena secca: tessuto
+    morto per mancanza di sangue arterioso che, poiché vi crescono pochi batteri, si disidrata e si mummifica invece di
+    colliquare. Cerca poi il dito gonfio e violaceo ma non ancora nero: il colore indica che anche questo dito è
+    gravemente ischemico, verosimilmente in una fase più precoce dello stesso processo. Scendi quindi alla base delle
+    dita, dove una fascia di cute giallastra, morta e desquamata confina con la cute rosa dell'avampiede. Quel bordo è
+    la linea di demarcazione, il confine tra tessuto morto e tessuto vivo che fa apparire la gangrena secca così
+    nettamente delimitata; il colore rosa indica che l'avampiede è ancora irrorato. Nel diabete la causa abituale è
+    l'aterosclerosi delle arterie degli arti inferiori, che priva le dita di sangue; negli Stati Uniti il diabete
+    provoca più amputazioni non traumatiche degli arti di qualsiasi altra causa. Se i batteri colonizzassero queste
+    dita morte, diventerebbero gonfie, umide e maleodoranti: gangrena umida.
+  en: >-
+    Right forefoot of a person with diabetes, seen from above with the toes pointing up, so the big toe is on the
+    left; the source describes gangrene of the first to fourth toes. Start with the big toe and its neighbours: they
+    are black, dry and shrivelled, with wrinkled, leathery skin and dull yellowish nails. This is dry gangrene: tissue
+    that has died for lack of arterial blood and, because few bacteria grow in it, dries out and mummifies instead of
+    liquefying. Next, find the toe that is swollen and dusky purple but not yet black: its colour shows that it, too,
+    is severely ischemic, probably at an earlier stage of the same process. Then move down to the base of the toes,
+    where a band of yellowish, dead, peeling skin borders the pink skin of the forefoot. That edge is the line of
+    demarcation, the boundary between dead and living tissue that makes dry gangrene look so sharply limited; the pink
+    colour shows that the forefoot is still perfused. In diabetes the usual cause is atherosclerosis of the leg
+    arteries, which starves the toes of blood; in the United States diabetes accounts for more non-traumatic limb
+    amputations than any other cause. If bacteria colonized these dead toes, they would become swollen, moist and
+    foul-smelling: wet gangrene.
+alt:
+  it: >-
+    Fotografia a colori della parte anteriore di un piede destro su un asciugamano bianco, vista dall'alto: l'alluce e
+    le dita vicine sono neri, rugosi e raggrinziti, con unghie giallastre; un dito più a destra è gonfio e violaceo;
+    sotto di essi una fascia di cute giallastra e desquamata confina con la cute rosa dell'avampiede.
+  en: >-
+    Colour photograph of the front of a right foot on a white towel, seen from above: the big toe and the next toes
+    are black, wrinkled and shrivelled, with yellowish nails; one toe further right is swollen and purple; below them a
+    band of yellowish, peeling skin borders the pink skin of the forefoot.
+annotations:
+  - id: mummified-big-toe
+    label: { it: "Alluce nero e mummificato (gangrena secca)", en: "Black, mummified big toe (dry gangrene)" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.15, 0.12, 0.20, 0.07, 0.30, 0.065, 0.38, 0.075, 0.375, 0.20, 0.35, 0.35, 0.33, 0.52, 0.27, 0.58, 0.18, 0.58, 0.145, 0.45] }
+  - id: dusky-toe
+    label: { it: "Dito violaceo, non ancora nero", en: "Dusky purple toe, not yet black" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.655, 0.28, 0.72, 0.265, 0.75, 0.31, 0.76, 0.45, 0.755, 0.58, 0.72, 0.64, 0.66, 0.66, 0.625, 0.62, 0.63, 0.45, 0.64, 0.33] }
+  - id: dead-skin-band
+    label: { it: "Cute giallastra morta alla base delle dita", en: "Yellowish dead skin at the base of the toes" }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.27, 0.58, 0.33, 0.555, 0.45, 0.57, 0.52, 0.60, 0.60, 0.62, 0.62, 0.67, 0.55, 0.69, 0.45, 0.70, 0.35, 0.71, 0.27, 0.69] }
+  - id: living-skin
+    label: { it: "Cute rosa e vitale dell'avampiede", en: "Pink, living skin of the forefoot" }
+    revealOrder: 4
+    shape: { type: polygon, coords: [0.22, 0.76, 0.40, 0.72, 0.55, 0.72, 0.70, 0.74, 0.80, 0.70, 0.86, 0.76, 0.87, 0.90, 0.80, 0.99, 0.30, 0.99, 0.18, 0.90] }

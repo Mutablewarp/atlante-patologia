@@ -116,6 +116,31 @@ chain:
     lab:
       it: "Ipoglicemia; acidosi lattica durante infezioni intercorrenti"
       en: "Hypoglycemia; lactic acidosis during intercurrent infections"
+examQuestions:
+  - it: "Mi parli degli accumuli intracellulari: che cosa sono e per quali meccanismi una sostanza resta intrappolata nella cellula?"
+    en: "Tell me about intracellular accumulations: what are they, and by which mechanisms does a substance end up trapped inside the cell?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Che cosa vede al microscopio quando una cellula accumula grasso, glicogeno, proteine o pigmenti?"
+    en: "What do you see under the microscope when a cell stores fat, glycogen, protein or pigment?"
+    focus: [micro, ancillary]
+    level: 1
+  - it: "Mi spieghi come il deficit di un singolo enzima lisosomiale provoca una malattia da accumulo, e mi faccia un esempio."
+    en: "Explain how the lack of a single lysosomal enzyme causes a storage disease, and give an example."
+    focus: [pathogenesis, high-yield]
+    level: 2
+  - it: "Prendendo come esempio il deficit di α1-antitripsina, mi spieghi perché una proteina mal ripiegata si accumula nella cellula e come la riconosce sul vetrino."
+    en: "Taking α1-antitrypsin deficiency as the example, explain why a misfolded protein builds up in the cell and how you recognize it on the slide."
+    focus: [pathogenesis, micro, ancillary]
+    level: 2
+  - it: "Come distingue un citoplasma chiaro dovuto a grasso, a glicogeno o ad acqua, e quali colorazioni userebbe?"
+    en: "How do you tell whether a clear cytoplasm is due to fat, glycogen or water, and which stains would you use?"
+    focus: [ancillary, differential]
+    level: 3
+  - it: "Che cosa hanno in comune, e che cosa li distingue, i corpi di Russell, i corpi di Mallory–Denk e la ialina delle arteriole renali?"
+    en: "What do Russell bodies, Mallory–Denk bodies and the hyaline of renal arterioles have in common, and what sets them apart?"
+    focus: [micro, traps]
+    level: 3
 images:
   - id: intracellular-accumulations-gross-1
     role: gross
@@ -123,6 +148,12 @@ images:
   - id: intracellular-accumulations-micro-1
     role: micro
   - id: intracellular-accumulations-micro-2
+    role: micro
+  - id: intracellular-accumulations-micro-3
+    role: micro
+  - id: intracellular-accumulations-micro-4
+    role: micro
+  - id: intracellular-accumulations-micro-5
     role: micro
 reviewStatus: ai-generated-unreviewed
 editionDependent: false
@@ -132,12 +163,24 @@ sources:
     pages: "4-7, 16, 30, 36-38"
   - source: rubin-8e
     chapter: "6"
-    pages: "274, 279-280"
+    pages: "274, 278-280"
   - source: rubin-8e
     chapter: "7"
     pages: "336"
   - source: rubin-8e
+    chapter: "16"
+    pages: "615"
+  - source: rubin-8e
+    chapter: "18"
+    pages: "721"
+  - source: rubin-8e
     chapter: "20"
-    pages: "878"
-lastUpdated: 2026-11-03
+    pages: "865-866, 868, 874-876, 878-879"
+  - source: rubin-8e
+    chapter: "26"
+    pages: "1161"
+  - source: rubin-8e
+    chapter: "31"
+    pages: "1411, 1423-1425"
+lastUpdated: 2026-11-09
 status: published

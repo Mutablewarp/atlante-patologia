@@ -1,0 +1,79 @@
+# License check (2026-11-08): Commons file page {{Information}} gives Source {{Own}}, Author {{Mikael Häggström|
+# consent=noid}}, license {{cc-zero}}; extmetadata LicenseShortName "CC0", Credit "Own work", AttributionRequired false;
+# the author's consent note says the media and case information carry no identifying features. The file is the
+# unmodified Commons original (1153 × 933 px, 369 KB). The source states the stain (H&E) and that the interstitial black
+# material is too little for a diagnosis of coal workers' pneumoconiosis; it does not state the magnification. Chosen
+# over File:Anthracosis_(5568868920).jpg (Yale Rosen, CC BY-SA 2.0, the candidate in the 2026-10-10 MISSING_ASSETS row)
+# because this source names the organ (lung), so it pairs truthfully with the gross lung pigment-accumulation-gross-1;
+# the Yale Rosen field is dominated by lymphoid cells and its source does not say whether it is lung or lymph node.
+# Facts in the caption checked against rubin-8e ch. 1 pp. 6-7 (anthracosis: inhaled carbon, alveolar macrophages,
+# hilar lymph nodes, retained indefinitely, innocuous) and ch. 18 p. 732 (carbon alone not fibrogenic and does not kill
+# macrophages; with silica, anthracosilicosis).
+id: pigment-accumulation-micro-5
+file: pigment-accumulation-micro-5.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Histopathology_of_pulmonary_anthracosis.jpg
+author: Mikael Häggström, M.D.
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-11-08
+modifications: none
+attributionText: "Mikael Häggström, M.D., via Wikimedia Commons, CC0 1.0 (public domain dedication)"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+stain: "H&E (the source: H&E stain)"
+magnification: "medium power (the source does not state the magnification)"
+lookFor:
+  it: "Segui le sottili pareti alveolari e cerca granuli nero intenso nei tratti più spessi: neri, non bruni."
+  en: "Follow the thin alveolar walls and look for jet-black granules in their thicker parts: black, not brown."
+caption:
+  it: >-
+    Polmone, EE a medio ingrandimento: pigmento antracotico (carbone), il corrispettivo microscopico del polmone nero
+    della fotografia macroscopica di questa scheda. Qui la quantità è modesta: la fonte precisa che non basta per una
+    diagnosi di pneumoconiosi dei minatori di carbone. Prima riconosci l'architettura: sottili pareti alveolari rosa
+    delimitano spazi aerei vuoti, con globuli rossi liberi sparsi che fanno da riferimento per le dimensioni. Poi segui il
+    nero: granuli grossolani nero intenso si raccolgono in zolle dove le pareti alveolari sono più spesse, a sinistra e a
+    destra del campo, e in quantità minore lungo una parete al centro. Nero, qui, significa carbone, e il carbone resta
+    per tutta la vita: nessuna cellula riesce a digerirlo. Quella che vedi è una tappa precoce, le pareti alveolari,
+    dove si sono fermati i macrofagi che lo hanno inglobato; da lì drena lungo i linfatici fino ai linfonodi ilari, che
+    all'esame macroscopico appaiono neri. Da solo il carbone non fa danni, né ai macrofagi né al polmone; per la fibrosi
+    serve una polvere fibrogena, come la silice, inalata insieme al carbone (antracosilicosi). Come distinguerlo dall'emosiderina: il carbone
+    è nero e non bruno-dorato, e resta nero anche con la colorazione per il ferro.
+  en: >-
+    Lung, H&E at medium power: anthracotic (carbon) pigment, the microscopic counterpart of the black lung in the gross
+    photograph of this card. The amount here is modest: the source notes that it is not enough for a diagnosis of coal
+    workers' pneumoconiosis. First find the architecture: thin pink alveolar walls outline empty air spaces, with
+    scattered loose red cells as a size reference. Then follow the black: coarse, jet-black granules gather in clumps where the
+    alveolar walls are thicker, at the left and the right of the field, and in smaller amounts along a wall in the
+    middle. Black here means carbon, and carbon stays for life: no cell can digest it. What you see is an early stop,
+    the alveolar walls, where the macrophages that swallowed it have settled; from there it drains along the lymphatics
+    to the hilar lymph nodes, which look black on gross examination. Carbon alone does no harm, neither to the
+    macrophages nor to the lung; scarring needs a fibrogenic dust, such as silica, breathed in with it (anthracosilicosis). How to
+    tell it from hemosiderin: carbon is black rather than golden-brown, and it stays black on an iron stain.
+alt:
+  it: >-
+    Micrografia di polmone in ematossilina-eosina a medio ingrandimento: sottili pareti alveolari rosa e ondulate, con
+    nuclei viola, delimitano ampi spazi aerei bianchi e vuoti in cui sono sparsi numerosi globuli rossi tondi; zolle di pigmento
+    nero granulare si trovano nei tratti più spessi delle pareti, a sinistra, a destra e al centro del campo.
+  en: >-
+    Medium-power H&E micrograph of lung: thin, wavy pink alveolar walls with purple nuclei outline large empty white air
+    spaces holding many scattered round red blood cells; clumps of black granular pigment sit in the thicker parts of the walls at
+    the left, the right and the center of the field.
+annotations:
+  - id: carbon-thick-wall
+    label: { it: "Zolle di pigmento carbonioso nero in una parete alveolare ispessita", en: "Clumps of black carbon pigment in a thickened alveolar wall" }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.21, 0.42, 0.27, 0.38, 0.34, 0.40, 0.36, 0.46, 0.32, 0.55, 0.29, 0.65, 0.25, 0.63, 0.22, 0.55, 0.19, 0.50]
+  - id: carbon-wall-junction
+    label: { it: "Altro carbone nel punto d'incontro di più pareti alveolari", en: "More carbon where several alveolar walls meet" }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.70, 0.42, 0.76, 0.39, 0.81, 0.42, 0.80, 0.49, 0.73, 0.52, 0.72, 0.62, 0.66, 0.66, 0.63, 0.60, 0.67, 0.53]
+  - id: red-cells-size
+    label: { it: "Globuli rossi in uno spazio alveolare (circa 7-8 µm): riferimento per le dimensioni", en: "Red cells in an alveolar space (about 7-8 µm): a size reference" }
+    revealOrder: 3
+    shape: { type: rect, coords: [0.885, 0.205, 0.095, 0.13] }

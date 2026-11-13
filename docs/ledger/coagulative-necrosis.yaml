@@ -22,16 +22,16 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "1", pages: "39, 42" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: coagulative-necrosis-c004
     section: definition
     statement: "The name comes from an outdated analogy with heat-set protein, but it is still used as a descriptive morphologic label."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: coagulative-necrosis-c005
     section: etiology
     statement: "Occlusion of an end artery produces coagulative necrosis in its territory; the necrotic zone is an infarct."
@@ -54,8 +54,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "8", pages: "365" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: coagulative-necrosis-c008
     section: etiology
     statement: "Arterial stenosis more commonly produces chronic ischemic atrophic change and fibrosis than necrosis."
@@ -114,52 +114,52 @@ claims:
     date: 2026-11-03
   - claimId: coagulative-necrosis-c015
     section: gross
-    statement: "A pale infarct is initially swollen and dark red, and within 1-2 days becomes soft, pale yellow and sharply demarcated, with a hemorrhagic red border toward viable tissue."
+    statement: "A pale infarct starts out swollen and dark red; by day 1-2 it has turned pale yellow and stands out sharply, with a red rim of hemorrhage in the living tissue at its edge."
     sourceRef: { source: rubin-8e, chapter: "7", pages: "337" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: coagulative-necrosis-c016
     section: gross
     statement: "Renal infarcts are pale wedges with the broad base under the capsule; healed infarcts leave depressed, well-defined cortical scars."
     sourceRef: { source: rubin-8e, chapter: "22", pages: "954" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: coagulative-necrosis-c017
     section: prognosis
     statement: "A myocardial infarct cannot be recognized grossly during the first 12 hours."
     sourceRef: { source: rubin-8e, chapter: "17", pages: "657" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: coagulative-necrosis-c018
     section: prognosis
-    statement: "At 2-3 weeks the infarcted myocardium is depressed, soft and gelatinous."
+    statement: "Two to three weeks after onset, the infarcted wall lies below the level of the cut surface and looks gelatinous."
     sourceRef: { source: rubin-8e, chapter: "17", pages: "657" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: coagulative-necrosis-c019
     section: gross
-    statement: "Red infarcts contain coagulative necrosis plus blood from adjacent vessels; they can follow arterial or venous occlusion and arise in organs with dual supply or abundant collaterals and in reperfused myocardium."
+    statement: "Red infarcts are still coagulative necrosis, with blood from neighboring vessels seeping into the dead zone; arterial or venous occlusion can cause them, typically where blood can still reach the dead tissue: the lung (double blood supply), the small intestine (rich collaterals) and a heart whose occluded artery is reopened."
     sourceRef: { source: rubin-8e, chapter: "7", pages: "337" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: coagulative-necrosis-c020
     section: gross
-    statement: "Dry gangrene of a limb after arterial occlusion is essentially a large pale infarct."
+    statement: "When a limb loses its arterial supply, the dead part of the limb (dry gangrene) amounts to one large pale infarct."
     sourceRef: { source: rubin-8e, chapter: "7", pages: "337" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: coagulative-necrosis-c021
     section: micro
     statement: "Early after cell death the cellular outline and tissue architecture remain visible."
@@ -182,8 +182,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: coagulative-necrosis-c024
     section: micro
     statement: "Pyknosis: the nucleus becomes small and deeply basophilic."
@@ -210,20 +210,20 @@ claims:
     date: 2026-11-03
   - claimId: coagulative-necrosis-c027
     section: micro
-    statement: "Ultrastructurally, dead cells show plasma membrane blebs or breaks, swollen calcified mitochondria, dilated ER with dispersed ribosomes, and clumped cytoskeletal elements."
+    statement: "At the ultrastructural level, dead cells carry the changes of reversible injury further; among them, the plasma membrane forms blebs or gaps and the mitochondria swell and calcify."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: coagulative-necrosis-c028
     section: micro
-    statement: "Noncontracting ischemic myocytes are stretched by each systole into wavy fibers, are intensely eosinophilic by about 24 hours, and lose their nuclei completely only after several days."
+    statement: "Dead myocytes do not contract, so the systoles of the surviving muscle stretch them into wavy fibers; they are strongly eosinophilic within the first day, whereas complete loss of their nuclei takes several days."
     sourceRef: { source: rubin-8e, chapter: "17", pages: "657" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: coagulative-necrosis-c029
     section: micro
     statement: "All structures within a renal infarct show coagulative necrosis."
@@ -250,12 +250,12 @@ claims:
     date: 2026-11-03
   - claimId: coagulative-necrosis-c032
     section: clinical
-    statement: "Acute renal infarcts usually present with sudden flank or abdominal pain and hematuria; most result from emboli such as mural thrombi or infected valve vegetations."
+    statement: "An acute renal infarct typically causes sudden pain in the flank or abdomen with blood in the urine; most renal infarcts are embolic, the emboli coming for example from mural thrombi or infected heart valves."
     sourceRef: { source: rubin-8e, chapter: "22", pages: "954" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: coagulative-necrosis-c033
     section: clinical
     statement: "In analgesic nephropathy papillae undergo coagulative necrosis and may slough, producing colic during ureteral passage."
@@ -278,8 +278,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "1", pages: "38-39" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: coagulative-necrosis-c036
     section: prognosis
     statement: "By about 24 hours myocytes are eosinophilic with coagulative necrosis changes."
@@ -318,8 +318,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "7, 17", pages: "338, 659" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: coagulative-necrosis-c041
     section: prognosis
     statement: "Old renal infarcts and necrotic papillae commonly undergo dystrophic calcification."
@@ -398,16 +398,16 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "1", pages: "38-39" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: coagulative-necrosis-c051
     section: high-yield
     statement: "Pyknosis comes first; the pyknotic nucleus may then fragment (karyorrhexis) or lose staining (karyolysis), so karyorrhexis is not obligatory."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: coagulative-necrosis-c052
     section: high-yield
     statement: "End-artery ischemia produces an infarct of coagulative necrosis."
@@ -478,8 +478,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "1", pages: "40" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: coagulative-necrosis-c061
     section: traps
     statement: "Apoptosis also shows pyknosis and nuclear fragmentation; necrosis differs by geographic extent and inflammatory response."
@@ -502,29 +502,109 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "17", pages: "657" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: coagulative-necrosis-c064
     section: prognosis
-    statement: "At 3-5 days the infarct shows a pale yellow necrotic center bordered by a hyperemic zone."
+    statement: "Three to five days after onset, the dead myocardium forms a yellow center surrounded by a red, hyperemic rim."
     sourceRef: { source: rubin-8e, chapter: "17", pages: "657" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: coagulative-necrosis-c065
     section: prognosis
-    statement: "Healed myocardial infarcts are firm, contracted pale-gray scars."
+    statement: "A healed myocardial infarct is a gray-white scar, firm to the touch and shrunken."
     sourceRef: { source: rubin-8e, chapter: "17", pages: "657" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: coagulative-necrosis-c066
     section: differential
     statement: "Fat necrosis involves adipose tissue, mostly after pancreatitis or trauma; freed fatty acids bind calcium as soaps and appear grossly as chalky white areas."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "39-40" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: coagulative-necrosis-c067
+    section: prognosis
+    statement: "Free-wall rupture complicates transmural infarcts; it peaks from day 2 to day 7, a period in which inflammatory cells have already broken down the matrix of the dead wall but repair collagen is still scarce; the resulting hemopericardium usually leads to fatal tamponade."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "660-661" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: coagulative-necrosis-c068
+    section: diagnosis
+    statement: "Cardiac troponin (I or T) is the biomarker most often measured because it is highly specific for heart muscle; an infarct is diagnosed when troponin levels change, rising, falling or both, over a time course that fits the clinical event."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "660" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: coagulative-necrosis-c069
+    section: differential
+    statement: "After reperfusion of an evolving infarct, the lesion is hemorrhagic from the outset, neutrophils reach all of it and not only its edge, and contraction bands (pink bands across the myocyte formed by clumps of hypercontracted sarcomeres) are common throughout; with persistent occlusion such bands appear, if at all, only at the edge."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "659-660" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: coagulative-necrosis-c070
+    section: ancillary
+    statement: "At autopsy, older infarcts never diagnosed in life may be found, because an infarct can cause no symptoms and be noticed, if at all, only on a later ECG; this is the case for as many as one in three nonfatal Q-wave infarcts."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "660" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: coagulative-necrosis-c071
+    section: ancillary
+    statement: "A transmural infarct maps onto the occluded artery: left anterior descending to the anterior wall, apex and anterior septum; proximal right coronary to the posterior basal left ventricle and posterior septum (inferior infarct); circumflex to the lateral wall. Textbook figures show infarcts on transverse slices of the ventricles."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "656-657" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: coagulative-necrosis-c073
+    section: ancillary
+    statement: "On H&E, infarcted myocardium is eosinophilic after about 12-18 hours; the neutrophils, then macrophages and granulation tissue that arrive at the border afterwards indicate the age of the infarct."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "657-659" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: coagulative-necrosis-c074
+    section: ancillary
+    statement: "Only electron microscopy shows the first changes of myocardial ischemia; for about 20-30 minutes after flow stops completely the myocyte can still recover, and its changes are subtle: depleted glycogen and slight swelling of sarcoplasm and mitochondria."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "657" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: coagulative-necrosis-c075
+    section: ancillary
+    statement: "Once ischemia has lasted 30-60 minutes, myocyte injury is irreversible; electron microscopy then shows focal breaks in the sarcolemma, chromatin clumped at the nuclear rim, and markedly swollen mitochondria containing amorphous densities."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "657-658" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: coagulative-necrosis-c076
+    section: ancillary
+    statement: "With a trichrome stain for collagen, a healed infarct appears as a sharply bounded area of blue-green collagen, almost free of cells, next to the surviving myocytes."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "659" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: coagulative-necrosis-c077
+    section: ancillary
+    statement: "Old renal infarcts and necrotic papillae can calcify; on H&E the mineral looks dark blue, and von Kossa, a more specific stain, confirms it by turning it black."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "954, 962, 965" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09

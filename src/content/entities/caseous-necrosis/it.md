@@ -1,6 +1,6 @@
 ---
 lang: it
-translatedFrom: 3dd41d72d7ab05335cb46ff1049f2007f9082786aa0f2b916ccd78e308fc9442
+translatedFrom: f9acc29e48ec42c80d762d4646d66e12313d3a7160e1e4ed8d7c66b129ba2583
 ---
 
 ## Definizione ed epidemiologia
@@ -27,7 +27,7 @@ La necrosi caseosa è un quadro di necrosi in cui, a differenza della necrosi co
 ## Morfologia macroscopica
 
 - Il nome richiama il formaggio: sulla superficie di taglio il centro necrotico appare come una cagliata molle, friabile, di colore bianco-grigiastro.<!--c:caseous-necrosis-c016-->
-- **Focolaio di Ghon:** la tubercolosi primaria lascia un nodulo subpleurico a margini netti con un nucleo necrotico; una volta guarito misura 1-2 cm e col tempo va incontro a cicatrizzazione e calcificazione.<!--c:caseous-necrosis-c017-->
+- **Focolaio di Ghon:** la tubercolosi primaria lascia un nodulo subpleurico a margini netti con un nucleo necrotico; una volta guarito misura 1-2 cm e col tempo va incontro a cicatrizzazione e calcificazione.<!--c:caseous-necrosis-c017--> Insieme ai linfonodi ilari o mediastinici che lo drenano, sede degli stessi granulomi caseosi, forma il **complesso primario di Ghon**.<!--c:caseous-necrosis-c067-->
 - **Caverne:** nella tubercolosi secondaria prediligono gli apici dei lobi superiori e contengono materiale caseoso ricco di bacilli alcol-acido resistenti; le dimensioni vanno da meno di 1 cm a quasi un intero polmone, ma per lo più sono di 3-10 cm.<!--c:caseous-necrosis-c018-->
 - **Quadro miliare:** numerosi piccoli noduli bianco-giallastri, ciascuno delle dimensioni di un grano di miglio, disseminati in diversi organi.<!--c:caseous-necrosis-c019-->
 - **Altre sedi:** linfonodi mesenterici aumentati di volume e sede di caseificazione nella tubercolosi intestinale, e masse cerebrali (tubercolomi) a centro caseoso.<!--c:caseous-necrosis-c020-->
@@ -43,9 +43,15 @@ La necrosi caseosa è un quadro di necrosi in cui, a differenza della necrosi co
 
 ## Colorazioni speciali, IIC e reperti molecolari
 
-- Le **colorazioni per bacilli alcol-acido resistenti**, come la Ziehl-Neelsen, mostrano i micobatteri come bastoncelli sottili, dall'aspetto a grani di rosario.<!--c:caseous-necrosis-c027-->
-- **Impregnazione argentica:** nell'istoplasmosi delinea i residui dei lieviti in degenerazione presenti nei focolai caseosi.<!--c:caseous-necrosis-c028-->
-- **GMS (argentica) e PAS** aiutano a evidenziare funghi come Coccidioides immitis.<!--c:caseous-necrosis-c029-->
+**Come si studia:**
+
+- **Campione:** il prelievo più informativo di un linfonodo ingrandito è il linfonodo intero, asportato chirurgicamente (biopsia escissionale); l'agobiopsia con ago tranciante (*core biopsy*) e l'agoaspirato con ago sottile per l'esame citologico sono alternative meno complete.<!--c:caseous-necrosis-c068-->
+- **Tessuto fresco per la coltura:** un campione fissato, per esempio un blocchetto in paraffina di tessuto fissato in formalina, non si può più mettere in coltura, eppure l'esame colturale con antibiogramma resta il test di riferimento per i micobatteri; perciò, se tutto il prelievo è stato fissato e il dubbio rimane, può servire una seconda biopsia inviata a fresco alla microbiologia.<!--c:caseous-necrosis-c069-->
+- **Ematossilina-eosina:** mostra il quadro, non la causa, perché anche agenti diversi da M. tuberculosis, come alcuni funghi, possono provocare caseificazione; il microrganismo va poi cercato con le colorazioni speciali.<!--c:caseous-necrosis-c070-->
+- **Ziehl-Neelsen:** questa colorazione per bacilli alcol-acido resistenti mostra i micobatteri come bastoncelli sottili, dall'aspetto a grani di rosario.<!--c:caseous-necrosis-c027--> «Alcol-acido resistenti» significa che i lipidi cerosi della parete batterica trattengono il colorante, la carbolfucsina, anche dopo il lavaggio con alcol acido; gli stessi lipidi ostacolano il cristalvioletto della colorazione di Gram, che perciò mette in evidenza male questi batteri.<!--c:caseous-necrosis-c071-->
+- **Pochi o molti bacilli:** il contenuto caseoso di una caverna aperta è ricchissimo di bacilli alcol-acido resistenti, mentre i granulomi necrotizzanti della tubercolosi intestinale ne contengono pochi.<!--c:caseous-necrosis-c072--> Nei campioni prelevati al di fuori del polmone i falsi negativi della ricerca microscopica dei bacilli alcol-acido resistenti sono molto frequenti, perciò un esito negativo non esclude la tubercolosi.<!--c:caseous-necrosis-c073-->
+- **Funghi:** GMS (argentica) e PAS aiutano a evidenziare funghi come Coccidioides immitis.<!--c:caseous-necrosis-c029--> Nei focolai caseosi dell'istoplasmosi i lieviti vanno incontro a degenerazione, ma una colorazione argentica ne mette ancora in evidenza i residui.<!--c:caseous-necrosis-c028--> Coccidioides si vede anche senza colorazioni speciali: all'ematossilina-eosina le sferule appaiono come strutture rotonde dal contorno basofilo e, quando sono mature, sono stipate di numerose piccole endospore.<!--c:caseous-necrosis-c074--> L'aspetto del fungo nel preparato suggerisce soltanto di quale microrganismo si tratti; la specie si conferma in laboratorio con l'esame colturale, con test molecolari (PCR) o con la ricerca di antigeni.<!--c:caseous-necrosis-c075-->
+- **Coltura e PCR:** M. tuberculosis si divide soltanto circa una volta ogni 24 ore, perciò in coltura una crescita visibile richiede di solito 3-6 settimane.<!--c:caseous-necrosis-c076--> Sul blocchetto in paraffina si può ancora eseguire, dopo la fissazione, la PCR per il DNA micobatterico: un risultato positivo depone per un'infezione da micobatteri, mentre uno negativo non la esclude.<!--c:caseous-necrosis-c077-->
 
 ## Presentazione clinica
 
@@ -90,6 +96,7 @@ La necrosi caseosa è un quadro di necrosi in cui, a differenza della necrosi co
 - Meccanismo: l'**ipersensibilità mediata dai linfociti T** attiva i macrofagi tramite l'**IFN-γ** e gli enzimi litici liberati distruggono il tessuto.<!--c:caseous-necrosis-c056-->
 - Corona: **macrofagi epitelioidi**, **cellule giganti di Langhans** (nuclei a ferro di cavallo), linfociti, fibrosi.<!--c:caseous-necrosis-c057-->
 - Evoluzione: **calcificazione** (complesso di Ghon guarito) oppure erosione di un bronco e **cavitazione**.<!--c:caseous-necrosis-c058-->
+- Colorazioni: **Ziehl-Neelsen** per i micobatteri, **GMS** e **PAS** per i funghi.<!--c:caseous-necrosis-c078-->
 
 ## Errori comuni e trappole d'esame
 
@@ -98,6 +105,7 @@ La necrosi caseosa è un quadro di necrosi in cui, a differenza della necrosi co
 - **La necrosi caseosa non è lo stesso quadro della necrosi colliquativa**, che è una digestione operata dai neutrofili; il materiale caseoso può tuttavia rammollirsi e colliquare, e lascia una caverna quando si svuota in un bronco.<!--c:caseous-necrosis-c062-->
 - **I corpi asteroidi e i corpi di Schaumann** si ritrovano nella maggior parte delle malattie granulomatose, quindi nessuno dei due indica in modo specifico la sarcoidosi.<!--c:caseous-necrosis-c063-->
 - **La necrosi non è un danno causato direttamente dal solo bacillo**: in gran parte deriva dalla risposta immunitaria dell'ospite.<!--c:caseous-necrosis-c064-->
+- **Un bacillo alcol-acido resistente non è per forza M. tuberculosis.** Anche i micobatteri atipici, come M. avium-intracellulare, sono alcol-acido resistenti e possono causare una malattia polmonare granulomatosa, con o senza caverne.<!--c:caseous-necrosis-c079-->
 
 ## Mnemotecniche
 

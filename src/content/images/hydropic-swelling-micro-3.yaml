@@ -1,0 +1,67 @@
+# License check (2026-11-08): Commons file page {{Information}} gives Source {{Institution: Calicut Medical College}},
+# Author "Department of Pathology, Calicut Medical College", Permission {{PermissionTicket|id=2014102010001497}}
+# confirmed by a Wikimedia VRT volunteer on 11 December 2014, license {{cc-by-sa-4.0}}; extmetadata LicenseShortName
+# "CC BY-SA 4.0", AttributionRequired true, no Restrictions. The uploader is not the creator, but the creator's own
+# permission is on file with the Wikimedia VRT. CC BY-SA is approved as a class by owner decision O7
+# (plan/v2-plan.md, 2026-11-03), hence ownerApproved: true. Histology only; nothing identifies the patient.
+# Group glycogenosis-liver-stains (see hydropic-swelling-micro-2 for the grouping and the missing magnification).
+# The portal tract along the bottom edge is read by inspection (connective tissue, a small thick-walled vessel); the
+# source does not label it.
+id: hydropic-swelling-micro-3
+file: hydropic-swelling-micro-3.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Glycogen_storage_disorder_(PAS_stain).jpg
+author: Department of Pathology, Calicut Medical College
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+retrievedAt: 2026-11-08
+modifications: none
+attributionText: >-
+  Department of Pathology, Calicut Medical College, "Glycogen storage disorder (PAS stain)", via Wikimedia Commons,
+  CC BY-SA 4.0
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+group: glycogenosis-liver-stains
+stain: PAS
+orientation:
+  it: "Gli epatociti occupano la parte alta e il centro; lungo il margine inferiore corre uno spazio portale."
+  en: "Hepatocytes fill the top and the centre; a portal tract runs along the bottom edge."
+lookFor:
+  it: "Confronta con l'EE: le stesse cellule chiare ora sono piene di granuli magenta."
+  en: "Compare with the H&E: the same kind of clear cells is now packed with magenta granules."
+caption:
+  it: >-
+    Stessa serie didattica colorata con il PAS (acido periodico-Schiff). Il PAS colora il glicogeno di magenta, e qui
+    gli epatociti che in EE sembravano vuoti sono stipati di granuli rosso-magenta scuro, tra cui spiccano molti minuscoli
+    puntini non colorati. Lungo il margine inferiore corre uno spazio portale, con connettivo e un piccolo vaso, che
+    prende poco colore: il segnale intenso appartiene agli epatociti. Concetto chiave: una positività PAS intensa in
+    cellule chiare e rigonfie fa pensare al glicogeno. Attenzione: il PAS colora anche altre sostanze (per esempio i
+    globuli di α1-antitripsina mal ripiegata di un'altra malattia del fegato), quindi la sola positività PAS non è una
+    prova. La prova è il controllo con diastasi, nell'immagine successiva.
+  en: >-
+    The same teaching set stained with PAS (periodic acid–Schiff). PAS colours glycogen magenta, and here the
+    hepatocytes that looked empty on H&E are packed with dark magenta-red granules, dotted with many tiny unstained
+    specks. Along the bottom edge runs a portal tract, with connective tissue and a small vessel, that takes
+    little colour: the strong signal belongs to the hepatocytes. Key point: intense PAS staining of pale, swollen
+    cells points to glycogen. Pitfall: PAS also colours other substances (for example the misfolded α1-antitrypsin
+    globules of another liver disease), so a positive PAS alone is not proof. The proof is the diastase control in the
+    next image.
+alt:
+  it: >-
+    Micrografia di fegato colorata con PAS: i due terzi superiori pieni di epatociti con citoplasma granulare
+    rosso-magenta scuro e minuscoli puntini bianchi; lungo il margine inferiore una banda viola più chiara di
+    connettivo con cellule chiare e un piccolo vaso rotondo.
+  en: >-
+    PAS-stained micrograph of liver: the upper two thirds filled with hepatocytes whose cytoplasm is dark magenta-red
+    and granular, with tiny white specks; along the bottom a paler purple band of connective tissue with clear cells
+    and a small round vessel.
+annotations:
+  - id: pas-positive-cytoplasm
+    label: { it: "Citoplasma magenta: PAS positivo (glicogeno)", en: "Magenta cytoplasm: PAS-positive (glycogen)" }
+    revealOrder: 1
+    shape: { type: rect, coords: [0.371, 0.143, 0.273, 0.286] }
+  - id: portal-tract
+    label: { it: "Spazio portale lungo il margine inferiore (punto di repere)", en: "Portal tract along the bottom edge (landmark)" }
+    revealOrder: 2
+    shape: { type: rect, coords: [0.15, 0.73, 0.85, 0.27] }

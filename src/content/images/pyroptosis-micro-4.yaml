@@ -1,0 +1,111 @@
+# License check (2026-11-09): taken from the article itself, not from Wikimedia Commons. The article XML in PubMed
+# Central (PMC6043855) carries a CC BY 4.0 licence ("© 2018 The Authors. Published under the terms of the CC BY 4.0
+# license"), confirmed by the PubMed copyright record; the Fig. 5 legend has no third-party credit line. The images
+# are the authors' own atomic force microscopy of recombinant human proteins on an artificial lipid membrane: no
+# cells, no patient material. The web renditions are 709 px wide and the publisher pages answer scripts with a
+# browser challenge, so the file was cut from the Fig. 5 image embedded in the article PDF of the PMC open-access copy
+# (1266 × 632 px, without the panel letters, which the PDF sets as text). Caption facts from the article: incubation
+# conditions, scale bars, 10 nm colour range and 2.3 nm subunit spacing (Fig. 5 legend); about 16, 21 and 30 subunits
+# per arc, slit and ring (Fig. 5 D-F); every shape can form transmembrane pores, PI(4,5)P2 favours and cholesterol
+# hinders insertion, same behaviour after cleavage by caspase-1, -4 or -5 (abstract); open forms ending as stable
+# rings (abstract, Fig. 6 model); ring diameter 22.6 nm on average, 13.5-33.5 nm, on the same lipid mixture (Fig. 1J
+# and Results). The darker core of the ring in C was checked on the file (pixel values below those of the membrane
+# outside the ring). IL-1β exit and water entry through the pores: card text (rubin-8e ch. 1 p. 56; evavold-2018).
+# Annotation boxes placed by inspection.
+id: pyroptosis-micro-4
+file: pyroptosis-micro-4.jpg
+kind: micro
+sourceUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC6043855/figure/embj201798321-fig-0005/
+author: Estefania Mulvihill, Lorenzo Sborgi, Stefania A. Mari, Moritz Pfreundschuh, Sebastian Hiller, Daniel J. Müller
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-11-09
+modifications:
+  it: >-
+    Ritaglio sui pannelli A–C della Fig. 5 (esclusi gli istogrammi D–F), presi dall'immagine della figura incorporata
+    nel PDF dell'articolo in PubMed Central (PMC6043855, 1266 × 632 px, mentre la versione web è larga 709 px); nessun
+    ridimensionamento, ricodifica in JPEG (metadati rimossi). In questa immagine mancano le lettere dei pannelli:
+    nell'articolo le lettere B e C sono stampate sopra i due quadratini scuri in alto a sinistra degli ingrandimenti.
+    Frecce e barre di scala fanno parte della figura pubblicata.
+  en: >-
+    Cropped to panels A–C of Fig. 5 (histograms D–F left out), taken from the figure image embedded in the article PDF
+    in PubMed Central (PMC6043855, 1266 × 632 px, whereas the web rendition is 709 px wide); not resized, re-encoded as
+    JPEG (metadata stripped). The panel letters are missing from this image: in the article, the letters B and C are
+    printed over the two small dark squares at the top left of the close-ups. The arrows and scale bars belong to the
+    published figure.
+attributionText: >-
+  Estefania Mulvihill, Lorenzo Sborgi, Stefania A. Mari, Moritz Pfreundschuh, Sebastian Hiller, Daniel J. Müller,
+  "Mechanism of membrane pore formation by human gasdermin-D", EMBO J 2018;37(14):e98321, doi:10.15252/embj.201798321,
+  Fig. 5 (panels A–C, cropped), CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-09 }
+stain: atomic force microscopy (AFM) topograph, colour-coded for height
+magnification: molecular scale (scale bars 20 nm in A, 10 nm in the two close-ups)
+lookFor:
+  it: "Il colore indica l'altezza: gli anelli gialli sporgono dalla membrana marrone; negli ingrandimenti conta le subunità lungo il bordo."
+  en: "Colour codes height: the yellow rings stand out from the brown membrane; in the close-ups, count the subunits along the rim."
+caption:
+  it: >-
+    I pori della piroptosi resi visibili: microscopia a forza atomica (AFM) della gasdermina D umana su una membrana
+    lipidica artificiale, un esperimento in provetta, senza cellule. Qui un doppio strato lipidico piatto fa le veci
+    della membrana plasmatica: dopo un'ora a 37 °C con gasdermina D e caspasi-1, la caspasi aveva tagliato la gasdermina
+    D e il suo frammento N-terminale era entrato nella membrana, assemblandosi. Il microscopio tasta la superficie con
+    una punta sottilissima e il colore codifica l'altezza, dal marrone scuro (basso) al giallo brillante (alto) su un
+    intervallo di 10 nm: le strutture gialle che sporgono dalla membrana marrone sono oligomeri di gasdermina D. A
+    sinistra (A, barra di scala 20 nm) una folla di oligomeri: soprattutto anelli chiusi, con alcuni archi aperti e
+    alcune «fessure», anelli stretti e allungati. A destra, due ingrandimenti (B e C, barre di scala 10 nm): il bordo è
+    una catena di subunità distanti circa 2,3 nm l'una dall'altra (frecce), e in C il centro dell'anello ha un nucleo
+    più scuro, cioè più basso, della membrana all'esterno. Secondo i conteggi degli autori un anello chiuso contiene in
+    media circa 30 subunità, mentre le forme più piccole ne hanno meno (circa 16 un arco aperto, circa 21 una fessura);
+    già queste forme più piccole potevano perforare la membrana, e seguite nel tempo finivano per confluire in anelli,
+    la forma più stabile. Su questa membrana gli anelli misuravano in media circa 23 nm di diametro, con forti
+    differenze tra l'uno e l'altro (da 13,5 a 33,5 nm). I fosfoinositidi favorivano l'inserimento della gasdermina D
+    nella membrana e il colesterolo lo ostacolava; la gasdermina D tagliata dalla caspasi-4 o dalla caspasi-5 si
+    comportava come quella tagliata dalla caspasi-1. Perché conta: questi anelli sono un modello in provetta dei pori di
+    gasdermina D descritti nella scheda, attraverso i quali l'IL-1β esce dalla cellula mentre acqua e ioni entrano,
+    finché la membrana plasmatica si rompe.
+  en: >-
+    The pores of pyroptosis made visible: atomic force microscopy (AFM) of human gasdermin D on an artificial lipid
+    membrane, a test-tube experiment with no cells. Here a flat lipid bilayer stands in for the plasma membrane: after
+    an hour at 37 °C with gasdermin D and caspase-1, the caspase had cut gasdermin D, and its N-terminal fragment had
+    entered the membrane and assembled there. The microscope feels the surface with a very fine tip, and colour codes
+    height, from dark brown (low) to bright yellow (high) over a 10 nm range: the yellow structures standing out from
+    the brown membrane are gasdermin D oligomers. On the left (A, scale bar 20 nm), a crowd of oligomers: mostly closed
+    rings, with some open arcs and some "slits", narrow, elongated loops. On the right, two close-ups (B and C, scale
+    bars 10 nm): the rim is a chain of subunits about 2.3 nm apart (arrows), and in C the centre of the ring has a
+    darker core, that is, lower than the membrane outside. By the authors' counts a closed ring holds about 30 subunits
+    on average, while the smaller forms hold fewer (about 16 in an open arc, about 21 in a slit); even these smaller
+    forms could already pierce the membrane, and followed over time they ended up merging into rings, the most stable
+    shape. On this membrane the rings measured about 23 nm across on average, with large differences from one to another
+    (13.5 to 33.5 nm). Phosphoinositides favoured the entry of gasdermin D into the membrane and cholesterol hindered
+    it; gasdermin D cut by caspase-4 or caspase-5 behaved like gasdermin D cut by caspase-1. Why it matters: these rings
+    are a test-tube model of the gasdermin D pores described in the card, through which IL-1β leaves the cell while
+    water and ions flow in, until the plasma membrane breaks.
+alt:
+  it: >-
+    Figura di microscopia a forza atomica in marrone e giallo, con un grande pannello quadrato a sinistra e due
+    ingrandimenti più piccoli, uno sopra l'altro, a destra. Il pannello grande mostra una ventina di anelli gialli
+    brillanti a forma di ciambella e di archi aperti, alcuni con punti luminosi all'interno, che risaltano su un fondo
+    marrone scuro e liscio, con una barra di scala bianca in basso a destra. Ogni ingrandimento mostra un singolo
+    anello, con il bordo fatto di piccole protuberanze ripetute e due piccole frecce bianche tratteggiate sul bordo;
+    l'anello in basso ha il centro scuro.
+  en: >-
+    Atomic force microscopy figure in brown and yellow, with one large square panel on the left and two smaller
+    close-ups stacked on the right. The large panel shows about twenty bright yellow doughnut-shaped rings and open
+    arcs, some with bright spots inside, standing out from a smooth dark brown background, with a white scale bar at
+    bottom right. Each close-up shows a single ring whose rim is made of small repeated bumps, with two small white
+    dashed arrows on the rim; the lower ring has a dark centre.
+annotations:
+  - id: gasdermin-ring
+    label: { it: "Oligomero di gasdermina D: un anello di subunità che sporge dalla membrana", en: "Gasdermin D oligomer: a ring of subunits standing out of the membrane" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.353, 0.702, 0.472, 0.702, 0.472, 0.888, 0.353, 0.888] }
+  - id: adjacent-subunits
+    label: { it: "Subunità adiacenti lungo il bordo (frecce), a circa 2,3 nm", en: "Adjacent subunits along the rim (arrows), about 2.3 nm apart" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.745, 0.110, 0.800, 0.110, 0.800, 0.175, 0.745, 0.175] }
+  - id: ring-centre
+    label: { it: "Centro dell'anello più basso della membrana circostante", en: "Ring centre lower than the surrounding membrane" }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.775, 0.700, 0.870, 0.700, 0.870, 0.820, 0.775, 0.820] }

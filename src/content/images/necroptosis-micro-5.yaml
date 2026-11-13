@@ -1,0 +1,119 @@
+# License check (2026-11-08): same article and licence as necroptosis-micro-4 (PMC8688721; "open access article
+# under the CC BY license", © 2021 The Authors; Crossref version-of-record licence CC BY 4.0). The Figure 2 legend has
+# no third-party credit line. Allowed under COMPLIANCE_PLAN §4. Electron micrographs of organoids in culture: nothing
+# in the image can identify a person.
+# Arrow colours, as defined in the Figure 2 legend: pink pyknosis; dark green shrunken cytoplasm; purple fragmented
+# nucleus; yellow plasma membrane blebbing; light green cytoplasmic vacuolization; red condensed mitochondria; dark blue
+# karyolysis; light blue ruptured plasma membrane; white rounded nuclei. The Results text reads T/S as apoptotic and
+# T/S/Z as necroptosis-like; Fig. 3 shows active caspase-8 and -3 with T/S, and pMLKL (removed by Nec-1) with T/S/Z.
+# This closes the 2026-10-10 MISSING_ASSETS row asking for an electron micrograph of a necroptotic cell beside an
+# apoptotic one.
+id: necroptosis-micro-5
+file: necroptosis-micro-5.jpg
+kind: micro
+sourceUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC8688721/figure/fig2/
+author: >-
+  Shaojun Shi, Monique M.A. Verstegen, Henk P. Roest, Arif I. Ardisasmita, Wanlu Cao, Floris J.M. Roos, Petra E. de
+  Ruiter, Marije Niemeijer, Qiuwei Pan, Jan N.M. IJzermans, Luc J.W. van der Laan
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-11-08
+modifications:
+  it: >-
+    Ritaglio del pannello I dalla Figura 2 ad alta risoluzione dell'editore (2976 × 4151 px,
+    https://ars.els-cdn.com/content/image/1-s2.0-S2352345X2100223X-gr2_lrg.jpg), alla risoluzione nativa (pixel x
+    1553–2975, y 3212–4150: 1423 × 939 px); restano fuori la lettera del pannello e i pannelli A–H. Salvato in JPEG
+    (qualità 88), metadati rimossi. Le frecce colorate, le etichette e le barre di scala da 2 µm fanno parte della
+    figura pubblicata.
+  en: >-
+    Cropped to panel I of the publisher's high-resolution Figure 2 (2976 × 4151 px,
+    https://ars.els-cdn.com/content/image/1-s2.0-S2352345X2100223X-gr2_lrg.jpg) at native resolution (pixels x
+    1553–2975, y 3212–4150: 1423 × 939 px); the panel letter and panels A–H are left out. Saved as JPEG (quality 88),
+    metadata stripped. The coloured arrows, the labels and the 2 µm scale bars belong to the published figure.
+attributionText: >-
+  Shi S, Verstegen MMA, Roest HP et al., "Recapitulating Cholangiopathy-Associated Necroptotic Cell Death In Vitro
+  Using Human Cholangiocyte Organoids", Cell Mol Gastroenterol Hepatol 2022;13(2):541–564,
+  doi:10.1016/j.jcmgh.2021.10.009, Figure 2I (cropped), CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+group: necroptosis-cholangiocyte-organoids
+stain: transmission electron microscopy (TEM)
+magnification: high power for electron microscopy (scale bars 2 µm)
+orientation:
+  it: "Colonne: controllo (CTR), apoptosi (T/S), necroptosi (T/S/Z). Righe: 6 ore (in alto) e 12 ore (in basso) di trattamento."
+  en: "Columns: control (CTR), apoptosis (T/S), necroptosis (T/S/Z). Rows: 6 hours (top) and 12 hours (bottom) of treatment."
+lookFor:
+  it: "Confronta la colonna T/S (cellule scure e raggrinzite, nucleo in pezzi) con la colonna T/S/Z (cellula chiara e piena di vacuoli, poi membrana interrotta)."
+  en: "Compare the T/S column (dark, shrunken cells, nucleus in pieces) with the T/S/Z column (pale cell full of vacuoles, then a broken membrane)."
+caption:
+  it: >-
+    Lo stesso esperimento sugli organoidi visto al microscopio elettronico a trasmissione, dopo 6 ore (riga in alto) e
+    12 ore (riga in basso); le frecce colorate sono degli autori. CTR: un colangiocita sano, con nucleo ovale, cromatina
+    finemente dispersa e profilo cellulare continuo. T/S, TNF-α più Smac-mimetico, cioè apoptosi: le cellule sono più
+    piccole e più scure perché il citoplasma si è addensato (frecce verde scuro), la cromatina si condensa in zolle
+    compatte (picnosi, freccia rosa), il nucleo si spezza in frammenti (frecce viola) e la superficie forma bolle
+    (blebbing, freccia gialla); a 12 ore il campo è pieno di frammenti compatti e chiusi da membrana, alcuni con pezzi di
+    nucleo: i corpi apoptotici. T/S/Z, lo stesso più l'inibitore delle caspasi zVAD-fmk, cioè necroptosi: a 6 ore il
+    nucleo resta rotondo, senza zolle di cromatina (freccia bianca), mentre il citoplasma si riempie di vacuoli chiari
+    (freccia verde chiaro) e di mitocondri densi e condensati (frecce rosse); a 12 ore il nucleo è pallido e sta
+    svanendo (cariolisi, freccia blu scuro) e la membrana plasmatica ha ceduto (freccia azzurra), così il contenuto della
+    cellula si riversa all'esterno. Da ricordare: l'apoptosi impacchetta la cellula in frammenti chiusi, pronti per i
+    fagociti; la necroptosi finisce con una cellula scoppiata, ed è per questo che richiama infiammazione. In un tessuto,
+    al microscopio ottico, questa cellula scoppiata sembrerebbe una qualsiasi cellula necrotica: per riconoscere la
+    necroptosi servono marcatori come la MLKL fosforilata. Attenzione: organoidi in coltura, non una biopsia.
+  en: >-
+    The same organoid experiment seen under the transmission electron microscope, after 6 hours (top row) and 12 hours
+    (bottom row); the coloured arrows are the authors'. CTR: a healthy cholangiocyte with an oval nucleus, finely
+    dispersed chromatin and a continuous cell outline. T/S, TNF-α plus a Smac mimetic, that is apoptosis: the cells are
+    smaller and darker because the cytoplasm has condensed (dark-green arrows), chromatin packs into dense clumps
+    (pyknosis, pink arrow), the nucleus breaks into fragments (purple arrows) and the surface bulges into blebs (yellow
+    arrow); by 12 hours the field is crowded with compact, membrane-bound fragments, some holding pieces of nucleus: the
+    apoptotic bodies. T/S/Z, the same plus the caspase inhibitor zVAD-fmk, that is necroptosis: at 6 hours the nucleus
+    stays round with no clumped chromatin (white arrow), while the cytoplasm fills with clear vacuoles (light-green
+    arrow) and dense, condensed mitochondria (red arrows); at 12 hours the nucleus is pale and fading (karyolysis,
+    dark-blue arrow) and the plasma membrane has given way (light-blue arrow), so the cell's contents spill outside.
+    Key point: apoptosis packs the cell into closed fragments ready for phagocytes; necroptosis ends with a burst cell,
+    which is why it calls in inflammation. In a tissue, under the light microscope, this burst cell would look like any
+    other necrotic cell: telling necroptosis apart takes markers such as phosphorylated MLKL. Note that these are
+    organoids in culture, not a biopsy.
+alt:
+  it: >-
+    Sei micrografie elettroniche in scala di grigi in due righe (6 ore e 12 ore) e tre colonne (CTR, T/S, T/S/Z), con
+    barre di scala da 2 µm. In CTR una cellula allungata con un grande nucleo ovale e uniforme. In T/S, a 6 ore, cellule
+    piccole e scure con cromatina in zolle nere (frecce rosa, viola, gialla e verde scuro); a 12 ore molti frammenti
+    rotondi e densi (frecce viola e verde scuro). In T/S/Z, a 6 ore, una cellula chiara con un grande nucleo rotondo e un
+    citoplasma pieno di vacuoli bianchi e di puntini neri; a 12 ore una cellula con nucleo pallido e membrana
+    interrotta, indicati da frecce blu scuro e azzurra.
+  en: >-
+    Six greyscale electron micrographs in two rows (6 hours and 12 hours) and three columns (CTR, T/S, T/S/Z), with 2 µm
+    scale bars. In CTR an elongated cell with a large, even, oval nucleus. In T/S, at 6 hours, small dark cells with
+    chromatin in black clumps (pink, purple, yellow and dark-green arrows); at 12 hours many dense round fragments
+    (purple and dark-green arrows). In T/S/Z, at 6 hours, a pale cell with a large round nucleus and a cytoplasm full of
+    white vacuoles and black dots; at 12 hours a cell with a pale nucleus and a broken membrane, marked by dark-blue and
+    light-blue arrows.
+annotations:
+  - id: apoptotic-cell
+    label: { it: "Apoptosi (T/S, 6 ore): cellula scura e raggrinzita, cromatina condensata", en: "Apoptosis (T/S, 6 h): dark, shrunken cell with condensed chromatin" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.432, 0.160, 0.597, 0.160, 0.597, 0.442, 0.432, 0.442] }
+  - id: apoptotic-body
+    label: { it: "Frammento con pezzi di nucleo (freccia viola): corpo apoptotico", en: "Fragment holding pieces of nucleus (purple arrow): apoptotic body" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.502, 0.698, 0.562, 0.698, 0.562, 0.793, 0.502, 0.793] }
+  - id: cytoplasmic-vacuoles
+    label: { it: "Necroptosi (T/S/Z, 6 ore): citoplasma pieno di vacuoli chiari", en: "Necroptosis (T/S/Z, 6 h): cytoplasm full of clear vacuoles" }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.675, 0.100, 0.780, 0.100, 0.780, 0.270, 0.675, 0.270] }
+  - id: round-nucleus
+    label: { it: "Nucleo rotondo, cromatina non addensata (freccia bianca)", en: "Round nucleus, chromatin not clumped (white arrow)" }
+    revealOrder: 4
+    shape: { type: polygon, coords: [0.725, 0.200, 0.915, 0.200, 0.915, 0.505, 0.725, 0.505] }
+  - id: karyolysis
+    label: { it: "Nucleo pallido che svanisce: cariolisi (freccia blu scuro)", en: "Pale, fading nucleus: karyolysis (dark-blue arrow)" }
+    revealOrder: 5
+    shape: { type: polygon, coords: [0.755, 0.671, 0.854, 0.671, 0.854, 0.815, 0.755, 0.815] }
+  - id: membrane-rupture
+    label: { it: "Membrana plasmatica rotta (freccia azzurra)", en: "Broken plasma membrane (light-blue arrow)" }
+    revealOrder: 6
+    shape: { type: polygon, coords: [0.864, 0.809, 0.935, 0.809, 0.935, 0.927, 0.864, 0.927] }

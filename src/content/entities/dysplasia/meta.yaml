@@ -31,6 +31,8 @@ learningObjectives:
     en: "Describe the sequential accumulation of mutations and clonal selection that lead from dysplasia to cancer, and why dysplasia can still regress."
   - it: "Distinguere la displasia dal carcinoma in situ (atipie estese a tutto lo spessore dell'epitelio, senza maturazione superficiale) e riconoscere che la membrana basale separa entrambi dal carcinoma invasivo."
     en: "Distinguish dysplasia from carcinoma in situ (atypical cells across the full epithelial thickness, with no surface maturation) and recognize that the basement membrane separates both from invasive carcinoma."
+  - it: "Descrivere come si cerca e si conferma una displasia (citologia, biopsia mirata, ematossilina-eosina, p16) e spiegare perché leucoplachia ed eritroplachia richiedono una biopsia."
+    en: "Describe how dysplasia is sought and confirmed (cytology, targeted biopsy, H&E, p16) and explain why leukoplakia and erythroplakia need a biopsy."
 prerequisites: []
 relations:
   - type: prerequisiteOf
@@ -107,6 +109,31 @@ chain:
     lab:
       it: "Colonscopia di sorveglianza con biopsie sistematiche: displasia di basso o di alto grado"
       en: "Surveillance colonoscopy with systematic biopsies: low- or high-grade dysplasia"
+examQuestions:
+  - it: "Mi parli della displasia: come la definisce e in quali epiteli e situazioni cliniche può comparire?"
+    en: "Tell me about dysplasia: how do you define it, and in which epithelia and clinical settings can it arise?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Che cosa vede al microscopio in un epitelio squamoso displastico, rispetto a un epitelio normale?"
+    en: "What do you see under the microscope in a dysplastic squamous epithelium, compared with a normal one?"
+    focus: [micro, pathogenesis]
+    level: 1
+  - it: "Perché un danno cronico può portare alla displasia? E perché la displasia, a differenza di un carcinoma, può ancora regredire?"
+    en: "Why can chronic injury lead to dysplasia? And why can dysplasia, unlike a carcinoma, still regress?"
+    focus: [pathogenesis, prognosis]
+    level: 2
+  - it: "Mi parli della displasia della cervice uterina: con quali esami la si individua e la si conferma, come si gradua e da quale grado si interviene?"
+    en: "Tell me about dysplasia of the uterine cervix: which tests detect and confirm it, how is it graded, and from which grade do you treat?"
+    focus: [ancillary, micro, prognosis]
+    level: 2
+  - it: "Come distingue al microscopio una displasia grave da un carcinoma in situ e da un carcinoma invasivo? Perché questo confine conta tanto?"
+    en: "Under the microscope, how do you tell severe dysplasia from carcinoma in situ and from invasive carcinoma? Why does this boundary matter so much?"
+    focus: [differential, diagnosis]
+    level: 3
+  - it: "Un fumatore ha una chiazza bianca sulla mucosa orale: è una lesione precancerosa? Come arriva alla diagnosi, e che cosa cambia se la chiazza è rossa?"
+    en: "A smoker has a white patch on the oral mucosa: is it a precancerous lesion? How do you reach the diagnosis, and what changes if the patch is red?"
+    focus: [clinical, diagnosis, prognosis]
+    level: 3
 images:
   - id: dysplasia-micro-1
     role: micro
@@ -114,6 +141,10 @@ images:
     role: micro
   - id: dysplasia-micro-3
     role: micro
+  - id: dysplasia-micro-4
+    role: micro
+  - id: dysplasia-clinical-1
+    role: clinical
   - id: g01-adaptation-spectrum
     role: diagram
 reviewStatus: ai-generated-unreviewed
@@ -130,12 +161,16 @@ sources:
     pages: "305"
   - source: rubin-8e
     chapter: "19"
-    pages: "771, 818, 823, 833"
+    pages: "771, 818, 823-824, 833"
   - source: rubin-8e
     chapter: "22"
     pages: "921"
   - source: rubin-8e
     chapter: "24"
-    pages: "1030-1031"
-lastUpdated: 2026-11-03
+    pages: "1018, 1023, 1026, 1030-1033"
+  - source: rubin-8e
+    chapter: "29"
+    pages: "1304-1305, 1317"
+  - source: dijkstra-2010
+lastUpdated: 2026-11-09
 status: published

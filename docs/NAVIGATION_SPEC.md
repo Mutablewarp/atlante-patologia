@@ -75,7 +75,7 @@ All ids in URLs are language-neutral, so switching language swaps only the `/{la
 
 Interpretation recorded in [DECISIONS.md](DECISIONS.md) D010: the brief's `/{lang}/atlas/{lens}/{slug}/` is the **lens-term page**. Entities live only at `/{lang}/e/{id}/`, which avoids duplicate pages and keeps one canonical URL.
 
-**Lens context.** Links from a lens-term page add `?via={lens}:{term}`. On the entity page, a small island reads it and replaces the breadcrumb and Prev/Next with that lens's order. Without the parameter (deep link, no JS), the server-rendered default is the entity's primary organ-system order. `rel=canonical` always points to the URL without the query.
+**Lens context.** Links from a lens-term page add `?via={lens}:{term}`. On the entity page, a small island reads it and replaces the breadcrumb and Prev/Next with that lens's order (built from JSON the page carries, D072). Without the parameter (deep link, no JS), the server-rendered default is the entity's primary organ-system order. `rel=canonical` always points to the URL without the query.
 
 **SEO/i18n head:** `<html lang>`, `rel=alternate hreflang="it"|"en"|"x-default"` (x-default → `/`), and a sitemap with alternates.
 
@@ -184,7 +184,7 @@ Reading layout (D068):
 ## 6. Orientation
 
 - Breadcrumbs on every page below a top-level destination.
-- "You are here" highlight in the module tree: the sidebar copy (≥ 1024 px) opens with the current card in the middle of its scrolling box (its `scrollTop` only, the page never moves) and fades the edges that hide cards; the chapter dialog (600–1023 px, and ≥ 1024 px with the sidebar collapsed) opens with focus on the current card. A native modal `<dialog>`: focus stays inside, Esc or a click on the backdrop closes it, focus returns to the button.
+- "You are here" highlight in the module tree: the sidebar copy (≥ 1024 px) opens with the current card in the middle of its scrolling box (its `scrollTop` only, the page never moves) and fades the edges that hide cards; the chapter dialog (600–1023 px, and ≥ 1024 px with the sidebar collapsed) opens with focus on the current card. A native modal `<dialog>`: focus stays inside, Esc or a click on the backdrop closes it, focus returns to the button. The page holds the module tree once: the dialog is empty and takes the sidebar's tree while it is open (D072).
 - Card order in every list (chapter index, chapter and lens-term lists, previous/next): module order, then the name in the language of the page (`localeCompare`), because the data has no order of cards inside a module (D067).
 - Recently viewed: last 20, stored in IndexedDB.
 - "Resume where you left off": last entity plus section anchor.

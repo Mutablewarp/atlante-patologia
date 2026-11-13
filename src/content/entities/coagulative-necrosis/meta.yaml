@@ -117,12 +117,42 @@ chain:
     lab:
       it: "Ematuria"
       en: "Hematuria"
+examQuestions:
+  - it: "Mi parli della necrosi coagulativa: che cos'è e qual è la sua causa più frequente?"
+    en: "Tell me about coagulative necrosis: what is it, and what is its most common cause?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Che cosa vede al microscopio, in una sezione colorata con ematossilina-eosina, in un'area di necrosi coagulativa? Mi descriva il citoplasma e i nuclei."
+    en: "What do you see under the microscope, in a section stained with hematoxylin and eosin, in an area of coagulative necrosis? Describe the cytoplasm and the nuclei."
+    focus: [micro, high-yield]
+    level: 1
+  - it: "Perché gli infarti del rene e della milza sono pallidi, mentre quello del polmone è rosso? Che tipo di necrosi trova in entrambi?"
+    en: "Why are infarcts of the kidney and spleen pale, while an infarct of the lung is red? Which type of necrosis do you find in both?"
+    focus: [gross, traps]
+    level: 2
+  - it: "Mi descriva come evolve un infarto miocardico, a occhio nudo e al microscopio, dalle prime ore fino alla cicatrice. Con quale colorazione mette in evidenza la cicatrice?"
+    en: "Describe how a myocardial infarct evolves, to the naked eye and under the microscope, from the first hours to the scar. Which stain do you use to show the scar?"
+    focus: [prognosis, micro, ancillary]
+    level: 2
+  - it: "Come distingue al microscopio la necrosi coagulativa dalla colliquativa, dalla caseosa e dall'apoptosi? E in quale organo la necrosi ischemica non resta coagulativa?"
+    en: "How do you tell coagulative necrosis from liquefactive necrosis, caseous necrosis and apoptosis under the microscope? And in which organ does ischemic necrosis not stay coagulative?"
+    focus: [differential, traps, high-yield]
+    level: 3
+  - it: "All'autopsia di un paziente morto poche ore dopo la comparsa di un dolore toracico, il cuore appare normale a occhio nudo: questo esclude un infarto? Che cosa potrebbero mostrare a questo stadio l'ematossilina-eosina e la microscopia elettronica, e quali esami del sangue avrebbero documentato la necrosi in vita?"
+    en: "At the autopsy of a patient who died a few hours after chest pain began, the heart looks normal to the naked eye: does that rule out an infarct? What could H&E and electron microscopy show at this stage, and which blood tests would have documented the necrosis during life?"
+    focus: [traps, micro, ancillary, diagnosis]
+    level: 3
 images:
   - id: coagulative-necrosis-gross-1
     role: gross
+  - id: coagulative-necrosis-gross-2
+    role: gross
+    pairWith: hypoxic-ischemic-injury-micro-1
   - id: coagulative-necrosis-micro-1
     role: micro
   - id: coagulative-necrosis-micro-2
+    role: micro
+  - id: coagulative-necrosis-micro-3
     role: micro
   - id: g01-necrosis-vs-apoptosis
     role: diagram
@@ -140,9 +170,9 @@ sources:
     pages: "365"
   - source: rubin-8e
     chapter: "17"
-    pages: "657-659"
+    pages: "656-661"
   - source: rubin-8e
     chapter: "22"
-    pages: "954-955, 961-962"
-lastUpdated: 2026-11-03
+    pages: "954-955, 961-962, 965"
+lastUpdated: 2026-11-09
 status: published

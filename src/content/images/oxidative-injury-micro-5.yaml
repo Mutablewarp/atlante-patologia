@@ -1,0 +1,83 @@
+# License check (2026-11-08): same article, licence and provenance as oxidative-injury-micro-4 (PMC12664704, CC BY
+# 4.0, PubMed 41322939); this is panel b of Figure 2, cropped at full resolution from the figure embedded in the PMC
+# open-access PDF. Group hepatic-lipofuscin-omameuda (see oxidative-injury-micro-4). The legend calls this panel a
+# magnified view of panel a; its 50 µm bar is about 2.8 times as long as panel a's. The placement of the granules
+# along the borders between hepatocytes is read by inspection. Histology only; nothing identifies the patient.
+# Re-checked 2026-11-09: the crop matches the PDF figure at offset 1446,20 (mean pixel difference 1.4/255). Hemosiderin
+# mainly in Kupffer cells and iron-filled hepatocytes in hereditary hemochromatosis: rubin-8e pp. 7 and 874-875.
+id: oxidative-injury-micro-5
+file: oxidative-injury-micro-5.jpg
+kind: micro
+sourceUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC12664704/figure/FIG2/
+author: Takahiko Omameuda, Yasuharu Onishi, Yukihiro Sanada, Yasunaru Sakuma, Hironori Yamaguchi
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-11-08
+modifications:
+  it: >-
+    Pannello b della Fig. 2 dell'articolo di origine, ritagliato dalla figura come è inclusa nel PDF dell'articolo
+    nell'archivio open access di PMC (2892 × 2164 px): ritaglio di 1414 × 1060 px a piena risoluzione, ricodificato in
+    JPEG; nessun ridimensionamento, nessuna modifica dei colori. La lettera del pannello, le punte di freccia gialle e
+    la barra di scala da 50 µm fanno parte della figura originale.
+  en: >-
+    Panel b of Fig. 2 of the source article, cropped from the figure as embedded in the article PDF of the PMC
+    open-access record (2892 × 2164 px): a 1414 × 1060 px crop at full resolution, re-encoded as JPEG; no resizing, no
+    colour change. The panel letter, the yellow arrowheads and the 50 µm scale bar belong to the original figure.
+attributionText: >-
+  Omameuda T, Onishi Y, Sanada Y, Sakuma Y, Yamaguchi H, "Hepatic Lipofuscin Deposition in Living Liver Donor
+  Candidate", Cureus 2025;17(10):e95770, doi:10.7759/cureus.95770, Fig. 2 (panel b), CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-09 }
+group: hepatic-lipofuscin-omameuda
+stain: H&E
+magnification: high power (the source calls it a magnified view of the ×100 panel)
+lookFor:
+  it: "Trova un nucleo rotondo, poi spostati verso il bordo della cellula: lì si raccolgono i fini granuli bruno-dorati."
+  en: "Find a round nucleus, then move to the edge of its cell: the fine golden-brown granules gather there."
+caption:
+  it: >-
+    La stessa biopsia a forte ingrandimento, un dettaglio del campo a piccolo ingrandimento; le punte di freccia gialle
+    sono degli autori. Ora la polvere si risolve in granuli. Ogni epatocita è una grande cellula poligonale con un
+    nucleo rotondo e centrale; nel citoplasma stanno granuli bruno-dorati, fini e tutti della stessa misura, raccolti
+    soprattutto verso i margini dove una cellula tocca la vicina, più che sparsi in modo uniforme. Stanno dentro gli
+    epatociti, non nelle piccole cellule di Kupffer lungo i sinusoidi. Gli autori non hanno trovato altre lesioni nella
+    biopsia. Ecco l'aspetto della lipofuscina in una cellula parenchimale: un pigmento fine, pallido e di calibro
+    regolare, segno visibile che il danno ossidativo ha superato la capacità di smaltimento della cellula.
+    L'emosiderina, invece, forma di solito globuli più grossolani e più scuri e nei normali depositi di ferro sta
+    soprattutto nei macrofagi, come le cellule di Kupffer, anche se nell'emocromatosi se ne riempiono pure gli
+    epatociti, come mostra l'immagine con il blu di Prussia di questa scheda. Quando in EE non si riesce a
+    distinguerle decide la colorazione per il ferro, che trovi in questa stessa serie.
+  en: >-
+    The same biopsy at high power, a detail of the low-power field; the yellow arrowheads are the authors'. Now the
+    dust resolves into granules. Each hepatocyte is a large polygonal cell with a round, central nucleus; its cytoplasm
+    holds fine golden-brown granules of even size, gathered mostly towards the margins where one cell meets the next
+    rather than spread evenly. They lie inside the hepatocytes, not in the small Kupffer cells along the sinusoids. The
+    authors found no other lesion in the biopsy. This is lipofuscin in a parenchymal cell: a fine, pale, even-sized
+    pigment, the visible sign that oxidative damage has outpaced the cell's clean-up. Haemosiderin, by contrast,
+    usually forms coarser and darker globules and in ordinary iron stores sits mainly in macrophages such as Kupffer
+    cells, although in haemochromatosis the hepatocytes fill with it too, as the Prussian blue image on this card
+    shows. When H&E cannot tell the two apart, the iron stain decides: you will find it in this same set.
+alt:
+  it: >-
+    Micrografia di fegato in ematossilina-eosina a forte ingrandimento: epatociti rosa, grandi e poligonali, con nuclei
+    rotondi viola; nel citoplasma fini granuli bruno-dorati, più fitti lungo i margini tra cellule vicine; cinque punte
+    di freccia gialle indicano gruppi di granuli; in alto a sinistra la lettera b in un riquadro bianco, in basso a
+    destra una barra di scala nera da 50 µm.
+  en: >-
+    High-power H&E micrograph of liver: large, polygonal pink hepatocytes with round purple nuclei; fine golden-brown
+    granules in the cytoplasm, densest along the margins between neighbouring cells; five yellow arrowheads point to
+    groups of granules; the letter b in a white box at the top left and a black 50 µm scale bar at the bottom right.
+annotations:
+  - id: lipofuscin-granules
+    label: { it: "Lipofuscina: fini granuli bruno-dorati nel citoplasma", en: "Lipofuscin: fine golden-brown granules in the cytoplasm" }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.50, 0.64, 0.54, 0.62, 0.60, 0.625, 0.61, 0.66, 0.57, 0.69, 0.51, 0.685]
+  - id: granules-cell-borders
+    label: { it: Granuli lungo i margini tra epatociti vicini, en: Granules along the borders between neighbouring hepatocytes }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.10, 0.75, 0.14, 0.73, 0.21, 0.74, 0.21, 0.86, 0.17, 0.89, 0.11, 0.87]

@@ -73,22 +73,23 @@ claims:
     verifier: "verifier-agent"
     date: 2026-11-03
   # fixer: reworded per verifier (target lysines vs. ubiquitin's own lysines for chains).
+  # fixer 2026-11-12: rewritten for rule 1(a) with the independent verifier's own wording (en.md, it.md and this row).
   - claimId: protein-quality-control-c010
     section: pathogenesis
-    statement: "Ubiquitin is a conserved 76-residue protein attached mainly to lysines of target proteins, routing them to compartments such as the proteasome; lysines on ubiquitin itself serve to join further ubiquitins into chains."
+    statement: "Ubiquitin acts as an address tag that sends many proteins to their destination, the proteasome among others; this small 76-residue protein, nearly unchanged through evolution, is usually bound to a lysine of the target, while lysines of ubiquitin itself join further ubiquitins into chains."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "7-8" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
   - claimId: protein-quality-control-c011
     section: pathogenesis
-    statement: "E1 activates ubiquitin and transfers it to one of dozens of E2 conjugating enzymes; an E3 ligase then attaches it to the target."
+    statement: "Ubiquitin tagging takes three enzymes: E1 activates ubiquitin, an E2 conjugating enzyme (the cell has dozens) receives it, and an E3 ligase fixes it onto the target protein."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "8" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: protein-quality-control-c012
     section: pathogenesis
     statement: "Around 800 E3 ligases are known, and they determine which specific proteins are kept or destroyed."
@@ -152,8 +153,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "1", pages: "9" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: protein-quality-control-c020
     section: pathogenesis
     statement: "Ubiquitin-dependent degradation of IkB releases active NF-kB, which drives pro-survival gene expression."
@@ -172,12 +173,12 @@ claims:
     date: 2026-11-03
   - claimId: protein-quality-control-c022
     section: pathogenesis
-    statement: "Some HSPs are constitutive and others are induced by stresses such as heat, oxidants, ischemia, heavy metals, starvation, infection, inflammation and irradiation; HSF-1 drives their expression."
+    statement: "Besides constitutive HSPs there are inducible ones, switched on by stresses (heat and ischemia among them) through the transcription factor HSF-1."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "10, 12" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: protein-quality-control-c023
     section: pathogenesis
     statement: "HSP70, often with HSP40, receives the nascent chain leaving the ribosome, and HSP90 or HSP60 may complete folding."
@@ -252,12 +253,12 @@ claims:
     date: 2026-11-03
   - claimId: protein-quality-control-c032
     section: pathogenesis
-    statement: "Ubiquitinated aggregates too large for proteasomes are recognized by the p62 bridge protein and incorporated into autophagosomes."
+    statement: "p62 acts as a bridge that delivers ubiquitin-tagged aggregates, which cannot fit through proteasomes, into autophagosomes."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "16" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: protein-quality-control-c033
     section: pathogenesis
     statement: "Some defective proteins enter lysosomes through chaperone-mediated autophagy."
@@ -282,38 +283,40 @@ claims:
     verifiedBy: agent
     verifier: "verifier-agent"
     date: 2026-11-03
+  # fixer 2026-11-12: the old statement followed the Fig. 1-33 legend point by point (rule 1(a), flagged by the independent
+  # verifier); reworded by the fixer alone, so the row is self-checked. Public text unchanged.
   - claimId: protein-quality-control-c036
     section: ancillary
-    statement: "PAS staining after diastase removal of glycogen highlights alpha-1-antitrypsin aggregates."
+    statement: "After diastase has digested the glycogen, the PAS reaction still stains the alpha-1-antitrypsin globules in the liver."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "36" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "fixer-agent"
+    date: 2026-11-12
   - claimId: protein-quality-control-c037
     section: clinical
-    statement: "Some hereditary Parkinson disease is due to mutations in parkin, a ubiquitin ligase."
+    statement: "Mutation of parkin, an E3 ubiquitin ligase, underlies some inherited forms of Parkinson disease."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "10" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: protein-quality-control-c038
     section: clinical
-    statement: "In Alzheimer and Huntington diseases and inherited ALS, mutant proteins accumulate and cause neuronal dysfunction and death."
+    statement: "Neurons malfunction and die when mutant proteins build up in further neurodegenerative disorders, Huntington disease and familial ALS among them."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "10" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: protein-quality-control-c039
     section: clinical
-    statement: "Pathologic protein accumulation may cause cardiomyocyte apoptosis in ischemia-reperfusion injury and pressure overload."
+    statement: "Cardiac myocytes can also undergo apoptosis from protein build-up, after ischemia followed by reperfusion as well as under pressure overload."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "10" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: protein-quality-control-c040
     section: clinical
     statement: "Delta-F508 CFTR misfolds, cannot reach the membrane and is targeted for proteasomal degradation, leaving no functional chloride channel."
@@ -356,21 +359,22 @@ claims:
     date: 2026-11-03
   - claimId: protein-quality-control-c045
     section: prognosis
-    statement: "Beta-pleated fibrillar aggregates are indigestible, and ubiquitin bound to them is lost, depleting cellular ubiquitin and impairing proteostasis."
+    statement: "Proteostasis as a whole weakens when fibrillar beta-sheet aggregates, which resist digestion, keep hold of the ubiquitin attached to them and so shrink the free ubiquitin pool."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "38" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   # fixer: Fe2+ attributed to insoluble aggregates, proteasome inhibition to beta-sheet aggregates, per verifier.
+  # fixer 2026-11-12: statement rewritten for rule 1(a) with the independent verifier's own wording; public text unchanged.
   - claimId: protein-quality-control-c046
     section: prognosis
-    statement: "Disordered insoluble aggregates sequester ferrous iron, which promotes further ROS; beta-sheet aggregates also inhibit proteasomal degradation and may cause cell death."
+    statement: "Iron (Fe2+) held in insoluble, often disordered aggregates feeds further ROS production; beta-sheet aggregates also block proteasomes and can thereby kill the cell."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "37-38" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
   - claimId: protein-quality-control-c047
     section: prognosis
     statement: "Misfolded beta-sheet proteins may be deposited extracellularly as amyloid."
@@ -386,8 +390,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "1", pages: "10" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: protein-quality-control-c049
     section: prognosis
     statement: "Proteasome inhibition preserves the IkB-NF-kB complex and preferentially affects activated T cells, so it may help in graft-versus-host disease."
@@ -518,14 +522,16 @@ claims:
     verifier: "verifier-agent"
     date: 2026-11-03
   # fixer: contested immunoproteasome trap replaced with 20S/oxidized-protein point, per verifier.
+  # fixer 2026-11-12: statement rewritten for rule 1(a) with the independent verifier's own wording; pages 7 and 9 added
+  # because they show that proteasomal degradation can work without ubiquitin; public text unchanged.
   - claimId: protein-quality-control-c065
     section: traps
-    statement: "Mildly to moderately oxidized proteins are recognized and degraded directly by 20S proteasomes, so proteasomal degradation does not always require ubiquitin."
-    sourceRef: { source: rubin-8e, chapter: "1", pages: "37" }
+    statement: "20S proteasomes can break down proteins with mild or moderate oxidative damage without a ubiquitin tag, so not every proteasomal degradation depends on ubiquitin."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "7, 9, 37" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
   - claimId: protein-quality-control-c066
     section: traps
     statement: "Misfolded mutant CFTR is degraded rather than stored, so cystic fibrosis results from loss of function."
@@ -560,9 +566,105 @@ claims:
     date: 2026-11-03
   - claimId: protein-quality-control-c070
     section: differential
-    statement: "Amyloid stained with Congo red shows red-green birefringence when viewed in polarized light."
-    sourceRef: { source: rubin-8e, chapter: "15", pages: "582" }
+    statement: "Congo red-stained amyloid shows apple-green birefringence in polarized light."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "935-936" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
+  - claimId: protein-quality-control-c071
+    section: pathogenesis
+    statement: "Prion protein switches from an alpha-helical to a beta-pleated conformation and accumulates in the brain, causing spongiform encephalopathy; most cases are sporadic, the rest inherited (prion protein gene mutations) or acquired through exposure to the abnormal protein."
+    sourceRef: { source: rubin-8e, chapter: "32", pages: "1479-1480, 1482" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
+  - claimId: protein-quality-control-c072
+    section: pathogenesis
+    statement: "'Prion-like' templating, in which a misfolded protein converts normal copies of itself, probably explains the predictable spread of other neurodegenerative diseases from the region where they begin."
+    sourceRef: { source: rubin-8e, chapter: "32", pages: "1492" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
+  - claimId: protein-quality-control-c073
+    section: ancillary
+    statement: "A liver biopsy can display hepatocyte inclusions such as Mallory-Denk hyalins (illustrated in amiodarone-associated phospholipidosis)."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "881" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: protein-quality-control-c074
+    section: ancillary
+    statement: "Neuropathological criteria for Alzheimer disease are applied at autopsy on a standard set of brain sections, with immunohistochemistry used to map the extent of beta-amyloid."
+    sourceRef: { source: rubin-8e, chapter: "32", pages: "1496" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: protein-quality-control-c075
+    section: ancillary
+    statement: "In neurons, Lewy bodies stain with eosin and are frequently ringed by a pale halo."
+    sourceRef: { source: rubin-8e, chapter: "32", pages: "1498-1499" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
+  - claimId: protein-quality-control-c076
+    section: ancillary
+    statement: "On H&E, Mallory-Denk hyalins are eosinophilic hepatocyte inclusions that often lie near the nucleus, whereas alpha-1-antitrypsin droplets take up eosin only faintly."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "868, 878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: protein-quality-control-c077
+    section: ancillary
+    statement: "In Alzheimer disease, neuritic plaques and neurofibrillary tangles are both Congo red-positive and argentophilic."
+    sourceRef: { source: rubin-8e, chapter: "32", pages: "1494, 1498" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: protein-quality-control-c078
+    section: ancillary
+    statement: "Aggregated proteins are picked up with high sensitivity by ubiquitin immunostaining, yet a positive stain points to no particular disease; antibodies to the aggregating protein, such as tau or alpha-synuclein, identify it, and interpretation needs the clinical context."
+    sourceRef: { source: rubin-8e, chapter: "32", pages: "1491-1492" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-12
+  - claimId: protein-quality-control-c079
+    section: ancillary
+    statement: "Light microscopy shows only the larger inclusions, which can shield the cell by walling off toxic fibrils; the early fibrils, potentially very cytotoxic, need electron microscopy to be seen."
+    sourceRef: { source: rubin-8e, chapter: "32", pages: "1492" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: protein-quality-control-c080
+    section: ancillary
+    statement: "Ultrastructurally, Mallory-Denk hyalins are bundles of cytokeratin intermediate filaments; alpha-1-antitrypsin droplets are misfolded protein inside dilated ER cisternae."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "868-869, 878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: protein-quality-control-c081
+    section: ancillary
+    statement: "In cystic fibrosis, whose common delta-F508 CFTR is misfolded and degraded by proteasomes, the diagnosis rests on an abnormal sweat chloride result confirmed by detecting CFTR mutations."
+    sourceRef: { source: rubin-8e, chapter: "6", pages: "285-286" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: protein-quality-control-c082
+    section: traps
+    statement: "Nonalcoholic steatohepatitis and Wilson disease can also produce Mallory-Denk hyalins, so their presence does not establish an alcoholic cause."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "868" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09

@@ -121,6 +121,31 @@ chain:
     lab:
       it: "Anemia emolitica con schistociti e piastrinopenia"
       en: "Hemolytic anemia with schistocytes and thrombocytopenia"
+examQuestions:
+  - it: "Mi parli della necrosi fibrinoide: che cos'è e in quali condizioni la ritrova?"
+    en: "Tell me about fibrinoid necrosis: what is it, and in which conditions do you find it?"
+    focus: [definition, etiology, high-yield]
+    level: 1
+  - it: "Che cosa vede al microscopio, in una sezione colorata con ematossilina-eosina, nella parete di un vaso con necrosi fibrinoide? E perché il termine «necrosi» è in parte improprio?"
+    en: "What do you see under the microscope, in a section stained with hematoxylin and eosin, in the wall of a vessel with fibrinoid necrosis? And why is the word \"necrosis\" partly misleading?"
+    focus: [micro, definition, traps]
+    level: 1
+  - it: "Come si arriva alla necrosi fibrinoide nelle vasculiti da immunocomplessi? Mi descriva il ruolo del complemento e dei neutrofili."
+    en: "How do immune complex vasculitides lead to fibrinoid necrosis? Describe the roles of complement and neutrophils."
+    focus: [pathogenesis, high-yield]
+    level: 2
+  - it: "Quali colorazioni e quali altre tecniche userebbe per studiare una biopsia con necrosi fibrinoide, per esempio una biopsia renale?"
+    en: "Which stains and which other techniques would you use to study a biopsy with fibrinoid necrosis, for example a kidney biopsy?"
+    focus: [ancillary, diagnosis]
+    level: 2
+  - it: "Come distingue la necrosi fibrinoide dall'arteriolosclerosi ialina, dall'amiloide e da un trombo di fibrina?"
+    en: "How do you tell fibrinoid necrosis from hyaline arteriolosclerosis, from amyloid and from a fibrin thrombus?"
+    focus: [differential, traps, ancillary]
+    level: 3
+  - it: "Un paziente con ipertensione maligna: che cosa trova nelle arteriole del rene, che cosa segue alla necrosi fibrinoide e quali segni clinici e di laboratorio si aspetta?"
+    en: "A patient with malignant hypertension: what do you find in the arterioles of the kidney, what follows the fibrinoid necrosis, and which clinical and laboratory signs do you expect?"
+    focus: [micro, clinical, diagnosis]
+    level: 3
 images:
   - id: fibrinoid-necrosis-micro-1
     role: micro
@@ -128,6 +153,13 @@ images:
     role: micro
   - id: fibrinoid-necrosis-micro-3
     role: micro
+  - id: fibrinoid-necrosis-micro-4
+    role: micro
+  - id: fibrinoid-necrosis-micro-6
+    role: micro
+  - id: fibrinoid-necrosis-clinical-1
+    role: clinical
+    pairWith: fibrinoid-necrosis-micro-2
 reviewStatus: ai-generated-unreviewed
 editionDependent: false
 sources:
@@ -138,6 +170,9 @@ sources:
     chapter: "4"
     pages: "147-158"
   - source: rubin-8e
+    chapter: "11"
+    pages: "520"
+  - source: rubin-8e
     chapter: "14"
     pages: "573"
   - source: rubin-8e
@@ -147,13 +182,25 @@ sources:
     chapter: "16"
     pages: "617-622"
   - source: rubin-8e
+    chapter: "17"
+    pages: "666"
+  - source: rubin-8e
+    chapter: "18"
+    pages: "746"
+  - source: rubin-8e
     chapter: "22"
-    pages: "947-953, 966-967"
+    pages: "925, 927, 945-953, 966-967"
+  - source: rubin-8e
+    chapter: "26"
+    pages: "1144"
   - source: rubin-8e
     chapter: "30"
     pages: "1388"
   - source: rubin-8e
+    chapter: "31"
+    pages: "1411, 1435"
+  - source: rubin-8e
     chapter: "32"
     pages: "1458"
-lastUpdated: 2026-11-03
+lastUpdated: 2026-11-09
 status: published

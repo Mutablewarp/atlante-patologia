@@ -25,7 +25,7 @@ const { lang } = Astro.props;
     </div>
   </div>
 
-  <!-- The live region stays rendered; only its content appears, which screen readers announce more reliably. -->
+  {/* The live region stays rendered; only its content appears, which screen readers announce more reliably. */}
   <div role="status" aria-live="polite" data-db-notice>
     <div class="update-notice" data-db-box hidden>
       <p data-db-msg="blocked" hidden>{tOffline(lang, 'dbBlocked')}</p>

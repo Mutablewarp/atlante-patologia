@@ -31,6 +31,8 @@ learningObjectives:
     en: "Describe the roles of IGF-1/Akt, FOXO, myostatin and inflammatory cytokines in muscle atrophy."
   - it: "Riconoscere gli aspetti macroscopici e microscopici dell'atrofia nel cervello, nel muscolo e nell'endometrio, e il significato clinico di cachessia e sarcopenia."
     en: "Recognize the gross and microscopic features of atrophy in brain, muscle and endometrium, and the clinical significance of cachexia and sarcopenia."
+  - it: "Riconoscere in una biopsia muscolare l'atrofia da denervazione e distinguerla dall'atrofia selettiva delle fibre di tipo II con le colorazioni istoenzimatiche."
+    en: "Recognize denervation atrophy on a muscle biopsy and tell it apart from selective type II fiber atrophy with enzyme histochemical stains."
 prerequisites: []
 relations:
   - type: differentialOf
@@ -107,6 +109,31 @@ chain:
     lab:
       it: "Biopsia: fibre con meno citoplasma e nuclei relativamente più evidenti"
       en: "Biopsy: fibers with less cytoplasm and relatively prominent nuclei"
+examQuestions:
+  - it: "Mi parli dell'atrofia: come la definisce e quali ne sono le cause fisiologiche e patologiche?"
+    en: "Tell me about atrophy: how do you define it, and what are its physiologic and pathologic causes?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Come appare a occhio nudo un cervello atrofico? E che cosa vede al microscopio in un endometrio atrofico dopo la menopausa?"
+    en: "What does an atrophic brain look like to the naked eye? And what do you see under the microscope in a postmenopausal atrophic endometrium?"
+    focus: [gross, micro]
+    level: 1
+  - it: "L'atrofia è un processo passivo? Mi spieghi quali vie di degradazione e quali segnali la regolano nel muscolo scheletrico."
+    en: "Is atrophy a passive process? Explain which degradation pathways and signals control it in skeletal muscle."
+    focus: [pathogenesis]
+    level: 2
+  - it: "Mi parli della cachessia: perché si sviluppa e che cosa comporta per il paziente?"
+    en: "Tell me about cachexia: why does it develop, and what does it mean for the patient?"
+    focus: [etiology, pathogenesis, clinical]
+    level: 2
+  - it: "In una biopsia muscolare, come distingue un'atrofia da denervazione da un'atrofia da disuso o da cortisonici? Quali colorazioni userebbe?"
+    en: "On a muscle biopsy, how do you tell denervation atrophy from atrophy caused by disuse or corticosteroids? Which stains would you use?"
+    focus: [micro, ancillary]
+    level: 3
+  - it: "Come distingue un organo piccolo perché le sue cellule si sono ridotte di volume da uno che ha perso cellule? Perché la differenza conta per la prognosi?"
+    en: "How do you tell an organ that is small because its cells have shrunk from one that has lost cells? Why does the difference matter for prognosis?"
+    focus: [definition, differential, prognosis]
+    level: 3
 images:
   - id: atrophy-gross-1
     role: gross
@@ -116,14 +143,27 @@ images:
     role: micro
   - id: g01-adaptation-spectrum
     role: diagram
+  - id: atrophy-micro-3
+    role: micro
+  - id: atrophy-gross-2
+    role: gross
 reviewStatus: ai-generated-unreviewed
 editionDependent: false
 sources:
   - source: rubin-8e
     chapter: "1"
-    pages: "5-7, 19-25"
+    pages: "5-7, 19-25, 47"
   - source: rubin-8e
     chapter: "8"
     pages: "381"
-lastUpdated: 2026-11-03
+  - source: rubin-8e
+    chapter: "24"
+    pages: "1038"
+  - source: rubin-8e
+    chapter: "31"
+    pages: "1410-1411, 1427-1430"
+  - source: rubin-8e
+    chapter: "32"
+    pages: "1448, 1493"
+lastUpdated: 2026-11-09
 status: published

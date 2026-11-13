@@ -475,3 +475,342 @@
   doi: "10.2147/DMSO.S164199"
   pmid: "29910628"
   existsVerified: { via: pubmed, date: 2026-11-04 }
+
+# Second sources added by the V2.2 enrichment of the g01 cards (rows with status beyond-reference in docs/ledger/*.yaml).
+# Each PMID, DOI and title was checked on PubMed by the card agent (date in existsVerified) and re-checked by the finalizer on 2026-11-12.
+
+# Second source for the apoptosis card's detection methods (docs/ledger/apoptosis.yaml c081-c086, c088, c089); PMID/DOI checked on PubMed, full text read in PMC (PMC2117903).
+- id: elmore-2007
+  title: "Apoptosis: a review of programmed cell death"
+  authors: "Elmore S"
+  journal: "Toxicol Pathol 35(4):495-516"
+  year: 2007
+  kind: article
+  doi: "10.1080/01926230701320337"
+  pmid: "17562483"
+  existsVerified: { via: pubmed, date: 2026-11-04 }
+
+- id: mizushima-2010
+  title: "Methods in mammalian autophagy research"
+  authors: "Mizushima N, Yoshimori T, Levine B"
+  journal: "Cell 140(3):313-326"
+  year: 2010
+  kind: article
+  doi: "10.1016/j.cell.2010.01.028"
+  pmid: "20144757"
+  existsVerified: { via: pubmed, date: 2026-11-04 }
+
+# Second sources for the caseous-necrosis work-up block (docs/ledger/caseous-necrosis.yaml c069, c073, c077); PMID and DOI checked on PubMed 2026-11-04.
+# stellmacher-2021: English abstract read (article in German). lewinsohn-2017: executive summary full text read in PMC (PMC5504475).
+- id: stellmacher-2021
+  title: "Molecular pathology of tuberculosis: status, methodology, and limits"
+  authors: "Stellmacher F, Kirfel J, Kalsdorf B, Maurer FP, Perner S, Goldmann T"
+  journal: "Pathologe 42(1):78-82 (in German, English abstract)"
+  year: 2021
+  kind: article
+  doi: "10.1007/s00292-021-00911-2"
+  pmid: "33475809"
+  existsVerified: { via: pubmed, date: 2026-11-04 }
+
+- id: lewinsohn-2017
+  title: "Official American Thoracic Society/Infectious Diseases Society of America/Centers for Disease Control and Prevention Clinical Practice Guidelines: Diagnosis of Tuberculosis in Adults and Children"
+  authors: "Lewinsohn DM, Leonard MK, LoBue PA, Cohn DL, Daley CL, Desmond E, Keane J, Lewinsohn DA, Loeffler AM, Mazurek GH, O'Brien RJ, Pai M, Richeldi L, Salfinger M, Shinnick TM, Sterling TR, Warshauer DM, Woods GL"
+  journal: "Clin Infect Dis 64(2):111-115 (executive summary of the full guideline, e1-e33)"
+  year: 2017
+  kind: article
+  doi: "10.1093/cid/ciw778"
+  pmid: "28052967"
+  existsVerified: { via: pubmed, date: 2026-11-04 }
+
+# Second source for the dysplasia card's p16 grading claim (docs/ledger/dysplasia.yaml c075); PMID and DOI checked on PubMed 2026-11-07, abstract read (full text not in PMC).
+- id: dijkstra-2010
+  title: "p16(INK4a) immunostaining as an alternative to histology review for reliable grading of cervical intraepithelial lesions"
+  authors: "Dijkstra MG, Heideman DA, de Roy SC, Rozendaal L, Berkhof J, van Krimpen K, van Groningen K, Snijders PJ, Meijer CJ, van Kemenade FJ"
+  journal: "J Clin Pathol 63(11):972-977"
+  year: 2010
+  kind: article
+  doi: "10.1136/jcp.2010.078634"
+  pmid: "20924035"
+  existsVerified: { via: pubmed, date: 2026-11-07 }
+
+# Second source for the dystrophic-calcification "How it is studied" block (docs/ledger/dystrophic-calcification.yaml c067); PMID and DOI checked on PubMed 2026-11-07.
+# bahrani-2020: abstract read (no PMC full text); it names von Kossa and Alizarin red as aids to find subtle calcification in biopsies.
+- id: bahrani-2020
+  title: "Diagnosing Calciphylaxis: A Review With Emphasis on Histopathology"
+  authors: "Bahrani E, Perkins IU, North JP"
+  journal: "Am J Dermatopathol 42(7):471-480"
+  year: 2020
+  kind: article
+  doi: "10.1097/DAD.0000000000001526"
+  pmid: "32604207"
+  existsVerified: { via: pubmed, date: 2026-11-07 }
+
+# Second source for the fat-necrosis card (docs/ledger/fat-necrosis.yaml c056-c060, c064, c065, c067: iatrogenic causes, oil cyst, core biopsy, H&E, hemosiderin, CD68/keratin immunostains, mammography); PMID, PMCID and DOI checked on PubMed 2026-11-07, full text read in PMC (PMC4378709).
+- id: kerridge-2015
+  title: "Fat Necrosis of the Breast: A Pictorial Review of the Mammographic, Ultrasound, CT, and MRI Findings with Histopathologic Correlation"
+  authors: "Kerridge WD, Kryvenko ON, Thompson A, Shah BA"
+  journal: "Radiol Res Pract 2015:613139"
+  year: 2015
+  kind: article
+  doi: "10.1155/2015/613139"
+  pmid: "25861475"
+  existsVerified: { via: pubmed, date: 2026-11-07 }
+
+# Second source for the fatty-change card (docs/ledger/fatty-change.yaml c070-c074, c077, c078: liver needle biopsy as reference standard, sampling error, steatosis pattern and grade, zone 3 onset, oil red O for pure microvesicular fat, chicken-wire fibrosis, keratin 8/18 immunostaining); PMID, PMCID and DOI checked on PubMed 2026-11-07, full text read in PMC (PMC2980677).
+- id: brunt-2010
+  title: "Histopathology of nonalcoholic fatty liver disease"
+  authors: "Brunt EM, Tiniakos DG"
+  journal: "World J Gastroenterol 16(42):5286-5296"
+  year: 2010
+  kind: article
+  doi: "10.3748/wjg.v16.i42.5286"
+  pmid: "21072891"
+  existsVerified: { via: pubmed, date: 2026-11-07 }
+
+# Second source for fatty-change-c081 (LCHAD Glu474Gln mutation in the child of a mother with acute fatty liver of pregnancy); PMID and DOI checked on PubMed 2026-11-07, abstract read (no PMC full text).
+- id: ibdah-1999
+  title: "A fetal fatty-acid oxidation disorder as a cause of liver disease in pregnant women"
+  authors: "Ibdah JA, Bennett MJ, Rinaldo P, Zhao Y, Gibson B, Sims HF, Strauss AW"
+  journal: "N Engl J Med 340(22):1723-1731"
+  year: 1999
+  kind: article
+  doi: "10.1056/NEJM199906033402204"
+  pmid: "10352164"
+  existsVerified: { via: pubmed, date: 2026-11-07 }
+
+# Second sources for the hypoxic-ischemic-injury "How it is studied" block (docs/ledger/hypoxic-ischemic-injury.yaml c077, c078); PMIDs (and the DOI of kakimoto-2013) checked on PubMed 2026-11-08.
+# adegboyega-1997: abstract read (no PMC full text; PubMed lists no DOI). TTC identifies dehydrogenase-deficient infarcted myocardium; in 638 consecutive adult autopsies it missed 41 acute infarcts found on histology (sensitivity 77.4%, specificity 92.6%) and is called an adjunct at necropsy.
+- id: adegboyega-1997
+  title: "Sensitivity and specificity of triphenyl tetrazolium chloride in the gross diagnosis of acute myocardial infarcts"
+  authors: "Adegboyega PA, Adesokan A, Haque AK, Boor PJ"
+  journal: "Arch Pathol Lab Med 121(10):1063-1068"
+  year: 1997
+  kind: article
+  pmid: "9341585"
+  existsVerified: { via: pubmed, date: 2026-11-08 }
+
+# kakimoto-2013: abstract read (no PMC full text). Normal myocardium vivid red, fibrotic myocardium white; staining declines with the postmortem interval and works within about 1.5 days of death; detection very difficult when death came within 9 hours of the attack.
+- id: kakimoto-2013
+  title: "The effectiveness and limitations of triphenyltetrazolium chloride to detect acute myocardial infarction at forensic autopsy"
+  authors: "Kakimoto Y, Tsuruyama T, Miyao M, Abiru H, Sumiyoshi S, Kotani H, Haga H, Tamaki K"
+  journal: "Am J Forensic Med Pathol 34(3):242-247"
+  year: 2013
+  kind: article
+  doi: "10.1097/PAF.0b013e31828879cd"
+  pmid: "23949140"
+  existsVerified: { via: pubmed, date: 2026-11-08 }
+
+# Second source for the ischemia-reperfusion-injury "How it is studied" block (docs/ledger/ischemia-reperfusion-injury.yaml c062); PMID checked on PubMed 2026-11-08 (PubMed lists no DOI; free full text PMC2032743).
+# shen-1972: abstract read. Dog circumflex occlusion: irreversibly injured muscle left ischemic for 60 min showed no significant calcium change, while muscle killed by 40 min of ischemia plus 20 min of reperfusion gained a large amount; fractionation, electron microscopy and microincineration located a large share of it in dense bodies inside mitochondria, apparently a calcium phosphate precipitate.
+- id: shen-1972
+  title: "Myocardial calcium and magnesium in acute ischemic injury"
+  authors: "Shen AC, Jennings RB"
+  journal: "Am J Pathol 67(3):417-440"
+  year: 1972
+  kind: article
+  pmid: "5033257"
+  existsVerified: { via: pubmed, date: 2026-11-08 }
+
+# Second sources for the metaplasia card (docs/ledger/metaplasia.yaml c070, c071, c076, c083, c085, c086: Barrett junction landmark and biopsy protocol, Alcian blue and pseudogoblet cells, transcommitment, biomarkers, p16/CK17 in the cervix); PMID, PMCID and DOI checked on PubMed 2026-11-08, full texts read in PMC (PMC10245082, PMC4833583, PMC1890920).
+- id: shaheen-2016
+  title: "ACG Clinical Guideline: Diagnosis and Management of Barrett's Esophagus"
+  authors: "Shaheen NJ, Falk GW, Iyer PG, Gerson LB; American College of Gastroenterology"
+  journal: "Am J Gastroenterol 111(1):30-50"
+  year: 2016
+  kind: article
+  doi: "10.1038/ajg.2015.322"
+  pmid: "26526079"
+  existsVerified: { via: pubmed, date: 2026-11-08 }
+
+- id: naini-2016
+  title: "Barrett's Esophagus: A Comprehensive and Contemporary Review for Pathologists"
+  authors: "Naini BV, Souza RF, Odze RD"
+  journal: "Am J Surg Pathol 40(5):e45-e66"
+  year: 2016
+  kind: article
+  doi: "10.1097/PAS.0000000000000598"
+  pmid: "26813745"
+  existsVerified: { via: pubmed, date: 2026-11-08 }
+
+- id: regauer-2007
+  title: "CK17 and p16 expression patterns distinguish (atypical) immature squamous metaplasia from high-grade cervical intraepithelial neoplasia (CIN III)"
+  authors: "Regauer S, Reich O"
+  journal: "Histopathology 50(5):629-635"
+  year: 2007
+  kind: article
+  doi: "10.1111/j.1365-2559.2007.02652.x"
+  pmid: "17394499"
+  existsVerified: { via: pubmed, date: 2026-11-08 }
+
+# Second sources for the metastatic-calcification enrichment (docs/ledger/metastatic-calcification.yaml c060-c072); PMID and DOI checked on PubMed 2026-11-08.
+# The card also cites bahrani-2020 (c067); its entry is already in dystrophic-calcification-enrich.sources.yaml, so it is not repeated here.
+# gorospe-2007: abstract read (no PMC full text); gastric mucosa as a preferential site, relative intracellular alkalinity, rarity in biopsies, bone-scan and autopsy detection, reporting.
+- id: gorospe-2007
+  title: "Gastric mucosal calcinosis: clinicopathologic considerations"
+  authors: "Gorospe M, Fadare O"
+  journal: "Adv Anat Pathol 14(3):224-228"
+  year: 2007
+  kind: article
+  doi: "10.1097/PAP.0b013e31805048ea"
+  pmid: "17452819"
+  existsVerified: { via: pubmed, date: 2026-11-08 }
+
+# belem-2014: abstract read (no PMC full text); metastatic pulmonary calcification: alveolar basement membranes, autopsy frequency, symptoms, imaging, regression.
+- id: belem-2014
+  title: "Metastatic pulmonary calcification: state-of-the-art review focused on imaging findings"
+  authors: "Belém LC, Zanetti G, Souza AS, Hochhegger B, Guimarães MD, Nobre LF, Rodrigues RS, Marchiori E"
+  journal: "Respir Med 108(5):668-676"
+  year: 2014
+  kind: article
+  doi: "10.1016/j.rmed.2014.01.012"
+  pmid: "24529738"
+  existsVerified: { via: pubmed, date: 2026-11-08 }
+
+# schneider-2021: full text read in PMC (PMC8695535); chemical basis of the von Kossa silver reaction.
+- id: schneider-2021
+  title: "Von Kossa and his staining technique"
+  authors: "Schneider MR"
+  journal: "Histochem Cell Biol 156(6):523-526"
+  year: 2021
+  kind: article
+  doi: "10.1007/s00418-021-02051-3"
+  pmid: "34799748"
+  existsVerified: { via: pubmed, date: 2026-11-08 }
+
+# Second sources for the necroptosis card's "How it is studied" block (docs/ledger/necroptosis.yaml c051-c055); PMID/DOI checked on PubMed 2026-11-08. galluzzi-2018: full text read in PMC (PMC5864239); wang-2014 and samson-2021: abstracts read on PubMed.
+- id: galluzzi-2018
+  title: "Molecular mechanisms of cell death: recommendations of the Nomenclature Committee on Cell Death 2018"
+  authors: "Galluzzi L, Vitale I, Aaronson SA, et al."
+  journal: "Cell Death Differ 25(3):486-541"
+  year: 2018
+  kind: article
+  doi: "10.1038/s41418-017-0012-4"
+  pmid: "29362479"
+  existsVerified: { via: pubmed, date: 2026-11-08 }
+
+- id: wang-2014
+  title: "Mixed lineage kinase domain-like protein MLKL causes necrotic membrane disruption upon phosphorylation by RIP3"
+  authors: "Wang H, Sun L, Su L, Rizo J, Liu L, Wang LF, Wang FS, Wang X"
+  journal: "Mol Cell 54(1):133-146"
+  year: 2014
+  kind: article
+  doi: "10.1016/j.molcel.2014.03.003"
+  pmid: "24703947"
+  existsVerified: { via: pubmed, date: 2026-11-08 }
+
+- id: samson-2021
+  title: "A toolbox for imaging RIPK1, RIPK3, and MLKL in mouse and human cells"
+  authors: "Samson AL, Fitzgibbon C, Patel KM, Hildebrand JM, Whitehead LW, Rimes JS, Jacobsen AV, Horne CR, Gavin XJ, Young SN, Rogers KL, Hawkins ED, Murphy JM"
+  journal: "Cell Death Differ 28(7):2126-2144"
+  year: 2021
+  kind: article
+  doi: "10.1038/s41418-021-00742-x"
+  pmid: "33589776"
+  existsVerified: { via: pubmed, date: 2026-11-08 }
+
+# Second sources for the other-regulated-cell-death card (docs/ledger/other-regulated-cell-death.yaml c056-c058, c062, c065); PMIDs/DOIs checked on PubMed 2026-11-08.
+- id: brinkmann-2004
+  title: "Neutrophil extracellular traps kill bacteria"
+  authors: "Brinkmann V, Reichard U, Goosmann C, Fauler B, Uhlemann Y, Weiss DS, Weinrauch Y, Zychlinsky A"
+  journal: "Science 303(5663):1532-1535"
+  year: 2004
+  kind: article
+  doi: "10.1126/science.1092385"
+  pmid: "15001782"
+  existsVerified: { via: pubmed, date: 2026-11-08 }
+
+- id: brinkmann-2016
+  title: "Immunodetection of NETs in Paraffin-Embedded Tissue"
+  authors: "Brinkmann V, Abu Abed U, Goosmann C, Zychlinsky A"
+  journal: "Front Immunol 7:513"
+  year: 2016
+  kind: article
+  doi: "10.3389/fimmu.2016.00513"
+  pmid: "27920776"
+  existsVerified: { via: pubmed, date: 2026-11-08 }
+
+- id: overholtzer-2007
+  title: "A nonapoptotic cell death process, entosis, that occurs by cell-in-cell invasion"
+  authors: "Overholtzer M, Mailleux AA, Mouneimne G, Normand G, Schnitt SJ, King RW, Cibas ES, Brugge JS"
+  journal: "Cell 131(5):966-979"
+  year: 2007
+  kind: article
+  doi: "10.1016/j.cell.2007.10.040"
+  pmid: "18045538"
+  existsVerified: { via: pubmed, date: 2026-11-08 }
+
+# Second sources for the oxidative-injury "How it is studied" block (docs/ledger/oxidative-injury.yaml c081, c082); PMIDs and DOIs checked on PubMed 2026-11-08.
+# toyokuni-1999: abstract read (no PMC full text). Review of histochemical and immunohistochemical localization of ROS damage in paraffin sections; the named antibody targets are 8-OHdG and HNE-modified proteins.
+- id: toyokuni-1999
+  title: "Reactive oxygen species-induced molecular damage and its application in pathology"
+  authors: "Toyokuni S"
+  journal: "Pathol Int 49(2):91-102"
+  year: 1999
+  kind: article
+  doi: "10.1046/j.1440-1827.1999.00829.x"
+  pmid: "10355961"
+  existsVerified: { via: pubmed, date: 2026-11-08 }
+
+# zarkovic-2003: abstract read (no PMC full text). HNE is named as a major aldehyde of membrane lipid peroxidation; immunostaining finds it in Alzheimer tangles and plaques and in Parkinson Lewy bodies.
+- id: zarkovic-2003
+  title: "4-hydroxynonenal and neurodegenerative diseases"
+  authors: "Zarkovic K"
+  journal: "Mol Aspects Med 24(4-5):293-303"
+  year: 2003
+  kind: article
+  doi: "10.1016/s0098-2997(03)00024-4"
+  pmid: "12893007"
+  existsVerified: { via: pubmed, date: 2026-11-08 }
+
+# Second sources for the pyroptosis card (docs/ledger/pyroptosis.yaml c051-c066); PMIDs/DOIs checked on PubMed 2026-11-09.
+# bergsbaken-2009 (PMC2910423), den-hartigh-2018 (PMC6339837), wang-2022 (PMC9088190): full text read in PMC; martinon-2006 and goldbach-mansky-2006: abstracts read on PubMed.
+# c056 also cites galluzzi-2018, whose entry is already in necroptosis-enrich.sources.yaml (not repeated here).
+- id: bergsbaken-2009
+  title: "Pyroptosis: host cell death and inflammation"
+  authors: "Bergsbaken T, Fink SL, Cookson BT"
+  journal: "Nat Rev Microbiol 7(2):99-109"
+  year: 2009
+  kind: article
+  doi: "10.1038/nrmicro2070"
+  pmid: "19148178"
+  existsVerified: { via: pubmed, date: 2026-11-09 }
+
+- id: den-hartigh-2018
+  title: "Pyroptosis Induction and Detection"
+  authors: "den Hartigh AB, Fink SL"
+  journal: "Curr Protoc Immunol 122(1):e52"
+  year: 2018
+  kind: article
+  doi: "10.1002/cpim.52"
+  pmid: "30028908"
+  existsVerified: { via: pubmed, date: 2026-11-09 }
+
+- id: wang-2022
+  title: "Methods for monitoring cancer cell pyroptosis"
+  authors: "Wang S, Liu Y, Zhang L, Sun Z"
+  journal: "Cancer Biol Med 19(4):398-414"
+  year: 2022
+  kind: article
+  doi: "10.20892/j.issn.2095-3941.2021.0504"
+  pmid: "34931767"
+  existsVerified: { via: pubmed, date: 2026-11-09 }
+
+- id: martinon-2006
+  title: "Gout-associated uric acid crystals activate the NALP3 inflammasome"
+  authors: "Martinon F, Pétrilli V, Mayor A, Tardivel A, Tschopp J"
+  journal: "Nature 440(7081):237-241"
+  year: 2006
+  kind: article
+  doi: "10.1038/nature04516"
+  pmid: "16407889"
+  existsVerified: { via: pubmed, date: 2026-11-09 }
+
+- id: goldbach-mansky-2006
+  title: "Neonatal-onset multisystem inflammatory disease responsive to interleukin-1beta inhibition"
+  authors: "Goldbach-Mansky R, Dailey NJ, Canna SW, et al."
+  journal: "N Engl J Med 355(6):581-592"
+  year: 2006
+  kind: article
+  doi: "10.1056/NEJMoa055137"
+  pmid: "16899778"
+  existsVerified: { via: pubmed, date: 2026-11-09 }

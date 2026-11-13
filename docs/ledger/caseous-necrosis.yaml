@@ -214,24 +214,24 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "9, 18", pages: "450, 709" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: caseous-necrosis-c028
     section: ancillary
-    statement: "In histoplasmosis, silver impregnation outlines degenerating yeast remnants inside caseous foci."
+    statement: "Histoplasma yeasts degenerate inside caseous foci, yet silver staining can still show their remnants."
     sourceRef: { source: rubin-8e, chapter: "9", pages: "461" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: caseous-necrosis-c029
     section: ancillary
-    statement: "GMS (a silver stain) and PAS stains help visualize Coccidioides immitis."
+    statement: "Coccidioides immitis shows up better with the fungal stains GMS (silver) and PAS."
     sourceRef: { source: rubin-8e, chapter: "9", pages: "463" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: caseous-necrosis-c030
     section: clinical
     statement: "Over 90% of normal adults contain primary tuberculous infection, which is usually asymptomatic."
@@ -528,3 +528,110 @@ claims:
     verifiedBy: agent
     verifier: "verifier-agent"
     date: 2026-11-03
+  - claimId: caseous-necrosis-c067
+    section: gross
+    statement: "The Ghon focus together with the involved draining hilar or mediastinal lymph nodes, whose histology matches the caseating parenchymal lesion, forms the Ghon complex."
+    sourceRef: { source: rubin-8e, chapter: "9, 18", pages: "451, 707" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: caseous-necrosis-c068
+    section: ancillary
+    statement: "Removing the whole node (excisional biopsy) is the best way to sample an enlarged lymph node; core needle biopsy and fine-needle aspiration give less complete material."
+    sourceRef: { source: rubin-8e, chapter: "26", pages: "1162" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: caseous-necrosis-c069
+    section: ancillary
+    statement: "Fixed tissue, such as a paraffin block of formalin-fixed tissue, can no longer be cultured, although culture with drug-susceptibility testing is still the reference test for mycobacteria; if the whole sample was fixed and doubt remains, a second biopsy sent unfixed to microbiology may be needed."
+    sourceRef: { source: rubin-8e, chapter: "9", pages: "449" }
+    status: beyond-reference
+    secondSource: { source: stellmacher-2021, locator: "English abstract (PubMed PMID 33475809); German full text not read" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: caseous-necrosis-c070
+    section: ancillary
+    statement: "H&E reveals the caseating granuloma pattern but not its cause, because agents other than M. tuberculosis, including some fungi, can also produce caseation; the organism is then looked for with special stains."
+    sourceRef: { source: rubin-8e, chapter: "9", pages: "450-451, 461-463" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: caseous-necrosis-c071
+    section: ancillary
+    statement: "On a Gram stain mycobacteria show up poorly because their lipid-rich wall resists crystal violet; the same waxy lipids hold carbolfuchsin through an acid-alcohol wash, which is what acid-fast means."
+    sourceRef: { source: rubin-8e, chapter: "9", pages: "449" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: caseous-necrosis-c072
+    section: ancillary
+    statement: "Open tuberculous cavities are packed with acid-fast bacilli in their caseous contents, while the bowel-wall granulomas of intestinal tuberculosis yield only a few organisms."
+    sourceRef: { source: rubin-8e, chapter: "9, 18, 19", pages: "452, 708, 807" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: caseous-necrosis-c073
+    section: ancillary
+    statement: "On specimens from suspected extrapulmonary tuberculosis, false-negative acid-fast smears are very common, so a negative smear cannot exclude tuberculosis."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "807" }
+    status: beyond-reference
+    secondSource: { source: lewinsohn-2017, locator: "Executive summary, Testing for TB Disease: recommendation on AFB smear microscopy of specimens from suspected extrapulmonary TB and its remarks (full text, PMC5504475)" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: caseous-necrosis-c074
+    section: ancillary
+    statement: "Coccidioides is visible without special stains: on H&E its spherules have a basophilic outline, and mature spherules are packed with numerous small endospores."
+    sourceRef: { source: rubin-8e, chapter: "9", pages: "462-463" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: caseous-necrosis-c075
+    section: ancillary
+    statement: "Fungal morphology in a tissue section only suggests the organism; the species has to be confirmed in the laboratory by culture, molecular testing (PCR) or antigen detection."
+    sourceRef: { source: rubin-8e, chapter: "32", pages: "1468-1469" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: caseous-necrosis-c076
+    section: ancillary
+    statement: "The tubercle bacillus needs roughly a day for each division, so cultures usually take three to six weeks before growth can be seen."
+    sourceRef: { source: rubin-8e, chapter: "9", pages: "449" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: caseous-necrosis-c077
+    section: ancillary
+    statement: "PCR for mycobacterial DNA can still be performed on formalin-fixed paraffin-embedded tissue; a positive result supports a mycobacterial infection, but a negative result does not exclude it."
+    sourceRef: { source: rubin-8e, chapter: "9", pages: "449-451" }
+    status: beyond-reference
+    secondSource: { source: stellmacher-2021, locator: "English abstract (PubMed PMID 33475809; MeSH and keywords list polymerase chain reaction); German full text not read" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: caseous-necrosis-c078
+    section: high-yield
+    statement: "Ziehl-Neelsen stain demonstrates mycobacteria; GMS (silver) and PAS stains demonstrate fungi."
+    sourceRef: { source: rubin-8e, chapter: "9, 18", pages: "450, 461-463, 709" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: caseous-necrosis-c079
+    section: traps
+    statement: "Nontuberculous mycobacteria such as M. avium-intracellulare are acid-fast on Ziehl-Neelsen staining as well, and in the lung they can form granulomas, sometimes with cavities, imitating tuberculosis."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "707-709" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09

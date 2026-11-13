@@ -8,7 +8,7 @@ import type { Lang } from '../i18n/index.ts';
 import { tHz } from '../i18n/horizontal.ts';
 import { langPath } from './url.ts';
 import { siteData, glossary, images, patterns } from './content.ts';
-import { resolveCrossLinks, type CrossLinkCtx } from './crosslinks.ts';
+import { dropClaimMarkers, resolveCrossLinks, type CrossLinkCtx } from './crosslinks.ts';
 
 /** A–Z anchor of a glossary term; entities own `term-<id>`, so a clash gets `term-g-<id>`. */
 export function glossaryAnchor(id: string, entityIds: { has(id: string): boolean }): string {
@@ -43,9 +43,9 @@ export async function crossLinkContext(lang: Lang, idPrefix = 'gloss'): Promise<
   };
 }
 
-/** Resolve `[[…]]` cross-links in rendered Markdown HTML. */
+/** Resolve `[[…]]` cross-links in rendered Markdown HTML and drop its claim markers. */
 export async function withCrossLinks(html: string, lang: Lang, idPrefix?: string): Promise<string> {
-  return resolveCrossLinks(html, await crossLinkContext(lang, idPrefix));
+  return dropClaimMarkers(resolveCrossLinks(html, await crossLinkContext(lang, idPrefix)));
 }
 
 /** Known entity name in `lang` (visible, draft or planned), else the humanized id. */

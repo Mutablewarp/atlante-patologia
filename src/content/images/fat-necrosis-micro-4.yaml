@@ -1,0 +1,92 @@
+# License check (2026-11-07): the article XML on Europe PMC (PMC12596583) and the PMC article page state "This is an
+# open access article under the CC BY license (http://creativecommons.org/licenses/by/4.0/)", © 2025 Sociedade
+# Brasileira de Dermatologia, published by Elsevier España; Crossref lists the same CC BY 4.0 licence for the version
+# of record (doi:10.1016/j.abd.2025.501211). The Figure 3 legend carries no third-party credit or "reproduced with
+# permission" note, so the article authors are the creators. Histology only; nothing identifies the patient (the
+# clinical photographs of Figures 1 and 2 were not used). PMC and Europe PMC serve Figure 3 only at 742 × 492 px; the
+# publisher's high-resolution file of the same figure (3341 × 2215 px, same content and aspect ratio) was used to cut
+# out the panels. Panels B, C and D are one biopsy of one patient, hence one group; the source states the stain and
+# the original magnification of each panel; it names no objective and no scale, so no objective and no mpp.
+# Facts checked against the source article and rubin-8e ch. 1 p. 40, ch. 22 p. 965 and ch. 28 p. 1272.
+id: fat-necrosis-micro-4
+file: fat-necrosis-micro-4.jpg
+kind: micro
+sourceUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC12596583/figure/fig0015/
+author: Rebecca Perez de Amorim, Laís Maria Bellaver de Almeida, Hélio Amante Miot, Juliano Vilaverde Schmitt
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-11-07
+modifications:
+  it: >-
+    Ritagliato il pannello B dalla Figura 3 dell'articolo, a partire dal file ad alta risoluzione della figura
+    pubblicato dall'editore (3341 × 2215 px); ridimensionato a 1600 × 1061 px e ricodificato in JPEG (qualità 85).
+    Nessuna modifica dei colori. La lettera B in alto a sinistra è l'etichetta del pannello nella figura pubblicata.
+  en: >-
+    Cropped panel B out of Figure 3 of the article, starting from the publisher's high-resolution file of the figure
+    (3341 × 2215 px); downscaled to 1600 × 1061 px and re-encoded as JPEG (quality 85). No colour change. The letter B
+    at the top left is the panel label of the published figure.
+attributionText: >-
+  Rebecca Perez de Amorim, Laís Maria Bellaver de Almeida, Hélio Amante Miot, Juliano Vilaverde Schmitt, "Pancreatic
+  panniculitis following endoscopic retrograde cholangiopancreatography (ERCP): a case report", Anais Brasileiros de
+  Dermatologia 2025;100(6):501211, doi:10.1016/j.abd.2025.501211, Figure 3 (panel B), © 2025 Sociedade Brasileira de
+  Dermatologia, published by Elsevier España, CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-07 }
+group: fat-necrosis-pancreatic-panniculitis
+stain: H&E
+magnification: medium power (original magnification ×200)
+lookFor:
+  it: "Dal basso verso l'alto: adipociti vivi, poi la banda viola di grasso morto con spazi a fessura; infiltrato infiammatorio ed emorragia a sinistra."
+  en: "Bottom to top: living fat cells, then the purple band of dead fat with slit-like spaces; inflammation and bleeding at the left."
+caption:
+  it: >-
+    Pannicolite pancreatica: biopsia cutanea profonda di uno dei noduli rossi e dolenti comparsi su braccia e gambe
+    di una paziente pochi giorni dopo una colangiopancreatografia retrograda endoscopica (ERCP), con amilasi e lipasi
+    sieriche aumentate. È la steatonecrosi enzimatica che compare lontano dal pancreas: si ritiene che gli enzimi
+    pancreatici, portati dal sangue, raggiungano il grasso sottocutaneo e lo digeriscano. Ematossilina-eosina,
+    ingrandimento originale ×200. Leggi il campo dal basso verso l'alto. In basso il lobulo adiposo è ancora vivo:
+    adipociti grandi, rotondi e vuoti, con pareti sottili, stretti l'uno all'altro. Al centro corre una banda di
+    grasso morto: gli adipociti hanno perso il nucleo e la forma rotonda, gli spazi dei lipidi si sono ridotti a
+    fessure e a buchi irregolari e tutta la banda ha preso una tinta viola (basofila). A sinistra, tra le due zone,
+    ci sono cellule infiammatorie e globuli rossi usciti dai vasi; gli autori descrivono linfociti e neutrofili e
+    classificano il quadro come pannicolite lobulare, perché l'infiammazione occupa i lobuli adiposi più che i setti
+    che li separano. Perché il viola conta: nella steatonecrosi gli acidi grassi liberati dalla lipasi legano il
+    calcio, e il calcio trattiene l'ematossilina. Passa al forte ingrandimento e alla colorazione di von Kossa della
+    stessa biopsia per vederlo da vicino e per dimostrare che si tratta di calcio.
+  en: >-
+    Pancreatic panniculitis: a deep skin biopsy from one of the painful red nodules that appeared on the arms and
+    legs of a patient a few days after an endoscopic retrograde cholangiopancreatography (ERCP), with raised serum
+    amylase and lipase. It is enzymatic fat necrosis arising far from the pancreas: pancreatic enzymes carried in the
+    blood are thought to reach the subcutaneous fat and digest it. H&E, original magnification ×200. Read the field
+    from the bottom up. At the bottom the fat lobule is still alive: large, round, empty fat cells with thin walls,
+    pressed against one another. Across the middle runs a band of dead fat: the fat cells have lost their nuclei and
+    their round shape, the lipid spaces have shrunk to slits and irregular holes, and the whole band has taken on a
+    purple (basophilic) tint. At the left, between the two zones, there are inflammatory cells and red blood cells
+    that have left the vessels; the authors describe lymphocytes and neutrophils and class the picture as a lobular
+    panniculitis, because the inflammation fills the fat lobules rather than the septa between them. Why the purple
+    matters: in fat necrosis the fatty acids freed by lipase bind calcium, and calcium holds haematoxylin. Switch to
+    the high-power view and to the von Kossa stain of the same biopsy to see it up close and to prove that it is
+    calcium.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina a medio ingrandimento, con la lettera B in alto a sinistra: nella metà
+    inferiore grandi spazi bianchi rotondi a parete sottile; al centro una banda orizzontale viola con spazi chiari
+    allungati e irregolari; a sinistra, tra le due zone, numerosi puntini rossi e piccoli nuclei scuri.
+  en: >-
+    Medium-power haematoxylin and eosin micrograph with the letter B at the top left: in the lower half, large round
+    white spaces with thin walls; across the middle, a horizontal purple band holding elongated, irregular clear
+    spaces; at the left, between the two zones, many red dots and small dark nuclei.
+annotations:
+  - id: viable-fat
+    label: { it: "Adipociti vivi: grandi spazi rotondi a parete sottile", en: "Living fat cells: large round spaces with thin walls" }
+    revealOrder: 1
+    shape: { type: rect, coords: [0.02, 0.64, 0.68, 0.34] }
+  - id: necrotic-band
+    label: { it: "Grasso necrotico: banda basofila con spazi a fessura, senza nuclei degli adipociti", en: "Necrotic fat: basophilic band with slit-like spaces, no adipocyte nuclei" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.27, 0.30, 0.45, 0.28, 0.60, 0.29, 0.75, 0.27, 0.90, 0.30, 0.92, 0.52, 0.80, 0.56, 0.65, 0.59, 0.50, 0.60, 0.35, 0.57, 0.28, 0.50] }
+  - id: inflammation-haemorrhage
+    label: { it: Cellule infiammatorie e globuli rossi stravasati, en: Inflammatory cells and extravasated red blood cells }
+    revealOrder: 3
+    shape: { type: rect, coords: [0.09, 0.36, 0.20, 0.24] }

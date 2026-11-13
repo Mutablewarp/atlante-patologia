@@ -1,0 +1,90 @@
+# License check (2026-11-07): Commons file page {{Information}} gives Source {{Own}}, Author User:Nephron, license
+# {{self|cc-by-sa-3.0|GFDL}}; extmetadata LicenseShortName "CC BY-SA 3.0", AttributionRequired true, no Restrictions.
+# Nephron is the creator (own work). CC BY-SA is approved as a class by owner decision O7 (plan/v2-plan.md,
+# 2026-11-03), hence ownerApproved: true. Histology only; nothing identifies the patient. Same uploader, description
+# and "See also" cross-links as fatty-change-micro-4 (low magnification), hence the shared group; a different field.
+# The three annotation boxes reproduce the uploader's own ImageNote boxes on the file page ("Portal tract.", "Portal
+# tract and zone I.", "Hepatic venule."), converted from the 4268 × 2176 px original to normalised coordinates.
+# section: paraffin is our inference (empty fat vacuoles, routine liver-biopsy trichrome), as for fatty-change-micro-4.
+id: fatty-change-micro-5
+file: fatty-change-micro-5.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Periportal_hepatosteatosis_intermed_mag.jpg
+author: Nephron
+license: CC-BY-SA-3.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/3.0/
+retrievedAt: 2026-11-07
+modifications:
+  it: >-
+    Scaricata la versione Commons di 1920 × 979 px dell'originale di 4268 × 2176 px; ridimensionata a 1600 × 816 px e
+    ricodificata in JPEG. Nessun ritaglio, nessuna modifica dei colori. Questo adattamento è condiviso con la stessa
+    licenza (CC BY-SA 3.0).
+  en: >-
+    Downloaded the 1920 × 979 px Commons rendition of the 4268 × 2176 px original; downscaled to 1600 × 816 px and
+    re-encoded as JPEG. No crop, no colour change. This adaptation is shared under the same licence (CC BY-SA 3.0).
+attributionText: >-
+  Nephron, "Periportal hepatosteatosis intermed mag", via Wikimedia Commons, CC BY-SA 3.0
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-07 }
+group: fatty-change-periportal-biopsy
+stain: "trichrome (the source: Trichrome stain)"
+magnification: "intermediate power (the source: intermediate magnification)"
+section: paraffin
+orientation:
+  it: "Spazio portale in alto a sinistra, venula centrolobulare a destra."
+  en: "Portal tract at the upper left, central venule on the right."
+lookFor:
+  it: "Parti dallo spazio portale verde in alto a sinistra e vai verso la venula a destra: i vacuoli spariscono strada facendo."
+  en: "Start at the green portal tract at the upper left and move towards the venule on the right: the vacuoles fade out on the way."
+caption:
+  it: >-
+    Steatosi macrovescicolare periportale (zona 1), colorazione tricromica a medio ingrandimento. In alto a sinistra
+    c'è uno spazio portale: fibre collagene verdi con molti nuclei scuri. A destra un ampio lume chiaro, orlato da un
+    sottile bordo verde, è una venula centrolobulare (venula epatica terminale). Gli epatociti attorno allo spazio
+    portale sono pieni di vacuoli rotondi e vuoti di ogni misura: i più grandi occupano quasi tutta la cellula, e
+    accanto a loro ce ne sono di più piccoli. Attorno alla venula, invece, gli epatociti sono compatti, rossi e senza
+    grasso. Ogni vacuolo è lo spazio lasciato dai trigliceridi sciolti durante l'allestimento, perciò la colorazione
+    non lo tinge. Attenzione: qualche gocciolina piccola accanto alle grandi non basta a fare una steatosi
+    microvescicolare, nella quale intere cellule sono piene di gocce minute attorno a un nucleo centrale (vedi
+    l'immagine di steatosi microvescicolare di questa scheda). Nota infine che in questo campo, a parte linee
+    sottilissime lungo i sinusoidi, il collagene verde resta nello spazio portale e nelle pareti dei vasi: mancano i
+    setti pericellulari che avvolgono i singoli epatociti, la fibrosi «a rete di pollaio» tipica della steatoepatite.
+  en: >-
+    Periportal (zone 1) macrovesicular steatosis, trichrome stain at intermediate power. At the upper left is a portal
+    tract: green collagen fibres with many dark nuclei. On the right, a wide clear lumen edged by a thin green rim is
+    a central venule (terminal hepatic venule). The hepatocytes around the portal tract are packed with round, empty
+    vacuoles of every size: the largest fill most of a cell, and smaller ones sit beside them. Around the venule, by
+    contrast, the hepatocytes are compact, red and free of fat. Each vacuole is the space left by triglyceride
+    dissolved during processing, which is why the stain does not colour it. Pitfall: a few small droplets next to big
+    ones do not make this microvesicular steatosis, in which whole cells are packed with minute droplets around a
+    central nucleus (see the microvesicular steatosis image on this card). Note also that in this field, apart from
+    very thin lines along the sinusoids, the green collagen stays in the portal tract and the vessel walls: there are
+    no pericellular strands wrapping single hepatocytes, the "chicken-wire" fibrosis of steatohepatitis.
+alt:
+  it: >-
+    Micrografia di fegato in colorazione tricromica a medio ingrandimento: epatociti rossi; in alto a sinistra una
+    banda obliqua di fibre verdi con molti nuclei scuri, circondata da epatociti pieni di vacuoli bianchi rotondi di
+    varie dimensioni; a destra un grande lume bianco ovale con un sottile bordo verde, circondato da epatociti senza
+    vacuoli.
+  en: >-
+    Medium-power trichrome micrograph of liver: red hepatocytes; at the upper left an oblique band of green fibres
+    with many dark nuclei, surrounded by hepatocytes full of round white vacuoles of varying size; on the right a large
+    oval white lumen with a thin green rim, surrounded by hepatocytes without vacuoles.
+annotations:
+  - id: portal-tract
+    label: { it: "Spazio portale (collagene verde)", en: "Portal tract (green collagen)" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.116, 0.034, 0.31, 0.034, 0.31, 0.54, 0.116, 0.54] }
+  - id: zone-1-fat
+    label:
+      it: "Epatociti carichi di grasso attorno allo spazio portale (zona 1)"
+      en: "Fat-laden hepatocytes around the portal tract (zone 1)"
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.003, 0.032, 0.521, 0.032, 0.521, 0.953, 0.003, 0.953] }
+  - id: central-venule
+    label:
+      it: "Venula centrolobulare, con epatociti senza grasso attorno"
+      en: "Central venule, with fat-free hepatocytes around it"
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.679, 0.223, 0.907, 0.223, 0.907, 0.86, 0.679, 0.86] }

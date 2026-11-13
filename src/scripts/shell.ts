@@ -259,26 +259,35 @@ const centreCurrent = (tree: HTMLElement) => {
 };
 const chapter = document.querySelector<HTMLDialogElement>('[data-chapter-dialog]');
 const chapterBtn = document.querySelector<HTMLButtonElement>('[data-chapter-open]');
-if (chapter && chapterBtn) {
-  const tree = chapter.querySelector<HTMLElement>('.module-tree')!;
+const sideTree = document.querySelector<HTMLElement>('.primary-nav .module-tree');
+if (chapter && chapterBtn && sideTree) {
+  // The page carries the index once (D072): the sidebar's copy moves into the dialog while it is open, and back after.
+  const [home, after] = [sideTree.parentElement!, sideTree.nextSibling];
+  const putBack = () => (after?.parentNode === home ? home.insertBefore(sideTree, after) : home.append(sideTree));
   chapterBtn.addEventListener('click', () => {
+    chapter.append(sideTree);
     chapter.showModal();
-    centreCurrent(tree);
-    tree.querySelector<HTMLElement>('a[aria-current]')?.focus({ preventScroll: true });
+    centreCurrent(sideTree);
+    sideTree.querySelector<HTMLElement>('a[aria-current]')?.focus({ preventScroll: true });
   });
   // A click on the backdrop closes it, as Esc does; focus goes back to the button.
   chapter.addEventListener('click', (ev) => {
     const r = chapter.getBoundingClientRect();
     if (ev.target === chapter && (ev.clientX < r.left || ev.clientX > r.right || ev.clientY < r.top || ev.clientY > r.bottom)) chapter.close();
   });
-  chapter.addEventListener('close', () => chapterBtn.focus());
+  chapter.addEventListener('close', () => {
+    putBack();
+    chapterBtn.focus();
+  });
   // Back from the card picked in it, the page comes out of the browser cache with the dialog closed.
-  addEventListener('pagehide', () => chapter.close());
+  addEventListener('pagehide', () => {
+    chapter.close();
+    putBack();
+  });
 }
 // The sidebar copy (>= 1024 px) opens on the current card each time it appears (on load, when the sidebar is
 // expanded, when an iPad turns to landscape) and while its width changes (the sidebar opens with a transition, and
 // the cards wrap differently); a change of height alone (the browser's toolbars) leaves the reader's scroll alone.
-const sideTree = document.querySelector<HTMLElement>('.primary-nav .module-tree');
 if (sideTree) {
   let width = 0;
   new ResizeObserver(() => {

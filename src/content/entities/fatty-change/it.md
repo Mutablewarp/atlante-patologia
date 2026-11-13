@@ -1,6 +1,6 @@
 ---
 lang: it
-translatedFrom: f019bb5cc0c4d263dea09956096d1e168eba0c45c4f8a5eeeb902388a818edf5
+translatedFrom: f115cf2166ddb687e2447635e4023c5b08d45d1087fd3f99a8a0a083397ad499
 ---
 
 ## Definizione ed epidemiologia
@@ -33,7 +33,7 @@ L'**etanolo** agisce su quasi tutte le tappe: aumenta la sintesi di acidi grassi
 
 Il **kwashiorkor** mostra il difetto di esportazione allo stato puro: i carboidrati forniscono il substrato per sintetizzare i grassi, ma la carenza di proteine limita le apoproteine necessarie per portarli fuori dalla cellula.<!--c:fatty-change-c021-->
 
-La **steatosi microvescicolare** riflette un grave danno dei mitocondri.<!--c:fatty-change-c022--> Nella steatosi epatica acuta gravidica un difetto fetale dell'ossidazione degli acidi grassi (classicamente il deficit di LCHAD) rimanda alla madre acidi grassi non metabolizzati, che saturano la sua β-ossidazione.<!--c:fatty-change-c023-->
+La **steatosi microvescicolare** riflette un grave danno dei mitocondri.<!--c:fatty-change-c022--> Nella steatosi epatica acuta gravidica la β-ossidazione materna può essere sopraffatta dagli acidi grassi che tornano attraverso la placenta da un feto incapace di ossidarli, classicamente per un deficit di LCHAD.<!--c:fatty-change-c023-->
 
 ## Morfologia macroscopica
 
@@ -45,21 +45,27 @@ Il fegato steatosico è aumentato di volume e giallo; nei forti bevitori può ar
 
 **Steatosi microvescicolare.** Innumerevoli goccioline riempiono la cellula senza spostarne il nucleo, che rimane al centro.<!--c:fatty-change-c028--> Nella steatosi epatica acuta gravidica gli epatociti sono anche aumentati di volume.<!--c:fatty-change-c029-->
 
-**Ultrastruttura.** Al microscopio elettronico l'epatocita del bevitore mostra l'impronta tossica dell'etanolo stesso: mitocondri ingranditi (fino a megamitocondri) e reticolo endoplasmatico liscio proliferato.<!--c:fatty-change-c030-->
+**Ultrastruttura.** Nell'epatocita del bevitore il microscopio elettronico mostra mitocondri ingranditi, talora giganti (megamitocondri), e un reticolo endoplasmatico liscio proliferato: alterazioni dovute all'etanolo stesso, non al grasso accumulato.<!--c:fatty-change-c030-->
 
 ## Colorazioni speciali, IIC e reperti molecolari
 
-- Nelle sezioni di routine colorate con ematossilina-eosina (EE) i vacuoli appaiono vuoti, perché i lipidi vengono sciolti durante la processazione del tessuto.<!--c:fatty-change-c031-->
-- Il grasso si dimostra su **sezioni congelate** con colorazioni per i lipidi come il rosso Sudan, che lo colora in rosso.<!--c:fatty-change-c032-->
-- L'**Oil Red O** colora in rosso i lipidi neutri.<!--c:fatty-change-c033-->
-- La reazione **PAS** evidenzia il glicogeno e aiuta a distinguere le cellule cariche di glicogeno da quelle cariche di grasso.<!--c:fatty-change-c034-->
+**Come si studia:**
+
+- **Prelievo:** un'agobiopsia epatica, che i patologi preferiscono alla biopsia chirurgica a cuneo in una malattia diffusa; solo il tessuto mostra se sulla steatosi semplice si è sviluppata una steatoepatite, e per questo nella NAFLD la biopsia resta il metodo di riferimento.<!--c:fatty-change-c070--> Un suo limite è l'errore di campionamento, perché il fegato è da 50 000 a 65 000 volte più grande persino di un frustolo adeguato; frustoli lunghi almeno 1,5 cm, o un secondo frustolo, riducono il rischio.<!--c:fatty-change-c071-->
+- **EE:** nelle sezioni di routine colorate con ematossilina-eosina (EE) i vacuoli appaiono vuoti, perché i lipidi vengono sciolti durante la processazione del tessuto.<!--c:fatty-change-c031--> Il referto indica il tipo di steatosi (macrovescicolare, microvescicolare o mista) e ne gradua l'estensione in base alla quota di epatociti con grasso: per la NAFLD serve grasso in più del 5% degli epatociti; tra il 5 e il 33% la steatosi è lieve, tra il 34 e il 66% moderata, oltre il 66% grave.<!--c:fatty-change-c072--> Nell'adulto il grasso della NAFLD compare di solito attorno alla vena centrolobulare (zona 3 dell'acino), mentre nella maggior parte dei bambini non è così.<!--c:fatty-change-c073-->
+- **Colorazioni per i grassi:** il grasso si dimostra su **sezioni congelate** con colorazioni per i lipidi come il rosso Sudan, che lo colora in rosso (vedi [[g:fat-stains]]).<!--c:fatty-change-c032--> L'**Oil Red O** colora in rosso i lipidi neutri.<!--c:fatty-change-c033--> Il suo ruolo pesa soprattutto quando le gocce sono minute: nella steatosi microvescicolare pura può essere proprio questa colorazione a dimostrare che il citoplasma finemente vacuolizzato contiene grasso.<!--c:fatty-change-c074-->
+- **PAS e PAS-D:** la reazione PAS evidenzia il glicogeno e aiuta a distinguere le cellule cariche di glicogeno da quelle cariche di grasso.<!--c:fatty-change-c034--> La diastasi digerisce il glicogeno: il materiale che perde la positività PAS sul vetrino trattato con diastasi (PAS-D) è glicogeno.<!--c:fatty-change-c075--> I due depositi possono coesistere, come nella glicogenosi di tipo I (malattia di von Gierke).<!--c:fatty-change-c076-->
+- **Tricromica:** il collagene si colora in blu; nella steatoepatite compare di solito prima attorno alla venula centrolobulare e tra i singoli epatociti, con un disegno «a rete di pollaio» (chicken-wire).<!--c:fatty-change-c077-->
+- **Immunoistochimica:** gli epatociti balloniformi, le cellule danneggiate che caratterizzano la steatoepatite, in EE vengono riconosciuti in modo poco concorde da patologi diversi; l'immunocolorazione per le cheratine 8/18 può aiutare a individuarli, perché queste cellule hanno perso le loro normali cheratine.<!--c:fatty-change-c078-->
+- **Muscolo scheletrico:** quando debolezza o intolleranza allo sforzo fanno pensare a una miopatia lipidica, la biopsia muscolare viene suddivisa: un frammento fissato in glutaraldeide si conserva per l'eventuale microscopia elettronica, uno non fissato viene congelato per le sezioni al criostato.<!--c:fatty-change-c079--> Nelle sezioni congelate in EE le fibre appaiono crivellate di vacuoli, e l'Oil Red O colora in rosso gli stessi vacuoli, a prova che contengono lipidi neutri.<!--c:fatty-change-c080-->
+- **Test molecolari:** in una parte dei casi di steatosi epatica acuta gravidica l'analisi del DNA individua il difetto fetale: il bambino è portatore di una mutazione di LCHAD, come Glu474Gln, che lo espone alla steatosi epatica e all'ipoglicemia ipochetotica.<!--c:fatty-change-c081-->
 
 ## Presentazione clinica
 
 - **Fegato:** la steatosi alcolica non complicata è clinicamente silente o quasi, per quanto marcato sia il quadro istologico.<!--c:fatty-change-c035--> Nella steatosi epatica non alcolica molti pazienti restano asintomatici, con un aumento solo moderato degli enzimi epatici.<!--c:fatty-change-c036-->
 - **Steatosi epatica acuta gravidica:** dolore addominale, ittero e anoressia, quasi sempre nel terzo trimestre.<!--c:fatty-change-c037-->
 - **Sindrome di Reye:** malattia poco comune dei bambini che compare tipicamente dopo una febbre virale (influenza, varicella) e associa steatosi microvescicolare, insufficienza epatica ed encefalopatia.<!--c:fatty-change-c038--> L'associazione classica è con l'aspirina assunta durante quella malattia, anche se oggi si sa che la sindrome non si riduce a una semplice tossicità da aspirina.<!--c:fatty-change-c069-->
-- **Cuore e muscolo scheletrico:** nel deficit di carnitina gli acidi grassi non riescono a entrare nei mitocondri e le goccioline lipidiche si accumulano nelle fibre muscolari.<!--c:fatty-change-c039--> La forma sistemica può coinvolgere anche il cuore e il fegato.<!--c:fatty-change-c040-->
+- **Cuore e muscolo scheletrico:** nel deficit di carnitina gli acidi grassi non riescono a entrare nei mitocondri e le goccioline lipidiche si accumulano nelle fibre muscolari.<!--c:fatty-change-c039--> La forma sistemica può coinvolgere anche il cuore e il fegato.<!--c:fatty-change-c040--> Nella difterite la tossina può colpire il cuore: il miocardio può allora mostrare focolai di necrosi e, nei cardiomiociti, goccioline di grasso.<!--c:fatty-change-c082-->
 
 ## Diagnosi, laboratorio e imaging
 
