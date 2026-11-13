@@ -50,8 +50,27 @@ export function renderSelfVerified(source, entries) {
 
 const rowText = (row) => row.replace(/^\|\s*\d{4}-\d{2}-\d{2}\s*\|/, '|').replace(/\s+/g, ' ');
 
-/** Appends the new rows of the fragments after the last row of the file's table (7 cells); one row per distinct text. */
-export function mergeRows(text, fragments) {
+const cell = (s) => s.replace(/\s+/g, ' ').trim().replaceAll('|', '\\|');
+/**
+ * Converters for a fragment line that is not a table row: the agents often write `- kind: text` instead of the 7 cells, and
+ * such lines never reached the shared files. reviewRow keeps the whole line as the issue and lists the claim ids it names.
+ */
+export const reviewRow = (today) => (from, line) => {
+  const text = line.replace(/^[-*]\s+/, '');
+  const claims = [...new Set(text.match(new RegExp(`\\b${from}-c\\d{3}\\b`, 'g')) ?? [])].slice(0, 3);
+  return `| ${today} | \`${from}\` | ${claims.map((c) => `\`${c}\``).join(', ') || '—'} | ${cell(text)} | open | agent | |`;
+};
+/** assetRow drops the leading card id (and date) of the line and reads the image role from its text. */
+export const assetRow = (today) => (from, line) => {
+  const text = line.replace(/^[-*]\s+/, '').replace(new RegExp(`^\`?${from}\`?\\s*(\\(\\d{4}-\\d{2}-\\d{2}\\))?\\s*:\\s*`), '');
+  return `| ${today} | \`${from}\` | ${/\b(gross|micro|diagram|imaging|clinical)\b/.exec(text)?.[1] ?? '—'} | ${cell(text)} | — | — | open |`;
+};
+
+/**
+ * Appends the new rows of the fragments after the last row of the file's table (7 cells); one row per distinct text.
+ * `plain(from, line)` turns a line that is not a table row into one; without it such a line is left out.
+ */
+export function mergeRows(text, fragments, plain = null) {
   const lines = text.split('\n');
   const last = lines.findLastIndex((l) => l.startsWith('|'));
   if (last < 0) throw new Error('no table to append the rows to');
@@ -59,7 +78,9 @@ export function mergeRows(text, fragments) {
   const fresh = [];
   const problems = [];
   for (const { from, text: t } of fragments) {
-    for (const row of t.split('\n').map((l) => l.trim()).filter((l) => l.startsWith('|'))) {
+    for (const line of t.split('\n').map((l) => l.trim()).filter(Boolean)) {
+      const row = line.startsWith('|') ? line : plain?.(from, line);
+      if (!row) continue;
       if (row.split(/(?<!\\)\|/).length !== 9) problems.push(`${from}: not a 7-cell row: ${row.slice(0, 80)}`);
       else if (!seen.has(rowText(row))) {
         seen.add(rowText(row));
@@ -117,13 +138,13 @@ export const mergePlanned = (text, fragments) =>
 
 const MERGES = [
   ['sources', 'sources.yaml', 'src/content/sources.yaml', mergeSources],
-  ['reviewQueue', 'review-queue.md', 'docs/REVIEW_QUEUE.md', mergeRows],
-  ['missingAssets', 'missing-assets.md', 'docs/MISSING_ASSETS.md', mergeRows],
+  ['reviewQueue', 'review-queue.md', 'docs/REVIEW_QUEUE.md', (text, fragments, today) => mergeRows(text, fragments, reviewRow(today))],
+  ['missingAssets', 'missing-assets.md', 'docs/MISSING_ASSETS.md', (text, fragments, today) => mergeRows(text, fragments, assetRow(today))],
   ['planned', 'planned.yaml', 'src/content/modules.yaml', mergePlanned],
 ];
 
 /** Rebuilds the self-verified entries and merges the fragments of the finished cards of `batch`; writes what changes. */
-export function finalize({ root, batch }) {
+export function finalize({ root, batch, today = new Date().toISOString().slice(0, 10) }) {
   const rows = manifestRows(root, batch);
   const cards = rows.filter((r) => finished(root, r.id));
   const summary = { batch, cards: cards.length, unfinished: rows.length - cards.length };
@@ -136,7 +157,7 @@ export function finalize({ root, batch }) {
       return existsSync(file) ? [{ from: id, text: readFileSync(file, 'utf8') }] : [];
     });
     const old = readFileSync(join(root, target), 'utf8');
-    const merged = merge(old, fragments);
+    const merged = merge(old, fragments, today);
     summary[key] = merged.added;
     problems.push(...merged.problems);
     edit(target, old, merged.text);
