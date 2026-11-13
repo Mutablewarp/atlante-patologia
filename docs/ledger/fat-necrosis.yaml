@@ -18,28 +18,28 @@ claims:
     date: 2026-11-03
   - claimId: fat-necrosis-c003
     section: etiology
-    statement: "In acute pancreatitis, activated lipolytic and proteolytic enzymes reach the peritoneum and peripancreatic fat and digest adipose tissue."
-    sourceRef: { source: rubin-8e, chapter: "19", pages: "837" }
+    statement: "In acute pancreatitis, the fat around the pancreas and in the peritoneal cavity is digested by activated pancreatic enzymes that act on lipids and proteins."
+    sourceRef: { source: rubin-8e, chapter: "1, 19", pages: "39, 837" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "fixer-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c004
     section: etiology
-    statement: "Obesity predisposes to severe pancreatitis; more peripancreatic fat allows more extensive fat necrosis after lipase release."
+    statement: "Obese patients are more prone to pancreatitis, and to severe attacks in particular; once lipase is released locally, their larger peripancreatic fat store can let fat necrosis spread further."
     sourceRef: { source: rubin-8e, chapter: "21", pages: "903" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "fixer-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c005
     section: etiology
     statement: "In traumatic fat necrosis injured adipocytes themselves release triglyceride and lipases, without pancreatic enzymes; the breast is a common site."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "40" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c006
     section: etiology
     statement: "Around a ruptured silicone breast implant, fat necrosis is seen with a foreign-body giant-cell reaction."
@@ -50,92 +50,92 @@ claims:
     date: 2026-11-03
   - claimId: fat-necrosis-c007
     section: etiology
-    statement: "Neonatal subcutaneous fat necrosis is an uncommon birth injury due to ischemia from prolonged pressure on subcutaneous fat during delivery."
+    statement: "During labor and delivery, prolonged compression can make subcutaneous fat ischemic; the resulting fat necrosis of the newborn is an uncommon birth injury."
     sourceRef: { source: rubin-8e, chapter: "6", pages: "319" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "fixer-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c008
     section: etiology
-    statement: "Some patients with pancreatic acinar cell carcinoma develop subcutaneous fat necrosis, polyarthralgia and eosinophilia from massive lipase secretion into serum."
+    statement: "In some patients, pancreatic acinar cell carcinoma secretes enough lipase into the serum to cause subcutaneous fat necrosis, part of a paraneoplastic syndrome that also includes joint pain and eosinophilia."
     sourceRef: { source: rubin-8e, chapter: "21", pages: "910" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "fixer-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c009
     section: pathogenesis
-    statement: "In pancreatitis, digestive enzymes leak from injured acini and ducts into extracellular spaces, become activated and digest the pancreas and surrounding fat."
+    statement: "The pancreas and the fat around it are digested by the gland's own enzymes, which escape from damaged acini and ducts and become active in the tissue rather than in the gut lumen."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "39" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "fixer-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c010
     section: pathogenesis
     statement: "Trypsin is the trigger enzyme of pancreatitis; its main damage is indirect, by activating the precursors of phospholipase A2 and elastase."
     sourceRef: { source: rubin-8e, chapter: "21", pages: "902" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c011
     section: pathogenesis
     statement: "Lipid- and protein-digesting enzymes (phospholipases, proteases) open adipocytes, letting stored triglyceride escape."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "40" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c012
     section: pathogenesis
     statement: "Lipase cleaves the released triglyceride into free fatty acids."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "40" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c013
     section: pathogenesis
-    statement: "Free fatty acids bind calcium and precipitate as insoluble salts (saponification)."
+    statement: "Calcium combines with the freed fatty acids, forming insoluble salts that fall out of solution; this is saponification."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "40" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c014
     section: pathogenesis
     statement: "Free fatty acids are directly cytotoxic, and this is the proposed (not proven) explanation for pancreatitis caused by lipase leakage in hyperlipidemia."
     sourceRef: { source: rubin-8e, chapter: "21", pages: "903" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c015
     section: gross
     statement: "Necrotic fat is chalky white with ragged borders, set in otherwise normal-looking fat."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "40" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c016
     section: gross
-    statement: "In acute pancreatitis yellow-white foci of fat necrosis form around the pancreas and in the adjacent mesentery."
+    statement: "Around the pancreas and in the nearby mesentery, acute pancreatitis leaves yellow-white foci of necrotic fat."
     sourceRef: { source: rubin-8e, chapter: "21", pages: "903-904" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "fixer-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c017
     section: gross
-    statement: "Necrotic fat foci in pancreatitis are soft early and become firm and chalky later as calcium and magnesium soaps accumulate."
+    statement: "In pancreatitis, accumulating calcium and magnesium soaps turn initially soft foci of necrotic fat into hard, chalky ones."
     sourceRef: { source: rubin-8e, chapter: "21", pages: "903" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c018
     section: gross
     statement: "Breast fat necrosis forms a hard mass, often with skin tethering."
@@ -146,20 +146,20 @@ claims:
     date: 2026-11-03
   - claimId: fat-necrosis-c019
     section: micro
-    statement: "Microscopically there are irregular islands of necrotic adipocytes with only remnants of the fat cells left."
-    sourceRef: { source: rubin-8e, chapter: "1", pages: "40" }
-    status: verified
-    verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
-  - claimId: fat-necrosis-c020
-    section: micro
-    statement: "Calcium soaps are seen as structureless basophilic material rimming the necrotic fat."
+    statement: "Microscopically the dead fat cells form irregular islands, and only remnants of each adipocyte can still be made out."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "40" }
     status: verified
     verifiedBy: agent
     verifier: "fixer-agent"
-    date: 2026-11-03
+    date: 2026-11-09
+  - claimId: fat-necrosis-c020
+    section: micro
+    statement: "The border of the necrotic fat is lined by basophilic material without visible structure: the calcium soaps."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "40" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c021
     section: micro
     statement: "Acute inflammation intermingles with the soaps and adipocyte remnants."
@@ -170,84 +170,84 @@ claims:
     date: 2026-11-03
   - claimId: fat-necrosis-c022
     section: micro
-    statement: "In acute pancreatitis acinar necrosis, fat necrosis and hemorrhage coexist, and necrosis is usually patchy rather than involving the whole gland."
+    statement: "In acute pancreatitis acinar necrosis lies next to fat necrosis and hemorrhage; the damage is patchy, and necrosis of the entire gland is rare."
     sourceRef: { source: rubin-8e, chapter: "21", pages: "903, 905" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "fixer-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c023
     section: micro
-    statement: "Early breast fat necrosis shows necrotic fat cells, acute inflammation, cholesterol clefts and hemorrhage."
+    statement: "In early breast fat necrosis, hemorrhage and acute inflammation surround the dead fat cells, and cholesterol clefts can be present."
     sourceRef: { source: rubin-8e, chapter: "25", pages: "1077" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c024
     section: micro
-    statement: "Later, foamy macrophages and multinucleated giant cells engulfing lipid droplets accumulate."
+    statement: "Later, foamy macrophages take up the lipid droplets, as do multinucleated giant cells, and both gradually increase in number."
     sourceRef: { source: rubin-8e, chapter: "25", pages: "1077-1078" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c025
     section: micro
-    statement: "With time fibrosis and dystrophic calcification develop."
+    statement: "Fibrosis and dystrophic calcification are the late changes."
     sourceRef: { source: rubin-8e, chapter: "25", pages: "1077" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c026
     section: clinical
     statement: "Acute pancreatitis causes intense upper abdominal pain radiating to the back with vomiting; in severe attacks shock can develop within hours."
     sourceRef: { source: rubin-8e, chapter: "21", pages: "905" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c027
     section: clinical
-    statement: "Enzymes released into the peritoneum cause severe chemical peritonitis with fat necrosis."
+    statement: "In the peritoneum, activated pancreatic enzymes produce a severe chemical peritonitis accompanied by foci of fat necrosis."
     sourceRef: { source: rubin-8e, chapter: "19", pages: "837" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c028
     section: clinical
     statement: "Soap formation consumes calcium, so hypocalcemia may occur and, when marked, cause neuromuscular irritability."
     sourceRef: { source: rubin-8e, chapter: "21", pages: "903" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c029
     section: clinical
-    statement: "Breast fat necrosis presents as a hard mass, often with skin tethering, resembling carcinoma."
+    statement: "Breast fat necrosis is felt as a hard lump that often pulls on the skin, so clinically it can pass for carcinoma."
     sourceRef: { source: rubin-8e, chapter: "25", pages: "1077" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "fixer-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c030
     section: clinical
-    statement: "In newborns subcutaneous fat necrosis appears as hard red, bluish or skin-colored nodules or plaques during the first two weeks after birth."
+    statement: "One to two weeks after birth, neonatal subcutaneous fat necrosis shows up as firm subcutaneous nodules or plaques, with overlying skin that is red-violet or of normal color."
     sourceRef: { source: rubin-8e, chapter: "6", pages: "319" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c031
     section: diagnosis
     statement: "Injured acinar cells release enzymes into the blood early in acute pancreatitis, so raised serum lipase and amylase support the diagnosis alongside the clinical picture."
     sourceRef: { source: rubin-8e, chapter: "21", pages: "905" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c032
     section: diagnosis
     statement: "Breast fat necrosis is identified histologically by necrotic fat, foamy macrophages and giant cells, distinguishing it from carcinoma."
@@ -262,40 +262,40 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "1", pages: "40" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c034
     section: prognosis
     statement: "Prolonged profound shock in severe pancreatitis can lead within the first week to ARDS and acute renal failure."
     sourceRef: { source: rubin-8e, chapter: "21", pages: "905" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c035
     section: prognosis
     statement: "Secondary infection of necrotic pancreas by gram-negative bowel organisms sharply raises mortality."
     sourceRef: { source: rubin-8e, chapter: "21", pages: "905" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c036
     section: prognosis
     statement: "Pancreatic pseudocyst is a recognized later complication of acute pancreatitis."
     sourceRef: { source: rubin-8e, chapter: "21", pages: "903" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c037
     section: prognosis
-    statement: "Repeated (or severe) episodes of acute pancreatitis can heal with irregular fibrosis and sometimes calcification, i.e. chronic pancreatitis."
+    statement: "Chronic pancreatitis can be the healed result of acute pancreatitis, especially of repeated or severe attacks, which leave patchy scarring of the gland and sometimes calcification."
     sourceRef: { source: rubin-8e, chapter: "21", pages: "902-903" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c038
     section: differential
     statement: "Liquefactive necrosis is enzymatic dissolution of tissue into fluid, as in abscesses and brain infarcts."
@@ -326,16 +326,16 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "25", pages: "1076" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c042
     section: differential
-    statement: "Like breast carcinoma, breast fat necrosis presents as a hard mass with skin tethering."
+    statement: "A hard lump, often tethered to the skin, is the presentation that breast fat necrosis shares with breast carcinoma."
     sourceRef: { source: rubin-8e, chapter: "25", pages: "1077" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "fixer-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c043
     section: differential
     statement: "Steatosis is triglyceride accumulation within the cytoplasm of parenchymal cells."
@@ -370,12 +370,12 @@ claims:
     date: 2026-11-03
   - claimId: fat-necrosis-c047
     section: high-yield
-    statement: "Gross chalky white foci; microscopic amorphous basophilic deposits at the margins of necrotic fat."
+    statement: "Grossly the foci are chalky white; microscopically, blue (basophilic) soap deposits outline the dead fat."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "40" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c048
     section: high-yield
     statement: "Saponification in pancreatitis may lower blood calcium."
@@ -426,17 +426,121 @@ claims:
     date: 2026-11-03
   - claimId: fat-necrosis-c054
     section: traps
-    statement: "Only some patients with breast fat necrosis give a history of trauma."
+    statement: "Not every patient with breast fat necrosis recalls an injury: a history of trauma is obtained only in some."
     sourceRef: { source: rubin-8e, chapter: "25", pages: "1077" }
     status: verified
     verifiedBy: agent
-    verifier: "verifier-agent"
-    date: 2026-11-03
+    verifier: "fixer-agent"
+    date: 2026-11-09
   - claimId: fat-necrosis-c055
     section: mnemonics
     statement: "Original mnemonic summarizing verified chapter-1 claims: saponification, enzymatic or traumatic origin, restriction to adipose tissue with chalky foci, breast pseudotumor especially when calcified, lipases from injured adipocytes in trauma."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "39-40" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fat-necrosis-c056
+    section: etiology
+    statement: "Besides accidental injury, breast fat necrosis can be iatrogenic and follow surgery or radiotherapy."
+    sourceRef: { source: rubin-8e, chapter: "25", pages: "1077" }
+    status: beyond-reference
+    secondSource: { source: kerridge-2015, locator: "Section 1 (Introduction), paragraph on the causes of breast fat necrosis; full text read in PMC (PMC4378709)" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fat-necrosis-c057
+    section: gross
+    statement: "A breast lesion may liquefy at its center, leaving a cavity of liquefied fat that imaging shows as an oil (lipid) cyst."
+    sourceRef: { source: rubin-8e, chapter: "25", pages: "1077" }
+    status: beyond-reference
+    secondSource: { source: kerridge-2015, locator: "Section 2 (central cavity from liquefactive necrosis) and Section 3 (oil or lipid cysts, liquefied fat); full text read in PMC (PMC4378709)" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fat-necrosis-c058
+    section: ancillary
+    statement: "Breast lesions that clinical examination and imaging cannot classify are usually resolved by needle core biopsy and histology."
+    sourceRef: { source: rubin-8e, chapter: "25", pages: "1077-1078" }
+    status: beyond-reference
+    secondSource: { source: kerridge-2015, locator: "Section 3 (indeterminate mammographic appearance needing biopsy; ultrasound features guiding core needle biopsy); full text read in PMC (PMC4378709)" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fat-necrosis-c059
+    section: ancillary
+    statement: "Routine H&E is usually sufficient for the diagnosis, and what it shows depends on how old the lesion is."
+    sourceRef: { source: rubin-8e, chapter: "25", pages: "1077" }
+    status: beyond-reference
+    secondSource: { source: kerridge-2015, locator: "Abstract and Section 2 (appearance depends on lesion age; morphologic examination usually straightforward); full text read in PMC (PMC4378709)" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fat-necrosis-c060
+    section: ancillary
+    statement: "Earlier hemorrhage in breast fat necrosis can leave macrophages that hold hemosiderin."
+    sourceRef: { source: rubin-8e, chapter: "25", pages: "1077" }
+    status: beyond-reference
+    secondSource: { source: kerridge-2015, locator: "Section 2, histopathology paragraph (hemosiderin-laden macrophages); full text read in PMC (PMC4378709)" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fat-necrosis-c061
+    section: ancillary
+    statement: "Hemosiderin forms yellow-brown granules, and the Prussian blue (Perls) stain identifies them as iron."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "6-7" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fat-necrosis-c062
+    section: ancillary
+    statement: "Fat looks like empty space in routine sections because paraffin processing extracts most of it; frozen sections stained with oil red O or Sudan red show neutral fat in red."
+    sourceRef: { source: rubin-8e, chapter: "7, 18, 31", pages: "336, 721, 1411, 1425" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fat-necrosis-c063
+    section: ancillary
+    statement: "Older lesions may undergo dystrophic calcification; von Kossa, more specific than H&E, stains the calcium black, whereas on H&E it is deep blue."
+    sourceRef: { source: rubin-8e, chapter: "22, 25", pages: "965, 1077" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fat-necrosis-c064
+    section: ancillary
+    statement: "Keratin immunostaining separates carcinoma cells, which are positive, from the foamy macrophages of fat necrosis, which are keratin-negative and CD68-positive."
+    sourceRef: { source: rubin-8e, chapter: "25", pages: "1097" }
+    status: beyond-reference
+    secondSource: { source: kerridge-2015, locator: "Section 2, last paragraph (CD68 and pan-cytokeratin immunostains); full text read in PMC (PMC4378709)" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fat-necrosis-c065
+    section: ancillary
+    statement: "Invasive lobular carcinoma can be hidden in an old fibrotic lesion because its tumor cells spread one at a time or in single file; keratin immunostaining helps to exclude it."
+    sourceRef: { source: rubin-8e, chapter: "25", pages: "1094" }
+    status: beyond-reference
+    secondSource: { source: kerridge-2015, locator: "Section 2, last paragraph (pan-cytokeratin staining of old fibrotic lesions, lobular carcinoma as the tumor to exclude); full text read in PMC (PMC4378709)" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fat-necrosis-c066
+    section: ancillary
+    statement: "After leakage from a breast implant, small refractile silicone particles may remain in clear spaces and in nearby macrophages, although tissue processing removes most of the silicone."
+    sourceRef: { source: rubin-8e, chapter: "25", pages: "1076" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fat-necrosis-c067
+    section: diagnosis
+    statement: "On mammography an oil cyst full of radiolucent fat indicates benign fat necrosis, but some of its calcification patterns look the same as the calcifications of breast cancer."
+    sourceRef: { source: rubin-8e, chapter: "1", pages: "40" }
+    status: beyond-reference
+    secondSource: { source: kerridge-2015, locator: "Section 3, mammography paragraph (lipid cysts; clustered pleomorphic microcalcifications); full text read in PMC (PMC4378709)" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09

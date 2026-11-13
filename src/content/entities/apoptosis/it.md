@@ -1,6 +1,6 @@
 ---
 lang: it
-translatedFrom: 521e2173ea1291b252c2c3b865074b646cecea7bee91d82c1a1f43b3cced2a75
+translatedFrom: 3c0623630186e80fe061f48e83bbfe7e77303412930df23481dcb4f4ab9255af
 ---
 
 ## Definizione ed epidemiologia
@@ -50,13 +50,23 @@ Non applicabile.
 - **Nucleo:** la cromatina si condensa (picnosi) e il nucleo si frammenta (carioressi), all'interno di una membrana cellulare integra.<!--c:apoptosis-c038-->
 - **Corpo cellulare:** la cellula apoptotica si raggrinzisce, ma la sua membrana plasmatica resta integra.<!--c:apoptosis-c073--> Il suo citoplasma può diventare eosinofilo all'EE, come nei cheratinociti apoptotici dell'eritema multiforme; i corpi acidofili dell'epatite virale sono epatociti apoptotici con citoplasma intensamente eosinofilo.<!--c:apoptosis-c074-->
 - **Citoplasma e membrana:** gli organelli vanno incontro a segregazione, la membrana plasmatica forma bolle (blebs) e la cellula si frammenta in corpi apoptotici delimitati da membrana, molti dei quali privi di materiale nucleare.<!--c:apoptosis-c039-->
-- **Nessun infiltrato infiammatorio** attorno alle cellule morenti.<!--c:apoptosis-c040-->
-- Esempi classici: gli epatociti apoptotici nell'epatite virale e i cheratinociti apoptotici nell'eritema multiforme.<!--c:apoptosis-c041--> Il virus della febbre gialla spinge alcuni epatociti verso l'apoptosi: sono i **corpi di Councilman**, staccati dalle cellule epatiche circostanti e con citoplasma intensamente eosinofilo.<!--c:apoptosis-c042-->
+- Le cellule che muoiono **non provocano**, di per sé, **infiammazione**.<!--c:apoptosis-c040-->
+- Esempi classici: gli epatociti apoptotici nell'epatite virale e i cheratinociti apoptotici nell'eritema multiforme.<!--c:apoptosis-c041--> I corpi acidofili **non sono specifici** dell'epatite virale: si ritrovano anche in molte altre epatopatie.<!--c:apoptosis-c075--> Il virus della febbre gialla spinge alcuni epatociti verso l'apoptosi: sono i **corpi di Councilman**, staccati dalle cellule epatiche circostanti e con citoplasma intensamente eosinofilo.<!--c:apoptosis-c042--> Nel lichen planus i cheratinociti apoptotici formano **corpi colloidi (di Civatte)**, rotondi ed eosinofili, frammisti all'infiltrato infiammatorio della giunzione dermo-epidermica.<!--c:apoptosis-c076-->
+- I **macrofagi a corpi tingibili** sono macrofagi carichi di detriti nucleari fagocitati e costituiscono un reperto normale nei centri germinativi.<!--c:apoptosis-c077--> Il linfoma di Burkitt ha un aspetto a **cielo stellato**: tra le distese di cellule tumorali in rapida proliferazione (il cielo) spiccano, come stelle, i macrofagi che hanno fagocitato cellule tumorali apoptotiche.<!--c:apoptosis-c078-->
 
 ## Colorazioni speciali, IIC e reperti molecolari
 
 - Caratteristiche molecolari distintive: rilascio del citocromo c, attivazione della caspasi-3, frammentazione del DNA da parte di CAD e fosfatidilserina sulla superficie esterna della membrana.<!--c:apoptosis-c043-->
 - Le caspasi effettrici tagliano le lamine nucleari, l'α-fodrina del citoscheletro e PARP.<!--c:apoptosis-c044-->
+
+**Come si studia:**
+
+- **Prelievo e campionamento:** l'apoptosi colpisce singole cellule sparse, quindi non c'è una lesione macroscopica da campionare; è un reperto microscopico delle comuni sezioni istologiche, per esempio del fegato nell'epatite virale acuta o di una biopsia cutanea nell'eritema multiforme.<!--c:apoptosis-c079-->
+- **EE:** si cercano, tra cellule sane, cellule isolate e raggrinzite, con citoplasma denso ed eosinofilo e nucleo scuro, condensato o frammentato; le cellule che muoiono non richiamano neutrofili, ma se la causa è immunitaria, come nell'epatite virale o nell'eritema multiforme, sono presenti linfociti.<!--c:apoptosis-c080--> L'EE coglie solo le fasi tardive e, poiché i frammenti vengono fagocitati in fretta, una quota consistente di apoptosi può passare inosservata.<!--c:apoptosis-c081-->
+- **Immunoistochimica:** gli anticorpi contro la caspasi-3 clivata (attiva), o contro substrati delle caspasi in forma clivata come PARP, marcano le cellule apoptotiche nella sezione.<!--c:apoptosis-c082-->
+- **TUNEL:** l'enzima desossinucleotidil-transferasi terminale (TdT) aggiunge nucleotidi marcati alle estremità 3′ libere del DNA frammentato; con una rivelazione alla perossidasi i nuclei apoptotici si colorano in bruno nella sezione.<!--c:apoptosis-c083-->
+- La **microscopia elettronica** è il metodo di riferimento, anche se esamina solo un minuscolo frammento di tessuto: mostra che la membrana plasmatica della cellula apoptotica resta integra, che la cromatina è compattata in dense semilune addossate all'involucro nucleare e che i corpi apoptotici conservano organelli riconoscibili, alcuni già all'interno dei fagociti.<!--c:apoptosis-c084-->
+- **Esami sul DNA e sulle cellule:** all'elettroforesi su gel di agarosio il DNA delle cellule apoptotiche forma una «scala» di frammenti distanziati di circa 180 paia di basi.<!--c:apoptosis-c085--> L'annessina V si lega alla fosfatidilserina esposta, mentre un colorante che entra solo nelle cellule con membrana danneggiata, come lo ioduro di propidio, distingue le cellule necrotiche.<!--c:apoptosis-c086-->
 
 ## Presentazione clinica
 
@@ -64,7 +74,7 @@ Non applicabile.
 
 - **Neoplasie:** la perdita di p53 permette alle mutazioni di accumularsi, e la sovraespressione di Bcl-2 si riscontra in alcuni linfomi aggressivi.<!--c:apoptosis-c045--> Nel linfoma follicolare una traslocazione pone Bcl-2 sotto il controllo del promotore della catena pesante delle immunoglobuline, per cui i linfociti B sopravvivono e si accumulano.<!--c:apoptosis-c046-->
 - **Infezioni virali persistenti e oncogenesi:** molti virus bloccano l'apoptosi; il papillomavirus umano inattiva p53.<!--c:apoptosis-c047-->
-- **Autoimmunità:** mancata eliminazione dei cloni linfocitari autoreattivi.<!--c:apoptosis-c048-->
+- **Autoimmunità:** mancata eliminazione dei cloni linfocitari autoreattivi.<!--c:apoptosis-c048--> Nel lupus eritematoso sistemico le cellule morenti vengono rimosse male e i detriti apoptotici si accumulano; i recettori Toll-like delle cellule dendritiche e dei linfociti B autoreattivi riconoscono allora il loro materiale nucleare (DNA legato agli istoni, RNA legato a proteine), soprattutto quando vi si sono legati gli autoanticorpi, e ciò alimenta la risposta autoimmune.<!--c:apoptosis-c087-->
 - **Leucemia mieloide cronica:** una lesione genetica antiapoptotica fa accumulare i granulociti.<!--c:apoptosis-c049-->
 
 **Apoptosi eccessiva**
@@ -100,6 +110,7 @@ Non applicabile.
 - **tBid** collega la via estrinseca a quella intrinseca.<!--c:apoptosis-c063-->
 - **p53** avvia l'apoptosi dopo un danno irreparabile al DNA tramite **PUMA, NOXA** e Bax.<!--c:apoptosis-c064-->
 - La **fosfatidilserina** traslocata sulla superficie cellulare è un segnale **«mangiami»** per l'efferocitosi.<!--c:apoptosis-c065-->
+- Oltre all'EE, l'apoptosi si dimostra con l'immunoistochimica per la **caspasi-3 clivata**, con la **TUNEL** e con la **microscopia elettronica** (il metodo di riferimento), meglio se combinando due metodi.<!--c:apoptosis-c088-->
 
 ## Errori comuni e trappole d'esame
 
@@ -109,6 +120,7 @@ Non applicabile.
 - Il TNFα non sempre uccide: attraverso NFκB e PI3K può anche trasmettere segnali di sopravvivenza.<!--c:apoptosis-c069-->
 - Non tutta la morte programmata è apoptosi: necroptosi e piroptosi sono programmate, ma litiche e infiammatorie.<!--c:apoptosis-c070-->
 - AIF e i granzimi possono frammentare il DNA anche senza l'intervento delle caspasi.<!--c:apoptosis-c071-->
+- Una TUNEL o un test all'annessina V positivi non bastano, da soli, a dimostrare l'apoptosi: la TUNEL marca anche cellule necrotiche o impegnate a riparare il DNA, e l'annessina V lega anche le cellule necrotiche; serve la conferma della morfologia o di un secondo metodo.<!--c:apoptosis-c089-->
 
 ## Mnemotecniche
 

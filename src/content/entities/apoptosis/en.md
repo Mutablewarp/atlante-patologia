@@ -49,13 +49,23 @@ Not applicable.
 - **Nucleus:** chromatin condenses (pyknosis) and the nucleus fragments (karyorrhexis), inside an intact cell membrane.<!--c:apoptosis-c038-->
 - **Cell body:** the apoptotic cell shrinks, but its plasma membrane stays intact.<!--c:apoptosis-c073--> Its cytoplasm can turn eosinophilic on H&E, as in the apoptotic keratinocytes of erythema multiforme; the acidophilic bodies of viral hepatitis are apoptotic hepatocytes with intensely eosinophilic cytoplasm.<!--c:apoptosis-c074-->
 - **Cytoplasm and membrane:** organelles segregate, the plasma membrane forms blebs, and the cell splits into membrane-bound apoptotic bodies, many without nuclear material.<!--c:apoptosis-c039-->
-- **No inflammatory infiltrate** around the dying cells.<!--c:apoptosis-c040-->
-- Classic examples: apoptotic hepatocytes in viral hepatitis and apoptotic keratinocytes in erythema multiforme.<!--c:apoptosis-c041--> Yellow fever virus pushes some hepatocytes into apoptosis, and these are the **Councilman bodies**: separated from the surrounding liver cells, with intensely eosinophilic cytoplasm.<!--c:apoptosis-c042-->
+- The dying cells themselves **provoke no inflammation**.<!--c:apoptosis-c040-->
+- Classic examples: apoptotic hepatocytes in viral hepatitis and apoptotic keratinocytes in erythema multiforme.<!--c:apoptosis-c041--> Acidophilic bodies are **not specific** to viral hepatitis: many other liver diseases produce them as well.<!--c:apoptosis-c075--> Yellow fever virus pushes some hepatocytes into apoptosis, and these are the **Councilman bodies**: separated from the surrounding liver cells, with intensely eosinophilic cytoplasm.<!--c:apoptosis-c042--> In lichen planus, apoptotic keratinocytes form round, eosinophilic **colloid (Civatte) bodies**, mixed with the inflammatory infiltrate at the dermal–epidermal junction.<!--c:apoptosis-c076-->
+- **Tingible body macrophages** are macrophages packed with engulfed nuclear debris; they are a normal finding in germinal centers.<!--c:apoptosis-c077--> Burkitt lymphoma has a **starry-sky** pattern: among sheets of fast-dividing tumor cells (the sky), macrophages that have engulfed apoptotic tumor cells stand out as the stars.<!--c:apoptosis-c078-->
 
 ## Special stains, IHC and molecular findings
 
 - Molecular hallmarks: cytochrome c release, caspase-3 activation, DNA fragmentation by CAD, and phosphatidylserine on the outer membrane surface.<!--c:apoptosis-c043-->
 - Executioner caspases cleave nuclear lamins, cytoskeletal α-fodrin and PARP.<!--c:apoptosis-c044-->
+
+**How it is studied:**
+
+- **Specimen and sampling:** apoptosis strikes scattered single cells, so there is no gross lesion to sample; it is a microscopic finding in ordinary sections, such as liver tissue in acute viral hepatitis or a skin biopsy in erythema multiforme.<!--c:apoptosis-c079-->
+- **H&E:** look for isolated shrunken cells with dense eosinophilic cytoplasm and a dark, condensed or fragmented nucleus among healthy cells; the dying cells themselves attract no neutrophils, but lymphocytes are present when the cause is immune-mediated, as in viral hepatitis or erythema multiforme.<!--c:apoptosis-c080--> H&E catches only the late stages, and because the fragments are engulfed fast, a good deal of apoptosis can pass unseen.<!--c:apoptosis-c081-->
+- **Immunohistochemistry:** antibodies to cleaved (active) caspase-3, or to cleaved caspase substrates such as PARP, label apoptotic cells in the section.<!--c:apoptosis-c082-->
+- **TUNEL:** the enzyme terminal deoxynucleotidyl transferase (TdT) adds labeled nucleotides to the free 3′ ends of broken DNA; with a peroxidase detection step, apoptotic nuclei turn brown in the section.<!--c:apoptosis-c083-->
+- **Electron microscopy** is the reference standard, although it samples only a tiny piece of tissue: it shows that the apoptotic cell's plasma membrane stays intact, that its chromatin is packed into dense crescents against the nuclear envelope, and that the apoptotic bodies keep recognizable organelles, some of them already inside phagocytes.<!--c:apoptosis-c084-->
+- **Tests on DNA and cells:** on agarose gel electrophoresis, DNA from apoptotic cells forms a ladder of fragments roughly 180 base pairs apart.<!--c:apoptosis-c085--> Annexin V binds the exposed phosphatidylserine, while a dye that enters only cells with leaky membranes, such as propidium iodide, sets necrotic cells apart.<!--c:apoptosis-c086-->
 
 ## Clinical presentation
 
@@ -63,7 +73,7 @@ Not applicable.
 
 - **Cancer:** loss of p53 lets mutations accumulate, and Bcl-2 overexpression is found in some aggressive lymphomas.<!--c:apoptosis-c045--> In follicular lymphoma a translocation puts Bcl-2 under the immunoglobulin heavy-chain promoter, so B cells survive and accumulate.<!--c:apoptosis-c046-->
 - **Persistent viral infection and oncogenesis:** many viruses block apoptosis; human papillomavirus inactivates p53.<!--c:apoptosis-c047-->
-- **Autoimmunity:** failure to delete self-reactive lymphocyte clones.<!--c:apoptosis-c048-->
+- **Autoimmunity:** failure to delete self-reactive lymphocyte clones.<!--c:apoptosis-c048--> In systemic lupus erythematosus, dying cells are cleared poorly and apoptotic debris builds up; Toll-like receptors in dendritic cells and autoreactive B cells then sense its nuclear material (DNA with histones, RNA with proteins), above all once autoantibodies have bound it, and this feeds the autoimmune response.<!--c:apoptosis-c087-->
 - **Chronic myeloid leukemia:** an anti-apoptotic genetic lesion lets granulocytes pile up.<!--c:apoptosis-c049-->
 
 **Too much apoptosis**
@@ -99,6 +109,7 @@ Not applicable.
 - **tBid** links the extrinsic to the intrinsic pathway.<!--c:apoptosis-c063-->
 - **p53** triggers apoptosis after irreparable DNA damage through **PUMA, NOXA** and Bax.<!--c:apoptosis-c064-->
 - **Phosphatidylserine** flipped to the cell surface is an **"eat me"** signal for efferocytosis.<!--c:apoptosis-c065-->
+- Beyond H&E, apoptosis is shown with **cleaved caspase-3** IHC, **TUNEL** and **electron microscopy** (the reference standard), ideally combining two methods.<!--c:apoptosis-c088-->
 
 ## Common misconceptions and exam traps
 
@@ -108,6 +119,7 @@ Not applicable.
 - TNFα does not always kill: through NFκB and PI3K it can also deliver survival signals.<!--c:apoptosis-c069-->
 - Not all programmed death is apoptosis: necroptosis and pyroptosis are programmed yet lytic and inflammatory.<!--c:apoptosis-c070-->
 - AIF and granzymes can drive DNA fragmentation without caspases.<!--c:apoptosis-c071-->
+- A positive TUNEL or annexin V test does not prove apoptosis on its own: TUNEL also labels necrotic cells and cells repairing DNA, and annexin V also binds necrotic cells, so morphology or a second method must confirm it.<!--c:apoptosis-c089-->
 
 ## Mnemonics
 

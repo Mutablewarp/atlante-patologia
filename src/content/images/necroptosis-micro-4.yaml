@@ -1,0 +1,110 @@
+# License check (2026-11-08): taken from the article itself, not from Wikimedia Commons. The PMC full text
+# (PMC8688721, PMID 34700031) states "This is an open access article under the CC BY license
+# (http://creativecommons.org/licenses/by/4.0/)", © 2021 The Authors; Crossref lists the version-of-record licence as
+# http://creativecommons.org/licenses/by/4.0/ and Europe PMC gives "cc by". The Figure 2 legend has no "reproduced",
+# "adapted" or "with permission" note: the panels are the authors' own data. Allowed under COMPLIANCE_PLAN §4 (PubMed
+# Central figure in an article with an explicit CC BY licence). Organoids grown from donor liver tissue (the article
+# states ethics approval and informed consent); nothing in the image can identify a person.
+# Facts in the caption come from the article: T = TNF-α 20 ng/mL, S = Smac mimetic (an antagonist of inhibitor of
+# apoptosis proteins), Z = the pan-caspase inhibitor Z-VAD-FMK; real-time imaging with propidium iodide; T/S organoids
+# shed cells and took up little PI, T/S/Z organoids took up PI strongly; pMLKL appeared in T/S/Z organoids and Nec-1
+# removed it (Fig. 3G–H). Panel I of the same figure (TEM) is necroptosis-micro-5.
+id: necroptosis-micro-4
+file: necroptosis-micro-4.jpg
+kind: micro
+sourceUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC8688721/figure/fig2/
+author: >-
+  Shaojun Shi, Monique M.A. Verstegen, Henk P. Roest, Arif I. Ardisasmita, Wanlu Cao, Floris J.M. Roos, Petra E. de
+  Ruiter, Marije Niemeijer, Qiuwei Pan, Jan N.M. IJzermans, Luc J.W. van der Laan
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-11-08
+modifications:
+  it: >-
+    Ritaglio del pannello D dalla Figura 2 ad alta risoluzione dell'editore (2976 × 4151 px,
+    https://ars.els-cdn.com/content/image/1-s2.0-S2352345X2100223X-gr2_lrg.jpg), alla risoluzione nativa (pixel x
+    938–1837, y 905–1583: 900 × 679 px); restano fuori la lettera del pannello, il titolo «Incubation time (hours)» e i
+    pannelli A–C ed E–I. Salvato in JPEG (qualità 88), metadati rimossi. Le etichette delle righe, le ore e il segnale
+    rosso dello ioduro di propidio fanno parte della figura pubblicata.
+  en: >-
+    Cropped to panel D of the publisher's high-resolution Figure 2 (2976 × 4151 px,
+    https://ars.els-cdn.com/content/image/1-s2.0-S2352345X2100223X-gr2_lrg.jpg) at native resolution (pixels x
+    938–1837, y 905–1583: 900 × 679 px); the panel letter, the heading "Incubation time (hours)" and panels A–C and E–I
+    are left out. Saved as JPEG (quality 88), metadata stripped. The row labels, the hour labels and the red propidium
+    iodide signal belong to the published figure.
+attributionText: >-
+  Shi S, Verstegen MMA, Roest HP et al., "Recapitulating Cholangiopathy-Associated Necroptotic Cell Death In Vitro
+  Using Human Cholangiocyte Organoids", Cell Mol Gastroenterol Hepatol 2022;13(2):541–564,
+  doi:10.1016/j.jcmgh.2021.10.009, Figure 2D (cropped), CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+group: necroptosis-cholangiocyte-organoids
+stain: none (bright-field live imaging) with propidium iodide fluorescence (red)
+magnification: low power (whole organoids; the source gives no objective or scale bar for this panel)
+orientation:
+  it: "Colonne: ore di incubazione (0, 3, 6, 12). Righe: controllo (CTR), TNF-α + Smac-mimetico (T/S), T/S + zVAD-fmk (T/S/Z)."
+  en: "Columns: hours of incubation (0, 3, 6, 12). Rows: control (CTR), TNF-α + Smac mimetic (T/S), T/S + zVAD-fmk (T/S/Z)."
+lookFor:
+  it: "Segui la riga T/S/Z da sinistra a destra: il rosso compare già a 3 ore; poi confrontala con la riga T/S, che resta quasi senza rosso."
+  en: "Follow the T/S/Z row from left to right: red appears by 3 hours; then compare it with the T/S row, which stays almost free of red."
+caption:
+  it: >-
+    La necroptosi è una morte «litica», e questa sequenza lo mostra. Organoidi di colangiociti intraepatici umani
+    (l'epitelio dei dotti biliari, coltivato da fegato di donatore) sono stati ripresi da vivi a 0, 3, 6 e 12 ore, con
+    ioduro di propidio nel terreno: è un colorante rosso del DNA che entra solo nelle cellule la cui membrana plasmatica
+    è diventata permeabile. Leggi una riga per volta. CTR, nessun trattamento: l'organoide resta una grande sfera liscia,
+    senza rosso. T/S, TNF-α più uno Smac-mimetico (toglie il freno delle proteine IAP alla segnalazione di morte):
+    l'organoide si rimpicciolisce e perde cellule, ma a 12 ore il rosso è quasi assente; le cellule muoiono per
+    apoptosi e mantengono integra la membrana. T/S/Z, lo stesso più zVAD-fmk, un inibitore di tutte le caspasi:
+    anche qui l'organoide si riduce, ma i primi punti rossi compaiono già a 3 ore e a 6–12 ore il rosso lo riempie,
+    segno che le membrane sono state forate. Perché il terzo farmaco cambia il tipo di morte: con le caspasi bloccate,
+    la caspasi-8 non può più tagliare RIPK1; RIPK1 e RIPK3 formano allora il necrosoma, che attiva MLKL, e MLKL apre la
+    membrana. Nello studio originale gli organoidi T/S/Z contenevano MLKL fosforilata, che scompariva aggiungendo la
+    necrostatina-1, un inibitore di RIPK1. Da ricordare: bloccare le caspasi non salva la cellula, le fa solo cambiare
+    uscita, verso una morte con membrana rotta e quindi infiammatoria. Attenzione: sono organoidi in coltura, non una
+    sezione di tessuto.
+  en: >-
+    Necroptosis is a lytic death, and this time series shows it. Organoids of human intrahepatic cholangiocytes
+    (bile-duct epithelium grown from donor liver) were imaged alive at 0, 3, 6 and 12 hours with propidium iodide in
+    the medium: a red DNA dye that enters only cells whose plasma membrane has become leaky. Read one row at a time.
+    CTR, untreated: the organoid stays a large, smooth sphere with no red. T/S, TNF-α plus a Smac mimetic (which lifts
+    the brake that IAP proteins put on death signalling): the organoid shrinks and sheds cells, yet at 12 hours there
+    is hardly any red; the cells die by apoptosis and keep their membranes closed. T/S/Z, the same plus
+    zVAD-fmk, an inhibitor of all caspases: this organoid shrinks too, but the first red spots appear by 3 hours and by
+    6–12 hours red fills it, a sign that the membranes have been breached. Why the third drug changes the kind of
+    death: with caspases blocked, caspase-8 can no longer cut RIPK1, so RIPK1 and RIPK3 assemble the necrosome, which
+    activates MLKL, and MLKL opens the membrane. In the source study the T/S/Z organoids contained phosphorylated MLKL,
+    which disappeared with necrostatin-1, an inhibitor of RIPK1. Key point: blocking caspases does not save the cell, it
+    only sends it out by another exit, towards a death with a ruptured membrane and therefore an inflammatory one. Note
+    that these are organoids in culture, not a tissue section.
+alt:
+  it: >-
+    Griglia di 12 immagini in campo chiaro su fondo grigio, in tre righe etichettate CTR, T/S e T/S/Z e quattro colonne
+    etichettate 0, 3, 6 e 12. Nella riga CTR un grande organoide sferico e liscio resta uguale in tutte le colonne. Nella
+    riga T/S l'organoide si rimpicciolisce col tempo e a 12 ore è piccolo e irregolare, con sporgenze sulla superficie
+    e quasi senza rosso. Nella riga T/S/Z l'organoide si rimpicciolisce e da 3 ore contiene macchie rosse che a 12 ore
+    occupano gran parte del suo interno.
+  en: >-
+    Grid of 12 bright-field images on a grey background, in three rows labelled CTR, T/S and T/S/Z and four columns
+    labelled 0, 3, 6 and 12. In the CTR row a large, smooth, spherical organoid stays the same in every column. In the
+    T/S row the organoid shrinks over time and at 12 hours is small and irregular, with knobs on its surface and almost
+    no red. In the T/S/Z row the organoid shrinks and from 3 hours contains red patches that by 12 hours fill most of its
+    interior.
+annotations:
+  - id: control-12h
+    label: { it: "Controllo a 12 ore: organoide integro, nessun rosso", en: "Control at 12 h: intact organoid, no red" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.762, 0.062, 0.994, 0.062, 0.994, 0.370, 0.762, 0.370] }
+  - id: apoptosis-12h
+    label: { it: "T/S a 12 ore (apoptosi): organoide ridotto, quasi senza rosso", en: "T/S at 12 h (apoptosis): shrunken organoid, almost no red" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.762, 0.373, 0.994, 0.373, 0.994, 0.679, 0.762, 0.679] }
+  - id: necroptosis-3h
+    label: { it: "T/S/Z a 3 ore: compaiono già i primi punti rossi", en: "T/S/Z at 3 h: the first red spots already appear" }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.293, 0.682, 0.524, 0.682, 0.524, 0.990, 0.293, 0.990] }
+  - id: necroptosis-12h
+    label: { it: "T/S/Z a 12 ore (necroptosi): ioduro di propidio nelle cellule, membrane forate", en: "T/S/Z at 12 h (necroptosis): propidium iodide inside cells, membranes breached" }
+    revealOrder: 4
+    shape: { type: polygon, coords: [0.762, 0.682, 0.994, 0.682, 0.994, 0.990, 0.762, 0.990] }

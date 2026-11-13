@@ -31,6 +31,8 @@ learningObjectives:
     en: "Describe the action of Clostridium perfringens α toxin and why neutrophils are scarce in gas gangrene."
   - it: "Riconoscere l'aspetto dell'intestino infartuato e collegarlo all'occlusione arteriosa o venosa mesenterica."
     en: "Recognize the appearance of infarcted bowel and link it to mesenteric arterial or venous occlusion."
+  - it: "Descrivere come si studia la gangrena: quale materiale arriva al patologo, che cosa cercare all'EE e quando serve la colorazione di Gram."
+    en: "Describe how gangrene is studied: which specimen reaches the pathologist, what to look for on H&E and when the Gram stain helps."
 prerequisites: [coagulative-necrosis, liquefactive-necrosis]
 relations:
   - type: sharesMechanism
@@ -131,12 +133,44 @@ chain:
     lab:
       it: "Gas nella parete intestinale e nelle vene mesenteriche"
       en: "Gas in the bowel wall and mesenteric veins"
+examQuestions:
+  - it: "Mi parli della gangrena: che cosa significa questo termine e quali forme conosce?"
+    en: "Tell me about gangrene: what does the term mean, and which forms do you know?"
+    focus: [definition, high-yield]
+    level: 1
+  - it: "Che cosa vede a occhio nudo e al microscopio in una gangrena secca del piede?"
+    en: "What do you see with the naked eye and under the microscope in dry gangrene of the foot?"
+    focus: [gross, micro]
+    level: 1
+  - it: "Mi parli della gangrena gassosa: come nasce, che cosa trova nel tessuto e come evolve il quadro clinico?"
+    en: "Tell me about gas gangrene: how does it start, what do you find in the tissue, and how does the clinical picture evolve?"
+    focus: [pathogenesis, micro, clinical]
+    level: 2
+  - it: "Mi descriva un intestino infartuato: perché è un infarto rosso, mentre la gangrena secca di un arto è un infarto pallido? E come capisce se l'occlusione era arteriosa o venosa?"
+    en: "Describe an infarcted bowel: why is it a red infarct, whereas dry gangrene of a limb is a pale one? And how can you tell whether the occlusion was arterial or venous?"
+    focus: [gross, pathogenesis, traps]
+    level: 2
+  - it: "Come distingue al microscopio una gangrena umida da una gangrena gassosa, e quale colorazione la aiuta?"
+    en: "How do you tell wet gangrene from gas gangrene under the microscope, and which stain helps you?"
+    focus: [micro, ancillary, traps]
+    level: 3
+  - it: "Le arriva un piede amputato per gangrena: come lo studia e che cosa cerca nelle arterie per capirne la causa?"
+    en: "A foot amputated for gangrene reaches you: how do you study it, and what do you look for in its arteries to find the cause?"
+    focus: [ancillary, etiology]
+    level: 3
 images:
   - id: gangrene-clinical-1
     role: clinical
+  - id: gangrene-clinical-2
+    role: clinical
+  - id: gangrene-gross-1
+    role: gross
+    pairWith: gangrene-micro-1
   - id: gangrene-micro-1
     role: micro
   - id: gangrene-micro-2
+    role: micro
+  - id: gangrene-micro-4
     role: micro
 reviewStatus: ai-generated-unreviewed
 editionDependent: false
@@ -158,9 +192,14 @@ sources:
     pages: "539, 550"
   - source: rubin-8e
     chapter: "16"
-    pages: "606-607, 618, 622-623"
+    pages: "606-607, 618, 622-624"
   - source: rubin-8e
     chapter: "19"
     pages: "802-804"
-lastUpdated: 2026-11-03
+  - source: rubin-8e
+    chapter: "20"
+    pages: "897"
+  - source: al-wahbi-2018
+  - source: betrosian-2006
+lastUpdated: 2026-11-09
 status: published

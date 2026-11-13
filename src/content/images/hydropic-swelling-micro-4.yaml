@@ -1,0 +1,71 @@
+# License check (2026-11-08): Commons file page {{Information}} gives Source {{Institution: Calicut Medical College}},
+# Author "Department of Pathology, Calicut Medical College", Permission {{PermissionTicket|id=2014102010001497}}
+# confirmed by a Wikimedia VRT volunteer on 11 December 2014, license {{cc-by-sa-4.0}}; extmetadata LicenseShortName
+# "CC BY-SA 4.0", AttributionRequired true, no Restrictions. The uploader is not the creator, but the creator's own
+# permission is on file with the Wikimedia VRT. CC BY-SA is approved as a class by owner decision O7
+# (plan/v2-plan.md, 2026-11-03), hence ownerApproved: true. Histology only; nothing identifies the patient.
+# Group glycogenosis-liver-stains (see hydropic-swelling-micro-2 for the grouping and the missing magnification).
+# This field looks lower-powered than the H&E and PAS members (smaller cells, the edge of the core in view); the
+# source states no magnification, so the caption says "apparently". The band of connective tissue is read by
+# inspection.
+id: hydropic-swelling-micro-4
+file: hydropic-swelling-micro-4.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Glycogen_storage_disorder_(PAS_with_diastase).jpg
+author: Department of Pathology, Calicut Medical College
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+retrievedAt: 2026-11-08
+modifications: none
+attributionText: >-
+  Department of Pathology, Calicut Medical College, "Glycogen storage disorder (PAS with diastase)", via Wikimedia
+  Commons, CC BY-SA 4.0
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+group: glycogenosis-liver-stains
+stain: "PAS with diastase (PAS-D)"
+orientation:
+  it: "Il margine del frustolo bioptico corre lungo il lato destro; una banda di connettivo attraversa la metà inferiore."
+  en: "The edge of the biopsy core runs along the right side; a band of connective tissue crosses the lower half."
+lookFor:
+  it: "Cerca il magenta dentro gli epatociti: è sparito; restano colorati solo i contorni e il connettivo."
+  en: "Look for magenta inside the hepatocytes: it has gone; only the outlines and the connective tissue keep it."
+caption:
+  it: >-
+    Stessa serie didattica, PAS dopo digestione con diastasi (PAS-D). Prima della reazione PAS la sezione viene
+    trattata con la diastasi, un enzima che digerisce il glicogeno. Il magenta è scomparso dagli epatociti: il loro
+    citoplasma è di nuovo chiaro, lilla pallido, come in EE. Conservano un colore rosa-viola solo i sottili contorni
+    cellulari e la banda di connettivo con piccoli vasi che attraversa la metà inferiore: la diastasi toglie il
+    glicogeno ma non le altre sostanze PAS positive, quindi ciò che resta colorato non è glicogeno. Conclusione: PAS
+    positivo e sensibile alla diastasi significa glicogeno, dunque queste cellule erano rigonfie di glicogeno
+    accumulato, non di acqua. È il controllo da fare ogni volta che epatociti chiari e rigonfi in EE fanno pensare a
+    un rigonfiamento idropico. Attenzione: questa foto mostra un altro campo, a quanto pare a un ingrandimento minore,
+    quindi confronta il colore, non le dimensioni delle cellule.
+  en: >-
+    The same teaching set, PAS after diastase digestion (PAS-D). Before the PAS reaction the section is treated with
+    diastase, an enzyme that digests glycogen. The magenta has gone from the hepatocytes: their cytoplasm is pale
+    lilac and clear again, as on H&E. Only the thin cell outlines and the band of connective tissue with small vessels
+    crossing the lower half keep a pink-purple colour: diastase removes glycogen but not the other PAS-positive
+    substances, so whatever stays coloured is not glycogen. Conclusion: PAS-positive and diastase-sensitive means
+    glycogen, so these cells were swollen by stored glycogen, not by water. This is the check to run whenever pale,
+    swollen hepatocytes on H&E make you think of hydropic swelling. Pitfall: this photograph shows another field,
+    apparently at a lower magnification, so compare the colour, not the size of the cells.
+alt:
+  it: >-
+    Micrografia di fegato colorata con PAS dopo diastasi, a ingrandimento minore: epatociti lilla pallido con
+    citoplasma chiaro e sottili contorni magenta occupano quasi tutto il campo; nella metà inferiore una banda di
+    connettivo viola-magenta con fessure bianche allungate; lungo il lato destro il margine del frustolo bioptico.
+  en: >-
+    PAS-D-stained micrograph of liver at a lower power: pale lilac hepatocytes with clear cytoplasm and thin magenta
+    outlines fill most of the field; across the lower half a band of magenta-purple connective tissue with elongated
+    white clefts; the edge of the biopsy core runs along the right side.
+annotations:
+  - id: colour-lost
+    label: { it: "Epatociti dopo diastasi: il magenta è scomparso", en: "Hepatocytes after diastase: the magenta has gone" }
+    revealOrder: 1
+    shape: { type: rect, coords: [0.117, 0.091, 0.352, 0.339] }
+  - id: connective-tissue
+    label: { it: "Connettivo ancora colorato: non è glicogeno", en: "Connective tissue still coloured: not glycogen" }
+    revealOrder: 2
+    shape: { type: rect, coords: [0.352, 0.677, 0.39, 0.254] }

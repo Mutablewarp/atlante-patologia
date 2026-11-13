@@ -1,0 +1,88 @@
+# License check (2026-11-08): Commons file page {{Information}} gives Source {{Institution: Calicut Medical College}},
+# Author "Department of Pathology, Calicut Medical College", Permission {{PermissionTicket|id=2014102010001497}}
+# confirmed by a Wikimedia VRT volunteer on 11 December 2014, license {{cc-by-sa-4.0}}; extmetadata LicenseShortName
+# "CC BY-SA 4.0", AttributionRequired true, no Restrictions. The uploader is not the creator, but the creator's own
+# permission is on file with the Wikimedia VRT (same ticket and same release as coagulative-necrosis-micro-3), which
+# answers the objection raised in the 2026-10-10 MISSING_ASSETS row. CC BY-SA is approved as a class by owner decision
+# O7 (plan/v2-plan.md, 2026-11-03), hence ownerApproved: true. Histology only; nothing identifies the patient. The
+# source labels the image "20X" without saying whether that is the objective, so `objective` is left out; no `section`
+# because the field holds cells cut lengthwise and across. The partner files of the set (4x, 10X, 40X) were inspected
+# and not used (see the hypertrophy-images notes fragment). The caption's statements on pregnancy rest on the source
+# description and on rubin-8e ch. 1 pp. 21-22 (hormone-responsive organs hypertrophy when their hormones rise), 24
+# (net gain of protein) and 25 (hypertrophy can coexist with hyperplasia); the uterus itself is not discussed on those
+# pages. Annotations placed by inspection.
+id: hypertrophy-micro-4
+file: hypertrophy-micro-4.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Physiological_hypertrophy_of_uterus_during_pregnancy_20X.jpg
+author: Department of Pathology, Calicut Medical College
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+retrievedAt: 2026-11-08
+modifications: none
+attributionText: >-
+  Department of Pathology, Calicut Medical College, "Physiological hypertrophy of uterus during pregnancy 20X", via
+  Wikimedia Commons, CC BY-SA 4.0
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+stain: H&E
+magnification: intermediate power (20X in the source)
+lookFor:
+  it: "Guarda quanto citoplasma rosa circonda ogni nucleo e quanto sono distanziati i nuclei: più citoplasma vuol dire una cellula più grande."
+  en: "See how much pink cytoplasm surrounds each nucleus and how far apart the nuclei lie: more cytoplasm means a bigger cell."
+caption:
+  it: >-
+    Miometrio di un utero gravidico, ematossilina-eosina a medio ingrandimento (20X secondo la fonte): ipertrofia
+    fisiologica della muscolatura liscia. Quasi tutto il campo è occupato da un fascio di cellule muscolari lisce
+    tagliate per il lungo, che corre in diagonale dal basso a sinistra all'alto a destra. Guarda una cellula sola: è
+    un fuso lungo e largo, con abbondante citoplasma rosa e un solo nucleo ovale, e i nuclei vicini sono ben
+    distanziati perché ogni cellula è cresciuta; secondo la descrizione della fonte, nel miometrio non gravidico le
+    cellule sono fusate ma più piccole. Qua e là un tessuto connettivo lasso e pallido separa le cellule e divide
+    questo fascio da un altro, in basso a destra, le cui cellule sono tagliate trasversalmente. Qui lo stimolo non è
+    una malattia ma la normale spinta ormonale della gravidanza: cellule sensibili agli ormoni sintetizzano più
+    proteine e si ingrandiscono. È un'ipertrofia fisiologica, da confrontare con le ipertrofie cardiache patologiche
+    delle altre immagini di questa scheda. In gravidanza il miometrio si arricchisce anche di cellule nuove:
+    ipertrofia e iperplasia procedono insieme. Attenzione: in basso a destra le cellule sembrano piccoli profili rotondi o poligonali solo
+    perché sono tagliate di traverso; confronta le dimensioni solo tra cellule tagliate nello stesso piano, e
+    idealmente con un miometrio non gravidico allo stesso ingrandimento.
+  en: >-
+    Myometrium of a pregnant uterus, H&E at intermediate power (20X in the source): physiologic hypertrophy of smooth
+    muscle. Most of the field is taken up by a bundle of smooth muscle cells cut lengthwise, running diagonally from the
+    lower left to the upper right. Look at a single cell: it is a long, broad spindle with abundant pink cytoplasm and
+    one oval nucleus, and neighbouring nuclei lie well apart because each cell has grown; according to the source's
+    description, the cells of non-pregnant myometrium are spindles too, but smaller. Here and there pale, loose
+    connective tissue separates the cells and divides this bundle from another one, at the lower right, whose cells
+    are cut across. The stimulus here is not disease but the normal hormonal drive of pregnancy: hormone-responsive
+    cells make more protein and grow. This is physiologic hypertrophy; compare it with the pathologic cardiac
+    hypertrophy in the other images on this card. In pregnancy the myometrium also adds new cells, so hypertrophy and
+    hyperplasia go together. Pitfall: at the lower right the cells look like small round or polygonal profiles only
+    because they are cut across; compare size only between cells cut in the same plane, ideally against non-pregnant
+    myometrium at the same magnification.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina, in rosa e viola intensi. Una larga fascia di cellule rosa lunghe e voluminose,
+    con nuclei viola ovali, attraversa il campo in diagonale dal basso a sinistra all'alto a destra, con spazi pallidi e
+    schiumosi tra alcune cellule; in alto a sinistra e lungo il margine in basso a destra c'è tessuto lasso più chiaro,
+    e nell'angolo in basso a destra le cellule appaiono come profili rosa rotondeggianti. Una sottile cornice nera
+    circonda l'immagine.
+  en: >-
+    H&E micrograph in strong pink and purple. A broad band of long, plump pink cells with oval purple nuclei crosses the
+    field diagonally from the lower left to the upper right, with pale, frothy spaces between some cells; at the top
+    left and along the lower right edge lies paler loose tissue, and in the lower right corner the cells appear as
+    rounded pink profiles. A thin black frame surrounds the picture.
+annotations:
+  - id: lengthwise-smooth-muscle
+    label: { it: "Cellule muscolari lisce ipertrofiche tagliate per il lungo: fusi lunghi e larghi, con molto citoplasma", en: "Hypertrophied smooth muscle cells cut lengthwise: long, broad spindles with abundant cytoplasm" }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.02, 0.33, 0.20, 0.20, 0.45, 0.10, 0.75, 0.04, 0.97, 0.04, 0.97, 0.30, 0.80, 0.44, 0.62, 0.62, 0.45, 0.80, 0.25, 0.88, 0.05, 0.90, 0.02, 0.80]
+  - id: cross-cut-smooth-muscle
+    label: { it: "Cellule dello stesso tipo tagliate di traverso: profili rotondeggianti", en: "Cells of the same kind cut across: rounded profiles" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.75, 0.62, 0.99, 0.45, 0.99, 0.99, 0.66, 0.99] }
+  - id: loose-connective-tissue
+    label: { it: "Tessuto connettivo lasso tra i fasci", en: "Loose connective tissue between the bundles" }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.58, 0.82, 0.66, 0.70, 0.80, 0.52, 0.98, 0.36, 0.99, 0.44, 0.84, 0.58, 0.70, 0.76, 0.63, 0.88] }

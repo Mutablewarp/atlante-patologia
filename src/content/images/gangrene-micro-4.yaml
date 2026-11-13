@@ -1,0 +1,82 @@
+# License check (2026-11-07): Commons file page {{Information}} gives Source {{Own}}, Author {{Mikael Häggström|
+# cat=Micrographs|consent=noid}} (the template states that the media and case data carry no identifiable features),
+# license {{cc-zero}}; extmetadata LicenseShortName "CC0", no Restrictions. Uploaded by the author himself on
+# 2024-06-14, so creator and uploader are the same person. Histology only; nothing identifies the patient. Re-checked
+# 2026-11-08: licence and author unchanged on the file page. The published file carries EXIF and XMP blocks (camera
+# maker, capture time and an unexplained six-digit number in the creator field); we dropped both blocks losslessly
+# (APP1 segments removed, decoded pixels identical to the Commons original). The source gives no magnification:
+# "medium power" is our estimate from the size of the red cells and fat cells.
+id: gangrene-micro-4
+file: gangrene-micro-4.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Histopathology_of_ischemic_necrotic_gangrene_with_neutrophils,_present_at_inked_soft_tissue_margin.jpg
+author: Mikael Häggström, M.D.
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-11-07
+modifications:
+  it: >-
+    Rimossi i metadati incorporati nel file (EXIF e XMP); i pixel sono identici all'originale: nessun ritaglio,
+    nessun ridimensionamento, nessuna modifica dei colori.
+  en: >-
+    Embedded file metadata (EXIF and XMP) removed; the pixels are identical to the original: no crop, no resize, no
+    colour change.
+attributionText: "Mikael Häggström, M.D., via Wikimedia Commons, CC0 1.0 (public domain dedication)"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+stain: H&E
+magnification: medium power (not stated by the source)
+orientation:
+  it: "L'inchiostro blu-verde in basso segna il margine chirurgico; gli adipociti sono in alto a destra."
+  en: "The blue-green ink at the bottom marks the surgical margin; the fat cells are at the top right."
+lookFor:
+  it: "Trova prima l'inchiostro blu-verde, che segna dove il chirurgo ha tagliato; poi controlla se il tessuto subito sopra è vivo."
+  en: "Find the blue-green ink first: it marks where the surgeon cut. Then check whether the tissue just above it is alive."
+caption:
+  it: >-
+    Tessuti molli al margine di resezione di un dito del piede amputato per gangrena ischemica, EE (la fonte non
+    indica l'ingrandimento; medio ingrandimento). Prima orientati: l'inchiostro blu-verde lungo il bordo inferiore
+    segna il margine chirurgico, cioè il piano in cui il chirurgo ha tagliato, e gli spazi vuoti e rotondi in alto a
+    destra sono adipociti. Poi osserva il tessuto sopra l'inchiostro. Al centro del campo piccoli nuclei scuri, molti
+    lobati o spezzettati, sono sparsi tra il collagene rosa: sono neutrofili, in parte in disfacimento, insieme a
+    detriti nucleari. In basso a destra, subito sopra l'inchiostro, il tessuto è pallido, dall'aspetto sfumato e quasi
+    privo di nuclei: è morto. La diagnosi della fonte riassume il quadro: necrosi ischemica con neutrofili, presente
+    al margine. I neutrofili viaggiano nel sangue, perciò si raccolgono dove il tessuto morto confina con quello
+    ancora irrorato; se anche i batteri colonizzano il tessuto necrotico, gli enzimi dei neutrofili lo digeriscono e
+    la gangrena secca diventa umida. Trovare necrosi sul margine inchiostrato dice inoltre al chirurgo che il taglio
+    non è passato interamente in tessuto vivo. Le emazie sotto l'inchiostro si trovano al di fuori del tessuto.
+  en: >-
+    Soft tissue at the cut edge of a toe amputated for ischemic gangrene, H&E (the source gives no magnification;
+    medium power). Orient yourself first: the blue-green ink along the bottom edge marks the surgical margin, the
+    plane where the surgeon cut, and the round empty spaces at the top right are fat cells. Then look at the tissue
+    above the ink. In the middle of the field, small dark nuclei, many of them lobed or broken up, are scattered
+    through pink collagen: these are neutrophils, some of them falling apart, mixed with nuclear debris. At the lower
+    right, just above the ink, the tissue is pale, smudgy and almost without nuclei: it is dead. The source's
+    diagnosis sums it up: ischemic necrosis with neutrophils, present at the margin. Neutrophils travel in the blood,
+    so they collect where dead tissue borders tissue that is still perfused; if bacteria colonize the dead tissue as
+    well, the neutrophils' enzymes digest it and dry gangrene turns into wet gangrene. Finding necrosis at the inked
+    margin also tells the surgeon that the cut did not pass entirely through living tissue. The red cells below the
+    ink lie outside the tissue.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina di tessuti molli: collagene rosa con piccoli nuclei scuri sparsi al centro,
+    adipociti rotondi e vuoti in alto a destra, tessuto pallido con pochi nuclei in basso a destra, una linea di
+    inchiostro blu-verde lungo il bordo inferiore e globuli rossi sparsi al di sotto.
+  en: >-
+    H&E micrograph of soft tissue: pink collagen with small dark nuclei scattered in the middle, round empty fat cells
+    at the top right, pale tissue with few nuclei at the lower right, a blue-green ink line along the lower edge and
+    loose red blood cells below it.
+annotations:
+  - id: neutrophils
+    label: { it: "Neutrofili e frammenti nucleari nel tessuto morto", en: "Neutrophils and nuclear fragments in dead tissue" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.40, 0.24, 0.62, 0.24, 0.62, 0.50, 0.40, 0.50] }
+  - id: necrosis-at-margin
+    label: { it: "Tessuto morto quasi senza nuclei, fino al margine", en: "Dead tissue with almost no nuclei, up to the margin" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.58, 0.62, 0.92, 0.62, 0.92, 0.84, 0.75, 0.86, 0.58, 0.84] }
+  - id: margin-ink
+    label: { it: "Inchiostro blu-verde: margine chirurgico", en: "Blue-green ink: surgical margin" }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.26, 0.765, 0.30, 0.75, 0.385, 0.755, 0.395, 0.79, 0.35, 0.815, 0.27, 0.82] }

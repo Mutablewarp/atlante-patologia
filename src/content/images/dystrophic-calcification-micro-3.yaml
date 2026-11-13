@@ -1,0 +1,82 @@
+# License check (2026-11-07): same article and licence as dystrophic-calcification-gross-2 (Sumi et al., Thoracic
+# Cancer 2020, PMC7605996, CC BY 4.0 in the Europe PMC full text; the Figure 3 legend credits no third party). Histology
+# only; nothing identifies the patient. This panel (b, H&E) and panel (c, von Kossa, dystrophic-calcification-micro-4)
+# show the same nodule at the same whole-mount power, so the two share one group and the viewer offers a stain switch.
+# Facts in the caption checked against the article (Fig. 3 legend, case report) and rubin-8e ch. 22 p. 965 (calcium is
+# deep blue with haematoxylin, black with von Kossa).
+id: dystrophic-calcification-micro-3
+file: dystrophic-calcification-micro-3.jpg
+kind: micro
+sourceUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC7605996/figure/tca13663-fig-0003/
+author: >-
+  Toshiyuki Sumi, Hirofumi Uehara, Toshiaki Masaoka, Makoto Tada, Yoshiko Keira, Koki Kamada, Naoki Shijubou,
+  Yuichi Yamada, Hisashi Nakata, Yuji Mori, Hirofumi Chiba
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-11-07
+modifications:
+  it: >-
+    Pannello (b) della Figura 3, ritagliato dal JPEG da 2128 × 1513 px dell'editore
+    (https://onlinelibrary.wiley.com/cms/asset/c06e1e0e-59d2-49df-81c5-8cc46cf58fe3/tca13663-fig-0003-m.jpg): pixel
+    x 713–1418, y 102–499, per un'immagine di 706 × 398 px; il ritaglio esclude la lettera del pannello con il suo
+    riquadro bianco, una striscia di polmone e di vetrino in alto, un sottile margine ai bordi e gli altri pannelli.
+    Salvato di nuovo in JPEG (qualità 90, senza metadati); nessun ridimensionamento, nessuna modifica dei colori.
+  en: >-
+    Panel (b) of Figure 3, cut from the publisher's 2128 × 1513 px JPEG
+    (https://onlinelibrary.wiley.com/cms/asset/c06e1e0e-59d2-49df-81c5-8cc46cf58fe3/tca13663-fig-0003-m.jpg): pixels
+    x 713–1418, y 102–499, giving 706 × 398 px; the crop leaves out the panel letter and its white box, a strip of lung
+    and slide at the top, a thin margin at the panel edges and the other panels. Re-saved as JPEG (quality 90, no
+    metadata); no resize, no colour change.
+attributionText: >-
+  Toshiyuki Sumi, Hirofumi Uehara, Toshiaki Masaoka, Makoto Tada, Yoshiko Keira, Koki Kamada, Naoki Shijubou, Yuichi
+  Yamada, Hisashi Nakata, Yuji Mori and Hirofumi Chiba, "Lung adenocarcinoma with tumor resolution and dystrophic
+  calcification after salvage surgery following immune checkpoint inhibitor therapy: A case report", Thoracic Cancer
+  2020;11(11):3396–3400, doi:10.1111/1759-7714.13663, Figure 3b (cropped), CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-07 }
+group: calcified-lung-tumour-necrosis-sumi
+stain: H&E
+magnification: low power (loupe image, whole-mount view)
+lookFor:
+  it: "Confronta il blu-viola del nodulo con il rosa dell'orlo e del polmone, poi passa alla von Kossa."
+  en: "Compare the blue-purple of the nodule with the pink of the rim and the lung, then switch to von Kossa."
+caption:
+  it: >-
+    Lo stesso nodulo del polmone in ematossilina-eosina, in visione panoramica del vetrino (piccolissimo
+    ingrandimento). Parti dai bordi: intorno al nodulo il polmone conserva il suo disegno alveolare, chiaro e a merletto,
+    e un orlo rosa, verosimilmente di tessuto fibroso, separa la lesione dal parenchima. Dentro, il nodulo è colorato
+    di blu-viola, più scuro a chiazze irregolari, con una zona centrale più chiara e sfilacciata. Quel colore è
+    l'indizio: i sali di calcio legano l'ematossilina e appaiono basofili, perciò un'area necrotica che diventa blu
+    invece che rosa deve farti sospettare una calcificazione. Nota però che alcune zone, per esempio la parte in basso a
+    sinistra del nodulo, tendono al rosa-magenta: in EE quanto calcio ci sia, e dove, resta difficile da giudicare. Secondo gli
+    autori il tessuto era necrosi coagulativa senza cellule tumorali vitali. Ora passa alla sezione colorata con von
+    Kossa dello stesso nodulo e guarda dove si trova davvero il calcio.
+  en: >-
+    The same lung nodule on haematoxylin and eosin, as a whole-mount (loupe) view of the slide. Start at the edges:
+    around the nodule the lung keeps its pale, lacy alveolar pattern, and a pink rim, most likely fibrous tissue, sets
+    the lesion apart from the parenchyma. Inside, the nodule is stained blue-purple, darker in irregular patches, with a
+    paler, frayed zone in the centre. That colour is the clue: calcium salts bind haematoxylin and look basophilic, so
+    a necrotic area that turns blue instead of pink should make you suspect calcification. Note, though, that some
+    zones, such as the lower left part of the nodule, lean towards pink-magenta: on H&E, how much calcium there is, and where, stays
+    hard to judge. According to the authors the tissue was coagulative necrosis with no viable tumour cells. Now switch
+    to the von Kossa section of the same nodule and see where the calcium really is.
+alt:
+  it: >-
+    Sezione panoramica in ematossilina-eosina: un grande nodulo lobulato blu-viola, con il centro più chiaro e
+    sfilacciato e la parte in basso a sinistra più rosa, circondato da un orlo rosa e da tessuto polmonare rosa chiaro a
+    merletto.
+  en: >-
+    Low-power whole-mount H&E section: a large, lobulated blue-purple nodule with a paler, frayed centre and a pinker
+    lower left part, surrounded by a pink rim and by pale pink, lacy lung tissue.
+annotations:
+  - id: basophilic-necrotic-nodule
+    label: { it: "Nodulo necrotico blu-viola (basofilo)", en: "Blue-purple (basophilic) necrotic nodule" }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.132, 0.802, 0.133, 0.759, 0.229, 0.289, 0.237, 0.271, 0.261, 0.239, 0.282, 0.221, 0.575, 0.078, 0.635, 0.075, 0.643, 0.08, 0.694, 0.136, 0.751, 0.274, 0.752, 0.279, 0.637, 0.696, 0.578, 0.859, 0.558, 0.887, 0.285, 0.947, 0.273, 0.942, 0.135, 0.814]
+  - id: surrounding-lung
+    label: { it: "Polmone circostante", en: "Surrounding lung" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.80, 0.30, 0.97, 0.30, 0.97, 0.68, 0.80, 0.68] }

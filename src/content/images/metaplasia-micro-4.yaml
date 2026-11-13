@@ -1,0 +1,86 @@
+# License check (2026-11-08): Commons file page {{Information}} gives Author Yale Rosen and Source = Flickr photo
+# 3705951932 (stream "Pulmonary Pathology", https://www.flickr.com/photos/pulmonary_pathology/); license
+# {{cc-by-sa-2.0}}, confirmed by FlickreviewR on 2009-08-22 (the uploader, User:Patho, had tagged it CC BY 2.0; the bot
+# found CC BY-SA 2.0 on Flickr and the page keeps CC BY-SA 2.0); extmetadata LicenseShortName "CC BY-SA 2.0",
+# AttributionRequired true, no Restrictions. The Flickr stream is the author's own, so the transfer opens no
+# uploader/creator gap. CC BY-SA is approved as a class by owner decision O7 (plan/v2-plan.md, 2026-11-03), hence
+# ownerApproved: true. The file is the byte-identical original (Commons SHA-1 91a84b83c7fe3c4016034976aef481c3a82b6db9).
+# The source states neither the clinical history nor the magnification: "high power" is our reading of the field, and
+# the caption does not say this patient smoked. Caption facts checked against rubin-8e ch. 1 pp. 27-28 (squamous
+# metaplasia of the smoker's bronchus, loss of mucus production and ciliary clearance, return to columnar after
+# smoking stops), ch. 18 p. 696 (normal tracheobronchial lining: pseudostratified, ciliated, with goblet cells) and
+# p. 753 (metaplastic bronchial mucosa as the ground of dysplasia and squamous cell carcinoma).
+id: metaplasia-micro-4
+file: metaplasia-micro-4.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Bronchial_squamous_metaplasia.jpg
+author: Yale Rosen
+license: CC-BY-SA-2.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/2.0/
+retrievedAt: 2026-11-08
+modifications: none
+attributionText: >-
+  Yale Rosen, "Bronchial squamous metaplasia" (Flickr 3705951932), via Wikimedia Commons, CC BY-SA 2.0
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+stain: H&E
+magnification: high power
+orientation:
+  it: "Lume bronchiale in alto, parete del bronco in basso."
+  en: "Bronchial lumen at the top, bronchial wall at the bottom."
+lookFor:
+  it: "Cerca le ciglia lungo la superficie: non ci sono. Poi controlla che le cellule maturino in ordine, appiattendosi verso il lume, con nuclei uniformi."
+  en: "Look for cilia along the surface: there are none. Then check that the cells mature in order, flattening towards the lumen, with uniform nuclei."
+caption:
+  it: >-
+    Metaplasia squamosa del rivestimento bronchiale, EE a forte ingrandimento. Ricorda prima il rivestimento normale:
+    un epitelio cilindrico pseudostratificato ciliato (epitelio respiratorio) con cellule caliciformi sparse. Qui invece
+    tutta la superficie è coperta da un epitelio pavimentoso pluristratificato: molti strati di cellule poligonali con
+    nuclei rotondi od ovali, che verso il lume si appiattiscono e diventano più rosa. Percorri il margine libero: non ci
+    sono ciglia né cellule caliciformi. Sotto l'epitelio c'è il connettivo lasso della parete bronchiale, con piccoli
+    vasi congesti. Il punto chiave: i nuclei sono uniformi e le cellule si appiattiscono in modo ordinato dalla base
+    alla superficie; è questa maturazione ordinata a distinguere la metaplasia dalla displasia. La metaplasia squamosa
+    è tipica dei bronchi dei fumatori di lunga data. Un rivestimento privo di cellule caliciformi e di ciglia non può
+    né secernere né far scorrere lo strato di muco: è il prezzo di una superficie che tollera meglio il fumo. Se
+    l'irritazione cessa, di solito il rivestimento torna cilindrico; se persiste, su questo terreno possono insorgere
+    displasia e poi carcinoma squamoso.
+  en: >-
+    Squamous metaplasia of the bronchial lining, H&E at high power. First recall the normal lining: a pseudostratified
+    ciliated columnar epithelium (respiratory epithelium) with scattered goblet cells. Here, instead, the whole surface
+    is covered by a stratified squamous epithelium: many layers of polygonal cells with round to oval nuclei, which
+    flatten and turn pinker towards the lumen. Run along the free surface: there are no cilia and no goblet cells.
+    Under the epithelium lies the loose connective tissue of the bronchial wall, with small congested vessels. Key
+    point: the nuclei are uniform and the cells flatten in an orderly way from base to surface; this orderly
+    maturation is what separates metaplasia from dysplasia. Squamous metaplasia is typical of the bronchi of
+    long-term smokers. A lining without goblet cells and cilia can neither secrete nor move the mucus blanket: that is
+    the price of a surface that tolerates smoke better. If the irritation stops, the lining usually returns to
+    columnar; if it persists, dysplasia and later squamous cell carcinoma can arise on this ground.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina a forte ingrandimento: nella parte alta del campo una banda spessa formata da
+    molti strati di cellule con nuclei viola, più appiattite e rosa lungo il margine superiore, sotto uno sfondo
+    chiaro; sotto la banda, un connettivo lasso rosa con nuclei scuri sparsi e alcuni piccoli vasi rossi.
+  en: >-
+    High-power H&E micrograph: across the upper part of the field, a thick band made of many layers of cells with
+    purple nuclei, flatter and pinker along its top edge, under a pale background; below the band, pink loose
+    connective tissue with scattered dark nuclei and a few small red blood vessels.
+annotations:
+  - id: metaplastic-squamous-epithelium
+    label: { it: Epitelio pavimentoso pluristratificato metaplastico, en: Metaplastic stratified squamous epithelium }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.0, 0.095, 0.10, 0.10, 0.20, 0.13, 0.30, 0.165, 0.40, 0.17, 0.50, 0.215, 0.60, 0.25, 0.70, 0.29, 0.80, 0.31, 0.90, 0.33, 1.0, 0.34, 1.0, 0.69, 0.90, 0.68, 0.80, 0.66, 0.70, 0.63, 0.60, 0.57, 0.50, 0.515, 0.40, 0.49, 0.30, 0.47, 0.20, 0.43, 0.10, 0.38, 0.0, 0.36]
+  - id: surface-without-cilia
+    label: { it: "Superficie: cellule appiattite, niente ciglia né cellule caliciformi", en: "Surface: flattened cells, no cilia, no goblet cells" }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.55, 0.235, 0.65, 0.27, 0.75, 0.30, 0.85, 0.32, 0.95, 0.335, 0.95, 0.375, 0.85, 0.36, 0.75, 0.34, 0.65, 0.31, 0.55, 0.275]
+  - id: bronchial-wall
+    label: { it: Connettivo della parete bronchiale con vasi congesti, en: Connective tissue of the bronchial wall with congested vessels }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.0, 0.43, 0.10, 0.45, 0.20, 0.49, 0.30, 0.53, 0.40, 0.56, 0.50, 0.58, 0.60, 0.63, 0.70, 0.69, 0.80, 0.72, 0.90, 0.74, 1.0, 0.75, 1.0, 1.0, 0.0, 1.0]

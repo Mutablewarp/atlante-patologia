@@ -1,0 +1,87 @@
+# License check (2026-11-08): Commons file page {{Information}} gives source {{Own}} and author Mikael Häggström (his
+# author template with consent note "noid": no identifiable features), date 2022-04-09; license {{cc-zero}};
+# extmetadata LicenseShortName "CC0", no Restrictions. The uploader is the author (upload log: Mikael Häggström,
+# 2022-04-09). The file description says only "transformation zone mucosa, a mix of stratified squamous epithelium and
+# mucinous glands, H&E"; that the squamous epithelium is metaplastic follows from what the transformation zone is
+# (rubin-8e ch. 24 p. 1028), and "high power" is our reading of the field. Caption facts checked against rubin-8e ch. 24
+# pp. 1028-1029 (squamous metaplasia of the everted columnar lining forms the transformation zone; reserve cells as its
+# source; glycogen-poor immature epithelium stays pale with iodine in the Schiller test; metaplastic squamous epithelium
+# growing into endocervical glands must be told apart from carcinoma; the zone as the site of cervical squamous
+# carcinoma).
+id: metaplasia-micro-6
+file: metaplasia-micro-6.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Histology_of_transformation_zone_mucosa.jpg
+author: Mikael Häggström, M.D.
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-11-08
+modifications:
+  it: >-
+    Riduzione da 1532 × 1716 px a 1428 × 1600 px e ricodifica in JPEG (qualità 82, metadati rimossi); nessun ritaglio,
+    nessuna modifica dei colori.
+  en: >-
+    Downscaled from 1532 × 1716 px to 1428 × 1600 px and re-encoded as JPEG (quality 82, metadata stripped); no crop, no
+    colour change.
+attributionText: "Mikael Häggström, M.D., via Wikimedia Commons, CC0 1.0 (public domain dedication)"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+stain: H&E
+magnification: high power
+orientation:
+  it: "Superficie della mucosa in alto, stroma in basso."
+  en: "Mucosal surface at the top, stroma at the bottom."
+lookFor:
+  it: "Trova la ghiandola al centro dell'epitelio squamoso: una cripta piena di muco sotto un rivestimento squamoso significa che le cellule squamose sono metaplastiche."
+  en: "Find the gland in the middle of the squamous epithelium: a mucus-filled crypt under a squamous lining means the squamous cells are metaplastic."
+caption:
+  it: >-
+    Metaplasia squamosa nella zona di trasformazione della cervice uterina, EE a forte ingrandimento. Orientati prima:
+    la superficie è in alto, lo stroma in basso e in mezzo c'è un epitelio pavimentoso pluristratificato le cui cellule
+    si appiattiscono verso la superficie. Ora guarda il centro. Una cripta di ghiandola endocervicale, con il lume pieno
+    di muco chiaro e schiumoso e ancora rivestita in parte da un sottile orlo di cellule mucipare, è avvolta da ogni lato
+    dalle cellule squamose. Una ghiandola sotto un rivestimento squamoso ti dice che questa mucosa un tempo era
+    cilindrica: qui l'epitelio squamoso è metaplastico, nato dalle cellule di riserva che stavano sotto il rivestimento
+    mucinoso. Osserva anche il citoplasma, denso e rosa dalla base alla superficie, senza l'aspetto chiaro, ricco di
+    glicogeno, delle cellule squamose mature della cervice. Per questo l'epitelio metaplastico giovane appare pallido al
+    test di Schiller: lo iodio colora di bruno solo le cellule ricche di glicogeno. Tranello: un carcinoma invasivo
+    viene simulato quando le cellule squamose metaplastiche riempiono un'intera ghiandola e lasciano un'isola squamosa
+    tondeggiante sotto la superficie; margini lisci, residue cellule mucipare e nuclei regolari e ordinati depongono per
+    la metaplasia. Perché conta: la zona di trasformazione è la sede in cui insorge il carcinoma squamoso della cervice.
+  en: >-
+    Squamous metaplasia in the transformation zone of the cervix, H&E at high power. Get your bearings first: the
+    surface is at the top, the stroma at the bottom, and in between lies a stratified squamous epithelium whose cells
+    flatten towards the surface. Now look at the centre. A crypt of an endocervical gland, its lumen filled with pale,
+    bubbly mucus and still lined in part by a thin rim of mucinous cells, is wrapped on every side by squamous cells. A
+    gland beneath a squamous lining tells you that this mucosa used to be columnar: the squamous epithelium here is
+    metaplastic, grown from the reserve cells that lay under the mucinous lining. Note also the cytoplasm, dense and
+    pink from base to surface, without the clear, glycogen-filled look of mature cervical squamous cells. That is why
+    young metaplastic epithelium looks pale in the Schiller test: iodine browns only glycogen-rich cells. Pitfall:
+    invasive carcinoma is mimicked when metaplastic squamous cells fill a whole gland and leave a rounded squamous
+    island below the surface; smooth outlines, residual mucinous cells and bland, orderly nuclei favour metaplasia. Why
+    it matters: the transformation zone is where cervical squamous carcinoma arises.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina a forte ingrandimento di mucosa cervicale: un epitelio stratificato rosa con
+    nuclei viola ovali occupa quasi tutto il campo, sotto una banda superficiale rosa compatta; al centro una cavità
+    contiene materiale chiaro e schiumoso, con sopra uno spazio vuoto rotondo; connettivo lasso rosa lungo il margine
+    inferiore e sul bordo destro, con un vaso rosso in alto a destra.
+  en: >-
+    High-power H&E micrograph of cervical mucosa: a pink layered epithelium with oval purple nuclei fills most of the
+    field under a compact pink surface band; in its centre a cavity holds pale, bubbly material, with a round empty
+    space above it; loose pink connective tissue along the bottom and at the right edge, with a red blood vessel at the
+    upper right.
+annotations:
+  - id: endocervical-gland-crypt
+    label: { it: "Cripta di ghiandola endocervicale: muco e residue cellule mucipare", en: "Endocervical gland crypt: mucus and remnant mucinous cells" }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.25, 0.33, 0.30, 0.27, 0.40, 0.27, 0.46, 0.32, 0.45, 0.40, 0.50, 0.47, 0.56, 0.56, 0.62, 0.62, 0.65, 0.72, 0.62, 0.81, 0.45, 0.83, 0.28, 0.82, 0.18, 0.77, 0.18, 0.62, 0.24, 0.50, 0.28, 0.42]
+  - id: metaplastic-squamous-epithelium
+    label: { it: Epitelio squamoso metaplastico che avvolge la cripta, en: Metaplastic squamous epithelium wrapping the crypt }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.54, 0.32, 0.60, 0.27, 0.70, 0.24, 0.80, 0.25, 0.84, 0.35, 0.86, 0.45, 0.90, 0.52, 0.92, 0.62, 0.88, 0.74, 0.82, 0.82, 0.72, 0.85, 0.68, 0.80, 0.68, 0.70, 0.64, 0.62, 0.59, 0.55, 0.55, 0.47, 0.52, 0.38]

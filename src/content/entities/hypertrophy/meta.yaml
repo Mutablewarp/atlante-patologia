@@ -31,6 +31,8 @@ learningObjectives:
     en: "Compare the response of type I fibers to endurance training with that of type II fibers to heavy-load training."
   - it: "Descrivere l'ipertrofia cardiaca concentrica ed eccentrica, i rispettivi aspetti morfologici e il motivo per cui l'adattamento ha un limite."
     en: "Describe concentric and eccentric cardiac hypertrophy, their morphology and why the adaptation has a limit."
+  - it: "Descrivere come si esamina un cuore ipertrofico (peso, spessore delle pareti, istologia, colorazioni) e come si distingue un'ipertrofia secondaria da una cardiomiopatia ipertrofica."
+    en: "Describe how a hypertrophic heart is examined (weight, wall thickness, histology, stains) and how secondary hypertrophy is told apart from hypertrophic cardiomyopathy."
 prerequisites: []
 relations:
   - type: differentialOf
@@ -98,6 +100,31 @@ chain:
     lab:
       it: "BNP plasmatico elevato quando compare lo scompenso; all'autopsia aumento del peso del cuore e nuclei «a vagone merci»"
       en: "Raised blood BNP once failure develops; at autopsy increased heart weight and boxcar nuclei"
+examQuestions:
+  - it: "Mi parli dell'ipertrofia: come la definisce, in che cosa si distingue dall'iperplasia e quali esempi fisiologici e patologici può portare?"
+    en: "Tell me about hypertrophy: how do you define it, how does it differ from hyperplasia, and what physiologic and pathologic examples can you give?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Che cosa vede, a occhio nudo e al microscopio, nel cuore di un paziente iperteso da molti anni? E che cosa cambia nel cuore polmonare cronico?"
+    en: "What do you see, with the naked eye and under the microscope, in the heart of a patient with long-standing hypertension? And what is different in chronic cor pulmonale?"
+    focus: [gross, micro]
+    level: 1
+  - it: "Mi spieghi come viene regolata l'ipertrofia del muscolo scheletrico: quali segnali la promuovono e quali la frenano?"
+    en: "Explain how skeletal muscle hypertrophy is regulated: which signals promote it and which hold it back?"
+    focus: [pathogenesis]
+    level: 2
+  - it: "Perché un cuore ipertrofico, inizialmente compensato, può andare incontro a scompenso? Quali complicanze teme?"
+    en: "Why can a hypertrophic heart, compensated at first, go on to fail? Which complications do you worry about?"
+    focus: [clinical, prognosis]
+    level: 2
+  - it: "Come distingue un cuore d'atleta da un cuore con ipertrofia patologica, e un'ipertrofia concentrica da una eccentrica?"
+    en: "How do you tell an athlete's heart from a pathologically hypertrophied heart, and concentric from eccentric hypertrophy?"
+    focus: [gross, micro, differential]
+    level: 3
+  - it: "Davanti a un cuore ipertrofico, come stabilisce se l'ipertrofia è secondaria a un sovraccarico o se si tratta di una cardiomiopatia ipertrofica? Quali colorazioni ed esami userebbe?"
+    en: "Faced with a hypertrophic heart, how do you decide whether the hypertrophy is secondary to an overload or is a hypertrophic cardiomyopathy? Which stains and tests would you use?"
+    focus: [ancillary, diagnosis, differential]
+    level: 3
 images:
   - id: hypertrophy-gross-1
     role: gross
@@ -108,6 +135,12 @@ images:
     role: micro
   - id: g01-adaptation-spectrum
     role: diagram
+  - id: hypertrophy-gross-2
+    role: gross
+  - id: hypertrophy-micro-3
+    role: micro
+  - id: hypertrophy-micro-4
+    role: micro
 reviewStatus: ai-generated-unreviewed
 editionDependent: false
 sources:
@@ -116,6 +149,12 @@ sources:
     pages: "19-25"
   - source: rubin-8e
     chapter: "17"
-    pages: "637-640, 663"
-lastUpdated: 2026-11-03
+    pages: "633, 637-641, 652, 663-665, 683-685"
+  - source: rubin-8e
+    chapter: "22"
+    pages: "920"
+  - source: rubin-8e
+    chapter: "23"
+    pages: "1007, 1011"
+lastUpdated: 2026-11-09
 status: published

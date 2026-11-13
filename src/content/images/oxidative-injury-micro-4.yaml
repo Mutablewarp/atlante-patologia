@@ -1,0 +1,90 @@
+# License check (2026-11-08): PMC12664704 is an open-access Cureus case report (PubMed 41322939; title, authors,
+# journal, volume and DOI confirmed on PubMed). Its JATS <license> is https://creativecommons.org/licenses/by/4.0/
+# ("Copyright © 2025, Omameuda et al."). Figure 2 shows the authors' own liver biopsy and its legend carries no
+# third-party credit or "reproduced with permission" note, so CC BY 4.0 covers it; CC BY needs no owner approval.
+# Histology only; nothing identifies the patient. The file is a full-resolution crop of panel a of Figure 2 as embedded
+# in the article PDF of the PMC open-access record (pmc-oa-opendata, PMC12664704.1); the PMC web figure is too small.
+# Group hepatic-lipofuscin-omameuda = panels a (H&E, low power), b (H&E, high power) and d (iron stain) of this
+# biopsy. Panel c (Fontana-Masson) is left out: its stain code would be "other", like panel d's, and the viewer's
+# switch would then show two identical labels. The vein is called only "vein": the source does not name it.
+# Re-checked 2026-11-09: the PMC OA record (PMC12664704.1.json) gives license_code "CC BY", not retracted; the crop
+# matches the PDF figure (2892 × 2164 px) at offset 22,20 with a mean pixel difference of 1.6/255 (JPEG noise only).
+# The article reports no steatosis, inflammation, fibrosis or cholestasis in this biopsy: hence "no other lesion".
+id: oxidative-injury-micro-4
+file: oxidative-injury-micro-4.jpg
+kind: micro
+sourceUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC12664704/figure/FIG2/
+author: Takahiko Omameuda, Yasuharu Onishi, Yukihiro Sanada, Yasunaru Sakuma, Hironori Yamaguchi
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-11-08
+modifications:
+  it: >-
+    Pannello a della Fig. 2 dell'articolo di origine, ritagliato dalla figura come è inclusa nel PDF dell'articolo
+    nell'archivio open access di PMC (2892 × 2164 px; la figura web di PMC misura solo 750 × 562 px): ritaglio di
+    1416 × 1060 px a piena risoluzione, ricodificato in JPEG; nessun ridimensionamento, nessuna modifica dei colori. La
+    lettera del pannello, i cerchi neri e la barra di scala da 50 µm fanno parte della figura originale.
+  en: >-
+    Panel a of Fig. 2 of the source article, cropped from the figure as embedded in the article PDF of the PMC
+    open-access record (2892 × 2164 px; the PMC web figure is only 750 × 562 px): a 1416 × 1060 px crop at full
+    resolution, re-encoded as JPEG; no resizing, no colour change. The panel letter, the black circles and the 50 µm
+    scale bar belong to the original figure.
+attributionText: >-
+  Omameuda T, Onishi Y, Sanada Y, Sakuma Y, Yamaguchi H, "Hepatic Lipofuscin Deposition in Living Liver Donor
+  Candidate", Cureus 2025;17(10):e95770, doi:10.7759/cureus.95770, Fig. 2 (panel a), CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-09 }
+group: hepatic-lipofuscin-omameuda
+stain: H&E
+magnification: low power (×100 in the source)
+lookFor:
+  it: "Lascia stare i nuclei e guarda il citoplasma dentro i cerchi: sul rosa si stende una lieve polvere bruna."
+  en: "Ignore the nuclei and look at the cytoplasm inside the circles: a faint brown dust lies over the pink."
+caption:
+  it: >-
+    Biopsia epatica di un adulto in valutazione per la donazione di fegato da vivente, EE a piccolo ingrandimento (×100
+    secondo la fonte); i cerchi neri sono degli autori. A parte il pigmento, gli autori non hanno trovato altre lesioni
+    nella biopsia. Una vena a parete sottile scende al centro del campo e intorno le lamine di epatociti sembrano
+    normali. Guarda meglio il citoplasma, soprattutto dentro i cerchi: in molti epatociti c'è una lieve polvere bruna che
+    il rosa dell'eosina non spiega. A questo ingrandimento si coglie solo la tinta: passa alla vista a forte
+    ingrandimento della stessa serie per vedere i granuli, poi alla colorazione per il ferro per capire che cosa non
+    sono. La diagnosi è stata lipofuscina: lipidi e proteine danneggiati dall'ossidazione che la cellula non è riuscita
+    né a digerire né a eliminare. Gli epatociti si dividono solo di rado, perciò trattengono ciò che non riescono a
+    smaltire e negli anni il pigmento aumenta. Trappola: in EE un pigmento bruno negli epatociti non basta a dargli un
+    nome, perché lipofuscina ed emosiderina, la forma di deposito del ferro, possono sembrare uguali.
+  en: >-
+    Liver biopsy from an adult under evaluation for living liver donation, H&E at low power (×100 in the source); the
+    black circles are the authors'. Apart from the pigment, the authors found no other lesion in the biopsy. A
+    thin-walled vein runs down the middle of the field and the hepatocyte plates around it look normal. Look again at
+    the cytoplasm, above all inside the circles: many hepatocytes carry a faint brown dust that the pink of eosin does
+    not explain. At this power you only catch the tint: switch to the high-power view of this set to see the granules,
+    then to the iron stain to learn what they are not. The diagnosis was lipofuscin: lipids and proteins damaged by
+    oxidation that the cell could neither digest nor get rid of. Hepatocytes divide only rarely, so they hold on to what
+    they cannot clear, and the pigment builds up over the years. Pitfall: on H&E a brown pigment in hepatocytes is not
+    enough to name it, because lipofuscin and haemosiderin, the storage form of iron, can look the same.
+alt:
+  it: >-
+    Micrografia di fegato in ematossilina-eosina a piccolo ingrandimento: un lume vascolare bianco e stretto scende
+    dal centro in alto verso il basso a sinistra; il resto del campo è occupato da epatociti rosa in lamine con molti
+    piccoli nuclei viola; tre cerchi neri tracciati sull'immagine racchiudono gruppi di epatociti dal citoplasma
+    lievemente brunastro; in alto a sinistra la lettera a in un riquadro bianco, in basso a destra una barra di scala
+    da 50 µm.
+  en: >-
+    Low-power H&E micrograph of liver: a narrow white vessel lumen runs from the top centre down to the lower left;
+    pink hepatocytes in plates with many small purple nuclei fill the rest of the field; three black circles drawn on
+    the image enclose groups of hepatocytes with a faintly brownish cytoplasm; the letter a in a white box at the top
+    left and a 50 µm scale bar at the bottom right.
+annotations:
+  - id: vein
+    label: { it: Vena, en: Vein }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.34, 0.0, 0.39, 0.0, 0.42, 0.2, 0.45, 0.4, 0.475, 0.5, 0.45, 0.6, 0.43, 0.7, 0.41, 0.8, 0.36, 0.9, 0.29, 0.94, 0.27, 0.9, 0.28, 0.8, 0.30, 0.7, 0.33, 0.6, 0.37, 0.5, 0.37, 0.4, 0.35, 0.2]
+  - id: brownish-hepatocytes
+    label: { it: "Epatociti con citoplasma brunastro (cerchio degli autori)", en: "Hepatocytes with brownish cytoplasm (authors' circle)" }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.810, 0.292, 0.763, 0.441, 0.648, 0.503, 0.533, 0.441, 0.486, 0.292, 0.533, 0.143, 0.648, 0.081, 0.763, 0.143]

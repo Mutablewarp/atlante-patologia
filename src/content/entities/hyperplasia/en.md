@@ -15,7 +15,7 @@ Three broad groups of stimuli cause hyperplasia: endocrine stimulation, greater 
 - Endometrial epithelium and stroma proliferate when estrogen rises at puberty or in the first part of the menstrual cycle; estrogen given to postmenopausal women has the same effect.<!--c:hyperplasia-c008-->
 - **Gynecomastia**: breast enlargement in men exposed to excess estrogen, for example during estrogen therapy for prostate cancer or when a diseased liver fails to clear circulating estrogens.<!--c:hyperplasia-c009-->
 - A tumor may produce excess or ectopic hormone; a renal tumor secreting erythropoietin drives erythroid hyperplasia of the marrow.<!--c:hyperplasia-c010-->
-- Persistent estrogen excess from anovulatory cycles, polycystic ovary syndrome, an estrogen-producing tumor, estrogen therapy or obesity causes endometrial hyperplasia.<!--c:hyperplasia-c011-->
+- A lasting excess of estrogen that progesterone does not balance makes the endometrium hyperplastic, as happens with repeated cycles without ovulation or in obesity.<!--c:hyperplasia-c011-->
 - Androgens drive **benign prostatic hyperplasia (BPH)**.<!--c:hyperplasia-c012-->
 
 **Increased functional demand (compensatory hyperplasia):**
@@ -52,13 +52,18 @@ Three broad groups of stimuli cause hyperplasia: endocrine stimulation, greater 
 
 - **Marrow hyperplasia**: hematopoietic cells take over much of the space normally occupied by marrow fat.<!--c:hyperplasia-c034-->
 - **Psoriasis**: keratinocytes accumulate, so the epidermis becomes markedly thicker.<!--c:hyperplasia-c035-->
-- **BPH**: acinar and ductal epithelium, smooth muscle and stromal fibroblasts all proliferate in varying proportions.<!--c:hyperplasia-c036--> The glands keep a two-layer lining, tall columnar cells over basal cells, and often contain corpora amylacea.<!--c:hyperplasia-c037-->
+- **BPH**: acinar and ductal epithelium, smooth muscle and stromal fibroblasts all proliferate in varying proportions.<!--c:hyperplasia-c036--> The glands keep a two-layer lining, tall columnar cells over basal cells, and often contain corpora amylacea.<!--c:hyperplasia-c037--> About one case in five contains focal infarcts, whose edges typically show ducts lined by metaplastic squamous epithelium, and nonspecific prostatitis often accompanies the nodules.<!--c:hyperplasia-c077-->
 - **Nonatypical endometrial hyperplasia**: gland crowding that varies from place to place, many cystic glands and a higher gland-to-stroma ratio, but no focal change in the look of the cells.<!--c:hyperplasia-c038-->
 - **EIN**: a circumscribed cluster of crowded glands whose cells look different from the surrounding background glands.<!--c:hyperplasia-c039-->
 
 ## Special stains, IHC and molecular findings
 
-- Glands of EIN may lose PTEN expression on immunohistochemistry, a marker of their clonal, mutated nature.<!--c:hyperplasia-c040-->
+**How it is studied:**
+
+- **H&E:** hyperplasia is recognized by comparing the tissue with normal tissue from the same site at the same magnification, for example marrow cellularity against fat or epidermal thickness against normal skin.<!--c:hyperplasia-c069-->
+- **Endometrium (biopsy):** nonatypical hyperplasia alters the whole endometrium, whereas EIN is a localized focus, judged against the background glands of the same sample.<!--c:hyperplasia-c070--> Glands of EIN may lose PTEN expression on immunohistochemistry, a marker of their clonal, mutated nature.<!--c:hyperplasia-c040-->
+- **Prostate (needle biopsy):** benign glands, those of BPH included, keep their layer of basal cells, which is positive for high-molecular-weight cytokeratin and p63; carcinoma glands have lost it and stay negative.<!--c:hyperplasia-c071--> AMACR (α-methylacyl-CoA racemase) behaves the other way round: high-grade prostatic intraepithelial neoplasia (PIN) and carcinoma express it, benign glands do not; when a biopsy is hard to call, the pathologist reads it together with the basal cell stain.<!--c:hyperplasia-c072-->
+- **Lymph node:** an excisional biopsy gives better material than needle sampling, and the pathologist interprets it in the light of the clinical picture and of how old the patient is.<!--c:hyperplasia-c073--> The germinal centers of reactive follicular hyperplasia are Bcl-2 negative, whereas follicular lymphoma expresses Bcl-2 in more than 90% of cases.<!--c:hyperplasia-c074-->
 
 ## Clinical presentation
 
@@ -69,11 +74,13 @@ Three broad groups of stimuli cause hyperplasia: endocrine stimulation, greater 
 ## Diagnosis, key lab and imaging
 
 - In BPH, on digital rectal examination the prostate feels bigger than normal, with a firm consistency and a lumpy (nodular) texture.<!--c:hyperplasia-c044-->
+- Serum PSA rises in BPH as well as in prostate cancer, so a raised value is not specific: it calls for further work-up, and cancer has to be confirmed on tissue, usually from a needle biopsy.<!--c:hyperplasia-c079-->
 - For endometrial hyperplasia, short-term cancer risk is low when extensive sampling shows no EIN; persistent nonatypical hyperplasia is followed by repeat biopsy.<!--c:hyperplasia-c045-->
 
 ## Complications and prognosis
 
 - Compensatory erythroid hyperplasia recedes when the stimulus ends: the hematocrit returns to normal after descent to sea level.<!--c:hyperplasia-c046-->
+- The bladder answers the outflow obstruction with hypertrophy of its muscle wall, and more urine stays in it after voiding (residual urine).<!--c:hyperplasia-c078-->
 - Severe, prolonged prostatic obstruction can lead to hydroureter, hydronephrosis and eventually renal failure.<!--c:hyperplasia-c047-->
 - Drugs that block 5α-reductase shrink the hyperplastic prostate; α1-adrenergic blockers relax smooth muscle and improve urine flow.<!--c:hyperplasia-c048-->
 - Unopposed estrogen raises endometrial cancer risk two- to tenfold; carcinoma follows nonatypical hyperplasia in only 1–3% of cases but EIN in 37%, almost always of endometrioid type.<!--c:hyperplasia-c049-->
@@ -88,6 +95,8 @@ Three broad groups of stimuli cause hyperplasia: endocrine stimulation, greater 
 | [[dysplasia]] | Cells and nuclei vary in size and shape, nuclei are enlarged and hyperchromatic, mitoses lie away from the basal layer, maturation is disordered.<!--c:hyperplasia-c053--> | Cytologic atypia and maturation on histology |
 | EIN (atypical endometrial hyperplasia) | Clonal cluster of crowded, cytologically altered glands, distinct from background.<!--c:hyperplasia-c054--> | Biopsy morphology; PTEN loss on IHC |
 | [[atrophy]] | The organ shrinks because its cells shrink and/or are lost (e.g., brain atrophy in Alzheimer disease).<!--c:hyperplasia-c055--> | Cell size versus normal tissue |
+| Prostatic adenocarcinoma | Usually arises in the peripheral zone rather than the transition zone; its glands infiltrate the stroma and lack basal cells; urinary obstruction is an uncommon first sign.<!--c:hyperplasia-c075--> | Needle biopsy: basal cell markers (high-molecular-weight cytokeratin, p63) absent, AMACR positive |
+| Follicular lymphoma | Unlike reactive follicular hyperplasia, which leaves the architecture of the node recognizable, it fills the node with crowded neoplastic follicles, often back to back.<!--c:hyperplasia-c076--> | Bcl-2 IHC on the germinal centers |
 
 ## High-yield summary
 
@@ -103,6 +112,7 @@ Three broad groups of stimuli cause hyperplasia: endocrine stimulation, greater 
 - **Hyperplasia is not always adaptive**: psoriasis is epidermal hyperplasia whose proliferation has no protective purpose.<!--c:hyperplasia-c062-->
 - "Atypical endometrial hyperplasia" is not simply more of the same: it is a clonal neoplasm (EIN), unlike nonatypical hyperplasia.<!--c:hyperplasia-c063-->
 - BPH does not arise in men castrated before puberty, and giving testosterone does not induce it.<!--c:hyperplasia-c064-->
+- "Prostatic hypertrophy", a name still in use, is imprecise: the prostate enlarges because its glands and stroma proliferate, that is, by hyperplasia.<!--c:hyperplasia-c080-->
 - Postmitotic does not mean irreplaceable: progenitor cells in brain and heart can still proliferate after injury.<!--c:hyperplasia-c065-->
 - Hyperplasia and hypertrophy are not mutually exclusive; they frequently occur together.<!--c:hyperplasia-c066-->
 

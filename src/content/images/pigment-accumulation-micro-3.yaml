@@ -1,0 +1,84 @@
+# License check (2026-11-08): Commons file page {{Information}} gives Source = Flickr photo 3626657027 (stream
+# "pulmonary_pathology"), Author = Yale Rosen; license template {{cc-by-sa-2.0}}, confirmed on Flickr by FlickreviewR on
+# 2009-08-22 ({{User:FlickreviewR/reviewed-pass-change}}: licence found at review cc-by-sa-2.0); extmetadata
+# LicenseShortName "CC BY-SA 2.0", AttributionRequired true. The Commons transfer is by User:Patho, but the Flickr
+# stream is the author's own, so there is no uploader/creator gap. CC BY-SA is approved as a class by owner decision O7
+# (plan/v2-plan.md, 2026-11-03), hence ownerApproved: true. The file is the unmodified Commons original (1280 × 960 px,
+# 514 KB). Same case and same Flickr series as pigment-accumulation-micro-4 (Prussian blue view, photo 3626657617:
+# identical description "Extensive intra-alveolar hemosiderin deposition following pulmonary hemorrhage. Pulmonary
+# veno-occlusive disease", same capture date 2009-01-06), so the two share one group. The source does not name the
+# stain of this view; H&E is read from the appearance. Facts in the caption checked against rubin-8e ch. 7
+# pp. 326-327 (heart failure cells, brown induration), ch. 17 p. 641 and ch. 18 pp. 749-750 (PVOD: post-capillary
+# hypertension, occluded small veins, alveolar wall fibrosis, foci of hemosiderosis, brown induration).
+id: pigment-accumulation-micro-3
+file: pigment-accumulation-micro-3.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Intra-alveolar_hemosiderin_deposition.jpg
+author: Yale Rosen
+license: CC-BY-SA-2.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/2.0/
+retrievedAt: 2026-11-08
+modifications: none
+attributionText: >-
+  Yale Rosen, "Intra-alveolar hemosiderin deposition" (Flickr 3626657027), via Wikimedia Commons, CC BY-SA 2.0
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+group: pigment-accumulation-pvod-hemosiderin
+stain: "H&E (by appearance; the source does not name the stain of this view)"
+magnification: "high power (the source does not state the magnification)"
+lookFor:
+  it: "Cerca le cellule tonde libere negli spazi aerei, poi valuta i loro granuli: grossolani, dal giallo-oro al bruno scuro, dentro macrofagi."
+  en: "Find the round cells lying free in the air spaces, then judge their granules: coarse, golden to dark brown, inside macrophages."
+caption:
+  it: >-
+    Polmone, EE a forte ingrandimento: spazi alveolari zeppi di macrofagi carichi di emosiderina (siderofagi). Il caso
+    di origine è una malattia veno-occlusiva polmonare (PVOD) con estese emorragie negli alveoli. Parti dalla
+    disposizione d'insieme: a sinistra due grandi ammassi di cellule tondeggianti riempiono gli spazi aerei; a destra
+    c'è una parete alveolare ispessita da collagene e cellule fusate. Poi scegli una cellula: un grande macrofago con il
+    citoplasma stipato di granuli grossolani, dal giallo-oro al bruno scuro, attorno al nucleo. Quel pigmento è
+    emosiderina, il ferro che i macrofagi hanno trattenuto dopo aver fagocitato i globuli rossi usciti negli alveoli.
+    Nella PVOD le piccole vene polmonari sono ostruite e la pressione sale nei capillari alveolari a monte: è lo stesso
+    meccanismo post-capillare dell'insufficienza ventricolare sinistra, nella quale queste cellule prendono il nome di
+    «cellule da vizio cardiaco». Con il tempo si arriva all'indurimento bruno, un polmone che all'esame macroscopico
+    appare rigido e color ruggine per la fibrosi e il ferro accumulato. Trappole: il carbone è nero intenso, non
+    bruno-dorato; la lipofuscina forma granuli più fini e più chiari. In EE questi pigmenti sembrano tutti solo bruni o
+    scuri: passa alla vista con il Perls dello stesso caso per dimostrare che qui si tratta di ferro.
+  en: >-
+    Lung, H&E at high power: alveolar spaces stuffed with hemosiderin-laden macrophages (siderophages). The source case
+    is pulmonary veno-occlusive disease (PVOD), with extensive bleeding into the alveoli. Start with the layout: on the
+    left, two large clusters of round cells fill the air spaces; on the right lies an alveolar wall thickened by collagen
+    and spindle cells. Then pick one cell: a big macrophage whose cytoplasm is crammed with coarse granules, golden to
+    dark brown, around its nucleus. That pigment is hemosiderin, the iron these macrophages kept after swallowing red
+    cells that had leaked into the alveoli. In PVOD the small pulmonary veins are blocked, so pressure rises in the
+    alveolar capillaries upstream: the same post-capillary mechanism as in left ventricular failure, where these cells
+    are called heart failure cells. In time this leads to brown induration, a lung that looks stiff and rust-colored on
+    gross examination because of scarring and stored iron. Pitfalls: carbon is jet black, not golden-brown; lipofuscin
+    forms finer, paler granules. On H&E all of these only look brown or dark: switch to the Perls view of the same case
+    to prove that this pigment is iron.
+alt:
+  it: >-
+    Micrografia di polmone in ematossilina-eosina a forte ingrandimento: a sinistra due grandi ammassi tondeggianti di
+    cellule voluminose, piene di granuli grossolani da bruno-dorati a bruno scuri, riempiono spazi aerei chiari; a destra
+    spesse bande rosa di tessuto fibroso con nuclei viola allungati; in alto a sinistra alcuni globuli rossi rosso vivo.
+  en: >-
+    High-power H&E micrograph of lung: on the left, two large rounded clusters of big cells packed with coarse
+    golden-brown to dark brown granules fill pale air spaces; on the right, thick pink bands of fibrous tissue with
+    elongated purple nuclei; a few bright red blood cells at the top left.
+annotations:
+  - id: alveolus-siderophages
+    label: { it: "Spazio alveolare pieno di macrofagi carichi di emosiderina", en: "Alveolar space filled with hemosiderin-laden macrophages" }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.27, 0.02, 0.62, 0.01, 0.66, 0.18, 0.62, 0.36, 0.52, 0.47, 0.40, 0.51, 0.27, 0.46, 0.19, 0.40, 0.20, 0.22]
+  - id: single-siderophage
+    label: { it: "Un siderofago: granuli grossolani bruno-dorati attorno al nucleo", en: "One siderophage: coarse golden-brown granules around the nucleus" }
+    revealOrder: 2
+    shape: { type: circle, coords: [0.342, 0.432, 0.028] }
+  - id: thickened-alveolar-wall
+    label: { it: "Parete alveolare ispessita da collagene", en: "Alveolar wall thickened by collagen" }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.71, 0.06, 0.97, 0.04, 0.98, 0.48, 0.86, 0.52, 0.74, 0.50, 0.70, 0.36, 0.72, 0.18]

@@ -4,6 +4,7 @@
  */
 import { getCollection } from 'astro:content';
 import { PREVIEW_DRAFTS } from './content.ts';
+import { dropClaimMarkers } from './crosslinks.ts';
 import type { Pathway, Structure } from './schema.ts';
 
 export async function pathways(): Promise<Pathway[]> {
@@ -16,9 +17,9 @@ export async function structureById(): Promise<Map<string, Structure>> {
 
 const escape = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 
-/** Step text as HTML: plain text escaped, claim markers kept as comments (as in entity bodies). */
+/** Step text as HTML: plain text escaped, claim markers dropped (as in entity bodies). */
 export function stepHtml(text: string): string {
-  return escape(text).replace(/&lt;!--\s*c:([a-z0-9-]+)\s*--&gt;/g, '<!--c:$1-->');
+  return escape(dropClaimMarkers(text));
 }
 
 /** Claim ids in a step text, in order. */

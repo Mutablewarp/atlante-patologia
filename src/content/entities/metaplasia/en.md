@@ -11,7 +11,7 @@ Metaplasia is the replacement of one mature, differentiated cell type by another
 **Columnar → squamous** (the most common direction):<!--c:metaplasia-c005-->
 
 - **Tobacco smoke** in the bronchial lining of long-term smokers.<!--c:metaplasia-c006-->
-- **Chronic infection or inflammation** of the endocervix.<!--c:metaplasia-c007--> Vaginal acidity is one trigger that makes the everted endocervical (columnar) lining of the transformation zone turn squamous.<!--c:metaplasia-c008-->
+- **Chronic infection or inflammation** of the endocervix.<!--c:metaplasia-c007--> In the transformation zone, the endocervical (columnar) lining that eversion has exposed to the vaginal environment turns squamous, and the acidity of that environment is among the stimuli for the change.<!--c:metaplasia-c008-->
 - **Vitamin A deficiency**, which turns many glandular and columnar linings (airways, conjunctiva, tear and sweat ducts, renal pelvis, pancreatic ducts) squamous.<!--c:metaplasia-c009-->
 - **Bladder calculi and chronic cystitis**, which induce squamous metaplasia of the urothelium.<!--c:metaplasia-c010-->
 
@@ -20,19 +20,19 @@ Metaplasia is the replacement of one mature, differentiated cell type by another
 - **Chronic acid–peptic reflux** into the lower esophagus produces Barrett esophagus.<!--c:metaplasia-c011--> Risk factors for Barrett esophagus include male sex (about 3:1), age over 50, smoking (about twice the risk), obesity and white race.<!--c:metaplasia-c012-->
 - **Chronic bladder inflammation** can turn transitional epithelium into mucus-secreting glandular epithelium (cystitis glandularis).<!--c:metaplasia-c013-->
 
-**Glandular → another glandular type:** in chronic (multifocal atrophic) gastritis, mostly due to *Helicobacter*, intestinal-type cells replace lost gastric glands (intestinal metaplasia).<!--c:metaplasia-c014-->
+**Glandular → another glandular type:** in chronic (multifocal atrophic) gastritis, mostly due to *Helicobacter*, intestinal-type cells replace lost gastric glands (intestinal metaplasia).<!--c:metaplasia-c014--> Autoimmune gastritis, which targets the parietal cells, also leads to intestinal metaplasia, accompanied by pseudopyloric metaplasia, and both stay confined to the acid-secreting body and fundus.<!--c:metaplasia-c077-->
 
 ## Pathogenesis
 
-- **Reprogramming of a lineage.** Two explanations compete and neither is proven: tissue stem cells may be steered toward a new lineage, or cells already on their way to maturity may change course.<!--c:metaplasia-c015-->
-- **In the cervix the reserve-cell route can be seen directly.** The glycogen-laden squamous cells that come to line the transformation zone descend from reserve cells; this population, ordinarily just one cell thick, expands and gradually takes over the territory of the mucinous lining.<!--c:metaplasia-c016-->
+- **Reprogramming of a lineage.** Two explanations compete and neither is proven: tissue stem cells may be steered toward a new lineage, or cells already on their way to maturity may change course.<!--c:metaplasia-c015--> For Barrett esophagus, one proposed model, still unproven, is called transcommitment: progenitor cells of the reflux-damaged lining start using transcription factors that drive a columnar phenotype (SOX9) and an intestinal one (CDX2) in place of squamous ones.<!--c:metaplasia-c083-->
+- **Reserve and basal cells.** In the cervix, the glycogen-laden squamous cells that come to line the transformation zone descend from reserve cells, which multiply and gradually replace the mucinous lining.<!--c:metaplasia-c016--> In the smoker's bronchus, squamous metaplasia likewise comes from the basal cell layer as it regenerates the injured lining.<!--c:metaplasia-c084-->
 - **Protective trade-off.** The new epithelium resists the specific insult: squamous cells withstand smoke, and intestinal-type glandular mucosa in Barrett esophagus resists acid and pepsin better than squamous epithelium does.<!--c:metaplasia-c017--> The price is lost function: squamous bronchial epithelium makes less mucus and cannot clear it by ciliary action.<!--c:metaplasia-c018-->
 - **Persistent proliferation as the link to cancer.** Ongoing irritant-driven proliferation in a metaplastic field can lead to cancer.<!--c:metaplasia-c019--> Every round of DNA replication can introduce errors, so years of proliferation let mutations build up.<!--c:metaplasia-c020--> Dysplasia can arise within metaplastic epithelium, as in the smoker's bronchus or Barrett mucosa.<!--c:metaplasia-c021-->
 
 ## Gross morphology
 
 - **Barrett esophagus:** salmon-pink mucosa at endoscopy, extending as tongues into the paler squamous mucosa or covering the entire distal esophagus.<!--c:metaplasia-c022-->
-- **Cervical transformation zone:** at colposcopy, young metaplastic epithelium looks faintly white; the whitening becomes denser as the epithelium matures.<!--c:metaplasia-c023-->
+- **Cervical transformation zone:** at colposcopy, young metaplastic epithelium shows as a thin white film; as it matures and stores glycogen, it comes to look like the native squamous lining.<!--c:metaplasia-c023-->
 - **Nephrogenic metaplasia** of the bladder can form papillary nodules that look like tumors.<!--c:metaplasia-c024-->
 
 ## Microscopic morphology
@@ -41,11 +41,20 @@ Metaplasia is the replacement of one mature, differentiated cell type by another
 - **Barrett esophagus:** "specialized" epithelium with well-formed goblet cells mixed with gastric foveolar cells, often in a villiform architecture, replaces the squamous lining.<!--c:metaplasia-c027-->
 - **Gastric intestinal metaplasia:** goblet cells appear in atrophic gastric mucosa.<!--c:metaplasia-c028-->
 - **Urothelium:** cystitis glandularis (mucin-secreting glands) and nephrogenic metaplasia (small tubules resembling renal tubules in the lamina propria).<!--c:metaplasia-c029-->
+- **Breast:** fibrocystic change includes apocrine metaplasia, in which cyst-lining cells take on an apocrine look, with plentiful eosinophilic cytoplasm.<!--c:metaplasia-c078-->
 - **Mesenchymal metaplasia** also exists: bone can form in calcified arterial media (osseous metaplasia).<!--c:metaplasia-c030-->
 
 ## Special stains, IHC and molecular findings
 
-- **Schiller iodine test:** iodine darkens glycogen-laden mature squamous epithelium to mahogany brown; glycogen-poor immature metaplastic epithelium does not take it up and looks pale.<!--c:metaplasia-c031-->
+**How it is studied:**
+
+- **H&E, the essential step:** look for a mature cell type that does not belong to the site, compare it with the native lining in the same section, and check that it matures normally, without the nuclear atypia of dysplasia.<!--c:metaplasia-c069-->
+- **Esophagus (endoscopic biopsies):** the endoscopist places the gastroesophageal junction at the upper end of the gastric folds, and goblet cells mean Barrett esophagus only in biopsies of columnar mucosa above that line, because intestinal metaplasia of the gastric cardia is common and is a different condition.<!--c:metaplasia-c070--> Goblet cells are patchy, so the chance of finding them grows with the number of samples: at least eight biopsies are taken when Barrett esophagus is suspected, and surveillance of Barrett esophagus without dysplasia samples each 2-cm level of the segment in all four quadrants.<!--c:metaplasia-c085--> Alcian blue colors the acid mucin of goblet cells, whereas the neutral mucin of gastric-type foveolar cells takes up only PAS; the stain cannot settle the diagnosis, because non-goblet "columnar blue" cells also contain acid mucin and stain, usually more weakly.<!--c:metaplasia-c071-->
+- **Stomach (endoscopic biopsies):** the same biopsy is examined for *Helicobacter*, the leading cause of atrophic gastritis with intestinal metaplasia; immunostaining or a silver stain such as Warthin–Starry shows the bacteria more clearly than H&E.<!--c:metaplasia-c072--> Biopsies are labeled by site, because where atrophy and metaplasia lie points to the cause: antrum-predominant and multifocal in *Helicobacter*-related (environmental) gastritis, confined to body and fundus in autoimmune gastritis.<!--c:metaplasia-c073-->
+- **Cervix (colposcopy):** in the Schiller test, iodine darkens glycogen-laden mature squamous epithelium to mahogany brown; glycogen-poor immature metaplastic epithelium does not take it up and looks pale.<!--c:metaplasia-c031--> After menopause colposcopy may fail to see the transformation zone, because inversion of the cervix moves it up into the endocervical canal.<!--c:metaplasia-c075-->
+- **Cervix (cytology and biopsy):** the Pap smear only screens; a lesion found on the smear is classified on histology, in a loop electrosurgical excision (LEEP) specimen, which removes the whole transformation zone, or in biopsies aimed under colposcopy.<!--c:metaplasia-c074-->
+- **Cervix (immunohistochemistry):** when immature squamous metaplasia and a high-grade lesion (CIN 3) look alike on H&E, two stains help: in one study p16 stayed negative in immature metaplasia, whose cells expressed CK17, a marker of reserve cells, while CIN 3 showed the reverse pattern.<!--c:metaplasia-c076-->
+- **Molecular tests:** in Barrett esophagus, biomarkers that might predict progression are still being studied, and the 2016 ACG guideline does not recommend them for routine risk stratification, so assessment still rests on morphology and the grade of dysplasia.<!--c:metaplasia-c086-->
 
 ## Clinical presentation
 
@@ -63,17 +72,18 @@ Metaplasia is the replacement of one mature, differentiated cell type by another
 ## Complications and prognosis
 
 - **Reversible:** metaplasia usually regresses once the stimulus is removed; after smoking stops, bronchial epithelium eventually returns to columnar.<!--c:metaplasia-c039-->
-- **Cancer soil:** carcinomas of the lung, stomach, bladder and other sites often arise in metaplastic areas.<!--c:metaplasia-c040-->
+- **Cancer soil:** in many organs, carcinomas often arise in metaplastic areas, as the examples below show.<!--c:metaplasia-c040-->
+- **Lung:** in smokers, squamous cell carcinoma develops from metaplastic bronchial epithelium by way of dysplasia and carcinoma in situ, and most of these tumors are central, in the large bronchi.<!--c:metaplasia-c079-->
 - **Barrett esophagus → dysplasia → adenocarcinoma** in a minority of patients; longer Barrett segments and higher-grade dysplasia carry more risk.<!--c:metaplasia-c041--> The annual risk of adenocarcinoma is low, about 0.1–0.3%.<!--c:metaplasia-c042--> Guideline-based (ACG 2016, subject to revision): without dysplasia, surveillance endoscopy every 3–5 years; dysplasia is treated by radiofrequency ablation, with endoscopic resection of nodular areas.<!--c:metaplasia-c043-->
 - **Stomach:** atrophic gastritis → intestinal metaplasia → dysplasia → gastric adenocarcinoma.<!--c:metaplasia-c044-->
-- **Cervix:** the transformation zone is where cervical squamous carcinoma arises.<!--c:metaplasia-c045-->
-- **Bladder:** cystitis glandularis and other metaplastic urothelial lesions are not regarded as precancerous in themselves, but they mark patients at increased risk of urothelial carcinoma, and cystitis glandularis also of adenocarcinoma.<!--c:metaplasia-c046-->
+- **Cervix:** the transformation zone is where cervical squamous carcinoma arises.<!--c:metaplasia-c045--> The cells susceptible to HPV are stem cells of this zone, and the virus can steer them into a squamous intraepithelial lesion; without it, the same cells end in benign squamous metaplasia.<!--c:metaplasia-c080-->
+- **Bladder:** cystitis glandularis and other metaplastic urothelial lesions are not regarded as precancerous in themselves, but they mark patients at increased risk of urothelial carcinoma, and cystitis glandularis also of adenocarcinoma.<!--c:metaplasia-c046--> Schistosomiasis is the usual background of squamous cell carcinoma of the bladder, which grows where the urothelium has turned squamous.<!--c:metaplasia-c081-->
 
 ## Differential diagnosis
 
 | Entity | Discriminating features | Key test |
 |---|---|---|
-| [[dysplasia]] | Disordered growth and maturation with variable cell size, enlarged hyperchromatic nuclei and mitoses above the basal layer; metaplastic cells instead mature normally into another cell type.<!--c:metaplasia-c047--> | Histology: maturation and nuclear atypia |
+| [[dysplasia]] | Disordered growth and maturation with variable cell size, enlarged hyperchromatic nuclei and mitoses above the basal layer; metaplastic cells instead mature normally into another cell type.<!--c:metaplasia-c047--> | Histology: maturation and nuclear atypia; in the cervix, p16 and CK17 IHC |
 | [[hyperplasia]] | More cells of the same type; the lineage does not change.<!--c:metaplasia-c048--> | Histology: cell type compared with native lining |
 | Invasive squamous carcinoma (cervix) | Benign squamous metaplasia can occupy endocervical gland crypts and so imitate invasion.<!--c:metaplasia-c049--> | Histology: bland, maturing squamous cells with smooth, rounded gland outlines; no atypia and no stromal invasion |
 | Urothelial neoplasm (bladder) | Nephrogenic metaplasia can protrude into the bladder lumen as papillary, tumor-like nodules built of tubules that resemble renal tubules.<!--c:metaplasia-c050--> | Histology: bland renal-type tubules or mucin-secreting glands, without atypia |
@@ -91,6 +101,7 @@ Metaplasia is the replacement of one mature, differentiated cell type by another
 
 - **Metaplasia is not dysplasia.** Metaplastic cells look like normal mature cells of a different type; dysplasia means atypia and disordered maturation.<!--c:metaplasia-c057-->
 - **Metaplasia is not harmless** even when protective: function is lost and cancers often arise in metaplastic areas.<!--c:metaplasia-c058-->
+- **Not every metaplasia leads toward cancer:** the apocrine metaplasia of fibrocystic change belongs to the nonproliferative breast changes, which do not raise breast-cancer risk.<!--c:metaplasia-c082-->
 - **It is not one-way.** Columnar can become squamous (bronchus), but squamous can become columnar (Barrett) and one glandular type can replace another (stomach).<!--c:metaplasia-c059-->
 - **Barrett esophagus needs goblet cells** (US/ACG definition); this "specialized epithelium" is the defining finding.<!--c:metaplasia-c060-->
 - **Many Barrett patients have no reflux symptoms**, so absence of heartburn does not exclude it.<!--c:metaplasia-c061-->

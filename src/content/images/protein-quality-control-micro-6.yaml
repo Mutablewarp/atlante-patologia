@@ -1,0 +1,98 @@
+# License check (2026-11-09): Commons file page {{Information}} gives Source {{own}}, Author [[User:Patho|Patho]],
+# license {{self|cc-by-sa-3.0}}; extmetadata LicenseShortName "CC BY-SA 3.0", AttributionRequired true, no
+# Restrictions. The file has one version, uploaded by Patho on 2012-06-24, so the uploader is the creator. CC BY-SA is
+# approved as a class by owner decision O7 (plan/v2-plan.md, 2026-11-03), hence ownerApproved: true. Histology only;
+# nothing identifies the patient. Group neurofibrillary-tangles-patho with protein-quality-control-micro-5 (Gallyas):
+# the author lists the two files as "other versions" of each other (see that file). The source names the stain
+# ("immunohistochemistry for tau protein") but not the antibody, chromogen or magnification: the colours are described
+# as seen (red product, blue counterstain) and `magnification` is our reading of the field. Annotations placed by
+# inspection on a gridded copy of the file.
+id: protein-quality-control-micro-6
+file: protein-quality-control-micro-6.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Neurofibrillary_tangles_in_the_Hippocampus_of_an_old_person_with_Alzheimer-related_pathology,_immunohistochemistry_for_tau_protein.JPG
+author: Patho
+license: CC-BY-SA-3.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/3.0/
+retrievedAt: 2026-11-09
+modifications:
+  it: >-
+    Ridimensionata dall'originale di Commons di 1920 × 1280 px a 1600 × 1067 px e ricodificata in JPEG (qualità 85);
+    nessun ritaglio, nessuna modifica dei colori. Questo adattamento è condiviso con la stessa licenza (CC BY-SA 3.0).
+  en: >-
+    Downscaled from the 1920 × 1280 px Commons original to 1600 × 1067 px and re-encoded as JPEG (quality 85); no crop,
+    no colour change. This adaptation is shared under the same licence (CC BY-SA 3.0).
+attributionText: >-
+  Patho, "Neurofibrillary tangles in the Hippocampus of an old person with Alzheimer-related pathology,
+  immunohistochemistry for tau protein", via Wikimedia Commons, CC BY-SA 3.0
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-09 }
+group: neurofibrillary-tangles-patho
+stain: immunohistochemistry for tau protein
+magnification: high power
+lookFor:
+  it: "Confronta i neuroni rossi con quelli blu: il rosso segnala la tau, quindi si colorano solo le cellule con aggregati di tau e i sottili filamenti del neuropilo."
+  en: "Compare the red neurons with the blue ones: red marks tau, so only cells holding tau aggregates, and fine threads in the neuropil, are coloured."
+caption:
+  it: >-
+    La stessa serie didattica dell'impregnazione argentica (ippocampo di una persona anziana con alterazioni di tipo
+    Alzheimer), immunoistochimica per la proteina tau, forte ingrandimento. Qui il segnale dell'anticorpo è rosso e la
+    controcolorazione è blu. Comincia da un neurone rimasto blu: il grande neurone in basso a destra ha un citoplasma
+    pulito, senza aggregati di tau. Poi confronta quelli rossi. Nel neurone in alto a destra il rosso riempie il corpo
+    cellulare attorno al nucleo blu e prosegue in un lungo prolungamento; al centro il rosso si raccoglie a semiluna
+    accanto al nucleo. Sono grovigli neurofibrillari riconosciuti dalla loro proteina, non soltanto dalla forma. Infine
+    guarda il neuropilo: i piccoli punti e i brevi filamenti rossi tra le cellule sono tau dentro sottili prolungamenti
+    dei neuroni (i cosiddetti neuropil threads); nella malattia di Alzheimer la tau anomala si raccoglie nei corpi
+    cellulari come grovigli e nei prolungamenti come filamenti. Perché chiedere questa colorazione: l'argento annerisce
+    diversi tipi di aggregati, e una colorazione per l'ubiquitina evidenzierebbe allo stesso modo grovigli e corpi di
+    Lewy, perché entrambi portano quel marcatore; un anticorpo contro la proteina che si aggrega, qui la tau, dice
+    invece quale inclusione stai guardando.
+  en: >-
+    The same teaching set as the silver stain (hippocampus of an elderly person with Alzheimer-type changes),
+    immunohistochemistry for tau protein, high power. Here the antibody signal is red and the counterstain blue. Start
+    with a neuron that stays blue: the large neuron at the lower right has clean cytoplasm and no tau aggregate. Then
+    compare the red ones. In the neuron at the upper right, red fills the cell body around the blue nucleus and
+    continues down a long process; in the centre, red gathers in a crescent beside the nucleus. These are
+    neurofibrillary tangles recognised by their protein, not only by their shape. Finally look at the neuropil: the
+    small red dots and short threads between the cells are tau inside fine processes of nerve cells, the so-called
+    neuropil threads; in Alzheimer disease abnormal tau collects in cell bodies as tangles and in processes as threads.
+    Why ask for this stain: silver blackens several kinds of aggregate, and a stain for ubiquitin would light up tangles
+    and Lewy bodies alike, because both carry that tag; an antibody to the aggregating protein itself, tau here, tells
+    you which inclusion you are looking at.
+alt:
+  it: >-
+    Micrografia immunoistochimica di tessuto cerebrale su fondo blu. Tre neuroni sono colorati di rosso scuro: uno in
+    alto a destra con un lungo prolungamento rosso diretto verso il basso, uno al centro con una semiluna rossa accanto
+    a un nucleo blu e uno più sottile a sinistra. Un grande neurone in basso a destra è soltanto blu; piccoli punti e
+    filamenti rossi sono sparsi tra le cellule.
+  en: >-
+    Immunostained micrograph of brain tissue on a blue background. Three neurons are coloured dark red: one at the upper
+    right with a long red process running downwards, one in the centre with a red crescent beside a blue nucleus, and a
+    narrower one at the left. A large neuron at the lower right is blue only; small red dots and threads are scattered
+    between the cells.
+annotations:
+  - id: tau-positive-neuron
+    label: { it: "Neurone tau-positivo: il rosso riempie il corpo cellulare e un lungo prolungamento", en: "Tau-positive neuron: red fills the cell body and a long process" }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.69, 0.22, 0.715, 0.195, 0.775, 0.205, 0.8, 0.235, 0.79, 0.33, 0.775, 0.42, 0.79, 0.55, 0.815, 0.68, 0.83, 0.76, 0.81, 0.775, 0.785, 0.7, 0.765, 0.58, 0.745, 0.47, 0.715, 0.42, 0.695, 0.34]
+  - id: tau-beside-nucleus
+    label: { it: Aggregato di tau a semiluna accanto al nucleo, en: Crescent of tau aggregate beside the nucleus }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.47, 0.456, 0.47, 0.538, 0.438, 0.597, 0.392, 0.597, 0.36, 0.538, 0.36, 0.456, 0.392, 0.397, 0.438, 0.397]
+  - id: tau-negative-neuron
+    label: { it: "Neurone tau-negativo (solo blu)", en: "Tau-negative neuron (blue only)" }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.919, 0.672, 0.919, 0.74, 0.893, 0.788, 0.855, 0.788, 0.829, 0.74, 0.829, 0.672, 0.855, 0.624, 0.893, 0.624]
+  - id: neuropil-threads
+    label: { it: "Neuropil threads: tau nei sottili prolungamenti dei neuroni", en: "Neuropil threads: tau in thin neuronal processes" }
+    revealOrder: 4
+    shape:
+      type: polygon
+      coords: [0.34, 0.635, 0.46, 0.635, 0.46, 0.71, 0.34, 0.71]

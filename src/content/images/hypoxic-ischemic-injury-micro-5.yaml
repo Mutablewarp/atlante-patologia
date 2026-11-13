@@ -1,0 +1,90 @@
+# License check (2026-11-08): Commons file page {{Information}} gives source {{own}}, author [[User:Patho|Patho]],
+# license {{self|cc-by-sa-3.0}}; extmetadata LicenseShortName "CC BY-SA 3.0", Artist "Patho", Credit "Own work",
+# AttributionRequired true, no Restrictions. Self-published by its creator; CC BY-SA approved as a class by owner
+# decision O7 (plan/v2-plan.md, 2026-11-03), hence ownerApproved: true. Histology only; nothing identifies the patient.
+# Same upload set and description as hypoxic-ischemic-injury-micro-4 ("Global hypoxic neuronal injury after
+# cardiopulmonal reanimation, not sufficient to cause infarction in this area"), hence the shared group. The source
+# states neither magnification nor region: "high power" is our estimate (a neuronal cell body spans about a seventh
+# of the field), so no `objective` and no `mpp`. Caption facts checked on rubin-8e p. 1456 (red neurons with nuclear
+# pyknosis in infarcts after 6 to 24 hours of survival) and ch. 1 (eosinophilia and pyknosis of irreversible injury,
+# claims hypoxic-ischemic-injury-c036 and -c037).
+id: hypoxic-ischemic-injury-micro-5
+file: hypoxic-ischemic-injury-micro-5.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Hypoxic_neuronal_injury,_HE_2.jpg
+author: Patho
+license: CC-BY-SA-3.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/3.0/
+retrievedAt: 2026-11-08
+modifications:
+  it: "Ridimensionata da 1920 × 1280 a 1600 × 1067 px e salvata di nuovo in JPEG."
+  en: "Downscaled from 1920 × 1280 to 1600 × 1067 px and re-saved as JPEG."
+attributionText: 'Patho, "Hypoxic neuronal injury, HE 2", via Wikimedia Commons, CC BY-SA 3.0'
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+group: hypoxic-neuronal-injury-patho
+stain: H&E
+magnification: high power (not stated by the source; estimated from the size of the neurons)
+lookFor:
+  it: "Su ogni neurone verifica tre cose: corpo raggrinzito e angolato, citoplasma liscio rosa intenso, nucleo piccolo e scuro senza nucleolo."
+  en: "Check three things on each neuron: a shrunken, angular body, smooth deep pink cytoplasm, a small dark nucleus without a nucleolus."
+caption:
+  it: >-
+    Stessa serie dell'immagine a piccolo ingrandimento, EE a forte ingrandimento: il quadro classico del danno neuronale
+    ipossico-ischemico acuto, il «neurone rosso». Osserva i tre neuroni piramidali in alto a sinistra, al centro e in
+    basso al centro. Il corpo cellulare è raggrinzito e angolato, il citoplasma è liscio e di un rosa intenso, senza i
+    granuli bluastri di un neurone sano, e il nucleo è piccolo, scuro e omogeneo, senza nucleolo visibile: è la
+    picnosi. Il lungo dendrite è ancora attaccato, quindi per ora la cellula conserva il suo profilo. Un alone chiaro
+    separa ogni corpo cellulare dal neuropilo circostante, pieno di piccoli vacuoli rotondi, e accanto al neurone in
+    basso si vedono due piccoli nuclei scuri di cellule gliali. Nel loro insieme queste alterazioni indicano che il
+    neurone ha superato il punto di non ritorno; negli infarti cerebrali questo quadro si osserva
+    quando il paziente è sopravvissuto circa 6–24 ore. Raggrinzito + rosa intenso + nucleo piccolo e scuro = neurone
+    rosso = neurone morto.
+  en: >-
+    From the same series as the low-power view, H&E at high power: the classic picture of acute hypoxic-ischemic
+    injury of a neuron, the "red neuron". Look at the three pyramidal neurons at the upper left, in the centre and at
+    the lower centre. Each cell body is shrunken and angular, its cytoplasm is smooth and intensely pink, without the
+    bluish granules of a healthy neuron, and its nucleus is small, dark and uniform, with no nucleolus to be seen:
+    this is pyknosis. The long dendrite is still attached, so for now the cell keeps its outline. A clear halo
+    separates each cell body from the surrounding neuropil, which is full of small round holes, and two small dark
+    glial nuclei lie next to the lower neuron. Taken together, these changes mean that the neuron has passed the
+    point of no return; in brain infarcts this picture is seen once the patient has survived about 6–24
+    hours. Shrunken + deep pink + small dark nucleus = red neuron = dead neuron.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina a forte ingrandimento: tre neuroni triangolari con citoplasma rosa intenso e
+    nucleo piccolo e scuro, ciascuno con un lungo prolungamento sottile diretto in basso a destra e un alone bianco
+    intorno al corpo cellulare, su uno sfondo rosa pieno di piccoli fori chiari rotondi; due piccoli nuclei scuri
+    accanto al neurone più in basso.
+  en: >-
+    High-power H&E micrograph: three triangular neurons with deep pink cytoplasm and small dark nuclei, each with a
+    long, thin process running towards the lower right and a white halo around the cell body, on a pink background
+    full of small, round clear holes; two small dark nuclei sit next to the lowest neuron.
+annotations:
+  - id: red-neuron
+    label: { it: "Neurone rosso: raggrinzito, angolato, rosa intenso", en: "Red neuron: shrunken, angular, deep pink" }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.539, 0.53, 0.562, 0.514, 0.594, 0.506, 0.619, 0.544, 0.644, 0.581, 0.625, 0.609, 0.588, 0.6, 0.556, 0.581, 0.541, 0.558]
+  - id: pyknotic-nucleus
+    label: { it: "Nucleo piccolo e scuro (picnosi)", en: "Small dark nucleus (pyknosis)" }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.159, 0.117, 0.188, 0.103, 0.209, 0.127, 0.212, 0.164, 0.191, 0.178, 0.166, 0.169, 0.156, 0.141]
+  - id: perineuronal-halo
+    label: { it: "Alone chiaro intorno al corpo cellulare", en: "Clear halo around the cell body" }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.101, 0.033, 0.125, 0.028, 0.122, 0.066, 0.134, 0.108, 0.15, 0.15, 0.188, 0.192, 0.159, 0.208, 0.122, 0.187, 0.105, 0.141]
+  - id: glial-nuclei
+    label: { it: "Nuclei di cellule gliali", en: "Glial cell nuclei" }
+    revealOrder: 4
+    shape: { type: polygon, coords: [0.628, 0.682, 0.667, 0.682, 0.667, 0.778, 0.628, 0.778] }
+  - id: vacuolated-neuropil
+    label: { it: "Neuropilo con piccoli vacuoli", en: "Neuropil with small holes" }
+    revealOrder: 5
+    shape: { type: polygon, coords: [0.806, 0.347, 0.975, 0.347, 0.975, 0.44, 0.806, 0.44] }

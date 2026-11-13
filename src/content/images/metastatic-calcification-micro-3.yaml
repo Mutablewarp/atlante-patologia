@@ -1,0 +1,87 @@
+# License check (2026-11-08): Commons file page {{Information}} gives Source = Flickr photo 4962399264 (stream
+# "pulmonary_pathology", "Metastatic calcification Case 141"), Author = Yale Rosen; licence template {{cc-by-sa-2.0}},
+# confirmed by {{FlickreviewR}} (status passed, 2019-10-03, archived Flickr page); extmetadata LicenseShortName
+# "CC BY-SA 2.0", AttributionRequired true. The Flickr stream is the author's own, so the Commons transfer (by User:Netha
+# Hussain) opens no uploader/creator gap. CC BY-SA is approved as a class by owner decision O7 (plan/v2-plan.md,
+# 2026-11-03), hence ownerApproved: true. Histology only; nothing identifies the patient. Source description: metastatic
+# calcification of alveolar walls and blood vessels in an area of acute pneumonitis. The source names neither the stain
+# nor the magnification (H&E read from the colours; low power judged from the field: alveoli span 150-250 px of 1280).
+# Same case and teaching set as metastatic-calcification-micro-4 (Flickr 4961805859): one group, low and medium power.
+# Facts in the caption checked against rubin-8e ch. 1 pp. 29-30 (definition, sites), ch. 30 p. 1362 (local alkalinity)
+# and ch. 22 p. 965 (haematoxylin and von Kossa).
+id: metastatic-calcification-micro-3
+file: metastatic-calcification-micro-3.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Metastatic_calcification_Case_141_(4962399264).jpg
+author: Yale Rosen
+license: CC-BY-SA-2.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/2.0/
+retrievedAt: 2026-11-08
+modifications:
+  it: >-
+    Ricodifica dell'originale da 1280 × 960 px in JPEG (qualità 88), operazione che rimuove anche i metadati EXIF della
+    fotocamera; nessun ritaglio, nessun ridimensionamento, nessuna modifica dei colori. Questo adattamento è condiviso con
+    la stessa licenza (CC BY-SA 2.0).
+  en: >-
+    Re-encoded the 1280 × 960 px original as JPEG (quality 88), which also strips the camera EXIF metadata; no crop, no
+    resize, no colour change. This adaptation is shared under the same licence (CC BY-SA 2.0).
+attributionText: >-
+  Yale Rosen, "Metastatic calcification Case 141" (Flickr 4962399264), via Wikimedia Commons, CC BY-SA 2.0
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+group: metastatic-calcification-lung-rosen-141
+stain: H&E (not named by the source; read from the colours)
+magnification: low power (not stated by the source; judged from the field)
+lookFor:
+  it: "Segui le linee viola scuro: sono pareti alveolari e vascolari incrostate di calcio, non nuclei."
+  en: "Follow the dark purple lines: they are alveolar and vessel walls encrusted with calcium, not nuclei."
+caption:
+  it: >-
+    Calcificazione metastatica del polmone a piccolo ingrandimento (la fonte non indica né la colorazione né
+    l'ingrandimento; i colori sono quelli dell'EE). Leggi il disegno d'insieme prima delle singole strutture: linee viola
+    scuro attraversano tutto il campo e disegnano gli alveoli come le maglie di una rete, perché i sali di calcio hanno
+    incrostato le pareti alveolari; qua e là, dove più pareti si incontrano, il deposito si ispessisce in nodi scuri. Ora
+    cerca i profili rotondi a sinistra: sono piccoli vasi con la parete cerchiata dallo stesso materiale viola scuro, e un
+    vaso più lungo, sezionato longitudinalmente, attraversa la parte in alto a destra con emazie nel lume. Gli spazi alveolari
+    sono pieni di un materiale rosa pallido, finemente fibrillare, con cellule sparse: è la polmonite acuta che la fonte
+    segnala in quest'area, non calcio. In EE il calcio è basofilo, quindi una rete viola come questa si può scambiare per
+    nuclei affollati o per fibrosi; passa all'ingrandimento maggiore per vedere che si tratta di minerale granuloso, e
+    ricorda che con la von Kossa diventerebbe nero. Perché proprio qui: la calcificazione metastatica predilige le pareti
+    degli alveoli e dei vasi, come in questo campo, e in generale i tessuti un po' più alcalini di ciò che li circonda.
+    La fonte non indica la malattia di base di questo paziente.
+  en: >-
+    Metastatic calcification of the lung at low power (the source names neither the stain nor the magnification; the
+    colours are those of H&E). Read the overall pattern before any single structure: dark purple lines run through the
+    whole field and outline the alveoli like the meshes of a net, because calcium salts have encrusted the alveolar
+    walls; here and there, where several walls meet, the deposit thickens into dark knots. Now find the round profiles on
+    the left: they are small vessels whose walls are ringed by the same dark purple material, and a longer vessel, cut
+    lengthwise, crosses the upper right with red cells in its lumen. The alveolar spaces are filled with a pale pink,
+    finely fibrillar material with scattered cells: this is the acute pneumonitis that the source reports in this area,
+    not calcium. On H&E calcium is basophilic, so a purple network like this one can be mistaken for crowded nuclei or
+    for fibrosis; switch to the higher power to see that it is granular mineral, and remember that von Kossa would turn
+    it black. Why here: metastatic calcification favours the walls of alveoli and vessels, as in this field, and in
+    general tissue that is slightly more alkaline than its surroundings. The source does not give this patient's
+    underlying disease.
+alt:
+  it: >-
+    Micrografia di polmone a piccolo ingrandimento in rosa e viola: una rete di linee viola scuro, sottili e spesse,
+    delimita ampi spazi alveolari pieni di materiale rosa pallido finemente fibrillare; a sinistra vasi rotondi con la
+    parete ad anello viola scuro e sangue nel lume; in alto a destra un lungo vaso con la parete viola scuro.
+  en: >-
+    Low-power micrograph of lung in pink and purple: a network of thin and thick dark purple lines outlines large
+    alveolar spaces filled with pale pink, finely fibrillar material; on the left, round vessels with dark purple
+    ring-shaped walls and blood in the lumen; at the upper right, a long vessel with a dark purple wall.
+annotations:
+  - id: calcified-vessel-wall
+    label: { it: "Piccolo vaso con la parete cerchiata di calcio", en: "Small vessel with a calcium-ringed wall" }
+    revealOrder: 1
+    shape: { type: circle, coords: [0.30, 0.583, 0.045] }
+  - id: encrusted-alveolar-walls
+    label: { it: "Pareti alveolari ispessite dal calcio (viola scuro)", en: "Alveolar walls thickened by calcium (dark purple)" }
+    revealOrder: 2
+    shape: { type: rect, coords: [0.673, 0.75, 0.094, 0.14] }
+  - id: alveolar-exudate
+    label: { it: "Alveolo pieno di essudato rosa pallido (polmonite acuta)", en: "Alveolus filled with pale pink exudate (acute pneumonitis)" }
+    revealOrder: 3
+    shape: { type: rect, coords: [0.78, 0.56, 0.14, 0.14] }

@@ -1,11 +1,11 @@
 ---
 lang: it
-translatedFrom: 1d52b167a3827ac29023a18763c09329768b92173a480cdc79be58dba540fe96
+translatedFrom: 963b884771f76be9dd0bd0b57ef8484c69ec365942ff99efdaebad37008f5d46
 ---
 
 ## Definizione ed epidemiologia
 
-Il danno da ischemia-riperfusione è la lesione aggiuntiva che un tessuto subisce quando il flusso ematico ritorna dopo un periodo di ischemia.<!--c:ischemia-reperfusion-injury-c001--> La riperfusione resta comunque vantaggiosa, perché salva le cellule danneggiate ma ancora vitali; il paradosso è che il sangue di ritorno può uccidere anche una parte delle cellule che avrebbe dovuto salvare.<!--c:ischemia-reperfusion-injury-c002--> Nel cuore questa componente da riperfusione può rappresentare fino alla metà dell'estensione finale dell'infarto.<!--c:ischemia-reperfusion-injury-c003--> In quanto processo generale non ha un'epidemiologia propria: segue la frequenza delle malattie ischemiche in cui il flusso viene ripristinato.
+Il danno da ischemia-riperfusione è la lesione aggiuntiva che un tessuto subisce quando il flusso ematico ritorna dopo un periodo di ischemia.<!--c:ischemia-reperfusion-injury-c001--> La riperfusione resta comunque vantaggiosa, perché salva le cellule danneggiate ma ancora vitali; il paradosso è che il sangue di ritorno può uccidere anche una parte delle cellule che avrebbe dovuto salvare.<!--c:ischemia-reperfusion-injury-c002--> Fino alla metà del miocardio che alla fine risulta infartuato può essere ucciso dalla riperfusione, anziché dall'ischemia in sé.<!--c:ischemia-reperfusion-injury-c003--> In quanto processo generale non ha un'epidemiologia propria: segue la frequenza delle malattie ischemiche in cui il flusso viene ripristinato.
 
 ## Eziologia e fattori di rischio
 
@@ -25,27 +25,32 @@ La variabile decisiva è la durata dell'ischemia, che stabilisce se la riperfusi
 **La riperfusione aggiunge poi cinque meccanismi tra loro sovrapposti:**
 
 1. **Esplosione di ROS.** L'O2 che ritorna reagisce con i radicali liberi e i substrati accumulati durante l'ischemia e fa aumentare bruscamente le ROS.<!--c:ischemia-reperfusion-injury-c013--> La xantina ossidasi ha bisogno di ossigeno: quando l'O2 torna disponibile, converte la xantina accumulata in acido urico e genera superossido.<!--c:ischemia-reperfusion-injury-c014--> I mitocondri aggiungono altre ROS quando il trasporto degli elettroni riprende all'improvviso, mentre i loro sistemi antiossidanti sono ancora impoveriti.<!--c:ischemia-reperfusion-injury-c015-->
-2. **Sovraccarico di calcio.** Il pH intracellulare viene corretto bruscamente e lo scambiatore Na+/Ca2+ funziona in senso inverso, aggravando il sovraccarico di Ca2+ iniziato durante l'ischemia.<!--c:ischemia-reperfusion-injury-c017--> L'elevata concentrazione citosolica di Ca2+ attiva la fosfolipasi A2 e le proteasi, che degradano le membrane e staccano il citoscheletro dalla membrana plasmatica.<!--c:ischemia-reperfusion-injury-c018-->
+2. **Sovraccarico di calcio.** La riperfusione corregge bruscamente l'acidosi intracellulare e lo scambiatore Na+/Ca2+ comincia a funzionare in senso inverso, aggravando il carico di Ca2+ accumulato durante l'ischemia.<!--c:ischemia-reperfusion-injury-c017--> L'elevata concentrazione citosolica di Ca2+ attiva la fosfolipasi A2 e le proteasi, che degradano le membrane e staccano il citoscheletro dalla membrana plasmatica.<!--c:ischemia-reperfusion-injury-c018-->
 3. **Transizione di permeabilità mitocondriale.** Il sovraccarico di Ca2+, insieme alle ROS mitocondriali, provoca l'apertura prolungata del poro di transizione di permeabilità mitocondriale (MPTP).<!--c:ischemia-reperfusion-injury-c019--> Attraverso il poro aperto acqua e ioni entrano nella matrice: il potenziale di membrana crolla, il mitocondrio si rigonfia e la sintesi di ATP crolla.<!--c:ischemia-reperfusion-injury-c020--> Il citocromo c e altre proteine fuoriescono nel citosol e possono innescare l'apoptosi.<!--c:ischemia-reperfusion-injury-c021-->
-4. **Infiammazione.** Le cellule endoteliali espongono in superficie la P-selectina, così i neutrofili aderiscono (tramite ICAM-1) e liberano altre ROS ed enzimi idrolitici.<!--c:ischemia-reperfusion-injury-c022--> TNF-α, IL-1 e IL-6 causano vasocostrizione, favoriscono l'adesione di neutrofili e piastrine e agiscono anche a distanza.<!--c:ischemia-reperfusion-injury-c023--> L'attivazione del complemento porta alla deposizione di complessi di attacco alla membrana e richiama altri neutrofili.<!--c:ischemia-reperfusion-injury-c024--> Le piastrine aderiscono al microcircolo danneggiato e rilasciano mediatori che possono essere sia dannosi sia protettivi.<!--c:ischemia-reperfusion-injury-c025-->
-5. **Disregolazione dell'ossido nitrico.** In condizioni normali l'NO è protettivo: dilata i microvasi, inibisce l'aggregazione piastrinica e riduce l'adesione leucocitaria.<!--c:ischemia-reperfusion-injury-c026--> Alla riperfusione la superossido dismutasi viene inattivata e il superossido abbonda, per cui l'NO si combina con esso formando perossinitrito (ONOO−), che provoca rotture dei filamenti di DNA e perossida i lipidi di membrana.<!--c:ischemia-reperfusion-injury-c027-->
+4. **Infiammazione.** I neutrofili aggiungono le proprie ROS e i propri enzimi idrolitici; si legano più facilmente a ICAM-1 perché l'endotelio riperfuso espone la P-selectina che tiene in deposito.<!--c:ischemia-reperfusion-injury-c022--> Le citochine, soprattutto TNF-α, IL-1 e IL-6, fanno aderire neutrofili e piastrine all'endotelio e restringono i vasi.<!--c:ischemia-reperfusion-injury-c023--> L'attivazione del complemento porta alla deposizione di complessi di attacco alla membrana e richiama altri neutrofili.<!--c:ischemia-reperfusion-injury-c024--> Le piastrine che si depositano sui microvasi danneggiati hanno un effetto ambivalente: ciò che secernono può proteggere il tessuto ma anche danneggiarlo.<!--c:ischemia-reperfusion-injury-c025-->
+5. **Disregolazione dell'ossido nitrico.** In condizioni normali l'NO riduce l'adesione dei leucociti all'endotelio e mantiene dilatati i microvasi, per cui protegge il tessuto.<!--c:ischemia-reperfusion-injury-c026--> Alla riperfusione diventa dannoso attraverso il perossinitrito (ONOO−), prodotto dalla reazione tra NO e superossido, che provoca rotture dei filamenti di DNA e perossidazione dei lipidi di membrana; la riperfusione ne favorisce la formazione perché inattiva la superossido dismutasi, l'enzima che normalmente mantiene basso il superossido, proprio quando il superossido abbonda.<!--c:ischemia-reperfusion-injury-c027-->
 
-Ischemia e riperfusione compromettono inoltre il sistema ubiquitina-proteasoma: si accumulano così aggregati di proteine ubiquitinate, che insieme alle ROS e alla carenza di ATP attivano l'autofagia, con effetti adattativi o dannosi.<!--c:ischemia-reperfusion-injury-c028-->
+Si attiva anche l'autofagia, che può aiutare la cellula oppure danneggiarla; tra i suoi stimoli c'è l'accumulo di aggregati di proteine ubiquitinate, conseguenza del danno che ischemia e riperfusione infliggono al sistema ubiquitina-proteasoma.<!--c:ischemia-reperfusion-injury-c028-->
 
 ## Morfologia macroscopica
 
-L'infarto miocardico riperfuso è emorragico (infarto rosso), perché il sangue torna a scorrere attraverso un microcircolo danneggiato.<!--c:ischemia-reperfusion-injury-c029--> L'emorragia lo rende visibile precocemente, mentre l'infarto da occlusione persistente è pallido e si riconosce a occhio nudo solo dopo 12 ore circa.<!--c:ischemia-reperfusion-injury-c030-->
+Poiché il sangue che ritorna attraversa microvasi a loro volta danneggiati, l'infarto miocardico riperfuso è di solito emorragico (infarto rosso).<!--c:ischemia-reperfusion-injury-c029--> L'emorragia lo rende visibile precocemente, mentre l'infarto da occlusione persistente è pallido e si riconosce a occhio nudo solo dopo 12 ore circa.<!--c:ischemia-reperfusion-injury-c030-->
 
 ## Morfologia microscopica
 
-- La **necrosi a bande di contrazione** è il segno distintivo dell'infarto acuto riperfuso: grossolane bande eosinofile disposte di traverso, costituite da sarcomeri ipercontratti, con linee Z addensate e sarcolemma lacerato.<!--c:ischemia-reperfusion-injury-c031-->
+- La **necrosi a bande di contrazione** è tipica dell'infarto acuto che è stato riperfuso: nei miociti con il sarcolemma lacerato, una contrazione eccessiva compatta i sarcomeri in bande eosinofile che attraversano la fibra.<!--c:ischemia-reperfusion-injury-c031-->
 - Le bande si formano quando il sarcolemma danneggiato dalle ROS lascia entrare in massa il Ca2+ in miociti ancora capaci di contrarsi.<!--c:ischemia-reperfusion-injury-c032-->
-- Tra una banda e l'altra i mitocondri si rigonfiano e possono accumulare fosfato di calcio.<!--c:ischemia-reperfusion-injury-c033-->
-- I neutrofili si distribuiscono in tutto l'infarto e non solo alla periferia, compaiono e scompaiono più rapidamente, e la sostituzione cicatriziale è più veloce.<!--c:ischemia-reperfusion-injury-c034-->
+- Nella matrice dei mitocondri rigonfi situati tra le bande può precipitare fosfato di calcio.<!--c:ischemia-reperfusion-injury-c033-->
+- I neutrofili raggiungono anche il centro dell'infarto invece di fermarsi al margine, e arrivano e scompaiono prima: la riperfusione accelera l'intera sequenza, e dove il flusso persiste la cicatrice sostituisce prima il muscolo necrotico.<!--c:ischemia-reperfusion-injury-c034-->
 
 ## Colorazioni speciali, IIC e reperti molecolari
 
-Non applicabile.
+**Come si studia:**
+
+- **Autopsia (riscontro diagnostico), datazione dell'infarto:** la cronologia usata per datare un infarto (vedi [[coagulative-necrosis]]) è stata descritta negli infarti in cui l'arteria resta occlusa, mentre la riperfusione accelera sia l'infiammazione sia la riparazione: bisogna tenerne conto quando si data un infarto riperfuso.<!--c:ischemia-reperfusion-injury-c059-->
+- **Ematossilina-eosina (EE):** si cercano le bande di contrazione e si valuta quanto sono estese: al margine di un infarto da occlusione persistente, dove il sangue continua ad arrivare a tratti e lascia entrare calcio, le bande possono comparire in piccoli focolai, ma la riperfusione le rende molto più estese.<!--c:ischemia-reperfusion-injury-c060-->
+- **Microscopia elettronica:** è l'unico modo per vedere il correlato strutturale del miocardio stordito (vedi Complicanze e prognosi): le lievi alterazioni dei miociti con danno reversibile, che sono anche i primi segni dell'ischemia (vedi [[hypoxic-ischemic-injury]]).<!--c:ischemia-reperfusion-injury-c061--> Nel cuore di cane, miociti danneggiati in modo irreversibile accumulavano molto calcio se venivano riperfusi, ma nessuna quantità significativa se restavano ischemici; la microscopia elettronica, insieme ad altri metodi, ha localizzato gran parte di quel calcio all'interno dei mitocondri, in corpi densi apparentemente costituiti da fosfato di calcio.<!--c:ischemia-reperfusion-injury-c062-->
+- **Colorazioni speciali, IIC e test molecolari:** il testo di riferimento usato per questa scheda non ne descrive nessuno che riconosca il danno da riperfusione; per le colorazioni usate in qualsiasi infarto vedi [[hypoxic-ischemic-injury]] e [[coagulative-necrosis]].
 
 ## Presentazione clinica
 
@@ -59,11 +64,13 @@ Non applicabile.
 
 L'esito dipende da quanto è durata l'ischemia:<!--c:ischemia-reperfusion-injury-c038-->
 
-- **ischemia breve:** la riperfusione ripristina completamente struttura e funzione;
-- **ischemia intermedia:** le cellule muoiono durante la riperfusione, quindi terapie mirate al danno da riperfusione potrebbero salvarle e limitare l'estensione dell'infarto;
+- **ischemia breve:** la cellula si riprende completamente, nella struttura come nella funzione;
+- **ischemia intermedia:** le cellule muoiono solo dopo il ritorno del flusso, quindi è in questa finestra che l'infarto potrebbe essere ridotto proteggendole dal danno da riperfusione;
 - **ischemia prolungata:** le cellule muoiono già durante l'ischemia e la riperfusione non ne cambia più il destino.
 
-Il precondizionamento riduce la necrosi dopo un successivo episodio prolungato, attraverso vie come RISK (Akt, ERK, GSK3β), SAFE (TNF-α e STAT3) e HIF-1α.<!--c:ischemia-reperfusion-injury-c039--> Il fattore HIF-1α induce geni che frenano la generazione di ossidanti, il carico di calcio e la perdita di energia.<!--c:ischemia-reperfusion-injury-c040-->
+Anche dopo un'ischemia breve il recupero della funzione può tardare: nel cuore le ROS prodotte al ritorno del flusso possono indebolire la contrazione per ore senza che alcun miocita sia morto; è lo stato reversibile chiamato **miocardio stordito** (*stunning* miocardico).<!--c:ischemia-reperfusion-injury-c063-->
+
+Il precondizionamento ischemico (vedi Presentazione clinica) si basa su molti segnali: due vie fondamentali sono la via RISK (Akt, ERK, GSK3β) e la via SAFE (TNF-α e STAT3), tra oltre 100 molecole chiamate in causa negli studi sperimentali.<!--c:ischemia-reperfusion-injury-c039--> Un successivo episodio ischemico viene superato meglio anche grazie a HIF-1α, il fattore di trascrizione che guida la risposta all'ipossia: tra gli altri effetti, i geni che attiva frenano la produzione di ROS.<!--c:ischemia-reperfusion-injury-c040-->
 
 ## Diagnosi differenziale
 
@@ -72,7 +79,7 @@ Il precondizionamento riduce la necrosi dopo un successivo episodio prolungato, 
 | [[hypoxic-ischemic-injury]] | Danno che si produce durante il periodo ischemico stesso: perdita di ATP, acidosi, accumulo di Na+ e Ca2+, senza l'esplosione di ROS della riperfusione.<!--c:ischemia-reperfusion-injury-c041--> | Momento del danno rispetto al ripristino del flusso |
 | [[coagulative-necrosis]] (occlusione persistente) | Infarto pallido, riconoscibile macroscopicamente solo dopo circa 12 ore; le bande di contrazione, se presenti, sono limitate ai margini.<!--c:ischemia-reperfusion-injury-c042--> | Colore macroscopico e distribuzione delle bande di contrazione |
 | [[oxidative-injury]] | Stessi meccanismi mediati dai radicali liberi, ma da qualsiasi fonte (radiazioni, agenti tossici, infiammazione), senza legame con il ripristino del flusso.<!--c:ischemia-reperfusion-injury-c043--> | Contesto clinico |
-| Necrosi a bande di contrazione da catecolamine | Bande di contrazione dopo un rilascio massivo di catecolamine (trauma cranico, feocromocitoma) o dopo vasopressori ad alte dosi nello shock.<!--c:ischemia-reperfusion-injury-c044--> | Anamnesi di eccesso di catecolamine |
+| Necrosi a bande di contrazione da catecolamine | Bande di contrazione da eccesso di catecolamine, liberate dall'organismo (per esempio da un feocromocitoma) oppure somministrate come vasopressori ad alte dosi nello shock.<!--c:ischemia-reperfusion-injury-c044--> | Anamnesi di eccesso di catecolamine |
 
 ## Punti chiave
 
@@ -84,6 +91,7 @@ Il precondizionamento riduce la necrosi dopo un successivo episodio prolungato, 
 - L'NO reagisce con il superossido e forma **perossinitrito**.<!--c:ischemia-reperfusion-injury-c050-->
 - Infarto riperfuso: **emorragico**, con **necrosi a bande di contrazione**.<!--c:ischemia-reperfusion-injury-c051-->
 - Il **precondizionamento ischemico** protegge da un successivo episodio ischemico più lungo.<!--c:ischemia-reperfusion-injury-c052-->
+- **Miocardio stordito:** dopo un'ischemia breve la contrazione può restare debole per ore senza che alcun miocita muoia, a causa delle ROS della riperfusione.<!--c:ischemia-reperfusion-injury-c064-->
 
 ## Errori comuni e trappole d'esame
 

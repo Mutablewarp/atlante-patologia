@@ -1,0 +1,100 @@
+# License check (2026-11-08): Commons file page {{Information}} gives source {{own}}, author
+# [[User:Jensflorian|Jensflorian]], date 2015-09-29, license {{self|cc-by-sa-4.0}}; extmetadata LicenseShortName
+# "CC BY-SA 4.0", Artist "Jensflorian", Credit "Own work", AttributionRequired true, no Restrictions. Uploaded by its
+# creator. CC BY-SA is approved as a class by owner decision O7 (plan/v2-plan.md, 2026-11-03), hence
+# ownerApproved: true; this is the Jensflorian file named in the 2026-10-10 MISSING_ASSETS abscess row, which was
+# blocked only by the BY-SA approval. The same author uploaded three files with the same description ("Neuropathology
+# course - histopathology specimen of brain abscess - HE stain", same date): this one (500 µm bar), Image NP E3 0002
+# (100 µm bar, liquefactive-necrosis-micro-3) and Image NP E3 0003 (50 µm bar, not used), hence the shared group.
+# Histology only; nothing identifies the patient. Used exactly as published (1500 × 1112 px, no camera metadata), so
+# modifications: none. The burned-in scale bar is the only calibration and the source names no objective, so no
+# `objective` and no `mpp`. The source names no layers: their reading in this field is the agent's (review-queue
+# row). Caption facts checked on rubin-8e pp. 1465-1466 (liquefaction of the brain tissue, encapsulation by
+# fibroblasts from the small vessels, layers around the purulent core, ring enhancement from the granulation tissue,
+# which lacks a blood-brain barrier).
+id: liquefactive-necrosis-micro-2
+file: liquefactive-necrosis-micro-2.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Neuropathology_course,_histopathology_specimen_of_brain_abscess,_HE_stain.jpg
+author: Jensflorian
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+retrievedAt: 2026-11-08
+modifications: none
+attributionText: 'Jensflorian, "Neuropathology course, histopathology specimen of brain abscess, HE stain", via Wikimedia Commons, CC BY-SA 4.0'
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+group: brain-abscess-jensflorian
+stain: H&E
+magnification: low power (scale bar 500 µm in the image)
+orientation:
+  it: "Cavità dell'ascesso a sinistra; la parete attraversa il campo dall'alto in basso, al centro; verso destra si va all'esterno della parete."
+  en: "Abscess cavity on the left; the wall crosses the field from top to bottom in the middle; towards the right you move outside the wall."
+lookFor:
+  it: "Vai da sinistra a destra: spazio vuoto, poi uno strato granuloso rosa-rossastro, poi un'ampia fascia viola di cellule allungate."
+  en: "Go from left to right: empty space, then a granular pink-red layer, then a broad purple band of elongated cells."
+caption:
+  it: >-
+    Ascesso cerebrale, EE a piccolo ingrandimento (la barra misura 500 µm); lo stesso preparato è mostrato anche a
+    medio ingrandimento. Leggi il campo da sinistra a destra, cioè dall'interno dell'ascesso verso l'esterno. A sinistra lo
+    spazio vuoto è la cavità dell'ascesso: il pus, che è liquido, in gran parte non resta sul vetrino. La cavità è
+    rivestita da uno strato irregolare di pus, fatto di cellule infiammatorie fittamente stipate e di detriti
+    granulosi rosa-rossastri con qualche globulo rosso: è ciò che resta del tessuto cerebrale sciolto dagli enzimi dei
+    neutrofili. Segue la parete, un'ampia fascia di cellule allungate (fusate) disposte in fasci, con piccoli vasi
+    sanguigni. Qui il tessuto di granulazione e i fibroblasti costruiscono la capsula di collagene che isola il pus;
+    poiché il cervello non ha quasi fibroblasti propri, questi arrivano dalle pareti dei piccoli vasi. In alto a
+    destra il tessuto torna più lasso e chiaro, verso il cervello che sta fuori dalla parete; in basso a destra due
+    vasi sono pieni di globuli rossi. Perché conta: alla RM con mezzo di contrasto questa parete si accende come un
+    anello liscio, di spessore uniforme, perché nel suo tessuto di granulazione manca la barriera ematoencefalica e
+    il contrasto ne trapela. Poi passa all'ingrandimento medio per riconoscere le cellule.
+  en: >-
+    Brain abscess, H&E at low power (the bar is 500 µm); the same specimen is also shown at medium power. Read the
+    field from left to right, that is from the inside of the abscess outwards. On the left, the empty space is the
+    abscess cavity: pus is liquid, and most of it does not stay on the slide. The cavity is lined by a ragged layer of
+    pus, made of tightly packed inflammatory cells and granular pink-red debris with a few red cells: this is what is
+    left of the brain tissue dissolved by the enzymes of the neutrophils. Next comes the wall, a broad band of
+    elongated (spindle) cells arranged in streams, with small blood vessels. Here granulation tissue and fibroblasts
+    build the collagen capsule that walls off the pus; since the brain has almost no fibroblasts of its own, they
+    come in from the walls of the small vessels. At the upper right the tissue turns looser and paler again, towards
+    the brain outside the wall; at the lower right two vessels are packed with red cells. Why it matters: on
+    contrast MRI this wall lights up as a smooth ring of even thickness, because its granulation tissue lacks a
+    blood-brain barrier and the contrast seeps out of it. Then switch to the medium power to recognise the cells.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina a piccolo ingrandimento, in toni viola chiari. A sinistra un ampio spazio vuoto
+    grigio chiaro dal bordo irregolare; accanto una fascia di materiale granuloso rosa-rossastro con molti puntini
+    scuri; al centro un'ampia fascia di cellule allungate disposte in fasci; in basso a destra due vasi pieni di sangue
+    rosso-bruno e, nell'angolo, una barra di scala nera di 500 µm.
+  en: >-
+    Low-power H&E micrograph in pale purple tones. On the left, a large, empty, light-grey space with a ragged edge;
+    next to it, a band of granular pink-red material with many dark dots; in the middle, a broad band of elongated
+    cells arranged in streams; at the lower right, two vessels filled with red-brown blood and, in the corner, a black
+    500 µm scale bar.
+annotations:
+  - id: abscess-cavity
+    label: { it: "Cavità dell'ascesso", en: Abscess cavity }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.0, 0.0, 0.05, 0.0, 0.055, 0.06, 0.085, 0.10, 0.097, 0.15, 0.10, 0.23, 0.098, 0.31, 0.105, 0.35, 0.095, 0.40, 0.085, 0.44, 0.08, 0.48, 0.068, 0.52, 0.062, 0.56, 0.058, 0.60, 0.05, 0.65, 0.041, 0.69, 0.043, 0.73, 0.0, 0.76]
+  - id: pus-lining
+    label: { it: "Strato di pus: cellule infiammatorie e detriti necrotici", en: "Layer of pus: inflammatory cells and necrotic debris" }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.06, 0.02, 0.28, 0.02, 0.30, 0.20, 0.29, 0.45, 0.25, 0.61, 0.20, 0.71, 0.135, 0.80, 0.045, 0.93, 0.0, 0.95, 0.0, 0.78, 0.045, 0.73, 0.052, 0.65, 0.064, 0.56, 0.082, 0.48, 0.097, 0.40, 0.104, 0.25, 0.092, 0.12]
+  - id: abscess-wall
+    label: { it: "Parete: tessuto di granulazione e fibroblasti (capsula)", en: "Wall: granulation tissue and fibroblasts (capsule)" }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.32, 0.03, 0.62, 0.03, 0.70, 0.30, 0.72, 0.55, 0.70, 0.80, 0.62, 0.97, 0.10, 0.97, 0.16, 0.86, 0.22, 0.76, 0.28, 0.64, 0.31, 0.50, 0.32, 0.30]
+  - id: congested-vessel
+    label: { it: Vaso pieno di globuli rossi, en: Vessel packed with red cells }
+    revealOrder: 4
+    shape: { type: polygon, coords: [0.826, 0.72, 0.88, 0.72, 0.88, 0.83, 0.826, 0.83] }
+  - id: outer-loose-tissue
+    label: { it: "Tessuto più lasso, verso l'esterno della parete", en: "Looser tissue, towards the outside of the wall" }
+    revealOrder: 5
+    shape: { type: polygon, coords: [0.78, 0.02, 0.99, 0.02, 0.99, 0.30, 0.85, 0.30, 0.78, 0.15] }

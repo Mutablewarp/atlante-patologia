@@ -4,9 +4,9 @@
  * pinned to the installed @playwright/test version. Failures that only show on Linux (font metrics, scrollbars,
  * slow runners) then appear before a push, not after it.
  *
- *   npm run test:e2e:linux                                  dist checks, chromium, study and offline suites
+ *   npm run test:e2e:linux                                  unit tests, dist checks, chromium, study and offline suites
  *   npm run test:e2e:linux -- --engines chromium,webkit     several engines (Firefox and WebKit run the @smoke subset, as in CI)
- *   npm run test:e2e:linux -- --suites study                only some suites: dist, main, study, offline, lighthouse
+ *   npm run test:e2e:linux -- --suites unit                 only some suites: unit, dist, main, study, offline, lighthouse
  *   npm run test:e2e:linux -- --suites lighthouse --lh-paths /it/,/it/e/coagulative-necrosis/     Lighthouse mobile (CI runs three pages)
  *   npm run test:e2e:linux -- --suites study -- -g quiz --repeat-each=10     everything after the second -- goes to Playwright
  *
@@ -25,8 +25,9 @@ import { fileURLToPath } from 'node:url';
 const ROOT = fileURLToPath(new URL('..', import.meta.url));
 const OUT = join(ROOT, '.e2e-linux-out');
 const ENGINES = ['chromium', 'firefox', 'webkit'];
-const SUITES = ['dist', 'main', 'study', 'offline', 'lighthouse'];
-const DEFAULT_SUITES = ['dist', 'main', 'study', 'offline']; // what the CI e2e job runs; Lighthouse is a CI job of its own
+const SUITES = ['unit', 'dist', 'main', 'study', 'offline', 'lighthouse'];
+// What CI runs: the unit tests (here without the private .work/ and private/ folders, as in CI), the dist checks and the e2e suites; Lighthouse is a CI job of its own.
+const DEFAULT_SUITES = ['unit', 'dist', 'main', 'study', 'offline'];
 
 function fail(message) {
   console.error(`e2e-linux: ${message}`);
@@ -75,6 +76,7 @@ step() { echo "::: $*"; "$@" || { echo "::: FAILED: $*"; rc=1; }; }
 echo "::: image ${image}, node $(node -v), $(uname -m), ${files.length} files"
 npm ci --no-audit --no-fund > /tmp/npm-ci.log 2>&1 || { tail -25 /tmp/npm-ci.log; exit 1; }
 npm run build > /tmp/build.log 2>&1 || { tail -40 /tmp/build.log; exit 1; }
+case ",$SUITES," in *,unit,*) step npm test ;; esac
 case ",$SUITES," in *,dist,*) step npm run test:dist ;; esac
 for e in $(echo "$ENGINES" | tr , ' '); do
   case ",$SUITES," in *,main,*) step env E2E_ENGINES=$e npx playwright test "$@" ;; esac

@@ -1,0 +1,90 @@
+# License check (2026-11-07): same article and licence as fat-necrosis-micro-4 (PMC12596583, CC BY 4.0, © 2025
+# Sociedade Brasileira de Dermatologia, published by Elsevier España; no third-party credit in the Figure 3 legend).
+# Panel C of Figure 3, cut from the publisher's high-resolution file of the figure. Histology only; nothing
+# identifies the patient. The source names this panel "steatonecrosis with ghost cells" (H&E, ×400); the labels were
+# placed by the agent. Facts checked against the source article and rubin-8e ch. 1 p. 40 and ch. 22 p. 965.
+id: fat-necrosis-micro-5
+file: fat-necrosis-micro-5.jpg
+kind: micro
+sourceUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC12596583/figure/fig0015/
+author: Rebecca Perez de Amorim, Laís Maria Bellaver de Almeida, Hélio Amante Miot, Juliano Vilaverde Schmitt
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-11-07
+modifications:
+  it: >-
+    Ritagliato il pannello C dalla Figura 3 dell'articolo, a partire dal file ad alta risoluzione della figura
+    pubblicato dall'editore (3341 × 2215 px); ridimensionato a 1600 × 1047 px e ricodificato in JPEG (qualità 85).
+    Nessuna modifica dei colori. La lettera C in alto a sinistra è l'etichetta del pannello nella figura pubblicata.
+  en: >-
+    Cropped panel C out of Figure 3 of the article, starting from the publisher's high-resolution file of the figure
+    (3341 × 2215 px); downscaled to 1600 × 1047 px and re-encoded as JPEG (quality 85). No colour change. The letter C
+    at the top left is the panel label of the published figure.
+attributionText: >-
+  Rebecca Perez de Amorim, Laís Maria Bellaver de Almeida, Hélio Amante Miot, Juliano Vilaverde Schmitt, "Pancreatic
+  panniculitis following endoscopic retrograde cholangiopancreatography (ERCP): a case report", Anais Brasileiros de
+  Dermatologia 2025;100(6):501211, doi:10.1016/j.abd.2025.501211, Figure 3 (panel C), © 2025 Sociedade Brasileira de
+  Dermatologia, published by Elsevier España, CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-07 }
+group: fat-necrosis-pancreatic-panniculitis
+stain: H&E
+magnification: high power (original magnification ×400)
+lookFor:
+  it: "Cerca cellule senza nucleo con un bordo viola spesso e sfumato, due delle quali contengono materiale lilla: le cellule fantasma."
+  en: "Find cells with no nucleus and a thick, smudged purple rim, two of them holding lilac material: the ghost cells."
+caption:
+  it: >-
+    La stessa biopsia di pannicolite pancreatica a forte ingrandimento (ematossilina-eosina, ingrandimento originale
+    ×400), per vedere le "cellule fantasma" (ghost cells) che gli autori indicano. Cerca adipociti morti ma ancora
+    riconoscibili dalla forma: lungo il loro bordo non c'è più alcun nucleo, e il bordo stesso è diventato una linea
+    viola spessa e sfumata. Due di essi, in basso al centro e a destra, non sono vuoti ma racchiudono un materiale
+    lilla pallido; nelle altre cellule il grasso si è sciolto durante l'allestimento del preparato, ed è per questo
+    che i loro spazi appaiono vuoti. Il
+    tessuto tra una cellula e l'altra ha la stessa tinta viola e contiene sparse cellule infiammatorie dai nuclei
+    scuri e irregolari. La chiave è il colore: i sali di calcio trattengono con forza l'ematossilina, quindi nel
+    grasso morto una tinta blu-viola fa pensare al calcio legato dagli acidi grassi che la lipasi ha liberato
+    (saponificazione); la colorazione di von Kossa di questa biopsia mostra che il calcio è presente. È il
+    corrispettivo microscopico delle chiazze bianco-gesso visibili a occhio nudo. In una biopsia cutanea le cellule
+    fantasma sono l'indizio classico della pannicolite pancreatica. Confronta con la colorazione di von Kossa della
+    stessa lesione, in cui il calcio diventa nero.
+  en: >-
+    The same biopsy of pancreatic panniculitis at high power (H&E, original magnification ×400), to see the "ghost
+    cells" that the authors point out. Look for fat cells that are dead but still recognisable by their shape: there
+    is no longer any nucleus along their border, and the border itself has become a thick, smudged purple line. Two
+    of them, at the bottom centre and on the right, are not empty but enclose a pale lilac material; in the other cells
+    the fat dissolved while the slide was being prepared, which is why their spaces look empty. The tissue between the cells has the same
+    purple tint and holds scattered inflammatory cells with dark, irregular nuclei. The key is the colour: calcium
+    salts hold haematoxylin strongly, so in dead fat a blue-purple tint points to calcium bound by the fatty acids
+    that lipase has freed (saponification); the von Kossa stain of this biopsy shows that calcium is present. This
+    is the microscopic counterpart of the chalky white patches seen with the naked eye. In
+    a skin biopsy, ghost cells are the classic clue to pancreatic panniculitis. Compare with the von Kossa stain of
+    the same lesion, in which the calcium turns black.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina a forte ingrandimento, con la lettera C in alto a sinistra: tessuto a tinta
+    viola, finemente granulare, con spazi bianchi allungati o rotondi delimitati da un bordo viola spesso; due spazi
+    rotondi, in basso al centro e a destra, contengono una massa lilla pallida; in basso al centro alcuni piccoli
+    nuclei scuri e irregolari.
+  en: >-
+    High-power haematoxylin and eosin micrograph with the letter C at the top left: purple-tinted, finely granular
+    tissue with elongated or round white spaces bordered by a thick purple rim; two round spaces, at the bottom centre
+    and on the right, contain a pale lilac mass; at the bottom centre, a few small, dark, irregular nuclei.
+annotations:
+  - id: ghost-cell-centre
+    label: { it: "Cellula fantasma: adipocita senza nucleo, bordo viola spesso, contenuto lilla", en: "Ghost cell: adipocyte without a nucleus, thick purple border, lilac content" }
+    revealOrder: 1
+    shape: { type: circle, coords: [0.46, 0.655, 0.105] }
+  - id: ghost-cell-right
+    label: { it: Un'altra cellula fantasma, en: Another ghost cell }
+    revealOrder: 2
+    shape: { type: circle, coords: [0.875, 0.37, 0.092] }
+  - id: emptied-fat-cells
+    label: { it: "Adipociti necrotici svuotati: spazi senza nuclei con un bordo viola spesso", en: "Emptied necrotic fat cells: spaces without nuclei and with a thick purple border" }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.33, 0.30, 0.40, 0.245, 0.53, 0.235, 0.62, 0.27, 0.67, 0.30, 0.67, 0.38, 0.60, 0.40, 0.50, 0.40, 0.40, 0.37, 0.34, 0.36] }
+  - id: inflammatory-cells
+    label: { it: Cellule infiammatorie dai nuclei scuri e irregolari, en: Inflammatory cells with dark irregular nuclei }
+    revealOrder: 4
+    shape: { type: rect, coords: [0.30, 0.77, 0.24, 0.15] }

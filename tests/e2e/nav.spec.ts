@@ -335,6 +335,20 @@ test('from 600 px the previous and next card sit beside the breadcrumb, in the o
   await expect(pager.getByRole('link', { name: 'Scheda successiva: Steatosi (degenerazione grassa)' })).toHaveAttribute('href', /\/fatty-change\/\?via=system:heart$/);
 });
 
+// The lens contexts are built in the browser from JSON (src/lib/lens-context.ts), the default ones by Astro components:
+// for the lens the default order comes from, the two must give the same markup, in both languages.
+for (const [lang, id] of [['it', 'coagulative-necrosis'], ['en', 'apoptosis']] as const)
+  test(`a lens context is built to the same markup as the default one (${lang})`, async ({ page }) => {
+    await page.goto(`${lang}/e/${id}/`);
+    const html = () => Promise.all(['[data-lens-crumb]', '[data-lens-nav]'].map((s) => page.locator(s).innerHTML()));
+    const plain = await html();
+    const system = await page.locator('.crumb-row .breadcrumb li:nth-child(3) a').getAttribute('href'); // …/atlas/system/<term>/
+    const via = `system:${system!.split('/').filter(Boolean).at(-1)}`;
+    await page.goto(`${lang}/e/${id}/?via=${via}`);
+    await expect(page.locator('[data-lens-nav] a[rel="next"]')).toHaveAttribute('href', new RegExp(`\\?via=${via}$`)); // swapped
+    expect((await html()).map((h) => h.replaceAll(`?via=${via}`, ''))).toEqual(plain);
+  });
+
 test('from 600 px the section list ends with the related cards and a link to the next card; from 1024 px it sits under the list', async ({ page }) => {
   await page.goto('it/e/coagulative-necrosis/');
   const toc = page.getByRole('navigation', { name: 'In questa pagina' });

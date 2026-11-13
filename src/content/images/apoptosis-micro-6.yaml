@@ -1,0 +1,93 @@
+# License check (2026-11-04): taken from the article itself, not from Wikimedia Commons. Europe PMC full text
+# (PMC10670237, PMID 37998541) carries the licence "https://creativecommons.org/licenses/by/4.0/" ("Licensee MDPI ...
+# distributed under the terms and conditions of the Creative Commons Attribution (CC BY) license"), © 2023 by the
+# authors. The Figure 1 legend has no "reproduced" or "with permission" note: the micrographs are the authors' own case
+# material. Allowed under COMPLIANCE_PLAN §4 (PubMed Central figure in an article with an explicit CC BY licence).
+# Panels (a) and (b) are clinical photographs (lips and back) and were NOT used; panel (c) is histology only and shows
+# nothing that identifies the patient. Panel (d), the cleaved caspase-3 stain of the same biopsy, is apoptosis-micro-7.
+id: apoptosis-micro-6
+file: apoptosis-micro-6.jpg
+kind: micro
+sourceUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC10670237/figure/diagnostics-13-03405-f001/
+author: Mitsuhiro Tachibana, Hideki Hamayasu, Kazuki Tomita, Yuta Kage
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-11-04
+modifications:
+  it: >-
+    Ritaglio del pannello (c) della Figura 1 dal PNG dell'editore di 1415 × 996 px
+    (https://mdpi-res.com/diagnostics/diagnostics-13-03405/article_deploy/html/images/diagnostics-13-03405-g001.png):
+    pixel x 8–704, y 541–984, per un'immagine di 697 × 444 px; il ritaglio esclude la lettera del pannello, una
+    striscia di vetrino vuoto in alto e i pannelli (a), (b) e (d). Salvata in JPEG; nessun ridimensionamento, nessuna
+    modifica dei colori. Le frecce gialle e il riquadro a ×1000 fanno parte della figura pubblicata.
+  en: >-
+    Cropped to panel (c) of Figure 1 from the publisher's 1415 × 996 px PNG
+    (https://mdpi-res.com/diagnostics/diagnostics-13-03405/article_deploy/html/images/diagnostics-13-03405-g001.png):
+    pixels x 8–704, y 541–984, giving 697 × 444 px; the crop leaves out the panel letter, a strip of empty slide
+    background at the top and panels (a), (b) and (d). Saved as JPEG; no resize, no colour change. The yellow arrows
+    and the ×1000 inset belong to the published figure.
+attributionText: >-
+  Mitsuhiro Tachibana, Hideki Hamayasu, Kazuki Tomita, Yuta Kage, "Individual Keratinocyte Necroses in the Epidermis
+  Are Apoptotic Keratinocytes in the Skin", Diagnostics 2023;13(22):3405, doi:10.3390/diagnostics13223405, Figure 1c
+  (cropped), CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-04 }
+group: apoptosis-sjs-skin
+stain: H&E
+magnification: medium power (original magnification ×200; inset ×1000)
+orientation:
+  it: "Superficie cutanea in alto, derma superficiale in basso; il riquadro in basso a destra è una veduta separata a ×1000."
+  en: "Skin surface at the top, superficial dermis at the bottom; the inset at lower right is a separate ×1000 view."
+lookFor:
+  it: "Segui le frecce fino ai piccoli cheratinociti rosa e vitrei, poi confrontali con il riquadro a ×1000."
+  en: "Follow the arrows to the small, glassy pink keratinocytes, then compare them with the inset at ×1000."
+caption:
+  it: >-
+    Biopsia cutanea con punch di un paziente con sindrome di Stevens-Johnson da sulfametossazolo-trimetoprim, EE a ×200
+    (riquadro a ×1000); le frecce gialle e il riquadro fanno parte della figura pubblicata. Procedi dall'alto verso il
+    basso. Lo strato corneo conserva il normale aspetto a canestro intrecciato, lasso e reticolato: segno che il danno è
+    recente. Sotto, l'epidermide è punteggiata da singoli cheratinociti che spiccano come piccole cellule rotonde,
+    vitree, rosa acceso (frecce), a tutti i livelli a partire dallo strato basale; molti linfociti sono penetrati nella
+    parte bassa dell'epidermide (esocitosi) e un modesto infiltrato linfocitario occupa il derma superficiale. Il
+    riquadro mostra una di queste cellule a ×1000: un corpo liscio, rotondo, uniformemente eosinofilo, senza nucleo
+    visibile, staccato dalle cellule vicine da una semiluna chiara. Sono cheratinociti morti per apoptosi, nell'ambito di
+    una reazione immunitaria al farmaco in cui i linfociti attaccano l'epidermide. Attenzione ai nomi: queste cellule
+    vengono spesso chiamate cheratinociti «necrotici» o «discheratosici», ma passa alla colorazione per la caspasi-3
+    clivata della stessa biopsia per vedere che sono apoptotiche. Quando l'apoptosi si estende a tutta l'epidermide,
+    questa si stacca dal derma: è lo scollamento bolloso che si vede al letto del paziente.
+  en: >-
+    Punch biopsy of skin from a patient with Stevens–Johnson syndrome caused by sulfamethoxazole–trimethoprim, H&E at
+    ×200 (inset ×1000); the yellow arrows and the inset belong to the published figure. Work from top to bottom. The
+    stratum corneum keeps its normal loose basket-weave pattern, a sign that the injury is recent. Below it, the
+    epidermis is studded with single keratinocytes that stand out as small, round, glassy, bright pink cells (arrows),
+    at every level from the basal layer upward; many lymphocytes have entered the lower epidermis (exocytosis), and a
+    light lymphocytic infiltrate sits in the superficial dermis. The inset shows one of these cells at ×1000: a smooth,
+    round, evenly eosinophilic body with no visible nucleus, pulled away from its neighbours by a clear crescent. These
+    are keratinocytes that died by apoptosis, as part of an immune reaction to the drug in which lymphocytes attack the
+    epidermis. Watch the names: these cells are often called "necrotic" or "dyskeratotic" keratinocytes, but switch to
+    the cleaved caspase-3 stain of the same biopsy to see that they are apoptotic. When apoptosis spreads through the
+    whole epidermis, the epidermis comes away from the dermis: this is the blistering and skin loss seen at the bedside.
+alt:
+  it: >-
+    Micrografia di cute in ematossilina-eosina: in alto un sottile strato corneo rosa, un'epidermide con piccole cellule
+    rotonde rosa acceso indicate da cinque frecce gialle, molti piccoli nuclei scuri di linfociti nella parte bassa
+    dell'epidermide e nel derma superficiale e, in basso a destra, un riquadro con un corpo rotondo, rosa e omogeneo
+    circondato da una semiluna bianca.
+  en: >-
+    H&E micrograph of skin: a thin pink stratum corneum on top, an epidermis with small, bright pink round cells marked
+    by five yellow arrows, many small dark lymphocyte nuclei in the lower epidermis and superficial dermis, and an inset
+    at lower right showing a round, homogeneous pink body surrounded by a white crescent.
+annotations:
+  - id: apoptotic-keratinocyte
+    label: { it: "Cheratinocita rimpicciolito, rosa e vitreo (apoptotico)", en: "Shrunken, glassy pink keratinocyte (apoptotic)" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.465, 0.30, 0.51, 0.30, 0.51, 0.36, 0.465, 0.36] }
+  - id: inset-apoptotic-body
+    label: { it: "Riquadro ×1000: corpo apoptotico rotondo ed eosinofilo in un alone chiaro", en: "Inset ×1000: round eosinophilic apoptotic body in a clear halo" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.764, 0.659, 0.882, 0.659, 0.882, 0.839, 0.764, 0.839] }
+  - id: dermal-lymphocytes
+    label: { it: Linfociti nel derma superficiale, en: Lymphocytes in the superficial dermis }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.44, 0.59, 0.50, 0.59, 0.50, 0.68, 0.44, 0.68] }

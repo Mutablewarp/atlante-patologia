@@ -1,0 +1,93 @@
+# License check (2026-11-08): Commons file page {{Information}} gives Source {{own}}, Author User:Alexquaas, date
+# 2011-11-23, license {{self|cc-by-sa-4.0}}; extmetadata LicenseShortName "CC BY-SA 4.0", AttributionRequired true, no
+# Restrictions. The uploader is the creator: own work, the file's EXIF names a Zeiss AxioCam microscope camera and no
+# other author or copyright holder, and Commons files it under the European Science Photo Competition 2015. CC BY-SA
+# is approved as a class by owner decision O7 (plan/v2-plan.md, 2026-11-03), hence ownerApproved: true. Histology
+# only; nothing identifies the patient. The source states the stain (PAS-D) and gives "400x" only in the file name; it
+# states neither genotype nor clinical setting, so the caption gives neither. Not grouped with
+# intracellular-accumulations-micro-2 (H&E): different author and case, and a group is one case or one teaching set
+# (CONTENT_SCHEMA §5). Annotations placed by inspection on a gridded copy of the file.
+id: intracellular-accumulations-micro-3
+file: intracellular-accumulations-micro-3.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:400x_Diastase_PAS_liver_AT1.jpg
+author: Alexquaas
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+retrievedAt: 2026-11-08
+modifications:
+  it: >-
+    Ricodificata in JPEG (qualità 85) per portare il file da 1,0 MB a meno di 600 KB, eliminando i metadati EXIF della
+    fotocamera; nessun ritaglio, nessun ridimensionamento (1388 × 1040 px come l'originale), nessuna modifica dei
+    colori. Questo adattamento è condiviso con la stessa licenza (CC BY-SA 4.0).
+  en: >-
+    Re-encoded as JPEG (quality 85) to bring the file from 1.0 MB to under 600 KB, removing the camera EXIF metadata;
+    no crop, no resize (1388 × 1040 px, as the original), no colour change. This adaptation is shared under the same
+    licence (CC BY-SA 4.0).
+attributionText: >-
+  Alexquaas, "400x Diastase PAS liver AT1", via Wikimedia Commons, CC BY-SA 4.0
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+stain: "PAS after diastase digestion (PAS-D)"
+magnification: "high power (the source: 400x, in the file name)"
+orientation:
+  it: "Epatociti nei due terzi di sinistra; a destra una banda di tessuto connettivo, con un piccolo dotto biliare in basso."
+  en: "Hepatocytes fill the left two thirds; on the right is a band of connective tissue, with a small bile duct near the bottom."
+lookFor:
+  it: "Cerca i globuli magenta dentro gli epatociti: la diastasi ha già tolto il glicogeno, quindi non possono essere glicogeno."
+  en: "Look for the magenta globules inside the hepatocytes: diastase has already removed the glycogen, so they cannot be glycogen."
+caption:
+  it: >-
+    Fegato colorato con PAS dopo digestione con diastasi (PAS-D), a forte ingrandimento (400× secondo il nome del
+    file). Prima di guardare, ricorda che cosa ha già fatto la colorazione per te: la diastasi digerisce il glicogeno,
+    quindi tutto ciò che è rimasto magenta non può essere glicogeno. Orientati: gli epatociti, con nuclei rotondi blu,
+    occupano i due terzi di sinistra; a destra c'è una banda di tessuto fibroso con cellule fusate e, in basso, un
+    piccolo dotto biliare tagliato di traverso. Ora guarda dentro gli epatociti: la maggior parte contiene numerosi
+    globuli rotondi magenta, di grandezza molto variabile, da puntini appena visibili a gocce ben distinte. Sono
+    α1-antitripsina che non è mai uscita dalla cellula: l'epatocita l'ha prodotta, ma la proteina mutata si è
+    ripiegata male ed è rimasta bloccata nel suo reticolo endoplasmatico. Da qui il doppio danno della malattia:
+    l'accumulo lede il fegato, e la proteina che manca nel sangue non protegge più il polmone. Nell'immagine in EE di
+    questa stessa scheda i globuli appaiono rosa e vitrei, un aspetto che anche altre inclusioni possono avere: è la
+    resistenza alla diastasi a dimostrare che non sono glicogeno. Non confonderli con i nuclei, che sono blu, più
+    grandi e uno solo per cellula.
+  en: >-
+    Liver stained with PAS after diastase digestion (PAS-D), high power (400× according to the file name). Before you
+    look, remember what the stain has already done for you: diastase digests glycogen, so anything still magenta cannot
+    be glycogen. Orient yourself: hepatocytes with round blue nuclei fill the left two thirds; on the right is a band of
+    fibrous tissue with spindle-shaped cells and, near the bottom, a small bile duct cut across. Now look inside the
+    hepatocytes: most of them hold many round magenta globules of very different sizes, from barely visible dots to
+    distinct droplets. This is α1-antitrypsin that never left the cell: the hepatocyte made it, but the mutant
+    protein folded wrongly and stayed stuck in its endoplasmic reticulum. Hence the double damage of the disease: the
+    accumulation injures the liver, and the protein missing from the blood no longer protects the lung. In the H&E image
+    on this same card the globules look pink and glassy, a look that other inclusions can share: it is their resistance
+    to diastase that proves they are not glycogen. Do not mistake them for nuclei, which are blue, larger and only one
+    per cell.
+alt:
+  it: >-
+    Micrografia di fegato colorata con PAS-D a forte ingrandimento: epatociti azzurro-grigi con nuclei rotondi blu,
+    per lo più con gruppi di piccoli globuli rotondi magenta; a destra una banda di tessuto fibroso rosa-violaceo con
+    nuclei fusati scuri e, in basso, un piccolo anello di cellule attorno a un lume.
+  en: >-
+    PAS-D micrograph of liver at high power: blue-grey hepatocytes with round blue nuclei, most holding clusters of
+    small round magenta globules; on the right, a pink-violet band of fibrous tissue with dark spindle-shaped nuclei and,
+    near the bottom, a small ring of cells around a lumen.
+annotations:
+  - id: globule-laden-hepatocyte
+    label: { it: Epatocita pieno di globuli PAS-D positivi, en: Hepatocyte full of PAS-D-positive globules }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.30, 0.27, 0.33, 0.24, 0.40, 0.235, 0.445, 0.30, 0.44, 0.38, 0.40, 0.40, 0.33, 0.39, 0.30, 0.34]
+  - id: connective-tissue
+    label: { it: Tessuto connettivo (spazio portale o setto fibroso), en: Connective tissue (portal tract or fibrous septum) }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.70, 0.0, 1.0, 0.0, 1.0, 1.0, 0.69, 1.0, 0.68, 0.75, 0.69, 0.50, 0.70, 0.25]
+  - id: small-bile-duct
+    label: { it: Piccolo dotto biliare tagliato di traverso, en: Small bile duct cut across }
+    revealOrder: 3
+    shape:
+      type: polygon
+      coords: [0.74, 0.70, 0.79, 0.68, 0.83, 0.71, 0.835, 0.80, 0.81, 0.86, 0.76, 0.87, 0.735, 0.80]

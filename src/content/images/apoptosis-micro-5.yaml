@@ -1,0 +1,86 @@
+# License check (2026-11-04): Wellcome Collection catalogue record dghfna73 (Miro image number W0043171), read through
+# the catalogue API: item location license "CC0 1.0 Universal", credit "Wellcome Collection", access open. The holding
+# institution publishes the photomicrograph itself, so there is no uploader/creator gap; the photographer is not named.
+# Histology only; nothing identifies the patient. Same case as W0043170 (apoptosis-micro-4), hence the shared group.
+id: apoptosis-micro-5
+file: apoptosis-micro-5.jpg
+kind: micro
+sourceUrl: https://wellcomecollection.org/works/dghfna73
+author: Wellcome Collection (photographer not named)
+license: CC0-1.0
+licenseUrl: https://creativecommons.org/publicdomain/zero/1.0/
+retrievedAt: 2026-11-04
+modifications:
+  it: >-
+    Ridimensionata dall'originale di 3390 × 5156 px a 1052 × 1600 px dal server di immagini IIIF della Wellcome
+    Collection; la versione JPEG è usata così come fornita. Nessun ritaglio, nessuna modifica dei colori.
+  en: >-
+    Downscaled from the 3390 × 5156 px original to 1052 × 1600 px by the Wellcome Collection IIIF image server; the
+    JPEG rendition is used as delivered. No crop, no colour change.
+attributionText: "Wellcome Collection, \"Rectum: HIV-related enteropathy\" (image W0043171), CC0 1.0 (public domain dedication)"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-04 }
+group: apoptosis-hiv-enteropathy
+stain: H&E
+magnification: high power (as described by the source)
+orientation:
+  it: "Le cripte corrono in diagonale, dall'alto a destra verso il basso a sinistra; tra di esse c'è la lamina propria."
+  en: "The crypts run diagonally from upper right to lower left, with lamina propria between them."
+lookFor:
+  it: "Trova un grappolo di granuli nucleari scuri in un piccolo vacuolo, poi un singolo nucleo rotondo e compatto in un alone chiaro: sono entrambi corpi apoptotici."
+  en: "Find a cluster of dark nuclear beads in a small vacuole, then a single dense round nucleus in a clear halo: both are apoptotic bodies."
+caption:
+  it: >-
+    La stessa biopsia rettale a forte ingrandimento, EE. Usa come riferimento le cellule integre della cripta: cellule
+    colonnari con nucleo ovale e vacuoli chiari e rotondi delle cellule caliciformi. Poi cerca le cellule che non
+    tornano. Alcune si sono ridotte a un piccolo corpo rotondo con un solo nucleo molto scuro e compatto, immerso in un
+    alone chiaro (picnosi); altre si sono frammentate in un grappolo di granuli nucleari scuri dentro un piccolo vacuolo
+    (carioressi), l'aspetto che in patologia intestinale si descrive come exploding crypt cell («cellula esplosa» della
+    cripta). Questi corpi apoptotici stanno soprattutto nella metà inferiore delle cripte e ciascuno resta racchiuso
+    nell'epitelio finché una cellula vicina o un macrofago non lo ingloba. Nota che cosa manca intorno: niente
+    neutrofili, niente pus, nessuna area estesa di cellule morte. Da ricordare: in una biopsia intestinale cerca i corpi
+    apoptotici alla base delle cripte; nella malattia del trapianto contro l'ospite sono il reperto chiave, ma anche
+    l'infezione da HIV, come qui, e alcuni farmaci possono dare la stessa lesione. Non confonderli con i linfociti
+    intraepiteliali: anche questi sono piccoli e scuri e possono stare in un alone chiaro, ma sono cellule intere, con
+    un nucleo rotondo in cui si riconosce ancora la trama della cromatina, non una pallina nera come l'inchiostro né un
+    grappolo di frammenti.
+  en: >-
+    The same rectal biopsy at high power, H&E. Use the intact crypt cells as your reference: columnar cells with oval
+    nuclei and the round, clear vacuoles of goblet cells. Then look for the cells that do not fit. Some have shrunk to a
+    small round body with a single, very dark, dense nucleus sitting in a clear halo (pyknosis); others have broken up
+    into a cluster of dark nuclear beads inside a small vacuole (karyorrhexis), the picture that gut pathologists call
+    an exploding crypt cell. These apoptotic bodies lie mostly in the lower half of the crypts, and each one stays
+    enclosed in the epithelium until a neighbouring cell or a macrophage engulfs it. Notice what is missing around
+    them: no neutrophils, no pus, no broad area of dead cells. Key point: in a bowel biopsy, look for apoptotic bodies
+    at the base of the crypts; in graft-versus-host disease they are the key finding, but HIV infection, as here, and
+    some drugs can produce the same lesion. Do not mistake intraepithelial lymphocytes for them: these are small and
+    dark too, and may also sit in a clear halo, but each is a whole cell whose round nucleus still shows chromatin
+    texture, not an ink-black ball or a cluster of fragments.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina ad alto ingrandimento di cripte rettali disposte in diagonale: epitelio colonnare
+    con vacuoli chiari e rotondi delle cellule caliciformi, alcune cellule ridotte a piccoli nuclei rotondi e scuri in un
+    alone chiaro e grappoli di frammenti nucleari scuri dentro piccoli vacuoli; tra le cripte una lamina propria chiara
+    con nuclei allungati.
+  en: >-
+    High-power H&E micrograph of rectal crypts running diagonally: columnar epithelium with round, clear goblet-cell
+    vacuoles, several cells reduced to small, dark, round nuclei in clear halos, and clusters of dark nuclear fragments
+    inside small vacuoles; pale lamina propria with elongated nuclei between the crypts.
+annotations:
+  - id: nuclear-fragments-vacuole
+    label: { it: Frammenti nucleari in un piccolo vacuolo (carioressi), en: Nuclear fragments in a small vacuole (karyorrhexis) }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.383, 0.108, 0.449, 0.108, 0.449, 0.155, 0.383, 0.155] }
+  - id: pyknotic-body-halo
+    label: { it: Nucleo rotondo e compatto in un alone chiaro (picnosi), en: Dense round nucleus in a clear halo (pyknosis) }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.378, 0.682, 0.41, 0.682, 0.41, 0.715, 0.378, 0.715] }
+  - id: fragmenting-cell
+    label: { it: Altra cellula apoptotica che si frammenta, en: Another apoptotic cell breaking into fragments }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.445, 0.628, 0.48, 0.628, 0.48, 0.668, 0.445, 0.668] }
+  - id: lamina-propria
+    label: { it: Lamina propria senza neutrofili, en: Lamina propria without neutrophils }
+    revealOrder: 4
+    shape: { type: polygon, coords: [0.46, 0.38, 0.62, 0.38, 0.62, 0.52, 0.46, 0.52] }

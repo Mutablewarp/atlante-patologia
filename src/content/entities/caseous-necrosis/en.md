@@ -26,7 +26,7 @@ Caseous necrosis is a pattern of necrosis in which, unlike in coagulative necros
 ## Gross morphology
 
 - The name means cheese-like: on the cut surface the necrotic center looks like soft, crumbly, gray-white curd.<!--c:caseous-necrosis-c016-->
-- **Ghon focus:** primary tuberculosis leaves a subpleural nodule with sharp margins and a necrotic core; once healed it measures 1 to 2 cm, and over time it scars and calcifies.<!--c:caseous-necrosis-c017-->
+- **Ghon focus:** primary tuberculosis leaves a subpleural nodule with sharp margins and a necrotic core; once healed it measures 1 to 2 cm, and over time it scars and calcifies.<!--c:caseous-necrosis-c017--> Together with the hilar or mediastinal lymph nodes that drain it, which show the same caseating granulomas, it makes up the **Ghon complex**.<!--c:caseous-necrosis-c067-->
 - **Cavities:** in secondary tuberculosis they favor the upper-lobe apices and hold caseous material rich in acid-fast bacilli; size ranges from under 1 cm to almost a whole lung, though most are 3 to 10 cm.<!--c:caseous-necrosis-c018-->
 - **Miliary pattern:** many small yellow-white nodules, each the size of a millet seed, scattered through several organs.<!--c:caseous-necrosis-c019-->
 - **Other sites:** enlarged mesenteric lymph nodes with caseation in intestinal tuberculosis, and brain masses (tuberculomas) with a caseous center.<!--c:caseous-necrosis-c020-->
@@ -42,9 +42,15 @@ Caseous necrosis is a pattern of necrosis in which, unlike in coagulative necros
 
 ## Special stains, IHC and molecular findings
 
-- **Acid-fast stains** such as Ziehl–Neelsen show mycobacteria as slender, beaded rods.<!--c:caseous-necrosis-c027-->
-- **Silver impregnation:** in histoplasmosis it outlines the leftover, degenerating yeasts lying inside caseous foci.<!--c:caseous-necrosis-c028-->
-- **GMS (silver) and PAS** help to show fungi such as Coccidioides immitis.<!--c:caseous-necrosis-c029-->
+**How it is studied:**
+
+- **Specimen:** the most informative sample of an enlarged lymph node is the whole node, removed surgically (excisional biopsy); core needle biopsy and fine-needle aspiration for cytology are less complete alternatives.<!--c:caseous-necrosis-c068-->
+- **Fresh tissue for culture:** once a sample is fixed, for example as a paraffin block of formalin-fixed tissue, it can no longer be cultured, yet culture with drug-susceptibility testing is still the reference test for mycobacteria; so if the whole sample was fixed and doubt remains, a second biopsy sent unfixed to microbiology may be needed.<!--c:caseous-necrosis-c069-->
+- **H&E:** it shows the pattern, not its cause, because agents other than M. tuberculosis, such as some fungi, can also produce caseation; the organism is then sought with special stains.<!--c:caseous-necrosis-c070-->
+- **Ziehl–Neelsen:** this acid-fast stain shows mycobacteria as slender, beaded rods.<!--c:caseous-necrosis-c027--> Acid-fast means that the waxy lipids of the bacterial wall hold the dye carbolfuchsin even after a rinse in acid alcohol; the same lipids keep out the crystal violet of the Gram stain, which therefore shows these bacteria poorly.<!--c:caseous-necrosis-c071-->
+- **Few or many bacilli:** the caseous contents of an open cavity are crowded with acid-fast bacilli, whereas the necrotizing granulomas of intestinal tuberculosis hold only a few.<!--c:caseous-necrosis-c072--> In specimens from outside the lung, false-negative acid-fast smears are very common, so a negative result does not exclude tuberculosis.<!--c:caseous-necrosis-c073-->
+- **Fungi:** GMS (silver) and PAS help to show fungi such as Coccidioides immitis.<!--c:caseous-necrosis-c029--> Inside the caseous foci of histoplasmosis the yeasts degenerate, but a silver stain can still show what is left of them.<!--c:caseous-necrosis-c028--> Coccidioides does not need a special stain to be seen: on H&E its spherules show up as round structures with a basophilic outline, and the mature ones are packed with many tiny endospores.<!--c:caseous-necrosis-c074--> The appearance of a fungus in the section only suggests which organism it is; the species is confirmed in the laboratory by culture, by molecular tests (PCR) or by antigen detection.<!--c:caseous-necrosis-c075-->
+- **Culture and PCR:** M. tuberculosis divides only about once every 24 hours, so visible growth in culture commonly takes 3 to 6 weeks.<!--c:caseous-necrosis-c076--> On the paraffin block, PCR for mycobacterial DNA can still be done after fixation: a positive result supports a mycobacterial infection, whereas a negative one does not exclude it.<!--c:caseous-necrosis-c077-->
 
 ## Clinical presentation
 
@@ -89,6 +95,7 @@ Caseous necrosis is a pattern of necrosis in which, unlike in coagulative necros
 - Mechanism: **T-cell hypersensitivity** activates macrophages through **IFN-γ**, and released lytic enzymes kill tissue.<!--c:caseous-necrosis-c056-->
 - Rim: **epithelioid macrophages**, **Langhans giant cells** (horseshoe nuclei), lymphocytes, fibrosis.<!--c:caseous-necrosis-c057-->
 - Fate: **calcification** (healed Ghon complex) or erosion into a bronchus and **cavitation**.<!--c:caseous-necrosis-c058-->
+- Stains: **Ziehl–Neelsen** for mycobacteria, **GMS** and **PAS** for fungi.<!--c:caseous-necrosis-c078-->
 
 ## Common misconceptions and exam traps
 
@@ -97,6 +104,7 @@ Caseous necrosis is a pattern of necrosis in which, unlike in coagulative necros
 - **Caseous is not the same pattern as liquefactive necrosis**, which is digestion by neutrophils; still, caseum can soften and liquefy, and it leaves a cavity once it empties into a bronchus.<!--c:caseous-necrosis-c062-->
 - **Asteroid and Schaumann bodies** turn up in most granulomatous diseases, so neither one points specifically to sarcoidosis.<!--c:caseous-necrosis-c063-->
 - **Necrosis is not damage done directly by the bacillus alone**: much of it comes from the host immune response.<!--c:caseous-necrosis-c064-->
+- **Acid-fast rods are not proof of M. tuberculosis.** Atypical mycobacteria such as M. avium-intracellulare are acid-fast too and can cause granulomatous lung disease, with or without cavities.<!--c:caseous-necrosis-c079-->
 
 ## Mnemonics
 

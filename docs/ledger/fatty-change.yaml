@@ -179,28 +179,28 @@ claims:
     date: 2026-11-03
   - claimId: fatty-change-c023
     section: pathogenesis
-    statement: "In acute fatty liver of pregnancy, a fetal fatty acid oxidation defect (classically LCHAD deficiency) returns fatty acids to the mother and overwhelms her beta-oxidation."
+    statement: "In acute fatty liver of pregnancy, maternal beta-oxidation can be swamped by fatty acids returning across the placenta from a fetus that cannot oxidize them, classically because of LCHAD deficiency."
     sourceRef: { source: rubin-8e, chapter: "14", pages: "575" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fatty-change-c024
     section: gross
-    statement: "With heavy alcohol use the liver becomes yellow and enlarged, weighing up to three times normal."
+    statement: "The fatty liver is enlarged and yellow; in heavy drinkers its weight can reach three times normal."
     sourceRef: { source: rubin-8e, chapter: "20", pages: "868" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fatty-change-c025
     section: gross
     statement: "Water and protein, not fat alone, contribute to the increased liver weight."
     sourceRef: { source: rubin-8e, chapter: "20", pages: "868" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fatty-change-c026
     section: micro
     statement: "Fat accumulation ranges from small scattered droplets to coalesced droplets filling the cytoplasm of most cells."
@@ -215,16 +215,16 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "20", pages: "868" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fatty-change-c028
     section: micro
     statement: "Microvesicular fat consists of many tiny droplets that leave the nucleus in a central position."
     sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fatty-change-c029
     section: micro
     statement: "In acute fatty liver of pregnancy the hepatocytes are enlarged and contain microvesicular fat."
@@ -235,12 +235,12 @@ claims:
     date: 2026-11-03
   - claimId: fatty-change-c030
     section: micro
-    statement: "Electron microscopy of alcoholic fatty liver shows direct ethanol toxicity: enlarged or giant mitochondria and proliferated smooth ER."
+    statement: "In alcoholic fatty liver, electron microscopy shows enlarged or even giant mitochondria and a proliferated smooth ER, changes that come from ethanol itself and not from the stored fat."
     sourceRef: { source: rubin-8e, chapter: "20", pages: "868" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fatty-change-c031
     section: ancillary
     statement: "Lipid is dissolved during routine tissue processing, leaving empty spaces in sections."
@@ -279,8 +279,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "20", pages: "868" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fatty-change-c036
     section: clinical
     statement: "Many NAFLD patients are asymptomatic with only moderately increased liver enzymes."
@@ -299,12 +299,12 @@ claims:
     date: 2026-11-03
   - claimId: fatty-change-c038
     section: clinical
-    statement: "Reye syndrome is an uncommon childhood disease, typically after a febrile viral illness such as influenza or varicella, combining microvesicular steatosis, liver failure and encephalopathy."
+    statement: "Reye syndrome is an uncommon disease of children that typically follows a viral fever such as influenza or chickenpox and combines microvesicular fat with liver failure and encephalopathy."
     sourceRef: { source: rubin-8e, chapter: "20", pages: "882" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fatty-change-c039
     section: clinical
     statement: "In carnitine deficiency fatty acids are not transported into mitochondria and lipid droplets accumulate massively in muscle fibers."
@@ -328,8 +328,8 @@ claims:
     status: verified
     secondSource: { source: rubin-8e, locator: "ch. 20, printed p. 870 (NAFLD progression via NASH and fibrosis) and p. 880 (fat per se does not injure hepatocytes)" }
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fatty-change-c042
     section: diagnosis
     statement: "Drugs can reproduce nearly every liver injury pattern, so a detailed history of medications and supplements is required."
@@ -388,12 +388,12 @@ claims:
     date: 2026-11-03
   - claimId: fatty-change-c049
     section: prognosis
-    statement: "Macrovesicular fat is harmless in itself, so the underlying disease determines the outcome; microvesicular fat indicates mitochondrial injury and is often linked to severe, sometimes fatal, liver disease."
+    statement: "Large fat droplets do no harm by themselves, so the outcome depends on the underlying disease; small droplets signal mitochondrial failure and may accompany life-threatening liver disease."
     sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fatty-change-c050
     section: prognosis
     statement: "The fatty liver of kwashiorkor reverts to normal and does not progress to chronic liver disease."
@@ -404,12 +404,12 @@ claims:
     date: 2026-11-03
   - claimId: fatty-change-c051
     section: differential
-    statement: "In hydropic swelling the cytoplasm is enlarged and pale from excess water, held mainly in dilated ER cisternae, and the nucleus stays central."
+    statement: "Hydropic swelling makes the cytoplasm pale and swollen with excess water, held mostly in dilated ER cisternae, while the nucleus keeps its central place."
     sourceRef: { source: rubin-8e, chapter: "1", pages: "3" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fatty-change-c052
     section: differential
     statement: "In poorly controlled diabetes hepatocytes and renal proximal tubule cells may be swollen by glycogen."
@@ -432,8 +432,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fatty-change-c055
     section: differential
     statement: "Steatohepatitis shows ballooned hepatocytes, Mallory-Denk hyalins, neutrophils and pericellular fibrosis in addition to fat."
@@ -514,8 +514,8 @@ claims:
     sourceRef: { source: rubin-8e, chapter: "20", pages: "868" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
   - claimId: fatty-change-c065
     section: traps
     statement: "Steatosis often disappears once NAFLD reaches cirrhosis."
@@ -551,9 +551,121 @@ claims:
     date: 2026-11-03
   - claimId: fatty-change-c069
     section: clinical
-    statement: "Reye syndrome has been linked to aspirin given during the preceding illness, but it is recognized to be more complex than simple aspirin toxicity."
+    statement: "Reye syndrome is classically associated with aspirin taken during the preceding illness, but aspirin toxicity alone is now known not to explain it."
     sourceRef: { source: rubin-8e, chapter: "20", pages: "882" }
     status: verified
     verifiedBy: agent
-    verifier: "fixer-agent"
-    date: 2026-11-03
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fatty-change-c070
+    section: ancillary
+    statement: "For a diffuse liver disease, needle core biopsies are preferred to surgical wedge biopsies; only histology can tell steatohepatitis from simple steatosis, so biopsy remains the reference standard in NAFLD."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: beyond-reference
+    secondSource: { source: brunt-2010, locator: "Abstract; Introduction (paragraph on biopsy technique)" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fatty-change-c071
+    section: ancillary
+    statement: "Sampling error limits liver biopsy: the organ is 50,000-65,000 times larger than even an adequate core; cores of at least 1.5 cm, or more than one core, reduce it."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: beyond-reference
+    secondSource: { source: brunt-2010, locator: "Introduction (paragraphs on sampling error and biopsy length)" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fatty-change-c072
+    section: ancillary
+    statement: "Biopsy reports give the steatosis pattern (macrovesicular, microvesicular or mixed) and grade its extent by the percentage of hepatocytes involved: over 5% is the minimum for NAFLD; 5-33% is mild, 34-66% moderate, over 66% severe."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: beyond-reference
+    secondSource: { source: brunt-2010, locator: "section Histology of NAFLD in adults, subsection NAFLD (steatosis paragraphs); Table 2 (steatosis grade)" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fatty-change-c073
+    section: ancillary
+    statement: "In adult NAFLD steatosis tends to begin in acinar zone 3 (perivenular), unlike most pediatric cases."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: beyond-reference
+    secondSource: { source: brunt-2010, locator: "section Histology of NAFLD in adults, subsection NAFLD (paragraph on zonal distribution)" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fatty-change-c074
+    section: ancillary
+    statement: "Oil red O may be needed to prove fat in pure microvesicular steatosis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: beyond-reference
+    secondSource: { source: brunt-2010, locator: "section Histology of NAFLD in adults, subsection NAFLD (paragraph on macrovesicular, mixed and microvesicular steatosis)" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fatty-change-c075
+    section: ancillary
+    statement: "Diastase digestion removes glycogen, so PAS-positive material that disappears after diastase (PAS-D) is glycogen."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fatty-change-c076
+    section: ancillary
+    statement: "Glycogen and fat can accumulate together in hepatocytes, as in glycogen storage disease type I (von Gierke)."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "879" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fatty-change-c077
+    section: ancillary
+    statement: "Trichrome stains collagen blue; in steatohepatitis fibrosis usually begins around the central venule and encircles single hepatocytes in a chicken-wire pattern."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "869-870" }
+    status: beyond-reference
+    secondSource: { source: brunt-2010, locator: "section Histology of NAFLD in adults, subsection Adult NASH (paragraph on fibrosis)" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fatty-change-c078
+    section: ancillary
+    statement: "Keratin 8/18 immunostaining can help recognize ballooned hepatocytes, a defining lesion of steatohepatitis that observers grade inconsistently on H&E, because these cells have lost those keratins."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "868" }
+    status: beyond-reference
+    secondSource: { source: brunt-2010, locator: "section Histology of NAFLD in adults, subsection Adult NASH (paragraphs on minimal criteria and hepatocellular ballooning)" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fatty-change-c079
+    section: ancillary
+    statement: "For a suspected lipid myopathy, the muscle biopsy includes glutaraldehyde-fixed tissue for possible electron microscopy and unfixed tissue frozen for cryostat sections."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1411, 1425" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fatty-change-c080
+    section: ancillary
+    statement: "In lipid storage myopathy, frozen H&E sections show many vacuoles in muscle fibers, and oil red O stains their neutral lipid red."
+    sourceRef: { source: rubin-8e, chapter: "31", pages: "1425" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fatty-change-c081
+    section: ancillary
+    statement: "In some cases of acute fatty liver of pregnancy, DNA analysis shows that the fetus carries an LCHAD mutation such as Glu474Gln, which puts the child at risk of fatty liver and hypoketotic hypoglycemia."
+    sourceRef: { source: rubin-8e, chapter: "14", pages: "575" }
+    status: beyond-reference
+    secondSource: { source: ibdah-1999, locator: "Abstract (Methods, Results, Conclusions)" }
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09
+  - claimId: fatty-change-c082
+    section: clinical
+    statement: "Focal myocyte necrosis and fat droplets in myocytes can occur when diphtheria toxin reaches the heart."
+    sourceRef: { source: rubin-8e, chapter: "9", pages: "414" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-09

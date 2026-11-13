@@ -1,0 +1,80 @@
+# License check (2026-11-08): Commons file page {{Information}} gives Source {{Institution: Calicut Medical College}},
+# Author "Department of Pathology, Calicut Medical College", Permission {{PermissionTicket|id=2014102010001497}}
+# confirmed by a Wikimedia VRT volunteer on 11 December 2014, license {{cc-by-sa-4.0}}; extmetadata LicenseShortName
+# "CC BY-SA 4.0", AttributionRequired true, no Restrictions. Same VRT ticket and upload set as
+# coagulative-necrosis-micro-3 and -micro-4. The uploader is not the creator, but the creator's own permission is on
+# file with the Wikimedia VRT. CC BY-SA is approved as a class by owner decision O7 (plan/v2-plan.md, 2026-11-03),
+# hence ownerApproved: true. Histology only; nothing identifies the patient.
+# Group glycogenosis-liver-stains: this H&E, hydropic-swelling-micro-3 (PAS) and hydropic-swelling-micro-4 (PAS-D)
+# share uploader, VRT ticket, diagnosis and description style. The source does not say whether the three photographs
+# come from one biopsy, so the captions say "the same teaching set". A Commons editor filed the files under
+# "glycogen storage disease type II"; the source itself names no type, so none is stated. The source gives no
+# magnification, so magnification, objective and mpp are left out (all three members then sort by id: H&E, PAS,
+# PAS-D). This image shows a look-alike of hydropic swelling, used for the differential (#differential, #ancillary).
+id: hydropic-swelling-micro-2
+file: hydropic-swelling-micro-2.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Glycogen_storage_disorder_-_Liver.jpg
+author: Department of Pathology, Calicut Medical College
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+retrievedAt: 2026-11-08
+modifications: none
+attributionText: >-
+  Department of Pathology, Calicut Medical College, "Glycogen storage disorder - Liver", via Wikimedia Commons,
+  CC BY-SA 4.0
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+group: glycogenosis-liver-stains
+stain: H&E
+orientation:
+  it: "In basso a sinistra uno spazio portale con piccoli vasi; il resto del campo è parenchima lobulare."
+  en: "A portal tract with small vessels sits at the lower left; the rest of the field is lobular parenchyma."
+lookFor:
+  it: "Sembra rigonfiamento idropico, ma con la sola EE non puoi saperlo: passa a PAS e PAS-D con il selettore."
+  en: "It looks like hydropic swelling, but H&E alone cannot tell you: use the switch to see PAS and PAS-D."
+caption:
+  it: >-
+    Un quadro che simula il rigonfiamento idropico, ma non lo è: biopsia epatica di una glicogenosi (malattia da
+    accumulo di glicogeno, diagnosi della fonte), EE. Guarda prima l'insieme: quasi tutti gli epatociti sono ingranditi e hanno un citoplasma
+    chiaro, finemente granulare, quasi vuoto, tanto che il campo sembra un mosaico di poligoni chiari dai contorni
+    netti, e i sinusoidi fra le cellule si vedono appena. Poi passa alle singole cellule: i nuclei sono piccoli e
+    rotondi e nessuno è schiacciato contro il margine della cellula. Fin qui la descrizione vale anche per un
+    epatocita con rigonfiamento idropico: cellula ingrandita, citoplasma chiaro, nucleo nella sua sede. La differenza
+    sta in ciò che riempie la cellula: qui è glicogeno, che in EE appare chiaro, e non acqua. Le glicogenosi sono
+    difetti ereditari degli enzimi del metabolismo del glicogeno; anche un diabete mal controllato può far rigonfiare
+    gli epatociti allo stesso modo, per accumulo di glicogeno. Non scambiarlo nemmeno per steatosi: il grasso viene
+    sciolto durante l'allestimento in paraffina e lascia buchi vuoti, rotondi e a margini netti, mentre qui il
+    citoplasma conserva una fine trama rosata. La sezione in EE non basta a decidere: passa alle immagini in PAS e in PAS-D di
+    questa serie.
+  en: >-
+    A look-alike, not hydropic swelling: a liver biopsy from a glycogen storage disorder (the source's diagnosis),
+    H&E. Scan the whole field first: nearly every hepatocyte is enlarged and has pale, finely granular, almost empty
+    cytoplasm, so the field looks like a mosaic of clear polygons with sharp borders, and the sinusoids between the
+    cells are hardly visible. Then move to single cells: the nuclei are small and round, and none is squashed against
+    the cell edge. Up to this point the description also fits a hydropically swollen hepatocyte: an enlarged cell,
+    pale cytoplasm, a nucleus in its normal place. The difference lies in what fills the cell: here it is glycogen,
+    which looks pale on H&E, not water. Glycogen storage diseases are inherited defects of the enzymes that handle
+    glycogen; poorly controlled diabetes can also swell hepatocytes with glycogen in the same way. Do not call it fat
+    either: fat is dissolved out during paraffin processing and leaves round, sharp-edged empty holes, whereas here the
+    cytoplasm keeps a fine pink texture. The H&E section cannot settle the question: move on to the PAS and PAS-D
+    images of this set.
+alt:
+  it: >-
+    Micrografia di fegato in ematossilina-eosina: un campo di grandi epatociti poligonali con citoplasma rosa
+    pallido, finemente granulare e quasi vuoto, contorni cellulari rosa netti e piccoli nuclei rotondi rosa scuro; in
+    basso a sinistra tessuto più lasso con un piccolo vaso rotondo e spazi chiari più ampi.
+  en: >-
+    H&E micrograph of liver: a field of large polygonal hepatocytes with pale pink, finely granular, almost empty
+    cytoplasm, sharp pink cell borders and small round dark-pink nuclei; at the lower left looser tissue with a small
+    round vessel and larger clear spaces.
+annotations:
+  - id: distended-hepatocytes
+    label: { it: "Epatociti distesi da citoplasma chiaro e finemente granulare", en: "Hepatocytes distended by pale, finely granular cytoplasm" }
+    revealOrder: 1
+    shape: { type: rect, coords: [0.547, 0.286, 0.195, 0.26] }
+  - id: portal-tract
+    label: { it: "Spazio portale con piccoli vasi (punto di repere)", en: "Portal tract with small vessels (landmark)" }
+    revealOrder: 2
+    shape: { type: rect, coords: [0.0, 0.70, 0.275, 0.26] }

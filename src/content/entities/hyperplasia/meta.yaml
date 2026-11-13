@@ -110,12 +110,44 @@ chain:
     lab:
       it: "Aumento dei globuli rossi; midollo ipercellulare con riduzione relativa del tessuto adiposo"
       en: "Raised red cell count; hypercellular marrow with relatively less fat"
+examQuestions:
+  - it: "Mi parli dell'iperplasia: come la definisce, quali stimoli la provocano e quale esempio porterebbe per ciascuno?"
+    en: "Tell me about hyperplasia: how do you define it, which stimuli cause it, and what example would you give for each?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Mi descriva l'iperplasia prostatica benigna: in quale zona della ghiandola inizia, che aspetto hanno i noduli e che cosa vede al microscopio?"
+    en: "Describe benign prostatic hyperplasia: in which zone of the gland does it start, what do the nodules look like, and what do you see under the microscope?"
+    focus: [gross, micro]
+    level: 1
+  - it: "Perché l'iperplasia prostatica dà disturbi urinari, e che cosa succede alla vescica e ai reni se l'ostruzione dura a lungo?"
+    en: "Why does prostatic hyperplasia cause urinary symptoms, and what happens to the bladder and the kidneys if the obstruction lasts?"
+    focus: [gross, clinical, prognosis]
+    level: 2
+  - it: "Perché l'iperplasia eritroide di chi soggiorna in alta quota regredisce al ritorno al livello del mare, mentre un'iperplasia endometriale che persiste può evolvere verso una neoplasia?"
+    en: "Why does the erythroid hyperplasia of someone staying at high altitude regress on return to sea level, whereas a persistent endometrial hyperplasia can progress towards a neoplasm?"
+    focus: [pathogenesis, prognosis]
+    level: 2
+  - it: "Su una biopsia prostatica, come distingue le ghiandole di un'iperplasia da quelle di un adenocarcinoma? Quali colorazioni immunoistochimiche userebbe?"
+    en: "On a prostate biopsy, how do you tell the glands of hyperplasia from those of adenocarcinoma? Which immunostains would you use?"
+    focus: [micro, ancillary, differential]
+    level: 3
+  - it: "Come distingue l'iperplasia dall'ipertrofia, dalla metaplasia e dalla displasia? Iperplasia e ipertrofia possono coesistere nello stesso organo?"
+    en: "How do you tell hyperplasia from hypertrophy, metaplasia and dysplasia? Can hyperplasia and hypertrophy coexist in the same organ?"
+    focus: [definition, differential, traps]
+    level: 3
 images:
   - id: hyperplasia-gross-1
     role: gross
+    pairWith: hyperplasia-micro-3
   - id: hyperplasia-micro-1
     role: micro
   - id: hyperplasia-micro-2
+    role: micro
+  - id: hyperplasia-micro-3
+    role: micro
+  - id: hyperplasia-micro-4
+    role: micro
+  - id: hyperplasia-micro-6
     role: micro
   - id: g01-adaptation-spectrum
     role: diagram
@@ -130,9 +162,12 @@ sources:
     pages: "121"
   - source: rubin-8e
     chapter: "23"
-    pages: "1007-1008"
+    pages: "1007-1011"
   - source: rubin-8e
     chapter: "24"
     pages: "1041-1042"
-lastUpdated: 2026-11-03
+  - source: rubin-8e
+    chapter: "26"
+    pages: "1162, 1171"
+lastUpdated: 2026-11-09
 status: published

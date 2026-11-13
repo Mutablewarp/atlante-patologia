@@ -29,6 +29,8 @@ learningObjectives:
     en: "Recognize the gross and microscopic findings: chalky white foci, amorphous basophilic deposits, foamy macrophages and dystrophic calcification."
   - it: "Spiegare perché la pancreatite acuta grave può causare ipocalcemia e perché la necrosi adiposa mammaria può simulare un carcinoma."
     en: "Explain why severe acute pancreatitis can cause hypocalcemia and why breast fat necrosis can mimic carcinoma."
+  - it: "Indicare come si studia una necrosi adiposa mammaria: agobiopsia, colorazioni speciali e immunoistochimica che aiuta a escludere un carcinoma."
+    en: "State how breast fat necrosis is studied: needle core biopsy, special stains and the immunohistochemistry that helps to exclude carcinoma."
 prerequisites: []
 relations:
   - type: complicationOf
@@ -49,8 +51,8 @@ relations:
 quickCheck:
   - id: fat-necrosis-q1
     q:
-      it: "Che cosa sono i depositi basofili amorfi visibili ai margini degli adipociti necrotici?"
-      en: "What are the amorphous basophilic deposits at the edges of necrotic adipocytes?"
+      it: "Che cosa sono i depositi blu (basofili) che delimitano gli adipociti necrotici?"
+      en: "What are the blue (basophilic) deposits that outline necrotic fat cells?"
     a:
       it: "Saponi di calcio: acidi grassi, liberati dalla lipasi, che si sono legati al calcio (saponificazione)."
       en: "Calcium soaps: fatty acids released by lipase that have bound calcium (saponification)."
@@ -105,22 +107,58 @@ chain:
     lab:
       it: "Biopsia: grasso necrotico e macrofagi schiumosi, nessuna cellula di carcinoma"
       en: "Biopsy: necrotic fat and foamy macrophages, no carcinoma cells"
+examQuestions:
+  - it: "Mi parli della necrosi adiposa: che cos'è, che cosa la distingue dalle altre necrosi e in quali contesti si osserva?"
+    en: "Tell me about fat necrosis: what is it, what sets it apart from the other types of necrosis, and in which settings does it occur?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Che cosa vede a occhio nudo e al microscopio in un focolaio di necrosi adiposa? Di che cosa sono fatti i depositi blu (basofili) attorno agli adipociti morti?"
+    en: "What do you see with the naked eye and under the microscope in a focus of fat necrosis? What are the blue (basophilic) deposits around the dead fat cells made of?"
+    focus: [gross, micro, traps]
+    level: 1
+  - it: "Mi spieghi la sequenza che porta alla saponificazione. Da dove vengono le lipasi nella forma pancreatica e da dove in quella traumatica?"
+    en: "Explain the sequence of events that leads to saponification. Where do the lipases come from in the pancreatic form, and where in the traumatic form?"
+    focus: [pathogenesis, etiology, traps]
+    level: 2
+  - it: "Perché nella pancreatite acuta grave può comparire ipocalcemia? E che rapporto c'è con l'ipercalcemia?"
+    en: "Why can hypocalcemia appear in severe acute pancreatitis? And how does hypercalcemia fit in?"
+    focus: [clinical, traps]
+    level: 2
+  - it: "Una paziente ha un nodulo mammario duro con retrazione della cute: come distingue una necrosi adiposa da un carcinoma? Quali indagini e quali colorazioni userebbe?"
+    en: "A patient has a hard breast lump with skin retraction: how do you tell fat necrosis from carcinoma? Which investigations and which stains would you use?"
+    focus: [diagnosis, ancillary, differential]
+    level: 3
+  - it: "Come distingue la necrosi adiposa dalla steatosi e dalla necrosi colliquativa?"
+    en: "How do you tell fat necrosis apart from fatty change and from liquefactive necrosis?"
+    focus: [differential, traps]
+    level: 3
 images:
   - id: fat-necrosis-gross-1
     role: gross
+    pairWith: fat-necrosis-micro-3
   - id: fat-necrosis-micro-1
     role: micro
   - id: fat-necrosis-micro-2
+    role: micro
+  - id: fat-necrosis-micro-3
+    role: micro
+  - id: fat-necrosis-micro-4
     role: micro
 reviewStatus: ai-generated-unreviewed
 editionDependent: false
 sources:
   - source: rubin-8e
     chapter: "1"
-    pages: "5, 29, 38-40"
+    pages: "5-7, 29, 38-40"
   - source: rubin-8e
     chapter: "6"
     pages: "319"
+  - source: rubin-8e
+    chapter: "7"
+    pages: "336"
+  - source: rubin-8e
+    chapter: "18"
+    pages: "721"
   - source: rubin-8e
     chapter: "19"
     pages: "837"
@@ -128,7 +166,14 @@ sources:
     chapter: "21"
     pages: "902-905, 910"
   - source: rubin-8e
+    chapter: "22"
+    pages: "965"
+  - source: rubin-8e
     chapter: "25"
-    pages: "1076-1078"
-lastUpdated: 2026-11-03
+    pages: "1076-1078, 1094, 1097"
+  - source: rubin-8e
+    chapter: "31"
+    pages: "1411, 1425"
+  - source: kerridge-2015
+lastUpdated: 2026-11-09
 status: published

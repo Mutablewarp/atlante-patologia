@@ -29,6 +29,8 @@ learningObjectives:
     en: "Explain the central role of calcium and of the mitochondrial permeability transition pore in crossing the point of no return."
   - it: "Collegare la durata dell'ischemia all'esito: recupero completo, morte durante la riperfusione o morte già durante l'ischemia."
     en: "Relate the duration of ischemia to the outcome: full recovery, death during reperfusion or death during ischemia itself."
+  - it: "Indicare con quali tecniche (esame macroscopico con TTC, ematossilina-eosina, microscopia elettronica, colorazione tricromica) si riconosce il danno ischemico del miocardio e da quale momento ciascuna è utile."
+    en: "State which techniques (gross examination with TTC, H&E, electron microscopy, trichrome stain) reveal ischemic injury of the myocardium, and from when each is useful."
 prerequisites: []
 relations:
   - type: causes
@@ -116,13 +118,44 @@ chain:
     lab:
       it: "Aumento della troponina cardiaca (I o T) nel siero"
       en: "Rise in serum cardiac troponin (I or T)"
+examQuestions:
+  - it: "Mi parli del danno cellulare ipossico-ischemico: in che cosa l'ischemia differisce dalla semplice ipossia, e quali cellule sono le più vulnerabili?"
+    en: "Tell me about hypoxic–ischemic cell injury: how does ischemia differ from hypoxia alone, and which cells are the most vulnerable?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Che cosa vede al microscopio ottico ed elettronico in una cellula con danno ischemico reversibile, e quali reperti indicano invece che la cellula è morta?"
+    en: "What do you see under the light and electron microscope in a cell with reversible ischemic injury, and which findings show instead that the cell has died?"
+    focus: [micro, traps]
+    level: 1
+  - it: "Perché il calcio ha un ruolo centrale nella morte cellulare ischemica? Mi spieghi come si accumula nella cellula e che cosa danneggia."
+    en: "Why is calcium central to ischemic cell death? Explain how it builds up in the cell and what it damages."
+    focus: [pathogenesis]
+    level: 2
+  - it: "Che cosa succede alle cellule quando il flusso viene ripristinato dopo un'ischemia breve, intermedia o prolungata? E che cos'è il precondizionamento ischemico?"
+    en: "What happens to the cells when flow is restored after short, intermediate or prolonged ischemia? And what is ischemic preconditioning?"
+    focus: [prognosis, traps]
+    level: 2
+  - it: "Con quali tecniche si studia il danno ischemico del miocardio, e da quando ciascuna diventa utile, dai primi minuti fino alla cicatrice?"
+    en: "Which techniques are used to study ischemic injury of the myocardium, and from when is each useful, from the first minutes to the scar?"
+    focus: [ancillary, high-yield, traps]
+    level: 3
+  - it: "Come si presenta la necrosi ischemica nel cuore e nel cervello? Mi confronti i due organi, dal quadro macroscopico a quello microscopico."
+    en: "How does ischemic necrosis look in the heart and in the brain? Compare the two organs, from the gross to the microscopic picture."
+    focus: [gross, micro, clinical]
+    level: 3
 images:
   - id: hypoxic-ischemic-injury-gross-1
     role: gross
     pairWith: hypoxic-ischemic-injury-micro-1
+  - id: hypoxic-ischemic-injury-micro-6
+    role: micro
   - id: hypoxic-ischemic-injury-micro-1
     role: micro
   - id: hypoxic-ischemic-injury-micro-2
+    role: micro
+  - id: hypoxic-ischemic-injury-micro-3
+    role: micro
+  - id: hypoxic-ischemic-injury-micro-4
     role: micro
   - id: g01-cell-injury-timeline
     role: diagram
@@ -137,6 +170,11 @@ sources:
     pages: "337"
   - source: rubin-8e
     chapter: "17"
-    pages: "655, 659-660"
-lastUpdated: 2026-11-03
+    pages: "655, 657-660"
+  - source: rubin-8e
+    chapter: "32"
+    pages: "1456"
+  - source: adegboyega-1997
+  - source: kakimoto-2013
+lastUpdated: 2026-11-09
 status: published

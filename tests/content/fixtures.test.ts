@@ -39,6 +39,13 @@ describe('content gates: synthetic fixture', () => {
   describe('parity', () => {
     it('fails when it.md is missing', () => expect(fail('parity', (t) => delete alpha(t).it)).toEqual([expect.stringMatching(/it\.md: missing/)]));
     it('fails when en.md is missing', () => expect(fail('parity', (t) => delete alpha(t).en)).toEqual([expect.stringMatching(/en\.md: missing/)]));
+    it('still checks the structure of en.md when it.md is missing (the author stage of scripts/agent)', () =>
+      expect(
+        fail('parity', (t) => {
+          delete alpha(t).it;
+          alpha(t).en = alpha(t).en!.replace('## Mnemonics\n', '');
+        }),
+      ).toEqual([expect.stringMatching(/it\.md: missing/), expect.stringMatching(/en\.md: .*#13: expected "Mnemonics"/)]));
     it('fails when a canonical section is missing', () =>
       expect(fail('parity', (t) => void (alpha(t).en = alpha(t).en!.replace('## Mnemonics\n', '')))).toEqual([
         expect.stringMatching(/en\.md: .*#13: expected "Mnemonics"/),

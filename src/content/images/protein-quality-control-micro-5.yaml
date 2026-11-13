@@ -1,0 +1,90 @@
+# License check (2026-11-09): Commons file page {{Information}} gives Source {{own}}, Author [[User:Patho|Patho]],
+# license {{self|cc-by-sa-3.0}}; extmetadata LicenseShortName "CC BY-SA 3.0", AttributionRequired true, no
+# Restrictions. The file has one version, uploaded by Patho on 2012-06-24, so the uploader is the creator. CC BY-SA is
+# approved as a class by owner decision O7 (plan/v2-plan.md, 2026-11-03), hence ownerApproved: true. Histology only;
+# nothing identifies the patient. Group neurofibrillary-tangles-patho: the author lists this Gallyas image and
+# protein-quality-control-micro-6 (tau immunohistochemistry, uploaded 97 seconds later, same description) as
+# "other versions" of each other, so they are one teaching set; the source does not say whether both come from the same
+# block, so the captions say "same teaching set", not "same section". The source names the lesion and the region
+# ("Neurofibrillary tangles in the Hippocampus of an old person with Alzheimer-related pathology") but gives no
+# magnification or counterstain; `magnification` is our reading of the field. Annotations placed by inspection on a
+# gridded copy of the file.
+id: protein-quality-control-micro-5
+file: protein-quality-control-micro-5.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Neurofibrillary_tangles_in_the_Hippocampus_of_an_old_person_with_Alzheimer-related_pathology,_Gallyas_silver_stain.JPG
+author: Patho
+license: CC-BY-SA-3.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/3.0/
+retrievedAt: 2026-11-09
+modifications:
+  it: >-
+    Ridimensionata dall'originale di Commons di 1920 × 1280 px a 1600 × 1067 px e ricodificata in JPEG (qualità 85);
+    nessun ritaglio, nessuna modifica dei colori. Questo adattamento è condiviso con la stessa licenza (CC BY-SA 3.0).
+  en: >-
+    Downscaled from the 1920 × 1280 px Commons original to 1600 × 1067 px and re-encoded as JPEG (quality 85); no crop,
+    no colour change. This adaptation is shared under the same licence (CC BY-SA 3.0).
+attributionText: >-
+  Patho, "Neurofibrillary tangles in the Hippocampus of an old person with Alzheimer-related pathology, Gallyas silver
+  stain", via Wikimedia Commons, CC BY-SA 3.0
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-09 }
+group: neurofibrillary-tangles-patho
+stain: Gallyas silver stain
+magnification: high power
+lookFor:
+  it: "Cerca il nero: ogni fiamma nera nel corpo di un neurone è un groviglio neurofibrillare; il rosa-rosso della controcolorazione mostra solo nuclei e cellule."
+  en: "Look for black: each black flame in a neuron's cell body is a neurofibrillary tangle; the pink-red counterstain only shows nuclei and cells."
+caption:
+  it: >-
+    Ippocampo di una persona anziana con alterazioni di tipo Alzheimer (descrizione della fonte), impregnazione
+    argentica secondo Gallyas, forte ingrandimento. Con questo metodo il fondo resta quasi incolore, la
+    controcolorazione tinge di rosa-rosso nuclei e corpi cellulari e i filamenti anomali di tau diventano neri. Percorri
+    il campo cercando il nero: diversi neuroni contengono nel corpo cellulare una massa nera densa, finemente
+    fibrillare, spesso allungata come una fiamma che segue la forma della cellula fino al dendrite principale. Sono
+    grovigli neurofibrillari. Il materiale nero è tau assemblata in filamenti elicoidali appaiati; ci è arrivata
+    staccandosi dai microtubuli, che normalmente aiuta a stabilizzare, dopo essere stata fosforilata in modo anomalo. Un
+    groviglio è quindi un aggregato intracellulare di una proteina mal ripiegata: lo stesso tipo di lesione di un corpo
+    di Lewy, ma fatto di un'altra proteina. L'argento mostra che un aggregato c'è, non di quale proteina è fatto: anche
+    le placche di β-amiloide sono argentofile. I grovigli compaiono presto: molto prima dell'età in cui di solito
+    esordisce la malattia di Alzheimer, persone senza sintomi possono già averli nel giro paraippocampale e nella
+    corteccia entorinale, accanto all'ippocampo, e quanto si sono estesi corrisponde alla gravità della demenza. Non
+    sono specifici della malattia di Alzheimer. Con il selettore vedi la stessa serie didattica colorata per la tau con
+    l'immunoistochimica.
+  en: >-
+    Hippocampus of an elderly person with Alzheimer-type changes (the source's description), Gallyas silver
+    impregnation, high power. In this method the background stays almost colourless, the counterstain colours nuclei and
+    cell bodies pink-red, and abnormal tau filaments turn black. Scan the field for black: several neurons carry a
+    dense, finely fibrillar black mass in the cell body, often drawn out like a flame that follows the shape of the cell
+    into its main dendrite. These are neurofibrillary tangles. The black material is tau assembled into paired helical
+    filaments; it got there by coming off the microtubules it normally helps to stabilize, after being abnormally
+    phosphorylated. A tangle is therefore an intracellular aggregate of a misfolded protein: the same kind of lesion as
+    a Lewy body, but made of a different protein. Silver shows that an aggregate is there, not which protein it is made
+    of: plaques of β-amyloid are silver-positive too. Tangles appear early: long before the age at which Alzheimer
+    disease usually begins, people without symptoms may already have them in the parahippocampal gyrus and the
+    entorhinal cortex, beside the hippocampus, and how far they have spread matches how severe the dementia is. They are
+    not specific to Alzheimer disease. Use the switch to see the same teaching set stained for tau by
+    immunohistochemistry.
+alt:
+  it: >-
+    Micrografia di tessuto cerebrale con impregnazione argentica, su fondo quasi incolore con nuclei rosa-rossi. Diversi
+    neuroni contengono masse nere dense, a forma di fiamma, che riempiono il corpo cellulare e si allungano in un
+    prolungamento; in basso a sinistra un neurone mostra una massa nera accanto a un corpo cellulare rosa.
+  en: >-
+    Silver-stained micrograph of brain tissue on an almost colourless background with pink-red nuclei. Several neurons
+    contain dense black, flame-shaped masses that fill the cell body and extend into a process; at the lower left a
+    neuron shows a black mass beside a pink cell body.
+annotations:
+  - id: neuron-with-tangle
+    label: { it: Neurone con un groviglio nero nel corpo cellulare, en: Neuron with a black tangle in its cell body }
+    revealOrder: 1
+    shape:
+      type: polygon
+      coords: [0.07, 0.59, 0.11, 0.575, 0.15, 0.585, 0.175, 0.65, 0.2, 0.735, 0.185, 0.745, 0.15, 0.715, 0.09, 0.7, 0.07, 0.65]
+  - id: flame-shaped-tangle
+    label: { it: Groviglio neurofibrillare a fiamma, en: Flame-shaped neurofibrillary tangle }
+    revealOrder: 2
+    shape:
+      type: polygon
+      coords: [0.466, 0.437, 0.466, 0.519, 0.437, 0.578, 0.395, 0.578, 0.366, 0.519, 0.366, 0.437, 0.395, 0.378, 0.437, 0.378]

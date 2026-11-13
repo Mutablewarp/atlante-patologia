@@ -105,9 +105,10 @@ export function parityGate(tree: Tree): { problems: Problem[]; stale: StaleTrans
     const p = (file: string, message: string) => problems.push({ gate: 'parity', file: `${unit.dir}/${file}`, message });
     if (unit.en === undefined) p('en.md', 'missing');
     if (unit.it === undefined) p('it.md', 'missing');
-    if (unit.en === undefined || unit.it === undefined) return;
-    const docs = { en: splitFrontmatter(unit.en), it: splitFrontmatter(unit.it) };
+    // Each language that exists is checked on its own, so a card still without it.md (the author stage of scripts/agent) gets the en.md structure checks.
+    const docs = { en: splitFrontmatter(unit.en ?? ''), it: splitFrontmatter(unit.it ?? '') };
     for (const lang of ['en', 'it'] as const) {
+      if (unit[lang] === undefined) continue;
       const fm = entityBodySchema.safeParse(docs[lang].data);
       if (!fm.success) p(`${lang}.md`, `frontmatter: ${issues(fm.error)}`);
       else if (fm.data.lang !== lang) p(`${lang}.md`, `frontmatter lang is "${fm.data.lang}"`);
@@ -125,6 +126,7 @@ export function parityGate(tree: Tree): { problems: Problem[]; stale: StaleTrans
         else if (!hy.some((l) => /\*\*[^*]+\*\*/.test(l))) p(`${lang}.md`, 'high-yield summary needs **bold** key terms');
       }
     }
+    if (unit.en === undefined || unit.it === undefined) return;
     if (!canonical && h2Titles(docs.en.body).length !== h2Titles(docs.it.body).length) p('it.md', 'H2 section count differs from en.md');
     const en = claimMarkers(docs.en.body);
     const it = claimMarkers(docs.it.body);

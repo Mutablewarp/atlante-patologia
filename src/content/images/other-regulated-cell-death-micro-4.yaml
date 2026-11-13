@@ -1,0 +1,98 @@
+# License check (2026-11-08): taken from the article itself, not from Wikimedia Commons. Europe PMC full text
+# (PMC10095369; PubMed 37047791 confirms authors, journal and DOI) carries the licence
+# "https://creativecommons.org/licenses/by/4.0/" ("Licensee MDPI ... Creative Commons Attribution (CC BY) license"),
+# © 2023 by the authors. The Figure 3 legend has no "reproduced" or "with permission" note: the micrographs are the
+# authors' own case (archival paraffin H&E slides of one HER2-positive invasive breast carcinoma, article §2.3 and
+# §4.4; informed consent stated). Allowed under COMPLIANCE_PLAN §4 (PubMed Central figure in an article with an
+# explicit CC BY licence). Tissue only: nothing identifies the patient. The bottom panel of B (40× objective, the same
+# cell-in-cell structure) is other-regulated-cell-death-micro-5, same group. Caption facts on entosis checked on
+# rubin-8e ch. 1, pp. 45 and 58; the objectives, the yellow circle and where the figures cluster in this tumour come
+# from the article.
+id: other-regulated-cell-death-micro-4
+file: other-regulated-cell-death-micro-4.jpg
+kind: micro
+sourceUrl: https://pmc.ncbi.nlm.nih.gov/articles/PMC10095369/figure/ijms-24-06819-f003/
+author: Ireneusz Dziuba, Agata M. Gawel, Paweł Tyrna, Jędrzej Machtyl, Monika Olszanecka, Andrzej Pawlik, Cezary Wójcik, Lukasz P. Bialy, Izabela Mlynarczuk-Bialy
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-11-08
+modifications:
+  it: >-
+    Ritaglio del solo pannello superiore di B (obiettivo 10×) della Figura 3, dal PNG a piena risoluzione dell'editore
+    (2589 × 2276 px, https://mdpi-res.com/ijms/ijms-24-06819/article_deploy/html/images/ijms-24-06819-g003.png):
+    pixel x 898–1713, y 257–1318, cioè 816 × 1062 px; esclusi l'intestazione, le lettere dei pannelli, i pannelli A e C
+    e il pannello inferiore di B. Salvato in JPEG senza ridimensionare né cambiare i colori. Il cerchio giallo fa parte
+    della figura pubblicata.
+  en: >-
+    Cropped to the top panel of B (10× objective) of Figure 3, from the publisher's full-size PNG (2589 × 2276 px,
+    https://mdpi-res.com/ijms/ijms-24-06819/article_deploy/html/images/ijms-24-06819-g003.png): pixels x 898–1713,
+    y 257–1318, giving 816 × 1062 px; the heading, the panel letters, panels A and C and the bottom panel of B were left
+    out. Saved as JPEG with no resize and no colour change. The yellow circle belongs to the published figure.
+attributionText: >-
+  Ireneusz Dziuba, Agata M. Gawel, Paweł Tyrna, Jędrzej Machtyl, Monika Olszanecka, Andrzej Pawlik, Cezary Wójcik,
+  Lukasz P. Bialy, Izabela Mlynarczuk-Bialy, "Homotypic Entosis as a Potential Novel Diagnostic Marker in Breast
+  Cancer", Int J Mol Sci 2023;24(7):6819, doi:10.3390/ijms24076819, Figure 3B (top panel, cropped), CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+group: entosis-breast-carcinoma-dziuba
+stain: H&E
+magnification: "low power (the source: 10× microscope objective)"
+objective: 10x
+section: paraffin
+lookFor:
+  it: "Scorri i nidi di cellule tumorali e fermati sul cerchio giallo: una cellula tonda, con un alone chiaro, sta chiusa dentro un'altra."
+  en: "Scan the nests of tumour cells and stop at the yellow circle: a round cell with a clear halo sits enclosed inside another."
+caption:
+  it: >-
+    Entosi in un tumore umano, come appare su un vetrino di routine: carcinoma mammario invasivo ad alto grado,
+    HER2-positivo, in ematossilina-eosina, osservato con l'obiettivo 10×. Guarda prima l'insieme: grandi cellule
+    tumorali con nuclei tondi e scuri crescono in nidi e cordoni irregolari, separati da uno stroma pallido e lasso, e
+    quasi tutte stanno l'una accanto all'altra. Dentro il cerchio giallo, tracciato dagli autori, una cellula rompe lo
+    schema: è piccola e tonda, circondata da un alone chiaro e chiusa nel citoplasma di una vicina, il cui nucleo si
+    piega attorno a lei. È una figura «cellula nella cellula», che gli autori classificano come entotica in base alla
+    forma; passa all'ingrandimento forte della stessa struttura per controllarne i dettagli. Nell'entosi una cellula
+    tumorale viva finisce intera dentro la vicina, che non è un fagocita professionale come il macrofago ma una comune
+    cellula epiteliale: questa forma di cannibalismo cellulare si osserva soprattutto nei tumori. Si ritiene che a
+    innescarla sia la perdita di ancoraggio alla matrice extracellulare, lo stesso stress che spinge altre cellule
+    epiteliali verso l'anoikis; la cellula interna non viene ingoiata passivamente, ma si fa strada da sola. Una sezione
+    fissata non può dire se la cellula interna fosse viva quando è entrata: sul vetrino, quindi, l'entosi resta una
+    spiegazione proposta della figura, non una prova. In questo carcinoma gli autori hanno trovato le
+    figure entotiche addensate nelle aree solide e poco differenziate, e nessuna dove il tumore formava ancora tubuli.
+    Da ricordare: a piccolo ingrandimento cerca cellule tonde chiuse in un alone chiaro dentro una cellula più grande,
+    poi confermale a ingrandimento forte.
+  en: >-
+    Entosis in a human tumour, as it looks on a routine slide: a high-grade, HER2-positive invasive breast carcinoma
+    stained with H&E and seen with a 10× objective. First take in the field: large tumour cells with round, dark nuclei
+    grow in irregular nests and cords separated by pale, loose stroma, and nearly all of them lie side by side. Inside
+    the yellow circle, drawn by the authors, one cell breaks the pattern: it is small and round, ringed by a clear halo
+    and enclosed in the cytoplasm of a neighbour whose nucleus bends around it. This is a cell-in-cell figure, which the
+    authors count as entotic from its shape; switch to the high-power view of the same structure to check the details.
+    In entosis a living tumour cell ends up whole inside its neighbour, an ordinary epithelial cell rather than a
+    professional phagocyte such as a macrophage: this form of cell cannibalism is seen mainly in tumours. Its trigger is
+    thought to be loss of anchorage to the extracellular matrix, the same stress that drives other epithelial cells into
+    anoikis, and the inner cell is not swallowed passively but pushes its own way in. A fixed section cannot show
+    whether the inner cell was alive when it went in, so on a slide entosis remains a proposed explanation for the
+    figure, not a proven one. In this carcinoma the authors found entotic
+    figures crowded in poorly differentiated, solid areas and none where the tumour still formed tubules. Key point: at
+    low power, look for round cells inside a clear halo within a larger cell, then confirm them at high power.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina a piccolo ingrandimento di un carcinoma mammario: numerose cellule con nuclei
+    tondi e scuri disposte in nidi e cordoni irregolari, separati da stroma rosa pallido e lasso e da spazi bianchi. A
+    sinistra del centro un cerchio giallo, presente nella figura pubblicata, racchiude una piccola cellula tonda con un
+    alone chiaro, chiusa in una cellula vicina il cui nucleo le si curva attorno.
+  en: >-
+    H&E micrograph at low power of a breast carcinoma: many cells with dark round nuclei arranged in irregular nests and
+    cords, separated by pale pink, loose stroma and white spaces. Left of centre a yellow circle, part of the published
+    figure, surrounds a small round cell with a clear halo, enclosed in a neighbouring cell whose nucleus curves around
+    it.
+annotations:
+  - id: entotic-figure
+    label: { it: "Figura entotica (cellula nella cellula)", en: "Entotic figure (cell-in-cell)" }
+    revealOrder: 1
+    shape: { type: circle, coords: [0.322, 0.396, 0.115] }
+  - id: carcinoma-cells
+    label: { it: "Cellule di carcinoma affiancate, nessuna inglobata", en: "Carcinoma cells side by side, none engulfed" }
+    revealOrder: 2
+    shape: { type: rect, coords: [0.66, 0.49, 0.27, 0.27] }

@@ -1,0 +1,103 @@
+# License check (2026-11-08): same article and licence as necroptosis-micro-6 (Cell Death Dis 2020;11:391,
+# PMC7244585; Creative Commons Attribution 4.0 International License stated on the publisher's page and in the PMC
+# full text; Crossref CC BY 4.0). The Figure 1 legend has no third-party credit line. Allowed under COMPLIANCE_PLAN §4.
+# Tissue sections from surgical specimens (ethics approval and informed consent stated); nothing can identify a patient.
+# Facts in the caption come from the article: panel d shows a p-MLKL-positive and a p-MLKL-negative necrosis cluster
+# with their H&E sections; on serial H&E and p-MLKL sections of 40 tumours, 545 of 974 necrotic foci (necrotic
+# clusters plus coagulative necrosis) were p-MLKL-positive (the text gives 55.95%; Table 1 prints 55.59%; both round to
+# "a little over half"); ×100 and ×400 original magnifications.
+id: necroptosis-micro-7
+file: necroptosis-micro-7.jpg
+kind: micro
+sourceUrl: https://www.nature.com/articles/s41419-020-2538-5/figures/1
+author: >-
+  Jingyuan Li, Sihui Huang, Lijuan Zeng, Kan Li, Le Yang, Siyong Gao, Chenyu Guan, Sien Zhang, Xiaomei Lao, Guiqing
+  Liao, Yujie Liang
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-11-08
+modifications:
+  it: >-
+    Ritaglio del pannello d dalla Figura 1 a piena risoluzione dell'editore (PNG 1895 × 1800 px,
+    https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41419-020-2538-5/MediaObjects/41419_2020_2538_Fig1_HTML.png),
+    alla risoluzione nativa (pixel x 898–1894, y 586–987: 997 × 402 px); restano fuori la lettera del pannello e i
+    pannelli a–c ed e–i. Salvato in JPEG (qualità 90), metadati rimossi. Titoli, etichette delle righe, riquadri e
+    barre di scala fanno parte della figura pubblicata.
+  en: >-
+    Cropped to panel d of the publisher's full-size Figure 1 (PNG, 1895 × 1800 px,
+    https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41419-020-2538-5/MediaObjects/41419_2020_2538_Fig1_HTML.png)
+    at native resolution (pixels x 898–1894, y 586–987: 997 × 402 px); the panel letter and panels a–c and e–i are left
+    out. Saved as JPEG (quality 90), metadata stripped. Titles, row labels, boxes and scale bars belong to the published
+    figure.
+attributionText: >-
+  Li J, Huang S, Zeng L et al., "Necroptosis in head and neck squamous cell carcinoma: characterization of
+  clinicopathological relevance and in vitro cell model", Cell Death Dis 2020;11:391, doi:10.1038/s41419-020-2538-5,
+  Fig. 1d (cropped), CC BY 4.0
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-08 }
+stain: >-
+  H&E (top row) and immunohistochemistry for phosphorylated MLKL (p-MLKL; DAB, haematoxylin counterstain; bottom row)
+  on serial sections
+magnification: >-
+  low power (original ×100, scale bars 200 µm) with high-power enlargements of the boxed areas (original ×400, scale
+  bars 50 µm)
+section: paraffin
+orientation:
+  it: "A sinistra il focolaio pMLKL-positivo, a destra quello negativo; riga in alto EE, riga in basso pMLKL; in ogni coppia, a destra il riquadro ingrandito."
+  en: "Positive focus on the left, negative focus on the right; top row H&E, bottom row pMLKL; in each pair the enlarged box is on the right."
+lookFor:
+  it: "Guarda prima i due focolai all'EE e chiediti quale sia necroptotico; poi scendi alla pMLKL: solo quello di sinistra diventa bruno."
+  en: "First look at the two foci on H&E and ask which one is necroptotic; then drop to the pMLKL row: only the left one turns brown."
+caption:
+  it: >-
+    Non ogni focolaio necrotico è necroptosi. Lo stesso studio sul carcinoma squamocellulare del distretto testa-collo:
+    due focolai che gli autori hanno classificato come necrotici, ognuno in EE (sopra) e in una sezione seriale colorata
+    per la MLKL fosforilata (pMLKL, sotto), a piccolo ingrandimento (×100) con il riquadro ingrandito a destra (×400). A
+    sinistra, «Positive (+)»: all'EE una distesa di cellule tumorali dal citoplasma rosa e abbondante; nella pMLKL molte
+    di queste cellule sono brune, isolate o a piccoli gruppi, e a piccolo ingrandimento le macchie brune sono sparse a
+    chiazze nel tumore. A destra, «Negative (-)»: all'EE un nido di cellule tumorali cheratinizzate circondato da molte
+    cellule infiammatorie; nella pMLKL si vedono solo nuclei azzurri. Guardando soltanto l'EE, nulla dice quale dei due
+    focolai sia nato dalla necroptosi. Contando i focolai su sezioni seriali di 40 tumori, gli autori hanno trovato la
+    pMLKL in 545 focolai necrotici su 974, poco più della metà; negli altri questo marcatore della via non c'era. Da
+    ricordare: vedere necrosi in un vetrino non dice nulla sul suo meccanismo; la pMLKL, letta insieme ai controlli,
+    mostra quale parte era programmata.
+  en: >-
+    Not every necrotic focus is necroptosis. The same study of head and neck squamous cell carcinoma: two foci that the
+    authors classed as necrotic, each shown on H&E (top) and on a serial section stained for phosphorylated MLKL (pMLKL,
+    bottom), at low power (×100) with the box enlarged on the right (×400). Left, "Positive (+)": on H&E a sheet of
+    tumour cells with abundant pink cytoplasm; in the pMLKL section many of these cells are brown, singly or in small
+    groups, and at low power the brown spots are scattered in patches across the tumour. Right, "Negative (-)": on H&E
+    a nest of keratinising tumour cells surrounded by many inflammatory cells; the pMLKL section shows only blue nuclei.
+    Looking at H&E alone, nothing tells you which of the two foci came from necroptosis. Counting foci on serial sections
+    from 40 tumours, the authors found pMLKL in 545 of 974 necrotic foci, a little over half; in the rest this marker of
+    the pathway was absent. Key point: seeing necrosis on a slide says nothing about its mechanism; pMLKL, read together
+    with its controls, shows which part of it was programmed.
+alt:
+  it: >-
+    Otto micrografie in due gruppi intitolati «Positive (+)» e «Negative (-)», con due righe etichettate a sinistra
+    «H&E» e «p-MLKL». Nella riga in alto, rosa e viola, a sinistra una distesa di cellule tumorali dal citoplasma rosa e
+    a destra un nido rosa circondato da molti piccoli nuclei scuri. Nella riga in basso, nel gruppo di sinistra,
+    numerose cellule brune su fondo chiaro; nel gruppo di destra solo nuclei azzurri, senza bruno.
+  en: >-
+    Eight micrographs in two groups headed "Positive (+)" and "Negative (-)", with two rows labelled "H&E" and "p-MLKL"
+    on the left. In the pink-purple top row, on the left a sheet of tumour cells with pink cytoplasm and on the right a
+    pink nest surrounded by many small dark nuclei. In the bottom row, the left group shows many brown cells on a pale
+    background; the right group shows only blue nuclei, with no brown.
+annotations:
+  - id: positive-focus-he
+    label: { it: "Focolaio pMLKL-positivo all'EE (×400)", en: "pMLKL-positive focus on H&E (×400)" }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.339, 0.124, 0.552, 0.124, 0.552, 0.550, 0.339, 0.550] }
+  - id: positive-focus-pmlkl
+    label: { it: "Cellule brune: pMLKL presente", en: "Brown cells: pMLKL present" }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.339, 0.567, 0.552, 0.567, 0.552, 0.993, 0.339, 0.993] }
+  - id: negative-focus-he
+    label: { it: "Altro focolaio necrotico all'EE, ricco di cellule infiammatorie", en: "Another necrotic focus on H&E, crowded with inflammatory cells" }
+    revealOrder: 3
+    shape: { type: polygon, coords: [0.786, 0.124, 0.999, 0.124, 0.999, 0.550, 0.786, 0.550] }
+  - id: negative-focus-pmlkl
+    label: { it: "Stesso focolaio: pMLKL negativa (solo nuclei azzurri)", en: "Same focus: pMLKL-negative (blue nuclei only)" }
+    revealOrder: 4
+    shape: { type: polygon, coords: [0.786, 0.567, 0.999, 0.567, 0.999, 0.993, 0.786, 0.993] }
