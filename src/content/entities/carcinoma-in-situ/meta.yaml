@@ -1,0 +1,122 @@
+id: carcinoma-in-situ
+module: g05
+tier: core
+kind: process
+editionDependent: false
+status: published
+lastUpdated: 2026-11-13
+reviewStatus: ai-generated-unreviewed
+names:
+  it: "Carcinoma in situ"
+  en: "Carcinoma in situ"
+  latin: "Carcinoma in situ"
+  eponyms: []
+  synonyms:
+    it: ["CIS", "Carcinoma intraepiteliale"]
+    en: ["CIS", "Intraepithelial carcinoma"]
+  abbreviations: ["CIS"]
+summary:
+  it: "Proliferazione epiteliale maligna confinata all'epitelio di origine, senza superamento della membrana basale, quindi senza capacità di metastatizzare."
+  en: "Malignant epithelial proliferation confined to its epithelium of origin, with no crossing of the basement membrane and therefore no ability to metastasize."
+lenses:
+  system: [general, female-genital, urinary-male-genital]
+  process: [neoplasia]
+  pattern: [dysplasia, nuclear-changes]
+  presentation: [incidental-finding]
+  marker: [molecular]
+  group: [neoplastic]
+learningObjectives:
+  - it: "Definire il carcinoma in situ come proliferazione maligna che non ha superato la membrana basale."
+    en: "Define carcinoma in situ as a malignant proliferation that has not crossed the basement membrane."
+  - it: "Riconoscere l'atipia a tutto spessore con membrana basale integra."
+    en: "Recognize full-thickness atypia with an intact basement membrane."
+  - it: "Citare esempi d'organo: HSIL/CIN 3 della cervice e carcinoma uroteliale in situ."
+    en: "Name organ examples: cervical HSIL/CIN-3 and urothelial carcinoma in situ."
+  - it: "Spiegare perché il carcinoma in situ non metastatizza e distinguere la microinvasione."
+    en: "Explain why carcinoma in situ cannot metastasize and tell microinvasion apart."
+prerequisites: [dysplasia]
+relations:
+  - type: differentialOf
+    target: dysplasia
+    note:
+      it: "Atipia parziale contro atipia a tutto spessore."
+      en: "Partial-thickness atypia versus full-thickness atypia."
+  - type: sameLesionOtherOrgan
+    target: cervical-squamous-intraepithelial-lesion
+    note:
+      it: "L'HSIL (CIN 3) della cervice è un carcinoma in situ."
+      en: "Cervical HSIL (CIN-3) is a carcinoma in situ."
+quickCheck:
+  - id: carcinoma-in-situ-q1
+    q:
+      it: "Quale reperto distingue il carcinoma in situ dal carcinoma invasivo?"
+      en: "Which finding separates carcinoma in situ from invasive carcinoma?"
+    a:
+      it: "La membrana basale è integra: le cellule non sono entrate nello stroma."
+      en: "The basement membrane is intact: the cells have not entered the stroma."
+    kind: short
+  - id: carcinoma-in-situ-q2
+    q:
+      it: "Perché il carcinoma in situ non può dare metastasi?"
+      en: "Why can carcinoma in situ not metastasize?"
+    a:
+      it: "Per metastatizzare le cellule devono prima superare la membrana basale e raggiungere i vasi."
+      en: "To metastasize, cells must first pass the basement membrane and reach vessels."
+    kind: short
+  - id: carcinoma-in-situ-q3
+    q:
+      it: "Quali tumori non hanno uno stadio in situ?"
+      en: "Which cancers have no in situ stage?"
+    a:
+      it: "Quelli che originano da cellule prive di membrana basale sottostante, come le cellule linfoidi."
+      en: "Those arising from cells with no basement membrane beneath them, such as lymphoid cells."
+    kind: short
+  - id: carcinoma-in-situ-q4
+    q:
+      it: "Che cosa si vede nel carcinoma uroteliale in situ?"
+      en: "What is seen in urothelial carcinoma in situ?"
+    a:
+      it: "Cellule atipiche in tutto lo spessore dell'urotelio, con membrana basale integra e senza invasione dello stroma."
+      en: "Atypical cells throughout the urothelium, with an intact basement membrane and no invasion of the stroma."
+    kind: short
+selfExplain:
+  - it: "Perché un carcinoma in situ è curabile con l'escissione locale?"
+    en: "Why can a carcinoma in situ be cured by local removal?"
+  - it: "Perché la membrana basale è il confine tra carcinoma in situ e carcinoma invasivo?"
+    en: "Why is the basement membrane the border between carcinoma in situ and invasive carcinoma?"
+  - it: "Perché un linfoma non ha uno stadio in situ?"
+    en: "Why does a lymphoma have no in situ stage?"
+examQuestions:
+  - it: "Mi parli del carcinoma in situ: che cosa lo definisce e che cosa vede al microscopio?"
+    en: "Tell me about carcinoma in situ: what defines it and what do you see under the microscope?"
+    focus: [definition, micro]
+    level: 1
+  - it: "Quali sono gli esempi d'organo di carcinoma in situ che conosce?"
+    en: "Which organ examples of carcinoma in situ do you know?"
+    focus: [high-yield, micro, gross]
+    level: 1
+  - it: "Che cosa intende per microinvasione nella cervice, e che cosa cambia nella membrana basale?"
+    en: "What is meant by microinvasion in the cervix, and what changes at the basement membrane?"
+    focus: [micro]
+    level: 2
+  - it: "Perché il carcinoma in situ non può dare metastasi?"
+    en: "Why can carcinoma in situ not metastasize?"
+    focus: [pathogenesis, traps]
+    level: 2
+  - it: "Come distingue un carcinoma in situ da un carcinoma invasivo e da una lesione di basso grado come l'LSIL?"
+    en: "How do you tell carcinoma in situ from invasive carcinoma and from a low-grade lesion such as LSIL?"
+    focus: [micro, differential]
+    level: 3
+images:
+  - id: carcinoma-in-situ-micro-1
+    role: micro
+sources:
+  - source: rubin-8e
+    chapter: "5"
+    pages: "173, 195"
+  - source: rubin-8e
+    chapter: "23"
+    pages: "985, 987, 988"
+  - source: rubin-8e
+    chapter: "24"
+    pages: "1031, 1032, 1033, 1034, 1035"

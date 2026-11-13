@@ -1,0 +1,56 @@
+id: carcinoma-in-situ-micro-1
+file: carcinoma-in-situ-micro-1.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Urothelial_carcinoma_in_situ_--_intermed_mag.jpg
+author: Nephron
+license: CC-BY-SA-3.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/3.0/
+retrievedAt: 2026-11-13
+modifications:
+  it: >-
+    Riduzione della larghezza da 4272 px a 1280 px (rendition di Wikimedia) e ricodifica in JPEG. Nessun ritaglio,
+    nessuna modifica dei colori, nessuna etichetta aggiunta all'immagine.
+  en: >-
+    Downscaled from 4272 px to 1280 px wide (Wikimedia rendition) and re-encoded as JPEG. No crop, no color change, no
+    labels added to the image.
+attributionText: "Nephron, own work, via Wikimedia Commons, CC BY-SA 3.0"
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-13 }
+group: urothelial-cis
+stain: H&E
+magnification: medium power
+section: paraffin
+lookFor:
+  it: >-
+    Segui il bordo tra l'urotelio e lo stroma sottostante: le cellule atipiche restano tutte sopra di esso.
+  en: >-
+    Follow the border between the urothelium and the stroma beneath it: the atypical cells all stay above it.
+caption:
+  it: >-
+    Carcinoma uroteliale in situ della vescica, EE a medio ingrandimento. Guarda prima la striscia viola in alto: è
+    l'urotelio, e le cellule hanno nuclei grandi, scuri e di forma irregolare in tutto lo spessore. Segui poi il suo
+    margine inferiore: le cellule restano sopra lo stroma rosa, ricco di piccoli vasi congesti, e non lo penetrano.
+    Questo è il carcinoma in situ: atipia a tutto spessore con il confine verso lo stroma rispettato. Passa
+    all'ingrandimento maggiore per vedere i nuclei.
+  en: >-
+    Urothelial carcinoma in situ of the bladder, H&E at medium power. Look first at the purple strip at the top: this
+    is the urothelium, and its cells have large, dark, irregular nuclei throughout its thickness. Then follow its lower
+    edge: the cells stay above the pink stroma, rich in small congested vessels, and do not enter it. This is carcinoma
+    in situ: full-thickness atypia with the border to the stroma respected. Move to the higher power to see the nuclei.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina: in alto una banda di urotelio con nuclei scuri e ingranditi in tutto lo spessore;
+    sotto, stroma rosa con piccoli vasi pieni di sangue e poche cellule sparse, senza cellule tumorali al suo interno.
+  en: >-
+    H&E micrograph: at the top a band of urothelium with enlarged dark nuclei throughout its thickness; below it, pink
+    stroma with small blood-filled vessels and scattered cells, with no tumor cells inside it.
+annotations:
+  - id: atypical-urothelium
+    label: { it: Urotelio atipico a tutto spessore, en: Full-thickness atypical urothelium }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.0, 0.23, 0.5, 0.19, 1.0, 0.22, 1.0, 0.34, 0.9, 0.37, 0.5, 0.33, 0.0, 0.37] }
+  - id: intact-stroma
+    label: { it: Stroma senza invasione, en: Stroma without invasion }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.0, 0.40, 0.5, 0.36, 1.0, 0.37, 1.0, 1.0, 0.0, 1.0] }

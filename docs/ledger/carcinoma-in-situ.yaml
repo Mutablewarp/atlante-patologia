@@ -1,0 +1,410 @@
+entity: carcinoma-in-situ
+claims:
+- claimId: carcinoma-in-situ-c001
+  section: definition
+  statement: "Carcinoma in situ is a malignant epithelial proliferation that has not crossed the basement membrane beneath its epithelium of origin."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "173" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c002
+  section: definition
+  statement: "In situ tumors are always curable, since invasion has not yet happened."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "173" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c003
+  section: definition
+  statement: "Cancers of cells that have no basement membrane beneath them, lymphoid cells for example, have no in situ stage."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "173" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c004
+  section: etiology
+  statement: "High-grade cervical squamous intraepithelial lesions usually contain high-risk HPV types, including 16 and 18."
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1032" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c005
+  section: etiology
+  statement: "In the molecular model of urothelial neoplasia, tobacco smoke and arylamines are among the agents that damage DNA."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "985" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c006
+  section: pathogenesis
+  statement: "In most high-grade cervical lesions, the host genome takes up the HPV DNA."
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1032" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c007
+  section: pathogenesis
+  statement: "HPV-16 E6 disables p53 and E7 disables Rb, which weakens their tumor suppressor role."
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1032" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c008
+  section: pathogenesis
+  statement: "The tumor suppressor p16 sits in 9p, and flat urothelial carcinoma in situ consistently shows deletions there."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "985" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c009
+  section: pathogenesis
+  statement: "TP53 lies on 17p, and deletions there are an added change in flat carcinoma in situ and in invasive bladder tumors."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "985" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c010
+  section: pathogenesis
+  statement: "Invasion and metastasis start when tumor cells get through the basement membrane lying beneath the in situ tumor."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "195" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c011
+  section: pathogenesis
+  statement: "An in situ tumor must first get past the basement membrane before it can reach blood and lymphatic vessels and metastasize."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "173" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c012
+  section: gross
+  statement: "Bladder carcinoma in situ usually shows as several reddish, level mucosal areas with a velvety look."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "987" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c013
+  section: gross
+  statement: "Papillary urothelial carcinomas that grow outward from the lining are often found near bladder in situ lesions."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "987" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c014
+  section: gross
+  statement: "In cervical HSIL, colposcopy most often shows one of two patterns: mosaicism or vascular punctation."
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1032" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c015
+  section: micro
+  statement: "The basement membrane stays unbroken under abnormal cells that occupy the whole thickness of the epithelium."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "173, 987" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c016
+  section: micro
+  statement: "In urothelial carcinoma in situ, atypical cells are present throughout the urothelium, top to bottom."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "987" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c017
+  section: micro
+  statement: "Atypical urothelial cells have enlarged, irregular nuclei that lose their orderly polarity."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "987" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c018
+  section: micro
+  statement: "Urothelial carcinoma in situ does not invade the stroma, and its basement membrane stays unbroken."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "987" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c019
+  section: micro
+  statement: "In cervical HSIL, basal-type cells that fail to mature spread upward through the epithelium and lose their neat alignment at the base."
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1032, 1033" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c020
+  section: micro
+  statement: "Atypical mitotic figures may be present in HSIL and indicate chromosomal aneuploidy."
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1032, 1033" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c021
+  section: micro
+  statement: "Koilocytes occur infrequently in HSIL."
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1033" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c022
+  section: micro
+  statement: "An HSIL whose base sends out minute, uneven epithelial sprouts has started to invade, a picture formerly called microinvasive."
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1034" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c023
+  section: micro
+  statement: "In early cervical invasion the HSIL has crossed the basement membrane and entered the stroma."
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1034" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c024
+  section: micro
+  statement: "The prognosis of HSIL is the same whether or not such small tongues of neoplastic cells are present."
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1034, 1035" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c025
+  section: ancillary
+  statement: "Abnormal cells occupy the whole epithelium in SIL and are shed, which is why a Pap smear picks up the lesion."
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1032" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c026
+  section: ancillary
+  statement: "The Pap smear is only a screen; definitive grading is best made on a tissue specimen, where the full epithelium can be seen."
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1032" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c027
+  section: ancillary
+  statement: "Loss of 9p21 and abnormal chromosome number for 3, 7 and 17 are the diagnostic markers that FISH on urine cells looks for in bladder cancer."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "988" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c028
+  section: ancillary
+  statement: "Urine cytology is a less invasive alternative to cystoscopy for looking at recurrence or progression of bladder disease."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "988" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c029
+  section: clinical
+  statement: "Bladder carcinoma in situ is often already multifocal when found, and new foci can show up soon after."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "987" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c030
+  section: clinical
+  statement: "Bladder carcinoma in situ often coexists with in situ disease elsewhere in the urinary tract and in the prostatic ducts."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "987" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c031
+  section: diagnosis
+  statement: "A Pap smear with SIL leads to biopsy, either aimed with the colposcope or by LEEP, an electrosurgical wire loop that removes the whole transformation zone."
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1033" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c032
+  section: diagnosis
+  statement: "Cystoscopy with biopsy is used to find out whether bladder disease has recurred or progressed."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "988" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c033
+  section: prognosis
+  statement: "Invasive carcinoma later follows in about one-third of bladder carcinomas in situ."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "987" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c034
+  section: prognosis
+  statement: "Carcinoma in situ, rather than a papillary tumor, is where most invasive urothelial carcinomas of the bladder begin."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "987" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c035
+  section: prognosis
+  statement: "Ten to 20% of untreated HSIL progress to invasive carcinoma."
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1033" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c036
+  section: prognosis
+  statement: "Nonmuscle invasive bladder tumors including Tis are usually treated conservatively with transurethral fulguration and intravesical BCG."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "988" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c037
+  section: prognosis
+  statement: "High-grade cervical lesions are treated by ablative methods, including LEEP and conization."
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1033" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c038
+  section: prognosis
+  statement: "After cervical HSIL the patient needs lifelong checks, since squamous cancer of the vagina or vulva can still arise."
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1033" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c039
+  section: differential
+  statement: "In the CIN system, CIN-3 (severe dysplasia) corresponds to carcinoma in situ, and CIN-1 and CIN-2 are the lower grades."
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1031" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c040
+  section: differential
+  statement: "LSIL (CIN-1) seldom worsens and often goes away."
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1031" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c041
+  section: differential
+  statement: "In invasive carcinoma the tumor extends through the basement membrane into neighboring tissue."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "173" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c042
+  section: high-yield
+  statement: "Carcinoma in situ is malignant epithelium that has not penetrated the epithelial basement membrane."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "173" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c043
+  section: high-yield
+  statement: "In situ tumors cannot metastasize because metastasis requires passing the basement membrane to reach vessels."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "173" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c044
+  section: high-yield
+  statement: "Cervical HSIL (CIN-3) and flat urothelial carcinoma in situ are organ examples of carcinoma in situ."
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "987, 1031" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c045
+  section: high-yield
+  statement: "Full-thickness atypia with an intact basement membrane is the key histologic sign of urothelial carcinoma in situ."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "987" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c046
+  section: high-yield
+  statement: "Bladder carcinoma in situ shows as reddish, level, velvety mucosal areas and is often multifocal."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "987" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c047
+  section: traps
+  statement: "Carcinoma in situ cells are malignant; they are only not yet invasive."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "173" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c048
+  section: traps
+  statement: "Metastasis begins only after the basement membrane has been crossed."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "173" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c049
+  section: traps
+  statement: "Cancers from cells with no basement membrane, such as lymphoid cells, have no in situ stage."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "173" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c050
+  section: traps
+  statement: "Older cervical names such as CIN and dysplasia are still often used as synonyms of CIS."
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1031" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinoma-in-situ-c051
+  section: mnemonics
+  statement: "The mnemonic BRIM restates that carcinoma in situ has an intact basement membrane, full-thickness replacement, no invasion and no metastasis."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "173" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
