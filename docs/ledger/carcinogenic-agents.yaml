@@ -1,0 +1,258 @@
+entity: carcinogenic-agents
+claims:
+- claimId: carcinogenic-agents-c001
+  section: definition
+  statement: "Smoke from burning organic material, above all cigarette smoke, has caused an epidemic of lung cancer."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "242" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinogenic-agents-c002
+  section: definition
+  statement: "P450 enzymes convert polycyclic hydrocarbons, many of them in tobacco smoke, into epoxides that bind proteins and nucleic acids."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "242" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinogenic-agents-c003
+  section: definition
+  statement: "Peanuts and grains contaminated with Aspergillus flavus can carry aflatoxin B1, a product of that fungus."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "241" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinogenic-agents-c004
+  section: definition
+  statement: "Aflatoxin B1 is a very potent liver carcinogen, and its epoxide metabolite binds DNA covalently."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "241" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-13
+- claimId: carcinogenic-agents-c005
+  section: definition
+  statement: "Pyrimidine dimers in DNA are the typical lesion of ultraviolet light; no other carcinogen causes them."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "243" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinogenic-agents-c007
+  section: definition
+  statement: "Asbestos typically leads to malignant mesothelioma arising in the pleura and peritoneum."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "244" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinogenic-agents-c009
+  section: definition
+  statement: "HPV is strongly associated with carcinomas of the cervix, anus and vulva."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "239" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinogenic-agents-c010
+  section: definition
+  statement: "EBV is associated with certain lymphomas, including Burkitt lymphoma, and with nasopharyngeal carcinoma."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "239, 240, 241" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinogenic-agents-c011
+  section: definition
+  statement: "Chronic infection with HBV and HCV is strongly linked to primary hepatocellular carcinoma."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "239, 240" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinogenic-agents-c012
+  section: definition
+  statement: "HTLV-1 is the only retrovirus known to cause a human cancer, adult T-cell leukemia/lymphoma."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "239" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinogenic-agents-c013
+  section: definition
+  statement: "Virtually all Kaposi sarcoma lesions contain HHV8, the herpesvirus linked to the tumor."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "239, 241" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinogenic-agents-c014
+  section: definition
+  statement: "Merkel cell polyomavirus is linked to Merkel cell carcinoma, a very uncommon skin tumor; most of these tumors carry the viral genome integrated in their DNA."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "241" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinogenic-agents-c015
+  section: definition
+  statement: "Helicobacter pylori is a bacterial carcinogen of the stomach."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "241" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinogenic-agents-c017
+  section: micro
+  statement: "Initiation has no microscopic correlate; it is probably a mutation in a single cell."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "242" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinogenic-agents-c018
+  section: micro
+  statement: "In easily sampled epithelia such as cervix, colon and skin, repeat biopsies show promotion and progression as hyperplasia, then dysplasia, then carcinoma in situ."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "242" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinogenic-agents-c019
+  section: diagnosis
+  statement: "Studies of exposed people struggle because doses are hard to estimate and latency is long and variable."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "242" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinogenic-agents-c020
+  section: diagnosis
+  statement: "Since carcinogenicity tracks mutagenicity, mutagenicity assays such as the Ames test screen chemicals."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "242" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinogenic-agents-c021
+  section: diagnosis
+  statement: "A mutagen is usually, but not always, a carcinogen."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "242" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinogenic-agents-c022
+  section: diagnosis
+  statement: "No agent is a proven cause of human cancer until independent studies confirm the link."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "241" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinogenic-agents-c023
+  section: differential
+  statement: "Different chemicals hit different tissues, and one organ is often the only target."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "242" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinogenic-agents-c024
+  section: differential
+  statement: "In people with pale skin, skin cancers arise mainly on sun-exposed areas."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "243" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinogenic-agents-c025
+  section: differential
+  statement: "The interval between asbestos exposure and a tumor is long."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "244" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinogenic-agents-c026
+  section: differential
+  statement: "Oncogenic DNA viruses neutralize the tumor suppressors Rb and p53 by binding them with viral proteins."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "240" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinogenic-agents-c027
+  section: differential
+  statement: "Signals triggered by CagA meet at NF-kB, which drives inflammation, cell growth and invasion."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "241" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-13
+- claimId: carcinogenic-agents-c028
+  section: high-yield
+  statement: "Most organic carcinogens are procarcinogens: enzymes must convert them into a more reactive form first."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "242" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinogenic-agents-c029
+  section: high-yield
+  statement: "Pyrimidine dimers occur only with UV exposure, and the nucleotide excision repair pathway removes them."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "243" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-13
+- claimId: carcinogenic-agents-c030
+  section: high-yield
+  statement: "Smoking and asbestos together raise lung cancer risk far beyond either alone; the source states no fixed multiple."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "244" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-13
+- claimId: carcinogenic-agents-c031
+  section: high-yield
+  statement: "HTLV-1 is the only retrovirus known to cause cancer in humans."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "239" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinogenic-agents-c032
+  section: high-yield
+  statement: "Kaposi sarcoma seems to need HHV8, but the virus alone is not enough."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "241" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinogenic-agents-c033
+  section: traps
+  statement: "Most people infected with HHV8 or MCPyV never develop Kaposi sarcoma or Merkel cell carcinoma."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "241" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13
+- claimId: carcinogenic-agents-c034
+  section: traps
+  statement: "Direct HCV oncogenicity is unproven; hepatocellular carcinoma usually arises in a cirrhotic liver two or more decades after infection."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "240" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-13
+- claimId: carcinogenic-agents-c035
+  section: traps
+  statement: "Nitrogen mustard and certain metals act directly, with no metabolic activation step."
+  sourceRef: { source: rubin-8e, chapter: "5", pages: "242" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-13

@@ -1,0 +1,115 @@
+id: carcinogenic-agents
+module: g05
+tier: extended
+kind: concept
+editionDependent: false
+status: published
+lastUpdated: 2026-11-13
+reviewStatus: ai-generated-unreviewed
+names:
+  it: "Agenti cancerogeni"
+  en: "Carcinogenic agents"
+  eponyms: []
+  synonyms:
+    it: ["Cancerogeni"]
+    en: ["Carcinogens"]
+  abbreviations: []
+summary:
+  it: "Agenti chimici, fisici e infettivi (fumo, aflatossina, raggi UV, amianto, virus oncogeni, Helicobacter pylori) che danneggiano i geni della cellula e ne avviano la trasformazione tumorale."
+  en: "Chemical, physical and infectious agents (smoke, aflatoxin, UV light, asbestos, oncogenic viruses, Helicobacter pylori) that damage cellular genes and start tumor development."
+lenses:
+  system: [general]
+  process: [neoplasia]
+  pattern: [dysplasia]
+  presentation: [mass-lesion]
+  marker: []
+  group: [neoplastic, toxic-environmental, infectious]
+learningObjectives:
+  - it: "Elencare i principali cancerogeni chimici, fisici e biologici."
+    en: "List the main chemical, physical and biological carcinogens."
+  - it: "Associare ogni virus oncogeno al tumore umano che causa."
+    en: "Match each oncogenic virus with the human tumor it causes."
+  - it: "Spiegare perché la maggior parte dei cancerogeni chimici richiede attivazione metabolica."
+    en: "Explain why most chemical carcinogens need metabolic activation."
+  - it: "Descrivere come si valuta il potenziale cancerogeno di un agente."
+    en: "Describe how the carcinogenic potential of an agent is assessed."
+prerequisites: []
+relations:
+  - type: prerequisiteOf
+    target: carcinoma-in-situ
+    note:
+      it: "Il carcinoma in situ è uno stadio morfologico della progressione indotta dai cancerogeni."
+      en: "Carcinoma in situ is a morphologic stage of carcinogen-driven progression."
+  - type: causes
+    target: dysplasia
+    note:
+      it: "Promozione e progressione si riflettono nella sequenza iperplasia, displasia, carcinoma in situ."
+      en: "Promotion and progression appear as hyperplasia, dysplasia, carcinoma in situ."
+quickCheck:
+  - id: carcinogenic-agents-q1
+    q:
+      it: "Perché molti cancerogeni chimici poco reattivi sono comunque potenti?"
+      en: "Why are many chemically inert carcinogens still potent?"
+    a:
+      it: "Perché la maggior parte è procancerogena: enzimi la trasformano in una forma più reattiva, come gli epossidi."
+      en: "Because most are procarcinogens: enzymes convert them into a more reactive form, such as epoxides."
+    kind: short
+  - id: carcinogenic-agents-q2
+    q:
+      it: "Quale lesione del DNA è tipica dei raggi UV?"
+      en: "Which DNA lesion is typical of UV light?"
+    a:
+      it: "I dimeri di pirimidina, che nessun altro cancerogeno causa."
+      en: "Pyrimidine dimers, which no other carcinogen causes."
+    kind: short
+  - id: carcinogenic-agents-q3
+    q:
+      it: "Quale virus oncogeno è un retrovirus e quale tumore causa?"
+      en: "Which oncogenic virus is a retrovirus, and which tumor does it cause?"
+    a:
+      it: "HTLV-1, che causa la leucemia/linfoma a cellule T dell'adulto."
+      en: "HTLV-1, which causes adult T-cell leukemia/lymphoma."
+    kind: short
+  - id: carcinogenic-agents-q4
+    q:
+      it: "Quale saggio si usa per lo screening della mutagenicità delle sostanze chimiche?"
+      en: "Which assay is used to screen chemicals for mutagenicity?"
+    a:
+      it: "Il test di Ames: la cancerogenicità segue la mutagenicità, quindi i saggi di mutagenicità servono da screening."
+      en: "The Ames test: carcinogenicity tracks mutagenicity, so mutagenicity assays screen chemicals."
+    kind: short
+  - id: carcinogenic-agents-q5
+    q:
+      it: "L'infezione da HHV8 basta da sola a causare il sarcoma di Kaposi?"
+      en: "Is HHV8 infection alone enough to cause Kaposi sarcoma?"
+    a:
+      it: "No. Il sarcoma di Kaposi sembra richiedere HHV8, ma il virus da solo non basta."
+      en: "No. Kaposi sarcoma seems to need HHV8, but the virus alone is not enough."
+    kind: short
+selfExplain:
+  - it: "Perché l'infezione da HHV8 non porta sempre al sarcoma di Kaposi?"
+    en: "Why does HHV8 infection not always lead to Kaposi sarcoma?"
+  - it: "Perché un mutageno non è sempre un cancerogeno?"
+    en: "Why is a mutagen not always a carcinogen?"
+examQuestions:
+  - it: "Mi parli dei principali cancerogeni chimici e fisici e dei tumori che causano."
+    en: "Tell me about the main chemical and physical carcinogens and the tumors they cause."
+    focus: [definition, high-yield]
+    level: 1
+  - it: "Mi parli dei virus oncogeni: quali tumori umani causano e come agiscono i virus a DNA?"
+    en: "Tell me about the oncogenic viruses: which human tumors do they cause, and how do DNA viruses act?"
+    focus: [definition, differential]
+    level: 2
+  - it: "Come si dimostra che un agente è cancerogeno, e perché è difficile nell'uomo?"
+    en: "How do you show that an agent is carcinogenic, and why is it hard in humans?"
+    focus: [diagnosis]
+    level: 3
+images:
+  - id: carcinogenic-agents-micro-1
+    role: micro
+  - id: carcinogenic-agents-micro-2
+    role: micro
+sources:
+  - source: rubin-8e
+    chapter: "5"
+    pages: "239-244"
