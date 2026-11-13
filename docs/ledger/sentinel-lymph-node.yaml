@@ -1,0 +1,322 @@
+entity: sentinel-lymph-node
+claims:
+  - claimId: sentinel-lymph-node-c001
+    section: definition
+    statement: "Among the nodes draining a tumor's region, the sentinel node receives lymph first, so metastases are most likely to lodge in it."
+    sourceRef: { source: rubin-8e, chapter: "25", pages: "1097, 1285" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c002
+    section: definition
+    statement: "Biopsy of one sentinel node tests whether regional nodes are involved."
+    sourceRef: { source: rubin-8e, chapter: "28", pages: "1285" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c003
+    section: definition
+    statement: "A macrometastasis is evident clinically; a micrometastasis is found only on examining nodes removed by sentinel or elective dissection."
+    sourceRef: { source: rubin-8e, chapter: "28", pages: "1285" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c004
+    section: definition
+    statement: "Outside nodal staging, a micrometastasis is a small group of tumor cells that has settled in a distant organ."
+    sourceRef: { source: rubin-8e, chapter: "5", pages: "200" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c005
+    section: pathogenesis
+    statement: "Metastasis is inefficient: most circulating tumor cells never produce a clinically relevant secondary tumor."
+    sourceRef: { source: rubin-8e, chapter: "5", pages: "200" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c006
+    section: pathogenesis
+    statement: "By the usual view, only a cancer stem cell can start a lasting metastasis."
+    sourceRef: { source: rubin-8e, chapter: "5", pages: "200" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c007
+    section: pathogenesis
+    statement: "Proliferation is one of four fates of a newly established micrometastatic focus; the others are death, lasting dormancy, and dormancy followed by reactivation."
+    sourceRef: { source: rubin-8e, chapter: "5", pages: "200" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c008
+    section: pathogenesis
+    statement: "A dormant deposit is still active: a little division and a little cell death go on, and they cancel out."
+    sourceRef: { source: rubin-8e, chapter: "5", pages: "201" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c009
+    section: pathogenesis
+    statement: "Dormant deposits must escape CD8+ T cells and may show fewer ligands that switch on NK cells."
+    sourceRef: { source: rubin-8e, chapter: "5", pages: "201-202" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c010
+    section: pathogenesis
+    statement: "Inflammation can wake dormant deposits."
+    sourceRef: { source: rubin-8e, chapter: "5", pages: "202" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c011
+    section: pathogenesis
+    statement: "Dormant micrometastases and cancer stem cells largely escape adjuvant therapy, which targets hidden deposits after resection but favors fast-dividing cells."
+    sourceRef: { source: rubin-8e, chapter: "5", pages: "202" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c012
+    section: micro
+    statement: "Routine slides can miss epithelial cells in a node, which cytokeratin staining can reveal."
+    sourceRef: { source: rubin-8e, chapter: "25", pages: "1097" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c013
+    section: micro
+    statement: "In breast cancer, sentinel nodes studied closely now yield more micrometastases and isolated tumor cells."
+    sourceRef: { source: rubin-8e, chapter: "25", pages: "1097" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c014
+    section: micro
+    statement: "The breast chapter gives a micrometastasis as measuring between 0.02 cm and 0.2 cm, or containing more than 200 cells."
+    sourceRef: { source: rubin-8e, chapter: "25", pages: "1097" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c015
+    section: micro
+    statement: "The breast chapter names isolated tumor cells next to micrometastases among sentinel node findings."
+    sourceRef: { source: rubin-8e, chapter: "25", pages: "1097" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c016
+    section: ancillary
+    statement: "The sentinel node is identified intraoperatively and submitted for pathologic evaluation of resected nodes."
+    sourceRef: { source: rubin-8e, chapter: "25", pages: "1097" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c017
+    section: ancillary
+    statement: "Immunohistochemistry on nodes targets cytokeratin, a marker of epithelial cells."
+    sourceRef: { source: rubin-8e, chapter: "25", pages: "1097" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c018
+    section: ancillary
+    statement: "Breast sentinel nodes seldom need deeper levels or more immunostains, by general agreement."
+    sourceRef: { source: rubin-8e, chapter: "25", pages: "1097" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c019
+    section: clinical
+    statement: "Resected axillary nodes need pathologic examination because their status is a key prognostic indicator in breast cancer."
+    sourceRef: { source: rubin-8e, chapter: "25", pages: "1097" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c020
+    section: clinical
+    statement: "Sentinel node biopsy lowers the risk of lymphedema and nerve damage associated with axillary dissection."
+    sourceRef: { source: rubin-8e, chapter: "25", pages: "1097" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c021
+    section: clinical
+    statement: "Melanoma staging now routinely uses the sentinel node to determine whether regional nodes are involved."
+    sourceRef: { source: rubin-8e, chapter: "28", pages: "1285" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c022
+    section: clinical
+    statement: "In melanoma, sentinel biopsy is usually considered once thickness passes 1 mm; from 0.8 mm it is also considered when there is ulceration or a high dermal mitotic rate."
+    sourceRef: { source: rubin-8e, chapter: "28", pages: "1285" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c023
+    section: diagnosis
+    statement: "The surgeon finds the sentinel node by tracing lymph flow with an injected dye plus a radioactive isotope."
+    sourceRef: { source: rubin-8e, chapter: "25", pages: "1097" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c024
+    section: diagnosis
+    statement: "If the breast sentinel node has no tumor, the axilla need not be dissected."
+    sourceRef: { source: rubin-8e, chapter: "25", pages: "1097" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c025
+    section: diagnosis
+    statement: "Tumor deposit size and the number of involved nodes together define the melanoma N classification."
+    sourceRef: { source: rubin-8e, chapter: "28", pages: "1285" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c026
+    section: prognosis
+    statement: "In breast cancer, women with only micrometastases or ITCs fare little differently from node-negative women."
+    sourceRef: { source: rubin-8e, chapter: "25", pages: "1097" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c027
+    section: prognosis
+    statement: "Ten-year survival in melanoma is 26% lower with lymph node involvement than with clinically localized disease."
+    sourceRef: { source: rubin-8e, chapter: "28", pages: "1285" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c028
+    section: prognosis
+    statement: "Melanoma 10-year survival falls with the number of positive nodes: 47% with four or more, 68% with two or three, 75% with one."
+    sourceRef: { source: rubin-8e, chapter: "28", pages: "1285" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c029
+    section: differential
+    statement: "In breast cancer, ITCs turn up with micrometastases on detailed sentinel node examination and have little prognostic impact."
+    sourceRef: { source: rubin-8e, chapter: "25", pages: "1097" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c030
+    section: differential
+    statement: "A micrometastasis is a nodal deposit found only in removed sentinel or elective nodes."
+    sourceRef: { source: rubin-8e, chapter: "28", pages: "1285" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c031
+    section: differential
+    statement: "A macrometastasis is a clinically detectable nodal metastasis."
+    sourceRef: { source: rubin-8e, chapter: "28", pages: "1285" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c032
+    section: high-yield
+    statement: "The sentinel node receives lymph from the tumor region first and is the likeliest site of metastasis."
+    sourceRef: { source: rubin-8e, chapter: "25", pages: "1097, 1285" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c033
+    section: high-yield
+    statement: "A negative breast sentinel node allows axillary dissection to be avoided."
+    sourceRef: { source: rubin-8e, chapter: "25", pages: "1097" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c034
+    section: high-yield
+    statement: "Micrometastases and ITCs in breast sentinel nodes have small prognostic impact."
+    sourceRef: { source: rubin-8e, chapter: "25", pages: "1097" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c035
+    section: high-yield
+    statement: "Sentinel biopsy is weighed for melanomas thicker than 1 mm or with other risk features."
+    sourceRef: { source: rubin-8e, chapter: "28", pages: "1285" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c036
+    section: high-yield
+    statement: "Dormant micrometastases mostly escape adjuvant therapy."
+    sourceRef: { source: rubin-8e, chapter: "5", pages: "202" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c037
+    section: traps
+    statement: "A negative sentinel node clears only the node most likely to hold metastases, which is the basis for avoiding dissection."
+    sourceRef: { source: rubin-8e, chapter: "25", pages: "1097" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c038
+    section: traps
+    statement: "Extra levels and immunostains on breast sentinel nodes rarely pay off."
+    sourceRef: { source: rubin-8e, chapter: "25", pages: "1097" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c039
+    section: traps
+    statement: "Cells in a dormant micrometastasis still divide and die at low rates that offset each other."
+    sourceRef: { source: rubin-8e, chapter: "5", pages: "201" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13
+  - claimId: sentinel-lymph-node-c040
+    section: mnemonics
+    statement: "Sentinel procedure: dye and isotope mapping, removal of the first node, axilla spared if negative."
+    sourceRef: { source: rubin-8e, chapter: "25", pages: "1097" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-13

@@ -1,0 +1,113 @@
+id: sentinel-lymph-node
+module: g05
+tier: core
+kind: concept
+editionDependent: true
+editionNote:
+  it: "Le soglie dimensionali per micrometastasi e cellule tumorali isolate cambiano con l'edizione della stadiazione; i valori riportati vengono da un solo testo e vanno verificati sull'edizione in uso."
+  en: "Size cut-offs for micrometastases and isolated tumor cells change with the staging edition; the values given come from one textbook and must be checked against the current edition."
+status: published
+lastUpdated: 2026-11-13
+reviewStatus: ai-generated-unreviewed
+names:
+  it: "Linfonodo sentinella e micrometastasi"
+  en: "Sentinel lymph node and micrometastases"
+  eponyms: []
+  synonyms:
+    it: ["Linfonodo sentinella"]
+    en: ["Sentinel node"]
+  abbreviations: ["SLN", "ITC"]
+summary:
+  it: "Il linfonodo sentinella è il primo linfonodo della via di drenaggio di un tumore e il più probabile sede di metastasi; la sua biopsia stadia i linfonodi regionali e può evitare dissezioni più estese."
+  en: "The sentinel node is the first node on a tumor's drainage path and the most likely site of metastasis; its biopsy stages the regional nodes and can spare a wider dissection."
+lenses:
+  system: [hematolymphoid, breast, skin]
+  process: [neoplasia]
+  pattern: []
+  presentation: [lymphadenopathy, mass-lesion]
+  marker: [ihc]
+  group: [neoplastic]
+learningObjectives:
+  - it: "Definire il linfonodo sentinella e spiegare perché se ne esegue la biopsia."
+    en: "Define the sentinel node and explain why it is biopsied."
+  - it: "Distinguere cellule tumorali isolate, micrometastasi e macrometastasi linfonodali."
+    en: "Distinguish isolated tumor cells, micrometastases and macrometastases in a node."
+  - it: "Descrivere la mappatura con colorante e isotopo radioattivo."
+    en: "Describe mapping with dye and radioactive isotope."
+  - it: "Spiegare come un linfonodo sentinella negativo o positivo cambia chirurgia e prognosi nel carcinoma mammario e nel melanoma."
+    en: "Explain how a negative or positive sentinel node changes surgery and prognosis in breast cancer and melanoma."
+  - it: "Spiegare perché le micrometastasi dormienti sfuggono alla terapia adiuvante."
+    en: "Explain why dormant micrometastases escape adjuvant therapy."
+prerequisites: []
+relations:
+  - type: sameMarker
+    target: immunohistochemistry
+    note:
+      it: "L'immunoistochimica per le citocheratine rivela cellule epiteliali altrimenti non viste nel linfonodo."
+      en: "Cytokeratin immunohistochemistry reveals epithelial cells in the node that are otherwise missed."
+quickCheck:
+  - id: sentinel-lymph-node-q1
+    q:
+      it: "Che cos'è il linfonodo sentinella?"
+      en: "What is the sentinel lymph node?"
+    a:
+      it: "Il primo linfonodo della via di drenaggio regionale del tumore, quello con maggiore probabilità di contenere metastasi."
+      en: "The first node on the tumor's regional drainage path, the one most likely to contain metastases."
+    kind: short
+  - id: sentinel-lymph-node-q2
+    q:
+      it: "Perché un linfonodo sentinella mammario negativo è utile al chirurgo?"
+      en: "Why is a negative breast sentinel node useful to the surgeon?"
+    a:
+      it: "Permette di evitare la dissezione ascellare e quindi linfedema e danno nervoso."
+      en: "It lets the surgeon avoid axillary dissection and so lymphedema and nerve damage."
+    kind: short
+  - id: sentinel-lymph-node-q3
+    q:
+      it: "Perché una micrometastasi dormiente resiste alla terapia adiuvante?"
+      en: "Why does a dormant micrometastasis resist adjuvant therapy?"
+    a:
+      it: "Perché la terapia agisce meglio sulle cellule che si dividono rapidamente, mentre la dormienza è un equilibrio tra bassa proliferazione e bassa morte cellulare."
+      en: "Because the therapy works best on fast-dividing cells, while dormancy is a balance of low proliferation and low cell death."
+    kind: short
+  - id: sentinel-lymph-node-q4
+    q:
+      it: "Come si individua il linfonodo sentinella durante l'intervento?"
+      en: "How does the surgeon find the sentinel node during the operation?"
+    a:
+      it: "Seguendo il flusso linfatico con un colorante iniettato e un isotopo radioattivo."
+      en: "By tracing lymph flow with an injected dye plus a radioactive isotope."
+    kind: short
+selfExplain:
+  - it: "Perché la biopsia di un solo linfonodo può stadiare l'intera stazione linfatica regionale?"
+    en: "Why can biopsy of a single node stage the whole regional nodal basin?"
+  - it: "Perché una micrometastasi dormiente non è una cellula inattiva?"
+    en: "Why is a dormant micrometastasis not an inactive cell?"
+examQuestions:
+  - it: "Come distingue una micrometastasi da una macrometastasi in un linfonodo?"
+    en: "How do you tell a micrometastasis from a macrometastasis in a node?"
+    focus: [definition, micro]
+    level: 3
+  - it: "Mi parli della mappatura del linfonodo sentinella."
+    en: "Tell me about how the sentinel node is mapped."
+    focus: [diagnosis]
+    level: 1
+  - it: "Quali colorazioni userebbe per cercare piccoli depositi tumorali in un linfonodo?"
+    en: "Which stains would you use to look for small tumor deposits in a node?"
+    focus: [micro, ancillary]
+    level: 1
+  - it: "Come cambia la gestione di una paziente con carcinoma mammario se il linfonodo sentinella è negativo?"
+    en: "How does management of a breast cancer patient change when the sentinel node is negative?"
+    focus: [clinical, diagnosis, traps]
+    level: 3
+  - it: "Perché le micrometastasi dormienti sfuggono alla terapia adiuvante?"
+    en: "Why do dormant micrometastases escape adjuvant therapy?"
+    focus: [pathogenesis]
+    level: 2
+images:
+  - { id: sentinel-lymph-node-gross-1, role: gross, pairWith: sentinel-lymph-node-micro-1 }
+  - { id: sentinel-lymph-node-micro-1, role: micro }
+sources:
+  - { source: rubin-8e, chapter: "5", pages: "200-202" }
+  - { source: rubin-8e, chapter: "25", pages: "1097" }
+  - { source: rubin-8e, chapter: "28", pages: "1285" }
