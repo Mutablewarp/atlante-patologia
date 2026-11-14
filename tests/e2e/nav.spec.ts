@@ -466,6 +466,55 @@ test('the sidebar chapter index opens on the current card and fades where it hid
   await expect.poll(shown).toBe(true);
 });
 
+test('the chapter index lists the cards of the current chapter only; every other chapter is a link to its page (D075)', async ({ page }) => {
+  test.skip(width() < 1024, 'the sidebar shows its index from 1024 px');
+  await page.goto('it/e/coagulative-necrosis/');
+  const tree = page.locator('.primary-nav .module-tree');
+  const own = tree.locator('li.is-current');
+  await expect(own).toHaveCount(1);
+  await expect(own.getByRole('link', { name: /^Necrosi coagulativa/ })).toHaveAttribute('aria-current', 'location');
+  // Every card link of the index sits under the current chapter; the other chapters are one link each, to their page.
+  expect(await tree.locator('a[href*="/e/"]').count()).toBe(await own.locator('a[href*="/e/"]').count());
+  const others = tree.locator('.chapters > li:not(.is-current) > a');
+  const hrefs = await others.evaluateAll((as) => as.map((a) => a.getAttribute('href')));
+  expect(hrefs.length).toBeGreaterThan(0);
+  for (const href of hrefs) expect(href).toMatch(/\/it\/chapter\/[a-z0-9]+\/$/);
+  // The chapter's own entry names it and leads to its page.
+  await expect(own.locator('> a')).toHaveText(/^Danno, adattamento e morte cellulare/);
+  await expect(own.locator('> a')).toHaveAttribute('href', /\/it\/chapter\/g01\/$/);
+  // An incomplete chapter shows "n/m" and says it in words; a complete one is a bare link (the count is on its page).
+  for (const link of await tree.locator('.chapters > li > a:has(> span)').all()) {
+    await expect(link).toHaveAttribute('aria-label', /^.+, \d+ di \d+ schede$/);
+    await expect(link.locator('> span')).toHaveText(/^\d+\/\d+$/);
+  }
+});
+
+test('a chapter page lists the cards of the chapter in the name order of its language and links the next chapter', async ({ page }) => {
+  for (const [lang, title, locale] of [['it', 'Danno, adattamento e morte cellulare', 'it'], ['en', 'Cell injury, adaptation and death', 'en']] as const) {
+    await page.goto(`${lang}/chapter/g01/`);
+    await expect(page.getByRole('heading', { level: 1 })).toHaveText(title);
+    const names = await page.locator('.grid h3').allTextContents();
+    expect(names.length).toBeGreaterThan(20);
+    expect(names).toEqual([...names].sort((a, b) => a.localeCompare(b, locale)));
+    const next = page.getByRole('navigation', { name: lang === 'it' ? 'Capitoli' : 'Chapters' }).locator('a[rel="next"]');
+    await expect(next).toHaveAttribute('href', new RegExp(`/${lang}/chapter/[a-z0-9]+/$`));
+    // A card is one click away and its page shows the chapter in the index.
+    await page.locator('.grid a').first().click();
+    await expect(page).toHaveURL(new RegExp(`/${lang}/e/`));
+  }
+});
+
+test('the home page links every chapter that has cards to its chapter page, and no other', async ({ page }) => {
+  for (const lang of ['it', 'en']) {
+    await page.goto(`${lang}/`);
+    for (const li of await page.locator('[data-module-cards]').all()) {
+      const cards = Number(((await li.getAttribute('data-module-cards')) ?? '0/0').split('/')[0]);
+      await expect(li.locator('a')).toHaveCount(cards > 0 ? 1 : 0);
+    }
+    await expect(page.locator('[data-module-cards] a').first()).toHaveAttribute('href', new RegExp(`/${lang}/chapter/g01/$`));
+  }
+});
+
 test('the home totals of cards equal the sums of the page\'s own module list', async ({ page }) => {
   for (const lang of ['it', 'en']) {
     await page.goto(`${lang}/`);

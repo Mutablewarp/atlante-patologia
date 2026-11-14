@@ -110,9 +110,10 @@ function main() {
   for (const lang of LANGS) {
     for (const [module, ids] of byModule) {
       // Only pages the build actually rendered (drafts are not built in production).
-      const pages = ids
-        .flatMap((id) => [`${lang}/e/${id}/`, ...(pathwaysOf.get(id) ?? []).map((p) => `${lang}/pathways/${p}/`)])
-        .filter((p) => existsSync(fileFor(p)));
+      const pages = [
+        `${lang}/chapter/${module}/`, // the way from the chapter index to its cards, offline too
+        ...ids.flatMap((id) => [`${lang}/e/${id}/`, ...(pathwaysOf.get(id) ?? []).map((p) => `${lang}/pathways/${p}/`)]),
+      ].filter((p) => existsSync(fileFor(p)));
       if (pages.length === 0) continue;
       const images = pages.flatMap((p) => imagesIn(readFileSync(fileFor(p), 'utf8'), base)).filter((p) => !(p in shellFiles));
       const data = all.filter((p) => p.startsWith(`${lang}/data/`) && p.endsWith('.json'));
