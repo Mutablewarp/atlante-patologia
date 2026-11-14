@@ -95,6 +95,12 @@ const sections = (['I', 'II', 'III'] as const).map((s) => ({
           </li>
         ))
       }
+      <li>
+        <a class="card link-card" href={langPath(lang, 'body/')}>
+          <h3>{t('bodyTitle')} →</h3>
+          <p class="small muted">{t('bodyBody')}</p>
+        </a>
+      </li>
     </ul>
     {
       pats.length > 0 && (

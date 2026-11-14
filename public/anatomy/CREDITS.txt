@@ -1,0 +1,14 @@
+Credits and licences of the files in this folder (the interactive body of the Atlante di Patologia).
+
+Body, organs and skin: BodyParts3D, (c) The Database Center for Life Science, licensed under CC Attribution 4.0 International
+(https://dbarchive.biosciencedbc.jp/en/bodyparts3d/lic.html). The original files carry the older header "CC Attribution-Share Alike 2.1 Japan";
+the derived files here are shared under CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/), which keeps both the credit and the share-alike term.
+
+Female organs (uterus, cervix, fallopian tubes, ovaries, breast): HRA 3D Reference Object Library, release v2.5, CC BY 4.0
+(https://creativecommons.org/licenses/by/4.0/), https://humanatlas.io/3d-reference-library. Fitted into the base body and simplified by this project.
+
+Thyroid gland: an original schematic shape made for this project, shared under CC BY-SA 4.0.
+
+Changes: the parts of each organ merged, simplified, moved and scaled (female organs), recoloured by the page; geometry quantized and compressed (meshopt).
+
+Details, source addresses and citations: docs/licenses/anatomy.md in the project repository. No warranty.
