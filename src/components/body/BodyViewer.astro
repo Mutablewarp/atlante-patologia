@@ -16,9 +16,21 @@ const { lang, credit } = Astro.props;
 const t = (k: Parameters<typeof tBody>[1]) => tBody(lang, k);
 const acts = ['left', 'right', 'up', 'down', 'in', 'out', 'front', 'back', 'side', 'reset', 'prev', 'next'] as const;
 const posters = ['light', 'dark'] as const;
+/** Icon buttons: the full name is the aria-label. The rest show a short word, which is their name. */
+const icons: Partial<Record<(typeof acts)[number], string>> = {
+  left: 'M15 5l-7 7 7 7',
+  right: 'M9 5l7 7-7 7',
+  up: 'M5 15l7-7 7 7',
+  down: 'M5 9l7 7 7-7',
+  in: 'M12 5v14M5 12h14',
+  out: 'M5 12h14',
+  prev: 'M11 6l-6 6 6 6M19 6l-6 6 6 6',
+  next: 'M13 6l6 6-6 6M5 6l6 6-6 6',
+};
+const words = { front: 'frontShort', back: 'backShort', side: 'sideShort', reset: 'resetShort' } as const;
 ---
 
-<figure class="body-stage" data-stage aria-label={t('stage')}>
+<figure class="body-stage" data-stage aria-label={t('stage')} data-t-close={t('close')}>
   {
     posters.map((p) => (
       <picture data-poster class={`poster-${p}`}>
@@ -30,21 +42,34 @@ const posters = ['light', 'dark'] as const;
   }
   <canvas data-canvas hidden aria-hidden="true"></canvas>
   <p class="body-label" data-label hidden></p>
+  <button type="button" class="btn btn-primary body-start js-only" data-load>{t('load')}</button>
 </figure>
 <p id="body-help" class="body-help js-only">{t('help')}</p>
 <div class="body-controls js-only" role="group" aria-label={t('controls')}>
-  <button type="button" class="btn btn-primary" data-load>{t('load')}</button>
   {
-    acts.map((a) => (
-      <button type="button" class="btn" data-act={a} hidden>
-        {t(a)}
-      </button>
-    ))
+    acts.map((a) =>
+      icons[a] ? (
+        <button type="button" class="btn" data-act={a} aria-label={t(a)} hidden>
+          <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d={icons[a]} />
+          </svg>
+        </button>
+      ) : (
+        <button type="button" class="btn" data-act={a} hidden>
+          {t(words[a as keyof typeof words])}
+        </button>
+      ),
+    )
   }
-  <button type="button" class="btn" data-off hidden>{t('off')}</button>
+  <button type="button" class="btn" data-off hidden>{t('offShort')}</button>
 </div>
 <p class="body-status js-only" data-status role="status"></p>
-<p class="body-credit">
-  <span lang="en">{credit}</span>. {t('creditHra')} {t('creditChanges')}{' '}
-  <a href={langPath(lang, 'about/licenses/')}>{t('creditMore')}</a>
-</p>
+{/* Twice, one shown at a time: inside the sticky viewer from 48rem, after the tree below it (the CSS moves it). */}
+{
+  ['viewer', 'page'].map((where) => (
+    <p class={`body-credit body-credit--${where}`}>
+      <span lang="en">{credit}</span>. {t('creditHra')} {t('creditChanges')}{' '}
+      <a href={langPath(lang, 'about/licenses/')}>{t('creditMore')}</a>
+    </p>
+  ))
+}

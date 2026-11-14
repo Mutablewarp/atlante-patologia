@@ -7,17 +7,29 @@ ap-body {
   max-width: 100%;
 }
 
+/* While the viewer runs it scrolls and hides sections itself. The page's smooth scroll would still be travelling to the old
+   position of a target when the sections above it hide, and end past the new end of the page (the organ above the screen). */
+html:has(ap-body[data-on]) {
+  scroll-behavior: auto;
+}
+
 /* Chips: a wrapping row with counts */
 .body-systems {
+  position: relative; /* the visually hidden units inside the chips are absolute: without this they escape the scroller and widen the page */
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap; /* one scrolling row at every width; the script scrolls the selected chip into view */
   gap: var(--space-2);
-  padding-block: var(--space-3);
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  scrollbar-width: thin;
+  padding: var(--space-3) 3px; /* 3px: the focus ring is not cut by the scroller */
   margin-bottom: var(--space-5);
   background: var(--paper);
   border-bottom: 1px solid var(--rule);
 }
 .body-systems a {
+  flex: none;
+  scroll-snap-align: start;
   display: inline-flex;
   align-items: center;
   gap: var(--space-2);
@@ -253,11 +265,40 @@ ap-body section[data-organ]:has(> h3 a[aria-current]) {
   overflow-x: auto;
   padding: 3px 3px var(--space-1); /* the focus ring (2px + 2px offset) would be cut by the scroller */
 }
+.body-controls {
+  scroll-snap-type: x proximity;
+}
 .body-controls button {
   flex: none;
+  scroll-snap-align: start;
+  min-width: 2.75rem;
   min-height: 2.75rem;
 }
-.body-controls button[hidden] {
+.body-controls button svg {
+  display: block;
+  margin-inline: auto;
+}
+.body-controls button[hidden],
+.body-start[hidden] {
+  display: none;
+}
+/* The start button sits on the poster, above both posters */
+.body-start {
+  position: absolute;
+  z-index: 3;
+  bottom: var(--space-4);
+  left: 50%;
+  transform: translateX(-50%);
+  min-height: 2.75rem;
+}
+.body-start:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+}
+.body-sheet-close {
+  display: none;
+}
+.body-credit--page {
   display: none;
 }
 .body-status {
@@ -268,6 +309,103 @@ ap-body section[data-organ]:has(> h3 a[aria-current]) {
   margin: 0;
   color: var(--ink-muted);
   font-size: var(--step--1);
+}
+
+/* Phone (below 48rem): stage, one row of controls, one row of chips, the organ panel as a bottom sheet. */
+@media (max-width: 47.99rem) {
+  ap-body {
+    display: flex;
+    flex-direction: column;
+  }
+  .body-viewer {
+    display: contents; /* so the page credit can take its place after the tree */
+  }
+  .body-stage {
+    margin-bottom: var(--space-2);
+  }
+  ap-body:not([data-on]) .body-controls {
+    display: none;
+  }
+  .body-controls {
+    flex-wrap: nowrap;
+  }
+  .body-credit--viewer {
+    display: none;
+  }
+  .body-credit--page {
+    display: block;
+    order: 99;
+    margin-block: var(--space-5);
+  }
+  @media (pointer: coarse) {
+    .body-help {
+      display: none; /* the text stays available through aria-describedby */
+    }
+  }
+  ap-body[data-on] section[data-organ]:has(> h3 a[aria-current]) {
+    position: fixed;
+    inset: auto 0 calc(var(--tabbar-h) + env(safe-area-inset-bottom)) 0;
+    z-index: 15; /* above the page, below the top bar */
+    max-height: 50svh;
+    margin: 0;
+    padding: var(--space-3) var(--gutter) var(--space-4);
+    overflow-y: auto;
+    overscroll-behavior: contain;
+    background: var(--paper);
+    border: 1px solid var(--rule);
+    border-radius: var(--radius-l) var(--radius-l) 0 0;
+    box-shadow: var(--shadow);
+  }
+  @media (min-width: 37.5rem) {
+    ap-body[data-on] section[data-organ]:has(> h3 a[aria-current]) {
+      bottom: 0;
+      padding-bottom: calc(var(--space-4) + env(safe-area-inset-bottom));
+    }
+  }
+  @media (prefers-reduced-motion: no-preference) {
+    ap-body[data-on] section[data-organ]:has(> h3 a[aria-current]) {
+      animation: body-sheet-up 200ms ease-out;
+    }
+  }
+  ap-body[data-on] section[data-organ]:not(:has(> h3 a[aria-current])) > :not(h3) {
+    display: none;
+  }
+  ap-body[data-on] section[data-organ]:not(:has(> h3 a[aria-current])) {
+    margin-block: var(--space-1);
+  }
+  /* room under the page for the sheet, so that the stage can be scrolled up above it */
+  ap-body[data-on]:has(section[data-organ] > h3 a[aria-current]) {
+    padding-bottom: 50svh;
+  }
+  /* the band between the top bar and the sheet: half the screen minus the bars */
+  ap-body[data-on]:has(section[data-organ] > h3 a[aria-current]) .body-stage {
+    max-height: max(9rem, calc(50svh - var(--tabbar-h) - var(--topbar-h) - var(--space-5)));
+  }
+  ap-body[data-on] section[data-organ]:has(> h3 a[aria-current]) > .body-sheet-close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    float: right;
+    margin: 0 0 var(--space-2) var(--space-3);
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0;
+    border: 1px solid var(--border-strong);
+    border-radius: var(--radius-l);
+    background: var(--paper);
+    color: var(--ink);
+  }
+  .body-sheet-close:focus-visible {
+    outline: 2px solid var(--focus);
+    outline-offset: 2px;
+  }
+}
+@keyframes body-sheet-up {
+  from {
+    transform: translateY(100%);
+  }
 }
 
 /* Wide screens: the 18 chips wrap into about five rows, far too tall to stick (seen at 1280 px, a third of the screen),

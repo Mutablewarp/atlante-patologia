@@ -49,6 +49,8 @@ class ApBody extends HTMLElement {
   private state: BodyState = { system: null, organ: null };
   /** The learner chose a system or an organ: only then do the other sections hide (a start on its own shifts nothing). */
   private interacted = false;
+  /** A selection made by a control, not by the browser's own jump to a fragment: only then does the viewer scroll the organ into view. */
+  private scrollNext = false;
   private queue: Promise<void> = Promise.resolve();
   private probe?: HTMLElement;
   private abort?: AbortController;
@@ -63,10 +65,24 @@ class ApBody extends HTMLElement {
     this.querySelectorAll<HTMLElement>('[data-poster]').forEach((p) => p.addEventListener('click', () => void this.start(true), { signal }));
     this.querySelectorAll<HTMLButtonElement>('[data-act]').forEach((b) => b.addEventListener('click', () => this.act(b.dataset.act!), { signal }));
     this.$('[data-stage]')?.addEventListener('keydown', (ev) => this.onKey(ev as KeyboardEvent), { signal });
+    this.addEventListener('click', (ev) => this.onLink(ev), { signal });
+    // Below 48rem the selected organ's section is a bottom sheet: Esc anywhere inside it closes it.
+    this.addEventListener(
+      'keydown',
+      (ev) => {
+        const sheet = (ev.target as HTMLElement).closest?.('section[data-organ]');
+        if (ev.key === 'Escape' && sheet && this.sheetOpen(sheet)) {
+          ev.preventDefault();
+          this.closeSheet();
+        }
+      },
+      { signal },
+    );
     addEventListener(
       'hashchange',
       () => {
         this.interacted = true;
+        this.scrollNext = true; // sections may hide and shorten the page under a scroll position the browser has just set
         this.sync();
       },
       { signal },
@@ -149,9 +165,54 @@ class ApBody extends HTMLElement {
       else delete this.dataset[key];
     }
     this.mark();
+    this.centreChip();
+    this.stageIntoView();
     this.sections();
+    this.reveal(next);
     const run = this.queue.then(() => this.apply(next));
     this.queue = run.catch((err) => console.error(err));
+  }
+
+  /**
+   * While the viewer runs, a chip or an organ link selects through setHash instead of the browser's own jump to the
+   * fragment: the jump scrolls to a section that the sheet or the other sections are about to move, and fights the
+   * scrolling the viewer does itself. A click with a modifier (a new tab) and every click without the viewer stay native.
+   */
+  private onLink(ev: MouseEvent) {
+    if (!this.hasAttribute('data-on') || ev.defaultPrevented || ev.button !== 0 || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
+    const a = (ev.target as Element).closest<HTMLAnchorElement>('a[href*="#sys-"], a[href*="#organ-"]');
+    if (!a || !this.contains(a) || new URL(a.href).pathname !== location.pathname) return;
+    const next = parseHash(new URL(a.href).hash, this.manifest);
+    if (!next.system) return;
+    ev.preventDefault();
+    this.setHash(next);
+  }
+
+  /**
+   * From 48rem the panel sits beside the stage: after a selection made by a control or a hash change, bring the system or
+   * the organ into view, where the browser's own jump to a fragment would have. Instant: the page is tens of thousands of
+   * pixels long and a smooth scroll across it takes seconds. Not for the first load on a deep link: the browser did that.
+   */
+  private reveal(state: BodyState) {
+    const go = this.scrollNext;
+    this.scrollNext = false;
+    if (!go || !matchMedia(WIDE).matches) return;
+    const target = state.organ ? document.getElementById(`organ-${state.organ}`) : state.system ? this.querySelector(`:scope > section[data-system="${CSS.escape(state.system)}"]`) : null;
+    target?.scrollIntoView({ block: state.organ ? 'nearest' : 'start', behavior: 'instant' });
+  }
+
+  /** Below 48rem an organ opens a sheet over the lower half of the screen: the stage must stay in view above it. */
+  private stageIntoView() {
+    if (this.state.organ && this.hasAttribute('data-on') && !matchMedia(WIDE).matches) this.$('[data-stage]')?.scrollIntoView({ block: 'start', behavior: 'instant' });
+  }
+
+  /** The chip of the selected system scrolls to the middle of its row. Only the row moves: scrollIntoView would also move the page. */
+  private centreChip() {
+    const chip = this.querySelector<HTMLElement>('.body-systems a[aria-current]');
+    const row = chip?.closest<HTMLElement>('.body-systems');
+    if (!chip || !row) return;
+    const left = chip.getBoundingClientRect().left - row.getBoundingClientRect().left + row.scrollLeft - (row.clientWidth - chip.offsetWidth) / 2;
+    row.scrollTo({ left, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
   }
 
   /** aria-current on the chip of the selected system and on the link of the selected organ. */
@@ -179,7 +240,6 @@ class ApBody extends HTMLElement {
     }
     if (this.ctrl !== c || state !== this.state) return; // turned off, or another selection took over, while loading
     c.select(state.organ);
-    if (state.organ && matchMedia(WIDE).matches) document.getElementById(`organ-${state.organ}`)?.scrollIntoView({ block: 'nearest' });
     this.say(this.message(state));
   }
 
@@ -205,6 +265,7 @@ class ApBody extends HTMLElement {
   /** The hash stays the one source of truth, but pushState does not scroll the page away from the stage; Back still fires hashchange. */
   private setHash(state: BodyState) {
     this.interacted = true;
+    this.scrollNext = true;
     const next = toHash(state);
     if (next === location.hash) return; // a tap on nothing in the whole-body view changes nothing: no empty history entry
     history.pushState(null, '', next || location.pathname + location.search);
@@ -223,6 +284,32 @@ class ApBody extends HTMLElement {
     const link = this.querySelector<HTMLElement>(`#organ-${CSS.escape(organ)} > h3 a`);
     if (matchMedia(WIDE).matches) link?.focus();
     else link?.focus({ preventScroll: true });
+  }
+
+  private sheetOpen(section: Element): boolean {
+    return this.hasAttribute('data-on') && !matchMedia(WIDE).matches && !!section.querySelector(':scope > h3 a[aria-current]');
+  }
+
+  /** The close button is the first child of each organ section, once; the CSS shows it only on the phone sheet. */
+  private addCloseButtons() {
+    const label = this.$('[data-stage]')?.dataset.tClose ?? 'Close';
+    this.querySelectorAll<HTMLElement>('section[data-organ]').forEach((o) => {
+      if (o.querySelector(':scope > .body-sheet-close')) return;
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.className = 'body-sheet-close';
+      b.setAttribute('aria-label', label);
+      b.innerHTML =
+        '<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>';
+      b.addEventListener('click', () => this.closeSheet(), { signal: this.abort?.signal });
+      o.prepend(b);
+    });
+  }
+
+  /** Clears the organ, keeps the system, and gives the keyboard back to the stage. */
+  private closeSheet() {
+    this.setHash({ system: this.state.system, organ: null });
+    this.$('[data-stage]')?.focus({ preventScroll: true });
   }
 
   private selectBy(dir: 1 | -1) {
@@ -309,6 +396,9 @@ class ApBody extends HTMLElement {
       this.setOn(true);
       this.recolor(); // the theme may have changed while the files were loading
       this.say(this.dataset.tReady!);
+      // a smooth scroll to a fragment may still be travelling toward a position the hiding sections are about to remove
+      scrollTo({ top: scrollY, behavior: 'instant' });
+      if (this.interacted) this.scrollNext = true;
       this.sync();
     } catch (err) {
       console.error(err);
@@ -327,6 +417,7 @@ class ApBody extends HTMLElement {
     const inside = !!focused && this.contains(focused);
     this.toggleAttribute('data-on', on);
     this.querySelectorAll<HTMLElement>('[data-act], [data-off]').forEach((b) => (b.hidden = !on));
+    if (on) this.addCloseButtons();
     const load = this.$('[data-load]');
     if (load) load.hidden = on;
     const stage = this.$('[data-stage]');

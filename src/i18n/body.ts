@@ -36,6 +36,13 @@ export const tBody = defineStrings({
   back: { it: 'Vista posteriore', en: 'Back view' },
   side: { it: 'Vista laterale', en: 'Side view' },
   reset: { it: 'Ripristina la vista', en: 'Reset view' },
+  // short visible names of the control row; the long names above are the aria-labels of the icon buttons
+  frontShort: { it: 'Fronte', en: 'Front' },
+  backShort: { it: 'Retro', en: 'Back' },
+  sideShort: { it: 'Lato', en: 'Side' },
+  resetShort: { it: 'Reset', en: 'Reset' },
+  offShort: { it: 'Spegni 3D', en: '3D off' },
+  close: { it: 'Chiudi', en: 'Close' },
   prev: { it: 'Organo precedente', en: 'Previous organ' },
   next: { it: 'Organo successivo', en: 'Next organ' },
   loading: { it: 'Caricamento del modello 3D…', en: 'Loading the 3D model…' },
