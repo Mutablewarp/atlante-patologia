@@ -302,7 +302,7 @@ ap-body section[data-organ]:has(> h3 a[aria-current]) {
   display: none;
 }
 .body-status {
-  min-height: 1.5em;
+  min-height: 2lh; /* a line of text taller than 1.5em, or an error that wraps, would push the credit down once the viewer starts */
   margin-block: var(--space-2);
 }
 .body-credit {
@@ -342,7 +342,7 @@ ap-body section[data-organ]:has(> h3 a[aria-current]) {
       display: none; /* the text stays available through aria-describedby */
     }
   }
-  ap-body[data-on] section[data-organ]:has(> h3 a[aria-current]) {
+  ap-body[data-on][data-picked] section[data-organ]:has(> h3 a[aria-current]) {
     position: fixed;
     inset: auto 0 calc(var(--tabbar-h) + env(safe-area-inset-bottom)) 0;
     z-index: 15; /* above the page, below the top bar */
@@ -357,31 +357,31 @@ ap-body section[data-organ]:has(> h3 a[aria-current]) {
     box-shadow: var(--shadow);
   }
   @media (min-width: 37.5rem) {
-    ap-body[data-on] section[data-organ]:has(> h3 a[aria-current]) {
+    ap-body[data-on][data-picked] section[data-organ]:has(> h3 a[aria-current]) {
       bottom: 0;
       padding-bottom: calc(var(--space-4) + env(safe-area-inset-bottom));
     }
   }
   @media (prefers-reduced-motion: no-preference) {
-    ap-body[data-on] section[data-organ]:has(> h3 a[aria-current]) {
+    ap-body[data-on][data-picked] section[data-organ]:has(> h3 a[aria-current]) {
       animation: body-sheet-up 200ms ease-out;
     }
   }
-  ap-body[data-on] section[data-organ]:not(:has(> h3 a[aria-current])) > :not(h3) {
+  ap-body[data-on][data-picked] section[data-organ]:not(:has(> h3 a[aria-current])) > :not(h3) {
     display: none;
   }
-  ap-body[data-on] section[data-organ]:not(:has(> h3 a[aria-current])) {
+  ap-body[data-on][data-picked] section[data-organ]:not(:has(> h3 a[aria-current])) {
     margin-block: var(--space-1);
   }
   /* room under the page for the sheet, so that the stage can be scrolled up above it */
-  ap-body[data-on]:has(section[data-organ] > h3 a[aria-current]) {
+  ap-body[data-on][data-picked]:has(section[data-organ] > h3 a[aria-current]) {
     padding-bottom: 50svh;
   }
   /* the band between the top bar and the sheet: half the screen minus the bars */
-  ap-body[data-on]:has(section[data-organ] > h3 a[aria-current]) .body-stage {
+  ap-body[data-on][data-picked]:has(section[data-organ] > h3 a[aria-current]) .body-stage {
     max-height: max(9rem, calc(50svh - var(--tabbar-h) - var(--topbar-h) - var(--space-5)));
   }
-  ap-body[data-on] section[data-organ]:has(> h3 a[aria-current]) > .body-sheet-close {
+  ap-body[data-on][data-picked] section[data-organ]:has(> h3 a[aria-current]) > .body-sheet-close {
     display: flex;
     align-items: center;
     justify-content: center;

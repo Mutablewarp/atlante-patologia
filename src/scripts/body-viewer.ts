@@ -84,7 +84,7 @@ class ApBody extends HTMLElement {
     addEventListener(
       'hashchange',
       () => {
-        this.interacted = true;
+        this.touched();
         this.scrollNext = true; // sections may hide and shorten the page under a scroll position the browser has just set
         this.sync();
       },
@@ -271,9 +271,15 @@ class ApBody extends HTMLElement {
     this.querySelectorAll<HTMLElement>(':scope > section[data-system]').forEach((s) => (s.hidden = only !== null && s.dataset.system !== only));
   }
 
+  /** The learner has chosen something: from now on the page may reshape itself (collapse sections, open the phone sheet). Before that, a start on its own, or on a deep link, moves nothing. */
+  private touched() {
+    this.interacted = true;
+    this.setAttribute('data-picked', '');
+  }
+
   /** The hash stays the one source of truth, but pushState does not scroll the page away from the stage; Back still fires hashchange. */
   private setHash(state: BodyState) {
-    this.interacted = true;
+    this.touched();
     this.scrollNext = true;
     const next = toHash(state);
     if (next === location.hash) return; // a tap on nothing in the whole-body view changes nothing: no empty history entry
@@ -296,7 +302,7 @@ class ApBody extends HTMLElement {
   }
 
   private sheetOpen(section: Element): boolean {
-    return this.hasAttribute('data-on') && !matchMedia(WIDE).matches && !!section.querySelector(':scope > h3 a[aria-current]');
+    return this.hasAttribute('data-on') && this.hasAttribute('data-picked') && !matchMedia(WIDE).matches && !!section.querySelector(':scope > h3 a[aria-current]');
   }
 
   /** The close button is the first child of each organ section, once; the CSS shows it only on the phone sheet. */
