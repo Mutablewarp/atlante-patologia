@@ -149,10 +149,15 @@ Acceptance: `npx astro check` 0 errors. The lead runs the page in the browser (w
 
 ### B-4d: offline and budgets (coder)
 Depends: B-4c2
-Files: scripts/sw-manifest.mjs, tests/sw-manifest.test.ts, tests/dist/body.test.ts, scripts/anatomy/poster.mjs
-Goal: the viewer chunk and the meshes are cached on first use, never in the shell; budgets are tests; the poster exists.
-Do: extend `LAZY_ONLY` to the `body-3d` chunk and `isLazyCached` to `anatomy/`; the offline pack of the body page lists its files (follow the pathway pack). `tests/dist/body.test.ts`: budgets of spec §4 and §9 on `dist/`. `poster.mjs`: with Playwright Chromium, open the built page, start the viewer, wait for `data-webgl="on"`, screenshot the stage in both themes at 2× and write AVIF and WebP with `sharp` into `public/anatomy/`.
-Acceptance: `npx vitest run tests/sw-manifest.test.ts` passes; the lead runs `npm run build && npm run test:dist`, and the poster script inside the Playwright container.
+Files: scripts/sw-manifest.mjs, public/sw.js, tests/sw-manifest.test.ts, tests/dist/body.test.ts, scripts/anatomy/poster.mjs
+Goal: the viewer chunk and the meshes are cached on first use, never in the shell; the budgets are tests; the posters can be regenerated.
+Do:
+- `scripts/sw-manifest.mjs`: `LAZY_ONLY` also matches the `body-3d` chunk (`_astro/body-3d.<hash>.js`, 653 kB minified, about 175 kB gzip; today only `structure-3d` is named, so the worker precaches the body chunk for every visitor); `isLazyCached` also takes the files under `anatomy/` (their hashes feed the worker version, as `structures/` do). No offline pack for the body in this task: the body page belongs to no module, and B-9 decides the rest.
+- `public/sw.js`: files under `${BASE}anatomy/` take the `hashedAsset` branch next to `_astro/` and `structures/` (cache first, stored on first use); update the header comment.
+- `tests/sw-manifest.test.ts`: new rows next to the 3Dmol ones: `isShellAsset('_astro/body-3d.XXXXXXXX.js')` is false, `isLazyCached` is true for it and for `anatomy/heart.glb`, the worker version changes when an anatomy file changes. Do not edit the existing rows.
+- `tests/dist/body.test.ts` (reads `dist/` after `npm run build`; see `tests/dist/lib.ts` and `pathway.test.ts` for the helpers): `shell.glb` ≤ 400,000 bytes; each `<system>.glb` ≤ 500,000; `manifest.json` ≤ 12,000; all files under `dist/anatomy` together ≤ 6,000,000; each `poster-*` file ≤ 60,000; the manifest's `triangles` of the shell and all systems add up to ≤ 250,000; `CREDITS.txt` exists; there is exactly one `body-3d` chunk and its gzip size (`zlib.gzipSync`) is ≤ 192,000 (spec §11, ceiling 200,000); no HTML page references it and it is not in `precache.json`; the static scripts of `dist/it/body/index.html` (the `<script src>` and modulepreload URLs) weigh at most 20,000 bytes gzip together. Each limit in one table at the top of the file with a comment naming the spec section.
+- `scripts/anatomy/poster.mjs` (Node, run by hand, exported pure helpers where useful): with Playwright Chromium and software WebGL (launch args `--use-angle=swiftshader`, `--enable-unsafe-swiftshader`, `--ignore-gpu-blocklist`, `--enable-webgl`) open the built page from `dist/` served by `createDistServer` of `scripts/serve-dist.mjs`, at 480 × 600 CSS px and device scale 2, once with `colorScheme: 'light'` and once `'dark'`; click `[data-load]`, wait for `ap-body[data-webgl="on"]` and 1.5 s more; inject CSS that makes `html, body, .body-stage` transparent with no border and hides `[data-label]`; screenshot `[data-stage]` with `omitBackground: true`; write `public/anatomy/poster-<theme>.avif` (quality 55) and `.webp` (quality 72, alphaQuality 70, smartSubsample) with `sharp`; print the four sizes. It shows the whole-body view (no hash).
+Acceptance: `npx vitest run tests/sw-manifest.test.ts`. The lead runs `npm run build && npm run test:dist` and the poster script.
 
 ### B-4e: viewer tests (coder)
 Depends: B-4c2
