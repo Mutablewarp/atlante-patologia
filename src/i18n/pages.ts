@@ -24,8 +24,9 @@ export const tHome = defineStrings({
   },
   progress: { it: 'Avanzamento dei capitoli', en: 'Chapter progress' },
   progressSummary: { it: '{published} di {total} capitoli pubblicati', en: '{published} of {total} chapters published' },
-  cardsSummary: { it: '{published} schede pubblicate su {total}', en: '{published} cards published of {total}' },
-  cardsShort: { it: '{published} di {total} schede', en: '{published} of {total} cards' },
+  // label first, so that the sentence is right with one card too
+  cardsSummary: { it: 'Schede pubblicate: {published} su {total}', en: 'Cards published: {published} of {total}' },
+  cardsShort: { it: 'Schede: {published} di {total}', en: 'Cards: {published} of {total}' },
   seeRoadmap: { it: 'Vedi il piano completo', en: 'See the full roadmap' },
 });
 
