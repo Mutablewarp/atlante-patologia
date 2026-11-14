@@ -2,20 +2,20 @@ entity: carcinogenic-agents
 claims:
 - claimId: carcinogenic-agents-c001
   section: definition
-  statement: "Smoke from burning organic material, above all cigarette smoke, has caused an epidemic of lung cancer."
+  statement: "The lung cancer epidemic stems mainly from cigarettes and other burnt organic matter."
   sourceRef: { source: rubin-8e, chapter: "5", pages: "242" }
   status: verified
   verifiedBy: agent
-  verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  verifier: "fixer-agent"
+  date: 2026-11-14
 - claimId: carcinogenic-agents-c002
   section: definition
-  statement: "P450 enzymes convert polycyclic hydrocarbons, many of them in tobacco smoke, into epoxides that bind proteins and nucleic acids."
+  statement: "Epoxides that bind proteins and nucleic acids form when P450 enzymes act on polycyclic hydrocarbons, many in tobacco smoke."
   sourceRef: { source: rubin-8e, chapter: "5", pages: "242" }
   status: verified
   verifiedBy: agent
-  verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  verifier: "fixer-agent"
+  date: 2026-11-14
 - claimId: carcinogenic-agents-c003
   section: definition
   statement: "Peanuts and grains contaminated with Aspergillus flavus can carry aflatoxin B1, a product of that fungus."
@@ -30,8 +30,8 @@ claims:
   sourceRef: { source: rubin-8e, chapter: "5", pages: "241" }
   status: verified
   verifiedBy: agent
-  verifier: "fixer-agent"
-  date: 2026-11-13
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
 - claimId: carcinogenic-agents-c005
   section: definition
   statement: "Pyrimidine dimers in DNA are the typical lesion of ultraviolet light; no other carcinogen causes them."
@@ -74,12 +74,12 @@ claims:
   date: 2026-11-13
 - claimId: carcinogenic-agents-c012
   section: definition
-  statement: "HTLV-1 is the only retrovirus known to cause a human cancer, adult T-cell leukemia/lymphoma."
+  statement: "Adult T-cell leukemia/lymphoma stems from HTLV-1, the only retrovirus with a known human cancer."
   sourceRef: { source: rubin-8e, chapter: "5", pages: "239" }
   status: verified
   verifiedBy: agent
-  verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  verifier: "fixer-agent"
+  date: 2026-11-14
 - claimId: carcinogenic-agents-c013
   section: definition
   statement: "Virtually all Kaposi sarcoma lesions contain HHV8, the herpesvirus linked to the tumor."
@@ -90,12 +90,12 @@ claims:
   date: 2026-11-13
 - claimId: carcinogenic-agents-c014
   section: definition
-  statement: "Merkel cell polyomavirus is linked to Merkel cell carcinoma, a very uncommon skin tumor; most of these tumors carry the viral genome integrated in their DNA."
+  statement: "Merkel cell carcinoma, a skin tumor, is tied to Merkel cell polyomavirus (MCPyV)."
   sourceRef: { source: rubin-8e, chapter: "5", pages: "241" }
   status: verified
   verifiedBy: agent
-  verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  verifier: "fixer-agent"
+  date: 2026-11-14
 - claimId: carcinogenic-agents-c015
   section: definition
   statement: "Helicobacter pylori is a bacterial carcinogen of the stomach."
@@ -114,12 +114,12 @@ claims:
   date: 2026-11-13
 - claimId: carcinogenic-agents-c018
   section: micro
-  statement: "In easily sampled epithelia such as cervix, colon and skin, repeat biopsies show promotion and progression as hyperplasia, then dysplasia, then carcinoma in situ."
+  statement: "Serial biopsies of cervix, colon or skin can show hyperplasia progressing to dysplasia, then carcinoma in situ."
   sourceRef: { source: rubin-8e, chapter: "5", pages: "242" }
   status: verified
   verifiedBy: agent
-  verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  verifier: "fixer-agent"
+  date: 2026-11-14
 - claimId: carcinogenic-agents-c019
   section: diagnosis
   statement: "Studies of exposed people struggle because doses are hard to estimate and latency is long and variable."
@@ -186,44 +186,44 @@ claims:
   date: 2026-11-13
 - claimId: carcinogenic-agents-c027
   section: differential
-  statement: "Signals triggered by CagA meet at NF-kB, which drives inflammation, cell growth and invasion."
+  statement: "CagA pathways converge on NF-kB, fueling inflammation and tumor growth and invasion."
   sourceRef: { source: rubin-8e, chapter: "5", pages: "241" }
   status: verified
   verifiedBy: agent
   verifier: "fixer-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: carcinogenic-agents-c028
   section: high-yield
-  statement: "Most organic carcinogens are procarcinogens: enzymes must convert them into a more reactive form first."
+  statement: "Procarcinogens, which enzymes must first activate, make up most organic carcinogens."
   sourceRef: { source: rubin-8e, chapter: "5", pages: "242" }
   status: verified
   verifiedBy: agent
-  verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  verifier: "fixer-agent"
+  date: 2026-11-14
 - claimId: carcinogenic-agents-c029
   section: high-yield
   statement: "Pyrimidine dimers occur only with UV exposure, and the nucleotide excision repair pathway removes them."
   sourceRef: { source: rubin-8e, chapter: "5", pages: "243" }
   status: verified
   verifiedBy: agent
-  verifier: "fixer-agent"
-  date: 2026-11-13
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
 - claimId: carcinogenic-agents-c030
   section: high-yield
   statement: "Smoking and asbestos together raise lung cancer risk far beyond either alone; the source states no fixed multiple."
   sourceRef: { source: rubin-8e, chapter: "5", pages: "244" }
   status: verified
   verifiedBy: agent
-  verifier: "fixer-agent"
-  date: 2026-11-13
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
 - claimId: carcinogenic-agents-c031
   section: high-yield
-  statement: "HTLV-1 is the only retrovirus known to cause cancer in humans."
+  statement: "Only one retrovirus, HTLV-1, has a known role in human cancer."
   sourceRef: { source: rubin-8e, chapter: "5", pages: "239" }
   status: verified
   verifiedBy: agent
-  verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  verifier: "fixer-agent"
+  date: 2026-11-14
 - claimId: carcinogenic-agents-c032
   section: high-yield
   statement: "Kaposi sarcoma seems to need HHV8, but the virus alone is not enough."
@@ -246,8 +246,8 @@ claims:
   sourceRef: { source: rubin-8e, chapter: "5", pages: "240" }
   status: verified
   verifiedBy: agent
-  verifier: "fixer-agent"
-  date: 2026-11-13
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
 - claimId: carcinogenic-agents-c035
   section: traps
   statement: "Nitrogen mustard and certain metals act directly, with no metabolic activation step."
