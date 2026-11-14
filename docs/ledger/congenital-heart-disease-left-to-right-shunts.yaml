@@ -1,0 +1,458 @@
+entity: congenital-heart-disease-left-to-right-shunts
+claims:
+- claimId: congenital-heart-disease-left-to-right-shunts-c001
+  section: definition
+  statement: "Congenital heart disease means that the heart or great vessels are structurally malformed already at birth"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "642" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c002
+  section: definition
+  statement: "Because pressure is higher on the left side of the heart, these defects first send blood from left to right through an abnormal opening"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "643" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c003
+  section: definition
+  statement: "The shunt lesions to know are PDA, ASD and VSD, and the AV canal is an atrial and a ventricular septal defect in one"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "643, 645" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c004
+  section: definition
+  statement: "In the incidence table VSD ranks first among congenital heart lesions, and ASD and PDA are also common"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "642, 644" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c005
+  section: definition
+  statement: "Cyanosis appears late in this group, once the shunt has turned from left to right into right to left (Eisenmenger complex)"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "643" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c006
+  section: etiology
+  statement: "Epidemiologic studies show heredity is critical, yet in most patients with congenital heart disease no cause is identified"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "642" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c007
+  section: etiology
+  statement: "Among environmental causes of congenital heart disease, maternal rubella early in pregnancy is well documented"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "642" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c010
+  section: etiology
+  statement: "A minority of ASDs are part of genetic syndromes, while for most the cause is not known"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "645" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c011
+  section: etiology
+  statement: "PDA is common in premature infants and in infants whose mothers had rubella early in pregnancy"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "646" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c012
+  section: etiology
+  statement: "Patients with Down syndrome often have a persistent common AV canal"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "645" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c013
+  section: pathogenesis
+  statement: "The AV valves arise from the endocardial cushions, and growing atrial and ventricular septa divide the initially single-chamber fetal heart into right and left sides"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "643" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c014
+  section: pathogenesis
+  statement: "The commonest VSD results from incomplete formation of the membranous septum, which normally descends to meet the muscular septum growing up from the apex"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "643-644" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c015
+  section: pathogenesis
+  statement: "A hole, the ostium secundum, forms in the midportion of the septum primum before that septum has reached the endocardial cushions and closed the ostium primum"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "645" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c016
+  section: pathogenesis
+  statement: "In the fetus, placental blood reaches the left atrium from the right through the foramen ovale, an opening left by the later-forming septum secundum"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "645" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c018
+  section: pathogenesis
+  statement: "In the fetus the ductus arteriosus is the route by which most blood from the pulmonary trunk reaches the aorta"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "646" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c019
+  section: pathogenesis
+  statement: "The ligamentum arteriosum is the fibrous remnant of the ductus arteriosus, which narrows after birth when arterial oxygen content rises"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "646" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c020
+  section: pathogenesis
+  statement: "Spontaneous closure of a PDA is rare in full-term infants because the endothelium and media of their ductus are abnormal"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "646" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c021
+  section: pathogenesis
+  statement: "The pressure advantage of the left side drives blood through the defect toward the right"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "643-645" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c022
+  section: pathogenesis
+  statement: "Pulmonary vascular resistance rises because prolonged excess shunted flow thickens the pulmonary arteries"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "645" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c023
+  section: pathogenesis
+  statement: "The shunt reverses to right to left (Eisenmenger complex) at the point where right ventricular pressure has come to exceed left ventricular pressure"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "643, 645" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c024
+  section: pathogenesis
+  statement: "After the shunt reverses, the right ventricle hypertrophies and the right heart fails, and cyanosis appears only at this late stage"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "645" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c025
+  section: gross
+  statement: "Muscular VSDs are often multiple, membranous VSDs are small, perimembranous VSDs are larger, and absence of the whole muscular septum leaves a single ventricle"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "644" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c026
+  section: gross
+  statement: "The commonest VSD is infracristal, lying behind the septal tricuspid leaflet and below the pulmonary outflow tract, with the bundle of His immediately beneath it"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "644" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c028
+  section: gross
+  statement: "Ostium secundum, a true deficiency in the middle of the atrial septum, is the most frequent ASD"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "645" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c029
+  section: gross
+  statement: "A pulmonary artery wider than the aorta can accompany a large secundum shunt, which also dilates and thickens the right atrium and ventricle"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "645" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c030
+  section: gross
+  statement: "In an ostium primum ASD the anterior mitral leaflet and the tricuspid septal leaflet are usually cleft, and the defect lies next to the endocardial cushions"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "645" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c031
+  section: gross
+  statement: "A complete AV canal, with a single common AV valve and atrial and ventricular septal defects, results from failure of the AV endocardial cushions to fuse"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "645" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c033
+  section: gross
+  statement: "A sinus venosus ASD sits high in the septum by the caval inflow, and the right pulmonary veins usually drain abnormally into the right atrium or the superior vena cava"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "645" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c035
+  section: gross
+  statement: "In a patent foramen ovale the septum primum flap does not seal completely, so a probe can pass, but the septum is not truly deficient"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "645" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c036
+  section: gross
+  statement: "PDA is a ductus between the pulmonary artery and the descending aorta that never closed, and its luminal diameter ranges widely"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "646" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c038
+  section: micro
+  statement: "The pulmonary arteries thicken when a shunt has raised pulmonary blood flow for a long time"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "645" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c039
+  section: ancillary
+  statement: "Some familial ASDs and some sporadic ASDs are associated with NKX2.5 coding errors"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "645" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c043
+  section: clinical
+  statement: "A small VSD has little functional significance and can close spontaneously in childhood when tricuspid leaflets adhere to its margin or adjacent muscle hypertrophies"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "644" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c044
+  section: clinical
+  statement: "Heart failure and a dilated left ventricle are common complications of the shunt in infants with a large VSD"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "644-645" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c045
+  section: clinical
+  statement: "Infective endocarditis can develop at the site of a VSD"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "645" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c047
+  section: clinical
+  statement: "Some young children with an ASD tire easily or get short of breath on exertion, but most have no symptoms"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "646" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c048
+  section: clinical
+  statement: "In adults, changes in the pulmonary vessels can turn an ASD shunt into a right-to-left one, with cyanosis and finger clubbing"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "646" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c050
+  section: clinical
+  statement: "When right atrial pressure climbs, a patent foramen ovale can open a right-to-left route, and paradoxical emboli crossing it can infarct systemic organs such as the brain and heart"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "645" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c051
+  section: clinical
+  statement: "Infective endarteritis can start on a small PDA, although the shunt has little effect on the heart"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "646" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c052
+  section: clinical
+  statement: "A large PDA can lead to left ventricular hypertrophy and heart failure because the left heart must raise its output to compensate for blood diverted from the aorta into the pulmonary artery"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "646" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c054
+  section: prognosis
+  statement: "The ductus of most premature infants closes spontaneously, and so do some small defects"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "644, 646" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c055
+  section: prognosis
+  statement: "Infancy is the usual time for surgical repair of a large VSD"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "645" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c056
+  section: prognosis
+  statement: "Surgery, or a closure device delivered percutaneously by catheter, treats an ASD that causes symptoms"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "646" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c057
+  section: prognosis
+  statement: "Indomethacin, which inhibits prostaglandin synthesis, makes a PDA contract and close; surgery or an interventional catheter procedure are the alternatives"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "646" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c058
+  section: prognosis
+  statement: "Prostaglandin E2 keeps the ductus open after birth in newborns with another cardiac defect who need that shunt to survive"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "646" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c060
+  section: differential
+  statement: "Tetralogy of Fallot is an example of the cyanotic group, in which the shunt is always right to left"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "643" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c062
+  section: differential
+  statement: "A patent foramen ovale is an unsealed flap, whereas a secundum ASD is a true deficiency of the atrial septum"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "645" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c063
+  section: differential
+  statement: "An aortopulmonary window can be mistaken clinically for a PDA, which it resembles functionally, and is a rare communication between the base of the aorta and the pulmonary artery"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "647" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c065
+  section: high-yield
+  statement: "VSD is the most common congenital heart lesion by relative incidence, and its commonest form comes from incomplete formation of the membranous septum"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "642, 644" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c066
+  section: high-yield
+  statement: "Ostium secundum is the most frequent ASD site and is a genuine septal deficiency"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "645" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c067
+  section: high-yield
+  statement: "A persistent common AV canal, a combined atrial and ventricular septal defect, occurs often in patients with Down syndrome"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "645" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c068
+  section: high-yield
+  statement: "PDA is common in premature infants, can be closed with indomethacin, and is kept open with prostaglandin E2 when survival depends on it"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "646" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c069
+  section: high-yield
+  statement: "Eisenmenger complex is the late reversal of an initial left-to-right shunt, driven by progressively rising pulmonary vascular resistance"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "643" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c072
+  section: traps
+  statement: "A patent foramen ovale is a flap valve that failed to seal, whereas ostium secundum ASD is a genuine deficiency of the atrial septum"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "645" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c073
+  section: traps
+  statement: "In the left-to-right shunt group cyanosis supervenes later, after the shunt reverses"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "643" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c074
+  section: traps
+  statement: "Eisenmenger complex is the later right-to-left reversal of an initially left-to-right shunt, not a separate defect"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "643, 645" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-left-to-right-shunts-c077
+  section: mnemonics
+  statement: "Eisenmenger reversal occurs when pulmonary vascular resistance rises until right ventricular pressure exceeds left ventricular pressure"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "643" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
