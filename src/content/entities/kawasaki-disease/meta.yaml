@@ -1,0 +1,95 @@
+id: kawasaki-disease
+module: o16
+tier: extended
+kind: disease
+names:
+  it: "Malattia di Kawasaki"
+  en: "Kawasaki disease"
+  eponyms: []
+  synonyms:
+    it: ["Sindrome linfonodale mucocutanea"]
+    en: ["Mucocutaneous lymph node syndrome"]
+  abbreviations: []
+summary:
+  it: "Vasculite necrotizzante acuta dell'infanzia che colpisce soprattutto le arterie coronarie e può causare aneurismi coronarici."
+  en: "Acute necrotizing vasculitis of early childhood that mainly targets the coronary arteries and can cause coronary aneurysms."
+lenses:
+  system: [vessels, heart]
+  process: [acute-inflammation]
+  pattern: []
+  presentation: [fever, lymphadenopathy]
+  marker: []
+  group: [vascular, inflammatory, immune]
+learningObjectives:
+  - it: "Definire la malattia di Kawasaki come vasculite necrotizzante acuta dell'infanzia e ricordarne il nome alternativo."
+    en: "Define Kawasaki disease as an acute necrotizing vasculitis of childhood and recall its alternative name."
+  - it: "Elencare le manifestazioni cliniche principali: febbre, esantema, lesioni congiuntivali e orali, linfoadenite."
+    en: "List the main clinical features: fever, rash, conjunctival and oral lesions, lymphadenitis."
+  - it: "Descrivere gli aneurismi coronarici e le lesioni della lamina elastica interna."
+    en: "Describe the coronary aneurysms and the defects of the internal elastic lamina."
+  - it: "Spiegare il ruolo ipotizzato dei superantigeni nella patogenesi."
+    en: "Explain the proposed role of superantigens in pathogenesis."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: anca-associated-vasculitis
+    note:
+      it: "La sindrome di Churg–Strauss colpisce giovani con asma e ricchi eosinofili, non bambini con aneurismi coronarici."
+      en: "Churg–Strauss syndrome affects young people with asthma and many eosinophils, not young children with coronary aneurysms."
+  - type: differentialOf
+    target: thromboangiitis-obliterans
+    note:
+      it: "La malattia di Buerger è una vasculite occlusiva delle arterie distali dei fumatori."
+      en: "Buerger disease is an occlusive vasculitis of distal arteries in smokers."
+quickCheck:
+  - id: kawasaki-disease-q1
+    q:
+      it: "Quale vaso è il bersaglio principale della malattia di Kawasaki e quale lesione ne è la complicanza tipica?"
+      en: "Which vessels are the main target of Kawasaki disease, and what is its typical complication?"
+    a:
+      it: "Le arterie coronarie; la complicanza tipica è l'aneurisma coronarico."
+      en: "The coronary arteries; the typical complication is a coronary aneurysm."
+    kind: short
+  - id: kawasaki-disease-q2
+    q:
+      it: "Che cos'è un superantigene e perché è un candidato come trigger?"
+      en: "What is a superantigen, and why is it a candidate trigger?"
+    a:
+      it: "Una molecola virale o batterica che lega il MHC di classe II e la regione Vβ del recettore T e attiva in massa la risposta immune."
+      en: "A viral or bacterial molecule that binds MHC class II and the Vβ region of the T-cell receptor and strongly activates the immune response."
+    kind: short
+  - id: kawasaki-disease-q3
+    q:
+      it: "Che cosa mostra al microscopio una sezione di coronaria in un caso fatale?"
+      en: "What does a coronary section from a fatal case show under the microscope?"
+    a:
+      it: "Ampi difetti della lamina elastica interna con piccoli aneurismi pieni di trombo."
+      en: "Large defects in the internal elastic lamina, with small thrombus-filled aneurysms."
+    kind: short
+selfExplain:
+  - it: "Perché l'attivazione massiva dei linfociti T da parte di un superantigene può danneggiare la parete coronarica?"
+    en: "Why can massive T-cell activation by a superantigen damage the coronary wall?"
+  - it: "Perché un difetto della lamina elastica interna favorisce la formazione di un aneurisma?"
+    en: "Why does a defect in the internal elastic lamina favor aneurysm formation?"
+examQuestions:
+  - it: "Mi parli della malattia di Kawasaki: che cos'è, chi colpisce e quale altro nome ha?"
+    en: "Tell me about Kawasaki disease: what is it, who does it affect, and what is its other name?"
+    focus: [definition, clinical]
+    level: 1
+  - it: "Che cosa vede al microscopio in un'arteria coronaria di un caso fatale di malattia di Kawasaki, e quale complicanza ne deriva?"
+    en: "What do you see under the microscope in a coronary artery from a fatal case of Kawasaki disease, and what complication results?"
+    focus: [micro, prognosis]
+    level: 2
+  - it: "Perché si sospetta che un superantigene possa avere un ruolo nella malattia di Kawasaki?"
+    en: "Why is a superantigen suspected to play a role in Kawasaki disease?"
+    focus: [etiology, pathogenesis]
+    level: 3
+images: []
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "16"
+    pages: "622-623"
+lastUpdated: 2026-11-14
+status: published
