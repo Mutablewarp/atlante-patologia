@@ -1,0 +1,123 @@
+id: nasopharyngeal-carcinoma
+module: o29
+tier: core
+kind: disease
+names:
+  it: "Carcinoma nasofaringeo"
+  en: "Nasopharyngeal carcinoma"
+  eponyms: []
+  synonyms:
+    it: ["Linfoepitelioma (termine obsoleto)"]
+    en: ["Lymphoepithelioma (obsolete term)"]
+  abbreviations: ["NPC"]
+summary:
+  it: "Carcinoma del rinofaringe, distinto in tipo cheratinizzante e non cheratinizzante; quest'ultimo è associato al virus di Epstein-Barr e spesso esordisce con una metastasi linfonodale laterocervicale."
+  en: "Carcinoma of the nasopharynx, divided into keratinizing and nonkeratinizing types; the latter is associated with Epstein-Barr virus and often first presents as a cervical lymph node metastasis."
+lenses:
+  system: [head-neck]
+  process: [neoplasia]
+  pattern: []
+  presentation: [lymphadenopathy, mass-lesion]
+  marker: [ihc, molecular]
+  group: [neoplastic, infectious]
+learningObjectives:
+  - it: "Distinguere il carcinoma nasofaringeo cheratinizzante da quello non cheratinizzante, differenziato o indifferenziato."
+    en: "Distinguish keratinizing from nonkeratinizing nasopharyngeal carcinoma, differentiated or undifferentiated."
+  - it: "Spiegare il legame con il virus di Epstein-Barr e come si documenta nel tumore."
+    en: "Explain the link with Epstein-Barr virus and how it is shown in the tumor."
+  - it: "Riconoscere perché la malattia esordisce spesso con una metastasi linfonodale laterocervicale."
+    en: "Recognize why the disease often first presents as a cervical lymph node metastasis."
+  - it: "Distinguere il carcinoma nasofaringeo dall'angiofibroma nasofaringeo e dal linfoma dell'anello di Waldeyer."
+    en: "Distinguish nasopharyngeal carcinoma from nasopharyngeal angiofibroma and Waldeyer ring lymphoma."
+prerequisites: [neoplasia-nomenclature]
+relations:
+  - type: differentialOf
+    target: diffuse-large-b-cell-lymphoma
+    note:
+      it: "Il carcinoma esprime citocheratina e non marcatori linfoidi; il linfoma dell'anello di Waldeyer è per lo più a grandi cellule B."
+      en: "The carcinoma expresses cytokeratin and no lymphoid markers; Waldeyer ring lymphoma is mostly large B-cell."
+  - type: sharesMechanism
+    target: herpesvirus-infections
+    note:
+      it: "Il virus di Epstein-Barr appartiene alla famiglia degli herpesvirus."
+      en: "Epstein-Barr virus belongs to the herpesvirus family."
+quickCheck:
+  - id: nasopharyngeal-carcinoma-q1
+    q:
+      it: "Quale virus è associato al carcinoma nasofaringeo non cheratinizzante e con quale tecnica lo si documenta nel tessuto?"
+      en: "Which virus is associated with nonkeratinizing nasopharyngeal carcinoma, and how is it shown in the tissue?"
+    a:
+      it: "Il virus di Epstein-Barr; l'ibridazione in situ identifica di solito il suo DNA nel tumore."
+      en: "Epstein-Barr virus; in situ hybridization usually identifies its DNA in the tumor."
+    kind: short
+  - id: nasopharyngeal-carcinoma-q2
+    q:
+      it: "Perché il carcinoma nasofaringeo si presenta spesso come linfonodo laterocervicale palpabile?"
+      en: "Why does nasopharyngeal carcinoma often present as a palpable neck node?"
+    a:
+      it: "Il tumore resta a lungo silente per la sede nascosta e la ricca rete linfatica locale produce metastasi linfonodali precoci e frequenti."
+      en: "The tumor stays silent for a long time because of its hidden site, and the rich local lymphatic network produces early, frequent nodal metastases."
+    kind: short
+  - id: nasopharyngeal-carcinoma-q3
+    q:
+      it: "Perché il termine linfoepitelioma è fuorviante?"
+      en: "Why is the term lymphoepithelioma misleading?"
+    a:
+      it: "Perché l'infiltrato linfoide può essere abbondante, ma le cellule tumorali esprimono citocheratina e non marcatori linfoidi: è un carcinoma."
+      en: "Because the lymphoid infiltrate can be abundant, but the tumor cells express cytokeratin and not lymphoid markers: it is a carcinoma."
+    kind: short
+  - id: nasopharyngeal-carcinoma-q4
+    q:
+      it: "Perché non si esegue biopsia di una massa nasofaringea vascolare in un adolescente maschio?"
+      en: "Why is a vascular nasopharyngeal mass in an adolescent boy not biopsied?"
+    a:
+      it: "Se è un angiofibroma, i difetti della parete vasale causano un sanguinamento vivace dopo trauma e la biopsia è controindicata."
+      en: "If it is an angiofibroma, vessel wall defects cause brisk bleeding after trauma and biopsy is contraindicated."
+    kind: short
+selfExplain:
+  - it: "Perché un paziente con carcinoma nasofaringeo può non avere alcun disturbo del rinofaringe pur avendo una metastasi laterocervicale?"
+    en: "Why can a patient with nasopharyngeal carcinoma have no nasopharyngeal complaint despite a cervical metastasis?"
+  - it: "Perché l'invasione della base cranica porta a deficit dei nervi cranici?"
+    en: "Why does invasion of the skull base lead to cranial nerve deficits?"
+chain:
+  - pathology:
+      it: "Carcinoma nasofaringeo non cheratinizzante associato a EBV"
+      en: "EBV-associated nonkeratinizing nasopharyngeal carcinoma"
+    sign:
+      it: "Linfonodo laterocervicale palpabile, talvolta senza disturbi nasofaringei"
+      en: "Palpable cervical lymph node, sometimes without nasopharyngeal complaints"
+    lab:
+      it: "Ibridazione in situ positiva per DNA di EBV; citocheratina positiva"
+      en: "In situ hybridization positive for EBV DNA; cytokeratin positive"
+examQuestions:
+  - it: "Mi parli del carcinoma nasofaringeo: come si classifica e quale virus si associa alla forma non cheratinizzante?"
+    en: "Tell me about nasopharyngeal carcinoma: how is it classified, and which virus goes with the nonkeratinizing form?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Come si dimostra la presenza del virus di Epstein-Barr nel tumore e che cosa ci dicono gli anticorpi nel paziente?"
+    en: "How is Epstein-Barr virus shown in the tumor, and what do the antibodies in the patient tell us?"
+    focus: [etiology, ancillary, diagnosis]
+    level: 2
+  - it: "Un paziente si presenta con un linfonodo laterocervicale palpabile e nessun disturbo nasale: perché può trattarsi di un carcinoma nasofaringeo?"
+    en: "A patient presents with a palpable cervical lymph node and no nasal complaints: why could this be nasopharyngeal carcinoma?"
+    focus: [clinical, traps]
+    level: 2
+  - it: "Che cosa vede al microscopio in un carcinoma nasofaringeo non cheratinizzante indifferenziato e quali colorazioni userebbe per distinguerlo da un linfoma?"
+    en: "What do you see under the microscope in an undifferentiated nonkeratinizing nasopharyngeal carcinoma, and which stains would you use to tell it from a lymphoma?"
+    focus: [micro, ancillary, differential]
+    level: 3
+  - it: "Come distingue un carcinoma nasofaringeo da un angiofibroma nasofaringeo, e perché in quest'ultimo la biopsia è controindicata?"
+    en: "How do you tell nasopharyngeal carcinoma from nasopharyngeal angiofibroma, and why is biopsy contraindicated in the latter?"
+    focus: [differential, traps]
+    level: 3
+images:
+  - id: nasopharyngeal-carcinoma-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "29"
+    pages: "1315-1317"
+lastUpdated: 2026-11-14
+status: published
