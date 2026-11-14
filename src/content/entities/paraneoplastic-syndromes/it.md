@@ -1,6 +1,6 @@
 ---
 lang: it
-translatedFrom: 6c6a72b985089dc7c75053512a37d7a843960f2780a3184e5a49a76a9026e602
+translatedFrom: a924ea4f507f5568bf5ed63d4d9dfaeaeff57f925e7accfa1f42599269f232af
 ---
 
 ## Definizione ed epidemiologia
@@ -8,11 +8,11 @@ translatedFrom: 6c6a72b985089dc7c75053512a37d7a843960f2780a3184e5a49a76a9026e602
 **Che cos'è una sindrome paraneoplastica?** Un tumore che danneggia l'organismo a distanza, non per invasione o metastasi, causa una sindrome paraneoplastica.<!--c:paraneoplastic-syndromes-c001--> I sintomi della sindrome possono dominare il decorso della malattia, anche se la morte per la sindrome stessa è rara.<!--c:paraneoplastic-syndromes-c002-->
 - Alcuni tumori possono produrre ormoni peptidici senza il normale controllo a feedback.<!--c:paraneoplastic-syndromes-c003-->
 - L'ACTH ectopico produce la sindrome di Cushing.<!--c:paraneoplastic-syndromes-c004-->
-- I carcinomi del polmone sono i principali produttori di ACTH, soprattutto il carcinoma a piccole cellule.<!--c:paraneoplastic-syndromes-c005-->
-- L'ADH tumorale causa ritenzione di sodio e acqua (SIADH), talvolta intossicazione da acqua.<!--c:paraneoplastic-syndromes-c006-->
+- Il carcinoma polmonare a piccole cellule è la fonte classica di ACTH ectopico.<!--c:paraneoplastic-syndromes-c005-->
+- L'ADH prodotto dal tumore (SIADH) trattiene acqua e sodio, talvolta fino all'intossicazione.<!--c:paraneoplastic-syndromes-c006-->
 - Il carcinoma polmonare a piccole cellule è la causa abituale.<!--c:paraneoplastic-syndromes-c007-->
-- La principale causa paraneoplastica di ipercalcemia è un tumore epiteliale che rilascia PTHrP, un peptide simile al paratormone.<!--c:paraneoplastic-syndromes-c008-->
-- L'acantosi nigricans ispessisce e scurisce la cute di ascelle, collo e altre pieghe.<!--c:paraneoplastic-syndromes-c010-->
+- L'ipercalcemia paraneoplastica dipende soprattutto dal PTHrP, un peptide che imita il paratormone, prodotto da tumori epiteliali.<!--c:paraneoplastic-syndromes-c008-->
+- L'acantosi nigricans scurisce e ispessisce le pieghe cutanee, soprattutto collo e ascelle.<!--c:paraneoplastic-syndromes-c010-->
 - Il carcinoma gastrointestinale è di gran lunga il tumore più frequente dietro l'acantosi nigricans, con lo stomaco coinvolto in oltre la metà dei casi.<!--c:paraneoplastic-syndromes-c011-->
 - Cachessia: il deperimento nel cancro supera ciò che la ridotta assunzione di cibo può spiegare.<!--c:paraneoplastic-syndromes-c013-->
 
@@ -56,9 +56,9 @@ Non trattato in questa scheda breve.
 | Entità | Caratteristiche distintive | Esame chiave |
 |---|---|---|
 | Ipercalcemia da metastasi ossee | La maggior parte delle ipercalcemie nel cancro deriva da tumore che ha invaso l'osso.<!--c:paraneoplastic-syndromes-c022--> | Ricerca di metastasi ossee |
-| Ipercalcemia da PTHrP | In una minoranza di casi non ci sono metastasi ossee.<!--c:paraneoplastic-syndromes-c023--> | Assenza di metastasi ossee |
+| Ipercalcemia da PTHrP | Una minoranza dei pazienti oncologici ipercalcemici non ha metastasi ossee.<!--c:paraneoplastic-syndromes-c023--> | Assenza di metastasi ossee |
 | Digiuno versus cachessia neoplastica | Nel cancro il metabolismo basale è spesso aumentato, mentre nel digiuno diminuisce.<!--c:paraneoplastic-syndromes-c024--> | Metabolismo basale |
-| Febbre da infezione versus febbre tumorale | La febbre tumorale segue il decorso del tumore: scompare con la terapia e ricompare con la recidiva.<!--c:paraneoplastic-syndromes-c025--> | Andamento dopo il trattamento del tumore |
+| Febbre da infezione versus febbre tumorale | La febbre tumorale segue l'attività del cancro: la recidiva la fa ricomparire, la terapia la fa scomparire.<!--c:paraneoplastic-syndromes-c025--> | Andamento dopo il trattamento del tumore |
 
 ## Punti chiave
 
@@ -74,7 +74,7 @@ Non trattato in questa scheda breve.
 
 **L'ipercalcemia nel cancro è sempre dovuta a metastasi ossee?** No. Alcuni casi si verificano senza metastasi ossee.<!--c:paraneoplastic-syndromes-c032-->
 
-**Il calo di peso nel cancro dipende solo dalla scarsa fame?** No. Anche con meno appetito, la perdita di tessuto è molto maggiore di quella che mangiare meno può spiegare.<!--c:paraneoplastic-syndromes-c033-->
+**Il calo di peso nel cancro dipende solo dalla scarsa fame?** No. Il deperimento nel cancro è sproporzionato rispetto a qualsiasi calo dell'assunzione di cibo.<!--c:paraneoplastic-syndromes-c033-->
 
 ## Mnemotecniche
 

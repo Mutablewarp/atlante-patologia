@@ -7,11 +7,11 @@ lang: en
 **What is a paraneoplastic syndrome?** A cancer that harms the body at a distance, not by invasion or metastasis, causes a paraneoplastic syndrome.<!--c:paraneoplastic-syndromes-c001--> Symptoms of the syndrome can dominate the course of the illness, although death from the syndrome itself is rare.<!--c:paraneoplastic-syndromes-c002-->
 - Hormone peptides can be made by some tumors without the usual feedback control.<!--c:paraneoplastic-syndromes-c003-->
 - Ectopic ACTH produces Cushing syndrome.<!--c:paraneoplastic-syndromes-c004-->
-- Lung cancers lead among ACTH-making tumors, small cell carcinoma above all.<!--c:paraneoplastic-syndromes-c005-->
-- Tumor ADH causes sodium and water retention (SIADH), sometimes water intoxication.<!--c:paraneoplastic-syndromes-c006-->
+- Small cell lung carcinoma is the classic source of ectopic ACTH.<!--c:paraneoplastic-syndromes-c005-->
+- Tumor-made ADH (SIADH) retains water and sodium, at times to intoxication.<!--c:paraneoplastic-syndromes-c006-->
 - Small cell lung carcinoma is the usual cause.<!--c:paraneoplastic-syndromes-c007-->
-- The leading paraneoplastic cause of hypercalcemia is an epithelial tumor releasing PTHrP, a parathormone-like peptide.<!--c:paraneoplastic-syndromes-c008-->
-- Acanthosis nigricans thickens and darkens the skin of the axilla, neck and other flexures.<!--c:paraneoplastic-syndromes-c010-->
+- Paraneoplastic hypercalcemia is mostly due to PTHrP, a PTH-mimicking peptide made by epithelial tumors.<!--c:paraneoplastic-syndromes-c008-->
+- Acanthosis nigricans darkens and thickens skin folds, notably neck and armpits.<!--c:paraneoplastic-syndromes-c010-->
 - Gastrointestinal carcinoma is by far the commonest cancer behind acanthosis nigricans, with the stomach involved in over half of cases.<!--c:paraneoplastic-syndromes-c011-->
 - Cachexia: wasting in cancer exceeds what reduced food intake explains.<!--c:paraneoplastic-syndromes-c013-->
 
@@ -55,9 +55,9 @@ Not covered in this short card.
 | Entity | Discriminating features | Key test |
 |---|---|---|
 | Hypercalcemia from bone metastases | Most hypercalcemia in cancer comes from tumor that has invaded bone.<!--c:paraneoplastic-syndromes-c022--> | Look for bone metastases |
-| Hypercalcemia from PTHrP | In a minority of cases there are no bone metastases.<!--c:paraneoplastic-syndromes-c023--> | Absence of bone metastases |
+| Hypercalcemia from PTHrP | A minority of hypercalcemic cancer patients have no bone metastases.<!--c:paraneoplastic-syndromes-c023--> | Absence of bone metastases |
 | Starvation versus cancer cachexia | Cancer often comes with a raised metabolic rate, while in starvation it falls.<!--c:paraneoplastic-syndromes-c024--> | Metabolic rate |
-| Fever from infection versus tumor fever | Tumor fever follows the tumor's course: it clears with treatment and comes back with relapse.<!--c:paraneoplastic-syndromes-c025--> | Course after tumor treatment |
+| Fever from infection versus tumor fever | Tumor fever tracks the cancer's activity, so relapse revives it and treatment ends it.<!--c:paraneoplastic-syndromes-c025--> | Course after tumor treatment |
 
 ## High-yield summary
 
@@ -73,7 +73,7 @@ Not covered in this short card.
 
 **Is hypercalcemia in cancer always due to bone metastases?** No. Some cases occur without bone metastases.<!--c:paraneoplastic-syndromes-c032-->
 
-**Is cancer weight loss just poor appetite?** No. Even with a smaller appetite, patients lose far more tissue than eating less could explain.<!--c:paraneoplastic-syndromes-c033-->
+**Is cancer weight loss just poor appetite?** No. Wasting in cancer is out of proportion to any fall in food intake.<!--c:paraneoplastic-syndromes-c033-->
 
 ## Mnemonics
 
