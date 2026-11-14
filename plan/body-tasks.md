@@ -162,9 +162,16 @@ Acceptance: `npx vitest run tests/sw-manifest.test.ts`. The lead runs `npm run b
 ### B-4e: viewer tests (coder)
 Depends: B-4c2
 Files: tests/e2e/body-viewer.spec.ts
-Goal: the e2e rows of spec §9.
-Do: a helper starts the viewer and returns whether `data-webgl` is `on`; canvas-only checks skip otherwise. Tests: chip → `data-system`; organ link → `data-organ` and the label text; `]` moves to the next organ; `Escape` clears; Back restores; with `getContext` stubbed to return null (init script) the poster, the tree and the message stay and nothing throws; with reduced motion no camera animation runs (the status line reports the organ at once); layout shift stays 0 when the canvas replaces the poster; axe has no violation with the viewer on.
-Acceptance: the lead runs `npm run test:e2e:linux`.
+Goal: the e2e rows of spec §9 for the viewer. Leave `tests/e2e/body.spec.ts` as it is.
+Do: read `tests/e2e/body.spec.ts` (axe, the project and language loops), `tests/e2e/cls.spec.ts` (how layout shift is measured) and `src/scripts/body-viewer.ts` (what the element does) first. A helper `startViewer(page)` opens `/<lang>/body/`, starts the viewer (from 48rem it starts by itself when idle; below it click `[data-load]` through `dispatchEvent('click')`, because the fixed bottom bar can cover the button) and returns whether `ap-body[data-webgl="on"]` is reached within 30 s; every test that needs the canvas skips when it is not (`test.skip(!on, ...)`: Firefox and WebKit runners may have no WebGL). Tests, Italian and English:
+- a chip click sets `data-system` and shows only that system's section; an organ link sets `data-organ` and the label (`[data-label]`) shows the organ's name; `]` moves to the next organ and the page does not scroll below 48rem; `Escape` clears the organ and keeps the system; Back restores the previous selection (hash and `data-organ`).
+- the load rule: below 48rem it does not start by itself (`data-webgl` is not `on` after 3 s) and a tap on `[data-load]` starts it; `[data-off]` turns it off, shows the poster again and a reload does not start it; `data-load` starts it again.
+- no WebGL: an init script makes `HTMLCanvasElement.prototype.getContext` return null; the posters, the tree and the status message stay, `data-webgl` is `off`, no page error.
+- context lost (canvas tests): call `getContext('webgl2').getExtension('WEBGL_lose_context').loseContext()` on `[data-canvas]` after start; `data-webgl` becomes `off`, the poster is back and the status line is not empty.
+- reduced motion (`page.emulateMedia({ reducedMotion: 'reduce' })`): after a chip click the status line reports the system at once and nothing throws.
+- layout shift is 0 from load until `data-webgl` is `on` (measure as `cls.spec.ts` does).
+- axe has no violation with the viewer on and one organ selected, and with it off.
+Acceptance: `npx tsc --noEmit -p .` style check is the lead's (`npx astro check`); the lead runs `E2E_ENGINES=chromium npx playwright test tests/e2e/body-viewer.spec.ts --workers=2` on the host (Docker is down) and CI runs all engines.
 
 ### B-4f: review (lead)
 Three fresh read-only lean agents read `src/scripts/body-3d.ts`, `body-viewer.ts`, `src/lib/body-view.ts` and spec §5–§7, one lens each: three.js lifecycle and memory (dispose, context loss, listeners); accessibility (names, focus, keys, status messages, reduced motion); performance (frames on demand, pixel ratio, loading order, chunk contents). Each returns at most 10 findings as `file:line, problem, fix`. The lead fixes the confirmed ones.
