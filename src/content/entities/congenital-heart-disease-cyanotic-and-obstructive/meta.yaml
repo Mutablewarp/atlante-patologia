@@ -1,0 +1,128 @@
+id: congenital-heart-disease-cyanotic-and-obstructive
+module: o17
+tier: core
+kind: disease
+names:
+  it: "Cardiopatie congenite cianogene e ostruttive"
+  en: "Cyanotic and obstructive congenital heart disease"
+  eponyms: []
+  synonyms:
+    it: ["Cardiopatie congenite con shunt destro-sinistro", "Cardiopatie congenite ostruttive"]
+    en: ["Right-to-left shunt congenital heart disease", "Obstructive congenital heart disease"]
+  abbreviations: ["TOF", "TGA", "HLHS"]
+summary:
+  it: "Gruppo di malformazioni cardiache congenite con shunt destro-sinistro (tetralogia di Fallot, trasposizione delle grandi arterie, truncus arteriosus, atresia della tricuspide, ipoplasia del cuore sinistro, ritorno venoso polmonare anomalo) o con ostruzione del flusso (coartazione aortica, stenosi polmonare e aortica)."
+  en: "A group of congenital cardiac malformations with right-to-left shunting (tetralogy of Fallot, transposition of the great arteries, truncus arteriosus, tricuspid atresia, hypoplastic left heart, anomalous pulmonary venous return) or with flow obstruction (coarctation of the aorta, pulmonary and aortic stenosis)."
+lenses:
+  system: [heart, vessels]
+  process: []
+  pattern: []
+  presentation: [dyspnea]
+  marker: [molecular]
+  group: [developmental, genetic]
+learningObjectives:
+  - it: "Elencare le quattro componenti della tetralogia di Fallot e spiegare come producono cianosi."
+    en: "List the four components of tetralogy of Fallot and explain how they produce cyanosis."
+  - it: "Spiegare perché nella trasposizione delle grandi arterie la sopravvivenza dipende da una comunicazione tra i circoli."
+    en: "Explain why survival in transposition of the great arteries depends on a communication between the circuits."
+  - it: "Descrivere la fisiopatologia e i segni clinici della coartazione aortica, compresa la differenza pressoria tra arti superiori e inferiori."
+    en: "Describe the pathophysiology and clinical signs of coarctation of the aorta, including the blood pressure difference between upper and lower limbs."
+  - it: "Distinguere stenosi polmonare e stenosi aortica congenite valvolari, sottovalvolari e sopravalvolari e le sindromi associate."
+    en: "Distinguish valvular, subvalvular and supravalvular congenital pulmonary and aortic stenosis and the associated syndromes."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: congenital-heart-disease-left-to-right-shunts
+    note:
+      it: "La finestra aortopolmonare somiglia funzionalmente a un dotto arterioso pervio."
+      en: "Aortopulmonary window resembles a patent ductus arteriosus functionally."
+  - type: sharesMechanism
+    target: calcific-aortic-stenosis
+    note:
+      it: "La valvola aortica bicuspide congenita si ispessisce e calcifica nel tempo."
+      en: "A congenital bicuspid aortic valve thickens and calcifies over time."
+  - type: causes
+    target: aortic-dissection
+    note:
+      it: "Nella coartazione la degenerazione della media può portare alla dissezione."
+      en: "In coarctation, medial degeneration can lead to dissection."
+quickCheck:
+  - id: congenital-heart-disease-cyanotic-and-obstructive-q1
+    q:
+      it: "Quali sono le quattro componenti della tetralogia di Fallot e perché il paziente è cianotico?"
+      en: "What are the four components of tetralogy of Fallot, and why is the patient cyanotic?"
+    a:
+      it: "Stenosi polmonare, difetto interventricolare, aorta a cavaliere e ipertrofia ventricolare destra; la stenosi spinge sangue venoso dal ventricolo destro attraverso il difetto nell'aorta."
+      en: "Pulmonary stenosis, VSD, overriding aorta and right ventricular hypertrophy; the stenosis pushes venous blood from the right ventricle through the VSD into the aorta."
+    kind: short
+  - id: congenital-heart-disease-cyanotic-and-obstructive-q2
+    q:
+      it: "Perché un neonato con trasposizione delle grandi arterie ha bisogno di un'altra comunicazione per sopravvivere?"
+      en: "Why does a newborn with transposition of the great arteries need another communication to survive?"
+    a:
+      it: "Perché i circoli sistemico e polmonare sono in parallelo: serve un ASD, un VSD o un dotto pervio perché il sangue ossigenato raggiunga l'aorta."
+      en: "Because the systemic and pulmonary circuits are parallel: an ASD, VSD or PDA is needed for oxygenated blood to reach the aorta."
+    kind: short
+  - id: congenital-heart-disease-cyanotic-and-obstructive-q3
+    q:
+      it: "Quale segno clinico e quale reperto radiologico indicano una coartazione aortica?"
+      en: "Which clinical sign and which radiographic finding suggest coarctation of the aorta?"
+    a:
+      it: "La differenza di pressione arteriosa tra arti superiori e inferiori e l'erosione (incisure) del margine inferiore delle coste."
+      en: "A blood pressure difference between upper and lower limbs, and notching of the inner rib surfaces."
+    kind: short
+  - id: congenital-heart-disease-cyanotic-and-obstructive-q4
+    q:
+      it: "Perché nella tetralogia di Fallot il dotto arterioso pervio è utile?"
+      en: "Why is a PDA helpful in tetralogy of Fallot?"
+    a:
+      it: "Perché senza di esso il circolo polmonare riceverebbe troppo poco sangue."
+      en: "Because without it the pulmonary vascular bed would receive too little blood."
+    kind: short
+selfExplain:
+  - it: "Perché nella tetralogia di Fallot il dotto arterioso pervio è protettivo?"
+    en: "Why is a patent ductus arteriosus protective in tetralogy of Fallot?"
+  - it: "Perché un neonato con ipoplasia del cuore sinistro può sembrare sano alla nascita?"
+    en: "Why can a newborn with hypoplastic left heart look well at birth?"
+chain:
+  - pathology:
+      it: "Coartazione aortica giustaduttale"
+      en: "Juxtaductal coarctation of the aorta"
+    sign:
+      it: "Ipertensione degli arti superiori e gambe fredde e pallide"
+      en: "Upper-limb hypertension with cold, pale legs"
+    lab:
+      it: "Incisure costali alla radiografia del torace"
+      en: "Rib notching on chest radiography"
+examQuestions:
+  - it: "Mi parli della tetralogia di Fallot: quali sono le componenti e perché il bambino è cianotico?"
+    en: "Tell me about tetralogy of Fallot: what are its components, and why is the child cyanotic?"
+    focus: [gross, pathogenesis, clinical]
+    level: 1
+  - it: "Perché nella trasposizione delle grandi arterie il neonato sopravvive solo se esiste una comunicazione tra i due circoli?"
+    en: "Why does a newborn with transposition of the great arteries survive only if a communication joins the two circuits?"
+    focus: [pathogenesis, high-yield]
+    level: 2
+  - it: "Mi parli della coartazione aortica: come si presenta e che cosa vede alla radiografia?"
+    en: "Tell me about coarctation of the aorta: how does it present, and what do you see on the chest film?"
+    focus: [clinical, diagnosis]
+    level: 1
+  - it: "Perché un neonato con ipoplasia del cuore sinistro può apparire sano alla nascita e che ruolo ha il dotto arterioso?"
+    en: "Why can a newborn with hypoplastic left heart look well at birth, and what is the role of the ductus arteriosus?"
+    focus: [pathogenesis, clinical]
+    level: 2
+  - it: "Come distingue la stenosi aortica da valvola bicuspide congenita da quella calcifica dell'adulto, e quali sindromi si associano alle stenosi polmonare e aortica?"
+    en: "How do you place congenital bicuspid aortic stenosis next to calcific aortic stenosis, and which syndromes go with pulmonary and aortic stenosis?"
+    focus: [etiology, clinical, differential]
+    level: 3
+images:
+  - id: congenital-heart-disease-cyanotic-and-obstructive-gross-1
+    role: gross
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "17"
+    pages: "647-651"
+lastUpdated: 2026-11-14
+status: published
