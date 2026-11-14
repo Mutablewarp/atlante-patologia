@@ -1,0 +1,142 @@
+id: precancerous-lesions
+module: g05
+tier: core
+kind: concept
+editionDependent: false
+status: published
+lastUpdated: 2026-11-13
+reviewStatus: ai-generated-unreviewed
+names:
+  it: "Condizioni e lesioni precancerose"
+  en: "Precancerous conditions and lesions"
+  eponyms: []
+  synonyms:
+    it: ["Lesioni preneoplastiche"]
+    en: ["Preneoplastic lesions"]
+  abbreviations: []
+summary:
+  it: "Condizioni di rischio e lesioni precursori, in particolare la displasia e la neoplasia intraepiteliale, in cui un epitelio cronicamente danneggiato può progredire verso il cancro e che si sorvegliano o si rimuovono."
+  en: "Risk conditions and precursor lesions, above all dysplasia and intraepithelial neoplasia, in which a chronically injured epithelium can progress toward cancer and which are monitored or removed."
+lenses:
+  system: [general, gastrointestinal, female-genital]
+  process: [neoplasia, cellular-adaptation, chronic-inflammation]
+  pattern: [dysplasia, metaplasia]
+  presentation: [incidental-finding]
+  marker: []
+  group: [neoplastic, adaptive]
+learningObjectives:
+  - it: "Distinguere una condizione di rischio (per esempio la metaplasia) da una lesione precursore (la displasia)."
+    en: "Distinguish a risk condition (for example metaplasia) from a precursor lesion (dysplasia)."
+  - it: "Descrivere i quadri microscopici della displasia e la gradazione bassa/alta."
+    en: "Describe the microscopic features of dysplasia and low-grade versus high-grade grading."
+  - it: "Collocare il carcinoma in situ rispetto alla membrana basale."
+    en: "Place carcinoma in situ relative to the basement membrane."
+  - it: "Spiegare la logica della sorveglianza usando l'esofago di Barrett e gli adenomi del colon."
+    en: "Explain the logic of surveillance using Barrett esophagus and colon adenomas."
+prerequisites: [metaplasia, dysplasia]
+relations:
+  - type: differentialOf
+    target: metaplasia
+    note:
+      it: "Sostituzione di un tipo cellulare maturo con un altro, contro crescita e maturazione disordinate."
+      en: "Replacement of one mature cell type by another, versus disordered growth and maturation."
+  - type: prerequisiteOf
+    target: carcinoma-in-situ
+    note:
+      it: "Il carcinoma in situ segue la displasia grave, senza superare la membrana basale."
+      en: "Carcinoma in situ follows severe dysplasia and does not cross the basement membrane."
+  - type: sameLesionOtherOrgan
+    target: barrett-esophagus
+    note:
+      it: "Modello di metaplasia con possibile displasia e sorveglianza endoscopica."
+      en: "A model of metaplasia with possible dysplasia and endoscopic surveillance."
+  - type: sameLesionOtherOrgan
+    target: cervical-squamous-intraepithelial-lesion
+    note:
+      it: "Displasia cervicale da HPV, vicina al carcinoma in situ nelle forme gravi."
+      en: "HPV-related cervical dysplasia, close to carcinoma in situ when severe."
+quickCheck:
+  - id: precancerous-lesions-q1
+    q:
+      it: "Qual è la differenza tra una condizione di rischio e una lesione precursore?"
+      en: "What is the difference between a risk condition and a precursor lesion?"
+    a:
+      it: "Nella condizione di rischio (per esempio la metaplasia) il cancro insorge più spesso; la lesione precursore è la displasia, tappa morfologica verso il cancro."
+      en: "In a risk condition (for example metaplasia) cancer arises more often; the precursor lesion is dysplasia, a morphologic step toward cancer."
+    kind: short
+  - id: precancerous-lesions-q2
+    q:
+      it: "Che cosa distingue il carcinoma in situ da un carcinoma invasivo?"
+      en: "What separates carcinoma in situ from invasive carcinoma?"
+    a:
+      it: "Le cellule neoplastiche non superano la membrana basale; per questo il carcinoma in situ è sempre guaribile."
+      en: "The neoplastic cells do not cross the basement membrane, which is why carcinoma in situ is invariably curable."
+    kind: short
+  - id: precancerous-lesions-q3
+    q:
+      it: "Perché i pazienti con esofago di Barrett fanno endoscopie di sorveglianza?"
+      en: "Why do patients with Barrett esophagus have surveillance endoscopies?"
+    a:
+      it: "Per scoprire precocemente la displasia, perché il rischio di adenocarcinoma cresce con l'estensione del segmento e con il grado di displasia."
+      en: "To find dysplasia early, because the adenocarcinoma risk grows with segment length and dysplasia grade."
+    kind: short
+  - id: precancerous-lesions-q4
+    q:
+      it: "Che cosa si osserva al microscopio in un epitelio displastico?"
+      en: "What do you see under the microscope in a dysplastic epithelium?"
+    a:
+      it: "Cellule disomogenee per dimensioni e forma, nuclei ingranditi, scuri e irregolari, maturazione disordinata e mitosi lontane dallo strato basale."
+      en: "Cells uneven in size and shape, enlarged dark irregular nuclei, disordered maturation and mitoses far from the basal layer."
+    kind: short
+  - id: precancerous-lesions-q5
+    q:
+      it: "Quando un polipo asportato è guarito con la sola polipectomia completa?"
+      en: "When does complete polypectomy alone cure a removed polyp?"
+    a:
+      it: "Quando la displasia non si estende oltre la mucosa."
+      en: "When the dysplasia does not extend beyond the mucosa."
+    kind: short
+selfExplain:
+  - it: "Perché la displasia può regredire mentre il cancro no?"
+    en: "Why can dysplasia regress when cancer cannot?"
+  - it: "Perché la sorveglianza endoscopica cerca la displasia e non il cancro già invasivo?"
+    en: "Why does endoscopic surveillance look for dysplasia rather than established invasive cancer?"
+  - it: "Perché la polipectomia completa guarisce una lesione la cui displasia non supera la mucosa?"
+    en: "Why does complete polypectomy cure a lesion whose dysplasia stays within the mucosa?"
+examQuestions:
+  - it: "Mi parli della differenza tra condizione di rischio e lesione precursore."
+    en: "Tell me about the difference between a risk condition and a precursor lesion."
+    focus: [definition, differential, traps]
+    level: 1
+  - it: "Che cosa vede al microscopio in un epitelio displastico e come si distingue la displasia di basso da quella di alto grado?"
+    en: "What do you see under the microscope in a dysplastic epithelium, and how do low-grade and high-grade dysplasia differ?"
+    focus: [micro, ancillary]
+    level: 1
+  - it: "Perché la displasia può tornare alla normalità e perché il carcinoma in situ è sempre guaribile?"
+    en: "Why can dysplasia return to normal, and why is carcinoma in situ invariably curable?"
+    focus: [definition, prognosis]
+    level: 2
+  - it: "Perché i pazienti con esofago di Barrett vengono sottoposti a sorveglianza endoscopica e che cosa cambia se compare la displasia?"
+    en: "Why are patients with Barrett esophagus kept under endoscopic surveillance, and what changes if dysplasia appears?"
+    focus: [diagnosis, prognosis]
+    level: 2
+  - it: "Come distingue la metaplasia dalla displasia e dal carcinoma in situ?"
+    en: "How do you tell metaplasia from dysplasia and from carcinoma in situ?"
+    focus: [differential, traps]
+    level: 3
+images:
+  - { id: precancerous-lesions-gross-1, role: gross, pairWith: precancerous-lesions-micro-1 }
+  - { id: precancerous-lesions-micro-1, role: micro }
+sources:
+  - source: rubin-8e
+    chapter: "1"
+    pages: "25, 27-29"
+  - source: rubin-8e
+    chapter: "5"
+    pages: "173"
+  - source: rubin-8e
+    chapter: "19"
+    pages: "771, 823-825"
+  - source: rubin-8e
+    chapter: "21"
+    pages: "908"

@@ -1,0 +1,118 @@
+id: tumor-grading-and-staging
+module: g05
+tier: core
+kind: concept
+status: published
+lastUpdated: 2026-11-13
+reviewStatus: ai-generated-unreviewed
+editionDependent: true
+editionNote:
+  it: "I sistemi di stadiazione cambiano tra le edizioni (la scheda segue l'edizione AJCC 2017 per la mammella): prima di usare qualunque soglia, verificare l'edizione TNM in vigore."
+  en: "Staging systems change between editions (the card follows the 2017 AJCC edition for breast): check the current TNM edition before using any cut-off."
+names:
+  it: "Grading e stadiazione dei tumori"
+  en: "Tumor grading and staging"
+  eponyms: []
+  synonyms:
+    it: ["Grado e stadio", "Stadiazione TNM"]
+    en: ["Grade and stage", "TNM staging"]
+  abbreviations: ["TNM"]
+summary:
+  it: "Il grado descrive quanto cellule e architettura del tumore somigliano al tessuto d'origine; lo stadio descrive quanto il tumore si è diffuso nel paziente, di solito con il sistema TNM."
+  en: "Grade describes how closely tumor cells and architecture resemble the tissue of origin; stage describes how far the tumor has spread in the patient, usually with the TNM system."
+lenses:
+  system: [general]
+  process: [neoplasia]
+  pattern: [dysplasia]
+  presentation: [lymphadenopathy]
+  marker: [ihc]
+  group: [neoplastic]
+learningObjectives:
+  - it: "Distinguere il grado (aspetto microscopico) dallo stadio (estensione della malattia)."
+    en: "Distinguish grade (microscopic appearance) from stage (extent of disease)."
+  - it: "Spiegare la logica del sistema TNM e come le categorie T, N e M si combinano negli stadi I-IV."
+    en: "Explain the logic of the TNM system and how T, N and M categories combine into stages I to IV."
+  - it: "Citare i principali sistemi di grading di mammella, vescica e prostata."
+    en: "Name the main grading systems for breast, bladder and prostate."
+  - it: "Spiegare perché lo stadio predice di norma l'evoluzione meglio del grado."
+    en: "Explain why stage usually predicts outcome better than grade."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: carcinoma-in-situ
+    note:
+      it: "Il carcinoma in situ può essere di alto grado ma è stadio Tis perché non invade."
+      en: "Carcinoma in situ can be high grade yet is stage Tis because it does not invade."
+quickCheck:
+  - id: tumor-grading-and-staging-q1
+    q:
+      it: "Qual è la differenza tra grado e stadio di un tumore?"
+      en: "What is the difference between the grade and the stage of a tumor?"
+    a:
+      it: "Il grado indica quanto cellule e architettura somigliano al tessuto d'origine; lo stadio indica quanto il tumore si è diffuso nel paziente."
+      en: "Grade tells how closely cells and architecture resemble the tissue of origin; stage tells how far the tumor has spread in the patient."
+    kind: short
+  - id: tumor-grading-and-staging-q2
+    q:
+      it: "Che cosa indicano T, N e M nel sistema TNM?"
+      en: "What do T, N and M stand for in the TNM system?"
+    a:
+      it: "T: dimensione ed estensione locale del tumore primario; N: metastasi nei linfonodi regionali; M: metastasi a distanza."
+      en: "T: size and local extent of the primary tumor; N: regional lymph node metastases; M: distant metastases."
+    kind: short
+  - id: tumor-grading-and-staging-q3
+    q:
+      it: "Perché un tumore di basso grado può comunque avere una prognosi sfavorevole?"
+      en: "Why can a low-grade tumor still have a poor prognosis?"
+    a:
+      it: "Perché grado citologico e comportamento biologico non sempre coincidono; lo stadio riflette meglio il comportamento reale nel paziente."
+      en: "Because cytologic grade and biologic behavior do not always correlate; stage reflects the real behavior in that patient better."
+    kind: short
+  - id: tumor-grading-and-staging-q4
+    q:
+      it: "Che cos'è il linfonodo sentinella e a che cosa serve nel carcinoma mammario?"
+      en: "What is the sentinel node, and what is it used for in breast cancer?"
+    a:
+      it: "È il linfonodo più probabilmente sede di metastasi, individuato con un colorante e un isotopo radioattivo; se è negativo si può evitare lo svuotamento ascellare."
+      en: "It is the node most likely to hold metastasis, found with a dye and a radioactive isotope; if it is negative, axillary dissection can be avoided."
+    kind: short
+selfExplain:
+  - it: "Perché un tumore poco differenziato è chiamato di alto grado?"
+    en: "Why is a poorly differentiated tumor called high grade?"
+  - it: "Perché un carcinoma in situ di alto grado è comunque stadio Tis?"
+    en: "Why is a high-grade carcinoma in situ still stage Tis?"
+  - it: "Perché la biopsia del linfonodo sentinella può far evitare lo svuotamento ascellare?"
+    en: "Why can a sentinel node biopsy spare the patient an axillary dissection?"
+examQuestions:
+  - it: "Mi parli della differenza tra grado e stadio di un tumore."
+    en: "Tell me about the difference between the grade and the stage of a tumor."
+    focus: [definition, pathogenesis]
+    level: 1
+  - it: "Come è costruito il sistema TNM e che cosa indica uno stadio da I a IV?"
+    en: "How is the TNM system built, and what does a stage from I to IV tell you?"
+    focus: [diagnosis]
+    level: 1
+  - it: "Quali sistemi di grading conosce per mammella, vescica e prostata?"
+    en: "Which grading systems do you know for breast, bladder and prostate?"
+    focus: [micro]
+    level: 1
+  - it: "Perché lo stadio predice di norma l'evoluzione meglio del grado?"
+    en: "Why does stage usually predict outcome better than grade?"
+    focus: [prognosis, traps]
+    level: 2
+  - it: "Come distingue un carcinoma in situ di alto grado da un tumore invasivo in termini di stadio?"
+    en: "How do you tell a high-grade carcinoma in situ from an invasive tumor in terms of stage?"
+    focus: [differential, diagnosis]
+    level: 3
+  - it: "Perché bisogna controllare l'edizione TNM in uso prima di stadiare un tumore della mammella?"
+    en: "Why must you check which TNM edition is in use before staging a breast tumor?"
+    focus: [diagnosis]
+    level: 3
+images:
+  - { id: tumor-grading-and-staging-micro-1, role: micro }
+  - { id: tumor-grading-and-staging-micro-2, role: micro }
+sources:
+  - { source: rubin-8e, chapter: "5", pages: "175" }
+  - { source: rubin-8e, chapter: "23", pages: "987, 989, 1013" }
+  - { source: rubin-8e, chapter: "25", pages: "1095, 1097" }
+  - { source: rubin-8e, pages: "752, 828, 988, 990, 1012" }

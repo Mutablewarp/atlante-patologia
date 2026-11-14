@@ -1,0 +1,129 @@
+id: invasion-and-metastasis
+module: g05
+tier: core
+kind: process
+names:
+  it: "Invasione e metastasi"
+  en: "Invasion and metastasis"
+  eponyms: []
+  synonyms:
+    it: ["Diffusione tumorale", "Cascata metastatica"]
+    en: ["Tumor spread", "Metastatic cascade"]
+  abbreviations: ["EMT", "CTC"]
+summary:
+  it: "Crescita di un tumore maligno nei tessuti circostanti e diffusione delle sue cellule a sedi non contigue, per via linfatica, ematica o attraverso le cavità corporee: la causa della maggior parte dei decessi per cancro."
+  en: "Growth of a malignant tumor into the surrounding tissue and spread of its cells to non-contiguous sites by lymphatic, blood or body-cavity routes: the cause of most cancer deaths."
+lenses:
+  system: [general, systemic]
+  process: [neoplasia]
+  pattern: []
+  presentation: [lymphadenopathy, mass-lesion]
+  marker: [ihc]
+  group: [neoplastic]
+learningObjectives:
+  - it: "Definire invasione e metastasi e distinguere il carcinoma in situ dal carcinoma invasivo."
+    en: "Define invasion and metastasis and distinguish carcinoma in situ from invasive carcinoma."
+  - it: "Descrivere le tappe della cascata metastatica, dalla transizione epitelio-mesenchimale alla dormienza."
+    en: "Describe the steps of the metastatic cascade, from epithelial-mesenchymal transition to dormancy."
+  - it: "Confrontare le vie di diffusione linfatica, ematica e per disseminazione nelle cavità corporee."
+    en: "Compare lymphatic, hematogenous and body-cavity spread."
+  - it: "Spiegare il tropismo d'organo con l'ipotesi del seme e del terreno."
+    en: "Explain organ tropism with the seed and soil hypothesis."
+  - it: "Leggere una stadiazione TNM e spiegare perché lo stadio prevede il decorso meglio del grado."
+    en: "Read a TNM stage and explain why stage predicts the course better than grade."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: carcinoma-in-situ
+    note:
+      it: "Il carcinoma in situ non ha superato la membrana basale; l'invasione comincia quando la attraversa."
+      en: "Carcinoma in situ has not crossed the basement membrane; invasion begins when it does."
+quickCheck:
+  - id: invasion-and-metastasis-q1
+    q:
+      it: "Che cosa distingue un carcinoma in situ da un carcinoma invasivo?"
+      en: "What separates a carcinoma in situ from an invasive carcinoma?"
+    a:
+      it: "Il carcinoma in situ non ha attraversato la membrana basale epiteliale, quello invasivo sì."
+      en: "A carcinoma in situ has not crossed the epithelial basement membrane; an invasive one has."
+    kind: short
+  - id: invasion-and-metastasis-q2
+    q:
+      it: "Perché i tumori addominali drenati dal sistema portale metastatizzano spesso al fegato?"
+      en: "Why do abdominal tumors drained by the portal system often metastasize to the liver?"
+    a:
+      it: "Perché il flusso venoso dall'organo d'origine porta le cellule tumorali al letto vascolare epatico."
+      en: "Because venous flow from the organ of origin carries tumor cells to the hepatic vascular bed."
+    kind: short
+  - id: invasion-and-metastasis-q3
+    q:
+      it: "Perché la perdita di E-caderina favorisce l'invasione?"
+      en: "Why does loss of E-cadherin favor invasion?"
+    a:
+      it: "L'E-caderina lega tra loro le cellule epiteliali e ne frena la motilità; senza di essa le cellule si staccano e si muovono."
+      en: "E-cadherin binds epithelial cells together and restrains motility; without it the cells detach and move."
+    kind: short
+  - id: invasion-and-metastasis-q4
+    q:
+      it: "Perché la stadiazione prevede il decorso meglio del grado?"
+      en: "Why does staging predict the course better than grading?"
+    a:
+      it: "Perché la stadiazione riflette il comportamento reale del tumore nel paziente; anche tumori di basso grado possono essere molto aggressivi."
+      en: "Because staging reflects the tumor's actual behavior in the patient; even low-grade tumors can be very aggressive."
+    kind: short
+  - id: invasion-and-metastasis-q5
+    q:
+      it: "La dormienza di una micrometastasi è uno stato di quiete assoluta?"
+      en: "Is dormancy of a micrometastasis a state of complete rest?"
+    a:
+      it: "No. Le cellule continuano a proliferare e a morire a ritmi bassi che si bilanciano."
+      en: "No. The cells keep proliferating and dying at low rates that offset each other."
+    kind: short
+selfExplain:
+  - it: "Perché la dormienza di una micrometastasi non è uno stato di quiete assoluta?"
+    en: "Why is dormancy of a micrometastasis not a state of complete rest?"
+chain:
+  - pathology:
+      it: "Tumore della mammella con invasione dei linfatici"
+      en: "Breast cancer invading lymphatics"
+    sign:
+      it: "Linfonodi ascellari ingrossati"
+      en: "Enlarged axillary nodes"
+    lab:
+      it: "Stadiazione N dello schema TNM"
+      en: "N category of the TNM system"
+examQuestions:
+  - it: "Mi parli di invasione e metastasi: che cosa sono e quali vie di diffusione conosce?"
+    en: "Tell me about invasion and metastasis: what are they and which routes of spread do you know?"
+    focus: [definition, clinical, differential]
+    level: 1
+  - it: "Mi descriva le tappe della cascata metastatica, dalla transizione epitelio-mesenchimale alla dormienza."
+    en: "Describe the steps of the metastatic cascade, from epithelial-mesenchymal transition to dormancy."
+    focus: [pathogenesis]
+    level: 2
+  - it: "Perché le metastasi non si localizzano a caso? Che cosa intende per tropismo d'organo?"
+    en: "Why are metastases not located at random? What do you mean by organ tropism?"
+    focus: [pathogenesis, clinical]
+    level: 2
+  - it: "Come distingue un carcinoma in situ da un carcinoma invasivo, e perché alcuni tumori non hanno uno stadio in situ?"
+    en: "How do you tell a carcinoma in situ from an invasive carcinoma, and why do some tumors have no in situ stage?"
+    focus: [definition, micro, differential]
+    level: 3
+  - it: "Dove si aspetta le prime metastasi di un tumore della mammella e di un tumore drenato dal sistema portale, e perché?"
+    en: "Where would you expect the first metastases of a breast cancer and of a tumor drained by the portal system, and why?"
+    focus: [clinical]
+    level: 3
+images:
+  - id: invasion-and-metastasis-gross-1
+    role: gross
+    pairWith: invasion-and-metastasis-micro-1
+  - id: invasion-and-metastasis-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "5"
+    pages: "173-175, 195-202"
+lastUpdated: 2026-11-13
+status: published

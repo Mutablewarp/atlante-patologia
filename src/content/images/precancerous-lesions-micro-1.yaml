@@ -1,0 +1,55 @@
+id: precancerous-lesions-micro-1
+file: precancerous-lesions-micro-1.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Tubular_adenoma_-_colon,_low_mag.jpg
+author: CoRus13
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0/
+retrievedAt: 2026-11-13
+modifications:
+  it: >-
+    Riduzione della larghezza da 4272 px a 1280 px (rendition di Wikimedia) e ricodifica in JPEG. Nessun ritaglio,
+    nessuna modifica dei colori, nessuna etichetta aggiunta all'immagine.
+  en: >-
+    Downscaled from 4272 px to 1280 px wide (Wikimedia rendition) and re-encoded as JPEG. No crop, no color change, no
+    labels added to the image.
+attributionText: "CoRus13, own work, via Wikimedia Commons, CC BY-SA 4.0"
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-13 }
+group: colon-tubular-adenoma
+stain: H&E
+magnification: low power
+section: paraffin
+lookFor:
+  it: >-
+    Confronta in una sola immagine le ghiandole più grandi e scure in alto con le cripte piccole e regolari sotto.
+  en: >-
+    Compare, in a single image, the larger darker glands at the top with the small regular crypts below.
+caption:
+  it: >-
+    Adenoma tubulare del colon con displasia di basso grado, EE a basso ingrandimento. Guarda prima la parte alta: le
+    ghiandole sono più grandi, affollate e più scure, con epitelio stratificato. Poi scendi verso le cripte rotonde,
+    piccole e regolari della mucosa normale. Il passaggio brusco tra le due zone è la lesione precursore del cancro del
+    colon. Passa a un ingrandimento maggiore per vedere i nuclei allungati.
+  en: >-
+    Tubular adenoma of the colon with low-grade dysplasia, H&E at low power. Look first at the top: the glands are
+    larger, crowded and darker, lined by a layered epithelium. Then move down to the small, round, regular crypts of
+    the normal mucosa. The abrupt change between the two zones is the precursor lesion of colon cancer. Go to a higher
+    power to see the elongated nuclei.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina di un frammento di mucosa del colon: in alto ghiandole ingrandite e più scure,
+    in basso molte cripte tonde piccole e regolari in sezione trasversale.
+  en: >-
+    H&E micrograph of a fragment of colon mucosa: at the top enlarged, darker glands; below, many small round regular
+    crypts cut in cross-section.
+annotations:
+  - id: adenoma-glands
+    label: { it: Ghiandole adenomatose displastiche, en: Dysplastic adenomatous glands }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.24, 0.20, 0.40, 0.13, 0.55, 0.13, 0.68, 0.20, 0.68, 0.36, 0.50, 0.38, 0.30, 0.38] }
+  - id: normal-crypts
+    label: { it: Cripte normali, en: Normal crypts }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.31, 0.48, 0.55, 0.42, 0.80, 0.50, 0.82, 0.78, 0.60, 0.86, 0.40, 0.70] }

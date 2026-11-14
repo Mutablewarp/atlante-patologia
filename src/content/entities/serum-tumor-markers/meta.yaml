@@ -1,0 +1,114 @@
+id: serum-tumor-markers
+module: g05
+tier: extended
+kind: concept
+names:
+  it: "Marcatori tumorali sierici"
+  en: "Serum tumor markers"
+  eponyms: []
+  synonyms:
+    it: ["Marcatori tumorali"]
+    en: ["Tumor markers"]
+  abbreviations: [CEA, CA-125, PSA]
+summary:
+  it: "Prodotti genici delle neoplasie, rilevabili sulle cellule tumorali o nei liquidi biologici, usati per stabilire la linea cellulare di origine e per seguire un tumore già trattato."
+  en: "Gene products of neoplasms, detectable on tumor cells or in body fluids, used to establish the lineage of a tumor and to follow a tumor after treatment."
+lenses:
+  system: [general]
+  process: [neoplasia]
+  pattern: []
+  presentation: []
+  marker: [laboratory, ihc, molecular]
+  group: [neoplastic]
+learningObjectives:
+  - it: "Definire un marcatore tumorale e spiegare perché una neoplasia lo produce."
+    en: "Define a tumor marker and explain why a neoplasm makes one."
+  - it: "Associare CEA, CA-125 e PSA ai rispettivi tumori."
+    en: "Match CEA, CA-125 and PSA to their tumors."
+  - it: "Distinguere l'uso dei marcatori nel sangue (follow-up) da quello dei marcatori tissutali (linea cellulare)."
+    en: "Distinguish blood markers (follow-up) from tissue markers (lineage)."
+  - it: "Spiegare perché i marcatori sierici hanno avuto poco successo come test di screening di popolazione."
+    en: "Explain why serum markers have had little success as population screening tests."
+prerequisites: []
+relations:
+  - type: sameMarker
+    target: immunohistochemistry
+    note:
+      it: "I marcatori tissutali si studiano con l'immunoistochimica."
+      en: "Tissue markers are studied by immunohistochemistry."
+  - type: sameMarker
+    target: predictive-biomarkers
+    note:
+      it: "Alcuni antigeni tumorali guidano la scelta terapeutica."
+      en: "Some tumor antigens guide the choice of therapy."
+quickCheck:
+  - id: serum-tumor-markers-q1
+    q:
+      it: "Quale tumore si associa a ciascuno di questi marcatori: CEA, CA-125, PSA?"
+      en: "Which tumor goes with each of these markers: CEA, CA-125, PSA?"
+    a:
+      it: "CEA: tumori gastrointestinali; CA-125: carcinoma ovarico; PSA: carcinoma prostatico."
+      en: "CEA: gastrointestinal tumors; CA-125: ovarian carcinoma; PSA: prostate cancer."
+    kind: short
+  - id: serum-tumor-markers-q2
+    q:
+      it: "A che cosa servono soprattutto i livelli ematici dei marcatori tumorali?"
+      en: "What are blood levels of tumor markers mainly used for?"
+    a:
+      it: "A seguire la progressione e la comparsa di metastasi dopo il trattamento del tumore primitivo, più che allo screening di popolazione."
+      en: "To follow progression and metastases after treatment of the primary tumor, rather than for population screening."
+    kind: short
+  - id: serum-tumor-markers-q3
+    q:
+      it: "Un tumore metastatico indifferenziato risulta positivo per citocheratina: che cosa suggerisce?"
+      en: "An undifferentiated metastatic tumor stains positive for cytokeratin: what does this suggest?"
+    a:
+      it: "Che si tratta di un carcinoma."
+      en: "That it is a carcinoma."
+    kind: short
+  - id: serum-tumor-markers-q4
+    q:
+      it: "Un deposito tumorale non pigmentato è positivo per S-100: che cosa suggerisce?"
+      en: "An unpigmented tumor deposit stains positive for S-100: what does this suggest?"
+    a:
+      it: "Un'origine melanocitaria: la colorazione S-100 può indicarla anche senza pigmento."
+      en: "Melanocytic origin: S-100 staining can show it even without pigment."
+    kind: short
+selfExplain:
+  - it: "Perché un marcatore è utile solo se la cellula tumorale conserva le caratteristiche del tessuto di origine?"
+    en: "Why is a marker useful only if the tumor cell keeps features of its tissue of origin?"
+  - it: "Perché i marcatori ematici servono più a seguire un tumore noto che a cercarlo nella popolazione?"
+    en: "Why are blood markers better for following a known tumor than for finding one in the population?"
+examQuestions:
+  - it: "Mi parli dei marcatori tumorali sierici: quali conosce e a che cosa servono?"
+    en: "Tell me about serum tumor markers: which ones do you know and what are they used for?"
+    focus: [clinical, diagnosis]
+    level: 1
+  - it: "Perché i marcatori ematici non sono adatti allo screening di popolazione?"
+    en: "Why are blood markers not suited to population screening?"
+    focus: [diagnosis, traps]
+    level: 2
+  - it: "Come distingue l'uso di un marcatore sierico da quello di un marcatore tissutale?"
+    en: "How do you tell the use of a serum marker from that of a tissue marker?"
+    focus: [differential, ancillary]
+    level: 3
+images:
+  - id: serum-tumor-markers-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "5"
+    pages: "172"
+  - source: rubin-8e
+    chapter: "23"
+    pages: "1004"
+  - source: rubin-8e
+    chapter: "24"
+    pages: "1066, 1067"
+  - source: rubin-8e
+    chapter: "27"
+    pages: "1220, 1221"
+lastUpdated: 2026-11-13
+status: published

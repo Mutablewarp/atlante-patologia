@@ -9,7 +9,7 @@ import { dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest';
 import { cardCheck, cardFiles, commitFinished } from '../scripts/agent/commit-finished.mjs';
-import { finalize, mergePlanned, mergeRows, mergeSources, renderSelfVerified, selfVerified } from '../scripts/agent/finalize-batch.mjs';
+import { assetRow, finalize, mergePlanned, mergeRows, mergeSources, renderSelfVerified, reviewRow, selfVerified } from '../scripts/agent/finalize-batch.mjs';
 import { STAGES } from '../scripts/agent/record.mjs';
 import { isSelfVerifier, SELF_VERIFIED } from '../src/lib/self-verified.ts';
 
@@ -372,6 +372,25 @@ Free text that is not a row.
     it('changes nothing when every row is known, so a second run adds nothing', () => {
       const once = mergeRows(TABLE, [frag('alpha', A)]).text;
       expect(mergeRows(once, [frag('alpha', A)])).toMatchObject({ text: once, added: 0, problems: [] });
+    });
+
+    it('turns the plain lines of an agent into rows when given a converter, so that they are not lost', () => {
+      const plain = `- not-found-in-reference: gamma, must-cover "capsule" is not in pages 170-173.
+needs-second-source: gamma-c031 and gamma-c044 (over 90% | of x; p. 12 only)
+
+`;
+      const r = mergeRows(TABLE, [frag('gamma', plain)], reviewRow('2026-11-13'));
+      expect(r.problems).toEqual([]);
+      expect(r.added).toBe(2);
+      expect(r.text).toContain('| 2026-11-13 | `gamma` | — | not-found-in-reference: gamma, must-cover "capsule" is not in pages 170-173. | open | agent | |\n');
+      expect(r.text).toContain('| 2026-11-13 | `gamma` | `gamma-c031`, `gamma-c044` | needs-second-source: gamma-c031 and gamma-c044 (over 90% \\| of x; p. 12 only) | open | agent | |\n');
+      expect(mergeRows(r.text, [frag('gamma', plain)], reviewRow('2026-11-14'))).toMatchObject({ text: r.text, added: 0 });
+    });
+
+    it('a plain line about a missing image becomes a row of the missing-assets table', () => {
+      const row = assetRow('2026-11-13')('delta', '- delta (2026-11-13): no gross photo found among the allowed licences.');
+      expect(row).toBe('| 2026-11-13 | `delta` | gross | no gross photo found among the allowed licences. | — | — | open |');
+      expect(assetRow('2026-11-13')('delta', 'delta: concept card, an original scheme is needed.')).toContain('| `delta` | — | concept card, an original scheme is needed. |');
     });
   });
 

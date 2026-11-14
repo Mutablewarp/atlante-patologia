@@ -1,0 +1,102 @@
+id: neoplasia-nomenclature
+module: g05
+tier: core
+kind: concept
+names:
+  it: "Nomenclatura e classificazione istogenetica delle neoplasie"
+  en: "Tumor nomenclature and histogenetic classification"
+  eponyms: []
+  synonyms:
+    it: ["Nomenclatura dei tumori"]
+    en: ["Tumor naming", "Neoplasm nomenclature"]
+  abbreviations: []
+summary:
+  it: "I tumori si nominano in base alla cellula di origine; il suffisso -oma non indica in modo affidabile il comportamento biologico, che definisce benigno e maligno."
+  en: "Tumors are named by their cell of origin; the -oma suffix does not reliably signal behavior, which is what defines benign and malignant."
+lenses:
+  system: [general]
+  process: [neoplasia]
+  pattern: []
+  presentation: [mass-lesion]
+  marker: [ihc]
+  group: [neoplastic]
+learningObjectives:
+  - it: "Spiegare perché la cellula di origine è il descrittore primario di un tumore."
+    en: "Explain why the cell of origin is the primary descriptor of a tumor."
+  - it: "Distinguere carcinoma, sarcoma, leucemia e linfoma in base alla linea cellulare."
+    en: "Tell carcinoma, sarcoma, leukemia and lymphoma apart by cell lineage."
+  - it: "Riconoscere i termini fuorvianti, come melanoma e seminoma, e l'amartoma."
+    en: "Recognize misleading names, such as melanoma and seminoma, and the hamartoma."
+  - it: "Elencare i criteri istologici e clinici che distinguono un tumore benigno da uno maligno."
+    en: "List the histologic and clinical criteria that separate a benign from a malignant tumor."
+prerequisites: []
+relations:
+  - type: prerequisiteOf
+    target: dysplasia
+    note:
+      it: "Il lessico delle neoplasie serve per leggere la displasia e le lesioni preinvasive."
+      en: "Neoplasia vocabulary is needed to read dysplasia and preinvasive lesions."
+quickCheck:
+  - id: neoplasia-nomenclature-q1
+    q:
+      it: "Il suffisso -oma indica sempre un tumore benigno?"
+      en: "Does the suffix -oma always mean a benign tumor?"
+    a:
+      it: "No: melanoma e seminoma sono tumori maligni nonostante il suffisso."
+      en: "No: melanoma and seminoma are malignant despite the suffix."
+    kind: short
+  - id: neoplasia-nomenclature-q2
+    q:
+      it: "Che cosa definisce prima di tutto un tumore benigno?"
+      en: "What above all defines a benign tumor?"
+    a:
+      it: "L'incapacità di invadere i tessuti adiacenti e di metastatizzare."
+      en: "Its inability to invade adjacent tissue and to metastasize."
+    kind: short
+  - id: neoplasia-nomenclature-q3
+    q:
+      it: "Un tumore benigno può essere letale? Fai un esempio."
+      en: "Can a benign tumor be lethal? Give an example."
+    a:
+      it: "Sì, per la sede: un meningioma benigno può comprimere una struttura cerebrale vitale."
+      en: "Yes, because of its location: a benign meningioma can press on a vital brain structure."
+    kind: short
+selfExplain:
+  - it: "Perché la diagnosi di benigno o maligno è una previsione e non una misura?"
+    en: "Why is the benign or malignant label a prediction rather than a measurement?"
+  - it: "Perché in alcuni tumori endocrini solo la metastasi dimostra la malignità?"
+    en: "Why does only metastasis prove malignancy in some endocrine tumors?"
+examQuestions:
+  - it: "Mi parli della nomenclatura dei tumori: che cosa indica il nome e che cosa indica il suffisso -oma?"
+    en: "Tell me about tumor nomenclature: what does the name tell you, and what does the -oma suffix tell you?"
+    focus: [definition]
+    level: 1
+  - it: "Come distingue un carcinoma da un sarcoma, e che cosa sono leucemie e linfomi?"
+    en: "How do you tell a carcinoma from a sarcoma, and what are leukemias and lymphomas?"
+    focus: [definition, high-yield]
+    level: 3
+  - it: "Che cos'è un amartoma e perché non è considerato una vera neoplasia?"
+    en: "What is a hamartoma, and why is it not considered a true neoplasm?"
+    focus: [definition, traps]
+    level: 2
+  - it: "Che cosa vede al microscopio che le fa orientare la diagnosi verso un tumore maligno?"
+    en: "What do you see under the microscope that points you toward a malignant tumor?"
+    focus: [micro, diagnosis]
+    level: 2
+  - it: "Perché un tumore benigno può essere letale e un tumore maligno può essere innocuo per la vita? Faccia degli esempi."
+    en: "Why can a benign tumor be lethal and a malignant tumor be harmless to life? Give examples."
+    focus: [clinical, prognosis]
+    level: 3
+images:
+  - id: neoplasia-nomenclature-gross-1
+    role: gross
+  - id: neoplasia-nomenclature-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "5"
+    pages: "170-172"
+lastUpdated: 2026-11-13
+status: published

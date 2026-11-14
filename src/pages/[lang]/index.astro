@@ -10,14 +10,37 @@ export const getStaticPaths = langPaths;
 
 const lang = Astro.params.lang as Lang;
 const t = (k: Parameters<typeof tHome>[1]) => tHome(lang, k);
-const { modules } = await siteData(lang);
+const { modules, entities } = await siteData(lang);
 const published = modules.filter((m) => m.status === 'published').length;
 const pct = Math.round((published / modules.length) * 100);
+// Cards per module: published cards, and M = published + planned entries. Planned names are never shown, only counts.
+const rows = modules.map((m) => {
+  const own = entities.filter((e) => e.module === m.id);
+  // a module has no page of its own: its lens page is the system most of its cards belong to
+  const systems = own.flatMap((e) => e.lenses.system.slice(0, 1));
+  const system = [...new Set(systems)].sort((a, b) => systems.filter((x) => x === b).length - systems.filter((x) => x === a).length)[0];
+  return {
+    m,
+    cards: own.length,
+    total: own.length + m.planned.length,
+    href: m.status === 'published' && system ? langPath(lang, `atlas/system/${system}/`) : undefined,
+  };
+});
+const sum = (list: typeof rows) => ({
+  cards: list.reduce((n, r) => n + r.cards, 0),
+  total: list.reduce((n, r) => n + r.total, 0),
+});
+const cardsAll = sum(rows);
 const sections = (['I', 'II', 'III'] as const).map((s) => ({
   id: s,
   label: tCommon(lang, `section${s}`),
   total: modules.filter((m) => m.section === s).length,
   published: modules.filter((m) => m.section === s && m.status === 'published').length,
+  rows: rows.filter((r) => r.m.section === s),
+  ...(() => {
+    const c = sum(rows.filter((r) => r.m.section === s));
+    return { cards: c.cards, cardsTotal: c.total };
+  })(),
 }));
 ---
 
@@ -57,6 +80,9 @@ const sections = (['I', 'II', 'III'] as const).map((s) => ({
     <div class="progress" role="img" aria-label={fmt(t('progressSummary'), { published, total: modules.length })}>
       <span style={`width:${Math.max(pct, 1)}%`}></span>
     </div>
+    <p data-cards-total={`${cardsAll.cards}/${cardsAll.total}`}>
+      {fmt(t('cardsSummary'), { published: cardsAll.cards, total: cardsAll.total })}
+    </p>
     <dl class="section-progress">
       {
         sections.map((s) => (
@@ -64,11 +90,31 @@ const sections = (['I', 'II', 'III'] as const).map((s) => ({
             <dt>{s.label}</dt>
             <dd>
               {s.published} / {s.total} · <span class="badge badge-planned">{tCommon(lang, 'planned')}: {s.total - s.published}</span>
+              <br />
+              <span class="small muted" data-section-cards={`${s.cards}/${s.cardsTotal}`}>
+                {fmt(t('cardsSummary'), { published: s.cards, total: s.cardsTotal })}
+              </span>
             </dd>
           </div>
         ))
       }
     </dl>
+    {
+      sections.map((s) => (
+        <>
+          <h3>{s.label}</h3>
+          <ul class="module-cards">
+            {s.rows.map((r) => (
+              <li data-module-cards={`${r.cards}/${r.total}`}>
+                {r.href ? <a href={r.href}>{r.m.label[lang]}</a> : <span>{r.m.label[lang]}</span>}
+                <span class="small muted">{fmt(t('cardsShort'), { published: r.cards, total: r.total })}</span>
+                {r.m.status !== 'published' && <span class="badge badge-planned">{tCommon(lang, 'planned')}</span>}
+              </li>
+            ))}
+          </ul>
+        </>
+      ))
+    }
     <p><a href={langPath(lang, 'about/roadmap/')}>{t('seeRoadmap')}</a></p>
   </section>
 
@@ -116,5 +162,17 @@ const sections = (['I', 'II', 'III'] as const).map((s) => ({
   }
   .section-progress dd {
     margin: 0;
+  }
+  .module-cards {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 var(--space-4);
+  }
+  .module-cards li {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-2);
+    align-items: baseline;
+    padding: var(--space-1) 0;
   }
 </style>

@@ -1,0 +1,85 @@
+id: inherited-cancer-syndromes
+module: g05
+tier: extended
+kind: concept
+names:
+  it: "Sindromi tumorali ereditarie"
+  en: "Inherited cancer syndromes"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: []
+summary:
+  it: "Condizioni dovute a mutazioni germinali, soprattutto di geni oncosoppressori e di riparo del DNA, che conferiscono un'elevata suscettibilità al cancro; rappresentano circa l'1% dei tumori."
+  en: "Conditions caused by germline mutations, mostly of tumor suppressor and DNA repair genes, that confer a high susceptibility to cancer; they account for about 1% of cancers."
+lenses:
+  system: [general]
+  process: [neoplasia]
+  pattern: []
+  presentation: []
+  marker: [molecular]
+  group: [genetic, neoplastic]
+learningObjectives:
+  - it: "Definire una sindrome tumorale ereditaria e indicarne la frequenza tra tutti i tumori."
+    en: "Define an inherited cancer syndrome and state how common it is among all cancers."
+  - it: "Spiegare perché il portatore è eterozigote e perché nel tumore vanno perduti entrambi gli alleli."
+    en: "Explain why the carrier is heterozygous and why both alleles are lost in the tumor."
+  - it: "Distinguere una sindrome ereditaria da un tumore sporadico e da una semplice aggregazione familiare."
+    en: "Distinguish an inherited syndrome from a sporadic tumor and from simple familial clustering."
+prerequisites: []
+relations: []
+quickCheck:
+  - id: inherited-cancer-syndromes-q1
+    q:
+      it: "Che cosa si eredita in una sindrome tumorale ereditaria?"
+      en: "What is inherited in an inherited cancer syndrome?"
+    a:
+      it: "Un'elevata suscettibilità al cancro, non il tumore: nel tumore va perso anche il secondo allele."
+      en: "A high susceptibility to cancer, not the tumor: the second allele is lost in the tumor."
+    kind: short
+  - id: inherited-cancer-syndromes-q2
+    q:
+      it: "Qual è il genotipo germinale di un portatore e quale quello del tumore?"
+      en: "What is the germline genotype of a carrier, and what is that of the tumor?"
+    a:
+      it: "Il portatore è eterozigote; nel tumore entrambi gli alleli oncosoppressori sono inattivati, per perdita di eterozigosi."
+      en: "The carrier is heterozygous; in the tumor both tumor suppressor alleles are inactivated through loss of heterozygosity."
+    kind: short
+  - id: inherited-cancer-syndromes-q3
+    q:
+      it: "La perdita germinale di PTEN (sindrome di Cowden) causa soprattutto tumori maligni?"
+      en: "Does germline PTEN loss (Cowden syndrome) mainly cause malignant tumors?"
+    a:
+      it: "No: è associata soprattutto ad amartomi benigni, benché la riduzione di PTEN sia frequente in molti tumori maligni."
+      en: "No: it is mainly associated with benign hamartomas, although reduced PTEN is common in many malignancies."
+    kind: short
+selfExplain:
+  - it: "Perché un solo allele mutato ereditato comporta un rischio elevato di cancro?"
+    en: "Why does one inherited mutated allele carry a high cancer risk?"
+  - it: "Perché le sindromi ereditarie spiegano solo circa l'1% dei tumori, pur essendo l'aggregazione familiare più frequente?"
+    en: "Why do inherited syndromes explain only about 1% of cancers, even though familial clustering is more common?"
+examQuestions:
+  - it: "Mi parli delle sindromi tumorali ereditarie: che cosa si eredita e quali geni sono coinvolti?"
+    en: "Tell me about inherited cancer syndromes: what is inherited, and which genes are involved?"
+    focus: [definition]
+    level: 1
+  - it: "Perché nel tumore di un portatore sono inattivati entrambi gli alleli, pur essendo il portatore eterozigote?"
+    en: "Why are both alleles inactivated in a carrier's tumor, when the carrier is heterozygous?"
+    focus: [micro]
+    level: 2
+  - it: "Come distingue una sindrome tumorale ereditaria da un tumore sporadico e da una semplice aggregazione familiare?"
+    en: "How do you tell an inherited cancer syndrome from a sporadic tumor and from simple familial clustering?"
+    focus: [diagnosis, differential]
+    level: 3
+images:
+  - id: inherited-cancer-syndromes-gross-1
+    role: gross
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "5"
+    pages: "213"
+lastUpdated: 2026-11-13
+status: published
