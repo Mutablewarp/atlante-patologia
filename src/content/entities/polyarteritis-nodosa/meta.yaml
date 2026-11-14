@@ -1,0 +1,120 @@
+id: polyarteritis-nodosa
+module: o16
+tier: core
+kind: disease
+names:
+  it: "Poliarterite nodosa"
+  en: "Polyarteritis nodosa"
+  eponyms: []
+  synonyms:
+    it: ["Panarterite nodosa"]
+    en: ["Classic polyarteritis nodosa"]
+  abbreviations: ["PAN"]
+summary:
+  it: "Vasculite necrotizzante acuta delle arterie muscolari di medio e piccolo calibro, con necrosi fibrinoide segmentaria, trombosi e infarti d'organo."
+  en: "Acute necrotizing vasculitis of medium-sized and smaller muscular arteries, with patchy fibrinoid necrosis, thrombosis and organ infarcts."
+lenses:
+  system: [vessels, systemic]
+  process: [acute-inflammation, hypersensitivity]
+  pattern: [necrosis-fibrinoid]
+  presentation: [fever, ischemic-event]
+  marker: []
+  group: [vascular, inflammatory, immune]
+learningObjectives:
+  - it: "Definire la poliarterite nodosa e indicare i vasi colpiti."
+    en: "Define polyarteritis nodosa and name the vessels it affects."
+  - it: "Descrivere la lesione istologica: necrosi fibrinoide segmentaria con periarterite."
+    en: "Describe the histologic lesion: patchy fibrinoid necrosis with periarteritis."
+  - it: "Collegare trombosi e aneurismi agli infarti d'organo e all'emorragia."
+    en: "Link thrombosis and aneurysms to organ infarcts and hemorrhage."
+  - it: "Ricordare l'associazione con le infezioni da virus dell'epatite B e C e da HIV."
+    en: "Recall the association with hepatitis B, hepatitis C and HIV infection."
+  - it: "Distinguerla dalla poliangioite microscopica e dall'arterite a cellule giganti."
+    en: "Tell it apart from microscopic polyangiitis and giant cell arteritis."
+prerequisites: [fibrinoid-necrosis]
+relations:
+  - type: differentialOf
+    target: hypersensitivity-vasculitis
+    note:
+      it: "Vasi più piccoli (arteriole e venule) e forte associazione con P-ANCA."
+      en: "Smaller vessels (arterioles and venules) and strong P-ANCA association."
+  - type: differentialOf
+    target: giant-cell-arteritis
+    note:
+      it: "Infiammazione granulomatosa con cellule giganti, soprattutto nell'arteria temporale."
+      en: "Granulomatous inflammation with giant cells, mainly in the temporal artery."
+  - type: sharesMechanism
+    target: fibrinoid-necrosis
+    note:
+      it: "La lesione parietale tipica è una necrosi fibrinoide."
+      en: "The typical wall lesion is fibrinoid necrosis."
+quickCheck:
+  - id: polyarteritis-nodosa-q1
+    q:
+      it: "Quali arterie colpisce di solito la poliarterite nodosa?"
+      en: "Which arteries does polyarteritis nodosa usually affect?"
+    a:
+      it: "Le arterie muscolari di medio e piccolo calibro, talvolta anche arterie più grandi."
+      en: "Medium-sized and smaller muscular arteries, occasionally larger ones too."
+    kind: short
+  - id: polyarteritis-nodosa-q2
+    q:
+      it: "Perché la poliarterite nodosa provoca infarti d'organo?"
+      en: "Why does polyarteritis nodosa cause organ infarcts?"
+    a:
+      it: "La trombosi nei segmenti arteriosi malati interrompe l'apporto di sangue all'organo."
+      en: "Thrombosis in the diseased arterial segments cuts off the organ's blood supply."
+    kind: short
+  - id: polyarteritis-nodosa-q3
+    q:
+      it: "Quali infezioni virali possono associarsi a lesioni simili alla poliarterite nodosa?"
+      en: "Which viral infections can be accompanied by polyarteritis nodosa-like lesions?"
+    a:
+      it: "Epatite B, epatite C e HIV."
+      en: "Hepatitis B, hepatitis C and HIV."
+    kind: short
+  - id: polyarteritis-nodosa-q4
+    q:
+      it: "Qual è la prognosi della poliarterite nodosa non trattata e con la terapia?"
+      en: "What is the outlook of polyarteritis nodosa without and with treatment?"
+    a:
+      it: "Senza terapia era di solito fatale. Con corticosteroidi e ciclofosfamide la remissione o la guarigione sono la regola."
+      en: "Untreated, it was usually fatal. With corticosteroids and cyclophosphamide, remission or cure is usual."
+    kind: short
+selfExplain:
+  - it: "Perché un aneurisma di una piccola arteria può causare un'emorragia fatale?"
+    en: "Why can an aneurysm of a small artery cause fatal hemorrhage?"
+  - it: "Perché un'arteria guarita dopo una poliarterite nodosa ha una media fibrotica e lacune nelle lamine elastiche?"
+    en: "Why does an artery that has healed after polyarteritis nodosa have a fibrotic media and gaps in the elastic laminae?"
+examQuestions:
+  - it: "Mi parli della poliarterite nodosa: quali vasi colpisce e con quale tipo di infiammazione?"
+    en: "Tell me about polyarteritis nodosa: which vessels does it affect, and with what kind of inflammation?"
+    focus: [definition, micro]
+    level: 1
+  - it: "Che cosa vede al microscopio in un'arteria muscolare con poliarterite nodosa?"
+    en: "What do you see under the microscope in a muscular artery with polyarteritis nodosa?"
+    focus: [micro, ancillary]
+    level: 1
+  - it: "Perché la poliarterite nodosa causa infarti d'organo e, a volte, emorragie fatali?"
+    en: "Why does polyarteritis nodosa cause organ infarcts and, at times, fatal hemorrhage?"
+    focus: [gross, prognosis]
+    level: 2
+  - it: "Quale rapporto c'è tra poliarterite nodosa e infezioni virali?"
+    en: "What is the relationship between polyarteritis nodosa and viral infections?"
+    focus: [etiology, traps]
+    level: 2
+  - it: "Come distingue la poliarterite nodosa dalla poliangioite microscopica e dall'arterite a cellule giganti?"
+    en: "How do you tell polyarteritis nodosa from microscopic polyangiitis and from giant cell arteritis?"
+    focus: [differential]
+    level: 3
+images:
+  - id: polyarteritis-nodosa-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "16"
+    pages: "619-620"
+lastUpdated: 2026-11-14
+status: published
