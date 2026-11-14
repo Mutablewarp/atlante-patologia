@@ -194,12 +194,16 @@
   margin: 0;
   padding: 0;
 }
-.module-tree ul ul {
-  padding-left: var(--space-3);
+/* The three sections of the syllabus: quiet labels over their chapters */
+.chapter-group {
+  margin: var(--space-4) 0 var(--space-1);
+  padding-inline: var(--space-2);
+  font-size: var(--step--2);
+  font-weight: 700;
+  color: var(--ink-muted);
 }
-.module-tree summary {
-  min-height: 1.75rem;
-  cursor: pointer;
+.chapter-groups > li:first-child > .chapter-group {
+  margin-top: 0;
 }
 .module-tree a {
   display: block;
@@ -221,6 +225,34 @@
   font-size: var(--step--2);
   font-weight: 600;
   color: var(--eosin-ink);
+}
+/* A chapter: its name, and "1/5" at the right while it is incomplete. The selector is one step above the touch-size rules
+   of base.css (column flex for the cards' "sei qui" line), so it sets the row direction itself. */
+.module-tree .chapters > li > a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+}
+.module-tree .chapters > li > a > span {
+  flex: none;
+  font-size: var(--step--2);
+  font-variant-numeric: tabular-nums;
+  color: var(--ink-muted);
+}
+/* The chapter of the card on the page: its name in bold, its cards under it beside the eosin rule that marks "you are here" in the section list */
+.module-tree .is-current > a {
+  font-weight: 700;
+}
+.module-tree .is-current > ul {
+  margin: var(--space-1) 0 var(--space-2) var(--space-2);
+  padding-left: var(--space-2);
+  border-left: 2px solid var(--eosin);
+}
+.module-tree .chapter-more {
+  margin: var(--space-4) 0 0;
+  font-size: var(--step--2);
 }
 
 /* "Chapter" button in the top bar and its dialog: the chapter index where the sidebar does not show it */

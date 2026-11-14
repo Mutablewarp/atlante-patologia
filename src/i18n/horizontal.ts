@@ -136,6 +136,29 @@ export const tHz = defineStrings({
   moduleTree: { it: 'Indice dei capitoli', en: 'Chapter contents' },
   chapterOpen: { it: 'Capitolo', en: 'Chapter' },
   chapterClose: { it: 'Chiudi l’indice dei capitoli', en: 'Close the chapter contents' },
+  // Chapter pages and the chapter index (D075)
+  chapterCards: { it: '{n} schede', en: '{n} cards' },
+  chapterCardsOne: { it: '1 scheda', en: '1 card' },
+  chapterCardsOf: { it: '{published} di {total} schede', en: '{published} of {total} cards' },
+  chapterKicker: { it: 'Capitolo {id} · {section}', en: 'Chapter {id} · {section}' },
+  chapterLedeAll: { it: 'Tutte le {n} schede del capitolo sono pubblicate.', en: 'All {n} cards of the chapter are published.' },
+  chapterLedeAllOne: { it: 'La scheda del capitolo è pubblicata.', en: 'The chapter’s one card is published.' },
+  chapterLedePart: {
+    it: '{published} schede pubblicate su {total}. Le altre sono in preparazione.',
+    en: '{published} of {total} cards published. The rest are in preparation.',
+  },
+  chapterLedePartOne: {
+    it: '1 scheda pubblicata su {total}. Le altre sono in preparazione.',
+    en: '1 of {total} cards published. The rest are in preparation.',
+  },
+  chapterCardsTitle: { it: 'Schede del capitolo', en: 'Cards in this chapter' },
+  chapterNav: { it: 'Capitoli', en: 'Chapters' },
+  chapterPrev: { it: 'Capitolo precedente', en: 'Previous chapter' },
+  chapterNext: { it: 'Capitolo successivo', en: 'Next chapter' },
+  chapterMeta: {
+    it: 'Capitolo “{name}” dell’Atlante di Patologia: {cards}, ciascuna con una riga di sintesi.',
+    en: 'Chapter “{name}” of the Pathology Atlas: {cards}, each with a one-line summary.',
+  },
 
   // Image viewer
   viewerHelp: {

@@ -1,9 +1,17 @@
 ---
-/** Module tree with "you are here" on the current entity (NAVIGATION_SPEC §4, §6): in the sidebar (>= 1024 px), and in
-    the chapter dialog (ChapterIndex.astro) while that is open: shell.ts moves this one copy there and back (D072). */
-import type { Lang } from '../../i18n/index.ts';
+/** Chapter index (NAVIGATION_SPEC §6, D075): the chapters that have published cards, in the three sections of the
+    syllabus. The chapter of the card on the page shows its cards, with "you are here" on the current one; every other
+    chapter is one link to its page (pages/[lang]/chapter/[id].astro). In the sidebar (>= 1024 px), and in the chapter
+    dialog (ChapterIndex.astro) while that is open: shell.ts moves this one copy there and back (D072). It used to list
+    every card of every chapter: 117 bytes per published card on every card page, which broke the HTML weight budget
+    at 63 cards. The markup is lean on purpose, it repeats on every card page: a chapter is a bare link, and the count
+    ("1/5") shows only while the chapter is incomplete, so a finished programme carries none. */
+import { fmt, type Lang } from '../../i18n/index.ts';
+import { tCommon } from '../../i18n/common.ts';
+import { tHome } from '../../i18n/pages.ts';
 import { tHz } from '../../i18n/horizontal.ts';
 import { langPath } from '../../lib/url.ts';
+import { chapterHref, chaptersOf } from '../../lib/chapters.ts';
 import type { SiteData } from '../../lib/content.ts';
 
 interface Props {
@@ -15,34 +23,53 @@ interface Props {
 }
 const { lang, data, current, id = 'module-tree' } = Astro.props;
 const currentModule = data.entityById.get(current)?.module;
-const mods = data.modules
-  .map((m) => ({ ...m, items: data.entities.filter((e) => e.module === m.id) }))
-  .filter((m) => m.items.length > 0);
+const chapters = chaptersOf(data);
+const groups = (['I', 'II', 'III'] as const)
+  .map((s) => ({ s, label: tCommon(lang, `section${s}`), chapters: chapters.filter((c) => c.section === s) }))
+  .filter((g) => g.chapters.length > 0);
 ---
 
 <div class="module-tree">
   <p class="module-tree-title" id={`${id}-title`}>{tHz(lang, 'moduleTree')}</p>
-  <ul aria-labelledby={`${id}-title`}>
+  <ul class="chapter-groups" aria-labelledby={`${id}-title`}>
     {
-      mods.map((m) => (
+      groups.map((g) => (
         <li>
-          <details open={m.id === currentModule}>
-            <summary>
-              <span class="module-id">{m.id.toUpperCase()}</span> {m.label[lang]}
-            </summary>
-            <ul>
-              {m.items.map((e) => (
-                <li>
-                  <a href={langPath(lang, `e/${e.id}/`)} aria-current={e.id === current ? 'location' : undefined}>
-                    {e.names[lang]}
-                    {e.id === current && <span class="here">{tHz(lang, 'youAreHere')}</span>}
+          <p class="chapter-group" id={`${id}-${g.s}`}>
+            {g.label}
+          </p>
+          <ul class="chapters" aria-labelledby={`${id}-${g.s}`}>
+            {g.chapters.map((c) => {
+              const n = c.cards.length;
+              const whole = n === c.total;
+              return (
+                <li class={c.id === currentModule ? 'is-current' : undefined}>
+                  <a
+                    href={chapterHref(lang, c.id)}
+                    aria-label={whole ? undefined : `${c.label[lang]}, ${fmt(tHz(lang, 'chapterCardsOf'), { published: n, total: c.total })}`}
+                  >
+                    {c.label[lang]}
+                    {!whole && <span>{`${n}/${c.total}`}</span>}
                   </a>
+                  {c.id === currentModule && (
+                    <ul>
+                      {c.cards.map((e) => (
+                        <li>
+                          <a href={langPath(lang, `e/${e.id}/`)} aria-current={e.id === current ? 'location' : undefined}>
+                            {e.names[lang]}
+                            {e.id === current && <span class="here">{tHz(lang, 'youAreHere')}</span>}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  )}
                 </li>
-              ))}
-            </ul>
-          </details>
+              );
+            })}
+          </ul>
         </li>
       ))
     }
   </ul>
+  <p class="chapter-more"><a href={langPath(lang, 'about/roadmap/')}>{tHome(lang, 'seeRoadmap')}</a></p>
 </div>
