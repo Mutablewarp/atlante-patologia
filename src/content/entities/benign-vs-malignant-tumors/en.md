@@ -4,7 +4,7 @@ lang: en
 
 ## Definition and epidemiology
 
-**What separates a benign tumor from a malignant one?** A benign tumor stays at its site of origin: it does not enter neighboring tissue and sends no cells to distant organs.<!--c:benign-vs-malignant-tumors-c001--> A malignant tumor invades the tissue around it and seeds distant sites, where the colonies multiply and invade again.<!--c:benign-vs-malignant-tumors-c002--> The labels describe behavior, not morphology, so they forecast a tumor's course and outcome.<!--c:benign-vs-malignant-tumors-c003--> Benign tumors resemble their tissue of origin more closely, so they are better differentiated.<!--c:benign-vs-malignant-tumors-c004-->
+**What separates a benign tumor from a malignant one?** A benign tumor stays at its site of origin: it does not enter neighboring tissue and sends no cells to distant organs.<!--c:benign-vs-malignant-tumors-c001--> A malignant tumor metastasizes; its distant colonies keep growing and invading, as the primary does locally.<!--c:benign-vs-malignant-tumors-c002--> The labels describe behavior, not morphology, so they forecast a tumor's course and outcome.<!--c:benign-vs-malignant-tumors-c003--> Benign tumors resemble their tissue of origin more closely, so they are better differentiated.<!--c:benign-vs-malignant-tumors-c004-->
 
 ## Etiology and risk factors
 
@@ -16,22 +16,22 @@ lang: en
 
 ## Gross morphology
 
-**What can the naked eye show?** A malignant tumor that breaks out of its organ can involve adjacent tissues.<!--c:benign-vs-malignant-tumors-c011--> Above a colon cancer the bowel is dilated, because the tumor narrows the lumen.<!--c:benign-vs-malignant-tumors-c012--> Ovarian cancer cells that seed the peritoneal cavity form small metastatic deposits on the mesentery.<!--c:benign-vs-malignant-tumors-c013-->
+**What can the naked eye show?** A malignant tumor that breaks out of its organ can involve adjacent tissues.<!--c:benign-vs-malignant-tumors-c011--> Above a colon cancer the bowel is dilated, because the tumor narrows the lumen.<!--c:benign-vs-malignant-tumors-c012--> Ovarian cancer shed into the abdominal cavity can implant as small nodules on the mesentery.<!--c:benign-vs-malignant-tumors-c013-->
 
 ## Microscopic morphology
 
 **How do we tell them apart on the slide?**
 
-- **Differentiation and atypia:** atypia is departure from the normal counterpart; more atypia generally means more aggressiveness.<!--c:benign-vs-malignant-tumors-c014--> Chondrosarcoma cells are oddly shaped and have uneven, dark nuclei; a benign chondroma looks almost like normal cartilage.<!--c:benign-vs-malignant-tumors-c015-->
+- **Differentiation and atypia:** atypia is how unlike normal tissue a tumor looks; generally, more atypia means more aggressiveness.<!--c:benign-vs-malignant-tumors-c014--> Chondrosarcoma cells are oddly shaped and have uneven, dark nuclei; a benign chondroma looks almost like normal cartilage.<!--c:benign-vs-malignant-tumors-c015-->
 - **Pleomorphism:** the size and shape of cells and nuclei are not uniform.<!--c:benign-vs-malignant-tumors-c016-->
 - **N/C ratio:** the nucleus is enlarged compared with the amount of cytoplasm.<!--c:benign-vs-malignant-tumors-c017-->
 - **Hyperchromasia:** the nuclei stain darkly.<!--c:benign-vs-malignant-tumors-c018-->
 - **Chromatin and nucleoli:** nucleoli stand out, and the chromatin forms coarse clumps.<!--c:benign-vs-malignant-tumors-c019-->
 - **Atypical mitoses:** the figures go beyond the simple bipolar form.<!--c:benign-vs-malignant-tumors-c020-->
 - **Bizarre cells:** tumor giant cells and other odd-shaped cells may appear.<!--c:benign-vs-malignant-tumors-c021-->
-- **Mitotic activity:** in many malignant tumors, mitotic figures are found in abnormally high numbers.<!--c:benign-vs-malignant-tumors-c022--> Leiomyosarcoma can be called malignant on very few mitoses.<!--c:benign-vs-malignant-tumors-c023--> Some malignant tumors are diagnosed without obvious proliferative activity.<!--c:benign-vs-malignant-tumors-c024-->
-- **Architecture:** malignant tumors often grow in a disorganized way, for example as solid sheets of cells, frequently clustered around vessels.<!--c:benign-vs-malignant-tumors-c025--> Some malignant tumors undergo ischemic necrosis from poor blood supply.<!--c:benign-vs-malignant-tumors-c026-->
-- **Invasion:** invasion of blood vessels or lymphatics in particular points toward malignancy.<!--c:benign-vs-malignant-tumors-c027--> In follicular thyroid cancer, local invasion is an important criterion of malignancy.<!--c:benign-vs-malignant-tumors-c028-->
+- **Mitotic activity:** many malignant tumors show unusually many mitoses on a slide.<!--c:benign-vs-malignant-tumors-c022--> Leiomyosarcoma can be called malignant on very few mitoses.<!--c:benign-vs-malignant-tumors-c023--> Some malignant tumors are diagnosed without obvious proliferative activity.<!--c:benign-vs-malignant-tumors-c024-->
+- **Architecture:** around vessels or in sheets, malignant cells often grow with no orderly architecture.<!--c:benign-vs-malignant-tumors-c025--> Some malignant tumors undergo ischemic necrosis from poor blood supply.<!--c:benign-vs-malignant-tumors-c026-->
+- **Invasion:** invasion of blood vessels or lymphatics in particular points toward malignancy.<!--c:benign-vs-malignant-tumors-c027--> Local invasion is a key sign of malignancy in follicular thyroid cancer.<!--c:benign-vs-malignant-tumors-c028-->
 - **Metastasis** is proof that a tumor is malignant.<!--c:benign-vs-malignant-tumors-c029-->
 
 ## Special stains, IHC and molecular findings
@@ -40,17 +40,17 @@ lang: en
 
 - **How it is studied:** the rules for calling a tumor benign or malignant are empirical: they come from experience of how tumors behaved, not from theory.<!--c:benign-vs-malignant-tumors-c030-->
 - Antibody-based tests and molecular assays are used to establish a tumor's cell lineage.<!--c:benign-vs-malignant-tumors-c031-->
-- On H&E, a bladder cancer metastasis with little differentiation could not be recognized as a carcinoma; cytokeratin staining identified it.<!--c:benign-vs-malignant-tumors-c032-->
+- Cytokeratin staining can reveal a carcinoma that H&E alone leaves unclear, as in a poorly differentiated bladder cancer metastasis.<!--c:benign-vs-malignant-tumors-c032-->
 - In a metastatic melanoma without pigment, S-100 expression still points to melanocytic origin.<!--c:benign-vs-malignant-tumors-c033-->
-- In tumor analysis, marker studies now do nearly all the work that **electron microscopy** once did.<!--c:benign-vs-malignant-tumors-c034--> It can still show desmosomes and junctional complexes, which carcinomas often have and sarcomas and lymphomas typically lack.<!--c:benign-vs-malignant-tumors-c035--> Melanomas contain melanosomes or premelanosomes.<!--c:benign-vs-malignant-tumors-c036-->
+- In tumor analysis, marker studies now do nearly all the work that **electron microscopy** once did.<!--c:benign-vs-malignant-tumors-c034--> Sarcomas and lymphomas typically lack desmosomes and junctional complexes, which EM can show in many carcinomas.<!--c:benign-vs-malignant-tumors-c035--> Melanomas contain melanosomes or premelanosomes.<!--c:benign-vs-malignant-tumors-c036-->
 
 ## Clinical presentation
 
-**Can a benign tumor kill, and a malignant one spare the patient?** In general a patient survives a benign tumor, whereas a malignant one can be fatal.<!--c:benign-vs-malignant-tumors-c037--> Location can make a meningioma deadly: pressing on a vital brain structure, even a benign one may kill.<!--c:benign-vs-malignant-tumors-c038--> Even a very small benign ependymoma in the third ventricle can kill by obstructing cerebrospinal fluid flow and causing hydrocephalus.<!--c:benign-vs-malignant-tumors-c039--> A benign myxoma of the left atrium can kill suddenly if it plugs the mitral valve opening.<!--c:benign-vs-malignant-tumors-c040--> An insulinoma (abrupt hypoglycemia) or a pheochromocytoma (hypertensive crisis) can endanger life, though both are benign.<!--c:benign-vs-malignant-tumors-c041--> Certain thyroid and prostate cancers progress so slowly that the patient is never in danger from them.<!--c:benign-vs-malignant-tumors-c042--> Skin basal cell carcinoma rarely metastasizes, though it can invade nearby structures.<!--c:benign-vs-malignant-tumors-c043--> A cervical carcinoma growing locally may block the ureters.<!--c:benign-vs-malignant-tumors-c044--> A lung cancer can erode a vessel (severe hemorrhage) or a bronchus (bronchopleural fistula).<!--c:benign-vs-malignant-tumors-c045-->
+**Can a benign tumor kill, and a malignant one spare the patient?** In general a patient survives a benign tumor, whereas a malignant one can be fatal.<!--c:benign-vs-malignant-tumors-c037--> Location can make a meningioma deadly: pressing on a vital brain structure, even a benign one may kill.<!--c:benign-vs-malignant-tumors-c038--> Hydrocephalus from CSF blockage is how even a tiny benign third-ventricle ependymoma can kill.<!--c:benign-vs-malignant-tumors-c039--> A left atrial myxoma, though benign, can cause sudden death by obstructing mitral inflow.<!--c:benign-vs-malignant-tumors-c040--> An insulinoma (abrupt hypoglycemia) or a pheochromocytoma (hypertensive crisis) can endanger life, though both are benign.<!--c:benign-vs-malignant-tumors-c041--> Some thyroid and prostate cancers are so indolent that they never threaten life.<!--c:benign-vs-malignant-tumors-c042--> Skin basal cell carcinoma rarely metastasizes, though it can invade nearby structures.<!--c:benign-vs-malignant-tumors-c043--> A cervical carcinoma growing locally may block the ureters.<!--c:benign-vs-malignant-tumors-c044--> A lung cancer can erode a vessel (severe hemorrhage) or a bronchus (bronchopleural fistula).<!--c:benign-vs-malignant-tumors-c045-->
 
 ## Diagnosis, key lab and imaging
 
-**How sure is the call?** Some tumors defeat any pathologist and await the clinical outcome; most are easy or settled by extra study.<!--c:benign-vs-malignant-tumors-c046--> A pancreatic islet cell tumor, like many endocrine tumors, shows its nature only by metastasizing or not; histology cannot predict spread.<!--c:benign-vs-malignant-tumors-c047--> After the primary tumor is treated, blood PSA (prostate), CA 125 (ovary) and CEA (gut) levels are followed to detect progression or metastasis.<!--c:benign-vs-malignant-tumors-c048--> Tumor products in the blood can help follow a known cancer, but they have worked less well for screening whole populations.<!--c:benign-vs-malignant-tumors-c049-->
+**How sure is the call?** Some tumors defeat any pathologist and await the clinical outcome; most are easy or settled by extra study.<!--c:benign-vs-malignant-tumors-c046--> In many endocrine tumors, islet cell tumors included, histology cannot predict spread, so only metastasis settles it.<!--c:benign-vs-malignant-tumors-c047--> Blood PSA (prostate), CA 125 (ovary) and CEA (gut) are tracked in treated patients to catch progression or metastasis.<!--c:benign-vs-malignant-tumors-c048--> Screening whole populations with blood tumor products has worked poorly, though the same tests can help follow a known cancer.<!--c:benign-vs-malignant-tumors-c049-->
 
 ## Complications and prognosis
 
@@ -61,7 +61,7 @@ lang: en
 | Entity | Discriminating features | Key test |
 |---|---|---|
 | [[carcinoma-in-situ]] | In carcinoma in situ, abnormal cells fill every layer of the epithelium but the basement membrane stops them at the border.<!--c:benign-vs-malignant-tumors-c059--> | Histology of the basement membrane |
-| Nodular fasciitis | Reactive; its histology can look worse than many fibrosarcomas.<!--c:benign-vs-malignant-tumors-c060--> | Histology |
+| Nodular fasciitis | Many fibrosarcomas look milder on a slide than this reactive lesion.<!--c:benign-vs-malignant-tumors-c060--> | Histology |
 | Well-differentiated endocrine adenocarcinoma | Pathology alone cannot always separate it from a benign adenoma.<!--c:benign-vs-malignant-tumors-c061--> | Clinical behavior |
 
 ## High-yield summary

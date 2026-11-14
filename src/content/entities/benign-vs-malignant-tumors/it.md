@@ -1,11 +1,11 @@
 ---
 lang: it
-translatedFrom: 83d72bf1fdccb10b1cb21a4e149c592fbfcd9ef1a40365babc285243f86133f2
+translatedFrom: fb30445ef65f899dce2d662455cdfa22a6cf94f86b5884a3bad0fb5dc84bfaa4
 ---
 
 ## Definizione ed epidemiologia
 
-**Che cosa distingue una neoplasia benigna da una maligna?** Una neoplasia benigna resta nella sede di origine: non penetra nei tessuti vicini e non manda cellule negli organi a distanza.<!--c:benign-vs-malignant-tumors-c001--> Una neoplasia maligna invade i tessuti circostanti e dissemina in sedi lontane, dove le colonie crescono e invadono di nuovo.<!--c:benign-vs-malignant-tumors-c002--> Poiché le definizioni si riferiscono al comportamento e non alla morfologia, benigno o maligno permette di prevedere il decorso e l'esito di una neoplasia.<!--c:benign-vs-malignant-tumors-c003--> Le neoplasie benigne di solito somigliano di più al tessuto di origine, quindi sono meglio differenziate.<!--c:benign-vs-malignant-tumors-c004-->
+**Che cosa distingue una neoplasia benigna da una maligna?** Una neoplasia benigna resta nella sede di origine: non penetra nei tessuti vicini e non manda cellule negli organi a distanza.<!--c:benign-vs-malignant-tumors-c001--> Una neoplasia maligna metastatizza; le colonie a distanza continuano a crescere e a invadere, come fa il tumore primitivo in sede.<!--c:benign-vs-malignant-tumors-c002--> Poiché le definizioni si riferiscono al comportamento e non alla morfologia, benigno o maligno permette di prevedere il decorso e l'esito di una neoplasia.<!--c:benign-vs-malignant-tumors-c003--> Le neoplasie benigne di solito somigliano di più al tessuto di origine, quindi sono meglio differenziate.<!--c:benign-vs-malignant-tumors-c004-->
 
 ## Eziologia e fattori di rischio
 
@@ -17,22 +17,22 @@ translatedFrom: 83d72bf1fdccb10b1cb21a4e149c592fbfcd9ef1a40365babc285243f86133f2
 
 ## Morfologia macroscopica
 
-**Che cosa mostra l'occhio nudo?** Quando una neoplasia maligna esce dall'organo di origine, possono essere coinvolti i tessuti adiacenti.<!--c:benign-vs-malignant-tumors-c011--> A monte di un carcinoma del colon l'intestino è dilatato, perché la neoplasia restringe il lume.<!--c:benign-vs-malignant-tumors-c012--> Le cellule del cancro ovarico che disseminano nella cavità peritoneale formano piccoli depositi metastatici sul mesentere.<!--c:benign-vs-malignant-tumors-c013-->
+**Che cosa mostra l'occhio nudo?** Quando una neoplasia maligna esce dall'organo di origine, possono essere coinvolti i tessuti adiacenti.<!--c:benign-vs-malignant-tumors-c011--> A monte di un carcinoma del colon l'intestino è dilatato, perché la neoplasia restringe il lume.<!--c:benign-vs-malignant-tumors-c012--> Un cancro ovarico disseminato nella cavità addominale può impiantarsi come piccoli noduli sul mesentere.<!--c:benign-vs-malignant-tumors-c013-->
 
 ## Morfologia microscopica
 
 **Come le distinguiamo al microscopio?**
 
-- **Differenziazione e atipia:** l'atipia è lo scostamento della neoplasia dal suo equivalente normale, e in genere più atipia significa maggiore aggressività.<!--c:benign-vs-malignant-tumors-c014--> Le cellule del condrosarcoma hanno forme strane e nuclei irregolari e scuri; il condroma benigno è quasi identico alla cartilagine normale.<!--c:benign-vs-malignant-tumors-c015-->
+- **Differenziazione e atipia:** l'atipia indica quanto una neoplasia differisce dal tessuto normale; in genere più atipia significa più aggressività.<!--c:benign-vs-malignant-tumors-c014--> Le cellule del condrosarcoma hanno forme strane e nuclei irregolari e scuri; il condroma benigno è quasi identico alla cartilagine normale.<!--c:benign-vs-malignant-tumors-c015-->
 - **Pleomorfismo:** dimensioni e forma di cellule e nuclei non sono uniformi.<!--c:benign-vs-malignant-tumors-c016-->
 - **Rapporto N/C:** il nucleo è ingrandito rispetto alla quantità di citoplasma.<!--c:benign-vs-malignant-tumors-c017-->
 - **Ipercromasia:** i nuclei si colorano intensamente.<!--c:benign-vs-malignant-tumors-c018-->
 - **Cromatina e nucleoli:** i nucleoli sono evidenti e la cromatina forma grossolani addensamenti.<!--c:benign-vs-malignant-tumors-c019-->
 - **Mitosi atipiche:** le figure mitotiche vanno oltre la semplice forma bipolare.<!--c:benign-vs-malignant-tumors-c020-->
 - **Cellule bizzarre:** possono comparire cellule giganti neoplastiche e altre cellule di forma strana.<!--c:benign-vs-malignant-tumors-c021-->
-- **Attività mitotica:** in molte neoplasie maligne le figure mitotiche sono presenti in numero anormalmente alto.<!--c:benign-vs-malignant-tumors-c022--> Il leiomiosarcoma può essere definito maligno già con pochissime mitosi.<!--c:benign-vs-malignant-tumors-c023--> Alcune neoplasie maligne vengono diagnosticate senza un'evidente attività proliferativa.<!--c:benign-vs-malignant-tumors-c024-->
-- **Architettura:** le neoplasie maligne crescono spesso in modo disorganizzato, per esempio in lamine solide di cellule, di frequente raggruppate attorno ai vasi.<!--c:benign-vs-malignant-tumors-c025--> Alcune neoplasie maligne vanno incontro a necrosi ischemica per scarso apporto di sangue.<!--c:benign-vs-malignant-tumors-c026-->
-- **Invasione:** in particolare l'invasione dei vasi sanguigni o linfatici orienta verso la malignità.<!--c:benign-vs-malignant-tumors-c027--> Nel carcinoma follicolare della tiroide l'invasione locale è un criterio importante di malignità.<!--c:benign-vs-malignant-tumors-c028-->
+- **Attività mitotica:** molte neoplasie maligne mostrano un numero insolitamente alto di mitosi.<!--c:benign-vs-malignant-tumors-c022--> Il leiomiosarcoma può essere definito maligno già con pochissime mitosi.<!--c:benign-vs-malignant-tumors-c023--> Alcune neoplasie maligne vengono diagnosticate senza un'evidente attività proliferativa.<!--c:benign-vs-malignant-tumors-c024-->
+- **Architettura:** attorno ai vasi o in lamine, le cellule maligne crescono spesso senza un'architettura ordinata.<!--c:benign-vs-malignant-tumors-c025--> Alcune neoplasie maligne vanno incontro a necrosi ischemica per scarso apporto di sangue.<!--c:benign-vs-malignant-tumors-c026-->
+- **Invasione:** in particolare l'invasione dei vasi sanguigni o linfatici orienta verso la malignità.<!--c:benign-vs-malignant-tumors-c027--> L'invasione locale è un segno chiave di malignità nel carcinoma follicolare della tiroide.<!--c:benign-vs-malignant-tumors-c028-->
 - **La metastasi** è la prova che una neoplasia è maligna.<!--c:benign-vs-malignant-tumors-c029-->
 
 ## Colorazioni speciali, IIC e reperti molecolari
@@ -41,17 +41,17 @@ translatedFrom: 83d72bf1fdccb10b1cb21a4e149c592fbfcd9ef1a40365babc285243f86133f2
 
 - **Come si studia:** i criteri per definire una neoplasia benigna o maligna sono empirici: derivano dall'esperienza su come si sono comportate le neoplasie, non da una teoria.<!--c:benign-vs-malignant-tumors-c030-->
 - Per stabilire la linea cellulare di un tumore si usano test basati su anticorpi e analisi molecolari.<!--c:benign-vs-malignant-tumors-c031-->
-- In H&E una metastasi di carcinoma vescicale poco differenziato non era riconoscibile come carcinoma; la colorazione per le citocheratine l'ha identificata.<!--c:benign-vs-malignant-tumors-c032-->
+- La colorazione per le citocheratine può rivelare un carcinoma che l'H&E da sola lascia incerto, come in una metastasi vescicale poco differenziata.<!--c:benign-vs-malignant-tumors-c032-->
 - In un melanoma metastatico privo di pigmento, l'espressione di S-100 indica comunque l'origine melanocitaria.<!--c:benign-vs-malignant-tumors-c033-->
-- Nell'analisi dei tumori, gli studi sui marcatori svolgono ormai quasi tutto il lavoro che un tempo spettava alla **microscopia elettronica**.<!--c:benign-vs-malignant-tumors-c034--> Questa può ancora mostrare desmosomi e complessi giunzionali, spesso presenti nei carcinomi e tipicamente assenti nei sarcomi e nei linfomi.<!--c:benign-vs-malignant-tumors-c035--> I melanomi contengono melanosomi o premelanosomi.<!--c:benign-vs-malignant-tumors-c036-->
+- Nell'analisi dei tumori, gli studi sui marcatori svolgono ormai quasi tutto il lavoro che un tempo spettava alla **microscopia elettronica**.<!--c:benign-vs-malignant-tumors-c034--> Sarcomi e linfomi di norma non hanno desmosomi e complessi giunzionali, che la microscopia elettronica può mostrare in molti carcinomi.<!--c:benign-vs-malignant-tumors-c035--> I melanomi contengono melanosomi o premelanosomi.<!--c:benign-vs-malignant-tumors-c036-->
 
 ## Presentazione clinica
 
-**Una neoplasia benigna può uccidere e una maligna risparmiare il paziente?** In generale un paziente sopravvive a una neoplasia benigna, mentre una maligna può essere fatale.<!--c:benign-vs-malignant-tumors-c037--> La sede può rendere letale un meningioma: se comprime una struttura vitale dell'encefalo, anche uno benigno può uccidere.<!--c:benign-vs-malignant-tumors-c038--> Anche un ependimoma benigno molto piccolo del terzo ventricolo può uccidere ostruendo il flusso del liquor e causando idrocefalo.<!--c:benign-vs-malignant-tumors-c039--> Un mixoma benigno dell'atrio sinistro può uccidere all'improvviso se occlude l'apertura della valvola mitrale.<!--c:benign-vs-malignant-tumors-c040--> Un insulinoma (ipoglicemia improvvisa) o un feocromocitoma (crisi ipertensiva) possono mettere a rischio la vita, pur essendo benigni.<!--c:benign-vs-malignant-tumors-c041--> Alcuni tumori della tiroide e della prostata progrediscono così lentamente che il paziente non corre mai pericolo.<!--c:benign-vs-malignant-tumors-c042--> Il carcinoma basocellulare della cute metastatizza raramente, ma può invadere le strutture vicine.<!--c:benign-vs-malignant-tumors-c043--> Un carcinoma della cervice uterina che cresce localmente può ostruire gli ureteri.<!--c:benign-vs-malignant-tumors-c044--> L'erosione di un vaso da parte di un cancro del polmone può causare un'emorragia grave, e la penetrazione in un bronco una fistola broncopleurica.<!--c:benign-vs-malignant-tumors-c045-->
+**Una neoplasia benigna può uccidere e una maligna risparmiare il paziente?** In generale un paziente sopravvive a una neoplasia benigna, mentre una maligna può essere fatale.<!--c:benign-vs-malignant-tumors-c037--> La sede può rendere letale un meningioma: se comprime una struttura vitale dell'encefalo, anche uno benigno può uccidere.<!--c:benign-vs-malignant-tumors-c038--> L'idrocefalo da blocco del liquor è il modo in cui può uccidere anche un piccolissimo ependimoma benigno del terzo ventricolo.<!--c:benign-vs-malignant-tumors-c039--> Un mixoma atriale sinistro, pur benigno, può causare morte improvvisa ostruendo l'afflusso mitralico.<!--c:benign-vs-malignant-tumors-c040--> Un insulinoma (ipoglicemia improvvisa) o un feocromocitoma (crisi ipertensiva) possono mettere a rischio la vita, pur essendo benigni.<!--c:benign-vs-malignant-tumors-c041--> Alcuni tumori maligni della tiroide e della prostata sono così indolenti da non minacciare mai la vita.<!--c:benign-vs-malignant-tumors-c042--> Il carcinoma basocellulare della cute metastatizza raramente, ma può invadere le strutture vicine.<!--c:benign-vs-malignant-tumors-c043--> Un carcinoma della cervice uterina che cresce localmente può ostruire gli ureteri.<!--c:benign-vs-malignant-tumors-c044--> L'erosione di un vaso da parte di un cancro del polmone può causare un'emorragia grave, e la penetrazione in un bronco una fistola broncopleurica.<!--c:benign-vs-malignant-tumors-c045-->
 
 ## Diagnosi, laboratorio e imaging
 
-**Quanto è sicura la diagnosi?** Alcune neoplasie mettono in difficoltà qualsiasi patologo e attendono l'evoluzione clinica; la maggior parte è facile o si risolve con ulteriori approfondimenti.<!--c:benign-vs-malignant-tumors-c046--> Come molti tumori endocrini, il tumore delle insule pancreatiche rivela la propria natura solo se metastatizza o no, perché l'istologia non prevede la diffusione.<!--c:benign-vs-malignant-tumors-c047--> Dopo il trattamento del tumore primitivo si seguono i livelli ematici di PSA (prostata), CA 125 (ovaio) e CEA (apparato digerente) per individuare progressione o metastasi.<!--c:benign-vs-malignant-tumors-c048--> I prodotti tumorali nel sangue possono aiutare a seguire un cancro noto, ma hanno funzionato meno bene per lo screening dell'intera popolazione.<!--c:benign-vs-malignant-tumors-c049-->
+**Quanto è sicura la diagnosi?** Alcune neoplasie mettono in difficoltà qualsiasi patologo e attendono l'evoluzione clinica; la maggior parte è facile o si risolve con ulteriori approfondimenti.<!--c:benign-vs-malignant-tumors-c046--> In molti tumori endocrini, compresi quelli delle insule pancreatiche, l'istologia non prevede la diffusione e solo la metastasi dirime il dubbio.<!--c:benign-vs-malignant-tumors-c047--> PSA (prostata), CA 125 (ovaio) e CEA (apparato digerente) si dosano nel sangue dei pazienti trattati per cogliere progressione o metastasi.<!--c:benign-vs-malignant-tumors-c048--> Lo screening di intere popolazioni con i prodotti tumorali nel sangue ha dato risultati scarsi, mentre gli stessi esami aiutano a seguire un cancro noto.<!--c:benign-vs-malignant-tumors-c049-->
 
 ## Complicanze e prognosi
 
@@ -62,7 +62,7 @@ translatedFrom: 83d72bf1fdccb10b1cb21a4e149c592fbfcd9ef1a40365babc285243f86133f2
 | Entità | Caratteristiche distintive | Esame chiave |
 |---|---|---|
 | [[carcinoma-in-situ]] | Nel carcinoma in situ le cellule anomale occupano tutti gli strati dell'epitelio, ma la membrana basale le ferma al confine.<!--c:benign-vs-malignant-tumors-c059--> | Istologia della membrana basale |
-| Fascite nodulare | Processo reattivo il cui quadro istologico può essere più allarmante di quello di molti fibrosarcomi.<!--c:benign-vs-malignant-tumors-c060--> | Istologia |
+| Fascite nodulare | Molti fibrosarcomi appaiono meno allarmanti all'istologia di questa lesione reattiva.<!--c:benign-vs-malignant-tumors-c060--> | Istologia |
 | Adenocarcinoma endocrino ben differenziato | La sola anatomia patologica non sempre lo distingue da un adenoma benigno.<!--c:benign-vs-malignant-tumors-c061--> | Comportamento clinico |
 
 ## Punti chiave
