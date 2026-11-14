@@ -1,0 +1,130 @@
+id: cardiac-tumors
+module: o17
+tier: core
+kind: disease
+names:
+  it: "Tumori cardiaci"
+  en: "Cardiac tumors"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: []
+summary:
+  it: "Neoplasie rare del cuore, in gran parte benigne (mixoma, rabdomioma, fibroelastoma papillare), molto meno frequenti delle metastasi cardiache; gli effetti clinici derivano da ostruzione, embolia e interferenza con il sistema di conduzione."
+  en: "Rare tumors of the heart, mostly benign (myxoma, rhabdomyoma, papillary fibroelastoma) and far less frequent than cardiac metastases; clinical effects come from obstruction, embolism and interference with the conduction system."
+lenses:
+  system: [heart]
+  process: [neoplasia]
+  pattern: []
+  presentation: [ischemic-event, mass-lesion]
+  marker: [ihc]
+  group: [neoplastic, genetic]
+learningObjectives:
+  - it: "Distinguere mixoma, rabdomioma e fibroelastoma papillare per sede, aspetto macroscopico e istologia."
+    en: "Tell myxoma, rhabdomyoma and papillary fibroelastoma apart by site, gross appearance and histology."
+  - it: "Collegare il rabdomioma alla sclerosi tuberosa (TSC1/TSC2) e il mixoma al complesso di Carney (PRKAR1A)."
+    en: "Link rhabdomyoma to tuberous sclerosis (TSC1/TSC2) and myxoma to Carney complex (PRKAR1A)."
+  - it: "Spiegare gli effetti clinici dei tumori cardiaci: ostruzione valvolare, embolia e disturbi di conduzione."
+    en: "Explain the clinical effects of cardiac tumors: valve obstruction, embolism and conduction disturbances."
+  - it: "Riconoscere che le metastasi sono molto più frequenti dei tumori primitivi e indicare il tumore che metastatizza più facilmente al cuore."
+    en: "Recognize that metastases are far more common than primary tumors and name the tumor most likely to metastasize to the heart."
+prerequisites: [benign-vs-malignant-tumors]
+relations:
+  - type: sharesMechanism
+    target: inherited-cancer-syndromes
+    note:
+      it: "Il complesso di Carney e la sclerosi tuberosa sono sindromi con mutazioni germinali di geni oncosoppressori."
+      en: "Carney complex and tuberous sclerosis are syndromes with germline tumor suppressor gene mutations."
+  - type: mimics
+    target: restrictive-cardiomyopathy
+    note:
+      it: "Metastasi miocardiche con fibrosi estesa possono simulare una cardiomiopatia restrittiva."
+      en: "Myocardial metastases with extensive fibrosis can mimic restrictive cardiomyopathy."
+quickCheck:
+  - id: cardiac-tumors-q1
+    q:
+      it: "Qual è il tumore cardiaco primitivo più frequente e dove si trova di solito?"
+      en: "What is the most common primary cardiac tumor, and where does it usually sit?"
+    a:
+      it: "Il mixoma, nella maggior parte dei casi nell'atrio sinistro."
+      en: "The myxoma, most often in the left atrium."
+    kind: short
+  - id: cardiac-tumors-q2
+    q:
+      it: "Quale reperto istologico caratterizza il rabdomioma e con quale sindrome si associa?"
+      en: "Which histologic finding marks the rhabdomyoma, and which syndrome is it associated with?"
+    a:
+      it: "Le cellule a ragno (spider cells); si associa alla sclerosi tuberosa."
+      en: "The spider cell; it is associated with tuberous sclerosis."
+    kind: short
+  - id: cardiac-tumors-q3
+    q:
+      it: "Quale tumore ha la maggiore probabilità di dare metastasi al cuore?"
+      en: "Which tumor is most likely to metastasize to the heart?"
+    a:
+      it: "Il melanoma maligno."
+      en: "Malignant melanoma."
+    kind: short
+  - id: cardiac-tumors-q4
+    q:
+      it: "Il fibroelastoma papillare è una vera neoplasia? Che cosa può provocare?"
+      en: "Is a papillary fibroelastoma a true neoplasm, and what can it cause?"
+    a:
+      it: "No, è un amartoma delle valvole. Di solito è silente, ma può embolizzare o ostruire l'orifizio di una coronaria."
+      en: "No, it is a hamartoma of the valves. It is usually silent, but it can embolize or block a coronary opening."
+    kind: short
+  - id: cardiac-tumors-q5
+    q:
+      it: "Quale sindrome è associata a una minoranza di mixomi e quale gene è coinvolto?"
+      en: "Which syndrome accounts for a minority of myxomas, and which gene is involved?"
+    a:
+      it: "Il complesso di Carney, autosomico dominante, con mutazioni germinali inattivanti di PRKAR1A."
+      en: "Carney complex, autosomal dominant, with inactivating germline mutations of PRKAR1A."
+    kind: short
+selfExplain:
+  - it: "Perché un mixoma dell'atrio sinistro può causare sia disfunzione mitralica sia ictus?"
+    en: "Why can a left atrial myxoma cause both mitral valve dysfunction and stroke?"
+  - it: "Perché un fibroelastoma papillare può causare ischemia miocardica senza essere una neoplasia vera?"
+    en: "Why can a papillary fibroelastoma cause myocardial ischemia without being a true neoplasm?"
+examQuestions:
+  - it: "Mi parli del mixoma cardiaco: sede, aspetto macroscopico e istologia."
+    en: "Tell me about cardiac myxoma: site, gross appearance and histology."
+    focus: [definition, gross, micro]
+    level: 1
+  - it: "Mi parli del rabdomioma cardiaco: a quale sindrome si associa e che cosa vede al microscopio?"
+    en: "Tell me about cardiac rhabdomyoma: which syndrome is it linked to, and what do you see under the microscope?"
+    focus: [etiology, micro]
+    level: 1
+  - it: "Come distingue un fibroelastoma papillare da un mixoma?"
+    en: "How do you tell a papillary fibroelastoma from a myxoma?"
+    focus: [gross, micro, differential]
+    level: 3
+  - it: "Quali tumori si trovano più spesso nel cuore e quale metastatizza più facilmente al cuore?"
+    en: "Which tumors are most often found in the heart, and which one is most likely to metastasize to it?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Perché un mixoma dell'atrio sinistro può dare sintomi mitralici ed eventi embolici?"
+    en: "Why can a left atrial myxoma cause mitral symptoms and embolic events?"
+    focus: [gross, clinical, prognosis]
+    level: 2
+  - it: "Quali effetti clinici possono avere le metastasi cardiache e il fibroelastoma papillare?"
+    en: "What clinical effects can cardiac metastases and a papillary fibroelastoma have?"
+    focus: [clinical]
+    level: 3
+images:
+  - id: cardiac-tumors-gross-1
+    role: gross
+    pairWith: cardiac-tumors-micro-1
+  - id: cardiac-tumors-micro-1
+    role: micro
+  - id: cardiac-tumors-micro-2
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "17"
+    pages: "690-691"
+lastUpdated: 2026-11-14
+status: published
