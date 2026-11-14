@@ -122,22 +122,40 @@ Goal: `mount()` and the `Controller` of spec §6, with the look of spec §7.
 Do: named imports from `three`, `GLTFLoader` and the meshopt decoder from `three/addons`. Shell material: a small `ShaderMaterial` (Fresnel, transparent, no depth write, drawn last). Organs: `MeshLambertMaterial`, one per role, colours from `opts.colors`; `setColors()` for a theme change. Outline of the selected organ: a back-face copy scaled along the normals. Use `roles`, `selectable` and `cameraFor` from `body-view.ts`; no selection logic here. Render on demand; `ResizeObserver`; pixel ratio ≤ 2; `webglcontextlost` rejects to the caller; `dispose()` frees geometries, materials and the renderer. Load `shell.glb` first, a system file on first `showSystem`, all systems lazily for the whole-body view (after the shell is shown). In the whole-body view `skeletal-muscle` and `bones` are ghosts like the organs of other systems, because solid they hide everything else (spec §7).
 Acceptance: `npx astro check` 0 errors. The lead tries it through the page after B-4c.
 
-### B-4c: the element and its markup (coder)
-Depends: B-4b
-Files: src/scripts/body-viewer.ts, src/components/body/BodyViewer.astro, src/pages/[lang]/body/index.astro, src/styles/body.css, src/i18n/body.ts
-Goal: `<ap-body>` per spec §5 and §6: poster, load rule, buttons, keys, hash, status line, fallback.
-Do: follow `src/scripts/structure-viewer.ts` (same load button, status announcements, key handling and error path). The element reads the tree from the DOM (no second data source). Selection goes through `location.hash` only. With the viewer on, show only the selected system's section (attribute on `<ap-body>`, styled in CSS; printing shows all). Start rule of spec §1; the off choice in `localStorage` inside `try`. Reflect `data-system`, `data-organ`, `data-webgl`. Colours: read the tokens with `getComputedStyle`, again on a theme change.
-Acceptance: `npx astro check` 0 errors.
+### B-4c1: the stage markup and styles (coder)
+Depends: B-4b. The lead has put `public/anatomy/poster-light.{avif,webp}` and `poster-dark.{avif,webp}` in place (960 × 1200, transparent, the whole-body front view); B-4d's script regenerates them later.
+Files: src/components/body/BodyViewer.astro, src/pages/[lang]/body/index.astro, src/styles/body.css, src/i18n/body.ts
+Goal: the stage of spec §5 as static HTML, phone first, with no script; the element script is B-4c2.
+Do:
+- `BodyViewer.astro` (props `lang`, `credit` = the `credit` string of `public/anatomy/manifest.json`, read at build time like `src/lib/body-map.ts` does) renders, in this order: `<figure class="body-stage" data-stage tabindex="0" aria-label aria-describedby="body-help">` holding two `<picture data-poster>` (classes `poster-light` and `poster-dark`; AVIF and WebP sources; `<img width="960" height="1200" alt="">`, the figure carries the name), `<canvas data-canvas hidden>` and `<p class="body-label" data-label hidden>`; `<p id="body-help">` (what the keys do); `<div class="body-controls" role="group" aria-label>` with `<button type="button" data-load>` ("Explore in 3D") and the action buttons `data-act` = left, right, up, down, in, out, front, back, side, reset, prev, next, plus `data-off` ("Turn 3D off"), all `hidden` except `data-load` (the script shows them); `<p data-status role="status">`; `<p class="body-credit">` with the credit lines and a link to `about/licenses/`. Build the file URLs with the helper the other components use (see how `StructureViewer.astro` builds its poster URL).
+- Messages the script will need go on `<ap-body>` as `data-t-*` attributes, the way `structure-viewer.ts` reads `dataset.tNone`: `tLoading`, `tReady`, `tOff`, `tError`, `tLost`, `tNoModel`, `tWhole`, `tOrgan` ("{organ}: {n} cards", {organ} and {n} filled by the script), `tSystem`.
+- `index.astro`: `<ap-body data-manifest={url of anatomy/manifest.json} data-t-…>`, `<BodyViewer>` first, then the tree. Do not change `BodyTree.astro`.
+- `body.ts` (i18n): every new string in both languages (button names such as "Rotate left", the key help, the messages above, the credit lines: "BodyParts3D, © The Database Center for Life Science licensed under CC Attribution 4.0 International", "Female organs: HRA 3D Reference Object Library v2.5, CC BY 4.0, fitted into the base body and simplified by this project.", "Changes: merged, simplified, recoloured, moved and scaled.").
+- `body.css`, phone first (spec §7): `.body-stage` full width, `aspect-ratio: 4 / 5`, `max-height: 70svh`, `position: relative`, `touch-action: pan-y`; poster and canvas stacked in one grid cell, the poster above; the dark poster replaces the light one under `@media (prefers-color-scheme: dark)` unless `:root[data-theme='light']`, and under `:root[data-theme='dark']` (as `tokens.css` does); controls one row, buttons 2.75rem high, `overflow-x: auto`, the existing button classes, focus ring `--focus`; `.body-label` absolute, `--font-display`; the credit small and muted. No layout shift when the script starts: the stage reserves its box with `aspect-ratio`, the control row has `min-height: 2.75rem`, the status line `min-height: 1.5em`. Wide screens (≥ 48rem): stage on the left (at most 30rem, sticky below the top bar), the tree on the right, chips above both. No horizontal scroll at 320 px. The viewer is not printed.
+Acceptance: `npx astro check` 0 errors; `npx vitest run tests/body-map.test.ts tests/anatomy.test.ts`. The lead looks at the page at 375 and 1280 px in both themes and runs `tests/e2e/body.spec.ts`.
+
+### B-4c2: the element (coder)
+Depends: B-4c1
+Files: src/scripts/body-viewer.ts, src/pages/[lang]/body/index.astro, src/styles/body.css
+Goal: `<ap-body>` per spec §5 and §6: load rule, buttons, keys, hash, status line, fallback.
+Do: follow `src/scripts/structure-viewer.ts` (load button, `role=status` messages read from `data-t-*`, key handling, error path) and include the script in the page the way the structure viewer's page does. Read `Options` and `Controller` in `src/scripts/body-3d.ts` and the helpers of `src/lib/body-view.ts`. Decisions already made:
+- The element reads the tree from the DOM, no second data source: a manifest-like `{ organs: { [id]: { system, kind, of: [], inside: null } } }` built from `section[data-system] > section[data-organ]` is enough for `parseHash`, `toHash` and `step`. `published` for the scene: the ids of the organ sections that hold a `.body-cards li`; `labelAt` places `[data-label]` (text = the organ's name from its `h3`); `onLost` shows the poster, the `tLost` message, and the load button as "try again".
+- Selection goes through `location.hash` only; `hashchange` and the first load read it with `parseHash`, reflect it in `data-system` and `data-organ` on `<ap-body>`, call `showSystem(system)` when the system changed, then `select(organ)`, and say `tOrgan` or `tNoModel` in the status line. With the viewer running only the selected system's section is shown (set `hidden` on the others; with no system selected only chips, stage and the closing section show); with the viewer off or not started every section stays visible, as before.
+- Start rule of spec §1: from 48rem (`matchMedia('(min-width: 48rem)')`) start when idle (`requestIdleCallback`, fallback `setTimeout`); below it only on a click on the poster or on `data-load`. Never when `navigator.connection?.saveData` is true or `localStorage['ap-body-3d']` is `'off'` (every `localStorage` call inside `try`). `data-off` disposes the controller, shows the poster again, stores `'off'`, and `data-load` starts again and clears it.
+- Start: set `data-loading` on the stage, unhide the canvas BEFORE `mount()` so it has a size while the poster still covers it, `await import('./body-3d.ts')`, then `mount(canvas, { manifestUrl, reducedMotion, colors, published, labelAt, onLost })`; on success hide the posters, set `data-webgl="on"`, show the action buttons and hide `data-load`; on any failure hide the canvas, keep poster, tree and chips, set `data-webgl="off"`, say `tError`. `mount()` resolves after the first frame.
+- Colours: the tokens hold `light-dark(...)` text, which three.js cannot parse. Resolve `--eosin`, `--hema`, `--ink`, `--surface-2` through a probe element: set `probe.style.color = 'var(--eosin)'` and read `getComputedStyle(probe).color` (an `rgb(...)` string); pass them as `{ eosin, hema, ink, surface2 }`. Read them again and call `setColors` when `data-theme` changes on `<html>` (MutationObserver) or the system scheme changes (`matchMedia('(prefers-color-scheme: dark)')`).
+- Keys on the stage, per spec §6: arrows rotate, `+` `=` `-` `0` zoom and reset, `[` and `]` step through `controller.organs()` with `step` and set the hash, `Escape` clears the organ (the hash falls back to the system). `data-act` buttons call `controller.act`; `prev` and `next` do what `[` and `]` do. Reduced motion comes from `matchMedia('(prefers-reduced-motion: reduce)')`.
+Acceptance: `npx astro check` 0 errors. The lead runs the page in the browser (with software WebGL) and checks start, a system, an organ, Back, 3D off.
 
 ### B-4d: offline and budgets (coder)
-Depends: B-4c
+Depends: B-4c2
 Files: scripts/sw-manifest.mjs, tests/sw-manifest.test.ts, tests/dist/body.test.ts, scripts/anatomy/poster.mjs
 Goal: the viewer chunk and the meshes are cached on first use, never in the shell; budgets are tests; the poster exists.
 Do: extend `LAZY_ONLY` to the `body-3d` chunk and `isLazyCached` to `anatomy/`; the offline pack of the body page lists its files (follow the pathway pack). `tests/dist/body.test.ts`: budgets of spec §4 and §9 on `dist/`. `poster.mjs`: with Playwright Chromium, open the built page, start the viewer, wait for `data-webgl="on"`, screenshot the stage in both themes at 2× and write AVIF and WebP with `sharp` into `public/anatomy/`.
 Acceptance: `npx vitest run tests/sw-manifest.test.ts` passes; the lead runs `npm run build && npm run test:dist`, and the poster script inside the Playwright container.
 
 ### B-4e: viewer tests (coder)
-Depends: B-4c
+Depends: B-4c2
 Files: tests/e2e/body-viewer.spec.ts
 Goal: the e2e rows of spec §9.
 Do: a helper starts the viewer and returns whether `data-webgl` is `on`; canvas-only checks skip otherwise. Tests: chip → `data-system`; organ link → `data-organ` and the label text; `]` moves to the next organ; `Escape` clears; Back restores; with `getContext` stubbed to return null (init script) the poster, the tree and the message stay and nothing throws; with reduced motion no camera animation runs (the status line reports the organ at once); layout shift stays 0 when the canvas replaces the poster; axe has no violation with the viewer on.
@@ -149,7 +167,7 @@ Three fresh read-only lean agents read `src/scripts/body-3d.ts`, `body-viewer.ts
 ## B-5: picking, label, panel
 
 ### B-5a: pointer picking and gestures (coder)
-Depends: B-4c
+Depends: B-4c2
 Files: src/scripts/body-viewer.ts, src/scripts/body-3d.ts, tests/e2e/body-viewer.spec.ts
 Do: tap (moved < 6 px) picks and sets the hash; drag rotates; pinch and wheel-with-ctrl zoom; a plain wheel scrolls the page; hover highlights only for a fine pointer. A tap on nothing clears the organ and keeps the system. Touch per spec §6: `touch-action: pan-y`, a horizontal drag rotates, a vertical swipe scrolls the page, two fingers zoom.
 Acceptance: `npx astro check` 0 errors; one e2e test clicks the stage centre in the whole-body view and expects some `data-organ` (canvas runs only).
@@ -200,7 +218,7 @@ Acceptance: `npx astro check` 0 errors; e2e: an organ link on a card lands on th
 ## B-7: progress on the body
 
 ### B-7a: seen, mastered, due per organ (coder)
-Depends: B-4c
+Depends: B-4c2
 Files: src/scripts/body-progress.ts, src/components/body/BodyTree.astro, src/styles/body.css, src/i18n/body.ts, tests/body-progress.test.ts
 Do: read the learner database the study pages already use (find its module under `src/lib`; no new store, no schema change). A pure function turns its records and the tree's card ids into `{ seen, mastered, due }` per organ and system; the script writes three small counters next to each organ and a "Review this organ" link that opens the existing study session filtered to those cards (use the filter the study page already accepts; if it has none, return `blocked` with what is missing).
 Acceptance: `npx vitest run tests/body-progress.test.ts` on the pure function.
