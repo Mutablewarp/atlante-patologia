@@ -58,7 +58,7 @@ function note(organId: string): string {
       {s.organs.map((o) => (
         <section id={`organ-${o.id}`} data-organ={o.id} data-kind={map.get(o.id)?.kind ?? 'none'}>
           <h3>
-            <a href={`#organ-${o.id}`}>{o.label}</a> <span class="count">{count(o.count)}</span>
+            <a href={`#organ-${o.id}`} data-organ-link>{o.label}</a> <span class="count">{count(o.count)}</span>
           </h3>
           {note(o.id) && <p class="body-note">{note(o.id)}</p>}
           {o.count === 0 ? (

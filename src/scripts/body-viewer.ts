@@ -1,7 +1,8 @@
 /**
  * <ap-body>: the stage of the body page (docs/BODY_SPEC.md §1, §5, §6). Poster, canvas and buttons come as static
  * HTML (components/body/BodyViewer.astro); the tree of systems and organs is the data: the element reads it from the
- * DOM and needs no second source. Selection goes through location.hash only. The 3D part (body-3d.ts, three.js) is
+ * DOM and needs no second source: `section[data-system]` holds elements with `data-organ`, each with a
+ * `[data-organ-link]` (its name) and a `.count`; the body page and the home page both follow it. Selection goes through location.hash only. The 3D part (body-3d.ts, three.js) is
  * a dynamic import started by the load rule: after load and idle with a mouse from 48rem, a click below that or on a
  * touch screen, never with save-data, on a slow network or after "turn 3D off". If anything fails, the poster, the
  * tree and the chips stay.
@@ -128,23 +129,23 @@ class ApBody extends HTMLElement {
   /** The tree is the data: system, organ, and the (empty) `of`/`inside` that parseHash, toHash and step do not use. */
   private readTree(): BodyManifest {
     const organs: BodyManifest['organs'] = {};
-    this.querySelectorAll<HTMLElement>('section[data-system] > section[data-organ]').forEach((o) => {
-      const system = o.parentElement!.dataset.system!;
+    this.querySelectorAll<HTMLElement>('section[data-system] [data-organ]').forEach((o) => {
+      const system = o.closest<HTMLElement>('section[data-system]')!.dataset.system!;
       organs[o.dataset.organ!] = { system, kind: 'none', of: [], inside: null };
     });
     return { organs };
   }
 
   private published(): string[] {
-    return [...this.querySelectorAll<HTMLElement>('section[data-organ]')].filter((o) => o.querySelector('.body-cards li')).map((o) => o.dataset.organ!);
+    return [...this.querySelectorAll<HTMLElement>('[data-organ]')].filter((o) => o.querySelector('.body-cards li') || Number(o.dataset.count) > 0).map((o) => o.dataset.organ!);
   }
 
   private organName(id: string): string {
-    return this.querySelector(`section[data-organ="${CSS.escape(id)}"] > h3 a`)?.textContent?.trim() ?? id;
+    return this.querySelector(`[data-organ="${CSS.escape(id)}"] [data-organ-link]`)?.textContent?.trim() ?? id;
   }
 
   private systemName(id: string): string {
-    const h = this.querySelector(`section[data-system="${CSS.escape(id)}"] > h2`)?.cloneNode(true) as HTMLElement | undefined;
+    const h = this.querySelector(`section[data-system="${CSS.escape(id)}"] > :is(h2, h3)`)?.cloneNode(true) as HTMLElement | undefined;
     h?.querySelector('.count')?.remove();
     return h?.textContent?.trim() ?? id;
   }
@@ -219,8 +220,8 @@ class ApBody extends HTMLElement {
   private mark() {
     const { system, organ } = this.state;
     this.querySelectorAll<HTMLElement>('.body-systems a[data-system]').forEach((a) => flag(a, a.dataset.system === system));
-    this.querySelectorAll<HTMLElement>('section[data-organ]').forEach((o) => {
-      const link = o.querySelector(':scope > h3 a');
+    this.querySelectorAll<HTMLElement>('[data-organ]').forEach((o) => {
+      const link = o.querySelector('[data-organ-link]');
       if (link) flag(link, o.dataset.organ === organ);
     });
   }
@@ -245,10 +246,10 @@ class ApBody extends HTMLElement {
 
   private message(state: BodyState): string {
     if (state.organ) {
-      const section = this.querySelector(`section[data-organ="${CSS.escape(state.organ)}"]`);
+      const section = this.querySelector(`[data-organ="${CSS.escape(state.organ)}"]`);
       const name = this.organName(state.organ);
       if (section?.getAttribute('data-kind') === 'none') return this.dataset.tNoModel!.replace('{organ}', name);
-      const n = section?.querySelector('h3 .count')?.textContent?.trim() ?? '';
+      const n = section?.querySelector('.count')?.textContent?.trim() ?? '';
       return this.dataset.tOrgan!.replace('{organ}', name).replace('{n}', n);
     }
     if (state.system) return this.dataset.tSystem!.replace('{system}', this.systemName(state.system));
@@ -281,7 +282,7 @@ class ApBody extends HTMLElement {
     }
     this.setHash({ system: known.system, organ });
     // The keyboard goes where the choice is described. From 48rem the panel is beside the stage: scrolling to it is wanted.
-    const link = this.querySelector<HTMLElement>(`#organ-${CSS.escape(organ)} > h3 a`);
+    const link = this.querySelector<HTMLElement>(`[data-organ="${CSS.escape(organ)}"] [data-organ-link]`);
     if (matchMedia(WIDE).matches) link?.focus();
     else link?.focus({ preventScroll: true });
   }
