@@ -1,0 +1,378 @@
+entity: hypersensitivity-vasculitis
+claims:
+- claimId: hypersensitivity-vasculitis-c001
+  section: definition
+  statement: "A broad group of vascular inflammations is thought to be provoked by drugs, bacterial products or other foreign agents"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "620" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c002
+  section: definition
+  statement: "When the disease is mostly confined to the skin it is called cutaneous vasculitis, cutaneous necrotizing venulitis or leukocytoclastic vasculitis"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "620" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c003
+  section: definition
+  statement: "Leukocytoclastic means neutrophils are breaking down and leaving fragments"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "620" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c004
+  section: definition
+  statement: "In the term venulitis, venules are the vessels mainly hit"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "620" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c005
+  section: definition
+  statement: "Only the smallest arteries and arterioles are affected in the systemic variant, microscopic polyangiitis"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "620" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c006
+  section: definition
+  statement: "Immune injury to the vessel wall underlies Henoch-Schonlein purpura (allergic purpura)"
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1136" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c007
+  section: etiology
+  statement: "Thiazide diuretics, penicillin and aspirin are examples of medicines that can come before skin vasculitis"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "620" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c008
+  section: etiology
+  statement: "Bacterial endocarditis, tuberculosis, viral hepatitis and strep or staph infections are frequently related to skin vasculitis"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "620" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c009
+  section: etiology
+  statement: "Several cancers, dysproteinemias, Sjogren syndrome, rheumatoid arthritis or lupus can accompany the systemic form, which can also occur alone"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "620" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c010
+  section: etiology
+  statement: "In children, a viral infection often precedes Henoch-Schonlein purpura"
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1136" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c011
+  section: etiology
+  statement: "Drug exposure often lies behind Henoch-Schonlein purpura in adults"
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1136" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c012
+  section: pathogenesis
+  statement: "In Henoch-Schonlein purpura, vessel walls often receive deposits of IgA and complement complexes carried in the blood"
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1136" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c013
+  section: gross
+  statement: "Most of the palpable purpura that marks the skin disease is on the legs"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "620" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c014
+  section: gross
+  statement: "Raised urticarial lesions often appear next to purpuric spots in Henoch-Schonlein purpura"
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1136" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c015
+  section: micro
+  statement: "Acute inflammation and fibrinoid necrosis are found in the superficial venules of the skin"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "620" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c016
+  section: micro
+  statement: "In Henoch-Schonlein purpura the infiltrate around the vessels contains neutrophils and eosinophils"
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1136" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c017
+  section: micro
+  statement: "In Henoch-Schonlein purpura the vessel walls undergo fibrinoid necrosis"
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1136" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c018
+  section: micro
+  statement: "In Henoch-Schonlein purpura platelet plugs sit inside the lumens"
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1136" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c019
+  section: ancillary
+  statement: "P-ANCA is closely linked to microscopic polyangiitis"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "620" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c020
+  section: clinical
+  statement: "Purpuric skin lesions can also be present in the systemic form"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "620" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c021
+  section: clinical
+  statement: "Many of the organs hit in polyarteritis nodosa are also hit by the systemic form"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "620" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c022
+  section: clinical
+  statement: "Gut involvement in Henoch-Schonlein purpura shows as abdominal colic and bleeding"
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1136" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c023
+  section: clinical
+  statement: "Renal failure can result when Henoch-Schonlein purpura involves the kidneys"
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1136" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c024
+  section: clinical
+  statement: "Henoch-Schonlein purpura may be chronic in adults"
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1136" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c025
+  section: diagnosis
+  statement: "Leg purpura that can be felt is the expected skin sign, and biopsy of superficial venules shows fibrinoid necrosis"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "620" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c026
+  section: prognosis
+  statement: "The skin form usually resolves on its own"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "620" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c027
+  section: prognosis
+  statement: "Henoch-Schonlein purpura in children resolves on its own"
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1136" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c028
+  section: prognosis
+  statement: "Renal failure from rapidly progressive glomerulonephritis is the complication most feared in microscopic polyangiitis"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "620" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c029
+  section: differential
+  statement: "Polyarteritis nodosa most often involves the mesentery, skin, skeletal muscle, heart and kidneys"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "620" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c030
+  section: differential
+  statement: "In the systemic hypersensitivity variant, vessels larger than the smallest arteries and arterioles are spared"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "620" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c031
+  section: differential
+  statement: "On serology, microscopic polyangiitis is closely tied to P-ANCA"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "620" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c032
+  section: differential
+  statement: "Giant cell (granulomatous) arteritis most often involves the temporal artery"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "620" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c033
+  section: differential
+  statement: "Giant cell arteritis lacks ANCA"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "620" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c034
+  section: differential
+  statement: "Purpura around hair follicles suggests scurvy, in which too little vitamin C leaves collagen poorly made"
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1136" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c035
+  section: high-yield
+  statement: "On the legs, palpable purpura is the characteristic skin sign of skin vasculitis"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "620" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c036
+  section: high-yield
+  statement: "The word leukocytoclastic denotes remnants of neutrophils that are breaking apart"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "620" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c037
+  section: high-yield
+  statement: "The microscopic hallmark is acute inflammation with fibrinoid necrosis of venules near the skin surface"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "620" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c038
+  section: high-yield
+  statement: "Medicines and several infections precede skin vasculitis"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "620" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c039
+  section: high-yield
+  statement: "In Henoch-Schonlein purpura, vessel walls collect IgA and complement complexes"
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1136" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c040
+  section: high-yield
+  statement: "Henoch-Schonlein purpura can reach the gut, with colic and bleeding, and the kidneys, with renal failure"
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1136" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c041
+  section: high-yield
+  statement: "Skin vasculitis is generally self-limited"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "620" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c042
+  section: traps
+  statement: "In the skin form it is mostly the venules that are involved"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "620" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c043
+  section: traps
+  statement: "The systemic form does not extend past the smallest arteries and arterioles"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "620" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c044
+  section: traps
+  statement: "Skin vasculitis normally runs a self-limited course"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "620" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c045
+  section: traps
+  statement: "When Henoch-Schonlein purpura affects the kidneys, renal failure is possible"
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1136" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c046
+  section: traps
+  statement: "Besides drugs, strep and staph infections and viral hepatitis are frequent associations of skin vasculitis"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "620" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypersensitivity-vasculitis-c047
+  section: mnemonics
+  statement: "The typical skin lesion of skin vasculitis, palpable purpura, mostly sits on the legs"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "620" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14

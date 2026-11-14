@@ -1,0 +1,131 @@
+id: hypersensitivity-vasculitis
+module: o16
+tier: extended
+kind: disease
+names:
+  it: "Vasculite da ipersensibilità (leucocitoclastica, vasculite a IgA)"
+  en: "Hypersensitivity (leukocytoclastic) vasculitis incl. IgA vasculitis"
+  eponyms: ["Henoch–Schönlein purpura"]
+  synonyms:
+    it: ["Vasculite leucocitoclastica", "Vasculite cutanea", "Venulite necrotizzante cutanea", "Porpora di Schönlein-Henoch"]
+    en: ["Leukocytoclastic vasculitis", "Cutaneous vasculitis", "Cutaneous necrotizing venulitis", "Hypersensitivity angiitis", "Allergic purpura"]
+  abbreviations: ["HSP"]
+summary:
+  it: "Vasculite dei piccoli vasi, di solito delle venule cutanee, considerata una reazione a farmaci o a prodotti batterici, con porpora palpabile agli arti inferiori e necrosi fibrinoide della parete; la porpora di Schönlein-Henoch ne è la forma con depositi di IgA."
+  en: "Small-vessel vasculitis, usually of skin venules, regarded as a reaction to drugs or bacterial products, with palpable purpura on the legs and fibrinoid necrosis of the wall; Henoch–Schönlein purpura is the form with IgA deposits."
+lenses:
+  system: [vessels, skin, kidney]
+  process: [hypersensitivity, acute-inflammation]
+  pattern: [necrosis-fibrinoid]
+  presentation: [hematuria]
+  marker: [laboratory]
+  group: [vascular, immune, inflammatory]
+learningObjectives:
+  - it: "Definire la vasculite da ipersensibilità e i suoi sinonimi (leucocitoclastica, cutanea, venulite necrotizzante)."
+    en: "Define hypersensitivity vasculitis and its synonyms (leukocytoclastic, cutaneous, necrotizing venulitis)."
+  - it: "Riconoscere la porpora palpabile e la necrosi fibrinoide delle venule superficiali."
+    en: "Recognize palpable purpura and fibrinoid necrosis of superficial venules."
+  - it: "Elencare i principali fattori scatenanti: farmaci, infezioni e malattie sistemiche."
+    en: "List the main triggers: drugs, infections and systemic diseases."
+  - it: "Descrivere il coinvolgimento d'organo nella porpora di Schönlein-Henoch: cute, intestino e rene."
+    en: "Describe organ involvement in Henoch–Schönlein purpura: skin, gut and kidney."
+  - it: "Distinguere la forma cutanea dalla poliangioite microscopica e dalle altre vasculiti."
+    en: "Tell the cutaneous form from microscopic polyangiitis and from other vasculitides."
+prerequisites: [fibrinoid-necrosis]
+relations:
+  - type: sharesMechanism
+    target: hypersensitivity-reactions
+    note:
+      it: "Danno della parete vasale da reazione immunitaria a materiale estraneo."
+      en: "Vessel wall injury from an immune reaction to foreign material."
+  - type: differentialOf
+    target: polyarteritis-nodosa
+    note:
+      it: "Forma sistemica limitata alle arterie più piccole e alle arteriole, contro un interessamento arterioso più esteso."
+      en: "Systemic form limited to the smallest arteries and arterioles, versus polyarteritis nodosa."
+  - type: differentialOf
+    target: anca-associated-vasculitis
+    note:
+      it: "La poliangioite microscopica è fortemente associata a P-ANCA."
+      en: "Microscopic polyangiitis is strongly associated with P-ANCA."
+  - type: differentialOf
+    target: giant-cell-arteritis
+    note:
+      it: "Arterite granulomatosa dell'arteria temporale, ANCA assenti."
+      en: "Granulomatous arteritis of the temporal artery, ANCA absent."
+quickCheck:
+  - id: hypersensitivity-vasculitis-q1
+    q:
+      it: "Che cosa significa «leucocitoclastica» e quale aspetto clinico tipico ha la forma cutanea?"
+      en: "What does \"leukocytoclastic\" mean, and what is the typical clinical sign of the cutaneous form?"
+    a:
+      it: "Detriti di neutrofili in disgregazione; porpora palpabile, soprattutto agli arti inferiori."
+      en: "Debris from disintegrating neutrophils; palpable purpura, mostly on the legs."
+    kind: short
+  - id: hypersensitivity-vasculitis-q2
+    q:
+      it: "Quale reperto microscopico si trova nelle venule cutanee superficiali?"
+      en: "Which microscopic finding is seen in superficial skin venules?"
+    a:
+      it: "Necrosi fibrinoide con infiammazione acuta."
+      en: "Fibrinoid necrosis with acute inflammation."
+    kind: short
+  - id: hypersensitivity-vasculitis-q3
+    q:
+      it: "Quali organi può coinvolgere la porpora di Schönlein-Henoch oltre alla cute?"
+      en: "Which organs can Henoch–Schönlein purpura involve besides the skin?"
+    a:
+      it: "L'intestino (colica ed emorragia) e il rene, con possibile insufficienza renale."
+      en: "The gut (colic and bleeding) and the kidney, with possible renal failure."
+    kind: short
+  - id: hypersensitivity-vasculitis-q4
+    q:
+      it: "Quale autoanticorpo è strettamente legato alla poliangioite microscopica?"
+      en: "Which autoantibody is closely linked to microscopic polyangiitis?"
+    a:
+      it: "P-ANCA."
+      en: "P-ANCA."
+    kind: short
+  - id: hypersensitivity-vasculitis-q5
+    q:
+      it: "Qual è di solito il decorso della vasculite cutanea?"
+      en: "What is the usual course of cutaneous vasculitis?"
+    a:
+      it: "In genere si risolve da sola."
+      en: "It is generally self-limited."
+    kind: short
+selfExplain:
+  - it: "Che cosa ti dice il termine «venulite» su quali vasi sono colpiti soprattutto nella forma cutanea?"
+    en: "What does the term \"venulitis\" tell you about which vessels are mainly hit in the skin form?"
+  - it: "Perché la vasculite cutanea è detta «leucocitoclastica»?"
+    en: "Why is cutaneous vasculitis called \"leukocytoclastic\"?"
+examQuestions:
+  - it: "Mi parli della vasculite da ipersensibilità: quali vasi colpisce e perché la si considera una reazione a materiale estraneo?"
+    en: "Tell me about hypersensitivity vasculitis: which vessels does it involve, and why is it regarded as a reaction to outside material?"
+    focus: [definition, etiology, pathogenesis]
+    level: 1
+  - it: "Che cosa vede al microscopio in una biopsia cutanea di vasculite leucocitoclastica, e in quali vasi?"
+    en: "What do you see under the microscope in a skin biopsy of leukocytoclastic vasculitis, and in which vessels?"
+    focus: [micro, diagnosis]
+    level: 2
+  - it: "Quali organi può coinvolgere la porpora di Schönlein-Henoch e come la distingue dalla poliangioite microscopica?"
+    en: "Which organs can Henoch–Schönlein purpura involve, and how do you tell it from microscopic polyangiitis?"
+    focus: [clinical, prognosis, differential]
+    level: 3
+images:
+  - id: hypersensitivity-vasculitis-gross-1
+    role: gross
+    pairWith: hypersensitivity-vasculitis-micro-1
+  - id: hypersensitivity-vasculitis-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "16"
+    pages: "620"
+  - source: rubin-8e
+    chapter: "26"
+    pages: "1136"
+lastUpdated: 2026-11-14
+status: published
