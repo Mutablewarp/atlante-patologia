@@ -9,6 +9,7 @@ import { MeshoptDecoder, MeshoptEncoder, MeshoptSimplifier } from 'meshoptimizer
 import { parse } from 'yaml';
 import { bbox, computeNormals, mergeMeshes, parseObj, readOrganMap, readTables, resolveElements } from './lib.mjs';
 import { fitTransform, hraFile, loadHra } from './hra.mjs';
+import { twoLobesIsthmus } from './schematic.mjs';
 import { frameOf, toFrame } from './spike.mjs';
 
 /** Triangle targets of the table below spec §11; an organ that is not listed keeps its source count. */
@@ -158,9 +159,14 @@ export async function buildBody({ raw, tables: tablesDir, out, map: mapPath = 's
   for (const [id, organ] of Object.entries(map.organs)) {
     const system = systemOf.get(id);
     organs[id] = { system, kind: organ.kind, of: organ.of ?? [], inside: organ.inside ?? null };
-    if (!['mesh', 'hra'].includes(organ.kind) || id === SHELL_ORGAN || (only !== undefined && system !== only)) continue;
+    if (!['mesh', 'hra', 'schematic'].includes(organ.kind) || id === SHELL_ORGAN || (only !== undefined && system !== only)) continue;
     let reduced;
-    if (organ.kind === 'hra') {
+    if (organ.kind === 'schematic') {
+      if (organ.shape !== 'two-lobes-isthmus') throw new Error(`organ "${id}": unknown schematic shape "${organ.shape}"`);
+      const [cartilage, trachea] = organ.anchors.map((name) => bbox(toFrame(loadConcepts(raw, tables, id, [name]).positions, frame)));
+      const shape = twoLobesIsthmus({ cartilage, trachea });
+      reduced = { ...shape, normals: computeNormals(shape.positions, shape.indices) };
+    } else if (organ.kind === 'hra') {
       fits[organ.fit] ??= await fitOf(map.fits[organ.fit], hra, raw, tables, frame);
       const { scale, translate } = fits[organ.fit];
       const mesh = await loadObjects(hra, organ.objects, organ.nodes);
