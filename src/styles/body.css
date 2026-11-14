@@ -261,7 +261,7 @@ ap-body section[data-organ]:has(> h3 a[aria-current]) {
 .body-controls {
   display: flex;
   gap: var(--space-2);
-  min-height: 2.75rem;
+  min-height: calc(2.75rem + 3px + var(--space-1)); /* the row with its buttons shown, so showing them shifts nothing */
   overflow-x: auto;
   padding: 3px 3px var(--space-1); /* the focus ring (2px + 2px offset) would be cut by the scroller */
 }
