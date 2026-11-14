@@ -14,6 +14,47 @@ export const tBody = defineStrings({
   countOne: { it: '1 scheda', en: '1 card' },
   countMany: { it: '{n} schede', en: '{n} cards' },
 
+  // The stage (spec §5): names, help and messages. The script reads the messages from `data-t-*` attributes.
+  stage: { it: 'Corpo umano in 3D', en: 'Human body in 3D' },
+  controls: { it: 'Comandi del modello 3D', en: '3D model controls' },
+  help: {
+    it: 'Con il modello attivo: frecce per ruotare, più e meno per avvicinare, 0 per ripartire, le parentesi quadre per cambiare organo, Esc per deselezionare.',
+    en: 'With the model on: arrow keys rotate, plus and minus zoom, 0 resets, the square brackets change organ, Esc clears the selection.',
+  },
+  load: { it: 'Esplora in 3D', en: 'Explore in 3D' },
+  off: { it: 'Spegni il 3D', en: 'Turn 3D off' },
+  left: { it: 'Ruota a sinistra', en: 'Rotate left' },
+  right: { it: 'Ruota a destra', en: 'Rotate right' },
+  up: { it: 'Ruota in alto', en: 'Rotate up' },
+  down: { it: 'Ruota in basso', en: 'Rotate down' },
+  in: { it: 'Avvicina', en: 'Zoom in' },
+  out: { it: 'Allontana', en: 'Zoom out' },
+  front: { it: 'Vista frontale', en: 'Front view' },
+  back: { it: 'Vista posteriore', en: 'Back view' },
+  side: { it: 'Vista laterale', en: 'Side view' },
+  reset: { it: 'Ripristina la vista', en: 'Reset view' },
+  prev: { it: 'Organo precedente', en: 'Previous organ' },
+  next: { it: 'Organo successivo', en: 'Next organ' },
+  loading: { it: 'Caricamento del modello 3D…', en: 'Loading the 3D model…' },
+  ready: { it: 'Modello 3D pronto.', en: '3D model ready.' },
+  turnedOff: { it: 'Modello 3D spento.', en: '3D model turned off.' },
+  error: { it: 'Impossibile caricare il modello 3D. Le schede restano qui sotto.', en: 'The 3D model could not be loaded. The cards stay below.' },
+  lost: { it: 'Il 3D si è interrotto. Premi “Esplora in 3D” per riprovare.', en: 'The 3D view stopped. Press “Explore in 3D” to try again.' },
+  noModel: { it: 'Questo organo non ha un modello 3D.', en: 'This organ has no 3D model.' },
+  whole: { it: 'Corpo intero', en: 'Whole body' },
+  // {n} is the text of the organ's own count in the tree ("1 scheda", "3 schede"), already in the right number
+  organ: { it: '{organ}: {n}', en: '{organ}: {n}' },
+  system: { it: 'Apparato: {system}', en: 'System: {system}' },
+  creditHra: {
+    it: 'Organi femminili: HRA 3D Reference Object Library v2.5, CC BY 4.0, adattati al corpo di base e semplificati da questo progetto.',
+    en: 'Female organs: HRA 3D Reference Object Library v2.5, CC BY 4.0, fitted into the base body and simplified by this project.',
+  },
+  creditChanges: {
+    it: 'Modifiche: uniti, semplificati, ricolorati, spostati e ridimensionati.',
+    en: 'Changes: merged, simplified, recoloured, moved and scaled.',
+  },
+  creditMore: { it: 'Licenze e crediti', en: 'Licenses and credits' },
+
   // One note per organ kind (spec §3); `mesh` has none.
   noteHra: {
     it: 'Modello adattato da un riferimento femminile; il corpo di base è maschile.',

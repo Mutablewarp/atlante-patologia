@@ -1,18 +1,21 @@
 ---
 /**
- * The interactive body (docs/BODY_SPEC.md §5), tree part: systems, organs, cards and planned cards as
- * static HTML. The stage and the viewer script come later; `<ap-body>` stays an unknown element until then.
+ * The interactive body (docs/BODY_SPEC.md §5): the stage, then the tree of systems, organs, cards and planned
+ * cards, all static HTML. The viewer script comes later; `<ap-body>` stays an unknown element until then.
  */
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Breadcrumb from '../../../components/nav/Breadcrumb.astro';
 import BodyTree from '../../../components/body/BodyTree.astro';
+import BodyViewer from '../../../components/body/BodyViewer.astro';
 import { langPaths, type Lang } from '../../../i18n/index.ts';
 import { tAtlas } from '../../../i18n/pages.ts';
 import { tBody } from '../../../i18n/body.ts';
 import { bodyTree } from '../../../lib/anatomy.ts';
 import { loadBodyMap } from '../../../lib/body-map.ts';
-import { langPath } from '../../../lib/url.ts';
+import { langPath, url } from '../../../lib/url.ts';
 import { siteData } from '../../../lib/content.ts';
 import '../../../styles/body.css';
 
@@ -26,6 +29,7 @@ const terms = (lens: 'system' | 'process') => taxonomy.get(lens)?.terms ?? [];
 
 const tree = bodyTree({ entities, anatomy, systems: terms('system'), processes: terms('process'), modules, lang });
 const map = loadBodyMap();
+const { credit } = JSON.parse(readFileSync(join(process.cwd(), 'public/anatomy/manifest.json'), 'utf8')) as { credit: string };
 const summaries = new Map(entities.map((e) => [e.id, e.summary[lang]]));
 const organLabels = new Map(anatomy.map((o) => [o.id, o.label[lang]]));
 const lenses = ['general', 'systemic'].map((id) => ({ id, label: terms('system').find((s) => s.id === id)?.label[lang] ?? id }));
@@ -38,7 +42,21 @@ const lenses = ['general', 'systemic'].map((id) => ({ id, label: terms('system')
     <p class="lede">{t('intro')}</p>
   </header>
 
-  <ap-body>
+  <ap-body
+    data-manifest={url('anatomy/manifest.json')}
+    data-t-loading={t('loading')}
+    data-t-ready={t('ready')}
+    data-t-off={t('turnedOff')}
+    data-t-error={t('error')}
+    data-t-lost={t('lost')}
+    data-t-no-model={t('noModel')}
+    data-t-whole={t('whole')}
+    data-t-organ={t('organ')}
+    data-t-system={t('system')}
+  >
+    <div class="body-viewer">
+      <BodyViewer lang={lang} credit={credit} />
+    </div>
     <BodyTree lang={lang} tree={tree} map={map} summaries={summaries} organLabels={organLabels} />
     <section class="body-other">
       <h2>{t('otherTitle')}</h2>
