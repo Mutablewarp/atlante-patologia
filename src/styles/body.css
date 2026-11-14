@@ -198,6 +198,14 @@ ap-body section[data-organ]:target {
   pointer-events: none;
 }
 
+.body-stage[data-loading] {
+  cursor: progress;
+}
+.body-stage > .body-label {
+  width: max-content;
+  max-width: 90%;
+}
+
 .body-help {
   margin-block: var(--space-2);
   color: var(--ink-muted);

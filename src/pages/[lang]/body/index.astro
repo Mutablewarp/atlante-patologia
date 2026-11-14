@@ -1,7 +1,7 @@
 ---
 /**
  * The interactive body (docs/BODY_SPEC.md §5): the stage, then the tree of systems, organs, cards and planned
- * cards, all static HTML. The viewer script comes later; `<ap-body>` stays an unknown element until then.
+ * cards, all static HTML. scripts/body-viewer.ts defines `<ap-body>` and starts the 3D view by the load rule.
  */
 import { readFileSync } from 'node:fs';
 import { join } from 'node:path';
@@ -73,3 +73,7 @@ const lenses = ['general', 'systemic'].map((id) => ({ id, label: terms('system')
     </section>
   </ap-body>
 </BaseLayout>
+
+<script>
+  import '../../../scripts/body-viewer.ts';
+</script>
