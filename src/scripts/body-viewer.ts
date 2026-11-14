@@ -382,8 +382,12 @@ class ApBody extends HTMLElement {
     const text = this.organName(this.state.organ);
     if (label.textContent !== text) label.textContent = text;
     label.hidden = false;
-    // transform, not left and top: a label that moves by layout counts as layout shift on every frame
-    label.style.transform = `translate(${point.x}px, ${point.y}px) translate(-50%, -120%)`;
+    // transform, not left and top: a label that moves by layout counts as layout shift on every frame. It stays inside the
+    // stage; --dx keeps the end of its leader line on the organ when it had to be pushed back.
+    const half = label.offsetWidth / 2;
+    const x = Math.min(Math.max(point.x, half + 4), label.parentElement!.clientWidth - half - 4);
+    label.style.setProperty('--dx', `${point.x - x}px`);
+    label.style.transform = `translate(${x}px, ${point.y}px) translate(-50%, calc(-100% - 0.9em))`;
   }
 }
 

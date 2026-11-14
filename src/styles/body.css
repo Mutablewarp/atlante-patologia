@@ -209,6 +209,29 @@ ap-body section[data-organ]:has(> h3 a[aria-current]) {
   border-radius: var(--radius-s);
   pointer-events: none;
 }
+/* The leader line: a short rule from the label down to a dot on the organ's centre. --dx is how far the label was pushed
+   back inside the stage, so that the line still ends on the organ. */
+.body-label::before,
+.body-label::after {
+  content: '';
+  position: absolute;
+  left: calc(50% + var(--dx, 0px));
+}
+.body-label::after {
+  top: 100%;
+  width: 1px;
+  height: 0.9em;
+  background: var(--ink);
+}
+.body-label::before {
+  top: calc(100% + 0.9em);
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  background: var(--ink);
+  box-shadow: 0 0 0 2px var(--paper);
+  transform: translate(-50%, -50%);
+}
 
 .body-stage[data-loading] {
   cursor: progress;
