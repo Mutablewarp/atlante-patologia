@@ -69,6 +69,9 @@ export const assetRow = (today) => (from, line) => {
 /**
  * Appends the new rows of the fragments after the last row of the file's table (7 cells); one row per distinct text.
  * `plain(from, line)` turns a line that is not a table row into one; without it such a line is left out.
+ * @param {string} text
+ * @param {{ from: string, text: string }[]} fragments
+ * @param {((from: string, line: string) => string) | null} [plain]
  */
 export function mergeRows(text, fragments, plain = null) {
   const lines = text.split('\n');
