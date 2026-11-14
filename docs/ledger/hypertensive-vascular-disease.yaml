@@ -1,0 +1,386 @@
+entity: hypertensive-vascular-disease
+claims:
+  - claimId: hypertensive-vascular-disease-c001
+    section: definition
+    statement: "Above all in the kidney, long-lasting high pressure damages vessels, mostly small arteries and arterioles"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "615" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c002
+    section: definition
+    statement: "A systolic reading of 130 mm Hg or higher that persists on ambulatory monitoring meets the current guideline definition of hypertension"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "610" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c003
+    section: definition
+    statement: "Treatment aims to limit complications even when the patient has no symptoms"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "610" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c004
+    section: definition
+    statement: "More than 90% of hypertensive patients have the essential (primary) form, which has no identified cause"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "614" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c005
+    section: definition
+    statement: "Secondary hypertension, the less common form, results from an identifiable disease"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "614" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c006
+    section: etiology
+    statement: "Sodium intake and a low nephron number are environmental contributors to essential hypertension, which also rests on many genes of small effect"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "614" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c007
+    section: etiology
+    statement: "Renal or endocrine diseases can cause secondary hypertension, for example renal artery stenosis or primary aldosterone excess (Conn syndrome)"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "614, 617" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c008
+    section: etiology
+    statement: "Some children develop hypertension because of a mutation in one gene that affects mineralocorticoid pathways or sodium transport"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "615, 617" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c009
+    section: pathogenesis
+    statement: "Mean arterial pressure equals cardiac output times total peripheral resistance"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "614" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c010
+    section: pathogenesis
+    statement: "Different initiating disturbances all end with a higher total peripheral resistance"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "614" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c011
+    section: pathogenesis
+    statement: "Structural damage to renal vessels develops over time and impairs kidney function with sodium retention, whereas earlier vessel changes can be reversed"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "614" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c012
+    section: pathogenesis
+    statement: "Angiotensin II is produced in two steps: renal renin cleaves angiotensinogen into angiotensin I, then ACE converts it"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "615" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c013
+    section: pathogenesis
+    statement: "Angiotensin II prompts adrenal aldosterone release, which makes the kidney tubules retain sodium; it also narrows vessels and raises sympathetic drive through brain centers"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "615" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c014
+    section: pathogenesis
+    statement: "Atrial natriuretic peptide opposes the renin-angiotensin axis by driving more sodium into the urine"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "615" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c015
+    section: pathogenesis
+    statement: "Therapies aimed at this axis, for example ACE inhibitors, succeed in hypertension, showing how important the axis is"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "615" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c016
+    section: gross
+    statement: "Chronic hypertension can leave a shrunken kidney with a granular surface"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "615" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c017
+    section: micro
+    statement: "In chronic hypertension small muscular arteries duplicate their internal elastic lamina and thicken the intima with fibromuscular tissue"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "615" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c018
+    section: micro
+    statement: "Aging is associated with similar arterial pathology, so arteriosclerosis does not establish hypertension"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "615" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c019
+    section: micro
+    statement: "Plasma proteins and basement membrane material accumulate in the arteriole wall in hyaline arteriolosclerosis, making it thick and glassy on light microscopy"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "615" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c020
+    section: micro
+    statement: "Hyaline arteriolosclerosis is a feature of chronic hypertension and can accompany diabetes too"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "615" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c021
+    section: micro
+    statement: "Fibrinoid necrosis is fibrin plus leaked plasma protein in the wall of a small artery whose smooth muscle cells have died"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c022
+    section: micro
+    statement: "Onion-skin thickening results from smooth muscle cells multiplying in concentric rings once the acute injury has occurred"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c023
+    section: micro
+    statement: "Scarring of the glomeruli and fibrosis of the interstitium are common histologic findings in long-standing hypertension"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "615" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c024
+    section: micro
+    statement: "Malignant nephrosclerosis is the term for malignant hypertension lesions in the kidney"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c025
+    section: clinical
+    statement: "Working against high pressure over time thickens the left ventricle, and heart failure and arrhythmias can follow"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c026
+    section: clinical
+    statement: "Chronic hypertension can lead to aortic dissection and to atherosclerosis of conduit arteries"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "615, 617" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c027
+    section: clinical
+    statement: "Malignant hypertension is rare among hypertensive patients; pressure climbs rapidly to at least 180 systolic and 120 diastolic mm Hg"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c028
+    section: clinical
+    statement: "Signs of organ injury in malignant hypertension include proteinuria and retinal hemorrhage"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c029
+    section: diagnosis
+    statement: "Pressure fluctuates during the day and hypertension is defined by sustained elevation"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "610" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c030
+    section: diagnosis
+    statement: "With severe hypertension, ophthalmoscopy reveals retinal arterioles that are constricted and dilated in segments"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c031
+    section: diagnosis
+    statement: "A rapid rise in pressure produces cotton wool spots and focal hemorrhages in the retina"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c032
+    section: prognosis
+    statement: "Hypertension is present in most strokes and most myocardial infarctions"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "614" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c033
+    section: prognosis
+    statement: "Most hypertensive complications come from clotting, not bleeding, which is named the prothrombotic paradox"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c034
+    section: prognosis
+    statement: "Malignant hypertension can be fatal through infarction of vital organs such as the brain and the kidney"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c035
+    section: differential
+    statement: "Atherosclerosis affects conduit arteries and is promoted by hypertension"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "615, 617" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c036
+    section: differential
+    statement: "Hyaline arteriolosclerosis also occurs in diabetes"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "615" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c037
+    section: differential
+    statement: "Fibrin deposition in the vessel wall (fibrinoid necrosis) occurs in malignant hypertension"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c038
+    section: differential
+    statement: "Malignant hypertension shows onion-skin hyperplastic arteriolosclerosis with a rapid pressure rise"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c039
+    section: high-yield
+    statement: "Essential hypertension is idiopathic, polygenic and over 90% of hypertensive patients"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "614" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c040
+    section: high-yield
+    statement: "Hyaline arteriolosclerosis is associated with chronic hypertension and diabetes"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "615" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c041
+    section: high-yield
+    statement: "Onion-skin hyperplastic arteriolosclerosis with fibrinoid necrosis occurs in malignant hypertension"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c042
+    section: high-yield
+    statement: "Chronic hypertension contracts the kidney with a granular surface; malignant hypertension causes malignant nephrosclerosis"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "615, 617" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c043
+    section: high-yield
+    statement: "Complications are mostly thrombotic, the prothrombotic paradox"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c044
+    section: traps
+    statement: "Aging produces similar changes in small arteries, so these changes do not point to hypertension"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "615" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c045
+    section: traps
+    statement: "Hyaline arteriolosclerosis is not specific to hypertension since it is also seen in diabetes"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "615" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c046
+    section: traps
+    statement: "Heart attacks and strokes in hypertensive patients are usually caused by clots, not bleeding"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c047
+    section: traps
+    statement: "Mönckeberg medial sclerosis is calcification of the muscular layer of large and medium arteries, chiefly in the limbs and mostly in older people"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypertensive-vascular-disease-c048
+    section: mnemonics
+    statement: "Hyaline change goes with chronic hypertension and onion-skin hyperplastic change with malignant hypertension"
+    sourceRef: { source: rubin-8e, chapter: "16", pages: "615, 617" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
