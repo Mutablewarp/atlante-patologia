@@ -4,14 +4,14 @@ lang: en
 
 ## Definition and epidemiology
 
-**What is an inherited cancer syndrome?** The responsible germline mutation usually hits a DNA repair gene or a tumor suppressor gene.<!--c:inherited-cancer-syndromes-c001--> Inheritance passes on a strong predisposition to cancer, not a tumor.<!--c:inherited-cancer-syndromes-c002--> Inherited mutations account for roughly 1% of human cancers.<!--c:inherited-cancer-syndromes-c003-->
+**What is an inherited cancer syndrome?** The responsible germline mutation usually hits a DNA repair gene or a tumor suppressor gene.<!--c:inherited-cancer-syndromes-c001--> Carriers are born at high risk, not with a tumor.<!--c:inherited-cancer-syndromes-c002--> Inherited mutations account for roughly 1% of human cancers.<!--c:inherited-cancer-syndromes-c003-->
 
 **Which syndromes belong here?**
-- Many endocrine tumors, Wilms tumor and retinoblastoma are inherited malignant tumors.<!--c:inherited-cancer-syndromes-c004-->
+- Retinoblastoma and Wilms tumor are inherited malignant tumors, as are many endocrine ones.<!--c:inherited-cancer-syndromes-c004-->
 - Some inherited tumors, such as those linked to APC, may stay benign or may turn malignant.<!--c:inherited-cancer-syndromes-c005-->
-- People with Bloom syndrome or ataxia-telangiectasia face a high risk of malignant tumors.<!--c:inherited-cancer-syndromes-c006-->
-- Germline changes in BRCA1 or in VHL each produce their own tumor syndrome.<!--c:inherited-cancer-syndromes-c007-->
-- Tuberous sclerosis and neurofibromatosis are phakomatoses: they disturb development, and their tumors arise chiefly in the nervous system.<!--c:inherited-cancer-syndromes-c008-->
+- Bloom syndrome and ataxia-telangiectasia carry a strongly raised chance of malignancy.<!--c:inherited-cancer-syndromes-c006-->
+- Inherited BRCA1 or VHL mutations each cause a syndrome with its own tumor pattern.<!--c:inherited-cancer-syndromes-c007-->
+- Tuberous sclerosis and neurofibromatosis (phakomatoses) pair developmental abnormalities with tumors, mostly of the nervous system.<!--c:inherited-cancer-syndromes-c008-->
 
 ## Etiology and risk factors
 

@@ -1,18 +1,18 @@
 ---
 lang: it
-translatedFrom: 45071546286aa00b07126f05af3a819bef7d5ee9231a3f41cc4e5d452d4cc4d3
+translatedFrom: fa9a5fb5b22932302d26605e7aa960650234012ff2f01b4bca4d67abd0ec03d6
 ---
 
 ## Definizione ed epidemiologia
 
-**Che cos'è una sindrome tumorale ereditaria?** La mutazione germinale responsabile colpisce di solito un gene di riparo del DNA o un gene oncosoppressore.<!--c:inherited-cancer-syndromes-c001--> Con l'ereditarietà si trasmette una forte predisposizione al cancro, non un tumore.<!--c:inherited-cancer-syndromes-c002--> Le mutazioni ereditarie sono responsabili di circa l'1% dei tumori umani.<!--c:inherited-cancer-syndromes-c003-->
+**Che cos'è una sindrome tumorale ereditaria?** La mutazione germinale responsabile colpisce di solito un gene di riparo del DNA o un gene oncosoppressore.<!--c:inherited-cancer-syndromes-c001--> I portatori nascono ad alto rischio, non con un tumore.<!--c:inherited-cancer-syndromes-c002--> Le mutazioni ereditarie sono responsabili di circa l'1% dei tumori umani.<!--c:inherited-cancer-syndromes-c003-->
 
 **Quali sindromi rientrano in questo gruppo?**
-- Molti tumori endocrini, il tumore di Wilms e il retinoblastoma sono tumori maligni ereditari.<!--c:inherited-cancer-syndromes-c004-->
+- Retinoblastoma e tumore di Wilms sono tumori maligni ereditari, come molti tumori endocrini.<!--c:inherited-cancer-syndromes-c004-->
 - Alcuni tumori ereditari, come quelli legati ad APC, possono restare benigni o diventare maligni.<!--c:inherited-cancer-syndromes-c005-->
-- Chi ha la sindrome di Bloom o l'atassia-teleangectasia è esposto a un alto rischio di tumori maligni.<!--c:inherited-cancer-syndromes-c006-->
-- Le alterazioni germinali di BRCA1 o di VHL producono ciascuna una propria sindrome tumorale.<!--c:inherited-cancer-syndromes-c007-->
-- La sclerosi tuberosa e la neurofibromatosi sono facomatosi: alterano lo sviluppo e i loro tumori nascono soprattutto nel sistema nervoso.<!--c:inherited-cancer-syndromes-c008-->
+- La sindrome di Bloom e l'atassia-teleangectasia comportano una probabilità molto alta di neoplasie maligne.<!--c:inherited-cancer-syndromes-c006-->
+- Le mutazioni ereditarie di BRCA1 o VHL causano ciascuna una sindrome con un proprio quadro tumorale.<!--c:inherited-cancer-syndromes-c007-->
+- Sclerosi tuberosa e neurofibromatosi (facomatosi) associano anomalie dello sviluppo a tumori, per lo più del sistema nervoso.<!--c:inherited-cancer-syndromes-c008-->
 
 ## Eziologia e fattori di rischio
 

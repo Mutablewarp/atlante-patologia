@@ -7,15 +7,15 @@ claims:
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: inherited-cancer-syndromes-c002
   section: definition
-  statement: "Inheritance passes on a strong predisposition to cancer, not a tumor."
+  statement: "Carriers are born at high risk of cancer, not with a tumor."
   sourceRef: { source: rubin-8e, chapter: "5", pages: "213" }
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: inherited-cancer-syndromes-c003
   section: definition
   statement: "Inherited mutations account for roughly 1% of human cancers."
@@ -23,15 +23,15 @@ claims:
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: inherited-cancer-syndromes-c004
   section: definition
-  statement: "Many endocrine tumors, Wilms tumor and retinoblastoma are inherited malignant tumors."
+  statement: "Retinoblastoma and Wilms tumor are inherited malignant tumors, as are many endocrine tumors."
   sourceRef: { source: rubin-8e, chapter: "5", pages: "213" }
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: inherited-cancer-syndromes-c005
   section: definition
   statement: "Tumors inherited through APC may remain benign or may become malignant."
@@ -39,31 +39,31 @@ claims:
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: inherited-cancer-syndromes-c006
   section: definition
-  statement: "People with Bloom syndrome or ataxia-telangiectasia face a high risk of malignant tumors."
+  statement: "Bloom syndrome and ataxia-telangiectasia carry a strongly raised chance of malignancy."
   sourceRef: { source: rubin-8e, chapter: "5", pages: "213" }
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: inherited-cancer-syndromes-c007
   section: definition
-  statement: "Germline changes in BRCA1 or in VHL each give rise to a distinct tumor syndrome."
+  statement: "Inherited BRCA1 or VHL mutations each cause a syndrome with its own tumor pattern."
   sourceRef: { source: rubin-8e, chapter: "5", pages: "213" }
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: inherited-cancer-syndromes-c008
   section: definition
-  statement: "Phakomatoses such as tuberous sclerosis and neurofibromatosis disturb development, and their tumors arise chiefly in the nervous system."
+  statement: "Tuberous sclerosis and neurofibromatosis, the phakomatoses, pair developmental abnormalities with tumors, mostly of the nervous system."
   sourceRef: { source: rubin-8e, chapter: "5", pages: "213" }
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: inherited-cancer-syndromes-c009
   section: micro
   statement: "Carriers are heterozygous in the germline, with one mutated tumor suppressor allele."
@@ -71,7 +71,7 @@ claims:
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: inherited-cancer-syndromes-c010
   section: micro
   statement: "In a carrier's tumor both copies of the suppressor gene are inactive, the normal copy being disabled by loss of heterozygosity."
@@ -79,7 +79,7 @@ claims:
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: inherited-cancer-syndromes-c011
   section: micro
   statement: "PTEN is frequently decreased across many different cancers."
@@ -87,7 +87,7 @@ claims:
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: inherited-cancer-syndromes-c012
   section: micro
   statement: "Benign hamartomas are the main tumors of Cowden syndrome, which results from germline PTEN loss."
@@ -95,7 +95,7 @@ claims:
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: inherited-cancer-syndromes-c013
   section: diagnosis
   statement: "Some cancer types clearly cluster in families, although mendelian inheritance explains only a few cancers."
@@ -103,7 +103,7 @@ claims:
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: inherited-cancer-syndromes-c014
   section: diagnosis
   statement: "The same tumor type is often two- to threefold more likely to develop in a patient's relatives."
@@ -111,7 +111,7 @@ claims:
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: inherited-cancer-syndromes-c015
   section: diagnosis
   statement: "Among familial cancers, those of the breast and colon stand out."
@@ -119,7 +119,7 @@ claims:
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: inherited-cancer-syndromes-c017
   section: differential
   statement: "Common acquired changes impair tumor suppression, while inherited defects are rare."
@@ -127,7 +127,7 @@ claims:
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: inherited-cancer-syndromes-c018
   section: traps
   statement: "Women are affected more than men by germline BRCA1 mutations, and the tumors are chiefly breast and ovarian cancers."
@@ -135,7 +135,7 @@ claims:
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: inherited-cancer-syndromes-c019
   section: traps
   statement: "No explanation is known for why germline BRCA1 defects favor the breast and ovary over other organs."
@@ -143,4 +143,4 @@ claims:
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
