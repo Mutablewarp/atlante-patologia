@@ -1,0 +1,282 @@
+entity: noninfective-endocarditis
+claims:
+- claimId: noninfective-endocarditis-c001
+  section: definition
+  statement: "NBTE is almost always seen with cancer or another wasting disease, and its sterile vegetations form on valves that look normal."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c002
+  section: definition
+  statement: "In NBTE the mitral and aortic valves are affected with the same frequency."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c003
+  section: definition
+  statement: "Libman-Sacks endocarditis is the lupus-related endocarditis, with warty vegetations on the endocardium."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "668" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c004
+  section: etiology
+  statement: "Many NBTE cases are paraneoplastic, most often with blood cancers or pancreatic and lung adenocarcinomas."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c005
+  section: etiology
+  statement: "Disseminated intravascular coagulation, or a debilitating disease that is not a neoplasm, can also be the setting for NBTE."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c006
+  section: etiology
+  statement: "SLE often involves the heart, and its endocarditis is Libman-Sacks endocarditis."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "668" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c007
+  section: pathogenesis
+  statement: "What triggers NBTE is not well established."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c008
+  section: pathogenesis
+  statement: "Blood that clots too readily, or immune complexes being deposited, may underlie NBTE."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c009
+  section: gross
+  statement: "NBTE grossly resembles infective endocarditis."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c010
+  section: gross
+  statement: "NBTE vegetations remain small."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c011
+  section: gross
+  statement: "Libman-Sacks vegetations measure up to 4 mm."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "668" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c012
+  section: gross
+  statement: "Libman-Sacks vegetations usually sit on the atrial side of the mitral leaflets, next to the annulus."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "668" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c013
+  section: gross
+  statement: "Libman-Sacks vegetations can spread to the papillary muscles and chordae tendineae."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "668-669" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c014
+  section: gross
+  statement: "The aortic valve is seldom involved in Libman-Sacks endocarditis."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "669" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c015
+  section: micro
+  statement: "NBTE vegetations consist of platelet-fibrin masses in which neither microorganisms nor inflammation are present."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c016
+  section: clinical
+  statement: "At autopsy, NBTE is frequently discovered by chance."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c017
+  section: clinical
+  statement: "In SLE, other manifestations of the disease usually overshadow the cardiac symptoms."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "668" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c018
+  section: prognosis
+  statement: "The valves affected by NBTE are not destroyed."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c019
+  section: prognosis
+  statement: "Emboli from NBTE vegetations can infarct many organs; this is the chief hazard but it is rare."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c020
+  section: prognosis
+  statement: "Libman-Sacks lesions usually heal to a clean valve, with no scar and normal function."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "669" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c021
+  section: differential
+  statement: "Grossly the two look alike, but infective endocarditis shows organisms, inflammation and valve destruction."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c022
+  section: differential
+  statement: "Microorganisms and inflammation are absent in NBTE vegetations, so their search separates NBTE from infective endocarditis."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c023
+  section: differential
+  statement: "Chronic rheumatic valves have rigid, joined leaflets, and rheumatic aortic cusps typically weld together at the commissures."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "668, 671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c024
+  section: differential
+  statement: "Scarring and fusion of leaflets and commissures point to rheumatic disease rather than to a sterile vegetation."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "668, 671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c025
+  section: differential
+  statement: "NBTE accompanies cancer or wasting disease and strikes mitral and aortic valves alike; Libman-Sacks occurs in SLE, most often on the mitral valve."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "668-669, 671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c026
+  section: differential
+  statement: "The clinical setting, malignancy or wasting disease versus SLE, separates NBTE from Libman-Sacks endocarditis."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "668, 671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c027
+  section: high-yield
+  statement: "In a patient with cancer or a wasting disease, sterile vegetations on normal-looking valves indicate NBTE, also called marantic endocarditis."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c028
+  section: high-yield
+  statement: "Blood cancers and adenocarcinomas, mainly of pancreas and lung, are the usual malignant settings of NBTE."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c029
+  section: high-yield
+  statement: "Libman-Sacks endocarditis is the verrucous endocarditis of SLE, occurring most often on the mitral valve."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "668" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c030
+  section: high-yield
+  statement: "Unlike infective endocarditis, NBTE leaves the valve intact and is sterile and free of inflammation."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c031
+  section: high-yield
+  statement: "The main danger of NBTE is distant embolization."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c032
+  section: traps
+  statement: "NBTE vegetations are sterile and lack inflammation, so it is not an infection."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c033
+  section: traps
+  statement: "After a Libman-Sacks lesion heals, the valve is typically left without a scar and still working."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "669" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c034
+  section: traps
+  statement: "NBTE is not limited to cancer: DIC and non-cancer debilitating illness can also bring it."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: noninfective-endocarditis-c035
+  section: mnemonics
+  statement: "The term marantic comes from the Greek marantikos, wasting away."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14

@@ -1,0 +1,102 @@
+id: hypertensive-heart-disease
+module: o17
+tier: core
+kind: disease
+names:
+  it: "Cardiopatia ipertensiva"
+  en: "Hypertensive heart disease"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: []
+summary:
+  it: "Danno cardiaco da ipertensione arteriosa di lunga durata: ipertrofia concentrica del ventricolo sinistro, disfunzione diastolica e, se non trattata, scompenso cardiaco."
+  en: "Cardiac damage from long-standing hypertension: concentric left ventricular hypertrophy, diastolic dysfunction and, if untreated, heart failure."
+lenses:
+  system: [heart]
+  process: [cellular-adaptation]
+  pattern: [hypertrophy]
+  presentation: [dyspnea]
+  marker: []
+  group: [vascular, adaptive]
+learningObjectives:
+  - it: "Definire la cardiopatia ipertensiva e il criterio di esclusione di altre cause di cuore ingrandito."
+    en: "Define hypertensive heart disease and the criterion of excluding other causes of an enlarged heart."
+  - it: "Descrivere l'ipertrofia concentrica del ventricolo sinistro a livello macroscopico e microscopico."
+    en: "Describe concentric left ventricular hypertrophy grossly and microscopically."
+  - it: "Spiegare perché la disfunzione diastolica compare e come porta allo scompenso."
+    en: "Explain why diastolic dysfunction appears and how it leads to heart failure."
+  - it: "Elencare le complicanze e le cause di morte dell'ipertensione non trattata."
+    en: "List the complications and causes of death of untreated hypertension."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: pulmonary-hypertension
+    note:
+      it: "Il cuore polmonare ipertrofizza il ventricolo destro, non il sinistro."
+      en: "Cor pulmonale thickens the right ventricle, not the left."
+  - type: sharesMechanism
+    target: ischemic-heart-disease
+    note:
+      it: "L'ipertensione si associa a un'aterosclerosi coronarica più grave."
+      en: "Hypertension goes with more severe coronary atherosclerosis."
+  - type: prerequisiteOf
+    target: cardiac-hypertrophy-and-heart-failure
+    note:
+      it: "È una causa di ipertrofia seguita da scompenso."
+      en: "It is a cause of hypertrophy followed by failure."
+quickCheck:
+  - id: hypertensive-heart-disease-q1
+    q:
+      it: "Che aspetto ha la cavità del ventricolo sinistro nelle fasi iniziali?"
+      en: "What does the left ventricular cavity look like in the early stage?"
+    a:
+      it: "Non è dilatata: la parete è ispessita in modo uniforme (ipertrofia concentrica)."
+      en: "It is not dilated: the wall is thickened evenly (concentric hypertrophy)."
+    kind: short
+  - id: hypertensive-heart-disease-q2
+    q:
+      it: "Che effetto ha l'ipertrofia miocardica sullo stress di parete aumentato?"
+      en: "What does myocardial hypertrophy do to the raised wall stress?"
+    a:
+      it: "Riporta lo stress di parete elevato verso la norma."
+      en: "It brings the elevated wall stress back toward normal."
+    kind: short
+  - id: hypertensive-heart-disease-q3
+    q:
+      it: "Qual è la principale causa di morte nell'ipertensione non trattata?"
+      en: "What is the main cause of death in untreated hypertension?"
+    a:
+      it: "Lo scompenso cardiaco."
+      en: "Heart failure."
+    kind: short
+selfExplain:
+  - it: "Perché oltre un certo limite l'ipertrofia smette di compensare?"
+    en: "Why does hypertrophy stop compensating beyond a certain limit?"
+  - it: "Perché l'ipertensione aumenta il rischio di ischemia miocardica?"
+    en: "Why does hypertension raise the risk of myocardial ischemia?"
+examQuestions:
+  - it: "Mi parli della cardiopatia ipertensiva: quando si può porre questa diagnosi e che aspetto ha il cuore?"
+    en: "Tell me about hypertensive heart disease: when can the diagnosis be made, and what does the heart look like?"
+    focus: [diagnosis, gross]
+    level: 1
+  - it: "Perché il ventricolo sinistro si ispessisce nell'ipertensione e che effetto ha questo sullo stress di parete?"
+    en: "Why does the left ventricle thicken in hypertension, and what does this do to wall stress?"
+    focus: [etiology, pathogenesis]
+    level: 2
+  - it: "Come distingue un'ipertrofia da ipertensione sistemica da quella del cuore polmonare, e quali complicanze fatali si attende nell'ipertensione non trattata?"
+    en: "How do you tell hypertrophy from systemic hypertension from that of cor pulmonale, and which fatal complications do you expect in untreated hypertension?"
+    focus: [differential, prognosis]
+    level: 3
+images:
+  - id: hypertensive-heart-disease-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "17"
+    pages: "663-664"
+lastUpdated: 2026-11-14
+status: published

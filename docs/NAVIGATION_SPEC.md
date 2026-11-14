@@ -50,6 +50,7 @@ All ids in URLs are language-neutral, so switching language swaps only the `/{la
 | `/{lang}/atlas/{lens}/` | All terms of one lens (tree when terms have parents). |
 | `/{lang}/atlas/{lens}/{term}/` | Entities for that term in syllabus order; previous/next term. |
 | `/{lang}/atlas/az/` | A–Z of entities and glossary terms; `#term-<id>` anchors. |
+| `/{lang}/chapter/{id}/` | **Chapter page** (D075): the chapter's published cards in syllabus order, each with its one-sentence summary; how many cards are published of how many are planned (planned names are never shown); previous and next chapter. Built from a chapter's first published card. Linked from the chapter index, the home page and the atlas module grid. |
 | `/{lang}/e/{id}/` | **Canonical entity page.** |
 | `/{lang}/pattern/{id}/` | Pattern Page with comparison matrix. |
 | `/{lang}/pathways/{id}/` | Molecular pathway (O9, D054): step list, animated 2D diagram, 3D structure viewer loaded on demand, structure provenance and sources. |
@@ -184,7 +185,7 @@ Reading layout (D068):
 ## 6. Orientation
 
 - Breadcrumbs on every page below a top-level destination.
-- "You are here" highlight in the module tree: the sidebar copy (≥ 1024 px) opens with the current card in the middle of its scrolling box (its `scrollTop` only, the page never moves) and fades the edges that hide cards; the chapter dialog (600–1023 px, and ≥ 1024 px with the sidebar collapsed) opens with focus on the current card. A native modal `<dialog>`: focus stays inside, Esc or a click on the backdrop closes it, focus returns to the button. The page holds the module tree once: the dialog is empty and takes the sidebar's tree while it is open (D072).
+- Chapter index (D075): it lists the chapters that have published cards, in the three sections of the syllabus, each with its id and its count of published cards ("19", or "1/5" while the chapter is not complete). The chapter of the card on the page shows its cards, with "you are here" on the current one; every other chapter is one link to its chapter page (§3), so the index stays a few kB on every card page (the old one listed every card of every chapter, 117 bytes per published card, and broke the HTML weight budget at 63 cards). A link at its end leads to the roadmap, which has the chapters without a published card. The sidebar copy (≥ 1024 px) opens with the current card in the middle of its scrolling box (its `scrollTop` only, the page never moves) and fades the edges that hide cards; the chapter dialog (600–1023 px, and ≥ 1024 px with the sidebar collapsed) opens with focus on the current card. A native modal `<dialog>`: focus stays inside, Esc or a click on the backdrop closes it, focus returns to the button. The page holds the chapter index once: the dialog is empty and takes the sidebar's index while it is open (D072).
 - Card order in every list (chapter index, chapter and lens-term lists, previous/next): module order, then the name in the language of the page (`localeCompare`), because the data has no order of cards inside a module (D067).
 - Recently viewed: last 20, stored in IndexedDB.
 - "Resume where you left off": last entity plus section anchor.

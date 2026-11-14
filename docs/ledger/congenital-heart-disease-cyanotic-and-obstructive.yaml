@@ -1,0 +1,498 @@
+entity: congenital-heart-disease-cyanotic-and-obstructive
+claims:
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c001
+  section: definition
+  statement: "Most cyanotic congenital heart disease arises from a shunt running right to left; tetralogy of Fallot and tricuspid atresia are examples"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "648" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c002
+  section: definition
+  statement: "Among infants who die of a cyanotic defect in the first year, transposition of the great arteries is the cause in most"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "649" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c003
+  section: definition
+  statement: "The obstructive lesions covered are coarctation of the aorta, pulmonary stenosis and congenital aortic stenosis"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "649-651" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c004
+  section: etiology
+  statement: "Persistent truncus arteriosus, tetralogy and transposition all trace back to abnormal development of the spiral septum, which normally divides the common arterial trunk"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "647-649" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c005
+  section: etiology
+  statement: "Male sex and maternal diabetes both raise the frequency of transposition"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "649" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c006
+  section: etiology
+  statement: "Some patients with Down syndrome or DiGeorge syndrome have tetralogy of Fallot"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "648" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c007
+  section: etiology
+  statement: "Alagille syndrome is mostly linked to JAG1 mutations and includes heart disease, most often tetralogy; NOTCH1 mutations are found in some tetralogy families"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "648" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c008
+  section: etiology
+  statement: "Hypoplastic left heart has a partly genetic, complex background"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "647" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c009
+  section: etiology
+  statement: "Some patients with trisomy 13, 18 or 21, or with a 22q11 deletion, have double-outlet right ventricle; the source does not make these the only settings"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "649" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c010
+  section: etiology
+  statement: "Turner syndrome and bicuspid aortic valve accompany coarctation, which is also more frequent in men"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "649" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c011
+  section: etiology
+  statement: "Williams syndrome, a deletion of part of 7q11 including the elastin gene, goes with peripheral pulmonary stenosis and supravalvular aortic stenosis"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "650-651" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c012
+  section: pathogenesis
+  statement: "Two independent parallel circuits, systemic and pulmonary, form when the aorta is connected to the right ventricle and the pulmonary artery to the left, as in transposition"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "649" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c013
+  section: pathogenesis
+  statement: "Nearly all infants with transposition have an ASD, often with a VSD or PDA, and the mixing of blood through these defects keeps them alive"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "649" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c014
+  section: pathogenesis
+  statement: "In tetralogy, severe pulmonary stenosis makes right ventricular output leave through the VSD into the aorta, which desaturates arterial blood"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "648" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c015
+  section: pathogenesis
+  statement: "Tricuspid atresia forces right-to-left shunting across a patent foramen ovale"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "648" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c016
+  section: pathogenesis
+  statement: "In total anomalous pulmonary venous drainage the veins do not reach the left atrium directly, so an ASD or patent foramen ovale keeps the infant alive"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "647" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c017
+  section: pathogenesis
+  statement: "In hypoplastic left heart the aorta receives blood only from the pulmonary trunk through a PDA, since the right ventricle supplies the entire output"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "647" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c018
+  section: pathogenesis
+  statement: "The posterior aortic shelf normally involutes after birth; when it persists beside the ductus, the common juxtaductal coarctation results"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "650" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c019
+  section: pathogenesis
+  statement: "In infantile preductal coarctation the aortic isthmus does not widen in late fetal life and is still narrow at birth"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "650" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c020
+  section: gross
+  statement: "Four findings define tetralogy: a VSD, pulmonary stenosis, right ventricular hypertrophy, and an aorta that overrides the defect from a rightward position"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "648" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c021
+  section: gross
+  statement: "The hypertrophied heart in tetralogy has a boot shape"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "648" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c022
+  section: gross
+  statement: "Persistent truncus is one vessel sitting over a VSD, with the aorta, pulmonary arteries and coronary arteries all arising from it"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "647" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c023
+  section: gross
+  statement: "Tricuspid atresia is absence of the tricuspid valve, usually accompanied by a VSD"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "648" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c024
+  section: gross
+  statement: "In hypoplastic left heart the left-sided valves are small or atretic, and the ascending aorta and left ventricle are underdeveloped as well"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "647" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c025
+  section: gross
+  statement: "In D-transposition the aorta arises from the right ventricle, and in all types it lies anterior to the pulmonary artery"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "649" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c026
+  section: gross
+  statement: "At the ductus site, just distal to the origin of the left subclavian artery, the aorta is focally narrowed in almost all coarctations"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "649" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c027
+  section: gross
+  statement: "The pulmonary artery can dilate beyond a stenotic valve over the years; in isolated stenosis the cusps are fused into a funnel"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "650" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c028
+  section: gross
+  statement: "Subvalvular aortic stenosis is an obstruction of the left ventricular outflow tract just below the aortic valve, formed by fibrous tissue or muscle"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "651" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c029
+  section: micro
+  statement: "Rupture of a dissecting aneurysm is a risk in coarctation because the aortic media degenerates"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "650" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c030
+  section: micro
+  statement: "Thickening and calcification develop in a bicuspid aortic valve as the years pass"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "651" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c031
+  section: ancillary
+  statement: "Rare copy number changes, either inherited or newly arisen, have been linked to tetralogy and to hypoplastic left heart"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "647-648" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c032
+  section: clinical
+  statement: "Squatting relieves breathlessness in children with tetralogy, who also grow slowly, are cyanotic and have exertional dyspnea"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "648" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c033
+  section: clinical
+  statement: "In tetralogy a helpful PDA can close by itself, after which cyanosis increases"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "648" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c034
+  section: clinical
+  statement: "In truncus arteriosus cyanosis appears late, with pulmonary vascular disease; before that, heavy pulmonary flow causes heart failure and repeated respiratory infections"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "647" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c035
+  section: clinical
+  statement: "In tricuspid atresia with a small VSD the murmur is prominent and cyanosis is worse because too little blood reaches the lungs"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "649" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c036
+  section: clinical
+  statement: "Symptoms of hypoplastic left heart begin only when pulmonary vascular resistance falls; before that a newborn may appear well"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "647" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c037
+  section: clinical
+  statement: "Severe hypoxemia and heart failure follow total anomalous pulmonary venous drainage"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "647" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c038
+  section: clinical
+  statement: "Nosebleeds and headaches can occur with the hypertension proximal to a coarctation, which also leads to left ventricular hypertrophy"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "650" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c039
+  section: clinical
+  statement: "Low pressure below a coarctation makes the legs cold and pale"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "650" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c040
+  section: clinical
+  statement: "Clubbing and cyanosis appear when severe pulmonary stenosis combines with a patent foramen ovale, because blood shunts right to left"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "650" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c041
+  section: clinical
+  statement: "Symptoms of bicuspid aortic stenosis generally begin in adulthood, and many children have none"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "651" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c042
+  section: clinical
+  statement: "In severe congenital aortic obstruction, ventricular arrhythmias can cause sudden death, and exertional dyspnea and angina begin early in life"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "651" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c043
+  section: diagnosis
+  statement: "A blood pressure difference between the arms and legs is the classic clinical sign of coarctation"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "650" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c044
+  section: diagnosis
+  statement: "Rib notching on a chest radiograph results from intercostal arteries that enlarge under high pressure as collaterals bypassing the coarctation"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "650" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c045
+  section: prognosis
+  statement: "Total surgical correction of tetralogy gives an excellent long-term outcome, whereas without treatment the prognosis is dismal"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "648" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c046
+  section: prognosis
+  statement: "An arterial-switch operation early in life can correct transposition"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "649" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c047
+  section: prognosis
+  statement: "Nearly every infant with hypoplastic left heart dies within the first month unless surgery or transplantation intervenes"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "647" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c048
+  section: prognosis
+  statement: "Repair of truncus arteriosus is effective when done early, before significant pulmonary vascular change"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "647" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c049
+  section: prognosis
+  statement: "Current therapy for tricuspid atresia is staged surgical palliation"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "649" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c050
+  section: prognosis
+  statement: "Heart failure and rupture of a dissecting aortic aneurysm are complications of coarctation"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "650" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c051
+  section: prognosis
+  statement: "Surgical resection of the narrowed segment treats coarctation, and balloon dilation has also been performed"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "650" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c052
+  section: differential
+  statement: "Truncus type 4 is hard to distinguish from tetralogy with pulmonary atresia; it has no pulmonary trunk, and enlarged bronchial arteries supply the lungs"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "647" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c053
+  section: differential
+  statement: "Functionally similar to transposition with VSD, Taussig-Bing malformation is a double-outlet right ventricle whose VSD lies under an overriding pulmonary artery"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "649" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c054
+  section: differential
+  statement: "In congenitally corrected transposition circulation is functionally normal because the ventricles are transposed along with the great vessels"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "649" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c055
+  section: differential
+  statement: "Symptoms from a congenital bicuspid aortic valve usually start in adulthood, after years of progressive thickening and calcification"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "651" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c056
+  section: high-yield
+  statement: "Tetralogy is a VSD with an overriding aorta, plus pulmonary stenosis and right ventricular hypertrophy"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "648" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c057
+  section: high-yield
+  statement: "In transposition, survival depends on an ASD, VSD or PDA that joins the two parallel circuits"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "649" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c058
+  section: high-yield
+  statement: "Coarctation shows rib notching on chest radiography and a blood pressure difference between arms and legs"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "650" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c059
+  section: high-yield
+  statement: "Hypoplastic left heart depends on a PDA for systemic blood flow"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "647" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c060
+  section: traps
+  statement: "In tetralogy a PDA is helpful because the pulmonary vascular bed would otherwise receive too little blood"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "648" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c061
+  section: traps
+  statement: "When congenitally corrected transposition is the only malformation the patient is clinically normal"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "649" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: congenital-heart-disease-cyanotic-and-obstructive-c062
+  section: mnemonics
+  statement: "The four components of tetralogy are pulmonary stenosis, right ventricular hypertrophy, overriding aorta and VSD"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "648" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14

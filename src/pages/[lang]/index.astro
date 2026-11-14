@@ -5,6 +5,7 @@ import { tCommon, SITE_NAME } from '../../i18n/common.ts';
 import { tHome } from '../../i18n/pages.ts';
 import { langPath } from '../../lib/url.ts';
 import { siteData } from '../../lib/content.ts';
+import { chapterHref } from '../../lib/chapters.ts';
 
 export const getStaticPaths = langPaths;
 
@@ -16,14 +17,11 @@ const pct = Math.round((published / modules.length) * 100);
 // Cards per module: published cards, and M = published + planned entries. Planned names are never shown, only counts.
 const rows = modules.map((m) => {
   const own = entities.filter((e) => e.module === m.id);
-  // a module has no page of its own: its lens page is the system most of its cards belong to
-  const systems = own.flatMap((e) => e.lenses.system.slice(0, 1));
-  const system = [...new Set(systems)].sort((a, b) => systems.filter((x) => x === b).length - systems.filter((x) => x === a).length)[0];
   return {
     m,
     cards: own.length,
     total: own.length + m.planned.length,
-    href: m.status === 'published' && system ? langPath(lang, `atlas/system/${system}/`) : undefined,
+    href: own.length > 0 ? chapterHref(lang, m.id) : undefined, // a chapter has a page from its first published card
   };
 });
 const sum = (list: typeof rows) => ({

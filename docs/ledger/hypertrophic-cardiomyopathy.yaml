@@ -1,0 +1,514 @@
+entity: hypertrophic-cardiomyopathy
+claims:
+- claimId: hypertrophic-cardiomyopathy-c001
+  section: definition
+  statement: "In HCM the left ventricle thickens although pressure or volume load on the heart does not account for it."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c002
+  section: definition
+  statement: "Pathogenic mutations are rarer than clinically recognized unexplained hypertrophy, which affects 1 in 500 people in the general population."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c003
+  section: etiology
+  statement: "In most cases one mutated gene with dominant effect is responsible, and the gene encodes a sarcomere protein."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c004
+  section: etiology
+  statement: "Most cases involve variants in one of eight genes: MYH7, TPM1, TNNT2, MYBPC3, MYL2, MYL3, TNNI3, ACTC1."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c005
+  section: etiology
+  statement: "MYH7 and MYBPC3 mutations together account for about 50% of HCM."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c006
+  section: etiology
+  statement: "In contrast with dilated cardiomyopathy, HCM only rarely involves TTN mutations."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c007
+  section: etiology
+  statement: "Variants in PRKAB2, LAMP2 and GLA, which are non-sarcomere genes also linked to HCM, alter glucose metabolism and clearance."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c008
+  section: etiology
+  statement: "Some people with clinically silent hypertrophy carry sarcomere variants that, alone or together, apparently thicken the ventricle short of full-blown HCM."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c009
+  section: pathogenesis
+  statement: "Within one gene, mutations that reduce function tend to cause DCM, while those that cause HCM tend to boost function and make the muscle hypercontractile."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c010
+  section: pathogenesis
+  statement: "When the mutation lies in the head domain of myosin, contraction is stronger and relaxation is worse."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c011
+  section: pathogenesis
+  statement: "In TNNT2 variants that cause HCM, actin-activated myosin ATPase becomes more sensitive to calcium."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c012
+  section: pathogenesis
+  statement: "A lowered ratio of phosphorylated creatine to ATP is one sign of disturbed myocardial energetics in HCM."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c013
+  section: pathogenesis
+  statement: "A gene expressed only in myocytes can still alter non-myocyte tissue, because myocyte-derived TGFβ and augmented calcium signaling drive fibroblast and smooth muscle proliferation and matrix expansion."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c014
+  section: pathogenesis
+  statement: "More than 90% of MYH7 mutation carriers have developed HCM by their second decade, so penetrance is high."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c015
+  section: pathogenesis
+  statement: "Disease onset in MYBPC3 mutation carriers can be delayed until the 50s or 60s."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c016
+  section: gross
+  statement: "The degree of cardiac enlargement differs among genetic forms, but the heart is always enlarged."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c017
+  section: gross
+  statement: "A thick wall surrounds a narrowed left ventricular cavity, slit-like in places."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c018
+  section: gross
+  statement: "Prominent papillary muscles and trabeculae occupy part of the ventricular lumen."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c019
+  section: gross
+  statement: "A septum to free wall thickness ratio above 1.5, which defines asymmetric septal hypertrophy, is found in more than half of cases."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c020
+  section: gross
+  statement: "In some uncommon genetic forms only the left ventricular apex or the papillary muscles are hypertrophied."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c021
+  section: gross
+  statement: "By bulging into the outflow tract early in systole, a thickened septum may obstruct aortic outflow."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c022
+  section: gross
+  statement: "In obstruction, a fibrous endocardial plaque typically marks where the anterior mitral leaflet strikes the septum in systole."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c023
+  section: gross
+  statement: "Dilatation often affects both atria."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c024
+  section: micro
+  statement: "Myofiber disarray is the key histologic finding of HCM and is greatest in the interventricular septum."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c025
+  section: micro
+  statement: "Enlarged myocytes lie at oblique or right angles to their neighbors rather than side by side, and their myofibrils are disordered too."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683-684" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c026
+  section: micro
+  statement: "In HCM disarray is always extensive; it can also occur in other settings, such as infants with congenital heart defects."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "684" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c027
+  section: micro
+  statement: "The interstitium holds more cells and its extracellular matrix is expanded."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "684" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c028
+  section: micro
+  statement: "Some small intramural coronary arteries have a thickened, hypercellular wall."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "684" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c029
+  section: ancillary
+  statement: "Histologic sections show myofiber disarray, most marked in the septum, together with more interstitial cells and thickened intramural arteries."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683-684" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c030
+  section: ancillary
+  statement: "About 60% of probands carry a disease-causing variant in the eight genes, with higher detection when there is a family history or early onset."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c031
+  section: clinical
+  statement: "Screening the family of an affected member commonly yields the diagnosis, and many patients have few symptoms, if any."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "684" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c032
+  section: clinical
+  statement: "Onset in the third to fifth decades is frequent, but HCM can become apparent at any age."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "684" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c033
+  section: clinical
+  statement: "Cases first found in the elderly are mainly associated with MYBPC3 mutations."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "684" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c034
+  section: clinical
+  statement: "Fainting, angina and shortness of breath can incapacitate some patients."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "684" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c035
+  section: clinical
+  statement: "Local ischemia from thickened intramural coronary arteries and faulty myocardial energy handling, plus dynamic outflow obstruction, explains the symptoms."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "684" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c036
+  section: clinical
+  statement: "Contractile function in HCM tends to be vigorous, or hyperdynamic."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "684" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c037
+  section: clinical
+  statement: "End-diastolic pressure is increased because the remodeled left ventricle is stiff and relaxes poorly in diastole."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "684" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c038
+  section: clinical
+  statement: "Atrial enlargement is partly due to mitral regurgitation, which is common in HCM, particularly with outflow obstruction."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "684" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c039
+  section: clinical
+  statement: "Atrial fibrillation, made more likely by mitral regurgitation, worsens symptoms because the stiff ventricle fills poorly."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "684" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c040
+  section: diagnosis
+  statement: "HCM is a diagnosis of exclusion; hypertension, aortic stenosis and athletic conditioning must first be ruled out as causes of the hypertrophy."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c041
+  section: prognosis
+  statement: "Roughly 1% of HCM patients die each year."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "684" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c042
+  section: prognosis
+  statement: "Sudden death accounts for roughly 60% of deaths in HCM."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "684" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c043
+  section: prognosis
+  statement: "Patients without symptoms may still be at risk of sudden death."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "684" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c044
+  section: prognosis
+  statement: "At autopsy, about half of sudden deaths in young athletes prove to be unrecognized HCM."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "684" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c045
+  section: prognosis
+  statement: "Certain TNNT2 variants carry an especially high risk of sudden death; no other molecular marker has proved a useful predictor."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c046
+  section: prognosis
+  statement: "Heart failure from impaired systolic function can eventually develop, though the course is often stable for years."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "684" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c047
+  section: prognosis
+  statement: "About 10% of patients come to resemble dilated cardiomyopathy."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "684" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c048
+  section: prognosis
+  statement: "Beta blockers and calcium channel blockers may aid ventricular relaxation; as negative inotropes they also weaken contraction and lessen outflow obstruction."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "684" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c049
+  section: prognosis
+  statement: "Neither partial septal excision nor alcohol-induced septal infarction removes the risk of sudden death, though both may relieve obstructive symptoms."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "684" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c050
+  section: differential
+  statement: "Hypertension as a cause of hypertrophy excludes the diagnosis of HCM."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c051
+  section: differential
+  statement: "Aortic stenosis as a cause of hypertrophy excludes the diagnosis of HCM."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c052
+  section: differential
+  statement: "Mutations in the same genes can cause DCM through loss of function, and TTN mutations are common in DCM but unusual in HCM."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c053
+  section: differential
+  statement: "Arrhythmogenic cardiomyopathy involves the desmosome and often presents with ventricular tachyarrhythmias early in life."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683-684" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c054
+  section: high-yield
+  statement: "Unexplained left ventricular hypertrophy is the hallmark of HCM."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c055
+  section: high-yield
+  statement: "Most HCM is due to dominant sarcomere gene mutations, mainly MYH7 and MYBPC3."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c056
+  section: high-yield
+  statement: "The septum is often thicker than the free wall and can obstruct the outflow tract."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c057
+  section: high-yield
+  statement: "On histology the leading abnormality is disorganized myocytes, worst in the septum."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c058
+  section: high-yield
+  statement: "Roughly 1 patient in 100 dies each year, and sudden death can occur even without symptoms."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "684" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c059
+  section: traps
+  statement: "Athletic hypertrophy, aortic stenosis and hypertension all have to be excluded before HCM is diagnosed."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c060
+  section: traps
+  statement: "Asymmetric septal hypertrophy is present in more than half of cases, and some forms spare the septum and thicken only the apex or the papillary muscles."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c061
+  section: traps
+  statement: "In HCM the disarray is extensive; in infants with congenital heart defects it can look similar."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "684" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c062
+  section: traps
+  statement: "Sudden death risk persists after removal of septal muscle or alcohol-induced septal infarction, even if obstructive symptoms ease."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "684" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c063
+  section: traps
+  statement: "Patients with few symptoms, even none, may still be at risk of sudden death."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "684" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertrophic-cardiomyopathy-c064
+  section: mnemonics
+  statement: "Features of HCM: sarcomere gene mutations, anterior mitral leaflet contact with the septum, asymmetric septal hypertrophy, risk of sudden death, hypercontractility."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "683-684" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14

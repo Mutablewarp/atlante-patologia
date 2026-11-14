@@ -1,0 +1,135 @@
+id: cardiac-hypertrophy-and-heart-failure
+module: o17
+tier: core
+kind: process
+editionDependent: false
+status: published
+lastUpdated: 2026-11-14
+reviewStatus: ai-generated-unreviewed
+names:
+  it: Ipertrofia miocardica e scompenso cardiaco
+  en: Myocardial hypertrophy and heart failure
+  eponyms: []
+  synonyms:
+    it: [insufficienza cardiaca, scompenso cardiaco congestizio]
+    en: [congestive heart failure, cardiac failure]
+  abbreviations: [HF, CHF, HFpEF]
+summary:
+  it: L'ipertrofia dei miociti compensa un sovraccarico del cuore, ma se il danno persiste il ventricolo si dilata e si arriva allo scompenso, con congestione di polmoni, fegato e altri organi.
+  en: Myocyte hypertrophy compensates for cardiac overload, but with persisting injury the ventricle dilates and heart failure follows, with congestion of lungs, liver and other organs.
+learningObjectives:
+  - it: Distinguere ipertrofia concentrica, eccentrica e fisiologica.
+    en: Distinguish concentric, eccentric and physiologic hypertrophy.
+  - it: Spiegare i meccanismi di compenso e di scompenso.
+    en: Explain the mechanisms of compensation and decompensation.
+  - it: Confrontare scompenso sinistro e destro e i loro quadri clinici.
+    en: Compare left-sided and right-sided failure and their clinical pictures.
+  - it: Descrivere gli effetti dello scompenso su polmone, fegato, rene e cervello.
+    en: Describe the effects of failure on lung, liver, kidney and brain.
+lenses:
+  system: [heart]
+  process: [cellular-adaptation]
+  pattern: [hypertrophy]
+  presentation: [dyspnea, edema]
+  marker: [laboratory]
+  group: [adaptive]
+prerequisites: [hypertrophy]
+relations:
+  - type: sharesMechanism
+    target: hypertrophy
+  - type: causes
+    target: hyperemia-and-congestion
+  - type: causes
+    target: edema-and-effusions
+  - type: complicationOf
+    target: ischemic-heart-disease
+quickCheck:
+  - id: cardiac-hypertrophy-and-heart-failure-q1
+    q:
+      it: Che cosa distingue l'ipertrofia concentrica da quella eccentrica?
+      en: What separates concentric from eccentric hypertrophy?
+    a:
+      it: Nella concentrica la parete si ispessisce senza dilatazione della camera; nell'eccentrica la camera si dilata e i miociti si allungano.
+      en: In concentric hypertrophy the wall thickens without a larger chamber; in eccentric hypertrophy the chamber dilates and the myocytes lengthen.
+    kind: short
+  - id: cardiac-hypertrophy-and-heart-failure-q2
+    q:
+      it: Quali sintomi dà lo scompenso sinistro e quali segni lo scompenso destro?
+      en: Which symptoms does left-sided failure cause, and which signs does right-sided failure cause?
+    a:
+      it: Sinistro, dispnea da sforzo, ortopnea e dispnea parossistica notturna; destro, giugulari distese, edema declive, fegato ingrossato e ascite.
+      en: Left-sided, dyspnea on exertion, orthopnea and paroxysmal nocturnal dyspnea; right-sided, distended jugular veins, leg edema, enlarged liver and ascites.
+    kind: short
+  - id: cardiac-hypertrophy-and-heart-failure-q3
+    q:
+      it: Che cosa spinge l'organismo a trattenere sodio e liquidi quando la gittata è bassa?
+      en: What makes the body retain sodium and fluid when output is low?
+    a:
+      it: Il flusso al rene si riduce e la risposta renina-angiotensina-aldosterone fa trattenere sodio e liquidi.
+      en: Kidney flow falls, and the renin-angiotensin-aldosterone response makes the body retain sodium and fluid.
+    kind: free
+  - id: cardiac-hypertrophy-and-heart-failure-q4
+    q:
+      it: Che cosa si vede al microscopio nel polmone da scompenso sinistro cronico?
+      en: What is seen under the microscope in the lung in chronic left-sided failure?
+    a:
+      it: Macrofagi alveolari carichi di emosiderina, le cellule dello scompenso, derivati da globuli rossi usciti dai capillari congesti.
+      en: Alveolar macrophages carrying hemosiderin, the heart failure cells, from red cells that leaked out of congested capillaries.
+    kind: short
+  - id: cardiac-hypertrophy-and-heart-failure-q5
+    q:
+      it: Quale esame del sangue si usa come biomarcatore della gravità dello scompenso?
+      en: Which blood test serves as a biomarker of how severe heart failure is?
+    a:
+      it: Il livello ematico di BNP.
+      en: The blood BNP level.
+    kind: short
+selfExplain:
+  - it: Perché un cuore scompensato mantiene la gittata solo con pressioni di riempimento più alte?
+    en: Why does a failing heart keep its output only at a higher filling pressure?
+  - it: Perché lo scompenso sinistro porta nel tempo allo scompenso destro?
+    en: Why does left-sided failure lead in time to right-sided failure?
+chain:
+  - pathology:
+      it: Sovraccarico di pressione con ipertrofia e poi dilatazione del ventricolo
+      en: Pressure overload with hypertrophy and then ventricular dilatation
+    sign:
+      it: Dispnea da sforzo e ortopnea
+      en: Dyspnea on exertion and orthopnea
+    lab:
+      it: BNP ematico elevato
+      en: Raised blood BNP
+examQuestions:
+  - it: Mi parli dell'ipertrofia miocardica concentrica ed eccentrica.
+    en: Tell me about concentric and eccentric myocardial hypertrophy.
+    focus: [gross, high-yield]
+    level: 1
+  - it: Perché un sovraccarico del cuore porta prima a ipertrofia e poi a scompenso?
+    en: Why does cardiac overload lead first to hypertrophy and then to heart failure?
+    focus: [etiology, pathogenesis]
+    level: 2
+  - it: Come distingue lo scompenso sinistro da quello destro?
+    en: How do you tell left-sided from right-sided failure?
+    focus: [clinical, high-yield]
+    level: 3
+  - it: Quali effetti ha lo scompenso su polmone, fegato, rene e cervello?
+    en: What are the effects of heart failure on lung, liver, kidney and brain?
+    focus: [gross, micro, clinical]
+    level: 3
+  - it: Che cosa vede al microscopio nel miocardio ipertrofico e nel polmone da stasi?
+    en: What do you see under the microscope in hypertrophic myocardium and in the congested lung?
+    focus: [micro]
+    level: 1
+images:
+  - id: cardiac-hypertrophy-and-heart-failure-gross-1
+    role: gross
+    pairWith: cardiac-hypertrophy-and-heart-failure-micro-1
+  - id: cardiac-hypertrophy-and-heart-failure-micro-1
+    role: micro
+sources:
+  - source: rubin-8e
+    chapter: "17"
+    pages: "636-642"
+  - source: rubin-8e
+    chapter: "7"
+    pages: "341-343"

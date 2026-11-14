@@ -1,0 +1,76 @@
+---
+/**
+ * One chapter (module): its published cards in syllabus order with their one-sentence summaries, and the previous and next
+ * chapter. Built for every chapter that has at least one published card (lib/chapters.ts): the sidebar's chapter index,
+ * the home page and the atlas link here. Planned cards are counted, never named. The cards use the pattern of the
+ * lens-term pages (`.grid`, `.card.link-card`), so the two kinds of list look the same.
+ */
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import Breadcrumb from '../../../components/nav/Breadcrumb.astro';
+import { LANGS, fmt, type Lang } from '../../../i18n/index.ts';
+import { tCommon } from '../../../i18n/common.ts';
+import { tAtlas } from '../../../i18n/pages.ts';
+import { tHz } from '../../../i18n/horizontal.ts';
+import { langPath } from '../../../lib/url.ts';
+import { siteData } from '../../../lib/content.ts';
+import { chapterHref, chaptersOf } from '../../../lib/chapters.ts';
+
+export async function getStaticPaths() {
+  const data = await siteData('it'); // the chapters are the same in both languages
+  return chaptersOf(data).flatMap((c) => LANGS.map((lang) => ({ params: { lang, id: c.id } })));
+}
+
+const lang = Astro.params.lang as Lang;
+const t = (k: Parameters<typeof tHz>[1]) => tHz(lang, k);
+const chapters = chaptersOf(await siteData(lang));
+const at = chapters.findIndex((c) => c.id === Astro.params.id);
+const chapter = chapters[at]!;
+const [prev, next] = [chapters[at - 1], chapters[at + 1]];
+const n = chapter.cards.length;
+const cardsText = n === 1 ? t('chapterCardsOne') : fmt(t('chapterCards'), { n });
+const lede =
+  n === chapter.total
+    ? n === 1
+      ? t('chapterLedeAllOne')
+      : fmt(t('chapterLedeAll'), { n })
+    : fmt(t(n === 1 ? 'chapterLedePartOne' : 'chapterLedePart'), { published: n, total: chapter.total });
+const kicker = fmt(t('chapterKicker'), { id: chapter.id.toUpperCase(), section: tCommon(lang, `section${chapter.section}`) });
+---
+
+<BaseLayout lang={lang} title={chapter.label[lang]} description={fmt(t('chapterMeta'), { name: chapter.label[lang], cards: cardsText })} tab="atlas">
+  <Breadcrumb lang={lang} items={[{ label: tAtlas(lang, 'title'), href: langPath(lang, 'atlas/') }, { label: chapter.label[lang] }]} />
+  <header class="page-head">
+    <p class="kicker">{kicker}</p>
+    <h1>{chapter.label[lang]}</h1>
+    <p class="lede">{lede}</p>
+  </header>
+  <h2>{t('chapterCardsTitle')}</h2>
+  <ul class="grid">
+    {
+      chapter.cards.map((e) => (
+        <li>
+          <a class="card link-card" href={langPath(lang, `e/${e.id}/`)}>
+            <h3>{e.names[lang]}</h3>
+            <p class="small muted">{e.summary[lang]}</p>
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+  {
+    (prev || next) && (
+      <nav class="prev-next" aria-label={t('chapterNav')}>
+        {prev && (
+          <a rel="prev" href={chapterHref(lang, prev.id)}>
+            ← {t('chapterPrev')}: {prev.label[lang]}
+          </a>
+        )}
+        {next && (
+          <a rel="next" href={chapterHref(lang, next.id)}>
+            {t('chapterNext')}: {next.label[lang]} →
+          </a>
+        )}
+      </nav>
+    )
+  }
+</BaseLayout>

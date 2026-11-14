@@ -1,0 +1,110 @@
+id: dilated-cardiomyopathy
+module: o17
+tier: core
+kind: disease
+status: published
+lastUpdated: 2026-11-14
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+names:
+  it: "Cardiomiopatia dilatativa"
+  en: "Dilated cardiomyopathy"
+  eponyms: []
+  synonyms:
+    it: ["Cardiomiopatia dilatativa idiopatica"]
+    en: ["Idiopathic dilated cardiomyopathy"]
+  abbreviations: [DCM]
+summary:
+  it: "Malattia primitiva del miocardio con dilatazione di entrambi i ventricoli e contrattilità ridotta, che evolve verso lo scompenso cardiaco; può essere genetica o secondaria ad alcol, farmaci, gravidanza o miocardite."
+  en: "Primary disease of the heart muscle with dilation of both ventricles and impaired contractility, progressing to heart failure; it may be genetic or secondary to alcohol, drugs, pregnancy or myocarditis."
+lenses:
+  system: [heart]
+  process: [cell-injury, chronic-inflammation]
+  pattern: [hypertrophy, atrophy]
+  presentation: [dyspnea, edema]
+  marker: [molecular]
+  group: [genetic, toxic-environmental, inflammatory]
+learningObjectives:
+  - it: "Definire la cardiomiopatia dilatativa e distinguere le forme primitive (genetiche) da quelle secondarie."
+    en: "Define dilated cardiomyopathy and distinguish primary (genetic) from secondary forms."
+  - it: "Elencare le principali cause secondarie: alcol, antracicline, cardiomiopatia peripartum, miocardite virale."
+    en: "List the main secondary causes: alcohol, anthracyclines, peripartum cardiomyopathy, viral myocarditis."
+  - it: "Descrivere il quadro macroscopico e microscopico e spiegare perché la parete può sembrare sottile pur essendo ipertrofica."
+    en: "Describe the gross and microscopic picture and explain why the wall can look thin despite hypertrophy."
+  - it: "Collegare la malattia allo scompenso cardiaco e alle aritmie ventricolari con morte improvvisa."
+    en: "Link the disease to heart failure and to ventricular arrhythmias with sudden death."
+prerequisites: [cardiac-hypertrophy-and-heart-failure]
+relations:
+  - type: differentialOf
+    target: hypertrophic-cardiomyopathy
+    note:
+      it: "Cavità ventricolare dilatata contro parete spessa e cavità piccola."
+      en: "Dilated ventricular cavity versus thick wall and small cavity."
+  - type: differentialOf
+    target: arrhythmogenic-cardiomyopathy
+    note:
+      it: "Sovrapposizione genetica nelle forme aritmogeniche."
+      en: "Genetic overlap in the arrhythmogenic forms."
+  - type: complicationOf
+    target: myocarditis
+    note:
+      it: "La miocardite virale può evolvere in cardiomiopatia dilatativa."
+      en: "Viral myocarditis can progress to dilated cardiomyopathy."
+quickCheck:
+  - id: dilated-cardiomyopathy-q1
+    q:
+      it: "Perché la parete del ventricolo sinistro può apparire sottile in una cardiomiopatia dilatativa avanzata?"
+      en: "Why can the left ventricular wall look thin in advanced dilated cardiomyopathy?"
+    a:
+      it: "Perché la dilatazione severa distende la parete e nasconde l'ipertrofia; il cuore resta più pesante del normale."
+      en: "Because severe dilation stretches the wall and masks the hypertrophy; the heart is still heavier than normal."
+    kind: short
+  - id: dilated-cardiomyopathy-q2
+    q:
+      it: "Qual è la causa identificabile più comune di cardiomiopatia dilatativa negli Stati Uniti e in Europa?"
+      en: "What is the most common identifiable cause of dilated cardiomyopathy in the United States and Europe?"
+    a:
+      it: "L'abuso di alcol; la diagnosi si basa sull'esclusione di altre cause e sull'anamnesi di consumo eccessivo."
+      en: "Alcohol abuse; the diagnosis rests on excluding other causes and documenting heavy intake."
+    kind: short
+  - id: dilated-cardiomyopathy-q3
+    q:
+      it: "Come può una stessa variante genetica causare cardiomiopatia dilatativa o ipertrofica?"
+      en: "How can variants in the same gene cause either dilated or hypertrophic cardiomyopathy?"
+    a:
+      it: "Le varianti con perdita di funzione tendono a dare la forma dilatativa, quelle con guadagno di funzione la forma ipertrofica."
+      en: "Loss-of-function variants tend to give the dilated form, gain-of-function variants the hypertrophic form."
+    kind: short
+selfExplain:
+  - it: "Perché la miocardite virale può evolvere in cardiomiopatia dilatativa anche dopo la scomparsa del virus?"
+    en: "Why can viral myocarditis progress to dilated cardiomyopathy even after the virus is gone?"
+  - it: "Perché le alterazioni dello scompenso favoriscono le aritmie ventricolari?"
+    en: "Why do the changes of heart failure favor ventricular arrhythmias?"
+examQuestions:
+  - it: "Mi parli della cardiomiopatia dilatativa: quali sono le forme genetiche e quali le cause secondarie?"
+    en: "Tell me about dilated cardiomyopathy: which forms are genetic and which causes are secondary?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Che cosa vede all'esame macroscopico e al microscopio in una cardiomiopatia dilatativa?"
+    en: "What do you see on gross examination and under the microscope in dilated cardiomyopathy?"
+    focus: [gross, micro]
+    level: 1
+  - it: "Perché la parete del ventricolo sinistro può sembrare sottile in un cuore dilatato che in realtà è ipertrofico?"
+    en: "Why can the left ventricular wall look thin in a dilated heart that is in fact hypertrophic?"
+    focus: [gross, traps]
+    level: 2
+  - it: "Come si presenta clinicamente la cardiomiopatia dilatativa e perché espone ad aritmie ventricolari?"
+    en: "How does dilated cardiomyopathy present clinically, and why does it predispose to ventricular arrhythmias?"
+    focus: [clinical, prognosis]
+    level: 2
+  - it: "Come distingue una cardiomiopatia dilatativa da una cardiomiopatia ipertrofica?"
+    en: "How do you tell dilated cardiomyopathy from hypertrophic cardiomyopathy?"
+    focus: [gross, micro, differential]
+    level: 3
+images:
+  - id: dilated-cardiomyopathy-micro-1
+    role: micro
+sources:
+  - source: rubin-8e
+    chapter: "17"
+    pages: "677–683"

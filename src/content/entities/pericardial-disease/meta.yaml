@@ -1,0 +1,141 @@
+id: pericardial-disease
+module: o17
+tier: core
+kind: disease
+editionDependent: false
+status: published
+lastUpdated: 2026-11-14
+reviewStatus: ai-generated-unreviewed
+names:
+  it: "Patologia del pericardio (versamento, tamponamento, pericarditi)"
+  en: "Pericardial disease"
+  eponyms: []
+  synonyms:
+    it: ["Pericardite", "Tamponamento cardiaco"]
+    en: ["Pericarditis", "Cardiac tamponade"]
+  abbreviations: []
+summary:
+  it: "Raccolta di liquido nella cavità pericardica (versamento, fino al tamponamento cardiaco) e infiammazione del pericardio, acuta (sierosa, fibrinosa, purulenta, emorragica) o cronica costrittiva."
+  en: "Fluid collecting in the pericardial cavity (effusion, up to cardiac tamponade) and inflammation of the pericardium, acute (serous, fibrinous, purulent, hemorrhagic) or chronic constrictive."
+lenses:
+  system: [heart]
+  process: [acute-inflammation, repair-fibrosis]
+  pattern: []
+  presentation: [chest-pain, dyspnea, edema]
+  marker: []
+  group: [inflammatory, infectious]
+learningObjectives:
+  - it: "Spiegare perché un versamento pericardico rapido, anche piccolo, causa tamponamento mentre uno lento è tollerato."
+    en: "Explain why a rapid pericardial effusion, even a small one, causes tamponade while a slow one is tolerated."
+  - it: "Distinguere le forme di pericardite acuta (fibrinosa, purulenta, emorragica) per aspetto e cause."
+    en: "Distinguish the forms of acute pericarditis (fibrinous, purulent, hemorrhagic) by appearance and cause."
+  - it: "Descrivere la pericardite costrittiva come esito cicatriziale e il quadro che simula uno scompenso destro."
+    en: "Describe constrictive pericarditis as a scarring outcome and the picture that mimics right heart failure."
+  - it: "Riconoscere il dolore pericarditico e lo sfregamento pericardico e distinguerli dall'infarto."
+    en: "Recognize pericarditic pain and the friction rub and tell them apart from infarction."
+prerequisites: []
+relations:
+  - type: complicationOf
+    target: myocardial-infarction
+    note:
+      it: "La rottura della parete libera ventricolare causa emopericardio; l'infarto può dare anche pericardite."
+      en: "Rupture of the ventricular free wall causes hemopericardium; infarction can also cause pericarditis."
+  - type: complicationOf
+    target: rheumatic-heart-disease
+    note:
+      it: "La pericardite può complicare la febbre reumatica."
+      en: "Pericarditis may complicate rheumatic fever."
+  - type: sharesMechanism
+    target: myocarditis
+    note:
+      it: "Le cause della pericardite sono simili a quelle della miocardite."
+      en: "The causes of pericarditis are similar to those of myocarditis."
+  - type: mimics
+    target: cardiac-hypertrophy-and-heart-failure
+    note:
+      it: "La pericardite costrittiva può simulare uno scompenso cardiaco destro."
+      en: "Constrictive pericarditis may mimic right heart failure."
+quickCheck:
+  - id: pericardial-disease-q1
+    q:
+      it: "Perché un piccolo versamento che si forma in fretta può causare tamponamento, mentre un versamento grande e lento no?"
+      en: "Why can a small, fast effusion cause tamponade while a large, slow one does not?"
+    a:
+      it: "Un pericardio distendibile lentamente si adatta; un aumento rapido alza la pressione nel sacco oltre la pressione venosa centrale e limita il riempimento."
+      en: "A slowly stretched pericardium adapts; a rapid rise lifts sac pressure above central venous pressure and limits filling."
+    kind: short
+  - id: pericardial-disease-q2
+    q:
+      it: "Come si distingue il dolore della pericardite da quello dell'infarto?"
+      en: "How does pericarditis pain differ from infarct pain?"
+    a:
+      it: "Non si irradia lungo il braccio sinistro, e si associa a sfregamento pericardico."
+      en: "It does not radiate down the left arm, and a friction rub is present."
+    kind: short
+  - id: pericardial-disease-q3
+    q:
+      it: "Perché la pericardite costrittiva non è una forma di infiammazione attiva?"
+      en: "Why is constrictive pericarditis not an active inflammation?"
+    a:
+      it: "Perché è l'esito di una guarigione esuberante dopo un danno acuto: il sacco è obliterato da tessuto fibroso denso."
+      en: "Because it is the outcome of overshooting healing after acute injury: the sac is obliterated by dense fibrous tissue."
+    kind: short
+  - id: pericardial-disease-q4
+    q:
+      it: "Qual è la forma più frequente di pericardite acuta e quale segno clinico causa?"
+      en: "What is the most common form of acute pericarditis and which clinical sign does it cause?"
+    a:
+      it: "La pericardite fibrinosa: le superfici ruvide causano lo sfregamento pericardico."
+      en: "Fibrinous pericarditis: its rough surfaces cause a friction rub."
+    kind: short
+  - id: pericardial-disease-q5
+    q:
+      it: "Qual è la causa più comune di emopericardio?"
+      en: "What is the most common cause of hemopericardium?"
+    a:
+      it: "La rottura della parete libera ventricolare in un infarto."
+      en: "Rupture of the ventricular free wall at an infarct."
+    kind: short
+selfExplain:
+  - it: "Perché il tamponamento riduce la gittata cardiaca?"
+    en: "Why does tamponade reduce cardiac output?"
+  - it: "Perché la pericardite costrittiva può simulare uno scompenso cardiaco destro?"
+    en: "Why can constrictive pericarditis mimic right heart failure?"
+  - it: "Perché un versamento che si forma lentamente è meglio tollerato di uno rapido?"
+    en: "Why is a slowly forming effusion better tolerated than a rapid one?"
+chain:
+  - pathology:
+      it: "Pressione pericardica superiore alla pressione venosa centrale"
+      en: "Pericardial pressure above central venous pressure"
+    sign:
+      it: "Polso paradosso"
+      en: "Pulsus paradoxus"
+    lab:
+      it: "Il liquido è rimosso con pericardiocentesi"
+      en: "Fluid removed by pericardiocentesis"
+examQuestions:
+  - it: "Mi parli del versamento pericardico e del tamponamento cardiaco."
+    en: "Tell me about pericardial effusion and cardiac tamponade."
+    focus: [definition, pathogenesis, clinical]
+    level: 1
+  - it: "Perché un versamento pericardico piccolo ma rapido può essere più pericoloso di uno grande e lento?"
+    en: "Why can a small but rapid pericardial effusion be more dangerous than a large, slow one?"
+    focus: [pathogenesis, traps]
+    level: 2
+  - it: "Mi parli delle forme di pericardite acuta in base all'essudato: che aspetto hanno e quali cause hanno?"
+    en: "Tell me about the forms of acute pericarditis by exudate: what do they look like and what causes them?"
+    focus: [etiology, gross, micro]
+    level: 1
+  - it: "Come distingue il dolore della pericardite da quello dell'infarto?"
+    en: "How do you tell pericarditis pain from infarct pain?"
+    focus: [clinical, diagnosis, differential]
+    level: 3
+  - it: "Perché la pericardite costrittiva non è un'infiammazione attiva, e perché può simulare uno scompenso destro?"
+    en: "Why is constrictive pericarditis not an active inflammation, and why can it mimic right heart failure?"
+    focus: [pathogenesis, clinical, differential]
+    level: 3
+images:
+  - { id: pericardial-disease-gross-1, role: gross, pairWith: pericardial-disease-micro-1 }
+  - { id: pericardial-disease-micro-1, role: micro }
+sources:
+  - { source: rubin-8e, chapter: "17", pages: "691-693" }

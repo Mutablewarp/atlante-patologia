@@ -1,0 +1,116 @@
+id: arrhythmogenic-cardiomyopathy
+module: o17
+tier: core
+kind: disease
+names:
+  it: "Cardiomiopatia aritmogena"
+  en: "Arrhythmogenic cardiomyopathy"
+  eponyms: []
+  synonyms:
+    it: ["Cardiomiopatia aritmogena del ventricolo destro"]
+    en: ["Arrhythmogenic right ventricular cardiomyopathy"]
+  abbreviations: [ACM, ARVC]
+summary:
+  it: "Malattia ereditaria dei desmosomi con sostituzione fibroadiposa del miocardio, prima di tutto del ventricolo destro, e alto rischio di aritmie ventricolari e morte improvvisa."
+  en: "Inherited disease of the desmosome with fibrofatty replacement of the myocardium, first of all in the right ventricle, and a high risk of ventricular arrhythmias and sudden death."
+lenses:
+  system: [heart]
+  process: [repair-fibrosis]
+  pattern: []
+  presentation: []
+  marker: [molecular]
+  group: [genetic]
+learningObjectives:
+  - it: "Descrivere la cardiomiopatia aritmogena come malattia dei desmosomi e nominare i principali geni coinvolti."
+    en: "Describe arrhythmogenic cardiomyopathy as a disease of the desmosome and name the main genes involved."
+  - it: "Riconoscere la sostituzione fibroadiposa del miocardio epicardico, tipica del ventricolo destro."
+    en: "Recognize the fibrofatty replacement of epicardial myocardium, typical of the right ventricle."
+  - it: "Spiegare perché la morte improvvisa può precedere alterazioni strutturali evidenti."
+    en: "Explain why sudden death can precede obvious structural changes."
+  - it: "Distinguere la cardiomiopatia aritmogena dalle cardiomiopatie dilatativa, ipertrofica e restrittiva."
+    en: "Distinguish arrhythmogenic cardiomyopathy from dilated, hypertrophic and restrictive cardiomyopathy."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: dilated-cardiomyopathy
+    note:
+      it: "Le forme biventricolari e a prevalenza sinistra possono essere scambiate per cardiomiopatia dilatativa."
+      en: "Biventricular and left-dominant forms may be mistaken for dilated cardiomyopathy."
+  - type: differentialOf
+    target: hypertrophic-cardiomyopathy
+    note:
+      it: "Disorganizzazione miocitaria con ipertrofia contro sostituzione fibroadiposa."
+      en: "Myofiber disarray with hypertrophy versus fibrofatty replacement."
+  - type: differentialOf
+    target: restrictive-cardiomyopathy
+    note:
+      it: "Nella forma restrittiva primaria il miocardio mostra poche alterazioni."
+      en: "In primary restrictive cardiomyopathy the myocardium shows few changes."
+quickCheck:
+  - id: arrhythmogenic-cardiomyopathy-q1
+    q:
+      it: "Quale struttura cellulare è alterata nella cardiomiopatia aritmogena?"
+      en: "Which cellular structure is altered in arrhythmogenic cardiomyopathy?"
+    a:
+      it: "Il desmosoma, l'organulo di adesione tra le cellule; sono mutati geni come PKP2, DSP, DSG2, DSC2 e quello della placoglobina."
+      en: "The desmosome, the cell-to-cell adhesion organelle; genes such as PKP2, DSP, DSG2, DSC2 and the plakoglobin gene are mutated."
+    kind: short
+  - id: arrhythmogenic-cardiomyopathy-q2
+    q:
+      it: "Che cosa sostituisce il miocardio epicardico del ventricolo destro?"
+      en: "What replaces the epicardial myocardium of the right ventricle?"
+    a:
+      it: "Tessuto adiposo e fibroso, con miociti degenerati; restano solo le trabecole subendocardiche."
+      en: "Fat and fibrous tissue, with degenerated myocytes; only subendocardial trabeculae remain."
+    kind: short
+  - id: arrhythmogenic-cardiomyopathy-q3
+    q:
+      it: "Perché un cuore dall'aspetto poco alterato non esclude la diagnosi in una morte improvvisa?"
+      en: "Why does a heart that looks little changed not exclude the diagnosis in a sudden death?"
+    a:
+      it: "L'entità delle lesioni è variabile e può non essere evidente; le aritmie possono comparire prima del rimodellamento."
+      en: "The extent of the lesions varies and may not be obvious; arrhythmias can appear before remodeling."
+    kind: short
+  - id: arrhythmogenic-cardiomyopathy-q4
+    q:
+      it: "Quale quota dei decessi nella cardiomiopatia aritmogena è dovuta a morte improvvisa?"
+      en: "What share of deaths in arrhythmogenic cardiomyopathy is due to sudden death?"
+    a:
+      it: "Più dell'80% dei decessi."
+      en: "More than 80% of the deaths."
+    kind: short
+selfExplain:
+  - it: "Perché la mutazione di una proteina dei desmosomi colpisce soprattutto cuore e cute?"
+    en: "Why does a mutation of a desmosomal protein mainly affect heart and skin?"
+  - it: "Perché la morte improvvisa può essere il primo segno della malattia?"
+    en: "Why can sudden death be the first sign of the disease?"
+examQuestions:
+  - it: "Mi parli della cardiomiopatia aritmogena: quali geni dei desmosomi sono coinvolti e quale gene è più spesso mutato nella forma classica del ventricolo destro?"
+    en: "Tell me about arrhythmogenic cardiomyopathy: which desmosomal genes are involved, and which gene is most often mutated in the classical right ventricular form?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Che cosa vede al microscopio, e che aspetto ha il ventricolo destro, in un cuore con cardiomiopatia aritmogena?"
+    en: "What do you see under the microscope, and how does the right ventricle look, in a heart with arrhythmogenic cardiomyopathy?"
+    focus: [gross, micro]
+    level: 1
+  - it: "Perché in questa malattia può esserci una morte improvvisa in un giovane con un cuore poco alterato?"
+    en: "Why can this disease cause sudden death in a young person whose heart looks little changed?"
+    focus: [clinical, prognosis, traps]
+    level: 2
+  - it: "Perché all'autopsia, dopo una morte improvvisa, la diagnosi può sfuggire?"
+    en: "Why can the diagnosis be missed at autopsy after a sudden death?"
+    focus: [micro, diagnosis, traps]
+    level: 2
+  - it: "Come distingue la cardiomiopatia aritmogena dalle cardiomiopatie dilatativa, ipertrofica e restrittiva?"
+    en: "How do you tell arrhythmogenic cardiomyopathy from dilated, hypertrophic and restrictive cardiomyopathy?"
+    focus: [differential, high-yield]
+    level: 3
+images: []
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "17"
+    pages: "684-685"
+lastUpdated: 2026-11-14
+status: published

@@ -1,0 +1,145 @@
+id: ischemic-heart-disease
+module: o17
+tier: core
+kind: disease
+names:
+  it: "Cardiopatia ischemica"
+  en: "Ischemic heart disease"
+  eponyms: []
+  synonyms:
+    it: ["Malattia coronarica", "Coronaropatia"]
+    en: ["Coronary artery disease", "Coronary heart disease"]
+  abbreviations: ["IHD", "CAD"]
+summary:
+  it: "Cardiopatia dovuta a un flusso coronarico insufficiente per le necessità di ossigeno del miocardio, per lo più da aterosclerosi coronarica, che si manifesta come angina, infarto, scompenso cronico o morte improvvisa."
+  en: "Heart disease caused by coronary flow too low for the myocardium's oxygen needs, mostly from coronary atherosclerosis, presenting as angina, infarction, chronic heart failure or sudden death."
+lenses:
+  system: [heart, vessels]
+  process: [hypoxic-ischemic-injury, thrombosis-embolism, necrosis]
+  pattern: [necrosis-coagulative]
+  presentation: [chest-pain, ischemic-event, dyspnea]
+  marker: [necrosis-serum-markers]
+  group: [vascular]
+learningObjectives:
+  - it: "Elencare le cause di ridotto flusso coronarico e di aumentata richiesta di ossigeno."
+    en: "List the causes of reduced coronary flow and of increased oxygen demand."
+  - it: "Distinguere angina stabile, instabile e di Prinzmetal."
+    en: "Distinguish stable, unstable and Prinzmetal angina."
+  - it: "Spiegare come una placca vulnerabile con trombosi porti a una sindrome coronarica acuta."
+    en: "Explain how a vulnerable plaque with thrombosis leads to an acute coronary syndrome."
+  - it: "Descrivere la cardiomiopatia ischemica cronica e il miocardio ibernato."
+    en: "Describe chronic ischemic cardiomyopathy and hibernating myocardium."
+  - it: "Collegare la sindrome coronarica acuta alla morte improvvisa."
+    en: "Link acute coronary syndrome to sudden death."
+prerequisites: [hypoxic-ischemic-injury, atherosclerosis]
+relations:
+  - type: causes
+    target: myocardial-infarction
+    note:
+      it: "La sindrome coronarica acuta con trombosi può evolvere in infarto miocardico."
+      en: "An acute coronary syndrome with thrombosis can progress to myocardial infarction."
+  - type: causes
+    target: arrhythmia-substrates-and-sudden-cardiac-death
+    note:
+      it: "L'ischemia acuta può innescare fibrillazione ventricolare anche senza infarto."
+      en: "Acute ischemia can trigger ventricular fibrillation even without infarction."
+  - type: mimics
+    target: dilated-cardiomyopathy
+    note:
+      it: "La cardiomiopatia ischemica può dare disfunzione globale simile a quella dilatativa."
+      en: "Ischemic cardiomyopathy can produce global dysfunction like the dilated form."
+  - type: sameLesionOtherOrgan
+    target: coagulative-necrosis
+    note:
+      it: "L'infarto miocardico è una necrosi coagulativa."
+      en: "Myocardial infarction is coagulative necrosis."
+quickCheck:
+  - id: ischemic-heart-disease-q1
+    q:
+      it: "Perché la maggior parte dei pazienti con aterosclerosi coronarica non ha angina a riposo?"
+      en: "Why do most patients with coronary atherosclerosis have no angina at rest?"
+    a:
+      it: "Perché i microvasi si dilatano per compensare la stenosi e mantengono normale il flusso a riposo; durante lo sforzo la dilatazione non basta più."
+      en: "Because microvessels dilate to compensate for the stenosis and keep resting flow normal; on exertion the dilation is no longer enough."
+    kind: short
+  - id: ischemic-heart-disease-q2
+    q:
+      it: "Come si distingue l'angina instabile dall'infarto negli esami di laboratorio?"
+      en: "How does unstable angina differ from infarction in the laboratory?"
+    a:
+      it: "Nell'angina instabile la troponina cardiaca resta normale; nell'infarto aumenta."
+      en: "In unstable angina cardiac troponin stays normal; in infarction it rises."
+    kind: short
+  - id: ischemic-heart-disease-q3
+    q:
+      it: "Una morte improvvisa richiede sempre un infarto?"
+      en: "Does sudden death always require an infarct?"
+    a:
+      it: "No: l'ischemia acuta può innescare una fibrillazione ventricolare letale senza infarto manifesto."
+      en: "No: acute ischemia can trigger lethal ventricular fibrillation without overt infarction."
+    kind: short
+  - id: ischemic-heart-disease-q4
+    q:
+      it: "Quale tipo di angina compare a riposo e quale meccanismo la sostiene?"
+      en: "Which type of angina strikes at rest, and what underlies it?"
+    a:
+      it: "L'angina di Prinzmetal (variante) compare a riposo ed è sostenuta dallo spasmo coronarico."
+      en: "Prinzmetal (variant) angina strikes at rest and is underlain by coronary spasm."
+    kind: short
+  - id: ischemic-heart-disease-q5
+    q:
+      it: "Che cos'è il miocardio ibernato e che cosa succede dopo la rivascolarizzazione?"
+      en: "What is hibernating myocardium, and what happens after revascularization?"
+    a:
+      it: "Sono miociti che hanno perso miofibrille dopo ripetuti episodi di danno ischemico; la rivascolarizzazione ne ripristina la funzione."
+      en: "Myocytes that lost myofibrils after repeated ischemic injury; revascularization brings back their function."
+    kind: short
+selfExplain:
+  - it: "Perché il vasospasmo causa angina a riposo?"
+    en: "Why does vasospasm cause angina at rest?"
+  - it: "Perché la riperfusione può aggiungere danno al miocardio ischemico?"
+    en: "Why can reperfusion add damage to ischemic myocardium?"
+chain:
+  - pathology:
+      it: "Trombosi su placca vulnerabile con necrosi miocardica"
+      en: "Thrombosis on a vulnerable plaque with myocardial necrosis"
+    sign:
+      it: "Dolore toracico oppressivo con sudorazione"
+      en: "Crushing chest pain with sweating"
+    lab:
+      it: "Aumento della troponina cardiaca"
+      en: "Rise in cardiac troponin"
+examQuestions:
+  - it: "Mi parli della cardiopatia ischemica: quali sono le cause di ridotto flusso coronarico?"
+    en: "Tell me about ischemic heart disease: what reduces coronary flow?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Come distingue l'angina stabile, instabile e di Prinzmetal?"
+    en: "How do you tell stable, unstable and Prinzmetal angina apart?"
+    focus: [clinical]
+    level: 3
+  - it: "Perché una placca vulnerabile può portare a una sindrome coronarica acuta?"
+    en: "Why can a vulnerable plaque lead to an acute coronary syndrome?"
+    focus: [pathogenesis, definition]
+    level: 2
+  - it: "Mi parli della cardiomiopatia ischemica cronica e del miocardio ibernato."
+    en: "Tell me about chronic ischemic cardiomyopathy and hibernating myocardium."
+    focus: [clinical, prognosis]
+    level: 2
+  - it: "Perché un paziente può morire improvvisamente per ischemia senza un infarto?"
+    en: "Why can a patient die suddenly from ischemia without an infarct?"
+    focus: [prognosis, traps]
+    level: 3
+images:
+  - id: ischemic-heart-disease-micro-1
+    role: micro
+  - id: ischemic-heart-disease-micro-2
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "17"
+    pages: "652-663"
+lastUpdated: 2026-11-14
+status: published

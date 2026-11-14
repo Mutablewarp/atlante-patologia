@@ -297,7 +297,7 @@ textarea {
   :root {
     --chips-h: 4.35rem; /* the chip strip with 2.75rem chips (tokens.css) */
   }
-  :root :is(.chip, .btn-small, .segmented button, .section-toc a, .lens-terms a, .matrix-thumb, .module-tree :is(a, summary), .lang-switch :is(a, span), .topbar-search input) {
+  :root :is(.chip, .btn-small, .segmented button, .section-toc a, .lens-terms a, .matrix-thumb, .module-tree a, .lang-switch :is(a, span), .topbar-search input) {
     min-height: 2.75rem;
   }
   /* Short labels are 44 px wide too ("Atlas", "Full", A- and A+; the card's A-/A+: entity.css) */
@@ -315,10 +315,6 @@ textarea {
   }
   :root .module-tree a {
     display: flex;
-  }
-  /* A summary keeps its disclosure triangle (display: list-item): padding centres its line */
-  :root .module-tree summary {
-    padding-block: 0.6rem;
   }
   :root :is(.breadcrumb, .pager) a {
     display: inline-block;

@@ -1,0 +1,125 @@
+id: myocardial-infarction
+module: o17
+tier: core
+kind: disease
+names:
+  it: "Infarto miocardico"
+  en: "Myocardial infarction"
+  eponyms: []
+  synonyms:
+    it: ["Infarto del miocardio", "Attacco cardiaco"]
+    en: ["Heart attack"]
+  abbreviations: ["MI", "STEMI", "NSTEMI"]
+summary:
+  it: "Necrosi ischemica del miocardio, di solito per trombosi coronarica, che evolve in modo prevedibile nel tempo e può complicarsi con aritmie, rottura, aneurisma, trombosi murale e pericardite."
+  en: "Ischemic necrosis of the myocardium, usually from coronary thrombosis, that evolves in a predictable time course and can be complicated by arrhythmia, rupture, aneurysm, mural thrombosis and pericarditis."
+lenses:
+  system: [heart, vessels]
+  process: [necrosis, hypoxic-ischemic-injury, thrombosis-embolism, repair-fibrosis]
+  pattern: [necrosis-coagulative]
+  presentation: [chest-pain, ischemic-event]
+  marker: [necrosis-serum-markers, laboratory]
+  group: [vascular]
+learningObjectives:
+  - it: "Distinguere l'infarto transmurale dall'infarto subendocardico per meccanismo, sede, tipo di STEMI o NSTEMI e complicanze."
+    en: "Distinguish transmural from subendocardial infarcts by mechanism, location, STEMI or non-STEMI pattern and complications."
+  - it: "Datare un infarto dall'aspetto macroscopico e microscopico, dalle prime ore alla cicatrice."
+    en: "Date an infarct from its gross and microscopic appearance, from the first hours to the scar."
+  - it: "Descrivere come la riperfusione modifica l'infarto: emorragia, bande di contrazione e decorso accelerato."
+    en: "Describe how reperfusion changes an infarct: hemorrhage, contraction bands and a faster course."
+  - it: "Indicare i marcatori sierici e i criteri ECG usati per la diagnosi."
+    en: "State the serum biomarkers and ECG criteria used for diagnosis."
+  - it: "Elencare le complicanze principali e il momento in cui compaiono."
+    en: "List the main complications and when they occur."
+prerequisites: [hypoxic-ischemic-injury, coagulative-necrosis]
+relations:
+  - type: sameLesionOtherOrgan
+    target: renal-infarct
+    note:
+      it: "Anche l'infarto renale è una necrosi coagulativa nel territorio di un'arteria occlusa."
+      en: "A renal infarct is also coagulative necrosis in the territory of an occluded artery."
+  - type: sharesMechanism
+    target: ischemia-reperfusion-injury
+    note:
+      it: "La riperfusione dà emorragia e bande di contrazione."
+      en: "Reperfusion gives hemorrhage and contraction bands."
+  - type: complicationOf
+    target: atherosclerosis
+    note:
+      it: "La trombosi su placca aterosclerotica è la causa abituale dell'infarto di tipo 1."
+      en: "Thrombosis on an atherosclerotic plaque is the usual cause of a type 1 infarct."
+quickCheck:
+  - id: myocardial-infarction-q1
+    q:
+      it: "Quali infarti possono rompere la parete libera e quando la rottura è più probabile?"
+      en: "Which infarcts can rupture the free wall, and when is rupture most likely?"
+    a:
+      it: "Solo gli infarti transmurali; la parete necrotica è più fragile tra il secondo e il settimo giorno."
+      en: "Only transmural infarcts; the necrotic wall is weakest on days 2 to 7."
+    kind: short
+  - id: myocardial-infarction-q2
+    q:
+      it: "Quali cellule predominano a 2-3 giorni, a 5-7 giorni e dopo 4 settimane?"
+      en: "Which cells predominate at 2 to 3 days, at 5 to 7 days and after 4 weeks?"
+    a:
+      it: "Neutrofili a 2-3 giorni; macrofagi con miofibroblasti e nuovo collagene a 5-7 giorni; dopo 4 settimane una cicatrice fibrosa densa e poco cellulata."
+      en: "Neutrophils at 2 to 3 days; macrophages with myofibroblasts and new collagen at 5 to 7 days; a dense, poorly cellular fibrous scar after 4 weeks."
+    kind: short
+  - id: myocardial-infarction-q3
+    q:
+      it: "Come si riconosce all'esame istologico un infarto riperfuso?"
+      en: "How do you recognize a reperfused infarct on histology?"
+    a:
+      it: "Per le bande di contrazione eosinofile, l'emorragia e i neutrofili distribuiti in tutta l'area e non solo al margine."
+      en: "By eosinophilic contraction bands, hemorrhage and neutrophils spread through the whole area rather than only at the edge."
+    kind: short
+selfExplain:
+  - it: "Perché dopo la rottura della parete libera del ventricolo sinistro la morte avviene più spesso per tamponamento?"
+    en: "Why does death after left ventricular free wall rupture most often result from tamponade?"
+  - it: "Perché il ventricolo sinistro è la sede abituale dell'infarto?"
+    en: "Why is the left ventricle the usual site of infarction?"
+chain:
+  - pathology:
+      it: "Trombosi coronarica e necrosi transmurale dei cardiomiociti"
+      en: "Coronary thrombosis and transmural myocyte necrosis"
+    sign:
+      it: "Dolore toracico oppressivo con sopraslivellamento ST"
+      en: "Crushing chest pain with ST elevation"
+    lab:
+      it: "Aumento e poi calo della troponina I o T"
+      en: "Rise and then fall of troponin I or T"
+examQuestions:
+  - it: "Come distingue un infarto transmurale da un infarto subendocardico?"
+    en: "How do you tell a transmural infarct from a subendocardial one?"
+    focus: [definition, gross, pathogenesis]
+    level: 3
+  - it: "Come data un infarto miocardico dall'aspetto macroscopico e microscopico?"
+    en: "How do you date a myocardial infarct from its gross and microscopic appearance?"
+    focus: [gross, micro]
+    level: 2
+  - it: "Che cosa vede al microscopio in un infarto riperfuso e perché?"
+    en: "What do you see under the microscope in a reperfused infarct, and why?"
+    focus: [pathogenesis, micro]
+    level: 2
+  - it: "Quali marcatori sierici userebbe per la diagnosi di infarto e come li interpreta?"
+    en: "Which serum biomarkers would you use to diagnose an infarct, and how do you interpret them?"
+    focus: [ancillary, diagnosis]
+    level: 1
+  - it: "Mi parli delle complicanze dell'infarto miocardico e di quando compaiono."
+    en: "Tell me about the complications of myocardial infarction and when they occur."
+    focus: [prognosis]
+    level: 3
+images:
+  - id: myocardial-infarction-gross-1
+    role: gross
+    pairWith: myocardial-infarction-micro-1
+  - id: myocardial-infarction-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "17"
+    pages: "655-662"
+lastUpdated: 2026-11-14
+status: published
