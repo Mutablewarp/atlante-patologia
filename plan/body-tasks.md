@@ -187,7 +187,7 @@ Design pass as in B-2d and the gates on the branch. Merge 2 happens after B-9.
 Depends: B-5b
 Files: src/styles/body.css, src/components/body/BodyViewer.astro, src/scripts/body-viewer.ts, src/i18n/body.ts
 Goal: the phone layout of spec §7: stage box, chip row, control row, the organ panel as a bottom sheet.
-Do: below 48rem the organ section of the selected organ is shown as a sheet over the page bottom: a close button, focus moved in on open and back to the stage on close, `Escape` closes, the page behind does not scroll while it is open (`overscroll-behavior: contain` on the sheet, no body scroll lock by script). Chips: one row, `overflow-x: auto`, scroll snap, the selected chip scrolled into view. Start rule of spec §1 for phones: the poster carries one button, "Explore in 3D". Check at 320, 375 and 430 px: no horizontal page scroll.
+Do: below 48rem the organ section of the selected organ is shown as a sheet over the page bottom: a close button, focus moved in on open and back to the stage on close, `Escape` closes, the page behind does not scroll while it is open (`overscroll-behavior: contain` on the sheet, no body scroll lock by script). Chips: one row at every width, not only on phones (seen in B-4c1: at 1280 × 800 the 18 wrapped chips take five rows and push the stage below the fold), `overflow-x: auto`, scroll snap, the selected chip scrolled into view; on wide screens the row sits above the stage and the stage must start in the first screen once the notice is dismissed. Start rule of spec §1 for phones: the poster carries one button, "Explore in 3D". Check at 320, 375 and 430 px: no horizontal page scroll.
 Acceptance: `npx astro check` 0 errors. The lead looks at 375 × 812 in both themes.
 
 ### B-9b: the body on the home page (coder)
