@@ -261,6 +261,12 @@ class ApBody extends HTMLElement {
   /** With the viewer running and a system chosen by the learner only that system shows; otherwise every section stays
    *  visible, so the viewer starting by itself, or on a deep link, shifts nothing. */
   private sections() {
+    // The home page lists the organs of one system at a time, viewer or not: the open one carries data-open (the CSS also
+    // opens the :target one, which is what a chip does without JavaScript).
+    if (this.hasAttribute('data-lists')) {
+      this.querySelectorAll<HTMLElement>(':scope > section[data-system]').forEach((s) => s.toggleAttribute('data-open', s.dataset.system === this.state.system));
+      return;
+    }
     const only = this.hasAttribute('data-on') && this.interacted ? this.state.system : null;
     this.querySelectorAll<HTMLElement>(':scope > section[data-system]').forEach((s) => (s.hidden = only !== null && s.dataset.system !== only));
   }
