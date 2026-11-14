@@ -35,6 +35,8 @@ export type Options = {
   onLost?: () => void;
   /** Called when a file of the whole-body prefetch fails: the viewer keeps what it has. A failure of showSystem(id) rejects instead. */
   onError?: (error: unknown) => void;
+  /** Called on a tap (not a drag or a pinch) with the organ under the release point, or null on nothing. */
+  onPick?: (organ: string | null) => void;
 };
 
 const SHELL = 'skin';
@@ -43,6 +45,8 @@ const MIN_DIST = 0.06;
 const MAX_DIST = 6;
 const STEP = 0.3;
 const PITCH_MAX = 1.4;
+const TAP_PX = 6;
+const TAP_MS = 400;
 
 const ease = (t: number) => (t < 0.5 ? 4 * t * t * t : 1 - (-2 * t + 2) ** 3 / 2);
 const clamp = (v: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, v));
@@ -264,14 +268,51 @@ export async function mount(canvas: HTMLCanvasElement, opts: Options): Promise<C
     pose.dist = clamp(pose.dist * f, MIN_DIST, MAX_DIST);
     invalidate();
   };
+  const ray = new Raycaster();
+  const pickAt = (x: number, y: number): string | null => {
+    const meshes = selectable(manifest, state).flatMap((id) => meshesOf.get(id) ?? []);
+    ray.setFromCamera(new Vector2((x / canvas.clientWidth) * 2 - 1, -(y / canvas.clientHeight) * 2 + 1), camera);
+    // A ghost (muscle and bones in the whole-body view, the container of an inner organ) loses to a solid organ behind
+    // it, and is tested only when no solid organ is under the point: the ghosts are the largest meshes.
+    const hit = ray.intersectObjects(meshes.filter((m) => !m.userData.ghost), false)[0] ?? ray.intersectObjects(meshes.filter((m) => m.userData.ghost), false)[0];
+    return (hit?.object.userData.organ as string | undefined) ?? null;
+  };
+  const local = (e: PointerEvent) => {
+    const r = canvas.getBoundingClientRect();
+    return { x: e.clientX - r.left, y: e.clientY - r.top };
+  };
+
+  // A tap: one pointer, up within TAP_PX of where it went down and within TAP_MS, and never a second pointer meanwhile.
+  let tap: { id: number; x: number; y: number; at: number; ok: boolean } | null = null;
+  // A mouse shows what a click would do: at most one pick per frame.
+  let hover: { x: number; y: number } | null = null;
+  let hoverFrame = 0;
+  const hoverPick = () => {
+    hoverFrame = 0;
+    if (!hover || disposed) return;
+    canvas.style.cursor = pickAt(hover.x, hover.y) ? 'pointer' : 'grab';
+  };
   const onDown = (e: PointerEvent) => {
     pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
-    canvas.setPointerCapture(e.pointerId);
+    try {
+      canvas.setPointerCapture(e.pointerId);
+    } catch {
+      /* a pointer that is no longer active (a synthetic event): the gesture still works without capture */
+    }
+    if (pointers.size === 1) tap = { id: e.pointerId, ...local(e), at: performance.now(), ok: true };
+    else if (tap) tap.ok = false;
+    if (e.pointerType === 'mouse') canvas.style.cursor = 'grabbing';
     if (pointers.size === 2) pinch = spread();
   };
   const onMove = (e: PointerEvent) => {
     const last = pointers.get(e.pointerId);
-    if (!last) return;
+    if (!last) {
+      if (e.pointerType === 'mouse' && !e.buttons) {
+        hover = local(e);
+        if (!hoverFrame) hoverFrame = requestAnimationFrame(hoverPick);
+      }
+      return;
+    }
     const dx = e.clientX - last.x;
     const dy = e.clientY - last.y;
     pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
@@ -288,8 +329,15 @@ export async function mount(canvas: HTMLCanvasElement, opts: Options): Promise<C
     invalidate();
   };
   const onUp = (e: PointerEvent) => {
+    const t = tap;
     pointers.delete(e.pointerId);
     pinch = 0;
+    if (pointers.size === 0) tap = null;
+    if (e.pointerType === 'mouse') canvas.style.cursor = 'grab';
+    if (!t || !t.ok || t.id !== e.pointerId || e.type !== 'pointerup') return;
+    const p = local(e);
+    if (Math.hypot(p.x - t.x, p.y - t.y) > TAP_PX || performance.now() - t.at > TAP_MS) return;
+    opts.onPick?.(pickAt(p.x, p.y));
   };
   const onWheel = (e: WheelEvent) => {
     if (!e.ctrlKey) return; // a plain wheel scrolls the page; a pinch on a trackpad arrives as ctrl + wheel
@@ -299,6 +347,7 @@ export async function mount(canvas: HTMLCanvasElement, opts: Options): Promise<C
   function dispose() {
     disposed = true;
     cancelAnimationFrame(frame);
+    cancelAnimationFrame(hoverFrame);
     observer?.disconnect();
     canvas.removeEventListener('webglcontextlost', onLost);
     canvas.removeEventListener('pointerdown', onDown);
@@ -331,7 +380,6 @@ export async function mount(canvas: HTMLCanvasElement, opts: Options): Promise<C
     throw e;
   }
 
-  const ray = new Raycaster();
   return {
     async showSystem(id) {
       const mine = ++token;
@@ -355,14 +403,7 @@ export async function mount(canvas: HTMLCanvasElement, opts: Options): Promise<C
       view = state.organ ? 'organ' : 'front';
       goTo(poseFor(view));
     },
-    pick(x, y) {
-      const meshes = selectable(manifest, state).flatMap((id) => meshesOf.get(id) ?? []);
-      ray.setFromCamera(new Vector2((x / canvas.clientWidth) * 2 - 1, -(y / canvas.clientHeight) * 2 + 1), camera);
-      // A ghost (muscle and bones in the whole-body view, the container of an inner organ) loses to a solid organ behind
-      // it, and is tested only when no solid organ is under the point: the ghosts are the largest meshes.
-      const hit = ray.intersectObjects(meshes.filter((m) => !m.userData.ghost), false)[0] ?? ray.intersectObjects(meshes.filter((m) => m.userData.ghost), false)[0];
-      return (hit?.object.userData.organ as string | undefined) ?? null;
-    },
+    pick: pickAt,
     act(name) {
       if (name === 'front' || name === 'back' || name === 'side' || name === 'reset') {
         view = name === 'reset' ? (state.organ ? 'organ' : 'front') : name;

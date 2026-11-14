@@ -205,8 +205,24 @@ class ApBody extends HTMLElement {
   /** The hash stays the one source of truth, but pushState does not scroll the page away from the stage; Back still fires hashchange. */
   private setHash(state: BodyState) {
     this.interacted = true;
-    history.pushState(null, '', toHash(state) || location.pathname + location.search);
+    const next = toHash(state);
+    if (next === location.hash) return; // a tap on nothing in the whole-body view changes nothing: no empty history entry
+    history.pushState(null, '', next || location.pathname + location.search);
     this.sync();
+  }
+
+  /** A tap on the canvas: an organ is chosen like a link does it, nothing clears the organ and keeps the system. */
+  private picked(organ: string | null) {
+    const known = organ ? this.manifest.organs[organ] : undefined;
+    if (!organ || !known) {
+      this.setHash({ system: this.state.system, organ: null });
+      return;
+    }
+    this.setHash({ system: known.system, organ });
+    // The keyboard goes where the choice is described. From 48rem the panel is beside the stage: scrolling to it is wanted.
+    const link = this.querySelector<HTMLElement>(`#organ-${CSS.escape(organ)} > h3 a`);
+    if (matchMedia(WIDE).matches) link?.focus();
+    else link?.focus({ preventScroll: true });
   }
 
   private selectBy(dir: 1 | -1) {
@@ -284,6 +300,7 @@ class ApBody extends HTMLElement {
         labelAt: (p) => this.place(label, p),
         onLost: () => this.lost(),
         onError: () => this.say(this.dataset.tError!),
+        onPick: (organ) => this.picked(organ),
       });
       this.ctrl = ctrl;
       this.shownSystem = undefined;

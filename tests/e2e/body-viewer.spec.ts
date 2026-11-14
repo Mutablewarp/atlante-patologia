@@ -341,3 +341,77 @@ for (const lang of ['it', 'en'] as const) {
     });
   });
 }
+
+/** The canvas box in page pixels, after scrolling it into view. */
+async function canvasBox(page: Page) {
+  const canvas = page.locator('[data-canvas]');
+  await canvas.scrollIntoViewIfNeeded();
+  return (await canvas.boundingBox())!;
+}
+
+/** Touch pointers going down and up on the canvas: the mouse API cannot make a second finger. */
+const touch = (page: Page, steps: { type: 'pointerdown' | 'pointerup'; id: number }[], at: { x: number; y: number }) =>
+  page.locator('[data-canvas]').evaluate(
+    (c, arg) => {
+      for (const s of arg.steps) c.dispatchEvent(new PointerEvent(s.type, { pointerId: s.id, pointerType: 'touch', isPrimary: s.id === 1, clientX: arg.at.x, clientY: arg.at.y, bubbles: true }));
+    },
+    { steps, at },
+  );
+
+/** Clicks the stage centre until an organ is chosen: the systems load one file at a time, and before that the click hits nothing. */
+async function clickCentre(page: Page) {
+  const box = await canvasBox(page);
+  await expect(async () => {
+    await page.mouse.click(box.x + box.width / 2, box.y + box.height / 2);
+    await expect(page.locator(BODY)).toHaveAttribute('data-organ', /.+/, { timeout: 1000 });
+  }).toPass({ timeout: 30_000 });
+  return box;
+}
+
+for (const lang of ['it', 'en'] as const) {
+  test.describe(`body viewer, canvas picking (${lang})`, () => {
+    test('a click on the stage centre chooses an organ; a click far from the body clears it and keeps the system', async ({ page }) => {
+      const on = await startViewer(page, lang);
+      test.skip(!on, 'no WebGL on this runner');
+      const box = await clickCentre(page);
+      const system = await page.locator(BODY).getAttribute('data-system');
+      expect(system).toBeTruthy();
+      await page.mouse.click(box.x + 4, box.y + 4);
+      await expect(page.locator(BODY)).not.toHaveAttribute('data-organ', /.+/);
+      await expect(page.locator(BODY)).toHaveAttribute('data-system', system!);
+    });
+
+    test('the organ heading link has focus after a canvas selection', async ({ page }) => {
+      const on = await startViewer(page, lang);
+      test.skip(!on, 'no WebGL on this runner');
+      await clickCentre(page);
+      const organ = (await page.locator(BODY).getAttribute('data-organ'))!;
+      await expect(organLink(page, organ)).toBeFocused();
+    });
+
+    test('a drag of more than 6 px and a pinch are not taps', async ({ page }) => {
+      const on = await startViewer(page, lang);
+      test.skip(!on, 'no WebGL on this runner');
+      const box = await canvasBox(page);
+      const cx = box.x + box.width / 2;
+      const cy = box.y + box.height / 2;
+      const entries = () => page.evaluate(() => history.length);
+      const before = await entries();
+
+      await page.mouse.move(cx, cy);
+      await page.mouse.down();
+      await page.mouse.move(cx + 40, cy, { steps: 5 });
+      await page.mouse.up();
+      expect(await entries()).toBe(before);
+
+      await touch(page, [{ type: 'pointerdown', id: 1 }, { type: 'pointerdown', id: 2 }, { type: 'pointerup', id: 2 }, { type: 'pointerup', id: 1 }], { x: cx, y: cy });
+      expect(await entries()).toBe(before);
+
+      // control: one pointer is a tap and chooses an organ, which pushes an entry, so the two checks above can fail (the systems load one file at a time: try until the centre hits an organ)
+      await expect(async () => {
+        await touch(page, [{ type: 'pointerdown', id: 1 }, { type: 'pointerup', id: 1 }], { x: cx, y: cy });
+        expect(await entries()).toBeGreaterThan(before);
+      }).toPass({ timeout: 30_000 });
+    });
+  });
+}
