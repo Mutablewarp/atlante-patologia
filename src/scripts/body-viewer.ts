@@ -39,6 +39,8 @@ const store = {
   },
 };
 
+/** An organ in the tree. Always under a system section: the host element reflects `data-organ` too and must not match. */
+const ORGAN = 'section[data-system] [data-organ]';
 const flag = (el: Element, on: boolean) => (on ? el.setAttribute('aria-current', 'true') : el.removeAttribute('aria-current'));
 
 class ApBody extends HTMLElement {
@@ -129,7 +131,7 @@ class ApBody extends HTMLElement {
   /** The tree is the data: system, organ, and the (empty) `of`/`inside` that parseHash, toHash and step do not use. */
   private readTree(): BodyManifest {
     const organs: BodyManifest['organs'] = {};
-    this.querySelectorAll<HTMLElement>('section[data-system] [data-organ]').forEach((o) => {
+    this.querySelectorAll<HTMLElement>(ORGAN).forEach((o) => {
       const system = o.closest<HTMLElement>('section[data-system]')!.dataset.system!;
       organs[o.dataset.organ!] = { system, kind: 'none', of: [], inside: null };
     });
@@ -137,11 +139,11 @@ class ApBody extends HTMLElement {
   }
 
   private published(): string[] {
-    return [...this.querySelectorAll<HTMLElement>('[data-organ]')].filter((o) => o.querySelector('.body-cards li') || Number(o.dataset.count) > 0).map((o) => o.dataset.organ!);
+    return [...this.querySelectorAll<HTMLElement>(ORGAN)].filter((o) => o.querySelector('.body-cards li') || Number(o.dataset.count) > 0).map((o) => o.dataset.organ!);
   }
 
   private organName(id: string): string {
-    return this.querySelector(`[data-organ="${CSS.escape(id)}"] [data-organ-link]`)?.textContent?.trim() ?? id;
+    return this.querySelector(`section[data-system] [data-organ="${CSS.escape(id)}"] [data-organ-link]`)?.textContent?.trim() ?? id;
   }
 
   private systemName(id: string): string {
@@ -220,7 +222,7 @@ class ApBody extends HTMLElement {
   private mark() {
     const { system, organ } = this.state;
     this.querySelectorAll<HTMLElement>('.body-systems a[data-system]').forEach((a) => flag(a, a.dataset.system === system));
-    this.querySelectorAll<HTMLElement>('[data-organ]').forEach((o) => {
+    this.querySelectorAll<HTMLElement>(ORGAN).forEach((o) => {
       const link = o.querySelector('[data-organ-link]');
       if (link) flag(link, o.dataset.organ === organ);
     });
@@ -246,7 +248,7 @@ class ApBody extends HTMLElement {
 
   private message(state: BodyState): string {
     if (state.organ) {
-      const section = this.querySelector(`[data-organ="${CSS.escape(state.organ)}"]`);
+      const section = this.querySelector(`section[data-system] [data-organ="${CSS.escape(state.organ)}"]`);
       const name = this.organName(state.organ);
       if (section?.getAttribute('data-kind') === 'none') return this.dataset.tNoModel!.replace('{organ}', name);
       const n = section?.querySelector('.count')?.textContent?.trim() ?? '';
@@ -282,7 +284,7 @@ class ApBody extends HTMLElement {
     }
     this.setHash({ system: known.system, organ });
     // The keyboard goes where the choice is described. From 48rem the panel is beside the stage: scrolling to it is wanted.
-    const link = this.querySelector<HTMLElement>(`[data-organ="${CSS.escape(organ)}"] [data-organ-link]`);
+    const link = this.querySelector<HTMLElement>(`section[data-system] [data-organ="${CSS.escape(organ)}"] [data-organ-link]`);
     if (matchMedia(WIDE).matches) link?.focus();
     else link?.focus({ preventScroll: true });
   }

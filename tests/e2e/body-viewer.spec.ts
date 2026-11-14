@@ -267,6 +267,7 @@ for (const lang of ['it', 'en'] as const) {
       await organLink(page, pick.organ).dispatchEvent('click');
       await expect(chip(page, pick.system)).toHaveAttribute('aria-current', 'true');
       await expect(organLink(page, pick.organ)).toHaveAttribute('aria-current', 'true');
+      await expect(page.locator('[data-organ-link][aria-current="true"]')).toHaveCount(1); // the host also reflects data-organ: it must not mark the first link too
       await page.locator('[data-stage]').evaluate((el) => (el as HTMLElement).focus({ preventScroll: true }));
       await page.keyboard.press('Escape');
       await expect(organLink(page, pick.organ)).not.toHaveAttribute('aria-current', 'true');
