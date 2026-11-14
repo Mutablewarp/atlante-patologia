@@ -1,0 +1,104 @@
+id: atypical-and-viral-pneumonia
+module: o18
+tier: extended
+kind: disease
+names:
+  it: "Polmoniti atipiche, virali e opportunistiche"
+  en: "Atypical, viral and opportunistic pneumonia"
+  eponyms: []
+  synonyms:
+    it: ["Polmonite interstiziale"]
+    en: ["Interstitial pneumonia"]
+  abbreviations: []
+summary:
+  it: "Polmoniti a decorso insidioso e infiltrato mononucleato interstiziale, causate da Mycoplasma e virus, o da Pneumocystis e Aspergillus nell'immunodepresso."
+  en: "Pneumonias with an insidious course and a mononuclear interstitial infiltrate, caused by Mycoplasma and viruses, or by Pneumocystis and Aspergillus in the immunosuppressed."
+lenses:
+  system: [respiratory]
+  process: [acute-inflammation, immunodeficiency]
+  pattern: [intracellular-inclusions]
+  presentation: [fever, dyspnea]
+  marker: [laboratory, special-stains]
+  group: [infectious, inflammatory]
+learningObjectives:
+  - it: "Descrivere il pattern interstiziale e distinguerlo dalla polmonite batterica con essudato intra-alveolare neutrofilo."
+    en: "Describe the interstitial pattern and tell it apart from bacterial pneumonia with a neutrophilic intra-alveolar exudate."
+  - it: "Riconoscere le lesioni tipiche di Mycoplasma, influenza e CMV."
+    en: "Recognize the typical lesions of Mycoplasma, influenza and CMV."
+  - it: "Elencare Pneumocystis e Aspergillus come polmoniti dell'immunodepresso e indicare come si dimostrano."
+    en: "List Pneumocystis and Aspergillus as pneumonias of the immunosuppressed and state how each is demonstrated."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: bacterial-pneumonia
+    note:
+      it: "Infiltrato interstiziale mononucleato contro essudato neutrofilo intra-alveolare."
+      en: "Mononuclear interstitial infiltrate versus neutrophilic intra-alveolar exudate."
+  - type: mimics
+    target: diffuse-alveolar-damage
+    note:
+      it: "Le polmoniti virali possono dare un quadro istologico identico."
+      en: "Viral pneumonias can give an identical histologic picture."
+  - type: sharesMechanism
+    target: opportunistic-fungal-infections
+  - type: sharesMechanism
+    target: respiratory-and-exanthematous-viral-infections
+quickCheck:
+  - id: atypical-and-viral-pneumonia-q1
+    q:
+      it: "Che cosa distingue l'infiltrato di una polmonite virale da quello di una polmonite batterica?"
+      en: "How does the infiltrate of viral pneumonia differ from that of bacterial pneumonia?"
+    a:
+      it: "È interstiziale e mononucleato, mentre nella polmonite batterica prevale l'essudato neutrofilo negli alveoli."
+      en: "It is interstitial and mononuclear, whereas bacterial pneumonia has a neutrophilic exudate in the alveoli."
+    kind: short
+  - id: atypical-and-viral-pneumonia-q2
+    q:
+      it: "Come si fa di solito la diagnosi di polmonite da Mycoplasma?"
+      en: "How is Mycoplasma pneumonia usually diagnosed?"
+    a:
+      it: "Con la sierologia per gli anticorpi o con le agglutinine fredde, perché il germe è difficile da coltivare."
+      en: "By serology for antibodies or cold agglutinins, because the organism is hard to culture."
+    kind: short
+  - id: atypical-and-viral-pneumonia-q3
+    q:
+      it: "Quali due agenti vanno considerati in una polmonite dell'immunodepresso?"
+      en: "Which two agents should you consider in pneumonia of the immunosuppressed?"
+    a:
+      it: "Pneumocystis e Aspergillus."
+      en: "Pneumocystis and Aspergillus."
+    kind: short
+selfExplain:
+  - it: "Perché la lesione degli pneumociti di tipo I porta alle membrane ialine?"
+    en: "Why does injury to type I pneumocytes lead to hyaline membranes?"
+  - it: "Perché la diagnosi di Mycoplasma si basa di solito su esami del sangue e non sulla coltura?"
+    en: "Why is Mycoplasma usually diagnosed with blood tests rather than culture?"
+  - it: "Perché l'aspergillosi invasiva può causare un infarto polmonare?"
+    en: "Why can invasive aspergillosis cause a lung infarct?"
+examQuestions:
+  - it: "Mi parli del pattern interstiziale delle polmoniti: che cosa si vede e in che cosa differisce dalla polmonite batterica?"
+    en: "Tell me about the interstitial pattern of pneumonia: what do you see, and how does it differ from bacterial pneumonia?"
+    focus: [definition, micro, differential]
+    level: 1
+  - it: "Che cosa vede al microscopio in una polmonite da Mycoplasma, e come ne fa la diagnosi?"
+    en: "What do you see under the microscope in Mycoplasma pneumonia, and how do you make the diagnosis?"
+    focus: [micro, diagnosis]
+    level: 2
+  - it: "Quali polmoniti considera in un paziente immunodepresso, e quali colorazioni userebbe per dimostrarle?"
+    en: "Which pneumonias would you consider in an immunosuppressed patient, and which stains would you use to demonstrate them?"
+    focus: [etiology, ancillary, high-yield]
+    level: 3
+images:
+  - { id: atypical-and-viral-pneumonia-micro-1, role: micro }
+  - { id: atypical-and-viral-pneumonia-micro-2, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: true
+editionNote:
+  it: "Il testo di riferimento tratta SARS e MERS ma non COVID-19: per la COVID-19 serve una fonte aggiornata."
+  en: "The reference text covers SARS and MERS but not COVID-19: use a current source for COVID-19."
+sources:
+  - source: rubin-8e
+    chapter: "18"
+    pages: "707, 710-713"
+lastUpdated: 2026-11-14
+status: published
