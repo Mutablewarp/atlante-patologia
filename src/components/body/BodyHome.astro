@@ -1,0 +1,76 @@
+---
+/**
+ * The body on the home page (docs/BODY_SPEC.md §1, §7): the stage, the system chips, and one short list of organs per
+ * system, opened one at a time by scripts/body-viewer.ts (`data-lists`). No cards here: each organ links to its place on
+ * the body page. The element reads `section[data-system] [data-organ]`, `[data-organ-link]` and `.count`.
+ */
+import type { Lang } from '../../i18n/index.ts';
+import { fmt } from '../../i18n/index.ts';
+import { tBody } from '../../i18n/body.ts';
+import { bodyTree } from '../../lib/anatomy.ts';
+import { loadBodyMap } from '../../lib/body-map.ts';
+import { langPath, url } from '../../lib/url.ts';
+import BodyViewer from './BodyViewer.astro';
+import { bodyAttrs } from './bodyAttrs.ts';
+
+type TreeInput = Parameters<typeof bodyTree>[0];
+interface Props {
+  lang: Lang;
+  entities: TreeInput['entities'];
+  anatomy: TreeInput['anatomy'];
+  systems: TreeInput['systems'];
+  processes: TreeInput['processes'];
+  modules: TreeInput['modules'];
+  /** the `credit` string of `public/anatomy/manifest.json` */
+  credit: string;
+}
+const { lang, credit, ...input } = Astro.props;
+const t = (k: Parameters<typeof tBody>[1]) => tBody(lang, k);
+const tree = bodyTree({ ...input, lang });
+const map = loadBodyMap();
+const count = (n: number) => fmt(t(n === 1 ? 'countOne' : 'countMany'), { n });
+---
+
+<section class="body-home" aria-labelledby="body-home-title">
+  <h2 id="body-home-title" class="visually-hidden">{t('title')}</h2>
+  <ap-body data-lists {...bodyAttrs(lang, url('anatomy/manifest.json'))}>
+    <div class="body-viewer">
+      <BodyViewer lang={lang} credit={credit} />
+    </div>
+    <nav class="body-systems" aria-label={t('chips')}>
+      {
+        tree.systems.map((s) => (
+          <a href={`#sys-${s.id}`} data-system={s.id}>
+            {s.label} <span class="count">{s.count}</span>
+            <span class="visually-hidden">{t(s.count === 1 ? 'unitOne' : 'unitMany')}</span>
+          </a>
+        ))
+      }
+    </nav>
+    {
+      tree.systems.map((s) => (
+        <section id={`sys-${s.id}`} data-system={s.id}>
+          <h3>
+            {s.label} <span class="count">{count(s.count)}</span>
+          </h3>
+          <ul class="body-organs">
+            {s.organs.map((o) => (
+              <li id={`organ-${o.id}`} data-organ={o.id} data-kind={map.get(o.id)?.kind ?? 'none'} data-count={o.count}>
+                <a data-organ-link href={langPath(lang, `body/#organ-${o.id}`)}>
+                  {o.label}
+                </a>
+                <span class="count">{o.count === 0 ? t('noCard') : count(o.count)}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+    <p class="body-home-hint">{t('homeHint')}</p>
+    <p class="body-home-all"><a href={langPath(lang, 'body/')}>{t('homeAll')}</a></p>
+  </ap-body>
+</section>
+
+<script>
+  import '../../scripts/body-viewer.ts';
+</script>

@@ -456,3 +456,79 @@ ap-body section[data-organ]:has(> h3 a[aria-current]) {
     break-inside: avoid;
   }
 }
+
+/* The body on the home page (BodyHome.astro): the hero's intro, then the stage and one list of organs at a time. The lists
+   have no cards and no bottom sheet; the chips work without JavaScript through :target. */
+.hero .body-intro {
+  max-width: var(--measure);
+  margin-top: var(--space-3);
+}
+.body-home {
+  margin-bottom: var(--space-6);
+}
+.body-home section[data-system] {
+  display: none;
+}
+.body-home section[data-system][data-open],
+.body-home section[data-system]:target {
+  display: block;
+}
+.body-home section[data-system] > h3 .count {
+  color: var(--ink-muted);
+  font-family: var(--font-body);
+  font-size: var(--step--1);
+  font-weight: var(--weight-body);
+}
+.body-organs {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.body-organs li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  min-height: 2.75rem;
+  border-bottom: 1px solid var(--rule);
+  overflow-wrap: anywhere;
+}
+.body-organs li > a {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  min-height: 2.75rem;
+}
+.body-organs .count {
+  flex: none;
+  color: var(--ink-muted);
+  font-size: var(--step--1);
+}
+.body-organs li:has(> [data-organ-link][aria-current]),
+.body-organs li:target {
+  background: var(--eosin-soft);
+}
+.body-home-hint {
+  display: none;
+  margin-block: var(--space-3);
+  color: var(--ink-muted);
+}
+.body-home ap-body:not([data-system]) .body-home-hint {
+  display: block;
+}
+.body-home ap-body:has(section[data-system][data-open], section[data-system]:target) .body-home-hint {
+  display: none;
+}
+.body-home-all {
+  margin-block: var(--space-3);
+}
+.body-home-all a {
+  display: inline-block;
+  min-height: 2.75rem;
+  padding-block: calc((2.75rem - 1lh) / 2);
+}
+@media (min-width: 48rem) {
+  .body-home ap-body > p {
+    grid-column: 2;
+  }
+}

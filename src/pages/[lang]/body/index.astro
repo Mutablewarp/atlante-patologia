@@ -10,6 +10,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Breadcrumb from '../../../components/nav/Breadcrumb.astro';
 import BodyTree from '../../../components/body/BodyTree.astro';
 import BodyViewer from '../../../components/body/BodyViewer.astro';
+import { bodyAttrs } from '../../../components/body/bodyAttrs.ts';
 import { langPaths, type Lang } from '../../../i18n/index.ts';
 import { tAtlas } from '../../../i18n/pages.ts';
 import { tBody } from '../../../i18n/body.ts';
@@ -42,18 +43,7 @@ const lenses = ['general', 'systemic'].map((id) => ({ id, label: terms('system')
     <p class="lede">{t('intro')}</p>
   </header>
 
-  <ap-body
-    data-manifest={url('anatomy/manifest.json')}
-    data-t-loading={t('loading')}
-    data-t-ready={t('ready')}
-    data-t-off={t('turnedOff')}
-    data-t-error={t('error')}
-    data-t-lost={t('lost')}
-    data-t-no-model={t('noModel')}
-    data-t-whole={t('whole')}
-    data-t-organ={t('organ')}
-    data-t-system={t('system')}
-  >
+  <ap-body {...bodyAttrs(lang, url('anatomy/manifest.json'))}>
     <div class="body-viewer">
       <BodyViewer lang={lang} credit={credit} />
     </div>

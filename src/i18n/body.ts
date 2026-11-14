@@ -74,6 +74,10 @@ export const tBody = defineStrings({
   noteSchematic: { it: 'Forma schematica, non una scansione.', en: 'Schematic shape, not a scan.' },
   noteNone: { it: 'Nessun modello 3D per ora.', en: 'No 3D model yet.' },
 
+  // The body block of the home page
+  homeHint: { it: 'Scegli un apparato per vedere i suoi organi.', en: 'Pick a system to see its organs.' },
+  homeAll: { it: 'Tutte le schede per organo', en: 'All cards by organ' },
+
   // Closing section: cards that have no organ
   otherTitle: { it: 'Schede senza un organo', en: 'Cards without an organ' },
   otherBody: {

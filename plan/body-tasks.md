@@ -212,7 +212,7 @@ Acceptance: `npx astro check` 0 errors. The lead looks at 375 × 812 in both the
 
 ### B-9b: the body on the home page (coder)
 Depends: B-9a
-Files: src/pages/[lang]/index.astro, src/pages/[lang]/body/index.astro, src/components/body/BodyHome.astro, src/components/body/bodyAttrs.ts, src/i18n/pages.ts, src/styles/body.css
+Files: src/pages/[lang]/index.astro, src/pages/[lang]/body/index.astro, src/components/body/BodyHome.astro, src/components/body/bodyAttrs.ts, src/i18n/pages.ts, src/i18n/body.ts, src/styles/body.css
 Goal: the home page is a short description of the atlas, then the body (owner request of 2026-11-13, spec §1 and §7), phone first. The element script is not yours: `src/scripts/body-viewer.ts` already supports this page (read its header comment and `sections()`).
 Do (the lead decided these):
 - Order on the home page: the hero (kicker, h1, the existing tagline as lede) plus one short paragraph saying what the atlas is, that it is free and needs no sign-up and has no ads (new strings `bodyIntro`, it and en, in `tHome`; keep the claims to those three); then the body block; then the status card, "Start here" and the progress section exactly as they are (another task owns the progress section: do not touch it, nor its data, markup or styles). Check that `src/pages/[lang]/index.astro` on `main` was changed by the D075 navigation task; keep its changes.

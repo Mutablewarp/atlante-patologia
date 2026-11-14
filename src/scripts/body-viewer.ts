@@ -179,10 +179,11 @@ class ApBody extends HTMLElement {
   /**
    * While the viewer runs, a chip or an organ link selects through setHash instead of the browser's own jump to the
    * fragment: the jump scrolls to a section that the sheet or the other sections are about to move, and fights the
-   * scrolling the viewer does itself. A click with a modifier (a new tab) and every click without the viewer stay native.
+   * scrolling the viewer does itself. A click with a modifier (a new tab) and every click without the viewer stays native, except on the home page (data-lists).
    */
   private onLink(ev: MouseEvent) {
-    if (!this.hasAttribute('data-on') || ev.defaultPrevented || ev.button !== 0 || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
+    // The home page lists one system's organs under the chips: a chip changes the list in place, viewer or not, instead of jumping to it.
+    if (!(this.hasAttribute('data-on') || this.hasAttribute('data-lists')) || ev.defaultPrevented || ev.button !== 0 || ev.metaKey || ev.ctrlKey || ev.shiftKey || ev.altKey) return;
     const a = (ev.target as Element).closest<HTMLAnchorElement>('a[href*="#sys-"], a[href*="#organ-"]');
     if (!a || !this.contains(a) || new URL(a.href).pathname !== location.pathname) return;
     const next = parseHash(new URL(a.href).hash, this.manifest);
@@ -199,7 +200,7 @@ class ApBody extends HTMLElement {
   private reveal(state: BodyState) {
     const go = this.scrollNext;
     this.scrollNext = false;
-    if (!go || !matchMedia(WIDE).matches) return;
+    if (!go || !matchMedia(WIDE).matches || this.hasAttribute('data-lists')) return; // the home page keeps the stage where it is
     const target = state.organ ? document.getElementById(`organ-${state.organ}`) : state.system ? this.querySelector(`:scope > section[data-system="${CSS.escape(state.system)}"]`) : null;
     target?.scrollIntoView({ block: state.organ ? 'nearest' : 'start', behavior: 'instant' });
   }

@@ -6,6 +6,10 @@ export const tHome = defineStrings({
     it: 'Atlante di Patologia: atlante libero e bilingue di anatomia patologica con sistema di studio, per studenti di medicina.',
     en: 'Atlante di Patologia: a free, bilingual pathology atlas and study system for medical students.',
   },
+  bodyIntro: {
+    it: 'Un atlante di anatomia patologica per studenti di medicina: gratuito, senza registrazione e senza pubblicità.',
+    en: 'An atlas of pathology for medical students: free, with no sign-up and no ads.',
+  },
   status: { it: 'Stato del progetto', en: 'Project status' },
   statusBody: {
     it: 'Il primo capitolo, Danno, adattamento e morte cellulare, è online con il sistema di studio. I capitoli successivi seguono il programma e vengono pubblicati solo quando ogni affermazione è controllata.',
