@@ -12,7 +12,7 @@ Not applicable.
 
 ## Pathogenesis
 
-**Why does a tumor make a marker?** A marker is useful only if the tumor still shows the gene activity of its tissue of origin, or makes a product typical of that kind of tumor.<!--c:serum-tumor-markers-c003-->
+**Why does a tumor make a marker?** Without retained tissue-specific gene activity or a product typical of its type, a tumor gives a marker nothing to find.<!--c:serum-tumor-markers-c003-->
 
 ## Gross morphology
 
@@ -20,7 +20,7 @@ Not applicable.
 
 ## Microscopic morphology
 
-**Can H&E alone always show that a tumor is a carcinoma?** Not always. Seen on H&E alone, a badly differentiated bladder cancer metastasis may not reveal itself as a carcinoma.<!--c:serum-tumor-markers-c004-->
+**Can H&E alone always show that a tumor is a carcinoma?** Not always. Carcinoma can be hard to recognize on H&E when a bladder cancer metastasis is poorly differentiated.<!--c:serum-tumor-markers-c004-->
 
 ## Special stains, IHC and molecular findings
 
@@ -31,12 +31,12 @@ Not applicable.
 - **Immunoperoxidase for S-100:** S-100 positivity revealed that an unpigmented colon metastasis of unknown origin was a melanoma.<!--c:serum-tumor-markers-c006-->
 - **Flow cytometry:** antibodies against κ and λ light chains can reveal that a lymphoid population is monoclonal.<!--c:serum-tumor-markers-c007-->
 - **Molecular tests:** lineage can also be worked out with in situ hybridization, gene expression profiling and sequencing.<!--c:serum-tumor-markers-c008-->
-- **Electron microscopy:** marker studies now do most of this work, but electron microscopy can still show structures specific to an organ or cell type.<!--c:serum-tumor-markers-c009-->
-- **Endocrine markers in medullary thyroid carcinoma:** Under electron microscopy, medullary thyroid carcinoma cells show dense-core granules that hold endocrine markers such as calcitonin and chromogranin.<!--c:serum-tumor-markers-c039-->
+- **Electron microscopy:** it can still reveal structures typical of an organ or cell type, though marker studies have largely taken its place.<!--c:serum-tumor-markers-c009-->
+- **Endocrine markers in medullary thyroid carcinoma:** Medullary thyroid carcinoma cells contain dense-core granules, visible on electron microscopy, that stain for calcitonin and chromogranin.<!--c:serum-tumor-markers-c039-->
 
 ## Clinical presentation
 
-**How are blood markers used in patients?** After the primary tumor is treated, blood levels of tumor antigens let clinicians watch for progression and new metastases.<!--c:serum-tumor-markers-c010-->
+**How are blood markers used in patients?** Measuring tumor antigens in blood after the primary tumor is treated shows whether disease is progressing or has spread.<!--c:serum-tumor-markers-c010-->
 - **CEA** is used for gastrointestinal tumors.<!--c:serum-tumor-markers-c011-->
 - **CA-125** is used for ovarian carcinoma.<!--c:serum-tumor-markers-c012-->
 - **PSA** is used for prostate cancer.<!--c:serum-tumor-markers-c013-->
@@ -44,7 +44,7 @@ Not applicable.
 **Which markers go with germ cell and thyroid tumors?**
 - **AFP** is secreted by yolk sac tumors.<!--c:serum-tumor-markers-c029-->
 - **hCG** is secreted by the syncytiotrophoblast cells of choriocarcinoma.<!--c:serum-tumor-markers-c030-->
-- A high blood level of AFP or hCG can serve as a marker of a testicular nonseminomatous germ cell tumor.<!--c:serum-tumor-markers-c031-->
+- In testicular nonseminomatous germ cell tumors, raised blood AFP or hCG is a usable marker.<!--c:serum-tumor-markers-c031-->
 - **Calcitonin** is commonly made by medullary thyroid carcinoma, a tumor of the C cells.<!--c:serum-tumor-markers-c032-->
 
 **Which tissue antigens guide treatment?** Some tissue antigens steer treatment choices: Bcr-Abl in chronic myeloid leukemia, and estrogen and progesterone receptors in breast cancer.<!--c:serum-tumor-markers-c014--> Antibodies can also be aimed at CD20 in B-cell lymphomas and at HER2/neu in breast and other cancers.<!--c:serum-tumor-markers-c015-->
@@ -56,14 +56,14 @@ Not applicable.
 **Where are these markers measured in practice?**
 - Clinical staging of a testicular nonseminomatous germ cell tumor uses the AFP and hCG values taken in the blood before orchiectomy.<!--c:serum-tumor-markers-c033-->
 - In ovarian yolk sac tumor, AFP measured in blood helps make the diagnosis and shows whether treatment is working.<!--c:serum-tumor-markers-c034-->
-- In ovarian choriocarcinoma, repeated hCG measurements in serum help to make the diagnosis and to follow the patient.<!--c:serum-tumor-markers-c035-->
-- In MEN2A and MEN2B, which carry a risk of medullary thyroid carcinoma, regular blood tests for CEA and calcitonin are done, and for chromogranin in some cases.<!--c:serum-tumor-markers-c036-->
+- In ovarian choriocarcinoma, serum hCG tracked over time helps with diagnosis and with monitoring the patient.<!--c:serum-tumor-markers-c035-->
+- Calcitonin and CEA, and sometimes chromogranin, are checked in the blood at intervals in MEN2A and MEN2B, whose carriers risk medullary thyroid carcinoma.<!--c:serum-tumor-markers-c036-->
 
 ## Complications and prognosis
 
 **What do blood markers tell us over time?** What a tumor releases into the blood can be measured repeatedly to watch the disease over time.<!--c:serum-tumor-markers-c017-->
 - After treatment of a testicular nonseminomatous germ cell tumor, AFP or hCG that does not fall means tumor is still present.<!--c:serum-tumor-markers-c037-->
-- A renewed climb in AFP and hCG, after they had returned to normal on therapy, most likely means the tumor has metastasized.<!--c:serum-tumor-markers-c038-->
+- Metastasis is likely when AFP and hCG, normal after therapy, begin to rise again.<!--c:serum-tumor-markers-c038-->
 
 ## Differential diagnosis
 

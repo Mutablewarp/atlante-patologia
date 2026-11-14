@@ -1,6 +1,6 @@
 ---
 lang: it
-translatedFrom: 845ae6755b80430b4592be073e4c56e2ece7bfdc1dc351df1d191c3adaa4badb
+translatedFrom: 8f84d85eae84e8c8c8de16af5f3671a225fd881f419174bcfc70a6f177865736
 ---
 
 ## Definizione ed epidemiologia
@@ -13,7 +13,7 @@ Non applicabile.
 
 ## Patogenesi
 
-**Perché un tumore produce un marcatore?** Un marcatore è utile solo se il tumore mostra ancora l'attività genica del tessuto di origine, oppure produce un prodotto tipico di quel tipo di tumore.<!--c:serum-tumor-markers-c003-->
+**Perché un tumore produce un marcatore?** Senza attività genica del tessuto d'origine conservata o un prodotto tipico del suo tipo, il tumore non offre nulla da rilevare a un marcatore.<!--c:serum-tumor-markers-c003-->
 
 ## Morfologia macroscopica
 
@@ -21,7 +21,7 @@ Non applicabile.
 
 ## Morfologia microscopica
 
-**La sola colorazione H&E basta sempre a mostrare che un tumore è un carcinoma?** Non sempre. Con la sola H&E, una metastasi di carcinoma vescicale scarsamente differenziato può non rivelarsi come carcinoma.<!--c:serum-tumor-markers-c004-->
+**La sola colorazione H&E basta sempre a mostrare che un tumore è un carcinoma?** Non sempre. All'H&E il carcinoma può essere difficile da riconoscere quando una metastasi di tumore vescicale è scarsamente differenziata.<!--c:serum-tumor-markers-c004-->
 
 ## Colorazioni speciali, IIC e reperti molecolari
 
@@ -32,12 +32,12 @@ Non applicabile.
 - **Immunoperossidasi per S-100:** La positività per S-100 ha rivelato che una metastasi del colon senza pigmento e di origine ignota era un melanoma.<!--c:serum-tumor-markers-c006-->
 - **Citometria a flusso:** gli anticorpi contro le catene leggere κ e λ possono dimostrare che una popolazione linfoide è monoclonale.<!--c:serum-tumor-markers-c007-->
 - **Test molecolari:** la linea cellulare si può definire anche con l'ibridazione in situ, il profilo di espressione genica e il sequenziamento.<!--c:serum-tumor-markers-c008-->
-- **Microscopia elettronica:** oggi lo studio dei marcatori svolge gran parte di questo lavoro, ma la microscopia elettronica può ancora mostrare strutture specifiche di un organo o di un tipo cellulare.<!--c:serum-tumor-markers-c009-->
-- **Marcatori endocrini nel carcinoma midollare della tiroide:** Al microscopio elettronico, le cellule del carcinoma midollare della tiroide mostrano granuli a nucleo denso che contengono marcatori endocrini come calcitonina e cromogranina.<!--c:serum-tumor-markers-c039-->
+- **Microscopia elettronica:** può ancora rivelare strutture tipiche di un organo o di un tipo cellulare, benché gli studi sui marcatori l'abbiano in gran parte sostituita.<!--c:serum-tumor-markers-c009-->
+- **Marcatori endocrini nel carcinoma midollare della tiroide:** Le cellule del carcinoma midollare della tiroide contengono granuli a nucleo denso, visibili al microscopio elettronico, positivi per calcitonina e cromogranina.<!--c:serum-tumor-markers-c039-->
 
 ## Presentazione clinica
 
-**Come si usano i marcatori ematici nei pazienti?** Dopo il trattamento del tumore primitivo, i livelli ematici degli antigeni tumorali permettono ai clinici di controllare la progressione e le nuove metastasi.<!--c:serum-tumor-markers-c010-->
+**Come si usano i marcatori ematici nei pazienti?** Dosare gli antigeni tumorali nel sangue dopo il trattamento del tumore primitivo mostra se la malattia progredisce o si è diffusa.<!--c:serum-tumor-markers-c010-->
 - Il **CEA** si usa per i tumori gastrointestinali.<!--c:serum-tumor-markers-c011-->
 - Il **CA-125** si usa per il carcinoma ovarico.<!--c:serum-tumor-markers-c012-->
 - Il **PSA** si usa per il carcinoma prostatico.<!--c:serum-tumor-markers-c013-->
@@ -45,7 +45,7 @@ Non applicabile.
 **Quali marcatori si associano ai tumori germinali e tiroidei?**
 - L'**AFP** è secreta dai tumori del sacco vitellino.<!--c:serum-tumor-markers-c029-->
 - L'**hCG** è secreta dalle cellule del sinciziotrofoblasto del coriocarcinoma.<!--c:serum-tumor-markers-c030-->
-- Un livello ematico elevato di AFP o hCG può servire da marcatore di un tumore germinale non seminomatoso del testicolo.<!--c:serum-tumor-markers-c031-->
+- Nei tumori germinali non seminomatosi del testicolo, un'AFP o un'hCG elevata nel sangue è un marcatore utilizzabile.<!--c:serum-tumor-markers-c031-->
 - La **calcitonina** è prodotta comunemente dal carcinoma midollare della tiroide, un tumore delle cellule C.<!--c:serum-tumor-markers-c032-->
 
 **Quali antigeni tissutali guidano la terapia?** Alcuni antigeni tissutali orientano le scelte terapeutiche: Bcr-Abl nella leucemia mieloide cronica, i recettori per estrogeni e progesterone nel carcinoma mammario.<!--c:serum-tumor-markers-c014--> Si possono inoltre dirigere anticorpi contro CD20 nei linfomi a cellule B e contro HER2/neu nel carcinoma mammario e in altri tumori.<!--c:serum-tumor-markers-c015-->
@@ -57,14 +57,14 @@ Non applicabile.
 **Dove si misurano questi marcatori nella pratica?**
 - La stadiazione clinica di un tumore germinale non seminomatoso del testicolo usa i valori di AFP e hCG misurati nel sangue prima dell'orchiectomia.<!--c:serum-tumor-markers-c033-->
 - Nel tumore del sacco vitellino dell'ovaio, l'AFP misurata nel sangue aiuta a fare la diagnosi e indica se la terapia funziona.<!--c:serum-tumor-markers-c034-->
-- Nel coriocarcinoma ovarico, misurazioni ripetute dell'hCG nel siero aiutano a fare la diagnosi e a seguire la paziente.<!--c:serum-tumor-markers-c035-->
-- Nella MEN2A e nella MEN2B, che comportano il rischio di carcinoma midollare della tiroide, si eseguono controlli periodici di CEA e calcitonina nel sangue e, in alcuni casi, di cromogranina.<!--c:serum-tumor-markers-c036-->
+- Nel coriocarcinoma ovarico, l'hCG sierica seguita nel tempo aiuta nella diagnosi e nel monitoraggio della paziente.<!--c:serum-tumor-markers-c035-->
+- Calcitonina e CEA, e talvolta cromogranina, si controllano nel sangue a intervalli nella MEN2A e nella MEN2B, i cui portatori rischiano il carcinoma midollare della tiroide.<!--c:serum-tumor-markers-c036-->
 
 ## Complicanze e prognosi
 
 **Che cosa ci dicono i marcatori ematici nel tempo?** Ciò che un tumore rilascia nel sangue può essere misurato più volte per seguire la malattia nel tempo.<!--c:serum-tumor-markers-c017-->
 - Dopo il trattamento di un tumore germinale non seminomatoso del testicolo, un'AFP o un'hCG che non scende significa che il tumore è ancora presente.<!--c:serum-tumor-markers-c037-->
-- Una nuova salita di AFP e hCG, dopo il ritorno alla norma con la terapia, significa molto probabilmente che il tumore ha metastatizzato.<!--c:serum-tumor-markers-c038-->
+- La metastasi è probabile quando AFP e hCG, tornate normali dopo la terapia, ricominciano a salire.<!--c:serum-tumor-markers-c038-->
 
 ## Diagnosi differenziale
 
