@@ -1,0 +1,128 @@
+id: hypertrophic-cardiomyopathy
+module: o17
+tier: core
+kind: disease
+names:
+  it: "Cardiomiopatia ipertrofica"
+  en: "Hypertrophic cardiomyopathy"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: ["HCM", "CMI"]
+summary:
+  it: "Malattia del muscolo cardiaco, per lo più da mutazioni dei geni del sarcomero, con ipertrofia ventricolare sinistra non spiegata dal carico emodinamico, disarray dei miociti e rischio di morte improvvisa."
+  en: "Heart muscle disease, mostly from sarcomere gene mutations, with left ventricular hypertrophy not explained by hemodynamic load, myocyte disarray and a risk of sudden death."
+lenses:
+  system: [heart]
+  process: [cellular-adaptation]
+  pattern: [hypertrophy]
+  presentation: [dyspnea, chest-pain]
+  marker: [molecular]
+  group: [genetic]
+learningObjectives:
+  - it: "Definire la cardiomiopatia ipertrofica e le cause secondarie di ipertrofia da escludere."
+    en: "Define hypertrophic cardiomyopathy and the secondary causes of hypertrophy that must be excluded."
+  - it: "Nominare i geni del sarcomero più frequentemente coinvolti e spiegare il meccanismo di gain-of-function."
+    en: "Name the sarcomere genes most often involved and explain the gain-of-function mechanism."
+  - it: "Descrivere l'ipertrofia settale asimmetrica, l'ostruzione all'efflusso e il disarray dei miociti."
+    en: "Describe asymmetric septal hypertrophy, outflow obstruction and myocyte disarray."
+  - it: "Spiegare sintomi e rischio di morte improvvisa, anche in pazienti asintomatici."
+    en: "Explain the symptoms and the risk of sudden death, even in symptom-free patients."
+prerequisites: [hypertrophy]
+relations:
+  - type: differentialOf
+    target: dilated-cardiomyopathy
+    note:
+      it: "Gli stessi geni possono causare la forma dilatativa per perdita di funzione."
+      en: "The same genes can cause the dilated form through loss of function."
+  - type: differentialOf
+    target: hypertensive-heart-disease
+    note:
+      it: "Qui l'ipertrofia è spiegata dal sovraccarico pressorio."
+      en: "Here the hypertrophy is explained by pressure overload."
+  - type: differentialOf
+    target: arrhythmogenic-cardiomyopathy
+    note:
+      it: "Malattia del desmosoma con aritmie ventricolari precoci."
+      en: "Desmosome disease with early ventricular arrhythmias."
+quickCheck:
+  - id: hypertrophic-cardiomyopathy-q1
+    q:
+      it: "Perché una mutazione di un gene espresso solo nei miociti altera anche la matrice extracellulare?"
+      en: "Why does a mutation in a gene expressed only in myocytes also change the extracellular matrix?"
+    a:
+      it: "La maggior forza e il segnale del calcio attivano vie di crescita, e i miociti secernono mediatori profibrotici come il TGFβ che stimolano fibroblasti e matrice."
+      en: "The extra force and calcium signaling activate growth pathways, and myocytes secrete profibrotic mediators such as TGFβ that stimulate fibroblasts and matrix."
+    kind: short
+  - id: hypertrophic-cardiomyopathy-q2
+    q:
+      it: "Quale reperto istologico è il più caratteristico, e dove è più marcato?"
+      en: "Which histologic finding is most characteristic, and where is it most marked?"
+    a:
+      it: "Il disarray delle miofibre, più marcato nel setto interventricolare."
+      en: "Myofiber disarray, most marked in the interventricular septum."
+    kind: short
+  - id: hypertrophic-cardiomyopathy-q3
+    q:
+      it: "Quali cause di ipertrofia vanno escluse prima di porre diagnosi?"
+      en: "Which causes of hypertrophy must be excluded before making the diagnosis?"
+    a:
+      it: "Ipertensione, stenosi aortica e ipertrofia fisiologica degli atleti molto allenati."
+      en: "Hypertension, aortic stenosis and physiologic hypertrophy of highly trained athletes."
+    kind: short
+  - id: hypertrophic-cardiomyopathy-q4
+    q:
+      it: "Il rischio di morte improvvisa riguarda solo i pazienti sintomatici?"
+      en: "Is the risk of sudden death limited to symptomatic patients?"
+    a:
+      it: "No: anche i pazienti senza sintomi possono morire improvvisamente."
+      en: "No: even patients without symptoms can die suddenly."
+    kind: short
+selfExplain:
+  - it: "Perché il setto ipertrofico può causare ostruzione all'efflusso del ventricolo sinistro?"
+    en: "Why can the hypertrophic septum obstruct left ventricular outflow?"
+  - it: "Perché l'intervento sull'ostruzione non elimina il rischio di morte improvvisa?"
+    en: "Why does treating the obstruction not remove the risk of sudden death?"
+chain:
+  - pathology:
+      it: "Ipertrofia settale asimmetrica con ostruzione dinamica all'efflusso"
+      en: "Asymmetric septal hypertrophy with dynamic outflow obstruction"
+    sign:
+      it: "Dispnea, angina e sincope"
+      en: "Dyspnea, angina and syncope"
+    lab:
+      it: "Test genetico per i geni del sarcomero (positivo in circa il 60% dei probandi)"
+      en: "Sarcomere gene testing (positive in about 60% of probands)"
+examQuestions:
+  - it: "Mi parli della cardiomiopatia ipertrofica: quali geni sono coinvolti e con quale modalità di trasmissione?"
+    en: "Tell me about hypertrophic cardiomyopathy: which genes are involved and how is it inherited?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Che cosa vede al macroscopico in un cuore con cardiomiopatia ipertrofica, e che cosa si intende per ipertrofia settale asimmetrica?"
+    en: "What do you see grossly in a heart with hypertrophic cardiomyopathy, and what is meant by asymmetric septal hypertrophy?"
+    focus: [gross]
+    level: 1
+  - it: "Che cosa vede al microscopio nella cardiomiopatia ipertrofica, e il disarray dei miociti è sufficiente per la diagnosi?"
+    en: "What do you see under the microscope in hypertrophic cardiomyopathy, and is myocyte disarray enough to make the diagnosis?"
+    focus: [micro, traps]
+    level: 2
+  - it: "Perché il setto ispessito può dare ostruzione all'efflusso, e come nascono i sintomi?"
+    en: "Why can the thickened septum obstruct outflow, and how do the symptoms arise?"
+    focus: [gross, clinical]
+    level: 2
+  - it: "Come distingue una cardiomiopatia ipertrofica da un'ipertrofia da carico o da allenamento, e perché la morte improvvisa resta un rischio anche dopo il trattamento dell'ostruzione?"
+    en: "How do you tell hypertrophic cardiomyopathy from hypertrophy due to load or training, and why does sudden death remain a risk even after the obstruction is treated?"
+    focus: [diagnosis, prognosis, differential]
+    level: 3
+images:
+  - { id: hypertrophic-cardiomyopathy-gross-1, role: gross }
+  - { id: hypertrophic-cardiomyopathy-micro-1, role: micro, pairWith: hypertrophic-cardiomyopathy-gross-1 }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "17"
+    pages: "683-684"
+lastUpdated: 2026-11-14
+status: published
