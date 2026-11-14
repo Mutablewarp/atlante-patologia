@@ -21,8 +21,9 @@ const SHELL_PAGES = ['', ...LANGS.flatMap((l) => [`${l}/`, `${l}/offline/`, `${l
 const SHELL_ASSET = /^_astro\/.+\.(css|js|woff2)$/;
 // Heavy chunks that only a learner's click imports (3Dmol in structure-3d.ts, ~160 kB gz):
 // never precached for every visitor; public/sw.js caches them on first use (hashedAsset).
-// tests/dist/pathway.test.ts checks that the 3Dmol chunk still matches this name.
-export const LAZY_ONLY = /^_astro\/structure-3d\.[^/]+\.js$/;
+// The body viewer chunk (body-3d.ts, ~175 kB gz) is the same kind of chunk.
+// tests/dist/pathway.test.ts and body.test.ts check that these chunks still match their names.
+export const LAZY_ONLY = /^_astro\/(?:structure-3d|body-3d)\.[^/]+\.js$/;
 const STATIC_SHELL = ['manifest.webmanifest', 'favicon.svg'];
 const IMAGE = /\.(avif|webp|png|jpe?g|gif|svg)$/i;
 
@@ -30,9 +31,9 @@ const IMAGE = /\.(avif|webp|png|jpe?g|gif|svg)$/i;
 export const isShellAsset = (p) => SHELL_ASSET.test(p) && !LAZY_ONLY.test(p);
 /**
  * Cached on first use (cache-first) but not precached: their hashes still feed the worker VERSION, so a
- * structure file replaced under the same name reaches returning visitors with the next worker.
+ * structure or body mesh replaced under the same name reaches returning visitors with the next worker.
  */
-export const isLazyCached = (p) => LAZY_ONLY.test(p) || p.startsWith('structures/');
+export const isLazyCached = (p) => LAZY_ONLY.test(p) || p.startsWith('structures/') || p.startsWith('anatomy/');
 
 const sha = (buf) => createHash('sha256').update(buf).digest('hex').slice(0, 16);
 const posix = (p) => p.split(sep).join('/');

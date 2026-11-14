@@ -6,7 +6,8 @@
  * - Navigations: network first; offline → cached copy (shell or installed
  *   pack) → /<lang>/offline/.
  * - Hashed /_astro/ assets: cache first, stored on first use. Structure files
- *   (/structures/*.bcif.gz, 3D pathways) too: they are never precached.
+ *   (/structures/*.bcif.gz, 3D pathways) and the body meshes and posters
+ *   (/anatomy/) too: they are never precached.
  * - Study data (/<lang>/data/*.json): network first, like navigations. Packs
  *   hold it under the same names in every deploy, so cache first would keep a
  *   learner on the questions, cards and indexes of the day they downloaded it.
@@ -23,6 +24,7 @@ const SCOPE = new URL('./', self.location.href);
 const BASE = SCOPE.pathname; // '/atlante-patologia/'
 const SHELL = `shell-${VERSION}`;
 const DATA = /^[a-z]{2}\/data\//;
+const LAZY_DIRS = ['_astro/', 'structures/', 'anatomy/'];
 
 self.addEventListener('install', (event) => {
   event.waitUntil(
@@ -59,7 +61,7 @@ self.addEventListener('fetch', (event) => {
   const url = new URL(req.url);
   if (url.origin !== self.location.origin || !url.pathname.startsWith(BASE)) return;
   if (req.mode === 'navigate') event.respondWith(navigate(req, url));
-  else if (url.pathname.startsWith(`${BASE}_astro/`) || url.pathname.startsWith(`${BASE}structures/`)) event.respondWith(hashedAsset(req));
+  else if (LAZY_DIRS.some((d) => url.pathname.startsWith(BASE + d))) event.respondWith(hashedAsset(req));
   else if (DATA.test(url.pathname.slice(BASE.length))) event.respondWith(networkFirst(req));
   else event.respondWith(cachedOrNetwork(req));
 });

@@ -44,3 +44,17 @@ describe('sw-manifest version', () => {
   });
 });
 
+describe('sw-manifest body viewer', () => {
+  it('keeps the body-3d chunk out of the shell and caches it and the anatomy files on first use', () => {
+    expect(isShellAsset('_astro/body-3d.XXXXXXXX.js')).toBe(false);
+    expect(LAZY_ONLY.test('_astro/body-3d.XXXXXXXX.js')).toBe(true);
+    expect(isLazyCached('_astro/body-3d.XXXXXXXX.js')).toBe(true);
+    expect(isLazyCached('anatomy/heart.glb')).toBe(true);
+  });
+
+  it('an anatomy file changes the worker version without being precached', () => {
+    const shell = { 'it/': 'aaaa' };
+    expect(versionOf({ ...shell, 'anatomy/heart.glb': '1111' })).not.toBe(versionOf({ ...shell, 'anatomy/heart.glb': '2222' }));
+  });
+});
+
