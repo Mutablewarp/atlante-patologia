@@ -88,7 +88,9 @@ organs:
   larynx: { kind: mesh, concepts: ["isa:laryngeal cartilage"] } # 9
   ear: { kind: mesh, concepts: ["isa:external ear"] }
   # bone-soft-tissue
-  bones: { kind: mesh, concepts: [skeletal system] } # 138
+  # The PART-OF `skeletal system` (138 elements) holds the axial skeleton and the girdles but no long bone of the limbs; the IS-A `bone organ`
+  # (203) holds them. Their union is 262 elements (79 are in both). Found by looking at the system in the viewer: a skeleton with no arms or legs.
+  bones: { kind: mesh, concepts: [skeletal system, "isa:bone organ"] } # 262
   joints: { kind: proxy, of: [bones] }
   soft-tissue: { kind: none }
   # muscle-nerve
