@@ -1,0 +1,107 @@
+id: pulmonary-infarction
+module: o18
+tier: extended
+kind: disease
+names:
+  it: "Infarto polmonare"
+  en: "Pulmonary infarction"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: []
+summary:
+  it: "Necrosi di un'area di polmone per perdita dell'apporto ematico, di solito dopo embolia polmonare in un paziente con scompenso cardiaco o malattia polmonare cronica; è tipicamente un infarto rosso, piramidale, con la base sulla pleura."
+  en: "Death of an area of lung after loss of its blood supply, usually after pulmonary embolism in a patient with heart failure or chronic lung disease; typically a red, pyramidal infarct with its base on the pleura."
+lenses:
+  system: [respiratory, vessels]
+  process: [thrombosis-embolism, hypoxic-ischemic-injury, repair-fibrosis]
+  pattern: [necrosis-coagulative]
+  presentation: [dyspnea, chest-pain, ischemic-event]
+  marker: []
+  group: [vascular]
+learningObjectives:
+  - it: "Spiegare perché la doppia circolazione, polmonare e bronchiale, rende raro l'infarto polmonare dopo un'embolia."
+    en: "Explain why the dual pulmonary and bronchial circulation makes infarction uncommon after an embolus."
+  - it: "Descrivere l'aspetto macroscopico dell'infarto polmonare: rosso, emorragico, piramidale con base pleurica."
+    en: "Describe the gross appearance of a pulmonary infarct: red, hemorrhagic, pyramidal with its base on the pleura."
+  - it: "Elencare i sintomi e il reperto pleurico tipici."
+    en: "List the typical symptoms and the pleural finding."
+  - it: "Seguire l'evoluzione dall'emorragia al tessuto di granulazione e alla cicatrice fibrosa."
+    en: "Follow the evolution from hemorrhage to granulation tissue and fibrous scar."
+prerequisites: [thrombosis]
+relations:
+  - type: complicationOf
+    target: pulmonary-embolism
+    note:
+      it: "Solo una parte degli emboli polmonari causa un infarto."
+      en: "Only some pulmonary emboli cause an infarct."
+  - type: sharesMechanism
+    target: infarction
+    note:
+      it: "Infarto da occlusione arteriosa, qui con doppia irrorazione."
+      en: "Infarct from arterial occlusion, here with a dual supply."
+  - type: differentialOf
+    target: myocardial-infarction
+    note:
+      it: "Anche l'infarto miocardico può essere rosso o pallido."
+      en: "A myocardial infarct may also be red or pale."
+quickCheck:
+  - id: pulmonary-infarction-q1
+    q:
+      it: "Perché un embolo polmonare spesso non causa infarto?"
+      en: "Why does a pulmonary embolus often not cause an infarct?"
+    a:
+      it: "Perché il polmone ha una doppia irrorazione, polmonare e bronchiale, e l'altra compensa."
+      en: "Because the lung has a dual pulmonary and bronchial supply, and the other branch compensates."
+    kind: short
+  - id: pulmonary-infarction-q2
+    q:
+      it: "Perché l'infarto polmonare è rosso e non pallido?"
+      en: "Why is a pulmonary infarct red rather than pale?"
+    a:
+      it: "Perché l'arteria bronchiale porta ancora sangue nell'area necrotica, che quindi sanguina."
+      en: "Because the bronchial artery still delivers blood into the necrotic area, so it bleeds."
+    kind: short
+  - id: pulmonary-infarction-q3
+    q:
+      it: "Quali sono i sintomi e il reperto pleurico tipici?"
+      en: "What are the typical symptoms and the pleural finding?"
+    a:
+      it: "Tosse, dolore pleurico trafittivo, dispnea, emottisi occasionale; versamento pleurico spesso ematico."
+      en: "Cough, stabbing pleuritic pain, dyspnea, occasional hemoptysis; a pleural effusion that is often bloody."
+    kind: short
+selfExplain:
+  - it: "Perché lo scompenso cardiaco congestizio predispone all'infarto polmonare dopo un'embolia?"
+    en: "Why does congestive heart failure predispose to infarction after an embolus?"
+  - it: "Perché l'infarto polmonare è rosso all'inizio e pallido al centro più tardi?"
+    en: "Why is a pulmonary infarct red at first and pale in the center later?"
+examQuestions:
+  - it: "Mi parli dell'infarto polmonare: che aspetto ha al taglio e dove si trova rispetto alla pleura?"
+    en: "Tell me about a pulmonary infarct: what does it look like on the cut surface, and where does it lie relative to the pleura?"
+    focus: [gross, pathogenesis]
+    level: 1
+  - it: "Perché un embolo che occlude un'arteria polmonare spesso non provoca infarto?"
+    en: "Why does an embolus that blocks a pulmonary artery often not cause an infarct?"
+    focus: [definition, pathogenesis]
+    level: 2
+  - it: "Come distingue un infarto polmonare che guarisce con organizzazione da un infarto parziale?"
+    en: "How do you tell a pulmonary infarct that heals by organization from a partial infarction?"
+    focus: [micro, prognosis]
+    level: 3
+images:
+  - id: pulmonary-infarction-gross-1
+    role: gross
+    pairWith: pulmonary-infarction-micro-1
+  - id: pulmonary-infarction-micro-1
+    role: micro
+  - id: pulmonary-infarction-micro-2
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "7"
+    pages: "334, 339"
+lastUpdated: 2026-11-14
+status: published
