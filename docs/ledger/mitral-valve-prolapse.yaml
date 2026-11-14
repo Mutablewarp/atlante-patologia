@@ -1,0 +1,514 @@
+entity: mitral-valve-prolapse
+claims:
+- claimId: mitral-valve-prolapse-c001
+  section: definition
+  statement: "Oversized leaflets with excess tissue bulge back into the left atrium as the ventricle contracts in systole"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c002
+  section: definition
+  statement: "Mitral valve prolapse is also called floppy mitral valve syndrome"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c003
+  section: definition
+  statement: "No other lesion leads more often to repair or replacement of a valve than prolapse"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c004
+  section: definition
+  statement: "On echocardiography, as many as 3% of adults may have mitral valve prolapse"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c005
+  section: definition
+  statement: "Most people with prolapse never need surgery for the regurgitation"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c006
+  section: etiology
+  statement: "Prolapse may be primary (nonsyndromic) or secondary (syndromic)"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c007
+  section: etiology
+  statement: "Ehlers-Danlos syndrome and osteogenesis imperfecta are inherited defects of matrix proteins associated with syndromic prolapse"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c008
+  section: etiology
+  statement: "Prolapse is found in more than 90% of patients with Marfan syndrome"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c009
+  section: etiology
+  statement: "Penetrance depends on age and sex, but nonsyndromic prolapse is inherited as an autosomal dominant trait and so runs in families"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c010
+  section: etiology
+  statement: "Loci on chromosomes 16, 11 and 13 are linked to nonsyndromic prolapse, but no causal allele is known"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c011
+  section: etiology
+  statement: "DCHS1 encodes a cadherin-type protein, and a missense mutation in it has been implicated in one large family with nonsyndromic prolapse"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c012
+  section: etiology
+  statement: "No role of FBN1 variants has been observed in nonsyndromic prolapse, although prolapse is very common in Marfan syndrome"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c013
+  section: pathogenesis
+  statement: "Excised valves from patients with primary prolapse show disturbed TGFβ signaling"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c014
+  section: pathogenesis
+  statement: "Valve interstitial cells are activated by TGFβ, which also promotes remodeling of the extracellular matrix"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c015
+  section: pathogenesis
+  statement: "Metallothioneins, which take part in the response to oxidative stress, are expressed less under the influence of TGFβ"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c016
+  section: pathogenesis
+  statement: "ADAMTS-family genes encode proteoglycan-degrading enzymes, and TGFβ downregulates them"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c017
+  section: pathogenesis
+  statement: "The TGFβ pathway has also been linked to syndromic prolapse"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c018
+  section: pathogenesis
+  statement: "TGFBR2, the gene for TGFβ receptor 2, is one gene whose mutation can produce Marfan syndrome"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c019
+  section: pathogenesis
+  statement: "Heterozygous mutations of TGFBR1 or TGFBR2 cause Loeys-Dietz syndrome, a connective tissue disorder with a high prevalence of prolapse"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c020
+  section: gross
+  statement: "The abnormal leaflets bulge into the left atrium, have lost their normal shape and are present in excess"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "672-673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c021
+  section: gross
+  statement: "Proteoglycan deposition is what makes cut valve surfaces look jelly-like and feel slippery"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c022
+  section: gross
+  statement: "The chordae tendineae are thinned and elongated"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c023
+  section: gross
+  statement: "Chordal damage may be severe enough that the chordae break"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c024
+  section: gross
+  statement: "A mitral valve whose chordae have ruptured in numbers is called flail and is totally unable to close"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c025
+  section: gross
+  statement: "Usually only the mitral valve is involved"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c026
+  section: gross
+  statement: "The tricuspid valve is often abnormal in Marfan syndrome, and myxomatous degeneration can occur in other valves as well"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c027
+  section: micro
+  statement: "Myxomatous connective tissue occupies much of the leaflet's middle layer, the spongiosa"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c028
+  section: micro
+  statement: "Proteoglycans (acid mucopolysaccharides) accumulate in the leaflet"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c029
+  section: micro
+  statement: "Collagen fibrils are fragmented"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c030
+  section: micro
+  statement: "Prolapse and regurgitation increase when the annulus and chordae also undergo myxomatous degeneration"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c031
+  section: ancillary
+  statement: "The tissue in which TGFβ dysregulation was shown in primary prolapse comes from surgically excised valves"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c032
+  section: ancillary
+  statement: "On a leaflet section the myxomatous tissue sits in the center of the leaflet"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c033
+  section: clinical
+  statement: "Most patients with prolapse are asymptomatic"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c034
+  section: clinical
+  statement: "Oversized leaflets snap as they flip back into the left atrium, which produces the classic mid- to late-systolic click"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c035
+  section: clinical
+  statement: "When the leak is significant, a murmur is added at the end of systole"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c036
+  section: diagnosis
+  statement: "Prolapse is first suspected from characteristic auscultatory findings"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c037
+  section: diagnosis
+  statement: "Prolapse can be demonstrated by echocardiography"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c038
+  section: prognosis
+  statement: "Prolapse can be complicated by endocarditis, which may be serious"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c039
+  section: prognosis
+  statement: "After 10 to 15 years of prolapse, 15% of patients have significant mitral regurgitation"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c040
+  section: prognosis
+  statement: "Once significant regurgitation develops, mitral valve repair or replacement is indicated"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c041
+  section: prognosis
+  statement: "Patients with prolapse die suddenly twice as often as the general population, presumably from ventricular tachyarrhythmias"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c042
+  section: prognosis
+  statement: "The degree of regurgitation appears to be the main driver of sudden-death risk, perhaps through ventricular remodeling that follows volume overload"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c043
+  section: prognosis
+  statement: "Repair of regurgitant floppy valves lowers the sudden-death risk"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c044
+  section: differential
+  statement: "Ischemia is the usual cause of dysfunction of the left ventricular papillary muscles"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c045
+  section: differential
+  statement: "Regurgitation is permanent when infarction scars the papillary muscles, but temporary after brief ischemia such as angina, which stuns the muscle"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c046
+  section: differential
+  statement: "In mitral annulus calcification the leaflets keep their normal shape and the calcium lies chiefly in the annulus"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c047
+  section: differential
+  statement: "A heavily calcified annulus can stop the posterior leaflet from moving freely in systole, causing regurgitation"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c048
+  section: differential
+  statement: "Calcification of the mitral annulus may be visible on a radiograph as a curved structure"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c049
+  section: differential
+  statement: "Papillary muscles are especially vulnerable to ischemia because they are supplied by terminal branches of intramyocardial coronary arteries"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c050
+  section: differential
+  statement: "After an infarct has healed, a papillary muscle may function poorly because the myocardium at its base contracts weakly"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c051
+  section: differential
+  statement: "Rupture of a papillary muscle in an acute infarct is rare and causes abrupt, dangerous mitral regurgitation"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c052
+  section: high-yield
+  statement: "In systole the leaflets of a floppy valve bulge into the left atrium; the underlying change is myxomatous degeneration, with thinned, elongated chordae"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "672-673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c053
+  section: high-yield
+  statement: "Most patients are asymptomatic and the classic sign is a mid- to late-systolic click"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c054
+  section: high-yield
+  statement: "Prolapse is found in more than 90% of patients with Marfan syndrome"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c055
+  section: high-yield
+  statement: "TGFβ signaling is dysregulated in primary prolapse"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c056
+  section: high-yield
+  statement: "Prolapse can be complicated by endocarditis, which may be serious"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c057
+  section: high-yield
+  statement: "Rupture of multiple chordae gives a flail mitral valve"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c058
+  section: high-yield
+  statement: "The degree of regurgitation appears to be the main determinant of the raised sudden-death risk"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c059
+  section: high-yield
+  statement: "Papillary muscle dysfunction may cause mitral regurgitation and is usually due to ischemia"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c060
+  section: traps
+  statement: "Most patients with prolapse have no symptoms, and most never need surgery for the regurgitation"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "672-673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c061
+  section: traps
+  statement: "Myxomatous degeneration also affects the annulus and chordae and can occur in other valves"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c062
+  section: traps
+  statement: "FBN1 variants have not been observed in nonsyndromic prolapse although prolapse is very frequent in Marfan syndrome"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c063
+  section: traps
+  statement: "A short episode of angina can stun a papillary muscle and cause a temporary leak"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: mitral-valve-prolapse-c064
+  section: mnemonics
+  statement: "Prolapse features: redundant leaflets, thinned elongated chordae, mid- to late-systolic click, prolapse into the left atrium"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "672-673" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
