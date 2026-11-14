@@ -2,44 +2,44 @@ entity: hallmarks-of-cancer
 claims:
 - claimId: hallmarks-of-cancer-c001
   section: definition
-  statement: "Eight hallmark behaviors separate the cells of solid cancers from their normal counterparts."
+  statement: "Solid cancers are told apart from normal tissue by eight characteristic behaviors."
   sourceRef: { source: rubin-8e, chapter: "5", pages: "182" }
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: hallmarks-of-cancer-c002
   section: definition
-  statement: "Blood cancers differ from solid ones in how they arise and spread, so only some of the hallmarks apply to them."
+  statement: "Blood cancers follow a different course from solid tumors, so they show only some hallmarks."
   sourceRef: { source: rubin-8e, chapter: "5", pages: "182" }
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: hallmarks-of-cancer-c003
   section: definition
-  statement: "Cancer cells carry out mitosis independently of the normal regulated signals that guide and check cell division."
+  statement: "Cancer cells divide without heeding the control signals that govern the normal cell cycle."
   sourceRef: { source: rubin-8e, chapter: "5", pages: "182" }
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: hallmarks-of-cancer-c004
   section: definition
-  statement: "Normal growth is restrained by cell-cell contact and inhibitory cytokines, and cancer cells are generally insensitive to these restraints."
+  statement: "Contact with neighboring cells and inhibitory cytokines limit normal growth, but most cancer cells do not respond to them."
   sourceRef: { source: rubin-8e, chapter: "5", pages: "182" }
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: hallmarks-of-cancer-c005
   section: definition
-  statement: "Poor anchorage or genomic instability can set off programmed cell death in normal cells, and tumor cells frequently escape it."
+  statement: "Tumor cells often evade programmed cell death, which poor anchorage or genomic instability would otherwise trigger in them."
   sourceRef: { source: rubin-8e, chapter: "5", pages: "182" }
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: hallmarks-of-cancer-c006
   section: definition
   statement: "Cancer cells avoid senescence and so can multiply without limit, unlike normal cells."
@@ -47,7 +47,7 @@ claims:
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: hallmarks-of-cancer-c007
   section: definition
   statement: "Tumors tend to reactivate telomerase, which maintains telomere length and shields the cell from chromosomal instability."
@@ -55,15 +55,15 @@ claims:
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: hallmarks-of-cancer-c008
   section: definition
-  statement: "New blood vessel formation (angiogenesis) is stimulated by molecules that both tumor cells and neighboring cells secrete."
+  statement: "Nearby cells, as well as the tumor itself, release factors that drive new vessel growth (angiogenesis)."
   sourceRef: { source: rubin-8e, chapter: "5", pages: "182" }
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: hallmarks-of-cancer-c009
   section: definition
   statement: "Sprouting angiogenesis driven by tumor-produced VEGF gives capillaries that are leaky and poorly formed rather than mature."
@@ -71,15 +71,15 @@ claims:
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: hallmarks-of-cancer-c010
   section: definition
-  statement: "A tumor cell that loses anchorage to adjacent cells and basement membrane can enter the circulation and, after leaving it at a distant site, found a colony."
+  statement: "Colonies far from the primary tumor arise from cells that detach from neighbors and basement membrane and travel in the circulation."
   sourceRef: { source: rubin-8e, chapter: "5", pages: "182" }
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: hallmarks-of-cancer-c011
   section: definition
   statement: "Cancer cells take up more glucose because they usually make their ATP by glycolysis instead of oxidative phosphorylation."
@@ -87,7 +87,7 @@ claims:
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: hallmarks-of-cancer-c012
   section: definition
   statement: "Some tumors suppress the host's immune response, which could otherwise restrain them."
@@ -95,7 +95,7 @@ claims:
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: hallmarks-of-cancer-c013
   section: differential
   statement: "Tumor cells multiply without waiting for an outside growth signal, while normal cells divide only when the body needs more of them."
@@ -103,7 +103,7 @@ claims:
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: hallmarks-of-cancer-c014
   section: differential
   statement: "Apoptosis normally removes defective cells, so a tumor can form only once its cells have found a way to disable it."
@@ -111,7 +111,7 @@ claims:
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: hallmarks-of-cancer-c015
   section: differential
   statement: "Malignant cells must neutralize senescence, the state of metabolically active cells that no longer divide."
@@ -119,23 +119,23 @@ claims:
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: hallmarks-of-cancer-c016
   section: high-yield
-  statement: "Inflammation, genomic instability and inactivation of tumor suppressors are processes that support tumor growth and spread."
+  statement: "Three supporting processes assist tumors: unstable DNA, inflammation and lost tumor suppressors."
   sourceRef: { source: rubin-8e, chapter: "5", pages: "182" }
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: hallmarks-of-cancer-c017
   section: high-yield
-  statement: "The hallmarks are connected yet stay separate concepts, and no two tumors evolve in the same way."
+  statement: "Each tumor evolves in its own way, and although the hallmarks interact, each remains a distinct concept."
   sourceRef: { source: rubin-8e, chapter: "5", pages: "182" }
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: hallmarks-of-cancer-c018
   section: high-yield
   statement: "Driver mutations are the ones that matter for tumor development, while passenger mutations are bystanders whose role is mostly unknown."
@@ -143,15 +143,15 @@ claims:
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: hallmarks-of-cancer-c019
   section: high-yield
-  statement: "In follicular lymphoma, a translocation puts Bcl-2 under an immunoglobulin promoter, which keeps this survival protein active and blocks apoptosis."
+  statement: "In follicular lymphoma, after a translocation an immunoglobulin promoter keeps Bcl-2 switched on, which blocks apoptosis."
   sourceRef: { source: rubin-8e, chapter: "5", pages: "190" }
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: hallmarks-of-cancer-c020
   section: high-yield
   statement: "A Myc-driven tumor must also inactivate cell death pathways, because Myc overproduction induces apoptosis when those pathways are intact."
@@ -159,7 +159,7 @@ claims:
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: hallmarks-of-cancer-c021
   section: traps
   statement: "Solid tumors usually kill through widespread metastasis rather than by growing large."
@@ -167,20 +167,20 @@ claims:
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: hallmarks-of-cancer-c022
   section: traps
-  statement: "Telomerase activation makes cancer possible without being its direct cause."
+  statement: "Reactivated telomerase does not start a cancer; it only permits one to emerge."
   sourceRef: { source: rubin-8e, chapter: "5", pages: "188" }
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14
 - claimId: hallmarks-of-cancer-c023
   section: traps
-  statement: "Many patients gained time before progression on antiangiogenic drugs, but overall survival barely improved except in a few cases."
+  statement: "Overall survival gained little from antiangiogenic drugs, with few exceptions, though progression was delayed in many patients."
   sourceRef: { source: rubin-8e, chapter: "5", pages: "190" }
   status: verified
   verifiedBy: agent
   verifier: "independent-verifier-agent"
-  date: 2026-11-13
+  date: 2026-11-14

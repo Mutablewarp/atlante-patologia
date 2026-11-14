@@ -9,12 +9,12 @@ lang: en
 **What does a cancer cell do differently?**
 - **Proliferation:** it keeps dividing without obeying the usual control signals.<!--c:hallmarks-of-cancer-c003-->
 - **Growth suppressors:** contact with neighbors and inhibitory cytokines restrain normal growth; cancer cells mostly ignore both.<!--c:hallmarks-of-cancer-c004-->
-- **Cell death:** in normal cells, poor anchorage or genomic instability can set off programmed cell death; tumor cells often escape it.<!--c:hallmarks-of-cancer-c005-->
+- **Cell death:** tumor cells often evade programmed cell death, which poor anchorage or genomic instability would otherwise trigger.<!--c:hallmarks-of-cancer-c005-->
 - **Immortality:** it avoids senescence, so its divisions have no limit.<!--c:hallmarks-of-cancer-c006-->
 - **Telomerase:** tumors tend to turn telomerase back on, keeping telomeres long and chromosomes stable.<!--c:hallmarks-of-cancer-c007-->
-- **Angiogenesis:** new vessels (angiogenesis) form under molecules secreted by tumor cells and their neighbors.<!--c:hallmarks-of-cancer-c008-->
+- **Angiogenesis:** nearby cells and the tumor release factors that drive new vessels (angiogenesis).<!--c:hallmarks-of-cancer-c008-->
 - **Leaky vessels:** tumor-derived VEGF triggers sprouting, but the new capillaries leak and are poorly formed.<!--c:hallmarks-of-cancer-c009-->
-- **Invasion and metastasis:** a tumor cell that loses its anchorage to neighbors and basement membrane can enter the circulation, then leave it far away to found a colony.<!--c:hallmarks-of-cancer-c010-->
+- **Invasion and metastasis:** colonies far from the primary tumor arise from cells that detach from neighbors and basement membrane and travel in the circulation.<!--c:hallmarks-of-cancer-c010-->
 - **Metabolism:** it takes up more glucose, because it usually makes ATP by glycolysis instead of oxidative phosphorylation.<!--c:hallmarks-of-cancer-c011-->
 - **Immune evasion:** some tumors suppress the host's immune response, which could otherwise restrain them.<!--c:hallmarks-of-cancer-c012-->
 
@@ -60,19 +60,19 @@ Not covered in this short card.
 
 ## High-yield summary
 
-- Three **supporting processes** aid tumors: inflammation, genomic instability and loss of tumor suppressors.<!--c:hallmarks-of-cancer-c016-->
-- Hallmarks are linked but remain **separate concepts**, and no two tumors evolve alike.<!--c:hallmarks-of-cancer-c017-->
+- Three **supporting processes** help tumors: unstable DNA, inflammation, lost tumor suppressors.<!--c:hallmarks-of-cancer-c016-->
+- Each tumor evolves its own way; hallmarks interact yet are **separate concepts**.<!--c:hallmarks-of-cancer-c017-->
 - **Driver** mutations matter for tumor development; **passenger** mutations are bystanders of mostly unknown role.<!--c:hallmarks-of-cancer-c018-->
-- In follicular lymphoma, a translocation puts **Bcl-2** under an immunoglobulin promoter, so apoptosis is blocked.<!--c:hallmarks-of-cancer-c019-->
+- In follicular lymphoma, an immunoglobulin promoter keeps **Bcl-2** switched on after a translocation, blocking apoptosis.<!--c:hallmarks-of-cancer-c019-->
 - A **Myc**-driven tumor must also disable cell death pathways, because Myc overproduction otherwise induces apoptosis.<!--c:hallmarks-of-cancer-c020-->
 
 ## Common misconceptions and exam traps
 
 **Do solid tumors kill mainly by growing large?** No. Their deadliness comes mainly from widespread metastasis.<!--c:hallmarks-of-cancer-c021-->
 
-**Does reactivated telomerase cause cancer?** No. It makes cancer possible without being a direct cause.<!--c:hallmarks-of-cancer-c022-->
+**Does reactivated telomerase cause cancer?** No. It does not start a cancer, only permits one.<!--c:hallmarks-of-cancer-c022-->
 
-**Did drugs blocking VEGF cure cancer?** No. Many patients gained time before progression, but overall survival barely improved except in a few cases.<!--c:hallmarks-of-cancer-c023-->
+**Did drugs blocking VEGF cure cancer?** No. Overall survival rose little, with few exceptions, though progression was delayed in many patients.<!--c:hallmarks-of-cancer-c023-->
 
 ## Mnemonics
 
