@@ -1,0 +1,141 @@
+id: anca-associated-vasculitis
+module: o16
+tier: core
+kind: disease
+names:
+  it: "Vasculiti ANCA-associate (GPA, MPA, EGPA)"
+  en: "ANCA-associated vasculitis"
+  eponyms: ["Wegener granulomatosis (GPA)", "Churg-Strauss syndrome (EGPA)"]
+  synonyms:
+    it: ["Granulomatosi con poliangioite", "Poliangioite microscopica", "Granulomatosi eosinofila con poliangioite"]
+    en: ["Granulomatosis with polyangiitis", "Microscopic polyangiitis", "Eosinophilic granulomatosis with polyangiitis"]
+  abbreviations: ["GPA", "MPA", "EGPA", "ANCA", "MPO", "PR3"]
+summary:
+  it: "Gruppo di vasculiti dei piccoli vasi associate ad anticorpi anti-citoplasma dei neutrofili (GPA, MPA, EGPA) che colpiscono soprattutto vie aeree, polmone e rene, con glomerulonefrite a semilune pauci-immune."
+  en: "A group of small-vessel vasculitides linked to antineutrophil cytoplasmic antibodies (GPA, MPA, EGPA) that mainly hit the airways, lungs and kidneys, with pauci-immune crescentic glomerulonephritis."
+lenses:
+  system: [vessels, kidney, respiratory]
+  process: [hypersensitivity, chronic-inflammation, granulomatous-inflammation]
+  pattern: [granuloma, necrosis-fibrinoid]
+  presentation: [dyspnea, hematuria]
+  marker: [laboratory]
+  group: [immune, inflammatory, vascular]
+learningObjectives:
+  - it: "Distinguere GPA, MPA ed EGPA per organi colpiti e reperti caratteristici."
+    en: "Tell GPA, MPA and EGPA apart by the organs involved and their typical findings."
+  - it: "Spiegare come gli ANCA attivano i neutrofili e danneggiano l'endotelio."
+    en: "Explain how ANCAs activate neutrophils and injure the endothelium."
+  - it: "Descrivere la glomerulonefrite a semilune pauci-immune e il suo reperto in immunofluorescenza."
+    en: "Describe pauci-immune crescentic glomerulonephritis and its immunofluorescence finding."
+  - it: "Associare C-ANCA/PR3 e P-ANCA/MPO alla malattia corrispondente."
+    en: "Match C-ANCA/PR3 and P-ANCA/MPO to the matching disease."
+  - it: "Conoscere i nomi precedenti di GPA ed EGPA."
+    en: "Know the former names of GPA and EGPA."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: polyarteritis-nodosa
+    note:
+      it: "L'EGPA può simulare la poliarterite nodosa con necrosi fibrinoide, trombosi e aneurismi."
+      en: "EGPA can simulate polyarteritis nodosa with fibrinoid necrosis, thrombosis and aneurysms."
+  - type: differentialOf
+    target: tuberculosis
+    note:
+      it: "I noduli polmonari escavati della GPA assomigliano alle lesioni tubercolari."
+      en: "The cavitating lung nodules of GPA resemble tuberculous lesions."
+  - type: sameLesionOtherOrgan
+    target: crescentic-glomerulonephritis
+    note:
+      it: "La lesione renale è una glomerulonefrite a semilune pauci-immune."
+      en: "The kidney lesion is a pauci-immune crescentic glomerulonephritis."
+  - type: sharesMechanism
+    target: granulomatous-inflammation
+    note:
+      it: "La GPA e l'EGPA mostrano granulomi necrotizzanti."
+      en: "GPA and EGPA show necrotizing granulomas."
+quickCheck:
+  - id: anca-associated-vasculitis-q1
+    q:
+      it: "Quale combinazione di anticorpo e pattern è tipica della GPA, e quale della MPA?"
+      en: "Which antibody and pattern combination is typical of GPA, and which of MPA?"
+    a:
+      it: "GPA: PR3-ANCA con pattern citoplasmatico (C-ANCA). MPA: MPO-ANCA con pattern perinucleare (P-ANCA)."
+      en: "GPA: PR3-ANCA with a cytoplasmic (C-ANCA) pattern. MPA: MPO-ANCA with a perinuclear (P-ANCA) pattern."
+    kind: short
+  - id: anca-associated-vasculitis-q2
+    q:
+      it: "Che cosa significa \"pauci-immune\" e che cosa lo distingue dalla malattia anti-GBM?"
+      en: "What does \"pauci-immune\" mean, and what separates it from anti-GBM disease?"
+    a:
+      it: "Nelle lesioni si trovano pochi o nessun deposito di immunoglobuline e complemento; nella malattia anti-GBM e da immunocomplessi i depositi ci sono."
+      en: "Few or no immunoglobulin or complement deposits are found in the lesions; anti-GBM and immune-complex disease have deposits."
+    kind: short
+  - id: anca-associated-vasculitis-q3
+    q:
+      it: "Quali tre elementi definiscono l'EGPA?"
+      en: "Which three features define EGPA?"
+    a:
+      it: "Asma, eosinofilia e vasculite."
+      en: "Asthma, eosinophilia and vasculitis."
+    kind: short
+selfExplain:
+  - it: "Perché gli ANCA possono danneggiare i vasi anche se mancano depositi immunitari?"
+    en: "Why can ANCAs damage vessels even though immune deposits are absent?"
+  - it: "Perché una GPA con noduli polmonari escavati va distinta dalla tubercolosi?"
+    en: "Why must GPA with cavitating lung nodules be told apart from tuberculosis?"
+  - it: "Perché l'EGPA può simulare la poliarterite nodosa?"
+    en: "Why can EGPA simulate polyarteritis nodosa?"
+chain:
+  - pathology:
+      it: "Glomerulonefrite necrotizzante a semilune pauci-immune"
+      en: "Pauci-immune necrotizing crescentic glomerulonephritis"
+    sign:
+      it: "Insufficienza renale rapidamente progressiva con segni nefritici"
+      en: "Rapidly progressive renal failure with nephritic signs"
+    lab:
+      it: "ANCA sierici (PR3 o MPO), ematuria e proteinuria"
+      en: "Serum ANCA (PR3 or MPO), hematuria and proteinuria"
+examQuestions:
+  - it: "Mi parli delle vasculiti ANCA-associate: quali malattie comprendono e quali organi colpiscono?"
+    en: "Tell me about ANCA-associated vasculitis: which diseases does it include and which organs do they hit?"
+    focus: [definition, clinical]
+    level: 1
+  - it: "Che cosa vede al microscopio nel rene di una vasculite ANCA-associata, e che cosa mostrano le immunofluorescenze?"
+    en: "What do you see under the microscope in the kidney in ANCA-associated vasculitis, and what do the deposits show?"
+    focus: [micro, ancillary]
+    level: 1
+  - it: "Come si chiamavano un tempo la GPA e l'EGPA?"
+    en: "What were GPA and EGPA called before?"
+    focus: [definition, high-yield]
+    level: 1
+  - it: "Perché gli ANCA danneggiano i vasi? Mi spieghi il meccanismo."
+    en: "Why do ANCAs damage vessels? Walk me through the mechanism."
+    focus: [pathogenesis]
+    level: 2
+  - it: "Come distingue GPA, MPA ed EGPA in base al pattern e all'antigene degli ANCA?"
+    en: "How do you tell GPA, MPA and EGPA apart by ANCA pattern and target antigen?"
+    focus: [diagnosis, high-yield]
+    level: 3
+  - it: "Un paziente ha una sindrome polmone-rene: perché pensa più a una vasculite ANCA-associata che alla sindrome di Goodpasture?"
+    en: "A patient has pulmonary-renal syndrome: why do you think of ANCA-associated vasculitis rather than Goodpasture syndrome?"
+    focus: [clinical, traps]
+    level: 3
+images:
+  - { id: anca-associated-vasculitis-micro-1, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: true
+editionNote:
+  it: "La nomenclatura è cambiata (granulomatosi di Wegener diventata GPA, sindrome di Churg-Strauss diventata EGPA), e terapia e dati di sopravvivenza del testo di riferimento possono essere superati."
+  en: "The nomenclature changed (Wegener granulomatosis became GPA, Churg-Strauss syndrome became EGPA), and the treatment and survival figures of the reference text may be out of date."
+sources:
+  - source: rubin-8e
+    chapter: "16"
+    pages: "621-622"
+  - source: rubin-8e
+    chapter: "18"
+    pages: "746-748"
+  - source: rubin-8e
+    chapter: "22"
+    pages: "947-948"
+lastUpdated: 2026-11-14
+status: published
