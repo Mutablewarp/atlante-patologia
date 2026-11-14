@@ -126,7 +126,8 @@ describe('build with a schematic organ', () => {
     writeFileSync(anatomy, ['skin', 'thyroid-gland', 'parathyroid-glands', 'lymph-nodes'].map((id) => `- { id: ${id}, system: ${id === 'skin' ? 'skin' : 'endocrine'} }`).join('\n'));
 
     const out = join(dir, 'out');
-    const manifest = await buildBody({ raw, tables, out, map, anatomy, targets: { shell: 10 } });
+    // without `only` the build returns the whole manifest, with it only the systems: the type is the union of both
+    const manifest = (await buildBody({ raw, tables, out, map, anatomy, targets: { shell: 10 } })) as any;
     expect(existsSync(join(out, 'endocrine.glb'))).toBe(true);
     expect(manifest.systems.endocrine.organs).toEqual(['thyroid-gland']);
     const thyroid = manifest.organs['thyroid-gland'];

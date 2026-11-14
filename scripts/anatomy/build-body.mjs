@@ -124,7 +124,10 @@ async function loadObjects(hra, objects, nodes) {
 async function fitOf(fit, hra, raw, tables, frame) {
   const hraBox = bbox((await loadObjects(hra, fit.hra)).positions);
   const bp3dBox = bbox(toFrame(loadConcepts(raw, tables, 'fit', fit.bp3d).positions, frame));
-  return fitTransform(hraBox, bp3dBox, fit.anchor);
+  const f = fitTransform(hraBox, bp3dBox, fit.anchor);
+  // `offset` (metres, X Y Z) nudges the fit after the landmark match; the organ map says why
+  if (fit.offset) f.translate = f.translate.map((v, a) => v + fit.offset[a]);
+  return f;
 }
 
 // "+ 0" turns -0 into 0, so the JSON on disk reads back equal

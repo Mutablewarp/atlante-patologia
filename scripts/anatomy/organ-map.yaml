@@ -18,7 +18,10 @@ shell: { concepts: [skin] } # 1 element; also the mesh of the organ `skin`
 
 # Landmark fits for HRA objects (similarity: translation and one scale, from the bounding boxes of the landmark pair).
 fits:
-  pelvis: { hra: [pelvis-female/v1.3], bp3d: [bony pelvis], anchor: front } # B-0: the front (pubic symphysis) keeps the uterus behind the bladder, the centre does not
+  # The front anchor (pubic symphysis) is a firmer landmark than the box centre. The offset moves the HRA organs 12 mm back: the
+  # male bladder of the base body sits further back than a female one, and with the anchor alone the uterus came out about
+  # 0.4 mm in front of the bladder centre (spec section 9: behind it). Found by the placement test on the real build.
+  pelvis: { hra: [pelvis-female/v1.3], bp3d: [bony pelvis], anchor: front, offset: [0, 0, -0.012] }
   thorax: { hra: [sternum-female/v1.0, manubrium-female/v1.0], bp3d: [sternum] }
 
 organs:
