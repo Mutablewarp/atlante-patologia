@@ -1,0 +1,141 @@
+id: infective-endocarditis
+module: o17
+tier: core
+kind: disease
+names:
+  it: "Endocardite infettiva"
+  en: "Infective endocarditis"
+  eponyms: []
+  synonyms:
+    it: ["Endocardite batterica"]
+    en: ["Bacterial endocarditis"]
+  abbreviations: ["IE"]
+summary:
+  it: "Infezione dell'endocardio, di solito su una valvola cardiaca, per lo più batterica, con vegetazioni di piastrine, fibrina e microrganismi e rischio di embolie settiche e complicanze immunomediate."
+  en: "Infection of the endocardium, usually on a heart valve and mostly bacterial, with vegetations of platelets, fibrin and organisms and a risk of septic emboli and immune-mediated complications."
+lenses:
+  system: [heart]
+  process: [acute-inflammation, thrombosis-embolism]
+  pattern: []
+  presentation: [fever]
+  marker: []
+  group: [infectious]
+learningObjectives:
+  - it: "Distinguere l'endocardite acuta da quella subacuta per virulenza dei microrganismi e stato della valvola, e sapere come si classifica oggi."
+    en: "Distinguish acute from subacute endocarditis by organism virulence and valve status, and know how it is classified today."
+  - it: "Spiegare come il flusso turbolento e il danno endoteliale portano a una vegetazione colonizzata dai batteri."
+    en: "Explain how turbulent flow and endothelial damage lead to a vegetation colonized by bacteria."
+  - it: "Descrivere sede e aspetto macroscopico e microscopico delle vegetazioni."
+    en: "Describe the site, gross look and microscopic look of the vegetations."
+  - it: "Elencare le complicanze emboliche e immunomediate."
+    en: "List the embolic and immune-mediated complications."
+  - it: "Distinguere l'endocardite infettiva dall'endocardite trombotica non batterica."
+    en: "Tell infective endocarditis from nonbacterial thrombotic endocarditis."
+prerequisites: [thrombosis]
+relations:
+  - type: differentialOf
+    target: noninfective-endocarditis
+    note:
+      it: "Vegetazioni simili all'esame macroscopico, ma sterili e non distruttive."
+      en: "Similar vegetations grossly, but sterile and non-destructive."
+  - type: complicationOf
+    target: mitral-valve-prolapse
+    note:
+      it: "Il prolasso mitralico è tra le basi più frequenti dell'endocardite dell'adulto."
+      en: "Mitral valve prolapse is among the most frequent bases of adult endocarditis."
+  - type: causes
+    target: brain-abscess
+    note:
+      it: "Gli emboli infetti possono dare ascessi cerebrali."
+      en: "Infected emboli can cause brain abscesses."
+quickCheck:
+  - id: infective-endocarditis-q1
+    q:
+      it: "Che differenza c'è tra endocardite acuta e subacuta?"
+      en: "What separates acute from subacute endocarditis?"
+    a:
+      it: "L'acuta è causata da microrganismi molto virulenti, come S. aureus, su valvole normali; la subacuta da microrganismi meno virulenti, come gli streptococchi viridanti, su valvole già anomale."
+      en: "Acute is caused by highly virulent organisms such as S. aureus on normal valves; subacute by less virulent organisms such as viridans streptococci on already abnormal valves."
+    kind: short
+  - id: infective-endocarditis-q2
+    q:
+      it: "Su quale lato della valvola si formano le vegetazioni?"
+      en: "On which side of the valve do vegetations form?"
+    a:
+      it: "Sul lato a monte: quello atriale per mitrale e tricuspide, quello ventricolare per aortica e polmonare."
+      en: "On the upstream side: atrial for the mitral and tricuspid valves, ventricular for the aortic and pulmonary valves."
+    kind: short
+  - id: infective-endocarditis-q3
+    q:
+      it: "Da che cosa derivano i reni a morsi di pulce?"
+      en: "What causes flea-bitten kidneys?"
+    a:
+      it: "Dal deposito di immunocomplessi nei glomeruli."
+      en: "Immune complex deposition in the glomeruli."
+    kind: short
+  - id: infective-endocarditis-q4
+    q:
+      it: "Dove si fermano gli emboli infetti e che cosa causano?"
+      en: "Where do infected emboli lodge, and what do they cause?"
+    a:
+      it: "Si fermano in organi come cervello e milza e causano infarti o ascessi."
+      en: "They lodge in organs such as the brain and spleen and cause infarcts or abscesses."
+    kind: short
+  - id: infective-endocarditis-q5
+    q:
+      it: "Qual è la complicanza grave più frequente e da che cosa deriva di solito?"
+      en: "What is the most common serious complication, and what usually causes it?"
+    a:
+      it: "È l'insufficienza cardiaca, di solito dovuta alla distruzione della valvola."
+      en: "Heart failure, usually from valve destruction."
+    kind: short
+selfExplain:
+  - it: "Perché le vegetazioni si formano sul lato a monte della valvola?"
+    en: "Why do vegetations form on the upstream side of the valve?"
+  - it: "Perché un'endocardite può causare insufficienza cardiaca?"
+    en: "Why can endocarditis cause heart failure?"
+chain:
+  - pathology:
+      it: "Vegetazione settica sulla valvola tricuspide"
+      en: "Septic vegetation on the tricuspid valve"
+    sign:
+      it: "Emboli polmonari settici"
+      en: "Septic pulmonary emboli"
+    lab:
+      it: "Emocolture"
+      en: "Blood cultures"
+examQuestions:
+  - it: "Mi parli dell'endocardite acuta e subacuta: quali microrganismi e su quali valvole?"
+    en: "Tell me about acute and subacute endocarditis: which organisms, and on which valves?"
+    focus: [definition, high-yield]
+    level: 1
+  - it: "Dove si trovano le vegetazioni sulla valvola e che cosa contengono al microscopio?"
+    en: "Where are the vegetations on the valve, and what do they contain under the microscope?"
+    focus: [gross, micro]
+    level: 1
+  - it: "Perché una valvola viene colonizzata dai batteri? Mi descriva i passaggi."
+    en: "Why does a valve become colonized by bacteria? Walk me through the steps."
+    focus: [pathogenesis, high-yield]
+    level: 2
+  - it: "Mi parli delle complicanze emboliche e di quelle immunomediate dell'endocardite infettiva."
+    en: "Tell me about the embolic and the immune-mediated complications of infective endocarditis."
+    focus: [clinical, high-yield]
+    level: 2
+  - it: "Come distingue l'endocardite infettiva dall'endocardite trombotica non batterica?"
+    en: "How do you tell infective endocarditis from nonbacterial thrombotic endocarditis?"
+    focus: [differential, traps]
+    level: 3
+images:
+  - id: infective-endocarditis-gross-1
+    role: gross
+    pairWith: infective-endocarditis-micro-1
+  - id: infective-endocarditis-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "17"
+    pages: "669-671"
+lastUpdated: 2026-11-14
+status: published

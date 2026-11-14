@@ -1,0 +1,618 @@
+entity: infective-endocarditis
+claims:
+- claimId: infective-endocarditis-c001
+  section: definition
+  statement: "Most infective endocarditis is bacterial, and the disease is an infection of the endocardium that usually sits on a heart valve"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "669-670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c002
+  section: definition
+  statement: "Fungi, chlamydiae and rickettsiae are less common causes of infectious endocarditis"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "669" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c003
+  section: definition
+  statement: "Before antibiotics existed, almost all patients with bacterial endocarditis died, since no cure was possible"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "669" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c004
+  section: definition
+  statement: "Aggressive organisms such as S. aureus caused the acute form, which attacked valves that were normal"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "669" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c005
+  section: definition
+  statement: "Less aggressive organisms such as viridans streptococci caused the subacute form, usually on valves already scarred by rheumatic disease"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "669" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c006
+  section: definition
+  statement: "Current classification depends on where in the heart the infection sits and which organism causes it, replacing the course-based scheme"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "669" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c007
+  section: definition
+  statement: "Congenital malformation is currently the commonest predisposing condition in children, and most affected children have an underlying heart lesion"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "669" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c008
+  section: definition
+  statement: "In most adults with the disease, doctors cannot point to a heart lesion that made it likely"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "669" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c009
+  section: definition
+  statement: "Congenital heart disease and mitral valve prolapse are the underlying conditions seen most often in adults today"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "669" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c010
+  section: definition
+  statement: "Rheumatic heart disease, formerly the leading underlying condition in adults, is now uncommon"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "669" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c011
+  section: etiology
+  statement: "How S. aureus manages to infect valves that look healthy is unclear"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c012
+  section: etiology
+  statement: "Among intravenous drug users who develop endocarditis, the skin is the most common origin of the bacteria"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "669" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c013
+  section: etiology
+  statement: "S. aureus causes most of the infections in intravenous drug users"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "669" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c014
+  section: etiology
+  statement: "The tricuspid valve is involved in a large share of endocarditis in intravenous drug users"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "669" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c015
+  section: etiology
+  statement: "About half of the endocarditis on artificial valves is caused by staphylococci"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "669-670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c016
+  section: etiology
+  statement: "Medical care can itself cause endocarditis when a catheter is left in a blood vessel"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c017
+  section: etiology
+  statement: "Bacteria that reach the blood only briefly, from a dental procedure or any other source, can lead to endocarditis"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c018
+  section: etiology
+  statement: "Preventive antibiotics are advised for patients with a higher chance of developing bacterial endocarditis"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c019
+  section: etiology
+  statement: "Older people carry a higher endocarditis risk because aging valves calcify, in the aortic cusps and the mitral annulus"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c020
+  section: etiology
+  statement: "Endocarditis may occur more often in people with diabetes and in pregnancy"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c021
+  section: etiology
+  statement: "Bicuspid aortic valves are being seen more and more as a predisposition to bacterial endocarditis"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c022
+  section: pathogenesis
+  statement: "Disturbed blood flow through a damaged valve is the core abnormality in the pathophysiology"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c023
+  section: pathogenesis
+  statement: "Strong pulsatile shear acts on the inflow portion of the valve, and the lesions arise there"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c024
+  section: pathogenesis
+  statement: "Blood squeezed through a narrow opening forms a fast jet and turbulence that strip endothelium from the valve surface"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c025
+  section: pathogenesis
+  statement: "Small sterile vegetations, which bacteria colonize readily, build up where platelets and fibrin deposit on the denuded areas"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c026
+  section: pathogenesis
+  statement: "Inflammatory cells are recruited by E-selectin, ICAM-1 and VCAM-1, which activated endothelium next to the thrombus expresses more strongly"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c027
+  section: pathogenesis
+  statement: "Dental manipulation can let microorganisms into the circulation, and they can then deposit within the vegetations"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c028
+  section: pathogenesis
+  statement: "In the protected environment of the vegetation, organisms reach very high densities per gram of tissue"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c029
+  section: pathogenesis
+  statement: "Nearby vegetations form more readily because bacterial metalloproteinases begin to break down the valve"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c030
+  section: pathogenesis
+  statement: "Fibronectin sticks to the surface of the bacteria, which helps fibrin, collagen and cells to adhere there"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c031
+  section: pathogenesis
+  statement: "Sugar polymers released outside the cell by certain microbes help them stick as well"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c032
+  section: gross
+  statement: "The mitral valve, the aortic valve or both are the ones most often involved, so bacterial endocarditis is chiefly left-sided"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c033
+  section: gross
+  statement: "Vegetations lie on the atrial face of the mitral and tricuspid valves and on the ventricular face of the aortic and pulmonary valves, which is the upstream side"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c034
+  section: gross
+  statement: "The points where leaflets or cusps come together on closing are common locations for vegetations"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c035
+  section: gross
+  statement: "Vegetations range in size from thin surface coatings to bulky masses"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c036
+  section: gross
+  statement: "Aggressive vegetations on the mitral valve can erode the edges of its leaflets"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c037
+  section: gross
+  statement: "Regurgitation results when valve damage eventually perforates a leaflet"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c038
+  section: gross
+  statement: "Spread within the heart can carry the infection to the valve ring, the neighboring chamber lining and the chordae tendineae"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c039
+  section: micro
+  statement: "A thrombus of platelets and fibrin encloses microorganisms and cellular debris"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c040
+  section: micro
+  statement: "Edema and inflammation are present in the valve tissue under the vegetation"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c041
+  section: clinical
+  statement: "The first symptoms of bacterial endocarditis are vague, for instance low-grade fever and fatigue"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c042
+  section: clinical
+  statement: "Almost every patient develops a murmur, and it frequently changes as the illness evolves"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c043
+  section: clinical
+  statement: "In longer-lasting cases splenomegaly and finger clubbing are common"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c044
+  section: clinical
+  statement: "About a third of patients have a systemic embolus detected during the course of the illness"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c045
+  section: clinical
+  statement: "The brain and spleen are among the organs where infected emboli lodge and cause infarcts or abscesses"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c046
+  section: clinical
+  statement: "Brain abscesses and mycotic aneurysms in cerebral arteries may develop"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c047
+  section: clinical
+  statement: "Drug users with tricuspid valve endocarditis may have septic emboli reaching the lungs"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c048
+  section: clinical
+  statement: "Endocarditis can be accompanied by a kidney disease called focal segmental glomerulonephritis"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c049
+  section: clinical
+  statement: "Immune complexes that deposit in the glomeruli are the cause of this glomerulonephritis"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c050
+  section: clinical
+  statement: "The term flea-bitten kidneys describes the patchy hemorrhagic look of the affected kidneys"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c051
+  section: diagnosis
+  statement: "A share of endocarditis cases are culture-negative, as the etiologic table lists a negative-culture category"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "669" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c052
+  section: prognosis
+  statement: "Drugs that kill bacteria reduce the sickness and death caused by bacterial endocarditis"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c053
+  section: prognosis
+  statement: "The stage of infection when treatment starts and the identity of the organism partly decide how the patient fares"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c054
+  section: prognosis
+  statement: "About one in four patients with S. aureus endocarditis die of it"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c055
+  section: prognosis
+  statement: "Operating on a valve wrecked by endocarditis is hazardous and causes many operative deaths while the infection is uncontrolled"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c056
+  section: prognosis
+  statement: "Destroyed valves are the typical reason for heart failure, which is the leading serious complication of the disease"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c057
+  section: prognosis
+  statement: "The development of heart failure in endocarditis indicates a poor outlook"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c058
+  section: prognosis
+  statement: "Infarcts from coronary artery emboli and abscesses in the myocardium can add to the heart failure"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c059
+  section: differential
+  statement: "In NBTE, germ-free platelet-fibrin vegetations form on healthy-looking valves, nearly always in patients with a malignancy or a chronic debilitating illness"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c060
+  section: differential
+  statement: "In NBTE the valves stay intact and there are neither inflammatory changes nor organisms"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c061
+  section: differential
+  statement: "Rheumatic aortic valves have scarred cusps and fused commissures, a setting that predisposes to superimposed endocarditis"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "669, 671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c062
+  section: differential
+  statement: "In calcific aortic stenosis, calcium nodules sit low on the cusps, away from the free edges"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c063
+  section: differential
+  statement: "Degenerative senile calcific aortic stenosis shows no commissural fusion"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c064
+  section: high-yield
+  statement: "Acute endocarditis involves highly virulent organisms such as S. aureus on normal valves"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "669" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c065
+  section: high-yield
+  statement: "Subacute endocarditis involves less virulent organisms such as viridans streptococci on abnormal valves"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "669" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c066
+  section: high-yield
+  statement: "Vegetations on the upstream side of valves hold masses of organisms within a platelet-fibrin thrombus"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c067
+  section: high-yield
+  statement: "Turbulent flow denudes the valve endothelium, sterile platelet-fibrin deposits form, and bacteria colonize them"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c068
+  section: high-yield
+  statement: "Infected emboli cause infarcts and abscesses in organs such as the brain and spleen"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c069
+  section: high-yield
+  statement: "Immune complex glomerulonephritis can complicate endocarditis and gives flea-bitten kidneys"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c070
+  section: high-yield
+  statement: "Valve destruction leading to heart failure is the commonest serious complication"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c071
+  section: high-yield
+  statement: "Nonbacterial thrombotic endocarditis is sterile and does not destroy valves, though it grossly resembles infective endocarditis"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c072
+  section: traps
+  statement: "The acute versus subacute scheme is the older classification; infectious endocarditis is now classified by anatomic location and organism"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "669" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c073
+  section: traps
+  statement: "Valves that look normal can be infected by aggressive organisms like S. aureus"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c074
+  section: traps
+  statement: "Vegetations are found upstream of the closed valve"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c075
+  section: traps
+  statement: "Flea-bitten kidneys come from immune complexes lodging in the glomeruli"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "670" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c076
+  section: traps
+  statement: "Nonbacterial thrombotic endocarditis has sterile vegetations without microorganisms"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: infective-endocarditis-c077
+  section: mnemonics
+  statement: "Acute endocarditis is typified by S. aureus on normal valves, and subacute endocarditis by viridans streptococci on already damaged valves, often rheumatic ones"
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "669" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14

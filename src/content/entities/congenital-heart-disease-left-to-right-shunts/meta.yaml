@@ -1,0 +1,121 @@
+id: congenital-heart-disease-left-to-right-shunts
+module: o17
+tier: core
+kind: disease
+names:
+  it: "Cardiopatie congenite con shunt sinistro-destro"
+  en: "Congenital heart disease with left-to-right shunt"
+  eponyms: ["Eisenmenger complex"]
+  synonyms:
+    it: ["Cardiopatie congenite cianotiche tardive"]
+    en: ["Cyanose tardive group"]
+  abbreviations: [VSD, ASD, PDA, AVSD]
+summary:
+  it: "Malformazioni cardiache presenti alla nascita (difetti del setto interventricolare e interatriale, dotto arterioso pervio, canale atrioventricolare) in cui il sangue passa dal lato sinistro, a pressione maggiore, a quello destro e che possono invertire lo shunt tardivamente (Eisenmenger)."
+  en: "Heart malformations present at birth (ventricular and atrial septal defects, patent ductus arteriosus, AV canal) in which blood flows from the higher-pressure left side to the right and which can later reverse the shunt (Eisenmenger)."
+lenses:
+  system: [heart]
+  process: [thrombosis-embolism]
+  pattern: [hypertrophy]
+  presentation: [dyspnea]
+  marker: []
+  group: [developmental, genetic]
+learningObjectives:
+  - it: "Definire le cardiopatie congenite con shunt sinistro-destro e distinguerle dai gruppi cianotico e privo di shunt."
+    en: "Define left-to-right shunt congenital heart disease and distinguish it from the cyanotic and no-shunt groups."
+  - it: "Descrivere sede e aspetto di DIV, DIA, dotto arterioso pervio e canale atrioventricolare."
+    en: "Describe the site and appearance of VSD, ASD, patent ductus arteriosus and AV canal."
+  - it: "Spiegare come l'aumento delle resistenze vascolari polmonari inverta lo shunt (Eisenmenger) e provochi cianosi tardiva."
+    en: "Explain how rising pulmonary vascular resistance reverses the shunt (Eisenmenger) and causes late cyanosis."
+  - it: "Elencare le complicanze principali, compresa l'embolia paradossa, e le opzioni di trattamento."
+    en: "List the main complications, including paradoxical embolism, and the treatment options."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: congenital-heart-disease-cyanotic-and-obstructive
+    note:
+      it: "Shunt inizialmente sinistro-destro contro shunt destro-sinistro permanente o assenza di shunt."
+      en: "Initial left-to-right shunt versus a permanent right-to-left shunt or no shunt."
+  - type: causes
+    target: pulmonary-hypertension
+    note:
+      it: "L'eccesso di flusso polmonare aumenta le resistenze vascolari polmonari."
+      en: "Excess pulmonary flow raises pulmonary vascular resistance."
+quickCheck:
+  - id: congenital-heart-disease-left-to-right-shunts-q1
+    q:
+      it: "Perché lo shunt di un DIV si inverte dopo anni?"
+      en: "Why does the shunt of a VSD reverse after years?"
+    a:
+      it: "L'eccesso di flusso polmonare ispessisce le arterie polmonari e aumenta le resistenze; quando la pressione ventricolare destra supera la sinistra, il sangue passa da destra a sinistra (Eisenmenger)."
+      en: "Excess pulmonary flow thickens the pulmonary arteries and raises resistance; when right ventricular pressure exceeds the left, blood flows right to left (Eisenmenger)."
+    kind: short
+  - id: congenital-heart-disease-left-to-right-shunts-q2
+    q:
+      it: "Qual è la differenza tra DIA tipo ostium secundum e forame ovale pervio?"
+      en: "What is the difference between an ostium secundum ASD and a patent foramen ovale?"
+    a:
+      it: "Il difetto ostium secundum è una vera carenza del setto interatriale; il forame ovale pervio è una valvola a lembo che non si è saldata completamente."
+      en: "An ostium secundum defect is a true deficiency of the atrial septum; a patent foramen ovale is a flap valve that did not seal completely."
+    kind: short
+  - id: congenital-heart-disease-left-to-right-shunts-q3
+    q:
+      it: "Che cos'è un canale atrioventricolare completo e perché si forma?"
+      en: "What is a complete AV canal and why does it form?"
+    a:
+      it: "Una valvola atrioventricolare unica e condivisa con difetti del setto interatriale e interventricolare, dovuta alla mancata fusione dei cuscinetti endocardici atrioventricolari."
+      en: "One shared AV valve with atrial and ventricular septal defects, from failed fusion of the AV endocardial cushions."
+    kind: short
+  - id: congenital-heart-disease-left-to-right-shunts-q4
+    q:
+      it: "Perché in alcuni neonati si somministra prostaglandina E2 invece di chiudere il dotto?"
+      en: "Why is prostaglandin E2 given to some newborns instead of closing the ductus?"
+    a:
+      it: "Perché in alcuni difetti cardiaci la sopravvivenza dipende da uno shunt attraverso il dotto, che va quindi mantenuto aperto."
+      en: "Because in some cardiac defects survival depends on a shunt through the ductus, which must be kept open."
+    kind: short
+selfExplain:
+  - it: "Perché un difetto con shunt sinistro-destro non dà cianosi all'inizio?"
+    en: "Why does a left-to-right shunt not cause cyanosis at first?"
+  - it: "Perché un forame ovale pervio può causare un'embolia paradossa?"
+    en: "Why can a patent foramen ovale cause a paradoxical embolism?"
+chain:
+  - pathology:
+      it: "DIV ampio con shunt sinistro-destro prolungato e aumento delle resistenze polmonari"
+      en: "Large VSD with long-standing left-to-right shunt and rising pulmonary resistance"
+    sign:
+      it: "Cianosi tardiva e ipertrofia ventricolare destra dopo inversione dello shunt"
+      en: "Late cyanosis and right ventricular hypertrophy after shunt reversal"
+    lab:
+      it: "Non trattato nelle pagine di riferimento"
+      en: "Not covered in the reference pages"
+examQuestions:
+  - it: "Mi parli delle cardiopatie congenite con shunt sinistro-destro: quali sono i difetti principali e che cosa li accomuna?"
+    en: "Tell me about left-to-right shunt congenital heart disease: which are the main defects and what do they have in common?"
+    focus: [definition, gross]
+    level: 1
+  - it: "Perché in un difetto del setto interventricolare ampio lo shunt può invertirsi e comparire cianosi?"
+    en: "Why can the shunt of a large ventricular septal defect reverse and cause cyanosis?"
+    focus: [pathogenesis, clinical]
+    level: 2
+  - it: "Come distingue un difetto interatriale ostium secundum da un forame ovale pervio?"
+    en: "How do you tell an ostium secundum ASD from a patent foramen ovale?"
+    focus: [gross, differential]
+    level: 3
+  - it: "Mi parli del dotto arterioso pervio: aspetto, conseguenze e trattamento."
+    en: "Tell me about patent ductus arteriosus: appearance, consequences and treatment."
+    focus: [gross, clinical, prognosis]
+    level: 1
+  - it: "Che cosa vede in un canale atrioventricolare completo e in quale condizione genetica è frequente?"
+    en: "What do you see in a complete AV canal, and in which genetic condition is it frequent?"
+    focus: [gross, etiology]
+    level: 2
+images: []
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "17"
+    pages: "642-647"
+lastUpdated: 2026-11-14
+status: published

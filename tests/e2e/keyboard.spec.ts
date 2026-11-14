@@ -220,7 +220,7 @@ test('focus rings are drawn whole inside pill groups, the chip strip and the cha
   const controls = ['[data-mode-btn="quick"]', '[data-mode-btn="full"]', '.lang-switch a'];
   if (width < 1024) controls.push('.section-toc a[href="#definition"]', '.section-toc a[href="#micro"]');
   // The side list scrolls when it is taller than the screen, so it clips too: its first and its longest entries.
-  else controls.push('.primary-nav .module-tree a[aria-current]', '.primary-nav .module-tree summary', '.section-toc a[href="#definition"]', '.section-toc a[href="#ancillary"]');
+  else controls.push('.primary-nav .module-tree a[aria-current]', '.primary-nav .module-tree .chapters > li > a', '.section-toc a[href="#definition"]', '.section-toc a[href="#ancillary"]');
   for (const sel of controls) {
     await page.keyboard.press('Shift+Tab'); // keyboard modality: programmatic focus then matches :focus-visible
     await page.locator(sel).first().focus();

@@ -37,6 +37,7 @@ export const TOOLS = {
 /** Dollars (API price) a stage may spend: a lean turn costs cents, so a stage past this has lost its way. */
 export const BUDGET = { author: 4, translator: 2, verifier: 3, fixer: 3, distance: 4, questions: 2, scout: 3, sources: 2, coder: 5, auditor: 2 };
 const TIMEOUT_MS = 25 * 60_000;
+const KILL_AFTER_MS = 15_000;
 
 export function promptFor(id, stage, note = '') {
   return [
@@ -135,22 +136,27 @@ export function violations(before, after, id, stage, siblings = []) {
 }
 
 /** Runs a command without a stdin, with a wall-clock limit; resolves { status, stdout, stderr } and never rejects. */
-export function execute(command, args, { cwd, timeoutMs = TIMEOUT_MS, env = process.env } = {}) {
+export function execute(command, args, { cwd, timeoutMs = TIMEOUT_MS, killAfterMs = KILL_AFTER_MS, env = process.env } = {}) {
   return new Promise((resolve) => {
     const child = spawn(command, args, { cwd, env, stdio: ['ignore', 'pipe', 'pipe'] });
     let stdout = '';
     let stderr = '';
-    const timer = setTimeout(() => child.kill('SIGTERM'), timeoutMs);
+    /** @type {ReturnType<typeof setTimeout> | undefined} */
+    let hard;
+    // SIGTERM at the limit; a child that ignores it gets SIGKILL (a hung agent held a batch for 45 minutes after its limit)
+    const timer = setTimeout(() => {
+      child.kill('SIGTERM');
+      hard = setTimeout(() => child.kill('SIGKILL'), killAfterMs);
+    }, timeoutMs);
+    const done = (/** @type {{ status: number, stdout: string, stderr: string }} */ result) => {
+      clearTimeout(timer);
+      clearTimeout(hard);
+      resolve(result);
+    };
     child.stdout.on('data', (d) => (stdout += d));
     child.stderr.on('data', (d) => (stderr += d));
-    child.on('error', (e) => {
-      clearTimeout(timer);
-      resolve({ status: 127, stdout, stderr: `${stderr}${e.message}` });
-    });
-    child.on('close', (status, signal) => {
-      clearTimeout(timer);
-      resolve({ status: status ?? (signal ? 124 : 1), stdout, stderr });
-    });
+    child.on('error', (e) => done({ status: 127, stdout, stderr: `${stderr}${e.message}` }));
+    child.on('close', (status, signal) => done({ status: status ?? (signal ? 124 : 1), stdout, stderr }));
   });
 }
 

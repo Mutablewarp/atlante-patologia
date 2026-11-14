@@ -1,0 +1,314 @@
+entity: hypertensive-heart-disease
+claims:
+- claimId: hypertensive-heart-disease-c001
+  section: definition
+  statement: "Hypertensive heart disease is cardiac damage caused by long-standing high blood pressure."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c002
+  section: definition
+  statement: "The heart first thickens to compensate for the pressure load and later fails."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c003
+  section: definition
+  statement: "Hypertension is the WHO label for a persistent systemic pressure that stays above 90 mm Hg diastolic or above 140 mm Hg systolic, or both."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c004
+  section: definition
+  statement: "In the 2017 US guideline, a diastolic pressure of 80-89 or a systolic pressure of 130-139 mm Hg marks stage 1 hypertension."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c005
+  section: definition
+  statement: "The 2017 ACC/AHA guideline defines stage 2 hypertension as 140 or more systolic or 90 or more diastolic."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c006
+  section: etiology
+  statement: "Increased systemic vascular resistance raises the wall stress the heart has to handle."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c007
+  section: etiology
+  statement: "Coronary atherosclerosis tends to be more severe in people with hypertension."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c008
+  section: pathogenesis
+  statement: "Concentric left ventricular hypertrophy is the heart's response to the extra workload of hypertension."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c009
+  section: pathogenesis
+  statement: "Myocardial hypertrophy normalizes the elevated wall stress."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c010
+  section: pathogenesis
+  statement: "Hypertrophy is useful only up to a ceiling; past it, extra muscle stops compensating."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c011
+  section: pathogenesis
+  statement: "Oxygen diffusing farther into a thicker myofiber may leave its center undersupplied, which may set the limit on useful hypertrophy."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c012
+  section: pathogenesis
+  statement: "Interstitial fibrosis that accompanies hypertrophy makes the left ventricle stiffer."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c013
+  section: gross
+  statement: "The cavity stays the same size although the septum and the left ventricular wall thicken evenly."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c014
+  section: gross
+  statement: "Hypertensive hearts weigh more than 350 g in women and more than 375 g in men."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c015
+  section: gross
+  statement: "The right ventricle is of normal size in hypertensive heart disease."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c016
+  section: micro
+  statement: "Hypertrophic myocardial cells are thicker than normal."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c017
+  section: micro
+  statement: "The nuclei of hypertrophic myocytes are large and boxcar-shaped."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c018
+  section: micro
+  statement: "The nuclei of hypertrophic myocytes are hyperchromatic."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c019
+  section: clinical
+  statement: "Hypertension most often impairs diastolic function, and this alone can lead to heart failure."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c020
+  section: clinical
+  statement: "A stiff, overworked ventricle with narrowed coronaries is more likely to fail or become ischemic, even infarct."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c021
+  section: clinical
+  statement: "The usual course without treatment ends in heart failure with eccentric hypertrophy."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c022
+  section: diagnosis
+  statement: "The label applies only when hypertension is the sole explanation found for cardiac enlargement."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c023
+  section: prognosis
+  statement: "Patients with untreated hypertension die mainly of heart failure."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c024
+  section: prognosis
+  statement: "Fatal intracerebral hemorrhage is a common outcome of hypertension."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c025
+  section: prognosis
+  statement: "Ruptured cerebral berry aneurysm is a common fatal outcome of hypertension."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c026
+  section: prognosis
+  statement: "Coronary atherosclerosis with myocardial infarction is a common fatal outcome of hypertension."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c027
+  section: prognosis
+  statement: "Dissecting aortic aneurysm is a common fatal outcome of hypertension."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c028
+  section: prognosis
+  statement: "Renal failure from nephrosclerosis is a further risk when hypertension is severe."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c029
+  section: differential
+  statement: "Pulmonary hypertension makes the right ventricle thick and dilated in cor pulmonale."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "664" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c030
+  section: differential
+  statement: "Coronary atherosclerosis tends to be worse in hypertensive people, so ischemic heart disease can coexist."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c031
+  section: high-yield
+  statement: "Hypertension produces concentric left ventricular hypertrophy without chamber dilation."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c032
+  section: high-yield
+  statement: "Hypertensive hearts typically weigh more than 350 g in women and more than 375 g in men."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c033
+  section: high-yield
+  statement: "Diastolic dysfunction is the functional problem hypertension most often causes."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c034
+  section: high-yield
+  statement: "Hypertrophic myocytes have large, boxcar-like nuclei."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c035
+  section: high-yield
+  statement: "Untreated hypertension kills chiefly through heart failure."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c036
+  section: traps
+  statement: "In hypertensive heart disease the left ventricular wall thickens uniformly without chamber enlargement."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c037
+  section: traps
+  statement: "The diagnosis requires that no cause other than hypertension explains the enlarged heart."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c038
+  section: traps
+  statement: "Hypertension more often causes diastolic than systolic dysfunction."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: hypertensive-heart-disease-c039
+  section: mnemonics
+  statement: "Key points: heart weight up, worse coronary atherosclerosis, concentric left ventricular hypertrophy, a limit to compensation followed by eccentric hypertrophy, and a stiff ventricle in diastole."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "663" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14

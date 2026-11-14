@@ -1,0 +1,102 @@
+id: arrhythmia-substrates-and-sudden-cardiac-death
+module: o17
+tier: core
+kind: concept
+editionDependent: false
+status: published
+lastUpdated: 2026-11-14
+reviewStatus: ai-generated-unreviewed
+names:
+  it: Substrati morfologici delle aritmie e morte cardiaca improvvisa
+  en: Morphological substrates of arrhythmia and sudden cardiac death
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: [SCD]
+summary:
+  it: Le aritmie letali nascono quando un substrato strutturale fisso, come una cicatrice o un'ipertrofia fibrotica, incontra un fattore scatenante transitorio, mentre alcune canalopatie colpiscono cuori strutturalmente normali.
+  en: Lethal arrhythmias arise when a fixed structural substrate, such as a scar or fibrotic hypertrophy, meets a transient trigger, while some channelopathies strike structurally normal hearts.
+learningObjectives:
+  - it: Distinguere substrato e fattore scatenante nella genesi delle aritmie letali.
+    en: Distinguish substrate from trigger in the genesis of lethal arrhythmias.
+  - it: Descrivere il sistema di conduzione e le vie accessorie.
+    en: Describe the conduction system and accessory pathways.
+  - it: Elencare le cause principali di morte improvvisa per fascia di età.
+    en: List the main causes of sudden death by age group.
+  - it: Riconoscere le canalopatie come causa di morte improvvisa in cuori normali.
+    en: Recognize channelopathies as a cause of sudden death in normal hearts.
+lenses:
+  system: [heart]
+  process: [repair-fibrosis]
+  pattern: [hypertrophy]
+  presentation: []
+  marker: []
+  group: [genetic, vascular]
+prerequisites: []
+relations:
+  - type: complicationOf
+    target: ischemic-heart-disease
+  - type: complicationOf
+    target: hypertrophic-cardiomyopathy
+  - type: complicationOf
+    target: arrhythmogenic-cardiomyopathy
+quickCheck:
+  - id: arrhythmia-substrates-and-sudden-cardiac-death-q1
+    q:
+      it: Perché un substrato da solo spesso non basta a causare un'aritmia letale?
+      en: Why is a substrate alone often not enough to cause a lethal arrhythmia?
+    a:
+      it: Serve di solito anche un fattore scatenante transitorio, come l'ischemia acuta.
+      en: A transient trigger, such as acute ischemia, is usually needed as well.
+    kind: short
+  - id: arrhythmia-substrates-and-sudden-cardiac-death-q2
+    q:
+      it: Qual è l'accoppiata più frequente di substrato e fattore scatenante?
+      en: What is the most common pairing of substrate and trigger?
+    a:
+      it: Ischemia acuta in un'area con un infarto guarito.
+      en: Acute ischemia in an area with a healed infarct.
+    kind: short
+  - id: arrhythmia-substrates-and-sudden-cardiac-death-q3
+    q:
+      it: Un cuore normale all'autopsia esclude una morte aritmica?
+      en: Does a normal heart at autopsy exclude an arrhythmic death?
+    a:
+      it: No, le canalopatie possono uccidere senza lesioni strutturali.
+      en: No, channelopathies can kill without a structural lesion.
+    kind: short
+selfExplain:
+  - it: Perché la morte improvvisa si verifica più spesso quando un'ischemia acuta colpisce un cuore con un infarto guarito?
+    en: Why does sudden death most often occur when acute ischemia strikes a heart with a healed infarct?
+  - it: Perché la diagnosi di morte aritmica non si esclude se il cuore appare normale?
+    en: Why is an arrhythmic death not ruled out when the heart looks normal?
+chain: []
+examQuestions:
+  - it: Mi parli del sistema di conduzione del cuore e delle vie accessorie.
+    en: Tell me about the conduction system of the heart and accessory pathways.
+    focus: [pathogenesis]
+    level: 1
+  - it: Perché un substrato strutturale da solo non basta, di solito, a causare un'aritmia letale?
+    en: Why is a structural substrate usually not enough, by itself, to cause a lethal arrhythmia?
+    focus: [pathogenesis, high-yield]
+    level: 2
+  - it: Come distingue le cause di morte improvvisa in un atleta giovane da quelle in un adulto dopo la mezza età?
+    en: How do you tell the causes of sudden death in a young athlete from those in an adult after midlife?
+    focus: [etiology]
+    level: 3
+  - it: Un cuore strutturalmente normale all'autopsia esclude una morte aritmica? Perché?
+    en: Does a structurally normal heart at autopsy exclude an arrhythmic death? Why?
+    focus: [diagnosis, pathogenesis]
+    level: 3
+  - it: Mi parli delle canalopatie come causa di morte cardiaca improvvisa.
+    en: Tell me about channelopathies as a cause of sudden cardiac death.
+    focus: [pathogenesis, clinical]
+    level: 2
+images:
+  - id: arrhythmia-substrates-and-sudden-cardiac-death-micro-1
+    role: micro
+sources:
+  - source: rubin-8e
+    chapter: "17"
+    pages: "635, 651, 688–689"

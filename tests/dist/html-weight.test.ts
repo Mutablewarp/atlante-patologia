@@ -7,8 +7,9 @@
  * Measured 2026-11-13 on 52 card pages: median 129 kB, heaviest 165.9 kB, gzip median 30 kB; the markup (total minus
  * text) fits 57.2 kB + 2.13 kB per panel, residuals -7 to +11 kB. Pattern and pathway pages: the measured maximum plus 5 %.
  *
- * The chapter index in the sidebar lists every published card, about 90 bytes each, so each new card adds that to every
- * card page, and the 66 kB absorbs only a few dozen more. See ARCHITECTURE §8 before raising a limit.
+ * The chapter index in the sidebar lists the cards of the current chapter and one link for every other chapter (D075): a
+ * new chapter adds about 120 bytes to every card page, a new card of the current chapter about 80. It used to list every card
+ * of every chapter, 117 bytes per card on every page, and broke this budget at 63 cards. See ARCHITECTURE §8 before raising a limit.
  */
 import { describe, expect, it } from 'vitest';
 import { textBytes } from '../../scripts/html-weight.mjs';

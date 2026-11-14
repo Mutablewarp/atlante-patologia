@@ -1,0 +1,120 @@
+id: mitral-valve-prolapse
+module: o17
+tier: core
+kind: disease
+names:
+  it: "Prolasso della valvola mitrale"
+  en: "Mitral valve prolapse"
+  eponyms: []
+  synonyms:
+    it: ["Sindrome della valvola mitrale floscia"]
+    en: ["Floppy mitral valve syndrome"]
+  abbreviations: ["MVP"]
+summary:
+  it: "Alterazione della valvola mitrale in cui i lembi, ridondanti per degenerazione mixomatosa, si protrudono nell'atrio sinistro durante la sistole; di solito è asintomatica, ma può causare rigurgito."
+  en: "A mitral valve disorder in which leaflets made redundant by myxomatous degeneration billow into the left atrium in systole; usually asymptomatic, but it can cause regurgitation."
+lenses:
+  system: [heart]
+  process: [extracellular-accumulation]
+  pattern: []
+  presentation: [incidental-finding]
+  marker: []
+  group: [degenerative, genetic]
+learningObjectives:
+  - it: "Descrivere l'aspetto macroscopico e microscopico della valvola mitrale floscia: lembi ridondanti, corde allungate, tessuto mixomatoso nella spongiosa."
+    en: "Describe the gross and microscopic appearance of a floppy mitral valve: redundant leaflets, elongated chordae, myxomatous tissue in the spongiosa."
+  - it: "Distinguere le forme primarie (non sindromiche) da quelle secondarie (sindromiche) e citare il ruolo del TGFβ."
+    en: "Distinguish primary (nonsyndromic) from secondary (syndromic) forms and state the role of TGFβ."
+  - it: "Elencare le complicanze: rigurgito significativo, endocardite, rottura delle corde con valvola flail, morte improvvisa."
+    en: "List the complications: significant regurgitation, endocarditis, chordal rupture with a flail valve, sudden death."
+  - it: "Spiegare come la disfunzione dei muscoli papillari, di solito ischemica, causa rigurgito mitralico."
+    en: "Explain how papillary muscle dysfunction, usually ischemic, causes mitral regurgitation."
+prerequisites: []
+relations:
+  - type: mimics
+    target: ischemic-heart-disease
+    note:
+      it: "La disfunzione ischemica dei muscoli papillari è un'altra causa di rigurgito mitralico."
+      en: "Ischemic papillary muscle dysfunction is another cause of mitral regurgitation."
+  - type: sharesMechanism
+    target: marfan-syndrome
+    note:
+      it: "Oltre il 90% dei pazienti con sindrome di Marfan ha prolasso mitralico; è coinvolto il TGFβ."
+      en: "More than 90% of patients with Marfan syndrome have prolapse; TGFβ signaling is involved."
+  - type: causes
+    target: infective-endocarditis
+    note:
+      it: "L'endocardite è una complicanza potenzialmente grave."
+      en: "Endocarditis is a potentially serious complication."
+quickCheck:
+  - id: mitral-valve-prolapse-q1
+    q:
+      it: "Quale strato del lembo valvolare contiene il tessuto mixomatoso nel prolasso mitralico?"
+      en: "Which layer of the leaflet holds the myxomatous tissue in mitral valve prolapse?"
+    a:
+      it: "La spongiosa, lo strato intermedio del lembo, dove si accumulano proteoglicani."
+      en: "The spongiosa, the middle layer of the leaflet, where proteoglycans accumulate."
+    kind: short
+  - id: mitral-valve-prolapse-q2
+    q:
+      it: "Che cos'è una valvola mitrale flail e come si forma?"
+      en: "What is a flail mitral valve and how does it form?"
+    a:
+      it: "Una valvola totalmente incompetente, dovuta alla rottura di più corde tendinee danneggiate."
+      en: "A totally incompetent valve caused by rupture of several damaged chordae tendineae."
+    kind: short
+  - id: mitral-valve-prolapse-q3
+    q:
+      it: "Qual è la causa più frequente di disfunzione dei muscoli papillari e perché questi muscoli sono vulnerabili?"
+      en: "What most often causes papillary muscle dysfunction, and why are these muscles vulnerable?"
+    a:
+      it: "L'ischemia: sono irrorati da rami terminali di arterie coronarie intramiocardiche."
+      en: "Ischemia: they are supplied by terminal branches of intramyocardial coronary arteries."
+    kind: short
+selfExplain:
+  - it: "Perché la degenerazione mixomatosa di lembi e corde porta a rigurgito mitralico?"
+    en: "Why does myxomatous degeneration of leaflets and chordae lead to mitral regurgitation?"
+  - it: "Perché un breve episodio di angina può causare un rigurgito mitralico temporaneo?"
+    en: "Why can a brief episode of angina cause temporary mitral regurgitation?"
+chain:
+  - pathology:
+      it: "Lembi mitralici ridondanti che prolassano nell'atrio sinistro"
+      en: "Redundant mitral leaflets prolapsing into the left atrium"
+    sign:
+      it: "Click mesosistolico o telesistolico, soffio telesistolico se c'è rigurgito"
+      en: "Mid- to late-systolic click, late-systolic murmur if regurgitation is present"
+    lab:
+      it: "Ecocardiografia: prolasso dei lembi"
+      en: "Echocardiography: leaflet prolapse"
+examQuestions:
+  - it: "Mi parli del prolasso della valvola mitrale: che cosa vede al microscopio nella valvola floscia?"
+    en: "Tell me about mitral valve prolapse: what do you see under the microscope in a floppy valve?"
+    focus: [definition, micro]
+    level: 1
+  - it: "Quali sono le complicanze del prolasso mitralico?"
+    en: "What are the complications of mitral valve prolapse?"
+    focus: [prognosis]
+    level: 1
+  - it: "Perché nella sindrome di Marfan il prolasso mitralico è così frequente, e che ruolo ha il TGFβ?"
+    en: "Why is mitral valve prolapse so common in Marfan syndrome, and what is the role of TGFβ?"
+    focus: [etiology, pathogenesis]
+    level: 2
+  - it: "Perché una breve crisi di angina può causare un rigurgito mitralico temporaneo?"
+    en: "Why can a brief episode of angina cause temporary mitral regurgitation?"
+    focus: [differential]
+    level: 2
+  - it: "Come distingue il prolasso mitralico mixomatoso dalla disfunzione ischemica dei muscoli papillari e dalla calcificazione dell'anello mitralico come cause di rigurgito?"
+    en: "How do you tell myxomatous mitral prolapse from ischemic papillary muscle dysfunction and from mitral annulus calcification as causes of regurgitation?"
+    focus: [gross, differential]
+    level: 3
+images:
+  - id: mitral-valve-prolapse-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "17"
+    pages: "672-673"
+lastUpdated: 2026-11-14
+status: published

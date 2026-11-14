@@ -1,0 +1,120 @@
+id: rheumatic-heart-disease
+module: o17
+tier: core
+kind: disease
+names:
+  it: "Febbre reumatica e cardiopatia reumatica"
+  en: "Rheumatic fever and rheumatic heart disease"
+  eponyms: []
+  synonyms:
+    it: ["Cardite reumatica"]
+    en: ["Rheumatic carditis"]
+  abbreviations: ["RF"]
+summary:
+  it: "Malattia infiammatoria autoimmune che compare 2-3 settimane dopo un'infezione da streptococco beta-emolitico di gruppo A e causa una pancardite acuta, con corpi di Aschoff, e poi una deformazione valvolare cronica, soprattutto stenosi mitralica."
+  en: "Autoimmune inflammatory disease that appears 2 to 3 weeks after a group A beta-hemolytic streptococcal infection and causes an acute pancarditis with Aschoff bodies, then chronic valve deformity, above all mitral stenosis."
+lenses:
+  system: [heart]
+  process: [hypersensitivity, acute-inflammation, repair-fibrosis]
+  pattern: [granuloma, necrosis-fibrinoid, dystrophic-calcification]
+  presentation: [fever, dyspnea]
+  marker: [laboratory]
+  group: [immune, inflammatory]
+learningObjectives:
+  - it: "Spiegare come un'infezione streptococcica faringea porti a danno cardiaco attraverso il mimetismo molecolare."
+    en: "Explain how a streptococcal throat infection leads to heart damage through molecular mimicry."
+  - it: "Descrivere il corpo di Aschoff e le cellule di Anitschkow e dire in quale fase compaiono."
+    en: "Describe the Aschoff body and Anitschkow cells and say at which stage they appear."
+  - it: "Distinguere gli aspetti della pancardite acuta (verruche, pericardite fibrinosa) da quelli cronici (stenosi mitralica a bocca di pesce)."
+    en: "Tell the acute pancarditis (verrucae, fibrinous pericarditis) from the chronic changes (fish-mouth mitral stenosis)."
+  - it: "Applicare i criteri di Jones e ricordare le complicanze della cardiopatia reumatica cronica."
+    en: "Apply the Jones criteria and recall the complications of chronic rheumatic heart disease."
+prerequisites: []
+relations:
+  - type: sharesMechanism
+    target: autoimmunity
+    note:
+      it: "Risposta immune diretta contro antigeni dell'ospite per mimetismo molecolare."
+      en: "Immune response against host antigens through molecular mimicry."
+  - type: differentialOf
+    target: systemic-lupus-erythematosus
+    note:
+      it: "Vegetazioni di Libman-Sacks sul lato atriale della mitrale, contro verruche lungo le linee di chiusura."
+      en: "Libman-Sacks vegetations on the atrial side of the mitral valve, versus verrucae along the closure lines."
+  - type: prerequisiteOf
+    target: infective-endocarditis
+    note:
+      it: "Le valvole cicatriziali reumatiche sono un sito favorevole all'endocardite batterica."
+      en: "Scarred rheumatic valves are a favorable site for bacterial endocarditis."
+quickCheck:
+  - id: rheumatic-heart-disease-q1
+    q:
+      it: "Perché i sintomi della febbre reumatica compaiono quando la coltura faringea è in genere già negativa?"
+      en: "Why do the symptoms of rheumatic fever appear when the throat culture is usually already negative?"
+    a:
+      it: "Perché il danno deriva da una reazione immune crociata che si sviluppa 2-3 settimane dopo l'infezione, non dalla presenza dello streptococco nel cuore."
+      en: "Because the damage comes from a cross-reactive immune response that develops 2 to 3 weeks after the infection, not from streptococci in the heart."
+    kind: short
+  - id: rheumatic-heart-disease-q2
+    q:
+      it: "Quali tre strati cardiaci coinvolge la cardite reumatica acuta e quale lesione valvolare macroscopica produce?"
+      en: "Which three cardiac layers does acute rheumatic carditis involve, and which gross valve lesion does it produce?"
+    a:
+      it: "Endocardio, miocardio e pericardio (pancardite); le verruche, piccoli noduli di fibrina lungo le linee di chiusura dei lembi."
+      en: "Endocardium, myocardium and pericardium (pancarditis); verrucae, tiny fibrin nodules along the leaflet closure lines."
+    kind: short
+  - id: rheumatic-heart-disease-q3
+    q:
+      it: "Quale valvola è colpita più spesso nella forma cronica e che aspetto ha nella stenosi grave?"
+      en: "Which valve is most often affected in the chronic form, and what does it look like in severe stenosis?"
+    a:
+      it: "La mitrale; l'orifizio diventa una fessura fissa a bocca di pesce, con commissure e corde tendinee fuse."
+      en: "The mitral valve; the orifice becomes a fixed fish-mouth slit with fused commissures and chordae."
+    kind: short
+selfExplain:
+  - it: "Perché la valvola mitrale subisce il danno più grave rispetto alle valvole destre?"
+    en: "Why does the mitral valve suffer worse damage than the right-sided valves?"
+  - it: "Perché le valvole reumatiche cicatriziali sono esposte all'endocardite batterica?"
+    en: "Why are scarred rheumatic valves exposed to bacterial endocarditis?"
+chain:
+  - pathology:
+      it: "Corpi di Aschoff e verruche da cardite reumatica acuta"
+      en: "Aschoff bodies and verrucae from acute rheumatic carditis"
+    sign:
+      it: "Soffio cardiaco, cardiomegalia, poliartrite"
+      en: "Cardiac murmur, cardiomegaly, polyarthritis"
+    lab:
+      it: "Aumento del titolo anti-streptolisina O, VES e PCR elevate"
+      en: "Rising antistreptolysin O titer, raised ESR and CRP"
+examQuestions:
+  - it: "Che cosa vede al microscopio nel miocardio di una cardite reumatica, e come cambia l'aspetto del corpo di Aschoff nel tempo?"
+    en: "What do you see under the microscope in the myocardium in rheumatic carditis, and how does the Aschoff body change over time?"
+    focus: [micro]
+    level: 1
+  - it: "Mi parli della pancardite reumatica acuta: quali strati cardiaci coinvolge e quali lesioni macroscopiche, comprese le verruche, produce?"
+    en: "Tell me about acute rheumatic pancarditis: which cardiac layers does it involve, and which gross lesions, including verrucae, does it produce?"
+    focus: [gross, high-yield]
+    level: 1
+  - it: "Mi parli della stenosi mitralica cronica reumatica: come si arriva a questo quadro e che aspetto ha la valvola?"
+    en: "Tell me about chronic rheumatic mitral stenosis: how does it come about, and what does the valve look like?"
+    focus: [gross, prognosis]
+    level: 2
+  - it: "Perché la febbre reumatica compare settimane dopo l'infezione streptococcica, e come si fa la diagnosi se non esiste un test specifico?"
+    en: "Why does rheumatic fever appear weeks after the streptococcal infection, and how is it diagnosed when no test is specific?"
+    focus: [pathogenesis, clinical, diagnosis]
+    level: 2
+  - it: "Come distingue le verruche reumatiche dalle vegetazioni di Libman-Sacks, e che rapporto c'è tra le valvole reumatiche cicatriziali e l'endocardite batterica?"
+    en: "How do you tell rheumatic verrucae from Libman-Sacks vegetations, and how do scarred rheumatic valves relate to bacterial endocarditis?"
+    focus: [prognosis, differential]
+    level: 3
+images:
+  - id: rheumatic-heart-disease-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "17"
+    pages: "665-668"
+lastUpdated: 2026-11-14
+status: published

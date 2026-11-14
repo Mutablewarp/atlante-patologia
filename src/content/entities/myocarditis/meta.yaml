@@ -1,0 +1,137 @@
+id: myocarditis
+module: o17
+tier: core
+kind: disease
+names:
+  it: "Miocardite"
+  en: "Myocarditis"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: []
+summary:
+  it: "Infiammazione del miocardio con necrosi dei miociti, esclusa la cardiopatia ischemica; le cause più frequenti sono virali, ma esistono forme da ipersensibilità, a cellule giganti e sarcoidea."
+  en: "Inflammation of the myocardium with myocyte necrosis, excluding ischemic heart disease; viruses are the commonest cause, but hypersensitivity, giant cell and sarcoid forms exist."
+lenses:
+  system: [heart]
+  process: [acute-inflammation, chronic-inflammation, granulomatous-inflammation, hypersensitivity, cell-death]
+  pattern: [granuloma, necrosis-coagulative]
+  presentation: [chest-pain, incidental-finding]
+  marker: [molecular]
+  group: [inflammatory, infectious, immune]
+learningObjectives:
+  - it: "Definire la miocardite e distinguerla dalla cardiopatia ischemica."
+    en: "Define myocarditis and distinguish it from ischemic heart disease."
+  - it: "Elencare le cause infettive e non infettive, con i virus più frequenti."
+    en: "List the infectious and noninfectious causes, with the most frequent viruses."
+  - it: "Descrivere le due fasi della miocardite virale e il loro quadro istologico."
+    en: "Describe the two phases of viral myocarditis and their histology."
+  - it: "Riconoscere le forme da ipersensibilità, a cellule giganti e sarcoidea in base all'infiltrato."
+    en: "Recognize the hypersensitivity, giant cell and sarcoid forms from the infiltrate."
+  - it: "Spiegare il ruolo e i limiti della biopsia endomiocardica e le complicanze principali."
+    en: "Explain the role and limits of endomyocardial biopsy and the main complications."
+prerequisites: []
+relations:
+  - type: causes
+    target: dilated-cardiomyopathy
+    note:
+      it: "Una mancata eliminazione del virus o un'attivazione immunitaria persistente possono portare a cardiomiopatia dilatativa."
+      en: "Failed viral clearance or persistent immune activation can lead to dilated cardiomyopathy."
+  - type: mimics
+    target: myocardial-infarction
+    note:
+      it: "Una necrosi estesa può somigliare a un infarto acuto; la miocardite da ipersensibilità può dare dolore toracico e ECG da ischemia."
+      en: "Extensive necrosis can resemble an acute infarct; hypersensitivity myocarditis can give chest pain and ischemic ECG changes."
+  - type: sameLesionOtherOrgan
+    target: sarcoidosis
+    note:
+      it: "La sarcoidosi cardiaca è una miocardite granulomatosa."
+      en: "Cardiac sarcoidosis is a granulomatous myocarditis."
+  - type: complicationOf
+    target: infective-endocarditis
+    note:
+      it: "Emboli settici dell'endocardite possono dare microascessi miocardici."
+      en: "Septic emboli from endocarditis can cause myocardial microabscesses."
+quickCheck:
+  - id: myocarditis-q1
+    q:
+      it: "Perché i bambini sono particolarmente colpiti dalla miocardite da coxsackievirus?"
+      en: "Why are children particularly affected by coxsackievirus myocarditis?"
+    a:
+      it: "Il recettore CAR, usato da coxsackievirus e adenovirus per entrare nei miociti, è particolarmente abbondante nei bambini."
+      en: "The CAR receptor, which coxsackievirus and adenovirus use to enter myocytes, is especially abundant in children."
+    kind: short
+  - id: myocarditis-q2
+    q:
+      it: "Quale infiltrato fa pensare a una miocardite da ipersensibilità, e che cosa manca di solito?"
+      en: "Which infiltrate suggests hypersensitivity myocarditis, and what is usually absent?"
+    a:
+      it: "Un infiltrato ricco di eosinofili, interstiziale e perivascolare; di solito manca la necrosi dei miociti."
+      en: "An eosinophil-rich, interstitial and perivascular infiltrate; myocyte necrosis is usually absent."
+    kind: short
+  - id: myocarditis-q3
+    q:
+      it: "Come si distinguono la miocardite a cellule giganti e la sarcoidosi cardiaca?"
+      en: "How do giant cell myocarditis and cardiac sarcoidosis differ?"
+    a:
+      it: "La miocardite a cellule giganti ha molte cellule giganti ma nessun granuloma; la sarcoidosi ha granulomi non caseosi."
+      en: "Giant cell myocarditis has many giant cells but no granulomas; sarcoidosis has noncaseating granulomas."
+    kind: short
+  - id: myocarditis-q4
+    q:
+      it: "Che cosa serve per affermare che una miocardite è davvero virale?"
+      en: "What is needed to call a myocarditis truly viral?"
+    a:
+      it: "Servono studi speciali che trovino genomi virali nel tessuto della biopsia cardiaca; altrimenti la causa virale resta indiretta."
+      en: "Special studies must find viral genomes in heart biopsy tissue; otherwise the viral cause stays circumstantial."
+    kind: short
+  - id: myocarditis-q5
+    q:
+      it: "Come si gestisce una miocardite da ipersensibilità sintomatica?"
+      en: "How is symptomatic hypersensitivity myocarditis managed?"
+    a:
+      it: "Si sospende il farmaco responsabile e si possono aggiungere corticosteroidi o altri immunosoppressori."
+      en: "The offending drug is withdrawn, and corticosteroids or other immunosuppressants may be added."
+    kind: short
+selfExplain:
+  - it: "Perché la sarcoidosi del setto interventricolare basale causa blocco di branca o blocco cardiaco completo?"
+    en: "Why does sarcoidosis at the base of the interventricular septum cause bundle branch block or complete heart block?"
+  - it: "Perché nella prima fase della miocardite virale c'è poca infiammazione nonostante il danno miocitario?"
+    en: "Why is there little inflammation in the first phase of viral myocarditis despite myocyte damage?"
+  - it: "Perché la sola istologia può non bastare a distinguere una miocardite virale da una tossica?"
+    en: "Why may histology alone fail to tell viral myocarditis from toxic myocarditis?"
+examQuestions:
+  - it: "Mi parli delle cause infettive di miocardite: quali virus e quali altri agenti conosce?"
+    en: "Tell me about the infectious causes of myocarditis: which viruses and which other agents do you know?"
+    focus: [etiology, micro]
+    level: 1
+  - it: "Come distingue una miocardite da ipersensibilità, una a cellule giganti e una sarcoidea?"
+    en: "How do you tell hypersensitivity, giant cell and sarcoid myocarditis apart?"
+    focus: [micro, differential]
+    level: 3
+  - it: "Che cosa vede al microscopio in una miocardite virale, e in quale fase?"
+    en: "What do you see under the microscope in viral myocarditis, and in which phase?"
+    focus: [pathogenesis, micro]
+    level: 2
+  - it: "Perché la causa virale di una miocardite resta spesso solo presunta, e quando l'immunosoppressione può essere utile in base alla biopsia?"
+    en: "Why is the viral cause of myocarditis often only presumed, and when may immunosuppression help according to the biopsy?"
+    focus: [etiology, ancillary]
+    level: 2
+  - it: "Quali complicanze può avere una miocardite e perché la forma a cellule giganti è temibile?"
+    en: "What complications can myocarditis have, and why is the giant cell form so dangerous?"
+    focus: [prognosis, clinical]
+    level: 3
+images:
+  - id: myocarditis-micro-1
+    role: micro
+  - id: myocarditis-micro-2
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "17"
+    pages: "674-676"
+lastUpdated: 2026-11-14
+status: published

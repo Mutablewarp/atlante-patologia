@@ -1,0 +1,129 @@
+id: calcific-aortic-stenosis
+module: o17
+tier: core
+kind: disease
+names:
+  it: "Stenosi aortica calcifica"
+  en: "Calcific aortic stenosis"
+  eponyms: []
+  synonyms:
+    it: ["Stenosi aortica degenerativa", "Stenosi aortica senile"]
+    en: ["Degenerative aortic stenosis", "Senile calcific aortic stenosis"]
+  abbreviations: ["AS"]
+summary:
+  it: "Restringimento dell'orifizio della valvola aortica per deposizione di calcio nei lembi, su valvola degenerata, bicuspide o reumatica, con ipertrofia concentrica del ventricolo sinistro."
+  en: "Narrowing of the aortic valve orifice from calcium deposited in the cusps, on a degenerative, bicuspid or rheumatic valve, with concentric left ventricular hypertrophy."
+lenses:
+  system: [heart]
+  process: [pathologic-calcification, cellular-adaptation]
+  pattern: [dystrophic-calcification, hypertrophy]
+  presentation: []
+  marker: []
+  group: [degenerative]
+learningObjectives:
+  - it: "Elencare le tre condizioni in cui si sviluppa la stenosi aortica calcifica: reumatica, degenerativa e su valvola bicuspide."
+    en: "List the three settings of calcific aortic stenosis: rheumatic, degenerative and bicuspid."
+  - it: "Distinguere la valvola reumatica da quella degenerativa o bicuspide in base alla fusione commissurale."
+    en: "Tell a rheumatic valve from a degenerative or bicuspid one by commissural fusion."
+  - it: "Descrivere la calcificazione come processo attivo e spiegare perché le statine non la prevengono."
+    en: "Describe calcification as an active process and explain why statins do not prevent it."
+  - it: "Collegare la stenosi grave all'ipertrofia concentrica del ventricolo sinistro e alla sua evoluzione."
+    en: "Link severe stenosis to concentric left ventricular hypertrophy and its evolution."
+  - it: "Riconoscere la calcificazione dell'anulus mitralico come reperto diverso e di solito silente."
+    en: "Recognize mitral annular calcification as a different, usually silent finding."
+prerequisites: [hypertrophy]
+relations:
+  - type: differentialOf
+    target: rheumatic-heart-disease
+    note:
+      it: "La valvola reumatica ha commissure fuse; quella degenerativa o bicuspide no."
+      en: "The rheumatic valve has fused commissures; the degenerative or bicuspid one does not."
+  - type: sharesMechanism
+    target: atherosclerosis
+    note:
+      it: "Meccanismi e fattori di rischio simili (LDL, infiammazione), ma le statine non prevengono la stenosi."
+      en: "Similar mechanisms and risk factors (LDL, inflammation), but statins do not prevent the stenosis."
+  - type: causes
+    target: cardiac-hypertrophy-and-heart-failure
+    note:
+      it: "La stenosi grave causa ipertrofia ventricolare sinistra e infine scompenso."
+      en: "Severe stenosis causes left ventricular hypertrophy and eventually failure."
+quickCheck:
+  - id: calcific-aortic-stenosis-q1
+    q:
+      it: "Quali sono le tre condizioni in cui si sviluppa la stenosi aortica calcifica?"
+      en: "What are the three settings in which calcific aortic stenosis develops?"
+    a:
+      it: "Malattia reumatica della valvola aortica, degenerazione senile di una valvola tricuspide e valvola bicuspide congenita."
+      en: "Rheumatic aortic valve disease, senile degeneration of a tricuspid valve, and a congenital bicuspid valve."
+    kind: short
+  - id: calcific-aortic-stenosis-q2
+    q:
+      it: "Quale reperto macroscopico fa pensare a una causa reumatica?"
+      en: "Which gross finding points to a rheumatic cause?"
+    a:
+      it: "La fusione delle commissure, assente nella forma degenerativa e nella valvola bicuspide."
+      en: "Fused commissures, absent in the degenerative form and in the bicuspid valve."
+    kind: short
+  - id: calcific-aortic-stenosis-q3
+    q:
+      it: "La calcificazione della valvola aortica è un semplice deposito passivo?"
+      en: "Is aortic valve calcification simple passive deposition?"
+    a:
+      it: "No. Cellule valvolari vive la guidano attivamente, con un fenotipo simile a quello degli osteoblasti."
+      en: "No. Living valve cells drive it actively, taking on an osteoblast-like phenotype."
+    kind: short
+  - id: calcific-aortic-stenosis-q4
+    q:
+      it: "Che cosa provoca nel ventricolo sinistro una stenosi aortica grave?"
+      en: "What does severe aortic stenosis do to the left ventricle?"
+    a:
+      it: "Una marcata ipertrofia concentrica; alla fine il ventricolo si dilata e va in insufficienza."
+      en: "Marked concentric hypertrophy; eventually the ventricle dilates and fails."
+    kind: short
+  - id: calcific-aortic-stenosis-q5
+    q:
+      it: "Quanto conta di solito la calcificazione dell'anulus mitralico dal punto di vista funzionale?"
+      en: "How much does mitral annular calcification usually matter functionally?"
+    a:
+      it: "Raramente crea problemi funzionali, anche se è frequente negli anziani."
+      en: "It rarely causes functional trouble, although it is common among the elderly."
+    kind: short
+selfExplain:
+  - it: "Perché una valvola bicuspide, non stenotica alla nascita, può diventare stenotica con l'età?"
+    en: "Why can a bicuspid valve, not stenotic at birth, become stenotic with age?"
+  - it: "Perché una valvola aortica strutturalmente normale può calcificare dopo una lunga esposizione al flusso turbolento?"
+    en: "Why can a structurally normal aortic valve calcify after long exposure to turbulent flow?"
+chain: []
+examQuestions:
+  - it: "Mi parli della stenosi aortica calcifica: in quali condizioni si sviluppa e come si distinguono la forma degenerativa, quella su valvola bicuspide e quella reumatica?"
+    en: "Tell me about calcific aortic stenosis: in which settings does it develop, and how do the degenerative, bicuspid and rheumatic forms differ?"
+    focus: [etiology, gross, differential]
+    level: 1
+  - it: "Che cosa vede in una valvola aortica con stenosi calcifica e dove si trovano i noduli di calcio sui lembi?"
+    en: "What do you see in a calcific stenotic aortic valve, and where do the calcium nodules sit on the cusps?"
+    focus: [gross, micro]
+    level: 1
+  - it: "Perché una valvola bicuspide, non stenotica alla nascita, può diventare stenotica con gli anni?"
+    en: "Why can a bicuspid valve, not stenotic at birth, become stenotic over the years?"
+    focus: [etiology, traps]
+    level: 2
+  - it: "Mi parli della calcificazione della valvola aortica: è un semplice deposito passivo o un processo attivo, e quali cellule vi partecipano?"
+    en: "Tell me about calcification of the aortic valve: is it simple passive deposition or an active process, and which cells take part?"
+    focus: [pathogenesis, traps]
+    level: 2
+  - it: "Come distingue la calcificazione dell'anulus mitralico dalla stenosi aortica calcifica, e quale rilevanza funzionale ha?"
+    en: "How do you tell mitral annular calcification from calcific aortic stenosis, and how much does it matter functionally?"
+    focus: [differential, traps]
+    level: 3
+images:
+  - id: calcific-aortic-stenosis-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "17"
+    pages: "650, 671-672"
+lastUpdated: 2026-11-14
+status: published

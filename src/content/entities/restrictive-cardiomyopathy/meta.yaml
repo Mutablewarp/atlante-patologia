@@ -1,0 +1,126 @@
+id: restrictive-cardiomyopathy
+module: o17
+tier: core
+kind: disease
+names:
+  it: "Cardiomiopatia restrittiva"
+  en: "Restrictive cardiomyopathy"
+  eponyms: []
+  synonyms:
+    it: ["Cardiomiopatia restrittiva primaria (idiopatica)"]
+    en: ["Primary (idiopathic) restrictive cardiomyopathy"]
+  abbreviations: ["RCM"]
+summary:
+  it: "Gruppo di malattie in cui i ventricoli, irrigiditi, si riempiono male in diastole mentre funzione sistolica e spessore parietale restano normali o quasi, con cause primarie (genetiche) e secondarie (amiloide, malattia endomiocardica, accumulo di ferro o di desmina, malattie da accumulo)."
+  en: "A group of diseases in which stiff ventricles fill poorly in diastole while systolic function and wall thickness stay normal or near normal, with primary (genetic) and secondary causes (amyloid, endomyocardial disease, iron or desmin accumulation, storage diseases)."
+lenses:
+  system: [heart]
+  process: [extracellular-accumulation, intracellular-accumulation, proteostasis]
+  pattern: [pigment-deposits]
+  presentation: [dyspnea, edema]
+  marker: [special-stains]
+  group: [genetic, metabolic]
+learningObjectives:
+  - it: "Definire la cardiomiopatia restrittiva come insufficienza diastolica con funzione sistolica e spessore parietale normali o quasi."
+    en: "Define restrictive cardiomyopathy as diastolic failure with normal or near-normal systolic function and wall thickness."
+  - it: "Distinguere la forma primaria (idiopatica) dalle forme secondarie: amiloidosi, malattia endomiocardica, emocromatosi, desminopatie e malattie da accumulo."
+    en: "Distinguish the primary (idiopathic) form from the secondary forms: amyloidosis, endomyocardial disease, hemochromatosis, desminopathies and storage diseases."
+  - it: "Riconoscere l'amiloidosi cardiaca con rosso Congo, birifrangenza verde e reperti di ECG ed ecocardiogramma."
+    en: "Recognize cardiac amyloidosis by Congo red, green birefringence, and ECG and echocardiographic findings."
+  - it: "Descrivere i tre stadi della malattia endomiocardica."
+    en: "Describe the three stages of endomyocardial disease."
+  - it: "Confrontare la cardiomiopatia restrittiva con la pericardite costrittiva e con le altre cardiomiopatie."
+    en: "Compare restrictive cardiomyopathy with constrictive pericarditis and with the other cardiomyopathies."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: pericardial-disease
+    note:
+      it: "Emodinamica simile alla pericardite costrittiva, di cui può essere difficile distinguerla."
+      en: "Hemodynamics resemble constrictive pericarditis, from which it may be hard to distinguish."
+  - type: sharesMechanism
+    target: hypertrophic-cardiomyopathy
+    note:
+      it: "Condividono geni sarcomerici come MYH7 e TNNI3."
+      en: "They share sarcomeric genes such as MYH7 and TNNI3."
+  - type: differentialOf
+    target: dilated-cardiomyopathy
+    note:
+      it: "Ventricolo dilatato nella DCM, spessore parietale normale nella restrittiva."
+      en: "Dilated ventricle in DCM, normal wall thickness in RCM."
+  - type: differentialOf
+    target: arrhythmogenic-cardiomyopathy
+    note:
+      it: "Sostituzione fibroadiposa del miocardio nella cardiomiopatia aritmogena."
+      en: "Fibrofatty replacement of myocardium in arrhythmogenic cardiomyopathy."
+  - type: causes
+    target: amyloidosis
+    note:
+      it: "L'amiloide nel miocardio produce un quadro restrittivo."
+      en: "Amyloid in the myocardium produces a restrictive picture."
+quickCheck:
+  - id: restrictive-cardiomyopathy-q1
+    q:
+      it: "Quale funzione è compromessa nella cardiomiopatia restrittiva, e quale è conservata?"
+      en: "Which function is impaired in restrictive cardiomyopathy, and which is preserved?"
+    a:
+      it: "È compromessa la funzione diastolica (riempimento); la funzione sistolica e lo spessore parietale sono normali o quasi."
+      en: "Diastolic function (filling) is impaired; systolic function and wall thickness are normal or near normal."
+    kind: short
+  - id: restrictive-cardiomyopathy-q2
+    q:
+      it: "Elenca le cause secondarie di cardiomiopatia restrittiva."
+      en: "List the secondary causes of restrictive cardiomyopathy."
+    a:
+      it: "Amiloide o carcinoma metastatico nell'interstizio, malattia endomiocardica, emocromatosi, aggregati di desmina, sarcoidosi e malattie da accumulo."
+      en: "Amyloid or metastatic carcinoma in the interstitium, endomyocardial disease, hemochromatosis, desmin aggregates, sarcoidosis and storage diseases."
+    kind: short
+  - id: restrictive-cardiomyopathy-q3
+    q:
+      it: "Con quali esami si riconosce l'amiloide cardiaca e si distingue AL da ATTR?"
+      en: "How is cardiac amyloid recognized, and how are AL and ATTR told apart?"
+    a:
+      it: "Rosso Congo con birifrangenza verde in luce polarizzata; la spettrometria di massa su biopsia cardiaca distingue AL da ATTR."
+      en: "Congo red with green birefringence under polarized light; mass spectrometry of a heart biopsy separates AL from ATTR."
+    kind: short
+selfExplain:
+  - it: "Perché in un ventricolo rigido l'atrio si dilata e compare congestione venosa?"
+    en: "Why do the atria dilate and venous congestion appear when the ventricle is stiff?"
+  - it: "Perché la forma primaria può avere una biopsia quasi normale pur avendo una diastole alterata?"
+    en: "Why can primary RCM have a nearly normal biopsy despite abnormal diastole?"
+examQuestions:
+  - it: "Mi parli della cardiomiopatia restrittiva primaria e di quelle secondarie."
+    en: "Tell me about primary and secondary restrictive cardiomyopathy."
+    focus: [etiology, pathogenesis]
+    level: 1
+  - it: "Perché la cardiomiopatia restrittiva è un'insufficienza diastolica e non sistolica?"
+    en: "Why is restrictive cardiomyopathy a diastolic rather than a systolic failure?"
+    focus: [definition, pathogenesis]
+    level: 2
+  - it: "Come distingue la cardiomiopatia restrittiva dalla cardiomiopatia ipertrofica, da quella dilatativa e da quella aritmogena?"
+    en: "How do you tell restrictive cardiomyopathy from hypertrophic, dilated and arrhythmogenic cardiomyopathy?"
+    focus: [differential]
+    level: 3
+  - it: "Mi parli dell'amiloidosi cardiaca: quali colorazioni e quali esami userebbe?"
+    en: "Tell me about cardiac amyloidosis: which stains and tests would you use?"
+    focus: [ancillary, diagnosis]
+    level: 2
+  - it: "Mi parli della malattia endomiocardica e delle sue fasi."
+    en: "Tell me about endomyocardial disease and its stages."
+    focus: [pathogenesis, gross, clinical]
+    level: 2
+  - it: "Che cosa vede nella non compattazione del ventricolo sinistro, e come si presenta?"
+    en: "What do you see in left ventricular noncompaction, and how does it present?"
+    focus: [gross, clinical, diagnosis]
+    level: 1
+images:
+  - id: restrictive-cardiomyopathy-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "17"
+    pages: "685-688"
+lastUpdated: 2026-11-14
+status: published

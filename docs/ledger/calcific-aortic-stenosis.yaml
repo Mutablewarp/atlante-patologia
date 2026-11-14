@@ -1,0 +1,442 @@
+entity: calcific-aortic-stenosis
+claims:
+  - claimId: calcific-aortic-stenosis-c001
+    section: definition
+    statement: "The aortic valve opening gets smaller because calcium collects in the valve cusps."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c002
+    section: definition
+    statement: "Calcific aortic stenosis is the consequence of chronic damage to the valve."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c003
+    section: definition
+    statement: "Valve function fails only once the cusps have stiffened."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c004
+    section: etiology
+    statement: "A congenital bicuspid valve, degenerative (senile) change in a tricuspid valve, and rheumatic aortic valve disease are the three main settings of calcific aortic stenosis."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c005
+    section: etiology
+    statement: "Narrowing of a rheumatic aortic valve combines calcium with scarring and commissural fusion."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c006
+    section: etiology
+    statement: "A rheumatic aortic valve is almost never the only valve affected; the mitral valve is usually rheumatic too."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c007
+    section: etiology
+    statement: "In an aortic valve with three cusps, degenerative (senile) calcific stenosis is a condition of elderly people."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c008
+    section: etiology
+    statement: "In degenerative stenosis the commissures are not fused even though the cusps are rigidly calcified."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c009
+    section: etiology
+    statement: "A congenitally bicuspid aortic valve often becomes stenotic with age."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c010
+    section: etiology
+    statement: "Turbulent flow through the oval opening, not the bicuspid shape itself, leads to stenosis."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c011
+    section: etiology
+    statement: "Faulty development of the endocardial cushions produces a bicuspid valve, which is the commonest congenital form of aortic stenosis."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "650" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c012
+    section: etiology
+    statement: "In the United States rheumatic fever is rare and surgery has replaced most affected valves, so other causes now dominate calcific stenosis."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c013
+    section: etiology
+    statement: "Aortic valve disease is associated with high LDL levels."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c014
+    section: pathogenesis
+    statement: "Living valve cells actively drive the calcification, which is not a passive coating of dead tissue."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671-672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c015
+    section: pathogenesis
+    statement: "Valve interstitial cells that turn osteoblast-like mineralize the matrix."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671-672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c016
+    section: pathogenesis
+    statement: "Osteoprogenitor cells arriving from the circulation also contribute to mineralizing the valve."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c017
+    section: pathogenesis
+    statement: "Even a structurally normal valve can calcify after long exposure to turbulent blood flow."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c018
+    section: pathogenesis
+    statement: "Inflammation releasing IL-1β, TNFα and TGFβ follows when LDL particles, which accumulate under mechanical forces, become oxidized."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c019
+    section: pathogenesis
+    statement: "Matrix metalloproteinases switched on by the inflammatory mediators break down the valve's matrix."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c020
+    section: pathogenesis
+    statement: "Fibroblasts become osteoblast-like myofibroblasts that calcify the matrix, chiefly its collagen."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c021
+    section: pathogenesis
+    statement: "Statins do not prevent calcific aortic stenosis, although its mechanisms resemble those of atherosclerosis."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c022
+    section: gross
+    statement: "Whatever the form, the nodules lie at the cusp base in the sinuses of Valsalva and mostly spare the free edges."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c023
+    section: gross
+    statement: "Three cusps, or two in a bicuspid valve, stay separate when there is no rheumatic scarring and the commissures are free."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c024
+    section: gross
+    statement: "In an older patient's tricuspid aortic valve the leaflets are loaded with calcium."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c025
+    section: gross
+    statement: "In a congenitally bicuspid aortic valve both leaflets carry large amounts of calcium."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c026
+    section: gross
+    statement: "In senile aortic stenosis the mitral ring may be calcified, but the mitral valve itself is usually normal."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c027
+    section: micro
+    statement: "Osteoblast-like myofibroblasts deposit mineral in the extracellular matrix of the cusp, mainly in collagen."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c028
+    section: clinical
+    statement: "Severe stenosis of the aortic valve produces marked concentric hypertrophy of the left ventricle."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c029
+    section: clinical
+    statement: "Later the left ventricle enlarges and fails (eccentric hypertrophy)."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c030
+    section: diagnosis
+    statement: "A valve lacking commissural fusion is unlikely to be rheumatic, because fusion is typical of rheumatic aortic valves and is not seen in degenerative calcific stenosis."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c031
+    section: prognosis
+    statement: "Valve replacement gives 85% five-year survival when done while the ventricle can still recover."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c032
+    section: prognosis
+    statement: "Once the valve has been replaced, the hypertrophic left ventricle shrinks back toward normal size."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c033
+    section: prognosis
+    statement: "Elderly patients with aortic stenosis who cannot safely have open-chest surgery are increasingly treated by transcatheter valve replacement (TAVR)."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c034
+    section: differential
+    statement: "In a rheumatic aortic valve the commissures are fused and the cusps are scarred and diffusely thickened; the mitral valve is usually involved as well."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c035
+    section: differential
+    statement: "With degenerative calcification of a three-cusp valve the mitral valve is usually normal, and the cusps are rigidly calcified but the commissures are not fused."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c036
+    section: differential
+    statement: "A calcified bicuspid valve has both leaflets thickly calcified, with the commissures left free."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c037
+    section: differential
+    statement: "In mitral annular calcification the leaflets are not deformed and the calcium lies mainly in the annulus."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c038
+    section: differential
+    statement: "Mitral annular calcification often produces a murmur and is common among the elderly."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c039
+    section: high-yield
+    statement: "Calcium in the cusps narrows the orifice, and the three settings are rheumatic, degenerative (senile) and congenital bicuspid."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c040
+    section: high-yield
+    statement: "Commissural fusion points to a rheumatic aortic valve; degenerative and bicuspid calcific valves do not show it."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671-672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c041
+    section: high-yield
+    statement: "The nodules lie at the cusp base and mostly spare the free margins."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c042
+    section: high-yield
+    statement: "Valvular calcification is an active process in which cells take an osteoblast-like phenotype."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671-672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c043
+    section: high-yield
+    statement: "Statins do not prevent calcific aortic stenosis."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c044
+    section: high-yield
+    statement: "Severe aortic stenosis causes concentric left ventricular hypertrophy, and later the ventricle dilates and fails."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c045
+    section: high-yield
+    statement: "Valve replacement gives good results while the ventricle can still recover."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c046
+    section: high-yield
+    statement: "TAVR is the option for elderly patients unfit for open-chest surgery."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c047
+    section: high-yield
+    statement: "Mitral annular calcification rarely matters functionally, although it is common among the elderly."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c048
+    section: traps
+    statement: "Calcific aortic stenosis also develops on rheumatic valves and on congenitally bicuspid valves, not only as a degenerative change."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c049
+    section: traps
+    statement: "Stenosis of a bicuspid valve develops after years of more turbulent flow; the bicuspid shape alone is not stenotic."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c050
+    section: traps
+    statement: "Fused commissures point to rheumatic aortic valve disease."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c051
+    section: traps
+    statement: "Statins do not prevent calcific aortic stenosis even though they lower atherosclerosis risk."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c052
+    section: traps
+    statement: "Mitral annular calcification rarely causes functional trouble."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c053
+    section: traps
+    statement: "Extensive annular calcification can restrict posterior mitral leaflet motion in systole and cause regurgitation."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c054
+    section: traps
+    statement: "Diabetes, hypertension or aortic stenosis in the patient aggravates mitral annular calcification."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "672" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: calcific-aortic-stenosis-c055
+    section: mnemonics
+    statement: "The three settings of calcific aortic stenosis are rheumatic, degenerative and bicuspid, and only the rheumatic valve has fused commissures."
+    sourceRef: { source: rubin-8e, chapter: "17", pages: "671" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14

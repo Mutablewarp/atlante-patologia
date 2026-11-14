@@ -6,13 +6,15 @@ import { tAtlas } from '../../../i18n/pages.ts';
 import { LENSES } from '../../../lib/schema.ts';
 import { langPath } from '../../../lib/url.ts';
 import { siteData, patterns } from '../../../lib/content.ts';
+import { chapterHref } from '../../../lib/chapters.ts';
 import { tHz } from '../../../i18n/horizontal.ts';
 
 export const getStaticPaths = langPaths;
 
 const lang = Astro.params.lang as Lang;
 const t = (k: Parameters<typeof tAtlas>[1]) => tAtlas(lang, k);
-const { taxonomy, membership, modules } = await siteData(lang);
+const { taxonomy, membership, modules, entities } = await siteData(lang);
+const withCards = new Set(entities.map((e) => e.module)); // these chapters have a page (lib/chapters.ts)
 const lenses = LENSES.map((lens) => {
   const tax = taxonomy.get(lens);
   const counts = membership.get(lens)!;
@@ -128,7 +130,7 @@ const sections = (['I', 'II', 'III'] as const).map((s) => ({
           <ul class="module-list">
             {s.modules.map((m) => (
               <li>
-                <a href={m.status === 'published' ? langPath(lang, `atlas/system/`) : langPath(lang, `about/roadmap/#${m.id}`)}>
+                <a href={withCards.has(m.id) ? chapterHref(lang, m.id) : langPath(lang, `about/roadmap/#${m.id}`)}>
                   <span class="module-id">{m.id.toUpperCase()}</span>
                   <span>{m.label[lang]}</span>
                   <span class={`badge ${m.status === 'published' ? 'badge-published' : 'badge-planned'}`}>
