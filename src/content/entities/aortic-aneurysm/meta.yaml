@@ -1,0 +1,114 @@
+id: aortic-aneurysm
+module: o16
+tier: core
+kind: disease
+names:
+  it: "Aneurismi: classificazione; aneurisma dell'aorta"
+  en: "Aneurysms: classification and aortic aneurysm"
+  eponyms: []
+  synonyms:
+    it: ["Aneurisma dell'aorta addominale"]
+    en: ["Abdominal aortic aneurysm"]
+  abbreviations: ["AAA"]
+summary:
+  it: "Dilatazione localizzata di un'arteria per debolezza della tonaca media, con forme fusiformi o sacculari; l'aneurisma aterosclerotico dell'aorta addominale è il più frequente e il suo rischio di rottura cresce con il diametro."
+  en: "Localized dilation of an artery from weakness of the media, in fusiform or saccular form; the atherosclerotic abdominal aortic aneurysm is the commonest, and its rupture risk grows with diameter."
+lenses:
+  system: [vessels]
+  process: [chronic-inflammation, thrombosis-embolism]
+  pattern: []
+  presentation: [mass-lesion, ischemic-event, incidental-finding]
+  marker: []
+  group: [vascular, degenerative, infectious]
+learningObjectives:
+  - it: "Definire l'aneurisma e distinguere le forme fusiforme, sacculare, dissecante e artero-venosa."
+    en: "Define an aneurysm and distinguish the fusiform, saccular, dissecting and arteriovenous forms."
+  - it: "Collegare l'aneurisma dell'aorta addominale all'aterosclerosi e descriverne sede e aspetto."
+    en: "Link the abdominal aortic aneurysm to atherosclerosis and describe its site and appearance."
+  - it: "Confrontare gli aneurismi aterosclerotico, sifilitico, micotico e a bacca (berry) per sede e causa."
+    en: "Compare atherosclerotic, syphilitic, mycotic and berry aneurysms by site and cause."
+  - it: "Spiegare come il rischio di rottura dipende dal diametro e quali sono le complicanze."
+    en: "Explain how rupture risk depends on size and name the complications."
+prerequisites: [atherosclerosis]
+relations:
+  - type: complicationOf
+    target: atherosclerosis
+    note:
+      it: "L'aneurisma dell'aorta addominale compare sempre su un'aterosclerosi grave."
+      en: "The abdominal aortic aneurysm arises in the setting of severe atherosclerosis."
+  - type: complicationOf
+    target: syphilis
+    note:
+      it: "L'aneurisma sifilitico colpisce l'aorta ascendente attraverso i vasa vasorum."
+      en: "The syphilitic aneurysm affects the ascending aorta through the vasa vasorum."
+  - type: complicationOf
+    target: infective-endocarditis
+    note:
+      it: "L'endocardite batterica è la causa più comune di aneurisma micotico."
+      en: "Bacterial endocarditis is the commonest cause of mycotic aneurysm."
+  - type: differentialOf
+    target: aortic-dissection
+    note:
+      it: "La dissezione è un ematoma nella tonaca media con falso lume, non una semplice dilatazione."
+      en: "Dissection is a hematoma in the media with a false lumen, not a simple dilation."
+quickCheck:
+  - id: aortic-aneurysm-q1
+    q:
+      it: "Quali sono le due configurazioni principali di un aneurisma e come si distinguono?"
+      en: "What are the two main configurations of an aneurysm, and how do they differ?"
+    a:
+      it: "Fusiforme: rigonfiamento ovoidale lungo l'asse del vaso. Sacculare: estroflessione a bolla di una parete con media debole."
+      en: "Fusiform: an ovoid swelling along the vessel axis. Saccular: a bubble-like outpouching at a weak part of the media."
+    kind: short
+  - id: aortic-aneurysm-q2
+    q:
+      it: "Dove si trova di solito un aneurisma aterosclerotico dell'aorta addominale e quale reperto contiene spesso?"
+      en: "Where does an atherosclerotic abdominal aortic aneurysm usually lie, and what does it often contain?"
+    a:
+      it: "Nel tratto sotto le arterie renali e sopra la biforcazione aortica; di solito è fusiforme e contiene un trombo murale."
+      en: "In the segment below the renal arteries and above the bifurcation; it is mostly fusiform and holds a mural thrombus."
+    kind: short
+  - id: aortic-aneurysm-q3
+    q:
+      it: "Da che cosa dipende il rischio di rottura di un aneurisma dell'aorta addominale?"
+      en: "What does the rupture risk of an abdominal aortic aneurysm depend on?"
+    a:
+      it: "Dalle dimensioni: gli aneurismi più piccoli di 4 cm si rompono raramente, quelli più grandi di 5 cm hanno un rischio elevato entro 5 anni."
+      en: "On size: aneurysms under 4 cm rarely rupture, while those over 5 cm carry a high risk within 5 years."
+    kind: short
+selfExplain:
+  - it: "Perché la sifilide produce un aneurisma dell'aorta ascendente passando per i vasa vasorum?"
+    en: "Why does syphilis produce an aneurysm of the ascending aorta by way of the vasa vasorum?"
+  - it: "Perché la degradazione del collagene nella media e nell'avventizia favorisce la crescita dell'aneurisma?"
+    en: "Why does the breakdown of collagen in the media and adventitia favor growth of the aneurysm?"
+examQuestions:
+  - it: "Mi parli degli aneurismi: come li classifica e che differenza c'è tra forma fusiforme e sacculare?"
+    en: "Tell me about aneurysms: how do you classify them, and how do fusiform and saccular forms differ?"
+    focus: [definition]
+    level: 1
+  - it: "Come distingue un aneurisma aterosclerotico dell'aorta addominale da uno sifilitico e da uno micotico?"
+    en: "How do you tell an atherosclerotic abdominal aortic aneurysm from a syphilitic and a mycotic one?"
+    focus: [etiology, gross, differential]
+    level: 3
+  - it: "Che cosa è un aneurisma a bacca (berry), dove si trova e che cosa succede se si rompe?"
+    en: "What is a berry aneurysm, where does it sit, and what happens when it ruptures?"
+    focus: [gross, prognosis, differential]
+    level: 1
+  - it: "Perché le dimensioni di un aneurisma dell'aorta addominale contano per il rischio di rottura?"
+    en: "Why does the size of an abdominal aortic aneurysm matter for the risk of rupture?"
+    focus: [pathogenesis, prognosis]
+    level: 2
+  - it: "Un aneurisma dissecante è un vero aneurisma? Come lo distingue da una semplice dilatazione?"
+    en: "Is a dissecting aneurysm a true aneurysm? How do you tell it from a plain dilation?"
+    focus: [definition, differential, traps]
+    level: 3
+images:
+  - { id: aortic-aneurysm-gross-1, role: gross }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "16"
+    pages: "624-627"
+lastUpdated: 2026-11-14
+status: published

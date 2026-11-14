@@ -1,0 +1,122 @@
+id: aortic-dissection
+module: o16
+tier: core
+kind: disease
+names:
+  it: "Dissezione aortica"
+  en: "Aortic dissection"
+  eponyms: []
+  synonyms:
+    it: ["Aneurisma dissecante dell'aorta"]
+    en: ["Dissecting aortic aneurysm"]
+  abbreviations: []
+summary:
+  it: "Il sangue si fa strada nella parete dell'aorta e forma un falso lume, di solito a partire da una lacerazione dell'intima su una media indebolita da degenerazione."
+  en: "Blood tunnels into the aortic wall and forms a false lumen, usually from a tear in the intima over a media weakened by degeneration."
+lenses:
+  system: [vessels, heart]
+  process: [extracellular-accumulation]
+  presentation: [chest-pain]
+  marker: [special-stains]
+  group: [vascular, degenerative, genetic]
+learningObjectives:
+  - it: "Definire la dissezione aortica e distinguere il tipo A dal tipo B."
+    en: "Define aortic dissection and distinguish type A from type B."
+  - it: "Elencare i fattori che indeboliscono la media aortica: ipertensione, sindrome di Marfan e altre alterazioni del tessuto connettivo."
+    en: "List the factors that weaken the aortic media: hypertension, Marfan syndrome and other connective tissue defects."
+  - it: "Descrivere la lacerazione intimale, il falso lume e l'aorta a doppia canna."
+    en: "Describe the intimal tear, the false lumen and the double-barreled aorta."
+  - it: "Riconoscere la presentazione clinica e le complicanze, in particolare la rottura."
+    en: "Recognize the clinical presentation and the complications, above all rupture."
+prerequisites: []
+relations:
+  - type: complicationOf
+    target: marfan-syndrome
+    note:
+      it: "Nella sindrome di Marfan la media aortica è indebolita da mutazioni della fibrillina."
+      en: "In Marfan syndrome the aortic media is weakened by fibrillin mutations."
+  - type: mimics
+    target: myocardial-infarction
+    note:
+      it: "Il dolore toracico acuto può essere scambiato per infarto miocardico."
+      en: "The acute chest pain can be mistaken for myocardial infarction."
+  - type: differentialOf
+    target: syphilis
+    note:
+      it: "L'aortite sifilitica colpisce i vasa vasorum e dà un aspetto a corteccia d'albero."
+      en: "Syphilitic aortitis affects the vasa vasorum and gives a tree-bark look."
+  - type: differentialOf
+    target: aortic-aneurysm
+    note:
+      it: "Nella dissezione il sangue scorre in un falso lume dentro la parete."
+      en: "In dissection, blood runs in a false lumen inside the wall."
+quickCheck:
+  - id: aortic-dissection-q1
+    q:
+      it: "Che differenza c'è tra dissezione di tipo A e di tipo B?"
+      en: "What is the difference between type A and type B dissection?"
+    a:
+      it: "Il tipo A interessa solo l'aorta ascendente; il tipo B solo l'aorta distale."
+      en: "Type A involves only the ascending aorta; type B only the distal aorta."
+    kind: short
+  - id: aortic-dissection-q2
+    q:
+      it: "Che cosa mostra la colorazione con fucsina aldeidica nella media?"
+      en: "What does aldehyde fuchsin show in the media?"
+    a:
+      it: "Pozze di materiale metacromatico, caratteristiche della necrosi cistica della media."
+      en: "Pools of metachromatic material, characteristic of cystic medial necrosis."
+    kind: short
+  - id: aortic-dissection-q3
+    q:
+      it: "Perché l'ipotensione in un paziente con dissezione è un segnale grave?"
+      en: "Why is hypotension an ominous sign in a patient with dissection?"
+    a:
+      it: "Suggerisce la rottura dell'aorta."
+      en: "It suggests aortic rupture."
+    kind: short
+  - id: aortic-dissection-q4
+    q:
+      it: "Che cos'è l'aorta a doppia canna?"
+      en: "What is a double-barreled aorta?"
+    a:
+      it: "Il sangue rientra nel lume attraverso una seconda lacerazione distale e l'aorta ha due canali; succede nel 5-10% dei casi."
+      en: "Blood re-enters the lumen through a second distal tear, so the aorta has two channels; this happens in 5% to 10% of cases."
+    kind: short
+selfExplain:
+  - it: "Perché la parete esterna del falso canale, essendo sottile, rende così pericolosa la dissezione?"
+    en: "Why does the thin outer wall of the false channel make dissection so dangerous?"
+  - it: "Perché un difetto molecolare del tessuto connettivo, come nella sindrome di Marfan, predispone alla dissezione?"
+    en: "Why does a molecular defect of connective tissue, as in Marfan syndrome, predispose to dissection?"
+examQuestions:
+  - it: "Mi parli dei fattori che indeboliscono la media aortica e predispongono alla dissezione: ipertensione, sindrome di Marfan e degenerazione della media."
+    en: "Tell me about the factors that weaken the aortic media and predispose to dissection: hypertension, Marfan syndrome and medial degeneration."
+    focus: [etiology, pathogenesis]
+    level: 2
+  - it: "Come distingue la dissezione aortica di tipo A da quella di tipo B?"
+    en: "How do you tell type A from type B aortic dissection?"
+    focus: [definition]
+    level: 1
+  - it: "Quali sono le complicanze della dissezione aortica e che cosa significa un calo della pressione arteriosa?"
+    en: "What are the complications of aortic dissection, and what does a fall in blood pressure mean?"
+    focus: [clinical, prognosis]
+    level: 3
+  - it: "Che cosa vede al microscopio nella media di un'aorta con necrosi cistica e quali colorazioni userebbe?"
+    en: "What do you see under the microscope in the media of an aorta with cystic medial necrosis, and which stains would you use?"
+    focus: [micro, ancillary]
+    level: 1
+  - it: "Perché la dissezione aortica può essere scambiata per un infarto miocardico, e come procede il sangue dopo la lacerazione intimale?"
+    en: "Why can aortic dissection be mistaken for myocardial infarction, and how does the blood travel after the intimal tear?"
+    focus: [clinical, pathogenesis, gross]
+    level: 3
+images:
+  - id: aortic-dissection-gross-1
+    role: gross
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "16"
+    pages: "626-627"
+lastUpdated: 2026-11-14
+status: published

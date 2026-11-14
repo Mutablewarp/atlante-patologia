@@ -1,0 +1,112 @@
+id: vascular-tumors
+module: o16
+tier: extended
+kind: disease
+names:
+  it: "Tumori vascolari (emangioma, angiosarcoma, sarcoma di Kaposi)"
+  en: "Vascular tumors"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: []
+summary:
+  it: "Gruppo di lesioni dei vasi sanguigni e linfatici, dagli emangiomi benigni all'angiosarcoma e al sarcoma di Kaposi, maligni."
+  en: "A group of blood and lymphatic vessel lesions, from benign hemangiomas to malignant angiosarcoma and Kaposi sarcoma."
+lenses:
+  system: [vessels, skin]
+  process: [neoplasia]
+  pattern: []
+  presentation: [mass-lesion]
+  marker: [ihc]
+  group: [neoplastic, vascular]
+learningObjectives:
+  - it: "Distinguere l'emangioma capillare, giovanile e cavernoso in base all'aspetto microscopico."
+    en: "Tell capillary, juvenile and cavernous hemangioma apart by their microscopic appearance."
+  - it: "Riconoscere il tumore glomico e l'emangioendotelioma come lesioni intermedie o particolari."
+    en: "Recognize glomus tumor and hemangioendothelioma as special or intermediate lesions."
+  - it: "Descrivere angiosarcoma e sarcoma di Kaposi (HHV-8) e il ruolo dell'immunocolorazione endoteliale."
+    en: "Describe angiosarcoma and Kaposi sarcoma (HHV-8) and the role of endothelial immunostaining."
+  - it: "Distinguere i linfangiomi capillare e cistico."
+    en: "Distinguish capillary and cystic lymphangioma."
+prerequisites: []
+relations:
+  - type: mimics
+    target: fibroblastic-tumors
+    note:
+      it: "Il sarcoma di Kaposi cellulato può simulare il fibrosarcoma."
+      en: "Cellular Kaposi sarcoma can mimic fibrosarcoma."
+quickCheck:
+  - id: vascular-tumors-q1
+    q:
+      it: "Che cos'è una macchia a vino di porto?"
+      en: "What is a port wine stain?"
+    a:
+      it: "Un emangioma cavernoso situato nella cute."
+      en: "A cavernous hemangioma located in the skin."
+    kind: short
+  - id: vascular-tumors-q2
+    q:
+      it: "Dove si trova tipicamente il tumore glomico e quale sintomo dà?"
+      en: "Where is a glomus tumor typically found, and what symptom does it cause?"
+    a:
+      it: "Sotto l'unghia di dita delle mani o dei piedi; è insolitamente doloroso."
+      en: "Under the nails of fingers or toes; it is unusually painful."
+    kind: short
+  - id: vascular-tumors-q3
+    q:
+      it: "Quale virus causa il sarcoma di Kaposi e basta l'infezione per la malattia?"
+      en: "Which virus causes Kaposi sarcoma, and is infection alone enough for the disease?"
+    a:
+      it: "L'herpesvirus umano 8 (HHV-8); no, solo una piccola parte degli infetti sviluppa il tumore."
+      en: "Human herpesvirus 8 (HHV-8); no, only a small fraction of infected people develop the tumor."
+    kind: short
+  - id: vascular-tumors-q4
+    q:
+      it: "Come si riconosce un linfangioma cistico da un vaso sanguigno?"
+      en: "How do you tell a cystic lymphangioma from a blood vessel?"
+    a:
+      it: "I suoi spazi non contengono globuli rossi né bianchi; le cisti rivestite da endotelio contengono liquido, non sangue."
+      en: "Its spaces contain no red or white blood cells; the endothelium-lined cysts hold fluid, not blood."
+    kind: short
+  - id: vascular-tumors-q5
+    q:
+      it: "Il sarcoma di Kaposi è un tumore maligno: uccide spesso il paziente?"
+      en: "Kaposi sarcoma is malignant: does it often kill the patient?"
+    a:
+      it: "Raramente: può interessare molte sedi, ma di rado causa la morte."
+      en: "Rarely: it can involve many sites, but it seldom causes death."
+    kind: short
+selfExplain:
+  - it: "Perché le proiezioni digitiformi di un emangioma giovanile non indicano invasione?"
+    en: "Why do the finger-like projections of a juvenile hemangioma not mean invasion?"
+  - it: "Perché l'infezione da HHV-8 da sola non basta per diagnosticare il sarcoma di Kaposi?"
+    en: "Why is HHV-8 infection alone not enough to diagnose Kaposi sarcoma?"
+  - it: "Perché gli spazi di un linfangioma cistico non contengono sangue?"
+    en: "Why do the spaces of a cystic lymphangioma contain no blood?"
+examQuestions:
+  - it: "Mi parli dei tipi di emangioma: come distingue il capillare, il giovanile e il cavernoso?"
+    en: "Tell me about the types of hemangioma: how do you tell capillary, juvenile and cavernous apart?"
+    focus: [micro, high-yield]
+    level: 1
+  - it: "Mi parli del sarcoma di Kaposi: quale virus lo causa e perché l'infezione da sola non basta per la diagnosi?"
+    en: "Tell me about Kaposi sarcoma: which virus causes it, and why is infection alone not enough for the diagnosis?"
+    focus: [micro, diagnosis, traps]
+    level: 2
+  - it: "Come distingue un angiosarcoma da un emangioma?"
+    en: "How do you tell an angiosarcoma from a hemangioma?"
+    focus: [micro, differential]
+    level: 3
+images:
+  - id: vascular-tumors-micro-1
+    role: micro
+  - id: vascular-tumors-micro-2
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "16"
+    pages: "629-632"
+lastUpdated: 2026-11-14
+status: published

@@ -1,0 +1,658 @@
+entity: anca-associated-vasculitis
+claims:
+- claimId: anca-associated-vasculitis-c001
+  section: definition
+  statement: "The three ANCA-associated small-vessel vasculitides are GPA, MPA and EGPA."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "746-747" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c002
+  section: definition
+  statement: "Upper airways, lungs and kidneys are the usual targets."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "746-747" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c003
+  section: definition
+  statement: "GPA was formerly called Wegener granulomatosis."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "746" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c004
+  section: definition
+  statement: "EGPA was formerly called Churg-Strauss syndrome."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "746" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c005
+  section: definition
+  statement: "GPA mostly affects men, in the fifth and sixth decades of life."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "621" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c006
+  section: definition
+  statement: "MPA shows no sex preference and may occur at any age."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "747" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c007
+  section: definition
+  statement: "EGPA is a disease of young people with asthma."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c008
+  section: definition
+  statement: "In the kidney, all three diseases injure glomeruli and the small arteries feeding them."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "948" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c009
+  section: etiology
+  statement: "The causes of GPA and EGPA are unknown."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "746-747" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c010
+  section: etiology
+  statement: "Because immunosuppressive drugs help GPA patients, the disease is likely immune-mediated."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "621" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c011
+  section: etiology
+  statement: "Autoantibodies such as ANCA and rheumatoid factor point to an autoimmune mechanism in EGPA."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "748" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c012
+  section: etiology
+  statement: "GPA may involve bacteria, since sulfa antimicrobials curb its relapses."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c013
+  section: pathogenesis
+  statement: "ANCAs mostly recognize myeloperoxidase and proteinase 3 in neutrophils and monocytes."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c014
+  section: pathogenesis
+  statement: "The two main ANCA immunofluorescence patterns on neutrophils are named for the site of staining: cytoplasmic (C-ANCA) and perinuclear (P-ANCA)."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "747" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c015
+  section: pathogenesis
+  statement: "ANCA-activated neutrophils adhere to endothelium and kill it using granule contents and oxygen radicals."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c016
+  section: pathogenesis
+  statement: "The inflammation grows because ANCA-activated neutrophils also switch on kinins and the alternative complement pathway."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c017
+  section: pathogenesis
+  statement: "ANCA lesions show hardly any deposited antibody or complement; MPA is described as pauci-immune."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "747, 947-948" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c018
+  section: gross
+  statement: "Most GPA lung specimens contain several nodules in both lungs."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "746" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c019
+  section: gross
+  statement: "GPA lung nodules often have a central cavity and a brownish or hemorrhagic cut surface."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "746" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c020
+  section: micro
+  statement: "GPA lung lesions combine vasculitis, granulomas and tissue necrosis."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "746" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c021
+  section: micro
+  statement: "GPA necrosis takes the form of small neutrophil abscesses or a broad map-like area."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "746" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c022
+  section: micro
+  statement: "Macrophages form a rim around areas of necrosis, and GPA granulomas contain multinucleated giant cells."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "746" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c023
+  section: micro
+  statement: "The inflamed vessel in GPA can be a capillary, a vein or an artery."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "746" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c024
+  section: micro
+  statement: "Neutrophils commonly invade alveolar capillaries, a lesion called capillaritis."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "746" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c025
+  section: micro
+  statement: "Recent or longstanding bleeding into the alveoli is frequent in GPA lung."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "746" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c026
+  section: micro
+  statement: "When MPA involves the lung, biopsy reveals neutrophilic capillaritis together with alveolar hemorrhage."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "747" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c027
+  section: micro
+  statement: "In EGPA, eosinophils crowd around vessels in many organs, together with necrotizing granulomas."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c028
+  section: micro
+  statement: "Dead eosinophils collect in the middle of EGPA necrotic foci, making the centers eosinophilic."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "747" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c029
+  section: micro
+  statement: "Glomeruli in ANCA glomerulonephritis undergo necrosis and form crescents."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c030
+  section: micro
+  statement: "Glomerular segments without necrosis can look almost normal, with a few neutrophils or slightly more endocapillary cells."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c031
+  section: micro
+  statement: "In GPA, crescents are a late glomerular change that follows earlier focal necrosis."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "621" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c032
+  section: ancillary
+  statement: "On H&E, GPA is recognized by vasculitis, granulomatous inflammation and necrosis together."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "746" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c033
+  section: ancillary
+  statement: "An elastic stain shows arteries in which inflammation has destroyed the elastic laminae."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "746" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c034
+  section: ancillary
+  statement: "A silver stain shows crescents inside Bowman space and glomerular basement membranes that are interrupted in places."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c035
+  section: ancillary
+  statement: "ANCA glomerulonephritis has almost no immunoglobulin or complement in the glomeruli."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947-948" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c036
+  section: ancillary
+  statement: "A blood test for ANCA points toward GPA or a similar vasculitis."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "746-747" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c037
+  section: clinical
+  statement: "In GPA, the eye, kidney and lung are affected less often than the head and neck."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "746" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c038
+  section: clinical
+  statement: "In the head and neck, GPA can cause middle-ear infection with hearing loss, and sinus and airway disease."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "746" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c039
+  section: clinical
+  statement: "GPA lung disease can cause cough with hemoptysis, or pleuritis."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "746" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c040
+  section: clinical
+  statement: "Glomerular disease can end in renal failure, and blood and protein in the urine are common."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c041
+  section: clinical
+  statement: "GPA also causes fever and weight loss and can reach joints, skin and peripheral nerves."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "746" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c042
+  section: clinical
+  statement: "Almost all MPA patients have glomerulonephritis."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "747" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c043
+  section: clinical
+  statement: "MPA is among the frequent causes of a combined lung and kidney syndrome."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "747" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c044
+  section: clinical
+  statement: "MPA may also involve the upper airways, skin and musculoskeletal system."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "747" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c045
+  section: clinical
+  statement: "Nephritic signs and a fast decline in kidney function usually mark ANCA glomerulonephritis."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "948" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c046
+  section: clinical
+  statement: "Goodpasture syndrome causes pulmonary-renal syndrome far less often than ANCA vasculitis with lung involvement does."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "948" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c047
+  section: clinical
+  statement: "The EGPA prodrome consists of airway allergy such as asthma or rhinitis, or eosinophil excess in blood or tissues."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "747" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c048
+  section: clinical
+  statement: "In the EGPA systemic vasculitic phase, peripheral neuropathy or cutaneous vasculitis shows that vessels outside the lung are inflamed."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "747" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c049
+  section: clinical
+  statement: "In the EGPA postvasculitic phase, heart disease such as pericarditis or heart failure is common, and asthma can persist."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "747" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c050
+  section: clinical
+  statement: "Compared with GPA, EGPA usually causes less severe renal and sinus disease."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "747-748" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c051
+  section: diagnosis
+  statement: "C-ANCA directed against proteinase 3 is the typical pattern in active generalized GPA."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "747" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c052
+  section: diagnosis
+  statement: "MPA most often has P-ANCA directed against myeloperoxidase."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "747" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c053
+  section: diagnosis
+  statement: "P-ANCA is usually found in EGPA during the vasculitic phase."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "748" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c054
+  section: diagnosis
+  statement: "A single nodule can occur on a GPA chest radiograph, but multiple nodules are the more frequent picture."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "746" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c055
+  section: diagnosis
+  statement: "On kidney biopsy, anti-GBM and immune-complex disease show immune deposits, while ANCA disease has hardly any."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947-948" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c056
+  section: diagnosis
+  statement: "EGPA is diagnosed from the combination of vasculitis, eosinophilia and asthma."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "747" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c057
+  section: prognosis
+  statement: "Sudden diffuse lung hemorrhage in GPA is life-threatening, causing respiratory failure and often acute renal failure."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "746" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c058
+  section: prognosis
+  statement: "Even after treatment has produced remission, ANCA glomerulonephritis can relapse."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "948" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c059
+  section: prognosis
+  statement: "ANCA glomerulonephritis recurs in some renal transplant recipients."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "948" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c060
+  section: prognosis
+  statement: "Corticosteroids combined with cyclophosphamide control the disease effectively in most GPA patients."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "747" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c061
+  section: prognosis
+  statement: "Nearly 90% of GPA patients now survive five years."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "747" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c062
+  section: prognosis
+  statement: "Severe EGPA may need cyclophosphamide, but corticosteroids help most patients."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "748" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c063
+  section: prognosis
+  statement: "Among treated EGPA patients, 60% survive five years."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "748" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c064
+  section: prognosis
+  statement: "With immunosuppression, under 20% of ANCA glomerulonephritis patients reach end-stage renal disease within 5 years, compared with over 80% when untreated."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "948" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c065
+  section: differential
+  statement: "GPA lung lesions with cavitating nodules resemble tuberculosis and must be distinguished from it."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "621-622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c066
+  section: differential
+  statement: "EGPA can mimic polyarteritis nodosa when vessels develop aneurysms with fibrinoid necrosis."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c067
+  section: differential
+  statement: "Anti-GBM and immune-complex glomerulonephritis show immune deposits while ANCA glomerulonephritis shows little or none."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947-948" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c068
+  section: differential
+  statement: "Drug-induced vasculitis and parasitic or fungal infection must be excluded when EGPA is suspected."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c069
+  section: differential
+  statement: "Necrotizing sarcoid granulomatosis is usually confined to the lung and is not a systemic vasculitis."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "748" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c070
+  section: high-yield
+  statement: "GPA is a necrotizing granulomatous vasculitis that targets the airways and the kidneys."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "621" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c071
+  section: high-yield
+  statement: "Nearly every MPA patient has glomerulonephritis alongside a pauci-immune small-vessel vasculitis."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "747" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c072
+  section: high-yield
+  statement: "EGPA is the vasculitis that comes with eosinophilia and asthma."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "747" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c073
+  section: high-yield
+  statement: "PR3 with C-ANCA fits GPA; MPO with P-ANCA fits MPA and is also seen in EGPA."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "747" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c074
+  section: high-yield
+  statement: "The renal lesion is crescentic glomerulonephritis with segmental necrosis and little or no immune deposit."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947-948" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c075
+  section: high-yield
+  statement: "GPA was Wegener granulomatosis and EGPA was Churg-Strauss syndrome."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "746" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c076
+  section: traps
+  statement: "ANCAs are thought to cause the inflammation in the disease."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "746-747" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c077
+  section: traps
+  statement: "In pauci-immune lesions like MPA and ANCA glomerulonephritis, deposits of antibody and complement are scanty or absent."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "747, 947-948" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c078
+  section: traps
+  statement: "ANCA vasculitis with lung involvement, not Goodpasture syndrome, is the far more common cause of lung-kidney disease."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "948" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c079
+  section: traps
+  statement: "GPA produces cavitating lung nodules that must be distinguished from tuberculosis."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "621" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c080
+  section: traps
+  statement: "Many GPA patients also have eye and skin involvement."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "746" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c081
+  section: mnemonics
+  statement: "C-ANCA is directed against PR3 and is the typical pattern in GPA."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "747" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: anca-associated-vasculitis-c082
+  section: mnemonics
+  statement: "P-ANCA is mostly directed against MPO and is typical of MPA and also seen in EGPA."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "747" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14

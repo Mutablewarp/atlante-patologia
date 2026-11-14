@@ -1,0 +1,274 @@
+entity: vascular-tumors
+claims:
+- claimId: vascular-tumors-c001
+  section: definition
+  statement: "Vascular tumors range from benign hemangiomas to malignant angiosarcoma and Kaposi sarcoma, and arise from blood or lymphatic vessel cells."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "629-632" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: vascular-tumors-c002
+  section: definition
+  statement: "A large share of benign vascular tumors are hamartomas, so they are not true neoplasms."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "629" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: vascular-tumors-c003
+  section: definition
+  statement: "The skin is the usual site of hemangiomas, though internal organs can also harbor them."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "629" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: vascular-tumors-c004
+  section: definition
+  statement: "Malignant vascular neoplasms are rare."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "631" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: vascular-tumors-c005
+  section: micro
+  statement: "The vessels of a capillary hemangioma resemble ordinary capillaries in caliber and wall structure."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "629" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: vascular-tumors-c006
+  section: micro
+  statement: "Although it has no capsule, a juvenile hemangioma usually has a clear border, and its crowded capillaries are mostly full of blood."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "630" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-14
+- claimId: vascular-tumors-c007
+  section: micro
+  statement: "Juvenile hemangioma appears on the skin of newborns and tends to fade."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "630" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: vascular-tumors-c008
+  section: micro
+  statement: "In a cavernous hemangioma blood fills wide spaces separated by scant stroma; unlike the capillary type, it does not shrink on its own."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "630" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: vascular-tumors-c009
+  section: micro
+  statement: "A port wine stain is a cavernous hemangioma located in the skin."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "630" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: vascular-tumors-c010
+  section: micro
+  statement: "A glomus tumor is a tiny, firm, bluish-red nodule where forked vessels run between clusters of rounded to cube-like glomus cells."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "631" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: vascular-tumors-c011
+  section: micro
+  statement: "Glomus tumors tend to be unusually painful, and their typical site is under the nails of fingers and toes."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "630-631" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: vascular-tumors-c012
+  section: micro
+  statement: "Epithelioid hemangioendothelioma is intermediate between hemangioma and angiosarcoma; its cells have roomy pink cytoplasm, sometimes with vacuoles, and surround open lumina."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "631" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-14
+- claimId: vascular-tumors-c013
+  section: micro
+  statement: "Epithelioid hemangioendothelioma may recur locally, and a minority of cases give metastases."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "631" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: vascular-tumors-c014
+  section: micro
+  statement: "Angiosarcomas range from tumors with well-formed vessels to ones in which vessels are barely recognizable."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "631" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: vascular-tumors-c015
+  section: micro
+  statement: "Angiosarcomas without recognizable vessels behave more aggressively and show many mitoses."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "631" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: vascular-tumors-c016
+  section: micro
+  statement: "Infection with HHV8, also called KSHV, gives rise to Kaposi sarcoma, a tumor of endothelial cells."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "632" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-14
+- claimId: vascular-tumors-c017
+  section: micro
+  statement: "Kaposi sarcoma varies in appearance: some lesions look like a hemangioma, while others are so cellular that vascular spaces are hard to see."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "632" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: vascular-tumors-c018
+  section: micro
+  statement: "Lymph fills the thin-walled, endothelium-lined spaces of a capillary lymphangioma."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "632" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: vascular-tumors-c019
+  section: micro
+  statement: "A cystic lymphangioma (cystic hygroma) is often congenital and typically sits in the neck or axilla; its endothelium-lined cysts contain fluid, not blood."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "632" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: vascular-tumors-c020
+  section: diagnosis
+  statement: "Endothelial markers such as CD31 on immunostaining show the endothelial origin of angiosarcoma cells."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "631" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: vascular-tumors-c021
+  section: diagnosis
+  statement: "Immunochemistry can separate Kaposi sarcoma from fibrosarcoma, because it reveals the endothelial lineage."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "632" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: vascular-tumors-c022
+  section: diagnosis
+  statement: "Most HHV8-positive people do not develop Kaposi sarcoma, so infection alone does not establish the tumor."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "632" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: vascular-tumors-c023
+  section: differential
+  statement: "Angiosarcoma grows into a pale gray fleshy mass that often has central necrosis, whereas hemangiomas are benign with sharp borders."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "630-631" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: vascular-tumors-c024
+  section: differential
+  statement: "Cellular Kaposi sarcoma can be mistaken for fibrosarcoma."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "632" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: vascular-tumors-c025
+  section: differential
+  statement: "Cystic lymphangioma spaces contain no red or white blood cells, which tells them from blood vessels."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "632" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: vascular-tumors-c026
+  section: differential
+  statement: "Lymphangiosarcoma is difficult to distinguish from angiosarcoma, but a preceding lymphedema or radiation points to it."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "632" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: vascular-tumors-c027
+  section: high-yield
+  statement: "Cavernous hemangioma has large spaces and does not regress, while capillary hemangioma has capillary-sized vessels."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "629-630" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: vascular-tumors-c028
+  section: high-yield
+  statement: "Glomus tumor is a small, painful nodule under the nail."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "630-631" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: vascular-tumors-c029
+  section: high-yield
+  statement: "Hepatic angiosarcoma has been associated with exposures such as Thorotrast, vinyl chloride and arsenic."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "631" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: vascular-tumors-c030
+  section: high-yield
+  statement: "HHV8 causes Kaposi sarcoma, which has become epidemic in AIDS and other states of immune suppression."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "632" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: vascular-tumors-c031
+  section: high-yield
+  statement: "Cystic lymphangioma is often congenital and typically sits in the neck or axilla."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "632" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: vascular-tumors-c032
+  section: traps
+  statement: "Juvenile hemangioma never metastasizes, even though projections of its vascular tissue can look like invasion."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "630" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: vascular-tumors-c033
+  section: traps
+  statement: "Though a cancer found at many sites, Kaposi sarcoma is seldom what kills the patient."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "632" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: vascular-tumors-c034
+  section: traps
+  statement: "Few people carrying HHV8 ever develop Kaposi sarcoma."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "632" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14

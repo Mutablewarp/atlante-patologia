@@ -1,0 +1,136 @@
+id: pulmonary-hypertension
+module: o18
+tier: core
+kind: disease
+editionDependent: true
+editionNote:
+  it: "La classificazione dell'ipertensione polmonare e le soglie pressorie sono cambiate tra le edizioni: la scheda segue lo schema del testo di riferimento, da confrontare con una linea guida aggiornata."
+  en: "The classification of pulmonary hypertension and its pressure cut-offs have changed between editions: this card follows the reference textbook's scheme and should be checked against a current guideline."
+status: published
+lastUpdated: 2026-11-14
+reviewStatus: ai-generated-unreviewed
+names:
+  it: "Ipertensione polmonare e cuore polmonare"
+  en: "Pulmonary hypertension and cor pulmonale"
+  eponyms: []
+  synonyms:
+    it: ["Cuore polmonare", "Ipertensione arteriosa polmonare"]
+    en: ["Pulmonary arterial hypertension", "Right heart disease secondary to lung disease"]
+  abbreviations: ["PAH", "PVOD"]
+summary:
+  it: "Aumento della pressione nelle arterie polmonari, da cause precapillari o postcapillari, con rimodellamento dei piccoli vasi e, nel tempo, ipertrofia e dilatazione del ventricolo destro (cuore polmonare)."
+  en: "Raised pressure in the pulmonary arteries, from precapillary or postcapillary causes, with remodeling of small vessels and, over time, right ventricular hypertrophy and dilation (cor pulmonale)."
+lenses:
+  system: [respiratory, heart, vessels]
+  process: [cellular-adaptation, thrombosis-embolism]
+  pattern: [hypertrophy]
+  presentation: [dyspnea]
+  marker: [molecular]
+  group: [vascular, genetic]
+learningObjectives:
+  - it: "Distinguere l'ipertensione polmonare precapillare da quella postcapillare e citare le cause di ciascuna."
+    en: "Distinguish precapillary from postcapillary pulmonary hypertension and name the causes of each."
+  - it: "Descrivere le lesioni vascolari (ipertrofia della media, fibrosi dell'intima, lesioni plessiformi) secondo la scala di Heath e Edwards."
+    en: "Describe the vascular lesions (medial hypertrophy, intimal fibrosis, plexiform lesions) on the Heath and Edwards scale."
+  - it: "Definire il cuore polmonare e distinguere la forma acuta da quella cronica."
+    en: "Define cor pulmonale and tell the acute form from the chronic one."
+  - it: "Spiegare come ipossia, embolie ricorrenti e mutazioni di BMPR2 aumentano la pressione polmonare."
+    en: "Explain how hypoxia, recurrent emboli and BMPR2 mutations raise pulmonary pressure."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: pulmonary-embolism
+    note:
+      it: "Un'embolia massiva improvvisa dà cuore polmonare acuto; emboli piccoli e ripetuti dànno ipertensione cronica."
+      en: "Sudden massive embolism gives acute cor pulmonale; repeated small emboli give chronic hypertension."
+  - type: complicationOf
+    target: chronic-bronchitis
+    note:
+      it: "L'ipossia alveolare cronica costringe le piccole arterie polmonari."
+      en: "Chronic alveolar hypoxia constricts small pulmonary arteries."
+  - type: complicationOf
+    target: congenital-heart-disease-left-to-right-shunts
+    note:
+      it: "Gli shunt sinistro-destro aumentano il flusso polmonare."
+      en: "Left-to-right shunts increase pulmonary flow."
+  - type: differentialOf
+    target: cardiac-hypertrophy-and-heart-failure
+    note:
+      it: "La patologia cardiaca sinistra causa una forma postcapillare."
+      en: "Left-sided heart disease causes a postcapillary form."
+quickCheck:
+  - id: pulmonary-hypertension-q1
+    q:
+      it: "Che differenza c'è tra ipertensione polmonare precapillare e postcapillare?"
+      en: "What separates precapillary from postcapillary pulmonary hypertension?"
+    a:
+      it: "Dipende da dove si trova l'origine dell'aumento di flusso o resistenza: prima o dopo il letto capillare."
+      en: "It depends on whether the source of excess flow or resistance lies before or after the capillary bed."
+    kind: short
+  - id: pulmonary-hypertension-q2
+    q:
+      it: "Quali lesioni caratterizzano i gradi 3 e 4 della scala di Heath e Edwards?"
+      en: "Which lesions mark grades 3 and 4 of the Heath and Edwards scale?"
+    a:
+      it: "Fibrosi dell'intima (grado 3) e lesioni plessiformi (grado 4); dal grado 4 in su le lesioni in genere non sono reversibili."
+      en: "Intimal fibrosis (grade 3) and plexiform lesions (grade 4); from grade 4 up the lesions are generally not reversible."
+    kind: short
+  - id: pulmonary-hypertension-q3
+    q:
+      it: "Che cosa si intende per cuore polmonare?"
+      en: "What is meant by cor pulmonale?"
+    a:
+      it: "Ipertrofia e dilatazione del ventricolo destro causate dall'ipertensione polmonare."
+      en: "Right ventricular hypertrophy and dilation caused by pulmonary hypertension."
+    kind: short
+  - id: pulmonary-hypertension-q4
+    q:
+      it: "Qual è la causa abituale del cuore polmonare acuto?"
+      en: "What is the usual cause of acute cor pulmonale?"
+    a:
+      it: "Un'embolia polmonare massiva a esordio improvviso."
+      en: "Abrupt-onset massive pulmonary embolism."
+    kind: short
+selfExplain:
+  - it: "Perché l'ipossia alveolare porta a ipertensione polmonare?"
+    en: "Why does alveolar hypoxia lead to pulmonary hypertension?"
+  - it: "Perché la stenosi mitralica provoca una forma postcapillare di ipertensione polmonare?"
+    en: "Why does mitral stenosis cause a postcapillary form of pulmonary hypertension?"
+chain:
+  - pathology:
+      it: "Ipossia alveolare cronica e vasocostrizione polmonare"
+      en: "Chronic alveolar hypoxia and pulmonary vasoconstriction"
+    sign:
+      it: "Dispnea progressiva"
+      en: "Progressive dyspnea"
+    lab:
+      it: "Ipertrofia del ventricolo destro"
+      en: "Right ventricular hypertrophy"
+examQuestions:
+  - it: "Come distingue l'ipertensione polmonare precapillare da quella postcapillare? Mi faccia qualche esempio."
+    en: "How do you tell precapillary from postcapillary pulmonary hypertension? Give some examples."
+    focus: [etiology, high-yield]
+    level: 3
+  - it: "Che cosa vede al microscopio nelle arterie polmonari di un'ipertensione polmonare grave?"
+    en: "What do you see under the microscope in the pulmonary arteries of severe pulmonary hypertension?"
+    focus: [micro]
+    level: 1
+  - it: "Mi parli del cuore polmonare: che cos'è e quali cause ha, nella forma acuta e in quella cronica?"
+    en: "Tell me about cor pulmonale: what is it, and what causes the acute and the chronic forms?"
+    focus: [definition, etiology, gross]
+    level: 1
+  - it: "Perché le lesioni dal grado 4 in su della scala di Heath e Edwards hanno un significato prognostico?"
+    en: "Why do lesions from grade 4 onward on the Heath and Edwards scale matter for prognosis?"
+    focus: [micro, prognosis]
+    level: 2
+  - it: "Perché l'ipossia alveolare cronica porta a ipertensione polmonare?"
+    en: "Why does chronic alveolar hypoxia lead to pulmonary hypertension?"
+    focus: [pathogenesis]
+    level: 2
+images:
+  - { id: pulmonary-hypertension-gross-1, role: gross, pairWith: pulmonary-hypertension-micro-1 }
+  - { id: pulmonary-hypertension-micro-1, role: micro }
+  - { id: pulmonary-hypertension-micro-2, role: micro }
+sources:
+  - { source: rubin-8e, chapter: "17", pages: "664" }
+  - { source: rubin-8e, chapter: "18", pages: "748-750" }

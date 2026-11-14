@@ -1,0 +1,112 @@
+id: giant-cell-arteritis
+module: o16
+tier: core
+kind: disease
+names:
+  it: "Arterite a cellule giganti (e arterite di Takayasu)"
+  en: "Giant cell arteritis (and Takayasu arteritis)"
+  eponyms: []
+  synonyms:
+    it: ["Arterite temporale", "Arterite granulomatosa"]
+    en: ["Temporal arteritis", "Granulomatous arteritis"]
+  abbreviations: []
+summary:
+  it: "Vasculite granulomatosa dei grandi vasi dell'anziano, tipica dell'arteria temporale, con rischio di cecità; l'arterite di Takayasu ne è la controparte nella giovane donna, con interessamento dell'aorta e dei suoi rami."
+  en: "Granulomatous large-vessel vasculitis of older adults, typical of the temporal artery, with a risk of blindness; Takayasu arteritis is the counterpart in young women, involving the aorta and its branches."
+lenses:
+  system: [vessels, head-neck, eye]
+  process: [granulomatous-inflammation, chronic-inflammation]
+  pattern: [granuloma]
+  presentation: [ischemic-event, fever]
+  marker: []
+  group: [inflammatory, immune, vascular]
+learningObjectives:
+  - it: "Descrivere l'arterite a cellule giganti come vasculite granulomatosa dei grandi vasi, tipica dell'arteria temporale e dell'età avanzata."
+    en: "Describe giant cell arteritis as a granulomatous large-vessel vasculitis typical of the temporal artery and of older age."
+  - it: "Spiegare perché una biopsia dell'arteria temporale negativa non esclude la malattia."
+    en: "Explain why a negative temporal artery biopsy does not exclude the disease."
+  - it: "Riconoscere al microscopio le cellule giganti accanto alla lamina elastica interna frammentata."
+    en: "Recognize giant cells beside a fragmented internal elastic lamina under the microscope."
+  - it: "Collegare la malattia alla cecità e alla risposta rapida ai corticosteroidi."
+    en: "Link the disease to blindness and to the fast response to corticosteroids."
+  - it: "Distinguere l'arterite di Takayasu, controparte della giovane donna, dall'arterite a cellule giganti."
+    en: "Distinguish Takayasu arteritis, the counterpart in young women, from giant cell arteritis."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: anca-associated-vasculitis
+    note:
+      it: "ANCA assenti nell'arterite a cellule giganti, presenti nelle vasculiti ANCA-associate."
+      en: "ANCA is absent in giant cell arteritis and present in ANCA-associated vasculitis."
+  - type: causes
+    target: aortic-aneurysm
+    note:
+      it: "L'interessamento dell'aorta può dare aneurismi."
+      en: "Aortic involvement can lead to aneurysms."
+  - type: causes
+    target: aortic-dissection
+    note:
+      it: "L'interessamento dell'aorta può dare dissezione."
+      en: "Aortic involvement can lead to dissection."
+quickCheck:
+  - id: giant-cell-arteritis-q1
+    q:
+      it: "Perché una biopsia dell'arteria temporale negativa non esclude l'arterite a cellule giganti?"
+      en: "Why does a negative temporal artery biopsy not exclude giant cell arteritis?"
+    a:
+      it: "Perché l'infiammazione è a chiazze e il frammento prelevato può non contenere tratti malati."
+      en: "Because the inflammation is patchy and the sampled segment may contain no diseased stretch."
+    kind: short
+  - id: giant-cell-arteritis-q2
+    q:
+      it: "Quale complicanza oculare temuta può seguire ai sintomi visivi?"
+      en: "Which feared eye complication can follow the visual symptoms?"
+    a:
+      it: "La cecità permanente, in uno o in entrambi gli occhi."
+      en: "Permanent blindness, in one or both eyes."
+    kind: short
+  - id: giant-cell-arteritis-q3
+    q:
+      it: "Con quali due elementi si distingue l'arterite di Takayasu da quella a cellule giganti?"
+      en: "Which two features separate Takayasu arteritis from giant cell arteritis?"
+    a:
+      it: "L'età di esordio, giovani donne, e la sede, l'aorta e i suoi rami."
+      en: "Age at onset, young women, and site, the aorta and its branches."
+    kind: short
+selfExplain:
+  - it: "Perché la biopsia può essere falsamente negativa pur in presenza di un quadro clinico classico?"
+    en: "Why can the biopsy be falsely negative despite a classic clinical picture?"
+  - it: "Perché l'età di esordio aiuta a distinguere l'arterite a cellule giganti dall'arterite di Takayasu?"
+    en: "Why does age at onset help tell giant cell arteritis from Takayasu arteritis?"
+examQuestions:
+  - it: "Mi parli dell'arterite a cellule giganti: che cos'è e in chi si manifesta?"
+    en: "Tell me about giant cell arteritis: what is it, and who gets it?"
+    focus: [definition]
+    level: 1
+  - it: "Che cosa vede al microscopio in una biopsia di arteria temporale con arterite a cellule giganti?"
+    en: "What do you see under the microscope in a temporal artery biopsy with giant cell arteritis?"
+    focus: [micro, ancillary]
+    level: 1
+  - it: "Perché una biopsia dell'arteria temporale negativa non esclude la malattia?"
+    en: "Why does a negative temporal artery biopsy not rule out the disease?"
+    focus: [ancillary, traps]
+    level: 2
+  - it: "Quale complicanza oculare temerebbe in un paziente anziano con cefalea temporale e disturbi visivi, e come risponde alla terapia?"
+    en: "Which eye complication would you fear in an older patient with temporal headache and visual symptoms, and how does the disease respond to treatment?"
+    focus: [clinical, prognosis]
+    level: 3
+  - it: "Come distingue l'arterite di Takayasu dall'arterite a cellule giganti?"
+    en: "How do you tell Takayasu arteritis from giant cell arteritis?"
+    focus: [definition, differential, traps]
+    level: 3
+images:
+  - id: giant-cell-arteritis-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "16"
+    pages: "620-622"
+lastUpdated: 2026-11-14
+status: published

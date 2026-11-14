@@ -15,6 +15,18 @@ export type SelfVerified = {
 };
 
 export const SELF_VERIFIED: readonly SelfVerified[] = [
+  {
+    ledger: 'anca-associated-vasculitis',
+    claims: 6,
+    name: { it: 'Vasculiti ANCA-associate (GPA, MPA, EGPA)', en: 'ANCA-associated vasculitis' },
+    path: 'e/anca-associated-vasculitis/',
+  },
+  {
+    ledger: 'aortic-aneurysm',
+    claims: 1,
+    name: { it: "Aneurismi: classificazione; aneurisma dell'aorta", en: 'Aneurysms: classification and aortic aneurysm' },
+    path: 'e/aortic-aneurysm/',
+  },
   { ledger: 'apoptosis', claims: 2, name: { it: 'Apoptosi', en: 'Apoptosis' }, path: 'e/apoptosis/' },
   {
     ledger: 'arrhythmia-substrates-and-sudden-cardiac-death',
@@ -28,8 +40,16 @@ export const SELF_VERIFIED: readonly SelfVerified[] = [
   { ledger: 'dysplasia', claims: 1, name: { it: 'Displasia', en: 'Dysplasia' }, path: 'e/dysplasia/' },
   { ledger: 'dystrophic-calcification', claims: 1, name: { it: 'Calcificazione distrofica', en: 'Dystrophic calcification' }, path: 'e/dystrophic-calcification/' },
   { ledger: 'fat-necrosis', claims: 11, name: { it: 'Necrosi adiposa (steatonecrosi)', en: 'Fat necrosis' }, path: 'e/fat-necrosis/' },
+  {
+    ledger: 'giant-cell-arteritis',
+    claims: 1,
+    name: { it: 'Arterite a cellule giganti (e arterite di Takayasu)', en: 'Giant cell arteritis (and Takayasu arteritis)' },
+    path: 'e/giant-cell-arteritis/',
+  },
   { ledger: 'hypertrophy', claims: 3, name: { it: 'Ipertrofia', en: 'Hypertrophy' }, path: 'e/hypertrophy/' },
+  { ledger: 'kawasaki-disease', claims: 2, name: { it: 'Malattia di Kawasaki', en: 'Kawasaki disease' }, path: 'e/kawasaki-disease/' },
   { ledger: 'liquefactive-necrosis', claims: 1, name: { it: 'Necrosi colliquativa', en: 'Liquefactive necrosis' }, path: 'e/liquefactive-necrosis/' },
+  { ledger: 'malignant-hypertension', claims: 4, name: { it: 'Ipertensione maligna', en: 'Malignant hypertension' }, path: 'e/malignant-hypertension/' },
   { ledger: 'metaplasia', claims: 1, name: { it: 'Metaplasia', en: 'Metaplasia' }, path: 'e/metaplasia/' },
   { ledger: 'mitral-valve-prolapse', claims: 2, name: { it: 'Prolasso della valvola mitrale', en: 'Mitral valve prolapse' }, path: 'e/mitral-valve-prolapse/' },
   { ledger: 'myocarditis', claims: 1, name: { it: 'Miocardite', en: 'Myocarditis' }, path: 'e/myocarditis/' },
@@ -40,6 +60,7 @@ export const SELF_VERIFIED: readonly SelfVerified[] = [
     path: 'e/other-regulated-cell-death/',
   },
   { ledger: 'pigment-accumulation', claims: 2, name: { it: 'Accumulo di pigmenti', en: 'Pigment accumulation' }, path: 'e/pigment-accumulation/' },
+  { ledger: 'polyarteritis-nodosa', claims: 1, name: { it: 'Poliarterite nodosa', en: 'Polyarteritis nodosa' }, path: 'e/polyarteritis-nodosa/' },
   {
     ledger: 'protein-quality-control',
     claims: 1,
@@ -52,7 +73,14 @@ export const SELF_VERIFIED: readonly SelfVerified[] = [
     name: { it: 'Febbre reumatica e cardiopatia reumatica', en: 'Rheumatic fever and rheumatic heart disease' },
     path: 'e/rheumatic-heart-disease/',
   },
+  {
+    ledger: 'thromboangiitis-obliterans',
+    claims: 2,
+    name: { it: 'Tromboangioite obliterante (malattia di Buerger)', en: 'Thromboangiitis obliterans (Buerger disease)' },
+    path: 'e/thromboangiitis-obliterans/',
+  },
   { ledger: 'thrombosis', claims: 2, name: { it: 'Trombosi', en: 'Thrombosis' }, path: 'e/thrombosis/' },
+  { ledger: 'vascular-tumors', claims: 3, name: { it: 'Tumori vascolari (emangioma, angiosarcoma, sarcoma di Kaposi)', en: 'Vascular tumors' }, path: 'e/vascular-tumors/' },
 ];
 
 /** A ledger `verifier` that names the writing or the correcting agent is not a separate verifier. */

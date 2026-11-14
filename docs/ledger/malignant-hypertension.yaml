@@ -1,0 +1,402 @@
+entity: malignant-hypertension
+claims:
+- claimId: malignant-hypertension-c001
+  section: definition
+  statement: "Malignant hypertension is a sudden, extreme pressure surge that damages small vessels and organs."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c002
+  section: definition
+  statement: "The pressure reaches 180 mm Hg or more systolic and 120 mm Hg or more diastolic."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c003
+  section: definition
+  statement: "Among hypertensive patients, malignant hypertension is rare."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c004
+  section: definition
+  statement: "Patients of African descent are affected more often than others."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c005
+  section: etiology
+  statement: "A cerebrovascular accident, or stopping antihypertensive treatment, can set off malignant hypertension."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c006
+  section: etiology
+  statement: "Overactivity of the autonomic nervous system caused by cocaine or amphetamines can produce malignant hypertension."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c007
+  section: etiology
+  statement: "Glomerulonephritis, autoimmune disease, and the pregnancy disorders preeclampsia and eclampsia can also cause malignant hypertension."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c008
+  section: etiology
+  statement: "Chronic renal injury from a range of diseases underlies many cases, and about half of patients had benign hypertension first."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "951" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c009
+  section: etiology
+  statement: "In some cases the disease develops in people who seem healthy, with no prior disease."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "951" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c010
+  section: pathogenesis
+  statement: "Exactly how the vessels are injured in malignant hypertension remains uncertain."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "951" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c011
+  section: pathogenesis
+  statement: "Endothelial injury in narrowed small vessels is proposed to result from the combination of extreme pressure and microvascular vasoconstriction."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "951" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c012
+  section: pathogenesis
+  statement: "Segments of small muscular arteries widen after their smooth muscle cells die."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c013
+  section: pathogenesis
+  statement: "Plasma proteins escape into the wall of these segments, because the endothelium has lost its integrity."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c014
+  section: pathogenesis
+  statement: "Fibrinoid necrosis is the result when fibrin is laid down in the wall at these sites."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c015
+  section: pathogenesis
+  statement: "The onion-skin appearance comes from smooth muscle proliferation that adds concentric layers of cells soon after the injury."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c016
+  section: pathogenesis
+  statement: "Platelets and other cells at the injury site may release growth factors that stimulate this proliferation."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c017
+  section: pathogenesis
+  statement: "Thrombi forming in damaged renal vessels can infarct patches of cortex."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "951" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c018
+  section: gross
+  statement: "Kidney size depends on how long benign hypertension was present beforehand, so the organ can be small or enlarged."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "951" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c019
+  section: gross
+  statement: "Small cortical infarcts may be present, and the cut kidney is blotchy red and yellow."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "951" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c020
+  section: micro
+  statement: "Arterioles show fibrinoid necrosis."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "951" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c021
+  section: micro
+  statement: "The intima of arteries is expanded by edema and has a myxoid (mucoid) appearance."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "951" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c022
+  section: micro
+  statement: "The kidney form of the combined changes is malignant nephrosclerosis; by vessel size, the general terms are malignant arteriosclerosis or arteriolosclerosis."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c023
+  section: micro
+  statement: "Glomeruli may be only congested or badly damaged, up to necrosis."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "951" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c024
+  section: micro
+  statement: "In the most severe cases the cortex is infarcted focally, and thrombi are present."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "951" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c025
+  section: micro
+  statement: "A fast pressure rise causes microaneurysms and focal hemorrhages in retinal arterioles."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c026
+  section: ancillary
+  statement: "Fibrinoid necrosis in the arteriole wall appears red on a Masson trichrome stain."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "951" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c027
+  section: ancillary
+  statement: "On electron microscopy a widened layer beneath glomerular capillary endothelium holds pale (electron-lucent) material."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "951" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c028
+  section: ancillary
+  statement: "Other forms of thrombotic microangiopathy produce an identical picture."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "951" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c029
+  section: clinical
+  statement: "Patients may complain of visual problems, dizziness, headache and nausea, and some progress to encephalopathy."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "617, 951" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c030
+  section: clinical
+  statement: "Papilledema and retinal hemorrhage can be found on examination."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c031
+  section: clinical
+  statement: "Proteinuria and hematuria are common."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "951" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c032
+  section: clinical
+  statement: "The condition is commoner in men."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "951" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c033
+  section: diagnosis
+  statement: "No single cutoff defines the disease; a very high diastolic pressure comes with kidney impairment and eye damage such as papilledema."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "950-951" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c034
+  section: diagnosis
+  statement: "Ophthalmoscopy can sometimes settle the diagnosis, since the retinal arteriolar changes may be conspicuous."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c035
+  section: diagnosis
+  statement: "A cotton wool spot seen through the ophthalmoscope is a patch of retina with ischemic necrosis and edema."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c036
+  section: prognosis
+  statement: "Infarction of the kidneys, heart or central nervous system can be fatal."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c037
+  section: prognosis
+  statement: "The longer the disease lasts, the more kidney function is lost."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "951" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c038
+  section: prognosis
+  statement: "The disease can often be controlled with intensive treatment that lowers the blood pressure."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "951" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c039
+  section: differential
+  statement: "Renal function is usually preserved in hypertensive nephrosclerosis; arterioles are thickened by hyaline material and the kidney surface is granular."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "950" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c040
+  section: differential
+  statement: "The renal changes of malignant hypertension are identical to those of other thrombotic microangiopathies."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "951" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c041
+  section: differential
+  statement: "Fibrinoid necrosis is plasma proteins and fibrin accumulating in damaged vessel walls."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c042
+  section: high-yield
+  statement: "Malignant hypertension has pressures of at least 180/120 mm Hg with symptoms of organ injury."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c043
+  section: high-yield
+  statement: "Small vessels show fibrinoid necrosis and onion-skin smooth muscle proliferation."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c044
+  section: high-yield
+  statement: "In the kidney the lesion is malignant nephrosclerosis, with possible small cortical infarcts."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "617, 951" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c045
+  section: high-yield
+  statement: "Retinal findings include papilledema, hemorrhages and cotton wool spots."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c046
+  section: high-yield
+  statement: "Control is often achieved with intensive treatment that lowers the blood pressure."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "951" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c047
+  section: traps
+  statement: "Malignant hypertension is defined by a rapid, severe rise in pressure with organ injury."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c048
+  section: traps
+  statement: "Benign nephrosclerosis shows hyaline arteriolosclerosis; the malignant form shows fibrinoid necrosis of arterioles."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "950-951" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c049
+  section: traps
+  statement: "About half of patients have a history of benign hypertension."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "951" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-hypertension-c050
+  section: mnemonics
+  statement: "Fibrinoid necrosis, onion-skin arterioles and retinal changes are the key features."
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "617" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14

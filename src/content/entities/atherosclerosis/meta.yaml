@@ -1,0 +1,115 @@
+id: atherosclerosis
+module: o16
+tier: core
+kind: disease
+names:
+  it: "Aterosclerosi"
+  en: "Atherosclerosis"
+  eponyms: []
+  synonyms:
+    it: ["Ateroma", "Placca fibrolipidica"]
+    en: ["Atheroma", "Fibrofatty plaque"]
+  abbreviations: []
+summary:
+  it: "Accumulo lento di cellule infiammatorie, cellule muscolari lisce, lipidi e connettivo nell'intima delle arterie di grande e medio calibro, che forma placche e restringe il lume."
+  en: "Slow build-up of inflammatory cells, smooth muscle cells, lipid and connective tissue in the intima of large and medium-sized arteries, forming plaques that narrow the lumen."
+lenses:
+  system: [vessels, heart]
+  process: [chronic-inflammation, thrombosis-embolism, pathologic-calcification]
+  pattern: [dystrophic-calcification]
+  presentation: [ischemic-event, chest-pain]
+  marker: [laboratory]
+  group: [vascular, degenerative, metabolic]
+learningObjectives:
+  - it: "Descrivere la sequenza dalla striscia lipidica alla placca con nucleo necrotico e cappuccio fibroso."
+    en: "Describe the sequence from fatty streak to a plaque with a necrotic core and a fibrous cap."
+  - it: "Elencare i principali fattori di rischio e spiegare perché si usa il colesterolo LDL."
+    en: "List the main risk factors and explain why LDL cholesterol is used."
+  - it: "Spiegare che cosa rende vulnerabile una placca e come la sua rottura causa trombosi."
+    en: "Explain what makes a plaque vulnerable and how its rupture causes thrombosis."
+  - it: "Elencare le complicanze: emorragia, calcificazione, aneurisma, embolia e restenosi dopo angioplastica."
+    en: "List the complications: hemorrhage, calcification, aneurysm, embolism and restenosis after angioplasty."
+prerequisites: [thrombosis]
+relations:
+  - type: causes
+    target: ischemic-heart-disease
+    note:
+      it: "La placca coronarica complicata da trombosi causa cardiopatia ischemica."
+      en: "A coronary plaque complicated by thrombosis causes ischemic heart disease."
+  - type: causes
+    target: aortic-aneurysm
+    note:
+      it: "Le lesioni complicate possono indebolire la parete e formare un aneurisma, tipicamente nell'aorta addominale."
+      en: "Complicated lesions can weaken the wall and form an aneurysm, typically in the abdominal aorta."
+  - type: sharesMechanism
+    target: familial-hypercholesterolemia
+    note:
+      it: "L'ipercolesterolemia familiare accelera l'aterosclerosi."
+      en: "Familial hypercholesterolemia accelerates atherosclerosis."
+quickCheck:
+  - id: atherosclerosis-q1
+    q:
+      it: "Perché una placca può restare silente a lungo?"
+      en: "Why can a plaque stay silent for a long time?"
+    a:
+      it: "La parete del vaso si rimodella verso l'esterno e mantiene il lume finché la placca non ne occupa circa la metà."
+      en: "The vessel wall remodels outward and keeps the lumen until the plaque occupies about half of it."
+    kind: short
+  - id: atherosclerosis-q2
+    q:
+      it: "Quale valore lipidico guida la terapia e perché non il colesterolo totale?"
+      en: "Which lipid value guides treatment, and why not total cholesterol?"
+    a:
+      it: "Il colesterolo LDL, perché il colesterolo totale include anche lipoproteine antiaterogene."
+      en: "LDL cholesterol, because total cholesterol also includes antiatherogenic lipoproteins."
+    kind: short
+  - id: atherosclerosis-q3
+    q:
+      it: "Che cosa causa la restenosi dopo angioplastica?"
+      en: "What causes restenosis after angioplasty?"
+    a:
+      it: "L'iperplasia intimale, con proliferazione delle cellule muscolari lisce e deposito di matrice."
+      en: "Intimal hyperplasia, with smooth muscle proliferation and matrix deposition."
+    kind: short
+selfExplain:
+  - it: "Perché la rottura di una placca causa trombosi?"
+    en: "Why does rupture of a plaque cause thrombosis?"
+  - it: "Perché una stenosi lieve può comunque causare un infarto?"
+    en: "Why can a mild stenosis still cause an infarct?"
+examQuestions:
+  - it: "Mi parli dell'evoluzione della placca aterosclerotica, dalla striscia lipidica alla placca con nucleo necrotico e cappuccio fibroso."
+    en: "Tell me about how an atherosclerotic plaque evolves, from the fatty streak to a plaque with a necrotic core and a fibrous cap."
+    focus: [pathogenesis, micro, gross]
+    level: 1
+  - it: "Quali sono i fattori di rischio dell'aterosclerosi, e perché per la terapia si guarda al colesterolo LDL e non a quello totale?"
+    en: "What are the risk factors for atherosclerosis, and why is LDL cholesterol used for treatment rather than total cholesterol?"
+    focus: [etiology, diagnosis]
+    level: 1
+  - it: "Perché una placca che restringe poco il lume può rompersi e dare trombosi?"
+    en: "Why can a plaque that narrows the lumen only a little rupture and cause thrombosis?"
+    focus: [pathogenesis, prognosis]
+    level: 2
+  - it: "Che cosa rende vulnerabile una placca, e quali complicanze può avere?"
+    en: "What makes a plaque vulnerable, and which complications can it have?"
+    focus: [prognosis, micro]
+    level: 3
+  - it: "Perché dopo un'angioplastica l'arteria può richiudersi, e come si cerca di prevenirlo?"
+    en: "Why can an artery narrow again after angioplasty, and how is this prevented?"
+    focus: [prognosis]
+    level: 2
+images:
+  - id: atherosclerosis-gross-1
+    role: gross
+    pairWith: atherosclerosis-micro-1
+  - id: atherosclerosis-micro-1
+    role: micro
+  - id: atherosclerosis-micro-2
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "16"
+    pages: "599-610"
+lastUpdated: 2026-11-14
+status: published

@@ -1,0 +1,266 @@
+entity: kawasaki-disease
+claims:
+- claimId: kawasaki-disease-c001
+  section: definition
+  statement: "Kawasaki disease is a vasculitis with necrosis of the vessel wall that starts suddenly in infants and young children; it is also called mucocutaneous lymph node syndrome"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: kawasaki-disease-c002
+  section: definition
+  statement: "The vessels that Kawasaki disease mainly attacks are the coronary arteries"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: kawasaki-disease-c003
+  section: etiology
+  statement: "Researchers have searched hard for an infectious cause of Kawasaki disease, but none has been identified"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: kawasaki-disease-c004
+  section: etiology
+  statement: "A subset of cases has been tied to infection with parvovirus B19 or with the New Haven coronavirus"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: kawasaki-disease-c005
+  section: etiology
+  statement: "Chlamydia, Staphylococcus and Streptococcus have been linked to still other cases"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: kawasaki-disease-c006
+  section: etiology
+  statement: "Superantigens produced by viruses or bacteria may be the common link between the suspected microbes"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: kawasaki-disease-c007
+  section: pathogenesis
+  statement: "A superantigen that bridges MHC class II and the Vβ region of the T-cell receptor triggers massive immune activation"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: kawasaki-disease-c008
+  section: pathogenesis
+  statement: "Excess inflammatory cytokines build up in the coronary arteries, partly through IL-1β and IL-18 activity"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-14
+- claimId: kawasaki-disease-c009
+  section: pathogenesis
+  statement: "Autoantibodies directed at endothelial and smooth muscle cells are found in some patients"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: kawasaki-disease-c010
+  section: gross
+  statement: "In a child who died of Kawasaki disease, aneurysms are plainly visible on the coronary arteries"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "623" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: kawasaki-disease-c011
+  section: micro
+  statement: "In a fatal case, the internal elastic lamina of the coronary artery is broken in places, leaving wide gaps"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "623" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: kawasaki-disease-c012
+  section: micro
+  statement: "Small aneurysms at the breaks in the internal elastic lamina contain thrombus"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "623" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: kawasaki-disease-c013
+  section: clinical
+  statement: "Kawasaki disease presents with high fever"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: kawasaki-disease-c014
+  section: clinical
+  statement: "Kawasaki disease presents with a rash"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: kawasaki-disease-c015
+  section: clinical
+  statement: "Kawasaki disease presents with conjunctival and oral lesions"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: kawasaki-disease-c016
+  section: clinical
+  statement: "Kawasaki disease presents with lymphadenitis"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: kawasaki-disease-c017
+  section: prognosis
+  statement: "Aneurysms of the coronary arteries, due to vasculitis, develop in 70% of patients"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: kawasaki-disease-c018
+  section: prognosis
+  statement: "Only a small fraction of the coronary aneurysms, 1% to 2%, prove fatal"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: kawasaki-disease-c019
+  section: prognosis
+  statement: "Kawasaki disease is usually self-limited"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: kawasaki-disease-c020
+  section: differential
+  statement: "Churg–Strauss syndrome: medium and small arteries are ringed by eosinophils and necrotizing granulomas, in a young person with asthma"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: kawasaki-disease-c021
+  section: differential
+  statement: "A positive P-ANCA is found in about two-thirds of Churg–Strauss patients"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: kawasaki-disease-c022
+  section: differential
+  statement: "In Buerger disease, heavy smokers have distal arm and leg arteries that become blocked by inflammation"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "623" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: kawasaki-disease-c023
+  section: differential
+  statement: "In Buerger disease, vessel-wall microabscesses have neutrophils in the middle and Langhans giant cells and fibroblasts outside"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "623" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-14
+- claimId: kawasaki-disease-c024
+  section: high-yield
+  statement: "Mucocutaneous lymph node syndrome is an alternative name for Kawasaki disease"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: kawasaki-disease-c025
+  section: high-yield
+  statement: "Kawasaki disease is a necrotizing vasculitis of infancy and early childhood"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: kawasaki-disease-c026
+  section: high-yield
+  statement: "Coronary aneurysms occur in 70% of patients with Kawasaki disease"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: kawasaki-disease-c027
+  section: high-yield
+  statement: "Only 1% to 2% of the coronary aneurysms are lethal"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: kawasaki-disease-c028
+  section: high-yield
+  statement: "A superantigen ties MHC class II to the Vβ region of the T-cell receptor"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: kawasaki-disease-c029
+  section: high-yield
+  statement: "Kawasaki disease is usually self-limited"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: kawasaki-disease-c030
+  section: traps
+  statement: "No infectious cause of Kawasaki disease has been identified, although several microbes are suspected"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: kawasaki-disease-c031
+  section: traps
+  statement: "Kawasaki disease aims chiefly at the coronary arteries, while Takayasu arteritis involves the aorta and its branches"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: kawasaki-disease-c032
+  section: traps
+  statement: "Only 1% to 2% of the coronary aneurysms are lethal"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: kawasaki-disease-c033
+  section: mnemonics
+  statement: "The features are conjunctival lesions, rash, lymphadenitis, fever and oral lesions"
+  sourceRef: { source: rubin-8e, chapter: "16", pages: "622" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14

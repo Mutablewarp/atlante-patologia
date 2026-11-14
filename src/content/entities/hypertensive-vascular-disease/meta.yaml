@@ -1,0 +1,121 @@
+id: hypertensive-vascular-disease
+module: o16
+tier: core
+kind: disease
+names:
+  it: "Vasculopatia ipertensiva (arteriolosclerosi)"
+  en: "Hypertensive vascular disease"
+  eponyms: []
+  synonyms:
+    it: ["Arteriolosclerosi ipertensiva"]
+    en: ["Hypertensive arteriolosclerosis"]
+  abbreviations: []
+summary:
+  it: "Alterazioni delle piccole arterie e delle arteriole causate dall'ipertensione sostenuta: arteriolosclerosi ialina nella forma cronica, arteriolosclerosi iperplastica con necrosi fibrinoide nella forma maligna, con il rene come organo bersaglio principale."
+  en: "Changes of small arteries and arterioles caused by sustained hypertension: hyaline arteriolosclerosis in the chronic form, hyperplastic arteriolosclerosis with fibrinoid necrosis in the malignant form, with the kidney as the main target organ."
+lenses:
+  system: [vessels, kidney]
+  process: [extracellular-accumulation, repair-fibrosis]
+  pattern: [hyaline-change, necrosis-fibrinoid, hyperplasia]
+  presentation: []
+  marker: []
+  group: [vascular]
+learningObjectives:
+  - it: "Distinguere l'ipertensione essenziale da quella secondaria."
+    en: "Distinguish essential from secondary hypertension."
+  - it: "Descrivere l'arteriolosclerosi ialina e quella iperplastica (a bulbo di cipolla) e dire in quale forma di ipertensione compaiono."
+    en: "Describe hyaline and hyperplastic (onion-skin) arteriolosclerosis and the form of hypertension in which each appears."
+  - it: "Collegare l'ipertensione al rene: rene contratto a superficie granulare e nefrosclerosi maligna."
+    en: "Link hypertension to the kidney: the contracted granular kidney and malignant nephrosclerosis."
+  - it: "Spiegare il ruolo del sistema renina-angiotensina nella pressione arteriosa."
+    en: "Explain the role of the renin-angiotensin system in blood pressure."
+prerequisites: [hyaline-change]
+relations:
+  - type: prerequisiteOf
+    target: malignant-hypertension
+    note:
+      it: "La forma maligna è un'accelerazione dell'ipertensione, con arteriolosclerosi iperplastica."
+      en: "The malignant form is an accelerated hypertension with hyperplastic arteriolosclerosis."
+  - type: causes
+    target: hypertensive-heart-disease
+    note:
+      it: "L'ipertensione cronica sovraccarica il ventricolo sinistro."
+      en: "Chronic hypertension overloads the left ventricle."
+  - type: causes
+    target: hypertensive-retinopathy
+    note:
+      it: "Gli aumenti rapidi della pressione danneggiano le arteriole retiniche."
+      en: "Rapid rises in pressure injure the retinal arterioles."
+  - type: mimics
+    target: diabetic-complications
+    note:
+      it: "L'arteriolosclerosi ialina compare anche nel diabete."
+      en: "Hyaline arteriolosclerosis also occurs in diabetes."
+  - type: sharesMechanism
+    target: fibrinoid-necrosis
+    note:
+      it: "Nell'ipertensione maligna la parete arteriolare subisce necrosi fibrinoide."
+      en: "In malignant hypertension the arteriolar wall undergoes fibrinoid necrosis."
+quickCheck:
+  - id: hypertensive-vascular-disease-q1
+    q:
+      it: "Qual è la differenza tra ipertensione essenziale e secondaria?"
+      en: "What is the difference between essential and secondary hypertension?"
+    a:
+      it: "Quella essenziale è idiopatica e poligenica e rappresenta oltre il 90% dei casi; quella secondaria ha una causa identificabile, per esempio renale o endocrina."
+      en: "Essential hypertension is idiopathic and polygenic and makes up over 90% of cases; secondary hypertension has an identifiable cause, for example renal or endocrine."
+    kind: short
+  - id: hypertensive-vascular-disease-q2
+    q:
+      it: "Quale lesione arteriolare si associa all'ipertensione cronica e quale a quella maligna?"
+      en: "Which arteriolar lesion goes with chronic hypertension and which with malignant hypertension?"
+    a:
+      it: "Cronica: arteriolosclerosi ialina (parete vitrea). Maligna: arteriolosclerosi iperplastica a bulbo di cipolla con necrosi fibrinoide."
+      en: "Chronic: hyaline arteriolosclerosis (glassy wall). Malignant: onion-skin hyperplastic arteriolosclerosis with fibrinoid necrosis."
+    kind: short
+  - id: hypertensive-vascular-disease-q3
+    q:
+      it: "Che aspetto ha il rene nell'ipertensione cronica e come si chiama la lesione dell'ipertensione maligna?"
+      en: "What does the kidney look like in chronic hypertension, and what is the lesion of malignant hypertension called?"
+    a:
+      it: "Contratto, con superficie granulare; nella forma maligna si parla di nefrosclerosi maligna."
+      en: "Contracted with a granular surface; in the malignant form the lesion is called malignant nephrosclerosis."
+    kind: short
+selfExplain:
+  - it: "Perché l'angiotensina II porta il rene a trattenere sodio?"
+    en: "Why does angiotensin II make the kidney retain sodium?"
+  - it: "Perché nell'ipertensione maligna le arteriole sviluppano una proliferazione a bulbo di cipolla dopo la necrosi?"
+    en: "Why do arterioles in malignant hypertension develop onion-skin proliferation after necrosis?"
+examQuestions:
+  - it: "Mi parli dell'ipertensione essenziale e di quella secondaria: come le distingue?"
+    en: "Tell me about essential and secondary hypertension: how do you tell them apart?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Che cosa vede al microscopio nell'arteriolosclerosi ialina e in quella iperplastica, e in quale forma di ipertensione compaiono?"
+    en: "What do you see under the microscope in hyaline and in hyperplastic arteriolosclerosis, and in which form of hypertension does each appear?"
+    focus: [micro, high-yield]
+    level: 3
+  - it: "Come si presenta il rene nell'ipertensione cronica e come si chiama la lesione renale dell'ipertensione maligna?"
+    en: "What does the kidney look like in chronic hypertension, and what is the kidney lesion of malignant hypertension called?"
+    focus: [gross, micro]
+    level: 1
+  - it: "Mi parli del sistema renina-angiotensina: come si forma l'angiotensina II e quali effetti ha?"
+    en: "Tell me about the renin-angiotensin system: how is angiotensin II made, and what does it do?"
+    focus: [pathogenesis]
+    level: 2
+images:
+  - id: hypertensive-vascular-disease-gross-1
+    role: gross
+    pairWith: hypertensive-vascular-disease-micro-1
+  - id: hypertensive-vascular-disease-micro-1
+    role: micro
+  - id: hypertensive-vascular-disease-micro-2
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "16"
+    pages: "610, 614-617"
+lastUpdated: 2026-11-14
+status: published

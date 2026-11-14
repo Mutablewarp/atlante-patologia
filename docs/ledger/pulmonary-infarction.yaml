@@ -1,0 +1,282 @@
+entity: pulmonary-infarction
+claims:
+- claimId: pulmonary-infarction-c001
+  section: definition
+  statement: "A pulmonary infarct is lung tissue that has died from loss of blood supply, usually after an embolus blocks a pulmonary artery"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "334, 339" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c002
+  section: definition
+  statement: "The lung's two blood supplies explain why most small emboli leave no infarct"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "334" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c003
+  section: definition
+  statement: "Lung tissue is lost only if the bronchial circulation cannot back up a blocked pulmonary artery"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "339" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c004
+  section: etiology
+  statement: "One of the two arterial routes is already impaired in a patient with heart failure or chronic lung disease, and such patients are the usual victims"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "334" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c005
+  section: etiology
+  statement: "Bronchial flow often falls short in congestive heart failure, and blood pooling in the lung vessels may contribute"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "339" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c006
+  section: etiology
+  statement: "The embolus that causes an infarct usually lodges in a pulmonary artery of middle caliber"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "339" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c007
+  section: pathogenesis
+  statement: "Ischemia is normally avoided because the lung receives blood from two arterial systems, the pulmonary and the bronchial"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "334" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c008
+  section: pathogenesis
+  statement: "Bleeding is the usual character of the infarct, since bronchial artery flow still reaches the dead tissue"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "334" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c009
+  section: pathogenesis
+  statement: "Within two days, blood has leaked into the dead lung tissue (number from rubin-8e only; needs a second source)"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "339" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c010
+  section: gross
+  statement: "Pulmonary infarcts are typically hemorrhagic"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "334" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c011
+  section: gross
+  statement: "The usual infarct is a pyramid whose broad side lies against the pleura"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "334" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c012
+  section: gross
+  statement: "Pallor appears in the middle of the lesion once its blood has been taken up again over time"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "334" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c013
+  section: micro
+  statement: "Blood fills the alveolar spaces of the necrotic lung tissue"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "339" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c014
+  section: micro
+  statement: "At the margin of the infarct, granulation tissue appears"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "334" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c015
+  section: micro
+  statement: "Organization of the granulation tissue converts it into a fibrous scar"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "334" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c016
+  section: clinical
+  statement: "Hemoptysis occurs only occasionally, while the other features are dyspnea, cough and a sharp pain on breathing from pleural irritation"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "334" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c017
+  section: clinical
+  statement: "Pleural effusion is common and often bloody"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "334" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c018
+  section: diagnosis
+  statement: "In partial infarction after thromboembolism the lesion leaves no scar although clinical and imaging findings resemble infarction"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "334" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c019
+  section: prognosis
+  statement: "An infarct that heals by organization ends as a fibrous scar"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "334" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c020
+  section: prognosis
+  statement: "Partial infarction heals without a scar: collateral flow lets the tissue regenerate because its framework was not destroyed"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "334" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c021
+  section: prognosis
+  statement: "A small embolus can clear completely; among the deciding factors are bronchial collateral flow and thrombolysis"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "334" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c022
+  section: prognosis
+  statement: "An uncleared embolus becomes organized and persists as fibrous bands on the artery wall"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "334" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c023
+  section: prognosis
+  statement: "Repeated small emboli that block the arterial bed rarely lead to pulmonary hypertension"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "334" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c024
+  section: differential
+  statement: "Low blood pressure, chest pain, cough and dyspnea can result from a small embolus even with no infarct"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "334" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c025
+  section: differential
+  statement: "A heart infarct is red when blood reflows into it and pale when little does"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "339" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c026
+  section: differential
+  statement: "Embolic occlusion of a single brain vessel often produces a red infarct, though a pale one is possible"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "339" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c027
+  section: high-yield
+  statement: "The lung has two arterial supplies, so infarction needs one of them to fail"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "334" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c028
+  section: high-yield
+  statement: "Pulmonary infarcts are hemorrhagic and pyramidal with the base on the pleura"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "334" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c029
+  section: high-yield
+  statement: "The usual background of pulmonary infarction is congestive heart failure or chronic lung disease"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "334" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c030
+  section: high-yield
+  statement: "A bloody pleural effusion is frequent, along with pleuritic pain, dyspnea, cough and occasional hemoptysis"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "334" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c031
+  section: high-yield
+  statement: "Granulation tissue at the infarct margin is followed by organization into a fibrous scar"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "334" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c032
+  section: traps
+  statement: "With two arterial supplies, the lung survives most small emboli without infarcting"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "334" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c033
+  section: traps
+  statement: "The infarct is hemorrhagic at first, and its center becomes pale only as the blood is resorbed"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "334" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c034
+  section: traps
+  statement: "In partial infarction the tissue framework remains and the tissue regenerates without a scar"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "334" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: pulmonary-infarction-c035
+  section: mnemonics
+  statement: "Mnemonic restating the pyramidal shape on the pleura, embolic cause, failed dual supply, granulation then scar and bloody effusion"
+  sourceRef: { source: rubin-8e, chapter: "7", pages: "334" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14

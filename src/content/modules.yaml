@@ -136,8 +136,6 @@
       names: { it: "Embolia", en: "Embolism" }
     - id: shock
       names: { it: "Shock", en: "Shock" }
-    - id: pulmonary-embolism
-      names: { it: "Embolia polmonare", en: "Pulmonary embolism" }
 - id: g08
   section: I
   order: 8
@@ -340,35 +338,8 @@
   label:
     it: "Vasi sanguigni"
     en: "Blood vessels"
-  status: planned
+  status: published
   refPages: "614-656"
-  planned:
-    - id: atherosclerosis
-      names: { it: "Aterosclerosi", en: "Atherosclerosis" }
-    - id: malignant-hypertension
-      names: { it: "Ipertensione maligna", en: "Malignant hypertension" }
-    - id: polyarteritis-nodosa
-      names: { it: "Poliarterite nodosa", en: "Polyarteritis nodosa" }
-    - id: giant-cell-arteritis
-      names: { it: "Arterite a cellule giganti (e arterite di Takayasu)", en: "Giant cell arteritis (and Takayasu arteritis)" }
-    - id: kawasaki-disease
-      names: { it: "Malattia di Kawasaki", en: "Kawasaki disease" }
-    - id: anca-associated-vasculitis
-      names: { it: "Vasculiti ANCA-associate (GPA, MPA, EGPA)", en: "ANCA-associated vasculitis" }
-    - id: hypersensitivity-vasculitis
-      names: { it: "Vasculite da ipersensibilità (leucocitoclastica, vasculite a IgA)", en: "Hypersensitivity (leukocytoclastic) vasculitis incl. IgA vasculitis" }
-    - id: thromboangiitis-obliterans
-      names: { it: "Tromboangioite obliterante (malattia di Buerger)", en: "Thromboangiitis obliterans (Buerger disease)" }
-    - id: aortic-aneurysm
-      names: { it: "Aneurismi: classificazione; aneurisma dell'aorta", en: "Aneurysms: classification and aortic aneurysm" }
-    - id: aortic-dissection
-      names: { it: "Dissezione aortica", en: "Aortic dissection" }
-    - id: hypertensive-vascular-disease
-      names: { it: "Vasculopatia ipertensiva (arteriolosclerosi)", en: "Hypertensive vascular disease" }
-    - id: venous-disease
-      names: { it: "Varici e trombosi venosa profonda", en: "Varicose veins and deep vein thrombosis" }
-    - id: vascular-tumors
-      names: { it: "Tumori vascolari (emangioma, angiosarcoma, sarcoma di Kaposi)", en: "Vascular tumors" }
 - id: o17
   section: III
   order: 17
@@ -386,12 +357,8 @@
   status: planned
   refPages: "719-789"
   planned:
-    - id: pulmonary-infarction
-      names: { it: "Infarto polmonare", en: "Pulmonary infarction" }
     - id: anthracosis
       names: { it: "Antracosi", en: "Anthracosis" }
-    - id: pulmonary-hypertension
-      names: { it: "Ipertensione polmonare e cuore polmonare", en: "Pulmonary hypertension and cor pulmonale" }
     - id: atelectasis
       names: { it: "Atelettasia", en: "Atelectasis" }
     - id: bacterial-pneumonia

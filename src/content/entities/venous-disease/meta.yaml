@@ -1,0 +1,137 @@
+id: venous-disease
+module: o16
+tier: extended
+kind: disease
+names:
+  it: "Varici e trombosi venosa profonda"
+  en: "Varicose veins and deep vein thrombosis"
+  eponyms: []
+  synonyms:
+    it: ["Varicosi", "TVP"]
+    en: ["Varicosities", "DVT"]
+  abbreviations: ["DVT", "TVP"]
+summary:
+  it: "Malattie delle vene: dilatazione e tortuosità delle vene superficiali (varici) e formazione di trombi nel circolo venoso profondo, soprattutto degli arti inferiori, con rischio di embolia polmonare."
+  en: "Diseases of the veins: dilated, tortuous superficial veins (varices) and thrombus formation in the deep venous system, mainly of the legs, with a risk of pulmonary embolism."
+lenses:
+  system: [vessels, gastrointestinal]
+  process: [thrombosis-embolism]
+  pattern: []
+  presentation: [edema, dyspnea]
+  marker: [molecular]
+  group: [vascular]
+learningObjectives:
+  - it: "Elencare i fattori di rischio delle varici degli arti inferiori."
+    en: "List the risk factors for varicose veins of the legs."
+  - it: "Spiegare perché la trombosi venosa profonda segue la stessa triade della trombosi arteriosa."
+    en: "Explain why deep vein thrombosis follows the same triad as arterial thrombosis."
+  - it: "Distinguere tromboflebite e flebotrombosi."
+    en: "Distinguish thrombophlebitis from phlebothrombosis."
+  - it: "Indicare le sedi di varici (arti inferiori, esofago, emorroidi) e la loro causa."
+    en: "Name the sites of varices (legs, esophagus, hemorrhoids) and their causes."
+  - it: "Descrivere la TVP come sorgente di embolia polmonare e le sue sequele croniche."
+    en: "Describe DVT as the source of pulmonary embolism and its chronic sequelae."
+prerequisites: [thrombosis]
+relations:
+  - type: sharesMechanism
+    target: thrombosis
+    note:
+      it: "Stessa triade: danno endoteliale, stasi, ipercoagulabilità."
+      en: "Same triad: endothelial injury, stasis, hypercoagulability."
+  - type: causes
+    target: pulmonary-embolism
+    note:
+      it: "Il trombo delle vene profonde della gamba è la fonte più frequente."
+      en: "Thrombus of the deep leg veins is the most frequent source."
+  - type: sameLesionOtherOrgan
+    target: portal-hypertension
+    note:
+      it: "Le varici esofagee complicano l'ipertensione portale."
+      en: "Esophageal varices complicate portal hypertension."
+quickCheck:
+  - id: venous-disease-q1
+    q:
+      it: "Quali tre fattori favoriscono la trombosi venosa profonda?"
+      en: "Which three factors favor deep vein thrombosis?"
+    a:
+      it: "Danno endoteliale, stasi e stato di ipercoagulabilità."
+      en: "Endothelial injury, stasis and a hypercoagulable state."
+    kind: short
+  - id: venous-disease-q2
+    q:
+      it: "Qual è la differenza tra tromboflebite e flebotrombosi?"
+      en: "What is the difference between thrombophlebitis and phlebothrombosis?"
+    a:
+      it: "La tromboflebite è un'infiammazione venosa con trombosi secondaria; la flebotrombosi è una trombosi senza infezione o infiammazione iniziale."
+      en: "Thrombophlebitis is venous inflammation with secondary thrombosis; phlebothrombosis is thrombosis without an initiating infection or inflammation."
+    kind: short
+  - id: venous-disease-q3
+    q:
+      it: "Da dove origina la maggior parte degli emboli polmonari?"
+      en: "Where do most pulmonary emboli originate?"
+    a:
+      it: "Dalle vene profonde degli arti inferiori; quelli fatali si formano per lo più nelle vene ilio-femorali."
+      en: "From the deep veins of the legs; the fatal ones form mostly in the iliofemoral veins."
+    kind: short
+  - id: venous-disease-q4
+    q:
+      it: "Qual è la causa principale delle varici esofagee?"
+      en: "What is the main cause of esophageal varices?"
+    a:
+      it: "L'ipertensione portale, di cui la cirrosi epatica è la causa principale; l'emorragia da varici può essere fatale."
+      en: "Portal hypertension, of which liver cirrhosis is the chief cause; bleeding from the varices may be fatal."
+    kind: short
+  - id: venous-disease-q5
+    q:
+      it: "Qual è la sede più frequente della trombosi venosa e dove di solito comincia?"
+      en: "Where does venous thrombosis occur most often, and where does it usually start?"
+    a:
+      it: "Quasi sempre nelle vene profonde della gamba; il trombo di solito inizia nelle vene del polpaccio, spesso nelle tasche sopra le valvole."
+      en: "Almost always in the deep leg veins; the thrombus usually starts in the calf veins, often in the pockets above the valves."
+    kind: short
+selfExplain:
+  - it: "Perché dopo una TVP l'insufficienza venosa cronica è quasi inevitabile?"
+    en: "Why is chronic venous insufficiency almost inevitable after a DVT?"
+  - it: "Perché un paziente operato che si alza per la prima volta dal letto può morire all'improvviso?"
+    en: "Why can a postoperative patient die suddenly on first getting out of bed?"
+chain:
+  - pathology:
+      it: "Trombosi occlusiva delle vene femorale o iliaca"
+      en: "Occlusive thrombosis of the femoral or iliac vein"
+    sign:
+      it: "Congestione, edema e cianosi dell'arto"
+      en: "Congestion, edema and cyanosis of the limb"
+    lab:
+      it: "Non indicato nel testo di riferimento"
+      en: "Not given in the reference text"
+examQuestions:
+  - it: "Mi parli delle varici: in quali sedi si trovano e qual è la causa in ciascuna?"
+    en: "Tell me about varices: where do they occur and what causes them at each site?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Mi parli della trombosi venosa profonda: quali sono i fattori di rischio e perché è pericolosa?"
+    en: "Tell me about deep vein thrombosis: what are the risk factors and why is it dangerous?"
+    focus: [etiology, prognosis]
+    level: 2
+  - it: "Come distingue la tromboflebite dalla flebotrombosi?"
+    en: "How do you tell thrombophlebitis from phlebothrombosis?"
+    focus: [definition, traps]
+    level: 3
+images:
+  - id: venous-disease-gross-1
+    role: gross
+    pairWith: venous-disease-micro-1
+  - id: venous-disease-micro-1
+    role: micro
+    pairWith: venous-disease-gross-1
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "7"
+    pages: "331-332"
+  - source: rubin-8e
+    chapter: "16"
+    pages: "628-629"
+lastUpdated: 2026-11-14
+status: published

@@ -1,0 +1,130 @@
+id: malignant-hypertension
+module: o16
+tier: extended
+kind: disease
+names:
+  it: "Ipertensione maligna"
+  en: "Malignant hypertension"
+  eponyms: []
+  synonyms:
+    it: ["Ipertensione accelerata", "Nefroangiosclerosi maligna"]
+    en: ["Malignant nephrosclerosis"]
+  abbreviations: []
+summary:
+  it: "Aumento rapido e severo della pressione arteriosa con danno d'organo, caratterizzato da necrosi fibrinoide e arteriolite a buccia di cipolla nei piccoli vasi di rene, retina ed encefalo."
+  en: "Rapid, severe rise in blood pressure with organ injury, marked by fibrinoid necrosis and onion-skin arteriolitis of small vessels in kidney, retina and brain."
+lenses:
+  system: [vessels, kidney, eye]
+  process: [cell-injury, necrosis]
+  pattern: [necrosis-fibrinoid]
+  presentation: [hematuria]
+  marker: []
+  group: [vascular]
+learningObjectives:
+  - it: "Definire l'ipertensione maligna e riconoscerne le cause scatenanti."
+    en: "Define malignant hypertension and recognize its triggers."
+  - it: "Descrivere necrosi fibrinoide e proliferazione a buccia di cipolla nei piccoli vasi."
+    en: "Describe fibrinoid necrosis and onion-skin proliferation in small vessels."
+  - it: "Elencare il danno d'organo a carico di rene e retina."
+    en: "List the organ damage in kidney and retina."
+  - it: "Distinguere l'ipertensione maligna dalla nefrosclerosi ipertensiva benigna."
+    en: "Distinguish malignant hypertension from benign hypertensive nephrosclerosis."
+prerequisites: [fibrinoid-necrosis]
+relations:
+  - type: differentialOf
+    target: hypertensive-vascular-disease
+    note:
+      it: "Arteriolosclerosi ialina e rene granulare contro necrosi fibrinoide delle arteriole."
+      en: "Hyaline arteriolosclerosis and granular kidney versus fibrinoid necrosis of arterioles."
+  - type: sharesMechanism
+    target: thrombotic-microangiopathies
+    note:
+      it: "Le lesioni renali sono identiche a quelle delle microangiopatie trombotiche."
+      en: "The renal lesions are identical to those of thrombotic microangiopathies."
+  - type: sameLesionOtherOrgan
+    target: hypertensive-retinopathy
+    note:
+      it: "Le arteriole retiniche mostrano le stesse alterazioni vascolari da rialzo pressorio rapido."
+      en: "Retinal arterioles show the same vascular changes from a rapid pressure rise."
+quickCheck:
+  - id: malignant-hypertension-q1
+    q:
+      it: "Quali due lesioni dei piccoli vasi caratterizzano l'ipertensione maligna?"
+      en: "Which two small-vessel lesions characterize malignant hypertension?"
+    a:
+      it: "La necrosi fibrinoide della parete e la proliferazione concentrica delle cellule muscolari lisce, a buccia di cipolla."
+      en: "Fibrinoid necrosis of the wall and concentric smooth muscle proliferation, the onion-skin pattern."
+    kind: short
+  - id: malignant-hypertension-q2
+    q:
+      it: "Quali segni oculari fanno sospettare un'ipertensione maligna?"
+      en: "Which eye findings suggest malignant hypertension?"
+    a:
+      it: "Emorragie retiniche, papilledema e cotton wool spots."
+      en: "Retinal hemorrhages, papilledema and cotton wool spots."
+    kind: short
+  - id: malignant-hypertension-q3
+    q:
+      it: "Come appare il rene sul taglio nell'ipertensione maligna?"
+      en: "How does the kidney look on cut section in malignant hypertension?"
+    a:
+      it: "Superficie di taglio chiazzata rosso-giallastra, con piccoli infarti corticali occasionali."
+      en: "A mottled red and yellow cut surface, with occasional small cortical infarcts."
+    kind: short
+  - id: malignant-hypertension-q4
+    q:
+      it: "Quali valori pressori e quale tipo di danno definiscono l'ipertensione maligna?"
+      en: "Which pressure values and which kind of injury define malignant hypertension?"
+    a:
+      it: "Pressione di almeno 180/120 mm Hg con segni di danno d'organo."
+      en: "Pressure of at least 180/120 mm Hg with signs of organ injury."
+    kind: short
+  - id: malignant-hypertension-q5
+    q:
+      it: "Quali eventi possono scatenare un'ipertensione maligna?"
+      en: "Which events can set off malignant hypertension?"
+    a:
+      it: "Un accidente cerebrovascolare o la sospensione della terapia antipertensiva; anche cocaina o anfetamine possono provocarla."
+      en: "A cerebrovascular accident or stopping antihypertensive treatment; cocaine or amphetamines can also produce it."
+    kind: short
+selfExplain:
+  - it: "Perché la perdita di integrità endoteliale porta a necrosi fibrinoide?"
+    en: "Why does loss of endothelial integrity lead to fibrinoid necrosis?"
+  - it: "Perché la proliferazione delle cellule muscolari lisce dà un aspetto a buccia di cipolla?"
+    en: "Why does smooth muscle proliferation give an onion-skin appearance?"
+chain:
+  - pathology:
+      it: "Necrosi fibrinoide delle arteriole renali con infarti corticali"
+      en: "Fibrinoid necrosis of renal arterioles with cortical infarcts"
+    sign:
+      it: "Cefalea, disturbi visivi, papilledema"
+      en: "Headache, visual disturbances, papilledema"
+    lab:
+      it: "Ematuria e proteinuria"
+      en: "Hematuria and proteinuria"
+examQuestions:
+  - it: "Mi parli della necrosi fibrinoide e dell'arteriolite a buccia di cipolla nell'ipertensione maligna."
+    en: "Tell me about fibrinoid necrosis and onion-skin arteriolitis in malignant hypertension."
+    focus: [pathogenesis, micro]
+    level: 2
+  - it: "Quali organi sono colpiti nell'ipertensione maligna e che cosa si trova in rene e retina?"
+    en: "Which organs are damaged in malignant hypertension, and what is found in the kidney and retina?"
+    focus: [micro, clinical, prognosis]
+    level: 1
+  - it: "Come distingue l'ipertensione maligna dalla nefrosclerosi ipertensiva benigna?"
+    en: "How do you tell malignant hypertension from benign hypertensive nephrosclerosis?"
+    focus: [differential, traps]
+    level: 3
+images:
+  - { id: malignant-hypertension-micro-1, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "16"
+    pages: "617"
+  - source: rubin-8e
+    chapter: "22"
+    pages: "950-951"
+lastUpdated: 2026-11-14
+status: published
