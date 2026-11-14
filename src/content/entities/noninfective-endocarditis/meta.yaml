@@ -1,0 +1,139 @@
+id: noninfective-endocarditis
+module: o17
+tier: core
+kind: disease
+editionDependent: false
+status: published
+lastUpdated: 2026-11-14
+reviewStatus: ai-generated-unreviewed
+names:
+  it: "Endocarditi non infettive (trombotica non batterica, Libman–Sacks)"
+  en: "Non-infective endocarditis (NBTE, Libman–Sacks)"
+  eponyms: ["Libman–Sacks"]
+  synonyms:
+    it: ["Endocardite marantica", "Endocardite trombotica non batterica"]
+    en: ["Marantic endocarditis", "Nonbacterial thrombotic endocarditis"]
+  abbreviations: ["NBTE"]
+summary:
+  it: "Endocarditi con vegetazioni sterili: quella trombotica non batterica (marantica) dei tumori e degli stati di deperimento e quella di Libman–Sacks del lupus eritematoso sistemico."
+  en: "Endocarditis with sterile vegetations: nonbacterial thrombotic (marantic) endocarditis of cancer and wasting states, and Libman–Sacks endocarditis of systemic lupus erythematosus."
+lenses:
+  system: [heart]
+  process: [thrombosis-embolism, hypersensitivity]
+  pattern: []
+  presentation: [incidental-finding, ischemic-event]
+  marker: []
+  group: [immune, vascular]
+learningObjectives:
+  - it: "Definire l'endocardite trombotica non batterica e riconoscerne il contesto clinico (tumori, stati di deperimento)."
+    en: "Define nonbacterial thrombotic endocarditis and recognize its clinical setting (cancer, wasting states)."
+  - it: "Descrivere l'endocardite di Libman–Sacks nel lupus: sede e dimensioni delle vegetazioni."
+    en: "Describe Libman–Sacks endocarditis in lupus: site and size of the vegetations."
+  - it: "Distinguere le vegetazioni sterili da quelle dell'endocardite infettiva e della cardiopatia reumatica."
+    en: "Tell sterile vegetations from those of infective endocarditis and rheumatic heart disease."
+  - it: "Indicare la complicanza principale dell'endocardite trombotica non batterica."
+    en: "State the main complication of nonbacterial thrombotic endocarditis."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: infective-endocarditis
+    note:
+      it: "Aspetto simile, ma vegetazioni sterili, senza infiammazione e senza distruzione valvolare."
+      en: "Similar look, but sterile vegetations without inflammation or valve destruction."
+  - type: differentialOf
+    target: rheumatic-heart-disease
+    note:
+      it: "Lembi ispessiti e fusi nella malattia reumatica cronica."
+      en: "Thickened, fused leaflets in chronic rheumatic disease."
+  - type: sharesMechanism
+    target: disseminated-intravascular-coagulation
+    note:
+      it: "Può accompagnare la coagulazione intravascolare disseminata."
+      en: "May accompany disseminated intravascular coagulation."
+  - type: sameLesionOtherOrgan
+    target: systemic-lupus-erythematosus
+    note:
+      it: "L'endocardite di Libman–Sacks è la lesione cardiaca più evidente del lupus."
+      en: "Libman–Sacks endocarditis is the most striking cardiac lesion of lupus."
+quickCheck:
+  - id: noninfective-endocarditis-q1
+    q:
+      it: "In quali contesti compare l'endocardite trombotica non batterica?"
+      en: "In which settings does nonbacterial thrombotic endocarditis occur?"
+    a:
+      it: "Soprattutto con tumori (adenocarcinomi di pancreas e polmone, neoplasie ematologiche) e altre malattie debilitanti, anche con coagulazione intravascolare disseminata."
+      en: "Mainly with cancer (adenocarcinomas of pancreas and lung, hematologic malignancies) and other wasting diseases, also with disseminated intravascular coagulation."
+    kind: short
+  - id: noninfective-endocarditis-q2
+    q:
+      it: "Perché l'endocardite trombotica non batterica non è un'endocardite infettiva?"
+      en: "Why is nonbacterial thrombotic endocarditis not infective endocarditis?"
+    a:
+      it: "Le vegetazioni sono sterili, senza microrganismi né infiammazione, e non distruggono la valvola."
+      en: "The vegetations are sterile, with no microorganisms or inflammation, and they do not destroy the valve."
+    kind: short
+  - id: noninfective-endocarditis-q3
+    q:
+      it: "Dove si trovano di solito le vegetazioni di Libman–Sacks e che esito hanno?"
+      en: "Where do Libman–Sacks vegetations usually sit and how do they end?"
+    a:
+      it: "Sulla valvola mitrale, di solito sul versante atriale; di norma guariscono senza cicatrice e senza deficit funzionale."
+      en: "On the mitral valve, usually the atrial surface; they usually heal without scarring or functional deficit."
+    kind: short
+  - id: noninfective-endocarditis-q4
+    q:
+      it: "Di che cosa sono fatte le vegetazioni dell'endocardite trombotica non batterica?"
+      en: "What are the vegetations of nonbacterial thrombotic endocarditis made of?"
+    a:
+      it: "Di masse di piastrine e fibrina, senza microrganismi né infiammazione."
+      en: "Platelet–fibrin masses with neither microorganisms nor inflammation."
+    kind: short
+  - id: noninfective-endocarditis-q5
+    q:
+      it: "Qual è il pericolo principale dell'endocardite trombotica non batterica?"
+      en: "What is the main hazard of nonbacterial thrombotic endocarditis?"
+    a:
+      it: "L'embolizzazione a distanza, che può dare infarti in molti organi, anche se è rara."
+      en: "Distant embolization, which can infarct many organs, although it is rare."
+    kind: short
+selfExplain:
+  - it: "Perché una neoplasia o una coagulazione intravascolare disseminata possono favorire vegetazioni sterili sulle valvole?"
+    en: "Why might cancer or disseminated intravascular coagulation favor sterile vegetations on valves?"
+  - it: "Perché l'assenza di infiammazione e di microrganismi permette di distinguere una vegetazione sterile da una infettiva?"
+    en: "Why does the absence of inflammation and microorganisms separate a sterile vegetation from an infective one?"
+chain:
+  - pathology:
+      it: "Vegetazioni piastriniche-fibriniche sterili su valvola normale"
+      en: "Sterile platelet–fibrin vegetations on a normal valve"
+    sign:
+      it: "Embolia a distanza con infarti"
+      en: "Distant embolization with infarcts"
+    lab:
+      it: "Assenza di microrganismi e infiammazione all'esame istologico"
+      en: "No microorganisms or inflammation on histology"
+examQuestions:
+  - it: "Mi parli dell'endocardite trombotica non batterica: in quali pazienti compare e come sono le valvole?"
+    en: "Tell me about nonbacterial thrombotic endocarditis: in which patients does it occur and how do the valves look?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Mi parli dell'endocardite di Libman–Sacks: in quale malattia compare, dove si localizzano le vegetazioni e come guariscono?"
+    en: "Tell me about Libman–Sacks endocarditis: in which disease does it occur, where do the vegetations sit and how do they heal?"
+    focus: [definition, gross, prognosis]
+    level: 1
+  - it: "Che cosa vede al microscopio in una vegetazione di endocardite trombotica non batterica?"
+    en: "What do you see under the microscope in a vegetation of nonbacterial thrombotic endocarditis?"
+    focus: [micro]
+    level: 2
+  - it: "Come distingue l'endocardite trombotica non batterica dall'endocardite infettiva e dalla malattia reumatica cronica?"
+    en: "How do you tell nonbacterial thrombotic endocarditis from infective endocarditis and from chronic rheumatic disease?"
+    focus: [differential, micro, gross]
+    level: 3
+  - it: "Un paziente con tumore ha vegetazioni sterili su valvole d'aspetto normale: qual è la diagnosi e qual è il pericolo principale?"
+    en: "In a patient with cancer you find sterile vegetations on normal-looking valves: what is the diagnosis and what is the main danger?"
+    focus: [high-yield, prognosis]
+    level: 3
+images: []
+sources:
+  - source: rubin-8e
+    chapter: "17"
+    pages: "668-669, 671"
