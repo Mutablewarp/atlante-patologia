@@ -1,0 +1,93 @@
+id: thromboangiitis-obliterans
+module: o16
+tier: extended
+kind: disease
+names:
+  it: "Tromboangioite obliterante (malattia di Buerger)"
+  en: "Thromboangiitis obliterans (Buerger disease)"
+  eponyms: ["Buerger disease"]
+  synonyms:
+    it: ["Malattia di Buerger"]
+    en: ["Buerger disease"]
+  abbreviations: []
+summary:
+  it: "Vasculite infiammatoria trombotizzante delle arterie di medio e piccolo calibro degli arti distali, tipica dei fumatori forti, con microascessi neutrofili nella parete e gangrena delle estremità."
+  en: "Inflammatory, thrombosing vasculitis of medium and small arteries of the distal limbs, typical of heavy smokers, with neutrophilic microabscesses in the wall and gangrene of the extremities."
+lenses:
+  system: [vessels]
+  process: [acute-inflammation, thrombosis-embolism]
+  pattern: [gangrene]
+  presentation: [ischemic-event]
+  marker: []
+  group: [vascular, inflammatory]
+learningObjectives:
+  - it: "Riconoscere la tromboangioite obliterante come malattia infiammatoria occlusiva delle arterie di medio e piccolo calibro degli arti distali nei fumatori."
+    en: "Recognize thromboangiitis obliterans as an occlusive inflammatory disease of medium and small distal limb arteries in smokers."
+  - it: "Descrivere il quadro istologico: infiammazione neutrofila, trombosi e microascessi con cellule giganti di Langhans."
+    en: "Describe the histology: neutrophilic inflammation, thrombosis and microabscesses with Langhans giant cells."
+  - it: "Distinguere la trombosi della malattia di Buerger da quella associata ad aterosclerosi."
+    en: "Distinguish the thrombosis of Buerger disease from thrombosis associated with atherosclerosis."
+prerequisites: [thrombosis]
+relations:
+  - type: differentialOf
+    target: atherosclerosis
+    note:
+      it: "I microascessi neutrofili con cellule giganti distinguono la trombosi di Buerger da quella aterosclerotica."
+      en: "Neutrophilic microabscesses with giant cells distinguish Buerger thrombosis from atherosclerotic thrombosis."
+  - type: causes
+    target: gangrene
+    note:
+      it: "Le lesioni precoci possono causare gangrena dell'estremità."
+      en: "Early lesions can cause gangrene of the extremity."
+quickCheck:
+  - id: thromboangiitis-obliterans-q1
+    q:
+      it: "Quale reperto istologico distingue la trombosi della malattia di Buerger da quella dell'aterosclerosi?"
+      en: "Which histologic finding distinguishes the thrombosis of Buerger disease from that of atherosclerosis?"
+    a:
+      it: "Microascessi di parete con centro neutrofilo circondato da fibroblasti e cellule giganti di Langhans."
+      en: "Microabscesses in the wall with a neutrophil center surrounded by fibroblasts and Langhans giant cells."
+    kind: short
+  - id: thromboangiitis-obliterans-q2
+    q:
+      it: "Qual è il paziente tipico e quale intervento può indurre la remissione?"
+      en: "Who is the typical patient, and which step may induce remission?"
+    a:
+      it: "Un giovane o un adulto di mezza età forte fumatore; la sospensione del fumo può portare a remissione."
+      en: "A young or middle-aged heavy smoker; stopping smoking may lead to remission."
+    kind: short
+  - id: thromboangiitis-obliterans-q3
+    q:
+      it: "Con quale sintomo esordisce di solito la malattia e che cosa può accadere nelle lesioni precoci gravi?"
+      en: "How does the disease usually begin, and what can severe early lesions cause?"
+    a:
+      it: "Con claudicazione intermittente; le lesioni gravi possono dare gangrena dell'estremità e portare all'amputazione."
+      en: "With intermittent claudication; severe lesions can cause gangrene of the extremity and lead to amputation."
+    kind: short
+selfExplain:
+  - it: "Perché la sospensione del fumo può far regredire la malattia?"
+    en: "Why can stopping smoking make the disease regress?"
+  - it: "Perché il trombo della malattia di Buerger non si può considerare un semplice trombo aterosclerotico?"
+    en: "Why can the thrombus of Buerger disease not be treated as a plain atherosclerotic thrombus?"
+examQuestions:
+  - it: "Mi parli della malattia di Buerger: chi colpisce e quali vasi sono interessati?"
+    en: "Tell me about Buerger disease: who gets it, and which vessels are involved?"
+    focus: [definition]
+    level: 1
+  - it: "Che cosa vede al microscopio in un'arteria colpita dalla tromboangioite obliterante?"
+    en: "What do you see under the microscope in an artery affected by thromboangiitis obliterans?"
+    focus: [micro]
+    level: 2
+  - it: "Come distingue un trombo della malattia di Buerger da un trombo su base aterosclerotica?"
+    en: "How do you tell the thrombus of Buerger disease from a thrombus on an atherosclerotic background?"
+    focus: [micro, differential]
+    level: 3
+images: []
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "16"
+    pages: "623"
+lastUpdated: 2026-11-14
+status: published
