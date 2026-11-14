@@ -1,0 +1,132 @@
+id: pulmonary-embolism
+module: g07
+tier: core
+kind: disease
+editionDependent: false
+status: published
+lastUpdated: 2026-11-14
+reviewStatus: ai-generated-unreviewed
+names:
+  it: "Embolia polmonare"
+  en: "Pulmonary embolism"
+  eponyms: []
+  synonyms:
+    it: ["Tromboembolia polmonare"]
+    en: ["Pulmonary thromboembolism"]
+  abbreviations: ["PE", "CTEPH"]
+summary:
+  it: "Occlusione di un'arteria polmonare da parte di materiale trasportato dal sangue venoso, quasi sempre un trombo staccatosi dalle vene profonde degli arti inferiori; le conseguenze vanno dal reperto silente al collasso cardiocircolatorio e alla morte improvvisa."
+  en: "Blockage of a pulmonary artery by material carried in venous blood, nearly always a clot from the deep leg veins; the effects range from a silent finding to cardiovascular collapse and sudden death."
+lenses:
+  system: [respiratory, vessels, heart]
+  process: [thrombosis-embolism, hypoxic-ischemic-injury]
+  pattern: []
+  presentation: [dyspnea, chest-pain, ischemic-event]
+  marker: []
+  group: [vascular]
+learningObjectives:
+  - it: "Indicare l'origine più frequente degli emboli polmonari e i fattori che ne aumentano il rischio."
+    en: "State the most common source of pulmonary emboli and the factors that raise the risk."
+  - it: "Distinguere l'embolia massiva dalle embolie piccole e spiegare perché la prima porta a collasso e morte."
+    en: "Distinguish massive from small emboli and explain why the first leads to collapse and death."
+  - it: "Spiegare perché la maggior parte delle piccole embolie non dà infarto e perché l'infarto polmonare è emorragico."
+    en: "Explain why most small emboli cause no infarct and why a pulmonary infarct is hemorrhagic."
+  - it: "Descrivere l'ipertensione polmonare cronica tromboembolica come esito di embolie ricorrenti."
+    en: "Describe chronic thromboembolic pulmonary hypertension as the result of recurrent emboli."
+prerequisites: [thrombosis]
+relations:
+  - type: complicationOf
+    target: thrombosis
+    note:
+      it: "L'embolia polmonare nasce da un trombo venoso profondo che si frammenta."
+      en: "Pulmonary embolism arises when a deep venous thrombus breaks off."
+  - type: causes
+    target: pulmonary-infarction
+    note:
+      it: "Solo una minoranza delle embolie dà infarto, di solito con cuore o polmone già malati."
+      en: "Only a minority of emboli cause infarction, usually with existing heart or lung disease."
+  - type: causes
+    target: pulmonary-hypertension
+    note:
+      it: "Embolie piccole e ricorrenti possono portare a ipertensione polmonare."
+      en: "Recurrent small emboli can lead to pulmonary hypertension."
+  - type: sharesMechanism
+    target: embolism
+    note:
+      it: "Nell'embolia paradossa l'embolo venoso raggiunge le arterie sistemiche."
+      en: "In paradoxical embolism the venous embolus reaches systemic arteries."
+quickCheck:
+  - id: pulmonary-embolism-q1
+    q:
+      it: "Da dove origina la maggior parte degli emboli polmonari?"
+      en: "Where do most pulmonary emboli originate?"
+    a:
+      it: "Dalle vene profonde degli arti inferiori; quelli letali si formano soprattutto nelle vene ileofemorali."
+      en: "From the deep veins of the legs; the fatal ones mostly form in the iliofemoral veins."
+    kind: short
+  - id: pulmonary-embolism-q2
+    q:
+      it: "Perché la maggior parte delle piccole embolie polmonari non causa infarto?"
+      en: "Why do most small pulmonary emboli cause no infarct?"
+    a:
+      it: "Perché il polmone ha una doppia vascolarizzazione, polmonare e bronchiale."
+      en: "Because the lung has a dual blood supply, pulmonary and bronchial."
+    kind: short
+  - id: pulmonary-embolism-q3
+    q:
+      it: "Perché un infarto polmonare è emorragico?"
+      en: "Why is a pulmonary infarct hemorrhagic?"
+    a:
+      it: "Perché l'arteria bronchiale continua a portare sangue all'area necrotica."
+      en: "Because the bronchial artery keeps supplying blood to the necrotic area."
+    kind: short
+  - id: pulmonary-embolism-q4
+    q:
+      it: "Che cos'è l'ipertensione polmonare cronica tromboembolica?"
+      en: "What is chronic thromboembolic pulmonary hypertension?"
+    a:
+      it: "Ipertensione polmonare con insufficienza cardiaca destra dovuta a molte embolie, spesso silenti, nelle piccole arterie del polmone."
+      en: "Pulmonary hypertension with right heart failure caused by many, often silent, emboli in small lung arteries."
+    kind: short
+selfExplain:
+  - it: "Perché un'embolia massiva provoca un calo improvviso della pressione arteriosa sistemica?"
+    en: "Why does a massive embolus cause a sudden fall in systemic blood pressure?"
+  - it: "Perché embolie piccole e ripetute possono portare a ipertensione polmonare?"
+    en: "Why can small repeated emboli lead to pulmonary hypertension?"
+chain:
+  - pathology:
+      it: "Trombo venoso profondo che si stacca e occlude un'arteria polmonare principale"
+      en: "Deep venous thrombus breaks off and blocks a main pulmonary artery"
+    sign:
+      it: "Insufficienza ventricolare destra acuta, ipotensione, collasso"
+      en: "Acute right ventricular failure, hypotension, collapse"
+    lab:
+      it: "Trombo non occlusivo a bassa attenuazione in un'arteria segmentaria alla TC con contrasto (forma cronica)"
+      en: "Low-attenuation nonocclusive thrombus in a segmental artery on contrast CT (chronic form)"
+examQuestions:
+  - it: "Mi parli dell'embolia polmonare: da dove provengono gli emboli e chi è a rischio?"
+    en: "Tell me about pulmonary embolism: where do the emboli come from, and who is at risk?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Come distingue un'embolia polmonare massiva da una di piccole dimensioni, per meccanismo ed esito?"
+    en: "How do you tell a massive pulmonary embolism from a small one, in mechanism and outcome?"
+    focus: [pathogenesis, prognosis]
+    level: 3
+  - it: "Perché la maggior parte delle piccole embolie non dà infarto e, quando lo dà, l'infarto polmonare è emorragico?"
+    en: "Why do most small emboli not cause an infarct, and why is a pulmonary infarct hemorrhagic when it does occur?"
+    focus: [pathogenesis, gross]
+    level: 2
+  - it: "Che cosa vede in un'arteria polmonare quando un tromboembolo si è organizzato?"
+    en: "What do you see in a pulmonary artery after a thromboembolus has organized?"
+    focus: [micro]
+    level: 2
+  - it: "Come distingue l'ipertensione polmonare da emboli ricorrenti da altre forme di ipertensione polmonare?"
+    en: "How do you tell pulmonary hypertension from recurrent emboli apart from other forms of pulmonary hypertension?"
+    focus: [pathogenesis, differential]
+    level: 3
+images:
+  - { id: pulmonary-embolism-gross-1, role: gross, pairWith: pulmonary-embolism-micro-1 }
+  - { id: pulmonary-embolism-micro-1, role: micro }
+sources:
+  - { source: rubin-8e, chapter: "7", pages: "332-334" }
+  - { source: rubin-8e, chapter: "18", pages: "750" }
