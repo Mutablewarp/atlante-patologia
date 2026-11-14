@@ -9,7 +9,7 @@ import type { Role } from '../lib/body-view.ts';
 export type Colors = Record<string, string>;
 
 /** Solid, these hide every other organ in the whole-body view (spec section 7): the breast covers the chest. */
-const GHOST_WHOLE = new Set(['skeletal-muscle', 'bones', 'breast']);
+export const GHOST_WHOLE = new Set(['skeletal-muscle', 'bones', 'breast']);
 const GHOST_ALPHA = 0.12;
 /** Hundreds of overlapping muscles at the usual alpha make a fog over the organ in front of the camera. */
 const FAINT = new Set(['skeletal-muscle']);

@@ -12,14 +12,17 @@ export const tBody = defineStrings({
   plannedBadge: { it: 'pianificata', en: 'planned' },
   noCard: { it: 'Nessuna scheda per ora.', en: 'No card yet.' },
   countOne: { it: '1 scheda', en: '1 card' },
+  // the word after the number of a chip, for a screen reader only ("Cuore 9 schede")
+  unitOne: { it: 'scheda', en: 'card' },
+  unitMany: { it: 'schede', en: 'cards' },
   countMany: { it: '{n} schede', en: '{n} cards' },
 
   // The stage (spec §5): names, help and messages. The script reads the messages from `data-t-*` attributes.
   stage: { it: 'Corpo umano in 3D', en: 'Human body in 3D' },
   controls: { it: 'Comandi del modello 3D', en: '3D model controls' },
   help: {
-    it: 'Con il modello attivo: frecce per ruotare, più e meno per avvicinare, 0 per ripartire, le parentesi quadre per cambiare organo, Esc per deselezionare.',
-    en: 'With the model on: arrow keys rotate, plus and minus zoom, 0 resets, the square brackets change organ, Esc clears the selection.',
+    it: 'Con il modello attivo: frecce per ruotare, più per avvicinare, meno per allontanare, 0 per ripristinare la vista, le parentesi quadre per cambiare organo, Esc per deselezionare.',
+    en: 'With the model on: arrow keys rotate, plus zooms in, minus zooms out, 0 resets the view, the square brackets change organ, Esc clears the selection.',
   },
   load: { it: 'Esplora in 3D', en: 'Explore in 3D' },
   off: { it: 'Spegni il 3D', en: 'Turn 3D off' },
@@ -40,7 +43,7 @@ export const tBody = defineStrings({
   turnedOff: { it: 'Modello 3D spento.', en: '3D model turned off.' },
   error: { it: 'Impossibile caricare il modello 3D. Le schede restano qui sotto.', en: 'The 3D model could not be loaded. The cards stay below.' },
   lost: { it: 'Il 3D si è interrotto. Premi “Esplora in 3D” per riprovare.', en: 'The 3D view stopped. Press “Explore in 3D” to try again.' },
-  noModel: { it: 'Questo organo non ha un modello 3D.', en: 'This organ has no 3D model.' },
+  noModel: { it: '{organ}: nessun modello 3D per ora.', en: '{organ}: no 3D model yet.' },
   whole: { it: 'Corpo intero', en: 'Whole body' },
   // {n} is the text of the organ's own count in the tree ("1 scheda", "3 schede"), already in the right number
   organ: { it: '{organ}: {n}', en: '{organ}: {n}' },

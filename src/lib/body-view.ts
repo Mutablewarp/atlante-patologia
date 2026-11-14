@@ -75,6 +75,23 @@ export function selectable(manifest: BodyManifest, state: BodyState): string[] {
     .map(([id]) => id);
 }
 
+/**
+ * The systems whose files a view of `system` needs: the system itself, then the system of every organ that one of its
+ * organs stands for (`of`, a proxy such as bone-marrow on the bones) or sits inside (`inside`). Without them the proxy
+ * would select meshes that were never loaded.
+ */
+export function systemsFor(manifest: BodyManifest, system: string): string[] {
+  const out = [system];
+  for (const organ of Object.values(manifest.organs)) {
+    if (organ.system !== system) continue;
+    for (const id of [...organ.of, ...(organ.inside ? [organ.inside] : [])]) {
+      const other = manifest.organs[id]?.system;
+      if (other && !out.includes(other)) out.push(other);
+    }
+  }
+  return out;
+}
+
 export function step(list: string[], current: string | null, dir: 1 | -1): string | null {
   if (list.length === 0) return null;
   const at = current === null ? -1 : list.indexOf(current);

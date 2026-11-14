@@ -18,17 +18,17 @@ const acts = ['left', 'right', 'up', 'down', 'in', 'out', 'front', 'back', 'side
 const posters = ['light', 'dark'] as const;
 ---
 
-<figure class="body-stage" data-stage tabindex="0" aria-label={t('stage')} aria-describedby="body-help">
+<figure class="body-stage" data-stage aria-label={t('stage')}>
   {
     posters.map((p) => (
       <picture data-poster class={`poster-${p}`}>
         <source type="image/avif" srcset={url(`anatomy/poster-${p}.avif`)} />
         <source type="image/webp" srcset={url(`anatomy/poster-${p}.webp`)} />
-        <img src={url(`anatomy/poster-${p}.webp`)} width="960" height="1200" alt="" />
+        <img src={url(`anatomy/poster-${p}.webp`)} width="960" height="1200" alt="" loading="lazy" decoding="async" />
       </picture>
     ))
   }
-  <canvas data-canvas hidden></canvas>
+  <canvas data-canvas hidden aria-hidden="true"></canvas>
   <p class="body-label" data-label hidden></p>
 </figure>
 <p id="body-help" class="body-help js-only">{t('help')}</p>
@@ -45,6 +45,6 @@ const posters = ['light', 'dark'] as const;
 </div>
 <p class="body-status js-only" data-status role="status"></p>
 <p class="body-credit">
-  {credit}. {t('creditHra')} {t('creditChanges')}
+  <span lang="en">{credit}</span>. {t('creditHra')} {t('creditChanges')}{' '}
   <a href={langPath(lang, 'about/licenses/')}>{t('creditMore')}</a>
 </p>

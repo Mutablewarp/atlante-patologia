@@ -43,6 +43,7 @@ function note(organId: string): string {
     tree.systems.map((s) => (
       <a href={`#sys-${s.id}`} data-system={s.id}>
         {s.label} <span class="count">{s.count}</span>
+        <span class="visually-hidden">{t(s.count === 1 ? 'unitOne' : 'unitMany')}</span>
       </a>
     ))
   }

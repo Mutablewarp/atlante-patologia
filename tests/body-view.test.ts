@@ -1,5 +1,6 @@
 import { describe, expect, it } from 'vitest';
-import { cameraFor, parseHash, roles, selectable, step, toHash, type BodyManifest } from '../src/lib/body-view.ts';
+import { readFileSync } from 'node:fs';
+import { cameraFor, parseHash, roles, selectable, step, systemsFor, toHash, type BodyManifest } from '../src/lib/body-view.ts';
 
 const box = (min: number[], max: number[]) => ({ box: { min, max }, centre: min.map((v, i) => (v + max[i]) / 2) });
 
@@ -121,5 +122,33 @@ describe('cameraFor', () => {
     const near = dist(cameraFor(heart, 1, 'organ').position, manifest.organs.heart.centre!);
     expect(near).toBeLessThan(dist(cameraFor(body, 1, 'front').position, [0, 0.9, 0]));
     expect(cameraFor(heart, 1, 'organ').target).toEqual(manifest.organs.heart.centre);
+  });
+});
+
+describe('systemsFor', () => {
+  const m: BodyManifest = {
+    organs: {
+      bones: { system: 'skeleton', kind: 'mesh', of: [], inside: null },
+      marrow: { system: 'blood', kind: 'proxy', of: ['bones'], inside: null },
+      spleen: { system: 'blood', kind: 'mesh', of: [], inside: null },
+      valves: { system: 'heart', kind: 'mesh', of: [], inside: 'heart-wall' },
+      'heart-wall': { system: 'vessels', kind: 'mesh', of: [], inside: null },
+    },
+  };
+
+  it('is the system alone when nothing stands for another system', () => {
+    expect(systemsFor(m, 'skeleton')).toEqual(['skeleton']);
+  });
+
+  it('adds the system of the organ a proxy stands for, and of the container of an inner organ', () => {
+    expect(systemsFor(m, 'blood')).toEqual(['blood', 'skeleton']);
+    expect(systemsFor(m, 'heart')).toEqual(['heart', 'vessels']);
+  });
+
+  it('on the real manifest, bone marrow and the peritoneum bring the files of the organs they stand for', () => {
+    const real = JSON.parse(readFileSync('public/anatomy/manifest.json', 'utf8')) as BodyManifest;
+    expect(systemsFor(real, 'hematolymphoid')).toContain('bone-soft-tissue');
+    expect(systemsFor(real, 'female-genital')).toContain('gastrointestinal');
+    expect(systemsFor(real, 'heart')).toEqual(['heart']);
   });
 });
