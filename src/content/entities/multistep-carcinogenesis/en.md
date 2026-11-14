@@ -4,15 +4,15 @@ lang: en
 
 ## Definition and epidemiology
 
-**Where does a cancer come from?** Most cancers start from one cell that gathers changes in its genes and in the way they are expressed.<!--c:multistep-carcinogenesis-c001--> Invasion of nearby tissue and spread through blood and lymph come late, once the descendants of that cell have escaped growth control as mutations pile up with every division.<!--c:multistep-carcinogenesis-c002--> Tight control of division is the rule for normal cells, even in fast-renewing tissues such as myelocytes and intestinal mucosa.<!--c:multistep-carcinogenesis-c003-->
+**Where does a cancer come from?** A cancer usually traces back to one founder cell that accumulates changes in its genes and their expression.<!--c:multistep-carcinogenesis-c001--> Invasion of nearby tissue and spread through blood and lymph come late, once the descendants of that cell have escaped growth control as mutations pile up with every division.<!--c:multistep-carcinogenesis-c002--> Tight control of division is the rule for normal cells, even in fast-renewing tissues such as myelocytes and intestinal mucosa.<!--c:multistep-carcinogenesis-c003-->
 
 ## Etiology and risk factors
 
-**What damages DNA, and what normally protects it?** DNA is damaged continually, from outside by radiation and chemicals and from inside by the cell's own chemistry, including free radicals.<!--c:multistep-carcinogenesis-c004--> DNA polymerases also copy imperfectly.<!--c:multistep-carcinogenesis-c005--> Repair systems work with the checkpoints that halt the cycle and with the apoptosis machinery, to keep mutations from reaching daughter cells.<!--c:multistep-carcinogenesis-c006-->
+**What damages DNA, and what normally protects it?** DNA is damaged all the time, by agents from outside the cell and by byproducts of its own chemistry, such as free radicals.<!--c:multistep-carcinogenesis-c004--> DNA polymerases also copy imperfectly.<!--c:multistep-carcinogenesis-c005--> Mutations should not pass to daughter cells, so repair systems cooperate with the cycle checkpoints and with apoptosis.<!--c:multistep-carcinogenesis-c006-->
 
 **Which repair pathway fixes which damage?**
 - Mismatch repair mainly corrects errors made during replication.<!--c:multistep-carcinogenesis-c007-->
-- Nucleotide excision repair fixes helix-distorting damage such as bulky adducts and UV lesions.<!--c:multistep-carcinogenesis-c008-->
+- Nucleotide excision repair handles UV lesions and bulky adducts, which distort the helix.<!--c:multistep-carcinogenesis-c008-->
 - Single-strand breaks and chemical damage to individual bases are mostly the job of base excision repair.<!--c:multistep-carcinogenesis-c009-->
 - Cells have two routes for double-strand breaks: nonhomologous end joining and homologous recombination.<!--c:multistep-carcinogenesis-c010-->
 
@@ -24,9 +24,9 @@ lang: en
 
 **How is the cell cycle taken over?** Normally, E2F drives entry into S phase, but pRb holds it back until cyclin D with CDK4/6 phosphorylates pRb and sets E2F free.<!--c:multistep-carcinogenesis-c016--> In human cancers, mutations often hit the genes of CDK inhibitors.<!--c:multistep-carcinogenesis-c017--> If repair proves impossible, p53 triggers apoptosis; before that, after DNA damage, it holds the cycle so that repair has time.<!--c:multistep-carcinogenesis-c018--> Mutant Ras stays bound to GTP and is constitutively active.<!--c:multistep-carcinogenesis-c019--> A receptor mutated to be always on no longer waits for its ligand, a common way for receptors to push a cell toward cancer.<!--c:multistep-carcinogenesis-c020-->
 
-**Why do tumors keep changing?** Because most human cancers mutate at a much higher rate than normal cells, tumors can evolve and adapt quickly.<!--c:multistep-carcinogenesis-c022--> Tumor cells also regulate genes abnormally through epigenetic changes, which leave the underlying sequence untouched.<!--c:multistep-carcinogenesis-c023--> Promoter methylation of key proteins can disable the suppressive TGFβ pathway.<!--c:multistep-carcinogenesis-c024--> The same gene may promote cancer in one context and restrain it in another, since no two tumors evolve alike.<!--c:multistep-carcinogenesis-c025-->
+**Why do tumors keep changing?** Tumors adapt quickly because, in most human cancers, mutations arise far more often than in normal cells.<!--c:multistep-carcinogenesis-c022--> Tumor cells also regulate genes abnormally through epigenetic changes, which leave the underlying sequence untouched.<!--c:multistep-carcinogenesis-c023--> Methylated promoters of pathway genes can switch off TGFβ suppression.<!--c:multistep-carcinogenesis-c024--> The same gene may promote cancer in one context and restrain it in another, since no two tumors evolve alike.<!--c:multistep-carcinogenesis-c025-->
 
-**Who else helps the tumor?** Tumor cells reprogram their non-tumor neighbors.<!--c:multistep-carcinogenesis-c026--> Factors secreted by inflammatory cells help a tumor develop and progress, and these cells infiltrate most developing solid tumors.<!--c:multistep-carcinogenesis-c027--> Eight hallmark activities distinguish solid cancers from normal tissue.<!--c:multistep-carcinogenesis-c028-->
+**Who else helps the tumor?** Tumor cells reprogram their non-tumor neighbors.<!--c:multistep-carcinogenesis-c026--> Inflammatory cells enter most growing solid tumors, and the factors they release help the tumor arise and advance.<!--c:multistep-carcinogenesis-c027--> Eight hallmark activities distinguish solid cancers from normal tissue.<!--c:multistep-carcinogenesis-c028-->
 
 ## Gross morphology
 
@@ -39,19 +39,19 @@ Not applicable.
 ## Special stains, IHC and molecular findings
 
 **What does the pathologist look at, and with which test?**
-- **How it is studied:** microsatellite instability is an indicator of defective mismatch repair.<!--c:multistep-carcinogenesis-c032-->
-- In certain tumors, the level of ERCC1 activity hints at whether cisplatin will work.<!--c:multistep-carcinogenesis-c033-->
+- **How it is studied:** microsatellite instability signals defective mismatch repair.<!--c:multistep-carcinogenesis-c032-->
+- Whether cisplatin will work in some tumors can be partly forecast from ERCC1 activity.<!--c:multistep-carcinogenesis-c033-->
 - After surgery, the risk of recurrence falls when antiestrogen therapy is given to a tumor positive for hormone receptors.<!--c:multistep-carcinogenesis-c034-->
 - Overexpression of the mucin MUC1 is found in a large majority of breast tumors.<!--c:multistep-carcinogenesis-c035-->
 - Specimen type, sampling, special stains and electron microscopy are not covered by the pages used for this card.
 
 ## Clinical presentation
 
-**Why are cancers usually advanced when they are found?** Internal cancers are usually detected only after many doublings of the founder cell.<!--c:multistep-carcinogenesis-c036--> How fast a tumor grows depends strongly on its type and on the individual tumor.<!--c:multistep-carcinogenesis-c037--> Hematologic and mesenchymal malignancies usually outpace solid epithelial tumors in growth rate.<!--c:multistep-carcinogenesis-c038-->
+**Why are cancers usually advanced when they are found?** Internal tumors are usually found after many doublings of the founder cell.<!--c:multistep-carcinogenesis-c036--> How fast a tumor grows depends strongly on its type and on the individual tumor.<!--c:multistep-carcinogenesis-c037--> Hematologic and mesenchymal malignancies usually outpace solid epithelial tumors in growth rate.<!--c:multistep-carcinogenesis-c038-->
 
 ## Diagnosis, key lab and imaging
 
-**How is the growth of one tumor measured?** Doubling time is how long a tumor takes to grow to twice its volume.<!--c:multistep-carcinogenesis-c040--> Doubling time is usually worked out from serial radiographs, sometimes from repeated blood tests for tumor markers.<!--c:multistep-carcinogenesis-c041--> Watching an untreated tumor for months is the best way to measure its doubling time, but often that is not possible.<!--c:multistep-carcinogenesis-c042-->
+**How is the growth of one tumor measured?** Doubling time is how long a tumor takes to grow to twice its volume.<!--c:multistep-carcinogenesis-c040--> Most often serial radiographs give the doubling time, less often repeated blood tumor-marker levels.<!--c:multistep-carcinogenesis-c041--> Watching an untreated tumor for months is the best way to measure its doubling time, but often that is not possible.<!--c:multistep-carcinogenesis-c042-->
 
 ## Complications and prognosis
 
@@ -62,7 +62,7 @@ Not applicable.
 | Entity | Discriminating features | Key test |
 |---|---|---|
 | Driver mutation | Relatively few in number, these changes propel tumor development.<!--c:multistep-carcinogenesis-c047--> | Genomic analysis |
-| Passenger mutation | Along for the ride; its role in tumor development is mostly unknown.<!--c:multistep-carcinogenesis-c048--> | Genomic analysis |
+| Passenger mutation | A bystander; whether it helps the tumor at all is mostly unknown.<!--c:multistep-carcinogenesis-c048--> | Genomic analysis |
 | Polymorphism | A DNA sequence variation with no known link to disease.<!--c:multistep-carcinogenesis-c049--> | Link to disease |
 | Mutation | A similar sequence change that does play a part in disease.<!--c:multistep-carcinogenesis-c050--> | Link to disease |
 | Nonhomologous end joining | Reattaches the broken ends; the sequence it leaves may differ from the original.<!--c:multistep-carcinogenesis-c051--> | Not applicable |
@@ -72,8 +72,8 @@ Related cards: [[dysplasia]], [[hyperplasia]], [[metaplasia]], [[carcinoma-in-si
 
 ## High-yield summary
 
-- **Clonal origin**: most tumors start from a single cell that turns malignant.<!--c:multistep-carcinogenesis-c053-->
-- Few **driver** mutations push the tumor forward; **passenger** mutations are bystanders.<!--c:multistep-carcinogenesis-c054-->
+- **Clonal origin**: one cell turning malignant founds most tumors.<!--c:multistep-carcinogenesis-c053-->
+- Few **driver** mutations push the tumor; **passenger** ones seem bystanders.<!--c:multistep-carcinogenesis-c054-->
 - Activated **proto-oncogenes** and inactivated **tumor suppressors** release the cell from cycle control.<!--c:multistep-carcinogenesis-c055-->
 - If repair fails, **p53** triggers apoptosis; before that, it arrests the cycle for repair.<!--c:multistep-carcinogenesis-c056-->
 - **pRb** holds **E2F**; cyclin D with CDK4/6 phosphorylates pRb and releases it.<!--c:multistep-carcinogenesis-c057-->
@@ -89,11 +89,11 @@ Related cards: [[dysplasia]], [[hyperplasia]], [[metaplasia]], [[carcinoma-in-si
 
 **Does a high mitotic count prove fast growth?** No. It ignores cell death, and mitosis can be prolonged.<!--c:multistep-carcinogenesis-c063-->
 
-**Is TGFβ always a tumor suppressor?** No. Cancer cells can alter its pathway and then use it to promote invasion and metastasis.<!--c:multistep-carcinogenesis-c064-->
+**Is TGFβ always a tumor suppressor?** No. Cancer cells can corrupt its pathway and turn it to their advantage, helping tumors grow and spread.<!--c:multistep-carcinogenesis-c064-->
 
 **Do solid tumors kill by their size?** No. They kill mainly by spreading widely.<!--c:multistep-carcinogenesis-c065-->
 
-**Does an activated gene act the same in every cell?** No. The same mutant protein can drive division in one cell type and cell death in another.<!--c:multistep-carcinogenesis-c066-->
+**Does an activated gene act the same in every cell?** No. Depending on the cell type, the same mutant protein can promote division or cell death.<!--c:multistep-carcinogenesis-c066-->
 
 ## Mnemonics
 
