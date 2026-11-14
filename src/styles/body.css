@@ -52,7 +52,7 @@ ap-body section[data-organ] > h3 .count {
 ap-body section[data-organ] {
   margin-block: var(--space-4);
   padding: var(--space-3) var(--space-4);
-  border-left: 3px solid var(--rule);
+  border: 1px solid var(--rule); /* a coloured side stripe above 1px is the AI-dashboard look (craft floor): a plain box */
   border-radius: var(--radius-s);
   overflow-wrap: anywhere;
 }
@@ -63,7 +63,12 @@ ap-body section[data-organ] > h3 a {
 }
 ap-body section[data-organ]:target {
   background: var(--eosin-soft);
-  border-left-color: var(--eosin);
+  border-color: var(--eosin);
+}
+/* measure: 65 to 75 characters per line, also on wide screens */
+.body-note,
+.body-cards {
+  max-width: 68ch;
 }
 .body-note {
   margin-block: var(--space-1) var(--space-3);
