@@ -1,0 +1,147 @@
+id: crohn-disease
+module: o19
+tier: core
+kind: disease
+names:
+  it: "Malattia di Crohn"
+  en: "Crohn disease"
+  eponyms: ["Crohn"]
+  synonyms:
+    it: []
+    en: []
+  abbreviations: []
+summary:
+  it: "Malattia infiammatoria cronica immunomediata dell'intestino, a lesioni segmentarie e transmurali, con granulomi non caseosi, fissurazioni, fistole e manifestazioni extraintestinali."
+  en: "Chronic immune-mediated inflammatory bowel disease with segmental, transmural lesions, noncaseating granulomas, fissures, fistulas and extraintestinal manifestations."
+lenses:
+  system: [gastrointestinal, systemic]
+  process: [chronic-inflammation, granulomatous-inflammation]
+  pattern: [granuloma]
+  presentation: [fever, anemia]
+  marker: []
+  group: [inflammatory, immune]
+learningObjectives:
+  - it: "Descrivere le due caratteristiche chiave della malattia di Crohn: infiammazione transmurale e lesioni discontinue (skip lesions)."
+    en: "Describe the two key features of Crohn disease: transmural inflammation and discontinuous skip lesions."
+  - it: "Riconoscere l'aspetto macroscopico (aspetto a ciottolato, avvolgimento del grasso mesenterico) e il granuloma non caseoso al microscopio."
+    en: "Recognize the gross appearance (cobblestoning, mesenteric fat wrapping) and the noncaseating granuloma under the microscope."
+  - it: "Spiegare come l'infiammazione transmurale porti a fissurazioni, fistole, ascessi e stenosi con occlusione."
+    en: "Explain how transmural inflammation leads to fissures, fistulas, abscesses and obstructive strictures."
+  - it: "Elencare le complicanze intestinali ed extraintestinali e il rischio neoplastico."
+    en: "List the intestinal and extraintestinal complications and the cancer risk."
+  - it: "Distinguere la malattia di Crohn dalla colite ulcerosa in base a distribuzione e istologia."
+    en: "Distinguish Crohn disease from ulcerative colitis by distribution and histology."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: ulcerative-colitis
+    note:
+      it: "Lesioni segmentarie e transmurali con granulomi, contro colite diffusa e superficiale."
+      en: "Segmental transmural lesions with granulomas, versus diffuse superficial colitis."
+  - type: mimics
+    target: infectious-enterocolitis
+    note:
+      it: "Le infezioni possono simulare la malattia di Crohn e vanno escluse."
+      en: "Infections can mimic Crohn disease and must be excluded."
+  - type: sharesMechanism
+    target: sarcoidosis
+    note:
+      it: "I granulomi non caseosi assomigliano a quelli della sarcoidosi."
+      en: "The noncaseating granulomas resemble those of sarcoidosis."
+quickCheck:
+  - id: crohn-disease-q1
+    q:
+      it: "Quali sono le due caratteristiche che distinguono la malattia di Crohn dalle altre malattie infiammatorie intestinali?"
+      en: "Which two features set Crohn disease apart from other inflammatory bowel diseases?"
+    a:
+      it: "L'infiammazione è transmurale e il coinvolgimento è discontinuo, con aree malate separate da intestino apparentemente normale."
+      en: "The inflammation is transmural and the involvement is discontinuous, with diseased areas separated by apparently normal bowel."
+    kind: short
+  - id: crohn-disease-q2
+    q:
+      it: "L'assenza di granulomi in una biopsia esclude la malattia di Crohn?"
+      en: "Does the absence of granulomas on a biopsy exclude Crohn disease?"
+    a:
+      it: "No: i granulomi sono presenti in meno della metà dei casi."
+      en: "No: granulomas are present in fewer than half of cases."
+    kind: short
+  - id: crohn-disease-q3
+    q:
+      it: "Perché nella malattia di Crohn si formano fistole?"
+      en: "Why do fistulas form in Crohn disease?"
+    a:
+      it: "Le ulcere fissurali profonde attraversano l'intera parete intestinale e possono aprirsi in un'ansa vicina, in altri organi o nella cute."
+      en: "Deep fissuring ulcers cross the whole bowel wall and can open into a nearby loop, another organ or the skin."
+    kind: short
+  - id: crohn-disease-q4
+    q:
+      it: "Quali aspetti macroscopici sono caratteristici della malattia di Crohn?"
+      en: "Which gross findings are characteristic of Crohn disease?"
+    a:
+      it: "L'aspetto a ciottolato della mucosa e l'avvolgimento del grasso mesenterico attorno all'intestino."
+      en: "Cobblestone mucosa and mesenteric fat wrapping around the bowel."
+    kind: short
+  - id: crohn-disease-q5
+    q:
+      it: "La malattia di Crohn interessa soltanto l'intestino?"
+      en: "Is Crohn disease limited to the bowel?"
+    a:
+      it: "No: le manifestazioni extraintestinali sono numerose e più frequenti che nella colite ulcerosa; comprendono uveite, artrite, eritema nodoso e colangite sclerosante."
+      en: "No: extraintestinal manifestations are many and more common than in ulcerative colitis, including uveitis, arthritis, erythema nodosum and sclerosing cholangitis."
+    kind: short
+selfExplain:
+  - it: "Perché l'infiammazione transmurale può causare sia stenosi con occlusione sia fistole?"
+    en: "Why can transmural inflammation cause both obstructive strictures and fistulas?"
+  - it: "Perché l'assenza di granulomi in una biopsia non basta a escludere la malattia di Crohn?"
+    en: "Why is a biopsy without granulomas not enough to exclude Crohn disease?"
+chain:
+  - pathology:
+      it: "Ulcera fissurale transmurale con fistola perianale"
+      en: "Transmural fissuring ulcer with perianal fistula"
+    sign:
+      it: "Fistole anorettali ricorrenti"
+      en: "Recurrent anorectal fistulas"
+    lab:
+      it: "Biopsia con granulomi non caseosi"
+      en: "Biopsy with noncaseating granulomas"
+examQuestions:
+  - it: "Mi parli della distribuzione e dell'estensione dell'infiammazione nella malattia di Crohn: che cosa sono le skip lesions?"
+    en: "Tell me about the distribution and depth of inflammation in Crohn disease: what are skip lesions?"
+    focus: [gross, high-yield]
+    level: 1
+  - it: "Che cosa vede al microscopio in una biopsia di malattia di Crohn, e che peso ha la presenza o l'assenza di granulomi?"
+    en: "What do you see under the microscope in a Crohn disease biopsy, and how much weight do the presence or absence of granulomas carry?"
+    focus: [micro, traps]
+    level: 1
+  - it: "Perché l'infiammazione transmurale porta a fissurazioni e fistole, e dove possono aprirsi le fistole?"
+    en: "Why does transmural inflammation lead to fissures and fistulas, and where can the fistulas open?"
+    focus: [pathogenesis, gross]
+    level: 2
+  - it: "Quali sono le complicanze intestinali della malattia di Crohn e come cambia il rischio di tumore?"
+    en: "What are the intestinal complications of Crohn disease, and how does the cancer risk change?"
+    focus: [prognosis, gross]
+    level: 2
+  - it: "Che ruolo ha la biopsia nella malattia di Crohn, e che cosa può mostrare una biopsia mucosale?"
+    en: "What is the role of biopsy in Crohn disease, and what can a mucosal biopsy show?"
+    focus: [ancillary, diagnosis]
+    level: 2
+  - it: "Come distingue la malattia di Crohn dalla colite ulcerosa, e perché la distinzione conta? Quali manifestazioni extraintestinali conosce?"
+    en: "How do you tell Crohn disease from ulcerative colitis, and why does the distinction matter? Which extraintestinal manifestations do you know?"
+    focus: [diagnosis, differential, clinical]
+    level: 3
+images:
+  - id: crohn-disease-gross-1
+    role: gross
+    pairWith: crohn-disease-micro-1
+  - id: crohn-disease-micro-1
+    role: micro
+  - id: crohn-disease-micro-2
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "19"
+    pages: "811-814, 817-818"
+lastUpdated: 2026-11-15
+status: published

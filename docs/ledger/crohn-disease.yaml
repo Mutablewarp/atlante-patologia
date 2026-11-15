@@ -1,0 +1,714 @@
+entity: crohn-disease
+claims:
+- claimId: crohn-disease-c001
+  section: definition
+  statement: "Crohn disease is a chronic immune-mediated inflammatory bowel disease whose inflammation spans the full bowel wall and is patchy along the gut."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c002
+  section: definition
+  statement: "The distal small intestine is the main site of disease, and the right colon is often affected as well."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c003
+  section: definition
+  statement: "The disease is not confined to one segment: it may arise anywhere in the digestive tract and also reach tissues outside it."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c004
+  section: definition
+  statement: "Crohn disease and ulcerative colitis are the two entities that make up inflammatory bowel disease; a case that cannot be placed in either is called indeterminate colitis."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c005
+  section: definition
+  statement: "Developed countries report more cases, and worldwide incidence runs between 0.7 and 14.6 per 100,000."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c006
+  section: definition
+  statement: "Adoption of a Western lifestyle is the probable reason why incidence has risen sharply in recent decades."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c007
+  section: definition
+  statement: "Onset has two age peaks: the main one in adolescents and young adults, a smaller one in people in their 50s and 60s."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c008
+  section: definition
+  statement: "People of European origin are affected most, with a considerably higher frequency in Ashkenazi Jews."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c009
+  section: definition
+  statement: "Adults show a slight female predominance, in contrast with the male predominance among children."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c010
+  section: etiology
+  statement: "The cause of Crohn disease is not fully understood."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c011
+  section: etiology
+  statement: "Genetic predisposition comes first; a weak mucosal barrier and altered gut flora then allow an abnormal immune response to injure the bowel."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c012
+  section: etiology
+  statement: "Variants in NOD2 and in two autophagy genes suggest that bacteria inside cells are poorly sensed and dealt with."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c013
+  section: etiology
+  statement: "Some risk genes affect how epithelial cells adhere to one another, which may weaken the mucosal barrier."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c014
+  section: etiology
+  statement: "Compared with nonsmokers, smokers develop Crohn disease more often and have a worse course."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c015
+  section: pathogenesis
+  statement: "Interferon-gamma, TNF and interleukin-12 mediate the TH1-type adaptive T-cell response of Crohn disease."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c016
+  section: pathogenesis
+  statement: "In ulcerative colitis the T-cell response is TH2 dominant instead."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c017
+  section: pathogenesis
+  statement: "Chronic inflammation and damage result from an exaggerated mucosal response to the commensal bacteria of the gut."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c018
+  section: pathogenesis
+  statement: "Early fissures typically begin over a collection of lymphoid tissue."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "814" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c019
+  section: pathogenesis
+  statement: "Fissures that penetrate beyond the submucosa may cross the entire bowel wall."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "814" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c020
+  section: pathogenesis
+  statement: "Fistulas can follow transmural disease and tend to appear late, after deep ulcers have formed in the wall."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811, 814" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c021
+  section: gross
+  statement: "Inflammation typically extends through the whole thickness of the intestinal wall, which is why it is called transmural."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c022
+  section: gross
+  statement: "Skip lesions: apparently normal intestine interrupts the areas of inflammation, so involvement is discontinuous."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811, 818" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c023
+  section: gross
+  statement: "Colon-only disease makes up 20% of cases, small-intestine-only 30%, and ileum plus cecum about half."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c024
+  section: gross
+  statement: "Colitis is the common pattern in older patients, while ileal and cecal disease predominates in younger ones."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c025
+  section: gross
+  statement: "Both the bowel wall and the neighboring mesentery are thick and waterlogged."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c026
+  section: gross
+  statement: "Mesenteric fat wraps around the bowel as a result of transmural disease, most evidently in the small intestine, though the sign can be absent."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811, 813" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c027
+  section: gross
+  statement: "Linear ulceration divides swollen mucosa into rounded islands that look like cobblestones."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811, 813" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c028
+  section: gross
+  statement: "Fissures mark later disease; early ulcers are aphthous or serpiginous and deepen with time."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c029
+  section: gross
+  statement: "Thickening and scarring of all wall layers narrow the lumen, so the small bowel often obstructs."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c030
+  section: gross
+  statement: "Fistulas may form between adherent loops of involved bowel."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c031
+  section: gross
+  statement: "Fistulas may also run from the bowel into pelvic organs such as the bladder, or out to the skin."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811-812" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c032
+  section: gross
+  statement: "Most fistulas stop short as blind tracts; the abscesses they form lie behind the peritoneum, in the mesentery, or within the peritoneal cavity."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "812" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c033
+  section: micro
+  statement: "Early disease shows aphthous ulcers with edema of mucosa and submucosa, and the inflammation may not extend deeper than those layers."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "812" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c034
+  section: micro
+  statement: "The infiltrate is made up of macrophages, eosinophils, plasma cells and lymphocytes."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "812" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c035
+  section: micro
+  statement: "Pyloric and Paneth cell metaplasia and distorted glandular architecture are features of prolonged, chronic disease."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "812-813" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c036
+  section: micro
+  statement: "In late disease the wall scars, vessels become hyalinized and deep ulcers form fissures."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "813" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c037
+  section: micro
+  statement: "Isolated granulomas without caseous necrosis may occur; most are in the submucosa."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "813" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c038
+  section: micro
+  statement: "Multinucleated giant cells may be seen among the epithelioid cell clusters, which have a lymphocyte rim like sarcoid granulomas."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "813" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c039
+  section: micro
+  statement: "Necrosis in the center of the granulomas is only very rarely seen."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "813" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c040
+  section: micro
+  statement: "Fewer than half of patients have granulomas, so a specimen lacking them cannot rule out Crohn disease."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "813" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c041
+  section: micro
+  statement: "Crypt abscesses are typical of both Crohn disease and ulcerative colitis."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "818" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c042
+  section: ancillary
+  statement: "A mucosal biopsy may show a small granuloma without caseation flanked by normal crypts."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "814" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c043
+  section: ancillary
+  statement: "Transmural inflammation, submucosal fibrosis and fissures are typical microscopic findings of Crohn disease in the colon."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "818" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c044
+  section: ancillary
+  statement: "To detect dysplasia, most patients with established IBD are advised periodic colonoscopy with systematically taken biopsies."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "818" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c045
+  section: ancillary
+  statement: "Chromoendoscopy and confocal laser endomicroscopy may let biopsies find more dysplastic lesions."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "818" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c046
+  section: ancillary
+  statement: "Dysplasia, whether low or high grade, shows an epithelium that fails to mature and atypical nuclei that are large relative to the cell."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "818" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c047
+  section: ancillary
+  statement: "High-grade dysplasia found on biopsy is a strong reason to remove the colon."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "818" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c048
+  section: clinical
+  statement: "Recurrent fever is common, and the usual symptoms are abdominal pain and diarrhea, which may contain blood or mucus."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "813" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c049
+  section: clinical
+  statement: "Ileocecal Crohn disease that begins suddenly can be mistaken for appendicitis, presenting with right-sided pain, fever and a right lower abdominal mass."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "813" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c050
+  section: clinical
+  statement: "Widespread small-bowel disease can lead mainly to malabsorption and malnutrition."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "813" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c051
+  section: clinical
+  statement: "Ileal disease can interrupt the enterohepatic cycle of bile salts and so cause lipid malabsorption."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "813" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c052
+  section: clinical
+  statement: "Diarrhea, and at times colonic bleeding, are the consequence of colonic involvement."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "813" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c053
+  section: clinical
+  statement: "A few patients present with recurrent fistulas of the anorectal region, where the disease is concentrated."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "812-813" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c054
+  section: clinical
+  statement: "Onset in childhood can hinder a child's growth and development."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "813" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c055
+  section: clinical
+  statement: "Crohn disease has many extraintestinal manifestations, which occur more often than in ulcerative colitis."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811-813" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c056
+  section: clinical
+  statement: "The systemic complications of IBD include uveitis, arthritis, ankylosing spondylitis, erythema nodosum, pyoderma gangrenosum, aphthous stomatitis and sclerosing cholangitis."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "812" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c057
+  section: clinical
+  statement: "Cholelithiasis, nephrolithiasis, anemia and osteopenia or osteoporosis are also listed among the systemic complications."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "812" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c058
+  section: diagnosis
+  statement: "Crohn colitis and ulcerative colitis are distinguished by where the disease is located and by its histology."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "817" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c059
+  section: diagnosis
+  statement: "Distinct granulomas make Crohn disease likely."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "813" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c060
+  section: diagnosis
+  statement: "The rectum is frequently uninvolved in Crohn colitis, whose lesions are patchy or segmental."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "817" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c061
+  section: diagnosis
+  statement: "Some Crohn colitis specimens contain granulomas, and the inflammation involves all layers of the wall."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "817" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c062
+  section: diagnosis
+  statement: "Surgeons need to know the diagnosis because Crohn disease tends to relapse after surgery, making continent ileostomy or an ileoanal pouch a poor option."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "817" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c063
+  section: diagnosis
+  statement: "Ulcerative colitis confers more cancer risk than Crohn colitis, and drug therapy is not the same for the two."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "817" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c064
+  section: prognosis
+  statement: "Bowel obstruction and fistula tracts are major disabling complications of transmural disease."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "813" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c065
+  section: prognosis
+  statement: "The bowel sometimes perforates freely."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "813" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c066
+  section: prognosis
+  statement: "Patients with Crohn disease have a risk of small bowel cancer at least three times higher."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "813" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c067
+  section: prognosis
+  statement: "Colorectal cancer risk rises further with wider colonic involvement, sclerosing cholangitis or a family history of colorectal cancer."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "813" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c068
+  section: prognosis
+  statement: "In long-standing Crohn colitis the colorectal cancer risk is elevated after more than 10 years of disease, and it depends on extent as well as duration."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "818" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c069
+  section: prognosis
+  statement: "There is no known cure for Crohn disease."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "813" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c070
+  section: prognosis
+  statement: "Opportunistic infections become more likely on corticosteroids, azathioprine or anti-TNF antibodies such as infliximab, which may otherwise suppress the inflammatory reaction."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "813-814" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c071
+  section: prognosis
+  statement: "In some cases fistula abscesses must be drained and obstructed or severely diseased bowel resected."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "814" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c072
+  section: prognosis
+  statement: "Repeated resections can leave some patients with short-bowel syndrome, and disease often recurs just before an anastomosis or stoma."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "814" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c073
+  section: differential
+  statement: "Ulcerative colitis lacks granulomas, fissures and skip lesions; it is superficial and diffuse and usually worse distally."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "817-818" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c074
+  section: differential
+  statement: "Strictures resembling diaphragms, or a lone ulcer, found mostly in the proximal small bowel can result from NSAIDs."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "817" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c075
+  section: differential
+  statement: "Distal ileal biopsies are hard to interpret because NSAIDs, even at low doses, may produce shallow erosions and inflammation there."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "817" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c076
+  section: differential
+  statement: "Infection and radiation-related strictures can mimic Crohn disease, and since they have specific treatments they must be distinguished."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "817" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c077
+  section: differential
+  statement: "Indeterminate colitis, where the two diseases cannot be told apart, covers roughly 10% of cases and is mostly fulminant."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "817" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c078
+  section: high-yield
+  statement: "Crohn disease is told apart from other inflammatory gut diseases chiefly by transmural inflammation and skip lesions."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c079
+  section: high-yield
+  statement: "The distal small intestine is the main site of Crohn disease, with the right colon often involved."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c080
+  section: high-yield
+  statement: "Discrete noncaseating granulomas strongly suggest Crohn disease but occur in fewer than half of cases."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "813" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c081
+  section: high-yield
+  statement: "Fissures and fistulas, which may end in abscesses, and luminal narrowing with obstruction are major complications."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "812-813" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c082
+  section: high-yield
+  statement: "Cobblestone mucosa and mesenteric fat wrapping are characteristic gross findings."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c083
+  section: high-yield
+  statement: "Extraintestinal manifestations of IBD are more common in Crohn disease than in ulcerative colitis."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c084
+  section: high-yield
+  statement: "Smoking increases the risk of Crohn disease, and the T-cell response is TH1 type."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c085
+  section: high-yield
+  statement: "Patients face higher risks of small bowel and colorectal cancer, and repeated resections can cause short-bowel syndrome."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "813-814" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c086
+  section: traps
+  statement: "Fewer than half of patients have granulomas, so lacking them does not rule out the diagnosis."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "813" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c087
+  section: traps
+  statement: "Crohn disease favors the distal small intestine but is not restricted to it; any digestive segment may be involved."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c088
+  section: traps
+  statement: "Crohn lesions are not continuous: healthy-looking bowel lies between the inflamed segments."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crohn-disease-c089
+  section: mnemonics
+  statement: "Core features: cobblestone mucosa, right lower quadrant ileocecal disease, obstruction, fissures and fistulas, and noncaseating granulomas."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "811, 813" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
