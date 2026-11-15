@@ -1,0 +1,402 @@
+entity: small-cell-lung-carcinoma
+claims:
+  - claimId: small-cell-lung-carcinoma-c001
+    section: definition
+    statement: "Neuroendocrine features mark this highly malignant tumor, which arises from lung epithelium."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "756" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c002
+    section: definition
+    statement: "The tumor used to be called oat cell carcinoma."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "756" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c003
+    section: definition
+    statement: "Of all lung cancers in the United States, 14% are small cell carcinomas."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "756, 758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c004
+    section: etiology
+    statement: "Cigarette smoking is strongly linked to small cell carcinoma."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c005
+    section: pathogenesis
+    statement: "The tumor grows and gives metastases quickly."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c006
+    section: pathogenesis
+    statement: "Within the airway wall, the tumor tends to extend beneath the lining and encircle the bronchus."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c007
+    section: gross
+    statement: "Many lymph node metastases accompany a mass that usually lies around the hilum."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c008
+    section: gross
+    statement: "The tumor tissue is white and soft."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c009
+    section: gross
+    statement: "Large areas of hemorrhage and necrosis are common."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c010
+    section: micro
+    statement: "The tumor cells are small, have scant cytoplasm, grow in sheets and vary in shape from round to spindle-like."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c011
+    section: micro
+    statement: "Nucleoli are missing or hard to see, and the nuclear chromatin has a fine granular texture."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c012
+    section: micro
+    statement: "Counting 10 high-power fields, equal to a 2 mm2 area of tumor, gives 60 to 70 mitoses, a very high rate."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c013
+    section: micro
+    statement: "Large necrotic areas are common."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c014
+    section: micro
+    statement: "Tumor cells are about as wide as three small resting lymphocytes, although no strict size cutoff exists."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c015
+    section: micro
+    statement: "Behavior and outcome follow the small cell part when a non-small cell carcinoma is, rarely, found in the same tumor."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c016
+    section: ancillary
+    statement: "A small biopsy or cytology sample is frequently what first allows the diagnosis of lung cancer."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c017
+    section: ancillary
+    statement: "On routine staining, look for necrosis and many mitoses, then for sheets of small cells with granular chromatin and inconspicuous nucleoli."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c018
+    section: ancillary
+    statement: "Most small cell carcinomas stain for neuroendocrine proteins such as synaptophysin, chromogranin and CD56."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c019
+    section: ancillary
+    statement: "A positive p40 or p63 usually indicates squamous cell carcinoma, and TTF-1 with Napsin usually indicates adenocarcinoma."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c020
+    section: clinical
+    statement: "Advanced disease is already present in 70% of patients at first presentation."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c021
+    section: clinical
+    statement: "Paraneoplastic syndromes are a frequent feature of the tumor."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c022
+    section: clinical
+    statement: "Eaton-Lambert syndrome, ectopic ACTH syndrome and diabetes insipidus are the paraneoplastic syndromes named."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c023
+    section: diagnosis
+    statement: "Targeted therapy depends on molecular testing, so non-small cell lung cancers must be typed exactly even on small samples."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c024
+    section: diagnosis
+    statement: "On small biopsies and cytology samples, immunostains give the correct subtype in more than 95% of lung cancers."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c025
+    section: prognosis
+    statement: "Other lung cancers do not share the early, marked chemosensitivity of small cell tumors."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c026
+    section: prognosis
+    statement: "Treatment rests mainly on chemotherapy."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c027
+    section: prognosis
+    statement: "Treatment follows the small cell pattern when a small cell carcinoma is mixed with non-small cell components."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c028
+    section: differential
+    statement: "Rosettes and a carcinoid-like growth pattern characterize this uncommon high-grade neuroendocrine cancer."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "756" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c029
+    section: differential
+    statement: "Frequent necrosis and a high mitotic rate are typical of large cell neuroendocrine carcinoma."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "756" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c030
+    section: differential
+    statement: "Large cell neuroendocrine carcinoma and small cell carcinoma have comparable 5-year survival rates."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "756" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c031
+    section: differential
+    statement: "Immunohistochemistry or ultrastructure shows neuroendocrine differentiation in large cell neuroendocrine carcinoma."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "756" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c032
+    section: differential
+    statement: "The acinar pattern of adenocarcinoma consists of regular glands."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "756" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c033
+    section: differential
+    statement: "TTF-1 and Napsin staining usually points to adenocarcinoma."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c034
+    section: differential
+    statement: "Squamous cell carcinoma is recognized by squamous morphology, which large cell carcinoma lacks."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "756" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c035
+    section: differential
+    statement: "Staining for p40 or p63 is usual in squamous cell carcinoma."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c036
+    section: differential
+    statement: "Large cell carcinoma consists of large cells with abundant cytoplasm and is recognized only after other types are excluded."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "756" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c037
+    section: differential
+    statement: "Mucin, TTF-1 and p40 are all absent in large cell carcinoma."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "756" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c038
+    section: high-yield
+    statement: "Small cell carcinoma is closely tied to cigarette smoking."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c039
+    section: high-yield
+    statement: "Extensive lymph node metastases accompany a mass that is usually perihilar."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c040
+    section: high-yield
+    statement: "Necrosis is extensive, and the small cells have inconspicuous nucleoli and finely granular chromatin."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c041
+    section: high-yield
+    statement: "The neuroendocrine markers expressed are synaptophysin, chromogranin and CD56."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c042
+    section: high-yield
+    statement: "Paraneoplastic syndromes include Eaton-Lambert syndrome, ectopic ACTH and diabetes insipidus."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c043
+    section: high-yield
+    statement: "Most patients present late because the tumor spreads rapidly."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c044
+    section: high-yield
+    statement: "Chemotherapy is the mainstay of treatment, and the tumor is very chemosensitive early on."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c045
+    section: high-yield
+    statement: "Small cell treatment applies to a combined small cell carcinoma."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c046
+    section: traps
+    statement: "No strict cell-size cutoff exists; cells are roughly as wide as three small resting lymphocytes."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c047
+    section: traps
+    statement: "A tumor with a non-small cell component is classified as combined small cell carcinoma and treated as small cell carcinoma, because the small cell component determines behavior."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c048
+    section: traps
+    statement: "Early on, small cell tumors respond very well to chemotherapy, which sets them apart from other lung cancers."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c049
+    section: traps
+    statement: "Large cell neuroendocrine carcinoma is another high-grade neuroendocrine tumor whose 5-year survival resembles that of small cell carcinoma."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "756" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: small-cell-lung-carcinoma-c050
+    section: mnemonics
+    statement: "Mnemonic S-C-L-C for smoking, central perihilar mass, lymph node spread and chemotherapy sensitivity, each fact stated on the cited page."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "758" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
