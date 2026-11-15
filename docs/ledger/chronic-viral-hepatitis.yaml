@@ -1,0 +1,578 @@
+entity: chronic-viral-hepatitis
+claims:
+  - claimId: chronic-viral-hepatitis-c001
+    section: definition
+    statement: "A hepatitis virus that keeps the liver inflamed and necrotic for longer than half a year causes chronic hepatitis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "861" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c002
+    section: definition
+    statement: "Hepatitis B and C are the viral infections that most often lead to chronic hepatitis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "864" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c003
+    section: definition
+    statement: "Hepatitis A infection does not turn chronic."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "857" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c004
+    section: definition
+    statement: "Southeast Asia and sub-Saharan Africa have frequent chronic HBV infection, whereas the US and Western Europe have it uncommonly."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "858" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c005
+    section: definition
+    statement: "Most people on liver transplant waiting lists are infected with HCV."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "862" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c006
+    section: definition
+    statement: "Recombinant HBV vaccines are highly effective."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "859" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c007
+    section: etiology
+    statement: "HBV has a DNA genome, while HCV and HDV have RNA genomes."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "857, 861" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c008
+    section: etiology
+    statement: "HDV infection is found only in people who also have HBV, because HDV assembly needs HBsAg; it can come together with HBV (coinfection) or after it (superinfection)."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "861" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c009
+    section: etiology
+    statement: "Mothers who carry HBV pass it to newborns, and unsafe injections and intimate contact also spread it; among body fluids, only blood, saliva and semen contain virus that can infect."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "858, 859" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c010
+    section: etiology
+    statement: "Donor screening stopped transfusion cases of HCV, so infected blood, chiefly from unsafe injection drug use, is now the main route."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "862" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c011
+    section: etiology
+    statement: "HBV infection acquired at birth generally persists while most infected adults clear it, so chronicity becomes less likely as age at infection rises."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "858" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c012
+    section: etiology
+    statement: "A precore promoter mutation, genotype C or F, high viremia, older age and male sex are risk factors for progression of chronic HBV."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "861" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c013
+    section: etiology
+    statement: "HIV or HBV coinfection, alcoholism, old age and male sex each increase the risk of cirrhosis in chronic HCV."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "862" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c014
+    section: pathogenesis
+    statement: "Many HBV and HCV carriers have no liver cell injury, and HBV carriers can have a large viral load for years, so neither virus is directly cytopathic."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "859, 862" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c015
+    section: pathogenesis
+    statement: "Most hepatocyte destruction in HBV is due to CD8+ cytotoxic T cells that recognize viral antigens shown on the infected cell surface."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "859" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c016
+    section: pathogenesis
+    statement: "HCV probably damages the liver when cytotoxic T cells attack the hepatocytes it infects."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "862" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c017
+    section: pathogenesis
+    statement: "Because HBV cccDNA remains in the nucleus, the virus cannot be cleared even by potent antiviral drugs."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "858" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c018
+    section: pathogenesis
+    statement: "HCV probably persists because constant mutation lets it dodge antibodies, with weak HCV-specific cellular immunity possibly adding to it."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "861, 862" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c019
+    section: pathogenesis
+    statement: "Chronic HBV goes through immune tolerant, immune active and inactive phases, with movement in either direction."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "861" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c020
+    section: pathogenesis
+    statement: "Despite HBeAg positivity and very high viral DNA, the immune tolerant phase has normal aminotransferases and little inflammation."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "861" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c021
+    section: pathogenesis
+    statement: "Cirrhosis and HCC often begin in the immune active phase, where virus in the blood coexists with hepatocyte death and rising aminotransferases."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "861" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c022
+    section: pathogenesis
+    statement: "Carriers in the inactive phase have very low risk, normal aminotransferases, low viral DNA, anti-HBe and no HBeAg, but can revert to the active phase."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "861" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c023
+    section: pathogenesis
+    statement: "HDV superinfection of an HBV carrier usually makes the hepatitis already present worse."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "861" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c024
+    section: pathogenesis
+    statement: "HBsAg-anti-HBs immune complexes circulating in some carriers cause extrahepatic complications."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "861" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c025
+    section: micro
+    statement: "Biopsy findings run from a few inflamed portal tracts to cirrhosis after widespread hepatocyte death and scarring."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "864, 865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c026
+    section: micro
+    statement: "Portal tracts hold macrophages, plasma cells and lymphocytes, and bile ductule proliferation is a generic reaction to injury."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c027
+    section: micro
+    statement: "In interface hepatitis, inflammation eats away parts of the limiting plate, so the boundary between portal tract and lobule turns jagged."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c028
+    section: micro
+    statement: "The lobule shows focal necrosis and inflammation, with swollen Kupffer cells and a few acidophilic bodies."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c029
+    section: micro
+    statement: "In chronic HBV, ground-glass hepatocytes are big cells whose smooth ER is packed with HBsAg, giving hazy pink cytoplasm."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c030
+    section: micro
+    statement: "In chronic HCV, lymphoid aggregates in the portal tracts are frequent, and some are true follicles with reactive centers."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c031
+    section: micro
+    statement: "Cirrhosis can be the end of a sequence that begins when interface hepatitis destroys periportal hepatocytes, collagen replaces them, the tract becomes star-shaped, and scars join adjacent tracts."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c032
+    section: ancillary
+    statement: "In HCV, biopsy helps judge how likely the disease is to progress, since significant fibrosis or cirrhosis can exist with normal aminotransferases."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "862" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c033
+    section: ancillary
+    statement: "Ground-glass cells, interface hepatitis, portal infiltrates and lymphoid follicles are the histologic findings described for chronic viral hepatitis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c034
+    section: ancillary
+    statement: "Reticulin staining is the best way to show the connective tissue bands that form where bridging necrosis has collapsed the stroma."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "864" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c035
+    section: ancillary
+    statement: "HBV DNA levels help define the chronic HBV phases, and HCV RNA in blood indicates the presence of virus."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "861, 862" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c036
+    section: clinical
+    statement: "Acute hepatitis C is mostly mild or without symptoms, so it rarely comes to medical attention."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "862, 863" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c037
+    section: clinical
+    statement: "Inactive-phase HBV carriers are asymptomatic."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "861" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c038
+    section: clinical
+    statement: "Most patients with chronic hepatitis C have only mild disease for a decade or longer."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "862" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c039
+    section: clinical
+    statement: "Circulating immune complexes in chronic HBV can lead to glomerulonephritis, cryoglobulinemia, polyarteritis and a serum sickness-like syndrome."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "861" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c040
+    section: clinical
+    statement: "Chronic HCV is associated with B-cell non-Hodgkin lymphoma and with extrahepatic disease: membranoproliferative glomerulonephritis, mononeuritis multiplex, sicca syndrome and mixed cryoglobulinemia with vasculitis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "862, 863" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c041
+    section: clinical
+    statement: "HDV coinfection can lead to fulminant hepatitis that is often lethal, mostly in people who inject drugs."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "861" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c042
+    section: diagnosis
+    statement: "Sustained HBsAg in the blood without anti-HBs indicates persistent rather than resolved HBV infection."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "860" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c043
+    section: diagnosis
+    statement: "Once anti-HBs is detectable, the patient has fully recovered and is immune for life."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "859" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c044
+    section: diagnosis
+    statement: "Anti-HBc shows only that HBV infection occurred before; the antibody is not protective and the virus may still be present."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "859" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c045
+    section: diagnosis
+    statement: "A patient with serum HBeAg is at maximal infectivity because viral replication is intense."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "860" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c046
+    section: diagnosis
+    statement: "Viral RNA of HCV can be found in the bloodstream one to three weeks after infection."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "862" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c047
+    section: diagnosis
+    statement: "Anti-HCV appears weeks after infection and persists, but does not clear the infection."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "861, 862" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c048
+    section: diagnosis
+    statement: "Elevated aminotransferase levels in blood reveal damage to liver cells."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "857" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c049
+    section: prognosis
+    statement: "Most acute HCV infections become chronic, and only a minority of chronic cases reach cirrhosis, after one to three decades."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "862" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c050
+    section: prognosis
+    statement: "Chronic HBV carries an increased risk of cirrhosis and hepatocellular carcinoma."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "861" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c051
+    section: prognosis
+    statement: "Even in the immune tolerant phase, liver cancer risk is higher, because pieces of HBV DNA become incorporated into the host's DNA."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "861" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c052
+    section: prognosis
+    statement: "Among patients with HCV cirrhosis, up to 5% per year develop HCC."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "862" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c053
+    section: prognosis
+    statement: "HCV liver disease is made worse by coexisting HBV, hemochromatosis, alpha-1 antitrypsin deficiency or alcoholic liver disease."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "862" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c054
+    section: prognosis
+    statement: "Patients who keep HCV RNA undetectable, a sustained virologic response, have a markedly lower HCC risk."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "863" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c055
+    section: prognosis
+    statement: "Nearly all HCV patients given the newer combination regimens such as sofosbuvir with ledipasvir are cured."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "863" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c056
+    section: differential
+    statement: "Acute viral hepatitis shows ballooned hepatocytes and disordered plates, yet the limiting plate usually holds and normal structure fully returns after recovery."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "864" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c057
+    section: differential
+    statement: "Most autoimmune hepatitis patients are women, with circulating autoantibodies and elevated immunoglobulins, and portal eosinophils may be present."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c058
+    section: differential
+    statement: "Hepatotoxic drugs and supplements, like viruses, can produce confluent necrosis, so the lesion is not specific for viral hepatitis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "864" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c059
+    section: differential
+    statement: "Cirrhosis is the end stage of progressive fibrosis in chronic hepatitis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c060
+    section: high-yield
+    statement: "HBV and HCV are the main causes of chronic viral hepatitis, HDV requires HBsAg and HAV does not become chronic."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "857, 861, 864" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c061
+    section: high-yield
+    statement: "Cytotoxic CD8+ T cells destroy virus-infected hepatocytes."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "859" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c062
+    section: high-yield
+    statement: "Ground-glass hepatocytes contain HBsAg in smooth ER in chronic HBV."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c063
+    section: high-yield
+    statement: "Portal lymphoid aggregates or follicles are characteristic of chronic HCV."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c064
+    section: high-yield
+    statement: "Interface hepatitis causes periportal fibrosis that can progress to cirrhosis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c065
+    section: high-yield
+    statement: "HBsAg persisting without anti-HBs signals chronic HBV and HCV RNA signals ongoing HCV infection."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "860, 862" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c066
+    section: traps
+    statement: "HBV is not directly cytopathic; immune-mediated injury dominates and carriers can have high viral loads without injury."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "859" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c067
+    section: traps
+    statement: "Hepatitis A leaves no carriers, and recovery brings lifelong immunity."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "857" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c068
+    section: traps
+    statement: "HDV assembly requires HBsAg, so HDV infection occurs only together with HBV infection."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "861" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c069
+    section: traps
+    statement: "Ground-glass hepatocytes are described in chronic hepatitis B."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c070
+    section: traps
+    statement: "Lymphoid aggregates or follicles are particularly described in chronic hepatitis C."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "864, 865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c071
+    section: traps
+    statement: "Patients with HCV can already have significant fibrosis or even cirrhosis while aminotransferases are normal."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "862" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: chronic-viral-hepatitis-c072
+    section: mnemonics
+    statement: "Ground-glass cells belong to HBV, portal lymphoid follicles to HCV, and HDV needs the HBsAg coat of HBV."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "861, 865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15

@@ -1,0 +1,150 @@
+id: chronic-viral-hepatitis
+module: o20
+tier: core
+kind: disease
+names:
+  it: "Epatite virale cronica"
+  en: "Chronic viral hepatitis"
+  eponyms: []
+  synonyms:
+    it: ["Epatite cronica B", "Epatite cronica C"]
+    en: ["Chronic hepatitis B", "Chronic hepatitis C"]
+  abbreviations: ["HBV", "HCV", "HDV"]
+summary:
+  it: "Infiammazione e necrosi del fegato che durano da più di sei mesi per infezione da virus epatitici, soprattutto HBV e HCV, con danno mediato dai linfociti T citotossici e rischio di cirrosi e carcinoma epatocellulare."
+  en: "Liver inflammation and necrosis lasting more than six months because of hepatitis viruses, mainly HBV and HCV, with T-cell-mediated injury and a risk of cirrhosis and hepatocellular carcinoma."
+lenses:
+  system: [liver-biliary]
+  process: [chronic-inflammation, repair-fibrosis]
+  pattern: [intracellular-inclusions]
+  presentation: [jaundice, incidental-finding]
+  marker: [laboratory, molecular]
+  group: [infectious, inflammatory]
+learningObjectives:
+  - it: "Distinguere HBV, HCV e HDV per genoma, modalità di trasmissione e rischio di cronicizzazione."
+    en: "Tell HBV, HCV and HDV apart by genome, transmission and risk of chronicity."
+  - it: "Spiegare perché i virus HBV e HCV danneggiano il fegato soprattutto per via immunitaria."
+    en: "Explain why HBV and HCV injure the liver mainly through the immune response."
+  - it: "Riconoscere epatite d'interfaccia, epatociti a vetro smerigliato e aggregati linfoidi portali."
+    en: "Recognize interface hepatitis, ground-glass hepatocytes and portal lymphoid aggregates."
+  - it: "Interpretare HBsAg, anti-HBs, anti-HBc, HBeAg, anti-HCV e HCV RNA."
+    en: "Interpret HBsAg, anti-HBs, anti-HBc, HBeAg, anti-HCV and HCV RNA."
+  - it: "Collegare l'epatite cronica a fibrosi periportale, cirrosi e carcinoma epatocellulare."
+    en: "Link chronic hepatitis to periportal fibrosis, cirrhosis and hepatocellular carcinoma."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: acute-viral-hepatitis
+    note:
+      it: "Limitante intatta e guarigione completa contro infiammazione protratta e fibrosi."
+      en: "Intact limiting plate and full recovery versus prolonged inflammation and fibrosis."
+  - type: differentialOf
+    target: autoimmune-hepatitis
+    note:
+      it: "Autoanticorpi e immunoglobuline elevate contro marcatori virali."
+      en: "Autoantibodies and raised immunoglobulins versus viral markers."
+  - type: causes
+    target: cirrhosis
+    note:
+      it: "La fibrosi periportale progressiva può evolvere in cirrosi."
+      en: "Progressive periportal fibrosis can end in cirrhosis."
+  - type: causes
+    target: hepatocellular-carcinoma
+    note:
+      it: "HBV e HCV cronici aumentano il rischio di carcinoma epatocellulare."
+      en: "Chronic HBV and HCV raise the risk of hepatocellular carcinoma."
+quickCheck:
+  - id: chronic-viral-hepatitis-q1
+    q:
+      it: "Perché HBV e HCV non sono direttamente citopatici?"
+      en: "Why are HBV and HCV not directly cytopathic?"
+    a:
+      it: "Molti portatori hanno molto virus nel fegato senza danno epatocellulare; la lesione è dovuta soprattutto ai linfociti T CD8+ che uccidono gli epatociti infetti."
+      en: "Many carriers hold much virus in the liver without injury; the damage comes mainly from CD8+ T cells killing infected hepatocytes."
+    kind: short
+  - id: chronic-viral-hepatitis-q2
+    q:
+      it: "Quale reperto istologico suggerisce HBV e quale HCV?"
+      en: "Which histologic finding suggests HBV and which HCV?"
+    a:
+      it: "Gli epatociti a vetro smerigliato suggeriscono HBV; gli aggregati o follicoli linfoidi portali suggeriscono HCV."
+      en: "Ground-glass hepatocytes suggest HBV; portal lymphoid aggregates or follicles suggest HCV."
+    kind: short
+  - id: chronic-viral-hepatitis-q3
+    q:
+      it: "Che cosa serve all'HDV per assemblarsi, e quindi con quale infezione compare?"
+      en: "What does HDV need in order to assemble, and so with which infection does it occur?"
+    a:
+      it: "Serve l'HBsAg, quindi l'infezione da HDV compare solo insieme all'infezione da HBV."
+      en: "It needs HBsAg, so HDV infection occurs only together with HBV infection."
+    kind: short
+  - id: chronic-viral-hepatitis-q4
+    q:
+      it: "Perché una biopsia può servire nell'epatite C anche con transaminasi normali?"
+      en: "Why can a biopsy help in hepatitis C even when aminotransferases are normal?"
+    a:
+      it: "Perché possono esserci fibrosi significativa o cirrosi con transaminasi normali; la biopsia aiuta a stimare il rischio di progressione."
+      en: "Because significant fibrosis or cirrhosis can exist with normal aminotransferases; biopsy helps judge the risk of progression."
+    kind: short
+  - id: chronic-viral-hepatitis-q5
+    q:
+      it: "Che cosa indicano HBsAg persistente senza anti-HBs?"
+      en: "What does persistent HBsAg without anti-HBs indicate?"
+    a:
+      it: "Un'infezione da HBV persistente, non guarita."
+      en: "Persistent HBV infection rather than recovery."
+    kind: short
+selfExplain:
+  - it: "Perché la fase immunotollerante dell'epatite B ha poca infiammazione nonostante la viremia molto alta?"
+    en: "Why does the immune tolerant phase of hepatitis B show little inflammation despite very high viremia?"
+  - it: "Perché l'epatite d'interfaccia porta a fibrosi periportale?"
+    en: "Why does interface hepatitis lead to periportal fibrosis?"
+chain:
+  - pathology:
+      it: "Epatite cronica C con fibrosi progressiva"
+      en: "Chronic hepatitis C with progressive fibrosis"
+    sign:
+      it: "Spesso nessun sintomo per anni"
+      en: "Often no symptoms for years"
+    lab:
+      it: "HCV RNA positivo con anti-HCV; transaminasi talvolta normali"
+      en: "HCV RNA positive with anti-HCV; aminotransferases sometimes normal"
+examQuestions:
+  - it: "Che cosa vede al microscopio in una biopsia di epatite virale cronica? Mi parli di epatite d'interfaccia, epatociti a vetro smerigliato e aggregati linfoidi."
+    en: "What do you see under the microscope in a biopsy of chronic viral hepatitis? Tell me about interface hepatitis, ground-glass hepatocytes and lymphoid aggregates."
+    focus: [micro]
+    level: 1
+  - it: "Mi parli di HBV, HCV e HDV: genoma, trasmissione e rapporto tra HDV e HBV."
+    en: "Tell me about HBV, HCV and HDV: genome, transmission, and the relationship between HDV and HBV."
+    focus: [etiology]
+    level: 1
+  - it: "Quando la biopsia epatica è utile nell'epatite C e che cosa cercherebbe, con quali colorazioni?"
+    en: "When is a liver biopsy useful in hepatitis C, and what would you look for, with which stains?"
+    focus: [ancillary, micro]
+    level: 2
+  - it: "Perché il danno epatico nell'epatite B cronica dipende dalla risposta immunitaria e come cambia nelle tre fasi della malattia?"
+    en: "Why does liver injury in chronic hepatitis B depend on the immune response, and how does it change across the three phases of the disease?"
+    focus: [pathogenesis]
+    level: 2
+  - it: "Come distingue un'infezione cronica da HBV da una guarigione, in base a HBsAg, anti-HBs e anti-HBc?"
+    en: "How do you tell chronic HBV infection from recovery, using HBsAg, anti-HBs and anti-HBc?"
+    focus: [diagnosis]
+    level: 3
+  - it: "Come distingue l'epatite virale cronica dall'epatite virale acuta e dall'epatite autoimmune?"
+    en: "How do you tell chronic viral hepatitis from acute viral hepatitis and from autoimmune hepatitis?"
+    focus: [differential, micro]
+    level: 3
+images:
+  - id: chronic-viral-hepatitis-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: true
+editionNote:
+  it: "La classificazione e i sistemi di grading e staging dell'epatite cronica sono cambiati tra le edizioni: controllare lo schema in uso su una seconda fonte."
+  en: "The classification and the grading and staging systems for chronic hepatitis have changed between editions: check the current scheme in a second source."
+sources:
+  - source: rubin-8e
+    chapter: "20"
+    pages: "857-865"
+lastUpdated: 2026-11-15
+status: published
