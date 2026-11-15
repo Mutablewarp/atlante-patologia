@@ -1,0 +1,133 @@
+id: lung-cancer-overview
+module: o18
+tier: core
+kind: concept
+names:
+  it: "Tumori polmonari: classificazione, stadiazione e diagnosi"
+  en: "Lung cancer: classification, staging and diagnosis"
+  eponyms: []
+  synonyms:
+    it: ["Carcinoma del polmone"]
+    en: ["Lung carcinoma"]
+  abbreviations: ["NSCLC", "SCLC", "TNM"]
+summary:
+  it: "Panoramica dei carcinomi polmonari: fumo e altre cause, istotipi principali, stadiazione TNM, campionamento, immunoistochimica (TTF-1, p40), test predittivi e sindromi paraneoplastiche."
+  en: "Overview of lung carcinomas: smoking, main histologic types, TNM staging, sampling, immunohistochemistry (TTF-1, p40), predictive testing and paraneoplastic syndromes."
+lenses:
+  system: [respiratory]
+  process: [neoplasia]
+  pattern: [metaplasia, dysplasia]
+  presentation: [mass-lesion, dyspnea, chest-pain, hypercalcemia]
+  marker: [ihc, molecular]
+  group: [neoplastic, toxic-environmental]
+learningObjectives:
+  - it: "Elencare i principali istotipi del carcinoma polmonare e il loro rapporto con il fumo."
+    en: "List the main histologic types of lung carcinoma and their relation to smoking."
+  - it: "Applicare la stadiazione TNM e spiegare perché lo stadio è il principale fattore prognostico."
+    en: "Apply TNM staging and explain why stage is the main prognostic factor."
+  - it: "Usare TTF-1 e p40 per distinguere adenocarcinoma e carcinoma squamoso, e sapere quali tumori richiedono test molecolari."
+    en: "Use TTF-1 and p40 to separate adenocarcinoma from squamous cell carcinoma, and know which tumors need molecular testing."
+  - it: "Riconoscere le sindromi locali e paraneoplastiche e l'amartoma come diagnosi differenziale della lesione a moneta."
+    en: "Recognize the local and paraneoplastic syndromes and hamartoma as a coin-lesion differential."
+prerequisites: [benign-vs-malignant-tumors, tumor-grading-and-staging]
+relations:
+  - type: prerequisiteOf
+    target: lung-adenocarcinoma
+  - type: prerequisiteOf
+    target: lung-squamous-cell-carcinoma
+  - type: prerequisiteOf
+    target: small-cell-lung-carcinoma
+  - type: differentialOf
+    target: lung-carcinoid-tumors
+    note:
+      it: "Origine neuroendocrina e nessun legame con il fumo."
+      en: "Neuroendocrine origin and no link to smoking."
+  - type: causes
+    target: paraneoplastic-syndromes
+    note:
+      it: "Il carcinoma polmonare, soprattutto a piccole cellule, è causa tipica di sindromi paraneoplastiche."
+      en: "Lung carcinoma, especially small cell, is a typical cause of paraneoplastic syndromes."
+quickCheck:
+  - id: lung-cancer-overview-q1
+    q:
+      it: "Quale marcatore immunoistochimico indica l'adenocarcinoma e quale il carcinoma squamoso?"
+      en: "Which immunohistochemical marker points to adenocarcinoma and which to squamous cell carcinoma?"
+    a:
+      it: "TTF-1 nucleare per adenocarcinoma e origine polmonare; p40 per differenziazione squamosa."
+      en: "Nuclear TTF-1 for adenocarcinoma and lung origin; p40 for squamous differentiation."
+    kind: short
+  - id: lung-cancer-overview-q2
+    q:
+      it: "Quali tumori polmonari vanno testati per EGFR, ALK e ROS?"
+      en: "Which lung tumors must be tested for EGFR, ALK and ROS?"
+    a:
+      it: "Tutti gli adenocarcinomi e i carcinomi non a piccole cellule non altrimenti specificati; di routine non i carcinomi squamosi."
+      en: "All adenocarcinomas and non-small cell carcinomas not otherwise specified; not routinely squamous cell carcinomas."
+    kind: short
+  - id: lung-cancer-overview-q3
+    q:
+      it: "Che cosa comprendono le componenti T, N e M della stadiazione?"
+      en: "What do the T, N and M components of staging cover?"
+    a:
+      it: "T: dimensioni ed estensione locale; N: linfonodi regionali o a distanza; M: metastasi a distanza o liquido pleurico maligno."
+      en: "T: size and local extent; N: regional or distant nodes; M: distant metastasis or malignant pleural fluid."
+    kind: short
+selfExplain:
+  - it: "Perché il fumo porta a carcinoma squamoso passando per la metaplasia squamosa?"
+    en: "Why does smoking lead to squamous cell carcinoma by way of squamous metaplasia?"
+  - it: "Perché il sottotipo istologico, e non la sola dicitura non a piccole cellule, guida la terapia?"
+    en: "Why does the histologic subtype, not the label non-small cell alone, guide treatment?"
+chain:
+  - pathology:
+      it: "Carcinoma polmonare a piccole cellule con secrezione ectopica di ADH"
+      en: "Small cell lung carcinoma with ectopic ADH secretion"
+    sign:
+      it: "Confusione da iponatriemia"
+      en: "Confusion from hyponatremia"
+    lab:
+      it: "Sodio sierico basso (SIADH)"
+      en: "Low serum sodium (SIADH)"
+examQuestions:
+  - it: "Mi parli delle cause del carcinoma polmonare: che ruolo ha il fumo e che cosa succede all'epitelio bronchiale?"
+    en: "Tell me about the causes of lung cancer: what is the role of smoking, and what happens to the bronchial epithelium?"
+    focus: [etiology, pathogenesis]
+    level: 1
+  - it: "Quali sono i principali istotipi del carcinoma polmonare e come si assegna il tipo a un tumore con aree diverse?"
+    en: "What are the main histologic types of lung cancer, and how is the type assigned to a tumor with mixed areas?"
+    focus: [definition, micro]
+    level: 1
+  - it: "Mi parli della stadiazione TNM del carcinoma polmonare: perché è importante?"
+    en: "Tell me about TNM staging of lung cancer: why does it matter?"
+    focus: [diagnosis, prognosis]
+    level: 2
+  - it: "Quali colorazioni userebbe per distinguere un adenocarcinoma da un carcinoma squamoso e quali test molecolari richiederebbe?"
+    en: "Which stains would you use to tell an adenocarcinoma from a squamous cell carcinoma, and which molecular tests would you ask for?"
+    focus: [ancillary, differential]
+    level: 3
+  - it: "Quali sindromi paraneoplastiche si associano al carcinoma polmonare e a quale istotipo?"
+    en: "Which paraneoplastic syndromes go with lung cancer, and with which type?"
+    focus: [clinical]
+    level: 3
+  - it: "Una lesione a moneta a una radiografia del torace: come distingue un amartoma da un carcinoma?"
+    en: "A coin lesion on a chest radiograph: how do you tell a hamartoma from a carcinoma?"
+    focus: [differential, high-yield]
+    level: 3
+images:
+  - id: lung-cancer-overview-gross-1
+    role: gross
+    pairWith: lung-cancer-overview-micro-2
+  - id: lung-cancer-overview-micro-1
+    role: micro
+  - id: lung-cancer-overview-micro-2
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: true
+editionNote:
+  it: "La classificazione dei tumori polmonari e le regole sui test molecolari cambiano tra le edizioni: confrontare con la classificazione OMS e il manuale di stadiazione correnti."
+  en: "The classification of lung tumors and the molecular testing rules change between editions: compare with the current WHO classification and staging manual."
+sources:
+  - source: rubin-8e
+    chapter: "18"
+    pages: "750-753, 759-760"
+lastUpdated: 2026-11-14
+status: published
