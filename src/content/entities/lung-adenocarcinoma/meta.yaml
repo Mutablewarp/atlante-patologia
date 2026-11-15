@@ -1,0 +1,126 @@
+id: lung-adenocarcinoma
+module: o18
+tier: core
+kind: disease
+editionDependent: true
+editionNote:
+  it: "La classificazione dell'adenocarcinoma polmonare è stata rivista di recente (termine «bronchioloalveolare» abbandonato); la scheda segue una sola edizione del testo di riferimento, quindi termini e percentuali vanno confrontati con una fonte aggiornata."
+  en: "The classification of lung adenocarcinoma was revised recently (the term bronchioloalveolar was dropped); this card follows one edition of the reference, so terms and percentages should be checked against a current source."
+status: published
+lastUpdated: 2026-11-14
+reviewStatus: ai-generated-unreviewed
+names:
+  it: "Adenocarcinoma polmonare"
+  en: "Lung adenocarcinoma"
+  eponyms: []
+  synonyms:
+    it: []
+    en: ["Pulmonary adenocarcinoma"]
+  abbreviations: ["AAH", "AIS", "MIA"]
+summary:
+  it: "Carcinoma polmonare con differenziazione ghiandolare, oggi il sottotipo più frequente e il più comune nei non fumatori, classificato in base al pattern di crescita predominante."
+  en: "Lung carcinoma with glandular differentiation, now the most frequent subtype and the most common in nonsmokers, classified by its predominant growth pattern."
+lenses:
+  system: [respiratory]
+  process: [neoplasia]
+  pattern: [dysplasia]
+  presentation: [mass-lesion]
+  marker: [ihc, special-stains]
+  group: [neoplastic]
+learningObjectives:
+  - it: "Descrivere la sequenza ipotizzata AAH, adenocarcinoma in situ, adenocarcinoma invasivo."
+    en: "Describe the proposed sequence of AAH, adenocarcinoma in situ and invasive adenocarcinoma."
+  - it: "Distinguere AIS, MIA e adenocarcinoma invasivo per crescita lepidica e dimensione dell'invasione."
+    en: "Tell AIS, MIA and invasive adenocarcinoma apart by lepidic growth and size of invasion."
+  - it: "Elencare i pattern di crescita dell'adenocarcinoma invasivo e il loro significato prognostico."
+    en: "List the growth patterns of invasive adenocarcinoma and their prognostic meaning."
+  - it: "Separare l'adenocarcinoma solido dal carcinoma a grandi cellule con TTF-1 e colorazioni per il muco."
+    en: "Separate solid adenocarcinoma from large cell carcinoma with TTF-1 and mucin stains."
+prerequisites: [neoplasia-nomenclature]
+relations:
+  - type: differentialOf
+    target: lung-squamous-cell-carcinoma
+    note:
+      it: "Altro sottotipo comune di carcinoma polmonare non a piccole cellule."
+      en: "Another common subtype of non-small cell lung carcinoma."
+  - type: differentialOf
+    target: small-cell-lung-carcinoma
+    note:
+      it: "Carcinoma polmonare con caratteri neuroendocrini, distinto dall'adenocarcinoma."
+      en: "Lung carcinoma with neuroendocrine features, distinct from adenocarcinoma."
+  - type: mimics
+    target: lung-metastases
+    note:
+      it: "Un tumore mucinoso richiede l'esclusione di una metastasi da altra sede."
+      en: "A mucinous tumor requires exclusion of a metastasis from another site."
+  - type: sharesMechanism
+    target: precancerous-lesions
+    note:
+      it: "L'AAH è considerata una probabile lesione precursore."
+      en: "AAH is regarded as a probable precursor lesion."
+quickCheck:
+  - id: lung-adenocarcinoma-q1
+    q:
+      it: "Che cosa distingue l'AIS dalla MIA?"
+      en: "What separates AIS from MIA?"
+    a:
+      it: "L'AIS ha solo crescita lepidica senza invasione; la MIA ha focolai invasivi di 5 mm o meno, senza invasione pleurica o linfovascolare e senza necrosi."
+      en: "AIS has only lepidic growth without invasion; MIA has invasive foci of 5 mm or less, without pleural or lymphovascular invasion and without necrosis."
+    kind: short
+  - id: lung-adenocarcinoma-q2
+    q:
+      it: "Come si classifica un adenocarcinoma invasivo e quale pattern è il più comune?"
+      en: "How is an invasive adenocarcinoma classified, and which pattern is the most common?"
+    a:
+      it: "Per pattern di crescita predominante (lepidico, acinare, papillare, micropapillare, solido); il più comune è l'acinare."
+      en: "By its predominant growth pattern (lepidic, acinar, papillary, micropapillary, solid); acinar is the most common."
+    kind: short
+  - id: lung-adenocarcinoma-q3
+    q:
+      it: "Come si distingue un adenocarcinoma solido da un carcinoma a grandi cellule?"
+      en: "How do you tell a solid adenocarcinoma from a large cell carcinoma?"
+    a:
+      it: "L'adenocarcinoma solido esprime TTF-1 e/o mostra muco con mucicarminio o PAS dopo diastasi; il carcinoma a grandi cellule non esprime p40, TTF-1 né muco."
+      en: "Solid adenocarcinoma expresses TTF-1 and/or shows mucin on mucicarmine or PAS with diastase; large cell carcinoma lacks p40, TTF-1 and mucin."
+    kind: short
+  - id: lung-adenocarcinoma-q4
+    q:
+      it: "Quale pattern ha l'esito migliore e quali i peggiori nello stadio I?"
+      en: "Which pattern has the best outcome in stage I, and which have the worst?"
+    a:
+      it: "Il lepidico ha l'esito migliore; i pattern solido e micropapillare il peggiore."
+      en: "Lepidic has the best outcome; solid and micropapillary have the worst."
+    kind: short
+selfExplain:
+  - it: "Perché si ritiene che l'AAH sia un precursore dell'adenocarcinoma?"
+    en: "Why is AAH thought to be a precursor of adenocarcinoma?"
+  - it: "Perché, dopo resezione completa, conta stabilire quale pattern di crescita predomina?"
+    en: "Why does it matter, after complete resection, to establish which growth pattern predominates?"
+examQuestions:
+  - it: "Mi parli della sequenza AAH, adenocarcinoma in situ, adenocarcinoma minimamente invasivo e adenocarcinoma invasivo."
+    en: "Tell me about the sequence from AAH to adenocarcinoma in situ, minimally invasive adenocarcinoma and invasive adenocarcinoma."
+    focus: [pathogenesis, micro, differential]
+    level: 1
+  - it: "Mi parli dell'adenocarcinoma polmonare nei non fumatori: quanto è frequente e chi colpisce?"
+    en: "Tell me about lung adenocarcinoma in nonsmokers: how common is it, and who is affected?"
+    focus: [definition, etiology, clinical]
+    level: 1
+  - it: "Perché si ritiene che l'AAH sia un precursore dell'adenocarcinoma, e che cosa resta incerto?"
+    en: "Why is AAH thought to be a precursor of adenocarcinoma, and what is still uncertain?"
+    focus: [pathogenesis]
+    level: 2
+  - it: "Come si classifica un adenocarcinoma invasivo e che valore prognostico hanno i pattern nello stadio I?"
+    en: "How is an invasive adenocarcinoma classified, and what do the patterns tell you about prognosis in stage I?"
+    focus: [micro, prognosis]
+    level: 2
+  - it: "Come distingue un adenocarcinoma solido da un carcinoma a grandi cellule?"
+    en: "How do you tell a solid adenocarcinoma from a large cell carcinoma?"
+    focus: [ancillary, diagnosis, differential]
+    level: 3
+images:
+  - id: lung-adenocarcinoma-micro-1
+    role: micro
+sources:
+  - source: rubin-8e
+    chapter: "18"
+    pages: "754, 756"
