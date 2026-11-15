@@ -1,0 +1,474 @@
+entity: diffuse-alveolar-damage
+claims:
+  - claimId: diffuse-alveolar-damage-c001
+    section: definition
+    statement: "Many kinds of sudden injury to the alveolar lining and capillary endothelium produce one recurring tissue picture, named DAD."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "715" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c002
+    section: definition
+    statement: "ARDS is the name for severe DAD; previously healthy-looking lungs slide quickly into respiratory failure."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "715" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c003
+    section: definition
+    statement: "Radiographs show opacities across both lungs, which are stiff, and blood oxygen is low."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "715" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c004
+    section: etiology
+    statement: "Very different injuries all converge on DAD as their shared end route."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "715" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c005
+    section: etiology
+    statement: "What the many triggers share is acute damage to alveolar epithelial cells and to endothelial cells."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "715" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c006
+    section: etiology
+    statement: "Blood loss, trauma and sepsis can each lead to shock, and shock of any origin is a frequent forerunner of ARDS, whose lung changes are often called shock lung."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "717" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c007
+    section: etiology
+    statement: "Infections, including viral infections, are among the listed causes of ARDS."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "715" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c008
+    section: etiology
+    statement: "Stomach contents that reach the alveoli have a very low pH and burn the lining cells chemically, which leads to DAD."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "717" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c009
+    section: etiology
+    statement: "Most of the damage from inhaled toxic gas or near-drowning lands on the alveolar epithelium."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "716-717" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c010
+    section: etiology
+    statement: "Among cytotoxic chemotherapy drugs that can cause DAD, bleomycin is the best known and busulfan is another."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "717" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c011
+    section: etiology
+    statement: "Ingestion of the herbicide paraquat may cause DAD."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "717-718" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c012
+    section: etiology
+    statement: "Reactive oxygen species are blamed for oxygen toxicity, and radicals produced when radiation splits water for radiation injury."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "717" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c013
+    section: etiology
+    statement: "Lung histology alone seldom reveals the trigger of DAD, except when an infectious agent can be identified."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "715" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c014
+    section: etiology
+    statement: "DAD with no identified cause is termed acute interstitial pneumonia in clinical practice."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "715" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c015
+    section: pathogenesis
+    statement: "Leaky, injured capillaries fill the interstitium with fluid carrying plasma protein."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "715" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c016
+    section: pathogenesis
+    statement: "Hyaline membranes are deposits of plasma protein and fibrin on injured alveolar walls; they form after type I pneumocytes are lost and fluid floods the air spaces."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "715" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c017
+    section: pathogenesis
+    statement: "Type II pneumocytes multiply to replace the lost epithelial lining, guided by alveolar basement membranes that remain intact despite the loss of type I cells."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "715" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c018
+    section: pathogenesis
+    statement: "Neutrophils trapped in the lung after complement activation may release radicals and enzymes that injure capillary endothelium."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "716" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c019
+    section: pathogenesis
+    statement: "ARDS also arises in patients with very few neutrophils, so these cells cannot be required for DAD."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "716" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c020
+    section: pathogenesis
+    statement: "Fluid and protein pass from the interstitium into the alveoli once toxic gas or near-drowning breaks the normally tight epithelial seal."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "716" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c021
+    section: gross
+    statement: "In fatal DAD the lungs contain almost no air and weigh heavily because of edema."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "716" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c022
+    section: micro
+    statement: "The exudative phase is the first stage, developing within a week of the insult, and it includes edema and hyaline membranes."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "716" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c023
+    section: micro
+    statement: "Plasma protein and the debris of sloughed epithelial cells make up the hyaline membranes, which look glassy and pink with eosin."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "716" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c024
+    section: micro
+    statement: "Hyaline membranes show up by the second day and dominate the picture of the exudative phase after four to five days."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "716" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c025
+    section: micro
+    statement: "Macrophages, lymphocytes and plasma cells form the interstitial inflammation."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "716" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c026
+    section: micro
+    statement: "Fibrin thrombi may be present inside alveolar capillaries and pulmonary arterioles."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "716" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c027
+    section: micro
+    statement: "Fibroblasts multiplying within the alveolar walls mark the organizing phase, which begins roughly a week after the injury."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "716" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c028
+    section: micro
+    statement: "No new hyaline membranes form in the organizing phase, while interstitial inflammation continues and cuboidal type II pneumocytes cover the denuded septa."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "716-717" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c029
+    section: micro
+    statement: "TGF-beta and PDGF, probably released by macrophages as they clear hyaline membrane debris, drive fibroblast growth."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "717" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c030
+    section: micro
+    statement: "When chemotherapy causes DAD, type II cells often show atypical, darkly stained nuclei."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "717" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c031
+    section: ancillary
+    statement: "The first injury visible by electron microscopy is degeneration of capillary lining cells and type I alveolar cells."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "716" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c032
+    section: clinical
+    statement: "A few hours without symptoms after the insult are followed by fast breathing (tachypnea) and breathlessness."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "717" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c033
+    section: clinical
+    statement: "Arterial blood gas analysis finds a decreased pCO2 together with hypoxemia."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "717" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c034
+    section: clinical
+    statement: "As ARDS progresses the patient becomes cyanotic."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "717" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c035
+    section: clinical
+    statement: "Extra oxygen cannot correct the low blood oxygen on its own, so the patient needs a ventilator."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "717" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c036
+    section: diagnosis
+    statement: "On chest radiographs both lungs show widespread infiltrates in the interstitium and in the air spaces."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "717" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c037
+    section: diagnosis
+    statement: "AIP, the idiopathic form of DAD, can be diagnosed only after drug toxicity, collagen vascular disease and infection have been excluded."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "742" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c038
+    section: prognosis
+    statement: "ARDS mortality exceeds 50%."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "715" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c039
+    section: prognosis
+    statement: "Normal lung function returns after complete recovery, because resorption clears the alveolar exudate and membranes and the epithelium is restored."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "715" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c040
+    section: prognosis
+    statement: "In mild cases the loose fibrosis clears."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "717" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c041
+    section: prognosis
+    statement: "Honeycomb lung, a scarred lung riddled with cysts, is the end stage that severe DAD can reach."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "715-716" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c042
+    section: prognosis
+    statement: "After severe ARDS, scarring can impair lung function, and some survivors develop pulmonary hypertension."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "717" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c043
+    section: prognosis
+    statement: "Lung damage from cytotoxic chemotherapy can keep advancing after the drug is withdrawn; methotrexate hypersensitivity is an exception and is reversible."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "717" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c044
+    section: differential
+    statement: "Loose polyp-like plugs of fibroblastic tissue block distal airways and alveoli while the lung architecture stays preserved."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "742" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c045
+    section: differential
+    statement: "The interstitium is intact and barely inflamed, while the alveolar spaces contain a granular substance rich in surfactant."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "718" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c046
+    section: differential
+    statement: "Ultrastructural examination of alveolar proteinosis reveals surfactant in the form of tubular myelin."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "718" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c047
+    section: differential
+    statement: "Neonatal respiratory distress syndrome usually affects severely premature newborns, whose surfactant system is immature at birth."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "718" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c048
+    section: differential
+    statement: "In acute diffuse pulmonary hemorrhage the alveoli contain many red blood cells, and neutrophils are found in the capillary walls of the septa."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "718" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c049
+    section: high-yield
+    statement: "ARDS is the clinical form of severe DAD, which is acute injury to alveolar epithelial and endothelial cells."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "715" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c050
+    section: high-yield
+    statement: "The exudative phase shows edema and hyaline membranes of precipitated plasma proteins."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "716" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c051
+    section: high-yield
+    statement: "The organizing phase begins about a week after injury with fibroblast proliferation and persistent type II pneumocyte proliferation."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "716" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c052
+    section: high-yield
+    statement: "Viral infections, drugs, toxins, aspiration of gastric contents, shock and sepsis are among the causes."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "715" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c053
+    section: high-yield
+    statement: "Idiopathic DAD is clinically acute interstitial pneumonia."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "715" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c054
+    section: high-yield
+    statement: "Severe DAD can end in honeycomb lung."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "716" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c055
+    section: traps
+    statement: "DAD is a final common pathway of many insults and the histology rarely reveals the trigger."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "715" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c056
+    section: traps
+    statement: "ARDS can occur in patients with very low neutrophil counts, so neutrophils are not a requirement."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "716" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c057
+    section: traps
+    statement: "The basement membranes of the alveoli survive the injury and serve as a scaffold along which type II pneumocytes rebuild the lining."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "715" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c058
+    section: traps
+    statement: "Giving the patient more oxygen to breathe, by itself, leaves blood oxygen inadequate in ARDS."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "717" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: diffuse-alveolar-damage-c059
+    section: mnemonics
+    statement: "Fluid and hyaline membranes form first, type II cells then line the septa, and fibroblasts later scar the wall."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "715-717" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
