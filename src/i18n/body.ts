@@ -78,6 +78,9 @@ export const tBody = defineStrings({
   homeHint: { it: 'Scegli un apparato per vedere i suoi organi.', en: 'Pick a system to see its organs.' },
   homeAll: { it: 'Tutte le schede per organo', en: 'All cards by organ' },
 
+  // The block on a card, under the lens chips
+  whereInBody: { it: 'Dove nel corpo', en: 'Where in the body' },
+
   // Closing section: cards that have no organ
   otherTitle: { it: 'Schede senza un organo', en: 'Cards without an organ' },
   otherBody: {

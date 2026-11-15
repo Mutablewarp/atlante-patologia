@@ -1,0 +1,55 @@
+---
+/**
+ * "Where in the body" on a card: the organs of the card, each a link to its place on the body page, with its
+ * system as plain text. Renders nothing when the card maps to no organ. No JavaScript.
+ */
+import type { Lang } from '../../i18n/index.ts';
+import { tBody } from '../../i18n/body.ts';
+import { langPath } from '../../lib/url.ts';
+
+interface Props {
+  lang: Lang;
+  organs: { id: string; label: string; system: string }[];
+}
+const { lang, organs } = Astro.props;
+---
+
+{
+  organs.length > 0 && (
+    <section class="where-in-body" aria-labelledby="where-in-body-title">
+      <h2 id="where-in-body-title" class="small-heading">
+        {tBody(lang, 'whereInBody')}
+      </h2>
+      <ul>
+        {organs.map((o) => (
+          <li>
+            <a href={langPath(lang, `body/#organ-${o.id}`)} data-organ-link={o.id}>
+              {o.label}
+            </a>
+            {o.system !== o.label && <span class="muted small">{o.system}</span>}
+          </li>
+        ))}
+      </ul>
+    </section>
+  )
+}
+
+<style>
+  .where-in-body ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  .where-in-body li {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 0.75rem;
+    min-height: 44px;
+  }
+  .where-in-body a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 44px;
+  }
+</style>

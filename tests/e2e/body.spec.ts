@@ -58,6 +58,18 @@ for (const lang of ['it', 'en'] as const) {
   });
 }
 
+test('an organ link on a card lands on the body page with that organ as target', async ({ page }) => {
+  await page.goto('en/body/');
+  const first = page.locator('section[data-organ]:has(.body-cards a)').first();
+  const organ = await first.getAttribute('data-organ');
+  await first.locator('.body-cards a').first().click();
+  const link = page.locator(`.where-in-body a[href$="body/#organ-${organ}"]`);
+  await expect(link).toBeVisible();
+  await link.click();
+  await expect(page).toHaveURL(new RegExp(`/body/#organ-${organ}$`));
+  await expect(page.locator(`#organ-${organ}:target`)).toHaveCount(1);
+});
+
 test('no horizontal overflow at 375 px', async ({ page }) => {
   await page.setViewportSize({ width: 375, height: 812 });
   await page.goto('it/body/');
