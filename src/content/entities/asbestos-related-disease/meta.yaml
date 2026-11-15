@@ -1,0 +1,136 @@
+id: asbestos-related-disease
+module: o18
+tier: core
+kind: disease
+names:
+  it: "Patologia da asbesto"
+  en: "Asbestos-related disease"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: []
+summary:
+  it: "Insieme delle lesioni reattive (asbestosi, placche pleuriche, versamento benigno) e neoplastiche (mesotelioma, carcinoma polmonare) causate dall'inalazione di fibre di asbesto."
+  en: "The reactive lesions (asbestosis, pleural plaques, benign effusion) and neoplasms (mesothelioma, lung carcinoma) caused by inhaling asbestos fibers."
+lenses:
+  system: [respiratory]
+  process: [repair-fibrosis, neoplasia]
+  pattern: [pigment-deposits, hyaline-change]
+  presentation: []
+  marker: [perls-prussian-blue, special-stains]
+  group: [toxic-environmental, neoplastic]
+learningObjectives:
+  - it: "Descrivere l'asbestosi: fibrosi interstiziale diffusa con corpi dell'asbesto, più grave nei campi inferiori."
+    en: "Describe asbestosis: diffuse interstitial fibrosis with asbestos bodies, worse in the lower zones."
+  - it: "Riconoscere un corpo dell'asbesto (corpo ferruginoso) e la sua positività al blu di Prussia."
+    en: "Recognize an asbestos (ferruginous) body and its Prussian blue positivity."
+  - it: "Distinguere placche pleuriche, fibrosi pleurica diffusa, versamento benigno e atelettasia rotonda."
+    en: "Tell apart pleural plaques, diffuse pleural fibrosis, benign effusion and rounded atelectasis."
+  - it: "Collegare l'esposizione all'asbesto al rischio di mesotelioma e di carcinoma polmonare, soprattutto nei fumatori."
+    en: "Link asbestos exposure to the risk of mesothelioma and lung carcinoma, especially in smokers."
+prerequisites: []
+relations:
+  - type: causes
+    target: malignant-mesothelioma
+    note:
+      it: "Il legame tra esposizione ad asbesto e mesotelioma maligno è ben stabilito."
+      en: "The link between asbestos exposure and malignant mesothelioma is firmly established."
+  - type: causes
+    target: lung-cancer-overview
+    note:
+      it: "Nei lavoratori fumatori l'incidenza del carcinoma polmonare è molto aumentata."
+      en: "Lung carcinoma incidence is greatly increased in smoking asbestos workers."
+  - type: sharesMechanism
+    target: silicosis
+    note:
+      it: "Pneumoconiosi da polveri inorganiche con fibrosi interstiziale."
+      en: "Pneumoconiosis from inorganic dust with interstitial fibrosis."
+  - type: differentialOf
+    target: sarcoidosis
+    note:
+      it: "La berilliosi cronica è indistinguibile dalla sarcoidosi all'istologia."
+      en: "Chronic berylliosis is indistinguishable from sarcoidosis on histology."
+quickCheck:
+  - id: asbestos-related-disease-q1
+    q:
+      it: "Trovi corpi dell'asbesto in un polmone all'autopsia: basta per diagnosticare l'asbestosi?"
+      en: "You find asbestos bodies in a lung at autopsy: is that enough to diagnose asbestosis?"
+    a:
+      it: "No. Servono anche fibrosi interstiziale diffusa; i corpi dell'asbesto si trovano in quasi tutti gli adulti."
+      en: "No. Diffuse interstitial fibrosis must also be present; asbestos bodies are found in virtually all adults."
+    kind: short
+  - id: asbestos-related-disease-q2
+    q:
+      it: "Le placche pleuriche diventano mesoteliomi?"
+      en: "Do pleural plaques turn into mesotheliomas?"
+    a:
+      it: "No. Non evolvono in mesotelioma e non predicono l'asbestosi."
+      en: "No. They do not evolve into mesothelioma and do not predict asbestosis."
+    kind: short
+  - id: asbestos-related-disease-q3
+    q:
+      it: "Quale tipo di asbesto è più patogeno e quale colorazione evidenzia il suo rivestimento nei corpi dell'asbesto?"
+      en: "Which type of asbestos is most pathogenic, and which stain shows the coat of asbestos bodies?"
+    a:
+      it: "Gli anfiboli, in particolare la crocidolite; il blu di Prussia colora il ferro del rivestimento."
+      en: "The amphiboles, crocidolite in particular; Prussian blue stains the iron of the coat."
+    kind: short
+  - id: asbestos-related-disease-q4
+    q:
+      it: "Che rischio di carcinoma polmonare hanno i lavoratori dell'asbesto che fumano?"
+      en: "What lung carcinoma risk do asbestos workers who smoke carry?"
+    a:
+      it: "Hanno un'incidenza fino a 40-60 volte quella dei non fumatori della popolazione generale."
+      en: "Up to 40 to 60 times the incidence seen in nonsmokers of the general population."
+    kind: short
+  - id: asbestos-related-disease-q5
+    q:
+      it: "Qual è la differenza tra asbestosi e fibrosi pleurica diffusa?"
+      en: "What is the difference between asbestosis and diffuse pleural fibrosis?"
+    a:
+      it: "L'asbestosi è una cicatrizzazione diffusa dell'interstizio polmonare; la fibrosi pleurica diffusa è limitata alla pleura."
+      en: "Asbestosis is diffuse scarring within the lung interstitium; diffuse pleural fibrosis is confined to the pleura."
+    kind: short
+selfExplain:
+  - it: "Perché le fibre di asbesto, pur lunghe, raggiungono gli alveoli?"
+    en: "Why do asbestos fibers reach the alveoli even though they are long?"
+  - it: "Perché i macrofagi inglobano solo in parte una fibra lunga e la rivestono di ferro e proteine?"
+    en: "Why do macrophages only partly engulf a long fiber and coat it with iron and protein?"
+examQuestions:
+  - it: "Mi parli dell'asbestosi: che cosa la definisce e dove colpisce il polmone?"
+    en: "Tell me about asbestosis: what defines it, and where does it strike the lung?"
+    focus: [definition, gross, diagnosis]
+    level: 1
+  - it: "Che cosa vede al microscopio in un corpo dell'asbesto, e quale colorazione userebbe per confermarlo?"
+    en: "What do you see under the microscope in an asbestos body, and which stain would you use to confirm it?"
+    focus: [micro, ancillary]
+    level: 1
+  - it: "Perché le fibre di asbesto provocano fibrosi interstiziale?"
+    en: "Why do asbestos fibers cause interstitial fibrosis?"
+    focus: [pathogenesis]
+    level: 2
+  - it: "Mi parli delle placche pleuriche e del versamento pleurico benigno: come si presentano e quando compaiono?"
+    en: "Tell me about pleural plaques and benign pleural effusion: how do they present and when do they appear?"
+    focus: [gross, clinical, diagnosis]
+    level: 2
+  - it: "Come distingue l'asbestosi dalla fibrosi pleurica diffusa, e quale rischio neoplastico associa all'esposizione ad asbesto?"
+    en: "How do you tell asbestosis from diffuse pleural fibrosis, and which cancer risks do you link to asbestos exposure?"
+    focus: [diagnosis, prognosis, traps]
+    level: 3
+images:
+  - id: asbestos-related-disease-gross-1
+    role: gross
+    pairWith: asbestos-related-disease-micro-1
+  - id: asbestos-related-disease-micro-1
+    role: micro
+  - id: asbestos-related-disease-micro-2
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "18"
+    pages: "733-735"
+lastUpdated: 2026-11-14
+status: published
