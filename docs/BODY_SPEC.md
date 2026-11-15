@@ -148,7 +148,7 @@ A female base body, per-organ sub-parts (lobes, segments), lesion markers inside
 
 ## 11. Measured facts (B-0, 2026-11-13)
 
-Raw data is in `.work/anatomy/raw/` (not committed). Measured with `scripts/anatomy/lib.mjs`, `scripts/anatomy/spike.mjs` and `scripts/anatomy/spike-viewer/`, and by reading the files.
+Raw data is in `.work/anatomy/raw/` (not committed). Measured with `scripts/anatomy/lib.mjs`, `scripts/anatomy/spike.mjs` and a throwaway viewer (`scripts/anatomy/spike-viewer/`, removed in B-8: see the git history of the branch), and by reading the files.
 
 | Fact | Value | How measured |
 |---|---|---|
