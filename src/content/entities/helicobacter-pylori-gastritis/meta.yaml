@@ -1,0 +1,132 @@
+id: helicobacter-pylori-gastritis
+module: o19
+tier: core
+kind: disease
+names:
+  it: "Gastrite da Helicobacter pylori"
+  en: "Helicobacter pylori gastritis"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: ["HP"]
+summary:
+  it: "Gastrite cronica causata da Helicobacter pylori, che vive sulla superficie delle cellule foveolari, di solito con predominanza antrale; è la principale causa di ulcera peptica e un fattore di rischio per adenocarcinoma gastrico e linfoma MALT."
+  en: "Chronic gastritis caused by Helicobacter pylori, which lives on the surface of foveolar cells, usually antral-predominant; the main cause of peptic ulcer and a risk factor for gastric adenocarcinoma and MALT lymphoma."
+lenses:
+  system: [gastrointestinal]
+  process: [chronic-inflammation, neoplasia]
+  pattern: [metaplasia, atrophy, dysplasia]
+  presentation: []
+  marker: [special-stains, ihc]
+  group: [infectious, inflammatory]
+learningObjectives:
+  - it: "Descrivere la gastrite cronica attiva da Helicobacter pylori a predominanza antrale e il suo quadro istologico."
+    en: "Describe antral-predominant chronic active gastritis from Helicobacter pylori and its histology."
+  - it: "Spiegare come ureasi, vacA e cagA permettono al batterio di sopravvivere e di danneggiare la mucosa senza invaderla."
+    en: "Explain how urease, vacA and cagA let the bacterium survive and damage the mucosa without invading it."
+  - it: "Indicare come si mettono in evidenza i batteri in biopsia: ematossilina-eosina, argento di Warthin-Starry, immunocolorazione."
+    en: "State how the organisms are shown on biopsy: H&E, Warthin-Starry silver stain, immunostaining."
+  - it: "Collegare l'infezione ad atrofia multifocale con metaplasia intestinale, ulcera, adenocarcinoma e linfoma MALT."
+    en: "Link the infection to multifocal atrophy with intestinal metaplasia, ulcer, adenocarcinoma and MALT lymphoma."
+prerequisites: [chronic-inflammation]
+relations:
+  - type: causes
+    target: peptic-ulcer-disease
+    note:
+      it: "La gastrite cronica da Helicobacter è la causa più comune di ulcera peptica."
+      en: "Chronic Helicobacter gastritis is the most common cause of peptic ulcer disease."
+  - type: causes
+    target: gastric-adenocarcinoma
+    note:
+      it: "Sequenza: infiammazione, metaplasia intestinale, displasia, adenocarcinoma."
+      en: "Sequence: inflammation, intestinal metaplasia, dysplasia, adenocarcinoma."
+  - type: causes
+    target: gastric-malt-lymphoma
+    note:
+      it: "L'infezione espone al linfoma gastrico del tessuto linfoide associato alle mucose."
+      en: "The infection predisposes to gastric lymphoma of mucosa-associated lymphoid tissue."
+  - type: differentialOf
+    target: autoimmune-gastritis
+    note:
+      it: "Autoimmune: limitata a corpo e fondo, anticorpi anti-cellule parietali e anti-fattore intrinseco."
+      en: "Autoimmune: limited to body and fundus, anti-parietal cell and anti-intrinsic factor antibodies."
+  - type: differentialOf
+    target: acute-gastritis-and-reactive-gastropathy
+    note:
+      it: "Gli neutrofili nella gastrite da Helicobacter non indicano gastrite acuta."
+      en: "Neutrophils in Helicobacter gastritis do not mean acute gastritis."
+quickCheck:
+  - id: helicobacter-pylori-gastritis-q1
+    q:
+      it: "Come fa Helicobacter pylori a sopravvivere nell'ambiente acido dello stomaco?"
+      en: "How does Helicobacter pylori survive in the acidic stomach?"
+    a:
+      it: "Produce ureasi, che trasforma l'urea in ammoniaca; l'ammoniaca, base, neutralizza l'acido."
+      en: "It makes urease, which turns urea into ammonia; ammonia, a base, neutralizes the acid."
+    kind: short
+  - id: helicobacter-pylori-gastritis-q2
+    q:
+      it: "Quale colorazione speciale si usa più spesso per vedere i batteri e che cosa evidenzia?"
+      en: "Which special stain is used most often to see the bacteria, and what does it show?"
+    a:
+      it: "L'impregnazione argentica, come Warthin-Starry: evidenzia piccoli bacilli curvilinei sulla superficie delle cellule foveolari."
+      en: "Silver impregnation, such as Warthin-Starry: it highlights small curvilinear bacilli on the surface of foveolar cells."
+    kind: short
+  - id: helicobacter-pylori-gastritis-q3
+    q:
+      it: "Gli neutrofili in una gastrite da Helicobacter indicano una gastrite acuta?"
+      en: "Do neutrophils in Helicobacter gastritis indicate acute gastritis?"
+    a:
+      it: "No: segnalano riacutizzazioni di una gastrite cronica sottostante e possono formare ascessi nelle fossette."
+      en: "No: they mark flares of an underlying chronic gastritis and may form pit abscesses."
+    kind: short
+  - id: helicobacter-pylori-gastritis-q4
+    q:
+      it: "Con quali tre malattie è collegata l'infezione cronica da Helicobacter?"
+      en: "Which three diseases is chronic Helicobacter infection linked to?"
+    a:
+      it: "Ulcera peptica, adenocarcinoma gastrico e linfoma MALT gastrico."
+      en: "Peptic ulcer disease, gastric adenocarcinoma and gastric MALT lymphoma."
+    kind: short
+selfExplain:
+  - it: "Perché Helicobacter, pur non invadendo la mucosa, provoca un'infiammazione cronica?"
+    en: "Why does Helicobacter cause chronic inflammation even though it does not invade the mucosa?"
+  - it: "Perché la gastrite da Helicobacter inizia nella lamina propria superficiale?"
+    en: "Why does Helicobacter gastritis start in the superficial lamina propria?"
+chain: []
+examQuestions:
+  - it: "Mi parli della gastrite cronica da Helicobacter pylori a predominanza antrale: che cosa vede al microscopio?"
+    en: "Tell me about antral-predominant Helicobacter pylori gastritis: what do you see under the microscope?"
+    focus: [pathogenesis, micro]
+    level: 1
+  - it: "Che cos'è la gastrite atrofica multifocale e quali tappe portano dall'infiammazione all'adenocarcinoma?"
+    en: "What is multifocal atrophic gastritis, and which steps lead from inflammation to adenocarcinoma?"
+    focus: [pathogenesis, micro]
+    level: 2
+  - it: "Come si prelevano e si studiano le biopsie gastriche e quali colorazioni userebbe per cercare il batterio?"
+    en: "How are gastric biopsies taken and studied, and which stains would you use to look for the bacterium?"
+    focus: [gross, ancillary, diagnosis]
+    level: 1
+  - it: "Perché Helicobacter sopravvive nello stomaco e danneggia la mucosa pur senza invaderla?"
+    en: "Why does Helicobacter survive in the stomach and damage the mucosa without invading it?"
+    focus: [pathogenesis]
+    level: 2
+  - it: "Quali complicanze può avere un'infezione cronica da Helicobacter, ulcera, cancro e linfoma MALT?"
+    en: "Which complications can chronic Helicobacter infection bring: ulcer, cancer and MALT lymphoma?"
+    focus: [clinical, prognosis]
+    level: 2
+  - it: "Come distingue la gastrite da Helicobacter dalla gastrite autoimmune e dalla gastrite acuta, visti i neutrofili?"
+    en: "How do you tell Helicobacter gastritis from autoimmune gastritis and from acute gastritis, given the neutrophils?"
+    focus: [micro, differential, traps]
+    level: 3
+images:
+  - { id: helicobacter-pylori-gastritis-micro-1, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "19"
+    pages: "778-780"
+lastUpdated: 2026-11-14
+status: published
