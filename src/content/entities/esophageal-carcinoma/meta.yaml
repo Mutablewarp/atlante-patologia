@@ -1,0 +1,133 @@
+id: esophageal-carcinoma
+module: o19
+tier: core
+kind: disease
+editionDependent: true
+editionNote:
+  it: "La classificazione, il grado e i valori soglia dello stadio cambiano tra le edizioni: verificare l'edizione TNM in uso prima di citare uno stadio."
+  en: "Classification, grade and stage cut-offs change between editions: check the current TNM edition before quoting a stage."
+status: published
+lastUpdated: 2026-11-14
+reviewStatus: ai-generated-unreviewed
+names:
+  it: "Carcinoma dell'esofago"
+  en: "Esophageal carcinoma"
+  eponyms: []
+  synonyms:
+    it: ["Cancro dell'esofago"]
+    en: ["Esophageal cancer"]
+  abbreviations: []
+summary:
+  it: "Tumore maligno epiteliale dell'esofago, per lo più carcinoma squamoso (prevalente nel mondo, nel terzo medio e superiore) o adenocarcinoma (prevalente in Occidente, sul fondo di un esofago di Barrett, nel tratto distale)."
+  en: "Malignant epithelial tumor of the esophagus, mostly squamous cell carcinoma (most common worldwide, middle and upper thirds) or adenocarcinoma (predominant in the West, on a background of Barrett esophagus, distal)."
+lenses:
+  system: [gastrointestinal]
+  process: [neoplasia]
+  pattern: [dysplasia, metaplasia]
+  presentation: [mass-lesion, lymphadenopathy]
+  marker: []
+  group: [neoplastic, toxic-environmental]
+learningObjectives:
+  - it: "Confrontare carcinoma squamoso e adenocarcinoma dell'esofago per sede, fattori di rischio e lesione precursore."
+    en: "Compare squamous carcinoma and adenocarcinoma of the esophagus by site, risk factors and precursor lesion."
+  - it: "Descrivere l'aspetto macroscopico e microscopico dei due istotipi."
+    en: "Describe the gross and microscopic appearance of the two histologic types."
+  - it: "Collegare la sede del tumore alle stazioni linfonodali interessate dalla diffusione."
+    en: "Link tumor site to the lymph node groups involved in spread."
+  - it: "Elencare i segni clinici e le complicanze: disfagia, sanguinamento, fistola tracheoesofagea, invasione del mediastino."
+    en: "List clinical signs and complications: dysphagia, bleeding, tracheoesophageal fistula, mediastinal invasion."
+prerequisites: [dysplasia, metaplasia]
+relations:
+  - type: complicationOf
+    target: barrett-esophagus
+    note:
+      it: "L'adenocarcinoma insorge dalla displasia nell'esofago di Barrett."
+      en: "Adenocarcinoma arises from dysplasia in Barrett esophagus."
+  - type: differentialOf
+    target: gastrointestinal-stromal-tumor
+    note:
+      it: "Tumore sottomucoso a cellule fusate, ma nell'esofago per lo più benigno e muscolare liscio."
+      en: "A spindle cell submucosal tumor, but in the esophagus mostly benign and smooth muscle in origin."
+  - type: differentialOf
+    target: gastric-adenocarcinoma
+    note:
+      it: "Le pliche gastriche indicano l'inizio dello stomaco e aiutano a definire la sede della giunzione."
+      en: "Gastric folds mark the start of the stomach and help place the junction."
+  - type: sameLesionOtherOrgan
+    target: laryngeal-squamous-cell-carcinoma
+    note:
+      it: "Carcinoma squamoso delle vie aerodigestive, con fumo e alcol tra i fattori di rischio."
+      en: "Squamous carcinoma of the aerodigestive tract, with smoking and alcohol among the risk factors."
+quickCheck:
+  - id: esophageal-carcinoma-q1
+    q:
+      it: "Quale istotipo prevale nel mondo e quale in Nord America, Europa occidentale e Australia?"
+      en: "Which type predominates worldwide, and which in North America, Western Europe and Australia?"
+    a:
+      it: "Nel mondo prevale il carcinoma squamoso; in Nord America, Europa occidentale e Australia prevale l'adenocarcinoma."
+      en: "Squamous carcinoma predominates worldwide; adenocarcinoma predominates in North America, Western Europe and Australia."
+    kind: short
+  - id: esophageal-carcinoma-q2
+    q:
+      it: "Da quale lesione precursore e in quale sede nasce di solito l'adenocarcinoma?"
+      en: "From which precursor lesion and in which site does adenocarcinoma usually arise?"
+    a:
+      it: "Dalla displasia nell'esofago di Barrett, nell'esofago distale o alla giunzione gastroesofagea."
+      en: "From dysplasia in Barrett esophagus, in the distal esophagus or at the gastroesophageal junction."
+    kind: short
+  - id: esophageal-carcinoma-q3
+    q:
+      it: "Quali linfonodi drenano un tumore del terzo inferiore dell'esofago?"
+      en: "Which lymph nodes drain a tumor of the lower third of the esophagus?"
+    a:
+      it: "Quelli retroperitoneali, celiaci e gastrici sinistri, seguendo i linfatici dell'arteria gastrica sinistra."
+      en: "Retroperitoneal, celiac and left gastric nodes, following the lymphatics of the left gastric artery."
+    kind: short
+selfExplain:
+  - it: "Perché la disfagia compare tardi e quando il tumore è spesso inoperabile?"
+    en: "Why does dysphagia appear late, when the tumor is often inoperable?"
+  - it: "Perché fumo e alcol insieme pesano più della somma dei due fattori?"
+    en: "Why do smoking and alcohol together weigh more than the sum of the two factors?"
+  - it: "Perché il drenaggio linfatico dipende dal terzo dell'esofago interessato?"
+    en: "Why does lymphatic drainage depend on the third of the esophagus involved?"
+chain:
+  - pathology:
+      it: "Tumore infiltrante circonferenziale che restringe il lume"
+      en: "Circumferential infiltrating tumor narrowing the lumen"
+    sign:
+      it: "Disfagia"
+      en: "Dysphagia"
+    lab:
+      it: "Endoscopia con ecografia"
+      en: "Endoscopy with ultrasound"
+examQuestions:
+  - it: "Mi parli del carcinoma squamoso e dell'adenocarcinoma dell'esofago: sede, fattori di rischio e lesione precursore."
+    en: "Tell me about squamous carcinoma and adenocarcinoma of the esophagus: site, risk factors and precursor lesion."
+    focus: [definition, etiology, gross]
+    level: 3
+  - it: "Dove metastatizza il carcinoma dell'esofago e come dipende dalla sede del tumore?"
+    en: "Where does esophageal carcinoma spread, and how does it depend on the site of the tumor?"
+    focus: [diagnosis]
+    level: 2
+  - it: "Quali complicanze può dare il carcinoma dell'esofago, e come l'aspetto macroscopico del tumore le orienta?"
+    en: "Which complications can esophageal carcinoma cause, and how does the gross pattern of the tumor point to them?"
+    focus: [prognosis, gross]
+    level: 2
+  - it: "Che cosa vede al microscopio in un carcinoma squamoso e in un adenocarcinoma dell'esofago?"
+    en: "What do you see under the microscope in squamous carcinoma and in adenocarcinoma of the esophagus?"
+    focus: [micro]
+    level: 1
+  - it: "Perché la disfagia è un segno tardivo nel carcinoma dell'esofago?"
+    en: "Why is dysphagia a late sign in esophageal carcinoma?"
+    focus: [prognosis, clinical]
+    level: 2
+  - it: "Come distingue un adenocarcinoma giunzionale da un tumore gastrico, e che rapporto ha con l'esofago di Barrett?"
+    en: "How do you tell a junctional adenocarcinoma from a gastric tumor, and how does it relate to Barrett esophagus?"
+    focus: [pathogenesis, differential]
+    level: 3
+images:
+  - { id: esophageal-carcinoma-micro-1, role: micro }
+sources:
+  - source: rubin-8e
+    chapter: "19"
+    pages: "775-776"
