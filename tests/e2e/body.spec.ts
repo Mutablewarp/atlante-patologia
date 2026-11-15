@@ -70,6 +70,16 @@ test('an organ link on a card lands on the body page with that organ as target',
   await expect(page.locator(`#organ-${organ}:target`)).toHaveCount(1);
 });
 
+test('each organ with cards shows seen, mastered and due, and a review link filtered to its cards', async ({ page }) => {
+  await page.goto('en/body/');
+  const organ = page.locator('section[data-organ]:has(.body-cards a)').first();
+  const line = organ.locator(':scope > [data-progress]');
+  await expect(line.locator('[data-k="seen"]')).toHaveText(/^Seen 0\/\d+$/);
+  await expect(line.locator('[data-k="mastered"]')).toHaveText(/^Mastered 0\/\d+$/);
+  await expect(line.locator('[data-k="due"]')).toHaveText(/^Due today 0$/);
+  await expect(line.locator('a')).toHaveAttribute('href', /study\/review\/\?entities=[a-z0-9-]+/);
+});
+
 test('no horizontal overflow at 375 px', async ({ page }) => {
   await page.setViewportSize({ width: 375, height: 812 });
   await page.goto('it/body/');
