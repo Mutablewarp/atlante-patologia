@@ -1,0 +1,132 @@
+id: infectious-enterocolitis
+module: o19
+tier: core
+kind: disease
+names:
+  it: "Enterocoliti infettive"
+  en: "Infectious enterocolitis"
+  eponyms: []
+  synonyms:
+    it: ["Diarrea infettiva", "Gastroenterite infettiva"]
+    en: ["Infectious diarrhea", "Infectious gastroenteritis"]
+  abbreviations: []
+summary:
+  it: "Infiammazione infettiva dell'intestino tenue e del colon, di solito con diarrea, causata da batteri tossigeni o invasivi, virus, micobatteri, protozoi o patogeni opportunisti."
+  en: "Infectious disease of the small bowel and colon, usually with diarrhea, caused by toxigenic or invasive bacteria, viruses, mycobacteria, protozoa or opportunistic pathogens."
+lenses:
+  system: [gastrointestinal]
+  process: [acute-inflammation, granulomatous-inflammation, immunodeficiency]
+  pattern: [granuloma, necrosis-caseous]
+  presentation: [fever]
+  marker: [laboratory, molecular]
+  group: [infectious, inflammatory]
+learningObjectives:
+  - it: "Distinguere la diarrea tossigena da quella da batteri invasivi per sede, danno della mucosa e meccanismo."
+    en: "Distinguish toxigenic from invasive bacterial diarrhea by site, mucosal damage and mechanism."
+  - it: "Descrivere le lesioni intestinali di Shigella, febbre tifoide, Yersinia e Campylobacter."
+    en: "Describe the intestinal lesions of Shigella, typhoid fever, Yersinia and Campylobacter."
+  - it: "Riconoscere la tubercolosi intestinale, con la stenosi ad anello di tovagliolo e i linfonodi caseosi."
+    en: "Recognize intestinal tuberculosis, with the napkin-ring stricture and caseous nodes."
+  - it: "Riconoscere Giardia in biopsia e sapere perché cercare le plasmacellule."
+    en: "Recognize Giardia on biopsy and know why to look for plasma cells."
+  - it: "Collegare le infezioni opportunistiche all'immunodepressione e al calo dei CD4."
+    en: "Link opportunistic infections to immunosuppression and a falling CD4 count."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: ulcerative-colitis
+    note:
+      it: "Nella shigellosi mancano i segni di cronicità, come la ramificazione delle cripte."
+      en: "Shigellosis lacks chronicity features such as crypt branching."
+  - type: differentialOf
+    target: crohn-disease
+    note:
+      it: "Yersinia e tubercolosi possono dare granulomi e stenosi simili al Crohn."
+      en: "Yersinia and tuberculosis can give granulomas and strictures like Crohn disease."
+  - type: differentialOf
+    target: pseudomembranous-colitis
+    note:
+      it: "C. difficile agisce con le tossine, senza invadere la mucosa."
+      en: "C. difficile acts through toxins, without invading."
+  - type: differentialOf
+    target: ischemic-bowel-disease
+    note:
+      it: "La colite ischemica può essere indistinguibile clinicamente da quella infettiva."
+      en: "Ischemic colitis can be clinically indistinguishable from infectious colitis."
+  - type: sameLesionOtherOrgan
+    target: tuberculosis
+    note:
+      it: "La tubercolosi intestinale è la localizzazione enterica della stessa infezione."
+      en: "Intestinal tuberculosis is the enteric site of the same infection."
+quickCheck:
+  - id: infectious-enterocolitis-q1
+    q:
+      it: "Perché la diarrea tossigena causa poco danno alla mucosa?"
+      en: "Why does toxigenic diarrhea cause little mucosal damage?"
+    a:
+      it: "Perché il batterio resta sulla superficie e secerne la tossina, che altera canali e pompe ioniche senza invadere la mucosa."
+      en: "Because the organism stays on the surface and secretes toxin, which disturbs ion channels and pumps without invading the mucosa."
+    kind: short
+  - id: infectious-enterocolitis-q2
+    q:
+      it: "Quale reperto in biopsia duodenale impone di cercare le plasmacellule?"
+      en: "Which duodenal biopsy finding should prompt a search for plasma cells?"
+    a:
+      it: "La presenza di Giardia, perché è frequente nell'immunodeficienza comune variabile, in cui le plasmacellule sono scarse o assenti."
+      en: "Giardia, because it is common in common variable immunodeficiency, where plasma cells are sparse or absent."
+    kind: short
+  - id: infectious-enterocolitis-q3
+    q:
+      it: "Quali infezioni dell'intestino possono simulare la malattia di Crohn?"
+      en: "Which intestinal infections can mimic Crohn disease?"
+    a:
+      it: "Yersinia, con granulomi in ileo e appendice, e la tubercolosi intestinale, con stenosi difficili da distinguere."
+      en: "Yersinia, with granulomas in ileum and appendix, and intestinal tuberculosis, with strictures hard to tell apart."
+    kind: short
+  - id: infectious-enterocolitis-q4
+    q:
+      it: "Quale cicatrice può lasciare la guarigione delle ulcere della tubercolosi intestinale?"
+      en: "Which scar can healing of intestinal tuberculosis ulcers leave?"
+    a:
+      it: "Una stenosi ad anello di tovagliolo, perché la tubercolosi interessa di solito la regione ileocecale."
+      en: "A napkin-ring stricture; intestinal tuberculosis usually involves the ileocecal region."
+    kind: short
+selfExplain:
+  - it: "Perché la diarrea tossigena resta acquosa pur lasciando la mucosa quasi intatta?"
+    en: "Why does toxigenic diarrhea stay watery even though the mucosa is left almost intact?"
+  - it: "Perché la tubercolosi intestinale si localizza soprattutto nella regione ileocecale?"
+    en: "Why does intestinal tuberculosis settle mainly in the ileocecal region?"
+examQuestions:
+  - it: "Come distingue una diarrea da batteri tossigeni da una da batteri invasivi, per meccanismo, sede e danno della mucosa?"
+    en: "How do you tell toxigenic from invasive bacterial diarrhea, by mechanism, site and mucosal damage?"
+    focus: [pathogenesis, micro, high-yield]
+    level: 3
+  - it: "Mi parli dei virus che causano gastroenterite: che cosa fanno rotavirus e norovirus all'intestino?"
+    en: "Tell me about the viruses that cause gastroenteritis: what do rotavirus and norovirus do to the bowel?"
+    focus: [etiology, pathogenesis, clinical]
+    level: 1
+  - it: "Mi parli della tubercolosi intestinale: come si sviluppa e che cosa si vede a livello macroscopico?"
+    en: "Tell me about intestinal tuberculosis: how does it arise, and what is seen grossly?"
+    focus: [pathogenesis, gross, clinical]
+    level: 2
+  - it: "Che cosa vede al microscopio in una biopsia con Giardia, e perché cercherebbe le plasmacellule?"
+    en: "What do you see under the microscope in a biopsy with Giardia, and why would you look for plasma cells?"
+    focus: [micro, diagnosis]
+    level: 2
+  - it: "Perché un paziente con AIDS è esposto alle infezioni opportunistiche dell'intestino?"
+    en: "Why is a patient with AIDS exposed to opportunistic gut infections?"
+    focus: [etiology, pathogenesis, clinical]
+    level: 2
+images:
+  - id: infectious-enterocolitis-gross-1
+    role: gross
+  - id: infectious-enterocolitis-micro-2
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "19"
+    pages: "805-809"
+lastUpdated: 2026-11-15
+status: published
