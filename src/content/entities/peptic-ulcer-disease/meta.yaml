@@ -1,0 +1,113 @@
+id: peptic-ulcer-disease
+module: o19
+tier: core
+kind: disease
+names:
+  it: "Ulcera peptica"
+  en: "Peptic ulcer disease"
+  eponyms: []
+  synonyms:
+    it: ["Ulcera gastrica", "Ulcera duodenale"]
+    en: ["Gastric ulcer", "Duodenal ulcer"]
+  abbreviations: ["PUD"]
+summary:
+  it: "Distruzione focale della mucosa di stomaco o duodeno prossimale, legata ad acido gastrico e infezione da H. pylori, con base a quattro strati e complicanze come emorragia, perforazione e ostruzione."
+  en: "Focal destruction of the mucosa of the stomach or proximal duodenum, tied to gastric acid and H. pylori infection, with a four-layered base and complications such as bleeding, perforation and obstruction."
+lenses:
+  system: [gastrointestinal]
+  process: [chronic-inflammation, repair-fibrosis]
+  pattern: [necrosis-coagulative]
+  presentation: [anemia]
+  marker: [laboratory]
+  group: [infectious, inflammatory]
+learningObjectives:
+  - it: "Elencare le cause principali di ulcera peptica: H. pylori, FANS, sindrome di Zollinger–Ellison."
+    en: "List the main causes of peptic ulcer: H. pylori, NSAIDs, Zollinger–Ellison syndrome."
+  - it: "Descrivere i quattro strati della base di un'ulcera peptica dal lume in profondità."
+    en: "Describe the four layers of the base of a peptic ulcer from the lumen inward."
+  - it: "Riconoscere le complicanze (emorragia, perforazione, ostruzione) e le loro conseguenze."
+    en: "Recognize the complications (bleeding, perforation, obstruction) and their consequences."
+  - it: "Spiegare perché si biopsiano margini e fondo di un'ulcera gastrica e come distinguerla da un carcinoma ulcerato."
+    en: "Explain why the edges and bed of a gastric ulcer are biopsied and how it differs from an ulcerated carcinoma."
+prerequisites: []
+relations:
+  - type: causes
+    target: helicobacter-pylori-gastritis
+    note:
+      it: "La gastrite da H. pylori sta alla base della maggior parte delle ulcere gastriche."
+      en: "H. pylori gastritis underlies most gastric ulcers."
+  - type: differentialOf
+    target: gastric-adenocarcinoma
+    note:
+      it: "Un'ulcera cronica può somigliare a un carcinoma ulcerato: serve la biopsia."
+      en: "A chronic ulcer can resemble an ulcerated carcinoma: biopsy decides."
+  - type: sharesMechanism
+    target: acute-gastritis-and-reactive-gastropathy
+    note:
+      it: "I FANS causano sia gastropatia reattiva sia ulcere."
+      en: "NSAIDs cause both reactive gastropathy and ulcers."
+quickCheck:
+  - id: peptic-ulcer-disease-q1
+    q:
+      it: "Elenca dal lume in profondità i quattro strati della base di un'ulcera peptica."
+      en: "List, from the lumen inward, the four layers of the base of a peptic ulcer."
+    a:
+      it: "Essudato fibrinopurulento, tessuto necrotico, tessuto di granulazione, tessuto fibroso con infiammazione cronica."
+      en: "Fibrinopurulent exudate, necrotic tissue, granulation tissue, fibrotic tissue with chronic inflammation."
+    kind: short
+  - id: peptic-ulcer-disease-q2
+    q:
+      it: "Perché si biopsiano margini e fondo di un'ulcera gastrica e non solo il centro?"
+      en: "Why are the edges and bed of a gastric ulcer biopsied, not only the center?"
+    a:
+      it: "Perché il centro dell'ulcera tende a mostrare solo tessuto necrotico, e un'ulcera cronica può somigliare a un carcinoma ulcerato."
+      en: "Because the ulcer center tends to show only necrotic tissue, and a chronic ulcer can resemble an ulcerated carcinoma."
+    kind: short
+  - id: peptic-ulcer-disease-q3
+    q:
+      it: "Quali sono le tre complicanze maggiori dell'ulcera peptica?"
+      en: "What are the three major complications of peptic ulcer disease?"
+    a:
+      it: "Emorragia, ostruzione (pilorica) e perforazione con peritonite."
+      en: "Hemorrhage, (pyloric) obstruction and perforation with peritonitis."
+    kind: short
+selfExplain:
+  - it: "Perché l'infezione da H. pylori può portare a un'ulcera duodenale?"
+    en: "Why can H. pylori infection lead to a duodenal ulcer?"
+  - it: "Perché le perforazioni della parete anteriore causano più spesso peritonite generalizzata di quelle della parete posteriore?"
+    en: "Why do anterior-wall perforations cause generalized peritonitis more often than posterior ones?"
+examQuestions:
+  - it: "Mi parli delle cause dell'ulcera peptica: H. pylori, FANS e sindrome di Zollinger–Ellison."
+    en: "Tell me about the causes of peptic ulcer disease: H. pylori, NSAIDs and Zollinger–Ellison syndrome."
+    focus: [etiology, pathogenesis]
+    level: 1
+  - it: "Che cosa vede al microscopio nella base di un'ulcera peptica cronica, dal lume in profondità?"
+    en: "What do you see under the microscope in the base of a chronic peptic ulcer, from the lumen inward?"
+    focus: [micro]
+    level: 1
+  - it: "Mi parli delle complicanze dell'ulcera peptica e di quando una perforazione dà peritonite diffusa."
+    en: "Tell me about the complications of peptic ulcer disease and when a perforation causes diffuse peritonitis."
+    focus: [prognosis]
+    level: 2
+  - it: "Perché si biopsiano margine e fondo di un'ulcera gastrica, e come la distingue da un carcinoma ulcerato?"
+    en: "Why are the edge and bed of a gastric ulcer biopsied, and how do you tell it from an ulcerated carcinoma?"
+    focus: [diagnosis, differential]
+    level: 3
+  - it: "Mi parli del ruolo dell'acido nell'ulcera gastrica e in quella duodenale."
+    en: "Tell me about the role of acid in gastric and duodenal ulcers."
+    focus: [pathogenesis, traps]
+    level: 2
+images:
+  - id: peptic-ulcer-disease-gross-1
+    role: gross
+    pairWith: peptic-ulcer-disease-micro-1
+  - id: peptic-ulcer-disease-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "19"
+    pages: "782-786, 787"
+lastUpdated: 2026-11-14
+status: published
