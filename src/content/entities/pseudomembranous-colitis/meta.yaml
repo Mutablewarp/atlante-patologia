@@ -1,0 +1,113 @@
+id: pseudomembranous-colitis
+module: o19
+tier: core
+kind: disease
+names:
+  it: "Colite pseudomembranosa (Clostridioides difficile)"
+  en: "Pseudomembranous colitis"
+  latin: "Clostridioides difficile"
+  eponyms: []
+  synonyms:
+    it: ["Colite da Clostridioides difficile"]
+    en: ["Clostridioides difficile colitis"]
+  abbreviations: ["CDI"]
+summary:
+  it: "Infiammazione del colon con placche essudative sulla mucosa, causata più spesso da Clostridioides difficile dopo una terapia antibiotica, tramite le tossine A e B."
+  en: "Inflammation of the colon with exudative mucosal plaques, most often caused by Clostridioides difficile after antibiotic therapy, through toxins A and B."
+lenses:
+  system: [gastrointestinal]
+  process: [acute-inflammation]
+  pattern: []
+  presentation: [fever]
+  marker: [laboratory]
+  group: [infectious, inflammatory]
+learningObjectives:
+  - it: "Spiegare come gli antibiotici favoriscono l'infezione da Clostridioides difficile."
+    en: "Explain how antibiotics favor Clostridioides difficile infection."
+  - it: "Distinguere il ruolo della tossina A da quello della tossina B."
+    en: "Distinguish the roles of toxin A and toxin B."
+  - it: "Descrivere l'aspetto macroscopico e microscopico della pseudomembrana."
+    en: "Describe the gross and microscopic appearance of the pseudomembrane."
+  - it: "Elencare le complicanze, la diagnosi e il trattamento."
+    en: "List the complications, the diagnosis and the treatment."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: ischemic-bowel-disease
+    note:
+      it: "Anche la colite ischemica può produrre pseudomembrane."
+      en: "Ischemic colitis can also produce pseudomembranes."
+  - type: differentialOf
+    target: infectious-enterocolitis
+    note:
+      it: "Altre infezioni enteriche, in particolare E. coli produttore di verotossina, possono produrre pseudomembrane."
+      en: "Other enteric infections, notably verotoxin-producing E. coli, can produce pseudomembranes."
+quickCheck:
+  - id: pseudomembranous-colitis-q1
+    q:
+      it: "Perché una terapia antibiotica favorisce la colite da C. difficile?"
+      en: "Why does antibiotic therapy favor C. difficile colitis?"
+    a:
+      it: "Gli antibiotici uccidono la flora intestinale protettiva; C. difficile, più resistente, si insedia e produce le tossine A e B."
+      en: "Antibiotics kill the protective gut flora; the more resistant C. difficile gains a foothold and makes toxins A and B."
+    kind: short
+  - id: pseudomembranous-colitis-q2
+    q:
+      it: "Che cosa fanno la tossina A e la tossina B?"
+      en: "What do toxin A and toxin B do?"
+    a:
+      it: "La tossina A attiva e recluta mediatori dell'infiammazione; la tossina B è direttamente citotossica."
+      en: "Toxin A activates and recruits inflammatory mediators; toxin B is directly cytotoxic."
+    kind: short
+  - id: pseudomembranous-colitis-q3
+    q:
+      it: "Quali complicanze può dare la colite fulminante?"
+      en: "Which complications can fulminant colitis cause?"
+    a:
+      it: "Perforazione del colon, megacolon tossico e morte."
+      en: "Colonic perforation, toxic megacolon and death."
+    kind: short
+selfExplain:
+  - it: "Perché C. difficile causa danno pur non essendo invasivo?"
+    en: "Why does C. difficile cause damage although it is not invasive?"
+  - it: "Perché una terapia antibiotica può preparare il terreno a una colite?"
+    en: "Why can antibiotic therapy set the stage for colitis?"
+  - it: "Perché la tossina A e la tossina B causano danni diversi?"
+    en: "Why do toxin A and toxin B cause different kinds of damage?"
+examQuestions:
+  - it: "Mi parli della colite da Clostridioides difficile: quale ruolo hanno gli antibiotici?"
+    en: "Tell me about Clostridioides difficile colitis: what role do antibiotics play?"
+    focus: [etiology, pathogenesis]
+    level: 1
+  - it: "Perché C. difficile provoca danno pur non invadendo la parete del colon?"
+    en: "Why does C. difficile cause damage even though it does not invade the colon wall?"
+    focus: [pathogenesis, traps]
+    level: 2
+  - it: "Che cosa vede in una colite pseudomembranosa all'esame macroscopico e al microscopio?"
+    en: "What do you see in pseudomembranous colitis on gross examination and under the microscope?"
+    focus: [gross, micro]
+    level: 1
+  - it: "Quali complicanze può avere e come si tratta un paziente con questa infezione?"
+    en: "Which complications can it cause, and how is a patient with this infection treated?"
+    focus: [prognosis]
+    level: 2
+  - it: "Come distingue una colite pseudomembranosa da C. difficile da altre cause di pseudomembrane?"
+    en: "How do you tell C. difficile pseudomembranous colitis from other causes of pseudomembranes?"
+    focus: [differential, diagnosis, traps]
+    level: 3
+images:
+  - id: pseudomembranous-colitis-gross-1
+    role: gross
+    pairWith: pseudomembranous-colitis-micro-1
+  - id: pseudomembranous-colitis-micro-1
+    role: micro
+  - id: pseudomembranous-colitis-micro-2
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "19"
+    pages: "808-809"
+lastUpdated: 2026-11-15
+status: published
