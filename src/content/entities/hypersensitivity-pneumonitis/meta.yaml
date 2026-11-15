@@ -1,0 +1,128 @@
+id: hypersensitivity-pneumonitis
+module: o18
+tier: core
+kind: disease
+names:
+  it: "Polmonite da ipersensibilità"
+  en: "Hypersensitivity pneumonitis"
+  eponyms: []
+  synonyms:
+    it: ["Alveolite allergica estrinseca"]
+    en: ["Extrinsic allergic alveolitis"]
+  abbreviations: ["HP"]
+summary:
+  it: "Reazione immunitaria del polmone ad antigeni inalati, con infiammazione interstiziale acuta o cronica centrata sui bronchioli, granulomi mal formati e, nella fase finale, fibrosi."
+  en: "Immune reaction of the lung to inhaled antigens, with acute or chronic interstitial inflammation centered on bronchioles, poorly formed granulomas and, in the end stage, fibrosis."
+lenses:
+  system: [respiratory]
+  process: [hypersensitivity, chronic-inflammation, granulomatous-inflammation, repair-fibrosis]
+  pattern: [granuloma]
+  presentation: [dyspnea, fever]
+  marker: []
+  group: [immune, toxic-environmental]
+learningObjectives:
+  - it: "Elencare i principali antigeni inalati responsabili e le malattie professionali che ne derivano."
+    en: "List the main inhaled antigens and the occupational diseases they cause."
+  - it: "Spiegare il ruolo combinato dell'ipersensibilità di tipo III e di tipo IV."
+    en: "Explain the combined role of type III and type IV hypersensitivity."
+  - it: "Descrivere l'istologia della forma cronica: infiltrato interstiziale bronchiolocentrico, granulomi mal formati non caseosi, polmonite organizzativa."
+    en: "Describe the histology of the chronic form: bronchiolocentric interstitial infiltrate, poorly formed noncaseating granulomas, organizing pneumonia."
+  - it: "Distinguere la forma acuta da quella cronica fibrosante per clinica, istologia e necessità di biopsia."
+    en: "Tell the acute form from the chronic fibrosing form by clinical picture, histology and need for biopsy."
+prerequisites: []
+relations:
+  - type: sharesMechanism
+    target: hypersensitivity-reactions
+    note:
+      it: "Combina ipersensibilità da immunocomplessi (tipo III) e cellulo-mediata (tipo IV)."
+      en: "Combines immune complex (type III) and cell-mediated (type IV) hypersensitivity."
+  - type: differentialOf
+    target: sarcoidosis
+    note:
+      it: "Entrambe sono malattie granulomatose polmonari; qui un antigene inalato è la causa."
+      en: "Both are granulomatous lung diseases; here an inhaled antigen is the cause."
+  - type: differentialOf
+    target: idiopathic-pulmonary-fibrosis
+    note:
+      it: "La fibrosi terminale può assomigliare alla polmonite interstiziale usuale."
+      en: "End-stage fibrosis can resemble usual interstitial pneumonia."
+quickCheck:
+  - id: hypersensitivity-pneumonitis-q1
+    q:
+      it: "Quali due tipi di ipersensibilità si combinano nella polmonite da ipersensibilità?"
+      en: "Which two types of hypersensitivity combine in hypersensitivity pneumonitis?"
+    a:
+      it: "Il tipo III (da immunocomplessi) e il tipo IV (cellulo-mediato); il contributo di ciascuno è ancora discusso."
+      en: "Type III (immune complex) and type IV (cell-mediated); the share of each is still debated."
+    kind: short
+  - id: hypersensitivity-pneumonitis-q2
+    q:
+      it: "Quali sono i tre reperti istologici della forma cronica?"
+      en: "What are the three histologic findings of the chronic form?"
+    a:
+      it: "Polmonite interstiziale cellulare bronchiolocentrica, granulomi non caseosi mal formati e polmonite organizzativa."
+      en: "Bronchiolocentric cellular interstitial pneumonia, poorly formed noncaseating granulomas and organizing pneumonia."
+    kind: short
+  - id: hypersensitivity-pneumonitis-q3
+    q:
+      it: "Qual è l'unico trattamento adeguato?"
+      en: "What is the only adequate treatment?"
+    a:
+      it: "Rimuovere l'antigene responsabile; gli steroidi possono aiutare nelle forme acute e in alcune croniche."
+      en: "Removing the offending antigen; steroids may help in acute forms and in some chronic cases."
+    kind: short
+  - id: hypersensitivity-pneumonitis-q4
+    q:
+      it: "Qual è la malattia prototipo e quando compaiono i sintomi dopo l'esposizione?"
+      en: "Which disease is the prototype, and when do symptoms start after exposure?"
+    a:
+      it: "Il polmone del contadino, causato dal fieno ammuffito; i sintomi compaiono 4-6 ore dopo l'ingresso nel fienile."
+      en: "Farmer's lung, caused by moldy hay; symptoms begin 4 to 6 hours after entering the barn."
+    kind: short
+selfExplain:
+  - it: "Perché una persona con precipitine sieriche contro un antigene inalato può non ammalarsi?"
+    en: "Why can a person with serum precipitins to an inhaled antigen stay healthy?"
+  - it: "Perché la forma acuta ha neutrofili e quella cronica granulomi?"
+    en: "Why does the acute form have neutrophils and the chronic form granulomas?"
+chain:
+  - pathology:
+      it: "Esposizione al fieno ammuffito con reazione immune acuta ai bronchioli e agli alveoli"
+      en: "Exposure to moldy hay with an acute immune reaction in bronchioles and alveoli"
+    sign:
+      it: "Dispnea, tosse e febbre lieve alcune ore dopo l'esposizione"
+      en: "Dyspnea, cough and mild fever hours after exposure"
+    lab:
+      it: "Precipitine seriche IgG contro l'antigene"
+      en: "Serum IgG precipitins against the antigen"
+examQuestions:
+  - it: "Mi parli della polmonite da ipersensibilità: quali antigeni inalati la causano?"
+    en: "Tell me about hypersensitivity pneumonitis: which inhaled antigens cause it?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Che cosa vede al microscopio, in una biopsia polmonare, nella forma cronica?"
+    en: "What do you see under the microscope in a lung biopsy of the chronic form?"
+    focus: [micro]
+    level: 1
+  - it: "Perché la forma acuta e quella cronica hanno un aspetto istologico diverso?"
+    en: "Why do the acute and chronic forms look different histologically?"
+    focus: [pathogenesis, micro]
+    level: 2
+  - it: "Come distingue la forma acuta da quella cronica fibrosante, e quando serve la biopsia?"
+    en: "How do you tell the acute form from the chronic fibrosing form, and when is a biopsy needed?"
+    focus: [clinical, diagnosis, micro]
+    level: 3
+  - it: "Come distingue la polmonite da ipersensibilità dalla sarcoidosi e dalla fibrosi polmonare idiopatica?"
+    en: "How do you tell hypersensitivity pneumonitis from sarcoidosis and from idiopathic pulmonary fibrosis?"
+    focus: [micro, differential]
+    level: 3
+images:
+  - { id: hypersensitivity-pneumonitis-micro-1, role: micro }
+  - { id: hypersensitivity-pneumonitis-micro-2, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "18"
+    pages: "735-737"
+lastUpdated: 2026-11-14
+status: published

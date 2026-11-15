@@ -1,0 +1,458 @@
+entity: hypersensitivity-pneumonitis
+claims:
+  - claimId: hypersensitivity-pneumonitis-c001
+    section: definition
+    statement: "The lung responds to inhaled antigens in hypersensitivity pneumonitis, a disorder that is also called extrinsic allergic alveolitis."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "735" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c002
+    section: definition
+    statement: "The inflammation is located in the lung interstitium and can be acute or chronic."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "735" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c003
+    section: definition
+    statement: "Since the antigens are mostly met in the workplace, the names of the resulting diseases generally refer to the exposure."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "735" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c004
+    section: etiology
+    statement: "Moldy hay is the source of farmer's lung, in which the patient inhales thermophilic actinomycetes such as Micropolyspora faeni."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "735, 737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c005
+    section: etiology
+    statement: "Spoiled sugar cane carrying the bacterium Thermoactinomyces sacchari causes bagassosis."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "735" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c006
+    section: etiology
+    statement: "Long-term inhalation of bird proteins, droppings among them, can cause bird fancier's lung in bird keepers."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "735" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c007
+    section: etiology
+    statement: "Contact with maple bark that carries the fungus Cryptostroma corticale leads to maple bark-stripper's disease."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "735" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c008
+    section: etiology
+    statement: "Suberosis (moldy cork), mushroom worker's disease (moldy compost) and pituitary snuff are additional causes."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "735, 737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c009
+    section: etiology
+    statement: "Fungi that grow in stagnant water, for example in pool or air-conditioning systems, can also cause the disease."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c010
+    section: etiology
+    statement: "Especially in chronic disease, the inciting antigen frequently stays unidentified."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c011
+    section: etiology
+    statement: "Since most people with serum precipitins stay healthy, the host's genes probably affect who falls ill."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c012
+    section: pathogenesis
+    statement: "How much type III (immune complex) and type IV (cell-mediated) hypersensitivity each contribute is still debated, but the disease involves both."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c013
+    section: pathogenesis
+    statement: "Serum IgG that precipitates the triggering agent is found in most patients."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c014
+    section: pathogenesis
+    statement: "In the acute phase neutrophils flood the tissue once complement is activated by antigen meeting antibodies already in the alveoli."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "736" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c015
+    section: pathogenesis
+    statement: "Granulomas and an interstitial lymphocytic infiltrate follow continued exposure, because alveolar macrophages take up the antigen but cannot break it down."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "736" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c016
+    section: pathogenesis
+    statement: "In acute disease the lesions are in alveoli and respiratory bronchioles and are dominated by neutrophils."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c017
+    section: pathogenesis
+    statement: "The chronic lesion behaves like delayed hypersensitivity, with granulomas and mononuclear cells."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c018
+    section: micro
+    statement: "In chronic disease a cellular interstitial pneumonia develops around the bronchioles."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c019
+    section: micro
+    statement: "The infiltrate around the airways may be dense or faint, and it is made of macrophages, plasma cells and lymphocytes."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c020
+    section: micro
+    statement: "Eosinophils are uncommon in the infiltrate."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c021
+    section: micro
+    statement: "About two-thirds of cases contain granulomas, which are poorly formed and do not caseate."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c022
+    section: micro
+    statement: "Organizing pneumonia, with intraluminal organizing fibrosis, is seen in about the same proportion of cases as the granulomas."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c023
+    section: micro
+    statement: "The end stage may be mistaken for usual interstitial pneumonia because the interstitial inflammation has receded and only pulmonary fibrosis remains."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c024
+    section: micro
+    statement: "In fully developed chronic disease, the biopsy appearance nearly gives the diagnosis by itself."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c025
+    section: micro
+    statement: "Subtle biopsies can stay inconclusive despite clinical history and chest imaging."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c026
+    section: ancillary
+    statement: "Biopsy of the lung is carried out only when the disease is chronic."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c027
+    section: ancillary
+    statement: "On routine histology the findings to look for are organizing pneumonia, poorly formed granulomas and the cellular infiltrate around bronchioles."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c028
+    section: ancillary
+    statement: "The T cells in excess in bronchoalveolar fluid are mostly CD8-positive suppressor/cytotoxic cells."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c029
+    section: clinical
+    statement: "The exposure pattern, meaning how often and how strongly the antigen is met, determines whether the disease is acute, subacute or chronic."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c030
+    section: clinical
+    statement: "Farmer's lung is the prototype of hypersensitivity pneumonitis."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c031
+    section: clinical
+    statement: "A farmhand abruptly becomes breathless, coughs and runs a mild fever, 4 to 6 hours after working in a barn holding stored hay."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c032
+    section: clinical
+    statement: "Symptoms come back when the person is exposed again, after having remitted within 24 to 48 hours."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c033
+    section: clinical
+    statement: "With time the disorder becomes chronic."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c034
+    section: clinical
+    statement: "Chronic disease is harder to recognize clinically: breathlessness creeps in slowly and cor pulmonale may be present."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c035
+    section: diagnosis
+    statement: "Skin tests and the finding of precipitating antibodies in the serum are used to confirm the diagnosis."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c036
+    section: diagnosis
+    statement: "In acute cases the clinical evaluation is what usually establishes the diagnosis."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c037
+    section: diagnosis
+    statement: "Lung function tests are restrictive: the lung is stiff (low compliance), gas transfer falls and blood oxygen is low."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c038
+    section: diagnosis
+    statement: "In the chronic stage, obstruction of the airways can become a clinical problem."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c039
+    section: prognosis
+    statement: "The only fully effective treatment is to end contact with the triggering antigen."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c040
+    section: prognosis
+    statement: "Acute forms, and some chronically affected patients, may respond to corticosteroid therapy."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c041
+    section: prognosis
+    statement: "The end stage of the disease is pulmonary fibrosis."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c042
+    section: differential
+    statement: "Sarcoidosis has no known cause and forms granulomas, most often in the lung."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c043
+    section: differential
+    statement: "Chronic berylliosis can mimic sarcoidosis in the lung, with noncaseating granulomas along bronchi, vessels, septa and pleura."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "735" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c044
+    section: differential
+    statement: "The beryllium lymphocyte proliferation test shows beryllium sensitization and may help separate berylliosis from sarcoidosis."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "735" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c045
+    section: differential
+    statement: "The fibrosis of end-stage chronic hypersensitivity pneumonitis can imitate usual interstitial pneumonia."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c046
+    section: high-yield
+    statement: "Most of the inhaled antigens behind hypersensitivity pneumonitis (extrinsic allergic alveolitis) are met in occupational settings."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "735" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c047
+    section: high-yield
+    statement: "The disease is a combination of type III and type IV hypersensitivity."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c048
+    section: high-yield
+    statement: "In chronic disease, poorly formed noncaseating granulomas are found together with a bronchiolocentric cellular interstitial pneumonia."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c049
+    section: high-yield
+    statement: "Farmer's lung, the prototype, causes symptoms hours after entering a barn with moldy hay."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c050
+    section: high-yield
+    statement: "Pulmonary fibrosis in the end stage can be mistaken for usual interstitial pneumonia."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c051
+    section: high-yield
+    statement: "Avoiding the trigger altogether is the only fully effective measure."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c052
+    section: traps
+    statement: "The disease is built from type III (immune complex) and type IV (T-cell) reactions, not from IgE-mediated allergy."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c053
+    section: traps
+    statement: "Most people who are precipitin-positive never develop the disease."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c054
+    section: traps
+    statement: "A lung biopsy is reserved for chronic disease, because acute cases can usually be diagnosed on clinical grounds."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c055
+    section: traps
+    statement: "The granulomas of hypersensitivity pneumonitis are poorly formed and noncaseating."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c056
+    section: traps
+    statement: "Eosinophils are uncommon in the infiltrate."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: hypersensitivity-pneumonitis-c057
+    section: mnemonics
+    statement: "Chronic hypersensitivity pneumonitis is marked by a bronchiolocentric infiltrate, an inhaled antigen and poorly formed granulomas."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "735, 737" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
