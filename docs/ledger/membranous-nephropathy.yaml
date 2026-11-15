@@ -1,0 +1,458 @@
+entity: membranous-nephropathy
+claims:
+  - claimId: membranous-nephropathy-c001
+    section: definition
+    statement: "Immune complexes lodge in the subepithelial space, between the podocytes and the glomerular basement membrane."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "931" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c002
+    section: definition
+    statement: "Membranous nephropathy often underlies nephrotic syndrome in adults."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "931" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c003
+    section: definition
+    statement: "In the United States, white and Asian adults with primary glomerular nephrotic syndrome most often have membranous nephropathy."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c004
+    section: etiology
+    statement: "In primary membranous nephropathy the immune target is a podocyte antigen, most often PLA2R."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "931-932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c005
+    section: etiology
+    statement: "Anti-THSD7A autoantibodies are another recognized cause of primary membranous nephropathy."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c006
+    section: etiology
+    statement: "Lupus and thyroid autoimmunity are possible causes of secondary membranous nephropathy."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c007
+    section: etiology
+    statement: "Infections such as hepatitis B or syphilis can lead to secondary membranous nephropathy."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c008
+    section: etiology
+    statement: "Therapeutic agents such as penicillamine can cause secondary membranous nephropathy."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c009
+    section: etiology
+    statement: "Lung and prostate cancers can lead to secondary membranous nephropathy."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c010
+    section: etiology
+    statement: "In the rare neonatal form, the mother lacks neutral endopeptidase, which the baby's podocytes carry, and her antibodies against it cross the placenta."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "931" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c011
+    section: pathogenesis
+    statement: "Subepithelial complexes arise by two routes: they form on the spot, or circulating complexes settle in the subepithelial zone."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "931" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c012
+    section: pathogenesis
+    statement: "In the Heymann rat model, antibodies to a kidney epithelial antigen pass through the GBM to reach podocytes, and the complexes form in situ beneath them."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "931" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c013
+    section: pathogenesis
+    statement: "Most primary cases, about three in four, carry blood antibodies to PLA2R, a receptor that spans the podocyte membrane."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "931" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c014
+    section: pathogenesis
+    statement: "Antigen and antibody together inside the deposits, PLA2R and anti-PLA2R, point to local formation."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "931" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c015
+    section: pathogenesis
+    statement: "Complement, including the membrane attack complex, is heavily deposited and chiefly damages podocytes."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c016
+    section: pathogenesis
+    statement: "Primary disease seldom puts deposits in the mesangium, whereas secondary disease often does."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c017
+    section: pathogenesis
+    statement: "Antigen origin may explain it: a podocyte antigen confines complexes beneath the epithelium, whereas a blood-borne antigen such as a hepatitis B antigen can also deposit in the mesangium."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c018
+    section: micro
+    statement: "Glomeruli in membranous nephropathy are usually normocellular."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c019
+    section: micro
+    statement: "Whether the capillary walls are normal or thickened depends on how long the disease has lasted."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c020
+    section: micro
+    statement: "Spikes studding the podocyte side of the basement membrane show up with silver in mid-stage disease."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c021
+    section: micro
+    statement: "Immune complexes do not take up silver; the spikes are basement membrane material projecting around them."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c022
+    section: micro
+    statement: "Eventually the glomeruli become sclerotic, after the capillary lumens have narrowed."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c023
+    section: micro
+    statement: "The more scarred the glomeruli, the more tubular atrophy and interstitial fibrosis there is."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c024
+    section: micro
+    statement: "Electron microscopy shows the immune complexes as dense deposits within the capillary walls."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c025
+    section: micro
+    statement: "In stage I the deposits lie beneath the epithelium, with a smooth basement membrane and no projections."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932-933" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c026
+    section: micro
+    statement: "In stage II, spikes of basement membrane rise beside the deposits."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c027
+    section: micro
+    statement: "In stage III, basement membrane material closes around the deposits."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c028
+    section: micro
+    statement: "In stage IV the basement membrane is thick and the deposits have lost density."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c029
+    section: ancillary
+    statement: "On H&E the glomeruli are not hypercellular, and wall thickness varies with disease duration."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c030
+    section: ancillary
+    statement: "Silver stains stain basement membrane material, so the spikes of membranous nephropathy become visible."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c031
+    section: ancillary
+    statement: "Immunofluorescence shows IgG and C3 as granules throughout the glomerular capillary walls."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c032
+    section: ancillary
+    statement: "Electron microscopy shows the electron-dense deposits and allows the lesion to be staged."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c033
+    section: ancillary
+    statement: "In most primary cases, roughly three in four, blood tests detect antibodies against PLA2R."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "931" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c034
+    section: clinical
+    statement: "Membranous nephropathy is commonly found in adults with nephrotic syndrome."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "931-932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c035
+    section: clinical
+    statement: "The course of membranous nephropathy varies widely between patients."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "933" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c036
+    section: diagnosis
+    statement: "Granular capillary wall IgG and C3 together with subepithelial dense deposits on electron microscopy characterize membranous nephropathy."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c037
+    section: diagnosis
+    statement: "Deposits in the mesangium suggest a secondary cause such as lupus."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c038
+    section: prognosis
+    statement: "Over 20 years, one in four patients experiences a spontaneous remission."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "933" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c039
+    section: prognosis
+    statement: "More than 65% of kidneys are still functioning 10 years on."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "933" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c040
+    section: prognosis
+    statement: "Kidney survival is worse in men and with proteinuria above 6 g/day."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "933" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c041
+    section: prognosis
+    statement: "Steroids with or without other immunosuppressive drugs are used when kidney function worsens."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "933" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c042
+    section: prognosis
+    statement: "Children do better because spontaneous remissions in them are more often lasting."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "933" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c043
+    section: differential
+    statement: "FSGS shows patchy IgM and C3 in sclerotic segments but no deposited immune complexes."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "931" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c044
+    section: differential
+    statement: "In lupus-related membranous disease immune complexes also reach the mesangium, unlike in the primary form."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c045
+    section: differential
+    statement: "In early diabetic glomerulosclerosis the glomeruli are enlarged and the GBM is thickened."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "933" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c046
+    section: high-yield
+    statement: "The deposits of membranous nephropathy are subepithelial immune complexes beneath the podocytes."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "931" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c047
+    section: high-yield
+    statement: "About 75% of primary cases have anti-PLA2R autoantibodies."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "931" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c048
+    section: high-yield
+    statement: "Silver stain shows spikes made of basement membrane material around the deposits."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c049
+    section: high-yield
+    statement: "Glomeruli are normocellular and wall thickness varies with disease duration."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c050
+    section: high-yield
+    statement: "Immunofluorescence shows granular IgG and C3 along the capillary walls."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c051
+    section: high-yield
+    statement: "Lupus and hepatitis B are classic secondary causes, along with some drugs and cancers."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c052
+    section: high-yield
+    statement: "Mesangial deposits favor a secondary form."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c053
+    section: traps
+    statement: "The silver spikes are basement membrane material, not immune complexes, which stay unstained by silver."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c054
+    section: traps
+    statement: "Only about 75% of primary cases have anti-PLA2R, and other targets such as THSD7A exist."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "931-932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c055
+    section: traps
+    statement: "Membranous nephropathy glomeruli are usually normocellular, not hypercellular, and the walls may be thickened."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c056
+    section: traps
+    statement: "Mesangial deposits point toward a secondary cause such as lupus rather than primary disease."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: membranous-nephropathy-c057
+    section: mnemonics
+    statement: "The mnemonic SPIKES covers subepithelial deposits, PLA2R antibodies, granular IgG and C3, normocellular glomeruli, exclusion of secondary causes (SLE, hepatitis B, drugs, tumors) and silver spikes."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "931-932" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15

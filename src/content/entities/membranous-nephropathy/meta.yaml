@@ -1,0 +1,127 @@
+id: membranous-nephropathy
+module: o22
+tier: core
+kind: disease
+names:
+  it: "Glomerulonefrite membranosa"
+  en: "Membranous nephropathy"
+  eponyms: []
+  synonyms:
+    it: ["Nefropatia membranosa"]
+    en: ["Membranous glomerulonephritis"]
+  abbreviations: ["MN"]
+summary:
+  it: "Malattia glomerulare da immunocomplessi subepiteliali, spesso con anticorpi anti-PLA2R, che è una causa frequente di sindrome nefrosica dell'adulto."
+  en: "A glomerular disease caused by subepithelial immune complexes, often with anti-PLA2R antibodies, and a common cause of nephrotic syndrome in adults."
+lenses:
+  system: [kidney]
+  process: [hypersensitivity]
+  pattern: []
+  presentation: []
+  marker: [special-stains, ihc, laboratory]
+  group: [immune]
+learningObjectives:
+  - it: "Descrivere dove si localizzano gli immunocomplessi e come si formano, compreso il ruolo di PLA2R."
+    en: "Describe where the immune complexes lie and how they form, including the role of PLA2R."
+  - it: "Riconoscere le spicole all'impregnazione argentica e gli stadi ultrastrutturali I-IV."
+    en: "Recognize the silver stain spikes and the ultrastructural stages I-IV."
+  - it: "Elencare le cause secondarie (LES, epatite B, farmaci, tumori) e distinguerle dalla forma primitiva."
+    en: "List the secondary causes (SLE, hepatitis B, drugs, tumors) and tell them from the primary form."
+  - it: "Indicare i fattori che peggiorano la prognosi."
+    en: "State the factors that worsen prognosis."
+prerequisites: [hypersensitivity-reactions]
+relations:
+  - type: differentialOf
+    target: focal-segmental-glomerulosclerosis
+    note:
+      it: "Con la GSFS mancano gli immunocomplessi; nella membranosa sono subepiteliali."
+      en: "FSGS has no immune complexes; membranous nephropathy has subepithelial ones."
+  - type: differentialOf
+    target: lupus-nephritis
+    note:
+      it: "I depositi mesangiali sono più frequenti nelle forme secondarie, per esempio lupica."
+      en: "Mesangial deposits are more common in secondary forms, for example lupus."
+quickCheck:
+  - id: membranous-nephropathy-q1
+    q:
+      it: "Dove si trovano gli immunocomplessi nella glomerulonefrite membranosa?"
+      en: "Where do the immune complexes lie in membranous nephropathy?"
+    a:
+      it: "Nella zona subepiteliale, sul lato esterno della membrana basale, sotto i podociti."
+      en: "In the subepithelial zone, on the outer side of the basement membrane under the podocytes."
+    kind: short
+  - id: membranous-nephropathy-q2
+    q:
+      it: "Che cosa sono le spicole viste con l'impregnazione argentica?"
+      en: "What are the spikes seen on silver stain?"
+    a:
+      it: "Prolungamenti di materiale di membrana basale attorno ai depositi, che non si colorano con l'argento."
+      en: "Projections of basement membrane material around the deposits, which do not stain with silver."
+    kind: short
+  - id: membranous-nephropathy-q3
+    q:
+      it: "Quali sono le cause secondarie principali?"
+      en: "What are the main secondary causes?"
+    a:
+      it: "LES, epatite B, farmaci come la penicillamina e tumori come quelli di polmone e prostata."
+      en: "SLE, hepatitis B, drugs such as penicillamine, and tumors such as lung and prostate cancer."
+    kind: short
+  - id: membranous-nephropathy-q4
+    q:
+      it: "Quale autoantigene è bersaglio più spesso nella forma primitiva?"
+      en: "Which autoantigen is most often the target in the primary form?"
+    a:
+      it: "PLA2R, un recettore transmembrana dei podociti; gli autoanticorpi circolanti si trovano in circa il 75% dei casi primitivi."
+      en: "PLA2R, a transmembrane receptor of podocytes; circulating autoantibodies are found in roughly 75% of primary cases."
+    kind: short
+  - id: membranous-nephropathy-q5
+    q:
+      it: "Che aspetto hanno i glomeruli al microscopio ottico e in immunofluorescenza?"
+      en: "What do the glomeruli look like on light microscopy and immunofluorescence?"
+    a:
+      it: "Sono di solito normocellulari, con pareti capillari normali o ispessite; IgG e C3 colorano le pareti in modo granulare diffuso."
+      en: "They are usually normocellular, with normal or thickened capillary walls; IgG and C3 stain the walls diffusely in a granular pattern."
+    kind: short
+selfExplain:
+  - it: "Perché i depositi mesangiali sono più frequenti nelle forme secondarie che nella primitiva?"
+    en: "Why are mesangial deposits more common in secondary than in primary disease?"
+  - it: "Perché l'impregnazione argentica mostra le spicole ma non i depositi?"
+    en: "Why does the silver stain show the spikes but not the deposits?"
+  - it: "Perché la presenza di PLA2R e anti-PLA2R nei complessi isolati sostiene la formazione in situ?"
+    en: "Why does finding both PLA2R and anti-PLA2R in the isolated complexes support formation in situ?"
+examQuestions:
+  - it: "Mi parli della glomerulonefrite membranosa: dove si localizzano i depositi e che cosa vede in impregnazione argentica?"
+    en: "Tell me about membranous nephropathy: where do the deposits lie, and what do you see on silver stain?"
+    focus: [definition, micro]
+    level: 1
+  - it: "Quale ruolo ha PLA2R, e come si formano i depositi subepiteliali?"
+    en: "What is the role of PLA2R, and how do the subepithelial deposits form?"
+    focus: [etiology, pathogenesis]
+    level: 2
+  - it: "Quali sono le cause secondarie e come le distingue dalla forma primitiva?"
+    en: "What are the secondary causes, and how do you tell them from the primary form?"
+    focus: [etiology, pathogenesis, diagnosis]
+    level: 3
+  - it: "Che cosa vede al microscopio elettronico, e che cosa distingue gli stadi I-IV?"
+    en: "What do you see on electron microscopy, and what distinguishes stages I to IV?"
+    focus: [micro, ancillary]
+    level: 1
+  - it: "Come distingue la glomerulonefrite membranosa dalla glomerulosclerosi focale e segmentale?"
+    en: "How do you tell membranous nephropathy from focal segmental glomerulosclerosis?"
+    focus: [differential, ancillary]
+    level: 3
+  - it: "Quali fattori peggiorano la prognosi?"
+    en: "Which factors worsen the prognosis?"
+    focus: [prognosis]
+    level: 2
+images:
+  - id: membranous-nephropathy-micro-2
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "22"
+    pages: "931-933"
+lastUpdated: 2026-11-15
+status: published
