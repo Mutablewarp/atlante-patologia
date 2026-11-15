@@ -1,0 +1,127 @@
+id: chronic-pancreatitis
+module: o21
+tier: core
+kind: disease
+names:
+  it: "Pancreatite cronica"
+  en: "Chronic pancreatitis"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: []
+summary:
+  it: "Distruzione progressiva del parenchima pancreatico con sostituzione fibrosa, causata soprattutto dall'alcol, ma anche da fattori genetici e autoimmuni (tipo IgG4)."
+  en: "Progressive destruction of pancreatic parenchyma with fibrous replacement, caused mainly by alcohol but also by genetic and autoimmune (IgG4) factors."
+lenses:
+  system: [pancreas]
+  process: [chronic-inflammation, repair-fibrosis]
+  pattern: [atrophy, metaplasia]
+  presentation: [jaundice]
+  marker: [ihc, laboratory, molecular]
+  group: [inflammatory, toxic-environmental, genetic, immune]
+learningObjectives:
+  - it: "Descrivere la morfologia della pancreatite cronica: fibrosi, atrofia acinare e dotti dilatati con tappi calcificati."
+    en: "Describe the morphology of chronic pancreatitis: fibrosis, acinar atrophy and dilated ducts with calcified plugs."
+  - it: "Spiegare come l'alcol favorisce la formazione di tappi proteici e il circolo vizioso verso la fibrosi."
+    en: "Explain how alcohol promotes protein plugs and the vicious circle toward fibrosis."
+  - it: "Distinguere le forme alcolica, ereditaria (PRSS1), da fibrosi cistica e autoimmune di tipo 1 e 2."
+    en: "Distinguish the alcoholic, hereditary (PRSS1), cystic fibrosis and autoimmune type 1 and 2 forms."
+  - it: "Elencare le complicanze e riconoscere le forme che simulano un carcinoma pancreatico."
+    en: "List the complications and recognize the forms that mimic pancreatic carcinoma."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: acute-pancreatitis
+    note:
+      it: "Necrosi acuta ed enzimi elevati contro fibrosi progressiva con perdita di parenchima."
+      en: "Acute necrosis and raised enzymes versus progressive fibrosis with parenchymal loss."
+  - type: mimics
+    target: pancreatic-ductal-adenocarcinoma
+    note:
+      it: "La pancreatite autoimmune e quella del solco possono formare una massa simile a un carcinoma."
+      en: "Autoimmune and groove pancreatitis can form a carcinoma-like mass."
+  - type: complicationOf
+    target: cystic-fibrosis
+    note:
+      it: "I tappi di muco ostruiscono i dotti e portano a pancreatite cronica."
+      en: "Mucus plugs obstruct the ducts and lead to chronic pancreatitis."
+  - type: sharesMechanism
+    target: igg4-related-disease
+    note:
+      it: "La pancreatite autoimmune di tipo 1 ha plasmacellule IgG4-positive."
+      en: "Type 1 autoimmune pancreatitis has IgG4-positive plasma cells."
+quickCheck:
+  - id: chronic-pancreatitis-q1
+    q:
+      it: "Come favorisce l'alcol la pancreatite cronica?"
+      en: "How does alcohol promote chronic pancreatitis?"
+    a:
+      it: "Stimola la secrezione di enzimi senza più liquido: si formano tappi proteici nei piccoli dotti, che ostruiscono e innescano fibrosi e calcoli."
+      en: "It stimulates enzyme secretion without more fluid, so protein plugs form in small ducts, obstruct them and lead to fibrosis and stones."
+    kind: short
+  - id: chronic-pancreatitis-q2
+    q:
+      it: "Che cosa distingue la pancreatite autoimmune di tipo 1 da quella di tipo 2?"
+      en: "What separates type 1 from type 2 autoimmune pancreatitis?"
+    a:
+      it: "Il tipo 1 ha IgG4 sieriche elevate e molte plasmacellule IgG4-positive; il tipo 2 non le ha ed è legato alle malattie infiammatorie intestinali."
+      en: "Type 1 has raised serum IgG4 and many IgG4-positive plasma cells; type 2 lacks them and is tied to inflammatory bowel disease."
+    kind: short
+  - id: chronic-pancreatitis-q3
+    q:
+      it: "Quali complicanze può dare la pancreatite cronica?"
+      en: "Which complications can chronic pancreatitis cause?"
+    a:
+      it: "Pseudocisti, calcoli dei dotti e ascite; poi diabete e malassorbimento dei grassi, con steatorrea e carenza di vitamina K."
+      en: "Pseudocysts, duct stones and ascites; then diabetes and fat malabsorption, with steatorrhea and vitamin K deficiency."
+    kind: short
+  - id: chronic-pancreatitis-q4
+    q:
+      it: "Qual è il quadro microscopico tipico?"
+      en: "What is the typical microscopic picture?"
+    a:
+      it: "Fibrosi con perdita degli acini e dotti dilatati con tappi proteici calcificati."
+      en: "Fibrosis with acinar loss and dilated ducts holding calcified protein plugs."
+    kind: short
+selfExplain:
+  - it: "Perché pochi forti bevitori sviluppano davvero una pancreatite cronica?"
+    en: "Why do only a minority of heavy drinkers develop chronic pancreatitis?"
+  - it: "Perché un'ostruzione biliare acuta da calcoli di solito non porta a pancreatite cronica, mentre l'ostruzione duttale cronica sì?"
+    en: "Why does acute gallstone obstruction usually not lead to chronic pancreatitis, while chronic duct obstruction can?"
+examQuestions:
+  - it: "Mi parli della pancreatite cronica: che cosa vede al microscopio?"
+    en: "Tell me about chronic pancreatitis: what do you see under the microscope?"
+    focus: [micro, gross]
+    level: 1
+  - it: "Quali sono le cause della pancreatite cronica, tra alcol e fattori genetici?"
+    en: "What are the causes of chronic pancreatitis, including alcohol and genetic factors?"
+    focus: [etiology]
+    level: 1
+  - it: "Come distingue la pancreatite autoimmune di tipo 1 da quella di tipo 2?"
+    en: "How do you tell type 1 from type 2 autoimmune pancreatitis?"
+    focus: [pathogenesis, micro, ancillary]
+    level: 3
+  - it: "Perché l'alcol porta alla pancreatite cronica?"
+    en: "Why does alcohol lead to chronic pancreatitis?"
+    focus: [pathogenesis]
+    level: 2
+  - it: "Quali complicanze può dare la pancreatite cronica?"
+    en: "Which complications can chronic pancreatitis cause?"
+    focus: [prognosis]
+    level: 2
+  - it: "Come distingue una pancreatite cronica da una pancreatite acuta e da un carcinoma del pancreas?"
+    en: "How do you tell chronic pancreatitis from acute pancreatitis and from pancreatic carcinoma?"
+    focus: [differential, diagnosis]
+    level: 3
+images:
+  - id: chronic-pancreatitis-gross-1
+    role: gross
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "21"
+    pages: "905-907"
+lastUpdated: 2026-11-15
+status: published
