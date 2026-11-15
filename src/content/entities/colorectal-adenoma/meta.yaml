@@ -1,0 +1,122 @@
+id: colorectal-adenoma
+module: o19
+tier: core
+kind: disease
+names:
+  it: "Adenoma del colon-retto"
+  en: "Colorectal adenoma"
+  eponyms: []
+  synonyms:
+    it: ["Polipo adenomatoso del colon-retto"]
+    en: ["Adenomatous polyp of the colon and rectum"]
+  abbreviations: []
+summary:
+  it: "Polipo benigno del colon-retto formato da epitelio displastico, tubulare, villoso o tubulo-villoso, precursore abituale dell'adenocarcinoma colorettale."
+  en: "Benign polyp of the colon and rectum made of dysplastic epithelium, tubular, villous or tubulovillous, and the usual precursor of colorectal adenocarcinoma."
+lenses:
+  system: [gastrointestinal]
+  process: [neoplasia]
+  pattern: [dysplasia]
+  presentation: [mass-lesion, incidental-finding]
+  marker: []
+  group: [neoplastic, genetic]
+learningObjectives:
+  - it: "Distinguere adenomi tubulari, villosi e tubulo-villosi in base all'architettura."
+    en: "Distinguish tubular, villous and tubulovillous adenomas by architecture."
+  - it: "Descrivere la displasia di basso e di alto grado."
+    en: "Describe low-grade and high-grade dysplasia."
+  - it: "Elencare i fattori che aumentano il rischio di cancro in un adenoma."
+    en: "List the features that raise the cancer risk of an adenoma."
+  - it: "Spiegare perché una displasia di alto grado non equivale a un carcinoma invasivo."
+    en: "Explain why high-grade dysplasia is not the same as invasive carcinoma."
+  - it: "Riconoscere la poliposi adenomatosa familiare come causa ereditaria di adenomi."
+    en: "Recognize familial adenomatous polyposis as an inherited cause of adenomas."
+prerequisites: [dysplasia]
+relations:
+  - type: prerequisiteOf
+    target: colorectal-adenocarcinoma
+    note:
+      it: "La maggior parte degli adenocarcinomi colorettali origina da un polipo adenomatoso."
+      en: "Most colorectal adenocarcinomas arise in an adenomatous polyp."
+  - type: differentialOf
+    target: serrated-colorectal-lesions
+    note:
+      it: "Gli adenomi serrati hanno una architettura delle cripte diversa."
+      en: "Serrated adenomas have a different crypt architecture."
+  - type: causes
+    target: familial-adenomatous-polyposis
+    note:
+      it: "La poliposi adenomatosa familiare produce centinaia o migliaia di adenomi."
+      en: "Familial adenomatous polyposis produces hundreds to thousands of adenomas."
+quickCheck:
+  - id: colorectal-adenoma-q1
+    q:
+      it: "Quali tre caratteristiche di un adenoma ne aumentano il rischio di cancro?"
+      en: "Which three features of an adenoma raise its cancer risk?"
+    a:
+      it: "Le dimensioni maggiori, la displasia di alto grado e la componente villosa."
+      en: "Larger size, high-grade dysplasia and a villous component."
+    kind: short
+  - id: colorectal-adenoma-q2
+    q:
+      it: "Che cosa serve per diagnosticare un adenocarcinoma invasivo in un polipo?"
+      en: "What is needed to diagnose invasive adenocarcinoma in a polyp?"
+    a:
+      it: "Ghiandole neoplastiche al di sotto della muscularis mucosae."
+      en: "Neoplastic glands below the muscularis mucosae."
+    kind: short
+  - id: colorectal-adenoma-q3
+    q:
+      it: "Qual è il tipo di adenoma più frequente e quale il meno frequente?"
+      en: "Which adenoma type is the most common and which the least common?"
+    a:
+      it: "Il più frequente è il tubulare, il meno frequente il villoso."
+      en: "Tubular is the most common, villous the least common."
+    kind: short
+  - id: colorectal-adenoma-q4
+    q:
+      it: "Quale quota di architettura villosa definisce un adenoma tubulo-villoso?"
+      en: "What share of villous architecture defines a tubulovillous adenoma?"
+    a:
+      it: "Una componente villosa compresa tra il 25% e il 75%."
+      en: "A villous share between 25% and 75%."
+    kind: short
+selfExplain:
+  - it: "Perché la perdita di maturazione e di apoptosi nelle cripte porta alla formazione di un polipo?"
+    en: "Why do reduced apoptosis and failed maturation in the crypts lead to a polyp?"
+  - it: "Perché la polipectomia completa può guarire un adenoma ma non sempre un cancro in un polipo?"
+    en: "Why can complete polypectomy cure an adenoma but not always a cancer inside a polyp?"
+chain: []
+examQuestions:
+  - it: "Come distingue un adenoma tubulare, uno villoso e uno tubulo-villoso?"
+    en: "How do you tell a tubular, a villous and a tubulovillous adenoma apart?"
+    focus: [gross, micro]
+    level: 1
+  - it: "Che cosa vede al microscopio in un adenoma con displasia di basso grado e in uno con displasia di alto grado?"
+    en: "What do you see under the microscope in an adenoma with low-grade dysplasia and in one with high-grade dysplasia?"
+    focus: [micro]
+    level: 1
+  - it: "Quali caratteristiche di un adenoma ne aumentano il rischio di cancro?"
+    en: "Which features of an adenoma raise its cancer risk?"
+    focus: [prognosis, high-yield]
+    level: 2
+  - it: "Perché in un adenoma le cellule si accumulano nella cripta invece di essere eliminate?"
+    en: "Why do cells pile up in the crypt of an adenoma instead of being shed?"
+    focus: [pathogenesis]
+    level: 2
+  - it: "Come distingue un adenoma con displasia di alto grado da un adenocarcinoma invasivo, e che cosa cambia per la terapia?"
+    en: "How do you tell an adenoma with high-grade dysplasia from an invasive adenocarcinoma, and what changes for treatment?"
+    focus: [diagnosis, prognosis, traps]
+    level: 3
+images:
+  - { id: colorectal-adenoma-gross-1, role: gross }
+  - { id: colorectal-adenoma-micro-1, role: micro, pairWith: colorectal-adenoma-gross-1 }
+  - { id: colorectal-adenoma-micro-2, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "19"
+    pages: "823-825"
+lastUpdated: 2026-11-15
+status: published
