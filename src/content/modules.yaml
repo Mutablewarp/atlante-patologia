@@ -363,36 +363,8 @@
   status: planned
   refPages: "790-861"
   planned:
-    - id: barrett-esophagus
-      names: { it: "Esofago di Barrett", en: "Barrett esophagus" }
     - id: ischemic-bowel-disease
       names: { it: "Ischemia intestinale", en: "Ischemic bowel disease" }
-    - id: reflux-esophagitis
-      names: { it: "Esofagite da reflusso (malattia da reflusso gastroesofageo)", en: "Reflux esophagitis (GERD)" }
-    - id: eosinophilic-esophagitis
-      names: { it: "Esofagite eosinofila", en: "Eosinophilic esophagitis" }
-    - id: infectious-and-chemical-esophagitis
-      names: { it: "Esofagiti infettive, chimiche e iatrogene", en: "Infectious, chemical and iatrogenic esophagitis" }
-    - id: esophageal-carcinoma
-      names: { it: "Carcinoma dell'esofago", en: "Esophageal carcinoma" }
-    - id: acute-gastritis-and-reactive-gastropathy
-      names: { it: "Gastrite acuta e gastropatia reattiva (chimica)", en: "Acute gastritis and reactive (chemical) gastropathy" }
-    - id: helicobacter-pylori-gastritis
-      names: { it: "Gastrite da Helicobacter pylori", en: "Helicobacter pylori gastritis" }
-    - id: autoimmune-gastritis
-      names: { it: "Gastrite autoimmune", en: "Autoimmune gastritis" }
-    - id: peptic-ulcer-disease
-      names: { it: "Ulcera peptica", en: "Peptic ulcer disease" }
-    - id: gastric-polyps
-      names: { it: "Polipi gastrici", en: "Gastric polyps" }
-    - id: gastric-adenocarcinoma
-      names: { it: "Adenocarcinoma gastrico", en: "Gastric adenocarcinoma" }
-    - id: gastric-malt-lymphoma
-      names: { it: "Linfoma MALT gastrico", en: "Gastric MALT lymphoma" }
-    - id: gastrointestinal-stromal-tumor
-      names: { it: "Tumore stromale gastrointestinale (GIST)", en: "Gastrointestinal stromal tumor" }
-    - id: gastrointestinal-neuroendocrine-tumors
-      names: { it: "Tumori neuroendocrini gastrointestinali", en: "Gastrointestinal neuroendocrine tumors" }
     - id: infectious-enterocolitis
       names: { it: "Enterocoliti infettive", en: "Infectious enterocolitis" }
     - id: pseudomembranous-colitis
@@ -836,19 +808,8 @@
   label:
     it: "Testa e collo"
     en: "Head and neck (incl. salivary glands, ear)"
-  status: planned
+  status: published
   refPages: "1324-1353"
-  planned:
-    - id: salivary-gland-tumors
-      names: { it: "Tumori delle ghiandole salivari: classificazione", en: "Salivary gland tumors: classification" }
-    - id: pleomorphic-adenoma
-      names: { it: "Adenoma pleomorfo", en: "Pleomorphic adenoma" }
-    - id: warthin-tumor
-      names: { it: "Tumore di Warthin", en: "Warthin tumor" }
-    - id: mucoepidermoid-carcinoma
-      names: { it: "Carcinoma mucoepidermoide", en: "Mucoepidermoid carcinoma" }
-    - id: adenoid-cystic-carcinoma
-      names: { it: "Carcinoma adenoido-cistico", en: "Adenoid cystic carcinoma" }
 - id: o30
   section: III
   order: 30
