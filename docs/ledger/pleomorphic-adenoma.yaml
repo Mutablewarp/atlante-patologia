@@ -1,0 +1,482 @@
+entity: pleomorphic-adenoma
+claims:
+- claimId: pleomorphic-adenoma-c001
+  section: definition
+  statement: "Pleomorphic adenoma is a benign salivary gland tumor with both epithelial and stromal elements"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c002
+  section: definition
+  statement: "It is the most common salivary gland tumor"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c003
+  section: definition
+  statement: "About half of minor salivary gland tumors and about two-thirds of major gland tumors are pleomorphic adenomas"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c004
+  section: definition
+  statement: "The parotid is the usual site, and the tumor mostly lies in its superficial lobe"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c005
+  section: definition
+  statement: "The parotid is affected about nine times as often as the submandibular gland"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c006
+  section: definition
+  statement: "Women and middle-aged people are the groups most often affected"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c007
+  section: definition
+  statement: "The old name benign mixed tumor reflects tissue that is partly epithelial and partly cartilage-like or mucinous"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c008
+  section: definition
+  statement: "Despite the mixed appearance, the neoplastic cells are held to be epithelial"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c009
+  section: etiology
+  statement: "Chromosome 8 shows loss of heterozygosity, and the regions 3p21 and 12q13-15 are rearranged"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c010
+  section: pathogenesis
+  statement: "PLAG1 (pleomorphic adenoma gene 1) codes for a zinc-finger protein"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c011
+  section: pathogenesis
+  statement: "Reciprocal translocations involving 8q12 activate PLAG1 in most of these tumors"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c012
+  section: pathogenesis
+  statement: "Carcinomas arising in pleomorphic adenomas may carry HMGIC and MDM2 mutations and further 12q13-15 or 8q12 changes"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c013
+  section: pathogenesis
+  statement: "p53 and other tumor suppressors are sent to the proteasome for breakdown by the MDM2 product, a nuclear E3 ubiquitin ligase"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c014
+  section: pathogenesis
+  statement: "The HMGIC product is a chromatin protein that is not a histone"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c015
+  section: gross
+  statement: "On section, a resected parotid shows a mass with a sharp border and an even white color"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c016
+  section: gross
+  statement: "As the tumor enlarges, the surrounding fibrous tissue is condensed into a fibrous capsule"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c017
+  section: gross
+  statement: "The capsule covers only part of the tumor"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c018
+  section: gross
+  statement: "A nodule pushing out of the tumor lies outside the capsule; such outgrowths are sometimes termed podocytes"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321-1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c019
+  section: micro
+  statement: "The stroma is chondromyxoid, and glandular and myoepithelial cells are mixed within it"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c020
+  section: micro
+  statement: "The epithelium consists of two cell types, ductal and myoepithelial"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c021
+  section: micro
+  statement: "Clear fluid or eosinophilic material fills the tubules and small cystic structures formed by ductal cells"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c022
+  section: micro
+  statement: "Most cells are myoepithelial; they are smaller than the ductal cells and lie around them"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c023
+  section: micro
+  statement: "Myoepithelial cells often form nests or cords, with cartilage-like matrix in the gaps"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c024
+  section: ancillary
+  statement: "Cut in half, the resected parotid shows the tumor"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c025
+  section: ancillary
+  statement: "Microscopy shows ducts, myoepithelial cells and chondromyxoid stroma together (the stain is not named in the reference)"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321-1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c026
+  section: ancillary
+  statement: "Material within the ductal structures is PAS-positive"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c027
+  section: ancillary
+  statement: "In most pleomorphic adenomas, 8q12 translocations are found to activate PLAG1"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c028
+  section: clinical
+  statement: "The tumor is typically a slowly enlarging, painless, movable mass"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c029
+  section: clinical
+  statement: "A swelling at the side of the throat or tonsil can be a deep parotid tumor that has extended into the parapharyngeal space"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c030
+  section: clinical
+  statement: "To remove the tumor definitively, the surgeon may have to sacrifice the facial nerve"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c031
+  section: clinical
+  statement: "Carcinoma ex pleomorphic adenoma is a rare event"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c032
+  section: clinical
+  statement: "Rapid growth or new pain in a tumor present for many years points to carcinoma ex pleomorphic adenoma"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c033
+  section: diagnosis
+  statement: "Microscopy shows epithelial cells set in a stroma that is partly cartilage-like and partly mucinous"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c034
+  section: prognosis
+  statement: "Nodules that remain after surgery keep growing"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c035
+  section: prognosis
+  statement: "Scars from previous operations can harbor recurrences because tumor implanted during surgery grows there"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c036
+  section: prognosis
+  statement: "When the tumor returns, the usual explanation is local regrowth rather than malignant change"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c037
+  section: prognosis
+  statement: "Prevention requires taking the tumor with an intact capsule and a rim of normal gland of adequate width"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c038
+  section: prognosis
+  statement: "High-grade malignancy is the usual type among carcinomas that develop in pleomorphic adenomas"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c039
+  section: prognosis
+  statement: "Mucoepidermoid and adenoid cystic carcinoma are examples of the nearly unlimited range of salivary cancers that can arise within these tumors"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c040
+  section: prognosis
+  statement: "In situ (noninvasive) carcinoma ex pleomorphic adenoma is a cancer that stays within the tumor capsule and spares the normal salivary gland"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c041
+  section: prognosis
+  statement: "Minimally invasive carcinoma ex pleomorphic adenoma extends beyond the capsule by 1.5 mm at most"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c042
+  section: prognosis
+  statement: "Noninvasive and minimally invasive carcinoma ex pleomorphic adenoma have an excellent prognosis"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c043
+  section: prognosis
+  statement: "Tumors growing more than 1.5 mm past the capsule (widely invasive) have a poor outcome, often spreading and recurring"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c044
+  section: differential
+  statement: "In Warthin tumor, oncocyte-lined cysts sit within dense lymphoid tissue"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c045
+  section: differential
+  statement: "Warthin tumor is the one salivary gland tumor with a male predominance"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c046
+  section: differential
+  statement: "Monomorphic adenomas are purely epithelial, with no mesenchymal component, and the epithelium is mostly glandular"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c047
+  section: differential
+  statement: "Mucoepidermoid carcinoma is a malignant ductal-epithelium tumor whose mixed cells include mucus-producing and squamous types"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c048
+  section: differential
+  statement: "A t(11;19) translocation, producing the MECT1-MAML2 fusion, is found in over 60% of mucoepidermoid carcinomas"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c049
+  section: differential
+  statement: "Carcinoma ex pleomorphic adenoma typically presents as rapid growth or new pain in a lesion of long duration"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c050
+  section: high-yield
+  statement: "This is the commonest salivary neoplasm and it mainly occurs in the parotid"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c051
+  section: high-yield
+  statement: "A chondromyxoid stroma holds the epithelial and myoepithelial cells of the tumor"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c052
+  section: high-yield
+  statement: "Capsule-free nodules left behind at surgery lead to recurrence"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321-1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c053
+  section: high-yield
+  statement: "8q12 translocations activate PLAG1 in most tumors"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c054
+  section: high-yield
+  statement: "A long-standing tumor that begins to grow rapidly or becomes painful suggests carcinoma ex pleomorphic adenoma"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c055
+  section: high-yield
+  statement: "Prognosis of carcinoma ex pleomorphic adenoma depends on invasion beyond the capsule, with 1.5 mm as the cut-off"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c056
+  section: traps
+  statement: "Despite the term benign mixed tumor, the tumor cells are thought to derive from epithelium"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c057
+  section: traps
+  statement: "Most often a returning tumor is local regrowth and not malignant change"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c058
+  section: traps
+  statement: "Nodules outside the incomplete capsule must be removed with the tumor, or it recurs"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c059
+  section: traps
+  statement: "Warthin tumor is the one salivary gland tumor with a male predominance"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pleomorphic-adenoma-c060
+  section: mnemonics
+  statement: "The mnemonic CAPE recalls chondromyxoid stroma, partial absence of capsule, parotid site and epithelial plus myoepithelial cells, all stated elsewhere in the card"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1321-1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15

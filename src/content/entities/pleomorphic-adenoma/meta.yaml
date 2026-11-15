@@ -1,0 +1,110 @@
+id: pleomorphic-adenoma
+module: o29
+tier: core
+kind: disease
+names:
+  it: "Adenoma pleomorfo"
+  en: "Pleomorphic adenoma"
+  eponyms: []
+  synonyms:
+    it: ["Tumore misto benigno"]
+    en: ["Benign mixed tumor"]
+  abbreviations: []
+summary:
+  it: "Tumore benigno delle ghiandole salivari, il più frequente, formato da cellule epiteliali e mioepiteliali in uno stroma condromixoide e con capsula incompleta, per cui tende a recidivare."
+  en: "The most common benign salivary gland tumor, made of epithelial and myoepithelial cells in a chondromyxoid stroma, with an incomplete capsule that explains its recurrence."
+lenses:
+  system: [head-neck]
+  process: [neoplasia]
+  pattern: []
+  presentation: [mass-lesion]
+  marker: [pas, molecular]
+  group: [neoplastic]
+learningObjectives:
+  - it: "Descrivere l'aspetto microscopico dell'adenoma pleomorfo: cellule epiteliali e mioepiteliali in stroma condromixoide."
+    en: "Describe the microscopic appearance of pleomorphic adenoma: epithelial and myoepithelial cells in a chondromyxoid stroma."
+  - it: "Spiegare perché la capsula incompleta porta alla recidiva dopo un'exeresi limitata."
+    en: "Explain why the incomplete capsule leads to recurrence after limited excision."
+  - it: "Indicare il ruolo di PLAG1 e le traslocazioni di 8q12 nella patogenesi."
+    en: "State the role of PLAG1 and 8q12 translocations in pathogenesis."
+  - it: "Riconoscere il carcinoma ex adenoma pleomorfo e i criteri di invasione che ne determinano la prognosi."
+    en: "Recognize carcinoma ex pleomorphic adenoma and the invasion criteria that set its prognosis."
+prerequisites: [benign-vs-malignant-tumors]
+relations:
+  - type: differentialOf
+    target: warthin-tumor
+    note:
+      it: "Anche questo è un tumore benigno della parotide, ma è cistico, con oncociti e stroma linfoide, ed è più frequente nell'uomo."
+      en: "Also a benign parotid tumor, but cystic, with oncocytes and lymphoid tissue, and more common in men."
+  - type: differentialOf
+    target: mucoepidermoid-carcinoma
+    note:
+      it: "Carcinoma con cellule squamose, mucipare e intermedie; può insorgere su un adenoma pleomorfo."
+      en: "Carcinoma with squamous, mucus-secreting and intermediate cells; it can arise in a pleomorphic adenoma."
+  - type: causes
+    target: adenoid-cystic-carcinoma
+    note:
+      it: "L'adenoma pleomorfo può dare origine a carcinomi di vari tipi, tra cui il carcinoma adenoido-cistico."
+      en: "Pleomorphic adenoma can give rise to carcinomas of several types, including adenoid cystic carcinoma."
+quickCheck:
+  - id: pleomorphic-adenoma-q1
+    q:
+      it: "Quali cellule e quale stroma compongono l'adenoma pleomorfo?"
+      en: "Which cells and which stroma make up a pleomorphic adenoma?"
+    a:
+      it: "Cellule duttali e mioepiteliali, immerse in uno stroma condromixoide."
+      en: "Ductal and myoepithelial cells embedded in a chondromyxoid stroma."
+    kind: short
+  - id: pleomorphic-adenoma-q2
+    q:
+      it: "Perché l'adenoma pleomorfo recidiva dopo l'asportazione?"
+      en: "Why does a pleomorphic adenoma recur after removal?"
+    a:
+      it: "La capsula è incompleta e noduli privi di capsula sporgono nel tessuto vicino; se restano, continuano a crescere."
+      en: "The capsule is incomplete and capsule-free nodules protrude into nearby tissue; if left behind they keep growing."
+    kind: short
+  - id: pleomorphic-adenoma-q3
+    q:
+      it: "Un tumore salivare presente da anni inizia a crescere rapidamente o diventa doloroso: a che cosa si pensa?"
+      en: "A salivary tumor present for years starts to grow rapidly or becomes painful: what is suspected?"
+    a:
+      it: "Al carcinoma ex adenoma pleomorfo."
+      en: "Carcinoma ex pleomorphic adenoma."
+    kind: short
+selfExplain:
+  - it: "Perché una recidiva di adenoma pleomorfo non indica di solito una trasformazione maligna?"
+    en: "Why does a recurrence of pleomorphic adenoma usually not mean malignant transformation?"
+  - it: "Perché l'asportazione deve comprendere la capsula integra con un margine di ghiandola?"
+    en: "Why must excision include the intact capsule with a margin of gland?"
+examQuestions:
+  - it: "Che cosa vede al microscopio in un adenoma pleomorfo?"
+    en: "What do you see under the microscope in a pleomorphic adenoma?"
+    focus: [micro, diagnosis]
+    level: 1
+  - it: "Mi parli della capsula dell'adenoma pleomorfo: com'è fatta e che cosa comporta per la recidiva?"
+    en: "Tell me about the capsule of a pleomorphic adenoma: what is it like, and what does it mean for recurrence?"
+    focus: [gross, prognosis]
+    level: 2
+  - it: "Quando una recidiva di adenoma pleomorfo fa pensare a una trasformazione maligna, e perché di solito non è così?"
+    en: "When does a recurrent pleomorphic adenoma suggest malignant change, and why is that usually not the case?"
+    focus: [prognosis, traps]
+    level: 2
+  - it: "Mi parli del carcinoma ex adenoma pleomorfo: come si sospetta e che cosa ne determina la prognosi?"
+    en: "Tell me about carcinoma ex pleomorphic adenoma: how is it suspected, and what sets its prognosis?"
+    focus: [clinical, prognosis]
+    level: 3
+  - it: "Come distingue un adenoma pleomorfo da un tumore di Warthin?"
+    en: "How do you tell a pleomorphic adenoma from a Warthin tumor?"
+    focus: [differential, micro]
+    level: 3
+images:
+  - id: pleomorphic-adenoma-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "29"
+    pages: "1321-1322"
+lastUpdated: 2026-11-14
+status: published
