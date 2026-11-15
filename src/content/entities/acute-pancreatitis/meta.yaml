@@ -1,0 +1,138 @@
+id: acute-pancreatitis
+module: o21
+tier: core
+kind: disease
+names:
+  it: "Pancreatite acuta"
+  en: "Acute pancreatitis"
+  eponyms: []
+  synonyms:
+    it: ["Pancreatite acuta emorragica"]
+    en: ["Acute hemorrhagic pancreatitis"]
+  abbreviations: []
+summary:
+  it: "Autodigestione del pancreas e dei tessuti vicini da parte di enzimi pancreatici attivati e usciti dalle cellule, tipicamente da calcoli biliari o alcol, con necrosi acinare, necrosi enzimatica del grasso ed emorragia nelle forme gravi."
+  en: "Autodigestion of the pancreas and nearby tissues by activated pancreatic enzymes that have leaked out of cells, typically from gallstones or alcohol, with acinar necrosis, enzymatic fat necrosis and hemorrhage in severe forms."
+lenses:
+  system: [pancreas, gastrointestinal]
+  process: [necrosis, acute-inflammation]
+  pattern: [necrosis-fat]
+  presentation: []
+  marker: [laboratory]
+  group: [inflammatory, toxic-environmental]
+learningObjectives:
+  - it: "Spiegare come l'attivazione della tripsina porta all'autodigestione del pancreas."
+    en: "Explain how trypsin activation leads to autodigestion of the pancreas."
+  - it: "Elencare le cause principali, in particolare calcoli biliari e alcol."
+    en: "List the main causes, above all gallstones and alcohol."
+  - it: "Descrivere la necrosi enzimatica del grasso, la saponificazione e l'emorragia, a occhio nudo e al microscopio."
+    en: "Describe enzymatic fat necrosis, saponification and hemorrhage, grossly and microscopically."
+  - it: "Indicare gli esami che confermano la diagnosi."
+    en: "State the tests that confirm the diagnosis."
+  - it: "Riconoscere le complicanze: pseudocisti, ascesso e complicanze sistemiche."
+    en: "Recognize the complications: pseudocyst, abscess and systemic effects."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: chronic-pancreatitis
+    note:
+      it: "Distruzione progressiva con fibrosi contro attacco acuto, spesso reversibile."
+      en: "Progressive destruction with fibrosis versus an acute, often reversible attack."
+  - type: causes
+    target: fat-necrosis
+    note:
+      it: "La lipasi liberata produce necrosi enzimatica del grasso peripancreatico."
+      en: "Released lipase produces enzymatic fat necrosis of peripancreatic fat."
+  - type: complicationOf
+    target: cholelithiasis
+    note:
+      it: "I calcoli biliari sono una causa di pancreatite acuta."
+      en: "Gallstones are a cause of acute pancreatitis."
+quickCheck:
+  - id: acute-pancreatitis-q1
+    q:
+      it: "Perché la tripsina è il passaggio centrale della pancreatite acuta, anche se da sola non uccide le cellule?"
+      en: "Why is trypsin the central step in acute pancreatitis, even though it does not kill cells by itself?"
+    a:
+      it: "Perché attiva altri proenzimi, come la profosfolipasi A2 e la proelastasi, che danneggiano il tessuto."
+      en: "Because it activates other proenzymes, such as prophospholipase A2 and proelastase, which damage the tissue."
+    kind: short
+  - id: acute-pancreatitis-q2
+    q:
+      it: "Quali sono le due cause principali di pancreatite acuta?"
+      en: "What are the two main causes of acute pancreatitis?"
+    a:
+      it: "I calcoli biliari e l'abuso cronico di alcol."
+      en: "Gallstones and chronic alcohol abuse."
+    kind: short
+  - id: acute-pancreatitis-q3
+    q:
+      it: "Che cosa può succedere a una pseudocisti pancreatica?"
+      en: "What can happen to a pancreatic pseudocyst?"
+    a:
+      it: "Può ingrandirsi comprimendo il duodeno, infettarsi formando un ascesso o, raramente, rompersi causando peritonite."
+      en: "It can enlarge and compress the duodenum, become infected and form an abscess, or rarely rupture and cause peritonitis."
+    kind: short
+  - id: acute-pancreatitis-q4
+    q:
+      it: "Quale esame conferma la diagnosi di pancreatite acuta?"
+      en: "Which test confirms the diagnosis of acute pancreatitis?"
+    a:
+      it: "L'aumento di amilasi e lipasi nel sangue, documentato entro 24-72 ore."
+      en: "Raised serum amylase and lipase, documented within 24 to 72 hours."
+    kind: short
+  - id: acute-pancreatitis-q5
+    q:
+      it: "Come appare a occhio nudo la necrosi enzimatica del grasso?"
+      en: "How does enzymatic fat necrosis look to the naked eye?"
+    a:
+      it: "Come chiazze bianco-giallastre nel grasso fuori dal pancreas, fino al mesentere vicino; il grasso morto è molle all'inizio e poi diventa duro e gessoso."
+      en: "As yellow-white patches in the fat outside the pancreas, reaching the adjacent mesentery; the dead fat is soft at first and then turns hard and chalky."
+    kind: short
+selfExplain:
+  - it: "Perché la pancreatite acuta può abbassare la calcemia?"
+    en: "Why can acute pancreatitis lower blood calcium?"
+  - it: "Perché un'ostruzione dei dotti può far attivare gli enzimi dentro la ghiandola?"
+    en: "Why can duct obstruction lead to enzyme activation inside the gland?"
+chain:
+  - pathology:
+      it: "Danno delle cellule acinari e rilascio di enzimi pancreatici"
+      en: "Acinar injury and release of pancreatic enzymes"
+    sign:
+      it: "Dolore epigastrico forte irradiato al dorso, con nausea e vomito"
+      en: "Severe epigastric pain radiating to the back, with nausea and vomiting"
+    lab:
+      it: "Aumento di amilasi e lipasi sieriche"
+      en: "Rise in serum amylase and lipase"
+examQuestions:
+  - it: "Mi parli delle cause della pancreatite acuta, in particolare dei calcoli biliari e dell'alcol."
+    en: "Tell me about the causes of acute pancreatitis, above all gallstones and alcohol."
+    focus: [etiology]
+    level: 1
+  - it: "Che cosa vede a occhio nudo nella pancreatite acuta grave, nella ghiandola e nel grasso circostante?"
+    en: "What do you see grossly in severe acute pancreatitis, in the gland and in the surrounding fat?"
+    focus: [gross, micro]
+    level: 1
+  - it: "Quali complicanze può avere la pancreatite acuta e che cosa può succedere a una pseudocisti?"
+    en: "Which complications can acute pancreatitis have, and what can happen to a pseudocyst?"
+    focus: [clinical, prognosis]
+    level: 3
+  - it: "Perché l'attivazione della tripsina porta all'autodigestione del pancreas?"
+    en: "Why does trypsin activation lead to autodigestion of the pancreas?"
+    focus: [pathogenesis]
+    level: 2
+  - it: "Come distingue la pancreatite acuta da quella cronica?"
+    en: "How do you tell acute pancreatitis from chronic pancreatitis?"
+    focus: [definition, differential, prognosis]
+    level: 3
+images:
+  - id: acute-pancreatitis-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "21"
+    pages: "902-905"
+lastUpdated: 2026-11-15
+status: published
