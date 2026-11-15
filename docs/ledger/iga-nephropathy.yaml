@@ -1,0 +1,450 @@
+entity: iga-nephropathy
+claims:
+- claimId: iga-nephropathy-c001
+  section: definition
+  statement: "Immune complexes dominated by IgA, chiefly IgA1, that accumulate in the mesangium are the cause of this glomerulonephritis."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "944-945" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c002
+  section: definition
+  statement: "Among glomerulonephritides, it is the commonest one in developed countries."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "945" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c003
+  section: definition
+  statement: "IgA nephropathy accounts for 40% of glomerulonephritis cases in Asia, 20% in Europe and 10% in the United States."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "945" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c004
+  section: definition
+  statement: "Native Americans are often affected; black patients are rarely affected."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "945" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c005
+  section: definition
+  statement: "Diagnosis most often falls between ages 15 and 30, mostly in men."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "945" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c006
+  section: etiology
+  statement: "A flare is often set off by an infection of the airways or the gut."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "944" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c007
+  section: etiology
+  statement: "Food or microbial antigens met at mucosal surfaces drive an IgA response, and its complexes lodge in the glomeruli."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "944" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c008
+  section: etiology
+  statement: "The antigens that make up the deposited complexes are not known."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "944" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c009
+  section: pathogenesis
+  statement: "Many patients have more IgA1 in the blood than normal, and it is abnormal; some travels as aggregates or bound in immune complexes."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "944" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c010
+  section: pathogenesis
+  statement: "The deposits contain mostly IgA1, and IgA1 is the only IgA subclass whose hinge carries O-linked sugar chains."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "944" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c011
+  section: pathogenesis
+  statement: "In patients, the ends of these hinge chains carry less galactose and less sialic acid than normal."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "944" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c012
+  section: pathogenesis
+  statement: "The body can make autoantibodies, IgG among them, against the altered chains, and these join the abnormal IgA1 in immune complexes."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "944" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c013
+  section: pathogenesis
+  statement: "Circulating IgA aggregates may build up because abnormally sugared IgA1 binds its receptors poorly and is cleared more slowly."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "944" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c014
+  section: pathogenesis
+  statement: "The mesangium catches the circulating IgA aggregates."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "944" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c015
+  section: pathogenesis
+  statement: "It is uncertain whether the complexes are deposited from the blood or formed in situ."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "944" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c016
+  section: pathogenesis
+  statement: "The alternative pathway is the probable one: C1q and C4 are missing from the deposits, while C3 and properdin are found there."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "944" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c017
+  section: micro
+  statement: "Glomeruli range from normal-looking (mild) to scarred, as in chronic sclerosing glomerulonephritis (severe); between lie mesangial hypercellularity and proliferative glomerulonephritis, focal or diffuse."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "945" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c018
+  section: micro
+  statement: "Focal proliferative glomerulonephritis is what the first biopsy most often shows."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "945" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c019
+  section: micro
+  statement: "On PAS, the deposits produce patchy mesangial widening with extra cells and matrix."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "945" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c020
+  section: micro
+  statement: "Crescents turn up mainly in unusually severe disease."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "945" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c021
+  section: micro
+  statement: "IgA nephropathy produces lesions like those of lupus nephritis, though usually milder."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "945" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c022
+  section: ancillary
+  statement: "The histologic findings are described at renal biopsy, which is the diagnostic specimen."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "945" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c023
+  section: ancillary
+  statement: "Immunofluorescence microscopy is essential for the diagnosis."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "944" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c024
+  section: ancillary
+  statement: "The mesangium must stain for IgA at least as much as for IgG or IgM, and this is the diagnostic finding."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "944" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c025
+  section: ancillary
+  statement: "C3 staining nearly always accompanies the IgA."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "944-945" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c026
+  section: ancillary
+  statement: "Electron microscopy reveals electron-dense deposits in the mesangium."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "945" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c027
+  section: ancillary
+  statement: "In severe disease, immune complexes usually extend to the capillary walls as well."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "945" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c028
+  section: clinical
+  statement: "Patients present in different ways because the lesions differ in severity."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "945" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c029
+  section: clinical
+  statement: "About 40% of patients have microscopic hematuria without symptoms."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "945" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c030
+  section: clinical
+  statement: "About 40% of patients have intermittent gross hematuria."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "945" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c031
+  section: clinical
+  statement: "About 10% of patients have nephrotic syndrome."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "945" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c032
+  section: clinical
+  statement: "About 10% of patients have renal failure."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "945" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c033
+  section: clinical
+  statement: "Episodes come and go, and a flare often appears together with an upper respiratory infection."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "945" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c034
+  section: clinical
+  statement: "Systemic IgA vasculitis (Henoch-Schonlein purpura) inflames small vessels throughout the body, through IgA deposited in them."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "945" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c035
+  section: clinical
+  statement: "In IgA vasculitis, skin involvement causes purpura and gut involvement causes abdominal pain."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "945" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c036
+  section: diagnosis
+  statement: "Diagnosis rests on biopsy immunofluorescence showing mesangial IgA at least as intense as IgG or IgM."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "944" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c037
+  section: diagnosis
+  statement: "Microscopic hematuria and intermittent gross hematuria are the two commonest presentations, each in about 40% of patients."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "945" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c038
+  section: prognosis
+  statement: "Progression is slow. Complete recovery is rare, and after 10 years about one fifth of patients have reached end-stage renal failure."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "945" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c039
+  section: prognosis
+  statement: "Capillary-wall IgA, added to mesangial IgA, tends to mark severe cases and poorer outcome."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "944-945" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c040
+  section: prognosis
+  statement: "Graft function is usually preserved after transplant, even though IgA deposits may reappear."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "945-946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c041
+  section: differential
+  statement: "An IgA-dominant glomerulonephritis can instead be caused by infection, and methicillin-resistant S. aureus is the usual culprit."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c042
+  section: differential
+  statement: "Lupus nephritis causes lesions of the same kinds, usually more severe than in IgA nephropathy."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "945" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c043
+  section: differential
+  statement: "Anti-GBM glomerulonephritis shows linear IgG along the GBM, and crescents form in over 90% of cases."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c044
+  section: high-yield
+  statement: "IgA nephropathy is caused by deposition of IgA1-containing immune complexes in the mesangium."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "944" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c045
+  section: high-yield
+  statement: "In many patients the IgA1 hinge lacks its usual terminal galactose, which is thought to be an important contributor to the disease."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "944" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c046
+  section: high-yield
+  statement: "Immunofluorescence with IgA staining at least equal to IgG or IgM is the diagnostic finding."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "944" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c047
+  section: high-yield
+  statement: "Deposits with C3 and properdin but without C1q or C4 point to the alternative complement pathway."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "944" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c048
+  section: high-yield
+  statement: "Infections of the airways or the gut frequently precipitate flares."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "944" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c049
+  section: high-yield
+  statement: "It is the commonest glomerulonephritis in developed countries."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "945" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c050
+  section: high-yield
+  statement: "The course is slow: one in five patients reaches end-stage renal failure by 10 years."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "945" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c051
+  section: high-yield
+  statement: "Systemic IgA vasculitis (Henoch-Schonlein purpura) has IgA deposits in small vessels, with purpura of the skin and abdominal pain from the gut."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "945" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c052
+  section: traps
+  statement: "Light microscopy can show no discernible change, so immunofluorescence is needed for the diagnosis."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "944-945" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c053
+  section: traps
+  statement: "The deposits are made mainly of IgA1, not IgA2."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "944" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c054
+  section: traps
+  statement: "IgA vasculitis is a systemic small-vessel disease with IgA deposits, affecting skin and gut, whereas IgA nephropathy is the glomerular disease."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "945" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c055
+  section: traps
+  statement: "The deposits hold C3 and properdin but lack C1q and C4, supporting the alternative pathway."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "944" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: iga-nephropathy-c056
+  section: mnemonics
+  statement: "Mnemonic MESA: mesangial IgA, episodic flares with infections, slow progression, alternative complement pathway."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "944-945" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15

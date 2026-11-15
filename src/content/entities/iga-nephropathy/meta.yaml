@@ -1,0 +1,120 @@
+id: iga-nephropathy
+module: o22
+tier: core
+kind: disease
+names:
+  it: "Nefropatia a IgA"
+  en: "IgA nephropathy"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: ["IgAN"]
+summary:
+  it: "Glomerulonefrite da immunocomplessi a predominanza di IgA1 depositati nel mesangio, la più frequente nei paesi sviluppati, con ematuria ricorrente spesso dopo infezioni delle vie respiratorie."
+  en: "Glomerulonephritis from IgA1-dominant immune complexes in the mesangium, the most common in developed countries, with recurrent hematuria often during respiratory infections."
+lenses:
+  system: [kidney]
+  process: [hypersensitivity, chronic-inflammation]
+  pattern: []
+  presentation: [hematuria]
+  marker: [ihc]
+  group: [immune, inflammatory]
+learningObjectives:
+  - it: "Descrivere il reperto diagnostico: IgA mesangiali in immunofluorescenza, uguali o più intense di IgG e IgM."
+    en: "Describe the diagnostic finding: mesangial IgA on immunofluorescence, equal to or stronger than IgG and IgM."
+  - it: "Spiegare come l'IgA1 con glicosilazione anomala porta alla formazione e al deposito di immunocomplessi nel mesangio."
+    en: "Explain how abnormally glycosylated IgA1 leads to immune complex formation and mesangial deposition."
+  - it: "Collegare le riacutizzazioni alle infezioni respiratorie e gastrointestinali e riconoscere le forme di presentazione cliniche."
+    en: "Link flares to respiratory and gastrointestinal infections and recognize the clinical presentations."
+  - it: "Distinguere la nefropatia a IgA dalla vasculite a IgA, dalla nefrite lupica e dalla glomerulonefrite anti-GBM."
+    en: "Distinguish IgA nephropathy from IgA vasculitis, lupus nephritis and anti-GBM glomerulonephritis."
+prerequisites: []
+relations:
+  - type: sameMarker
+    target: hypersensitivity-vasculitis
+    note:
+      it: "La vasculite a IgA (porpora di Schönlein-Henoch) condivide il deposito di IgA, ma interessa i piccoli vasi di tutto il corpo."
+      en: "IgA vasculitis (Henoch–Schönlein purpura) shares IgA deposition but affects small vessels throughout the body."
+  - type: differentialOf
+    target: lupus-nephritis
+    note:
+      it: "Spettro di lesioni simile, di solito meno grave nella nefropatia a IgA."
+      en: "Similar spectrum of lesions, usually milder in IgA nephropathy."
+  - type: differentialOf
+    target: crescentic-glomerulonephritis
+    note:
+      it: "Nella glomerulonefrite anti-GBM l'IgG è lineare lungo la membrana basale, non mesangiale."
+      en: "In anti-GBM glomerulonephritis IgG is linear along the basement membrane, not mesangial."
+quickCheck:
+  - id: iga-nephropathy-q1
+    q:
+      it: "Qual è il reperto diagnostico in immunofluorescenza?"
+      en: "What is the diagnostic immunofluorescence finding?"
+    a:
+      it: "Colorazione mesangiale per IgA, più intensa o uguale a quella per IgG o IgM, quasi sempre con C3."
+      en: "Mesangial IgA staining more intense than or equal to IgG or IgM, almost always with C3."
+    kind: short
+  - id: iga-nephropathy-q2
+    q:
+      it: "Che cosa c'è di anomalo nell'IgA1 dei pazienti?"
+      en: "What is abnormal about IgA1 in patients?"
+    a:
+      it: "Le estremità delle catene O-legate della cerniera hanno meno galattosio e meno acido sialico del normale."
+      en: "The ends of the O-linked hinge chains carry less galactose and less sialic acid than normal."
+    kind: short
+  - id: iga-nephropathy-q3
+    q:
+      it: "Con quali eventi coincidono spesso le riacutizzazioni?"
+      en: "What events do flares often coincide with?"
+    a:
+      it: "Con infezioni delle vie respiratorie superiori (e gastrointestinali)."
+      en: "Upper respiratory tract (and gastrointestinal) infections."
+    kind: short
+  - id: iga-nephropathy-q4
+    q:
+      it: "Come si distingue la nefropatia a IgA dalla glomerulonefrite anti-GBM all'immunofluorescenza?"
+      en: "How does immunofluorescence separate IgA nephropathy from anti-GBM glomerulonephritis?"
+    a:
+      it: "Nella anti-GBM l'IgG è lineare lungo la membrana basale, non IgA mesangiale; oltre il 90% dei pazienti ha semilune."
+      en: "Anti-GBM disease shows linear IgG along the basement membrane, not mesangial IgA, and over 90% of patients have crescents."
+    kind: short
+selfExplain:
+  - it: "Perché le infezioni delle mucose possono scatenare le riacutizzazioni?"
+    en: "Why can mucosal infections trigger flares?"
+  - it: "Perché la presenza di C3 e properdina ma non di C1q e C4 indica la via alternativa?"
+    en: "Why do C3 and properdin without C1q and C4 point to the alternative pathway?"
+examQuestions:
+  - it: "Mi parli della nefropatia a IgA: quali immunocomplessi la causano e dove si depositano?"
+    en: "Tell me about IgA nephropathy: which immune complexes cause it and where do they lodge?"
+    focus: [definition, pathogenesis]
+    level: 1
+  - it: "Che cosa vede all'immunofluorescenza in una nefropatia a IgA, e perché serve per la diagnosi?"
+    en: "What do you see on immunofluorescence in IgA nephropathy, and why is it needed for the diagnosis?"
+    focus: [ancillary, diagnosis, traps]
+    level: 1
+  - it: "Come si presenta un paziente con nefropatia a IgA e che cosa scatena spesso le riacutizzazioni?"
+    en: "How does a patient with IgA nephropathy present, and what often triggers a flare?"
+    focus: [etiology, clinical]
+    level: 2
+  - it: "Come distingue la nefropatia a IgA dalla vasculite a IgA?"
+    en: "How do you tell IgA nephropathy from IgA vasculitis?"
+    focus: [clinical, traps]
+    level: 3
+  - it: "Perché l'IgA1 si accumula nel mesangio?"
+    en: "Why does IgA1 collect in the mesangium?"
+    focus: [pathogenesis]
+    level: 2
+  - it: "Come distingue la nefropatia a IgA dalla nefrite lupica e dalla glomerulonefrite anti-GBM?"
+    en: "How do you tell IgA nephropathy from lupus nephritis and anti-GBM glomerulonephritis?"
+    focus: [differential]
+    level: 3
+images: []
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "22"
+    pages: "944-946"
+lastUpdated: 2026-11-15
+status: published
