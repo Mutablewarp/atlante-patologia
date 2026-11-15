@@ -1,0 +1,103 @@
+id: sinonasal-tumors
+module: o29
+tier: extended
+kind: disease
+names:
+  it: "Tumori delle cavità nasali e dei seni paranasali"
+  en: "Sinonasal tumors"
+  eponyms: []
+  synonyms:
+    it: ["Tumori sinonasali"]
+    en: ["Tumors of the nasal cavity and paranasal sinuses"]
+  abbreviations: []
+summary:
+  it: "Gruppo di neoplasie benigne (papillomi) e maligne (carcinoma squamoso, neuroblastoma olfattivo, linfoma NK/T) della cavità nasale e dei seni paranasali, in parte legate a esposizioni professionali."
+  en: "A group of benign (papillomas) and malignant (squamous cell carcinoma, olfactory neuroblastoma, NK/T-cell lymphoma) tumors of the nasal cavity and paranasal sinuses, partly linked to occupational exposures."
+lenses:
+  system: [head-neck]
+  process: [neoplasia]
+  pattern: []
+  presentation: [mass-lesion]
+  marker: [ihc]
+  group: [neoplastic]
+learningObjectives:
+  - it: "Descrivere il papilloma invertito e il suo rischio di recidiva e di trasformazione in carcinoma squamoso."
+    en: "Describe inverted papilloma and its risk of recurrence and progression to squamous cell carcinoma."
+  - it: "Collegare le esposizioni professionali (nichel, legno, cuoio) al tipo di carcinoma sinonasale."
+    en: "Link occupational exposures (nickel, wood, leather) to the type of sinonasal carcinoma."
+  - it: "Riconoscere il neuroblastoma olfattivo: sede, rosette e profilo immunoistochimico."
+    en: "Recognize olfactory neuroblastoma: site, rosettes and immunohistochemical profile."
+  - it: "Descrivere il linfoma NK/T di tipo nasale e distinguerlo dalla granulomatosi con poliangioite."
+    en: "Describe nasal-type NK/T-cell lymphoma and distinguish it from granulomatosis with polyangiitis."
+prerequisites: [neoplasia-nomenclature]
+relations:
+  - type: differentialOf
+    target: anca-associated-vasculitis
+    note:
+      it: "Entrambi causano ulcerazione e necrosi nasale; la vasculite con ANCA elevati orienta verso la granulomatosi con poliangioite."
+      en: "Both cause nasal ulceration and necrosis; vasculitis with raised ANCA points to granulomatosis with polyangiitis."
+quickCheck:
+  - id: sinonasal-tumors-q1
+    q:
+      it: "Quale tumore sinonasale benigno può dare origine a un carcinoma squamoso e perché va asportato oltre i margini visibili?"
+      en: "Which benign sinonasal tumor can give rise to squamous cell carcinoma, and why must it be removed beyond the visible margins?"
+    a:
+      it: "Il papilloma invertito; recidiva se la resezione non supera la lesione visibile e in una piccola quota di casi evolve in carcinoma squamoso."
+      en: "Inverted papilloma; it recurs if resection stops at the visible lesion, and in a small share of cases it becomes squamous cell carcinoma."
+    kind: short
+  - id: sinonasal-tumors-q2
+    q:
+      it: "Quale carcinoma sinonasale è tipico dei lavoratori del nichel e quale degli altri ambienti professionali?"
+      en: "Which sinonasal carcinoma is typical of nickel workers, and which of other occupational settings?"
+    a:
+      it: "Il carcinoma squamoso, soprattutto del turbinato medio, per il nichel; l'adenocarcinoma di seno mascellare ed etmoidale per la maggior parte delle altre esposizioni."
+      en: "Squamous cell carcinoma, mostly of the middle turbinate, for nickel; adenocarcinoma of the maxillary and ethmoid sinuses for most other exposures."
+    kind: short
+  - id: sinonasal-tumors-q3
+    q:
+      it: "Quale profilo immunoistochimico e quali strutture microscopiche caratterizzano il neuroblastoma olfattivo?"
+      en: "Which immunophenotype and microscopic structures characterize olfactory neuroblastoma?"
+    a:
+      it: "Sinaptofisina e NSE positive, citocheratina ed EMA negative; piccole cellule rotonde con rosette di Homer Wright o di Flexner-Wintersteiner."
+      en: "Synaptophysin and NSE positive, cytokeratin and EMA negative; small round cells with Homer Wright or Flexner-Wintersteiner rosettes."
+    kind: short
+selfExplain:
+  - it: "Perché il linfoma NK/T di tipo nasale causa necrosi di tipo ischemico?"
+    en: "Why does nasal-type NK/T-cell lymphoma cause ischemic-type necrosis?"
+  - it: "Perché il papilloma invertito recidiva se viene asportato solo ciò che è visibile?"
+    en: "Why does inverted papilloma recur if only the visible lesion is removed?"
+examQuestions:
+  - it: "Mi parli del papilloma invertito: come si presenta e perché non è del tutto innocuo?"
+    en: "Tell me about inverted papilloma: how does it present, and why is it not entirely harmless?"
+    focus: [gross, micro, prognosis]
+    level: 1
+  - it: "Mi parli del carcinoma squamoso sinonasale e del ruolo delle esposizioni professionali."
+    en: "Tell me about sinonasal squamous cell carcinoma and the role of occupational exposures."
+    focus: [etiology, clinical]
+    level: 1
+  - it: "Che cosa vede al microscopio in un neuroblastoma olfattivo e quali colorazioni userebbe per confermarlo?"
+    en: "What do you see under the microscope in an olfactory neuroblastoma, and which stains would you use to confirm it?"
+    focus: [micro, ancillary]
+    level: 2
+  - it: "Perché nel linfoma NK/T di tipo nasale compare necrosi dei tessuti vicini?"
+    en: "Why does nasal-type NK/T-cell lymphoma cause necrosis of the adjacent tissue?"
+    focus: [pathogenesis, micro]
+    level: 2
+  - it: "Come distingue un linfoma NK/T nasale da una granulomatosi con poliangioite?"
+    en: "How do you tell a nasal NK/T-cell lymphoma from granulomatosis with polyangiitis?"
+    focus: [micro, differential]
+    level: 3
+images:
+  - id: sinonasal-tumors-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: true
+editionNote:
+  it: "La classificazione dei tumori sinonasali è cambiata tra le edizioni; la gradazione a quattro livelli del neuroblastoma olfattivo risale al 2017 e va verificata su una seconda fonte."
+  en: "The classification of sinonasal tumors changed between editions; the four-tier grading of olfactory neuroblastoma dates from 2017 and needs a second source."
+sources:
+  - source: rubin-8e
+    chapter: "29"
+    pages: "1312-1314"
+lastUpdated: 2026-11-14
+status: published

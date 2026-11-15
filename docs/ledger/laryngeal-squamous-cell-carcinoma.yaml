@@ -1,0 +1,234 @@
+entity: laryngeal-squamous-cell-carcinoma
+claims:
+- claimId: laryngeal-squamous-cell-carcinoma-c001
+  section: definition
+  statement: "Almost all cancers of the larynx are squamous cell carcinomas"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1319" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: laryngeal-squamous-cell-carcinoma-c002
+  section: definition
+  statement: "Laryngeal squamous cell carcinoma occurs mainly in men"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1319" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: laryngeal-squamous-cell-carcinoma-c003
+  section: definition
+  statement: "The majority of people with this tumor are cigarette smokers"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1319" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: laryngeal-squamous-cell-carcinoma-c004
+  section: etiology
+  statement: "Most patients with this tumor smoke cigarettes"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1319" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: laryngeal-squamous-cell-carcinoma-c005
+  section: etiology
+  statement: "Roughly one laryngeal squamous cell carcinoma in four (25%) contains HPV"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1319" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: laryngeal-squamous-cell-carcinoma-c006
+  section: etiology
+  statement: "A laryngeal papilloma due to HPV 6 or 11 seldom becomes carcinoma, mostly in smokers and in patients treated earlier with radiation"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1319" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: laryngeal-squamous-cell-carcinoma-c007
+  section: gross
+  statement: "A glottic tumor stays on the true vocal cords, on one side or both"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1319" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: laryngeal-squamous-cell-carcinoma-c008
+  section: gross
+  statement: "About two of every three laryngeal squamous cell carcinomas are glottic"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1319" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: laryngeal-squamous-cell-carcinoma-c009
+  section: gross
+  statement: "The definition of a supraglottic tumor excludes the true cords; it begins in the epiglottis, the false cords or the ventricle"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1319" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: laryngeal-squamous-cell-carcinoma-c010
+  section: gross
+  statement: "No more than about a third of laryngeal cancers begin in the supraglottic region"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1319" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: laryngeal-squamous-cell-carcinoma-c011
+  section: gross
+  statement: "A carcinoma is called transglottic when both the true and the false cords are involved"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1319" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: laryngeal-squamous-cell-carcinoma-c012
+  section: gross
+  statement: "Infraglottic carcinoma is rare and often invades the trachea; it begins below the true cords or on them with downward extension"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1319" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: laryngeal-squamous-cell-carcinoma-c013
+  section: gross
+  statement: "In a supraglottic laryngectomy specimen the tumor sits above the mucosa as a granular patch with ragged borders"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1319" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: laryngeal-squamous-cell-carcinoma-c014
+  section: prognosis
+  statement: "Glottic tumors have a good prognosis; they reach lymph nodes only late"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1319" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: laryngeal-squamous-cell-carcinoma-c015
+  section: prognosis
+  statement: "Compared with glottic tumors, supraglottic tumors are more often found with nodal metastases"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1319" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: laryngeal-squamous-cell-carcinoma-c016
+  section: prognosis
+  statement: "Removal of the whole larynx is frequently needed for transglottic tumors, which spread to lymph nodes"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1319" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: laryngeal-squamous-cell-carcinoma-c017
+  section: prognosis
+  statement: "Infraglottic tumors usually call for total laryngectomy, and they commonly spread to lymph nodes"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1319" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: laryngeal-squamous-cell-carcinoma-c018
+  section: differential
+  statement: "Squamous papilloma is mainly caused by HPV types 6 and 11 and may be solitary or multiple"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1319" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: laryngeal-squamous-cell-carcinoma-c019
+  section: differential
+  statement: "In vocal cord nodules and polyps the stroma reacts to inflammation or trauma, and the patient is hoarse"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1319" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: laryngeal-squamous-cell-carcinoma-c020
+  section: differential
+  statement: "Laryngeal chondrosarcoma mostly affects men in their 70s and forms a polyp-shaped mass projecting into the lumen that can obstruct the airway"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1320" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: laryngeal-squamous-cell-carcinoma-c021
+  section: high-yield
+  statement: "Almost all laryngeal cancers are squamous cell carcinomas"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1319" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: laryngeal-squamous-cell-carcinoma-c022
+  section: high-yield
+  statement: "Laryngeal squamous cell carcinoma occurs mostly in men who smoke cigarettes"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1319" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: laryngeal-squamous-cell-carcinoma-c023
+  section: high-yield
+  statement: "Glottic tumors are the most frequent and sit on the true cords; nodal spread comes late and the prognosis is good"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1319" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: laryngeal-squamous-cell-carcinoma-c024
+  section: high-yield
+  statement: "Supraglottic tumors spare the true cords by definition, and they metastasize to nodes more often than glottic ones"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1319" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: laryngeal-squamous-cell-carcinoma-c025
+  section: high-yield
+  statement: "Transglottic and infraglottic tumors spread to lymph nodes, and total laryngectomy is often required for transglottic and usually for infraglottic ones"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1319" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: laryngeal-squamous-cell-carcinoma-c026
+  section: traps
+  statement: "A supraglottic carcinoma by definition does not involve the true cords"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1319" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: laryngeal-squamous-cell-carcinoma-c027
+  section: traps
+  statement: "Supraglottic tumors metastasize to nodes more often than glottic tumors, which do so late"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1319" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: laryngeal-squamous-cell-carcinoma-c028
+  section: traps
+  statement: "Almost all laryngeal cancers are squamous cell carcinomas"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1319" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: laryngeal-squamous-cell-carcinoma-c029
+  section: mnemonics
+  statement: "Glottic carcinoma has a good prognosis and late nodal spread, while supraglottic carcinoma gives nodal metastases more often"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1319" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14

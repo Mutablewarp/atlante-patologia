@@ -1,0 +1,106 @@
+id: laryngeal-squamous-cell-carcinoma
+module: o29
+tier: core
+kind: disease
+editionDependent: false
+status: published
+lastUpdated: 2026-11-14
+reviewStatus: ai-generated-unreviewed
+names:
+  it: "Carcinoma squamoso della laringe"
+  en: "Laryngeal squamous cell carcinoma"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: []
+summary:
+  it: "Carcinoma squamoso della laringe, tipico dei fumatori maschi, classificato per sede (glottico, sopraglottico, transglottico, sottoglottico) con diversa tendenza alla metastasi linfonodale."
+  en: "Squamous cell carcinoma of the larynx, typical of male smokers, classified by site (glottic, supraglottic, transglottic, infraglottic) with different tendencies to nodal metastasis."
+lenses:
+  system: [head-neck, respiratory]
+  process: [neoplasia]
+  pattern: []
+  presentation: [mass-lesion, lymphadenopathy]
+  marker: []
+  group: [neoplastic]
+learningObjectives:
+  - it: "Riconoscere che quasi tutti i tumori della laringe sono carcinomi squamosi, in prevalenza maschi fumatori."
+    en: "Recognize that almost all laryngeal cancers are squamous cell carcinomas, mostly in male smokers."
+  - it: "Distinguere le sedi glottica, sopraglottica, transglottica e sottoglottica."
+    en: "Distinguish the glottic, supraglottic, transglottic and infraglottic sites."
+  - it: "Collegare ogni sede alla diffusione linfonodale e alla chirurgia necessaria."
+    en: "Link each site to nodal spread and the surgery it needs."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: laryngeal-precursor-lesions
+    note:
+      it: "Le lesioni precursori precedono o accompagnano il carcinoma invasivo."
+      en: "Precursor lesions precede or accompany invasive carcinoma."
+quickCheck:
+  - id: laryngeal-squamous-cell-carcinoma-q1
+    q:
+      it: "Quale sede laringea ha la prognosi migliore e metastatizza tardi ai linfonodi?"
+      en: "Which laryngeal site has the best prognosis and metastasizes late to nodes?"
+    a:
+      it: "La sede glottica, limitata alle corde vocali vere."
+      en: "The glottic site, confined to the true vocal cords."
+    kind: short
+  - id: laryngeal-squamous-cell-carcinoma-q2
+    q:
+      it: "In quali strutture nasce un carcinoma sopraglottico e cosa risparmia per definizione?"
+      en: "Which structures does a supraglottic carcinoma arise in, and what does it spare by definition?"
+    a:
+      it: "Ventricolo, false corde o epiglottide; risparmia le corde vocali vere."
+      en: "The ventricle, false cords or epiglottis; it spares the true cords."
+    kind: short
+  - id: laryngeal-squamous-cell-carcinoma-q3
+    q:
+      it: "Quale istotipo costituisce quasi tutti i tumori laringei?"
+      en: "Which histologic type makes up almost all laryngeal cancers?"
+    a:
+      it: "Il carcinoma squamoso."
+      en: "Squamous cell carcinoma."
+    kind: short
+  - id: laryngeal-squamous-cell-carcinoma-q4
+    q:
+      it: "Quando un carcinoma si definisce transglottico?"
+      en: "When is a carcinoma called transglottic?"
+    a:
+      it: "Quando sono coinvolte sia le corde vocali vere sia le false corde."
+      en: "When both the true and the false cords are involved."
+    kind: short
+selfExplain:
+  - it: "Come si differenzia la diffusione linfonodale del carcinoma glottico da quella del carcinoma sopraglottico?"
+    en: "How does the nodal spread of glottic carcinoma differ from that of supraglottic carcinoma?"
+examQuestions:
+  - it: "Mi parli del carcinoma squamoso della laringe: chi colpisce e quale fattore di rischio è tipico?"
+    en: "Tell me about laryngeal squamous cell carcinoma: who gets it and what is the typical risk factor?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Come distingue le sedi glottica, sopraglottica, transglottica e sottoglottica?"
+    en: "How do you tell the glottic, supraglottic, transglottic and infraglottic sites apart?"
+    focus: [gross]
+    level: 1
+  - it: "Perché la sede del tumore è importante per la diffusione linfonodale e per l'intervento chirurgico?"
+    en: "Why does the site of the tumor matter for nodal spread and for the surgery?"
+    focus: [prognosis, high-yield]
+    level: 2
+  - it: "Come distingue un carcinoma glottico da uno sopraglottico per frequenza, diffusione ai linfonodi e prognosi?"
+    en: "How do you tell a glottic carcinoma from a supraglottic one in frequency, nodal spread and prognosis?"
+    focus: [gross, prognosis, traps]
+    level: 3
+  - it: "Davanti a una lesione delle corde vocali, quali altre diagnosi considera oltre al carcinoma squamoso?"
+    en: "Faced with a vocal cord lesion, which diagnoses besides squamous cell carcinoma do you consider?"
+    focus: [etiology, differential]
+    level: 3
+images:
+  - id: laryngeal-squamous-cell-carcinoma-micro-1
+    role: micro
+  - id: laryngeal-squamous-cell-carcinoma-micro-2
+    role: micro
+sources:
+  - source: rubin-8e
+    chapter: "29"
+    pages: "1319-1320"

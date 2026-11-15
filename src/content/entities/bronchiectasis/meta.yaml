@@ -1,0 +1,124 @@
+id: bronchiectasis
+module: o18
+tier: core
+kind: disease
+names:
+  it: "Bronchiectasie"
+  en: "Bronchiectasis"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: []
+summary:
+  it: "Dilatazione bronchiale permanente dovuta alla distruzione della muscolatura e delle fibre elastiche della parete, che segue ostruzione o infezioni ricorrenti delle vie aeree."
+  en: "Permanent bronchial dilation caused by destruction of the muscle and elastic tissue of the wall, following obstruction or recurrent airway infection."
+lenses:
+  system: [respiratory]
+  process: [chronic-inflammation, immunodeficiency]
+  pattern: []
+  presentation: [dyspnea]
+  marker: []
+  group: [inflammatory, genetic]
+learningObjectives:
+  - it: "Definire le bronchiectasie e distinguere la forma ostruttiva da quella non ostruttiva."
+    en: "Define bronchiectasis and distinguish the obstructive from the nonobstructive form."
+  - it: "Elencare le cause ereditarie e acquisite, compresa la sindrome di Kartagener."
+    en: "List the inherited and acquired causes, including Kartagener syndrome."
+  - it: "Spiegare il circolo vizioso tra muco ristagnante, infezione e distruzione della parete bronchiale."
+    en: "Explain the vicious cycle of pooled mucus, infection and destruction of the bronchial wall."
+  - it: "Descrivere l'aspetto macroscopico e microscopico e i pattern cilindrico, varicoso e sacculare."
+    en: "Describe the gross and microscopic findings and the cylindrical, varicose and saccular patterns."
+  - it: "Riconoscere le complicanze e sapere che la TC è l'esame diagnostico definitivo."
+    en: "Recognize the complications and know that CT is the definitive diagnostic test."
+prerequisites: []
+relations:
+  - type: complicationOf
+    target: cystic-fibrosis
+    note:
+      it: "La fibrosi cistica è una causa ereditaria di bronchiectasie generalizzate."
+      en: "Cystic fibrosis is an inherited cause of generalized bronchiectasis."
+  - type: complicationOf
+    target: chronic-bronchitis
+    note:
+      it: "La bronchite cronica è una condizione acquisita che predispone alle bronchiectasie."
+      en: "Chronic bronchitis is an acquired condition that predisposes to bronchiectasis."
+  - type: differentialOf
+    target: atelectasis
+    note:
+      it: "Nella sindrome del lobo medio l'atelettasia si associa a bronchiectasie nello stesso polmone."
+      en: "In right middle lobe syndrome, atelectasis comes with bronchiectasis in the same lung."
+quickCheck:
+  - id: bronchiectasis-q1
+    q:
+      it: "Quali sono le due grandi categorie eziologiche delle bronchiectasie?"
+      en: "What are the two broad etiologic categories of bronchiectasis?"
+    a:
+      it: "Ostruttiva (localizzata, a valle di un blocco di un bronco centrale) e non ostruttiva (dopo infezioni o difetti delle difese delle vie aeree)."
+      en: "Obstructive (localized, beyond a block of a central bronchus) and nonobstructive (after infection or defects in airway defenses)."
+    kind: short
+  - id: bronchiectasis-q2
+    q:
+      it: "Qual è la triade della sindrome di Kartagener?"
+      en: "What is the triad of Kartagener syndrome?"
+    a:
+      it: "Destrocardia, bronchiectasie e sinusite."
+      en: "Dextrocardia, bronchiectasis and sinusitis."
+    kind: short
+  - id: bronchiectasis-q3
+    q:
+      it: "Qual è l'esame che pone la diagnosi definitiva?"
+      en: "Which test makes the definitive diagnosis?"
+    a:
+      it: "La TC del polmone."
+      en: "CT of the lung."
+    kind: short
+  - id: bronchiectasis-q4
+    q:
+      it: "Quali complicanze minacciano il paziente con malattia di lunga durata?"
+      en: "Which complications threaten a patient with long-standing disease?"
+    a:
+      it: "Ipossia cronica e ipertensione polmonare."
+      en: "Chronic hypoxia and pulmonary hypertension."
+    kind: short
+selfExplain:
+  - it: "Perché il muco ristagnante peggiora la distruzione della parete bronchiale?"
+    en: "Why does pooled mucus worsen destruction of the bronchial wall?"
+  - it: "Perché le bronchiectasie causano emottisi?"
+    en: "Why does bronchiectasis cause hemoptysis?"
+examQuestions:
+  - it: "Mi parli delle cause di bronchiectasie: ostruttive e non ostruttive, ereditarie e acquisite."
+    en: "Tell me about the causes of bronchiectasis: obstructive and nonobstructive, inherited and acquired."
+    focus: [etiology]
+    level: 1
+  - it: "Che cos'è la sindrome di Kartagener e perché porta a bronchiectasie?"
+    en: "What is Kartagener syndrome, and why does it lead to bronchiectasis?"
+    focus: [etiology]
+    level: 2
+  - it: "Perché il muco ristagnante e l'infezione portano alla distruzione progressiva della parete bronchiale?"
+    en: "Why do pooled mucus and infection lead to progressive destruction of the bronchial wall?"
+    focus: [pathogenesis]
+    level: 2
+  - it: "Che cosa vede in un lobo asportato per bronchiectasie, a occhio nudo e al microscopio?"
+    en: "What do you see in a lobe removed for bronchiectasis, by eye and under the microscope?"
+    focus: [gross, micro]
+    level: 1
+  - it: "Quali pattern di dilatazione conosce, e quanto contano per la diagnosi?"
+    en: "Which patterns of dilation do you know, and how much do they matter for the diagnosis?"
+    focus: [gross, traps]
+    level: 1
+  - it: "Come distingue una bronchiectasia ostruttiva localizzata da una forma generalizzata, e quali complicanze deve cercare?"
+    en: "How do you tell a localized obstructive bronchiectasis from a generalized form, and which complications do you look for?"
+    focus: [etiology, clinical, prognosis]
+    level: 3
+images:
+  - id: bronchiectasis-gross-1
+    role: gross
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "18"
+    pages: "702-703"
+lastUpdated: 2026-11-14
+status: published

@@ -1,0 +1,128 @@
+id: laryngeal-precursor-lesions
+module: o29
+tier: core
+kind: disease
+editionDependent: true
+editionNote:
+  it: "La classificazione di leucoplachia, cheratosi e displasia dell'epitelio laringeo è cambiata tra le edizioni; la scheda non riporta gradi e va confrontata con la classificazione OMS corrente."
+  en: "The classification of leukoplakia, keratosis and laryngeal epithelial dysplasia changed between editions; this card gives no grades and should be checked against the current WHO classification."
+status: published
+lastUpdated: 2026-11-14
+reviewStatus: ai-generated-unreviewed
+names:
+  it: "Lesioni precancerose della laringe"
+  en: "Laryngeal precursor lesions"
+  eponyms: []
+  synonyms:
+    it: ["Noduli dei cantanti", "Papillomatosi laringea giovanile"]
+    en: ["Singer's nodules", "Juvenile laryngeal papillomatosis"]
+  abbreviations: ["HPV"]
+summary:
+  it: "Gruppo di lesioni della laringe: noduli e polipi delle corde vocali, reattivi e non neoplastici, e papillomi squamosi da HPV 6 e 11, che recidivano e raramente evolvono in carcinoma squamoso."
+  en: "A group of laryngeal lesions: reactive, non-neoplastic vocal cord nodules and polyps, and squamous papillomas caused by HPV 6 and 11, which recur and rarely progress to squamous cell carcinoma."
+lenses:
+  system: [head-neck, respiratory]
+  process: [neoplasia, chronic-inflammation]
+  pattern: [hyperplasia, hyaline-change]
+  presentation: [mass-lesion]
+  marker: []
+  group: [neoplastic, infectious]
+learningObjectives:
+  - it: "Distinguere noduli e polipi delle corde vocali, lesioni reattive, dai papillomi squamosi."
+    en: "Distinguish vocal cord nodules and polyps, which are reactive, from squamous papillomas."
+  - it: "Elencare i fattori che favoriscono noduli e polipi delle corde vocali."
+    en: "List the factors that favor vocal cord nodules and polyps."
+  - it: "Descrivere l'aspetto microscopico dello stroma di noduli e polipi nelle fasi precoce e tardiva."
+    en: "Describe the microscopic stroma of nodules and polyps in early and late stages."
+  - it: "Spiegare perché la papillomatosi laringea da HPV 6 e 11 recidiva."
+    en: "Explain why laryngeal papillomatosis caused by HPV 6 and 11 recurs."
+prerequisites: [dysplasia]
+relations:
+  - type: prerequisiteOf
+    target: laryngeal-squamous-cell-carcinoma
+    note:
+      it: "La papillomatosi può raramente evolvere in carcinoma squamoso."
+      en: "Papillomatosis can rarely evolve into squamous cell carcinoma."
+  - type: sharesMechanism
+    target: human-papillomavirus-infection
+    note:
+      it: "I papillomi laringei sono causati soprattutto da HPV 6 e 11."
+      en: "Laryngeal papillomas are mainly caused by HPV 6 and 11."
+  - type: differentialOf
+    target: laryngeal-squamous-cell-carcinoma
+    note:
+      it: "Quasi tutti i tumori maligni della laringe sono carcinomi squamosi."
+      en: "Almost all laryngeal cancers are squamous cell carcinomas."
+quickCheck:
+  - id: laryngeal-precursor-lesions-q1
+    q:
+      it: "Noduli e polipi delle corde vocali sono neoplasie?"
+      en: "Are vocal cord nodules and polyps neoplasms?"
+    a:
+      it: "No: sono reazioni stromali a infiammazione o trauma."
+      en: "No: they are stromal reactions to inflammation or trauma."
+    kind: short
+  - id: laryngeal-precursor-lesions-q2
+    q:
+      it: "Quali tipi di HPV causano i papillomi laringei?"
+      en: "Which HPV types cause laryngeal papillomas?"
+    a:
+      it: "Soprattutto i tipi 6 e 11."
+      en: "Mainly types 6 and 11."
+    kind: short
+  - id: laryngeal-precursor-lesions-q3
+    q:
+      it: "Perché l'asportazione chirurgica non guarisce sempre la papillomatosi laringea?"
+      en: "Why does surgical excision not always cure laryngeal papillomatosis?"
+    a:
+      it: "L'infezione virale è spesso estesa, quindi le lesioni recidivano per molti anni."
+      en: "The viral infection is often widespread, so the lesions recur over many years."
+    kind: short
+  - id: laryngeal-precursor-lesions-q4
+    q:
+      it: "Come cambia nel tempo lo stroma di un nodulo delle corde vocali?"
+      en: "How does the stroma of a vocal cord nodule change over time?"
+    a:
+      it: "All'inizio è edematoso e fibromixoide; con il tempo diventa ialinizzato e densamente fibroso."
+      en: "Early on it is edematous and fibromyxoid; with time it becomes hyalinized and densely fibrotic."
+    kind: short
+  - id: laryngeal-precursor-lesions-q5
+    q:
+      it: "Quale aspetto ha ogni fronda di un papilloma squamoso laringeo?"
+      en: "What does each frond of a laryngeal squamous papilloma look like?"
+    a:
+      it: "Ha un asse fibrovascolare rivestito da epitelio squamoso maturo."
+      en: "It has a fibrovascular core covered by mature squamous epithelium."
+    kind: short
+selfExplain:
+  - it: "Perché la papillomatosi laringea può causare ostruzione delle vie aeree?"
+    en: "Why can laryngeal papillomatosis obstruct the airway?"
+  - it: "Perché un polipo delle corde vocali non è considerato una neoplasia?"
+    en: "Why is a vocal cord polyp not considered a neoplasm?"
+examQuestions:
+  - it: "Mi parli di noduli e polipi delle corde vocali."
+    en: "Tell me about vocal cord nodules and polyps."
+    focus: [definition, etiology, clinical]
+    level: 1
+  - it: "Che cosa vede al microscopio in un nodulo o polipo delle corde vocali, e come cambia lo stroma nel tempo?"
+    en: "What do you see under the microscope in a vocal cord nodule or polyp, and how does the stroma change over time?"
+    focus: [micro]
+    level: 1
+  - it: "Mi parli della papillomatosi laringea: causa, aspetto e decorso."
+    en: "Tell me about laryngeal papillomatosis: cause, appearance and course."
+    focus: [etiology, micro, prognosis]
+    level: 2
+  - it: "Perché la papillomatosi laringea recidiva dopo l'asportazione?"
+    en: "Why does laryngeal papillomatosis recur after excision?"
+    focus: [pathogenesis, prognosis]
+    level: 2
+  - it: "Come distingue un polipo delle corde vocali da un papilloma squamoso?"
+    en: "How do you tell a vocal cord polyp from a squamous papilloma?"
+    focus: [definition, micro, high-yield]
+    level: 3
+images:
+  - { id: laryngeal-precursor-lesions-gross-1, role: gross }
+sources:
+  - source: rubin-8e
+    chapter: "29"
+    pages: "1319"

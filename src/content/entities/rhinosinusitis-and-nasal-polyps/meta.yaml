@@ -1,0 +1,137 @@
+id: rhinosinusitis-and-nasal-polyps
+module: o29
+tier: core
+kind: disease
+names:
+  it: "Riniti, sinusiti e polipi nasali"
+  en: "Rhinitis, sinusitis and nasal polyps"
+  eponyms: []
+  synonyms:
+    it: ["Rinite allergica (raffreddore da fieno)", "Polipi nasali infiammatori"]
+    en: ["Hay fever", "Inflammatory nasal polyps"]
+  abbreviations: ["AFS"]
+summary:
+  it: "Infiammazioni della mucosa nasale e dei seni paranasali, virali, allergiche o batteriche, con polipi infiammatori non neoplastici, forme fungine (allergica, a palla fungina, invasiva) e le complicanze orbitarie e intracraniche della sinusite."
+  en: "Viral, allergic or bacterial inflammation of the nasal and sinus mucosa, with nonneoplastic inflammatory polyps, fungal forms (allergic, fungus ball, invasive) and the orbital and intracranial complications of sinusitis."
+lenses:
+  system: [respiratory, head-neck]
+  process: [acute-inflammation, chronic-inflammation, hypersensitivity]
+  pattern: []
+  presentation: [fever]
+  marker: [laboratory]
+  group: [inflammatory, infectious, immune]
+learningObjectives:
+  - it: "Distinguere la rinite virale da quella allergica per meccanismo, infiltrato cellulare e decorso."
+    en: "Distinguish viral from allergic rhinitis by mechanism, cellular infiltrate and course."
+  - it: "Descrivere l'istologia di un polipo infiammatorio nasale e spiegare perché non è una neoplasia."
+    en: "Describe the histology of an inflammatory nasal polyp and explain why it is not a neoplasm."
+  - it: "Spiegare come l'ostruzione dell'ostio sinusale porti a sinusite e elencare le complicanze orbitarie e intracraniche."
+    en: "Explain how a blocked sinus ostium leads to sinusitis and list its orbital and intracranial complications."
+  - it: "Distinguere la sinusite fungina allergica, la palla fungina e la forma invasiva in base all'ospite."
+    en: "Distinguish allergic fungal sinusitis, fungus ball and invasive fungal sinusitis by the host."
+  - it: "Riconoscere il quadro nasale della granulomatosi con poliangioite e la sua assenza di granulomi ben formati."
+    en: "Recognize the nasal picture of granulomatosis with polyangiitis and its lack of well-formed granulomas."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: anca-associated-vasculitis
+    note:
+      it: "La granulomatosi con poliangioite può esordire come sinusite e rinorrea, con necrosi e vasculite ma senza granulomi ben formati."
+      en: "Granulomatosis with polyangiitis can start as sinusitis and runny nose, with necrosis and vasculitis but no well-formed granulomas."
+  - type: differentialOf
+    target: opportunistic-fungal-infections
+    note:
+      it: "Le forme fungine del naso e dei seni si distinguono in base all'ospite: atopico, normale o immunocompromesso."
+      en: "Fungal forms of the nose and sinuses are sorted by host: atopic, normal or immunocompromised."
+  - type: differentialOf
+    target: syphilis
+    note:
+      it: "Nella sifilide terziaria le gomme distruggono cartilagine e osso nasale e fanno crollare il dorso del naso."
+      en: "In tertiary syphilis gummas destroy nasal cartilage and bone and collapse the nasal bridge."
+  - type: differentialOf
+    target: leprosy
+    note:
+      it: "La lebbra coinvolge spesso per prima la mucosa nasale anteriore con noduli, ulcere o perforazioni."
+      en: "Leprosy often involves the anterior nasal mucosa first, with nodules, ulcers or perforations."
+  - type: sharesMechanism
+    target: hypersensitivity-reactions
+    note:
+      it: "La rinite allergica è una reazione mediata da IgE e mastociti."
+      en: "Allergic rhinitis is an IgE and mast cell mediated reaction."
+quickCheck:
+  - id: rhinosinusitis-and-nasal-polyps-q1
+    q:
+      it: "Che cosa fa scaricare i mastociti della mucosa nasale nella rinite allergica?"
+      en: "What makes the mast cells of the nasal mucosa discharge in allergic rhinitis?"
+    a:
+      it: "Le IgE legate ai mastociti incontrano un allergene inalato, per esempio il polline, e i mastociti svuotano i granuli di mediatori."
+      en: "The IgE bound to the mast cells meets an inhaled allergen such as pollen, and the mast cells empty their mediator granules."
+    kind: short
+  - id: rhinosinusitis-and-nasal-polyps-q2
+    q:
+      it: "Come si distinguono le tre forme di sinusite fungina?"
+      en: "How are the three forms of fungal sinusitis told apart?"
+    a:
+      it: "Dall'ospite: la forma allergica compare in giovani atopici, la palla fungina in pazienti immunologicamente normali con drenaggio povero, la forma invasiva in immunocompromessi."
+      en: "By the host: the allergic form in atopic young people, the fungus ball in immunologically normal patients with poor drainage, the invasive form in immunocompromised patients."
+    kind: short
+  - id: rhinosinusitis-and-nasal-polyps-q3
+    q:
+      it: "Che cosa mostra la biopsia nasale nella granulomatosi con poliangioite?"
+      en: "What does a nasal biopsy show in granulomatosis with polyangiitis?"
+    a:
+      it: "Necrosi di tipo ischemico, vasculite, infiltrato misto, cellule giganti multinucleate sparse e microascessi, ma non granulomi ben formati."
+      en: "Ischemic-type necrosis, vasculitis, a mixed infiltrate, scattered multinucleated giant cells and microabscesses, but no well-formed granulomas."
+    kind: short
+  - id: rhinosinusitis-and-nasal-polyps-q4
+    q:
+      it: "Che cosa succede alle secrezioni quando l'ostio di un seno è chiuso?"
+      en: "What happens to secretions when a sinus opening is closed?"
+    a:
+      it: "Restano intrappolate, insieme all'essudato, dietro l'ostio chiuso; un seno con drenaggio ostacolato diventa soggetto a infezione."
+      en: "They are trapped, together with exudate, behind the closed opening; a sinus whose drainage is obstructed becomes prone to infection."
+    kind: short
+  - id: rhinosinusitis-and-nasal-polyps-q5
+    q:
+      it: "Come appare un polipo infiammatorio al microscopio?"
+      en: "How does an inflammatory polyp look under the microscope?"
+    a:
+      it: "È rivestito da epitelio respiratorio, con stroma lasso mucoide che contiene ghiandole mucose ed eosinofili."
+      en: "It is covered by respiratory epithelium, over a loose mucoid stroma that holds mucous glands and eosinophils."
+    kind: short
+selfExplain:
+  - it: "Perché un ostio sinusale bloccato favorisce la sinusite?"
+    en: "Why does a blocked sinus ostium favor sinusitis?"
+  - it: "Perché la sinusite può raggiungere l'orbita e il cervello?"
+    en: "Why can sinusitis reach the orbit and the brain?"
+examQuestions:
+  - it: "Come distingue la rinite virale dalla rinite allergica al microscopio e nel meccanismo?"
+    en: "How do you tell viral rhinitis from allergic rhinitis, in mechanism and under the microscope?"
+    focus: [pathogenesis, micro]
+    level: 3
+  - it: "Mi parli della sinusite: come nasce, quali germi sono più frequenti e quali complicanze può dare?"
+    en: "Tell me about sinusitis: how does it start, which organisms are most common, and what complications can it cause?"
+    focus: [etiology, prognosis]
+    level: 1
+  - it: "Che cosa vede al microscopio in un polipo infiammatorio nasale, e perché non è una neoplasia?"
+    en: "What do you see under the microscope in an inflammatory nasal polyp, and why is it not a neoplasm?"
+    focus: [micro, definition]
+    level: 2
+  - it: "Come distingue la sinusite fungina allergica, la palla fungina e la forma invasiva?"
+    en: "How do you tell allergic fungal sinusitis, a fungus ball and invasive fungal sinusitis apart?"
+    focus: [pathogenesis, differential]
+    level: 3
+  - it: "Che cosa trova nella biopsia nasale della granulomatosi con poliangioite, e perché non si parla di granulomi?"
+    en: "What do you find in a nasal biopsy in granulomatosis with polyangiitis, and why is it not called granulomatous?"
+    focus: [micro, diagnosis, differential]
+    level: 3
+images:
+  - { id: rhinosinusitis-and-nasal-polyps-micro-1, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "29"
+    pages: "1308-1312"
+lastUpdated: 2026-11-14
+status: published

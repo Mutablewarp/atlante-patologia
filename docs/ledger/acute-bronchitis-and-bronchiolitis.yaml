@@ -1,0 +1,626 @@
+entity: acute-bronchitis-and-bronchiolitis
+claims:
+  - claimId: acute-bronchitis-and-bronchiolitis-c001
+    section: definition
+    statement: "Most bronchial and bronchiolar disease is acute illness plus the damage it leaves behind."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "699" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c002
+    section: definition
+    statement: "Separating airway infection from lung-tissue infection is a classification choice, and the two overlap."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "699" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c003
+    section: definition
+    statement: "Bronchiolitis is infection of the small peripheral airways, which many organisms that infect the larger airways also reach."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "699" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c004
+    section: etiology
+    statement: "Bronchiolitis is exemplified by adenovirus, RSV and measles infection."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "699" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c005
+    section: etiology
+    statement: "These viral diseases are worse where children are undernourished or the population rarely meets the virus."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "699" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c006
+    section: etiology
+    statement: "Influenza typifies the tracheobronchitis pattern."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c007
+    section: etiology
+    statement: "Whooping cough is due to the bacterium Bordetella pertussis, a frequent colonizer of the airways."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c008
+    section: etiology
+    statement: "Infection with H. influenzae and S. pneumoniae has been linked to flare-ups of chronic bronchitis, which are managed with antibiotics."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c009
+    section: etiology
+    statement: "In the lung, Candida albicans usually just colonizes the airway surface without invading, and sometimes ulcerates the mucosa."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c010
+    section: etiology
+    statement: "Neutropenia, for instance after chemotherapy for acute leukemia, or an indwelling catheter predisposes to invasive Candida growth."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c011
+    section: etiology
+    statement: "In outdoor air the leading gaseous airway irritants are sulfur dioxide and the oxidants ozone and nitrogen oxides."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c012
+    section: etiology
+    statement: "Vehicle exhaust acted on by sunlight is where the oxidant gases come from."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c013
+    section: etiology
+    statement: "Burning of sulfur-bearing fossil fuel is the main source of sulfur dioxide."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c014
+    section: etiology
+    statement: "Welding, plating, and cleaning or blasting metal are industrial settings where NO2 exposure occurs."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c015
+    section: etiology
+    statement: "Silo-filler disease is the lung injury caused by breathing high doses of the NO2 that rotting stored grain gives off."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c016
+    section: etiology
+    statement: "NO2 sinks in air and forms a layer just over the stored grain."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c017
+    section: etiology
+    statement: "After an industrial leak, inhaled chlorine or ammonia injures the mucosa throughout the bronchi and bronchioles."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c018
+    section: etiology
+    statement: "Patients with asthma or pre-existing lung disease have worse symptoms when air pollution rises."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c019
+    section: etiology
+    statement: "Constrictive bronchiolitis can follow a lung graft (chronic rejection) or a bone marrow graft (GVHD), and it can also occur with no known cause."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c020
+    section: etiology
+    statement: "Among connective-tissue diseases rheumatoid arthritis is the prominent cause, and an earlier infection, mainly viral, can also lead to it."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c021
+    section: etiology
+    statement: "Taking penicillamine, or breathing in phosgene, ammonia or SO2, are further recognized causes."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c022
+    section: etiology
+    statement: "The best-known cases occurred in workers making butter flavoring for microwave popcorn, exposed to the flavor chemicals diacetyl and 2,3-pentanedione."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c023
+    section: pathogenesis
+    statement: "Scarring is the way the lung repairs itself after the widespread bronchiolar inflammation of adenovirus infection."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c024
+    section: pathogenesis
+    statement: "The outcome can be constrictive bronchiolitis, where soft fibrous tissue fills or closes off the bronchioles."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c025
+    section: pathogenesis
+    statement: "As with adenovirus, measles can damage bronchioles until they close, and bronchiectasis can follow."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c026
+    section: pathogenesis
+    statement: "Loss of surfactant from the bronchiolar lining is one proposed reason RSV can overinflate the lung with no visible blockage."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c027
+    section: pathogenesis
+    statement: "Ozone raises airway reactivity, and this goes together with inflammation of the airways."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c028
+    section: pathogenesis
+    statement: "After chlorine or ammonia injury, bronchiectasis arises from secondary inflammation, with bronchioles closing and bronchi damaged directly."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c029
+    section: pathogenesis
+    statement: "The bronchiolar channel in constrictive bronchiolitis gets smaller gradually as scar tissue takes over from the first inflammation, and it may vanish completely."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c030
+    section: gross
+    statement: "In fatal influenza the bronchi look bright red because of mucosal inflammation and congestion."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c031
+    section: micro
+    statement: "In adenoviral bronchiolitis chronic inflammatory cells crowd the bronchiolar wall and also invade the adjacent peribronchial tissue."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c032
+    section: micro
+    statement: "RSV bronchiolitis shows a disordered epithelial lining together with peribronchiolar inflammation."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c033
+    section: micro
+    statement: "Patients who die of pertussis have marked inflammation in bronchi and bronchioles."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c034
+    section: micro
+    statement: "In constrictive bronchiolitis scar tissue lying below the epithelium and above the smooth muscle of a chronically inflamed bronchiolar wall narrows the lumen."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c035
+    section: micro
+    statement: "Nearby airways can be dilated (bronchiolectasis) or plugged by mucus."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c036
+    section: micro
+    statement: "Outside the scarred bronchioles the lung tissue typically looks normal."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c037
+    section: ancillary
+    statement: "On H&E, constrictive bronchiolitis is recognized by scar tissue lying under the epithelium and shrinking the bronchiolar channel."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c038
+    section: ancillary
+    statement: "Using a stain for elastic fibers may make it easier to see which bronchioles are scarred."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c039
+    section: ancillary
+    statement: "The lesions of constrictive bronchiolitis are patchy, so they are easy to miss."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c040
+    section: clinical
+    statement: "Breathlessness with blue discoloration is limited to the worst cases of airway infection; cough and chest tightness are the usual complaints."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "699" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c041
+    section: clinical
+    statement: "Infants and children develop severe symptomatic infection more often than adults."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "699" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c042
+    section: clinical
+    statement: "RSV often sweeps through nurseries and can be acquired in hospital by children and, rarely, by adults."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c043
+    section: clinical
+    statement: "Whooping cough is marked by fever and by the deep whoop that closes each long fit of coughing."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c044
+    section: clinical
+    statement: "Cough and shortness of breath after NO2 exposure may not start until up to 30 hours later."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c045
+    section: clinical
+    statement: "Severe airflow obstruction in constrictive bronchiolitis may give breathlessness and wheeze."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c046
+    section: diagnosis
+    statement: "Air trapped beyond closed bronchioles can hyperinflate the lung on chest radiograph or CT in constrictive bronchiolitis, but the imaging may instead look normal."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c047
+    section: prognosis
+    statement: "Most infants and children who become severely ill with airway infection get better."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "699" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c048
+    section: prognosis
+    statement: "RSV disease normally resolves by itself, though a few patients die."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c049
+    section: prognosis
+    statement: "Of the airway infections described, adenovirus is the one with the worst long-term consequences."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c050
+    section: prognosis
+    statement: "Pertussis in the pre-vaccine era frequently resulted in bronchiectasis."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c051
+    section: prognosis
+    statement: "Measles bronchiolitis remains serious where few people have been exposed to the virus, though vaccination has made it rare in developed countries."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c052
+    section: prognosis
+    statement: "A minority of people exposed to silo gas develop progressive bronchiolitis obliterans and can die from respiratory failure; most recover."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c053
+    section: prognosis
+    statement: "In most patients constrictive bronchiolitis shows steady, unrelenting worsening."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c054
+    section: prognosis
+    statement: "Nothing treats constrictive bronchiolitis effectively, including the corticosteroids that many patients are given."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c055
+    section: differential
+    statement: "Chronic bronchitis can be exacerbated by infection with H. influenzae or S. pneumoniae."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c056
+    section: differential
+    statement: "The reference treats pneumonia, infection of the alveolar tissue, separately from airway infection."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "699" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c057
+    section: differential
+    statement: "Scar tissue progressively closes the bronchiolar channel in constrictive bronchiolitis, and the clinical course is relentless."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c058
+    section: differential
+    statement: "An elastic stain may help identify scarred bronchioles, and CT may show trapped air, though CT can also be normal."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c059
+    section: differential
+    statement: "Bronchocentric granulomatosis is a tissue pattern, not a disease in its own right, in which nonspecific granulomas form around bronchi or bronchioles."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c060
+    section: differential
+    statement: "Most asthmatics who show bronchocentric granulomatosis have allergic bronchopulmonary aspergillosis."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c061
+    section: differential
+    statement: "Fragmented, irregular fungal hyphae of Aspergillus may be found within the mucus plugs of the allergic form."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c062
+    section: high-yield
+    statement: "Three viruses stand out as bronchiolitis causes: adenovirus, RSV and measles."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "699" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c063
+    section: high-yield
+    statement: "Repair after adenovirus bronchiolitis is fibrous and may close bronchioles, giving constrictive bronchiolitis."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c064
+    section: high-yield
+    statement: "Constrictive bronchiolitis and obliterative bronchiolitis name the same entity."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c065
+    section: high-yield
+    statement: "An elastic-fiber stain may make scarred bronchioles easier to see."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c066
+    section: high-yield
+    statement: "Silo-filler disease follows inhalation of NO2 given off by rotting stored grain."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c067
+    section: high-yield
+    statement: "In people dying of influenza the airways look intensely red, a tracheobronchitis."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c068
+    section: high-yield
+    statement: "Pertussis is recognized by fits of coughing that finish with a loud whooping inhalation."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c069
+    section: high-yield
+    statement: "Bronchiectasis can be a late result of chlorine or ammonia exposure."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c070
+    section: high-yield
+    statement: "Constrictive bronchiolitis has no treatment of proven effect."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c071
+    section: traps
+    statement: "Severe illness is more frequent in young children, but adults can occasionally be infected by RSV too."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "699-700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c072
+    section: traps
+    statement: "A normal-looking chest radiograph or CT is possible in constrictive bronchiolitis."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c073
+    section: traps
+    statement: "Adenovirus and measles can obliterate bronchioles, and measles can also leave bronchiectasis."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c074
+    section: traps
+    statement: "Steroids are commonly given for constrictive bronchiolitis, but none of the available treatments works."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c075
+    section: traps
+    statement: "Granulomatous inflammation around bronchi or bronchioles appears in many clinical contexts and does not define a single disease."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c076
+    section: traps
+    statement: "Bronchiolitis obliterans is another name for constrictive bronchiolitis."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c077
+    section: mnemonics
+    statement: "The viruses given as bronchiolitis examples are adenovirus, RSV and measles."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "699" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: acute-bronchitis-and-bronchiolitis-c078
+    section: mnemonics
+    statement: "NO2 sinks to just over the stored grain, where a worker entering the silo breathes it."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "700" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14

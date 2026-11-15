@@ -1,0 +1,137 @@
+id: emphysema
+module: o18
+tier: core
+kind: disease
+names:
+  it: "Enfisema"
+  en: "Emphysema"
+  eponyms: []
+  synonyms:
+    it: ["Enfisema polmonare"]
+    en: ["Pulmonary emphysema"]
+  abbreviations: []
+summary:
+  it: "Malattia polmonare cronica in cui gli spazi aerei distali ai bronchioli terminali sono dilatati per distruzione delle pareti, senza fibrosi; la causa principale è il fumo di sigaretta."
+  en: "Chronic lung disease in which airspaces beyond the terminal bronchioles are enlarged by destruction of their walls, without fibrosis; the main cause is cigarette smoking."
+lenses:
+  system: [respiratory]
+  process: [chronic-inflammation, cell-injury]
+  pattern: []
+  presentation: [dyspnea]
+  marker: [laboratory, molecular]
+  group: [toxic-environmental, genetic]
+learningObjectives:
+  - it: "Definire l'enfisema e spiegare perché la gravità conta più del tipo anatomico."
+    en: "Define emphysema and explain why severity matters more than anatomic type."
+  - it: "Descrivere il tipo centrolobulare, panacinare e paraseptale (localizzato) e le bolle, con la sede preferenziale di ciascuno."
+    en: "Describe the centrilobular, panacinar and paraseptal (localized) types and bullae, with the preferred site of each."
+  - it: "Spiegare lo squilibrio tra proteasi e antiproteasi e il ruolo del fumo e del deficit di α1-antitripsina."
+    en: "Explain the protease–antiprotease imbalance and the role of smoking and α1-antitrypsin deficiency."
+  - it: "Distinguere il quadro clinico dell'enfisema (\"pink puffer\") da quello della bronchite cronica (\"blue bloater\")."
+    en: "Distinguish the clinical picture of emphysema (\"pink puffer\") from that of chronic bronchitis (\"blue bloater\")."
+prerequisites: []
+relations:
+  - type: sharesMechanism
+    target: chronic-bronchitis
+    note:
+      it: "Le due malattie costituiscono la BPCO e spesso coesistono."
+      en: "The two diseases make up COPD and often coexist."
+  - type: differentialOf
+    target: asthma
+    note:
+      it: "Ostruzione episodica contro distruzione parenchimale progressiva."
+      en: "Episodic obstruction versus progressive parenchymal destruction."
+  - type: sharesMechanism
+    target: alpha1-antitrypsin-deficiency
+    note:
+      it: "In entrambe lo squilibrio proteasi-antiproteasi distrugge le pareti alveolari."
+      en: "In both, a protease–antiprotease imbalance destroys the alveolar walls."
+  - type: complicationOf
+    target: tobacco-smoking
+    note:
+      it: "Il fumo di sigaretta è la causa principale dell'enfisema."
+      en: "Cigarette smoking is the main cause of emphysema."
+quickCheck:
+  - id: emphysema-q1
+    q:
+      it: "Perché il fumo di sigaretta favorisce l'enfisema?"
+      en: "Why does cigarette smoking promote emphysema?"
+    a:
+      it: "Aumenta i neutrofili con elastasi e ossida l'α1-antitripsina, così l'elastasi agisce senza opposizione e distrugge il tessuto elastico delle pareti."
+      en: "It raises neutrophils carrying elastase and oxidizes α1-antitrypsin, so elastase acts unopposed and destroys elastic tissue in the walls."
+    kind: short
+  - id: emphysema-q2
+    q:
+      it: "Quale tipo di enfisema è tipico del deficit di α1-antitripsina e quale del fumatore?"
+      en: "Which type of emphysema is typical of α1-antitrypsin deficiency, and which of the smoker?"
+    a:
+      it: "Panacinare nel deficit di α1-antitripsina; centrolobulare, soprattutto nei lobi superiori, nel fumatore."
+      en: "Panacinar in α1-antitrypsin deficiency; centrilobular, mainly in the upper lobes, in the smoker."
+    kind: short
+  - id: emphysema-q3
+    q:
+      it: "Perché il \"pink puffer\" mantiene una saturazione quasi normale?"
+      en: "Why does the \"pink puffer\" keep a near-normal saturation?"
+    a:
+      it: "Perché la frequenza respiratoria e il volume minuto aumentati mantengono la saturazione dell'emoglobina vicina alla norma."
+      en: "Because the raised respiratory rate and minute volume keep hemoglobin saturation near normal."
+    kind: short
+  - id: emphysema-q4
+    q:
+      it: "Dove si trovano le lesioni nell'enfisema paraseptale e quale complicanza può dare?"
+      en: "Where do the lesions of paraseptal emphysema lie, and which complication can they cause?"
+    a:
+      it: "Sotto la pleura, tipicamente all'apice di un lobo superiore; la rottura di un focus può causare pneumotorace spontaneo."
+      en: "Under the pleura, typically at the apex of an upper lobe; rupture of a focus may cause spontaneous pneumothorax."
+    kind: short
+  - id: emphysema-q5
+    q:
+      it: "L'enfisema comporta fibrosi?"
+      en: "Does emphysema involve fibrosis?"
+    a:
+      it: "No: le pareti degli spazi aerei vengono distrutte senza fibrosi."
+      en: "No: the airspace walls are destroyed without fibrosis."
+    kind: short
+selfExplain:
+  - it: "Perché la perdita del tessuto elastico distale riduce il ritorno elastico e peggiora l'ostruzione al flusso?"
+    en: "Why does loss of distal elastic tissue reduce elastic recoil and worsen airflow obstruction?"
+  - it: "Perché un deficit di α1-antitripsina porta a distruzione delle pareti alveolari?"
+    en: "Why does α1-antitrypsin deficiency lead to destruction of the alveolar walls?"
+  - it: "Perché la gravità conta più del tipo anatomico quando i pattern coesistono?"
+    en: "Why does severity matter more than anatomic type when patterns coexist?"
+chain: []
+examQuestions:
+  - it: "Mi parli dell'enfisema centrolobulare: dove si localizza il danno nell'acino, quali lobi sono più colpiti e a quale abitudine si associa di solito?"
+    en: "Tell me about centrilobular emphysema: where does the damage lie within the acinus, which lobes are worst affected, and what is it usually associated with?"
+    focus: [gross]
+    level: 1
+  - it: "Perché lo squilibrio tra proteasi e antiproteasi porta all'enfisema? Che ruolo hanno il fumo e l'α1-antitripsina?"
+    en: "Why does a protease–antiprotease imbalance lead to emphysema? What roles do smoking and α1-antitrypsin play?"
+    focus: [pathogenesis, etiology]
+    level: 2
+  - it: "Mi parli delle bolle: che cosa sono e che dimensioni possono raggiungere?"
+    en: "Tell me about bullae: what are they, and how large can they be?"
+    focus: [gross]
+    level: 1
+  - it: "Come distingue, clinicamente, il paziente con enfisema da quello con bronchite cronica, e perché il \"pink puffer\" ha una saturazione quasi normale?"
+    en: "How do you tell the patient with emphysema from the one with chronic bronchitis, and why does the \"pink puffer\" keep a near-normal saturation?"
+    focus: [clinical, differential]
+    level: 3
+  - it: "Che cosa vede al microscopio e alla radiografia del torace in un paziente con enfisema?"
+    en: "What do you see under the microscope and on the chest radiograph in a patient with emphysema?"
+    focus: [micro, diagnosis]
+    level: 2
+images:
+  - id: emphysema-gross-1
+    role: gross
+    pairWith: emphysema-micro-1
+  - id: emphysema-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "18"
+    pages: "723, 725-727"
+lastUpdated: 2026-11-14
+status: published

@@ -1,0 +1,242 @@
+entity: atelectasis
+claims:
+  - claimId: atelectasis-c001
+    section: definition
+    statement: "Lung tissue that had been inflated with air has collapsed in atelectasis."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: atelectasis-c002
+    section: etiology
+    statement: "Most atelectasis comes from a blocked bronchus."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: atelectasis-c003
+    section: etiology
+    statement: "A primary lung tumor growing into the bronchus is the usual cause of blockage in adults."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: atelectasis-c004
+    section: etiology
+    statement: "In children especially, bronchial blockage often comes from an inhaled object, a mucus plug or aspirated stomach contents."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: atelectasis-c005
+    section: etiology
+    statement: "A lung can collapse when pressed from outside, for example by fluid (hydrothorax) or air (pneumothorax) around it."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: atelectasis-c006
+    section: etiology
+    statement: "After abdominal surgery, pain limits breathing movements and mucus may block a bronchus; either or both can lead to atelectasis."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: atelectasis-c007
+    section: etiology
+    statement: "Hilar lymph nodes usually press on the right middle lobe bronchus from outside, the lobe collapses, and this is called right middle lobe syndrome."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "702" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: atelectasis-c008
+    section: etiology
+    statement: "Being thin, long and ringed by lymph nodes, the right middle lobe bronchus is easily squeezed from outside."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "702" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: atelectasis-c009
+    section: etiology
+    statement: "Often the reason for the blockage stays unknown; when a cause is found, the node enlargement may come from tuberculous lymphadenitis or metastatic lung cancer."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "702" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: atelectasis-c010
+    section: pathogenesis
+    statement: "A lung region collapses because the blood takes up its alveolar gas after ventilation stops."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: atelectasis-c011
+    section: pathogenesis
+    statement: "Only complete bronchial obstruction results in atelectasis; a partial block can trap air and overdistend the segment beyond it."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: atelectasis-c012
+    section: gross
+    statement: "A collapsed lung is deflated compared with an air-expanded lung, as shown in an infant's lungs with one lung collapsed."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "702" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: atelectasis-c013
+    section: micro
+    statement: "Infection beyond the obstruction is part of the reason the bronchi widen, and in long-standing atelectasis the collapsed lung also turns fibrotic."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: atelectasis-c014
+    section: micro
+    statement: "In right middle lobe syndrome the lung shows fibrosis, dilated bronchi (bronchiectasis) and chronic inflammation of the bronchi."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "702" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: atelectasis-c015
+    section: clinical
+    statement: "Atelectasis is often asymptomatic."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: atelectasis-c016
+    section: clinical
+    statement: "In severe atelectasis the mediastinum shifts toward the affected side and hypoxemia may develop."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: atelectasis-c017
+    section: clinical
+    statement: "Severe external compression can displace the mediastinum away from the affected side and put the function of that lung at risk."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: atelectasis-c018
+    section: prognosis
+    statement: "Beyond a bronchial obstruction, bronchiectasis, abscesses or pneumonia may develop."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: atelectasis-c019
+    section: prognosis
+    statement: "Bronchi that remain permanently widened are described as bronchiectasis."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: atelectasis-c020
+    section: differential
+    statement: "Bronchiectasis is irreversible bronchial dilation, distinct from collapse of lung tissue, and it can follow long-standing atelectasis."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701, 702" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: atelectasis-c021
+    section: differential
+    statement: "A surgically removed lobe with bronchiectasis has thick-walled, markedly enlarged bronchi."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "702" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: atelectasis-c022
+    section: high-yield
+    statement: "Atelectasis is lung that was once inflated and is now airless and collapsed."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: atelectasis-c023
+    section: high-yield
+    statement: "Atelectasis usually follows bronchial obstruction, with gas passing from the alveoli into the blood."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: atelectasis-c024
+    section: high-yield
+    statement: "A lung can also collapse because fluid or air around it, as in hydrothorax or pneumothorax, squeezes it from outside."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: atelectasis-c025
+    section: high-yield
+    statement: "Chronic collapse makes lung tissue fibrotic, and infection helps dilate its bronchi."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: atelectasis-c026
+    section: traps
+    statement: "Severe atelectasis from obstruction shifts the mediastinum toward the affected side."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: atelectasis-c027
+    section: traps
+    statement: "Severe compression of the lung shifts the mediastinum away from the affected side."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: atelectasis-c028
+    section: traps
+    statement: "A complete bronchial block collapses the lung beyond it, while a partial block can instead overinflate it."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: atelectasis-c029
+    section: traps
+    statement: "Atelectasis is often asymptomatic."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: atelectasis-c030
+    section: mnemonics
+    statement: "Lung collapse has two main mechanisms: a blocked bronchus, or pressure on the lung from outside."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "701" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14

@@ -1,0 +1,354 @@
+entity: chronic-bronchitis
+claims:
+- claimId: chronic-bronchitis-c001
+  section: definition
+  statement: "Diagnosis rests on the history: at least two years of cough with sputum and no other cause found."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "721" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c002
+  section: definition
+  statement: "Chronic bronchitis and emphysema together make up COPD."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "721" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c004
+  section: definition
+  statement: "In chronic bronchitis airflow falls because the airways are narrowed, which raises resistance."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "721" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c005
+  section: etiology
+  statement: "Cigarette smoke is the leading cause, and about 90% of patients are smokers."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "722" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c006
+  section: etiology
+  statement: "Infection has been implicated in both the onset and the progression of the disease, and patients suffer acute respiratory infections more often and more severely."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "722" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c007
+  section: etiology
+  statement: "Smoking has a far larger effect than pollution, although residence in a polluted area and work exposure to toxic industrial inhalants also raise the frequency of the disease."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "722" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c008
+  section: pathogenesis
+  statement: "The mechanism by which smoke and other irritants damage the bronchi is still unclear."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "722" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c009
+  section: pathogenesis
+  statement: "In rodent bronchi, proteases cause squamous metaplasia that antiprotease pretreatment prevents, and instilled acid, SO2 and smoke cause it too."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "722" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c010
+  section: pathogenesis
+  statement: "Autonomic stimulation may play a part, because adrenergic and cholinergic agonists also induce bronchial epithelial metaplasia in rodents."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "722" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c011
+  section: pathogenesis
+  statement: "Mucus cells multiply and swell and make up a larger share than serous cells, so the glands grow."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "722" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c012
+  section: gross
+  statement: "Both the proximal and distal airways may hold an excess of mucus."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c013
+  section: gross
+  statement: "Where several bronchial glands open into one dilated duct, the duct appears as a pit on the epithelial surface."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c014
+  section: gross
+  statement: "The bronchial lumen is narrowed because the wall is thickened by enlarged glands and edema."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c015
+  section: micro
+  statement: "Individual acini and whole glands are enlarged, so the bronchus holds more mucus-secreting tissue, which is the principal lesion."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "722" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c016
+  section: micro
+  statement: "The Reid index is obtained by dividing the gland thickness by the thickness of the full bronchial wall, measured from basement membrane to inner perichondrium."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "722-723" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c017
+  section: micro
+  statement: "In chronic bronchitis the Reid index is above 0.5, while normal values reach up to 0.4."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c018
+  section: micro
+  statement: "The bronchial epithelium contains more goblet cells (goblet cell hyperplasia)."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c019
+  section: micro
+  statement: "Smoke injures the bronchial lining and squamous metaplasia follows, probably apart from the other lesions."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c020
+  section: micro
+  statement: "Bronchial hyperreactivity may be explained by more smooth muscle in the wall."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c021
+  section: micro
+  statement: "The schematic of morphologic changes shows scattered lymphocytes and basement membrane thickening in the wall."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "722" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c022
+  section: ancillary
+  statement: "Routine microscopy of bronchi shows enlarged mucous glands, more goblet cells and squamous metaplasia."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "722-723" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c023
+  section: clinical
+  statement: "In one patient it is hard to tell how much of the clinical picture comes from chronic bronchitis and how much from emphysema, because the two often occur together."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c024
+  section: clinical
+  statement: "Patients with mainly chronic bronchitis report years of coughing up sputum."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c025
+  section: clinical
+  statement: "Cough and sputum eventually last year-round, though early in the disease they peak in winter."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c026
+  section: clinical
+  statement: "Later the patient becomes cyanotic and short of breath on exertion, and cor pulmonale may develop."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c027
+  section: clinical
+  statement: "\"Blue bloater\" is the label for a patient whose cor pulmonale adds edema to cyanosis."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c028
+  section: diagnosis
+  statement: "Mild disease can have normal histology and the morphologic changes grade into one another, so the definition rests on the clinical history rather than on histology."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "721" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c029
+  section: diagnosis
+  statement: "On spirometry, patients with COPD have a lower forced expiratory volume."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "721" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c030
+  section: prognosis
+  statement: "Advanced disease can progress to acute respiratory failure with falling oxygen and rising carbon dioxide, triggered by infection, thromboembolism, left ventricular failure or heavy air pollution."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c031
+  section: prognosis
+  statement: "Haemophilus influenzae and S. pneumoniae are the bacteria especially likely to infect the lungs of these patients, whose retained mucus secretions predispose them."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c032
+  section: prognosis
+  statement: "Patients must quit smoking; treatment uses bronchodilators, early antibiotics for chest infections and occasional airway drainage."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c033
+  section: differential
+  statement: "Emphysema destroys the walls of airspaces past the terminal bronchioles, leaving them enlarged but not scarred, and elastic recoil is lost."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "721,723" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c034
+  section: differential
+  statement: "Asthma and chronic bronchitis both obstruct by airway narrowing; chronic bronchitis is defined by chronic productive cough."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "721" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c035
+  section: differential
+  statement: "Bronchiectasis is grouped with the obstructive pulmonary diseases in some classifications."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "721" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c036
+  section: high-yield
+  statement: "Chronic bronchitis is a clinical diagnosis requiring at least two years of productive cough that has no other explanation."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "721" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c037
+  section: high-yield
+  statement: "About 90% of cases occur in smokers."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "722" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c038
+  section: high-yield
+  statement: "Mucous gland enlargement raises the Reid index above 0.5 from a normal of 0.4 or less."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c039
+  section: high-yield
+  statement: "Goblet cell hyperplasia and squamous metaplasia occur in the bronchial epithelium."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c040
+  section: high-yield
+  statement: "Chronic bronchitis and emphysema make up COPD and often occur together."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "721,723" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c041
+  section: high-yield
+  statement: "In the blue bloater, cor pulmonale adds edema to cyanosis."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c042
+  section: traps
+  statement: "Chronic bronchitis is defined clinically and mild cases can have normal histology."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "721" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c043
+  section: traps
+  statement: "The Reid index measures mucous gland thickness relative to bronchial wall thickness."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c044
+  section: traps
+  statement: "Chronic bronchitis obstructs by airway narrowing, whereas emphysema obstructs by loss of elastic recoil."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "721" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: chronic-bronchitis-c045
+  section: mnemonics
+  statement: "Original mnemonic summarizing cough, gland hypertrophy with Reid index above 0.5, smoking, goblet cell increase and hypoxemia/cyanosis."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "722-723" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14

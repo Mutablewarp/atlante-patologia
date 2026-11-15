@@ -1,0 +1,132 @@
+id: chronic-bronchitis
+module: o18
+tier: core
+kind: disease
+editionDependent: false
+status: published
+lastUpdated: 2026-11-14
+reviewStatus: ai-generated-unreviewed
+names:
+  it: "Bronchite cronica"
+  en: "Chronic bronchitis"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: []
+summary:
+  it: "Malattia delle vie aeree definita clinicamente da tosse produttiva cronica senza altra causa, con ipertrofia delle ghiandole mucose, aumento delle cellule caliciformi e frequente associazione con enfisema."
+  en: "Airway disease defined clinically by chronic productive cough without another cause, with mucous gland hypertrophy, more goblet cells and frequent overlap with emphysema."
+lenses:
+  system: [respiratory]
+  process: [chronic-inflammation, cellular-adaptation]
+  pattern: [hyperplasia, hypertrophy, metaplasia]
+  presentation: [dyspnea]
+  marker: []
+  group: [toxic-environmental, inflammatory]
+learningObjectives:
+  - it: "Enunciare la definizione clinica di bronchite cronica e spiegare perché la morfologia non basta a porre la diagnosi."
+    en: "State the clinical definition of chronic bronchitis and explain why morphology alone does not make the diagnosis."
+  - it: "Descrivere l'ipertrofia delle ghiandole mucose e interpretare l'indice di Reid."
+    en: "Describe mucous gland hypertrophy and interpret the Reid index."
+  - it: "Riconoscere iperplasia delle cellule caliciformi e metaplasia squamosa dell'epitelio bronchiale."
+    en: "Recognize goblet cell hyperplasia and squamous metaplasia of the bronchial epithelium."
+  - it: "Distinguere il meccanismo ostruttivo della bronchite cronica da quello dell'enfisema e spiegarne la sovrapposizione."
+    en: "Distinguish the obstructive mechanism of chronic bronchitis from that of emphysema and explain their overlap."
+prerequisites: [hyperplasia, metaplasia]
+relations:
+  - type: sharesMechanism
+    target: emphysema
+    note:
+      it: "Entrambe fanno parte della BPCO e spesso coesistono nello stesso paziente."
+      en: "Both belong to COPD and often coexist in the same patient."
+  - type: differentialOf
+    target: asthma
+    note:
+      it: "Ostruzione per restringimento delle vie aeree, ma la bronchite cronica è definita dalla tosse produttiva cronica."
+      en: "Obstruction by airway narrowing, but chronic bronchitis is defined by chronic productive cough."
+  - type: mimics
+    target: bronchiectasis
+    note:
+      it: "Alcune classificazioni la raggruppano tra le malattie ostruttive."
+      en: "Some classifications group it with the obstructive diseases."
+  - type: causes
+    target: tobacco-smoking
+    note:
+      it: "Il fumo di sigaretta è la causa principale."
+      en: "Cigarette smoking is the main cause."
+quickCheck:
+  - id: chronic-bronchitis-q1
+    q:
+      it: "Come si definisce clinicamente la bronchite cronica?"
+      en: "How is chronic bronchitis defined clinically?"
+    a:
+      it: "Tosse produttiva senza altra causa identificabile, che dura da due o più anni."
+      en: "A productive cough with no other identifiable cause, lasting two or more years."
+    kind: short
+  - id: chronic-bronchitis-q2
+    q:
+      it: "Che cosa misura l'indice di Reid e quali sono i valori normale e patologico?"
+      en: "What does the Reid index measure, and what are the normal and abnormal values?"
+    a:
+      it: "Lo spessore delle ghiandole mucose rispetto alla parete bronchiale; normale fino a 0,4, nella bronchite cronica oltre 0,5."
+      en: "Mucous gland thickness relative to the bronchial wall; normal up to 0.4, above 0.5 in chronic bronchitis."
+    kind: short
+  - id: chronic-bronchitis-q3
+    q:
+      it: "In che modo bronchite cronica ed enfisema riducono il flusso aereo?"
+      en: "How do chronic bronchitis and emphysema each reduce airflow?"
+    a:
+      it: "La bronchite cronica restringe le vie aeree; l'enfisema fa perdere il rinculo elastico."
+      en: "Chronic bronchitis narrows the airways; emphysema removes elastic recoil."
+    kind: short
+  - id: chronic-bronchitis-q4
+    q:
+      it: "Che cos'è un \"blue bloater\"?"
+      en: "What is a \"blue bloater\"?"
+    a:
+      it: "Un paziente cianotico ed edematoso per cor pulmonale."
+      en: "A patient who is cyanotic and also edematous from cor pulmonale."
+    kind: short
+  - id: chronic-bronchitis-q5
+    q:
+      it: "Perché la diagnosi di bronchite cronica non si basa sull'istologia?"
+      en: "Why is the diagnosis of chronic bronchitis not based on histology?"
+    a:
+      it: "Nelle forme lievi l'istologia può essere normale e le alterazioni sfumano l'una nell'altra, quindi la definizione poggia sull'anamnesi clinica."
+      en: "Mild disease can have normal histology and the changes grade into one another, so the definition rests on the clinical history."
+    kind: short
+selfExplain:
+  - it: "Perché il fumo di sigaretta porta a più muco nelle vie aeree?"
+    en: "Why does cigarette smoke lead to more mucus in the airways?"
+  - it: "Perché l'ipertrofia delle ghiandole mucose restringe il lume bronchiale?"
+    en: "Why does mucous gland enlargement narrow the bronchial lumen?"
+  - it: "Perché in uno stesso paziente è difficile separare il contributo della bronchite cronica da quello dell'enfisema?"
+    en: "Why is it hard to separate the contribution of chronic bronchitis from that of emphysema in one patient?"
+chain: []
+examQuestions:
+  - it: "Mi parli della bronchite cronica: come si definisce e come si pone la diagnosi?"
+    en: "Tell me about chronic bronchitis: how is it defined and how is it diagnosed?"
+    focus: [definition, diagnosis]
+    level: 1
+  - it: "Che cosa vede al microscopio in un bronco di un paziente con bronchite cronica?"
+    en: "What do you see under the microscope in a bronchus from a patient with chronic bronchitis?"
+    focus: [micro]
+    level: 1
+  - it: "Che cos'è l'indice di Reid e che cosa indica quando supera 0,5?"
+    en: "What is the Reid index, and what does it show when it is above 0.5?"
+    focus: [micro, traps]
+    level: 2
+  - it: "Perché nella bronchite cronica il flusso aereo si riduce, e come si distingue questo meccanismo da quello dell'enfisema?"
+    en: "Why does airflow fall in chronic bronchitis, and how does this mechanism differ from that of emphysema?"
+    focus: [definition, differential, traps]
+    level: 3
+  - it: "Un paziente fumatore ha tosse produttiva da molti anni, cianosi ed edemi: quale quadro clinico riconosce e quali complicanze teme?"
+    en: "A smoker has had a productive cough for many years, with cyanosis and edema: what clinical picture do you recognize, and which complications do you fear?"
+    focus: [clinical, prognosis]
+    level: 3
+images: []
+sources:
+  - source: rubin-8e
+    chapter: "18"
+    pages: "721-723"
