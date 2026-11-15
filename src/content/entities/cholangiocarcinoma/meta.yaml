@@ -1,0 +1,136 @@
+id: cholangiocarcinoma
+module: o20
+tier: core
+kind: disease
+names:
+  it: "Colangiocarcinoma"
+  en: "Cholangiocarcinoma"
+  eponyms: []
+  synonyms:
+    it: ["Carcinoma delle vie biliari", "Carcinoma dei dotti biliari"]
+    en: ["Bile duct carcinoma"]
+  abbreviations: ["CCA"]
+summary:
+  it: "Carcinoma che origina dall'epitelio dei dotti biliari, intraepatico, perilare o extraepatico: ghiandole ben differenziate in uno stroma fibroso denso, spesso su PSC, e ittero ostruttivo nelle sedi extraepatiche."
+  en: "Carcinoma of the bile duct epithelium, intrahepatic, perihilar or extrahepatic: well-differentiated glands in a dense fibrous stroma, often arising on PSC, with obstructive jaundice in extrahepatic sites."
+lenses:
+  system: [liver-biliary, gastrointestinal]
+  process: [neoplasia, chronic-inflammation]
+  pattern: []
+  presentation: [jaundice, mass-lesion]
+  marker: [ihc]
+  group: [neoplastic, inflammatory]
+learningObjectives:
+  - it: "Distinguere il colangiocarcinoma intraepatico, perilare ed extraepatico in base alla sede di origine."
+    en: "Distinguish intrahepatic, perihilar and extrahepatic cholangiocarcinoma by site of origin."
+  - it: "Elencare i principali fattori di rischio: colangite sclerosante primitiva, cisti coledocica, malattia di Caroli e parassitosi da fluke."
+    en: "List the main risk factors: primary sclerosing cholangitis, choledochal cyst, Caroli disease and liver fluke infestation."
+  - it: "Descrivere l'istologia: ghiandole ben differenziate in uno stroma fibroso denso."
+    en: "Describe the histology: well-differentiated glands in a dense fibrous stroma."
+  - it: "Spiegare perché la biopsia epatica può far confondere il tumore con metastasi di carcinoma mammario o pancreatico."
+    en: "Explain why a liver biopsy can lead to confusion with metastatic breast or pancreatic carcinoma."
+prerequisites: []
+relations:
+  - type: complicationOf
+    target: primary-sclerosing-cholangitis
+    note:
+      it: "Circa un fegato su quattro asportato per trapianto in PSC contiene un colangiocarcinoma."
+      en: "About one in four PSC livers removed for transplant contains a cholangiocarcinoma."
+  - type: differentialOf
+    target: hepatocellular-carcinoma
+    note:
+      it: "Il CHC invade le vene portali ed epatiche più aggressivamente; esistono tumori combinati."
+      en: "HCC invades portal and hepatic veins more aggressively; combined tumors exist."
+  - type: mimics
+    target: pancreatic-ductal-adenocarcinoma
+    note:
+      it: "La fibrosi può far scambiare il colangiocarcinoma con metastasi pancreatiche alla biopsia epatica."
+      en: "Fibrosis can make cholangiocarcinoma look like pancreatic metastasis on liver biopsy."
+  - type: mimics
+    target: invasive-breast-carcinoma-nst
+    note:
+      it: "La fibrosi può far scambiare il colangiocarcinoma con metastasi mammarie alla biopsia epatica."
+      en: "Fibrosis can make cholangiocarcinoma look like breast metastasis on liver biopsy."
+  - type: differentialOf
+    target: gallbladder-carcinoma
+    note:
+      it: "Stesso tipo di crescita endofitica o infiltrante diffusa, ma esito un po' migliore nel tumore delle vie biliari."
+      en: "Same endophytic or diffusely infiltrative growth, but a somewhat better outcome for bile duct carcinoma."
+quickCheck:
+  - id: cholangiocarcinoma-q1
+    q:
+      it: "Quali sono le tre sedi in cui si classifica il colangiocarcinoma?"
+      en: "Which three sites are used to classify cholangiocarcinoma?"
+    a:
+      it: "Intraepatica, perilare (alla confluenza dei dotti epatici destro e sinistro) ed extraepatica."
+      en: "Intrahepatic, perihilar (at the junction of the right and left hepatic ducts) and extrahepatic."
+    kind: short
+  - id: cholangiocarcinoma-q2
+    q:
+      it: "Quali condizioni aumentano il rischio di colangiocarcinoma?"
+      en: "Which conditions raise the risk of cholangiocarcinoma?"
+    a:
+      it: "PSC, cisti coledociche, malattia di Caroli, epatopatie croniche (epatite B e C, cirrosi alcolica) e infestazione da C. sinensis."
+      en: "PSC, choledochal cysts, Caroli disease, chronic liver disease (hepatitis B and C, alcoholic cirrhosis) and C. sinensis infestation."
+    kind: short
+  - id: cholangiocarcinoma-q3
+    q:
+      it: "Perché alla biopsia epatica il colangiocarcinoma può essere scambiato per una metastasi?"
+      en: "Why can cholangiocarcinoma be mistaken for a metastasis on liver biopsy?"
+    a:
+      it: "Perché è spesso molto fibroso e può somigliare a metastasi di carcinoma mammario o pancreatico."
+      en: "Because it is often markedly fibrotic and can resemble metastatic breast or pancreatic carcinoma."
+    kind: short
+selfExplain:
+  - it: "Perché i tumori perilari causano sintomi di ostruzione biliare extraepatica anche quando sono piccoli?"
+    en: "Why do perihilar tumors cause symptoms of extrahepatic biliary obstruction even when small?"
+  - it: "Perché nei tumori dei dotti biliari extraepatici i sintomi compaiono precocemente?"
+    en: "Why do symptoms appear early in extrahepatic bile duct tumors?"
+  - it: "Perché la prognosi del carcinoma dei dotti biliari è un po' migliore di quella del carcinoma della colecisti?"
+    en: "Why is the prognosis of bile duct carcinoma somewhat better than that of gallbladder carcinoma?"
+chain:
+  - pathology:
+      it: "Colangiocarcinoma perilare che oblitera il dotto"
+      en: "Perihilar cholangiocarcinoma obliterating the duct"
+    sign:
+      it: "Ittero ostruttivo"
+      en: "Obstructive jaundice"
+    lab:
+      it: "Non trattato nel testo di riferimento"
+      en: "Not covered in the reference text"
+examQuestions:
+  - it: "Mi parli del colangiocarcinoma: da quale epitelio origina e come si classifica per sede?"
+    en: "Tell me about cholangiocarcinoma: which epithelium does it come from, and how is it classified by site?"
+    focus: [definition, high-yield]
+    level: 1
+  - it: "Quali fattori di rischio conosce per il colangiocarcinoma?"
+    en: "Which risk factors do you know for cholangiocarcinoma?"
+    focus: [etiology, mnemonics]
+    level: 1
+  - it: "Che cosa vede al microscopio in un colangiocarcinoma?"
+    en: "What do you see under the microscope in cholangiocarcinoma?"
+    focus: [micro, ancillary]
+    level: 1
+  - it: "Perché una biopsia epatica di colangiocarcinoma può essere confusa con una metastasi?"
+    en: "Why can a liver biopsy of cholangiocarcinoma be mistaken for a metastasis?"
+    focus: [ancillary, differential, traps]
+    level: 2
+  - it: "Come distingue il colangiocarcinoma dal carcinoma epatocellulare e dal carcinoma della colecisti?"
+    en: "How do you tell cholangiocarcinoma from hepatocellular carcinoma and from gallbladder carcinoma?"
+    focus: [differential, prognosis]
+    level: 3
+  - it: "Perché un tumore delle vie biliari extraepatiche si presenta con ittero ostruttivo e che prognosi ha?"
+    en: "Why does an extrahepatic bile duct tumor present with obstructive jaundice, and what is its prognosis?"
+    focus: [clinical, prognosis]
+    level: 3
+images:
+  - { id: cholangiocarcinoma-gross-1, role: gross, pairWith: cholangiocarcinoma-micro-1 }
+  - { id: cholangiocarcinoma-micro-1, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "20"
+    pages: "891-892, 899"
+lastUpdated: 2026-11-15
+status: published

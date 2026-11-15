@@ -1,0 +1,386 @@
+entity: cholangiocarcinoma
+claims:
+  - claimId: cholangiocarcinoma-c001
+    section: definition
+    statement: "Cholangiocarcinoma is a carcinoma derived from biliary (bile duct) epithelium."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "891" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c002
+    section: definition
+    statement: "The intrahepatic tumor can start at any level of the intrahepatic biliary tree, from the finest ducts to the largest."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "891" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c003
+    section: definition
+    statement: "The perihilar form sits at the hilum, where the right and left hepatic ducts meet."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "892" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c004
+    section: definition
+    statement: "Adenocarcinoma accounts for nearly every tumor of the bile duct outside the liver, wherever along its course it arises."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "899" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c005
+    section: definition
+    statement: "Men and women are both affected by the intrahepatic form, mostly at older ages."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "891" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c006
+    section: definition
+    statement: "The average age at presentation is 60 years."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "891" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c007
+    section: definition
+    statement: "The intrahepatic tumor is especially frequent in Asian areas where infection with the liver fluke C. sinensis is widespread."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "891" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c008
+    section: definition
+    statement: "Gallbladder cancer is more common than extrahepatic bile duct cancer."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "899" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c009
+    section: definition
+    statement: "Extrahepatic bile duct tumors affect both sexes comparably."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "899" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c010
+    section: etiology
+    statement: "Having PSC markedly raises the risk of cholangiocarcinoma."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "891" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c011
+    section: etiology
+    statement: "Cholangiocarcinoma is found in one in four livers removed for transplantation in PSC."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "891" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c012
+    section: etiology
+    statement: "Both Caroli disease and choledochal cysts predispose to the tumor."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "891" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c013
+    section: etiology
+    statement: "Chronic hepatitis B or C and alcohol-related cirrhosis are linked to a rising number of intrahepatic cases."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "891" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c014
+    section: etiology
+    statement: "In Asia, bile duct cancer is linked to C. sinensis flukes living in the bile ducts."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "899" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c015
+    section: etiology
+    statement: "Patients with extrahepatic bile duct carcinoma commonly have gallstones too."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "899" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c016
+    section: etiology
+    statement: "Inflammatory diseases of the colon are an associated condition of extrahepatic bile duct carcinoma."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "899" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c017
+    section: gross
+    statement: "A perihilar tumor can spread through the duct wall, or form a small firm fibrous nodule that occludes the lumen."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "892" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c018
+    section: gross
+    statement: "A rare intraductal papillary variant of perihilar cholangiocarcinoma exists."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "892" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c019
+    section: gross
+    statement: "Perihilar tumors can go on to form a mass."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "892" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c020
+    section: gross
+    statement: "Extrahepatic bile duct carcinoma can infiltrate diffusely or grow inward into the lumen (endophytic growth)."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "899" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c021
+    section: micro
+    statement: "Small cuboidal cells line the ductules or glands that make up an intrahepatic tumor."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "891" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c022
+    section: micro
+    statement: "Abundant fibrous tissue surrounds the tumor glands, which look fairly mature."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "891" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c023
+    section: micro
+    statement: "If a tumor shows features of both hepatocellular carcinoma and intrahepatic cholangiocarcinoma, it is called a combined hepatocellular-cholangiocarcinoma."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "891" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c024
+    section: ancillary
+    statement: "On a liver biopsy the tumor appears as glands lying in abundant fibrous tissue."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "891" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c025
+    section: ancillary
+    statement: "On liver biopsy, a fibrosis-rich cholangiocarcinoma can pass for a breast or pancreatic metastasis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "891" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c026
+    section: clinical
+    statement: "Every perihilar cholangiocarcinoma blocks the extrahepatic bile ducts and causes symptoms."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "892" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c027
+    section: clinical
+    statement: "Obstructive jaundice is how carcinoma of the extrahepatic bile duct presents."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "899" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c028
+    section: clinical
+    statement: "Extrahepatic bile duct carcinoma becomes symptomatic early."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "899" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c029
+    section: prognosis
+    statement: "Cholangiocarcinoma invades the portal and hepatic veins less than HCC does."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "892" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c030
+    section: prognosis
+    statement: "Local spread of cholangiocarcinoma follows the nerves."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "892" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c031
+    section: prognosis
+    statement: "Metastases reach many parts of the body, with portal lymph nodes a favored site."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "892" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c032
+    section: prognosis
+    statement: "A liver transplant rarely removes cholangiocarcinoma for good."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "892" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c033
+    section: prognosis
+    statement: "The prognosis of extrahepatic bile duct carcinoma is poor."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "899" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c034
+    section: prognosis
+    statement: "Early symptoms give bile duct carcinoma a slightly better outlook than gallbladder carcinoma."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "899" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c035
+    section: differential
+    statement: "Invasion of the portal and hepatic veins is more marked in HCC than in cholangiocarcinoma."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "892" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c036
+    section: differential
+    statement: "Acini ringing bile concretions can occur in moderately differentiated HCC."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "891" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c037
+    section: differential
+    statement: "In liver biopsy it may pass for breast or pancreatic metastasis, owing to marked fibrosis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "891" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c038
+    section: differential
+    statement: "Bile duct carcinoma shares the endophytic or diffusely infiltrative growth of gallbladder carcinoma, but has a somewhat better outcome than the gallbladder tumor."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "899" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c039
+    section: high-yield
+    statement: "Cholangiocarcinoma arises from biliary epithelium; PSC strongly predisposes, and a quarter of PSC livers removed for transplant contain one."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "891" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c040
+    section: high-yield
+    statement: "Cholangiocarcinoma is described as intrahepatic, perihilar (around the junction of right and left hepatic ducts) or extrahepatic."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "891-892, 899" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c041
+    section: high-yield
+    statement: "The histology is a gland-forming tumor with abundant fibrous tissue."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "891" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c042
+    section: high-yield
+    statement: "Perihilar tumors cause extrahepatic biliary obstruction; extrahepatic bile duct carcinoma presents with obstructive jaundice."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "892, 899" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c043
+    section: high-yield
+    statement: "It spreads along nerves and to portal lymph nodes, and liver transplantation rarely eradicates it."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "892" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c044
+    section: traps
+    statement: "Cholangiocarcinoma derives from biliary epithelium; a tumor showing both liver-cell and bile-duct morphologies is classed as a combined tumor."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "891" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c045
+    section: traps
+    statement: "Tumors of the bile ducts outside the liver count as cholangiocarcinoma too, and are nearly always adenocarcinomas."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "899" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c046
+    section: traps
+    statement: "A breast or pancreatic metastasis in the liver can resemble cholangiocarcinoma, which is itself rich in fibrous tissue."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "891" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c047
+    section: traps
+    statement: "Transplanting the liver seldom clears this cancer completely."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "892" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholangiocarcinoma-c048
+    section: mnemonics
+    statement: "Linked conditions: PSC, choledochal cysts (and Caroli disease), and the liver fluke C. sinensis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "891, 899" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
