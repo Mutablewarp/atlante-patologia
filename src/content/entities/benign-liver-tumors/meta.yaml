@@ -1,0 +1,110 @@
+id: benign-liver-tumors
+module: o20
+tier: extended
+kind: disease
+names:
+  it: "Tumori epatici benigni e lesioni simil-tumorali"
+  en: "Benign liver tumors and tumor-like lesions"
+  eponyms: []
+  synonyms:
+    it: ["Adenoma epatocellulare", "Iperplasia nodulare focale"]
+    en: ["Hepatocellular adenoma", "Focal nodular hyperplasia"]
+  abbreviations: ["FNH"]
+summary:
+  it: "Gruppo di lesioni epatiche non maligne (adenoma epatocellulare, iperplasia nodulare focale, emangioma, cisti e forme più rare) che si distinguono per architettura, vasi e rischio di emorragia o di trasformazione."
+  en: "A group of non-malignant liver lesions (hepatocellular adenoma, focal nodular hyperplasia, hemangioma, cysts and rarer forms) told apart by architecture, vessels and risk of bleeding or malignant change."
+lenses:
+  system: [liver-biliary]
+  process: [neoplasia]
+  pattern: [hyperplasia]
+  presentation: [mass-lesion, incidental-finding]
+  marker: []
+  group: [neoplastic, developmental, vascular]
+learningObjectives:
+  - it: "Descrivere l'adenoma epatocellulare e i suoi quattro sottotipi."
+    en: "Describe hepatocellular adenoma and its four subtypes."
+  - it: "Riconoscere l'iperplasia nodulare focale: cicatrice centrale, setti fibrosi, lesione non neoplastica."
+    en: "Recognize focal nodular hyperplasia: central scar, fibrous septa, non-neoplastic lesion."
+  - it: "Collocare emangioma, cisti epatiche e lesioni rare nel gruppo."
+    en: "Place hemangioma, liver cysts and rare lesions within the group."
+  - it: "Distinguere le lesioni che simulano la cirrosi dalla cirrosi vera."
+    en: "Separate the lesions that mimic cirrhosis from true cirrhosis."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: hepatocellular-carcinoma
+    note:
+      it: "L'adenoma di tipo beta-catenina attivato ha un rischio aumentato di trasformazione maligna."
+      en: "The beta-catenin-activated adenoma has an increased risk of malignant transformation."
+  - type: mimics
+    target: cirrhosis
+    note:
+      it: "L'iperplasia nodulare focale somiglia alla cirrosi per setti e noduli."
+      en: "Focal nodular hyperplasia resembles cirrhosis through septa and nodules."
+  - type: causes
+    target: portal-hypertension
+    note:
+      it: "L'iperplasia nodulare rigenerativa e la fibrosi epatica congenita si associano a ipertensione portale."
+      en: "Nodular regenerative hyperplasia and congenital hepatic fibrosis are associated with portal hypertension."
+  - type: sameLesionOtherOrgan
+    target: vascular-tumors
+    note:
+      it: "L'emangioma epatico somiglia agli emangiomi cavernosi di altre sedi."
+      en: "Liver hemangioma resembles cavernous hemangiomas elsewhere."
+quickCheck:
+  - id: benign-liver-tumors-q1
+    q:
+      it: "Quali sono i quattro sottotipi di adenoma epatocellulare?"
+      en: "What are the four subtypes of hepatocellular adenoma?"
+    a:
+      it: "HNF1A inattivato, infiammatorio, beta-catenina attivato e non classificato."
+      en: "HNF1A-inactivated, inflammatory, beta-catenin-activated and unclassified."
+    kind: short
+  - id: benign-liver-tumors-q2
+    q:
+      it: "Perché l'iperplasia nodulare focale non è considerata una neoplasia?"
+      en: "Why is focal nodular hyperplasia not considered a neoplasm?"
+    a:
+      it: "È una lesione non neoplastica, probabilmente da malformazione vascolare locale, e non si associa ai contraccettivi orali."
+      en: "It is a non-neoplastic lesion, probably from a local vascular malformation, and is not associated with oral contraceptives."
+    kind: short
+  - id: benign-liver-tumors-q3
+    q:
+      it: "Quale reperto separa la fibrosi epatica congenita dalla cirrosi?"
+      en: "Which finding separates congenital hepatic fibrosis from cirrhosis?"
+    a:
+      it: "Nella fibrosi epatica congenita mancano i noduli rigenerativi."
+      en: "Congenital hepatic fibrosis has no regenerative nodules."
+    kind: short
+selfExplain:
+  - it: "Perché si pensa che l'iperplasia nodulare focale nasca da una malformazione vascolare locale?"
+    en: "Why is focal nodular hyperplasia thought to arise from a local vascular malformation?"
+  - it: "Perché l'adenoma beta-catenina attivato richiede più attenzione degli altri sottotipi?"
+    en: "Why does the beta-catenin-activated adenoma need more attention than the other subtypes?"
+chain: []
+examQuestions:
+  - it: "Mi parli dell'adenoma epatocellulare: sottotipi, aspetto macroscopico e rischi."
+    en: "Tell me about hepatocellular adenoma: subtypes, gross appearance and risks."
+    focus: [etiology, gross, micro]
+    level: 1
+  - it: "Come distingue l'iperplasia nodulare focale dall'adenoma epatocellulare e dalla cirrosi?"
+    en: "How do you tell focal nodular hyperplasia from hepatocellular adenoma and from cirrhosis?"
+    focus: [gross, micro, differential]
+    level: 3
+  - it: "Perché l'iperplasia nodulare focale non è una neoplasia, e perché l'adenoma beta-catenina attivato richiede più attenzione?"
+    en: "Why is focal nodular hyperplasia not a neoplasm, and why does the beta-catenin-activated adenoma need more attention?"
+    focus: [pathogenesis, prognosis]
+    level: 2
+images:
+  - { id: benign-liver-tumors-micro-1, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: true
+editionNote:
+  it: "La classificazione di questi tumori è cambiata tra le edizioni: i sottotipi di adenoma e le loro percentuali seguono l'ottava edizione del testo e vanno confrontati con una fonte aggiornata."
+  en: "The classification of these tumors changed between editions: the adenoma subtypes and their percentages follow the 8th edition of the reference and should be checked against a current source."
+sources:
+  - source: rubin-8e
+    chapter: "20"
+    pages: "887-889"
+lastUpdated: 2026-11-15
+status: published

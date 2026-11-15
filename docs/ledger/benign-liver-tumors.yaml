@@ -1,0 +1,522 @@
+entity: benign-liver-tumors
+claims:
+- claimId: benign-liver-tumors-c001
+  section: definition
+  statement: "Most hepatocellular adenomas, which are benign liver tumors, arise in women."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c002
+  section: definition
+  statement: "Besides adenoma, the benign group covers focal nodular hyperplasia, hemangioma, cystic lesions and rarer tumors such as angiomyolipoma."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887-889" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c003
+  section: definition
+  statement: "No liver tumor is more common than hemangioma."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "888" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c004
+  section: definition
+  statement: "Up to 7% of livers examined at autopsy contain a hemangioma."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "888" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c005
+  section: etiology
+  statement: "Adenomas were once rare; oral contraceptive use raised their frequency."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c006
+  section: etiology
+  statement: "Adenomas became less common once pills carried lower estrogen and progesterone doses."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c007
+  section: etiology
+  statement: "Men who use anabolic steroids occasionally develop adenomas."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c008
+  section: etiology
+  statement: "Focal nodular hyperplasia has no association with oral contraceptive use."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c009
+  section: etiology
+  statement: "The cause of nodular regenerative hyperplasia is unknown; it has been linked to hormonal drugs (oral contraceptives, anabolic steroids) and to several other diseases, including chronic immune disease."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "888" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c010
+  section: pathogenesis
+  statement: "Abnormal, enlarged vessels in the septa point to a local vascular malformation as the origin of FNH."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c011
+  section: pathogenesis
+  statement: "Focal nodular hyperplasia is not a neoplasm."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c012
+  section: pathogenesis
+  statement: "Mesenchymal hamartoma comes from faulty development of liver mesenchyme."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "889" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c013
+  section: pathogenesis
+  statement: "Angiomyolipoma belongs to the PEC-omas, tumors of perivascular cells that usually go with tuberous sclerosis."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "889" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c014
+  section: gross
+  statement: "A hepatocellular adenoma is usually solitary, paler than the liver around it, and ringed by a capsule."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c015
+  section: gross
+  statement: "Adenomas can measure as much as 40 cm across."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c016
+  section: gross
+  statement: "In one case in four, further smaller adenomas are present."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c017
+  section: gross
+  statement: "Hepatocellular adenomatosis is the term used when there are more than ten adenomas."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c018
+  section: gross
+  statement: "On section, fibrous bands fan out from a scar at the center of FNH."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c019
+  section: gross
+  statement: "Focal nodular hyperplasia sometimes protrudes from the liver surface and measures up to 15 cm."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c020
+  section: gross
+  statement: "Liver hemangiomas are mostly single and smaller than 5 cm."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "888" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c021
+  section: gross
+  statement: "Von Meyenburg complexes are usually multiple and tiny, none larger than 1 cm."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "888" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c022
+  section: micro
+  statement: "An adenoma lacks lobular architecture, portal tracts and central venules, although its cells resemble normal hepatocytes."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c023
+  section: micro
+  statement: "Small arteries inside the lesion are a clue for adenoma rather than normal liver."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c024
+  section: micro
+  statement: "Adenoma cytoplasm is eosinophilic, or clear and vacuolated from glycogen or fat."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c025
+  section: micro
+  statement: "HNF1A-inactivated adenomas are 35% of adenomas and show macrovesicular steatosis."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c026
+  section: micro
+  statement: "Inflammatory adenomas are 45% of adenomas and show lymphocytic infiltrate with sinusoidal dilatation."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c027
+  section: micro
+  statement: "Beta-catenin-activated adenomas are 10% of adenomas."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c028
+  section: micro
+  statement: "Unclassified adenomas are under 10% of adenomas and have no characteristic pathologic features."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c029
+  section: micro
+  statement: "FNH nodules are ringed by fibrous septa that contain inflammatory cells and many coiled bile ductules."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c030
+  section: micro
+  statement: "Blood-filled cavernous spaces make up a liver hemangioma, as in cavernous hemangioma elsewhere."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "888" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c031
+  section: micro
+  statement: "Simple liver cysts have a lining of cuboidal to columnar epithelium."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "888" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c032
+  section: micro
+  statement: "A fibrous stroma surrounds the abnormal cystic bile ducts of a von Meyenburg complex."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "888" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c033
+  section: micro
+  statement: "Portal tracts are widened and heavily scarred and crowded with well-formed bile ductules."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "888-889" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c034
+  section: ancillary
+  statement: "Two of the four adenoma subtypes are named after their molecular change: HNF1A inactivation or beta-catenin activation."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c035
+  section: clinical
+  statement: "Most liver hemangiomas are small and cause no symptoms."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "888" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c036
+  section: clinical
+  statement: "Abdominal symptoms, and even bleeding into the peritoneum, can come from larger hemangiomas."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "888" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c037
+  section: clinical
+  statement: "Bleeding into the peritoneum is a surgical emergency and affects roughly one in three adenoma patients."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c038
+  section: clinical
+  statement: "Focal nodular hyperplasia can occur in men and women of any age."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c039
+  section: clinical
+  statement: "Bleeding from focal nodular hyperplasia is rare."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c040
+  section: clinical
+  statement: "Nodular regenerative hyperplasia goes together with portal hypertension."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "888" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c041
+  section: clinical
+  statement: "Congenital hepatic fibrosis mostly affects the young; its chief problem is portal hypertension with bleeding varices."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "888-889" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c042
+  section: clinical
+  statement: "Infantile hemangioendothelioma mostly affects infants, usually girls."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "889" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c043
+  section: clinical
+  statement: "Large infantile hemangioendotheliomas can end in high-output heart failure or in liver failure."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "889" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c044
+  section: prognosis
+  statement: "Discontinuing oral contraceptives can make an adenoma disappear, even a large one."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c045
+  section: prognosis
+  statement: "The risk of malignant transformation is increased in beta-catenin-activated adenomas."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c046
+  section: prognosis
+  statement: "Nodular regenerative hyperplasia is not a tumor and not a precursor of one."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c047
+  section: prognosis
+  statement: "Infantile hemangioendothelioma commonly regresses on its own."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "889" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c048
+  section: prognosis
+  statement: "Surgical removal of the whole mesenchymal hamartoma cures it."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "889" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c049
+  section: differential
+  statement: "Adenoma is an encapsulated, pale mass of hepatocytes that look normal and lack portal tracts."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c050
+  section: differential
+  statement: "Fibrous septa and nodules give focal nodular hyperplasia a likeness to cirrhosis."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c051
+  section: differential
+  statement: "Small nodules without scarring, with cell plates two or three cells deep."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887-888" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c052
+  section: differential
+  statement: "Congenital hepatic fibrosis lacks regenerative nodules, which separates it from cirrhosis."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "888-889" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c053
+  section: differential
+  statement: "Liver hemangioma resembles the cavernous hemangiomas found in other sites."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "888" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c054
+  section: high-yield
+  statement: "Oral contraceptives are tied to adenomas, and a large adenoma may disappear when they are stopped."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c055
+  section: high-yield
+  statement: "Beta-catenin-activated adenomas carry a raised risk of malignant transformation."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c056
+  section: high-yield
+  statement: "Focal nodular hyperplasia has a central scar and is not neoplastic."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c057
+  section: high-yield
+  statement: "Hemangioma is the most frequent benign tumor of the liver."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "888" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c058
+  section: high-yield
+  statement: "Nodular regenerative hyperplasia is a nonfibrotic nodular change that is associated with portal hypertension."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887-888" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c059
+  section: traps
+  statement: "Focal nodular hyperplasia is not linked to the use of oral contraceptives."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c060
+  section: traps
+  statement: "Focal nodular hyperplasia is not a neoplasm."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c061
+  section: traps
+  statement: "Adenomas can bleed into the peritoneal cavity."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c062
+  section: traps
+  statement: "The beta-catenin-activated adenoma subtype is associated with malignant transformation risk."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c063
+  section: traps
+  statement: "Congenital hepatic fibrosis shows fibrosis but no regenerative nodules, so it is not cirrhosis."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "888-889" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c064
+  section: traps
+  statement: "Inflammatory adenomas used to be called telangiectatic focal nodular hyperplasia and are now one of the adenoma subtypes."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: benign-liver-tumors-c065
+  section: mnemonics
+  statement: "The four adenoma subtypes are HNF1A-inactivated, inflammatory, beta-catenin-activated and unclassified."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "887" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
