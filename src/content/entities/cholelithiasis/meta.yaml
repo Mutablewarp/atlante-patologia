@@ -1,0 +1,115 @@
+id: cholelithiasis
+module: o20
+tier: core
+kind: disease
+editionDependent: false
+status: published
+lastUpdated: 2026-11-15
+reviewStatus: ai-generated-unreviewed
+names:
+  it: "Calcolosi biliare"
+  en: "Cholelithiasis"
+  eponyms: []
+  synonyms:
+    it: ["Litiasi biliare", "Calcoli della colecisti"]
+    en: ["Gallstones", "Gallstone disease"]
+  abbreviations: []
+summary:
+  it: "Presenza di uno o più calcoli nel lume della colecisti o nelle vie biliari extraepatiche, di colesterolo (più frequenti nei paesi industrializzati) o pigmentari, spesso silenti ma causa di colica biliare e di complicanze da ostruzione."
+  en: "One or more stones in the gallbladder lumen or extrahepatic bile ducts, either cholesterol (commoner in industrialized countries) or pigment, often silent but a cause of biliary colic and obstructive complications."
+lenses:
+  system: [liver-biliary, gastrointestinal]
+  process: []
+  pattern: [pigment-deposits]
+  presentation: [jaundice, incidental-finding]
+  marker: []
+  group: [metabolic]
+learningObjectives:
+  - it: "Distinguere i calcoli di colesterolo da quelli pigmentari (neri e bruni) per aspetto, sede e condizioni associate."
+    en: "Distinguish cholesterol stones from pigment stones (black and brown) by appearance, site and associated conditions."
+  - it: "Elencare i fattori di rischio dei calcoli di colesterolo e spiegarne il meccanismo."
+    en: "List the risk factors for cholesterol stones and explain their mechanism."
+  - it: "Descrivere come si forma un calcolo di colesterolo: bile sovrassatura, nucleazione e stasi."
+    en: "Describe how a cholesterol stone forms: supersaturated bile, nucleation and stasis."
+  - it: "Elencare le complicanze dell'ostruzione del dotto cistico e del coledoco."
+    en: "List the complications of cystic duct and common bile duct obstruction."
+prerequisites: []
+relations:
+  - type: causes
+    target: cholecystitis
+    note:
+      it: "La maggior parte dei casi di colecistite acuta si presenta in persone con calcoli."
+      en: "Most cases of acute cholecystitis occur in people with stones."
+  - type: causes
+    target: acute-pancreatitis
+    note:
+      it: "I calcoli nel coledoco sono la causa più comune di pancreatite acuta in chi non beve alcol."
+      en: "Stones in the common duct are the most common cause of acute pancreatitis in non-drinkers."
+  - type: sharesMechanism
+    target: primary-sclerosing-cholangitis
+    note:
+      it: "L'ostruzione cronica al flusso biliare favorisce i calcoli bruni."
+      en: "Chronic obstruction of bile flow favors brown stones."
+quickCheck:
+  - id: cholelithiasis-q1
+    q:
+      it: "Quale tipo di calcolo è associato a emolisi cronica e quale a colangite batterica?"
+      en: "Which stone type goes with chronic hemolysis and which with bacterial cholangitis?"
+    a:
+      it: "L'emolisi cronica si associa ai calcoli pigmentari neri; la colangite batterica ai calcoli pigmentari bruni."
+      en: "Chronic hemolysis goes with black pigment stones; bacterial cholangitis goes with brown pigment stones."
+    kind: short
+  - id: cholelithiasis-q2
+    q:
+      it: "Perché l'estrogeno favorisce i calcoli di colesterolo?"
+      en: "Why do estrogens favor cholesterol stones?"
+    a:
+      it: "Aumentano la secrezione epatica di colesterolo e riducono quella degli acidi biliari, sovrassaturando la bile."
+      en: "They raise hepatic cholesterol secretion and lower bile acid secretion, which supersaturates the bile."
+    kind: short
+  - id: cholelithiasis-q3
+    q:
+      it: "Quali complicanze può causare un calcolo che entra nel coledoco?"
+      en: "Which complications can a stone entering the common bile duct cause?"
+    a:
+      it: "Ittero ostruttivo, colangite e pancreatite."
+      en: "Obstructive jaundice, cholangitis and pancreatitis."
+    kind: short
+selfExplain:
+  - it: "Perché la stasi nella colecisti favorisce la formazione di calcoli?"
+    en: "Why does stasis in the gallbladder favor stone formation?"
+  - it: "Perché la colangite batterica favorisce i calcoli bruni?"
+    en: "Why does bacterial cholangitis favor brown stones?"
+chain:
+  - pathology:
+      it: "Bile sovrassatura di colesterolo con stasi nella colecisti"
+      en: "Cholesterol-supersaturated bile with gallbladder stasis"
+    sign:
+      it: "Calcolo incuneato nel dotto cistico: colica biliare"
+      en: "Stone lodged in the cystic duct: biliary colic"
+    lab:
+      it: "Calcoli visibili all'ecografia"
+      en: "Stones seen on ultrasonography"
+examQuestions:
+  - it: "Come distingue i calcoli di colesterolo da quelli pigmentari, e quali condizioni si associano a ciascun tipo?"
+    en: "How do you tell cholesterol stones from pigment stones, and which conditions go with each type?"
+    focus: [definition, etiology, gross]
+    level: 3
+  - it: "Mi parli dei fattori di rischio dei calcoli di colesterolo: perché l'estrogeno e l'obesità li favoriscono?"
+    en: "Tell me about the risk factors for cholesterol stones: why do estrogen and obesity favor them?"
+    focus: [etiology, pathogenesis]
+    level: 2
+  - it: "Quali complicanze può dare la calcolosi biliare, e come si rilevano i calcoli?"
+    en: "Which complications can gallstones cause, and how are the stones detected?"
+    focus: [diagnosis, prognosis]
+    level: 1
+images:
+  - id: cholelithiasis-gross-1
+    role: gross
+    pairWith: cholelithiasis-micro-1
+  - id: cholelithiasis-micro-1
+    role: micro
+sources:
+  - source: rubin-8e
+    chapter: "20"
+    pages: "894-897"

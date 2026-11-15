@@ -1,0 +1,434 @@
+entity: cholelithiasis
+claims:
+  - claimId: cholelithiasis-c001
+    section: definition
+    statement: "The condition is defined by one or several stones present in the gallbladder or in the bile ducts outside the liver."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "894" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c002
+    section: definition
+    statement: "Cholesterol is the main constituent of about three quarters of gallstones in industrialized countries."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "894" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c003
+    section: definition
+    statement: "Every other gallstone is a pigment stone, made of calcium bilirubinate together with other calcium salts."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "894" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c004
+    section: definition
+    statement: "Gallstones frequently produce no symptoms."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "894" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c005
+    section: definition
+    statement: "Biliary colic follows when a stone gets stuck in the cystic duct or the common bile duct."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "894" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c006
+    section: definition
+    statement: "Compared with men, women before menopause have about three times the rate of cholesterol gallstones."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "894" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c007
+    section: etiology
+    statement: "Pregnancy and oral contraceptive use expose a woman to estrogen, which increases the risk of cholesterol gallstones."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "894-895" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c008
+    section: etiology
+    statement: "Obesity is a major risk factor for cholesterol gallstones."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "895" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c009
+    section: etiology
+    statement: "Familial predisposition, increasing age and certain ethnic groups such as Native Americans are associated with more biliary cholesterol secretion and so with cholesterol stones."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "895" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c010
+    section: etiology
+    statement: "Metabolic disorders with high blood cholesterol, for example diabetes, and a diet rich in calories and cholesterol are risk factors for cholesterol stones."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "895" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c011
+    section: etiology
+    statement: "Conditions such as Crohn disease that impair bile acid recycling reduce bile acids and favor stones."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "895" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c012
+    section: etiology
+    statement: "Moderate drinking goes with less biliary cholesterol and fewer stones."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "895" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c013
+    section: etiology
+    statement: "Chronic hemolysis and cirrhosis predispose to black pigment stones, although in most cases no cause is identified."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "896" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c014
+    section: etiology
+    statement: "Bacterial cholangitis, with E. coli as the chief organism, is almost always present alongside brown stones."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "896" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c015
+    section: etiology
+    statement: "Brown stones in Asia almost all occur in people infested with Ascaris lumbricoides or Clonorchis sinensis worms."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "896" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c016
+    section: etiology
+    statement: "Brown stones are rare in the West, where they accompany a catheter in the common duct after surgery or long-term mechanical obstruction of bile flow such as sclerosing cholangitis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "896" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c017
+    section: pathogenesis
+    statement: "Bile holds water-insoluble cholesterol in solution by carrying it in mixed micelles with bile acids and lecithin."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "895" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c018
+    section: pathogenesis
+    statement: "Lithogenic bile is bile oversaturated with cholesterol, from too much cholesterol or too few bile acids, and the excess forms crystals."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "895" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c019
+    section: pathogenesis
+    statement: "Gallbladder mucus hypersecretion accelerates cholesterol precipitation, and biliary proteins can serve as crystallization nuclei."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "895" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c020
+    section: pathogenesis
+    statement: "When the gallbladder squeezes poorly, bile stands still, makes sludge, and may form stones."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "895" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c021
+    section: pathogenesis
+    statement: "Estrogens may account for the female excess of cholesterol stones, since they send more cholesterol and fewer bile acids out of the liver."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "895" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c022
+    section: pathogenesis
+    statement: "Progesterone makes the gallbladder empty more slowly, and bile that lingers has more time to crystallize."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "895" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c023
+    section: pathogenesis
+    statement: "Obesity brings hyperinsulinism, and insulin drives hepatic cholesterol synthesis, which may explain why more cholesterol reaches the bile."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "895" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c024
+    section: pathogenesis
+    statement: "When hepatocytes secrete extra unconjugated bilirubin, calcium bilirubinate forms, probably on a mucin-type core."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "896" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c025
+    section: pathogenesis
+    statement: "Brown stones are promoted when bacterial enzymes such as beta-glucuronidase deconjugate bilirubin."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "896" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c026
+    section: gross
+    statement: "Cholesterol stones, single or numerous, reach 4 cm in size and are tan-yellow, round or faceted."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "894" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c027
+    section: gross
+    statement: "Black pigment stones are irregular and glassy, and each measures less than 1 cm."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "896" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c028
+    section: gross
+    statement: "Brown stones are mostly found in the bile ducts rather than the gallbladder, unlike other gallstones, and are spongy and laminated."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "896" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c029
+    section: gross
+    statement: "Hydrops or mucocele is a swollen, palpable gallbladder; it arises when cystic duct blockage replaces bile with clear mucus."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "896" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c030
+    section: clinical
+    statement: "Stones that stay in the gallbladder can go without symptoms for many years."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "896" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c031
+    section: clinical
+    statement: "Many, though not all, stones that enter the cystic duct cause severe biliary colic."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "896" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c032
+    section: diagnosis
+    statement: "Ultrasonography easily detects gallstones, although most of them are not radiopaque."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "894" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c033
+    section: diagnosis
+    statement: "The treatment of choice is laparoscopic cholecystectomy."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "896" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c034
+    section: prognosis
+    statement: "Within 15 years, fewer than 20% of people with silent stones develop biliary pain or another complication."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "896" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c035
+    section: prognosis
+    statement: "Gallstones blocking the cystic or common bile duct are behind most of the complications of cholelithiasis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "896" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c036
+    section: prognosis
+    statement: "A stone impacted in the cystic duct can trigger acute cholecystitis, and recurrences lead to the chronic form."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "896" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c037
+    section: prognosis
+    statement: "Secondary infection may develop in a gallbladder that is distended by hydrops."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "896" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c038
+    section: prognosis
+    statement: "Choledocholithiasis, a gallstone that has entered the common duct, may cause pancreatitis, cholangitis or obstructive jaundice."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "896" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c039
+    section: prognosis
+    statement: "Among non-drinkers, gallstones are the leading cause of acute pancreatitis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "896" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c040
+    section: prognosis
+    statement: "Gallstone ileus is intestinal obstruction caused by a large gallstone that has passed into the small intestine."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "896" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c041
+    section: prognosis
+    statement: "Gallstones are present in 90% of acute cholecystitis cases."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "897" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c042
+    section: differential
+    statement: "Blocked gallbladder outflow usually comes first; then the whole organ becomes inflamed (acute cholecystitis)."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "897" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c043
+    section: differential
+    statement: "Ultrasound best diagnoses chronic cholecystitis, showing stones in a shrunken gallbladder with a thickened wall."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "897" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c044
+    section: differential
+    statement: "In strawberry gallbladder, lipid-laden macrophages beneath the mucosa dot it yellow, and symptoms are rare."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "897" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c045
+    section: differential
+    statement: "Foamy macrophages, nuclei pushed aside, widen the mucosal folds in cholesterolosis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "897" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c046
+    section: high-yield
+    statement: "Industrialized countries have mostly cholesterol stones, while pigment stones are relatively more frequent in the tropics and Asia."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "894" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c047
+    section: high-yield
+    statement: "Hemolysis and cirrhosis go with black stones; bacterial cholangitis goes with brown stones, which are mainly found in the bile ducts."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "896" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c048
+    section: high-yield
+    statement: "Risk factors for cholesterol stones include female sex, estrogen exposure, obesity, increasing age and family predisposition."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "894-895" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c049
+    section: high-yield
+    statement: "Because most stones are not radiopaque, ultrasonography is the test that detects them."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "894" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c050
+    section: high-yield
+    statement: "Complications of gallstones include hydrops of the gallbladder, acute cholecystitis, choledocholithiasis, gallstone ileus and gallstone-related pancreatitis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "896" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c051
+    section: traps
+    statement: "Most gallstones are not radiopaque, so a plain film usually misses them and ultrasonography is used."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "894" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c052
+    section: traps
+    statement: "Gallstones frequently cause no symptoms and can stay silent for years."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "894, 896" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c053
+    section: traps
+    statement: "Brown stones are tied to bacterial infection of the bile ducts, whereas black stones are tied to hemolysis or cirrhosis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "896" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cholelithiasis-c054
+    section: mnemonics
+    statement: "Memory aid: black stones go with blood (hemolysis), brown stones with bugs (bacteria and helminths)."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "896" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
