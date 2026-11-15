@@ -1,0 +1,121 @@
+id: postinfectious-glomerulonephritis
+module: o22
+tier: core
+kind: disease
+names:
+  it: "Glomerulonefrite post-infettiva"
+  en: "Post-infectious glomerulonephritis"
+  eponyms: []
+  synonyms:
+    it: ["Glomerulonefrite acuta post-infettiva", "Glomerulonefrite post-streptococcica", "Glomerulonefrite proliferativa diffusa acuta"]
+    en: ["Acute postinfectious glomerulonephritis", "Post-streptococcal glomerulonephritis", "Acute diffuse proliferative glomerulonephritis"]
+  abbreviations: ["PSGN"]
+summary:
+  it: "Glomerulonefrite acuta da depositi di immunocomplessi ricchi di complemento dopo un'infezione, tipicamente streptococcica, con glomeruli ipercellulari, \"gobbe\" subepiteliali e sindrome nefritica che di solito guarisce."
+  en: "Acute glomerulonephritis from complement-rich immune complex deposits after an infection, typically streptococcal, with hypercellular glomeruli, subepithelial humps and a nephritic syndrome that usually resolves."
+lenses:
+  system: [kidney]
+  process: [acute-inflammation, hypersensitivity]
+  pattern: []
+  presentation: [hematuria, edema]
+  marker: [laboratory]
+  group: [infectious, immune]
+learningObjectives:
+  - it: "Riconoscere la glomerulonefrite post-streptococcica come causa di sindrome nefritica acuta dopo un'infezione."
+    en: "Recognize post-streptococcal glomerulonephritis as a cause of acute nephritic syndrome after an infection."
+  - it: "Descrivere i glomeruli ipercellulari e spiegare da quali cellule dipende l'ipercellularità."
+    en: "Describe the hypercellular glomeruli and explain which cells cause the hypercellularity."
+  - it: "Identificare le gobbe subepiteliali alla microscopia elettronica e i depositi granulari di C3 all'immunofluorescenza."
+    en: "Identify subepithelial humps on electron microscopy and granular C3 deposits on immunofluorescence."
+  - it: "Spiegare il calo del C3 sierico e collegarlo alla patogenesi."
+    en: "Explain the fall in serum C3 and link it to the pathogenesis."
+  - it: "Riassumere l'evoluzione: guarigione nella maggior parte dei casi, rara progressione verso l'insufficienza renale."
+    en: "Summarize the outcome: recovery in most patients, rare progression to renal failure."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: membranoproliferative-glomerulonephritis
+    note:
+      it: "Anche questa è ipercellulare, ma con ispessimento delle pareti capillari e molte cause possibili."
+      en: "Also hypercellular, but with capillary wall thickening and many possible causes."
+  - type: differentialOf
+    target: membranous-nephropathy
+    note:
+      it: "I depositi della nefropatia membranosa sono distribuiti più ampiamente delle gobbe."
+      en: "The deposits of membranous nephropathy are more widely distributed than the humps."
+quickCheck:
+  - id: postinfectious-glomerulonephritis-q1
+    q:
+      it: "Perché il C3 sierico è basso nella fase acuta?"
+      en: "Why is serum C3 low in the acute phase?"
+    a:
+      it: "Perché il complemento viene attivato in modo molto esteso dai depositi nei glomeruli e consumato."
+      en: "Because complement is activated extensively by the deposits in the glomeruli and is consumed."
+    kind: short
+  - id: postinfectious-glomerulonephritis-q2
+    q:
+      it: "Che cosa mostra la microscopia elettronica?"
+      en: "What does electron microscopy show?"
+    a:
+      it: "Gobbe subepiteliali; i depositi mesangiali e sottoendoteliali sono sempre presenti insieme alle gobbe."
+      en: "Subepithelial humps; mesangial and subendothelial deposits are always present together with the humps."
+    kind: short
+  - id: postinfectious-glomerulonephritis-q3
+    q:
+      it: "Una coltura faringea negativa esclude la diagnosi?"
+      en: "Does a negative throat culture rule out the diagnosis?"
+    a:
+      it: "No: il germe può non essere più presente, e la diagnosi può basarsi sull'aumento dei titoli anticorpali verso antigeni streptococcici."
+      en: "No: the organism may be gone, and the diagnosis can rest on rising antibody titers to streptococcal antigens."
+    kind: short
+selfExplain:
+  - it: "Perché l'attivazione del complemento produce glomeruli ipercellulari?"
+    en: "Why does complement activation produce hypercellular glomeruli?"
+  - it: "Perché i depositi mesangiali e sottoendoteliali sono forse più importanti delle gobbe nella patogenesi?"
+    en: "Why might the mesangial and subendothelial deposits matter more than the humps in pathogenesis?"
+chain:
+  - pathology:
+      it: "Glomeruli ipercellulari con depositi di immunocomplessi e complemento"
+      en: "Hypercellular glomeruli with immune complex and complement deposits"
+    sign:
+      it: "Oliguria, ematuria, edema del viso, ipertensione"
+      en: "Oliguria, hematuria, facial edema, hypertension"
+    lab:
+      it: "C3 sierico ridotto"
+      en: "Low serum C3"
+examQuestions:
+  - it: "Mi parli della glomerulonefrite post-streptococcica: quale infezione la precede e dopo quanto tempo compare?"
+    en: "Tell me about post-streptococcal glomerulonephritis: which infection precedes it, and how long after does it appear?"
+    focus: [definition, etiology, pathogenesis]
+    level: 1
+  - it: "Che cosa vede al microscopio ottico in un glomerulo nella fase acuta?"
+    en: "What do you see under the light microscope in a glomerulus in the acute phase?"
+    focus: [micro]
+    level: 1
+  - it: "Che cosa cercherebbe alla microscopia elettronica e all'immunofluorescenza?"
+    en: "What would you look for on electron microscopy and immunofluorescence?"
+    focus: [ancillary]
+    level: 2
+  - it: "Un bambino ha il viso gonfio, pressione alta, poca urina ed ematuria una o due settimane dopo un'infezione. Quale sindrome è, e quali esami sostengono la diagnosi?"
+    en: "A child has a puffy face, high blood pressure, little urine and hematuria one to two weeks after an infection. Which syndrome is this, and which tests support the diagnosis?"
+    focus: [clinical, diagnosis]
+    level: 3
+  - it: "Mi parli dell'evoluzione: quanti pazienti guariscono e che cosa può restare?"
+    en: "Tell me about the outcome: how many patients recover, and what can remain?"
+    focus: [prognosis]
+    level: 2
+  - it: "Come distingue la glomerulonefrite post-infettiva dalla nefropatia membranosa e dalla glomerulonefrite membranoproliferativa?"
+    en: "How do you tell post-infectious glomerulonephritis from membranous nephropathy and from membranoproliferative glomerulonephritis?"
+    focus: [differential]
+    level: 3
+images:
+  - id: postinfectious-glomerulonephritis-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "22"
+    pages: "938-939"
+lastUpdated: 2026-11-15
+status: published
