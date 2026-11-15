@@ -11,6 +11,7 @@ Purpose: the learner studies pathology by organ system. They open a body, pick a
 | Not used | BioRender or any proprietary illustration tool | Its licence is proprietary; the project allows only original, public-domain, CC0, CC BY and CC BY-SA assets |
 | Base body | BodyParts3D 4.0, one adult male body in one coordinate frame | Widest organ coverage under CC BY 4.0 |
 | Female organs, breast | HRA 3D reference objects (female), fitted into the base body by landmarks | BodyParts3D has none. The page says the base body is male and these organs are fitted |
+| Lung surface | HRA 3D reference object `lung-male/v1.3` (segment surfaces), fitted onto the two BodyParts3D lung concepts (airway and vessel trees) by the box centres | BodyParts3D has no lung surface (2026-11-15). The lung is drawn from the HRA male object; the trachea and main bronchi stay BodyParts3D |
 | Organs without a model | `proxy`, `schematic` or `none` in `scripts/anatomy/organ-map.yaml`; the page always says which | Honest about what the model shows (accuracy comes first) |
 | Primary interface | The server-rendered tree (system, organ, cards). The canvas mirrors its selection | Works without JavaScript, without WebGL, with a keyboard and a screen reader |
 | State | The URL hash: `#sys-<system>` or `#organ-<organ>` | Back, links and no-JavaScript jumps work with no extra code |
