@@ -1,0 +1,119 @@
+id: non-neoplastic-intestinal-polyps
+module: o19
+tier: core
+kind: disease
+names:
+  it: "Polipi intestinali non neoplastici (infiammatori, amartomatosi)"
+  en: "Non-neoplastic intestinal polyps"
+  eponyms: ["Peutz–Jeghers", "Cowden", "Cronkhite–Canada"]
+  synonyms:
+    it: ["Polipi giovanili (polipi da ritenzione)"]
+    en: ["Juvenile polyps (retention polyps)"]
+  abbreviations: ["PJS", "JPS"]
+summary:
+  it: "Gruppo di polipi intestinali senza proliferazione neoplastica (infiammatori, linfoidi, amartomatosi giovanili e di Peutz–Jeghers), alcuni dei quali sono parte di sindromi ereditarie con rischio di tumori."
+  en: "A group of intestinal polyps without neoplastic growth (inflammatory, lymphoid, and hamartomatous juvenile and Peutz–Jeghers types), some of which belong to inherited syndromes with a cancer risk."
+lenses:
+  system: [gastrointestinal]
+  process: [chronic-inflammation, cellular-adaptation]
+  pattern: [hyperplasia]
+  presentation: [mass-lesion, incidental-finding]
+  marker: [molecular]
+  group: [inflammatory, genetic, developmental]
+learningObjectives:
+  - it: "Distinguere i polipi infiammatori, linfoidi e amartomatosi e riconoscerne l'aspetto istologico."
+    en: "Tell inflammatory, lymphoid and hamartomatous polyps apart and recognize their histology."
+  - it: "Descrivere il polipo di Peutz–Jeghers (muscolatura liscia ramificata) e il polipo giovanile (ghiandole cistiche)."
+    en: "Describe the Peutz–Jeghers polyp (branching smooth muscle) and the juvenile polyp (cystic glands)."
+  - it: "Elencare i criteri diagnostici della poliposi giovanile e i geni coinvolti nelle sindromi amartomatose."
+    en: "List the diagnostic criteria of juvenile polyposis and the genes involved in the hamartomatous syndromes."
+  - it: "Collegare ogni sindrome al suo rischio di tumori, dentro e fuori il tratto gastrointestinale."
+    en: "Link each syndrome to its cancer risk, inside and outside the gastrointestinal tract."
+prerequisites: [inherited-cancer-syndromes]
+relations:
+  - type: differentialOf
+    target: serrated-colorectal-lesions
+    note:
+      it: "I polipi iperplastici e gli adenomi serrati sessili hanno profilo seghettato; solo i secondi hanno potenziale maligno."
+      en: "Hyperplastic polyps and sessile serrated adenomas have a serrated contour; only the latter have malignant potential."
+  - type: differentialOf
+    target: familial-adenomatous-polyposis
+    note:
+      it: "L'iperplasia linfoide nodulare può simulare la FAP all'imaging."
+      en: "Nodular lymphoid hyperplasia can mimic FAP on imaging."
+  - type: complicationOf
+    target: ulcerative-colitis
+    note:
+      it: "I polipi infiammatori sono frequenti nella colite ulcerosa."
+      en: "Inflammatory polyps are common in ulcerative colitis."
+  - type: complicationOf
+    target: crohn-disease
+    note:
+      it: "I polipi infiammatori sono frequenti anche nella malattia di Crohn."
+      en: "Inflammatory polyps are also common in Crohn disease."
+quickCheck:
+  - id: non-neoplastic-intestinal-polyps-q1
+    q:
+      it: "Quale reperto istologico caratterizza il polipo di Peutz–Jeghers?"
+      en: "Which histologic finding characterizes the Peutz–Jeghers polyp?"
+    a:
+      it: "Epitelio intestinale di aspetto banale sopra un asse di grossi fasci ramificati di muscolatura liscia."
+      en: "Bland small-intestinal epithelium over a core of large, branching bundles of smooth muscle."
+    kind: short
+  - id: non-neoplastic-intestinal-polyps-q2
+    q:
+      it: "Quando si può porre diagnosi di sindrome da poliposi giovanile?"
+      en: "When can juvenile polyposis syndrome be diagnosed?"
+    a:
+      it: "Con cinque o più polipi giovanili nel colon-retto, con polipi giovanili fuori dal colon, o con un numero qualsiasi di polipi più familiarità."
+      en: "With five or more juvenile polyps in the colorectum, juvenile polyps outside the colon, or any number of polyps plus a family history."
+    kind: short
+  - id: non-neoplastic-intestinal-polyps-q3
+    q:
+      it: "Un polipo giovanile sporadico comporta un aumentato rischio di tumore?"
+      en: "Does a sporadic juvenile polyp carry an increased cancer risk?"
+    a:
+      it: "No: il rischio aumentato riguarda la sindrome da poliposi giovanile, non i polipi sporadici."
+      en: "No: the increased risk belongs to juvenile polyposis syndrome, not to sporadic polyps."
+    kind: short
+selfExplain:
+  - it: "Perché un polipo infiammatorio, per definizione, non ha potenziale maligno?"
+    en: "Why does an inflammatory polyp, by definition, have no malignant potential?"
+  - it: "Perché i polipi di Cowden e di Cronkhite–Canada vengono distinti dai polipi giovanili soprattutto con il quadro clinico?"
+    en: "Why are Cowden and Cronkhite–Canada polyps told apart from juvenile polyps mainly by the clinical picture?"
+examQuestions:
+  - it: "Mi parli dei polipi infiammatori: in quali contesti compaiono e hanno potenziale maligno?"
+    en: "Tell me about inflammatory polyps: in which settings do they arise, and do they have malignant potential?"
+    focus: [etiology, pathogenesis, prognosis]
+    level: 1
+  - it: "Mi parli dei polipi linfoidi: che cosa vede al microscopio e che significato clinico hanno?"
+    en: "Tell me about lymphoid polyps: what do you see under the microscope, and what is their clinical significance?"
+    focus: [micro, clinical, prognosis]
+    level: 1
+  - it: "Che cosa vede al microscopio in un polipo di Peutz–Jeghers e in un polipo giovanile?"
+    en: "What do you see under the microscope in a Peutz–Jeghers polyp and in a juvenile polyp?"
+    focus: [micro, gross]
+    level: 2
+  - it: "Quando si può porre diagnosi di sindrome da poliposi giovanile?"
+    en: "When can juvenile polyposis syndrome be diagnosed?"
+    focus: [diagnosis, etiology]
+    level: 2
+  - it: "Come distingue un polipo giovanile sporadico dalla poliposi giovanile, e perché la differenza conta per il rischio di tumori?"
+    en: "How do you tell a sporadic juvenile polyp from juvenile polyposis, and why does the difference matter for cancer risk?"
+    focus: [prognosis, traps]
+    level: 3
+  - it: "Come distingue la sindrome di Peutz–Jeghers dalle sindromi di Cowden e di Cronkhite–Canada, per ereditarietà e rischio di tumori?"
+    en: "How do you tell Peutz–Jeghers syndrome from Cowden and Cronkhite–Canada syndromes, in terms of inheritance and cancer risk?"
+    focus: [etiology, prognosis, differential]
+    level: 3
+images:
+  - { id: non-neoplastic-intestinal-polyps-micro-1, role: micro }
+  - { id: non-neoplastic-intestinal-polyps-micro-2, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "19"
+    pages: "819-821"
+lastUpdated: 2026-11-15
+status: published

@@ -1,0 +1,110 @@
+id: ulcerative-colitis
+module: o19
+tier: core
+kind: disease
+editionDependent: false
+status: published
+lastUpdated: 2026-11-15
+reviewStatus: ai-generated-unreviewed
+names:
+  it: "Colite ulcerosa"
+  en: "Ulcerative colitis"
+  eponyms: []
+  synonyms:
+    it: ["Rettocolite ulcerosa"]
+    en: []
+  abbreviations: ["UC"]
+summary:
+  it: "Malattia infiammatoria cronica del retto e del colon che parte dal retto, si estende in modo continuo verso l'alto e resta limitata soprattutto alla mucosa."
+  en: "Chronic inflammatory disease of the rectum and colon that starts in the rectum, spreads continuously upward and stays largely within the mucosa."
+lenses:
+  system: [gastrointestinal]
+  process: [chronic-inflammation]
+  pattern: [dysplasia]
+  presentation: [anemia]
+  marker: []
+  group: [inflammatory, immune]
+learningObjectives:
+  - it: "Descrivere la distribuzione continua della colite ulcerosa a partire dal retto e la sua limitazione alla mucosa."
+    en: "Describe the continuous distribution of ulcerative colitis from the rectum and its restriction to the mucosa."
+  - it: "Riconoscere ascessi criptici, distorsione architetturale e pseudopolipi infiammatori."
+    en: "Recognize crypt abscesses, architectural distortion and inflammatory pseudopolyps."
+  - it: "Distinguere la colite ulcerosa dalla colite di Crohn con i criteri macroscopici e microscopici."
+    en: "Distinguish ulcerative colitis from Crohn colitis using gross and microscopic criteria."
+  - it: "Spiegare megacolon tossico, displasia e sorveglianza colonscopica per il rischio di cancro."
+    en: "Explain toxic megacolon, dysplasia and surveillance colonoscopy for cancer risk."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: crohn-disease
+    note:
+      it: "Malattia continua e mucosale contro malattia segmentaria e transmurale con granulomi."
+      en: "Continuous mucosal disease versus segmental transmural disease with granulomas."
+  - type: mimics
+    target: infectious-enterocolitis
+    note:
+      it: "Le infezioni batteriche e amebiche possono simulare la colite ulcerosa e vanno escluse."
+      en: "Bacterial and amebic infections can mimic ulcerative colitis and must be excluded."
+  - type: causes
+    target: colorectal-adenocarcinoma
+    note:
+      it: "La malattia di lunga durata predispone a displasia e carcinoma colorettale."
+      en: "Long-standing disease predisposes to dysplasia and colorectal carcinoma."
+quickCheck:
+  - id: ulcerative-colitis-q1
+    q:
+      it: "Quali tre caratteri riassumono la distribuzione della colite ulcerosa?"
+      en: "Which three features summarize the distribution of ulcerative colitis?"
+    a:
+      it: "Inizia dal retto, è continua senza lesioni a salto ed è limitata alla mucosa."
+      en: "It starts in the rectum, is continuous without skip lesions and is limited to the mucosa."
+    kind: short
+  - id: ulcerative-colitis-q2
+    q:
+      it: "Perché nella colite ulcerosa mancano stenosi e fistole?"
+      en: "Why are strictures and fistulas absent in ulcerative colitis?"
+    a:
+      it: "Richiedono il coinvolgimento di muscolare e sierosa, mentre la malattia resta mucosale."
+      en: "They need involvement of the muscularis and serosa, while the disease stays mucosal."
+    kind: short
+  - id: ulcerative-colitis-q3
+    q:
+      it: "Quando serve la sorveglianza colonscopica e che cosa si cerca?"
+      en: "When is surveillance colonoscopy needed and what is sought?"
+    a:
+      it: "Nei pazienti con malattia stabilita, con biopsie sistematiche per individuare la displasia; il rischio cresce con estensione e durata."
+      en: "In patients with established disease, with systematic biopsies to find dysplasia; risk grows with extent and duration."
+    kind: short
+selfExplain:
+  - it: "Perché la distorsione criptica può persistere anche quando la malattia è in remissione?"
+    en: "Why can crypt distortion persist even when the disease is in remission?"
+  - it: "Perché l'esordio al retto con estensione continua aiuta a distinguere la colite ulcerosa dalla malattia di Crohn?"
+    en: "Why does a rectum-first, continuous pattern help separate ulcerative colitis from Crohn disease?"
+examQuestions:
+  - it: "Mi parli della colite ulcerosa: dove inizia, come si estende e fino a quale strato della parete arriva?"
+    en: "Tell me about ulcerative colitis: where does it start, how does it spread and how deep into the wall does it go?"
+    focus: [definition, gross, micro]
+    level: 1
+  - it: "Che cosa vede al microscopio in una biopsia di colite ulcerosa attiva e in una di malattia di lunga durata?"
+    en: "What do you see under the microscope in a biopsy of active ulcerative colitis and in long-standing disease?"
+    focus: [micro, pathogenesis]
+    level: 1
+  - it: "Come distingue la colite ulcerosa dalla colite di Crohn?"
+    en: "How do you tell ulcerative colitis from Crohn colitis?"
+    focus: [gross, diagnosis, differential]
+    level: 3
+  - it: "Che cos'è il megacolon tossico e perché è pericoloso?"
+    en: "What is toxic megacolon and why is it dangerous?"
+    focus: [clinical, prognosis]
+    level: 2
+  - it: "Perché e come si sorvegliano i pazienti con colite ulcerosa per il rischio di cancro?"
+    en: "Why and how are patients with ulcerative colitis monitored for cancer risk?"
+    focus: [prognosis, ancillary]
+    level: 3
+images:
+  - { id: ulcerative-colitis-gross-1, role: gross, pairWith: ulcerative-colitis-micro-1 }
+  - { id: ulcerative-colitis-micro-1, role: micro }
+sources:
+  - source: rubin-8e
+    chapter: "19"
+    pages: "814-818"

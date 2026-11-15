@@ -1,0 +1,131 @@
+id: ischemic-bowel-disease
+module: o19
+tier: core
+kind: disease
+names:
+  it: "Ischemia intestinale"
+  en: "Ischemic bowel disease"
+  eponyms: []
+  synonyms:
+    it: ["Colite ischemica", "Infarto intestinale"]
+    en: ["Intestinal ischemia", "Ischemic colitis", "Intestinal infarction"]
+  abbreviations: []
+summary:
+  it: "Danno della parete intestinale da ridotto apporto di sangue, occlusivo o non occlusivo, che va dalla necrosi della mucosa all'infarto transmurale, con il colon più vulnerabile nelle zone di spartiacque."
+  en: "Damage to the bowel wall from reduced blood supply, occlusive or nonocclusive, ranging from mucosal necrosis to transmural infarction, with the colon most vulnerable at its watershed areas."
+lenses:
+  system: [gastrointestinal, vessels]
+  process: [hypoxic-ischemic-injury, necrosis, thrombosis-embolism]
+  pattern: [necrosis-coagulative, gangrene]
+  presentation: [ischemic-event]
+  marker: []
+  group: [vascular]
+learningObjectives:
+  - it: "Distinguere l'ischemia intestinale occlusiva (arteriosa o venosa) da quella non occlusiva emodinamica."
+    en: "Distinguish occlusive (arterial or venous) from nonocclusive hemodynamic intestinal ischemia."
+  - it: "Indicare le zone di spartiacque del colon e spiegare perché il retto è di solito risparmiato."
+    en: "Name the watershed areas of the colon and explain why the rectum is usually spared."
+  - it: "Descrivere l'aspetto macroscopico e microscopico dell'intestino infartuato, con la necrosi coagulativa e le cripte fantasma."
+    en: "Describe the gross and microscopic appearance of infarcted bowel, with coagulative necrosis and ghost crypts."
+  - it: "Riconoscere l'ischemia cronica (angina intestinale) e le sue complicanze, in particolare le stenosi."
+    en: "Recognize chronic ischemia (intestinal angina) and its complications, especially strictures."
+  - it: "Differenziare l'ischemia dall'angiodisplasia e dall'enterocolite da radiazioni."
+    en: "Differentiate ischemia from angiodysplasia and radiation enterocolitis."
+prerequisites: [hypoxic-ischemic-injury]
+relations:
+  - type: sharesMechanism
+    target: coagulative-necrosis
+    note:
+      it: "L'intestino infartuato mostra necrosi coagulativa dell'epitelio di superficie."
+      en: "Infarcted bowel shows coagulative necrosis of the surface epithelium."
+  - type: sharesMechanism
+    target: thrombosis
+    note:
+      it: "Trombosi o embolia di un'arteria o vena mesenterica causano ischemia."
+      en: "Thrombosis or embolism of a mesenteric artery or vein causes ischemia."
+  - type: differentialOf
+    target: infectious-enterocolitis
+    note:
+      it: "La colite ischemica può essere clinicamente indistinguibile da una colite infettiva."
+      en: "Ischemic colitis can be clinically indistinguishable from infectious colitis."
+  - type: differentialOf
+    target: ulcerative-colitis
+    note:
+      it: "La colite ischemica può essere clinicamente indistinguibile dalle malattie infiammatorie intestinali."
+      en: "Ischemic colitis can be clinically indistinguishable from inflammatory bowel disease."
+quickCheck:
+  - id: ischemic-bowel-disease-q1
+    q:
+      it: "Quali sono le due zone di spartiacque del colon e perché il retto di solito si salva?"
+      en: "Which two colonic areas are watersheds, and why is the rectum usually spared?"
+    a:
+      it: "Flessura splenica e giunzione retto-sigmoidea. Il retto ha una doppia irrorazione, splancnica e sistemica."
+      en: "The splenic flexure and the rectosigmoid. The rectum has a dual supply, splanchnic and systemic."
+    kind: short
+  - id: ischemic-bowel-disease-q2
+    q:
+      it: "Che aspetto microscopico ha la colite ischemica alla biopsia?"
+      en: "What does ischemic colitis look like on biopsy?"
+    a:
+      it: "Necrosi coagulativa dell'epitelio di superficie, con contorni fantasma delle cripte preesistenti."
+      en: "Coagulative necrosis of the surface epithelium with ghostly outlines of the pre-existing crypts."
+    kind: short
+  - id: ischemic-bowel-disease-q3
+    q:
+      it: "Che cos'è l'angina intestinale?"
+      en: "What is intestinal angina?"
+    a:
+      it: "Dolore addominale ricorrente che inizia entro circa mezz'ora dal pasto, nell'ischemia cronica da aterosclerosi mesenterica."
+      en: "Recurrent abdominal pain starting within about half an hour of a meal, in chronic ischemia from mesenteric atherosclerosis."
+    kind: short
+selfExplain:
+  - it: "Perché lo shock può causare ischemia intestinale anche con arterie mesenteriche pervie?"
+    en: "Why can shock cause intestinal ischemia even with patent mesenteric arteries?"
+  - it: "Perché i pazienti con angina intestinale hanno dolore dopo i pasti?"
+    en: "Why do patients with intestinal angina have pain after meals?"
+chain:
+  - pathology:
+      it: "Ischemia cronica da aterosclerosi delle arterie mesenteriche"
+      en: "Chronic ischemia from atherosclerosis of the mesenteric arteries"
+    sign:
+      it: "Dolore addominale che inizia entro mezz'ora dal pasto"
+      en: "Abdominal pain starting within half an hour of eating"
+    lab:
+      it: "Nessun dato di laboratorio specifico nelle pagine di riferimento"
+      en: "No specific laboratory finding in the reference pages"
+examQuestions:
+  - it: "Come distingue l'ischemia intestinale occlusiva da quella non occlusiva?"
+    en: "How do you tell occlusive from nonocclusive intestinal ischemia?"
+    focus: [etiology, pathogenesis]
+    level: 3
+  - it: "Mi parli dell'ischemia intestinale cronica: su quale lesione dei vasi poggia di solito?"
+    en: "Tell me about chronic intestinal ischemia: what vessel disease does it usually rest on?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Perché la colite ischemica non occlusiva colpisce le zone di spartiacque e di solito risparmia il retto?"
+    en: "Why does nonocclusive ischemic colitis strike the watershed areas and usually spare the rectum?"
+    focus: [pathogenesis]
+    level: 2
+  - it: "Che cosa vede al microscopio in una biopsia di colite ischemica?"
+    en: "What do you see under the microscope in a biopsy of ischemic colitis?"
+    focus: [micro, ancillary]
+    level: 1
+  - it: "Mi parli dell'ischemia cronica: perché il dolore compare dopo i pasti e quali sono le possibili complicanze?"
+    en: "Tell me about chronic ischemia: why does the pain come after meals, and what are the possible complications?"
+    focus: [clinical, pathogenesis, prognosis]
+    level: 2
+  - it: "Come distingue l'angiodisplasia e l'enterocolite da radiazioni dall'ischemia intestinale?"
+    en: "How do you tell angiodysplasia and radiation enterocolitis from ischemic bowel disease?"
+    focus: [differential]
+    level: 3
+images:
+  - { id: ischemic-bowel-disease-gross-1, role: gross, pairWith: ischemic-bowel-disease-micro-1 }
+  - { id: ischemic-bowel-disease-micro-1, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "19"
+    pages: "802-805"
+lastUpdated: 2026-11-15
+status: published

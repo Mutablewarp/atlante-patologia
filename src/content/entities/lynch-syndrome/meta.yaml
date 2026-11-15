@@ -1,0 +1,121 @@
+id: lynch-syndrome
+module: o19
+tier: extended
+kind: disease
+names:
+  it: "Sindrome di Lynch"
+  en: "Lynch syndrome"
+  eponyms: ["Lynch"]
+  synonyms:
+    it: ["Carcinoma colorettale ereditario non poliposico"]
+    en: ["Hereditary nonpolyposis colorectal cancer"]
+  abbreviations: ["LS", "HNPCC"]
+summary:
+  it: "Sindrome neoplastica ereditaria autosomica dominante da mutazione germinale di un gene del mismatch repair del DNA, con carcinomi colorettali precoci, prossimali e pochi adenomi, più tumori extracolici."
+  en: "Autosomal dominant hereditary cancer syndrome caused by a germline mutation in a DNA mismatch repair gene, with early proximal colorectal cancers, few adenomas and extracolonic tumors."
+lenses:
+  system: [gastrointestinal, female-genital]
+  process: [neoplasia]
+  pattern: [dysplasia]
+  presentation: [mass-lesion, anemia]
+  marker: [ihc, molecular]
+  group: [genetic, neoplastic]
+learningObjectives:
+  - it: "Indicare i geni del mismatch repair coinvolti e spiegare il meccanismo del secondo evento."
+    en: "Name the mismatch repair genes involved and explain the second-hit mechanism."
+  - it: "Spiegare l'instabilità dei microsatelliti e come si dimostra il deficit di mismatch repair."
+    en: "Explain microsatellite instability and how mismatch repair deficiency is shown."
+  - it: "Descrivere le caratteristiche dei tumori colorettali di Lynch: età precoce, sede prossimale, pochi adenomi, istologia."
+    en: "Describe the features of Lynch colorectal cancers: young age, proximal site, few adenomas, histology."
+  - it: "Elencare i tumori extracolici e riconoscere la sindrome di Muir–Torre."
+    en: "List the extracolonic tumors and recognize Muir–Torre syndrome."
+  - it: "Applicare i criteri di Bethesda riveduti per sospettare la sindrome."
+    en: "Apply the revised Bethesda criteria to suspect the syndrome."
+prerequisites: [oncogenes-and-tumor-suppressor-genes]
+relations:
+  - type: sharesMechanism
+    target: inherited-cancer-syndromes
+    note:
+      it: "Predisposizione ereditaria al cancro da mutazione germinale più un secondo evento somatico."
+      en: "Inherited cancer predisposition from a germline mutation plus a somatic second hit."
+  - type: differentialOf
+    target: familial-adenomatous-polyposis
+    note:
+      it: "Pochi adenomi nella sindrome di Lynch."
+      en: "Few adenomas in Lynch syndrome."
+  - type: causes
+    target: colorectal-adenocarcinoma
+    note:
+      it: "Causa ereditaria del 3-5% dei carcinomi colorettali."
+      en: "Inherited cause of 3% to 5% of colorectal cancers."
+  - type: causes
+    target: endometrial-carcinoma
+    note:
+      it: "L'endometrio è una sede extracolica."
+      en: "The endometrium is an extracolonic site."
+quickCheck:
+  - id: lynch-syndrome-q1
+    q:
+      it: "Perché una mutazione in un solo allele di un gene MMR porta al cancro?"
+      en: "Why does a mutation in one allele of an MMR gene lead to cancer?"
+    a:
+      it: "Una mutazione somatica a carico dell'allele normale elimina la riparazione, gli errori di replicazione si accumulano e i microsatelliti diventano instabili."
+      en: "A somatic mutation of the normal allele removes repair, replication errors accumulate and microsatellites become unstable."
+    kind: short
+  - id: lynch-syndrome-q2
+    q:
+      it: "Quali tre approcci mostrano il deficit di mismatch repair?"
+      en: "Which three approaches show mismatch repair deficiency?"
+    a:
+      it: "Immunocolorazione delle proteine MMR, test di instabilità dei microsatelliti e sequenziamento dei geni MMR."
+      en: "Immunostaining for MMR proteins, microsatellite instability testing and sequencing of the MMR genes."
+    kind: short
+  - id: lynch-syndrome-q3
+    q:
+      it: "Perché si parla di sindrome «non poliposica»?"
+      en: "Why is it called a \"nonpolyposis\" syndrome?"
+    a:
+      it: "Perché i pazienti hanno pochi adenomi, non perché non ne abbiano."
+      en: "Because patients have few adenomas, not because they have none."
+    kind: short
+selfExplain:
+  - it: "Perché un secondo evento somatico è necessario anche se la mutazione germinale è presente in tutte le cellule?"
+    en: "Why is a somatic second hit needed even though the germline mutation is present in every cell?"
+  - it: "Perché i criteri di Bethesda riveduti non bastano a confermare la sindrome?"
+    en: "Why are the revised Bethesda criteria not enough to confirm the syndrome?"
+  - it: "Perché la perdita dell'attività di riparazione porta all'instabilità dei microsatelliti?"
+    en: "Why does loss of repair activity lead to microsatellite instability?"
+chain:
+  - pathology:
+      it: "Mutazione MMR con instabilità dei microsatelliti"
+      en: "MMR mutation with microsatellite instability"
+    sign:
+      it: "Carcinoma colorettale prossimale in età giovane"
+      en: "Proximal colorectal cancer at a young age"
+    lab:
+      it: "Perdita di proteine MMR all'immunoistochimica, MSI positivo"
+      en: "Loss of MMR proteins on IHC, MSI positive"
+examQuestions:
+  - it: "Mi parli della sindrome di Lynch: quali geni sono coinvolti e perché compare l'instabilità dei microsatelliti?"
+    en: "Tell me about Lynch syndrome: which genes are involved, and why does microsatellite instability appear?"
+    focus: [etiology, pathogenesis]
+    level: 2
+  - it: "Dove si localizzano di solito i tumori colorettali della sindrome di Lynch e quali altri tumori possono comparire?"
+    en: "Where do Lynch syndrome colorectal tumors usually arise, and which other tumors can occur?"
+    focus: [clinical]
+    level: 1
+  - it: "Come distingue un carcinoma colorettale di Lynch da uno sporadico, e quali esami userebbe per dimostrare il deficit di mismatch repair?"
+    en: "How do you tell a Lynch colorectal cancer from a sporadic one, and which tests would you use to show mismatch repair deficiency?"
+    focus: [micro, ancillary, differential]
+    level: 3
+images:
+  - id: lynch-syndrome-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "19"
+    pages: "828"
+lastUpdated: 2026-11-15
+status: published

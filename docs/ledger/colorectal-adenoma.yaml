@@ -1,0 +1,586 @@
+entity: colorectal-adenoma
+claims:
+  - claimId: colorectal-adenoma-c001
+    section: definition
+    statement: "A colorectal adenoma is a polyp lined by dysplastic epithelium, and colon carcinoma usually arises from it."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c002
+    section: definition
+    statement: "Low-grade epithelial dysplasia is the minimum finding that qualifies a polyp as an adenoma."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c003
+    section: definition
+    statement: "The small intestine can also give rise to adenomas, which look like colonic ones but are much rarer."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c004
+    section: definition
+    statement: "Industrialized countries account for most adenomatous polyps."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c005
+    section: definition
+    statement: "About half of American adults have at least one adenoma, and incidence rises steeply from age 50."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c006
+    section: etiology
+    statement: "Among environmental factors, only a Western diet is known to track consistently with populations at high adenoma risk."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c007
+    section: etiology
+    statement: "A relative with colonic adenomas or cancer, smoking and obesity each make having adenomas more likely."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c008
+    section: etiology
+    statement: "The defect underlying FAP is a germline loss-of-function mutation of the APC gene, and the trait is autosomal dominant."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "825" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c009
+    section: etiology
+    statement: "Most FAP patients inherit the mutation, but in a share of them it arises as a new mutation."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "825" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c010
+    section: etiology
+    statement: "Biallelic MYH mutations (MYH encodes a DNA repair enzyme) cause a rare recessive polyposis that is clinically FAP-like but is a different disease."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "825" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c011
+    section: pathogenesis
+    statement: "In adenomas the crypt epithelial cells keep replicating."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c012
+    section: pathogenesis
+    statement: "Apoptosis is diminished in the neoplastic crypt epithelium."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c013
+    section: pathogenesis
+    statement: "Neoplastic cells ascending the crypt do not complete normal maturation and differentiation."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c014
+    section: pathogenesis
+    statement: "In normal mucosa shedding into the lumen comes last, after DNA synthesis has ended in the upper crypt and the cell has matured and reached the surface."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c015
+    section: pathogenesis
+    statement: "Because the normal sequence is interrupted focally, cells in an adenoma can proliferate at any depth of the crypt."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c016
+    section: pathogenesis
+    statement: "As the lesion grows, cell production outpaces shedding, so cells accumulate toward the top of the crypt and at the mucosal surface."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c017
+    section: pathogenesis
+    statement: "The APC gene product is a tumor suppressor within Wnt/beta-catenin signaling, which controls how fast colonic mucosal cells divide."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "825" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c018
+    section: pathogenesis
+    statement: "A lesion with high-grade dysplasia may go on to become an invasive adenocarcinoma."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c019
+    section: pathogenesis
+    statement: "Adenomatous polyps are the origin of most colorectal adenocarcinomas."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "825" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c020
+    section: gross
+    statement: "In the United States colonic adenomas are evenly distributed except for a rectosigmoid concentration that holds almost half of them."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c021
+    section: gross
+    statement: "Adenomas vary in size and shape: a stalked one can be small, a sessile (flat) one large, and some are barely visible nodules."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c022
+    section: gross
+    statement: "About two thirds of large-bowel adenomas are tubular, the most common type."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c023
+    section: gross
+    statement: "Small tubular adenomas may be sessile, whereas typical ones are smooth-surfaced and often stalked."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c024
+    section: gross
+    statement: "Villous adenomas, the rarest of the three architectural types, occur mainly in the rectosigmoid."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c025
+    section: gross
+    statement: "Small pedunculated villous adenomas exist, but most are large sessile masses with a ragged, cauliflower-like surface."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c026
+    section: micro
+    statement: "The share of villous architecture in the lesion decides whether an adenoma is tubular, villous or tubulovillous."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c027
+    section: micro
+    statement: "Adenoma villi are long, narrow projections resembling small-bowel villi."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c028
+    section: micro
+    statement: "A tubular adenoma consists of numerous heavily branching epithelial tubules packed together in a regular or irregular pattern."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c029
+    section: micro
+    statement: "The tubulovillous category covers polyps whose villous share lies between 25% and 75%."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c030
+    section: micro
+    statement: "In a villous adenoma neoplastic epithelium covers the outside of each finger-like villus, which is supported by a fibrovascular lamina propria core."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823-824" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c031
+    section: micro
+    statement: "In low-grade dysplasia the nuclei show little layering and are large, dark-staining and cigar-shaped."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c032
+    section: micro
+    statement: "Prominent nucleoli and increased nuclear pleomorphism mark high-grade dysplasia."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c033
+    section: micro
+    statement: "In high-grade dysplasia the glands form more intricate patterns, such as cribriform ones."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c034
+    section: micro
+    statement: "In the illustrated tubular adenoma, normal colonic epithelium covers the stalk, which is continuous with the submucosa and tumor-free."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "824" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c035
+    section: ancillary
+    statement: "Polypectomy removes the polyp, and when invasive tumor is present the resection margin at the base shows whether polypectomy alone was sufficient."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823-824" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c036
+    section: ancillary
+    statement: "Histologic assessment rests on the proportion of villous architecture and on the grade of dysplasia."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c037
+    section: ancillary
+    statement: "Three quarters of familial FAP cases carry a detectable APC mutation."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "825" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c038
+    section: clinical
+    statement: "In FAP symptoms usually start by age 36, whereas a few polyps are already present by age 10."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "825" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c039
+    section: diagnosis
+    statement: "A polyp can be called invasive adenocarcinoma only when tumor glands extend below the muscularis mucosae."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823-824" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c040
+    section: diagnosis
+    statement: "The colorectal mucosa of an FAP patient is blanketed with adenomas numbering hundreds to thousands."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "825" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c041
+    section: diagnosis
+    statement: "Tubulovillous and villous adenomas can be present in FAP too, but most are tubular."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "825" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c042
+    section: prognosis
+    statement: "The larger the adenoma, the higher the risk that it contains invasive carcinoma."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "824" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c043
+    section: prognosis
+    statement: "High-grade dysplasia in an adenoma raises the likelihood of invasive carcinoma."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "824" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c044
+    section: prognosis
+    statement: "A villous growth pattern also raises the risk of invasive carcinoma."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "824" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c045
+    section: prognosis
+    statement: "At resection, invasive cancer is found in 1% of tubular adenomas smaller than 1 cm."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "824" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c046
+    section: prognosis
+    statement: "Among tubular adenomas of 1 to 2 cm, about 10% are malignant."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "824" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c047
+    section: prognosis
+    statement: "In tubular adenomas larger than 2 cm the malignant proportion rises to about 35%."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "824" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c048
+    section: prognosis
+    statement: "At comparable size, a villous adenoma under 1 cm has ten times the cancer risk of a tubular adenoma."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "824" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c049
+    section: prognosis
+    statement: "As many as 50% of villous adenomas larger than 2 cm contain invasive carcinoma."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "824" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c050
+    section: prognosis
+    statement: "Complete polypectomy cures an adenoma whose dysplasia has not extended beyond the mucosa."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c051
+    section: prognosis
+    statement: "With a low-risk tumor and an adequate base margin, polypectomy by itself can cure an invasive cancer within a polyp."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "824" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c052
+    section: prognosis
+    statement: "Colorectal carcinoma is inevitable in FAP patients."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "825" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c053
+    section: prognosis
+    statement: "In FAP the mean age at onset of carcinoma is 40 years."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "825" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c054
+    section: prognosis
+    statement: "Removing the whole colon in FAP before any cancer appears cures the patient."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "825" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c055
+    section: prognosis
+    statement: "Some FAP patients also develop tubular adenomas in the stomach and small bowel, which carry the same malignant potential as colonic ones."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "825" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c056
+    section: differential
+    statement: "In invasive adenocarcinoma, neoplastic glands lie deeper than the muscularis mucosae."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823-824" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c057
+    section: differential
+    statement: "Some crypts of a sessile serrated adenoma have widened bases and take a boot, L or upside-down T shape."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c058
+    section: differential
+    statement: "In traditional serrated adenomas the epithelium is serrated with abundant eosinophilic cytoplasm, and the architecture is typically tubulovillous or villous."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c059
+    section: differential
+    statement: "FAP has hundreds to thousands of adenomas and is caused by a germline APC mutation."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "825" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c060
+    section: high-yield
+    statement: "Adenomatous polyps are dysplastic and are the usual precursors of colon carcinoma; most colorectal adenocarcinomas arise in them."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823, 825" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c061
+    section: high-yield
+    statement: "Tubular adenomas are the most common type."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c062
+    section: high-yield
+    statement: "At comparable size, villous adenomas carry a higher cancer risk than tubular adenomas."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "824" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c063
+    section: high-yield
+    statement: "The risk of invasive cancer in an adenoma rises with its size."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "824" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c064
+    section: high-yield
+    statement: "High-grade dysplasia alone is not invasion; neoplastic glands must lie deeper than the muscularis mucosae."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823-824" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c065
+    section: high-yield
+    statement: "Complete polypectomy is curative as long as the dysplasia has not passed beyond the mucosa."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c066
+    section: high-yield
+    statement: "FAP is due to a germline APC mutation, has hundreds to thousands of adenomas and leads inevitably to carcinoma; total colectomy before cancer is curative."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "825" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c067
+    section: high-yield
+    statement: "Western diet, smoking, obesity and family history raise the risk of having adenomas."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c068
+    section: traps
+    statement: "Tubular adenomas are the most common type and villous adenomas the least common."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c069
+    section: traps
+    statement: "A lesion counts as invasive only when neoplastic glands are found deeper than the muscularis mucosae; high-grade dysplasia alone is not invasion."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823-824" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c070
+    section: traps
+    statement: "Whether polypectomy alone suffices for invasive adenocarcinoma in a polyp depends on the tumor features and the margin: low-risk features and an adequate base margin allow it."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "824" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c071
+    section: traps
+    statement: "Almost half of colonic adenomas are in the rectosigmoid; the rest are spread over the colon."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c072
+    section: traps
+    statement: "FAP adenomas are mostly tubular."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "825" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: colorectal-adenoma-c073
+    section: mnemonics
+    statement: "Villous architecture, high-grade dysplasia and large size each raise the cancer risk of an adenoma."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "824" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15

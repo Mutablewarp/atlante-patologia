@@ -1,0 +1,99 @@
+id: microscopic-colitis
+module: o19
+tier: extended
+kind: disease
+names:
+  it: "Colite microscopica (collagenosica e linfocitaria)"
+  en: "Microscopic colitis"
+  eponyms: []
+  synonyms:
+    it: ["Colite collagenosica", "Colite linfocitaria"]
+    en: ["Collagenous colitis", "Lymphocytic colitis"]
+  abbreviations: []
+summary:
+  it: "Colite cronica con diarrea acquosa in cui il colon appare normale all'esame macroscopico e la diagnosi si basa sulla biopsia: linfocitosi intraepiteliale nella forma linfocitaria, banda di collagene sottoepiteliale ispessita in quella collagenosica."
+  en: "Chronic colitis with watery diarrhea in which the colon looks grossly normal and the diagnosis rests on biopsy: intraepithelial lymphocytosis in the lymphocytic form, a thickened subepithelial collagen band in the collagenous form."
+lenses:
+  system: [gastrointestinal]
+  process: [chronic-inflammation]
+  pattern: []
+  presentation: []
+  marker: []
+  group: [inflammatory, immune]
+learningObjectives:
+  - it: "Riconoscere la diarrea acquosa cronica con colon macroscopicamente normale come presentazione della colite microscopica."
+    en: "Recognize chronic watery diarrhea with a grossly normal colon as the presentation of microscopic colitis."
+  - it: "Distinguere al microscopio la colite linfocitaria (linfociti intraepiteliali) da quella collagenosica (banda di collagene ispessita)."
+    en: "Tell lymphocytic colitis (intraepithelial lymphocytes) from collagenous colitis (thickened collagen band) under the microscope."
+  - it: "Spiegare perché servono biopsie multiple e casuali di tutto il colon."
+    en: "Explain why multiple random biopsies of the whole colon are needed."
+  - it: "Distinguere la colite microscopica dalle malattie infiammatorie croniche intestinali in base all'architettura delle ghiandole."
+    en: "Separate microscopic colitis from inflammatory bowel disease by gland architecture."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: ulcerative-colitis
+    note:
+      it: "Colon macroscopicamente normale e ghiandole normali, a differenza della rettocolite ulcerosa."
+      en: "Grossly normal colon and normal glands, unlike ulcerative colitis."
+  - type: differentialOf
+    target: crohn-disease
+    note:
+      it: "Colon macroscopicamente normale e ghiandole normali, a differenza della malattia di Crohn."
+      en: "Grossly normal colon and normal glands, unlike Crohn disease."
+quickCheck:
+  - id: microscopic-colitis-q1
+    q:
+      it: "Perché una colonscopia normale non esclude la colite microscopica?"
+      en: "Why does a normal colonoscopy not exclude microscopic colitis?"
+    a:
+      it: "Perché il colon appare normale all'esame macroscopico e solo la valutazione microscopica delle biopsie mostra l'anomalia."
+      en: "Because the colon looks grossly normal and only microscopic evaluation of biopsies shows the abnormality."
+    kind: short
+  - id: microscopic-colitis-q2
+    q:
+      it: "Che cosa distingue la colite collagenosica da quella linfocitaria?"
+      en: "What distinguishes collagenous colitis from lymphocytic colitis?"
+    a:
+      it: "Entrambe hanno linfociti intraepiteliali aumentati, ma solo quella collagenosica ha una banda di collagene sottoepiteliale ispessita."
+      en: "Both have increased intraepithelial lymphocytes, but only collagenous colitis has a thickened subepithelial collagen band."
+    kind: short
+  - id: microscopic-colitis-q3
+    q:
+      it: "Perché si eseguono biopsie multiple di tutto il colon?"
+      en: "Why are multiple biopsies of the whole colon taken?"
+    a:
+      it: "Le alterazioni possono prevalere nel colon destro e la banda di collagene è irregolare, quindi un singolo prelievo può non bastare."
+      en: "Changes may be more pronounced in the right colon and the collagen band is irregular, so a single sample may not be enough."
+    kind: short
+selfExplain:
+  - it: "Perché la colite collagenosica può richiedere più biopsie?"
+    en: "Why can collagenous colitis require several biopsies?"
+  - it: "Perché l'architettura ghiandolare normale aiuta a distinguere la colite microscopica dalle malattie infiammatorie croniche intestinali?"
+    en: "Why does normal gland architecture help separate microscopic colitis from inflammatory bowel disease?"
+examQuestions:
+  - it: "Mi parli della colite microscopica: che cosa la caratterizza e come si presenta?"
+    en: "Tell me about microscopic colitis: what defines it and how does it present?"
+    focus: [definition, diagnosis]
+    level: 1
+  - it: "Come distingue al microscopio la colite linfocitaria da quella collagenosica?"
+    en: "How do you tell lymphocytic colitis from collagenous colitis under the microscope?"
+    focus: [micro, traps]
+    level: 3
+  - it: "Perché in un paziente con diarrea acquosa cronica e colonscopia normale si eseguono biopsie casuali di tutto il colon?"
+    en: "Why do you take random biopsies of the whole colon in a patient with chronic watery diarrhea and a normal colonoscopy?"
+    focus: [diagnosis, high-yield]
+    level: 2
+images:
+  - id: microscopic-colitis-micro-1
+    role: micro
+  - id: microscopic-colitis-micro-2
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "19"
+    pages: "818-819"
+lastUpdated: 2026-11-15
+status: published

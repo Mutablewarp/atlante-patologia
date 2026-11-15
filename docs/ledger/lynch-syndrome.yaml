@@ -1,0 +1,362 @@
+entity: lynch-syndrome
+claims:
+- claimId: lynch-syndrome-c001
+  section: definition
+  statement: "Lynch syndrome is an autosomal dominant inherited cancer syndrome, also called hereditary nonpolyposis colorectal cancer"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c002
+  section: definition
+  statement: "About 3% to 5% of all colorectal cancers arise in Lynch syndrome"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c003
+  section: etiology
+  statement: "The disease arises when one DNA mismatch repair gene carries a germline mutation"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c004
+  section: etiology
+  statement: "Most often the affected genes are MSH2 (chromosome 2p) and MLH1 (chromosome 3p)"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c005
+  section: etiology
+  statement: "Mutations of MSH6 (2p) and PMS2 (7p) are rarer"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c006
+  section: pathogenesis
+  statement: "The inherited mutation hits one allele of one MMR gene, so only one working copy remains"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c007
+  section: pathogenesis
+  statement: "Repair fails once a somatic second hit damages the remaining allele"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c008
+  section: pathogenesis
+  statement: "Once both hits have occurred, random errors in DNA copying are no longer fixed"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c009
+  section: pathogenesis
+  statement: "Microsatellites are repeated DNA stretches prone to copying errors, where unrepaired mistakes accumulate, giving microsatellite instability"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c010
+  section: pathogenesis
+  statement: "Unrepaired mutations disable other MMR genes and genes that govern growth and differentiation"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c011
+  section: micro
+  statement: "Mucin production and signet ring cells are more frequent in Lynch tumors than in sporadic ones"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c012
+  section: micro
+  statement: "A solid, medullary growth pattern is also more frequent in Lynch tumors than in sporadic ones"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c013
+  section: micro
+  statement: "Lymphocytes are abundant inside Lynch tumors, which also provoke Crohn-like lymphocytic reactions"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c014
+  section: ancillary
+  statement: "Staining the tumor for MMR proteins shows their levels"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c015
+  section: ancillary
+  statement: "MSI testing of the tumor also reveals mismatch repair deficiency"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c016
+  section: ancillary
+  statement: "Sequencing of the MMR genes can reveal mismatch repair deficiency as well"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c017
+  section: ancillary
+  statement: "Once a specific mutation is found, it serves as the target when other family members are evaluated"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c018
+  section: clinical
+  statement: "Cancer tends to present early in life in Lynch syndrome"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c019
+  section: clinical
+  statement: "Adenomas are few in Lynch syndrome, which gives the term nonpolyposis"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c020
+  section: clinical
+  statement: "Proximal to the splenic flexure is where about 70% of Lynch syndrome colorectal tumors arise"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c021
+  section: clinical
+  statement: "Iron-deficiency anemia can be the first sign of a right-sided colorectal tumor, which may bleed silently without obstructing the bowel"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c022
+  section: clinical
+  statement: "Endometrial and ovarian cancers are among the extracolonic tumors of Lynch syndrome"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c023
+  section: clinical
+  statement: "Gastrointestinal tumors outside the colon, and pancreatobiliary tumors, also occur in Lynch syndrome"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c024
+  section: clinical
+  statement: "The urinary tract and CNS can also be involved in Lynch syndrome"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c025
+  section: clinical
+  statement: "Muir-Torre syndrome is Lynch syndrome presenting with benign or malignant sebaceous skin tumors"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c026
+  section: diagnosis
+  statement: "Revised Bethesda guideline criterion: colorectal cancer diagnosed before age 50"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c027
+  section: diagnosis
+  statement: "Revised Bethesda guideline criterion: two or more tumors in one person, whether colorectal cancers or other Lynch-related tumors"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c028
+  section: diagnosis
+  statement: "Revised Bethesda guideline criterion: high-MSI morphology in a colorectal cancer found before age 60"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c029
+  section: diagnosis
+  statement: "Revised Bethesda criterion: colorectal cancer plus an affected first-degree relative (colorectal or other Lynch-related tumor), with a cancer before 50 or an adenoma before 40"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c030
+  section: diagnosis
+  statement: "Revised Bethesda criterion: colorectal cancer in a family with two or more relatives affected by colorectal or other Lynch-related tumors, at any age"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c031
+  section: prognosis
+  statement: "Patients may develop several colorectal cancers, either together or one after another"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c032
+  section: differential
+  statement: "Abundant tumor lymphocytes and a mucinous or medullary pattern favor Lynch syndrome over a sporadic cancer"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c033
+  section: differential
+  statement: "Adenomas are few in Lynch syndrome, hence the label nonpolyposis"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c034
+  section: high-yield
+  statement: "Lynch syndrome is caused by a germline mutation in an MMR gene, usually MSH2 or MLH1"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c035
+  section: high-yield
+  statement: "Unrepaired replication errors in microsatellites produce microsatellite instability"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c036
+  section: high-yield
+  statement: "Lynch syndrome patients present at a young age with few adenomas"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c037
+  section: high-yield
+  statement: "About 70% of Lynch syndrome tumors are proximal to the splenic flexure"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c038
+  section: high-yield
+  statement: "Endometrium and ovary are among the extracolonic cancer sites"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c039
+  section: high-yield
+  statement: "Lynch syndrome with sebaceous skin tumors is Muir-Torre syndrome"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c040
+  section: high-yield
+  statement: "MMR immunostaining measures MMR protein levels in the tumor, one way to detect deficiency"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c041
+  section: traps
+  statement: "Lynch syndrome patients have few adenomas, not none"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c042
+  section: traps
+  statement: "Lynch syndrome also causes extracolonic cancers"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c043
+  section: traps
+  statement: "The Bethesda criteria only raise the possibility of Lynch syndrome"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c044
+  section: traps
+  statement: "The first hit is a germline MMR mutation and the second a somatic mutation in the other allele"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: lynch-syndrome-c045
+  section: mnemonics
+  statement: "Lynch tumors have many lymphocytes, patients are young with few adenomas, tumors are proximal, and a germline MMR mutation is inherited"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15

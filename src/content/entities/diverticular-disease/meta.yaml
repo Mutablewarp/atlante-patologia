@@ -1,0 +1,103 @@
+id: diverticular-disease
+module: o19
+tier: core
+kind: disease
+names:
+  it: "Malattia diverticolare"
+  en: "Diverticular disease"
+  eponyms: []
+  synonyms:
+    it: ["Diverticolosi e diverticolite"]
+    en: ["Diverticulosis and diverticulitis"]
+  abbreviations: []
+summary:
+  it: "Condizione del colon, soprattutto sigma, in cui mucosa e sottomucosa erniano attraverso la parete muscolare formando pseudodiverticoli (diverticolosi), che possono infiammarsi, perforarsi, dare ascessi, fistole o sanguinamento."
+  en: "Condition of the colon, mainly the sigmoid, in which mucosa and submucosa herniate through the muscular wall to form pseudodiverticula (diverticulosis), which can become inflamed, perforate, form abscesses or fistulas, or bleed."
+lenses:
+  system: [gastrointestinal]
+  process: [acute-inflammation, chronic-inflammation]
+  pattern: []
+  presentation: [fever, anemia, incidental-finding]
+  marker: []
+  group: [degenerative, inflammatory]
+learningObjectives:
+  - it: "Spiegare perché i diverticoli del colon sono pseudodiverticoli e non diverticoli veri."
+    en: "Explain why colonic diverticula are pseudodiverticula and not true diverticula."
+  - it: "Collegare dieta povera di fibre, aumento di pressione intraluminale e punti deboli della parete alla formazione dei diverticoli."
+    en: "Link a low-fiber diet, raised intraluminal pressure and weak points of the wall to diverticulum formation."
+  - it: "Elencare le complicanze della diverticolite: ascesso, perforazione, fistola, ostruzione."
+    en: "List the complications of diverticulitis: abscess, perforation, fistula, obstruction."
+  - it: "Distinguere il sanguinamento diverticolare, improvviso e indolore, dalla diverticolite con dolore e febbre."
+    en: "Distinguish diverticular bleeding, sudden and painless, from diverticulitis with pain and fever."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: crohn-disease
+    note:
+      it: "Nella malattia di Crohn l'infiammazione è transmurale e discontinua."
+      en: "In Crohn disease the inflammation is transmural and discontinuous."
+quickCheck:
+  - id: diverticular-disease-q1
+    q:
+      it: "Perché i diverticoli del colon sono detti pseudodiverticoli?"
+      en: "Why are colonic diverticula called pseudodiverticula?"
+    a:
+      it: "Perché erniano solo mucosa e sottomucosa attraverso la muscolare, mentre un diverticolo vero comprende tutti gli strati della parete."
+      en: "Because only mucosa and submucosa herniate through the muscle, whereas a true diverticulum contains all layers of the wall."
+    kind: short
+  - id: diverticular-disease-q2
+    q:
+      it: "Quali complicanze può dare la diverticolite?"
+      en: "Which complications can diverticulitis cause?"
+    a:
+      it: "Perforazione con ascesso, peritonite generalizzata (poco frequente), ostruzione da fibrosi e fistole verso strutture vicine, come vescica o vagina."
+      en: "Perforation with abscess, generalized peritonitis (infrequent), obstruction from fibrosis, and fistulas to neighboring structures such as the bladder or vagina."
+    kind: short
+  - id: diverticular-disease-q3
+    q:
+      it: "Come si presenta il sanguinamento da diverticoli?"
+      en: "How does bleeding from diverticula present?"
+    a:
+      it: "In modo improvviso, indolore e abbondante, soprattutto nell'anziano."
+      en: "Suddenly, painlessly and heavily, mainly in the elderly."
+    kind: short
+selfExplain:
+  - it: "Perché una dieta povera di residui può portare a erniazione della mucosa attraverso la parete del colon?"
+    en: "Why can a low-residue diet lead to herniation of mucosa through the colon wall?"
+  - it: "Perché i punti di penetrazione dei vasi sono i siti deboli della parete?"
+    en: "Why are the sites where vessels penetrate the weak points of the wall?"
+examQuestions:
+  - it: "Mi parli dei diverticoli del sigma: perché sono pseudodiverticoli?"
+    en: "Tell me about sigmoid diverticula: why are they pseudodiverticula?"
+    focus: [gross, micro]
+    level: 1
+  - it: "Quali complicanze può dare la diverticolite?"
+    en: "Which complications can diverticulitis cause?"
+    focus: [prognosis]
+    level: 1
+  - it: "Perché una dieta povera di fibre e l'età favoriscono la formazione dei diverticoli?"
+    en: "Why do a low-fiber diet and age favor the formation of diverticula?"
+    focus: [etiology, pathogenesis]
+    level: 2
+  - it: "Come distingue clinicamente il sanguinamento diverticolare da una diverticolite acuta?"
+    en: "How do you tell diverticular bleeding from acute diverticulitis clinically?"
+    focus: [clinical, diagnosis]
+    level: 3
+  - it: "Come distingue la malattia diverticolare dalla malattia di Crohn?"
+    en: "How do you tell diverticular disease from Crohn disease?"
+    focus: [differential]
+    level: 3
+images:
+  - id: diverticular-disease-gross-1
+    role: gross
+    pairWith: diverticular-disease-micro-1
+  - id: diverticular-disease-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "19"
+    pages: "809-811"
+lastUpdated: 2026-11-15
+status: published

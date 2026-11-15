@@ -1,0 +1,105 @@
+id: malabsorption-syndromes
+module: o19
+tier: core
+kind: concept
+names:
+  it: "Sindromi da malassorbimento"
+  en: "Malabsorption syndromes"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: []
+summary:
+  it: "Gruppo di condizioni in cui l'intestino assorbe in modo inadeguato nutrienti importanti, per difetti della fase luminale o della fase intestinale."
+  en: "A group of conditions in which the gut absorbs important nutrients inadequately, through defects of the luminal phase or the intestinal phase."
+lenses:
+  system: [gastrointestinal]
+  process: [chronic-inflammation]
+  pattern: [atrophy]
+  presentation: [anemia, edema]
+  marker: [pas, laboratory]
+  group: [nutritional, immune, infectious]
+learningObjectives:
+  - it: "Distinguere i difetti della fase luminale da quelli della fase intestinale che causano malassorbimento."
+    en: "Distinguish the defects of the luminal phase from those of the intestinal phase that cause malabsorption."
+  - it: "Descrivere il quadro istologico della biopsia duodenale nella celiachia, nella sprue tropicale e nell'enteropatia autoimmune."
+    en: "Describe the biopsy picture of celiac disease, tropical sprue and autoimmune enteropathy."
+  - it: "Riconoscere la malattia di Whipple dai macrofagi schiumosi PAS-positivi."
+    en: "Recognize Whipple disease from PAS-positive foamy macrophages."
+  - it: "Scegliere il test appropriato: grassi fecali, D-xilosio, breath test, sierologia."
+    en: "Choose the appropriate test: fecal fat, D-xylose, breath test, serology."
+prerequisites: []
+relations:
+  - type: prerequisiteOf
+    target: celiac-disease
+    note:
+      it: "La celiachia è una causa mucosale di malassorbimento."
+      en: "Celiac disease is a mucosal cause of malabsorption."
+quickCheck:
+  - id: malabsorption-syndromes-q1
+    q:
+      it: "In quali due fasi può fallire l'assorbimento?"
+      en: "In which two phases can absorption fail?"
+    a:
+      it: "Nella fase luminale, cioè nel lume, e nella fase intestinale, cioè nelle cellule della mucosa."
+      en: "In the luminal phase, inside the lumen, and in the intestinal phase, inside the mucosal cells."
+    kind: short
+  - id: malabsorption-syndromes-q2
+    q:
+      it: "Quale reperto istologico e quale colorazione indicano la malattia di Whipple?"
+      en: "Which histologic finding and which stain point to Whipple disease?"
+    a:
+      it: "Macrofagi schiumosi nei villi, fortemente PAS-positivi."
+      en: "Foamy macrophages in the villi, strongly PAS positive."
+    kind: short
+  - id: malabsorption-syndromes-q3
+    q:
+      it: "Perché la dieta senza glutine non aiuta nell'enteropatia autoimmune?"
+      en: "Why does a gluten-free diet not help in autoimmune enteropathy?"
+    a:
+      it: "Il danno è immunomediato contro l'epitelio, non innescato dal glutine: servono immunosoppressori."
+      en: "The injury is immune-mediated against the epithelium, not triggered by gluten: immunosuppressants are needed."
+    kind: short
+selfExplain:
+  - it: "Perché la malattia di Whipple causa malassorbimento pur colpendo macrofagi e non gli enterociti?"
+    en: "Why does Whipple disease cause malabsorption although it affects macrophages rather than enterocytes?"
+  - it: "Perché la mancanza di disaccaridasi del bordo a spazzola lascia gli zuccheri della dieta non assorbiti?"
+    en: "Why does a lack of brush-border disaccharidases leave dietary sugars unabsorbed?"
+chain: []
+examQuestions:
+  - it: "Mi parli delle sindromi da malassorbimento: quali sono le cause della fase luminale e della fase intestinale?"
+    en: "Tell me about malabsorption syndromes: what are the causes in the luminal phase and in the intestinal phase?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Che cosa vede al microscopio in una biopsia duodenale con celiachia grave?"
+    en: "What do you see under the microscope in a duodenal biopsy of severe celiac disease?"
+    focus: [micro]
+    level: 1
+  - it: "Perché nella celiachia i villi si accorciano mentre le cripte si approfondiscono?"
+    en: "Why do the villi shrink while the crypts deepen in celiac disease?"
+    focus: [micro]
+    level: 2
+  - it: "Perché la malattia di Whipple causa malassorbimento? Quale colorazione userebbe per riconoscerla?"
+    en: "Why does Whipple disease cause malabsorption? Which stain would you use to recognize it?"
+    focus: [pathogenesis, micro, ancillary]
+    level: 2
+  - it: "Come distingue la sprue tropicale dalla celiachia in una biopsia del tenue?"
+    en: "How do you tell tropical sprue from celiac disease on a small-bowel biopsy?"
+    focus: [micro, differential]
+    level: 3
+  - it: "Un paziente con atrofia dei villi non migliora con la dieta senza glutine: come ragiona tra enteropatia autoimmune e altre cause, e quali esami userebbe?"
+    en: "A patient with villous atrophy does not improve on a gluten-free diet: how do you reason between autoimmune enteropathy and other causes, and which tests would you use?"
+    focus: [prognosis, differential, diagnosis]
+    level: 3
+images:
+  - { id: malabsorption-syndromes-micro-1, role: micro }
+  - { id: malabsorption-syndromes-micro-2, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "19"
+    pages: "798-801"
+lastUpdated: 2026-11-15
+status: published

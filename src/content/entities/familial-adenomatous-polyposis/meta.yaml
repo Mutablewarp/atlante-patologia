@@ -1,0 +1,126 @@
+id: familial-adenomatous-polyposis
+module: o19
+tier: core
+kind: disease
+names:
+  it: "Poliposi adenomatosa familiare"
+  en: "Familial adenomatous polyposis"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: ["FAP"]
+summary:
+  it: "Sindrome ereditaria autosomica dominante da mutazione germinale di APC, con centinaia o migliaia di adenomi nel colon-retto e carcinoma colorettale inevitabile se non si interviene."
+  en: "Autosomal dominant inherited syndrome from a germline APC mutation, with hundreds to thousands of colorectal adenomas and inevitable colorectal cancer if untreated."
+lenses:
+  system: [gastrointestinal]
+  process: [neoplasia]
+  pattern: [dysplasia]
+  presentation: []
+  marker: [molecular]
+  group: [genetic, neoplastic]
+learningObjectives:
+  - it: "Descrivere la base genetica della poliposi adenomatosa familiare e il ruolo di APC nella via Wnt/β-catenina."
+    en: "Describe the genetic basis of familial adenomatous polyposis and the role of APC in the Wnt/β-catenin pathway."
+  - it: "Riconoscere l'aspetto macroscopico e microscopico dei polipi adenomatosi della malattia."
+    en: "Recognize the gross and microscopic appearance of the adenomatous polyps of the disease."
+  - it: "Distinguere le varianti: forma attenuata, sindrome di Gardner, sindrome di Turcot e poliposi associata a MYH."
+    en: "Distinguish the variants: attenuated FAP, Gardner syndrome, Turcot syndrome and MYH-associated polyposis."
+  - it: "Spiegare perché la colectomia profilattica è la terapia curativa."
+    en: "Explain why prophylactic colectomy is the curative treatment."
+prerequisites: [oncogenes-and-tumor-suppressor-genes]
+relations:
+  - type: causes
+    target: colorectal-adenocarcinoma
+    note:
+      it: "Il carcinoma colorettale è inevitabile nei pazienti non trattati."
+      en: "Colorectal carcinoma is inevitable in untreated patients."
+  - type: sharesMechanism
+    target: inherited-cancer-syndromes
+    note:
+      it: "Sindrome di predisposizione ereditaria al cancro."
+      en: "An inherited cancer predisposition syndrome."
+  - type: differentialOf
+    target: colorectal-adenoma
+    note:
+      it: "Centinaia o migliaia di adenomi contro adenomi isolati."
+      en: "Hundreds to thousands of adenomas versus isolated adenomas."
+quickCheck:
+  - id: familial-adenomatous-polyposis-q1
+    q:
+      it: "Quale gene è mutato nella poliposi adenomatosa familiare e in quale via di segnale agisce?"
+      en: "Which gene is mutated in familial adenomatous polyposis, and in which signaling pathway does it act?"
+    a:
+      it: "APC, un gene oncosoppressore sul cromosoma 5q21-22, che partecipa alla via Wnt/β-catenina."
+      en: "APC, a tumor suppressor gene at 5q21-22 that takes part in the Wnt/β-catenin pathway."
+    kind: short
+  - id: familial-adenomatous-polyposis-q2
+    q:
+      it: "Qual è la differenza tra FAP classica e FAP attenuata?"
+      en: "How does attenuated FAP differ from classic FAP?"
+    a:
+      it: "Nella forma attenuata gli adenomi sono meno di 100 e il cancro compare in media circa 15 anni dopo."
+      en: "Attenuated FAP has fewer than 100 adenomas, and cancer appears on average about 15 years later."
+    kind: short
+  - id: familial-adenomatous-polyposis-q3
+    q:
+      it: "Quale intervento è curativo se eseguito prima della comparsa del cancro?"
+      en: "Which intervention is curative if done before cancer appears?"
+    a:
+      it: "La colectomia totale."
+      en: "Total colectomy."
+    kind: short
+  - id: familial-adenomatous-polyposis-q4
+    q:
+      it: "Quali lesioni extracoloniche caratterizzano la sindrome di Gardner?"
+      en: "Which extracolonic lesions characterize Gardner syndrome?"
+    a:
+      it: "Osteomi, tumori desmoidi e cisti epidermoidi."
+      en: "Osteomas, desmoid tumors and epidermoid cysts."
+    kind: short
+  - id: familial-adenomatous-polyposis-q5
+    q:
+      it: "Come si trasmette la poliposi associata a MYH, e in che cosa differisce dalla FAP da APC?"
+      en: "How is MYH-associated polyposis inherited, and how does it differ from APC-related FAP?"
+    a:
+      it: "Si trasmette in modo recessivo, con mutazione di entrambi gli alleli di MYH, e ha un quadro clinico che si sovrappone alla FAP."
+      en: "It is inherited recessively, with both MYH alleles mutated, and its clinical picture overlaps with FAP."
+    kind: short
+selfExplain:
+  - it: "In che modo APC, attraverso la via Wnt/β-catenina, influenza le cellule della mucosa del colon?"
+    en: "How does APC, through the Wnt/β-catenin pathway, influence the cells of the colonic mucosa?"
+  - it: "Perché la colectomia totale deve essere eseguita prima della comparsa del cancro per essere curativa?"
+    en: "Why must total colectomy be done before cancer appears to be curative?"
+examQuestions:
+  - it: "Mi parli della poliposi adenomatosa familiare: quale gene è coinvolto e come si trasmette?"
+    en: "Tell me about familial adenomatous polyposis: which gene is involved and how is it inherited?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Che cosa vede nel colon, a occhio nudo e al microscopio, in un paziente con poliposi adenomatosa familiare?"
+    en: "What do you see in the colon of a patient with familial adenomatous polyposis, grossly and under the microscope?"
+    focus: [gross, micro]
+    level: 1
+  - it: "Come distingue la sindrome di Gardner, la sindrome di Turcot e la forma attenuata della poliposi adenomatosa familiare?"
+    en: "How do you tell Gardner syndrome, Turcot syndrome and attenuated familial adenomatous polyposis apart?"
+    focus: [clinical, differential]
+    level: 3
+  - it: "Perché in questi pazienti si propone la colectomia totale profilattica?"
+    en: "Why is prophylactic total colectomy proposed for these patients?"
+    focus: [prognosis, definition]
+    level: 2
+  - it: "Come distingue la poliposi adenomatosa familiare da APC dalla poliposi associata a MYH?"
+    en: "How do you tell APC-related familial adenomatous polyposis from MYH-associated polyposis?"
+    focus: [etiology, differential]
+    level: 3
+images:
+  - { id: familial-adenomatous-polyposis-gross-1, role: gross, pairWith: familial-adenomatous-polyposis-micro-1 }
+  - { id: familial-adenomatous-polyposis-micro-1, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "19"
+    pages: "825"
+lastUpdated: 2026-11-15
+status: published
