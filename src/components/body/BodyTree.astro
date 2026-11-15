@@ -34,7 +34,7 @@ const list = new Intl.ListFormat(lang, { style: 'long', type: 'conjunction' });
 function note(organId: string): string {
   const entry = map.get(organId);
   if (!entry) return '';
-  if (entry.kind === 'hra') return t('noteHra');
+  if (entry.kind === 'hra') return t(entry.male ? 'noteHraMale' : 'noteHra');
   if (entry.kind === 'schematic') return t('noteSchematic');
   if (entry.kind === 'none') return t('noteNone');
   if (entry.kind === 'proxy') return fmt(t('noteProxy'), { organs: list.format(entry.of.map((id) => organLabels.get(id) ?? id)) });

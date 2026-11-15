@@ -56,8 +56,8 @@ export const tBody = defineStrings({
   organ: { it: '{organ}: {n}', en: '{organ}: {n}' },
   system: { it: 'Apparato: {system}', en: 'System: {system}' },
   creditHra: {
-    it: 'Organi femminili: HRA 3D Reference Object Library v2.5, CC BY 4.0, adattati al corpo di base e semplificati da questo progetto.',
-    en: 'Female organs: HRA 3D Reference Object Library v2.5, CC BY 4.0, fitted into the base body and simplified by this project.',
+    it: 'Polmoni e organi femminili: HRA 3D Reference Object Library v2.5, CC BY 4.0, adattati al corpo di base e semplificati da questo progetto.',
+    en: 'Lungs and female organs: HRA 3D Reference Object Library v2.5, CC BY 4.0, fitted into the base body and simplified by this project.',
   },
   creditChanges: {
     it: 'Modifiche: uniti, semplificati, ricolorati, spostati e ridimensionati.',
@@ -69,6 +69,10 @@ export const tBody = defineStrings({
   noteHra: {
     it: 'Modello adattato da un riferimento femminile; il corpo di base è maschile.',
     en: 'Fitted from a female reference model; the base body is male.',
+  },
+  noteHraMale: {
+    it: 'Superficie da un modello di riferimento maschile (HRA), adattata al corpo di base.',
+    en: 'Surface from a male reference model (HRA), fitted into the base body.',
   },
   noteProxy: { it: 'Nessun modello proprio: mostrato su {organs}.', en: 'No model of its own: shown on {organs}.' },
   noteSchematic: { it: 'Forma schematica, non una scansione.', en: 'Schematic shape, not a scan.' },

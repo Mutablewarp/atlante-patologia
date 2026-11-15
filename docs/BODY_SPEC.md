@@ -11,6 +11,7 @@ Purpose: the learner studies pathology by organ system. They open a body, pick a
 | Not used | BioRender or any proprietary illustration tool | Its licence is proprietary; the project allows only original, public-domain, CC0, CC BY and CC BY-SA assets |
 | Base body | BodyParts3D 4.0, one adult male body in one coordinate frame | Widest organ coverage under CC BY 4.0 |
 | Female organs, breast | HRA 3D reference objects (female), fitted into the base body by landmarks | BodyParts3D has none. The page says the base body is male and these organs are fitted |
+| Lung surface | HRA 3D reference object `lung-male/v1.3` (segment surfaces), fitted onto the two BodyParts3D lung concepts (airway and vessel trees) by the box centres | BodyParts3D has no lung surface (2026-11-15). The lung is drawn from the HRA male object; the trachea and main bronchi stay BodyParts3D |
 | Organs without a model | `proxy`, `schematic` or `none` in `scripts/anatomy/organ-map.yaml`; the page always says which | Honest about what the model shows (accuracy comes first) |
 | Primary interface | The server-rendered tree (system, organ, cards). The canvas mirrors its selection | Works without JavaScript, without WebGL, with a keyboard and a screen reader |
 | State | The URL hash: `#sys-<system>` or `#organ-<organ>` | Back, links and no-JavaScript jumps work with no extra code |
@@ -117,7 +118,7 @@ export function mount(canvas: HTMLCanvasElement, opts: { manifestUrl: string; re
 - Shell: translucent, brightest at the silhouette (Fresnel term) in `--ink` at low alpha, so the body reads as a drawn outline with the organs inside.
 - Organs: Lambert shading, one hemisphere light and one key light. Colours are read from the CSS tokens at start and again when the theme changes.
   - organs of the selected system: `--eosin`; the selected organ: `--hema`, with a thin `--ink` outline (back-face hull);
-  - organs of other systems: ghost (alpha about 0.12, no depth write); with no system selected, every organ in a soft eosin tint, **except `skeletal-muscle` and `bones`, which stay ghosts until their own system is selected**: drawn solid they hide every other organ (seen in the B-3d look pass);
+  - organs of other systems: ghost (alpha about 0.12, no depth write); with no system selected, every organ in a soft eosin tint, **except `skeletal-muscle` and `bones`, which stay ghosts until their own system is selected**: drawn solid they hide every other organ (seen in the B-3d look pass); the `breast` and the fitted female organs (`uterus`, `uterine-cervix`, `fallopian-tube`, `ovary`) are ghosts there too, because the base body is male (decided 2026-11-15, answering the owner question about the mixed whole-body view);
   - an organ with no published card is lighter (mixed towards `--surface-2`) and stays selectable.
 - Label: the selected organ's name in `--font-display` with a leader line, as HTML over the canvas (crisp text, selectable, translated).
 - Controls use the existing button and `.segmented` styles (`src/styles/viewer.css`, `entity.css`). Touch targets ≥ 44 px. Focus ring `--focus`.
@@ -148,7 +149,7 @@ A female base body, per-organ sub-parts (lobes, segments), lesion markers inside
 
 ## 11. Measured facts (B-0, 2026-11-13)
 
-Raw data is in `.work/anatomy/raw/` (not committed). Measured with `scripts/anatomy/lib.mjs`, `scripts/anatomy/spike.mjs` and `scripts/anatomy/spike-viewer/`, and by reading the files.
+Raw data is in `.work/anatomy/raw/` (not committed). Measured with `scripts/anatomy/lib.mjs`, `scripts/anatomy/spike.mjs` and a throwaway viewer (`scripts/anatomy/spike-viewer/`, removed in B-8: see the git history of the branch), and by reading the files.
 
 | Fact | Value | How measured |
 |---|---|---|

@@ -49,3 +49,17 @@ describe('loadBodyMap on the real map', () => {
     }
   });
 });
+
+describe('loadBodyMap: the sex of an HRA reference object', () => {
+  const text = `organs:
+  lung: { kind: hra, objects: [lung-male/v1.3], fit: lungs }
+  ovary: { kind: hra, objects: [ovary-female-left/v1.3, ovary-female-right/v1.3], fit: pelvis }
+  heart: { kind: mesh, concepts: [heart] }
+`;
+  it('marks an organ whose objects are all male, and nothing else', () => {
+    const map = loadBodyMap(rootWith(text));
+    expect(map.get('lung')?.male).toBe(true);
+    expect(map.get('ovary')?.male).toBeUndefined();
+    expect(map.get('heart')?.male).toBeUndefined();
+  });
+});

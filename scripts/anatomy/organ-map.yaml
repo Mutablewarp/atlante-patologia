@@ -23,6 +23,9 @@ fits:
   # 0.4 mm in front of the bladder centre (spec section 9: behind it). Found by the placement test on the real build.
   pelvis: { hra: [pelvis-female/v1.3], bp3d: [bony pelvis], anchor: front, offset: [0, 0, -0.012] }
   thorax: { hra: [sternum-female/v1.0, manubrium-female/v1.0], bp3d: [sternum] }
+  # The male lung object (surfaces of the bronchopulmonary segments) onto the two lung concepts of BodyParts3D, which are airway and
+  # vessel trees that reach the lung periphery: the boxes of both are close, and the centres give the placement.
+  lungs: { hra: [lung-male/v1.3], bp3d: [right lung, left lung], anchor: centre }
 
 organs:
   # vessels
@@ -34,7 +37,9 @@ organs:
   heart-valves: { kind: mesh, concepts: [tricuspid valve, mitral valve, aortic valve, pulmonary valve], inside: heart } # 3 + 4 + 3 + 3
   # respiratory
   trachea-bronchi: { kind: mesh, concepts: [trachea, right main bronchus, left main bronchus] }
-  lung: { kind: mesh, concepts: [right lung, left lung] } # 156 + 124
+  # BodyParts3D has no lung surface (its two lung concepts are airway and vessel trees): the surface is the HRA male lung object,
+  # CC BY 4.0, fitted onto the body. The airway trees stay with `trachea-bronchi`.
+  lung: { kind: hra, objects: [lung-male/v1.3], nodes: [VH_M_left_lingula_superior_bronchopulmonary_segment, VH_M_left_posterior_bronchopulmonary_segment, VH_M_left_anterior_bronchopulmonary_segment, VH_M_left_apical_bronchopulmonary_segment, VH_M_left_lingula_inferior_bronchopulmonary_segment, VH_M_left_anterior_basal_bronchopulmonary_segment, VH_M_left_lateral_basal_bronchopulmonary_segment, VH_M_left_medial_basal_bronchopulmonary_segment, VH_M_left_posetrior_basal_bronchopulmonary_segment, VH_M_left_superior_bronchopulmonary_segment, VH_M_right_lateral_bronchopulmonary_segment, VH_M_right_medial_bronchopulmonary_segment, VH_M_right_anterior_basal_bronchopulmonary_segment, VH_M_right_lateral_basal_bronchopulmonary_segment, VH_M_right_medial_basal_bronchopulmonary_segment, VH_M_right_posterior_basal_bronchopulmonary_segment, VH_M_right_superior_bronchopulmonary_segment, VH_M_right_apical_bronchopulmonary_segment, VH_M_right_posterior_bronchopulmonary_segment, VH_M_right_anterior_bronchopulmonary_segment], fit: lungs }
   pleura: { kind: proxy, of: [lung] }
   # gastrointestinal
   esophagus: { kind: mesh, concepts: [esophagus] }

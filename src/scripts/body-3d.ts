@@ -169,8 +169,24 @@ export async function mount(canvas: HTMLCanvasElement, opts: Options): Promise<C
       meshesOf.set(id, [...(meshesOf.get(id) ?? []), o as Mesh]);
     });
   };
+  /** The bytes of a file, asked for once: a file that is warmed ahead is not requested again when its turn comes. */
+  const bytes = new Map<string, Promise<ArrayBuffer>>();
+  const bytesOf = (file: string, low = false): Promise<ArrayBuffer> => {
+    let p = bytes.get(file);
+    if (!p) {
+      p = fetch(new URL(file, manifestUrl), low ? ({ priority: 'low' } as RequestInit) : undefined).then((r) => {
+        if (!r.ok) throw new Error(`${file}: HTTP ${r.status}`);
+        return r.arrayBuffer();
+      });
+      bytes.set(file, p);
+      p.catch(() => bytes.delete(file)); // a failed file can be asked for again
+    }
+    return p;
+  };
   const loadFile = async (file: string, ids: Set<string>, shell: boolean) => {
-    const gltf = await guard(loader.loadAsync(new URL(file, manifestUrl).href));
+    const buffer = await guard(bytesOf(file));
+    bytes.delete(file); // decoded once: the bytes are not kept
+    const gltf = await guard(loader.parseAsync(buffer, ''));
     if (disposed) return freeGeometries(gltf.scene);
     collect(gltf.scene, ids, shell);
     loaded.push(gltf.scene);
@@ -194,9 +210,16 @@ export async function mount(canvas: HTMLCanvasElement, opts: Options): Promise<C
   const prefetch = async (mine: number) => {
     const late = new Set([...GHOST_WHOLE].map((id) => manifest.organs[id]?.system));
     const order = Object.keys(manifest.systems).sort((a, b) => Number(late.has(a)) - Number(late.has(b)));
+    // The next two files travel while this one decodes: the decodes stay one at a time, the network no longer waits for them.
+    const warm = (system: string | undefined) => {
+      const file = system ? manifest.systems[system]?.file : undefined;
+      if (file && !pending.has(system!)) void bytesOf(file, true).catch(() => {});
+    };
     try {
-      for (const s of order) {
+      for (const [i, s] of order.entries()) {
         if (mine !== token || disposed) return;
+        warm(order[i + 1]);
+        warm(order[i + 2]);
         await guard(ensure(s));
       }
     } catch (e) {

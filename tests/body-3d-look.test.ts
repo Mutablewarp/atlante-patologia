@@ -24,6 +24,11 @@ describe('body look', () => {
     expect(look.lookOf('skeletal-muscle', 'idle')).toBe('ghost');
     expect(look.lookOf('bones', 'idle')).toBe('ghost');
     expect(look.lookOf('breast', 'idle')).toBe('ghost');
+    for (const id of ['uterus', 'uterine-cervix', 'fallopian-tube', 'ovary']) {
+      expect(look.lookOf(id, 'idle'), id).toBe('ghost'); // fitted female organs in a male body
+      expect(look.lookOf(id, 'system'), id).toBe('system');
+    }
+    expect(look.lookOf('prostate', 'idle')).toBe('idle');
     expect(look.lookOf('breast', 'system')).toBe('system');
     expect(look.lookOf('skeletal-muscle', 'system')).toBe('system');
     expect(look.lookOf('bones', 'selected')).toBe('selected');

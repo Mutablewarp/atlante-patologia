@@ -1,0 +1,11 @@
+---
+/**
+ * The poster is the largest paint of the home page and of the body page (measured on a phone profile: it comes after the
+ * lede). It is a lazy image, so the browser asks for it late and at low priority: this asks at once and at high priority,
+ * for the poster of the colour scheme the system is in (the other one stays unrequested, as before). Pass it to the head slot of BaseLayout: `<BodyPosterPreload slot="head" />`.
+ */
+import { url } from '../../lib/url.ts';
+---
+
+<link rel="preload" as="image" type="image/avif" href={url('anatomy/poster-light.avif')} fetchpriority="high" media="(prefers-color-scheme: light)" />
+<link rel="preload" as="image" type="image/avif" href={url('anatomy/poster-dark.avif')} fetchpriority="high" media="(prefers-color-scheme: dark)" />

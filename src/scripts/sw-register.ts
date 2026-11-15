@@ -38,9 +38,15 @@ async function register() {
 }
 
 if (import.meta.env.PROD && 'serviceWorker' in navigator) {
-  register().catch(() => {
-    /* offline support is an enhancement: the site works without it */
-  });
+  const go = () =>
+    register().catch(() => {
+      /* offline support is an enhancement: the site works without it */
+    });
+  // The install fetches the whole shell (about 470 kB gzip): after the page has painted and the browser is idle, not beside the
+  // fonts and the poster that the first paint waits for.
+  const later = () => ('requestIdleCallback' in window ? requestIdleCallback(go, { timeout: 4000 }) : setTimeout(go, 1000));
+  if (document.readyState === 'complete') later();
+  else addEventListener('load', later, { once: true });
 }
 
 export {};

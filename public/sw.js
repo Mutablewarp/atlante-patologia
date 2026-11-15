@@ -2,7 +2,8 @@
  * Atlante di Patologia — service worker (hand-written, D006; ARCHITECTURE §5).
  *
  * - App shell (dist/precache.json, written by scripts/sw-manifest.mjs) is
- *   precached into `shell-<VERSION>` at install.
+ *   precached into `shell-<VERSION>` at install; a file whose sha is the same as in
+ *   the earlier worker's shell is copied from that cache, not downloaded again.
  * - Navigations: network first; offline → cached copy (shell or installed
  *   pack) → /<lang>/offline/.
  * - Hashed /_astro/ assets: cache first, stored on first use in `assets`, which a
@@ -34,15 +35,44 @@ const ASSETS_MAX = 400;
 const DATA = /^[a-z]{2}\/data\//;
 const LAZY_DIRS = ['_astro/', 'structures/', 'anatomy/'];
 
+// The shas this shell cache was made from: the next worker copies what has not changed instead of fetching it again.
+const INSTALLED = new URL('precache.json?installed', SCOPE).href;
+
+/** The cache of an earlier worker and the paths whose sha is the same in both precache.json files; null when there is none. */
+async function earlierShell(files) {
+  try {
+    for (const k of (await caches.keys()).filter((n) => n.startsWith('shell-') && n !== SHELL)) {
+      const cache = await caches.open(k);
+      const record = await cache.match(INSTALLED);
+      if (!record) continue;
+      const { files: before } = await record.json();
+      return { cache, same: (p) => before[p] === files[p] };
+    }
+  } catch {
+    /* no earlier shell to copy from: everything is fetched */
+  }
+  return null;
+}
+
 self.addEventListener('install', (event) => {
   event.waitUntil(
     (async () => {
       const res = await fetch(new URL('precache.json', SCOPE), { cache: 'no-cache' });
       if (!res.ok) throw new Error(`precache.json: HTTP ${res.status}`);
-      const { files } = await res.json();
+      const text = await res.text();
+      const { files } = JSON.parse(text);
       const cache = await caches.open(SHELL);
-      // cache: 'reload' bypasses the HTTP cache so the shell matches this deploy.
-      await cache.addAll(Object.keys(files).map((p) => new Request(new URL(p, SCOPE), { cache: 'reload' })));
+      const earlier = await earlierShell(files);
+      const fetched = [];
+      for (const p of Object.keys(files)) {
+        const url = new URL(p, SCOPE).href;
+        const copy = earlier?.same(p) ? await earlier.cache.match(url).catch(() => undefined) : undefined;
+        if (copy && copy.ok) await cache.put(url, copy);
+        // cache: 'reload' bypasses the HTTP cache so the shell matches this deploy.
+        else fetched.push(new Request(url, { cache: 'reload' }));
+      }
+      await cache.addAll(fetched);
+      await cache.put(INSTALLED, new Response(text, { headers: { 'content-type': 'application/json' } }));
     })(),
   );
 });

@@ -360,6 +360,7 @@ class ApBody extends HTMLElement {
   /** three.js cannot parse light-dark(): let the browser resolve each token to rgb(...) through a probe. */
   private colors(): Colors {
     const probe = (this.probe ??= this.appendChild(Object.assign(document.createElement('span'), { hidden: true })));
+    probe.style.forcedColorAdjust = 'none'; // forced colors would turn every token into CanvasText: the models keep the site's colours
     const out: Colors = {};
     for (const [key, token] of Object.entries(COLOR_VARS)) {
       probe.style.color = `var(${token})`;
