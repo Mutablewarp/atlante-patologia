@@ -1,0 +1,113 @@
+id: cirrhosis
+module: o20
+tier: core
+kind: disease
+names:
+  it: "Cirrosi epatica"
+  en: "Cirrhosis"
+  eponyms: ["Laennec cirrhosis"]
+  synonyms:
+    it: ["Cirrosi"]
+    en: ["Hepatic cirrhosis"]
+  abbreviations: []
+summary:
+  it: "Distruzione dell'architettura normale del fegato da parte di setti fibrosi attorno a noduli rigenerativi di epatociti, conseguenza di una necrosi epatocitaria persistente."
+  en: "Liver disease in which lasting hepatocyte necrosis leads to fibrous septa and regenerating nodules that replace the normal structure."
+lenses:
+  system: [liver-biliary]
+  process: [chronic-inflammation, repair-fibrosis]
+  pattern: [hyaline-change, fatty-change]
+  presentation: [jaundice, edema, organomegaly]
+  marker: [laboratory]
+  group: [inflammatory, toxic-environmental, metabolic]
+learningObjectives:
+  - it: "Definire la cirrosi come fibrosi con noduli rigenerativi consecutiva a necrosi epatocitaria persistente."
+    en: "Define cirrhosis as fibrosis with regenerative nodules following persistent hepatocyte necrosis."
+  - it: "Distinguere la cirrosi micronodulare da quella macronodulare e collegarle alle cause più tipiche."
+    en: "Distinguish micronodular from macronodular cirrhosis and link each to its typical causes."
+  - it: "Elencare le principali cause di cirrosi e spiegare che cosa si intende per cirrosi criptogenetica."
+    en: "List the major causes of cirrhosis and explain what cryptogenic cirrhosis means."
+  - it: "Descrivere le conseguenze dell'insufficienza epatica: ittero, encefalopatia, coagulopatia, ipoalbuminemia."
+    en: "Describe the consequences of hepatic failure: jaundice, encephalopathy, coagulopathy, hypoalbuminemia."
+prerequisites: []
+relations:
+  - type: causes
+    target: portal-hypertension
+    note:
+      it: "La fibrosi ostruisce i sinusoidi intraepatici e fa aumentare la pressione portale."
+      en: "Fibrosis obstructs intrahepatic sinusoids and raises portal pressure."
+  - type: complicationOf
+    target: alcoholic-liver-disease
+    note:
+      it: "Causa prototipica della cirrosi micronodulare."
+      en: "Prototypical cause of micronodular cirrhosis."
+  - type: complicationOf
+    target: chronic-viral-hepatitis
+    note:
+      it: "Causa classica della cirrosi macronodulare."
+      en: "Classic cause of macronodular cirrhosis."
+quickCheck:
+  - id: cirrhosis-q1
+    q:
+      it: "Quali tre processi producono la cirrosi?"
+      en: "Which three processes produce cirrhosis?"
+    a:
+      it: "Morte e rigenerazione degli epatociti, deposizione di matrice da parte delle cellule stellate attivate e alterazione dell'architettura vascolare."
+      en: "Hepatocyte death and regeneration, matrix deposition by activated stellate cells, and altered vascular architecture."
+    kind: short
+  - id: cirrhosis-q2
+    q:
+      it: "Quale pattern di cirrosi è tipico dell'alcol e quale dell'epatite cronica?"
+      en: "Which cirrhosis pattern is typical of alcohol and which of chronic hepatitis?"
+    a:
+      it: "Micronodulare per l'alcol, con noduli di meno di 3 mm; macronodulare per l'epatite cronica."
+      en: "Micronodular for alcohol, with nodules under 3 mm; macronodular for chronic hepatitis."
+    kind: short
+  - id: cirrhosis-q3
+    q:
+      it: "Perché la cirrosi causa ipertensione portale?"
+      en: "Why does cirrhosis cause portal hypertension?"
+    a:
+      it: "La fibrosi ostruisce i sinusoidi intraepatici, ostacola l'afflusso portale e fa salire la pressione nella vena porta."
+      en: "Fibrosis obstructs the intrahepatic sinusoids, impedes portal inflow and raises portal vein pressure."
+    kind: short
+selfExplain:
+  - it: "Perché nella cirrosi avanzata spesso non si riesce più a risalire alla causa dall'aspetto morfologico?"
+    en: "Why can the cause often no longer be recognized from the morphology in advanced cirrhosis?"
+  - it: "Perché l'insufficienza epatica provoca sanguinamento?"
+    en: "Why does hepatic failure cause bleeding?"
+examQuestions:
+  - it: "Mi parli della cirrosi: come la definisce?"
+    en: "Tell me about cirrhosis: how do you define it?"
+    focus: [definition, pathogenesis]
+    level: 1
+  - it: "Come distingue una cirrosi micronodulare da una macronodulare, e a quali cause le associa?"
+    en: "How do you tell micronodular from macronodular cirrhosis, and which causes go with each?"
+    focus: [gross, micro, etiology]
+    level: 3
+  - it: "Quali sono le principali cause di cirrosi?"
+    en: "What are the main causes of cirrhosis?"
+    focus: [etiology, definition]
+    level: 1
+  - it: "Perché la cirrosi provoca ipertensione portale?"
+    en: "Why does cirrhosis cause portal hypertension?"
+    focus: [pathogenesis, clinical]
+    level: 2
+  - it: "Quali conseguenze dell'insufficienza epatica può riscontrare in un paziente cirrotico, e quali esami le mostrano?"
+    en: "Which consequences of hepatic failure can you find in a cirrhotic patient, and which tests show them?"
+    focus: [clinical, diagnosis, prognosis]
+    level: 3
+images:
+  - id: cirrhosis-gross-1
+    role: gross
+    pairWith: cirrhosis-micro-1
+  - id: cirrhosis-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "20"
+    pages: "848-851"
+lastUpdated: 2026-11-15
+status: published

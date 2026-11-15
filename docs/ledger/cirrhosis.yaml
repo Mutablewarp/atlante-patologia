@@ -1,0 +1,530 @@
+entity: cirrhosis
+claims:
+  - claimId: cirrhosis-c001
+    section: definition
+    statement: "In cirrhosis, nodules of regenerating hepatocytes are ringed by fibrous bands and the liver's normal architecture is lost."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "848" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c002
+    section: definition
+    statement: "Cirrhosis never arises without persistent death of liver cells."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "848" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c003
+    section: definition
+    statement: "Most patients with cirrhosis have alcohol-related liver disease or chronic viral hepatitis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "849" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c004
+    section: definition
+    statement: "Cryptogenic cirrhosis is the label for the roughly 15% of cases in which no cause is found."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "849" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c005
+    section: etiology
+    statement: "Alcoholic liver disease and nonalcoholic fatty liver disease are listed among the major causes of cirrhosis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "849" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c006
+    section: etiology
+    statement: "Chronic hepatitis leading to cirrhosis may be drug-induced, autoimmune or viral."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "849" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c007
+    section: etiology
+    statement: "Biliary causes of cirrhosis are primary sclerosing cholangitis, primary biliary cholangitis and obstruction of the extrahepatic bile ducts."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "849" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c008
+    section: etiology
+    statement: "Metabolic causes of cirrhosis include Wilson disease, hemochromatosis, alpha-1 antitrypsin deficiency and several inherited storage disorders."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "849" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c009
+    section: etiology
+    statement: "The common thread among the diseases associated with cirrhosis is continuing hepatocyte death; otherwise they differ widely."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "849" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c010
+    section: etiology
+    statement: "Many cryptogenic cases are now traced to NASH."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "849" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c011
+    section: etiology
+    statement: "A never-relieved extrahepatic bile duct blockage ends in biliary cirrhosis once septa have joined neighboring portal tracts."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "848" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c012
+    section: pathogenesis
+    statement: "Scar matrix from activated hepatic stellate cells and the cycle of hepatocyte loss and regrowth together remodel the liver's vessels."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "848" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c013
+    section: pathogenesis
+    statement: "If the cause is taken away, the scarred liver may slowly rebuild itself over years to decades, shedding collagen as it does."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "848" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c014
+    section: pathogenesis
+    statement: "Portal hypertension can persist, and the liver rarely returns fully to normal, even if its function and structure get better."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "848" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c015
+    section: pathogenesis
+    statement: "In cirrhosis, fibrous tissue clogs the intrahepatic sinusoids, so portal blood meets resistance and portal vein pressure rises."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "851" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c016
+    section: pathogenesis
+    statement: "In Western countries, portal hypertension is most often caused by cirrhosis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "851" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c017
+    section: gross
+    statement: "Early cirrhosis is usually micronodular: many small nodules of similar size with fibrous septa between them."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "848" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c018
+    section: gross
+    statement: "Micronodules, near lobule size, are usually under 3 mm."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "848" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c019
+    section: gross
+    statement: "Alcohol-related injury is the classic cause of the micronodular pattern, though not the only one."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "848" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c020
+    section: gross
+    statement: "Macronodular cirrhosis, with large lumpy nodules visible to the naked eye, is the usual late form and follows widespread necrosis, as in viral or autoimmune hepatitis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "848-849" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c021
+    section: gross
+    statement: "Cut open, a macronodular liver shows nodules between bands of uneven width, and its shape is distorted."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "849" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c022
+    section: gross
+    statement: "Many livers sit between the two types, showing both."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "848" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c023
+    section: gross
+    statement: "In alcoholics who stop drinking, a micronodular liver often turns macronodular as existing nodules keep regenerating and growing."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "849" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c024
+    section: gross
+    statement: "In practice the etiology matters more than the morphologic pattern."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "848" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c025
+    section: micro
+    statement: "Portal tracts and central venules cannot be found inside the nodules of micronodular cirrhosis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "848" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c026
+    section: micro
+    statement: "Wider septa in micronodular cirrhosis occur where necrotic parenchyma has collapsed, although the septa are usually thin."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "848" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c027
+    section: micro
+    statement: "While micronodular cirrhosis is active, its septa hold ductular reaction and mononuclear inflammatory cells."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "848" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c028
+    section: micro
+    statement: "Macronodular nodules are uneven in shape and size; the connective tissue between them is wide in places and narrow in others."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "848" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c029
+    section: micro
+    statement: "Remnants of the old portal tracts lie in the broad septa of macronodular cirrhosis, and interface hepatitis may be seen there."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "849" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c030
+    section: micro
+    statement: "Early cirrhosis can still indicate its cause: interface hepatitis and chronic inflammation suggest chronic hepatitis, while fat with Mallory-Denk hyaline suggests alcoholic injury."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "848" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c031
+    section: micro
+    statement: "Advanced cirrhosis tends to look similar whatever the cause."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "848" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c032
+    section: ancillary
+    statement: "In earlier stages, microscopic examination of cirrhosis can show features pointing to the inciting injury."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "848" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c033
+    section: ancillary
+    statement: "In a stained section of alcoholic micronodular cirrhosis, the fibrous tissue around the nodules appears blue."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "848" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c034
+    section: clinical
+    statement: "The clinical consequences of cirrhosis and hepatic failure fall into three groups: portal hypertension, parenchymal liver failure and endocrine disturbance."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "850" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c035
+    section: clinical
+    statement: "Bilirubin the failing liver cannot clear causes jaundice, and the hyperbilirubinemia is mostly conjugated."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "849" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c036
+    section: clinical
+    statement: "Gut-derived toxins, ammonia among them, escape the liver and contribute to hepatic encephalopathy, either because hepatocytes are failing or because blood is shunted around the liver."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "849-850" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c037
+    section: clinical
+    statement: "Encephalopathy worsens through four stages, from sleep disturbance and personality change, through lethargy and disorientation, then deep somnolence, to coma."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "850" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c038
+    section: clinical
+    statement: "Early in hepatic encephalopathy the hands flap in a tremor called asterixis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "850-851" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c039
+    section: clinical
+    statement: "Mercaptans in saliva cause fetor hepaticus, the typical breath odor of hepatic failure."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "850" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c040
+    section: clinical
+    statement: "Low albumin, caused by the liver making too little of it, contributes to the swelling seen in chronic liver disease."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "851" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c041
+    section: clinical
+    statement: "Men with long-standing liver failure can develop gynecomastia and a feminized pubic hair pattern, because estrogen levels run high."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "851" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c042
+    section: clinical
+    statement: "Spider angiomas and palmar erythema are common vascular signs of excess estrogen."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "851" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c043
+    section: clinical
+    statement: "Portal hypertension produces splenomegaly, ascites and bleeding gastroesophageal varices."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "851" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c044
+    section: diagnosis
+    statement: "Because a failing liver makes less protein overall, prothrombin, fibrinogen and other clotting factors drop."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "851" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c045
+    section: diagnosis
+    statement: "Liver failure often brings thrombocytopenia, driven by DIC, a depressed marrow and hypersplenism."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "851" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c046
+    section: diagnosis
+    statement: "Portal hypertension is best gauged with a balloon-tipped catheter passed from the internal jugular vein into a hepatic vein, subtracting free from wedged pressure."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "851" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c047
+    section: diagnosis
+    statement: "With the balloon inflated, the catheter records the wedged pressure, which only indirectly reflects portal vein pressure."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "851" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c048
+    section: prognosis
+    statement: "Sudden hepatic failure is mostly caused by toxins or by viral or autoimmune hepatitis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "849" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c049
+    section: prognosis
+    statement: "Hepatic failure can also come on slowly in chronic liver disease such as cirrhosis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "849" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c050
+    section: prognosis
+    statement: "More than half of patients with acute or acute-on-chronic liver failure die without liver transplantation."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "849" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c051
+    section: prognosis
+    statement: "Acute hepatic failure most often kills through swelling of the brain."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "850" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c052
+    section: prognosis
+    statement: "Liver transplantation is usually needed once encephalopathy reaches stage III or IV."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "851" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c053
+    section: prognosis
+    statement: "Liver failure is frequently complicated by DIC."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "851" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c054
+    section: differential
+    statement: "Alcoholic injury is the classic cause of micronodular cirrhosis, and early lesions show fat and Mallory-Denk hyaline."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "848" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c055
+    section: differential
+    statement: "Chronic hepatitis is the typical cause of the macronodular pattern, with interface hepatitis in the broad septa."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "849" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c056
+    section: differential
+    statement: "NASH probably lies behind many cryptogenic cases."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "849" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c057
+    section: differential
+    statement: "Biliary disease, including untreated extrahepatic obstruction and primary biliary cholangitis, is a listed cause of cirrhosis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "848-849" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c058
+    section: high-yield
+    statement: "Cirrhosis is the end result of persistent liver cell necrosis, seen as regenerative nodules ringed by fibrous bands."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "848" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c059
+    section: high-yield
+    statement: "The two classic patterns are micronodular (nodules under 3 mm, prototypically alcoholic) and macronodular (classically chronic hepatitis)."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "848-849" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c060
+    section: high-yield
+    statement: "About 15% of cases are cryptogenic, and most of the rest are due to alcoholism or chronic viral hepatitis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "849" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c061
+    section: high-yield
+    statement: "Activated hepatic stellate cells deposit matrix, and fibrosis obstructing sinusoids produces portal hypertension."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "848, 851" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c062
+    section: high-yield
+    statement: "Hepatic failure features jaundice, coagulopathy, hypoalbuminemia and encephalopathy."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "850-851" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c063
+    section: traps
+    statement: "Cirrhosis can partly reverse if its cause is eliminated, but a full return to a normal liver is unlikely."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "848" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c064
+    section: traps
+    statement: "Early on, the tissue may still carry clues to the cause; in advanced disease they are often gone."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "848" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c065
+    section: traps
+    statement: "Over time a micronodular liver can change into a macronodular one."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "849" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: cirrhosis-c066
+    section: mnemonics
+    statement: "Original mnemonic SCAR restates the definition: fibrous septa, persistent cell death, lost architecture, regenerative nodules."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "848" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
