@@ -1,0 +1,138 @@
+id: diabetic-nephropathy
+module: o22
+tier: core
+kind: disease
+names:
+  it: "Nefropatia diabetica"
+  en: "Diabetic nephropathy"
+  eponyms: ["Kimmelstiel-Wilson"]
+  synonyms:
+    it: ["Glomerulosclerosi diabetica"]
+    en: ["Diabetic glomerulosclerosis"]
+  abbreviations: []
+summary:
+  it: "Lesione glomerulare del diabete, parte di una vasculopatia dei piccoli vasi: ispessimento della membrana basale, espansione mesangiale e noduli di Kimmelstiel-Wilson, con proteinuria e insufficienza renale progressiva."
+  en: "The glomerular lesion of diabetes, part of a small-vessel disease: GBM thickening, mesangial expansion and Kimmelstiel-Wilson nodules, with proteinuria and progressive renal failure."
+lenses:
+  system: [kidney, vessels]
+  process: [extracellular-accumulation]
+  pattern: [hyaline-change]
+  presentation: [edema]
+  marker: [laboratory]
+  group: [metabolic, vascular]
+learningObjectives:
+  - it: "Descrivere le lesioni glomerulari del diabete, dalle precoci (ispessimento della membrana basale, espansione mesangiale) ai noduli di Kimmelstiel-Wilson."
+    en: "Describe the glomerular lesions of diabetes, from the earliest (GBM thickening, mesangial expansion) to Kimmelstiel-Wilson nodules."
+  - it: "Riconoscere l'arteriolosclerosi ialina dell'arteriola afferente ed efferente."
+    en: "Recognize hyaline arteriolosclerosis of the afferent and efferent arterioles."
+  - it: "Spiegare perché la necrosi papillare e la pielonefrite sono favorite dal diabete."
+    en: "Explain why papillary necrosis and pyelonephritis are favored in diabetes."
+  - it: "Ricostruire la storia clinica, dalla microalbuminuria alla sindrome nefrosica e all'insufficienza renale."
+    en: "Outline the clinical course, from microalbuminuria to nephrotic syndrome and renal failure."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: membranous-nephropathy
+    note:
+      it: "Depositi immuni subepiteliali con IgG granulari contro intrappolamento lineare di proteine plasmatiche."
+      en: "Subepithelial immune deposits with granular IgG versus linear trapping of plasma proteins."
+  - type: differentialOf
+    target: amyloidosis
+    note:
+      it: "Materiale amorfo eosinofilo con rosso Congo positivo contro noduli sclerotici con membrana basale ispessita."
+      en: "Amorphous eosinophilic material that is Congo red positive versus sclerotic nodules with a thick basement membrane."
+  - type: causes
+    target: pyelonephritis
+    note:
+      it: "La riduzione del flusso midollare predispone alla pielonefrite."
+      en: "Reduced medullary flow predisposes to pyelonephritis."
+quickCheck:
+  - id: diabetic-nephropathy-q1
+    q:
+      it: "Quali sono le lesioni glomerulari più precoci della nefropatia diabetica?"
+      en: "What are the earliest glomerular lesions of diabetic nephropathy?"
+    a:
+      it: "Ingrandimento del glomerulo, ispessimento della membrana basale glomerulare ed espansione della matrice mesangiale."
+      en: "Glomerular enlargement, GBM thickening and mesangial matrix expansion."
+    kind: short
+  - id: diabetic-nephropathy-q2
+    q:
+      it: "Perché il diabete predispone alla necrosi papillare?"
+      en: "Why does diabetes predispose to papillary necrosis?"
+    a:
+      it: "Il restringimento vascolare riduce il flusso ematico alla midollare."
+      en: "Vascular narrowing reduces blood flow to the medulla."
+    kind: short
+  - id: diabetic-nephropathy-q3
+    q:
+      it: "Qual è la prima manifestazione e quando compare la proteinuria franca?"
+      en: "What is the first manifestation, and when does overt proteinuria appear?"
+    a:
+      it: "La microalbuminuria; la proteinuria franca compare 10-15 anni dopo l'esordio del diabete."
+      en: "Microalbuminuria; overt proteinuria appears 10 to 15 years after onset of diabetes."
+    kind: short
+  - id: diabetic-nephropathy-q4
+    q:
+      it: "Quali arteriole sono colpite dall'arteriolosclerosi ialina nel diabete?"
+      en: "Which arterioles show hyaline arteriolosclerosis in diabetes?"
+    a:
+      it: "Sia l'arteriola afferente sia quella efferente, per sclerosi e insudazione di proteine plasmatiche."
+      en: "Both the afferent and the efferent arteriole, through sclerosis and insudation of plasma proteins."
+    kind: short
+  - id: diabetic-nephropathy-q5
+    q:
+      it: "Che cosa si vede all'immunofluorescenza nella nefropatia diabetica, e perché?"
+      en: "What does immunofluorescence show in diabetic nephropathy, and why?"
+    a:
+      it: "Un segnale lineare continuo lungo la membrana basale glomerulare, da proteine plasmatiche come IgG e albumina che aderiscono in modo aspecifico alla membrana ispessita."
+      en: "A continuous linear signal along the GBM, from plasma proteins such as IgG and albumin sticking nonspecifically to the thickened membrane."
+    kind: short
+selfExplain:
+  - it: "Perché la riduzione del flusso midollare favorisce necrosi papillare e pielonefrite?"
+    en: "Why does reduced medullary flow favor papillary necrosis and pyelonephritis?"
+  - it: "Perché le IgG lungo la membrana basale diabetica non indicano una malattia da immunocomplessi?"
+    en: "Why does IgG along the diabetic GBM not point to an immune complex disease?"
+  - it: "Perché i noduli di Kimmelstiel-Wilson compaiono solo nella malattia stabilizzata e non all'inizio?"
+    en: "Why do Kimmelstiel-Wilson nodules appear only in established disease and not at the start?"
+chain:
+  - pathology:
+      it: "Glomerulosclerosi diabetica con espansione mesangiale"
+      en: "Diabetic glomerulosclerosis with mesangial expansion"
+    sign:
+      it: "Proteinuria, talvolta sindrome nefrosica"
+      en: "Proteinuria, sometimes nephrotic syndrome"
+    lab:
+      it: "Microalbuminuria nelle fasi precoci"
+      en: "Microalbuminuria in the early phase"
+examQuestions:
+  - it: "Che cosa vede al microscopio nel glomerulo di una nefropatia diabetica ormai stabilita?"
+    en: "What do you see under the microscope in the glomerulus of established diabetic nephropathy?"
+    focus: [micro]
+    level: 1
+  - it: "Mi parli delle lesioni delle arteriole nella nefropatia diabetica."
+    en: "Tell me about the arteriolar lesions in diabetic nephropathy."
+    focus: [micro]
+    level: 1
+  - it: "Perché il diabete favorisce la necrosi papillare e la pielonefrite?"
+    en: "Why does diabetes favor papillary necrosis and pyelonephritis?"
+    focus: [gross, pathogenesis]
+    level: 2
+  - it: "Mi parli dell'evoluzione clinica della nefropatia diabetica, dal primo segno all'insufficienza renale."
+    en: "Tell me about the clinical course of diabetic nephropathy, from the first sign to renal failure."
+    focus: [clinical, diagnosis]
+    level: 2
+  - it: "Come distingue la nefropatia diabetica dalla nefropatia membranosa e dall'amiloidosi?"
+    en: "How do you tell diabetic nephropathy from membranous nephropathy and amyloidosis?"
+    focus: [differential, ancillary]
+    level: 3
+images:
+  - id: diabetic-nephropathy-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "22"
+    pages: "933-935"
+lastUpdated: 2026-11-15
+status: published
