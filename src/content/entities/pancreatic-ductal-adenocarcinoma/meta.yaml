@@ -1,0 +1,121 @@
+id: pancreatic-ductal-adenocarcinoma
+module: o21
+tier: core
+kind: disease
+names:
+  it: "Adenocarcinoma duttale del pancreas"
+  en: "Pancreatic ductal adenocarcinoma"
+  eponyms: []
+  synonyms:
+    it: ["Carcinoma duttale infiltrante del pancreas", "Cancro del pancreas"]
+    en: ["Infiltrating ductal adenocarcinoma of the pancreas", "Pancreatic cancer"]
+  abbreviations: [PDAC]
+summary:
+  it: "Tumore maligno dell'epitelio dei dotti pancreatici che forma ghiandole con cellule mucipare in uno stroma desmoplastico; è il tumore più frequente del pancreas esocrino nell'adulto, con prognosi molto sfavorevole."
+  en: "Malignant tumor of the pancreatic duct epithelium that forms mucin-producing glands in a desmoplastic stroma; the most common exocrine pancreatic tumor in adults, with a very poor prognosis."
+lenses:
+  system: [pancreas, liver-biliary]
+  process: [neoplasia]
+  pattern: [dysplasia]
+  presentation: [jaundice, mass-lesion]
+  marker: [molecular, laboratory]
+  group: [neoplastic]
+learningObjectives:
+  - it: "Descrivere la progressione da PanIN a carcinoma invasivo e le alterazioni di KRAS, CDKN2A, TP53 e SMAD4."
+    en: "Describe the progression from PanIN to invasive carcinoma and the alterations of KRAS, CDKN2A, TP53 and SMAD4."
+  - it: "Riconoscere al microscopio ghiandole infiltranti, stroma desmoplastico e invasione perineurale."
+    en: "Recognize infiltrating glands, desmoplastic stroma and perineural invasion under the microscope."
+  - it: "Confrontare i tumori della testa con quelli del corpo e della coda per sede, sintomi e stadio alla diagnosi."
+    en: "Compare tumors of the head with those of the body and tail in location, symptoms and stage at diagnosis."
+  - it: "Spiegare la sindrome di Trousseau e il segno di Courvoisier e il loro valore clinico."
+    en: "Explain Trousseau syndrome and the Courvoisier sign and their clinical value."
+  - it: "Distinguere l'adenocarcinoma duttale dal carcinoma a cellule acinari e dal pancreatoblastoma."
+    en: "Distinguish ductal adenocarcinoma from acinar cell carcinoma and pancreatoblastoma."
+prerequisites: [oncogenes-and-tumor-suppressor-genes]
+relations:
+  - type: differentialOf
+    target: chronic-pancreatitis
+    note:
+      it: "Una massa dura nella pancreatite cronica fibrosante può simulare il carcinoma, e il carcinoma può causare pancreatite ostruttiva."
+      en: "A hard mass in fibrosing chronic pancreatitis can mimic carcinoma, and carcinoma can cause obstructive pancreatitis."
+  - type: sharesMechanism
+    target: oncogenes-and-tumor-suppressor-genes
+    note:
+      it: "Attivazione di KRAS e perdita di CDKN2A, TP53 e SMAD4."
+      en: "KRAS activation and loss of CDKN2A, TP53 and SMAD4."
+  - type: sameMarker
+    target: serum-tumor-markers
+    note:
+      it: "Il CA19-9 è di solito aumentato ma non è specifico."
+      en: "CA19-9 is usually raised but not specific."
+  - type: sharesMechanism
+    target: paraneoplastic-syndromes
+    note:
+      it: "La tromboflebite migrante (sindrome di Trousseau) è uno stato di ipercoagulabilità associato al tumore."
+      en: "Migratory thrombophlebitis (Trousseau syndrome) is a tumor-associated hypercoagulable state."
+quickCheck:
+  - id: pancreatic-ductal-adenocarcinoma-q1
+    q:
+      it: "Quale alterazione genica compare precocemente nelle PanIN di basso grado, e quali geni vengono inattivati più tardi?"
+      en: "Which gene alteration appears early in low-grade PanIN, and which genes are inactivated later?"
+    a:
+      it: "Precocemente l'attivazione di KRAS; più tardi l'inattivazione di CDKN2A, TP53 e SMAD4."
+      en: "KRAS activation comes early; CDKN2A, TP53 and SMAD4 are inactivated later."
+    kind: short
+  - id: pancreatic-ductal-adenocarcinoma-q2
+    q:
+      it: "Perché i tumori della testa del pancreas sono di solito più piccoli alla diagnosi di quelli della coda?"
+      en: "Why are tumors of the pancreatic head usually smaller at diagnosis than those of the tail?"
+    a:
+      it: "Perché comprimono presto la via biliare e causano ittero, quindi danno sintomi prima."
+      en: "Because they compress the bile duct early and cause jaundice, so they produce symptoms sooner."
+    kind: short
+  - id: pancreatic-ductal-adenocarcinoma-q3
+    q:
+      it: "Che cos'è la sindrome di Trousseau e perché è importante?"
+      en: "What is Trousseau syndrome and why does it matter?"
+    a:
+      it: "È la tromboflebite migrante; può essere il primo segno di un tumore occulto, soprattutto del pancreas, e impone di cercare una neoplasia."
+      en: "It is migratory thrombophlebitis; it can be the first sign of an occult cancer, especially of the pancreas, and calls for a search for malignancy."
+    kind: short
+selfExplain:
+  - it: "Perché l'invasione perineurale spiega il dolore precoce e persistente di questo tumore?"
+    en: "Why does perineural invasion explain the early and persistent pain of this tumor?"
+  - it: "Perché un tumore della testa del pancreas può causare ittero e dilatazione della colecisti senza dolore?"
+    en: "Why can a tumor of the pancreatic head cause jaundice and a dilated gallbladder without pain?"
+examQuestions:
+  - it: "Mi parli della progressione da PanIN ad adenocarcinoma duttale invasivo: quali geni sono coinvolti e in quale ordine?"
+    en: "Tell me about the progression from PanIN to invasive ductal adenocarcinoma: which genes are involved, and in what order?"
+    focus: [pathogenesis]
+    level: 1
+  - it: "Che cosa vede al microscopio in un adenocarcinoma duttale del pancreas ben differenziato?"
+    en: "What do you see under the microscope in a well-differentiated pancreatic ductal adenocarcinoma?"
+    focus: [micro]
+    level: 1
+  - it: "Perché il dolore compare presto e persiste in questo tumore?"
+    en: "Why does the pain appear early and persist in this tumor?"
+    focus: [micro, clinical]
+    level: 2
+  - it: "Come distingue un tumore della testa del pancreas da uno del corpo o della coda, per sintomi e stadio alla diagnosi?"
+    en: "How do you tell a tumor of the pancreatic head from one of the body or tail, in symptoms and stage at diagnosis?"
+    focus: [gross, clinical]
+    level: 3
+  - it: "Un paziente sano ha una tromboflebite migrante senza causa evidente: che cosa pensa e come procede?"
+    en: "A healthy patient has migratory thrombophlebitis with no obvious cause: what do you think, and how do you proceed?"
+    focus: [clinical, traps]
+    level: 3
+  - it: "Come distingue l'adenocarcinoma duttale dal carcinoma a cellule acinari e dal pancreatoblastoma?"
+    en: "How do you tell ductal adenocarcinoma from acinar cell carcinoma and pancreatoblastoma?"
+    focus: [differential, ancillary]
+    level: 3
+images:
+  - { id: pancreatic-ductal-adenocarcinoma-micro-1, role: micro }
+  - { id: pancreatic-ductal-adenocarcinoma-micro-2, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "21"
+    pages: "907-910"
+lastUpdated: 2026-11-15
+status: published
