@@ -1,0 +1,133 @@
+id: idiopathic-pulmonary-fibrosis
+module: o18
+tier: core
+kind: disease
+editionDependent: false
+status: published
+lastUpdated: 2026-11-14
+reviewStatus: ai-generated-unreviewed
+names:
+  it: "Fibrosi polmonare idiopatica (UIP)"
+  en: "Idiopathic pulmonary fibrosis (UIP pattern)"
+  eponyms: []
+  synonyms:
+    it: ["Polmonite interstiziale usuale"]
+    en: ["Usual interstitial pneumonia"]
+  abbreviations: ["IPF", "UIP"]
+summary:
+  it: "Fibrosi polmonare cronica progressiva, senza causa nota, con il quadro istologico di polmonite interstiziale usuale: fibrosi a chiazze sottopleurica, focolai fibroblastici e honeycombing."
+  en: "Chronic progressive lung fibrosis of unknown cause with the histologic pattern of usual interstitial pneumonia: patchy subpleural fibrosis, fibroblastic foci and honeycombing."
+lenses:
+  system: [respiratory]
+  process: [repair-fibrosis, chronic-inflammation]
+  pattern: []
+  presentation: [dyspnea]
+  marker: []
+  group: [inflammatory, genetic]
+learningObjectives:
+  - it: "Distinguere il quadro istologico UIP dalla diagnosi clinica di fibrosi polmonare idiopatica."
+    en: "Distinguish the UIP histologic pattern from the clinical diagnosis of idiopathic pulmonary fibrosis."
+  - it: "Descrivere la fibrosi a chiazze sottopleurica, l'eterogeneità temporale, i focolai fibroblastici e l'honeycombing."
+    en: "Describe patchy subpleural fibrosis, temporal heterogeneity, fibroblastic foci and honeycombing."
+  - it: "Riconoscere il quadro clinico e TC tipico, e sapere quando la biopsia chirurgica non serve."
+    en: "Recognize the typical clinical and CT picture, and know when surgical biopsy is not needed."
+  - it: "Distinguere la UIP dalla polmonite interstiziale non specifica (NSIP), diffusa e uniforme."
+    en: "Tell UIP from nonspecific interstitial pneumonia (NSIP), which is diffuse and uniform."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: hypersensitivity-pneumonitis
+    note:
+      it: "La polmonite da ipersensibilità cronica può dare un quadro UIP."
+      en: "Chronic hypersensitivity pneumonitis can produce a UIP pattern."
+  - type: differentialOf
+    target: sarcoidosis
+    note:
+      it: "Granulomi non caseosi contro fibrosi a chiazze con foci fibroblastici."
+      en: "Noncaseating granulomas versus patchy fibrosis with fibroblastic foci."
+  - type: sharesMechanism
+    target: repair-and-fibrosis
+    note:
+      it: "Il danno alveolare ripetuto si risolve in cicatrice fibrosa."
+      en: "Repeated alveolar injury ends in fibrous scar."
+quickCheck:
+  - id: idiopathic-pulmonary-fibrosis-q1
+    q:
+      it: "Che differenza c'è tra UIP e fibrosi polmonare idiopatica?"
+      en: "What is the difference between UIP and idiopathic pulmonary fibrosis?"
+    a:
+      it: "La UIP è il quadro istologico; la fibrosi polmonare idiopatica è la diagnosi clinica quando non si trova una causa."
+      en: "UIP is the histologic pattern; idiopathic pulmonary fibrosis is the clinical diagnosis when no cause is found."
+    kind: short
+  - id: idiopathic-pulmonary-fibrosis-q2
+    q:
+      it: "Quali tre elementi istologici definiscono la UIP?"
+      en: "Which three histologic features define UIP?"
+    a:
+      it: "Fibrosi a chiazze sottopleurica con eterogeneità temporale, focolai fibroblastici e honeycombing."
+      en: "Patchy subpleural fibrosis with temporal heterogeneity, fibroblastic foci and honeycombing."
+    kind: short
+  - id: idiopathic-pulmonary-fibrosis-q3
+    q:
+      it: "Come si distingue la NSIP dalla UIP?"
+      en: "How does NSIP differ from UIP?"
+    a:
+      it: "La NSIP è diffusa e uniforme, con honeycombing e focolai fibroblastici scarsi o assenti; la UIP è a chiazze."
+      en: "NSIP is diffuse and uniform, with honeycombing and fibroblastic foci scarce or absent; UIP is patchy."
+    kind: short
+  - id: idiopathic-pulmonary-fibrosis-q4
+    q:
+      it: "Quanto è la sopravvivenza media nella fibrosi polmonare idiopatica e quali farmaci ne rallentano la progressione?"
+      en: "What is the average survival in idiopathic pulmonary fibrosis, and which drugs slow its progression?"
+    a:
+      it: "La sopravvivenza media è di 4-6 anni; pirfenidone e nintedanib rallentano la progressione."
+      en: "Average survival is 4 to 6 years; pirfenidone and nintedanib slow progression."
+    kind: short
+selfExplain:
+  - it: "Perché la TC tipica può evitare la biopsia chirurgica?"
+    en: "Why can a typical CT spare the patient a surgical biopsy?"
+  - it: "Perché una biopsia con quadro UIP non basta da sola per porre diagnosi di fibrosi polmonare idiopatica?"
+    en: "Why is a UIP biopsy alone not enough to diagnose idiopathic pulmonary fibrosis?"
+chain:
+  - pathology:
+      it: "Cicatrici dense con collasso alveolare e cisti"
+      en: "Dense scars with alveolar collapse and cysts"
+    sign:
+      it: "Dispnea da sforzo, tosse secca, rantoli a velcro"
+      en: "Exertional dyspnea, dry cough, Velcro rales"
+    lab:
+      it: "Restrizione alle prove di funzionalità respiratoria; honeycombing alla TC"
+      en: "Restriction on lung function tests; honeycombing on CT"
+examQuestions:
+  - it: "Che cosa vede al microscopio in una polmonite interstiziale usuale?"
+    en: "What do you see under the microscope in usual interstitial pneumonia?"
+    focus: [micro, high-yield]
+    level: 1
+  - it: "Mi parli dell'honeycombing: dove si trova e che aspetto ha?"
+    en: "Tell me about honeycombing: where is it found and what does it look like?"
+    focus: [gross, micro, diagnosis]
+    level: 1
+  - it: "Come distingue una UIP da una NSIP?"
+    en: "How do you tell UIP from NSIP?"
+    focus: [differential, traps]
+    level: 3
+  - it: "Perché un quadro UIP alla biopsia non equivale sempre a fibrosi polmonare idiopatica?"
+    en: "Why does a UIP pattern on biopsy not always mean idiopathic pulmonary fibrosis?"
+    focus: [definition, traps]
+    level: 2
+  - it: "Un paziente ha dispnea da sforzo, tosse secca e rantoli a velcro alle basi: quale esame darebbe e quando eviterebbe la biopsia chirurgica?"
+    en: "A patient has exertional dyspnea, dry cough and Velcro rales at the bases: which test would you order, and when could you skip surgical biopsy?"
+    focus: [clinical, diagnosis]
+    level: 3
+images:
+  - id: idiopathic-pulmonary-fibrosis-gross-1
+    role: gross
+    pairWith: idiopathic-pulmonary-fibrosis-micro-1
+  - id: idiopathic-pulmonary-fibrosis-micro-1
+    role: micro
+  - id: idiopathic-pulmonary-fibrosis-micro-2
+    role: micro
+sources:
+  - source: rubin-8e
+    chapter: "18"
+    pages: "739-740"
