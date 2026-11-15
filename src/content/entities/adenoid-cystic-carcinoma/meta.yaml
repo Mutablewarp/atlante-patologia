@@ -1,0 +1,107 @@
+id: adenoid-cystic-carcinoma
+module: o29
+tier: core
+kind: disease
+names:
+  it: "Carcinoma adenoido-cistico"
+  en: "Adenoid cystic carcinoma"
+  eponyms: []
+  synonyms:
+    it: ["Cilindroma (termine storico)"]
+    en: []
+  abbreviations: ["ACC"]
+summary:
+  it: "Carcinoma delle ghiandole salivari a crescita lenta, con pattern cribriforme, tubulare o solido, invasione perineurale, diagnosi tardiva, recidive frequenti e fusione MYB-NFIB."
+  en: "Slow-growing salivary gland carcinoma with cribriform, tubular or solid patterns, perineural invasion, late diagnosis, frequent recurrence and the MYB-NFIB fusion."
+lenses:
+  system: [head-neck]
+  process: [neoplasia]
+  pattern: []
+  presentation: [mass-lesion]
+  marker: [molecular]
+  group: [neoplastic, genetic]
+learningObjectives:
+  - it: "Descrivere i pattern cribriforme, tubulare e solido e il loro peso nella gradazione."
+    en: "Describe the cribriform, tubular and solid patterns and their role in grading."
+  - it: "Spiegare perché il tumore è spesso doloroso e perché la prognosi a lungo termine è sfavorevole."
+    en: "Explain why the tumor is often painful and why the long-term prognosis is poor."
+  - it: "Riconoscere la traslocazione t(6;9) e la fusione MYB-NFIB come anomalia caratteristica."
+    en: "Recognize the t(6;9) translocation and the MYB-NFIB fusion as the characteristic abnormality."
+  - it: "Distinguere il carcinoma adenoido-cistico dal carcinoma secretorio, mucoepidermoide e a cellule acinari."
+    en: "Distinguish adenoid cystic carcinoma from secretory, mucoepidermoid and acinic cell carcinoma."
+prerequisites: [salivary-gland-tumors]
+relations:
+  - type: differentialOf
+    target: mucoepidermoid-carcinoma
+    note:
+      it: "Miscela di mucociti, cellule epidermoidi e intermedie contro pattern cribriforme con pseudocisti."
+      en: "Mixture of mucocytes, epidermoid and intermediate cells versus cribriform pattern with pseudocysts."
+  - type: mimics
+    target: salivary-gland-tumors
+    note:
+      it: "Fa parte dei tumori delle ghiandole salivari."
+      en: "It belongs to the group of salivary gland tumors."
+quickCheck:
+  - id: adenoid-cystic-carcinoma-q1
+    q:
+      it: "Quali tre pattern architetturali si osservano e quale definisce l'alto grado?"
+      en: "Which three architectural patterns are seen, and which one defines high grade?"
+    a:
+      it: "Cribriforme, tubulare e solido; una componente solida superiore al 30% definisce l'alto grado."
+      en: "Cribriform, tubular and solid; more than 30% solid growth defines high grade."
+    kind: short
+  - id: adenoid-cystic-carcinoma-q2
+    q:
+      it: "Perché il carcinoma adenoido-cistico è spesso doloroso?"
+      en: "Why is adenoid cystic carcinoma often painful?"
+    a:
+      it: "Tende a infiltrare gli spazi perineurali."
+      en: "It tends to infiltrate perineural spaces."
+    kind: short
+  - id: adenoid-cystic-carcinoma-q3
+    q:
+      it: "Quale anomalia genetica caratterizza il tumore?"
+      en: "Which genetic abnormality characterizes the tumor?"
+    a:
+      it: "La traslocazione t(6;9) che fonde il proto-oncogene MYB con NFIB."
+      en: "The t(6;9) translocation that fuses the MYB proto-oncogene with NFIB."
+    kind: short
+selfExplain:
+  - it: "Perché una lunga assenza di metastasi non basta a dichiarare guarito il paziente?"
+    en: "Why is a long metastasis-free interval not enough to call the patient cured?"
+  - it: "Perché gli spazi cribriformi sono pseudocisti e non veri lumi ghiandolari?"
+    en: "Why are the cribriform spaces pseudocysts rather than true glandular lumens?"
+  - it: "Perché una componente solida estesa cambia il grado del tumore?"
+    en: "Why does an extensive solid component change the grade of the tumor?"
+examQuestions:
+  - it: "Che cosa vede al microscopio in un carcinoma adenoido-cistico?"
+    en: "What do you see under the microscope in adenoid cystic carcinoma?"
+    focus: [micro]
+    level: 1
+  - it: "Mi parli dell'invasione perineurale: perché è importante in questo tumore?"
+    en: "Tell me about perineural invasion: why does it matter in this tumor?"
+    focus: [clinical, high-yield]
+    level: 2
+  - it: "Perché una lunga assenza di metastasi non basta a dire che il paziente è guarito?"
+    en: "Why is a long metastasis-free interval not enough to say the patient is cured?"
+    focus: [clinical, prognosis, traps]
+    level: 2
+  - it: "Quale anomalia genetica caratterizza questo tumore e che cosa comporta?"
+    en: "Which genetic abnormality characterizes this tumor, and what does it involve?"
+    focus: [pathogenesis, ancillary]
+    level: 1
+  - it: "Come distingue il carcinoma adenoido-cistico dal carcinoma mucoepidermoide?"
+    en: "How do you tell adenoid cystic carcinoma from mucoepidermoid carcinoma?"
+    focus: [micro, differential]
+    level: 3
+images:
+  - id: adenoid-cystic-carcinoma-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "29"
+    pages: "1323-1324"
+lastUpdated: 2026-11-14
+status: published
