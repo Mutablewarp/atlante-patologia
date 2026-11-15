@@ -1,0 +1,115 @@
+id: alport-and-thin-basement-membrane-disease
+module: o22
+tier: extended
+kind: disease
+names:
+  it: "Sindrome di Alport e malattia delle membrane basali sottili"
+  en: "Alport syndrome and thin basement membrane disease"
+  eponyms: ["Alport"]
+  synonyms:
+    it: ["Nefrite ereditaria", "Ematuria familiare benigna"]
+    en: ["Hereditary nephritis", "Benign familial hematuria"]
+  abbreviations: ["TBMN"]
+summary:
+  it: "Malattie ereditarie del collagene di tipo IV della membrana basale glomerulare: nella sindrome di Alport nefrite con sordità neurosensoriale, nella malattia delle membrane basali sottili ematuria familiare benigna."
+  en: "Inherited disorders of type IV collagen of the glomerular basement membrane: Alport syndrome causes nephritis with sensorineural hearing loss, thin basement membrane disease causes benign familial hematuria."
+lenses:
+  system: [kidney]
+  process: []
+  pattern: []
+  presentation: [hematuria]
+  marker: [molecular]
+  group: [genetic]
+learningObjectives:
+  - it: "Collegare i difetti del collagene di tipo IV (COL4A5, COL4A3, COL4A4) alla sindrome di Alport."
+    en: "Link type IV collagen defects (COL4A5, COL4A3, COL4A4) to Alport syndrome."
+  - it: "Descrivere il reperto in microscopia elettronica della membrana basale nella sindrome di Alport."
+    en: "Describe the electron microscopy finding of the basement membrane in Alport syndrome."
+  - it: "Riconoscere ematuria e sordità neurosensoriale come quadro clinico della forma legata all'X."
+    en: "Recognize hematuria and sensorineural hearing loss as the clinical picture of the X-linked form."
+  - it: "Distinguere la malattia delle membrane basali sottili dalla sindrome di Alport e dalle altre cause di ematuria glomerulare."
+    en: "Distinguish thin basement membrane disease from Alport syndrome and other causes of glomerular hematuria."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: iga-nephropathy
+    note:
+      it: "Entrambe sono cause frequenti di ematuria glomerulare asintomatica."
+      en: "Both are common causes of asymptomatic glomerular hematuria."
+  - type: differentialOf
+    target: focal-segmental-glomerulosclerosis
+    note:
+      it: "Varianti di COL4A3 e COL4A4 si trovano anche in adulti con FSGS."
+      en: "COL4A3 and COL4A4 variants are also found in adults with FSGS."
+quickCheck:
+  - id: alport-and-thin-basement-membrane-disease-q1
+    q:
+      it: "Quale proteina è difettosa nella sindrome di Alport e qual è il gene più spesso coinvolto?"
+      en: "Which protein is defective in Alport syndrome, and which gene is most often involved?"
+    a:
+      it: "Il collagene di tipo IV; il gene più spesso coinvolto è COL4A5, sul cromosoma X."
+      en: "Type IV collagen; the gene most often involved is COL4A5, on the X chromosome."
+    kind: short
+  - id: alport-and-thin-basement-membrane-disease-q2
+    q:
+      it: "Che cosa mostra la microscopia elettronica nella sindrome di Alport?"
+      en: "What does electron microscopy show in Alport syndrome?"
+    a:
+      it: "Una membrana basale ispessita in modo irregolare, con lamina densa divisa in più strati attorno ad aree elettronlucenti."
+      en: "An irregularly thickened basement membrane whose lamina densa is split into layers around electron-lucent areas."
+    kind: short
+  - id: alport-and-thin-basement-membrane-disease-q3
+    q:
+      it: "Come si distingue clinicamente la malattia delle membrane basali sottili dalla sindrome di Alport?"
+      en: "How does thin basement membrane disease differ clinically from Alport syndrome?"
+    a:
+      it: "Dà di solito solo ematuria, senza insufficienza renale né proteinuria importante; la sindrome di Alport evolve in insufficienza renale."
+      en: "It usually causes only hematuria, without renal failure or substantial proteinuria; Alport syndrome progresses to renal failure."
+    kind: short
+  - id: alport-and-thin-basement-membrane-disease-q4
+    q:
+      it: "Quale reperto uditivo e quale esordio urinario si osservano nei maschi con la forma legata all'X?"
+      en: "Which hearing finding and which urinary onset are seen in males with the X-linked form?"
+    a:
+      it: "L'ematuria compare presto nei ragazzi; circa la metà dei maschi perde l'udito neurosensoriale per le alte frequenze."
+      en: "Hematuria appears early in boys; half of the males lose high-frequency sensorineural hearing."
+    kind: short
+selfExplain:
+  - it: "Perché il siero di un paziente con malattia anti-GBM non reagisce con la membrana basale di un paziente con nefrite ereditaria?"
+    en: "Why does serum from a patient with anti-GBM disease fail to react with the basement membrane of a patient with hereditary nephritis?"
+  - it: "Quale forma di nefrite ereditaria si chiama sindrome di Alport, e quali difetti extrarenali possono accompagnare la nefrite ereditaria?"
+    en: "Which form of hereditary nephritis is called Alport syndrome, and which extrarenal defects can accompany hereditary nephritis?"
+  - it: "Perché la malattia delle membrane basali sottili e la sindrome di Alport differiscono nel decorso pur coinvolgendo gli stessi geni?"
+    en: "Why do thin basement membrane disease and Alport syndrome differ in course although they involve the same genes?"
+chain:
+  - pathology:
+      it: "Difetto del collagene di tipo IV con lamina densa stratificata"
+      en: "Type IV collagen defect with a layered lamina densa"
+    sign:
+      it: "Ematuria precoce e sordità neurosensoriale"
+      en: "Early hematuria and sensorineural hearing loss"
+    lab:
+      it: "Microscopia elettronica della membrana basale glomerulare"
+      en: "Electron microscopy of the glomerular basement membrane"
+examQuestions:
+  - it: "Mi parli della sindrome di Alport: quale proteina è alterata, quali geni sono coinvolti e come si manifesta con ematuria e sordità?"
+    en: "Tell me about Alport syndrome: which protein is altered, which genes are involved, and how does it present with hematuria and hearing loss?"
+    focus: [definition, diagnosis]
+    level: 1
+  - it: "Che cosa vede al microscopio elettronico nella sindrome di Alport?"
+    en: "What do you see under the electron microscope in Alport syndrome?"
+    focus: [micro]
+    level: 2
+  - it: "Come distingue la malattia delle membrane basali sottili dalla sindrome di Alport?"
+    en: "How do you tell thin basement membrane disease from Alport syndrome?"
+    focus: [micro, diagnosis, differential]
+    level: 3
+images: []
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "22"
+    pages: "937-938"
+lastUpdated: 2026-11-15
+status: published

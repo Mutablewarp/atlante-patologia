@@ -1,0 +1,218 @@
+entity: alport-and-thin-basement-membrane-disease
+claims:
+  - claimId: alport-and-thin-basement-membrane-disease-c001
+    section: definition
+    statement: "Genetic defects of type IV collagen produce hereditary nephritis, an inherited glomerular disease that is often joined by ear or eye defects."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "937" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alport-and-thin-basement-membrane-disease-c002
+    section: definition
+    statement: "The form of hereditary nephritis that comes with an inherited hearing deficit is called Alport syndrome."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "937" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alport-and-thin-basement-membrane-disease-c003
+    section: definition
+    statement: "A minority of patients with hereditary nephritis have eye defects, and the lens is the chief site."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "938" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alport-and-thin-basement-membrane-disease-c004
+    section: definition
+    statement: "COL4A5 encodes the alpha-5 chain of type IV collagen, and its mutation causes the X-linked form, the commonest type of hereditary nephritis."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "937" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alport-and-thin-basement-membrane-disease-c005
+    section: definition
+    statement: "Of all hereditary nephritis, 85% is the X-linked COL4A5 type."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "937" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alport-and-thin-basement-membrane-disease-c006
+    section: definition
+    statement: "Mutations of COL4A3 or COL4A4 account for recessive, non-X-linked hereditary nephritis."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "937" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alport-and-thin-basement-membrane-disease-c007
+    section: definition
+    statement: "Unlike the X-linked form, the autosomal recessive form affects males and females equally."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "938" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alport-and-thin-basement-membrane-disease-c008
+    section: definition
+    statement: "Thin basement membrane disease arises with heterozygous COL4A3 or COL4A4 mutations, and Alport syndrome with homozygous variants."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "938" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alport-and-thin-basement-membrane-disease-c009
+    section: micro
+    statement: "At first, Alport glomeruli accumulate matrix and a few more mesangial cells."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "937" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-15
+  - claimId: alport-and-thin-basement-membrane-disease-c010
+    section: micro
+    statement: "Glomerular sclerosis spreads from patchy to widespread, and in advanced kidneys the tubulointerstitium is scarred, wasted and holds foam cells."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "937" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alport-and-thin-basement-membrane-disease-c011
+    section: micro
+    statement: "Electron microscopy settles the diagnosis by showing pale spaces between the layers of a split lamina densa and a GBM of varying width."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "937" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alport-and-thin-basement-membrane-disease-c012
+    section: micro
+    statement: "Light microscopy of thin basement membrane nephropathy shows unremarkable glomeruli."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "938" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alport-and-thin-basement-membrane-disease-c013
+    section: micro
+    statement: "Electron microscopy of thin basement membrane nephropathy gives a GBM thickness of 150 to 300 nm, versus a normal 350 to 450 nm."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "938" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alport-and-thin-basement-membrane-disease-c014
+    section: diagnosis
+    statement: "Early hematuria is the first feature in boys with the X-linked type."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "937" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alport-and-thin-basement-membrane-disease-c015
+    section: diagnosis
+    statement: "Between the second and fourth decades, proteinuria and declining kidney function usually appear."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "937" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-15
+  - claimId: alport-and-thin-basement-membrane-disease-c016
+    section: diagnosis
+    statement: "Half of males with X-linked disease have sensorineural high-frequency hearing loss."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "938" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alport-and-thin-basement-membrane-disease-c017
+    section: diagnosis
+    statement: "Women with X-linked disease usually have a milder course than men."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "937-938" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alport-and-thin-basement-membrane-disease-c018
+    section: diagnosis
+    statement: "Hematuria in thin basement membrane nephropathy (benign familial hematuria) is often silent, found only on microscopy, and occasionally visible."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "938" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-15
+  - claimId: alport-and-thin-basement-membrane-disease-c019
+    section: diagnosis
+    statement: "In thin basement membrane nephropathy kidney function usually holds and protein loss stays minor."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "938" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alport-and-thin-basement-membrane-disease-c020
+    section: differential
+    statement: "Thin basement membrane nephropathy gives asymptomatic hematuria without usual renal failure and has a thinned GBM on electron microscopy, whereas Alport syndrome has a laminated lamina densa."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "937-938" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alport-and-thin-basement-membrane-disease-c021
+    section: differential
+    statement: "In symptom-free glomerular hematuria, IgA nephropathy is a usual suspect alongside thin basement membrane nephropathy."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "938" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alport-and-thin-basement-membrane-disease-c022
+    section: differential
+    statement: "Adults with sporadic or familial FSGS can carry COL4A3 or COL4A4 variants."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "938" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alport-and-thin-basement-membrane-disease-c023
+    section: high-yield
+    statement: "Type IV collagen defects, most often X-linked COL4A5, cause Alport syndrome, with early hematuria, sensorineural hearing loss and lens defects."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "937-938" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alport-and-thin-basement-membrane-disease-c024
+    section: high-yield
+    statement: "Electron microscopy of Alport syndrome shows a laminated, split lamina densa."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "937" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alport-and-thin-basement-membrane-disease-c025
+    section: high-yield
+    statement: "The GBM of thin basement membrane nephropathy, also called benign familial hematuria, measures 150 to 300 nm."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "938" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alport-and-thin-basement-membrane-disease-c026
+    section: traps
+    statement: "Kidney failure and heavy proteinuria are usually absent in thin basement membrane nephropathy."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "938" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alport-and-thin-basement-membrane-disease-c027
+    section: traps
+    statement: "A distorted basement membrane in hereditary nephritis is why anti-GBM antibodies, as in Goodpasture syndrome, miss it."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "937" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
