@@ -1,0 +1,37 @@
+id: congenital-anomalies-kidney-urinary-tract-micro-1
+file: congenital-anomalies-kidney-urinary-tract-micro-1.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:HE_cystic_renal_dysplasia.jpg
+author: Monika Kujdowicz
+license: CC-BY-SA-4.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/4.0
+retrievedAt: 2026-11-15
+modifications:
+  it: Ridimensionata a 960 px di larghezza (rendition JPEG di Wikimedia Commons); nessun altro intervento.
+  en: Resized to 960 px wide (Wikimedia Commons JPEG rendition); no other change.
+attributionText: "Monika Kujdowicz, HE cystic renal dysplasia, via Wikimedia Commons, CC BY-SA 4.0"
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-15 }
+group: renal-dysplasia
+stain: H&E
+magnification: low power
+section: paraffin
+lookFor:
+  it: Parti dal rene normale in alto, poi segui lo stroma fibroso verso il basso e cerca cisti, tubuli primitivi e l'isola di cartilagine.
+  en: Start at the normal kidney at the top, then follow the fibrous stroma downward and look for cysts, primitive tubules and the island of cartilage.
+caption:
+  it: Displasia renale cistica in ematossilina-eosina, a basso ingrandimento. In alto il parenchima renale conserva glomeruli e tubuli. Sotto, lo stroma è disorganizzato, con cisti, tubuli primitivi e un'isola di cartilagine in basso a sinistra.
+  en: Cystic renal dysplasia on H&E, low power. At the top the renal parenchyma keeps its glomeruli and tubules. Below, the stroma is disorganized, with cysts, primitive tubules and an island of cartilage at the lower left.
+alt:
+  it: Micrografia in rosa e viola. In alto tubuli renali ravvicinati; al centro stroma pallido con grandi spazi cistici vuoti e piccoli tubuli sparsi; in basso a sinistra un nodulo di cartilagine, sotto una zona di globuli rossi e tessuto adiposo.
+  en: Pink and purple micrograph. At the top, closely packed renal tubules; in the middle, pale stroma with large empty cystic spaces and small scattered tubules; at the lower left, a nodule of cartilage, with red blood cells and fat below it.
+annotations:
+  - id: preserved-parenchyma
+    label: { it: Parenchima renale conservato, en: Preserved renal parenchyma }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.0, 0.0, 0.92, 0.0, 0.78, 0.15, 0.40, 0.25, 0.0, 0.29] }
+  - id: dysplastic-cartilage
+    label: { it: Isola di cartilagine, en: Island of cartilage }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.02, 0.62, 0.15, 0.60, 0.31, 0.73, 0.30, 0.86, 0.12, 0.84, 0.02, 0.70] }

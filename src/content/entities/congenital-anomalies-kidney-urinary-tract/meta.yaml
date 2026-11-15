@@ -1,0 +1,133 @@
+id: congenital-anomalies-kidney-urinary-tract
+module: o22
+tier: core
+kind: disease
+names:
+  it: "Anomalie congenite del rene e delle vie urinarie"
+  en: "Congenital anomalies of the kidney and urinary tract"
+  eponyms: []
+  synonyms:
+    it: ["CAKUT"]
+    en: ["CAKUT"]
+  abbreviations: ["CAKUT"]
+summary:
+  it: "Malformazioni di reni, ureteri e vescica che nascono durante lo sviluppo embrionale: agenesia, ipoplasia, ectopia, rene a ferro di cavallo, displasia, anomalie ureterali, reflusso vescico-ureterale ed estrofia vescicale."
+  en: "Malformations of the kidneys, ureters and bladder that arise in embryonic development: agenesis, hypoplasia, ectopia, horseshoe kidney, dysplasia, ureteral anomalies, vesicoureteral reflux and bladder exstrophy."
+lenses:
+  system: [kidney, urinary-male-genital]
+  process: []
+  pattern: []
+  presentation: [mass-lesion, incidental-finding]
+  marker: []
+  group: [developmental, genetic]
+learningObjectives:
+  - it: "Distinguere agenesia, ipoplasia, ectopia, rene a ferro di cavallo e displasia renale per definizione e aspetto."
+    en: "Distinguish agenesis, hypoplasia, ectopia, horseshoe kidney and renal dysplasia by definition and appearance."
+  - it: "Spiegare come l'oligoidramnios porta alla sequenza di Potter e perché l'ipoplasia polmonare è la componente letale."
+    en: "Explain how oligohydramnios leads to Potter sequence and why pulmonary hypoplasia is the lethal component."
+  - it: "Descrivere i reperti istologici della displasia renale e il ruolo dell'ostruzione in utero."
+    en: "Describe the histologic findings of renal dysplasia and the role of in utero obstruction."
+  - it: "Riconoscere le principali anomalie di ureteri e vescica, compresi reflusso vescico-ureterale ed estrofia, e le loro complicanze."
+    en: "Recognize the main anomalies of the ureters and bladder, including vesicoureteral reflux and exstrophy, and their complications."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: polycystic-kidney-disease
+    note:
+      it: "La displasia multicistica è di solito monolaterale e senza forma renale; la malattia policistica ha reni ingranditi e multicistici."
+      en: "Multicystic dysplasia is usually unilateral and has no kidney shape; polycystic disease has enlarged multicystic kidneys."
+  - type: causes
+    target: focal-segmental-glomerulosclerosis
+    note:
+      it: "La riduzione congenita del numero di nefroni predispone alla FSGS secondaria."
+      en: "A congenital reduction in nephron number predisposes to secondary FSGS."
+  - type: sharesMechanism
+    target: urolithiasis-and-obstructive-uropathy
+    note:
+      it: "In entrambe l'ostruzione al flusso urinario danneggia il rene."
+      en: "In both, obstruction to urine flow damages the kidney."
+quickCheck:
+  - id: congenital-anomalies-kidney-urinary-tract-q1
+    q:
+      it: "Perché la sequenza di Potter porta a ipoplasia polmonare?"
+      en: "Why does Potter sequence lead to pulmonary hypoplasia?"
+    a:
+      it: "La scarsa produzione di urina fetale riduce il liquido amniotico: mancano gli stimoli di maturazione polmonare e il torace è compresso dall'utero."
+      en: "Low fetal urine output reduces amniotic fluid, so the lungs lack maturation stimuli and the chest is compressed by the uterus."
+    kind: short
+  - id: congenital-anomalies-kidney-urinary-tract-q2
+    q:
+      it: "Perché l'agenesia renale monolaterale di solito non dà insufficienza renale?"
+      en: "Why does unilateral renal agenesis usually not cause renal failure?"
+    a:
+      it: "Il rene controlaterale va incontro a ipertrofia e mantiene una funzione normale."
+      en: "The contralateral kidney hypertrophies and keeps normal function."
+    kind: short
+  - id: congenital-anomalies-kidney-urinary-tract-q3
+    q:
+      it: "Quale reperto istologico caratterizza la displasia renale?"
+      en: "Which histologic finding characterizes renal dysplasia?"
+    a:
+      it: "Tubuli e dotti indifferenziati circondati da mesenchima primitivo, che può contenere muscolo liscio e cartilagine."
+      en: "Undifferentiated tubules and ducts surrounded by primitive mesenchyme, which may contain smooth muscle and cartilage."
+    kind: short
+  - id: congenital-anomalies-kidney-urinary-tract-q4
+    q:
+      it: "Perché il rene a ferro di cavallo predispone a ostruzione e pielonefrite?"
+      en: "Why does horseshoe kidney predispose to obstruction and pyelonephritis?"
+    a:
+      it: "Gli ureteri vengono compressi dove scavalcano la parte fusa dei due reni."
+      en: "The ureters are compressed where they cross the fused part of the two kidneys."
+    kind: short
+  - id: congenital-anomalies-kidney-urinary-tract-q5
+    q:
+      it: "Quale quadro caratterizza la maggior parte dei casi di reflusso vescico-ureterale?"
+      en: "What is the usual clinical picture of vesicoureteral reflux?"
+    a:
+      it: "Tre casi su quattro non danno sintomi, ma il reflusso può causare pielonefrite."
+      en: "Three cases in four give no symptoms, but reflux can cause pyelonephritis."
+    kind: short
+selfExplain:
+  - it: "Perché l'ostruzione delle vie urinarie in utero può causare displasia renale?"
+    en: "Why can obstruction of the urinary tract in utero cause renal dysplasia?"
+  - it: "Perché un uretere che entra nella vescica ad angolo retto favorisce il reflusso?"
+    en: "Why does a ureter that enters the bladder at a right angle favor reflux?"
+examQuestions:
+  - it: "Mi parli delle anomalie congenite del rene: come distingue agenesia, ipoplasia, ectopia e rene a ferro di cavallo?"
+    en: "Tell me about congenital anomalies of the kidney: how do you tell agenesis, hypoplasia, ectopia and horseshoe kidney apart?"
+    focus: [definition, gross]
+    level: 1
+  - it: "Perché nella sequenza di Potter il polmone è la componente letale?"
+    en: "Why is the lung the lethal component of Potter sequence?"
+    focus: [pathogenesis, prognosis]
+    level: 2
+  - it: "Che cosa vede al microscopio in un rene displasico, e che ruolo ha l'ostruzione in utero?"
+    en: "What do you see under the microscope in a dysplastic kidney, and what is the role of obstruction in utero?"
+    focus: [pathogenesis, micro]
+    level: 2
+  - it: "Mi parli delle anomalie degli ureteri: duplicazione, uretere ectopico e ostruzione della giunzione pielo-ureterale."
+    en: "Tell me about ureteral anomalies: duplication, ectopic ureter and ureteropelvic junction obstruction."
+    focus: [etiology, gross, clinical]
+    level: 1
+  - it: "Perché si ha il reflusso vescico-ureterale, e quali sono le sue conseguenze?"
+    en: "Why does vesicoureteral reflux occur, and what are its consequences?"
+    focus: [pathogenesis, clinical, prognosis]
+    level: 2
+  - it: "Mi parli dell'estrofia vescicale: come si forma, che aspetto ha e come cambia il rischio di tumore dopo la riparazione?"
+    en: "Tell me about bladder exstrophy: how does it form, what does it look like, and how does the cancer risk change after repair?"
+    focus: [pathogenesis, gross, prognosis]
+    level: 3
+images:
+  - id: congenital-anomalies-kidney-urinary-tract-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "22"
+    pages: "919-921"
+  - source: rubin-8e
+    chapter: "23"
+    pages: "978, 980"
+lastUpdated: 2026-11-15
+status: published
