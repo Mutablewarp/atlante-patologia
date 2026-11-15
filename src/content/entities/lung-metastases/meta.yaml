@@ -1,0 +1,116 @@
+id: lung-metastases
+module: o18
+tier: core
+kind: disease
+names:
+  it: "Metastasi polmonari"
+  en: "Lung metastases"
+  eponyms: []
+  synonyms:
+    it: ["Metastasi polmonari a palla di cannone", "Carcinosi linfangitica del polmone"]
+    en: ["Cannon ball metastases", "Lymphangitic carcinomatosis of the lung"]
+  abbreviations: []
+summary:
+  it: "Tumori secondari del polmone, i più frequenti tra le neoplasie maligne polmonari: di solito noduli multipli e ben circoscritti, oppure diffusione linfangitica attorno all'albero broncovascolare."
+  en: "Secondary tumors of the lung, the most common malignancies there: usually multiple circumscribed nodules, or lymphangitic spread around the bronchovascular tree."
+lenses:
+  system: [respiratory]
+  process: [neoplasia]
+  pattern: []
+  presentation: [dyspnea, mass-lesion]
+  marker: []
+  group: [neoplastic]
+learningObjectives:
+  - it: "Riconoscere le metastasi polmonari come le neoplasie maligne più frequenti del polmone."
+    en: "Recognize lung metastases as the most common malignancies of the lung."
+  - it: "Descrivere l'aspetto a noduli multipli circoscritti e il quadro radiologico a palla di cannone."
+    en: "Describe the multiple circumscribed nodules and the radiographic cannon ball pattern."
+  - it: "Spiegare la carcinosi linfangitica e indicare i tumori primitivi più frequenti."
+    en: "Explain lymphangitic carcinoma and name its usual primary sites."
+prerequisites: []
+relations:
+  - type: sharesMechanism
+    target: invasion-and-metastasis
+    note:
+      it: "Le metastasi polmonari sono l'esito della disseminazione di un tumore a distanza."
+      en: "Lung metastases are the result of distant spread of a tumor."
+quickCheck:
+  - id: lung-metastases-q1
+    q:
+      it: "Qual è la forma più comune di tumore maligno nel polmone?"
+      en: "What is the most common form of malignant tumor in the lung?"
+    a:
+      it: "Il tumore metastatico."
+      en: "The metastatic tumor."
+    kind: short
+  - id: lung-metastases-q2
+    q:
+      it: "Che cosa indica l'espressione «a palla di cannone»?"
+      en: "What does the term \"cannon ball\" describe?"
+    a:
+      it: "Grandi noduli metastatici multipli visibili all'imaging."
+      en: "Large multiple metastatic nodules seen on imaging."
+    kind: short
+  - id: lung-metastases-q3
+    q:
+      it: "Da quali primitivi deriva di solito la carcinosi linfangitica?"
+      en: "Which primary sites does lymphangitic carcinoma usually arise from?"
+    a:
+      it: "Dalla mammella, dall'intestino o dal pancreas."
+      en: "The breast, the gut or the pancreas."
+    kind: short
+  - id: lung-metastases-q4
+    q:
+      it: "Che aspetto ha di solito una metastasi al microscopio?"
+      en: "What does a metastasis usually look like under the microscope?"
+    a:
+      it: "Nella maggior parte dei casi assomiglia al tumore da cui deriva."
+      en: "In most cases it looks like the tumor that produced it."
+    kind: short
+  - id: lung-metastases-q5
+    q:
+      it: "Quanti pazienti morti di cancro hanno metastasi polmonari all'autopsia?"
+      en: "How many patients who die of cancer have lung metastases at autopsy?"
+    a:
+      it: "Circa un terzo."
+      en: "About one third."
+    kind: short
+selfExplain:
+  - it: "Perché la carcinosi linfangitica dà un quadro radiologico reticolonodulare diffuso e non noduli isolati?"
+    en: "Why does lymphangitic carcinoma give a diffuse reticulonodular pattern rather than isolated nodules?"
+  - it: "Perché una metastasi mucinosa a crescita lepidica orienta verso il tumore primitivo?"
+    en: "Why does a mucinous metastasis with lepidic growth point to the primary site?"
+  - it: "Perché nella carcinosi linfangitica il tumore può diffondersi su un'ampia area del polmone?"
+    en: "Why can the tumor in lymphangitic carcinoma spread over a wide area of the lung?"
+examQuestions:
+  - it: "Mi parli delle metastasi polmonari: quanto sono frequenti e che aspetto hanno?"
+    en: "Tell me about lung metastases: how common are they and what do they look like?"
+    focus: [definition, gross]
+    level: 1
+  - it: "Mi parli della carcinosi linfangitica: da quali tumori primitivi deriva e come si diffonde?"
+    en: "Tell me about lymphangitic carcinoma: which primary tumors cause it and how does it spread?"
+    focus: [etiology, pathogenesis]
+    level: 1
+  - it: "Che cosa vede al microscopio in una metastasi polmonare, e che cosa suggerisce una crescita lepidica mucinosa?"
+    en: "What do you see under the microscope in a lung metastasis, and what does a mucinous lepidic pattern suggest?"
+    focus: [micro, etiology]
+    level: 2
+  - it: "Perché la carcinosi linfangitica dà un quadro reticolonodulare alla radiografia del torace?"
+    en: "Why does lymphangitic carcinoma give a reticulonodular pattern on the chest radiograph?"
+    focus: [pathogenesis, diagnosis]
+    level: 2
+  - it: "Come distingue le metastasi nodulari «a palla di cannone» dalla carcinosi linfangitica?"
+    en: "How do you tell cannon ball nodular metastases from lymphangitic carcinoma?"
+    focus: [gross, diagnosis, differential]
+    level: 3
+images:
+  - id: lung-metastases-gross-1
+    role: gross
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "18"
+    pages: "763"
+lastUpdated: 2026-11-14
+status: published
