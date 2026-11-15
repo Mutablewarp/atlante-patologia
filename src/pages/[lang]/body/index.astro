@@ -10,6 +10,7 @@ import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Breadcrumb from '../../../components/nav/Breadcrumb.astro';
 import BodyTree from '../../../components/body/BodyTree.astro';
 import BodyViewer from '../../../components/body/BodyViewer.astro';
+import BodyPosterPreload from '../../../components/body/BodyPosterPreload.astro';
 import { bodyAttrs } from '../../../components/body/bodyAttrs.ts';
 import { langPaths, type Lang } from '../../../i18n/index.ts';
 import { tAtlas } from '../../../i18n/pages.ts';
@@ -37,6 +38,7 @@ const lenses = ['general', 'systemic'].map((id) => ({ id, label: terms('system')
 ---
 
 <BaseLayout lang={lang} title={t('title')} description={t('intro')} tab="atlas">
+  <BodyPosterPreload slot="head" />
   <Breadcrumb lang={lang} items={[{ label: tAtlas(lang, 'title'), href: langPath(lang, 'atlas/') }, { label: t('title') }]} />
   <header class="page-head">
     <h1>{t('title')}</h1>

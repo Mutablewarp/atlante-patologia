@@ -98,3 +98,19 @@ describe('worker caches of the lazy files', () => {
     expect(sw).toMatch(/!\[SHELL, ASSETS, LAZY\]\.includes\(k\)/);
   });
 });
+
+describe('poster preload', () => {
+  it('the home page and the body page ask for the poster of the system colour scheme at high priority, with the URL of the picture', () => {
+    for (const page of ['it/index.html', 'en/index.html', 'it/body/index.html', 'en/body/index.html']) {
+      const html = readFileSync(join(DIST, page), 'utf8');
+      for (const theme of ['light', 'dark']) {
+        const link = html.match(new RegExp(`<link[^>]*rel="preload"[^>]*poster-${theme}\\.avif[^>]*>`))?.[0] ?? '';
+        expect(link, `${page} ${theme}`).toContain('fetchpriority="high"');
+        expect(link, `${page} ${theme}`).toContain(`media="(prefers-color-scheme: ${theme})"`);
+        expect(html.indexOf(link), `${page} ${theme}: in the head`).toBeLessThan(html.indexOf('</head>'));
+        const href = link.match(/href="([^"]+)"/)![1];
+        expect(html, `${page} ${theme}: the picture uses the same address`).toContain(`srcset="${href}"`);
+      }
+    }
+  });
+});

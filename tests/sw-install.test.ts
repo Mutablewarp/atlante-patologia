@@ -12,7 +12,7 @@ const ORIGIN = 'https://example.test/atlante-patologia/';
 type Store = Map<string, Map<string, Response>>;
 
 /** A Cache API over a Map: names of caches, then URLs. */
-function fakeCaches(store: Store) {
+function fakeCaches(store: Store, fetcher: (input: RequestInfo | URL) => Promise<Response>) {
   const urlOf = (r: RequestInfo | URL) => (typeof r === 'string' ? r : r instanceof URL ? r.href : r.url);
   const cacheOf = (name: string) => {
     const entries = store.get(name)!;
@@ -20,7 +20,7 @@ function fakeCaches(store: Store) {
       match: async (r: RequestInfo | URL) => entries.get(urlOf(r))?.clone(),
       put: async (r: RequestInfo | URL, res: Response) => void entries.set(urlOf(r), res.clone()),
       addAll: async (rs: Request[]) => {
-        for (const r of rs) entries.set(r.url, await (globalThis as { __fetch: typeof fetch }).__fetch(r));
+        for (const r of rs) entries.set(r.url, await fetcher(r));
       },
       keys: async () => [...entries.keys()].map((u) => new Request(u)),
     };
@@ -49,13 +49,12 @@ async function install(store: Store, version: string, files: Record<string, stri
     const path = url.slice(ORIGIN.length);
     return new Response(`${path}@${files[path]}`, { status: 200 });
   };
-  (globalThis as { __fetch?: typeof fetch }).__fetch = fetcher as typeof fetch;
   const context = createContext({
     URL,
     Request,
     Response,
     fetch: fetcher,
-    caches: fakeCaches(store),
+    caches: fakeCaches(store, fetcher),
     self: { location: { href: `${ORIGIN}sw.js` }, addEventListener: (type: string, fn: never) => (handlers[type] = fn), clients: { claim: async () => {} }, skipWaiting: () => {} },
   });
   runInContext(SOURCE.replace("const VERSION = 'dev';", `const VERSION = '${version}';`).replace("const LAZY_VERSION = 'dev';", "const LAZY_VERSION = 'lazy';"), context);

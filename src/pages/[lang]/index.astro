@@ -4,6 +4,7 @@ import { join } from 'node:path';
 import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
 import BodyHome from '../../components/body/BodyHome.astro';
+import BodyPosterPreload from '../../components/body/BodyPosterPreload.astro';
 import '../../styles/body.css';
 import { langPaths, fmt, type Lang } from '../../i18n/index.ts';
 import { tCommon, SITE_NAME } from '../../i18n/common.ts';
@@ -51,6 +52,7 @@ const sections = (['I', 'II', 'III'] as const).map((s) => ({
 ---
 
 <BaseLayout lang={lang} title={SITE_NAME} description={t('metaDescription')} tab="home">
+  <BodyPosterPreload slot="head" />
   <header class="hero">
     <p class="kicker">{lang === 'it' ? 'Anatomia patologica · Pathology' : 'Pathology · Anatomia patologica'}</p>
     <h1>Atlante <em>di Patologia</em></h1>
