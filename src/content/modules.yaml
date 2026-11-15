@@ -368,49 +368,8 @@
   label:
     it: "Fegato e vie biliari"
     en: "Liver and biliary system"
-  status: planned
+  status: published
   refPages: "862-924"
-  planned:
-    - id: alcoholic-liver-disease
-      names: { it: "Epatopatia alcolica", en: "Alcoholic liver disease" }
-    - id: nonalcoholic-fatty-liver-disease
-      names: { it: "Steatosi epatica non alcolica (MASLD)", en: "Nonalcoholic fatty liver disease (MASLD)" }
-    - id: hereditary-hemochromatosis
-      names: { it: "Emocromatosi ereditaria", en: "Hereditary hemochromatosis" }
-    - id: acute-viral-hepatitis
-      names: { it: "Epatite virale acuta", en: "Acute viral hepatitis" }
-    - id: alpha1-antitrypsin-deficiency
-      names: { it: "Deficit di alfa-1-antitripsina", en: "Alpha-1-antitrypsin deficiency" }
-    - id: chronic-viral-hepatitis
-      names: { it: "Epatite virale cronica", en: "Chronic viral hepatitis" }
-    - id: autoimmune-hepatitis
-      names: { it: "Epatite autoimmune", en: "Autoimmune hepatitis" }
-    - id: drug-induced-liver-injury
-      names: { it: "Danno epatico da farmaci", en: "Drug-induced liver injury" }
-    - id: cirrhosis
-      names: { it: "Cirrosi epatica", en: "Cirrhosis" }
-    - id: portal-hypertension
-      names: { it: "Ipertensione portale", en: "Portal hypertension" }
-    - id: primary-biliary-cholangitis
-      names: { it: "Colangite biliare primitiva (ex cirrosi biliare primitiva)", en: "Primary biliary cholangitis" }
-    - id: primary-sclerosing-cholangitis
-      names: { it: "Colangite sclerosante primitiva", en: "Primary sclerosing cholangitis" }
-    - id: wilson-disease
-      names: { it: "Malattia di Wilson", en: "Wilson disease" }
-    - id: benign-liver-tumors
-      names: { it: "Tumori epatici benigni e lesioni simil-tumorali", en: "Benign liver tumors and tumor-like lesions" }
-    - id: hepatocellular-carcinoma
-      names: { it: "Carcinoma epatocellulare", en: "Hepatocellular carcinoma" }
-    - id: cholangiocarcinoma
-      names: { it: "Colangiocarcinoma", en: "Cholangiocarcinoma" }
-    - id: liver-metastases
-      names: { it: "Metastasi epatiche", en: "Liver metastases" }
-    - id: cholelithiasis
-      names: { it: "Calcolosi biliare", en: "Cholelithiasis" }
-    - id: cholecystitis
-      names: { it: "Colecistiti acute e croniche", en: "Acute and chronic cholecystitis" }
-    - id: gallbladder-carcinoma
-      names: { it: "Carcinoma della colecisti e delle vie biliari extraepatiche", en: "Gallbladder and extrahepatic bile-duct carcinoma" }
 - id: o21
   section: III
   order: 21
@@ -420,14 +379,6 @@
   status: planned
   refPages: "925-939"
   planned:
-    - id: acute-pancreatitis
-      names: { it: "Pancreatite acuta", en: "Acute pancreatitis" }
-    - id: chronic-pancreatitis
-      names: { it: "Pancreatite cronica", en: "Chronic pancreatitis" }
-    - id: pancreatic-cystic-neoplasms
-      names: { it: "Neoplasie cistiche del pancreas", en: "Pancreatic cystic neoplasms" }
-    - id: pancreatic-ductal-adenocarcinoma
-      names: { it: "Adenocarcinoma duttale del pancreas", en: "Pancreatic ductal adenocarcinoma" }
     - id: pancreatic-neuroendocrine-tumors
       names: { it: "Tumori neuroendocrini del pancreas", en: "Pancreatic neuroendocrine tumors" }
 - id: o22

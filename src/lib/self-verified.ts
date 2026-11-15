@@ -15,6 +15,8 @@ export type SelfVerified = {
 };
 
 export const SELF_VERIFIED: readonly SelfVerified[] = [
+  { ledger: 'acute-pancreatitis', claims: 4, name: { it: 'Pancreatite acuta', en: 'Acute pancreatitis' }, path: 'e/acute-pancreatitis/' },
+  { ledger: 'acute-viral-hepatitis', claims: 1, name: { it: 'Epatite virale acuta', en: 'Acute viral hepatitis' }, path: 'e/acute-viral-hepatitis/' },
   {
     ledger: 'anca-associated-vasculitis',
     claims: 6,
@@ -34,13 +36,21 @@ export const SELF_VERIFIED: readonly SelfVerified[] = [
     name: { it: 'Substrati morfologici delle aritmie e morte cardiaca improvvisa', en: 'Morphological substrates of arrhythmia and sudden cardiac death' },
     path: 'e/arrhythmia-substrates-and-sudden-cardiac-death/',
   },
+  { ledger: 'autoimmune-hepatitis', claims: 4, name: { it: 'Epatite autoimmune', en: 'Autoimmune hepatitis' }, path: 'e/autoimmune-hepatitis/' },
   { ledger: 'autophagy', claims: 3, name: { it: 'Autofagia', en: 'Autophagy' }, path: 'e/autophagy/' },
   { ledger: 'barrett-esophagus', claims: 1, name: { it: 'Esofago di Barrett', en: 'Barrett esophagus' }, path: 'e/barrett-esophagus/' },
   { ledger: 'bronchiectasis', claims: 5, name: { it: 'Bronchiectasie', en: 'Bronchiectasis' }, path: 'e/bronchiectasis/' },
   { ledger: 'carcinogenic-agents', claims: 8, name: { it: 'Agenti cancerogeni', en: 'Carcinogenic agents' }, path: 'e/carcinogenic-agents/' },
   { ledger: 'carcinoma-in-situ', claims: 1, name: { it: 'Carcinoma in situ', en: 'Carcinoma in situ' }, path: 'e/carcinoma-in-situ/' },
+  { ledger: 'cholangiocarcinoma', claims: 7, name: { it: 'Colangiocarcinoma', en: 'Cholangiocarcinoma' }, path: 'e/cholangiocarcinoma/' },
+  { ledger: 'cholecystitis', claims: 1, name: { it: 'Colecistiti acute e croniche', en: 'Acute and chronic cholecystitis' }, path: 'e/cholecystitis/' },
+  { ledger: 'cholelithiasis', claims: 1, name: { it: 'Calcolosi biliare', en: 'Cholelithiasis' }, path: 'e/cholelithiasis/' },
+  { ledger: 'chronic-pancreatitis', claims: 1, name: { it: 'Pancreatite cronica', en: 'Chronic pancreatitis' }, path: 'e/chronic-pancreatitis/' },
+  { ledger: 'chronic-viral-hepatitis', claims: 1, name: { it: 'Epatite virale cronica', en: 'Chronic viral hepatitis' }, path: 'e/chronic-viral-hepatitis/' },
+  { ledger: 'cirrhosis', claims: 4, name: { it: 'Cirrosi epatica', en: 'Cirrhosis' }, path: 'e/cirrhosis/' },
   { ledger: 'colorectal-adenocarcinoma', claims: 1, name: { it: 'Adenocarcinoma del colon-retto', en: 'Colorectal adenocarcinoma' }, path: 'e/colorectal-adenocarcinoma/' },
   { ledger: 'colorectal-adenoma', claims: 1, name: { it: 'Adenoma del colon-retto', en: 'Colorectal adenoma' }, path: 'e/colorectal-adenoma/' },
+  { ledger: 'drug-induced-liver-injury', claims: 2, name: { it: 'Danno epatico da farmaci', en: 'Drug-induced liver injury' }, path: 'e/drug-induced-liver-injury/' },
   { ledger: 'dysplasia', claims: 1, name: { it: 'Displasia', en: 'Dysplasia' }, path: 'e/dysplasia/' },
   { ledger: 'dystrophic-calcification', claims: 1, name: { it: 'Calcificazione distrofica', en: 'Dystrophic calcification' }, path: 'e/dystrophic-calcification/' },
   { ledger: 'emphysema', claims: 3, name: { it: 'Enfisema', en: 'Emphysema' }, path: 'e/emphysema/' },
@@ -84,6 +94,12 @@ export const SELF_VERIFIED: readonly SelfVerified[] = [
   { ledger: 'mitral-valve-prolapse', claims: 2, name: { it: 'Prolasso della valvola mitrale', en: 'Mitral valve prolapse' }, path: 'e/mitral-valve-prolapse/' },
   { ledger: 'myocarditis', claims: 1, name: { it: 'Miocardite', en: 'Myocarditis' }, path: 'e/myocarditis/' },
   {
+    ledger: 'nonalcoholic-fatty-liver-disease',
+    claims: 5,
+    name: { it: 'Malattia epatica steatosica associata a disfunzione metabolica (MASLD)', en: 'Metabolic dysfunction-associated steatotic liver disease (MASLD)' },
+    path: 'e/nonalcoholic-fatty-liver-disease/',
+  },
+  {
     ledger: 'other-regulated-cell-death',
     claims: 17,
     name: { it: 'Altre forme di morte cellulare regolata (anoikis, NETosi, entosi, morte da granzimi)', en: 'Other regulated cell death (anoikis, NETosis, entosis, granzyme-mediated)' },
@@ -98,6 +114,7 @@ export const SELF_VERIFIED: readonly SelfVerified[] = [
     path: 'e/pleural-effusion-and-pleural-fluid-cytology/',
   },
   { ledger: 'polyarteritis-nodosa', claims: 1, name: { it: 'Poliarterite nodosa', en: 'Polyarteritis nodosa' }, path: 'e/polyarteritis-nodosa/' },
+  { ledger: 'primary-biliary-cholangitis', claims: 5, name: { it: 'Colangite biliare primitiva', en: 'Primary biliary cholangitis' }, path: 'e/primary-biliary-cholangitis/' },
   {
     ledger: 'protein-quality-control',
     claims: 1,
