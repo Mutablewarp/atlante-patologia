@@ -1,0 +1,530 @@
+entity: alpha1-antitrypsin-deficiency
+claims:
+  - claimId: alpha1-antitrypsin-deficiency-c001
+    section: definition
+    statement: "Alpha-1-antitrypsin deficiency is inherited in an autosomal recessive way."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c002
+    section: definition
+    statement: "The liver is the main producer of alpha-1-antitrypsin, a protease inhibitor of the serpin family."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c003
+    section: definition
+    statement: "The lung form was described first; some patients have only liver disease and some have both."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c004
+    section: definition
+    statement: "No other genetic liver disease is as frequent, and no other genetic disease leads to as many liver transplants."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c005
+    section: definition
+    statement: "The deficiency is found in roughly 1 in 2,000 live births."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c006
+    section: definition
+    statement: "Liver disease develops in only 10% to 15% of people with the deficiency."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c007
+    section: definition
+    statement: "About 1% of COPD patients have the genetic alpha-1-antitrypsin deficiency."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c008
+    section: definition
+    statement: "Young people with severe emphysema are the group in which the genetic deficiency is much more common."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c009
+    section: etiology
+    statement: "The deficiency arises from mutations in the gene SERPINA1, which is also named PI (protease inhibitor)."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c010
+    section: etiology
+    statement: "A person's two SERPINA1 alleles are codominant, and the combination sets the quantity and the variant of alpha-1-antitrypsin."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c011
+    section: etiology
+    statement: "Most people carry two M alleles because M, the allele giving normal alpha-1-antitrypsin production, is the most common."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c012
+    section: etiology
+    statement: "People with two Z alleles are probably deficient, because Z, and to a lesser degree S, produces less alpha-1-antitrypsin."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c013
+    section: etiology
+    statement: "PiZ is more common in people of Scandinavian descent and is the most serious of the abnormal alleles."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c014
+    section: etiology
+    statement: "Tobacco smoke oxidizes methionine residues of alpha-1-antitrypsin, which lowers its activity."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c015
+    section: pathogenesis
+    statement: "PiZ is present in 95% of cases and carries lysine in place of glutamate at position 342."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c016
+    section: pathogenesis
+    statement: "Misfolding of the mutant protein leaves it retained in the endoplasmic reticulum of the hepatocyte."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c017
+    section: pathogenesis
+    statement: "The hepatocyte is damaged because the mutant protein piles up as insoluble aggregates that cannot be exported."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c018
+    section: pathogenesis
+    statement: "PiZZ homozygotes have only 15% to 20% of normal plasma alpha-1-antitrypsin, because the liver secretes the abnormal protein poorly."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c019
+    section: pathogenesis
+    statement: "In the lung, alpha-1-antitrypsin restrains neutrophil elastase, which attacks elastin and the rest of the alveolar wall."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c020
+    section: pathogenesis
+    statement: "Emphysema appears when elastin breakdown outruns its inhibition, upsetting the normal balance with elastin synthesis."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c021
+    section: pathogenesis
+    statement: "Without enough inhibitor, elastase digests the elastic tissue of the distal airway walls."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c022
+    section: gross
+    statement: "The typical lung lesion is panacinar emphysema, in which the entire acinus is destroyed."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "723, 726" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c023
+    section: gross
+    statement: "Alveolar septa disappear progressively from the center of the acinus outward, until only a sparse supporting scaffold remains."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "726" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c024
+    section: gross
+    statement: "In smokers with both types, centrilobular disease sits in the upper zones and panacinar disease in the lower zones."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "726" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c025
+    section: gross
+    statement: "In children with neonatal hepatitis from the deficiency, cirrhosis is micronodular by age 2 to 3 and may later turn macronodular."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c026
+    section: micro
+    statement: "The cytoplasm of hepatocytes holds droplets that are PAS-positive and faintly eosinophilic."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c027
+    section: micro
+    statement: "Each droplet is misfolded mutant protein without recognizable structure, packed into dilated ER cisternae."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c028
+    section: micro
+    statement: "In the pictured cirrhotic liver, many hepatocytes hold PAS-positive, diastase-resistant globules of misfolded alpha-1-antitrypsin."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c029
+    section: micro
+    statement: "Cirrhosis is the end point of the chronic hepatitis with which the liver disease often presents."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c030
+    section: micro
+    statement: "Next to normal lung at equal magnification, the affected lung has lost most alveolar walls, leaving big irregular spaces."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "726" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c031
+    section: ancillary
+    statement: "On routine H&E the diagnostic clue is faintly eosinophilic cytoplasmic droplets within hepatocytes."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c032
+    section: ancillary
+    statement: "After diastase digestion removes glycogen, globules that still stain with PAS are misfolded alpha-1-antitrypsin."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c033
+    section: ancillary
+    statement: "PiZZ homozygotes are at risk of cirrhosis and emphysema, while PiMM is the most common genotype."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c034
+    section: clinical
+    statement: "Liver disease ranges from no hepatic dysfunction at all to rapidly fatal neonatal hepatitis, so the course is highly variable."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c035
+    section: clinical
+    statement: "Neonatal cholestatic jaundice (conjugated hyperbilirubinemia) occurs in 10% of infants with the ZZ genotype."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c036
+    section: clinical
+    statement: "Of all cases of neonatal conjugated hyperbilirubinemia, 30% are due to the deficiency."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c037
+    section: clinical
+    statement: "Within 6 months most affected infants have recovered."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c038
+    section: clinical
+    statement: "Permanent liver disease remains in 10% to 20% of these infants."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c039
+    section: clinical
+    statement: "In some patients cirrhosis first declares itself in early adulthood, after years without symptoms."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c040
+    section: clinical
+    statement: "Emphysema recognized before age 40 usually points to the genetic PiZ deficiency."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c041
+    section: clinical
+    statement: "PiZZ people who do not smoke first develop emphysema at ages 45 to 50."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c042
+    section: clinical
+    statement: "In PiZZ smokers, emphysema starts 5 to 10 years sooner than in PiZZ nonsmokers."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c043
+    section: clinical
+    statement: "In most nonsmoking PiZZ people, emphysema never appears."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c044
+    section: clinical
+    statement: "Breathlessness on exertion lasts for years, while cough, if present, is mild and dry."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "726" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c045
+    section: diagnosis
+    statement: "PAS-positive, diastase-resistant cytoplasmic globules in hepatocytes are the characteristic liver histology."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c046
+    section: diagnosis
+    statement: "Plasma alpha-1-antitrypsin is far below normal in PiZZ homozygotes."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c047
+    section: prognosis
+    statement: "Liver failure and other complications of cirrhosis kill most affected children before age 10."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c048
+    section: prognosis
+    statement: "Liver transplantation cures the liver disease."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c049
+    section: prognosis
+    statement: "Hepatocellular carcinoma is frequent in the cirrhotic liver of these patients."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c050
+    section: differential
+    statement: "The centrilobular type damages the upper lobes most, is the commonest form of emphysema and usually goes with smoking."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "723, 725" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c051
+    section: differential
+    statement: "The Reid index of mucus gland size is more than 0.5 in chronic bronchitis."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c052
+    section: differential
+    statement: "In cystic fibrosis, mucus plugs in intrahepatic bile channels lead mainly to biliary cirrhosis, focal or diffuse."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c053
+    section: high-yield
+    statement: "The liver releases little of the abnormal Z protein, so PiZZ homozygotes have low plasma alpha-1-antitrypsin."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c054
+    section: high-yield
+    statement: "PAS-positive, diastase-resistant hepatocyte globules are the misfolded mutant protein retained in the cell."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c055
+    section: high-yield
+    statement: "Panacinar emphysema is the type typically associated with alpha-1-antitrypsin deficiency."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "726" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c056
+    section: high-yield
+    statement: "The liver disease often starts as chronic hepatitis that progresses to cirrhosis, and hepatocellular carcinoma is common in that cirrhosis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c057
+    section: high-yield
+    statement: "Alpha-1-antitrypsin deficiency accounts for 30% of neonatal conjugated hyperbilirubinemia."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c058
+    section: high-yield
+    statement: "Smoking brings emphysema forward by 5 to 10 years in PiZZ homozygotes."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c059
+    section: traps
+    statement: "Only 10% to 15% of people with the deficiency develop liver disease."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c060
+    section: traps
+    statement: "Most PiZZ people who have never smoked have no emphysema."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c061
+    section: traps
+    statement: "Diastase digestion removes glycogen; the globules that stay PAS-positive are misfolded alpha-1-antitrypsin protein."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c062
+    section: traps
+    statement: "In the liver, the mutant protein accumulates in hepatocytes and damages the cell."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c063
+    section: traps
+    statement: "In the lung, too little alpha-1-antitrypsin leaves neutrophil elastase unopposed, which destroys alveolar wall tissue."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "723" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c064
+    section: traps
+    statement: "Panacinar emphysema, not the centrilobular type, is the pattern typically associated with alpha-1-antitrypsin deficiency."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "726" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c065
+    section: mnemonics
+    statement: "The Z protein is retained inside hepatocytes and too little inhibitor reaches the lung."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: alpha1-antitrypsin-deficiency-c066
+    section: mnemonics
+    statement: "Diastase removes glycogen but the globules of misfolded protein remain."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "878" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15

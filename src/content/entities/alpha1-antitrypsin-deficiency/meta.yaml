@@ -1,0 +1,123 @@
+id: alpha1-antitrypsin-deficiency
+module: o20
+tier: core
+kind: disease
+names:
+  it: "Deficit di alfa-1-antitripsina"
+  en: "Alpha-1-antitrypsin deficiency"
+  eponyms: []
+  synonyms:
+    it: ["Deficit di α1-antitripsina"]
+    en: ["α1-antitrypsin deficiency", "α1-AT deficiency"]
+  abbreviations: ["AATD", "α1-AT"]
+summary:
+  it: "Malattia genetica autosomica recessiva in cui la proteina Z mutata si accumula negli epatociti e manca nel sangue, causando cirrosi ed enfisema panacinare."
+  en: "Autosomal recessive genetic disease in which the mutant Z protein accumulates in hepatocytes and is lacking in the blood, causing cirrhosis and panacinar emphysema."
+lenses:
+  system: [liver-biliary, respiratory]
+  process: [intracellular-accumulation, proteostasis]
+  pattern: [intracellular-inclusions]
+  presentation: [jaundice, dyspnea]
+  marker: [pas, special-stains, molecular]
+  group: [genetic, metabolic]
+learningObjectives:
+  - it: "Spiegare perché l'allele PiZ causa sia malattia epatica sia enfisema."
+    en: "Explain why the PiZ allele causes both liver disease and emphysema."
+  - it: "Riconoscere i globuli PAS-positivi e resistenti alla diastasi negli epatociti."
+    en: "Recognize PAS-positive, diastase-resistant globules in hepatocytes."
+  - it: "Descrivere l'enfisema panacinare tipico del deficit e distinguerlo da quello centrolobulare."
+    en: "Describe the panacinar emphysema typical of the deficiency and tell it from the centrilobular type."
+  - it: "Indicare le manifestazioni cliniche epatiche e polmonari e il ruolo del fumo."
+    en: "State the liver and lung presentations and the role of smoking."
+prerequisites: [protein-quality-control]
+relations:
+  - type: sharesMechanism
+    target: protein-quality-control
+    note:
+      it: "Una proteina mal ripiegata resta nel reticolo endoplasmatico e si accumula."
+      en: "A misfolded protein stays in the endoplasmic reticulum and accumulates."
+  - type: causes
+    target: emphysema
+    note:
+      it: "La carenza di inibitore lascia l'elastasi neutrofila senza opposizione."
+      en: "The lack of inhibitor leaves neutrophil elastase unopposed."
+  - type: causes
+    target: cirrhosis
+    note:
+      it: "L'accumulo della proteina mutata negli epatociti porta a epatite cronica e cirrosi."
+      en: "Accumulation of the mutant protein in hepatocytes leads to chronic hepatitis and cirrhosis."
+  - type: differentialOf
+    target: chronic-bronchitis
+    note:
+      it: "Un'altra malattia ostruttiva del polmone, con ghiandole mucose ingrandite anziché setti alveolari distrutti."
+      en: "Another obstructive lung disease, with enlarged mucus glands rather than destroyed alveolar septa."
+  - type: mimics
+    target: cystic-fibrosis
+    note:
+      it: "Può dare epatopatia colestatica e cirrosi biliare nei primi anni di vita."
+      en: "Can cause cholestatic liver disease and biliary cirrhosis early in life."
+quickCheck:
+  - id: alpha1-antitrypsin-deficiency-q1
+    q:
+      it: "Perché il fumo anticipa l'enfisema nei soggetti PiZZ?"
+      en: "Why does smoking bring emphysema forward in PiZZ people?"
+    a:
+      it: "Il fumo ossida la metionina dell'α1-antitripsina e ne riduce l'attività, quindi l'elastasi agisce ancora meno contrastata."
+      en: "Smoke oxidizes methionine in α1-antitrypsin and lowers its activity, so elastase is even less opposed."
+    kind: short
+  - id: alpha1-antitrypsin-deficiency-q2
+    q:
+      it: "Che cosa mostra la PAS dopo digestione con diastasi in un fegato con deficit di α1-antitripsina?"
+      en: "What does PAS after diastase digestion show in a liver with α1-antitrypsin deficiency?"
+    a:
+      it: "Globuli citoplasmatici negli epatociti, composti da proteina mal ripiegata, che restano colorati dopo la rimozione del glicogeno."
+      en: "Cytoplasmic globules in hepatocytes, made of misfolded protein, that stay stained after glycogen is removed."
+    kind: short
+  - id: alpha1-antitrypsin-deficiency-q3
+    q:
+      it: "Il danno epatico e quello polmonare nascono dallo stesso meccanismo?"
+      en: "Do the liver and lung damage arise from the same mechanism?"
+    a:
+      it: "No: nel fegato la proteina mutata si accumula nelle cellule; nel polmone manca l'inibitore circolante."
+      en: "No: in the liver the mutant protein accumulates in the cells; in the lung the circulating inhibitor is lacking."
+    kind: short
+selfExplain:
+  - it: "Perché una proteina mal ripiegata trattenuta nel reticolo endoplasmatico danneggia l'epatocita?"
+    en: "Why does a misfolded protein retained in the endoplasmic reticulum damage the hepatocyte?"
+  - it: "Perché nei soggetti PiZZ il polmone è colpito anche se la proteina viene prodotta nel fegato?"
+    en: "Why is the lung affected in PiZZ people even though the protein is made in the liver?"
+examQuestions:
+  - it: "Mi parli del genotipo PiZZ: quale proteina produce e che cosa ne consegue nel sangue?"
+    en: "Tell me about the PiZZ genotype: what protein does it produce, and what follows in the blood?"
+    focus: [etiology, pathogenesis]
+    level: 1
+  - it: "Che cosa vede al microscopio nel fegato con deficit di α1-antitripsina e quali colorazioni userebbe?"
+    en: "What do you see under the microscope in the liver in α1-antitrypsin deficiency, and which stains would you use?"
+    focus: [micro, ancillary, diagnosis]
+    level: 1
+  - it: "Perché il deficit di α1-antitripsina può causare sia cirrosi sia enfisema panacinare?"
+    en: "Why can α1-antitrypsin deficiency cause both cirrhosis and panacinar emphysema?"
+    focus: [pathogenesis, traps]
+    level: 2
+  - it: "Perché il fumo anticipa l'enfisema nei soggetti PiZZ e perché molti PiZZ non fumatori non lo sviluppano?"
+    en: "Why does smoking bring emphysema forward in PiZZ people, and why do many nonsmoking PiZZ people never develop it?"
+    focus: [etiology, clinical]
+    level: 2
+  - it: "Come distingue l'enfisema panacinare del deficit da quello centrolobulare?"
+    en: "How do you tell the panacinar emphysema of this deficiency from the centrilobular type?"
+    focus: [gross, differential, traps]
+    level: 3
+images:
+  - { id: alpha1-antitrypsin-deficiency-micro-1, role: micro }
+  - { id: alpha1-antitrypsin-deficiency-micro-2, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "18"
+    pages: "723, 725-726"
+  - source: rubin-8e
+    chapter: "20"
+    pages: "878"
+lastUpdated: 2026-11-15
+status: published
