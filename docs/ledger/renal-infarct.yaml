@@ -1,0 +1,418 @@
+entity: renal-infarct
+claims:
+- claimId: renal-infarct-c001
+  section: definition
+  statement: "An embolus lodged in an artery, usually interlobar or arcuate, accounts for most renal infarcts"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "954" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c002
+  section: definition
+  statement: "Necrosis of one or a few zones after arterial blockage is called an infarct"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "955" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c003
+  section: definition
+  statement: "Cortical necrosis is widespread ischemic death of the cortex, whole or partial"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "955" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c004
+  section: etiology
+  statement: "A larger occluded vessel produces a larger renal infarct"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "954" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c005
+  section: etiology
+  statement: "Mural thrombi forming over a myocardial infarct or in atrial fibrillation can embolize to the kidney"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "954" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c006
+  section: etiology
+  statement: "Infected valves in bacterial endocarditis are a source of renal emboli"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "954" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c007
+  section: etiology
+  statement: "Emboli to the kidney can come from ulcerated, complex atheromas of the aorta"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "954" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c008
+  section: etiology
+  statement: "Thrombosis on top of atherosclerosis or arteritis occasionally occludes a renal artery branch"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "954" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c009
+  section: etiology
+  statement: "Narrowing of small renal artery branches by HUS, scleroderma or malignant hypertension can starve the tissue of blood"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "954" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c010
+  section: etiology
+  statement: "Sickle cell anemia infarcts the kidney mainly at the papillae"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "954" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c011
+  section: etiology
+  statement: "Hemorrhagic infarction can follow renal vein thrombosis, in adults with septic thrombophlebitis or hypercoagulability and in infants with severe dehydration"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "954" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c012
+  section: etiology
+  statement: "Cortical necrosis is a possible complication of shock from volume loss or endotoxin"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "955" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c013
+  section: etiology
+  statement: "The classical trigger of cortical necrosis is a placenta separating prematurely late in pregnancy"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "955" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c014
+  section: pathogenesis
+  statement: "Collateral flow usually saves the kidney, so main renal artery occlusion rarely infarcts all of it"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "954" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c015
+  section: pathogenesis
+  statement: "Irreversible cortical necrosis follows a phase of reversible prerenal or intrarenal ischemia in shock"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "955" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c016
+  section: pathogenesis
+  statement: "Outer cortical vessels lie downstream of the medullary vasa recta on the juxtamedullary efferent arteriole"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "955" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c017
+  section: pathogenesis
+  statement: "Closure of outer cortical vessels by spasm, clots or microangiopathy kills the cortex and spares the medulla"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "955" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c018
+  section: gross
+  statement: "A typical renal infarct is a pale wedge of ischemic necrosis whose broad side, the base, faces the capsular surface"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "954" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c019
+  section: gross
+  statement: "Acute infarcts are bordered by a zone of hemorrhage"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "954" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c020
+  section: gross
+  statement: "After healing, an infarct leaves a sharply circumscribed, depressed scar in the cortex"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "954" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c021
+  section: gross
+  statement: "Necrotic cortex ranges from scattered patches to fused areas"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "955" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c022
+  section: gross
+  statement: "In extensive cortical necrosis the cortex looks pale and is necrotic throughout"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "955" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c023
+  section: gross
+  statement: "Capsular collaterals sustain a thin subcapsular rim of cortex, and medullary collaterals one at the corticomedullary junction"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "955" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c024
+  section: gross
+  statement: "Dead cortex can calcify in patients who survive cortical necrosis"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "955" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c025
+  section: micro
+  statement: "No structure in the infarcted zone of a renal infarct escapes coagulative necrosis"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "954" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c026
+  section: micro
+  statement: "The tissue reaction to the infarct begins with acute inflammation, then granulation tissue, and ends in fibrosis"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "954" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c027
+  section: micro
+  statement: "Healed infarcts are fibrous scars with mild chronic inflammation, atrophic tubules and ghost glomeruli"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "954" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c028
+  section: micro
+  statement: "Dystrophic calcification can develop in long-standing infarcts"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "954" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c029
+  section: micro
+  statement: "Repeated sublethal ischemia can cause tubular atrophy and fibrosis in viable tissue at the margin of a healed infarct"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "954-955" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c030
+  section: micro
+  statement: "In the worst areas of cortical necrosis, coagulative necrosis involves all parenchymal elements"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "955" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c031
+  section: micro
+  statement: "Cortical necrosis invariably includes the proximal convoluted tubules, along with most distal tubules"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "955" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c032
+  section: micro
+  statement: "Many proximal tubules of the surviving cortex beside the dead zone are ischemically injured; glomeruli and distal tubules mostly escape"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "955" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c033
+  section: ancillary
+  statement: "A renal biopsy may be required to diagnose cortical necrosis"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "955" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c034
+  section: clinical
+  statement: "Hematuria and severe flank or abdominal pain usually mark an acute renal infarct"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "954" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c035
+  section: clinical
+  statement: "A kidney infarcted in its entirety loses all function"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "954" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c036
+  section: clinical
+  statement: "In the early phase, severe cortical necrosis can mimic acute tubular injury, since both produce acute renal failure"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "955" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c037
+  section: diagnosis
+  statement: "Diagnosing cortical necrosis may need a biopsy or a renal arteriogram"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "955" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c038
+  section: prognosis
+  statement: "Irreversibility is more frequent in cortical necrosis than in acute tubular injury"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "955" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c039
+  section: prognosis
+  statement: "How much recovery occurs after cortical necrosis depends on how extensive the disease is"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "955" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c040
+  section: prognosis
+  statement: "Survivors of cortical necrosis commonly develop hypertension"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "955" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c041
+  section: differential
+  statement: "Acute tubular injury produces acute renal failure like cortical necrosis but is less often irreversible"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "955" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c042
+  section: differential
+  statement: "An arteriogram or biopsy may be needed to establish cortical necrosis rather than acute tubular injury"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "955" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c043
+  section: differential
+  statement: "A renal infarct is a wedge-shaped area with its base on the capsule"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "954" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c044
+  section: high-yield
+  statement: "An embolic renal infarct is a pale wedge with its base on the capsular surface"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "954" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c045
+  section: high-yield
+  statement: "Cortical necrosis complicates shock, classically after the placenta separates prematurely in late pregnancy"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "955" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c046
+  section: high-yield
+  statement: "Cortical necrosis spares the medulla because the vasa recta arise proximal to the outer cortical vessels"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "955" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c047
+  section: high-yield
+  statement: "Thin subcapsular and corticomedullary rims of cortex survive because of collateral supply"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "955" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c048
+  section: high-yield
+  statement: "Infarcts and cortical necrosis show coagulative necrosis and may undergo dystrophic calcification"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "954-955" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c049
+  section: traps
+  statement: "Cortical necrosis is widespread and often follows shock, whereas an infarct is a limited zone below a blocked artery"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "955" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c050
+  section: traps
+  statement: "Collateral vessels usually spare the kidney, so total infarction from main renal artery occlusion is rare"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "954" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c051
+  section: mnemonics
+  statement: "Renal infarct: pale wedge with base on the capsule, emboli from heart or aorta, coagulative necrosis, hemorrhagic border, depressed scar"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "954" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: renal-infarct-c052
+  section: differential
+  statement: "A renal infarct is recognized by its wedge shape"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "954" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15

@@ -1,0 +1,124 @@
+id: renal-infarct
+module: o22
+tier: extended
+kind: disease
+names:
+  it: "Infarto renale e necrosi corticale"
+  en: "Renal infarct and cortical necrosis"
+  eponyms: []
+  synonyms:
+    it: ["Necrosi corticale renale"]
+    en: ["Renal cortical necrosis"]
+  abbreviations: []
+summary:
+  it: "Necrosi ischemica del rene: l'infarto è un'area pallida a cuneo da occlusione arteriosa, per lo più embolica; la necrosi corticale è una necrosi estesa della corticale, tipica dello shock e del distacco di placenta."
+  en: "Ischemic necrosis of the kidney: an infarct is a pale wedge from arterial occlusion, mostly embolic; cortical necrosis is widespread necrosis of the cortex, typical of shock and placental abruption."
+lenses:
+  system: [kidney]
+  process: [necrosis, hypoxic-ischemic-injury, thrombosis-embolism]
+  pattern: [necrosis-coagulative, dystrophic-calcification]
+  presentation: [ischemic-event, hematuria]
+  marker: []
+  group: [vascular]
+learningObjectives:
+  - it: "Descrivere l'infarto renale pallido a cuneo con base sulla capsula e le sue fonti emboliche."
+    en: "Describe the pale wedge-shaped renal infarct with its base on the capsule and its embolic sources."
+  - it: "Spiegare perché la necrosi corticale colpisce la corticale e risparmia la midollare."
+    en: "Explain why cortical necrosis hits the cortex and spares the medulla."
+  - it: "Collegare la necrosi corticale allo shock e al distacco prematuro di placenta."
+    en: "Link cortical necrosis to shock and premature placental separation."
+  - it: "Distinguere l'infarto dalla necrosi corticale e dal danno tubulare acuto."
+    en: "Tell an infarct from cortical necrosis and from acute tubular injury."
+prerequisites: [coagulative-necrosis]
+relations:
+  - type: sameLesionOtherOrgan
+    target: coagulative-necrosis
+    note:
+      it: "L'infarto renale è un'area cuneiforme di necrosi coagulativa."
+      en: "A renal infarct is a wedge-shaped area of coagulative necrosis."
+  - type: differentialOf
+    target: acute-tubular-injury
+    note:
+      it: "Anche il danno tubulare acuto dà insufficienza renale acuta, ma più spesso reversibile."
+      en: "Acute tubular injury also gives acute renal failure, but more often reversible."
+  - type: sameLesionOtherOrgan
+    target: myocardial-infarction
+    note:
+      it: "Anche l'infarto miocardico può essere fonte di emboli da trombo murale."
+      en: "A myocardial infarct can also be a source of emboli from mural thrombus."
+quickCheck:
+  - id: renal-infarct-q1
+    q:
+      it: "Che aspetto ha un infarto renale embolico recente?"
+      en: "What does a recent embolic renal infarct look like?"
+    a:
+      it: "Un'area pallida a cuneo con la base sulla capsula e un bordo emorragico."
+      en: "A pale wedge with its base on the capsule and a hemorrhagic border."
+    kind: short
+  - id: renal-infarct-q2
+    q:
+      it: "In quale contesto classico compare la necrosi corticale?"
+      en: "In which classic setting does cortical necrosis appear?"
+    a:
+      it: "Nello shock, classicamente il distacco prematuro di placenta a fine gravidanza."
+      en: "In shock, classically premature placental separation late in pregnancy."
+    kind: short
+  - id: renal-infarct-q3
+    q:
+      it: "Perché la necrosi corticale risparmia la midollare?"
+      en: "Why does cortical necrosis spare the medulla?"
+    a:
+      it: "I vasa recta nascono dalle arteriole efferenti iuxtamidollari, a monte dei vasi della corticale esterna."
+      en: "The vasa recta arise from juxtamedullary efferent arterioles, upstream of the outer cortical vessels."
+    kind: short
+  - id: renal-infarct-q4
+    q:
+      it: "Perché l'occlusione dell'arteria renale principale raramente infarta tutto il rene?"
+      en: "Why does main renal artery occlusion rarely infarct the whole kidney?"
+    a:
+      it: "Il circolo collaterale in genere mantiene vitale l'organo."
+      en: "Collateral circulation generally keeps the organ alive."
+    kind: short
+selfExplain:
+  - it: "Perché un'occlusione dell'arteria renale principale raramente infarta l'intero rene?"
+    en: "Why does occlusion of the main renal artery rarely infarct the whole kidney?"
+  - it: "Perché restano sottili bande di corticale vitale sotto la capsula?"
+    en: "Why do thin rims of viable cortex remain under the capsule?"
+chain:
+  - pathology:
+      it: "Infarto renale da embolia arteriosa"
+      en: "Renal infarct from arterial embolism"
+    sign:
+      it: "Dolore acuto al fianco o all'addome"
+      en: "Sharp flank or abdominal pain"
+    lab:
+      it: "Ematuria"
+      en: "Hematuria"
+examQuestions:
+  - it: "Mi parli dell'infarto renale embolico: che aspetto ha e da dove vengono gli emboli?"
+    en: "Tell me about the embolic renal infarct: what does it look like, and where do the emboli come from?"
+    focus: [etiology, gross]
+    level: 1
+  - it: "Mi parli della necrosi corticale renale: in quale contesto compare e che cosa vede al microscopio?"
+    en: "Tell me about renal cortical necrosis: in which setting does it appear, and what do you see under the microscope?"
+    focus: [etiology, micro]
+    level: 1
+  - it: "Perché la necrosi corticale colpisce la corticale e risparmia la midollare?"
+    en: "Why does cortical necrosis hit the cortex and spare the medulla?"
+    focus: [pathogenesis]
+    level: 2
+  - it: "Come distingue una necrosi corticale da un danno tubulare acuto?"
+    en: "How do you tell cortical necrosis from acute tubular injury?"
+    focus: [clinical, diagnosis, differential]
+    level: 3
+images:
+  - id: renal-infarct-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "22"
+    pages: "954-955"
+lastUpdated: 2026-11-15
+status: published
