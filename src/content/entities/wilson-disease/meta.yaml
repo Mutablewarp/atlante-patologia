@@ -1,0 +1,126 @@
+id: wilson-disease
+module: o20
+tier: core
+kind: disease
+names:
+  it: "Malattia di Wilson"
+  en: "Wilson disease"
+  eponyms: ["Wilson"]
+  synonyms:
+    it: ["Degenerazione epatolenticolare"]
+    en: ["Hepatolenticular degeneration"]
+  abbreviations: ["WD"]
+summary:
+  it: "Malattia autosomica recessiva del metabolismo del rame, da mutazioni di ATP7B, con accumulo di rame in fegato, cervello e cornea."
+  en: "Autosomal recessive disorder of copper metabolism, caused by ATP7B mutations, with copper accumulating in liver, brain and cornea."
+lenses:
+  system: [liver-biliary, cns, eye]
+  process: [intracellular-accumulation, oxidative-injury]
+  pattern: [fatty-change, hyaline-change]
+  presentation: [jaundice]
+  marker: [laboratory, molecular]
+  group: [genetic, metabolic]
+learningObjectives:
+  - it: "Spiegare come le mutazioni di ATP7B causano accumulo di rame e ceruloplasmina bassa."
+    en: "Explain how ATP7B mutations cause copper accumulation and low ceruloplasmin."
+  - it: "Descrivere le lesioni di fegato (steatosi, epatite cronica, cirrosi) e dei nuclei lenticolari."
+    en: "Describe the lesions of the liver (steatosis, chronic hepatitis, cirrhosis) and of the lenticular nuclei."
+  - it: "Riconoscere l'anello di Kayser-Fleischer e sapere che cosa rappresenta."
+    en: "Recognize the Kayser–Fleischer ring and know what it represents."
+  - it: "Indicare gli esami che orientano la diagnosi e i trattamenti disponibili."
+    en: "Name the tests that point to the diagnosis and the available treatments."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: hereditary-hemochromatosis
+    note:
+      it: "Cirrosi da accumulo di metallo: rame nella malattia di Wilson, ferro nell'emocromatosi."
+      en: "Cirrhosis from metal overload: copper in Wilson disease, iron in hemochromatosis."
+  - type: differentialOf
+    target: alpha1-antitrypsin-deficiency
+    note:
+      it: "Altra malattia genetica recessiva con cirrosi: globuli PAS-positivi anziché rame."
+      en: "Another recessive genetic cause of cirrhosis: PAS-positive globules instead of copper."
+  - type: mimics
+    target: chronic-viral-hepatitis
+    note:
+      it: "La malattia epatica di Wilson può essere indistinguibile da un'altra epatite cronica."
+      en: "Wilson liver disease can be indistinguishable from other chronic hepatitis."
+  - type: causes
+    target: cirrhosis
+    note:
+      it: "L'epatite cronica da rame evolve in cirrosi, da micronodulare a macronodulare."
+      en: "Chronic copper hepatitis evolves into cirrhosis, from micronodular to macronodular."
+quickCheck:
+  - id: wilson-disease-q1
+    q:
+      it: "Perché nella malattia di Wilson la ceruloplasmina sierica è molto bassa?"
+      en: "Why is serum ceruloplasmin very low in Wilson disease?"
+    a:
+      it: "ATP7B mutata impedisce il trasporto del rame negli epatociti, quindi il rame non viene incorporato nella ceruloplasmina né escreto nella bile."
+      en: "Mutant ATP7B blocks copper transport inside hepatocytes, so copper is neither incorporated into ceruloplasmin nor excreted into bile."
+    kind: short
+  - id: wilson-disease-q2
+    q:
+      it: "Che cos'è l'anello di Kayser-Fleischer?"
+      en: "What is the Kayser–Fleischer ring?"
+    a:
+      it: "Rame depositato nella membrana di Descemet, che dà una banda bruno-dorata al margine della cornea."
+      en: "Copper deposited in Descemet membrane, giving a golden-brown band at the edge of the cornea."
+    kind: short
+  - id: wilson-disease-q3
+    q:
+      it: "Quali lesioni epatiche e cerebrali caratterizzano la malattia?"
+      en: "Which liver and brain lesions characterize the disease?"
+    a:
+      it: "Fegato: epatite cronica, steatosi, ialino di Mallory-Denk, cirrosi. Cervello: colorazione dorata dei nuclei lenticolari, cisti o fessure nel putamen, perdita neuronale e gliosi."
+      en: "Liver: chronic hepatitis, steatosis, Mallory–Denk hyalin, cirrhosis. Brain: golden lenticular nuclei, cysts or clefts in the putamen, neuron loss and gliosis."
+    kind: short
+selfExplain:
+  - it: "Perché la morte degli epatociti porta a danni in cervello, rene e occhio?"
+    en: "Why does death of hepatocytes lead to damage in brain, kidney and eye?"
+  - it: "Perché il trapianto di fegato è curativo?"
+    en: "Why is liver transplantation curative?"
+chain:
+  - pathology:
+      it: "Mutazione di ATP7B con accumulo di rame nell'epatocita"
+      en: "ATP7B mutation with copper accumulation in the hepatocyte"
+    sign:
+      it: "Anello di Kayser-Fleischer e disturbo del movimento"
+      en: "Kayser–Fleischer ring and movement disorder"
+    lab:
+      it: "Ceruloplasmina sierica molto bassa"
+      en: "Very low serum ceruloplasmin"
+examQuestions:
+  - it: "Mi parli della malattia di Wilson: quale gene è mutato e che cosa fa la proteina che codifica?"
+    en: "Tell me about Wilson disease: which gene is mutated and what does its protein do?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Che cosa vede nel fegato, nel cervello e nell'occhio nella malattia di Wilson?"
+    en: "What do you see in the liver, the brain and the eye in Wilson disease?"
+    focus: [gross, micro]
+    level: 1
+  - it: "Perché nella malattia di Wilson la ceruloplasmina sierica è molto bassa, pur essendo alto il rame nei tessuti?"
+    en: "Why is serum ceruloplasmin very low in Wilson disease even though tissue copper is high?"
+    focus: [pathogenesis, diagnosis]
+    level: 2
+  - it: "Un giovane adulto ha un disturbo del movimento e segni di epatopatia. A quale malattia pensa e quali reperti la sosterrebbero?"
+    en: "A young adult has a movement disorder and signs of liver disease. Which disease do you think of, and which findings would support it?"
+    focus: [clinical, diagnosis]
+    level: 3
+  - it: "Come distingue la malattia di Wilson dall'emocromatosi e dal deficit di alfa-1-antitripsina?"
+    en: "How do you tell Wilson disease from hemochromatosis and from alpha-1-antitrypsin deficiency?"
+    focus: [differential]
+    level: 3
+images: []
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "20"
+    pages: "876-878"
+  - source: rubin-8e
+    chapter: "32"
+    pages: "1487"
+lastUpdated: 2026-11-15
+status: published
