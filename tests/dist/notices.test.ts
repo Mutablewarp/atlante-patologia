@@ -19,6 +19,8 @@ const SHIPPED = [
   'ts-fsrs/LICENSE',
   'pagefind/LICENSE/LICENSE',
   '3dmol/LICENSE',
+  'three/LICENSE', // the 3D body, with the meshopt decoder
+  'meshoptimizer/LICENSE.md',
 ];
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
 

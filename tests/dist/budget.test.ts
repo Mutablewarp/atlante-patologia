@@ -24,8 +24,11 @@ const CONTENT_JS_MAX = 50 * KB;
 const STUDY_JS_MAX = 120 * KB;
 const isStudy = (url: string) => /^\/atlante-patologia\/(it|en)\/study\//.test(url);
 
-/** Imported only after a learner's action: the command palette (⌘/Ctrl K) and the 3D view button. */
-const ON_DEMAND = /\/(?:palette|structure-3d)\.[\w-]+\.js$/;
+/**
+ * Imported only after a learner's action or once the page is idle: the command palette (⌘/Ctrl K), the 3D view button and
+ * the 3D body (three.js, loaded by body-viewer.ts after the page settles; its own budget is in body.test.ts).
+ */
+const ON_DEMAND = /\/(?:palette|structure-3d|body-3d)\.[\w-]+\.js$/;
 /** Imported at once, but only when the page meets the condition (read from the built HTML). */
 const WHEN: [chunk: RegExp, html: RegExp][] = [
   // BaseLayout.astro: the personal layer, for its custom elements.
@@ -107,5 +110,6 @@ describe('size budget', () => {
       expect(at(url)).not.toContain('palette');
       expect(at(url)).not.toContain('structure-3d');
     }
+    expect(at('it/body/')).not.toContain('body-3d');
   });
 });

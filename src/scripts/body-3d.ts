@@ -7,8 +7,8 @@
 import { DirectionalLight, HemisphereLight, Mesh, PerspectiveCamera, Raycaster, Scene, Vector2, Vector3, WebGLRenderer, type Group, type Object3D } from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { MeshoptDecoder } from 'three/addons/libs/meshopt_decoder.module.js';
-import { cameraFor, roles, selectable, type BodyManifest, type BodyState, type Box, type Role, type View } from '../lib/body-view.ts';
-import { createLook, type Colors } from './body-3d-look.ts';
+import { cameraFor, roles, selectable, systemsFor, type BodyManifest, type BodyState, type Box, type Role, type View } from '../lib/body-view.ts';
+import { createLook, GHOST_WHOLE, type Colors } from './body-3d-look.ts';
 
 export type { Colors };
 type Manifest = BodyManifest & { shell: { file: string }; systems: Record<string, { file: string; organs: string[] }> };
@@ -25,14 +25,20 @@ export type Controller = {
 };
 export type Options = {
   manifestUrl: string;
+  /** the manifest request, started before the chunk was imported so that both travel at once */
+  manifestResponse?: Promise<Response>;
   reducedMotion: boolean;
   colors: Colors;
   /** Organs with a published card; the others are drawn lighter. Absent: all count as published. */
   published?: Iterable<string>;
   /** Called after each frame with the canvas position (CSS px) of the selected organ, or null: the page places its label there. */
   labelAt?: (point: { x: number; y: number } | null) => void;
-  /** Called when the browser takes the WebGL context away after mount() has resolved: show the poster and offer a retry. */
+  /** Called when the browser takes the WebGL context away after mount() has resolved (or a frame throws): show the poster and offer a retry. */
   onLost?: () => void;
+  /** Called when a file of the whole-body prefetch fails: the viewer keeps what it has. A failure of showSystem(id) rejects instead. */
+  onError?: (error: unknown) => void;
+  /** Called on a tap (not a drag or a pinch) with the organ under the release point, or null on nothing. */
+  onPick?: (organ: string | null) => void;
 };
 
 const SHELL = 'skin';
@@ -41,6 +47,8 @@ const MIN_DIST = 0.06;
 const MAX_DIST = 6;
 const STEP = 0.3;
 const PITCH_MAX = 1.4;
+const TAP_PX = 6;
+const TAP_MS = 400;
 
 const ease = (t: number) => (t < 0.5 ? 4 * t * t * t : 1 - (-2 * t + 2) ** 3 / 2);
 const clamp = (v: number, lo: number, hi: number) => Math.min(hi, Math.max(lo, v));
@@ -52,13 +60,14 @@ const freeGeometries = (root: Object3D) => root.traverse((o) => (o as Mesh).geom
 
 export async function mount(canvas: HTMLCanvasElement, opts: Options): Promise<Controller> {
   const manifestUrl = new URL(opts.manifestUrl, location.href);
-  const res = await fetch(manifestUrl);
+  const res = await (opts.manifestResponse ?? fetch(manifestUrl));
   if (!res.ok) throw new Error(`manifest: HTTP ${res.status}`);
   const manifest = (await res.json()) as Manifest;
   const published = new Set(opts.published ?? Object.keys(manifest.organs));
   const allOrgans = Object.keys(manifest.organs);
 
-  const renderer = new WebGLRenderer({ canvas, antialias: true, alpha: true });
+  // Multisampling at pixel ratio 2 costs about 4x the memory for little gain: phones are already at that density.
+  const renderer = new WebGLRenderer({ canvas, antialias: window.devicePixelRatio < 2, alpha: true });
   renderer.setClearColor(0x000000, 0);
   let lostReject: (e: Error) => void = () => {};
   const lost = new Promise<never>((_, reject) => (lostReject = reject));
@@ -91,6 +100,7 @@ export async function mount(canvas: HTMLCanvasElement, opts: Options): Promise<C
   let firstFrame = () => {};
   const ready = new Promise<void>((resolve) => (firstFrame = resolve));
   let disposed = false;
+  let observer: ResizeObserver | undefined;
 
   const framing = (): Box => {
     const ids = state.organ ? [state.organ, ...(manifest.organs[state.organ]?.of ?? [])] : allOrgans.filter((id) => state.system !== null && manifest.organs[id].system === state.system);
@@ -148,6 +158,7 @@ export async function mount(canvas: HTMLCanvasElement, opts: Options): Promise<C
     invalidate();
   }
 
+  let token = 0;
   const loader = new GLTFLoader().setMeshoptDecoder(MeshoptDecoder);
   const collect = (root: Object3D, ids: Set<string>, shell: boolean) => {
     root.traverse((o) => {
@@ -169,7 +180,7 @@ export async function mount(canvas: HTMLCanvasElement, opts: Options): Promise<C
   const pending = new Map<string, Promise<void>>();
   const ensure = (system: string): Promise<void> => {
     const s = manifest.systems[system];
-    if (!s) return Promise.resolve(); // `skin` has no file of its own: the shell is its mesh
+    if (!s || disposed) return Promise.resolve(); // `skin` has no file of its own: the shell is its mesh
     let p = pending.get(system);
     if (!p) {
       p = loadFile(s.file, new Set(s.organs), false);
@@ -177,6 +188,20 @@ export async function mount(canvas: HTMLCanvasElement, opts: Options): Promise<C
       p.catch(() => pending.delete(system)); // a failed file can be retried
     }
     return p;
+  };
+
+  /** The whole-body view: every system, the heavy ghosts last, one file at a time (each decode runs on the main thread). */
+  const prefetch = async (mine: number) => {
+    const late = new Set([...GHOST_WHOLE].map((id) => manifest.organs[id]?.system));
+    const order = Object.keys(manifest.systems).sort((a, b) => Number(late.has(a)) - Number(late.has(b)));
+    try {
+      for (const s of order) {
+        if (mine !== token || disposed) return;
+        await guard(ensure(s));
+      }
+    } catch (e) {
+      if (!disposed) opts.onError?.(e);
+    }
   };
 
   const place = () => {
@@ -187,6 +212,14 @@ export async function mount(canvas: HTMLCanvasElement, opts: Options): Promise<C
   const draw = (now: number) => {
     frame = 0;
     if (disposed) return;
+    try {
+      drawFrame(now);
+    } catch (e) {
+      lostReject(e instanceof Error ? e : new Error(String(e))); // the same way out as a lost context: poster, message, retry
+      opts.onLost?.();
+    }
+  };
+  const drawFrame = (now: number) => {
     if (move) {
       const t = clamp((now - move.start) / MOVE_MS, 0, 1);
       const k = ease(t);
@@ -213,16 +246,16 @@ export async function mount(canvas: HTMLCanvasElement, opts: Options): Promise<C
     const w = canvas.clientWidth;
     const h = canvas.clientHeight;
     if (!w || !h) return;
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+    const ratio = Math.min(window.devicePixelRatio || 1, 2);
+    if (renderer.getPixelRatio() !== ratio) renderer.setPixelRatio(ratio);
     renderer.setSize(w, h, false);
     camera.aspect = w / h;
     camera.updateProjectionMatrix();
     if (view && !move) pose = poseFor(view); // the stage changed shape: fit again, unless the learner moved the camera
-    invalidate();
+    // setSize cleared the canvas: draw now, or one frame shows an empty stage
+    if (frame) cancelAnimationFrame(frame);
+    draw(performance.now());
   };
-  const observer = new ResizeObserver(resize);
-  observer.observe(canvas);
-  resize();
 
   // Drag rotates (touch: horizontally only, the page keeps the vertical scroll); a pinch, or ctrl + wheel, zooms.
   const pointers = new Map<number, { x: number; y: number }>();
@@ -237,14 +270,51 @@ export async function mount(canvas: HTMLCanvasElement, opts: Options): Promise<C
     pose.dist = clamp(pose.dist * f, MIN_DIST, MAX_DIST);
     invalidate();
   };
+  const ray = new Raycaster();
+  const pickAt = (x: number, y: number): string | null => {
+    const meshes = selectable(manifest, state).flatMap((id) => meshesOf.get(id) ?? []);
+    ray.setFromCamera(new Vector2((x / canvas.clientWidth) * 2 - 1, -(y / canvas.clientHeight) * 2 + 1), camera);
+    // A ghost (muscle and bones in the whole-body view, the container of an inner organ) loses to a solid organ behind
+    // it, and is tested only when no solid organ is under the point: the ghosts are the largest meshes.
+    const hit = ray.intersectObjects(meshes.filter((m) => !m.userData.ghost), false)[0] ?? ray.intersectObjects(meshes.filter((m) => m.userData.ghost), false)[0];
+    return (hit?.object.userData.organ as string | undefined) ?? null;
+  };
+  const local = (e: PointerEvent) => {
+    const r = canvas.getBoundingClientRect();
+    return { x: e.clientX - r.left, y: e.clientY - r.top };
+  };
+
+  // A tap: one pointer, up within TAP_PX of where it went down and within TAP_MS, and never a second pointer meanwhile.
+  let tap: { id: number; x: number; y: number; at: number; ok: boolean } | null = null;
+  // A mouse shows what a click would do: at most one pick per frame.
+  let hover: { x: number; y: number } | null = null;
+  let hoverFrame = 0;
+  const hoverPick = () => {
+    hoverFrame = 0;
+    if (!hover || disposed) return;
+    canvas.style.cursor = pickAt(hover.x, hover.y) ? 'pointer' : 'grab';
+  };
   const onDown = (e: PointerEvent) => {
     pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
-    canvas.setPointerCapture(e.pointerId);
+    try {
+      canvas.setPointerCapture(e.pointerId);
+    } catch {
+      /* a pointer that is no longer active (a synthetic event): the gesture still works without capture */
+    }
+    if (pointers.size === 1) tap = { id: e.pointerId, ...local(e), at: performance.now(), ok: true };
+    else if (tap) tap.ok = false;
+    if (e.pointerType === 'mouse') canvas.style.cursor = 'grabbing';
     if (pointers.size === 2) pinch = spread();
   };
   const onMove = (e: PointerEvent) => {
     const last = pointers.get(e.pointerId);
-    if (!last) return;
+    if (!last) {
+      if (e.pointerType === 'mouse' && !e.buttons) {
+        hover = local(e);
+        if (!hoverFrame) hoverFrame = requestAnimationFrame(hoverPick);
+      }
+      return;
+    }
     const dx = e.clientX - last.x;
     const dy = e.clientY - last.y;
     pointers.set(e.pointerId, { x: e.clientX, y: e.clientY });
@@ -261,24 +331,26 @@ export async function mount(canvas: HTMLCanvasElement, opts: Options): Promise<C
     invalidate();
   };
   const onUp = (e: PointerEvent) => {
+    const t = tap;
     pointers.delete(e.pointerId);
     pinch = 0;
+    if (pointers.size === 0) tap = null;
+    if (e.pointerType === 'mouse') canvas.style.cursor = 'grab';
+    if (!t || !t.ok || t.id !== e.pointerId || e.type !== 'pointerup') return;
+    const p = local(e);
+    if (Math.hypot(p.x - t.x, p.y - t.y) > TAP_PX || performance.now() - t.at > TAP_MS) return;
+    opts.onPick?.(pickAt(p.x, p.y));
   };
   const onWheel = (e: WheelEvent) => {
     if (!e.ctrlKey) return; // a plain wheel scrolls the page; a pinch on a trackpad arrives as ctrl + wheel
     e.preventDefault();
     zoom(Math.exp(clamp(e.deltaY, -25, 25) * 0.01));
   };
-  canvas.addEventListener('pointerdown', onDown);
-  canvas.addEventListener('pointermove', onMove);
-  canvas.addEventListener('pointerup', onUp);
-  canvas.addEventListener('pointercancel', onUp);
-  canvas.addEventListener('wheel', onWheel, { passive: false });
-
   function dispose() {
     disposed = true;
     cancelAnimationFrame(frame);
-    observer.disconnect();
+    cancelAnimationFrame(hoverFrame);
+    observer?.disconnect();
     canvas.removeEventListener('webglcontextlost', onLost);
     canvas.removeEventListener('pointerdown', onDown);
     canvas.removeEventListener('pointermove', onMove);
@@ -288,9 +360,18 @@ export async function mount(canvas: HTMLCanvasElement, opts: Options): Promise<C
     for (const g of loaded) freeGeometries(g);
     look.dispose();
     renderer.dispose();
+    renderer.forceContextLoss(); // dispose() leaves the context alive; the next start gets a new canvas
   }
 
   try {
+    observer = new ResizeObserver(resize);
+    observer.observe(canvas);
+    resize();
+    canvas.addEventListener('pointerdown', onDown);
+    canvas.addEventListener('pointermove', onMove);
+    canvas.addEventListener('pointerup', onUp);
+    canvas.addEventListener('pointercancel', onUp);
+    canvas.addEventListener('wheel', onWheel, { passive: false });
     await loadFile(manifest.shell.file, new Set([SHELL]), true);
     shown = true;
     pose = poseFor('front');
@@ -301,8 +382,6 @@ export async function mount(canvas: HTMLCanvasElement, opts: Options): Promise<C
     throw e;
   }
 
-  let token = 0;
-  const ray = new Raycaster();
   return {
     async showSystem(id) {
       const mine = ++token;
@@ -311,8 +390,12 @@ export async function mount(canvas: HTMLCanvasElement, opts: Options): Promise<C
       restyle();
       view = 'front';
       goTo(poseFor('front'));
-      for (const s of id === null ? Object.keys(manifest.systems) : [id]) {
-        if (mine !== token) return;
+      if (id === null) {
+        void prefetch(mine); // nothing waits for the whole body: a tap on a system must not queue behind 17 files
+        return;
+      }
+      for (const s of systemsFor(manifest, id)) {
+        if (mine !== token || disposed) return;
         await guard(ensure(s));
       }
     },
@@ -322,14 +405,7 @@ export async function mount(canvas: HTMLCanvasElement, opts: Options): Promise<C
       view = state.organ ? 'organ' : 'front';
       goTo(poseFor(view));
     },
-    pick(x, y) {
-      const hits = selectable(manifest, state).flatMap((id) => meshesOf.get(id) ?? []);
-      ray.setFromCamera(new Vector2((x / canvas.clientWidth) * 2 - 1, -(y / canvas.clientHeight) * 2 + 1), camera);
-      const found = ray.intersectObjects(hits, false);
-      // A ghost (muscle and bones in the whole-body view, the container of an inner organ) loses to a solid organ behind it.
-      const hit = found.find((h) => !h.object.userData.ghost) ?? found[0];
-      return (hit?.object.userData.organ as string | undefined) ?? null;
-    },
+    pick: pickAt,
     act(name) {
       if (name === 'front' || name === 'back' || name === 'side' || name === 'reset') {
         view = name === 'reset' ? (state.organ ? 'organ' : 'front') : name;

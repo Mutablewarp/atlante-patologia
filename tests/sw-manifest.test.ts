@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { imagesIn, isLazyCached, isShellAsset, LAZY_ONLY, versionOf } from '../scripts/sw-manifest.mjs';
+import { imagesIn, isLazyCached, isMutableLazy, isShellAsset, LAZY_ONLY, versionOf } from '../scripts/sw-manifest.mjs';
 
 describe('sw-manifest imagesIn', () => {
   it('collects same-site images from src, srcset and href, relative to the base', () => {
@@ -44,3 +44,25 @@ describe('sw-manifest version', () => {
   });
 });
 
+describe('sw-manifest body viewer', () => {
+  it('keeps the body-3d chunk out of the shell and caches it and the anatomy files on first use', () => {
+    expect(isShellAsset('_astro/body-3d.XXXXXXXX.js')).toBe(false);
+    expect(LAZY_ONLY.test('_astro/body-3d.XXXXXXXX.js')).toBe(true);
+    expect(isLazyCached('_astro/body-3d.XXXXXXXX.js')).toBe(true);
+    expect(isLazyCached('anatomy/heart.glb')).toBe(true);
+  });
+
+  it('an anatomy file changes the worker version without being precached', () => {
+    const shell = { 'it/': 'aaaa' };
+    expect(versionOf({ ...shell, 'anatomy/heart.glb': '1111' })).not.toBe(versionOf({ ...shell, 'anatomy/heart.glb': '2222' }));
+  });
+});
+
+describe('sw-manifest lazy cache', () => {
+  it('only files whose names stay put version the lazy cache; hashed chunks do not', () => {
+    expect(isMutableLazy('anatomy/heart.glb')).toBe(true);
+    expect(isMutableLazy('structures/6o0k.bcif.gz')).toBe(true);
+    expect(isMutableLazy('_astro/body-3d.XXXXXXXX.js')).toBe(false);
+    expect(isMutableLazy('_astro/index.abc.css')).toBe(false);
+  });
+});

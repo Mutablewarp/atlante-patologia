@@ -3,6 +3,7 @@
  * Canonical entity page (NAVIGATION_SPEC §4, CONTENT_SCHEMA §1).
  * Generated only for visible entities (published, or drafts with PREVIEW_DRAFTS=1).
  */
+import { getCollection } from 'astro:content';
 import BaseLayout from '../../../layouts/BaseLayout.astro';
 import Breadcrumb from '../../../components/nav/Breadcrumb.astro';
 import EntityHeader from '../../../components/entity/EntityHeader.astro';
@@ -14,6 +15,8 @@ import ChapterDialog from '../../../components/horizontal/ChapterDialog.astro';
 import { tHz } from '../../../i18n/horizontal.ts';
 import { LENSES } from '../../../lib/schema.ts';
 import { withCrossLinks, imageById, patternsForEntity, SECTION_FOR_ROLE } from '../../../lib/horizontal.ts';
+import WhereInBody from '../../../components/entity/WhereInBody.astro';
+import { organsOfCard } from '../../../lib/anatomy.ts';
 import EntityActions from '../../../components/entity/EntityActions.astro';
 import EntityPinned from '../../../components/entity/EntityPinned.astro';
 import CardPager from '../../../components/entity/CardPager.astro';
@@ -88,6 +91,12 @@ const wrapTables = (html: string, section: string) =>
 const imgs = await imageById();
 const imagesIn = (section: string) => entity.images.filter((i) => SECTION_FOR_ROLE[i.role] === section);
 const entityPatterns = await patternsForEntity(id);
+const systemLabel = (sid: string) => systemTax?.terms.find((x) => x.id === sid)?.label[lang] ?? sid;
+const organs = organsOfCard(entity, (await getCollection('anatomy')).map((o) => o.data)).map((o) => ({
+  id: o.id,
+  label: o.label[lang],
+  system: systemLabel(o.system),
+}));
 
 // Lens context (?via=lens:term): breadcrumb + prev/next for every lens term of this entity, as compact JSON that
 // lens-context.ts turns into markup (src/lib/lens-context.ts). Rendered as <template>s these were 15-25 % of the page.
@@ -226,6 +235,9 @@ const lensData: LensData = {
 
         {/* v2/3d-pathways: pathways of this entity (renders nothing when there are none) */}
         <EntityPathways lang={lang} entity={id} />
+
+        {/* With the related cards, not above the definition: the first sentence of a card stays on the first screen (reading.spec.ts, nav.spec.ts) */}
+        <WhereInBody lang={lang} organs={organs} />
 
         <RelatedPanel lang={lang} groups={relations} data={data} />
         {

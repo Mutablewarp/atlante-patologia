@@ -15,7 +15,7 @@ Purpose: the learner studies pathology by organ system. They open a body, pick a
 | Primary interface | The server-rendered tree (system, organ, cards). The canvas mirrors its selection | Works without JavaScript, without WebGL, with a keyboard and a screen reader |
 | State | The URL hash: `#sys-<system>` or `#organ-<organ>` | Back, links and no-JavaScript jumps work with no extra code |
 | Home | The home page is a short description of the atlas, then the body: stage, system chips, and a link to the full page. `/[lang]/body/` keeps the whole tree | Owner request of 2026-11-13: the body is the way into the atlas, and it must work well on a phone (this replaces plan decision D7) |
-| Loading | Poster first; it already shows the body. On screens ≥ 48rem 3D starts by itself when idle. On a phone it starts on one tap on the poster. Never when Save-Data is on or the learner turned 3D off | Page budget (about 120 kB of JavaScript) and Lighthouse ≥ 90 on a phone connection |
+| Loading | Poster first; it already shows the body. On screens ≥ 48rem with a mouse (hover and a fine pointer) 3D starts by itself after load, when idle. On a phone and on any touch screen it starts on one tap on the poster. Never when Save-Data is on, on a 3G or slower connection, or when the learner turned 3D off | Page budget (about 120 kB of JavaScript) and Lighthouse ≥ 90 on a phone connection |
 | Colour | Hematoxylin and eosin: organs in eosin tones, the selection in hematoxylin (`--eosin`, `--hema` in `src/styles/tokens.css`) | The atlas's own colour language; passes in both themes |
 
 ## 2. Sources and licences (checked at the source on 2026-11-13)
@@ -81,7 +81,7 @@ Route `/[lang]/body/` (`src/pages/[lang]/body/index.astro`), linked from the Atl
 - Cards under an organ are grouped by `process` term and sorted in syllabus order. A count sits next to each system and organ.
 - A published card maps to organs by `organsOfCard` (`src/lib/anatomy.ts`). A planned card has no organ yet: it is listed once under its system (module `o16`–`o33` ↔ system, an explicit map in `src/lib/anatomy.ts`).
 - Cards of `general` and `systemic` without `sites` are not on the body: one closing section links to those two lenses.
-- Without JavaScript every system section is visible and the chips are in-page links. With the viewer running, only the selected system's section is shown, beside the stage on wide screens and under it on narrow ones.
+- Without JavaScript every system section is visible and the chips are in-page links. With the viewer running and a system chosen by the learner (a chip, a link, a key), only that system's section is shown, beside the stage on wide screens and under it on narrow ones. Until then, and on a deep link, every section stays visible: hiding them when 3D starts by itself would shift the page. The selected chip and organ link carry `aria-current="true"`.
 
 ## 6. Viewer
 
@@ -103,7 +103,8 @@ export function mount(canvas: HTMLCanvasElement, opts: { manifestUrl: string; re
 - Selection flows one way: a click in the tree, a tap on the canvas, a key or a link changes `location.hash`; `hashchange` drives tree and canvas. `<ap-body>` reflects it in `data-system`, `data-organ` and `data-webgl="on|off"` (tests read these).
 - Picking: ray against the organ meshes of the selected system (all systems when none is selected). A tap is a pointer that moved less than 6 px. The shell is pickable only when the system is `skin`.
 - An organ of kind `proxy` selects the meshes in `of`. `inside` ghosts the container. `none` selects nothing and the status line says so.
-- Rendering on demand: one frame per change, a loop only during a camera move. Pixel ratio capped at 2. Context loss shows the poster and a retry button.
+- Loading: `showSystem(id)` loads the file of `id` and the files of the systems that its proxies stand for or sit inside (bone marrow shows the bones, which are another file); `showSystem(null)` returns at once and streams every system one at a time, the heavy ghosts (muscle, bones, breast) last, and a failure of that stream reports through `onError` while the viewer keeps what it has. A later `showSystem` cancels the stream.
+- Rendering on demand: one frame per change, a loop only during a camera move. Pixel ratio capped at 2. Context loss, or a frame that throws, shows the poster and a retry button; turning 3D off or losing the context gives the next start a new canvas, because a disposed context is not reused. The label moves with `transform` only (left and top would count as layout shift).
 - Buttons for every action: rotate left and right, zoom in and out, front, back, side, reset, previous and next organ, turn 3D off. Keys on the stage: arrows, `+`, `-`, `0`, `[`, `]`, `Escape` (clear). Dragging rotates and pinching zooms, but nothing needs them.
 - Touch: the stage has `touch-action: pan-y`. A horizontal drag rotates, a vertical swipe scrolls the page, two fingers zoom. The stage never traps the scroll of the page.
 - No auto-rotation. Camera moves ease over 400 ms with `--ease`; under `prefers-reduced-motion` they jump.
@@ -120,7 +121,7 @@ export function mount(canvas: HTMLCanvasElement, opts: { manifestUrl: string; re
   - an organ with no published card is lighter (mixed towards `--surface-2`) and stays selectable.
 - Label: the selected organ's name in `--font-display` with a leader line, as HTML over the canvas (crisp text, selectable, translated).
 - Controls use the existing button and `.segmented` styles (`src/styles/viewer.css`, `entity.css`). Touch targets ≥ 44 px. Focus ring `--focus`.
-- Phone first (below 48rem): the stage spans the width in a 4:5 box, at most 70svh. The system chips are one row that scrolls sideways with scroll snap, right under the stage, within thumb reach. The controls are one row of 44 px buttons. The organ panel rises from the bottom as a sheet (at most 60svh, a close button, focus kept inside while it is open, `Escape` closes). No horizontal scroll of the page at 320 px.
+- Phone first (below 48rem): the stage spans the width in a 4:5 box, at most 70svh. The system chips are one row that scrolls sideways with scroll snap, right under the stage, within thumb reach. The controls are one row of 44 px buttons. The organ panel rises from the bottom as a sheet (at most 60svh, a close button named after the organ, `Escape` closes; the sheet is not a modal, so there is no focus trap: `Enter` on the stage moves to the organ's card list). No horizontal scroll of the page at 320 px.
 - Wide screens: stage on the left, panel on the right, chips above both.
 
 ## 8. Cards and progress

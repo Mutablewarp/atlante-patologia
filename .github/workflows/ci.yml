@@ -62,7 +62,7 @@ jobs:
   e2e:
     needs: test
     runs-on: ubuntu-24.04
-    timeout-minutes: 15
+    timeout-minutes: 25 # the Chromium matrix is about 1,000 tests and took 15 to 17 minutes on a slow runner
     strategy:
       fail-fast: false
       matrix:

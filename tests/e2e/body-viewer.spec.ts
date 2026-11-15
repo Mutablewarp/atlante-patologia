@@ -1,0 +1,450 @@
+/** The body page, viewer part (docs/BODY_SPEC.md §9): selection, load rule, no WebGL, context lost, reduced motion, layout shift, axe. */
+import AxeBuilder from '@axe-core/playwright';
+import { expect, test, type Page } from '@playwright/test';
+
+const WCAG = ['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa', 'wcag22aa'];
+const WIDE_PX = 768; // 48rem
+const BODY = 'ap-body';
+
+const isWide = (page: Page) => page.viewportSize()!.width >= WIDE_PX;
+
+/** Waits for the element script, so that a click is not lost before its listeners exist. */
+const ready = (page: Page) => page.waitForFunction(() => !!customElements.get('ap-body'));
+
+/** Taps `[data-load]`: the fixed bottom bar can cover the button, so the click is dispatched. */
+async function tapLoad(page: Page) {
+  await ready(page);
+  await page.locator('[data-load]').dispatchEvent('click');
+}
+
+/** Waits for the viewer to settle (on or off); true when it is on. Firefox and WebKit runners may have no WebGL. */
+async function settle(page: Page): Promise<boolean> {
+  try {
+    await page.waitForFunction(() => ['on', 'off'].includes(document.querySelector('ap-body')?.getAttribute('data-webgl') ?? ''), null, { timeout: 30_000 });
+  } catch {
+    return false;
+  }
+  return (await page.locator(BODY).getAttribute('data-webgl')) === 'on';
+}
+
+/** Opens the body page and starts the viewer: by itself from 48rem, by a tap below it. */
+async function startViewer(page: Page, lang: string): Promise<boolean> {
+  await page.goto(`${lang}/body/`);
+  if (!isWide(page)) await tapLoad(page);
+  return settle(page);
+}
+
+/** Waits until the page stops scrolling: a link to a fragment scrolls smoothly, and a position read too early is not final. */
+async function scrollSettled(page: Page) {
+  let last = -1;
+  await expect
+    .poll(async () => {
+      const y = await page.evaluate(() => scrollY);
+      const still = y === last;
+      last = y;
+      return still;
+    }, { intervals: [200], timeout: 10_000 })
+    .toBe(true);
+}
+
+/** A published organ the viewer can show, with its system and the name its link carries. */
+async function pickOrgan(page: Page) {
+  return page.evaluate(() => {
+    const organs = [...document.querySelectorAll<HTMLElement>('ap-body section[data-system] > section[data-organ]')].filter((o) => o.querySelector('.body-cards li'));
+    const o = organs.find((x) => x.dataset.kind === 'mesh') ?? organs.find((x) => x.dataset.kind !== 'none');
+    if (!o) return null;
+    return { organ: o.dataset.organ!, system: o.parentElement!.dataset.system!, name: o.querySelector('h3 a')!.textContent!.trim() };
+  });
+}
+
+const chip = (page: Page, system: string) => page.locator(`.body-systems a[data-system="${system}"]`);
+const organLink = (page: Page, organ: string) => page.locator(`section[data-organ="${organ}"] > h3 a`);
+const postersShown = (page: Page) => page.evaluate(() => [...document.querySelectorAll<HTMLElement>('[data-poster]')].every((p) => !p.hidden));
+
+function collectErrors(page: Page): string[] {
+  const errors: string[] = [];
+  page.on('pageerror', (e) => errors.push(e.message));
+  return errors;
+}
+
+for (const lang of ['it', 'en'] as const) {
+  test.describe(`body viewer (${lang})`, () => {
+    test('a chip sets the system and shows only its section', async ({ page }) => {
+      const on = await startViewer(page, lang);
+      test.skip(!on, 'no WebGL on this runner');
+      const pick = (await pickOrgan(page))!;
+      await chip(page, pick.system).dispatchEvent('click');
+      await expect(page.locator(BODY)).toHaveAttribute('data-system', pick.system);
+      await expect(page.locator(`${BODY} > section[data-system]:not([hidden])`)).toHaveCount(1);
+      await expect(page.locator(`${BODY} > section[data-system="${pick.system}"]`)).toBeVisible();
+    });
+
+    test('an organ link sets the organ and the label shows its name', async ({ page }) => {
+      const on = await startViewer(page, lang);
+      test.skip(!on, 'no WebGL on this runner');
+      const pick = (await pickOrgan(page))!;
+      await chip(page, pick.system).dispatchEvent('click');
+      await organLink(page, pick.organ).dispatchEvent('click');
+      await expect(page.locator(BODY)).toHaveAttribute('data-organ', pick.organ);
+      await expect(page.locator(`${BODY} [data-label]`)).toHaveText(pick.name);
+    });
+
+    test(']: next organ, no scroll below 48rem; Escape keeps the system; Back restores the organ', async ({ page }) => {
+      const on = await startViewer(page, lang);
+      test.skip(!on, 'no WebGL on this runner');
+      const pick = (await pickOrgan(page))!;
+      await chip(page, pick.system).dispatchEvent('click');
+      await organLink(page, pick.organ).dispatchEvent('click');
+      await expect(page.locator(BODY)).toHaveAttribute('data-organ', pick.organ);
+      const hashWithOrgan = await page.evaluate(() => location.hash);
+
+      await page.locator('[data-stage]').evaluate((el) => (el as HTMLElement).focus({ preventScroll: true }));
+      await scrollSettled(page);
+      const y = await page.evaluate(() => scrollY);
+      await page.keyboard.press(']');
+      await expect(page.locator(BODY)).not.toHaveAttribute('data-organ', pick.organ);
+      if (!isWide(page)) expect(await page.evaluate(() => scrollY)).toBe(y);
+
+      await page.keyboard.press('Escape');
+      await expect(page.locator(BODY)).not.toHaveAttribute('data-organ', /.+/);
+      expect(await page.locator(BODY).getAttribute('data-system')).toBeTruthy();
+
+      // Escape and ] each pushed an entry: two steps back reach the organ chosen by the link.
+      await page.goBack();
+      await page.goBack();
+      await expect(page.locator(BODY)).toHaveAttribute('data-organ', pick.organ);
+      expect(await page.evaluate(() => location.hash)).toBe(hashWithOrgan);
+    });
+
+    test('load rule: below 48rem it waits for a tap; off turns it off for good; load starts it again', async ({ page }) => {
+      await page.goto(`${lang}/body/`);
+      if (!isWide(page)) {
+        await page.waitForTimeout(3000);
+        expect(await page.locator(BODY).getAttribute('data-webgl')).not.toBe('on');
+        await tapLoad(page);
+      }
+      const on = await settle(page);
+      test.skip(!on, 'no WebGL on this runner');
+
+      await page.locator('[data-off]').dispatchEvent('click');
+      await expect(page.locator(BODY)).toHaveAttribute('data-webgl', 'off');
+      expect(await postersShown(page)).toBe(true);
+
+      await page.reload();
+      await ready(page);
+      await page.waitForTimeout(3000);
+      expect(await page.locator(BODY).getAttribute('data-webgl')).not.toBe('on');
+
+      await tapLoad(page);
+      await expect(page.locator(BODY)).toHaveAttribute('data-webgl', 'on', { timeout: 30_000 });
+    });
+
+    test('no WebGL: posters, tree and status stay, data-webgl is off, no page error', async ({ page }) => {
+      const errors = collectErrors(page);
+      await page.addInitScript(() => {
+        HTMLCanvasElement.prototype.getContext = () => null;
+      });
+      await page.goto(`${lang}/body/`);
+      if (!isWide(page)) await tapLoad(page);
+      await expect(page.locator(BODY)).toHaveAttribute('data-webgl', 'off', { timeout: 30_000 });
+      expect(await postersShown(page)).toBe(true);
+      expect(await page.locator('.body-systems a[data-system]').count()).toBeGreaterThan(0);
+      await expect(page.locator('[data-status]')).not.toBeEmpty();
+      expect(errors).toEqual([]);
+    });
+
+    test('context lost: poster back, data-webgl off, status not empty', async ({ page }) => {
+      const on = await startViewer(page, lang);
+      test.skip(!on, 'no WebGL on this runner');
+      const lost = await page.locator('[data-canvas]').evaluate((c) => {
+        const canvas = c as HTMLCanvasElement;
+        const gl = (canvas.getContext('webgl2') ?? canvas.getContext('webgl')) as WebGL2RenderingContext | null;
+        const ext = gl?.getExtension('WEBGL_lose_context');
+        ext?.loseContext();
+        return !!ext;
+      });
+      test.skip(!lost, 'this runner has no WEBGL_lose_context');
+      await expect(page.locator(BODY)).toHaveAttribute('data-webgl', 'off');
+      expect(await postersShown(page)).toBe(true);
+      await expect(page.locator('[data-status]')).not.toBeEmpty();
+    });
+
+    test('reduced motion: a chip click reports the system at once', async ({ page }) => {
+      const errors = collectErrors(page);
+      await page.emulateMedia({ reducedMotion: 'reduce' });
+      const on = await startViewer(page, lang);
+      test.skip(!on, 'no WebGL on this runner');
+      const pick = (await pickOrgan(page))!;
+      const name = await chip(page, pick.system).evaluate((a) => a.firstChild!.textContent!.trim());
+      await chip(page, pick.system).dispatchEvent('click');
+      await expect(page.locator('[data-status]')).toContainText(name, { timeout: 2000 });
+      expect(errors).toEqual([]);
+    });
+
+    test('layout shift is 0 from load until the viewer is on (Chromium)', async ({ page, browserName }) => {
+      test.skip(browserName !== 'chromium', 'Layout Instability API: Chromium only');
+      await page.addInitScript(() => {
+        const w = window as unknown as { __cls: number; __shifts: string[] };
+        w.__cls = 0;
+        w.__shifts = [];
+        new PerformanceObserver((list) => {
+          for (const e of list.getEntries() as (PerformanceEntry & { value: number; hadRecentInput: boolean; sources?: { node?: Node }[] })[]) {
+            if (e.hadRecentInput) continue;
+            w.__cls += e.value;
+            w.__shifts.push((e.sources ?? []).map((s) => String((s.node as Element | undefined)?.className || s.node?.nodeName)).join(',') + ` @${Math.round(e.startTime)}ms`);
+          }
+        }).observe({ type: 'layout-shift', buffered: true });
+      });
+      const on = await startViewer(page, lang);
+      test.skip(!on, 'no WebGL on this runner');
+      await page.waitForTimeout(500);
+      const r = await page.evaluate(() => {
+        const w = window as unknown as { __cls: number; __shifts: string[] };
+        return { cls: w.__cls, shifts: w.__shifts };
+      });
+      expect(r.cls, r.shifts.join(' | ')).toBe(0);
+    });
+
+    test('axe: no violation with the viewer on and an organ selected', async ({ page }) => {
+      const on = await startViewer(page, lang);
+      test.skip(!on, 'no WebGL on this runner');
+      const pick = (await pickOrgan(page))!;
+      await chip(page, pick.system).dispatchEvent('click');
+      await organLink(page, pick.organ).dispatchEvent('click');
+      await expect(page.locator(BODY)).toHaveAttribute('data-organ', pick.organ);
+      await scrollSettled(page);
+      await page.evaluate(() => scrollTo(0, 0)); // at the organ, the fixed bottom bar can cover a chip: axe reads that as an overlap
+      const { violations } = await new AxeBuilder({ page }).withTags(WCAG).analyze();
+      expect(violations.map((v) => `${v.id}: ${v.nodes.map((n) => n.target.join(' ')).join(' | ')}`)).toEqual([]);
+    });
+
+    test('axe: no violation with the viewer off', async ({ page }) => {
+      await page.addInitScript(() => localStorage.setItem('ap-body-3d', 'off'));
+      await page.goto(`${lang}/body/`);
+      await ready(page);
+      const { violations } = await new AxeBuilder({ page }).withTags(WCAG).analyze();
+      expect(violations.map((v) => `${v.id}: ${v.nodes.map((n) => n.target.join(' ')).join(' | ')}`)).toEqual([]);
+    });
+  });
+}
+
+// What the three-lens review of the viewer found (plan/body-tasks.md B-4f): each row failed before its fix.
+for (const lang of ['it', 'en'] as const) {
+  test.describe(`body viewer, review findings (${lang})`, () => {
+    test('a start on its own leaves every section visible and shifts nothing, also on a deep link', async ({ page, browserName }) => {
+      test.skip(browserName !== 'chromium', 'Layout Instability API: Chromium only');
+      await page.addInitScript(() => {
+        const w = window as unknown as { __cls: number; __shifts: string[] };
+        w.__cls = 0;
+        w.__shifts = [];
+        new PerformanceObserver((list) => {
+          for (const e of list.getEntries() as (PerformanceEntry & { value: number; hadRecentInput: boolean; sources?: { node?: Node }[] })[]) {
+            if (e.hadRecentInput) continue;
+            w.__cls += e.value;
+            w.__shifts.push((e.sources ?? []).map((src) => String((src.node as Element | undefined)?.className || src.node?.nodeName)).join(',') + ` @${Math.round(e.startTime)}ms`);
+          }
+        }).observe({ type: 'layout-shift', buffered: true });
+      });
+      await page.goto(`${lang}/body/`);
+      const pick = (await pickOrgan(page))!;
+      await page.goto('about:blank'); // a fresh load on the deep link, not a hash change inside the same page
+      await page.goto(`${lang}/body/#organ-${pick.organ}`);
+      if (!isWide(page)) await tapLoad(page);
+      const on = await settle(page);
+      test.skip(!on, 'no WebGL on this runner');
+      await scrollSettled(page);
+      await page.waitForTimeout(500);
+      expect(await page.locator(`${BODY} > section[data-system]:not([hidden])`).count()).toBeGreaterThan(1);
+      const r = await page.evaluate(() => ({ cls: (window as unknown as { __cls: number }).__cls, shifts: (window as unknown as { __shifts: string[] }).__shifts }));
+      expect(r.cls, r.shifts.join(' | ')).toBe(0);
+    });
+
+    test('the chip and the link of the selection carry aria-current', async ({ page }) => {
+      const on = await startViewer(page, lang);
+      test.skip(!on, 'no WebGL on this runner');
+      const pick = (await pickOrgan(page))!;
+      await chip(page, pick.system).dispatchEvent('click');
+      await organLink(page, pick.organ).dispatchEvent('click');
+      await expect(chip(page, pick.system)).toHaveAttribute('aria-current', 'true');
+      await expect(organLink(page, pick.organ)).toHaveAttribute('aria-current', 'true');
+      await expect(page.locator('[data-organ-link][aria-current="true"]')).toHaveCount(1); // the host also reflects data-organ: it must not mark the first link too
+      await page.locator('[data-stage]').evaluate((el) => (el as HTMLElement).focus({ preventScroll: true }));
+      await page.keyboard.press('Escape');
+      await expect(organLink(page, pick.organ)).not.toHaveAttribute('aria-current', 'true');
+      await expect(chip(page, pick.system)).toHaveAttribute('aria-current', 'true');
+    });
+
+    test('keyboard: starting from the button leaves focus on the stage, and the stage takes focus only while it runs', async ({ page }) => {
+      await page.goto(`${lang}/body/`);
+      await ready(page);
+      if (isWide(page)) {
+        // from 48rem it starts by itself; the focus must not be taken away from wherever the learner is
+        const on = await settle(page);
+        test.skip(!on, 'no WebGL on this runner');
+        expect(await page.evaluate(() => document.activeElement === document.body)).toBe(true);
+        await expect(page.locator('[data-stage]')).toHaveAttribute('tabindex', '0');
+        return;
+      }
+      await expect(page.locator('[data-stage]')).not.toHaveAttribute('tabindex', /.*/);
+      await page.locator('[data-load]').focus();
+      await page.keyboard.press('Enter');
+      const on = await settle(page);
+      test.skip(!on, 'no WebGL on this runner');
+      expect(await page.evaluate(() => document.activeElement?.hasAttribute('data-stage'))).toBe(true);
+      await page.locator('[data-off]').focus();
+      await page.keyboard.press('Enter');
+      await expect(page.locator(BODY)).toHaveAttribute('data-webgl', 'off');
+      expect(await page.evaluate(() => document.activeElement?.hasAttribute('data-load'))).toBe(true);
+    });
+
+    test('AltGr brackets change the organ, and another fragment (the skip link) keeps the selection', async ({ page }) => {
+      const on = await startViewer(page, lang);
+      test.skip(!on, 'no WebGL on this runner');
+      const pick = (await pickOrgan(page))!;
+      await chip(page, pick.system).dispatchEvent('click');
+      await organLink(page, pick.organ).dispatchEvent('click');
+      await expect(page.locator(BODY)).toHaveAttribute('data-organ', pick.organ);
+      await page.locator('[data-stage]').evaluate((el) => (el as HTMLElement).focus({ preventScroll: true }));
+      // AltGr arrives as Ctrl + Alt on Windows
+      await page.locator('[data-stage]').dispatchEvent('keydown', { key: ']', ctrlKey: true, altKey: true, bubbles: true, cancelable: true });
+      await expect(page.locator(BODY)).not.toHaveAttribute('data-organ', pick.organ);
+      const organ = await page.locator(BODY).getAttribute('data-organ');
+      await page.evaluate(() => (location.hash = '#main'));
+      await page.waitForTimeout(300);
+      expect(await page.locator(BODY).getAttribute('data-organ')).toBe(organ);
+    });
+
+    test('after context loss, "Explore in 3D" starts it again on a fresh canvas', async ({ page }) => {
+      const on = await startViewer(page, lang);
+      test.skip(!on, 'no WebGL on this runner');
+      const lost = await page.locator('[data-canvas]').evaluate((c) => {
+        const gl = ((c as HTMLCanvasElement).getContext('webgl2') ?? (c as HTMLCanvasElement).getContext('webgl')) as WebGL2RenderingContext | null;
+        const ext = gl?.getExtension('WEBGL_lose_context');
+        ext?.loseContext();
+        return !!ext;
+      });
+      test.skip(!lost, 'this runner has no WEBGL_lose_context');
+      await expect(page.locator(BODY)).toHaveAttribute('data-webgl', 'off');
+      await expect(page.locator('[data-load]')).toBeVisible();
+      await page.locator('[data-load]').dispatchEvent('click');
+      await expect(page.locator(BODY)).toHaveAttribute('data-webgl', 'on', { timeout: 30_000 });
+    });
+
+    test('a selection that hides the focused link leaves the focus on something that works', async ({ page }) => {
+      const on = await startViewer(page, lang);
+      test.skip(!on, 'no WebGL on this runner');
+      const pick = (await pickOrgan(page))!;
+      // focus a card link in a system other than the one that is about to be chosen
+      const other = await page.evaluate((sys) => {
+        const a = [...document.querySelectorAll<HTMLAnchorElement>('ap-body > section[data-system] .body-cards a')].find((x) => x.closest('section[data-system]')!.getAttribute('data-system') !== sys);
+        a?.focus({ preventScroll: true });
+        return !!a && document.activeElement === a;
+      }, pick.system);
+      test.skip(!other, 'no card link in another system');
+      await chip(page, pick.system).dispatchEvent('click');
+      await expect(page.locator(`${BODY} > section[data-system]:not([hidden])`)).toHaveCount(1);
+      expect(await page.evaluate(() => document.activeElement !== document.body && !!document.activeElement)).toBe(true);
+    });
+
+    test('Enter on the stage moves to the card list of the selected organ', async ({ page }) => {
+      const on = await startViewer(page, lang);
+      test.skip(!on, 'no WebGL on this runner');
+      const pick = (await pickOrgan(page))!;
+      await chip(page, pick.system).dispatchEvent('click');
+      await organLink(page, pick.organ).dispatchEvent('click');
+      await expect(page.locator(BODY)).toHaveAttribute('data-organ', pick.organ);
+      await page.locator('[data-stage]').evaluate((el) => (el as HTMLElement).focus({ preventScroll: true }));
+      await page.keyboard.press('Enter');
+      expect(await page.evaluate(() => document.activeElement?.hasAttribute('data-organ-link') ?? false)).toBe(true);
+      await expect(organLink(page, pick.organ)).toBeFocused();
+    });
+
+    test('the system of a proxy organ is loaded when the page opens on it', async ({ page }) => {
+      await page.goto(`${lang}/body/#organ-bone-marrow`);
+      if (!isWide(page)) await tapLoad(page);
+      const on = await settle(page);
+      test.skip(!on, 'no WebGL on this runner');
+      await expect(page.locator(BODY)).toHaveAttribute('data-organ', 'bone-marrow');
+      // the bones live in another system's file: the status names the organ, and nothing failed
+      await expect(page.locator('[data-status]')).toContainText(/\S/);
+      expect(await page.locator('[data-status]').innerText()).not.toMatch(/impossibile|could not/i);
+    });
+  });
+}
+
+/** The canvas box in page pixels, after scrolling it into view. */
+async function canvasBox(page: Page) {
+  const canvas = page.locator('[data-canvas]');
+  await canvas.scrollIntoViewIfNeeded();
+  return (await canvas.boundingBox())!;
+}
+
+/** Touch pointers going down and up on the canvas: the mouse API cannot make a second finger. */
+const touch = (page: Page, steps: { type: 'pointerdown' | 'pointerup'; id: number }[], at: { x: number; y: number }) =>
+  page.locator('[data-canvas]').evaluate(
+    (c, arg) => {
+      for (const s of arg.steps) c.dispatchEvent(new PointerEvent(s.type, { pointerId: s.id, pointerType: 'touch', isPrimary: s.id === 1, clientX: arg.at.x, clientY: arg.at.y, bubbles: true }));
+    },
+    { steps, at },
+  );
+
+/** Clicks the stage centre until an organ is chosen: the systems load one file at a time, and before that the click hits nothing. */
+async function clickCentre(page: Page) {
+  const box = await canvasBox(page);
+  await expect(async () => {
+    await page.mouse.click(box.x + box.width / 2, box.y + box.height / 2);
+    await expect(page.locator(BODY)).toHaveAttribute('data-organ', /.+/, { timeout: 1000 });
+  }).toPass({ timeout: 30_000 });
+  return box;
+}
+
+for (const lang of ['it', 'en'] as const) {
+  test.describe(`body viewer, canvas picking (${lang})`, () => {
+    test('a click on the stage centre chooses an organ; a click far from the body clears it and keeps the system', async ({ page }) => {
+      const on = await startViewer(page, lang);
+      test.skip(!on, 'no WebGL on this runner');
+      await clickCentre(page);
+      const system = await page.locator(BODY).getAttribute('data-system');
+      expect(system).toBeTruthy();
+      // the selection may have scrolled the page (the chosen organ's system is now the only one listed): read the stage again
+      await page.waitForTimeout(300);
+      const box = await canvasBox(page);
+      await page.mouse.click(box.x + 4, box.y + 4);
+      await expect(page.locator(BODY)).not.toHaveAttribute('data-organ', /.+/);
+      await expect(page.locator(BODY)).toHaveAttribute('data-system', system!);
+    });
+
+    test('the organ heading link has focus after a canvas selection', async ({ page }) => {
+      const on = await startViewer(page, lang);
+      test.skip(!on, 'no WebGL on this runner');
+      await clickCentre(page);
+      const organ = (await page.locator(BODY).getAttribute('data-organ'))!;
+      await expect(organLink(page, organ)).toBeFocused();
+    });
+
+    test('a drag of more than 6 px and a pinch are not taps', async ({ page }) => {
+      const on = await startViewer(page, lang);
+      test.skip(!on, 'no WebGL on this runner');
+      const box = await canvasBox(page);
+      const cx = box.x + box.width / 2;
+      const cy = box.y + box.height / 2;
+      const entries = () => page.evaluate(() => history.length);
+      const before = await entries();
+
+      await page.mouse.move(cx, cy);
+      await page.mouse.down();
+      await page.mouse.move(cx + 40, cy, { steps: 5 });
+      await page.mouse.up();
+      expect(await entries()).toBe(before);
+
+      await touch(page, [{ type: 'pointerdown', id: 1 }, { type: 'pointerdown', id: 2 }, { type: 'pointerup', id: 2 }, { type: 'pointerup', id: 1 }], { x: cx, y: cy });
+      expect(await entries()).toBe(before);
+
+      // control: one pointer is a tap and chooses an organ, which pushes an entry, so the two checks above can fail (the systems load one file at a time: try until the centre hits an organ)
+      await expect(async () => {
+        await touch(page, [{ type: 'pointerdown', id: 1 }, { type: 'pointerup', id: 1 }], { x: cx, y: cy });
+        expect(await entries()).toBeGreaterThan(before);
+      }).toPass({ timeout: 30_000 });
+    });
+  });
+}

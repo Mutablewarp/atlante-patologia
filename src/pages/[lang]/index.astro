@@ -1,5 +1,10 @@
 ---
+import { readFileSync } from 'node:fs';
+import { join } from 'node:path';
+import { getCollection } from 'astro:content';
 import BaseLayout from '../../layouts/BaseLayout.astro';
+import BodyHome from '../../components/body/BodyHome.astro';
+import '../../styles/body.css';
 import { langPaths, fmt, type Lang } from '../../i18n/index.ts';
 import { tCommon, SITE_NAME } from '../../i18n/common.ts';
 import { tHome } from '../../i18n/pages.ts';
@@ -11,7 +16,10 @@ export const getStaticPaths = langPaths;
 
 const lang = Astro.params.lang as Lang;
 const t = (k: Parameters<typeof tHome>[1]) => tHome(lang, k);
-const { modules, entities } = await siteData(lang);
+const { modules, entities, taxonomy } = await siteData(lang);
+const anatomy = (await getCollection('anatomy')).map((o) => o.data);
+const terms = (lens: 'system' | 'process') => taxonomy.get(lens)?.terms ?? [];
+const { credit } = JSON.parse(readFileSync(join(process.cwd(), 'public/anatomy/manifest.json'), 'utf8')) as { credit: string };
 const published = modules.filter((m) => m.status === 'published').length;
 const pct = Math.round((published / modules.length) * 100);
 // Cards per module: published cards, and M = published + planned entries. Planned names are never shown, only counts.
@@ -47,7 +55,10 @@ const sections = (['I', 'II', 'III'] as const).map((s) => ({
     <p class="kicker">{lang === 'it' ? 'Anatomia patologica · Pathology' : 'Pathology · Anatomia patologica'}</p>
     <h1>Atlante <em>di Patologia</em></h1>
     <p class="lede">{tCommon(lang, 'tagline')}</p>
+    <p class="body-intro">{t('bodyIntro')}</p>
   </header>
+
+  <BodyHome lang={lang} entities={entities} anatomy={anatomy} systems={terms('system')} processes={terms('process')} modules={modules} credit={credit} />
 
   <section class="status card" aria-labelledby="status-title">
     <h2 id="status-title" class="kicker">{t('status')}</h2>

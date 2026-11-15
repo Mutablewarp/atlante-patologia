@@ -42,6 +42,28 @@ test('after the first visit, the home pages and the offline fallback load offlin
   await expect(page.getByRole('heading', { level: 1 })).toHaveText('Sei offline');
 });
 
+test('a lazy file is cached on first use outside the shell cache, so a code deploy does not empty it', async ({ page }) => {
+  await page.goto('it/');
+  await swReady(page);
+  await page.evaluate(async () => {
+    const hashed = [...document.querySelectorAll<HTMLLinkElement>('link[href*="_astro/"]')].map((l) => l.href)[0];
+    const base = document.querySelector<HTMLLinkElement>('link[rel=manifest]')!.href; // the site root: the page itself sits under /it/
+    await fetch(new URL('anatomy/manifest.json', base), { cache: 'reload' });
+    if (hashed) await fetch(hashed, { cache: 'reload' });
+  });
+  const cacheOf = (path: string) =>
+    page.evaluate(async (u) => {
+      for (const k of await caches.keys()) if (await (await caches.open(k)).match(new URL(u, document.querySelector<HTMLLinkElement>('link[rel=manifest]')!.href).href)) return k;
+      return null;
+    }, path);
+  // the worker writes the copy after it has answered: wait for it
+  await expect.poll(() => cacheOf('anatomy/manifest.json')).toMatch(/^lazy-[0-9a-f]{16}$/);
+  const hashed = await page.evaluate(() => [...document.querySelectorAll<HTMLLinkElement>('link[href*="_astro/"]')].map((l) => new URL(l.href).pathname.split('/atlante-patologia/')[1])[0]);
+  // a precached shell file is found in the shell cache, never copied to `assets`
+  expect(await cacheOf(hashed!)).toMatch(/^shell-/);
+  expect(await page.evaluate(() => caches.keys())).toEqual(expect.arrayContaining([expect.stringMatching(/^shell-/), expect.stringMatching(/^lazy-/)]));
+});
+
 test('an installed offline pack makes its pages load offline', async ({ page, context }) => {
   await page.goto('it/me/offline/');
   await swReady(page);

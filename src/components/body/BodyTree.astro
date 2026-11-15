@@ -24,6 +24,10 @@ interface Props {
 const { lang, tree, map, summaries, organLabels } = Astro.props;
 const t = (k: Parameters<typeof tBody>[1]) => tBody(lang, k);
 const count = (n: number) => fmt(t(n === 1 ? 'countOne' : 'countMany'), { n });
+const idsOf = (organs: BodyTree['systems'][number]['organs']) => [...new Set(organs.flatMap((o) => o.groups.flatMap((g) => g.cards.map((c) => c.id))))];
+/** Three counters the script fills: empty without JavaScript, and the line keeps its height either way. */
+const progressText = { seen: t('seenOf'), mastered: t('masteredOf'), due: t('dueOf') };
+const counters = ['seen', 'mastered', 'due'] as const;
 const list = new Intl.ListFormat(lang, { style: 'long', type: 'conjunction' });
 
 /** The note shown next to an organ, by kind; `mesh` has none. */
@@ -43,6 +47,7 @@ function note(organId: string): string {
     tree.systems.map((s) => (
       <a href={`#sys-${s.id}`} data-system={s.id}>
         {s.label} <span class="count">{s.count}</span>
+        <span class="visually-hidden">{t(s.count === 1 ? 'unitOne' : 'unitMany')}</span>
       </a>
     ))
   }
@@ -50,15 +55,24 @@ function note(organId: string): string {
 
 {
   tree.systems.map((s) => (
-    <section id={`sys-${s.id}`} data-system={s.id}>
+    <section id={`sys-${s.id}`} data-system={s.id} data-cards={idsOf(s.organs).join(' ')}>
       <h2>
         {s.label} <span class="count">{count(s.count)}</span>
       </h2>
+      <p class="body-progress" data-progress>
+        <span class="body-progress-counts">{counters.map((k) => <span data-k={k} data-t={progressText[k]} />)}</span>
+      </p>
       {s.organs.map((o) => (
-        <section id={`organ-${o.id}`} data-organ={o.id} data-kind={map.get(o.id)?.kind ?? 'none'}>
+        <section id={`organ-${o.id}`} data-organ={o.id} data-kind={map.get(o.id)?.kind ?? 'none'} data-cards={idsOf([o]).join(' ')}>
           <h3>
-            <a href={`#organ-${o.id}`}>{o.label}</a> <span class="count">{count(o.count)}</span>
+            <a href={`#organ-${o.id}`} data-organ-link>{o.label}</a> <span class="count">{count(o.count)}</span>
           </h3>
+          {o.count > 0 && (
+            <p class="body-progress" data-progress>
+              <span class="body-progress-counts">{counters.map((k) => <span data-k={k} data-t={progressText[k]} />)}</span>
+              <a href={langPath(lang, `study/review/?entities=${idsOf([o]).join(',')}`)}>{t('reviewOrgan')}</a>
+            </p>
+          )}
           {note(o.id) && <p class="body-note">{note(o.id)}</p>}
           {o.count === 0 ? (
             <p class="body-note body-empty">{t('noCard')}</p>
@@ -94,3 +108,7 @@ function note(organId: string): string {
     </section>
   ))
 }
+
+<script>
+  import '../../scripts/body-progress.ts';
+</script>

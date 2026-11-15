@@ -11,6 +11,11 @@ import { ConfidencePicker } from './Confidence.tsx';
 import type { Confidence } from '../lib/metacog.ts';
 
 type Props = { lang: Lang };
+/** `?entities=a,b`: only the cards of these entities; the session then neither reads nor saves the review scope. */
+const entityFilter = (): Set<string> | undefined => {
+  const ids = (param('entities') ?? '').split(',').filter(Boolean);
+  return ids.length ? new Set(ids) : undefined;
+};
 const GRADES: { g: Grade; key: 'again' | 'hard' | 'good' | 'easy' }[] = [
   { g: Rating.Again, key: 'again' },
   { g: Rating.Hard, key: 'hard' },
@@ -28,7 +33,7 @@ async function load(lang: Lang): Promise<Loaded> {
   const state = new Map<string, CardRecord>();
   let introducedToday = 0;
   try {
-    scope = param('module') ?? (await getSetting<string>('reviewScope')) ?? 'all';
+    scope = param('module') ?? (entityFilter() ? 'all' : ((await getSetting<string>('reviewScope')) ?? 'all'));
     newPerDay = (await getSetting<number>('newPerDay')) ?? 15;
     for (const r of await getAll('cards')) state.set(r.id, r);
     const today = new Date();
@@ -45,6 +50,7 @@ export default function Review({ lang }: Props) {
   const t = (k: Parameters<typeof tS>[1]) => tS(lang, k);
   const base = useLoad(() => load(lang));
   const cram = param('cram') === '1';
+  const only = useMemo(entityFilter, []);
   const [scope, setScope] = useState<string | undefined>();
   const [newPerDay, setNewPerDay] = useState<number | undefined>();
   const activeScope = scope ?? base.data?.scope ?? 'all';
@@ -52,7 +58,8 @@ export default function Review({ lang }: Props) {
     () => (base.data ? (activeScope === 'all' ? base.data.index.modules.map((m) => m.id) : [activeScope]) : []),
     [base.data, activeScope],
   );
-  const cards = useLoad(() => (modules.length ? loadCards(lang, modules) : Promise.resolve([])), [modules.join(',')]);
+  const loaded = useLoad(() => (modules.length ? loadCards(lang, modules) : Promise.resolve([])), [modules.join(',')]);
+  const cards = { ...loaded, data: only ? loaded.data?.filter((c) => only.has(c.entity)) : loaded.data };
 
   if (base.loading) return <p aria-live="polite">{t('loading')}</p>;
   if (!base.data || base.data.index.modules.length === 0) return <p class="empty-state">{t('noContent')}</p>;
@@ -70,7 +77,7 @@ export default function Review({ lang }: Props) {
             onChange={(e) => {
               const v = (e.target as HTMLSelectElement).value;
               setScope(v);
-              if (!cram) setSetting('reviewScope', v).catch(() => {});
+              if (!cram && !only) setSetting('reviewScope', v).catch(() => {});
             }}
           >
             <option value="all">{t('allModules')}</option>
