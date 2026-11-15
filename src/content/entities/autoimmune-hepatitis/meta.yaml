@@ -1,0 +1,122 @@
+id: autoimmune-hepatitis
+module: o20
+tier: extended
+kind: disease
+names:
+  it: "Epatite autoimmune"
+  en: "Autoimmune hepatitis"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: ["AIH"]
+summary:
+  it: "Epatite cronica grave con autoanticorpi circolanti e immunoglobuline sieriche elevate, caratterizzata da epatite d'interfaccia con infiltrato ricco di plasmacellule."
+  en: "Severe chronic hepatitis with circulating autoantibodies and raised serum immunoglobulins, marked by interface hepatitis with a plasma-cell-rich infiltrate."
+lenses:
+  system: [liver-biliary]
+  process: [chronic-inflammation, repair-fibrosis]
+  pattern: []
+  presentation: [jaundice]
+  marker: [laboratory]
+  group: [immune, inflammatory]
+learningObjectives:
+  - it: "Descrivere il quadro istologico: epatite d'interfaccia con infiltrato ricco di plasmacellule."
+    en: "Describe the histology: interface hepatitis with a plasma-cell-rich infiltrate."
+  - it: "Distinguere il tipo I (ANA e anticorpi anti-muscolo liscio) dal tipo II (anti-LKM, bersaglio CYP2D6)."
+    en: "Distinguish type I (ANA and anti-smooth muscle antibodies) from type II (anti-LKM, CYP2D6 target)."
+  - it: "Riconoscere le sindromi da overlap con la colangite biliare primitiva e la colangite sclerosante primitiva."
+    en: "Recognize overlap syndromes with primary biliary cholangitis and primary sclerosing cholangitis."
+  - it: "Riassumere decorso clinico, terapia e rischio di cirrosi."
+    en: "Summarize the clinical course, treatment and risk of cirrhosis."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: chronic-viral-hepatitis
+    note:
+      it: "Istologia simile, ma nell'epatite autoimmune infiammazione lobulare, necrosi ed epatite d'interfaccia sono più marcate."
+      en: "Similar histology, but lobular inflammation, necrosis and interface hepatitis are more pronounced in autoimmune hepatitis."
+  - type: differentialOf
+    target: acute-viral-hepatitis
+    note:
+      it: "Istologia simile; l'infiltrato ricco di plasmacellule è un elemento diagnostico importante."
+      en: "Similar histology; a plasma-cell-rich infiltrate is an important diagnostic feature."
+  - type: mimics
+    target: primary-biliary-cholangitis
+    note:
+      it: "Esistono sindromi da overlap con caratteri clinici e istologici misti."
+      en: "Overlap syndromes with mixed clinical and histologic features exist."
+  - type: mimics
+    target: primary-sclerosing-cholangitis
+    note:
+      it: "Esistono sindromi da overlap con caratteri clinici e istologici misti."
+      en: "Overlap syndromes with mixed clinical and histologic features exist."
+  - type: causes
+    target: cirrhosis
+    note:
+      it: "Senza trattamento l'epatite autoimmune evolve spesso in cirrosi."
+      en: "Untreated autoimmune hepatitis often progresses to cirrhosis."
+quickCheck:
+  - id: autoimmune-hepatitis-q1
+    q:
+      it: "Quali autoanticorpi caratterizzano il tipo I e il tipo II dell'epatite autoimmune?"
+      en: "Which autoantibodies characterize type I and type II autoimmune hepatitis?"
+    a:
+      it: "Il tipo I ha anticorpi antinucleo e anti-muscolo liscio; il tipo II ha anticorpi anti-LKM, con CYP2D6 come autoantigene."
+      en: "Type I has antinuclear and anti-smooth muscle antibodies; type II has anti-LKM antibodies, with CYP2D6 as the autoantigen."
+    kind: short
+  - id: autoimmune-hepatitis-q2
+    q:
+      it: "Quale reperto istologico è un elemento diagnostico importante?"
+      en: "Which histologic finding is an important diagnostic feature?"
+    a:
+      it: "Un infiltrato infiammatorio ricco di plasmacellule, con epatite d'interfaccia."
+      en: "An inflammatory infiltrate rich in plasma cells, with interface hepatitis."
+    kind: short
+  - id: autoimmune-hepatitis-q3
+    q:
+      it: "Che cos'è una sindrome da overlap?"
+      en: "What is an overlap syndrome?"
+    a:
+      it: "Un quadro con caratteri clinici e istologici misti di epatite autoimmune e di colangite biliare primitiva o sclerosante primitiva."
+      en: "A case that blends autoimmune hepatitis with PBC or PSC, so clinical and histologic findings of both are present."
+    kind: short
+selfExplain:
+  - it: "Perché il tipo I può essere già cirrotico alla prima diagnosi?"
+    en: "Why can type I disease already be cirrhotic at first diagnosis?"
+  - it: "Perché l'epatite d'interfaccia lascia un margine irregolare attorno allo spazio portale?"
+    en: "Why does interface hepatitis leave a ragged edge around the portal tract?"
+chain:
+  - pathology:
+      it: "Epatite d'interfaccia con infiltrato ricco di plasmacellule"
+      en: "Interface hepatitis with a plasma-cell-rich infiltrate"
+    sign:
+      it: "Affaticamento e lieve fastidio all'ipocondrio destro"
+      en: "Fatigue and mild right upper quadrant discomfort"
+    lab:
+      it: "Aminotransferasi molto elevate e iperglobulinemia"
+      en: "Markedly raised aminotransferases and hyperglobulinemia"
+examQuestions:
+  - it: "Che cosa vede al microscopio in una biopsia di epatite autoimmune?"
+    en: "What do you see under the microscope in a biopsy of autoimmune hepatitis?"
+    focus: [micro, diagnosis]
+    level: 1
+  - it: "Mi parli degli autoanticorpi dell'epatite autoimmune: quali caratterizzano il tipo I e il tipo II, e qual è il bersaglio nel tipo II?"
+    en: "Tell me about the autoantibodies of autoimmune hepatitis: which ones mark type I and type II, and what is the target in type II?"
+    focus: [pathogenesis, ancillary]
+    level: 2
+  - it: "Come distingue l'epatite autoimmune da un'epatite virale e che cosa intende per sindrome da overlap?"
+    en: "How do you tell autoimmune hepatitis from viral hepatitis, and what do you mean by an overlap syndrome?"
+    focus: [differential, definition]
+    level: 3
+images:
+  - id: autoimmune-hepatitis-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "20"
+    pages: "865-866"
+lastUpdated: 2026-11-15
+status: published

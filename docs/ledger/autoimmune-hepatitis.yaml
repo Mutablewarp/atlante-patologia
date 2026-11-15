@@ -1,0 +1,426 @@
+entity: autoimmune-hepatitis
+claims:
+  - claimId: autoimmune-hepatitis-c001
+    section: definition
+    statement: "Autoimmune hepatitis is a severe form of chronic hepatitis marked by blood autoantibodies and raised serum immunoglobulins."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c002
+    section: definition
+    statement: "Women account for roughly 70% of cases, and the disease can start at any age."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c003
+    section: definition
+    statement: "Overlap syndrome combines autoimmune hepatitis with features of PBC or PSC, and is still poorly defined."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c004
+    section: etiology
+    statement: "Susceptibility to type I disease is tied to the HLA-DRB1 gene."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c005
+    section: etiology
+    statement: "Autoimmune diseases of the gut, thyroid and joints (ulcerative colitis, thyroiditis, rheumatoid arthritis) often coexist with type I disease."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c006
+    section: etiology
+    statement: "Thyroiditis and type 1 diabetes are frequent companions of type II disease."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "866" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c007
+    section: etiology
+    statement: "The genetic basis of type II disease remains undefined."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "866" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c008
+    section: pathogenesis
+    statement: "About 80% of patients have type I, making it the more common type."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c009
+    section: pathogenesis
+    statement: "The serum of type I patients contains antinuclear and anti-smooth muscle antibodies."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c010
+    section: pathogenesis
+    statement: "Type II mostly affects children between 2 and 14 years of age."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c011
+    section: pathogenesis
+    statement: "The hallmark of type II disease is anti-LKM antibodies, which react with liver and kidney microsomes."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865-866" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c012
+    section: pathogenesis
+    statement: "CYP2D6, an enzyme of the P450 family that clears drugs, is the chief antibody target in type II disease."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "866" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c013
+    section: pathogenesis
+    statement: "In type I disease, antibody-dependent cell-mediated cytotoxicity probably targets mainly the asialoglycoprotein receptor of the hepatocyte membrane."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c014
+    section: gross
+    statement: "Cirrhosis can result when autoimmune hepatitis goes untreated."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "866" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c015
+    section: micro
+    statement: "More marked interface hepatitis and lobular inflammation and necrosis separate the biopsy from the acute or chronic viral hepatitis it resembles."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "866" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c016
+    section: micro
+    statement: "Many plasma cells among the inflammatory cells are a key diagnostic pointer."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "866" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c017
+    section: micro
+    statement: "Severe cases can show confluent necrosis of hepatocytes."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "866" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c018
+    section: micro
+    statement: "In interface hepatitis, inflammatory cells around the portal tract destroy the limiting plate focally, leaving a ragged edge."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c019
+    section: micro
+    statement: "The portal infiltrate in chronic hepatitis is mononuclear, varies in density and includes plasma cells; eosinophils may be added in autoimmune hepatitis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c020
+    section: ancillary
+    statement: "Antinuclear and anti-smooth muscle antibodies characterize type I disease."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c021
+    section: ancillary
+    statement: "Anti-LKM antibodies characterize type II disease."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865-866" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c022
+    section: ancillary
+    statement: "Serum immunoglobulins are elevated in autoimmune hepatitis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c023
+    section: ancillary
+    statement: "Histology shows prominent interface hepatitis with an infiltrate rich in plasma cells."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "866" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c024
+    section: clinical
+    statement: "Onset can be quiet, with tiredness and a dull ache under the right ribs."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "866" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c025
+    section: clinical
+    statement: "Many patients, or their relatives, have an autoimmune disease."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "866" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c026
+    section: clinical
+    statement: "Aminotransferase levels can exceed 1,000 IU/mL later in the course of the disease."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "866" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c027
+    section: clinical
+    statement: "Blood globulins are often markedly raised (hyperglobulinemia)."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "866" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c028
+    section: clinical
+    statement: "Fulminant onset is rare; severe cases can bring jaundice and liver failure."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "866" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c029
+    section: clinical
+    statement: "Type I usually has a prolonged asymptomatic course; about a quarter of patients already have cirrhosis at presentation."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c030
+    section: diagnosis
+    statement: "Many plasma cells in the biopsy infiltrate weigh strongly in favor of the diagnosis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "866" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c031
+    section: diagnosis
+    statement: "Blood tests show autoantibodies together with high serum immunoglobulin levels."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c032
+    section: prognosis
+    statement: "Cirrhosis is a frequent outcome of autoimmune hepatitis without treatment."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "866" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c033
+    section: prognosis
+    statement: "A corticosteroid combined with azathioprine or a similar immunosuppressant generally controls the disease."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "866" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c034
+    section: prognosis
+    statement: "Liver transplantation can be an option once the disease has progressed to cirrhosis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "866" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c035
+    section: prognosis
+    statement: "After liver transplantation, the disease returns in up to 20% of patients."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "866" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c036
+    section: prognosis
+    statement: "Star-shaped portal tracts result from collagen laid down after interface hepatitis destroys periportal hepatocytes."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c037
+    section: differential
+    statement: "Viral hepatitis looks similar histologically, but autoimmune hepatitis has heavier interface and lobular damage."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "866" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c038
+    section: differential
+    statement: "Chronic hepatitis B can show ground-glass hepatocytes, whose cytoplasm is packed with HBsAg."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c039
+    section: differential
+    statement: "Ground-glass hepatocytes of hepatitis B can be shown by immunoperoxidase staining for HBsAg."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "866" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c040
+    section: differential
+    statement: "Autoimmune hepatitis resembles acute viral hepatitis histologically, and plentiful plasma cells in the infiltrate favor it."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "866" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c041
+    section: differential
+    statement: "Overlap syndromes show autoimmune hepatitis and PBC or PSC at once, clinically and histologically."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c042
+    section: high-yield
+    statement: "Type I is the more common form, and its antibodies are antinuclear and anti-smooth muscle."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c043
+    section: high-yield
+    statement: "Type II occurs mainly in children, features anti-LKM antibodies, and has CYP2D6 as key autoantigen."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865-866" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c044
+    section: high-yield
+    statement: "Biopsy shows interface hepatitis with an infiltrate rich in plasma cells."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "866" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c045
+    section: high-yield
+    statement: "Azathioprine, an immunosuppressant, is given together with a corticosteroid."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "866" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c046
+    section: high-yield
+    statement: "Without treatment, the disease frequently ends in cirrhosis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "866" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c047
+    section: high-yield
+    statement: "An overlap syndrome with primary biliary cholangitis or primary sclerosing cholangitis can occur."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c048
+    section: traps
+    statement: "Autoimmune hepatitis may appear at any age."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c049
+    section: traps
+    statement: "Type II autoimmune hepatitis occurs mainly in children."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c050
+    section: traps
+    statement: "In type I disease a long symptom-free period is usual, so some patients first come to attention with cirrhosis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c051
+    section: traps
+    statement: "Fulminant presentation is rare, although severe cases can end in liver failure."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "866" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c052
+    section: traps
+    statement: "Interface hepatitis is a feature of chronic hepatitis in general, while a plasma-cell-rich infiltrate is an important diagnostic feature of autoimmune hepatitis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865-866" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: autoimmune-hepatitis-c053
+    section: mnemonics
+    statement: "Type I features antinuclear and anti-smooth muscle antibodies, while type II features anti-liver-kidney microsomal antibodies and occurs mainly in children."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "865-866" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
