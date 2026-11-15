@@ -1,0 +1,130 @@
+id: crescentic-glomerulonephritis
+module: o22
+tier: core
+kind: disease
+names:
+  it: "Glomerulonefrite rapidamente progressiva (a semilune): anti-GBM e ANCA"
+  en: "Rapidly progressive (crescentic) glomerulonephritis"
+  eponyms: []
+  synonyms:
+    it: ["Glomerulonefrite a semilune", "GNRP"]
+    en: ["Crescentic glomerulonephritis", "RPGN"]
+  abbreviations: [RPGN, GBM, ANCA]
+summary:
+  it: "Glomerulonefrite con semilune nella maggior parte dei glomeruli e insufficienza renale rapidamente progressiva, sostenuta da anticorpi anti-GBM, da immunocomplessi o da ANCA (pauci-immune)."
+  en: "Glomerulonephritis with crescents in most glomeruli and rapidly progressive renal failure, driven by anti-GBM antibodies, immune complexes or ANCA (pauci-immune)."
+lenses:
+  system: [kidney]
+  process: [hypersensitivity, acute-inflammation]
+  pattern: [necrosis-fibrinoid]
+  presentation: [hematuria]
+  marker: [ihc, laboratory]
+  group: [immune, vascular]
+learningObjectives:
+  - it: "Definire la semiluna e spiegare come si forma nello spazio di Bowman."
+    en: "Define a crescent and explain how it forms in Bowman space."
+  - it: "Distinguere i tre tipi (anti-GBM, da immunocomplessi, pauci-immune ANCA) in base all'immunofluorescenza."
+    en: "Tell the three types (anti-GBM, immune complex, pauci-immune ANCA) apart by immunofluorescence."
+  - it: "Spiegare il meccanismo della malattia anti-GBM e la sindrome di Goodpasture."
+    en: "Explain the mechanism of anti-GBM disease and Goodpasture syndrome."
+  - it: "Descrivere come gli ANCA danneggiano i glomeruli e la prognosi con e senza terapia."
+    en: "Describe how ANCA injure the glomeruli and the prognosis with and without treatment."
+prerequisites: []
+relations:
+  - type: sharesMechanism
+    target: anca-associated-vasculitis
+    note:
+      it: "La glomerulonefrite da ANCA è la componente renale della vasculite associata ad ANCA."
+      en: "ANCA glomerulonephritis is the kidney component of ANCA-associated vasculitis."
+  - type: mimics
+    target: iga-nephropathy
+    note:
+      it: "Anche la nefropatia IgA può presentarsi con ematuria e segni nefritici, ma con depositi di IgA."
+      en: "IgA nephropathy can also present with hematuria and nephritic signs, but with IgA deposits."
+quickCheck:
+  - id: crescentic-glomerulonephritis-q1
+    q:
+      it: "Come si forma una semiluna?"
+      en: "How does a crescent form?"
+    a:
+      it: "La parete del capillare glomerulare si rompe, i componenti del plasma passano nello spazio di Bowman e qui si formano fibrina, proliferazione delle cellule epiteliali parietali e ingresso di macrofagi."
+      en: "The glomerular capillary wall breaks, plasma components enter Bowman space, and fibrin, parietal epithelial proliferation and macrophages build the crescent."
+    kind: short
+  - id: crescentic-glomerulonephritis-q2
+    q:
+      it: "Quale pattern di immunofluorescenza corrisponde a ciascuno dei tre tipi?"
+      en: "Which immunofluorescence pattern matches each of the three types?"
+    a:
+      it: "Lineare per IgG nella malattia anti-GBM, granulare nella malattia da immunocomplessi, scarso o assente nella malattia da ANCA."
+      en: "Linear IgG in anti-GBM disease, granular in immune complex disease, little or none in ANCA disease."
+    kind: short
+  - id: crescentic-glomerulonephritis-q3
+    q:
+      it: "Perché nella malattia anti-GBM possono sanguinare i polmoni?"
+      en: "Why can the lungs bleed in anti-GBM disease?"
+    a:
+      it: "L'antigene bersaglio è presente anche nelle membrane basali dei capillari alveolari."
+      en: "The target antigen is also present in alveolar capillary basement membranes."
+    kind: short
+  - id: crescentic-glomerulonephritis-q4
+    q:
+      it: "Che cosa significa che la malattia da ANCA è pauci-immune?"
+      en: "What does it mean that ANCA disease is pauci-immune?"
+    a:
+      it: "I depositi di immunoglobuline e di complemento sono scarsi o assenti, anche se la malattia è aggressiva."
+      en: "Immunoglobulin and complement deposits are scarce or absent, even though the disease is aggressive."
+    kind: short
+  - id: crescentic-glomerulonephritis-q5
+    q:
+      it: "Le IgG lineari lungo la GBM provano sempre la malattia anti-GBM?"
+      en: "Does linear IgG along the GBM always prove anti-GBM disease?"
+    a:
+      it: "No: anche la glomerulosclerosi diabetica e la malattia da deposizione di immunoglobuline monoclonali mostrano IgG sulle membrane basali."
+      en: "No: diabetic glomerulosclerosis and monoclonal immunoglobulin deposition disease also show IgG on basement membranes."
+    kind: short
+selfExplain:
+  - it: "Perché la glomerulonefrite da ANCA è detta pauci-immune pur essendo aggressiva?"
+    en: "Why is ANCA glomerulonephritis called pauci-immune although it is aggressive?"
+  - it: "Perché la sindrome di Goodpasture coinvolge sia il rene sia il polmone?"
+    en: "Why does Goodpasture syndrome involve both kidney and lung?"
+chain:
+  - pathology:
+      it: "Anticorpi anti-GBM contro la catena alfa-3 del collagene di tipo IV"
+      en: "Anti-GBM antibodies against the alpha-3 chain of type IV collagen"
+    sign:
+      it: "Insufficienza renale rapidamente progressiva ed emottisi"
+      en: "Rapidly progressive renal failure and hemoptysis"
+    lab:
+      it: "Anticorpi anti-GBM circolanti; IgG lineari all'immunofluorescenza"
+      en: "Circulating anti-GBM antibodies; linear IgG on immunofluorescence"
+examQuestions:
+  - it: "Mi parli della semiluna: che cos'è e come si forma?"
+    en: "Tell me about the crescent: what is it and how does it form?"
+    focus: [definition, pathogenesis]
+    level: 1
+  - it: "Come distingue i tre tipi di glomerulonefrite a semilune all'immunofluorescenza?"
+    en: "How do you tell the three types of crescentic glomerulonephritis apart on immunofluorescence?"
+    focus: [ancillary, differential]
+    level: 3
+  - it: "Perché nella malattia anti-GBM possono essere colpiti sia il rene sia il polmone?"
+    en: "Why can both kidney and lung be involved in anti-GBM disease?"
+    focus: [pathogenesis, clinical]
+    level: 2
+  - it: "Perché la glomerulonefrite da ANCA è detta pauci-immune?"
+    en: "Why is ANCA glomerulonephritis called pauci-immune?"
+    focus: [micro, pathogenesis]
+    level: 2
+  - it: "Le IgG lineari lungo la GBM bastano per diagnosticare una malattia anti-GBM?"
+    en: "Is linear IgG along the GBM enough to diagnose anti-GBM disease?"
+    focus: [ancillary, traps]
+    level: 3
+images:
+  - { id: crescentic-glomerulonephritis-micro-2, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "22"
+    pages: "946-948"
+lastUpdated: 2026-11-15
+status: published

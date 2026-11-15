@@ -1,0 +1,554 @@
+entity: crescentic-glomerulonephritis
+claims:
+- claimId: crescentic-glomerulonephritis-c001
+  section: definition
+  statement: "Rapidly progressive glomerulonephritis is the clinical presentation of fast-worsening renal failure with nephritic features; the reference writes it as rapidly progressive (crescentic) glomerulonephritis."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946, 948" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c002
+  section: definition
+  statement: "Crescentic glomerulonephritis is defined here as glomerulonephritis with crescents in more than half of the glomeruli."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c003
+  section: definition
+  statement: "A crescent forms in Bowman space from proliferating parietal epithelial cells, infiltrating macrophages and fibrin."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946, 947" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c004
+  section: definition
+  statement: "Crescentic glomerulonephritis is sorted by immunopathology into anti-GBM, immune complex and ANCA categories, with a small group fitting none."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c005
+  section: definition
+  statement: "ANCA disease is the largest category from middle age onward and in older adults, while immune complex disease is the largest under age 20."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c006
+  section: definition
+  statement: "Anti-GBM disease is a minority category in every age group."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946, 947" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c007
+  section: etiology
+  statement: "Anti-GBM disease is autoimmune, and HLA-DRB1 shows a strong association with susceptibility."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c008
+  section: etiology
+  statement: "A viral upper respiratory tract infection often precedes the start of anti-GBM disease."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c009
+  section: etiology
+  statement: "In anti-GBM disease, smoking is an example of a second hit that the lungs seem to need before they are involved."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c010
+  section: etiology
+  statement: "ANCA disease is caused by autoantibodies to proteins of neutrophils and monocytes, usually MPO or PR3."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c011
+  section: etiology
+  statement: "The immune complex category of crescentic glomerulonephritis involves glomerular deposition of immune complexes."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c012
+  section: etiology
+  statement: "With no anti-GBM antibody or immune complex deposition seen, ANCA glomerulonephritis used to be labeled idiopathic crescentic glomerulonephritis."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c013
+  section: pathogenesis
+  statement: "Whatever the mechanism, crescents arise when the glomerular capillary wall is disrupted."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c014
+  section: pathogenesis
+  statement: "Plasma, carrying clotting factors and inflammatory mediators, reaches Bowman space through the damaged capillary wall."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c015
+  section: pathogenesis
+  statement: "Macrophages and fibrin join proliferating parietal epithelial cells to build the crescent in Bowman space."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c016
+  section: pathogenesis
+  statement: "The anti-GBM antigen sits in the NC1 domain of the alpha-3 chain of type IV collagen in the GBM, where the autoantibodies bind."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c017
+  section: pathogenesis
+  statement: "The anti-GBM epitope stays hidden until the three-dimensional shape of type IV collagen is altered."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c018
+  section: pathogenesis
+  statement: "Complement is among the mediator systems activated by the bound anti-GBM antibodies, which initiates acute inflammation."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c019
+  section: pathogenesis
+  statement: "Experiments suggest that T cells aimed at GBM antigens may also injure vessels."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c020
+  section: pathogenesis
+  statement: "The lungs can bleed because alveolar capillary basement membranes express the same target antigen."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c021
+  section: pathogenesis
+  statement: "Neutrophils activated by ANCAs attach to endothelial cells and kill them with granule contents and toxic oxygen-derived products."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c022
+  section: pathogenesis
+  statement: "The same ANCA-activated neutrophils also trigger the kinin system and the alternative complement pathway, which worsens the inflammation."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c023
+  section: pathogenesis
+  statement: "ANCAs were shown to cause the disease after being found circulating in about 90% of patients with this injury pattern."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c024
+  section: micro
+  statement: "Next to the injured glomerular tuft, the cells of the crescent fill Bowman space."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c025
+  section: micro
+  statement: "Crescents usually involve over half of glomeruli in anti-GBM disease, and more than 90% of patients have them."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c026
+  section: micro
+  statement: "In anti-GBM disease, fibrinoid necrosis often affects parts of glomeruli."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c027
+  section: micro
+  statement: "Intra-alveolar hemorrhage is marked in the lungs involved in anti-GBM disease."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c028
+  section: micro
+  statement: "On electron microscopy anti-GBM disease shows focal GBM breaks and lacks the dense deposits of immune complex disease."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c029
+  section: micro
+  statement: "Glomerular necrosis and crescents often affect over half of glomeruli in ANCA glomerulonephritis, and more than 90% of patients have them."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c030
+  section: micro
+  statement: "In ANCA disease a crescent forms over time in response to an earlier segmental fibrinoid necrosis."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c031
+  section: micro
+  statement: "In ANCA disease, segments away from the necrosis can look normal or show slight changes."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c032
+  section: micro
+  statement: "ANCA glomerulonephritis has few immunoglobulin and complement deposits, unlike the anti-GBM and immune complex types."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947, 948" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c033
+  section: ancillary
+  statement: "On Masson trichrome in anti-GBM disease, a cell-rich crescent crowds Bowman space."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c034
+  section: ancillary
+  statement: "In ANCA disease, silver staining shows breaks in some glomerular basement membranes."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c035
+  section: ancillary
+  statement: "Immunostaining for IgG outlines the GBM in a diffuse linear pattern in anti-GBM disease."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c036
+  section: ancillary
+  statement: "Granular immunofluorescence is the usual picture when immune complexes lodge in glomerular capillary walls."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c037
+  section: ancillary
+  statement: "ANCA glomerulonephritis has scarce or absent immunoglobulin and complement deposits."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947, 948" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c038
+  section: ancillary
+  statement: "Diabetic glomerulosclerosis and monoclonal immunoglobulin deposition disease also bind IgG to basement membranes, so linear IgG is not exclusive to anti-GBM disease."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c039
+  section: ancillary
+  statement: "In anti-GBM disease, electron microscopy shows breaks in the GBM and no immune complex deposits."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c040
+  section: clinical
+  statement: "Anti-GBM and ANCA disease both usually begin with quickly worsening kidney failure and a nephritic picture."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946, 948" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c041
+  section: clinical
+  statement: "Lung hemorrhage with hemoptysis occurs in about half of anti-GBM patients and can be life-threatening."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c042
+  section: clinical
+  statement: "The name Goodpasture is reserved for anti-GBM disease that affects both lungs and kidneys."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c043
+  section: clinical
+  statement: "Pulmonary hemorrhage is one of many systemic effects of the small vessel vasculitis found in about three quarters of ANCA glomerulonephritis patients."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "948" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c044
+  section: clinical
+  statement: "Goodpasture syndrome is much less frequent than the pulmonary-renal syndrome of ANCA glomerulonephritis with pulmonary vasculitis."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "948" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c045
+  section: diagnosis
+  statement: "Roughly 90% of patients with anti-GBM disease have anti-GBM antibodies that can be detected in the blood."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c046
+  section: diagnosis
+  statement: "About 90% of patients with the ANCA pattern of injury have circulating ANCAs, usually anti-MPO or anti-PR3."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c047
+  section: diagnosis
+  statement: "The three categories can overlap, with more than one marker found in the serology or pathology of the same patient."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "948" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c048
+  section: prognosis
+  statement: "In anti-GBM disease, plasma exchange and heavy immunosuppression give the best results when started early, before the kidneys fail badly."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c049
+  section: prognosis
+  statement: "If transplantation waits until anti-GBM antibodies have cleared, loss of the graft to recurrence is unlikely."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c050
+  section: prognosis
+  statement: "Without treatment, ESRD develops within 5 years in more than 80% of ANCA glomerulonephritis patients."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "948" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c051
+  section: prognosis
+  statement: "Immunosuppressive therapy reduces ESRD within 5 years to less than 20%."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "948" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c052
+  section: prognosis
+  statement: "Even after treatment achieves remission, ANCA disease can come back."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "948" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c053
+  section: prognosis
+  statement: "Among renal transplant recipients with ANCA glomerulonephritis, 15% have a recurrence."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "948" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c054
+  section: differential
+  statement: "Anti-GBM disease features linear IgG along the GBM, possible pulmonary hemorrhage and no immune complex-type deposits on electron microscopy."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c055
+  section: differential
+  statement: "ANCA glomerulonephritis features necrosis and crescents with little or no immunoglobulin, and often systemic vasculitis."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947, 948" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c056
+  section: differential
+  statement: "Immune complex deposition typically gives granular rather than linear immunofluorescence."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c057
+  section: high-yield
+  statement: "A crescent is parietal epithelial cells, macrophages and fibrin in Bowman space after capillary wall disruption."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c058
+  section: high-yield
+  statement: "Linear IgG on the GBM points to anti-GBM disease, whose target is the alpha-3 chain of type IV collagen, though other diseases can show IgG on basement membranes."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c059
+  section: high-yield
+  statement: "Granular immunofluorescence is the typical pattern of immune complex deposition."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c060
+  section: high-yield
+  statement: "ANCA disease is the crescentic form with scant immune deposits, with MPO or PR3 specificity in most cases."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947, 948" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c061
+  section: high-yield
+  statement: "Goodpasture syndrome is anti-GBM disease involving both lungs and kidneys."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c062
+  section: high-yield
+  statement: "The ANCA share of crescentic glomerulonephritis rises with age and is highest in older adults."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c063
+  section: high-yield
+  statement: "Plasma exchange and immunosuppression are most effective early in anti-GBM disease."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c064
+  section: traps
+  statement: "Linear IgG alone does not prove anti-GBM disease, because diabetic glomerulosclerosis and monoclonal immunoglobulin deposition disease show IgG on basement membranes too."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c065
+  section: traps
+  statement: "Goodpasture syndrome is the combined lung and kidney form, while anti-GBM disease can remain confined to the kidneys."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c066
+  section: traps
+  statement: "The lung-kidney syndrome caused by ANCA vasculitis occurs much more often than Goodpasture syndrome."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "948" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c067
+  section: traps
+  statement: "ANCA disease is aggressive with necrosis and crescents while having little or no immune deposition."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947, 948" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c068
+  section: traps
+  statement: "Crescent formation can result from different pathogenic mechanisms, and the immunologic categories are anti-GBM, immune complex and ANCA."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "947" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: crescentic-glomerulonephritis-c069
+  section: mnemonics
+  statement: "Linear IgG means anti-GBM, granular means immune complex and little or no deposit means ANCA disease."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "946, 947, 948" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
