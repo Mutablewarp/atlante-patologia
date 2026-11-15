@@ -1,0 +1,458 @@
+entity: primary-biliary-cholangitis
+claims:
+  - claimId: primary-biliary-cholangitis-c001
+    section: definition
+    statement: "PBC is a disease in which an immune attack gradually destroys the intrahepatic bile ducts over many years."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c002
+    section: definition
+    statement: "Liver damage comes from cholestasis, which results from impaired bile secretion once the bile ducts are lost."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c003
+    section: definition
+    statement: "PBC patients are usually women aged 30 to 65 years, and women account for about 90% to 95% of cases."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "871" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c004
+    section: definition
+    statement: "Cirrhosis is the end stage, the fourth of the four pathologic stages of PBC."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870-871" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c005
+    section: etiology
+    statement: "Relatives of patients develop PBC much more often than the general population, which hints at a genetic predisposition although cases are sporadic."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c006
+    section: etiology
+    statement: "Most PBC patients also carry another autoimmune condition, such as chronic thyroiditis or Sjögren syndrome."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c007
+    section: etiology
+    statement: "PBC is less common in carriers of DRB1*11 and DRB1*13, while certain other HLA-DRB1 alleles are associated with the disease."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c008
+    section: etiology
+    statement: "Women are affected far more often, and an increase in X monosomy may partly explain this."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c009
+    section: pathogenesis
+    statement: "Serum immunoglobulins are increased, especially IgM, and both humoral and cellular immunity are impaired in PBC."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c010
+    section: pathogenesis
+    statement: "Antimitochondrial antibodies circulate in more than 95% of PBC patients."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c011
+    section: pathogenesis
+    statement: "The antibodies recognize parts of the pyruvate dehydrogenase complex located in mitochondria."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c012
+    section: pathogenesis
+    statement: "AMA are a marker, not a cause: nothing links them to starting or worsening PBC, and mitochondrial function stays normal."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c013
+    section: pathogenesis
+    statement: "Antithyroid and antinuclear autoantibodies, among others, may also circulate in PBC."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c014
+    section: pathogenesis
+    statement: "Complement activation is persistent in PBC."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c015
+    section: pathogenesis
+    statement: "CD8+ lymphocytes are suspected of destroying the ducts, since they make up most of the cells gathered at the damaged sites."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c016
+    section: gross
+    statement: "The end-stage PBC liver is cirrhotic and nodular, with a dark green color from bile."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870-871" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c017
+    section: gross
+    statement: "Chronic cholestasis puts a halo around each nodule, and the bridging fibrous septa give the parenchyma a jigsaw-puzzle look."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "871" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c018
+    section: micro
+    statement: "In stage 1 (portal stage, florid duct lesion), small and mid-sized ducts within the liver are destroyed by chronic inflammation."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c019
+    section: micro
+    statement: "Tissue sections show a focal lesion because the duct injury is segmental."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c020
+    section: micro
+    statement: "The inflammatory cells around the damaged ducts, lymphocytes among them, disrupt the duct basement membrane."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c021
+    section: micro
+    statement: "Small papillae sometimes grow inward from the layered, hyperplastic lining of the affected duct."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c022
+    section: micro
+    statement: "A bile duct can be compressed by an epithelioid granuloma, a lesion common in portal tracts."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c023
+    section: micro
+    statement: "Stage 2 (periportal stage) has less inflammation than stage 1, with ductular proliferation in the periportal areas and a reduced number of bile ducts."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c024
+    section: micro
+    statement: "In stage 3 (septal stage) nearly all small ducts are gone and medium-sized ducts are often scarred."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c025
+    section: micro
+    statement: "Some lobules are already ringed by collagen bands that extend out from the portal tracts."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c026
+    section: micro
+    statement: "Stage 4 cirrhosis shows slight inflammation in septa and nodules; small ducts are scarce and medium ones reduced."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "871" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c027
+    section: ancillary
+    statement: "Typical liver histology on biopsy is one of the diagnostic criteria of PBC."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "871" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c028
+    section: ancillary
+    statement: "Serum AMA testing is a routine step in diagnosing PBC."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c029
+    section: clinical
+    statement: "Early PBC often causes no symptoms at all; when symptoms begin, tiredness and itching are the usual first ones."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "871" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c030
+    section: clinical
+    statement: "In the early phase alkaline phosphatase is typically raised, while bilirubin is normal or barely above normal."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "871" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c031
+    section: clinical
+    statement: "Most patients see bilirubin creep upward as the disease progresses."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "871" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c032
+    section: clinical
+    statement: "The transaminases AST and ALT show only a moderate rise in PBC."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "871" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c033
+    section: clinical
+    statement: "Lipoprotein-X, an abnormal lipoprotein, appears and blood cholesterol climbs steeply."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "871" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c034
+    section: clinical
+    statement: "Xanthomas are localized subcutaneous lesions formed by macrophages that have accumulated cholesterol."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "871" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c035
+    section: clinical
+    statement: "Stools become fatty (steatorrhea) when too little bile reaches the intestine and fat goes unabsorbed."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "871" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c036
+    section: clinical
+    statement: "Poor absorption of vitamin D and calcium leads to bone disease, namely osteomalacia and osteoporosis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "871" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c037
+    section: diagnosis
+    statement: "With an AMA titer of 1:40 or higher, either 6 months of raised alkaline phosphatase or typical biopsy histology completes the diagnosis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "871" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c038
+    section: diagnosis
+    statement: "In the uncommon AMA-negative form, raised alkaline phosphatase and typical biopsy findings must carry the diagnosis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "871" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c039
+    section: prognosis
+    statement: "PBC usually moves slowly and can last 20 to 30 years."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "871" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c040
+    section: prognosis
+    statement: "The outcome varies: some patients progress to advanced cirrhosis, while others stay symptom-free and have an excellent prognosis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "871" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c041
+    section: prognosis
+    statement: "Death in established cirrhosis results from portal hypertension and its complications, or from liver failure."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "871" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c042
+    section: prognosis
+    statement: "Ursodeoxycholic acid is used in PBC to improve the transport of bile through the liver."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "871" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c043
+    section: prognosis
+    statement: "UDCA prolongs transplant-free survival but leaves the root cause untouched."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "871" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c044
+    section: prognosis
+    statement: "Liver transplantation is highly effective once PBC has reached the end stage."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "871" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c045
+    section: differential
+    statement: "PSC is often accompanied by ulcerative colitis, usually affects men, and shows periductal onion-skin fibrosis with narrowing of intrahepatic and extrahepatic bile ducts."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "871" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c046
+    section: differential
+    statement: "On cholangiography PSC gives the bile ducts a beaded look, because the disease is segmental."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "871" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c047
+    section: high-yield
+    statement: "AMA are present in over 95% of PBC patients, but signal the disease without causing it."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c048
+    section: high-yield
+    statement: "The florid duct lesion of stage 1 is patchy and hits small and medium intrahepatic bile ducts."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c049
+    section: high-yield
+    statement: "By the septal stage (stage 3) nearly all small bile ducts have been lost."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c050
+    section: high-yield
+    statement: "Diagnosis follows a two-of-three rule combining an antibody test, an enzyme level and biopsy histology."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "871" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c051
+    section: high-yield
+    statement: "UDCA increases transplant-free survival without treating the underlying cause."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "871" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c052
+    section: traps
+    statement: "AMA leave mitochondria working normally and are not known to cause disease; CD8+ lymphocytes are the suspected mediators of duct destruction."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c053
+    section: traps
+    statement: "Cirrhosis is the fourth and end stage of PBC, not its starting point."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870-871" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c054
+    section: traps
+    statement: "PBC without AMA is recognized by raised alkaline phosphatase together with typical histology."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "871" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c055
+    section: traps
+    statement: "UDCA helps bile move through the liver and prolongs survival without transplant, but it is not a cure for the cause."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "871" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c056
+    section: traps
+    statement: "Only stretches of a duct are damaged, so one section can pass through normal duct and miss the lesion."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: primary-biliary-cholangitis-c057
+    section: mnemonics
+    statement: "The pathologic stages of PBC are portal (florid duct lesion), periportal, septal and cirrhosis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15

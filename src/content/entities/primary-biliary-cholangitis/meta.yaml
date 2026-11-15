@@ -1,0 +1,111 @@
+id: primary-biliary-cholangitis
+module: o20
+tier: core
+kind: disease
+editionDependent: false
+status: published
+lastUpdated: 2026-11-15
+reviewStatus: ai-generated-unreviewed
+names:
+  it: "Colangite biliare primitiva"
+  en: "Primary biliary cholangitis"
+  eponyms: []
+  synonyms:
+    it: ["Cirrosi biliare primitiva", "Colangite distruttiva cronica non suppurativa"]
+    en: ["Primary biliary cirrhosis", "Chronic nonsuppurative destructive cholangitis"]
+  abbreviations: ["PBC"]
+summary:
+  it: "Malattia colestatica cronica e progressiva di natura immunomediata, che distrugge i dotti biliari intraepatici, colpisce soprattutto donne di mezza età ed è associata agli anticorpi antimitocondrio (AMA)."
+  en: "Chronic, progressive, immune-mediated cholestatic disease that destroys the intrahepatic bile ducts, mainly in middle-aged women, and is associated with antimitochondrial antibodies (AMA)."
+lenses:
+  system: [liver-biliary]
+  process: [chronic-inflammation, repair-fibrosis]
+  pattern: [granuloma]
+  presentation: [jaundice]
+  marker: [laboratory]
+  group: [immune, inflammatory]
+learningObjectives:
+  - it: "Descrivere la lesione duttale florida e i quattro stadi istologici della colangite biliare primitiva."
+    en: "Describe the florid duct lesion and the four histologic stages of primary biliary cholangitis."
+  - it: "Spiegare perché gli AMA sono un marcatore e non un effettore della malattia."
+    en: "Explain why AMA are a marker and not an effector of the disease."
+  - it: "Applicare il criterio diagnostico dei due elementi su tre (AMA, fosfatasi alcalina, istologia)."
+    en: "Apply the two-of-three diagnostic rule (AMA, alkaline phosphatase, histology)."
+  - it: "Riconoscere il quadro clinico e di laboratorio della colestasi cronica e le sue complicanze."
+    en: "Recognize the clinical and laboratory picture of chronic cholestasis and its complications."
+  - it: "Distinguere la colangite biliare primitiva dalla colangite sclerosante primitiva."
+    en: "Distinguish primary biliary cholangitis from primary sclerosing cholangitis."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: primary-sclerosing-cholangitis
+    note:
+      it: "Colangite sclerosante: soprattutto uomini, dotti intra- ed extraepatici, aspetto a corona di rosario alla colangiografia."
+      en: "Sclerosing cholangitis: mostly men, intra- and extrahepatic ducts, beaded appearance on cholangiography."
+  - type: causes
+    target: cirrhosis
+    note:
+      it: "La cirrosi biliare è lo stadio terminale della malattia."
+      en: "Biliary cirrhosis is the end stage of the disease."
+quickCheck:
+  - id: primary-biliary-cholangitis-q1
+    q:
+      it: "Perché gli AMA sono detti marcatori e non effettori della colangite biliare primitiva?"
+      en: "Why are AMA called markers and not effectors of primary biliary cholangitis?"
+    a:
+      it: "Perché non alterano la funzione mitocondriale e non hanno un ruolo noto nella patogenesi; la distruzione dei dotti è attribuita ai linfociti T CD8+."
+      en: "Because they do not alter mitochondrial function and have no known role in pathogenesis; duct destruction is attributed to CD8+ T lymphocytes."
+    kind: short
+  - id: primary-biliary-cholangitis-q2
+    q:
+      it: "Quali sono i tre criteri diagnostici e quanti ne servono?"
+      en: "What are the three diagnostic criteria and how many are needed?"
+    a:
+      it: "Titolo di AMA di almeno 1:40, fosfatasi alcalina elevata per almeno 6 mesi, istologia tipica alla biopsia; ne servono due su tre."
+      en: "AMA titer of at least 1:40, elevated alkaline phosphatase for at least 6 months, typical histology on biopsy; two of three are needed."
+    kind: short
+  - id: primary-biliary-cholangitis-q3
+    q:
+      it: "In quale stadio i piccoli dotti biliari scompaiono quasi del tutto?"
+      en: "At which stage do the small bile ducts virtually disappear?"
+    a:
+      it: "Nello stadio 3 (stadio settale), i piccoli dotti biliari scompaiono quasi del tutto."
+      en: "At stage 3 (septal stage), when small bile ducts virtually disappear."
+    kind: short
+selfExplain:
+  - it: "Perché nella colangite biliare primitiva compare steatorrea?"
+    en: "Why does steatorrhea appear in primary biliary cholangitis?"
+examQuestions:
+  - it: "Mi parli degli anticorpi antimitocondrio nella colangite biliare primitiva: che cosa riconoscono e che ruolo hanno?"
+    en: "Tell me about antimitochondrial antibodies in primary biliary cholangitis: what do they recognize and what role do they have?"
+    focus: [pathogenesis, high-yield]
+    level: 1
+  - it: "Che cosa vede al microscopio nello stadio 1 della colangite biliare primitiva?"
+    en: "What do you see under the microscope in stage 1 of primary biliary cholangitis?"
+    focus: [micro]
+    level: 1
+  - it: "Quali sono i quattro stadi istologici e che cosa succede ai dotti biliari lungo la malattia?"
+    en: "What are the four histologic stages, and what happens to the bile ducts along the course of the disease?"
+    focus: [micro, mnemonics]
+    level: 2
+  - it: "Perché nella colangite biliare primitiva può comparire una malattia dell'osso, e di quali forme si tratta?"
+    en: "Why can bone disease develop in primary biliary cholangitis, and which forms does it take?"
+    focus: [clinical]
+    level: 2
+  - it: "Come conferma la diagnosi di colangite biliare primitiva, e che cosa fa se gli AMA sono negativi?"
+    en: "How do you confirm the diagnosis of primary biliary cholangitis, and what do you do if AMA are negative?"
+    focus: [diagnosis, traps]
+    level: 3
+  - it: "Come distingue la colangite biliare primitiva dalla colangite sclerosante primitiva?"
+    en: "How do you tell primary biliary cholangitis from primary sclerosing cholangitis?"
+    focus: [differential]
+    level: 3
+images:
+  - id: primary-biliary-cholangitis-micro-1
+    role: micro
+  - id: primary-biliary-cholangitis-micro-2
+    role: micro
+sources:
+  - source: rubin-8e
+    chapter: "20"
+    pages: "870-871"
