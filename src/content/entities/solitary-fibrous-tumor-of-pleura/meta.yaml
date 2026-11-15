@@ -1,0 +1,88 @@
+id: solitary-fibrous-tumor-of-pleura
+module: o18
+tier: extended
+kind: disease
+names:
+  it: "Tumore fibroso solitario della pleura"
+  en: "Solitary fibrous tumor of the pleura"
+  eponyms: []
+  synonyms:
+    it: ["Tumore fibroso localizzato della pleura"]
+    en: ["Localized fibrous tumor of the pleura"]
+  abbreviations: []
+summary:
+  it: "Neoplasia pleurica localizzata, di solito peduncolata e per lo più benigna, che origina dal connettivo sottomesoteliale e non è legata all'asbesto."
+  en: "A localized pleural neoplasm, usually pedunculated and mostly benign, arising from submesothelial connective tissue and unrelated to asbestos."
+lenses:
+  system: [respiratory]
+  process: [neoplasia]
+  pattern: []
+  presentation: [mass-lesion]
+  marker: []
+  group: [neoplastic]
+learningObjectives:
+  - it: "Descrivere l'aspetto macroscopico di un tumore fibroso solitario della pleura: massa peduncolata, spesso grande, con superficie di taglio grigio-biancastra."
+    en: "Describe the gross appearance of a pleural solitary fibrous tumor: a pedunculated, often large mass with a gray-white cut surface."
+  - it: "Riconoscere al microscopio il «pattern senza pattern» di cellule fusate con collagene."
+    en: "Recognize the \"patternless pattern\" of spindle cells with collagen under the microscope."
+  - it: "Spiegare perché il tumore non è un mesotelioma e non è legato all'asbesto."
+    en: "Explain why the tumor is not a mesothelioma and is not linked to asbestos."
+prerequisites: [benign-vs-malignant-tumors]
+relations:
+  - type: differentialOf
+    target: malignant-mesothelioma
+    note:
+      it: "Origina dal connettivo sottomesoteliale, non dal mesotelio, e non dipende dall'asbesto."
+      en: "Arises from submesothelial connective tissue, not mesothelium, and is not tied to asbestos."
+quickCheck:
+  - id: solitary-fibrous-tumor-of-pleura-q1
+    q:
+      it: "Da quale tessuto origina il tumore fibroso solitario della pleura?"
+      en: "From which tissue does the pleural solitary fibrous tumor arise?"
+    a:
+      it: "Dal connettivo sottomesoteliale, non dal mesotelio."
+      en: "From submesothelial connective tissue, not from mesothelium."
+    kind: short
+  - id: solitary-fibrous-tumor-of-pleura-q2
+    q:
+      it: "Che aspetto ha di solito la massa a occhio nudo?"
+      en: "What does the mass usually look like to the naked eye?"
+    a:
+      it: "È di solito peduncolata, con superficie di taglio grigio-biancastra e spesso a vortici."
+      en: "It is usually pedunculated, with a gray-white cut surface that is often whorled."
+    kind: short
+  - id: solitary-fibrous-tumor-of-pleura-q3
+    q:
+      it: "Il tumore è sempre benigno? Quali reperti fanno pensare a malignità?"
+      en: "Is the tumor always benign? Which findings suggest malignancy?"
+    a:
+      it: "No: la maggior parte è benigna, ma alcuni sono maligni; fanno pensare a malignità la necrosi e la marcata variabilità cellulare."
+      en: "No: most are benign but a few are malignant; necrosis and marked cell variability suggest malignancy."
+    kind: short
+selfExplain:
+  - it: "Perché un tumore pleurico non legato all'asbesto e non derivato dal mesotelio non è un mesotelioma?"
+    en: "Why is a pleural tumor that is not tied to asbestos and does not derive from mesothelium not a mesothelioma?"
+examQuestions:
+  - it: "Mi parli del tumore fibroso solitario della pleura: com'è fatto a occhio nudo e che comportamento ha di solito?"
+    en: "Tell me about the solitary fibrous tumor of the pleura: what does it look like grossly, and how does it usually behave?"
+    focus: [gross, prognosis]
+    level: 1
+  - it: "Che cosa vede al microscopio in un tumore fibroso solitario della pleura?"
+    en: "What do you see under the microscope in a solitary fibrous tumor of the pleura?"
+    focus: [micro]
+    level: 2
+  - it: "Come distingue un tumore fibroso solitario della pleura da un mesotelioma maligno?"
+    en: "How do you tell a solitary fibrous tumor of the pleura from a malignant mesothelioma?"
+    focus: [pathogenesis, etiology, differential]
+    level: 3
+images:
+  - { id: solitary-fibrous-tumor-of-pleura-gross-1, role: gross, pairWith: solitary-fibrous-tumor-of-pleura-micro-1 }
+  - { id: solitary-fibrous-tumor-of-pleura-micro-1, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "18"
+    pages: "764"
+lastUpdated: 2026-11-14
+status: published
