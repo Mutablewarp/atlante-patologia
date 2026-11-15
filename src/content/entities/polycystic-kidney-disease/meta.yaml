@@ -1,0 +1,121 @@
+id: polycystic-kidney-disease
+module: o22
+tier: core
+kind: disease
+names:
+  it: "Malattia policistica renale e altre cistopatie"
+  en: "Polycystic kidney disease and other cystic diseases"
+  eponyms: []
+  synonyms:
+    it: ["Rene policistico"]
+    en: ["Polycystic kidney"]
+  abbreviations: [ADPKD, ARPKD, MCKD]
+summary:
+  it: "Gruppo di malattie in cui il rene contiene cisti: la forma autosomica dominante (ADPKD) è la più frequente, quella recessiva (ARPKD) colpisce l'infanzia; seguono nefronoftisi, rene a spugna midollare, cisti semplici e acquisite."
+  en: "A group of diseases in which the kidney contains cysts: the autosomal dominant form (ADPKD) is the most common, the recessive form (ARPKD) affects infancy; nephronophthisis, medullary sponge kidney, simple and acquired cysts follow."
+lenses:
+  system: [kidney, liver-biliary]
+  process: []
+  pattern: []
+  presentation: [hematuria, organomegaly, mass-lesion]
+  marker: [molecular]
+  group: [genetic, developmental]
+learningObjectives:
+  - it: "Confrontare ADPKD e ARPKD per età di esordio, gene, aspetto dei reni e interessamento del fegato."
+    en: "Compare ADPKD and ARPKD by age at onset, gene, kidney appearance and liver involvement."
+  - it: "Descrivere come i difetti delle ciglia primarie portano alla formazione delle cisti."
+    en: "Describe how defects of the primary cilia lead to cyst formation."
+  - it: "Elencare le lesioni extrarenali dell'ADPKD."
+    en: "List the extrarenal lesions of ADPKD."
+  - it: "Distinguere nefronoftisi, malattia cistica midollare, rene a spugna midollare, cisti semplici e cisti acquisite."
+    en: "Distinguish nephronophthisis, medullary cystic disease, medullary sponge kidney, simple cysts and acquired cysts."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: congenital-anomalies-kidney-urinary-tract
+    note:
+      it: "La displasia renale multicistica è una massa irregolare di cisti, di solito monolaterale."
+      en: "Multicystic renal dysplasia is an irregular mass of cysts, usually unilateral."
+  - type: causes
+    target: portal-hypertension
+    note:
+      it: "Nell'ARPKD la fibrosi epatica congenita può portare a ipertensione portale."
+      en: "In ARPKD, congenital hepatic fibrosis can lead to portal hypertension."
+  - type: causes
+    target: renal-cell-carcinoma
+    note:
+      it: "Circa il 5% dei pazienti con malattia cistica acquisita sviluppa un carcinoma a cellule renali."
+      en: "About 5% of patients with acquired cystic disease develop renal cell carcinoma."
+quickCheck:
+  - id: polycystic-kidney-disease-q1
+    q:
+      it: "Quali geni sono mutati nell'ADPKD e nell'ARPKD?"
+      en: "Which genes are mutated in ADPKD and ARPKD?"
+    a:
+      it: "PKD1 (circa 85%) e PKD2 (circa 15%) nell'ADPKD; PKHD1 nell'ARPKD."
+      en: "PKD1 (about 85%) and PKD2 (about 15%) in ADPKD; PKHD1 in ARPKD."
+    kind: short
+  - id: polycystic-kidney-disease-q2
+    q:
+      it: "Come si distinguono a occhio nudo i reni dell'ARPKD da quelli dell'ADPKD?"
+      en: "How do ARPKD kidneys differ grossly from ADPKD kidneys?"
+    a:
+      it: "Nell'ARPKD la superficie esterna è liscia e le cisti sono dilatazioni radiali dei dotti collettori; nell'ADPKD i contorni sono deformati dalle cisti."
+      en: "In ARPKD the outer surface is smooth and the cysts are radial dilations of collecting ducts; in ADPKD the contours are distorted by cysts."
+    kind: short
+  - id: polycystic-kidney-disease-q3
+    q:
+      it: "Quali organi extrarenali sono coinvolti nell'ADPKD?"
+      en: "Which extrarenal organs are involved in ADPKD?"
+    a:
+      it: "Fegato (cisti, in un paziente su tre), arterie cerebrali (aneurismi, in uno su cinque) e colon (diverticoli)."
+      en: "Liver (cysts, in one patient in three), cerebral arteries (aneurysms, in one in five) and colon (diverticula)."
+    kind: short
+  - id: polycystic-kidney-disease-q4
+    q:
+      it: "Nefronoftisi e malattia cistica midollare sono la stessa malattia?"
+      en: "Are nephronophthisis and medullary cystic disease the same disease?"
+    a:
+      it: "No: la patologia è simile, ma i geni e il tipo di ereditarietà sono diversi."
+      en: "No: the pathology is similar, but the genes and inheritance differ."
+    kind: short
+selfExplain:
+  - it: "Perché un difetto delle ciglia primarie può causare cisti renali?"
+    en: "Why can a defect of the primary cilia cause renal cysts?"
+  - it: "Perché la perdita di funzione renale nell'ADPKD non dipende solo dalle cisti?"
+    en: "Why does loss of renal function in ADPKD not depend on cysts alone?"
+examQuestions:
+  - it: "Come distingue l'ADPKD dall'ARPKD?"
+    en: "How do you tell ADPKD from ARPKD?"
+    focus: [definition, gross, differential]
+    level: 3
+  - it: "Mi parli delle lesioni extrarenali dell'ADPKD."
+    en: "Tell me about the extrarenal lesions of ADPKD."
+    focus: [clinical, high-yield]
+    level: 1
+  - it: "Perché nell'ADPKD si formano le cisti?"
+    en: "Why do cysts form in ADPKD?"
+    focus: [etiology, pathogenesis]
+    level: 2
+  - it: "Mi parli di nefronoftisi, rene a spugna midollare, cisti semplici e cisti acquisite."
+    en: "Tell me about nephronophthisis, medullary sponge kidney, simple cysts and acquired cysts."
+    focus: [gross, clinical, differential]
+    level: 1
+  - it: "Che cosa vede al microscopio nell'ARPKD e quale lesione trova nel fegato?"
+    en: "What do you see under the microscope in ARPKD, and what lesion do you find in the liver?"
+    focus: [micro, pathogenesis]
+    level: 2
+images:
+  - id: polycystic-kidney-disease-gross-1
+    role: gross
+    pairWith: polycystic-kidney-disease-micro-1
+  - id: polycystic-kidney-disease-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "22"
+    pages: "921-924"
+lastUpdated: 2026-11-15
+status: published
