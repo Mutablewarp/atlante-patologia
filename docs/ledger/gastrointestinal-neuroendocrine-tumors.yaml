@@ -1,0 +1,458 @@
+entity: gastrointestinal-neuroendocrine-tumors
+claims:
+- claimId: gastrointestinal-neuroendocrine-tumors-c001
+  section: definition
+  statement: "Well-differentiated NET is now the name used instead of carcinoid."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791, 829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c002
+  section: definition
+  statement: "Behavior depends mainly on where in the digestive tract the tumor starts."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c003
+  section: definition
+  statement: "NETs of the appendix and rectum usually behave indolently; these are the first and second most frequent sites."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c004
+  section: definition
+  statement: "Despite their usually small size, ileal NETs are often the more aggressive ones."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c005
+  section: etiology
+  statement: "Gastric NETs occur in three settings: autoimmune gastritis, Zollinger-Ellison syndrome, and sporadic disease."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791, 793" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c006
+  section: etiology
+  statement: "Sporadic gastric NETs are more frequently antral."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "793" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c007
+  section: pathogenesis
+  statement: "Strong antral G-cell activity raises gastrin, which drives ECL-cell growth in the body and fundus in autoimmune gastritis."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c008
+  section: pathogenesis
+  statement: "Micronodules detached from the gland bases form late, after ECL hyperplasia and chain-like rows of cells."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "792" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c009
+  section: pathogenesis
+  statement: "Persistently high gastrin keeps pushing the micronodules to merge until a clinically detectable tumor results."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "792" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c010
+  section: pathogenesis
+  statement: "Zollinger-Ellison syndrome also raises gastrin, and gastric NETs can develop in that state."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "793" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c011
+  section: gross
+  statement: "NETs arising in autoimmune gastritis are often multiple, appearing as small nodules on markedly atrophic mucosa."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "792" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c012
+  section: gross
+  statement: "In a small NET the overlying mucosa is usually intact and the nodule lies in the submucosa."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c013
+  section: gross
+  statement: "Larger NETs often ulcerate secondarily and may form polyps or grow within or around the bowel wall."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c014
+  section: gross
+  statement: "On sectioning, intestinal NETs are white to yellow and firm."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c015
+  section: gross
+  statement: "Dense scarring (desmoplasia) around a NET that has grown through the bowel wall to the serosa can obstruct the bowel through kinking and adhesions."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c016
+  section: gross
+  statement: "Multiplicity occurs in about 40% of ileal NETs."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c017
+  section: gross
+  statement: "Typically, appendiceal NETs are oval and found at the appendix tip."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "832" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c018
+  section: micro
+  statement: "NET cells are small and round and group as solid nests, strands or rosettes."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c019
+  section: micro
+  statement: "Mitoses are scarce in NETs, and the nuclei look very uniform."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c020
+  section: micro
+  statement: "Neurosecretory-type granules are found in the abundant eosinophilic cytoplasm of NET cells."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c021
+  section: micro
+  statement: "In the stomach, the surface epithelium can overlie a small nest of bland NET cells."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "792" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c022
+  section: ancillary
+  statement: "Immunostaining for the cell-cycle marker Ki-67 shows what share of tumor cells is proliferating."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c023
+  section: ancillary
+  statement: "Besides the site of origin, tumor size and mitotic rate refine the prediction of behavior."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c024
+  section: clinical
+  statement: "Carcinoid syndrome affects only a small share of NET patients and is triggered by active products the tumor secretes."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c025
+  section: clinical
+  statement: "Extensive liver metastases are usually present when carcinoid syndrome appears."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c026
+  section: clinical
+  statement: "Episodic flushing and diarrhea are classic symptoms of carcinoid syndrome, with diarrhea often the most distressing."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c027
+  section: clinical
+  statement: "Serotonin is thought to cause the diarrhea of carcinoid syndrome."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c028
+  section: clinical
+  statement: "Right-sided cardiac valve disease affects roughly half of patients with carcinoid syndrome."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c029
+  section: clinical
+  statement: "Appendiceal NETs are usually tiny and are found by chance in appendectomy specimens."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "832" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c030
+  section: diagnosis
+  statement: "Monoamine oxidase, active in the liver and other tissues, converts serotonin into 5-HIAA."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c031
+  section: diagnosis
+  statement: "Urinary 5-HIAA is a diagnostic test for carcinoid syndrome."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c032
+  section: prognosis
+  statement: "Gastric NETs linked to autoimmune gastritis seldom behave aggressively."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "793" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c033
+  section: prognosis
+  statement: "Gastric NETs associated with Zollinger-Ellison syndrome have intermediate behavior."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "793" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c034
+  section: prognosis
+  statement: "Prognosis is poorer for sporadic gastric NETs than for those in autoimmune gastritis."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "793" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c035
+  section: prognosis
+  statement: "Appendiceal NETs under 1 cm are invariably clinically benign."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "832" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c036
+  section: prognosis
+  statement: "Metastasis is uncommon, about 1%, for appendiceal NETs of 1 to 2 cm."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "832" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c037
+  section: prognosis
+  statement: "Beyond 2 cm, the aggressiveness of appendiceal NETs rises with size."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "832" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c038
+  section: prognosis
+  statement: "Lymph node deposits of a NET can outgrow the primary tumor by far."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c039
+  section: prognosis
+  statement: "Metastases at distant sites, especially in the liver, follow blood-borne spread of NETs."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c040
+  section: prognosis
+  statement: "Serotonin reaches the heart when liver metastases let it bypass breakdown in the liver."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c041
+  section: prognosis
+  statement: "The pulmonic valve narrows and the tricuspid valve leaks because fibrous plaques distort them."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c042
+  section: prognosis
+  statement: "High monoamine oxidase activity in the lungs keeps the left heart uninvolved."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c043
+  section: differential
+  statement: "GIST is usually driven by a KIT mutation; it arises in the muscularis propria and consists of spindle or epithelioid cells."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c044
+  section: differential
+  statement: "Immunostaining for CD117 is positive in most GISTs."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c045
+  section: differential
+  statement: "In gastric MALT lymphoma, a uniform sheet of monocytoid lymphoid cells fills the lamina propria and enters the glands."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c046
+  section: differential
+  statement: "Lymphoepithelial lesions help distinguish MALT lymphoma from chronic gastritis."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c047
+  section: high-yield
+  statement: "Carcinoid is the older name for well-differentiated NET."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c048
+  section: high-yield
+  statement: "Gastric NET behavior depends on setting: rarely aggressive in autoimmune gastritis, worse when sporadic."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "793" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c049
+  section: high-yield
+  statement: "The appendix is the commonest site and appendiceal NETs under 1 cm are benign."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829, 832" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c050
+  section: high-yield
+  statement: "A urine 5-HIAA test helps diagnose carcinoid syndrome."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c051
+  section: high-yield
+  statement: "Carcinoid syndrome is mostly seen with liver metastases, and the right heart is the one affected."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c052
+  section: high-yield
+  statement: "The Ki-67 percentage assesses proliferative activity."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c053
+  section: traps
+  statement: "Well-differentiated NET should be used instead of carcinoid."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c054
+  section: traps
+  statement: "Gastric NETs behave differently depending on their clinical setting."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c055
+  section: traps
+  statement: "Carcinoid syndrome usually appears only when the tumor has spread widely to the liver."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c056
+  section: traps
+  statement: "Carcinoid heart disease involves the right side, not the left."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-neuroendocrine-tumors-c057
+  section: mnemonics
+  statement: "Original mnemonic FDR: flushing, diarrhea, right-sided valve disease, the core of carcinoid syndrome."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
