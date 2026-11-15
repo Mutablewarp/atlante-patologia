@@ -1,0 +1,127 @@
+id: celiac-disease
+module: o19
+tier: core
+kind: disease
+names:
+  it: "Malattia celiaca"
+  en: "Celiac disease"
+  eponyms: []
+  synonyms:
+    it: ["Enteropatia da glutine", "Sprue celiaca"]
+    en: ["Gluten-sensitive enteropathy", "Nontropical sprue"]
+  abbreviations: ["GSE"]
+summary:
+  it: "Malattia immunomediata dell'intestino tenue che compare in individui predisposti (HLA-DQ2 o DQ8) dopo l'ingestione di glutine, con atrofia dei villi, iperplasia delle cripte, aumento dei linfociti intraepiteliali e malassorbimento."
+  en: "Immune-mediated disease of the small intestine that arises in predisposed people (HLA-DQ2 or DQ8) after gluten ingestion, with villous atrophy, crypt hyperplasia, more intraepithelial lymphocytes and malabsorption."
+lenses:
+  system: [gastrointestinal]
+  process: [chronic-inflammation, hypersensitivity]
+  pattern: [atrophy]
+  presentation: [anemia, edema]
+  marker: [laboratory]
+  group: [immune, nutritional]
+learningObjectives:
+  - it: "Spiegare il ruolo del glutine, della gliadina e degli alleli HLA-DQ2 e DQ8 nella patogenesi."
+    en: "Explain the role of gluten, gliadin and the HLA-DQ2 and DQ8 alleles in pathogenesis."
+  - it: "Descrivere atrofia dei villi, iperplasia delle cripte e aumento dei linfociti intraepiteliali."
+    en: "Describe villous atrophy, crypt hyperplasia and increased intraepithelial lymphocytes."
+  - it: "Indicare i test sierologici utili e perché la diagnosi richiede dati clinici, sierologici e istologici insieme."
+    en: "Name the useful serologic tests and explain why diagnosis needs clinical, serologic and histologic data together."
+  - it: "Riconoscere le complicanze a lungo termine e distinguere la malattia da sprue tropicale, enteropatia autoimmune, malattia di Whipple e sovracrescita batterica."
+    en: "Recognize long-term complications and distinguish the disease from tropical sprue, autoimmune enteropathy, Whipple disease and bacterial overgrowth."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: malabsorption-syndromes
+    note:
+      it: "La malattia celiaca è una delle cause immunomediate di malassorbimento."
+      en: "Celiac disease is one of the immune-mediated causes of malabsorption."
+quickCheck:
+  - id: celiac-disease-q1
+    q:
+      it: "Perché l'assenza di HLA-DQ2 e DQ8 è utile nella diagnosi?"
+      en: "Why is the absence of HLA-DQ2 and DQ8 useful in diagnosis?"
+    a:
+      it: "Quasi tutti i pazienti hanno uno di questi alleli, quindi la loro assenza esclude di fatto la malattia; la presenza invece non basta a farla comparire."
+      en: "Nearly all patients carry one of these alleles, so their absence virtually excludes the disease; their presence alone does not cause it."
+    kind: short
+  - id: celiac-disease-q2
+    q:
+      it: "Quali sono le alterazioni istologiche caratteristiche e dove sono più marcate?"
+      en: "What are the characteristic histologic changes, and where are they most marked?"
+    a:
+      it: "Atrofia dei villi, iperplasia delle cripte e aumento dei linfociti intraepiteliali, soprattutto nel tenue prossimale."
+      en: "Villous atrophy, crypt hyperplasia and more intraepithelial lymphocytes, mostly in the proximal small bowel."
+    kind: short
+  - id: celiac-disease-q3
+    q:
+      it: "Quale test sierologico è di scelta e quale ha sensibilità e specificità molto inferiori?"
+      en: "Which serologic test is the test of choice, and which has much lower sensitivity and specificity?"
+    a:
+      it: "L'anticorpo anti-transglutaminasi tissutale è di scelta; l'anticorpo antigliadina ha sensibilità e specificità molto inferiori."
+      en: "Anti-tissue transglutaminase antibody is the test of choice; antigliadin antibody has much lower sensitivity and specificity."
+    kind: short
+  - id: celiac-disease-q4
+    q:
+      it: "Un aumento dei linfociti intraepiteliali basta per diagnosticare la malattia celiaca?"
+      en: "Is an increased intraepithelial lymphocyte count enough to diagnose celiac disease?"
+    a:
+      it: "No: sono quasi sempre aumentati nella malattia celiaca, ma aumentano anche con i FANS e con la gastrite da H. pylori."
+      en: "No: they are essentially always raised in celiac disease, but NSAIDs and H. pylori gastritis raise them too."
+    kind: short
+selfExplain:
+  - it: "Perché la perdita di cellule epiteliali di superficie porta a cripte più profonde?"
+    en: "Why does loss of surface epithelial cells lead to deeper crypts?"
+  - it: "Perché la malattia grave causa steatorrea e ipoalbuminemia con edema?"
+    en: "Why does severe disease cause steatorrhea and hypoalbuminemia with edema?"
+chain:
+  - pathology:
+      it: "Atrofia dei villi con iperplasia delle cripte"
+      en: "Villous atrophy with crypt hyperplasia"
+    sign:
+      it: "Diarrea, steatorrea, anemia sideropenica"
+      en: "Diarrhea, steatorrhea, iron-deficiency anemia"
+    lab:
+      it: "Anticorpi anti-transglutaminasi tissutale"
+      en: "Anti-tissue transglutaminase antibodies"
+examQuestions:
+  - it: "Mi parli della malattia celiaca: che ruolo hanno il glutine e gli alleli HLA-DQ2 e DQ8?"
+    en: "Tell me about celiac disease: what roles do gluten and the HLA-DQ2 and DQ8 alleles play?"
+    focus: [definition, etiology, pathogenesis]
+    level: 1
+  - it: "Che cosa vede al microscopio nella mucosa del tenue prossimale in un paziente celiaco?"
+    en: "What do you see under the microscope in the proximal small-bowel mucosa of a patient with celiac disease?"
+    focus: [micro]
+    level: 1
+  - it: "Perché nella malattia celiaca i villi si accorciano mentre le cripte diventano più profonde?"
+    en: "Why do the villi shorten while the crypts deepen in celiac disease?"
+    focus: [micro, pathogenesis]
+    level: 2
+  - it: "Quali test sierologici userebbe per la malattia celiaca, e perché da soli non bastano per la diagnosi?"
+    en: "Which serologic tests would you use for celiac disease, and why are they not enough for the diagnosis on their own?"
+    focus: [ancillary, diagnosis]
+    level: 2
+  - it: "Quali complicanze a lungo termine teme in un paziente celiaco di vecchia data?"
+    en: "Which long-term complications do you worry about in a patient with long-standing celiac disease?"
+    focus: [prognosis]
+    level: 1
+  - it: "Come distingue la malattia celiaca dall'enteropatia autoimmune e dalla sprue tropicale?"
+    en: "How do you tell celiac disease from autoimmune enteropathy and from tropical sprue?"
+    focus: [differential, micro]
+    level: 3
+images:
+  - id: celiac-disease-micro-1
+    role: micro
+  - id: celiac-disease-micro-2
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: true
+editionNote:
+  it: "Il testo di riferimento non riporta alcuna classificazione istologica a gradi della malattia celiaca: questa scheda non assegna un grado."
+  en: "The reference text gives no histologic grading scheme for celiac disease: this card does not assign a grade."
+sources:
+  - source: rubin-8e
+    chapter: "19"
+    pages: "799-801"
+lastUpdated: 2026-11-15
+status: published
