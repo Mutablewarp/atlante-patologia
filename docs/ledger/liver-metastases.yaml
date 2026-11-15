@@ -1,0 +1,106 @@
+entity: liver-metastases
+claims:
+  - claimId: liver-metastases-c001
+    section: definition
+    statement: "Metastases outnumber primary tumors among the malignancies found in the liver."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "892" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: liver-metastases-c002
+    section: definition
+    statement: "The liver is involved in about one third of all metastatic cancers."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "892" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: liver-metastases-c003
+    section: etiology
+    statement: "Breast, lung and gut cancers reach the liver in about half of cases."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "892" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: liver-metastases-c004
+    section: etiology
+    statement: "Melanoma, blood cancers and pancreatic cancer often reach the liver too."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "892" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: liver-metastases-c005
+    section: etiology
+    statement: "The typical primaries are not the only ones, because any tumor may metastasize to the liver."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "892" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: liver-metastases-c006
+    section: high-yield
+    statement: "A malignant tumor found in the liver is most often a metastasis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "892" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: liver-metastases-c007
+    section: high-yield
+    statement: "Liver involvement occurs in about one third of all metastatic cancers."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "892" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: liver-metastases-c008
+    section: high-yield
+    statement: "In about half of cases, breast, lung and gastrointestinal cancers reach the liver."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "892" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: liver-metastases-c009
+    section: high-yield
+    statement: "Blood cancers, pancreatic cancer and melanoma often seed the liver too."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "892" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: liver-metastases-c010
+    section: traps
+    statement: "A malignancy found in the liver is most often a metastasis, so hepatocellular carcinoma is not the most common liver cancer."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "892" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: liver-metastases-c011
+    section: traps
+    statement: "Typical primaries exist, yet a liver metastasis can come from any tumor type."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "892" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: liver-metastases-c012
+    section: mnemonics
+    statement: "Breast, lung and gut cancers reach the liver about half the time; blood cancers, melanoma and pancreatic cancer often do too."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "892" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: liver-metastases-c013
+    section: differential
+    statement: "Hepatocellular carcinoma is a primary liver cancer, and metastatic cancer is more common in the liver."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "892" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15

@@ -1,0 +1,99 @@
+id: liver-metastases
+module: o20
+tier: core
+kind: disease
+names:
+  it: "Metastasi epatiche"
+  en: "Liver metastases"
+  eponyms: []
+  synonyms:
+    it: ["Tumori maligni secondari del fegato"]
+    en: ["Metastatic cancer in the liver"]
+  abbreviations: []
+summary:
+  it: "Tumori maligni secondari del fegato, la neoplasia maligna più frequente in questo organo, originati soprattutto da apparato gastrointestinale, mammella e polmone."
+  en: "Secondary malignant tumors of the liver, the most common malignancy in this organ, arising mostly from the gastrointestinal tract, breast and lung."
+lenses:
+  system: [liver-biliary]
+  process: [neoplasia]
+  pattern: []
+  presentation: []
+  marker: []
+  group: [neoplastic]
+learningObjectives:
+  - it: "Affermare che la neoplasia maligna più frequente nel fegato è metastatica."
+    en: "State that the most common malignancy in the liver is metastatic."
+  - it: "Elencare i principali tumori primitivi che metastatizzano al fegato."
+    en: "List the main primary tumors that metastasize to the liver."
+  - it: "Ricordare che qualsiasi tumore può dare metastasi epatiche."
+    en: "Remember that any tumor can metastasize to the liver."
+prerequisites: [invasion-and-metastasis]
+relations:
+  - type: sameLesionOtherOrgan
+    target: lung-metastases
+    note:
+      it: "Anche il polmone è una sede frequente di metastasi."
+      en: "The lung is also a frequent site of metastases."
+  - type: differentialOf
+    target: hepatocellular-carcinoma
+    note:
+      it: "Neoplasia maligna secondaria contro neoplasia primitiva del fegato."
+      en: "Secondary malignancy versus primary liver cancer."
+quickCheck:
+  - id: liver-metastases-q1
+    q:
+      it: "Qual è la neoplasia maligna più frequente nel fegato?"
+      en: "What is the most common malignancy in the liver?"
+    a:
+      it: "La metastasi da un altro organo."
+      en: "A metastasis from another organ."
+    kind: short
+  - id: liver-metastases-q2
+    q:
+      it: "Quali tumori primitivi metastatizzano più spesso al fegato?"
+      en: "Which primary tumors most often metastasize to the liver?"
+    a:
+      it: "Tumori di apparato gastrointestinale, mammella e polmone; spesso anche pancreas, melanoma e neoplasie ematologiche."
+      en: "Cancers of the gastrointestinal tract, breast and lung; often also pancreas, melanoma and hematologic malignancies."
+    kind: short
+  - id: liver-metastases-q3
+    q:
+      it: "Solo certi tumori possono dare metastasi epatiche?"
+      en: "Can only certain tumors metastasize to the liver?"
+    a:
+      it: "No, qualsiasi tumore può farlo."
+      en: "No, any tumor can."
+    kind: short
+selfExplain:
+  - it: "Perché un tumore maligno trovato nel fegato è più spesso una metastasi che un tumore primitivo?"
+    en: "Why is a malignant tumor found in the liver more often a metastasis than a primary tumor?"
+  - it: "Perché non basta conoscere i primitivi tipici per escludere una metastasi epatica da un altro tumore?"
+    en: "Why does knowing the typical primaries not rule out a liver metastasis from another tumor?"
+examQuestions:
+  - it: "Mi parli delle neoplasie maligne del fegato: qual è la più frequente?"
+    en: "Tell me about malignant tumors of the liver: which is the most common?"
+    focus: [definition]
+    level: 1
+  - it: "Quali tumori primitivi danno più spesso metastasi al fegato?"
+    en: "Which primary tumors most often metastasize to the liver?"
+    focus: [etiology, high-yield]
+    level: 1
+  - it: "Perché il carcinoma epatocellulare non è il tumore maligno più frequente del fegato?"
+    en: "Why is hepatocellular carcinoma not the most common malignant tumor of the liver?"
+    focus: [definition, traps]
+    level: 2
+  - it: "Come distingue, per frequenza, una metastasi epatica da un carcinoma epatocellulare?"
+    en: "How do you tell, in terms of frequency, a liver metastasis from a hepatocellular carcinoma?"
+    focus: [differential, traps]
+    level: 3
+images:
+  - id: liver-metastases-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "20"
+    pages: "892"
+lastUpdated: 2026-11-15
+status: published
