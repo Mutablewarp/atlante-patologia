@@ -1,0 +1,118 @@
+id: pleural-effusion-and-pleural-fluid-cytology
+module: o18
+tier: core
+kind: process
+names:
+  it: "Versamento pleurico, pleuriti e citologia del liquido pleurico"
+  en: "Pleural effusion, pleuritis and pleural-fluid cytology"
+  eponyms: []
+  synonyms:
+    it: ["Versamento pleurico"]
+    en: ["Pleural fluid accumulation"]
+  abbreviations: []
+summary:
+  it: "Accumulo di liquido nella cavità pleurica (idrotorace, piotorace ed empiema, emotorace, chilotorace), spesso accompagnato da pleurite, da distinguere dallo pneumotorace, che è aria nello spazio pleurico."
+  en: "Accumulation of fluid in the pleural cavity (hydrothorax, pyothorax and empyema, hemothorax, chylothorax), often with pleuritis, to be told apart from pneumothorax, which is air in the pleural space."
+lenses:
+  system: [respiratory]
+  process: [acute-inflammation, extracellular-accumulation]
+  pattern: []
+  presentation: [dyspnea, chest-pain]
+  marker: []
+  group: [inflammatory, vascular, neoplastic]
+learningObjectives:
+  - it: "Definire il versamento pleurico e distinguere idrotorace, piotorace, empiema, emotorace e chilotorace in base all'aspetto del liquido."
+    en: "Define pleural effusion and tell hydrothorax, pyothorax, empyema, hemothorax and chylothorax apart by the look of the fluid."
+  - it: "Collegare ciascun tipo di versamento alle sue cause principali."
+    en: "Link each type of effusion to its main causes."
+  - it: "Descrivere la pleurite e il dolore toracico inspiratorio che la caratterizza."
+    en: "Describe pleuritis and the inspiratory chest pain that marks it."
+  - it: "Distinguere lo pneumotorace spontaneo, traumatico e iperteso, e riconoscere la fistola broncopleurica."
+    en: "Distinguish spontaneous, traumatic and tension pneumothorax, and recognize a bronchopleural fistula."
+prerequisites: []
+relations:
+  - type: complicationOf
+    target: pulmonary-infarction
+    note:
+      it: "Un infarto polmonare che raggiunge la superficie del polmone può causare pleurite e un versamento ematico."
+      en: "A pulmonary infarct reaching the lung surface can cause pleuritis and a blood-stained effusion."
+  - type: complicationOf
+    target: cardiac-hypertrophy-and-heart-failure
+    note:
+      it: "L'insufficienza cardiaca aumenta la pressione idrostatica capillare e può dare idrotorace."
+      en: "Heart failure raises capillary hydrostatic pressure and can produce hydrothorax."
+  - type: complicationOf
+    target: bacterial-pneumonia
+    note:
+      it: "Una polmonite batterica che raggiunge la superficie pleurica può dare piotorace."
+      en: "A bacterial pneumonia reaching the pleural surface can cause pyothorax."
+quickCheck:
+  - id: pleural-effusion-and-pleural-fluid-cytology-q1
+    q:
+      it: "Quali due meccanismi producono un idrotorace?"
+      en: "Which two mechanisms produce hydrothorax?"
+    a:
+      it: "Un aumento della pressione idrostatica capillare (per esempio nello scompenso cardiaco) o una bassa pressione oncotica sierica (per esempio nella sindrome nefrosica, nella cirrosi o nella denutrizione grave)."
+      en: "Raised capillary hydrostatic pressure (for example in heart failure) or low serum oncotic pressure (for example in nephrotic syndrome, cirrhosis or severe starvation)."
+    kind: short
+  - id: pleural-effusion-and-pleural-fluid-cytology-q2
+    q:
+      it: "Che differenza c'è tra piotorace ed empiema?"
+      en: "What is the difference between pyothorax and empyema?"
+    a:
+      it: "Il piotorace è un versamento torbido ricco di neutrofili; l'empiema è la sua variante con pus denso, spesso saccato e con fibrosi."
+      en: "Pyothorax is a turbid, neutrophil-rich effusion; empyema is its variant with thick pus, often loculated and with fibrosis."
+    kind: short
+  - id: pleural-effusion-and-pleural-fluid-cytology-q3
+    q:
+      it: "Perché un chilotorace è un reperto preoccupante?"
+      en: "Why is chylothorax a worrying finding?"
+    a:
+      it: "Perché indica un'ostruzione linfatica, che fa pensare a una malattia dei linfonodi del mediastino posteriore, come un linfoma."
+      en: "Because it signals lymphatic obstruction, which suggests disease of the posterior mediastinal lymph nodes, such as lymphoma."
+    kind: short
+  - id: pleural-effusion-and-pleural-fluid-cytology-q4
+    q:
+      it: "Qual è la causa abituale dello pneumotorace spontaneo?"
+      en: "What usually causes spontaneous pneumothorax?"
+    a:
+      it: "La rottura di una bolla enfisematosa sottopleurica."
+      en: "Rupture of a subpleural emphysematous bleb."
+    kind: short
+selfExplain:
+  - it: "Perché l'insufficienza cardiaca può causare un versamento pleurico?"
+    en: "Why can heart failure cause a pleural effusion?"
+  - it: "Perché un'ostruzione linfatica produce un liquido lattescente ricco di lipidi?"
+    en: "Why does lymphatic obstruction produce a milky, lipid-rich fluid?"
+examQuestions:
+  - it: "Mi parli del versamento pleurico: quali tipi conosce e come li distingue dall'aspetto del liquido?"
+    en: "Tell me about pleural effusion: which types do you know, and how do you tell them apart by the look of the fluid?"
+    focus: [definition, gross, differential]
+    level: 1
+  - it: "Come distingue un piotorace da un empiema?"
+    en: "How do you tell pyothorax from empyema?"
+    focus: [gross, differential, traps]
+    level: 3
+  - it: "Perché lo scompenso cardiaco, la sindrome nefrosica o la cirrosi possono dare un idrotorace anche con una pleura sana?"
+    en: "Why can heart failure, nephrotic syndrome or cirrhosis cause hydrothorax even when the pleura is healthy?"
+    focus: [etiology, traps]
+    level: 2
+  - it: "Perché il chilotorace è un reperto preoccupante?"
+    en: "Why is chylothorax a worrying finding?"
+    focus: [pathogenesis, prognosis]
+    level: 2
+  - it: "Mi parli dello pneumotorace: che cosa lo distingue da un versamento e perché lo pneumotorace iperteso è un'urgenza?"
+    en: "Tell me about pneumothorax: what sets it apart from an effusion, and why is tension pneumothorax an emergency?"
+    focus: [definition, clinical, prognosis]
+    level: 3
+images:
+  - id: pleural-effusion-and-pleural-fluid-cytology-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "18"
+    pages: "763-764"
+lastUpdated: 2026-11-14
+status: published
