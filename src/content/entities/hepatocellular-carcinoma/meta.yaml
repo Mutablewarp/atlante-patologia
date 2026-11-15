@@ -1,0 +1,124 @@
+id: hepatocellular-carcinoma
+module: o20
+tier: core
+kind: disease
+names:
+  it: "Carcinoma epatocellulare"
+  en: "Hepatocellular carcinoma"
+  eponyms: []
+  synonyms:
+    it: ["Epatocarcinoma"]
+    en: ["Hepatoma"]
+  abbreviations: ["HCC"]
+summary:
+  it: "Tumore maligno degli epatociti, il più frequente tra i tumori primitivi del fegato, legato soprattutto a cirrosi, infezione cronica da HBV e HCV e ad aflatossina B1."
+  en: "Malignant tumor of hepatocytes, the most common primary liver cancer, linked mainly to cirrhosis, chronic HBV and HCV infection and aflatoxin B1."
+lenses:
+  system: [liver-biliary]
+  process: [neoplasia]
+  pattern: []
+  presentation: [mass-lesion]
+  marker: [laboratory, molecular]
+  group: [neoplastic, infectious, toxic-environmental]
+learningObjectives:
+  - it: "Elencare i principali fattori di rischio del carcinoma epatocellulare: HBV, HCV, cirrosi, aflatossina B1, emocromatosi."
+    en: "List the main risk factors for hepatocellular carcinoma: HBV, HCV, cirrhosis, aflatoxin B1, hemochromatosis."
+  - it: "Spiegare perché la cirrosi non è indispensabile e come HBV e aflatossina contribuiscono alla cancerogenesi."
+    en: "Explain why cirrhosis is not indispensable and how HBV and aflatoxin contribute to carcinogenesis."
+  - it: "Descrivere i pattern trabecolare e pseudoghiandolare e la variante fibrolamellare."
+    en: "Describe the trabecular and pseudoglandular patterns and the fibrolamellar variant."
+  - it: "Interpretare il dosaggio dell'alfa-fetoproteina e conoscere le opzioni terapeutiche."
+    en: "Interpret the alpha-fetoprotein level and know the treatment options."
+prerequisites: [carcinogenic-agents]
+relations:
+  - type: complicationOf
+    target: cirrhosis
+    note:
+      it: "La maggior parte dei carcinomi epatocellulari legati a virus insorge in un fegato cirrotico."
+      en: "Most virus-related hepatocellular carcinomas arise in a cirrhotic liver."
+  - type: differentialOf
+    target: cholangiocarcinoma
+    note:
+      it: "Il pattern pseudoghiandolare non è formato da vere ghiandole: non va scambiato per colangiocarcinoma."
+      en: "The pseudoglandular pattern has no true glands and should not be mistaken for cholangiocarcinoma."
+  - type: sameMarker
+    target: serum-tumor-markers
+    note:
+      it: "L'alfa-fetoproteina è spesso elevata ma non è specifica."
+      en: "Alpha-fetoprotein is often elevated but not specific."
+quickCheck:
+  - id: hepatocellular-carcinoma-q1
+    q:
+      it: "La cirrosi è necessaria perché si sviluppi un carcinoma epatocellulare?"
+      en: "Is cirrhosis necessary for hepatocellular carcinoma to develop?"
+    a:
+      it: "No. Molti tumori associati a HBV insorgono in fegati non cirrotici; la cirrosi amplifica il rischio da altre cause."
+      en: "No. Many HBV-associated tumors arise in non-cirrhotic livers; cirrhosis magnifies the risk from other causes."
+    kind: short
+  - id: hepatocellular-carcinoma-q2
+    q:
+      it: "Quale mutazione di TP53 è tipica dei tumori da aflatossina?"
+      en: "Which TP53 mutation is typical of aflatoxin-related tumors?"
+    a:
+      it: "La sostituzione G-T al codone 249, la stessa che l'aflatossina B1 produce sperimentalmente."
+      en: "The G-to-T substitution at codon 249, the same change aflatoxin B1 produces experimentally."
+    kind: short
+  - id: hepatocellular-carcinoma-q3
+    q:
+      it: "Quali caratteristiche distinguono la variante fibrolamellare?"
+      en: "What features set the fibrolamellar variant apart?"
+    a:
+      it: "Fegato non cirrotico, adolescenti e giovani adulti, cellule grandi eosinofile con corpi pallidi contenenti fibrinogeno, circondate da spesse fibre collagene."
+      en: "Non-cirrhotic liver, adolescents and young adults, large eosinophilic cells with fibrinogen-containing pale bodies, surrounded by thick collagen fibers."
+    kind: short
+  - id: hepatocellular-carcinoma-q4
+    q:
+      it: "Che valore ha l'alfa-fetoproteina nel carcinoma epatocellulare?"
+      en: "How useful is alpha-fetoprotein in hepatocellular carcinoma?"
+    a:
+      it: "È spesso elevata nel carcinoma epatocellulare, ma aumenta anche in altre malattie epatiche benigne e maligne, quindi non è specifica."
+      en: "It is often elevated in HCC, but it also rises in other benign and malignant liver diseases, so it is not specific."
+    kind: short
+selfExplain:
+  - it: "Perché la proteina HBxAg di HBV può favorire lo sviluppo di un carcinoma epatocellulare?"
+    en: "Why can the HBV protein HBxAg promote the development of hepatocellular carcinoma?"
+  - it: "Perché un pattern pseudoghiandolare non indica un colangiocarcinoma?"
+    en: "Why does a pseudoglandular pattern not point to cholangiocarcinoma?"
+  - it: "Perché un carcinoma epatocellulare può comparire in un fegato non cirrotico?"
+    en: "Why can hepatocellular carcinoma arise in a non-cirrhotic liver?"
+examQuestions:
+  - it: "Mi parli dei fattori di rischio del carcinoma epatocellulare: che ruolo hanno cirrosi, HBV, HCV e aflatossina B1?"
+    en: "Tell me about the risk factors for hepatocellular carcinoma: what roles do cirrhosis, HBV, HCV and aflatoxin B1 play?"
+    focus: [etiology, traps]
+    level: 1
+  - it: "Perché l'aflatossina B1 e l'HBV insieme aumentano il rischio, e quale mutazione di TP53 si osserva nei tumori delle aree endemiche?"
+    en: "Why do aflatoxin B1 and HBV together raise the risk, and which TP53 mutation is seen in tumors from endemic areas?"
+    focus: [etiology, pathogenesis]
+    level: 2
+  - it: "Che cosa vede al microscopio in un carcinoma epatocellulare: come descrive il pattern trabecolare e quello pseudoghiandolare?"
+    en: "What do you see under the microscope in hepatocellular carcinoma: how do you describe the trabecular and pseudoglandular patterns?"
+    focus: [micro]
+    level: 1
+  - it: "Come distingue un carcinoma epatocellulare pseudoghiandolare da un colangiocarcinoma intraepatico?"
+    en: "How do you tell a pseudoglandular hepatocellular carcinoma from an intrahepatic cholangiocarcinoma?"
+    focus: [micro, differential]
+    level: 3
+  - it: "Mi parli della variante fibrolamellare: in quali pazienti compare e come la riconosce all'istologia?"
+    en: "Tell me about the fibrolamellar variant: in which patients does it occur and how do you recognize it on histology?"
+    focus: [micro, differential, traps]
+    level: 3
+  - it: "Perché il dosaggio dell'alfa-fetoproteina non basta a diagnosticare un carcinoma epatocellulare?"
+    en: "Why is a serum alpha-fetoprotein level not enough to diagnose hepatocellular carcinoma?"
+    focus: [diagnosis, traps]
+    level: 2
+images:
+  - { id: hepatocellular-carcinoma-micro-1, role: micro }
+  - { id: hepatocellular-carcinoma-micro-2, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "20"
+    pages: "890-891"
+lastUpdated: 2026-11-15
+status: published
