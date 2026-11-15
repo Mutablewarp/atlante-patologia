@@ -1,0 +1,143 @@
+id: alcoholic-liver-disease
+module: o20
+tier: core
+kind: disease
+names:
+  it: "Epatopatia alcolica"
+  en: "Alcohol-related liver disease"
+  eponyms: []
+  synonyms:
+    it: ["Malattia epatica alcolica"]
+    en: ["Alcoholic liver disease"]
+  abbreviations: ["ALD"]
+summary:
+  it: "Danno epatico da eccesso di etanolo che comprende tre lesioni, steatosi, epatite alcolica e cirrosi, di solito in sequenza; la steatosi è reversibile con l'astensione."
+  en: "Liver injury from excess ethanol comprising three lesions, steatosis, alcoholic hepatitis and cirrhosis, usually in sequence; steatosis is reversible with abstinence."
+lenses:
+  system: [liver-biliary]
+  process: [cell-injury, intracellular-accumulation, repair-fibrosis]
+  pattern: [fatty-change, hyaline-change, intracellular-inclusions]
+  presentation: [jaundice, organomegaly]
+  marker: [laboratory, special-stains]
+  group: [toxic-environmental, metabolic]
+learningObjectives:
+  - it: "Descrivere le tre lesioni dell'epatopatia alcolica e la loro sequenza abituale."
+    en: "Describe the three lesions of alcoholic liver disease and their usual sequence."
+  - it: "Spiegare come l'etanolo produce steatosi epatica e perché questa è reversibile."
+    en: "Explain how ethanol produces hepatic steatosis and why it is reversible."
+  - it: "Riconoscere al microscopio l'epatite alcolica: corpi di Mallory-Denk, neutrofili e fibrosi pericellulare."
+    en: "Recognize alcoholic hepatitis under the microscope: Mallory-Denk bodies, neutrophils and pericellular fibrosis."
+  - it: "Interpretare il quadro di laboratorio, in particolare il rapporto AST:ALT."
+    en: "Interpret the lab picture, in particular the AST:ALT ratio."
+  - it: "Distinguere l'epatopatia alcolica dalla NAFLD e dall'epatite virale."
+    en: "Distinguish alcoholic liver disease from NAFLD and viral hepatitis."
+prerequisites: [fatty-change]
+relations:
+  - type: differentialOf
+    target: nonalcoholic-fatty-liver-disease
+    note:
+      it: "Istologia sovrapponibile; cambiano i fattori di rischio."
+      en: "Overlapping histology; the risk factors differ."
+  - type: differentialOf
+    target: acute-viral-hepatitis
+    note:
+      it: "Nell'epatite virale le aminotransferasi salgono di più."
+      en: "Aminotransferases rise higher in viral hepatitis."
+  - type: mimics
+    target: wilson-disease
+    note:
+      it: "Anche qui si trovano corpi di Mallory-Denk."
+      en: "Mallory-Denk bodies are also found here."
+  - type: causes
+    target: cirrhosis
+    note:
+      it: "L'epatopatia alcolica può evolvere in cirrosi."
+      en: "Alcoholic liver disease can evolve into cirrhosis."
+  - type: sharesMechanism
+    target: fatty-change
+    note:
+      it: "La steatosi alcolica è un accumulo di trigliceridi negli epatociti."
+      en: "Alcoholic steatosis is triglyceride accumulation in hepatocytes."
+quickCheck:
+  - id: alcoholic-liver-disease-q1
+    q:
+      it: "Quali sono le tre lesioni dell'epatopatia alcolica?"
+      en: "What are the three lesions of alcoholic liver disease?"
+    a:
+      it: "Steatosi epatica, epatite alcolica acuta e cirrosi, di solito in sequenza."
+      en: "Fatty liver, acute alcoholic hepatitis and cirrhosis, usually in sequence."
+    kind: short
+  - id: alcoholic-liver-disease-q2
+    q:
+      it: "Quali reperti istologici caratterizzano l'epatite alcolica?"
+      en: "Which histologic findings characterize alcoholic hepatitis?"
+    a:
+      it: "Necrosi centrolobulare, corpi di Mallory-Denk, infiltrato neutrofilo con satellitosi e fibrosi pericellulare."
+      en: "Centrilobular necrosis, Mallory-Denk bodies, a neutrophil infiltrate with satellitosis and pericellular fibrosis."
+    kind: short
+  - id: alcoholic-liver-disease-q3
+    q:
+      it: "Quale rapporto AST:ALT è tipico dell'epatite alcolica?"
+      en: "Which AST:ALT ratio is typical of alcoholic hepatitis?"
+    a:
+      it: "Circa 2:1, con AST di solito sotto 400."
+      en: "About 2:1, with AST usually under 400."
+    kind: short
+  - id: alcoholic-liver-disease-q4
+    q:
+      it: "Che cosa sono i corpi di Mallory-Denk e dove si trovano?"
+      en: "What are Mallory-Denk bodies and where are they found?"
+    a:
+      it: "Sono grumi o filamenti eosinofili nel citoplasma, di solito accanto al nucleo."
+      en: "They are eosinophilic cytoplasmic clumps or threads, commonly beside the nucleus."
+    kind: short
+  - id: alcoholic-liver-disease-q5
+    q:
+      it: "Che cosa succede alla steatosi alcolica se il paziente smette di bere?"
+      en: "What happens to alcoholic steatosis if the patient stops drinking?"
+    a:
+      it: "Regredisce del tutto e in fretta, e da sola non evolve in una malattia peggiore."
+      en: "It reverses fully and fast, and by itself it does not advance to worse disease."
+    kind: short
+selfExplain:
+  - it: "Perché la steatosi alcolica scompare se il paziente smette di bere?"
+    en: "Why does alcoholic steatosis disappear when the patient stops drinking?"
+  - it: "Perché i corpi di Mallory-Denk non dimostrano da soli una causa alcolica?"
+    en: "Why do Mallory-Denk bodies alone not prove an alcohol cause?"
+examQuestions:
+  - it: "Mi parli della steatosi epatica alcolica: come si forma e che cosa vede al microscopio?"
+    en: "Tell me about alcoholic steatosis: how does it form and what do you see under the microscope?"
+    focus: [pathogenesis, micro]
+    level: 1
+  - it: "Che cosa vede al microscopio in un'epatite alcolica?"
+    en: "What do you see under the microscope in alcoholic hepatitis?"
+    focus: [micro]
+    level: 1
+  - it: "Mi parli della cirrosi alcolica: come si arriva a questo quadro?"
+    en: "Tell me about alcoholic cirrhosis: how does the liver get there?"
+    focus: [definition, micro, prognosis]
+    level: 2
+  - it: "Perché nell'epatopatia alcolica l'astensione è la terapia migliore, e che cosa cambia per la prognosi?"
+    en: "Why is abstinence the best treatment in alcoholic liver disease, and what does it change for prognosis?"
+    focus: [pathogenesis, prognosis]
+    level: 2
+  - it: "Come distingue l'epatite alcolica da un'epatite virale acuta?"
+    en: "How do you tell alcoholic hepatitis from acute viral hepatitis?"
+    focus: [diagnosis, differential]
+    level: 3
+  - it: "Trova corpi di Mallory-Denk in una biopsia: può concludere che il paziente è un bevitore?"
+    en: "You find Mallory-Denk bodies on a biopsy: can you conclude the patient is a drinker?"
+    focus: [differential, traps]
+    level: 3
+images:
+  - { id: alcoholic-liver-disease-gross-1, role: gross, pairWith: alcoholic-liver-disease-micro-1 }
+  - { id: alcoholic-liver-disease-micro-1, role: micro }
+  - { id: alcoholic-liver-disease-micro-2, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "20"
+    pages: "867-870"
+lastUpdated: 2026-11-15
+status: published
