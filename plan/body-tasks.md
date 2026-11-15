@@ -245,8 +245,8 @@ Acceptance: `npx astro check` 0 errors; e2e: an organ link on a card lands on th
 
 ### B-7a: seen, mastered, due per organ (coder)
 Depends: B-4c2
-Files: src/scripts/body-progress.ts, src/components/body/BodyTree.astro, src/styles/body.css, src/i18n/body.ts, tests/body-progress.test.ts
-Do: read the learner database the study pages already use (find its module under `src/lib`; no new store, no schema change). A pure function turns its records and the tree's card ids into `{ seen, mastered, due }` per organ and system; the script writes three small counters next to each organ and a "Review this organ" link that opens the existing study session filtered to those cards (use the filter the study page already accepts; if it has none, return `blocked` with what is missing).
+Files: src/scripts/body-progress.ts, src/components/body/BodyTree.astro, src/styles/body.css, src/i18n/body.ts, tests/body-progress.test.ts, src/islands/Review.tsx
+Do: read the learner database the study pages already use (find its module under `src/lib`; no new store, no schema change). A pure function turns its records and the tree's card ids into `{ seen, mastered, due }` per organ and system; the script writes three small counters next to each organ and a "Review this organ" link that opens the existing study session filtered to those cards (the study page accepts only `?module=` and `?cram=1`, so the lead added `src/islands/Review.tsx` to Files: make it read `?entities=<id,id,...>` and keep only the cards whose `entity` is listed; with that filter the session ignores the saved scope, does not save one, and every other behaviour stays as it is).
 Acceptance: `npx vitest run tests/body-progress.test.ts` on the pure function.
 
 ### B-7b: merge 3 (lead)
