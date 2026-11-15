@@ -1,0 +1,108 @@
+id: pancreatic-cystic-neoplasms
+module: o21
+tier: core
+kind: disease
+names:
+  it: "Neoplasie cistiche del pancreas"
+  en: "Pancreatic cystic neoplasms"
+  eponyms: []
+  synonyms:
+    it: ["Tumori cistici del pancreas"]
+    en: ["Cystic tumors of the pancreas"]
+  abbreviations: [MCN, IPMN, SPN]
+summary:
+  it: "Gruppo di tumori pancreatici che formano cisti (sieroso, mucinoso, IPMN, solido pseudopapillare), con rischio di malignità molto diverso: dal cistoadenoma sieroso quasi sempre benigno all'IPMN che può ospitare un carcinoma invasivo."
+  en: "A group of cyst-forming pancreatic tumors (serous, mucinous, IPMN, solid pseudopapillary) with very different malignant risk: from the almost always benign serous cystadenoma to the IPMN that can harbor invasive carcinoma."
+lenses:
+  system: [pancreas]
+  process: [neoplasia]
+  pattern: [dysplasia]
+  presentation: [mass-lesion, incidental-finding]
+  marker: [molecular]
+  group: [neoplastic, genetic]
+learningObjectives:
+  - it: "Elencare i quattro principali tumori cistici del pancreas e collegare a ciascuno il suo profilo di rischio di malignità."
+    en: "List the four main pancreatic cystic neoplasms and link each to its malignancy risk."
+  - it: "Riconoscere lo stroma di tipo ovarico come elemento distintivo della neoplasia cistica mucinosa."
+    en: "Recognize ovarian-type stroma as the defining feature of the mucinous cystic neoplasm."
+  - it: "Distinguere IPMN dei dotti principali e dei dotti secondari e spiegare perché va sorvegliata o resecata."
+    en: "Distinguish main-duct from branch-duct IPMN and explain why it is followed or resected."
+  - it: "Associare la neoplasia solida pseudopapillare a giovani donne, mutazione di CTNNB1 e β-catenina nucleare."
+    en: "Associate solid pseudopapillary neoplasm with young women, CTNNB1 mutation and nuclear β-catenin."
+prerequisites: [neoplasia-nomenclature, benign-vs-malignant-tumors]
+relations:
+  - type: sharesMechanism
+    target: pancreatic-ductal-adenocarcinoma
+    note:
+      it: "IPMN e neoplasia cistica mucinosa condividono alterazioni molecolari con l'adenocarcinoma duttale."
+      en: "IPMN and mucinous cystic neoplasm share molecular changes with ductal adenocarcinoma."
+  - type: differentialOf
+    target: pancreatic-ductal-adenocarcinoma
+    note:
+      it: "La neoplasia solida pseudopapillare può simulare clinicamente altri tumori maligni del pancreas."
+      en: "Solid pseudopapillary neoplasm can clinically mimic other malignant pancreatic tumors."
+quickCheck:
+  - id: pancreatic-cystic-neoplasms-q1
+    q:
+      it: "Quale tumore cistico del pancreas è quasi sempre benigno e in quale sindrome è più frequente?"
+      en: "Which pancreatic cystic neoplasm is almost always benign, and in which syndrome is it more frequent?"
+    a:
+      it: "La neoplasia cistica sierosa; il rischio aumenta nella sindrome di von Hippel–Lindau."
+      en: "The serous cystic neoplasm; its risk is increased in von Hippel–Lindau syndrome."
+    kind: short
+  - id: pancreatic-cystic-neoplasms-q2
+    q:
+      it: "Che cosa distingue la neoplasia cistica mucinosa dall'IPMN?"
+      en: "What separates the mucinous cystic neoplasm from the IPMN?"
+    a:
+      it: "La neoplasia cistica mucinosa ha stroma di tipo ovarico e non comunica con il sistema duttale; l'IPMN è fatta di dotti dilatati pieni di muco."
+      en: "The mucinous cystic neoplasm has ovarian-type stroma and does not communicate with the duct system; the IPMN is made of dilated ducts filled with mucus."
+    kind: short
+  - id: pancreatic-cystic-neoplasms-q3
+    q:
+      it: "Chi colpisce tipicamente la neoplasia solida pseudopapillare e quale alterazione molecolare la caratterizza?"
+      en: "Whom does solid pseudopapillary neoplasm typically affect, and which molecular change marks it?"
+    a:
+      it: "Adolescenti e giovani donne; mutazione di CTNNB1 con localizzazione nucleare anomala della β-catenina."
+      en: "Adolescent girls and young women; a CTNNB1 mutation with abnormal nuclear localization of β-catenin."
+    kind: short
+selfExplain:
+  - it: "Perché una neoplasia con lesioni intraduttali come l'IPMN può ospitare un carcinoma invasivo?"
+    en: "Why can a neoplasm with intraductal lesions such as IPMN harbor an invasive carcinoma?"
+  - it: "Perché l'inattivazione di VHL favorisce la comparsa di tumori cistici del pancreas e del rene?"
+    en: "Why does VHL inactivation favor cystic tumors of the pancreas and kidney?"
+examQuestions:
+  - it: "Mi parli delle neoplasie cistiche del pancreas: quali sono i quattro tipi principali e quale rischio di malignità ha ciascuno?"
+    en: "Tell me about the pancreatic cystic neoplasms: which are the four main types, and what is the malignancy risk of each?"
+    focus: [definition, prognosis]
+    level: 1
+  - it: "Che cosa vede al microscopio in una neoplasia cistica mucinosa, e quale elemento la definisce?"
+    en: "What do you see under the microscope in a mucinous cystic neoplasm, and which feature defines it?"
+    focus: [micro]
+    level: 1
+  - it: "Come distingue un IPMN dei dotti principali da uno dei dotti secondari, e perché a volte viene asportato?"
+    en: "How do you tell a main-duct IPMN from a branch-duct IPMN, and why is it sometimes resected?"
+    focus: [gross, diagnosis, prognosis]
+    level: 3
+  - it: "Come distingue una neoplasia cistica mucinosa da un IPMN?"
+    en: "How do you tell a mucinous cystic neoplasm from an IPMN?"
+    focus: [gross, micro, differential]
+    level: 3
+  - it: "Perché la neoplasia solida pseudopapillare non è considerata del tutto benigna, e quali reperti molecolari la caratterizzano?"
+    en: "Why is solid pseudopapillary neoplasm not considered entirely benign, and which molecular findings characterize it?"
+    focus: [pathogenesis, ancillary, prognosis]
+    level: 2
+images:
+  - { id: pancreatic-cystic-neoplasms-micro-1, role: micro }
+  - { id: pancreatic-cystic-neoplasms-micro-2, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: true
+editionNote:
+  it: "La classificazione e la graduazione di questi tumori cambiano tra le edizioni: la graduazione dell'IPMN qui riportata (basso o alto grado) segue il testo di riferimento e va verificata sull'edizione in uso."
+  en: "Classification and grading of these tumors change between editions: the IPMN grading given here (low or high grade) follows the reference text and should be checked against the edition in use."
+sources:
+  - source: rubin-8e
+    chapter: "21"
+    pages: "911-912"
+lastUpdated: 2026-11-15
+status: published
