@@ -28,6 +28,6 @@ export default defineConfig({
     cwd: fileURLToPath(new URL('../..', import.meta.url)),
     url: `http://localhost:${PORT}/atlante-patologia/precache.json`,
     reuseExistingServer: false,
-    timeout: 180_000,
+    timeout: 480_000, // the draft build of the whole site runs here: 180 s was enough up to about 130 cards (2026-11-15)
   },
 });
