@@ -1,0 +1,322 @@
+entity: autoimmune-gastritis
+claims:
+- claimId: autoimmune-gastritis-c001
+  section: definition
+  statement: "Autoimmune gastritis is an immune-mediated gastritis restricted to the gastric body and fundus"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "780" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c002
+  section: definition
+  statement: "Prevalence among older adults is about 1 to 2 percent"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "780" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c003
+  section: definition
+  statement: "The disease is predominant in females"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "780" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c004
+  section: etiology
+  statement: "Autoantibodies aim at the parietal cell proton pump (H+/K+ ATPase) and at intrinsic factor"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "780" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c005
+  section: etiology
+  statement: "Anti-parietal cell and anti-intrinsic factor antibodies are present in the autoimmune form"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "780-781" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c006
+  section: etiology
+  statement: "H. pylori colonization is uncommon in autoimmune atrophic gastritis, whereas the environmental form is almost always colonized"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "781" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c007
+  section: etiology
+  statement: "Patients and their relatives are predisposed to further autoimmune diseases, for example Addison disease or type 1 diabetes"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "781" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c008
+  section: pathogenesis
+  statement: "Parietal cells are found only in the body and fundus, which explains the restriction of the disease to those regions"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "780" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c009
+  section: pathogenesis
+  statement: "Gastric acid output falls once parietal cells are lost, giving clinical hypochlorhydria or achlorhydria"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "780" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c010
+  section: pathogenesis
+  statement: "Serum gastrin rises because antral G cells produce more of it when acid is lost"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "780" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c011
+  section: pathogenesis
+  statement: "Remaining parietal cells are driven to secrete acid by histamine, which corpus ECL cells release under gastrin stimulation"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "780" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c012
+  section: pathogenesis
+  statement: "Intrinsic factor mediates B12 absorption in the ileum, so its loss produces vitamin B12 deficiency"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "780" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c013
+  section: pathogenesis
+  statement: "When B12 deficiency causes a megaloblastic anemia, that anemia is named pernicious anemia"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "780" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c014
+  section: micro
+  statement: "Intestinal and pseudopyloric metaplasia occur in a biopsy that has lost parietal cells and is heavily infiltrated by mononuclear cells"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "781" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c015
+  section: micro
+  statement: "Glands shrink in the atrophic mucosa while inflammatory cells crowd the lamina propria"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "781" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c016
+  section: micro
+  statement: "Intestinal metaplasia is recognized by goblet cells in the atrophic body"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "781" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c017
+  section: micro
+  statement: "Micronodules composed of ECL cells are found elsewhere in the body"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "781" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c018
+  section: micro
+  statement: "Marked neuroendocrine hyperplasia is a late change in the disease"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "781" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c019
+  section: ancillary
+  statement: "A biopsy of the gastric body shows a dense mononuclear infiltrate and metaplasia, and the parietal cells are missing"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "781" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c020
+  section: ancillary
+  statement: "Anti-parietal cell and anti-intrinsic factor antibodies are positive in the autoimmune form"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "781" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c021
+  section: ancillary
+  statement: "Vitamin B12 level is low and serum gastrin is high in the autoimmune form"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "781" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c022
+  section: clinical
+  statement: "Patients secrete little or no stomach acid, called hypochlorhydria or achlorhydria"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "780" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c023
+  section: clinical
+  statement: "Low vitamin B12, high gastrin and little acid are expected together in a patient with these antibodies"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "780" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c024
+  section: diagnosis
+  statement: "Positive antibodies, low B12, high gastrin and body-and-fundus location characterize the autoimmune form as opposed to the environmental form"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "781" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c025
+  section: prognosis
+  statement: "B12 deficiency from loss of intrinsic factor results in pernicious anemia"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "780" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c026
+  section: prognosis
+  statement: "After years the neuroendocrine cells may proliferate conspicuously"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "781" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c027
+  section: prognosis
+  statement: "Other autoimmune diseases are more likely in these patients and in their relatives"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "781" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c028
+  section: differential
+  statement: "Environmental atrophic gastritis starts in the antrum, often spreads into the body, in several foci, and affects both sexes equally"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "781" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c029
+  section: differential
+  statement: "In the environmental form antibodies are negative, B12 is normal and serum gastrin is normal or high"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "781" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c030
+  section: high-yield
+  statement: "The disease stays within the body and fundus of the stomach"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "780" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c031
+  section: high-yield
+  statement: "The autoimmune targets are the parietal cell H+/K+ ATPase and intrinsic factor"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "780" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c032
+  section: high-yield
+  statement: "Loss of intrinsic factor leads to B12 deficiency and pernicious anemia"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "780" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c033
+  section: high-yield
+  statement: "Reduced acid with hypergastrinemia is expected"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "780" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c034
+  section: high-yield
+  statement: "Micronodules of ECL cells are seen in the gastric body"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "781" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c035
+  section: high-yield
+  statement: "Other autoimmune diseases cluster with it, for example hypothyroidism or type 1 diabetes"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "781" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c036
+  section: traps
+  statement: "Pernicious anemia is a megaloblastic anemia caused by vitamin B12 deficiency"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "780" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c037
+  section: traps
+  statement: "Parietal cells, the autoimmune target, exist only in the body and fundus"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "780" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c038
+  section: traps
+  statement: "Gastrin rises in response to loss of acid"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "780" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c039
+  section: traps
+  statement: "Environmental atrophic gastritis is antral predominant and multifocal with negative antibodies, unlike the autoimmune form"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "781" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: autoimmune-gastritis-c040
+  section: mnemonics
+  statement: "Body and fundus location, high gastrin and low B12 characterize autoimmune gastritis"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "780-781" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15

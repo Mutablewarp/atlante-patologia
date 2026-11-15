@@ -1,0 +1,118 @@
+id: autoimmune-gastritis
+module: o19
+tier: core
+kind: disease
+names:
+  it: "Gastrite autoimmune"
+  en: "Autoimmune gastritis"
+  eponyms: []
+  synonyms:
+    it: ["Gastrite atrofica autoimmune"]
+    en: ["Autoimmune atrophic gastritis"]
+  abbreviations: []
+summary:
+  it: "Gastrite immunomediata limitata a corpo e fondo gastrico, diretta contro le cellule parietali e il fattore intrinseco, che porta a ipo-acloridria, ipergastrinemia e anemia perniciosa."
+  en: "Immune-mediated gastritis limited to the gastric body and fundus, directed at parietal cells and intrinsic factor, leading to hypo-achlorhydria, hypergastrinemia and pernicious anemia."
+lenses:
+  system: [gastrointestinal, hematolymphoid]
+  process: [chronic-inflammation]
+  pattern: [atrophy, metaplasia, hyperplasia]
+  presentation: [anemia]
+  marker: [laboratory]
+  group: [immune, inflammatory]
+learningObjectives:
+  - it: "Spiegare perché la gastrite autoimmune è limitata a corpo e fondo gastrico."
+    en: "Explain why autoimmune gastritis is limited to the gastric body and fundus."
+  - it: "Collegare la perdita di cellule parietali a ipo-acloridria, ipergastrinemia e carenza di vitamina B12."
+    en: "Link loss of parietal cells to hypo-achlorhydria, hypergastrinemia and vitamin B12 deficiency."
+  - it: "Descrivere l'istologia: assenza di cellule parietali, metaplasia intestinale e pseudopilorica, micronoduli di cellule ECL."
+    en: "Describe the histology: absent parietal cells, intestinal and pseudopyloric metaplasia, ECL cell micronodules."
+  - it: "Distinguere la forma autoimmune dalla gastrite atrofica ambientale."
+    en: "Distinguish the autoimmune form from environmental atrophic gastritis."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: helicobacter-pylori-gastritis
+    note:
+      it: "Atrofia antrale multifocale con anticorpi assenti contro atrofia di corpo e fondo con anticorpi presenti."
+      en: "Multifocal antral-predominant atrophy with absent antibodies versus body and fundus atrophy with antibodies present."
+quickCheck:
+  - id: autoimmune-gastritis-q1
+    q:
+      it: "Perché la gastrite autoimmune risparmia l'antro?"
+      en: "Why does autoimmune gastritis spare the antrum?"
+    a:
+      it: "Perché le cellule parietali, bersaglio dell'attacco, si trovano solo nel corpo e nel fondo."
+      en: "Because parietal cells, the target of the attack, exist only in the body and fundus."
+    kind: short
+  - id: autoimmune-gastritis-q2
+    q:
+      it: "Perché la gastrinemia è alta?"
+      en: "Why is serum gastrin high?"
+    a:
+      it: "Perché la perdita di acido stimola le cellule G antrali a produrre più gastrina."
+      en: "Because loss of acid stimulates antral G cells to make more gastrin."
+    kind: short
+  - id: autoimmune-gastritis-q3
+    q:
+      it: "Come si arriva all'anemia perniciosa?"
+      en: "How does pernicious anemia arise?"
+    a:
+      it: "La perdita di fattore intrinseco impedisce l'assorbimento ileale di vitamina B12, con anemia megaloblastica."
+      en: "Loss of intrinsic factor blocks ileal absorption of vitamin B12, causing megaloblastic anemia."
+    kind: short
+  - id: autoimmune-gastritis-q4
+    q:
+      it: "Quali sono i bersagli degli autoanticorpi nella gastrite autoimmune?"
+      en: "What do the autoantibodies target in autoimmune gastritis?"
+    a:
+      it: "La pompa protonica delle cellule parietali (H+/K+ ATPasi) e il fattore intrinseco."
+      en: "The parietal cell proton pump (H+/K+ ATPase) and intrinsic factor."
+    kind: short
+selfExplain:
+  - it: "Perché una carenza di acido gastrico si accompagna a ipergastrinemia?"
+    en: "Why does loss of gastric acid come with hypergastrinemia?"
+  - it: "Perché la perdita del fattore intrinseco porta a un'anemia megaloblastica?"
+    en: "Why does loss of intrinsic factor lead to a megaloblastic anemia?"
+chain:
+  - pathology:
+      it: "Anticorpi anti-fattore intrinseco e atrofia del corpo gastrico"
+      en: "Anti-intrinsic factor antibodies and atrophy of the gastric body"
+    sign:
+      it: "Anemia megaloblastica (anemia perniciosa)"
+      en: "Megaloblastic anemia (pernicious anemia)"
+    lab:
+      it: "Vitamina B12 bassa, gastrina alta"
+      en: "Low vitamin B12, high gastrin"
+examQuestions:
+  - it: "Mi parli della gastrite autoimmune: dove si localizza e perché?"
+    en: "Tell me about autoimmune gastritis: where does it occur, and why?"
+    focus: [definition, pathogenesis]
+    level: 1
+  - it: "Quali anticorpi si trovano nella gastrite autoimmune e contro che cosa sono diretti?"
+    en: "Which antibodies are found in autoimmune gastritis, and what do they target?"
+    focus: [etiology, ancillary]
+    level: 1
+  - it: "Perché la perdita di fattore intrinseco causa anemia perniciosa?"
+    en: "Why does loss of intrinsic factor cause pernicious anemia?"
+    focus: [pathogenesis, prognosis]
+    level: 2
+  - it: "Che cosa vede al microscopio in una biopsia del corpo gastrico nella gastrite autoimmune?"
+    en: "What do you see under the microscope in a gastric body biopsy in autoimmune gastritis?"
+    focus: [micro, ancillary]
+    level: 2
+  - it: "Come distingue la gastrite atrofica autoimmune da quella ambientale?"
+    en: "How do you tell autoimmune atrophic gastritis from the environmental form?"
+    focus: [diagnosis, differential]
+    level: 3
+images:
+  - id: autoimmune-gastritis-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "19"
+    pages: "780-781"
+lastUpdated: 2026-11-14
+status: published
