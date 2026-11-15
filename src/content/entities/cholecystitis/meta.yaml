@@ -1,0 +1,127 @@
+id: cholecystitis
+module: o20
+tier: core
+kind: disease
+editionDependent: false
+status: published
+lastUpdated: 2026-11-15
+reviewStatus: ai-generated-unreviewed
+names:
+  it: Colecistiti acute e croniche
+  en: Acute and chronic cholecystitis
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: []
+summary:
+  it: La colecistite è l'infiammazione della colecisti, acuta (di solito calcolotica) o cronica, con complicanze come empiema, gangrena e perforazione.
+  en: Cholecystitis is inflammation of the gallbladder, acute (usually calculous) or chronic, with complications such as empyema, gangrene and perforation.
+learningObjectives:
+  - it: Distinguere la colecistite acuta calcolotica da quella alitiasica.
+    en: Distinguish calculous from acalculous acute cholecystitis.
+  - it: Spiegare come l'ostruzione del dotto cistico danneggia la mucosa.
+    en: Explain how cystic duct obstruction injures the mucosa.
+  - it: Descrivere le complicanze della colecistite acuta (empiema, gangrena, perforazione).
+    en: Describe the complications of acute cholecystitis (empyema, gangrene, perforation).
+  - it: Riconoscere la colecistite cronica, la colecisti a porcellana e la colesterolosi.
+    en: Recognize chronic cholecystitis, porcelain gallbladder and cholesterolosis.
+lenses:
+  system: [liver-biliary]
+  process: [acute-inflammation, chronic-inflammation]
+  pattern: [gangrene, dystrophic-calcification]
+  presentation: [fever, jaundice]
+  marker: []
+  group: [inflammatory]
+prerequisites: []
+relations:
+  - type: complicationOf
+    target: cholelithiasis
+    note:
+      it: La colecistite acuta si associa a calcoli nel 90% dei casi.
+      en: Acute cholecystitis is accompanied by gallstones in 90% of cases.
+  - type: mimics
+    target: polyarteritis-nodosa
+    note:
+      it: La poliarterite nodosa è una causa rara di colecistite alitiasica.
+      en: Polyarteritis nodosa is a rare cause of acalculous cholecystitis.
+quickCheck:
+  - id: cholecystitis-q1
+    q:
+      it: Quale percentuale di colecistiti acute è associata a calcoli?
+      en: What share of acute cholecystitis is associated with gallstones?
+    a:
+      it: Circa il 90%; il resto è alitiasico.
+      en: About 90%; the rest is acalculous.
+    kind: short
+  - id: cholecystitis-q2
+    q:
+      it: Quale reperto microscopico caratterizza la colecistite cronica?
+      en: Which microscopic finding characterizes chronic cholecystitis?
+    a:
+      it: Parete fibrotica infiammata attraversata dai seni di Rokitansky-Aschoff.
+      en: A fibrotic, inflamed wall penetrated by Rokitansky-Aschoff sinuses.
+    kind: short
+  - id: cholecystitis-q3
+    q:
+      it: Quali sono le complicanze gravi della colecistite acuta batterica?
+      en: What are the severe complications of bacterial acute cholecystitis?
+    a:
+      it: Empiema, gangrena e perforazione.
+      en: Empyema, gangrene and perforation.
+    kind: free
+  - id: cholecystitis-q4
+    q:
+      it: Che cos'è la colecisti a porcellana?
+      en: What is a porcelain gallbladder?
+    a:
+      it: È la calcificazione della parete dopo un'infiammazione di lunga durata.
+      en: It is calcification of the wall after long-standing inflammation.
+    kind: short
+selfExplain:
+  - it: Perché un calcolo nel dotto cistico danneggia la mucosa della colecisti?
+    en: Why does a stone in the cystic duct damage the gallbladder mucosa?
+  - it: Perché la colesterolosi di solito non dà sintomi?
+    en: Why does cholesterolosis usually cause no symptoms?
+  - it: Perché l'ostruzione biliare di solito precede l'infezione batterica nella colecistite acuta?
+    en: Why does biliary obstruction usually come before bacterial infection in acute cholecystitis?
+chain:
+  - pathology:
+      it: Calcolo nel dotto cistico con rilascio di fosfolipasi e lisolecitina
+      en: Stone in the cystic duct with phospholipase and lysolecithin release
+    sign:
+      it: Dolore al quadrante superiore destro
+      en: Right upper quadrant pain
+    lab:
+      it: Leucocitosi
+      en: Leukocytosis
+examQuestions:
+  - it: Mi parli della colecistite acuta calcolotica e di quella alitiasica.
+    en: Tell me about calculous and acalculous acute cholecystitis.
+    focus: [definition, etiology]
+    level: 1
+  - it: Quali sono le complicanze della colecistite acuta batterica?
+    en: What are the complications of bacterial acute cholecystitis?
+    focus: [gross, prognosis]
+    level: 1
+  - it: Perché un calcolo nel dotto cistico danneggia la mucosa della colecisti?
+    en: Why does a stone in the cystic duct damage the gallbladder mucosa?
+    focus: [pathogenesis]
+    level: 2
+  - it: Che cosa vede al microscopio nella colecistite cronica?
+    en: What do you see under the microscope in chronic cholecystitis?
+    focus: [micro, gross]
+    level: 2
+  - it: Come distingue la colecistite cronica dalla colesterolosi, e che cos'è la colecisti a porcellana?
+    en: How do you tell chronic cholecystitis from cholesterolosis, and what is a porcelain gallbladder?
+    focus: [differential, gross, traps]
+    level: 3
+images:
+  - id: cholecystitis-micro-1
+    role: micro
+  - id: cholecystitis-micro-2
+    role: micro
+sources:
+  - source: rubin-8e
+    chapter: "20"
+    pages: "897"
