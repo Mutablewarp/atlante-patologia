@@ -1,0 +1,122 @@
+id: membranoproliferative-glomerulonephritis
+module: o22
+tier: extended
+kind: disease
+names:
+  it: "Glomerulonefrite membranoproliferativa e glomerulopatia da C3"
+  en: "Membranoproliferative GN and C3 glomerulopathy"
+  eponyms: []
+  synonyms:
+    it: ["GNMP", "Glomerulonefrite lobulare"]
+    en: ["Mesangiocapillary glomerulonephritis", "Lobular glomerulonephritis"]
+  abbreviations: ["MPGN", "C3G", "DDD"]
+summary:
+  it: "Pattern di danno glomerulare con ipercellularità e ispessimento delle pareti capillari, doppi contorni e depositi densi, sostenuto da immunocomplessi oppure da una disregolazione del complemento (glomerulopatia da C3)."
+  en: "A pattern of glomerular injury with hypercellularity, thick capillary walls, double contours and dense deposits, driven either by immune complexes or by complement dysregulation (C3 glomerulopathy)."
+lenses:
+  system: [kidney]
+  process: [hypersensitivity, chronic-inflammation]
+  pattern: []
+  presentation: [hematuria, edema]
+  marker: [laboratory, special-stains]
+  group: [immune, inflammatory]
+learningObjectives:
+  - it: "Definire la glomerulonefrite membranoproliferativa come pattern di danno e non come malattia singola."
+    en: "Define MPGN as a pattern of injury and not a single disease."
+  - it: "Distinguere la forma mediata da immunocomplessi dalla glomerulopatia da C3 con l'immunofluorescenza."
+    en: "Separate immune complex–mediated MPGN from C3 glomerulopathy using immunofluorescence."
+  - it: "Spiegare come si formano i doppi contorni della membrana basale."
+    en: "Explain how the double contours of the basement membrane form."
+  - it: "Riconoscere i depositi densi alla microscopia elettronica, compresa la malattia da depositi densi."
+    en: "Recognize dense deposits on electron microscopy, including dense deposit disease."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: postinfectious-glomerulonephritis
+    note:
+      it: "Entrambe possono dare nefrite con complemento basso; la forma postinfettiva ha esordio brusco e C3 che si normalizza."
+      en: "Both can cause nephritis with low complement; the postinfectious form starts abruptly and C3 normalizes."
+  - type: differentialOf
+    target: lupus-nephritis
+    note:
+      it: "Anche la nefrite lupica può dare nefrite con ipocomplementemia."
+      en: "Lupus nephritis can also cause nephritis with hypocomplementemia."
+  - type: complicationOf
+    target: infective-endocarditis
+    note:
+      it: "L'endocardite batterica è una causa secondaria di forma da immunocomplessi."
+      en: "Bacterial endocarditis is a secondary cause of the immune complex form."
+quickCheck:
+  - id: membranoproliferative-glomerulonephritis-q1
+    q:
+      it: "Come si formano i doppi contorni della membrana basale glomerulare?"
+      en: "How do the double contours of the glomerular basement membrane form?"
+    a:
+      it: "Il citoplasma mesangiale si inserisce sotto l'endotelio e nuova membrana basale si forma tra esso e l'endotelio."
+      en: "Mesangial cytoplasm extends under the endothelium and new basement membrane forms between it and the endothelium."
+    kind: short
+  - id: membranoproliferative-glomerulonephritis-q2
+    q:
+      it: "Quale reperto di immunofluorescenza distingue la glomerulopatia da C3 dalla forma da immunocomplessi?"
+      en: "Which immunofluorescence finding separates C3 glomerulopathy from the immune complex form?"
+    a:
+      it: "Nella glomerulopatia da C3 c'è solo complemento; nella forma da immunocomplessi ci sono immunoglobuline e complemento."
+      en: "C3 glomerulopathy shows complement alone; the immune complex form shows immunoglobulin plus complement."
+    kind: short
+  - id: membranoproliferative-glomerulonephritis-q3
+    q:
+      it: "Perché la glomerulopatia da C3 recidiva spesso nel rene trapiantato?"
+      en: "Why does C3 glomerulopathy often recur in a transplanted kidney?"
+    a:
+      it: "Perché il difetto di regolazione del complemento è nel ricevente, non nel rene."
+      en: "Because the complement regulation defect is in the recipient, not in the kidney."
+    kind: short
+  - id: membranoproliferative-glomerulonephritis-q4
+    q:
+      it: "Come riconosce la malattia da depositi densi al microscopio elettronico?"
+      en: "How does electron microscopy recognize dense deposit disease?"
+    a:
+      it: "Dalla densità nella matrice mesangiale e al centro di una membrana basale glomerulare ispessita."
+      en: "By density in the mesangial matrix and in the middle of a thickened glomerular basement membrane."
+    kind: short
+selfExplain:
+  - it: "Perché un'infezione cronica silente può causare una glomerulonefrite membranoproliferativa?"
+    en: "Why can a silent chronic infection cause membranoproliferative glomerulonephritis?"
+  - it: "Perché il fattore nefritico C3 mantiene attivato C3?"
+    en: "Why does C3 nephritic factor keep C3 activated?"
+  - it: "Perché un C3 basso non basta a distinguere le due forme?"
+    en: "Why is a low C3 not enough to tell the two forms apart?"
+examQuestions:
+  - it: "Come distingue una MPGN da immunocomplessi da una glomerulopatia da C3?"
+    en: "How do you tell immune complex MPGN from C3 glomerulopathy?"
+    focus: [pathogenesis, ancillary, diagnosis]
+    level: 3
+  - it: "Che cosa vede al microscopio in una MPGN, e come si formano i doppi contorni?"
+    en: "What do you see under the microscope in MPGN, and how do the double contours form?"
+    focus: [micro]
+    level: 2
+  - it: "Mi parli dei depositi densi alla microscopia elettronica nella MPGN e nella malattia da depositi densi."
+    en: "Tell me about the dense deposits on electron microscopy in MPGN and in dense deposit disease."
+    focus: [ancillary]
+    level: 1
+  - it: "Perché la glomerulopatia da C3 recidiva spesso nel rene trapiantato?"
+    en: "Why does C3 glomerulopathy often recur in a transplanted kidney?"
+    focus: [pathogenesis]
+    level: 2
+  - it: "Un C3 basso con quadro nefritico: come distingue la MPGN dalla glomerulonefrite postinfettiva?"
+    en: "With a low C3 and a nephritic picture, how do you tell MPGN from postinfectious glomerulonephritis?"
+    focus: [differential, clinical]
+    level: 3
+images:
+  - { id: membranoproliferative-glomerulonephritis-micro-1, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: true
+editionNote:
+  it: "La classificazione è cambiata: la malattia da depositi densi, un tempo MPGN di tipo II, rientra oggi nella glomerulopatia da C3; i testi più vecchi usano la vecchia suddivisione."
+  en: "The classification changed: dense deposit disease, once type II MPGN, now belongs to C3 glomerulopathy; older texts use the old split."
+sources:
+  - source: rubin-8e
+    chapter: "22"
+    pages: "939-942"
+lastUpdated: 2026-11-15
+status: published

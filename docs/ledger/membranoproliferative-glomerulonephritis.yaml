@@ -1,0 +1,458 @@
+entity: membranoproliferative-glomerulonephritis
+claims:
+- claimId: membranoproliferative-glomerulonephritis-c001
+  section: definition
+  statement: "MPGN is not one disease but a glomerular reaction that many conditions can trigger: extra cells and thickened capillary walls"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "939" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c002
+  section: definition
+  statement: "MPGN divides into an immune complex group and a C3 glomerulopathy group"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "939-940" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c003
+  section: definition
+  statement: "Dense deposit disease was formerly named type II MPGN, so older classifications differ"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "941" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c004
+  section: definition
+  statement: "Older children and young adults are hit hardest by the immune complex form, but any age can be affected"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "941" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c005
+  section: definition
+  statement: "Countries where chronic infections are widespread have far more cases of the immune complex form"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "941" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c006
+  section: etiology
+  statement: "The nephritogenic antigens of immune complex-mediated MPGN are usually unknown"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "940" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c007
+  section: etiology
+  statement: "The antigens may originate from infectious or autoimmune conditions"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "940" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c008
+  section: etiology
+  statement: "Secondary immune complex MPGN follows persistent infections such as subacute bacterial endocarditis or hepatitis C virus infection"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "940" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c009
+  section: etiology
+  statement: "Cryoglobulinemia and neoplasia are listed as other secondary causes of immune complex MPGN"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "940" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c010
+  section: etiology
+  statement: "In a rare variant of MPGN the culprit is a monoclonal immunoglobulin"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "940" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c011
+  section: etiology
+  statement: "Uncontrolled activity of the alternative complement pathway, from a gene defect or an autoantibody, underlies C3 glomerulopathy"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "940" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c012
+  section: pathogenesis
+  statement: "MPGN deposits are either immune complexes or complement without immunoglobulin, lodged in the mesangium and capillary walls"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "939" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c013
+  section: pathogenesis
+  statement: "Glomerular cells and matrix remodel because immune complexes lodge in glomeruli over a long time, driven by a silent persistent infection with continuing antigen in the blood"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "940" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c014
+  section: pathogenesis
+  statement: "MPGN that resolves once its associated condition is gone was probably caused by that condition"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "940" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c015
+  section: pathogenesis
+  statement: "C3 glomerulopathy arises when proteins that restrain the alternative pathway, such as factor H and factor I, are absent or fail"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "941" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c016
+  section: pathogenesis
+  statement: "C3 activation is prolonged when C3 nephritic factor, an IgG autoantibody in some patients, preserves the convertase of the alternative pathway"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "941" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c017
+  section: pathogenesis
+  statement: "The complement regulation defect belongs to the recipient, so C3 glomerulopathy often returns in a transplanted kidney"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "941" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c018
+  section: micro
+  statement: "Monocytes and macrophages infiltrate enlarged glomeruli in which mesangial cells proliferate strongly"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "940" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c019
+  section: micro
+  statement: "The name lobular glomerulonephritis was formerly applied to the accentuated lobulation of the glomerulus"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "940" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c020
+  section: micro
+  statement: "On silver stain the GBM of the thickened capillary walls is split into two or more layers"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "940" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c021
+  section: micro
+  statement: "The second contour is new basement membrane laid between the endothelium and mesangial cytoplasm that has extended beneath it"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "940" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c022
+  section: micro
+  statement: "In many patients with C3 glomerulopathy the injury has no MPGN pattern, although some cases resemble immune complex MPGN histologically"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "941" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c023
+  section: ancillary
+  statement: "Capillary loops and mesangium of immune complex MPGN stain granularly for immunoglobulin together with complement on immunofluorescence"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "941" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c024
+  section: ancillary
+  statement: "In C3 glomerulopathy immunofluorescence shows complement alone"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "941" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c025
+  section: ancillary
+  statement: "On electron microscopy, immune complexes or complement appear as dense deposits beneath the endothelium and in the mesangium"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "940-941" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c026
+  section: ancillary
+  statement: "Dense deposits beneath the epithelium can occur too, in differing amounts"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "941" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c027
+  section: ancillary
+  statement: "Dense material inside a thickened GBM and in the mesangial matrix marks dense deposit disease on electron microscopy"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "941" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c028
+  section: ancillary
+  statement: "In dense deposit disease arteriole walls and the basement membranes of peritubular capillaries also have areas of density"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "941" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c029
+  section: ancillary
+  statement: "C3 glomerulonephritis lacks intramembranous dense deposits"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "941" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c030
+  section: ancillary
+  statement: "Dense deposit disease has scarcely any antibody, and C3 staining runs as a line along the capillary walls"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "941" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c031
+  section: clinical
+  statement: "Patients with immune complex MPGN can show a nephrotic picture, a nephritic picture or features of both"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "941" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c032
+  section: clinical
+  statement: "Patients with immune complex MPGN often have low C3 levels"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "941" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c033
+  section: clinical
+  statement: "C3 glomerulopathy is rare and most patients are children"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "942" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c034
+  section: clinical
+  statement: "In C3 glomerulopathy the urine shows protein and blood, together with hypertension and reduced kidney function"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "942" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c035
+  section: clinical
+  statement: "Low C3 with normal C4 is common in C3 glomerulopathy"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "942" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c036
+  section: diagnosis
+  statement: "Immunofluorescence separates immune complex MPGN (immunoglobulin and complement) from C3 glomerulopathy (complement alone); low C3 is found in both"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "941-942" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c037
+  section: diagnosis
+  statement: "Secondary immune complex MPGN has an identifiable cause, such as a persistent infection or cryoglobulinemia"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "940" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c038
+  section: prognosis
+  statement: "Immune complex MPGN tends to linger and get worse only gradually"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "941" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c039
+  section: prognosis
+  statement: "After 10 years about half of patients with immune complex MPGN reach ESRD"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "941" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c040
+  section: prognosis
+  statement: "In C3 glomerulopathy 40% of patients reach ESRD within 10 years"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "942" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c041
+  section: differential
+  statement: "Postinfectious glomerulonephritis starts suddenly with hypertension, a puffy face, and scant, bloody urine"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "939" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c042
+  section: differential
+  statement: "In acute postinfectious glomerulonephritis serum C3 is low during the acute syndrome and returns to normal"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "939" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c043
+  section: differential
+  statement: "Acute postinfectious glomerulonephritis shows subepithelial humps on electron microscopy"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "939" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c044
+  section: differential
+  statement: "Diagnosis of postinfectious glomerulonephritis may rest on rising antibody titers to streptococcal antigens"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "939" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c045
+  section: differential
+  statement: "Lupus glomerulonephritis, like postinfectious glomerulonephritis, can cause nephritis with hypocomplementemia and so enters the differential of MPGN"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "941" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c046
+  section: differential
+  statement: "In SLE the body makes autoantibodies against many antigens, DNA among them"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "942" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c047
+  section: differential
+  statement: "C3 glomerulopathy has complement deposits with little to no immunoglobulin"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "941" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c048
+  section: high-yield
+  statement: "The MPGN pattern covers an immune complex group and a C3 glomerulopathy group"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "939-940" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c049
+  section: high-yield
+  statement: "The double contour is a second layer of basement membrane, built together with mesangial cytoplasm, lying under the endothelium"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "940" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c050
+  section: high-yield
+  statement: "Dense deposits are subendothelial and mesangial; dense deposit disease has a ribbon-like intramembranous zone"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "940-941" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c051
+  section: high-yield
+  statement: "On immunofluorescence the immune complex form carries immunoglobulin with complement, while C3 glomerulopathy carries complement only"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "941" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c052
+  section: high-yield
+  statement: "C3 nephritic factor is an autoantibody that keeps C3 activated for longer"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "941" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c053
+  section: traps
+  statement: "MPGN is a pattern of injury caused by multiple etiologies, not a single disease"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "939" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c054
+  section: traps
+  statement: "C3 glomerulopathy may resemble immune complex MPGN histologically, so light microscopy alone does not separate them"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "941" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c055
+  section: traps
+  statement: "Dense deposit disease is a complement-mediated C3 glomerulopathy with C3 staining and little or no antibody"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "941" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c056
+  section: traps
+  statement: "Acute postinfectious and lupus glomerulonephritis can also cause nephritis with hypocomplementemia"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "941" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: membranoproliferative-glomerulonephritis-c057
+  section: mnemonics
+  statement: "Mnemonic summarizing double contour, deposit type (immunoglobulin plus C3 versus C3 alone), indolent infection and nephrotic or nephritic presentation"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "940-941" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
