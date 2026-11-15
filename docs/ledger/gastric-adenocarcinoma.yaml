@@ -1,0 +1,442 @@
+entity: gastric-adenocarcinoma
+claims:
+- claimId: gastric-adenocarcinoma-c001
+  section: definition
+  statement: "Among malignant stomach tumors, adenocarcinoma is the commonest"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "788" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c002
+  section: definition
+  statement: "The incidence of gastric adenocarcinoma differs strongly between geographic regions"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "788" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c003
+  section: definition
+  statement: "Many Eastern countries have far higher rates than the West, where incidence has declined sharply across the last hundred years"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "788" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c004
+  section: definition
+  statement: "Better detection and treatment of Helicobacter are shrinking the East-West difference in incidence"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "788" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-adenocarcinoma-c005
+  section: etiology
+  statement: "Regional differences in incidence mostly follow chronic gastritis and the local spread and strains of Helicobacter"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "788" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-adenocarcinoma-c006
+  section: etiology
+  statement: "More gastric cancers occur among people who eat a lot of smoked or pickled food"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "788" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c007
+  section: etiology
+  statement: "Eating plenty of fresh vegetables lowers the cancer risk"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "788" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c008
+  section: etiology
+  statement: "Heredity contributes substantially to certain types of gastric cancer"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "788" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c009
+  section: etiology
+  statement: "Germline CDH1 (E-cadherin gene) mutations are linked to hereditary diffuse gastric cancer, which is rare and autosomal dominant"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-adenocarcinoma-c010
+  section: etiology
+  statement: "Patients with hereditary diffuse gastric cancer may develop cancer at an early age"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c011
+  section: etiology
+  statement: "These patients have an increased risk of lobular carcinoma of the breast"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c012
+  section: pathogenesis
+  statement: "Intestinal-type cancer arises after chronic gastritis, with intestinal metaplasia as the precursor lesion"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c013
+  section: pathogenesis
+  statement: "The intestinal type is falling in incidence, and its relationship to Helicobacter is the reason"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c014
+  section: pathogenesis
+  statement: "Across all countries, diffuse-type incidence has remained relatively steady"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c015
+  section: pathogenesis
+  statement: "The genetic basis of the diffuse type is better defined than that of the intestinal type"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c016
+  section: pathogenesis
+  statement: "Diffuse gastric carcinomas arising sporadically (without inheritance) also have E-cadherin inactivated"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c017
+  section: pathogenesis
+  statement: "In the colon adenomas are tightly tied to carcinoma; in the stomach that tie is absent, though adenomas may still be related to cancer"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "788" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c018
+  section: gross
+  statement: "The gross appearance of gastric carcinoma is variable"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "788" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c019
+  section: gross
+  statement: "Most tumors show significant ulceration and project into the lumen as large polypoid masses"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "788" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c020
+  section: gross
+  statement: "A malignant ulcer is distinguished from a benign peptic ulcer by its size and a firm raised margin"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "788" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-adenocarcinoma-c021
+  section: gross
+  statement: "A few cancers, mostly signet ring ones, grow deep in the wall under a surface that looks intact"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-adenocarcinoma-c022
+  section: gross
+  statement: "Linitis plastica is the classic name for the stiff stomach with a thickened wall that results from this deep infiltration"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c023
+  section: micro
+  statement: "Under the Lauren system a gastric carcinoma is either intestinal or diffuse, and some tumors overlap between the two"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c024
+  section: micro
+  statement: "The label intestinal refers mainly to how the tumor is built, not to its cell type"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c025
+  section: micro
+  statement: "Solid areas may appear among the glands or papillae of intestinal-type tumors"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-adenocarcinoma-c026
+  section: micro
+  statement: "The mucosa of an intestinal-type cancer may be taken over by crowded, irregular tumor glands"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "789" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-adenocarcinoma-c027
+  section: micro
+  statement: "Of the two Lauren types, the intestinal one occurs more often"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c028
+  section: micro
+  statement: "The diffuse type permeates the whole gastric wall, and most of its cells are poorly adherent signet ring cells"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c029
+  section: micro
+  statement: "Glands and surface lining are spared while tumor cells crowd and thicken the lamina propria"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-adenocarcinoma-c030
+  section: micro
+  statement: "Signet ring carcinoma in situ is often present as many small foci in hereditary diffuse gastric cancer"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c031
+  section: ancillary
+  statement: "On routine histology the intestinal type shows glands or papillae and the diffuse type shows poorly cohesive signet ring cells"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c032
+  section: ancillary
+  statement: "Only careful, extensive microscopy can detect the small in situ signet ring foci of hereditary cases"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c033
+  section: clinical
+  statement: "With diffuse infiltration the mucosa can show no mass at all, which is misleading"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c034
+  section: diagnosis
+  statement: "A necrotic base and a hard raised rim mark a large antral tumor as malignant rather than a benign ulcer"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "789" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-adenocarcinoma-c035
+  section: prognosis
+  statement: "Early gastric cancer is a tumor confined to the mucosa and submucosa"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c036
+  section: prognosis
+  statement: "Early gastric cancer has an 80% to 90% five-year survival"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c037
+  section: prognosis
+  statement: "Advanced gastric adenocarcinoma extends into the muscularis propria and beyond"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c038
+  section: prognosis
+  statement: "Advanced gastric adenocarcinoma has a 16% to 80% five-year survival"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c039
+  section: prognosis
+  statement: "Invasion deeper than the muscularis propria carries a still worse outlook"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c040
+  section: prognosis
+  statement: "Prophylactic gastrectomy is a therapeutic option in hereditary diffuse gastric cancer"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c041
+  section: differential
+  statement: "A benign peptic ulcer is smaller than a malignant one and lacks its hard, elevated, irregular edge"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "788" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c042
+  section: differential
+  statement: "Hyperplastic polyps are reactive overgrowths of foveolar epithelium, sometimes cystic, arising with chronic gastritis or reactive gastropathy"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "788" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c043
+  section: differential
+  statement: "Gastric adenomas are by definition dysplastic"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "788" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c044
+  section: differential
+  statement: "Both MALT lymphoma and diffuse large B-cell lymphoma, which make up most gastric lymphomas, are associated with Helicobacter infection"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c045
+  section: high-yield
+  statement: "Intestinal-type cancer follows chronic gastritis with intestinal metaplasia and is tied to Helicobacter"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c046
+  section: high-yield
+  statement: "The diffuse type consists mostly of signet ring cells that cohere poorly"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c047
+  section: high-yield
+  statement: "Linitis plastica is a stiff, thickened stomach due to deep tumor infiltration while the mucosa still looks normal"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c048
+  section: high-yield
+  statement: "Germline CDH1 mutations are linked to hereditary diffuse gastric cancer"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c049
+  section: high-yield
+  statement: "Patients with hereditary diffuse gastric cancer have an increased risk of lobular breast carcinoma"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c050
+  section: high-yield
+  statement: "Early gastric cancer has an 80% to 90% five-year survival"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c051
+  section: traps
+  statement: "The word intestinal refers to the growth pattern, not to the cell type"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c052
+  section: traps
+  statement: "A diffusely infiltrating cancer can lie beneath a deceptively intact surface and produce linitis plastica"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c053
+  section: traps
+  statement: "The stomach lacks the tight adenoma-carcinoma connection typical of the colon"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "788" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c054
+  section: traps
+  statement: "The intestinal type is declining in incidence while the diffuse type has been relatively stable"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: gastric-adenocarcinoma-c055
+  section: mnemonics
+  statement: "Diffuse-type carcinoma has poorly cohesive cells diffusely infiltrating the wall, and the hereditary form is autosomal dominant through CDH1"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
