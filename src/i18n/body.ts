@@ -81,6 +81,12 @@ export const tBody = defineStrings({
   // The block on a card, under the lens chips
   whereInBody: { it: 'Dove nel corpo', en: 'Where in the body' },
 
+  // Progress next to an organ and a system; the script fills {n} and {total}
+  seenOf: { it: 'Viste {n}/{total}', en: 'Seen {n}/{total}' },
+  masteredOf: { it: 'Padroneggiate {n}/{total}', en: 'Mastered {n}/{total}' },
+  dueOf: { it: 'Da ripassare oggi {n}', en: 'Due today {n}' },
+  reviewOrgan: { it: 'Ripassa questo organo', en: 'Review this organ' },
+
   // Closing section: cards that have no organ
   otherTitle: { it: 'Schede senza un organo', en: 'Cards without an organ' },
   otherBody: {

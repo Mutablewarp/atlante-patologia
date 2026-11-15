@@ -532,3 +532,22 @@ ap-body section[data-organ]:has(> h3 a[aria-current]) {
     grid-column: 2;
   }
 }
+
+/* Progress line: three plain-text counters and the review link, filled by the script. The counters keep room for two lines
+   (they wrap on a phone), so filling them in shifts nothing. */
+.body-progress {
+  margin-block: var(--space-1) var(--space-3);
+  color: var(--ink-muted);
+  font-size: var(--step--1);
+}
+.body-progress-counts {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: var(--space-4);
+  min-height: 2lh;
+}
+.body-progress a {
+  display: flex;
+  align-items: center;
+  min-height: 2.75rem;
+}
