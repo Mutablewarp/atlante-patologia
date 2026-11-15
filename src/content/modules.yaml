@@ -176,8 +176,6 @@
   status: planned
   refPages: "414-518"
   planned:
-    - id: tuberculosis
-      names: { it: "Tubercolosi", en: "Tuberculosis" }
     - id: clostridial-myonecrosis
       names: { it: "Mionecrosi clostridica (gangrena gassosa)", en: "Clostridial myonecrosis (gas gangrene)" }
     - id: infection-and-host-defense
@@ -359,24 +357,6 @@
   planned:
     - id: anthracosis
       names: { it: "Antracosi", en: "Anthracosis" }
-    - id: atelectasis
-      names: { it: "Atelettasia", en: "Atelectasis" }
-    - id: bacterial-pneumonia
-      names: { it: "Polmoniti batteriche (polmonite lobare e broncopolmonite)", en: "Bacterial pneumonia (lobar pneumonia and bronchopneumonia)" }
-    - id: atypical-and-viral-pneumonia
-      names: { it: "Polmoniti atipiche, virali e opportunistiche", en: "Atypical, viral and opportunistic pneumonia" }
-    - id: lung-abscess
-      names: { it: "Ascesso polmonare", en: "Lung abscess" }
-    - id: acute-bronchitis-and-bronchiolitis
-      names: { it: "Bronchiti e bronchioliti acute", en: "Acute bronchitis and bronchiolitis" }
-    - id: bronchiectasis
-      names: { it: "Bronchiectasie", en: "Bronchiectasis" }
-    - id: emphysema
-      names: { it: "Enfisema", en: "Emphysema" }
-    - id: chronic-bronchitis
-      names: { it: "Bronchite cronica", en: "Chronic bronchitis" }
-    - id: asthma
-      names: { it: "Asma bronchiale", en: "Asthma" }
     - id: idiopathic-pulmonary-fibrosis
       names: { it: "Fibrosi polmonare idiopatica (UIP)", en: "Idiopathic pulmonary fibrosis (UIP pattern)" }
     - id: hypersensitivity-pneumonitis
@@ -892,16 +872,6 @@
   status: planned
   refPages: "1324-1353"
   planned:
-    - id: rhinosinusitis-and-nasal-polyps
-      names: { it: "Riniti, sinusiti e polipi nasali", en: "Rhinitis, sinusitis and nasal polyps" }
-    - id: sinonasal-tumors
-      names: { it: "Tumori delle cavità nasali e dei seni paranasali", en: "Sinonasal tumors" }
-    - id: nasopharyngeal-carcinoma
-      names: { it: "Carcinoma nasofaringeo", en: "Nasopharyngeal carcinoma" }
-    - id: laryngeal-precursor-lesions
-      names: { it: "Lesioni precancerose della laringe", en: "Laryngeal precursor lesions" }
-    - id: laryngeal-squamous-cell-carcinoma
-      names: { it: "Carcinoma squamoso della laringe", en: "Laryngeal squamous cell carcinoma" }
     - id: salivary-gland-tumors
       names: { it: "Tumori delle ghiandole salivari: classificazione", en: "Salivary gland tumors: classification" }
     - id: pleomorphic-adenoma

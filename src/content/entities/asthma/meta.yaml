@@ -1,0 +1,111 @@
+id: asthma
+module: o18
+tier: core
+kind: disease
+editionDependent: false
+status: published
+lastUpdated: 2026-11-14
+reviewStatus: ai-generated-unreviewed
+names:
+  it: "Asma bronchiale"
+  en: "Asthma"
+  eponyms: []
+  synonyms:
+    it: ["Asma"]
+    en: ["Bronchial asthma"]
+  abbreviations: []
+summary:
+  it: "Malattia delle vie aeree con ostruzione episodica e reversibile del flusso, sostenuta da infiammazione TH2 ed eosinofila, con tappi di muco, ipertrofia della muscolatura liscia e ispessimento della membrana basale."
+  en: "Airway disease with episodic, reversible airflow obstruction driven by TH2 and eosinophilic inflammation, with mucus plugs, smooth muscle hyperplasia and a thickened basement membrane."
+lenses:
+  system: [respiratory]
+  process: [hypersensitivity, chronic-inflammation]
+  pattern: [hyperplasia, metaplasia]
+  presentation: [dyspnea]
+  marker: []
+  group: [immune, inflammatory]
+learningObjectives:
+  - it: "Descrivere la via TH2/IgE/eosinofili che porta a broncocostrizione, secrezione di muco ed edema."
+    en: "Describe the TH2, IgE and eosinophil pathway that leads to bronchoconstriction, mucus secretion and edema."
+  - it: "Riconoscere i reperti morfologici dell'asma: tappi di muco, spirali di Curschmann, cristalli di Charcot-Leyden, ipertrofia muscolare e ispessimento della membrana basale."
+    en: "Recognize the morphology of asthma: mucus plugs, Curschmann spirals, Charcot-Leyden crystals, muscle hyperplasia and basement membrane thickening."
+  - it: "Elencare i principali fattori scatenanti, compresi aspirina e beta-bloccanti."
+    en: "List the main triggers, including aspirin and β-blockers."
+  - it: "Distinguere l'asma dall'enfisema e dalla bronchite cronica."
+    en: "Distinguish asthma from emphysema and chronic bronchitis."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: emphysema
+    note:
+      it: "Ostruzione episodica e reversibile contro declino progressivo della funzione respiratoria."
+      en: "Episodic, reversible obstruction versus progressive decline in lung function."
+  - type: differentialOf
+    target: chronic-bronchitis
+    note:
+      it: "Entrambe le condizioni causano ostruzione bronchiale, ma l'asma procede per attacchi."
+      en: "Both cause bronchial obstruction, but asthma proceeds in attacks."
+  - type: sharesMechanism
+    target: hypersensitivity-reactions
+    note:
+      it: "L'asma allergico è una reazione di ipersensibilità di tipo I mediata da IgE."
+      en: "Allergic asthma is an IgE-mediated type I hypersensitivity reaction."
+quickCheck:
+  - id: asthma-q1
+    q:
+      it: "Quali due tipi di cellule attiva un allergene inalato in una persona sensibilizzata, e che cosa secernono?"
+      en: "Which two cell types does an inhaled allergen engage in a sensitized person, and what do they secrete?"
+    a:
+      it: "Mastociti con IgE di superficie e cellule TH2; entrambi secernono istamina e altri mediatori di tipo I, più IL-4 e IL-5."
+      en: "IgE-bearing mast cells and TH2 cells; both secrete histamine and other type I mediators, plus IL-4 and IL-5."
+    kind: short
+  - id: asthma-q2
+    q:
+      it: "Quali reperti istologici e citologici sono tipici dell'asma?"
+      en: "Which histologic and cytologic findings are typical of asthma?"
+    a:
+      it: "Tappi di muco con eosinofili, spirali di Curschmann, cristalli di Charcot-Leyden, ipertrofia della muscolatura liscia e delle ghiandole e ispessimento della membrana basale."
+      en: "Mucus plugs with eosinophils, Curschmann spirals, Charcot-Leyden crystals, smooth muscle and gland hyperplasia, and a thickened basement membrane."
+    kind: short
+  - id: asthma-q3
+    q:
+      it: "Come si distingue l'asma dall'enfisema sul piano clinico?"
+      en: "How does asthma differ clinically from emphysema?"
+    a:
+      it: "L'asma procede per episodi con ostruzione reversibile; l'enfisema comporta un declino inesorabile della funzione respiratoria."
+      en: "Asthma runs in episodes with reversible obstruction; emphysema causes an inexorable decline in lung function."
+    kind: short
+selfExplain:
+  - it: "Perché i beta-bloccanti sono controindicati nell'asma?"
+    en: "Why are β-blockers contraindicated in asthma?"
+  - it: "Perché una persona asintomatica può avere ancora lesioni delle vie aeree?"
+    en: "Why can a symptom-free patient still have airway lesions?"
+examQuestions:
+  - it: "Mi parli della patogenesi di un attacco di asma allergico: quali cellule e quali citochine entrano in gioco?"
+    en: "Tell me how an allergic asthma attack develops: which cells and cytokines are involved?"
+    focus: [pathogenesis]
+    level: 2
+  - it: "Che cosa vede al microscopio nella parete bronchiale e nell'escreato di un paziente asmatico?"
+    en: "What do you see under the microscope in the bronchial wall and in the sputum of an asthmatic patient?"
+    focus: [micro, ancillary]
+    level: 1
+  - it: "Perché la membrana basale appare ispessita nell'asma?"
+    en: "Why does the basement membrane look thickened in asthma?"
+    focus: [micro]
+    level: 2
+  - it: "Come distingue l'asma dall'enfisema sul piano clinico e radiologico?"
+    en: "How do you tell asthma from emphysema, clinically and on the chest film?"
+    focus: [differential, definition]
+    level: 3
+images:
+  - id: asthma-gross-1
+    role: gross
+    pairWith: asthma-micro-1
+  - id: asthma-micro-1
+    role: micro
+  - id: asthma-micro-2
+    role: micro
+sources:
+  - source: rubin-8e
+    chapter: "18"
+    pages: "727-730"

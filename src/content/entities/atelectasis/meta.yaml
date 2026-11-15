@@ -1,0 +1,108 @@
+id: atelectasis
+module: o18
+tier: core
+kind: process
+names:
+  it: "Atelettasia"
+  en: "Atelectasis"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: []
+summary:
+  it: "Collasso di tessuto polmonare in precedenza espanso, di solito per ostruzione di un bronco o per compressione dall'esterno."
+  en: "Collapse of previously expanded lung tissue, usually from bronchial obstruction or compression from outside."
+lenses:
+  system: [respiratory]
+  process: [reversible-injury]
+  pattern: []
+  presentation: [dyspnea, incidental-finding]
+  marker: []
+  group: [degenerative]
+learningObjectives:
+  - it: "Definire l'atelettasia come collasso di tessuto polmonare in precedenza espanso."
+    en: "Define atelectasis as collapse of previously expanded lung tissue."
+  - it: "Spiegare perché l'ostruzione completa di un bronco porta al collasso del segmento a valle."
+    en: "Explain why complete bronchial obstruction collapses the segment beyond it."
+  - it: "Distinguere l'atelettasia da ostruzione da quella da compressione, anche per lo spostamento del mediastino."
+    en: "Tell obstructive from compressive atelectasis, including the direction of mediastinal shift."
+  - it: "Descrivere le conseguenze di un collasso prolungato, fibrosi e bronchiectasie."
+    en: "Describe the consequences of prolonged collapse: fibrosis and bronchiectasis."
+prerequisites: []
+relations:
+  - type: causes
+    target: bronchiectasis
+    note:
+      it: "Nell'atelettasia di lunga durata i bronchi si dilatano in modo permanente."
+      en: "In long-standing atelectasis the bronchi dilate permanently."
+  - type: differentialOf
+    target: bronchiectasis
+    note:
+      it: "Collasso del parenchima contro dilatazione permanente dei bronchi."
+      en: "Collapse of parenchyma versus permanent bronchial dilation."
+quickCheck:
+  - id: atelectasis-q1
+    q:
+      it: "Perché un bronco completamente ostruito porta al collasso del segmento a valle?"
+      en: "Why does a completely blocked bronchus collapse the segment beyond it?"
+    a:
+      it: "Il gas degli alveoli passa nel sangue e non viene sostituito, quindi la regione collassa."
+      en: "The alveolar gas passes into the blood and is not replaced, so the region collapses."
+    kind: short
+  - id: atelectasis-q2
+    q:
+      it: "In quale direzione si sposta il mediastino nell'atelettasia grave da ostruzione e in quella da compressione grave?"
+      en: "Which way does the mediastinum shift in severe obstructive collapse and in severe compression?"
+    a:
+      it: "Verso il lato colpito nell'ostruzione; lontano dal lato colpito nella compressione."
+      en: "Toward the affected side in obstruction; away from it in compression."
+    kind: short
+  - id: atelectasis-q3
+    q:
+      it: "Quali complicanze può dare un'atelettasia di lunga durata?"
+      en: "Which complications can long-standing atelectasis cause?"
+    a:
+      it: "Fibrosi del polmone collassato, polmonite o ascessi a valle e bronchiectasie."
+      en: "Fibrosis of the collapsed lung, pneumonia or abscesses beyond the block, and bronchiectasis."
+    kind: short
+selfExplain:
+  - it: "Perché un'ostruzione solo parziale del bronco può sovradistendere il segmento invece di farlo collassare?"
+    en: "Why can a merely partial bronchial block overdistend the segment instead of collapsing it?"
+  - it: "Perché un polmone può collassare anche senza alcuna ostruzione del bronco?"
+    en: "Why can a lung collapse even without any bronchial obstruction?"
+examQuestions:
+  - it: "Mi parli dell'atelettasia: che cos'è e quali sono i due meccanismi principali?"
+    en: "Tell me about atelectasis: what is it, and what are its two main mechanisms?"
+    focus: [definition, etiology, pathogenesis]
+    level: 1
+  - it: "Perché l'ostruzione completa di un bronco porta al collasso del segmento a valle, mentre quella parziale può sovradistenderlo?"
+    en: "Why does complete bronchial obstruction collapse the segment beyond it, while a partial block can overdistend it?"
+    focus: [pathogenesis, traps]
+    level: 2
+  - it: "Che cosa può succedere al polmone a valle di un'ostruzione bronchiale? Mi parli del rischio di infezione."
+    en: "What can happen to the lung beyond a bronchial obstruction? Tell me about the risk of infection."
+    focus: [micro, prognosis]
+    level: 2
+  - it: "Come distingue l'atelettasia da ostruzione da quella da compressione, e che cosa fa il mediastino nei due casi?"
+    en: "How do you tell obstructive from compressive atelectasis, and what does the mediastinum do in each?"
+    focus: [etiology, clinical, traps]
+    level: 3
+  - it: "Un paziente ha un collasso del lobo medio destro: quale meccanismo ipotizza e quali alterazioni vede in un lobo asportato dopo molto tempo?"
+    en: "A patient has a collapsed right middle lobe: which mechanism do you suspect, and what do you see in a lobe resected after a long time?"
+    focus: [etiology, micro, differential]
+    level: 3
+images:
+  - id: atelectasis-gross-1
+    role: gross
+    pairWith: atelectasis-micro-1
+  - id: atelectasis-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "18"
+    pages: "701-702"
+lastUpdated: 2026-11-14
+status: published

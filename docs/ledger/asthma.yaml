@@ -1,0 +1,426 @@
+entity: asthma
+claims:
+  - claimId: asthma-c001
+    section: definition
+    statement: "Cough, wheeze and breathlessness arrive in sudden bouts; the cause is airflow obstruction that occurs in episodes after many kinds of stimulus."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "727" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c002
+    section: definition
+    statement: "Some patients have no symptoms between attacks, while in others the attacks occur on a background of long-standing airway obstruction."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "727" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c003
+    section: definition
+    statement: "Feeling well does not mean healthy airways; lesions and some obstruction usually persist."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "727" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c004
+    section: definition
+    statement: "Status asthmaticus is the name for a severe attack that treatment fails to control."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "727" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c005
+    section: definition
+    statement: "Asthma prevalence in the US reaches 10% among children and 5% among adults."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "727" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c006
+    section: etiology
+    statement: "Each case is now described by its trigger and the effector pathway common to all, replacing the old allergic (extrinsic) versus idiosyncratic (intrinsic) split."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "727" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c007
+    section: etiology
+    statement: "The allergic variety is the most frequent type of asthma and mainly affects children."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "727" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c008
+    section: etiology
+    statement: "A respiratory virus, rather than an allergen, is often what starts an attack in a child."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "727" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c009
+    section: etiology
+    statement: "Exertion can bring on bronchospasm in a large share of asthmatic patients."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "729" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c010
+    section: etiology
+    statement: "Other NSAIDs have also been implicated in provoking bronchospasm, but aspirin is the classic drug offender."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "729" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c011
+    section: etiology
+    statement: "Aspirin sensitivity may affect as many as 10% of adults with asthma."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "729" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c012
+    section: etiology
+    statement: "Beta-blockers must be avoided in asthma because they reliably provoke bronchoconstriction."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "729" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c013
+    section: pathogenesis
+    statement: "Inflammation is the usual basis of airway hyperresponsiveness."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "727" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c014
+    section: pathogenesis
+    statement: "Mast cells carrying surface IgE lie between bronchial epithelial cells, and in a sensitized individual an inhaled allergen engages them together with TH2 cells."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "727" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c015
+    section: pathogenesis
+    statement: "Mast cells and TH2 cells alike secrete histamine and other type I mediators, plus IL-4 and IL-5."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "727" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c016
+    section: pathogenesis
+    statement: "Airway obstruction that can be reversed arises from edema due to vascular leakage, copious mucus and smooth muscle contraction."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "727" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c017
+    section: pathogenesis
+    statement: "When eosinophils discharge granule proteins such as eosinophil cationic protein and major basic protein into the lumen, epithelial cells are damaged and mucociliary function worsens."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "727" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c018
+    section: pathogenesis
+    statement: "Autonomic output from mucosal nerves, probably triggered by epithelial injury, adds airway narrowing and mucus secretion."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "727" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c019
+    section: pathogenesis
+    statement: "Leukotriene B4 and PAF keep the attack going and growing by bringing in more effector cells, eosinophils among them."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "727" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c020
+    section: gross
+    statement: "Autopsy lesions of asthma are the worst ones, since they come from deaths in status asthmaticus."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "729" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c021
+    section: gross
+    statement: "At autopsy the lungs are greatly inflated with air."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "729" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c022
+    section: gross
+    statement: "The airways are plugged with thick mucus."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "729" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c023
+    section: micro
+    statement: "Numerous eosinophils and fragments of epithelium are found within the mucus plugs."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "729" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c024
+    section: micro
+    statement: "Charcot-Leyden crystals, of eosinophil origin, are also seen."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "729-730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c025
+    section: micro
+    statement: "Curschmann spirals are mucus molds of the airway that coughing can bring up."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c026
+    section: micro
+    statement: "Hyperplasia of bronchial smooth muscle is a typical lesion of status asthmaticus."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c027
+    section: micro
+    statement: "The mucus glands in the bronchial submucosa are enlarged by hyperplasia."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c028
+    section: micro
+    statement: "Eosinophils, in varying numbers, are mixed with other inflammatory cells in the edematous submucosa."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c029
+    section: micro
+    statement: "Where the epithelium is shed only basal cells may remain, and the normal pseudostratified arrangement is lost."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c030
+    section: micro
+    statement: "Alongside squamous metaplasia and goblet cell excess, the basal cells are hyperplastic."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c031
+    section: micro
+    statement: "Collagen deposited beneath the true basal lamina thickens the bronchial epithelial basement membrane."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c032
+    section: ancillary
+    statement: "Thick sputum from the end of an attack is rich in eosinophils and may show Curschmann spirals and Charcot-Leyden crystals."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c033
+    section: clinical
+    statement: "A cough that brings up nothing, together with a sense of chest tightness, marks the beginning of an attack."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c034
+    section: clinical
+    statement: "The patient is dyspneic and tachypneic, expiration is prolonged, and wheezing is heard in both phases."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c035
+    section: clinical
+    statement: "A violent coughing fit that brings up thick mucus often marks the end of an attack."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c036
+    section: clinical
+    statement: "Status asthmaticus brings low blood oxygen, frequently with raised carbon dioxide as well."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c037
+    section: clinical
+    statement: "Because status asthmaticus is grave, the patient has to be admitted to hospital."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c038
+    section: diagnosis
+    statement: "A strong association exists between allergic asthma and positive skin tests."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "727" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c039
+    section: prognosis
+    statement: "Many childhood cases relapse after age 30, although about half are much better or symptom-free by age 20."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "727" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c040
+    section: prognosis
+    statement: "Treatment is built on several drug classes, inhaled corticosteroids among them, and inhaled bronchodilators frequently give striking relief."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c041
+    section: differential
+    statement: "Emphysema brings increasing dyspnea and an unrelenting loss of respiratory function, whereas the narrowing of asthma is episodic and reversible."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "727" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c042
+    section: differential
+    statement: "On the chest film of emphysema the chest is barrel-shaped, the lungs are hyperinflated and the diaphragms are lowered."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "727" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c043
+    section: differential
+    statement: "Cor pulmonale and repeated lung infections are a greater danger in chronic bronchitis than in emphysema."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "727" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c044
+    section: high-yield
+    statement: "Airflow obstruction that comes in episodes and is reversible is the core of asthma and appears as cough, wheeze and dyspnea."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "727" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c045
+    section: high-yield
+    statement: "In allergic asthma the allergen acts on IgE-bearing mast cells and TH2 cells, which release IL-4 and IL-5, and eosinophils are recruited."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "727" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c046
+    section: high-yield
+    statement: "Charcot-Leyden crystals and Curschmann spirals go with mucus plugs that hold many eosinophils."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "729-730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c047
+    section: high-yield
+    statement: "Bronchial smooth muscle and mucous gland hyperplasia and a thicker epithelial basement membrane are seen in the wall."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "729-730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c048
+    section: high-yield
+    statement: "Status asthmaticus is a severe attack that rescue drugs fail to break, and the patient must be admitted."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c049
+    section: high-yield
+    statement: "Beta-blockers should not be used in people with asthma."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "729" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c050
+    section: high-yield
+    statement: "Emphysema shows steady functional decline, unlike the episodic course of asthma."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "727" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c051
+    section: traps
+    statement: "Triggers beyond allergens, such as viral infection, exercise and drugs, can all set off asthma."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "727-729" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c052
+    section: traps
+    statement: "Most patients who seem well keep partly obstructed, structurally altered airways."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "727" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: asthma-c053
+    section: mnemonics
+    statement: "Key morphologic findings of asthma are mucus plugs, Charcot-Leyden crystals, thickened subepithelial basement membrane, gland and goblet cell hyperplasia, and Curschmann spirals."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "729-730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14

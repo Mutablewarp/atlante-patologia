@@ -1,0 +1,121 @@
+id: bacterial-pneumonia
+module: o18
+tier: core
+kind: disease
+names:
+  it: "Polmoniti batteriche (polmonite lobare e broncopolmonite)"
+  en: "Bacterial pneumonia (lobar pneumonia and bronchopneumonia)"
+  eponyms: []
+  synonyms:
+    it: ["Polmonite lobare", "Broncopolmonite"]
+    en: ["Lobar pneumonia", "Bronchopneumonia"]
+  abbreviations: []
+summary:
+  it: "Infiammazione batterica del parenchima polmonare con consolidamento, lobare (stadi di congestione, epatizzazione rossa e grigia, risoluzione) o a focolai broncopneumonici, classificata soprattutto in base al germe."
+  en: "Bacterial inflammation of the lung parenchyma with consolidation, either lobar (congestion, red and gray hepatization, resolution) or in bronchopneumonic foci, classified mainly by the causative organism."
+lenses:
+  system: [respiratory]
+  process: [acute-inflammation]
+  pattern: []
+  presentation: [fever, dyspnea, chest-pain]
+  marker: [special-stains]
+  group: [infectious, inflammatory]
+learningObjectives:
+  - it: "Distinguere la polmonite lobare dalla broncopolmonite per distribuzione e contesto clinico."
+    en: "Distinguish lobar pneumonia from bronchopneumonia by distribution and clinical setting."
+  - it: "Descrivere in ordine gli stadi della polmonite pneumococcica: edema/congestione, epatizzazione rossa, epatizzazione grigia, risoluzione."
+    en: "Describe in order the stages of pneumococcal pneumonia: edema/congestion, red hepatization, gray hepatization, resolution."
+  - it: "Associare ai principali germi (pneumococco, Klebsiella, stafilococco, Legionella, anaerobi) il loro quadro tipico."
+    en: "Match the main organisms (pneumococcus, Klebsiella, staphylococcus, Legionella, anaerobes) to their typical picture."
+  - it: "Spiegare il ruolo dell'aspirazione nella patogenesi."
+    en: "Explain the role of aspiration in pathogenesis."
+  - it: "Elencare le complicanze polmonari, pleuriche e sistemiche."
+    en: "List the pulmonary, pleural and systemic complications."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: atypical-and-viral-pneumonia
+    note:
+      it: "Esordio insidioso e bronchiolite con infiltrato linfoplasmacellulare, invece dell'essudato alveolare neutrofilo."
+      en: "Insidious onset and bronchiolitis with a lymphoplasmacytic infiltrate, instead of a neutrophilic alveolar exudate."
+  - type: differentialOf
+    target: tuberculosis
+    note:
+      it: "Granuloma con necrosi caseosa invece di essudato alveolare."
+      en: "Granuloma with caseous necrosis instead of an alveolar exudate."
+  - type: causes
+    target: lung-abscess
+    note:
+      it: "Gli anaerobi aspirati e lo stafilococco possono causare polmonite necrotizzante con ascesso."
+      en: "Aspirated anaerobes and staphylococci can cause necrotizing pneumonia with abscess."
+quickCheck:
+  - id: bacterial-pneumonia-q1
+    q:
+      it: "Quali sono gli stadi della polmonite lobare pneumococcica, in ordine?"
+      en: "What are the stages of pneumococcal lobar pneumonia, in order?"
+    a:
+      it: "Edema/congestione, epatizzazione rossa, epatizzazione grigia, risoluzione."
+      en: "Edema/congestion, red hepatization, gray hepatization, resolution."
+    kind: short
+  - id: bacterial-pneumonia-q2
+    q:
+      it: "In che cosa la broncopolmonite differisce dalla polmonite lobare?"
+      en: "How does bronchopneumonia differ from lobar pneumonia?"
+    a:
+      it: "Ha focolai separati centrati su bronchi e bronchioli, invece di un lobo intero solido, ed è tipica dei malati terminali."
+      en: "It has separate foci centered on bronchi and bronchioles, instead of a whole solid lobe, and is typical of terminally ill patients."
+    kind: short
+  - id: bacterial-pneumonia-q3
+    q:
+      it: "Quali sono le complicanze della polmonite pneumococcica?"
+      en: "What are the complications of pneumococcal pneumonia?"
+    a:
+      it: "Pleurite, versamento pleurico, empiema, batteriemia (endocardite, meningite), polmonite organizzativa con carnificazione, raramente ascesso."
+      en: "Pleuritis, pleural effusion, empyema, bacteremia (endocarditis, meningitis), organizing pneumonia with carnification, rarely abscess."
+    kind: short
+  - id: bacterial-pneumonia-q4
+    q:
+      it: "Da dove arrivano di solito i batteri della polmonite?"
+      en: "Where do the bacteria of pneumonia usually come from?"
+    a:
+      it: "Dai residenti normali di orofaringe e rinofaringe, portati agli alveoli dalle secrezioni aspirate."
+      en: "From the normal residents of the oropharynx and nasopharynx, carried to the alveoli by aspirated secretions."
+    kind: short
+selfExplain:
+  - it: "Perché un'infezione virale delle vie aeree superiori favorisce la polmonite pneumococcica?"
+    en: "Why does a viral upper respiratory infection favor pneumococcal pneumonia?"
+  - it: "Perché la capsula rende necessaria l'opsonizzazione del pneumococco?"
+    en: "Why does the capsule make opsonization of pneumococcus necessary?"
+examQuestions:
+  - it: "Mi parli degli stadi della polmonite lobare e di come si distingue dalla broncopolmonite."
+    en: "Tell me about the stages of lobar pneumonia and how it differs from bronchopneumonia."
+    focus: [pathogenesis, gross]
+    level: 1
+  - it: "Quali sono i principali germi delle polmoniti batteriche e che quadro danno?"
+    en: "Which are the main organisms of bacterial pneumonia, and what picture does each give?"
+    focus: [etiology, gross, micro]
+    level: 1
+  - it: "Perché l'aspirazione è così importante nella patogenesi della polmonite?"
+    en: "Why is aspiration so important in the pathogenesis of pneumonia?"
+    focus: [etiology, pathogenesis]
+    level: 2
+  - it: "Quali complicanze può avere una polmonite pneumococcica?"
+    en: "What complications can pneumococcal pneumonia have?"
+    focus: [prognosis]
+    level: 2
+  - it: "Come distingue una polmonite batterica da una polmonite atipica o da una tubercolosi?"
+    en: "How do you tell bacterial pneumonia from atypical pneumonia or from tuberculosis?"
+    focus: [differential, micro]
+    level: 3
+images:
+  - { id: bacterial-pneumonia-gross-1, role: gross, pairWith: bacterial-pneumonia-micro-1 }
+  - { id: bacterial-pneumonia-micro-1, role: micro }
+  - { id: bacterial-pneumonia-micro-2, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "18"
+    pages: "703-707"
+lastUpdated: 2026-11-14
+status: published

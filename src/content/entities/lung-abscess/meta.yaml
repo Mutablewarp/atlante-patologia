@@ -1,0 +1,113 @@
+id: lung-abscess
+module: o18
+tier: core
+kind: disease
+names:
+  it: "Ascesso polmonare"
+  en: "Lung abscess"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: []
+summary:
+  it: "Raccolta localizzata di pus con distruzione del parenchima polmonare, più spesso da aspirazione di batteri anaerobi orofaringei."
+  en: "A localized collection of pus with destruction of lung parenchyma, most often from aspiration of oropharyngeal anaerobic bacteria."
+lenses:
+  system: [respiratory]
+  process: [acute-inflammation, necrosis]
+  pattern: [necrosis-liquefactive]
+  presentation: [mass-lesion]
+  marker: [special-stains]
+  group: [infectious, inflammatory]
+learningObjectives:
+  - it: "Elencare le cause dell'ascesso polmonare: aspirazione, post-polmonite, emboli settici e ostruzione bronchiale."
+    en: "List the causes of lung abscess: aspiration, post-pneumonic, septic emboli and bronchial obstruction."
+  - it: "Spiegare perché l'aspirazione porta ad ascesso e perché è colpito più spesso il polmone destro."
+    en: "Explain why aspiration leads to abscess and why the right lung is more often involved."
+  - it: "Descrivere la morfologia macroscopica e microscopica di un ascesso polmonare acuto e della sua evoluzione."
+    en: "Describe the gross and microscopic morphology of an acute lung abscess and how it evolves."
+  - it: "Riconoscere l'attinomicosi polmonare, i suoi granuli di zolfo e le sue complicanze, e distinguerla dalla nocardiosi."
+    en: "Recognize pulmonary actinomycosis, its sulfur granules and its complications, and tell it from nocardiosis."
+prerequisites: [acute-inflammation]
+relations:
+  - type: differentialOf
+    target: bacterial-pneumonia
+    note:
+      it: "La polmonite batterica è un'infiammazione intra-alveolare; la polmonite necrotizzante può evolvere in ascesso."
+      en: "Bacterial pneumonia is an intra-alveolar inflammation; a necrotizing pneumonia can progress to abscess."
+  - type: sharesMechanism
+    target: pulmonary-embolism
+    note:
+      it: "Emboli polmonari infetti possono seminare ascessi."
+      en: "Infected pulmonary emboli can seed abscesses."
+quickCheck:
+  - id: lung-abscess-q1
+    q:
+      it: "Qual è la causa più frequente di ascesso polmonare e quale condizione vi predispone di più?"
+      en: "What is the most common cause of lung abscess, and which condition predisposes to it most often?"
+    a:
+      it: "L'aspirazione di contenuto orofaringeo; la condizione predisponente più comune è l'alcolismo."
+      en: "Aspiration of oropharyngeal contents; alcoholism is the most common predisposing condition."
+    kind: short
+  - id: lung-abscess-q2
+    q:
+      it: "Quali due condizioni servono perché l'aspirazione dia un ascesso?"
+      en: "Which two conditions are needed for aspiration to produce an abscess?"
+    a:
+      it: "Un grande carico di batteri anaerobi nel cavo orale e un riflesso della tosse o una clearance tracheobronchiale alterati."
+      en: "A large load of anaerobic bacteria in the mouth, and an impaired cough reflex or tracheobronchial clearance."
+    kind: short
+  - id: lung-abscess-q3
+    q:
+      it: "Che cosa sono i granuli di zolfo e in quale infezione si trovano?"
+      en: "What are sulfur granules and in which infection do they occur?"
+    a:
+      it: "Piccole particelle gialle formate da filamenti a clava ai margini delle colonie, tipiche dell'attinomicosi."
+      en: "Small yellow particles made of club-shaped filaments at the colony edge, typical of actinomycosis."
+    kind: short
+  - id: lung-abscess-q4
+    q:
+      it: "Quali complicanze può dare l'estensione degli ascessi attinomicotici?"
+      en: "Which complications can follow when actinomycotic abscesses spread?"
+    a:
+      it: "Se raggiungono la pleura possono comparire fistola broncopolmonare o empiema pleurico; possono anche invadere la parete toracica."
+      en: "When they reach the pleura, a bronchopulmonary fistula or pleural empyema may follow; they may also invade the chest wall."
+    kind: short
+selfExplain:
+  - it: "Perché l'ascesso da aspirazione colpisce più spesso il polmone destro?"
+    en: "Why does an aspiration abscess involve the right lung more often?"
+  - it: "Perché non ogni aspirazione di materiale orale porta a un ascesso polmonare?"
+    en: "Why does not every aspiration of oral material lead to a lung abscess?"
+examQuestions:
+  - it: "Mi parli delle cause dell'ascesso polmonare: qual è la più frequente e quali sono le altre?"
+    en: "Tell me about the causes of lung abscess: which is the most common, and what are the others?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Che cosa vede al microscopio e a occhio nudo in un ascesso polmonare acuto, e come cambia nel tempo?"
+    en: "What do you see grossly and under the microscope in an acute lung abscess, and how does it change over time?"
+    focus: [gross, micro]
+    level: 1
+  - it: "Perché l'aspirazione porta a un ascesso solo in alcuni pazienti, e perché è colpito più spesso il polmone destro?"
+    en: "Why does aspiration lead to an abscess in only some patients, and why is the right lung more often involved?"
+    focus: [pathogenesis, traps]
+    level: 2
+  - it: "Mi parli dell'attinomicosi polmonare: come arriva al polmone, che aspetto ha e quali complicanze può dare?"
+    en: "Tell me about pulmonary actinomycosis: how does it reach the lung, what does it look like, and what complications can it cause?"
+    focus: [pathogenesis, gross, prognosis]
+    level: 2
+  - it: "Come distingue un'attinomicosi da una nocardiosi polmonare, e quali colorazioni userebbe per la nocardia?"
+    en: "How do you tell pulmonary actinomycosis from nocardiosis, and which stains would you use for Nocardia?"
+    focus: [micro, ancillary, differential]
+    level: 3
+images:
+  - { id: lung-abscess-gross-1, role: gross, pairWith: lung-abscess-micro-1 }
+  - { id: lung-abscess-micro-1, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "18"
+    pages: "709, 713-714"
+lastUpdated: 2026-11-14
+status: published

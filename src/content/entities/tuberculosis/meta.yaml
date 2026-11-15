@@ -1,0 +1,161 @@
+id: tuberculosis
+module: g09
+tier: core
+kind: disease
+names:
+  it: "Tubercolosi"
+  en: "Tuberculosis"
+  latin: "Mycobacterium tuberculosis"
+  eponyms: []
+  synonyms:
+    it: ["TBC", "Tisi"]
+    en: ["TB", "Consumption"]
+  abbreviations: ["TB", "TBC"]
+summary:
+  it: "Malattia infettiva cronica e contagiosa, causata da Mycobacterium tuberculosis, che colpisce soprattutto il polmone e la cui lesione tipica è il granuloma con necrosi caseosa."
+  en: "A chronic, communicable infection caused by Mycobacterium tuberculosis, mainly of the lung, whose typical lesion is the granuloma with caseous necrosis."
+lenses:
+  system: [respiratory, systemic]
+  process: [granulomatous-inflammation, chronic-inflammation, hypersensitivity]
+  pattern: [necrosis-caseous, granuloma]
+  presentation: [fever, lymphadenopathy]
+  marker: [ziehl-neelsen, special-stains]
+  group: [infectious, inflammatory]
+learningObjectives:
+  - it: "Distinguere infezione tubercolare e tubercolosi attiva, e tubercolosi primaria, progressiva primaria, secondaria e miliare."
+    en: "Distinguish tuberculous infection from active tuberculosis, and primary, progressive primary, secondary and miliary disease."
+  - it: "Spiegare perché i bacilli sopravvivono nei macrofagi e come l'immunità cellulo-mediata li contiene."
+    en: "Explain why the bacilli survive inside macrophages and how cell-mediated immunity contains them."
+  - it: "Descrivere complesso di Ghon, granuloma caseoso e cavità tubercolare."
+    en: "Describe the Ghon complex, the caseating granuloma and the tuberculous cavity."
+  - it: "Indicare le complicanze della tubercolosi secondaria."
+    en: "List the complications of secondary tuberculosis."
+  - it: "Riconoscere perché la colorazione di Gram non basta e serve una colorazione per bacilli acido-resistenti."
+    en: "Recognize why the Gram stain is not enough and an acid-fast stain is needed."
+prerequisites: [caseous-necrosis]
+relations:
+  - type: sharesMechanism
+    target: granulomatous-inflammation
+    note:
+      it: "La tubercolosi è l'infezione granulomatosa classica."
+      en: "Tuberculosis is the classic granulomatous infection."
+  - type: differentialOf
+    target: leprosy
+    note:
+      it: "I granulomi della lebbra tubercoloide somigliano a quelli tubercolari ma non hanno necrosi."
+      en: "Tuberculoid leprosy granulomas resemble tuberculous ones but lack necrosis."
+  - type: causes
+    target: amyloidosis
+    note:
+      it: "La tubercolosi cavitaria cronica era una causa frequente di amiloidosi secondaria."
+      en: "Chronic cavitary tuberculosis was a frequent cause of secondary amyloidosis."
+  - type: sameLesionOtherOrgan
+    target: tuberculous-osteomyelitis
+    note:
+      it: "Il bacillo può localizzarsi in vertebre e ossa lunghe."
+      en: "The bacillus can seed vertebrae and long bones."
+  - type: sameLesionOtherOrgan
+    target: tuberculous-and-fungal-cns-infections
+    note:
+      it: "La malattia progressiva può raggiungere le meningi."
+      en: "Progressive disease may reach the meninges."
+quickCheck:
+  - id: tuberculosis-q1
+    q:
+      it: "Perché i bacilli tubercolari sopravvivono dentro i macrofagi alveolari?"
+      en: "Why do tubercle bacilli survive inside alveolar macrophages?"
+    a:
+      it: "I lipidi della parete bloccano la fusione tra fagosoma e lisosoma, quindi il bacillo non viene ucciso e si moltiplica."
+      en: "Wall lipids block phagosome-lysosome fusion, so the bacillus is not killed and multiplies."
+    kind: short
+  - id: tuberculosis-q2
+    q:
+      it: "Che cos'è il complesso di Ghon?"
+      en: "What is the Ghon complex?"
+    a:
+      it: "La lesione sottopleurica primaria (focolaio di Ghon) più i linfonodi ilari o mediastinici coinvolti."
+      en: "The primary subpleural lesion (Ghon focus) plus the involved hilar or mediastinal lymph nodes."
+    kind: short
+  - id: tuberculosis-q3
+    q:
+      it: "Dove inizia di solito la tubercolosi secondaria e quale lesione produce?"
+      en: "Where does secondary tuberculosis usually begin, and what lesion does it produce?"
+    a:
+      it: "Negli apici dei lobi superiori; la necrosi caseosa si svuota in un bronco e lascia una cavità."
+      en: "In the apices of the upper lobes; caseous necrosis drains into a bronchus and leaves a cavity."
+    kind: short
+  - id: tuberculosis-q4
+    q:
+      it: "Perché il Gram non mostra il bacillo tubercolare?"
+      en: "Why does the Gram stain not show the tubercle bacillus?"
+    a:
+      it: "La parete ricca di lipidi interferisce con i coloranti, quindi si usa una colorazione per bacilli acido-resistenti."
+      en: "The lipid-rich wall interferes with the dyes, so an acid-fast method is used."
+    kind: short
+  - id: tuberculosis-q5
+    q:
+      it: "La necrosi caseosa dimostra la tubercolosi?"
+      en: "Does caseous necrosis prove tuberculosis?"
+    a:
+      it: "No: orienta verso la tubercolosi, ma altri agenti possono causarla."
+      en: "No: it points toward tuberculosis, but other agents can cause it."
+    kind: short
+selfExplain:
+  - it: "Perché la tubercolosi causa necrosi caseosa quando i bacilli sono numerosi?"
+    en: "Why does tuberculosis cause caseous necrosis when the bacilli are numerous?"
+  - it: "Perché nella tubercolosi secondaria si formano cavità?"
+    en: "Why do cavities form in secondary tuberculosis?"
+chain:
+  - pathology:
+      it: "Cavità tubercolare con erosione dei vasi"
+      en: "Tuberculous cavity eroding vessels"
+    sign:
+      it: "Emottisi"
+      en: "Hemoptysis"
+    lab:
+      it: "Bacilli acido-resistenti nel materiale caseoso"
+      en: "Acid-fast bacilli in the caseous material"
+examQuestions:
+  - it: "Mi parli della tubercolosi: differenza tra infezione e malattia attiva, e tra forma primaria, progressiva primaria, secondaria e miliare."
+    en: "Tell me about tuberculosis: how infection differs from active disease, and how primary, progressive primary, secondary and miliary forms differ."
+    focus: [definition, gross, clinical]
+    level: 1
+  - it: "Che cosa vede al microscopio in un granuloma tubercolare e come si forma la necrosi caseosa?"
+    en: "What do you see under the microscope in a tuberculous granuloma, and how does caseous necrosis arise?"
+    focus: [pathogenesis, micro]
+    level: 2
+  - it: "Perché il bacillo tubercolare sopravvive nei macrofagi e che cosa lo contiene?"
+    en: "Why does the tubercle bacillus survive in macrophages, and what contains it?"
+    focus: [pathogenesis]
+    level: 2
+  - it: "Quali colorazioni userebbe per mettere in evidenza il bacillo e perché il Gram non basta?"
+    en: "Which stains would you use to show the bacillus, and why is the Gram stain not enough?"
+    focus: [etiology, ancillary]
+    level: 2
+  - it: "Come distingue la tubercolosi dalla lebbra tubercoloide e da altre cause di necrosi caseosa?"
+    en: "How do you tell tuberculosis from tuberculoid leprosy and from other causes of caseous necrosis?"
+    focus: [differential, traps]
+    level: 3
+  - it: "Quali sono gli esiti e le complicanze della tubercolosi secondaria?"
+    en: "What are the outcomes and complications of secondary tuberculosis?"
+    focus: [prognosis, clinical]
+    level: 3
+images:
+  - id: tuberculosis-gross-1
+    role: gross
+    pairWith: tuberculosis-micro-1
+  - id: tuberculosis-micro-1
+    role: micro
+  - id: tuberculosis-micro-2
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "9"
+    pages: "449-452, 454"
+  - source: rubin-8e
+    chapter: "18"
+    pages: "707-709"
+lastUpdated: 2026-11-14
+status: published

@@ -1,0 +1,113 @@
+id: acute-bronchitis-and-bronchiolitis
+module: o18
+tier: core
+kind: disease
+names:
+  it: "Bronchiti e bronchioliti acute"
+  en: "Acute bronchitis and bronchiolitis"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: []
+summary:
+  it: "Infiammazione acuta dei bronchi e dei bronchioli da infezioni (adenovirus, virus respiratorio sinciziale, morbillo, pertosse) o da gas irritanti, che può guarire oppure esitare in fibrosi e bronchiolite costrittiva."
+  en: "Acute inflammation of the bronchi and bronchioles caused by infection (adenovirus, respiratory syncytial virus, measles, pertussis) or irritant gases, which may heal or end in fibrosis and constrictive bronchiolitis."
+lenses:
+  system: [respiratory]
+  process: [acute-inflammation, repair-fibrosis]
+  pattern: []
+  presentation: [dyspnea]
+  marker: [special-stains]
+  group: [infectious, toxic-environmental, inflammatory]
+learningObjectives:
+  - it: "Elencare gli agenti infettivi e gli irritanti inalati che causano bronchite e bronchiolite acute."
+    en: "List the infectious agents and inhaled irritants that cause acute bronchitis and bronchiolitis."
+  - it: "Descrivere il quadro morfologico delle bronchioliti da adenovirus e da virus respiratorio sinciziale."
+    en: "Describe the morphology of adenovirus and respiratory syncytial virus bronchiolitis."
+  - it: "Spiegare come una bronchiolite acuta può esitare in cicatrice, obliterazione bronchiolare e bronchiectasie."
+    en: "Explain how acute bronchiolitis can end in scarring, bronchiolar obliteration and bronchiectasis."
+  - it: "Riconoscere la bronchiolite costrittiva e distinguerla dalla granulomatosi broncocentrica."
+    en: "Recognize constrictive bronchiolitis and distinguish it from bronchocentric granulomatosis."
+prerequisites: [acute-inflammation]
+relations:
+  - type: causes
+    target: bronchiectasis
+    note:
+      it: "Morbillo, pertosse e gas irritanti possono lasciare come esito bronchiectasie."
+      en: "Measles, pertussis and irritant gases can leave bronchiectasis as a sequela."
+  - type: differentialOf
+    target: chronic-bronchitis
+    note:
+      it: "Le infezioni acute delle vie aeree possono causare riacutizzazioni della bronchite cronica."
+      en: "Acute airway infections can flare chronic bronchitis."
+  - type: differentialOf
+    target: bacterial-pneumonia
+    note:
+      it: "Infezione delle vie aeree contro infezione del parenchima polmonare."
+      en: "Airway infection versus infection of the lung parenchyma."
+quickCheck:
+  - id: acute-bronchitis-and-bronchiolitis-q1
+    q:
+      it: "Quali tre virus sono gli esempi classici di agenti di bronchiolite?"
+      en: "Which three viruses are the classic examples of bronchiolitis agents?"
+    a:
+      it: "Adenovirus, virus respiratorio sinciziale e morbillo."
+      en: "Adenovirus, respiratory syncytial virus and measles."
+    kind: short
+  - id: acute-bronchitis-and-bronchiolitis-q2
+    q:
+      it: "Perché la bronchiolite da adenovirus può lasciare un esito grave?"
+      en: "Why can adenovirus bronchiolitis leave a serious sequela?"
+    a:
+      it: "Guarisce per fibrosi: i bronchioli possono restare occlusi o obliterati da tessuto fibroso lasso (bronchiolite costrittiva)."
+      en: "It heals by fibrosis, so bronchioles may stay occluded or obliterated by loose fibrous tissue (constrictive bronchiolitis)."
+    kind: short
+  - id: acute-bronchitis-and-bronchiolitis-q3
+    q:
+      it: "Una radiografia o una TC normali escludono una bronchiolite costrittiva?"
+      en: "Does a normal chest radiograph or CT exclude constrictive bronchiolitis?"
+    a:
+      it: "No: possono essere normali, oppure mostrare iperinsufflazione per intrappolamento di aria a valle dei bronchioli obliterati."
+      en: "No: they may be normal, or show overinflation from air trapping beyond the obliterated bronchioles."
+    kind: short
+selfExplain:
+  - it: "Perché chi entra in un silo di cereali in fermentazione inala NO2 in alte concentrazioni?"
+    en: "Why does a worker entering a silo of rotting grain breathe NO2 at high concentration?"
+  - it: "Perché una bronchiolite virale può causare iperinsufflazione senza un'ostruzione evidente?"
+    en: "Why can viral bronchiolitis cause overdistention without obvious obstruction?"
+chain: []
+examQuestions:
+  - it: "Mi parli delle cause infettive e degli irritanti inalati di bronchite e bronchiolite acute."
+    en: "Tell me about the infectious and irritant causes of acute bronchitis and bronchiolitis."
+    focus: [etiology]
+    level: 1
+  - it: "Che cosa vede al microscopio in una bronchiolite da adenovirus e in una da virus respiratorio sinciziale?"
+    en: "What do you see under the microscope in adenovirus and respiratory syncytial virus bronchiolitis?"
+    focus: [micro]
+    level: 1
+  - it: "Mi parli della bronchiolite costrittiva: come nasce e che cosa si vede all'istologia?"
+    en: "Tell me about constrictive bronchiolitis: how does it arise and what does the histology show?"
+    focus: [pathogenesis, micro, ancillary]
+    level: 2
+  - it: "Perché la bronchiolite da adenovirus può lasciare un esito più grave di quella da virus respiratorio sinciziale?"
+    en: "Why can adenovirus bronchiolitis leave a worse outcome than respiratory syncytial virus bronchiolitis?"
+    focus: [pathogenesis, prognosis]
+    level: 2
+  - it: "Come distingue una bronchiolite costrittiva dalla granulomatosi broncocentrica?"
+    en: "How do you tell constrictive bronchiolitis from bronchocentric granulomatosis?"
+    focus: [differential, micro]
+    level: 3
+  - it: "Un paziente dopo esposizione a NO2 in un silo sviluppa tosse e dispnea dopo molte ore: che cosa può accadere nel tempo?"
+    en: "A patient develops cough and dyspnea many hours after NO2 exposure in a silo: what can happen over time?"
+    focus: [etiology, clinical, prognosis]
+    level: 3
+images: []
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "18"
+    pages: "699-701"
+lastUpdated: 2026-11-14
+status: published
