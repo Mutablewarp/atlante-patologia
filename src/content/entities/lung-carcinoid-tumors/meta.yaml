@@ -1,0 +1,125 @@
+id: lung-carcinoid-tumors
+module: o18
+tier: core
+kind: disease
+editionDependent: true
+editionNote:
+  it: "La classificazione dei tumori neuroendocrini del polmone è cambiata tra le edizioni: i valori soglia di mitosi e necrosi vanno confrontati con la classificazione OMS in vigore."
+  en: "The classification of lung neuroendocrine tumors has changed between editions: check the mitosis and necrosis cut-offs against the current WHO classification."
+names:
+  it: "Tumori carcinoidi polmonari"
+  en: "Pulmonary carcinoid tumors"
+  eponyms: []
+  synonyms:
+    it: ["Carcinoide bronchiale"]
+    en: ["Bronchial carcinoid"]
+  abbreviations: []
+summary:
+  it: "Tumori neuroendocrini del polmone, tipici o atipici, che nascono dalle cellule neuroendocrine dell'epitelio bronchiale; l'atipia si riconosce da mitosi e necrosi."
+  en: "Neuroendocrine tumors of the lung, typical or atypical, arising from bronchial neuroendocrine cells; atypia is recognized by mitoses and necrosis."
+lenses:
+  system: [respiratory, endocrine]
+  process: [neoplasia]
+  pattern: []
+  presentation: [mass-lesion, incidental-finding, dyspnea]
+  marker: []
+  group: [neoplastic]
+learningObjectives:
+  - it: "Distinguere il carcinoide tipico da quello atipico in base a mitosi e necrosi."
+    en: "Distinguish typical from atypical carcinoid by mitoses and necrosis."
+  - it: "Descrivere l'aspetto macroscopico del carcinoide centrale e le sue conseguenze sul bronco."
+    en: "Describe the gross appearance of a central carcinoid and its effect on the bronchus."
+  - it: "Riconoscere la presentazione clinica, compresa la sindrome da carcinoide."
+    en: "Recognize the clinical presentation, including carcinoid syndrome."
+  - it: "Confrontare prognosi e metastasi linfonodali dei due sottotipi."
+    en: "Compare prognosis and nodal metastasis of the two subtypes."
+prerequisites: [neoplasia-nomenclature]
+relations:
+  - type: differentialOf
+    target: small-cell-lung-carcinoma
+  - type: sameLesionOtherOrgan
+    target: gastrointestinal-neuroendocrine-tumors
+  - type: causes
+    target: cushing-syndrome
+quickCheck:
+  - id: lung-carcinoid-tumors-q1
+    q:
+      it: "Quali due criteri rendono atipico un carcinoide polmonare?"
+      en: "Which two criteria make a lung carcinoid atypical?"
+    a:
+      it: "Da 2 a 10 mitosi per 2 mm² oppure la presenza di necrosi."
+      en: "2 to 10 mitoses per 2 mm² or the presence of necrosis."
+    kind: short
+  - id: lung-carcinoid-tumors-q2
+    q:
+      it: "Perché un carcinoide centrale può causare polmonite?"
+      en: "Why can a central carcinoid cause pneumonia?"
+    a:
+      it: "Cresce nel lume del bronco e lo ostruisce: il polmone a valle si infiamma (polmonite post-ostruttiva)."
+      en: "It grows into the bronchial lumen and obstructs it, so the lung beyond becomes inflamed (postobstructive pneumonia)."
+    kind: short
+  - id: lung-carcinoid-tumors-q3
+    q:
+      it: "Il carcinoide polmonare è legato al fumo di sigaretta?"
+      en: "Is lung carcinoid related to cigarette smoking?"
+    a:
+      it: "No, non è correlato al fumo di sigaretta."
+      en: "No, it is not related to cigarette smoking."
+    kind: short
+  - id: lung-carcinoid-tumors-q4
+    q:
+      it: "Quale carcinoide ha la prognosi migliore dopo chirurgia, e con quali numeri?"
+      en: "Which carcinoid has the better prognosis after surgery, and with what numbers?"
+    a:
+      it: "Il tipico: sopravvivenza a cinque anni del 90%, contro il 60% dell'atipico."
+      en: "The typical one: 90% five-year survival, against 60% for atypical."
+    kind: short
+  - id: lung-carcinoid-tumors-q5
+    q:
+      it: "La sindrome da carcinoide è frequente nei carcinoidi polmonari?"
+      en: "Is carcinoid syndrome common in lung carcinoids?"
+    a:
+      it: "No: la maggior parte dei carcinoidi è endocrinologicamente silente e la sindrome compare nell'1% dei casi, di solito con metastasi epatiche."
+      en: "No: most carcinoids are endocrinologically silent and the syndrome occurs in 1% of cases, usually with liver metastases."
+    kind: short
+selfExplain:
+  - it: "Perché il carcinoide atipico ha una prognosi peggiore di quello tipico?"
+    en: "Why does atypical carcinoid have a worse prognosis than typical carcinoid?"
+  - it: "Perché un carcinoide centrale può causare sintomi respiratori anche se cresce lentamente?"
+    en: "Why can a central carcinoid cause respiratory symptoms even though it grows slowly?"
+examQuestions:
+  - it: "Mi parli dei carcinoidi polmonari: come distingue il tipico dall'atipico?"
+    en: "Tell me about lung carcinoids: how do you tell typical from atypical?"
+    focus: [micro, diagnosis]
+    level: 1
+  - it: "Perché un carcinoide centrale può dare dispnea, emottisi o polmonite?"
+    en: "Why can a central carcinoid cause dyspnea, hemoptysis or pneumonia?"
+    focus: [gross, clinical]
+    level: 2
+  - it: "Che cosa vede al microscopio in un carcinoide polmonare?"
+    en: "What do you see under the microscope in a lung carcinoid?"
+    focus: [micro]
+    level: 1
+  - it: "Come si presenta clinicamente un carcinoide polmonare e quando compare una sindrome endocrina?"
+    en: "How does a lung carcinoid present clinically, and when does an endocrine syndrome appear?"
+    focus: [clinical, pathogenesis]
+    level: 3
+  - it: "Come cambiano metastasi linfonodali e sopravvivenza tra carcinoide tipico e atipico?"
+    en: "How do nodal metastasis and survival differ between typical and atypical carcinoid?"
+    focus: [prognosis]
+    level: 3
+images:
+  - id: lung-carcinoid-tumors-gross-1
+    role: gross
+    pairWith: lung-carcinoid-tumors-micro-1
+  - id: lung-carcinoid-tumors-micro-1
+    role: micro
+  - id: lung-carcinoid-tumors-micro-2
+    role: micro
+reviewStatus: ai-generated-unreviewed
+sources:
+  - source: rubin-8e
+    chapter: "18"
+    pages: "759-761"
+lastUpdated: 2026-11-14
+status: published
