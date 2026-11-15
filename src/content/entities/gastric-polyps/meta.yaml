@@ -1,0 +1,125 @@
+id: gastric-polyps
+module: o19
+tier: extended
+kind: disease
+names:
+  it: "Polipi gastrici"
+  en: "Gastric polyps"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: ["FAP", "PPI"]
+summary:
+  it: "Rilievi della mucosa gastrica, per lo più non neoplastici: polipi delle ghiandole fundiche, polipi iperplastici e adenomi, più i polipi delle sindromi poliposiche."
+  en: "Raised areas of gastric mucosa, mostly non-neoplastic: fundic gland polyps, hyperplastic polyps and adenomas, plus the polyps of polyposis syndromes."
+lenses:
+  system: [gastrointestinal]
+  process: [neoplasia, chronic-inflammation]
+  pattern: [hyperplasia, dysplasia]
+  presentation: [incidental-finding]
+  marker: []
+  group: [neoplastic, inflammatory, genetic]
+learningObjectives:
+  - it: "Distinguere i polipi delle ghiandole fundiche, i polipi iperplastici e gli adenomi gastrici per contesto e morfologia."
+    en: "Tell fundic gland polyps, hyperplastic polyps and gastric adenomas apart by setting and morphology."
+  - it: "Spiegare perché la maggior parte dei polipi gastrici non è neoplastica, a differenza di quelli del colon."
+    en: "Explain why most gastric polyps are not neoplastic, unlike colonic ones."
+  - it: "Elencare le sindromi poliposiche che coinvolgono lo stomaco."
+    en: "List the polyposis syndromes that involve the stomach."
+  - it: "Riconoscere la malattia di Ménétrier come ispessimento delle pliche da iperplasia foveolare, non come polipo."
+    en: "Recognize Ménétrier disease as fold thickening from foveolar hyperplasia, not a polyp."
+prerequisites: [hyperplasia, dysplasia]
+relations:
+  - type: sameLesionOtherOrgan
+    target: colorectal-adenoma
+    note:
+      it: "L'adenoma gastrico è meno strettamente legato al carcinoma di quello colorettale."
+      en: "A gastric adenoma is less tightly linked to carcinoma than a colorectal one."
+  - type: sharesMechanism
+    target: familial-adenomatous-polyposis
+    note:
+      it: "Nella FAP compaiono molti polipi fundici e gli adenomi gastrici sono multipli."
+      en: "FAP brings many fundic gland polyps and multiple gastric adenomas."
+  - type: complicationOf
+    target: helicobacter-pylori-gastritis
+    note:
+      it: "I polipi iperplastici si sviluppano nella gastrite cronica."
+      en: "Hyperplastic polyps develop in chronic gastritis."
+  - type: differentialOf
+    target: gastric-adenocarcinoma
+    note:
+      it: "L'adenoma gastrico può associarsi al carcinoma, ma meno che nel colon."
+      en: "Gastric adenoma may be linked to carcinoma, but less than in the colon."
+quickCheck:
+  - id: gastric-polyps-q1
+    q:
+      it: "In che cosa i polipi gastrici si distinguono da quelli del colon quanto alla natura neoplastica?"
+      en: "How do gastric polyps differ from colonic polyps in terms of being neoplastic?"
+    a:
+      it: "La maggior parte dei polipi gastrici non è una vera neoplasia, a differenza di quanto accade nel colon."
+      en: "Most gastric polyps are not true neoplasms, unlike in the colon."
+    kind: short
+  - id: gastric-polyps-q2
+    q:
+      it: "Quale tipo di polipo gastrico è oggi il più comune e in quale contesto?"
+      en: "Which gastric polyp is now the most common, and in what setting?"
+    a:
+      it: "Il polipo delle ghiandole fundiche, in chi assume inibitori di pompa protonica."
+      en: "The fundic gland polyp, in people taking proton pump inhibitors."
+    kind: short
+  - id: gastric-polyps-q3
+    q:
+      it: "In che cosa differiscono la malattia di Ménétrier e la sindrome di Zollinger-Ellison, pur ispessendo entrambe le pliche?"
+      en: "How do Ménétrier disease and Zollinger–Ellison syndrome differ, though both thicken the folds?"
+    a:
+      it: "Nella Ménétrier prolifera l'epitelio foveolare; nella Zollinger-Ellison le cellule parietali, per un gastrinoma."
+      en: "In Ménétrier the foveolar epithelium proliferates; in Zollinger–Ellison the parietal cells do, because of a gastrinoma."
+    kind: short
+  - id: gastric-polyps-q4
+    q:
+      it: "Quali sindromi, oltre alla FAP, danno polipi gastrici multipli?"
+      en: "Besides FAP, which syndromes give multiple gastric polyps?"
+    a:
+      it: "Cowden, Cronkhite-Canada, Peutz-Jeghers e poliposi giovanile familiare."
+      en: "Cowden, Cronkhite-Canada, Peutz-Jeghers and familial juvenile polyposis."
+    kind: short
+  - id: gastric-polyps-q5
+    q:
+      it: "Che cosa mostra al microscopio un adenoma gastrico, in ogni sua forma?"
+      en: "What does a gastric adenoma show under the microscope, whatever its type?"
+    a:
+      it: "È displastico per definizione, sia di tipo foveolare sia intestinale."
+      en: "It is dysplastic by definition, whether foveolar or intestinal in type."
+    kind: short
+selfExplain:
+  - it: "Perché un polipo iperplastico gastrico non è paragonabile a un polipo iperplastico del colon?"
+    en: "Why is a gastric hyperplastic polyp not comparable to a colonic hyperplastic polyp?"
+  - it: "Perché la malattia di Ménétrier porta a ipoalbuminemia?"
+    en: "Why does Ménétrier disease lead to hypoalbuminemia?"
+  - it: "Perché nella sindrome di Zollinger-Ellison le pliche gastriche sono spesse e bernoccolute?"
+    en: "Why are the gastric folds thick and bumpy in Zollinger–Ellison syndrome?"
+examQuestions:
+  - it: "Mi parli dei polipi gastrici: quali tipi conosce e quale è oggi il più comune?"
+    en: "Tell me about gastric polyps: which types do you know, and which is the most common today?"
+    focus: [definition, differential]
+    level: 1
+  - it: "Quali sindromi poliposiche coinvolgono lo stomaco e come si riconosce un polipo sindromico?"
+    en: "Which polyposis syndromes involve the stomach, and how is a syndromic polyp recognized?"
+    focus: [clinical, diagnosis]
+    level: 2
+  - it: "Come distingue la malattia di Ménétrier dalla sindrome di Zollinger-Ellison?"
+    en: "How do you tell Ménétrier disease from Zollinger–Ellison syndrome?"
+    focus: [pathogenesis, differential, traps]
+    level: 3
+images:
+  - id: gastric-polyps-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "19"
+    pages: "786-788"
+lastUpdated: 2026-11-15
+status: published
