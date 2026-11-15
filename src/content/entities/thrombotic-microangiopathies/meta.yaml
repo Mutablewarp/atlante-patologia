@@ -1,0 +1,116 @@
+id: thrombotic-microangiopathies
+module: o22
+tier: extended
+kind: disease
+names:
+  it: "Microangiopatie trombotiche (SEU, PTT)"
+  en: "Thrombotic microangiopathies (HUS, TTP)"
+  eponyms: []
+  synonyms:
+    it: ["Sindrome emolitico-uremica", "Porpora trombotica trombocitopenica"]
+    en: ["Hemolytic–uremic syndrome", "Thrombotic thrombocytopenic purpura"]
+  abbreviations: [TMA, HUS, TTP, MAHA]
+summary:
+  it: "Gruppo di sindromi con microtrombi nei piccoli vasi, che causano trombocitopenia e anemia emolitica microangiopatica, con la sindrome emolitico-uremica a prevalente danno renale e la porpora trombotica trombocitopenica da deficit di ADAMTS13."
+  en: "A group of syndromes with microthrombi in small vessels causing thrombocytopenia and microangiopathic hemolytic anemia, namely hemolytic–uremic syndrome with mainly renal injury and thrombotic thrombocytopenic purpura from ADAMTS13 deficiency."
+lenses:
+  system: [kidney, hematolymphoid, vessels]
+  process: [thrombosis-embolism]
+  pattern: [hyaline-change, necrosis-fibrinoid]
+  presentation: [anemia]
+  marker: [laboratory, pas]
+  group: [vascular, immune]
+learningObjectives:
+  - it: "Distinguere SEU tipica, SEU atipica e PTT per causa e quadro clinico."
+    en: "Tell typical HUS, atypical HUS and TTP apart by cause and clinical picture."
+  - it: "Descrivere i trombi glomerulari e gli schistociti dell'anemia emolitica microangiopatica."
+    en: "Describe the glomerular thrombi and the schistocytes of microangiopathic hemolytic anemia."
+  - it: "Spiegare il ruolo di ADAMTS13 e dei multimeri del fattore di von Willebrand nella PTT."
+    en: "Explain the role of ADAMTS13 and von Willebrand factor multimers in TTP."
+  - it: "Distinguere la PTT dalla coagulazione intravascolare disseminata con gli esami della coagulazione."
+    en: "Separate TTP from disseminated intravascular coagulation using clotting tests."
+prerequisites: [thrombosis]
+relations:
+  - type: differentialOf
+    target: disseminated-intravascular-coagulation
+    note:
+      it: "Nella PTT PT, aPTT e fibrinogeno restano normali."
+      en: "In TTP, PT, APTT and fibrinogen stay normal."
+  - type: sharesMechanism
+    target: malignant-hypertension
+    note:
+      it: "Le lesioni renali della SEU somigliano a quelle dell'ipertensione maligna."
+      en: "The renal lesions of HUS resemble those of malignant hypertension."
+quickCheck:
+  - id: thrombotic-microangiopathies-q1
+    q:
+      it: "Quale deficit enzimatico causa la PTT e che cosa accumula?"
+      en: "Which enzyme deficiency causes TTP, and what accumulates?"
+    a:
+      it: "Il deficit di ADAMTS13, genetico o da autoanticorpi, fa accumulare multimeri ultra-grandi del fattore di von Willebrand che legano le piastrine."
+      en: "ADAMTS13 deficiency, genetic or autoantibody-mediated, lets ultra-large von Willebrand factor multimers build up and bind platelets."
+    kind: short
+  - id: thrombotic-microangiopathies-q2
+    q:
+      it: "Quali esami della coagulazione restano normali nella PTT?"
+      en: "Which clotting tests stay normal in TTP?"
+    a:
+      it: "PT, aPTT e fibrinogeno restano normali."
+      en: "PT, APTT and fibrinogen stay normal."
+    kind: short
+  - id: thrombotic-microangiopathies-q3
+    q:
+      it: "Quale quadro precede la SEU tipica e quale la SEU atipica?"
+      en: "What precedes typical HUS, and what precedes atypical HUS?"
+    a:
+      it: "La SEU tipica segue una diarrea da batteri produttori di tossina, di solito E. coli O157:H7; quella atipica non è preceduta da diarrea ed è legata a difetti del complemento."
+      en: "Typical HUS follows diarrhea from toxin-producing bacteria, usually E. coli O157:H7; atypical HUS has no diarrhea and is linked to complement defects."
+    kind: short
+selfExplain:
+  - it: "Perché nella MAHA compaiono schistociti e il test di Coombs è negativo?"
+    en: "Why does MAHA show schistocytes with a negative Coombs test?"
+  - it: "Perché nella PTT le piastrine si aggregano nei piccoli vasi?"
+    en: "Why do platelets clump in small vessels in TTP?"
+  - it: "Perché nella PTT PT, aPTT e fibrinogeno restano normali?"
+    en: "Why do PT, APTT and fibrinogen stay normal in TTP?"
+chain:
+  - pathology:
+      it: "Microtrombi ricchi di piastrine da deficit di ADAMTS13"
+      en: "Platelet-rich microthrombi from ADAMTS13 deficiency"
+    sign:
+      it: "Sintomi neurologici, febbre, porpora"
+      en: "Neurologic signs, fever, purpura"
+    lab:
+      it: "Trombocitopenia, schistociti, LDH aumentata, PT e aPTT normali"
+      en: "Thrombocytopenia, schistocytes, raised LDH, normal PT and APTT"
+examQuestions:
+  - it: "Mi parli della sindrome emolitico-uremica tipica e di quella atipica."
+    en: "Tell me about typical and atypical hemolytic–uremic syndrome."
+    focus: [definition, differential]
+    level: 1
+  - it: "Perché il deficit di ADAMTS13 porta alla formazione di trombi nella PTT?"
+    en: "Why does ADAMTS13 deficiency lead to thrombi in TTP?"
+    focus: [definition, micro]
+    level: 2
+  - it: "Che cosa vede al microscopio in una microangiopatia trombotica, nei vasi e nello striscio di sangue?"
+    en: "What do you see under the microscope in a thrombotic microangiopathy, in the vessels and on the blood smear?"
+    focus: [micro]
+    level: 1
+  - it: "Come distingue una PTT da una coagulazione intravascolare disseminata?"
+    en: "How do you tell TTP from disseminated intravascular coagulation?"
+    focus: [diagnosis, differential]
+    level: 3
+images:
+  - { id: thrombotic-microangiopathies-micro-1, role: micro }
+  - { id: thrombotic-microangiopathies-micro-2, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "22"
+    pages: "952-953"
+  - source: rubin-8e
+    chapter: "26"
+    pages: "1139-1140"
+lastUpdated: 2026-11-15
+status: published

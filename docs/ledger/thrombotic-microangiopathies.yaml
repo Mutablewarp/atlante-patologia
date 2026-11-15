@@ -1,0 +1,266 @@
+entity: thrombotic-microangiopathies
+claims:
+  - claimId: thrombotic-microangiopathies-c001
+    section: definition
+    statement: "Thrombocytopenia and microangiopathic hemolytic anemia are the two results of microthrombi blocking small vessels and capillaries."
+    sourceRef: { source: rubin-8e, chapter: "26", pages: "1139" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: thrombotic-microangiopathies-c002
+    section: definition
+    statement: "HUS and TTP are the two main thrombotic microangiopathies."
+    sourceRef: { source: rubin-8e, chapter: "26", pages: "1139" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: thrombotic-microangiopathies-c003
+    section: definition
+    statement: "Typical HUS usually starts with diarrhea caused by E. coli O157:H7, a bacterium that makes a toxin."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "952" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: thrombotic-microangiopathies-c004
+    section: definition
+    statement: "Failure of complement regulators, chiefly factor H, or antibodies against them underlies atypical HUS, which is not tied to diarrhea."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "952" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: thrombotic-microangiopathies-c005
+    section: definition
+    statement: "TTP develops when the protease ADAMTS13 is lacking, either through a gene defect or through acquired autoantibody inactivation."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "952" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: thrombotic-microangiopathies-c006
+    section: definition
+    statement: "Platelets attach to the ultra-large von Willebrand factor multimers that build up when ADAMTS13 is lacking, and clump into thrombi in small vessels."
+    sourceRef: { source: rubin-8e, chapter: "26", pages: "1139" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: thrombotic-microangiopathies-c007
+    section: micro
+    statement: "HUS damages the kidney in a pattern closely similar to malignant hypertensive nephropathy."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "953" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: thrombotic-microangiopathies-c008
+    section: micro
+    statement: "In HUS, vessels are blocked by fibrin-rich thrombi and the walls of arterioles show fibrinoid necrosis."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "953" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: thrombotic-microangiopathies-c009
+    section: micro
+    statement: "On electron microscopy, plasma proteins pushed under damaged glomerular endothelium form a clear layer that crowds the capillary lumen."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "953" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: thrombotic-microangiopathies-c010
+    section: micro
+    statement: "In TTP, brain, heart and kidneys carry the heaviest load of PAS-positive hyaline microthrombi, though small vessels throughout the body are affected."
+    sourceRef: { source: rubin-8e, chapter: "26", pages: "1139" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: thrombotic-microangiopathies-c011
+    section: micro
+    statement: "TTP lesions are not inflamed, which distinguishes them from immune-mediated vasculitis."
+    sourceRef: { source: rubin-8e, chapter: "26", pages: "1139" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: thrombotic-microangiopathies-c012
+    section: micro
+    statement: "Platelet-rich thrombi are more numerous in TTP than in HUS and occur in many organs, although the vessel lesions of both look similar."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "953" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: thrombotic-microangiopathies-c013
+    section: micro
+    statement: "In TTP, red cells are cut into fragments (schistocytes) as they squeeze past thrombi, and the peripheral blood smear shows them."
+    sourceRef: { source: rubin-8e, chapter: "26", pages: "1139" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: thrombotic-microangiopathies-c014
+    section: diagnosis
+    statement: "The hemolytic anemia of HUS and TTP is nonimmune (Coombs-negative)."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "952" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: thrombotic-microangiopathies-c015
+    section: diagnosis
+    statement: "In TTP, breakdown of red cells pushes up serum unconjugated bilirubin and LDH."
+    sourceRef: { source: rubin-8e, chapter: "26", pages: "1139" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: thrombotic-microangiopathies-c016
+    section: diagnosis
+    statement: "TTP does not set off coagulation, so PT, APTT and fibrinogen stay normal."
+    sourceRef: { source: rubin-8e, chapter: "26", pages: "1140" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: thrombotic-microangiopathies-c017
+    section: diagnosis
+    statement: "In typical HUS, bloody diarrhea is followed by kidney failure that progresses fast."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "953" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: thrombotic-microangiopathies-c018
+    section: diagnosis
+    statement: "To identify what caused the microangiopathic hemolytic anemia, look in the history for a concurrent illness or drug exposure."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "953" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: thrombotic-microangiopathies-c019
+    section: differential
+    statement: "Typical HUS often causes sudden kidney failure in children and is less usual in adults; after bloody diarrhea, kidney failure is the main clinical feature."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "953, 1140" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: thrombotic-microangiopathies-c020
+    section: differential
+    statement: "Compared with typical HUS, atypical HUS has a worse prognosis; it involves complement defects, has no preceding diarrhea, and is seen more often in adults."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "952-953" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: thrombotic-microangiopathies-c021
+    section: differential
+    statement: "TTP spreads platelet-rich thrombi across many organs; the kidney is often absent from the picture or less affected, while neurologic change and fever are prominent."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "953" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: thrombotic-microangiopathies-c022
+    section: differential
+    statement: "Normal PT, APTT and fibrinogen distinguish TTP from DIC."
+    sourceRef: { source: rubin-8e, chapter: "26", pages: "1140" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: thrombotic-microangiopathies-c023
+    section: differential
+    statement: "Malignant hypertension, drug toxicity and autoimmune disease are other causes of a thrombotic microangiopathy resembling HUS or TTP."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "952" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: thrombotic-microangiopathies-c024
+    section: high-yield
+    statement: "Both HUS and TTP present with microangiopathic hemolytic anemia and thrombocytopenia."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "952" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: thrombotic-microangiopathies-c025
+    section: high-yield
+    statement: "Typical HUS is the kidney-centered thrombotic microangiopathy that comes after bloody diarrhea from a toxin-producing E. coli infection."
+    sourceRef: { source: rubin-8e, chapter: "26", pages: "1140" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: thrombotic-microangiopathies-c026
+    section: high-yield
+    statement: "Atypical HUS arises from complement regulator abnormalities (mostly factor H) and has a worse prognosis than typical HUS."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "952-953" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: thrombotic-microangiopathies-c027
+    section: high-yield
+    statement: "TTP is due to ADAMTS13 deficiency and shows platelet-rich thrombi."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "952-953" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: thrombotic-microangiopathies-c028
+    section: high-yield
+    statement: "Schistocytes with normal PT, APTT and fibrinogen are the pattern of TTP, which separates it from DIC."
+    sourceRef: { source: rubin-8e, chapter: "26", pages: "1139-1140" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: thrombotic-microangiopathies-c029
+    section: high-yield
+    statement: "Plasma exchange removes the autoantibody that blocks ADAMTS13 in acquired TTP, and plasma infusion supplies the enzyme that inherited cases lack."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "953, 1139" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: thrombotic-microangiopathies-c030
+    section: traps
+    statement: "Other organs, the CNS for example, can be hit harder than the kidney in TTP, and the kidney is often not involved at all."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "953" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: thrombotic-microangiopathies-c031
+    section: traps
+    statement: "In TTP the clotting screen (PT, APTT, fibrinogen) stays normal because coagulation is not triggered, which separates it from DIC."
+    sourceRef: { source: rubin-8e, chapter: "26", pages: "1140" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: thrombotic-microangiopathies-c032
+    section: traps
+    statement: "The hemolysis of HUS and TTP is not autoimmune: the Coombs test is negative."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "952" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: thrombotic-microangiopathies-c033
+    section: traps
+    statement: "Atypical HUS has no preceding diarrhea and frequently relapses, often several times."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "953" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
