@@ -1,0 +1,143 @@
+id: pyelonephritis
+module: o22
+tier: core
+kind: disease
+names:
+  it: "Pielonefriti acute e croniche"
+  en: "Acute and chronic pyelonephritis"
+  eponyms: []
+  synonyms:
+    it: ["Pielonefrite", "Infezione renale ascendente"]
+    en: ["Renal parenchymal infection", "Ascending kidney infection"]
+  abbreviations: []
+summary:
+  it: "Infezione batterica del rene, di solito ascendente dalla vescica per reflusso o ostruzione, che si manifesta come infiammazione acuta neutrofilica con ascessi o come forma cronica con cicatrici corticali grossolane e dilatazione dei calici."
+  en: "Bacterial infection of the kidney, usually ascending from the bladder through reflux or obstruction, appearing as acute neutrophilic inflammation with abscesses or as a chronic form with coarse cortical scars and dilated calyces."
+lenses:
+  system: [kidney]
+  process: [acute-inflammation, chronic-inflammation, repair-fibrosis]
+  pattern: []
+  presentation: [fever]
+  marker: [laboratory]
+  group: [infectious, inflammatory]
+learningObjectives:
+  - it: "Descrivere il percorso dell'infezione ascendente dalla vescica al parenchima renale e il ruolo di reflusso e ostruzione."
+    en: "Describe the route of ascending infection from the bladder to the renal parenchyma and the role of reflux and obstruction."
+  - it: "Riconoscere il quadro morfologico della forma acuta: infiltrato neutrofilo, ascessi e necrosi papillare."
+    en: "Recognize the morphology of the acute form: neutrophilic infiltrate, abscesses and papillary necrosis."
+  - it: "Descrivere le cicatrici corticali grossolane della forma cronica e la tiroidizzazione dei tubuli."
+    en: "Describe the coarse cortical scars of the chronic form and the thyroidization of tubules."
+  - it: "Distinguere la pielonefrite cronica da uropatia ostruttiva e nefropatia da analgesici."
+    en: "Distinguish chronic pyelonephritis from obstructive uropathy and analgesic nephropathy."
+  - it: "Riconoscere la forma xantogranulomatosa e il rischio di scambiarla per un carcinoma a cellule renali."
+    en: "Recognize the xanthogranulomatous form and the risk of mistaking it for renal cell carcinoma."
+prerequisites: [acute-inflammation, chronic-inflammation]
+relations:
+  - type: complicationOf
+    target: urolithiasis-and-obstructive-uropathy
+    note:
+      it: "L'ostruzione delle vie urinarie favorisce l'infezione ascendente e la pielonefrite cronica."
+      en: "Urinary tract obstruction favors ascending infection and chronic pyelonephritis."
+  - type: complicationOf
+    target: cystitis
+    note:
+      it: "L'infezione vescicale precede di solito la pielonefrite acuta."
+      en: "Bladder infection usually precedes acute pyelonephritis."
+  - type: mimics
+    target: renal-cell-carcinoma
+    note:
+      it: "La forma xantogranulomatosa può presentarsi come massa e simulare un carcinoma a cellule renali."
+      en: "The xanthogranulomatous form can present as a mass and mimic renal cell carcinoma."
+  - type: differentialOf
+    target: acute-tubular-injury
+    note:
+      it: "Cilindri bruni e cellule epiteliali nel sedimento, contro cilindri leucocitari."
+      en: "Dirty brown casts and epithelial cells in the sediment, versus leukocyte casts."
+quickCheck:
+  - id: pyelonephritis-q1
+    q:
+      it: "Perché l'urina refluita non raggiunge sempre il parenchima renale?"
+      en: "Why does refluxed urine not always reach the renal parenchyma?"
+    a:
+      it: "Le papille semplici dei calici centrali sono convesse e bloccano il reflusso; le papille composte periferiche, concave, lo lasciano entrare."
+      en: "Simple papillae of central calyces are convex and block reflux; peripheral compound papillae are concave and let it in."
+    kind: short
+  - id: pyelonephritis-q2
+    q:
+      it: "Che aspetto ha la pielonefrite cronica da reflusso vescico-ureterale?"
+      en: "What does chronic pyelonephritis from vesicoureteral reflux look like?"
+    a:
+      it: "Cicatrici grossolane ai poli del rene, sopra calici dilatati."
+      en: "Coarse scars at the poles of the kidney, over dilated calyces."
+    kind: short
+  - id: pyelonephritis-q3
+    q:
+      it: "Che cos'è la tiroidizzazione?"
+      en: "What is thyroidization?"
+    a:
+      it: "Tubuli atrofici ridotti a segmenti sferici pieni di cilindri ialini eosinofili, simili ai follicoli tiroidei."
+      en: "Atrophic tubules reduced to rounded segments full of eosinophilic hyaline casts, resembling thyroid follicles."
+    kind: short
+  - id: pyelonephritis-q4
+    q:
+      it: "Qual è il reperto istologico che riconosce la pielonefrite acuta?"
+      en: "What histologic finding marks acute pyelonephritis?"
+    a:
+      it: "Tubuli, soprattutto dotti collettori, ostruiti da neutrofili, con altri neutrofili nell'interstizio."
+      en: "Tubules, above all collecting ducts, plugged with neutrophils, with more neutrophils in the interstitium."
+    kind: short
+  - id: pyelonephritis-q5
+    q:
+      it: "Dove si trovano gli ascessi se l'infezione è ematogena e dove se è ascendente?"
+      en: "Where do abscesses lie if the infection is blood-borne, and where if it is ascending?"
+    a:
+      it: "Corticali se ematogena, midollari se ascendente."
+      en: "Cortical if blood-borne, medullary if ascending."
+    kind: short
+selfExplain:
+  - it: "Perché un uretere intramurale corto favorisce il reflusso durante la minzione?"
+    en: "Why does a short intramural ureter favor reflux during voiding?"
+  - it: "Perché la sede degli ascessi, corticale o midollare, indica la via dell'infezione?"
+    en: "Why does the location of the abscesses, cortical or medullary, point to the route of infection?"
+chain:
+  - pathology:
+      it: "Pielonefrite acuta con infiltrato neutrofilo nei dotti collettori"
+      en: "Acute pyelonephritis with neutrophils in the collecting ducts"
+    sign:
+      it: "Febbre, dolore al fianco e dolorabilità all'angolo costovertebrale"
+      en: "Fever, flank pain and costovertebral angle tenderness"
+    lab:
+      it: "Cilindri leucocitari nelle urine e neutrofilia"
+      en: "Leukocyte casts in the urine and neutrophilia"
+examQuestions:
+  - it: "Mi parli della via ascendente dell'infezione nella pielonefrite acuta."
+    en: "Tell me about the ascending route of infection in acute pyelonephritis."
+    focus: [etiology, pathogenesis]
+    level: 1
+  - it: "Perché il reflusso vescico-ureterale e l'ostruzione portano alla pielonefrite cronica?"
+    en: "Why do vesicoureteral reflux and obstruction lead to chronic pyelonephritis?"
+    focus: [etiology, pathogenesis]
+    level: 2
+  - it: "Che cosa vede al microscopio in una pielonefrite acuta e quali complicanze può dare?"
+    en: "What do you see under the microscope in acute pyelonephritis, and what complications can it cause?"
+    focus: [micro, prognosis]
+    level: 1
+  - it: "Che cosa vede in una pielonefrite cronica da reflusso, a occhio nudo e al microscopio, e che cos'è la tiroidizzazione?"
+    en: "What do you see in chronic pyelonephritis from reflux, grossly and under the microscope, and what is thyroidization?"
+    focus: [gross, micro]
+    level: 2
+  - it: "Come distingue una pielonefrite xantogranulomatosa da un carcinoma renale, e il quadro cronico da un'uropatia ostruttiva?"
+    en: "How do you tell xanthogranulomatous pyelonephritis from renal cell carcinoma, and chronic pyelonephritis from obstructive uropathy?"
+    focus: [gross, differential]
+    level: 3
+images:
+  - id: pyelonephritis-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "22"
+    pages: "958-961"
+lastUpdated: 2026-11-15
+status: published

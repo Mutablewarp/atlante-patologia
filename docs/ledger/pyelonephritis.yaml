@@ -1,0 +1,546 @@
+entity: pyelonephritis
+claims:
+- claimId: pyelonephritis-c001
+  section: definition
+  statement: "Pyelonephritis is a bacterial infection of the kidney involving pelvis, calyces and parenchyma"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c002
+  section: definition
+  statement: "Acute pyelonephritis is a neutrophilic inflammation; chronic pyelonephritis leaves atrophy, scarring and calyceal dilation"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "959-960" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c003
+  section: definition
+  statement: "Females get pyelonephritis more often because the bladder infection that usually precedes it is more common in them"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c004
+  section: etiology
+  statement: "E. coli, a gram-negative organism from the bowel, accounts for most acute pyelonephritis"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c005
+  section: etiology
+  statement: "Uropathogenic E. coli bind urothelial and renal epithelial cells through pilus adhesins whose genes are the PAP genes"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c006
+  section: etiology
+  statement: "A short urethra and absent antibacterial prostatic secretions favor bladder infection in females"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c007
+  section: etiology
+  statement: "Sexual intercourse can facilitate migration of bacteria"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c008
+  section: etiology
+  statement: "In pregnancy progesterone makes the bladder muscle flaccid so more urine remains, and asymptomatic bacteriuria is frequent"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c009
+  section: etiology
+  statement: "Residual urine is left by an atonic bladder after nerve damage such as paraplegia or diabetic neuropathy, or by a prostate obstructing outflow"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c010
+  section: etiology
+  statement: "Diabetic glycosuria provides a rich growth medium for bacteria"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c011
+  section: etiology
+  statement: "The kidney can be seeded through the blood by Aspergillus in immunosuppressed hosts, by miliary tuberculosis, and by staphylococci from an infected valve"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c012
+  section: etiology
+  statement: "Obstruction of the urinary tract, reflux, or both sustain recurrent or persistent infection, which causes chronic pyelonephritis"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "959" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c013
+  section: pathogenesis
+  statement: "Infected bladder urine must be forced back up to the pelvis and calyces, and bacteria then enter the parenchyma through the papillae"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c014
+  section: pathogenesis
+  statement: "The obliquely running terminal ureter is squeezed shut when the bladder contracts, so urine does not reflux"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c015
+  section: pathogenesis
+  statement: "Urine is pushed up the ureter at voiding when a congenitally short intramural ureter enters the bladder nearly at a right angle"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c016
+  section: pathogenesis
+  statement: "Concave compound papillae at the periphery admit refluxed urine more easily than the convex simple papillae of the central calyces"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958-959" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c017
+  section: pathogenesis
+  statement: "In obstructive uropathy the prolonged pressure eventually lets retrograde urine enter simple papillae as well"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c018
+  section: pathogenesis
+  statement: "Bacteria in the collecting tubules spread to the renal interstitium and tubules"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c019
+  section: pathogenesis
+  statement: "In reflux or obstruction the medulla and overlying cortex slowly atrophy and scar from repeated inflammation"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "959" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c020
+  section: pathogenesis
+  statement: "Whether sterile reflux alone can cause chronic pyelonephritis is controversial"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "959" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c021
+  section: gross
+  statement: "Kidneys in acute pyelonephritis are swollen"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c022
+  section: gross
+  statement: "The location of abscesses reflects the route: cortical when hematogenous, medullary when infection ascends"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958-959" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c023
+  section: gross
+  statement: "Purulent exudate covers the pelvic and calyceal urothelium, which may be hyperemic"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "959" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c024
+  section: gross
+  statement: "Large parts of the kidney can be normal because the disease is often focal"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "959" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c025
+  section: gross
+  statement: "Necrotic papillae look yellowish and occur where obstruction has dilated the pelvis and calyces"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "960" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c026
+  section: gross
+  statement: "With reflux each polar calyx widens beneath a sharply bounded rough scar that dents the kidney surface"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "960" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c027
+  section: gross
+  statement: "With obstruction the whole collecting system is dilated and the parenchyma is thinned to the same degree throughout"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "960" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c028
+  section: gross
+  statement: "Caliectasis together with scarring of the overlying tissue occurs only in chronic pyelonephritis and analgesic nephropathy"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "960" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c029
+  section: gross
+  statement: "Xanthogranulomatous pyelonephritis shows yellow nodular lesions, is usually unilateral and often presents as a mass"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "961" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c030
+  section: micro
+  statement: "Acute disease shows tubules, above all collecting ducts, plugged with neutrophils, and further neutrophils in the interstitium"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "959" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c031
+  section: micro
+  statement: "Vessels and glomeruli are frequently spared, whereas the cortex in particular shows patchy severe destruction by inflammation"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "959" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c032
+  section: micro
+  statement: "Chronic pyelonephritis histology is nonspecific because many diseases give the same chronic tubulointerstitial nephritis picture"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "960" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c033
+  section: micro
+  statement: "Coarse scars are fibrous, chronically inflamed tissue around atrophic, dilated tubules"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "960-961" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c034
+  section: micro
+  statement: "Thyroidization is typical but not specific: atrophic tubules fragment into small round segments with pink glassy casts that resemble thyroid follicles"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "961" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c035
+  section: micro
+  statement: "Glomeruli range from normal to scarred, and some are encircled by fibrosis"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "961" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c036
+  section: micro
+  statement: "Arterial and arteriolar walls are often fibrotic, and the calyceal lining is badly scarred and inflamed"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "961" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c037
+  section: micro
+  statement: "Numerous lipid-laden foamy macrophages (xanthoma cells) make xanthogranulomatous lesions yellow"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "961" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c038
+  section: ancillary
+  statement: "On routine H&E, acute pyelonephritis shows neutrophils filling collecting ducts and tubules"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "959" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c039
+  section: ancillary
+  statement: "On H&E, chronic pyelonephritis shows thyroidized tubules, interstitial fibrosis and chronic inflammation"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "960-961" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c040
+  section: clinical
+  statement: "Acute pyelonephritis causes fever with chills, flank pain and costovertebral angle tenderness"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "959" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c041
+  section: clinical
+  statement: "Blood neutrophilia is common in acute pyelonephritis"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "959" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c042
+  section: clinical
+  statement: "In most patients with chronic pyelonephritis, fever and flank pain return in repeated attacks that look like urinary infection or acute pyelonephritis"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "961" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c043
+  section: clinical
+  statement: "Some patients with chronic pyelonephritis are silent until end-stage renal disease develops"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "961" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c044
+  section: diagnosis
+  statement: "Leukocyte casts in the urine point to kidney involvement, since symptoms alone seldom distinguish upper from lower urinary infection"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "959" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c045
+  section: diagnosis
+  statement: "In chronic pyelonephritis imaging shows caliectasis and cortical scarring, and urinalysis shows leukocytes"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "961" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c046
+  section: diagnosis
+  statement: "Xanthogranulomatous pyelonephritis presenting as a mass can be confused with renal cell carcinoma"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "961" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c047
+  section: prognosis
+  statement: "Necrosis of the papillary tips can complicate severe acute pyelonephritis"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "959" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c048
+  section: prognosis
+  statement: "A perinephric abscess results when infection spreads beyond the renal capsule"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "959" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c049
+  section: prognosis
+  statement: "Secondary FSGS may follow destruction of most functioning nephrons in chronic pyelonephritis"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "961" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c050
+  section: prognosis
+  statement: "A silent course of chronic pyelonephritis can continue until end-stage renal disease"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "961" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c051
+  section: differential
+  statement: "Obstructive uropathy dilates the entire pelvicalyceal system with uniform parenchymal thinning, whereas reflux leaves discrete polar scars"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "960" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c052
+  section: differential
+  statement: "Analgesic nephropathy also gives caliectasis with overlying scarring; it begins with papillary necrosis after heavy analgesic intake"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "960-961" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c053
+  section: differential
+  statement: "Xanthogranulomatous pyelonephritis can mimic renal cell carcinoma as a mass of lipid-laden foamy macrophages"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "961" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c054
+  section: differential
+  statement: "In acute tubular injury the urinary sediment holds epithelial cells and dirty brown casts"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c055
+  section: differential
+  statement: "Pyuria and white blood cell casts mark the urinary sediment of acute tubulointerstitial nephritis"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c056
+  section: high-yield
+  statement: "E. coli causes most acute pyelonephritis, through infection ascending from the bladder"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c057
+  section: high-yield
+  statement: "Chronic pyelonephritis arises from vesicoureteral reflux or urinary tract obstruction"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "959-960" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c058
+  section: high-yield
+  statement: "Acute disease shows neutrophils in collecting ducts, abscesses, and in severe cases papillary necrosis"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958-959" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c059
+  section: high-yield
+  statement: "Reflux-related chronic pyelonephritis gives coarse polar scars over dilated calyces"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "960" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c060
+  section: high-yield
+  statement: "Chronic pyelonephritis histology is nonspecific, with thyroidization as the characteristic change"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "960-961" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c061
+  section: high-yield
+  statement: "Xanthogranulomatous pyelonephritis has foamy macrophages and yellow nodular lesions and can mimic renal cell carcinoma"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "961" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c062
+  section: traps
+  statement: "Bladder bacteria usually do not ascend, because voiding pressure closes the oblique intramural ureter; reflux needs an anatomic abnormality such as a short intravesical ureter"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c063
+  section: traps
+  statement: "Hematogenous pyelonephritis exists and preferentially affects the cortex with cortical abscesses"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958-959" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c064
+  section: traps
+  statement: "Histology of chronic pyelonephritis is nonspecific while its gross appearance is distinctive"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "960" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c065
+  section: traps
+  statement: "Thyroidization is atrophic renal tubules with hyaline casts resembling thyroid colloid, not a thyroid disease"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "961" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c066
+  section: traps
+  statement: "Xanthogranulomatous pyelonephritis is an uncommon chronic infectious form that can present as a mass"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "961" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c067
+  section: mnemonics
+  statement: "Ascending infection proceeds from bladder infection through ureteral reflux to papillary entry"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: pyelonephritis-c068
+  section: differential
+  statement: "In analgesic nephropathy the capillary walls under the urothelium thicken first"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "961" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-15
