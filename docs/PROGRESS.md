@@ -315,7 +315,7 @@ Still open:
 | W06 | 2026-11-14 | 15 | 5380 k | 0.0 % (0/60) | 78 | first-try |
 | W07 | 2026-11-15 | 16 | 5478 k | 0.0 % (0/60) | 82 | first-try |
 | W08 | 2026-11-15 | 19 | 5122 k | 1.7 % (1/60) | 79 | first-try |
-| W09 | 2026-11-15 | 15 | 5974 k | 0.0 % (0/60) | 86 | pending |
+| W09 | 2026-11-15 | 15 | 5974 k | 0.0 % (0/60) | 86 | rerun (e2e fixture build timeout; fixed) |
 
 Pilot C-0 (W02: thrombosis, amyloidosis, hyaline-change, inflammatory-mediators), notes of 2026-11-13:
 - "Tokens per card" counts input, cache creation, cache reads and output of every run, reruns included (55 runs); cache reads of the fixed context dominate, so the plan's 450 k target (a different count) cannot be compared with it. The measure that matters is dollars at API prices from `.work/usage.jsonl`: $19.71 in all, $4.93 per card with the rework of the pilot (a path-guard bug, a missing shasum permission, a report-note limit, a scout without candidates, and a second pass through all stages after the distance stage was added). A clean run of the seven stages costs about $3.4 for a P0 core card, $2.2 to $2.8 for P1 and P2: about $1,000 for 378 cards. Plan usage moved by less than one point of the weekly limit while the pilot and its supporting session ran (20 % before and after).
