@@ -1,0 +1,141 @@
+id: hereditary-hemochromatosis
+module: o20
+tier: core
+kind: disease
+editionDependent: false
+status: published
+lastUpdated: 2026-11-15
+reviewStatus: ai-generated-unreviewed
+names:
+  it: "Emocromatosi ereditaria"
+  en: "Hereditary hemochromatosis"
+  eponyms: []
+  synonyms:
+    it: ["Emocromatosi primitiva"]
+    en: ["Primary hemochromatosis"]
+  abbreviations: ["HH"]
+summary:
+  it: "Malattia genetica, per lo più da mutazioni di HFE, in cui un deficit di epcidina causa un eccesso di assorbimento intestinale di ferro che si accumula negli epatociti, nel pancreas, nel cuore e in altri organi."
+  en: "Inherited disease, mostly from HFE mutations, in which low hepcidin causes excess intestinal iron absorption and iron builds up in hepatocytes, pancreas, heart and other organs."
+lenses:
+  system: [liver-biliary, pancreas, heart, endocrine]
+  process: [intracellular-accumulation, oxidative-injury]
+  pattern: [pigment-deposits]
+  presentation: []
+  marker: [perls-prussian-blue, molecular, laboratory]
+  group: [genetic, metabolic]
+learningObjectives:
+  - it: "Spiegare perché un deficit di epcidina porta a sovraccarico di ferro."
+    en: "Explain why low hepcidin leads to iron overload."
+  - it: "Riconoscere il ferro negli epatociti con la colorazione di Perls e descrivere il fegato in fase avanzata."
+    en: "Recognize iron in hepatocytes on a Perls stain and describe the late-stage liver."
+  - it: "Elencare gli organi colpiti (fegato, pancreas, cuore, cute, articolazioni) e le loro manifestazioni."
+    en: "List the organs affected (liver, pancreas, heart, skin, joints) and their manifestations."
+  - it: "Distinguere l'emocromatosi ereditaria dal sovraccarico secondario di ferro."
+    en: "Distinguish hereditary hemochromatosis from secondary iron overload."
+prerequisites: []
+relations:
+  - type: causes
+    target: cirrhosis
+    note:
+      it: "Il ferro negli epatociti porta a cirrosi micronodulare e poi macronodulare."
+      en: "Iron in hepatocytes leads to micronodular, later macronodular, cirrhosis."
+  - type: causes
+    target: hepatocellular-carcinoma
+    note:
+      it: "La cirrosi da emocromatosi può evolvere in carcinoma epatocellulare."
+      en: "Cirrhosis from hemochromatosis may lead to hepatocellular carcinoma."
+  - type: differentialOf
+    target: wilson-disease
+    note:
+      it: "Accumulo di rame, non di ferro, in fegato e cervello."
+      en: "Copper, not iron, accumulates in liver and brain."
+  - type: differentialOf
+    target: alcoholic-liver-disease
+    note:
+      it: "L'abuso alcolico è frequente nel sovraccarico secondario di ferro."
+      en: "Alcohol abuse is common in secondary iron overload."
+quickCheck:
+  - id: hereditary-hemochromatosis-q1
+    q:
+      it: "Perché una mutazione di HFE causa sovraccarico di ferro?"
+      en: "Why does an HFE mutation cause iron overload?"
+    a:
+      it: "HFE serve a stimolare la produzione di epcidina; con poca epcidina la ferroportina esporta ferro senza freno e l'assorbimento aumenta."
+      en: "HFE is needed to stimulate hepcidin; with little hepcidin, ferroportin exports iron unchecked and absorption rises."
+    kind: short
+  - id: hereditary-hemochromatosis-q2
+    q:
+      it: "Che cosa mostra la colorazione di Perls nel fegato dell'emocromatosi ereditaria?"
+      en: "What does a Perls stain show in the liver in hereditary hemochromatosis?"
+    a:
+      it: "Ferro blu negli epatociti, in particolare lungo i canalicoli biliari."
+      en: "Blue iron in hepatocytes, notably along the bile canaliculi."
+    kind: short
+  - id: hereditary-hemochromatosis-q3
+    q:
+      it: "Dove si deposita per primo il ferro nel sovraccarico secondario?"
+      en: "Where does iron deposit first in secondary overload?"
+    a:
+      it: "Nelle cellule di Kupffer, poi si riversa negli epatociti."
+      en: "In Kupffer cells, then it spills into hepatocytes."
+    kind: short
+  - id: hereditary-hemochromatosis-q4
+    q:
+      it: "Quali organi sono colpiti più spesso nell'emocromatosi ereditaria?"
+      en: "Which organs does hereditary hemochromatosis affect?"
+    a:
+      it: "Fegato, pancreas, cuore, cute e articolazioni."
+      en: "Liver, pancreas, heart, skin and joints."
+    kind: short
+  - id: hereditary-hemochromatosis-q5
+    q:
+      it: "Quali sono i reperti di laboratorio tipici dell'emocromatosi ereditaria?"
+      en: "Which laboratory findings are typical of hereditary hemochromatosis?"
+    a:
+      it: "Sideremia molto aumentata, transferrina completamente satura e ferritina molto elevata."
+      en: "Serum iron far above normal, fully saturated transferrin and greatly increased ferritin."
+    kind: short
+selfExplain:
+  - it: "Perché la perdita di epcidina aumenta l'assorbimento di ferro anche se le scorte sono già piene?"
+    en: "Why does losing hepcidin increase iron absorption even when stores are already full?"
+  - it: "Perché l'accumulo di ferro nel pancreas può portare al diabete?"
+    en: "Why can iron in the pancreas lead to diabetes?"
+chain:
+  - pathology:
+      it: "Pancreas carico di ferro con perdita di cellule insulari"
+      en: "Iron-laden pancreas with islet cell loss"
+    sign:
+      it: "Pelle pigmentata e intolleranza al glucosio (diabete bronzino)"
+      en: "Pigmented skin and glucose intolerance (bronze diabetes)"
+    lab:
+      it: "Iperglicemia con saturazione completa della transferrina"
+      en: "Hyperglycemia with fully saturated transferrin"
+examQuestions:
+  - it: "Mi parli dell'emocromatosi ereditaria: quale gene è coinvolto e come causa il sovraccarico di ferro?"
+    en: "Tell me about hereditary hemochromatosis: which gene is involved and how does it cause iron overload?"
+    focus: [etiology, pathogenesis]
+    level: 2
+  - it: "Che cosa vede al microscopio nel fegato dell'emocromatosi ereditaria con la colorazione di Perls?"
+    en: "What do you see under the microscope in the liver in hereditary hemochromatosis on a Perls stain?"
+    focus: [micro, ancillary]
+    level: 1
+  - it: "Quali organi sono colpiti nell'emocromatosi ereditaria e con quali manifestazioni?"
+    en: "Which organs are affected in hereditary hemochromatosis, and with what manifestations?"
+    focus: [gross, clinical]
+    level: 1
+  - it: "Come distingue l'emocromatosi ereditaria dal sovraccarico secondario di ferro?"
+    en: "How do you tell hereditary hemochromatosis from secondary iron overload?"
+    focus: [micro, differential]
+    level: 3
+  - it: "Perché un paziente con emocromatosi può avere pelle bronzea e diabete?"
+    en: "Why can a patient with hemochromatosis have bronzed skin and diabetes?"
+    focus: [micro, clinical]
+    level: 3
+images:
+  - id: hereditary-hemochromatosis-micro-1
+    role: micro
+sources:
+  - source: rubin-8e
+    chapter: "20"
+    pages: "872-876"
