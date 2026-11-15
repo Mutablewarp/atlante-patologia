@@ -1,0 +1,107 @@
+id: acute-gastritis-and-reactive-gastropathy
+module: o19
+tier: extended
+kind: disease
+names:
+  it: "Gastrite acuta e gastropatia reattiva (chimica)"
+  en: "Acute gastritis and reactive (chemical) gastropathy"
+  eponyms: []
+  synonyms:
+    it: ["Gastropatia chimica", "Gastrite acuta emorragica", "Gastrite acuta erosiva"]
+    en: ["Chemical gastropathy", "Acute hemorrhagic gastritis", "Acute erosive gastritis"]
+  abbreviations: []
+summary:
+  it: "Danno acuto della mucosa gastrica, emorragico o erosivo, e risposta iperplastica della mucosa a sostanze irritanti, soprattutto FANS, con iperplasia delle cellule foveolari e poca infiammazione."
+  en: "Acute, hemorrhagic or erosive injury of the gastric mucosa, and a hyperplastic mucosal response to irritants, mostly NSAIDs, with foveolar hyperplasia and little inflammation."
+lenses:
+  system: [gastrointestinal]
+  process: [cell-injury, acute-inflammation]
+  pattern: [hyperplasia]
+  presentation: []
+  marker: []
+  group: [toxic-environmental, inflammatory]
+learningObjectives:
+  - it: "Elencare i meccanismi di difesa della mucosa gastrica e gli agenti che li sopraffanno."
+    en: "List the defenses of the gastric mucosa and the agents that overwhelm them."
+  - it: "Descrivere l'aspetto macroscopico della gastrite acuta: erosioni superficiali, multiple, emorragiche."
+    en: "Describe the gross appearance of acute gastritis: shallow, multiple, hemorrhagic erosions."
+  - it: "Riconoscere l'iperplasia foveolare con fossette a cavatappi nella gastropatia reattiva."
+    en: "Recognize foveolar hyperplasia with corkscrew pits in reactive gastropathy."
+  - it: "Indicare le cause della gastropatia reattiva e il trattamento di scelta."
+    en: "State the causes of reactive gastropathy and the treatment of choice."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: peptic-ulcer-disease
+    note:
+      it: "Entrambe possono dare ulcere gastriche; la gastrite acuta le dà superficiali e multiple."
+      en: "Both can give gastric ulcers; acute gastritis gives shallow, multiple ones."
+quickCheck:
+  - id: acute-gastritis-and-reactive-gastropathy-q1
+    q:
+      it: "Perché i FANS possono danneggiare la mucosa gastrica?"
+      en: "Why can NSAIDs damage the gastric mucosa?"
+    a:
+      it: "Inibiscono la sintesi delle prostaglandine, che aiutano a mantenere lo strato di muco."
+      en: "They inhibit prostaglandin synthesis, and prostaglandins help maintain the mucus layer."
+    kind: short
+  - id: acute-gastritis-and-reactive-gastropathy-q2
+    q:
+      it: "Che cosa si vede al microscopio nella gastropatia reattiva?"
+      en: "What is seen under the microscope in reactive gastropathy?"
+    a:
+      it: "Iperplasia foveolare con fossette irregolari a cavatappi, talvolta muscolatura liscia aumentata nella lamina propria, e poca infiammazione."
+      en: "Foveolar hyperplasia with irregular corkscrew pits, sometimes more smooth muscle in the lamina propria, and little inflammation."
+    kind: short
+  - id: acute-gastritis-and-reactive-gastropathy-q3
+    q:
+      it: "Qual è il trattamento di scelta della gastropatia reattiva?"
+      en: "What is the treatment of choice for reactive gastropathy?"
+    a:
+      it: "Sospendere l'agente responsabile."
+      en: "Withdraw the offending agent."
+    kind: short
+  - id: acute-gastritis-and-reactive-gastropathy-q4
+    q:
+      it: "Com'è la gastrite acuta all'esame macroscopico?"
+      en: "How does acute gastritis look grossly?"
+    a:
+      it: "Nella maggior parte dei casi è emorragica, con ulcere multiple e di solito superficiali."
+      en: "It is hemorrhagic in most cases, with ulcers that are multiple and typically shallow."
+    kind: short
+selfExplain:
+  - it: "Perché la gastropatia reattiva mostra poca infiammazione pur essendo una lesione della mucosa?"
+    en: "Why does reactive gastropathy show little inflammation although it injures the mucosa?"
+  - it: "Perché sospendere l'agente responsabile è il trattamento preferito della gastropatia reattiva?"
+    en: "Why is stopping the offending agent the preferred treatment of reactive gastropathy?"
+examQuestions:
+  - it: "Mi parli delle cause di danno della mucosa gastrica: FANS, alcol e ischemia."
+    en: "Tell me about the causes of gastric mucosal injury: NSAIDs, alcohol and ischemia."
+    focus: [etiology, definition]
+    level: 1
+  - it: "Che cosa vede al microscopio nella gastropatia reattiva?"
+    en: "What do you see under the microscope in reactive gastropathy?"
+    focus: [micro]
+    level: 1
+  - it: "Che aspetto ha lo stomaco nella gastrite acuta, tra erosioni ed emorragia?"
+    en: "What does the stomach look like in acute gastritis, in terms of erosions and bleeding?"
+    focus: [gross]
+    level: 1
+  - it: "Perché i FANS possono danneggiare la mucosa gastrica?"
+    en: "Why can NSAIDs damage the gastric mucosa?"
+    focus: [etiology, pathogenesis]
+    level: 2
+  - it: "Come distingue la gastropatia reattiva da una gastrite cronica?"
+    en: "How do you tell reactive gastropathy from chronic gastritis?"
+    focus: [micro, differential]
+    level: 3
+images:
+  - { id: acute-gastritis-and-reactive-gastropathy-micro-1, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "19"
+    pages: "778, 782"
+lastUpdated: 2026-11-14
+status: published
