@@ -1,0 +1,258 @@
+entity: nonalcoholic-fatty-liver-disease
+claims:
+- claimId: nonalcoholic-fatty-liver-disease-c001
+  section: definition
+  statement: "NAFLD is fatty liver disease not caused by alcohol, and its injury closely resembles alcoholic liver disease."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: nonalcoholic-fatty-liver-disease-c002
+  section: definition
+  statement: "Simple steatosis marks the mild end of the injury range and bridging fibrosis with cirrhosis the severe end; hepatitis may or may not accompany it."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: nonalcoholic-fatty-liver-disease-c003
+  section: definition
+  statement: "Steatosis with associated hepatitis is termed NASH."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: nonalcoholic-fatty-liver-disease-c004
+  section: definition
+  statement: "The metabolic syndrome is expressed in the liver as NAFLD."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: nonalcoholic-fatty-liver-disease-c005
+  section: definition
+  statement: "The reference text names the disease NAFLD."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: nonalcoholic-fatty-liver-disease-c006
+  section: etiology
+  statement: "Type 2 diabetes, obesity, abnormal blood lipids and the metabolic syndrome all raise the risk of NAFLD."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-15
+- claimId: nonalcoholic-fatty-liver-disease-c007
+  section: etiology
+  statement: "Among the risk factors, insulin resistance seems to weigh most."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-15
+- claimId: nonalcoholic-fatty-liver-disease-c008
+  section: etiology
+  statement: "Up to a fifth of people with NASH develop cirrhosis; such people are about half of those with severe obesity plus diabetes."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-15
+- claimId: nonalcoholic-fatty-liver-disease-c009
+  section: pathogenesis
+  statement: "Insulin resistance goes with more fatty acid oxidation in liver mitochondria and with higher oxidative stress, lipid peroxidation included."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-15
+- claimId: nonalcoholic-fatty-liver-disease-c010
+  section: pathogenesis
+  statement: "Alcoholic hepatitis and NAFLD/NASH may share some injury mechanisms."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: nonalcoholic-fatty-liver-disease-c011
+  section: micro
+  statement: "Inflammation is found in both lobules and portal tracts, together with steatosis."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: nonalcoholic-fatty-liver-disease-c012
+  section: micro
+  statement: "Scarring and Mallory-Denk hyaline accompany the death of some liver cells."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: nonalcoholic-fatty-liver-disease-c013
+  section: micro
+  statement: "Fibrosis around the central veins is common, a pattern shared with alcoholic liver disease."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: nonalcoholic-fatty-liver-disease-c014
+  section: micro
+  statement: "Simple steatosis lacks hepatitis, while steatohepatitis has associated hepatitis."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: nonalcoholic-fatty-liver-disease-c015
+  section: micro
+  statement: "When cirrhosis develops, steatosis often disappears."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: nonalcoholic-fatty-liver-disease-c016
+  section: clinical
+  statement: "Many patients stay asymptomatic, and progression toward cirrhosis is often insidious."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: nonalcoholic-fatty-liver-disease-c017
+  section: diagnosis
+  statement: "Liver enzymes in serum are elevated only moderately."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: nonalcoholic-fatty-liver-disease-c018
+  section: prognosis
+  statement: "NAFLD can progress to cirrhosis, and many cirrhoses labeled cryptogenic probably originate from it."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: nonalcoholic-fatty-liver-disease-c019
+  section: prognosis
+  statement: "Weight loss, including surgical weight loss through bariatric surgery, usually improves NAFLD and NASH."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: nonalcoholic-fatty-liver-disease-c020
+  section: prognosis
+  statement: "The reference says no definitive treatment is yet available."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: nonalcoholic-fatty-liver-disease-c021
+  section: differential
+  statement: "The histologic pictures of NAFLD and of alcoholic liver disease overlap."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: nonalcoholic-fatty-liver-disease-c022
+  section: differential
+  statement: "Drug toxicity, amiodarone being one example, can produce a steatohepatitis that imitates alcoholic hepatitis."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: nonalcoholic-fatty-liver-disease-c023
+  section: differential
+  statement: "Steatosis often disappears in cirrhosis, so NAFLD can hide behind cryptogenic cirrhosis."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: nonalcoholic-fatty-liver-disease-c024
+  section: high-yield
+  statement: "The name NAFLD marks a mimic of alcoholic liver disease in which alcohol is not the cause."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: nonalcoholic-fatty-liver-disease-c025
+  section: high-yield
+  statement: "Simple steatosis is fat alone; NASH is steatosis with associated hepatitis."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: nonalcoholic-fatty-liver-disease-c026
+  section: high-yield
+  statement: "Insulin resistance is the strongest risk factor, and NAFLD is the hepatic manifestation of the metabolic syndrome."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: nonalcoholic-fatty-liver-disease-c027
+  section: high-yield
+  statement: "The histologic pictures of NAFLD and of alcoholic liver disease overlap."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: nonalcoholic-fatty-liver-disease-c028
+  section: high-yield
+  statement: "Steatosis often disappears in cirrhosis, so NAFLD is probably the cause of many cryptogenic cirrhoses."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: nonalcoholic-fatty-liver-disease-c029
+  section: traps
+  statement: "The spectrum includes steatohepatitis progressing to bridging fibrosis and cirrhosis."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: nonalcoholic-fatty-liver-disease-c030
+  section: traps
+  statement: "NAFLD and alcoholic liver disease share many histologic features."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: nonalcoholic-fatty-liver-disease-c031
+  section: traps
+  statement: "Fat in the liver tends to be gone by the stage of established cirrhosis."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-15
+- claimId: nonalcoholic-fatty-liver-disease-c032
+  section: mnemonics
+  statement: "Risk factors are the metabolic syndrome, insulin resistance, obesity and diabetes, and the disease runs from steatosis to NASH."
+  sourceRef: { source: rubin-8e, chapter: "20", pages: "870" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15

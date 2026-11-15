@@ -1,0 +1,119 @@
+id: nonalcoholic-fatty-liver-disease
+module: o20
+tier: core
+kind: disease
+names:
+  it: "Malattia epatica steatosica associata a disfunzione metabolica (MASLD)"
+  en: "Metabolic dysfunction-associated steatotic liver disease (MASLD)"
+  eponyms: []
+  synonyms:
+    it: ["Steatosi epatica non alcolica", "Steatoepatite non alcolica (NASH)"]
+    en: ["Nonalcoholic fatty liver disease", "Nonalcoholic steatohepatitis (NASH)"]
+  abbreviations: [MASLD, NAFLD, NASH]
+summary:
+  it: "Steatosi epatica non dovuta ad alcol, legata a obesità, diabete di tipo 2 e sindrome metabolica, che può evolvere da semplice accumulo di grasso a steatoepatite, fibrosi e cirrosi."
+  en: "Fatty liver not caused by alcohol, tied to obesity, type 2 diabetes and the metabolic syndrome, which can progress from simple fat accumulation to steatohepatitis, fibrosis and cirrhosis."
+lenses:
+  system: [liver-biliary]
+  process: [intracellular-accumulation, chronic-inflammation, repair-fibrosis]
+  pattern: [fatty-change, intracellular-inclusions]
+  presentation: [incidental-finding]
+  marker: [laboratory]
+  group: [metabolic]
+learningObjectives:
+  - it: "Definire lo spettro dalla steatosi semplice alla steatoepatite (NASH) e alla cirrosi."
+    en: "Define the spectrum from simple steatosis to steatohepatitis (NASH) and cirrhosis."
+  - it: "Collegare insulino-resistenza e sindrome metabolica al danno epatico."
+    en: "Link insulin resistance and the metabolic syndrome to liver injury."
+  - it: "Descrivere il quadro istologico e la sovrapposizione con l'epatopatia alcolica."
+    en: "Describe the histology and its overlap with alcoholic liver disease."
+  - it: "Spiegare perché la steatosi può scomparire in cirrosi e perché molte cirrosi criptogenetiche sono di questo tipo."
+    en: "Explain why steatosis can vanish in cirrhosis and why many cryptogenic cirrhoses belong here."
+prerequisites: [fatty-change]
+relations:
+  - type: sharesMechanism
+    target: alcoholic-liver-disease
+    note:
+      it: "Quadro istologico e meccanismi in parte sovrapposti."
+      en: "Overlapping histology and mechanisms."
+  - type: mimics
+    target: drug-induced-liver-injury
+    note:
+      it: "Alcuni farmaci, come l'amiodarone, causano una steatoepatite simile."
+      en: "Some drugs, such as amiodarone, cause a similar steatohepatitis."
+  - type: causes
+    target: cirrhosis
+    note:
+      it: "Causa probabile di molte cirrosi criptogenetiche."
+      en: "Probable cause of many cryptogenic cirrhoses."
+quickCheck:
+  - id: nonalcoholic-fatty-liver-disease-q1
+    q:
+      it: "Che differenza c'è tra steatosi semplice e steatoepatite (NASH)?"
+      en: "What separates simple steatosis from steatohepatitis (NASH)?"
+    a:
+      it: "La steatosi semplice è solo grasso negli epatociti; la NASH ha in più un'epatite."
+      en: "Simple steatosis is fat alone in hepatocytes; NASH adds hepatitis."
+    kind: short
+  - id: nonalcoholic-fatty-liver-disease-q2
+    q:
+      it: "Qual è il fattore di rischio più forte per la malattia?"
+      en: "Which risk factor is the strongest for this disease?"
+    a:
+      it: "L'insulino-resistenza, nel quadro della sindrome metabolica."
+      en: "Insulin resistance, within the metabolic syndrome."
+    kind: short
+  - id: nonalcoholic-fatty-liver-disease-q3
+    q:
+      it: "Perché una cirrosi senza grasso non esclude la malattia?"
+      en: "Why does a cirrhosis without fat not exclude the disease?"
+    a:
+      it: "Perché la steatosi spesso scompare quando si instaura la cirrosi."
+      en: "Because steatosis often disappears once cirrhosis develops."
+    kind: short
+  - id: nonalcoholic-fatty-liver-disease-q4
+    q:
+      it: "Quali farmaci possono simulare l'epatite alcolica con una steatoepatite tossica?"
+      en: "Which drugs can mimic alcoholic hepatitis with a toxic steatohepatitis?"
+    a:
+      it: "L'amiodarone e alcuni altri farmaci."
+      en: "Amiodarone and some other drugs."
+    kind: short
+selfExplain:
+  - it: "Come si manifesta la sindrome metabolica nel fegato, e quale suo fattore di rischio pesa di più?"
+    en: "How does the metabolic syndrome show up in the liver, and which of its risk factors weighs most?"
+  - it: "Che cosa comporta per la diagnosi il fatto che la steatosi spesso scompare in cirrosi?"
+    en: "What does it mean for the diagnosis that steatosis often disappears in cirrhosis?"
+examQuestions:
+  - it: "Mi parli dei fattori di rischio metabolici della malattia epatica steatosica non alcolica."
+    en: "Tell me about the metabolic risk factors for nonalcoholic fatty liver disease."
+    focus: [definition, etiology, pathogenesis]
+    level: 1
+  - it: "Come distingue la steatosi semplice dalla steatoepatite (NASH) al microscopio?"
+    en: "How do you tell simple steatosis from steatohepatitis (NASH) under the microscope?"
+    focus: [definition, micro]
+    level: 2
+  - it: "Come distingue questa malattia dall'epatopatia alcolica e dal danno epatico da farmaci?"
+    en: "How do you tell this disease from alcoholic liver disease and from drug-induced liver injury?"
+    focus: [micro, differential, traps]
+    level: 3
+  - it: "Perché una cirrosi senza steatosi non esclude questa malattia?"
+    en: "Why does a cirrhosis without steatosis not exclude this disease?"
+    focus: [micro, prognosis, traps]
+    level: 3
+images:
+  - id: nonalcoholic-fatty-liver-disease-micro-1
+    role: micro
+  - id: nonalcoholic-fatty-liver-disease-micro-2
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: true
+editionNote:
+  it: "Il testo di riferimento usa il nome NAFLD; la classificazione è cambiata tra le edizioni, quindi la nomenclatura e i criteri vanno verificati su una fonte aggiornata."
+  en: "The reference text uses the name NAFLD; the classification changed between editions, so naming and criteria need checking against a current source."
+sources:
+  - source: rubin-8e
+    chapter: "20"
+    pages: "870, 880"
+lastUpdated: 2026-11-15
+status: published
