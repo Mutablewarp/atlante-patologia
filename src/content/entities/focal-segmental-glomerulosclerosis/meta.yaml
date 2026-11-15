@@ -1,0 +1,133 @@
+id: focal-segmental-glomerulosclerosis
+module: o22
+tier: core
+kind: disease
+names:
+  it: "Glomerulosclerosi focale segmentaria"
+  en: "Focal segmental glomerulosclerosis"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: ["FSGS"]
+summary:
+  it: "Pattern di danno glomerulare in cui alcuni glomeruli (focale) mostrano sclerosi di una parte del gomitolo (segmentaria); può essere primitivo o secondario, risponde poco agli steroidi e può recidivare nel rene trapiantato."
+  en: "A pattern of glomerular injury in which some glomeruli (focal) show sclerosis of part of the tuft (segmental); it can be primary or secondary, responds poorly to steroids and can recur in a transplanted kidney."
+lenses:
+  system: [kidney]
+  process: [repair-fibrosis]
+  pattern: [hyaline-change]
+  presentation: [hematuria, edema]
+  marker: [pas, special-stains]
+  group: [genetic, immune, toxic-environmental]
+learningObjectives:
+  - it: "Definire la GSFS come pattern di danno e non come malattia unica, spiegando i termini focale e segmentaria."
+    en: "Define FSGS as a pattern of injury rather than a single disease, explaining the terms focal and segmental."
+  - it: "Distinguere le forme primitive da quelle secondarie, compresa la forma collassante associata a HIV."
+    en: "Distinguish primary from secondary forms, including the HIV-associated collapsing form."
+  - it: "Descrivere le cicatrici segmentarie, le aderenze alla capsula di Bowman e la ialinosi, e riconoscere le varianti istologiche."
+    en: "Describe the segmental scars, the adhesions to Bowman capsule and the hyalinosis, and recognize the histologic variants."
+  - it: "Spiegare la scarsa risposta agli steroidi e la recidiva nel trapianto, e il rischio di scambiare la GSFS con la malattia a lesioni minime in una biopsia piccola."
+    en: "Explain the poor steroid response and the recurrence in grafts, and the risk of mistaking FSGS for minimal-change disease in a small biopsy."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: minimal-change-disease
+    note:
+      it: "Una biopsia piccola con soli glomeruli non sclerotici può far scambiare la GSFS per malattia a lesioni minime."
+      en: "A small biopsy with only nonsclerotic glomeruli can make FSGS look like minimal-change disease."
+  - type: sharesMechanism
+    target: minimal-change-disease
+    note:
+      it: "Entrambe coinvolgono il danno podocitario."
+      en: "Both involve podocyte injury."
+quickCheck:
+  - id: focal-segmental-glomerulosclerosis-q1
+    q:
+      it: "Che cosa significano i termini focale e segmentaria nella GSFS?"
+      en: "What do the terms focal and segmental mean in FSGS?"
+    a:
+      it: "Focale: sono colpiti solo alcuni glomeruli. Segmentaria: all'inizio è coinvolta solo una parte del gomitolo capillare."
+      en: "Focal: only some glomeruli are affected. Segmental: at first only part of the capillary tuft is involved."
+    kind: short
+  - id: focal-segmental-glomerulosclerosis-q2
+    q:
+      it: "Perché una biopsia con soli glomeruli normali non esclude la GSFS?"
+      en: "Why does a biopsy with only normal glomeruli not rule out FSGS?"
+    a:
+      it: "Perché la lesione è focale: i glomeruli non coinvolti appaiono normali e la GSFS può essere scambiata per malattia a lesioni minime."
+      en: "Because the lesion is focal: uninvolved glomeruli look normal, and FSGS can be mistaken for minimal-change disease."
+    kind: short
+  - id: focal-segmental-glomerulosclerosis-q3
+    q:
+      it: "Quale variante ha la prognosi peggiore e in quale contesto infettivo compare?"
+      en: "Which variant has the worst prognosis, and in which infectious setting does it occur?"
+    a:
+      it: "La variante collassante, tipica della nefropatia associata a HIV."
+      en: "The collapsing variant, typical of HIV-associated nephropathy."
+    kind: short
+  - id: focal-segmental-glomerulosclerosis-q4
+    q:
+      it: "Quanto spesso la GSFS recidiva nel rene trapiantato?"
+      en: "How often does FSGS recur in a transplanted kidney?"
+    a:
+      it: "La metà dei reni trapiantati sviluppa una GSFS ricorrente, anche se il trapianto è il trattamento preferito."
+      en: "Half of transplanted kidneys develop recurrent FSGS, though transplantation is the preferred treatment."
+    kind: short
+  - id: focal-segmental-glomerulosclerosis-q5
+    q:
+      it: "Quale variante istologica ha più probabilità di rispondere agli steroidi?"
+      en: "Which histologic variant is more likely to respond to steroids?"
+    a:
+      it: "La variante con lesione tip, la più probabilmente responsiva agli steroidi."
+      en: "The tip lesion, which is more likely to respond to steroids."
+    kind: short
+selfExplain:
+  - it: "Perché la perdita di nefroni può causare una GSFS?"
+    en: "Why can a loss of nephrons cause FSGS?"
+  - it: "Perché la recidiva nel trapianto suggerisce una causa sistemica?"
+    en: "Why does recurrence in a graft suggest a systemic cause?"
+  - it: "Perché i podociti sono particolarmente vulnerabili quando i glomeruli si ingrandiscono?"
+    en: "Why are podocytes especially vulnerable when glomeruli enlarge?"
+chain:
+  - pathology:
+      it: "Danno podocitario con sclerosi segmentaria dei glomeruli"
+      en: "Podocyte injury with segmental glomerular sclerosis"
+    sign:
+      it: "Proteinuria che evolve in sindrome nefrosica, ipertensione"
+      en: "Proteinuria progressing to nephrotic syndrome, hypertension"
+    lab:
+      it: "Proteinuria ed ematuria microscopica"
+      en: "Proteinuria and microscopic hematuria"
+examQuestions:
+  - it: "Mi parli della glomerulosclerosi focale segmentaria: che cosa indicano «focale» e «segmentaria» e perché è un pattern e non una malattia unica?"
+    en: "Tell me about focal segmental glomerulosclerosis: what do \"focal\" and \"segmental\" mean, and why is it a pattern and not one disease?"
+    focus: [definition]
+    level: 1
+  - it: "Come distingue una GSFS primitiva da una secondaria, compresa la forma collassante associata a HIV?"
+    en: "How do you tell primary FSGS from secondary FSGS, including the HIV-associated collapsing form?"
+    focus: [etiology, micro]
+    level: 3
+  - it: "Che cosa vede al microscopio in una GSFS e dove si trovano le cicatrici segmentarie?"
+    en: "What do you see under the microscope in FSGS, and where are the segmental scars?"
+    focus: [micro, ancillary]
+    level: 1
+  - it: "Perché una biopsia con soli glomeruli normali non esclude la GSFS?"
+    en: "Why does a biopsy with only normal glomeruli not rule out FSGS?"
+    focus: [ancillary, diagnosis, traps]
+    level: 2
+  - it: "Mi parli della risposta agli steroidi e della recidiva nel rene trapiantato nella GSFS."
+    en: "Tell me about the steroid response and the recurrence in a transplanted kidney in FSGS."
+    focus: [pathogenesis, prognosis]
+    level: 3
+images:
+  - id: focal-segmental-glomerulosclerosis-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "22"
+    pages: "929-931"
+lastUpdated: 2026-11-15
+status: published
