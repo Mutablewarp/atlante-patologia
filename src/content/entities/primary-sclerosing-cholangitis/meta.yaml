@@ -1,0 +1,120 @@
+id: primary-sclerosing-cholangitis
+module: o20
+tier: core
+kind: disease
+names:
+  it: "Colangite sclerosante primitiva"
+  en: "Primary sclerosing cholangitis"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: ["PSC"]
+summary:
+  it: "Malattia colestatica cronica del fegato, di causa ignota, in cui infiammazione e fibrosi restringono e poi ostruiscono le vie biliari intra- ed extraepatiche; è spesso associata a colite ulcerosa e predispone al colangiocarcinoma."
+  en: "A chronic cholestatic liver disease of unknown cause in which inflammation and fibrosis narrow and then block the intrahepatic and extrahepatic bile ducts; often linked to ulcerative colitis and to a risk of cholangiocarcinoma."
+lenses:
+  system: [liver-biliary, gastrointestinal]
+  process: [chronic-inflammation, repair-fibrosis]
+  pattern: []
+  presentation: [jaundice]
+  marker: []
+  group: [immune, inflammatory]
+learningObjectives:
+  - it: "Definire la colangite sclerosante primitiva e indicarne l'associazione con le malattie infiammatorie intestinali, soprattutto la colite ulcerosa."
+    en: "Define primary sclerosing cholangitis and state its association with inflammatory bowel disease, mainly ulcerative colitis."
+  - it: "Descrivere la fibrosi periduttale «a buccia di cipolla» e i quattro stadi istologici."
+    en: "Describe onion-skin periductal fibrosis and the four histologic stages."
+  - it: "Spiegare perché la colangiografia mostra dotti «a corona di rosario» e che cosa significa colangite sclerosante a piccoli dotti."
+    en: "Explain why cholangiography shows beaded ducts and what small duct PSC means."
+  - it: "Elencare le complicanze, in particolare il colangiocarcinoma, e il ruolo e i limiti del trapianto di fegato."
+    en: "List the complications, especially cholangiocarcinoma, and the role and limits of liver transplantation."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: primary-biliary-cholangitis
+    note:
+      it: "Entrambe sono colangiopatie croniche con stadi istologici analoghi, ma la PSC colpisce soprattutto uomini e dotti grandi."
+      en: "Both are chronic cholangiopathies with similar histologic stages, but PSC mostly affects men and large ducts."
+  - type: causes
+    target: cholangiocarcinoma
+    note:
+      it: "Il colangiocarcinoma compare in fino al 20% dei pazienti con PSC."
+      en: "Cholangiocarcinoma develops in up to 20% of PSC patients."
+  - type: causes
+    target: cirrhosis
+    note:
+      it: "La PSC evolve verso la cirrosi biliare secondaria."
+      en: "PSC progresses to secondary biliary cirrhosis."
+quickCheck:
+  - id: primary-sclerosing-cholangitis-q1
+    q:
+      it: "Con quale malattia intestinale è associata circa due terzi dei casi di PSC?"
+      en: "With which bowel disease are about two thirds of PSC cases associated?"
+    a:
+      it: "Con la colite ulcerosa."
+      en: "Ulcerative colitis."
+    kind: short
+  - id: primary-sclerosing-cholangitis-q2
+    q:
+      it: "Quale aspetto istologico e quale aspetto colangiografico sono tipici della PSC?"
+      en: "Which histologic and which cholangiographic appearance are typical of PSC?"
+    a:
+      it: "Fibrosi periduttale concentrica «a buccia di cipolla» e dotti biliari «a corona di rosario» per il coinvolgimento segmentario."
+      en: "Concentric onion-skin periductal fibrosis, and beaded bile ducts because the disease is segmental."
+    kind: short
+  - id: primary-sclerosing-cholangitis-q3
+    q:
+      it: "Quale neoplasia maligna complica la PSC e in quale frazione dei pazienti?"
+      en: "Which malignancy complicates PSC and in what fraction of patients?"
+    a:
+      it: "Il colangiocarcinoma, fino al 20% dei pazienti."
+      en: "Cholangiocarcinoma, in up to 20% of patients."
+    kind: short
+selfExplain:
+  - it: "Perché la colangiografia di una PSC mostra dotti a corona di rosario?"
+    en: "Why does the cholangiogram of PSC show beaded ducts?"
+  - it: "Perché una colangiografia normale non esclude la PSC?"
+    en: "Why does a normal cholangiogram not exclude PSC?"
+chain:
+  - pathology:
+      it: "Fibrosi periduttale con restringimento segmentario dei dotti"
+      en: "Periductal fibrosis with segmental duct narrowing"
+    sign:
+      it: "Ittero ostruttivo e colangiti ricorrenti"
+      en: "Obstructive jaundice and recurrent cholangitis"
+    lab:
+      it: "Esami di colestasi alterati; dotti a corona di rosario alla colangiografia"
+      en: "Abnormal cholestatic liver tests; beaded ducts on cholangiography"
+examQuestions:
+  - it: "Mi parli della colangite sclerosante primitiva e della sua associazione con le malattie infiammatorie intestinali."
+    en: "Tell me about primary sclerosing cholangitis and its link with inflammatory bowel disease."
+    focus: [definition, etiology]
+    level: 1
+  - it: "Che cosa vede al microscopio nelle fasi iniziali della colangite sclerosante primitiva?"
+    en: "What do you see under the microscope in early primary sclerosing cholangitis?"
+    focus: [micro]
+    level: 1
+  - it: "Perché la colangiografia della colangite sclerosante primitiva mostra dotti a corona di rosario, e che cosa significa una colangiografia normale?"
+    en: "Why does the cholangiogram in primary sclerosing cholangitis show beaded ducts, and what does a normal-looking one mean?"
+    focus: [diagnosis, traps]
+    level: 2
+  - it: "Quali complicanze può avere la colangite sclerosante primitiva e che ruolo ha il trapianto di fegato?"
+    en: "Which complications can primary sclerosing cholangitis cause, and what is the role of liver transplantation?"
+    focus: [prognosis]
+    level: 2
+  - it: "Come distingue la colangite sclerosante primitiva dalla colangite biliare primitiva?"
+    en: "How do you tell primary sclerosing cholangitis from primary biliary cholangitis?"
+    focus: [differential, traps]
+    level: 3
+images:
+  - id: primary-sclerosing-cholangitis-micro-2
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "20"
+    pages: "871-872"
+lastUpdated: 2026-11-15
+status: published
