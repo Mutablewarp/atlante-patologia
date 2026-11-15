@@ -1,0 +1,120 @@
+id: infectious-and-chemical-esophagitis
+module: o19
+tier: extended
+kind: disease
+names:
+  it: "Esofagiti infettive, chimiche e iatrogene"
+  en: "Infectious, chemical and iatrogenic esophagitis"
+  eponyms: []
+  synonyms:
+    it: ["Esofagite da Candida", "Esofagite erpetica", "Esofagite da citomegalovirus", "Esofagite da caustici", "Esofagite da farmaci"]
+    en: ["Candida esophagitis", "Herpetic esophagitis", "CMV esophagitis", "Caustic esophagitis", "Pill esophagitis"]
+  abbreviations: [HSV, CMV, GVHD]
+summary:
+  it: "Lesioni infiammatorie della mucosa esofagea causate da Candida, herpes simplex o citomegalovirus nei pazienti immunodepressi, da caustici e farmaci ingeriti, da malattie sistemiche o da trattamenti medici."
+  en: "Inflammatory injury of the esophageal mucosa caused by Candida, herpes simplex or cytomegalovirus in immunosuppressed patients, by swallowed corrosives and pills, by systemic disease, or by medical treatment."
+lenses:
+  system: [gastrointestinal]
+  process: [acute-inflammation, immunodeficiency, necrosis]
+  pattern: [necrosis-liquefactive, necrosis-coagulative, intracellular-inclusions]
+  presentation: []
+  marker: [pas, special-stains]
+  group: [infectious, toxic-environmental]
+learningObjectives:
+  - it: "Riconoscere Candida, HSV e CMV nell'esofago dal quadro macroscopico e dalle inclusioni o dai miceti visibili al microscopio."
+    en: "Recognize Candida, HSV and CMV in the esophagus from the gross picture and from the inclusions or fungi seen under the microscope."
+  - it: "Distinguere HSV e CMV per cellula bersaglio, sede nell'ulcera e tipo di inclusioni."
+    en: "Tell HSV from CMV by target cell, site in the ulcer and type of inclusions."
+  - it: "Confrontare la necrosi da alcali e quella da acidi forti e spiegarne la diversa evoluzione."
+    en: "Compare alkali and strong-acid necrosis and explain their different course."
+  - it: "Elencare le cause sistemiche e iatrogene di esofagite: malattie bollose, GVHD, radioterapia, sondino nasogastrico."
+    en: "List the systemic and iatrogenic causes of esophagitis: blistering diseases, GVHD, irradiation, nasogastric tube."
+prerequisites: [liquefactive-necrosis, coagulative-necrosis]
+relations:
+  - type: differentialOf
+    target: eosinophilic-esophagitis
+    note:
+      it: "Gli eosinofili dell'esofagite eosinofila non rispondono alla terapia antireflusso."
+      en: "The eosinophils of eosinophilic esophagitis do not respond to antireflux therapy."
+  - type: differentialOf
+    target: reflux-esophagitis
+    note:
+      it: "Altra causa comune di esofagite, da considerare nella diagnosi differenziale."
+      en: "Another common cause of esophagitis to consider in the differential."
+  - type: sharesMechanism
+    target: liquefactive-necrosis
+    note:
+      it: "Gli alcali producono necrosi colliquativa."
+      en: "Alkalis produce liquefactive necrosis."
+  - type: sharesMechanism
+    target: coagulative-necrosis
+    note:
+      it: "Gli acidi forti producono necrosi coagulativa."
+      en: "Strong acids produce coagulative necrosis."
+quickCheck:
+  - id: infectious-and-chemical-esophagitis-q1
+    q:
+      it: "Come si distinguono HSV e CMV per sede nell'ulcera e per inclusioni?"
+      en: "How do HSV and CMV differ in ulcer site and inclusions?"
+    a:
+      it: "HSV è al margine dell'ulcera, con inclusioni solo intranucleari; CMV è alla base, con una grande inclusione intranucleare 'a occhio di gufo' e piccole inclusioni citoplasmatiche."
+      en: "HSV lies at the ulcer edge with intranuclear inclusions only; CMV lies at the base with a large owl's-eye intranuclear inclusion and small cytoplasmic inclusions."
+    kind: short
+  - id: infectious-and-chemical-esophagitis-q2
+    q:
+      it: "Quale tipo di necrosi producono gli alcali e quale gli acidi forti?"
+      en: "Which type of necrosis do alkalis produce, and which do strong acids produce?"
+    a:
+      it: "Gli alcali producono necrosi colliquativa; gli acidi forti necrosi coagulativa."
+      en: "Alkalis produce liquefactive necrosis; strong acids produce coagulative necrosis."
+    kind: short
+  - id: infectious-and-chemical-esophagitis-q3
+    q:
+      it: "Quale colorazione evidenzia meglio i lieviti di Candida nell'esofago?"
+      en: "Which stain best shows Candida yeasts in the esophagus?"
+    a:
+      it: "Le colorazioni argentiche o PAS, che mostrano lieviti e pseudoife nel detrito squamoso necrotico."
+      en: "Silver or PAS stains, which show yeasts and pseudohyphae in necrotic squamous debris."
+    kind: short
+selfExplain:
+  - it: "Perché gli alcali sono più insidiosi degli acidi quando vengono ingeriti?"
+    en: "Why are alkalis more insidious than acids when swallowed?"
+  - it: "Perché la candidosi esofagea è rara nei pazienti senza fattori predisponenti?"
+    en: "Why is esophageal candidiasis uncommon in patients without predisposing factors?"
+examQuestions:
+  - it: "Come distingue al microscopio un'esofagite da HSV da una da CMV?"
+    en: "How do you tell HSV esophagitis from CMV esophagitis under the microscope?"
+    focus: [micro, diagnosis, differential]
+    level: 3
+  - it: "Quali colorazioni userebbe per confermare un'esofagite da Candida e che cosa si aspetta di vedere?"
+    en: "Which stains would you use to confirm Candida esophagitis, and what do you expect to see?"
+    focus: [micro, ancillary]
+    level: 1
+  - it: "Mi parli della lesione esofagea da caustici: perché alcali e acidi forti si comportano in modo diverso?"
+    en: "Tell me about corrosive injury of the esophagus: why do alkalis and strong acids behave differently?"
+    focus: [pathogenesis, prognosis]
+    level: 2
+  - it: "Quali complicanze tardive si temono nei sopravvissuti all'ingestione di caustici?"
+    en: "Which late complications do you fear in survivors of caustic ingestion?"
+    focus: [prognosis]
+    level: 2
+  - it: "Mi parli delle cause non infettive di esofagite: GVHD, radioterapia e malattie bollose."
+    en: "Tell me about the non-infectious causes of esophagitis: GVHD, irradiation and blistering diseases."
+    focus: [pathogenesis, clinical, prognosis]
+    level: 3
+images:
+  - id: infectious-and-chemical-esophagitis-gross-1
+    role: gross
+    pairWith: infectious-and-chemical-esophagitis-micro-1
+  - id: infectious-and-chemical-esophagitis-micro-1
+    role: micro
+  - id: infectious-and-chemical-esophagitis-micro-2
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "19"
+    pages: "772-774"
+lastUpdated: 2026-11-14
+status: published
