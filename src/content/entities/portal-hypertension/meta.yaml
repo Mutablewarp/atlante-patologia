@@ -1,0 +1,125 @@
+id: portal-hypertension
+module: o20
+tier: core
+kind: process
+names:
+  it: "Ipertensione portale"
+  en: "Portal hypertension"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: ["HVPG"]
+summary:
+  it: "Aumento della pressione nel circolo portale per un ostacolo al flusso, pre-sinusoidale, sinusoidale o post-sinusoidale, con varici, ascite, splenomegalia e complicanze renali e polmonari."
+  en: "Raised pressure in the portal circuit from an obstruction to flow, presinusoidal, sinusoidal or postsinusoidal, with varices, ascites, splenomegaly and kidney and lung complications."
+lenses:
+  system: [liver-biliary, vessels, gastrointestinal]
+  process: [repair-fibrosis, thrombosis-embolism]
+  pattern: []
+  presentation: [organomegaly, edema, dyspnea]
+  marker: [laboratory]
+  group: [vascular]
+learningObjectives:
+  - it: "Classificare l'ipertensione portale in pre-sinusoidale, sinusoidale e post-sinusoidale, con una causa per ciascun tipo."
+    en: "Classify portal hypertension as presinusoidal, sinusoidal or postsinusoidal, with one cause for each."
+  - it: "Spiegare perché in cirrosi la pressione portale sale e come nascono ascite, sindrome epatorenale ed epatopolmonare."
+    en: "Explain why portal pressure rises in cirrhosis and how ascites, hepatorenal and hepatopulmonary syndromes arise."
+  - it: "Descrivere varici, splenomegalia e peritonite batterica spontanea con i criteri diagnostici principali."
+    en: "Describe varices, splenomegaly and spontaneous bacterial peritonitis with the main diagnostic criteria."
+  - it: "Riconoscere il quadro macroscopico e microscopico della sindrome di Budd-Chiari."
+    en: "Recognize the gross and microscopic picture of Budd–Chiari syndrome."
+prerequisites: []
+relations:
+  - type: complicationOf
+    target: cirrhosis
+    note:
+      it: "La cirrosi è la causa più comune di ipertensione portale nei paesi occidentali."
+      en: "Cirrhosis is the most common cause of portal hypertension in the Western world."
+  - type: sharesMechanism
+    target: thrombosis
+    note:
+      it: "La trombosi della vena porta o delle vene epatiche ostruisce il flusso."
+      en: "Thrombosis of the portal or hepatic veins obstructs flow."
+  - type: differentialOf
+    target: pulmonary-hypertension
+    note:
+      it: "L'ipertensione portopolmonare è un'ipertensione polmonare in corso di ipertensione portale."
+      en: "Portopulmonary hypertension is pulmonary hypertension in the setting of portal hypertension."
+quickCheck:
+  - id: portal-hypertension-q1
+    q:
+      it: "In quali tre sedi può trovarsi l'ostacolo al flusso portale e in quale di esse il gradiente pressorio epatico è di solito normale?"
+      en: "In which three places can the obstruction to portal flow lie, and in which is the hepatic venous pressure gradient usually normal?"
+    a:
+      it: "Prima dei sinusoidi, nei sinusoidi o dopo di essi; il gradiente è di solito normale nel blocco post-sinusoidale."
+      en: "Before the sinusoids, in them or after them; the gradient is usually normal in postsinusoidal block."
+    kind: short
+  - id: portal-hypertension-q2
+    q:
+      it: "Perché l'ascite compare nell'ipertensione portale?"
+      en: "Why does ascites appear in portal hypertension?"
+    a:
+      it: "La vasodilatazione riduce il volume arterioso efficace; i reni trattengono sodio e acqua, la pressione sinusoidale è alta e l'albumina è bassa."
+      en: "Vasodilation lowers effective arterial volume; the kidneys retain sodium and water, sinusoidal pressure is high and albumin is low."
+    kind: short
+  - id: portal-hypertension-q3
+    q:
+      it: "Quale reperto nel liquido ascitico stabilisce la diagnosi di peritonite batterica spontanea?"
+      en: "Which finding in ascitic fluid establishes spontaneous bacterial peritonitis?"
+    a:
+      it: "Più di 250 neutrofili per microlitro."
+      en: "More than 250 neutrophils per microliter."
+    kind: short
+  - id: portal-hypertension-q4
+    q:
+      it: "Qual è la complicanza più importante dell'ipertensione portale e che cosa può provocare?"
+      en: "What is the most important complication of portal hypertension, and what can it cause?"
+    a:
+      it: "Le varici esofagee, che sanguinano nel tratto gastrointestinale superiore, a volte in modo massivo."
+      en: "Esophageal varices, which bleed into the upper gastrointestinal tract, sometimes massively."
+    kind: short
+selfExplain:
+  - it: "Perché la vasodilatazione mesenterica peggiora l'ipertensione portale?"
+    en: "Why does mesenteric vasodilation worsen portal hypertension?"
+  - it: "Perché la sindrome epatorenale è reversibile dopo trapianto di fegato?"
+    en: "Why is hepatorenal syndrome reversible after liver transplantation?"
+  - it: "Come si comporta l'HVPG nel blocco sinusoidale rispetto a quello postsinusoidale?"
+    en: "How does the HVPG behave in sinusoidal block compared with postsinusoidal block?"
+chain:
+  - pathology:
+      it: "Cirrosi con ostruzione dei sinusoidi e vasodilatazione splancnica"
+      en: "Cirrhosis with sinusoidal obstruction and splanchnic vasodilation"
+    sign:
+      it: "Ascite e varici esofagee"
+      en: "Ascites and esophageal varices"
+    lab:
+      it: "Gradiente albumina siero-ascite superiore a 1,1"
+      en: "Serum–ascites albumin gradient above 1.1"
+examQuestions:
+  - it: "Mi parli dell'ipertensione portale: dove può trovarsi l'ostacolo al flusso e quale causa conosce per ciascuna sede?"
+    en: "Tell me about portal hypertension: where can the obstruction to flow lie, and which cause do you know for each site?"
+    focus: [etiology, high-yield]
+    level: 1
+  - it: "Perché nell'ipertensione portale avanzata compaiono ascite, sindrome epatorenale e sindrome epatopolmonare?"
+    en: "Why do ascites, hepatorenal syndrome and hepatopulmonary syndrome appear in advanced portal hypertension?"
+    focus: [pathogenesis, clinical]
+    level: 2
+  - it: "Come distingue un blocco sinusoidale da uno post-sinusoidale, e con quale misurazione?"
+    en: "How do you tell a sinusoidal block from a postsinusoidal block, and with which measurement?"
+    focus: [diagnosis, traps]
+    level: 3
+images:
+  - id: portal-hypertension-gross-1
+    role: gross
+    pairWith: portal-hypertension-micro-1
+  - id: portal-hypertension-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "20"
+    pages: "851-856"
+lastUpdated: 2026-11-15
+status: published
