@@ -1,0 +1,586 @@
+entity: drug-induced-interstitial-nephritis
+claims:
+  - claimId: drug-induced-interstitial-nephritis-c001
+    section: definition
+    statement: "A drug or toxin can injure the renal tubules and the surrounding interstitium, giving a tubulointerstitial nephritis."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "961-963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c002
+    section: definition
+    statement: "Drugs produce two main kidney patterns: an acute hypersensitivity nephritis and a chronic analgesic nephropathy."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "961-962" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c003
+    section: definition
+    statement: "Besides drugs, free light chains and urate crystals are toxic to the tubules."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c004
+    section: definition
+    statement: "Light-chain cast nephropathy is the kidney disease seen most often in myeloma patients."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c005
+    section: etiology
+    statement: "Beta-lactam antibiotics are the leading antibiotic cause; NSAIDs and diuretics are other frequent triggers."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "962" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c006
+    section: etiology
+    statement: "Analgesic nephropathy follows heavy use of mixed painkillers, with aspirin typically paired with acetaminophen or phenacetin."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "961" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c007
+    section: etiology
+    statement: "Affected patients usually have a lifetime intake above 2 kg of analgesic."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "961" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c008
+    section: etiology
+    statement: "Phenacetin is the agent most often behind analgesic nephropathy."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "961" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c009
+    section: etiology
+    statement: "The United States is one of the many countries where phenacetin is no longer allowed."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "961" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c010
+    section: etiology
+    statement: "Tubular injury and cast formation follow when monoclonal light chains appear in the urine."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c011
+    section: etiology
+    statement: "High uric acid from gout or from tumor lysis after chemotherapy can cause urate nephropathy."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c012
+    section: etiology
+    statement: "Hyperuricemia can follow long-term use of certain diuretics, which reduce uric acid excretion."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c013
+    section: etiology
+    statement: "Lead poisoning lasting years makes the proximal tubules secrete less uric acid, which causes saturnine gout."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c014
+    section: pathogenesis
+    statement: "Hypersensitivity nephritis is a type IV, cell-mediated reaction, as shown by activated T cells and eosinophils in the kidney."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "962" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c015
+    section: pathogenesis
+    statement: "Either the drug (or a metabolite) or a tissue component the drug changed can serve as the immune target."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "962" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c016
+    section: pathogenesis
+    statement: "Vessel changes caused by the drug leading to ischemia, direct toxicity, or both may be involved; the exact mechanism is unclear."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "961" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c017
+    section: pathogenesis
+    statement: "Distal tubular cells secrete Tamm-Horsfall glycoprotein, and in acidic urine the light chains filtered by the glomeruli bind to it and form casts."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c018
+    section: pathogenesis
+    statement: "Casts obstruct the tubules and free light chains are toxic to the epithelium; both cause the renal dysfunction."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c019
+    section: pathogenesis
+    statement: "AL amyloidosis, light-chain deposition disease and cast nephropathy are all possible outcomes, and the structure of the light chain decides which occurs."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c020
+    section: pathogenesis
+    statement: "Obstruction of the collecting ducts by uric acid crystals, formed in the acidic urine there, causes AKI."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c021
+    section: pathogenesis
+    statement: "Blood uric acid surges in tumor lysis because the DNA purines of the massively dying tumor cells are catabolized to it."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c022
+    section: pathogenesis
+    statement: "Gout causes chronic urate nephropathy: monosodium urate crystals collect within the tubules and the surrounding interstitium."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c023
+    section: gross
+    statement: "In analgesic nephropathy entire papillae die, and many stay where they were as formless masses."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "962" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c024
+    section: gross
+    statement: "Necrotic papillae frequently undergo dystrophic calcification."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "962" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c025
+    section: gross
+    statement: "A necrotic papilla may detach entirely or remain joined to the kidney along the demarcation line."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "962" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c026
+    section: gross
+    statement: "Yellow streaks in the papillae are the gross sign of acute urate nephropathy, caused by precipitated uric acid in the collecting ducts."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c027
+    section: micro
+    statement: "In hypersensitivity nephritis, lymphocytes with an occasional eosinophil form scattered patches in the cortex."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "962" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c028
+    section: micro
+    statement: "About 5-10% of the white cells in the tissue are eosinophils."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "962" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c029
+    section: micro
+    statement: "Involvement is usually milder in the medulla than in the cortex."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "962" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c030
+    section: micro
+    statement: "Within tubular lumens in particular, eosinophils tend to lie in groups."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "962" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c031
+    section: micro
+    statement: "In tubulitis, leukocytes patchily enter the lining of proximal and distal tubules."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c032
+    section: micro
+    statement: "Mononuclear cells mixed with eosinophils infiltrate the edematous interstitium in hypersensitivity nephritis."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "962" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c033
+    section: micro
+    statement: "Pyelonephritis or blood-borne bacterial infection is suspected when neutrophils appear, since they are scarce in hypersensitivity nephritis."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "962-963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c034
+    section: micro
+    statement: "Small granulomas may form late in the course."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c035
+    section: micro
+    statement: "Inflammation spares the glomeruli and the blood vessels in this disease."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c036
+    section: micro
+    statement: "When NSAIDs are the cause, the biopsy may also show features of minimal-change disease."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c037
+    section: micro
+    statement: "Before any other lesion appears, the capillaries under the urothelium have uniformly thickened walls."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "961" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c038
+    section: micro
+    statement: "Basement membranes of tubules and capillaries thicken in patches and small foci of coagulative necrosis appear, but only in the papillae and inner medulla at first."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "961-962" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c039
+    section: micro
+    statement: "Little inflammation surrounds the necrosis; as it merges, it reaches the collecting ducts only after the corticomedullary junction."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "962" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c040
+    section: micro
+    statement: "In the overlying cortex the tubules shrink, then scarring and chronic inflammation follow."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "962" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c041
+    section: micro
+    statement: "Many deep-pink casts with a glassy sheen lie in the lumens of distal tubules and collecting ducts."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c042
+    section: micro
+    statement: "Cracks and sharp corners give the casts a crystal-like look."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c043
+    section: micro
+    statement: "Macrophages and multinucleated giant cells can gather around casts as a foreign-body response."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c044
+    section: micro
+    statement: "Nephrocalcinosis, tubular atrophy and interstitial scarring mark older cast-nephropathy lesions."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c045
+    section: ancillary
+    statement: "On routine histology, hypersensitivity nephritis is recognized by interstitial lymphocytes mixed with eosinophils and by tubulitis."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "962-963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c046
+    section: ancillary
+    statement: "In the casts of suspected cast nephropathy, immunostains can demonstrate light chains and Tamm-Horsfall protein."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c047
+    section: clinical
+    statement: "AKI typically develops about 2 weeks into treatment with the drug."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c048
+    section: clinical
+    statement: "Fever and rash can accompany the picture as signs of allergy."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c049
+    section: clinical
+    statement: "Tubular dysfunction is common; renal tubular acidosis and urinary sodium wasting are examples."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c050
+    section: clinical
+    statement: "Analgesic nephropathy is silent until late, then causes anemia, hypertension, hematuria and tubular dysfunction."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "962" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c051
+    section: clinical
+    statement: "Dead papillary tips that break off and travel down the ureter can cause renal colic."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "962" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c052
+    section: clinical
+    statement: "Renal failure in cast nephropathy can be either acute or chronic."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c053
+    section: clinical
+    statement: "Urinary protein is mainly light chains, and its amount can fall short of nephrotic levels."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c054
+    section: diagnosis
+    statement: "Urinalysis in hypersensitivity nephritis shows eosinophils; red cells and, less often, white-cell casts may accompany them."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c055
+    section: diagnosis
+    statement: "In myeloma, nephrotic-range proteinuria points away from cast nephropathy, toward AL amyloid or light-chain deposits."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c056
+    section: prognosis
+    statement: "After the causative drug is withdrawn, full recovery usually follows within weeks to months."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c057
+    section: prognosis
+    statement: "End-stage renal disease is a frequent end point of analgesic nephropathy, reached through progressive renal failure."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "962" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c058
+    section: differential
+    statement: "Neutrophils in the infiltrate favor pyelonephritis or blood-borne bacterial infection over hypersensitivity nephritis."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "962-963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c059
+    section: differential
+    statement: "The acute interstitial nephritis caused by analgesics such as NSAIDs presents as AKI and is separate from chronic analgesic nephropathy."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "961" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c060
+    section: differential
+    statement: "NSAID-related interstitial nephritis may be accompanied by minimal-change disease features."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c061
+    section: differential
+    statement: "Heavy proteinuria in myeloma favors AL amyloidosis over cast nephropathy."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c062
+    section: high-yield
+    statement: "The T cell and eosinophil infiltrate marks a type IV reaction in drug-induced acute interstitial nephritis."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "962" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c063
+    section: high-yield
+    statement: "AKI from drug-induced interstitial nephritis typically appears about 2 weeks into treatment."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c064
+    section: high-yield
+    statement: "Withdrawing the culprit drug allows most patients to recover fully."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c065
+    section: high-yield
+    statement: "In analgesic nephropathy papillary necrosis, a medullary injury, is an early event."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "961" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c066
+    section: high-yield
+    statement: "Phenacetin is the analgesic most often associated with nephropathy."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "961" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c067
+    section: high-yield
+    statement: "Acidic urine lets light chains combine with Tamm-Horsfall glycoprotein into casts."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c068
+    section: high-yield
+    statement: "In tumor lysis, the uric acid surge precipitates in collecting ducts and causes AKI."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c069
+    section: traps
+    statement: "Analgesic nephropathy is chronic, whereas analgesics can also trigger an acute interstitial nephritis presenting as AKI; the two are separate."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "961-962" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c070
+    section: traps
+    statement: "Hypersensitivity nephritis has few neutrophils, and finding them suggests infection."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "962-963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c071
+    section: traps
+    statement: "Nephrotic-range protein loss in myeloma suggests AL amyloid or light-chain deposits rather than casts."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c072
+    section: traps
+    statement: "In hypersensitivity nephritis the glomeruli and vessels are free of inflammation."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-interstitial-nephritis-c073
+    section: mnemonics
+    statement: "Hypersensitivity nephritis can bring fever, rash, urinary eosinophils and onset roughly 2 weeks into drug therapy."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "963" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15

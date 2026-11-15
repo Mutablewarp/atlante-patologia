@@ -1,0 +1,122 @@
+id: drug-induced-interstitial-nephritis
+module: o22
+tier: core
+kind: disease
+names:
+  it: "Nefriti tubulo-interstiziali da farmaci e nefropatie tossiche"
+  en: "Drug-induced and toxic tubulointerstitial nephritis"
+  eponyms: []
+  synonyms:
+    it: ["Nefrite interstiziale acuta da ipersensibilità", "Nefropatia da analgesici"]
+    en: ["Hypersensitivity interstitial nephritis", "Analgesic nephropathy"]
+  abbreviations: ["AIN", "ATIN"]
+summary:
+  it: "Danno dei tubuli e dell'interstizio renale da farmaci o tossine: nefrite acuta da ipersensibilità con eosinofili, nefropatia cronica da analgesici con necrosi papillare, cilindri di catene leggere e cristalli di urato."
+  en: "Injury of renal tubules and interstitium by drugs or toxins: acute hypersensitivity nephritis with eosinophils, chronic analgesic nephropathy with papillary necrosis, light-chain casts and urate crystals."
+lenses:
+  system: [kidney]
+  process: [hypersensitivity, chronic-inflammation, necrosis]
+  pattern: [necrosis-coagulative, dystrophic-calcification, granuloma, hyaline-change]
+  presentation: [hematuria]
+  marker: [laboratory, ihc]
+  group: [toxic-environmental, immune, inflammatory]
+learningObjectives:
+  - it: "Descrivere il quadro istologico della nefrite interstiziale da ipersensibilità: infiltrato linfocitario con eosinofili e tubulite."
+    en: "Describe the histology of hypersensitivity interstitial nephritis: a lymphocytic infiltrate with eosinophils and tubulitis."
+  - it: "Spiegare perché la nefrite da farmaci è una reazione di tipo IV e quali farmaci la causano più spesso."
+    en: "Explain why drug-induced nephritis is a type IV reaction and which drugs most often cause it."
+  - it: "Descrivere la nefropatia da analgesici e la sequenza che porta alla necrosi papillare."
+    en: "Describe analgesic nephropathy and the sequence that leads to papillary necrosis."
+  - it: "Riconoscere le nefropatie tossiche da catene leggere e da urati e il loro meccanismo."
+    en: "Recognize toxic nephropathies due to light chains and urate, and their mechanisms."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: pyelonephritis
+    note:
+      it: "I neutrofili sono rari nella nefrite da ipersensibilità; la loro presenza fa pensare a infezione."
+      en: "Neutrophils are rare in hypersensitivity nephritis; their presence suggests infection."
+  - type: differentialOf
+    target: minimal-change-disease
+    note:
+      it: "La nefrite da FANS può associare caratteri di malattia a lesioni minime."
+      en: "NSAID nephritis may carry minimal-change features."
+  - type: sharesMechanism
+    target: light-chain-cast-nephropathy
+    note:
+      it: "Cilindri tubulari tossici e ostruttivi formati da catene leggere."
+      en: "Toxic, obstructing tubular casts formed by light chains."
+  - type: differentialOf
+    target: amyloidosis
+    note:
+      it: "Proteinuria nefrosica nel mieloma orienta verso amiloidosi AL piuttosto che verso la nefropatia da cilindri."
+      en: "Nephrotic-range proteinuria in myeloma points to AL amyloidosis rather than cast nephropathy."
+quickCheck:
+  - id: drug-induced-interstitial-nephritis-q1
+    q:
+      it: "Quale tipo di reazione immunitaria sostiene la nefrite interstiziale acuta da farmaci, e quali cellule la indicano?"
+      en: "Which type of immune reaction underlies acute drug-induced interstitial nephritis, and which cells point to it?"
+    a:
+      it: "Una reazione cellulo-mediata di tipo IV, indicata dall'infiltrato di linfociti T attivati ed eosinofili."
+      en: "A type IV cell-mediated reaction, indicated by the infiltrate of activated T cells and eosinophils."
+    kind: short
+  - id: drug-induced-interstitial-nephritis-q2
+    q:
+      it: "Che cosa deve far sospettare la presenza di molti neutrofili in una biopsia con infiltrato interstiziale?"
+      en: "What should many neutrophils in a biopsy with an interstitial infiltrate make you suspect?"
+    a:
+      it: "Pielonefrite o infezione batterica ematogena, perché nella nefrite da ipersensibilità i neutrofili sono rari."
+      en: "Pyelonephritis or bloodborne bacterial infection, because neutrophils are rare in hypersensitivity nephritis."
+    kind: short
+  - id: drug-induced-interstitial-nephritis-q3
+    q:
+      it: "Come si formano i cilindri della nefropatia da catene leggere?"
+      en: "How do the casts of light-chain cast nephropathy form?"
+    a:
+      it: "Le catene leggere filtrate dal glomerulo si legano alla glicoproteina di Tamm-Horsfall nell'urina acida e formano cilindri."
+      en: "Light chains filtered by the glomerulus bind Tamm-Horsfall glycoprotein in acidic urine and form casts."
+    kind: short
+  - id: drug-induced-interstitial-nephritis-q4
+    q:
+      it: "Quale analgesico è più spesso associato alla nefropatia da analgesici, e come evolve la lesione papillare?"
+      en: "Which analgesic is most often linked to analgesic nephropathy, and how does the papillary lesion evolve?"
+    a:
+      it: "La fenacetina. L'intera papilla va incontro a necrosi e può staccarsi oppure restare unita al rene lungo la linea di demarcazione."
+      en: "Phenacetin. The entire papilla undergoes necrosis and may detach or stay joined to the kidney along the demarcation line."
+    kind: short
+selfExplain:
+  - it: "Nella nefrite da ipersensibilità, quale decorso ci si aspetta dopo la sospensione del farmaco responsabile, e in quanto tempo?"
+    en: "In hypersensitivity nephritis, what course is expected after the causative drug is withdrawn, and over what time?"
+  - it: "Nella nefropatia da analgesici, quali lesioni compaiono all'inizio nelle papille e nella midollare interna, e che cosa segue nella corticale sovrastante?"
+    en: "In analgesic nephropathy, which lesions appear first in the papillae and inner medulla, and what follows in the overlying cortex?"
+examQuestions:
+  - it: "Mi parli della nefrite interstiziale da ipersensibilità: che cosa vede al microscopio?"
+    en: "Tell me about hypersensitivity interstitial nephritis: what do you see under the microscope?"
+    focus: [micro, ancillary]
+    level: 1
+  - it: "Mi parli della nefropatia da analgesici e della necrosi papillare."
+    en: "Tell me about analgesic nephropathy and papillary necrosis."
+    focus: [etiology, gross, micro]
+    level: 1
+  - it: "Perché la nefrite interstiziale acuta da farmaci è considerata una reazione di tipo IV, e quali farmaci la causano più spesso?"
+    en: "Why is acute drug-induced interstitial nephritis considered a type IV reaction, and which drugs most often cause it?"
+    focus: [etiology, pathogenesis]
+    level: 2
+  - it: "Quali nefrotossine, oltre ai farmaci, possono danneggiare i tubuli, e con quale meccanismo?"
+    en: "Which nephrotoxins besides drugs can injure the tubules, and by what mechanism?"
+    focus: [etiology, pathogenesis, micro]
+    level: 2
+  - it: "Come distingue una nefrite da ipersensibilità da una pielonefrite, e un mieloma con nefropatia da cilindri da uno con amiloidosi AL?"
+    en: "How do you tell hypersensitivity nephritis from pyelonephritis, and myeloma cast nephropathy from AL amyloidosis?"
+    focus: [micro, diagnosis, differential]
+    level: 3
+images:
+  - { id: drug-induced-interstitial-nephritis-micro-1, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "22"
+    pages: "961-963"
+lastUpdated: 2026-11-15
+status: published
