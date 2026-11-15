@@ -121,7 +121,7 @@ export function mount(canvas: HTMLCanvasElement, opts: { manifestUrl: string; re
   - an organ with no published card is lighter (mixed towards `--surface-2`) and stays selectable.
 - Label: the selected organ's name in `--font-display` with a leader line, as HTML over the canvas (crisp text, selectable, translated).
 - Controls use the existing button and `.segmented` styles (`src/styles/viewer.css`, `entity.css`). Touch targets ≥ 44 px. Focus ring `--focus`.
-- Phone first (below 48rem): the stage spans the width in a 4:5 box, at most 70svh. The system chips are one row that scrolls sideways with scroll snap, right under the stage, within thumb reach. The controls are one row of 44 px buttons. The organ panel rises from the bottom as a sheet (at most 60svh, a close button, focus kept inside while it is open, `Escape` closes). No horizontal scroll of the page at 320 px.
+- Phone first (below 48rem): the stage spans the width in a 4:5 box, at most 70svh. The system chips are one row that scrolls sideways with scroll snap, right under the stage, within thumb reach. The controls are one row of 44 px buttons. The organ panel rises from the bottom as a sheet (at most 60svh, a close button named after the organ, `Escape` closes; the sheet is not a modal, so there is no focus trap: `Enter` on the stage moves to the organ's card list). No horizontal scroll of the page at 320 px.
 - Wide screens: stage on the left, panel on the right, chips above both.
 
 ## 8. Cards and progress

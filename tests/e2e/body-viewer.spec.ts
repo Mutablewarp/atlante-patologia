@@ -330,6 +330,35 @@ for (const lang of ['it', 'en'] as const) {
       await expect(page.locator(BODY)).toHaveAttribute('data-webgl', 'on', { timeout: 30_000 });
     });
 
+    test('a selection that hides the focused link leaves the focus on something that works', async ({ page }) => {
+      const on = await startViewer(page, lang);
+      test.skip(!on, 'no WebGL on this runner');
+      const pick = (await pickOrgan(page))!;
+      // focus a card link in a system other than the one that is about to be chosen
+      const other = await page.evaluate((sys) => {
+        const a = [...document.querySelectorAll<HTMLAnchorElement>('ap-body > section[data-system] .body-cards a')].find((x) => x.closest('section[data-system]')!.getAttribute('data-system') !== sys);
+        a?.focus({ preventScroll: true });
+        return !!a && document.activeElement === a;
+      }, pick.system);
+      test.skip(!other, 'no card link in another system');
+      await chip(page, pick.system).dispatchEvent('click');
+      await expect(page.locator(`${BODY} > section[data-system]:not([hidden])`)).toHaveCount(1);
+      expect(await page.evaluate(() => document.activeElement !== document.body && !!document.activeElement)).toBe(true);
+    });
+
+    test('Enter on the stage moves to the card list of the selected organ', async ({ page }) => {
+      const on = await startViewer(page, lang);
+      test.skip(!on, 'no WebGL on this runner');
+      const pick = (await pickOrgan(page))!;
+      await chip(page, pick.system).dispatchEvent('click');
+      await organLink(page, pick.organ).dispatchEvent('click');
+      await expect(page.locator(BODY)).toHaveAttribute('data-organ', pick.organ);
+      await page.locator('[data-stage]').evaluate((el) => (el as HTMLElement).focus({ preventScroll: true }));
+      await page.keyboard.press('Enter');
+      expect(await page.evaluate(() => document.activeElement?.hasAttribute('data-organ-link') ?? false)).toBe(true);
+      await expect(organLink(page, pick.organ)).toBeFocused();
+    });
+
     test('the system of a proxy organ is loaded when the page opens on it', async ({ page }) => {
       await page.goto(`${lang}/body/#organ-bone-marrow`);
       if (!isWide(page)) await tapLoad(page);
@@ -374,9 +403,12 @@ for (const lang of ['it', 'en'] as const) {
     test('a click on the stage centre chooses an organ; a click far from the body clears it and keeps the system', async ({ page }) => {
       const on = await startViewer(page, lang);
       test.skip(!on, 'no WebGL on this runner');
-      const box = await clickCentre(page);
+      await clickCentre(page);
       const system = await page.locator(BODY).getAttribute('data-system');
       expect(system).toBeTruthy();
+      // the selection may have scrolled the page (the chosen organ's system is now the only one listed): read the stage again
+      await page.waitForTimeout(300);
+      const box = await canvasBox(page);
       await page.mouse.click(box.x + 4, box.y + 4);
       await expect(page.locator(BODY)).not.toHaveAttribute('data-organ', /.+/);
       await expect(page.locator(BODY)).toHaveAttribute('data-system', system!);

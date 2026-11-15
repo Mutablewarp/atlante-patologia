@@ -25,6 +25,8 @@ export type Controller = {
 };
 export type Options = {
   manifestUrl: string;
+  /** the manifest request, started before the chunk was imported so that both travel at once */
+  manifestResponse?: Promise<Response>;
   reducedMotion: boolean;
   colors: Colors;
   /** Organs with a published card; the others are drawn lighter. Absent: all count as published. */
@@ -58,7 +60,7 @@ const freeGeometries = (root: Object3D) => root.traverse((o) => (o as Mesh).geom
 
 export async function mount(canvas: HTMLCanvasElement, opts: Options): Promise<Controller> {
   const manifestUrl = new URL(opts.manifestUrl, location.href);
-  const res = await fetch(manifestUrl);
+  const res = await (opts.manifestResponse ?? fetch(manifestUrl));
   if (!res.ok) throw new Error(`manifest: HTTP ${res.status}`);
   const manifest = (await res.json()) as Manifest;
   const published = new Set(opts.published ?? Object.keys(manifest.organs));

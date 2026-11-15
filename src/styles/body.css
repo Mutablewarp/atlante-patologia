@@ -156,10 +156,16 @@ ap-body section[data-organ]:has(> h3 a[aria-current]) {
   border: 1px solid var(--rule);
   border-radius: var(--radius-s);
 }
-.body-stage:focus-visible,
-.body-controls button:focus-visible {
+.body-stage:focus-visible {
   outline: 2px solid var(--focus);
   outline-offset: 2px;
+}
+/* the row and the chip strip clip an outer ring: it is drawn inside the control, with a paper band (base.css) */
+.body-controls button:focus-visible,
+.body-systems a:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: -3px;
+  box-shadow: inset 0 0 0 5px var(--paper);
 }
 .body-stage > picture,
 .body-stage > canvas {
@@ -278,6 +284,9 @@ ap-body section[data-organ]:has(> h3 a[aria-current]) {
   display: block;
   margin-inline: auto;
 }
+ap-body:not([data-on]) .body-controls {
+  visibility: hidden; /* no empty named group in the accessibility tree; the row keeps its height */
+}
 .body-controls button[hidden],
 .body-start[hidden] {
   display: none;
@@ -290,6 +299,10 @@ ap-body section[data-organ]:has(> h3 a[aria-current]) {
   left: 50%;
   transform: translateX(-50%);
   min-height: 2.75rem;
+}
+/* The button answers only once the element script has run: until then a tap would do nothing */
+ap-body:not(:defined) .body-start {
+  visibility: hidden;
 }
 .body-start:focus-visible {
   outline: 2px solid var(--focus);
@@ -357,7 +370,9 @@ ap-body section[data-organ]:has(> h3 a[aria-current]) {
     box-shadow: var(--shadow);
   }
   @media (min-width: 37.5rem) {
+    /* from 600 px the nav is a rail on the left (88 px, above the sheet): the sheet starts after it */
     ap-body[data-on][data-picked] section[data-organ]:has(> h3 a[aria-current]) {
+      left: var(--rail-w);
       bottom: 0;
       padding-bottom: calc(var(--space-4) + env(safe-area-inset-bottom));
     }
@@ -372,6 +387,15 @@ ap-body section[data-organ]:has(> h3 a[aria-current]) {
   }
   ap-body[data-on][data-picked] section[data-organ]:not(:has(> h3 a[aria-current])) {
     margin-block: var(--space-1);
+  }
+  /* a link that takes focus is not parked under the sheet (SC 2.4.11) */
+  html:has(ap-body[data-on][data-picked] section[data-organ] > h3 a[aria-current]) {
+    scroll-padding-bottom: calc(50svh + var(--tabbar-h) + env(safe-area-inset-bottom) + var(--space-4));
+  }
+  @media (min-width: 37.5rem) {
+    html:has(ap-body[data-on][data-picked] section[data-organ] > h3 a[aria-current]) {
+      scroll-padding-bottom: calc(50svh + var(--space-4));
+    }
   }
   /* room under the page for the sheet, so that the stage can be scrolled up above it */
   ap-body[data-on][data-picked]:has(section[data-organ] > h3 a[aria-current]) {
@@ -414,7 +438,8 @@ ap-body section[data-organ]:has(> h3 a[aria-current]) {
   /* chips across the top, the stage on the left below the top bar, the tree on the right */
   ap-body {
     display: grid;
-    grid-template-columns: minmax(0, 30rem) minmax(0, 1fr);
+    /* the stage never takes more than 45% of the row: at 768 px, beside the 88 px rail, the tree would be left 118 px */
+    grid-template-columns: minmax(0, min(30rem, 45%)) minmax(0, 1fr);
     column-gap: var(--space-6);
     align-items: start;
   }
@@ -550,4 +575,26 @@ ap-body section[data-organ]:has(> h3 a[aria-current]) {
   display: flex;
   align-items: center;
   min-height: 2.75rem;
+}
+
+/* Forced colors drop backgrounds and shadows: the current chip, the selected organ and the label's leader line must
+   not rely on them (SC 1.4.1, 1.4.11). */
+@media (forced-colors: active) {
+  .body-systems a[aria-current] {
+    border-width: 3px;
+    text-decoration: underline 2px;
+  }
+  ap-body section[data-organ]:has(> h3 a[aria-current]),
+  ap-body section[data-organ]:target {
+    border-width: 3px;
+  }
+  .body-organs li:has(> [data-organ-link][aria-current]),
+  .body-organs li:target {
+    border-left: 4px solid CanvasText;
+  }
+  .body-label::before,
+  .body-label::after {
+    forced-color-adjust: none;
+    background: CanvasText;
+  }
 }

@@ -134,6 +134,7 @@ for (const lang of ['it', 'en'] as const) {
       await expect(list).toBeVisible();
       await expect(page.locator('.body-home section[data-system][data-open]')).toHaveCount(1);
       await expect(list.locator(`li[data-organ="${pick.organ}"] a[data-organ-link]`)).toBeVisible();
+      await expect(page.locator('.body-home [data-status]')).not.toBeEmpty(); // the open list is announced although the viewer is off
       expect(Math.abs((await page.evaluate(() => scrollY)) - before)).toBeLessThanOrEqual(2);
     });
 
@@ -202,3 +203,16 @@ for (const lang of ['it', 'en'] as const) {
     });
   });
 }
+
+test.describe('between 600 and 767 px the sheet starts after the nav rail', () => {
+  test.use({ viewport: { width: 640, height: 800 } });
+  test('the sheet does not slide under the rail', async ({ page }) => {
+    const pick = await openSheet(page, 'it');
+    test.skip(!pick, 'no WebGL on this runner');
+    await scrollSettled(page);
+    const sheetBox = (await sheet(page, pick!.organ).boundingBox())!;
+    const rail = (await page.locator('.nav-list').boundingBox())!;
+    expect(rail.width).toBeLessThan(120); // the rail, not the tab bar
+    expect(sheetBox.x).toBeGreaterThanOrEqual(rail.x + rail.width - 1);
+  });
+});

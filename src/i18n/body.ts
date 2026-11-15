@@ -21,8 +21,8 @@ export const tBody = defineStrings({
   stage: { it: 'Corpo umano in 3D', en: 'Human body in 3D' },
   controls: { it: 'Comandi del modello 3D', en: '3D model controls' },
   help: {
-    it: 'Con il modello attivo: frecce per ruotare, più per avvicinare, meno per allontanare, 0 per ripristinare la vista, le parentesi quadre per cambiare organo, Esc per deselezionare.',
-    en: 'With the model on: arrow keys rotate, plus zooms in, minus zooms out, 0 resets the view, the square brackets change organ, Esc clears the selection.',
+    it: 'Con il modello attivo: frecce per ruotare, più per avvicinare, meno per allontanare, 0 per ripristinare la vista, le parentesi quadre per cambiare organo, Invio per passare alle sue schede, Esc per deselezionare.',
+    en: 'With the model on: arrow keys rotate, plus zooms in, minus zooms out, 0 resets the view, the square brackets change organ, Enter moves to its cards, Esc clears the selection.',
   },
   load: { it: 'Esplora in 3D', en: 'Explore in 3D' },
   off: { it: 'Spegni il 3D', en: 'Turn 3D off' },

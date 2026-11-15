@@ -167,11 +167,15 @@ class ApBody extends HTMLElement {
       if (next[key]) this.dataset[key] = next[key]!;
       else delete this.dataset[key];
     }
+    const was = document.activeElement as HTMLElement | null;
     this.mark();
     this.centreChip();
     this.stageIntoView();
     this.sections();
+    this.rescueFocus(was);
     this.reveal(next);
+    // With the viewer on, apply() says it once the model has changed; without it (the home page, a phone) nothing else would.
+    if (!this.ctrl && this.interacted) this.say(this.message(next));
     const run = this.queue.then(() => this.apply(next));
     this.queue = run.catch((err) => console.error(err));
   }
@@ -314,7 +318,7 @@ class ApBody extends HTMLElement {
       const b = document.createElement('button');
       b.type = 'button';
       b.className = 'body-sheet-close';
-      b.setAttribute('aria-label', label);
+      b.setAttribute('aria-label', `${label}: ${o.querySelector(':scope > h3 a')?.textContent?.trim() ?? ''}`);
       b.innerHTML =
         '<svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>';
       b.addEventListener('click', () => this.closeSheet(), { signal: this.abort?.signal });
@@ -348,6 +352,7 @@ class ApBody extends HTMLElement {
     else if (ev.key === '[') this.selectBy(-1);
     else if (ev.key === ']') this.selectBy(1);
     else if (ev.key === 'Escape') this.setHash({ system: this.state.system, organ: null });
+    else if (ev.key === 'Enter' && this.state.organ) this.querySelector<HTMLElement>(`section[data-system] [data-organ="${CSS.escape(this.state.organ)}"] [data-organ-link]`)?.focus(); // from the stage to the organ's card list
     else return;
     ev.preventDefault();
   }
@@ -388,15 +393,19 @@ class ApBody extends HTMLElement {
     const label = this.$('[data-label]')!;
     const load = this.$('[data-load]') as HTMLButtonElement | null;
     stage.dataset.loading = '';
-    this.say(this.dataset.tLoading!);
+    if (manual) this.say(this.dataset.tLoading!); // a start on its own is not announced: nobody asked for it
     if (load) load.setAttribute('aria-disabled', 'true');
     // The canvas needs a size before mount(); the poster still covers it.
     canvas.hidden = false;
     try {
+      // The manifest is a few kB and the chunk is 160: ask for both at once instead of one after the other.
+      const manifestResponse = fetch(new URL(this.dataset.manifest!, location.href));
+      manifestResponse.catch(() => {}); // a failure is seen by mount(), which awaits it
       const { mount } = await import('./body-3d.ts');
       const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)').matches;
       const ctrl = await mount(canvas, {
         manifestUrl: this.dataset.manifest!,
+        manifestResponse,
         reducedMotion,
         colors: this.colors(),
         published: this.published(),
@@ -411,7 +420,7 @@ class ApBody extends HTMLElement {
       this.dataset.webgl = 'on';
       this.setOn(true);
       this.recolor(); // the theme may have changed while the files were loading
-      this.say(this.dataset.tReady!);
+      if (manual) this.say(this.dataset.tReady!);
       // a smooth scroll to a fragment may still be travelling toward a position the hiding sections are about to remove
       scrollTo({ top: scrollY, behavior: 'instant' });
       if (this.interacted) this.scrollNext = true;
@@ -445,9 +454,27 @@ class ApBody extends HTMLElement {
       stage?.removeAttribute('tabindex');
       stage?.removeAttribute('aria-describedby');
     }
-    // A focused control that has just been hidden would leave the keyboard on <body>: put it where the learner can go on.
-    if (inside && focused && (focused.hidden || focused.closest('[hidden]'))) (on ? stage : load)?.focus({ preventScroll: true });
     this.sections();
+    // A focused control that has just been hidden, or a stage that no longer takes keys, would leave the keyboard on <body>:
+    // put it where the learner can go on.
+    if (inside && focused && (!this.shown(focused) || (!on && focused === stage))) (on ? stage : load)?.focus({ preventScroll: true });
+  }
+
+  private shown(el: HTMLElement): boolean {
+    return el.isConnected && (el.checkVisibility ? el.checkVisibility({ visibilityProperty: true }) : el.getClientRects().length > 0);
+  }
+
+  /** A selection can hide or collapse the section that holds the focus (Back, a chip, the phone CSS): the keyboard goes
+   *  to the organ's own heading link, else the chip of the system, else the stage or the start button. */
+  private rescueFocus(was: HTMLElement | null) {
+    if (!was || was === document.body || !this.contains(was) || this.shown(was)) return;
+    const candidates = [
+      was.closest('section[data-organ]')?.querySelector<HTMLElement>(':scope > h3 a'),
+      this.querySelector<HTMLElement>('.body-systems a[aria-current]'),
+      this.$('[data-stage][tabindex]'),
+      this.$('[data-load]'),
+    ];
+    candidates.find((c): c is HTMLElement => !!c && this.shown(c))?.focus({ preventScroll: true });
   }
 
   private stop() {
