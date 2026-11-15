@@ -1,0 +1,128 @@
+id: lupus-nephritis
+module: o22
+tier: core
+kind: disease
+names:
+  it: "Nefrite lupica"
+  en: "Lupus nephritis"
+  eponyms: []
+  synonyms:
+    it: ["Glomerulonefrite lupica"]
+    en: ["Lupus glomerulonephritis"]
+  abbreviations: []
+summary:
+  it: "Glomerulonefrite da depositi di immunocomplessi nel lupus eritematoso sistemico, classificata in sei classi in base alla sede dei depositi e all'estensione della lesione."
+  en: "Glomerulonephritis from immune complex deposition in systemic lupus erythematosus, divided into six classes by the site of the deposits and the extent of the lesion."
+lenses:
+  system: [kidney, systemic]
+  process: [hypersensitivity, chronic-inflammation]
+  pattern: []
+  presentation: [hematuria, edema]
+  marker: [laboratory]
+  group: [immune, inflammatory]
+learningObjectives:
+  - it: "Elencare le sei classi della nefrite lupica e la sede dei depositi in ciascuna."
+    en: "List the six classes of lupus nephritis and the site of the deposits in each."
+  - it: "Spiegare perché i depositi subendoteliali causano infiammazione e quelli subepiteliali causano proteinuria."
+    en: "Explain why subendothelial deposits cause inflammation and subepithelial deposits cause proteinuria."
+  - it: "Descrivere il quadro in immunofluorescenza e in microscopia elettronica."
+    en: "Describe the immunofluorescence and electron microscopy findings."
+  - it: "Collegare ogni classe al quadro clinico e alla prognosi."
+    en: "Link each class to its clinical picture and prognosis."
+prerequisites: [systemic-lupus-erythematosus]
+relations:
+  - type: complicationOf
+    target: systemic-lupus-erythematosus
+    note:
+      it: "La nefrite è una delle complicanze più frequenti del lupus."
+      en: "Nephritis is one of the most common complications of lupus."
+  - type: differentialOf
+    target: iga-nephropathy
+    note:
+      it: "Colorazione mesangiale per IgA prevalente contro quadro con IgG, IgA, IgM, C3 e C1q."
+      en: "Dominant mesangial IgA staining versus IgG with IgA, IgM, C3 and C1q."
+  - type: differentialOf
+    target: membranoproliferative-glomerulonephritis
+    note:
+      it: "Ipocomplementemia con C3 basso e C4 normale nella glomerulopatia C3."
+      en: "Low C3 with normal C4 in C3 glomerulopathy."
+  - type: sharesMechanism
+    target: membranous-nephropathy
+    note:
+      it: "La classe V ha depositi subepiteliali come la nefropatia membranosa."
+      en: "Class V has subepithelial deposits, as in membranous nephropathy."
+quickCheck:
+  - id: lupus-nephritis-q1
+    q:
+      it: "Perché i depositi subendoteliali scatenano più infiammazione di quelli subepiteliali?"
+      en: "Why do subendothelial deposits trigger more inflammation than subepithelial ones?"
+    a:
+      it: "Perché sono più accessibili ai mediatori infiammatori del sangue; quelli subepiteliali causano soprattutto proteinuria."
+      en: "Because they are more accessible to inflammatory mediators in the blood; subepithelial ones mainly cause proteinuria."
+    kind: short
+  - id: lupus-nephritis-q2
+    q:
+      it: "Qual è la differenza tra classe III e classe IV?"
+      en: "What separates class III from class IV?"
+    a:
+      it: "La lesione è la stessa, ma interessa meno del 50% dei glomeruli nella classe III e più del 50% nella classe IV."
+      en: "The lesion is the same, but it involves fewer than 50% of glomeruli in class III and more than 50% in class IV."
+    kind: short
+  - id: lupus-nephritis-q3
+    q:
+      it: "Quali immunoglobuline e quali frazioni del complemento si trovano di solito in immunofluorescenza?"
+      en: "Which immunoglobulins and complement components are usually seen on immunofluorescence?"
+    a:
+      it: "IgG, di solito la più intensa, con IgA, IgM, C3 e C1q quasi sempre presenti."
+      en: "IgG, usually the strongest, with IgA, IgM, C3 and C1q almost always present."
+    kind: short
+selfExplain:
+  - it: "Perché la classe I appare normale al microscopio ottico pur avendo immunocomplessi?"
+    en: "Why does class I look normal on light microscopy although it has immune complexes?"
+  - it: "Perché la classe V si presenta con sindrome nefrosica?"
+    en: "Why does class V present with nephrotic syndrome?"
+chain:
+  - pathology:
+      it: "Depositi subepiteliali di immunocomplessi (classe V)"
+      en: "Subepithelial immune complex deposits (class V)"
+    sign:
+      it: "Sindrome nefrosica"
+      en: "Nephrotic syndrome"
+    lab:
+      it: "Proteinuria"
+      en: "Proteinuria"
+examQuestions:
+  - it: "Mi parli delle classi della nefrite lupica: che cosa le distingue?"
+    en: "Tell me about the classes of lupus nephritis: what distinguishes them?"
+    focus: [micro, ancillary]
+    level: 1
+  - it: "Quali reperti di immunofluorescenza e di microscopia elettronica si aspetta in una nefrite lupica?"
+    en: "What immunofluorescence and electron microscopy findings do you expect in lupus nephritis?"
+    focus: [ancillary, high-yield]
+    level: 1
+  - it: "Perché i depositi subendoteliali causano infiammazione, mentre quelli subepiteliali causano proteinuria?"
+    en: "Why do subendothelial deposits cause inflammation, while subepithelial ones cause proteinuria?"
+    focus: [pathogenesis]
+    level: 2
+  - it: "Come distingue la classe III dalla classe IV, e quale quadro clinico e prognosi si aspetta?"
+    en: "How do you tell class III from class IV, and what clinical picture and prognosis do you expect?"
+    focus: [micro, clinical, prognosis]
+    level: 3
+  - it: "In una paziente con lupus e sindrome nefrosica, quale classe sospetta e che cosa valuta la biopsia renale?"
+    en: "In a lupus patient with nephrotic syndrome, which class do you suspect and what does the renal biopsy assess?"
+    focus: [clinical, diagnosis, high-yield]
+    level: 3
+images:
+  - id: lupus-nephritis-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: true
+editionNote:
+  it: "La classificazione della nefrite lupica è cambiata tra le edizioni: soglie e definizioni delle classi vanno verificate sulla versione corrente."
+  en: "The lupus nephritis classification changed between editions: check the class definitions and cut-offs against the current version."
+sources:
+  - source: rubin-8e
+    chapter: "22"
+    pages: "942-944"
+lastUpdated: 2026-11-15
+status: published
