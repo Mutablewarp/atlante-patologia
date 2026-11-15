@@ -1,0 +1,602 @@
+entity: sarcoidosis
+claims:
+- claimId: sarcoidosis-c001
+  section: definition
+  statement: "The lung is the organ this granulomatous disease involves most often, and its cause is unknown."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c002
+  section: definition
+  statement: "Besides the lung, the heart, eyes, skin and nodes are frequent targets."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c003
+  section: definition
+  statement: "Men and women of every region are affected, but ethnic origin strongly shifts the risk."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c004
+  section: definition
+  statement: "In North America the risk for Black people is far higher than for white people."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c005
+  section: definition
+  statement: "France and Poland report lower prevalence than the Scandinavian countries."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c006
+  section: definition
+  statement: "Young adults of both sexes are the typical patients."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "738" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c007
+  section: etiology
+  statement: "No cause has been identified."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c008
+  section: etiology
+  statement: "Disordered immune regulation is implicated by much of the evidence."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "676" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c009
+  section: etiology
+  statement: "No infectious agent has ever been identified, even by highly sensitive techniques."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "676" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c010
+  section: etiology
+  statement: "Immune-gene variants, inborn or acquired, may steer which T-cell response prevails."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "738" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c011
+  section: pathogenesis
+  statement: "Helper T cells respond too strongly to foreign or self antigens, a view most experts share."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "738" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c012
+  section: pathogenesis
+  statement: "Macrophages drawn to organs where helper T cells and their lymphokines have gathered help build noncaseating granulomas."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "738" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c013
+  section: pathogenesis
+  statement: "Uninvolved tissue has a CD4+ to CD8+ ratio of 2:1, against 10:1 in organs that contain granulomas."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "738" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c014
+  section: pathogenesis
+  statement: "Why helper cells accumulate is not known; impaired suppressor cells may leave their proliferation unchecked."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "738" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c015
+  section: pathogenesis
+  statement: "Active disease typically shows hyperglobulinemia; helper T cells switch on B cells indiscriminately."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "738" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c016
+  section: gross
+  statement: "Disease may be confined to either the lung or the hilar nodes, but together they are the most frequent sites."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "738" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c017
+  section: gross
+  statement: "A few patients show larger nodules, but the usual radiographic picture is a diffuse reticulonodular infiltrate."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "738" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c018
+  section: gross
+  statement: "The base of the septum between the ventricles is where granulomas most heavily injure heart muscle."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "676" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c019
+  section: micro
+  statement: "A sarcoid granuloma packs epithelioid macrophages with multinucleated giant cells and has no caseous necrosis."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "738" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c020
+  section: micro
+  statement: "Granulomas lie in the lung interstitium, favoring the bronchovascular bundles and the lobular septa and pleura."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "738" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c021
+  section: micro
+  statement: "Bronchoscopic biopsy often yields the diagnosis because granulomas commonly lie in the airway wall beneath the lining."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "738" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c022
+  section: micro
+  statement: "Necrosis of any real extent is unusual in these granulomas."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "738" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c023
+  section: micro
+  statement: "Chronic inflammation in the interstitium tends to be hard to see."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "738" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c024
+  section: micro
+  statement: "Open lung biopsies often include vessel walls infiltrated by granulomas."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "738" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c025
+  section: micro
+  statement: "Both asteroid bodies (stellate crystals) and Schaumann bodies (laminated calcium) are frequent findings, yet neither identifies sarcoidosis."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "738" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c026
+  section: micro
+  statement: "As a granuloma turns fibrotic, onion-skin rings of collagen can enclose the giant cells, usually beginning at its edge."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "738" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c027
+  section: micro
+  statement: "In severe cardiac sarcoidosis, the myocardium ends up scarred and depleted of myocytes, with granulomas running through it."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "676" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c028
+  section: ancillary
+  statement: "Samples from a transbronchial biopsy done with a flexible bronchoscope frequently contain granulomas."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c029
+  section: ancillary
+  statement: "Several noncaseating granulomas in a mediastinal node taken at mediastinoscopy sometimes provide the diagnosis."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c030
+  section: ancillary
+  statement: "Microscopy shows compact noncaseating granulomas, in some with asteroid bodies."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "738" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c031
+  section: ancillary
+  statement: "CD4+ T cells often make up a larger share of the cells in lavage fluid."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c032
+  section: ancillary
+  statement: "On a gallium-67 scan, granulomatous areas light up because activated macrophages take up the tracer."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c033
+  section: clinical
+  statement: "Acute sarcoidosis begins abruptly, often remits spontaneously and responds very well to steroids."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "738" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c034
+  section: clinical
+  statement: "The chronic form creeps in slowly and tends to last or worsen."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "738" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c035
+  section: clinical
+  statement: "The main respiratory complaints are cough and breathlessness."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c036
+  section: clinical
+  statement: "A chest film taken for another reason can reveal the disease in a patient who has no symptoms."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c037
+  section: clinical
+  statement: "The textbook chest film shows both hila enlarged by nodes, sometimes with lung infiltrates too."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "738" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c038
+  section: clinical
+  statement: "Skin involvement in the form of erythema nodosum is seen mostly in women."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "738-739" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c039
+  section: clinical
+  statement: "Black patients tend toward more serious uveitis, and their skin and lacrimal gland disease is worse."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c040
+  section: clinical
+  statement: "Outside the chest, the central nervous system, uvea, liver, spleen and lymph nodes are often involved."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c041
+  section: clinical
+  statement: "Granulomas at the septal base endanger the AV conduction pathways, which are largely located there."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "676" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c042
+  section: clinical
+  statement: "Patients may die suddenly, or develop heart block or ventricular tachyarrhythmias."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "676" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c043
+  section: clinical
+  statement: "The heart is frequently affected and occasionally is the sole site."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "676" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c044
+  section: clinical
+  statement: "Fewer than 5% of patients have heart symptoms, yet about one autopsied case in four contains granulomas in the heart."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "676" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c045
+  section: diagnosis
+  statement: "There is no laboratory test that identifies sarcoidosis specifically."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c046
+  section: diagnosis
+  statement: "Serum angiotensin-converting enzyme is raised in about two-thirds of patients whose disease is active."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c047
+  section: diagnosis
+  statement: "Urinary calcium measured over 24 hours is often increased."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c048
+  section: diagnosis
+  statement: "Such data make the diagnosis highly probable once they are combined with supporting clinical and imaging findings."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c049
+  section: diagnosis
+  statement: "Noncaseating granulomas also occur in chronic hypersensitivity pneumonitis, whose subtle cases need clinical and radiographic correlation."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c050
+  section: prognosis
+  statement: "Most patients with lung disease are left without clinically significant sequelae, so the prognosis is favorable."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c051
+  section: prognosis
+  statement: "The lung disease resolves in most patients."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c052
+  section: prognosis
+  statement: "Disease outside the chest, particularly in bone and skin, and older age make resolution less likely."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c053
+  section: prognosis
+  statement: "Death is the outcome in only a small share, though some patients never remit or relapse at intervals."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c054
+  section: prognosis
+  statement: "Respiratory failure and cor pulmonale are the late consequences when progressive scarring turns the lung into a honeycomb."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "738" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c055
+  section: prognosis
+  statement: "Corticosteroids are effective in active disease."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c056
+  section: differential
+  statement: "Chronic hypersensitivity pneumonitis often shows loose granulomas inside cellular interstitial inflammation around bronchioles."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c057
+  section: differential
+  statement: "Skin tests and serum precipitins help confirm hypersensitivity pneumonitis."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c058
+  section: differential
+  statement: "Some granulomatous myocarditis is infectious, caused by mycobacteria or certain fungi."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "676" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c059
+  section: differential
+  statement: "Giant cell myocarditis is set apart by a rapidly fatal course and many giant cells with no granulomas."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "676" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c060
+  section: differential
+  statement: "In usual interstitial pneumonia the scarring is patchy and heaviest in the lower lobes and beneath the pleura."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c061
+  section: differential
+  statement: "Little interstitial scarring occurs in lung sarcoidosis."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "738" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c062
+  section: differential
+  statement: "In about half of patients with usual interstitial pneumonia, CT shows honeycombing and reticular opacities at the lung periphery, mostly in the posterior lower lobes."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c063
+  section: high-yield
+  statement: "The characteristic lesion is the noncaseating granuloma of epithelioid macrophages and giant cells."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "738" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c064
+  section: high-yield
+  statement: "Lung and hilar nodes are classic sites, and bilateral hilar adenopathy is the classic chest film pattern."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "738" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c065
+  section: high-yield
+  statement: "Extrapulmonary sites include skin, the uveal tract of the eye and heart."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c066
+  section: high-yield
+  statement: "Granulomas at the septal base cause heart block and ventricular arrhythmias."
+  sourceRef: { source: rubin-8e, chapter: "17", pages: "676" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c067
+  section: high-yield
+  statement: "An overactive helper T-cell response underlies the disease, and high globulins mark active disease."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "738" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c068
+  section: high-yield
+  statement: "No test is specific, but ACE and urinary calcium are often high."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c069
+  section: high-yield
+  statement: "The acute form remits by itself and responds to steroids, while the chronic form tends to persist."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "738" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c070
+  section: high-yield
+  statement: "Outlook is usually good and corticosteroids treat active disease."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c071
+  section: traps
+  statement: "The granulomas lack caseation and large necrosis is rare."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "738" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c072
+  section: traps
+  statement: "Asteroid and Schaumann bodies are common in sarcoidosis, but most other granulomatous processes can show them too."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "738" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c073
+  section: traps
+  statement: "The lung is hit most often, but nodes, skin, eye and heart are frequently involved too."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c074
+  section: traps
+  statement: "A granulomatous biopsy is also compatible with chronic hypersensitivity pneumonitis, so clinical and radiographic correlation is needed."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "737" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: sarcoidosis-c075
+  section: mnemonics
+  statement: "HILAR stands for hilar nodes, immune CD4+ helper T cells, lung first, ACE raised, resolves in most patients."
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
