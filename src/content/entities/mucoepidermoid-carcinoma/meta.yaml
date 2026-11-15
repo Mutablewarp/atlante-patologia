@@ -1,0 +1,121 @@
+id: mucoepidermoid-carcinoma
+module: o29
+tier: core
+kind: disease
+names:
+  it: "Carcinoma mucoepidermoide"
+  en: "Mucoepidermoid carcinoma"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: ["MEC"]
+summary:
+  it: "Tumore maligno delle ghiandole salivari che origina dall'epitelio duttale ed è formato da cellule mucipare, epidermoidi e intermedie; spesso porta la fusione MECT1-MAML2, e il grado istologico guida prognosi e terapia."
+  en: "Malignant salivary gland tumor arising from ductal epithelium and made of mucus-secreting, epidermoid and intermediate cells; it often carries the MECT1-MAML2 fusion, and histologic grade guides prognosis and treatment."
+lenses:
+  system: [head-neck]
+  process: [neoplasia]
+  pattern: []
+  presentation: [mass-lesion]
+  marker: [molecular]
+  group: [neoplastic, genetic]
+learningObjectives:
+  - it: "Riconoscere le tre popolazioni cellulari del carcinoma mucoepidermoide: cellule mucipare, epidermoidi e intermedie."
+    en: "Recognize the three cell populations of mucoepidermoid carcinoma: mucus-secreting, epidermoid and intermediate cells."
+  - it: "Descrivere come cambia il quadro istologico dal basso all'alto grado."
+    en: "Describe how the histologic picture changes from low to high grade."
+  - it: "Indicare la traslocazione t(11;19) e la fusione MECT1-MAML2."
+    en: "State the t(11;19) translocation and the MECT1-MAML2 fusion."
+  - it: "Collegare il grado alla prognosi e alla terapia."
+    en: "Link grade to prognosis and treatment."
+prerequisites: [tumor-grading-and-staging]
+relations:
+  - type: differentialOf
+    target: adenoid-cystic-carcinoma
+    note:
+      it: "Entrambi sono tumori maligni delle ghiandole salivari, ma l'adenoide cistico ha la fusione MYB-NFIB."
+      en: "Both are malignant salivary tumors, but adenoid cystic carcinoma has the MYB-NFIB fusion."
+  - type: differentialOf
+    target: pleomorphic-adenoma
+    note:
+      it: "Tumore benigno con stroma condromixoide, a differenza della popolazione mista di cellule epiteliali."
+      en: "A benign tumor with chondromyxoid stroma, unlike the mixed epithelial cell population."
+  - type: differentialOf
+    target: warthin-tumor
+    note:
+      it: "Tumore benigno della parotide con cisti rivestite da oncociti e tessuto linfoide."
+      en: "Benign parotid tumor with oncocyte-lined cysts and lymphoid tissue."
+quickCheck:
+  - id: mucoepidermoid-carcinoma-q1
+    q:
+      it: "Quali tre tipi cellulari formano il carcinoma mucoepidermoide?"
+      en: "Which three cell types make up mucoepidermoid carcinoma?"
+    a:
+      it: "Cellule mucipare, cellule epidermoidi e cellule intermedie."
+      en: "Mucus-secreting, epidermoid and intermediate cells."
+    kind: short
+  - id: mucoepidermoid-carcinoma-q2
+    q:
+      it: "Quale fusione genica è caratteristica e da quale traslocazione deriva?"
+      en: "Which gene fusion is characteristic, and which translocation produces it?"
+    a:
+      it: "La fusione MECT1-MAML2, prodotta dalla t(11;19)."
+      en: "The MECT1-MAML2 fusion, produced by t(11;19)."
+    kind: short
+  - id: mucoepidermoid-carcinoma-q3
+    q:
+      it: "In che modo il grado determina la terapia?"
+      en: "How does grade determine treatment?"
+    a:
+      it: "I tumori di basso grado si trattano con la chirurgia; quelli di alto grado richiedono chirurgia e radioterapia."
+      en: "Low-grade tumors are treated with surgery; high-grade tumors need surgery plus radiation therapy."
+    kind: short
+  - id: mucoepidermoid-carcinoma-q4
+    q:
+      it: "Le cellule epidermoidi producono cheratina?"
+      en: "Do the epidermoid cells make keratin?"
+    a:
+      it: "No: somigliano a cellule squamose, ma non producono cheratina e non mostrano ponti intercellulari."
+      en: "No: they resemble squamous cells but make no keratin and show no bridges between cells."
+    kind: short
+selfExplain:
+  - it: "Perché un carcinoma mucoepidermoide di basso grado richiede comunque un follow-up?"
+    en: "Why does a low-grade mucoepidermoid carcinoma still need follow-up?"
+  - it: "Perché la fusione MECT1-MAML2 potrebbe alterare il comportamento delle cellule tumorali?"
+    en: "Why might the MECT1-MAML2 fusion change the behavior of the tumor cells?"
+examQuestions:
+  - it: "Mi parli dei tipi cellulari del carcinoma mucoepidermoide: come li riconosce al microscopio?"
+    en: "Tell me about the cell types of mucoepidermoid carcinoma: how do you recognize them under the microscope?"
+    focus: [micro]
+    level: 1
+  - it: "Come cambia il quadro istologico passando dal basso all'alto grado?"
+    en: "How does the histologic picture change from low to high grade?"
+    focus: [micro, prognosis]
+    level: 2
+  - it: "Mi parli della fusione MECT1-MAML2: da che cosa deriva e che cosa comporta?"
+    en: "Tell me about the MECT1-MAML2 fusion: where does it come from and what does it do?"
+    focus: [pathogenesis, ancillary]
+    level: 2
+  - it: "Mi parli del carcinoma mucoepidermoide: dove origina e chi colpisce?"
+    en: "Tell me about mucoepidermoid carcinoma: where does it arise and who does it affect?"
+    focus: [definition]
+    level: 1
+  - it: "Come distingue un carcinoma mucoepidermoide da un carcinoma adenoide cistico?"
+    en: "How do you tell mucoepidermoid carcinoma from adenoid cystic carcinoma?"
+    focus: [pathogenesis, differential]
+    level: 3
+  - it: "Un tumore di basso grado può dare metastasi? In che modo il grado guida la terapia?"
+    en: "Can a low-grade tumor metastasize? How does grade guide treatment?"
+    focus: [prognosis, traps]
+    level: 3
+images:
+  - { id: mucoepidermoid-carcinoma-micro-1, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "29"
+    pages: "1322-1323"
+lastUpdated: 2026-11-14
+status: published
