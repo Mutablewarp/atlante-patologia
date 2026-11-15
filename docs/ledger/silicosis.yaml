@@ -1,0 +1,482 @@
+entity: silicosis
+claims:
+  - claimId: silicosis-c001
+    section: definition
+    statement: "Silicosis is a pneumoconiosis caused by inhaling silica (silicon dioxide) dust"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c002
+    section: definition
+    statement: "Through the first half of the twentieth century silica was the leading killer of exposed workers, and silicosis is among the oldest recorded diseases"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c003
+    section: definition
+    statement: "Many trades expose workers to silica, among them mining and stone cutting; the disease was first described in sandblasters"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c004
+    section: definition
+    statement: "Ventilation systems and masks have cut the number of silicosis cases"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c005
+    section: definition
+    statement: "Coal miners have recently seen more silicosis because thinner seams make them cut through more quartz"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c006
+    section: definition
+    statement: "Almost every worker with long-term silica exposure develops simple nodular silicosis, the most common form"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c007
+    section: definition
+    statement: "The latency from first exposure to nodules is 20 to 40 years, occasionally as short as 10 years"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c008
+    section: etiology
+    statement: "Amorphous silica is less toxic than the crystalline form, quartz"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c009
+    section: etiology
+    statement: "How reactive silica is in tissue is linked to its particle surface properties"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c010
+    section: etiology
+    statement: "The most harmful silica particles are those between 0.2 and 2.0 micrometers in size"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c011
+    section: etiology
+    statement: "Acid washing, which removes the soluble coat, and sandblasting, which exposes fresh surface, both make silica more biologically reactive"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c012
+    section: etiology
+    statement: "Compared with coal and iron dusts, which are only weakly fibrogenic, silica causes extensive fibrosis even in small amounts"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c013
+    section: etiology
+    statement: "Exposure time and air concentration of dust give the dose, and dose together with particle size decides lung damage from inorganic dust"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c014
+    section: etiology
+    statement: "Where a particle lands depends on its size: those under 2.5 micrometers reach the acini, while those of 2.5 to 10 micrometers stay on bronchi and bronchioles, where mucociliary clearance removes them"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c015
+    section: pathogenesis
+    statement: "Alveolar macrophages take up inhaled silica particles"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c016
+    section: pathogenesis
+    statement: "Macrophages die because the silica surface attaches to phospholipids and proteins of their membranes, and this damages the membrane"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c017
+    section: pathogenesis
+    statement: "A dying macrophage lets out the silica it had ingested together with fibrogenic factors"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c018
+    section: pathogenesis
+    statement: "The silica set free by dead macrophages is taken up by other macrophages, which feeds the cycle"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c019
+    section: pathogenesis
+    statement: "Repeated macrophage death and silica release end in dense fibrous scarring, which forms the silicotic nodule"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "731" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c020
+    section: gross
+    statement: "Silicotic nodules in simple silicosis are small, usually 2 to 4 mm and under 1 cm"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c021
+    section: gross
+    statement: "Eggshell calcification refers to calcium deposits that often trace the edges of enlarged hilar lymph nodes"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c022
+    section: gross
+    statement: "In progressive massive fibrosis, small nodules coalesce into large lesions, most measuring 5 to 10 cm"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c023
+    section: gross
+    statement: "Progressive massive fibrosis lesions are usually found in the upper zones of both lungs"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c024
+    section: gross
+    statement: "Progressive massive fibrosis lesions often show central cavitation"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c025
+    section: micro
+    statement: "The nodule contains few cells; collagen in concentric swirls makes up most of its bulk"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c026
+    section: micro
+    statement: "The nodule's rim carries clusters of mononuclear cells, chiefly lymphocytes, plus fibroblasts"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c027
+    section: micro
+    statement: "Inside the nodule are birefringent silicate needles, which show up under polarized light"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c028
+    section: micro
+    statement: "Acute silicosis shows diffuse lung fibrosis and no silicotic nodules"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c029
+    section: micro
+    statement: "The term silicoproteinosis describes alveoli packed with dense eosinophilic material, resembling alveolar lipoproteinosis"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c030
+    section: ancillary
+    statement: "The silicotic nodule is recognized histologically by whorled collagen with a peripheral rim of lymphocytes and fibroblasts"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c031
+    section: ancillary
+    statement: "The silicate needles inside the nodule are birefringent and visible under polarized light"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c032
+    section: clinical
+    statement: "Simple silicosis usually causes no significant symptoms"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c033
+    section: clinical
+    statement: "In silicosis, dyspnea that begins with exertion and then occurs at rest should raise suspicion of progressive massive fibrosis or a different complication"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c034
+    section: clinical
+    statement: "Sandblasting or boiler scaling can expose workers to heavy loads of very fine silica, which causes acute silicosis"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c035
+    section: clinical
+    statement: "Respiratory failure follows when the dyspnea of acute silicosis rapidly becomes disabling"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c036
+    section: clinical
+    statement: "Acute silicosis causes a severe restrictive defect"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c037
+    section: diagnosis
+    statement: "Radiographs are the usual way simple silicosis is recognized"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c038
+    section: diagnosis
+    statement: "Progressive massive fibrosis is the radiographic finding of masses over 2 cm in a lung already showing simple silicosis"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c039
+    section: diagnosis
+    statement: "Acute silicosis reduces lung volume, and the radiograph shows diffuse linear fibrosis"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c040
+    section: prognosis
+    statement: "Simple silicosis seldom causes real breathing impairment"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c041
+    section: prognosis
+    statement: "Lung tissue trapped in the nodules is destroyed, and this loss causes the disability of progressive massive fibrosis"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c042
+    section: prognosis
+    statement: "The more silica the lung holds, the more likely progressive massive fibrosis is"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c043
+    section: prognosis
+    statement: "Other forms of silicosis take decades to advance; the acute form takes only a few years"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c044
+    section: prognosis
+    statement: "Compared with the general population, patients with silicosis have far more tuberculosis"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c045
+    section: prognosis
+    statement: "Tuberculosis is especially frequent in acute silicosis and where it is highly prevalent in the population"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c046
+    section: prognosis
+    statement: "Even as tuberculosis fell in the general population, its link with silicosis did not disappear"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c047
+    section: differential
+    statement: "Carbon dust alone causes only harmless anthracosis, with no fibrosis and no macrophage death"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c048
+    section: differential
+    statement: "Asbestosis is an interstitial fibrosis whose hallmark is the asbestos body; it forms no silicotic nodule"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "731" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c049
+    section: high-yield
+    statement: "Silica kills the macrophages that engulf it and releases fibrogenic factors"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "730" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c050
+    section: high-yield
+    statement: "The silicotic nodule is a whorled collagen nodule, usually 2 to 4 mm"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c051
+    section: high-yield
+    statement: "Under polarized light the silicotic nodule shows birefringent silicate needles"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c052
+    section: high-yield
+    statement: "Progressive massive fibrosis means masses larger than 2 cm formed by coalescing nodules, mostly in the upper zones"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c053
+    section: high-yield
+    statement: "Tuberculosis occurs far more often in silicosis"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c054
+    section: high-yield
+    statement: "Acute silicosis has no silicotic nodules, and eosinophilic material fills the alveoli (silicoproteinosis)"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c055
+    section: high-yield
+    statement: "Hilar lymph nodes may show eggshell calcification"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c056
+    section: traps
+    statement: "Simple silicosis seldom impairs breathing, whereas progressive massive fibrosis causes disability"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c057
+    section: traps
+    statement: "Acute silicosis has no silicotic nodules and shows eosinophilic alveolar material instead"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c058
+    section: traps
+    statement: "The link between silicosis and tuberculosis outlasts the fall in tuberculosis rates"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c059
+    section: traps
+    statement: "Anthracosilicosis can arise when coal dust carries silica, which is fibrogenic; carbon alone is harmless"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: silicosis-c060
+    section: mnemonics
+    statement: "The mnemonic WHORL recalls whorled collagen, hilar eggshell calcification, old exposure, radiographic diagnosis and polarized-light needles of chronic silicosis"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "732" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
