@@ -1,0 +1,103 @@
+id: drug-induced-liver-injury
+module: o20
+tier: extended
+kind: disease
+names:
+  it: "Danno epatico da farmaci"
+  en: "Drug-induced liver injury"
+  eponyms: []
+  synonyms:
+    it: ["Epatotossicità da farmaci"]
+    en: ["Drug-induced hepatotoxicity"]
+  abbreviations: ["DILI"]
+summary:
+  it: "Danno al fegato causato da un farmaco, prevedibile e dose-dipendente (come il paracetamolo) oppure idiosincrasico, con quadri istologici necrotici, colestatici, epatitici o steatosici."
+  en: "Liver damage caused by a drug, either predictable and dose dependent (as with acetaminophen) or idiosyncratic, with necrotic, cholestatic, hepatitic or steatotic histologic patterns."
+lenses:
+  system: [liver-biliary]
+  process: [cell-injury, necrosis, irreversible-injury]
+  pattern: [necrosis-coagulative, fatty-change]
+  presentation: [jaundice]
+  marker: [laboratory]
+  group: [toxic-environmental]
+learningObjectives:
+  - it: "Distinguere il danno epatico prevedibile (dose-dipendente) da quello idiosincrasico."
+    en: "Distinguish predictable (dose-dependent) from idiosyncratic liver injury."
+  - it: "Descrivere la necrosi zonale centrolobulare da paracetamolo."
+    en: "Describe the zonal centrilobular necrosis caused by acetaminophen."
+  - it: "Riconoscere i quadri colestatico, epatitico e steatosico del danno da farmaci."
+    en: "Recognize the cholestatic, hepatitic and steatotic patterns of drug injury."
+  - it: "Spiegare perché la diagnosi si basa sull'anamnesi farmacologica e sull'esclusione di altre cause."
+    en: "Explain why diagnosis rests on drug history and exclusion of other causes."
+prerequisites: []
+relations:
+  - type: mimics
+    target: acute-viral-hepatitis
+    note:
+      it: "Alcuni farmaci riproducono tutto il quadro dell'epatite virale acuta."
+      en: "Some drugs reproduce the whole picture of acute viral hepatitis."
+  - type: mimics
+    target: autoimmune-hepatitis
+    note:
+      it: "Alcuni farmaci inducono o smascherano un'epatite autoimmune."
+      en: "Some drugs trigger or unmask autoimmune hepatitis."
+  - type: differentialOf
+    target: alcoholic-liver-disease
+    note:
+      it: "L'amiodarone dà una steatoepatite simile a quella alcolica."
+      en: "Amiodarone gives a steatohepatitis similar to the alcoholic one."
+quickCheck:
+  - id: drug-induced-liver-injury-q1
+    q:
+      it: "Quali sono le caratteristiche del danno epatico prevedibile da farmaci?"
+      en: "What are the features of predictable drug-induced liver injury?"
+    a:
+      it: "Dipende dalla dose, compare con dosi sufficientemente alte e dà necrosi zonale, spesso centrolobulare."
+      en: "It depends on dose, occurs with high enough doses, and gives zonal, often centrilobular necrosis."
+    kind: short
+  - id: drug-induced-liver-injury-q2
+    q:
+      it: "Perché la biopsia epatica ha spesso un valore limitato nel danno da farmaci?"
+      en: "Why is liver biopsy often of limited value in drug injury?"
+    a:
+      it: "I quadri istologici si sovrappongono a quelli delle malattie non da farmaci."
+      en: "Its histologic patterns overlap with those of non-drug diseases."
+    kind: short
+  - id: drug-induced-liver-injury-q3
+    q:
+      it: "Quale tipo di steatosi indica un danno mitocondriale grave?"
+      en: "Which type of steatosis signals severe mitochondrial injury?"
+    a:
+      it: "La steatosi microvescicolare, con piccoli vacuoli e nucleo centrale."
+      en: "Microvesicular steatosis, with small vacuoles and a central nucleus."
+    kind: short
+selfExplain:
+  - it: "Perché la necrosi da paracetamolo è centrolobulare?"
+    en: "Why is acetaminophen necrosis centrilobular?"
+  - it: "Perché la steatosi microvescicolare è più preoccupante di quella macrovescicolare?"
+    en: "Why is microvesicular steatosis more worrying than macrovesicular steatosis?"
+  - it: "Perché la biopsia epatica non basta a stabilire che il danno è da farmaci?"
+    en: "Why is a liver biopsy not enough to establish a drug cause?"
+examQuestions:
+  - it: "Mi parli del danno epatico da paracetamolo: che cosa vede al microscopio e in quale zona del lobulo?"
+    en: "Tell me about acetaminophen liver injury: what do you see under the microscope, and in which zone of the lobule?"
+    focus: [definition, micro]
+    level: 1
+  - it: "Quali quadri istologici può dare un farmaco nel fegato? Mi faccia un esempio per ciascun quadro."
+    en: "Which histologic patterns can a drug produce in the liver? Give one example drug for each pattern."
+    focus: [micro]
+    level: 2
+  - it: "Come distingue un danno epatico da farmaci da un'epatite virale acuta o alcolica?"
+    en: "How do you tell drug-induced liver injury from acute viral or alcoholic hepatitis?"
+    focus: [diagnosis, differential]
+    level: 3
+images:
+  - { id: drug-induced-liver-injury-micro-1, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "20"
+    pages: "879-882"
+lastUpdated: 2026-11-15
+status: published

@@ -1,0 +1,250 @@
+entity: drug-induced-liver-injury
+claims:
+  - claimId: drug-induced-liver-injury-c001
+    section: definition
+    statement: "Drug reactions can resemble almost every kind of liver disease."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "879" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-liver-injury-c002
+    section: definition
+    statement: "The mildest cases show only asymptomatic transaminase elevation, and the worst end in acute liver failure."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "879" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-liver-injury-c003
+    section: definition
+    statement: "Acute liver failure in the United States is most often caused by drugs."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "879" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-liver-injury-c004
+    section: definition
+    statement: "Acetaminophen is a typical predictable hepatotoxin: the damage it causes grows with the dose."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "879-880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-liver-injury-c005
+    section: definition
+    statement: "Idiosyncratic injury affects few people regardless of dose, and those affected have a metabolic or genetic predisposition."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-liver-injury-c006
+    section: micro
+    statement: "A given drug usually produces its own typical pattern of liver toxicity."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-liver-injury-c007
+    section: micro
+    statement: "Acetaminophen necrosis is centrilobular, but extreme doses involve the whole lobule."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-liver-injury-c008
+    section: micro
+    statement: "Central hepatocytes are probably hit because they run more of the enzymes that metabolize drugs."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-liver-injury-c009
+    section: micro
+    statement: "Zonal toxic necrosis comes with little inflammation."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-liver-injury-c010
+    section: micro
+    statement: "Sex hormones and certain antibiotics, such as sulfamethoxazole, can cause pure cholestasis: bile builds up in hepatocytes and canaliculi without inflammation."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-liver-injury-c011
+    section: micro
+    statement: "Cholestasis accompanied by inflammation is termed cholestatic hepatitis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-liver-injury-c012
+    section: micro
+    statement: "Isoniazid and other drugs can cause a hepatitis that mimics the viral form."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-liver-injury-c013
+    section: micro
+    statement: "No inflammatory infiltrate is specific for drug toxicity whatever its composition, though eosinophils raise suspicion of a drug reaction."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-liver-injury-c014
+    section: micro
+    statement: "Amiodarone causes a steatohepatitis-like variant with abundant Mallory-Denk hyalins, while methotrexate and corticosteroids can cause macrovesicular steatosis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-liver-injury-c015
+    section: micro
+    statement: "Reye syndrome badly injures mitochondria and other organelles, and hepatocytes show tiny fat droplets with a central nucleus."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880-882" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-liver-injury-c016
+    section: diagnosis
+    statement: "No test exists that predicts or confirms drug hepatotoxicity."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-liver-injury-c017
+    section: diagnosis
+    statement: "A patient with jaundice or raised liver enzymes must be asked about everything taken, supplements included."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-liver-injury-c018
+    section: diagnosis
+    statement: "Viral hepatitis, alcoholic hepatitis and other liver diseases have to be ruled out too; the page gives no order."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-liver-injury-c019
+    section: diagnosis
+    statement: "Drug injury looks histologically like many non-drug liver diseases, so a biopsy often cannot separate them."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-liver-injury-c020
+    section: differential
+    statement: "Acute viral hepatitis can be fully mimicked by drug injury."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-liver-injury-c021
+    section: differential
+    statement: "Nitrofurantoin can cause hepatitis of autoimmune type, either starting it afresh or bringing out a hidden classical autoimmune hepatitis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-liver-injury-c022
+    section: differential
+    statement: "Amiodarone produces a steatohepatitis that resembles alcoholic hepatitis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-liver-injury-c023
+    section: differential
+    statement: "Ischemic death of centrilobular hepatocytes, with hemorrhage, can follow shock of any cause."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "882" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-liver-injury-c024
+    section: high-yield
+    statement: "Acetaminophen causes dose-dependent centrilobular necrosis."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "879-880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-liver-injury-c025
+    section: high-yield
+    statement: "Idiosyncratic reactions occur independently of dose."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-liver-injury-c026
+    section: high-yield
+    statement: "Drug injury shows cholestatic, hepatitic and steatotic patterns, among others."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-liver-injury-c027
+    section: high-yield
+    statement: "Microvesicular steatosis points to severe damage of mitochondria."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-liver-injury-c028
+    section: high-yield
+    statement: "Diagnosis relies on a medication history and exclusion of other liver diseases, since no specific test exists."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-liver-injury-c029
+    section: traps
+    statement: "No inflammatory infiltrate is specific for drug hepatotoxicity whatever its composition; eosinophils only make a drug reaction more likely."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-liver-injury-c030
+    section: traps
+    statement: "Macrovesicular fat alone is benign, whereas microvesicular fat is frequently a marker of severe liver disease."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-15
+  - claimId: drug-induced-liver-injury-c031
+    section: traps
+    statement: "Drug injury patterns overlap with those of non-drug liver diseases, so biopsy often cannot settle the cause."
+    sourceRef: { source: rubin-8e, chapter: "20", pages: "880" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
