@@ -1,0 +1,129 @@
+id: acute-viral-hepatitis
+module: o20
+tier: core
+kind: disease
+editionDependent: false
+status: published
+lastUpdated: 2026-11-15
+reviewStatus: ai-generated-unreviewed
+names:
+  it: "Epatite virale acuta"
+  en: "Acute viral hepatitis"
+  eponyms: []
+  synonyms:
+    it: ["Epatite acuta virale"]
+    en: ["Acute hepatitis A, B, C, D or E"]
+  abbreviations: ["HAV", "HBV", "HCV", "HDV", "HEV"]
+summary:
+  it: "Infezione acuta degli epatociti da virus epatotropi (A, B, C, D, E) con morte cellulare e infiammazione lobulare, dovuta soprattutto alla risposta immunitaria e non all'effetto diretto del virus."
+  en: "Acute infection of hepatocytes by hepatotropic viruses (A, B, C, D, E) with cell death and lobular inflammation, caused mainly by the immune response and not by direct viral damage."
+lenses:
+  system: [liver-biliary]
+  process: [cell-death, necrosis, apoptosis, acute-inflammation]
+  pattern: [apoptotic-bodies, cellular-swelling]
+  presentation: [jaundice, fever]
+  marker: [laboratory]
+  group: [infectious, inflammatory]
+learningObjectives:
+  - it: "Descrivere il quadro microscopico dell'epatite acuta: corpi acidofili, rigonfiamento (ballooning) degli epatociti, disarray lobulare e infiltrato linfocitario."
+    en: "Describe the microscopic picture of acute hepatitis: acidophilic bodies, ballooned hepatocytes, lobular disarray and a lymphocytic infiltrate."
+  - it: "Confrontare le caratteristiche principali dei virus HAV, HBV, HCV, HDV e HEV: tipo di virus, trasmissione e decorso."
+    en: "Compare the main features of HAV, HBV, HCV, HDV and HEV: virus type, transmission and course."
+  - it: "Spiegare perché il danno epatocitario è mediato dal sistema immunitario e non dal virus."
+    en: "Explain why hepatocyte injury is immune-mediated and not caused by the virus itself."
+  - it: "Distinguere necrosi a ponte, submassiva e massiva e collegarle all'epatite fulminante."
+    en: "Distinguish bridging, submassive and massive necrosis and link them to fulminant hepatitis."
+  - it: "Interpretare i marcatori sierologici essenziali di epatite A e B."
+    en: "Interpret the essential serologic markers of hepatitis A and B."
+prerequisites: [apoptosis]
+relations:
+  - type: differentialOf
+    target: chronic-viral-hepatitis
+    note:
+      it: "Malattia acuta autolimitata contro necrosi e infiammazione persistenti."
+      en: "Self-limited acute illness versus persistent necrosis and inflammation."
+  - type: differentialOf
+    target: autoimmune-hepatitis
+    note:
+      it: "Anche l'epatite autoimmune può dare necrosi confluente."
+      en: "Autoimmune hepatitis can also produce confluent necrosis."
+  - type: differentialOf
+    target: drug-induced-liver-injury
+    note:
+      it: "Anche farmaci e sostanze epatotossiche possono dare necrosi confluente."
+      en: "Hepatotoxic drugs and substances can also produce confluent necrosis."
+  - type: prerequisiteOf
+    target: chronic-viral-hepatitis
+    note:
+      it: "L'infezione acuta da HBV o HCV può evolvere in epatite cronica."
+      en: "Acute HBV or HCV infection can progress to chronic hepatitis."
+quickCheck:
+  - id: acute-viral-hepatitis-q1
+    q:
+      it: "Quali reperti microscopici caratterizzano l'epatite virale acuta?"
+      en: "Which microscopic findings characterize acute viral hepatitis?"
+    a:
+      it: "Corpi acidofili, epatociti rigonfi (ballooning), disarray lobulare e linfociti nel lobulo."
+      en: "Acidophilic bodies, ballooned hepatocytes, lobular disarray and lymphocytes in the lobule."
+    kind: short
+  - id: acute-viral-hepatitis-q2
+    q:
+      it: "Quali virus dell'epatite sono enterici e quali si trasmettono col sangue?"
+      en: "Which hepatitis viruses are enteric and which are blood-borne?"
+    a:
+      it: "HAV ed HEV sono enterici; HBV ed HCV si trasmettono col sangue."
+      en: "HAV and HEV are enteric; HBV and HCV are blood-borne."
+    kind: short
+  - id: acute-viral-hepatitis-q3
+    q:
+      it: "Qual è la sequenza di gravità della necrosi confluente e quando si parla di epatite fulminante?"
+      en: "What is the severity sequence of confluent necrosis, and when is it called fulminant hepatitis?"
+    a:
+      it: "Necrosi a ponte, submassiva, massiva. Si parla di epatite fulminante quando la necrosi submassiva evolve rapidamente verso l'insufficienza epatica."
+      en: "Bridging, submassive, massive. It is called fulminant hepatitis when submassive necrosis progresses rapidly to hepatic failure."
+    kind: short
+selfExplain:
+  - it: "Perché i linfociti T citotossici, e non il virus, sono i principali responsabili della distruzione degli epatociti nell'epatite B?"
+    en: "Why are cytotoxic T cells, rather than the virus, mainly responsible for destroying hepatocytes in hepatitis B?"
+  - it: "Perché nella necrosi massiva l'infiammazione è scarsa nonostante la distruzione quasi totale degli epatociti?"
+    en: "Why is inflammation scanty in massive necrosis despite near-total loss of hepatocytes?"
+chain:
+  - pathology:
+      it: "Linfociti T citotossici uccidono gli epatociti infettati."
+      en: "Cytotoxic T cells kill infected hepatocytes."
+    sign:
+      it: "Ittero e corpi acidofili."
+      en: "Jaundice and acidophilic bodies."
+    lab:
+      it: "Aumento delle aminotransferasi e IgM anti-HAV o HBsAg."
+      en: "Rise in aminotransferases and IgM anti-HAV or HBsAg."
+examQuestions:
+  - it: "Mi parli dei virus dell'epatite da A a E: tipo di virus, modalità di trasmissione e decorso."
+    en: "Tell me about the hepatitis viruses A to E: virus type, route of spread and course."
+    focus: [etiology, clinical]
+    level: 1
+  - it: "Che cosa vede al microscopio in un'epatite virale acuta?"
+    en: "What do you see under the microscope in acute viral hepatitis?"
+    focus: [micro]
+    level: 1
+  - it: "Come distingue la necrosi a ponte dalla necrosi submassiva e da quella massiva?"
+    en: "How do you tell bridging necrosis from submassive and massive necrosis?"
+    focus: [micro, high-yield]
+    level: 3
+  - it: "Mi parli dell'epatite fulminante: quando si parla di epatite fulminante e come può finire?"
+    en: "Tell me about fulminant hepatitis: when is the term used, and how can it end?"
+    focus: [prognosis, micro]
+    level: 2
+  - it: "Perché nell'epatite B il danno agli epatociti non è causato direttamente dal virus?"
+    en: "Why is hepatocyte injury in hepatitis B not caused directly by the virus?"
+    focus: [pathogenesis]
+    level: 2
+  - it: "Come distingue un paziente guarito e immune dall'epatite B da uno che ha solo avuto l'infezione in passato?"
+    en: "How do you tell a patient who has recovered from hepatitis B and is immune from one who has only had the infection in the past?"
+    focus: [diagnosis, traps]
+    level: 3
+images: []
+sources:
+  - source: rubin-8e
+    chapter: "20"
+    pages: "856-864"
