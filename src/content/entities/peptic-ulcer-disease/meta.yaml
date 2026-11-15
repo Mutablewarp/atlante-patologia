@@ -31,11 +31,6 @@ learningObjectives:
     en: "Explain why the edges and bed of a gastric ulcer are biopsied and how it differs from an ulcerated carcinoma."
 prerequisites: []
 relations:
-  - type: causes
-    target: helicobacter-pylori-gastritis
-    note:
-      it: "La gastrite da H. pylori sta alla base della maggior parte delle ulcere gastriche."
-      en: "H. pylori gastritis underlies most gastric ulcers."
   - type: differentialOf
     target: gastric-adenocarcinoma
     note:
