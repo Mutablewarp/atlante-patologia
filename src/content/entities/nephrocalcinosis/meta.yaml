@@ -1,0 +1,121 @@
+id: nephrocalcinosis
+module: o22
+tier: extended
+kind: disease
+names:
+  it: "Nefrocalcinosi e nefropatia uratica"
+  en: "Nephrocalcinosis and urate nephropathy"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: []
+summary:
+  it: "Deposito di calcio nel parenchima renale (spesso da ipercalcemia) o di cristalli di urato nei tubuli e nell'interstizio (da iperuricemia, per esempio nella gotta o nella sindrome da lisi tumorale)."
+  en: "Deposition of calcium in the renal parenchyma (often from hypercalcemia) or of urate crystals in the tubules and interstitium (from hyperuricemia, for example in gout or tumor lysis syndrome)."
+lenses:
+  system: [kidney]
+  process: [pathologic-calcification, extracellular-accumulation]
+  pattern: [metastatic-calcification, dystrophic-calcification]
+  presentation: [hypercalcemia]
+  marker: [calcium-phosphate, laboratory]
+  group: [metabolic]
+learningObjectives:
+  - it: "Distinguere la nefrocalcinosi metastatica (da ipercalcemia) da quella distrofica (in tessuto danneggiato)."
+    en: "Distinguish metastatic nephrocalcinosis (from hypercalcemia) from dystrophic calcification (in injured tissue)."
+  - it: "Elencare gli stati ipercalcemici che portano a nefrocalcinosi."
+    en: "List the hypercalcemic states that lead to nephrocalcinosis."
+  - it: "Descrivere dove si depositano il calcio e i cristalli di urato nei tubuli e nell'interstizio."
+    en: "Describe where calcium and urate crystals deposit in the tubules and interstitium."
+prerequisites: [metastatic-calcification, dystrophic-calcification]
+relations:
+  - type: sharesMechanism
+    target: metastatic-calcification
+    note:
+      it: "La nefrocalcinosi da ipercalcemia è una calcificazione metastatica."
+      en: "Nephrocalcinosis from hypercalcemia is metastatic calcification."
+  - type: sharesMechanism
+    target: dystrophic-calcification
+    note:
+      it: "La calcificazione di infarti o necrosi corticale è distrofica."
+      en: "Calcification of infarcts or cortical necrosis is dystrophic."
+  - type: differentialOf
+    target: light-chain-cast-nephropathy
+    note:
+      it: "Cilindri ialini nei tubuli distali contro depositi di calcio o di urato."
+      en: "Hyaline casts in distal tubules versus calcium or urate deposits."
+  - type: complicationOf
+    target: primary-hyperparathyroidism
+    note:
+      it: "L'ipercalcemia grave può dare nefrocalcinosi."
+      en: "Severe hypercalcemia can cause nephrocalcinosis."
+quickCheck:
+  - id: nephrocalcinosis-q1
+    q:
+      it: "Perché la nefrocalcinosi da ipercalcemia è detta calcificazione metastatica?"
+      en: "Why is nephrocalcinosis from hypercalcemia called metastatic calcification?"
+    a:
+      it: "Perché il calcio precipita nel rene per l'eccesso nel sangue e non per un danno locale."
+      en: "Because calcium precipitates in the kidney from excess in the blood, not from local injury."
+    kind: short
+  - id: nephrocalcinosis-q2
+    q:
+      it: "Come si vedono i cristalli di urato in istologia?"
+      en: "How are urate crystals seen in histology?"
+    a:
+      it: "Sono amorfi dopo la processazione di routine ma birifrangenti nelle sezioni al congelatore."
+      en: "They are amorphous after routine processing but birefringent in frozen sections."
+    kind: short
+  - id: nephrocalcinosis-q3
+    q:
+      it: "Quale reperto è diagnostico di nefropatia uratica cronica?"
+      en: "Which finding is diagnostic of chronic urate nephropathy?"
+    a:
+      it: "Il tofo gottoso."
+      en: "The gouty tophus."
+    kind: short
+  - id: nephrocalcinosis-q4
+    q:
+      it: "Quali stati ipercalcemici portano a nefrocalcinosi?"
+      en: "Which hypercalcemic states lead to nephrocalcinosis?"
+    a:
+      it: "Sarcoidosi, eccesso di vitamina D, tumori che distruggono l'osso e iperparatiroidismo primario."
+      en: "Sarcoidosis, vitamin D excess, bone-destroying tumors and primary hyperparathyroidism."
+    kind: short
+  - id: nephrocalcinosis-q5
+    q:
+      it: "Che cosa indicano le strie gialle nelle papille?"
+      en: "What do yellow streaks in the papillae point to?"
+    a:
+      it: "Una nefropatia uratica acuta, con acido urico cristallizzato nei dotti collettori."
+      en: "Acute urate nephropathy, with uric acid crystallized inside the collecting ducts."
+    kind: short
+selfExplain:
+  - it: "Perché la sindrome da lisi tumorale può causare un'insufficienza renale acuta da urato?"
+    en: "Why can tumor lysis syndrome cause acute kidney injury from urate?"
+  - it: "Perché i cristalli di acido urico precipitano nei dotti collettori?"
+    en: "Why do uric acid crystals precipitate in the collecting ducts?"
+examQuestions:
+  - it: "Mi parli della nefrocalcinosi: quali stati ipercalcemici la causano?"
+    en: "Tell me about nephrocalcinosis: which hypercalcemic states cause it?"
+    focus: [definition, high-yield]
+    level: 1
+  - it: "Dove si depositano il calcio e i cristalli di urato nel rene, e come appaiono al microscopio?"
+    en: "Where do calcium and urate crystals deposit in the kidney, and how do they look under the microscope?"
+    focus: [micro]
+    level: 2
+  - it: "Come distingue la calcificazione metastatica da quella distrofica, e che cosa è diagnostico di nefropatia uratica?"
+    en: "How do you tell metastatic from dystrophic calcification, and what is diagnostic of urate nephropathy?"
+    focus: [definition, diagnosis, differential]
+    level: 3
+images:
+  - id: nephrocalcinosis-imaging-1
+    role: imaging
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "22"
+    pages: "963-964"
+lastUpdated: 2026-11-15
+status: published
