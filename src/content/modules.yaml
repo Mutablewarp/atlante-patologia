@@ -360,39 +360,8 @@
   label:
     it: "Tratto gastroenterico"
     en: "Gastrointestinal tract"
-  status: planned
+  status: published
   refPages: "790-861"
-  planned:
-    - id: ischemic-bowel-disease
-      names: { it: "Ischemia intestinale", en: "Ischemic bowel disease" }
-    - id: infectious-enterocolitis
-      names: { it: "Enterocoliti infettive", en: "Infectious enterocolitis" }
-    - id: pseudomembranous-colitis
-      names: { it: "Colite pseudomembranosa (Clostridioides difficile)", en: "Pseudomembranous colitis" }
-    - id: microscopic-colitis
-      names: { it: "Colite microscopica (collagenosica e linfocitaria)", en: "Microscopic colitis" }
-    - id: malabsorption-syndromes
-      names: { it: "Sindromi da malassorbimento", en: "Malabsorption syndromes" }
-    - id: celiac-disease
-      names: { it: "Malattia celiaca", en: "Celiac disease" }
-    - id: crohn-disease
-      names: { it: "Malattia di Crohn", en: "Crohn disease" }
-    - id: ulcerative-colitis
-      names: { it: "Colite ulcerosa", en: "Ulcerative colitis" }
-    - id: diverticular-disease
-      names: { it: "Malattia diverticolare", en: "Diverticular disease" }
-    - id: non-neoplastic-intestinal-polyps
-      names: { it: "Polipi intestinali non neoplastici (infiammatori, amartomatosi)", en: "Non-neoplastic intestinal polyps" }
-    - id: serrated-colorectal-lesions
-      names: { it: "Lesioni serrate del colon-retto", en: "Serrated colorectal lesions" }
-    - id: colorectal-adenoma
-      names: { it: "Adenoma del colon-retto", en: "Colorectal adenoma" }
-    - id: familial-adenomatous-polyposis
-      names: { it: "Poliposi adenomatosa familiare", en: "Familial adenomatous polyposis" }
-    - id: lynch-syndrome
-      names: { it: "Sindrome di Lynch", en: "Lynch syndrome" }
-    - id: colorectal-adenocarcinoma
-      names: { it: "Adenocarcinoma del colon-retto", en: "Colorectal adenocarcinoma" }
 - id: o20
   section: III
   order: 20
