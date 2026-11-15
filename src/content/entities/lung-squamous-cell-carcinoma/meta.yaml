@@ -1,0 +1,117 @@
+id: lung-squamous-cell-carcinoma
+module: o18
+tier: core
+kind: disease
+names:
+  it: "Carcinoma squamoso polmonare"
+  en: "Lung squamous cell carcinoma"
+  eponyms: []
+  synonyms:
+    it: ["Carcinoma polmonare a cellule squamose", "Carcinoma epidermoide del polmone"]
+    en: ["Squamous cell carcinoma of the lung", "Epidermoid carcinoma of the lung"]
+  abbreviations: ["SCC"]
+summary:
+  it: "Carcinoma del polmone a differenziazione squamosa, per lo più centrale e fumo-correlato, che nasce da metaplasia, displasia e carcinoma in situ dell'epitelio bronchiale e si riconosce per cheratinizzazione, ponti intercellulari e positività per p40."
+  en: "Lung carcinoma with squamous differentiation, mostly central and smoking-related, arising from metaplasia, dysplasia and carcinoma in situ of the bronchial epithelium and recognized by keratinization, intercellular bridges and p40 positivity."
+lenses:
+  system: [respiratory]
+  process: [neoplasia, cellular-adaptation]
+  pattern: [metaplasia, dysplasia]
+  presentation: [mass-lesion]
+  marker: [ihc]
+  group: [neoplastic, toxic-environmental]
+learningObjectives:
+  - it: "Descrivere la sequenza metaplasia squamosa, displasia, carcinoma in situ e carcinoma invasivo nell'epitelio bronchiale."
+    en: "Describe the sequence of squamous metaplasia, dysplasia, carcinoma in situ and invasive carcinoma in the bronchial epithelium."
+  - it: "Indicare la sede tipica del tumore e il suo aspetto macroscopico."
+    en: "State the typical location of the tumor and its gross appearance."
+  - it: "Riconoscere al microscopio cheratinizzazione, perle cornee e ponti intercellulari, e distinguere i tre sottotipi."
+    en: "Recognize keratinization, keratin pearls and intercellular bridges under the microscope, and tell the three subtypes apart."
+  - it: "Spiegare il ruolo di p40 nei tumori non cheratinizzanti e basaloidi."
+    en: "Explain the role of p40 in nonkeratinizing and basaloid tumors."
+prerequisites: [metaplasia, dysplasia, carcinoma-in-situ]
+relations:
+  - type: differentialOf
+    target: lung-adenocarcinoma
+    note:
+      it: "Il carcinoma squamoso è tipicamente centrale, l'adenocarcinoma periferico."
+      en: "Squamous carcinoma is typically central, adenocarcinoma peripheral."
+  - type: differentialOf
+    target: small-cell-lung-carcinoma
+    note:
+      it: "I tumori squamosi molto indifferenziati senza cheratinizzazione possono simulare il microcitoma."
+      en: "Very poorly differentiated squamous tumors without keratinization can mimic small cell carcinoma."
+  - type: sharesMechanism
+    target: metaplasia
+    note:
+      it: "Nasce da metaplasia squamosa dell'epitelio bronchiale lesionato."
+      en: "It arises from squamous metaplasia of injured bronchial epithelium."
+quickCheck:
+  - id: lung-squamous-cell-carcinoma-q1
+    q:
+      it: "Dove nasce di solito il carcinoma squamoso del polmone?"
+      en: "Where does lung squamous cell carcinoma usually arise?"
+    a:
+      it: "Al centro del polmone, dai bronchi maggiori o segmentari."
+      en: "Centrally in the lung, from major or segmental bronchi."
+    kind: short
+  - id: lung-squamous-cell-carcinoma-q2
+    q:
+      it: "Quale sequenza porta dall'epitelio bronchiale lesionato al tumore invasivo?"
+      en: "Which sequence leads from injured bronchial epithelium to invasive tumor?"
+    a:
+      it: "Metaplasia squamosa, displasia, carcinoma in situ, carcinoma invasivo."
+      en: "Squamous metaplasia, dysplasia, carcinoma in situ, invasive carcinoma."
+    kind: short
+  - id: lung-squamous-cell-carcinoma-q3
+    q:
+      it: "Quale marcatore immunoistochimico aiuta a riconoscere i tumori squamosi non cheratinizzanti e basaloidi?"
+      en: "Which immunohistochemical marker helps to recognize nonkeratinizing and basaloid squamous tumors?"
+    a:
+      it: "L'espressione diffusa di p40."
+      en: "Diffuse p40 expression."
+    kind: short
+selfExplain:
+  - it: "Perché il fumo di sigaretta può portare a un carcinoma squamoso in un epitelio che normalmente non è squamoso?"
+    en: "Why can cigarette smoking lead to a squamous carcinoma in an epithelium that is not normally squamous?"
+  - it: "Perché un carcinoma squamoso del polmone nasce più spesso al centro che alla periferia?"
+    en: "Why does lung squamous cell carcinoma arise more often centrally than peripherally?"
+  - it: "Perché un tumore squamoso molto indifferenziato può essere scambiato per un microcitoma?"
+    en: "Why can a very poorly differentiated squamous tumor be mistaken for small cell carcinoma?"
+examQuestions:
+  - it: "Mi parli del carcinoma squamoso del polmone: dove nasce e che aspetto ha?"
+    en: "Tell me about lung squamous cell carcinoma: where does it arise and what does it look like?"
+    focus: [definition, gross]
+    level: 1
+  - it: "Come si arriva da un epitelio bronchiale lesionato dal fumo a un carcinoma squamoso invasivo?"
+    en: "How does smoke-injured bronchial epithelium progress to an invasive squamous carcinoma?"
+    focus: [etiology, pathogenesis]
+    level: 2
+  - it: "Che cosa vede al microscopio in un carcinoma squamoso ben differenziato?"
+    en: "What do you see under the microscope in a well-differentiated squamous cell carcinoma?"
+    focus: [micro]
+    level: 1
+  - it: "Quando userebbe p40 nella diagnosi di un carcinoma squamoso del polmone, e perché?"
+    en: "When would you use p40 in diagnosing a lung squamous cell carcinoma, and why?"
+    focus: [ancillary, traps]
+    level: 2
+  - it: "Come distingue il carcinoma squamoso dall'adenocarcinoma e dal microcitoma?"
+    en: "How do you tell squamous cell carcinoma from adenocarcinoma and from small cell carcinoma?"
+    focus: [differential, micro]
+    level: 3
+images:
+  - id: lung-squamous-cell-carcinoma-gross-1
+    role: gross
+    pairWith: lung-squamous-cell-carcinoma-micro-1
+  - id: lung-squamous-cell-carcinoma-micro-1
+    role: micro
+  - id: lung-squamous-cell-carcinoma-micro-2
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "18"
+    pages: "753-754"
+lastUpdated: 2026-11-14
+status: published

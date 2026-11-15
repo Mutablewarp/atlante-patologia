@@ -1,0 +1,298 @@
+entity: lung-squamous-cell-carcinoma
+claims:
+  - claimId: lung-squamous-cell-carcinoma-c001
+    section: definition
+    statement: "Squamous cell carcinoma is one of the major lung cancer types, next to small cell, large cell and adenocarcinoma."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c002
+    section: definition
+    statement: "About 20% of lung cancers in the United States are squamous cell carcinoma, the second most frequent histologic type."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c003
+    section: definition
+    statement: "The tumor is more frequent in men than in women."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c004
+    section: etiology
+    statement: "Squamous metaplasia is a common result of bronchial epithelial repair after injury such as cigarette smoking."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c005
+    section: pathogenesis
+    statement: "As in the cervix and skin, bronchial squamous metaplasia can pass through dysplasia and in situ carcinoma before invading."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c006
+    section: pathogenesis
+    statement: "After injury, pluripotent basal cells drive the repair, and squamous metaplasia is the frequent result."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c007
+    section: gross
+    statement: "The usual origin is a major or segmental bronchus, so most tumors are central."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c008
+    section: gross
+    statement: "About 10% of squamous cell carcinomas originate in the lung periphery."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c009
+    section: gross
+    statement: "An ulcerated tumor breaks out of the bronchus and invades the neighboring lung."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c010
+    section: gross
+    statement: "Central cavitation of the tumor is frequent."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c011
+    section: gross
+    statement: "Occasionally a centrally placed squamous cancer shows up as a mass inside the bronchial lumen."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c012
+    section: micro
+    statement: "Three histologic subtypes exist: basaloid, keratinizing and nonkeratinizing."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c013
+    section: micro
+    statement: "In many of these tumors keratinization or intercellular bridges are easy to see."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c014
+    section: micro
+    statement: "Keratin pearls, typical of well-differentiated tumors, are pink keratin cores ringed by layered squamous cells."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c015
+    section: micro
+    statement: "Single keratinizing cells show deeply eosinophilic, glassy cytoplasm."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c016
+    section: micro
+    statement: "Intercellular bridges, visible in some well-differentiated tumors, correspond to desmosomes."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c017
+    section: micro
+    statement: "Lacking keratinization, a very poorly differentiated squamous tumor is easily confused with large cell or small cell carcinoma."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c018
+    section: micro
+    statement: "The basaloid type is recognized by peripheral palisading of small cells with a moderate amount of eosinophilic cytoplasm."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c019
+    section: ancillary
+    statement: "Widespread p40 positivity helps confirm squamous origin in nonkeratinizing and basaloid tumors."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c020
+    section: ancillary
+    statement: "Keratin pearls, intercellular bridges and single-cell keratinization are the microscopic clues to squamous differentiation."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c021
+    section: ancillary
+    statement: "A lung cancer is typed by its most differentiated area, except that any small cell component takes priority."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c022
+    section: ancillary
+    statement: "Grading of differentiation goes by the least differentiated area."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c023
+    section: ancillary
+    statement: "FGFR inhibitors are under clinical testing, and FGFR1 amplification has been reported in squamous cell carcinoma."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c024
+    section: diagnosis
+    statement: "The lumping term non-small cell carcinoma is discouraged because newer drug therapies make naming the exact subtype essential."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c025
+    section: diagnosis
+    statement: "The name bronchogenic carcinoma is no longer recommended, because about one in four primary lung cancers does not clearly arise from a bronchus."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c026
+    section: prognosis
+    statement: "Many non-small cell lung cancers lack the tumor suppressor PTEN, and its absence goes with worse prognosis and drug resistance."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c027
+    section: differential
+    statement: "Adenocarcinoma favors the lung periphery, where subpleural scarring can pucker the overlying pleura."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "754" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c028
+    section: differential
+    statement: "A very poorly differentiated squamous tumor without keratinization can be mistaken for small cell carcinoma."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c029
+    section: high-yield
+    statement: "Squamous cell carcinoma usually originates centrally, in major or segmental bronchi."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c030
+    section: high-yield
+    statement: "Squamous metaplasia after smoking injury is followed by dysplasia, carcinoma in situ and invasive tumor."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c031
+    section: high-yield
+    statement: "Keratin pearls and intercellular bridges characterize well-differentiated tumors."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c032
+    section: high-yield
+    statement: "Diffuse p40 expression supports nonkeratinizing and basaloid squamous carcinoma."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c033
+    section: high-yield
+    statement: "Central cavitation is a frequent feature."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c034
+    section: traps
+    statement: "Although most are central, about 10% of squamous carcinomas originate peripherally."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c035
+    section: traps
+    statement: "Some very poorly differentiated squamous tumors lack keratinization, and diffuse p40 expression helps diagnose the nonkeratinizing ones."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c036
+    section: traps
+    statement: "Squamous foci inside a poorly differentiated large-cell tumor make it a poorly differentiated squamous carcinoma."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-squamous-cell-carcinoma-c037
+    section: mnemonics
+    statement: "The mnemonic CKP recalls central location, keratin pearls and p40."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "753" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
