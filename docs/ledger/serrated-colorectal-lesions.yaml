@@ -1,0 +1,394 @@
+entity: serrated-colorectal-lesions
+claims:
+- claimId: serrated-colorectal-lesions-c001
+  section: definition
+  statement: "The serrated colorectal lesions are hyperplastic polyps, sessile serrated adenomas (also called sessile serrated polyps) and traditional serrated adenomas"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "821-823" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c002
+  section: definition
+  statement: "Hyperplastic polyps are benign; their crypts are overbuilt and each lesion is a small sessile bump"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "821" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c003
+  section: definition
+  statement: "No other colon polyp is as common as the hyperplastic polyp, and the rectum is the site where it is found most"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "821" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c004
+  section: definition
+  statement: "Although a sessile serrated adenoma looks like a hyperplastic polyp, it has malignant potential"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "821" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c005
+  section: definition
+  statement: "Traditional serrated adenomas mostly occur in the distal colon, can be premalignant and are much rarer than hyperplastic polyps or sessile serrated adenomas"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c006
+  section: etiology
+  statement: "Colons that contain adenomatous polyps tend to hold more hyperplastic polyps as well"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "821" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c007
+  section: etiology
+  statement: "Hyperplastic polyps are found more often where colorectal cancer rates are higher"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "821" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c008
+  section: etiology
+  statement: "Hyperplastic and sessile serrated polyps make up most of the many serrated polyps in the rare serrated polyposis syndrome (hyperplastic polyposis syndrome)"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c009
+  section: etiology
+  statement: "Serrated polyposis syndrome affects men and women equally, and European descent and older age raise the risk"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c010
+  section: etiology
+  statement: "Serrated polyposis syndrome runs in families, yet no specific mutation has been identified"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c011
+  section: pathogenesis
+  statement: "Hyperplastic polyps are thought to arise when normal epithelium proliferates and matures abnormally"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "821" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c012
+  section: pathogenesis
+  statement: "Hyperplastic polyp cells stay on the surface longer than normal cells; they mature low in the crypt after a slow climb from the dividing zone at its base"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "821" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c013
+  section: pathogenesis
+  statement: "In sessile serrated adenomas the promoter of the mismatch-repair gene MLH1 is hypermethylated"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "821" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c014
+  section: pathogenesis
+  statement: "BRAF mutations are a feature of sessile serrated adenomas"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "821" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c015
+  section: pathogenesis
+  statement: "Microsatellite instability is frequent in sessile serrated adenomas"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "821" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c016
+  section: pathogenesis
+  statement: "Some traditional serrated adenomas carry KRAS mutations and others BRAF mutations, so their molecular makeup varies"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c017
+  section: pathogenesis
+  statement: "A subset of traditional serrated adenomas shows methylation of the MGMT promoter as part of a CpG island methylator phenotype"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c018
+  section: gross
+  statement: "Hyperplastic polyps are almost always multiple, each one a small pale sessile nodule"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "821-822" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c019
+  section: gross
+  statement: "Sessile serrated adenomas are sessile or flat"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "821" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c020
+  section: gross
+  statement: "Sessile serrated adenomas can mimic a deformed mucosal fold and are often under a film of adherent mucin"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "821-822" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c021
+  section: gross
+  statement: "Sessile serrated adenomas are typically larger than hyperplastic polyps"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "821" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c022
+  section: micro
+  statement: "Hyperplastic polyps have relatively normal-looking crypt bases, while the crypts themselves are elongated"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "821" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c023
+  section: micro
+  statement: "Hyperplastic polyps lack dysplasia; the upper third of each crypt holds absorptive cells and overgrown mucus-secreting cells"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "821" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c024
+  section: micro
+  statement: "Together these features give the hyperplastic polyp a tufted surface with a sawtooth outline"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "821-822" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c025
+  section: micro
+  statement: "In sessile serrated adenomas cells can divide at any height of the crypt, and growth is lopsided and haphazard"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "821,823" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c026
+  section: micro
+  statement: "Goblet and mucin cells are found all the way down in sessile serrated adenomas, so the serration reaches the crypt base"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "822-823" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c027
+  section: micro
+  statement: "Boot-, L- or inverted T-shaped crypts are seen at some bases of sessile serrated adenomas, while mucin distends others"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c028
+  section: micro
+  statement: "Traditional serrated adenomas form ectopic crypts, and their architecture is typically tubulovillous or villous"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "822-823" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c029
+  section: micro
+  statement: "In a traditional serrated adenoma, low-grade dysplasia shows as stretched nuclei and pink (eosinophilic) cytoplasm in a serrated lining"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c030
+  section: ancillary
+  statement: "The reference distinguishes sessile serrated adenomas from hyperplastic polyps by crypt architectural features, and describes no special stain for this"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c031
+  section: clinical
+  statement: "Sessile serrated adenomas usually develop in the right colon"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "821" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c032
+  section: clinical
+  statement: "First-degree relatives of a patient with serrated polyposis syndrome face a higher colorectal cancer risk and should start colonoscopic screening earlier than usual"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c033
+  section: diagnosis
+  statement: "Histology of the crypts is what separates sessile serrated adenomas from hyperplastic polyps"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c034
+  section: diagnosis
+  statement: "Subtle histologic features can make sessile serrated adenomas and hyperplastic polyps hard to tell apart in some cases"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c035
+  section: diagnosis
+  statement: "Complete removal is the right approach for both sessile serrated adenomas and traditional serrated adenomas"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "821,823" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c036
+  section: prognosis
+  statement: "Colorectal carcinoma can arise from a sessile serrated adenoma, an important precursor lesion, but hyperplastic polyps are not such precursors"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "821" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c037
+  section: prognosis
+  statement: "A sessile serrated adenoma can end in invasive carcinoma, after dysplasia worsens from low to high grade"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c038
+  section: differential
+  statement: "Hyperplastic polyps have no dysplasia and relatively normal crypt bases"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "821" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c039
+  section: differential
+  statement: "Sessile serrated adenomas are serrated down to the bases, with boot-, L- or inverted T-shaped crypts"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "822-823" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c040
+  section: differential
+  statement: "Traditional serrated adenomas have eosinophilic cytoplasm, ectopic crypts and a villous or tubulovillous pattern"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "822-823" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c041
+  section: differential
+  statement: "Adenomatous polyps are by definition dysplastic"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "823" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c042
+  section: high-yield
+  statement: "Hyperplastic polyps are benign, lack dysplasia and are commonest in the rectum"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "821" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c043
+  section: high-yield
+  statement: "Sessile serrated adenomas arise in the right colon, show boot-shaped crypts and are premalignant"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "821-823" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c044
+  section: high-yield
+  statement: "Sessile serrated adenomas show BRAF mutation, MLH1 promoter hypermethylation and microsatellite instability"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "821" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c045
+  section: high-yield
+  statement: "Traditional serrated adenomas favor the distal colon, form ectopic crypts and vary in BRAF, KRAS or CIMP changes"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "822-823" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c046
+  section: traps
+  statement: "Sessile serrated adenomas resemble hyperplastic polyps but are premalignant and differ in crypt architecture"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "821,823" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c047
+  section: traps
+  statement: "Hyperplastic polyps are benign, whereas sessile and traditional serrated adenomas should be entirely removed"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "821,823" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c048
+  section: traps
+  statement: "Sessile serrated adenomas show MLH1 methylation, BRAF mutation and microsatellite instability, while traditional serrated adenomas are molecularly diverse"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "821,823" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: serrated-colorectal-lesions-c049
+  section: mnemonics
+  statement: "Sessile serrated adenomas are right-sided, BRAF-mutated and have boot-shaped crypts"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "821,823" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15

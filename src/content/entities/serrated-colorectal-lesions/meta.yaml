@@ -1,0 +1,119 @@
+id: serrated-colorectal-lesions
+module: o19
+tier: core
+kind: disease
+editionDependent: true
+editionNote:
+  it: "La classificazione e la nomenclatura dei polipi serrati sono cambiate tra le edizioni; questa scheda segue l'8a edizione del testo di riferimento."
+  en: "The classification and naming of serrated polyps changed between editions; this card follows the 8th edition of the reference text."
+status: published
+lastUpdated: 2026-11-15
+reviewStatus: ai-generated-unreviewed
+names:
+  it: Lesioni serrate del colon-retto
+  en: Serrated colorectal lesions
+  eponyms: []
+  synonyms:
+    it:
+      - Polipi serrati
+      - Adenoma serrato sessile
+      - Lesione serrata sessile
+    en:
+      - Serrated polyps
+      - Sessile serrated adenoma
+      - Sessile serrated lesion
+  abbreviations:
+    - SSA
+    - TSA
+    - HP
+summary:
+  it: "Gruppo di polipi colorettali con cripte a dente di sega: il polipo iperplastico è benigno, mentre l'adenoma serrato sessile e quello tradizionale sono lesioni precancerose."
+  en: "A group of colorectal polyps with saw-toothed crypts: the hyperplastic polyp is benign, whereas the sessile and traditional serrated adenomas are premalignant."
+learningObjectives:
+  - it: "Distinguere polipo iperplastico, adenoma serrato sessile e adenoma serrato tradizionale."
+    en: "Distinguish hyperplastic polyp, sessile serrated adenoma and traditional serrated adenoma."
+  - it: "Descrivere la via serrata (BRAF, CIMP, instabilità dei microsatelliti)."
+    en: "Describe the serrated pathway (BRAF, CIMP, microsatellite instability)."
+  - it: "Riconoscere le cripte a stivale, a L e a T rovesciata dell'adenoma serrato sessile."
+    en: "Recognize the boot-, L- and inverted T-shaped crypts of the sessile serrated adenoma."
+  - it: "Spiegare perché le lesioni serrate premaligne vanno asportate completamente."
+    en: "Explain why premalignant serrated lesions are removed entirely."
+lenses:
+  system: [gastrointestinal]
+  process: [neoplasia]
+  pattern: [hyperplasia, dysplasia]
+  presentation: [incidental-finding]
+  marker: [molecular]
+  group: [neoplastic]
+prerequisites: [dysplasia]
+relations:
+  - type: differentialOf
+    target: colorectal-adenoma
+    note:
+      it: "Entrambi sono polipi precancerosi, ma l'adenoma convenzionale è displastico per definizione."
+      en: "Both are premalignant polyps, but the conventional adenoma is dysplastic by definition."
+  - type: causes
+    target: colorectal-adenocarcinoma
+    note:
+      it: "L'adenoma serrato sessile può evolvere in carcinoma invasivo."
+      en: "The sessile serrated adenoma can progress to invasive carcinoma."
+  - type: sharesMechanism
+    target: precancerous-lesions
+quickCheck:
+  - id: serrated-colorectal-lesions-q1
+    q:
+      it: "Quali tre tipi di polipo serrato si distinguono?"
+      en: "Which three types of serrated polyp are distinguished?"
+    a:
+      it: "Polipo iperplastico, adenoma serrato sessile e adenoma serrato tradizionale."
+      en: "Hyperplastic polyp, sessile serrated adenoma and traditional serrated adenoma."
+    kind: short
+  - id: serrated-colorectal-lesions-q2
+    q:
+      it: "Quali alterazioni molecolari caratterizzano l'adenoma serrato sessile?"
+      en: "Which molecular changes characterize the sessile serrated adenoma?"
+    a:
+      it: "Ipermetilazione del promotore di MLH1, mutazioni di BRAF e instabilità dei microsatelliti."
+      en: "MLH1 promoter hypermethylation, BRAF mutations and microsatellite instability."
+    kind: short
+  - id: serrated-colorectal-lesions-q3
+    q:
+      it: "Quale reperto istologico distingue l'adenoma serrato sessile dal polipo iperplastico?"
+      en: "Which histologic finding separates a sessile serrated adenoma from a hyperplastic polyp?"
+    a:
+      it: "La seghettatura arriva fino alla base delle cripte, con basi dilatate e cripte a stivale, a L o a T rovesciata."
+      en: "Serration reaches the crypt bases, with dilated bases and boot-, L- or inverted T-shaped crypts."
+    kind: free
+  - id: serrated-colorectal-lesions-q4
+    q:
+      it: "In quale parte del colon sorge tipicamente l'adenoma serrato sessile?"
+      en: "Where in the colon does the sessile serrated adenoma typically arise?"
+    a:
+      it: "Nel colon destro."
+      en: "In the right colon."
+    kind: short
+selfExplain:
+  - it: "Perché l'adenoma serrato sessile va asportato completamente, a differenza del polipo iperplastico?"
+    en: "Why is the sessile serrated adenoma removed entirely, unlike the hyperplastic polyp?"
+  - it: "Perché la seghettatura raggiunge la base delle cripte nell'adenoma serrato sessile?"
+    en: "Why does the serration reach the crypt base in the sessile serrated adenoma?"
+examQuestions:
+  - it: "Mi parli dei polipi serrati del colon-retto: quali tipi conosce e quali sono premaligni?"
+    en: "Tell me about serrated colorectal polyps: which types do you know, and which are premalignant?"
+    focus: [definition, prognosis]
+    level: 1
+  - it: "Che cosa vede al microscopio in un adenoma serrato sessile e come lo distingue da un polipo iperplastico?"
+    en: "What do you see under the microscope in a sessile serrated adenoma, and how do you tell it from a hyperplastic polyp?"
+    focus: [micro, differential]
+    level: 3
+  - it: "Perché l'adenoma serrato sessile è considerato un precursore del carcinoma colorettale? Quali alterazioni molecolari ha?"
+    en: "Why is the sessile serrated adenoma considered a precursor of colorectal carcinoma, and which molecular changes does it show?"
+    focus: [pathogenesis, prognosis]
+    level: 2
+images:
+  - id: serrated-colorectal-lesions-micro-1
+    role: micro
+sources:
+  - source: rubin-8e
+    chapter: "19"
+    pages: "821-823"
