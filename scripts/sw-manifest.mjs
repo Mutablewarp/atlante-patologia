@@ -33,6 +33,7 @@ export const isShellAsset = (p) => SHELL_ASSET.test(p) && !LAZY_ONLY.test(p);
  * Cached on first use (cache-first) but not precached: their hashes still feed the worker VERSION, so a
  * structure or body mesh replaced under the same name reaches returning visitors with the next worker.
  */
+export const isMutableLazy = (p) => p.startsWith('structures/') || p.startsWith('anatomy/');
 export const isLazyCached = (p) => LAZY_ONLY.test(p) || p.startsWith('structures/') || p.startsWith('anatomy/');
 
 const sha = (buf) => createHash('sha256').update(buf).digest('hex').slice(0, 16);
@@ -132,8 +133,14 @@ function main() {
   // ── Stamp the version into the worker so every shell change is a new worker ──
   const swFile = join(DIST, 'sw.js');
   const sw = readFileSync(swFile, 'utf8');
-  const stamped = sw.replace("const VERSION = 'dev';", `const VERSION = '${version}';`);
-  if (stamped === sw) throw new Error("sw-manifest: VERSION placeholder not found in sw.js");
+  // The lazy files whose names stay: their cache is versioned by them alone, so a code deploy does not empty it.
+  const lazyVersion = versionOf(hashed(all.filter(isMutableLazy)));
+  const stamped = sw
+    .replace("const VERSION = 'dev';", `const VERSION = '${version}';`)
+    .replace("const LAZY_VERSION = 'dev';", `const LAZY_VERSION = '${lazyVersion}';`);
+  if (!stamped.includes(`const VERSION = '${version}';`) || !stamped.includes(`const LAZY_VERSION = '${lazyVersion}';`)) {
+    throw new Error('sw-manifest: VERSION or LAZY_VERSION placeholder not found in sw.js');
+  }
   writeFileSync(swFile, stamped);
 
   console.log(`sw-manifest: shell ${Object.keys(shellFiles).length} files (version ${version}), ${packs} offline pack(s)`);

@@ -6,7 +6,8 @@ import { existsSync, readdirSync, readFileSync, statSync } from 'node:fs';
 import { join } from 'node:path';
 import { gzipSync } from 'node:zlib';
 import { describe, expect, it } from 'vitest';
-import { LAZY_ONLY } from '../../scripts/sw-manifest.mjs';
+import { createHash } from 'node:crypto';
+import { isMutableLazy, LAZY_ONLY, versionOf } from '../../scripts/sw-manifest.mjs';
 import { DIST, pages, resolveFile, walk } from './lib.ts';
 
 /** Limits in bytes. */
@@ -78,5 +79,22 @@ describe('body viewer chunk', () => {
     const total = [...urls].reduce((n, u) => n + gzipSync(readFileSync(resolveFile(u)!)).length, 0);
     console.info(`it/body static scripts: ${urls.size} files, ${total} bytes gz`);
     expect(total).toBeLessThanOrEqual(LIMITS.staticScriptsGzip);
+  });
+});
+
+describe('worker caches of the lazy files', () => {
+  const sw = readFileSync(join(DIST, 'sw.js'), 'utf8');
+  const rel = (f: string) => f.slice(DIST.length + 1).split('\\').join('/');
+  const sha = (f: string) => createHash('sha256').update(readFileSync(f)).digest('hex').slice(0, 16);
+
+  it('the lazy cache is versioned by the anatomy and structure files alone, so a code deploy keeps it', () => {
+    const files = Object.fromEntries(walk().filter((f) => isMutableLazy(rel(f))).map((f) => [rel(f), sha(f)]));
+    expect(Object.keys(files).some((p) => p.startsWith('anatomy/'))).toBe(true);
+    expect(sw).toContain(`const LAZY_VERSION = '${versionOf(files)}';`);
+  });
+
+  it('hashed _astro files go to a cache that a new worker does not delete', () => {
+    expect(sw).toMatch(/const ASSETS = 'assets';/);
+    expect(sw).toMatch(/!\[SHELL, ASSETS, LAZY\]\.includes\(k\)/);
   });
 });

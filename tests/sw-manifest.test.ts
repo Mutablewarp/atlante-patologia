@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { imagesIn, isLazyCached, isShellAsset, LAZY_ONLY, versionOf } from '../scripts/sw-manifest.mjs';
+import { imagesIn, isLazyCached, isMutableLazy, isShellAsset, LAZY_ONLY, versionOf } from '../scripts/sw-manifest.mjs';
 
 describe('sw-manifest imagesIn', () => {
   it('collects same-site images from src, srcset and href, relative to the base', () => {
@@ -58,3 +58,11 @@ describe('sw-manifest body viewer', () => {
   });
 });
 
+describe('sw-manifest lazy cache', () => {
+  it('only files whose names stay put version the lazy cache; hashed chunks do not', () => {
+    expect(isMutableLazy('anatomy/heart.glb')).toBe(true);
+    expect(isMutableLazy('structures/6o0k.bcif.gz')).toBe(true);
+    expect(isMutableLazy('_astro/body-3d.XXXXXXXX.js')).toBe(false);
+    expect(isMutableLazy('_astro/index.abc.css')).toBe(false);
+  });
+});
