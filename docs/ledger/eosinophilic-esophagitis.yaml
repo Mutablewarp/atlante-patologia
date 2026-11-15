@@ -1,0 +1,346 @@
+entity: eosinophilic-esophagitis
+claims:
+- claimId: eosinophilic-esophagitis-c001
+  section: definition
+  statement: "Immune-mediated esophageal disease that often affects people with allergies or asthma."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "771-772" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c002
+  section: definition
+  statement: "Males are affected more often, and onset is possible at any age."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "772" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c003
+  section: etiology
+  statement: "Foods and environmental allergens probably act as important triggers through allergy."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c004
+  section: etiology
+  statement: "Atopy affects many patients, and often their close relatives too."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "772" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c005
+  section: pathogenesis
+  statement: "The pathogenesis is not completely understood."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c007
+  section: gross
+  statement: "Trachealization or felinization is the name given to concentric rings of mucosa seen at endoscopy."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c008
+  section: gross
+  statement: "Besides rings, endoscopy may show lengthwise furrows and strictures."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c009
+  section: gross
+  statement: "In a subset of patients the esophagus looks normal on endoscopy."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c010
+  section: micro
+  statement: "Samples from several heights of the esophagus are needed because the lesions are unevenly distributed."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c011
+  section: micro
+  statement: "Fluid accumulates between epithelial cells, and both the basal layer and the papillae are hyperplastic."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c012
+  section: micro
+  statement: "Counted inside the epithelium, eosinophils reach a threshold of 15 or more per high-power field."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c013
+  section: micro
+  statement: "Near the epithelial surface eosinophils form layers, and clusters of them make microabscesses."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c014
+  section: micro
+  statement: "Eosinophil degranulation is prominent."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c015
+  section: ancillary
+  statement: "The tissue is obtained by endoscopic biopsy at several esophageal levels."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c016
+  section: ancillary
+  statement: "Intraepithelial eosinophils are counted per high-power field on the biopsy."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c017
+  section: clinical
+  statement: "The usual adult complaint is food getting stuck or trouble swallowing solids."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "772" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c018
+  section: clinical
+  statement: "Young children may come to attention for feeding difficulty or failure to thrive."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "772" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c019
+  section: clinical
+  statement: "Some patients blame specific foods for the sensation of food catching as they swallow."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c020
+  section: clinical
+  statement: "Many patients are first suspected when standard antireflux therapy does not help."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c021
+  section: clinical
+  statement: "Some patients have mildly increased blood eosinophils."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "772" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c022
+  section: diagnosis
+  statement: "Diagnosis requires clinical-pathologic correlation."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c023
+  section: diagnosis
+  statement: "Reflux can be excluded with a PPI trial lasting some weeks or with pH monitoring."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c024
+  section: diagnosis
+  statement: "The pathologist examines biopsies taken at different esophageal heights."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c025
+  section: prognosis
+  statement: "Many patients enter remission when the culprit food is removed from the diet."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "772" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c026
+  section: prognosis
+  statement: "Swallowed corticosteroids and other immune-modulating drugs are used as drug treatment."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "772" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c027
+  section: differential
+  statement: "GERD can also increase eosinophils, which are usually found in the distal esophagus."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c028
+  section: differential
+  statement: "In GERD the eosinophils should subside after antireflux therapy."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c029
+  section: differential
+  statement: "In eosinophilic esophagitis the eosinophils are usually in the proximal and/or mid esophagus."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "772" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c030
+  section: differential
+  statement: "In eosinophilic esophagitis the eosinophils do not respond to antireflux therapy."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "772" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c031
+  section: differential
+  statement: "White mucosal plaques are characteristic of Candida esophagitis; small white plaques or exudates can also occur in eosinophilic esophagitis."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "771-772" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c032
+  section: differential
+  statement: "Within the squamous epithelium, neutrophils are typically present in Candida esophagitis."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "772" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c033
+  section: differential
+  statement: "Candida esophagitis arises with weakened immunity, for example in HIV/AIDS or after transplantation."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "772" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c034
+  section: high-yield
+  statement: "Atopy is common in patients and their families."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "772" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c035
+  section: high-yield
+  statement: "The histologic threshold is 15 or more intraepithelial eosinophils per high-power field."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c036
+  section: high-yield
+  statement: "Endoscopy shows concentric rings and vertical linear furrows."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c037
+  section: high-yield
+  statement: "Unlike reflux, the eosinophils are proximal or mid-esophageal and do not respond to antireflux therapy."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "771-772" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c038
+  section: high-yield
+  statement: "Food impaction or dysphagia for solids is the classic adult complaint."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "772" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c039
+  section: high-yield
+  statement: "Treatment options include food elimination and swallowed corticosteroids."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "772" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c040
+  section: traps
+  statement: "A normal-appearing esophagus at endoscopy does not exclude the disease."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c041
+  section: traps
+  statement: "Reflux can also raise eosinophils; the difference is that they are usually distal and subside with antireflux therapy."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c042
+  section: traps
+  statement: "The disease occurs at any age and children may have feeding difficulties or failure to thrive."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "772" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c043
+  section: traps
+  statement: "Small white plaques or exudates can be seen on endoscopy in eosinophilic esophagitis."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "771" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: eosinophilic-esophagitis-c044
+  section: mnemonics
+  statement: "Mnemonic FEED summarizes furrows and rings, eosinophils at 15 or more per high-power field, elimination diet and dysphagia."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "771-772" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
