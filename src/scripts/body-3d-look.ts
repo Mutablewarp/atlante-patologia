@@ -8,8 +8,12 @@ import type { Role } from '../lib/body-view.ts';
 /** CSS colours by token name: `eosin`, `hema`, `ink`, `surface2`. Any string three.js can parse (hex, rgb(), hsl()). */
 export type Colors = Record<string, string>;
 
-/** Solid, these hide every other organ in the whole-body view (spec section 7): the breast covers the chest. */
-export const GHOST_WHOLE = new Set(['skeletal-muscle', 'bones', 'breast']);
+/**
+ * Solid, these hide every other organ in the whole-body view (spec section 7): the breast covers the chest. The female organs
+ * are ghosts there too: the base body is male, and a solid uterus in it would read as part of the body, not as a fitted
+ * reference; they come solid with their own system.
+ */
+export const GHOST_WHOLE = new Set(['skeletal-muscle', 'bones', 'breast', 'uterus', 'uterine-cervix', 'fallopian-tube', 'ovary']);
 const GHOST_ALPHA = 0.12;
 /** Hundreds of overlapping muscles at the usual alpha make a fog over the organ in front of the camera. */
 const FAINT = new Set(['skeletal-muscle']);

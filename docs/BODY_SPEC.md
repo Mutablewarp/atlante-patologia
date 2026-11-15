@@ -118,7 +118,7 @@ export function mount(canvas: HTMLCanvasElement, opts: { manifestUrl: string; re
 - Shell: translucent, brightest at the silhouette (Fresnel term) in `--ink` at low alpha, so the body reads as a drawn outline with the organs inside.
 - Organs: Lambert shading, one hemisphere light and one key light. Colours are read from the CSS tokens at start and again when the theme changes.
   - organs of the selected system: `--eosin`; the selected organ: `--hema`, with a thin `--ink` outline (back-face hull);
-  - organs of other systems: ghost (alpha about 0.12, no depth write); with no system selected, every organ in a soft eosin tint, **except `skeletal-muscle` and `bones`, which stay ghosts until their own system is selected**: drawn solid they hide every other organ (seen in the B-3d look pass);
+  - organs of other systems: ghost (alpha about 0.12, no depth write); with no system selected, every organ in a soft eosin tint, **except `skeletal-muscle` and `bones`, which stay ghosts until their own system is selected**: drawn solid they hide every other organ (seen in the B-3d look pass); the `breast` and the fitted female organs (`uterus`, `uterine-cervix`, `fallopian-tube`, `ovary`) are ghosts there too, because the base body is male (decided 2026-11-15, answering the owner question about the mixed whole-body view);
   - an organ with no published card is lighter (mixed towards `--surface-2`) and stays selectable.
 - Label: the selected organ's name in `--font-display` with a leader line, as HTML over the canvas (crisp text, selectable, translated).
 - Controls use the existing button and `.segmented` styles (`src/styles/viewer.css`, `entity.css`). Touch targets ≥ 44 px. Focus ring `--focus`.
