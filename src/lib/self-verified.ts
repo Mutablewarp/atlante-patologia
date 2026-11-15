@@ -16,7 +16,14 @@ export type SelfVerified = {
 
 export const SELF_VERIFIED: readonly SelfVerified[] = [
   { ledger: 'acute-pancreatitis', claims: 4, name: { it: 'Pancreatite acuta', en: 'Acute pancreatitis' }, path: 'e/acute-pancreatitis/' },
+  { ledger: 'acute-tubular-injury', claims: 2, name: { it: 'Danno tubulare acuto (necrosi tubulare acuta)', en: 'Acute tubular injury' }, path: 'e/acute-tubular-injury/' },
   { ledger: 'acute-viral-hepatitis', claims: 1, name: { it: 'Epatite virale acuta', en: 'Acute viral hepatitis' }, path: 'e/acute-viral-hepatitis/' },
+  {
+    ledger: 'alport-and-thin-basement-membrane-disease',
+    claims: 3,
+    name: { it: 'Sindrome di Alport e malattia delle membrane basali sottili', en: 'Alport syndrome and thin basement membrane disease' },
+    path: 'e/alport-and-thin-basement-membrane-disease/',
+  },
   {
     ledger: 'anca-associated-vasculitis',
     claims: 6,
@@ -50,6 +57,7 @@ export const SELF_VERIFIED: readonly SelfVerified[] = [
   { ledger: 'cirrhosis', claims: 4, name: { it: 'Cirrosi epatica', en: 'Cirrhosis' }, path: 'e/cirrhosis/' },
   { ledger: 'colorectal-adenocarcinoma', claims: 1, name: { it: 'Adenocarcinoma del colon-retto', en: 'Colorectal adenocarcinoma' }, path: 'e/colorectal-adenocarcinoma/' },
   { ledger: 'colorectal-adenoma', claims: 1, name: { it: 'Adenoma del colon-retto', en: 'Colorectal adenoma' }, path: 'e/colorectal-adenoma/' },
+  { ledger: 'diabetic-nephropathy', claims: 1, name: { it: 'Nefropatia diabetica', en: 'Diabetic nephropathy' }, path: 'e/diabetic-nephropathy/' },
   { ledger: 'drug-induced-liver-injury', claims: 2, name: { it: 'Danno epatico da farmaci', en: 'Drug-induced liver injury' }, path: 'e/drug-induced-liver-injury/' },
   { ledger: 'dysplasia', claims: 1, name: { it: 'Displasia', en: 'Dysplasia' }, path: 'e/dysplasia/' },
   { ledger: 'dystrophic-calcification', claims: 1, name: { it: 'Calcificazione distrofica', en: 'Dystrophic calcification' }, path: 'e/dystrophic-calcification/' },
@@ -77,6 +85,7 @@ export const SELF_VERIFIED: readonly SelfVerified[] = [
     name: { it: 'Fibrosi polmonare idiopatica (UIP)', en: 'Idiopathic pulmonary fibrosis (UIP pattern)' },
     path: 'e/idiopathic-pulmonary-fibrosis/',
   },
+  { ledger: 'iga-nephropathy', claims: 2, name: { it: 'Nefropatia a IgA', en: 'IgA nephropathy' }, path: 'e/iga-nephropathy/' },
   {
     ledger: 'infectious-and-chemical-esophagitis',
     claims: 1,
@@ -87,12 +96,15 @@ export const SELF_VERIFIED: readonly SelfVerified[] = [
   { ledger: 'kawasaki-disease', claims: 2, name: { it: 'Malattia di Kawasaki', en: 'Kawasaki disease' }, path: 'e/kawasaki-disease/' },
   { ledger: 'liquefactive-necrosis', claims: 1, name: { it: 'Necrosi colliquativa', en: 'Liquefactive necrosis' }, path: 'e/liquefactive-necrosis/' },
   { ledger: 'lung-squamous-cell-carcinoma', claims: 1, name: { it: 'Carcinoma squamoso polmonare', en: 'Lung squamous cell carcinoma' }, path: 'e/lung-squamous-cell-carcinoma/' },
+  { ledger: 'lupus-nephritis', claims: 11, name: { it: 'Nefrite lupica', en: 'Lupus nephritis' }, path: 'e/lupus-nephritis/' },
   { ledger: 'lynch-syndrome', claims: 2, name: { it: 'Sindrome di Lynch', en: 'Lynch syndrome' }, path: 'e/lynch-syndrome/' },
   { ledger: 'malabsorption-syndromes', claims: 1, name: { it: 'Sindromi da malassorbimento', en: 'Malabsorption syndromes' }, path: 'e/malabsorption-syndromes/' },
   { ledger: 'malignant-hypertension', claims: 4, name: { it: 'Ipertensione maligna', en: 'Malignant hypertension' }, path: 'e/malignant-hypertension/' },
   { ledger: 'metaplasia', claims: 1, name: { it: 'Metaplasia', en: 'Metaplasia' }, path: 'e/metaplasia/' },
+  { ledger: 'minimal-change-disease', claims: 2, name: { it: 'Malattia a lesioni minime', en: 'Minimal change disease' }, path: 'e/minimal-change-disease/' },
   { ledger: 'mitral-valve-prolapse', claims: 2, name: { it: 'Prolasso della valvola mitrale', en: 'Mitral valve prolapse' }, path: 'e/mitral-valve-prolapse/' },
   { ledger: 'myocarditis', claims: 1, name: { it: 'Miocardite', en: 'Myocarditis' }, path: 'e/myocarditis/' },
+  { ledger: 'nephrocalcinosis', claims: 1, name: { it: 'Nefrocalcinosi e nefropatia uratica', en: 'Nephrocalcinosis and urate nephropathy' }, path: 'e/nephrocalcinosis/' },
   {
     ledger: 'nonalcoholic-fatty-liver-disease',
     claims: 5,
@@ -121,6 +133,7 @@ export const SELF_VERIFIED: readonly SelfVerified[] = [
     name: { it: 'Controllo di qualità delle proteine (sistema ubiquitina-proteasoma, chaperoni)', en: 'Protein quality control (ubiquitin–proteasome system, chaperones)' },
     path: 'e/protein-quality-control/',
   },
+  { ledger: 'pyelonephritis', claims: 3, name: { it: 'Pielonefriti acute e croniche', en: 'Acute and chronic pyelonephritis' }, path: 'e/pyelonephritis/' },
   {
     ledger: 'rheumatic-heart-disease',
     claims: 1,
