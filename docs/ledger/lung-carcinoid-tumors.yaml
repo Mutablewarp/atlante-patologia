@@ -1,0 +1,346 @@
+entity: lung-carcinoid-tumors
+claims:
+- claimId: lung-carcinoid-tumors-c001
+  section: definition
+  statement: "Resident neuroendocrine cells of the normal bronchial lining are thought to give rise to lung carcinoids, which divide into a typical and an atypical subtype"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "759" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c002
+  section: definition
+  statement: "In the United States, 2% to 3% of primary lung cancers are carcinoids"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "759" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c003
+  section: etiology
+  statement: "Lung carcinoids are not related to cigarette smoking"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "759" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c004
+  section: pathogenesis
+  statement: "Most carcinoid tumors do not produce a clinical endocrine syndrome"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "759" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c005
+  section: pathogenesis
+  statement: "Tumorlets are nodular neuroendocrine proliferations smaller than 0.5 cm"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "759" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c006
+  section: pathogenesis
+  statement: "Tumorlets are usually chance findings with no clinical significance, and they may arise alongside interstitial fibrosis or small airway disorders"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "759" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c007
+  section: gross
+  statement: "The location is subpleural in about a third of carcinoids, central in another third, and mid-lung in the remaining third"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "759" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c008
+  section: gross
+  statement: "Central carcinoids lie mostly within the airway and protrude into the bronchial lumen as polypoid masses"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "759" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c009
+  section: gross
+  statement: "Tumor size ranges from 0.5 to 10 cm, with a mean diameter of 3.0 cm"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "759" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c010
+  section: micro
+  statement: "Nuclei show fine granular chromatin and the cytoplasm is pink and granular, in uniform cells that grow in organoid patterns"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "759" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c011
+  section: micro
+  statement: "A carcinoid can show rosette or trabecular architecture among its patterns"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "759" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c012
+  section: micro
+  statement: "A carcinoid with 2 to 10 mitoses per 2 mm2 is classed as atypical rather than typical"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "760" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c013
+  section: micro
+  statement: "Necrosis also distinguishes an atypical carcinoid from a typical one"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "760" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c014
+  section: ancillary
+  statement: "Mitotic count and presence of necrosis separate atypical from typical carcinoid"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "760" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c015
+  section: ancillary
+  statement: "Carcinoid tumor cells contain neuropeptides that are easy to demonstrate"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "759" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c016
+  section: clinical
+  statement: "About half of patients have no symptoms at diagnosis, consistent with the slow growth of the tumor"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "760" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c017
+  section: clinical
+  statement: "A common way for a carcinoid to come to light is a chance chest radiograph showing a mass"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "760" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c018
+  section: clinical
+  statement: "The most common symptoms are dyspnea, hemoptysis and postobstructive pneumonitis"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "760" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c019
+  section: clinical
+  statement: "A central carcinoid can block the bronchus, and the lung beyond it may become inflamed"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "761" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c020
+  section: clinical
+  statement: "Cushing syndrome from ectopic ACTH made by the tumor cells is one example of the endocrinopathy seen in a small subset of patients"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "759" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c021
+  section: clinical
+  statement: "Liver metastases are usually present when carcinoid syndrome occurs, which happens in 1% of cases"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "759" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c023
+  section: clinical
+  statement: "Diagnosis averages age 55, though any age can be affected"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "760" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c024
+  section: clinical
+  statement: "Among lung tumors of childhood, bronchial carcinoid is the most common"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "760" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c025
+  section: diagnosis
+  statement: "Imaging often first reveals a carcinoid as a mass on a plain chest film"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "760" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c026
+  section: diagnosis
+  statement: "Typical and atypical carcinoid are distinguished histologically by mitotic count and necrosis"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "760" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c027
+  section: prognosis
+  statement: "The atypical form has a worse clinical course than the typical form"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "760" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c028
+  section: prognosis
+  statement: "About 15% of patients with a typical carcinoid have spread to regional lymph nodes"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "760" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c029
+  section: prognosis
+  statement: "Half of patients with an atypical carcinoid have spread to regional lymph nodes"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "760" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c030
+  section: prognosis
+  statement: "Of patients with a typical carcinoid, 90% are alive five years after surgery"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "760" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c031
+  section: prognosis
+  statement: "Atypical carcinoid has 60% five-year survival after surgery"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "760" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c032
+  section: differential
+  statement: "A typical carcinoid is a carcinoid without the mitotic count or necrosis that define the atypical form"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "760" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c033
+  section: differential
+  statement: "An atypical carcinoid shows necrosis or a mitotic count between 2 and 10 in 2 mm2"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "760" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c034
+  section: differential
+  statement: "Tumorlets are neuroendocrine nodules under 0.5 cm that are usually incidental findings"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "759" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c035
+  section: high-yield
+  statement: "Bronchial neuroendocrine cells are thought to give rise to the two carcinoid subtypes, typical and atypical"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "759" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c036
+  section: high-yield
+  statement: "A carcinoid with necrosis, or with a mitotic count between 2 and 10 in 2 mm2, is atypical"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "760" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c037
+  section: high-yield
+  statement: "A central carcinoid grows into the bronchial lumen and can cause postobstructive pneumonia"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "759-761" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c038
+  section: high-yield
+  statement: "Carcinoids are not related to cigarette smoking"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "759" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c039
+  section: high-yield
+  statement: "Carcinoid syndrome occurs in 1% of cases and usually accompanies liver metastases, while most carcinoids are endocrinologically silent"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "759" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c040
+  section: high-yield
+  statement: "Five-year survival after surgery is 90% for typical and 60% for atypical carcinoid"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "760" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c041
+  section: traps
+  statement: "Carcinoid tumors of the lung are not related to cigarette smoking"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "759" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c042
+  section: traps
+  statement: "Most carcinoids are endocrinologically silent and carcinoid syndrome occurs in 1% of cases"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "759" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c043
+  section: traps
+  statement: "Necrosis alone, without the mitotic criterion, is enough to classify a carcinoid as atypical"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "760" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: lung-carcinoid-tumors-c044
+  section: mnemonics
+  statement: "Necrosis, or a mitotic count between 2 and 10 in 2 mm2, makes a carcinoid atypical"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "760" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14

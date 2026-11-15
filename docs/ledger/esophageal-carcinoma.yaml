@@ -1,0 +1,482 @@
+entity: esophageal-carcinoma
+claims:
+  - claimId: esophageal-carcinoma-c001
+    section: definition
+    statement: "Esophageal cancer ranks eighth in frequency among cancers worldwide."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "775" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c002
+    section: definition
+    statement: "Squamous cell carcinoma is the leading type of esophageal cancer worldwide."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "775" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c003
+    section: definition
+    statement: "Adenocarcinoma clearly outnumbers squamous carcinoma in Australia, Western Europe and North America."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: esophageal-carcinoma-c004
+    section: definition
+    statement: "Squamous carcinoma is strikingly uneven across the globe, with the highest frequency in South Africa, South America, Iran and China."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "775" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c005
+    section: definition
+    statement: "Squamous carcinoma is more common in older men."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "775" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c006
+    section: definition
+    statement: "Adenocarcinoma affects men more often than women."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c007
+    section: definition
+    statement: "Over 30 years the US incidence of adenocarcinoma has multiplied by seven, the steepest rise of any solid tumor."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: esophageal-carcinoma-c008
+    section: etiology
+    statement: "Environmental exposure is the main suspect in squamous carcinoma, because its frequency differs even between fairly homogeneous populations."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "775" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c009
+    section: etiology
+    statement: "Smoking and alcohol head the list of squamous risk factors, and together they raise risk more than their separate effects added up."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "775" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: esophageal-carcinoma-c010
+    section: etiology
+    statement: "HPV, large intakes of hot beverages, Plummer-Vinson syndrome, achalasia and earlier caustic injury also contribute to squamous carcinoma risk."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "775" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c011
+    section: etiology
+    statement: "Barrett esophagus with dysplasia is the usual starting point of adenocarcinoma, so the risk factors of Barrett carry over to it."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: esophageal-carcinoma-c012
+    section: etiology
+    statement: "Main adenocarcinoma risk factors are GERD, obesity, male sex and white race."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c013
+    section: etiology
+    statement: "Conditions that increase gastric acid or reflux add adenocarcinoma risk; examples are scleroderma and Zollinger-Ellison syndrome."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c014
+    section: pathogenesis
+    statement: "Beside an invasive adenocarcinoma, non-neoplastic Barrett mucosa is often found, in keeping with origin from Barrett dysplasia."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c015
+    section: pathogenesis
+    statement: "Drugs that relax the lower esophageal sphincter, and dilation or myotomy of the sphincter, promote reflux and are adenocarcinoma risk factors."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c016
+    section: gross
+    statement: "In roughly half of squamous carcinomas the middle and upper thirds are involved."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "775" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c017
+    section: gross
+    statement: "The distal esophagus and gastroesophageal junction are the usual site of adenocarcinoma, which can grow on into the proximal stomach."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c018
+    section: gross
+    statement: "Squamous tumors can protrude into the lumen, burrow into the wall, or spread mostly inside the wall."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "775" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c019
+    section: gross
+    statement: "Adenocarcinoma may grow as a raised mass, as an ulcer, or as a flat lesion."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c020
+    section: gross
+    statement: "Tumor-free Barrett mucosa often lies around the adenocarcinoma and may be visible without a microscope."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: esophageal-carcinoma-c021
+    section: micro
+    statement: "A squamous carcinoma with keratin pearls is well differentiated, while one with no recognizable squamous features is poorly differentiated."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "775" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: esophageal-carcinoma-c022
+    section: micro
+    statement: "In some squamous carcinomas, spindle cells make up most of the tumor."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "775" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c023
+    section: micro
+    statement: "Adenocarcinoma is graded by gland formation: clear glands in well differentiated cases, hardly any in poorly differentiated ones."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c024
+    section: micro
+    statement: "Signet ring cells are seen in some poorly differentiated adenocarcinomas."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c025
+    section: ancillary
+    statement: "On routine histology the two types are separated by keratin pearls in well differentiated squamous tumors versus glands in well differentiated adenocarcinomas."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "775-776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c026
+    section: ancillary
+    statement: "Endoscopy combined with ultrasound is the usual way to diagnose and stage esophageal adenocarcinoma."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c027
+    section: clinical
+    statement: "Patients most often present because of dysphagia."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c028
+    section: clinical
+    statement: "Cachexia may develop in patients."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c029
+    section: clinical
+    statement: "Half of patients have odynophagia."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c030
+    section: clinical
+    statement: "Persistent pain should raise suspicion that the tumor has reached the mediastinum or spinal nerves."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: esophageal-carcinoma-c031
+    section: clinical
+    statement: "Hoarseness results when the recurrent laryngeal nerve is compressed."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c032
+    section: clinical
+    statement: "Adenocarcinoma presents like squamous carcinoma, and the typical patient is an obese white man with a history of GERD."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c033
+    section: diagnosis
+    statement: "The abundant lymphatic vessels of the esophagus carry most metastases."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "775" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c034
+    section: diagnosis
+    statement: "Cervical, internal jugular and supraclavicular nodes receive metastases from upper-third tumors."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "775" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c035
+    section: diagnosis
+    statement: "Middle-third tumors metastasize to paraesophageal, cardiac, aortic, hilar and paratracheal nodes."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "775" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c036
+    section: diagnosis
+    statement: "Left gastric, celiac and retroperitoneal nodes receive metastases from lower-third tumors, whose lymphatics accompany the left gastric artery."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "775" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c037
+    section: diagnosis
+    statement: "Liver and lung metastases are common."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "775" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c038
+    section: prognosis
+    statement: "Most tumors are inoperable once dysphagia has developed."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c039
+    section: prognosis
+    statement: "Obstruction comes early with bulky polypoid tumors."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "775" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c040
+    section: prognosis
+    statement: "Bleeding is likelier with ulcerated tumors."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "775" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c041
+    section: prognosis
+    statement: "Infiltrating tumors squeeze the lumen from all sides, so the narrowing is gradual."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "775" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c042
+    section: prognosis
+    statement: "A tracheoesophageal fistula shows up as a persistent cough."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c043
+    section: prognosis
+    statement: "Serious problems often follow tumor spread to the mediastinum."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "775" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: esophageal-carcinoma-c044
+    section: prognosis
+    statement: "Endoscopic mucosal resection is a treatment option for early invasive T1 cancers."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c045
+    section: prognosis
+    statement: "In advanced disease, a good response to chemotherapy and radiation can lead on to surgery."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-15
+  - claimId: esophageal-carcinoma-c046
+    section: prognosis
+    statement: "Treatment of squamous carcinoma is similar to that of adenocarcinoma."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c047
+    section: differential
+    statement: "Barrett esophagus is stomach-like columnar metaplasia of the esophageal lining and the non-neoplastic background of adenocarcinoma."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c048
+    section: differential
+    statement: "A leiomyoma is almost always benign and is the commonest esophageal tumor of spindle cells in the submucosa."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "775" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-15
+  - claimId: esophageal-carcinoma-c049
+    section: differential
+    statement: "Rugal folds mark the start of the stomach, which helps decide whether a junctional tumor is esophageal or gastric."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: esophageal-carcinoma-c050
+    section: high-yield
+    statement: "Squamous carcinoma is most common worldwide while adenocarcinoma predominates in North America, Western Europe and Australia."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "775-776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c051
+    section: high-yield
+    statement: "Smoking and alcohol act synergistically in squamous carcinoma."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "775" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c052
+    section: high-yield
+    statement: "Most adenocarcinomas start from dysplastic Barrett esophagus."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: esophageal-carcinoma-c053
+    section: high-yield
+    statement: "Squamous carcinoma involves the middle and upper thirds about half the time, while adenocarcinoma is mostly distal or at the gastroesophageal junction."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "775-776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c054
+    section: high-yield
+    statement: "Lymphatics carry most metastases, with nodal groups depending on the third of the esophagus."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "775" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c055
+    section: high-yield
+    statement: "Dysphagia appears late, when most tumors are inoperable."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c056
+    section: traps
+    statement: "Squamous carcinoma is the most common type worldwide while adenocarcinoma is more common in the United States and other Western regions."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "775-776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c057
+    section: traps
+    statement: "Dysphagia usually appears when the tumor is already inoperable."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c058
+    section: traps
+    statement: "Together, smoking and alcohol raise squamous risk by more than the sum of their separate effects."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "775" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c059
+    section: mnemonics
+    statement: "Squamous risk factors include smoking, alcohol, hot beverages, achalasia and caustic injury."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "775" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: esophageal-carcinoma-c060
+    section: mnemonics
+    statement: "Adenocarcinoma risk factors include GERD, obesity and Barrett esophagus."
+    sourceRef: { source: rubin-8e, chapter: "19", pages: "776" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14

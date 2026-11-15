@@ -1,0 +1,114 @@
+id: silicosis
+module: o18
+tier: core
+kind: disease
+names:
+  it: "Silicosi"
+  en: "Silicosis"
+  eponyms: []
+  synonyms:
+    it: ["Pneumoconiosi da silice"]
+    en: ["Silica pneumoconiosis"]
+  abbreviations: []
+summary:
+  it: "Pneumoconiosi da inalazione di polvere di silice, che uccide i macrofagi alveolari e produce noduli fibrosi concentrici, con possibile fibrosi massiva progressiva e maggior rischio di tubercolosi."
+  en: "Pneumoconiosis from inhaled silica dust, which kills alveolar macrophages and produces whorled fibrotic nodules, with possible progressive massive fibrosis and a higher risk of tuberculosis."
+lenses:
+  system: [respiratory]
+  process: [chronic-inflammation, repair-fibrosis]
+  pattern: []
+  presentation: [dyspnea]
+  marker: []
+  group: [toxic-environmental]
+learningObjectives:
+  - it: "Spiegare come la silice uccide i macrofagi alveolari e innesca la fibrosi."
+    en: "Explain how silica kills alveolar macrophages and triggers fibrosis."
+  - it: "Descrivere il nodulo silicotico, macroscopicamente e al microscopio, anche in luce polarizzata."
+    en: "Describe the silicotic nodule, grossly and microscopically, including under polarized light."
+  - it: "Distinguere la silicosi semplice dalla fibrosi massiva progressiva e dalla silicosi acuta (silicoproteinosi)."
+    en: "Distinguish simple silicosis from progressive massive fibrosis and acute silicosis (silicoproteinosis)."
+  - it: "Ricordare l'associazione tra silicosi e tubercolosi."
+    en: "Recall the association between silicosis and tuberculosis."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: anthracosis
+    note:
+      it: "Il carbonio da solo non uccide i macrofagi e non è fibrogeno; la silice sì."
+      en: "Carbon alone does not kill macrophages and is not fibrogenic; silica is."
+  - type: differentialOf
+    target: asbestos-related-disease
+    note:
+      it: "Fibrosi interstiziale con corpi dell'asbesto invece di noduli silicotici."
+      en: "Interstitial fibrosis with asbestos bodies instead of silicotic nodules."
+quickCheck:
+  - id: silicosis-q1
+    q:
+      it: "Perché la silice, una volta inalata, continua a produrre fibrosi?"
+      en: "Why does inhaled silica keep producing fibrosis?"
+    a:
+      it: "Uccide i macrofagi che la fagocitano; la silice liberata viene fagocitata di nuovo e il ciclo si amplifica, con rilascio di fattori fibrogeni."
+      en: "It kills the macrophages that ingest it; the released silica is ingested again and the cycle amplifies, releasing fibrogenic factors."
+    kind: short
+  - id: silicosis-q2
+    q:
+      it: "Che aspetto ha un nodulo silicotico in microscopia?"
+      en: "What does a silicotic nodule look like under the microscope?"
+    a:
+      it: "Collagene denso in strati concentrici a vortice, con linfociti e fibroblasti alla periferia; in luce polarizzata si vedono silicati aghiformi birifrangenti."
+      en: "Dense collagen in concentric whorls, with lymphocytes and fibroblasts at the rim; polarized light shows birefringent needle-shaped silicates."
+    kind: short
+  - id: silicosis-q3
+    q:
+      it: "Che cosa distingue la silicosi acuta da quella semplice?"
+      en: "What sets acute silicosis apart from simple silicosis?"
+    a:
+      it: "Mancano i noduli silicotici; gli alveoli si riempiono di materiale eosinofilo (silicoproteinosi) e la malattia progredisce in pochi anni."
+      en: "There are no silicotic nodules; alveoli fill with eosinophilic material (silicoproteinosis) and the disease progresses over a few years."
+    kind: short
+selfExplain:
+  - it: "Perché la silicosi semplice dà pochi sintomi, mentre la fibrosi massiva progressiva causa disabilità?"
+    en: "Why does simple silicosis cause few symptoms, while progressive massive fibrosis causes disability?"
+  - it: "In quali pazienti con silicosi la tubercolosi è particolarmente frequente?"
+    en: "In which patients with silicosis is tuberculosis especially frequent?"
+examQuestions:
+  - it: "Che cosa vede al microscopio in un nodulo silicotico, e che cosa cambia con la luce polarizzata?"
+    en: "What do you see under the microscope in a silicotic nodule, and what changes under polarized light?"
+    focus: [micro, ancillary]
+    level: 1
+  - it: "Perché la silice produce fibrosi, mentre il carbonio da solo no?"
+    en: "Why does silica produce fibrosis when carbon alone does not?"
+    focus: [pathogenesis, differential]
+    level: 2
+  - it: "Mi parli della fibrosi massiva progressiva: come si presenta, dove si trova e perché causa disabilità."
+    en: "Tell me about progressive massive fibrosis: how it looks, where it sits and why it causes disability."
+    focus: [gross, diagnosis, prognosis]
+    level: 2
+  - it: "Che cosa deve temere in un paziente con silicosi, oltre al danno polmonare diretto?"
+    en: "What should you worry about in a patient with silicosis, besides the direct lung damage?"
+    focus: [prognosis, traps]
+    level: 1
+  - it: "Come distingue la silicosi acuta (silicoproteinosi) da quella semplice, al microscopio e per decorso?"
+    en: "How do you tell acute silicosis (silicoproteinosis) from simple silicosis, on the slide and in the course?"
+    focus: [micro, clinical, prognosis]
+    level: 3
+  - it: "Come distingue la silicosi dall'asbestosi in un paziente esposto a polveri minerali?"
+    en: "How do you tell silicosis from asbestosis in a patient exposed to mineral dust?"
+    focus: [differential, micro]
+    level: 3
+images:
+  - id: silicosis-gross-1
+    role: gross
+    pairWith: silicosis-micro-1
+  - id: silicosis-micro-1
+    role: micro
+  - id: silicosis-micro-2
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "18"
+    pages: "730-732"
+lastUpdated: 2026-11-14
+status: published

@@ -352,41 +352,8 @@
   label:
     it: "Apparato respiratorio"
     en: "Respiratory system"
-  status: planned
+  status: published
   refPages: "719-789"
-  planned:
-    - id: anthracosis
-      names: { it: "Antracosi", en: "Anthracosis" }
-    - id: idiopathic-pulmonary-fibrosis
-      names: { it: "Fibrosi polmonare idiopatica (UIP)", en: "Idiopathic pulmonary fibrosis (UIP pattern)" }
-    - id: hypersensitivity-pneumonitis
-      names: { it: "Polmonite da ipersensibilità", en: "Hypersensitivity pneumonitis" }
-    - id: sarcoidosis
-      names: { it: "Sarcoidosi", en: "Sarcoidosis" }
-    - id: diffuse-alveolar-damage
-      names: { it: "Danno alveolare diffuso (ARDS)", en: "Diffuse alveolar damage (ARDS)" }
-    - id: silicosis
-      names: { it: "Silicosi", en: "Silicosis" }
-    - id: asbestos-related-disease
-      names: { it: "Patologia da asbesto", en: "Asbestos-related disease" }
-    - id: lung-cancer-overview
-      names: { it: "Tumori polmonari: classificazione, stadiazione e diagnosi", en: "Lung cancer: classification, staging and diagnosis" }
-    - id: lung-adenocarcinoma
-      names: { it: "Adenocarcinoma polmonare", en: "Lung adenocarcinoma" }
-    - id: lung-squamous-cell-carcinoma
-      names: { it: "Carcinoma squamoso polmonare", en: "Lung squamous cell carcinoma" }
-    - id: small-cell-lung-carcinoma
-      names: { it: "Carcinoma polmonare a piccole cellule", en: "Small cell lung carcinoma" }
-    - id: lung-carcinoid-tumors
-      names: { it: "Tumori carcinoidi polmonari", en: "Pulmonary carcinoid tumors" }
-    - id: lung-metastases
-      names: { it: "Metastasi polmonari", en: "Lung metastases" }
-    - id: pleural-effusion-and-pleural-fluid-cytology
-      names: { it: "Versamento pleurico, pleuriti e citologia del liquido pleurico", en: "Pleural effusion, pleuritis and pleural-fluid cytology" }
-    - id: malignant-mesothelioma
-      names: { it: "Mesotelioma maligno", en: "Malignant mesothelioma" }
-    - id: solitary-fibrous-tumor-of-pleura
-      names: { it: "Tumore fibroso solitario della pleura", en: "Solitary fibrous tumor of the pleura" }
 - id: o19
   section: III
   order: 19
@@ -396,36 +363,8 @@
   status: planned
   refPages: "790-861"
   planned:
-    - id: barrett-esophagus
-      names: { it: "Esofago di Barrett", en: "Barrett esophagus" }
     - id: ischemic-bowel-disease
       names: { it: "Ischemia intestinale", en: "Ischemic bowel disease" }
-    - id: reflux-esophagitis
-      names: { it: "Esofagite da reflusso (malattia da reflusso gastroesofageo)", en: "Reflux esophagitis (GERD)" }
-    - id: eosinophilic-esophagitis
-      names: { it: "Esofagite eosinofila", en: "Eosinophilic esophagitis" }
-    - id: infectious-and-chemical-esophagitis
-      names: { it: "Esofagiti infettive, chimiche e iatrogene", en: "Infectious, chemical and iatrogenic esophagitis" }
-    - id: esophageal-carcinoma
-      names: { it: "Carcinoma dell'esofago", en: "Esophageal carcinoma" }
-    - id: acute-gastritis-and-reactive-gastropathy
-      names: { it: "Gastrite acuta e gastropatia reattiva (chimica)", en: "Acute gastritis and reactive (chemical) gastropathy" }
-    - id: helicobacter-pylori-gastritis
-      names: { it: "Gastrite da Helicobacter pylori", en: "Helicobacter pylori gastritis" }
-    - id: autoimmune-gastritis
-      names: { it: "Gastrite autoimmune", en: "Autoimmune gastritis" }
-    - id: peptic-ulcer-disease
-      names: { it: "Ulcera peptica", en: "Peptic ulcer disease" }
-    - id: gastric-polyps
-      names: { it: "Polipi gastrici", en: "Gastric polyps" }
-    - id: gastric-adenocarcinoma
-      names: { it: "Adenocarcinoma gastrico", en: "Gastric adenocarcinoma" }
-    - id: gastric-malt-lymphoma
-      names: { it: "Linfoma MALT gastrico", en: "Gastric MALT lymphoma" }
-    - id: gastrointestinal-stromal-tumor
-      names: { it: "Tumore stromale gastrointestinale (GIST)", en: "Gastrointestinal stromal tumor" }
-    - id: gastrointestinal-neuroendocrine-tumors
-      names: { it: "Tumori neuroendocrini gastrointestinali", en: "Gastrointestinal neuroendocrine tumors" }
     - id: infectious-enterocolitis
       names: { it: "Enterocoliti infettive", en: "Infectious enterocolitis" }
     - id: pseudomembranous-colitis
@@ -869,19 +808,8 @@
   label:
     it: "Testa e collo"
     en: "Head and neck (incl. salivary glands, ear)"
-  status: planned
+  status: published
   refPages: "1324-1353"
-  planned:
-    - id: salivary-gland-tumors
-      names: { it: "Tumori delle ghiandole salivari: classificazione", en: "Salivary gland tumors: classification" }
-    - id: pleomorphic-adenoma
-      names: { it: "Adenoma pleomorfo", en: "Pleomorphic adenoma" }
-    - id: warthin-tumor
-      names: { it: "Tumore di Warthin", en: "Warthin tumor" }
-    - id: mucoepidermoid-carcinoma
-      names: { it: "Carcinoma mucoepidermoide", en: "Mucoepidermoid carcinoma" }
-    - id: adenoid-cystic-carcinoma
-      names: { it: "Carcinoma adenoido-cistico", en: "Adenoid cystic carcinoma" }
 - id: o30
   section: III
   order: 30

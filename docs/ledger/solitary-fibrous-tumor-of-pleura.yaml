@@ -1,0 +1,218 @@
+entity: solitary-fibrous-tumor-of-pleura
+claims:
+  - claimId: solitary-fibrous-tumor-of-pleura-c001
+    section: definition
+    statement: "The tumor is a localized neoplasm of the pleura and is uncommon"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "764" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-14
+  - claimId: solitary-fibrous-tumor-of-pleura-c002
+    section: definition
+    statement: "Benign behavior is the rule, and only a few cases are malignant"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "764" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: solitary-fibrous-tumor-of-pleura-c003
+    section: definition
+    statement: "The visceral pleura is the origin in about 80% of cases and the parietal pleura in the remainder"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "764" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: solitary-fibrous-tumor-of-pleura-c004
+    section: definition
+    statement: "The peritoneum, pericardium and other mesothelial surfaces can give rise to similar tumors"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "764" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: solitary-fibrous-tumor-of-pleura-c005
+    section: etiology
+    statement: "The tumor is unrelated to asbestos exposure"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "764" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: solitary-fibrous-tumor-of-pleura-c006
+    section: pathogenesis
+    statement: "Mesothelial cells are not the origin; submesothelial connective tissue is"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "764" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: solitary-fibrous-tumor-of-pleura-c007
+    section: gross
+    statement: "The tumors are usually pedunculated"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "764" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: solitary-fibrous-tumor-of-pleura-c008
+    section: gross
+    statement: "Most tumors (more than 60%) measure more than 10 cm across"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "764" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: solitary-fibrous-tumor-of-pleura-c009
+    section: gross
+    statement: "On section the tumor is gray-white and some cases show a whorled pattern"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "764" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-14
+  - claimId: solitary-fibrous-tumor-of-pleura-c010
+    section: gross
+    statement: "Occasional cysts occur, mainly at the base near the pleural attachment"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "764" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-14
+  - claimId: solitary-fibrous-tumor-of-pleura-c011
+    section: micro
+    statement: "Most often the histology is the patternless pattern, with cells and connective tissue mixed without order"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "764" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-14
+  - claimId: solitary-fibrous-tumor-of-pleura-c012
+    section: micro
+    statement: "Some tumors show storiform or herringbone arrangements"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "764" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: solitary-fibrous-tumor-of-pleura-c013
+    section: micro
+    statement: "Many tumor cells resemble fibroblasts and range in shape from spindle to oval"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "764" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: solitary-fibrous-tumor-of-pleura-c014
+    section: micro
+    statement: "Collagen between the cells may form a fine net or heavy strands"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "764" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-14
+  - claimId: solitary-fibrous-tumor-of-pleura-c015
+    section: micro
+    statement: "Necrosis and pleomorphism are among the features suggesting malignancy; the page lists more"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "764" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-14
+  - claimId: solitary-fibrous-tumor-of-pleura-c016
+    section: prognosis
+    statement: "Most of these tumors are benign and only a minority are malignant"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "764" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: solitary-fibrous-tumor-of-pleura-c017
+    section: differential
+    statement: "The tumor is not mesothelial and grows from connective tissue beneath the mesothelium"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "764" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-14
+  - claimId: solitary-fibrous-tumor-of-pleura-c018
+    section: differential
+    statement: "The tumor is not related to asbestos"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "764" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: solitary-fibrous-tumor-of-pleura-c019
+    section: high-yield
+    statement: "The tumor is localized and usually pedunculated"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "764" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: solitary-fibrous-tumor-of-pleura-c020
+    section: high-yield
+    statement: "Most cases are benign and a few are malignant"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "764" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: solitary-fibrous-tumor-of-pleura-c021
+    section: high-yield
+    statement: "The tumor is not mesothelial; its origin is submesothelial connective tissue"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "764" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-14
+  - claimId: solitary-fibrous-tumor-of-pleura-c022
+    section: high-yield
+    statement: "The tumor has no relation to asbestos exposure"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "764" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: solitary-fibrous-tumor-of-pleura-c023
+    section: high-yield
+    statement: "The typical histology is the patternless pattern, with collagen as a fine net or heavy strands"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "764" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-14
+  - claimId: solitary-fibrous-tumor-of-pleura-c024
+    section: traps
+    statement: "The tumor originates from submesothelial connective tissue, so mesothelium is not involved"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "764" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: solitary-fibrous-tumor-of-pleura-c025
+    section: traps
+    statement: "The tumor is not caused by asbestos"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "764" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: solitary-fibrous-tumor-of-pleura-c026
+    section: traps
+    statement: "Not every tumor is benign: most are, a few are malignant"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "764" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: solitary-fibrous-tumor-of-pleura-c027
+    section: mnemonics
+    statement: "The mnemonic SPA summarizes submesothelial origin, pedunculated shape and lack of asbestos relation"
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "764" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14

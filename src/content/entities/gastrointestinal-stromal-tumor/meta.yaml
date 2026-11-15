@@ -1,0 +1,117 @@
+id: gastrointestinal-stromal-tumor
+module: o19
+tier: core
+kind: disease
+names:
+  it: "Tumore stromale gastrointestinale (GIST)"
+  en: "Gastrointestinal stromal tumor"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: ["GIST"]
+summary:
+  it: "Tumore mesenchimale del tubo digerivo che deriva dalle cellule interstiziali di Cajal, nella maggior parte dei casi sostenuto da mutazioni di KIT e trattato con imatinib."
+  en: "Mesenchymal tumor of the digestive tract that derives from the interstitial cells of Cajal, mostly driven by KIT mutations and treated with imatinib."
+lenses:
+  system: [gastrointestinal, bone-soft-tissue]
+  process: [neoplasia]
+  pattern: []
+  presentation: [mass-lesion]
+  marker: [ihc, molecular]
+  group: [neoplastic]
+learningObjectives:
+  - it: "Indicare l'origine del GIST dalle cellule interstiziali di Cajal e il loro ruolo normale di cellule pacemaker."
+    en: "State that GIST derives from the interstitial cells of Cajal and describe their normal pacemaker role."
+  - it: "Collegare le mutazioni di KIT e PDGFRA alla positività per CD117 e alla scelta della terapia."
+    en: "Link KIT and PDGFRA mutations to CD117 positivity and to the choice of therapy."
+  - it: "Descrivere la morfologia macroscopica e microscopica del GIST e le sedi più frequenti."
+    en: "Describe the gross and microscopic morphology of GIST and its commonest sites."
+  - it: "Elencare i predittori del comportamento (sede, dimensioni, conta mitotica) e il ruolo dell'imatinib."
+    en: "List the predictors of behavior (site, size, mitotic count) and the role of imatinib."
+prerequisites: [neoplasia-nomenclature, oncogenes-and-tumor-suppressor-genes]
+relations:
+  - type: differentialOf
+    target: gastrointestinal-neuroendocrine-tumors
+    note:
+      it: "Cellule piccole e rotonde in nidi, cordoni e rosette contro cellule fusate o epitelioidi."
+      en: "Small round cells in nests, cords and rosettes versus spindled or epithelioid cells."
+  - type: differentialOf
+    target: gastric-malt-lymphoma
+    note:
+      it: "Cellule linfoidi uniformi con lesioni linfoepiteliali contro proliferazione solida di cellule fusate o epitelioidi."
+      en: "Uniform lymphoid cells with lymphoepithelial lesions versus a solid spindled or epithelioid proliferation."
+  - type: sharesMechanism
+    target: chronic-myeloid-leukemia
+    note:
+      it: "L'imatinib inibisce una tirosin-chinasi anche nella leucemia mieloide cronica."
+      en: "Imatinib inhibits a tyrosine kinase in chronic myeloid leukemia too."
+quickCheck:
+  - id: gastrointestinal-stromal-tumor-q1
+    q:
+      it: "Da quali cellule deriva il GIST e quale funzione hanno normalmente?"
+      en: "Which cells does GIST derive from, and what do they normally do?"
+    a:
+      it: "Dalle cellule interstiziali di Cajal, cellule pacemaker della muscolare propria che coordinano la peristalsi."
+      en: "From the interstitial cells of Cajal, pacemaker cells of the muscularis propria that coordinate peristalsis."
+    kind: short
+  - id: gastrointestinal-stromal-tumor-q2
+    q:
+      it: "Quale gene è mutato nella maggior parte dei GIST e quale colorazione immunoistochimica risulta positiva?"
+      en: "Which gene is mutated in most GISTs, and which immunostain is positive?"
+    a:
+      it: "KIT, che codifica una tirosin-chinasi recettoriale; la colorazione positiva è CD117."
+      en: "KIT, which encodes a receptor tyrosine kinase; the positive stain is CD117."
+    kind: short
+  - id: gastrointestinal-stromal-tumor-q3
+    q:
+      it: "Quali tre caratteristiche predicono meglio il comportamento di un GIST?"
+      en: "Which three features best predict the behavior of a GIST?"
+    a:
+      it: "La sede, le dimensioni e la conta mitotica."
+      en: "Site, size and mitotic count."
+    kind: short
+selfExplain:
+  - it: "Perché l'imatinib è usato nel GIST, e perché la mutazione trovata influenza la scelta del farmaco?"
+    en: "Why is imatinib used in GIST, and why does the mutation found influence the choice of drug?"
+  - it: "Perché un GIST che nasce nella muscolare propria può comunque presentarsi con sanguinamento?"
+    en: "Why can a GIST that arises in the muscularis propria still present with bleeding?"
+examQuestions:
+  - it: "Mi parli del GIST: da quali cellule deriva e dove si trova più spesso?"
+    en: "Tell me about GIST: which cells does it derive from, and where is it found most often?"
+    focus: [definition, gross]
+    level: 1
+  - it: "Qual è il gene più spesso mutato nel GIST e che tipo di proteina codifica?"
+    en: "Which gene is most often mutated in GIST, and what kind of protein does it encode?"
+    focus: [etiology, pathogenesis]
+    level: 2
+  - it: "Quali colorazioni userebbe per confermare un GIST, e che cosa riconosce l'anticorpo anti-CD117?"
+    en: "Which stains would you use to confirm a GIST, and what does the anti-CD117 antibody recognize?"
+    focus: [ancillary]
+    level: 1
+  - it: "Che cosa vede al microscopio in un GIST?"
+    en: "What do you see under the microscope in a GIST?"
+    focus: [micro]
+    level: 1
+  - it: "Perché l'imatinib è usato nel GIST e quali elementi indicano un comportamento aggressivo?"
+    en: "Why is imatinib used in GIST, and what suggests aggressive behavior?"
+    focus: [prognosis, ancillary]
+    level: 2
+  - it: "Come distingue un GIST da un tumore neuroendocrino e, nel colon, da un leiomioma?"
+    en: "How do you tell a GIST from a neuroendocrine tumor and, in the colon, from a leiomyoma?"
+    focus: [differential, micro]
+    level: 3
+images:
+  - id: gastrointestinal-stromal-tumor-gross-1
+    role: gross
+    pairWith: gastrointestinal-stromal-tumor-micro-1
+  - id: gastrointestinal-stromal-tumor-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "19"
+    pages: "791, 829"
+lastUpdated: 2026-11-14
+status: published

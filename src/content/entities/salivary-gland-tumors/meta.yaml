@@ -1,0 +1,116 @@
+id: salivary-gland-tumors
+module: o29
+tier: core
+kind: concept
+names:
+  it: "Tumori delle ghiandole salivari: classificazione"
+  en: "Salivary gland tumors: classification"
+  eponyms: []
+  synonyms:
+    it: ["Neoplasie delle ghiandole salivari"]
+    en: ["Salivary gland neoplasms"]
+  abbreviations: []
+summary:
+  it: "Gruppo di neoplasie benigne e maligne delle ghiandole salivari maggiori e minori, riconosciute dall'istologia e da alcune fusioni geniche tipiche, con l'adenoma pleomorfo come tumore più frequente."
+  en: "A group of benign and malignant neoplasms of the major and minor salivary glands, told apart by histology and by a few typical gene fusions, with pleomorphic adenoma the most common."
+lenses:
+  system: [head-neck]
+  process: [neoplasia]
+  pattern: []
+  presentation: [mass-lesion]
+  marker: [molecular]
+  group: [neoplastic]
+learningObjectives:
+  - it: "Distinguere i tumori benigni (adenoma pleomorfo, adenomi monomorfi) dai principali carcinomi delle ghiandole salivari."
+    en: "Separate the benign tumors (pleomorphic adenoma, monomorphic adenomas) from the main salivary gland carcinomas."
+  - it: "Collegare la probabilità di malignità alla sede: ghiandole maggiori contro ghiandole minori."
+    en: "Link the chance of malignancy to the site: major versus minor glands."
+  - it: "Associare a ogni carcinoma il suo reperto molecolare tipico (MAML2, MYB-NFIB, ETV6-NTRK3)."
+    en: "Match each carcinoma to its typical molecular finding (MAML2, MYB-NFIB, ETV6-NTRK3)."
+  - it: "Descrivere il rischio di recidiva dell'adenoma pleomorfo e il suo rapporto con il nervo facciale."
+    en: "Describe the recurrence risk of pleomorphic adenoma and its relation to the facial nerve."
+prerequisites: [neoplasia-nomenclature, benign-vs-malignant-tumors]
+relations:
+  - type: prerequisiteOf
+    target: pleomorphic-adenoma
+    note:
+      it: "Il quadro generale precede lo studio del tumore benigno più frequente."
+      en: "The overview comes before the most common benign tumor."
+  - type: prerequisiteOf
+    target: warthin-tumor
+    note:
+      it: "Il tumore di Warthin è l'adenoma monomorfo più frequente."
+      en: "Warthin tumor is the most common monomorphic adenoma."
+  - type: prerequisiteOf
+    target: mucoepidermoid-carcinoma
+    note:
+      it: "Carcinoma con fusione MECT1-MAML2."
+      en: "Carcinoma with the MECT1-MAML2 fusion."
+  - type: prerequisiteOf
+    target: adenoid-cystic-carcinoma
+    note:
+      it: "Carcinoma con fusione MYB-NFIB e invasione perineurale."
+      en: "Carcinoma with the MYB-NFIB fusion and perineural invasion."
+quickCheck:
+  - id: salivary-gland-tumors-q1
+    q:
+      it: "Quale tumore è il più frequente nelle ghiandole salivari maggiori e che natura ha?"
+      en: "Which tumor is the most common in the major salivary glands, and what is its nature?"
+    a:
+      it: "L'adenoma pleomorfo, un tumore benigno con componenti epiteliali e stromali."
+      en: "Pleomorphic adenoma, a benign tumor with epithelial and stromal components."
+    kind: short
+  - id: salivary-gland-tumors-q2
+    q:
+      it: "Quale frazione dei tumori delle ghiandole salivari minori intraorali è maligna?"
+      en: "What fraction of intraoral minor salivary gland tumors is malignant?"
+    a:
+      it: "Circa la metà dei tumori delle ghiandole minori intraorali è maligna."
+      en: "About half of intraoral minor gland tumors are malignant."
+    kind: short
+  - id: salivary-gland-tumors-q3
+    q:
+      it: "Associa carcinoma mucoepidermoide, adenoide cistico e secretorio alla fusione genica tipica."
+      en: "Match mucoepidermoid, adenoid cystic and secretory carcinoma to their typical gene fusion."
+    a:
+      it: "Mucoepidermoide: MECT1-MAML2; adenoide cistico: MYB-NFIB; secretorio: ETV6-NTRK3."
+      en: "Mucoepidermoid: MECT1-MAML2; adenoid cystic: MYB-NFIB; secretory: ETV6-NTRK3."
+    kind: short
+selfExplain:
+  - it: "Perché l'adenoma pleomorfo recidiva se l'escissione non include la capsula e un margine di ghiandola?"
+    en: "Why does pleomorphic adenoma recur if the excision does not include the capsule and a margin of gland?"
+  - it: "Perché il carcinoma adenoide cistico è spesso doloroso pur crescendo lentamente?"
+    en: "Why is adenoid cystic carcinoma often painful even though it grows slowly?"
+examQuestions:
+  - it: "Mi parli dell'adenoma pleomorfo: natura, sede più frequente e rischio di recidiva."
+    en: "Tell me about pleomorphic adenoma: its nature, its usual site and its risk of recurrence."
+    focus: [definition, clinical, prognosis]
+    level: 1
+  - it: "Come si distribuiscono i tumori maligni delle ghiandole salivari tra parotide, sottomandibolare e ghiandole minori?"
+    en: "How are malignant salivary gland tumors distributed among the parotid, submandibular and minor glands?"
+    focus: [definition]
+    level: 1
+  - it: "Che rilievo ha il nervo facciale nella chirurgia curativa dell'adenoma pleomorfo?"
+    en: "What is the relevance of the facial nerve in curative surgery for pleomorphic adenoma?"
+    focus: [clinical, high-yield]
+    level: 2
+  - it: "Come distingue un carcinoma mucoepidermoide da un carcinoma adenoide cistico e da un carcinoma secretorio?"
+    en: "How do you tell mucoepidermoid carcinoma from adenoid cystic carcinoma and secretory carcinoma?"
+    focus: [pathogenesis, micro, differential]
+    level: 3
+  - it: "Che cosa vede al microscopio in un tumore di Warthin e in un carcinoma a cellule aciniche?"
+    en: "What do you see under the microscope in a Warthin tumor and in an acinic cell carcinoma?"
+    focus: [micro, differential]
+    level: 2
+images: []
+reviewStatus: ai-generated-unreviewed
+editionDependent: true
+editionNote:
+  it: "La classificazione dei tumori salivari è cambiata tra le edizioni: la scheda segue la descrizione del testo di riferimento e non le famiglie OMS attuali; gradi e soglie vanno verificati su una seconda fonte."
+  en: "The classification of salivary tumors changed between editions: the card follows the reference textbook's description, not the current WHO families; grades and cut-offs need a second source."
+sources:
+  - source: rubin-8e
+    chapter: "29"
+    pages: "1306, 1321-1324"
+lastUpdated: 2026-11-14
+status: published

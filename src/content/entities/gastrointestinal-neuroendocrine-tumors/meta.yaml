@@ -1,0 +1,127 @@
+id: gastrointestinal-neuroendocrine-tumors
+module: o19
+tier: extended
+kind: disease
+editionDependent: true
+editionNote:
+  it: "La classificazione e i gradi dei tumori neuroendocrini sono cambiati tra le edizioni; le soglie di Ki-67 vanno verificate su una classificazione aggiornata."
+  en: "The classification and grades of neuroendocrine tumors changed between editions; check the Ki-67 cut-offs in a current classification."
+status: published
+lastUpdated: 2026-11-15
+reviewStatus: ai-generated-unreviewed
+names:
+  it: "Tumori neuroendocrini gastrointestinali"
+  en: "Gastrointestinal neuroendocrine tumors"
+  eponyms: []
+  synonyms:
+    it: ["Carcinoide gastrointestinale (termine superato)"]
+    en: ["Gastrointestinal carcinoid (outdated term)", "Well-differentiated neuroendocrine tumor"]
+  abbreviations: ["NET"]
+summary:
+  it: "Tumori ben differenziati delle cellule neuroendocrine del tubo digerente, il cui comportamento dipende soprattutto dalla sede e, nello stomaco, dalla condizione in cui nascono."
+  en: "Well-differentiated tumors of neuroendocrine cells of the gut, whose behavior depends mainly on the site and, in the stomach, on the setting in which they arise."
+lenses:
+  system: [gastrointestinal, endocrine]
+  process: [neoplasia]
+  pattern: []
+  presentation: [mass-lesion, incidental-finding]
+  marker: [ihc, laboratory]
+  group: [neoplastic]
+learningObjectives:
+  - it: "Spiegare perché il termine carcinoide è stato sostituito da tumore neuroendocrino ben differenziato."
+    en: "Explain why the term carcinoid has been replaced by well-differentiated neuroendocrine tumor."
+  - it: "Distinguere i tre contesti dei tumori neuroendocrini gastrici e il loro comportamento."
+    en: "Distinguish the three settings of gastric neuroendocrine tumors and their behavior."
+  - it: "Confrontare i tumori neuroendocrini dell'ileo e dell'appendice per sede, dimensioni e aggressività."
+    en: "Compare ileal and appendiceal neuroendocrine tumors by site, size and aggressiveness."
+  - it: "Spiegare la sindrome da carcinoide, il test urinario e il danno del cuore destro."
+    en: "Explain carcinoid syndrome, its urine test and the right-sided heart damage."
+  - it: "Dire a che cosa serve il Ki-67 nella valutazione di questi tumori."
+    en: "State what Ki-67 is used for in assessing these tumors."
+prerequisites: [neoplasia-nomenclature]
+relations:
+  - type: differentialOf
+    target: gastrointestinal-stromal-tumor
+    note:
+      it: "Il GIST nasce dalla muscolare propria ed è CD117 positivo."
+      en: "GIST arises in the muscularis propria and is CD117 positive."
+  - type: differentialOf
+    target: gastric-malt-lymphoma
+    note:
+      it: "Il linfoma MALT mostra lesioni linfoepiteliali."
+      en: "MALT lymphoma shows lymphoepithelial lesions."
+  - type: complicationOf
+    target: autoimmune-gastritis
+    note:
+      it: "L'ipergastrinemia dell'atrofia autoimmune porta alla proliferazione delle cellule ECL."
+      en: "The hypergastrinemia of autoimmune atrophy drives ECL-cell proliferation."
+  - type: sameLesionOtherOrgan
+    target: pancreatic-neuroendocrine-tumors
+    note:
+      it: "Stesso tipo di tumore in un altro organo."
+      en: "The same tumor type in another organ."
+  - type: sameLesionOtherOrgan
+    target: lung-carcinoid-tumors
+    note:
+      it: "Stesso tipo di tumore in un altro organo."
+      en: "The same tumor type in another organ."
+quickCheck:
+  - id: gastrointestinal-neuroendocrine-tumors-q1
+    q:
+      it: "In quali tre contesti nascono i tumori neuroendocrini gastrici e quale ha il comportamento migliore?"
+      en: "In which three settings do gastric neuroendocrine tumors arise, and which behaves best?"
+    a:
+      it: "Gastrite autoimmune, sindrome di Zollinger-Ellison e forma sporadica; la gastrite autoimmune è raramente aggressiva."
+      en: "Autoimmune gastritis, Zollinger-Ellison syndrome and sporadic disease; the autoimmune gastritis setting is rarely aggressive."
+    kind: short
+  - id: gastrointestinal-neuroendocrine-tumors-q2
+    q:
+      it: "Perché la sindrome da carcinoide compare di solito solo con metastasi epatiche?"
+      en: "Why does carcinoid syndrome usually appear only with liver metastases?"
+    a:
+      it: "Perché le metastasi epatiche permettono alla serotonina di sfuggire alla degradazione epatica."
+      en: "Because liver metastases let serotonin escape hepatic breakdown."
+    kind: short
+  - id: gastrointestinal-neuroendocrine-tumors-q3
+    q:
+      it: "Quale esame urinario sostiene la diagnosi di sindrome da carcinoide?"
+      en: "Which urine test supports the diagnosis of carcinoid syndrome?"
+    a:
+      it: "Il dosaggio dell'acido 5-idrossindolacetico (5-HIAA)."
+      en: "The 5-hydroxyindoleacetic acid (5-HIAA) assay."
+    kind: short
+selfExplain:
+  - it: "Perché la sindrome da carcinoide danneggia il cuore destro e risparmia il sinistro?"
+    en: "Why does carcinoid syndrome damage the right heart and spare the left?"
+  - it: "Perché l'ipergastrinemia porta a tumori neuroendocrini gastrici multipli?"
+    en: "Why does hypergastrinemia lead to multiple gastric neuroendocrine tumors?"
+chain:
+  - pathology:
+      it: "Tumore neuroendocrino ileale con metastasi epatiche e rilascio di serotonina"
+      en: "Ileal neuroendocrine tumor with liver metastases and serotonin release"
+    sign:
+      it: "Diarrea e vampate episodiche"
+      en: "Diarrhea and episodic flushing"
+    lab:
+      it: "5-HIAA urinario aumentato"
+      en: "Raised urine 5-HIAA"
+examQuestions:
+  - it: "Mi parli dei tumori neuroendocrini gastrici: in quali contesti nascono e come si comportano?"
+    en: "Tell me about gastric neuroendocrine tumors: in which settings do they arise and how do they behave?"
+    focus: [etiology, prognosis]
+    level: 1
+  - it: "Perché la sindrome da carcinoide dà danno al cuore destro e non al sinistro?"
+    en: "Why does carcinoid syndrome damage the right heart and not the left?"
+    focus: [clinical, prognosis]
+    level: 2
+  - it: "Come distingue il comportamento dei tumori neuroendocrini dell'ileo da quello dei tumori dell'appendice?"
+    en: "How do you tell the behavior of ileal neuroendocrine tumors from that of appendiceal ones?"
+    focus: [definition, prognosis]
+    level: 3
+images:
+  - id: gastrointestinal-neuroendocrine-tumors-micro-2
+    role: micro
+sources:
+  - source: rubin-8e
+    chapter: "19"
+    pages: "791-793, 829, 832"

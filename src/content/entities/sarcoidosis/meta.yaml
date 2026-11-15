@@ -1,0 +1,120 @@
+id: sarcoidosis
+module: o18
+tier: core
+kind: disease
+names:
+  it: "Sarcoidosi"
+  en: "Sarcoidosis"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: []
+summary:
+  it: "Malattia granulomatosa multisistemica ad eziologia ignota, con granulomi epitelioidi non caseosi che colpiscono più spesso polmone e linfonodi ilari, ma anche cute, occhio e cuore."
+  en: "Multisystem granulomatous disease of unknown cause, with noncaseating epithelioid granulomas that most often involve the lung and hilar nodes, but also skin, eye and heart."
+lenses:
+  system: [respiratory, hematolymphoid, heart, skin, eye]
+  process: [granulomatous-inflammation, chronic-inflammation]
+  pattern: [granuloma]
+  presentation: [dyspnea, lymphadenopathy, incidental-finding]
+  marker: [laboratory]
+  group: [inflammatory, immune]
+learningObjectives:
+  - it: "Descrivere il granuloma sarcoidotico non caseoso e la sua distribuzione nel polmone."
+    en: "Describe the noncaseating sarcoid granuloma and its distribution in the lung."
+  - it: "Elencare gli organi extrapolmonari colpiti, con il rischio di blocco e aritmie nel coinvolgimento cardiaco."
+    en: "List the extrapulmonary organs involved, including the risk of heart block and arrhythmias in cardiac disease."
+  - it: "Spiegare il ruolo dei linfociti T helper CD4+ nella formazione dei granulomi."
+    en: "Explain the role of CD4+ helper T cells in granuloma formation."
+  - it: "Spiegare perché la diagnosi richiede istologia, imaging e laboratorio insieme, e distinguere la sarcoidosi dalla polmonite da ipersensibilità."
+    en: "Explain why the diagnosis needs histology, imaging and laboratory data together, and distinguish sarcoidosis from hypersensitivity pneumonitis."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: hypersensitivity-pneumonitis
+    note:
+      it: "Entrambe mostrano granulomi non caseosi; nella polmonite da ipersensibilità sono mal formati e si associano a polmonite cellulare bronchiolocentrica."
+      en: "Both show noncaseating granulomas; in hypersensitivity pneumonitis they are poorly formed and accompany a bronchiolocentric cellular pneumonia."
+  - type: sharesMechanism
+    target: granulomatous-inflammation
+    note:
+      it: "Risposta T helper che recluta macrofagi e forma granulomi."
+      en: "A helper T-cell response that recruits macrophages and forms granulomas."
+  - type: sameLesionOtherOrgan
+    target: myocarditis
+    note:
+      it: "La sarcoidosi cardiaca è una miocardite granulomatosa fortemente aritmogena."
+      en: "Cardiac sarcoidosis is a highly arrhythmogenic granulomatous myocarditis."
+quickCheck:
+  - id: sarcoidosis-q1
+    q:
+      it: "Quali sono le due sedi più frequenti della sarcoidosi?"
+      en: "Which are the two most frequent sites of sarcoidosis?"
+    a:
+      it: "Il polmone e i linfonodi ilari, che possono essere colpiti anche separatamente."
+      en: "The lung and the hilar lymph nodes, which can also be involved separately."
+    kind: short
+  - id: sarcoidosis-q2
+    q:
+      it: "Che aspetto hanno i granulomi sarcoidotici e che cosa di solito manca?"
+      en: "What do sarcoid granulomas look like, and what is usually missing?"
+    a:
+      it: "Sono noduli ben definiti di macrofagi epitelioidi e cellule giganti multinucleate; la necrosi significativa è rara."
+      en: "They are well-defined nodules of epithelioid macrophages and multinucleated giant cells; significant necrosis is uncommon."
+    kind: short
+  - id: sarcoidosis-q3
+    q:
+      it: "Perché la sola biopsia con granulomi non basta per diagnosticare la sarcoidosi?"
+      en: "Why is a biopsy with granulomas alone not enough to diagnose sarcoidosis?"
+    a:
+      it: "Nessun esame di laboratorio è specifico e altre malattie granulomatose, come la polmonite da ipersensibilità cronica, mostrano granulomi simili: serve la correlazione clinica, radiologica e di laboratorio."
+      en: "No laboratory test is specific and other granulomatous diseases, such as chronic hypersensitivity pneumonitis, show similar granulomas: clinical, radiologic and laboratory correlation is needed."
+    kind: short
+selfExplain:
+  - it: "Perché i granulomi alla base del setto interventricolare provocano blocco di branca o blocco cardiaco completo?"
+    en: "Why do granulomas at the base of the interventricular septum cause bundle branch block or complete heart block?"
+  - it: "Perché la biopsia bronchoscopica ha una buona resa diagnostica nella sarcoidosi?"
+    en: "Why does bronchoscopic biopsy have a good diagnostic yield in sarcoidosis?"
+examQuestions:
+  - it: "Che cosa vede al microscopio in un granuloma sarcoidotico, e che cosa di solito non c'è?"
+    en: "What do you see under the microscope in a sarcoid granuloma, and what is usually absent?"
+    focus: [micro]
+    level: 1
+  - it: "Mi parli della sarcoidosi: quali sedi colpisce più spesso e quali quadri radiologici si osservano?"
+    en: "Tell me about sarcoidosis: which sites does it involve most often, and what does the chest film show?"
+    focus: [gross, clinical]
+    level: 1
+  - it: "Quali organi extrapolmonari possono essere colpiti, e perché il cuore merita particolare attenzione?"
+    en: "Which extrapulmonary organs can be involved, and why does the heart deserve special attention?"
+    focus: [clinical, high-yield]
+    level: 2
+  - it: "Perché si formano i granulomi nella sarcoidosi?"
+    en: "Why do granulomas form in sarcoidosis?"
+    focus: [pathogenesis]
+    level: 2
+  - it: "Come distingue la sarcoidosi dalla polmonite da ipersensibilità cronica e dalla fibrosi polmonare idiopatica?"
+    en: "How do you tell sarcoidosis from chronic hypersensitivity pneumonitis and from idiopathic pulmonary fibrosis?"
+    focus: [differential, diagnosis]
+    level: 3
+  - it: "Perché la biopsia con granulomi non basta a porre la diagnosi, e quali dati si aggiungono?"
+    en: "Why is a biopsy showing granulomas not enough for the diagnosis, and what other data are added?"
+    focus: [diagnosis, traps]
+    level: 3
+images:
+  - id: sarcoidosis-gross-1
+    role: gross
+    pairWith: sarcoidosis-micro-1
+  - id: sarcoidosis-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "17"
+    pages: "676"
+  - source: rubin-8e
+    chapter: "18"
+    pages: "737-739"
+lastUpdated: 2026-11-14
+status: published

@@ -1,0 +1,101 @@
+id: diffuse-alveolar-damage
+module: o18
+tier: core
+kind: process
+editionDependent: false
+status: published
+lastUpdated: 2026-11-14
+reviewStatus: ai-generated-unreviewed
+names:
+  it: "Danno alveolare diffuso (ARDS)"
+  en: "Diffuse alveolar damage (ARDS)"
+  eponyms: []
+  synonyms:
+    it: ["Sindrome da distress respiratorio acuto", "Polmone da shock"]
+    en: ["Acute respiratory distress syndrome", "Shock lung"]
+  abbreviations: ["DAD", "ARDS"]
+summary:
+  it: "Reazione stereotipata dell'epitelio alveolare e dell'endotelio a un danno acuto, con membrane ialine nella fase essudativa e fibrosi nella fase organizzativa; la forma clinica grave è l'ARDS."
+  en: "Stereotyped reaction of the alveolar epithelium and endothelium to acute injury, with hyaline membranes in the exudative phase and fibrosis in the organizing phase; its severe clinical form is ARDS."
+lenses:
+  system: [respiratory]
+  process: [cell-injury, acute-inflammation, repair-fibrosis]
+  pattern: [hyaline-change]
+  presentation: [dyspnea]
+  marker: []
+  group: [inflammatory, toxic-environmental]
+learningObjectives:
+  - it: "Definire il danno alveolare diffuso e il suo rapporto con l'ARDS."
+    en: "Define diffuse alveolar damage and its relation to ARDS."
+  - it: "Elencare le principali cause: shock, sepsi, aspirazione, tossici, farmaci e infezioni virali."
+    en: "List the main causes: shock, sepsis, aspiration, toxins, drugs and viral infections."
+  - it: "Descrivere la fase essudativa con le membrane ialine e la fase organizzativa."
+    en: "Describe the exudative phase with hyaline membranes and the organizing phase."
+  - it: "Spiegare gli esiti possibili: guarigione completa o fibrosi con polmone a nido d'ape."
+    en: "Explain the possible outcomes: complete recovery or fibrosis with honeycomb lung."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: neonatal-respiratory-distress-syndrome
+    note:
+      it: "Deficit di surfattante in un neonato pretermine contro danno acuto di un polmone maturo."
+      en: "Surfactant deficiency in a premature infant versus acute injury of a mature lung."
+  - type: sharesMechanism
+    target: oxidative-injury
+    note:
+      it: "Ossigeno ad alta concentrazione e radiazioni danneggiano il polmone attraverso radicali dell'ossigeno."
+      en: "High-dose oxygen and radiation injure the lung through oxygen radicals."
+quickCheck:
+  - id: diffuse-alveolar-damage-q1
+    q:
+      it: "Di che cosa sono fatte le membrane ialine?"
+      en: "What are hyaline membranes made of?"
+    a:
+      it: "Di proteine plasmatiche precipitate, con fibrina, e detriti delle cellule epiteliali desquamate."
+      en: "Precipitated plasma proteins with fibrin, plus debris of shed epithelial cells."
+    kind: short
+  - id: diffuse-alveolar-damage-q2
+    q:
+      it: "Perché l'epitelio alveolare può rigenerarsi dopo il danno?"
+      en: "Why can the alveolar epithelium regenerate after the injury?"
+    a:
+      it: "Le membrane basali restano integre e fanno da impalcatura ai pneumociti di tipo II, che proliferano."
+      en: "The basement membranes stay intact and act as a scaffold for proliferating type II pneumocytes."
+    kind: short
+  - id: diffuse-alveolar-damage-q3
+    q:
+      it: "Che cosa distingue la fase organizzativa da quella essudativa?"
+      en: "What distinguishes the organizing phase from the exudative phase?"
+    a:
+      it: "Compaiono fibroblasti nelle pareti alveolari e non si formano più nuove membrane ialine."
+      en: "Fibroblasts proliferate in the alveolar walls and no new hyaline membranes form."
+    kind: short
+selfExplain:
+  - it: "Perché la perdita dei pneumociti di tipo I porta a edema negli alveoli?"
+    en: "Why does loss of type I pneumocytes lead to edema in the alveoli?"
+  - it: "Perché aumentare solo l'ossigeno inspirato non corregge l'ipossiemia nell'ARDS?"
+    en: "Why does raising inspired oxygen alone not correct hypoxemia in ARDS?"
+examQuestions:
+  - it: "Che cosa vede al microscopio nella fase essudativa e in quella organizzativa del danno alveolare diffuso?"
+    en: "What do you see under the microscope in the exudative and organizing phases of diffuse alveolar damage?"
+    focus: [micro]
+    level: 1
+  - it: "Mi parli delle cause del danno alveolare diffuso: perché la diagnosi istologica raramente indica quale sia?"
+    en: "Tell me about the causes of diffuse alveolar damage: why does histology rarely show which one it was?"
+    focus: [etiology, pathogenesis]
+    level: 2
+  - it: "Quali esiti può avere un'ARDS e da che cosa dipende la differenza tra guarigione e polmone a nido d'ape?"
+    en: "What outcomes can ARDS have, and what separates recovery from honeycomb lung?"
+    focus: [prognosis, micro]
+    level: 3
+  - it: "Come distingue il danno alveolare diffuso dalla sindrome da distress respiratorio del neonato?"
+    en: "How do you tell diffuse alveolar damage from neonatal respiratory distress syndrome?"
+    focus: [differential]
+    level: 3
+images:
+  - { id: diffuse-alveolar-damage-micro-1, role: micro }
+  - { id: diffuse-alveolar-damage-micro-2, role: micro }
+sources:
+  - source: rubin-8e
+    chapter: "18"
+    pages: "715-718, 742"

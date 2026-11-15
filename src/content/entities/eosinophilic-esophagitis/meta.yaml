@@ -1,0 +1,113 @@
+id: eosinophilic-esophagitis
+module: o19
+tier: core
+kind: disease
+names:
+  it: "Esofagite eosinofila"
+  en: "Eosinophilic esophagitis"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: ["EoE"]
+summary:
+  it: "Malattia immuno-mediata dell'esofago, frequente in pazienti con allergie e asma, caratterizzata da disfagia e da un infiltrato di eosinofili nell'epitelio esofageo."
+  en: "Immune-mediated disease of the esophagus, common in patients with allergies and asthma, marked by dysphagia and an eosinophil-rich esophageal epithelium."
+lenses:
+  system: [gastrointestinal]
+  process: [hypersensitivity, chronic-inflammation]
+  pattern: [hyperplasia]
+  presentation: []
+  marker: []
+  group: [immune, inflammatory]
+learningObjectives:
+  - it: "Descrivere l'aspetto endoscopico: anelli concentrici, solchi longitudinali, stenosi e placche bianche."
+    en: "Describe the endoscopic appearance: concentric rings, longitudinal furrows, strictures and white plaques."
+  - it: "Indicare la soglia istologica di eosinofili intraepiteliali e gli altri reperti dell'epitelio."
+    en: "State the histologic eosinophil threshold and the other epithelial findings."
+  - it: "Distinguere l'esofagite eosinofila dalla malattia da reflusso per sede degli eosinofili e risposta alla terapia antireflusso."
+    en: "Distinguish eosinophilic esophagitis from reflux disease by eosinophil location and response to antireflux therapy."
+  - it: "Collegare la malattia all'atopia e alla disfagia con impatto alimentare."
+    en: "Link the disease to atopy and to dysphagia with food impaction."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: reflux-esophagitis
+    note:
+      it: "Anche il reflusso può aumentare gli eosinofili, ma distali e in regressione con la terapia antireflusso."
+      en: "Reflux can also raise eosinophils, but they are distal and subside with antireflux therapy."
+  - type: differentialOf
+    target: infectious-and-chemical-esophagitis
+    note:
+      it: "L'esofagite da Candida dà placche bianche con neutrofili nell'epitelio, in pazienti immunocompromessi."
+      en: "Candida esophagitis gives white plaques with neutrophils in the epithelium, in immunocompromised patients."
+  - type: sharesMechanism
+    target: asthma
+    note:
+      it: "Entrambe sono frequenti nei soggetti atopici."
+      en: "Both are common in atopic people."
+quickCheck:
+  - id: eosinophilic-esophagitis-q1
+    q:
+      it: "Quale soglia di eosinofili intraepiteliali caratterizza l'esofagite eosinofila?"
+      en: "Which intraepithelial eosinophil threshold characterizes eosinophilic esophagitis?"
+    a:
+      it: "Almeno 15 eosinofili per campo ad alto ingrandimento."
+      en: "At least 15 eosinophils per high-power field."
+    kind: short
+  - id: eosinophilic-esophagitis-q2
+    q:
+      it: "Come si distinguono gli eosinofili dell'esofagite eosinofila da quelli del reflusso?"
+      en: "How do the eosinophils of eosinophilic esophagitis differ from those of reflux?"
+    a:
+      it: "Sono in genere nell'esofago prossimale o medio e non rispondono alla terapia antireflusso; nel reflusso sono distali e regrediscono."
+      en: "They are usually in the proximal or mid esophagus and do not respond to antireflux therapy; in reflux they are distal and subside."
+    kind: short
+  - id: eosinophilic-esophagitis-q3
+    q:
+      it: "Perché si eseguono biopsie a più livelli dell'esofago?"
+      en: "Why are biopsies taken at several esophageal levels?"
+    a:
+      it: "Perché la malattia è a distribuzione irregolare e l'esofago può apparire normale all'endoscopia."
+      en: "Because the disease is patchy and the esophagus can look normal at endoscopy."
+    kind: short
+selfExplain:
+  - it: "Perché un paziente senza risposta alla terapia antireflusso fa pensare a un'esofagite eosinofila?"
+    en: "Why does a patient who does not respond to antireflux therapy raise suspicion of eosinophilic esophagitis?"
+  - it: "Perché la diagnosi richiede la correlazione tra clinica e istologia?"
+    en: "Why does the diagnosis need clinical-pathologic correlation?"
+examQuestions:
+  - it: "Mi parli dell'esofagite eosinofila e del suo rapporto con l'atopia."
+    en: "Tell me about eosinophilic esophagitis and its link with atopy."
+    focus: [definition, etiology]
+    level: 1
+  - it: "Che cosa vede al microscopio in una biopsia di esofagite eosinofila e quale soglia di eosinofili usa?"
+    en: "What do you see under the microscope in a biopsy of eosinophilic esophagitis, and which eosinophil threshold do you use?"
+    focus: [micro]
+    level: 1
+  - it: "Che cosa vede l'endoscopista in questa malattia?"
+    en: "What does the endoscopist see in this disease?"
+    focus: [gross]
+    level: 1
+  - it: "Come distingue l'esofagite eosinofila dalla malattia da reflusso?"
+    en: "How do you tell eosinophilic esophagitis from reflux disease?"
+    focus: [differential, diagnosis, traps]
+    level: 3
+  - it: "Perché un'endoscopia normale non basta a escludere la diagnosi?"
+    en: "Why is a normal endoscopy not enough to exclude the diagnosis?"
+    focus: [gross, micro, traps]
+    level: 2
+images:
+  - id: eosinophilic-esophagitis-gross-1
+    role: gross
+    pairWith: eosinophilic-esophagitis-micro-1
+  - id: eosinophilic-esophagitis-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "19"
+    pages: "771-772"
+lastUpdated: 2026-11-14
+status: published

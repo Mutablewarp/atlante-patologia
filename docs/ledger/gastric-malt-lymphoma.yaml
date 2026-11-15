@@ -1,0 +1,442 @@
+entity: gastric-malt-lymphoma
+claims:
+- claimId: gastric-malt-lymphoma-c001
+  section: definition
+  statement: "Gastric MALT lymphoma is a B-cell tumor of the lymphoid tissue in the stomach mucosa, classed as an extranodal marginal zone lymphoma."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1173-1174" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c002
+  section: definition
+  statement: "Gastric lymphomas are most often MALT lymphomas."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1173" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c003
+  section: definition
+  statement: "Among extranodal sites of lymphoma the gastrointestinal tract ranks first."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c004
+  section: definition
+  statement: "Within that tract, the stomach is the part most often affected by lymphoma."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c005
+  section: definition
+  statement: "Of all B-cell lymphomas, 5% to 10% are MALT lymphomas."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1173" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c006
+  section: definition
+  statement: "The median age at presentation is 60 years, and most patients are adults."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1173" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c007
+  section: etiology
+  statement: "Inflammation lasting a long time, usually driven by infection or autoimmunity, comes first."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1173" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c008
+  section: etiology
+  statement: "In the stomach, H. pylori gastritis is the classic infectious setting of MALT lymphoma."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1174" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c009
+  section: pathogenesis
+  statement: "The first step is a benign, polyclonal B-cell response."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1173" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c010
+  section: pathogenesis
+  statement: "Gradual genetic damage, including mutations and chromosomal abnormalities, makes these B cells malignant."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1173" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c011
+  section: pathogenesis
+  statement: "All the tumor cells derive from a single B-cell clone."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1173" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c012
+  section: pathogenesis
+  statement: "Antibiotics that clear H. pylori can make a gastric MALT lymphoma regress, provided it is still in its earliest phase."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1174" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c013
+  section: pathogenesis
+  statement: "Once a tumor has acquired t(11;18)(q21;q21), which happens in some gastric lymphomas, H. pylori eradication therapy no longer works."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790-791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c014
+  section: pathogenesis
+  statement: "A tumor that has acquired some other chromosomal translocation also resists antibiotics given alone."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1174" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c015
+  section: pathogenesis
+  statement: "Extra genetic hits can let the tumor spread elsewhere or turn into DLBCL."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1174" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c016
+  section: gross
+  statement: "Rather than forming a discrete mass, gastric MALT lymphoma can spread through a large area of the mucosa."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c017
+  section: gross
+  statement: "Fine detail of the gastric mucosa is lost where MALT lymphoma infiltrates it."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c018
+  section: micro
+  statement: "Early on, extra marginal zone cells invade germinal centers and ring the reactive follicle."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1174" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c019
+  section: micro
+  statement: "Lymphoid cells of uniform appearance crowd the lamina propria."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c020
+  section: micro
+  statement: "Part of the tumor consists of monocytoid lymphocytes that are mid-sized and cytoplasm-rich."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1174" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c021
+  section: micro
+  statement: "Plasma cell differentiation may be present to a variable degree."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1173" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c022
+  section: micro
+  statement: "Lymphoepithelial lesions result when tumor cells penetrate the epithelium of glands."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1174" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c023
+  section: ancillary
+  statement: "Lymphoepithelial lesions, characteristic of MALT lymphoma, can be seen on a biopsy of the stomach."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1174" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c024
+  section: ancillary
+  statement: "No immunophenotype singles out this lymphoma."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1174" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c025
+  section: ancillary
+  statement: "Most tumor cells are IgM-positive and restricted to one light chain."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1174" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c026
+  section: ancillary
+  statement: "The tumor cells express B-cell-associated antigens."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1174" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c027
+  section: ancillary
+  statement: "Cyclin D1, CD23, CD10 and CD5 are all absent, a pattern that helps separate the tumor from other small B-cell lymphomas."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1174" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c028
+  section: ancillary
+  statement: "If the gastric infiltrate is subtle, the diagnosis can be supported by finding clonal IgH gene rearrangement and common cytogenetic abnormalities."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1174" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c029
+  section: clinical
+  statement: "MALT lymphoma can involve sites outside the stomach, including salivary glands, thyroid and skin."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1174" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c030
+  section: clinical
+  statement: "The tumor tends to stay in its original site for a long time."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1174" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c031
+  section: clinical
+  statement: "MALT lymphomas follow an indolent clinical course."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1174" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c032
+  section: diagnosis
+  statement: "Chronic gastritis with lymphoid hyperplasia can look similar to MALT lymphoma."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c033
+  section: diagnosis
+  statement: "Lymphocytes infiltrating gastric glands, called lymphoepithelial lesions, help identify MALT lymphoma."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c034
+  section: diagnosis
+  statement: "Uniform monocytoid cells filling the lamina propria help identify MALT lymphoma."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c035
+  section: prognosis
+  statement: "Removing H. pylori puts as many as 80% of the associated gastric lymphomas (MALT type and DLBCL) into remission."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c036
+  section: prognosis
+  statement: "A large B-cell lymphoma can occasionally develop from a MALT lymphoma that was indolent."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1174" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c037
+  section: prognosis
+  statement: "Turning into DLBCL makes the disease more aggressive."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1174" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c038
+  section: differential
+  statement: "Lymphoepithelial lesions and a uniform monocytoid infiltrate favor MALT lymphoma over gastritis."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c039
+  section: differential
+  statement: "Biopsy histology is the test used to tell them apart, and clonal IgH testing can add support when the infiltrate is subtle."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "791, 1174" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c040
+  section: differential
+  statement: "DLBCL cells vary in size and shape, which makes this lymphoma easier to spot than MALT lymphoma."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c041
+  section: differential
+  statement: "Mantle cell lymphoma is cyclin D1 positive with t(11;14), whereas MALT lymphoma is cyclin D1 negative."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1173-1174" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c042
+  section: differential
+  statement: "Negativity for CD23, CD10 and CD5 sets MALT lymphoma apart from other small B-cell lymphomas such as CLL/SLL and follicular lymphoma."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1174" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c043
+  section: high-yield
+  statement: "H. pylori gastritis is the prototypical infection behind MALT lymphoma of the stomach."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1174" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c044
+  section: high-yield
+  statement: "Lymphoepithelial lesions are lymphocytes infiltrating gastric glands and distinguish MALT lymphoma from gastritis."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c045
+  section: high-yield
+  statement: "Early gastric MALT lymphoma may regress after H. pylori eradication."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1174" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c046
+  section: high-yield
+  statement: "Gastric lymphomas with t(11;18)(q21;q21) no longer respond to H. pylori eradication."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790-791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c047
+  section: high-yield
+  statement: "Accumulating genetic lesions can lead to transformation to DLBCL."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1174" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c048
+  section: high-yield
+  statement: "No immunophenotype is specific for MALT lymphoma, but cyclin D1, CD23, CD10 and CD5 are absent."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1174" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c049
+  section: high-yield
+  statement: "MALT lymphoma is the most common gastric lymphoma and follows an indolent course."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1173-1174" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c050
+  section: high-yield
+  statement: "Clonal IgH rearrangement can help establish the diagnosis when gastric infiltrates are subtle."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1174" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c051
+  section: traps
+  statement: "Tumors carrying t(11;18) or another acquired translocation are not controlled by antibiotics given alone."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790-791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c052
+  section: traps
+  statement: "The tumor is slow and tends to stay in place, and it becomes aggressive when it turns into DLBCL."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1174" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c053
+  section: traps
+  statement: "Gastritis with lymphoid hyperplasia can mimic MALT lymphoma, and lymphoepithelial lesions are the clue."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c054
+  section: traps
+  statement: "DLBCL is the other main type of gastric lymphoma, and together with MALT lymphoma it accounts for most of them."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "790" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastric-malt-lymphoma-c055
+  section: mnemonics
+  statement: "H. pylori drives gastric MALT lymphoma, lymphoepithelial lesions mark it, it stays localized for long and is indolent, and early tumors can regress with antibiotics."
+  sourceRef: { source: rubin-8e, chapter: "26", pages: "1174" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15

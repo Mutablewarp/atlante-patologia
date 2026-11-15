@@ -1,0 +1,434 @@
+entity: idiopathic-pulmonary-fibrosis
+claims:
+  - claimId: idiopathic-pulmonary-fibrosis-c001
+    section: definition
+    statement: "A biopsy with the UIP pattern and no identifiable cause leads to the clinical diagnosis of IPF."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c002
+    section: definition
+    statement: "UIP affects 6 to 14 per 100,000 people annually, which places it among the frequent interstitial pneumonias."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c003
+    section: definition
+    statement: "The average age at onset lies between 50 and 60, and there is a small excess of men."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c004
+    section: etiology
+    statement: "No cause of IPF is known; infection, the immune system and inherited susceptibility are all suspected."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c005
+    section: etiology
+    statement: "Because some patients report an earlier flu-like illness, a viral trigger is suspected."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c006
+    section: etiology
+    statement: "IPF runs in some families, and similar lung disease occurs in neurofibromatosis and Hermansky-Pudlak syndrome, so genes matter."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c007
+    section: etiology
+    statement: "Mutations in TERT, surfactant protein C and MUC5B account for fewer than one third of cases, though they are common in familial IPF."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c008
+    section: etiology
+    statement: "Autoimmune diseases such as systemic sclerosis, lupus and rheumatoid arthritis go together with UIP histology in about 20% of cases."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c009
+    section: etiology
+    statement: "Autoantibodies such as antinuclear antibodies and rheumatoid factor are common, yet the triggering antigen remains unknown."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c010
+    section: pathogenesis
+    statement: "Neutrophils are thought to arrive in response to cytokines from activated alveolar macrophages."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c011
+    section: pathogenesis
+    statement: "Interstitial fibrosis is the final result of a series of events triggered by neutrophil damage to the alveolar walls."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c012
+    section: pathogenesis
+    statement: "Alveolar wall collapse and cyst formation occur where dense scarring has remodeled the lung architecture."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c013
+    section: gross
+    statement: "Scars run along the septa and under the pleura, mostly in the lower lobes, and the lungs are small."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c014
+    section: gross
+    statement: "The pleura looks bumpy, as in a cirrhotic liver, because the septal scars retract."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c015
+    section: gross
+    statement: "Dense scars and honeycomb cysts sit in different areas, so the fibrosis is often patchy."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c016
+    section: gross
+    statement: "Extensive cystic change may be called honeycomb lung."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c017
+    section: micro
+    statement: "Normal lung lying directly next to fibrotic zones, in patchy interstitial fibrosis, is the histologic hallmark."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c018
+    section: micro
+    statement: "Fibrosis concentrated just under the pleura is called subpleural; it also follows the interlobular septa."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c019
+    section: micro
+    statement: "The term temporal heterogeneity describes fibrosis of different ages."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c020
+    section: micro
+    statement: "Dense collagen can be adjacent to a fibroblastic focus, which is an area of loose fibroblastic tissue."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c021
+    section: micro
+    statement: "Lined by airway-type or cuboidal cells, the cysts hold mucus plus inflammatory cells."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c022
+    section: micro
+    statement: "Growth of bronchiolar epithelium invades dilated airspaces."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c023
+    section: micro
+    statement: "The chronic inflammation in the interstitium is mild to moderate."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c024
+    section: micro
+    statement: "Mainly when UIP accompanies rheumatoid arthritis or another connective tissue disease, lymphocyte clusters with occasional germinal centers can be seen."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c025
+    section: micro
+    statement: "Pulmonary hypertension may accompany vessel changes: a fibrotic intima and a thickened media."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c026
+    section: ancillary
+    statement: "When CT is typical, surgical lung biopsy is unnecessary."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c027
+    section: ancillary
+    statement: "Histology shows fibroblastic foci beside dense collagen and small honeycomb areas inside patchy subpleural fibrosis (H&E is not stated in the source)."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739-740" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c028
+    section: ancillary
+    statement: "Yellow dense collagen and a green fibroblastic focus are told apart on an elastin stain."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "740" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c029
+    section: ancillary
+    statement: "Familial IPF commonly shows variants in TERT, surfactant protein C and MUC5B."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c030
+    section: clinical
+    statement: "Typically over 1 to 3 years, a dry cough slowly appears along with breathlessness on effort."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c031
+    section: clinical
+    statement: "Lung function tests show a restrictive defect."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c032
+    section: clinical
+    statement: "Clubbing of the fingers is common, mainly in late disease."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c033
+    section: clinical
+    statement: "The classic finding at the lung bases is fine Velcro rales, that is, late inspiratory crackles."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c034
+    section: clinical
+    statement: "Late in the disease cor pulmonale can occur, along with cyanosis and rapid breathing at rest."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739-740" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c035
+    section: diagnosis
+    statement: "The typical CT shows a rim of net-like opacities under the pleura with honeycombing, strongest in the posterior lower lobes, and traction bronchiectasis."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c036
+    section: diagnosis
+    statement: "Because the CT is distinctive in about half of patients, those patients can skip surgical lung biopsy."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c037
+    section: prognosis
+    statement: "Average survival is 4 to 6 years, a bleak prognosis."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "740" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c038
+    section: prognosis
+    statement: "Transplantation is generally the only hope of survival; medical treatment is corticosteroids with occasional cyclophosphamide."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "740" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c039
+    section: prognosis
+    statement: "The FDA has approved the antifibrotic drugs pirfenidone and nintedanib to slow progression."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "740" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c040
+    section: differential
+    statement: "NSIP involves the lung evenly rather than patchily, and fibroblastic foci and honeycombing are scarce or absent."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "740" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c041
+    section: differential
+    statement: "In idiopathic NSIP 80% of patients are alive at 5 years, a better outcome than in IPF."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "740" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c042
+    section: differential
+    statement: "Desquamative interstitial pneumonia is mainly a disease of smokers and has little interstitial fibrosis."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "740" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c043
+    section: differential
+    statement: "A UIP pattern can arise in several clinical settings, one being chronic hypersensitivity pneumonitis."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c044
+    section: differential
+    statement: "Sarcoidosis shows multiple noncaseating granulomas; transbronchial lung biopsy often reveals granulomas, and mediastinoscopy shows them in a mediastinal lymph node."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c045
+    section: high-yield
+    statement: "A biopsy with the UIP pattern and no identifiable cause corresponds to the clinical diagnosis of IPF."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c046
+    section: high-yield
+    statement: "Normal lung lies next to scar in the patchy subpleural interstitial fibrosis of UIP."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c047
+    section: high-yield
+    statement: "UIP scarring varies in age (temporal heterogeneity) and contains fibroblastic foci."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c048
+    section: high-yield
+    statement: "Honeycomb cysts occur in dense scar, mainly in the lower lobes."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739-740" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c049
+    section: high-yield
+    statement: "NSIP is the contrasting pattern, uniform and diffuse."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "740" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c050
+    section: high-yield
+    statement: "IPF survival averages 4 to 6 years, and pirfenidone and nintedanib slow its course."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "740" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c051
+    section: traps
+    statement: "UIP is a pattern that several diseases can produce, for example asbestosis or drug injury; IPF is diagnosed only when no cause is found."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c052
+    section: traps
+    statement: "UIP fibrosis is patchy and varied in age, while NSIP is diffuse and uniform."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "740" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c053
+    section: traps
+    statement: "With distinctive CT findings, surgical lung biopsy is not required."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: idiopathic-pulmonary-fibrosis-c054
+    section: mnemonics
+    statement: "Original mnemonic PATCH for UIP features: patchy, ages differ, toward the pleura, cysts (honeycomb), hot spots of fibroblastic foci."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "739" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14

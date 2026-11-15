@@ -1,0 +1,266 @@
+entity: warthin-tumor
+claims:
+  - claimId: warthin-tumor-c001
+    section: definition
+    statement: "Warthin tumor is a benign parotid tumor in which dense lymphoid tissue holds glandular spaces that have turned cystic."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: warthin-tumor-c002
+    section: definition
+    statement: "Among monomorphic adenomas, Warthin tumor is the most common type."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: warthin-tumor-c003
+    section: definition
+    statement: "Monomorphic adenomas lack mesenchymal tissue; their epithelial cells are arranged regularly, usually as glands."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: warthin-tumor-c004
+    section: definition
+    statement: "Of all benign salivary gland tumors, 5% to 10% are monomorphic adenomas."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: warthin-tumor-c005
+    section: definition
+    statement: "Among salivary gland tumors, Warthin tumor is the only one with a male predominance."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: warthin-tumor-c006
+    section: definition
+    statement: "Most cases of Warthin tumor arise after age 50, and in general the tumor occurs after age 30."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: warthin-tumor-c007
+    section: pathogenesis
+    statement: "The histogenesis of Warthin tumor is uncertain."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: warthin-tumor-c008
+    section: pathogenesis
+    statement: "Lymph nodes in the parotid region usually contain small islands of salivary gland tissue."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: warthin-tumor-c009
+    section: pathogenesis
+    statement: "Warthin tumor may start when salivary inclusions in parotid lymph nodes multiply."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: warthin-tumor-c010
+    section: micro
+    statement: "The glandular spaces of Warthin tumor are prone to cystic change and have papillary projections."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: warthin-tumor-c011
+    section: micro
+    statement: "Oncocytes form the cyst wall; they are epithelial cells that stain eosinophilic."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: warthin-tumor-c012
+    section: micro
+    statement: "The dense lymphoid tissue around the cysts contains germinal centers."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: warthin-tumor-c013
+    section: micro
+    statement: "Mitochondria fill an oncocyte, a benign epithelial cell, so its cytoplasm looks granular by light microscopy."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: warthin-tumor-c014
+    section: ancillary
+    statement: "On routine histology, lymphoid tissue with germinal centers surrounds papillary cysts whose lining is made of eosinophilic oncocytes."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: warthin-tumor-c015
+    section: clinical
+    statement: "Warthin tumor arises in the parotid gland."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: warthin-tumor-c016
+    section: clinical
+    statement: "In 15% of cases, Warthin tumors occur on both sides."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: warthin-tumor-c017
+    section: clinical
+    statement: "Several tumor foci can occur within a single gland."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: warthin-tumor-c018
+    section: prognosis
+    statement: "Warthin tumor is described as clearly benign."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: warthin-tumor-c019
+    section: differential
+    statement: "Myoepithelial cells and glands are mixed into a chondromyxoid stroma in pleomorphic adenoma."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: warthin-tumor-c020
+    section: differential
+    statement: "Low-grade mucoepidermoid carcinoma has a mixed cell population, including mucus-secreting cells, in irregular spaces, some of them cystic."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: warthin-tumor-c021
+    section: differential
+    statement: "Oncocytoma is a rare parotid adenoma of the elderly, with oncocytes arranged as cords or nests."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: warthin-tumor-c022
+    section: high-yield
+    statement: "Warthin tumor is the most common type of monomorphic adenoma."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: warthin-tumor-c023
+    section: high-yield
+    statement: "Dense lymphoid tissue with germinal centers wraps papillary cysts lined by oncocytes."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: warthin-tumor-c024
+    section: high-yield
+    statement: "In 15% of cases, Warthin tumors occur on both sides."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: warthin-tumor-c025
+    section: high-yield
+    statement: "Several tumor foci can occur within one gland."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: warthin-tumor-c026
+    section: high-yield
+    statement: "Warthin tumor is the only salivary gland tumor with a male predominance."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: warthin-tumor-c027
+    section: high-yield
+    statement: "Most cases of Warthin tumor arise after age 50, and the tumor generally occurs after age 30."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: warthin-tumor-c028
+    section: traps
+    statement: "Despite its dense lymphoid tissue, Warthin tumor is clearly benign."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: warthin-tumor-c029
+    section: traps
+    statement: "In 15% of cases, Warthin tumors occur on both sides."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: warthin-tumor-c030
+    section: traps
+    statement: "Within one gland there can be several tumor foci."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: warthin-tumor-c031
+    section: traps
+    statement: "Small numbers of oncocytes are a normal finding in the thyroid, the parathyroid and other organs."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: warthin-tumor-c032
+    section: traps
+    statement: "Oncocytoma is a distinct rare adenoma whose oncocytes are arranged in cords or nests."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: warthin-tumor-c033
+    section: mnemonics
+    statement: "Warthin tumor is more common in men, most often arises after age 50, and may be bilateral."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14

@@ -1,0 +1,346 @@
+entity: adenoid-cystic-carcinoma
+claims:
+  - claimId: adenoid-cystic-carcinoma-c001
+    section: definition
+    statement: "This salivary gland cancer grows slowly but invades the surrounding tissue, and it often comes back after resection."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1323" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c002
+    section: definition
+    statement: "Roughly 2 cases in 3 start in a minor salivary gland and the other 1 in 3 start in a major one."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1323" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c003
+    section: definition
+    statement: "Of all tumors of the major salivary glands, about 5% are adenoid cystic carcinoma."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1323" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c004
+    section: definition
+    statement: "Among tumors of the minor salivary glands the adenoid cystic share is about 20%."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1323" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c005
+    section: definition
+    statement: "Outside the mouth the tumor arises in the tear glands and the airways."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1323" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: adenoid-cystic-carcinoma-c006
+    section: definition
+    statement: "Patients are most often 40 to 60 years old."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1323" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c007
+    section: pathogenesis
+    statement: "Deletions on chromosome 6 and a t(6;9) translocation are a constant finding in the tumor."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1323" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c008
+    section: pathogenesis
+    statement: "The t(6;9) translocation joins NFIB, a transcription factor gene, to the proto-oncogene MYB."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1323" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c009
+    section: pathogenesis
+    statement: "The likely origin is a cell committed to intercalated duct and myoepithelial differentiation."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1324" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c010
+    section: micro
+    statement: "Small size and scant cytoplasm mark the tumor cells."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1324" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c011
+    section: micro
+    statement: "The cells grow in solid sheets or in thin strands."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1324" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: adenoid-cystic-carcinoma-c012
+    section: micro
+    statement: "Cystic spaces form between interconnected tumor cells, and the growth is then tubular, cribriform or solid."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1324" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: adenoid-cystic-carcinoma-c013
+    section: micro
+    statement: "The word cribriform describes a sieve-like pattern."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1324" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c014
+    section: micro
+    statement: "The spaces of the cribriform pattern contain basophilic material."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1324" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: adenoid-cystic-carcinoma-c015
+    section: micro
+    statement: "Because myoepithelial cells surround these spaces, they are pseudocysts rather than true lumens."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1324" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c016
+    section: micro
+    statement: "The cylindromatous look reflects deposits of basement-membrane-type material secreted by the tumor itself."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1324" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c017
+    section: micro
+    statement: "Pathologists grade by how much tubular versus cribriform pattern is present."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1324" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c018
+    section: micro
+    statement: "A tumor is high grade once solid growth exceeds 30%."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1324" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c019
+    section: ancillary
+    statement: "Histologic sections are examined for solid, tubular and cribriform growth."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1324" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c020
+    section: ancillary
+    statement: "The MYB-NFIB fusion resulting from t(6;9) is the characteristic molecular abnormality."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1323" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c021
+    section: clinical
+    statement: "The tumor invades perineural spaces, which is why it is often painful."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1324" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: adenoid-cystic-carcinoma-c022
+    section: clinical
+    statement: "In most cases, distant metastases are absent for years."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1324" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c023
+    section: clinical
+    statement: "Late diagnosis is common."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1324" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c024
+    section: prognosis
+    statement: "Getting rid of the tumor completely is hard."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1324" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c025
+    section: prognosis
+    statement: "Patients do badly in the long run."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1324" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c026
+    section: prognosis
+    statement: "The tumor often recurs after resection."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1323" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c027
+    section: prognosis
+    statement: "Five years after diagnosis, only about 15% of patients with a high-grade tumor are alive."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1324" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c028
+    section: differential
+    statement: "Secretory carcinoma is a separate histologic entity that resembles adenoid cystic carcinoma."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1324" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c029
+    section: differential
+    statement: "Secretory carcinoma shows an ETV6-NTRK3 fusion that arises from a t(12;15) translocation."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1324" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c030
+    section: differential
+    statement: "Mucoepidermoid carcinoma contains three cell types: intermediate, mucous and epidermoid."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1323" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: adenoid-cystic-carcinoma-c031
+    section: differential
+    statement: "In MAML2-positive mucoepidermoid carcinoma, break-apart FISH gives split red and green signals, meaning the gene is broken."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1324" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-15
+  - claimId: adenoid-cystic-carcinoma-c032
+    section: differential
+    statement: "The tumor cells are uniform, resemble normal secretory (acinic) cells of salivary glands and contain zymogen granules."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1324" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c033
+    section: high-yield
+    statement: "Cribriform, tubular and solid growth with pseudocysts characterizes the histology of adenoid cystic carcinoma."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1324" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c034
+    section: high-yield
+    statement: "Solid growth above 30% defines high grade."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1324" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c035
+    section: high-yield
+    statement: "Infiltration of perineural spaces accounts for the pain."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1324" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c036
+    section: high-yield
+    statement: "The genetic hallmark is the MYB-NFIB fusion from t(6;9)."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1323" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c037
+    section: high-yield
+    statement: "The tumor grows slowly, yet diagnosis is often late and the long-term outlook is poor."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1324" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c038
+    section: high-yield
+    statement: "Two thirds of cases arise in minor salivary glands."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1323" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c039
+    section: traps
+    statement: "Myoepithelial cells surround the cyst-like spaces, so they are pseudocysts and not true lumens."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1324" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c040
+    section: traps
+    statement: "Metastases may stay absent for years, yet the long-term prognosis is poor, so a quiet interval does not mean cure."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1324" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c041
+    section: traps
+    statement: "Solid growth over 30% marks the tumor as high grade."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1324" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c042
+    section: traps
+    statement: "Most cases originate in minor salivary glands (two thirds), not the major glands."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1323" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: adenoid-cystic-carcinoma-c043
+    section: mnemonics
+    statement: "The key features are sieve-like growth, perineural invasion, late diagnosis and a poor long-term outcome."
+    sourceRef: { source: rubin-8e, chapter: "29", pages: "1323-1324" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14

@@ -1,0 +1,354 @@
+entity: gastrointestinal-stromal-tumor
+claims:
+- claimId: gastrointestinal-stromal-tumor-c001
+  section: definition
+  statement: "GISTs arise from the interstitial cells of Cajal"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c002
+  section: definition
+  statement: "The pacemaker cells of the gut, the interstitial cells of Cajal, are normally located in the muscularis propria"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c003
+  section: definition
+  statement: "Interstitial cells of Cajal connect enteric nerve signaling with gut muscle, keeping peristalsis coordinated"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c004
+  section: definition
+  statement: "GISTs occur throughout the gastrointestinal tract"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c005
+  section: definition
+  statement: "The stomach is the commonest GIST site and the small bowel comes second"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791, 829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c006
+  section: definition
+  statement: "GIST ranks first among mesenchymal tumors of the small intestine"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c007
+  section: definition
+  statement: "A GIST is found significantly less often in the colon than a benign lipoma or leiomyoma"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c008
+  section: etiology
+  statement: "In most GISTs the main driving mutation is in KIT"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c009
+  section: etiology
+  statement: "PDGFRA mutations are linked to a minority of GISTs"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c010
+  section: etiology
+  statement: "Mutations of the succinate dehydrogenase gene complex are linked to another minority of GISTs"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c011
+  section: pathogenesis
+  statement: "KIT encodes a receptor tyrosine kinase"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c012
+  section: pathogenesis
+  statement: "PDGFRA is another receptor tyrosine kinase gene"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c013
+  section: gross
+  statement: "A GIST is usually a large, bulky mass"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c014
+  section: gross
+  statement: "The origin of a GIST is the muscularis propria, a deep layer of the bowel wall"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791, 829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c015
+  section: gross
+  statement: "The mucosa overlying a GIST may ulcerate, with the ulcer at the center"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c016
+  section: micro
+  statement: "A GIST grows as a solid mass of neoplastic cells"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c017
+  section: micro
+  statement: "GIST cells have a spindled or epithelioid shape"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c018
+  section: micro
+  statement: "Spindle cells usually make up GISTs of the small bowel"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c019
+  section: ancillary
+  statement: "Most GISTs are positive for CD117 on immunohistochemistry, an antibody against the KIT receptor kinase"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c020
+  section: ancillary
+  statement: "The specific mutations present determine the drug of choice"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c021
+  section: clinical
+  statement: "A GIST can first present through bleeding from the ulcerated mucosa above it"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c022
+  section: clinical
+  statement: "Mucosal ulceration over small intestinal GISTs can cause severe bleeding"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c023
+  section: prognosis
+  statement: "Tumor site, size and mitotic count are among the best pathologic predictors of GIST behavior (the page says 'include', not an exhaustive list)"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c024
+  section: prognosis
+  statement: "Aggressive behavior is more probable in small bowel GISTs than in gastric GISTs"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c025
+  section: prognosis
+  statement: "Managing a GIST involves both resection of the tumor and drug therapy"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c026
+  section: prognosis
+  statement: "Imatinib blocks the KIT kinase, so it fits the majority of GISTs, which carry KIT mutations"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c027
+  section: prognosis
+  statement: "The BCR-ABL1 fusion protein of chronic myelogenous leukemia is also a target of imatinib"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c028
+  section: differential
+  statement: "Neuroendocrine tumors form rosettes and other patterns from small round cells with evenly shaped nuclei that rarely divide"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c029
+  section: differential
+  statement: "Gastric MALT lymphoma is distinguished from chronic gastritis by uniform monocytoid cells in the lamina propria and lymphocytes invading the glands (lymphoepithelial lesions)"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c030
+  section: differential
+  statement: "In the colon GISTs are uncommon; benign lipomas and muscularis mucosae leiomyomas predominate among mesenchymal tumors"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c031
+  section: high-yield
+  statement: "The cell of origin of GIST is the interstitial cell of Cajal, a gut pacemaker"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c032
+  section: high-yield
+  statement: "Most GISTs are driven by KIT mutations"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c033
+  section: high-yield
+  statement: "Most GISTs stain positive for CD117"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c034
+  section: high-yield
+  statement: "A smaller share of GISTs involves PDGFRA or succinate dehydrogenase genes"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c035
+  section: high-yield
+  statement: "The stomach is where GISTs occur most often; the small bowel ranks next"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c036
+  section: high-yield
+  statement: "Site, size and mitotic count are among the best pathologic predictors of GIST behavior"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c037
+  section: high-yield
+  statement: "Imatinib is used to inhibit the tyrosine kinase in KIT-related GISTs"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c038
+  section: traps
+  statement: "GIST derives from the interstitial cells of Cajal, pacemaker cells that normally reside in the muscularis propria (the page does not say 'not smooth muscle')"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c039
+  section: traps
+  statement: "Colonic leiomyomas derive from the muscularis mucosae"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "829" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c040
+  section: traps
+  statement: "A smaller share of GISTs involves PDGFRA or succinate dehydrogenase genes rather than KIT"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c041
+  section: traps
+  statement: "Imatinib is used in GIST to inhibit the tyrosine kinase"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c042
+  section: traps
+  statement: "Imatinib is also used in chronic myelogenous leukemia against BCR-ABL1"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c043
+  section: traps
+  statement: "Tumor site and mitotic count, along with size, predict GIST behavior"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: gastrointestinal-stromal-tumor-c044
+  section: mnemonics
+  statement: "GIST arises from Cajal cells, is mostly KIT-driven, stains for CD117 and is treated with imatinib"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "791" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15

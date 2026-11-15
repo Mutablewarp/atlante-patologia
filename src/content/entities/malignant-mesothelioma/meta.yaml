@@ -1,0 +1,141 @@
+id: malignant-mesothelioma
+module: o18
+tier: core
+kind: disease
+names:
+  it: "Mesotelioma maligno"
+  en: "Malignant mesothelioma"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: []
+summary:
+  it: "Neoplasia maligna delle cellule mesoteliali, più spesso pleurica, legata in genere all'esposizione ad amianto, con latenza di decenni e prognosi sfavorevole."
+  en: "A malignant neoplasm of mesothelial cells, most often pleural, usually linked to asbestos exposure, with a latency of decades and a poor prognosis."
+lenses:
+  system: [respiratory, general]
+  process: [neoplasia]
+  pattern: []
+  presentation: [chest-pain, dyspnea, mass-lesion]
+  marker: [ihc]
+  group: [neoplastic, toxic-environmental]
+learningObjectives:
+  - it: "Collegare il mesotelioma maligno all'esposizione ad amianto e alla lunga latenza."
+    en: "Link malignant mesothelioma to asbestos exposure and its long latency."
+  - it: "Descrivere l'aspetto macroscopico a corazza pleurica e i pattern epiteliale, sarcomatoide e bifasico."
+    en: "Describe the pleural rind and the epithelial, sarcomatous and biphasic patterns."
+  - it: "Distinguere il mesotelioma dall'adenocarcinoma con calretinina, WT-1, D2-40 e i marcatori dell'adenocarcinoma."
+    en: "Separate mesothelioma from adenocarcinoma with calretinin, WT-1, D2-40 and the adenocarcinoma markers."
+  - it: "Riconoscere presentazione clinica e prognosi."
+    en: "Recognize the clinical presentation and prognosis."
+prerequisites: [neoplasia-nomenclature]
+relations:
+  - type: differentialOf
+    target: lung-adenocarcinoma
+    note:
+      it: "Il tipo epiteliale può essere difficile da distinguere dall'adenocarcinoma: decide l'immunoistochimica."
+      en: "The epithelial type can be hard to tell from adenocarcinoma: immunohistochemistry decides."
+  - type: differentialOf
+    target: solitary-fibrous-tumor-of-pleura
+    note:
+      it: "Entrambi sono tumori pleurici a cellule fusate; la prognosi è molto diversa."
+      en: "Both are pleural spindle-cell tumors, with very different prognosis."
+  - type: differentialOf
+    target: serous-ovarian-tumors
+    note:
+      it: "Il mesotelioma peritoneale va distinto dal carcinoma sieroso."
+      en: "Peritoneal mesothelioma must be separated from serous carcinoma."
+  - type: sharesMechanism
+    target: asbestos-related-disease
+    note:
+      it: "Stessa esposizione ad amianto."
+      en: "Same asbestos exposure."
+quickCheck:
+  - id: malignant-mesothelioma-q1
+    q:
+      it: "Quale esposizione è associata più spesso al mesotelioma maligno e dopo quanto tempo compare il tumore?"
+      en: "Which exposure is most often linked to malignant mesothelioma, and after how long does the tumor appear?"
+    a:
+      it: "L'amianto; la latenza media è di 30-40 anni."
+      en: "Asbestos; the average latency is 30 to 40 years."
+    kind: short
+  - id: malignant-mesothelioma-q2
+    q:
+      it: "Quali marcatori sono tipicamente positivi nel mesotelioma e negativi nell'adenocarcinoma?"
+      en: "Which markers are typically positive in mesothelioma and negative in adenocarcinoma?"
+    a:
+      it: "Calretinina, WT-1 e D2-40 (podoplanina)."
+      en: "Calretinin, WT-1 and D2-40 (podoplanin)."
+    kind: short
+  - id: malignant-mesothelioma-q3
+    q:
+      it: "Che cosa significa che un mesotelioma è bifasico?"
+      en: "What does it mean that a mesothelioma is biphasic?"
+    a:
+      it: "Contiene insieme componenti epiteliali e sarcomatose."
+      en: "It contains epithelial and sarcomatous components together."
+    kind: short
+  - id: malignant-mesothelioma-q4
+    q:
+      it: "Che cos'è la corazza pleurica?"
+      en: "What is the pleural rind?"
+    a:
+      it: "Una lamina di tumore che segue le scissure e i setti interlobari e spesso comprime il polmone che circonda."
+      en: "A sheet of tumor that runs through the fissures and interlobar septa and often compresses the lung it surrounds."
+    kind: short
+  - id: malignant-mesothelioma-q5
+    q:
+      it: "Una positività per citocheratine esclude il mesotelioma?"
+      en: "Does a positive cytokeratin stain exclude mesothelioma?"
+    a:
+      it: "No: le citocheratine sono positive sia nel mesotelioma sia nell'adenocarcinoma."
+      en: "No: both mesothelioma and adenocarcinoma stain for cytokeratin."
+    kind: short
+selfExplain:
+  - it: "Perché il mesotelioma epiteliale può essere confuso con l'adenocarcinoma e come si risolve il dubbio?"
+    en: "Why can epithelial mesothelioma be mistaken for adenocarcinoma, and how is the doubt resolved?"
+  - it: "Perché l'assenza di una storia di esposizione ad amianto non esclude il mesotelioma?"
+    en: "Why does the lack of an asbestos exposure history not exclude mesothelioma?"
+  - it: "Che cosa distingue la corazza pleurica da un'invasione profonda del polmone?"
+    en: "What separates the pleural rind from deep invasion of the lung?"
+examQuestions:
+  - it: "Mi parli del mesotelioma maligno: quale esposizione lo causa e dopo quanto tempo compare?"
+    en: "Tell me about malignant mesothelioma: which exposure causes it, and after how long does it appear?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Che cosa intende per corazza pleurica e che aspetto ha il tumore nel torace?"
+    en: "What do you mean by pleural rind, and how does the tumor look in the chest?"
+    focus: [gross, clinical]
+    level: 1
+  - it: "Che cosa vede al microscopio in un mesotelioma bifasico?"
+    en: "What do you see under the microscope in a biphasic mesothelioma?"
+    focus: [micro]
+    level: 2
+  - it: "Come distingue un mesotelioma epiteliale da un adenocarcinoma?"
+    en: "How do you tell an epithelial mesothelioma from an adenocarcinoma?"
+    focus: [micro, ancillary, differential]
+    level: 3
+  - it: "Quali colorazioni userebbe per distinguere il mesotelioma dall'adenocarcinoma e perché le citocheratine non bastano?"
+    en: "Which stains would you use to separate mesothelioma from adenocarcinoma, and why are cytokeratins not enough?"
+    focus: [ancillary, diagnosis]
+    level: 3
+images:
+  - { id: malignant-mesothelioma-micro-1, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: true
+editionNote:
+  it: "La classificazione del mesotelioma è cambiata tra le edizioni: la scheda segue un'edizione del testo di riferimento e va confrontata con una classificazione aggiornata."
+  en: "Mesothelioma classification has changed between editions: the card follows one edition of the reference textbook and should be checked against a current classification."
+sources:
+  - source: rubin-8e
+    chapter: "18"
+    pages: "765"
+  - source: rubin-8e
+    chapter: "19"
+    pages: "837"
+  - source: rubin-8e
+    chapter: "24"
+    pages: "1072"
+lastUpdated: 2026-11-14
+status: published

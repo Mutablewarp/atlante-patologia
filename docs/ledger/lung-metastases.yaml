@@ -1,0 +1,194 @@
+entity: lung-metastases
+claims:
+  - claimId: lung-metastases-c001
+    section: definition
+    statement: "Tumors that reach the lung from another site are more frequent there than any other malignancy."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "763" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-metastases-c002
+    section: definition
+    statement: "At autopsy, roughly a third of patients who died of cancer have lung metastases."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "763" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-metastases-c003
+    section: etiology
+    statement: "Lymphangitic spread to the lung usually begins in the breast, the gut or the pancreas."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "763" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-metastases-c004
+    section: etiology
+    statement: "An uncommon mucinous lung metastasis with lepidic growth most often comes from the pancreas or stomach."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "763" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-metastases-c005
+    section: pathogenesis
+    statement: "In lymphangitic carcinoma the lung's lymphatic vessels carry a metastasis over a wide area."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "763" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-metastases-c006
+    section: pathogenesis
+    statement: "Tumor in the lung lymphatics forms a cuff around the veins and the bronchovascular tree."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "763" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-metastases-c007
+    section: gross
+    statement: "A lung with metastases usually contains several sharply demarcated nodules."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "763" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-metastases-c008
+    section: gross
+    statement: "The name cannon ball metastases refers to large metastatic nodules visible on imaging."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "763" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-metastases-c009
+    section: micro
+    statement: "In most cases a lung metastasis looks like the tumor that produced it."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "763" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-metastases-c010
+    section: micro
+    statement: "Mucinous tumors are the typical example of the rare metastasis with lepidic growth."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "763" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-metastases-c011
+    section: clinical
+    statement: "Patients with lymphangitic carcinoma have cough and shortness of breath."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "763" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-metastases-c012
+    section: diagnosis
+    statement: "Lymphangitic carcinoma gives the chest film a reticulonodular appearance throughout the lungs."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "763" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-metastases-c013
+    section: diagnosis
+    statement: "A chest film with many big metastatic nodules is said to show a cannon ball pattern."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "763" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-metastases-c014
+    section: differential
+    statement: "Lung metastases usually appear as several sharply demarcated nodules that mostly resemble the primary tumor."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "763" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-metastases-c015
+    section: differential
+    statement: "Lymphangitic carcinoma wraps the bronchovascular tree and veins and gives a diffuse reticulonodular chest film."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "763" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-metastases-c016
+    section: differential
+    statement: "In lymphomatoid granulomatosis an angioinvasive lymphoid infiltrate, often with central necrosis, forms lung nodules."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "763" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-metastases-c017
+    section: high-yield
+    statement: "No other malignancy of the lung is as frequent as metastasis."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "763" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-metastases-c018
+    section: high-yield
+    statement: "The usual picture of lung metastases is several circumscribed nodules, and big ones are called cannon ball metastases."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "763" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-metastases-c019
+    section: high-yield
+    statement: "Lymphangitic carcinoma usually arises in the breast, the gut or the pancreas."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "763" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-metastases-c020
+    section: high-yield
+    statement: "Mucinous metastases with lepidic growth usually come from the pancreas or stomach."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "763" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-metastases-c021
+    section: traps
+    statement: "The usual finding in lung metastasis is several well-demarcated nodules, not a single one."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "763" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-metastases-c022
+    section: traps
+    statement: "Cannon ball only describes how big metastatic nodules look on imaging; it is not a histologic type."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "763" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-metastases-c023
+    section: traps
+    statement: "Lymphangitic carcinoma can wrap the bronchovascular tree and veins by following the lymphatics instead of forming discrete nodules."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "763" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14
+  - claimId: lung-metastases-c024
+    section: mnemonics
+    statement: "Breast cancers and gut or pancreatic cancers are the common primaries of lymphangitic carcinoma."
+    sourceRef: { source: rubin-8e, chapter: "18", pages: "763" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-14

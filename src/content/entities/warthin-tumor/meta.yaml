@@ -1,0 +1,102 @@
+id: warthin-tumor
+module: o29
+tier: core
+kind: disease
+names:
+  it: "Tumore di Warthin"
+  en: "Warthin tumor"
+  eponyms: ["Warthin"]
+  synonyms:
+    it: ["Cistoadenoma papillifero linfomatoso"]
+    en: ["Papillary cystadenoma lymphomatosum"]
+  abbreviations: []
+summary:
+  it: "Tumore benigno della parotide, il più frequente degli adenomi monomorfi: spazi ghiandolari cistici rivestiti da oncociti in un denso tessuto linfoide, spesso bilaterale o multifocale."
+  en: "Benign parotid tumor, the most common monomorphic adenoma: cystic glandular spaces lined by oncocytes within dense lymphoid tissue, sometimes bilateral or multifocal."
+lenses:
+  system: [head-neck]
+  process: [neoplasia]
+  pattern: []
+  presentation: [mass-lesion]
+  marker: []
+  group: [neoplastic]
+learningObjectives:
+  - it: "Descrivere l'aspetto microscopico del tumore di Warthin: cisti con papille rivestite da oncociti e stroma linfoide con centri germinativi."
+    en: "Describe the microscopic appearance of Warthin tumor: papillary cysts lined by oncocytes with a lymphoid stroma with germinal centers."
+  - it: "Ricordare i dati epidemiologici distintivi: più frequente nell'uomo, dopo i 50 anni, talvolta bilaterale o multifocale."
+    en: "Recall the distinctive epidemiology: more common in men, after age 50, sometimes bilateral or multifocal."
+  - it: "Definire l'oncocita e distinguere il tumore di Warthin dall'oncocitoma."
+    en: "Define the oncocyte and distinguish Warthin tumor from oncocytoma."
+prerequisites: [benign-vs-malignant-tumors]
+relations:
+  - type: differentialOf
+    target: pleomorphic-adenoma
+    note:
+      it: "Entrambi sono tumori salivari benigni, ma lo stroma è linfoide nel Warthin e condromixoide nell'adenoma pleomorfo."
+      en: "Both are benign salivary tumors, but the stroma is lymphoid in Warthin tumor and chondromyxoid in pleomorphic adenoma."
+  - type: differentialOf
+    target: mucoepidermoid-carcinoma
+    note:
+      it: "Entrambi hanno spazi cistici; il carcinoma mucoepidermoide contiene cellule squamose, mucipare e intermedie."
+      en: "Both have cystic spaces; mucoepidermoid carcinoma contains squamous, mucus-secreting and intermediate cells."
+quickCheck:
+  - id: warthin-tumor-q1
+    q:
+      it: "Quali componenti compongono l'istologia del tumore di Warthin?"
+      en: "Which components make up the histology of Warthin tumor?"
+    a:
+      it: "Cisti con proiezioni papillari rivestite da oncociti eosinofili, circondate da denso tessuto linfoide con centri germinativi."
+      en: "Cysts with papillary projections lined by eosinophilic oncocytes, surrounded by dense lymphoid tissue with germinal centers."
+    kind: short
+  - id: warthin-tumor-q2
+    q:
+      it: "Che cosa lo distingue dagli altri tumori salivari per sesso e lateralità?"
+      en: "What sets it apart from other salivary tumors in sex and laterality?"
+    a:
+      it: "È l'unico tumore salivare più frequente nell'uomo e può essere bilaterale (15% dei casi) o multifocale in una ghiandola."
+      en: "It is the only salivary tumor more common in men, and it can be bilateral (15% of cases) or multifocal within one gland."
+    kind: short
+  - id: warthin-tumor-q3
+    q:
+      it: "Che cos'è un oncocita?"
+      en: "What is an oncocyte?"
+    a:
+      it: "Una cellula epiteliale benigna rigonfia di mitocondri, con citoplasma di aspetto granulare al microscopio ottico."
+      en: "A benign epithelial cell swollen with mitochondria, with granular-looking cytoplasm under the light microscope."
+    kind: short
+selfExplain:
+  - it: "In che modo può iniziare un tumore di Warthin nei linfonodi della regione parotidea?"
+    en: "How might a Warthin tumor start in the lymph nodes of the parotid region?"
+  - it: "Perché i tumori di Warthin possono comparire su entrambi i lati o in più focolai?"
+    en: "Why might Warthin tumors appear on both sides or in several foci?"
+examQuestions:
+  - it: "Che cosa vede al microscopio in un tumore di Warthin?"
+    en: "What do you see under the microscope in a Warthin tumor?"
+    focus: [micro, ancillary]
+    level: 1
+  - it: "Mi parli dell'epidemiologia e della lateralità del tumore di Warthin."
+    en: "Tell me about the epidemiology and laterality of Warthin tumor."
+    focus: [definition, clinical]
+    level: 1
+  - it: "Che cos'è un oncocita, e come distingue il tumore di Warthin dall'oncocitoma?"
+    en: "What is an oncocyte, and how do you tell Warthin tumor from oncocytoma?"
+    focus: [micro, differential, traps]
+    level: 3
+  - it: "Come distingue il tumore di Warthin dall'adenoma pleomorfo?"
+    en: "How do you tell Warthin tumor from pleomorphic adenoma?"
+    focus: [micro, differential]
+    level: 3
+  - it: "Perché un tumore ricco di tessuto linfoide come il Warthin è comunque benigno, e da dove potrebbe originare?"
+    en: "Why is a tumor full of lymphoid tissue like Warthin tumor still benign, and where might it come from?"
+    focus: [pathogenesis, prognosis, traps]
+    level: 2
+images:
+  - { id: warthin-tumor-micro-1, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "29"
+    pages: "1322"
+lastUpdated: 2026-11-14
+status: published

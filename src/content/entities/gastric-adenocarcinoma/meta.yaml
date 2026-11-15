@@ -1,0 +1,144 @@
+id: gastric-adenocarcinoma
+module: o19
+tier: core
+kind: disease
+editionDependent: true
+editionNote:
+  it: "La classificazione dei carcinomi gastrici è cambiata tra le edizioni del testo di riferimento: i dati di sopravvivenza e la classificazione di Lauren riportati qui seguono l'8ª edizione e possono essere superati."
+  en: "The classification of gastric carcinoma changed between editions of the reference: the survival figures and the Lauren classification given here follow the 8th edition and may be out of date."
+names:
+  it: "Adenocarcinoma gastrico"
+  en: "Gastric adenocarcinoma"
+  eponyms: []
+  synonyms:
+    it: ["Carcinoma gastrico"]
+    en: ["Gastric carcinoma", "Stomach cancer"]
+  abbreviations: []
+summary:
+  it: "Tumore maligno epiteliale più frequente dello stomaco, distinto secondo Lauren in tipo intestinale (ghiandolare, legato a gastrite cronica e metaplasia intestinale) e tipo diffuso (cellule a castone poco coese, anche ereditario per mutazioni di CDH1)."
+  en: "The most common malignant epithelial tumor of the stomach, divided by Lauren into an intestinal type (glandular, tied to chronic gastritis and intestinal metaplasia) and a diffuse type (poorly cohesive signet ring cells, also hereditary through CDH1 mutations)."
+lenses:
+  system: [gastrointestinal]
+  process: [neoplasia]
+  pattern: [metaplasia, dysplasia]
+  presentation: [mass-lesion]
+  marker: []
+  group: [neoplastic, genetic]
+learningObjectives:
+  - it: "Distinguere il tipo intestinale dal tipo diffuso di Lauren per architettura, precursori, incidenza e genetica."
+    en: "Distinguish the Lauren intestinal and diffuse types by architecture, precursors, incidence and genetics."
+  - it: "Descrivere l'aspetto macroscopico, compresa la linite plastica, e differenziare un'ulcera maligna da una benigna."
+    en: "Describe the gross appearance, including linitis plastica, and tell a malignant ulcer from a benign one."
+  - it: "Spiegare il ruolo di Helicobacter e della dieta nell'epidemiologia del carcinoma gastrico."
+    en: "Explain the role of Helicobacter and diet in the epidemiology of gastric carcinoma."
+  - it: "Riconoscere il carcinoma gastrico diffuso ereditario (CDH1) e il rischio associato di carcinoma lobulare della mammella."
+    en: "Recognize hereditary diffuse gastric cancer (CDH1) and the associated risk of lobular breast carcinoma."
+  - it: "Confrontare la prognosi del carcinoma precoce e di quello avanzato."
+    en: "Compare the prognosis of early and advanced cancer."
+prerequisites: [metaplasia, neoplasia-nomenclature]
+relations:
+  - type: complicationOf
+    target: helicobacter-pylori-gastritis
+    note:
+      it: "Il tipo intestinale segue la gastrite cronica legata a Helicobacter."
+      en: "The intestinal type follows Helicobacter-related chronic gastritis."
+  - type: differentialOf
+    target: peptic-ulcer-disease
+    note:
+      it: "Ulcera maligna grande con bordi rilevati e consistenti contro ulcera peptica benigna."
+      en: "A large malignant ulcer with raised firm edges versus a benign peptic ulcer."
+  - type: differentialOf
+    target: gastric-malt-lymphoma
+    note:
+      it: "Entrambi sono tumori maligni gastrici; il linfoma è di origine linfoide."
+      en: "Both are malignant gastric tumors; the lymphoma is of lymphoid origin."
+  - type: differentialOf
+    target: gastric-polyps
+    note:
+      it: "Polipi iperplastici e adenomi gastrici contro carcinoma."
+      en: "Hyperplastic polyps and gastric adenomas versus carcinoma."
+  - type: sharesMechanism
+    target: invasive-lobular-carcinoma
+    note:
+      it: "La perdita di E-caderina lega il carcinoma diffuso ereditario al carcinoma lobulare della mammella."
+      en: "Loss of E-cadherin links hereditary diffuse gastric cancer with lobular breast carcinoma."
+quickCheck:
+  - id: gastric-adenocarcinoma-q1
+    q:
+      it: "Che cosa descrive il termine intestinale nella classificazione di Lauren?"
+      en: "What does the term intestinal describe in the Lauren classification?"
+    a:
+      it: "L'architettura (ghiandole o papille), non il tipo cellulare."
+      en: "The architecture (glands or papillae), not the cell type."
+    kind: short
+  - id: gastric-adenocarcinoma-q2
+    q:
+      it: "Quale gene è mutato nel carcinoma gastrico diffuso ereditario e quale altro tumore è più frequente nei portatori?"
+      en: "Which gene is mutated in hereditary diffuse gastric cancer, and which other tumor is more frequent in carriers?"
+    a:
+      it: "CDH1 (E-caderina); il carcinoma lobulare della mammella."
+      en: "CDH1 (E-cadherin); lobular carcinoma of the breast."
+    kind: short
+  - id: gastric-adenocarcinoma-q3
+    q:
+      it: "Perché una superficie mucosa dall'aspetto normale non esclude un carcinoma gastrico?"
+      en: "Why does a normal-looking mucosal surface not rule out gastric carcinoma?"
+    a:
+      it: "Il tipo diffuso infiltra in profondità la parete sotto una superficie intatta e causa la linite plastica."
+      en: "The diffuse type infiltrates the wall deeply beneath an intact surface and causes linitis plastica."
+    kind: short
+  - id: gastric-adenocarcinoma-q4
+    q:
+      it: "Quale lesione precursore precede il tipo intestinale?"
+      en: "Which precursor lesion comes before the intestinal type?"
+    a:
+      it: "La gastrite cronica con metaplasia intestinale."
+      en: "Chronic gastritis with intestinal metaplasia."
+    kind: short
+  - id: gastric-adenocarcinoma-q5
+    q:
+      it: "Fin dove arriva il carcinoma gastrico precoce e quale sopravvivenza a cinque anni ha?"
+      en: "How far does early gastric cancer reach, and what is its five-year survival?"
+    a:
+      it: "È confinato a mucosa e sottomucosa; la sopravvivenza a cinque anni è dell'80-90%."
+      en: "It is confined to the mucosa and submucosa; five-year survival is 80% to 90%."
+    kind: short
+selfExplain:
+  - it: "Perché il calo di Helicobacter riduce soprattutto il tipo intestinale e non quello diffuso?"
+    en: "Why does the fall in Helicobacter mainly reduce the intestinal type and not the diffuse type?"
+  - it: "Perché la profondità di invasione cambia la sopravvivenza a cinque anni?"
+    en: "Why does depth of invasion change five-year survival?"
+examQuestions:
+  - it: "Come distingue il tipo intestinale dal tipo diffuso di carcinoma gastrico secondo Lauren?"
+    en: "How do you tell the intestinal type of gastric carcinoma from the diffuse type in the Lauren system?"
+    focus: [micro, pathogenesis]
+    level: 3
+  - it: "Mi parli del carcinoma gastrico precoce e di quello avanzato: come si definiscono e che prognosi hanno?"
+    en: "Tell me about early and advanced gastric cancer: how are they defined, and what is the prognosis?"
+    focus: [prognosis]
+    level: 1
+  - it: "Mi parli del carcinoma gastrico diffuso ereditario."
+    en: "Tell me about hereditary diffuse gastric cancer."
+    focus: [etiology, micro, prognosis]
+    level: 2
+  - it: "Che cosa vede in un carcinoma gastrico con linite plastica e perché la superficie della mucosa può ingannare?"
+    en: "What do you see in gastric carcinoma with linitis plastica, and why can the mucosal surface be misleading?"
+    focus: [gross, clinical]
+    level: 2
+  - it: "Come distingue un'ulcera gastrica maligna da una benigna?"
+    en: "How do you tell a malignant gastric ulcer from a benign one?"
+    focus: [gross, diagnosis, differential]
+    level: 3
+images:
+  - id: gastric-adenocarcinoma-gross-1
+    role: gross
+    pairWith: gastric-adenocarcinoma-micro-1
+  - id: gastric-adenocarcinoma-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+sources:
+  - source: rubin-8e
+    chapter: "19"
+    pages: "788-790"
+lastUpdated: 2026-11-14
+status: published

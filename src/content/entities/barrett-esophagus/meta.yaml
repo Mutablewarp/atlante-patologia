@@ -1,0 +1,121 @@
+id: barrett-esophagus
+module: o19
+tier: core
+kind: disease
+names:
+  it: "Esofago di Barrett"
+  en: "Barrett esophagus"
+  eponyms: ["Barrett"]
+  synonyms:
+    it: ["Metaplasia intestinale dell'esofago"]
+    en: ["Barrett metaplasia", "Intestinal metaplasia of the esophagus"]
+  abbreviations: []
+summary:
+  it: "Sostituzione dell'epitelio pavimentoso del basso esofago con epitelio colonnare contenente cellule caliciformi (metaplasia intestinale), conseguenza del reflusso cronico e lesione precancerosa dell'adenocarcinoma esofageo."
+  en: "Chronic reflux turns the squamous lining of the lower esophagus into columnar epithelium with goblet cells (intestinal metaplasia), a precursor of esophageal adenocarcinoma."
+lenses:
+  system: [gastrointestinal]
+  process: [chronic-inflammation, cellular-adaptation, neoplasia]
+  pattern: [metaplasia, dysplasia]
+  presentation: [incidental-finding]
+  marker: []
+  group: [inflammatory, neoplastic]
+learningObjectives:
+  - it: "Definire l'esofago di Barrett come metaplasia intestinale con cellule caliciformi in un esofago cronicamente esposto a reflusso."
+    en: "Define Barrett esophagus as intestinal metaplasia with goblet cells in a chronically refluxing esophagus."
+  - it: "Descrivere l'epitelio specializzato al microscopio e l'aspetto rosa salmone all'endoscopia."
+    en: "Describe the specialized epithelium under the microscope and the salmon-pink look at endoscopy."
+  - it: "Spiegare la sequenza metaplasia, displasia, adenocarcinoma e i fattori che ne modulano il rischio."
+    en: "Explain the sequence metaplasia, dysplasia, adenocarcinoma and the factors that modulate the risk."
+  - it: "Indicare sorveglianza e trattamento in base al grado di displasia."
+    en: "State surveillance and treatment according to the grade of dysplasia."
+prerequisites: [metaplasia]
+relations:
+  - type: sharesMechanism
+    target: metaplasia
+    note:
+      it: "Esempio di metaplasia: un epitelio maturo ne sostituisce un altro."
+      en: "An example of metaplasia: one mature epithelium replaces another."
+  - type: mimics
+    target: reflux-esophagitis
+    note:
+      it: "Stesso contesto di reflusso, ma l'epitelio resta pavimentoso."
+      en: "Same reflux setting, but the lining stays squamous."
+  - type: differentialOf
+    target: eosinophilic-esophagitis
+    note:
+      it: "Eosinofili intraepiteliali in numero elevato contro metaplasia con cellule caliciformi."
+      en: "Many intraepithelial eosinophils versus metaplasia with goblet cells."
+  - type: prerequisiteOf
+    target: esophageal-carcinoma
+    note:
+      it: "La maggior parte degli adenocarcinomi esofagei nasce da displasia in un esofago di Barrett."
+      en: "Most esophageal adenocarcinomas arise from dysplasia in Barrett esophagus."
+quickCheck:
+  - id: barrett-esophagus-q1
+    q:
+      it: "Quale reperto istologico è indispensabile per la diagnosi di esofago di Barrett?"
+      en: "Which histologic finding is essential for the diagnosis of Barrett esophagus?"
+    a:
+      it: "Epitelio colonnare specializzato con cellule caliciformi ben formate, al posto dell'epitelio pavimentoso, su biopsia endoscopica."
+      en: "Goblet cells inside columnar epithelium that has replaced squamous epithelium, seen on endoscopic biopsy."
+    kind: short
+  - id: barrett-esophagus-q2
+    q:
+      it: "Da che cosa dipende il rischio di adenocarcinoma?"
+      en: "What does the risk of adenocarcinoma depend on?"
+    a:
+      it: "Dalla lunghezza del tratto di esofago interessato e dal grado di displasia."
+      en: "On how long the Barrett segment is and how high the dysplasia grade is."
+    kind: short
+  - id: barrett-esophagus-q3
+    q:
+      it: "Come si segue un paziente le cui biopsie non mostrano displasia, e a che cosa serve il controllo?"
+      en: "How is a patient whose biopsies show no dysplasia followed, and what is the follow-up for?"
+    a:
+      it: "L'endoscopia si ripete ogni 3-5 anni, per trovare presto la displasia e prevenire il cancro."
+      en: "Endoscopy is repeated every 3 to 5 years, to find dysplasia early so that cancer can be prevented."
+    kind: short
+selfExplain:
+  - it: "Perché in un paziente senza displasia si ripete l'endoscopia con biopsie a intervalli regolari?"
+    en: "Why is endoscopy with biopsies repeated at regular intervals in a patient without dysplasia?"
+  - it: "Perché la lunghezza del tratto e il grado di displasia cambiano il rischio e la gestione?"
+    en: "Why do segment length and dysplasia grade change the risk and the management?"
+  - it: "Perché una biopsia è necessaria anche se l'endoscopia mostra una mucosa rosa salmone?"
+    en: "Why is a biopsy needed even when endoscopy shows salmon-pink mucosa?"
+examQuestions:
+  - it: "Mi parli dell'esofago di Barrett: che cosa succede alla mucosa e perché?"
+    en: "Tell me about Barrett esophagus: what happens to the lining, and why?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Che cosa vede al microscopio in un esofago di Barrett?"
+    en: "What do you see under the microscope in Barrett esophagus?"
+    focus: [micro]
+    level: 1
+  - it: "Come si arriva alla diagnosi e come si segue un paziente senza displasia?"
+    en: "How is the diagnosis made, and how is a patient without dysplasia followed?"
+    focus: [diagnosis]
+    level: 2
+  - it: "Come si tratta la displasia di basso grado e come quella di alto grado?"
+    en: "How is low-grade dysplasia treated, and how is high-grade dysplasia treated?"
+    focus: [prognosis]
+    level: 2
+  - it: "Perché il rischio di adenocarcinoma è un problema, e da che cosa dipende?"
+    en: "Why is the risk of adenocarcinoma a concern, and what does it depend on?"
+    focus: [pathogenesis, prognosis]
+    level: 2
+  - it: "Come distingue l'esofago di Barrett dall'esofagite da reflusso?"
+    en: "How do you tell Barrett esophagus from reflux esophagitis?"
+    focus: [differential, traps]
+    level: 3
+images:
+  - id: barrett-esophagus-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "19"
+    pages: "771, 776"
+lastUpdated: 2026-11-14
+status: published

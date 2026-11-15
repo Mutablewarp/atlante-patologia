@@ -1,0 +1,121 @@
+id: small-cell-lung-carcinoma
+module: o18
+tier: core
+kind: disease
+editionDependent: false
+status: published
+lastUpdated: 2026-11-14
+reviewStatus: ai-generated-unreviewed
+names:
+  it: "Carcinoma polmonare a piccole cellule"
+  en: "Small cell lung carcinoma"
+  eponyms: []
+  synonyms:
+    it: ["Carcinoma a cellule d'avena"]
+    en: ["Oat cell carcinoma"]
+  abbreviations: ["SCLC"]
+summary:
+  it: "Tumore epiteliale polmonare altamente maligno con caratteri neuroendocrini, legato al fumo di sigaretta, che cresce e metastatizza rapidamente ed è inizialmente molto sensibile alla chemioterapia."
+  en: "A highly malignant epithelial lung tumor with neuroendocrine features, tied to cigarette smoking, that grows and metastasizes rapidly and is at first very sensitive to chemotherapy."
+lenses:
+  system: [respiratory]
+  process: [neoplasia]
+  pattern: []
+  presentation: [mass-lesion]
+  marker: [ihc]
+  group: [neoplastic, toxic-environmental]
+learningObjectives:
+  - it: "Descrivere l'aspetto microscopico del carcinoma a piccole cellule: cellule piccole con citoplasma scarso, cromatina finemente granulare, nucleoli poco evidenti, mitosi numerose e necrosi."
+    en: "Describe the microscopic picture of small cell carcinoma: small cells with scant cytoplasm, finely granular chromatin, inconspicuous nucleoli, many mitoses and necrosis."
+  - it: "Indicare i marcatori neuroendocrini usati per confermare la diagnosi."
+    en: "Name the neuroendocrine markers used to support the diagnosis."
+  - it: "Elencare le sindromi paraneoplastiche associate al tumore."
+    en: "List the paraneoplastic syndromes associated with the tumor."
+  - it: "Spiegare perché la maggior parte dei pazienti arriva in fase avanzata."
+    en: "Explain why most patients are first seen at an advanced stage."
+  - it: "Distinguere il carcinoma a piccole cellule dal carcinoma neuroendocrino a grandi cellule e dagli altri carcinomi polmonari."
+    en: "Distinguish small cell carcinoma from large cell neuroendocrine carcinoma and from other lung carcinomas."
+prerequisites: []
+relations:
+  - type: sharesMechanism
+    target: paraneoplastic-syndromes
+    note:
+      it: "Il tumore causa spesso sindromi paraneoplastiche."
+      en: "The tumor often causes paraneoplastic syndromes."
+  - type: differentialOf
+    target: lung-adenocarcinoma
+    note:
+      it: "Ghiandole e TTF-1 positività contro cellule piccole e marcatori neuroendocrini."
+      en: "Glands and TTF-1 positivity versus small cells and neuroendocrine markers."
+  - type: differentialOf
+    target: lung-squamous-cell-carcinoma
+    note:
+      it: "Positività per p40 o p63 contro marcatori neuroendocrini."
+      en: "p40 or p63 positivity versus neuroendocrine markers."
+  - type: sameLesionOtherOrgan
+    target: lung-cancer-overview
+    note:
+      it: "Uno dei principali tipi istologici del carcinoma polmonare."
+      en: "One of the main histologic types of lung carcinoma."
+quickCheck:
+  - id: small-cell-lung-carcinoma-q1
+    q:
+      it: "Quali marcatori neuroendocrini si cercano nel carcinoma a piccole cellule?"
+      en: "Which neuroendocrine markers are sought in small cell carcinoma?"
+    a:
+      it: "CD56, cromogranina e sinaptofisina."
+      en: "CD56, chromogranin and synaptophysin."
+    kind: short
+  - id: small-cell-lung-carcinoma-q2
+    q:
+      it: "Perché la maggior parte dei pazienti è in stadio avanzato alla prima visita?"
+      en: "Why are most patients at an advanced stage when first seen?"
+    a:
+      it: "Perché il tumore cresce e metastatizza rapidamente."
+      en: "Because the tumor grows and metastasizes rapidly."
+    kind: short
+  - id: small-cell-lung-carcinoma-q3
+    q:
+      it: "Come viene trattato un carcinoma a piccole cellule combinato con una componente non a piccole cellule?"
+      en: "How is a small cell carcinoma combined with a non-small cell component treated?"
+    a:
+      it: "Come un carcinoma a piccole cellule, perché il comportamento segue la componente a piccole cellule."
+      en: "As a small cell carcinoma, because behavior follows the small cell component."
+    kind: short
+selfExplain:
+  - it: "Perché un tumore con una componente non a piccole cellule viene trattato come carcinoma a piccole cellule?"
+    en: "Why is a tumor with a non-small cell component treated as a small cell carcinoma?"
+  - it: "Perché la maggior parte dei pazienti con carcinoma a piccole cellule si presenta in fase avanzata?"
+    en: "Why do most patients with small cell carcinoma present at an advanced stage?"
+examQuestions:
+  - it: "Mi parli del carcinoma polmonare a piccole cellule: che tipo di tumore è e quale fattore di rischio lo caratterizza?"
+    en: "Tell me about small cell lung carcinoma: what kind of tumor is it, and which risk factor marks it?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Che cosa vede al microscopio in un carcinoma a piccole cellule?"
+    en: "What do you see under the microscope in small cell carcinoma?"
+    focus: [micro]
+    level: 1
+  - it: "Quali colorazioni immunoistochimiche userebbe per confermare un carcinoma a piccole cellule?"
+    en: "Which immunostains would you use to support a diagnosis of small cell carcinoma?"
+    focus: [ancillary]
+    level: 2
+  - it: "Quali sindromi paraneoplastiche si associano a questo tumore?"
+    en: "Which paraneoplastic syndromes go with this tumor?"
+    focus: [clinical, high-yield]
+    level: 2
+  - it: "Perché la maggior parte dei pazienti arriva in fase avanzata?"
+    en: "Why do most patients arrive at an advanced stage?"
+    focus: [pathogenesis, clinical]
+    level: 2
+  - it: "Come distingue il carcinoma a piccole cellule dal carcinoma neuroendocrino a grandi cellule e dagli altri carcinomi polmonari?"
+    en: "How do you tell small cell carcinoma from large cell neuroendocrine carcinoma and from the other lung carcinomas?"
+    focus: [differential, ancillary]
+    level: 3
+images:
+  - id: small-cell-lung-carcinoma-micro-1
+    role: micro
+sources:
+  - source: rubin-8e
+    chapter: "18"
+    pages: "756, 758"

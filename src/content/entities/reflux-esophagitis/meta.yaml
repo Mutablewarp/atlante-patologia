@@ -1,0 +1,122 @@
+id: reflux-esophagitis
+module: o19
+tier: core
+kind: disease
+names:
+  it: "Esofagite da reflusso (malattia da reflusso gastroesofageo)"
+  en: "Reflux esophagitis (GERD)"
+  eponyms: []
+  synonyms:
+    it: ["Malattia da reflusso gastroesofageo", "MRGE"]
+    en: ["Gastroesophageal reflux disease"]
+  abbreviations: [GERD]
+summary:
+  it: "Lesione della mucosa esofagea causata dal reflusso di contenuto gastrico, con iperplasia basale, papille allungate e infiltrato infiammatorio, che può complicarsi con ulcera, stenosi ed esofago di Barrett."
+  en: "Injury of the esophageal lining from reflux of gastric contents, with basal hyperplasia, elongated papillae and inflammation, which can be complicated by ulcer, stricture and Barrett esophagus."
+lenses:
+  system: [gastrointestinal]
+  process: [chronic-inflammation, cellular-adaptation]
+  pattern: [hyperplasia, metaplasia]
+  presentation: [chest-pain]
+  marker: []
+  group: [inflammatory]
+learningObjectives:
+  - it: "Spiegare come l'incompetenza dello sfintere esofageo inferiore e l'ernia iatale scorrevole portano al reflusso."
+    en: "Explain how an incompetent lower esophageal sphincter and sliding hiatal hernia lead to reflux."
+  - it: "Descrivere i reperti istologici: iperplasia basale, papille allungate, infiltrato di linfociti, neutrofili ed eosinofili."
+    en: "Describe the histology: basal hyperplasia, elongated papillae, and infiltrating lymphocytes, neutrophils and eosinophils."
+  - it: "Riconoscere le complicanze: erosione, ulcera, stenosi."
+    en: "Recognize the complications: erosion, ulcer, stricture."
+  - it: "Collegare il reflusso cronico all'esofago di Barrett e all'adenocarcinoma."
+    en: "Link chronic reflux to Barrett esophagus and adenocarcinoma."
+  - it: "Distinguere l'esofagite da reflusso dall'esofagite eosinofila."
+    en: "Distinguish reflux esophagitis from eosinophilic esophagitis."
+prerequisites: []
+relations:
+  - type: causes
+    target: barrett-esophagus
+    note:
+      it: "Il reflusso cronico porta alla metaplasia intestinale di Barrett."
+      en: "Chronic reflux leads to Barrett intestinal metaplasia."
+  - type: differentialOf
+    target: eosinophilic-esophagitis
+    note:
+      it: "Anche il reflusso può dare eosinofili, ma regrediscono con la terapia antireflusso."
+      en: "Reflux can also show eosinophils, but they fade with antireflux therapy."
+  - type: sharesMechanism
+    target: systemic-sclerosis
+    note:
+      it: "La sclerosi sistemica altera lo sfintere esofageo inferiore e favorisce il reflusso."
+      en: "Systemic sclerosis impairs the lower esophageal sphincter and favors reflux."
+quickCheck:
+  - id: reflux-esophagitis-q1
+    q:
+      it: "Qual è la principale barriera contro il reflusso gastroesofageo?"
+      en: "What is the main barrier against gastroesophageal reflux?"
+    a:
+      it: "Lo sfintere esofageo inferiore."
+      en: "The lower esophageal sphincter."
+    kind: short
+  - id: reflux-esophagitis-q2
+    q:
+      it: "Quali tre alterazioni istologiche caratterizzano l'esofagite da reflusso?"
+      en: "Which three histologic changes characterize reflux esophagitis?"
+    a:
+      it: "Iperplasia dello strato basale, papille allungate che si avvicinano alla superficie, ed eosinofili (con linfociti e neutrofili) nell'epitelio."
+      en: "Basal layer hyperplasia, elongated papillae approaching the surface, and eosinophils (with lymphocytes and neutrophils) in the epithelium."
+    kind: short
+  - id: reflux-esophagitis-q3
+    q:
+      it: "Come può un'ulcera persistente da reflusso portare a una stenosi?"
+      en: "How can a persistent reflux ulcer lead to a stricture?"
+    a:
+      it: "Se il danno supera la lamina propria, la fibrosi reattiva restringe il lume."
+      en: "If damage goes deeper than the lamina propria, reactive fibrosis narrows the lumen."
+    kind: short
+selfExplain:
+  - it: "Perché una grande ernia paraesofagea può ridurre il reflusso, mentre l'ernia scorrevole lo favorisce?"
+    en: "Why can a large paraesophageal hernia reduce reflux while a sliding hernia is associated with it?"
+  - it: "Perché la presenza di eosinofili non basta per diagnosticare un'esofagite eosinofila?"
+    en: "Why are eosinophils alone not enough to diagnose eosinophilic esophagitis?"
+chain:
+  - pathology:
+      it: "Reflusso cronico con metaplasia intestinale"
+      en: "Chronic reflux with intestinal metaplasia"
+    sign:
+      it: "Pirosi, talvolta assente"
+      en: "Heartburn, sometimes absent"
+    lab:
+      it: "Endoscopia con biopsia: cellule caliciformi"
+      en: "Endoscopy with biopsy: goblet cells"
+examQuestions:
+  - it: "Mi parli dell'esofagite da reflusso: quale ruolo hanno lo sfintere esofageo inferiore e l'ernia iatale?"
+    en: "Tell me about reflux esophagitis: what roles do the lower esophageal sphincter and a hiatal hernia play?"
+    focus: [etiology, pathogenesis]
+    level: 1
+  - it: "Che cosa vede al microscopio in una biopsia di esofagite da reflusso?"
+    en: "What do you see under the microscope in a biopsy of reflux esophagitis?"
+    focus: [micro, high-yield]
+    level: 1
+  - it: "Perché un'ulcera persistente da reflusso può portare a una stenosi?"
+    en: "Why can a persistent reflux ulcer lead to a stricture?"
+    focus: [pathogenesis, gross]
+    level: 2
+  - it: "Che legame c'è tra reflusso cronico ed esofago di Barrett, e perché è importante?"
+    en: "How is chronic reflux linked to Barrett esophagus, and why does it matter?"
+    focus: [pathogenesis, prognosis]
+    level: 2
+  - it: "Come distingue l'esofagite da reflusso dall'esofagite eosinofila, se in biopsia ci sono eosinofili?"
+    en: "How do you tell reflux esophagitis from eosinophilic esophagitis when the biopsy shows eosinophils?"
+    focus: [diagnosis, differential, traps]
+    level: 3
+images:
+  - id: reflux-esophagitis-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "19"
+    pages: "769-771"
+lastUpdated: 2026-11-14
+status: published

@@ -1,0 +1,474 @@
+entity: malignant-mesothelioma
+claims:
+- claimId: malignant-mesothelioma-c001
+  section: definition
+  statement: "Malignant mesothelioma is a tumor that arises from mesothelial cells"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c002
+  section: definition
+  statement: "The tunica vaginalis of the testis, the pericardium and the peritoneum are other sites, but the pleura is involved most often"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c003
+  section: definition
+  statement: "About a quarter of mesotheliomas start in the peritoneum"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "837" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c004
+  section: definition
+  statement: "The United States sees roughly 2,000 new cases of malignant mesothelioma every year"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c005
+  section: etiology
+  statement: "Asbestos exposure lies behind most cases of malignant mesothelioma"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c006
+  section: etiology
+  statement: "In South Africa, Britain and the US, 80% of patients give a history of asbestos exposure"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c007
+  section: etiology
+  statement: "The tumor typically takes a long time to appear, with an average latency of 30 to 40 years"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c008
+  section: etiology
+  statement: "Asbestos exposure is associated with most peritoneal mesotheliomas, as it is with pleural ones"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "837" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c009
+  section: etiology
+  statement: "In contrast to pleural tumors, women with peritoneal mesothelioma seldom have an asbestos exposure"
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1072" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c010
+  section: etiology
+  statement: "Some peritoneal tumors contained up to 2 million asbestos fibers per gram of wet tissue"
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1072" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c011
+  section: gross
+  statement: "The pleural rind is the distribution of tumor along the fissures and interlobar septa, with the lung often encased and compressed"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c012
+  section: gross
+  statement: "The tumor usually grows into only the outer rim of lung that touches it"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c013
+  section: gross
+  statement: "Pleural mesothelioma tends not to involve lymph nodes"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c014
+  section: gross
+  statement: "Within the abdomen, peritoneal mesothelioma extends widely over the serosa of pelvic and abdominal organs and the peritoneum becomes thicker"
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1072" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c015
+  section: micro
+  statement: "In the classic biphasic form, epithelial and sarcomatous areas coexist in a single tumor"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c016
+  section: micro
+  statement: "Because the epithelial component builds glands and tubules, it can be mistaken for adenocarcinoma"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c017
+  section: micro
+  statement: "The sarcomatous component resembles fibrosarcoma and consists of spindle cells arranged in sheets"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c018
+  section: micro
+  statement: "A mesothelioma may contain only the epithelial or only the sarcomatous component"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c019
+  section: micro
+  statement: "Among single-component tumors, the purely sarcomatous one is the rarer"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c020
+  section: micro
+  statement: "Separating adenocarcinoma from a mesothelioma made only of epithelial cells may be difficult"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c021
+  section: micro
+  statement: "The sarcomatoid type is rare in diffuse peritoneal mesothelioma, whose growth pattern runs from tubulopapillary to solid"
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1072" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c022
+  section: micro
+  statement: "Cells of the epithelial variant of peritoneal mesothelioma have plenty of cytoplasm and a cuboidal or polygonal shape"
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1072" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c023
+  section: ancillary
+  statement: "Cytokeratin staining cannot separate mesothelioma from adenocarcinoma because both are positive"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c024
+  section: ancillary
+  statement: "Mesothelioma is usually positive for D2-40 (podoplanin), WT-1 and calretinin, which adenocarcinoma usually lacks"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c025
+  section: ancillary
+  statement: "Adenocarcinoma usually, but not always, expresses CEA, Ber-EP4, B72.3, Leu-M1 or claudin-4, none of which mesothelioma expresses"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c026
+  section: ancillary
+  statement: "Absence of mucin is a criterion supporting a diagnosis of mesothelioma"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c027
+  section: ancillary
+  statement: "A positive Alcian blue stain reflects hyaluronic acid in the tumor and supports the diagnosis"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c028
+  section: ancillary
+  statement: "Electron microscopy of mesothelioma shows long, slender microvilli, which supports the diagnosis"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c029
+  section: ancillary
+  statement: "In the peritoneum, HBME-1, CK5/6, calretinin and thrombomodulin are the markers that identify the tumor as mesothelioma"
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1072" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c030
+  section: clinical
+  statement: "On average, mesothelioma patients are 60 years old"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c031
+  section: clinical
+  statement: "Patients often come to attention with pleural fluid or a pleural mass, together with chest pain, malaise and weight loss"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c032
+  section: clinical
+  statement: "Pleural mesothelioma stays mostly within the chest, where it compresses and invades key structures"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c033
+  section: clinical
+  statement: "Metastases can reach adrenals, liver, bones and peritoneum outside the chest, and lung parenchyma and mediastinal lymph nodes inside it"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c034
+  section: clinical
+  statement: "Peritoneal mesothelioma typically affects middle-aged or postmenopausal patients, with vague symptoms including ascites and weight loss"
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1072" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c035
+  section: diagnosis
+  statement: "Telling mesothelioma apart from adenocarcinoma depends on immunohistochemistry"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c036
+  section: diagnosis
+  statement: "Because treatment and survival differ, serous adenocarcinoma, including ovarian metastasis, must be distinguished from peritoneal mesothelioma"
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1072" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c037
+  section: prognosis
+  statement: "Mesothelioma has a poor prognosis, and treatment is largely ineffective"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c038
+  section: prognosis
+  statement: "Only a few patients are still alive 18 months after diagnosis"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c039
+  section: prognosis
+  statement: "The diffuse peritoneal form of malignant mesothelioma is described as invariably fatal"
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1072" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c040
+  section: prognosis
+  statement: "There is no effective therapy for diffuse peritoneal mesothelioma"
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1072" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c041
+  section: differential
+  statement: "Lung adenocarcinoma is typically negative for calretinin, WT-1 and D2-40, although its glands can resemble epithelial mesothelioma"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c042
+  section: differential
+  statement: "Progesterone receptor, estrogen receptor, CEA and CA-125 are the markers of ovarian epithelial tumors"
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1072" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c043
+  section: differential
+  statement: "CD34 and Bcl-2 immunostaining is positive in most solitary fibrous tumors of the pleura"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c044
+  section: differential
+  statement: "In most solitary fibrous tumors, a NAB2-STAT6 gene fusion is the reason for positive STAT6 immunostaining"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c045
+  section: differential
+  statement: "Well-differentiated papillary mesothelioma is benign, usually found by chance at surgery, and rare in women of childbearing age"
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1072" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c046
+  section: differential
+  statement: "The thick papillae of well-differentiated papillary mesothelioma are lined by one layer of small cuboidal cells without atypia"
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1072" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c047
+  section: high-yield
+  statement: "Asbestos exposure is the usual setting of mesothelioma, with a latency averaging 30 to 40 years"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c048
+  section: high-yield
+  statement: "The pleural rind is tumor encasing the lung and running along the fissures"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c049
+  section: high-yield
+  statement: "A biphasic mesothelioma contains epithelial and sarcomatous elements"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c050
+  section: high-yield
+  statement: "Calretinin, WT-1 and D2-40 favor mesothelioma, while CEA, Ber-EP4, B72.3, Leu-M1 and claudin-4 favor adenocarcinoma"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c051
+  section: high-yield
+  statement: "Prognosis is poor and few patients survive longer than 18 months"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c052
+  section: traps
+  statement: "Since both mesothelioma and adenocarcinoma stain for cytokeratin, a positive result does not exclude mesothelioma"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c053
+  section: traps
+  statement: "Mesothelioma can also arise in the tunica vaginalis, pericardium and peritoneum, although the pleura is the commonest site"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c054
+  section: traps
+  statement: "A history of asbestos exposure is given by 80% of patients in the US, Britain and South Africa, so not by all"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c055
+  section: traps
+  statement: "Few women with a peritoneal tumor have been exposed to asbestos"
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1072" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c056
+  section: traps
+  statement: "Although pleural mesothelioma surrounds the lung, it generally enters only the lung's edge next to the tumor"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c057
+  section: traps
+  statement: "Well-differentiated papillary mesothelioma is a benign tumor"
+  sourceRef: { source: rubin-8e, chapter: "24", pages: "1072" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c058
+  section: mnemonics
+  statement: "Calretinin, WT-1 and D2-40 are the positive markers to remember for mesothelioma"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14
+- claimId: malignant-mesothelioma-c059
+  section: mnemonics
+  statement: "Adenocarcinoma often expresses CEA, Leu-M1, B72.3, Ber-EP4 and claudin-4, which mesothelioma lacks"
+  sourceRef: { source: rubin-8e, chapter: "18", pages: "765" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-14

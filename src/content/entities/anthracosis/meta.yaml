@@ -1,0 +1,109 @@
+id: anthracosis
+module: o18
+tier: core
+kind: disease
+names:
+  it: "Antracosi e pneumoconiosi dei minatori di carbone"
+  en: "Anthracosis and coal workers' pneumoconiosis"
+  eponyms: ["Caplan syndrome"]
+  synonyms:
+    it: ["Pneumoconiosi da carbone", "Antracosilicosi"]
+    en: ["Coal workers' pneumoconiosis", "Anthracosilicosis"]
+  abbreviations: ["CWP", "PMF"]
+summary:
+  it: "Malattia polmonare da inalazione di polvere di carbone: l'antracosi semplice è un accumulo innocuo di carbonio nei macrofagi, mentre la fibrosi compare quando la polvere contiene silice, fino alla fibrosi massiva progressiva."
+  en: "Lung disease from inhaling coal dust: simple anthracosis is a harmless carbon deposit in macrophages, while fibrosis appears when the dust contains silica, up to progressive massive fibrosis."
+lenses:
+  system: [respiratory]
+  process: [intracellular-accumulation, repair-fibrosis]
+  pattern: [pigment-deposits]
+  presentation: []
+  marker: []
+  group: [toxic-environmental]
+learningObjectives:
+  - it: "Descrivere il pigmento antracotico e i macrofagi carichi di carbonio nelle macule da polvere di carbone."
+    en: "Describe anthracotic pigment and the carbon-laden macrophages of coal-dust macules."
+  - it: "Distinguere macule e noduli da polvere di carbone e spiegare perché i noduli indicano la presenza di silice."
+    en: "Distinguish coal-dust macules from nodules and explain why nodules point to silica."
+  - it: "Definire la pneumoconiosi complicata (fibrosi massiva progressiva) rispetto a quella semplice."
+    en: "Define complicated CWP (progressive massive fibrosis) versus simple CWP."
+  - it: "Riconoscere la sindrome di Caplan e distinguere i noduli di Caplan dai noduli reumatoidi."
+    en: "Recognize Caplan syndrome and tell Caplan nodules from rheumatoid nodules."
+prerequisites: [pigment-accumulation]
+relations:
+  - type: differentialOf
+    target: silicosis
+    note:
+      it: "Noduli a spirale di collagene con silicati birifrangenti, invece di macrofagi carichi di carbone."
+      en: "Whorled collagen nodules with birefringent silicates, rather than carbon-laden macrophages."
+  - type: differentialOf
+    target: asbestos-related-disease
+    note:
+      it: "Fibrosi interstiziale diffusa da fibre di asbesto."
+      en: "Diffuse interstitial fibrosis from asbestos fibers."
+quickCheck:
+  - id: anthracosis-q1
+    q:
+      it: "Perché il carbonio amorfo da solo non causa fibrosi, mentre la polvere di carbone mista a silice sì?"
+      en: "Why does amorphous carbon alone not cause fibrosis, while coal dust mixed with silica does?"
+    a:
+      it: "Il carbonio non uccide i macrofagi alveolari ed è una polvere di disturbo; la silice è fortemente fibrogena."
+      en: "Carbon does not kill alveolar macrophages and is a nuisance dust; silica is strongly fibrogenic."
+    kind: short
+  - id: anthracosis-q2
+    q:
+      it: "Quale lesione definisce la pneumoconiosi complicata dei minatori di carbone?"
+      en: "Which lesion defines complicated coal workers' pneumoconiosis?"
+    a:
+      it: "Una lesione di 2,0 cm o più, su uno sfondo di pneumoconiosi semplice."
+      en: "A lesion of 2.0 cm or more, on a background of simple CWP."
+    kind: short
+  - id: anthracosis-q3
+    q:
+      it: "Che cos'è la sindrome di Caplan e in chi è stata descritta per la prima volta?"
+      en: "What is Caplan syndrome and in whom was it first described?"
+    a:
+      it: "Noduli reumatoidi polmonari, descritti per la prima volta in minatori di carbone con artrite reumatoide; oggi anche con altre pneumoconiosi."
+      en: "Pulmonary rheumatoid nodules, first described in coal miners with rheumatoid arthritis; now also with other pneumoconioses."
+    kind: short
+selfExplain:
+  - it: "Perché un nodulo con stroma fibroso da polvere di carbone fa pensare alla silice?"
+    en: "Why does a coal-dust nodule with a fibrotic stroma suggest silica?"
+  - it: "Perché in un minatore con grave ostruzione delle vie aeree si pensa prima al fumo che alla pneumoconiosi semplice?"
+    en: "Why, in a miner with severe airflow obstruction, do you think of smoking before simple pneumoconiosis?"
+chain: []
+examQuestions:
+  - it: "Mi parli dell'antracosi: che cos'è e che cosa si vede nei macrofagi alveolari?"
+    en: "Tell me about anthracosis: what is it and what is seen in the alveolar macrophages?"
+    focus: [definition, pathogenesis]
+    level: 1
+  - it: "Che cosa vede al microscopio in una macula e in un nodulo da polvere di carbone?"
+    en: "What do you see under the microscope in a coal-dust macule and in a nodule?"
+    focus: [gross, micro]
+    level: 1
+  - it: "Perché il carbonio da solo è innocuo, mentre un nodulo con stroma fibroso fa pensare alla silice?"
+    en: "Why is carbon alone harmless, while a nodule with a fibrotic stroma suggests silica?"
+    focus: [etiology, pathogenesis]
+    level: 2
+  - it: "Mi parli della fibrosi massiva progressiva: come si definisce e su quale sfondo compare?"
+    en: "Tell me about progressive massive fibrosis: how is it defined and on what background does it arise?"
+    focus: [definition, diagnosis, pathogenesis]
+    level: 2
+  - it: "Che cos'è la sindrome di Caplan e come distingue un nodulo di Caplan da un nodulo reumatoide ordinario?"
+    en: "What is Caplan syndrome, and how do you tell a Caplan nodule from an ordinary rheumatoid nodule?"
+    focus: [clinical, micro, differential]
+    level: 3
+images:
+  - id: anthracosis-gross-1
+    role: gross
+    pairWith: anthracosis-micro-1
+  - id: anthracosis-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "18"
+    pages: "732-733"
+lastUpdated: 2026-11-14
+status: published

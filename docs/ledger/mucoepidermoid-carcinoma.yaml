@@ -1,0 +1,314 @@
+entity: mucoepidermoid-carcinoma
+claims:
+- claimId: mucoepidermoid-carcinoma-c001
+  section: definition
+  statement: "This malignant salivary gland tumor grows from duct lining cells, which are prone to metaplasia"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c002
+  section: definition
+  statement: "Among major salivary gland tumors, 5% to 10% are mucoepidermoid carcinomas"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c003
+  section: definition
+  statement: "Among minor salivary gland tumors, the share is about 10%"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c004
+  section: definition
+  statement: "The parotid is the origin of more than half of the major-gland cases"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c005
+  section: definition
+  statement: "Within the minor glands, the tumor mostly develops in the palate"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c006
+  section: definition
+  statement: "Adolescents can be affected, but most patients are adult women"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c007
+  section: pathogenesis
+  statement: "More than 60% of tumors carry a t(11;19)(q21-22;p13) translocation"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c008
+  section: pathogenesis
+  statement: "The result of the translocation is the MECT1-MAML2 fusion gene"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c009
+  section: pathogenesis
+  statement: "MAML2 is a Notch coactivator; the fusion places its transactivation domain next to the cAMP-responsive domain of MECT1, another coactivator"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c010
+  section: pathogenesis
+  statement: "Notch signaling is presumably dysregulated in the tumor cells as a consequence"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c011
+  section: micro
+  statement: "The name reflects the mixture of intermediate cells, epidermoid cells and mucus-secreting cells (mucocytes)"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322-1323" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c012
+  section: micro
+  statement: "Mucocytes have an off-center nucleus and clear cytoplasm, and they gather in groups"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1323" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c013
+  section: micro
+  statement: "Keratin and intercellular bridges are absent from epidermoid cells, which merely look squamous"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1323" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c014
+  section: micro
+  statement: "Compared with epidermoid cells, intermediate cells are smaller"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1323" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c015
+  section: micro
+  statement: "In low-grade tumors, cystic, ductal and solid areas each contain all three cell types"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c016
+  section: micro
+  statement: "At intermediate grade growth is more solid, and the share of mucus-secreting cells falls as epidermoid and intermediate cells become more numerous"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c017
+  section: micro
+  statement: "In high-grade tumors only occasional glandular cells remain, and the minimally differentiated cells vary widely in shape"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c018
+  section: ancillary
+  statement: "The mix of the three cell types and the solidity of growth track the tumor grade (low grade is mucus-rich and cystic, higher grades more solid with fewer mucus cells); the page does not name H&E or a formal grading rule"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c019
+  section: ancillary
+  statement: "The characteristic molecular change is the MECT1-MAML2 fusion produced by t(11;19)"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c020
+  section: clinical
+  statement: "A firm, painless mass that enlarges slowly is the presentation"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c021
+  section: prognosis
+  statement: "Metastasis can occur even when the tumor is low grade"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1323" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c022
+  section: prognosis
+  statement: "Whatever the primary site, over 90% of patients are alive at 5 years"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1323" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c023
+  section: prognosis
+  statement: "High-grade tumors do far worse, with 5-year survival of 20% to 40%"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1323" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c024
+  section: prognosis
+  statement: "Grade determines how the tumor is treated"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1323" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c025
+  section: prognosis
+  statement: "For low-grade tumors, surgery is the treatment"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1323" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c026
+  section: prognosis
+  statement: "For high-grade tumors, surgery must be combined with radiation therapy"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1323" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c027
+  section: differential
+  statement: "Adenoid cystic carcinoma grows slowly but invades locally, and recurrence after resection is frequent"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1323" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c028
+  section: differential
+  statement: "Adenoid cystic carcinoma carries a t(6;9) translocation fusing the MYB proto-oncogene with NFIB"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1323" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c029
+  section: differential
+  statement: "Pleomorphic adenoma is marked by a chondromyxoid stroma that contains myoepithelial cells and glandular elements. The packet does not say it is benign, so that clause is dropped"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c030
+  section: differential
+  statement: "In Warthin tumor, a benign parotid tumor, cysts lined by oncocytes are surrounded by dense lymphoid tissue"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c031
+  section: high-yield
+  statement: "The tumor is built from intermediate, epidermoid and mucus-secreting cells"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322-1323" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c032
+  section: high-yield
+  statement: "Over 60% of cases carry the MECT1-MAML2 fusion created by t(11;19)"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c033
+  section: high-yield
+  statement: "Rising grade shifts the histology from mucus-rich, cystic growth to solid, pleomorphic growth with fewer glandular cells"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c034
+  section: high-yield
+  statement: "Surgery treats low-grade tumors; high-grade tumors also need radiation"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1323" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c035
+  section: high-yield
+  statement: "The parotid is the main major-gland site and the palate the main minor-gland site"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c036
+  section: traps
+  statement: "Metastasis can occur even in low-grade tumors"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1323" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c037
+  section: traps
+  statement: "Epidermoid cells only look squamous: keratin and intercellular bridges are absent"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1323" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c038
+  section: traps
+  statement: "The tumor also occurs in adolescents"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: mucoepidermoid-carcinoma-c039
+  section: mnemonics
+  statement: "The three cell populations are mucous, intermediate and epidermoid cells"
+  sourceRef: { source: rubin-8e, chapter: "29", pages: "1322-1323" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
