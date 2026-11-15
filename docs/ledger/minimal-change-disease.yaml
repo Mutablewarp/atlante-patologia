@@ -1,0 +1,418 @@
+entity: minimal-change-disease
+claims:
+- claimId: minimal-change-disease-c001
+  section: definition
+  statement: "Minimal change disease is a glomerular cause of nephrotic syndrome whose hallmark lesion is flattening of podocyte foot processes throughout the glomerulus"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "927" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c002
+  section: definition
+  statement: "Of children under 5 with primary nephrotic syndrome about 90% have this disease, as do about 50% of older children and about 15% of adults"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "929" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c003
+  section: etiology
+  statement: "The primary (idiopathic) form occurs especially in children"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "928" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c004
+  section: etiology
+  statement: "The secondary form occurs especially in adults"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "928" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c005
+  section: etiology
+  statement: "Mononucleosis and HIV infection are infectious triggers of the secondary form"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "928" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c006
+  section: etiology
+  statement: "Allergic triggers of the secondary form include bee stings, vaccination and drugs, mainly NSAIDs"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "928" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c007
+  section: etiology
+  statement: "The secondary form can accompany lymphomas, for example Hodgkin or mantle-cell lymphoma"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "928" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c008
+  section: pathogenesis
+  statement: "The pathogenesis of the idiopathic form is unknown"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "928" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c009
+  section: pathogenesis
+  statement: "An immune cause is suspected because allergy or lymphoid tumors may accompany the disease and steroids can induce remission"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "928" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c010
+  section: pathogenesis
+  statement: "Rare coexistence with Hodgkin disease, thymoma or T-cell lymphoma makes a T-cell disorder plausible, with a cytokine acting on podocytes possibly making the filter leakier"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "928" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c011
+  section: pathogenesis
+  statement: "Loss of polyanionic sites on the GBM and podocytes, seen with heavy proteinuria, lets albumin and other negatively charged proteins cross the capillary wall"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "928" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c012
+  section: pathogenesis
+  statement: "The disease might evolve into a form of FSGS in some patients, which would point to a shared mechanism; the link is unproven"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "928" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c013
+  section: micro
+  statement: "Glomeruli look essentially normal on light microscopy"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "928" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c014
+  section: micro
+  statement: "On electron microscopy the foot processes of podocytes are fused across most of the glomerulus"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "928" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c015
+  section: micro
+  statement: "Almost all patients with nephrotic-range proteinuria have foot-process fusion, so it does not identify minimal change disease"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "928" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c016
+  section: micro
+  statement: "The mesangium may stain faintly for IgM and C3, but immunofluorescence for immunoglobulin and complement is usually negative"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "928-929" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c017
+  section: micro
+  statement: "Hyaline droplets in the cytoplasm of proximal tubular cells are lipid taken up from lipoproteins lost across the glomerulus"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "928" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c018
+  section: micro
+  statement: "Any glomerular cause of nephrotic syndrome can produce tubular hyaline droplets, so they are not specific"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "928" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c019
+  section: ancillary
+  statement: "Diagnosis of glomerular disease rests on the clinical picture plus renal tissue studied by light microscopy, immunofluorescence and electron microscopy"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "927" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c020
+  section: ancillary
+  statement: "On light microscopy the glomeruli are normal, while proximal tubular cells show hyaline droplets"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "928" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c021
+  section: ancillary
+  statement: "On immunofluorescence, deposits of immunoglobulin or complement are usually absent"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "928-929" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c022
+  section: ancillary
+  statement: "Under the electron microscope the podocyte foot processes are flattened over most of the glomerulus"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "928" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c023
+  section: clinical
+  statement: "Hypoalbuminemia results from the proteinuria"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "928" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c024
+  section: clinical
+  statement: "Hyperlipidemia arises because the liver secretes more lipoproteins in compensation"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "928" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c025
+  section: clinical
+  statement: "Compared with nephrotic syndrome from other diseases, protein loss is usually more selective, with more albumin than globulins in the urine"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "929" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c026
+  section: clinical
+  statement: "Selectivity is not a useful diagnostic criterion because other causes overlap with it too much"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "929" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c027
+  section: diagnosis
+  statement: "The blood shows low albumin and high lipids, both secondary to the urinary protein loss"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "928" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c028
+  section: diagnosis
+  statement: "The biopsy pattern is normal glomeruli on light microscopy, foot-process fusion on electron microscopy and mostly negative immunofluorescence"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "928-929" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c029
+  section: prognosis
+  statement: "More than 90% of children lose all proteinuria within 8 weeks of starting steroids, and fewer adults do"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "929" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c030
+  section: prognosis
+  statement: "Remission in adults often takes a longer steroid course"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "929" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c031
+  section: prognosis
+  statement: "In most patients relapses come and go for as long as 10 years after steroids are stopped"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "929" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c032
+  section: prognosis
+  statement: "Complete steroid resistance is rarer than partial response, in which urinary protein loss persists"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "929" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c033
+  section: prognosis
+  statement: "Total steroid resistance raises doubt about the diagnosis, since FSGS missed by the first biopsy sample may be present"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "929" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c034
+  section: prognosis
+  statement: "If no complications arise, patients fare in the long term like the general population"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "929" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c035
+  section: prognosis
+  statement: "Azotemia appearing after the diagnosis can be explained by drug-induced interstitial nephritis, evolution into FSGS, or FSGS missed at the first biopsy"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "929" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c036
+  section: differential
+  statement: "FSGS affects only some glomeruli, each only in part, with scarred segments rich in collagenous matrix"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "929" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c037
+  section: differential
+  statement: "Membranous nephropathy shows subepithelial electron-dense deposits and granular capillary-wall immunofluorescence"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "927" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c038
+  section: differential
+  statement: "Diabetic glomerulosclerosis shows thickening of the glomerular basement membrane"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "927" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c039
+  section: high-yield
+  statement: "The primary idiopathic form is typical of children"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "928" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c040
+  section: high-yield
+  statement: "Glomeruli are normal on light microscopy while electron microscopy shows foot-process effacement"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "928" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c041
+  section: high-yield
+  statement: "Immunofluorescence is most often negative"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "928-929" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c042
+  section: high-yield
+  statement: "Proteinuria is more often selective, but this is not a useful diagnostic criterion"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "929" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c043
+  section: high-yield
+  statement: "Most children remit completely on corticosteroids, and relapses are frequent after withdrawal"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "929" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c044
+  section: high-yield
+  statement: "Steroid resistance suggests that FSGS was missed in the first biopsy"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "929" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c045
+  section: high-yield
+  statement: "Adults more often have the secondary form"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "928" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c046
+  section: traps
+  statement: "Foot-process effacement occurs in almost all nephrotic-range proteinuria and is not specific"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "928" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c047
+  section: traps
+  statement: "Selectivity of proteinuria overlaps too much with other diseases to confirm the diagnosis"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "929" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c048
+  section: traps
+  statement: "Tubular hyaline droplets occur in any nephrotic glomerular disease"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "928" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c049
+  section: traps
+  statement: "A steroid-resistant case may be FSGS missed in the first biopsy"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "929" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c050
+  section: traps
+  statement: "Light microscopy is normal while the podocyte lesion shows only on electron microscopy"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "928" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c051
+  section: traps
+  statement: "The disease also occurs in adults, who more often have the secondary form"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "928-929" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: minimal-change-disease-c052
+  section: mnemonics
+  statement: "The mnemonic recalls foot-process fusion on electron microscopy, normal light microscopy, negative immunofluorescence and steroid response"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "928-929" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15

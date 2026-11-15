@@ -1,0 +1,103 @@
+id: minimal-change-disease
+module: o22
+tier: core
+kind: disease
+names:
+  it: "Malattia a lesioni minime"
+  en: "Minimal change disease"
+  eponyms: []
+  synonyms:
+    it: ["Nefrosi lipoidea"]
+    en: ["Minimal change nephropathy"]
+  abbreviations: ["MCD"]
+summary:
+  it: "Glomerulopatia che causa sindrome nefrosica, tipica del bambino: glomeruli normali alla microscopia ottica, fusione dei processi pedicellari dei podociti al microscopio elettronico e di solito risposta ai corticosteroidi."
+  en: "Glomerular disease that causes nephrotic syndrome, typical of children: normal glomeruli on light microscopy, fused podocyte foot processes on electron microscopy and usually a response to corticosteroids."
+lenses:
+  system: [kidney]
+  process: [cell-injury]
+  pattern: [hyaline-change]
+  presentation: []
+  marker: [laboratory]
+  group: [immune]
+learningObjectives:
+  - it: "Riconoscere la malattia a lesioni minime come causa principale di sindrome nefrosica nel bambino."
+    en: "Recognize minimal change disease as the main cause of nephrotic syndrome in children."
+  - it: "Descrivere i reperti bioptici: glomeruli normali alla microscopia ottica, fusione dei pedicelli al microscopio elettronico, immunofluorescenza di solito negativa."
+    en: "Describe the biopsy findings: normal glomeruli on light microscopy, foot-process fusion on electron microscopy, usually negative immunofluorescence."
+  - it: "Spiegare che cosa significa proteinuria selettiva e perché non basta a fare la diagnosi."
+    en: "Explain what selective proteinuria means and why it cannot make the diagnosis."
+  - it: "Descrivere la risposta ai corticosteroidi e sospettare una glomerulosclerosi focale e segmentale in caso di resistenza."
+    en: "Describe the response to corticosteroids and suspect focal segmental glomerulosclerosis when it is absent."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: focal-segmental-glomerulosclerosis
+    note:
+      it: "Un caso resistente agli steroidi può essere una glomerulosclerosi focale e segmentale non campionata alla prima biopsia."
+      en: "A steroid-resistant case may be FSGS not sampled in the first biopsy."
+  - type: differentialOf
+    target: membranous-nephropathy
+    note:
+      it: "Nella glomerulopatia membranosa si vedono depositi subepiteliali; nella malattia a lesioni minime no."
+      en: "Membranous nephropathy shows subepithelial deposits; minimal change disease does not."
+quickCheck:
+  - id: minimal-change-disease-q1
+    q:
+      it: "Che cosa si vede al microscopio ottico e al microscopio elettronico in una malattia a lesioni minime?"
+      en: "What is seen on light and electron microscopy in minimal change disease?"
+    a:
+      it: "Glomeruli essenzialmente normali alla microscopia ottica; fusione estesa dei processi pedicellari dei podociti al microscopio elettronico."
+      en: "Essentially normal glomeruli on light microscopy; extensive fusion of podocyte foot processes on electron microscopy."
+    kind: short
+  - id: minimal-change-disease-q2
+    q:
+      it: "Perché la fusione dei pedicelli non basta a diagnosticare la malattia a lesioni minime?"
+      en: "Why is foot-process fusion not enough to diagnose minimal change disease?"
+    a:
+      it: "Perché compare in quasi tutti i casi di proteinuria in range nefrosico, qualunque ne sia la causa."
+      en: "Because it appears in almost all nephrotic-range proteinuria, whatever the cause."
+    kind: short
+  - id: minimal-change-disease-q3
+    q:
+      it: "Un paziente con diagnosi di malattia a lesioni minime non risponde agli steroidi: a che cosa si pensa?"
+      en: "A patient diagnosed with minimal change disease does not respond to steroids: what do you suspect?"
+    a:
+      it: "Che la diagnosi sia sbagliata e che ci sia una glomerulosclerosi focale e segmentale non campionata alla prima biopsia."
+      en: "That the diagnosis is wrong and that focal segmental glomerulosclerosis was not sampled in the first biopsy."
+    kind: short
+selfExplain:
+  - it: "Perché la perdita dei siti polianionici della membrana basale e dei podociti fa passare soprattutto l'albumina?"
+    en: "Why does loss of the polyanionic sites of the basement membrane and podocytes let mainly albumin through?"
+  - it: "Perché la proteinuria massiva porta a ipoalbuminemia e poi a iperlipidemia?"
+    en: "Why does massive proteinuria lead to hypoalbuminemia and then to hyperlipidemia?"
+examQuestions:
+  - it: "Mi parli della malattia a lesioni minime: in quali pazienti si osserva e che cosa causa?"
+    en: "Tell me about minimal change disease: who gets it and what does it cause?"
+    focus: [definition, etiology]
+    level: 1
+  - it: "Che cosa vede in una biopsia renale con malattia a lesioni minime, al microscopio ottico, all'immunofluorescenza e al microscopio elettronico?"
+    en: "What do you see in a kidney biopsy of minimal change disease on light microscopy, immunofluorescence and electron microscopy?"
+    focus: [micro, ancillary]
+    level: 1
+  - it: "Che cosa significa proteinuria selettiva, e basta a fare la diagnosi?"
+    en: "What does selective proteinuria mean, and is it enough to make the diagnosis?"
+    focus: [clinical, traps]
+    level: 2
+  - it: "Come risponde la malattia ai corticosteroidi, e che cosa pensa se la risposta manca?"
+    en: "How does the disease respond to corticosteroids, and what do you suspect when there is no response?"
+    focus: [prognosis, traps]
+    level: 3
+  - it: "Come distingue la malattia a lesioni minime dalla glomerulopatia membranosa e dalla glomerulosclerosi focale e segmentale?"
+    en: "How do you tell minimal change disease from membranous nephropathy and from focal segmental glomerulosclerosis?"
+    focus: [differential, micro]
+    level: 3
+images: []
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "22"
+    pages: "927-929"
+lastUpdated: 2026-11-15
+status: published
