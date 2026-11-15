@@ -1,0 +1,650 @@
+entity: colorectal-adenocarcinoma
+claims:
+- claimId: colorectal-adenocarcinoma-c001
+  section: definition
+  statement: "Adenomatous polyps are the usual origin of colorectal cancer, so factors that promote polyps also promote cancer."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "825-826" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c002
+  section: definition
+  statement: "Colon and rectal cancers are discussed together because their biology overlaps, although they are not treated alike."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "825" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c003
+  section: definition
+  statement: "Rectal cancer has a slight male predominance, while colon cancer affects men and women about equally."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "825" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c004
+  section: definition
+  statement: "In Western societies colorectal cancer is second as a cause of cancer death and third in frequency."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "825" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c005
+  section: etiology
+  statement: "Among all individual risk factors, age is probably the strongest in the general population."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "826" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c006
+  section: etiology
+  statement: "After one colorectal cancer, the risk of a later tumor is increased."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "826" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c007
+  section: etiology
+  statement: "A longer course of ulcerative colitis or Crohn disease, and more colon involved, both mean higher cancer risk."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "826" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c008
+  section: etiology
+  statement: "An affected relative raises a person's own risk, which hints at inheritance."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "826" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c009
+  section: etiology
+  statement: "Lynch syndrome is the commonest of the autosomal dominant syndromes behind some cases; FAP is another."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "826" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c010
+  section: etiology
+  statement: "Cancer rates track animal-product intake, a key reason for regional differences."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "826" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c011
+  section: etiology
+  statement: "Diets low in plant foods and fiber are implicated, but how they act is only partly understood."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "826" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c012
+  section: etiology
+  statement: "A large share of cases is attributed to physical inactivity and obesity combined."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "826" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c013
+  section: etiology
+  statement: "Tobacco and heavy drinking are separate risks, and together they may amplify each other."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "826" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c014
+  section: pathogenesis
+  statement: "Mutations accumulate stepwise, from normal mucosa through a precursor stage to invasive adenocarcinoma."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "826" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c015
+  section: pathogenesis
+  statement: "Cyclin D1 and MYC switch on because, without APC, beta-catenin escapes destruction and builds up in the nucleus."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "826" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c016
+  section: pathogenesis
+  statement: "APC acts as a gatekeeper: its mutation is already found in normal mucosa before a sporadic adenoma appears."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "826" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c017
+  section: pathogenesis
+  statement: "FAP patients inherit one mutated APC allele, which explains their large number of adenomas."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "826" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c018
+  section: pathogenesis
+  statement: "KRAS acquires activating mutations early, in tubular adenomas."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "826" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c019
+  section: pathogenesis
+  statement: "TP53 mutations occur late and help an adenoma progress to carcinoma."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "826" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c020
+  section: pathogenesis
+  statement: "When mismatch repair fails, copying mistakes stay in the DNA and microsatellites are affected most."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "826" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c021
+  section: pathogenesis
+  statement: "In the inherited form one MMR allele is defective from birth, and the other is knocked out later in life by a somatic mutation."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "826" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c022
+  section: pathogenesis
+  statement: "In sporadic MMR-deficient tumors, the MLH1 gene is usually silenced by methylation of its promoter."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "826" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c023
+  section: pathogenesis
+  statement: "The model of the MMR pathway (figure) lists the sessile serrated adenoma as the precursor lesion."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "827" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c024
+  section: pathogenesis
+  statement: "The MMR genes usually mutated in the germline in Lynch syndrome are hMSH2 and hMLH1."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c025
+  section: gross
+  statement: "A colorectal cancer may grow as a polyp, an ulcer, an infiltrate in the wall or a constricting ring."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "826" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c026
+  section: gross
+  statement: "The large lumen of the right colon, especially the cecum, allows unimpeded growth, so polypoid cancers are commoner there."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "826" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c027
+  section: gross
+  statement: "Encircling, lumen-narrowing tumors are commoner in the distal colon."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "826" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c028
+  section: gross
+  statement: "Ulceration is frequent whatever the growth pattern."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "826" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c029
+  section: gross
+  statement: "Tumor cells often lie in fat around the colon, distant from the mass, because the serosa is a weak barrier."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "826-827" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c030
+  section: gross
+  statement: "The cancer sometimes reaches the peritoneum and leaves several nodules in the abdomen."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "827" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c031
+  section: micro
+  statement: "Adenocarcinoma, with invasive tubules and glands, is the usual type."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "826" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c032
+  section: micro
+  statement: "Mucinous adenocarcinomas, which secrete abundant mucin, make up about 15%."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "826" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c033
+  section: micro
+  statement: "Poorly differentiated tumors form sheets of malignant cells, and MMR-deficient tumors are particularly likely to do so."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "826" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c034
+  section: micro
+  statement: "In a polyp the invasive glands form a sieve-like cribriform pattern and their nuclei vary in size and shape (Fig 19-74)."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "825" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c035
+  section: micro
+  statement: "Invasive tumor in the polyp stalk lying near the cut base may call for wider excision (Fig 19-74)."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "825" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c036
+  section: micro
+  statement: "Lynch cancers are rich in tumor-infiltrating lymphocytes and more often than sporadic ones have medullary or mucinous histology."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c037
+  section: ancillary
+  statement: "Endoscopic removal suffices for small polyps; large lesions need segmental resection."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c038
+  section: ancillary
+  statement: "In the colon example figure, necrosis often sits at the center of sieve-like glands of intermediate differentiation."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "827" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c039
+  section: ancillary
+  statement: "Immunostaining for MMR proteins, microsatellite instability testing and sequencing of the MMR genes can each reveal MMR deficiency."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c040
+  section: ancillary
+  statement: "Once the mutation in a family is known, relatives can be tested for it."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c041
+  section: clinical
+  statement: "Early colorectal cancer produces no symptoms."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c042
+  section: clinical
+  statement: "On the right side the lumen is large and the stool liquid, so cancers can grow large without obstruction."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c043
+  section: clinical
+  statement: "Silent chronic bleeding from right-sided tumors can first show up as iron-deficiency anemia."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c044
+  section: clinical
+  statement: "In proximal colon tumors occult fecal blood is the most common sign."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c045
+  section: clinical
+  statement: "The narrow left colon is easily obstructed by cancers, causing abdominal pain and a changed stool pattern."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c046
+  section: clinical
+  statement: "Early perforation with peritonitis is possible."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c047
+  section: clinical
+  statement: "A distal lesion can produce hidden or visible fresh blood in stool."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c048
+  section: clinical
+  statement: "Local spread beyond the bowel can produce fistulas and involve nerves, the bladder or the abdominal wall."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c049
+  section: clinical
+  statement: "Dissemination within the abdomen can cause malignant ascites and small-bowel obstruction."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c050
+  section: clinical
+  statement: "Lynch cancers can arise outside the colon or recur in the colorectum, and appear early despite few adenomas."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c051
+  section: diagnosis
+  statement: "T1 stops at the submucosa; T2 grows into the muscularis propria without crossing it."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c052
+  section: diagnosis
+  statement: "T3 tumors invade pericolorectal soft tissue."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c053
+  section: diagnosis
+  statement: "T4b is involvement of neighboring organs and T4a is penetration of the serosa."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c054
+  section: diagnosis
+  statement: "Lymph node metastases are captured by N and distant metastases by M."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c055
+  section: diagnosis
+  statement: "The liver is where distant metastases most often occur; nodal spread starts in the nodes next to the tumor."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "827" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c056
+  section: diagnosis
+  statement: "Under the revised Bethesda guidelines, colorectal cancer diagnosed before age 50 raises the possibility of Lynch syndrome."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c057
+  section: prognosis
+  statement: "Size and histology predict outcome less well than how deeply the tumor invades the bowel wall."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "827" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c058
+  section: prognosis
+  statement: "Resection is the mainstay of cure, with adjuvant chemotherapy or radiotherapy added in some patients."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c059
+  section: prognosis
+  statement: "Unless a rectal cancer is very early, chemoradiotherapy is usually given before surgery."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c060
+  section: differential
+  statement: "Carcinoma in a polyp is recognized by tumor glands that have invaded the stalk."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "825" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c061
+  section: differential
+  statement: "In FAP the bowel is studded with very many adenomas and cancer invariably follows."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "825" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c062
+  section: differential
+  statement: "Lynch syndrome has few adenomas, mostly proximal tumors and extracolonic cancers."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c063
+  section: differential
+  statement: "Pancreatic, urinary tract and female genital tract carcinomas can involve the large bowel as metastases."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "830" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c064
+  section: differential
+  statement: "Primary colorectal lymphoma is uncommon and most are B-cell non-Hodgkin lymphomas."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "830" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c065
+  section: differential
+  statement: "Small-bowel adenocarcinomas are much less frequent than colonic ones and occur more often proximally."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c066
+  section: differential
+  statement: "Small-bowel adenocarcinomas resemble colonic ones and arise from adenomatous precursors."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c067
+  section: differential
+  statement: "A small-bowel cancer may appear as a napkin-ring band, an ulcer or a polypoid mass."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c068
+  section: differential
+  statement: "Crohn disease, celiac disease, FAP and Peutz-Jeghers syndrome increase the risk."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c069
+  section: differential
+  statement: "Even small ampullary tumors can cause jaundice."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c070
+  section: high-yield
+  statement: "Most colorectal cancers develop from a preexisting adenoma, the adenoma-carcinoma sequence."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "826" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c071
+  section: high-yield
+  statement: "In the tumor suppressor pathway APC is lost first, then KRAS is mutated, then TP53 is lost."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "826-827" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c072
+  section: high-yield
+  statement: "MMR deficiency arises from germline mutations (Lynch) or sporadic MLH1 promoter hypermethylation."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "826" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c073
+  section: high-yield
+  statement: "Right-sided cancers bleed silently and cause anemia, while left-sided cancers constrict the lumen."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c074
+  section: high-yield
+  statement: "Depth of invasion through the bowel wall relates to prognosis more closely than tumor size does."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "827" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c075
+  section: high-yield
+  statement: "The liver is the commonest distant metastatic site."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "827" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c076
+  section: traps
+  statement: "Right-sided cancers are often polypoid and bleed, whereas left-sided ones are often annular and obstructive."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "826, 828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c077
+  section: traps
+  statement: "Prognosis depends on extension through the bowel wall more than on size."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "827" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c078
+  section: traps
+  statement: "Lynch patients have few adenomas, hence the name nonpolyposis."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c079
+  section: traps
+  statement: "KRAS mutation is early in adenomas while TP53 mutation is late."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "826" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c080
+  section: traps
+  statement: "Small-bowel adenocarcinomas are far less common than colonic ones."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: colorectal-adenocarcinoma-c081
+  section: mnemonics
+  statement: "Right-sided cancers bleed and cause anemia; left-sided cancers obstruct."
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "828" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15

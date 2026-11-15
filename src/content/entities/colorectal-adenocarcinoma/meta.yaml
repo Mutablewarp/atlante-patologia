@@ -1,0 +1,143 @@
+id: colorectal-adenocarcinoma
+module: o19
+tier: core
+kind: disease
+names:
+  it: "Adenocarcinoma del colon-retto"
+  en: "Colorectal adenocarcinoma"
+  eponyms: []
+  synonyms:
+    it: ["Carcinoma colorettale"]
+    en: ["Colorectal carcinoma", "Colorectal cancer"]
+  abbreviations: ["CRC"]
+summary:
+  it: "Tumore maligno ghiandolare del grosso intestino che nasce per lo più da un adenoma, con due vie molecolari principali (APC-KRAS-TP53 e deficit dei sistemi di riparazione dei mismatch) e con prognosi legata soprattutto alla profondità di invasione della parete."
+  en: "Gland-forming malignant tumor of the large bowel, arising mostly from an adenoma through two main molecular routes (APC-KRAS-TP53 and mismatch repair deficiency), with prognosis tied mainly to depth of invasion through the bowel wall."
+lenses:
+  system: [gastrointestinal]
+  process: [neoplasia]
+  pattern: [dysplasia]
+  presentation: [mass-lesion, anemia]
+  marker: [ihc, molecular]
+  group: [neoplastic, genetic]
+learningObjectives:
+  - it: "Descrivere la sequenza adenoma-carcinoma e le alterazioni di APC, KRAS e TP53."
+    en: "Describe the adenoma-carcinoma sequence and the APC, KRAS and TP53 alterations."
+  - it: "Spiegare la via del deficit di riparazione dei mismatch, ereditaria (Lynch) e sporadica (ipermetilazione di MLH1)."
+    en: "Explain the mismatch repair deficiency route, hereditary (Lynch) and sporadic (MLH1 hypermethylation)."
+  - it: "Confrontare presentazione e morfologia dei tumori del colon destro e sinistro."
+    en: "Compare the presentation and morphology of right-sided and left-sided tumors."
+  - it: "Applicare le categorie T del sistema TNM e indicare il fattore prognostico principale."
+    en: "Apply the TNM T categories and name the main prognostic factor."
+prerequisites: [multistep-carcinogenesis]
+relations:
+  - type: sharesMechanism
+    target: colorectal-adenoma
+    note:
+      it: "La maggior parte dei carcinomi nasce da un adenoma."
+      en: "Most carcinomas arise from an adenoma."
+  - type: sharesMechanism
+    target: lynch-syndrome
+    note:
+      it: "Il deficit dei sistemi MMR è la via comune."
+      en: "MMR deficiency is the shared route."
+  - type: sharesMechanism
+    target: familial-adenomatous-polyposis
+    note:
+      it: "La perdita di APC è l'evento iniziale in entrambi."
+      en: "APC loss is the initiating event in both."
+  - type: causes
+    target: liver-metastases
+    note:
+      it: "Il fegato è la sede più comune di metastasi a distanza."
+      en: "The liver is the commonest site of distant metastasis."
+quickCheck:
+  - id: colorectal-adenocarcinoma-q1
+    q:
+      it: "Perché i tumori del colon destro danno spesso anemia sideropenica e non occlusione?"
+      en: "Why do right-sided colon tumors often cause iron-deficiency anemia rather than obstruction?"
+    a:
+      it: "Il lume è ampio e le feci sono liquide, quindi il tumore cresce senza ostruire e sanguina cronicamente."
+      en: "The lumen is wide and stool is liquid, so the tumor grows without obstructing and bleeds chronically."
+    kind: short
+  - id: colorectal-adenocarcinoma-q2
+    q:
+      it: "Quale evento molecolare è tardivo nella sequenza adenoma-carcinoma?"
+      en: "Which molecular event is late in the adenoma-carcinoma sequence?"
+    a:
+      it: "La mutazione di TP53, che favorisce il passaggio da adenoma a carcinoma."
+      en: "TP53 mutation, which favors the step from adenoma to carcinoma."
+    kind: short
+  - id: colorectal-adenocarcinoma-q3
+    q:
+      it: "Da che cosa dipende soprattutto la prognosi?"
+      en: "What does prognosis depend on most?"
+    a:
+      it: "Dall'estensione del tumore attraverso la parete intestinale, più che da dimensioni o istologia."
+      en: "On how far the tumor extends through the bowel wall, more than on size or histology."
+    kind: short
+  - id: colorectal-adenocarcinoma-q4
+    q:
+      it: "Come si arriva al deficit dei sistemi MMR nei tumori sporadici?"
+      en: "How does MMR deficiency arise in sporadic tumors?"
+    a:
+      it: "Di solito il gene MLH1 viene silenziato dalla metilazione del suo promotore."
+      en: "The MLH1 gene is usually silenced by methylation of its promoter."
+    kind: short
+selfExplain:
+  - it: "Perché la perdita di APC porta a una proliferazione eccessiva delle cellule della mucosa?"
+    en: "Why does loss of APC lead to excess proliferation of mucosal cells?"
+  - it: "Perché i pazienti con FAP sviluppano un numero enorme di adenomi?"
+    en: "Why do FAP patients develop a huge number of adenomas?"
+chain:
+  - pathology:
+      it: "Adenocarcinoma del colon destro"
+      en: "Right-sided colon adenocarcinoma"
+    sign:
+      it: "Sanguinamento cronico occulto"
+      en: "Chronic occult bleeding"
+    lab:
+      it: "Anemia sideropenica"
+      en: "Iron-deficiency anemia"
+examQuestions:
+  - it: "Mi parli dei fattori di rischio dell'adenocarcinoma del colon-retto."
+    en: "Tell me about the risk factors for colorectal adenocarcinoma."
+    focus: [etiology]
+    level: 1
+  - it: "Come distingue un tumore del colon destro da uno del colon sinistro?"
+    en: "How do you tell a right-sided colon cancer from a left-sided one?"
+    focus: [gross, clinical]
+    level: 3
+  - it: "Mi parli delle due vie molecolari dell'adenocarcinoma colorettale e di come si riconosce il deficit dei sistemi MMR."
+    en: "Tell me about the two molecular routes of colorectal adenocarcinoma and how MMR deficiency is detected."
+    focus: [pathogenesis, ancillary]
+    level: 2
+  - it: "Che cosa vede al microscopio in un adenocarcinoma del colon-retto?"
+    en: "What do you see under the microscope in colorectal adenocarcinoma?"
+    focus: [micro]
+    level: 1
+  - it: "Come si stadia il tumore e qual è il fattore prognostico principale?"
+    en: "How is the tumor staged, and what is the main prognostic factor?"
+    focus: [diagnosis, prognosis]
+    level: 2
+  - it: "Come distingue un adenocarcinoma del piccolo intestino da uno del colon?"
+    en: "How do you tell a small-bowel adenocarcinoma from a colonic one?"
+    focus: [differential]
+    level: 3
+images:
+  - id: colorectal-adenocarcinoma-gross-1
+    role: gross
+    pairWith: colorectal-adenocarcinoma-micro-1
+  - id: colorectal-adenocarcinoma-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: true
+editionNote:
+  it: "La classificazione e le categorie TNM cambiano tra le edizioni: verificare l'edizione corrente prima di usarle."
+  en: "Classification and TNM categories change between editions: check the current edition before using them."
+sources:
+  - source: rubin-8e
+    chapter: "19"
+    pages: "825-828, 830"
+lastUpdated: 2026-11-15
+status: published
