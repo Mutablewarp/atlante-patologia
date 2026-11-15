@@ -1,0 +1,128 @@
+id: gastric-malt-lymphoma
+module: o19
+tier: core
+kind: disease
+names:
+  it: "Linfoma MALT gastrico"
+  en: "Gastric MALT lymphoma"
+  latin: "Lymphoma marginale extranodale MALT gastricum"
+  eponyms: []
+  synonyms:
+    it: ["Linfoma extranodale della zona marginale dello stomaco"]
+    en: ["Gastric extranodal marginal zone lymphoma"]
+  abbreviations: ["MALT"]
+summary:
+  it: "Linfoma B indolente della zona marginale che nasce dal tessuto linfoide associato alla mucosa gastrica, di solito in una gastrite da Helicobacter pylori, con lesioni linfoepiteliali e possibile regressione dopo eradicazione."
+  en: "Indolent marginal zone B-cell lymphoma arising from the gastric mucosa-associated lymphoid tissue, usually in H. pylori gastritis, with lymphoepithelial lesions and possible regression after eradication."
+lenses:
+  system: [gastrointestinal, hematolymphoid]
+  process: [neoplasia, chronic-inflammation]
+  pattern: []
+  presentation: []
+  marker: [ihc, molecular]
+  group: [neoplastic, infectious]
+learningObjectives:
+  - it: "Spiegare come una gastrite cronica da H. pylori può evolvere in un linfoma MALT."
+    en: "Explain how chronic H. pylori gastritis can evolve into a MALT lymphoma."
+  - it: "Riconoscere le lesioni linfoepiteliali e distinguerle dalla gastrite con iperplasia linfoide."
+    en: "Recognize lymphoepithelial lesions and tell them from gastritis with lymphoid hyperplasia."
+  - it: "Indicare il ruolo della t(11;18) nella mancata risposta all'eradicazione."
+    en: "State the role of t(11;18) in the lack of response to eradication."
+  - it: "Descrivere l'immunofenotipo e la possibile trasformazione in linfoma diffuso a grandi cellule B."
+    en: "Describe the immunophenotype and the possible transformation to diffuse large B-cell lymphoma."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: diffuse-large-b-cell-lymphoma
+    note:
+      it: "Il linfoma a grandi cellule B ha aspetto pleomorfo ed è più facile da riconoscere."
+      en: "Diffuse large B-cell lymphoma has a pleomorphic appearance and is easier to recognize."
+  - type: differentialOf
+    target: mantle-cell-lymphoma
+    note:
+      it: "La ciclina D1 è positiva nel linfoma mantellare e negativa nel linfoma MALT."
+      en: "Cyclin D1 is positive in mantle cell lymphoma and negative in MALT lymphoma."
+  - type: mimics
+    target: helicobacter-pylori-gastritis
+    note:
+      it: "Può essere difficile distinguerlo da una gastrite cronica con iperplasia linfoide."
+      en: "It can be hard to tell from chronic gastritis with lymphoid hyperplasia."
+  - type: sharesMechanism
+    target: marginal-zone-lymphomas
+    note:
+      it: "Il linfoma MALT è il prototipo dei linfomi della zona marginale."
+      en: "MALT lymphoma is the prototype of the marginal zone lymphomas."
+quickCheck:
+  - id: gastric-malt-lymphoma-q1
+    q:
+      it: "Quale infezione è alla base del linfoma MALT gastrico e che cosa succede nelle fasi iniziali dopo la sua eradicazione?"
+      en: "Which infection underlies gastric MALT lymphoma, and what happens to early tumors after it is eradicated?"
+    a:
+      it: "L'infezione da Helicobacter pylori; i tumori nelle fasi iniziali possono andare in regressione."
+      en: "Helicobacter pylori infection; early tumors may regress."
+    kind: short
+  - id: gastric-malt-lymphoma-q2
+    q:
+      it: "Quale reperto istologico distingue il linfoma MALT dalla gastrite con iperplasia linfoide?"
+      en: "Which histologic finding separates MALT lymphoma from gastritis with lymphoid hyperplasia?"
+    a:
+      it: "Le lesioni linfoepiteliali, cioè ghiandole infiltrate da linfociti tumorali, con infiltrato monocitoide uniforme."
+      en: "Lymphoepithelial lesions, meaning glands infiltrated by tumor lymphocytes, with a uniform monocytoid infiltrate."
+    kind: short
+  - id: gastric-malt-lymphoma-q3
+    q:
+      it: "Perché un linfoma MALT con t(11;18) non risponde alla sola terapia antibiotica?"
+      en: "Why does a MALT lymphoma with t(11;18) not respond to antibiotic therapy alone?"
+    a:
+      it: "Perché con questa traslocazione il tumore non risponde più all'eradicazione di H. pylori."
+      en: "Because with this translocation the tumor no longer responds to H. pylori eradication."
+    kind: short
+  - id: gastric-malt-lymphoma-q4
+    q:
+      it: "In che cosa può trasformarsi un linfoma MALT indolente e come cambia il suo comportamento?"
+      en: "What can an indolent MALT lymphoma turn into, and how does its behavior change?"
+    a:
+      it: "Può trasformarsi in linfoma diffuso a grandi cellule B, che è più aggressivo."
+      en: "It can transform into diffuse large B-cell lymphoma, which is more aggressive."
+    kind: short
+selfExplain:
+  - it: "Perché una reazione B policlonale benigna può diventare un tumore monoclonale con il passare del tempo?"
+    en: "Why can a benign polyclonal B-cell reaction become a monoclonal tumor over time?"
+  - it: "Perché le lesioni linfoepiteliali aiutano a distinguere il linfoma dalla gastrite?"
+    en: "Why do lymphoepithelial lesions help tell lymphoma from gastritis?"
+chain: []
+examQuestions:
+  - it: "Mi parli del ruolo di Helicobacter pylori nel linfoma MALT gastrico e di che cosa può accadere dopo l'eradicazione."
+    en: "Tell me about the role of Helicobacter pylori in gastric MALT lymphoma and what can happen after eradication."
+    focus: [etiology, pathogenesis, prognosis]
+    level: 1
+  - it: "Che cosa vede al microscopio nel linfoma MALT gastrico e che cosa sono le lesioni linfoepiteliali?"
+    en: "What do you see under the microscope in gastric MALT lymphoma, and what are lymphoepithelial lesions?"
+    focus: [micro, diagnosis]
+    level: 1
+  - it: "Perché un linfoma MALT con t(11;18)(q21;q21) non risponde all'eradicazione di H. pylori?"
+    en: "Why does a MALT lymphoma with t(11;18)(q21;q21) not respond to H. pylori eradication?"
+    focus: [pathogenesis]
+    level: 2
+  - it: "Che cosa può succedere quando nel linfoma MALT si accumulano altre lesioni genetiche?"
+    en: "What can happen when further genetic lesions accumulate in a MALT lymphoma?"
+    focus: [pathogenesis, prognosis]
+    level: 2
+  - it: "Come distingue un linfoma MALT da una gastrite cronica con iperplasia linfoide?"
+    en: "How do you tell a MALT lymphoma from chronic gastritis with lymphoid hyperplasia?"
+    focus: [diagnosis, differential]
+    level: 3
+images:
+  - id: gastric-malt-lymphoma-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "19"
+    pages: "790-791"
+  - source: rubin-8e
+    chapter: "26"
+    pages: "1173-1174"
+lastUpdated: 2026-11-14
+status: published
