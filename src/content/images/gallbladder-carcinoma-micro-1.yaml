@@ -1,0 +1,43 @@
+id: gallbladder-carcinoma-micro-1
+file: gallbladder-carcinoma-micro-1.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Gallbladder_adenocarcinoma_(3)_lymphatic_invasion_histopathology.jpg
+author: KGH
+license: CC-BY-SA-3.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/3.0/
+retrievedAt: 2026-11-15
+modifications: none
+attributionText: "KGH, own work, via Wikimedia Commons, CC BY-SA 3.0"
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-15 }
+group: gallbladder-adenocarcinoma
+stain: H&E
+magnification: high power
+section: paraffin
+lookFor:
+  it: "Cerca la ghiandola con nuclei grandi e irregolari, circondata da linfociti, e confrontala con le cellule piccole e scure intorno."
+  en: "Find the gland with large, irregular nuclei, surrounded by lymphocytes, and compare it with the small dark cells around it."
+caption:
+  it: >-
+    Adenocarcinoma della colecisti in EE, a forte ingrandimento, in un pezzo di colecistectomia. Al centro a destra una
+    ghiandola neoplastica ha un lume e un rivestimento di cellule con nuclei grandi, vescicolosi e di forma irregolare,
+    molto più grandi dei piccoli linfociti scuri che la circondano. Il tumore si trova nel connettivo rosa della parete,
+    tra fasci di collagene, e non nella mucosa.
+  en: >-
+    Gallbladder adenocarcinoma on H&E at high power, in a cholecystectomy specimen. At center right a neoplastic gland
+    has a lumen and a lining of cells with large, vesicular, irregular nuclei, much bigger than the small dark
+    lymphocytes around it. The tumor lies in the pink connective tissue of the wall, between collagen bundles, not in
+    the mucosa.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina: una ghiandola con lume chiaro, rivestita da cellule violacee con nuclei grandi,
+    circondata da molti piccoli nuclei scuri rotondi e da connettivo rosa fibroso.
+  en: >-
+    H&E micrograph: a gland with a clear lumen, lined by purple cells with large nuclei, surrounded by many small dark
+    round nuclei and pink fibrous connective tissue.
+annotations:
+  - id: neoplastic-gland
+    label: { it: Ghiandola neoplastica, en: Neoplastic gland }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.49, 0.28, 0.66, 0.26, 0.72, 0.38, 0.70, 0.50, 0.56, 0.52, 0.49, 0.42] }

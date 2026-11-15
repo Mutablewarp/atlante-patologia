@@ -1,0 +1,105 @@
+id: gallbladder-carcinoma
+module: o20
+tier: core
+kind: disease
+editionDependent: false
+status: published
+lastUpdated: 2026-11-15
+reviewStatus: ai-generated-unreviewed
+names:
+  it: "Carcinoma della colecisti e delle vie biliari extraepatiche"
+  en: "Gallbladder and extrahepatic bile-duct carcinoma"
+  eponyms: []
+  synonyms:
+    it: ["Adenocarcinoma della colecisti", "Colangiocarcinoma extraepatico"]
+    en: ["Gallbladder adenocarcinoma", "Extrahepatic cholangiocarcinoma"]
+  abbreviations: []
+summary:
+  it: "Adenocarcinoma della colecisti, di solito associato a calcoli e colecistite cronica e scoperto tardi, e adenocarcinoma delle vie biliari extraepatiche e dell'ampolla di Vater, che dà ittero ostruttivo."
+  en: "Adenocarcinoma of the gallbladder, usually tied to stones and chronic cholecystitis and found late, and adenocarcinoma of the extrahepatic bile ducts and ampulla of Vater, which causes obstructive jaundice."
+lenses:
+  system: [liver-biliary, gastrointestinal]
+  process: [neoplasia, chronic-inflammation]
+  pattern: []
+  presentation: [jaundice, mass-lesion, incidental-finding]
+  marker: []
+  group: [neoplastic]
+learningObjectives:
+  - it: "Riconoscere calcoli e colecisti a porcellana come fattori di rischio del carcinoma della colecisti."
+    en: "Recognize gallstones and porcelain gallbladder as risk factors for gallbladder carcinoma."
+  - it: "Descrivere l'aspetto macroscopico e microscopico dell'adenocarcinoma della colecisti."
+    en: "Describe the gross and microscopic appearance of gallbladder adenocarcinoma."
+  - it: "Spiegare perché il carcinoma della colecisti viene scoperto tardi e ha una prognosi sfavorevole."
+    en: "Explain why gallbladder carcinoma is found late and has a poor prognosis."
+  - it: "Collegare il carcinoma delle vie biliari e dell'ampolla di Vater all'ittero ostruttivo."
+    en: "Link carcinoma of the bile ducts and ampulla of Vater to obstructive jaundice."
+prerequisites: []
+relations:
+  - type: sameLesionOtherOrgan
+    target: cholangiocarcinoma
+    note:
+      it: "Adenocarcinoma dell'epitelio biliare, qui nelle vie extraepatiche."
+      en: "Adenocarcinoma of biliary epithelium, here in the extrahepatic ducts."
+  - type: mimics
+    target: cholecystitis
+    note:
+      it: "Entrambe ispessiscono la parete e danno sintomi simili alla calcolosi."
+      en: "Both thicken the wall and give symptoms like gallstone disease."
+quickCheck:
+  - id: gallbladder-carcinoma-q1
+    q:
+      it: "Quali condizioni della colecisti aumentano il rischio di carcinoma?"
+      en: "Which gallbladder conditions raise the risk of carcinoma?"
+    a:
+      it: "Calcoli con colecistite cronica e la colecisti a porcellana, cioè calcificata."
+      en: "Gallstones with chronic cholecystitis, and a porcelain (calcified) gallbladder."
+    kind: short
+  - id: gallbladder-carcinoma-q2
+    q:
+      it: "Perché il carcinoma della colecisti è quasi sempre incurabile alla diagnosi?"
+      en: "Why is gallbladder carcinoma almost always incurable at diagnosis?"
+    a:
+      it: "I sintomi ricordano la calcolosi e compaiono tardi; solo i tumori scoperti per caso alla colecistectomia sono di fatto guariti."
+      en: "Symptoms mimic gallstone disease and appear late; only tumors found by chance at cholecystectomy are in practice cured."
+    kind: short
+  - id: gallbladder-carcinoma-q3
+    q:
+      it: "Perché il carcinoma delle vie biliari ha una prognosi un po' migliore di quello della colecisti?"
+      en: "Why does bile duct carcinoma do somewhat better than gallbladder carcinoma?"
+    a:
+      it: "Ostruisce il dotto e dà ittero ostruttivo precocemente."
+      en: "It blocks the duct and causes obstructive jaundice early."
+    kind: short
+selfExplain:
+  - it: "Perché la parete della colecisti con carcinoma diventa spessa e dura come cuoio?"
+    en: "Why does the wall of a gallbladder with carcinoma become thick and leathery?"
+  - it: "Perché i sintomi del carcinoma della colecisti si confondono con quelli della calcolosi?"
+    en: "Why are the symptoms of gallbladder carcinoma easily mistaken for gallstone disease?"
+chain: []
+examQuestions:
+  - it: "Mi parli del carcinoma della colecisti: quali sono i fattori di rischio?"
+    en: "Tell me about gallbladder carcinoma: what are the risk factors?"
+    focus: [etiology, definition]
+    level: 1
+  - it: "Che cosa vede in un pezzo operatorio di colecisti con carcinoma e che cosa vede al microscopio?"
+    en: "What do you see in a gallbladder specimen with carcinoma, and what do you see under the microscope?"
+    focus: [gross, micro]
+    level: 1
+  - it: "Perché il carcinoma della colecisti viene scoperto tardi e che prognosi ha?"
+    en: "Why is gallbladder carcinoma found late, and what is the prognosis?"
+    focus: [clinical, diagnosis, prognosis]
+    level: 2
+  - it: "Come si presenta un carcinoma delle vie biliari extraepatiche o dell'ampolla di Vater?"
+    en: "How does a carcinoma of the extrahepatic bile ducts or the ampulla of Vater present?"
+    focus: [clinical, high-yield]
+    level: 2
+  - it: "Come distingue un carcinoma della colecisti da una colecistite cronica?"
+    en: "How do you tell gallbladder carcinoma from chronic cholecystitis?"
+    focus: [gross, differential]
+    level: 3
+images:
+  - { id: gallbladder-carcinoma-micro-1, role: micro }
+sources:
+  - source: rubin-8e
+    chapter: "20"
+    pages: "898-899"
