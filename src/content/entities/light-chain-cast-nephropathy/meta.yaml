@@ -1,0 +1,95 @@
+id: light-chain-cast-nephropathy
+module: o22
+tier: extended
+kind: disease
+editionDependent: false
+status: published
+lastUpdated: 2026-11-15
+reviewStatus: ai-generated-unreviewed
+names:
+  it: "Nefropatia da cilindri (rene da mieloma)"
+  en: "Light-chain cast nephropathy (myeloma kidney)"
+  eponyms: []
+  synonyms:
+    it: ["Rene da mieloma"]
+    en: ["Myeloma kidney"]
+  abbreviations: []
+summary:
+  it: "Danno renale da catene leggere monoclonali nelle urine, che lesionano l'epitelio tubulare e formano cilindri ostruenti; è la nefropatia più frequente nel mieloma multiplo."
+  en: "Kidney injury from monoclonal light chains in the urine, which damage tubular epithelium and form obstructing casts; the most common kidney disease in multiple myeloma."
+lenses:
+  system: [kidney, hematolymphoid]
+  process: [extracellular-accumulation, repair-fibrosis]
+  pattern: [hyaline-change]
+  presentation: []
+  marker: [ihc]
+  group: [neoplastic]
+learningObjectives:
+  - it: "Spiegare come le catene leggere libere formano cilindri con la proteina di Tamm–Horsfall nell'urina acida."
+    en: "Explain how free light chains form casts with Tamm–Horsfall protein in acidic urine."
+  - it: "Riconoscere al microscopio i cilindri ialini fratturati con cellule giganti."
+    en: "Recognize fractured hyaline casts with giant cells under the microscope."
+  - it: "Indicare i due meccanismi del danno renale: tossicità tubulare e ostruzione."
+    en: "State the two mechanisms of kidney damage: tubular toxicity and obstruction."
+  - it: "Distinguere la nefropatia da cilindri dall'amiloidosi AL e dalla malattia da deposizione di catene leggere."
+    en: "Distinguish cast nephropathy from AL amyloidosis and light-chain deposition disease."
+prerequisites: []
+relations:
+  - type: complicationOf
+    target: multiple-myeloma
+    note:
+      it: "È la nefropatia più frequente del mieloma multiplo."
+      en: "It is the most common kidney disease of multiple myeloma."
+  - type: differentialOf
+    target: amyloidosis
+    note:
+      it: "Una proteinuria in range nefrosico nel mieloma orienta verso l'amiloidosi AL."
+      en: "Nephrotic-range proteinuria in myeloma points toward AL amyloidosis."
+quickCheck:
+  - id: light-chain-cast-nephropathy-q1
+    q:
+      it: "Perché si formano i cilindri nei tubuli distali?"
+      en: "Why do casts form in the distal tubules?"
+    a:
+      it: "Nell'urina acida le catene leggere si legano alla glicoproteina di Tamm–Horsfall secreta dalle cellule tubulari distali."
+      en: "In acidic urine, light chains bind Tamm–Horsfall glycoprotein secreted by distal tubular cells."
+    kind: short
+  - id: light-chain-cast-nephropathy-q2
+    q:
+      it: "In quali due modi le catene leggere danneggiano il rene?"
+      en: "In which two ways do light chains damage the kidney?"
+    a:
+      it: "Tossicità diretta sull'epitelio tubulare e ostruzione tubulare da parte dei cilindri."
+      en: "Direct toxicity to tubular epithelium and tubular obstruction by casts."
+    kind: short
+  - id: light-chain-cast-nephropathy-q3
+    q:
+      it: "Un paziente con mieloma ha proteinuria in range nefrosico: quale diagnosi è più probabile?"
+      en: "A myeloma patient has nephrotic-range proteinuria: which diagnoses are more likely?"
+    a:
+      it: "Amiloidosi AL o malattia da deposizione di catene leggere, piuttosto che nefropatia da cilindri."
+      en: "AL amyloidosis or light-chain deposition disease rather than cast nephropathy."
+    kind: short
+selfExplain:
+  - it: "Perché l'urina acida favorisce la formazione dei cilindri?"
+    en: "Why does acidic urine favor cast formation?"
+  - it: "Perché i cilindri e le catene leggere libere insieme riducono la funzione renale?"
+    en: "Why do casts and free light chains together reduce kidney function?"
+examQuestions:
+  - it: "Che cosa vede al microscopio in una nefropatia da cilindri?"
+    en: "What do you see under the microscope in light-chain cast nephropathy?"
+    focus: [micro]
+    level: 1
+  - it: "Perché le catene leggere libere riducono la funzione renale?"
+    en: "Why do free light chains reduce kidney function?"
+    focus: [pathogenesis]
+    level: 2
+  - it: "In un paziente con mieloma e proteinuria in range nefrosico, come distingue la nefropatia da cilindri dall'amiloidosi AL e dalla malattia da deposizione di catene leggere?"
+    en: "In a myeloma patient with nephrotic-range proteinuria, how do you tell cast nephropathy from AL amyloidosis and light-chain deposition disease?"
+    focus: [diagnosis, differential]
+    level: 3
+images:
+  - { id: light-chain-cast-nephropathy-micro-1, role: micro }
+  - { id: light-chain-cast-nephropathy-micro-2, role: micro }
+sources:
+  - { source: rubin-8e, chapter: "22", pages: "963" }

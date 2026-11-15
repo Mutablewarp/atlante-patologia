@@ -1,0 +1,44 @@
+id: light-chain-cast-nephropathy-micro-1
+file: light-chain-cast-nephropathy-micro-1.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Histopathology_of_myeloma_cast_nephropathy.jpg
+author: Stephanie Stringer, Kolitha Basnayake, Colin Hutchison, and Paul Cockwell
+license: CC-BY-4.0
+licenseUrl: https://creativecommons.org/licenses/by/4.0/
+retrievedAt: 2026-11-15
+modifications: none
+attributionText: "Stephanie Stringer, Kolitha Basnayake, Colin Hutchison, and Paul Cockwell, Histopathology of myeloma cast nephropathy (Bone Marrow Research 2011, DOI 10.1155/2011/493697), via Wikimedia Commons, CC BY 4.0"
+patientIdentifiable: false
+ownerApproved: false
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-15 }
+group: light-chain-cast-nephropathy-casts
+stain: H&E
+magnification: high power
+section: paraffin
+lookFor:
+  it: "Cerca il lume tubulare riempito da una massa rosa fratturata e guarda se è circondato da cellule voluminose."
+  en: "Find the tubular lumen filled by a pink, fractured mass and check whether large cells surround it."
+caption:
+  it: >-
+    Rene con nefropatia da cilindri, EE a forte ingrandimento. Al centro un tubulo ha il lume occupato da una massa
+    rosa omogenea, spezzata in frammenti angolari: è un cilindro ialino fratturato. Ai suoi margini, in basso a
+    destra, si vedono cellule grandi con più nuclei. Intorno il tessuto è affollato di cellule infiammatorie e i
+    tubuli vicini sono radi e di calibro irregolare.
+  en: >-
+    Kidney with light-chain cast nephropathy, H&E at high power. At the center a tubule has its lumen filled by a
+    homogeneous pink mass broken into angular fragments: a fractured hyaline cast. Along its lower right edge are
+    large cells with several nuclei. The surrounding tissue is crowded with inflammatory cells, and the neighboring
+    tubules are sparse and uneven in size.
+alt:
+  it: >-
+    Micrografia in ematossilina-eosina: al centro un tubulo contiene una massa rosa divisa in blocchi angolari da
+    sottili fessure, con cellule voluminose a ridosso del margine inferiore destro; intorno, tessuto con molti piccoli
+    nuclei scuri e pochi lumi tubulari vuoti.
+  en: >-
+    H&E micrograph: at the center a tubule contains a pink mass split into angular blocks by thin clefts, with bulky
+    cells against its lower right edge; around it, tissue with many small dark nuclei and a few empty tubular lumens.
+annotations:
+  - id: fractured-cast
+    label: { it: Cilindro ialino fratturato, en: Fractured hyaline cast }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.38, 0.38, 0.55, 0.36, 0.69, 0.50, 0.66, 0.63, 0.50, 0.66, 0.39, 0.55] }
