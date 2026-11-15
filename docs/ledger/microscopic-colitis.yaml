@@ -1,0 +1,250 @@
+entity: microscopic-colitis
+claims:
+- claimId: microscopic-colitis-c001
+  section: definition
+  statement: "The name microscopic colitis covers collagenous and lymphocytic colitis, where the colon looks normal and only the microscope reveals the lesion"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "818" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: microscopic-colitis-c002
+  section: definition
+  statement: "The main presenting symptom of microscopic colitis is chronic watery diarrhea"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "818" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: microscopic-colitis-c003
+  section: definition
+  statement: "When weight loss or abdominal pain accompanies the diarrhea, it is usually mild"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "818" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: microscopic-colitis-c004
+  section: definition
+  statement: "The frequency of the disease rises as patients get older"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "818" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: microscopic-colitis-c005
+  section: definition
+  statement: "Women are affected more often than men"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "818" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: microscopic-colitis-c006
+  section: definition
+  statement: "Autoimmune disease, smoking and some drugs are linked to microscopic colitis"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "818" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: microscopic-colitis-c007
+  section: definition
+  statement: "The causes of collagenous and lymphocytic colitis are unknown"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "818" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: microscopic-colitis-c008
+  section: definition
+  statement: "Microscopic colitis is frequently associated with celiac disease"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "818" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: microscopic-colitis-c009
+  section: micro
+  statement: "Lymphocytic colitis shows more than 20 intraepithelial lymphocytes per 100 epithelial cells together with injury to the surface epithelium"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "819" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: microscopic-colitis-c010
+  section: micro
+  statement: "The extra chronic inflammatory cells in the lamina propria of lymphocytic colitis typically lie close to the surface"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "819" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: microscopic-colitis-c011
+  section: micro
+  statement: "Unlike IBD, lymphocytic colitis leaves the gland architecture intact"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "819" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: microscopic-colitis-c012
+  section: micro
+  statement: "Collagenous colitis has the mucosal changes of lymphocytic colitis"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "819" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: microscopic-colitis-c013
+  section: micro
+  statement: "Collagenous colitis is marked by an uneven collagen band beneath the epithelium, usually thicker than 10 micrometers"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "819" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: microscopic-colitis-c014
+  section: micro
+  statement: "Capillaries are caught inside the thickened collagen band of collagenous colitis"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "819" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: microscopic-colitis-c015
+  section: micro
+  statement: "In lymphocytic colitis the collagen layer beneath the epithelium is not thickened"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "819" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: microscopic-colitis-c016
+  section: diagnosis
+  statement: "The gross appearance of the colon is normal, so only microscopic examination of biopsies leads to the diagnosis"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "818" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: microscopic-colitis-c017
+  section: diagnosis
+  statement: "Biopsies taken at random along the whole colon help because changes can be strongest on the right"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "819" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: microscopic-colitis-c018
+  section: diagnosis
+  statement: "Collagenous colitis can require several biopsies because the thickness of its collagen band varies"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "819" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: microscopic-colitis-c019
+  section: differential
+  statement: "Inflammatory polyps are common in ulcerative colitis"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "818" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: microscopic-colitis-c020
+  section: differential
+  statement: "Skip lesions and granulomas are common in Crohn disease"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "818" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: microscopic-colitis-c021
+  section: differential
+  statement: "Celiac disease is frequently associated with microscopic colitis"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "818" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: microscopic-colitis-c022
+  section: high-yield
+  statement: "Microscopic colitis is the collective name for collagenous and lymphocytic colitis, in which the colon looks grossly normal"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "818" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: microscopic-colitis-c023
+  section: high-yield
+  statement: "The main symptom of microscopic colitis is chronic watery diarrhea"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "818" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: microscopic-colitis-c024
+  section: high-yield
+  statement: "Lymphocytic colitis has more than 20 intraepithelial lymphocytes per 100 epithelial cells"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "819" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: microscopic-colitis-c025
+  section: high-yield
+  statement: "In collagenous colitis the collagen layer beneath the epithelium is usually thicker than 10 micrometers"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "819" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: microscopic-colitis-c026
+  section: high-yield
+  statement: "Normal gland architecture distinguishes lymphocytic and collagenous colitis from IBD"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "819" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: microscopic-colitis-c027
+  section: high-yield
+  statement: "Biopsies from random sites along the colon are advised because the right side may show the strongest changes"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "819" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: microscopic-colitis-c028
+  section: traps
+  statement: "Gross inspection of the colon in microscopic colitis finds nothing and the abnormality appears only under the microscope"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "818" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: microscopic-colitis-c029
+  section: traps
+  statement: "Lymphocytic and collagenous colitis both have increased intraepithelial lymphocytes, but only collagenous colitis has the thickened subepithelial collagen band"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "819" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: microscopic-colitis-c030
+  section: traps
+  statement: "NSAIDs are the drugs most often linked to the disease, yet the link may be coincidental, because arthralgia often leads these patients to take them"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "818" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: microscopic-colitis-c031
+  section: traps
+  statement: "Unlike IBD, microscopic colitis leaves the gland architecture intact"
+  sourceRef: { source: rubin-8e, chapter: "19", pages: "819" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
