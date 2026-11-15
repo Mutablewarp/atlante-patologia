@@ -1,0 +1,442 @@
+entity: acute-tubular-injury
+claims:
+- claimId: acute-tubular-injury-c001
+  section: definition
+  statement: "Acute tubular injury is damage to tubular epithelial cells that causes intrarenal acute kidney injury"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c002
+  section: definition
+  statement: "No cause of intrarenal acute kidney injury is more common than ischemic tubular injury"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c003
+  section: definition
+  statement: "Ischemia usually does not kill tubular cells on a wide scale, so the old name acute tubular necrosis is a misnomer"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c004
+  section: definition
+  statement: "Recovery is possible in principle even though the renal failure of ischemic acute kidney injury is severe"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c005
+  section: etiology
+  statement: "Low blood pressure is the usual setting of the ischemic form, in which perfusion of the kidney falls"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c006
+  section: etiology
+  statement: "Heart failure, dehydration and shock, for example from sepsis or burns, can trigger ischemic injury"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c007
+  section: etiology
+  statement: "In nephrotoxic injury a chemical agent damages the tubular epithelial cells"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c008
+  section: etiology
+  statement: "Mercury, cisplatin, aminoglycosides and radiographic contrast are examples of nephrotoxins"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c009
+  section: etiology
+  statement: "Pigment nephropathy is tubular injury caused by large amounts of myoglobin (from rhabdomyolysis) or hemoglobin (from hemolysis) reaching the urine"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c010
+  section: pathogenesis
+  statement: "Because tubular cells turn over energy at a high rate, a lack of oxygen empties their ATP quickly"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c011
+  section: pathogenesis
+  statement: "Toxins that upset oxidative or other metabolic pathways injure the metabolically busy tubular cells easily"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c012
+  section: pathogenesis
+  statement: "Tubular epithelial cells take in toxins and concentrate them"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c013
+  section: pathogenesis
+  statement: "Tubuloglomerular feedback is one reason arterioles narrow inside the kidney, which lowers glomerular filtration pressure"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956-957" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c014
+  section: pathogenesis
+  statement: "Casts of dead cells that block the tubule raise the pressure behind them, and glomerular filtration drops"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956-957" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c015
+  section: pathogenesis
+  statement: "In backleak, glomerular filtrate seeps through the injured tubule wall back into the interstitium"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956-957" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c016
+  section: pathogenesis
+  statement: "A decrease in glomerular capillary permeability (Kf) contributes to the fall in filtration"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c017
+  section: gross
+  statement: "The medulla is congested and the cortex pale, and the kidneys as a whole are swollen in ischemic injury"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c018
+  section: micro
+  statement: "Glomeruli and blood vessels are normal in ischemic tubular injury"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c019
+  section: micro
+  statement: "The segments hurt most are the proximal tubules and, in the outer medulla, the thick ascending limb of Henle's loop"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c020
+  section: micro
+  statement: "In epithelial simplification the tubular lining is thin and flat, has no brush border and surrounds a widened lumen"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c021
+  section: micro
+  statement: "Muddy brown casts are shed apical cytoplasm of tubular cells, colored by cytochromes, and are found in the urine"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c022
+  section: micro
+  statement: "Necrosis is subtle: patches of tubular basement membrane lie bare where single dead cells and a few living ones were shed into the lumen"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c023
+  section: micro
+  statement: "Interstitial edema is common"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c024
+  section: micro
+  statement: "Inflammation is essentially absent in ischemic tubular injury and slight in the interstitium in toxic injury"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "957" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c025
+  section: micro
+  statement: "Toxins mostly damage the one tubular segment they affect most, usually the proximal tubule, and cause more necrosis than ischemia does"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c026
+  section: micro
+  statement: "In mercury poisoning proximal tubular cells die on a large scale while the distal and collecting tubules escape"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "957" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c027
+  section: micro
+  statement: "Many extra casts tinted reddish brown by heme appear when hemoglobin or myoglobin reaches the urine"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c028
+  section: ancillary
+  statement: "Urine sediment shows muddy brown granular casts together with degenerating epithelial cells"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c029
+  section: ancillary
+  statement: "In ischemic injury the usual finding is a flat tubular lining, from loss of the apical cytoplasm, with overt necrosis less common"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c030
+  section: ancillary
+  statement: "On electron microscopy the proximal tubular cells have fewer folds of the basolateral membrane"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c031
+  section: clinical
+  statement: "A rapidly rising serum creatinine is characteristic"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c032
+  section: clinical
+  statement: "Oliguria is the usual pattern, and nonoliguric injury is the less common one"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c033
+  section: clinical
+  statement: "Many patients develop uremia, even if only briefly, with hyperkalemia and metabolic acidosis, and some need dialysis"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c034
+  section: diagnosis
+  statement: "Urine findings help tell acute tubular injury apart from acute glomerulonephritis and acute tubulointerstitial nephritis"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c035
+  section: diagnosis
+  statement: "Prerenal ischemic injury typically has a fractional excretion of sodium below 1%"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c036
+  section: diagnosis
+  statement: "A fractional excretion of sodium above 2% marks overt tubular epithelial damage, as in intrarenal acute tubular injury"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c037
+  section: prognosis
+  statement: "Recovery begins when urine output increases and serum creatinine starts to fall"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c038
+  section: prognosis
+  statement: "How long the failure lasts varies; the cause, and whether it can be reversed, count most"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c039
+  section: prognosis
+  statement: "Stopping the cause as soon as injury begins may restore renal function within 1 to 2 weeks"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c040
+  section: prognosis
+  statement: "Recovery may take months"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c041
+  section: prognosis
+  statement: "Regenerating tubular cells in the recovery phase are crowded and enlarged, with large nuclei and mitoses"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c042
+  section: prognosis
+  statement: "The kidney regains its normal structure completely once the surviving cells have regrown"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c043
+  section: differential
+  statement: "In ischemic prerenal acute kidney injury the tubular epithelium is structurally unchanged and the fall in filtration is functional and reversible"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c044
+  section: differential
+  statement: "In acute tubular injury the urine sediment holds muddy brown casts together with tubular epithelial cells"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c045
+  section: differential
+  statement: "Red-cell casts and urinary protein point to acute glomerulonephritis"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c046
+  section: differential
+  statement: "White-cell casts and pus cells in the urine point to acute tubulointerstitial nephritis"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c047
+  section: high-yield
+  statement: "Acute kidney injury most often has an ischemic origin, and ischemic tubular injury is the commonest intrarenal form"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956, 958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c048
+  section: high-yield
+  statement: "In ischemic injury look for brown casts and a flat lining without brush border, while true necrosis is rare"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c049
+  section: high-yield
+  statement: "Toxic injury has more necrosis, largely in the proximal tubule, as in mercury poisoning"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956-957" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c050
+  section: high-yield
+  statement: "A fractional excretion of sodium above 2% marks overt tubular epithelial damage"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c051
+  section: high-yield
+  statement: "Recovery begins when urine output increases and serum creatinine starts to fall"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "958" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c052
+  section: traps
+  statement: "Overt necrosis is uncommon in typical ischemic injury, where the cells may be only flattened"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c053
+  section: traps
+  statement: "In ischemic acute kidney injury the tubular damage is patchy, not uniform"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c054
+  section: traps
+  statement: "Hemoglobinuria or myoglobinuria adds red-brown heme-colored casts, whereas ischemic casts are brown from cytochrome pigments"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15
+- claimId: acute-tubular-injury-c055
+  section: mnemonics
+  statement: "Ischemic injury is focal, with lost brush borders, sloughed apical cytoplasm and brown tubular casts"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "956" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-15

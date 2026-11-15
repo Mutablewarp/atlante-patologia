@@ -1,0 +1,151 @@
+id: acute-tubular-injury
+module: o22
+tier: core
+kind: process
+names:
+  it: "Danno tubulare acuto (necrosi tubulare acuta)"
+  en: "Acute tubular injury"
+  eponyms: []
+  synonyms:
+    it: ["Necrosi tubulare acuta"]
+    en: ["Acute tubular necrosis"]
+  abbreviations: ["ATI", "ATN"]
+summary:
+  it: "Danno delle cellule epiteliali dei tubuli renali, di solito ischemico o nefrotossico, che causa insufficienza renale acuta potenzialmente reversibile."
+  en: "Damage to the tubular epithelial cells of the kidney, usually ischemic or nephrotoxic, that causes potentially reversible acute kidney injury."
+lenses:
+  system: [kidney]
+  process: [cell-injury, hypoxic-ischemic-injury, necrosis, reversible-injury]
+  pattern: []
+  presentation: [ischemic-event]
+  marker: [laboratory]
+  group: [vascular, toxic-environmental]
+learningObjectives:
+  - it: "Distinguere il danno tubulare ischemico da quello nefrotossico per cause e per morfologia."
+    en: "Distinguish ischemic from nephrotoxic tubular injury by cause and morphology."
+  - it: "Descrivere l'aspetto microscopico: epitelio appiattito, orletto a spazzola perso, cilindri granulari bruni."
+    en: "Describe the microscopic picture: flattened epithelium, lost brush border, brown granular casts."
+  - it: "Spiegare perché il termine necrosi tubulare acuta è spesso improprio."
+    en: "Explain why the term acute tubular necrosis is often a misnomer."
+  - it: "Seguire le fasi dell'insufficienza renale acuta fino al recupero e ai suoi tempi."
+    en: "Follow the phases of acute kidney injury through to recovery and its timing."
+  - it: "Separare il danno tubulare dalle altre cause intrinseche di insufficienza renale acuta con il sedimento urinario."
+    en: "Separate tubular injury from other intrinsic causes of acute kidney injury using the urine sediment."
+prerequisites: [hypoxic-ischemic-injury]
+relations:
+  - type: sharesMechanism
+    target: hypoxic-ischemic-injury
+    note:
+      it: "Il tubulo prossimale è molto sensibile alla carenza di ossigeno e alla deplezione di ATP."
+      en: "The proximal tubule is highly sensitive to oxygen lack and ATP depletion."
+  - type: complicationOf
+    target: shock
+    note:
+      it: "Lo shock riduce la perfusione renale e può causare danno tubulare ischemico."
+      en: "Shock lowers renal perfusion and can cause ischemic tubular injury."
+  - type: complicationOf
+    target: rhabdomyolysis
+    note:
+      it: "La mioglobina in eccesso nelle urine danneggia i tubuli (nefropatia da pigmenti)."
+      en: "Excess urinary myoglobin injures tubules (pigment nephropathy)."
+  - type: differentialOf
+    target: postinfectious-glomerulonephritis
+    note:
+      it: "Cilindri eritrocitari e proteinuria, contro cilindri bruni sporchi e cellule epiteliali."
+      en: "Red blood cell casts and proteinuria, versus dirty brown casts and epithelial cells."
+  - type: differentialOf
+    target: drug-induced-interstitial-nephritis
+    note:
+      it: "Cilindri leucocitari e piuria, contro cilindri bruni sporchi e cellule epiteliali."
+      en: "White blood cell casts and pyuria, versus dirty brown casts and epithelial cells."
+quickCheck:
+  - id: acute-tubular-injury-q1
+    q:
+      it: "Perché il termine necrosi tubulare acuta è spesso improprio?"
+      en: "Why is the term acute tubular necrosis often a misnomer?"
+    a:
+      it: "Perché nella maggior parte dei danni ischemici le cellule sono solo appiattite e la necrosi franca è poco frequente."
+      en: "Because in most ischemic injury the cells are only flattened and overt necrosis is uncommon."
+    kind: short
+  - id: acute-tubular-injury-q2
+    q:
+      it: "Quali cilindri compaiono nel sedimento urinario e che cosa li colora?"
+      en: "Which casts appear in the urine sediment, and what colors them?"
+    a:
+      it: "Cilindri granulari bruni sporchi, colorati dai pigmenti citocromici; con emoglobinuria o mioglobinuria si aggiungono cilindri rosso-bruni colorati dall'eme."
+      en: "Dirty brown granular casts, colored by cytochrome pigments; with hemoglobinuria or myoglobinuria red-brown heme-colored casts are added."
+    kind: short
+  - id: acute-tubular-injury-q3
+    q:
+      it: "Quali segni annunciano la fase di recupero?"
+      en: "Which signs herald the recovery phase?"
+    a:
+      it: "Aumento della diuresi e calo della creatinina sierica."
+      en: "Rising urine output and falling serum creatinine."
+    kind: short
+  - id: acute-tubular-injury-q4
+    q:
+      it: "Quale valore della escrezione frazionale del sodio indica un danno epiteliale tubulare franco?"
+      en: "Which fractional excretion of sodium marks overt tubular epithelial damage?"
+    a:
+      it: "Un valore superiore al 2%; nell'insufficienza prerenale ischemica di solito è inferiore all'1%."
+      en: "A value above 2%; in prerenal ischemic injury it is typically below 1%."
+    kind: short
+  - id: acute-tubular-injury-q5
+    q:
+      it: "Che cosa distingue il danno nefrotossico da quello ischemico al microscopio?"
+      en: "What sets nephrotoxic injury apart from ischemic injury under the microscope?"
+    a:
+      it: "Le tossine causano più necrosi dell'ischemia, di solito nel tubulo prossimale, come nell'avvelenamento da mercurio."
+      en: "Toxins cause more necrosis than ischemia, usually in the proximal tubule, as in mercury poisoning."
+    kind: short
+selfExplain:
+  - it: "Perché le cellule tubulari sono particolarmente vulnerabili sia all'ischemia sia alle tossine?"
+    en: "Why are tubular cells especially vulnerable to both ischemia and toxins?"
+  - it: "Perché i cilindri nei tubuli riducono la filtrazione glomerulare?"
+    en: "Why do casts in the tubules reduce glomerular filtration?"
+chain:
+  - pathology:
+      it: "Danno tubulare ischemico con cilindri ostruenti"
+      en: "Ischemic tubular injury with obstructing casts"
+    sign:
+      it: "Oliguria"
+      en: "Oliguria"
+    lab:
+      it: "Aumento della creatinina sierica e cilindri bruni sporchi nel sedimento"
+      en: "Rising serum creatinine and dirty brown casts in the sediment"
+examQuestions:
+  - it: "Come distingue il danno tubulare ischemico da quello nefrotossico, per cause e per morfologia?"
+    en: "How do you tell ischemic from nephrotoxic tubular injury, by cause and by morphology?"
+    focus: [etiology, micro, differential]
+    level: 3
+  - it: "Che cosa vede al microscopio in un danno tubulare ischemico?"
+    en: "What do you see under the microscope in ischemic tubular injury?"
+    focus: [micro, gross]
+    level: 1
+  - it: "Mi parli delle fasi dell'insufficienza renale acuta da danno tubulare, dal quadro clinico al recupero."
+    en: "Tell me about the phases of acute kidney injury from tubular injury, from presentation to recovery."
+    focus: [clinical, prognosis]
+    level: 1
+  - it: "Perché il termine necrosi tubulare acuta è spesso improprio?"
+    en: "Why is the term acute tubular necrosis often a misnomer?"
+    focus: [definition, micro, traps]
+    level: 2
+  - it: "Perché la filtrazione glomerulare si riduce nel danno tubulare acuto?"
+    en: "Why does glomerular filtration fall in acute tubular injury?"
+    focus: [pathogenesis]
+    level: 2
+  - it: "Come distingue il danno tubulare acuto da una glomerulonefrite acuta e da una nefrite tubulointerstiziale acuta?"
+    en: "How do you tell acute tubular injury from acute glomerulonephritis and acute tubulointerstitial nephritis?"
+    focus: [diagnosis, differential]
+    level: 3
+images:
+  - { id: acute-tubular-injury-micro-1, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "22"
+    pages: "956-958"
+lastUpdated: 2026-11-15
+status: published
