@@ -93,7 +93,7 @@ Le pagine di riferimento non forniscono dettagli su campione, colorazioni specia
 - La **poliposi giovanile** (SMAD4, BMPR1A) aumenta il rischio di cancro gastrointestinale e pancreatico.<!--c:non-neoplastic-intestinal-polyps-c073-->
 - La poliposi giovanile richiede **cinque o più** polipi colorettali, oppure polipi fuori dal colon, oppure familiarità.<!--c:non-neoplastic-intestinal-polyps-c074-->
 - La sindrome di **Cowden** (PTEN) non aumenta il rischio di cancro gastrointestinale.<!--c:non-neoplastic-intestinal-polyps-c075-->
-- La sindrome di **Cronkhite–Canada** non è ereditaria e comporta **alopecia** e distrofia ungueale.<!--c:non-neoplastic-intestinal-polyps-c076-->
+- La sindrome di **Cronkhite–Canada** non è ereditaria e comporta alopecia e distrofia ungueale.<!--c:non-neoplastic-intestinal-polyps-c076-->
 
 ## Errori comuni e trappole d'esame
 
