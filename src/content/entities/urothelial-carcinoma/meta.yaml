@@ -1,0 +1,134 @@
+id: urothelial-carcinoma
+module: o23
+tier: core
+kind: disease
+names:
+  it: "Carcinoma uroteliale della vescica e delle vie urinarie"
+  en: "Urothelial carcinoma"
+  eponyms: []
+  synonyms:
+    it: ["Carcinoma a cellule transizionali"]
+    en: ["Transitional cell carcinoma"]
+  abbreviations: ["UC", "CIS", "PUNLMP"]
+summary:
+  it: "Tumore maligno dell'urotelio, più frequente nella vescica ma possibile in tutta la via urinaria, dal bacinetto all'uretra posteriore; si distingue in forme papillari di basso e alto grado, carcinoma in situ piatto e carcinoma invasivo."
+  en: "Malignant tumor of the urothelium, most often in the bladder but possible anywhere from the renal pelvis to the posterior urethra, ranging from low- and high-grade papillary forms and flat carcinoma in situ to invasive carcinoma."
+lenses:
+  system: [urinary-male-genital, kidney]
+  process: [neoplasia]
+  pattern: [dysplasia]
+  presentation: [hematuria, mass-lesion]
+  marker: [molecular, laboratory]
+  group: [neoplastic, toxic-environmental]
+learningObjectives:
+  - it: "Distinguere carcinoma in situ piatto, carcinoma papillare di basso e alto grado e carcinoma invasivo."
+    en: "Distinguish flat carcinoma in situ, low- and high-grade papillary carcinoma and invasive carcinoma."
+  - it: "Elencare i fattori di rischio e spiegare come le ammine aromatiche danneggiano il DNA dell'urotelio."
+    en: "List the risk factors and explain how aromatic amines damage urothelial DNA."
+  - it: "Applicare lo stadio pT, riconoscendo il limite tra T1 e invasione della muscularis propria (T2)."
+    en: "Apply pT staging, recognizing the border between T1 and invasion of the muscularis propria (T2)."
+  - it: "Spiegare l'effetto campo e il coinvolgimento delle vie urinarie alte."
+    en: "Explain the field effect and upper tract involvement."
+  - it: "Distinguere i tumori non uroteliali della vescica, rari, dal carcinoma uroteliale."
+    en: "Tell the rare non-urothelial bladder cancers apart from urothelial carcinoma."
+prerequisites: [carcinogenic-agents, tumor-grading-and-staging]
+relations:
+  - type: differentialOf
+    target: urothelial-metaplastic-lesions
+    note:
+      it: "Lesioni benigne iperplastiche e metaplastiche, senza evidenza di natura preneoplastica."
+      en: "Benign hyperplastic and metaplastic lesions, with no evidence of a preneoplastic nature."
+  - type: mimics
+    target: small-cell-lung-carcinoma
+    note:
+      it: "Il carcinoma neuroendocrino della vescica somiglia al carcinoma polmonare a piccole cellule."
+      en: "Bladder neuroendocrine carcinoma resembles small cell lung carcinoma."
+  - type: sharesMechanism
+    target: carcinogenic-agents
+    note:
+      it: "Le ammine aromatiche e gli idrocarburi del fumo agiscono come cancerogeni chimici."
+      en: "Aromatic amines and smoke hydrocarbons act as chemical carcinogens."
+quickCheck:
+  - id: urothelial-carcinoma-q1
+    q:
+      it: "Perché le ammine aromatiche danneggiano proprio l'urotelio vescicale?"
+      en: "Why do aromatic amines damage the bladder urothelium in particular?"
+    a:
+      it: "Coniugate all'acido glucuronico nel fegato ed eliminate con le urine, nella vescica vengono idrolizzate dalla β-glucuronidasi nell'urina acida e liberano ioni arilnitrenio mutageni."
+      en: "Conjugated to glucuronic acid in the liver and excreted in urine, they are hydrolyzed in the bladder by β-glucuronidase in acidic urine, releasing mutagenic arylnitrenium ions."
+    kind: short
+  - id: urothelial-carcinoma-q2
+    q:
+      it: "Quale stadio pT indica per la prima volta l'invasione della muscularis propria, e perché è importante?"
+      en: "Which pT stage first indicates invasion of the muscularis propria, and why does it matter?"
+    a:
+      it: "T2; da qui il tumore è muscolo-invasivo, la prognosi peggiora nettamente e si ricorre alla cistectomia radicale."
+      en: "T2; from here the tumor is muscle invasive, prognosis worsens markedly and radical cystectomy is used."
+    kind: short
+  - id: urothelial-carcinoma-q3
+    q:
+      it: "Che cosa significa effetto campo nel carcinoma uroteliale?"
+      en: "What does field effect mean in urothelial carcinoma?"
+    a:
+      it: "Tutto l'urotelio è un unico bersaglio degli stessi cancerogeni: i tumori sono multifocali, recidivano e interessano anche pelvi e uretere."
+      en: "The whole urothelium is one target of the same carcinogens, so tumors are multifocal, recur and also involve the pelvis and ureter."
+    kind: short
+  - id: urothelial-carcinoma-q4
+    q:
+      it: "Che differenza c'è tra carcinoma in situ e tumore T1?"
+      en: "What is the difference between carcinoma in situ and a T1 tumor?"
+    a:
+      it: "Il carcinoma in situ ha la membrana basale intatta e nessuna invasione dello stroma, mentre T1 invade la lamina propria."
+      en: "Carcinoma in situ has an intact basement membrane and no stromal invasion, while T1 invades the lamina propria."
+    kind: short
+selfExplain:
+  - it: "Perché il carcinoma in situ, pur senza invasione, richiede un trattamento e un controllo attento?"
+    en: "Why does carcinoma in situ, although noninvasive, need treatment and close follow-up?"
+  - it: "Perché dopo un tumore del bacinetto o dell'uretere compaiono spesso tumori vescicali?"
+    en: "Why do bladder tumors often follow a tumor of the renal pelvis or ureter?"
+chain:
+  - pathology:
+      it: "Carcinoma uroteliale papillare o invasivo della vescica"
+      en: "Papillary or invasive urothelial carcinoma of the bladder"
+    sign:
+      it: "Ematuria improvvisa"
+      en: "Sudden hematuria"
+    lab:
+      it: "Citologia urinaria e FISH sulle cellule urinarie"
+      en: "Urine cytology and FISH on urine cells"
+examQuestions:
+  - it: "Mi parli del carcinoma uroteliale: come si distinguono la forma papillare di basso e alto grado, il carcinoma in situ piatto e il carcinoma invasivo?"
+    en: "Tell me about urothelial carcinoma: how do low- and high-grade papillary carcinoma, flat carcinoma in situ and invasive carcinoma differ?"
+    focus: [micro, gross]
+    level: 1
+  - it: "Come distingue il carcinoma in situ da un tumore T1?"
+    en: "How do you tell carcinoma in situ from a T1 tumor?"
+    focus: [micro, diagnosis]
+    level: 3
+  - it: "Mi parli della stadiazione pT della vescica: perché l'invasione della muscularis propria è così importante?"
+    en: "Tell me about pT staging of the bladder: why does invasion of the muscularis propria matter so much?"
+    focus: [diagnosis, prognosis]
+    level: 2
+  - it: "Perché, dopo un tumore del bacinetto o dell'uretere, sono frequenti i tumori della vescica? Che cos'è l'effetto campo?"
+    en: "Why are bladder tumors common after a tumor of the renal pelvis or ureter? What is the field effect?"
+    focus: [pathogenesis, prognosis]
+    level: 2
+  - it: "Quali altri tumori maligni della vescica conosce, oltre al carcinoma uroteliale, e come li riconosce?"
+    en: "Which malignant bladder tumors other than urothelial carcinoma do you know, and how do you recognize them?"
+    focus: [differential, traps]
+    level: 3
+images:
+  - { id: urothelial-carcinoma-gross-1, role: gross, pairWith: urothelial-carcinoma-micro-1 }
+  - { id: urothelial-carcinoma-micro-1, role: micro }
+  - { id: urothelial-carcinoma-micro-2, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: true
+editionNote:
+  it: "Classificazione OMS e stadiazione TNM cambiano tra le edizioni: la scheda segue le tabelle del testo di riferimento e va confrontata con l'edizione corrente."
+  en: "The WHO classification and TNM staging change between editions: the card follows the tables of the reference text and should be checked against the current edition."
+sources:
+  - source: rubin-8e
+    chapter: "23"
+    pages: "979-980, 983-989"
+lastUpdated: 2026-11-16
+status: published
