@@ -1,0 +1,128 @@
+id: epididymitis-and-orchitis
+module: o23
+tier: extended
+kind: disease
+names:
+  it: "Orchiti ed epididimiti"
+  en: "Epididymitis and orchitis"
+  eponyms: []
+  synonyms:
+    it: ["Epididimo-orchite"]
+    en: ["Epididymo-orchitis"]
+  abbreviations: []
+summary:
+  it: "Infiammazione acuta o cronica dell'epididimo e/o del testicolo, di solito batterica (gonococco e Chlamydia nel giovane, E. coli nell'anziano), più raramente virale (parotite), tubercolare, sifilitica o granulomatosa idiopatica."
+  en: "Acute or chronic inflammation of the epididymis and/or testis, usually bacterial (gonorrhea and Chlamydia in the young, E. coli in the old), less often viral (mumps), tuberculous, syphilitic or idiopathic granulomatous."
+lenses:
+  system: [urinary-male-genital]
+  process: [acute-inflammation, chronic-inflammation, granulomatous-inflammation]
+  pattern: [granuloma, necrosis-caseous]
+  presentation: [fever]
+  marker: []
+  group: [infectious, inflammatory, immune]
+learningObjectives:
+  - it: "Distinguere l'epididimite batterica del giovane (gonococco, Chlamydia) da quella dell'anziano (E. coli da infezione urinaria)."
+    en: "Tell bacterial epididymitis of young men (gonorrhea, Chlamydia) from that of older men (E. coli from a urinary infection)."
+  - it: "Descrivere l'orchite da parotite: frequenza, lateralità e danno all'epitelio seminifero."
+    en: "Describe mumps orchitis: frequency, laterality and damage to the seminiferous epithelium."
+  - it: "Riconoscere l'epididimite tubercolare dai granulomi caseosi e dal deferente a corona di rosario."
+    en: "Recognize tuberculous epididymitis by its caseating granulomas and beaded vas deferens."
+  - it: "Distinguere l'orchite granulomatosa idiopatica (granulomi non caseosi, nessun germe) dalle forme tubercolare e sifilitica."
+    en: "Separate idiopathic granulomatous orchitis (noncaseating granulomas, no organisms) from the tuberculous and syphilitic forms."
+  - it: "Elencare le complicanze, in particolare l'infertilità."
+    en: "List the complications, especially infertility."
+prerequisites: []
+relations:
+  - type: sameLesionOtherOrgan
+    target: tuberculosis
+    note:
+      it: "L'epididimite tubercolare accompagna di solito una tubercolosi polmonare e renale già stabilita."
+      en: "Tuberculous epididymitis usually accompanies established pulmonary and renal tuberculosis."
+  - type: sameLesionOtherOrgan
+    target: syphilis
+    note:
+      it: "L'orchite sifilitica mostra infiammazione perivascolare o gomme."
+      en: "Syphilitic orchitis shows perivascular inflammation or gummas."
+quickCheck:
+  - id: epididymitis-and-orchitis-q1
+    q:
+      it: "Quali germi causano più spesso l'epididimite nel giovane e nell'anziano?"
+      en: "Which organisms most often cause epididymitis in young and in older men?"
+    a:
+      it: "Nel giovane gonococco e Chlamydia trasmessi sessualmente; nell'anziano E. coli da infezione urinaria."
+      en: "In the young, sexually acquired gonorrhea and Chlamydia; in the older, E. coli from a urinary infection."
+    kind: short
+  - id: epididymitis-and-orchitis-q2
+    q:
+      it: "Che cosa distingue l'orchite granulomatosa idiopatica dalla tubercolosi?"
+      en: "What separates idiopathic granulomatous orchitis from tuberculosis?"
+    a:
+      it: "I granulomi non sono caseosi e non si trovano né germi né residui di spermatozoi."
+      en: "The granulomas are noncaseating, with neither organisms nor sperm remnants."
+    kind: short
+  - id: epididymitis-and-orchitis-q3
+    q:
+      it: "Quale complicanza riproduttiva può lasciare un'epididimite gonococcica?"
+      en: "Which reproductive complication can gonorrheal epididymitis leave?"
+    a:
+      it: "Infertilità maschile acquisita."
+      en: "Acquired male infertility."
+    kind: short
+  - id: epididymitis-and-orchitis-q4
+    q:
+      it: "Quale reperto macroscopico fa pensare a un'epididimite tubercolare?"
+      en: "Which gross finding suggests tuberculous epididymitis?"
+    a:
+      it: "Un epididimo ingrandito alla palpazione e un deferente a corona di rosario, per la fusione di granulomi caseosi."
+      en: "A palpably enlarged epididymis and a beaded vas deferens, from caseating granulomas running together."
+    kind: short
+  - id: epididymitis-and-orchitis-q5
+    q:
+      it: "Nell'orchite da parotite, quanti testicoli sono colpiti di solito e che cosa accade alla spermatogenesi?"
+      en: "In mumps orchitis, how many testes are usually affected and what happens to spermatogenesis?"
+    a:
+      it: "Di solito un solo testicolo; la spermatogenesi viene interrotta."
+      en: "Usually one testis; spermatogenesis is interrupted."
+    kind: short
+selfExplain:
+  - it: "Perché uno spermatogranuloma, in cui gli spermatozoi sono usciti dalle vie normali, può portare a infertilità?"
+    en: "Why can a spermatic granuloma, where sperm have escaped their normal pathways, lead to infertility?"
+  - it: "Perché un'epididimite cronica che persiste può finire con dotti ostruiti?"
+    en: "Why can chronic epididymitis that persists end in blocked ducts?"
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+examQuestions:
+  - it: "Mi parli dell'epididimite batterica: quali germi sono più frequenti nel giovane e quali nell'anziano?"
+    en: "Tell me about bacterial epididymitis: which organisms are most common in young men and which in older men?"
+    focus: [etiology, high-yield]
+    level: 1
+  - it: "Mi parli dell'orchite da parotite: che cosa vede al microscopio e quali conseguenze può avere?"
+    en: "Tell me about mumps orchitis: what do you see under the microscope and what can follow?"
+    focus: [micro, prognosis]
+    level: 1
+  - it: "Come distingue un'epididimite tubercolare da un'orchite granulomatosa idiopatica?"
+    en: "How do you tell tuberculous epididymitis from idiopathic granulomatous orchitis?"
+    focus: [micro, differential]
+    level: 3
+  - it: "Perché un'epididimite gonococcica può portare a infertilità?"
+    en: "Why can gonorrheal epididymitis lead to infertility?"
+    focus: [prognosis, pathogenesis]
+    level: 2
+  - it: "Perché l'orchite senza coinvolgimento dell'epididimo ha di solito un'origine diversa dall'epididimo-orchite?"
+    en: "Why does orchitis without epididymal involvement usually have a different origin from epididymo-orchitis?"
+    focus: [pathogenesis]
+    level: 2
+images:
+  - id: epididymitis-and-orchitis-gross-1
+    role: gross
+    pairWith: epididymitis-and-orchitis-micro-2
+  - id: epididymitis-and-orchitis-micro-1
+    role: micro
+  - id: epididymitis-and-orchitis-micro-2
+    role: micro
+sources:
+  - source: rubin-8e
+    chapter: "23"
+    pages: "998-999"
+lastUpdated: 2026-11-16
+status: published

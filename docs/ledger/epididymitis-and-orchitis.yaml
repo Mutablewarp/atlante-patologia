@@ -1,0 +1,394 @@
+entity: epididymitis-and-orchitis
+claims:
+  - claimId: epididymitis-and-orchitis-c001
+    section: definition
+    statement: "Most epididymitis is bacterial; the epididymis becomes inflamed, either suddenly or over a long course."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "998" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c002
+    section: definition
+    statement: "Orchitis means an inflamed testis, with an acute or a chronic course."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "999" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c003
+    section: definition
+    statement: "Testicular inflammation can occur together with epididymitis (epididymo-orchitis) or as isolated orchitis."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "999" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c004
+    section: etiology
+    statement: "When a young man gets acute bacterial epididymitis, the cause is most often gonorrhea or sexually acquired Chlamydia."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "998" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c005
+    section: etiology
+    statement: "In older men, bacterial epididymitis more often comes from E. coli spreading from a urinary tract infection."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "998" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c006
+    section: etiology
+    statement: "Gram-negative bacteria cause most bacterial orchitis, which usually coexists with epididymitis and often follows a urinary infection."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "999" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c007
+    section: etiology
+    statement: "Orchitis complicates mumps in 20% of affected men."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "999" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c008
+    section: etiology
+    statement: "Patients with established pulmonary and renal tuberculosis are the usual ones to get tuberculous epididymitis, which is now uncommon."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "998" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c009
+    section: etiology
+    statement: "Syphilis can cause orchitis."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "999" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c010
+    section: etiology
+    statement: "Autoimmune disease can cause orchitis."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "998-999" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c011
+    section: pathogenesis
+    statement: "Ascending infection is the usual origin of epididymo-orchitis."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "999" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c012
+    section: pathogenesis
+    statement: "Orchitis without epididymal involvement mostly results from pathogens carried in the blood."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "999" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c013
+    section: pathogenesis
+    statement: "A spermatic granuloma forms when sperm escape their normal pathways and trigger a strong inflammatory reaction."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "998" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c014
+    section: pathogenesis
+    statement: "Trauma that ruptures the epididymal ducts may be one contributing factor in spermatic granuloma."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "998" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c015
+    section: pathogenesis
+    statement: "Type IV, cell-mediated hypersensitivity is the proposed mechanism of granulomatous orchitis of unknown cause."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "999" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c016
+    section: gross
+    statement: "Caseating granulomas run together in tuberculous epididymitis, giving a palpably enlarged epididymis and a beaded vas deferens."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "998" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c017
+    section: gross
+    statement: "Bacterial orchitis can also lead to pus and fibrosis around the testis, or to an abscess within it."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "999" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c018
+    section: micro
+    statement: "Neutrophils are abundant inside the ducts in recent bacterial epididymitis, which looks like acute suppurative inflammation."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "998" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c019
+    section: micro
+    statement: "In long-standing epididymitis, macrophages join an infiltrate of lymphocytes and plasma cells."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "998" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c020
+    section: micro
+    statement: "Spermatic granuloma shows macrophages that have taken up sperm among many sperm fragments and mixed inflammatory cells."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "998" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c021
+    section: micro
+    statement: "Mumps (viral) orchitis interrupts spermatogenesis; mononuclear cells infiltrate the interstitium and in places enter tubule lumens."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "999" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c022
+    section: micro
+    statement: "Syphilitic orchitis takes one of two forms: gummas, or perivascular interstitial inflammation that includes plasma cells."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "999" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c023
+    section: micro
+    statement: "In granulomatous orchitis the granulomas do not caseate, and none contains organisms or sperm remnants."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "999" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c024
+    section: ancillary
+    statement: "Under the microscope, whether granulomas caseate and whether sperm remnants or organisms are present helps separate the granulomatous forms."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "998-999" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c025
+    section: clinical
+    statement: "Epididymitis presents with a tender, painful scrotum, with or without fever."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "998" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c026
+    section: clinical
+    statement: "One testis is most often the one affected in mumps orchitis, which brings pain and swelling."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "999" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c027
+    section: clinical
+    statement: "In midlife, slow testicular hardening or sudden painful swelling suggests granulomatous orchitis."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "999" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c028
+    section: clinical
+    statement: "Weeks or months of scrotal pain and swelling are common in spermatic granuloma."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "998" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c029
+    section: diagnosis
+    statement: "The granulomas of idiopathic granulomatous orchitis do not caseate, and no organism or sperm debris accounts for them; the pages state no diagnostic rule."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "998-999" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c030
+    section: prognosis
+    statement: "A frequent route to acquired infertility in men is gonorrheal epididymitis."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "998" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c031
+    section: prognosis
+    statement: "The infected ducts eventually become blocked by fibrosis when chronic epididymitis persists."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "998" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c032
+    section: prognosis
+    statement: "A spermatic granuloma can end in infertility because the inflammation scars the surrounding tissue and obstructs the ducts."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "998" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c033
+    section: prognosis
+    statement: "Mumps orchitis destroys and removes seminiferous epithelium through interstitial inflammation."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "999" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c034
+    section: prognosis
+    statement: "The number of seminiferous tubules destroyed in granulomatous orchitis varies."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "999" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c035
+    section: differential
+    statement: "Tuberculous epididymitis shows caseating granulomas and epididymal enlargement, usually with established pulmonary and renal tuberculosis."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "998" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c036
+    section: differential
+    statement: "Granulomatous orchitis shows granulomas that do not caseate, with no organisms or sperm remnants."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "999" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c037
+    section: differential
+    statement: "Syphilitic orchitis shows perivascular inflammation that includes plasma cells, or gummas."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "999" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c038
+    section: differential
+    statement: "Spermatic granuloma shows sperm fragments and macrophages that have ingested sperm in the epididymis."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "998" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c039
+    section: differential
+    statement: "Bacterial epididymitis shows neutrophils in the ducts and is caused by sexually acquired organisms or E. coli."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "998" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c040
+    section: differential
+    statement: "Testicular malakoplakia looks like malakoplakia in other organs, and E. coli infection is the typical association."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "999" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c041
+    section: high-yield
+    statement: "Young men typically have gonorrhea or Chlamydia epididymitis, older men E. coli from the urinary tract."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "998" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c042
+    section: high-yield
+    statement: "Tuberculous epididymitis causes a beaded vas deferens and has caseating granulomas."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "998" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c043
+    section: high-yield
+    statement: "Mumps orchitis has become uncommon with immunization; when it occurs, it is most often unilateral."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "999" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c044
+    section: high-yield
+    statement: "Granulomatous orchitis has noncaseating granulomas, no organisms, and a type IV hypersensitivity mechanism."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "999" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c045
+    section: high-yield
+    statement: "Gonorrheal epididymitis can cause male infertility."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "998" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c046
+    section: traps
+    statement: "Epididymitis is not always sexually transmitted: in older men the commoner cause is E. coli spreading from the urinary tract."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "998" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c047
+    section: traps
+    statement: "Granulomas in the testis do not always mean tuberculosis: granulomatous orchitis of unknown cause has noncaseating granulomas and no organisms."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "999" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c048
+    section: traps
+    statement: "Vaccination against mumps has made mumps orchitis rare."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "999" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: epididymitis-and-orchitis-c049
+    section: mnemonics
+    statement: "Gonorrhea and Chlamydia in young men and E. coli in older men are the usual causes of bacterial epididymitis."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "998" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
