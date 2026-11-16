@@ -1,0 +1,140 @@
+id: renal-cell-carcinoma
+module: o22
+tier: core
+kind: disease
+names:
+  it: "Carcinoma a cellule renali"
+  en: "Renal cell carcinoma"
+  eponyms: []
+  synonyms:
+    it: ["Carcinoma renale", "Adenocarcinoma renale"]
+    en: ["Renal carcinoma", "Renal adenocarcinoma"]
+  abbreviations: ["RCC"]
+summary:
+  it: "Tumore maligno dell'epitelio dei tubuli e dei dotti renali, il più frequente tra i tumori primitivi del rene, con quattro istotipi principali (a cellule chiare, papillare, cromofobo, dei dotti collettori) e sindromi paraneoplastiche frequenti."
+  en: "Malignant tumor of the epithelium of renal tubules and ducts, the most common primary kidney cancer, with four main types (clear cell, papillary, chromophobe, collecting duct) and frequent paraneoplastic syndromes."
+lenses:
+  system: [kidney]
+  process: [neoplasia]
+  pattern: []
+  presentation: [hematuria, mass-lesion, incidental-finding, fever]
+  marker: [molecular, special-stains]
+  group: [neoplastic, genetic]
+learningObjectives:
+  - it: "Elencare i quattro istotipi principali di carcinoma a cellule renali con la frequenza relativa e la cellula di origine."
+    en: "List the four main types of renal cell carcinoma with their relative frequency and cell of origin."
+  - it: "Spiegare come la perdita del gene VHL porta all'accumulo di HIF-α e al carcinoma a cellule chiare."
+    en: "Explain how loss of the VHL gene leads to HIF-α accumulation and clear cell carcinoma."
+  - it: "Descrivere il grading nucleare WHO/ISUP in base alla visibilità dei nucleoli."
+    en: "Describe WHO/ISUP nuclear grading based on nucleolar visibility."
+  - it: "Riconoscere le presentazioni cliniche, comprese le sindromi paraneoplastiche, e i fattori prognostici."
+    en: "Recognize the clinical presentations, including paraneoplastic syndromes, and the prognostic factors."
+prerequisites: [neoplasia-nomenclature]
+relations:
+  - type: differentialOf
+    target: wilms-tumor
+    note:
+      it: "Il tumore di Wilms è il tumore renale tipico dell'età pediatrica."
+      en: "Wilms tumor is the typical kidney tumor of childhood."
+  - type: differentialOf
+    target: urothelial-carcinoma
+    note:
+      it: "Il carcinoma uroteliale della pelvi o dei calici ha l'aspetto di quello vescicale."
+      en: "Urothelial carcinoma of the pelvis or calyces looks like the bladder tumor."
+  - type: sharesMechanism
+    target: inherited-cancer-syndromes
+    note:
+      it: "Il 5% circa dei casi è ereditario (VHL, papillare ereditario, Birt-Hogg-Dubé)."
+      en: "About 5% of cases are inherited (VHL, hereditary papillary, Birt-Hogg-Dubé)."
+quickCheck:
+  - id: renal-cell-carcinoma-q1
+    q:
+      it: "Perché il citoplasma del carcinoma a cellule chiare appare chiaro al microscopio?"
+      en: "Why does the cytoplasm of clear cell carcinoma look clear under the microscope?"
+    a:
+      it: "Lipidi e glicogeno abbondanti vengono rimossi durante la preparazione del tessuto."
+      en: "Abundant lipid and glycogen are removed during tissue preparation."
+    kind: short
+  - id: renal-cell-carcinoma-q2
+    q:
+      it: "Quale gene è perso in quasi tutti i carcinomi a cellule chiare sporadici e che cosa si accumula di conseguenza?"
+      en: "Which gene is lost in nearly all sporadic clear cell carcinomas, and what accumulates as a result?"
+    a:
+      it: "Il gene VHL (3p25); si accumula HIF-α."
+      en: "The VHL gene (3p25); HIF-α accumulates."
+    kind: short
+  - id: renal-cell-carcinoma-q3
+    q:
+      it: "Quali tre sostanze ectopiche possono produrre sindromi paraneoplastiche nel carcinoma a cellule renali?"
+      en: "Which three ectopic substances can cause paraneoplastic syndromes in renal cell carcinoma?"
+    a:
+      it: "Un peptide simile al PTH, l'eritropoietina e la renina."
+      en: "A PTH-like peptide, erythropoietin and renin."
+    kind: short
+  - id: renal-cell-carcinoma-q4
+    q:
+      it: "Qual è il segno d'esordio più frequente del carcinoma a cellule renali?"
+      en: "What is the most frequent presenting sign of renal cell carcinoma?"
+    a:
+      it: "L'ematuria."
+      en: "Hematuria."
+    kind: short
+  - id: renal-cell-carcinoma-q5
+    q:
+      it: "Qual è il fattore prognostico più importante?"
+      en: "Which is the most important prognostic factor?"
+    a:
+      it: "Lo stadio del tumore."
+      en: "Tumor stage."
+    kind: short
+selfExplain:
+  - it: "Perché la perdita di VHL favorisce la crescita tumorale?"
+    en: "Why does loss of VHL promote tumor growth?"
+  - it: "Perché il carcinoma a cellule renali è detto «grande imitatore»?"
+    en: "Why is renal cell carcinoma called a \"great mimic\"?"
+chain:
+  - pathology:
+      it: "Carcinoma a cellule renali che secerne eritropoietina"
+      en: "Renal cell carcinoma secreting erythropoietin"
+    sign:
+      it: "Eritrocitosi"
+      en: "Erythrocytosis"
+    lab:
+      it: "Emoglobina ed ematocrito elevati"
+      en: "Raised hemoglobin and hematocrit"
+examQuestions:
+  - it: "Mi parli dei quattro istotipi principali del carcinoma a cellule renali: frequenza e cellula di origine."
+    en: "Tell me about the four main types of renal cell carcinoma: their frequency and cell of origin."
+    focus: [definition, pathogenesis]
+    level: 1
+  - it: "Perché la perdita del gene VHL porta al carcinoma a cellule chiare?"
+    en: "Why does loss of the VHL gene lead to clear cell carcinoma?"
+    focus: [pathogenesis]
+    level: 2
+  - it: "Come si assegna il grado nucleare WHO/ISUP in un carcinoma a cellule renali?"
+    en: "How is the WHO/ISUP nuclear grade assigned in renal cell carcinoma?"
+    focus: [micro]
+    level: 2
+  - it: "Quali sindromi paraneoplastiche può dare il carcinoma a cellule renali, e attraverso quali sostanze?"
+    en: "Which paraneoplastic syndromes can renal cell carcinoma cause, and through which substances?"
+    focus: [clinical]
+    level: 2
+  - it: "Che cosa vede al microscopio in un carcinoma a cellule chiare, e come lo distingue da un carcinoma cromofobo?"
+    en: "What do you see under the microscope in a clear cell carcinoma, and how do you tell it from a chromophobe carcinoma?"
+    focus: [micro, ancillary]
+    level: 3
+images:
+  - { id: renal-cell-carcinoma-gross-1, role: gross }
+  - { id: renal-cell-carcinoma-micro-1, role: micro, pairWith: renal-cell-carcinoma-gross-1 }
+  - { id: renal-cell-carcinoma-micro-2, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: true
+editionNote:
+  it: "La classificazione e il grading dei tumori renali sono cambiati tra le edizioni: tipi, frequenze e gradi vanno confrontati con la classificazione WHO e con il manuale di stadiazione correnti."
+  en: "Classification and grading of renal tumors changed between editions: compare types, frequencies and grades with the current WHO classification and staging manual."
+sources:
+  - source: rubin-8e
+    chapter: "22"
+    pages: "971-973"
+lastUpdated: 2026-11-16
+status: published
