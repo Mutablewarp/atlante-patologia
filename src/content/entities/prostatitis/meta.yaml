@@ -1,0 +1,138 @@
+id: prostatitis
+module: o23
+tier: core
+kind: disease
+names:
+  it: "Prostatiti"
+  en: "Prostatitis"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: []
+summary:
+  it: "Infiammazione della prostata, acuta o cronica, in genere da coliformi ma spesso senza causa identificata; può aumentare il PSA e imitare un carcinoma."
+  en: "Inflammation of the prostate, acute or chronic, usually from coliform bacteria but often without an identified cause; it can raise PSA and mimic carcinoma."
+lenses:
+  system: [urinary-male-genital]
+  process: [acute-inflammation, chronic-inflammation, granulomatous-inflammation]
+  pattern: [granuloma]
+  presentation: []
+  marker: [laboratory]
+  group: [inflammatory, infectious]
+learningObjectives:
+  - it: "Distinguere prostatite acuta, cronica batterica, non batterica e granulomatosa."
+    en: "Distinguish acute, chronic bacterial, nonbacterial and granulomatous prostatitis."
+  - it: "Descrivere il quadro istologico tipico di ciascuna forma."
+    en: "Describe the typical histology of each form."
+  - it: "Spiegare perché una prostatite cronica può far aumentare il PSA e perché spesso si arriva alla diagnosi con una biopsia."
+    en: "Explain why chronic prostatitis can raise PSA and why the diagnosis often comes from a biopsy."
+  - it: "Elencare le cause rare di prostatite granulomatosa, compreso il BCG."
+    en: "List the rare causes of granulomatous prostatitis, including BCG."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: prostatic-adenocarcinoma
+    note:
+      it: "Entrambe possono aumentare il PSA; la biopsia le distingue."
+      en: "Both can raise PSA; biopsy separates them."
+  - type: differentialOf
+    target: benign-prostatic-hyperplasia
+    note:
+      it: "Una prostatite aspecifica è frequente nei noduli iperplastici."
+      en: "Nonspecific prostatitis is common in hyperplastic nodules."
+  - type: sameMarker
+    target: serum-tumor-markers
+    note:
+      it: "Il PSA è il marcatore sierico in gioco."
+      en: "PSA is the serum marker involved."
+quickCheck:
+  - id: prostatitis-q1
+    q:
+      it: "Quali sono le quattro forme di prostatite da conoscere?"
+      en: "What are the four forms of prostatitis to know?"
+    a:
+      it: "Acuta, cronica batterica, non batterica e granulomatosa."
+      en: "Acute, chronic bacterial, nonbacterial and granulomatous."
+    kind: short
+  - id: prostatitis-q2
+    q:
+      it: "Che cosa mostrano spesso le biopsie prostatiche fatte per sospetto cancro?"
+      en: "What do prostate biopsies taken for suspected cancer often show?"
+    a:
+      it: "Spesso risultano mostrare una prostatite cronica."
+      en: "They often turn out to show chronic prostatitis."
+    kind: short
+  - id: prostatitis-q3
+    q:
+      it: "Qual è l'aspetto istologico più comune della prostatite non batterica?"
+      en: "What is the most common histology of nonbacterial prostatitis?"
+    a:
+      it: "Ghiandole dilatate piene di neutrofili e macrofagi schiumosi, circondate da cellule infiammatorie croniche."
+      en: "Enlarged gland lumens holding neutrophils and foamy macrophages, with chronic inflammatory cells in the tissue around them."
+    kind: short
+  - id: prostatitis-q4
+    q:
+      it: "Qual è la causa più comune di prostatite granulomatosa?"
+      en: "What is the most common cause of granulomatous prostatitis?"
+    a:
+      it: "Nella maggior parte dei casi la causa non viene dimostrata; solo di rado si trova un agente specifico, come Histoplasma, BCG o M. tuberculosis."
+      en: "In most cases no cause is demonstrated; only occasionally is a specific agent found, such as Histoplasma, BCG or M. tuberculosis."
+    kind: short
+  - id: prostatitis-q5
+    q:
+      it: "Come si arriva alla diagnosi di prostatite non batterica?"
+      en: "How is nonbacterial prostatitis diagnosed?"
+    a:
+      it: "In pratica per esclusione, dopo aver escluso altre condizioni."
+      en: "In practice by exclusion, after other conditions have been ruled out."
+    kind: short
+selfExplain:
+  - it: "Perché la prostatite acuta compare spesso come complicanza di un'altra infezione urinaria?"
+    en: "Why does acute prostatitis often appear as a complication of another urinary infection?"
+  - it: "Perché l'urina che refluisce nella prostata può portare a una prostatite batterica?"
+    en: "Why can urine refluxing into the prostate lead to bacterial prostatitis?"
+  - it: "Perché un PSA alto non basta a distinguere una prostatite cronica da un carcinoma?"
+    en: "Why is a high PSA not enough to tell chronic prostatitis from carcinoma?"
+chain:
+  - pathology:
+      it: "Prostatite cronica"
+      en: "Chronic prostatitis"
+    sign:
+      it: "Sintomi urinari variabili, o nessun sintomo"
+      en: "Variable urinary symptoms, or none"
+    lab:
+      it: "PSA sierico aumentato"
+      en: "Raised serum PSA"
+examQuestions:
+  - it: "Mi parli delle prostatiti: quali forme conosce e come le distingue?"
+    en: "Tell me about prostatitis: which forms do you know and how do you tell them apart?"
+    focus: [definition, micro]
+    level: 1
+  - it: "Come rispondono agli antibiotici la prostatite acuta e quella cronica batterica?"
+    en: "How do acute and chronic bacterial prostatitis respond to antibiotics?"
+    focus: [prognosis]
+    level: 2
+  - it: "Che cosa vede al microscopio in una prostatite cronica non batterica?"
+    en: "What do you see under the microscope in chronic nonbacterial prostatitis?"
+    focus: [micro]
+    level: 1
+  - it: "Mi parli della prostatite granulomatosa: quali cause conosce e come si arriva alla diagnosi?"
+    en: "Tell me about granulomatous prostatitis: which causes do you know, and how is it diagnosed?"
+    focus: [etiology, micro, ancillary]
+    level: 2
+  - it: "Un paziente ha il PSA alto: può dipendere da una prostatite cronica, e che cosa mostrano spesso le biopsie fatte per sospetto cancro?"
+    en: "A patient has a high PSA: can chronic prostatitis be the cause, and what do biopsies taken for suspected cancer often show?"
+    focus: [diagnosis, differential, traps]
+    level: 3
+images:
+  - { id: prostatitis-micro-1, role: micro }
+  - { id: prostatitis-micro-2, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "23"
+    pages: "1006-1007"
+lastUpdated: 2026-11-16
+status: published

@@ -1,0 +1,394 @@
+entity: prostatitis
+claims:
+  - claimId: prostatitis-c001
+    section: definition
+    statement: "Prostatitis means inflammation of the prostate and has acute and chronic forms."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c002
+    section: definition
+    statement: "Many patients have no identified cause; when there is one, it is usually a coliform uropathogen."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c003
+    section: definition
+    statement: "The patterns described are acute prostatitis, chronic bacterial prostatitis, nonbacterial prostatitis and granulomatous prostatitis."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c004
+    section: definition
+    statement: "Chronic nonbacterial prostatitis is the commonest form in pathology specimens."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c005
+    section: definition
+    statement: "Men over 50 are the typical patients with nonbacterial prostatitis, but other ages are not excluded."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c006
+    section: etiology
+    statement: "Acute prostatitis usually arises on top of an infection elsewhere in the urinary tract."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c007
+    section: etiology
+    statement: "Urine refluxing into the prostate is one contributor to chronic bacterial prostatitis."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c008
+    section: etiology
+    statement: "A blocked duct inside the gland, or stones in it, can also help chronic bacterial prostatitis develop."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c009
+    section: etiology
+    statement: "U. urealyticum, Mycoplasma and C. trachomatis may explain some nonbacterial cases."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c010
+    section: etiology
+    statement: "In most cases of granulomatous prostatitis the cause cannot be established."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c011
+    section: etiology
+    statement: "A specific agent is only occasionally identified, such as the fungus Histoplasma capsulatum, BCG or M. tuberculosis."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c012
+    section: etiology
+    statement: "Granulomas resembling rheumatoid nodules have followed transurethral resection of the prostate."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c013
+    section: pathogenesis
+    statement: "In acute prostatitis, urine carrying bacteria backs up into the gland."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c014
+    section: pathogenesis
+    statement: "A chronic bacterial case can begin with an acute episode, but it does not have to."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c015
+    section: pathogenesis
+    statement: "Granulomas occur where prostatic ducts and acini are locally destroyed, with scarring appearing later."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c016
+    section: micro
+    statement: "In acute prostatitis, acute inflammatory cells infiltrate both the acini and the stroma."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c017
+    section: micro
+    statement: "Macrophages, plasma cells and lymphocytes typically infiltrate the gland in chronic bacterial prostatitis."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c018
+    section: micro
+    statement: "In nonbacterial prostatitis the gland lumens are widened and packed with neutrophils and foamy macrophages, with chronic inflammatory cells around them."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "fixer-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c019
+    section: micro
+    statement: "Granulomatous prostatitis shows caseating or noncaseating granulomas."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c020
+    section: ancillary
+    statement: "Biopsies taken to look for cancer often turn out to show chronic prostatitis."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c021
+    section: ancillary
+    statement: "Granulomatous prostatitis is diagnosed histologically."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c022
+    section: clinical
+    statement: "Patients with acute prostatitis feel intense discomfort when they urinate."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c023
+    section: clinical
+    statement: "Perineal pain, fever and chills often come with acute prostatitis."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c024
+    section: clinical
+    statement: "Burning at the urethral opening and dysuria are the usual complaints of chronic bacterial prostatitis."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c025
+    section: clinical
+    statement: "Waking at night to urinate may also occur in chronic bacterial prostatitis, as may pain in the low back, the perineum or above the pubis."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c026
+    section: clinical
+    statement: "Some patients with nonbacterial prostatitis have no symptoms, while others have complaints resembling chronic bacterial prostatitis."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c027
+    section: clinical
+    statement: "Symptoms of chronic granulomatous prostatitis are vague."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c028
+    section: clinical
+    statement: "Symptoms of chronic prostatitis are highly variable."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c029
+    section: clinical
+    statement: "Chronic prostatitis may elevate serum prostate-specific antigen."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c030
+    section: diagnosis
+    statement: "Bacteria are usually found in the urine of patients with chronic bacterial prostatitis."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c031
+    section: diagnosis
+    statement: "In practice, nonbacterial prostatitis is diagnosed only after other conditions have been excluded."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c032
+    section: diagnosis
+    statement: "A high PSA raises concern for prostatic malignancy."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c033
+    section: prognosis
+    statement: "Antibiotics work well in most patients with acute prostatitis."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c034
+    section: prognosis
+    statement: "A long course of antibiotics cures chronic bacterial prostatitis in many patients, but not in all."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c035
+    section: prognosis
+    statement: "Nonbacterial prostatitis usually has no specific treatment."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c036
+    section: differential
+    statement: "Chronic prostatitis can elevate serum PSA, which suggests prostatic malignancy."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c037
+    section: differential
+    statement: "Hyperplastic prostatic nodules often contain nonspecific prostatitis."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1007" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c038
+    section: differential
+    statement: "M. tuberculosis is among the rare identifiable causes of granulomatous prostatitis."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c039
+    section: high-yield
+    statement: "Acute prostatitis starts when urine carrying bacteria backs up into the gland."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c040
+    section: high-yield
+    statement: "Nonbacterial prostatitis is a diagnosis of exclusion in practice."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c041
+    section: high-yield
+    statement: "Macrophages, plasma cells and lymphocytes are typical of chronic bacterial prostatitis."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c042
+    section: high-yield
+    statement: "Fungi, BCG and M. tuberculosis are rare identifiable causes of granulomatous prostatitis."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c043
+    section: high-yield
+    statement: "Chronic prostatitis may elevate serum PSA."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c044
+    section: high-yield
+    statement: "Antibiotics work well in most patients with acute prostatitis."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c045
+    section: traps
+    statement: "Chronic prostatitis may raise PSA, and biopsies taken for suspected cancer often turn out to show prostatitis."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c046
+    section: traps
+    statement: "Some chronic prostatitis cases yield no organism, and nonbacterial prostatitis is diagnosed by exclusion."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c047
+    section: traps
+    statement: "For most patients with granulomatous prostatitis no cause is ever demonstrated."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c048
+    section: traps
+    statement: "Nonbacterial prostatitis may be asymptomatic."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: prostatitis-c049
+    section: mnemonics
+    statement: "The patterns of prostatitis are acute, chronic bacterial, nonbacterial and granulomatous."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1006" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16

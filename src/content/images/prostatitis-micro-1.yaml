@@ -1,0 +1,54 @@
+id: prostatitis-micro-1
+file: prostatitis-micro-1.jpg
+kind: micro
+sourceUrl: https://commons.wikimedia.org/wiki/File:Inflammation_of_prostate.jpg
+author: Nephron
+license: CC-BY-SA-3.0
+licenseUrl: https://creativecommons.org/licenses/by-sa/3.0
+retrievedAt: 2026-11-16
+modifications:
+  it: >-
+    Usata la versione da 1920 px di Wikimedia, ridotta dall'originale da 2608 px e ricodificata in JPEG. Nessun ritaglio,
+    nessuna modifica dei colori, nessuna etichetta aggiunta all'immagine.
+  en: >-
+    Used the 1920 px Wikimedia rendition, downscaled from the 2608 px original and re-encoded as JPEG. No crop, no color
+    change, no labels added to the image.
+attributionText: "Nephron, own work, via Wikimedia Commons, CC BY-SA 3.0"
+patientIdentifiable: false
+ownerApproved: true
+verifiedBy: { who: agent, name: image-agent, date: 2026-11-16 }
+group: prostatitis-chronic
+stain: H&E
+magnification: medium power
+section: paraffin
+lookFor:
+  it: "Cerca il gruppo scuro di cellule rotonde piccole tra le ghiandole, poi confrontalo con la ghiandola a sinistra, quasi priva di infiltrato."
+  en: "Find the dark cluster of small round cells between the glands, then compare it with the gland on the left, which has almost no infiltrate."
+caption:
+  it: >-
+    Prostata con infiammazione cronica, EE a medio ingrandimento. Parti dalle ghiandole, con l'epitelio violaceo
+    attorno a lumi chiari, immerse in uno stroma rosa. Tra le ghiandole centrali, e attorno a esse, si addensa un
+    infiltrato di cellule piccole e rotonde con nucleo scuro: sono cellule infiammatorie croniche. La ghiandola a
+    sinistra ne ha poche ed è utile come confronto. Il quadro è quello di una prostatite cronica; solo la biopsia
+    permette di distinguerlo da un carcinoma quando il PSA è alto.
+  en: >-
+    Prostate with chronic inflammation, H&E at medium power. Start with the glands, whose purple epithelium surrounds
+    pale lumens, set in pink stroma. Between the central glands, and around them, a crowd of small round cells with dark
+    nuclei has gathered: these are chronic inflammatory cells. The gland on the left has few of them and is a useful
+    comparison. This is the picture of chronic prostatitis; only a biopsy separates it from carcinoma when PSA is high.
+alt:
+  it: >-
+    Micrografia di prostata in ematossilina-eosina: ghiandole con epitelio violaceo e lumi chiari in uno stroma rosa;
+    al centro, tra le ghiandole, un denso ammasso di piccole cellule rotonde con nucleo scuro.
+  en: >-
+    H&E micrograph of prostate: glands with purple epithelium and pale lumens in pink stroma; in the center, between
+    the glands, a dense cluster of small round cells with dark nuclei.
+annotations:
+  - id: inflammatory-infiltrate
+    label: { it: Infiltrato infiammatorio cronico, en: Chronic inflammatory infiltrate }
+    revealOrder: 1
+    shape: { type: polygon, coords: [0.50, 0.40, 0.62, 0.38, 0.64, 0.62, 0.58, 0.88, 0.50, 0.90, 0.47, 0.65] }
+  - id: spared-gland
+    label: { it: Ghiandola quasi senza infiltrato, en: Gland with almost no infiltrate }
+    revealOrder: 2
+    shape: { type: polygon, coords: [0.00, 0.44, 0.20, 0.42, 0.24, 0.60, 0.22, 0.80, 0.08, 0.84, 0.00, 0.78] }
