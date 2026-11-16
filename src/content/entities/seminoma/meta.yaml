@@ -1,0 +1,118 @@
+id: seminoma
+module: o23
+tier: core
+kind: disease
+names:
+  it: "Seminoma"
+  en: "Seminoma"
+  eponyms: []
+  synonyms:
+    it: []
+    en: []
+  abbreviations: []
+summary:
+  it: "Tumore germinale maligno del testicolo, fatto di cellule uniformi simili a spermatogoni, con setti ricchi di linfociti, positivo per OCT3/4 e CD117 e molto radiosensibile."
+  en: "Malignant germ cell tumor of the testis made of uniform spermatogonia-like cells, with lymphocyte-rich septa, positive for OCT3/4 and CD117 and highly radiosensitive."
+lenses:
+  system: [urinary-male-genital]
+  process: [neoplasia]
+  pattern: [granuloma]
+  presentation: [mass-lesion]
+  marker: [ihc]
+  group: [neoplastic]
+learningObjectives:
+  - it: "Descrivere l'aspetto macroscopico e microscopico del seminoma: cellule chiare in lamine, setti con linfociti e talora granulomi."
+    en: "Describe the gross and microscopic appearance of seminoma: sheets of clear cells, septa with lymphocytes and sometimes granulomas."
+  - it: "Indicare i marcatori immunoistochimici del seminoma (OCT3/4, CD117) e il loro significato."
+    en: "Name the immunohistochemical markers of seminoma (OCT3/4, CD117) and what they mean."
+  - it: "Collegare il seminoma alla neoplasia germinale in situ (GCNIS) come lesione precursore."
+    en: "Link seminoma to germ cell neoplasia in situ (GCNIS) as the precursor lesion."
+  - it: "Spiegare perché il seminoma ha una prognosi eccellente: radiosensibilità e alta percentuale di guarigione."
+    en: "Explain why seminoma has an excellent prognosis: radiosensitivity and a high cure rate."
+  - it: "Distinguere il seminoma dai tumori germinali non seminomatosi e dal tumore spermatocitico."
+    en: "Distinguish seminoma from nonseminomatous germ cell tumors and from spermatocytic tumor."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: nonseminomatous-germ-cell-tumors
+    note:
+      it: "Un tumore misto con componente seminomatosa è trattato come non seminomatoso."
+      en: "A mixed tumor with a seminoma component is treated as nonseminomatous."
+  - type: sameLesionOtherOrgan
+    target: ovarian-germ-cell-tumors
+    note:
+      it: "Il disgerminoma ovarico ha lo stesso aspetto microscopico del seminoma."
+      en: "Ovarian dysgerminoma has the same microscopic appearance as seminoma."
+quickCheck:
+  - id: seminoma-q1
+    q:
+      it: "Quali due marcatori immunoistochimici sono affidabili per il seminoma?"
+      en: "Which two immunohistochemical markers are reliable for seminoma?"
+    a:
+      it: "OCT3/4 (nucleare) e CD117 (c-Kit)."
+      en: "OCT3/4 (nuclear) and CD117 (c-Kit)."
+    kind: short
+  - id: seminoma-q2
+    q:
+      it: "Che cosa si vede nei setti fibrosi di un seminoma?"
+      en: "What is seen in the fibrous septa of a seminoma?"
+    a:
+      it: "Linfociti, plasmacellule e macrofagi, e talvolta granulomi con cellule giganti."
+      en: "Lymphocytes, plasma cells and macrophages, and sometimes granulomas with giant cells."
+    kind: short
+  - id: seminoma-q3
+    q:
+      it: "Perché la prognosi del seminoma è favorevole?"
+      en: "Why is the prognosis of seminoma favorable?"
+    a:
+      it: "Il tumore è molto radiosensibile, spesso è curabile con l'orchiectomia e la percentuale di guarigione supera il 90%."
+      en: "The tumor is highly radiosensitive, is often curable by orchiectomy, and the cure rate exceeds 90%."
+    kind: short
+  - id: seminoma-q4
+    q:
+      it: "Da quale lesione precursore deriva il seminoma?"
+      en: "Which precursor lesion does seminoma arise from?"
+    a:
+      it: "Dalla neoplasia germinale in situ (GCNIS), una lesione preinvasiva."
+      en: "From germ cell neoplasia in situ (GCNIS), a preinvasive lesion."
+    kind: short
+selfExplain:
+  - it: "Perché si ricorre alla radioterapia quando la sola chirurgia non basta a curare un seminoma?"
+    en: "Why is radiotherapy used when surgery alone does not cure a seminoma?"
+  - it: "Perché OCT3/4 e CD117 sono i marcatori su cui fare affidamento per il seminoma?"
+    en: "Why are OCT3/4 and CD117 the markers to rely on for seminoma?"
+  - it: "Perché la presenza di GCNIS alla biopsia giustifica l'orchiectomia profilattica?"
+    en: "Why does GCNIS on biopsy justify prophylactic orchiectomy?"
+examQuestions:
+  - it: "Che cosa vede al microscopio in un seminoma?"
+    en: "What do you see under the microscope in a seminoma?"
+    focus: [micro, ancillary]
+    level: 1
+  - it: "Quali marcatori immunoistochimici userebbe per confermare un seminoma?"
+    en: "Which immunohistochemical markers would you use to confirm a seminoma?"
+    focus: [ancillary, diagnosis]
+    level: 1
+  - it: "Perché il seminoma ha una prognosi così favorevole?"
+    en: "Why does seminoma have such a favorable prognosis?"
+    focus: [prognosis]
+    level: 2
+  - it: "Mi parli del precursore del seminoma e di come si arriva alla forma invasiva."
+    en: "Tell me about the precursor of seminoma and how it progresses to the invasive tumor."
+    focus: [etiology, pathogenesis]
+    level: 2
+  - it: "Come distingue un seminoma da un tumore spermatocitico e da un tumore germinale misto?"
+    en: "How do you tell a seminoma from a spermatocytic tumor and from a mixed germ cell tumor?"
+    focus: [differential, traps]
+    level: 3
+images:
+  - { id: seminoma-gross-1, role: gross, pairWith: seminoma-micro-2 }
+  - { id: seminoma-micro-2, role: micro, pairWith: seminoma-gross-1 }
+  - { id: seminoma-micro-1, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "23"
+    pages: "1001-1002"
+lastUpdated: 2026-11-16
+status: published

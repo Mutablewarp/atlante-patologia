@@ -1,0 +1,426 @@
+entity: seminoma
+claims:
+  - claimId: seminoma-c001
+    section: definition
+    statement: "Seminoma is a malignant testicular germ cell tumor composed of monomorphous cells that resemble spermatogonia."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1001" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c002
+    section: definition
+    statement: "Forty percent of germ cell tumors are seminomas, which makes it the commonest testicular cancer."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1001" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c003
+    section: definition
+    statement: "Incidence is highest at 30 to 40 years of age."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1001" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c004
+    section: definition
+    statement: "Only people with dysgenetic gonads develop seminoma before puberty."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1001" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c005
+    section: etiology
+    statement: "Almost all invasive germ cell tumors have GCNIS, a preinvasive lesion, beside them, and seminoma develops from it."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1001" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c006
+    section: etiology
+    statement: "An isolated small focus of GCNIS is found in roughly 2% of infertility biopsies and of undescended testes."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1001" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c007
+    section: pathogenesis
+    statement: "GCNIS cells resemble fetal germ cells but have prominent nucleoli and are far bigger."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1001" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c008
+    section: pathogenesis
+    statement: "GCNIS cells show OCT3/4 in the nucleus and PLAP and CD117 on the surface, the same pattern as fetal germ cells."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1001" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c009
+    section: pathogenesis
+    statement: "Invasion may begin only after GCNIS has stayed quiet for 5 to 10 years, as in infertile men with past cryptorchidism."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1001" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c010
+    section: pathogenesis
+    statement: "PLAP is present on the plasma membrane of seminoma cells, as in primordial germ cells, and the cells resemble immature spermatogonia."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c011
+    section: pathogenesis
+    statement: "The tumor reaches the rete testis by moving through the seminiferous tubules, after first invading the parenchyma."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c012
+    section: pathogenesis
+    statement: "Abdominal lymph node spread usually follows involvement of the epididymis, which is itself a later event."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c013
+    section: gross
+    statement: "Seminoma usually forms a nodule with a clear edge that feels firm and rubbery."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1001" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c014
+    section: gross
+    statement: "Pressure from the tumor may leave adjacent testicular tissue atrophic and fibrotic."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1001" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c015
+    section: gross
+    statement: "On section seminoma is lobulated with an even color from tan to gray-yellow."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1001" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c016
+    section: gross
+    statement: "Larger seminomas may show necrosis or hemorrhage, but this is uncommon."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1001" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c017
+    section: micro
+    statement: "Each polygonal tumor cell has a central vesicular nucleus, and all the cells look the same."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1001" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c018
+    section: micro
+    statement: "Glycogen and some lipid fill the ample cytoplasm, which can appear clear or pale eosinophilic."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1001-1002" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c019
+    section: micro
+    statement: "Fibrous septa divide the tumor cells into nests or sheets."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c020
+    section: micro
+    statement: "Besides lymphocytes, the septal infiltrate contains plasma cells and macrophages."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c021
+    section: micro
+    statement: "Granulomas with giant cells can occur in the septa."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c022
+    section: micro
+    statement: "Seminoma and ovarian dysgerminoma look alike under the microscope."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1001" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c023
+    section: micro
+    statement: "Syncytiotrophoblastic giant cells, present in 20% of seminomas, are best revealed by hCG antibodies."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c024
+    section: micro
+    statement: "The 5% of seminomas with many mitoses and variable nuclear size and shape are called anaplastic seminoma."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c025
+    section: ancillary
+    statement: "On routine H&E seminoma shows clear cells in sheets with central nuclei and lymphocyte-rich septa."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1001-1002" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c026
+    section: ancillary
+    statement: "Seminoma cells stain with OCT3/4 and CD117 (c-Kit), markers that identify the tumor reliably."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c027
+    section: ancillary
+    statement: "Seminoma cells express PLAP on the plasma membrane."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c028
+    section: ancillary
+    statement: "hCG antibodies best demonstrate the syncytiotrophoblastic giant cells."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c029
+    section: clinical
+    statement: "The usual presentation is a scrotal mass that keeps growing."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c030
+    section: clinical
+    statement: "At the stage when seminoma is often diagnosed, orchiectomy can still cure it."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c031
+    section: diagnosis
+    statement: "Positive staining for OCT3/4 and CD117 supports the diagnosis of seminoma on histology."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c032
+    section: diagnosis
+    statement: "Syncytiotrophoblastic cells secrete hCG, yet the blood level is usually undetectable."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c033
+    section: diagnosis
+    statement: "Prophylactic orchiectomy is indicated when testicular biopsy shows GCNIS."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1001" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c034
+    section: prognosis
+    statement: "Many seminomas are found while still curable: orchiectomy, alone or with abdominal lymph node removal, can cure them."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c035
+    section: prognosis
+    statement: "Radiotherapy is used when surgery alone fails, because seminoma responds strongly to radiation."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c036
+    section: prognosis
+    statement: "Advanced, widely disseminated seminoma can still be cured by chemotherapy."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c037
+    section: prognosis
+    statement: "Whatever the histologic subtype, more than 90% of patients with seminoma are now cured."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c038
+    section: prognosis
+    statement: "The syncytiotrophoblastic and anaplastic variants are microscopically distinct but not significantly different from classical seminoma clinically."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c039
+    section: differential
+    statement: "Germ cell tumors combining seminoma with nonseminomatous elements are treated clinically as nonseminomatous."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c040
+    section: differential
+    statement: "Spermatocytic tumor has no accompanying GCNIS and no lymphocytic reaction, is benign, and occurs after age 40."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c041
+    section: differential
+    statement: "Ovarian dysgerminoma has the same microscopic appearance as seminoma."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1001" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c042
+    section: differential
+    statement: "GCNIS is a preinvasive lesion in which neoplastic germ cells replace normal ones inside seminiferous tubules."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1001" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c043
+    section: high-yield
+    statement: "Seminoma is the commonest testicular cancer, at 40% of germ cell tumors."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1001" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c044
+    section: high-yield
+    statement: "Seminoma grows in sheets of clear cells with lymphocytic septa that may contain granulomas."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c045
+    section: high-yield
+    statement: "OCT3/4 and CD117 are reliable seminoma markers, and PLAP is also expressed."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c046
+    section: high-yield
+    statement: "Seminoma is highly radiosensitive with a cure rate above 90%."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c047
+    section: high-yield
+    statement: "GCNIS is the preinvasive precursor of germ cell tumors."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1001" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c048
+    section: high-yield
+    statement: "Mixed germ cell tumors with a seminoma component are treated as nonseminomatous."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c049
+    section: traps
+    statement: "Blood hCG is usually undetectable even though syncytiotrophoblastic cells secrete hCG."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c050
+    section: traps
+    statement: "Mixed tumors that include seminoma are treated clinically as nonseminomatous."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c051
+    section: traps
+    statement: "Spermatocytic tumor, formerly called spermatocytic seminoma, is benign, appears after age 40 and is unrelated to classical seminoma."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c052
+    section: traps
+    statement: "Anaplastic seminoma behaves clinically like classical seminoma, with no significant difference."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: seminoma-c053
+    section: mnemonics
+    statement: "Seminoma: sheets of clear cells, PLAP/OCT3/4/CD117 positivity, lymphocytic septa with occasional granulomas, radiosensitivity and high cure rate."
+    sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
