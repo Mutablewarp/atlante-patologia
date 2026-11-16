@@ -1,0 +1,99 @@
+id: urothelial-metaplastic-lesions
+module: o23
+tier: extended
+kind: disease
+editionDependent: false
+status: published
+lastUpdated: 2026-11-16
+reviewStatus: ai-generated-unreviewed
+names:
+  it: Lesioni proliferative e metaplastiche benigne dell'urotelio
+  en: Benign proliferative and metaplastic urothelial lesions
+  eponyms: []
+  synonyms:
+    it: [nidi di Brunn, cistite cistica e ghiandolare, metaplasia nefrogenica, adenoma nefrogenico]
+    en: [Brunn nests, cystitis cystica and glandularis, nephrogenic metaplasia, nephrogenic adenoma]
+  abbreviations: []
+summary:
+  it: Alterazioni non neoplastiche dell'urotelio, soprattutto vescicale, che comprendono gemme e nidi di Brunn, cistite cistica e ghiandolare, metaplasia squamosa e metaplasia nefrogenica.
+  en: Non-neoplastic changes of the urothelium, mostly in the bladder, including Brunn buds and nests, cystitis cystica and glandularis, squamous metaplasia and nephrogenic metaplasia.
+learningObjectives:
+  - it: Distinguere le gemme di Brunn dai nidi di Brunn.
+    en: Tell Brunn buds from Brunn nests.
+  - it: Descrivere cistite cistica, cistite ghiandolare, metaplasia squamosa e metaplasia nefrogenica.
+    en: Describe cystitis cystica, cystitis glandularis, squamous metaplasia and nephrogenic metaplasia.
+  - it: Spiegare perché queste lesioni non sono preneoplastiche anche se si associano a un rischio più alto di carcinoma.
+    en: Explain why these lesions are not preneoplastic even though they go with a higher cancer risk.
+lenses:
+  system: [urinary-male-genital]
+  process: [cellular-adaptation, chronic-inflammation]
+  pattern: [hyperplasia, metaplasia]
+  presentation: []
+  marker: []
+  group: [adaptive]
+prerequisites: [metaplasia, hyperplasia]
+relations:
+  - type: sharesMechanism
+    target: metaplasia
+  - type: differentialOf
+    target: urothelial-carcinoma
+    note:
+      it: Le lesioni benigne non vanno scambiate per carcinoma.
+      en: The benign lesions must not be mistaken for carcinoma.
+  - type: sameLesionOtherOrgan
+    target: cystitis
+    note:
+      it: Compaiono spesso con l'infiammazione cronica della vescica.
+      en: They often accompany chronic bladder inflammation.
+quickCheck:
+  - id: urothelial-metaplastic-lesions-q1
+    q:
+      it: Che differenza c'è tra una gemma e un nido di Brunn?
+      en: What separates a Brunn bud from a Brunn nest?
+    a:
+      it: La gemma è ancora un'invaginazione della superficie; il nido è nella lamina propria, staccato dalla superficie.
+      en: A bud is still an invagination of the surface; a nest lies in the lamina propria, detached from the surface.
+    kind: short
+  - id: urothelial-metaplastic-lesions-q2
+    q:
+      it: A che cosa corrisponde la cistite cistica?
+      en: What does cystitis cystica correspond to?
+    a:
+      it: A nidi di Brunn cistici rivestiti da urotelio normale.
+      en: To cystic Brunn nests lined by normal urothelium.
+    kind: short
+  - id: urothelial-metaplastic-lesions-q3
+    q:
+      it: Queste lesioni sono preneoplastiche?
+      en: Are these lesions preneoplastic?
+    a:
+      it: No, non ci sono prove; i pazienti però hanno un rischio più alto di carcinoma.
+      en: No evidence says so, although patients carry a higher cancer risk.
+    kind: short
+selfExplain:
+  - it: Perché la cistite ghiandolare può associarsi ad adenocarcinoma pur non essendo preneoplastica?
+    en: Why can cystitis glandularis go with adenocarcinoma although it is not preneoplastic?
+  - it: Perché la metaplasia squamosa si associa tipicamente ai calcoli?
+    en: Why does squamous metaplasia typically go with stones?
+examQuestions:
+  - it: Mi parli dei nidi di Brunn e della cistite cistica e ghiandolare.
+    en: Tell me about Brunn nests and cystitis cystica and glandularis.
+    focus: [micro, pathogenesis]
+    level: 1
+  - it: Come distingue una gemma di Brunn da un nido di Brunn?
+    en: How do you tell a Brunn bud from a Brunn nest?
+    focus: [micro, traps]
+    level: 3
+  - it: Perché queste lesioni non si considerano preneoplastiche, pur con un rischio più alto di carcinoma?
+    en: Why are these lesions not considered preneoplastic, even though cancer risk is higher?
+    focus: [prognosis, traps]
+    level: 2
+images:
+  - id: urothelial-metaplastic-lesions-micro-1
+    role: micro
+  - id: urothelial-metaplastic-lesions-micro-2
+    role: micro
+sources:
+  - source: rubin-8e
+    chapter: "23"
+    pages: "983"

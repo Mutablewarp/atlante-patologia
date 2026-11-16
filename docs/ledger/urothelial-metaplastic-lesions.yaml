@@ -1,0 +1,266 @@
+entity: urothelial-metaplastic-lesions
+claims:
+- claimId: urothelial-metaplastic-lesions-c001
+  section: definition
+  statement: "These are non-cancerous changes of the urinary tract lining; the bladder is the usual site, but any segment can be involved."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urothelial-metaplastic-lesions-c002
+  section: definition
+  statement: "Flat umbrella cells face the lumen above a distinct basal layer, and the whole epithelium is only a few cells thick."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urothelial-metaplastic-lesions-c003
+  section: definition
+  statement: "The group includes Brunn buds and nests, cystitis cystica and glandularis, squamous metaplasia and nephrogenic metaplasia."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urothelial-metaplastic-lesions-c004
+  section: etiology
+  statement: "Long-standing inflammation is the usual setting, arising from neurogenic bladder, stones or urinary infection and, much less often, bladder exstrophy."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urothelial-metaplastic-lesions-c005
+  section: etiology
+  statement: "A previous inflammatory condition cannot always be identified."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urothelial-metaplastic-lesions-c006
+  section: etiology
+  statement: "Stones are the special association of squamous metaplasia, which otherwise follows chronic injury and inflammation."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urothelial-metaplastic-lesions-c007
+  section: pathogenesis
+  statement: "Non-cancerous urothelium responds with hyperplasia, with or without metaplasia, mostly in chronically inflamed bladders."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urothelial-metaplastic-lesions-c008
+  section: pathogenesis
+  statement: "Cystitis glandularis is the name for urothelium replaced by metaplasia with mucus-secreting epithelium."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urothelial-metaplastic-lesions-c009
+  section: pathogenesis
+  statement: "The origin of nephrogenic metaplasia is unclear; in some cases kidney tubule cells passed in urine may seed it lower down the tract."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urothelial-metaplastic-lesions-c010
+  section: gross
+  statement: "Cystitis cystica appears as grouped fluid-filled cysts in the bladder, and the same change can occur in the ureter and urethra."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urothelial-metaplastic-lesions-c011
+  section: gross
+  statement: "Nephrogenic metaplasia may resemble a tumor because it protrudes into the bladder."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urothelial-metaplastic-lesions-c012
+  section: micro
+  statement: "Surface urothelium that dips into the lamina propria in a bulb-like shape forms a Brunn bud."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urothelial-metaplastic-lesions-c013
+  section: micro
+  statement: "Unlike a bud, a Brunn nest has urothelial cells that have lost their link to the surface and lie in the lamina propria."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urothelial-metaplastic-lesions-c014
+  section: micro
+  statement: "The cysts of cystitis cystica are Brunn nests that have become cystic, and their lining is ordinary urothelium."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urothelial-metaplastic-lesions-c015
+  section: micro
+  statement: "Nephrogenic metaplasia forms an outward-growing papillary nodule made of crowded tiny tubules in the lamina propria."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urothelial-metaplastic-lesions-c016
+  section: clinical
+  statement: "Brunn buds are common and considered normal variants of urothelium."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urothelial-metaplastic-lesions-c017
+  section: clinical
+  statement: "A nephrogenic protrusion sometimes obstructs the ureters, and surgical treatment is then required."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urothelial-metaplastic-lesions-c018
+  section: clinical
+  statement: "These benign lesions must be told apart from carcinoma."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urothelial-metaplastic-lesions-c019
+  section: prognosis
+  statement: "Urothelial bladder carcinoma is more likely to develop in these patients, and cystitis glandularis adds a higher risk of adenocarcinoma."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urothelial-metaplastic-lesions-c020
+  section: prognosis
+  statement: "The lesions themselves have not been shown to be preneoplastic."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urothelial-metaplastic-lesions-c021
+  section: differential
+  statement: "Bladder tumors are mostly urothelial cancers."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urothelial-metaplastic-lesions-c022
+  section: differential
+  statement: "Recurrence after local treatment is frequent for bladder tumors, and multiple foci are common."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urothelial-metaplastic-lesions-c023
+  section: differential
+  statement: "The proliferative and metaplastic lesions are mostly associated with chronic inflammation."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urothelial-metaplastic-lesions-c024
+  section: high-yield
+  statement: "Brunn buds invaginate from the surface, whereas Brunn nests are detached within the lamina propria."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urothelial-metaplastic-lesions-c025
+  section: high-yield
+  statement: "Cystitis cystica consists of Brunn nests that have turned into cysts, lined by ordinary urothelium."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urothelial-metaplastic-lesions-c026
+  section: high-yield
+  statement: "Cystitis glandularis is metaplasia to mucus-secreting epithelium."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urothelial-metaplastic-lesions-c027
+  section: high-yield
+  statement: "Squamous metaplasia answers chronic injury, with calculi as the typical association."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urothelial-metaplastic-lesions-c028
+  section: high-yield
+  statement: "Nephrogenic metaplasia resembles renal tubules and may obstruct the ureters."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urothelial-metaplastic-lesions-c029
+  section: high-yield
+  statement: "Patients have higher cancer risk but the lesions are not shown to be preneoplastic."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urothelial-metaplastic-lesions-c030
+  section: traps
+  statement: "These benign lesions must be told apart from carcinoma."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urothelial-metaplastic-lesions-c031
+  section: traps
+  statement: "There is no evidence that the lesions are preneoplastic, though patients have higher cancer risk."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urothelial-metaplastic-lesions-c032
+  section: traps
+  statement: "Brunn buds remain connected to the surface urothelium, while nests are detached from it."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urothelial-metaplastic-lesions-c033
+  section: mnemonics
+  statement: "The four lesion types are Brunn buds and nests, cystitis cystica and glandularis, squamous metaplasia and nephrogenic metaplasia."
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "983" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
