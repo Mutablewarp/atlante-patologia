@@ -1,0 +1,134 @@
+id: testicular-germ-cell-tumors
+module: o23
+tier: core
+kind: concept
+names:
+  it: "Tumori a cellule germinali del testicolo: classificazione"
+  en: "Testicular germ cell tumors: classification"
+  eponyms: []
+  synonyms:
+    it: ["Tumori germinali del testicolo"]
+    en: ["Testicular germ cell neoplasms"]
+  abbreviations: ["GCT", "GCNIS", "NSGCT"]
+summary:
+  it: "Gruppo di tumori testicolari che derivano dalle cellule germinali e si dividono in seminoma e tumori non seminomatosi, quasi sempre preceduti da neoplasia germinale in situ (GCNIS) e segnati dall'isocromosoma 12p."
+  en: "Group of testicular tumors derived from germ cells, split into seminoma and nonseminomatous tumors, usually preceded by germ cell neoplasia in situ (GCNIS) and marked by isochromosome 12p."
+lenses:
+  system: [urinary-male-genital]
+  process: [neoplasia]
+  pattern: [dysplasia]
+  presentation: [mass-lesion]
+  marker: [ihc, molecular]
+  group: [neoplastic, developmental]
+learningObjectives:
+  - it: "Distinguere i tumori germinali derivati da GCNIS da quelli che ne sono privi (spermatocitico, teratoma prepubere, tumore del sacco vitellino dell'infanzia)."
+    en: "Distinguish GCNIS-derived germ cell tumors from those without it (spermatocytic tumor, prepubertal teratoma, infantile yolk sac tumor)."
+  - it: "Elencare i tipi istologici di seminoma e di tumore non seminomatoso e il loro aspetto microscopico."
+    en: "List the histologic types of seminoma and nonseminomatous tumor and their microscopic appearance."
+  - it: "Spiegare il ruolo del criptorchidismo e dell'isocromosoma 12p nella patogenesi."
+    en: "Explain the role of cryptorchidism and isochromosome 12p in pathogenesis."
+  - it: "Usare PLAP, OCT3/4, CD117 e CD30 per riconoscere GCNIS, seminoma e carcinoma embrionale."
+    en: "Use PLAP, OCT3/4, CD117 and CD30 to recognize GCNIS, seminoma and embryonal carcinoma."
+prerequisites: [neoplasia-nomenclature, carcinoma-in-situ]
+relations:
+  - type: prerequisiteOf
+    target: seminoma
+    note:
+      it: "La classificazione generale precede lo studio del seminoma."
+      en: "The general classification comes before the study of seminoma."
+  - type: prerequisiteOf
+    target: nonseminomatous-germ-cell-tumors
+    note:
+      it: "La classificazione generale precede lo studio dei tumori non seminomatosi."
+      en: "The general classification comes before the study of nonseminomatous tumors."
+  - type: differentialOf
+    target: testicular-sex-cord-stromal-tumors
+    note:
+      it: "Tumori testicolari di origine diversa: cellule germinali contro cellule dei cordoni sessuali e dello stroma."
+      en: "Testicular tumors of different origin: germ cells versus sex cord and stromal cells."
+  - type: sameLesionOtherOrgan
+    target: ovarian-germ-cell-tumors
+    note:
+      it: "Il seminoma ricorda il disgerminoma ovarico."
+      en: "Seminoma resembles ovarian dysgerminoma."
+  - type: sameMarker
+    target: carcinoma-in-situ
+    note:
+      it: "La GCNIS è la forma in situ dei tumori germinali dell'adulto."
+      en: "GCNIS is the in situ form of adult germ cell tumors."
+quickCheck:
+  - id: testicular-germ-cell-tumors-q1
+    q:
+      it: "Quali tumori germinali del testicolo non derivano da GCNIS?"
+      en: "Which testicular germ cell tumors do not arise from GCNIS?"
+    a:
+      it: "Il tumore spermatocitico, il teratoma prepubere e il tumore del sacco vitellino dell'infanzia."
+      en: "Spermatocytic tumor, prepubertal teratoma and infantile yolk sac tumor."
+    kind: short
+  - id: testicular-germ-cell-tumors-q2
+    q:
+      it: "Quale alterazione cromosomica caratterizza la maggior parte dei tumori germinali postpuberali?"
+      en: "Which chromosomal change characterizes most postpubertal germ cell tumors?"
+    a:
+      it: "Il guadagno del braccio corto del cromosoma 12, spesso come isocromosoma 12p, con perdita di 12q."
+      en: "Gain of the short arm of chromosome 12, often as isochromosome 12p, with loss of 12q."
+    kind: short
+  - id: testicular-germ-cell-tumors-q3
+    q:
+      it: "L'orchidopessi elimina il rischio di tumore in un testicolo criptorchide?"
+      en: "Does orchiopexy remove the cancer risk of a cryptorchid testis?"
+    a:
+      it: "No: il rischio di tumore non si riduce."
+      en: "No: the cancer risk is not reduced."
+    kind: short
+  - id: testicular-germ-cell-tumors-q4
+    q:
+      it: "Quale marcatore immunoistochimico nucleare è affidabile per la GCNIS?"
+      en: "Which nuclear immunohistochemical marker is reliable for GCNIS?"
+    a:
+      it: "OCT3/4."
+      en: "OCT3/4."
+    kind: short
+selfExplain:
+  - it: "Perché la GCNIS è un precursore e non un tumore invasivo?"
+    en: "Why is GCNIS a precursor and not an invasive tumor?"
+  - it: "Perché un testicolo normalmente disceso controlaterale è comunque a rischio nel criptorchidismo?"
+    en: "Why is the normally descended contralateral testis still at risk in cryptorchidism?"
+examQuestions:
+  - it: "Mi parli dei tumori a cellule germinali del testicolo: come si classificano e quali non derivano da GCNIS?"
+    en: "Tell me about testicular germ cell tumors: how are they classified, and which ones do not arise from GCNIS?"
+    focus: [definition, pathogenesis]
+    level: 1
+  - it: "Perché il criptorchidismo è un fattore di rischio e che cosa cambia dopo l'orchidopessi?"
+    en: "Why is cryptorchidism a risk factor, and what changes after orchiopexy?"
+    focus: [etiology]
+    level: 2
+  - it: "Che cosa sa dell'isocromosoma 12p nei tumori germinali?"
+    en: "What do you know about isochromosome 12p in germ cell tumors?"
+    focus: [pathogenesis, ancillary]
+    level: 2
+  - it: "Che cosa vede al microscopio nel seminoma e nel carcinoma embrionale, e quali colorazioni immunoistochimiche userebbe per distinguerli?"
+    en: "What do you see under the microscope in seminoma and in embryonal carcinoma, and which immunostains would you use to tell them apart?"
+    focus: [micro, ancillary]
+    level: 3
+  - it: "Che cos'è un tumore germinale misto e come si distingue dalle forme a un solo tipo cellulare?"
+    en: "What is a mixed germ cell tumor, and how does it differ from single-type tumors?"
+    focus: [pathogenesis, micro]
+    level: 3
+images:
+  - id: testicular-germ-cell-tumors-gross-1
+    role: gross
+    pairWith: testicular-germ-cell-tumors-micro-1
+  - id: testicular-germ-cell-tumors-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: true
+editionNote:
+  it: "La classificazione dei tumori testicolari cambia tra le edizioni: nomi dei gruppi, terminologia e percentuali vanno controllati sull'edizione in uso."
+  en: "The classification of testicular tumors changes between editions: group names, terminology and percentages should be checked against the edition in use."
+sources:
+  - source: rubin-8e
+    chapter: "23"
+    pages: "995-996, 999-1001, 1003"
+lastUpdated: 2026-11-16
+status: published
