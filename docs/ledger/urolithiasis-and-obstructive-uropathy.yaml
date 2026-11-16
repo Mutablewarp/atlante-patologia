@@ -1,0 +1,506 @@
+entity: urolithiasis-and-obstructive-uropathy
+claims:
+- claimId: urolithiasis-and-obstructive-uropathy-c001
+  section: definition
+  statement: "The location of a stone gives its name: nephrolithiasis for the renal collecting system, urolithiasis for any other part of the urinary collecting tract"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c002
+  section: definition
+  statement: "Men form renal stones more often than women do"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c003
+  section: definition
+  statement: "Obstructive uropathy is any structural or functional block to urine drainage, and it can cause hydronephrosis, a dilated collecting system"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c004
+  section: etiology
+  statement: "Infection, metabolic disorders and geography all influence stone composition"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c005
+  section: etiology
+  statement: "In uric acid and cystine stones, the urinary excretion of the stone's main component is raised"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c006
+  section: etiology
+  statement: "Many patients with calcium stones excrete excess calcium in urine while blood calcium is normal"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c007
+  section: etiology
+  statement: "When uric acid is high, calcium salts settle on urate crystals, so stones mixing the two are frequent"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c008
+  section: etiology
+  statement: "Calculi, blood clots and ureteral tumors are examples of intraluminal causes of ureteral obstruction"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "979" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c009
+  section: etiology
+  statement: "Pregnancy and endometriosis are extrinsic causes of ureteral obstruction"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "979" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c010
+  section: etiology
+  statement: "Tumors usually reach the ureters by local invasion or by retroperitoneal nodal spread from digestive or female genital cancers"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "979" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c011
+  section: etiology
+  statement: "Disease of the prostate, bladder or urethra can obstruct the ureters from below, as in a neurogenic bladder"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "979" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c012
+  section: etiology
+  statement: "Children with congenital ureteropelvic junction obstruction often have other anomalies of the urinary tract as well"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "979" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c013
+  section: etiology
+  statement: "Congenital megaureter has no peristalsis and is wide and winding throughout"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "979" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c014
+  section: etiology
+  statement: "Ormond disease, the idiopathic form of retroperitoneal fibrosis, only rarely obstructs the ureter"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "979" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c015
+  section: etiology
+  statement: "Secondary retroperitoneal fibrosis can follow an operation, irradiation or a drug such as methysergide"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "979" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c016
+  section: pathogenesis
+  statement: "Alkaline urine, produced when urea-splitting bacteria such as Proteus infect the urinary tract, promotes precipitation of struvite and apatite"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c017
+  section: pathogenesis
+  statement: "Pyelonephritis is more likely in a kidney that is already hydronephrotic"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c018
+  section: pathogenesis
+  statement: "Infection can reach the ureter from above, from the kidney, or from below through vesicoureteric reflux, and the result is ureteritis, inflammation of the ureter"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "979" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c019
+  section: pathogenesis
+  statement: "Ureteritis is often associated with ureteral obstruction"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "979" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c020
+  section: gross
+  statement: "Calcium stones are the largest group and contain oxalate, phosphate or a mixture; the oxalate ones are hard and sometimes dark"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c021
+  section: gross
+  statement: "Calcium phosphate stones are generally less hard than oxalate ones and lighter in color"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c022
+  section: gross
+  statement: "Infection stones differ in consistency: some are hard, others soft and crumbly"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c023
+  section: gross
+  statement: "An infection stone that fills the pelvis and calyces takes the shape of those spaces and is called a staghorn calculus"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c024
+  section: gross
+  statement: "Urate stones are yellow and have a smooth surface"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c025
+  section: gross
+  statement: "Calcium phosphate may coat a cystine stone, but the stone itself is pure cystine"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c026
+  section: gross
+  statement: "The largest renal stones dilate the whole renal pelvis, while the smallest are gravel"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c027
+  section: gross
+  statement: "When both sides are blocked, the drainage system above the block dilates widely and kidney tissue can waste severely"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "966" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c028
+  section: micro
+  statement: "In early hydronephrosis the collecting ducts are the first structures to dilate visibly under the microscope"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c029
+  section: micro
+  statement: "After the collecting ducts, the proximal and distal convoluted tubules dilate"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c030
+  section: micro
+  statement: "In late disease the proximal tubules disappear after becoming widely dilated"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c031
+  section: micro
+  statement: "Glomeruli are usually spared in hydronephrosis"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c032
+  section: micro
+  statement: "The renal parenchyma atrophies when dilation of the pelvis and calyces persists"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c033
+  section: ancillary
+  statement: "IgG4-positive plasma cells infiltrate the fibrotic lesions of IgG4-related retroperitoneal fibrosis"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "979" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c034
+  section: clinical
+  statement: "Renal stones may be well tolerated"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c035
+  section: clinical
+  statement: "Renal colic, severe flank pain, begins when a stone passes into the ureter"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c036
+  section: clinical
+  statement: "Erosion of the mucosa by stones can produce hematuria"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c037
+  section: clinical
+  statement: "Acute obstruction of both sides results in acute (postrenal) renal failure"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c038
+  section: clinical
+  statement: "Obstruction of one side often causes no symptoms"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c039
+  section: clinical
+  statement: "Urosepsis, perinephric abscess and intractable urinary infection are frequent complications of infection stones"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c040
+  section: diagnosis
+  statement: "Radiolucency distinguishes pure uric acid stones from calcium-containing stones"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c041
+  section: diagnosis
+  statement: "Uric acid stones usually occur without hyperuricemia or gout"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c042
+  section: diagnosis
+  statement: "Hereditary cystinuria is the only setting in which cystine stones occur"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c043
+  section: prognosis
+  statement: "Early recognition of acute obstruction is important because many of its causes are reversible"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965-966" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c044
+  section: prognosis
+  statement: "An obstructed kidney that is not relieved will atrophy"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "966" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c045
+  section: prognosis
+  statement: "Chronic renal failure follows when both sides remain obstructed"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "966" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c046
+  section: prognosis
+  statement: "Prostatic disease and other distal causes of obstruction lead to bilateral hydronephrosis, whereas proximal causes tend to be unilateral"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "979" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c047
+  section: prognosis
+  statement: "Large stones that once needed open surgery can now be treated by lithotripsy or endoscopic removal"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c048
+  section: prognosis
+  statement: "Treatment with corticosteroids or immunosuppression may help in IgG4-related retroperitoneal fibrosis"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "979" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c049
+  section: differential
+  statement: "Tumors of the ureter are an intrinsic cause of ureteral obstruction"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "979" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c050
+  section: differential
+  statement: "Prostatic hyperplasia or cancer, a distal cause, leads to bilateral hydronephrosis"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "979" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c051
+  section: differential
+  statement: "Retroperitoneal fibrosis is a cause of ureteral obstruction, with IgG4-positive plasma cells in some cases"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "979" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c052
+  section: differential
+  statement: "Pyelonephritis and severe hydronephrosis are possible results of stones, and a hydronephrotic kidney is more prone to the infection"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c053
+  section: high-yield
+  statement: "The stone types described are calcium, infection (struvite), uric acid and cystine"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c054
+  section: high-yield
+  statement: "Proteus-type infection makes urine alkaline, favoring struvite and apatite stones that can form a staghorn cast"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c055
+  section: high-yield
+  statement: "Pure uric acid stones are radiolucent"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c056
+  section: high-yield
+  statement: "Early hydronephrosis dilates collecting ducts first and spares glomeruli"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c057
+  section: high-yield
+  statement: "Bilateral acute obstruction causes acute renal failure"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c058
+  section: high-yield
+  statement: "Ureteritis arises from descending or ascending (reflux) infection and is often associated with ureteral obstruction"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "979" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c059
+  section: traps
+  statement: "Pure uric acid stones are radiolucent, so not all stones are radiopaque"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c060
+  section: traps
+  statement: "Stones may be well tolerated and unilateral obstruction is often asymptomatic"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c061
+  section: traps
+  statement: "Many causes of acute obstruction are reversible"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965-966" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c062
+  section: traps
+  statement: "Gout and hyperuricemia are absent in most people with uric acid stones"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: urolithiasis-and-obstructive-uropathy-c063
+  section: mnemonics
+  statement: "The four main stone types are calcium, infection, uric acid and cystine"
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "965" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
