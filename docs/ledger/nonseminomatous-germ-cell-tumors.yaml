@@ -1,0 +1,506 @@
+entity: nonseminomatous-germ-cell-tumors
+claims:
+- claimId: nonseminomatous-germ-cell-tumors-c001
+  section: definition
+  statement: "Most testicular non-seminomatous germ cell tumors are pure embryonal carcinoma or mixed germ cell tumor"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c002
+  section: definition
+  statement: "Several of the five main germ cell tumor types can coexist within one mixed tumor mass"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c003
+  section: definition
+  statement: "In adults, pure choriocarcinoma and pure yolk sac tumor of the testis are seldom seen"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c004
+  section: definition
+  statement: "Non-seminomatous tumors are 55% of testicular germ cell tumors"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c005
+  section: definition
+  statement: "Seminoma and non-seminomatous elements coexist in as many as one third of testicular germ cell tumors"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c006
+  section: definition
+  statement: "Patients are usually diagnosed slightly earlier in life than seminoma patients, although both groups peak in the third and fourth decades"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c007
+  section: etiology
+  statement: "Non-seminomatous tumors may derive from GCNIS, embryonal cells or seminoma"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c008
+  section: pathogenesis
+  statement: "Embryonal carcinoma cells resemble cells of a preimplantation embryo"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c009
+  section: pathogenesis
+  statement: "A teratoma results when embryonal carcinoma cells differentiate toward all three germ layers"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c010
+  section: pathogenesis
+  statement: "Teratoma tissue can be adult-type (mature) or fetal-type (immature)"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c011
+  section: pathogenesis
+  statement: "Two extraembryonic products are possible: yolk sac-like epithelium, and chorionic epithelium made of cytotrophoblast and syncytiotrophoblast"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c012
+  section: pathogenesis
+  statement: "In a teratocarcinoma (malignant teratoma) the embryonal cells persist alongside the somatic and extraembryonic tissues they produced"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c013
+  section: pathogenesis
+  statement: "A single-type tumor in which malignant trophoblast has overgrown other elements is a choriocarcinoma"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c014
+  section: pathogenesis
+  statement: "Yolk sac tumor is one clone of malignant cells imitating yolk sac lining"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c015
+  section: gross
+  statement: "Tumors are solid or partly cystic and have no fixed size or shape"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c016
+  section: gross
+  statement: "In solid areas, red indicates hemorrhage, yellow necrosis and white viable tumor"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c017
+  section: micro
+  statement: "In embryonal carcinoma the nuclei seem piled up because the undifferentiated cells have large, dark nuclei and almost no cytoplasm between them"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c018
+  section: micro
+  statement: "Embryonal carcinoma may form gland-like spaces as well as cords and solid sheets"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c019
+  section: micro
+  statement: "Embryonal carcinoma shows frequent dividing cells and frequent apoptotic cells"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c020
+  section: micro
+  statement: "In teratoma, mature and immature elements are often found side by side within tissues derived from all three germ layers"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c021
+  section: micro
+  statement: "Retinal pigment cells, central nervous system tissue and skin are ectodermal products in teratoma"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c022
+  section: micro
+  statement: "Bone, cartilage and muscle, both smooth and striated, come from mesoderm in teratoma"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c023
+  section: micro
+  statement: "Salivary gland, bronchial lining and gut-type tissue are endodermal products in teratoma"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c024
+  section: micro
+  statement: "Epidermoid and dermoid cysts are teratoma subtypes with only ectodermal elements"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c025
+  section: micro
+  statement: "Pilosebaceous units distinguish a dermoid cyst from an epidermoid cyst; both are lined by keratinized squamous epithelium"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c026
+  section: micro
+  statement: "Yolk sac tumor shows several patterns, each imitating part of the fetal yolk sac"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c027
+  section: micro
+  statement: "Glomeruloid Schiller-Duval bodies are characteristic of yolk sac tumor"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c028
+  section: micro
+  statement: "Choriocarcinoma consists of highly malignant cytotrophoblast and syncytiotrophoblast"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c029
+  section: micro
+  statement: "Yolk sac-type and syncytiotrophoblast-type parts are often found in non-seminomatous tumors, which sets them apart from seminomas"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c030
+  section: ancillary
+  statement: "The histology of non-seminomatous tumors is highly variable from case to case"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c031
+  section: ancillary
+  statement: "Embryonal carcinoma reacts with PLAP and OCT3/4, as seminoma does"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c032
+  section: ancillary
+  statement: "Embryonal carcinoma expresses cytokeratins and CD30"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c033
+  section: ancillary
+  statement: "Embryonal carcinoma does not express c-KIT (CD117)"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c034
+  section: clinical
+  statement: "Most present as testicular masses"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c035
+  section: clinical
+  statement: "In some patients a metastasis is the first thing that reveals the tumor"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c036
+  section: clinical
+  statement: "Yolk sac tumor accounts for the majority of testicular neoplasms in boys younger than 4"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c037
+  section: clinical
+  statement: "Yolk sac tumors occur mainly in boys under 2 years"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c038
+  section: clinical
+  statement: "A benign teratoma is the tumor most often found in the testis of boys aged 4 to 12"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c039
+  section: diagnosis
+  statement: "Diagnosing a yolk sac tumor relies on seeing Schiller-Duval bodies together with several microscopic patterns"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c040
+  section: diagnosis
+  statement: "A tumor containing any seminoma component is still managed as non-seminomatous"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c041
+  section: prognosis
+  statement: "Metastasis is easier and more widespread than with seminoma, and growth is faster too"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c042
+  section: prognosis
+  statement: "Embryonal carcinoma enters blood vessels and also infiltrates testis and epididymis"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c043
+  section: prognosis
+  statement: "Embryonal carcinoma metastases reach the lungs and other organs as well as the abdominal lymph nodes"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c044
+  section: prognosis
+  statement: "Malignant change of a somatic tissue in a teratoma can give sarcoma or carcinoma, squamous or glandular"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c045
+  section: differential
+  statement: "Seminoma cells resemble immature spermatogonia"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c046
+  section: differential
+  statement: "Seminoma cells react with OCT3/4 and c-KIT (CD117)"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c047
+  section: differential
+  statement: "Embryonal carcinoma has undifferentiated cells with crowded overlapping nuclei"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c048
+  section: differential
+  statement: "Embryonal carcinoma expresses CD30 and cytokeratins but not c-KIT"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c049
+  section: differential
+  statement: "Spermatocytic tumor is benign, lacks GCNIS and is a different entity from classical seminoma"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c050
+  section: differential
+  statement: "Spermatocytic tumor cells do not express typical seminoma markers"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c051
+  section: high-yield
+  statement: "Embryonal carcinoma is undifferentiated with overlapping nuclei, CD30 and cytokeratin positive, c-KIT negative"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c052
+  section: high-yield
+  statement: "Pure embryonal carcinoma and mixed germ cell tumor account for most non-seminomatous tumors"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c053
+  section: high-yield
+  statement: "Yolk sac tumor is recognized by Schiller-Duval bodies"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c054
+  section: high-yield
+  statement: "Choriocarcinoma is composed of cytotrophoblast and syncytiotrophoblast"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c055
+  section: high-yield
+  statement: "Teratoma contains tissues of all three germ layers"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c056
+  section: high-yield
+  statement: "A seminoma component does not change the handling of the tumor as non-seminomatous"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c057
+  section: high-yield
+  statement: "They spread faster and wider than seminomas and metastases can be the first sign"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c058
+  section: high-yield
+  statement: "Yolk sac tumor is the usual testicular tumor in the first 4 years of life"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c059
+  section: traps
+  statement: "A tumor with seminoma and non-seminomatous elements is treated as non-seminomatous"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c060
+  section: traps
+  statement: "Embryonal carcinoma and seminoma share PLAP and OCT3/4, but embryonal carcinoma is c-KIT negative"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c061
+  section: traps
+  statement: "Somatic elements of a teratoma can turn malignant into carcinoma or sarcoma"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c062
+  section: traps
+  statement: "An epidermoid or dermoid cyst is a pure-ectoderm teratoma subtype with no GCNIS, immature tissue or other tumor types"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1003" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: nonseminomatous-germ-cell-tumors-c063
+  section: mnemonics
+  statement: "A mixed tumor can contain any of the five main germ cell tumor types"
+  sourceRef: { source: rubin-8e, chapter: "23", pages: "1002" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16

@@ -1,0 +1,105 @@
+id: nonseminomatous-germ-cell-tumors
+module: o23
+tier: core
+kind: disease
+names:
+  it: "Tumori germinali non seminomatosi"
+  en: "Non-seminomatous germ cell tumors"
+  eponyms: []
+  synonyms:
+    it: ["Tumori germinali del testicolo non seminomatosi"]
+    en: ["NSGCT", "Nonseminomatous germ cell tumors"]
+  abbreviations: ["NSGCT"]
+summary:
+  it: "Gruppo di tumori germinali del testicolo che comprende il carcinoma embrionale, il tumore del sacco vitellino, il coriocarcinoma, il teratoma e le forme miste, a crescita e diffusione più rapide del seminoma."
+  en: "A group of testicular germ cell tumors that includes embryonal carcinoma, yolk sac tumor, choriocarcinoma, teratoma and mixed forms, growing and spreading faster than seminoma."
+lenses:
+  system: [urinary-male-genital]
+  process: [neoplasia]
+  pattern: []
+  presentation: [mass-lesion]
+  marker: [ihc]
+  group: [neoplastic]
+learningObjectives:
+  - it: "Elencare i componenti di un tumore germinale misto: seminoma, teratoma, carcinoma embrionale, tumore del sacco vitellino e coriocarcinoma."
+    en: "List the components of a mixed germ cell tumor: seminoma, teratoma, embryonal carcinoma, yolk sac tumor and choriocarcinoma."
+  - it: "Riconoscere al microscopio il carcinoma embrionale e i corpi di Schiller-Duval del tumore del sacco vitellino."
+    en: "Recognize embryonal carcinoma and the Schiller-Duval bodies of yolk sac tumor under the microscope."
+  - it: "Distinguere il carcinoma embrionale dal seminoma con PLAP, OCT3/4, CD30, citocheratine e c-KIT."
+    en: "Distinguish embryonal carcinoma from seminoma with PLAP, OCT3/4, CD30, cytokeratins and c-KIT."
+  - it: "Spiegare come le cellule embrionali originino teratoma, coriocarcinoma e tumore del sacco vitellino."
+    en: "Explain how embryonal cells give rise to teratoma, choriocarcinoma and yolk sac tumor."
+prerequisites: [neoplasia-nomenclature]
+relations:
+  - type: differentialOf
+    target: seminoma
+    note:
+      it: "Entrambi esprimono PLAP e OCT3/4, ma solo il seminoma è c-KIT positivo."
+      en: "Both express PLAP and OCT3/4, but only seminoma is c-KIT positive."
+quickCheck:
+  - id: nonseminomatous-germ-cell-tumors-q1
+    q:
+      it: "Quali cinque tipi di tumore germinale possono coesistere in un tumore misto?"
+      en: "Which five germ cell tumor types can coexist in a mixed tumor?"
+    a:
+      it: "Seminoma, teratoma, carcinoma embrionale, tumore del sacco vitellino e coriocarcinoma, in qualsiasi combinazione."
+      en: "Seminoma, teratoma, embryonal carcinoma, yolk sac tumor and choriocarcinoma, in any combination."
+    kind: short
+  - id: nonseminomatous-germ-cell-tumors-q2
+    q:
+      it: "Quale reperto istologico caratterizza il tumore del sacco vitellino?"
+      en: "Which histologic finding characterizes yolk sac tumor?"
+    a:
+      it: "I corpi di Schiller-Duval, strutture glomeruloidi, insieme a più pattern microscopici."
+      en: "Schiller-Duval bodies, which are glomeruloid, together with multiple microscopic patterns."
+    kind: short
+  - id: nonseminomatous-germ-cell-tumors-q3
+    q:
+      it: "Come si distingue il carcinoma embrionale dal seminoma all'immunoistochimica?"
+      en: "How do you tell embryonal carcinoma from seminoma on immunohistochemistry?"
+    a:
+      it: "Entrambi sono PLAP e OCT3/4 positivi; il carcinoma embrionale esprime anche CD30 e citocheratine ed è c-KIT negativo."
+      en: "Both are PLAP and OCT3/4 positive; embryonal carcinoma also expresses CD30 and cytokeratins and is c-KIT negative."
+    kind: short
+selfExplain:
+  - it: "Perché un tumore con una componente di seminoma viene trattato come non seminomatoso?"
+    en: "Why is a tumor with a seminoma component treated as non-seminomatous?"
+  - it: "Perché il carcinoma embrionale può dare origine a tessuti così diversi?"
+    en: "Why can embryonal carcinoma give rise to such different tissues?"
+examQuestions:
+  - it: "Che cosa vede al microscopio in un carcinoma embrionale e quali colorazioni immunoistochimiche userebbe?"
+    en: "What do you see under the microscope in embryonal carcinoma, and which stains would you use?"
+    focus: [micro, ancillary]
+    level: 1
+  - it: "Come riconosce al microscopio un tumore del sacco vitellino e un coriocarcinoma?"
+    en: "How do you recognize a yolk sac tumor and a choriocarcinoma under the microscope?"
+    focus: [micro, diagnosis]
+    level: 1
+  - it: "Mi parli del teratoma testicolare: perché contiene tessuti così diversi e può diventare maligno?"
+    en: "Tell me about testicular teratoma: why does it contain such different tissues, and can it become malignant?"
+    focus: [pathogenesis, micro, prognosis]
+    level: 2
+  - it: "Mi parli dei tumori germinali misti: quali componenti possono contenere e come si tratta uno con una quota di seminoma?"
+    en: "Tell me about mixed germ cell tumors: which components can they contain, and how is one with a seminoma part managed?"
+    focus: [definition, diagnosis, traps]
+    level: 2
+  - it: "Come distingue il carcinoma embrionale dal seminoma?"
+    en: "How do you tell embryonal carcinoma from seminoma?"
+    focus: [ancillary, differential]
+    level: 3
+images:
+  - id: nonseminomatous-germ-cell-tumors-gross-1
+    role: gross
+    pairWith: nonseminomatous-germ-cell-tumors-micro-1
+  - id: nonseminomatous-germ-cell-tumors-micro-1
+    role: micro
+  - id: nonseminomatous-germ-cell-tumors-micro-2
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "23"
+    pages: "1002-1003"
+lastUpdated: 2026-11-16
+status: published
