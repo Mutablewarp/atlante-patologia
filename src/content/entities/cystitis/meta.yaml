@@ -1,0 +1,138 @@
+id: cystitis
+module: o23
+tier: core
+kind: disease
+names:
+  it: "Cistiti"
+  en: "Cystitis"
+  eponyms: []
+  synonyms:
+    it: ["Infiammazione della vescica"]
+    en: ["Bladder inflammation"]
+  abbreviations: []
+summary:
+  it: "Infiammazione acuta o cronica della vescica, per lo più infettiva (coliformi), con forme particolari come cistite interstiziale, malacoplachia e cistite da schistosomiasi."
+  en: "Acute or chronic inflammation of the bladder, mostly infectious (coliforms), with special forms such as interstitial cystitis, malakoplakia and schistosomal cystitis."
+lenses:
+  system: [urinary-male-genital]
+  process: [acute-inflammation, chronic-inflammation, granulomatous-inflammation]
+  pattern: [metaplasia, granuloma]
+  presentation: [hematuria]
+  marker: [pas, laboratory]
+  group: [inflammatory, infectious]
+learningObjectives:
+  - it: "Elencare i principali fattori di rischio e gli agenti causali della cistite."
+    en: "List the main risk factors and causative agents of cystitis."
+  - it: "Descrivere il quadro macroscopico e microscopico della cistite acuta e cronica."
+    en: "Describe the gross and microscopic picture of acute and chronic cystitis."
+  - it: "Riconoscere le forme speciali: emorragica, interstiziale, eosinofila, malacoplachia e da schistosomi."
+    en: "Recognize the special forms: hemorrhagic, interstitial, eosinophilic, malakoplakia and schistosomal."
+  - it: "Spiegare perché l'atipia di un urotelio infiammato non va scambiata per cancro."
+    en: "Explain why atypia in an inflamed urothelium must not be mistaken for cancer."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: urothelial-metaplastic-lesions
+    note:
+      it: "Cistite cistica e ghiandolare sono lesioni benigne dell'urotelio, da non confondere con il cancro."
+      en: "Cystitis cystica and glandularis are benign urothelial lesions, not to be confused with cancer."
+  - type: differentialOf
+    target: tuberculosis
+    note:
+      it: "La cistite granulomatosa è caratteristica della tubercolosi."
+      en: "Granulomatous cystitis is characteristic of tuberculosis."
+  - type: mimics
+    target: urothelial-carcinoma
+    note:
+      it: "L'atipia reattiva di una vescica infiammata non va scambiata per malignità."
+      en: "Reactive atypia of an inflamed bladder must not be mistaken for malignancy."
+quickCheck:
+  - id: cystitis-q1
+    q:
+      it: "Quali batteri causano più spesso la cistite?"
+      en: "Which bacteria most often cause cystitis?"
+    a:
+      it: "I batteri coliformi, soprattutto Escherichia coli."
+      en: "Coliform bacteria, above all Escherichia coli."
+    kind: short
+  - id: cystitis-q2
+    q:
+      it: "Quale reperto fa pensare a una cistite interstiziale e non batterica?"
+      en: "Which finding points to interstitial rather than bacterial cystitis?"
+    a:
+      it: "Urinocolture quasi sempre negative; nelle fasi croniche può comparire l'ulcera di Hunner."
+      en: "Urine cultures almost always negative; a Hunner ulcer can appear in chronic stages."
+    kind: short
+  - id: cystitis-q3
+    q:
+      it: "Quale reperto istologico identifica la malacoplachia?"
+      en: "Which histologic finding identifies malakoplakia?"
+    a:
+      it: "Macrofagi con granuli PAS-positivi e corpi di Michaelis-Gutmann."
+      en: "Macrophages with PAS-positive granules and Michaelis-Gutmann bodies."
+    kind: short
+  - id: cystitis-q4
+    q:
+      it: "Quale tumore della vescica si associa tipicamente alla schistosomiasi?"
+      en: "Which bladder cancer is typically linked to schistosomiasis?"
+    a:
+      it: "Il carcinoma squamocellulare, frequente dove S. haematobium è endemico."
+      en: "Squamous cell carcinoma, frequent where S. haematobium is endemic."
+    kind: short
+  - id: cystitis-q5
+    q:
+      it: "Come va interpretata l'atipia dell'epitelio in una vescica infiammata?"
+      en: "How should epithelial atypia in an inflamed bladder be read?"
+    a:
+      it: "Di solito è transitoria e non va scambiata per malignità."
+      en: "It is usually transient and must not be mistaken for malignancy."
+    kind: free
+selfExplain:
+  - it: "Spiega che rischio di tumore della vescica comporta l'infezione da S. haematobium e di quale tipo è di solito."
+    en: "Explain what bladder cancer risk comes with S. haematobium infection and which type it usually is."
+  - it: "Perché la vescica di una donna è più esposta alla cistite?"
+    en: "Why is the female bladder more exposed to cystitis?"
+chain:
+  - pathology:
+      it: "Infezione batterica della vescica da coliformi"
+      en: "Coliform bacterial infection of the bladder"
+    sign:
+      it: "Pollachiuria e disuria"
+      en: "Urinary frequency and dysuria"
+    lab:
+      it: "Cellule infiammatorie nelle urine e urinocoltura positiva"
+      en: "Inflammatory cells in urine and a positive urine culture"
+examQuestions:
+  - it: "Mi parli delle cistiti: quali sono le cause principali e le forme particolari?"
+    en: "Tell me about cystitis: what are the main causes and the special forms?"
+    focus: [etiology, micro]
+    level: 1
+  - it: "Che cosa vede al microscopio nella malacoplachia e perché si formano i corpi di Michaelis-Gutmann?"
+    en: "What do you see under the microscope in malakoplakia, and why do Michaelis-Gutmann bodies form?"
+    focus: [pathogenesis, micro, ancillary]
+    level: 2
+  - it: "Mi parli della cistite da schistosomi: che aspetto ha la vescica e quale rischio comporta?"
+    en: "Tell me about schistosomal cystitis: what does the bladder look like and what risk does it carry?"
+    focus: [gross, micro, prognosis]
+    level: 3
+  - it: "Come distingue una cistite interstiziale da una cistite batterica acuta?"
+    en: "How do you tell interstitial cystitis from acute bacterial cystitis?"
+    focus: [diagnosis, differential]
+    level: 3
+  - it: "Perché l'atipia dell'urotelio in una vescica infiammata non va scambiata per cancro?"
+    en: "Why must atypia of the urothelium in an inflamed bladder not be mistaken for cancer?"
+    focus: [micro, traps]
+    level: 2
+images:
+  - id: cystitis-micro-1
+    role: micro
+  - id: cystitis-micro-2
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "23"
+    pages: "980-983"
+lastUpdated: 2026-11-16
+status: published
