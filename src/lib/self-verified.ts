@@ -46,6 +46,13 @@ export const SELF_VERIFIED: readonly SelfVerified[] = [
   { ledger: 'autoimmune-hepatitis', claims: 4, name: { it: 'Epatite autoimmune', en: 'Autoimmune hepatitis' }, path: 'e/autoimmune-hepatitis/' },
   { ledger: 'autophagy', claims: 3, name: { it: 'Autofagia', en: 'Autophagy' }, path: 'e/autophagy/' },
   { ledger: 'barrett-esophagus', claims: 1, name: { it: 'Esofago di Barrett', en: 'Barrett esophagus' }, path: 'e/barrett-esophagus/' },
+  { ledger: 'benign-prostatic-hyperplasia', claims: 2, name: { it: 'Iperplasia prostatica benigna', en: 'Benign prostatic hyperplasia' }, path: 'e/benign-prostatic-hyperplasia/' },
+  {
+    ledger: 'benign-renal-tumors',
+    claims: 2,
+    name: { it: 'Tumori renali benigni (oncocitoma, angiomiolipoma, adenoma papillare)', en: 'Benign renal tumors' },
+    path: 'e/benign-renal-tumors/',
+  },
   { ledger: 'bronchiectasis', claims: 5, name: { it: 'Bronchiectasie', en: 'Bronchiectasis' }, path: 'e/bronchiectasis/' },
   { ledger: 'carcinogenic-agents', claims: 8, name: { it: 'Agenti cancerogeni', en: 'Carcinogenic agents' }, path: 'e/carcinogenic-agents/' },
   { ledger: 'carcinoma-in-situ', claims: 1, name: { it: 'Carcinoma in situ', en: 'Carcinoma in situ' }, path: 'e/carcinoma-in-situ/' },
@@ -57,6 +64,7 @@ export const SELF_VERIFIED: readonly SelfVerified[] = [
   { ledger: 'cirrhosis', claims: 4, name: { it: 'Cirrosi epatica', en: 'Cirrhosis' }, path: 'e/cirrhosis/' },
   { ledger: 'colorectal-adenocarcinoma', claims: 1, name: { it: 'Adenocarcinoma del colon-retto', en: 'Colorectal adenocarcinoma' }, path: 'e/colorectal-adenocarcinoma/' },
   { ledger: 'colorectal-adenoma', claims: 1, name: { it: 'Adenoma del colon-retto', en: 'Colorectal adenoma' }, path: 'e/colorectal-adenoma/' },
+  { ledger: 'cystitis', claims: 3, name: { it: 'Cistiti', en: 'Cystitis' }, path: 'e/cystitis/' },
   { ledger: 'diabetic-nephropathy', claims: 1, name: { it: 'Nefropatia diabetica', en: 'Diabetic nephropathy' }, path: 'e/diabetic-nephropathy/' },
   { ledger: 'drug-induced-liver-injury', claims: 2, name: { it: 'Danno epatico da farmaci', en: 'Drug-induced liver injury' }, path: 'e/drug-induced-liver-injury/' },
   { ledger: 'dysplasia', claims: 1, name: { it: 'Displasia', en: 'Dysplasia' }, path: 'e/dysplasia/' },
@@ -112,6 +120,12 @@ export const SELF_VERIFIED: readonly SelfVerified[] = [
     path: 'e/nonalcoholic-fatty-liver-disease/',
   },
   {
+    ledger: 'nonseminomatous-germ-cell-tumors',
+    claims: 1,
+    name: { it: 'Tumori germinali non seminomatosi', en: 'Non-seminomatous germ cell tumors' },
+    path: 'e/nonseminomatous-germ-cell-tumors/',
+  },
+  {
     ledger: 'other-regulated-cell-death',
     claims: 17,
     name: { it: 'Altre forme di morte cellulare regolata (anoikis, NETosi, entosi, morte da granzimi)', en: 'Other regulated cell death (anoikis, NETosis, entosis, granzyme-mediated)' },
@@ -127,6 +141,7 @@ export const SELF_VERIFIED: readonly SelfVerified[] = [
   },
   { ledger: 'polyarteritis-nodosa', claims: 1, name: { it: 'Poliarterite nodosa', en: 'Polyarteritis nodosa' }, path: 'e/polyarteritis-nodosa/' },
   { ledger: 'primary-biliary-cholangitis', claims: 5, name: { it: 'Colangite biliare primitiva', en: 'Primary biliary cholangitis' }, path: 'e/primary-biliary-cholangitis/' },
+  { ledger: 'prostatitis', claims: 1, name: { it: 'Prostatiti', en: 'Prostatitis' }, path: 'e/prostatitis/' },
   {
     ledger: 'protein-quality-control',
     claims: 1,
@@ -134,6 +149,7 @@ export const SELF_VERIFIED: readonly SelfVerified[] = [
     path: 'e/protein-quality-control/',
   },
   { ledger: 'pyelonephritis', claims: 3, name: { it: 'Pielonefriti acute e croniche', en: 'Acute and chronic pyelonephritis' }, path: 'e/pyelonephritis/' },
+  { ledger: 'renal-cell-carcinoma', claims: 3, name: { it: 'Carcinoma a cellule renali', en: 'Renal cell carcinoma' }, path: 'e/renal-cell-carcinoma/' },
   {
     ledger: 'rheumatic-heart-disease',
     claims: 1,
@@ -148,12 +164,30 @@ export const SELF_VERIFIED: readonly SelfVerified[] = [
     path: 'e/solitary-fibrous-tumor-of-pleura/',
   },
   {
+    ledger: 'testicular-germ-cell-tumors',
+    claims: 1,
+    name: { it: 'Tumori a cellule germinali del testicolo: classificazione', en: 'Testicular germ cell tumors: classification' },
+    path: 'e/testicular-germ-cell-tumors/',
+  },
+  {
     ledger: 'thromboangiitis-obliterans',
     claims: 2,
     name: { it: 'Tromboangioite obliterante (malattia di Buerger)', en: 'Thromboangiitis obliterans (Buerger disease)' },
     path: 'e/thromboangiitis-obliterans/',
   },
   { ledger: 'thrombosis', claims: 2, name: { it: 'Trombosi', en: 'Thrombosis' }, path: 'e/thrombosis/' },
+  {
+    ledger: 'urolithiasis-and-obstructive-uropathy',
+    claims: 4,
+    name: { it: 'Urolitiasi, ostruzione e idronefrosi', en: 'Urolithiasis, obstruction and hydronephrosis' },
+    path: 'e/urolithiasis-and-obstructive-uropathy/',
+  },
+  {
+    ledger: 'urothelial-carcinoma',
+    claims: 27,
+    name: { it: 'Carcinoma uroteliale della vescica e delle vie urinarie', en: 'Urothelial carcinoma' },
+    path: 'e/urothelial-carcinoma/',
+  },
   { ledger: 'vascular-tumors', claims: 3, name: { it: 'Tumori vascolari (emangioma, angiosarcoma, sarcoma di Kaposi)', en: 'Vascular tumors' }, path: 'e/vascular-tumors/' },
 ];
 

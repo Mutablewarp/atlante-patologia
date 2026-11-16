@@ -387,50 +387,16 @@
   label:
     it: "Rene"
     en: "Kidney"
-  status: planned
+  status: published
   refPages: "940-997"
-  planned:
-    - id: renal-cell-carcinoma
-      names: { it: "Carcinoma a cellule renali", en: "Renal cell carcinoma" }
-    - id: benign-renal-tumors
-      names: { it: "Tumori renali benigni (oncocitoma, angiomiolipoma, adenoma papillare)", en: "Benign renal tumors" }
-    - id: wilms-tumor
-      names: { it: "Tumore di Wilms (nefroblastoma)", en: "Wilms tumor (nephroblastoma)" }
-    - id: urolithiasis-and-obstructive-uropathy
-      names: { it: "Urolitiasi, ostruzione e idronefrosi", en: "Urolithiasis, obstruction and hydronephrosis" }
 - id: o23
   section: III
   order: 23
   label:
     it: "Basse vie urinarie e apparato genitale maschile"
     en: "Lower urinary tract and male genital system"
-  status: planned
+  status: published
   refPages: "998-1037"
-  planned:
-    - id: benign-prostatic-hyperplasia
-      names: { it: "Iperplasia prostatica benigna", en: "Benign prostatic hyperplasia" }
-    - id: cystitis
-      names: { it: "Cistiti", en: "Cystitis" }
-    - id: urothelial-metaplastic-lesions
-      names: { it: "Lesioni proliferative e metaplastiche benigne dell'urotelio", en: "Benign proliferative and metaplastic urothelial lesions" }
-    - id: urothelial-carcinoma
-      names: { it: "Carcinoma uroteliale della vescica e delle vie urinarie", en: "Urothelial carcinoma" }
-    - id: prostatitis
-      names: { it: "Prostatiti", en: "Prostatitis" }
-    - id: prostatic-adenocarcinoma
-      names: { it: "Adenocarcinoma della prostata", en: "Prostatic adenocarcinoma" }
-    - id: testicular-germ-cell-tumors
-      names: { it: "Tumori a cellule germinali del testicolo: classificazione", en: "Testicular germ cell tumors: classification" }
-    - id: seminoma
-      names: { it: "Seminoma", en: "Seminoma" }
-    - id: nonseminomatous-germ-cell-tumors
-      names: { it: "Tumori germinali non seminomatosi", en: "Non-seminomatous germ cell tumors" }
-    - id: testicular-sex-cord-stromal-tumors
-      names: { it: "Tumori dei cordoni sessuali e dello stroma del testicolo", en: "Testicular sex cord–stromal tumors" }
-    - id: epididymitis-and-orchitis
-      names: { it: "Orchiti ed epididimiti", en: "Epididymitis and orchitis" }
-    - id: penile-diseases
-      names: { it: "Patologia del pene (balaniti, condilomi, carcinoma squamoso)", en: "Diseases of the penis" }
 - id: o24
   section: III
   order: 24
