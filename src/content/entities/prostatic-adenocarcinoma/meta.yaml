@@ -1,0 +1,142 @@
+id: prostatic-adenocarcinoma
+module: o23
+tier: core
+kind: disease
+names:
+  it: "Adenocarcinoma della prostata"
+  en: "Prostatic adenocarcinoma"
+  eponyms: []
+  synonyms:
+    it: ["Carcinoma prostatico", "Carcinoma acinare della prostata"]
+    en: ["Prostate cancer", "Acinar adenocarcinoma of the prostate"]
+  abbreviations: ["PIN", "PSA", "AMACR"]
+summary:
+  it: "Tumore maligno degli acini prostatici, tipico dell'anziano, spesso indolente, che nasce soprattutto nella zona periferica, si classifica con il sistema di Gleason e metastatizza a linfonodi e ossa con lesioni osteoblastiche."
+  en: "Malignant tumor of the prostatic acini, typical of elderly men and often indolent, arising mainly in the peripheral zone, graded with the Gleason system and spreading to lymph nodes and to bone as osteoblastic metastases."
+lenses:
+  system: [urinary-male-genital]
+  process: [neoplasia]
+  pattern: [dysplasia]
+  presentation: [incidental-finding]
+  marker: [ihc, laboratory]
+  group: [neoplastic]
+learningObjectives:
+  - it: "Descrivere la sede (zona periferica), la lesione precursora (PIN di alto grado) e l'aspetto delle ghiandole neoplastiche, piccole e prive di cellule basali."
+    en: "Describe the site (peripheral zone), the precursor lesion (high-grade PIN) and the look of the cancer glands, small and without basal cells."
+  - it: "Assegnare i pattern di Gleason e collegare il punteggio ai gruppi di grado ISUP da 1 a 5."
+    en: "Assign Gleason patterns and link the score to ISUP grade groups 1 to 5."
+  - it: "Usare IIC per cellule basali e AMACR nelle biopsie difficili."
+    en: "Use IHC for basal cells and AMACR in difficult biopsies."
+  - it: "Interpretare il PSA e spiegare perché la biopsia con ago segue un valore elevato."
+    en: "Interpret PSA and explain why needle biopsy follows a raised value."
+  - it: "Stadiare con il sistema TNM e descrivere la diffusione, incluse le metastasi ossee osteoblastiche."
+    en: "Stage with the TNM system and describe spread, including osteoblastic bone metastases."
+prerequisites: [neoplasia-nomenclature]
+relations:
+  - type: differentialOf
+    target: benign-prostatic-hyperplasia
+    note:
+      it: "Nell'iperplasia le ghiandole conservano le cellule basali."
+      en: "In hyperplasia the glands keep their basal cells."
+  - type: mimics
+    target: renal-cell-carcinoma
+    note:
+      it: "Il citoplasma vacuolato può simulare le cellule chiare del carcinoma renale."
+      en: "Vacuolated cytoplasm can simulate the clear cells of renal carcinoma."
+  - type: sameMarker
+    target: serum-tumor-markers
+    note:
+      it: "Il PSA sierico è un marcatore tumorale usato per lo screening e il follow-up."
+      en: "Serum PSA is a tumor marker used for screening and follow-up."
+  - type: sharesMechanism
+    target: tumor-grading-and-staging
+    note:
+      it: "Gleason e TNM sono esempi di grading e stadiazione."
+      en: "Gleason and TNM are examples of grading and staging."
+quickCheck:
+  - id: prostatic-adenocarcinoma-q1
+    q:
+      it: "Quale reperto immunoistochimico distingue le ghiandole neoplastiche da quelle benigne?"
+      en: "Which immunohistochemical finding separates cancer glands from benign glands?"
+    a:
+      it: "Le ghiandole neoplastiche non hanno cellule basali (citocheratina ad alto peso molecolare e p63 negative) ed esprimono AMACR."
+      en: "Cancer glands lack basal cells (high-molecular-weight cytokeratin and p63 negative) and express AMACR."
+    kind: short
+  - id: prostatic-adenocarcinoma-q2
+    q:
+      it: "Come si calcola il punteggio di Gleason e a quale gruppo di grado corrisponde 4 + 3?"
+      en: "How is the Gleason score calculated, and which grade group is 4 + 3?"
+    a:
+      it: "Somma del pattern predominante e del secondo per frequenza; 4 + 3 = 7 è il gruppo di grado 3."
+      en: "Sum of the most prominent and second most prominent patterns; 4 + 3 = 7 is grade group 3."
+    kind: short
+  - id: prostatic-adenocarcinoma-q3
+    q:
+      it: "Perché un PSA elevato non basta per diagnosticare il carcinoma?"
+      en: "Why is a raised PSA not enough to diagnose cancer?"
+    a:
+      it: "Il PSA sale anche con infiammazione e ipertrofia prostatica; serve la biopsia con ago."
+      en: "PSA also rises with prostate inflammation and hypertrophy; a needle biopsy is needed."
+    kind: short
+  - id: prostatic-adenocarcinoma-q4
+    q:
+      it: "Perché le metastasi ossee del carcinoma prostatico aumentano la fosfatasi alcalina sierica?"
+      en: "Why do prostate cancer bone metastases raise serum alkaline phosphatase?"
+    a:
+      it: "Sono osteoblastiche: gli osteoblasti rilasciano l'enzima mentre formano nuovo osso."
+      en: "They are osteoblastic: osteoblasts release the enzyme while laying down new bone."
+    kind: short
+selfExplain:
+  - it: "Perché la perdita delle cellule basali è utile per riconoscere il carcinoma in una biopsia difficile?"
+    en: "Why is loss of basal cells useful for recognizing cancer in a difficult biopsy?"
+  - it: "Perché il carcinoma prostatico invade spesso la capsula?"
+    en: "Why does prostate cancer often invade the capsule?"
+chain:
+  - pathology:
+      it: "Metastasi ossee osteoblastiche"
+      en: "Osteoblastic bone metastases"
+    sign:
+      it: "Dolore osseo, soprattutto vertebrale"
+      en: "Bone pain, especially in the spine"
+    lab:
+      it: "Aumento della fosfatasi alcalina sierica"
+      en: "Raised serum alkaline phosphatase"
+examQuestions:
+  - it: "Mi parli dell'adenocarcinoma della prostata: dove nasce e qual è la lesione precursora?"
+    en: "Tell me about prostatic adenocarcinoma: where does it arise and what is its precursor lesion?"
+    focus: [pathogenesis, gross]
+    level: 1
+  - it: "Che cosa vede al microscopio in un adenocarcinoma prostatico e che cosa manca alle ghiandole neoplastiche?"
+    en: "What do you see under the microscope in prostatic adenocarcinoma, and what do the cancer glands lack?"
+    focus: [micro, ancillary]
+    level: 1
+  - it: "Come si assegna il punteggio di Gleason e che gruppo di grado hanno 3 + 4 e 4 + 3?"
+    en: "How is the Gleason score assigned, and which grade groups are 3 + 4 and 4 + 3?"
+    focus: [micro, traps]
+    level: 2
+  - it: "Perché un PSA elevato porta alla biopsia con ago ma non basta per la diagnosi?"
+    en: "Why does a raised PSA lead to needle biopsy but not suffice for the diagnosis?"
+    focus: [clinical, ancillary]
+    level: 2
+  - it: "Come distingue un adenocarcinoma prostatico da un'iperplasia nodulare e quali colorazioni userebbe?"
+    en: "How do you tell prostatic adenocarcinoma from nodular hyperplasia, and which stains would you use?"
+    focus: [ancillary, differential]
+    level: 3
+  - it: "Come si stadia il carcinoma prostatico e dove dà metastasi? Che cosa si osserva nelle metastasi ossee?"
+    en: "How is prostate cancer staged and where does it spread? What is seen in the bone metastases?"
+    focus: [diagnosis, prognosis]
+    level: 3
+images:
+  - { id: prostatic-adenocarcinoma-micro-1, role: micro }
+  - { id: prostatic-adenocarcinoma-micro-2, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: true
+editionNote:
+  it: "Grading di Gleason, gruppi di grado, stadiazione TNM e sopravvivenza seguono l'ottava edizione di un solo testo; le soglie cambiano con gli aggiornamenti della classificazione, quindi vanno verificate su una fonte aggiornata."
+  en: "Gleason grading, grade groups, TNM staging and survival follow the 8th edition of a single textbook; cut-offs change with classification updates, so check a current source."
+sources:
+  - source: rubin-8e
+    chapter: "23"
+    pages: "1008-1013"
+lastUpdated: 2026-11-16
+status: published
