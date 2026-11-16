@@ -1,0 +1,118 @@
+id: penile-diseases
+module: o23
+tier: extended
+kind: disease
+names:
+  it: "Patologia del pene (balaniti, condilomi, carcinoma squamoso)"
+  en: "Diseases of the penis"
+  eponyms: ["Peyronie disease", "Bowen disease", "Zoon balanitis"]
+  synonyms:
+    it: ["Malattie del pene"]
+    en: ["Penile pathology"]
+  abbreviations: ["HPV", "STD"]
+summary:
+  it: "Anomalie dello sviluppo, lesioni infiammatorie e infettive, fibrosi di Peyronie e tumori squamosi del pene, con il carcinoma legato o non legato all'HPV."
+  en: "Developmental anomalies, inflammatory and infectious lesions, Peyronie fibrosis and squamous tumors of the penis, with carcinoma either linked or not linked to HPV."
+lenses:
+  system: [urinary-male-genital, skin]
+  process: [chronic-inflammation, neoplasia]
+  pattern: [dysplasia]
+  presentation: [mass-lesion, lymphadenopathy]
+  marker: [molecular]
+  group: [developmental, infectious, neoplastic]
+learningObjectives:
+  - it: "Distinguere ipospadia, epispadia e fimosi in base alla sede dell'anomalia."
+    en: "Tell hypospadias, epispadias and phimosis apart by the site of the anomaly."
+  - it: "Associare le lesioni genitali a trasmissione sessuale al loro agente e al loro aspetto."
+    en: "Match sexually transmitted genital lesions to their agent and appearance."
+  - it: "Distinguere condiloma, carcinoma verrucoso, malattia di Bowen e papulosi bowenoide."
+    en: "Distinguish condyloma, verrucous carcinoma, Bowen disease and bowenoid papulosis."
+  - it: "Spiegare perché i linfonodi inguinali ingrossati non provano una metastasi."
+    en: "Explain why enlarged inguinal nodes do not prove metastasis."
+prerequisites: [carcinoma-in-situ]
+relations:
+  - type: sharesMechanism
+    target: human-papillomavirus-infection
+    note:
+      it: "Condiloma, papulosi bowenoide e parte dei carcinomi dipendono dall'HPV."
+      en: "Condyloma, bowenoid papulosis and part of the carcinomas depend on HPV."
+  - type: differentialOf
+    target: syphilis
+    note:
+      it: "Ulcera singola molle contro vescicole raggruppate dell'herpes."
+      en: "A single soft ulcer versus the grouped vesicles of herpes."
+  - type: sameLesionOtherOrgan
+    target: vulvar-squamous-neoplasia
+    note:
+      it: "Anche la balanite xerotica obliterante corrisponde al lichen sclerosus della vulva."
+      en: "Balanitis xerotica obliterans also corresponds to vulvar lichen sclerosus."
+quickCheck:
+  - id: penile-diseases-q1
+    q:
+      it: "Dove si apre l'uretra nell'ipospadia e dove nell'epispadia?"
+      en: "Where does the urethra open in hypospadias and in epispadias?"
+    a:
+      it: "Nell'ipospadia sulla faccia ventrale, prima della punta; nell'epispadia sulla faccia dorsale."
+      en: "In hypospadias on the ventral side, short of the tip; in epispadias on the dorsal side."
+    kind: short
+  - id: penile-diseases-q2
+    q:
+      it: "Perché un condiloma non va confuso con il carcinoma verrucoso?"
+      en: "Why must a condyloma not be mistaken for verrucous carcinoma?"
+    a:
+      it: "Il carcinoma verrucoso somiglia al condiloma ma invade localmente."
+      en: "Verrucous carcinoma resembles condyloma but invades locally."
+    kind: short
+  - id: penile-diseases-q3
+    q:
+      it: "Quali sono i fattori di rischio del carcinoma del pene?"
+      en: "Which risk factors go with penile carcinoma?"
+    a:
+      it: "HPV, assenza di circoncisione, smegma e fumo di sigaretta."
+      en: "HPV, no circumcision, smegma and cigarette smoking."
+    kind: short
+selfExplain:
+  - it: "Perché nella parafimosi il glande perde il drenaggio venoso?"
+    en: "Why does the glans lose its venous drainage in paraphimosis?"
+  - it: "Perché la papulosi bowenoide, pur dipendendo dall'HPV, di solito non diventa un carcinoma invasivo?"
+    en: "Why does bowenoid papulosis, although HPV-induced, usually not become invasive carcinoma?"
+examQuestions:
+  - it: "Mi parli di ipospadia, epispadia e fimosi: dove sta l'anomalia in ciascuna?"
+    en: "Tell me about hypospadias, epispadias and phimosis: where is the anomaly in each?"
+    focus: [definition, gross]
+    level: 1
+  - it: "Quali agenti causano le principali lesioni genitali a trasmissione sessuale e come si presentano?"
+    en: "Which agents cause the main sexually transmitted genital lesions, and how do they present?"
+    focus: [etiology, clinical]
+    level: 2
+  - it: "Mi parli della malattia di Peyronie: che cosa succede nel tessuto e che cosa nota il paziente?"
+    en: "Tell me about Peyronie disease: what happens in the tissue and what does the patient notice?"
+    focus: [pathogenesis, clinical]
+    level: 2
+  - it: "Come distingue un condiloma da un carcinoma verrucoso?"
+    en: "How do you tell a condyloma from a verrucous carcinoma?"
+    focus: [micro, differential]
+    level: 3
+  - it: "Che cosa vede al microscopio nel carcinoma in situ del pene e come lo distingue dal carcinoma invasivo?"
+    en: "What do you see under the microscope in penile carcinoma in situ, and how do you tell it from invasive carcinoma?"
+    focus: [micro, ancillary]
+    level: 3
+  - it: "Perché dei linfonodi inguinali ingrossati non bastano a dire che il carcinoma del pene ha metastatizzato?"
+    en: "Why do enlarged inguinal nodes not prove that penile carcinoma has metastasized?"
+    focus: [diagnosis, prognosis]
+    level: 3
+images:
+  - { id: penile-diseases-gross-1, role: gross, pairWith: penile-diseases-micro-1 }
+  - { id: penile-diseases-micro-1, role: micro }
+  - { id: penile-diseases-micro-2, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: true
+editionNote:
+  it: "La classificazione delle lesioni precancerose e del carcinoma del pene cambia tra le edizioni: la scheda segue l'8a edizione del testo di riferimento e va confrontata con la classificazione attuale."
+  en: "The classification of penile precancer and carcinoma changes between editions: this card follows the 8th edition of the reference and must be checked against the current classification."
+sources:
+  - source: rubin-8e
+    chapter: "23"
+    pages: "989, 992-995"
+lastUpdated: 2026-11-16
+status: published
