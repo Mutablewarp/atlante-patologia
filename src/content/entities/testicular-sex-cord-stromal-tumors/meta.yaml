@@ -1,0 +1,104 @@
+id: testicular-sex-cord-stromal-tumors
+module: o23
+tier: extended
+kind: disease
+names:
+  it: "Tumori dei cordoni sessuali e dello stroma del testicolo"
+  en: "Testicular sex cord–stromal tumors"
+  eponyms: []
+  synonyms:
+    it: ["Tumori stromali/dei cordoni sessuali gonadici"]
+    en: ["Gonadal stromal/sex cord tumors"]
+  abbreviations: []
+summary:
+  it: "Gruppo di neoplasie testicolari rare, costituite da cellule simili a quelle di Leydig o di Sertoli, per lo più benigne e curate dall'orchiectomia."
+  en: "A group of rare testicular neoplasms made of cells resembling Leydig or Sertoli cells, mostly benign and cured by orchiectomy."
+lenses:
+  system: [urinary-male-genital, endocrine]
+  process: [neoplasia]
+  pattern: [intracellular-inclusions]
+  presentation: [mass-lesion]
+  marker: []
+  group: [neoplastic]
+learningObjectives:
+  - it: "Descrivere il tumore a cellule di Leydig: aspetto macroscopico, cristalli di Reinke ed effetti endocrini."
+    en: "Describe the Leydig cell tumor: gross appearance, Reinke crystals and endocrine effects."
+  - it: "Descrivere il tumore a cellule di Sertoli: noduli piccoli con tubuli e cordoni, spesso senza effetti ormonali."
+    en: "Describe the Sertoli cell tumor: small nodules with tubules and cords, often without hormonal effects."
+  - it: "Spiegare perché la maggior parte di questi tumori è benigna e guarisce con l'orchiectomia."
+    en: "Explain why most of these tumors are benign and cured by orchiectomy."
+prerequisites: [neoplasia-nomenclature]
+relations:
+  - type: differentialOf
+    target: diffuse-large-b-cell-lymphoma
+    note:
+      it: "Il linfoma è la neoplasia testicolare più frequente sopra i 60 anni."
+      en: "Lymphoma is the most common testicular neoplasm above age 60."
+  - type: sameLesionOtherOrgan
+    target: ovarian-sex-cord-stromal-tumors
+quickCheck:
+  - id: testicular-sex-cord-stromal-tumors-q1
+    q:
+      it: "Quale inclusione citoplasmatica è caratteristica delle cellule di Leydig e si osserva in circa il 30% dei tumori?"
+      en: "Which cytoplasmic inclusion is characteristic of Leydig cells and seen in about 30% of the tumors?"
+    a:
+      it: "I cristalli di Reinke, corpi rettangolari nel citoplasma."
+      en: "Reinke crystals, rectangular bodies in the cytoplasm."
+    kind: short
+  - id: testicular-sex-cord-stromal-tumors-q2
+    q:
+      it: "Quali effetti endocrini può avere un tumore di Leydig nel bambino e nell'adulto?"
+      en: "Which endocrine effects can a Leydig cell tumor have in a child and in an adult?"
+    a:
+      it: "Nel bambino prepubere sviluppo fisico e sessuale precoce; in alcuni adulti femminilizzazione e ginecomastia."
+      en: "Precocious physical and sexual development in a prepubertal boy; feminization and gynecomastia in some adults."
+    kind: short
+  - id: testicular-sex-cord-stromal-tumors-q3
+    q:
+      it: "Qual è la prognosi abituale dei tumori di Leydig e di Sertoli?"
+      en: "What is the usual outcome of Leydig and Sertoli cell tumors?"
+    a:
+      it: "Circa il 90% è benigno e l'orchiectomia è curativa."
+      en: "About 90% are benign and orchiectomy is curative."
+    kind: short
+  - id: testicular-sex-cord-stromal-tumors-q4
+    q:
+      it: "Con quali sintomi si presenta di solito un tumore di Sertoli?"
+      en: "How does a Sertoli cell tumor usually present?"
+    a:
+      it: "Con una massa scrotale, per lo più in pazienti sotto i 40 anni; gli effetti ormonali sono rari e vaghi."
+      en: "As a scrotal mass, mostly in patients under 40; hormonal effects are rare and vague."
+    kind: short
+selfExplain:
+  - it: "Perché un tumore di Leydig può causare pubertà precoce in un bambino?"
+    en: "Why can a Leydig cell tumor cause precocious puberty in a boy?"
+  - it: "Perché l'aspetto istologico non basta a dire se un tumore di Leydig è benigno?"
+    en: "Why is the histologic appearance not enough to say whether a Leydig cell tumor is benign?"
+examQuestions:
+  - it: "Mi parli del tumore a cellule di Leydig: che cosa vede al microscopio e quali effetti endocrini può avere?"
+    en: "Tell me about the Leydig cell tumor: what do you see under the microscope, and what endocrine effects can it have?"
+    focus: [micro, clinical]
+    level: 1
+  - it: "Mi parli del tumore a cellule di Sertoli: com'è fatto e come si presenta?"
+    en: "Tell me about the Sertoli cell tumor: what does it look like and how does it present?"
+    focus: [gross, micro, clinical]
+    level: 1
+  - it: "Come distingue un tumore di Leydig da un tumore di Sertoli?"
+    en: "How do you tell a Leydig cell tumor from a Sertoli cell tumor?"
+    focus: [micro, differential]
+    level: 3
+  - it: "Perché questi tumori sono considerati per lo più benigni, e che cosa rende comunque difficile prevederne il comportamento?"
+    en: "Why are these tumors considered mostly benign, and what still makes their behavior hard to predict?"
+    focus: [prognosis, traps]
+    level: 2
+images:
+  - id: testicular-sex-cord-stromal-tumors-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "23"
+    pages: "1005-1006"
+lastUpdated: 2026-11-16
+status: published
