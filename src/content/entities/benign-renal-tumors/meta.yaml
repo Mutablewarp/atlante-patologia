@@ -1,0 +1,105 @@
+id: benign-renal-tumors
+module: o22
+tier: extended
+kind: disease
+names:
+  it: "Tumori renali benigni (oncocitoma, angiomiolipoma, adenoma papillare)"
+  en: "Benign renal tumors"
+  eponyms: []
+  synonyms:
+    it: ["Tumore interstiziale reno-midollare"]
+    en: ["Renomedullary interstitial cell tumor"]
+  abbreviations: []
+summary:
+  it: "Gruppo di neoplasie renali benigne o a basso rischio (adenoma papillare, oncocitoma, fibroma midollare, angiomiolipoma, nefroma mesoblastico) da distinguere dai carcinomi."
+  en: "A group of benign or low-risk kidney neoplasms (papillary adenoma, oncocytoma, medullary fibroma, angiomyolipoma, mesoblastic nephroma) to be told apart from carcinomas."
+lenses:
+  system: [kidney]
+  process: [neoplasia]
+  pattern: []
+  presentation: [mass-lesion, incidental-finding]
+  marker: []
+  group: [neoplastic]
+learningObjectives:
+  - it: "Elencare i principali tumori renali benigni e la cellula di origine dell'oncocitoma."
+    en: "List the main benign renal tumors and the cell of origin of oncocytoma."
+  - it: "Descrivere la composizione e l'aspetto macroscopico dell'angiomiolipoma e la sua associazione con la sclerosi tuberosa."
+    en: "Describe the composition and gross appearance of angiomyolipoma and its association with tuberous sclerosis."
+  - it: "Spiegare perché la dimensione da sola non distingue adenoma e carcinoma."
+    en: "Explain why size alone does not separate adenoma from carcinoma."
+  - it: "Distinguere il nefroma mesoblastico dal tumore di Wilms."
+    en: "Tell mesoblastic nephroma apart from Wilms tumor."
+prerequisites: []
+relations:
+  - type: differentialOf
+    target: renal-cell-carcinoma
+    note:
+      it: "Le cellule simili a quelle del carcinoma a cellule chiare, cromofobo o dei dotti collettori escludono la diagnosi di adenoma."
+      en: "Cells resembling clear cell, chromophobe or collecting duct carcinoma rule out an adenoma."
+  - type: differentialOf
+    target: wilms-tumor
+    note:
+      it: "Il nefroma mesoblastico del lattante va differenziato dal tumore di Wilms."
+      en: "Mesoblastic nephroma of infancy must be separated from Wilms tumor."
+quickCheck:
+  - id: benign-renal-tumors-q1
+    q:
+      it: "Quali tre tessuti compongono l'angiomiolipoma?"
+      en: "Which three tissues make up an angiomyolipoma?"
+    a:
+      it: "Tessuto adiposo maturo, muscolatura liscia e vasi a parete spessa."
+      en: "Mature fat, smooth muscle and thick-walled vessels."
+    kind: short
+  - id: benign-renal-tumors-q2
+    q:
+      it: "Perché la dimensione non basta a definire un adenoma renale?"
+      en: "Why is size not enough to define a renal adenoma?"
+    a:
+      it: "Perché tutti i carcinomi iniziano come lesioni piccole."
+      en: "Because every carcinoma starts out as a small lesion."
+    kind: short
+  - id: benign-renal-tumors-q3
+    q:
+      it: "Da quale cellula deriva l'oncocitoma e perché ha un aspetto granulare?"
+      en: "Which cell does oncocytoma derive from, and why does it look granular?"
+    a:
+      it: "Dalle cellule intercalate del dotto collettore; il citoplasma è pieno di mitocondri."
+      en: "From intercalated cells of the collecting duct; the cytoplasm is packed with mitochondria."
+    kind: short
+  - id: benign-renal-tumors-q4
+    q:
+      it: "Quanti pazienti con sclerosi tuberosa hanno un angiomiolipoma, e vale il contrario?"
+      en: "How many patients with tuberous sclerosis have an angiomyolipoma, and does the reverse hold?"
+    a:
+      it: "L'80% dei pazienti con sclerosi tuberosa ha un angiomiolipoma, ma nella maggior parte dei pazienti con angiomiolipoma la sclerosi tuberosa è assente."
+      en: "Angiomyolipomas are found in 80% of patients with tuberous sclerosis, but in most people with an angiomyolipoma tuberous sclerosis is absent."
+    kind: short
+selfExplain:
+  - it: "Perché un angiomiolipoma può essere scambiato per un carcinoma renale e come si distingue?"
+    en: "Why can an angiomyolipoma be mistaken for renal carcinoma, and how is it told apart?"
+  - it: "Perché un tumore epiteliale renale piccolo non può essere definito adenoma solo in base alla dimensione?"
+    en: "Why can a small epithelial renal tumor not be called an adenoma on size alone?"
+examQuestions:
+  - it: "Mi parli dell'oncocitoma: da quale cellula deriva, perché ha un aspetto granulare e come si comporta?"
+    en: "Tell me about oncocytoma: which cell does it come from, why does it look granular, and how does it behave?"
+    focus: [pathogenesis, micro, prognosis]
+    level: 2
+  - it: "Mi parli dell'angiomiolipoma e della sua associazione con la sclerosi tuberosa."
+    en: "Tell me about angiomyolipoma and its association with tuberous sclerosis."
+    focus: [etiology, micro, diagnosis]
+    level: 1
+  - it: "Perché la dimensione non basta a distinguere un adenoma papillare da un carcinoma?"
+    en: "Why is size not enough to tell a papillary adenoma from a carcinoma?"
+    focus: [definition, differential]
+    level: 3
+images:
+  - { id: benign-renal-tumors-micro-1, role: micro }
+  - { id: benign-renal-tumors-micro-2, role: micro }
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "22"
+    pages: "969"
+lastUpdated: 2026-11-16
+status: published

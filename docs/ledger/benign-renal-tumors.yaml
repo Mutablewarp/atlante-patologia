@@ -1,0 +1,354 @@
+entity: benign-renal-tumors
+claims:
+- claimId: benign-renal-tumors-c001
+  section: definition
+  statement: "The reference discusses papillary renal adenoma, oncocytoma, medullary fibroma, angiomyolipoma and mesoblastic nephroma under benign renal tumors."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c002
+  section: definition
+  statement: "Experts still disagree on whether an epithelial tumor of the kidney can ever be regarded as benign."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c003
+  section: definition
+  statement: "Since every carcinoma begins as a small lesion, a size cutoff cannot separate adenoma from carcinoma."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c004
+  section: definition
+  statement: "A few epithelial kidney tumors under 3 cm do metastasize, although most do not."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c005
+  section: definition
+  statement: "Adenoma is an acceptable label for a papillary or tubulopapillary growth that measures less than 5 mm."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c006
+  section: definition
+  statement: "At autopsy, 40% of people over 70 carry a papillary adenoma found by chance, and the frequency rises with age."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c007
+  section: definition
+  statement: "Among primary kidney tumors removed by surgery, oncocytomas make up 5% to 10%."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c008
+  section: etiology
+  statement: "Angiomyolipoma is strongly associated with tuberous sclerosis."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c009
+  section: etiology
+  statement: "Angiomyolipomas are found in 80% of patients with tuberous sclerosis."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c010
+  section: etiology
+  statement: "In most people who have an angiomyolipoma, tuberous sclerosis is absent."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c011
+  section: etiology
+  statement: "Mesoblastic nephroma is present from birth, as either a benign neoplasm or a hamartoma."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c012
+  section: pathogenesis
+  statement: "Renal oncocytoma derives from intercalated cells of the collecting duct."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c013
+  section: pathogenesis
+  statement: "Mitochondria fill the cells of an oncocytoma and give them their typical appearance."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c014
+  section: pathogenesis
+  statement: "Medullary fibroma is the same entity as the renomedullary interstitial cell tumor."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c015
+  section: pathogenesis
+  statement: "The cells of mesoblastic nephroma belong to the fibroblast or myofibroblast lineage."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c016
+  section: gross
+  statement: "Lipochrome pigment gives oncocytoma its usual mahogany-brown color."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c017
+  section: gross
+  statement: "On gross inspection, angiomyolipoma can pass for renal cell carcinoma, because it is yellow with a bosselated outline."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c018
+  section: gross
+  statement: "A medullary fibroma lies mostly in the middle of a renal pyramid and is tiny (under 0.5 cm) and pale gray."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c019
+  section: gross
+  statement: "Mesoblastic nephromas vary widely in size: the smallest are below 1 cm and the largest exceed 15 cm."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c020
+  section: gross
+  statement: "The border of a mesoblastic nephroma is usually ragged because extensions of tumor reach into adjacent kidney tissue."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c021
+  section: micro
+  statement: "Oncocytoma nuclei are round without atypia, and the cytoplasm is pink and granular."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c022
+  section: micro
+  statement: "Thick-walled vessels, smooth muscle and mature fat are mixed together in an angiomyolipoma."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c023
+  section: micro
+  statement: "A loose stroma holds the small cells of a medullary fibroma, which range in shape from stellate to polygonal."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c024
+  section: micro
+  statement: "Mesoblastic nephromas are composed of spindle cells."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c025
+  section: clinical
+  statement: "Up to half of adult autopsies reveal a medullary fibroma by chance."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c026
+  section: clinical
+  statement: "Mesoblastic nephromas are usually found in infants younger than 3 months."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c027
+  section: diagnosis
+  statement: "A well-formed capsule, always present, and the absence of necrosis separate angiomyolipoma from renal cell carcinoma."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c028
+  section: diagnosis
+  statement: "Mesoblastic nephroma needs to be distinguished from Wilms tumor."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c029
+  section: prognosis
+  statement: "Oncocytomas rarely metastasize."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c030
+  section: prognosis
+  statement: "If strips of tumor are left in the kidney at surgery, a mesoblastic nephroma can recur."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "fixer-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c031
+  section: differential
+  statement: "A tumor that mimics clear cell, chromophobe or collecting duct carcinoma is not an adenoma, whatever its size."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c032
+  section: differential
+  statement: "Epithelium, stroma and blastema are all present in a Wilms tumor."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c033
+  section: high-yield
+  statement: "An angiomyolipoma contains vessels with thick walls, smooth muscle and fat."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c034
+  section: high-yield
+  statement: "Angiomyolipoma has a capsule and no necrosis, unlike carcinoma."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c035
+  section: high-yield
+  statement: "Four in five tuberous sclerosis patients have an angiomyolipoma."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c036
+  section: high-yield
+  statement: "Oncocytomas have granular cells with abundant mitochondria and a mahogany-brown color."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c037
+  section: high-yield
+  statement: "A papillary or tubulopapillary tumor that stays below 5 mm counts as a papillary adenoma."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c038
+  section: high-yield
+  statement: "Residual strips of tumor after surgery can cause a mesoblastic nephroma to recur."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c039
+  section: high-yield
+  statement: "Medullary fibromas are tiny and are incidental autopsy findings."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c040
+  section: traps
+  statement: "Most patients with angiomyolipoma lack tuberous sclerosis, although 80% of tuberous sclerosis patients have angiomyolipomas."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c041
+  section: traps
+  statement: "Adenoma and carcinoma cannot be split by size, since each carcinoma was small at first."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c042
+  section: traps
+  statement: "Oncocytoma is benign and rarely metastasizes."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c043
+  section: mnemonics
+  statement: "The mnemonic AML stands for the contents of an angiomyolipoma: fat, muscle and thick vessels."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
+- claimId: benign-renal-tumors-c044
+  section: mnemonics
+  statement: "Oncocytoma is brown because of lipochrome pigment, and its cells are full of mitochondria (original mnemonic)."
+  sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+  status: verified
+  verifiedBy: agent
+  verifier: "independent-verifier-agent"
+  date: 2026-11-16
