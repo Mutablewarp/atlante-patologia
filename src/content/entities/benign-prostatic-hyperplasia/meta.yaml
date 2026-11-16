@@ -1,0 +1,123 @@
+id: benign-prostatic-hyperplasia
+module: o23
+tier: core
+kind: disease
+names:
+  it: "Iperplasia prostatica benigna"
+  en: "Benign prostatic hyperplasia"
+  eponyms: []
+  synonyms:
+    it: ["Iperplasia nodulare della prostata"]
+    en: ["Nodular prostatic hyperplasia", "Nodular hyperplasia of the prostate"]
+  abbreviations: ["BPH", "IPB"]
+summary:
+  it: "Proliferazione nodulare benigna di ghiandole e stroma nella zona di transizione periuretrale della prostata, guidata dagli androgeni, che comprime l'uretra e ostruisce il deflusso dell'urina."
+  en: "Benign nodular proliferation of glands and stroma in the periurethral transitional zone of the prostate, driven by androgens, that compresses the urethra and obstructs urine outflow."
+lenses:
+  system: [urinary-male-genital]
+  process: [cellular-adaptation]
+  pattern: [hyperplasia]
+  presentation: [mass-lesion]
+  marker: []
+  group: [adaptive]
+learningObjectives:
+  - it: "Descrivere la sede di origine e l'aspetto macroscopico e microscopico dei noduli fibromioadenomatosi."
+    en: "Describe where the nodules begin and their gross and microscopic appearance as fibromyoadenomatous nodules."
+  - it: "Spiegare il ruolo di testosterone, DHT e 5α-reduttasi nella crescita prostatica e nel trattamento."
+    en: "Explain the role of testosterone, DHT and 5α-reductase in prostatic growth and in treatment."
+  - it: "Collegare l'ostruzione uretrale ai sintomi urinari e alle complicanze sulle vie urinarie."
+    en: "Link urethral obstruction to urinary symptoms and to complications of the urinary tract."
+  - it: "Distinguere l'iperplasia prostatica dall'adenocarcinoma per sede di origine."
+    en: "Distinguish prostatic hyperplasia from adenocarcinoma by site of origin."
+prerequisites: [hyperplasia]
+relations:
+  - type: differentialOf
+    target: prostatic-adenocarcinoma
+    note:
+      it: "Iperplasia periuretrale contro carcinoma che di solito nasce dalle ghiandole periferiche."
+      en: "Periurethral hyperplasia versus carcinoma that usually arises from the peripheral glands."
+  - type: sameMarker
+    target: prostatitis
+    note:
+      it: "Nell'iperplasia nodulare è frequente una prostatite aspecifica."
+      en: "Nonspecific prostatitis is common in nodular hyperplasia."
+  - type: causes
+    target: urolithiasis-and-obstructive-uropathy
+    note:
+      it: "L'ostruzione prolungata causa idroureter e idronefrosi."
+      en: "Prolonged obstruction causes hydroureter and hydronephrosis."
+quickCheck:
+  - id: benign-prostatic-hyperplasia-q1
+    q:
+      it: "In quale parte della prostata nascono i noduli dell'iperplasia prostatica benigna, e perché causano presto sintomi urinari?"
+      en: "In which part of the prostate do BPH nodules begin, and why do they cause urinary symptoms early?"
+    a:
+      it: "Nella zona di transizione attorno all'uretra prossimale: i noduli in crescita comprimono il lume uretrale."
+      en: "In the transitional zone around the proximal urethra: the growing nodules compress the urethral lumen."
+    kind: short
+  - id: benign-prostatic-hyperplasia-q2
+    q:
+      it: "Perché un inibitore della 5α-reduttasi riduce il volume della prostata nella IPB?"
+      en: "Why does a 5α-reductase inhibitor reduce prostate size in BPH?"
+    a:
+      it: "Perché il DHT, prodotto dalla 5α-reduttasi, stimola la crescita di ghiandole e stroma."
+      en: "Because DHT, produced by 5α-reductase, stimulates growth of glands and stroma."
+    kind: short
+  - id: benign-prostatic-hyperplasia-q3
+    q:
+      it: "Quali conseguenze può avere un'ostruzione grave e prolungata sulle alte vie urinarie?"
+      en: "What can severe, prolonged obstruction do to the upper urinary tract?"
+    a:
+      it: "Il reflusso di pressione provoca idroureter, idronefrosi e infine insufficienza renale."
+      en: "Back pressure causes hydroureter, hydronephrosis and eventually renal failure."
+    kind: short
+selfExplain:
+  - it: "Perché la IPB non compare prima della pubertà né negli uomini castrati?"
+    en: "Why does BPH not appear before puberty or in castrated men?"
+  - it: "Perché l'iperplasia periuretrale dà sintomi ostruttivi precoci, mentre il carcinoma periferico li dà tardi?"
+    en: "Why does periurethral hyperplasia give obstructive symptoms early, while peripheral carcinoma gives them late?"
+chain:
+  - pathology:
+      it: "Noduli iperplastici che comprimono l'uretra prostatica"
+      en: "Hyperplastic nodules compressing the prostatic urethra"
+    sign:
+      it: "Getto urinario debole e aumento della frequenza"
+      en: "Weak urinary stream and increased frequency"
+    lab:
+      it: "Prostata ingrandita, dura e nodulare all'esplorazione rettale"
+      en: "Enlarged, firm, nodular prostate on rectal examination"
+examQuestions:
+  - it: "Mi parli dell'iperplasia prostatica benigna: dove nascono i noduli e come appaiono al taglio?"
+    en: "Tell me about benign prostatic hyperplasia: where do the nodules begin and what do they look like on the cut surface?"
+    focus: [definition, gross]
+    level: 1
+  - it: "Che cosa vede al microscopio in un nodulo fibromioadenomatoso della prostata?"
+    en: "What do you see under the microscope in a fibromyoadenomatous nodule of the prostate?"
+    focus: [micro]
+    level: 1
+  - it: "Perché il DHT è importante nell'iperplasia prostatica benigna, e perché gli uomini castrati non ne sono affetti?"
+    en: "Why does DHT matter in benign prostatic hyperplasia, and why are castrated men not affected?"
+    focus: [etiology, pathogenesis]
+    level: 2
+  - it: "Perché l'iperplasia prostatica benigna dà sintomi urinari ostruttivi, e quali complicanze può avere sulle vie urinarie?"
+    en: "Why does benign prostatic hyperplasia cause obstructive urinary symptoms, and what complications can it cause in the urinary tract?"
+    focus: [clinical, prognosis]
+    level: 2
+  - it: "Come distingue l'iperplasia prostatica benigna dal carcinoma prostatico per sede di origine?"
+    en: "How do you tell benign prostatic hyperplasia from prostatic carcinoma by site of origin?"
+    focus: [gross, differential]
+    level: 3
+images:
+  - id: benign-prostatic-hyperplasia-gross-1
+    role: gross
+    pairWith: benign-prostatic-hyperplasia-micro-1
+  - id: benign-prostatic-hyperplasia-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "23"
+    pages: "1007-1008"
+lastUpdated: 2026-11-16
+status: published
