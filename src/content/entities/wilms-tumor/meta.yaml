@@ -1,0 +1,118 @@
+id: wilms-tumor
+module: o22
+tier: extended
+kind: disease
+names:
+  it: "Tumore di Wilms (nefroblastoma)"
+  en: "Wilms tumor (nephroblastoma)"
+  eponyms: ["Wilms"]
+  synonyms:
+    it: ["Nefroblastoma"]
+    en: ["Nephroblastoma"]
+  abbreviations: ["WT"]
+summary:
+  it: "Tumore renale embrionale maligno dell'infanzia, formato da blastema, stroma ed epitelio, spesso legato a mutazioni di WT1 o alterazioni di 11p15.5."
+  en: "Malignant embryonal kidney tumor of childhood made of blastema, stroma and epithelium, often linked to WT1 mutations or 11p15.5 alterations."
+lenses:
+  system: [kidney]
+  process: [neoplasia]
+  pattern: []
+  presentation: [mass-lesion, hematuria]
+  marker: [molecular]
+  group: [neoplastic, genetic, developmental]
+learningObjectives:
+  - it: "Riconoscere il pattern trifasico del tumore di Wilms: blastema, stroma ed epitelio."
+    en: "Recognize the triphasic pattern of Wilms tumor: blastema, stroma and epithelium."
+  - it: "Collegare WAGR, Denys–Drash e Beckwith–Wiedemann ai rispettivi difetti genetici."
+    en: "Link WAGR, Denys–Drash and Beckwith–Wiedemann syndromes to their genetic defects."
+  - it: "Spiegare il ruolo di WT1 e del locus 11p15.5 nella patogenesi."
+    en: "Explain the role of WT1 and of the 11p15.5 locus in pathogenesis."
+  - it: "Elencare i fattori prognostici, compresa l'anaplasia."
+    en: "List the prognostic factors, including anaplasia."
+prerequisites: [oncogenes-and-tumor-suppressor-genes]
+relations:
+  - type: differentialOf
+    target: benign-renal-tumors
+    note:
+      it: "Il nefroma mesoblastico è un tumore congenito benigno a cellule fusate."
+      en: "Mesoblastic nephroma is a benign congenital spindle-cell tumor."
+  - type: differentialOf
+    target: renal-cell-carcinoma
+    note:
+      it: "Il carcinoma a cellule renali è il tumore renale primitivo più frequente e nasce dall'epitelio tubulare."
+      en: "Renal cell carcinoma is the commonest primary renal cancer and arises from tubular epithelium."
+  - type: sharesMechanism
+    target: retinoblastoma
+    note:
+      it: "In entrambi serve la perdita del secondo allele dopo una mutazione germinale."
+      en: "Both need loss of the second allele after a germline mutation."
+quickCheck:
+  - id: wilms-tumor-q1
+    q:
+      it: "Quali sono le tre componenti istologiche del tumore di Wilms?"
+      en: "What are the three histologic components of Wilms tumor?"
+    a:
+      it: "Blastema, stroma ed epitelio; alcuni tumori ne mostrano solo due o una."
+      en: "Blastema, stroma and epithelium; some tumors show only two or one."
+    kind: short
+  - id: wilms-tumor-q2
+    q:
+      it: "Che cosa distingue la sindrome WAGR dalla sindrome di Denys–Drash dal punto di vista genetico?"
+      en: "How do WAGR and Denys–Drash syndromes differ genetically?"
+    a:
+      it: "In WAGR c'è una delezione di 11p13 che coinvolge WT1 e PAX6; in Denys–Drash le mutazioni di WT1 sono dominanti negative."
+      en: "WAGR is an 11p13 deletion involving WT1 and PAX6; in Denys–Drash the WT1 mutations are dominant negative."
+    kind: short
+  - id: wilms-tumor-q3
+    q:
+      it: "Quali elementi peggiorano la prognosi?"
+      en: "Which features worsen the prognosis?"
+    a:
+      it: "L'anaplasia e la presenza di tumore oltre la capsula renale."
+      en: "Anaplasia and tumor beyond the renal capsule."
+    kind: short
+  - id: wilms-tumor-q4
+    q:
+      it: "Quale locus condivide la sindrome di Beckwith–Wiedemann con il tumore di Wilms sporadico, e quale allele si perde?"
+      en: "Which locus does Beckwith–Wiedemann syndrome share with sporadic Wilms tumor, and which allele is lost?"
+    a:
+      it: "Il locus 11p15.5; nei tumori sporadici si perde l'allele materno."
+      en: "The 11p15.5 locus; in sporadic tumors the maternal allele is lost."
+    kind: short
+selfExplain:
+  - it: "Perché una mutazione germinale di WT1 non basta a causare il tumore?"
+    en: "Why is a germline WT1 mutation not enough to cause the tumor?"
+  - it: "Perché la sindrome di Denys–Drash è più grave della WAGR?"
+    en: "Why is Denys–Drash syndrome more severe than WAGR?"
+examQuestions:
+  - it: "Che cosa vede al microscopio in un tumore di Wilms?"
+    en: "What do you see under the microscope in a Wilms tumor?"
+    focus: [micro]
+    level: 1
+  - it: "Mi parli delle sindromi associate al tumore di Wilms: WAGR, Denys–Drash e Beckwith–Wiedemann."
+    en: "Tell me about the syndromes associated with Wilms tumor: WAGR, Denys–Drash and Beckwith–Wiedemann."
+    focus: [etiology, pathogenesis]
+    level: 2
+  - it: "Che cos'è l'anaplasia nel tumore di Wilms e che peso ha sulla prognosi?"
+    en: "What is anaplasia in Wilms tumor, and how does it affect the prognosis?"
+    focus: [micro, prognosis]
+    level: 2
+  - it: "Quali fattori determinano la prognosi di un bambino con tumore di Wilms?"
+    en: "Which factors determine the prognosis of a child with Wilms tumor?"
+    focus: [prognosis]
+    level: 2
+  - it: "Perché una mutazione di WT1 non porta sempre a un tumore di Wilms?"
+    en: "Why does a WT1 mutation not always lead to Wilms tumor?"
+    focus: [etiology, pathogenesis, traps]
+    level: 3
+images:
+  - id: wilms-tumor-micro-1
+    role: micro
+reviewStatus: ai-generated-unreviewed
+editionDependent: false
+sources:
+  - source: rubin-8e
+    chapter: "22"
+    pages: "969-971"
+lastUpdated: 2026-11-16
+status: published

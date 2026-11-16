@@ -1,0 +1,426 @@
+entity: wilms-tumor
+claims:
+  - claimId: wilms-tumor-c001
+    section: definition
+    statement: "Wilms tumor is a malignant embryonal kidney tumor composed of blastema, stroma and epithelium."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c002
+    section: definition
+    statement: "It is the most common solid abdominal tumor in children."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c003
+    section: definition
+    statement: "The peak age is one to three years, and 98% of cases appear before the tenth birthday."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "971" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c004
+    section: etiology
+    statement: "Sporadic, unilateral disease accounts for about 90% of Wilms tumors."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c005
+    section: etiology
+    statement: "Three congenital syndromes account for another 5% of Wilms tumors; they bring tumors early, often in both kidneys."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c006
+    section: etiology
+    statement: "WAGR syndrome (Wilms tumor, aniridia, genitourinary anomalies, intellectual disability) is caused by deletion of 11p13, which takes out the aniridia gene PAX6 and the Wilms tumor gene WT1."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c007
+    section: etiology
+    statement: "Denys-Drash syndrome pairs glomerular mesangial sclerosis with disordered sexual development."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c008
+    section: etiology
+    statement: "Beckwith-Wiedemann syndrome causes macroglossia, enlarged organs and body overgrowth that can be limited to one side."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c009
+    section: etiology
+    statement: "Familial Wilms tumors, about 6% of the total, start early and are bilateral even without a syndrome."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c010
+    section: etiology
+    statement: "Gonadoblastoma, not Wilms tumor, is the tumor of Frasier syndrome, even though WT1 is mutated there too."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c011
+    section: pathogenesis
+    statement: "WT1 is a tumor suppressor that controls which other genes are transcribed."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "970" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c012
+    section: pathogenesis
+    statement: "WAGR tumors follow the two-hit model, as retinoblastoma does: one WT1 allele is lost in the germline, the other later in the tumor cell."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c013
+    section: pathogenesis
+    statement: "Denys-Drash syndrome is more severe than WAGR, possibly because its WT1 mutations are dominant negative."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c014
+    section: pathogenesis
+    statement: "Only 10% to 20% of sporadic tumors carry a WT1 mutation, so other genes must contribute to them."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "970" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c015
+    section: pathogenesis
+    statement: "The 11p15.5 locus, also linked to Beckwith-Wiedemann syndrome, shows loss of heterozygosity or loss of imprinting in about 70% of Wilms tumors."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "970" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c016
+    section: pathogenesis
+    statement: "In sporadic Wilms tumors, the copy of 11p15.5 that is lost is always the maternal one."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "970" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c017
+    section: pathogenesis
+    statement: "IGF-II, a gene of 11p15 expressed from the paternal allele, may promote tumor growth when present in extra dose."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "970" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c018
+    section: pathogenesis
+    statement: "WTX may curb Wnt signaling by helping destroy beta-catenin, while CTNNB1 gain-of-function mutations make beta-catenin persist."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "970" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c019
+    section: pathogenesis
+    statement: "Nephrogenic rests, leftover immature blastema in the kidney, occur in all syndromic cases and may be clonal forerunners of the tumor."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "970" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c020
+    section: gross
+    statement: "A single large mass is typical; only a thin shell of renal cortex and capsule surrounds its pale tan, bulging cut face."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "970" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c021
+    section: micro
+    statement: "The histology resembles developing kidney: metanephric blastema plus immature stroma and epithelium."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "970" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c022
+    section: micro
+    statement: "Occasionally a tumor has only two components or one; most have all three, in varying proportions."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "970" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c023
+    section: micro
+    statement: "Blastema consists of nests and trabeculae of small oval cells with little cytoplasm."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "970" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c024
+    section: micro
+    statement: "The epithelium forms small tubules, a few of which mimic immature glomeruli."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "970" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c025
+    section: micro
+    statement: "Most stromal cells are spindle-shaped and have not yet matured."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "970-971" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c026
+    section: micro
+    statement: "When the stroma contains heterologous tissue, it is most often skeletal muscle."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "971" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c027
+    section: micro
+    statement: "Anaplasia shows as atypical mitoses together with large, hyperchromatic nuclei."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "971" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c028
+    section: ancillary
+    statement: "On routine light microscopy the blastemal, epithelial and stromal components and any anaplastic nuclei can be recognized."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "970-971" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c029
+    section: ancillary
+    statement: "Every Wilms tumor in WAGR syndrome has a WT1 mutation."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "970" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c030
+    section: clinical
+    statement: "Recognition of an abdominal mass usually precedes the diagnosis."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "971" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c031
+    section: clinical
+    statement: "Hypertension and hematuria are among the additional manifestations."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "971" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c032
+    section: clinical
+    statement: "Pain, bowel obstruction and rupture of the tumor after trauma are also possible."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "971" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c033
+    section: clinical
+    statement: "Familial cases are bilateral in 20%, sporadic cases in only 5%."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "971" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c034
+    section: clinical
+    statement: "Inheritance in familial cases is usually autosomal dominant."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "971" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c035
+    section: diagnosis
+    statement: "An abdominal mass in a child usually leads to the diagnosis."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "971" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c036
+    section: prognosis
+    statement: "Under 2 years of age, outcome tends to be better."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "971" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c037
+    section: prognosis
+    statement: "Spread beyond the renal capsule found at surgery worsens the prognosis."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "971" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c038
+    section: prognosis
+    statement: "Worse outcomes go with anaplasia, which is commoner in older patients."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "971" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c039
+    section: prognosis
+    statement: "About 90% of patients survive long term with resection plus chemotherapy and radiation."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "971" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c040
+    section: differential
+    statement: "Mesoblastic nephroma is a benign congenital spindle-cell tumor with irregular margins, mostly diagnosed in babies under 3 months, and must be told apart from Wilms tumor."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c041
+    section: differential
+    statement: "Renal cell carcinoma is a malignant tumor of tubular or duct epithelium and the most common primary cancer of the kidney."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "971" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c042
+    section: high-yield
+    statement: "Wilms tumor is triphasic, with blastema, stroma and epithelium."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "969-970" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c043
+    section: high-yield
+    statement: "WAGR syndrome is caused by an 11p13 deletion involving WT1 and PAX6."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c044
+    section: high-yield
+    statement: "Denys-Drash syndrome involves dominant-negative WT1 mutations."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c045
+    section: high-yield
+    statement: "Beckwith-Wiedemann syndrome shares the 11p15.5 locus, where sporadic Wilms tumors lose the maternal allele."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "970" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c046
+    section: high-yield
+    statement: "Nephrogenic rests may be clonal precursor lesions of Wilms tumor."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "970" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c047
+    section: high-yield
+    statement: "Anaplasia and tumor beyond the renal capsule are associated with a worse prognosis."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "971" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c048
+    section: high-yield
+    statement: "Wilms tumor usually occurs in children 1 to 3 years old."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "971" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c049
+    section: traps
+    statement: "Most Wilms tumors contain all three elements, but some contain only two or one."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "970" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c050
+    section: traps
+    statement: "A WT1 mutation is found in just 10% to 20% of sporadic cases."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "970" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c051
+    section: traps
+    statement: "In Frasier syndrome, WT1 mutations lead to gonadoblastoma rather than Wilms tumor."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "969" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c052
+    section: traps
+    statement: "Under 2 years the outlook tends to be better, while anaplasia is commoner in older patients."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "971" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
+  - claimId: wilms-tumor-c053
+    section: mnemonics
+    statement: "The three components of Wilms tumor are blastema, stroma and epithelium."
+    sourceRef: { source: rubin-8e, chapter: "22", pages: "970" }
+    status: verified
+    verifiedBy: agent
+    verifier: "independent-verifier-agent"
+    date: 2026-11-16
